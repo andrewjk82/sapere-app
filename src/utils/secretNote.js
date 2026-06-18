@@ -272,6 +272,15 @@ export function applyTeacherApprovals(uid, approvals) {
   return graduated;
 }
 
+// Teacher-triggered full reset: clears all notes for given kinds (or all kinds).
+export function applyTeacherReset(uid, kinds) {
+  const targets = Array.isArray(kinds) && kinds.length ? kinds.filter(k => ALL_NOTE_KINDS.includes(k)) : ALL_NOTE_KINDS;
+  for (const kind of targets) {
+    write(kind, uid, []);
+  }
+  return targets.length;
+}
+
 // Compact summary for piggy-backing onto the end-of-test Firestore save.
 export function getSyncSnapshot(uid) {
   return {

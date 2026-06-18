@@ -1934,7 +1934,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the tax brackets to the income.",
-        "workingOut": "\\text{Tax} = 0.00"
+        "workingOut": "\\(\\text{Tax} = 0.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1955,7 +1955,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the tax brackets to the income.",
-        "workingOut": "\\text{Tax} = 540.00"
+        "workingOut": "\\(\\text{Tax} = 540.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1976,7 +1976,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the tax brackets to the income.",
-        "workingOut": "\\text{Tax} = 6400.00"
+        "workingOut": "\\(\\text{Tax} = 6400.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1997,7 +1997,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the tax brackets to the income.",
-        "workingOut": "\\text{Tax} = 175800.00"
+        "workingOut": "\\(\\text{Tax} = 175800.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2018,7 +2018,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Divide the tax by the income and multiply by 100.",
-        "workingOut": "\\frac{0.00}{11000} \\times 100 = 0.00\\%"
+        "workingOut": "\\(\\frac{0.00}{11000} \\times 100 = 0.00\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2039,7 +2039,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Divide the tax by the income and multiply by 100.",
-        "workingOut": "\\frac{540.00}{18000} \\times 100 = 3.00\\%"
+        "workingOut": "\\(\\frac{540.00}{18000} \\times 100 = 3.00\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2060,7 +2060,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Divide the tax by the income and multiply by 100.",
-        "workingOut": "\\frac{6400.00}{45000} \\times 100 = 14.22\\%"
+        "workingOut": "\\(\\frac{6400.00}{45000} \\times 100 = 14.22\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2081,7 +2081,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Divide the tax by the income and multiply by 100.",
-        "workingOut": "\\frac{175800.00}{500000} \\times 100 = 35.16\\%"
+        "workingOut": "\\(\\frac{175800.00}{500000} \\times 100 = 35.16\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2102,7 +2102,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine which bracket the tax falls into, then reverse the calculation.",
-        "workingOut": "\\text{Income} = 25000.00"
+        "workingOut": "\\(\\text{Income} = 25000.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2123,7 +2123,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine which bracket the tax falls into, then reverse the calculation.",
-        "workingOut": "\\text{Income} = 37142.86"
+        "workingOut": "\\(\\text{Income} = 37142.86\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2144,7 +2144,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine which bracket the tax falls into, then reverse the calculation.",
-        "workingOut": "\\text{Income} = 79285.71"
+        "workingOut": "\\(\\text{Income} = 79285.71\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2165,7 +2165,7 @@ export const Y10_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine which bracket the tax falls into, then reverse the calculation.",
-        "workingOut": "\\text{Income} = 77500.00"
+        "workingOut": "\\(\\text{Income} = 77500.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2438,19 +2438,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(46\\%\\) decrease, an item costs \\(\\$478\\). What was the original price?",
-    "a": "\\(\\$885.19\\)",
-    "options": [
-      "\\(\\$885.19\\)",
-      "\\(\\$258.12\\)",
-      "\\(\\$697.88\\)",
-      "\\(\\$327.40\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$108.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
+    "a": "\\(120.00\\)",
+    "opts": [
+      "\\(120.00\\)",
+      "\\(132.00\\)",
+      "\\(108.00\\)",
+      "\\(126.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{478}{1 - 0.46} = \\$885.19\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{108.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{108.00}{1 - 0.10} = \\frac{108.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{120.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2460,19 +2467,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$590\\) is marked up by \\(19\\%\\) and then discounted by \\(20\\%\\). What is the final price?",
-    "a": "\\(\\$561.68\\)",
-    "options": [
-      "\\(\\$561.68\\)",
-      "\\(\\$820.10\\)",
-      "\\(\\$359.90\\)",
-      "\\(\\$842.52\\)"
+    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$103\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
+    "a": "\\(98.45\\)",
+    "opts": [
+      "\\(103.37\\)",
+      "\\(88.61\\)",
+      "\\(108.30\\)",
+      "\\(98.45\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 590 \\times (1 + 0.19) \\times (1 - 0.20) = \\$561.68\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{103 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{103 dollars} \\times 1.18 = \\text{121.54 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{121.54 dollars} \\times 0.81\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{98.45 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2482,19 +2496,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{84}{827}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(10.16\\%\\)",
-    "options": [
-      "\\(10.16\\%\\)",
-      "\\(984.52\\%\\)",
-      "\\(0.10\\%\\)",
-      "\\(1.02\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 78 \\) out of \\( 662 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(11.78\\%\\)",
+    "opts": [
+      "\\(11.780%\\)",
+      "\\(12.958%\\)",
+      "\\(10.602%\\)",
+      "\\(12.369%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{84}{827} \\times 100 \\approx 10.16\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{78}{662}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{78}{662} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 11.78\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2504,19 +2525,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(26\\%\\) of \\(88\\%\\) of \\(2923\\).",
-    "a": "\\(668.78\\)",
-    "options": [
-      "\\(668.78\\)",
-      "\\(759.98\\)",
-      "\\(2572.24\\)",
-      "\\(3332.22\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 1551 \\) dollars for testing. If \\( 29\\% \\) of this budget is assigned to the electric scooter division, and \\( 14\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(62.97\\)",
+    "opts": [
+      "\\(62.97\\)",
+      "\\(66.12\\)",
+      "\\(69.27\\)",
+      "\\(56.67\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(2923 \\times 0.26 \\times 0.88 = 668.78\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 1551 \\times \\frac{29}{100} = 1551 \\times 0.29 = 449.79\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{14}{100} = 449.79 \\times 0.14\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 62.97\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2526,19 +2554,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(463\\) to \\(629\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(35.85\\%\\)",
-    "options": [
-      "\\(35.85\\%\\)",
-      "\\(26.39\\%\\)",
-      "\\(135.85\\%\\)",
-      "\\(73.61\\%\\)"
+    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 318 \\) units to \\( 566 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(77.99\\%\\)",
+    "opts": [
+      "\\(70.191%\\)",
+      "\\(81.889%\\)",
+      "\\(85.789%\\)",
+      "\\(77.990%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{629 - 463}{463} \\times 100 \\approx 35.85\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 566 - 318 = 248\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{248}{318} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 77.99\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2548,19 +2583,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(41\\%\\) decrease, an item costs \\(\\$858\\). What was the original price?",
-    "a": "\\(\\$1454.24\\)",
-    "options": [
-      "\\(\\$1454.24\\)",
-      "\\(\\$506.22\\)",
-      "\\(\\$1209.78\\)",
-      "\\(\\$608.51\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$166.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
+    "a": "\\(185.00\\)",
+    "opts": [
+      "\\(194.25\\)",
+      "\\(166.50\\)",
+      "\\(203.50\\)",
+      "\\(185.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{858}{1 - 0.41} = \\$1454.24\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{166.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{166.50}{1 - 0.10} = \\frac{166.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{185.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2570,19 +2612,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$517\\) is marked up by \\(26\\%\\) and then discounted by \\(23\\%\\). What is the final price?",
-    "a": "\\(\\$501.59\\)",
-    "options": [
-      "\\(\\$501.59\\)",
-      "\\(\\$770.33\\)",
-      "\\(\\$263.67\\)",
-      "\\(\\$801.25\\)"
+    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$218\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
+    "a": "\\(220.35\\)",
+    "opts": [
+      "\\(198.31\\)",
+      "\\(242.39\\)",
+      "\\(220.35\\)",
+      "\\(231.37\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 517 \\times (1 + 0.26) \\times (1 - 0.23) = \\$501.59\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{218 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{218 dollars} \\times 1.33 = \\text{289.94 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{289.94 dollars} \\times 0.76\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{220.35 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2592,19 +2641,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{50}{206}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(24.27\\%\\)",
-    "options": [
-      "\\(24.27\\%\\)",
-      "\\(412.00\\%\\)",
-      "\\(0.24\\%\\)",
-      "\\(2.43\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 173 \\) out of \\( 817 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(21.18\\%\\)",
+    "opts": [
+      "\\(21.180%\\)",
+      "\\(23.298%\\)",
+      "\\(19.062%\\)",
+      "\\(22.239%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{50}{206} \\times 100 \\approx 24.27\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{173}{817}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{173}{817} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 21.18\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2614,19 +2670,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(63\\%\\) of \\(33\\%\\) of \\(2324\\).",
-    "a": "\\(483.16\\)",
-    "options": [
-      "\\(483.16\\)",
-      "\\(1464.12\\)",
-      "\\(766.92\\)",
-      "\\(2231.04\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 2136 \\) dollars for testing. If \\( 34\\% \\) of this budget is assigned to the graphics card division, and \\( 29\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(210.61\\)",
+    "opts": [
+      "\\(221.14\\)",
+      "\\(210.61\\)",
+      "\\(189.55\\)",
+      "\\(231.67\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(2324 \\times 0.63 \\times 0.33 = 483.16\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 2136 \\times \\frac{34}{100} = 2136 \\times 0.34 = 726.24\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{29}{100} = 726.24 \\times 0.29\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 210.61\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2636,19 +2699,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(326\\) to \\(568\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(74.23\\%\\)",
-    "options": [
-      "\\(74.23\\%\\)",
-      "\\(42.61\\%\\)",
-      "\\(174.23\\%\\)",
-      "\\(57.39\\%\\)"
+    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 403 \\) units to \\( 711 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(76.43\\%\\)",
+    "opts": [
+      "\\(76.430%\\)",
+      "\\(84.073%\\)",
+      "\\(68.787%\\)",
+      "\\(80.252%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{568 - 326}{326} \\times 100 \\approx 74.23\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 711 - 403 = 308\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{308}{403} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 76.43\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2658,19 +2728,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(43\\%\\) decrease, an item costs \\(\\$677\\). What was the original price?",
-    "a": "\\(\\$1187.72\\)",
-    "options": [
-      "\\(\\$1187.72\\)",
-      "\\(\\$385.89\\)",
-      "\\(\\$968.11\\)",
-      "\\(\\$473.43\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$225.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
+    "a": "\\(250.00\\)",
+    "opts": [
+      "\\(250.00\\)",
+      "\\(275.00\\)",
+      "\\(225.00\\)",
+      "\\(262.50\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{677}{1 - 0.43} = \\$1187.72\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{225.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{225.00}{1 - 0.10} = \\frac{225.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{250.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2680,19 +2757,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$702\\) is marked up by \\(19\\%\\) and then discounted by \\(19\\%\\). What is the final price?",
-    "a": "\\(\\$676.66\\)",
-    "options": [
-      "\\(\\$676.66\\)",
-      "\\(\\$968.76\\)",
-      "\\(\\$435.24\\)",
-      "\\(\\$994.10\\)"
+    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$333\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
+    "a": "\\(278.99\\)",
+    "opts": [
+      "\\(278.99\\)",
+      "\\(306.89\\)",
+      "\\(251.09\\)",
+      "\\(292.94\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 702 \\times (1 + 0.19) \\times (1 - 0.19) = \\$676.66\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{333 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{333 dollars} \\times 1.18 = \\text{392.94 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{392.94 dollars} \\times 0.71\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{278.99 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2702,19 +2786,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{80}{885}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(9.04\\%\\)",
-    "options": [
-      "\\(9.04\\%\\)",
-      "\\(1106.25\\%\\)",
-      "\\(0.09\\%\\)",
-      "\\(0.90\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 118 \\) out of \\( 972 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(12.14\\%\\)",
+    "opts": [
+      "\\(12.747%\\)",
+      "\\(13.354%\\)",
+      "\\(12.140%\\)",
+      "\\(10.926%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{80}{885} \\times 100 \\approx 9.04\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{118}{972}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{118}{972} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 12.14\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2724,19 +2815,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(56\\%\\) of \\(63\\%\\) of \\(2653\\).",
-    "a": "\\(935.98\\)",
-    "options": [
-      "\\(935.98\\)",
-      "\\(1485.68\\)",
-      "\\(1671.39\\)",
-      "\\(3157.07\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 2721 \\) dollars for testing. If \\( 9\\% \\) of this budget is assigned to the leather briefcase division, and \\( 19\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(46.53\\)",
+    "opts": [
+      "\\(48.86\\)",
+      "\\(46.53\\)",
+      "\\(51.18\\)",
+      "\\(41.88\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(2653 \\times 0.56 \\times 0.63 = 935.98\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 2721 \\times \\frac{9}{100} = 2721 \\times 0.09 = 244.89\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{19}{100} = 244.89 \\times 0.19\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 46.53\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2746,19 +2844,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(302\\) to \\(741\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(145.36\\%\\)",
-    "options": [
-      "\\(145.36\\%\\)",
-      "\\(59.24\\%\\)",
-      "\\(245.36\\%\\)",
-      "\\(40.76\\%\\)"
+    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 488 \\) units to \\( 856 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(75.41\\%\\)",
+    "opts": [
+      "\\(79.180%\\)",
+      "\\(67.869%\\)",
+      "\\(82.951%\\)",
+      "\\(75.410%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{741 - 302}{302} \\times 100 \\approx 145.36\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 856 - 488 = 368\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{368}{488} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 75.41\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2768,19 +2873,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(37\\%\\) decrease, an item costs \\(\\$438\\). What was the original price?",
-    "a": "\\(\\$695.24\\)",
-    "options": [
-      "\\(\\$695.24\\)",
-      "\\(\\$275.94\\)",
-      "\\(\\$600.06\\)",
-      "\\(\\$319.71\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$283.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
+    "a": "\\(315.00\\)",
+    "opts": [
+      "\\(346.50\\)",
+      "\\(283.50\\)",
+      "\\(330.75\\)",
+      "\\(315.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{438}{1 - 0.37} = \\$695.24\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{283.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{283.50}{1 - 0.10} = \\frac{283.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{315.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2790,19 +2902,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$414\\) is marked up by \\(10\\%\\) and then discounted by \\(10\\%\\). What is the final price?",
-    "a": "\\(\\$409.86\\)",
-    "options": [
-      "\\(\\$409.86\\)",
-      "\\(\\$496.80\\)",
-      "\\(\\$331.20\\)",
-      "\\(\\$500.94\\)"
+    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$448\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
+    "a": "\\(512.42\\)",
+    "opts": [
+      "\\(563.66\\)",
+      "\\(538.04\\)",
+      "\\(461.18\\)",
+      "\\(512.42\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 414 \\times (1 + 0.10) \\times (1 - 0.10) = \\$409.86\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{448 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{448 dollars} \\times 1.33 = \\text{595.84 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{595.84 dollars} \\times 0.86\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{512.42 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2812,19 +2931,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{77}{508}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(15.16\\%\\)",
-    "options": [
-      "\\(15.16\\%\\)",
-      "\\(659.74\\%\\)",
-      "\\(0.15\\%\\)",
-      "\\(1.52\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 63 \\) out of \\( 1127 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(5.59\\%\\)",
+    "opts": [
+      "\\(5.590%\\)",
+      "\\(6.149%\\)",
+      "\\(5.031%\\)",
+      "\\(5.870%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{77}{508} \\times 100 \\approx 15.16\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{63}{1127}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{63}{1127} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 5.59\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2834,19 +2960,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(15\\%\\) of \\(79\\%\\) of \\(4658\\).",
-    "a": "\\(551.97\\)",
-    "options": [
-      "\\(551.97\\)",
-      "\\(698.70\\)",
-      "\\(3679.82\\)",
-      "\\(4378.52\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 3306 \\) dollars for testing. If \\( 14\\% \\) of this budget is assigned to the camping tent division, and \\( 9\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(41.66\\)",
+    "opts": [
+      "\\(41.66\\)",
+      "\\(43.74\\)",
+      "\\(45.83\\)",
+      "\\(37.49\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(4658 \\times 0.15 \\times 0.79 = 551.97\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 3306 \\times \\frac{14}{100} = 3306 \\times 0.14 = 462.84\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{9}{100} = 462.84 \\times 0.09\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 41.66\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2856,19 +2989,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(369\\) to \\(705\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(91.06\\%\\)",
-    "options": [
-      "\\(91.06\\%\\)",
-      "\\(47.66\\%\\)",
-      "\\(191.06\\%\\)",
-      "\\(52.34\\%\\)"
+    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 573 \\) units to \\( 501 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(-12.57\\%\\)",
+    "opts": [
+      "\\(-9.570%\\)",
+      "\\(-10.570%\\)",
+      "\\(-11.570%\\)",
+      "\\(-12.570%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{705 - 369}{369} \\times 100 \\approx 91.06\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 501 - 573 = -72\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{-72}{573} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx -12.57\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2878,19 +3018,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(48\\%\\) decrease, an item costs \\(\\$265\\). What was the original price?",
-    "a": "\\(\\$509.62\\)",
-    "options": [
-      "\\(\\$509.62\\)",
-      "\\(\\$137.80\\)",
-      "\\(\\$392.20\\)",
-      "\\(\\$179.05\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$342.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
+    "a": "\\(380.00\\)",
+    "opts": [
+      "\\(380.00\\)",
+      "\\(418.00\\)",
+      "\\(342.00\\)",
+      "\\(399.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{265}{1 - 0.48} = \\$509.62\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{342.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{342.00}{1 - 0.10} = \\frac{342.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{380.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2900,19 +3047,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$520\\) is marked up by \\(16\\%\\) and then discounted by \\(29\\%\\). What is the final price?",
-    "a": "\\(\\$428.27\\)",
-    "options": [
-      "\\(\\$428.27\\)",
-      "\\(\\$754.00\\)",
-      "\\(\\$286.00\\)",
-      "\\(\\$778.13\\)"
+    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$563\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
+    "a": "\\(538.12\\)",
+    "opts": [
+      "\\(565.03\\)",
+      "\\(484.31\\)",
+      "\\(591.93\\)",
+      "\\(538.12\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 520 \\times (1 + 0.16) \\times (1 - 0.29) = \\$428.27\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{563 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{563 dollars} \\times 1.18 = \\text{664.34 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{664.34 dollars} \\times 0.81\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{538.12 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2922,19 +3076,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{49}{956}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(5.13\\%\\)",
-    "options": [
-      "\\(5.13\\%\\)",
-      "\\(1951.02\\%\\)",
-      "\\(0.05\\%\\)",
-      "\\(0.51\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 158 \\) out of \\( 1282 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(12.32\\%\\)",
+    "opts": [
+      "\\(12.936%\\)",
+      "\\(12.320%\\)",
+      "\\(11.088%\\)",
+      "\\(13.552%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{49}{956} \\times 100 \\approx 5.13\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{158}{1282}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{158}{1282} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 12.32\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2944,19 +3105,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(67\\%\\) of \\(13\\%\\) of \\(1425\\).",
-    "a": "\\(124.12\\)",
-    "options": [
-      "\\(124.12\\)",
-      "\\(954.75\\)",
-      "\\(185.25\\)",
-      "\\(1140.00\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 3891 \\) dollars for testing. If \\( 19\\% \\) of this budget is assigned to the electric scooter division, and \\( 24\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(177.43\\)",
+    "opts": [
+      "\\(177.43\\)",
+      "\\(195.17\\)",
+      "\\(159.69\\)",
+      "\\(186.30\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(1425 \\times 0.67 \\times 0.13 = 124.12\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 3891 \\times \\frac{19}{100} = 3891 \\times 0.19 = 739.29\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{24}{100} = 739.29 \\times 0.24\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 177.43\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2966,19 +3134,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(223\\) to \\(526\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(135.87\\%\\)",
-    "options": [
-      "\\(135.87\\%\\)",
-      "\\(57.60\\%\\)",
-      "\\(235.87\\%\\)",
-      "\\(42.40\\%\\)"
+    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 258 \\) units to \\( 646 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(150.39\\%\\)",
+    "opts": [
+      "\\(157.909%\\)",
+      "\\(135.351%\\)",
+      "\\(165.429%\\)",
+      "\\(150.390%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{526 - 223}{223} \\times 100 \\approx 135.87\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 646 - 258 = 388\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{388}{258} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 150.39\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -2988,19 +3163,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(43\\%\\) decrease, an item costs \\(\\$306\\). What was the original price?",
-    "a": "\\(\\$536.84\\)",
-    "options": [
-      "\\(\\$536.84\\)",
-      "\\(\\$174.42\\)",
-      "\\(\\$437.58\\)",
-      "\\(\\$213.99\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$400.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
+    "a": "\\(445.00\\)",
+    "opts": [
+      "\\(445.00\\)",
+      "\\(489.50\\)",
+      "\\(467.25\\)",
+      "\\(400.50\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{306}{1 - 0.43} = \\$536.84\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{400.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{400.50}{1 - 0.10} = \\frac{400.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{445.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3010,19 +3192,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$460\\) is marked up by \\(24\\%\\) and then discounted by \\(15\\%\\). What is the final price?",
-    "a": "\\(\\$484.84\\)",
-    "options": [
-      "\\(\\$484.84\\)",
-      "\\(\\$639.40\\)",
-      "\\(\\$280.60\\)",
-      "\\(\\$655.96\\)"
+    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$678\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
+    "a": "\\(685.32\\)",
+    "opts": [
+      "\\(685.32\\)",
+      "\\(616.79\\)",
+      "\\(719.59\\)",
+      "\\(753.85\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 460 \\times (1 + 0.24) \\times (1 - 0.15) = \\$484.84\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{678 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{678 dollars} \\times 1.33 = \\text{901.74 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{901.74 dollars} \\times 0.76\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{685.32 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3032,19 +3221,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{81}{189}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(42.86\\%\\)",
-    "options": [
-      "\\(42.86\\%\\)",
-      "\\(233.33\\%\\)",
-      "\\(0.43\\%\\)",
-      "\\(4.29\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 103 \\) out of \\( 637 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(16.17\\%\\)",
+    "opts": [
+      "\\(16.170%\\)",
+      "\\(17.787%\\)",
+      "\\(14.553%\\)",
+      "\\(16.979%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{81}{189} \\times 100 \\approx 42.86\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{103}{637}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{103}{637} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 16.17\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3054,19 +3250,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(63\\%\\) of \\(60\\%\\) of \\(1272\\).",
-    "a": "\\(480.82\\)",
-    "options": [
-      "\\(480.82\\)",
-      "\\(801.36\\)",
-      "\\(763.20\\)",
-      "\\(1564.56\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 4476 \\) dollars for testing. If \\( 24\\% \\) of this budget is assigned to the graphics card division, and \\( 14\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(150.39\\)",
+    "opts": [
+      "\\(150.39\\)",
+      "\\(165.43\\)",
+      "\\(135.35\\)",
+      "\\(157.91\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(1272 \\times 0.63 \\times 0.60 = 480.82\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 4476 \\times \\frac{24}{100} = 4476 \\times 0.24 = 1074.24\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{14}{100} = 1074.24 \\times 0.14\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 150.39\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3076,19 +3279,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(361\\) to \\(881\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(144.04\\%\\)",
-    "options": [
-      "\\(144.04\\%\\)",
-      "\\(59.02\\%\\)",
-      "\\(244.04\\%\\)",
-      "\\(40.98\\%\\)"
+    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 343 \\) units to \\( 791 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(130.61\\%\\)",
+    "opts": [
+      "\\(137.141%\\)",
+      "\\(117.549%\\)",
+      "\\(143.671%\\)",
+      "\\(130.610%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{881 - 361}{361} \\times 100 \\approx 144.04\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 791 - 343 = 448\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{448}{343} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 130.61\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3098,19 +3308,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(49\\%\\) decrease, an item costs \\(\\$482\\). What was the original price?",
-    "a": "\\(\\$945.10\\)",
-    "options": [
-      "\\(\\$945.10\\)",
-      "\\(\\$245.82\\)",
-      "\\(\\$718.18\\)",
-      "\\(\\$323.49\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$459.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
+    "a": "\\(510.00\\)",
+    "opts": [
+      "\\(510.00\\)",
+      "\\(459.00\\)",
+      "\\(561.00\\)",
+      "\\(535.50\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{482}{1 - 0.49} = \\$945.10\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{459.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{459.00}{1 - 0.10} = \\frac{459.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{510.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3120,19 +3337,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$503\\) is marked up by \\(16\\%\\) and then discounted by \\(22\\%\\). What is the final price?",
-    "a": "\\(\\$455.11\\)",
-    "options": [
-      "\\(\\$455.11\\)",
-      "\\(\\$694.14\\)",
-      "\\(\\$311.86\\)",
-      "\\(\\$711.85\\)"
+    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$193\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
+    "a": "\\(161.70\\)",
+    "opts": [
+      "\\(177.87\\)",
+      "\\(145.53\\)",
+      "\\(169.78\\)",
+      "\\(161.70\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 503 \\times (1 + 0.16) \\times (1 - 0.22) = \\$455.11\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{193 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{193 dollars} \\times 1.18 = \\text{227.74 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{227.74 dollars} \\times 0.71\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{161.70 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3142,19 +3366,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{24}{488}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(4.92\\%\\)",
-    "options": [
-      "\\(4.92\\%\\)",
-      "\\(2033.33\\%\\)",
-      "\\(0.05\\%\\)",
-      "\\(0.49\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 48 \\) out of \\( 792 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(6.06\\%\\)",
+    "opts": [
+      "\\(6.363%\\)",
+      "\\(5.454%\\)",
+      "\\(6.666%\\)",
+      "\\(6.060%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{24}{488} \\times 100 \\approx 4.92\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{48}{792}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{48}{792} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 6.06\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3164,19 +3395,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(17\\%\\) of \\(66\\%\\) of \\(4996\\).",
-    "a": "\\(560.55\\)",
-    "options": [
-      "\\(560.55\\)",
-      "\\(849.32\\)",
-      "\\(3297.36\\)",
-      "\\(4146.68\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 5061 \\) dollars for testing. If \\( 29\\% \\) of this budget is assigned to the leather briefcase division, and \\( 29\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(425.63\\)",
+    "opts": [
+      "\\(446.91\\)",
+      "\\(383.07\\)",
+      "\\(468.19\\)",
+      "\\(425.63\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(4996 \\times 0.17 \\times 0.66 = 560.55\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 5061 \\times \\frac{29}{100} = 5061 \\times 0.29 = 1467.69\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{29}{100} = 1467.69 \\times 0.29\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 425.63\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3186,19 +3424,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(447\\) to \\(878\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(96.42\\%\\)",
-    "options": [
-      "\\(96.42\\%\\)",
-      "\\(49.09\\%\\)",
-      "\\(196.42\\%\\)",
-      "\\(50.91\\%\\)"
+    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 428 \\) units to \\( 936 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(118.69\\%\\)",
+    "opts": [
+      "\\(130.559%\\)",
+      "\\(118.690%\\)",
+      "\\(106.821%\\)",
+      "\\(124.624%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{878 - 447}{447} \\times 100 \\approx 96.42\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 936 - 428 = 508\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{508}{428} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 118.69\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3208,19 +3453,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(37\\%\\) decrease, an item costs \\(\\$682\\). What was the original price?",
-    "a": "\\(\\$1082.54\\)",
-    "options": [
-      "\\(\\$1082.54\\)",
-      "\\(\\$429.66\\)",
-      "\\(\\$934.34\\)",
-      "\\(\\$497.81\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$157.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
+    "a": "\\(175.00\\)",
+    "opts": [
+      "\\(183.75\\)",
+      "\\(157.50\\)",
+      "\\(192.50\\)",
+      "\\(175.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{682}{1 - 0.37} = \\$1082.54\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{157.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{157.50}{1 - 0.10} = \\frac{157.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{175.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3230,19 +3482,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$304\\) is marked up by \\(20\\%\\) and then discounted by \\(14\\%\\). What is the final price?",
-    "a": "\\(\\$313.73\\)",
-    "options": [
-      "\\(\\$313.73\\)",
-      "\\(\\$407.36\\)",
-      "\\(\\$200.64\\)",
-      "\\(\\$415.87\\)"
+    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$308\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
+    "a": "\\(352.29\\)",
+    "opts": [
+      "\\(317.06\\)",
+      "\\(387.52\\)",
+      "\\(352.29\\)",
+      "\\(369.90\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 304 \\times (1 + 0.20) \\times (1 - 0.14) = \\$313.73\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{308 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{308 dollars} \\times 1.33 = \\text{409.64 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{409.64 dollars} \\times 0.86\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{352.29 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3252,19 +3511,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{46}{498}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(9.24\\%\\)",
-    "options": [
-      "\\(9.24\\%\\)",
-      "\\(1082.61\\%\\)",
-      "\\(0.09\\%\\)",
-      "\\(0.92\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 143 \\) out of \\( 947 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(15.10\\%\\)",
+    "opts": [
+      "\\(15.855%\\)",
+      "\\(15.100%\\)",
+      "\\(13.590%\\)",
+      "\\(16.610%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{46}{498} \\times 100 \\approx 9.24\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{143}{947}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{143}{947} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 15.10\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3274,19 +3540,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(40\\%\\) of \\(41\\%\\) of \\(4755\\).",
-    "a": "\\(779.82\\)",
-    "options": [
-      "\\(779.82\\)",
-      "\\(1902.00\\)",
-      "\\(1949.55\\)",
-      "\\(3851.55\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 5646 \\) dollars for testing. If \\( 34\\% \\) of this budget is assigned to the camping tent division, and \\( 19\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(364.73\\)",
+    "opts": [
+      "\\(364.73\\)",
+      "\\(401.20\\)",
+      "\\(328.26\\)",
+      "\\(382.97\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(4755 \\times 0.40 \\times 0.41 = 779.82\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 5646 \\times \\frac{34}{100} = 5646 \\times 0.34 = 1919.64\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{19}{100} = 1919.64 \\times 0.19\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 364.73\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3296,19 +3569,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(304\\) to \\(925\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(204.28\\%\\)",
-    "options": [
-      "\\(204.28\\%\\)",
-      "\\(67.14\\%\\)",
-      "\\(304.28\\%\\)",
-      "\\(32.86\\%\\)"
+    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 513 \\) units to \\( 581 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(13.26\\%\\)",
+    "opts": [
+      "\\(13.923%\\)",
+      "\\(11.934%\\)",
+      "\\(14.586%\\)",
+      "\\(13.260%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{925 - 304}{304} \\times 100 \\approx 204.28\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 581 - 513 = 68\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{68}{513} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 13.26\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3318,19 +3598,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(33\\%\\) decrease, an item costs \\(\\$429\\). What was the original price?",
-    "a": "\\(\\$640.30\\)",
-    "options": [
-      "\\(\\$640.30\\)",
-      "\\(\\$287.43\\)",
-      "\\(\\$570.57\\)",
-      "\\(\\$322.56\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$216.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
+    "a": "\\(240.00\\)",
+    "opts": [
+      "\\(216.00\\)",
+      "\\(264.00\\)",
+      "\\(240.00\\)",
+      "\\(252.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{429}{1 - 0.33} = \\$640.30\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{216.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{216.00}{1 - 0.10} = \\frac{216.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{240.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3340,19 +3627,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$391\\) is marked up by \\(26\\%\\) and then discounted by \\(27\\%\\). What is the final price?",
-    "a": "\\(\\$359.64\\)",
-    "options": [
-      "\\(\\$359.64\\)",
-      "\\(\\$598.23\\)",
-      "\\(\\$183.77\\)",
-      "\\(\\$625.68\\)"
+    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$423\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
+    "a": "\\(404.30\\)",
+    "opts": [
+      "\\(424.52\\)",
+      "\\(404.30\\)",
+      "\\(444.73\\)",
+      "\\(363.87\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 391 \\times (1 + 0.26) \\times (1 - 0.27) = \\$359.64\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{423 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{423 dollars} \\times 1.18 = \\text{499.14 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{499.14 dollars} \\times 0.81\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{404.30 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3362,19 +3656,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{73}{905}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(8.07\\%\\)",
-    "options": [
-      "\\(8.07\\%\\)",
-      "\\(1239.73\\%\\)",
-      "\\(0.08\\%\\)",
-      "\\(0.81\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 88 \\) out of \\( 1102 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(7.99\\%\\)",
+    "opts": [
+      "\\(8.789%\\)",
+      "\\(7.990%\\)",
+      "\\(7.191%\\)",
+      "\\(8.389%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{73}{905} \\times 100 \\approx 8.07\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{88}{1102}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{88}{1102} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 7.99\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3384,19 +3685,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(79\\%\\) of \\(67\\%\\) of \\(2121\\).",
-    "a": "\\(1122.65\\)",
-    "options": [
-      "\\(1122.65\\)",
-      "\\(1675.59\\)",
-      "\\(1421.07\\)",
-      "\\(3096.66\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 1231 \\) dollars for testing. If \\( 9\\% \\) of this budget is assigned to the electric scooter division, and \\( 9\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(9.97\\)",
+    "opts": [
+      "\\(8.97\\)",
+      "\\(9.97\\)",
+      "\\(10.97\\)",
+      "\\(10.47\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(2121 \\times 0.79 \\times 0.67 = 1122.65\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 1231 \\times \\frac{9}{100} = 1231 \\times 0.09 = 110.79\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{9}{100} = 110.79 \\times 0.09\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 9.97\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3406,19 +3714,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(364\\) to \\(521\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(43.13\\%\\)",
-    "options": [
-      "\\(43.13\\%\\)",
-      "\\(30.13\\%\\)",
-      "\\(143.13\\%\\)",
-      "\\(69.87\\%\\)"
+    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 598 \\) units to \\( 726 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(21.40\\%\\)",
+    "opts": [
+      "\\(21.400%\\)",
+      "\\(23.540%\\)",
+      "\\(19.260%\\)",
+      "\\(22.470%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{521 - 364}{364} \\times 100 \\approx 43.13\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 726 - 598 = 128\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{128}{598} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 21.40\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3428,19 +3743,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(42\\%\\) decrease, an item costs \\(\\$709\\). What was the original price?",
-    "a": "\\(\\$1222.41\\)",
-    "options": [
-      "\\(\\$1222.41\\)",
-      "\\(\\$411.22\\)",
-      "\\(\\$1006.78\\)",
-      "\\(\\$499.30\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$274.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
+    "a": "\\(305.00\\)",
+    "opts": [
+      "\\(305.00\\)",
+      "\\(335.50\\)",
+      "\\(274.50\\)",
+      "\\(320.25\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{709}{1 - 0.42} = \\$1222.41\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{274.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{274.50}{1 - 0.10} = \\frac{274.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{305.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3450,19 +3772,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$882\\) is marked up by \\(29\\%\\) and then discounted by \\(24\\%\\). What is the final price?",
-    "a": "\\(\\$864.71\\)",
-    "options": [
-      "\\(\\$864.71\\)",
-      "\\(\\$1349.46\\)",
-      "\\(\\$414.54\\)",
-      "\\(\\$1410.85\\)"
+    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$538\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
+    "a": "\\(543.81\\)",
+    "opts": [
+      "\\(598.19\\)",
+      "\\(571.00\\)",
+      "\\(489.43\\)",
+      "\\(543.81\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 882 \\times (1 + 0.29) \\times (1 - 0.24) = \\$864.71\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{538 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{538 dollars} \\times 1.33 = \\text{715.54 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{715.54 dollars} \\times 0.76\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{543.81 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3472,19 +3801,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{19}{294}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(6.46\\%\\)",
-    "options": [
-      "\\(6.46\\%\\)",
-      "\\(1547.37\\%\\)",
-      "\\(0.06\\%\\)",
-      "\\(0.65\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 183 \\) out of \\( 1257 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(14.56\\%\\)",
+    "opts": [
+      "\\(15.288%\\)",
+      "\\(16.016%\\)",
+      "\\(13.104%\\)",
+      "\\(14.560%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{19}{294} \\times 100 \\approx 6.46\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{183}{1257}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{183}{1257} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 14.56\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3494,19 +3830,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(32\\%\\) of \\(24\\%\\) of \\(3780\\).",
-    "a": "\\(290.30\\)",
-    "options": [
-      "\\(290.30\\)",
-      "\\(1209.60\\)",
-      "\\(907.20\\)",
-      "\\(2116.80\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 1816 \\) dollars for testing. If \\( 14\\% \\) of this budget is assigned to the graphics card division, and \\( 24\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(61.02\\)",
+    "opts": [
+      "\\(67.12\\)",
+      "\\(54.92\\)",
+      "\\(61.02\\)",
+      "\\(64.07\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(3780 \\times 0.32 \\times 0.24 = 290.30\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 1816 \\times \\frac{14}{100} = 1816 \\times 0.14 = 254.24\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{24}{100} = 254.24 \\times 0.24\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 61.02\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3516,19 +3859,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(489\\) to \\(894\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(82.82\\%\\)",
-    "options": [
-      "\\(82.82\\%\\)",
-      "\\(45.30\\%\\)",
-      "\\(182.82\\%\\)",
-      "\\(54.70\\%\\)"
+    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 283 \\) units to \\( 871 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(207.77\\%\\)",
+    "opts": [
+      "\\(207.770%\\)",
+      "\\(228.547%\\)",
+      "\\(186.993%\\)",
+      "\\(218.159%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{894 - 489}{489} \\times 100 \\approx 82.82\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 871 - 283 = 588\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{588}{283} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 207.77\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3538,19 +3888,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(25\\%\\) decrease, an item costs \\(\\$390\\). What was the original price?",
-    "a": "\\(\\$520.00\\)",
-    "options": [
-      "\\(\\$520.00\\)",
-      "\\(\\$292.50\\)",
-      "\\(\\$487.50\\)",
-      "\\(\\$312.00\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$333.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
+    "a": "\\(370.00\\)",
+    "opts": [
+      "\\(370.00\\)",
+      "\\(388.50\\)",
+      "\\(407.00\\)",
+      "\\(333.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{390}{1 - 0.25} = \\$520.00\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{333.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{333.00}{1 - 0.10} = \\frac{333.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{370.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3560,19 +3917,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$717\\) is marked up by \\(13\\%\\) and then discounted by \\(25\\%\\). What is the final price?",
-    "a": "\\(\\$607.66\\)",
-    "options": [
-      "\\(\\$607.66\\)",
-      "\\(\\$989.46\\)",
-      "\\(\\$444.54\\)",
-      "\\(\\$1012.76\\)"
+    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$653\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
+    "a": "\\(547.08\\)",
+    "opts": [
+      "\\(492.37\\)",
+      "\\(601.79\\)",
+      "\\(547.08\\)",
+      "\\(574.43\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 717 \\times (1 + 0.13) \\times (1 - 0.25) = \\$607.66\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{653 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{653 dollars} \\times 1.18 = \\text{770.54 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{770.54 dollars} \\times 0.71\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{547.08 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3582,19 +3946,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{74}{633}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(11.69\\%\\)",
-    "options": [
-      "\\(11.69\\%\\)",
-      "\\(855.41\\%\\)",
-      "\\(0.12\\%\\)",
-      "\\(1.17\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 128 \\) out of \\( 612 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(20.92\\%\\)",
+    "opts": [
+      "\\(21.966%\\)",
+      "\\(18.828%\\)",
+      "\\(23.012%\\)",
+      "\\(20.920%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{74}{633} \\times 100 \\approx 11.69\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{128}{612}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{128}{612} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 20.92\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3604,19 +3975,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(66\\%\\) of \\(34\\%\\) of \\(2916\\).",
-    "a": "\\(654.35\\)",
-    "options": [
-      "\\(654.35\\)",
-      "\\(1924.56\\)",
-      "\\(991.44\\)",
-      "\\(2916.00\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 2401 \\) dollars for testing. If \\( 19\\% \\) of this budget is assigned to the leather briefcase division, and \\( 14\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(63.87\\)",
+    "opts": [
+      "\\(67.06\\)",
+      "\\(57.48\\)",
+      "\\(70.26\\)",
+      "\\(63.87\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(2916 \\times 0.66 \\times 0.34 = 654.35\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 2401 \\times \\frac{19}{100} = 2401 \\times 0.19 = 456.19\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{14}{100} = 456.19 \\times 0.14\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 63.87\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3626,19 +4004,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(364\\) to \\(609\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(67.31\\%\\)",
-    "options": [
-      "\\(67.31\\%\\)",
-      "\\(40.23\\%\\)",
-      "\\(167.31\\%\\)",
-      "\\(59.77\\%\\)"
+    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 368 \\) units to \\( 516 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(40.22\\%\\)",
+    "opts": [
+      "\\(44.242%\\)",
+      "\\(36.198%\\)",
+      "\\(40.220%\\)",
+      "\\(42.231%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{609 - 364}{364} \\times 100 \\approx 67.31\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 516 - 368 = 148\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{148}{368} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 40.22\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3648,19 +4033,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(20\\%\\) decrease, an item costs \\(\\$831\\). What was the original price?",
-    "a": "\\(\\$1038.75\\)",
-    "options": [
-      "\\(\\$1038.75\\)",
-      "\\(\\$664.80\\)",
-      "\\(\\$997.20\\)",
-      "\\(\\$692.50\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$391.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
+    "a": "\\(435.00\\)",
+    "opts": [
+      "\\(435.00\\)",
+      "\\(478.50\\)",
+      "\\(391.50\\)",
+      "\\(456.75\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{831}{1 - 0.20} = \\$1038.75\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{391.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{391.50}{1 - 0.10} = \\frac{391.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{435.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3670,19 +4062,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$329\\) is marked up by \\(26\\%\\) and then discounted by \\(17\\%\\). What is the final price?",
-    "a": "\\(\\$344.07\\)",
-    "options": [
-      "\\(\\$344.07\\)",
-      "\\(\\$470.47\\)",
-      "\\(\\$187.53\\)",
-      "\\(\\$485.01\\)"
+    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$168\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
+    "a": "\\(192.16\\)",
+    "opts": [
+      "\\(192.16\\)",
+      "\\(172.94\\)",
+      "\\(211.38\\)",
+      "\\(201.77\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 329 \\times (1 + 0.26) \\times (1 - 0.17) = \\$344.07\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{168 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{168 dollars} \\times 1.33 = \\text{223.44 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{223.44 dollars} \\times 0.86\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{192.16 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3692,19 +4091,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{73}{288}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(25.35\\%\\)",
-    "options": [
-      "\\(25.35\\%\\)",
-      "\\(394.52\\%\\)",
-      "\\(0.25\\%\\)",
-      "\\(2.53\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 73 \\) out of \\( 767 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(9.52\\%\\)",
+    "opts": [
+      "\\(8.568%\\)",
+      "\\(10.472%\\)",
+      "\\(9.520%\\)",
+      "\\(9.996%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{73}{288} \\times 100 \\approx 25.35\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{73}{767}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{73}{767} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 9.52\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3714,19 +4120,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(87\\%\\) of \\(13\\%\\) of \\(1564\\).",
-    "a": "\\(176.89\\)",
-    "options": [
-      "\\(176.89\\)",
-      "\\(1360.68\\)",
-      "\\(203.32\\)",
-      "\\(1564.00\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 2986 \\) dollars for testing. If \\( 24\\% \\) of this budget is assigned to the camping tent division, and \\( 29\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(207.83\\)",
+    "opts": [
+      "\\(207.83\\)",
+      "\\(218.22\\)",
+      "\\(228.61\\)",
+      "\\(187.05\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(1564 \\times 0.87 \\times 0.13 = 176.89\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 2986 \\times \\frac{24}{100} = 2986 \\times 0.24 = 716.64\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{29}{100} = 716.64 \\times 0.29\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 207.83\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3736,19 +4149,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(327\\) to \\(880\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(169.11\\%\\)",
-    "options": [
-      "\\(169.11\\%\\)",
-      "\\(62.84\\%\\)",
-      "\\(269.11\\%\\)",
-      "\\(37.16\\%\\)"
+    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 453 \\) units to \\( 661 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(45.92\\%\\)",
+    "opts": [
+      "\\(45.920%\\)",
+      "\\(50.512%\\)",
+      "\\(41.328%\\)",
+      "\\(48.216%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{880 - 327}{327} \\times 100 \\approx 169.11\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 661 - 453 = 208\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{208}{453} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 45.92\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3758,19 +4178,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(26\\%\\) decrease, an item costs \\(\\$112\\). What was the original price?",
-    "a": "\\(\\$151.35\\)",
-    "options": [
-      "\\(\\$151.35\\)",
-      "\\(\\$82.88\\)",
-      "\\(\\$141.12\\)",
-      "\\(\\$88.89\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$450.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
+    "a": "\\(500.00\\)",
+    "opts": [
+      "\\(450.00\\)",
+      "\\(550.00\\)",
+      "\\(525.00\\)",
+      "\\(500.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{112}{1 - 0.26} = \\$151.35\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{450.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{450.00}{1 - 0.10} = \\frac{450.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{500.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3780,19 +4207,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$665\\) is marked up by \\(16\\%\\) and then discounted by \\(20\\%\\). What is the final price?",
-    "a": "\\(\\$617.12\\)",
-    "options": [
-      "\\(\\$617.12\\)",
-      "\\(\\$904.40\\)",
-      "\\(\\$425.60\\)",
-      "\\(\\$925.68\\)"
+    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$283\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
+    "a": "\\(270.49\\)",
+    "opts": [
+      "\\(270.49\\)",
+      "\\(297.54\\)",
+      "\\(243.44\\)",
+      "\\(284.01\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 665 \\times (1 + 0.16) \\times (1 - 0.20) = \\$617.12\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{283 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{283 dollars} \\times 1.18 = \\text{333.94 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{333.94 dollars} \\times 0.81\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{270.49 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3802,19 +4236,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{29}{446}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(6.50\\%\\)",
-    "options": [
-      "\\(6.50\\%\\)",
-      "\\(1537.93\\%\\)",
-      "\\(0.07\\%\\)",
-      "\\(0.65\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 168 \\) out of \\( 922 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(18.22\\%\\)",
+    "opts": [
+      "\\(19.131%\\)",
+      "\\(16.398%\\)",
+      "\\(20.042%\\)",
+      "\\(18.220%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{29}{446} \\times 100 \\approx 6.50\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{168}{922}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{168}{922} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 18.22\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3824,19 +4265,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(69\\%\\) of \\(88\\%\\) of \\(4502\\).",
-    "a": "\\(2733.61\\)",
-    "options": [
-      "\\(2733.61\\)",
-      "\\(3106.38\\)",
-      "\\(3961.76\\)",
-      "\\(7068.14\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 3571 \\) dollars for testing. If \\( 29\\% \\) of this budget is assigned to the electric scooter division, and \\( 19\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(196.76\\)",
+    "opts": [
+      "\\(206.60\\)",
+      "\\(177.08\\)",
+      "\\(216.44\\)",
+      "\\(196.76\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(4502 \\times 0.69 \\times 0.88 = 2733.61\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 3571 \\times \\frac{29}{100} = 3571 \\times 0.29 = 1035.59\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{19}{100} = 1035.59 \\times 0.19\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 196.76\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3846,19 +4294,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(380\\) to \\(557\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(46.58\\%\\)",
-    "options": [
-      "\\(46.58\\%\\)",
-      "\\(31.78\\%\\)",
-      "\\(146.58\\%\\)",
-      "\\(68.22\\%\\)"
+    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 538 \\) units to \\( 806 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(49.81\\%\\)",
+    "opts": [
+      "\\(54.791%\\)",
+      "\\(49.810%\\)",
+      "\\(52.301%\\)",
+      "\\(44.829%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{557 - 380}{380} \\times 100 \\approx 46.58\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 806 - 538 = 268\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{268}{538} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 49.81\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3868,19 +4323,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(9\\%\\) decrease, an item costs \\(\\$454\\). What was the original price?",
-    "a": "\\(\\$498.90\\)",
-    "options": [
-      "\\(\\$498.90\\)",
-      "\\(\\$413.14\\)",
-      "\\(\\$494.86\\)",
-      "\\(\\$416.51\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$148.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
+    "a": "\\(165.00\\)",
+    "opts": [
+      "\\(165.00\\)",
+      "\\(181.50\\)",
+      "\\(173.25\\)",
+      "\\(148.50\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{454}{1 - 0.9} = \\$498.90\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{148.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{148.50}{1 - 0.10} = \\frac{148.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{165.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3890,19 +4352,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$545\\) is marked up by \\(28\\%\\) and then discounted by \\(19\\%\\). What is the final price?",
-    "a": "\\(\\$565.06\\)",
-    "options": [
-      "\\(\\$565.06\\)",
-      "\\(\\$801.15\\)",
-      "\\(\\$288.85\\)",
-      "\\(\\$830.14\\)"
+    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$398\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
+    "a": "\\(402.30\\)",
+    "opts": [
+      "\\(442.53\\)",
+      "\\(362.07\\)",
+      "\\(422.42\\)",
+      "\\(402.30\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 545 \\times (1 + 0.28) \\times (1 - 0.19) = \\$565.06\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{398 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{398 dollars} \\times 1.33 = \\text{529.34 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{529.34 dollars} \\times 0.76\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{402.30 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3912,19 +4381,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{20}{209}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(9.57\\%\\)",
-    "options": [
-      "\\(9.57\\%\\)",
-      "\\(1045.00\\%\\)",
-      "\\(0.10\\%\\)",
-      "\\(0.96\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 113 \\) out of \\( 1077 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(10.49\\%\\)",
+    "opts": [
+      "\\(10.490%\\)",
+      "\\(11.014%\\)",
+      "\\(11.539%\\)",
+      "\\(9.441%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{20}{209} \\times 100 \\approx 9.57\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{113}{1077}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{113}{1077} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 10.49\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3934,19 +4410,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(25\\%\\) of \\(18\\%\\) of \\(3795\\).",
-    "a": "\\(170.78\\)",
-    "options": [
-      "\\(170.78\\)",
-      "\\(948.75\\)",
-      "\\(683.10\\)",
-      "\\(1631.85\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 4156 \\) dollars for testing. If \\( 34\\% \\) of this budget is assigned to the graphics card division, and \\( 9\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(127.17\\)",
+    "opts": [
+      "\\(127.17\\)",
+      "\\(139.89\\)",
+      "\\(114.45\\)",
+      "\\(133.53\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(3795 \\times 0.25 \\times 0.18 = 170.78\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 4156 \\times \\frac{34}{100} = 4156 \\times 0.34 = 1413.04\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{9}{100} = 1413.04 \\times 0.09\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 127.17\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3956,19 +4439,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(396\\) to \\(618\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(56.06\\%\\)",
-    "options": [
-      "\\(56.06\\%\\)",
-      "\\(35.92\\%\\)",
-      "\\(156.06\\%\\)",
-      "\\(64.08\\%\\)"
+    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 623 \\) units to \\( 451 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(-27.61\\%\\)",
+    "opts": [
+      "\\(-26.610%\\)",
+      "\\(-27.610%\\)",
+      "\\(-24.610%\\)",
+      "\\(-25.610%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{618 - 396}{396} \\times 100 \\approx 56.06\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 451 - 623 = -172\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{-172}{623} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx -27.61\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -3978,19 +4468,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(33\\%\\) decrease, an item costs \\(\\$844\\). What was the original price?",
-    "a": "\\(\\$1259.70\\)",
-    "options": [
-      "\\(\\$1259.70\\)",
-      "\\(\\$565.48\\)",
-      "\\(\\$1122.52\\)",
-      "\\(\\$634.59\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$207.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
+    "a": "\\(230.00\\)",
+    "opts": [
+      "\\(253.00\\)",
+      "\\(230.00\\)",
+      "\\(241.50\\)",
+      "\\(207.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{844}{1 - 0.33} = \\$1259.70\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{207.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{207.00}{1 - 0.10} = \\frac{207.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{230.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4000,19 +4497,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$457\\) is marked up by \\(27\\%\\) and then discounted by \\(22\\%\\). What is the final price?",
-    "a": "\\(\\$452.70\\)",
-    "options": [
-      "\\(\\$452.70\\)",
-      "\\(\\$680.93\\)",
-      "\\(\\$233.07\\)",
-      "\\(\\$708.08\\)"
+    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$513\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
+    "a": "\\(429.79\\)",
+    "opts": [
+      "\\(386.81\\)",
+      "\\(472.77\\)",
+      "\\(451.28\\)",
+      "\\(429.79\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 457 \\times (1 + 0.27) \\times (1 - 0.22) = \\$452.70\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{513 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{513 dollars} \\times 1.18 = \\text{605.34 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{605.34 dollars} \\times 0.71\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{429.79 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4022,19 +4526,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{42}{392}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(10.71\\%\\)",
-    "options": [
-      "\\(10.71\\%\\)",
-      "\\(933.33\\%\\)",
-      "\\(0.11\\%\\)",
-      "\\(1.07\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 58 \\) out of \\( 1232 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(4.71\\%\\)",
+    "opts": [
+      "\\(4.710%\\)",
+      "\\(5.181%\\)",
+      "\\(4.239%\\)",
+      "\\(4.946%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{42}{392} \\times 100 \\approx 10.71\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{58}{1232}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{58}{1232} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 4.71\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4044,19 +4555,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(12\\%\\) of \\(58\\%\\) of \\(886\\).",
-    "a": "\\(61.67\\)",
-    "options": [
-      "\\(61.67\\)",
-      "\\(106.32\\)",
-      "\\(513.88\\)",
-      "\\(620.20\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 4741 \\) dollars for testing. If \\( 9\\% \\) of this budget is assigned to the leather briefcase division, and \\( 24\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(102.41\\)",
+    "opts": [
+      "\\(112.65\\)",
+      "\\(102.41\\)",
+      "\\(107.53\\)",
+      "\\(92.17\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(886 \\times 0.12 \\times 0.58 = 61.67\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 4741 \\times \\frac{9}{100} = 4741 \\times 0.09 = 426.69\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{24}{100} = 426.69 \\times 0.24\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 102.41\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4066,19 +4584,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(454\\) to \\(735\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(61.89\\%\\)",
-    "options": [
-      "\\(61.89\\%\\)",
-      "\\(38.23\\%\\)",
-      "\\(161.89\\%\\)",
-      "\\(61.77\\%\\)"
+    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 308 \\) units to \\( 596 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(93.51\\%\\)",
+    "opts": [
+      "\\(84.159%\\)",
+      "\\(102.861%\\)",
+      "\\(93.510%\\)",
+      "\\(98.186%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{735 - 454}{454} \\times 100 \\approx 61.89\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 596 - 308 = 288\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{288}{308} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 93.51\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4088,19 +4613,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(40\\%\\) decrease, an item costs \\(\\$515\\). What was the original price?",
-    "a": "\\(\\$858.33\\)",
-    "options": [
-      "\\(\\$858.33\\)",
-      "\\(\\$309.00\\)",
-      "\\(\\$721.00\\)",
-      "\\(\\$367.86\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$265.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
+    "a": "\\(295.00\\)",
+    "opts": [
+      "\\(295.00\\)",
+      "\\(324.50\\)",
+      "\\(265.50\\)",
+      "\\(309.75\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{515}{1 - 0.40} = \\$858.33\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{265.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{265.50}{1 - 0.10} = \\frac{265.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{295.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4110,19 +4642,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$952\\) is marked up by \\(16\\%\\) and then discounted by \\(25\\%\\). What is the final price?",
-    "a": "\\(\\$828.24\\)",
-    "options": [
-      "\\(\\$828.24\\)",
-      "\\(\\$1342.32\\)",
-      "\\(\\$561.68\\)",
-      "\\(\\$1380.40\\)"
+    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$628\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
+    "a": "\\(718.31\\)",
+    "opts": [
+      "\\(718.31\\)",
+      "\\(790.14\\)",
+      "\\(646.48\\)",
+      "\\(754.23\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 952 \\times (1 + 0.16) \\times (1 - 0.25) = \\$828.24\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{628 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{628 dollars} \\times 1.33 = \\text{835.24 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{835.24 dollars} \\times 0.86\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{718.31 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4132,19 +4671,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{76}{162}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(46.91\\%\\)",
-    "options": [
-      "\\(46.91\\%\\)",
-      "\\(213.16\\%\\)",
-      "\\(0.47\\%\\)",
-      "\\(4.69\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 153 \\) out of \\( 1387 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(11.03\\%\\)",
+    "opts": [
+      "\\(11.030%\\)",
+      "\\(12.133%\\)",
+      "\\(9.927%\\)",
+      "\\(11.582%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{76}{162} \\times 100 \\approx 46.91\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{153}{1387}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{153}{1387} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 11.03\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4154,19 +4700,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(86\\%\\) of \\(11\\%\\) of \\(3415\\).",
-    "a": "\\(323.06\\)",
-    "options": [
-      "\\(323.06\\)",
-      "\\(2936.90\\)",
-      "\\(375.65\\)",
-      "\\(3312.55\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 5326 \\) dollars for testing. If \\( 14\\% \\) of this budget is assigned to the camping tent division, and \\( 14\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(104.39\\)",
+    "opts": [
+      "\\(109.61\\)",
+      "\\(104.39\\)",
+      "\\(93.95\\)",
+      "\\(114.83\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(3415 \\times 0.86 \\times 0.11 = 323.06\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 5326 \\times \\frac{14}{100} = 5326 \\times 0.14 = 745.64\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{14}{100} = 745.64 \\times 0.14\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 104.39\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4176,19 +4729,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(386\\) to \\(545\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(41.19\\%\\)",
-    "options": [
-      "\\(41.19\\%\\)",
-      "\\(29.17\\%\\)",
-      "\\(141.19\\%\\)",
-      "\\(70.83\\%\\)"
+    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 393 \\) units to \\( 741 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(88.55\\%\\)",
+    "opts": [
+      "\\(88.550%\\)",
+      "\\(97.405%\\)",
+      "\\(79.695%\\)",
+      "\\(92.978%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{545 - 386}{386} \\times 100 \\approx 41.19\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 741 - 393 = 348\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{348}{393} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 88.55\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4198,19 +4758,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(25\\%\\) decrease, an item costs \\(\\$178\\). What was the original price?",
-    "a": "\\(\\$237.33\\)",
-    "options": [
-      "\\(\\$237.33\\)",
-      "\\(\\$133.50\\)",
-      "\\(\\$222.50\\)",
-      "\\(\\$142.40\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$324.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
+    "a": "\\(360.00\\)",
+    "opts": [
+      "\\(378.00\\)",
+      "\\(324.00\\)",
+      "\\(396.00\\)",
+      "\\(360.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{178}{1 - 0.25} = \\$237.33\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{324.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{324.00}{1 - 0.10} = \\frac{324.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{360.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4220,19 +4787,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$108\\) is marked up by \\(14\\%\\) and then discounted by \\(14\\%\\). What is the final price?",
-    "a": "\\(\\$105.88\\)",
-    "options": [
-      "\\(\\$105.88\\)",
-      "\\(\\$138.24\\)",
-      "\\(\\$77.76\\)",
-      "\\(\\$140.36\\)"
+    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$143\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
+    "a": "\\(136.68\\)",
+    "opts": [
+      "\\(123.01\\)",
+      "\\(143.51\\)",
+      "\\(150.35\\)",
+      "\\(136.68\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 108 \\times (1 + 0.14) \\times (1 - 0.14) = \\$105.88\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{143 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{143 dollars} \\times 1.18 = \\text{168.74 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{168.74 dollars} \\times 0.81\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{136.68 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4242,19 +4816,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{92}{874}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(10.53\\%\\)",
-    "options": [
-      "\\(10.53\\%\\)",
-      "\\(950.00\\%\\)",
-      "\\(0.11\\%\\)",
-      "\\(1.05\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 98 \\) out of \\( 742 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(13.21\\%\\)",
+    "opts": [
+      "\\(14.531%\\)",
+      "\\(13.210%\\)",
+      "\\(11.889%\\)",
+      "\\(13.871%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{92}{874} \\times 100 \\approx 10.53\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{98}{742}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{98}{742} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 13.21\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4264,19 +4845,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(21\\%\\) of \\(80\\%\\) of \\(1439\\).",
-    "a": "\\(241.75\\)",
-    "options": [
-      "\\(241.75\\)",
-      "\\(302.19\\)",
-      "\\(1151.20\\)",
-      "\\(1453.39\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 5911 \\) dollars for testing. If \\( 19\\% \\) of this budget is assigned to the electric scooter division, and \\( 29\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(325.70\\)",
+    "opts": [
+      "\\(325.70\\)",
+      "\\(358.27\\)",
+      "\\(341.99\\)",
+      "\\(293.13\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(1439 \\times 0.21 \\times 0.80 = 241.75\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 5911 \\times \\frac{19}{100} = 5911 \\times 0.19 = 1123.09\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{29}{100} = 1123.09 \\times 0.29\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 325.70\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4286,19 +4874,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(311\\) to \\(602\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(93.57\\%\\)",
-    "options": [
-      "\\(93.57\\%\\)",
-      "\\(48.34\\%\\)",
-      "\\(193.57\\%\\)",
-      "\\(51.66\\%\\)"
+    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 478 \\) units to \\( 886 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(85.36\\%\\)",
+    "opts": [
+      "\\(93.896%\\)",
+      "\\(85.360%\\)",
+      "\\(76.824%\\)",
+      "\\(89.628%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{602 - 311}{311} \\times 100 \\approx 93.57\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 886 - 478 = 408\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{408}{478} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 85.36\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4308,19 +4903,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(40\\%\\) decrease, an item costs \\(\\$911\\). What was the original price?",
-    "a": "\\(\\$1518.33\\)",
-    "options": [
-      "\\(\\$1518.33\\)",
-      "\\(\\$546.60\\)",
-      "\\(\\$1275.40\\)",
-      "\\(\\$650.71\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$382.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
+    "a": "\\(425.00\\)",
+    "opts": [
+      "\\(425.00\\)",
+      "\\(467.50\\)",
+      "\\(382.50\\)",
+      "\\(446.25\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{911}{1 - 0.40} = \\$1518.33\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{382.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{382.50}{1 - 0.10} = \\frac{382.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{425.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4330,19 +4932,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$100\\) is marked up by \\(19\\%\\) and then discounted by \\(25\\%\\). What is the final price?",
-    "a": "\\(\\$89.25\\)",
-    "options": [
-      "\\(\\$89.25\\)",
-      "\\(\\$144.00\\)",
-      "\\(\\$56.00\\)",
-      "\\(\\$148.75\\)"
+    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$258\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
+    "a": "\\(260.79\\)",
+    "opts": [
+      "\\(260.79\\)",
+      "\\(273.83\\)",
+      "\\(286.87\\)",
+      "\\(234.71\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 100 \\times (1 + 0.19) \\times (1 - 0.25) = \\$89.25\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{258 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{258 dollars} \\times 1.33 = \\text{343.14 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{343.14 dollars} \\times 0.76\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{260.79 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4352,19 +4961,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{48}{338}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(14.20\\%\\)",
-    "options": [
-      "\\(14.20\\%\\)",
-      "\\(704.17\\%\\)",
-      "\\(0.14\\%\\)",
-      "\\(1.42\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 43 \\) out of \\( 897 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(4.79\\%\\)",
+    "opts": [
+      "\\(4.790%\\)",
+      "\\(5.269%\\)",
+      "\\(4.311%\\)",
+      "\\(5.030%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{48}{338} \\times 100 \\approx 14.20\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{43}{897}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{43}{897} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 4.79\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4374,19 +4990,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(20\\%\\) of \\(50\\%\\) of \\(2184\\).",
-    "a": "\\(218.40\\)",
-    "options": [
-      "\\(218.40\\)",
-      "\\(436.80\\)",
-      "\\(1092.00\\)",
-      "\\(1528.80\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 1496 \\) dollars for testing. If \\( 24\\% \\) of this budget is assigned to the graphics card division, and \\( 19\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(68.22\\)",
+    "opts": [
+      "\\(75.04\\)",
+      "\\(71.63\\)",
+      "\\(61.40\\)",
+      "\\(68.22\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(2184 \\times 0.20 \\times 0.50 = 218.40\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 1496 \\times \\frac{24}{100} = 1496 \\times 0.24 = 359.04\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{19}{100} = 359.04 \\times 0.19\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 68.22\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4396,19 +5019,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(391\\) to \\(783\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(100.26\\%\\)",
-    "options": [
-      "\\(100.26\\%\\)",
-      "\\(50.06\\%\\)",
-      "\\(200.26\\%\\)",
-      "\\(49.94\\%\\)"
+    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 563 \\) units to \\( 531 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(-5.68\\%\\)",
+    "opts": [
+      "\\(-2.680%\\)",
+      "\\(-5.680%\\)",
+      "\\(-4.680%\\)",
+      "\\(-3.680%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{783 - 391}{391} \\times 100 \\approx 100.26\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 531 - 563 = -32\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{-32}{563} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx -5.68\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4418,19 +5048,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(45\\%\\) decrease, an item costs \\(\\$421\\). What was the original price?",
-    "a": "\\(\\$765.45\\)",
-    "options": [
-      "\\(\\$765.45\\)",
-      "\\(\\$231.55\\)",
-      "\\(\\$610.45\\)",
-      "\\(\\$290.34\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$441.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
+    "a": "\\(490.00\\)",
+    "opts": [
+      "\\(514.50\\)",
+      "\\(441.00\\)",
+      "\\(539.00\\)",
+      "\\(490.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{421}{1 - 0.45} = \\$765.45\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{441.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{441.00}{1 - 0.10} = \\frac{441.00}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{490.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4440,19 +5077,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$714\\) is marked up by \\(15\\%\\) and then discounted by \\(13\\%\\). What is the final price?",
-    "a": "\\(\\$714.36\\)",
-    "options": [
-      "\\(\\$714.36\\)",
-      "\\(\\$913.92\\)",
-      "\\(\\$514.08\\)",
-      "\\(\\$927.84\\)"
+    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$373\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
+    "a": "\\(312.50\\)",
+    "opts": [
+      "\\(312.50\\)",
+      "\\(343.75\\)",
+      "\\(281.25\\)",
+      "\\(328.13\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 714 \\times (1 + 0.15) \\times (1 - 0.13) = \\$714.36\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{373 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{373 dollars} \\times 1.18 = \\text{440.14 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{440.14 dollars} \\times 0.71\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{312.50 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4462,19 +5106,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{46}{402}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(11.44\\%\\)",
-    "options": [
-      "\\(11.44\\%\\)",
-      "\\(873.91\\%\\)",
-      "\\(0.11\\%\\)",
-      "\\(1.14\\%\\)"
+    "question": "At a quality inspection center run by Zenith, \\( 138 \\) out of \\( 1052 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(13.12\\%\\)",
+    "opts": [
+      "\\(13.776%\\)",
+      "\\(14.432%\\)",
+      "\\(13.120%\\)",
+      "\\(11.808%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{46}{402} \\times 100 \\approx 11.44\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{138}{1052}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{138}{1052} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 13.12\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4484,19 +5135,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(51\\%\\) of \\(88\\%\\) of \\(2231\\).",
-    "a": "\\(1001.27\\)",
-    "options": [
-      "\\(1001.27\\)",
-      "\\(1137.81\\)",
-      "\\(1963.28\\)",
-      "\\(3101.09\\)"
+    "question": "A research department at Stellar allocates a budget of \\( 2081 \\) dollars for testing. If \\( 29\\% \\) of this budget is assigned to the leather briefcase division, and \\( 9\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(54.31\\)",
+    "opts": [
+      "\\(54.31\\)",
+      "\\(59.74\\)",
+      "\\(48.88\\)",
+      "\\(57.03\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(2231 \\times 0.51 \\times 0.88 = 1001.27\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 2081 \\times \\frac{29}{100} = 2081 \\times 0.29 = 603.49\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{9}{100} = 603.49 \\times 0.09\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 54.31\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4506,19 +5164,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(288\\) to \\(798\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(177.08\\%\\)",
-    "options": [
-      "\\(177.08\\%\\)",
-      "\\(63.91\\%\\)",
-      "\\(277.08\\%\\)",
-      "\\(36.09\\%\\)"
+    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 648 \\) units to \\( 676 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(4.32\\%\\)",
+    "opts": [
+      "\\(4.320%\\)",
+      "\\(4.752%\\)",
+      "\\(3.888%\\)",
+      "\\(4.536%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{798 - 288}{288} \\times 100 \\approx 177.08\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 676 - 648 = 28\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{28}{648} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 4.32\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4528,19 +5193,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a \\(38\\%\\) decrease, an item costs \\(\\$864\\). What was the original price?",
-    "a": "\\(\\$1393.55\\)",
-    "options": [
-      "\\(\\$1393.55\\)",
-      "\\(\\$535.68\\)",
-      "\\(\\$1192.32\\)",
-      "\\(\\$626.09\\)"
+    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$139.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
+    "a": "\\(155.00\\)",
+    "opts": [
+      "\\(162.75\\)",
+      "\\(155.00\\)",
+      "\\(170.50\\)",
+      "\\(139.50\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "To find the original amount after a percentage decrease, divide the final amount by \\(1 - \\text{percentage}\\).",
-        "workingOut": "\\(\\text{Original} = \\frac{864}{1 - 0.38} = \\$1393.55\\)",
-        "graphData": null
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = \\text{139.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+      },
+      {
+        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{139.50}{1 - 0.10} = \\frac{139.50}{0.90}\\)"
+      },
+      {
+        "explanation": "Calculate the exact value and round it to two decimal places.",
+        "workingOut": "\\(\\text{Original Price} = \\text{155.00 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4550,19 +5222,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An item originally costing \\(\\$283\\) is marked up by \\(14\\%\\) and then discounted by \\(18\\%\\). What is the final price?",
-    "a": "\\(\\$264.55\\)",
-    "options": [
-      "\\(\\$264.55\\)",
-      "\\(\\$373.56\\)",
-      "\\(\\$192.44\\)",
-      "\\(\\$380.69\\)"
+    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$488\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
+    "a": "\\(558.17\\)",
+    "opts": [
+      "\\(586.08\\)",
+      "\\(558.17\\)",
+      "\\(613.99\\)",
+      "\\(502.35\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the first percentage increase, then apply the second percentage decrease to the new amount.",
-        "workingOut": "\\(\\text{Final} = 283 \\times (1 + 0.14) \\times (1 - 0.18) = \\$264.55\\)",
-        "graphData": null
+        "explanation": "Calculate the price after the initial markup.",
+        "workingOut": "\\(V_1 = \\text{488 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{488 dollars} \\times 1.33 = \\text{649.04 dollars}\\)"
+      },
+      {
+        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
+        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{649.04 dollars} \\times 0.86\\)"
+      },
+      {
+        "explanation": "Evaluate the product to determine the final promotional price.",
+        "workingOut": "\\(V_2 = \\text{558.17 dollars}\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4572,19 +5251,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Express \\(\\frac{16}{263}\\) as a percentage, rounded to two decimal places.",
-    "a": "\\(6.08\\%\\)",
-    "options": [
-      "\\(6.08\\%\\)",
-      "\\(1643.75\\%\\)",
-      "\\(0.06\\%\\)",
-      "\\(0.61\\%\\)"
+    "question": "At a quality inspection center run by AeroGroup, \\( 83 \\) out of \\( 1207 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
+    "a": "\\(6.88\\%\\)",
+    "opts": [
+      "\\(6.880%\\)",
+      "\\(6.192%\\)",
+      "\\(7.568%\\)",
+      "\\(7.224%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Divide the numerator by the denominator and multiply by 100.",
-        "workingOut": "\\(\\frac{16}{263} \\times 100 \\approx 6.08\\%\\)",
-        "graphData": null
+        "explanation": "Write the fraction representing the selected units.",
+        "workingOut": "\\(\\text{Fraction} = \\frac{83}{1207}\\)"
+      },
+      {
+        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{83}{1207} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Calculate the value and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage} \\approx 6.88\\%\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4594,19 +5280,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\(35\\%\\) of \\(72\\%\\) of \\(3460\\).",
-    "a": "\\(871.92\\)",
-    "options": [
-      "\\(871.92\\)",
-      "\\(1211.00\\)",
-      "\\(2491.20\\)",
-      "\\(3702.20\\)"
+    "question": "A research department at BioLabs allocates a budget of \\( 2666 \\) dollars for testing. If \\( 34\\% \\) of this budget is assigned to the camping tent division, and \\( 24\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
+    "a": "\\(217.55\\)",
+    "opts": [
+      "\\(217.55\\)",
+      "\\(239.31\\)",
+      "\\(228.43\\)",
+      "\\(195.80\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply the amount by both percentages expressed as decimals.",
-        "workingOut": "\\(3460 \\times 0.35 \\times 0.72 = 871.92\\)",
-        "graphData": null
+        "explanation": "Calculate the budget allocated to the division.",
+        "workingOut": "\\(B_{\\text{division}} = 2666 \\times \\frac{34}{100} = 2666 \\times 0.34 = 906.44\\)"
+      },
+      {
+        "explanation": "Find the percentage of the division's budget used for testing.",
+        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{24}{100} = 906.44 \\times 0.24\\)"
+      },
+      {
+        "explanation": "Calculate the final expenditure.",
+        "workingOut": "\\(B_{\\text{testing}} = 217.55\\)"
       }
     ],
     "t": "Review of percentage"
@@ -4616,19 +5309,26 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A population increases from \\(392\\) to \\(509\\). What is the percentage increase, rounded to two decimal places?",
-    "a": "\\(29.85\\%\\)",
-    "options": [
-      "\\(29.85\\%\\)",
-      "\\(22.99\\%\\)",
-      "\\(129.85\\%\\)",
-      "\\(77.01\\%\\)"
+    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 333 \\) units to \\( 821 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
+    "a": "\\(146.55\\%\\)",
+    "opts": [
+      "\\(146.550%\\)",
+      "\\(161.205%\\)",
+      "\\(131.895%\\)",
+      "\\(153.878%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Find the absolute increase, then divide by the original amount and multiply by 100.",
-        "workingOut": "\\(\\frac{509 - 392}{392} \\times 100 \\approx 29.85\\%\\)",
-        "graphData": null
+        "explanation": "Determine the absolute increase in units produced.",
+        "workingOut": "\\(\\text{Increase} = 821 - 333 = 488\\)"
+      },
+      {
+        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
+        "workingOut": "\\(\\text{Percentage Increase} = \\frac{488}{333} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Evaluate the quotient and round to two decimal places.",
+        "workingOut": "\\(\\text{Percentage Increase} \\approx 146.55\\%\\)"
       }
     ],
     "t": "Review of percentage"

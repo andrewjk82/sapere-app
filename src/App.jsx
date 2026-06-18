@@ -90,7 +90,7 @@ import { CURRENT_APP_VERSION } from './constants/appVersion';
 import { getRandomConcept } from './data/keyConceptsData';
 import { localCache } from './services/localCacheService';
 import { getChallengeBootCacheKey } from './utils/challengeUtils';
-import { pruneBlocked, applyTeacherApprovals as applySecretNoteApprovals } from './utils/secretNote';
+import { pruneBlocked, applyTeacherApprovals as applySecretNoteApprovals, applyTeacherReset as applySecretNoteReset } from './utils/secretNote';
 import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
@@ -435,15 +435,22 @@ function App() {
     {
       const data = sharedProfile;
       const noteApprovals = data.secretNoteApprovals;
+      const noteResets = data.secretNoteResets;
       const examApprovals = data.examPrepApprovals;
       const examRejections = data.examPrepRejections;
-      if (!Array.isArray(noteApprovals) && !Array.isArray(examApprovals) && !Array.isArray(examRejections)) return undefined;
+      if (!Array.isArray(noteApprovals) && !noteResets && !Array.isArray(examApprovals) && !Array.isArray(examRejections)) return undefined;
       const clear = {};
       try {
         if (Array.isArray(noteApprovals) && noteApprovals.length) {
           const n = applySecretNoteApprovals(user.uid, noteApprovals);
           if (n > 0) showToast(`Your teacher approved ${n} Secret Note answer${n === 1 ? '' : 's'} — mastered! 🎉`, 'success');
           clear.secretNoteApprovals = deleteField();
+        }
+        if (noteResets) {
+          const kinds = Array.isArray(noteResets.kinds) ? noteResets.kinds : [];
+          applySecretNoteReset(user.uid, kinds);
+          showToast('Your teacher reset your Secret Notebook.', 'info');
+          clear.secretNoteResets = deleteField();
         }
         if (Array.isArray(examApprovals) && examApprovals.length) {
           const n = applyExamPrepApprovals(user.uid, examApprovals);

@@ -4,33 +4,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$6000\\) into two accounts. Account A earned \\(5\\%\\) interest per annum, and Account B earned \\(7\\%\\) interest per annum. If the total interest earned after one year was \\(\\$376.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$2200\\)",
-      "\\(\\$2700\\)",
-      "\\(\\$3000\\)",
-      "\\(\\$3800\\)"
+    "question": "Sophia purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$316\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$312.09\\). What was the original price of the road bike?",
+    "opts": [
+      "\\(188\\)",
+      "\\(161\\)",
+      "\\(197\\)",
+      "\\(179\\)"
     ],
-    "answer": 0,
+    "a": "\\(179\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 6000\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 316\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{7}{100}y = 376.00\\ \\rightarrow\\ 5x + 7y = 37600\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 312.09 \\implies 1.07x + 0.88y = 312.09\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 6000 - x\\ \\rightarrow\\ 5x + 7(6000 - x) = 37600\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.88(316 - x) = 312.09\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(5x + 42000 - 7x = 37600\\ \\rightarrow\\ -2x = -4400\\ \\rightarrow\\ x = 2200\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.19x + 278.08 = 312.09 \\implies x = 179\\)",
         "graphData": null
       }
     ],
@@ -41,34 +41,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$7000\\) into two accounts. Account A earned \\(6\\%\\) interest per annum, and Account B earned \\(8\\%\\) interest per annum. If the total interest earned after one year was \\(\\$512.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$2400\\)",
-      "\\(\\$2900\\)",
-      "\\(\\$3500\\)",
-      "\\(\\$4600\\)"
+    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(80\\%\\) nitrogen to produce exactly \\(46\\text{ kg}\\) of a blended mixture containing \\(67.61\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "opts": [
+      "\\(19\\)",
+      "\\(21\\)",
+      "\\(17\\)",
+      "\\(20\\)"
     ],
-    "answer": 0,
+    "a": "\\(19\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 7000\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 46\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{8}{100}y = 512.00\\ \\rightarrow\\ 6x + 8y = 51200\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{67.61}{100}(46) \\implies 50x + 80y = 3110.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 7000 - x\\ \\rightarrow\\ 6x + 8(7000 - x) = 51200\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 80(46 - x) = 3110.0 \\implies -30x = -570.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(6x + 56000 - 8x = 51200\\ \\rightarrow\\ -2x = -4800\\ \\rightarrow\\ x = 2400\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 19\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -78,33 +77,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$8000\\) into two accounts. Account A earned \\(7\\%\\) interest per annum, and Account B earned \\(9\\%\\) interest per annum. If the total interest earned after one year was \\(\\$668.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$2600\\)",
-      "\\(\\$3100\\)",
-      "\\(\\$4000\\)",
-      "\\(\\$5400\\)"
+    "question": "An independent wholesale dealer Charlotte bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$1641\\). Later, she sold the used delivery trucks at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$-64.10\\), find the original cost price of the used delivery trucks.",
+    "opts": [
+      "\\(500\\)",
+      "\\(450\\)",
+      "\\(525\\)",
+      "\\(550\\)"
     ],
-    "answer": 0,
+    "a": "\\(500\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 8000\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 1641\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{9}{100}y = 668.00\\ \\rightarrow\\ 7x + 9y = 66800\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -64.10 \\implies 10x - 10y = -6410\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 8000 - x\\ \\rightarrow\\ 7x + 9(8000 - x) = 66800\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(7x + 72000 - 9x = 66800\\ \\rightarrow\\ -2x = -5200\\ \\rightarrow\\ x = 2600\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(10x - 10(1641 - x) = -6410 \\implies (10 + 10)x - 16410 = -6410 \\implies x = 500\\)",
         "graphData": null
       }
     ],
@@ -115,33 +109,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$9000\\) into two accounts. Account A earned \\(4\\%\\) interest per annum, and Account B earned \\(10\\%\\) interest per annum. If the total interest earned after one year was \\(\\$732.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$2800\\)",
-      "\\(\\$3300\\)",
-      "\\(\\$4500\\)",
-      "\\(\\$6200\\)"
+    "question": "Daniel splits a lump sum of \\(\\$10292\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$906.20\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(4100\\)",
+      "\\(4510\\)",
+      "\\(4305\\)",
+      "\\(3690\\)"
     ],
-    "answer": 0,
+    "a": "\\(4100\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 9000\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 10292\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{10}{100}y = 732.00\\ \\rightarrow\\ 4x + 10y = 73200\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{7}{100}x + \\frac{10}{100}y = 906.20\\ \\rightarrow\\ 7x + 10y = 90620\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 9000 - x\\ \\rightarrow\\ 4x + 10(9000 - x) = 73200\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(7x + 10(10292 - x) = 90620\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(4x + 90000 - 10x = 73200\\ \\rightarrow\\ -6x = -16800\\ \\rightarrow\\ x = 2800\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(7x + 102920 - 10x = 90620 \\implies -3x = -12300 \\implies x = 4100\\)",
         "graphData": null
       }
     ],
@@ -152,33 +146,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$10000\\) into two accounts. Account A earned \\(5\\%\\) interest per annum, and Account B earned \\(6\\%\\) interest per annum. If the total interest earned after one year was \\(\\$570.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$3000\\)",
-      "\\(\\$3500\\)",
-      "\\(\\$5000\\)",
-      "\\(\\$7000\\)"
+    "question": "Amelia purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$580\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$555.05\\). What was the original price of the leather sofa?",
+    "opts": [
+      "\\(295\\)",
+      "\\(310\\)",
+      "\\(325\\)",
+      "\\(266\\)"
     ],
-    "answer": 0,
+    "a": "\\(295\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 10000\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 580\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{6}{100}y = 570.00\\ \\rightarrow\\ 5x + 6y = 57000\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 555.05 \\implies 1.07x + 0.84y = 555.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 10000 - x\\ \\rightarrow\\ 5x + 6(10000 - x) = 57000\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.84(580 - x) = 555.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(5x + 60000 - 6x = 57000\\ \\rightarrow\\ -1x = -3000\\ \\rightarrow\\ x = 3000\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.23x + 487.20 = 555.05 \\implies x = 295\\)",
         "graphData": null
       }
     ],
@@ -189,34 +183,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$11000\\) into two accounts. Account A earned \\(6\\%\\) interest per annum, and Account B earned \\(7\\%\\) interest per annum. If the total interest earned after one year was \\(\\$738.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$3200\\)",
-      "\\(\\$3700\\)",
-      "\\(\\$5500\\)",
-      "\\(\\$7800\\)"
+    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(60\\%\\) pure silver to produce exactly \\(98\\text{ kg}\\) of a blended mixture containing \\(55.20\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "opts": [
+      "\\(49\\)",
+      "\\(42\\)",
+      "\\(52\\)",
+      "\\(47\\)"
     ],
-    "answer": 0,
+    "a": "\\(47\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 11000\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 98\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{7}{100}y = 738.00\\ \\rightarrow\\ 6x + 7y = 73800\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{55.20}{100}(98) \\implies 50x + 60y = 5410.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 11000 - x\\ \\rightarrow\\ 6x + 7(11000 - x) = 73800\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 60(98 - x) = 5410.0 \\implies -10x = -470.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(6x + 77000 - 7x = 73800\\ \\rightarrow\\ -1x = -3200\\ \\rightarrow\\ x = 3200\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 47\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -226,33 +219,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$12000\\) into two accounts. Account A earned \\(7\\%\\) interest per annum, and Account B earned \\(8\\%\\) interest per annum. If the total interest earned after one year was \\(\\$926.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$3400\\)",
-      "\\(\\$3900\\)",
-      "\\(\\$6000\\)",
-      "\\(\\$8600\\)"
+    "question": "An independent wholesale dealer Olivia bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$1829\\). Later, she sold the estate jewellery rings at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$-32.90\\), find the original cost price of the estate jewellery rings.",
+    "opts": [
+      "\\(600\\)",
+      "\\(660\\)",
+      "\\(540\\)",
+      "\\(630\\)"
     ],
-    "answer": 0,
+    "a": "\\(600\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 12000\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 1829\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{8}{100}y = 926.00\\ \\rightarrow\\ 7x + 8y = 92600\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = -32.90 \\implies 15x - 10y = -3290\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 12000 - x\\ \\rightarrow\\ 7x + 8(12000 - x) = 92600\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(7x + 96000 - 8x = 92600\\ \\rightarrow\\ -1x = -3400\\ \\rightarrow\\ x = 3400\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(15x - 10(1829 - x) = -3290 \\implies (15 + 10)x - 18290 = -3290 \\implies x = 600\\)",
         "graphData": null
       }
     ],
@@ -263,33 +251,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$13000\\) into two accounts. Account A earned \\(4\\%\\) interest per annum, and Account B earned \\(9\\%\\) interest per annum. If the total interest earned after one year was \\(\\$990.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$3600\\)",
-      "\\(\\$4100\\)",
-      "\\(\\$6500\\)",
-      "\\(\\$9400\\)"
+    "question": "James splits a lump sum of \\(\\$10584\\) into two different savings accounts. Account A earns a yield of \\(6\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$762.72\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(4410\\)",
+      "\\(3780\\)",
+      "\\(4620\\)",
+      "\\(4200\\)"
     ],
-    "answer": 0,
+    "a": "\\(4200\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 13000\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 10584\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{9}{100}y = 990.00\\ \\rightarrow\\ 4x + 9y = 99000\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{6}{100}x + \\frac{8}{100}y = 762.72\\ \\rightarrow\\ 6x + 8y = 76272\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 13000 - x\\ \\rightarrow\\ 4x + 9(13000 - x) = 99000\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(6x + 8(10584 - x) = 76272\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(4x + 117000 - 9x = 99000\\ \\rightarrow\\ -5x = -18000\\ \\rightarrow\\ x = 3600\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(6x + 84672 - 8x = 76272 \\implies -2x = -8400 \\implies x = 4200\\)",
         "graphData": null
       }
     ],
@@ -300,33 +288,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$14000\\) into two accounts. Account A earned \\(5\\%\\) interest per annum, and Account B earned \\(10\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1210.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$10200\\)",
-      "\\(\\$3800\\)",
-      "\\(\\$4300\\)",
-      "\\(\\$7000\\)"
+    "question": "Isabella purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$844\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$838.13\\). What was the original price of the drone?",
+    "opts": [
+      "\\(411\\)",
+      "\\(452\\)",
+      "\\(370\\)",
+      "\\(432\\)"
     ],
-    "answer": 1,
+    "a": "\\(411\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 14000\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 844\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{10}{100}y = 1210.00\\ \\rightarrow\\ 5x + 10y = 121000\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 838.13 \\implies 1.07x + 0.92y = 838.13\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 14000 - x\\ \\rightarrow\\ 5x + 10(14000 - x) = 121000\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.92(844 - x) = 838.13\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(5x + 140000 - 10x = 121000\\ \\rightarrow\\ -5x = -19000\\ \\rightarrow\\ x = 3800\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.15x + 776.48 = 838.13 \\implies x = 411\\)",
         "graphData": null
       }
     ],
@@ -337,34 +325,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$17000\\) into two accounts. Account A earned \\(4\\%\\) interest per annum, and Account B earned \\(8\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1184.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$12600\\)",
-      "\\(\\$4400\\)",
-      "\\(\\$4900\\)",
-      "\\(\\$8500\\)"
+    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(70\\%\\) pure gold to produce exactly \\(70\\text{ kg}\\) of a blended mixture containing \\(65.71\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "opts": [
+      "\\(15\\)",
+      "\\(17\\)",
+      "\\(16\\)",
+      "\\(14\\)"
     ],
-    "answer": 1,
+    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 17000\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 70\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{8}{100}y = 1184.00\\ \\rightarrow\\ 4x + 8y = 118400\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{65.71}{100}(70) \\implies 50x + 70y = 4600.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 17000 - x\\ \\rightarrow\\ 4x + 8(17000 - x) = 118400\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 70(70 - x) = 4600.0 \\implies -20x = -300.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(4x + 136000 - 8x = 118400\\ \\rightarrow\\ -4x = -17600\\ \\rightarrow\\ x = 4400\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 15\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -374,33 +361,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$18000\\) into two accounts. Account A earned \\(5\\%\\) interest per annum, and Account B earned \\(9\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1436.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$13400\\)",
-      "\\(\\$4600\\)",
-      "\\(\\$5100\\)",
-      "\\(\\$9000\\)"
+    "question": "An independent wholesale dealer Harper bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$2017\\). Later, she sold the antique clocks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$8.30\\), find the original cost price of the antique clocks.",
+    "opts": [
+      "\\(630\\)",
+      "\\(700\\)",
+      "\\(735\\)",
+      "\\(770\\)"
     ],
-    "answer": 1,
+    "a": "\\(700\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 18000\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 2017\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{9}{100}y = 1436.00\\ \\rightarrow\\ 5x + 9y = 143600\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 8.30 \\implies 20x - 10y = 830\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 18000 - x\\ \\rightarrow\\ 5x + 9(18000 - x) = 143600\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(5x + 162000 - 9x = 143600\\ \\rightarrow\\ -4x = -18400\\ \\rightarrow\\ x = 4600\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(20x - 10(2017 - x) = 830 \\implies (20 + 10)x - 20170 = 830 \\implies x = 700\\)",
         "graphData": null
       }
     ],
@@ -411,33 +393,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$19000\\) into two accounts. Account A earned \\(6\\%\\) interest per annum, and Account B earned \\(10\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1708.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$14200\\)",
-      "\\(\\$4800\\)",
-      "\\(\\$5300\\)",
-      "\\(\\$9500\\)"
+    "question": "Lucas splits a lump sum of \\(\\$10876\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$610.56\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(3780\\)",
+      "\\(4620\\)",
+      "\\(4410\\)",
+      "\\(4200\\)"
     ],
-    "answer": 1,
+    "a": "\\(4200\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 19000\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 10876\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{10}{100}y = 1708.00\\ \\rightarrow\\ 6x + 10y = 170800\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{6}{100}y = 610.56\\ \\rightarrow\\ 5x + 6y = 61056\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 19000 - x\\ \\rightarrow\\ 6x + 10(19000 - x) = 170800\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(5x + 6(10876 - x) = 61056\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(6x + 190000 - 10x = 170800\\ \\rightarrow\\ -4x = -19200\\ \\rightarrow\\ x = 4800\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(5x + 65256 - 6x = 61056 \\implies -1x = -4200 \\implies x = 4200\\)",
         "graphData": null
       }
     ],
@@ -448,33 +430,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$20000\\) into two accounts. Account A earned \\(7\\%\\) interest per annum, and Account B earned \\(6\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1250.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$10000\\)",
-      "\\(\\$15000\\)",
-      "\\(\\$5000\\)",
-      "\\(\\$5500\\)"
+    "question": "Evelyn purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$1108\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1075.17\\). What was the original price of the dining table?",
+    "opts": [
+      "\\(527\\)",
+      "\\(474\\)",
+      "\\(553\\)",
+      "\\(580\\)"
     ],
-    "answer": 2,
+    "a": "\\(527\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 20000\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 1108\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{6}{100}y = 1250.00\\ \\rightarrow\\ 7x + 6y = 125000\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 1075.17 \\implies 1.07x + 0.88y = 1075.17\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 20000 - x\\ \\rightarrow\\ 7x + 6(20000 - x) = 125000\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.88(1108 - x) = 1075.17\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(7x + 120000 - 6x = 125000\\ \\rightarrow\\ -1x = 5000\\ \\rightarrow\\ x = 5000\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.19x + 975.04 = 1075.17 \\implies x = 527\\)",
         "graphData": null
       }
     ],
@@ -485,34 +467,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$21000\\) into two accounts. Account A earned \\(4\\%\\) interest per annum, and Account B earned \\(7\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1314.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$10500\\)",
-      "\\(\\$15800\\)",
-      "\\(\\$5200\\)",
-      "\\(\\$5700\\)"
+    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(80\\%\\) ethanol to produce exactly \\(42\\text{ kg}\\) of a blended mixture containing \\(75.00\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "opts": [
+      "\\(7\\)",
+      "\\(9\\)",
+      "\\(8\\)",
+      "\\(6\\)"
     ],
-    "answer": 2,
+    "a": "\\(7\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 21000\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 42\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{7}{100}y = 1314.00\\ \\rightarrow\\ 4x + 7y = 131400\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{75.00}{100}(42) \\implies 50x + 80y = 3150.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 21000 - x\\ \\rightarrow\\ 4x + 7(21000 - x) = 131400\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 80(42 - x) = 3150.0 \\implies -30x = -210.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(4x + 147000 - 7x = 131400\\ \\rightarrow\\ -3x = -15600\\ \\rightarrow\\ x = 5200\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 7\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -522,33 +503,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$22000\\) into two accounts. Account A earned \\(5\\%\\) interest per annum, and Account B earned \\(8\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1598.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$11000\\)",
-      "\\(\\$16600\\)",
-      "\\(\\$5400\\)",
-      "\\(\\$5900\\)"
+    "question": "An independent wholesale dealer Abigail bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$2205\\). Later, she sold the rehabilitated office desk suites at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$-50.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "opts": [
+      "\\(850\\)",
+      "\\(935\\)",
+      "\\(893\\)",
+      "\\(765\\)"
     ],
-    "answer": 2,
+    "a": "\\(850\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 22000\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 2205\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 1598.00\\ \\rightarrow\\ 5x + 8y = 159800\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -50.50 \\implies 10x - 10y = -5050\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 22000 - x\\ \\rightarrow\\ 5x + 8(22000 - x) = 159800\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(5x + 176000 - 8x = 159800\\ \\rightarrow\\ -3x = -16200\\ \\rightarrow\\ x = 5400\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(10x - 10(2205 - x) = -5050 \\implies (10 + 10)x - 22050 = -5050 \\implies x = 850\\)",
         "graphData": null
       }
     ],
@@ -559,33 +535,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$23000\\) into two accounts. Account A earned \\(6\\%\\) interest per annum, and Account B earned \\(9\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1902.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$11500\\)",
-      "\\(\\$17400\\)",
-      "\\(\\$5600\\)",
-      "\\(\\$6100\\)"
+    "question": "Mason splits a lump sum of \\(\\$11168\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$858.80\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(4730\\)",
+      "\\(3870\\)",
+      "\\(4515\\)",
+      "\\(4300\\)"
     ],
-    "answer": 2,
+    "a": "\\(4300\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 23000\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 11168\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{9}{100}y = 1902.00\\ \\rightarrow\\ 6x + 9y = 190200\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{10}{100}y = 858.80\\ \\rightarrow\\ 4x + 10y = 85880\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 23000 - x\\ \\rightarrow\\ 6x + 9(23000 - x) = 190200\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(4x + 10(11168 - x) = 85880\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(6x + 207000 - 9x = 190200\\ \\rightarrow\\ -3x = -16800\\ \\rightarrow\\ x = 5600\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(4x + 111680 - 10x = 85880 \\implies -6x = -25800 \\implies x = 4300\\)",
         "graphData": null
       }
     ],
@@ -596,33 +572,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$24000\\) into two accounts. Account A earned \\(7\\%\\) interest per annum, and Account B earned \\(10\\%\\) interest per annum. If the total interest earned after one year was \\(\\$2226.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$12000\\)",
-      "\\(\\$18200\\)",
-      "\\(\\$5800\\)",
-      "\\(\\$6300\\)"
+    "question": "Elizabeth purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$772\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$796.37\\). What was the original price of the camping tent?",
+    "opts": [
+      "\\(643\\)",
+      "\\(707\\)",
+      "\\(579\\)",
+      "\\(675\\)"
     ],
-    "answer": 2,
+    "a": "\\(643\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 24000\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 772\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{10}{100}y = 2226.00\\ \\rightarrow\\ 7x + 10y = 222600\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 796.37 \\implies 1.07x + 0.84y = 796.37\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 24000 - x\\ \\rightarrow\\ 7x + 10(24000 - x) = 222600\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.84(772 - x) = 796.37\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(7x + 240000 - 10x = 222600\\ \\rightarrow\\ -3x = -17400\\ \\rightarrow\\ x = 5800\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.23x + 648.48 = 796.37 \\implies x = 643\\)",
         "graphData": null
       }
     ],
@@ -633,34 +609,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$25000\\) into two accounts. Account A earned \\(4\\%\\) interest per annum, and Account B earned \\(6\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1380.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$12500\\)",
-      "\\(\\$19000\\)",
-      "\\(\\$6000\\)",
-      "\\(\\$6500\\)"
+    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(60\\%\\) copper to produce exactly \\(94\\text{ kg}\\) of a blended mixture containing \\(55.00\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "opts": [
+      "\\(42\\)",
+      "\\(52\\)",
+      "\\(47\\)",
+      "\\(49\\)"
     ],
-    "answer": 2,
+    "a": "\\(47\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 25000\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 94\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 1380.00\\ \\rightarrow\\ 4x + 6y = 138000\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{55.00}{100}(94) \\implies 50x + 60y = 5170.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 25000 - x\\ \\rightarrow\\ 4x + 6(25000 - x) = 138000\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 60(94 - x) = 5170.0 \\implies -10x = -470.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(4x + 150000 - 6x = 138000\\ \\rightarrow\\ -2x = -12000\\ \\rightarrow\\ x = 6000\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 47\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -670,33 +645,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$26000\\) into two accounts. Account A earned \\(5\\%\\) interest per annum, and Account B earned \\(7\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1696.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$13000\\)",
-      "\\(\\$19800\\)",
-      "\\(\\$6200\\)",
-      "\\(\\$6700\\)"
+    "question": "An independent wholesale dealer Mila bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$2393\\). Later, she sold the second-hand server cabinets at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$-1.80\\), find the original cost price of the second-hand server cabinets.",
+    "opts": [
+      "\\(855\\)",
+      "\\(1045\\)",
+      "\\(998\\)",
+      "\\(950\\)"
     ],
-    "answer": 2,
+    "a": "\\(950\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 26000\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 2393\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{7}{100}y = 1696.00\\ \\rightarrow\\ 5x + 7y = 169600\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = -1.80 \\implies 15x - 10y = -180\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 26000 - x\\ \\rightarrow\\ 5x + 7(26000 - x) = 169600\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(5x + 182000 - 7x = 169600\\ \\rightarrow\\ -2x = -12400\\ \\rightarrow\\ x = 6200\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(15x - 10(2393 - x) = -180 \\implies (15 + 10)x - 23930 = -180 \\implies x = 950\\)",
         "graphData": null
       }
     ],
@@ -707,33 +677,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$27000\\) into two accounts. Account A earned \\(6\\%\\) interest per annum, and Account B earned \\(8\\%\\) interest per annum. If the total interest earned after one year was \\(\\$2032.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$13500\\)",
-      "\\(\\$20600\\)",
-      "\\(\\$6400\\)",
-      "\\(\\$6900\\)"
+    "question": "Michael splits a lump sum of \\(\\$11460\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$696.80\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(4620\\)",
+      "\\(3960\\)",
+      "\\(4840\\)",
+      "\\(4400\\)"
     ],
-    "answer": 2,
+    "a": "\\(4400\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 27000\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 11460\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{8}{100}y = 2032.00\\ \\rightarrow\\ 6x + 8y = 203200\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{3}{100}x + \\frac{8}{100}y = 696.80\\ \\rightarrow\\ 3x + 8y = 69680\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 27000 - x\\ \\rightarrow\\ 6x + 8(27000 - x) = 203200\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(3x + 8(11460 - x) = 69680\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(6x + 216000 - 8x = 203200\\ \\rightarrow\\ -2x = -12800\\ \\rightarrow\\ x = 6400\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(3x + 91680 - 8x = 69680 \\implies -5x = -22000 \\implies x = 4400\\)",
         "graphData": null
       }
     ],
@@ -744,33 +714,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$28000\\) into two accounts. Account A earned \\(7\\%\\) interest per annum, and Account B earned \\(9\\%\\) interest per annum. If the total interest earned after one year was \\(\\$2388.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$14000\\)",
-      "\\(\\$21400\\)",
-      "\\(\\$6600\\)",
-      "\\(\\$7100\\)"
+    "question": "Ella purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$1036\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1066.97\\). What was the original price of the road bike?",
+    "opts": [
+      "\\(683\\)",
+      "\\(835\\)",
+      "\\(797\\)",
+      "\\(759\\)"
     ],
-    "answer": 2,
+    "a": "\\(759\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 28000\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 1036\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{9}{100}y = 2388.00\\ \\rightarrow\\ 7x + 9y = 238800\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 1066.97 \\implies 1.07x + 0.92y = 1066.97\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 28000 - x\\ \\rightarrow\\ 7x + 9(28000 - x) = 238800\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.92(1036 - x) = 1066.97\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(7x + 252000 - 9x = 238800\\ \\rightarrow\\ -2x = -13200\\ \\rightarrow\\ x = 6600\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.15x + 953.12 = 1066.97 \\implies x = 759\\)",
         "graphData": null
       }
     ],
@@ -781,34 +751,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$29000\\) into two accounts. Account A earned \\(4\\%\\) interest per annum, and Account B earned \\(10\\%\\) interest per annum. If the total interest earned after one year was \\(\\$2492.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$14500\\)",
-      "\\(\\$22200\\)",
-      "\\(\\$6800\\)",
-      "\\(\\$7300\\)"
+    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(70\\%\\) nitrogen to produce exactly \\(66\\text{ kg}\\) of a blended mixture containing \\(55.76\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "opts": [
+      "\\(49\\)",
+      "\\(52\\)",
+      "\\(42\\)",
+      "\\(47\\)"
     ],
-    "answer": 2,
+    "a": "\\(47\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 29000\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 66\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{10}{100}y = 2492.00\\ \\rightarrow\\ 4x + 10y = 249200\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{55.76}{100}(66) \\implies 50x + 70y = 3680.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 29000 - x\\ \\rightarrow\\ 4x + 10(29000 - x) = 249200\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 70(66 - x) = 3680.0 \\implies -20x = -940.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(4x + 290000 - 10x = 249200\\ \\rightarrow\\ -6x = -40800\\ \\rightarrow\\ x = 6800\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 47\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -818,33 +787,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$30000\\) into two accounts. Account A earned \\(5\\%\\) interest per annum, and Account B earned \\(6\\%\\) interest per annum. If the total interest earned after one year was \\(\\$1730.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$15000\\)",
-      "\\(\\$23000\\)",
-      "\\(\\$7000\\)",
-      "\\(\\$7500\\)"
+    "question": "An independent wholesale dealer Avery bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$2581\\). Later, she sold the used delivery trucks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$56.90\\), find the original cost price of the used delivery trucks.",
+    "opts": [
+      "\\(945\\)",
+      "\\(1155\\)",
+      "\\(1103\\)",
+      "\\(1050\\)"
     ],
-    "answer": 2,
+    "a": "\\(1050\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 30000\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 2581\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{6}{100}y = 1730.00\\ \\rightarrow\\ 5x + 6y = 173000\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 56.90 \\implies 20x - 10y = 5690\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 30000 - x\\ \\rightarrow\\ 5x + 6(30000 - x) = 173000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(5x + 180000 - 6x = 173000\\ \\rightarrow\\ -1x = -7000\\ \\rightarrow\\ x = 7000\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(20x - 10(2581 - x) = 5690 \\implies (20 + 10)x - 25810 = 5690 \\implies x = 1050\\)",
         "graphData": null
       }
     ],
@@ -855,33 +819,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$31000\\) into two accounts. Account A earned \\(6\\%\\) interest per annum, and Account B earned \\(7\\%\\) interest per annum. If the total interest earned after one year was \\(\\$2098.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$15500\\)",
-      "\\(\\$23800\\)",
-      "\\(\\$7200\\)",
-      "\\(\\$7700\\)"
+    "question": "Jacob splits a lump sum of \\(\\$11752\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$750.12\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(4500\\)",
+      "\\(4950\\)",
+      "\\(4725\\)",
+      "\\(4050\\)"
     ],
-    "answer": 2,
+    "a": "\\(4500\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 31000\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 11752\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{7}{100}y = 2098.00\\ \\rightarrow\\ 6x + 7y = 209800\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{7}{100}x + \\frac{6}{100}y = 750.12\\ \\rightarrow\\ 7x + 6y = 75012\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 31000 - x\\ \\rightarrow\\ 6x + 7(31000 - x) = 209800\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(7x + 6(11752 - x) = 75012\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(6x + 217000 - 7x = 209800\\ \\rightarrow\\ -1x = -7200\\ \\rightarrow\\ x = 7200\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(7x + 70512 - 6x = 75012 \\implies -1x = 4500 \\implies x = 4500\\)",
         "graphData": null
       }
     ],
@@ -892,33 +856,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jane invested a total of \\(\\$32000\\) into two accounts. Account A earned \\(7\\%\\) interest per annum, and Account B earned \\(8\\%\\) interest per annum. If the total interest earned after one year was \\(\\$2486.00\\), how much was invested in Account A?",
-    "options": [
-      "\\(\\$16000\\)",
-      "\\(\\$24600\\)",
-      "\\(\\$7400\\)",
-      "\\(\\$7900\\)"
+    "question": "Sofia purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$1300\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1310.25\\). What was the original price of the leather sofa?",
+    "opts": [
+      "\\(788\\)",
+      "\\(875\\)",
+      "\\(963\\)",
+      "\\(919\\)"
     ],
-    "answer": 2,
+    "a": "\\(875\\)",
     "solutionSteps": [
       {
-        "explanation": "Define the variables and set up the first equation representing the total investment.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount invested in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 32000\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 1300\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the second equation representing the total interest earned.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{8}{100}y = 2486.00\\ \\rightarrow\\ 7x + 8y = 248600\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 1310.25 \\implies 1.07x + 0.88y = 1310.25\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the system of simultaneous equations by substituting y from the first equation into the second.",
-        "workingOut": "\\(y = 32000 - x\\ \\rightarrow\\ 7x + 8(32000 - x) = 248600\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.88(1300 - x) = 1310.25\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and solve for x.",
-        "workingOut": "\\(7x + 256000 - 8x = 248600\\ \\rightarrow\\ -1x = -7400\\ \\rightarrow\\ x = 7400\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.19x + 1144.00 = 1310.25 \\implies x = 875\\)",
         "graphData": null
       }
     ],
@@ -929,34 +893,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$155\\). The blazer's price is increased by \\(8\\%\\) while the trousers' price is discounted by \\(12\\%\\). If the new total price of the set is \\(\\$154.40\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$100\\)",
-      "\\(\\$65\\)",
-      "\\(\\$80\\)",
-      "\\(\\$90\\)"
+    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(80\\%\\) pure silver to produce exactly \\(38\\text{ kg}\\) of a blended mixture containing \\(65.00\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "opts": [
+      "\\(17\\)",
+      "\\(21\\)",
+      "\\(19\\)",
+      "\\(20\\)"
     ],
-    "answer": 3,
+    "a": "\\(19\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 155\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 38\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{8}{100})x + (1 - \\frac{12}{100})y = 154.40\\ \\rightarrow\\ 1.08x + 0.88y = 154.40\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{65.00}{100}(38) \\implies 50x + 80y = 2470.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.08x + 0.88(155 - x) = 154.40\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 80(38 - x) = 2470.0 \\implies -30x = -570.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.20x + 136.40 = 154.40\\ \\rightarrow\\ x = 90\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 19\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -966,33 +929,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$180\\). The blazer's price is increased by \\(11\\%\\) while the trousers' price is discounted by \\(14\\%\\). If the new total price of the set is \\(\\$179.80\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$100\\)",
-      "\\(\\$110\\)",
-      "\\(\\$80\\)",
-      "\\(\\$90\\)"
+    "question": "An independent wholesale dealer Camila bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$2769\\). Later, she sold the estate jewellery rings at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$-36.90\\), find the original cost price of the estate jewellery rings.",
+    "opts": [
+      "\\(1320\\)",
+      "\\(1260\\)",
+      "\\(1200\\)",
+      "\\(1080\\)"
     ],
-    "answer": 0,
+    "a": "\\(1200\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 180\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 2769\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{11}{100})x + (1 - \\frac{14}{100})y = 179.80\\ \\rightarrow\\ 1.11x + 0.86y = 179.80\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -36.90 \\implies 10x - 10y = -3690\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.11x + 0.86(180 - x) = 179.80\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.25x + 154.80 = 179.80\\ \\rightarrow\\ x = 100\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(10x - 10(2769 - x) = -3690 \\implies (10 + 10)x - 27690 = -3690 \\implies x = 1200\\)",
         "graphData": null
       }
     ],
@@ -1003,33 +961,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$205\\). The blazer's price is increased by \\(14\\%\\) while the trousers' price is discounted by \\(16\\%\\). If the new total price of the set is \\(\\$205.20\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$100\\)",
-      "\\(\\$110\\)",
-      "\\(\\$120\\)",
-      "\\(\\$95\\)"
+    "question": "Henry splits a lump sum of \\(\\$12044\\) into two different savings accounts. Account A earns a yield of \\(6\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1024.40\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(4725\\)",
+      "\\(4500\\)",
+      "\\(4950\\)",
+      "\\(4050\\)"
     ],
-    "answer": 1,
+    "a": "\\(4500\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 205\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 12044\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{14}{100})x + (1 - \\frac{16}{100})y = 205.20\\ \\rightarrow\\ 1.14x + 0.84y = 205.20\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{6}{100}x + \\frac{10}{100}y = 1024.40\\ \\rightarrow\\ 6x + 10y = 102440\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.14x + 0.84(205 - x) = 205.20\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(6x + 10(12044 - x) = 102440\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.30x + 172.20 = 205.20\\ \\rightarrow\\ x = 110\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(6x + 120440 - 10x = 102440 \\implies -4x = -18000 \\implies x = 4500\\)",
         "graphData": null
       }
     ],
@@ -1040,33 +998,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$230\\). The blazer's price is increased by \\(17\\%\\) while the trousers' price is discounted by \\(10\\%\\). If the new total price of the set is \\(\\$239.40\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$110\\)",
-      "\\(\\$120\\)",
-      "\\(\\$130\\)",
-      "\\(\\$180\\)"
+    "question": "Aria purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$764\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$685.69\\). What was the original price of the drone?",
+    "opts": [
+      "\\(191\\)",
+      "\\(172\\)",
+      "\\(201\\)",
+      "\\(210\\)"
     ],
-    "answer": 1,
+    "a": "\\(191\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 230\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 764\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{17}{100})x + (1 - \\frac{10}{100})y = 239.40\\ \\rightarrow\\ 1.17x + 0.90y = 239.40\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 685.69 \\implies 1.07x + 0.84y = 685.69\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.17x + 0.90(230 - x) = 239.40\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.84(764 - x) = 685.69\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.27x + 207.00 = 239.40\\ \\rightarrow\\ x = 120\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.23x + 641.76 = 685.69 \\implies x = 191\\)",
         "graphData": null
       }
     ],
@@ -1077,34 +1035,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$255\\). The blazer's price is increased by \\(5\\%\\) while the trousers' price is discounted by \\(12\\%\\). If the new total price of the set is \\(\\$246.50\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$120\\)",
-      "\\(\\$125\\)",
-      "\\(\\$130\\)",
-      "\\(\\$140\\)"
+    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(60\\%\\) pure gold to produce exactly \\(90\\text{ kg}\\) of a blended mixture containing \\(53.89\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "opts": [
+      "\\(61\\)",
+      "\\(50\\)",
+      "\\(55\\)",
+      "\\(58\\)"
     ],
-    "answer": 2,
+    "a": "\\(55\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 255\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 90\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{5}{100})x + (1 - \\frac{12}{100})y = 246.50\\ \\rightarrow\\ 1.05x + 0.88y = 246.50\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{53.89}{100}(90) \\implies 50x + 60y = 4850.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.05x + 0.88(255 - x) = 246.50\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 60(90 - x) = 4850.0 \\implies -10x = -550.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.17x + 224.40 = 246.50\\ \\rightarrow\\ x = 130\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 55\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -1114,33 +1071,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$280\\). The blazer's price is increased by \\(8\\%\\) while the trousers' price is discounted by \\(14\\%\\). If the new total price of the set is \\(\\$271.60\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$130\\)",
-      "\\(\\$140\\)",
-      "\\(\\$150\\)",
-      "\\(\\$200\\)"
+    "question": "An independent wholesale dealer Sophia bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$2957\\). Later, she sold the antique clocks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$29.30\\), find the original cost price of the antique clocks.",
+    "opts": [
+      "\\(1365\\)",
+      "\\(1170\\)",
+      "\\(1430\\)",
+      "\\(1300\\)"
     ],
-    "answer": 1,
+    "a": "\\(1300\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 280\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 2957\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{8}{100})x + (1 - \\frac{14}{100})y = 271.60\\ \\rightarrow\\ 1.08x + 0.86y = 271.60\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 29.30 \\implies 15x - 10y = 2930\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.08x + 0.86(280 - x) = 271.60\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.22x + 240.80 = 271.60\\ \\rightarrow\\ x = 140\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(15x - 10(2957 - x) = 2930 \\implies (15 + 10)x - 29570 = 2930 \\implies x = 1300\\)",
         "graphData": null
       }
     ],
@@ -1151,33 +1103,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$305\\). The blazer's price is increased by \\(11\\%\\) while the trousers' price is discounted by \\(16\\%\\). If the new total price of the set is \\(\\$296.70\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$140\\)",
-      "\\(\\$150\\)",
-      "\\(\\$155\\)",
-      "\\(\\$160\\)"
+    "question": "Benjamin splits a lump sum of \\(\\$12336\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$848.88\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5060\\)",
+      "\\(4600\\)",
+      "\\(4830\\)",
+      "\\(4140\\)"
     ],
-    "answer": 1,
+    "a": "\\(4600\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 305\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 12336\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{11}{100})x + (1 - \\frac{16}{100})y = 296.70\\ \\rightarrow\\ 1.11x + 0.84y = 296.70\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 848.88\\ \\rightarrow\\ 5x + 8y = 84888\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.11x + 0.84(305 - x) = 296.70\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(5x + 8(12336 - x) = 84888\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.27x + 256.20 = 296.70\\ \\rightarrow\\ x = 150\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(5x + 98688 - 8x = 84888 \\implies -3x = -13800 \\implies x = 4600\\)",
         "graphData": null
       }
     ],
@@ -1188,33 +1140,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$330\\). The blazer's price is increased by \\(14\\%\\) while the trousers' price is discounted by \\(10\\%\\). If the new total price of the set is \\(\\$335.40\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$150\\)",
-      "\\(\\$160\\)",
-      "\\(\\$170\\)",
-      "\\(\\$220\\)"
+    "question": "Charlotte purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$428\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$439.81\\). What was the original price of the dining table?",
+    "opts": [
+      "\\(276\\)",
+      "\\(307\\)",
+      "\\(322\\)",
+      "\\(338\\)"
     ],
-    "answer": 1,
+    "a": "\\(307\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 330\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 428\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{14}{100})x + (1 - \\frac{10}{100})y = 335.40\\ \\rightarrow\\ 1.14x + 0.90y = 335.40\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 439.81 \\implies 1.07x + 0.92y = 439.81\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.14x + 0.90(330 - x) = 335.40\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.92(428 - x) = 439.81\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.24x + 297.00 = 335.40\\ \\rightarrow\\ x = 160\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.15x + 393.76 = 439.81 \\implies x = 307\\)",
         "graphData": null
       }
     ],
@@ -1225,34 +1177,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$355\\). The blazer's price is increased by \\(17\\%\\) while the trousers' price is discounted by \\(12\\%\\). If the new total price of the set is \\(\\$361.70\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$160\\)",
-      "\\(\\$170\\)",
-      "\\(\\$180\\)",
-      "\\(\\$185\\)"
+    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(70\\%\\) ethanol to produce exactly \\(62\\text{ kg}\\) of a blended mixture containing \\(58.71\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "opts": [
+      "\\(39\\)",
+      "\\(35\\)",
+      "\\(37\\)",
+      "\\(32\\)"
     ],
-    "answer": 1,
+    "a": "\\(35\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 355\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 62\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{17}{100})x + (1 - \\frac{12}{100})y = 361.70\\ \\rightarrow\\ 1.17x + 0.88y = 361.70\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{58.71}{100}(62) \\implies 50x + 70y = 3640.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.17x + 0.88(355 - x) = 361.70\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 70(62 - x) = 3640.0 \\implies -20x = -700.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.29x + 312.40 = 361.70\\ \\rightarrow\\ x = 170\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 35\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -1262,33 +1213,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$380\\). The blazer's price is increased by \\(5\\%\\) while the trousers' price is discounted by \\(14\\%\\). If the new total price of the set is \\(\\$361.00\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$170\\)",
-      "\\(\\$180\\)",
-      "\\(\\$190\\)",
-      "\\(\\$200\\)"
+    "question": "An independent wholesale dealer Amelia bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$3145\\). Later, she sold the rehabilitated office desk suites at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$105.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "opts": [
+      "\\(1540\\)",
+      "\\(1260\\)",
+      "\\(1400\\)",
+      "\\(1470\\)"
     ],
-    "answer": 1,
+    "a": "\\(1400\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 380\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 3145\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{5}{100})x + (1 - \\frac{14}{100})y = 361.00\\ \\rightarrow\\ 1.05x + 0.86y = 361.00\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 105.50 \\implies 20x - 10y = 10550\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.05x + 0.86(380 - x) = 361.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.19x + 326.80 = 361.00\\ \\rightarrow\\ x = 180\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(20x - 10(3145 - x) = 10550 \\implies (20 + 10)x - 31450 = 10550 \\implies x = 1400\\)",
         "graphData": null
       }
     ],
@@ -1299,33 +1245,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$405\\). The blazer's price is increased by \\(8\\%\\) while the trousers' price is discounted by \\(16\\%\\). If the new total price of the set is \\(\\$385.80\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$180\\)",
-      "\\(\\$190\\)",
-      "\\(\\$200\\)",
-      "\\(\\$215\\)"
+    "question": "William splits a lump sum of \\(\\$12628\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$663.68\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(4230\\)",
+      "\\(4700\\)",
+      "\\(5170\\)",
+      "\\(4935\\)"
     ],
-    "answer": 1,
+    "a": "\\(4700\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 405\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 12628\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{8}{100})x + (1 - \\frac{16}{100})y = 385.80\\ \\rightarrow\\ 1.08x + 0.84y = 385.80\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 663.68\\ \\rightarrow\\ 4x + 6y = 66368\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.08x + 0.84(405 - x) = 385.80\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(4x + 6(12628 - x) = 66368\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.24x + 340.20 = 385.80\\ \\rightarrow\\ x = 190\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(4x + 75768 - 6x = 66368 \\implies -2x = -9400 \\implies x = 4700\\)",
         "graphData": null
       }
     ],
@@ -1336,33 +1282,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$430\\). The blazer's price is increased by \\(11\\%\\) while the trousers' price is discounted by \\(10\\%\\). If the new total price of the set is \\(\\$429.00\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$190\\)",
-      "\\(\\$200\\)",
-      "\\(\\$210\\)",
-      "\\(\\$230\\)"
+    "question": "Olivia purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$692\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$689.33\\). What was the original price of the camping tent?",
+    "opts": [
+      "\\(444\\)",
+      "\\(423\\)",
+      "\\(465\\)",
+      "\\(381\\)"
     ],
-    "answer": 1,
+    "a": "\\(423\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 430\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 692\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{11}{100})x + (1 - \\frac{10}{100})y = 429.00\\ \\rightarrow\\ 1.11x + 0.90y = 429.00\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 689.33 \\implies 1.07x + 0.88y = 689.33\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.11x + 0.90(430 - x) = 429.00\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.88(692 - x) = 689.33\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.21x + 387.00 = 429.00\\ \\rightarrow\\ x = 200\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.19x + 608.96 = 689.33 \\implies x = 423\\)",
         "graphData": null
       }
     ],
@@ -1373,34 +1319,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$455\\). The blazer's price is increased by \\(14\\%\\) while the trousers' price is discounted by \\(12\\%\\). If the new total price of the set is \\(\\$455.00\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$200\\)",
-      "\\(\\$210\\)",
-      "\\(\\$220\\)",
-      "\\(\\$245\\)"
+    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(80\\%\\) copper to produce exactly \\(34\\text{ kg}\\) of a blended mixture containing \\(73.82\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "opts": [
+      "\\(9\\)",
+      "\\(6\\)",
+      "\\(8\\)",
+      "\\(7\\)"
     ],
-    "answer": 1,
+    "a": "\\(7\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 455\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 34\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{14}{100})x + (1 - \\frac{12}{100})y = 455.00\\ \\rightarrow\\ 1.14x + 0.88y = 455.00\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{73.82}{100}(34) \\implies 50x + 80y = 2510.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.14x + 0.88(455 - x) = 455.00\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 80(34 - x) = 2510.0 \\implies -30x = -210.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.26x + 400.40 = 455.00\\ \\rightarrow\\ x = 210\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 7\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -1410,33 +1355,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$480\\). The blazer's price is increased by \\(17\\%\\) while the trousers' price is discounted by \\(14\\%\\). If the new total price of the set is \\(\\$481.00\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$210\\)",
-      "\\(\\$220\\)",
-      "\\(\\$230\\)",
-      "\\(\\$260\\)"
+    "question": "An independent wholesale dealer Isabella bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$3333\\). Later, she sold the second-hand server cabinets at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$-23.30\\), find the original cost price of the second-hand server cabinets.",
+    "opts": [
+      "\\(1550\\)",
+      "\\(1705\\)",
+      "\\(1628\\)",
+      "\\(1395\\)"
     ],
-    "answer": 1,
+    "a": "\\(1550\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 480\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 3333\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{17}{100})x + (1 - \\frac{14}{100})y = 481.00\\ \\rightarrow\\ 1.17x + 0.86y = 481.00\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -23.30 \\implies 10x - 10y = -2330\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.17x + 0.86(480 - x) = 481.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.31x + 412.80 = 481.00\\ \\rightarrow\\ x = 220\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(10x - 10(3333 - x) = -2330 \\implies (10 + 10)x - 33330 = -2330 \\implies x = 1550\\)",
         "graphData": null
       }
     ],
@@ -1447,33 +1387,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$505\\). The blazer's price is increased by \\(5\\%\\) while the trousers' price is discounted by \\(16\\%\\). If the new total price of the set is \\(\\$472.50\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$220\\)",
-      "\\(\\$230\\)",
-      "\\(\\$240\\)",
-      "\\(\\$275\\)"
+    "question": "Matthew splits a lump sum of \\(\\$12920\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$956.00\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(4800\\)",
+      "\\(4320\\)",
+      "\\(5280\\)",
+      "\\(5040\\)"
     ],
-    "answer": 1,
+    "a": "\\(4800\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 505\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 12920\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{5}{100})x + (1 - \\frac{16}{100})y = 472.50\\ \\rightarrow\\ 1.05x + 0.84y = 472.50\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{3}{100}x + \\frac{10}{100}y = 956.00\\ \\rightarrow\\ 3x + 10y = 95600\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.05x + 0.84(505 - x) = 472.50\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(3x + 10(12920 - x) = 95600\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.21x + 424.20 = 472.50\\ \\rightarrow\\ x = 230\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(3x + 129200 - 10x = 95600 \\implies -7x = -33600 \\implies x = 4800\\)",
         "graphData": null
       }
     ],
@@ -1484,33 +1424,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$530\\). The blazer's price is increased by \\(8\\%\\) while the trousers' price is discounted by \\(10\\%\\). If the new total price of the set is \\(\\$520.20\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$230\\)",
-      "\\(\\$240\\)",
-      "\\(\\$250\\)",
-      "\\(\\$290\\)"
+    "question": "Harper purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$956\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$927.01\\). What was the original price of the road bike?",
+    "opts": [
+      "\\(566\\)",
+      "\\(593\\)",
+      "\\(485\\)",
+      "\\(539\\)"
     ],
-    "answer": 1,
+    "a": "\\(539\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 530\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 956\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{8}{100})x + (1 - \\frac{10}{100})y = 520.20\\ \\rightarrow\\ 1.08x + 0.90y = 520.20\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 927.01 \\implies 1.07x + 0.84y = 927.01\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.08x + 0.90(530 - x) = 520.20\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.84(956 - x) = 927.01\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.18x + 477.00 = 520.20\\ \\rightarrow\\ x = 240\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.23x + 803.04 = 927.01 \\implies x = 539\\)",
         "graphData": null
       }
     ],
@@ -1521,34 +1461,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$555\\). The blazer's price is increased by \\(11\\%\\) while the trousers' price is discounted by \\(12\\%\\). If the new total price of the set is \\(\\$545.90\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$240\\)",
-      "\\(\\$250\\)",
-      "\\(\\$260\\)",
-      "\\(\\$305\\)"
+    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(60\\%\\) nitrogen to produce exactly \\(86\\text{ kg}\\) of a blended mixture containing \\(51.74\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "opts": [
+      "\\(64\\)",
+      "\\(78\\)",
+      "\\(71\\)",
+      "\\(75\\)"
     ],
-    "answer": 1,
+    "a": "\\(71\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 555\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 86\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{11}{100})x + (1 - \\frac{12}{100})y = 545.90\\ \\rightarrow\\ 1.11x + 0.88y = 545.90\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{51.74}{100}(86) \\implies 50x + 60y = 4450.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.11x + 0.88(555 - x) = 545.90\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 60(86 - x) = 4450.0 \\implies -10x = -710.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.23x + 488.40 = 545.90\\ \\rightarrow\\ x = 250\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 71\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -1558,33 +1497,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$580\\). The blazer's price is increased by \\(14\\%\\) while the trousers' price is discounted by \\(14\\%\\). If the new total price of the set is \\(\\$571.60\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$250\\)",
-      "\\(\\$260\\)",
-      "\\(\\$270\\)",
-      "\\(\\$320\\)"
+    "question": "An independent wholesale dealer Evelyn bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$3521\\). Later, she sold the used delivery trucks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$60.40\\), find the original cost price of the used delivery trucks.",
+    "opts": [
+      "\\(1815\\)",
+      "\\(1733\\)",
+      "\\(1650\\)",
+      "\\(1485\\)"
     ],
-    "answer": 1,
+    "a": "\\(1650\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 580\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 3521\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{14}{100})x + (1 - \\frac{14}{100})y = 571.60\\ \\rightarrow\\ 1.14x + 0.86y = 571.60\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 60.40 \\implies 15x - 10y = 6040\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.14x + 0.86(580 - x) = 571.60\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.28x + 498.80 = 571.60\\ \\rightarrow\\ x = 260\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(15x - 10(3521 - x) = 6040 \\implies (15 + 10)x - 35210 = 6040 \\implies x = 1650\\)",
         "graphData": null
       }
     ],
@@ -1595,33 +1529,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$605\\). The blazer's price is increased by \\(17\\%\\) while the trousers' price is discounted by \\(16\\%\\). If the new total price of the set is \\(\\$597.30\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$260\\)",
-      "\\(\\$270\\)",
-      "\\(\\$280\\)",
-      "\\(\\$335\\)"
+    "question": "Ethan splits a lump sum of \\(\\$13212\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1008.96\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5040\\)",
+      "\\(4320\\)",
+      "\\(5280\\)",
+      "\\(4800\\)"
     ],
-    "answer": 1,
+    "a": "\\(4800\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 605\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 13212\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{17}{100})x + (1 - \\frac{16}{100})y = 597.30\\ \\rightarrow\\ 1.17x + 0.84y = 597.30\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{7}{100}x + \\frac{8}{100}y = 1008.96\\ \\rightarrow\\ 7x + 8y = 100896\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.17x + 0.84(605 - x) = 597.30\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(7x + 8(13212 - x) = 100896\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.33x + 508.20 = 597.30\\ \\rightarrow\\ x = 270\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(7x + 105696 - 8x = 100896 \\implies -1x = -4800 \\implies x = 4800\\)",
         "graphData": null
       }
     ],
@@ -1632,33 +1566,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$630\\). The blazer's price is increased by \\(5\\%\\) while the trousers' price is discounted by \\(10\\%\\). If the new total price of the set is \\(\\$609.00\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$270\\)",
-      "\\(\\$280\\)",
-      "\\(\\$290\\)",
-      "\\(\\$350\\)"
+    "question": "Abigail purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$1220\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1220.65\\). What was the original price of the leather sofa?",
+    "opts": [
+      "\\(590\\)",
+      "\\(688\\)",
+      "\\(721\\)",
+      "\\(655\\)"
     ],
-    "answer": 1,
+    "a": "\\(655\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 630\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 1220\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{5}{100})x + (1 - \\frac{10}{100})y = 609.00\\ \\rightarrow\\ 1.05x + 0.90y = 609.00\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 1220.65 \\implies 1.07x + 0.92y = 1220.65\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.05x + 0.90(630 - x) = 609.00\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.92(1220 - x) = 1220.65\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.15x + 567.00 = 609.00\\ \\rightarrow\\ x = 280\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.15x + 1122.40 = 1220.65 \\implies x = 655\\)",
         "graphData": null
       }
     ],
@@ -1669,34 +1603,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$655\\). The blazer's price is increased by \\(8\\%\\) while the trousers' price is discounted by \\(12\\%\\). If the new total price of the set is \\(\\$634.40\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$280\\)",
-      "\\(\\$290\\)",
-      "\\(\\$300\\)",
-      "\\(\\$365\\)"
+    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(70\\%\\) pure silver to produce exactly \\(58\\text{ kg}\\) of a blended mixture containing \\(56.55\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "opts": [
+      "\\(35\\)",
+      "\\(39\\)",
+      "\\(43\\)",
+      "\\(41\\)"
     ],
-    "answer": 1,
+    "a": "\\(39\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 655\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 58\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{8}{100})x + (1 - \\frac{12}{100})y = 634.40\\ \\rightarrow\\ 1.08x + 0.88y = 634.40\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{56.55}{100}(58) \\implies 50x + 70y = 3280.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.08x + 0.88(655 - x) = 634.40\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 70(58 - x) = 3280.0 \\implies -20x = -780.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.20x + 576.40 = 634.40\\ \\rightarrow\\ x = 290\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 39\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -1706,33 +1639,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$680\\). The blazer's price is increased by \\(11\\%\\) while the trousers' price is discounted by \\(14\\%\\). If the new total price of the set is \\(\\$659.80\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$290\\)",
-      "\\(\\$300\\)",
-      "\\(\\$310\\)",
-      "\\(\\$380\\)"
+    "question": "An independent wholesale dealer Elizabeth bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$3709\\). Later, she sold the estate jewellery rings at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$154.10\\), find the original cost price of the estate jewellery rings.",
+    "opts": [
+      "\\(1838\\)",
+      "\\(1575\\)",
+      "\\(1925\\)",
+      "\\(1750\\)"
     ],
-    "answer": 1,
+    "a": "\\(1750\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 680\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 3709\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{11}{100})x + (1 - \\frac{14}{100})y = 659.80\\ \\rightarrow\\ 1.11x + 0.86y = 659.80\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 154.10 \\implies 20x - 10y = 15410\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.11x + 0.86(680 - x) = 659.80\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.25x + 584.80 = 659.80\\ \\rightarrow\\ x = 300\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(20x - 10(3709 - x) = 15410 \\implies (20 + 10)x - 37090 = 15410 \\implies x = 1750\\)",
         "graphData": null
       }
     ],
@@ -1743,33 +1671,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$705\\). The blazer's price is increased by \\(14\\%\\) while the trousers' price is discounted by \\(16\\%\\). If the new total price of the set is \\(\\$685.20\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$300\\)",
-      "\\(\\$310\\)",
-      "\\(\\$320\\)",
-      "\\(\\$395\\)"
+    "question": "Mila purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$884\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$924.41\\). What was the original price of the drone?",
+    "opts": [
+      "\\(771\\)",
+      "\\(848\\)",
+      "\\(694\\)",
+      "\\(810\\)"
     ],
-    "answer": 1,
+    "a": "\\(771\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 705\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 884\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{14}{100})x + (1 - \\frac{16}{100})y = 685.20\\ \\rightarrow\\ 1.14x + 0.84y = 685.20\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 924.41 \\implies 1.07x + 0.88y = 924.41\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.14x + 0.84(705 - x) = 685.20\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.88(884 - x) = 924.41\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.30x + 592.20 = 685.20\\ \\rightarrow\\ x = 310\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.19x + 777.92 = 924.41 \\implies x = 771\\)",
         "graphData": null
       }
     ],
@@ -1780,34 +1708,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$730\\). The blazer's price is increased by \\(17\\%\\) while the trousers' price is discounted by \\(10\\%\\). If the new total price of the set is \\(\\$743.40\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$310\\)",
-      "\\(\\$320\\)",
-      "\\(\\$330\\)",
-      "\\(\\$410\\)"
+    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(80\\%\\) pure gold to produce exactly \\(30\\text{ kg}\\) of a blended mixture containing \\(65.00\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "opts": [
+      "\\(17\\)",
+      "\\(16\\)",
+      "\\(15\\)",
+      "\\(14\\)"
     ],
-    "answer": 1,
+    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 730\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 30\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{17}{100})x + (1 - \\frac{10}{100})y = 743.40\\ \\rightarrow\\ 1.17x + 0.90y = 743.40\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{65.00}{100}(30) \\implies 50x + 80y = 1950.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.17x + 0.90(730 - x) = 743.40\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 80(30 - x) = 1950.0 \\implies -30x = -450.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.27x + 657.00 = 743.40\\ \\rightarrow\\ x = 320\\)",
-        "graphData": null
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 15\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -1817,33 +1744,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$755\\). The blazer's price is increased by \\(5\\%\\) while the trousers' price is discounted by \\(12\\%\\). If the new total price of the set is \\(\\$720.50\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$320\\)",
-      "\\(\\$330\\)",
-      "\\(\\$340\\)",
-      "\\(\\$425\\)"
+    "question": "An independent wholesale dealer Ella bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$3897\\). Later, she sold the antique clocks at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$-9.70\\), find the original cost price of the antique clocks.",
+    "opts": [
+      "\\(1900\\)",
+      "\\(1995\\)",
+      "\\(1710\\)",
+      "\\(2090\\)"
     ],
-    "answer": 1,
+    "a": "\\(1900\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 755\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 3897\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{5}{100})x + (1 - \\frac{12}{100})y = 720.50\\ \\rightarrow\\ 1.05x + 0.88y = 720.50\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -9.70 \\implies 10x - 10y = -970\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.05x + 0.88(755 - x) = 720.50\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.17x + 664.40 = 720.50\\ \\rightarrow\\ x = 330\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(10x - 10(3897 - x) = -970 \\implies (10 + 10)x - 38970 = -970 \\implies x = 1900\\)",
         "graphData": null
       }
     ],
@@ -1854,33 +1776,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$780\\). The blazer's price is increased by \\(8\\%\\) while the trousers' price is discounted by \\(14\\%\\). If the new total price of the set is \\(\\$745.60\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$330\\)",
-      "\\(\\$340\\)",
-      "\\(\\$350\\)",
-      "\\(\\$440\\)"
+    "question": "Elijah splits a lump sum of \\(\\$13796\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1129.60\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5250\\)",
+      "\\(4500\\)",
+      "\\(5500\\)",
+      "\\(5000\\)"
     ],
-    "answer": 1,
+    "a": "\\(5000\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 780\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 13796\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{8}{100})x + (1 - \\frac{14}{100})y = 745.60\\ \\rightarrow\\ 1.08x + 0.86y = 745.60\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{10}{100}y = 1129.60\\ \\rightarrow\\ 5x + 10y = 112960\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.08x + 0.86(780 - x) = 745.60\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(5x + 10(13796 - x) = 112960\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.22x + 670.80 = 745.60\\ \\rightarrow\\ x = 340\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(5x + 137960 - 10x = 112960 \\implies -5x = -25000 \\implies x = 5000\\)",
         "graphData": null
       }
     ],
@@ -1891,33 +1813,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A clothing set consists of a blazer and trousers costing a total of \\(\\$805\\). The blazer's price is increased by \\(11\\%\\) while the trousers' price is discounted by \\(16\\%\\). If the new total price of the set is \\(\\$770.70\\), what was the original price of the blazer?",
-    "options": [
-      "\\(\\$340\\)",
-      "\\(\\$350\\)",
-      "\\(\\$360\\)",
-      "\\(\\$455\\)"
+    "question": "Avery purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$1148\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1168.33\\). What was the original price of the dining table?",
+    "opts": [
+      "\\(931\\)",
+      "\\(887\\)",
+      "\\(798\\)",
+      "\\(976\\)"
     ],
-    "answer": 1,
+    "a": "\\(887\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for the original total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the blazer price, and } y \\text{ be the trousers price.}\\ \\rightarrow\\ x + y = 805\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 1148\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation for the final total cost incorporating the percentage changes.",
-        "workingOut": "\\((1 + \\frac{11}{100})x + (1 - \\frac{16}{100})y = 770.70\\ \\rightarrow\\ 1.11x + 0.84y = 770.70\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 1168.33 \\implies 1.07x + 0.84y = 1168.33\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the second equation to solve for x.",
-        "workingOut": "\\(1.11x + 0.84(805 - x) = 770.70\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.84(1148 - x) = 1168.33\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the expression and compute the original price of the blazer (x).",
-        "workingOut": "\\(0.27x + 676.20 = 770.70\\ \\rightarrow\\ x = 350\\)",
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.23x + 964.32 = 1168.33 \\implies x = 887\\)",
         "graphData": null
       }
     ],
@@ -1928,29 +1850,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(40\\%\\) copper with another alloy containing \\(75\\%\\) copper to create \\(25\\text{ kg}\\) of a new alloy containing \\(63.80\\%\\) copper. How many kilograms of the \\(40\\%\\) copper alloy are required?",
-    "options": [
-      "\\(10\\)",
-      "\\(12.5\\)",
-      "\\(17\\)",
-      "\\(8\\)"
+    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(60\\%\\) ethanol to produce exactly \\(82\\text{ kg}\\) of a blended mixture containing \\(57.20\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "opts": [
+      "\\(23\\)",
+      "\\(25\\)",
+      "\\(21\\)",
+      "\\(24\\)"
     ],
-    "answer": 3,
+    "a": "\\(23\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 40\\% \\text{ alloy, and } y \\text{ be the mass of the } 75\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 25\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 82\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{40}{100}x + \\frac{75}{100}y = \\frac{63.80}{100}(25)\\ \\rightarrow\\ 40x + 75y = 1595.0\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{57.20}{100}(82) \\implies 50x + 60y = 4690.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(40x + 75(25 - x) = 1595.0\\ \\rightarrow\\ -35x = -280.0\\ \\rightarrow\\ x = 8\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 60(82 - x) = 4690.0 \\implies -10x = -230.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 23\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -1960,28 +1886,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(50\\%\\) copper with another alloy containing \\(80\\%\\) copper to create \\(30\\text{ kg}\\) of a new alloy containing \\(69.00\\%\\) copper. How many kilograms of the \\(50\\%\\) copper alloy are required?",
-    "options": [
-      "\\(11\\)",
-      "\\(13\\)",
-      "\\(15\\)",
-      "\\(19\\)"
+    "question": "An independent wholesale dealer Sofia bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$4085\\). Later, she sold the rehabilitated office desk suites at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$91.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "opts": [
+      "\\(2000\\)",
+      "\\(2100\\)",
+      "\\(2200\\)",
+      "\\(1800\\)"
     ],
-    "answer": 0,
+    "a": "\\(2000\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ alloy, and } y \\text{ be the mass of the } 80\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 30\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 4085\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{69.00}{100}(30)\\ \\rightarrow\\ 50x + 80y = 2070.0\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 91.50 \\implies 15x - 10y = 9150\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(50x + 80(30 - x) = 2070.0\\ \\rightarrow\\ -30x = -330.0\\ \\rightarrow\\ x = 11\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(15x - 10(4085 - x) = 9150 \\implies (15 + 10)x - 40850 = 9150 \\implies x = 2000\\)",
         "graphData": null
       }
     ],
@@ -1992,28 +1918,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(60\\%\\) copper with another alloy containing \\(70\\%\\) copper to create \\(35\\text{ kg}\\) of a new alloy containing \\(66.00\\%\\) copper. How many kilograms of the \\(60\\%\\) copper alloy are required?",
-    "options": [
-      "\\(14\\)",
-      "\\(16\\)",
-      "\\(17.5\\)",
-      "\\(21\\)"
+    "question": "Oliver splits a lump sum of \\(\\$14088\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$923.04\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5100\\)",
+      "\\(5610\\)",
+      "\\(4590\\)",
+      "\\(5355\\)"
     ],
-    "answer": 0,
+    "a": "\\(5100\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 60\\% \\text{ alloy, and } y \\text{ be the mass of the } 70\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 35\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 14088\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{60}{100}x + \\frac{70}{100}y = \\frac{66.00}{100}(35)\\ \\rightarrow\\ 60x + 70y = 2310.0\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{8}{100}y = 923.04\\ \\rightarrow\\ 4x + 8y = 92304\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(60x + 70(35 - x) = 2310.0\\ \\rightarrow\\ -10x = -140.0\\ \\rightarrow\\ x = 14\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(4x + 8(14088 - x) = 92304\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(4x + 112704 - 8x = 92304 \\implies -4x = -20400 \\implies x = 5100\\)",
         "graphData": null
       }
     ],
@@ -2024,28 +1955,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(30\\%\\) copper with another alloy containing \\(75\\%\\) copper to create \\(40\\text{ kg}\\) of a new alloy containing \\(69.38\\%\\) copper. How many kilograms of the \\(30\\%\\) copper alloy are required?",
-    "options": [
-      "\\(20\\)",
-      "\\(35\\)",
-      "\\(5\\)",
-      "\\(7\\)"
+    "question": "Camila purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$612\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$593.49\\). What was the original price of the camping tent?",
+    "opts": [
+      "\\(213\\)",
+      "\\(183\\)",
+      "\\(223\\)",
+      "\\(203\\)"
     ],
-    "answer": 2,
+    "a": "\\(203\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 30\\% \\text{ alloy, and } y \\text{ be the mass of the } 75\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 40\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 612\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{75}{100}y = \\frac{69.38}{100}(40)\\ \\rightarrow\\ 30x + 75y = 2775.0\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 593.49 \\implies 1.07x + 0.92y = 593.49\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(30x + 75(40 - x) = 2775.0\\ \\rightarrow\\ -45x = -225.0\\ \\rightarrow\\ x = 5\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.92(612 - x) = 593.49\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.15x + 563.04 = 593.49 \\implies x = 203\\)",
         "graphData": null
       }
     ],
@@ -2056,29 +1992,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(40\\%\\) copper with another alloy containing \\(80\\%\\) copper to create \\(45\\text{ kg}\\) of a new alloy containing \\(72.89\\%\\) copper. How many kilograms of the \\(40\\%\\) copper alloy are required?",
-    "options": [
-      "\\(10\\)",
-      "\\(22.5\\)",
-      "\\(37\\)",
-      "\\(8\\)"
+    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(70\\%\\) copper to produce exactly \\(54\\text{ kg}\\) of a blended mixture containing \\(64.44\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "opts": [
+      "\\(16\\)",
+      "\\(14\\)",
+      "\\(17\\)",
+      "\\(15\\)"
     ],
-    "answer": 3,
+    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 40\\% \\text{ alloy, and } y \\text{ be the mass of the } 80\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 45\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 54\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{40}{100}x + \\frac{80}{100}y = \\frac{72.89}{100}(45)\\ \\rightarrow\\ 40x + 80y = 3280.0\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{64.44}{100}(54) \\implies 50x + 70y = 3480.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(40x + 80(45 - x) = 3280.0\\ \\rightarrow\\ -40x = -320.0\\ \\rightarrow\\ x = 8\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 70(54 - x) = 3480.0 \\implies -20x = -300.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 15\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2088,28 +2028,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(50\\%\\) copper with another alloy containing \\(70\\%\\) copper to create \\(50\\text{ kg}\\) of a new alloy containing \\(65.60\\%\\) copper. How many kilograms of the \\(50\\%\\) copper alloy are required?",
-    "options": [
-      "\\(11\\)",
-      "\\(13\\)",
-      "\\(25\\)",
-      "\\(39\\)"
+    "question": "An independent wholesale dealer Aria bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$4273\\). Later, she sold the second-hand server cabinets at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$202.70\\), find the original cost price of the second-hand server cabinets.",
+    "opts": [
+      "\\(1890\\)",
+      "\\(2100\\)",
+      "\\(2310\\)",
+      "\\(2205\\)"
     ],
-    "answer": 0,
+    "a": "\\(2100\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ alloy, and } y \\text{ be the mass of the } 70\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 50\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 4273\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{65.60}{100}(50)\\ \\rightarrow\\ 50x + 70y = 3280.0\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 202.70 \\implies 20x - 10y = 20270\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(50x + 70(50 - x) = 3280.0\\ \\rightarrow\\ -20x = -220.0\\ \\rightarrow\\ x = 11\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(20x - 10(4273 - x) = 20270 \\implies (20 + 10)x - 42730 = 20270 \\implies x = 2100\\)",
         "graphData": null
       }
     ],
@@ -2120,28 +2060,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(60\\%\\) copper with another alloy containing \\(75\\%\\) copper to create \\(55\\text{ kg}\\) of a new alloy containing \\(71.18\\%\\) copper. How many kilograms of the \\(60\\%\\) copper alloy are required?",
-    "options": [
-      "\\(14\\)",
-      "\\(16\\)",
-      "\\(27.5\\)",
-      "\\(41\\)"
+    "question": "Alexander splits a lump sum of \\(\\$14380\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$709.80\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5355\\)",
+      "\\(4590\\)",
+      "\\(5610\\)",
+      "\\(5100\\)"
     ],
-    "answer": 0,
+    "a": "\\(5100\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 60\\% \\text{ alloy, and } y \\text{ be the mass of the } 75\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 55\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 14380\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{60}{100}x + \\frac{75}{100}y = \\frac{71.18}{100}(55)\\ \\rightarrow\\ 60x + 75y = 3915.0\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{3}{100}x + \\frac{6}{100}y = 709.80\\ \\rightarrow\\ 3x + 6y = 70980\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(60x + 75(55 - x) = 3915.0\\ \\rightarrow\\ -15x = -210.0\\ \\rightarrow\\ x = 14\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(3x + 6(14380 - x) = 70980\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(3x + 86280 - 6x = 70980 \\implies -3x = -15300 \\implies x = 5100\\)",
         "graphData": null
       }
     ],
@@ -2152,28 +2097,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(30\\%\\) copper with another alloy containing \\(80\\%\\) copper to create \\(60\\text{ kg}\\) of a new alloy containing \\(75.83\\%\\) copper. How many kilograms of the \\(30\\%\\) copper alloy are required?",
-    "options": [
-      "\\(30\\)",
-      "\\(55\\)",
-      "\\(5\\)",
-      "\\(7\\)"
+    "question": "Sophia purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$876\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$831.49\\). What was the original price of the road bike?",
+    "opts": [
+      "\\(319\\)",
+      "\\(351\\)",
+      "\\(287\\)",
+      "\\(335\\)"
     ],
-    "answer": 2,
+    "a": "\\(319\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 30\\% \\text{ alloy, and } y \\text{ be the mass of the } 80\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 60\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 876\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{80}{100}y = \\frac{75.83}{100}(60)\\ \\rightarrow\\ 30x + 80y = 4550.0\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 831.49 \\implies 1.07x + 0.88y = 831.49\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(30x + 80(60 - x) = 4550.0\\ \\rightarrow\\ -50x = -250.0\\ \\rightarrow\\ x = 5\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.88(876 - x) = 831.49\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.19x + 770.88 = 831.49 \\implies x = 319\\)",
         "graphData": null
       }
     ],
@@ -2184,29 +2134,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(40\\%\\) copper with another alloy containing \\(70\\%\\) copper to create \\(65\\text{ kg}\\) of a new alloy containing \\(66.31\\%\\) copper. How many kilograms of the \\(40\\%\\) copper alloy are required?",
-    "options": [
-      "\\(10\\)",
-      "\\(32.5\\)",
-      "\\(57\\)",
-      "\\(8\\)"
+    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(80\\%\\) nitrogen to produce exactly \\(26\\text{ kg}\\) of a blended mixture containing \\(71.92\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "opts": [
+      "\\(6\\)",
+      "\\(9\\)",
+      "\\(8\\)",
+      "\\(7\\)"
     ],
-    "answer": 3,
+    "a": "\\(7\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 40\\% \\text{ alloy, and } y \\text{ be the mass of the } 70\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 65\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 26\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{40}{100}x + \\frac{70}{100}y = \\frac{66.31}{100}(65)\\ \\rightarrow\\ 40x + 70y = 4310.0\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{71.92}{100}(26) \\implies 50x + 80y = 1870.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(40x + 70(65 - x) = 4310.0\\ \\rightarrow\\ -30x = -240.0\\ \\rightarrow\\ x = 8\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 80(26 - x) = 1870.0 \\implies -30x = -210.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 7\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2216,28 +2170,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(50\\%\\) copper with another alloy containing \\(75\\%\\) copper to create \\(70\\text{ kg}\\) of a new alloy containing \\(71.07\\%\\) copper. How many kilograms of the \\(50\\%\\) copper alloy are required?",
-    "options": [
-      "\\(11\\)",
-      "\\(13\\)",
-      "\\(35\\)",
-      "\\(59\\)"
+    "question": "An independent wholesale dealer Charlotte bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$4461\\). Later, she sold the used delivery trucks at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$3.90\\), find the original cost price of the used delivery trucks.",
+    "opts": [
+      "\\(2363\\)",
+      "\\(2250\\)",
+      "\\(2475\\)",
+      "\\(2025\\)"
     ],
-    "answer": 0,
+    "a": "\\(2250\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ alloy, and } y \\text{ be the mass of the } 75\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 70\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 4461\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{75}{100}y = \\frac{71.07}{100}(70)\\ \\rightarrow\\ 50x + 75y = 4975.0\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 3.90 \\implies 10x - 10y = 390\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(50x + 75(70 - x) = 4975.0\\ \\rightarrow\\ -25x = -275.0\\ \\rightarrow\\ x = 11\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(10x - 10(4461 - x) = 390 \\implies (10 + 10)x - 44610 = 390 \\implies x = 2250\\)",
         "graphData": null
       }
     ],
@@ -2248,28 +2202,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(60\\%\\) copper with another alloy containing \\(80\\%\\) copper to create \\(75\\text{ kg}\\) of a new alloy containing \\(76.27\\%\\) copper. How many kilograms of the \\(60\\%\\) copper alloy are required?",
-    "options": [
-      "\\(14\\)",
-      "\\(16\\)",
-      "\\(37.5\\)",
-      "\\(61\\)"
+    "question": "Daniel splits a lump sum of \\(\\$14672\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1311.20\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5460\\)",
+      "\\(4680\\)",
+      "\\(5720\\)",
+      "\\(5200\\)"
     ],
-    "answer": 0,
+    "a": "\\(5200\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 60\\% \\text{ alloy, and } y \\text{ be the mass of the } 80\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 75\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 14672\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{60}{100}x + \\frac{80}{100}y = \\frac{76.27}{100}(75)\\ \\rightarrow\\ 60x + 80y = 5720.0\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{7}{100}x + \\frac{10}{100}y = 1311.20\\ \\rightarrow\\ 7x + 10y = 131120\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(60x + 80(75 - x) = 5720.0\\ \\rightarrow\\ -20x = -280.0\\ \\rightarrow\\ x = 14\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(7x + 10(14672 - x) = 131120\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(7x + 146720 - 10x = 131120 \\implies -3x = -15600 \\implies x = 5200\\)",
         "graphData": null
       }
     ],
@@ -2280,28 +2239,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(30\\%\\) copper with another alloy containing \\(70\\%\\) copper to create \\(80\\text{ kg}\\) of a new alloy containing \\(67.50\\%\\) copper. How many kilograms of the \\(30\\%\\) copper alloy are required?",
-    "options": [
-      "\\(40\\)",
-      "\\(5\\)",
-      "\\(75\\)",
-      "\\(7\\)"
+    "question": "Amelia purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$540\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$553.65\\). What was the original price of the leather sofa?",
+    "opts": [
+      "\\(457\\)",
+      "\\(435\\)",
+      "\\(392\\)",
+      "\\(479\\)"
     ],
-    "answer": 1,
+    "a": "\\(435\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 30\\% \\text{ alloy, and } y \\text{ be the mass of the } 70\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 80\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 540\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{70}{100}y = \\frac{67.50}{100}(80)\\ \\rightarrow\\ 30x + 70y = 5400.0\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 553.65 \\implies 1.07x + 0.84y = 553.65\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(30x + 70(80 - x) = 5400.0\\ \\rightarrow\\ -40x = -200.0\\ \\rightarrow\\ x = 5\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.84(540 - x) = 553.65\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.23x + 453.60 = 553.65 \\implies x = 435\\)",
         "graphData": null
       }
     ],
@@ -2312,29 +2276,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(40\\%\\) copper with another alloy containing \\(75\\%\\) copper to create \\(85\\text{ kg}\\) of a new alloy containing \\(71.71\\%\\) copper. How many kilograms of the \\(40\\%\\) copper alloy are required?",
-    "options": [
-      "\\(10\\)",
-      "\\(42.5\\)",
-      "\\(77\\)",
-      "\\(8\\)"
+    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(60\\%\\) pure silver to produce exactly \\(78\\text{ kg}\\) of a blended mixture containing \\(52.44\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "opts": [
+      "\\(62\\)",
+      "\\(65\\)",
+      "\\(59\\)",
+      "\\(53\\)"
     ],
-    "answer": 3,
+    "a": "\\(59\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 40\\% \\text{ alloy, and } y \\text{ be the mass of the } 75\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 85\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 78\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{40}{100}x + \\frac{75}{100}y = \\frac{71.71}{100}(85)\\ \\rightarrow\\ 40x + 75y = 6095.0\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{52.44}{100}(78) \\implies 50x + 60y = 4090.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(40x + 75(85 - x) = 6095.0\\ \\rightarrow\\ -35x = -280.0\\ \\rightarrow\\ x = 8\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 60(78 - x) = 4090.0 \\implies -10x = -590.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 59\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2344,28 +2312,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(50\\%\\) copper with another alloy containing \\(80\\%\\) copper to create \\(90\\text{ kg}\\) of a new alloy containing \\(76.33\\%\\) copper. How many kilograms of the \\(50\\%\\) copper alloy are required?",
-    "options": [
-      "\\(11\\)",
-      "\\(13\\)",
-      "\\(45\\)",
-      "\\(79\\)"
+    "question": "An independent wholesale dealer Olivia bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$4649\\). Later, she sold the estate jewellery rings at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$122.60\\), find the original cost price of the estate jewellery rings.",
+    "opts": [
+      "\\(2115\\)",
+      "\\(2350\\)",
+      "\\(2585\\)",
+      "\\(2468\\)"
     ],
-    "answer": 0,
+    "a": "\\(2350\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ alloy, and } y \\text{ be the mass of the } 80\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 90\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 4649\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{76.33}{100}(90)\\ \\rightarrow\\ 50x + 80y = 6870.0\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 122.60 \\implies 15x - 10y = 12260\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(50x + 80(90 - x) = 6870.0\\ \\rightarrow\\ -30x = -330.0\\ \\rightarrow\\ x = 11\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(15x - 10(4649 - x) = 12260 \\implies (15 + 10)x - 46490 = 12260 \\implies x = 2350\\)",
         "graphData": null
       }
     ],
@@ -2376,28 +2344,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(60\\%\\) copper with another alloy containing \\(70\\%\\) copper to create \\(95\\text{ kg}\\) of a new alloy containing \\(68.53\\%\\) copper. How many kilograms of the \\(60\\%\\) copper alloy are required?",
-    "options": [
-      "\\(14\\)",
-      "\\(16\\)",
-      "\\(47.5\\)",
-      "\\(81\\)"
+    "question": "James splits a lump sum of \\(\\$14964\\) into two different savings accounts. Account A earns a yield of \\(6\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1091.12\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5565\\)",
+      "\\(4770\\)",
+      "\\(5830\\)",
+      "\\(5300\\)"
     ],
-    "answer": 0,
+    "a": "\\(5300\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 60\\% \\text{ alloy, and } y \\text{ be the mass of the } 70\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 95\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 14964\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{60}{100}x + \\frac{70}{100}y = \\frac{68.53}{100}(95)\\ \\rightarrow\\ 60x + 70y = 6510.0\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{6}{100}x + \\frac{8}{100}y = 1091.12\\ \\rightarrow\\ 6x + 8y = 109112\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(60x + 70(95 - x) = 6510.0\\ \\rightarrow\\ -10x = -140.0\\ \\rightarrow\\ x = 14\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(6x + 8(14964 - x) = 109112\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(6x + 119712 - 8x = 109112 \\implies -2x = -10600 \\implies x = 5300\\)",
         "graphData": null
       }
     ],
@@ -2408,28 +2381,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(30\\%\\) copper with another alloy containing \\(75\\%\\) copper to create \\(100\\text{ kg}\\) of a new alloy containing \\(72.75\\%\\) copper. How many kilograms of the \\(30\\%\\) copper alloy are required?",
-    "options": [
-      "\\(50\\)",
-      "\\(5\\)",
-      "\\(7\\)",
-      "\\(95\\)"
+    "question": "Isabella purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$804\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$822.33\\). What was the original price of the drone?",
+    "opts": [
+      "\\(496\\)",
+      "\\(606\\)",
+      "\\(579\\)",
+      "\\(551\\)"
     ],
-    "answer": 1,
+    "a": "\\(551\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 30\\% \\text{ alloy, and } y \\text{ be the mass of the } 75\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 100\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 804\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{75}{100}y = \\frac{72.75}{100}(100)\\ \\rightarrow\\ 30x + 75y = 7275.0\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 822.33 \\implies 1.07x + 0.92y = 822.33\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(30x + 75(100 - x) = 7275.0\\ \\rightarrow\\ -45x = -225.0\\ \\rightarrow\\ x = 5\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.92(804 - x) = 822.33\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.15x + 739.68 = 822.33 \\implies x = 551\\)",
         "graphData": null
       }
     ],
@@ -2440,29 +2418,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(40\\%\\) copper with another alloy containing \\(80\\%\\) copper to create \\(105\\text{ kg}\\) of a new alloy containing \\(76.95\\%\\) copper. How many kilograms of the \\(40\\%\\) copper alloy are required?",
-    "options": [
-      "\\(10\\)",
-      "\\(52.5\\)",
-      "\\(8\\)",
-      "\\(97\\)"
+    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(70\\%\\) pure gold to produce exactly \\(50\\text{ kg}\\) of a blended mixture containing \\(64.00\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "opts": [
+      "\\(15\\)",
+      "\\(14\\)",
+      "\\(17\\)",
+      "\\(16\\)"
     ],
-    "answer": 2,
+    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 40\\% \\text{ alloy, and } y \\text{ be the mass of the } 80\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 105\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 50\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{40}{100}x + \\frac{80}{100}y = \\frac{76.95}{100}(105)\\ \\rightarrow\\ 40x + 80y = 8080.0\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{64.00}{100}(50) \\implies 50x + 70y = 3200.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(40x + 80(105 - x) = 8080.0\\ \\rightarrow\\ -40x = -320.0\\ \\rightarrow\\ x = 8\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 70(50 - x) = 3200.0 \\implies -20x = -300.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 15\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2472,28 +2454,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(50\\%\\) copper with another alloy containing \\(70\\%\\) copper to create \\(110\\text{ kg}\\) of a new alloy containing \\(68.00\\%\\) copper. How many kilograms of the \\(50\\%\\) copper alloy are required?",
-    "options": [
-      "\\(11\\)",
-      "\\(13\\)",
-      "\\(55\\)",
-      "\\(99\\)"
+    "question": "An independent wholesale dealer Harper bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$4837\\). Later, she sold the antique clocks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$251.30\\), find the original cost price of the antique clocks.",
+    "opts": [
+      "\\(2205\\)",
+      "\\(2695\\)",
+      "\\(2450\\)",
+      "\\(2573\\)"
     ],
-    "answer": 0,
+    "a": "\\(2450\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ alloy, and } y \\text{ be the mass of the } 70\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 110\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 4837\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{68.00}{100}(110)\\ \\rightarrow\\ 50x + 70y = 7480.0\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 251.30 \\implies 20x - 10y = 25130\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(50x + 70(110 - x) = 7480.0\\ \\rightarrow\\ -20x = -220.0\\ \\rightarrow\\ x = 11\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(20x - 10(4837 - x) = 25130 \\implies (20 + 10)x - 48370 = 25130 \\implies x = 2450\\)",
         "graphData": null
       }
     ],
@@ -2504,28 +2486,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(60\\%\\) copper with another alloy containing \\(75\\%\\) copper to create \\(115\\text{ kg}\\) of a new alloy containing \\(73.17\\%\\) copper. How many kilograms of the \\(60\\%\\) copper alloy are required?",
-    "options": [
-      "\\(101\\)",
-      "\\(14\\)",
-      "\\(16\\)",
-      "\\(57.5\\)"
+    "question": "Lucas splits a lump sum of \\(\\$15256\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$861.36\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5940\\)",
+      "\\(5670\\)",
+      "\\(4860\\)",
+      "\\(5400\\)"
     ],
-    "answer": 1,
+    "a": "\\(5400\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 60\\% \\text{ alloy, and } y \\text{ be the mass of the } 75\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 115\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 15256\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{60}{100}x + \\frac{75}{100}y = \\frac{73.17}{100}(115)\\ \\rightarrow\\ 60x + 75y = 8415.0\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{6}{100}y = 861.36\\ \\rightarrow\\ 5x + 6y = 86136\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(60x + 75(115 - x) = 8415.0\\ \\rightarrow\\ -15x = -210.0\\ \\rightarrow\\ x = 14\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(5x + 6(15256 - x) = 86136\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(5x + 91536 - 6x = 86136 \\implies -1x = -5400 \\implies x = 5400\\)",
         "graphData": null
       }
     ],
@@ -2536,28 +2523,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(30\\%\\) copper with another alloy containing \\(80\\%\\) copper to create \\(120\\text{ kg}\\) of a new alloy containing \\(77.92\\%\\) copper. How many kilograms of the \\(30\\%\\) copper alloy are required?",
-    "options": [
-      "\\(115\\)",
-      "\\(5\\)",
-      "\\(60\\)",
-      "\\(7\\)"
+    "question": "Evelyn purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$1068\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1066.57\\). What was the original price of the dining table?",
+    "opts": [
+      "\\(667\\)",
+      "\\(600\\)",
+      "\\(734\\)",
+      "\\(700\\)"
     ],
-    "answer": 1,
+    "a": "\\(667\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 30\\% \\text{ alloy, and } y \\text{ be the mass of the } 80\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 120\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 1068\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{80}{100}y = \\frac{77.92}{100}(120)\\ \\rightarrow\\ 30x + 80y = 9350.0\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 1066.57 \\implies 1.07x + 0.88y = 1066.57\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(30x + 80(120 - x) = 9350.0\\ \\rightarrow\\ -50x = -250.0\\ \\rightarrow\\ x = 5\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.88(1068 - x) = 1066.57\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.19x + 939.84 = 1066.57 \\implies x = 667\\)",
         "graphData": null
       }
     ],
@@ -2568,29 +2560,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(40\\%\\) copper with another alloy containing \\(70\\%\\) copper to create \\(125\\text{ kg}\\) of a new alloy containing \\(68.08\\%\\) copper. How many kilograms of the \\(40\\%\\) copper alloy are required?",
-    "options": [
-      "\\(10\\)",
-      "\\(117\\)",
-      "\\(62.5\\)",
-      "\\(8\\)"
+    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(80\\%\\) ethanol to produce exactly \\(22\\text{ kg}\\) of a blended mixture containing \\(70.45\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "opts": [
+      "\\(9\\)",
+      "\\(6\\)",
+      "\\(8\\)",
+      "\\(7\\)"
     ],
-    "answer": 3,
+    "a": "\\(7\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 40\\% \\text{ alloy, and } y \\text{ be the mass of the } 70\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 125\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 22\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{40}{100}x + \\frac{70}{100}y = \\frac{68.08}{100}(125)\\ \\rightarrow\\ 40x + 70y = 8510.0\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{70.45}{100}(22) \\implies 50x + 80y = 1550.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(40x + 70(125 - x) = 8510.0\\ \\rightarrow\\ -30x = -240.0\\ \\rightarrow\\ x = 8\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 80(22 - x) = 1550.0 \\implies -30x = -210.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 7\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2600,28 +2596,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(50\\%\\) copper with another alloy containing \\(75\\%\\) copper to create \\(130\\text{ kg}\\) of a new alloy containing \\(72.88\\%\\) copper. How many kilograms of the \\(50\\%\\) copper alloy are required?",
-    "options": [
-      "\\(119\\)",
-      "\\(11\\)",
-      "\\(13\\)",
-      "\\(65\\)"
+    "question": "An independent wholesale dealer Abigail bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$5025\\). Later, she sold the rehabilitated office desk suites at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$17.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "opts": [
+      "\\(2600\\)",
+      "\\(2860\\)",
+      "\\(2340\\)",
+      "\\(2730\\)"
     ],
-    "answer": 1,
+    "a": "\\(2600\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ alloy, and } y \\text{ be the mass of the } 75\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 130\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 5025\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{75}{100}y = \\frac{72.88}{100}(130)\\ \\rightarrow\\ 50x + 75y = 9475.0\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 17.50 \\implies 10x - 10y = 1750\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(50x + 75(130 - x) = 9475.0\\ \\rightarrow\\ -25x = -275.0\\ \\rightarrow\\ x = 11\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(10x - 10(5025 - x) = 1750 \\implies (10 + 10)x - 50250 = 1750 \\implies x = 2600\\)",
         "graphData": null
       }
     ],
@@ -2632,28 +2628,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(60\\%\\) copper with another alloy containing \\(80\\%\\) copper to create \\(135\\text{ kg}\\) of a new alloy containing \\(77.93\\%\\) copper. How many kilograms of the \\(60\\%\\) copper alloy are required?",
-    "options": [
-      "\\(121\\)",
-      "\\(14\\)",
-      "\\(16\\)",
-      "\\(67.5\\)"
+    "question": "Mason splits a lump sum of \\(\\$15548\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1230.80\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5400\\)",
+      "\\(5670\\)",
+      "\\(5940\\)",
+      "\\(4860\\)"
     ],
-    "answer": 1,
+    "a": "\\(5400\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 60\\% \\text{ alloy, and } y \\text{ be the mass of the } 80\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 135\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 15548\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{60}{100}x + \\frac{80}{100}y = \\frac{77.93}{100}(135)\\ \\rightarrow\\ 60x + 80y = 10520.0\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{10}{100}y = 1230.80\\ \\rightarrow\\ 4x + 10y = 123080\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(60x + 80(135 - x) = 10520.0\\ \\rightarrow\\ -20x = -280.0\\ \\rightarrow\\ x = 14\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(4x + 10(15548 - x) = 123080\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(4x + 155480 - 10x = 123080 \\implies -6x = -32400 \\implies x = 5400\\)",
         "graphData": null
       }
     ],
@@ -2664,28 +2665,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(30\\%\\) copper with another alloy containing \\(70\\%\\) copper to create \\(140\\text{ kg}\\) of a new alloy containing \\(68.57\\%\\) copper. How many kilograms of the \\(30\\%\\) copper alloy are required?",
-    "options": [
-      "\\(135\\)",
-      "\\(5\\)",
-      "\\(70\\)",
-      "\\(7\\)"
+    "question": "Elizabeth purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$1332\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1298.97\\). What was the original price of the camping tent?",
+    "opts": [
+      "\\(783\\)",
+      "\\(861\\)",
+      "\\(705\\)",
+      "\\(822\\)"
     ],
-    "answer": 1,
+    "a": "\\(783\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 30\\% \\text{ alloy, and } y \\text{ be the mass of the } 70\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 140\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 1332\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{70}{100}y = \\frac{68.57}{100}(140)\\ \\rightarrow\\ 30x + 70y = 9600.0\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 1298.97 \\implies 1.07x + 0.84y = 1298.97\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(30x + 70(140 - x) = 9600.0\\ \\rightarrow\\ -40x = -200.0\\ \\rightarrow\\ x = 5\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.84(1332 - x) = 1298.97\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.23x + 1118.88 = 1298.97 \\implies x = 783\\)",
         "graphData": null
       }
     ],
@@ -2696,29 +2702,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(40\\%\\) copper with another alloy containing \\(75\\%\\) copper to create \\(145\\text{ kg}\\) of a new alloy containing \\(73.07\\%\\) copper. How many kilograms of the \\(40\\%\\) copper alloy are required?",
-    "options": [
-      "\\(10\\)",
-      "\\(137\\)",
-      "\\(72.5\\)",
-      "\\(8\\)"
+    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(60\\%\\) copper to produce exactly \\(74\\text{ kg}\\) of a blended mixture containing \\(54.73\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "opts": [
+      "\\(39\\)",
+      "\\(43\\)",
+      "\\(35\\)",
+      "\\(41\\)"
     ],
-    "answer": 3,
+    "a": "\\(39\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 40\\% \\text{ alloy, and } y \\text{ be the mass of the } 75\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 145\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 74\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{40}{100}x + \\frac{75}{100}y = \\frac{73.07}{100}(145)\\ \\rightarrow\\ 40x + 75y = 10595.0\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{54.73}{100}(74) \\implies 50x + 60y = 4050.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(40x + 75(145 - x) = 10595.0\\ \\rightarrow\\ -35x = -280.0\\ \\rightarrow\\ x = 8\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 60(74 - x) = 4050.0 \\implies -10x = -390.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 39\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2728,28 +2738,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(50\\%\\) copper with another alloy containing \\(80\\%\\) copper to create \\(150\\text{ kg}\\) of a new alloy containing \\(77.80\\%\\) copper. How many kilograms of the \\(50\\%\\) copper alloy are required?",
-    "options": [
-      "\\(11\\)",
-      "\\(139\\)",
-      "\\(13\\)",
-      "\\(75\\)"
+    "question": "An independent wholesale dealer Mila bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$5213\\). Later, she sold the second-hand server cabinets at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$153.70\\), find the original cost price of the second-hand server cabinets.",
+    "opts": [
+      "\\(2700\\)",
+      "\\(2970\\)",
+      "\\(2835\\)",
+      "\\(2430\\)"
     ],
-    "answer": 0,
+    "a": "\\(2700\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ alloy, and } y \\text{ be the mass of the } 80\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 150\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 5213\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{77.80}{100}(150)\\ \\rightarrow\\ 50x + 80y = 11670.0\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 153.70 \\implies 15x - 10y = 15370\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(50x + 80(150 - x) = 11670.0\\ \\rightarrow\\ -30x = -330.0\\ \\rightarrow\\ x = 11\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(15x - 10(5213 - x) = 15370 \\implies (15 + 10)x - 52130 = 15370 \\implies x = 2700\\)",
         "graphData": null
       }
     ],
@@ -2760,28 +2770,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgist wants to melt and combine an alloy containing \\(60\\%\\) copper with another alloy containing \\(70\\%\\) copper to create \\(155\\text{ kg}\\) of a new alloy containing \\(69.10\\%\\) copper. How many kilograms of the \\(60\\%\\) copper alloy are required?",
-    "options": [
-      "\\(141\\)",
-      "\\(14\\)",
-      "\\(16\\)",
-      "\\(77.5\\)"
+    "question": "Michael splits a lump sum of \\(\\$15840\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$992.20\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(4950\\)",
+      "\\(5775\\)",
+      "\\(5500\\)",
+      "\\(6050\\)"
     ],
-    "answer": 1,
+    "a": "\\(5500\\)",
     "solutionSteps": [
       {
-        "explanation": "Define variables and write the equation for total mass.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 60\\% \\text{ alloy, and } y \\text{ be the mass of the } 70\\% \\text{ alloy.}\\ \\rightarrow\\ x + y = 155\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 15840\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the copper mass conservation equation.",
-        "workingOut": "\\(\\frac{60}{100}x + \\frac{70}{100}y = \\frac{69.10}{100}(155)\\ \\rightarrow\\ 60x + 70y = 10710.0\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{3}{100}x + \\frac{8}{100}y = 992.20\\ \\rightarrow\\ 3x + 8y = 99220\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x into the equation to find x.",
-        "workingOut": "\\(60x + 70(155 - x) = 10710.0\\ \\rightarrow\\ -10x = -140.0\\ \\rightarrow\\ x = 14\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(3x + 8(15840 - x) = 99220\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(3x + 126720 - 8x = 99220 \\implies -5x = -27500 \\implies x = 5500\\)",
         "graphData": null
       }
     ],
@@ -2792,28 +2807,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$1200\\). She sold Clock A at a \\(20\\%\\) profit, and Clock B at a \\(8\\%\\) loss. If her net profit from the entire transaction was \\(\\$30.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$400\\)",
-      "\\(\\$450\\)",
-      "\\(\\$500\\)",
-      "\\(\\$750\\)"
+    "question": "Ella purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$1596\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1603.17\\). What was the original price of the road bike?",
+    "opts": [
+      "\\(944\\)",
+      "\\(809\\)",
+      "\\(989\\)",
+      "\\(899\\)"
     ],
-    "answer": 1,
+    "a": "\\(899\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 1200\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 1596\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{8}{100}y = 30.00\\ \\rightarrow\\ 20x - 8y = 3000\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 1603.17 \\implies 1.07x + 0.92y = 1603.17\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(20x - 8(1200 - x) = 3000\\ \\rightarrow\\ (20 + 8)x - 9600 = 3000\\ \\rightarrow\\ x = 450\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.92(1596 - x) = 1603.17\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.15x + 1468.32 = 1603.17 \\implies x = 899\\)",
         "graphData": null
       }
     ],
@@ -2824,29 +2844,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$1400\\). She sold Clock A at a \\(25\\%\\) profit, and Clock B at a \\(11\\%\\) loss. If her net profit from the entire transaction was \\(\\$26.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$450\\)",
-      "\\(\\$500\\)",
-      "\\(\\$550\\)",
-      "\\(\\$900\\)"
+    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(70\\%\\) nitrogen to produce exactly \\(46\\text{ kg}\\) of a blended mixture containing \\(53.04\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "opts": [
+      "\\(41\\)",
+      "\\(43\\)",
+      "\\(39\\)",
+      "\\(35\\)"
     ],
-    "answer": 1,
+    "a": "\\(39\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 1400\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 46\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{25}{100}x - \\frac{11}{100}y = 26.00\\ \\rightarrow\\ 25x - 11y = 2600\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{53.04}{100}(46) \\implies 50x + 70y = 2440.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(25x - 11(1400 - x) = 2600\\ \\rightarrow\\ (25 + 11)x - 15400 = 2600\\ \\rightarrow\\ x = 500\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 70(46 - x) = 2440.0 \\implies -20x = -780.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 39\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2856,28 +2880,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$1600\\). She sold Clock A at a \\(15\\%\\) profit, and Clock B at a \\(14\\%\\) loss. If her net profit from the entire transaction was \\(\\$-64.50\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1050\\)",
-      "\\(\\$500\\)",
-      "\\(\\$550\\)",
-      "\\(\\$600\\)"
+    "question": "An independent wholesale dealer Avery bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$5401\\). Later, she sold the used delivery trucks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$299.90\\), find the original cost price of the used delivery trucks.",
+    "opts": [
+      "\\(2800\\)",
+      "\\(2940\\)",
+      "\\(3080\\)",
+      "\\(2520\\)"
     ],
-    "answer": 2,
+    "a": "\\(2800\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 1600\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 5401\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{14}{100}y = -64.50\\ \\rightarrow\\ 15x - 14y = -6450\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 299.90 \\implies 20x - 10y = 29990\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(15x - 14(1600 - x) = -6450\\ \\rightarrow\\ (15 + 14)x - 22400 = -6450\\ \\rightarrow\\ x = 550\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(20x - 10(5401 - x) = 29990 \\implies (20 + 10)x - 54010 = 29990 \\implies x = 2800\\)",
         "graphData": null
       }
     ],
@@ -2888,28 +2912,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$1800\\). She sold Clock A at a \\(20\\%\\) profit, and Clock B at a \\(5\\%\\) loss. If her net profit from the entire transaction was \\(\\$60.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1200\\)",
-      "\\(\\$550\\)",
-      "\\(\\$600\\)",
-      "\\(\\$650\\)"
+    "question": "Jacob splits a lump sum of \\(\\$16132\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1023.92\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(6160\\)",
+      "\\(5040\\)",
+      "\\(5600\\)",
+      "\\(5880\\)"
     ],
-    "answer": 2,
+    "a": "\\(5600\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 1800\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 16132\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{5}{100}y = 60.00\\ \\rightarrow\\ 20x - 5y = 6000\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{7}{100}x + \\frac{6}{100}y = 1023.92\\ \\rightarrow\\ 7x + 6y = 102392\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(20x - 5(1800 - x) = 6000\\ \\rightarrow\\ (20 + 5)x - 9000 = 6000\\ \\rightarrow\\ x = 600\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(7x + 6(16132 - x) = 102392\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(7x + 96792 - 6x = 102392 \\implies -1x = 5600 \\implies x = 5600\\)",
         "graphData": null
       }
     ],
@@ -2920,28 +2949,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$2000\\). She sold Clock A at a \\(25\\%\\) profit, and Clock B at a \\(8\\%\\) loss. If her net profit from the entire transaction was \\(\\$54.50\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1350\\)",
-      "\\(\\$600\\)",
-      "\\(\\$650\\)",
-      "\\(\\$700\\)"
+    "question": "Sofia purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$460\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$445.65\\). What was the original price of the leather sofa?",
+    "opts": [
+      "\\(215\\)",
+      "\\(237\\)",
+      "\\(194\\)",
+      "\\(226\\)"
     ],
-    "answer": 2,
+    "a": "\\(215\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 2000\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 460\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{25}{100}x - \\frac{8}{100}y = 54.50\\ \\rightarrow\\ 25x - 8y = 5450\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 445.65 \\implies 1.07x + 0.88y = 445.65\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(25x - 8(2000 - x) = 5450\\ \\rightarrow\\ (25 + 8)x - 16000 = 5450\\ \\rightarrow\\ x = 650\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.88(460 - x) = 445.65\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.19x + 404.80 = 445.65 \\implies x = 215\\)",
         "graphData": null
       }
     ],
@@ -2952,29 +2986,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$2200\\). She sold Clock A at a \\(15\\%\\) profit, and Clock B at a \\(11\\%\\) loss. If her net profit from the entire transaction was \\(\\$-60.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1500\\)",
-      "\\(\\$650\\)",
-      "\\(\\$700\\)",
-      "\\(\\$750\\)"
+    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(80\\%\\) pure silver to produce exactly \\(98\\text{ kg}\\) of a blended mixture containing \\(55.82\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "opts": [
+      "\\(79\\)",
+      "\\(87\\)",
+      "\\(71\\)",
+      "\\(83\\)"
     ],
-    "answer": 2,
+    "a": "\\(79\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 2200\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 98\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{11}{100}y = -60.00\\ \\rightarrow\\ 15x - 11y = -6000\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{55.82}{100}(98) \\implies 50x + 80y = 5470.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(15x - 11(2200 - x) = -6000\\ \\rightarrow\\ (15 + 11)x - 24200 = -6000\\ \\rightarrow\\ x = 700\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 80(98 - x) = 5470.0 \\implies -30x = -2370.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 79\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2984,28 +3022,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$2400\\). She sold Clock A at a \\(20\\%\\) profit, and Clock B at a \\(14\\%\\) loss. If her net profit from the entire transaction was \\(\\$-81.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1650\\)",
-      "\\(\\$700\\)",
-      "\\(\\$750\\)",
-      "\\(\\$800\\)"
+    "question": "An independent wholesale dealer Camila bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$5589\\). Later, she sold the estate jewellery rings at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$21.10\\), find the original cost price of the estate jewellery rings.",
+    "opts": [
+      "\\(2900\\)",
+      "\\(3045\\)",
+      "\\(3190\\)",
+      "\\(2610\\)"
     ],
-    "answer": 2,
+    "a": "\\(2900\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 2400\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 5589\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{14}{100}y = -81.00\\ \\rightarrow\\ 20x - 14y = -8100\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 21.10 \\implies 10x - 10y = 2110\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(20x - 14(2400 - x) = -8100\\ \\rightarrow\\ (20 + 14)x - 33600 = -8100\\ \\rightarrow\\ x = 750\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(10x - 10(5589 - x) = 2110 \\implies (10 + 10)x - 55890 = 2110 \\implies x = 2900\\)",
         "graphData": null
       }
     ],
@@ -3016,28 +3054,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$2600\\). She sold Clock A at a \\(25\\%\\) profit, and Clock B at a \\(5\\%\\) loss. If her net profit from the entire transaction was \\(\\$110.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1800\\)",
-      "\\(\\$750\\)",
-      "\\(\\$800\\)",
-      "\\(\\$850\\)"
+    "question": "Henry splits a lump sum of \\(\\$16424\\) into two different savings accounts. Account A earns a yield of \\(6\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1414.40\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5700\\)",
+      "\\(6270\\)",
+      "\\(5985\\)",
+      "\\(5130\\)"
     ],
-    "answer": 2,
+    "a": "\\(5700\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 2600\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 16424\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{25}{100}x - \\frac{5}{100}y = 110.00\\ \\rightarrow\\ 25x - 5y = 11000\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{6}{100}x + \\frac{10}{100}y = 1414.40\\ \\rightarrow\\ 6x + 10y = 141440\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(25x - 5(2600 - x) = 11000\\ \\rightarrow\\ (25 + 5)x - 13000 = 11000\\ \\rightarrow\\ x = 800\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(6x + 10(16424 - x) = 141440\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(6x + 164240 - 10x = 141440 \\implies -4x = -22800 \\implies x = 5700\\)",
         "graphData": null
       }
     ],
@@ -3048,28 +3091,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$2800\\). She sold Clock A at a \\(15\\%\\) profit, and Clock B at a \\(8\\%\\) loss. If her net profit from the entire transaction was \\(\\$-28.50\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1950\\)",
-      "\\(\\$800\\)",
-      "\\(\\$850\\)",
-      "\\(\\$900\\)"
+    "question": "Aria purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$724\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$684.29\\). What was the original price of the drone?",
+    "opts": [
+      "\\(348\\)",
+      "\\(364\\)",
+      "\\(298\\)",
+      "\\(331\\)"
     ],
-    "answer": 2,
+    "a": "\\(331\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 2800\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 724\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{8}{100}y = -28.50\\ \\rightarrow\\ 15x - 8y = -2850\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 684.29 \\implies 1.07x + 0.84y = 684.29\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(15x - 8(2800 - x) = -2850\\ \\rightarrow\\ (15 + 8)x - 22400 = -2850\\ \\rightarrow\\ x = 850\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.84(724 - x) = 684.29\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.23x + 608.16 = 684.29 \\implies x = 331\\)",
         "graphData": null
       }
     ],
@@ -3080,29 +3128,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$3000\\). She sold Clock A at a \\(20\\%\\) profit, and Clock B at a \\(11\\%\\) loss. If her net profit from the entire transaction was \\(\\$-51.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$2100\\)",
-      "\\(\\$850\\)",
-      "\\(\\$900\\)",
-      "\\(\\$950\\)"
+    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(60\\%\\) pure gold to produce exactly \\(70\\text{ kg}\\) of a blended mixture containing \\(55.00\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "opts": [
+      "\\(37\\)",
+      "\\(35\\)",
+      "\\(39\\)",
+      "\\(32\\)"
     ],
-    "answer": 2,
+    "a": "\\(35\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 3000\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 70\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{11}{100}y = -51.00\\ \\rightarrow\\ 20x - 11y = -5100\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{55.00}{100}(70) \\implies 50x + 60y = 3850.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(20x - 11(3000 - x) = -5100\\ \\rightarrow\\ (20 + 11)x - 33000 = -5100\\ \\rightarrow\\ x = 900\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 60(70 - x) = 3850.0 \\implies -10x = -350.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 35\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3112,28 +3164,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$3200\\). She sold Clock A at a \\(25\\%\\) profit, and Clock B at a \\(14\\%\\) loss. If her net profit from the entire transaction was \\(\\$-77.50\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1000\\)",
-      "\\(\\$2250\\)",
-      "\\(\\$900\\)",
-      "\\(\\$950\\)"
+    "question": "An independent wholesale dealer Sophia bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$5777\\). Later, she sold the antique clocks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$184.80\\), find the original cost price of the antique clocks.",
+    "opts": [
+      "\\(3355\\)",
+      "\\(3203\\)",
+      "\\(2745\\)",
+      "\\(3050\\)"
     ],
-    "answer": 3,
+    "a": "\\(3050\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 3200\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 5777\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{25}{100}x - \\frac{14}{100}y = -77.50\\ \\rightarrow\\ 25x - 14y = -7750\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 184.80 \\implies 15x - 10y = 18480\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(25x - 14(3200 - x) = -7750\\ \\rightarrow\\ (25 + 14)x - 44800 = -7750\\ \\rightarrow\\ x = 950\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(15x - 10(5777 - x) = 18480 \\implies (15 + 10)x - 57770 = 18480 \\implies x = 3050\\)",
         "graphData": null
       }
     ],
@@ -3144,28 +3196,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$3400\\). She sold Clock A at a \\(15\\%\\) profit, and Clock B at a \\(5\\%\\) loss. If her net profit from the entire transaction was \\(\\$30.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1000\\)",
-      "\\(\\$1050\\)",
-      "\\(\\$2400\\)",
-      "\\(\\$950\\)"
+    "question": "Benjamin splits a lump sum of \\(\\$16716\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1166.28\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5700\\)",
+      "\\(6270\\)",
+      "\\(5130\\)",
+      "\\(5985\\)"
     ],
-    "answer": 0,
+    "a": "\\(5700\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 3400\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 16716\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{5}{100}y = 30.00\\ \\rightarrow\\ 15x - 5y = 3000\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 1166.28\\ \\rightarrow\\ 5x + 8y = 116628\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(15x - 5(3400 - x) = 3000\\ \\rightarrow\\ (15 + 5)x - 17000 = 3000\\ \\rightarrow\\ x = 1000\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(5x + 8(16716 - x) = 116628\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(5x + 133728 - 8x = 116628 \\implies -3x = -17100 \\implies x = 5700\\)",
         "graphData": null
       }
     ],
@@ -3176,28 +3233,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$3600\\). She sold Clock A at a \\(20\\%\\) profit, and Clock B at a \\(8\\%\\) loss. If her net profit from the entire transaction was \\(\\$6.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1000\\)",
-      "\\(\\$1050\\)",
-      "\\(\\$1100\\)",
-      "\\(\\$2550\\)"
+    "question": "Charlotte purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$988\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$976.01\\). What was the original price of the dining table?",
+    "opts": [
+      "\\(447\\)",
+      "\\(492\\)",
+      "\\(402\\)",
+      "\\(469\\)"
     ],
-    "answer": 1,
+    "a": "\\(447\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 3600\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 988\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{8}{100}y = 6.00\\ \\rightarrow\\ 20x - 8y = 600\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 976.01 \\implies 1.07x + 0.92y = 976.01\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(20x - 8(3600 - x) = 600\\ \\rightarrow\\ (20 + 8)x - 28800 = 600\\ \\rightarrow\\ x = 1050\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.92(988 - x) = 976.01\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.15x + 908.96 = 976.01 \\implies x = 447\\)",
         "graphData": null
       }
     ],
@@ -3208,29 +3270,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$3800\\). She sold Clock A at a \\(25\\%\\) profit, and Clock B at a \\(11\\%\\) loss. If her net profit from the entire transaction was \\(\\$-22.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1050\\)",
-      "\\(\\$1100\\)",
-      "\\(\\$1150\\)",
-      "\\(\\$2700\\)"
+    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(70\\%\\) ethanol to produce exactly \\(42\\text{ kg}\\) of a blended mixture containing \\(59.05\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "opts": [
+      "\\(21\\)",
+      "\\(24\\)",
+      "\\(25\\)",
+      "\\(23\\)"
     ],
-    "answer": 1,
+    "a": "\\(23\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 3800\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 42\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{25}{100}x - \\frac{11}{100}y = -22.00\\ \\rightarrow\\ 25x - 11y = -2200\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{59.05}{100}(42) \\implies 50x + 70y = 2480.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(25x - 11(3800 - x) = -2200\\ \\rightarrow\\ (25 + 11)x - 41800 = -2200\\ \\rightarrow\\ x = 1100\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 70(42 - x) = 2480.0 \\implies -20x = -460.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 23\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3240,28 +3306,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$4000\\). She sold Clock A at a \\(15\\%\\) profit, and Clock B at a \\(14\\%\\) loss. If her net profit from the entire transaction was \\(\\$-226.50\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1100\\)",
-      "\\(\\$1150\\)",
-      "\\(\\$1200\\)",
-      "\\(\\$2850\\)"
+    "question": "An independent wholesale dealer Amelia bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$5965\\). Later, she sold the rehabilitated office desk suites at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$348.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "opts": [
+      "\\(3150\\)",
+      "\\(3465\\)",
+      "\\(2835\\)",
+      "\\(3308\\)"
     ],
-    "answer": 1,
+    "a": "\\(3150\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 4000\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 5965\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{14}{100}y = -226.50\\ \\rightarrow\\ 15x - 14y = -22650\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 348.50 \\implies 20x - 10y = 34850\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(15x - 14(4000 - x) = -22650\\ \\rightarrow\\ (15 + 14)x - 56000 = -22650\\ \\rightarrow\\ x = 1150\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(20x - 10(5965 - x) = 34850 \\implies (20 + 10)x - 59650 = 34850 \\implies x = 3150\\)",
         "graphData": null
       }
     ],
@@ -3272,28 +3338,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$4200\\). She sold Clock A at a \\(20\\%\\) profit, and Clock B at a \\(5\\%\\) loss. If her net profit from the entire transaction was \\(\\$90.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1150\\)",
-      "\\(\\$1200\\)",
-      "\\(\\$1250\\)",
-      "\\(\\$3000\\)"
+    "question": "William splits a lump sum of \\(\\$17008\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$904.48\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(5800\\)",
+      "\\(6380\\)",
+      "\\(6090\\)",
+      "\\(5220\\)"
     ],
-    "answer": 1,
+    "a": "\\(5800\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 4200\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 17008\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{5}{100}y = 90.00\\ \\rightarrow\\ 20x - 5y = 9000\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 904.48\\ \\rightarrow\\ 4x + 6y = 90448\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(20x - 5(4200 - x) = 9000\\ \\rightarrow\\ (20 + 5)x - 21000 = 9000\\ \\rightarrow\\ x = 1200\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(4x + 6(17008 - x) = 90448\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(4x + 102048 - 6x = 90448 \\implies -2x = -11600 \\implies x = 5800\\)",
         "graphData": null
       }
     ],
@@ -3304,28 +3375,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$4400\\). She sold Clock A at a \\(25\\%\\) profit, and Clock B at a \\(8\\%\\) loss. If her net profit from the entire transaction was \\(\\$60.50\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1200\\)",
-      "\\(\\$1250\\)",
-      "\\(\\$1300\\)",
-      "\\(\\$3150\\)"
+    "question": "Olivia purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$1252\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1208.73\\). What was the original price of the camping tent?",
+    "opts": [
+      "\\(563\\)",
+      "\\(619\\)",
+      "\\(507\\)",
+      "\\(591\\)"
     ],
-    "answer": 1,
+    "a": "\\(563\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 4400\\)",
+        "explanation": "Let the variables represent the original prices.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 1252\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{25}{100}x - \\frac{8}{100}y = 60.50\\ \\rightarrow\\ 25x - 8y = 6050\\)",
+        "explanation": "Set up the updated total pricing equation.",
+        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 1208.73 \\implies 1.07x + 0.88y = 1208.73\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(25x - 8(4400 - x) = 6050\\ \\rightarrow\\ (25 + 8)x - 35200 = 6050\\ \\rightarrow\\ x = 1250\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(1.07x + 0.88(1252 - x) = 1208.73\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the resulting equation for x.",
+        "workingOut": "\\(0.19x + 1101.76 = 1208.73 \\implies x = 563\\)",
         "graphData": null
       }
     ],
@@ -3336,29 +3412,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$4600\\). She sold Clock A at a \\(15\\%\\) profit, and Clock B at a \\(11\\%\\) loss. If her net profit from the entire transaction was \\(\\$-168.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1250\\)",
-      "\\(\\$1300\\)",
-      "\\(\\$1350\\)",
-      "\\(\\$3300\\)"
+    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(80\\%\\) copper to produce exactly \\(94\\text{ kg}\\) of a blended mixture containing \\(73.94\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "opts": [
+      "\\(17\\)",
+      "\\(21\\)",
+      "\\(20\\)",
+      "\\(19\\)"
     ],
-    "answer": 1,
+    "a": "\\(19\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 4600\\)",
+        "explanation": "State the variables for both mixture components.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 94\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{11}{100}y = -168.00\\ \\rightarrow\\ 15x - 11y = -16800\\)",
+        "explanation": "Write the conservation equation for the active substance.",
+        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{73.94}{100}(94) \\implies 50x + 80y = 6950.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(15x - 11(4600 - x) = -16800\\ \\rightarrow\\ (15 + 11)x - 50600 = -16800\\ \\rightarrow\\ x = 1300\\)",
+        "explanation": "Substitute y = totalMass - x and expand.",
+        "workingOut": "\\(50x + 80(94 - x) = 6950.0 \\implies -30x = -570.0\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Solve for the required component mass.",
+        "workingOut": "\\(x = 19\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3368,28 +3448,28 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$4800\\). She sold Clock A at a \\(20\\%\\) profit, and Clock B at a \\(14\\%\\) loss. If her net profit from the entire transaction was \\(\\$-213.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1300\\)",
-      "\\(\\$1350\\)",
-      "\\(\\$1400\\)",
-      "\\(\\$3450\\)"
+    "question": "An independent wholesale dealer Isabella bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$6153\\). Later, she sold the second-hand server cabinets at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$34.70\\), find the original cost price of the second-hand server cabinets.",
+    "opts": [
+      "\\(2925\\)",
+      "\\(3413\\)",
+      "\\(3250\\)",
+      "\\(3575\\)"
     ],
-    "answer": 1,
+    "a": "\\(3250\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 4800\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 6153\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{14}{100}y = -213.00\\ \\rightarrow\\ 20x - 14y = -21300\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 34.70 \\implies 10x - 10y = 3470\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(20x - 14(4800 - x) = -21300\\ \\rightarrow\\ (20 + 14)x - 67200 = -21300\\ \\rightarrow\\ x = 1350\\)",
+        "explanation": "Substitute y to solve for the cost price of the first item.",
+        "workingOut": "\\(10x - 10(6153 - x) = 3470 \\implies (10 + 10)x - 61530 = 3470 \\implies x = 3250\\)",
         "graphData": null
       }
     ],
@@ -3400,60 +3480,33 @@ export const Y10_CH1B_HIGH_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$5000\\). She sold Clock A at a \\(25\\%\\) profit, and Clock B at a \\(5\\%\\) loss. If her net profit from the entire transaction was \\(\\$170.00\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1350\\)",
-      "\\(\\$1400\\)",
-      "\\(\\$1450\\)",
-      "\\(\\$3600\\)"
+    "question": "Matthew splits a lump sum of \\(\\$17300\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1317.00\\), how much capital was originally deposited into Account A?",
+    "opts": [
+      "\\(6195\\)",
+      "\\(6490\\)",
+      "\\(5310\\)",
+      "\\(5900\\)"
     ],
-    "answer": 1,
+    "a": "\\(5900\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 5000\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 17300\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{25}{100}x - \\frac{5}{100}y = 170.00\\ \\rightarrow\\ 25x - 5y = 17000\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(\\frac{3}{100}x + \\frac{10}{100}y = 1317.00\\ \\rightarrow\\ 3x + 10y = 131700\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(25x - 5(5000 - x) = 17000\\ \\rightarrow\\ (25 + 5)x - 25000 = 17000\\ \\rightarrow\\ x = 1400\\)",
-        "graphData": null
-      }
-    ],
-    "t": "Percentage increase and decrease"
-  },
-  {
-    "id": "y10-1b-high-q100",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 120,
-    "question": "A dealer purchased two antique clocks for a combined total of \\(\\$5200\\). She sold Clock A at a \\(15\\%\\) profit, and Clock B at a \\(8\\%\\) loss. If her net profit from the entire transaction was \\(\\$-82.50\\), what was the original cost price of Clock A?",
-    "options": [
-      "\\(\\$1400\\)",
-      "\\(\\$1450\\)",
-      "\\(\\$1500\\)",
-      "\\(\\$3750\\)"
-    ],
-    "answer": 1,
-    "solutionSteps": [
-      {
-        "explanation": "Formulate the total purchase cost equation.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of Clock A, and } y \\text{ be the cost of Clock B.}\\ \\rightarrow\\ x + y = 5200\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(3x + 10(17300 - x) = 131700\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the net profit equation (profit is positive, loss is negative).",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{8}{100}y = -82.50\\ \\rightarrow\\ 15x - 8y = -8250\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y = totalCost - x and solve for the cost price of Clock A (x).",
-        "workingOut": "\\(15x - 8(5200 - x) = -8250\\ \\rightarrow\\ (15 + 8)x - 41600 = -8250\\ \\rightarrow\\ x = 1450\\)",
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(3x + 173000 - 10x = 131700 \\implies -7x = -41300 \\implies x = 5900\\)",
         "graphData": null
       }
     ],

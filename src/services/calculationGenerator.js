@@ -2464,47 +2464,77 @@ const shuffleArr = (arr) => {
 const calcMCQOptions = (answerStr) => {
   const s = String(answerStr).trim();
 
-  // ── Integer answer ────────────────────────────────────────────
+  // ── Integer answer (including negative) ──────────────────────
   const intVal = parseInt(s, 10);
   if (!isNaN(intVal) && String(intVal) === s) {
-    const seen = new Set([intVal]);
+    const allowNeg = intVal < 0;
+    const seen = new Set([s]);
     const distractors = [];
     const offsets = [1, -1, 2, -2, 3, -3, 5, -5, 4, -4, 6, -6, 10, -10];
     for (const off of offsets) {
       const d = intVal + off;
-      if (d >= 0 && !seen.has(d)) { seen.add(d); distractors.push(String(d)); }
+      if (!allowNeg && d < 0) continue;
+      const ds = String(d);
+      if (!seen.has(ds)) { seen.add(ds); distractors.push(ds); }
       if (distractors.length >= 3) break;
     }
-    // safety fill: random nearby if offsets exhausted
-    while (distractors.length < 3) {
+    let safety = 0;
+    while (distractors.length < 3 && safety++ < 100) {
       const d = intVal + randomInt(1, 8) * (Math.random() > 0.5 ? 1 : -1);
-      if (d >= 0 && !seen.has(d)) { seen.add(d); distractors.push(String(d)); }
+      if (!allowNeg && d < 0) continue;
+      const ds = String(d);
+      if (!seen.has(ds)) { seen.add(ds); distractors.push(ds); }
     }
     return shuffleArr([s, ...distractors]);
   }
 
-  // ── Decimal answer ────────────────────────────────────────────
+  // ── Decimal answer (including negative) ──────────────────────
   if (s.includes('.') && !s.includes('/') && !s.includes(' ')) {
     const decVal = parseFloat(s);
     if (!isNaN(decVal)) {
-      const dp = (s.split('.')[1] || '').length;
+      const allowNeg = decVal < 0;
+      const dp = (s.replace(/^-/, '').split('.')[1] || '').length;
       const step = Math.pow(10, -dp);
       const seen = new Set([s]);
       const distractors = [];
       const offsets = [1, -1, 2, -2, 3, -3, 5, -5];
       for (const off of offsets) {
         const d = Math.round((decVal + off * step) * 1e8) / 1e8;
-        const ds = d >= 0 ? d.toFixed(dp).replace(/\.?0+$/, '') : null;
-        if (ds && d >= 0 && !seen.has(ds)) { seen.add(ds); distractors.push(ds); }
+        if (!allowNeg && d < 0) continue;
+        const ds = d.toFixed(dp).replace(/\.?0+$/, '');
+        if (!seen.has(ds)) { seen.add(ds); distractors.push(ds); }
         if (distractors.length >= 3) break;
       }
-      while (distractors.length < 3) {
+      let safety = 0;
+      while (distractors.length < 3 && safety++ < 100) {
         const d = Math.round((decVal + randomInt(1, 5) * step * (Math.random() > 0.5 ? 1 : -1)) * 1e8) / 1e8;
-        const ds = d >= 0 ? d.toFixed(dp).replace(/\.?0+$/, '') : null;
-        if (ds && d >= 0 && !seen.has(ds)) { seen.add(ds); distractors.push(ds); }
+        if (!allowNeg && d < 0) continue;
+        const ds = d.toFixed(dp).replace(/\.?0+$/, '');
+        if (!seen.has(ds)) { seen.add(ds); distractors.push(ds); }
       }
       return shuffleArr([s, ...distractors]);
     }
+  }
+
+  // ── Negative fraction answer e.g. "-7/3" ─────────────────────
+  const negFracMatch = s.match(/^-(\d+)\/(\d+)$/);
+  if (negFracMatch) {
+    const n = parseInt(negFracMatch[1], 10);
+    const d = parseInt(negFracMatch[2], 10);
+    const variants = [`-${n + 1}/${d}`, `-${n - 1}/${d}`, `-${n}/${d + 1}`, `-${n + 2}/${d}`]
+      .filter(v => !v.includes('/-') && !v.match(/-0\//));
+    const seen = new Set([s]);
+    const distractors = [];
+    for (const v of variants) {
+      if (!seen.has(v)) { seen.add(v); distractors.push(v); }
+      if (distractors.length >= 3) break;
+    }
+    while (distractors.length < 3) {
+      const vn = n + randomInt(1, 4) * (Math.random() > 0.5 ? 1 : -1);
+      const v = `-${Math.max(1, vn)}/${d}`;
+      if (!seen.has(v)) { seen.add(v); distractors.push(v); }
+    }
+    return shuffleArr([s, ...distractors]);
   }
 
   // ── Simple fraction answer e.g. "3/4" ────────────────────────
@@ -2615,6 +2645,19 @@ const calcMCQOptions = (answerStr) => {
     const d = [];
     for (const v of variants) { if (!seen.has(v)) { seen.add(v); d.push(v); } if (d.length >= 3) break; }
     return shuffleArr([s, ...d]);
+  }
+
+  // ── Combined duration e.g. "1 hour 30 minutes" ───────────────
+  const durCombined = s.match(/^(\d+) hours? (\d+) minutes?$/);
+  if (durCombined) {
+    const h = parseInt(durCombined[1], 10), m = parseInt(durCombined[2], 10);
+    const fmt = (hh, mm) => mm === 0 ? `${hh} hour${hh === 1 ? '' : 's'}` : `${hh} hour${hh === 1 ? '' : 's'} ${mm} minutes`;
+    const variants = [fmt(h, (m + 15) % 60), fmt(h + 1, m), fmt(h, Math.max(5, m - 15))].filter(v => v !== s);
+    const seen = new Set([s]);
+    const distractors = [];
+    for (const v of variants) { if (!seen.has(v)) { seen.add(v); distractors.push(v); } if (distractors.length >= 3) break; }
+    while (distractors.length < 3) { const v = fmt(h + distractors.length + 1, m); if (!seen.has(v)) { seen.add(v); distractors.push(v); } }
+    return shuffleArr([s, ...distractors]);
   }
 
   // ── Duration e.g. "2 hours", "1 hour", "90 minutes" ──────────
