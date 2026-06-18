@@ -2202,6 +2202,7 @@ export const buildRatioProblemsLesson = ({ audioBase = null } = {}) => {
           a: 3, b: 5,
           colorA: PRP, colorB: BLU,
           note: 'Each block = 1 equal part',
+          startDelay: 4.5,  // fires when narrator says "If the ratio is 3:5…"
         },
         { type: 'stepCards', cards: [
           { title: 'Add the ratio', math: `$$a + b = \\text{total parts}$$`, color: PRP, delay: 0.0 },

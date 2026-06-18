@@ -1652,9 +1652,11 @@ const RatioPartsCount = ({
   labelA = '', labelB = '',
   colorA = '#7c3aed', colorB = '#3b82f6',
   note = '',
+  startDelay = 0,  // seconds to wait before the whole animation fires
 }) => {
   const total = a + b;
   const BLOCK = 42;
+  const d = startDelay; // shorthand
 
   return (
     <div style={{ fontFamily: FONT, display: 'flex', flexDirection: 'column', gap: 22, alignItems: 'center', width: '100%' }}>
@@ -1662,7 +1664,7 @@ const RatioPartsCount = ({
       {/* Step 1 — ratio notation */}
       <motion.div
         initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1, type: 'spring', stiffness: 260, damping: 22 }}
+        transition={{ delay: d + 0.1, type: 'spring', stiffness: 260, damping: 22 }}
         style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
           <div style={{ fontSize: '2.6rem', fontWeight: 900, color: colorA, lineHeight: 1 }}>{a}</div>
@@ -1681,7 +1683,7 @@ const RatioPartsCount = ({
           <motion.div key={`a${i}`}
             initial={{ opacity: 0, scale: 0, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ delay: 0.4 + i * 0.12, type: 'spring', stiffness: 500, damping: 18 }}
+            transition={{ delay: d + 0.4 + i * 0.12, type: 'spring', stiffness: 500, damping: 18 }}
             style={{
               width: BLOCK, height: BLOCK, borderRadius: 10, background: colorA,
               display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -1692,10 +1694,9 @@ const RatioPartsCount = ({
           </motion.div>
         ))}
 
-        {/* plus sign */}
         <motion.div
           initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.4 + a * 0.12 + 0.1, type: 'spring', stiffness: 400 }}
+          transition={{ delay: d + 0.4 + a * 0.12 + 0.1, type: 'spring', stiffness: 400 }}
           style={{ fontSize: '1.8rem', fontWeight: 900, color: '#9ca3af', margin: '0 4px' }}>
           +
         </motion.div>
@@ -1704,7 +1705,7 @@ const RatioPartsCount = ({
           <motion.div key={`b${i}`}
             initial={{ opacity: 0, scale: 0, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ delay: 0.55 + a * 0.12 + i * 0.12, type: 'spring', stiffness: 500, damping: 18 }}
+            transition={{ delay: d + 0.55 + a * 0.12 + i * 0.12, type: 'spring', stiffness: 500, damping: 18 }}
             style={{
               width: BLOCK, height: BLOCK, borderRadius: 10, background: colorB,
               display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -1720,7 +1721,7 @@ const RatioPartsCount = ({
       <motion.div
         initial={{ opacity: 0, scale: 0.5, y: 10 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ delay: 0.6 + (a + b) * 0.12, type: 'spring', stiffness: 340, damping: 16 }}
+        transition={{ delay: d + 0.6 + (a + b) * 0.12, type: 'spring', stiffness: 340, damping: 16 }}
         style={{
           display: 'flex', alignItems: 'center', gap: 14,
           background: 'linear-gradient(135deg, #f5f0ff, #ede9fe)',
@@ -1733,7 +1734,7 @@ const RatioPartsCount = ({
         </div>
         <motion.div
           animate={{ scale: [1, 1.18, 1] }}
-          transition={{ delay: 0.75 + (a + b) * 0.12, duration: 0.45, ease: 'easeOut' }}
+          transition={{ delay: d + 0.75 + (a + b) * 0.12, duration: 0.45, ease: 'easeOut' }}
           style={{ fontSize: '2.2rem', fontWeight: 900, color: '#7c3aed', lineHeight: 1 }}>
           {total}
         </motion.div>
@@ -1742,7 +1743,7 @@ const RatioPartsCount = ({
 
       {note && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 + (a + b) * 0.12 }}
+          transition={{ delay: d + 0.8 + (a + b) * 0.12 }}
           style={{ fontSize: '0.8rem', fontWeight: 700, color: '#9ca3af', textAlign: 'center' }}>
           {note}
         </motion.div>
