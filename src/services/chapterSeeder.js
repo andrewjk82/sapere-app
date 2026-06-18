@@ -1,5 +1,5 @@
 import { db } from '../firebase/config';
-import { collection, writeBatch, doc, setDoc, serverTimestamp, query, where, getDocs, getDocsFromServer } from 'firebase/firestore';
+import { collection, writeBatch, doc, getDoc, setDoc, serverTimestamp, query, where, getDocs, getDocsFromServer } from 'firebase/firestore';
 import { recountIds } from './questionCountsService';
 import { applySeedToIndexes } from './questionIndexService';
 
@@ -105,36 +105,42 @@ export const seedChapterQuestions = async (chapter) => {
   if (seed.length === 0) return 0;
   const collRef = collection(db, 'questions');
 
-  // CLEAR EXISTING QUESTIONS FOR THIS TOPIC
-  // Use getDocsFromServer (not getDocs) to bypass IndexedDB offline cache — otherwise
-  // stale cached results could silently skip deleting documents that actually exist in Firestore.
-  const q = query(collRef, where('topicId', '==', chapter.topicId));
-  const snap = await getDocsFromServer(q);
-  if (!snap.empty) {
-    const CHUNK = 400;
-    for (let i = 0; i < snap.docs.length; i += CHUNK) {
-      const clearBatch = writeBatch(db);
-      snap.docs.slice(i, i + CHUNK).forEach(d => clearBatch.delete(d.ref));
-      await clearBatch.commit();
-    }
-  }
-
-  // Track every chapter/topic id touched by this seed (cleared docs + new
-  // docs) so the aggregate counts doc can be re-counted exactly afterwards,
-  // and the per-chapter question indexes can be updated incrementally
-  // (zero reads) instead of forcing a full questions-collection rebuild.
+  // CLEAR EXISTING QUESTIONS FOR THIS CHAPTER
+  // Fast path: read the question_index/{chapterId} doc (1 read) to get the
+  // existing question IDs, then delete by ID without fetching the full docs.
+  // Fallback: if the index doesn't exist yet (first-ever seed for this chapter),
+  // fall back to the original getDocsFromServer query so nothing is missed.
   const affectedChapterIds = new Set([chapter.chapterId]);
   const affectedTopicIds = new Set([chapter.topicId]);
   const indexRemoved = {}; // { [chapterId]: [questionId, ...] }
   const indexAdded = {};
-  snap.docs.forEach((d) => {
-    const data = d.data();
-    if (data.chapterId) {
-      affectedChapterIds.add(data.chapterId);
-      (indexRemoved[data.chapterId] = indexRemoved[data.chapterId] || []).push(d.id);
+
+  const indexSnap = await getDoc(doc(db, 'question_index', chapter.chapterId));
+  let existingIds = indexSnap.exists() ? (indexSnap.data().ids || []) : null;
+
+  if (existingIds === null) {
+    // First-time seed for this chapter — fall back to full query so we don't
+    // miss any orphaned docs that were written before the index existed.
+    const snap = await getDocsFromServer(
+      query(collRef, where('topicId', '==', chapter.topicId))
+    );
+    existingIds = snap.docs.map(d => d.id);
+    snap.docs.forEach((d) => {
+      const data = d.data();
+      if (data.chapterId) affectedChapterIds.add(data.chapterId);
+      if (data.topicId) affectedTopicIds.add(data.topicId);
+    });
+  }
+
+  if (existingIds.length > 0) {
+    (indexRemoved[chapter.chapterId] = indexRemoved[chapter.chapterId] || []).push(...existingIds);
+    const CHUNK = 400;
+    for (let i = 0; i < existingIds.length; i += CHUNK) {
+      const clearBatch = writeBatch(db);
+      existingIds.slice(i, i + CHUNK).forEach(id => clearBatch.delete(doc(collRef, id)));
+      await clearBatch.commit();
     }
-    if (data.topicId) affectedTopicIds.add(data.topicId);
-  });
+  }
 
   // WRITE NEW SEED QUESTIONS
   // FULL OVERWRITE: questions are written by their stable `id` with
