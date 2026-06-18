@@ -53,6 +53,14 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    // Per-topic question ID index (question_topic_index/{topicId}) — used by
+    // the chapter seeder to find existing question IDs for a topic in 1 read
+    // instead of scanning the full questions collection.
+    match /question_topic_index/{topicId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
     // Reports — students can file (create), admin manages
     match /reports/{reportId} {
       allow read: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);

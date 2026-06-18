@@ -105,22 +105,23 @@ export const seedChapterQuestions = async (chapter) => {
   if (seed.length === 0) return 0;
   const collRef = collection(db, 'questions');
 
-  // CLEAR EXISTING QUESTIONS FOR THIS CHAPTER
-  // Fast path: read the question_index/{chapterId} doc (1 read) to get the
-  // existing question IDs, then delete by ID without fetching the full docs.
-  // Fallback: if the index doesn't exist yet (first-ever seed for this chapter),
-  // fall back to the original getDocsFromServer query so nothing is missed.
+  // CLEAR EXISTING QUESTIONS FOR THIS TOPIC
+  // Fast path (≥2nd seed): read question_topic_index/{topicId} — 1 doc read —
+  // to get existing question IDs, then delete by ID directly (no per-doc reads).
+  // This avoids the previous getDocsFromServer scan (1 read per question).
+  //
+  // Fallback (first-ever seed for this topic, or orphaned docs before the
+  // topic-index existed): fall back to the original getDocsFromServer query.
   const affectedChapterIds = new Set([chapter.chapterId]);
   const affectedTopicIds = new Set([chapter.topicId]);
   const indexRemoved = {}; // { [chapterId]: [questionId, ...] }
   const indexAdded = {};
 
-  const indexSnap = await getDoc(doc(db, 'question_index', chapter.chapterId));
-  let existingIds = indexSnap.exists() ? (indexSnap.data().ids || []) : null;
+  const topicIndexSnap = await getDoc(doc(db, 'question_topic_index', chapter.topicId));
+  let existingIds = topicIndexSnap.exists() ? (topicIndexSnap.data().ids || []) : null;
 
   if (existingIds === null) {
-    // First-time seed for this chapter — fall back to full query so we don't
-    // miss any orphaned docs that were written before the index existed.
+    // First-time seed — fall back to full query to catch orphaned docs.
     const snap = await getDocsFromServer(
       query(collRef, where('topicId', '==', chapter.topicId))
     );
@@ -169,6 +170,20 @@ export const seedChapterQuestions = async (chapter) => {
   // session from running ensureQuestionIndexFresh's full questions scan
   // (~1 read per question in the whole bank).
   const seedVersion = Date.now();
+
+  // Write the topic-level index so future re-seeds can use the fast path.
+  // This is the doc we read at the top: question_topic_index/{topicId}.
+  const newTopicIds = (indexAdded[chapter.chapterId] || []);
+  try {
+    await setDoc(doc(db, 'question_topic_index', chapter.topicId), {
+      ids: newTopicIds,
+      chapterId: chapter.chapterId,
+      updatedAt: serverTimestamp(),
+    });
+  } catch (err) {
+    console.warn('question_topic_index write failed (non-fatal):', err?.code || err);
+  }
+
   try {
     await applySeedToIndexes({ added: indexAdded, removed: indexRemoved, version: seedVersion });
   } catch (err) {
