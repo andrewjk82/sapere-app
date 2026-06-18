@@ -704,11 +704,14 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
   <!-- Exam Cover Page -->
   <div class="cover-page">
     <div class="cover-top">
-      <div class="cover-logo-text">Sapere Academy</div>
+      <div class="cover-logo-text" style="line-height: 1.2;">
+        <span style="font-size: 1.4rem; font-weight: 900; display: block;">Sapere Aude</span>
+        <span style="font-size: 0.95rem; font-weight: 700; color: #64748b; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-top: 2px;">Academia</span>
+      </div>
       <div class="cover-metadata">
         <div>${year || 'Mathematics'}</div>
-        <div>Chapter: ${chapterTitle || ''}</div>
-        <div>Topic: ${topicTitle || 'All Topics'}</div>
+        <div>${(chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</div>
+        <div>${topicTitle || ''}</div>
       </div>
     </div>
 
