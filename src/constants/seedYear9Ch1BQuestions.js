@@ -2732,7 +2732,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A high-speed rail network calculates vibration damping coefficients. (Analysis #100) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "question": "A high-speed rail network calculates vibration damping coefficients. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
       "a": "\\(-6.5 b^3 a^2 c^4\\)",
       "opts": [
           "\\(12 a^2 b^4 c^3\\)",
@@ -2760,7 +2760,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #101) models energy dissipation as \\(E = 2.6a^2b -3.8ab^2 +3.9a^2b -3.4ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A concrete curing lab monitors thermal expansion indexes. This analysis models energy dissipation as \\(E = 2.6a^2b -3.8ab^2 +3.9a^2b -3.4ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(6.5a^2b -7.2ab^2\\)",
       "opts": [
           "\\(6.5a^2b -7.2ab^2\\)",
@@ -2788,7 +2788,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #102) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -2816,7 +2816,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A rocket propulsion test cell evaluates thrust components in three spatial axes. (Analysis #103) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A rocket propulsion test cell evaluates thrust components in three spatial axes. This analysis monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{10x -7}{12}\\)",
       "opts": [
           "\\(\\frac{10x - -7}{12}\\)",
@@ -2844,7 +2844,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #104) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
       "a": "\\(-6.5 b^3 a^2 c^4\\)",
       "opts": [
           "\\(12 a^2 b^4 c^3\\)",
@@ -2872,7 +2872,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #105) models energy dissipation as \\(E = 3.3a^2b -3.1ab^2 +4.1a^2b -3.6ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A water purification plant measures filter efficiency across multiple stages. This analysis models energy dissipation as \\(E = 3.3a^2b -3.1ab^2 +4.1a^2b -3.6ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(7.4a^2b -6.7ab^2\\)",
       "opts": [
           "\\(7.4a^2b - (0.5)ab^2\\)",
@@ -2900,7 +2900,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #106) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -2928,7 +2928,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #107) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{14x -14}{15}\\)",
       "opts": [
           "\\(\\frac{14x - -14}{15}\\)",
@@ -2956,7 +2956,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #108) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
       "a": "\\(-6.5 n^2 m^{1.5} p\\)",
       "opts": [
           "\\(12 m^{1.5} n^2 p^2\\)",
@@ -2984,7 +2984,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A retail supply chain optimizes inventory holding costs across warehouses. (Analysis #109) models energy dissipation as \\(E = 4.9a^2b -2.5ab^2 +6.9a^2b -4.3ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A retail supply chain optimizes inventory holding costs across warehouses. This analysis models energy dissipation as \\(E = 4.9a^2b -2.5ab^2 +6.9a^2b -4.3ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(11.8a^2b -6.8ab^2\\)",
       "opts": [
           "\\(5.000000000000001a^3b^3\\)",
@@ -3012,7 +3012,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #110) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -3040,7 +3040,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. (Analysis #111) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. This analysis monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{10x -7}{12}\\)",
       "opts": [
           "\\(\\frac{10x - -7}{12}\\)",
@@ -3068,7 +3068,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #112) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
       "a": "\\(-6.5 n^2 m^{1.5} p\\)",
       "opts": [
           "\\(12 m^{1.5} n^2 p^2\\)",
@@ -3096,7 +3096,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #113) models energy dissipation as \\(E = 2.0a^2b -2.1ab^2 +4.4a^2b -4.4ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A water purification plant measures filter efficiency across multiple stages. This analysis models energy dissipation as \\(E = 2.0a^2b -2.1ab^2 +4.4a^2b -4.4ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(6.4a^2b -6.5ab^2\\)",
       "opts": [
           "\\(-0.09999999999999964a^3b^3\\)",
@@ -3124,7 +3124,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #114) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -3152,7 +3152,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A high-speed rail network calculates vibration damping coefficients. (Analysis #115) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A high-speed rail network calculates vibration damping coefficients. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{14x -14}{15}\\)",
       "opts": [
           "\\(\\frac{14x - -14}{15}\\)",
@@ -3180,7 +3180,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #116) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
       "a": "\\(-6.5 b^3 a^2 c^4\\)",
       "opts": [
           "\\(12 a^2 b^4 c^3\\)",
@@ -3208,7 +3208,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #117) models energy dissipation as \\(E = 4.9a^2b -2.3ab^2 +4.3a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. This analysis models energy dissipation as \\(E = 4.9a^2b -2.3ab^2 +4.3a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(9.2a^2b -5.8ab^2\\)",
       "opts": [
           "\\(3.3999999999999995a^3b^3\\)",
@@ -3236,7 +3236,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. (Analysis #118) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -3264,7 +3264,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A solar power array calculates power generation across multiple panels. (Analysis #119) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A solar power array calculates power generation across multiple panels. This analysis monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{14x +5}{12}\\)",
       "opts": [
           "\\(\\frac{14x +5}{12}\\)",
@@ -3292,7 +3292,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. (Analysis #120) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
       "a": "\\(-6.5 b^3 a^2 c^4\\)",
       "opts": [
           "\\(12 a^2 b^4 c^3\\)",
@@ -3320,7 +3320,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #121) models energy dissipation as \\(E = 4.4a^2b -2.9ab^2 +6.0a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A chemical blending reactor processes a mixture of four active reagents. This analysis models energy dissipation as \\(E = 4.4a^2b -2.9ab^2 +6.0a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(10.4a^2b -7.1ab^2\\)",
       "opts": [
           "\\(3.3000000000000007a^3b^3\\)",
@@ -3348,7 +3348,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #122) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A logistics shipping port optimizes container stacking throughput. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -3376,7 +3376,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A retail supply chain optimizes inventory holding costs across warehouses. (Analysis #123) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
+      "question": "A retail supply chain optimizes inventory holding costs across warehouses. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{29x -1}{15}\\)",
       "opts": [
           "\\(\\frac{7x -1}{8}\\)",
@@ -3404,7 +3404,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #124) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
       "a": "\\(-6.5 b^3 a^2 c^4\\)",
       "opts": [
           "\\(12 a^2 b^4 c^3\\)",
@@ -3432,7 +3432,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #125) models energy dissipation as \\(E = 1.9a^2b -4.1ab^2 +4.1a^2b -4.4ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 1.9a^2b -4.1ab^2 +4.1a^2b -4.4ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(6.0a^2b -8.5ab^2\\)",
       "opts": [
           "\\(-2.5a^3b^3\\)",
@@ -3460,7 +3460,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #126) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A chemical blending reactor processes a mixture of four active reagents. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -3488,7 +3488,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #127) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A water purification plant measures filter efficiency across multiple stages. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{18x +0}{9}\\)",
       "opts": [
           "\\(\\frac{6x +0}{6}\\)",
@@ -3516,7 +3516,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #128) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
       "a": "\\(-6.5 n^2 m^{1.5} p\\)",
       "opts": [
           "\\(12 m^{1.5} n^2 p^2\\)",
@@ -3544,7 +3544,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A rocket propulsion test cell evaluates thrust components in three spatial axes. (Analysis #129) models energy dissipation as \\(E = 2.0a^2b -1.7ab^2 +3.8a^2b -4.9ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A rocket propulsion test cell evaluates thrust components in three spatial axes. This analysis models energy dissipation as \\(E = 2.0a^2b -1.7ab^2 +3.8a^2b -4.9ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(5.8a^2b -6.6ab^2\\)",
       "opts": [
           "\\(-0.7999999999999998a^3b^3\\)",
@@ -3572,7 +3572,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #130) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A logistics shipping port optimizes container stacking throughput. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -3600,7 +3600,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #131) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A concrete curing lab monitors thermal expansion indexes. This analysis monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{10x -7}{12}\\)",
       "opts": [
           "\\(\\frac{10x - -7}{12}\\)",
@@ -3628,7 +3628,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #132) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 u^{-1} v^2 w^3\\)?",
+      "question": "A logistics shipping port optimizes container stacking throughput. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 u^{-1} v^2 w^3\\)?",
       "a": "\\(-6.5 v^2 w^3 u^{-1}\\)",
       "opts": [
           "\\(-4 v^2 w^3\\)",
@@ -3656,7 +3656,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #133) models energy dissipation as \\(E = 5.8a^2b -3.1ab^2 +5.3a^2b -3.1ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. This analysis models energy dissipation as \\(E = 5.8a^2b -3.1ab^2 +5.3a^2b -3.1ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(11.1a^2b -6.2ab^2\\)",
       "opts": [
           "\\(2.7a^2b +2.2ab^2\\)",
@@ -3684,7 +3684,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. (Analysis #134) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -3712,7 +3712,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #135) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. This analysis monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{14x +5}{12}\\)",
       "opts": [
           "\\(\\frac{14x +5}{12}\\)",
@@ -3740,7 +3740,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #136) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
       "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
       "opts": [
           "\\(-4 r^2 s^{-2}\\)",
@@ -3768,7 +3768,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #137) models energy dissipation as \\(E = 2.9a^2b -2.5ab^2 +7.0a^2b -4.3ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 2.9a^2b -2.5ab^2 +7.0a^2b -4.3ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(9.9a^2b -6.8ab^2\\)",
       "opts": [
           "\\(9.9a^2b -6.8ab^2\\)",
@@ -3796,7 +3796,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #138) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A chemical blending reactor processes a mixture of four active reagents. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -3824,7 +3824,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. (Analysis #139) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{15x -9}{9}\\)",
       "opts": [
           "\\(\\frac{15x -9}{9}\\)",
@@ -3852,7 +3852,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #140) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
       "a": "\\(-6.5 b^3 a^2 c^4\\)",
       "opts": [
           "\\(12 a^2 b^4 c^3\\)",
@@ -3880,7 +3880,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #141) models energy dissipation as \\(E = 3.3a^2b -3.2ab^2 +5.8a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A logistics shipping port optimizes container stacking throughput. This analysis models energy dissipation as \\(E = 3.3a^2b -3.2ab^2 +5.8a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(9.1a^2b -6.7ab^2\\)",
       "opts": [
           "\\(2.3999999999999995a^3b^3\\)",
@@ -3908,7 +3908,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #142) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -3936,7 +3936,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #143) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A concrete curing lab monitors thermal expansion indexes. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{18x +0}{9}\\)",
       "opts": [
           "\\(\\frac{6x +0}{6}\\)",
@@ -3964,7 +3964,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #144) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "question": "A water purification plant measures filter efficiency across multiple stages. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
       "a": "\\(-6.5 b^3 a^2 c^4\\)",
       "opts": [
           "\\(12 a^2 b^4 c^3\\)",
@@ -3992,7 +3992,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. (Analysis #145) models energy dissipation as \\(E = 4.9a^2b -2.3ab^2 +3.7a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. This analysis models energy dissipation as \\(E = 4.9a^2b -2.3ab^2 +3.7a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(8.6a^2b -6.5ab^2\\)",
       "opts": [
           "\\(2.6a^2b -0.5ab^2\\)",
@@ -4020,7 +4020,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #146) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -4048,7 +4048,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. (Analysis #147) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{14x -14}{15}\\)",
       "opts": [
           "\\(\\frac{14x - -14}{15}\\)",
@@ -4076,7 +4076,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #148) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "question": "A chemical blending reactor processes a mixture of four active reagents. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
       "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
       "opts": [
           "\\(-4 r^2 s^{-2}\\)",
@@ -4104,7 +4104,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #149) models energy dissipation as \\(E = 4.8a^2b -3.7ab^2 +6.1a^2b -2.6ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis models energy dissipation as \\(E = 4.8a^2b -3.7ab^2 +6.1a^2b -2.6ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(10.9a^2b -6.3ab^2\\)",
       "opts": [
           "\\(10.9a^2b - (1.1)ab^2\\)",
@@ -4132,7 +4132,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #150) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -4160,7 +4160,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A retail supply chain optimizes inventory holding costs across warehouses. (Analysis #151) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A retail supply chain optimizes inventory holding costs across warehouses. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{14x -14}{15}\\)",
       "opts": [
           "\\(\\frac{14x - -14}{15}\\)",
@@ -4188,7 +4188,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #152) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
       "a": "\\(-6.5 n^2 m^{1.5} p\\)",
       "opts": [
           "\\(12 m^{1.5} n^2 p^2\\)",
@@ -4216,7 +4216,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. (Analysis #153) models energy dissipation as \\(E = 5.2a^2b -1.9ab^2 +2.8a^2b -3.4ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. This analysis models energy dissipation as \\(E = 5.2a^2b -1.9ab^2 +2.8a^2b -3.4ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(8.0a^2b -5.3ab^2\\)",
       "opts": [
           "\\(8.0a^2b -5.3ab^2\\)",
@@ -4244,7 +4244,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #154) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -4272,7 +4272,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A retail supply chain optimizes inventory holding costs across warehouses. (Analysis #155) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A retail supply chain optimizes inventory holding costs across warehouses. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{15x -9}{9}\\)",
       "opts": [
           "\\(\\frac{15x -9}{9}\\)",
@@ -4300,7 +4300,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A cryptocurrency arbitrage bot monitors value changes across multiple exchange pools. (Analysis #156) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "question": "A cryptocurrency arbitrage bot monitors value changes across multiple exchange pools. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
       "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
       "opts": [
           "\\(-4 r^2 s^{-2}\\)",
@@ -4328,7 +4328,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #157) models energy dissipation as \\(E = 3.8a^2b -1.6ab^2 +3.0a^2b -5.5ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 3.8a^2b -1.6ab^2 +3.0a^2b -5.5ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(6.8a^2b -7.1ab^2\\)",
       "opts": [
           "\\(-0.2999999999999998a^3b^3\\)",
@@ -4356,7 +4356,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #158) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -4384,7 +4384,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #159) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{18x +0}{9}\\)",
       "opts": [
           "\\(\\frac{6x +0}{6}\\)",
@@ -4412,7 +4412,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #160) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "question": "A logistics shipping port optimizes container stacking throughput. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
       "a": "\\(-6.5 b^3 a^2 c^4\\)",
       "opts": [
           "\\(12 a^2 b^4 c^3\\)",
@@ -4440,7 +4440,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A solar power array calculates power generation across multiple panels. (Analysis #161) models energy dissipation as \\(E = 5.1a^2b -2.7ab^2 +5.8a^2b -2.8ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A solar power array calculates power generation across multiple panels. This analysis models energy dissipation as \\(E = 5.1a^2b -2.7ab^2 +5.8a^2b -2.8ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(10.9a^2b -5.5ab^2\\)",
       "opts": [
           "\\(10.9a^2b - (0.1)ab^2\\)",
@@ -4468,7 +4468,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #162) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -4496,7 +4496,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #163) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{14x -14}{15}\\)",
       "opts": [
           "\\(\\frac{14x - -14}{15}\\)",
@@ -4524,7 +4524,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #164) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "question": "A concrete curing lab monitors thermal expansion indexes. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
       "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
       "opts": [
           "\\(-4 r^2 s^{-2}\\)",
@@ -4552,7 +4552,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A rocket propulsion test cell evaluates thrust components in three spatial axes. (Analysis #165) models energy dissipation as \\(E = 6.0a^2b -3.0ab^2 +3.1a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A rocket propulsion test cell evaluates thrust components in three spatial axes. This analysis models energy dissipation as \\(E = 6.0a^2b -3.0ab^2 +3.1a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(9.1a^2b -6.5ab^2\\)",
       "opts": [
           "\\(9.1a^2b - (0.5)ab^2\\)",
@@ -4580,7 +4580,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #166) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -4608,7 +4608,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #167) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A logistics shipping port optimizes container stacking throughput. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{14x -14}{15}\\)",
       "opts": [
           "\\(\\frac{14x - -14}{15}\\)",
@@ -4636,7 +4636,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #168) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
       "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
       "opts": [
           "\\(-4 r^2 s^{-2}\\)",
@@ -4664,7 +4664,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #169) models energy dissipation as \\(E = 5.0a^2b -4.2ab^2 +5.9a^2b -5.3ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 5.0a^2b -4.2ab^2 +5.9a^2b -5.3ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(10.9a^2b -9.5ab^2\\)",
       "opts": [
           "\\(0.8a^2b +0.6ab^2\\)",
@@ -4692,7 +4692,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #170) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A logistics shipping port optimizes container stacking throughput. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -4720,7 +4720,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. (Analysis #171) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. This analysis monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{10x -7}{12}\\)",
       "opts": [
           "\\(\\frac{10x - -7}{12}\\)",
@@ -4748,7 +4748,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A solar power array calculates power generation across multiple panels. (Analysis #172) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "question": "A solar power array calculates power generation across multiple panels. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
       "a": "\\(-6.5 n^2 m^{1.5} p\\)",
       "opts": [
           "\\(12 m^{1.5} n^2 p^2\\)",
@@ -4776,7 +4776,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #173) models energy dissipation as \\(E = 2.7a^2b -3.3ab^2 +3.7a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A chemical blending reactor processes a mixture of four active reagents. This analysis models energy dissipation as \\(E = 2.7a^2b -3.3ab^2 +3.7a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(6.4a^2b -8.1ab^2\\)",
       "opts": [
           "\\(-1.6999999999999993a^3b^3\\)",
@@ -4804,7 +4804,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #174) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -4832,7 +4832,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #175) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{15x -9}{9}\\)",
       "opts": [
           "\\(\\frac{15x -9}{9}\\)",
@@ -4860,7 +4860,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. (Analysis #176) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
       "a": "\\(-6.5 n^2 m^{1.5} p\\)",
       "opts": [
           "\\(12 m^{1.5} n^2 p^2\\)",
@@ -4888,7 +4888,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "An autonomous agricultural drone evaluates weed density across three fields. (Analysis #177) models energy dissipation as \\(E = 5.3a^2b -3.9ab^2 +6.4a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "An autonomous agricultural drone evaluates weed density across three fields. This analysis models energy dissipation as \\(E = 5.3a^2b -3.9ab^2 +6.4a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(11.7a^2b -8.7ab^2\\)",
       "opts": [
           "\\(11.7a^2b -8.7ab^2\\)",
@@ -4916,7 +4916,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #178) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A concrete curing lab monitors thermal expansion indexes. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -4944,7 +4944,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #179) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{30x +0}{25}\\)",
       "opts": [
           "\\(\\frac{30x - 0}{25}\\)",
@@ -4972,7 +4972,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #180) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 u^{-1} v^2 w^3\\)?",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 u^{-1} v^2 w^3\\)?",
       "a": "\\(-6.5 v^2 w^3 u^{-1}\\)",
       "opts": [
           "\\(-4 v^2 w^3\\)",
@@ -5000,7 +5000,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #181) models energy dissipation as \\(E = 3.8a^2b -3.6ab^2 +3.4a^2b -5.4ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A chemical blending reactor processes a mixture of four active reagents. This analysis models energy dissipation as \\(E = 3.8a^2b -3.6ab^2 +3.4a^2b -5.4ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(7.2a^2b -9.0ab^2\\)",
       "opts": [
           "\\(0.2a^2b -2.0ab^2\\)",
@@ -5028,7 +5028,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. (Analysis #182) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -5056,7 +5056,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #183) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A chemical blending reactor processes a mixture of four active reagents. This analysis monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{10x -7}{12}\\)",
       "opts": [
           "\\(\\frac{10x - -7}{12}\\)",
@@ -5084,7 +5084,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #184) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 x^3 y^2 z\\)?",
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 x^3 y^2 z\\)?",
       "a": "\\(-6.5 y^2 x^3 z\\)",
       "opts": [
           "\\(18 x^2 y^3 z\\)",
@@ -5112,7 +5112,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #185) models energy dissipation as \\(E = 3.9a^2b -3.3ab^2 +3.0a^2b -3.3ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 3.9a^2b -3.3ab^2 +3.0a^2b -3.3ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(6.9a^2b -6.6ab^2\\)",
       "opts": [
           "\\(0.6a^2b -0.3ab^2\\)",
@@ -5140,7 +5140,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #186) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -5168,7 +5168,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #187) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{22x +7}{20}\\)",
       "opts": [
           "\\(\\frac{5x +1}{9}\\)",
@@ -5196,7 +5196,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #188) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
       "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
       "opts": [
           "\\(-4 r^2 s^{-2}\\)",
@@ -5224,7 +5224,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A solar power array calculates power generation across multiple panels. (Analysis #189) models energy dissipation as \\(E = 4.1a^2b -3.0ab^2 +7.1a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A solar power array calculates power generation across multiple panels. This analysis models energy dissipation as \\(E = 4.1a^2b -3.0ab^2 +7.1a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(11.2a^2b -7.2ab^2\\)",
       "opts": [
           "\\(1.1a^2b +2.9ab^2\\)",
@@ -5252,7 +5252,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #190) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A concrete curing lab monitors thermal expansion indexes. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -5280,7 +5280,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #191) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A chemical blending reactor processes a mixture of four active reagents. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{19x +1}{15}\\)",
       "opts": [
           "\\(\\frac{5x +1}{8}\\)",
@@ -5308,7 +5308,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #192) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 x^3 y^2 z\\)?",
+      "question": "A logistics shipping port optimizes container stacking throughput. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 x^3 y^2 z\\)?",
       "a": "\\(-6.5 y^2 x^3 z\\)",
       "opts": [
           "\\(18 x^2 y^3 z\\)",
@@ -5336,7 +5336,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #193) models energy dissipation as \\(E = 4.6a^2b -4.1ab^2 +7.2a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. This analysis models energy dissipation as \\(E = 4.6a^2b -4.1ab^2 +7.2a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(11.8a^2b -8.9ab^2\\)",
       "opts": [
           "\\(11.8a^2b - (0.7)ab^2\\)",
@@ -5364,7 +5364,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #194) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A wildlife conservation reserve tracks population models of three species. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -5392,7 +5392,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #195) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{15x -9}{9}\\)",
       "opts": [
           "\\(\\frac{15x -9}{9}\\)",
@@ -5420,7 +5420,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #196) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 x^3 y^2 z\\)?",
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. This analysis requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 x^3 y^2 z\\)?",
       "a": "\\(-6.5 y^2 x^3 z\\)",
       "opts": [
           "\\(18 x^2 y^3 z\\)",
@@ -5448,7 +5448,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #197) models energy dissipation as \\(E = 2.9a^2b -3.5ab^2 +4.4a^2b -3.2ab^2\\). Simplify this expression by collecting like terms.",
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis models energy dissipation as \\(E = 2.9a^2b -3.5ab^2 +4.4a^2b -3.2ab^2\\). Simplify this expression by collecting like terms.",
       "a": "\\(7.3a^2b -6.7ab^2\\)",
       "opts": [
           "\\(7.3a^2b - (0.3)ab^2\\)",
@@ -5476,7 +5476,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #198) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "question": "A water purification plant measures filter efficiency across multiple stages. This analysis defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
       "a": "\\(11.5x -2.0y +2.5\\)",
       "opts": [
           "\\(11.5x -2.0y +2.5\\)",
@@ -5504,7 +5504,7 @@ export const Y9_CH1B_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. (Analysis #199) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
       "a": "\\(\\frac{18x +0}{9}\\)",
       "opts": [
           "\\(\\frac{6x +0}{6}\\)",
