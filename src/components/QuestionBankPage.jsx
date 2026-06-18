@@ -52,6 +52,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const [showPdfModal, setShowPdfModal] = useState(false);
   const [pdfCount, setPdfCount] = useState(10);
   const [pdfWithAnswers, setPdfWithAnswers] = useState(true);
+  const [pdfReadingTime, setPdfReadingTime] = useState(5);
+  const [pdfWorkingTime, setPdfWorkingTime] = useState(60);
 
   const handleSyncAll = async () => {
     if (!import.meta.env.DEV) {
