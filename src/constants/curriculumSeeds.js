@@ -1,4 +1,5 @@
 import { Y9_CH1_QUESTIONS } from './seedYear9Ch1Questions.js';
+import { Y9_CH1B_QUESTIONS } from './seedYear9Ch1BQuestions.js';
 // Auto-extracted from Curriculum.jsx — heavy admin-only seed data + registry.
 // Dynamically imported only when an admin opens the seeding tools, so the
 // Curriculum route chunk stays small for students.
@@ -273,6 +274,16 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 9',
     seed: Y9_CH1_QUESTIONS,
     label: 'Y9 Ch1 · 1A Substitution',
+  },
+  {
+    chapterId: 'y9-1',
+    chapterTitle: 'Chapter 1: Algebra',
+    topicId: 'y9-1b',
+    topicCode: '1B',
+    topicTitle: 'Like terms',
+    year: 'Year 9',
+    seed: Y9_CH1B_QUESTIONS,
+    label: 'Y9 Ch1 · 1B Like terms',
   },
   {
     chapterId: 'y11a-6',
