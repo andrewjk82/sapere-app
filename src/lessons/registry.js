@@ -2198,6 +2198,11 @@ export const buildRatioProblemsLesson = ({ audioBase = null } = {}) => {
       speech: `Ratio problems are best solved using the language of parts. Every ratio tells you how many equal parts each group gets. If the ratio is 3 to 5, there are 3 plus 5 equals 8 parts in total. Once you know what one part equals, you can find any quantity.`,
       audioUrl: audio(0),
       board: [
+        { type: 'ratioPartsCount',
+          a: 3, b: 5,
+          colorA: PRP, colorB: BLU,
+          note: 'Each block = 1 equal part',
+        },
         { type: 'stepCards', cards: [
           { title: 'Add the ratio', math: `$$a + b = \\text{total parts}$$`, color: PRP, delay: 0.0 },
           { title: 'Find 1 part', math: `$$\\frac{\\text{known quantity}}{\\text{total parts}}$$`, color: GRN, delay: 0.45 },

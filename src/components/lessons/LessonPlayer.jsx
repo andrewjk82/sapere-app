@@ -1644,6 +1644,113 @@ const RatioSimplifySteps = ({
   );
 };
 
+// ── Ratio Parts Count ──────────────────────────────────────────────────────
+// Child-friendly animation: shows "3 : 5 → 3 + 5 = 8 parts"
+// Blocks pop in one-by-one, then the total bounces in with a highlight.
+const RatioPartsCount = ({
+  a = 3, b = 5,
+  labelA = '', labelB = '',
+  colorA = '#7c3aed', colorB = '#3b82f6',
+  note = '',
+}) => {
+  const total = a + b;
+  const BLOCK = 42;
+
+  return (
+    <div style={{ fontFamily: FONT, display: 'flex', flexDirection: 'column', gap: 22, alignItems: 'center', width: '100%' }}>
+
+      {/* Step 1 — ratio notation */}
+      <motion.div
+        initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1, type: 'spring', stiffness: 260, damping: 22 }}
+        style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+          <div style={{ fontSize: '2.6rem', fontWeight: 900, color: colorA, lineHeight: 1 }}>{a}</div>
+          {labelA && <div style={{ fontSize: '0.72rem', fontWeight: 700, color: colorA, opacity: 0.8 }}>{labelA}</div>}
+        </div>
+        <div style={{ fontSize: '2rem', fontWeight: 300, color: '#c4b5fd', lineHeight: 1 }}>:</div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+          <div style={{ fontSize: '2.6rem', fontWeight: 900, color: colorB, lineHeight: 1 }}>{b}</div>
+          {labelB && <div style={{ fontSize: '0.72rem', fontWeight: 700, color: colorB, opacity: 0.8 }}>{labelB}</div>}
+        </div>
+      </motion.div>
+
+      {/* Step 2 — blocks pop in, grouped by a then b */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', justifyContent: 'center' }}>
+        {Array.from({ length: a }, (_, i) => (
+          <motion.div key={`a${i}`}
+            initial={{ opacity: 0, scale: 0, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.4 + i * 0.12, type: 'spring', stiffness: 500, damping: 18 }}
+            style={{
+              width: BLOCK, height: BLOCK, borderRadius: 10, background: colorA,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              color: '#fff', fontWeight: 900, fontSize: '1rem',
+              boxShadow: `0 4px 14px ${colorA}55`,
+            }}>
+            {i + 1}
+          </motion.div>
+        ))}
+
+        {/* plus sign */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4 + a * 0.12 + 0.1, type: 'spring', stiffness: 400 }}
+          style={{ fontSize: '1.8rem', fontWeight: 900, color: '#9ca3af', margin: '0 4px' }}>
+          +
+        </motion.div>
+
+        {Array.from({ length: b }, (_, i) => (
+          <motion.div key={`b${i}`}
+            initial={{ opacity: 0, scale: 0, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.55 + a * 0.12 + i * 0.12, type: 'spring', stiffness: 500, damping: 18 }}
+            style={{
+              width: BLOCK, height: BLOCK, borderRadius: 10, background: colorB,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              color: '#fff', fontWeight: 900, fontSize: '1rem',
+              boxShadow: `0 4px 14px ${colorB}55`,
+            }}>
+            {a + i + 1}
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Step 3 — total bounces in */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5, y: 10 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ delay: 0.6 + (a + b) * 0.12, type: 'spring', stiffness: 340, damping: 16 }}
+        style={{
+          display: 'flex', alignItems: 'center', gap: 14,
+          background: 'linear-gradient(135deg, #f5f0ff, #ede9fe)',
+          border: '2px solid #c4b5fd',
+          borderRadius: 20, padding: '14px 28px',
+          boxShadow: '0 8px 28px rgba(124,58,237,0.18)',
+        }}>
+        <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#7c3aed' }}>
+          {a} <span style={{ color: '#9ca3af' }}>+</span> {b} <span style={{ color: '#9ca3af', margin: '0 4px' }}>=</span>
+        </div>
+        <motion.div
+          animate={{ scale: [1, 1.18, 1] }}
+          transition={{ delay: 0.75 + (a + b) * 0.12, duration: 0.45, ease: 'easeOut' }}
+          style={{ fontSize: '2.2rem', fontWeight: 900, color: '#7c3aed', lineHeight: 1 }}>
+          {total}
+        </motion.div>
+        <div style={{ fontSize: '1rem', fontWeight: 800, color: '#5b21b6' }}>parts total</div>
+      </motion.div>
+
+      {note && (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 + (a + b) * 0.12 }}
+          style={{ fontSize: '0.8rem', fontWeight: 700, color: '#9ca3af', textAlign: 'center' }}>
+          {note}
+        </motion.div>
+      )}
+    </div>
+  );
+};
+
 // ── Ratio Unitary Method Chain ─────────────────────────────────────────────
 // Animates the 4-step "language of parts" method:
 //   ratio bar → total parts → 1 part value → target quantity
@@ -1867,6 +1974,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'ratioSimplifier') inner = <RatioSimplifier {...item} />;
   else if (item.type === 'ratioFractionVisual') inner = <RatioFractionVisual {...item} />;
   else if (item.type === 'ratioUnitaryChain') inner = <RatioUnitaryChain {...item} />;
+  else if (item.type === 'ratioPartsCount') inner = <RatioPartsCount {...item} />;
   else if (item.type === 'ratioSimplifySteps') inner = <RatioSimplifySteps {...item} />;
   else if (item.type === 'percentGridRow') inner = <PercentGridRow {...item} />;
   else if (item.type === 'percentTableInteractive') inner = <PercentTableInteractive {...item} />;
