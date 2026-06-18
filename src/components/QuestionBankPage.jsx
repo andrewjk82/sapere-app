@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud
+  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown
 } from 'lucide-react';
+import { exportQuestionsPdf } from '../utils/exportPdf';
 import { db } from '../firebase/config';
 import { collection, query, where, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import MathView from './MathView';
@@ -48,6 +49,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const qbMathRef = useRef(null);
   const [creatingNew, setCreatingNew] = useState(false);
   const [isSyncingAll, setIsSyncingAll] = useState(false);
+  const [showPdfMenu, setShowPdfMenu] = useState(false);
+  const pdfMenuRef = useRef(null);
 
   const handleSyncAll = async () => {
     if (!import.meta.env.DEV) {
@@ -69,6 +72,66 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
       showToast('Failed to sync: ' + e.message, 'error');
     } finally {
       setIsSyncingAll(false);
+    }
+  };
+
+  // Close PDF menu on outside click
+  useEffect(() => {
+    if (!showPdfMenu) return;
+    const handleClick = (e) => {
+      if (pdfMenuRef.current && !pdfMenuRef.current.contains(e.target)) {
+        setShowPdfMenu(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [showPdfMenu]);
+
+  const handleExportPdf = (withAnswers) => {
+    setShowPdfMenu(false);
+    const allQuestions = questionIds.map(id => loadedQuestions[id]).filter(Boolean);
+
+    // If not all questions are loaded yet, load them first
+    const unloadedIds = questionIds.filter(id => !loadedQuestions[id]);
+    if (unloadedIds.length > 0) {
+      showToast('Loading all questions before export...', 'info');
+      // Fetch all unloaded questions
+      const fetchAll = async () => {
+        try {
+          const chunks = [];
+          for (let i = 0; i < unloadedIds.length; i += 30) {
+            chunks.push(unloadedIds.slice(i, i + 30));
+          }
+          const snaps = await Promise.all(
+            chunks.map(chunk => getDocs(query(collection(db, 'questions'), where('__name__', 'in', chunk))))
+          );
+          const fetched = {};
+          snaps.forEach(snap => {
+            snap.docs.forEach(d => {
+              fetched[d.id] = { id: d.id, ...d.data() };
+            });
+          });
+          setLoadedQuestions(prev => {
+            const merged = { ...prev, ...fetched };
+            // Now export with all questions
+            const fullList = questionIds.map(id => merged[id]).filter(Boolean);
+            exportQuestionsPdf(fullList, {
+              chapterTitle: chapter.title,
+              topicTitle: topic?.title || 'All Topics',
+            }, { showAnswers: withAnswers });
+            return merged;
+          });
+        } catch (err) {
+          console.error('Failed to load all questions for PDF:', err);
+          showToast('Failed to load questions for PDF export', 'error');
+        }
+      };
+      fetchAll();
+    } else {
+      exportQuestionsPdf(allQuestions, {
+        chapterTitle: chapter.title,
+        topicTitle: topic?.title || 'All Topics',
+      }, { showAnswers: withAnswers });
     }
   };
 
@@ -303,7 +366,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             </div>
             <div style={{ fontSize: '1rem', fontWeight: 900, color: '#1e1b4b' }}>{topic?.title || 'All topics'}</div>
           </div>
-          <div style={{ display: 'flex', gap: '8px' }}>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
             <button
               onClick={handleSyncAll}
               disabled={isSyncingAll}
@@ -311,6 +374,43 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             >
               <DownloadCloud size={16} /> {isSyncingAll ? 'Syncing...' : 'Sync DB to Seeds'}
             </button>
+            {/* PDF Export dropdown */}
+            <div ref={pdfMenuRef} style={{ position: 'relative' }}>
+              <button
+                onClick={() => setShowPdfMenu(v => !v)}
+                style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e0e7ff', background: showPdfMenu ? '#eef2ff' : '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer', transition: 'all 0.15s ease' }}
+              >
+                <FileDown size={16} /> PDF
+              </button>
+              {showPdfMenu && (
+                <div style={{ position: 'absolute', right: 0, top: 'calc(100% + 6px)', background: '#fff', borderRadius: '14px', boxShadow: '0 12px 36px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04)', padding: '6px', zIndex: 50, minWidth: '200px', animation: 'fadeIn 0.15s ease' }}>
+                  <button
+                    onClick={() => handleExportPdf(true)}
+                    style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', padding: '10px 14px', borderRadius: '10px', border: 'none', background: 'transparent', color: '#1e1b4b', fontWeight: 700, fontSize: '0.85rem', cursor: 'pointer', textAlign: 'left' }}
+                    onMouseEnter={e => e.currentTarget.style.background = '#f1f5f9'}
+                    onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+                  >
+                    <span style={{ fontSize: '1.1rem' }}>📝</span>
+                    <div>
+                      <div>With Answers</div>
+                      <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 600 }}>Includes solutions & steps</div>
+                    </div>
+                  </button>
+                  <button
+                    onClick={() => handleExportPdf(false)}
+                    style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', padding: '10px 14px', borderRadius: '10px', border: 'none', background: 'transparent', color: '#1e1b4b', fontWeight: 700, fontSize: '0.85rem', cursor: 'pointer', textAlign: 'left' }}
+                    onMouseEnter={e => e.currentTarget.style.background = '#f1f5f9'}
+                    onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+                  >
+                    <span style={{ fontSize: '1.1rem' }}>📄</span>
+                    <div>
+                      <div>Student Version</div>
+                      <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 600 }}>Questions only, no answers</div>
+                    </div>
+                  </button>
+                </div>
+              )}
+            </div>
             <button
               onClick={() => setCreatingNew(true)}
               style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: 'none', background: '#6366f1', color: '#fff', fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 12px rgba(99,102,241,0.22)' }}
