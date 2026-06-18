@@ -611,10 +611,8 @@ const genMissingAddend = () => {
 const genTrueFalseAddition = () => {
   const a = randomInt(1, 10);
   const b = randomInt(1, 10);
-  const trueAnswer = a + b;
-  const shown = Math.random() > 0.5 ? trueAnswer : clamp(trueAnswer + pick([-2, -1, 1, 2]), 0, 20);
-  const answer = shown === trueAnswer ? 'True' : 'False';
-  return q('true_false_addition', `True or false: ${a} + ${b} = ${shown}`, ['True', 'False'], answer, `${a} + ${b} = ${trueAnswer}, so the statement is ${answer.toLowerCase()}.`, 20);
+  const answer = a + b;
+  return q('true_false_addition', `What is ${a} + ${b}?`, getUniqueOptions(answer, [answer - 1, answer + 1, answer + 2], 0, 20), answer, `${a} + ${b} = ${answer}.`, 20);
 };
 
 const genMake10 = () => {
@@ -676,9 +674,17 @@ const genTwoStep = () => {
 };
 
 const genOddEven = (difficulty) => {
-  const num = randomInt(1, maxByDifficulty(difficulty, 20, 50, 100));
-  const answer = num % 2 === 0 ? 'Even' : 'Odd';
-  return q('odd_even', `Is ${num} odd or even?`, ['Odd', 'Even'], answer, `${num} ${answer === 'Even' ? 'can' : 'cannot'} be paired with none left over.`, 15);
+  const max = maxByDifficulty(difficulty, 20, 50, 100);
+  const askOdd = Math.random() > 0.5;
+  // Build 4 candidates: 1 correct parity, 3 wrong parity
+  const correct = randomInt(1, max);
+  const correctIsOdd = correct % 2 !== 0;
+  const matchesAsk = askOdd ? correctIsOdd : !correctIsOdd;
+  const target = matchesAsk ? correct : (correct % 2 === 0 ? correct + 1 : correct + 1);
+  const wrong = Array.from({ length: 10 }, (_, i) => target + (i % 2 === 0 ? i + 1 : i + 2))
+    .filter(n => n > 0 && n <= max && (n % 2 !== 0) !== askOdd);
+  const opts = getUniqueOptions(target, wrong.slice(0, 3), 1, max + 10);
+  return q('odd_even', `Which of these numbers is ${askOdd ? 'odd' : 'even'}?`, opts, target, `${target} is ${askOdd ? 'odd' : 'even'} because it ${askOdd ? 'cannot' : 'can'} be divided evenly by 2.`, 20);
 };
 
 const genOddEvenSort = () => {
@@ -730,7 +736,13 @@ const genMoneyEnough = () => {
   const total = price + pick([-10, -5, 0, 5, 10]);
   const safeTotal = Math.max(5, total);
   const answer = safeTotal >= price ? 'Yes' : 'No';
-  return q('money_enough', `An item costs ${price}c. You have ${safeTotal}c. Do you have enough?`, ['Yes', 'No'], answer, `${safeTotal}c is ${answer === 'Yes' ? 'at least' : 'less than'} ${price}c.`, 25);
+  const diff = price - safeTotal;
+  const changeback = safeTotal - price;
+  const numAnswer = answer === 'Yes' ? changeback : diff;
+  const numQuestion = answer === 'Yes'
+    ? `An item costs ${price}c and you have ${safeTotal}c. How much change do you get back?`
+    : `An item costs ${price}c but you only have ${safeTotal}c. How many more cents do you need?`;
+  return q('money_enough', numQuestion, getUniqueOptions(Math.abs(numAnswer), [Math.abs(numAnswer) + 5, Math.abs(numAnswer) - 5, price].filter(v => v > 0), 0, 50), Math.abs(numAnswer), answer === 'Yes' ? `${safeTotal}c − ${price}c = ${changeback}c change.` : `${price}c − ${safeTotal}c = ${diff}c more needed.`, 25);
 };
 
 const genMoneyChange = () => {
@@ -802,19 +814,18 @@ const genEqualsBalance = () => {
 const genEqualsTrueFalse = () => {
   const a = randomInt(1, 8);
   const b = randomInt(1, 8);
-  const same = Math.random() > 0.5;
-  const rightA = same ? a : clamp(a + pick([-2, -1, 1, 2]), 0, 10);
-  const answer = a + b === rightA + b ? 'True' : 'False';
-  return q('equals_true_false', `True or false: ${a} + ${b} = ${rightA} + ${b}`, ['True', 'False'], answer, `${a} + ${b} = ${a + b}; ${rightA} + ${b} = ${rightA + b}.`, 25);
+  const answer = a + b;
+  return q('equals_true_false', `What is ${a} + ${b}?`, getUniqueOptions(answer, [answer - 1, answer + 1, answer + 2], 0, 20), answer, `${a} + ${b} = ${answer}.`, 25);
 };
 
 const genSymbolEquals = () => {
   const a = randomInt(1, 8);
   const b = randomInt(1, 8);
-  const same = Math.random() > 0.5;
-  const right = same ? a + b : a + b + pick([-2, -1, 1, 2]);
-  const answer = same ? '=' : 'not equal';
-  return q('equals_symbol', `Which symbol belongs in the box? ${a} + ${b} __ ${right}`, ['=', 'not equal'], answer, `${a} + ${b} = ${a + b}, so the correct symbol is ${answer}.`, 25);
+  const sum = a + b;
+  const mode = pick(['eq', 'lt', 'gt']);
+  const right = mode === 'eq' ? sum : mode === 'lt' ? sum + randomInt(1, 3) : sum - randomInt(1, 3);
+  const answer = sum === right ? '=' : sum < right ? '<' : '>';
+  return q('equals_symbol', `Which symbol belongs in the box?  ${a} + ${b}  ☐  ${right}`, ['=', '<', '>', '≠'], answer, `${a} + ${b} = ${sum}, and ${sum} ${answer} ${right}.`, 25);
 };
 
 const genNumberPattern = () => genSkipCounting('medium');
@@ -823,7 +834,7 @@ const genLength = () => {
   const a = randomInt(3, 12);
   const b = randomInt(3, 12);
   const answer = a > b ? 'pencil' : 'ruler';
-  return q('length_compare', `A pencil is ${a} blocks long. A ruler is ${b} blocks long. Which is longer?`, ['pencil', 'ruler'], answer, `Compare ${a} and ${b}. The larger measurement is longer.`, 25);
+  return q('length_compare', `A pencil is ${a} blocks long. A ruler is ${b} blocks long. Which is longer?`, [answer, answer === 'pencil' ? 'ruler' : 'pencil', 'they are the same length', 'we cannot tell'], answer, `Compare ${a} and ${b}. The larger measurement is longer.`, 25);
 };
 
 const genLengthOrder = () => {
@@ -863,14 +874,14 @@ const genMassCapacity = () => {
   const question = askHeavier
     ? `Which is heavier: ${item.heavy} or ${item.light}?`
     : `Which is lighter: ${item.heavy} or ${item.light}?`;
-  return q('mass_compare', question, [item.heavy, item.light], answer, `${answer} is ${askHeavier ? 'heavier' : 'lighter'}.`, 20);
+  return q('mass_compare', question, [item.heavy, item.light, 'they weigh the same', 'we cannot tell'], answer, `${answer} is ${askHeavier ? 'heavier' : 'lighter'}.`, 20);
 };
 
 const genCapacityCompare = () => {
   const a = randomInt(2, 8);
   const b = randomInt(2, 8);
   const answer = a > b ? 'jug' : 'cup';
-  return q('capacity_compare', `A jug holds ${a} cups. A cup holds ${b} cups. Which holds more?`, ['jug', 'cup'], answer, `Compare ${a} and ${b}; the larger amount holds more.`, 25);
+  return q('capacity_compare', `A jug holds ${a} cups. A cup holds ${b} cups. Which holds more?`, [answer, answer === 'jug' ? 'cup' : 'jug', 'they hold the same', 'we cannot tell'], answer, `Compare ${a} and ${b}; the larger amount holds more.`, 25);
 };
 
 const genTime = () => {
@@ -914,7 +925,10 @@ const genActivityDuration = () => {
   const question = askLonger
     ? `Which usually takes longer: ${item.shorter} or ${item.longer}?`
     : `Which usually takes less time: ${item.longer} or ${item.shorter}?`;
-  return q('activity_duration', question, [item.longer, item.shorter], answer, item.reason, 20);
+  // Pick 2 extra activities from the pool as distractors
+  const others = comparisons.filter(c => c !== item);
+  const extra = shuffle(others).slice(0, 2).map(c => askLonger ? c.longer : c.shorter);
+  return q('activity_duration', question, shuffle([item.longer, item.shorter, ...extra]).slice(0, 4), answer, item.reason, 20);
 };
 
 const genDaysMonths = () => {
@@ -949,7 +963,9 @@ const gen2DShape = () => {
       statement = `A ${shape.name} has ${wrongSides} sides.`;
       explanation = `False — a ${shape.name} has ${shape.sides} sides, not ${wrongSides}.`;
     }
-    return q('shape_2d', `True or false: ${statement}`, ['True', 'False'], isTrue ? 'True' : 'False', explanation, 20);
+    return q('shape_2d', `How many sides does a ${shape.name} have?`,
+      getUniqueOptions(shape.sides, [shape.sides - 1, shape.sides + 1, shape.sides + 2], 2, 10),
+      shape.sides, `A ${shape.name} has ${shape.sides} sides.`, 20);
   }
 
   if (mode === 'ask_name') {
@@ -986,19 +1002,19 @@ const gen2DShape = () => {
 };
 
 const genShapeTrueFalse = () => {
-  const statements = [
-    { text: 'A square has 4 equal sides.', answer: 'True', explanation: 'All 4 sides of a square are equal.' },
-    { text: 'A triangle has 4 sides.', answer: 'False', explanation: 'A triangle has 3 sides, not 4.' },
-    { text: 'A rectangle has 4 corners.', answer: 'True', explanation: 'A rectangle has exactly 4 corners (right angles).' },
-    { text: 'A circle has straight sides.', answer: 'False', explanation: 'A circle has no straight sides — it is a closed curve.' },
-    { text: 'A pentagon has 5 sides.', answer: 'True', explanation: 'A pentagon has exactly 5 sides.' },
-    { text: 'A hexagon has 7 sides.', answer: 'False', explanation: 'A hexagon has 6 sides, not 7.' },
-    { text: 'A square is a type of rectangle.', answer: 'True', explanation: 'A square has 4 right angles and equal sides, so it is a special rectangle.' },
-    { text: 'All rectangles are squares.', answer: 'False', explanation: 'Rectangles do not always have all sides equal, so they are not always squares.' },
-    { text: 'An octagon has 8 sides.', answer: 'True', explanation: 'Octa- means 8; an octagon has 8 sides.' },
+  const facts = [
+    { q: 'How many sides does a square have?', answer: 4, opts: [3, 4, 5, 6], sol: 'A square has 4 equal sides.' },
+    { q: 'How many sides does a triangle have?', answer: 3, opts: [2, 3, 4, 5], sol: 'A triangle has 3 sides.' },
+    { q: 'How many corners does a rectangle have?', answer: 4, opts: [2, 3, 4, 6], sol: 'A rectangle has exactly 4 corners.' },
+    { q: 'How many sides does a pentagon have?', answer: 5, opts: [4, 5, 6, 8], sol: 'A pentagon has exactly 5 sides.' },
+    { q: 'How many sides does a hexagon have?', answer: 6, opts: [5, 6, 7, 8], sol: 'A hexagon has 6 sides.' },
+    { q: 'How many sides does an octagon have?', answer: 8, opts: [6, 7, 8, 10], sol: 'Octa- means 8; an octagon has 8 sides.' },
+    { q: 'Which shape has 4 equal sides and 4 right angles?', answer: 'square', opts: ['square', 'rectangle', 'triangle', 'circle'], sol: 'A square has 4 equal sides and 4 right angles.' },
+    { q: 'Which shape has no straight sides?', answer: 'circle', opts: ['square', 'triangle', 'circle', 'pentagon'], sol: 'A circle is a closed curve — it has no straight sides.' },
   ];
-  const item = pick(statements);
-  return q('shape_true_false', `True or false: ${item.text}`, ['True', 'False'], item.answer, item.explanation, 20);
+  const item = pick(facts);
+  const opts = Array.isArray(item.opts) ? shuffle(item.opts) : getUniqueOptions(item.answer, item.opts, 2, 10);
+  return q('shape_true_false', item.q, opts, item.answer, item.sol, 20);
 };
 
 const genShapeSort = () => {
@@ -1032,18 +1048,18 @@ const gen3DObject = () => {
 };
 
 const gen3DTrueFalse = () => {
-  const statements = [
-    { text: 'A sphere has flat faces.', answer: 'False', explanation: 'A sphere has no flat faces — it is completely curved.' },
-    { text: 'A cube has 6 flat faces.', answer: 'True', explanation: 'A cube has exactly 6 square flat faces.' },
-    { text: 'A cylinder can roll.', answer: 'True', explanation: 'A cylinder has a curved surface so it can roll.' },
-    { text: 'A cone has 2 flat faces.', answer: 'False', explanation: 'A cone has only 1 flat face (the circular base).' },
-    { text: 'A cube has 8 corners (vertices).', answer: 'True', explanation: 'A cube has 8 vertices.' },
-    { text: 'A sphere has edges.', answer: 'False', explanation: 'A sphere has no edges or vertices — it is a smooth curved shape.' },
-    { text: 'A rectangular prism and a cube both have 6 faces.', answer: 'True', explanation: 'Both shapes have 6 faces.' },
-    { text: 'A triangular prism has 4 faces.', answer: 'False', explanation: 'A triangular prism has 5 faces: 2 triangles and 3 rectangles.' },
+  const facts = [
+    { q: 'How many flat faces does a cube have?', answer: 6, opts: [4, 6, 8, 12], sol: 'A cube has exactly 6 square flat faces.' },
+    { q: 'How many flat faces does a cone have?', answer: 1, opts: [1, 2, 3, 4], sol: 'A cone has only 1 flat face — the circular base.' },
+    { q: 'How many corners (vertices) does a cube have?', answer: 8, opts: [4, 6, 8, 12], sol: 'A cube has 8 vertices.' },
+    { q: 'How many faces does a triangular prism have?', answer: 5, opts: [4, 5, 6, 7], sol: 'A triangular prism has 5 faces: 2 triangles and 3 rectangles.' },
+    { q: 'Which 3D shape has NO flat faces?', answer: 'sphere', opts: ['sphere', 'cube', 'cylinder', 'cone'], sol: 'A sphere is completely curved — it has no flat faces.' },
+    { q: 'Which 3D shape can roll AND slide?', answer: 'cylinder', opts: ['cube', 'sphere', 'cylinder', 'cone'], sol: 'A cylinder can roll on its curved surface and slide on its flat faces.' },
+    { q: 'How many faces does a rectangular prism have?', answer: 6, opts: [4, 6, 8, 10], sol: 'A rectangular prism has 6 rectangular faces.' },
+    { q: 'How many edges does a cube have?', answer: 12, opts: [6, 8, 10, 12], sol: 'A cube has 12 edges.' },
   ];
-  const item = pick(statements);
-  return q('shape_3d_true_false', `True or false: ${item.text}`, ['True', 'False'], item.answer, item.explanation, 20);
+  const item = pick(facts);
+  return q('shape_3d_true_false', item.q, shuffle(item.opts), item.answer, item.sol, 20);
 };
 
 const genPositionDirection = () => {
@@ -1234,7 +1250,7 @@ const genLikelyUnlikely = () => {
     { event: 'A classmate has a birthday this year', answer: 'likely' },
   ];
   const item = pick(events);
-  return q('likely_unlikely', `Is this likely or unlikely? ${item.event}.`, ['likely', 'unlikely'], item.answer, `This event is ${item.answer}.`, 25);
+  return q('likely_unlikely', `Is this likely or unlikely? ${item.event}.`, ['likely', 'unlikely', 'certain', 'impossible'], item.answer, `This event is ${item.answer}.`, 25);
 };
 
 const genLikelihoodMatch = () => {
@@ -1249,7 +1265,7 @@ const genLikelihoodMatch = () => {
 const genExperiment = () => {
   const coin = Math.random() > 0.5;
   if (coin) return q('simple_experiment', `Flip a coin. What are the possible outcomes?`, ['heads and tails', '1 and 2', 'red and blue', 'yes only'], 'heads and tails', `A coin can land on heads or tails.`, 25);
-  return q('simple_experiment', `Roll a normal dice. Can you roll a 7?`, ['Yes', 'No'], 'No', `A normal dice has numbers 1 to 6, so 7 is impossible.`, 25);
+  return q('simple_experiment', `Which number is impossible to roll on a normal 6-sided dice?`, ['7', '3', '5', '6'], '7', `A normal dice has numbers 1 to 6, so 7 is impossible.`, 25);
 };
 
 const genDiceImpossible = () => (
@@ -1257,7 +1273,7 @@ const genDiceImpossible = () => (
 );
 
 const genCoinEqualLikely = () => (
-  q('coin_equal_likely', `True or false: heads and tails are equally likely on a fair coin.`, ['True', 'False'], 'True', `A fair coin has two equally likely outcomes: heads and tails.`, 20)
+  q('coin_equal_likely', `What is the probability of getting heads when you flip a fair coin?`, ['1/2', '1/4', '2/3', '1'], '1/2', `A fair coin has two equally likely outcomes, so P(heads) = 1/2.`, 20)
 );
 
 const genCoinPrediction = () => {
@@ -1266,9 +1282,11 @@ const genCoinPrediction = () => {
 };
 
 const genMostLikely = () => {
-  const red = randomInt(2, 5);
-  const blue = randomInt(1, red - 1);
-  return q('most_likely', `A bag has ${red} red balls and ${blue} blue ball${blue === 1 ? '' : 's'}. Which colour are you most likely to pick?`, ['red', 'blue'], 'red', `There are more red balls, so red is more likely.`, 25);
+  const red = randomInt(3, 6);
+  const blue = randomInt(1, red - 2);
+  const green = randomInt(1, blue);
+  const yellow = randomInt(1, green);
+  return q('most_likely', `A bag has ${red} red, ${blue} blue, ${green} green and ${yellow} yellow balls. Which colour are you most likely to pick?`, shuffle(['red', 'blue', 'green', 'yellow']), 'red', `Red has the most balls (${red}), so it is most likely.`, 25);
 };
 
 const genGeneric = (difficulty) => genAddition(difficulty);
@@ -1447,7 +1465,7 @@ const genTemperatureStage = (difficulty) => {
     return q('temperature_difference', `The temperature was ${morning} degrees C in the morning and ${afternoon} degrees C in the afternoon. How many degrees did it rise?`, getUniqueOptions(answer, [answer + 2, answer - 2, afternoon], 0, 40), answer, `${afternoon} - ${morning} = ${answer} degrees C.`, 40);
   }
   const answer = afternoon > morning ? 'afternoon' : 'morning';
-  return q('temperature_compare', `Which was warmer: ${morning} degrees C in the morning or ${afternoon} degrees C in the afternoon?`, ['morning', 'afternoon'], answer, `Compare the temperatures. ${afternoon} degrees C is warmer than ${morning} degrees C.`, 30);
+  return q('temperature_compare', `Which was warmer: ${morning} degrees C in the morning or ${afternoon} degrees C in the afternoon?`, [answer, answer === 'afternoon' ? 'morning' : 'afternoon', 'they were the same', 'we cannot tell'], answer, `Compare the temperatures. ${afternoon} degrees C is warmer than ${morning} degrees C.`, 30);
 };
 
 const genPerimeterArea = (difficulty) => {
@@ -1920,15 +1938,9 @@ const genAngleTypes = (difficulty) => {
       `${inRange}°`, `An ${t.name} angle is ${t.description}. ${inRange}° fits this.`, 30);
   }
   if (mode === 'true_false') {
-    const isCorrect = Math.random() > 0.5;
-    const wrongType = pick(angleTypes.filter(a => a.name !== t.name));
-    const statement = isCorrect
-      ? `${angle}° is an ${t.name} angle.`
-      : `${angle}° is an ${wrongType.name} angle.`;
-    const answer = isCorrect ? 'True' : 'False';
-    return q('angle_types', `True or false: ${statement}`,
-      ['True', 'False'], answer,
-      `${angle}° is ${t.description}, so it is an ${t.name} angle. The statement is ${answer}.`, 25);
+    return q('angle_types', `An angle measures ${angle}°. What type of angle is it?`,
+      wordOptions(t.name, angleTypes.map(a => a.name)),
+      t.name, `${angle}° is ${t.description}, so it is an ${t.name} angle.`, 25);
   }
   return q('angle_types', `An angle measures ${angle}°. What type of angle is it?`,
     wordOptions(t.name, angleTypes.filter(a => a.name !== t.name).map(a => a.name)),
@@ -2095,7 +2107,7 @@ const genPrimeComposite = () => {
   const isPrime = primes.includes(n);
   const answer = isPrime ? 'prime' : 'composite';
   return q('prime_composite', `Is ${n} a prime or composite number?`,
-    ['prime', 'composite'],
+    ['prime', 'composite', 'neither', 'both'],
     answer, isPrime
       ? `${n} is prime — its only factors are 1 and ${n}.`
       : `${n} is composite — it has factors other than 1 and itself (e.g. ${Array.from({length:n-1},(_,i)=>i+2).filter(f=>n%f===0)[0]}).`, 25);
