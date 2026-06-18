@@ -49,8 +49,9 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const qbMathRef = useRef(null);
   const [creatingNew, setCreatingNew] = useState(false);
   const [isSyncingAll, setIsSyncingAll] = useState(false);
-  const [showPdfMenu, setShowPdfMenu] = useState(false);
-  const pdfMenuRef = useRef(null);
+  const [showPdfModal, setShowPdfModal] = useState(false);
+  const [pdfCount, setPdfCount] = useState(10);
+  const [pdfWithAnswers, setPdfWithAnswers] = useState(true);
 
   const handleSyncAll = async () => {
     if (!import.meta.env.DEV) {
@@ -75,27 +76,14 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     }
   };
 
-  // Close PDF menu on outside click
-  useEffect(() => {
-    if (!showPdfMenu) return;
-    const handleClick = (e) => {
-      if (pdfMenuRef.current && !pdfMenuRef.current.contains(e.target)) {
-        setShowPdfMenu(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClick);
-    return () => document.removeEventListener('mousedown', handleClick);
-  }, [showPdfMenu]);
-
-  const handleExportPdf = (withAnswers) => {
-    setShowPdfMenu(false);
+  const handleExportPdf = () => {
+    setShowPdfModal(false);
     const allQuestions = questionIds.map(id => loadedQuestions[id]).filter(Boolean);
 
     // If not all questions are loaded yet, load them first
     const unloadedIds = questionIds.filter(id => !loadedQuestions[id]);
     if (unloadedIds.length > 0) {
       showToast('Loading all questions before export...', 'info');
-      // Fetch all unloaded questions
       const fetchAll = async () => {
         try {
           const chunks = [];
@@ -113,12 +101,12 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
           });
           setLoadedQuestions(prev => {
             const merged = { ...prev, ...fetched };
-            // Now export with all questions
             const fullList = questionIds.map(id => merged[id]).filter(Boolean);
             exportQuestionsPdf(fullList, {
               chapterTitle: chapter.title,
               topicTitle: topic?.title || 'All Topics',
-            }, { showAnswers: withAnswers });
+              year: chapter.year || '',
+            }, { showAnswers: pdfWithAnswers, count: pdfCount });
             return merged;
           });
         } catch (err) {
@@ -131,7 +119,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
       exportQuestionsPdf(allQuestions, {
         chapterTitle: chapter.title,
         topicTitle: topic?.title || 'All Topics',
-      }, { showAnswers: withAnswers });
+        year: chapter.year || '',
+      }, { showAnswers: pdfWithAnswers, count: pdfCount });
     }
   };
 
@@ -374,43 +363,13 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             >
               <DownloadCloud size={16} /> {isSyncingAll ? 'Syncing...' : 'Sync DB to Seeds'}
             </button>
-            {/* PDF Export dropdown */}
-            <div ref={pdfMenuRef} style={{ position: 'relative' }}>
-              <button
-                onClick={() => setShowPdfMenu(v => !v)}
-                style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e0e7ff', background: showPdfMenu ? '#eef2ff' : '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer', transition: 'all 0.15s ease' }}
-              >
-                <FileDown size={16} /> PDF
-              </button>
-              {showPdfMenu && (
-                <div style={{ position: 'absolute', right: 0, top: 'calc(100% + 6px)', background: '#fff', borderRadius: '14px', boxShadow: '0 12px 36px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04)', padding: '6px', zIndex: 50, minWidth: '200px', animation: 'fadeIn 0.15s ease' }}>
-                  <button
-                    onClick={() => handleExportPdf(true)}
-                    style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', padding: '10px 14px', borderRadius: '10px', border: 'none', background: 'transparent', color: '#1e1b4b', fontWeight: 700, fontSize: '0.85rem', cursor: 'pointer', textAlign: 'left' }}
-                    onMouseEnter={e => e.currentTarget.style.background = '#f1f5f9'}
-                    onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
-                  >
-                    <span style={{ fontSize: '1.1rem' }}>📝</span>
-                    <div>
-                      <div>With Answers</div>
-                      <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 600 }}>Includes solutions & steps</div>
-                    </div>
-                  </button>
-                  <button
-                    onClick={() => handleExportPdf(false)}
-                    style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', padding: '10px 14px', borderRadius: '10px', border: 'none', background: 'transparent', color: '#1e1b4b', fontWeight: 700, fontSize: '0.85rem', cursor: 'pointer', textAlign: 'left' }}
-                    onMouseEnter={e => e.currentTarget.style.background = '#f1f5f9'}
-                    onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
-                  >
-                    <span style={{ fontSize: '1.1rem' }}>📄</span>
-                    <div>
-                      <div>Student Version</div>
-                      <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 600 }}>Questions only, no answers</div>
-                    </div>
-                  </button>
-                </div>
-              )}
-            </div>
+            {/* PDF Export button */}
+            <button
+              onClick={() => { setPdfCount(Math.min(10, total)); setShowPdfModal(true); }}
+              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e0e7ff', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer', transition: 'all 0.15s ease' }}
+            >
+              <FileDown size={16} /> PDF
+            </button>
             <button
               onClick={() => setCreatingNew(true)}
               style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: 'none', background: '#6366f1', color: '#fff', fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 12px rgba(99,102,241,0.22)' }}
@@ -793,6 +752,107 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
           </>
         )}
       </div>
+
+
+      {/* PDF Export Modal */}
+      <AnimatePresence>
+        {showPdfModal && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setShowPdfModal(false)}
+            style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.4)', backdropFilter: 'blur(4px)', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              style={{ background: '#fff', borderRadius: '24px', padding: '32px', maxWidth: '420px', width: '100%', boxShadow: '0 25px 60px rgba(0,0,0,0.15)' }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+                <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'linear-gradient(135deg, #6366f1, #7c3aed)', display: 'grid', placeItems: 'center' }}>
+                  <FileDown size={22} color="#fff" />
+                </div>
+                <div>
+                  <div style={{ fontWeight: 900, fontSize: '1.15rem', color: '#1e1b4b' }}>Export PDF</div>
+                  <div style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: 600 }}>Total {total} questions available</div>
+                </div>
+              </div>
+
+              {/* Question count */}
+              <div style={{ marginBottom: '20px' }}>
+                <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '10px' }}>How many questions?</div>
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '12px' }}>
+                  {[5, 10, 15, 20].filter(n => n <= total).map(n => (
+                    <button
+                      key={n}
+                      onClick={() => setPdfCount(n)}
+                      style={{ padding: '10px 18px', borderRadius: '12px', border: pdfCount === n ? '2px solid #6366f1' : '2px solid #e2e8f0', background: pdfCount === n ? '#eef2ff' : '#fff', color: pdfCount === n ? '#4f46e5' : '#475569', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer', transition: 'all 0.15s ease' }}
+                    >
+                      {n}
+                    </button>
+                  ))}
+                  <button
+                    onClick={() => setPdfCount(total)}
+                    style={{ padding: '10px 18px', borderRadius: '12px', border: pdfCount === total ? '2px solid #6366f1' : '2px solid #e2e8f0', background: pdfCount === total ? '#eef2ff' : '#fff', color: pdfCount === total ? '#4f46e5' : '#475569', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer', transition: 'all 0.15s ease' }}
+                  >
+                    All ({total})
+                  </button>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span style={{ fontSize: '0.8rem', color: '#64748b', fontWeight: 700 }}>Custom:</span>
+                  <input
+                    type="number"
+                    min={1}
+                    max={total}
+                    value={pdfCount}
+                    onChange={(e) => setPdfCount(Math.max(1, Math.min(total, Number(e.target.value) || 1)))}
+                    style={{ width: '72px', padding: '8px 12px', borderRadius: '10px', border: '2px solid #e2e8f0', fontWeight: 800, fontSize: '0.95rem', textAlign: 'center', color: '#1e1b4b', outline: 'none' }}
+                  />
+                  <span style={{ fontSize: '0.78rem', color: '#94a3b8', fontWeight: 600 }}>/ {total}</span>
+                </div>
+              </div>
+
+              {/* Answers toggle */}
+              <div style={{ marginBottom: '24px' }}>
+                <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '10px' }}>Include answers?</div>
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <button
+                    onClick={() => setPdfWithAnswers(true)}
+                    style={{ flex: 1, padding: '12px', borderRadius: '12px', border: pdfWithAnswers ? '2px solid #6366f1' : '2px solid #e2e8f0', background: pdfWithAnswers ? '#eef2ff' : '#fff', color: pdfWithAnswers ? '#4f46e5' : '#475569', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer', transition: 'all 0.15s ease' }}
+                  >
+                    📝 With Answers
+                  </button>
+                  <button
+                    onClick={() => setPdfWithAnswers(false)}
+                    style={{ flex: 1, padding: '12px', borderRadius: '12px', border: !pdfWithAnswers ? '2px solid #6366f1' : '2px solid #e2e8f0', background: !pdfWithAnswers ? '#eef2ff' : '#fff', color: !pdfWithAnswers ? '#4f46e5' : '#475569', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer', transition: 'all 0.15s ease' }}
+                  >
+                    📄 Student Version
+                  </button>
+                </div>
+              </div>
+
+              {/* Action buttons */}
+              <div style={{ display: 'flex', gap: '10px' }}>
+                <button
+                  onClick={() => setShowPdfModal(false)}
+                  style={{ flex: 1, padding: '14px', borderRadius: '14px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer' }}
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleExportPdf}
+                  style={{ flex: 2, padding: '14px', borderRadius: '14px', border: 'none', background: 'linear-gradient(135deg, #6366f1, #7c3aed)', color: '#fff', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer', boxShadow: '0 8px 20px rgba(99,102,241,0.3)' }}
+                >
+                  Generate PDF ({pdfCount} questions)
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Inline edit overlay — reuses the existing form */}
       <AnimatePresence>

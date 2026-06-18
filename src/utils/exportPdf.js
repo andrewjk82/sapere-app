@@ -49,8 +49,10 @@ const optLetter = (i) => String.fromCharCode(65 + i);
 /**
  * Generate the full HTML document for the printable question sheet.
  */
-const buildPrintHtml = (questions, { chapterTitle, topicTitle, showAnswers = true }) => {
+const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers = true }) => {
   const title = `${chapterTitle || ''} – ${topicTitle || 'Questions'}`.trim().replace(/^–\s*/, '');
+  const headerLeft = year ? `${year} — ${chapterTitle || ''}` : (chapterTitle || '');
+  const dateStr = new Date().toLocaleDateString('en-AU', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ', ' + new Date().toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
 
   let questionsHtml = '';
 
@@ -234,29 +236,37 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, showAnswers = tru
     }
 
     .header {
-      text-align: center;
-      margin-bottom: 40px;
-      padding-bottom: 24px;
-      border-bottom: 3px solid #6366f1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #1e1b4b;
     }
 
-    .header h1 {
-      font-size: 1.6rem;
-      font-weight: 900;
+    .header-left h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
       color: #1e1b4b;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
-    .header .subtitle {
-      font-size: 0.85rem;
+    .header-left .topic-line {
+      font-size: 0.82rem;
       color: #64748b;
       font-weight: 600;
     }
 
-    .header .meta {
+    .header-right {
+      text-align: right;
       font-size: 0.75rem;
       color: #94a3b8;
-      margin-top: 8px;
+      font-weight: 500;
+    }
+
+    .header-right .date {
+      font-weight: 600;
+      color: #64748b;
     }
 
     .question-block {
@@ -494,9 +504,13 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, showAnswers = tru
 </head>
 <body>
   <div class="header">
-    <h1>${title}</h1>
-    <div class="subtitle">${questions.length} Questions${showAnswers ? ' · With Answers & Solutions' : ' · Student Worksheet'}</div>
-    <div class="meta">Generated on ${new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+    <div class="header-left">
+      <h1>${headerLeft}</h1>
+      ${topicTitle ? `<div class="topic-line">${topicTitle} · ${questions.length} Questions</div>` : `<div class="topic-line">${questions.length} Questions</div>`}
+    </div>
+    <div class="header-right">
+      <div class="date">${dateStr}</div>
+    </div>
   </div>
 
   ${questionsHtml}
@@ -518,25 +532,44 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, showAnswers = tru
 };
 
 /**
+ * Fisher-Yates shuffle (in-place).
+ */
+const shuffleArray = (arr) => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+
+/**
  * Open a new window with the printable question sheet.
  * The user can then use Cmd+P / Ctrl+P → Save as PDF.
  *
  * @param {Array} questions - Array of question objects
- * @param {Object} meta - { chapterTitle, topicTitle }
- * @param {Object} options - { showAnswers: boolean }
+ * @param {Object} meta - { chapterTitle, topicTitle, year }
+ * @param {Object} options - { showAnswers: boolean, count: number }
  */
 export const exportQuestionsPdf = (questions, meta, options = {}) => {
-  const { showAnswers = true } = options;
-  const validQuestions = questions.filter(q => q && !q.loading);
+  const { showAnswers = true, count } = options;
+  let validQuestions = questions.filter(q => q && !q.loading);
 
   if (validQuestions.length === 0) {
     alert('No questions to export');
     return;
   }
 
+  // Shuffle and pick the requested count
+  validQuestions = shuffleArray(validQuestions);
+  if (count && count > 0 && count < validQuestions.length) {
+    validQuestions = validQuestions.slice(0, count);
+  }
+
   const html = buildPrintHtml(validQuestions, {
     chapterTitle: meta.chapterTitle || '',
     topicTitle: meta.topicTitle || '',
+    year: meta.year || '',
     showAnswers,
   });
 
