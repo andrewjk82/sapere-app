@@ -106,6 +106,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
               chapterTitle: chapter.title,
               topicTitle: topic?.title || 'All Topics',
               year: chapter.year || '',
+              readingTime: pdfReadingTime,
+              workingTime: pdfWorkingTime,
             }, { showAnswers: pdfWithAnswers, count: pdfCount });
             return merged;
           });
@@ -120,6 +122,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         chapterTitle: chapter.title,
         topicTitle: topic?.title || 'All Topics',
         year: chapter.year || '',
+        readingTime: pdfReadingTime,
+        workingTime: pdfWorkingTime,
       }, { showAnswers: pdfWithAnswers, count: pdfCount });
     }
   };
@@ -812,6 +816,36 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                     style={{ width: '72px', padding: '8px 12px', borderRadius: '10px', border: '2px solid #e2e8f0', fontWeight: 800, fontSize: '0.95rem', textAlign: 'center', color: '#1e1b4b', outline: 'none' }}
                   />
                   <span style={{ fontSize: '0.78rem', color: '#94a3b8', fontWeight: 600 }}>/ {total}</span>
+                </div>
+              </div>
+
+              {/* Exam Duration / Time Settings */}
+              <div style={{ marginBottom: '20px', display: 'flex', gap: '16px' }}>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Reading Time</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <input
+                      type="number"
+                      min={0}
+                      value={pdfReadingTime}
+                      onChange={(e) => setPdfReadingTime(Math.max(0, Number(e.target.value) || 0))}
+                      style={{ width: '100%', padding: '10px 12px', borderRadius: '12px', border: '2px solid #e2e8f0', fontWeight: 800, fontSize: '0.95rem', textAlign: 'center', color: '#1e1b4b', outline: 'none' }}
+                    />
+                    <span style={{ fontSize: '0.8rem', color: '#64748b', fontWeight: 700 }}>min</span>
+                  </div>
+                </div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Working Time</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <input
+                      type="number"
+                      min={1}
+                      value={pdfWorkingTime}
+                      onChange={(e) => setPdfWorkingTime(Math.max(1, Number(e.target.value) || 1))}
+                      style={{ width: '100%', padding: '10px 12px', borderRadius: '12px', border: '2px solid #e2e8f0', fontWeight: 800, fontSize: '0.95rem', textAlign: 'center', color: '#1e1b4b', outline: 'none' }}
+                    />
+                    <span style={{ fontSize: '0.8rem', color: '#64748b', fontWeight: 700 }}>min</span>
+                  </div>
                 </div>
               </div>
 

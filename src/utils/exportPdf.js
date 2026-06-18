@@ -49,7 +49,7 @@ const optLetter = (i) => String.fromCharCode(65 + i);
 /**
  * Generate the full HTML document for the printable question sheet.
  */
-const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers = true }) => {
+const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime = 5, workingTime = 60, showAnswers = true }) => {
   const title = `${chapterTitle || ''} – ${topicTitle || 'Questions'}`.trim().replace(/^–\s*/, '');
   const headerLeft = year ? `${year} — ${chapterTitle || ''}` : (chapterTitle || '');
   const dateStr = new Date().toLocaleDateString('en-AU', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ', ' + new Date().toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
@@ -266,6 +266,166 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers
       line-height: 1.6;
       max-width: 800px;
       margin: 0 auto;
+    }
+
+    /* Cover Page Styling */
+    .cover-page {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      max-height: 1000px;
+      justify-content: space-between;
+      page-break-after: always;
+      break-after: page;
+      padding: 20px 0 60px 0;
+      box-sizing: border-box;
+    }
+
+    .cover-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 20px;
+    }
+
+    .cover-logo-text {
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #7c3aed;
+    }
+
+    .cover-metadata {
+      text-align: right;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+    .cover-middle {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cover-subject {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: #6366f1;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 12px;
+    }
+
+    .cover-title {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #1e1b4b;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.03em;
+    }
+
+    .cover-subtitle {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .cover-instructions-box {
+      border: 2px solid #1e1b4b;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 30px;
+      background: #fafafa;
+    }
+
+    .instructions-title {
+      font-size: 0.9rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #1e1b4b;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+
+    .time-allowance {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .time-item {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 12px 16px;
+    }
+
+    .time-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .time-value {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #1e1b4b;
+    }
+
+    .instructions-list {
+      list-style-type: decimal;
+      padding-left: 20px;
+      font-size: 0.88rem;
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .instructions-list li {
+      margin-bottom: 8px;
+    }
+
+    .cover-bottom {
+      border-top: 2px solid #1e1b4b;
+      padding-top: 24px;
+    }
+
+    .topics-header {
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64748b;
+      margin-bottom: 12px;
+    }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #1e1b4b;
+    }
+
+    .topic-bullet {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topic-bullet::before {
+      content: "•";
+      color: #6366f1;
+      font-size: 1.2rem;
     }
 
     .header {
@@ -541,6 +701,56 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers
   </style>
 </head>
 <body>
+  <!-- Exam Cover Page -->
+  <div class="cover-page">
+    <div class="cover-top">
+      <div class="cover-logo-text">Sapere Academy</div>
+      <div class="cover-metadata">
+        <div>${year || 'Mathematics'}</div>
+        <div>Chapter: ${chapterTitle || ''}</div>
+        <div>Topic: ${topicTitle || 'All Topics'}</div>
+      </div>
+    </div>
+
+    <div class="cover-middle">
+      <div class="cover-subject">Mathematics Assessment</div>
+      <div class="cover-title">${chapterTitle || 'Exam Paper'}</div>
+      <div class="cover-subtitle">${topicTitle || 'Practice Questions'}</div>
+    </div>
+
+    <div>
+      <div class="cover-instructions-box">
+        <div class="instructions-title">General Instructions</div>
+        <div class="time-allowance">
+          <div class="time-item">
+            <div class="time-label">Reading Time</div>
+            <div class="time-value">${readingTime} minutes</div>
+          </div>
+          <div class="time-item">
+            <div class="time-label">Working Time</div>
+            <div class="time-value">${workingTime} minutes</div>
+          </div>
+        </div>
+        <ol class="instructions-list">
+          <li>All questions may be attempted.</li>
+          <li>Write your answers in the spaces provided.</li>
+          <li>Show all necessary working out for questions.</li>
+          <li>Calculators may be used where appropriate.</li>
+        </ol>
+      </div>
+
+      <div class="cover-bottom">
+        <div class="topics-header">Topics Covered in this Paper</div>
+        <div class="topics-grid">
+          ${(() => {
+            const uniqueTopics = Array.from(new Set(questions.map(q => q.t || q.topicTitle || topicTitle).filter(Boolean)));
+            return uniqueTopics.map(t => `<div class="topic-bullet">${t}</div>`).join('');
+          })()}
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="header">
     <div class="header-left">
       <h1>${headerLeft}</h1>
@@ -642,6 +852,8 @@ export const exportQuestionsPdf = (questions, meta, options = {}) => {
     chapterTitle: meta.chapterTitle || '',
     topicTitle: meta.topicTitle || '',
     year: meta.year || '',
+    readingTime: meta.readingTime || 5,
+    workingTime: meta.workingTime || 60,
     showAnswers,
   });
 
