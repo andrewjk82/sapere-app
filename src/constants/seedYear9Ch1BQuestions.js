@@ -2726,5 +2726,2805 @@ export const Y9_CH1B_QUESTIONS = [
         "workingOut": "\\(11d - 4e\\)"
       }
     ]
+  },
+  {
+      "id": "y9-1b-q112-0",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A high-speed rail network calculates vibration damping coefficients. (Analysis #100) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "a": "\\(-6.5 b^3 a^2 c^4\\)",
+      "opts": [
+          "\\(12 a^2 b^4 c^3\\)",
+          "\\(18 a^3 b^2 c^4\\)",
+          "\\(-4 a^2 b^3 c\\)",
+          "\\(-6.5 b^3 a^2 c^4\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(\\text{Variables: } a^2 b^3 c^4\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(b^3 a^2 c^4\\) is identical to \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(b^3 a^2 c^4 \\equiv a^2 b^3 c^4\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-1",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #101) models energy dissipation as \\(E = 2.6a^2b -3.8ab^2 +3.9a^2b -3.4ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(6.5a^2b -7.2ab^2\\)",
+      "opts": [
+          "\\(6.5a^2b -7.2ab^2\\)",
+          "\\(-1.2a^2b +0.5ab^2\\)",
+          "\\(-0.7000000000000002a^3b^3\\)",
+          "\\(6.5a^2b - (0.4)ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((2.6a^2b +3.9a^2b) + (-3.8ab^2 -3.4ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(2.6 + 3.9 = 6.5, \\quad -3.8 + (-3.4) = -7.2\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(6.5a^2b -7.2ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-2",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #102) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-3",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A rocket propulsion test cell evaluates thrust components in three spatial axes. (Analysis #103) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{10x -7}{12}\\)",
+      "opts": [
+          "\\(\\frac{10x - -7}{12}\\)",
+          "\\(\\frac{10x -7}{12}\\)",
+          "\\(\\frac{10x + 12}{12}\\)",
+          "\\(\\frac{3x -1}{7}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(4\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 4 \\times 3 = 12\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(2x +3) + 4(1x -4)}{12}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{6x +9 4x -16}{12} = \\frac{10x -7}{12}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-4",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #104) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "a": "\\(-6.5 b^3 a^2 c^4\\)",
+      "opts": [
+          "\\(12 a^2 b^4 c^3\\)",
+          "\\(18 a^3 b^2 c^4\\)",
+          "\\(-4 a^2 b^3 c\\)",
+          "\\(-6.5 b^3 a^2 c^4\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(\\text{Variables: } a^2 b^3 c^4\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(b^3 a^2 c^4\\) is identical to \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(b^3 a^2 c^4 \\equiv a^2 b^3 c^4\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-5",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #105) models energy dissipation as \\(E = 3.3a^2b -3.1ab^2 +4.1a^2b -3.6ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(7.4a^2b -6.7ab^2\\)",
+      "opts": [
+          "\\(7.4a^2b - (0.5)ab^2\\)",
+          "\\(0.2a^2b +0.5ab^2\\)",
+          "\\(7.4a^2b -6.7ab^2\\)",
+          "\\(0.7000000000000002a^3b^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((3.3a^2b +4.1a^2b) + (-3.1ab^2 -3.6ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(3.3 + 4.1 = 7.4, \\quad -3.1 + (-3.6) = -6.7\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(7.4a^2b -6.7ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-6",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #106) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-7",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #107) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{14x -14}{15}\\)",
+      "opts": [
+          "\\(\\frac{14x - -14}{15}\\)",
+          "\\(\\frac{14x -14}{15}\\)",
+          "\\(\\frac{14x + 19}{15}\\)",
+          "\\(\\frac{4x -2}{8}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(5\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 5 \\times 3 = 15\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(3x +2) + 5(1x -4)}{15}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{9x +6 5x -20}{15} = \\frac{14x -14}{15}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-8",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #108) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "a": "\\(-6.5 n^2 m^{1.5} p\\)",
+      "opts": [
+          "\\(12 m^{1.5} n^2 p^2\\)",
+          "\\(18 m^2 n^{1.5} p\\)",
+          "\\(-6.5 n^2 m^{1.5} p\\)",
+          "\\(-4 m^{1.5} n^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(\\text{Variables: } m^{1.5} n^2 p\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(n^2 m^{1.5} p\\) is identical to \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(n^2 m^{1.5} p \\equiv m^{1.5} n^2 p\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-9",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A retail supply chain optimizes inventory holding costs across warehouses. (Analysis #109) models energy dissipation as \\(E = 4.9a^2b -2.5ab^2 +6.9a^2b -4.3ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(11.8a^2b -6.8ab^2\\)",
+      "opts": [
+          "\\(5.000000000000001a^3b^3\\)",
+          "\\(11.8a^2b - (1.8)ab^2\\)",
+          "\\(11.8a^2b -6.8ab^2\\)",
+          "\\(2.4a^2b +2.6ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((4.9a^2b +6.9a^2b) + (-2.5ab^2 -4.3ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(4.9 + 6.9 = 11.8, \\quad -2.5 + (-4.3) = -6.8\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(11.8a^2b -6.8ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #110) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. (Analysis #111) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{10x -7}{12}\\)",
+      "opts": [
+          "\\(\\frac{10x - -7}{12}\\)",
+          "\\(\\frac{10x -7}{12}\\)",
+          "\\(\\frac{10x + 12}{12}\\)",
+          "\\(\\frac{3x -1}{7}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(4\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 4 \\times 3 = 12\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(2x +3) + 4(1x -4)}{12}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{6x +9 4x -16}{12} = \\frac{10x -7}{12}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-12",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #112) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "a": "\\(-6.5 n^2 m^{1.5} p\\)",
+      "opts": [
+          "\\(12 m^{1.5} n^2 p^2\\)",
+          "\\(18 m^2 n^{1.5} p\\)",
+          "\\(-6.5 n^2 m^{1.5} p\\)",
+          "\\(-4 m^{1.5} n^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(\\text{Variables: } m^{1.5} n^2 p\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(n^2 m^{1.5} p\\) is identical to \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(n^2 m^{1.5} p \\equiv m^{1.5} n^2 p\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #113) models energy dissipation as \\(E = 2.0a^2b -2.1ab^2 +4.4a^2b -4.4ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(6.4a^2b -6.5ab^2\\)",
+      "opts": [
+          "\\(-0.09999999999999964a^3b^3\\)",
+          "\\(-0.1a^2b +0.0ab^2\\)",
+          "\\(6.4a^2b - (2.3)ab^2\\)",
+          "\\(6.4a^2b -6.5ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((2.0a^2b +4.4a^2b) + (-2.1ab^2 -4.4ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(2.0 + 4.4 = 6.4, \\quad -2.1 + (-4.4) = -6.5\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(6.4a^2b -6.5ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #114) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A high-speed rail network calculates vibration damping coefficients. (Analysis #115) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{14x -14}{15}\\)",
+      "opts": [
+          "\\(\\frac{14x - -14}{15}\\)",
+          "\\(\\frac{14x -14}{15}\\)",
+          "\\(\\frac{14x + 19}{15}\\)",
+          "\\(\\frac{4x -2}{8}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(5\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 5 \\times 3 = 15\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(3x +2) + 5(1x -4)}{15}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{9x +6 5x -20}{15} = \\frac{14x -14}{15}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-16",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #116) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "a": "\\(-6.5 b^3 a^2 c^4\\)",
+      "opts": [
+          "\\(12 a^2 b^4 c^3\\)",
+          "\\(18 a^3 b^2 c^4\\)",
+          "\\(-4 a^2 b^3 c\\)",
+          "\\(-6.5 b^3 a^2 c^4\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(\\text{Variables: } a^2 b^3 c^4\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(b^3 a^2 c^4\\) is identical to \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(b^3 a^2 c^4 \\equiv a^2 b^3 c^4\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-17",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #117) models energy dissipation as \\(E = 4.9a^2b -2.3ab^2 +4.3a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(9.2a^2b -5.8ab^2\\)",
+      "opts": [
+          "\\(3.3999999999999995a^3b^3\\)",
+          "\\(2.6a^2b +0.8ab^2\\)",
+          "\\(9.2a^2b - (1.2)ab^2\\)",
+          "\\(9.2a^2b -5.8ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((4.9a^2b +4.3a^2b) + (-2.3ab^2 -3.5ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(4.9 + 4.3 = 9.2, \\quad -2.3 + (-3.5) = -5.8\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(9.2a^2b -5.8ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-18",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. (Analysis #118) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-19",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A solar power array calculates power generation across multiple panels. (Analysis #119) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{14x +5}{12}\\)",
+      "opts": [
+          "\\(\\frac{14x +5}{12}\\)",
+          "\\(\\frac{14x - 5}{12}\\)",
+          "\\(\\frac{4x +2}{7}\\)",
+          "\\(\\frac{14x + 10}{12}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(4\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 4 \\times 3 = 12\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(2x +3) + 4(2x -1)}{12}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{6x +9 8x -4}{12} = \\frac{14x +5}{12}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-20",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. (Analysis #120) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "a": "\\(-6.5 b^3 a^2 c^4\\)",
+      "opts": [
+          "\\(12 a^2 b^4 c^3\\)",
+          "\\(18 a^3 b^2 c^4\\)",
+          "\\(-4 a^2 b^3 c\\)",
+          "\\(-6.5 b^3 a^2 c^4\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(\\text{Variables: } a^2 b^3 c^4\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(b^3 a^2 c^4\\) is identical to \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(b^3 a^2 c^4 \\equiv a^2 b^3 c^4\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-21",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #121) models energy dissipation as \\(E = 4.4a^2b -2.9ab^2 +6.0a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(10.4a^2b -7.1ab^2\\)",
+      "opts": [
+          "\\(3.3000000000000007a^3b^3\\)",
+          "\\(10.4a^2b -7.1ab^2\\)",
+          "\\(1.5a^2b +1.8ab^2\\)",
+          "\\(10.4a^2b - (1.3)ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((4.4a^2b +6.0a^2b) + (-2.9ab^2 -4.2ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(4.4 + 6.0 = 10.4, \\quad -2.9 + (-4.2) = -7.1\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(10.4a^2b -7.1ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-22",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #122) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-23",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A retail supply chain optimizes inventory holding costs across warehouses. (Analysis #123) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{29x -1}{15}\\)",
+      "opts": [
+          "\\(\\frac{7x -1}{8}\\)",
+          "\\(\\frac{29x - -1}{15}\\)",
+          "\\(\\frac{29x -1}{15}\\)",
+          "\\(\\frac{29x + 6}{15}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(5\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 3 \\times 5 = 15\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{5(4x +1) + 3(3x -2)}{15}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{20x +5 9x -6}{15} = \\frac{29x -1}{15}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-24",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #124) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "a": "\\(-6.5 b^3 a^2 c^4\\)",
+      "opts": [
+          "\\(12 a^2 b^4 c^3\\)",
+          "\\(18 a^3 b^2 c^4\\)",
+          "\\(-4 a^2 b^3 c\\)",
+          "\\(-6.5 b^3 a^2 c^4\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(\\text{Variables: } a^2 b^3 c^4\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(b^3 a^2 c^4\\) is identical to \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(b^3 a^2 c^4 \\equiv a^2 b^3 c^4\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-25",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #125) models energy dissipation as \\(E = 1.9a^2b -4.1ab^2 +4.1a^2b -4.4ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(6.0a^2b -8.5ab^2\\)",
+      "opts": [
+          "\\(-2.5a^3b^3\\)",
+          "\\(6.0a^2b -8.5ab^2\\)",
+          "\\(-2.2a^2b -0.3ab^2\\)",
+          "\\(6.0a^2b - (0.3)ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((1.9a^2b +4.1a^2b) + (-4.1ab^2 -4.4ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(1.9 + 4.1 = 6.0, \\quad -4.1 + (-4.4) = -8.5\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(6.0a^2b -8.5ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-26",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #126) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-27",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #127) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{18x +0}{9}\\)",
+      "opts": [
+          "\\(\\frac{6x +0}{6}\\)",
+          "\\(\\frac{18x +0}{9}\\)",
+          "\\(\\frac{18x + 5}{9}\\)",
+          "\\(\\frac{18x - 0}{9}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 3 \\times 3 = 9\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(4x +1) + 3(2x -1)}{9}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{12x +3 6x -3}{9} = \\frac{18x +0}{9}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-28",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #128) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "a": "\\(-6.5 n^2 m^{1.5} p\\)",
+      "opts": [
+          "\\(12 m^{1.5} n^2 p^2\\)",
+          "\\(18 m^2 n^{1.5} p\\)",
+          "\\(-6.5 n^2 m^{1.5} p\\)",
+          "\\(-4 m^{1.5} n^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(\\text{Variables: } m^{1.5} n^2 p\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(n^2 m^{1.5} p\\) is identical to \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(n^2 m^{1.5} p \\equiv m^{1.5} n^2 p\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-29",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A rocket propulsion test cell evaluates thrust components in three spatial axes. (Analysis #129) models energy dissipation as \\(E = 2.0a^2b -1.7ab^2 +3.8a^2b -4.9ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(5.8a^2b -6.6ab^2\\)",
+      "opts": [
+          "\\(-0.7999999999999998a^3b^3\\)",
+          "\\(5.8a^2b -6.6ab^2\\)",
+          "\\(0.3a^2b -1.1ab^2\\)",
+          "\\(5.8a^2b - (3.2)ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((2.0a^2b +3.8a^2b) + (-1.7ab^2 -4.9ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(2.0 + 3.8 = 5.8, \\quad -1.7 + (-4.9) = -6.6\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(5.8a^2b -6.6ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-30",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #130) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-31",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #131) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{10x -7}{12}\\)",
+      "opts": [
+          "\\(\\frac{10x - -7}{12}\\)",
+          "\\(\\frac{10x -7}{12}\\)",
+          "\\(\\frac{10x + 12}{12}\\)",
+          "\\(\\frac{3x -1}{7}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(4\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 4 \\times 3 = 12\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(2x +3) + 4(1x -4)}{12}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{6x +9 4x -16}{12} = \\frac{10x -7}{12}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-32",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #132) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 u^{-1} v^2 w^3\\)?",
+      "a": "\\(-6.5 v^2 w^3 u^{-1}\\)",
+      "opts": [
+          "\\(-4 v^2 w^3\\)",
+          "\\(12 u^{-1} v^3 w^2\\)",
+          "\\(18 u^1 v^2 w^3\\)",
+          "\\(-6.5 v^2 w^3 u^{-1}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(u^{-1} v^2 w^3\\).",
+              "workingOut": "\\(\\text{Variables: } u^{-1} v^2 w^3\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(v^2 w^3 u^{-1}\\) is identical to \\(u^{-1} v^2 w^3\\).",
+              "workingOut": "\\(v^2 w^3 u^{-1} \\equiv u^{-1} v^2 w^3\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-33",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #133) models energy dissipation as \\(E = 5.8a^2b -3.1ab^2 +5.3a^2b -3.1ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(11.1a^2b -6.2ab^2\\)",
+      "opts": [
+          "\\(2.7a^2b +2.2ab^2\\)",
+          "\\(11.1a^2b -6.2ab^2\\)",
+          "\\(4.8999999999999995a^3b^3\\)",
+          "\\(11.1a^2b - (0.0)ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((5.8a^2b +5.3a^2b) + (-3.1ab^2 -3.1ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(5.8 + 5.3 = 11.1, \\quad -3.1 + (-3.1) = -6.2\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(11.1a^2b -6.2ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-34",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. (Analysis #134) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-35",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #135) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{14x +5}{12}\\)",
+      "opts": [
+          "\\(\\frac{14x +5}{12}\\)",
+          "\\(\\frac{14x - 5}{12}\\)",
+          "\\(\\frac{4x +2}{7}\\)",
+          "\\(\\frac{14x + 10}{12}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(4\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 4 \\times 3 = 12\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(2x +3) + 4(2x -1)}{12}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{6x +9 8x -4}{12} = \\frac{14x +5}{12}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-36",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #136) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
+      "opts": [
+          "\\(-4 r^2 s^{-2}\\)",
+          "\\(12 r^3 s^{-2} t^2\\)",
+          "\\(18 r^2 s^2 t^3\\)",
+          "\\(-6.5 s^{-2} r^2 t^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(\\text{Variables: } r^2 s^{-2} t^3\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(s^{-2} r^2 t^3\\) is identical to \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(s^{-2} r^2 t^3 \\equiv r^2 s^{-2} t^3\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-37",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #137) models energy dissipation as \\(E = 2.9a^2b -2.5ab^2 +7.0a^2b -4.3ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(9.9a^2b -6.8ab^2\\)",
+      "opts": [
+          "\\(9.9a^2b -6.8ab^2\\)",
+          "\\(3.1000000000000005a^3b^3\\)",
+          "\\(0.4a^2b +2.7ab^2\\)",
+          "\\(9.9a^2b - (1.8)ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((2.9a^2b +7.0a^2b) + (-2.5ab^2 -4.3ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(2.9 + 7.0 = 9.9, \\quad -2.5 + (-4.3) = -6.8\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(9.9a^2b -6.8ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-38",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #138) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-39",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. (Analysis #139) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{15x -9}{9}\\)",
+      "opts": [
+          "\\(\\frac{15x -9}{9}\\)",
+          "\\(\\frac{5x -3}{6}\\)",
+          "\\(\\frac{15x - -9}{9}\\)",
+          "\\(\\frac{15x + 14}{9}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 3 \\times 3 = 9\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(4x +1) + 3(1x -4)}{9}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{12x +3 3x -12}{9} = \\frac{15x -9}{9}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-40",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #140) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "a": "\\(-6.5 b^3 a^2 c^4\\)",
+      "opts": [
+          "\\(12 a^2 b^4 c^3\\)",
+          "\\(18 a^3 b^2 c^4\\)",
+          "\\(-4 a^2 b^3 c\\)",
+          "\\(-6.5 b^3 a^2 c^4\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(\\text{Variables: } a^2 b^3 c^4\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(b^3 a^2 c^4\\) is identical to \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(b^3 a^2 c^4 \\equiv a^2 b^3 c^4\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-41",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #141) models energy dissipation as \\(E = 3.3a^2b -3.2ab^2 +5.8a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(9.1a^2b -6.7ab^2\\)",
+      "opts": [
+          "\\(2.3999999999999995a^3b^3\\)",
+          "\\(9.1a^2b -6.7ab^2\\)",
+          "\\(9.1a^2b - (0.3)ab^2\\)",
+          "\\(0.1a^2b +2.3ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((3.3a^2b +5.8a^2b) + (-3.2ab^2 -3.5ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(3.3 + 5.8 = 9.1, \\quad -3.2 + (-3.5) = -6.7\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(9.1a^2b -6.7ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-42",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #142) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-43",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #143) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{18x +0}{9}\\)",
+      "opts": [
+          "\\(\\frac{6x +0}{6}\\)",
+          "\\(\\frac{18x +0}{9}\\)",
+          "\\(\\frac{18x + 5}{9}\\)",
+          "\\(\\frac{18x - 0}{9}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 3 \\times 3 = 9\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(4x +1) + 3(2x -1)}{9}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{12x +3 6x -3}{9} = \\frac{18x +0}{9}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-44",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #144) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "a": "\\(-6.5 b^3 a^2 c^4\\)",
+      "opts": [
+          "\\(12 a^2 b^4 c^3\\)",
+          "\\(18 a^3 b^2 c^4\\)",
+          "\\(-4 a^2 b^3 c\\)",
+          "\\(-6.5 b^3 a^2 c^4\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(\\text{Variables: } a^2 b^3 c^4\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(b^3 a^2 c^4\\) is identical to \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(b^3 a^2 c^4 \\equiv a^2 b^3 c^4\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-45",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. (Analysis #145) models energy dissipation as \\(E = 4.9a^2b -2.3ab^2 +3.7a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(8.6a^2b -6.5ab^2\\)",
+      "opts": [
+          "\\(2.6a^2b -0.5ab^2\\)",
+          "\\(8.6a^2b -6.5ab^2\\)",
+          "\\(2.0999999999999996a^3b^3\\)",
+          "\\(8.6a^2b - (1.9)ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((4.9a^2b +3.7a^2b) + (-2.3ab^2 -4.2ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(4.9 + 3.7 = 8.6, \\quad -2.3 + (-4.2) = -6.5\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(8.6a^2b -6.5ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-46",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #146) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-47",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. (Analysis #147) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{14x -14}{15}\\)",
+      "opts": [
+          "\\(\\frac{14x - -14}{15}\\)",
+          "\\(\\frac{14x -14}{15}\\)",
+          "\\(\\frac{14x + 19}{15}\\)",
+          "\\(\\frac{4x -2}{8}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(5\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 5 \\times 3 = 15\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(3x +2) + 5(1x -4)}{15}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{9x +6 5x -20}{15} = \\frac{14x -14}{15}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-48",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #148) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
+      "opts": [
+          "\\(-4 r^2 s^{-2}\\)",
+          "\\(12 r^3 s^{-2} t^2\\)",
+          "\\(18 r^2 s^2 t^3\\)",
+          "\\(-6.5 s^{-2} r^2 t^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(\\text{Variables: } r^2 s^{-2} t^3\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(s^{-2} r^2 t^3\\) is identical to \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(s^{-2} r^2 t^3 \\equiv r^2 s^{-2} t^3\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-49",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #149) models energy dissipation as \\(E = 4.8a^2b -3.7ab^2 +6.1a^2b -2.6ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(10.9a^2b -6.3ab^2\\)",
+      "opts": [
+          "\\(10.9a^2b - (1.1)ab^2\\)",
+          "\\(4.6000000000000005a^3b^3\\)",
+          "\\(10.9a^2b -6.3ab^2\\)",
+          "\\(1.1a^2b +3.5ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((4.8a^2b +6.1a^2b) + (-3.7ab^2 -2.6ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(4.8 + 6.1 = 10.9, \\quad -3.7 + (-2.6) = -6.3\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(10.9a^2b -6.3ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-50",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #150) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-51",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A retail supply chain optimizes inventory holding costs across warehouses. (Analysis #151) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{14x -14}{15}\\)",
+      "opts": [
+          "\\(\\frac{14x - -14}{15}\\)",
+          "\\(\\frac{14x -14}{15}\\)",
+          "\\(\\frac{14x + 19}{15}\\)",
+          "\\(\\frac{4x -2}{8}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(5\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 5 \\times 3 = 15\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(3x +2) + 5(1x -4)}{15}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{9x +6 5x -20}{15} = \\frac{14x -14}{15}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-52",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #152) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "a": "\\(-6.5 n^2 m^{1.5} p\\)",
+      "opts": [
+          "\\(12 m^{1.5} n^2 p^2\\)",
+          "\\(18 m^2 n^{1.5} p\\)",
+          "\\(-6.5 n^2 m^{1.5} p\\)",
+          "\\(-4 m^{1.5} n^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(\\text{Variables: } m^{1.5} n^2 p\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(n^2 m^{1.5} p\\) is identical to \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(n^2 m^{1.5} p \\equiv m^{1.5} n^2 p\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-53",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. (Analysis #153) models energy dissipation as \\(E = 5.2a^2b -1.9ab^2 +2.8a^2b -3.4ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(8.0a^2b -5.3ab^2\\)",
+      "opts": [
+          "\\(8.0a^2b -5.3ab^2\\)",
+          "\\(3.3a^2b -0.6ab^2\\)",
+          "\\(2.7a^3b^3\\)",
+          "\\(8.0a^2b - (1.5)ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((5.2a^2b +2.8a^2b) + (-1.9ab^2 -3.4ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(5.2 + 2.8 = 8.0, \\quad -1.9 + (-3.4) = -5.3\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(8.0a^2b -5.3ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-54",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #154) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-55",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A retail supply chain optimizes inventory holding costs across warehouses. (Analysis #155) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{15x -9}{9}\\)",
+      "opts": [
+          "\\(\\frac{15x -9}{9}\\)",
+          "\\(\\frac{5x -3}{6}\\)",
+          "\\(\\frac{15x - -9}{9}\\)",
+          "\\(\\frac{15x + 14}{9}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 3 \\times 3 = 9\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(4x +1) + 3(1x -4)}{9}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{12x +3 3x -12}{9} = \\frac{15x -9}{9}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-56",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A cryptocurrency arbitrage bot monitors value changes across multiple exchange pools. (Analysis #156) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
+      "opts": [
+          "\\(-4 r^2 s^{-2}\\)",
+          "\\(12 r^3 s^{-2} t^2\\)",
+          "\\(18 r^2 s^2 t^3\\)",
+          "\\(-6.5 s^{-2} r^2 t^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(\\text{Variables: } r^2 s^{-2} t^3\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(s^{-2} r^2 t^3\\) is identical to \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(s^{-2} r^2 t^3 \\equiv r^2 s^{-2} t^3\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-57",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #157) models energy dissipation as \\(E = 3.8a^2b -1.6ab^2 +3.0a^2b -5.5ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(6.8a^2b -7.1ab^2\\)",
+      "opts": [
+          "\\(-0.2999999999999998a^3b^3\\)",
+          "\\(6.8a^2b -7.1ab^2\\)",
+          "\\(6.8a^2b - (3.9)ab^2\\)",
+          "\\(2.2a^2b -2.5ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((3.8a^2b +3.0a^2b) + (-1.6ab^2 -5.5ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(3.8 + 3.0 = 6.8, \\quad -1.6 + (-5.5) = -7.1\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(6.8a^2b -7.1ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-58",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #158) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-59",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #159) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{18x +0}{9}\\)",
+      "opts": [
+          "\\(\\frac{6x +0}{6}\\)",
+          "\\(\\frac{18x +0}{9}\\)",
+          "\\(\\frac{18x + 5}{9}\\)",
+          "\\(\\frac{18x - 0}{9}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 3 \\times 3 = 9\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(4x +1) + 3(2x -1)}{9}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{12x +3 6x -3}{9} = \\frac{18x +0}{9}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-60",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #160) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 a^2 b^3 c^4\\)?",
+      "a": "\\(-6.5 b^3 a^2 c^4\\)",
+      "opts": [
+          "\\(12 a^2 b^4 c^3\\)",
+          "\\(18 a^3 b^2 c^4\\)",
+          "\\(-4 a^2 b^3 c\\)",
+          "\\(-6.5 b^3 a^2 c^4\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(\\text{Variables: } a^2 b^3 c^4\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(b^3 a^2 c^4\\) is identical to \\(a^2 b^3 c^4\\).",
+              "workingOut": "\\(b^3 a^2 c^4 \\equiv a^2 b^3 c^4\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-61",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A solar power array calculates power generation across multiple panels. (Analysis #161) models energy dissipation as \\(E = 5.1a^2b -2.7ab^2 +5.8a^2b -2.8ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(10.9a^2b -5.5ab^2\\)",
+      "opts": [
+          "\\(10.9a^2b - (0.1)ab^2\\)",
+          "\\(10.9a^2b -5.5ab^2\\)",
+          "\\(2.4a^2b +3.0ab^2\\)",
+          "\\(5.4a^3b^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((5.1a^2b +5.8a^2b) + (-2.7ab^2 -2.8ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(5.1 + 5.8 = 10.9, \\quad -2.7 + (-2.8) = -5.5\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(10.9a^2b -5.5ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-62",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #162) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-63",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #163) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{14x -14}{15}\\)",
+      "opts": [
+          "\\(\\frac{14x - -14}{15}\\)",
+          "\\(\\frac{14x -14}{15}\\)",
+          "\\(\\frac{14x + 19}{15}\\)",
+          "\\(\\frac{4x -2}{8}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(5\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 5 \\times 3 = 15\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(3x +2) + 5(1x -4)}{15}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{9x +6 5x -20}{15} = \\frac{14x -14}{15}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-64",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #164) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
+      "opts": [
+          "\\(-4 r^2 s^{-2}\\)",
+          "\\(12 r^3 s^{-2} t^2\\)",
+          "\\(18 r^2 s^2 t^3\\)",
+          "\\(-6.5 s^{-2} r^2 t^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(\\text{Variables: } r^2 s^{-2} t^3\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(s^{-2} r^2 t^3\\) is identical to \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(s^{-2} r^2 t^3 \\equiv r^2 s^{-2} t^3\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-65",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A rocket propulsion test cell evaluates thrust components in three spatial axes. (Analysis #165) models energy dissipation as \\(E = 6.0a^2b -3.0ab^2 +3.1a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(9.1a^2b -6.5ab^2\\)",
+      "opts": [
+          "\\(9.1a^2b - (0.5)ab^2\\)",
+          "\\(2.5999999999999996a^3b^3\\)",
+          "\\(9.1a^2b -6.5ab^2\\)",
+          "\\(3.0a^2b -0.4ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((6.0a^2b +3.1a^2b) + (-3.0ab^2 -3.5ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(6.0 + 3.1 = 9.1, \\quad -3.0 + (-3.5) = -6.5\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(9.1a^2b -6.5ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-66",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #166) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-67",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #167) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{14x -14}{15}\\)",
+      "opts": [
+          "\\(\\frac{14x - -14}{15}\\)",
+          "\\(\\frac{14x -14}{15}\\)",
+          "\\(\\frac{14x + 19}{15}\\)",
+          "\\(\\frac{4x -2}{8}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(5\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 5 \\times 3 = 15\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(3x +2) + 5(1x -4)}{15}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{9x +6 5x -20}{15} = \\frac{14x -14}{15}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-68",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #168) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
+      "opts": [
+          "\\(-4 r^2 s^{-2}\\)",
+          "\\(12 r^3 s^{-2} t^2\\)",
+          "\\(18 r^2 s^2 t^3\\)",
+          "\\(-6.5 s^{-2} r^2 t^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(\\text{Variables: } r^2 s^{-2} t^3\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(s^{-2} r^2 t^3\\) is identical to \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(s^{-2} r^2 t^3 \\equiv r^2 s^{-2} t^3\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-69",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #169) models energy dissipation as \\(E = 5.0a^2b -4.2ab^2 +5.9a^2b -5.3ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(10.9a^2b -9.5ab^2\\)",
+      "opts": [
+          "\\(0.8a^2b +0.6ab^2\\)",
+          "\\(10.9a^2b - (1.1)ab^2\\)",
+          "\\(10.9a^2b -9.5ab^2\\)",
+          "\\(1.4000000000000004a^3b^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((5.0a^2b +5.9a^2b) + (-4.2ab^2 -5.3ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(5.0 + 5.9 = 10.9, \\quad -4.2 + (-5.3) = -9.5\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(10.9a^2b -9.5ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-70",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #170) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-71",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A machine learning model calculates the weighted loss function across multi-modal inputs. (Analysis #171) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{10x -7}{12}\\)",
+      "opts": [
+          "\\(\\frac{10x - -7}{12}\\)",
+          "\\(\\frac{10x -7}{12}\\)",
+          "\\(\\frac{10x + 12}{12}\\)",
+          "\\(\\frac{3x -1}{7}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(4\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 4 \\times 3 = 12\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(2x +3) + 4(1x -4)}{12}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{6x +9 4x -16}{12} = \\frac{10x -7}{12}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-72",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A solar power array calculates power generation across multiple panels. (Analysis #172) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "a": "\\(-6.5 n^2 m^{1.5} p\\)",
+      "opts": [
+          "\\(12 m^{1.5} n^2 p^2\\)",
+          "\\(18 m^2 n^{1.5} p\\)",
+          "\\(-6.5 n^2 m^{1.5} p\\)",
+          "\\(-4 m^{1.5} n^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(\\text{Variables: } m^{1.5} n^2 p\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(n^2 m^{1.5} p\\) is identical to \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(n^2 m^{1.5} p \\equiv m^{1.5} n^2 p\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-73",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #173) models energy dissipation as \\(E = 2.7a^2b -3.3ab^2 +3.7a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(6.4a^2b -8.1ab^2\\)",
+      "opts": [
+          "\\(-1.6999999999999993a^3b^3\\)",
+          "\\(-0.6a^2b -1.1ab^2\\)",
+          "\\(6.4a^2b -8.1ab^2\\)",
+          "\\(6.4a^2b - (1.5)ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((2.7a^2b +3.7a^2b) + (-3.3ab^2 -4.8ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(2.7 + 3.7 = 6.4, \\quad -3.3 + (-4.8) = -8.1\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(6.4a^2b -8.1ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-74",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #174) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-75",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #175) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{15x -9}{9}\\)",
+      "opts": [
+          "\\(\\frac{15x -9}{9}\\)",
+          "\\(\\frac{5x -3}{6}\\)",
+          "\\(\\frac{15x - -9}{9}\\)",
+          "\\(\\frac{15x + 14}{9}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 3 \\times 3 = 9\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(4x +1) + 3(1x -4)}{9}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{12x +3 3x -12}{9} = \\frac{15x -9}{9}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-76",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. (Analysis #176) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 m^{1.5} n^2 p\\)?",
+      "a": "\\(-6.5 n^2 m^{1.5} p\\)",
+      "opts": [
+          "\\(12 m^{1.5} n^2 p^2\\)",
+          "\\(18 m^2 n^{1.5} p\\)",
+          "\\(-6.5 n^2 m^{1.5} p\\)",
+          "\\(-4 m^{1.5} n^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(\\text{Variables: } m^{1.5} n^2 p\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(n^2 m^{1.5} p\\) is identical to \\(m^{1.5} n^2 p\\).",
+              "workingOut": "\\(n^2 m^{1.5} p \\equiv m^{1.5} n^2 p\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-77",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "An autonomous agricultural drone evaluates weed density across three fields. (Analysis #177) models energy dissipation as \\(E = 5.3a^2b -3.9ab^2 +6.4a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(11.7a^2b -8.7ab^2\\)",
+      "opts": [
+          "\\(11.7a^2b -8.7ab^2\\)",
+          "\\(11.7a^2b - (0.9)ab^2\\)",
+          "\\(3.0a^3b^3\\)",
+          "\\(1.4a^2b +1.6ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((5.3a^2b +6.4a^2b) + (-3.9ab^2 -4.8ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(5.3 + 6.4 = 11.7, \\quad -3.9 + (-4.8) = -8.7\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(11.7a^2b -8.7ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-78",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #178) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-79",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A deep-sea research submarine calculates hydraulic pressure on its hull. (Analysis #179) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{30x +0}{25}\\)",
+      "opts": [
+          "\\(\\frac{30x - 0}{25}\\)",
+          "\\(\\frac{6x +0}{10}\\)",
+          "\\(\\frac{30x + 5}{25}\\)",
+          "\\(\\frac{30x +0}{25}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(5\\) and \\(5\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 5 \\times 5 = 25\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{5(3x +2) + 5(3x -2)}{25}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{15x +10 15x -10}{25} = \\frac{30x +0}{25}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-80",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #180) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 u^{-1} v^2 w^3\\)?",
+      "a": "\\(-6.5 v^2 w^3 u^{-1}\\)",
+      "opts": [
+          "\\(-4 v^2 w^3\\)",
+          "\\(12 u^{-1} v^3 w^2\\)",
+          "\\(18 u^1 v^2 w^3\\)",
+          "\\(-6.5 v^2 w^3 u^{-1}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(u^{-1} v^2 w^3\\).",
+              "workingOut": "\\(\\text{Variables: } u^{-1} v^2 w^3\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(v^2 w^3 u^{-1}\\) is identical to \\(u^{-1} v^2 w^3\\).",
+              "workingOut": "\\(v^2 w^3 u^{-1} \\equiv u^{-1} v^2 w^3\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-81",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #181) models energy dissipation as \\(E = 3.8a^2b -3.6ab^2 +3.4a^2b -5.4ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(7.2a^2b -9.0ab^2\\)",
+      "opts": [
+          "\\(0.2a^2b -2.0ab^2\\)",
+          "\\(7.2a^2b - (1.8)ab^2\\)",
+          "\\(7.2a^2b -9.0ab^2\\)",
+          "\\(-1.7999999999999998a^3b^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((3.8a^2b +3.4a^2b) + (-3.6ab^2 -5.4ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(3.8 + 3.4 = 7.2, \\quad -3.6 + (-5.4) = -9.0\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(7.2a^2b -9.0ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-82",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A lithium-ion battery management system estimates state-of-charge decay rates. (Analysis #182) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-83",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #183) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{10x -7}{12}\\)",
+      "opts": [
+          "\\(\\frac{10x - -7}{12}\\)",
+          "\\(\\frac{10x -7}{12}\\)",
+          "\\(\\frac{10x + 12}{12}\\)",
+          "\\(\\frac{3x -1}{7}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(4\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 4 \\times 3 = 12\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(2x +3) + 4(1x -4)}{12}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{6x +9 4x -16}{12} = \\frac{10x -7}{12}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-84",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #184) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 x^3 y^2 z\\)?",
+      "a": "\\(-6.5 y^2 x^3 z\\)",
+      "opts": [
+          "\\(18 x^2 y^3 z\\)",
+          "\\(-6.5 y^2 x^3 z\\)",
+          "\\(-4 x^3 y^2\\)",
+          "\\(12 x^3 y z^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(x^3 y^2 z\\).",
+              "workingOut": "\\(\\text{Variables: } x^3 y^2 z\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(y^2 x^3 z\\) is identical to \\(x^3 y^2 z\\).",
+              "workingOut": "\\(y^2 x^3 z \\equiv x^3 y^2 z\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-85",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #185) models energy dissipation as \\(E = 3.9a^2b -3.3ab^2 +3.0a^2b -3.3ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(6.9a^2b -6.6ab^2\\)",
+      "opts": [
+          "\\(0.6a^2b -0.3ab^2\\)",
+          "\\(6.9a^2b -6.6ab^2\\)",
+          "\\(6.9a^2b - (0.0)ab^2\\)",
+          "\\(0.3000000000000007a^3b^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((3.9a^2b +3.0a^2b) + (-3.3ab^2 -3.3ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(3.9 + 3.0 = 6.9, \\quad -3.3 + (-3.3) = -6.6\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(6.9a^2b -6.6ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-86",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A robotics assembly line calculates torque balances on a six-axis manipulator. (Analysis #186) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-87",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #187) monitors signal routing coefficients represented by \\(\\frac{2x +3}{4} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{22x +7}{20}\\)",
+      "opts": [
+          "\\(\\frac{5x +1}{9}\\)",
+          "\\(\\frac{22x +7}{20}\\)",
+          "\\(\\frac{22x - 7}{20}\\)",
+          "\\(\\frac{22x + 12}{20}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(4\\) and \\(5\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 4 \\times 5 = 20\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{5(2x +3) + 4(3x -2)}{20}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{10x +15 12x -8}{20} = \\frac{22x +7}{20}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-88",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A semiconductor manufacturing tool monitors temperature sensor arrays. (Analysis #188) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 r^2 s^{-2} t^3\\)?",
+      "a": "\\(-6.5 s^{-2} r^2 t^3\\)",
+      "opts": [
+          "\\(-4 r^2 s^{-2}\\)",
+          "\\(12 r^3 s^{-2} t^2\\)",
+          "\\(18 r^2 s^2 t^3\\)",
+          "\\(-6.5 s^{-2} r^2 t^3\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(\\text{Variables: } r^2 s^{-2} t^3\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(s^{-2} r^2 t^3\\) is identical to \\(r^2 s^{-2} t^3\\).",
+              "workingOut": "\\(s^{-2} r^2 t^3 \\equiv r^2 s^{-2} t^3\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-89",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A solar power array calculates power generation across multiple panels. (Analysis #189) models energy dissipation as \\(E = 4.1a^2b -3.0ab^2 +7.1a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(11.2a^2b -7.2ab^2\\)",
+      "opts": [
+          "\\(1.1a^2b +2.9ab^2\\)",
+          "\\(3.999999999999999a^3b^3\\)",
+          "\\(11.2a^2b - (1.2)ab^2\\)",
+          "\\(11.2a^2b -7.2ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((4.1a^2b +7.1a^2b) + (-3.0ab^2 -4.2ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(4.1 + 7.1 = 11.2, \\quad -3.0 + (-4.2) = -7.2\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(11.2a^2b -7.2ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-90",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A concrete curing lab monitors thermal expansion indexes. (Analysis #190) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-91",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A chemical blending reactor processes a mixture of four active reagents. (Analysis #191) monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{19x +1}{15}\\)",
+      "opts": [
+          "\\(\\frac{5x +1}{8}\\)",
+          "\\(\\frac{19x - 1}{15}\\)",
+          "\\(\\frac{19x + 6}{15}\\)",
+          "\\(\\frac{19x +1}{15}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(5\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 5 \\times 3 = 15\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(3x +2) + 5(2x -1)}{15}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{9x +6 10x -5}{15} = \\frac{19x +1}{15}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-92",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A logistics shipping port optimizes container stacking throughput. (Analysis #192) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 x^3 y^2 z\\)?",
+      "a": "\\(-6.5 y^2 x^3 z\\)",
+      "opts": [
+          "\\(18 x^2 y^3 z\\)",
+          "\\(-6.5 y^2 x^3 z\\)",
+          "\\(-4 x^3 y^2\\)",
+          "\\(12 x^3 y z^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(x^3 y^2 z\\).",
+              "workingOut": "\\(\\text{Variables: } x^3 y^2 z\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(y^2 x^3 z\\) is identical to \\(x^3 y^2 z\\).",
+              "workingOut": "\\(y^2 x^3 z \\equiv x^3 y^2 z\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-93",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A fiber-optic network routing node monitors signal attenuation across channels. (Analysis #193) models energy dissipation as \\(E = 4.6a^2b -4.1ab^2 +7.2a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(11.8a^2b -8.9ab^2\\)",
+      "opts": [
+          "\\(11.8a^2b - (0.7)ab^2\\)",
+          "\\(2.9000000000000004a^3b^3\\)",
+          "\\(11.8a^2b -8.9ab^2\\)",
+          "\\(0.5a^2b +2.4ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((4.6a^2b +7.2a^2b) + (-4.1ab^2 -4.8ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(4.6 + 7.2 = 11.8, \\quad -4.1 + (-4.8) = -8.9\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(11.8a^2b -8.9ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-94",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wildlife conservation reserve tracks population models of three species. (Analysis #194) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-95",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #195) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{15x -9}{9}\\)",
+      "opts": [
+          "\\(\\frac{15x -9}{9}\\)",
+          "\\(\\frac{5x -3}{6}\\)",
+          "\\(\\frac{15x - -9}{9}\\)",
+          "\\(\\frac{15x + 14}{9}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 3 \\times 3 = 9\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(4x +1) + 3(1x -4)}{9}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{12x +3 3x -12}{9} = \\frac{15x -9}{9}\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-96",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. (Analysis #196) requires identifying like terms for optimization. Which of the following expressions is a like term to \\(18 x^3 y^2 z\\)?",
+      "a": "\\(-6.5 y^2 x^3 z\\)",
+      "opts": [
+          "\\(18 x^2 y^3 z\\)",
+          "\\(-6.5 y^2 x^3 z\\)",
+          "\\(-4 x^3 y^2\\)",
+          "\\(12 x^3 y z^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Recall that like terms must have the exact same variables raised to the exact same powers, regardless of the order in which they are written.",
+              "workingOut": ""
+          },
+          {
+              "explanation": "Analyze the variable part of the target term: \\(x^3 y^2 z\\).",
+              "workingOut": "\\(\\text{Variables: } x^3 y^2 z\\)"
+          },
+          {
+              "explanation": "Compare with the options. Note that multiplication is commutative, so \\(y^2 x^3 z\\) is identical to \\(x^3 y^2 z\\).",
+              "workingOut": "\\(y^2 x^3 z \\equiv x^3 y^2 z\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-97",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. (Analysis #197) models energy dissipation as \\(E = 2.9a^2b -3.5ab^2 +4.4a^2b -3.2ab^2\\). Simplify this expression by collecting like terms.",
+      "a": "\\(7.3a^2b -6.7ab^2\\)",
+      "opts": [
+          "\\(7.3a^2b - (0.3)ab^2\\)",
+          "\\(7.3a^2b -6.7ab^2\\)",
+          "\\(0.5999999999999996a^3b^3\\)",
+          "\\(-0.6a^2b +1.2ab^2\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Group the like terms in the expression together.",
+              "workingOut": "\\((2.9a^2b +4.4a^2b) + (-3.5ab^2 -3.2ab^2)\\)"
+          },
+          {
+              "explanation": "Add or subtract the coefficients of the grouped terms.",
+              "workingOut": "\\(2.9 + 4.4 = 7.3, \\quad -3.5 + (-3.2) = -6.7\\)"
+          },
+          {
+              "explanation": "Write the final simplified expression.",
+              "workingOut": "\\(7.3a^2b -6.7ab^2\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-98",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A water purification plant measures filter efficiency across multiple stages. (Analysis #198) defines the perimeter of an experimental containment zone with side lengths: \\(3.5x +2y -1.2\\), \\(1.5x -4.5y +3\\), \\(4x +1.5y -0.8\\), and \\(2.5x -1y +1.5\\). Find the expression for the total perimeter by simplifying the sum.",
+      "a": "\\(11.5x -2.0y +2.5\\)",
+      "opts": [
+          "\\(11.5x -2.0y +2.5\\)",
+          "\\(11.5x + (3.0)y + 2.5\\)",
+          "\\(11.5x -2.0y - 2.5\\)",
+          "\\(9.5x +2.5\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Set up the sum of the four side lengths.",
+              "workingOut": "\\(P = (3.5x +2y -1.2) + (1.5x -4.5y +3) + (4x +1.5y -0.8) + (2.5x -1y +1.5)\\)"
+          },
+          {
+              "explanation": "Group the x-terms, y-terms, and constant numbers.",
+              "workingOut": "\\((3.5 + 1.5 + 4 + 2.5)x + (2 + (-4.5) + 1.5 + (-1))y + (-1.2 + 3 + (-0.8) + 1.5)\\)"
+          },
+          {
+              "explanation": "Perform the arithmetic to find the final simplified expression.",
+              "workingOut": "\\(11.5x -2.0y +2.5\\)"
+          }
+      ]
+  },
+  {
+      "id": "y9-1b-q112-99",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "timeLimit": 120,
+      "question": "A structural engineering firm simulates deflection on a multi-span bridge truss. (Analysis #199) monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
+      "a": "\\(\\frac{18x +0}{9}\\)",
+      "opts": [
+          "\\(\\frac{6x +0}{6}\\)",
+          "\\(\\frac{18x +0}{9}\\)",
+          "\\(\\frac{18x + 5}{9}\\)",
+          "\\(\\frac{18x - 0}{9}\\)"
+      ],
+      "solutionSteps": [
+          {
+              "explanation": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\).",
+              "workingOut": "\\(\\text{Common Denominator: } 3 \\times 3 = 9\\)"
+          },
+          {
+              "explanation": "Multiply the numerator of each fraction by the denominator of the other.",
+              "workingOut": "\\(\\frac{3(4x +1) + 3(2x -1)}{9}\\)"
+          },
+          {
+              "explanation": "Expand the terms in the numerator and collect the like terms.",
+              "workingOut": "\\(\\frac{12x +3 6x -3}{9} = \\frac{18x +0}{9}\\)"
+          }
+      ]
   }
 ];
