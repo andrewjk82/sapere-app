@@ -36,7 +36,15 @@ const LearningPath = ({ profile }) => {
   const years = rawYears.map(normalizeYearLabel).filter(Boolean);
   const year = years[0] || 'Year 3';
   const courses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
-  const course = courses[0];
+  // Active course for multi-course students (e.g. Advanced + Extension 1)
+  const [activeCourse, setActiveCourse] = useState(courses[0] || 'Advanced');
+  // Keep activeCourse in sync if profile changes
+  useEffect(() => {
+    if (courses.length > 0 && !courses.includes(activeCourse)) {
+      setActiveCourse(courses[0]);
+    }
+  }, [profile?.assignedCourse]); // eslint-disable-line react-hooks/exhaustive-deps
+  const course = activeCourse;
 
   // ── Fetch curriculum ──────────────────────────────────────────────────
   useEffect(() => {
@@ -51,7 +59,7 @@ const LearningPath = ({ profile }) => {
     }
 
     const isSenior = ['Year 11', 'Year 12'].includes(year);
-    const docId = isSenior ? `${year.replace(' ', '_')}_${course}` : year.replace(' ', '_');
+    const docId = isSenior ? `${year.replace(' ', '_')}_${activeCourse}` : year.replace(' ', '_');
 
     let cancelled = false;
     const cacheKey = `curriculum-doc:v1:${docId}`;
@@ -95,7 +103,7 @@ const LearningPath = ({ profile }) => {
 
     loadCurriculum();
     return () => { cancelled = true; };
-  }, [year, activeSubject, profile?.assignedCourse]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [year, activeSubject, activeCourse]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Fetch per-chapter progress ────────────────────────────────────────
   useEffect(() => {
@@ -221,25 +229,64 @@ const LearningPath = ({ profile }) => {
     </div>
   );
 
+  // Course accent colours
+  const COURSE_ACCENTS = {
+    'Advanced':    { active: 'linear-gradient(135deg, #6366f1, #8b5cf6)', color: '#fff', inactive: 'transparent', inactiveColor: '#8b7aa7' },
+    'Extension 1': { active: 'linear-gradient(135deg, #0ea5e9, #6366f1)', color: '#fff', inactive: 'transparent', inactiveColor: '#8b7aa7' },
+    'Extension 2': { active: 'linear-gradient(135deg, #f59e0b, #ef4444)', color: '#fff', inactive: 'transparent', inactiveColor: '#8b7aa7' },
+    'Standard':    { active: 'linear-gradient(135deg, #10b981, #0ea5e9)', color: '#fff', inactive: 'transparent', inactiveColor: '#8b7aa7' },
+  };
+
   return (
     <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-      {/* Subject switch — only when the student studies more than one subject */}
-      {availableSubjects.length > 1 && (
-        <div style={{ display: 'inline-flex', padding: '4px', borderRadius: '12px', background: 'rgba(167,139,250,0.12)', gap: '4px', marginBottom: '16px' }}>
-          {availableSubjects.map((s) => (
-            <button
-              key={s}
-              onClick={() => setActiveSubject(s)}
-              style={{
-                padding: '7px 14px', borderRadius: '9px', border: 'none', cursor: 'pointer',
-                fontSize: '0.8rem', fontWeight: 800,
-                background: activeSubject === s ? '#fff' : 'transparent',
-                color: activeSubject === s ? '#1e1b4b' : '#8b7aa7',
-              }}
-            >
-              {s}
-            </button>
-          ))}
+      {/* Top-left row: course toggle (multi-course students) + subject switch */}
+      {(courses.length > 1 || availableSubjects.length > 1) && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', flexWrap: 'wrap' }}>
+          {/* Course toggle — shown only when enrolled in 2+ courses */}
+          {courses.length > 1 && (
+            <div style={{ display: 'inline-flex', padding: '4px', borderRadius: '14px', background: 'rgba(99,102,241,0.08)', gap: '4px', border: '1px solid rgba(99,102,241,0.15)' }}>
+              {courses.map((c) => {
+                const isActive = activeCourse === c;
+                const accent = COURSE_ACCENTS[c] || COURSE_ACCENTS['Advanced'];
+                return (
+                  <button
+                    key={c}
+                    onClick={() => { setActiveCourse(c); setSelectedChapter(null); setSelectedTopic(null); }}
+                    style={{
+                      padding: '8px 18px', borderRadius: '10px', border: 'none', cursor: 'pointer',
+                      fontSize: '0.82rem', fontWeight: 800, letterSpacing: '0.01em',
+                      background: isActive ? accent.active : accent.inactive,
+                      color: isActive ? accent.color : accent.inactiveColor,
+                      boxShadow: isActive ? '0 2px 12px rgba(99,102,241,0.28)' : 'none',
+                      transition: 'all 0.18s ease',
+                    }}
+                  >
+                    {c}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Subject switch — only when the student studies more than one subject */}
+          {availableSubjects.length > 1 && (
+            <div style={{ display: 'inline-flex', padding: '4px', borderRadius: '12px', background: 'rgba(167,139,250,0.12)', gap: '4px' }}>
+              {availableSubjects.map((s) => (
+                <button
+                  key={s}
+                  onClick={() => setActiveSubject(s)}
+                  style={{
+                    padding: '7px 14px', borderRadius: '9px', border: 'none', cursor: 'pointer',
+                    fontSize: '0.8rem', fontWeight: 800,
+                    background: activeSubject === s ? '#fff' : 'transparent',
+                    color: activeSubject === s ? '#1e1b4b' : '#8b7aa7',
+                  }}
+                >
+                  {s}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
