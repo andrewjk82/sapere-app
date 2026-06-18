@@ -39,12 +39,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "016ae0e8b3e4c61d0eb09098bd2ecf19",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( y^2 - 5y - 36 \\)",
-    "options": [],
-    "answer": "(y + 4)(y - 9)",
+    "options": [
+      {
+        "text": "\\((y + 4)(y + 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 4)(y - 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y + 4)(y - 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 4)(y + 9)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(y + 4)(y - 9)",
@@ -59,12 +76,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "01c4ccd537e198586e612564bb2d57c6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( 6a^3b - 12a^2b^2 \\)",
-    "options": [],
-    "answer": "6a^2b(a - 2b)",
+    "options": [
+      {
+        "text": "\\(3a^2b(a - 2b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12a^2b(a - 2b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6a^2b(a - 2b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6ab^2(a - 2b)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "6a^2b(a - 2b)",
@@ -79,12 +113,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "03eecf2354fdfb5ab0acc7f2be5bf437",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( p^2 - 64 \\)",
-    "options": [],
-    "answer": "(p - 8)(p + 8)",
+    "options": [
+      {
+        "text": "\\((p - 8)(p - 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + 8)(p + 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + 8)(p - 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - 8)(p + 8)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(p - 8)(p + 8)",
@@ -99,12 +150,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "0413a314e24a65afbb6fcb3e58588612",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 5x^2 - 16x + 3 \\)",
-    "options": [],
-    "answer": "(5x - 1)(x - 3)",
+    "options": [
+      {
+        "text": "\\((5x + 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x - 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x + 1)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x - 1)(x - 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(5x - 1)(x - 3)",
@@ -119,12 +187,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "04414bfcbf3562b6c625ff66a3ebd49b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 + x - 4 \\)",
-    "options": [],
-    "answer": "(3x + 4)(x - 1)",
+    "options": [
+      {
+        "text": "\\((3x + 4)(x - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 4)(x + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x + 1)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 4)(x - 1)",
@@ -139,12 +224,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "04447089f2fda05cb72363eac12124d0",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( u^2 - 12u + 27 \\)",
-    "options": [],
-    "answer": "(u - 3)(u - 9)",
+    "options": [
+      {
+        "text": "\\((u + 3)(u - 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u + 3)(u + 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 3)(u + 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 3)(u - 9)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(u - 3)(u - 9)",
@@ -159,12 +261,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "055ba2aae1f7573784eb0cf1759a8737",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( x^2 + 13x + 30 \\)",
-    "options": [],
-    "answer": "(x + 3)(x + 10)",
+    "options": [
+      {
+        "text": "\\((x - 3)(x + 10)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 3)(x + 10)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 3)(x - 10)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 3)(x - 10)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(x + 3)(x + 10)",
@@ -179,12 +298,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "05b614bb28923d30bde2d8431a1f43b0",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the perfect square: \\( u^2 - 26u + 169 \\)",
-    "options": [],
-    "answer": "(u - 13)^2",
+    "options": [
+      {
+        "text": "\\((u - 26)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u + 13)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 13)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 13)(u + 13)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(u - 13)^2",
@@ -199,12 +335,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "0752957bbb6f585110dedaa3bfb86b07",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( x^2 + 2x - 48 \\)",
-    "options": [],
-    "answer": "(x - 6)(x + 8)",
+    "options": [
+      {
+        "text": "\\((x + 6)(x + 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 6)(x - 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 6)(x + 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 6)(x - 8)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(x - 6)(x + 8)",
@@ -219,12 +372,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "07e9babfac392b531cf82f74ed394e0b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( by^2 - b - 3y^2 + 3 \\)",
-    "options": [],
-    "answer": "(b - 3)(y - 1)(y + 1)",
+    "options": [
+      {
+        "text": "\\((b - 3)(y + 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b + 3)(y - 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 3)(y - 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 3)(y - 1)(y - 1)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(b - 3)(y - 1)(y + 1)",
@@ -243,12 +413,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "08e47db2c52c79ace24ed8b8f8dceed2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 36 - z^2 \\)",
-    "options": [],
-    "answer": "(6 - z)(6 + z)",
+    "options": [
+      {
+        "text": "\\((6 + z)(6 - z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6 - z)(6 - z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6 + z)(6 - z) + 7rk\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6 - z)(6 + z)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(6 - z)(6 + z)",
@@ -263,12 +450,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "090c9c690abee9c9d3beed453a69fff9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 6x^2 - 7x + 2 \\)",
-    "options": [],
-    "answer": "(2x - 1)(3x - 2)",
+    "options": [
+      {
+        "text": "\\((2x - 1)(3x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 1)(3x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(3x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(3x + 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(2x - 1)(3x - 2)",
@@ -283,12 +487,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "0c4cc6d9cf3c18f93a05824400cb79ba",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 25 - x^2 \\)",
-    "options": [],
-    "answer": "(5 - x)(5 + x)",
+    "options": [
+      {
+        "text": "\\((5 + x)(5 - x) + wn4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5 + x)(5 - x)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5 - x)(5 + x)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5 - x)(5 - x)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(5 - x)(5 + x)",
@@ -303,12 +524,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "0d5280067901f64fa4f944c79335fe41",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 16x^2 - 25 \\)",
-    "options": [],
-    "answer": "(4x - 5)(4x + 5)",
+    "options": [
+      {
+        "text": "\\((4x + 5)(4x + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4x - 5)(4x + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4x + 5)(4x - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4x - 5)(4x - 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(4x - 5)(4x + 5)",
@@ -323,12 +561,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "102063ba1ec7330999129eb661ffc6f9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( x^2 - 2x - 24 \\)",
-    "options": [],
-    "answer": "(x + 4)(x - 6)",
+    "options": [
+      {
+        "text": "\\((x + 4)(x + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 4)(x - 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 4)(x - 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 4)(x + 6)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(x + 4)(x - 6)",
@@ -386,12 +641,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "1426a8b240560b6d94e574e82cb33e83",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 9x^2 - 12x + 4 \\)",
-    "options": [],
-    "answer": "(3x - 2)^2",
+    "options": [
+      {
+        "text": "\\((3x - 4)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(3x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 2)^2",
@@ -406,12 +678,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "18ead83bec48863b84a4d538a86d241f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( x^2 - 1 \\)",
-    "options": [],
-    "answer": "(x - 1)(x + 1)",
+    "options": [
+      {
+        "text": "\\((x - 1)(x - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 1)(x + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 1)(x + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 1)(x - 1)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(x - 1)(x + 1)",
@@ -426,12 +715,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "1adcb579b8b96cdef2455fc2b69b2881",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( a^2 - 9 \\)",
-    "options": [],
-    "answer": "(a - 3)(a + 3)",
+    "options": [
+      {
+        "text": "\\((a + 3)(a - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 3)(a + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 3)(a - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 3)(a + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(a - 3)(a + 3)",
@@ -446,12 +752,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "1d2caadabeb26b303e63b064988ebf8d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( 24pq - 36p \\)",
-    "options": [],
-    "answer": "12p(2q - 3)",
+    "options": [
+      {
+        "text": "\\(12p(2q - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12p(2q + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24p(2q - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6p(2q - 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "12p(2q - 3)",
@@ -509,12 +832,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "20650c017b975fb98442443ca5748d2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( 3a^2 - 3a - 18 \\)",
-    "options": [],
-    "answer": "3(a + 2)(a - 3)",
+    "options": [
+      {
+        "text": "\\(6(a + 2)(a - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3(a + 2)(a - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2(a + 2)(a - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3(a + 2)(a + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "3(a + 2)(a - 3)",
@@ -533,12 +873,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "238a361afe3dbfd345969b061d58e6d3",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 - 5x - 12 \\)",
-    "options": [],
-    "answer": "(3x + 4)(x - 3)",
+    "options": [
+      {
+        "text": "\\((3x + 4)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 4)(x + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 4)(x - 3)",
@@ -553,12 +910,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "245e902a1526b46902c28db65be1f7b0",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( ax - bx - ay + by \\)",
-    "options": [],
-    "answer": "(a - b)(x - y)",
+    "options": [
+      {
+        "text": "\\((a - b)(x - y) + 3wz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - b)(x - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + b)(x - y) + 3wz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + b)(x - y)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(a - b)(x - y)",
@@ -577,12 +951,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "2477a957dcc2a66997e85d2b31fc7ac7",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( 16x - x^3 \\)",
-    "options": [],
-    "answer": "x(4 - x)(4 + x)",
+    "options": [
+      {
+        "text": "\\(x(4 - x)(4 + x)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x(4 + x)(4 + x) + vrw\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x(4 + x)(4 + x)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x(4 - x)(4 + x) + vrw\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "x(4 - x)(4 + x)",
@@ -601,12 +992,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "25880607b359b4e005ab2869fe2924bf",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 4x^2 - 4x - 3 \\)",
-    "options": [],
-    "answer": "(2x + 1)(2x - 3)",
+    "options": [
+      {
+        "text": "\\((2x - 1)(2x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 1)(2x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(2x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(2x + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(2x + 1)(2x - 3)",
@@ -621,12 +1029,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "26cb185dfe52d1cbf5fcbdbc57efdfc5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( 5x^2 - 20 \\)",
-    "options": [],
-    "answer": "5(x - 2)(x + 2)",
+    "options": [
+      {
+        "text": "\\(10(x - 2)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5(x + 2)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3(x - 2)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5(x - 2)(x + 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "5(x - 2)(x + 2)",
@@ -688,12 +1113,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "29b1ff91490e6781a4a4388240d0e15d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( x^2 + xy + xz + yz \\)",
-    "options": [],
-    "answer": "(x + y)(x + z)",
+    "options": [
+      {
+        "text": "\\((x - y)(x + z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - y)(x - z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + y)(x - z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + y)(x + z)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(x + y)(x + z)",
@@ -708,12 +1150,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "29b7e7f3aa59dc97e77a43f404941f98",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( y^2 + y - 20 \\)",
-    "options": [],
-    "answer": "(y - 4)(y + 5)",
+    "options": [
+      {
+        "text": "\\((y - 4)(y + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y + 4)(y + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y + 4)(y - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 4)(y - 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(y - 4)(y + 5)",
@@ -748,12 +1207,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "3218727bbb25b988080c277348218f5d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( y^3 - y^2 + y - 1 \\)",
-    "options": [],
-    "answer": "(y^2 + 1)(y - 1)",
+    "options": [
+      {
+        "text": "\\((y^2 - 1)(y - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y^2 - 1)(y - 1) - wcu\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y^2 - 1)(y - 1) + wcu\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y^2 + 1)(y - 1)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(y^2 + 1)(y - 1)",
@@ -772,12 +1248,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "35b3c36ebc51799312ff4e493a991a8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( px - py + qx - qy \\)",
-    "options": [],
-    "answer": "(p + q)(x - y)",
+    "options": [
+      {
+        "text": "\\((p - q)(x - y) - 5ob\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - q)(x - y) + 5ob\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + q)(x - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - q)(x - y)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(p + q)(x - y)",
@@ -796,12 +1289,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "364e02d07895c93b29e0ffbd93e6cfb1",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 2x^2 + 3x + 1 \\)",
-    "options": [],
-    "answer": "(2x + 1)(x + 1)",
+    "options": [
+      {
+        "text": "\\((2x + 1)(x - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 1)(x - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(x + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 1)(x + 1)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(2x + 1)(x + 1)",
@@ -820,12 +1330,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "374612b2276b1efc770c58c6b898a11f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( a^3 + 3a^2 + 3a + 9 \\)",
-    "options": [],
-    "answer": "(a^2 + 3)(a + 3)",
+    "options": [
+      {
+        "text": "\\((a^2 + 3)(a + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a^2 + 3)(a - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a^2 - 3)(a - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a^2 - 3)(a + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(a^2 + 3)(a + 3)",
@@ -883,12 +1410,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "37bdb706c3fcf1311987aad8fdcf08ee",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 100 - x^2 \\)",
-    "options": [],
-    "answer": "(10 - x)(10 + x)",
+    "options": [
+      {
+        "text": "\\((10 + x)(10 - x) + 7kr\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((10 - x)(10 + x)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((10 + x)(10 - x)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((10 - x)(10 - x)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(10 - x)(10 + x)",
@@ -946,12 +1490,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "3d1fce2ebeb9eb577d797bc0ffb1c95f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 81 - y^2 \\)",
-    "options": [],
-    "answer": "(9 - y)(9 + y)",
+    "options": [
+      {
+        "text": "\\((9 - y)(9 - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((9 + y)(9 - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((9 + y)(9 - y) + 4fm\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((9 - y)(9 + y)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(9 - y)(9 + y)",
@@ -966,12 +1527,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "3d32c119d493219a6fd873f680738be2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 2x^2 + 9x + 4 \\)",
-    "options": [],
-    "answer": "(2x + 1)(x + 4)",
+    "options": [
+      {
+        "text": "\\((2x - 1)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 1)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(x + 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(2x + 1)(x + 4)",
@@ -986,12 +1564,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "41cacb785b19b8dd61314b00c5d14a3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( 15x^2 + 25x \\)",
-    "options": [],
-    "answer": "5x(3x + 5)",
+    "options": [
+      {
+        "text": "\\(10x(3x + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5x(3x + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3x(3x + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5x(3x - 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "5x(3x + 5)",
@@ -1006,12 +1601,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "43cf1ddadd744cacfb68fe1a8f67e5be",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 3x^2 + xy - 6x - 2y \\)",
-    "options": [],
-    "answer": "(x - 2)(3x + y)",
+    "options": [
+      {
+        "text": "\\((x + 2)(3x - y) + ucq\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 2)(3x - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 2)(3x + y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 2)(3x - y)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(x - 2)(3x + y)",
@@ -1026,12 +1638,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "44e9af74b63ea2ae71b2d1c7ac371782",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 2x^2 + 7x + 3 \\)",
-    "options": [],
-    "answer": "(2x + 1)(x + 3)",
+    "options": [
+      {
+        "text": "\\((2x - 1)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 1)(x + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(2x + 1)(x + 3)",
@@ -1046,12 +1675,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "45a00c723d375cbf350af8ad1166d186",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( u^2 - 12u - 28 \\)",
-    "options": [],
-    "answer": "(u + 2)(u - 14)",
+    "options": [
+      {
+        "text": "\\((u + 2)(u + 14)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u + 2)(u - 14)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 2)(u - 14)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 2)(u + 14)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(u + 2)(u - 14)",
@@ -1066,12 +1712,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "4bc45e197fbe8c95848b60427f348149",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( a^2 + 8a - 48 \\)",
-    "options": [],
-    "answer": "(a - 4)(a + 12)",
+    "options": [
+      {
+        "text": "\\((a - 4)(a - 12)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 4)(a + 12)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 4)(a + 12)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 4)(a - 12)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(a - 4)(a + 12)",
@@ -1086,12 +1749,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "4bc97a5022654f6bd79bd1dc2b57b7c0",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( 3ax - 2bx - 3ay + 2by \\)",
-    "options": [],
-    "answer": "(3a - 2b)(x - y)",
+    "options": [
+      {
+        "text": "\\((3a - 2b)(x - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3a + 2b)(x - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3a + 2b)(x - y) + 161\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3a - 2b)(x - y) + 161\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(3a - 2b)(x - y)",
@@ -1110,12 +1790,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "4c08eec09b72f24d5cd0b9a10be288d5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( 3t^3 + 4t^2 - 12t - 16 \\)",
-    "options": [],
-    "answer": "(t - 2)(t + 2)(3t + 4)",
+    "options": [
+      {
+        "text": "\\((t - 2)(t + 2)(3t + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t - 2)(t + 2)(3t - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t - 2)(t - 2)(3t + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t + 2)(t + 2)(3t + 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(t - 2)(t + 2)(3t + 4)",
@@ -1138,12 +1835,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "4e4bacdb4abbee68d35be84bb231871f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( d^2 - 12d + 32 \\)",
-    "options": [],
-    "answer": "(d - 4)(d - 8)",
+    "options": [
+      {
+        "text": "\\((d + 4)(d - 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((d + 4)(d + 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((d - 4)(d + 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((d - 4)(d - 8)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(d - 4)(d - 8)",
@@ -1158,12 +1872,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "4ea0d163d5270f6e3f42d01cc15c6f3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( x^2 + 4x + 3 \\)",
-    "options": [],
-    "answer": "(x + 1)(x + 3)",
+    "options": [
+      {
+        "text": "\\((x + 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 1)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 1)(x - 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(x + 1)(x + 3)",
@@ -1182,12 +1913,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "50abcefdcf3151598f0408b9b9c55072",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( px - py \\)",
-    "options": [],
-    "answer": "p(x - y)",
+    "options": [
+      {
+        "text": "\\(p(x + y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(p(x - y) + ow6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(p(x + y) + ow6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(p(x - y)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "p(x - y)",
@@ -1202,12 +1950,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "510000ba6ae837b5548d078d9cfb2bf7",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( y^2 + 6y + 8 \\)",
-    "options": [],
-    "answer": "(y + 2)(y + 4)",
+    "options": [
+      {
+        "text": "\\((y - 2)(y - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y + 2)(y + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 2)(y + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y + 2)(y - 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(y + 2)(y + 4)",
@@ -1246,12 +2011,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "52ae7c644c067c1f42dc25002fc2265b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 4a^4b^3 + 8a^3b^4 \\)",
-    "options": [],
-    "answer": "4a^3b^3(a + 2b)",
+    "options": [
+      {
+        "text": "\\(4a^3b^3(a - 2b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4a^3b^3(a + 2b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8a^3b^3(a + 2b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2a^3b^3(a + 2b)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "4a^3b^3(a + 2b)",
@@ -1266,12 +2048,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "5350d2a39140af95d88b637df59ec73f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 9a^2 - 12a - 5 \\)",
-    "options": [],
-    "answer": "(3a + 1)(3a - 5)",
+    "options": [
+      {
+        "text": "\\((3a + 1)(3a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3a + 1)(3a - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3a - 1)(3a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3a - 1)(3a - 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3a + 1)(3a - 5)",
@@ -1329,12 +2128,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "596df8d0de362c2dd337ad0d200bf056",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( ab + ac + db + dc \\)",
-    "options": [],
-    "answer": "(a + d)(b + c)",
+    "options": [
+      {
+        "text": "\\((a - d)(b + c)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + d)(b + c)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + d)(b - c)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - d)(b - c)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(a + d)(b + c)",
@@ -1357,12 +2173,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "5c01066274654304d339b72184dee752",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( a^2 - 3a - 10 \\)",
-    "options": [],
-    "answer": "(a + 2)(a - 5)",
+    "options": [
+      {
+        "text": "\\((a - 2)(a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 2)(a - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 2)(a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 2)(a - 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(a + 2)(a - 5)",
@@ -1377,12 +2210,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "62ff81f8ce499ed381fb7356deafbad9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the perfect square: \\( x^2 + 6x + 9 \\)",
-    "options": [],
-    "answer": "(x + 3)^2",
+    "options": [
+      {
+        "text": "\\((x - 3)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 6)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 3)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 3)^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(x + 3)^2",
@@ -1397,12 +2247,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "631b396b24ff26340c2ddd9ab9ccb3af",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 - 2x - 8 \\)",
-    "options": [],
-    "answer": "(3x + 4)(x - 2)",
+    "options": [
+      {
+        "text": "\\((3x + 4)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 4)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x + 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 4)(x - 2)",
@@ -1417,12 +2284,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "66f300de1f0639901fec52087d6f20a2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( b^3 - 4b^2 - 3b + 12 \\)",
-    "options": [],
-    "answer": "(b^2 - 3)(b - 4)",
+    "options": [
+      {
+        "text": "\\((b^2 + 3)(b - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b^2 - 3)(b - 4) + mur\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b^2 - 3)(b - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b^2 + 3)(b - 4) + mur\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(b^2 - 3)(b - 4)",
@@ -1441,12 +2325,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "680f0709cccd8a57a2ee5147afcb39de",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 - x - 2 \\)",
-    "options": [],
-    "answer": "(3x + 2)(x - 1)",
+    "options": [
+      {
+        "text": "\\((3x - 2)(x - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)(x - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)(x + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(x + 1)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 2)(x - 1)",
@@ -1461,12 +2362,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "68a8ae8d6b31267e72c3448b560e19a2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( y^3 - y \\)",
-    "options": [],
-    "answer": "y(y - 1)(y + 1)",
+    "options": [
+      {
+        "text": "\\(y(y + 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y + 1)(y + 1) + uc5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y - 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y - 1)(y + 1) + uc5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "y(y - 1)(y + 1)",
@@ -1485,12 +2403,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "6983fe368d76ef8605e9484854f20432",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( m^2 - m - 6 \\)",
-    "options": [],
-    "answer": "(m + 2)(m - 3)",
+    "options": [
+      {
+        "text": "\\((m + 2)(m + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((m + 2)(m - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((m - 2)(m + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((m - 2)(m - 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(m + 2)(m - 3)",
@@ -1505,12 +2440,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "6ee59e3d9671838e493c2f8a7f973a86",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 1 - 36c^2 \\)",
-    "options": [],
-    "answer": "(1 - 6c)(1 + 6c)",
+    "options": [
+      {
+        "text": "\\((1 - 6c)(1 + 6c)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1 + 6c)(1 - 6c) + pl8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1 + 6c)(1 - 6c)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1 - 6c)(1 - 6c)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(1 - 6c)(1 + 6c)",
@@ -1525,12 +2477,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "6f28f5f16d36042c3f7aa49cf5e9fa18",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( x^2 + x - 6 \\)",
-    "options": [],
-    "answer": "(x - 2)(x + 3)",
+    "options": [
+      {
+        "text": "\\((x - 2)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 2)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 2)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 2)(x + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(x - 2)(x + 3)",
@@ -1549,12 +2518,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "7162c319eee6d29ad8f49d806c2aa9bc",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( 4b^2 - 8bc \\)",
-    "options": [],
-    "answer": "4b(b - 2c)",
+    "options": [
+      {
+        "text": "\\(8b(b - 2c)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2b(b - 2c)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4b(b + 2c)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4b(b - 2c)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "4b(b - 2c)",
@@ -1569,12 +2555,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "725c68cd9ec1e7cf9a5639c1b27fcd06",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( (x + y)^2 - a^2 \\)",
-    "options": [],
-    "answer": "(x + y - a)(x + y + a)",
+    "options": [
+      {
+        "text": "\\((x - y - a)(x - y + a)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + y - a)(x + y + a)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - y - a)(x - y - a)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - y - a)(x + y + a)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(x + y - a)(x + y + a)",
@@ -1589,12 +2592,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "73daedb30f7977ed1202fb399e97ee04",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 2x^2 + 9x - 5 \\)",
-    "options": [],
-    "answer": "(2x - 1)(x + 5)",
+    "options": [
+      {
+        "text": "\\((2x - 1)(x + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 1)(x - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(x + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(x - 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(2x - 1)(x + 5)",
@@ -1609,12 +2629,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "7462fcecfc2b2d50857a756fe0a8d2b9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( pr + qr - ps - qs \\)",
-    "options": [],
-    "answer": "(p + q)(r - s)",
+    "options": [
+      {
+        "text": "\\((p - q)(r - s) + k1p\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - q)(r - s) - k1p\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - q)(r - s)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + q)(r - s)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(p + q)(r - s)",
@@ -1633,12 +2670,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "780de26982f94e8d6166cf2c45b60192",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 + 14x + 8 \\)",
-    "options": [],
-    "answer": "(3x + 2)(x + 4)",
+    "options": [
+      {
+        "text": "\\((3x + 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(x - 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 2)(x + 4)",
@@ -1653,12 +2707,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "7914d14d665c7fd104bac1bc4fb893a6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 3w^2 + 25w + 28 \\)",
-    "options": [],
-    "answer": "(3w + 4)(w + 7)",
+    "options": [
+      {
+        "text": "\\((3w - 4)(w - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3w - 4)(w + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3w + 4)(w - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3w + 4)(w + 7)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3w + 4)(w + 7)",
@@ -1673,12 +2744,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "79a9ac6d84134b0c2ef12e8c568aace9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( bx + 4b + 3x + 12 \\)",
-    "options": [],
-    "answer": "(b + 3)(x + 4)",
+    "options": [
+      {
+        "text": "\\((b + 3)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 3)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b + 3)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 3)(x + 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(b + 3)(x + 4)",
@@ -1697,12 +2785,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "7b2d95f31e898dfcd0659e7aa06f7ebb",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the perfect square: \\( b^2 - 14b + 49 \\)",
-    "options": [],
-    "answer": "(b - 7)^2",
+    "options": [
+      {
+        "text": "\\((b - 14)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 7)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b + 7)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 7)(b + 7)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(b - 7)^2",
@@ -1737,12 +2842,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "7dac55f002cf1ab9ee499f2b304b8c2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 2z^2 + z - 28 \\)",
-    "options": [],
-    "answer": "(2z - 7)(z + 4)",
+    "options": [
+      {
+        "text": "\\((2z + 7)(z - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2z - 7)(z - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2z - 7)(z + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2z + 7)(z + 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(2z - 7)(z + 4)",
@@ -1757,12 +2879,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "7f4fd2ed5c967d8e865dd87fd515674b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( b^2 - 11b + 28 \\)",
-    "options": [],
-    "answer": "(b - 4)(b - 7)",
+    "options": [
+      {
+        "text": "\\((b - 4)(b + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 4)(b - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b + 4)(b + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b + 4)(b - 7)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(b - 4)(b - 7)",
@@ -1777,12 +2916,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "7fb6b8b58d5197c24a3b9252b379eecc",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 3x^2 + 14x + 8 \\)",
-    "options": [],
-    "answer": "(3x + 2)(x + 4)",
+    "options": [
+      {
+        "text": "\\((3x + 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(x - 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 2)(x + 4)",
@@ -1797,12 +2953,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "84d870e36efe8ffff7450985b936c81a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( 8a - 20 \\)",
-    "options": [],
-    "answer": "4(2a - 5)",
+    "options": [
+      {
+        "text": "\\(4(2a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2(2a - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4(2a - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8(2a - 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "4(2a - 5)",
@@ -1821,12 +2994,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "85f72e7e7ab3e739bed5990cfadfecf6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( m^2 + 3mn \\)",
-    "options": [],
-    "answer": "m(m + 3n)",
+    "options": [
+      {
+        "text": "\\(m(m + 3n)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(m(m - 3n)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(m(m - 3n) - gfx\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(m(m - 3n) + gfx\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "m(m + 3n)",
@@ -1841,12 +3031,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "876b0963815ddae0d2c4f313dfba2578",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 4t^3 + 8t^2 + 12t \\)",
-    "options": [],
-    "answer": "4t(t^2 + 2t + 3)",
+    "options": [
+      {
+        "text": "\\(4t(t^2 + 2t + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2t(t^2 + 2t + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4t(t^2 - 2t + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8t(t^2 + 2t + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "4t(t^2 + 2t + 3)",
@@ -1865,12 +3072,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "883131f37a8d8bae25b55cc9b3f9a60c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( z^2 + 18z + 81 \\)",
-    "options": [],
-    "answer": "(z + 9)^2",
+    "options": [
+      {
+        "text": "\\((z + 9)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z + 18)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z - 9)(z + 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z - 9)^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(z + 9)^2",
@@ -1885,12 +3109,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "8914b8565c39e152253c5c2450d291fb",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 3w^2 + 16w + 16 \\)",
-    "options": [],
-    "answer": "(3w + 4)(w + 4)",
+    "options": [
+      {
+        "text": "\\((3w - 4)(w - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3w - 4)(w + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3w + 4)(w - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3w + 4)(w + 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3w + 4)(w + 4)",
@@ -1905,12 +3146,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "89334be5b0e2a753f155381ee39ca047",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( y^4 + y^3 + y^2 + y \\)",
-    "options": [],
-    "answer": "y(y^2 + 1)(y + 1)",
+    "options": [
+      {
+        "text": "\\(y(y^2 - 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y^2 - 1)(y - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y^2 + 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y^2 + 1)(y - 1)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "y(y^2 + 1)(y + 1)",
@@ -1929,12 +3187,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "8e04ddbec267485517329818a6212779",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 2x^2 + x - 6 \\)",
-    "options": [],
-    "answer": "(2x - 3)(x + 2)",
+    "options": [
+      {
+        "text": "\\((2x + 3)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 3)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 3)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 3)(x - 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(2x - 3)(x + 2)",
@@ -1949,12 +3224,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "8f58209d5af9068aef931f620fad79c0",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( 81 - b^4 \\)",
-    "options": [],
-    "answer": "(3 - b)(3 + b)(9 + b^2)",
+    "options": [
+      {
+        "text": "\\((3 - b)(3 + b)(9 + b^2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3 + b)(3 + b)(9 + b^2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3 - b)(3 + b)(9 - b^2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3 - b)(3 - b)(9 + b^2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(3 - b)(3 + b)(9 + b^2)",
@@ -1973,12 +3265,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "923d16bb4c01c2af1bdccf3bf51a9e81",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( a^3 + 5a^2 - a - 5 \\)",
-    "options": [],
-    "answer": "(a - 1)(a + 1)(a + 5)",
+    "options": [
+      {
+        "text": "\\((a - 1)(a - 1)(a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 1)(a + 1)(a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 1)(a + 1)(a - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 1)(a + 1)(a + 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(a - 1)(a + 1)(a + 5)",
@@ -1997,12 +3306,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "930347159d9cdd9cac1be30bc1bf958d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 9b^2 - 16 \\)",
-    "options": [],
-    "answer": "(3b - 4)(3b + 4)",
+    "options": [
+      {
+        "text": "\\((3b + 4)(3b - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3b - 4)(3b - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3b - 4)(3b + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3b + 4)(3b + 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(3b - 4)(3b + 4)",
@@ -2060,12 +3386,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "95641a40b7b98fafa3c4fe68da260ff1",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( y^2 + 5y \\)",
-    "options": [],
-    "answer": "y(y + 5)",
+    "options": [
+      {
+        "text": "\\(y(y - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y - 5) - cp4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y - 5) + cp4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "y(y + 5)",
@@ -2080,12 +3423,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "961cff526931045162d4807235520d03",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( a^2 - 4a - ab + 4b \\)",
-    "options": [],
-    "answer": "(a - b)(a - 4)",
+    "options": [
+      {
+        "text": "\\((a - b)(a - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + b)(a - 4) + nj7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - b)(a - 4) + nj7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + b)(a - 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(a - b)(a - 4)",
@@ -2104,12 +3464,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "9734be5cfc53fa016259df2bde2b424c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 1 - m^2 \\)",
-    "options": [],
-    "answer": "(1 - m)(1 + m)",
+    "options": [
+      {
+        "text": "\\((1 - m)(1 + m)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1 + m)(1 - m)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1 + m)(1 - m) + v0l\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1 - m)(1 - m)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(1 - m)(1 + m)",
@@ -2124,12 +3501,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "98a8a080ee26bd4a03477b07d17e78f9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 49p^2 - 64q^2 \\)",
-    "options": [],
-    "answer": "(7p - 8q)(7p + 8q)",
+    "options": [
+      {
+        "text": "\\((7p - 8q)(7p - 8q)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((7p - 8q)(7p + 8q)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((7p + 8q)(7p - 8q)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((7p + 8q)(7p - 8q) + 8qc\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(7p - 8q)(7p + 8q)",
@@ -2144,12 +3538,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "9a72b6c17e5afa4f060f23a95db9f6c7",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the perfect square: \\( p^2 - 18p + 81 \\)",
-    "options": [],
-    "answer": "(p - 9)^2",
+    "options": [
+      {
+        "text": "\\((p - 9)(p + 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + 9)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - 18)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - 9)^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(p - 9)^2",
@@ -2317,12 +3728,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "9c23936e324119390582c7fa66d06734",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 2a^3 - 3a^2b - 8a + 12b \\)",
-    "options": [],
-    "answer": "(a - 2)(a + 2)(2a - 3b)",
+    "options": [
+      {
+        "text": "\\((a - 2)(a - 2)(2a - 3b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 2)(a + 2)(2a - 3b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 2)(a + 2)(2a - 3b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 2)(a + 2)(2a + 3b)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(a - 2)(a + 2)(2a - 3b)",
@@ -2341,12 +3769,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "9eff7ce45189ebf65baac60415d10b71",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( y^2 - 8y + 15 \\)",
-    "options": [],
-    "answer": "(y - 3)(y - 5)",
+    "options": [
+      {
+        "text": "\\((y + 3)(y + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 3)(y - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y + 3)(y - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 3)(y + 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(y - 3)(y - 5)",
@@ -2424,12 +3869,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "a30ad57e133a746d50862c5cfcaf6f80",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 4w^2 - 1 \\)",
-    "options": [],
-    "answer": "(2w - 1)(2w + 1)",
+    "options": [
+      {
+        "text": "\\((2w + 1)(2w - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2w + 1)(2w + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2w - 1)(2w + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2w - 1)(2w - 1)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(2w - 1)(2w + 1)",
@@ -2444,12 +3906,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "a494d00b574b6c0c7d6265846998b36e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the perfect square: \\( a^2 + 16a + 64 \\)",
-    "options": [],
-    "answer": "(a + 8)^2",
+    "options": [
+      {
+        "text": "\\((a + 8)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 16)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 8)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 8)(a + 8)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(a + 8)^2",
@@ -2464,12 +3943,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "a4cf89a298b4a16dedab25cee3e971a8",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( p^2 - 17p - 60 \\)",
-    "options": [],
-    "answer": "(p + 3)(p - 20)",
+    "options": [
+      {
+        "text": "\\((p + 3)(p - 20)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + 3)(p + 20)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - 3)(p - 20)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - 3)(p + 20)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(p + 3)(p - 20)",
@@ -2484,12 +3980,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "a7b19cb3bc285ae59dc3d7c91b74d495",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( xy + xz - y - z \\)",
-    "options": [],
-    "answer": "(x - 1)(y + z)",
+    "options": [
+      {
+        "text": "\\((x + 1)(y - z) + 4i3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 1)(y - z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 1)(y + z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 1)(y - z)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(x - 1)(y + z)",
@@ -2508,12 +4021,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "a7f8c72d65fa4ca3dd13339857f17c03",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 4x^2 - 11x - 3 \\)",
-    "options": [],
-    "answer": "(4x + 1)(x - 3)",
+    "options": [
+      {
+        "text": "\\((4x - 1)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4x - 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4x + 1)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4x + 1)(x + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(4x + 1)(x - 3)",
@@ -2528,12 +4058,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "a80ef3c5513232076852c6d202201ce6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 + 5x - 12 \\)",
-    "options": [],
-    "answer": "(3x - 4)(x + 3)",
+    "options": [
+      {
+        "text": "\\((3x - 4)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 4)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 4)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x - 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 4)(x + 3)",
@@ -2548,12 +4095,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "a9efea66b393ef95c97bef67fe477478",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 9y^2 - y^3 \\)",
-    "options": [],
-    "answer": "y^2(9 - y)",
+    "options": [
+      {
+        "text": "\\(y^2(9 + y) + o4r\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2(9 - y) + o4r\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2(9 + y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2(9 - y)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "y^2(9 - y)",
@@ -2568,12 +4132,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "aac06f49dc099f96e138170a26fba283",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 3x^2 + 10x - 8 \\)",
-    "options": [],
-    "answer": "(3x - 2)(x + 4)",
+    "options": [
+      {
+        "text": "\\((3x + 2)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(x - 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 2)(x + 4)",
@@ -2588,12 +4169,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "ab30fc6825e45121903981c5d324b606",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 - 4x + 1 \\)",
-    "options": [],
-    "answer": "(3x - 1)(x - 1)",
+    "options": [
+      {
+        "text": "\\((3x - 1)(x - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 1)(x + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 1)(x - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 1)(x + 1)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 1)(x - 1)",
@@ -2608,12 +4206,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "aba2af6fb26828cb35802423330b6456",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( 18xy - 12xz \\)",
-    "options": [],
-    "answer": "6x(3y - 2z)",
+    "options": [
+      {
+        "text": "\\(6x(3y + 2z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3x(3y - 2z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6x(3y - 2z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12x(3y - 2z)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "6x(3y - 2z)",
@@ -2632,12 +4247,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "ac47477c988effb4e5f4141c7062db6c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( y^2 - 16 \\)",
-    "options": [],
-    "answer": "(y - 4)(y + 4)",
+    "options": [
+      {
+        "text": "\\((y + 4)(y - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 4)(y - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y + 4)(y + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 4)(y + 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(y - 4)(y + 4)",
@@ -2652,12 +4284,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "adaaf4f42dc4e802113d978a0e82fb3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( a^2 + 8a + 7 \\)",
-    "options": [],
-    "answer": "(a + 1)(a + 7)",
+    "options": [
+      {
+        "text": "\\((a + 1)(a - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 1)(a - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 1)(a + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 1)(a + 7)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(a + 1)(a + 7)",
@@ -2672,12 +4321,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "aeea8bab6df2e10d55fa1701c35173f6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( t^2 + 18t - 40 \\)",
-    "options": [],
-    "answer": "(t - 2)(t + 20)",
+    "options": [
+      {
+        "text": "\\((t - 2)(t - 20)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t - 2)(t + 20)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t + 2)(t - 20)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t + 2)(t + 20)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(t - 2)(t + 20)",
@@ -2692,12 +4358,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "b0cd151be414e82e5898bf5f90dd0bec",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( y^3 + 5y^2 - 2y - 10 \\)",
-    "options": [],
-    "answer": "(y^2 - 2)(y + 5)",
+    "options": [
+      {
+        "text": "\\((y^2 + 2)(y - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y^2 - 2)(y + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y^2 - 2)(y - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y^2 + 2)(y - 5) + 3et\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(y^2 - 2)(y + 5)",
@@ -2716,12 +4399,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "b52066584dcbb001878eb3343f06517c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( u^3 - 6u^2 + 5u \\)",
-    "options": [],
-    "answer": "u(u - 1)(u - 5)",
+    "options": [
+      {
+        "text": "\\(u(u + 1)(u - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(u(u + 1)(u - 5) + ao5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(u(u - 1)(u - 5) + ao5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(u(u - 1)(u - 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "u(u - 1)(u - 5)",
@@ -2740,12 +4440,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "b60aaa607dfb20204ba991d27118a10c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 - 10x + 8 \\)",
-    "options": [],
-    "answer": "(3x - 4)(x - 2)",
+    "options": [
+      {
+        "text": "\\((3x - 4)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 4)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 4)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x - 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 4)(x - 2)",
@@ -2760,12 +4477,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "b66a8f912beaa548a7e7af4984e09690",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( p^2 + 3p - 10 \\)",
-    "options": [],
-    "answer": "(p - 2)(p + 5)",
+    "options": [
+      {
+        "text": "\\((p + 2)(p + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + 2)(p - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - 2)(p - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - 2)(p + 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(p - 2)(p + 5)",
@@ -2780,12 +4514,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "b682ac771cee4dedf11703031423531a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( y^2 - 36y \\)",
-    "options": [],
-    "answer": "y(y - 36)",
+    "options": [
+      {
+        "text": "\\(y(y - 36)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y - 36) + vi4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y + 36)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y + 36) + vi4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "y(y - 36)",
@@ -2800,12 +4551,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "b80b215352386233271000fd9b6aaa61",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the perfect square: \\( z^2 + 22z + 121 \\)",
-    "options": [],
-    "answer": "(z + 11)^2",
+    "options": [
+      {
+        "text": "\\((z + 11)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z + 22)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z - 11)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z - 11)(z + 11)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(z + 11)^2",
@@ -2820,12 +4588,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "ba661a184394a93fcf84f162b13624cb",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( p^2 + 9p + 18 \\)",
-    "options": [],
-    "answer": "(p + 3)(p + 6)",
+    "options": [
+      {
+        "text": "\\((p - 3)(p + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + 3)(p + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - 3)(p - 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + 3)(p - 6)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(p + 3)(p + 6)",
@@ -2840,12 +4625,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "bb896bdc463f295fd396f6d03a0a75c8",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 49x^2y^2 - 81 \\)",
-    "options": [],
-    "answer": "(7xy - 9)(7xy + 9)",
+    "options": [
+      {
+        "text": "\\((7xy + 9)(7xy - 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((7xy - 9)(7xy - 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((7xy + 9)(7xy - 9) + hg9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((7xy - 9)(7xy + 9)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(7xy - 9)(7xy + 9)",
@@ -2903,12 +4705,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "be83960228b761433e507a89eef87413",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( x^2y + y^2x \\)",
-    "options": [],
-    "answer": "xy(x + y)",
+    "options": [
+      {
+        "text": "\\(xy(x + y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(xy(x - y) - vwe\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(xy(x - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(xy(x - y) + vwe\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "xy(x + y)",
@@ -2923,12 +4742,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "bef35c821662f5f58281fd812937a57d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the perfect square: \\( y^2 + 4y + 4 \\)",
-    "options": [],
-    "answer": "(y + 2)^2",
+    "options": [
+      {
+        "text": "\\((y + 2)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y + 4)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 2)(y + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 2)^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(y + 2)^2",
@@ -2943,12 +4779,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "bfe1997a4f982ba611fa5ef33c1f5828",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( a^4 - b^4 \\)",
-    "options": [],
-    "answer": "(a - b)(a + b)(a^2 + b^2)",
+    "options": [
+      {
+        "text": "\\((a - b)(a + b)(a^2 + b^2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - b)(a - b)(a^2 + b^2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - b)(a + b)(a^2 - b^2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + b)(a + b)(a^2 + b^2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(a - b)(a + b)(a^2 + b^2)",
@@ -2967,12 +4820,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "c3955d94b4a020fb5c108cd35a087ab2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 + 10x - 8 \\)",
-    "options": [],
-    "answer": "(3x - 2)(x + 4)",
+    "options": [
+      {
+        "text": "\\((3x - 2)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)(x - 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 2)(x + 4)",
@@ -3030,12 +4900,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "c7cdb1490172987b8e9e870880664657",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 + 2x - 8 \\)",
-    "options": [],
-    "answer": "(3x - 4)(x + 2)",
+    "options": [
+      {
+        "text": "\\((3x + 4)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 4)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 4)(x + 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 4)(x + 2)",
@@ -3050,12 +4937,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "ca9f046b71bcadaf0206e1cada9463d4",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( t^2 - 10t + 24 \\)",
-    "options": [],
-    "answer": "(t - 4)(t - 6)",
+    "options": [
+      {
+        "text": "\\((t + 4)(t - 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t - 4)(t + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t + 4)(t + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t - 4)(t - 6)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(t - 4)(t - 6)",
@@ -3113,12 +5017,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "cb945d4937ccc57ef2c74fccf85cc2bc",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 6x^2 - x - 2 \\)",
-    "options": [],
-    "answer": "(2x - 1)(3x + 2)",
+    "options": [
+      {
+        "text": "\\((2x - 1)(3x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(3x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(3x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 1)(3x - 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(2x - 1)(3x + 2)",
@@ -3133,12 +5054,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "cca4da8a1f5ae7cd6e8c222e8d642f62",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 4x^2 + 11x - 3 \\)",
-    "options": [],
-    "answer": "(4x - 1)(x + 3)",
+    "options": [
+      {
+        "text": "\\((4x - 1)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4x - 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4x + 1)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4x + 1)(x + 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(4x - 1)(x + 3)",
@@ -3153,12 +5091,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "ce113836ba607674eb31d114ebbc14d6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( x^2 - 36 \\)",
-    "options": [],
-    "answer": "(x - 6)(x + 6)",
+    "options": [
+      {
+        "text": "\\((x + 6)(x - 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 6)(x + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 6)(x + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 6)(x - 6)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(x - 6)(x + 6)",
@@ -3173,12 +5128,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "d2b969a99b39d15b11a9b5d99ba9d7e7",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the perfect square: \\( w^2 - 30w + 225 \\)",
-    "options": [],
-    "answer": "(w - 15)^2",
+    "options": [
+      {
+        "text": "\\((w + 15)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((w - 15)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((w - 30)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((w - 15)(w + 15)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(w - 15)^2",
@@ -3193,12 +5165,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "d41d48846c876cdef06844fbd6399452",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 25x^2 - 81y^2 \\)",
-    "options": [],
-    "answer": "(5x - 9y)(5x + 9y)",
+    "options": [
+      {
+        "text": "\\((5x - 9y)(5x - 9y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x - 9y)(5x + 9y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x + 9y)(5x - 9y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x + 9y)(5x - 9y) + ajz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(5x - 9y)(5x + 9y)",
@@ -3213,12 +5202,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "d458ed540e40aba47b214a035d5e7675",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( u^2 - 15u + 56 \\)",
-    "options": [],
-    "answer": "(u - 7)(u - 8)",
+    "options": [
+      {
+        "text": "\\((u - 7)(u - 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u + 7)(u + 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u + 7)(u - 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 7)(u + 8)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(u - 7)(u - 8)",
@@ -3233,12 +5239,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "d518e1edfec70e8f4819437449408991",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( 16u^2 - v^2 \\)",
-    "options": [],
-    "answer": "(4u - v)(4u + v)",
+    "options": [
+      {
+        "text": "\\((4u - v)(4u - v)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4u + v)(4u - v)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4u + v)(4u - v) + 65f\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4u - v)(4u + v)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(4u - v)(4u + v)",
@@ -3253,12 +5276,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "d8b793a82b92b28eeca824c32153d68b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( u^2 + 11u - 60 \\)",
-    "options": [],
-    "answer": "(u - 4)(u + 15)",
+    "options": [
+      {
+        "text": "\\((u + 4)(u - 15)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u + 4)(u + 15)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 4)(u + 15)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 4)(u - 15)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(u - 4)(u + 15)",
@@ -3293,12 +5333,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "e380ebb5189a747163fc2a0a20d4081d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( 6x - 6y - px + py \\)",
-    "options": [],
-    "answer": "(6 - p)(x - y)",
+    "options": [
+      {
+        "text": "\\((6 + p)(x - y) + 9y7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6 + p)(x - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6 - p)(x - y) + 9y7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6 - p)(x - y)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(6 - p)(x - y)",
@@ -3317,12 +5374,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "e4eb047c2a4a223e46378e4d480e029e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the expression completely: \\( 3y^3 - 12y^2 - 2y + 8 \\)",
-    "options": [],
-    "answer": "(3y^2 - 2)(y - 4)",
+    "options": [
+      {
+        "text": "\\((3y^2 - 2)(y - 4) + 3q0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3y^2 + 2)(y - 4) + 3q0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3y^2 + 2)(y - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3y^2 - 2)(y - 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3y^2 - 2)(y - 4)",
@@ -3380,12 +5454,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "ea08c9a38e9e5c9841118553803b71e0",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( 3x + 12 \\)",
-    "options": [],
-    "answer": "3(x + 4)",
+    "options": [
+      {
+        "text": "\\(3(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3(x + 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "3(x + 4)",
@@ -3404,12 +5495,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "ea548f4c89f47f5a8cbb16bb753793d2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 5x^2 - 14x + 8 \\)",
-    "options": [],
-    "answer": "(5x - 4)(x - 2)",
+    "options": [
+      {
+        "text": "\\((5x + 4)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x + 4)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x - 4)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x - 4)(x + 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(5x - 4)(x - 2)",
@@ -3424,12 +5532,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "eb0e623f1b456de0739d2d88cf3d8880",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( b^2 + 10b + 24 \\)",
-    "options": [],
-    "answer": "(b + 4)(b + 6)",
+    "options": [
+      {
+        "text": "\\((b - 4)(b + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 4)(b - 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b + 4)(b + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b + 4)(b - 6)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(b + 4)(b + 6)",
@@ -3444,12 +5569,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "eb1b263f9b4278149e9836fbf6bceb17",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( x^2 - x - 72 \\)",
-    "options": [],
-    "answer": "(x + 8)(x - 9)",
+    "options": [
+      {
+        "text": "\\((x + 8)(x + 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 8)(x + 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 8)(x - 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 8)(x - 9)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(x + 8)(x - 9)",
@@ -3464,12 +5606,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "ed8863b078bd94d3805497908b315484",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 3x^2 + 7x + 2 \\)",
-    "options": [],
-    "answer": "(3x + 1)(x + 2)",
+    "options": [
+      {
+        "text": "\\((3x - 1)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 1)(x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 1)(x + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 1)(x + 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 1)(x + 2)",
@@ -3488,12 +5647,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "ed9ca57e2bb4fb491f2da11439aecc33",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Factor the quadratic expression: \\( 2x^2 + 11x - 21 \\)",
-    "options": [],
-    "answer": "(2x - 3)(x + 7)",
+    "options": [
+      {
+        "text": "\\((2x - 3)(x - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 3)(x - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 3)(x + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 3)(x + 7)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(2x - 3)(x + 7)",
@@ -3508,12 +5684,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "eda22d2274ebfcc7f2e694adf2194839",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( z^4 - 5z^2 + 4 \\)",
-    "options": [],
-    "answer": "(z - 1)(z + 1)(z - 2)(z + 2)",
+    "options": [
+      {
+        "text": "\\((z + 1)(z + 1)(z - 2)(z + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z - 1)(z + 1)(z - 2)(z + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z - 1)(z - 1)(z - 2)(z + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z - 1)(z + 1)(z - 2)(z - 2)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(z - 1)(z + 1)(z - 2)(z + 2)",
@@ -3599,12 +5792,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "f521488eea9b0607405b39a7739cf798",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( z^2 - 9z + 20 \\)",
-    "options": [],
-    "answer": "(z - 4)(z - 5)",
+    "options": [
+      {
+        "text": "\\((z - 4)(z - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z + 4)(z + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z - 4)(z + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z + 4)(z - 5)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(z - 4)(z - 5)",
@@ -3619,12 +5829,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "f5b103c3e5369c60b56e36927ca15f6c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor using difference of squares: \\( a^2 - 9b^2 \\)",
-    "options": [],
-    "answer": "(a - 3b)(a + 3b)",
+    "options": [
+      {
+        "text": "\\((a + 3b)(a - 3b) + pwq\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 3b)(a - 3b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 3b)(a - 3b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 3b)(a + 3b)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(a - 3b)(a + 3b)",
@@ -3682,12 +5909,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "f7ceee92fcb40f6c66d21e44d7272c6c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by grouping in pairs: \\( 3x^3 - 9x^2 - bx + 3b \\)",
-    "options": [],
-    "answer": "(3x^2 - b)(x - 3)",
+    "options": [
+      {
+        "text": "\\((3x^2 + b)(x - 3) + eoq\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x^2 - b)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x^2 - b)(x - 3) + eoq\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x^2 + b)(x - 3)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3x^2 - b)(x - 3)",
@@ -3726,12 +5970,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "fb48025d9633114e8829c4b2f65080c5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor the quadratic expression: \\( u^2 - 5u + 4 \\)",
-    "options": [],
-    "answer": "(u - 1)(u - 4)",
+    "options": [
+      {
+        "text": "\\((u - 1)(u - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u + 1)(u - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u + 1)(u + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u - 1)(u + 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "(u - 1)(u - 4)",
@@ -3793,12 +6054,29 @@ export const Y11_CH1B_QUESTIONS = [
   },
   {
     "id": "fd53657056fc380d165a49f54e37e072",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Factor completely: \\( 3x^2 + 15x - 42 \\)",
-    "options": [],
-    "answer": "3(x - 2)(x + 7)",
+    "options": [
+      {
+        "text": "\\(3(x - 2)(x + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6(x - 2)(x + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2(x - 2)(x + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3(x + 2)(x + 7)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "3(x - 2)(x + 7)",
