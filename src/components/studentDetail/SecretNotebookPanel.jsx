@@ -9,6 +9,13 @@ const SecretNotebookPanel = ({ student }) => {
 
   const snc = student.secretNoteCount || {};
   const mt = student.mistakeTags || {};
+  console.log("[SecretNotebookPanel DEBUG]", { 
+    studentId: student?.uid || student?.id, 
+    email: student?.email,
+    secretNoteCount: student?.secretNoteCount, 
+    dailyN: snc.daily, 
+    calcN: snc.calc 
+  });
   const dailyN = Number(snc.daily) || 0;
   const calcN = Number(snc.calc) || 0;
 
