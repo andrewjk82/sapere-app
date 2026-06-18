@@ -2017,19 +2017,17 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
 
     // ── Step 4 — Example 10c & 10d: over 100% ───────────────────────────────
     {
-      narration: `Percentages can be <b>greater than 100%</b>! <b>10c:</b> $150\\%$ of $600 = \\dfrac{150}{100} \\times 600 = \\dfrac{3}{2} \\times 600 = \\mathbf{900}$ — bigger than the original. <b>10d:</b> $200\\%$ of $5.2 = 2 \\times 5.2 = \\mathbf{10.4}$ — exactly double.`,
-      speech: `Percentages can be greater than 100 percent! Example 10 c: 150 percent of 600 equals 3 halves times 600, which equals 900 — bigger than the original. Example 10 d: 200 percent of 5.2 equals 2 times 5.2, which equals 10.4 — exactly double.`,
+      narration: `Percentages can be <b>greater than 100%</b> — the result ends up <b>larger</b> than the original. <b>150%</b> of 600 gives 900 (1.5× the original). <b>200%</b> means double — 200% of 5.2 is just 10.4.`,
+      speech: `Percentages can be greater than 100 percent — the result ends up larger than the original. 150 percent of 600 gives 900, one and a half times the original. 200 percent means double — 200 percent of 5.2 is just 10.4.`,
       audioUrl: audio(4),
       board: [
         { type: 'workingOut', align: 'left', lines: [
-          { text: 'c  150% of 600', delay: 0.3, color: BLU, bold: true },
-          { math: `$$= \\dfrac{150}{100} \\times 600 = \\dfrac{3}{2} \\times 600 = \\mathbf{900}$$`, delay: 0.7, color: BLU },
-          { text: '> 100% means the result is LARGER than the original.', delay: 1.3, color: '#6b7280' },
-        ]},
-        { type: 'workingOut', align: 'left', lines: [
-          { text: 'd  200% of 5.2', delay: 1.6, color: RED, bold: true },
-          { math: `$$= \\dfrac{200}{100} \\times 5.2 = 2 \\times 5.2 = \\mathbf{10.4}$$`, delay: 2.0, color: RED },
-          { text: '200% = double the amount.', delay: 2.5, color: '#6b7280' },
+          { text: 'Example 10c — 150% of 600', delay: 0.2, color: BLU, bold: true },
+          { math: `$$\\dfrac{150}{100} \\times 600 = \\dfrac{3}{2} \\times 600 = \\mathbf{900}$$`, delay: 0.6, color: BLU },
+          { text: '150% > 100%  →  result is LARGER than the original', delay: 1.1, color: '#6b7280' },
+          { text: 'Example 10d — 200% of 5.2', delay: 1.7, color: RED, bold: true },
+          { math: `$$\\dfrac{200}{100} \\times 5.2 = 2 \\times 5.2 = \\mathbf{10.4}$$`, delay: 2.1, color: RED },
+          { text: '200% = exactly double', delay: 2.6, color: '#6b7280' },
         ]},
       ],
     },
