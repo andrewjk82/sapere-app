@@ -1961,7 +1961,7 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
     {
       narration: `In Chapter 5 we found <b>fractions of a quantity</b>. Here we do the same with <b>percentages</b>. The key rule: $X\\%$ of $Y = \\dfrac{X}{100} \\times Y$. Because percent literally means "per hundred", we swap the $\\%$ sign for $\\div 100$ and multiply.`,
       speech: `In Chapter 5 we found fractions of a quantity. Here we do the same with percentages. The key rule: X percent of Y equals X over 100, times Y. Because percent literally means per hundred, we swap the percent sign for divide by 100 and multiply.`,
-      audio: audio(0),
+      audioUrl: audio(0),
       board: [
         { type: 'percentOfBar', percent: 25, whole: 100, color: PRP, label: 'The bar represents the whole quantity — 25% is shaded.' },
         { type: 'workingOut', align: 'center', lines: [
@@ -1975,7 +1975,7 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
     {
       narration: `<b>Example 9:</b> 25% of the 3220 people in a small town watched the tennis final. How many is that? The bar below shows 3220 people — watch 25% of them (805) light up. Write $25\\% = \\dfrac{1}{4}$, then multiply by 3220.`,
       speech: `Example 9: 25 percent of the 3220 people in a small town watched the tennis final. How many is that? Write 25 percent as 1 quarter, then multiply by 3220. 1 quarter times 3220 equals 805.`,
-      audio: audio(1),
+      audioUrl: audio(1),
       board: [
         { type: 'percentOfBar', percent: 25, whole: 3220, color: PRP, label: '3220 people in town — 25% watched the tennis final' },
         { type: 'workingOut', align: 'center', lines: [
@@ -1990,7 +1990,7 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
     {
       narration: `<b>Example 10a:</b> Calculate 20% of 415. $20\\% = \\dfrac{20}{100} = \\dfrac{1}{5}$. So $\\dfrac{1}{5} \\times 415 = \\mathbf{83}$.`,
       speech: `Example 10 a: Calculate 20 percent of 415. 20 percent equals 1 fifth. So 1 fifth times 415 equals 83.`,
-      audio: audio(2),
+      audioUrl: audio(2),
       board: [
         { type: 'percentOfBar', percent: 20, whole: 415, color: AMB, label: '415 total — 20% of it is 83' },
         { type: 'workingOut', align: 'center', lines: [
@@ -2004,7 +2004,7 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
     {
       narration: `<b>Example 10b:</b> 63% of 200. Cancel the 100 with the 200 first. $\\dfrac{63}{100} \\times \\dfrac{200}{1} = 63 \\times 2 = \\mathbf{126}$.`,
       speech: `Example 10 b: 63 percent of 200. Cancel the 100 with the 200 first. 63 over 100 times 200 over 1, cancel 100 and 200 to get 63 times 2, which equals 126.`,
-      audio: audio(3),
+      audioUrl: audio(3),
       board: [
         { type: 'percentOfBar', percent: 63, whole: 200, color: GRN, label: '200 total — 63% of it is 126' },
         { type: 'workingOut', align: 'center', lines: [
@@ -2019,7 +2019,7 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
     {
       narration: `Percentages can be <b>greater than 100%</b>! <b>10c:</b> $150\\%$ of $600 = \\dfrac{150}{100} \\times 600 = \\dfrac{3}{2} \\times 600 = \\mathbf{900}$ — bigger than the original. <b>10d:</b> $200\\%$ of $5.2 = 2 \\times 5.2 = \\mathbf{10.4}$ — exactly double.`,
       speech: `Percentages can be greater than 100 percent! Example 10 c: 150 percent of 600 equals 3 halves times 600, which equals 900 — bigger than the original. Example 10 d: 200 percent of 5.2 equals 2 times 5.2, which equals 10.4 — exactly double.`,
-      audio: audio(4),
+      audioUrl: audio(4),
       board: [
         { type: 'workingOut', align: 'left', lines: [
           { text: 'c  150% of 600', delay: 0.3, color: BLU, bold: true },
@@ -2038,7 +2038,7 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
     {
       narration: `Here's the <b>3-step recipe</b> for every "percentage of a quantity" question. ① Write the percentage as a fraction over 100. ② Cancel any common factors. ③ Multiply by the quantity. Done — same method every time.`,
       speech: `Here's the 3-step recipe for every percentage of a quantity question. Step 1: write the percentage as a fraction over 100. Step 2: cancel any common factors. Step 3: multiply by the quantity. Done — same method every time.`,
-      audio: audio(5),
+      audioUrl: audio(5),
       board: [
         { type: 'workingOut', align: 'center', lines: [
           { text: '① Write % as a fraction over 100', delay: 0.4, color: PRP, bold: true },
@@ -2075,7 +2075,7 @@ export const buildRatiosLesson = ({ audioBase = null } = {}) => {
     {
       narration: `A <b>ratio</b> compares two or more related quantities. If there are 4 red jelly beans and 11 yellow ones, we write the ratio of red to yellow as <b>4 : 11</b> (read "4 to 11"). The <b>order matters</b> — 4 : 11 is different from 11 : 4.`,
       speech: `A ratio compares two or more related quantities. If there are 4 red jelly beans and 11 yellow ones, we write the ratio of red to yellow as 4 to 11. The order matters — 4 to 11 is different from 11 to 4.`,
-      audio: audio(0),
+      audioUrl: audio(0),
       board: [
         { type: 'ratioBar', a: 4, b: 11, labelA: 'red', labelB: 'yellow',
           colorA: '#ef4444', colorB: '#f59e0b',
@@ -2091,7 +2091,7 @@ export const buildRatiosLesson = ({ audioBase = null } = {}) => {
     {
       narration: `<b>Example 11:</b> A family has 3 males and 7 females. Tap each button below to see the three different ratios. Notice how swapping the order changes the ratio — and how <b>part to total</b> uses the sum 3 + 7 = 10.`,
       speech: `Example 11: A family has 3 males and 7 females. Part a: males to females is 3 to 7. Part b: females to males is 7 to 3. Part c: females to total is 7 to 10, because 3 plus 7 equals 10. Tap each button to see the bar change.`,
-      audio: audio(1),
+      audioUrl: audio(1),
       board: [
         { type: 'ratioFamilyInteractive', males: 3, females: 7, colorM: PRP, colorF: PNK },
         { type: 'workingOut', align: 'left', lines: [
@@ -2106,7 +2106,7 @@ export const buildRatiosLesson = ({ audioBase = null } = {}) => {
     {
       narration: `<b>Example 12:</b> A mixture has 30 litres of fruit juice and 50 litres of water. We use the <b>language of parts</b>: take 10 litres as 1 part. Then 30 L = 3 parts and 50 L = 5 parts. So juice : water = <b>3 : 5</b>.`,
       speech: `Example 12: A mixture has 30 litres of fruit juice and 50 litres of water. Take 10 litres as 1 part. Then 30 litres equals 3 parts, and 50 litres equals 5 parts. So the ratio of fruit juice to water is 3 to 5.`,
-      audio: audio(2),
+      audioUrl: audio(2),
       board: [
         { type: 'ratioBar', a: 30, b: 50, labelA: 'juice (30 L)', labelB: 'water (50 L)',
           colorA: GRN, colorB: BLU, note: '80 litres total' },
@@ -2122,7 +2122,7 @@ export const buildRatiosLesson = ({ audioBase = null } = {}) => {
     {
       narration: `<b>Ratios and fractions are linked.</b> Example 13: butter : flour = 2 : 7 in biscuit dough. There are $2 + 7 = 9$ equal parts in total, and 7 of them are flour. So the fraction of flour is $\\dfrac{7}{9}$.`,
       speech: `Ratios and fractions are linked. Example 13: the ratio of butter to flour is 2 to 7. There are 2 plus 7 equals 9 equal parts in total, and 7 of them are flour. So the fraction of the dough that is flour is 7 ninths.`,
-      audio: audio(3),
+      audioUrl: audio(3),
       board: [
         { type: 'ratioBar', a: 2, b: 7, labelA: 'butter', labelB: 'flour',
           colorA: AMB, colorB: '#a16207', note: 'biscuit dough — 9 parts total' },
@@ -2138,7 +2138,7 @@ export const buildRatiosLesson = ({ audioBase = null } = {}) => {
     {
       narration: `<b>Reducing a ratio to simplest form</b> works just like simplifying a fraction — divide both terms by their <b>HCF</b>. Example 14: 625 males out of 1200 students → 575 females. Tap <b>÷5</b> twice to reach simplest form 25 : 23.`,
       speech: `Reducing a ratio to simplest form works just like simplifying a fraction — divide both terms by their highest common factor. Example 14: there are 625 males and 575 females. Tap divide by 5 twice to reach the simplest form of 25 to 23.`,
-      audio: audio(4),
+      audioUrl: audio(4),
       board: [
         { type: 'ratioSimplifier', a: 625, b: 575, colorA: PRP, colorB: PNK,
           labelA: 'males', labelB: 'females' },
@@ -2154,7 +2154,7 @@ export const buildRatiosLesson = ({ audioBase = null } = {}) => {
     {
       narration: `<b>Summary — ratios in 3 rules.</b> ① Write quantities in the given order, separated by a colon. ② To find a fraction from a ratio $a:b$, the total is $a+b$ parts. ③ Simplify by dividing both terms by their HCF — just like a fraction.`,
       speech: `Summary — three rules for ratios. Rule 1: write quantities in the given order, separated by a colon. Rule 2: to find a fraction from a ratio a to b, add the parts to get a plus b total. Rule 3: simplify by dividing both terms by their highest common factor — just like a fraction.`,
-      audio: audio(5),
+      audioUrl: audio(5),
       board: [
         { type: 'workingOut', align: 'left', lines: [
           { text: '① Order matters:  a : b  ≠  b : a', delay: 0.3, color: PRP, bold: true },
