@@ -1,7 +1,7 @@
 export const Y10_CH1D_QUESTIONS = [
   {
     "id": "y10-1d-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Ming invested 200000 dollars for five years at \\(6\\%\\) p.a. interest, compounded annually. Find the amount invested after one year.",
@@ -13,11 +13,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "190800.00",
+      "212000.00",
+      "222600.00",
+      "233200.00"
+    ]
   },
   {
     "id": "y10-1d-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Ming invested 200000 dollars for five years at \\(6\\%\\) p.a. interest, compounded annually. Find the amount invested after two years.",
@@ -29,11 +35,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "247192.00",
+      "224720.00",
+      "202248.00",
+      "235956.00"
+    ]
   },
   {
     "id": "y10-1d-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Ming invested 200000 dollars for five years at \\(6\\%\\) p.a. interest, compounded annually. Find the amount invested after five years, correct to the nearest cent.",
@@ -45,11 +57,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "294409.63",
+      "281027.38",
+      "240880.61",
+      "267645.12"
+    ]
   },
   {
     "id": "y10-1d-q1d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Ming invested 200000 dollars for five years at \\(6\\%\\) p.a. interest, compounded annually. Find the percentage increase in the investment over the five-year period, correct to two decimal places. (Enter value only, e.g. 33.82%)",
@@ -61,11 +79,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "37.20%",
+      "33.82%",
+      "35.51%",
+      "30.44%"
+    ]
   },
   {
     "id": "y10-1d-q1e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Ming invested 200000 dollars for five years at \\(6\\%\\) p.a. interest, compounded annually. Find the total interest earned over the five years, correct to the nearest cent.",
@@ -77,11 +101,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "67645.12",
+      "74409.63",
+      "60880.61",
+      "71027.38"
+    ]
   },
   {
     "id": "y10-1d-q1f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Ming invested 200000 dollars for five years at \\(6\\%\\) p.a. interest, compounded annually. Find the simple interest on the principal of 200000 dollars over the five years at the same annual interest rate of \\(6\\%\\) p.a.",
@@ -93,11 +123,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "60000.00",
+      "63000.00",
+      "54000.00",
+      "66000.00"
+    ]
   },
   {
     "id": "y10-1d-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The population of a town increases at a rate of \\(4.5\\%\\) p.a. for 10 years, compounded annually. Initially, the population was 45000. What was the population at the end of the 10-year period? Correct to the nearest integer.",
@@ -109,11 +145,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "69884",
+      "76872",
+      "62896",
+      "73378"
+    ]
   },
   {
     "id": "y10-1d-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The population of a town increases at a rate of \\(4.5\\%\\) p.a. for 10 years, compounded annually. Initially, the population was 45000. What was the total percentage increase, correct to the nearest \\(1\\%\\)? (Enter value only, e.g. 55%)",
@@ -125,11 +167,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "55%",
+      "61%",
+      "50%",
+      "58%"
+    ]
   },
   {
     "id": "y10-1d-q3ai",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A couple takes out a housing loan of 400000 dollars over a period of 25 years. They make no repayments during the 25-year period. How much money would they owe if compound interest were payable at \\(5\\%\\) p.a.? Correct to the nearest cent.",
@@ -141,11 +189,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "1488872.68",
+      "1353520.62",
+      "1421196.65",
+      "1218168.56"
+    ]
   },
   {
     "id": "y10-1d-q3aii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A couple takes out a housing loan of 400000 dollars over a period of 25 years. They make no repayments during the 25-year period. What would the percentage increase in the debt be if compound interest were payable at \\(5\\%\\) p.a.? Correct to the nearest \\(1\\%\\). (Enter value only, e.g. 238%)",
@@ -157,11 +211,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "238%",
+      "262%",
+      "214%",
+      "250%"
+    ]
   },
   {
     "id": "y10-1d-q3bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A couple takes out a housing loan of 400000 dollars over a period of 25 years. They make no repayments during the 25-year period. How much money would they owe if compound interest were payable at \\(0.4\\%\\) per month? Correct to the nearest cent.",
@@ -173,11 +233,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "1324087.05",
+      "1456495.76",
+      "1191678.34",
+      "1390291.40"
+    ]
   },
   {
     "id": "y10-1d-q3bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A couple takes out a housing loan of 400000 dollars over a period of 25 years. They make no repayments during the 25-year period. What would the percentage increase in the debt be if compound interest were payable at \\(0.4\\%\\) per month? Correct to the nearest \\(1\\%\\). (Enter value only, e.g. 231%)",
@@ -189,11 +255,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "243%",
+      "208%",
+      "254%",
+      "231%"
+    ]
   },
   {
     "id": "y10-1d-q4a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Emmanuel has borrowed 250000 dollars for seven years at \\(8\\%\\) p.a. interest, compounded annually, in order to start his business. He intends to pay the whole amount back, plus interest, at the end of seven years. Find the amount owing after one year.",
@@ -205,11 +277,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "270000.00",
+      "297000.00",
+      "243000.00",
+      "283500.00"
+    ]
   },
   {
     "id": "y10-1d-q4b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Emmanuel has borrowed 250000 dollars for seven years at \\(8\\%\\) p.a. interest, compounded annually, in order to start his business. He intends to pay the whole amount back, plus interest, at the end of seven years. Find the amount owing after seven years, correct to the nearest cent.",
@@ -221,11 +299,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "449882.77",
+      "385613.80",
+      "471305.76",
+      "428459.78"
+    ]
   },
   {
     "id": "y10-1d-q4c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Emmanuel has borrowed 250000 dollars for seven years at \\(8\\%\\) p.a. interest, compounded annually, in order to start his business. He intends to pay the whole amount back, plus interest, at the end of seven years. Find the percentage increase in the debt over the seven-year period, correct to two decimal places. (Enter value only, e.g. 71.38%)",
@@ -237,11 +321,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "74.95%",
+      "71.38%",
+      "64.24%",
+      "78.52%"
+    ]
   },
   {
     "id": "y10-1d-q4d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Emmanuel has borrowed 250000 dollars for seven years at \\(8\\%\\) p.a. interest, compounded annually, in order to start his business. He intends to pay the whole amount back, plus interest, at the end of seven years. Find the total interest charged over the seven years, correct to the nearest cent.",
@@ -253,11 +343,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "178459.78",
+      "187382.77",
+      "196305.76",
+      "160613.80"
+    ]
   },
   {
     "id": "y10-1d-q4e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Emmanuel has borrowed 250000 dollars for seven years at \\(8\\%\\) p.a. interest, compounded annually, in order to start his business. He intends to pay the whole amount back, plus interest, at the end of seven years. Find the simple interest on the principal of 250000 dollars over the seven-year period at the same annual interest rate of \\(8\\%\\) p.a.",
@@ -269,11 +365,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "140000.00",
+      "154000.00",
+      "126000.00",
+      "147000.00"
+    ]
   },
   {
     "id": "y10-1d-q5a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the compound interest on 2000 dollars at \\(12\\%\\) p.a. for 100 years, compounded annually. Correct to the nearest cent.",
@@ -285,11 +387,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "150650231.76",
+      "175758603.72",
+      "184128061.04",
+      "167389146.40"
+    ]
   },
   {
     "id": "y10-1d-q5b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the compound interest on 2000 dollars at \\(1\\%\\) per month for 100 years (1200 months). Correct to the nearest cent.",
@@ -301,11 +409,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "295551381.18",
+      "265996243.06",
+      "325106519.30",
+      "310328950.24"
+    ]
   },
   {
     "id": "y10-1d-q5c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the simple interest on 2000 dollars at \\(12\\%\\) p.a. for 100 years.",
@@ -317,18 +431,24 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "25200.00",
+      "26400.00",
+      "24000.00",
+      "21600.00"
+    ]
   },
   {
     "id": "y10-1d-q6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A student borrows 30000 dollars from a bank for six years. Compound interest at \\(8\\%\\) p.a. must be paid.",
     "subQuestions": [
       {
         "id": "y10-1d-q6a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "How much money is owed to the bank at the end of the six-year period? Correct to the nearest cent.",
         "a": "47606.23",
         "solutionSteps": [
@@ -337,11 +457,17 @@ export const Y10_CH1D_QUESTIONS = [
             "workingOut": "\\(30000 \\times 1.08^6 = 47606.233\\)",
             "graphData": null
           }
+        ],
+        "opts": [
+          "42845.61",
+          "52366.85",
+          "49986.54",
+          "47606.23"
         ]
       },
       {
         "id": "y10-1d-q6b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "How much of this amount is interest? Correct to the nearest cent.",
         "a": "17606.23",
         "solutionSteps": [
@@ -350,21 +476,33 @@ export const Y10_CH1D_QUESTIONS = [
             "workingOut": "\\(47606.23 - 30000 = 17606.23\\)",
             "graphData": null
           }
+        ],
+        "opts": [
+          "17606.23",
+          "19366.85",
+          "15845.61",
+          "18486.54"
         ]
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "undefined",
+      "undefined (estimated)",
+      "undefined (nominal)",
+      "undefined (rounded)"
+    ]
   },
   {
     "id": "y10-1d-q7",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Money borrowed at an interest rate of \\(6\\%\\) p.a. grew to 150000 dollars in eight years.",
     "subQuestions": [
       {
         "id": "y10-1d-q7a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "Find the original amount invested, correct to the nearest cent.",
         "a": "94112.59",
         "solutionSteps": [
@@ -373,11 +511,17 @@ export const Y10_CH1D_QUESTIONS = [
             "workingOut": "\\(150000 \\div 1.06^8 = 94112.585\\)",
             "graphData": null
           }
+        ],
+        "opts": [
+          "94112.59",
+          "103523.85",
+          "84701.33",
+          "98818.22"
         ]
       },
       {
         "id": "y10-1d-q7b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "Find the total percentage increase in the investment, correct to the nearest \\(1\\%\\). (Enter value only, e.g. 59%)",
         "a": "59%",
         "solutionSteps": [
@@ -386,21 +530,33 @@ export const Y10_CH1D_QUESTIONS = [
             "workingOut": "\\((1.06^8 - 1) \\times 100\\% \\approx 59.38\\% \\approx 59\\%\\)",
             "graphData": null
           }
+        ],
+        "opts": [
+          "65%",
+          "62%",
+          "53%",
+          "59%"
         ]
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "undefined (nominal)",
+      "undefined (estimated)",
+      "undefined",
+      "undefined (rounded)"
+    ]
   },
   {
     "id": "y10-1d-q8",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Emily wants to invest some money now so that it will grow to 300000 dollars in six years' time. The compound interest rate is \\(0.6\\%\\) per month.",
     "subQuestions": [
       {
         "id": "y10-1d-q8a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "How much should she invest now? Correct to the nearest cent.",
         "a": "195079.46",
         "solutionSteps": [
@@ -409,11 +565,17 @@ export const Y10_CH1D_QUESTIONS = [
             "workingOut": "\\(300000 \\div 1.006^\\{72\\} = 195079.458\\)",
             "graphData": null
           }
+        ],
+        "opts": [
+          "204833.43",
+          "175571.51",
+          "214587.41",
+          "195079.46"
         ]
       },
       {
         "id": "y10-1d-q8b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "What will the total percentage increase be, correct to the nearest \\(1\\%\\)? (Enter value only, e.g. 54%)",
         "a": "54%",
         "solutionSteps": [
@@ -422,14 +584,26 @@ export const Y10_CH1D_QUESTIONS = [
             "workingOut": "\\((1.006^\\{72\\} - 1) \\times 100\\% \\approx 53.78\\% \\approx 54\\%\\)",
             "graphData": null
           }
+        ],
+        "opts": [
+          "57%",
+          "59%",
+          "54%",
+          "49%"
         ]
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "undefined (nominal)",
+      "undefined",
+      "undefined (estimated)",
+      "undefined (rounded)"
+    ]
   },
   {
     "id": "y10-1d-q9a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A bank offers \\(0.8\\%\\) per month compound interest. How much needs to be invested if the investment is to be worth 150000 dollars in 10 years? Correct to the nearest cent.",
@@ -441,11 +615,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "60556.10",
+      "51905.23",
+      "63439.73",
+      "57672.48"
+    ]
   },
   {
     "id": "y10-1d-q9b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A bank offers \\(0.8\\%\\) per month compound interest. How much needs to be invested if the investment is to be worth 150000 dollars in 20 years? Correct to the nearest cent.",
@@ -457,11 +637,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "19956.45",
+      "22173.83",
+      "23282.52",
+      "24391.21"
+    ]
   },
   {
     "id": "y10-1d-q10a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The population of a town has been growing at \\(6.5\\%\\) every year and has now reached 90000. Find the population one year ago, correct to the nearest integer.",
@@ -473,11 +659,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "84507",
+      "92958",
+      "76056",
+      "88732"
+    ]
   },
   {
     "id": "y10-1d-q10b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The population of a town has been growing at \\(6.5\\%\\) every year and has now reached 90000. Find the population two years ago, correct to the nearest integer.",
@@ -489,11 +681,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "79349",
+      "83316",
+      "87284",
+      "71414"
+    ]
   },
   {
     "id": "y10-1d-q10c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The population of a town has been growing at \\(6.5\\%\\) every year and has now reached 90000. Find the population five years ago, correct to the nearest integer.",
@@ -505,11 +703,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "68975",
+      "65690",
+      "72259",
+      "59121"
+    ]
   },
   {
     "id": "y10-1d-q10d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The population of a town has been growing at \\(6.5\\%\\) every year and has now reached 90000. Find the population 10 years ago, correct to the nearest integer.",
@@ -521,11 +725,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "47943",
+      "50340",
+      "52737",
+      "43149"
+    ]
   },
   {
     "id": "y10-1d-q11a_final",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Reconstruct Mr Brown's spreadsheet entry. Find the final amount if Principal is 5000 dollars, Rate is \\(6\\%\\) p.a., and Number of years is 20. Correct to the nearest cent.",
@@ -537,11 +747,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "16837.45",
+      "14432.10",
+      "17639.24",
+      "16035.67"
+    ]
   },
   {
     "id": "y10-1d-q11a_interest",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Reconstruct Mr Brown's spreadsheet entry. Find the total interest if Principal is 5000 dollars, Rate is \\(6\\%\\) p.a., and Number of years is 20. Correct to the nearest cent.",
@@ -553,11 +769,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "11035.67",
+      "11587.45",
+      "12139.24",
+      "9932.10"
+    ]
   },
   {
     "id": "y10-1d-q11b_principal",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Reconstruct Mr Brown's spreadsheet entry. Find the principal if Rate is \\(6\\%\\) p.a., Number of years is 20, and the Final amount is 4000 dollars. Correct to the nearest cent.",
@@ -569,11 +791,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "1309.58",
+      "1122.50",
+      "1371.94",
+      "1247.22"
+    ]
   },
   {
     "id": "y10-1d-q11b_interest",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Reconstruct Mr Brown's spreadsheet entry. Find the total interest if Rate is \\(6\\%\\) p.a., Number of years is 20, and the Final amount is 4000 dollars. Correct to the nearest cent.",
@@ -585,18 +813,24 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "2752.78",
+      "2890.42",
+      "3028.06",
+      "2477.50"
+    ]
   },
   {
     "id": "y10-1d-q12",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Mr Yang invested 80000 dollars for three years.",
     "subQuestions": [
       {
         "id": "y10-1d-q12a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "Calculate the interest earned in each of the three years if the compound interest rate is \\(5\\%\\) p.a., compounded annually. (Enter the interest earned in Year 3, correct to the nearest cent).",
         "a": "4410.00",
         "solutionSteps": [
@@ -615,11 +849,17 @@ export const Y10_CH1D_QUESTIONS = [
             "workingOut": "\\(4410.00\\)",
             "graphData": null
           }
+        ],
+        "opts": [
+          "4410.00",
+          "4630.50",
+          "4851.00",
+          "3969.00"
         ]
       },
       {
         "id": "y10-1d-q12b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "Calculate the interest earned in Year 3 if the compound interest rate is \\(0.4\\%\\) per month. Correct to the nearest cent.",
         "a": "4317.95",
         "solutionSteps": [
@@ -638,14 +878,26 @@ export const Y10_CH1D_QUESTIONS = [
             "workingOut": "\\(4317.95\\)",
             "graphData": null
           }
+        ],
+        "opts": [
+          "4317.95",
+          "4749.74",
+          "3886.15",
+          "4533.85"
         ]
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "undefined (nominal)",
+      "undefined (estimated)",
+      "undefined",
+      "undefined (rounded)"
+    ]
   },
   {
     "id": "y10-1d-q13",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A holding company sold a property for 15000000 dollars and invested the money at a daily compound interest rate of \\(0.015\\%\\). How much interest did the company earn in the first year (assume 365 days)? Correct to the nearest cent.",
@@ -662,11 +914,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "884734.15",
+      "758343.55",
+      "926864.34",
+      "842603.95"
+    ]
   },
   {
     "id": "y10-1d-q14a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage increase for an investment at a compound interest rate of 0.01% per day for one year (365 days), correct to the nearest \\(0.01\\%\\). (Enter value only, e.g. 3.72%)",
@@ -678,11 +936,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "3.35%",
+      "3.91%",
+      "4.09%",
+      "3.72%"
+    ]
   },
   {
     "id": "y10-1d-q14b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage increase for an investment at a compound interest rate of 0.03% per day for one year (365 days), correct to the nearest \\(0.01\\%\\). (Enter value only, e.g. 3.72%)",
@@ -694,11 +958,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "12.73%",
+      "11.57%",
+      "10.41%",
+      "12.15%"
+    ]
   },
   {
     "id": "y10-1d-q15a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage growth, correct to the nearest \\(0.1\\%\\), in a compound interest investment at \\(12\\%\\) p.a. for 2 years.",
@@ -710,11 +980,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "25.4%",
+      "27.9%",
+      "22.9%",
+      "26.7%"
+    ]
   },
   {
     "id": "y10-1d-q15b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage growth, correct to the nearest \\(0.1\\%\\), in a compound interest investment at \\(8\\%\\) p.a. for 3 years.",
@@ -726,11 +1002,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "27.3%",
+      "23.4%",
+      "28.6%",
+      "26.0%"
+    ]
   },
   {
     "id": "y10-1d-q15c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage growth, correct to the nearest \\(0.1\\%\\), in a compound interest investment at \\(5\\%\\) p.a. for 5 years.",
@@ -742,11 +1024,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "29.0%",
+      "30.4%",
+      "24.8%",
+      "27.6%"
+    ]
   },
   {
     "id": "y10-1d-q15d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage growth, correct to the nearest \\(0.1\\%\\), in a compound interest investment at \\(4\\%\\) p.a. for 6 years.",
@@ -758,11 +1046,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "27.8%",
+      "26.5%",
+      "29.2%",
+      "23.9%"
+    ]
   },
   {
     "id": "y10-1d-q15e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage growth, correct to the nearest \\(0.1\\%\\), in a compound interest investment at \\(2.5\\%\\) p.a. for 10 years.",
@@ -774,11 +1068,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "30.8%",
+      "28.0%",
+      "25.2%",
+      "29.4%"
+    ]
   },
   {
     "id": "y10-1d-q15f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage growth, correct to the nearest \\(0.1\\%\\), in a compound interest investment at \\(1.8\\%\\) p.a. for 15 years.",
@@ -790,7 +1090,13 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "30.6%",
+      "33.7%",
+      "27.5%",
+      "32.1%"
+    ]
   },
   {
     "id": "y10-1d-q15g",
@@ -816,7 +1122,7 @@ export const Y10_CH1D_QUESTIONS = [
   },
   {
     "id": "y10-1d-q16",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A doctor took out a six-year loan to start a medical practice. For the first three years, he was charged compound interest at a rate of \\(8\\%\\) p.a. For the second three-year period, he was charged compound interest at a rate of \\(12\\%\\) p.a. Find the total percentage increase in the money owing, correct to the nearest \\(1\\%\\). (Enter value only, e.g. 77%)",
@@ -838,11 +1144,17 @@ export const Y10_CH1D_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound interest"
+    "t": "Compound interest",
+    "opts": [
+      "77%",
+      "85%",
+      "69%",
+      "81%"
+    ]
   },
   {
     "id": "y10-1d-q17a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -864,11 +1176,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 4.58%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4.81%",
+      "4.12%",
+      "5.04%",
+      "4.58%"
     ]
   },
   {
     "id": "y10-1d-q17b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -890,11 +1208,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 5.09%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5.09%",
+      "5.60%",
+      "4.58%",
+      "5.34%"
     ]
   },
   {
     "id": "y10-1d-q17c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -916,11 +1240,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 5.61%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5.89%",
+      "5.05%",
+      "6.17%",
+      "5.61%"
     ]
   },
   {
     "id": "y10-1d-q17d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -942,11 +1272,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 6.14%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6.14%",
+      "6.75%",
+      "5.53%",
+      "6.45%"
     ]
   },
   {
     "id": "y10-1d-q17e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -968,11 +1304,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 6.66%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5.99%",
+      "6.66%",
+      "6.99%",
+      "7.33%"
     ]
   },
   {
     "id": "y10-1d-q17f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -994,11 +1336,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 7.19%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7.91%",
+      "7.19%",
+      "6.47%",
+      "7.55%"
     ]
   },
   {
     "id": "y10-1d-q17g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1020,11 +1368,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 7.71%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7.71%",
+      "8.10%",
+      "8.48%",
+      "6.94%"
     ]
   },
   {
     "id": "y10-1d-q17h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1046,11 +1400,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 8.24%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7.42%",
+      "9.06%",
+      "8.24%",
+      "8.65%"
     ]
   },
   {
     "id": "y10-1d-q17i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1072,11 +1432,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 8.77%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7.89%",
+      "9.65%",
+      "8.77%",
+      "9.21%"
     ]
   },
   {
     "id": "y10-1d-q17j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1098,11 +1464,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{EAR}_A > \\text{EAR}_B \\implies \\text{Better rate is } 9.31%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "9.31%",
+      "10.24%",
+      "8.38%",
+      "9.78%"
     ]
   },
   {
     "id": "y10-1d-q18a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1124,11 +1496,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 7964.11\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7964.11",
+      "8760.52",
+      "7167.70",
+      "8362.32"
     ]
   },
   {
     "id": "y10-1d-q18b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1150,11 +1528,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 15122.71\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "15878.85",
+      "13610.44",
+      "16634.98",
+      "15122.71"
     ]
   },
   {
     "id": "y10-1d-q18c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1176,11 +1560,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 21451.27\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "23596.40",
+      "22523.83",
+      "21451.27",
+      "19306.14"
     ]
   },
   {
     "id": "y10-1d-q18d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1202,11 +1592,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 26939.77\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "26939.77",
+      "24245.79",
+      "28286.76",
+      "29633.75"
     ]
   },
   {
     "id": "y10-1d-q18e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1228,11 +1624,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 31591.95\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "33171.55",
+      "28432.76",
+      "34751.15",
+      "31591.95"
     ]
   },
   {
     "id": "y10-1d-q18f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1254,11 +1656,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 35424.29\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "37195.50",
+      "35424.29",
+      "31881.86",
+      "38966.72"
     ]
   },
   {
     "id": "y10-1d-q18g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1280,11 +1688,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 38464.73\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "38464.73",
+      "42311.20",
+      "34618.26",
+      "40387.97"
     ]
   },
   {
     "id": "y10-1d-q18h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1306,11 +1720,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 40751.27\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "42788.83",
+      "40751.27",
+      "36676.14",
+      "44826.40"
     ]
   },
   {
     "id": "y10-1d-q18i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1332,11 +1752,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 42330.40\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "42330.40",
+      "46563.44",
+      "38097.36",
+      "44446.92"
     ]
   },
   {
     "id": "y10-1d-q18j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1358,11 +1784,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P \\approx 43255.49\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "47581.04",
+      "45418.26",
+      "38929.94",
+      "43255.49"
     ]
   },
   {
     "id": "y10-1d-q19a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1384,11 +1816,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 6318.61\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6318.61",
+      "6950.47",
+      "5686.75",
+      "6634.54"
     ]
   },
   {
     "id": "y10-1d-q19b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1410,11 +1848,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 12848.48\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "12848.48",
+      "14133.33",
+      "11563.63",
+      "13490.90"
     ]
   },
   {
     "id": "y10-1d-q19c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1436,11 +1880,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 19594.38\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "20574.10",
+      "17634.94",
+      "21553.82",
+      "19594.38"
     ]
   },
   {
     "id": "y10-1d-q19d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1462,11 +1912,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 26561.16\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "23905.04",
+      "29217.28",
+      "26561.16",
+      "27889.22"
     ]
   },
   {
     "id": "y10-1d-q19e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1488,11 +1944,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 33753.74\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "33753.74",
+      "37129.11",
+      "30378.37",
+      "35441.43"
     ]
   },
   {
     "id": "y10-1d-q19f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1514,11 +1976,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 41177.17\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "41177.17",
+      "43236.03",
+      "45294.89",
+      "37059.45"
     ]
   },
   {
     "id": "y10-1d-q19g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1540,11 +2008,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 48836.54\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "43952.89",
+      "53720.19",
+      "51278.37",
+      "48836.54"
     ]
   },
   {
     "id": "y10-1d-q19h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1566,11 +2040,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 56737.07\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "59573.92",
+      "51063.36",
+      "62410.78",
+      "56737.07"
     ]
   },
   {
     "id": "y10-1d-q19i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1592,11 +2072,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 64884.06\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "58395.65",
+      "71372.47",
+      "68128.26",
+      "64884.06"
     ]
   },
   {
     "id": "y10-1d-q19j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1618,11 +2104,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 73282.90\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "73282.90",
+      "76947.04",
+      "80611.19",
+      "65954.61"
     ]
   },
   {
     "id": "y10-1d-q20a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1644,11 +2136,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 6212.45\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6833.70",
+      "5591.20",
+      "6523.07",
+      "6212.45"
     ]
   },
   {
     "id": "y10-1d-q20b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1670,11 +2168,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 12486.40\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "13110.72",
+      "11237.76",
+      "13735.04",
+      "12486.40"
     ]
   },
   {
     "id": "y10-1d-q20c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1696,11 +2200,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 18822.15\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "18822.15",
+      "19763.26",
+      "16939.94",
+      "20704.37"
     ]
   },
   {
     "id": "y10-1d-q20d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1722,11 +2232,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 25220.00\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "22698.00",
+      "27742.00",
+      "25220.00",
+      "26481.00"
     ]
   },
   {
     "id": "y10-1d-q20e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1748,11 +2264,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 31680.25\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "31680.25",
+      "34848.28",
+      "28512.23",
+      "33264.26"
     ]
   },
   {
     "id": "y10-1d-q20f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1774,11 +2296,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 38203.20\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "40113.36",
+      "34382.88",
+      "42023.52",
+      "38203.20"
     ]
   },
   {
     "id": "y10-1d-q20g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1800,11 +2328,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 44789.15\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "44789.15",
+      "49268.07",
+      "40310.24",
+      "47028.61"
     ]
   },
   {
     "id": "y10-1d-q20h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1826,11 +2360,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 51438.40\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "54010.32",
+      "46294.56",
+      "56582.24",
+      "51438.40"
     ]
   },
   {
     "id": "y10-1d-q20i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1852,11 +2392,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 58151.25\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "61058.81",
+      "52336.13",
+      "63966.38",
+      "58151.25"
     ]
   },
   {
     "id": "y10-1d-q20j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1878,11 +2424,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V \\approx 64928.00\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "68174.40",
+      "58435.20",
+      "71420.80",
+      "64928.00"
     ]
   },
   {
     "id": "y10-1d-q21a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1904,11 +2456,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 11.9\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "12.5",
+      "10.7",
+      "13.1",
+      "11.9"
     ]
   },
   {
     "id": "y10-1d-q21b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1930,11 +2488,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 10.2\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "10.2",
+      "11.2",
+      "10.7",
+      "9.2"
     ]
   },
   {
     "id": "y10-1d-q21c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1956,11 +2520,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 9.0\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "9.0",
+      "9.9",
+      "8.1",
+      "9.5"
     ]
   },
   {
     "id": "y10-1d-q21d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -1982,11 +2552,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 8.0\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "8.0",
+      "8.8",
+      "7.2",
+      "8.4"
     ]
   },
   {
     "id": "y10-1d-q21e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2008,11 +2584,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 7.3\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7.7",
+      "6.6",
+      "8.0",
+      "7.3"
     ]
   },
   {
     "id": "y10-1d-q21f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2034,11 +2616,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 6.6\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6.9",
+      "6.6",
+      "7.3",
+      "5.9"
     ]
   },
   {
     "id": "y10-1d-q21g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2060,11 +2648,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 6.1\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6.4",
+      "6.1",
+      "6.7",
+      "5.5"
     ]
   },
   {
     "id": "y10-1d-q21h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2086,11 +2680,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 5.7\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5.1",
+      "6.3",
+      "5.7",
+      "6.0"
     ]
   },
   {
     "id": "y10-1d-q21i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2112,11 +2712,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 5.3\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5.6",
+      "5.3",
+      "4.8",
+      "5.8"
     ]
   },
   {
     "id": "y10-1d-q21j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2138,11 +2744,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(n \\approx 5.0\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4.5",
+      "5.3",
+      "5.0",
+      "5.5"
     ]
   },
   {
     "id": "y10-1d-q22a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2164,11 +2776,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 17917\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "17917",
+      "16125",
+      "19709",
+      "18813"
     ]
   },
   {
     "id": "y10-1d-q22b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2190,11 +2808,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 21069\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "21069",
+      "23176",
+      "22122",
+      "18962"
     ]
   },
   {
     "id": "y10-1d-q22c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2216,11 +2840,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 24384\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "21946",
+      "25603",
+      "26822",
+      "24384"
     ]
   },
   {
     "id": "y10-1d-q22d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2242,11 +2872,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 27868\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "27868",
+      "30655",
+      "25081",
+      "29261"
     ]
   },
   {
     "id": "y10-1d-q22e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2268,11 +2904,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 31526\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "33102",
+      "28373",
+      "34679",
+      "31526"
     ]
   },
   {
     "id": "y10-1d-q22f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2294,11 +2936,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 35364\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "38900",
+      "35364",
+      "31828",
+      "37132"
     ]
   },
   {
     "id": "y10-1d-q22g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2320,11 +2968,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 39388\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "39388",
+      "43327",
+      "35449",
+      "41357"
     ]
   },
   {
     "id": "y10-1d-q22h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2346,11 +3000,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 43604\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "39244",
+      "47964",
+      "45784",
+      "43604"
     ]
   },
   {
     "id": "y10-1d-q22i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2372,11 +3032,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 48017\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "48017",
+      "50418",
+      "43215",
+      "52819"
     ]
   },
   {
     "id": "y10-1d-q22j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2398,11 +3064,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(V_5 \\approx 52634\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "57897",
+      "55266",
+      "52634",
+      "47371"
     ]
   },
   {
     "id": "y10-1d-q23a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2424,11 +3096,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 63376\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "57038",
+      "69714",
+      "66545",
+      "63376"
     ]
   },
   {
     "id": "y10-1d-q23b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2450,11 +3128,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 74356\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "66920",
+      "78074",
+      "81792",
+      "74356"
     ]
   },
   {
     "id": "y10-1d-q23c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2476,11 +3160,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 85455\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "94001",
+      "85455",
+      "76910",
+      "89728"
     ]
   },
   {
     "id": "y10-1d-q23d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2502,11 +3192,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 96671\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "101505",
+      "87004",
+      "106338",
+      "96671"
     ]
   },
   {
     "id": "y10-1d-q23e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2528,11 +3224,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 108004\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "97204",
+      "118804",
+      "113404",
+      "108004"
     ]
   },
   {
     "id": "y10-1d-q23f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2554,11 +3256,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 119453\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "125426",
+      "107508",
+      "131398",
+      "119453"
     ]
   },
   {
     "id": "y10-1d-q23g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2580,11 +3288,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 131019\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "144121",
+      "117917",
+      "131019",
+      "137570"
     ]
   },
   {
     "id": "y10-1d-q23h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2606,11 +3320,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 142699\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "156969",
+      "142699",
+      "149834",
+      "128429"
     ]
   },
   {
     "id": "y10-1d-q23i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2632,11 +3352,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 154495\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "154495",
+      "169945",
+      "162220",
+      "139046"
     ]
   },
   {
     "id": "y10-1d-q23j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2658,11 +3384,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(P_7 \\approx 166404\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "149764",
+      "183044",
+      "174724",
+      "166404"
     ]
   },
   {
     "id": "y10-1d-q24a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2684,11 +3416,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 15000 \\times \\left(\\frac{1 + 0.064}{1 + 0.022000000000000002}\\right)^{6} \\approx 19100.10\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "17190.09",
+      "21010.11",
+      "19100.10",
+      "20055.10"
     ]
   },
   {
     "id": "y10-1d-q24b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2710,11 +3448,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 30000 \\times \\left(\\frac{1 + 0.068}{1 + 0.024}\\right)^{6} \\approx 38614.38\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "40545.10",
+      "34752.94",
+      "42475.82",
+      "38614.38"
     ]
   },
   {
     "id": "y10-1d-q24c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2736,11 +3480,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 45000 \\times \\left(\\frac{1 + 0.07200000000000001}{1 + 0.026000000000000002}\\right)^{6} \\approx 58545.98\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "58545.98",
+      "64400.58",
+      "52691.38",
+      "61473.28"
     ]
   },
   {
     "id": "y10-1d-q24d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2762,11 +3512,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 60000 \\times \\left(\\frac{1 + 0.076}{1 + 0.027999999999999997}\\right)^{6} \\approx 78898.04\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "71008.24",
+      "86787.84",
+      "82842.94",
+      "78898.04"
     ]
   },
   {
     "id": "y10-1d-q24e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2788,11 +3544,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 75000 \\times \\left(\\frac{1 + 0.08}{1 + 0.03}\\right)^{6} \\approx 99673.67\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "89706.30",
+      "104657.35",
+      "99673.67",
+      "109641.04"
     ]
   },
   {
     "id": "y10-1d-q24f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2814,11 +3576,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 90000 \\times \\left(\\frac{1 + 0.084}{1 + 0.032}\\right)^{6} \\approx 120875.98\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "126919.78",
+      "108788.38",
+      "132963.58",
+      "120875.98"
     ]
   },
   {
     "id": "y10-1d-q24g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2840,11 +3608,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 105000 \\times \\left(\\frac{1 + 0.08800000000000001}{1 + 0.034}\\right)^{6} \\approx 142508.06\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "149633.46",
+      "128257.25",
+      "142508.06",
+      "156758.87"
     ]
   },
   {
     "id": "y10-1d-q24h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2866,11 +3640,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 120000 \\times \\left(\\frac{1 + 0.092}{1 + 0.036000000000000004}\\right)^{6} \\approx 164572.98\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "181030.28",
+      "164572.98",
+      "148115.68",
+      "172801.63"
     ]
   },
   {
     "id": "y10-1d-q24i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2892,11 +3672,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 135000 \\times \\left(\\frac{1 + 0.096}{1 + 0.038}\\right)^{6} \\approx 187073.80\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "196427.49",
+      "168366.42",
+      "205781.18",
+      "187073.80"
     ]
   },
   {
     "id": "y10-1d-q24j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2918,11 +3704,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(A_{\\text{real}} = 150000 \\times \\left(\\frac{1 + 0.1}{1 + 0.04}\\right)^{6} \\approx 210013.56\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "210013.56",
+      "220514.24",
+      "231014.92",
+      "189012.20"
     ]
   },
   {
     "id": "y10-1d-q25a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2944,11 +3736,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 383.52\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "402.70",
+      "345.17",
+      "421.87",
+      "383.52"
     ]
   },
   {
     "id": "y10-1d-q25b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2970,11 +3768,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 1404.46\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1474.68",
+      "1264.01",
+      "1544.91",
+      "1404.46"
     ]
   },
   {
     "id": "y10-1d-q25c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -2996,11 +3800,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 3563.52\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3741.70",
+      "3207.17",
+      "3919.87",
+      "3563.52"
     ]
   },
   {
     "id": "y10-1d-q25d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3022,11 +3832,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 7592.94\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6833.65",
+      "7972.59",
+      "8352.23",
+      "7592.94"
     ]
   },
   {
     "id": "y10-1d-q25e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3048,11 +3864,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 14534.32\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "15261.04",
+      "13080.89",
+      "15987.75",
+      "14534.32"
     ]
   },
   {
     "id": "y10-1d-q25f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3074,11 +3896,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 25842.60\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "27134.73",
+      "25842.60",
+      "28426.86",
+      "23258.34"
     ]
   },
   {
     "id": "y10-1d-q25g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3100,11 +3928,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 43526.03\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "45702.33",
+      "43526.03",
+      "47878.63",
+      "39173.43"
     ]
   },
   {
     "id": "y10-1d-q25h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3126,11 +3960,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 70335.82\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "73852.61",
+      "63302.24",
+      "77369.40",
+      "70335.82"
     ]
   },
   {
     "id": "y10-1d-q25i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3152,11 +3992,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 110024.49\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "115525.71",
+      "99022.04",
+      "110024.49",
+      "121026.94"
     ]
   },
   {
     "id": "y10-1d-q25j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3178,11 +4024,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 167699.80\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "176084.79",
+      "184469.78",
+      "167699.80",
+      "150929.82"
     ]
   },
   {
     "id": "y10-1d-q26a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3204,11 +4056,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 133.48\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "120.13",
+      "146.83",
+      "133.48",
+      "140.15"
     ]
   },
   {
     "id": "y10-1d-q26b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3230,11 +4088,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 190.86\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "171.77",
+      "209.95",
+      "190.86",
+      "200.40"
     ]
   },
   {
     "id": "y10-1d-q26c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3256,11 +4120,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 261.68\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "274.76",
+      "235.51",
+      "287.85",
+      "261.68"
     ]
   },
   {
     "id": "y10-1d-q26d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3282,11 +4152,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 347.36\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "347.36",
+      "312.62",
+      "382.10",
+      "364.73"
     ]
   },
   {
     "id": "y10-1d-q26e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3308,11 +4184,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 449.32\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "471.79",
+      "494.25",
+      "404.39",
+      "449.32"
     ]
   },
   {
     "id": "y10-1d-q26f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3334,11 +4216,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 568.99\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "512.09",
+      "625.89",
+      "597.44",
+      "568.99"
     ]
   },
   {
     "id": "y10-1d-q26g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3360,11 +4248,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 707.85\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "707.85",
+      "637.07",
+      "778.64",
+      "743.24"
     ]
   },
   {
     "id": "y10-1d-q26h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3386,11 +4280,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 867.39\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "910.76",
+      "780.65",
+      "954.13",
+      "867.39"
     ]
   },
   {
     "id": "y10-1d-q26i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3412,11 +4312,17 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 1049.11\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1101.57",
+      "944.20",
+      "1154.02",
+      "1049.11"
     ]
   },
   {
     "id": "y10-1d-q26j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound interest",
@@ -3438,6 +4344,12 @@ export const Y10_CH1D_QUESTIONS = [
         "workingOut": "\\(I = A - P \\approx 1254.56\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1380.02",
+      "1317.29",
+      "1254.56",
+      "1129.10"
     ]
   }
 ];

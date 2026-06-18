@@ -1,7 +1,7 @@
 export const Y10_CH1E_QUESTIONS = [
   {
     "id": "y10-1e-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A landlord purchased washing machines six years ago for 800000 dollars, and assumes a depreciation rate of \\(25\\%\\) p.a. Find the estimated value after one year.",
@@ -13,11 +13,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "630000.00",
+      "540000.00",
+      "660000.00",
+      "600000.00"
+    ]
   },
   {
     "id": "y10-1e-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A landlord purchased washing machines six years ago for 800000 dollars, and assumes a depreciation rate of \\(25\\%\\) p.a. Find the estimated value after two years.",
@@ -29,11 +35,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "450000.00",
+      "495000.00",
+      "405000.00",
+      "472500.00"
+    ]
   },
   {
     "id": "y10-1e-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A landlord purchased washing machines six years ago for 800000 dollars, and assumes a depreciation rate of \\(25\\%\\) p.a. Find the estimated value after six years, correct to the nearest cent.",
@@ -45,11 +57,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "142382.81",
+      "156621.09",
+      "128144.53",
+      "149501.95"
+    ]
   },
   {
     "id": "y10-1e-q1d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A landlord purchased washing machines six years ago for 800000 dollars, and assumes a depreciation rate of \\(25\\%\\) p.a. What is the percentage decrease in value over the six-year period? Correct to two decimal places. (Enter value only, e.g. 82.20%)",
@@ -61,11 +79,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "86.31%",
+      "73.98%",
+      "90.42%",
+      "82.20%"
+    ]
   },
   {
     "id": "y10-1e-q1e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A landlord purchased washing machines six years ago for 800000 dollars, and assumes a depreciation rate of \\(25\\%\\) p.a. What is the average reduction in value, in dollars p.a., over the six-year period? Correct to the nearest cent.",
@@ -77,11 +101,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "115083.01",
+      "98642.58",
+      "120563.16",
+      "109602.87"
+    ]
   },
   {
     "id": "y10-1e-q2a_val",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A shop spent 400000 dollars installing security alarms. Find the estimated value after six years if it depreciates at \\(15\\%\\) p.a. Correct to the nearest cent.",
@@ -93,11 +123,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "165946.03",
+      "158403.03",
+      "150860.03",
+      "135774.03"
+    ]
   },
   {
     "id": "y10-1e-q2a_pct",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A shop spent 400000 dollars installing security alarms. Find the percentage reduction of value over the six-year period if it depreciates at \\(15\\%\\) p.a. Correct to two decimal places. (Enter value only, e.g. 62.28%)",
@@ -109,11 +145,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "65.39%",
+      "62.28%",
+      "68.51%",
+      "56.05%"
+    ]
   },
   {
     "id": "y10-1e-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A shop spent 400000 dollars installing security alarms. If the business borrowed the money to install the alarms, paying \\(6\\%\\) p.a. compound interest for six years, how much did it owe at the end of the six years? Correct to the nearest cent.",
@@ -125,7 +167,13 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "567408.06",
+      "624148.87",
+      "510667.25",
+      "595778.46"
+    ]
   },
   {
     "id": "y10-1e-q3a",
@@ -155,7 +203,7 @@ export const Y10_CH1E_QUESTIONS = [
   },
   {
     "id": "y10-1e-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A school bought a bus for 100000 dollars, depreciated it at \\(25\\%\\) p.a. for taxation purposes, and sold it five years later for 22000 dollars. By how much was the sale price worse than the depreciated value? Correct to the nearest cent.",
@@ -172,11 +220,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "1557.42",
+      "1816.99",
+      "1903.52",
+      "1730.47"
+    ]
   },
   {
     "id": "y10-1e-q4y1_val",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A grocery store spent 2000000 dollars buying computers, and depreciated them at \\(30\\%\\) p.a. Find the value of the computers at the end of Year 1.",
@@ -188,11 +242,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "1260000",
+      "1540000",
+      "1470000",
+      "1400000"
+    ]
   },
   {
     "id": "y10-1e-q4y1_loss",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A grocery store spent 2000000 dollars buying computers, and depreciated them at \\(30\\%\\) p.a. Find the claimable loss (depreciation amount) during Year 1.",
@@ -204,11 +264,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "660000",
+      "540000",
+      "600000",
+      "630000"
+    ]
   },
   {
     "id": "y10-1e-q4y2_val",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A grocery store spent 2000000 dollars buying computers, and depreciated them at \\(30\\%\\) p.a. Find the value of the computers at the end of Year 2.",
@@ -220,11 +286,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "1029000",
+      "882000",
+      "1078000",
+      "980000"
+    ]
   },
   {
     "id": "y10-1e-q4y2_loss",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A grocery store spent 2000000 dollars buying computers, and depreciated them at \\(30\\%\\) p.a. Find the claimable loss (depreciation amount) during Year 2.",
@@ -236,11 +308,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "441000",
+      "378000",
+      "462000",
+      "420000"
+    ]
   },
   {
     "id": "y10-1e-q4y3_val",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A grocery store spent 2000000 dollars buying computers, and depreciated them at \\(30\\%\\) p.a. Find the value of the computers at the end of Year 3.",
@@ -252,11 +330,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "617400",
+      "686000",
+      "720300",
+      "754600"
+    ]
   },
   {
     "id": "y10-1e-q4y3_loss",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A grocery store spent 2000000 dollars buying computers, and depreciated them at \\(30\\%\\) p.a. Find the claimable loss (depreciation amount) during Year 3.",
@@ -268,11 +352,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "294000",
+      "323400",
+      "308700",
+      "264600"
+    ]
   },
   {
     "id": "y10-1e-q4y4_val",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A grocery store spent 2000000 dollars buying computers, and depreciated them at \\(30\\%\\) p.a. Find the value of the computers at the end of Year 4.",
@@ -284,11 +374,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "480200",
+      "504210",
+      "528220",
+      "432180"
+    ]
   },
   {
     "id": "y10-1e-q4y4_loss",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A grocery store spent 2000000 dollars buying computers, and depreciated them at \\(30\\%\\) p.a. Find the claimable loss (depreciation amount) during Year 4.",
@@ -300,11 +396,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "216090",
+      "185220",
+      "226380",
+      "205800"
+    ]
   },
   {
     "id": "y10-1e-q5sandra",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Sandra and Kevin each received 100000 dollars. Sandra invested her money at \\(7\\%\\) p.a. compounded annually, while Kevin bought a car that depreciated at \\(18\\%\\) p.a. Find the value of Sandra's investment at the end of six years, correct to the nearest cent.",
@@ -316,11 +418,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "135065.74",
+      "165080.34",
+      "157576.69",
+      "150073.04"
+    ]
   },
   {
     "id": "y10-1e-q5kevin",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Sandra and Kevin each received 100000 dollars. Sandra invested her money at \\(7\\%\\) p.a. compounded annually, while Kevin bought a car that depreciated at \\(18\\%\\) p.a. Find the value of Kevin's car at the end of six years, correct to the nearest cent.",
@@ -332,11 +440,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "31920.70",
+      "27360.60",
+      "33440.74",
+      "30400.67"
+    ]
   },
   {
     "id": "y10-1e-q6taxis_pct",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Taxis depreciate at \\(45\\%\\) p.a., and other cars depreciate at \\(20\\%\\) p.a. What is the total percentage reduction in value on taxis after six years? Correct to two decimal places. (Enter value only, e.g. 97.23%)",
@@ -348,11 +462,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "97.23%",
+      "106.95%",
+      "87.51%",
+      "102.09%"
+    ]
   },
   {
     "id": "y10-1e-q6cars_pct",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Taxis depreciate at \\(45\\%\\) p.a., and other cars depreciate at \\(20\\%\\) p.a. What is the total percentage reduction in value on other cars after six years? Correct to two decimal places. (Enter value only, e.g. 73.79%)",
@@ -364,11 +484,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "73.79%",
+      "81.17%",
+      "66.41%",
+      "77.48%"
+    ]
   },
   {
     "id": "y10-1e-q6diff_val",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Taxis depreciate at \\(45\\%\\) p.a., and other cars depreciate at \\(20\\%\\) p.a. What is the difference in value after six years of a fleet of taxis and a fleet of other cars, if both fleets originally cost 10000000 dollars? Correct to the nearest cent.",
@@ -380,11 +506,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "2110170.23",
+      "2579096.95",
+      "2344633.59",
+      "2461865.27"
+    ]
   },
   {
     "id": "y10-1e-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Mr Startit's 10-year-old car is worth 7200 dollars, and has been depreciating at \\(20\\%\\) p.a. Find how much (to the nearest dollar) the car was estimated to be worth one year ago.",
@@ -396,11 +528,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "8100",
+      "9000",
+      "9450",
+      "9900"
+    ]
   },
   {
     "id": "y10-1e-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Mr Startit's 10-year-old car is worth 7200 dollars, and has been depreciating at \\(20\\%\\) p.a. Find how much (to the nearest dollar) the car was estimated to be worth two years ago.",
@@ -412,11 +550,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "10125",
+      "12375",
+      "11250",
+      "11813"
+    ]
   },
   {
     "id": "y10-1e-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Mr Startit's 10-year-old car is worth 7200 dollars, and has been depreciating at \\(20\\%\\) p.a. Find how much (to the nearest dollar) the car was estimated to be worth 10 years ago.",
@@ -428,11 +572,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "60350",
+      "67055",
+      "70408",
+      "73761"
+    ]
   },
   {
     "id": "y10-1e-q7d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Mr Startit's 10-year-old car is worth 7200 dollars, and has been depreciating at \\(20\\%\\) p.a. What is the total percentage reduction in value on the car over the 10-year period? Correct to two decimal places. (Enter value only, e.g. 89.26%)",
@@ -444,11 +594,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "93.72%",
+      "89.26%",
+      "80.33%",
+      "98.19%"
+    ]
   },
   {
     "id": "y10-1e-q7e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Mr Startit's 10-year-old car is worth 7200 dollars, and has been depreciating at \\(20\\%\\) p.a. What was the average reduction in value in dollars per year over the 10-year period? Correct to the nearest cent.",
@@ -460,11 +616,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "6584.05",
+      "5386.95",
+      "5985.50",
+      "6284.78"
+    ]
   },
   {
     "id": "y10-1e-q8a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Ms Rinoldis' seven-year-old car is worth 6400 dollars, and has been depreciating at \\(20\\%\\) p.a. How much, correct to the nearest dollar, was it worth four years ago?",
@@ -476,11 +638,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "17188",
+      "14063",
+      "16406",
+      "15625"
+    ]
   },
   {
     "id": "y10-1e-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Ms Rinoldis' seven-year-old car is worth 6400 dollars, and has been depreciating at \\(20\\%\\) p.a. How much, correct to the nearest dollar, was it worth seven years ago?",
@@ -492,11 +660,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "32044",
+      "27466",
+      "33570",
+      "30518"
+    ]
   },
   {
     "id": "y10-1e-q8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Ms Rinoldis' seven-year-old car is worth 6400 dollars, and has been depreciating at \\(20\\%\\) p.a. What is the total percentage reduction in value on the car over the seven-year period? Correct to two decimal places. (Enter value only, e.g. 79.03%)",
@@ -508,11 +682,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "71.13%",
+      "86.93%",
+      "79.03%",
+      "82.98%"
+    ]
   },
   {
     "id": "y10-1e-q8d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Ms Rinoldis' seven-year-old car is worth 6400 dollars, and has been depreciating at \\(20\\%\\) p.a. What was the average reduction in value in dollars per year over the seven-year period? Correct to the nearest cent.",
@@ -524,11 +704,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "3445.43",
+      "3789.97",
+      "3100.89",
+      "3617.70"
+    ]
   },
   {
     "id": "y10-1e-q8ei",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Ms Rinoldis' seven-year-old car is worth 6400 dollars, and has been depreciating at \\(20\\%\\) p.a. If Ms Rinoldis bought the car four years ago, what has been her average loss in dollars per year over the four years? Correct to the nearest cent.",
@@ -540,11 +726,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "2075.63",
+      "2536.88",
+      "2421.56",
+      "2306.25"
+    ]
   },
   {
     "id": "y10-1e-q8eii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Ms Rinoldis' seven-year-old car is worth 6400 dollars, and has been depreciating at \\(20\\%\\) p.a. What was the average loss in dollars per year over the first three years of the car's life? Correct to the nearest cent.",
@@ -556,11 +748,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "5212.55",
+      "4964.33",
+      "5460.76",
+      "4467.90"
+    ]
   },
   {
     "id": "y10-1e-q9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "I take a sealed glass container and remove \\(50\\%\\) of the air. Then I remove \\(50\\%\\) of the remaining air. I do this six times altogether. What percentage of the original air is left in the container? Correct to two decimal places. (Enter value only, e.g. 1.56%)",
@@ -577,11 +775,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "1.56%",
+      "1.72%",
+      "1.40%",
+      "1.64%"
+    ]
   },
   {
     "id": "y10-1e-q10",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "The number of trees fell by \\(4\\%\\) every year for 10 years, and then rose by \\(4\\%\\) every year for 20 years. What was the total percentage change of trees over the 30-year period? Correct to two decimal places (specify gain or loss, e.g. 'gain of 45.68%').",
@@ -598,11 +802,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "gain of 45.68%",
+      "gain of 45.68% (estimated)",
+      "gain of 45.68% (rounded)",
+      "gain of 45.68% (nominal)"
+    ]
   },
   {
     "id": "y10-1e-q11ai",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(12\\%\\) p.a. for 2 years.",
@@ -614,11 +824,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "22.6%",
+      "24.9%",
+      "20.3%",
+      "23.7%"
+    ]
   },
   {
     "id": "y10-1e-q11aii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(8\\%\\) p.a. for 3 years.",
@@ -630,11 +846,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "24.3%",
+      "22.1%",
+      "19.9%",
+      "23.2%"
+    ]
   },
   {
     "id": "y10-1e-q11aiii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(5\\%\\) p.a. for 5 years.",
@@ -646,11 +868,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "23.7%",
+      "22.6%",
+      "24.9%",
+      "20.3%"
+    ]
   },
   {
     "id": "y10-1e-q11aiv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(4\\%\\) p.a. for 6 years.",
@@ -662,11 +890,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "22.8%",
+      "21.7%",
+      "23.9%",
+      "19.5%"
+    ]
   },
   {
     "id": "y10-1e-q11av",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(2.5\\%\\) p.a. for 10 years.",
@@ -678,11 +912,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "22.4%",
+      "20.2%",
+      "23.5%",
+      "24.6%"
+    ]
   },
   {
     "id": "y10-1e-q11avi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(1.8\\%\\) p.a. for 15 years.",
@@ -694,11 +934,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "23.9%",
+      "26.3%",
+      "21.5%",
+      "25.1%"
+    ]
   },
   {
     "id": "y10-1e-q12",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the first four years, an apparatus depreciates at \\(28\\%\\) p.a., and for the second four years, it depreciates at \\(18\\%\\) p.a. Find the total percentage decrease in value, correct to two decimal places. (Enter value only, e.g. 87.85%)",
@@ -715,11 +961,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "92.24%",
+      "87.85%",
+      "96.64%",
+      "79.06%"
+    ]
   },
   {
     "id": "y10-1e-q13",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "I take 400 mL of a liquid and dilute it with 100 mL of water. Then I take 400 mL of the mixture and again dilute it with 100 mL of water. I repeat this process 15 times in all. What percentage of the original liquid remains in the mixture at the end? Correct to two decimal places. (Enter value only, e.g. 3.52%)",
@@ -736,11 +988,17 @@ export const Y10_CH1E_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Compound depreciation"
+    "t": "Compound depreciation",
+    "opts": [
+      "3.52%",
+      "3.70%",
+      "3.87%",
+      "3.17%"
+    ]
   },
   {
     "id": "y10-1e-q17a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -762,11 +1020,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 14.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "14.00%",
+      "15.40%",
+      "12.60%",
+      "14.70%"
     ]
   },
   {
     "id": "y10-1e-q17b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -788,11 +1052,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 16.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "16.00%",
+      "17.60%",
+      "14.40%",
+      "16.80%"
     ]
   },
   {
     "id": "y10-1e-q17c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -814,11 +1084,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 18.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "16.20%",
+      "18.00%",
+      "18.90%",
+      "19.80%"
     ]
   },
   {
     "id": "y10-1e-q17d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -840,11 +1116,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 20.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "20.00%",
+      "22.00%",
+      "18.00%",
+      "21.00%"
     ]
   },
   {
     "id": "y10-1e-q17e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -866,11 +1148,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 22.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "22.00%",
+      "23.10%",
+      "24.20%",
+      "19.80%"
     ]
   },
   {
     "id": "y10-1e-q17f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -892,11 +1180,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 24.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "24.00%",
+      "25.20%",
+      "21.60%",
+      "26.40%"
     ]
   },
   {
     "id": "y10-1e-q17g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -918,11 +1212,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 26.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "27.30%",
+      "23.40%",
+      "28.60%",
+      "26.00%"
     ]
   },
   {
     "id": "y10-1e-q17h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -944,11 +1244,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 28.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "29.40%",
+      "25.20%",
+      "30.80%",
+      "28.00%"
     ]
   },
   {
     "id": "y10-1e-q17i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -970,11 +1276,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 30.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "27.00%",
+      "30.00%",
+      "33.00%",
+      "31.50%"
     ]
   },
   {
     "id": "y10-1e-q17j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -996,11 +1308,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Better EADR} = 32.00%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "35.20%",
+      "32.00%",
+      "33.60%",
+      "28.80%"
     ]
   },
   {
     "id": "y10-1e-q18a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1022,11 +1340,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 16519.12\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "18171.03",
+      "16519.12",
+      "14867.21",
+      "17345.08"
     ]
   },
   {
     "id": "y10-1e-q18b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1048,11 +1372,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 27583.96\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "27583.96",
+      "28963.16",
+      "30342.36",
+      "24825.56"
     ]
   },
   {
     "id": "y10-1e-q18c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1074,11 +1404,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 41372.20\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "45509.42",
+      "41372.20",
+      "43440.81",
+      "37234.98"
     ]
   },
   {
     "id": "y10-1e-q18d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1100,11 +1436,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 58787.43\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "58787.43",
+      "64666.17",
+      "52908.69",
+      "61726.80"
     ]
   },
   {
     "id": "y10-1e-q18e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1126,11 +1468,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 81040.49\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "89144.54",
+      "85092.51",
+      "81040.49",
+      "72936.44"
     ]
   },
   {
     "id": "y10-1e-q18f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1152,11 +1500,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 109767.44\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "115255.81",
+      "98790.70",
+      "120744.18",
+      "109767.44"
     ]
   },
   {
     "id": "y10-1e-q18g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1178,11 +1532,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 147196.17\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "154555.98",
+      "132476.55",
+      "161915.79",
+      "147196.17"
     ]
   },
   {
     "id": "y10-1e-q18h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1204,11 +1564,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 196383.33\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "196383.33",
+      "206202.50",
+      "216021.66",
+      "176745.00"
     ]
   },
   {
     "id": "y10-1e-q18i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1230,11 +1596,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 261553.50\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "274631.17",
+      "235398.15",
+      "287708.85",
+      "261553.50"
     ]
   },
   {
     "id": "y10-1e-q18j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1256,11 +1628,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(P \\approx 348588.37\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "366017.79",
+      "313729.53",
+      "383447.21",
+      "348588.37"
     ]
   },
   {
     "id": "y10-1e-q19a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1282,11 +1660,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 8782.96\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7904.66",
+      "9661.26",
+      "8782.96",
+      "9222.11"
     ]
   },
   {
     "id": "y10-1e-q19b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1308,11 +1692,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 13806.87\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "15187.56",
+      "13806.87",
+      "14497.21",
+      "12426.18"
     ]
   },
   {
     "id": "y10-1e-q19c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1334,11 +1724,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 19284.19\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "17355.77",
+      "20248.40",
+      "21212.61",
+      "19284.19"
     ]
   },
   {
     "id": "y10-1e-q19d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1360,11 +1756,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 25239.93\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "25239.93",
+      "27763.92",
+      "22715.94",
+      "26501.93"
     ]
   },
   {
     "id": "y10-1e-q19e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1386,11 +1788,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 31700.01\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "31700.01",
+      "34870.01",
+      "28530.01",
+      "33285.01"
     ]
   },
   {
     "id": "y10-1e-q19f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1412,11 +1820,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 38691.37\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "38691.37",
+      "42560.51",
+      "34822.23",
+      "40625.94"
     ]
   },
   {
     "id": "y10-1e-q19g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1438,11 +1852,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 46241.94\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "46241.94",
+      "50866.13",
+      "48554.04",
+      "41617.75"
     ]
   },
   {
     "id": "y10-1e-q19h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1464,11 +1884,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 54380.66\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "59818.73",
+      "54380.66",
+      "48942.59",
+      "57099.69"
     ]
   },
   {
     "id": "y10-1e-q19i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1490,11 +1916,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 63137.56\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "56823.80",
+      "66294.44",
+      "69451.32",
+      "63137.56"
     ]
   },
   {
     "id": "y10-1e-q19j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1516,11 +1948,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(A_2 \\approx 72543.76\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "76170.95",
+      "79798.14",
+      "72543.76",
+      "65289.38"
     ]
   },
   {
     "id": "y10-1e-q20a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1542,11 +1980,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } loss \\text{ of } 4380.92\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "loss of 4380.92",
+      "loss of 4380.92 (nominal)",
+      "loss of 4380.92 (rounded)",
+      "loss of 4380.92 (estimated)"
     ]
   },
   {
     "id": "y10-1e-q20b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1568,11 +2012,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } loss \\text{ of } 3416.99\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "loss of 3416.99 (estimated)",
+      "loss of 3416.99 (rounded)",
+      "loss of 3416.99",
+      "loss of 3416.99 (nominal)"
     ]
   },
   {
     "id": "y10-1e-q20c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1594,11 +2044,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } loss \\text{ of } 2350.91\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "loss of 2350.91",
+      "loss of 2350.91 (estimated)",
+      "loss of 2350.91 (rounded)",
+      "loss of 2350.91 (nominal)"
     ]
   },
   {
     "id": "y10-1e-q20d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1620,11 +2076,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } loss \\text{ of } 1205.70\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "loss of 1205.70",
+      "loss of 1205.70 (rounded)",
+      "loss of 1205.70 (estimated)",
+      "loss of 1205.70 (nominal)"
     ]
   },
   {
     "id": "y10-1e-q20e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1646,11 +2108,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } loss \\text{ of } 0.00\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "loss of 0.00",
+      "loss of 0.00 (estimated)",
+      "loss of 0.00 (nominal)",
+      "loss of 0.00 (rounded)"
     ]
   },
   {
     "id": "y10-1e-q20f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1672,11 +2140,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } gain \\text{ of } 1245.94\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "gain of 1245.94 (rounded)",
+      "gain of 1245.94 (nominal)",
+      "gain of 1245.94 (estimated)",
+      "gain of 1245.94"
     ]
   },
   {
     "id": "y10-1e-q20g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1698,11 +2172,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } gain \\text{ of } 2517.20\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "gain of 2517.20",
+      "gain of 2517.20 (estimated)",
+      "gain of 2517.20 (nominal)",
+      "gain of 2517.20 (rounded)"
     ]
   },
   {
     "id": "y10-1e-q20h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1724,11 +2204,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } gain \\text{ of } 3796.26\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "gain of 3796.26 (rounded)",
+      "gain of 3796.26 (nominal)",
+      "gain of 3796.26 (estimated)",
+      "gain of 3796.26"
     ]
   },
   {
     "id": "y10-1e-q20i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1750,11 +2236,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } gain \\text{ of } 5070.93\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "gain of 5070.93",
+      "gain of 5070.93 (estimated)",
+      "gain of 5070.93 (nominal)",
+      "gain of 5070.93 (rounded)"
     ]
   },
   {
     "id": "y10-1e-q20j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1776,11 +2268,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Result: } gain \\text{ of } 6328.38\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "gain of 6328.38 (estimated)",
+      "gain of 6328.38 (rounded)",
+      "gain of 6328.38 (nominal)",
+      "gain of 6328.38"
     ]
   },
   {
     "id": "y10-1e-q21a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1802,11 +2300,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 18.2\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "16.4",
+      "20.0",
+      "19.1",
+      "18.2"
     ]
   },
   {
     "id": "y10-1e-q21b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1828,11 +2332,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 15.4\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "15.4",
+      "16.2",
+      "16.9",
+      "13.9"
     ]
   },
   {
     "id": "y10-1e-q21c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1854,11 +2364,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 13.2\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "13.9",
+      "11.9",
+      "14.5",
+      "13.2"
     ]
   },
   {
     "id": "y10-1e-q21d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1880,11 +2396,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 11.4\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "11.4",
+      "12.5",
+      "10.3",
+      "12.0"
     ]
   },
   {
     "id": "y10-1e-q21e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1906,11 +2428,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 9.9\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "8.9",
+      "10.9",
+      "10.4",
+      "9.9"
     ]
   },
   {
     "id": "y10-1e-q21f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1932,11 +2460,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 8.7\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7.8",
+      "8.7",
+      "9.6",
+      "9.1"
     ]
   },
   {
     "id": "y10-1e-q21g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1958,11 +2492,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 7.7\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7.7",
+      "6.9",
+      "8.5",
+      "8.1"
     ]
   },
   {
     "id": "y10-1e-q21h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -1984,11 +2524,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 6.8\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6.1",
+      "6.8",
+      "7.1",
+      "7.5"
     ]
   },
   {
     "id": "y10-1e-q21i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2010,11 +2556,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 6.0\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6.3",
+      "5.4",
+      "6.6",
+      "6.0"
     ]
   },
   {
     "id": "y10-1e-q21j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2036,11 +2588,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(n \\approx 5.4\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4.9",
+      "5.9",
+      "5.7",
+      "5.4"
     ]
   },
   {
     "id": "y10-1e-q22a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2062,11 +2620,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{13}{100}\\right)^2 \\approx 12977.48\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "13626.35",
+      "12977.48",
+      "14275.23",
+      "11679.73"
     ]
   },
   {
     "id": "y10-1e-q22b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2088,11 +2652,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{14}{100}\\right)^2 \\approx 15189.50\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "15189.50",
+      "16708.45",
+      "13670.55",
+      "15948.98"
     ]
   },
   {
     "id": "y10-1e-q22c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2114,11 +2684,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{15}{100}\\right)^2 \\approx 17202.45\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "17202.45",
+      "18922.70",
+      "15482.21",
+      "18062.57"
     ]
   },
   {
     "id": "y10-1e-q22d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2140,11 +2716,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{16}{100}\\right)^2 \\approx 19027.58\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "19978.96",
+      "17124.82",
+      "20930.34",
+      "19027.58"
     ]
   },
   {
     "id": "y10-1e-q22e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2166,11 +2748,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{17}{100}\\right)^2 \\approx 20675.64\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "21709.42",
+      "18608.08",
+      "22743.20",
+      "20675.64"
     ]
   },
   {
     "id": "y10-1e-q22f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2192,11 +2780,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{18}{100}\\right)^2 \\approx 22156.91\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "22156.91",
+      "24372.60",
+      "23264.76",
+      "19941.22"
     ]
   },
   {
     "id": "y10-1e-q22g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2218,11 +2812,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{19}{100}\\right)^2 \\approx 23481.22\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "24655.28",
+      "25829.34",
+      "21133.10",
+      "23481.22"
     ]
   },
   {
     "id": "y10-1e-q22h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2244,11 +2844,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{20}{100}\\right)^2 \\approx 24657.92\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "25890.82",
+      "22192.13",
+      "27123.71",
+      "24657.92"
     ]
   },
   {
     "id": "y10-1e-q22i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2270,11 +2876,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{21}{100}\\right)^2 \\approx 25695.97\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "25695.97",
+      "28265.57",
+      "26980.77",
+      "23126.37"
     ]
   },
   {
     "id": "y10-1e-q22j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2296,11 +2908,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{22}{100}\\right)^2 \\approx 26603.87\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "23943.48",
+      "29264.26",
+      "27934.06",
+      "26603.87"
     ]
   },
   {
     "id": "y10-1e-q23a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2322,11 +2940,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 31.50%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "34.65%",
+      "33.08%",
+      "31.50%",
+      "28.35%"
     ]
   },
   {
     "id": "y10-1e-q23b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2348,11 +2972,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 28.92%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "30.37%",
+      "26.03%",
+      "31.81%",
+      "28.92%"
     ]
   },
   {
     "id": "y10-1e-q23c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2374,11 +3004,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 26.89%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "24.20%",
+      "29.58%",
+      "26.89%",
+      "28.23%"
     ]
   },
   {
     "id": "y10-1e-q23d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2400,11 +3036,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 25.25%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "26.51%",
+      "25.25%",
+      "27.78%",
+      "22.73%"
     ]
   },
   {
     "id": "y10-1e-q23e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2426,11 +3068,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 23.91%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "23.91%",
+      "25.11%",
+      "26.30%",
+      "21.52%"
     ]
   },
   {
     "id": "y10-1e-q23f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2452,11 +3100,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 22.78%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "22.78%",
+      "25.06%",
+      "20.50%",
+      "23.92%"
     ]
   },
   {
     "id": "y10-1e-q23g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2478,11 +3132,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 21.83%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "22.92%",
+      "19.65%",
+      "24.01%",
+      "21.83%"
     ]
   },
   {
     "id": "y10-1e-q23h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2504,11 +3164,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 21.01%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "21.01%",
+      "23.11%",
+      "18.91%",
+      "22.06%"
     ]
   },
   {
     "id": "y10-1e-q23i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2530,11 +3196,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 20.31%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "22.34%",
+      "20.31%",
+      "18.28%",
+      "21.33%"
     ]
   },
   {
     "id": "y10-1e-q23j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2556,11 +3228,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Remaining} \\approx 19.69%\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "20.67%",
+      "17.72%",
+      "21.66%",
+      "19.69%"
     ]
   },
   {
     "id": "y10-1e-q24a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2582,11 +3260,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 20000 \\times \\left(\\frac{1 - 0.105}{1 + 0.017}\\right)^{5} \\approx 10557.00\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "9501.30",
+      "11612.70",
+      "10557.00",
+      "11084.85"
     ]
   },
   {
     "id": "y10-1e-q24b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2608,11 +3292,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 40000 \\times \\left(\\frac{1 - 0.11}{1 + 0.019}\\right)^{5} \\approx 20330.08\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "20330.08",
+      "18297.07",
+      "21346.58",
+      "22363.09"
     ]
   },
   {
     "id": "y10-1e-q24c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2634,11 +3324,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 60000 \\times \\left(\\frac{1 - 0.115}{1 + 0.021}\\right)^{5} \\approx 29358.84\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "29358.84",
+      "32294.72",
+      "26422.96",
+      "30826.78"
     ]
   },
   {
     "id": "y10-1e-q24d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2660,11 +3356,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 80000 \\times \\left(\\frac{1 - 0.12}{1 + 0.023}\\right)^{5} \\approx 37681.24\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "41449.36",
+      "33913.12",
+      "37681.24",
+      "39565.30"
     ]
   },
   {
     "id": "y10-1e-q24e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2686,11 +3388,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 100000 \\times \\left(\\frac{1 - 0.125}{1 + 0.025}\\right)^{5} \\approx 45333.68\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "45333.68",
+      "47600.36",
+      "40800.31",
+      "49867.05"
     ]
   },
   {
     "id": "y10-1e-q24f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2712,11 +3420,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 120000 \\times \\left(\\frac{1 - 0.13}{1 + 0.027000000000000003}\\right)^{5} \\approx 52351.04\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "57586.14",
+      "52351.04",
+      "47115.94",
+      "54968.59"
     ]
   },
   {
     "id": "y10-1e-q24g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2738,11 +3452,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 140000 \\times \\left(\\frac{1 - 0.135}{1 + 0.029000000000000005}\\right)^{5} \\approx 58766.75\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "61705.09",
+      "58766.75",
+      "64643.43",
+      "52890.08"
     ]
   },
   {
     "id": "y10-1e-q24h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2764,11 +3484,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 160000 \\times \\left(\\frac{1 - 0.14}{1 + 0.031}\\right)^{5} \\approx 64612.85\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "58151.57",
+      "67843.49",
+      "64612.85",
+      "71074.14"
     ]
   },
   {
     "id": "y10-1e-q24i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2790,11 +3516,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 180000 \\times \\left(\\frac{1 - 0.145}{1 + 0.033}\\right)^{5} \\approx 69920.01\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "69920.01",
+      "62928.01",
+      "73416.01",
+      "76912.01"
     ]
   },
   {
     "id": "y10-1e-q24j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2816,11 +3548,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(V_{\\text{real}} = 200000 \\times \\left(\\frac{1 - 0.15}{1 + 0.035}\\right)^{5} \\approx 74717.59\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "74717.59",
+      "82189.35",
+      "67245.83",
+      "78453.47"
     ]
   },
   {
     "id": "y10-1e-q25a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2842,11 +3580,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 1407.37\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1407.37",
+      "1548.11",
+      "1266.63",
+      "1477.74"
     ]
   },
   {
     "id": "y10-1e-q25b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2868,11 +3612,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 2251.79\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2364.38",
+      "2251.79",
+      "2476.97",
+      "2026.61"
     ]
   },
   {
     "id": "y10-1e-q25c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2894,11 +3644,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 3096.21\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3251.02",
+      "2786.59",
+      "3405.83",
+      "3096.21"
     ]
   },
   {
     "id": "y10-1e-q25d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2920,11 +3676,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 3940.63\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4137.66",
+      "3546.57",
+      "4334.69",
+      "3940.63"
     ]
   },
   {
     "id": "y10-1e-q25e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2946,11 +3708,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 4785.05\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4785.05",
+      "5263.56",
+      "4306.55",
+      "5024.30"
     ]
   },
   {
     "id": "y10-1e-q25f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2972,11 +3740,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 5629.47\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5629.47",
+      "6192.42",
+      "5910.94",
+      "5066.52"
     ]
   },
   {
     "id": "y10-1e-q25g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -2998,11 +3772,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 6473.89\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6797.58",
+      "5826.50",
+      "7121.28",
+      "6473.89"
     ]
   },
   {
     "id": "y10-1e-q25h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3024,11 +3804,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 7318.31\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "7318.31",
+      "8050.14",
+      "6586.48",
+      "7684.23"
     ]
   },
   {
     "id": "y10-1e-q25i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3050,11 +3836,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 8162.73\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "8162.73",
+      "8570.87",
+      "8979.00",
+      "7346.46"
     ]
   },
   {
     "id": "y10-1e-q25j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3076,11 +3868,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 9007.15\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "8106.43",
+      "9907.86",
+      "9457.51",
+      "9007.15"
     ]
   },
   {
     "id": "y10-1e-q26a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3102,11 +3900,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 90000 - V_5 \\approx 54667.44\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "57400.81",
+      "49200.70",
+      "60134.18",
+      "54667.44"
     ]
   },
   {
     "id": "y10-1e-q26b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3128,11 +3932,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 100000 - V_5 \\approx 62432.20\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "65553.81",
+      "56188.98",
+      "68675.42",
+      "62432.20"
     ]
   },
   {
     "id": "y10-1e-q26c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3154,11 +3964,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 110000 - V_5 \\approx 70473.58\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "70473.58",
+      "77520.94",
+      "73997.26",
+      "63426.22"
     ]
   },
   {
     "id": "y10-1e-q26d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3180,11 +3996,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 120000 - V_5 \\approx 78776.40\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "78776.40",
+      "86654.04",
+      "70898.76",
+      "82715.22"
     ]
   },
   {
     "id": "y10-1e-q26e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3206,11 +4028,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 130000 - V_5 \\approx 87325.98\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "91692.28",
+      "78593.38",
+      "96058.58",
+      "87325.98"
     ]
   },
   {
     "id": "y10-1e-q26f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3232,11 +4060,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 140000 - V_5 \\approx 96108.14\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "100913.55",
+      "86497.33",
+      "105718.95",
+      "96108.14"
     ]
   },
   {
     "id": "y10-1e-q26g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3258,11 +4092,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 150000 - V_5 \\approx 105109.19\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "115620.11",
+      "105109.19",
+      "110364.65",
+      "94598.27"
     ]
   },
   {
     "id": "y10-1e-q26h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3284,11 +4124,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 160000 - V_5 \\approx 114315.91\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "125747.50",
+      "114315.91",
+      "120031.71",
+      "102884.32"
     ]
   },
   {
     "id": "y10-1e-q26i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3310,11 +4156,17 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 170000 - V_5 \\approx 123715.55\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "129901.33",
+      "123715.55",
+      "111344.00",
+      "136087.11"
     ]
   },
   {
     "id": "y10-1e-q26j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
@@ -3336,6 +4188,12 @@ export const Y10_CH1E_QUESTIONS = [
         "workingOut": "\\(\\text{Total Depreciation} = 180000 - V_5 \\approx 133295.79\\)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "139960.58",
+      "119966.21",
+      "146625.37",
+      "133295.79"
     ]
   }
 ];

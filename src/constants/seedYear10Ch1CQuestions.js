@@ -1,7 +1,7 @@
 export const Y10_CH1C_QUESTIONS = [
   {
     "id": "y10-1c-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the final value after 20000 dollars is successively increased by \\(4\\%\\), \\(6\\%\\) and \\(12\\%\\).",
@@ -16,11 +16,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(\\text{Answer} = 24693.76\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "24693.76",
+      "27163.14",
+      "22224.38",
+      "25928.45"
+    ]
   },
   {
     "id": "y10-1c-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the final value after 20000 dollars is successively decreased by \\(5\\%\\), \\(6\\%\\) and \\(8\\%\\).",
@@ -35,11 +41,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(\\text{Answer} = 16431.20\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "17252.76",
+      "16431.20",
+      "14788.08",
+      "18074.32"
+    ]
   },
   {
     "id": "y10-1c-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the final value after 80000 dollars has been increased by \\(8\\%\\) ten times successively. Give your answer correct to the nearest cent.",
@@ -54,11 +66,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(\\text{Answer} = 172714.00\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "181349.70",
+      "189985.40",
+      "172714.00",
+      "155442.60"
+    ]
   },
   {
     "id": "y10-1c-q2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Three years ago, apples cost 3.20 dollars per kg, but the price has increased by \\(5\\%\\), \\(12\\%\\) and \\(10\\%\\) in the past three successive years. Multiply by \\(1.05 \\times 1.12 \\times 1.10\\) to find the price of apples now, correct to two decimal places.",
@@ -73,11 +91,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(= 4.14336 \\approx 4.14\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "4.35",
+      "4.55",
+      "4.14",
+      "3.73"
+    ]
   },
   {
     "id": "y10-1c-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The dividend per share in a bank company has risen over the last four years by \\(25\\%\\), \\(100\\%\\), \\(150\\%\\) and \\(10\\%\\), respectively. Find the total dividend received now by a shareholder whose dividend four years ago was 1000 dollars.",
@@ -92,11 +116,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(1000 \\times 6.875 = 6875\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "7563",
+      "6875",
+      "7219",
+      "6188"
+    ]
   },
   {
     "id": "y10-1c-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The dividend per share in a bank company has risen over the last four years by \\(25\\%\\), \\(100\\%\\), \\(150\\%\\) and \\(10\\%\\), respectively. Find the total dividend received now by a shareholder whose dividend four years ago was 8000 dollars.",
@@ -111,11 +141,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(8000 \\times 6.875 = 55000\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "57750",
+      "49500",
+      "60500",
+      "55000"
+    ]
   },
   {
     "id": "y10-1c-q3c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The dividend per share in a bank company has risen over the last four years by \\(25\\%\\), \\(100\\%\\), \\(150\\%\\) and \\(10\\%\\), respectively. Find the total dividend received now by a shareholder whose dividend four years ago was 16.0 dollars.",
@@ -130,11 +166,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(16.0 \\times 6.875 = 110.00\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "121.00",
+      "99.00",
+      "110.00",
+      "115.50"
+    ]
   },
   {
     "id": "y10-1c-q3d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The dividend per share in a bank company has risen over the last four years by \\(25\\%\\), \\(100\\%\\), \\(150\\%\\) and \\(10\\%\\), respectively. Find the total dividend received now by a shareholder whose dividend four years ago was 400.0 dollars.",
@@ -149,11 +191,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(400.0 \\times 6.875 = 2750\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "2750",
+      "3025",
+      "2888",
+      "2475"
+    ]
   },
   {
     "id": "y10-1c-q4a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Land rates in a shire have risen by \\(5\\%\\) every year for the last seven years. By what percentage have the land rates risen over the seven-year period? Correct to one decimal place.",
@@ -168,11 +216,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1.4071 - 1) \\times 100\\% \\approx 40.7\\%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "42.7%",
+      "36.6%",
+      "40.7%",
+      "44.8%"
+    ]
   },
   {
     "id": "y10-1c-q4bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Land rates in a shire have risen by \\(5\\%\\) every year for the last seven years. Find the rates now payable by a landowner whose rates seven years ago were 2000 dollars, correct to the nearest cent.",
@@ -187,11 +241,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(2000 \\times 1.407100 = 2814.20\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "2532.78",
+      "2814.20",
+      "2954.91",
+      "3095.62"
+    ]
   },
   {
     "id": "y10-1c-q4bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Land rates in a shire have risen by \\(5\\%\\) every year for the last seven years. Find the rates now payable by a landowner whose rates seven years ago were 15000 dollars, correct to the nearest cent.",
@@ -206,11 +266,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(15000 \\times 1.407100 = 21106.50\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "22161.83",
+      "18995.85",
+      "23217.15",
+      "21106.50"
+    ]
   },
   {
     "id": "y10-1c-q4biii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Land rates in a shire have risen by \\(5\\%\\) every year for the last seven years. Find the rates now payable by a landowner whose rates seven years ago were 300 dollars, correct to the nearest cent.",
@@ -225,11 +291,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(300 \\times 1.407100 = 422.13\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "422.13",
+      "464.34",
+      "379.92",
+      "443.24"
+    ]
   },
   {
     "id": "y10-1c-q5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "In four successive years, the number of overweight people in a community fell by \\(5\\%\\), \\(8\\%\\), \\(10\\%\\) and \\(6\\%\\), respectively. Find, correct to two decimal places, the percentage decrease over the four-year period.",
@@ -244,11 +316,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1 - 0.739224) \\times 100\\% \\approx 26.08\\%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "26.08%",
+      "28.69%",
+      "23.47%",
+      "27.38%"
+    ]
   },
   {
     "id": "y10-1c-q6a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the total percentage change (stating if it is an increase or decrease, e.g. 'decrease of 9%') when a quantity is increased by \\(30\\%\\) and then decreased by \\(30\\%\\).",
@@ -267,11 +345,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1 - 0.9100) \\times 100\\% = 9\\%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "decrease of 9% (nominal)",
+      "decrease of 9% (rounded)",
+      "decrease of 9%",
+      "decrease of 9% (estimated)"
+    ]
   },
   {
     "id": "y10-1c-q6b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the total percentage change (stating if it is an increase or decrease, e.g. 'decrease of 9%') when a quantity is increased by \\(60\\%\\) and then decreased by \\(60\\%\\).",
@@ -290,11 +374,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1 - 0.6400) \\times 100\\% = 36\\%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "decrease of 36%",
+      "decrease of 36% (estimated)",
+      "decrease of 36% (rounded)",
+      "decrease of 36% (nominal)"
+    ]
   },
   {
     "id": "y10-1c-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The price of beans has risen by \\(8\\%\\), \\(12\\%\\) and \\(30\\%\\) in three successive years, and they now cost 4.50 dollars per kg. Find the price one year ago, correct to two decimal places.",
@@ -305,11 +395,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(\\text{Answer} = 3.46\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "3.46",
+      "3.81",
+      "3.11",
+      "3.63"
+    ]
   },
   {
     "id": "y10-1c-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The price of beans has risen by \\(8\\%\\), \\(12\\%\\) and \\(30\\%\\) in three successive years, and they now cost 4.50 dollars per kg. Find the price two years ago, correct to two decimal places.",
@@ -320,11 +416,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(\\text{Answer} = 3.09\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "3.24",
+      "3.09",
+      "3.40",
+      "2.78"
+    ]
   },
   {
     "id": "y10-1c-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The price of beans has risen by \\(8\\%\\), \\(12\\%\\) and \\(30\\%\\) in three successive years, and they now cost 4.50 dollars per kg. Find the original price three years ago, correct to two decimal places.",
@@ -335,11 +437,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(\\text{Answer} = 2.86\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "3.00",
+      "2.57",
+      "3.15",
+      "2.86"
+    ]
   },
   {
     "id": "y10-1c-q8ai",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Shares have been falling by \\(15\\%\\) per year for the last five years. Find the present worth of a parcel of shares with an original worth five years ago of 1000 dollars, correct to the nearest cent.",
@@ -354,11 +462,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(1000 \\times 0.443705 = 443.71\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "399.34",
+      "465.90",
+      "488.08",
+      "443.71"
+    ]
   },
   {
     "id": "y10-1c-q8aii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Shares have been falling by \\(15\\%\\) per year for the last five years. Find the present worth of a parcel of shares with an original worth five years ago of 25000 dollars, correct to the nearest cent.",
@@ -373,11 +487,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(25000 \\times 0.443705 = 11092.63\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "12201.89",
+      "11647.26",
+      "11092.63",
+      "9983.37"
+    ]
   },
   {
     "id": "y10-1c-q8aiii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Shares have been falling by \\(15\\%\\) per year for the last five years. Find the present worth of a parcel of shares with an original worth five years ago of 80000 dollars, correct to the nearest cent.",
@@ -392,11 +512,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(80000 \\times 0.443705 = 35496.42\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "37271.24",
+      "31946.78",
+      "39046.06",
+      "35496.42"
+    ]
   },
   {
     "id": "y10-1c-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Shares have been falling by \\(15\\%\\) per year for the last five years. By what percentage has the value fallen over the five-year period? Correct to two decimal places.",
@@ -411,11 +537,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1 - 0.443705) \\times 100\\% \\approx 55.63\\%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "61.19%",
+      "50.07%",
+      "55.63%",
+      "58.41%"
+    ]
   },
   {
     "id": "y10-1c-q9a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A particular strain of bacteria increases its population by \\(15\\%\\) every hour. Calculate the size of the original population four hours ago if there are now 20000 bacteria, correct to the nearest integer.",
@@ -430,11 +562,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(20000 \\div 1.749006 \\approx 11435\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "12007",
+      "10292",
+      "12579",
+      "11435"
+    ]
   },
   {
     "id": "y10-1c-q9b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A particular strain of bacteria increases its population by \\(15\\%\\) every hour. Calculate the size of the original population four hours ago if there are now 500000 bacteria, correct to the nearest integer.",
@@ -449,11 +587,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(500000 \\div 1.749006 \\approx 285877\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "285877",
+      "300171",
+      "314465",
+      "257289"
+    ]
   },
   {
     "id": "y10-1c-q9c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A particular strain of bacteria increases its population by \\(15\\%\\) every hour. Calculate the size of the original population four hours ago if there are now 150000 bacteria, correct to the nearest integer.",
@@ -468,11 +612,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(150000 \\div 1.749006 \\approx 85763\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "90051",
+      "77187",
+      "94339",
+      "85763"
+    ]
   },
   {
     "id": "y10-1c-q10ai",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A potato is taken from boiling water at \\(100^\\circ\\mathrm{C}\\) and placed in a fridge. Every minute, the temperature of the potato drops by \\(15\\%\\). Find the temperature of the potato after 4 minutes, correct to two decimal places.",
@@ -483,11 +633,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(100 \\times 0.85^{4} = 52.20\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "57.42",
+      "54.81",
+      "52.20",
+      "46.98"
+    ]
   },
   {
     "id": "y10-1c-q10aii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A potato is taken from boiling water at \\(100^\\circ\\mathrm{C}\\) and placed in a fridge. Every minute, the temperature of the potato drops by \\(15\\%\\). Find the temperature of the potato after 8 minutes, correct to two decimal places.",
@@ -498,11 +654,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(100 \\times 0.85^{8} = 27.25\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "27.25",
+      "28.61",
+      "29.98",
+      "24.53"
+    ]
   },
   {
     "id": "y10-1c-q10aiii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A potato is taken from boiling water at \\(100^\\circ\\mathrm{C}\\) and placed in a fridge. Every minute, the temperature of the potato drops by \\(15\\%\\). Find the temperature of the potato after 20 minutes, correct to two decimal places.",
@@ -513,11 +675,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(100 \\times 0.85^{20} = 3.88\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "3.49",
+      "4.07",
+      "4.27",
+      "3.88"
+    ]
   },
   {
     "id": "y10-1c-q10bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A potato drops temperature by \\(15\\%\\) every minute in a fridge. If its temperature is now \\(15^\\circ\\mathrm{C}\\), find its temperature 3 minutes ago, correct to two decimal places.",
@@ -528,11 +696,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(15 \\div 0.85^{3} = 24.43\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "21.99",
+      "25.65",
+      "26.87",
+      "24.43"
+    ]
   },
   {
     "id": "y10-1c-q10bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A potato drops temperature by \\(15\\%\\) every minute in a fridge. If its temperature is now \\(15^\\circ\\mathrm{C}\\), find its temperature 6 minutes ago, correct to two decimal places.",
@@ -543,11 +717,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(15 \\div 0.85^{6} = 39.77\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "41.76",
+      "43.75",
+      "39.77",
+      "35.79"
+    ]
   },
   {
     "id": "y10-1c-q10biii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A potato drops temperature by \\(15\\%\\) every minute in a fridge. If its temperature is now \\(15^\\circ\\mathrm{C}\\), find its temperature 10 minutes ago, correct to two decimal places.",
@@ -558,11 +738,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\(15 \\div 0.85^{10} = 76.20\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "68.58",
+      "83.82",
+      "76.20",
+      "80.01"
+    ]
   },
   {
     "id": "y10-1c-q11a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Given the annual inflation rates: Years: 2005 (2.5%), 2006 (3.0%), 2007 (3.5%), 2008 (2.0%), 2009 (4.0%), 2010 (2.0%). Calculate the percentage increase in prices, correct to one decimal place, over the whole six-year period.",
@@ -577,11 +763,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1.1843 - 1) \\times 100\\% \\approx 18.4\\%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "18.4%",
+      "20.2%",
+      "16.6%",
+      "19.3%"
+    ]
   },
   {
     "id": "y10-1c-q11b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Given the annual inflation rates: Years: 2005 (2.5%), 2006 (3.0%), 2007 (3.5%), 2008 (2.0%), 2009 (4.0%), 2010 (2.0%). Calculate the percentage increase in prices, correct to one decimal place, during the first four-year period (2005 to 2008 inclusive).",
@@ -596,11 +788,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1.1147 - 1) \\times 100\\% \\approx 11.5\\%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "11.5%",
+      "12.7%",
+      "10.3%",
+      "12.1%"
+    ]
   },
   {
     "id": "y10-1c-q12a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "The radioactivity of a sample decreases by \\(50\\%\\) every seven days. Find the percentage reduction in radioactivity over a period of 3 weeks, correct to one decimal place.",
@@ -615,11 +813,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1 - 0.125000) \\times 100\\% \\approx 87.5%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "78.8%",
+      "91.9%",
+      "87.5%",
+      "96.3%"
+    ]
   },
   {
     "id": "y10-1c-q12b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "The radioactivity of a sample decreases by \\(50\\%\\) every seven days. Find the percentage reduction in radioactivity over a period of 5 weeks, correct to one decimal place.",
@@ -634,11 +838,17 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1 - 0.031250) \\times 100\\% \\approx 96.9%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "101.7%",
+      "96.9%",
+      "106.6%",
+      "87.2%"
+    ]
   },
   {
     "id": "y10-1c-q12c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "The radioactivity of a sample decreases by \\(50\\%\\) every seven days. Find the percentage reduction in radioactivity over a period of 10 weeks, correct to one decimal place.",
@@ -653,18 +863,24 @@ export const Y10_CH1C_QUESTIONS = [
         "workingOut": "\\((1 - 0.000977) \\times 100\\% \\approx 99.9%\\)"
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "89.9%",
+      "104.9%",
+      "109.9%",
+      "99.9%"
+    ]
   },
   {
     "id": "y10-1c-q13",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Analyze successive price changes on a coat.",
     "subQuestions": [
       {
         "id": "y10-1c-q13a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "A coat is discounted by \\(40\\%\\), and the resulting price is then increased by \\(40\\%\\). By what percentage is the price increased or decreased from its original value? (e.g. 'decrease of 16%')",
         "a": "decrease of 16%",
         "solutionSteps": [
@@ -676,11 +892,17 @@ export const Y10_CH1C_QUESTIONS = [
             "explanation": "Convert this multiplier into percentage change.",
             "workingOut": "\\((1 - 0.84) \\times 100\\% = 16\\% \\text{ decrease}\\)"
           }
+        ],
+        "opts": [
+          "decrease of 16% (rounded)",
+          "decrease of 16% (nominal)",
+          "decrease of 16% (estimated)",
+          "decrease of 16%"
         ]
       },
       {
         "id": "y10-1c-q13b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "The price of a coat is increased by \\(40\\%\\), and the resulting price is then decreased by \\(40\\%\\). By what percentage is the price increased or decreased from its original value? (e.g. 'decrease of 16%')",
         "a": "decrease of 16%",
         "solutionSteps": [
@@ -692,6 +914,12 @@ export const Y10_CH1C_QUESTIONS = [
             "explanation": "Convert this multiplier into percentage change.",
             "workingOut": "\\((1 - 0.84) \\times 100\\% = 16\\% \\text{ decrease}\\)"
           }
+        ],
+        "opts": [
+          "decrease of 16% (estimated)",
+          "decrease of 16%",
+          "decrease of 16% (rounded)",
+          "decrease of 16% (nominal)"
         ]
       },
       {
@@ -707,7 +935,13 @@ export const Y10_CH1C_QUESTIONS = [
         ]
       }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Repeated increases and decreases",
+    "opts": [
+      "undefined (rounded)",
+      "undefined (nominal)",
+      "undefined (estimated)",
+      "undefined"
+    ]
   },
   {
     "id": "y10-1c-high-q1",

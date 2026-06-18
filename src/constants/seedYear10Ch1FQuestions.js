@@ -1,7 +1,7 @@
 export const Y10_CH1F_QUESTIONS = [
   {
     "id": "y10-1f-q1",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
@@ -17,11 +17,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "I = 2240"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "\\$2240 (nominal)",
+      "\\$2240",
+      "\\$2240 (estimated)",
+      "\\$2240 (rounded)"
+    ]
   },
   {
     "id": "y10-1f-q2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
@@ -41,11 +47,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "N = \\frac{1530}{510} = 3"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "5",
+      "3",
+      "4",
+      "2"
+    ]
   },
   {
     "id": "y10-1f-q3",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
@@ -69,11 +81,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "0.06 \\times 100\\% = 6\\%"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "5%",
+      "7%",
+      "6%",
+      "8%"
+    ]
   },
   {
     "id": "y10-1f-q4a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
@@ -89,11 +107,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "250 \\times 0.7 = 175"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "\\$175 (nominal)",
+      "\\$175 (rounded)",
+      "\\$175 (estimated)",
+      "\\$175"
+    ]
   },
   {
     "id": "y10-1f-q4b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
@@ -105,11 +129,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "180 \\times 0.7 = 126"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "\\$126 (nominal)",
+      "\\$126 (estimated)",
+      "\\$126 (rounded)",
+      "\\$126"
+    ]
   },
   {
     "id": "y10-1f-q5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
@@ -125,11 +155,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\frac{30}{150} \\times 100\\% = 20\\%"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "20%",
+      "22%",
+      "18%",
+      "21%"
+    ]
   },
   {
     "id": "y10-1f-q6a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
@@ -145,11 +181,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{Original} = \\frac{15.60}{0.65} = 24"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "\\$24 (nominal)",
+      "\\$24 (rounded)",
+      "\\$24 (estimated)",
+      "\\$24"
+    ]
   },
   {
     "id": "y10-1f-q6b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
@@ -165,11 +207,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{Original} = \\frac{52}{0.65} = 80"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "\\$80 (rounded)",
+      "\\$80 (nominal)",
+      "\\$80 (estimated)",
+      "\\$80"
+    ]
   },
   {
     "id": "y10-1f-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -181,11 +229,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "150 \\times 0.8 = 120"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "120",
+      "132",
+      "108",
+      "126"
+    ]
   },
   {
     "id": "y10-1f-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -197,11 +251,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "80 \\times 1.25 = 100"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "110",
+      "105",
+      "100",
+      "90"
+    ]
   },
   {
     "id": "y10-1f-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -213,11 +273,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "50 \\times 0.7 = 35"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "35",
+      "39",
+      "32",
+      "37"
+    ]
   },
   {
     "id": "y10-1f-q7d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -233,11 +299,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{Original} = \\frac{48}{1.2} = 40"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "40",
+      "44",
+      "42",
+      "36"
+    ]
   },
   {
     "id": "y10-1f-q7e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -257,11 +329,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{30\\% decrease}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "33",
+      "30",
+      "27",
+      "32"
+    ]
   },
   {
     "id": "y10-1f-q7f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -281,11 +359,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{125\\% increase}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "138",
+      "131",
+      "125",
+      "113"
+    ]
   },
   {
     "id": "y10-1f-q7g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -301,11 +385,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{Original} = \\frac{168}{0.7} = 240"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "240",
+      "264",
+      "252",
+      "216"
+    ]
   },
   {
     "id": "y10-1f-q8a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -325,11 +415,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{9\\% decrease}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "11",
+      "9",
+      "10",
+      "8"
+    ]
   },
   {
     "id": "y10-1f-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -349,11 +445,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{32\\% increase}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "34",
+      "29",
+      "32",
+      "35"
+    ]
   },
   {
     "id": "y10-1f-q8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -373,11 +475,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{10.75\\% decrease}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "10.7500000000000",
+      "11.8250000000000",
+      "11.2875000000000",
+      "9.6750000000000"
+    ]
   },
   {
     "id": "y10-1f-q8d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -397,11 +505,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{36\\% decrease}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "32",
+      "38",
+      "36",
+      "40"
+    ]
   },
   {
     "id": "y10-1f-q9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -425,11 +539,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "11.36\\%"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "11.360%",
+      "12.496%",
+      "10.224%",
+      "11.928%"
+    ]
   },
   {
     "id": "y10-1f-q10a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -449,11 +569,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{Increase of 30\\%}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "Increase of 30\\% (rounded)",
+      "Increase of 30\\% (nominal)",
+      "Increase of 30\\% (estimated)",
+      "Increase of 30\\%"
+    ]
   },
   {
     "id": "y10-1f-q10b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -473,11 +599,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{Increase of 10\\%}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "Increase of 10\\%",
+      "Increase of 10\\% (estimated)",
+      "Increase of 10\\% (nominal)",
+      "Increase of 10\\% (rounded)"
+    ]
   },
   {
     "id": "y10-1f-q10c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -497,11 +629,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{Decrease of 30\\%}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "Decrease of 30\\%",
+      "Decrease of 30\\% (estimated)",
+      "Decrease of 30\\% (nominal)",
+      "Decrease of 30\\% (rounded)"
+    ]
   },
   {
     "id": "y10-1f-q10d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -521,11 +659,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\text{Decrease of 10\\%}"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "Decrease of 10\\%",
+      "Decrease of 10\\% (estimated)",
+      "Decrease of 10\\% (rounded)",
+      "Decrease of 10\\% (nominal)"
+    ]
   },
   {
     "id": "y10-1f-q11",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -545,11 +689,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "\\$30693.31"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "\\$30693.31 (estimated)",
+      "\\$30693.31",
+      "\\$30693.31 (rounded)",
+      "\\$30693.31 (nominal)"
+    ]
   },
   {
     "id": "y10-1f-q12a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -565,11 +715,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "A \\approx 20073.38"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "\\$20073.38",
+      "\\$20073.38 (estimated)",
+      "\\$20073.38 (nominal)",
+      "\\$20073.38 (rounded)"
+    ]
   },
   {
     "id": "y10-1f-q12b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -589,11 +745,17 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "A \\approx 20202.83"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "\\$20202.83 (nominal)",
+      "\\$20202.83 (estimated)",
+      "\\$20202.83",
+      "\\$20202.83 (rounded)"
+    ]
   },
   {
     "id": "y10-1f-q12c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
@@ -613,6 +775,12 @@ export const Y10_CH1F_QUESTIONS = [
         "workingOut": "A \\approx 20232.79"
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "opts": [
+      "\\$20232.79 (rounded)",
+      "\\$20232.79 (nominal)",
+      "\\$20232.79 (estimated)",
+      "\\$20232.79"
+    ]
   }
 ];

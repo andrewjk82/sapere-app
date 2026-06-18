@@ -1,7 +1,7 @@
 export const Y10_CH1_QUESTIONS = [
   {
     "id": "y10-1a-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(45\\%\\) as a decimal.",
@@ -12,11 +12,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(45\\% = 45 \\div 100 = 0.45\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.47",
+      "0.41",
+      "0.50",
+      "0.45"
+    ]
   },
   {
     "id": "y10-1a-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(6.4\\%\\) as a decimal.",
@@ -27,11 +33,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(6.4\\% = 6.4 \\div 100 = 0.064\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.070",
+      "0.067",
+      "0.064",
+      "0.058"
+    ]
   },
   {
     "id": "y10-1a-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(18\\%\\) as a decimal.",
@@ -42,11 +54,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(18\\% = 18 \\div 100 = 0.18\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.20",
+      "0.18",
+      "0.19",
+      "0.16"
+    ]
   },
   {
     "id": "y10-1a-q1d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(4.25\\%\\) as a decimal.",
@@ -57,11 +75,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(4.25\\% = 4.25 \\div 100 = 0.0425\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.0383",
+      "0.0446",
+      "0.0425",
+      "0.0468"
+    ]
   },
   {
     "id": "y10-1a-q1e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(310\\%\\) as a decimal.",
@@ -72,11 +96,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(310\\% = 310 \\div 100 = 3.1\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "2.8",
+      "3.4",
+      "3.1",
+      "3.3"
+    ]
   },
   {
     "id": "y10-1a-q1f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(0.5\\%\\) as a decimal.",
@@ -87,11 +117,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.5\\% = 0.5 \\div 100 = 0.005\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.006",
+      "0.005",
+      "1.005",
+      "0.004"
+    ]
   },
   {
     "id": "y10-1a-q1g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(42\\frac{1}{4}\\%\\) as a decimal.",
@@ -102,11 +138,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(42\\frac{1}{4}\\% = 42.25 \\div 100 = 0.4225\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.4225",
+      "0.3802",
+      "0.4436",
+      "0.4647"
+    ]
   },
   {
     "id": "y10-1a-q1h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(\\frac{3}{8}\\%\\) as a decimal.",
@@ -117,11 +159,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{3}{8}\\% = 0.375 \\div 100 = 0.00375\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.00375",
+      "0.00413",
+      "0.00337",
+      "0.00394"
+    ]
   },
   {
     "id": "y10-1a-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(35\\%\\) as a fraction in lowest terms.",
@@ -132,11 +180,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(35\\% = \\frac{35}{100} = \\frac{7}{20}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{7}{20}",
+      "\\frac{7}{20} (estimated)",
+      "\\frac{7}{20} (rounded)",
+      "\\frac{7}{20} (nominal)"
+    ]
   },
   {
     "id": "y10-1a-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(48\\%\\) as a fraction in lowest terms.",
@@ -147,11 +201,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(48\\% = \\frac{48}{100} = \\frac{12}{25}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{12}{25} (nominal)",
+      "\\frac{12}{25} (rounded)",
+      "\\frac{12}{25} (estimated)",
+      "\\frac{12}{25}"
+    ]
   },
   {
     "id": "y10-1a-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(37\\frac{1}{2}\\%\\) as a fraction in lowest terms.",
@@ -162,11 +222,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(37\\frac{1}{2}\\% = \\frac{37\\frac{1}{2}}{100} = \\frac{3}{8}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{3}{8}",
+      "\\frac{3}{8} (estimated)",
+      "\\frac{3}{8} (nominal)",
+      "\\frac{3}{8} (rounded)"
+    ]
   },
   {
     "id": "y10-1a-q2d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(33\\frac{1}{3}\\%\\) as a fraction in lowest terms.",
@@ -177,11 +243,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(33\\frac{1}{3}\\% = \\frac{33\\frac{1}{3}}{100} = \\frac{1}{3}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{1}{3} (estimated)",
+      "\\frac{1}{3} (rounded)",
+      "\\frac{1}{3} (nominal)",
+      "\\frac{1}{3}"
+    ]
   },
   {
     "id": "y10-1a-q2e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(6.25\\%\\) as a fraction in lowest terms.",
@@ -192,11 +264,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(6.25\\% = \\frac{6.25}{100} = \\frac{1}{16}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{1}{16} (nominal)",
+      "\\frac{1}{16} (rounded)",
+      "\\frac{1}{16}",
+      "\\frac{1}{16} (estimated)"
+    ]
   },
   {
     "id": "y10-1a-q2f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(4.4\\%\\) as a fraction in lowest terms.",
@@ -207,11 +285,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(4.4\\% = \\frac{4.4}{100} = \\frac{11}{25}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{11}{25}",
+      "\\frac{11}{25} (rounded)",
+      "\\frac{11}{25} (estimated)",
+      "\\frac{11}{25} (nominal)"
+    ]
   },
   {
     "id": "y10-1a-q2g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(140\\%\\) as a fraction in lowest terms.",
@@ -222,11 +306,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(140\\% = \\frac{140}{100} = 1\\frac{2}{5}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1",
+      "2",
+      "4",
+      "3"
+    ]
   },
   {
     "id": "y10-1a-q2h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(160\\%\\) as a fraction in lowest terms.",
@@ -237,11 +327,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(160\\% = \\frac{160}{100} = 1\\frac{3}{5}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ]
   },
   {
     "id": "y10-1a-q2i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(5.75\\%\\) as a fraction in lowest terms.",
@@ -252,11 +348,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(5.75\\% = \\frac{5.75}{100} = \\frac{23}{400}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{23}{400} (rounded)",
+      "\\frac{23}{400} (nominal)",
+      "\\frac{23}{400} (estimated)",
+      "\\frac{23}{400}"
+    ]
   },
   {
     "id": "y10-1a-q2j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(14\\frac{1}{4}\\%\\) as a fraction in lowest terms.",
@@ -267,11 +369,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(14\\frac{1}{4}\\% = \\frac{14\\frac{1}{4}}{100} = \\frac{57}{400}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{57}{400}",
+      "\\frac{57}{400} (estimated)",
+      "\\frac{57}{400} (rounded)",
+      "\\frac{57}{400} (nominal)"
+    ]
   },
   {
     "id": "y10-1a-q2k",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(\\frac{1}{4}\\%\\) as a fraction in lowest terms.",
@@ -282,11 +390,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{1}{4}\\% = \\frac{\\frac{1}{4}}{100} = \\frac{1}{400}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{1}{400} (estimated)",
+      "\\frac{1}{400}",
+      "\\frac{1}{400} (rounded)",
+      "\\frac{1}{400} (nominal)"
+    ]
   },
   {
     "id": "y10-1a-q2l",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(8.6\\%\\) as a fraction in lowest terms.",
@@ -297,11 +411,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(8.6\\% = \\frac{8.6}{100} = \\frac{43}{500}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{43}{500} (nominal)",
+      "\\frac{43}{500} (estimated)",
+      "\\frac{43}{500}",
+      "\\frac{43}{500} (rounded)"
+    ]
   },
   {
     "id": "y10-1a-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(\\frac{3}{5}\\) as a percentage.",
@@ -312,11 +432,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{3}{5} = \\frac{3}{5} \\times 100 = 60\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "54%",
+      "60%",
+      "63%",
+      "66%"
+    ]
   },
   {
     "id": "y10-1a-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(\\frac{5}{8}\\) as a percentage.",
@@ -327,11 +453,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{5}{8} = \\frac{5}{8} \\times 100 = 62.5\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "65.6%",
+      "62.5%",
+      "68.8%",
+      "56.3%"
+    ]
   },
   {
     "id": "y10-1a-q3c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(\\frac{3}{16}\\) as a percentage.",
@@ -342,11 +474,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{3}{16} = \\frac{3}{16} \\times 100 = 18.75\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "18.75%",
+      "20.63%",
+      "19.69%",
+      "16.88%"
+    ]
   },
   {
     "id": "y10-1a-q3d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(1\\frac{1}{4}\\) as a percentage.",
@@ -357,11 +495,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(1\\frac{1}{4} = \\frac{5}{4} \\times 100 = 125\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "125%",
+      "138%",
+      "131%",
+      "113%"
+    ]
   },
   {
     "id": "y10-1a-q3e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(\\frac{7}{20}\\) as a percentage.",
@@ -372,11 +516,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{7}{20} = \\frac{7}{20} \\times 100 = 35\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "39%",
+      "35%",
+      "32%",
+      "37%"
+    ]
   },
   {
     "id": "y10-1a-q3f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(\\frac{4}{3}\\) as a percentage.",
@@ -387,11 +537,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{4}{3} = \\frac{4}{3} \\times 100 = 133\\frac{1}{3}\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "120%",
+      "146%",
+      "140%",
+      "133%"
+    ]
   },
   {
     "id": "y10-1a-q3g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(0.58\\) as a percentage.",
@@ -402,11 +558,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.58 = 0.58 \\times 100 = 58\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "58%",
+      "64%",
+      "61%",
+      "52%"
+    ]
   },
   {
     "id": "y10-1a-q3h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(0.035\\) as a percentage.",
@@ -417,11 +579,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.035 = 0.035 \\times 100 = 3.5\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "3.1%",
+      "3.9%",
+      "3.5%",
+      "3.7%"
+    ]
   },
   {
     "id": "y10-1a-q3i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(1.6\\) as a percentage.",
@@ -432,11 +600,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(1.6 = 1.6 \\times 100 = 160\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "160%",
+      "176%",
+      "144%",
+      "168%"
+    ]
   },
   {
     "id": "y10-1a-q3j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(1.375\\) as a percentage.",
@@ -447,11 +621,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(1.375 = 1.375 \\times 100 = 137.5\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "123.8%",
+      "151.3%",
+      "144.4%",
+      "137.5%"
+    ]
   },
   {
     "id": "y10-1a-q3k",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(0.00045\\) as a percentage.",
@@ -462,11 +642,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.00045 = 0.00045 \\times 100 = 0.045\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.045%",
+      "0.050%",
+      "0.041%",
+      "0.047%"
+    ]
   },
   {
     "id": "y10-1a-q3l",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Express \\(3\\frac{1}{2}\\) as a percentage.",
@@ -477,11 +663,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(3\\frac{1}{2} = \\frac{7}{2} \\times 100 = 350\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "350%",
+      "385%",
+      "315%",
+      "368%"
+    ]
   },
   {
     "id": "y10-1a-q4a_fraction",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(48\\%\\). Find the corresponding fraction.",
@@ -492,11 +684,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{12}{25}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{12}{25} (rounded)",
+      "\\frac{12}{25} (nominal)",
+      "\\frac{12}{25} (estimated)",
+      "\\frac{12}{25}"
+    ]
   },
   {
     "id": "y10-1a-q4a_decimal",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(48\\%\\). Find the corresponding decimal.",
@@ -507,11 +705,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.48\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.48",
+      "0.53",
+      "0.43",
+      "0.50"
+    ]
   },
   {
     "id": "y10-1a-q4b_percentage",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(\\frac{4}{5}\\). Find the corresponding percentage.",
@@ -522,11 +726,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(80\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "84%",
+      "80%",
+      "72%",
+      "88%"
+    ]
   },
   {
     "id": "y10-1a-q4b_decimal",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(\\frac{4}{5}\\). Find the corresponding decimal.",
@@ -537,11 +747,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.8\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.8",
+      "0.9",
+      "0.7",
+      "1.0"
+    ]
   },
   {
     "id": "y10-1a-q4c_percentage",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(0.24\\). Find the corresponding percentage.",
@@ -552,11 +768,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(24\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "24%",
+      "25%",
+      "26%",
+      "22%"
+    ]
   },
   {
     "id": "y10-1a-q4c_fraction",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(0.24\\). Find the corresponding fraction.",
@@ -567,11 +789,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{6}{25}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{6}{25} (nominal)",
+      "\\frac{6}{25} (rounded)",
+      "\\frac{6}{25} (estimated)",
+      "\\frac{6}{25}"
+    ]
   },
   {
     "id": "y10-1a-q4d_fraction",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(30.5\\%\\). Find the corresponding fraction.",
@@ -582,11 +810,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{61}{200}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "\\frac{61}{200} (rounded)",
+      "\\frac{61}{200}",
+      "\\frac{61}{200} (estimated)",
+      "\\frac{61}{200} (nominal)"
+    ]
   },
   {
     "id": "y10-1a-q4d_decimal",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(30.5\\%\\). Find the corresponding decimal.",
@@ -597,11 +831,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.305\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.320",
+      "0.275",
+      "0.336",
+      "0.305"
+    ]
   },
   {
     "id": "y10-1a-q4e_percentage",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(1.5\\). Find the corresponding percentage.",
@@ -612,11 +852,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(150\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "158%",
+      "135%",
+      "165%",
+      "150%"
+    ]
   },
   {
     "id": "y10-1a-q4e_fraction",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(1.5\\). Find the corresponding fraction.",
@@ -627,11 +873,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(1\\frac{1}{2}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1",
+      "2",
+      "4",
+      "3"
+    ]
   },
   {
     "id": "y10-1a-q4f_percentage",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(\\frac{7}{8}\\). Find the corresponding percentage.",
@@ -642,11 +894,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(87.5\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "87.5%",
+      "96.3%",
+      "78.8%",
+      "91.9%"
+    ]
   },
   {
     "id": "y10-1a-q4f_decimal",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A quantity is given as \\(\\frac{7}{8}\\). Find the corresponding decimal.",
@@ -657,11 +915,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.875\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.875",
+      "0.919",
+      "0.963",
+      "0.787"
+    ]
   },
   {
     "id": "y10-1a-q5a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(18\\%\\) of \\(50\\), correct to two decimal places.",
@@ -672,11 +936,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.18 \\times 50 = 9.00\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "8.10",
+      "9.45",
+      "9.90",
+      "9.00"
+    ]
   },
   {
     "id": "y10-1a-q5b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(42\\%\\) of \\(412\\), correct to two decimal places.",
@@ -687,11 +957,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.42 \\times 412 = 173.04\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "173.04",
+      "181.69",
+      "190.34",
+      "155.74"
+    ]
   },
   {
     "id": "y10-1a-q5c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(130\\%\\) of \\(258\\), correct to two decimal places.",
@@ -702,11 +978,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(1.3 \\times 258 = 335.40\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "301.86",
+      "368.94",
+      "335.40",
+      "352.17"
+    ]
   },
   {
     "id": "y10-1a-q5d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(125.5\\%\\) of \\(640\\), correct to two decimal places.",
@@ -717,11 +999,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(1.255 \\times 640 = 803.20\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "803.20",
+      "883.52",
+      "722.88",
+      "843.36"
+    ]
   },
   {
     "id": "y10-1a-q5e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(4.2\\%\\) of \\(85\\), correct to two decimal places.",
@@ -732,11 +1020,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.042 \\times 85 = 3.57\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "3.93",
+      "3.21",
+      "3.75",
+      "3.57"
+    ]
   },
   {
     "id": "y10-1a-q5f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(0.4\\%\\) of \\(350\\), correct to two decimal places.",
@@ -747,11 +1041,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.004 \\times 350 = 1.40\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1.47",
+      "1.40",
+      "1.54",
+      "1.26"
+    ]
   },
   {
     "id": "y10-1a-q6a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(48\\%\\) of 60 dollars, correct to the nearest cent where necessary.",
@@ -762,11 +1062,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.48 \\times 60 = 28.80\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "25.92",
+      "30.24",
+      "28.80",
+      "31.68"
+    ]
   },
   {
     "id": "y10-1a-q6b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(35.4\\%\\) of 1250 dollars, correct to the nearest cent where necessary.",
@@ -777,11 +1083,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.354 \\times 1250 = 442.50\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "442.50",
+      "486.75",
+      "398.25",
+      "464.63"
+    ]
   },
   {
     "id": "y10-1a-q6c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(115\\%\\) of 1420 dollars, correct to the nearest cent where necessary.",
@@ -792,11 +1104,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(1.15 \\times 1420 = 1633.00\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1714.65",
+      "1469.70",
+      "1796.30",
+      "1633.00"
+    ]
   },
   {
     "id": "y10-1a-q6d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(0.40\\%\\) of 800 dollars, correct to the nearest cent where necessary.",
@@ -807,11 +1125,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.004 \\times 800 = 3.20\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "3.36",
+      "3.20",
+      "3.52",
+      "2.88"
+    ]
   },
   {
     "id": "y10-1a-q6e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(6\\frac{1}{4}\\%\\) of 1500 dollars, correct to the nearest cent where necessary.",
@@ -822,11 +1146,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.0625 \\times 1500 = 93.75\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "98.44",
+      "84.38",
+      "103.13",
+      "93.75"
+    ]
   },
   {
     "id": "y10-1a-q6f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(\\frac{2}{5}\\%\\) of 1150 dollars, correct to the nearest cent where necessary.",
@@ -837,11 +1167,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.004 \\times 1150 = 4.60\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "4.14",
+      "5.06",
+      "4.83",
+      "4.60"
+    ]
   },
   {
     "id": "y10-1a-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 8 km is of 120 km, correct to one decimal place.",
@@ -852,11 +1188,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{8}{120} \\times 100 = 6.7\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "7.0%",
+      "6.0%",
+      "6.7%",
+      "7.4%"
+    ]
   },
   {
     "id": "y10-1a-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 15 dollars is of 250 dollars, correct to one decimal place.",
@@ -867,11 +1209,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{15}{250} \\times 100 = 6.0\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "6.0%",
+      "6.6%",
+      "5.4%",
+      "6.3%"
+    ]
   },
   {
     "id": "y10-1a-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 35 kg is of 800 kg, correct to one decimal place.",
@@ -882,11 +1230,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{35}{800} \\times 100 = 4.4\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "4.6%",
+      "4.8%",
+      "4.4%",
+      "4.0%"
+    ]
   },
   {
     "id": "y10-1a-q7d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 60 m is of 40 m, correct to one decimal place.",
@@ -897,11 +1251,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{60}{40} \\times 100 = 150.0\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "150.0%",
+      "165.0%",
+      "157.5%",
+      "135.0%"
+    ]
   },
   {
     "id": "y10-1a-q8a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 55 cents is of 15.00 dollars, correct to two decimal places.",
@@ -916,11 +1276,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{55}{1500} \\times 100 = 3.67\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "3.85%",
+      "4.04%",
+      "3.67%",
+      "3.30%"
+    ]
   },
   {
     "id": "y10-1a-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 4.2 cm is of 3 m, correct to two decimal places.",
@@ -935,11 +1301,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{4.2}{300} \\times 100 = 1.40\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1.47%",
+      "1.26%",
+      "1.54%",
+      "1.40%"
+    ]
   },
   {
     "id": "y10-1a-q8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 36 hours is of 3 weeks, correct to two decimal places.",
@@ -954,11 +1326,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{36}{504} \\times 100 = 7.14\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "7.50%",
+      "6.43%",
+      "7.85%",
+      "7.14%"
+    ]
   },
   {
     "id": "y10-1a-q8d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 300 m is of 6 km, correct to two decimal places.",
@@ -973,11 +1351,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{300}{6000} \\times 100 = 5.00\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "5.00%",
+      "5.25%",
+      "5.50%",
+      "4.50%"
+    ]
   },
   {
     "id": "y10-1a-q8e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 60 km is of 1500 m, correct to two decimal places.",
@@ -992,11 +1376,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{60000}{1500} \\times 100 = 4000.00\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "4000.00%",
+      "4200.00%",
+      "4400.00%",
+      "3600.00%"
+    ]
   },
   {
     "id": "y10-1a-q8f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find what percentage 2 days is of 3 years, correct to two decimal places.",
@@ -1011,11 +1401,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\frac{2}{1095} \\times 100 = 0.18\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "0.18%",
+      "0.20%",
+      "0.16%",
+      "0.19%"
+    ]
   },
   {
     "id": "y10-1a-q9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "There are 550 students at a primary school, \\(8\\%\\) of whom have red hair. Calculate the number of students in the school who have red hair.",
@@ -1026,11 +1422,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(0.08 \\times 550 = 44\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "46",
+      "40",
+      "48",
+      "44"
+    ]
   },
   {
     "id": "y10-1a-q10",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A sample of a certain alloy weighs \\(3.4\\) g.",
@@ -1039,7 +1441,7 @@ export const Y10_CH1_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y10-1a-q10a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "easy",
         "timeLimit": 60,
         "question": "Aluminium makes up \\(62\\%\\) of the alloy. What is the weight of the aluminium in the sample?",
@@ -1049,11 +1451,17 @@ export const Y10_CH1_QUESTIONS = [
             "explanation": "Calculate 62% of 3.4 g.",
             "workingOut": "\\(0.62 \\times 3.4 = 2.108 \\text{ g}\\)"
           }
+        ],
+        "opts": [
+          "2.319",
+          "2.213",
+          "2.108",
+          "1.897"
         ]
       },
       {
         "id": "y10-1a-q10b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "easy",
         "timeLimit": 60,
         "question": "The percentage of lead in the alloy is \\(0.35\\%\\). What is the weight of the lead in the sample?",
@@ -1063,13 +1471,25 @@ export const Y10_CH1_QUESTIONS = [
             "explanation": "Calculate 0.35% of 3.4 g.",
             "workingOut": "\\(0.0035 \\times 3.4 = 0.0119 \\text{ g}\\)"
           }
+        ],
+        "opts": [
+          "0.0119",
+          "0.0131",
+          "0.0125",
+          "0.0107"
         ]
       }
+    ],
+    "opts": [
+      " (estimated)",
+      "",
+      " (rounded)",
+      " (nominal)"
     ]
   },
   {
     "id": "y10-1a-q11",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A soccer match lasted \\(96\\) minutes (including injury time). If Team A was in possession for \\(60\\%\\) of the match, for how many minutes and seconds was Team A in possession?",
@@ -1088,11 +1508,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(57 \\text{ minutes and } 36 \\text{ seconds}\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "51",
+      "57",
+      "60",
+      "63"
+    ]
   },
   {
     "id": "y10-1a-q12",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A football club with \\(12\\ 000\\) members undertook a membership drive, and the membership increased by \\(120\\%\\).",
@@ -1101,7 +1527,7 @@ export const Y10_CH1_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y10-1a-q12a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "How many new members joined the club?",
@@ -1111,11 +1537,17 @@ export const Y10_CH1_QUESTIONS = [
             "explanation": "Calculate 120% of 12000.",
             "workingOut": "\\(1.20 \\times 12000 = 14400\\)"
           }
+        ],
+        "opts": [
+          "15120",
+          "12960",
+          "14400",
+          "15840"
         ]
       },
       {
         "id": "y10-1a-q12b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "What is the size of the club's membership now?",
@@ -1125,13 +1557,25 @@ export const Y10_CH1_QUESTIONS = [
             "explanation": "Add the new members to the original number.",
             "workingOut": "\\(12000 + 14400 = 26400\\)"
           }
+        ],
+        "opts": [
+          "26400",
+          "29040",
+          "23760",
+          "27720"
         ]
       }
+    ],
+    "opts": [
+      " (rounded)",
+      " (nominal)",
+      " (estimated)",
+      ""
     ]
   },
   {
     "id": "y10-1a-q13a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the original quantity, given that \\(8\\%\\) of it is 32 dollars.",
@@ -1142,11 +1586,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(32 / 0.08 = 400\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "420",
+      "400",
+      "440",
+      "360"
+    ]
   },
   {
     "id": "y10-1a-q13b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the original quantity, given that \\(40\\%\\) of it is 90 minutes.",
@@ -1157,11 +1607,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(90 / 0.40 = 225\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "236",
+      "248",
+      "203",
+      "225"
+    ]
   },
   {
     "id": "y10-1a-q13c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the original quantity, given that \\(85\\%\\) of it is 255 cm.",
@@ -1172,11 +1628,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(255 / 0.85 = 300\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "315",
+      "300",
+      "330",
+      "270"
+    ]
   },
   {
     "id": "y10-1a-q13d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the original quantity, given that \\(6\\%\\) of it is 14.40 dollars.",
@@ -1187,11 +1649,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(14.40 / 0.06 = 240\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "240",
+      "264",
+      "216",
+      "252"
+    ]
   },
   {
     "id": "y10-1a-q13e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the original quantity, given that \\(0.4\\%\\) of it is 6 mm.",
@@ -1202,11 +1670,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(6 / 0.004 = 1500\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1350",
+      "1575",
+      "1650",
+      "1500"
+    ]
   },
   {
     "id": "y10-1a-q13f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the original quantity, given that \\(18\\%\\) of it is 81 mm.",
@@ -1217,11 +1691,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(81 / 0.18 = 450\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "495",
+      "450",
+      "473",
+      "405"
+    ]
   },
   {
     "id": "y10-1a-q14",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Sometimes customers pay a deposit on an item and then later pay the rest of the full price. Find the full price when a deposit of 450 dollars is \\(25\\%\\) of the full price.",
@@ -1236,11 +1716,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{Full Price} = 450 \\div 0.25 = 1800\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1800",
+      "1980",
+      "1620",
+      "1890"
+    ]
   },
   {
     "id": "y10-1a-q15a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the selling price if the commission is 54 dollars and the commission rate is \\(9\\%\\).",
@@ -1255,11 +1741,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{Selling Price} = 54 \\div 0.09 = 600\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "630",
+      "600",
+      "660",
+      "540"
+    ]
   },
   {
     "id": "y10-1a-q15b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the selling price if the commission is 850 dollars and the commission rate is \\(6.8\\%\\).",
@@ -1274,11 +1766,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{Selling Price} = 850 \\div 0.068 = 12500\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "11250",
+      "13125",
+      "13750",
+      "12500"
+    ]
   },
   {
     "id": "y10-1a-q16a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the percentage profit or loss on costs in this situation: Costs 32000 dollars and sales 64000 dollars.",
@@ -1293,11 +1791,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(32000 / 32000 * 100 = 100\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "100",
+      "110",
+      "90",
+      "105"
+    ]
   },
   {
     "id": "y10-1a-q16b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the percentage profit or loss on costs in this situation: Costs 150000 dollars and sales 120000 dollars.",
@@ -1312,11 +1816,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(30000 / 150000 * 100 = 20\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "20",
+      "22",
+      "18",
+      "21"
+    ]
   },
   {
     "id": "y10-1a-q17a_costs",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A company made a profit of 35000 dollars, which was a 7% profit on its costs. Find the costs.",
@@ -1331,11 +1841,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": ""
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "550000",
+      "500000",
+      "525000",
+      "450000"
+    ]
   },
   {
     "id": "y10-1a-q17a_total_sales",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A company made a profit of 35000 dollars, which was a 7% profit on its costs. Find the total sales.",
@@ -1350,11 +1866,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{Sales} = \\text{Costs} + profit = 535000\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "561750",
+      "481500",
+      "588500",
+      "535000"
+    ]
   },
   {
     "id": "y10-1a-q17b_costs",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A company made a loss of 160000 dollars, which was a 8% loss on its costs. Find the costs.",
@@ -1369,11 +1891,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": ""
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "2100000",
+      "2200000",
+      "1800000",
+      "2000000"
+    ]
   },
   {
     "id": "y10-1a-q17b_total_sales",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A company made a loss of 160000 dollars, which was a 8% loss on its costs. Find the total sales.",
@@ -1388,11 +1916,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{Sales} = \\text{Costs} - loss = 1840000\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1840000",
+      "1932000",
+      "2024000",
+      "1656000"
+    ]
   },
   {
     "id": "y10-1a-q18a_i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nFind the income tax payable on 11000 dollars.",
@@ -1403,11 +1937,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\text{Tax} = 0.00"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "3.00",
+      "2.00",
+      "1.00",
+      "0.00"
+    ]
   },
   {
     "id": "y10-1a-q18a_ii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nFind the income tax payable on 18000 dollars.",
@@ -1418,11 +1958,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\text{Tax} = 540.00"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "594.00",
+      "540.00",
+      "567.00",
+      "486.00"
+    ]
   },
   {
     "id": "y10-1a-q18a_iii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nFind the income tax payable on 45000 dollars.",
@@ -1433,11 +1979,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\text{Tax} = 6400.00"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "6720.00",
+      "6400.00",
+      "7040.00",
+      "5760.00"
+    ]
   },
   {
     "id": "y10-1a-q18a_iv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nFind the income tax payable on 500000 dollars.",
@@ -1448,11 +2000,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\text{Tax} = 175800.00"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "175800.00",
+      "193380.00",
+      "158220.00",
+      "184590.00"
+    ]
   },
   {
     "id": "y10-1a-q18b_i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nWhat percentage of the person's income was paid in income tax if their income is 11000 dollars?",
@@ -1463,11 +2021,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\frac{0.00}{11000} \\times 100 = 0.00\\%"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1.00%",
+      "0.00%",
+      "3.00%",
+      "2.00%"
+    ]
   },
   {
     "id": "y10-1a-q18b_ii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nWhat percentage of the person's income was paid in income tax if their income is 18000 dollars?",
@@ -1478,11 +2042,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\frac{540.00}{18000} \\times 100 = 3.00\\%"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "2.70%",
+      "3.15%",
+      "3.00%",
+      "3.30%"
+    ]
   },
   {
     "id": "y10-1a-q18b_iii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nWhat percentage of the person's income was paid in income tax if their income is 45000 dollars?",
@@ -1493,11 +2063,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\frac{6400.00}{45000} \\times 100 = 14.22\\%"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "15.64%",
+      "12.80%",
+      "14.93%",
+      "14.22%"
+    ]
   },
   {
     "id": "y10-1a-q18b_iv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nWhat percentage of the person's income was paid in income tax if their income is 500000 dollars?",
@@ -1508,11 +2084,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\frac{175800.00}{500000} \\times 100 = 35.16\\%"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "36.92%",
+      "31.64%",
+      "38.68%",
+      "35.16%"
+    ]
   },
   {
     "id": "y10-1a-q18c_i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nFind the income if the income tax on it was 1800 dollars.",
@@ -1523,11 +2105,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\text{Income} = 25000.00"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "27500.00",
+      "25000.00",
+      "26250.00",
+      "22500.00"
+    ]
   },
   {
     "id": "y10-1a-q18c_ii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nFind the income if the income tax on it was 4200 dollars.",
@@ -1538,11 +2126,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\text{Income} = 37142.86"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "40857.15",
+      "37142.86",
+      "39000.00",
+      "33428.57"
+    ]
   },
   {
     "id": "y10-1a-q18c_iii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nFind the income if the income tax on it was 16000 dollars.",
@@ -1553,11 +2147,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\text{Income} = 79285.71"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "71357.14",
+      "87214.28",
+      "83250.00",
+      "79285.71"
+    ]
   },
   {
     "id": "y10-1a-q18c_iv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "This question uses the income tax rates in the fictional nation of Plusionta. They are:\n- There is no tax on the first 15000 dollars that a person earns in any one year.\n- From 15001 dollars to 35000 dollars, the tax rate is 18c for each dollar over 15000 dollars.\n- From 35001 dollars to 80000 dollars, the tax rate is 28c for each dollar over 35000 dollars.\n- For incomes exceeding 80000 dollars, the tax rate is 38c for each dollar over 80000 dollars.\nFind the income if the income tax on it was 15500 dollars.",
@@ -1568,11 +2168,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\text{Income} = 77500.00"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "85250.00",
+      "69750.00",
+      "81375.00",
+      "77500.00"
+    ]
   },
   {
     "id": "y10-1a-q19",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "25000 dollars is invested at \\(6\\%\\) p.a. simple interest for four years.",
@@ -1581,7 +2187,7 @@ export const Y10_CH1_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y10-1a-q19a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "How much interest will be earned each year?",
@@ -1591,11 +2197,17 @@ export const Y10_CH1_QUESTIONS = [
             "explanation": "Calculate 6% of 25000.",
             "workingOut": "\\(0.06 \\times 25000 = 1500\\)"
           }
+        ],
+        "opts": [
+          "1575",
+          "1350",
+          "1650",
+          "1500"
         ]
       },
       {
         "id": "y10-1a-q19b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "Use the formula \\(I = PRT\\) to find how much interest will be earned over the four-year period.",
@@ -1605,13 +2217,25 @@ export const Y10_CH1_QUESTIONS = [
             "explanation": "Apply the formula \\(I = PRT\\).",
             "workingOut": "\\(I = 25000 \\times 0.06 \\times 4 = 6000\\)"
           }
+        ],
+        "opts": [
+          "6000",
+          "6600",
+          "6300",
+          "5400"
         ]
       }
+    ],
+    "opts": [
+      " (estimated)",
+      "",
+      " (rounded)",
+      " (nominal)"
     ]
   },
   {
     "id": "y10-1a-q20a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total simple interest earned in this investment: 5000 dollars for 4 years at \\(7\\%\\) p.a.",
@@ -1622,11 +2246,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(I = 5000 \\times 0.07 \\times 4 = 1400\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "1260",
+      "1540",
+      "1400",
+      "1470"
+    ]
   },
   {
     "id": "y10-1a-q20b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total simple interest earned in this investment: 8500 dollars for 5 years at \\(5.5\\%\\) p.a.",
@@ -1637,11 +2267,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(I = 8500 \\times 0.055 \\times 5 = 2337.50\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "2337.50",
+      "2454.38",
+      "2571.25",
+      "2103.75"
+    ]
   },
   {
     "id": "y10-1a-q21a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the rate \\(R\\) in this simple interest investment: Interest of 8400 dollars on 10000 dollars for 14 years.",
@@ -1660,11 +2296,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(R = 6\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "8%",
+      "5%",
+      "7%",
+      "6%"
+    ]
   },
   {
     "id": "y10-1a-q21b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the rate \\(R\\) in this simple interest investment: Interest of 4500000 dollars on 15000000 dollars for 5 years.",
@@ -1683,11 +2325,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(R = 6\\%\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "8%",
+      "5%",
+      "7%",
+      "6%"
+    ]
   },
   {
     "id": "y10-1a-q22a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the time \\(T\\) (in years) involved in this simple interest investment: Interest of 1800 dollars on 1500 dollars at \\(5\\%\\) p.a.",
@@ -1702,11 +2350,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(T = \\frac{1800}{75.0} = 24\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "24",
+      "26",
+      "22",
+      "25"
+    ]
   },
   {
     "id": "y10-1a-q22b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the time \\(T\\) (in years) involved in this simple interest investment: Interest of 85000 dollars on 40000 dollars at \\(8.5\\%\\) p.a.",
@@ -1721,11 +2375,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(T = \\frac{85000}{3400.0} = 25\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "26",
+      "25",
+      "23",
+      "28"
+    ]
   },
   {
     "id": "y10-1a-q23a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the principal \\(P\\) in this simple interest investment: Interest of 5184 dollars at \\(5.4\\%\\) p.a. for 8 years.",
@@ -1740,11 +2400,17 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(P = \\frac{5184}{0.43200000000000005} = 12000\\)"
       }
     ],
-    "t": "Review of percentage"
+    "t": "Review of percentage",
+    "opts": [
+      "12000",
+      "13200",
+      "10800",
+      "12600"
+    ]
   },
   {
     "id": "y10-1a-q23b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the principal \\(P\\) in this simple interest investment: Interest of 6240 dollars at \\(6.5\\%\\) p.a. for 4 years.",
@@ -1759,9 +2425,14 @@ export const Y10_CH1_QUESTIONS = [
         "workingOut": "\\(P = \\frac{6240}{0.26} = 24000\\)"
       }
     ],
-    "t": "Review of percentage"
-  }
-,
+    "t": "Review of percentage",
+    "opts": [
+      "26400",
+      "24000",
+      "25200",
+      "21600"
+    ]
+  },
   {
     "id": "y10-1a-high-q1",
     "type": "multiple_choice",
