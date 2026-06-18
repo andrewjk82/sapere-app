@@ -705,11 +705,11 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
   <div class="cover-page">
     <div class="cover-top">
       <div class="cover-logo-text" style="line-height: 1.2;">
-        <span style="font-size: 1.35rem; font-weight: 900; display: block; text-transform: uppercase; color: #7c3aed;">Sapere Aude</span>
-        <span style="font-size: 1.35rem; font-weight: 900; color: #7c3aed; letter-spacing: 0.05em; text-transform: uppercase; display: block; margin-top: 2px;">Academia</span>
+        <span style="font-size: 1.4rem; font-weight: 900; display: block; text-transform: uppercase; color: #7c3aed;">Sapere Aude</span>
+        <span style="font-size: 1.4rem; font-weight: 900; color: #7c3aed; letter-spacing: 0.05em; text-transform: uppercase; display: block; margin-top: 2px;">Academia</span>
       </div>
       <div class="cover-metadata">
-        <div>${year || 'Mathematics'}</div>
+        <div>${year || (chapterTitle.toLowerCase().includes('year') ? '' : 'Year 10')}</div>
         <div>${(chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</div>
         <div>${topicTitle || ''}</div>
       </div>
@@ -718,7 +718,20 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
     <div class="cover-middle">
       <div class="cover-subject">Mathematics Assessment</div>
       <div class="cover-title" style="margin-bottom: 8px;">${(chapterTitle || 'Exam Paper').replace(/^Chapter\s+\d+:\s*/i, '')}</div>
-      <div class="cover-subtitle" style="font-size: 1.4rem; font-weight: 700; color: #475569; margin-top: 4px;">${year || ''}</div>
+      <div class="cover-subtitle" style="font-size: 1.4rem; font-weight: 700; color: #475569; margin-top: 4px;">
+        ${(() => {
+          if (year && year.trim()) return year;
+          // Deduce year from chapterTitle or chapter ID prefixes if possible
+          if (chapterTitle.toLowerCase().includes('year 12')) return 'Year 12';
+          if (chapterTitle.toLowerCase().includes('year 11')) return 'Year 11';
+          if (chapterTitle.toLowerCase().includes('year 10')) return 'Year 10';
+          if (chapterTitle.toLowerCase().includes('year 9')) return 'Year 9';
+          if (chapterTitle.toLowerCase().includes('year 8')) return 'Year 8';
+          if (chapterTitle.toLowerCase().includes('year 7')) return 'Year 7';
+          if (chapterTitle.toLowerCase().includes('year 6')) return 'Year 6';
+          return 'Year 10'; // Default fallback to Year 10
+        })()}
+      </div>
     </div>
 
     <div>
