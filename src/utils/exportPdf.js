@@ -717,11 +717,9 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
 
     <div class="cover-middle">
       <div class="cover-subject">Mathematics Assessment</div>
-      <div class="cover-title" style="margin-bottom: 8px;">${(chapterTitle || 'Exam Paper').replace(/^Chapter\s+\d+:\s*/i, '')}</div>
-      <div class="cover-subtitle" style="font-size: 1.4rem; font-weight: 700; color: #475569; margin-top: 4px;">
+      <div class="cover-title" style="margin-bottom: 8px;">
         ${(() => {
           if (year && year.trim()) return year;
-          // Deduce year from chapterTitle or chapter ID prefixes if possible
           if (chapterTitle.toLowerCase().includes('year 12')) return 'Year 12';
           if (chapterTitle.toLowerCase().includes('year 11')) return 'Year 11';
           if (chapterTitle.toLowerCase().includes('year 10')) return 'Year 10';
@@ -729,8 +727,11 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
           if (chapterTitle.toLowerCase().includes('year 8')) return 'Year 8';
           if (chapterTitle.toLowerCase().includes('year 7')) return 'Year 7';
           if (chapterTitle.toLowerCase().includes('year 6')) return 'Year 6';
-          return 'Year 10'; // Default fallback to Year 10
+          return 'Year 10';
         })()}
+      </div>
+      <div class="cover-subtitle" style="font-size: 2.8rem; font-weight: 900; color: #1e1b4b; line-height: 1.15; margin-top: 4px; letter-spacing: -0.03em;">
+        ${(chapterTitle || 'Exam Paper').replace(/^Chapter\s+\d+:\s*/i, '')}
       </div>
     </div>
 
