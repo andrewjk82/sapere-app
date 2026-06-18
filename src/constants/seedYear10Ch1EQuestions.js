@@ -38,9 +38,9 @@ export const Y10_CH1E_QUESTIONS = [
     "t": "Compound depreciation",
     "opts": [
       "450000.00",
+      "472500.00",
       "495000.00",
-      "405000.00",
-      "472500.00"
+      "405000.00"
     ]
   },
   {
@@ -59,10 +59,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "142382.81",
-      "156621.09",
+      "149501.95",
       "128144.53",
-      "149501.95"
+      "156621.09",
+      "142382.81"
     ]
   },
   {
@@ -125,9 +125,9 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "165946.03",
       "158403.03",
       "150860.03",
+      "165946.03",
       "135774.03"
     ]
   },
@@ -147,10 +147,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "65.39%",
       "62.28%",
       "68.51%",
-      "56.05%"
+      "56.05%",
+      "65.39%"
     ]
   },
   {
@@ -169,10 +169,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "567408.06",
       "624148.87",
-      "510667.25",
-      "595778.46"
+      "567408.06",
+      "595778.46",
+      "510667.25"
     ]
   },
   {
@@ -223,9 +223,9 @@ export const Y10_CH1E_QUESTIONS = [
     "t": "Compound depreciation",
     "opts": [
       "1557.42",
-      "1816.99",
       "1903.52",
-      "1730.47"
+      "1730.47",
+      "1816.99"
     ]
   },
   {
@@ -244,10 +244,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "1260000",
-      "1540000",
       "1470000",
-      "1400000"
+      "1400000",
+      "1540000",
+      "1260000"
     ]
   },
   {
@@ -266,10 +266,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "660000",
       "540000",
       "600000",
-      "630000"
+      "630000",
+      "660000"
     ]
   },
   {
@@ -310,9 +310,9 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "441000",
       "378000",
       "462000",
+      "441000",
       "420000"
     ]
   },
@@ -333,9 +333,9 @@ export const Y10_CH1E_QUESTIONS = [
     "t": "Compound depreciation",
     "opts": [
       "617400",
-      "686000",
+      "754600",
       "720300",
-      "754600"
+      "686000"
     ]
   },
   {
@@ -354,10 +354,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "294000",
-      "323400",
+      "264600",
       "308700",
-      "264600"
+      "323400",
+      "294000"
     ]
   },
   {
@@ -376,10 +376,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "480200",
+      "432180",
       "504210",
-      "528220",
-      "432180"
+      "480200",
+      "528220"
     ]
   },
   {
@@ -398,10 +398,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "216090",
       "185220",
-      "226380",
-      "205800"
+      "205800",
+      "216090",
+      "226380"
     ]
   },
   {
@@ -421,9 +421,9 @@ export const Y10_CH1E_QUESTIONS = [
     "t": "Compound depreciation",
     "opts": [
       "135065.74",
-      "165080.34",
       "157576.69",
-      "150073.04"
+      "150073.04",
+      "165080.34"
     ]
   },
   {
@@ -444,8 +444,8 @@ export const Y10_CH1E_QUESTIONS = [
     "opts": [
       "31920.70",
       "27360.60",
-      "33440.74",
-      "30400.67"
+      "30400.67",
+      "33440.74"
     ]
   },
   {
@@ -465,9 +465,9 @@ export const Y10_CH1E_QUESTIONS = [
     "t": "Compound depreciation",
     "opts": [
       "97.23%",
-      "106.95%",
       "87.51%",
-      "102.09%"
+      "102.09%",
+      "106.95%"
     ]
   },
   {
@@ -508,9 +508,9 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "2110170.23",
-      "2579096.95",
       "2344633.59",
+      "2579096.95",
+      "2110170.23",
       "2461865.27"
     ]
   },
@@ -530,10 +530,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "8100",
       "9000",
-      "9450",
-      "9900"
+      "9900",
+      "8100",
+      "9450"
     ]
   },
   {
@@ -552,9 +552,9 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "10125",
-      "12375",
       "11250",
+      "12375",
+      "10125",
       "11813"
     ]
   },
@@ -574,10 +574,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "60350",
-      "67055",
       "70408",
-      "73761"
+      "60350",
+      "73761",
+      "67055"
     ]
   },
   {
@@ -596,10 +596,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
+      "98.19%",
       "93.72%",
       "89.26%",
-      "80.33%",
-      "98.19%"
+      "80.33%"
     ]
   },
   {
@@ -618,9 +618,9 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
+      "5985.50",
       "6584.05",
       "5386.95",
-      "5985.50",
       "6284.78"
     ]
   },
@@ -640,9 +640,9 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "17188",
-      "14063",
       "16406",
+      "14063",
+      "17188",
       "15625"
     ]
   },
@@ -662,10 +662,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "32044",
-      "27466",
       "33570",
-      "30518"
+      "30518",
+      "27466",
+      "32044"
     ]
   },
   {
@@ -684,10 +684,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "71.13%",
-      "86.93%",
       "79.03%",
-      "82.98%"
+      "86.93%",
+      "82.98%",
+      "71.13%"
     ]
   },
   {
@@ -708,8 +708,8 @@ export const Y10_CH1E_QUESTIONS = [
     "opts": [
       "3445.43",
       "3789.97",
-      "3100.89",
-      "3617.70"
+      "3617.70",
+      "3100.89"
     ]
   },
   {
@@ -728,10 +728,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "2075.63",
-      "2536.88",
       "2421.56",
-      "2306.25"
+      "2306.25",
+      "2536.88",
+      "2075.63"
     ]
   },
   {
@@ -750,10 +750,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
+      "4467.90",
       "5212.55",
-      "4964.33",
       "5460.76",
-      "4467.90"
+      "4964.33"
     ]
   },
   {
@@ -777,10 +777,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "1.56%",
-      "1.72%",
       "1.40%",
-      "1.64%"
+      "1.64%",
+      "1.72%",
+      "1.56%"
     ]
   },
   {
@@ -806,8 +806,8 @@ export const Y10_CH1E_QUESTIONS = [
     "opts": [
       "gain of 45.68%",
       "gain of 45.68% (estimated)",
-      "gain of 45.68% (rounded)",
-      "gain of 45.68% (nominal)"
+      "gain of 45.68% (nominal)",
+      "gain of 45.68% (rounded)"
     ]
   },
   {
@@ -826,10 +826,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
+      "23.7%",
       "22.6%",
       "24.9%",
-      "20.3%",
-      "23.7%"
+      "20.3%"
     ]
   },
   {
@@ -848,10 +848,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
+      "23.2%",
       "24.3%",
       "22.1%",
-      "19.9%",
-      "23.2%"
+      "19.9%"
     ]
   },
   {
@@ -892,9 +892,9 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "22.8%",
-      "21.7%",
       "23.9%",
+      "21.7%",
+      "22.8%",
       "19.5%"
     ]
   },
@@ -915,8 +915,8 @@ export const Y10_CH1E_QUESTIONS = [
     "t": "Compound depreciation",
     "opts": [
       "22.4%",
-      "20.2%",
       "23.5%",
+      "20.2%",
       "24.6%"
     ]
   },
@@ -936,10 +936,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "23.9%",
-      "26.3%",
       "21.5%",
-      "25.1%"
+      "25.1%",
+      "23.9%",
+      "26.3%"
     ]
   },
   {
@@ -963,10 +963,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "92.24%",
       "87.85%",
+      "79.06%",
       "96.64%",
-      "79.06%"
+      "92.24%"
     ]
   },
   {
@@ -1002,30 +1002,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 12\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 14\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "14.00%",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 40000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 12\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "27753.69",
+    "opts": [
+      "\\(30529.06\\)",
+      "\\(27753.69\\)",
+      "\\(29141.37\\)",
+      "\\(24978.32\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.12}{4}\\right)^4 \\approx 11.4707\\%\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 40000, \\quad r = \\frac\\{12\\%\\}\\{4\\} = 3\\% = 0.0300, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 14.00\\%\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 40000 \\times (1 - 0.0300)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 14.00%\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 40000 \\times 0.693842 \\approx 27753.69\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "14.00%",
-      "15.40%",
-      "12.60%",
-      "14.70%"
     ]
   },
   {
@@ -1034,30 +1034,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 14\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 16\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "16.00%",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 16313 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 11\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "26000.00",
+    "opts": [
+      "\\(28600.00\\)",
+      "\\(27300.00\\)",
+      "\\(26000.00\\)",
+      "\\(23400.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.14}{4}\\right)^4 \\approx 13.2820\\%\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 16313 = P(1 - 0.11)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 16.00\\%\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{16313\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 16.00%\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{16313\\}\\{0.627422\\} \\approx 26000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "16.00%",
-      "17.60%",
-      "14.40%",
-      "16.80%"
     ]
   },
   {
@@ -1066,30 +1066,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 16\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 18\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "18.00%",
+    "question": "A commercial construction excavator is purchased for \\( 181000 \\) dollars and depreciates to a salvage value of \\( 55695 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "21.0%",
+    "opts": [
+      "\\(22.1%\\)",
+      "\\(18.9%\\)",
+      "\\(23.1%\\)",
+      "\\(21.0%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.16}{4}\\right)^4 \\approx 15.0653\\%\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(55695 = 181000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 18.00\\%\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{55695\\}\\{181000\\}\\} = \\left(\\frac\\{55695\\}\\{181000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 18.00%\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{55695\\}\\{181000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.21 \\implies r \\approx 21.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "16.20%",
-      "18.00%",
-      "18.90%",
-      "19.80%"
     ]
   },
   {
@@ -1098,30 +1098,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 18\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 20\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "20.00%",
+    "question": "An operator purchases a CNC milling machine for \\( 87000 \\) dollars. The asset depreciates at \\( 13\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 34800 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "6.6",
+    "opts": [
+      "\\(6.6\\)",
+      "\\(7.3\\)",
+      "\\(5.9\\)",
+      "\\(6.9\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.18}{4}\\right)^4 \\approx 16.8210\\%\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(87000 \\times (1 - 0.13)^n \\le 34800\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 20.00\\%\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{34800\\}\\{87000\\}\\right)\\}\\{\\ln(0.87)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 20.00%\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1393\\} \\approx 6.6\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "20.00%",
-      "22.00%",
-      "18.00%",
-      "21.00%"
     ]
   },
   {
@@ -1130,30 +1130,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 20\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 22\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "22.00%",
+    "question": "A business acquires a automated packaging line for \\( 303000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 13\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 9.1\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "142331.34",
+    "opts": [
+      "\\(156564.47\\)",
+      "\\(149447.91\\)",
+      "\\(128098.21\\)",
+      "\\(142331.34\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.20}{4}\\right)^4 \\approx 18.5494\\%\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 303000 \\times (1 - 0.13)^2 \\approx 229340.7000\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 22.00\\%\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.091)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 22.00%\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 229340.70 \\times 0.620611 \\approx 142331.34\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "22.00%",
-      "23.10%",
-      "24.20%",
-      "19.80%"
     ]
   },
   {
@@ -1162,30 +1162,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 22\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 24\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "24.00%",
+    "question": "An operator buys a digital printing press for \\( 124000 \\) dollars. It depreciates at \\( 22\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 31000 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "83024.45",
+    "opts": [
+      "\\(87175.67\\)",
+      "\\(74722.01\\)",
+      "\\(83024.45\\)",
+      "\\(91326.90\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.22}{4}\\right)^4 \\approx 20.2506\\%\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 124000 \\times (1 - 0.22)^2 \\approx 75441.6000\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 24.00\\%\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 75441.60 + 31000 = 106441.60\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 24.00%\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 106441.60 \\times (1 - 0.22)^\\{1\\} \\approx 83024.45\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "24.00%",
-      "25.20%",
-      "21.60%",
-      "26.40%"
     ]
   },
   {
@@ -1194,30 +1194,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 24\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 26\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "26.00%",
+    "question": "A company purchases a electric delivery van for \\( 59000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 18\\% \\) p.a. vs. Reducing balance depreciation at \\( 18\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "10155.18",
+    "opts": [
+      "\\(10662.94\\)",
+      "\\(11170.70\\)",
+      "\\(10155.18\\)",
+      "\\(9139.66\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.24}{4}\\right)^4 \\approx 21.9251\\%\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 59000 - (59000 \\times 0.18 \\times 4) = 16520.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 26.00\\%\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 59000 \\times (1 - 0.18)^\\{4\\} \\approx 26675.1838\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 26.00%\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |26675.18 - 16520.00| \\approx 10155.18\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "27.30%",
-      "23.40%",
-      "28.60%",
-      "26.00%"
     ]
   },
   {
@@ -1226,30 +1226,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 26\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 28\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "28.00%",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 115000 \\) dollars. The asset depreciates at \\( 12\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "52351.01",
+    "opts": [
+      "\\(52351.01\\)",
+      "\\(54968.56\\)",
+      "\\(57586.11\\)",
+      "\\(47115.91\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.26}{4}\\right)^4 \\approx 23.5731\\%\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 115000 \\times (1 - 0.12)^\\{5\\} \\approx 60689.1704\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 28.00\\%\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 28.00%\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{60689.17\\}\\{1.159274\\} \\approx 52351.01\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "29.40%",
-      "25.20%",
-      "30.80%",
-      "28.00%"
     ]
   },
   {
@@ -1258,30 +1258,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 28\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 30\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "30.00%",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 76000 \\) dollars. The accounting department depreciates the asset at \\( 10\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 14.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "10699.51",
+    "opts": [
+      "\\(10699.51\\)",
+      "\\(11769.46\\)",
+      "\\(9629.56\\)",
+      "\\(11234.49\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.28}{4}\\right)^4 \\approx 25.1948\\%\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 76000 \\times (1 - 0.1)^\\{6\\} \\approx 40389.5160\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 30.00\\%\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 76000 \\times (1 - 0.145)^\\{6\\} \\approx 29690.0057\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 30.00%\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 10699.51\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "27.00%",
-      "30.00%",
-      "33.00%",
-      "31.50%"
     ]
   },
   {
@@ -1290,30 +1290,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset depreciates under one of two schemes:\n\n- Scheme A: \\( 30\\% \\) p.a., compounded quarterly.\n- Scheme B: \\( 32\\% \\) p.a., compounded annually.\n\nFind the effective annual depreciation rate (EADR) of the faster-depreciating scheme, correct to two decimal places. (Enter value only, e.g. 21.84%)",
-    "a": "32.00%",
+    "question": "An industrial chemical reactor contains \\( 22000 \\) liters of a chemical solution. Every year, \\( 6160 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(9.03%\\)",
+      "\\(10.03%\\)",
+      "\\(11.03%\\)",
+      "\\(10.53%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme A.",
-        "workingOut": "\\(\\text{EADR}_A = 1 - \\left(1 - \\frac{0.30}{4}\\right)^4 \\approx 26.7906\\%\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{6160\\}\\{22000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the effective annual depreciation rate (EADR) for Scheme B.",
-        "workingOut": "\\(\\text{EADR}_B = 32.00\\%\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the two EADR rates and state the higher value, rounded to two decimal places.",
-        "workingOut": "\\(\\text{Better EADR} = 32.00%\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "35.20%",
-      "32.00%",
-      "33.60%",
-      "28.80%"
     ]
   },
   {
@@ -1322,30 +1322,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 10000 \\) dollars after \\( 4.5 \\) years. The depreciation rate was \\( 11\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "16519.12",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 47000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 14\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "30649.66",
+    "opts": [
+      "\\(27584.69\\)",
+      "\\(32182.14\\)",
+      "\\(30649.66\\)",
+      "\\(33714.63\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 10000, \\quad r = \\frac{0.11}{4}, \\quad n = 18\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 47000, \\quad r = \\frac\\{14\\%\\}\\{4\\} = 3.5\\% = 0.0350, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{10000}{\\left(1 - \\frac{0.11}{4}\\right)^{18}}\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 47000 \\times (1 - 0.0350)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 16519.12\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 47000 \\times 0.652120 \\approx 30649.66\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "18171.03",
-      "16519.12",
-      "14867.21",
-      "17345.08"
     ]
   },
   {
@@ -1354,30 +1354,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 15000 \\) dollars after \\( 5 \\) years. The depreciation rate was \\( 12\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "27583.96",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 18906 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 13\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "33000.00",
+    "opts": [
+      "\\(34650.00\\)",
+      "\\(33000.00\\)",
+      "\\(36300.00\\)",
+      "\\(29700.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 15000, \\quad r = \\frac{0.12}{4}, \\quad n = 20\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 18906 = P(1 - 0.13)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{15000}{\\left(1 - \\frac{0.12}{4}\\right)^{20}}\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{18906\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 27583.96\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{18906\\}\\{0.572898\\} \\approx 33000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "27583.96",
-      "28963.16",
-      "30342.36",
-      "24825.56"
     ]
   },
   {
@@ -1386,30 +1386,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 20000 \\) dollars after \\( 5.5 \\) years. The depreciation rate was \\( 13\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "41372.20",
+    "question": "A commercial construction excavator is purchased for \\( 189000 \\) dollars and depreciates to a salvage value of \\( 79042 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "16.0%",
+    "opts": [
+      "\\(16.8%\\)",
+      "\\(14.4%\\)",
+      "\\(17.6%\\)",
+      "\\(16.0%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 20000, \\quad r = \\frac{0.13}{4}, \\quad n = 22\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(79042 = 189000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{20000}{\\left(1 - \\frac{0.13}{4}\\right)^{22}}\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{79042\\}\\{189000\\}\\} = \\left(\\frac\\{79042\\}\\{189000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 41372.20\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{79042\\}\\{189000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.16 \\implies r \\approx 16.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "45509.42",
-      "41372.20",
-      "43440.81",
-      "37234.98"
     ]
   },
   {
@@ -1418,30 +1418,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 25000 \\) dollars after \\( 6 \\) years. The depreciation rate was \\( 14\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "58787.43",
+    "question": "An operator purchases a CNC milling machine for \\( 95000 \\) dollars. The asset depreciates at \\( 15\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 38000 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "5.6",
+    "opts": [
+      "\\(5.6\\)",
+      "\\(5.9\\)",
+      "\\(5.0\\)",
+      "\\(6.2\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 25000, \\quad r = \\frac{0.14}{4}, \\quad n = 24\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(95000 \\times (1 - 0.15)^n \\le 38000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{25000}{\\left(1 - \\frac{0.14}{4}\\right)^{24}}\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{38000\\}\\{95000\\}\\right)\\}\\{\\ln(0.85)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 58787.43\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1625\\} \\approx 5.6\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "58787.43",
-      "64666.17",
-      "52908.69",
-      "61726.80"
     ]
   },
   {
@@ -1450,30 +1450,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 30000 \\) dollars after \\( 6.5 \\) years. The depreciation rate was \\( 15\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "81040.49",
+    "question": "A business acquires a automated packaging line for \\( 310000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 15\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 10.5\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "128621.84",
+    "opts": [
+      "\\(135052.93\\)",
+      "\\(128621.84\\)",
+      "\\(141484.02\\)",
+      "\\(115759.66\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 30000, \\quad r = \\frac{0.15}{4}, \\quad n = 26\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 310000 \\times (1 - 0.15)^2 \\approx 223975.0000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{30000}{\\left(1 - \\frac{0.15}{4}\\right)^{26}}\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.105)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 81040.49\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 223975.00 \\times 0.574269 \\approx 128621.84\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "89144.54",
-      "85092.51",
-      "81040.49",
-      "72936.44"
     ]
   },
   {
@@ -1482,30 +1482,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 35000 \\) dollars after \\( 7 \\) years. The depreciation rate was \\( 16\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "109767.44",
+    "question": "An operator buys a digital printing press for \\( 131000 \\) dollars. It depreciates at \\( 16\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 32750 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "105154.22",
+    "opts": [
+      "\\(105154.22\\)",
+      "\\(115669.64\\)",
+      "\\(110411.93\\)",
+      "\\(94638.80\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 35000, \\quad r = \\frac{0.16}{4}, \\quad n = 28\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 131000 \\times (1 - 0.16)^2 \\approx 92433.6000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{35000}{\\left(1 - \\frac{0.16}{4}\\right)^{28}}\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 92433.60 + 32750 = 125183.60\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 109767.44\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 125183.60 \\times (1 - 0.16)^\\{1\\} \\approx 105154.22\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "115255.81",
-      "98790.70",
-      "120744.18",
-      "109767.44"
     ]
   },
   {
@@ -1514,30 +1514,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 40000 \\) dollars after \\( 7.5 \\) years. The depreciation rate was \\( 17\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "147196.17",
+    "question": "A company purchases a electric delivery van for \\( 67000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 17\\% \\) p.a. vs. Reducing balance depreciation at \\( 17\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "10357.08",
+    "opts": [
+      "\\(9321.37\\)",
+      "\\(11392.79\\)",
+      "\\(10874.93\\)",
+      "\\(10357.08\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 40000, \\quad r = \\frac{0.17}{4}, \\quad n = 30\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 67000 - (67000 \\times 0.17 \\times 4) = 21440.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{40000}{\\left(1 - \\frac{0.17}{4}\\right)^{30}}\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 67000 \\times (1 - 0.17)^\\{4\\} \\approx 31797.0751\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 147196.17\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |31797.08 - 21440.00| \\approx 10357.08\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "154555.98",
-      "132476.55",
-      "161915.79",
-      "147196.17"
     ]
   },
   {
@@ -1546,30 +1546,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 45000 \\) dollars after \\( 8 \\) years. The depreciation rate was \\( 18\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "196383.33",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 123000 \\) dollars. The asset depreciates at \\( 14\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "49912.72",
+    "opts": [
+      "\\(52408.36\\)",
+      "\\(44921.45\\)",
+      "\\(54903.99\\)",
+      "\\(49912.72\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 45000, \\quad r = \\frac{0.18}{4}, \\quad n = 32\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 123000 \\times (1 - 0.14)^\\{5\\} \\approx 57862.5232\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{45000}{\\left(1 - \\frac{0.18}{4}\\right)^{32}}\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 196383.33\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{57862.52\\}\\{1.159274\\} \\approx 49912.72\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "196383.33",
-      "206202.50",
-      "216021.66",
-      "176745.00"
     ]
   },
   {
@@ -1578,30 +1578,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 50000 \\) dollars after \\( 8.5 \\) years. The depreciation rate was \\( 19\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "261553.50",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 83000 \\) dollars. The accounting department depreciates the asset at \\( 12\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 16.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "10413.78",
+    "opts": [
+      "\\(9372.40\\)",
+      "\\(10413.78\\)",
+      "\\(10934.47\\)",
+      "\\(11455.16\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 50000, \\quad r = \\frac{0.19}{4}, \\quad n = 34\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 83000 \\times (1 - 0.12)^\\{6\\} \\approx 38545.5392\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{50000}{\\left(1 - \\frac{0.19}{4}\\right)^{34}}\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 83000 \\times (1 - 0.165)^\\{6\\} \\approx 28131.7627\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 261553.50\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 10413.78\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "274631.17",
-      "235398.15",
-      "287708.85",
-      "261553.50"
     ]
   },
   {
@@ -1610,30 +1610,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A piece of equipment has a depreciated value of \\( 55000 \\) dollars after \\( 9 \\) years. The depreciation rate was \\( 20\\% \\) p.a., compounded quarterly. Find the original purchase price of the equipment. Correct to the nearest cent.",
-    "a": "348588.37",
+    "question": "An industrial chemical reactor contains \\( 29000 \\) liters of a chemical solution. Every year, \\( 8120 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(10.03%\\)",
+      "\\(11.03%\\)",
+      "\\(10.53%\\)",
+      "\\(9.03%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the variables and formula for present value under compound depreciation.",
-        "workingOut": "\\(A = 55000, \\quad r = \\frac{0.20}{4}, \\quad n = 36\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{8120\\}\\{29000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the present value formula.",
-        "workingOut": "\\(P = \\frac{A}{(1 - r)^n} = \\frac{55000}{\\left(1 - \\frac{0.20}{4}\\right)^{36}}\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the original value and round to the nearest cent.",
-        "workingOut": "\\(P \\approx 348588.37\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "366017.79",
-      "313729.53",
-      "383447.21",
-      "348588.37"
     ]
   },
   {
@@ -1642,30 +1642,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 20000 \\) dollars depreciates for \\( 3 \\) years at \\( 19.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 9.5\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "8782.96",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 55000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 16\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "33699.04",
+    "opts": [
+      "\\(33699.04\\)",
+      "\\(37068.94\\)",
+      "\\(30329.14\\)",
+      "\\(35383.99\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 20000 \\times \\left(1 - \\frac{19.0}{100}\\right)^3 \\approx 10628.8200\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 55000, \\quad r = \\frac\\{16\\%\\}\\{4\\} = 4\\% = 0.0400, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{9.5}{1200}\\right)^{24}\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 55000 \\times (1 - 0.0400)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 8782.96\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 55000 \\times 0.612710 \\approx 33699.04\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "7904.66",
-      "9661.26",
-      "8782.96",
-      "9222.11"
     ]
   },
   {
@@ -1674,30 +1674,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 30000 \\) dollars depreciates for \\( 3 \\) years at \\( 18.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 9.0\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "13806.87",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 29372 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 8\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "41000.00",
+    "opts": [
+      "\\(43050.00\\)",
+      "\\(41000.00\\)",
+      "\\(36900.00\\)",
+      "\\(45100.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 30000 \\times \\left(1 - \\frac{18.0}{100}\\right)^3 \\approx 16541.0400\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 29372 = P(1 - 0.08)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{9.0}{1200}\\right)^{24}\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{29372\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 13806.87\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{29372\\}\\{0.716393\\} \\approx 41000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "15187.56",
-      "13806.87",
-      "14497.21",
-      "12426.18"
     ]
   },
   {
@@ -1706,30 +1706,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 40000 \\) dollars depreciates for \\( 3 \\) years at \\( 17.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 8.5\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "19284.19",
+    "question": "A commercial construction excavator is purchased for \\( 196000 \\) dollars and depreciates to a salvage value of \\( 72665 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "18.0%",
+    "opts": [
+      "\\(18.0%\\)",
+      "\\(19.8%\\)",
+      "\\(18.9%\\)",
+      "\\(16.2%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 40000 \\times \\left(1 - \\frac{17.0}{100}\\right)^3 \\approx 22871.4800\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(72665 = 196000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{8.5}{1200}\\right)^{24}\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{72665\\}\\{196000\\}\\} = \\left(\\frac\\{72665\\}\\{196000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 19284.19\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{72665\\}\\{196000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.18 \\implies r \\approx 18.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "17355.77",
-      "20248.40",
-      "21212.61",
-      "19284.19"
     ]
   },
   {
@@ -1738,30 +1738,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 50000 \\) dollars depreciates for \\( 3 \\) years at \\( 16.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 8.0\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "25239.93",
+    "question": "An operator purchases a CNC milling machine for \\( 102000 \\) dollars. The asset depreciates at \\( 17\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 40800 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "4.9",
+    "opts": [
+      "\\(4.9\\)",
+      "\\(5.4\\)",
+      "\\(4.4\\)",
+      "\\(5.1\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 50000 \\times \\left(1 - \\frac{16.0}{100}\\right)^3 \\approx 29635.2000\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(102000 \\times (1 - 0.17)^n \\le 40800\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{8.0}{1200}\\right)^{24}\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{40800\\}\\{102000\\}\\right)\\}\\{\\ln(0.83)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 25239.93\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1863\\} \\approx 4.9\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "25239.93",
-      "27763.92",
-      "22715.94",
-      "26501.93"
     ]
   },
   {
@@ -1770,30 +1770,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 60000 \\) dollars depreciates for \\( 3 \\) years at \\( 15.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 7.5\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "31700.01",
+    "question": "A business acquires a automated packaging line for \\( 318000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 11\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 7.7\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "168739.07",
+    "opts": [
+      "\\(168739.07\\)",
+      "\\(185612.98\\)",
+      "\\(151865.16\\)",
+      "\\(177176.02\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 60000 \\times \\left(1 - \\frac{15.0}{100}\\right)^3 \\approx 36847.5000\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 318000 \\times (1 - 0.11)^2 \\approx 251887.8000\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{7.5}{1200}\\right)^{24}\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.077)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 31700.01\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 251887.80 \\times 0.669898 \\approx 168739.07\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "31700.01",
-      "34870.01",
-      "28530.01",
-      "33285.01"
     ]
   },
   {
@@ -1802,30 +1802,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 70000 \\) dollars depreciates for \\( 3 \\) years at \\( 14.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 7.0\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "38691.37",
+    "question": "An operator buys a digital printing press for \\( 138000 \\) dollars. It depreciates at \\( 21\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 34500 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "95294.38",
+    "opts": [
+      "\\(85764.94\\)",
+      "\\(95294.38\\)",
+      "\\(104823.82\\)",
+      "\\(100059.10\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 70000 \\times \\left(1 - \\frac{14.0}{100}\\right)^3 \\approx 44523.9200\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 138000 \\times (1 - 0.21)^2 \\approx 86125.8000\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{7.0}{1200}\\right)^{24}\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 86125.80 + 34500 = 120625.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 38691.37\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 120625.80 \\times (1 - 0.21)^\\{1\\} \\approx 95294.38\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "38691.37",
-      "42560.51",
-      "34822.23",
-      "40625.94"
     ]
   },
   {
@@ -1834,30 +1834,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 80000 \\) dollars depreciates for \\( 3 \\) years at \\( 13.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 6.5\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "46241.94",
+    "question": "A company purchases a electric delivery van for \\( 74000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 16\\% \\) p.a. vs. Reducing balance depreciation at \\( 16\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "10202.48",
+    "opts": [
+      "\\(11222.73\\)",
+      "\\(10712.60\\)",
+      "\\(10202.48\\)",
+      "\\(9182.23\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 80000 \\times \\left(1 - \\frac{13.0}{100}\\right)^3 \\approx 52680.2400\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 74000 - (74000 \\times 0.16 \\times 4) = 26640.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{6.5}{1200}\\right)^{24}\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 74000 \\times (1 - 0.16)^\\{4\\} \\approx 36842.4806\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 46241.94\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |36842.48 - 26640.00| \\approx 10202.48\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "46241.94",
-      "50866.13",
-      "48554.04",
-      "41617.75"
     ]
   },
   {
@@ -1866,30 +1866,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 90000 \\) dollars depreciates for \\( 3 \\) years at \\( 12.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 6.0\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "54380.66",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 130000 \\) dollars. The asset depreciates at \\( 16\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "46897.93",
+    "opts": [
+      "\\(46897.93\\)",
+      "\\(51587.72\\)",
+      "\\(42208.14\\)",
+      "\\(49242.83\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 90000 \\times \\left(1 - \\frac{12.0}{100}\\right)^3 \\approx 61332.4800\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 130000 \\times (1 - 0.16)^\\{5\\} \\approx 54367.5525\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{6.0}{1200}\\right)^{24}\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 54380.66\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{54367.55\\}\\{1.159274\\} \\approx 46897.93\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "59818.73",
-      "54380.66",
-      "48942.59",
-      "57099.69"
     ]
   },
   {
@@ -1898,30 +1898,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 100000 \\) dollars depreciates for \\( 3 \\) years at \\( 11.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 5.5\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "63137.56",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 91000 \\) dollars. The accounting department depreciates the asset at \\( 7\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 11.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "15154.01",
+    "opts": [
+      "\\(15154.01\\)",
+      "\\(13638.61\\)",
+      "\\(15911.71\\)",
+      "\\(16669.41\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 100000 \\times \\left(1 - \\frac{11.0}{100}\\right)^3 \\approx 70496.9000\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 91000 \\times (1 - 0.07)^\\{6\\} \\approx 58876.1067\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{5.5}{1200}\\right)^{24}\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 91000 \\times (1 - 0.115)^\\{6\\} \\approx 43722.1003\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 63137.56\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 15154.01\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "56823.80",
-      "66294.44",
-      "69451.32",
-      "63137.56"
     ]
   },
   {
@@ -1930,30 +1930,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A fleet vehicle worth \\( 110000 \\) dollars depreciates for \\( 3 \\) years at \\( 10.0\\% \\) p.a., compounded annually. The rate of depreciation then changes to \\( 5.0\\% \\) p.a., compounded monthly, for the next \\( 2 \\) years. Find the depreciated value at the end of the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "72543.76",
+    "question": "An industrial chemical reactor contains \\( 16000 \\) liters of a chemical solution. Every year, \\( 4480 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(10.03%\\)",
+      "\\(11.03%\\)",
+      "\\(9.03%\\)",
+      "\\(10.53%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value at the end of the first stage (3 years) under annual compounding.",
-        "workingOut": "\\(A_1 = 110000 \\times \\left(1 - \\frac{10.0}{100}\\right)^3 \\approx 80190.0000\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{4480\\}\\{16000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value at the end of the second stage (2 years) compounded monthly.",
-        "workingOut": "\\(A_2 = A_1 \\times \\left(1 - \\frac{5.0}{1200}\\right)^{24}\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the final result.",
-        "workingOut": "\\(A_2 \\approx 72543.76\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "76170.95",
-      "79798.14",
-      "72543.76",
-      "65289.38"
     ]
   },
   {
@@ -1962,30 +1962,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 55000 \\) dollars is depreciated at \\( 16\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 23002 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "loss of 4380.92",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 62000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 18\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "35680.60",
+    "opts": [
+      "\\(35680.60\\)",
+      "\\(39248.66\\)",
+      "\\(32112.54\\)",
+      "\\(37464.63\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 55000 \\times \\left(1 - \\frac{16}{100}\\right)^4 \\approx 27382.9248\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 62000, \\quad r = \\frac\\{18\\%\\}\\{4\\} = 4.5\\% = 0.0450, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 23002 - 27382.92 = -4380.92\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 62000 \\times (1 - 0.0450)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } loss \\text{ of } 4380.92\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 62000 \\times 0.575494 \\approx 35680.60\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "loss of 4380.92",
-      "loss of 4380.92 (nominal)",
-      "loss of 4380.92 (rounded)",
-      "loss of 4380.92 (estimated)"
     ]
   },
   {
@@ -1994,30 +1994,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 60000 \\) dollars is depreciated at \\( 17\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 25058 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "loss of 3416.99",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 31493 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 10\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "48000.00",
+    "opts": [
+      "\\(50400.00\\)",
+      "\\(52800.00\\)",
+      "\\(43200.00\\)",
+      "\\(48000.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 60000 \\times \\left(1 - \\frac{17}{100}\\right)^4 \\approx 28474.9926\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 31493 = P(1 - 0.1)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 25058 - 28474.99 = -3416.99\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{31493\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } loss \\text{ of } 3416.99\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{31493\\}\\{0.656100\\} \\approx 48000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "loss of 3416.99 (estimated)",
-      "loss of 3416.99 (rounded)",
-      "loss of 3416.99",
-      "loss of 3416.99 (nominal)"
     ]
   },
   {
@@ -2026,30 +2026,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 65000 \\) dollars is depreciated at \\( 18\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 27037 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "loss of 2350.91",
+    "question": "A commercial construction excavator is purchased for \\( 204000 \\) dollars and depreciates to a salvage value of \\( 66847 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "20.0%",
+    "opts": [
+      "\\(18.0%\\)",
+      "\\(22.0%\\)",
+      "\\(21.0%\\)",
+      "\\(20.0%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 65000 \\times \\left(1 - \\frac{18}{100}\\right)^4 \\approx 29387.9144\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(66847 = 204000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 27037 - 29387.91 = -2350.91\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{66847\\}\\{204000\\}\\} = \\left(\\frac\\{66847\\}\\{204000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } loss \\text{ of } 2350.91\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{66847\\}\\{204000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.2 \\implies r \\approx 20.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "loss of 2350.91",
-      "loss of 2350.91 (estimated)",
-      "loss of 2350.91 (rounded)",
-      "loss of 2350.91 (nominal)"
     ]
   },
   {
@@ -2058,30 +2058,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 70000 \\) dollars is depreciated at \\( 19\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 28927 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "loss of 1205.70",
+    "question": "An operator purchases a CNC milling machine for \\( 109000 \\) dollars. The asset depreciates at \\( 11\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 43600 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "7.9",
+    "opts": [
+      "\\(7.9\\)",
+      "\\(8.3\\)",
+      "\\(8.7\\)",
+      "\\(7.1\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 70000 \\times \\left(1 - \\frac{19}{100}\\right)^4 \\approx 30132.7047\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(109000 \\times (1 - 0.11)^n \\le 43600\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 28927 - 30132.70 = -1205.70\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{43600\\}\\{109000\\}\\right)\\}\\{\\ln(0.89)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } loss \\text{ of } 1205.70\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1165\\} \\approx 7.9\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "loss of 1205.70",
-      "loss of 1205.70 (rounded)",
-      "loss of 1205.70 (estimated)",
-      "loss of 1205.70 (nominal)"
     ]
   },
   {
@@ -2090,30 +2090,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 75000 \\) dollars is depreciated at \\( 20\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 30720 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "loss of 0.00",
+    "question": "A business acquires a automated packaging line for \\( 325000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 13\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 9.1\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "152665.63",
+    "opts": [
+      "\\(152665.63\\)",
+      "\\(167932.19\\)",
+      "\\(160298.91\\)",
+      "\\(137399.07\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 75000 \\times \\left(1 - \\frac{20}{100}\\right)^4 \\approx 30720.0000\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 325000 \\times (1 - 0.13)^2 \\approx 245992.5000\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 30720 - 30720.00 = -0.00\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.091)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } loss \\text{ of } 0.00\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 245992.50 \\times 0.620611 \\approx 152665.63\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "loss of 0.00",
-      "loss of 0.00 (estimated)",
-      "loss of 0.00 (nominal)",
-      "loss of 0.00 (rounded)"
     ]
   },
   {
@@ -2122,30 +2122,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 80000 \\) dollars is depreciated at \\( 21\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 32406 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "gain of 1245.94",
+    "question": "An operator buys a digital printing press for \\( 146000 \\) dollars. It depreciates at \\( 15\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 36500 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "120687.25",
+    "opts": [
+      "\\(132755.98\\)",
+      "\\(108618.53\\)",
+      "\\(126721.61\\)",
+      "\\(120687.25\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 80000 \\times \\left(1 - \\frac{21}{100}\\right)^4 \\approx 31160.0648\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 146000 \\times (1 - 0.15)^2 \\approx 105485.0000\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 32406 - 31160.06 = 1245.94\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 105485.00 + 36500 = 141985.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } gain \\text{ of } 1245.94\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 141985.00 \\times (1 - 0.15)^\\{1\\} \\approx 120687.25\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "gain of 1245.94 (rounded)",
-      "gain of 1245.94 (nominal)",
-      "gain of 1245.94 (estimated)",
-      "gain of 1245.94"
     ]
   },
   {
@@ -2154,30 +2154,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 85000 \\) dollars is depreciated at \\( 22\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 33980 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "gain of 2517.20",
+    "question": "A company purchases a electric delivery van for \\( 82000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 15\\% \\) p.a. vs. Reducing balance depreciation at \\( 15\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "10004.51",
+    "opts": [
+      "\\(11004.96\\)",
+      "\\(9004.06\\)",
+      "\\(10504.74\\)",
+      "\\(10004.51\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 85000 \\times \\left(1 - \\frac{22}{100}\\right)^4 \\approx 31462.7976\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 82000 - (82000 \\times 0.15 \\times 4) = 32800.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 33980 - 31462.80 = 2517.20\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 82000 \\times (1 - 0.15)^\\{4\\} \\approx 42804.5125\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } gain \\text{ of } 2517.20\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |42804.51 - 32800.00| \\approx 10004.51\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "gain of 2517.20",
-      "gain of 2517.20 (estimated)",
-      "gain of 2517.20 (nominal)",
-      "gain of 2517.20 (rounded)"
     ]
   },
   {
@@ -2186,30 +2186,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 90000 \\) dollars is depreciated at \\( 23\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 35434 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "gain of 3796.26",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 137000 \\) dollars. The asset depreciates at \\( 18\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "43813.07",
+    "opts": [
+      "\\(46003.72\\)",
+      "\\(43813.07\\)",
+      "\\(48194.38\\)",
+      "\\(39431.76\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 90000 \\times \\left(1 - \\frac{23}{100}\\right)^4 \\approx 31637.7369\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 137000 \\times (1 - 0.18)^\\{5\\} \\approx 50791.3585\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 35434 - 31637.74 = 3796.26\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } gain \\text{ of } 3796.26\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{50791.36\\}\\{1.159274\\} \\approx 43813.07\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "gain of 3796.26 (rounded)",
-      "gain of 3796.26 (nominal)",
-      "gain of 3796.26 (estimated)",
-      "gain of 3796.26"
     ]
   },
   {
@@ -2218,30 +2218,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 95000 \\) dollars is depreciated at \\( 24\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 36765 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "gain of 5070.93",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 98000 \\) dollars. The accounting department depreciates the asset at \\( 9\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 13.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "14600.28",
+    "opts": [
+      "\\(14600.28\\)",
+      "\\(16060.31\\)",
+      "\\(15330.29\\)",
+      "\\(13140.25\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 95000 \\times \\left(1 - \\frac{24}{100}\\right)^4 \\approx 31694.0672\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 98000 \\times (1 - 0.09)^\\{6\\} \\approx 55651.1867\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 36765 - 31694.07 = 5070.93\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 98000 \\times (1 - 0.135)^\\{6\\} \\approx 41050.9035\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } gain \\text{ of } 5070.93\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 14600.28\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "gain of 5070.93",
-      "gain of 5070.93 (estimated)",
-      "gain of 5070.93 (nominal)",
-      "gain of 5070.93 (rounded)"
     ]
   },
   {
@@ -2250,30 +2250,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 100000 \\) dollars is depreciated at \\( 25\\% \\) p.a. compounded annually. After \\( 4 \\) years, the company sells the asset for \\( 37969 \\) dollars. Find the difference between the sale price and the depreciated book value, and specify if it was a gain or loss compared to the book value. (Format: 'loss of 1243.50' or 'gain of 542.10')",
-    "a": "gain of 6328.38",
+    "question": "An industrial chemical reactor contains \\( 24000 \\) liters of a chemical solution. Every year, \\( 6720 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(10.03%\\)",
+      "\\(11.03%\\)",
+      "\\(9.03%\\)",
+      "\\(10.53%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated book value of the asset after 4 years.",
-        "workingOut": "\\(V_4 = 100000 \\times \\left(1 - \\frac{25}{100}\\right)^4 \\approx 31640.6250\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{6720\\}\\{24000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare the sale price with the calculated book value.",
-        "workingOut": "\\(\\text{Difference} = 37969 - 31640.63 = 6328.38\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine whether the difference represents a gain or loss, and format the final answer.",
-        "workingOut": "\\(\\text{Result: } gain \\text{ of } 6328.38\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "gain of 6328.38 (estimated)",
-      "gain of 6328.38 (rounded)",
-      "gain of 6328.38 (nominal)",
-      "gain of 6328.38"
     ]
   },
   {
@@ -2282,30 +2282,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 12\\% \\) of its original value if the compound depreciation rate is \\( 11\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "18.2",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 70000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 12\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "48568.97",
+    "opts": [
+      "\\(48568.97\\)",
+      "\\(53425.87\\)",
+      "\\(43712.07\\)",
+      "\\(50997.42\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.11)^n \\le \\frac{12}{100}\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 70000, \\quad r = \\frac\\{12\\%\\}\\{4\\} = 3\\% = 0.0300, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.12)}{\\log(0.89)}\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 70000 \\times (1 - 0.0300)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 18.2\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 70000 \\times 0.693842 \\approx 48568.97\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "16.4",
-      "20.0",
-      "19.1",
-      "18.2"
     ]
   },
   {
@@ -2314,30 +2314,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 14\\% \\) of its original value if the compound depreciation rate is \\( 12\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "15.4",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 32983 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 12\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "55000.00",
+    "opts": [
+      "\\(57750.00\\)",
+      "\\(55000.00\\)",
+      "\\(49500.00\\)",
+      "\\(60500.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.12)^n \\le \\frac{14}{100}\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 32983 = P(1 - 0.12)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.14)}{\\log(0.88)}\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{32983\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 15.4\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{32983\\}\\{0.599695\\} \\approx 55000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "15.4",
-      "16.2",
-      "16.9",
-      "13.9"
     ]
   },
   {
@@ -2346,30 +2346,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 16\\% \\) of its original value if the compound depreciation rate is \\( 13\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "13.2",
+    "question": "A commercial construction excavator is purchased for \\( 211000 \\) dollars and depreciates to a salvage value of \\( 93622 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "15.0%",
+    "opts": [
+      "\\(13.5%\\)",
+      "\\(15.0%\\)",
+      "\\(16.5%\\)",
+      "\\(15.8%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.13)^n \\le \\frac{16}{100}\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(93622 = 211000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.16)}{\\log(0.87)}\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{93622\\}\\{211000\\}\\} = \\left(\\frac\\{93622\\}\\{211000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 13.2\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{93622\\}\\{211000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.15 \\implies r \\approx 15.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "13.9",
-      "11.9",
-      "14.5",
-      "13.2"
     ]
   },
   {
@@ -2378,30 +2378,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 18\\% \\) of its original value if the compound depreciation rate is \\( 14\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "11.4",
+    "question": "An operator purchases a CNC milling machine for \\( 117000 \\) dollars. The asset depreciates at \\( 13\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 46800 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "6.6",
+    "opts": [
+      "\\(5.9\\)",
+      "\\(6.6\\)",
+      "\\(7.3\\)",
+      "\\(6.9\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.14)^n \\le \\frac{18}{100}\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(117000 \\times (1 - 0.13)^n \\le 46800\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.18)}{\\log(0.86)}\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{46800\\}\\{117000\\}\\right)\\}\\{\\ln(0.87)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 11.4\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1393\\} \\approx 6.6\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "11.4",
-      "12.5",
-      "10.3",
-      "12.0"
     ]
   },
   {
@@ -2410,30 +2410,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 20\\% \\) of its original value if the compound depreciation rate is \\( 15\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "9.9",
+    "question": "A business acquires a automated packaging line for \\( 333000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 15\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 10.5\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "138164.75",
+    "opts": [
+      "\\(124348.28\\)",
+      "\\(151981.23\\)",
+      "\\(145072.99\\)",
+      "\\(138164.75\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.15)^n \\le \\frac{20}{100}\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 333000 \\times (1 - 0.15)^2 \\approx 240592.5000\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.2)}{\\log(0.85)}\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.105)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 9.9\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 240592.50 \\times 0.574269 \\approx 138164.75\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "8.9",
-      "10.9",
-      "10.4",
-      "9.9"
     ]
   },
   {
@@ -2442,30 +2442,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 22\\% \\) of its original value if the compound depreciation rate is \\( 16\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "8.7",
+    "question": "An operator buys a digital printing press for \\( 153000 \\) dollars. It depreciates at \\( 20\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 38250 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "108936.00",
+    "opts": [
+      "\\(108936.00\\)",
+      "\\(114382.80\\)",
+      "\\(119829.60\\)",
+      "\\(98042.40\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.16)^n \\le \\frac{22}{100}\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 153000 \\times (1 - 0.2)^2 \\approx 97920.0000\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.22)}{\\log(0.84)}\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 97920.00 + 38250 = 136170.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 8.7\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 136170.00 \\times (1 - 0.2)^\\{1\\} \\approx 108936.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "7.8",
-      "8.7",
-      "9.6",
-      "9.1"
     ]
   },
   {
@@ -2474,30 +2474,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 24\\% \\) of its original value if the compound depreciation rate is \\( 17\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "7.7",
+    "question": "A company purchases a electric delivery van for \\( 89000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 23\\% \\) p.a. vs. Reducing balance depreciation at \\( 23\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "24166.21",
+    "opts": [
+      "\\(24166.21\\)",
+      "\\(26582.83\\)",
+      "\\(21749.59\\)",
+      "\\(25374.52\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.17)^n \\le \\frac{24}{100}\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 89000 - (89000 \\times 0.23 \\times 4) = 7120.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.24)}{\\log(0.83)}\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 89000 \\times (1 - 0.23)^\\{4\\} \\approx 31286.2065\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 7.7\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |31286.21 - 7120.00| \\approx 24166.21\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "7.7",
-      "6.9",
-      "8.5",
-      "8.1"
     ]
   },
   {
@@ -2506,30 +2506,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 26\\% \\) of its original value if the compound depreciation rate is \\( 18\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "6.8",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 145000 \\) dollars. The asset depreciates at \\( 13\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "62341.63",
+    "opts": [
+      "\\(65458.71\\)",
+      "\\(62341.63\\)",
+      "\\(68575.79\\)",
+      "\\(56107.47\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.18)^n \\le \\frac{26}{100}\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 145000 \\times (1 - 0.13)^\\{5\\} \\approx 72271.0335\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.26)}{\\log(0.8200000000000001)}\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 6.8\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{72271.03\\}\\{1.159274\\} \\approx 62341.63\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "6.1",
-      "6.8",
-      "7.1",
-      "7.5"
     ]
   },
   {
@@ -2538,30 +2538,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 28\\% \\) of its original value if the compound depreciation rate is \\( 19\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "6.0",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 105000 \\) dollars. The accounting department depreciates the asset at \\( 11\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 15.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "13959.61",
+    "opts": [
+      "\\(12563.65\\)",
+      "\\(14657.59\\)",
+      "\\(15355.57\\)",
+      "\\(13959.61\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.19)^n \\le \\frac{28}{100}\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 105000 \\times (1 - 0.11)^\\{6\\} \\approx 52183.0356\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.28)}{\\log(0.81)}\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 105000 \\times (1 - 0.155)^\\{6\\} \\approx 38223.4209\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 6.0\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 13959.61\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "6.3",
-      "5.4",
-      "6.6",
-      "6.0"
     ]
   },
   {
@@ -2570,30 +2570,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Find the number of years required for an asset to depreciate to less than \\( 30\\% \\) of its original value if the compound depreciation rate is \\( 20\\% \\) p.a., compounded annually. Correct to one decimal place. (Enter value only, e.g. 7.4)",
-    "a": "5.4",
+    "question": "An industrial chemical reactor contains \\( 31000 \\) liters of a chemical solution. Every year, \\( 8680 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(9.03%\\)",
+      "\\(10.53%\\)",
+      "\\(11.03%\\)",
+      "\\(10.03%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the compound depreciation inequality.",
-        "workingOut": "\\((1 - 0.20)^n \\le \\frac{30}{100}\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{8680\\}\\{31000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply logarithms to solve for n.",
-        "workingOut": "\\(n = \\frac{\\log(0.3)}{\\log(0.8)}\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the quotient and round to one decimal place.",
-        "workingOut": "\\(n \\approx 5.4\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "4.9",
-      "5.9",
-      "5.7",
-      "5.4"
     ]
   },
   {
@@ -2602,30 +2602,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 23000 \\) dollars depreciates at \\( 13\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 2000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "12977.48",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 77000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 14\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "50213.27",
+    "opts": [
+      "\\(50213.27\\)",
+      "\\(55234.60\\)",
+      "\\(45191.94\\)",
+      "\\(52723.93\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 23000 \\times \\left(1 - \\frac{13}{100}\\right)^3 \\approx 15145.5690\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 77000, \\quad r = \\frac\\{14\\%\\}\\{4\\} = 3.5\\% = 0.0350, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 2000 \\approx 17145.5690\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 77000 \\times (1 - 0.0350)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{13}{100}\\right)^2 \\approx 12977.48\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 77000 \\times 0.652120 \\approx 50213.27\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "13626.35",
-      "12977.48",
-      "14275.23",
-      "11679.73"
     ]
   },
   {
@@ -2634,30 +2634,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 26000 \\) dollars depreciates at \\( 14\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 4000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "15189.50",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 15316 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 14\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "28000.00",
+    "opts": [
+      "\\(29400.00\\)",
+      "\\(25200.00\\)",
+      "\\(30800.00\\)",
+      "\\(28000.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 26000 \\times \\left(1 - \\frac{14}{100}\\right)^3 \\approx 16537.4560\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 15316 = P(1 - 0.14)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 4000 \\approx 20537.4560\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{15316\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{14}{100}\\right)^2 \\approx 15189.50\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{15316\\}\\{0.547008\\} \\approx 28000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "15189.50",
-      "16708.45",
-      "13670.55",
-      "15948.98"
     ]
   },
   {
@@ -2666,30 +2666,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 29000 \\) dollars depreciates at \\( 15\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 6000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "17202.45",
+    "question": "A commercial construction excavator is purchased for \\( 218000 \\) dollars and depreciates to a salvage value of \\( 85871 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "17.0%",
+    "opts": [
+      "\\(17.0%\\)",
+      "\\(18.7%\\)",
+      "\\(15.3%\\)",
+      "\\(17.9%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 29000 \\times \\left(1 - \\frac{15}{100}\\right)^3 \\approx 17809.6250\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(85871 = 218000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 6000 \\approx 23809.6250\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{85871\\}\\{218000\\}\\} = \\left(\\frac\\{85871\\}\\{218000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{15}{100}\\right)^2 \\approx 17202.45\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{85871\\}\\{218000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.17 \\implies r \\approx 17.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "17202.45",
-      "18922.70",
-      "15482.21",
-      "18062.57"
     ]
   },
   {
@@ -2698,30 +2698,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 32000 \\) dollars depreciates at \\( 16\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 8000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "19027.58",
+    "question": "An operator purchases a CNC milling machine for \\( 124000 \\) dollars. The asset depreciates at \\( 15\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 49600 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "5.6",
+    "opts": [
+      "\\(5.6\\)",
+      "\\(5.9\\)",
+      "\\(6.2\\)",
+      "\\(5.0\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 32000 \\times \\left(1 - \\frac{16}{100}\\right)^3 \\approx 18966.5280\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(124000 \\times (1 - 0.15)^n \\le 49600\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 8000 \\approx 26966.5280\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{49600\\}\\{124000\\}\\right)\\}\\{\\ln(0.85)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{16}{100}\\right)^2 \\approx 19027.58\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1625\\} \\approx 5.6\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "19978.96",
-      "17124.82",
-      "20930.34",
-      "19027.58"
     ]
   },
   {
@@ -2730,30 +2730,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 35000 \\) dollars depreciates at \\( 17\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 10000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "20675.64",
+    "question": "A business acquires a automated packaging line for \\( 340000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 11\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 7.7\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "180412.84",
+    "opts": [
+      "\\(189433.48\\)",
+      "\\(180412.84\\)",
+      "\\(198454.12\\)",
+      "\\(162371.56\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 35000 \\times \\left(1 - \\frac{17}{100}\\right)^3 \\approx 20012.5450\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 340000 \\times (1 - 0.11)^2 \\approx 269314.0000\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 10000 \\approx 30012.5450\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.077)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{17}{100}\\right)^2 \\approx 20675.64\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 269314.00 \\times 0.669898 \\approx 180412.84\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "21709.42",
-      "18608.08",
-      "22743.20",
-      "20675.64"
     ]
   },
   {
@@ -2762,30 +2762,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 38000 \\) dollars depreciates at \\( 18\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 12000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "22156.91",
+    "question": "An operator buys a digital printing press for \\( 161000 \\) dollars. It depreciates at \\( 14\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 40250 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "137020.02",
+    "opts": [
+      "\\(137020.02\\)",
+      "\\(143871.02\\)",
+      "\\(150722.02\\)",
+      "\\(123318.02\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 38000 \\times \\left(1 - \\frac{18}{100}\\right)^3 \\approx 20951.9840\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 161000 \\times (1 - 0.14)^2 \\approx 119075.6000\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 12000 \\approx 32951.9840\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 119075.60 + 40250 = 159325.60\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{18}{100}\\right)^2 \\approx 22156.91\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 159325.60 \\times (1 - 0.14)^\\{1\\} \\approx 137020.02\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "22156.91",
-      "24372.60",
-      "23264.76",
-      "19941.22"
     ]
   },
   {
@@ -2794,30 +2794,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 41000 \\) dollars depreciates at \\( 19\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 14000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "23481.22",
+    "question": "A company purchases a electric delivery van for \\( 56000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 22\\% \\) p.a. vs. Reducing balance depreciation at \\( 22\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "14008.43",
+    "opts": [
+      "\\(15409.27\\)",
+      "\\(14708.85\\)",
+      "\\(14008.43\\)",
+      "\\(12607.59\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 41000 \\times \\left(1 - \\frac{19}{100}\\right)^3 \\approx 21789.0810\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 56000 - (56000 \\times 0.22 \\times 4) = 6720.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 14000 \\approx 35789.0810\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 56000 \\times (1 - 0.22)^\\{4\\} \\approx 20728.4314\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{19}{100}\\right)^2 \\approx 23481.22\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |20728.43 - 6720.00| \\approx 14008.43\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "24655.28",
-      "25829.34",
-      "21133.10",
-      "23481.22"
     ]
   },
   {
@@ -2826,30 +2826,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 44000 \\) dollars depreciates at \\( 20\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 16000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "24657.92",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 152000 \\) dollars. The asset depreciates at \\( 15\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "58177.10",
+    "opts": [
+      "\\(61085.96\\)",
+      "\\(52359.39\\)",
+      "\\(63994.81\\)",
+      "\\(58177.10\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 44000 \\times \\left(1 - \\frac{20}{100}\\right)^3 \\approx 22528.0000\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 152000 \\times (1 - 0.15)^\\{5\\} \\approx 67443.2075\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 16000 \\approx 38528.0000\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{20}{100}\\right)^2 \\approx 24657.92\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{67443.21\\}\\{1.159274\\} \\approx 58177.10\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "25890.82",
-      "22192.13",
-      "27123.71",
-      "24657.92"
     ]
   },
   {
@@ -2858,30 +2858,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 47000 \\) dollars depreciates at \\( 21\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 18000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "25695.97",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 113000 \\) dollars. The accounting department depreciates the asset at \\( 13\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 17.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "13370.88",
+    "opts": [
+      "\\(13370.88\\)",
+      "\\(14707.97\\)",
+      "\\(12033.79\\)",
+      "\\(14039.42\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 47000 \\times \\left(1 - \\frac{21}{100}\\right)^3 \\approx 23172.8330\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 113000 \\times (1 - 0.13)^\\{6\\} \\approx 48999.7607\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 18000 \\approx 41172.8330\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 113000 \\times (1 - 0.175)^\\{6\\} \\approx 35628.8771\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{21}{100}\\right)^2 \\approx 25695.97\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 13370.88\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "25695.97",
-      "28265.57",
-      "26980.77",
-      "23126.37"
     ]
   },
   {
@@ -2890,30 +2890,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An industrial asset costing \\( 50000 \\) dollars depreciates at \\( 22\\% \\) p.a. compounded annually. At the end of Year 3, a major upgrade costing \\( 20000 \\) dollars is added to the asset's value. Find the depreciated value of the upgraded asset at the end of Year 5. Correct to the nearest cent.",
-    "a": "26603.87",
+    "question": "An industrial chemical reactor contains \\( 19000 \\) liters of a chemical solution. Every year, \\( 5320 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(9.03%\\)",
+      "\\(11.03%\\)",
+      "\\(10.03%\\)",
+      "\\(10.53%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value after the first 3 years.",
-        "workingOut": "\\(V_3 = 50000 \\times \\left(1 - \\frac{22}{100}\\right)^3 \\approx 23727.6000\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{5320\\}\\{19000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Add the upgrade cost to the asset value at the end of Year 3.",
-        "workingOut": "\\(V_{\\text{upgraded}} = V_3 + 20000 \\approx 43727.6000\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Depreciate the upgraded asset for the next 2 years.",
-        "workingOut": "\\(V_5 = V_{\\text{upgraded}} \\times \\left(1 - \\frac{22}{100}\\right)^2 \\approx 26603.87\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "23943.48",
-      "29264.26",
-      "27934.06",
-      "26603.87"
     ]
   },
   {
@@ -2922,30 +2922,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 550 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 60 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "31.50%",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 84000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 16\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "51467.62",
+    "opts": [
+      "\\(51467.62\\)",
+      "\\(56614.38\\)",
+      "\\(46320.86\\)",
+      "\\(54041.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{60}{550} = \\frac{490}{550} \\approx 0.890909\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 84000, \\quad r = \\frac\\{16\\%\\}\\{4\\} = 4\\% = 0.0400, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.890909)^{10} \\approx 0.315017\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 84000 \\times (1 - 0.0400)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 31.50%\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 84000 \\times 0.612710 \\approx 51467.62\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "34.65%",
-      "33.08%",
-      "31.50%",
-      "28.35%"
     ]
   },
   {
@@ -2954,30 +2954,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 600 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 70 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "28.92%",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 24001 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 9\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "35000.00",
+    "opts": [
+      "\\(31500.00\\)",
+      "\\(38500.00\\)",
+      "\\(35000.00\\)",
+      "\\(36750.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{70}{600} = \\frac{530}{600} \\approx 0.883333\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 24001 = P(1 - 0.09)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.883333)^{10} \\approx 0.289232\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{24001\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 28.92%\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{24001\\}\\{0.685750\\} \\approx 35000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "30.37%",
-      "26.03%",
-      "31.81%",
-      "28.92%"
     ]
   },
   {
@@ -2986,30 +2986,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 650 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 80 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "26.89%",
+    "question": "A commercial construction excavator is purchased for \\( 226000 \\) dollars and depreciates to a salvage value of \\( 78801 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "19.0%",
+    "opts": [
+      "\\(17.1%\\)",
+      "\\(20.9%\\)",
+      "\\(19.0%\\)",
+      "\\(19.9%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{80}{650} = \\frac{570}{650} \\approx 0.876923\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(78801 = 226000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.876923)^{10} \\approx 0.268915\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{78801\\}\\{226000\\}\\} = \\left(\\frac\\{78801\\}\\{226000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 26.89%\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{78801\\}\\{226000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.19 \\implies r \\approx 19.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "24.20%",
-      "29.58%",
-      "26.89%",
-      "28.23%"
     ]
   },
   {
@@ -3018,30 +3018,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 700 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 90 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "25.25%",
+    "question": "An operator purchases a CNC milling machine for \\( 132000 \\) dollars. The asset depreciates at \\( 17\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 52800 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "4.9",
+    "opts": [
+      "\\(4.9\\)",
+      "\\(5.1\\)",
+      "\\(5.4\\)",
+      "\\(4.4\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{90}{700} = \\frac{610}{700} \\approx 0.871429\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(132000 \\times (1 - 0.17)^n \\le 52800\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.871429)^{10} \\approx 0.252533\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{52800\\}\\{132000\\}\\right)\\}\\{\\ln(0.83)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 25.25%\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1863\\} \\approx 4.9\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "26.51%",
-      "25.25%",
-      "27.78%",
-      "22.73%"
     ]
   },
   {
@@ -3050,30 +3050,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 750 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 100 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "23.91%",
+    "question": "A business acquires a automated packaging line for \\( 347000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 13\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 9.1\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "162999.92",
+    "opts": [
+      "\\(171149.92\\)",
+      "\\(162999.92\\)",
+      "\\(146699.93\\)",
+      "\\(179299.91\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{100}{750} = \\frac{650}{750} \\approx 0.866667\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 347000 \\times (1 - 0.13)^2 \\approx 262644.3000\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.866667)^{10} \\approx 0.239068\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.091)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 23.91%\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 262644.30 \\times 0.620611 \\approx 162999.92\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "23.91%",
-      "25.11%",
-      "26.30%",
-      "21.52%"
     ]
   },
   {
@@ -3082,30 +3082,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 800 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 110 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "22.78%",
+    "question": "An operator buys a digital printing press for \\( 168000 \\) dollars. It depreciates at \\( 19\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 42000 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "123302.09",
+    "opts": [
+      "\\(129467.19\\)",
+      "\\(110971.88\\)",
+      "\\(135632.30\\)",
+      "\\(123302.09\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{110}{800} = \\frac{690}{800} \\approx 0.862500\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 168000 \\times (1 - 0.19)^2 \\approx 110224.8000\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.862500)^{10} \\approx 0.227820\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 110224.80 + 42000 = 152224.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 22.78%\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 152224.80 \\times (1 - 0.19)^\\{1\\} \\approx 123302.09\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "22.78%",
-      "25.06%",
-      "20.50%",
-      "23.92%"
     ]
   },
   {
@@ -3114,30 +3114,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 850 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 120 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "21.83%",
+    "question": "A company purchases a electric delivery van for \\( 64000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 21\\% \\) p.a. vs. Reducing balance depreciation at \\( 21\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "14688.05",
+    "opts": [
+      "\\(14688.05\\)",
+      "\\(16156.86\\)",
+      "\\(13219.24\\)",
+      "\\(15422.45\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{120}{850} = \\frac{730}{850} \\approx 0.858824\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 64000 - (64000 \\times 0.21 \\times 4) = 10240.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.858824)^{10} \\approx 0.218293\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 64000 \\times (1 - 0.21)^\\{4\\} \\approx 24928.0518\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 21.83%\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |24928.05 - 10240.00| \\approx 14688.05\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "22.92%",
-      "19.65%",
-      "24.01%",
-      "21.83%"
     ]
   },
   {
@@ -3146,30 +3146,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 900 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 130 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "21.01%",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 160000 \\) dollars. The asset depreciates at \\( 17\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "54365.62",
+    "opts": [
+      "\\(59802.18\\)",
+      "\\(57083.90\\)",
+      "\\(54365.62\\)",
+      "\\(48929.06\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{130}{900} = \\frac{770}{900} \\approx 0.855556\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 160000 \\times (1 - 0.17)^\\{5\\} \\approx 63024.6503\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.855556)^{10} \\approx 0.210127\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 21.01%\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{63024.65\\}\\{1.159274\\} \\approx 54365.62\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "21.01%",
-      "23.11%",
-      "18.91%",
-      "22.06%"
     ]
   },
   {
@@ -3178,30 +3178,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 950 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 140 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "20.31%",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 120000 \\) dollars. The accounting department depreciates the asset at \\( 8\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 12.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "18907.16",
+    "opts": [
+      "\\(19852.52\\)",
+      "\\(17016.44\\)",
+      "\\(20797.88\\)",
+      "\\(18907.16\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{140}{950} = \\frac{810}{950} \\approx 0.852632\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 120000 \\times (1 - 0.08)^\\{6\\} \\approx 72762.6002\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.852632)^{10} \\approx 0.203055\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 120000 \\times (1 - 0.125)^\\{6\\} \\approx 53855.4382\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 20.31%\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 18907.16\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "22.34%",
-      "20.31%",
-      "18.28%",
-      "21.33%"
     ]
   },
   {
@@ -3210,30 +3210,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "A container holds \\( 1000 \\text{ mL} \\) of a chemical solution. A chemist removes \\( 150 \\text{ mL} \\) of the solution and replaces it with pure water. This process of dilution is repeated \\( 10 \\) times. Find the percentage of the original chemical remaining in the container. Correct to two decimal places. (Enter value only, e.g. 15.42%)",
-    "a": "19.69%",
+    "question": "An industrial chemical reactor contains \\( 26000 \\) liters of a chemical solution. Every year, \\( 7280 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(9.03%\\)",
+      "\\(11.03%\\)",
+      "\\(10.53%\\)",
+      "\\(10.03%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Identify the dilution factor per step.",
-        "workingOut": "\\(F = 1 - \\frac{150}{1000} = \\frac{850}{1000} \\approx 0.850000\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{7280\\}\\{26000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the dilution factor compounded over the number of steps.",
-        "workingOut": "\\(R = F^{10} = (0.850000)^{10} \\approx 0.196874\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Convert the remaining ratio to a percentage and round to two decimal places.",
-        "workingOut": "\\(\\text{Remaining} \\approx 19.69%\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "20.67%",
-      "17.72%",
-      "21.66%",
-      "19.69%"
     ]
   },
   {
@@ -3242,30 +3242,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 20000 \\) dollars depreciates at \\( 10.5\\% \\) p.a. compounded annually. If inflation is constant at \\( 1.7\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "10557.00",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 42000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 18\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "24170.73",
+    "opts": [
+      "\\(25379.27\\)",
+      "\\(24170.73\\)",
+      "\\(26587.80\\)",
+      "\\(21753.66\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 20000 \\times \\left(1 - \\frac{10.5}{100}\\right)^{5} \\approx 11485.3748\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 42000, \\quad r = \\frac\\{18\\%\\}\\{4\\} = 4.5\\% = 0.0450, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{1.7}{100}\\right)^{5}}\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 42000 \\times (1 - 0.0450)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 20000 \\times \\left(\\frac{1 - 0.105}{1 + 0.017}\\right)^{5} \\approx 10557.00\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 42000 \\times 0.575494 \\approx 24170.73\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "9501.30",
-      "11612.70",
-      "10557.00",
-      "11084.85"
     ]
   },
   {
@@ -3274,30 +3274,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 40000 \\) dollars depreciates at \\( 11.0\\% \\) p.a. compounded annually. If inflation is constant at \\( 1.9\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "20330.08",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 26352 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 11\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "42000.00",
+    "opts": [
+      "\\(46200.00\\)",
+      "\\(37800.00\\)",
+      "\\(44100.00\\)",
+      "\\(42000.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 40000 \\times \\left(1 - \\frac{11.0}{100}\\right)^{5} \\approx 22336.2378\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 26352 = P(1 - 0.11)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{1.9}{100}\\right)^{5}}\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{26352\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 40000 \\times \\left(\\frac{1 - 0.11}{1 + 0.019}\\right)^{5} \\approx 20330.08\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{26352\\}\\{0.627422\\} \\approx 42000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "20330.08",
-      "18297.07",
-      "21346.58",
-      "22363.09"
     ]
   },
   {
@@ -3306,30 +3306,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 60000 \\) dollars depreciates at \\( 11.5\\% \\) p.a. compounded annually. If inflation is constant at \\( 2.1\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "29358.84",
+    "question": "A commercial construction excavator is purchased for \\( 233000 \\) dollars and depreciates to a salvage value of \\( 71695 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "21.0%",
+    "opts": [
+      "\\(23.1%\\)",
+      "\\(18.9%\\)",
+      "\\(21.0%\\)",
+      "\\(22.1%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 60000 \\times \\left(1 - \\frac{11.5}{100}\\right)^{5} \\approx 32573.7384\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(71695 = 233000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{2.1}{100}\\right)^{5}}\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{71695\\}\\{233000\\}\\} = \\left(\\frac\\{71695\\}\\{233000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 60000 \\times \\left(\\frac{1 - 0.115}{1 + 0.021}\\right)^{5} \\approx 29358.84\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{71695\\}\\{233000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.21 \\implies r \\approx 21.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "29358.84",
-      "32294.72",
-      "26422.96",
-      "30826.78"
     ]
   },
   {
@@ -3338,30 +3338,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 80000 \\) dollars depreciates at \\( 12.0\\% \\) p.a. compounded annually. If inflation is constant at \\( 2.3\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "37681.24",
+    "question": "An operator purchases a CNC milling machine for \\( 139000 \\) dollars. The asset depreciates at \\( 11\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 55600 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "7.9",
+    "opts": [
+      "\\(8.3\\)",
+      "\\(7.1\\)",
+      "\\(8.7\\)",
+      "\\(7.9\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 80000 \\times \\left(1 - \\frac{12.0}{100}\\right)^{5} \\approx 42218.5533\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(139000 \\times (1 - 0.11)^n \\le 55600\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{2.3}{100}\\right)^{5}}\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{55600\\}\\{139000\\}\\right)\\}\\{\\ln(0.89)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 80000 \\times \\left(\\frac{1 - 0.12}{1 + 0.023}\\right)^{5} \\approx 37681.24\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1165\\} \\approx 7.9\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "41449.36",
-      "33913.12",
-      "37681.24",
-      "39565.30"
     ]
   },
   {
@@ -3370,30 +3370,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 100000 \\) dollars depreciates at \\( 12.5\\% \\) p.a. compounded annually. If inflation is constant at \\( 2.5\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "45333.68",
+    "question": "A business acquires a automated packaging line for \\( 355000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 15\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 10.5\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "147292.75",
+    "opts": [
+      "\\(154657.39\\)",
+      "\\(147292.75\\)",
+      "\\(162022.03\\)",
+      "\\(132563.48\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 100000 \\times \\left(1 - \\frac{12.5}{100}\\right)^{5} \\approx 51290.8936\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 355000 \\times (1 - 0.15)^2 \\approx 256487.5000\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{2.5}{100}\\right)^{5}}\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.105)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 100000 \\times \\left(\\frac{1 - 0.125}{1 + 0.025}\\right)^{5} \\approx 45333.68\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 256487.50 \\times 0.574269 \\approx 147292.75\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "45333.68",
-      "47600.36",
-      "40800.31",
-      "49867.05"
     ]
   },
   {
@@ -3402,30 +3402,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 120000 \\) dollars depreciates at \\( 13.0\\% \\) p.a. compounded annually. If inflation is constant at \\( 2.7\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "52351.04",
+    "question": "An operator buys a digital printing press for \\( 175000 \\) dollars. It depreciates at \\( 24\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 43750 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "110070.80",
+    "opts": [
+      "\\(115574.34\\)",
+      "\\(110070.80\\)",
+      "\\(121077.88\\)",
+      "\\(99063.72\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 120000 \\times \\left(1 - \\frac{13.0}{100}\\right)^{5} \\approx 59810.5105\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 175000 \\times (1 - 0.24)^2 \\approx 101080.0000\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{2.7}{100}\\right)^{5}}\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 101080.00 + 43750 = 144830.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 120000 \\times \\left(\\frac{1 - 0.13}{1 + 0.027000000000000003}\\right)^{5} \\approx 52351.04\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 144830.00 \\times (1 - 0.24)^\\{1\\} \\approx 110070.80\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "57586.14",
-      "52351.04",
-      "47115.94",
-      "54968.59"
     ]
   },
   {
@@ -3434,30 +3434,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 140000 \\) dollars depreciates at \\( 13.5\\% \\) p.a. compounded annually. If inflation is constant at \\( 2.9\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "58766.75",
+    "question": "A company purchases a electric delivery van for \\( 71000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 20\\% \\) p.a. vs. Reducing balance depreciation at \\( 20\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "14881.60",
+    "opts": [
+      "\\(15625.68\\)",
+      "\\(14881.60\\)",
+      "\\(13393.44\\)",
+      "\\(16369.76\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 140000 \\times \\left(1 - \\frac{13.5}{100}\\right)^{5} \\approx 67796.7028\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 71000 - (71000 \\times 0.2 \\times 4) = 14200.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{2.9}{100}\\right)^{5}}\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 71000 \\times (1 - 0.2)^\\{4\\} \\approx 29081.6000\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 140000 \\times \\left(\\frac{1 - 0.135}{1 + 0.029000000000000005}\\right)^{5} \\approx 58766.75\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |29081.60 - 14200.00| \\approx 14881.60\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "61705.09",
-      "58766.75",
-      "64643.43",
-      "52890.08"
     ]
   },
   {
@@ -3466,30 +3466,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 160000 \\) dollars depreciates at \\( 14.0\\% \\) p.a. compounded annually. If inflation is constant at \\( 3.1\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "64612.85",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 167000 \\) dollars. The asset depreciates at \\( 12\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "76022.77",
+    "opts": [
+      "\\(83625.05\\)",
+      "\\(79823.91\\)",
+      "\\(76022.77\\)",
+      "\\(68420.49\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 160000 \\times \\left(1 - \\frac{14.0}{100}\\right)^{5} \\approx 75268.3228\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 167000 \\times (1 - 0.12)^\\{5\\} \\approx 88131.2301\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{3.1}{100}\\right)^{5}}\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 160000 \\times \\left(\\frac{1 - 0.14}{1 + 0.031}\\right)^{5} \\approx 64612.85\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{88131.23\\}\\{1.159274\\} \\approx 76022.77\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "58151.57",
-      "67843.49",
-      "64612.85",
-      "71074.14"
     ]
   },
   {
@@ -3498,30 +3498,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 180000 \\) dollars depreciates at \\( 14.5\\% \\) p.a. compounded annually. If inflation is constant at \\( 3.3\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "69920.01",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 128000 \\) dollars. The accounting department depreciates the asset at \\( 10\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 14.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "18020.23",
+    "opts": [
+      "\\(16218.21\\)",
+      "\\(18020.23\\)",
+      "\\(19822.25\\)",
+      "\\(18921.24\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 180000 \\times \\left(1 - \\frac{14.5}{100}\\right)^{5} \\approx 82243.7830\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 128000 \\times (1 - 0.1)^\\{6\\} \\approx 68024.4480\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{3.3}{100}\\right)^{5}}\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 128000 \\times (1 - 0.145)^\\{6\\} \\approx 50004.2201\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 180000 \\times \\left(\\frac{1 - 0.145}{1 + 0.033}\\right)^{5} \\approx 69920.01\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 18020.23\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "69920.01",
-      "62928.01",
-      "73416.01",
-      "76912.01"
     ]
   },
   {
@@ -3530,30 +3530,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An machinery asset worth \\( 200000 \\) dollars depreciates at \\( 15.0\\% \\) p.a. compounded annually. If inflation is constant at \\( 3.5\\% \\) p.a., find the real depreciated purchasing power value of the asset after \\( 5 \\) years (expressed in today's dollars). Correct to the nearest cent.",
-    "a": "74717.59",
+    "question": "An industrial chemical reactor contains \\( 33000 \\) liters of a chemical solution. Every year, \\( 9240 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(9.03%\\)",
+      "\\(10.03%\\)",
+      "\\(10.53%\\)",
+      "\\(11.03%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the nominal depreciated value of the asset after 5 years.",
-        "workingOut": "\\(V_{\\text{nominal}} = 200000 \\times \\left(1 - \\frac{15.0}{100}\\right)^{5} \\approx 88741.0625\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{9240\\}\\{33000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Adjust the nominal value for inflation to find its real value in today's purchasing power.",
-        "workingOut": "\\(V_{\\text{real}} = \frac{V_{\\text{nominal}}}{\\left(1 + \\frac{3.5}{100}\\right)^{5}}\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Combine the multipliers and evaluate.",
-        "workingOut": "\\(V_{\\text{real}} = 200000 \\times \\left(\\frac{1 - 0.15}{1 + 0.035}\\right)^{5} \\approx 74717.59\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "74717.59",
-      "82189.35",
-      "67245.83",
-      "78453.47"
     ]
   },
   {
@@ -3562,30 +3562,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 25000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "1407.37",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 49000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 12\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "33998.28",
+    "opts": [
+      "\\(35698.19\\)",
+      "\\(30598.45\\)",
+      "\\(37398.11\\)",
+      "\\(33998.28\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 25000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 12500.00\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 49000, \\quad r = \\frac\\{12\\%\\}\\{4\\} = 3\\% = 0.0300, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 25000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 11092.6328\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 49000 \\times (1 - 0.0300)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 1407.37\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 49000 \\times 0.693842 \\approx 33998.28\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "1407.37",
-      "1548.11",
-      "1266.63",
-      "1477.74"
     ]
   },
   {
@@ -3594,30 +3594,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 40000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "2251.79",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 28645 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 13\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "50000.00",
+    "opts": [
+      "\\(52500.00\\)",
+      "\\(45000.00\\)",
+      "\\(55000.00\\)",
+      "\\(50000.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 40000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 20000.00\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 28645 = P(1 - 0.13)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 40000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 17748.2125\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{28645\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 2251.79\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{28645\\}\\{0.572898\\} \\approx 50000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "2364.38",
-      "2251.79",
-      "2476.97",
-      "2026.61"
     ]
   },
   {
@@ -3626,30 +3626,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 55000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "3096.21",
+    "question": "A commercial construction excavator is purchased for \\( 241000 \\) dollars and depreciates to a salvage value of \\( 100789 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "16.0%",
+    "opts": [
+      "\\(17.6%\\)",
+      "\\(14.4%\\)",
+      "\\(16.0%\\)",
+      "\\(16.8%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 55000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 27500.00\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(100789 = 241000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 55000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 24403.7922\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{100789\\}\\{241000\\}\\} = \\left(\\frac\\{100789\\}\\{241000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 3096.21\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{100789\\}\\{241000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.16 \\implies r \\approx 16.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "3251.02",
-      "2786.59",
-      "3405.83",
-      "3096.21"
     ]
   },
   {
@@ -3658,30 +3658,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 70000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "3940.63",
+    "question": "An operator purchases a CNC milling machine for \\( 146000 \\) dollars. The asset depreciates at \\( 13\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 58400 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "6.6",
+    "opts": [
+      "\\(6.6\\)",
+      "\\(7.3\\)",
+      "\\(5.9\\)",
+      "\\(6.9\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 70000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 35000.00\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(146000 \\times (1 - 0.13)^n \\le 58400\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 70000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 31059.3719\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{58400\\}\\{146000\\}\\right)\\}\\{\\ln(0.87)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 3940.63\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1393\\} \\approx 6.6\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "4137.66",
-      "3546.57",
-      "4334.69",
-      "3940.63"
     ]
   },
   {
@@ -3690,30 +3690,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 85000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "4785.05",
+    "question": "A business acquires a automated packaging line for \\( 362000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 11\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 7.7\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "192086.61",
+    "opts": [
+      "\\(201690.94\\)",
+      "\\(192086.61\\)",
+      "\\(211295.27\\)",
+      "\\(172877.95\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 85000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 42500.00\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 362000 \\times (1 - 0.11)^2 \\approx 286740.2000\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 85000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 37714.9516\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.077)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 4785.05\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 286740.20 \\times 0.669898 \\approx 192086.61\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "4785.05",
-      "5263.56",
-      "4306.55",
-      "5024.30"
     ]
   },
   {
@@ -3722,30 +3722,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 100000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "5629.47",
+    "question": "An operator buys a digital printing press for \\( 183000 \\) dollars. It depreciates at \\( 18\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 45750 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "138415.34",
+    "opts": [
+      "\\(138415.34\\)",
+      "\\(124573.81\\)",
+      "\\(152256.87\\)",
+      "\\(145336.11\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 100000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 50000.00\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 183000 \\times (1 - 0.18)^2 \\approx 123049.2000\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 100000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 44370.5312\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 123049.20 + 45750 = 168799.20\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 5629.47\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 168799.20 \\times (1 - 0.18)^\\{1\\} \\approx 138415.34\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "5629.47",
-      "6192.42",
-      "5910.94",
-      "5066.52"
     ]
   },
   {
@@ -3754,30 +3754,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 115000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "6473.89",
+    "question": "A company purchases a electric delivery van for \\( 79000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 19\\% \\) p.a. vs. Reducing balance depreciation at \\( 19\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "15046.91",
+    "opts": [
+      "\\(15799.26\\)",
+      "\\(15046.91\\)",
+      "\\(16551.60\\)",
+      "\\(13542.22\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 115000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 57500.00\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 79000 - (79000 \\times 0.19 \\times 4) = 18960.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 115000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 51026.1109\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 79000 \\times (1 - 0.19)^\\{4\\} \\approx 34006.9096\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 6473.89\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |34006.91 - 18960.00| \\approx 15046.91\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "6797.58",
-      "5826.50",
-      "7121.28",
-      "6473.89"
     ]
   },
   {
@@ -3786,30 +3786,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 130000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "7318.31",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 174000 \\) dollars. The asset depreciates at \\( 14\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "70608.24",
+    "opts": [
+      "\\(74138.65\\)",
+      "\\(63547.42\\)",
+      "\\(70608.24\\)",
+      "\\(77669.06\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 130000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 65000.00\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 174000 \\times (1 - 0.14)^\\{5\\} \\approx 81854.3011\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 130000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 57681.6906\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 7318.31\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{81854.30\\}\\{1.159274\\} \\approx 70608.24\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "7318.31",
-      "8050.14",
-      "6586.48",
-      "7684.23"
     ]
   },
   {
@@ -3818,30 +3818,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 145000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "8162.73",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 75000 \\) dollars. The accounting department depreciates the asset at \\( 12\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 16.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "9410.04",
+    "opts": [
+      "\\(9410.04\\)",
+      "\\(10351.04\\)",
+      "\\(8469.04\\)",
+      "\\(9880.54\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 145000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 72500.00\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 75000 \\times (1 - 0.12)^\\{6\\} \\approx 34830.3065\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 145000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 64337.2703\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 75000 \\times (1 - 0.165)^\\{6\\} \\approx 25420.2675\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 8162.73\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 9410.04\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "8162.73",
-      "8570.87",
-      "8979.00",
-      "7346.46"
     ]
   },
   {
@@ -3850,30 +3850,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "An asset worth \\( 160000 \\) dollars can be depreciated over \\( 5 \\) years using either the straight-line method at \\( 10\\% \\) p.a. of original cost, or the reducing-balance method at \\( 15\\% \\) p.a. Find the difference in the depreciated value between the two methods after \\( 5 \\) years. Correct to the nearest cent.",
-    "a": "9007.15",
+    "question": "An industrial chemical reactor contains \\( 21000 \\) liters of a chemical solution. Every year, \\( 5880 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(11.03%\\)",
+      "\\(10.03%\\)",
+      "\\(10.53%\\)",
+      "\\(9.03%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the depreciated value using the straight-line method.",
-        "workingOut": "\\(V_{\\text{SL}} = 160000 \\times \\left(1 - \\frac{10}{100} \\times 5\\right) = 80000.00\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{5880\\}\\{21000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the depreciated value using the reducing-balance method.",
-        "workingOut": "\\(V_{\\text{RB}} = 160000 \\times \\left(1 - \\frac{15}{100}\\right)^{5} \\approx 70992.8500\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the smaller value from the larger value to find the difference.",
-        "workingOut": "\\(\\text{Difference} = |V_{\\text{SL}} - V_{\\text{RB}}| \\approx 9007.15\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "8106.43",
-      "9907.86",
-      "9457.51",
-      "9007.15"
     ]
   },
   {
@@ -3882,30 +3882,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 90000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 26\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 10.5\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "54667.44",
+    "question": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 57000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 14\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+    "a": "37170.86",
+    "opts": [
+      "\\(33453.77\\)",
+      "\\(40887.95\\)",
+      "\\(37170.86\\)",
+      "\\(39029.40\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 90000 \\times \\left(1 - \\frac{26}{100}\\right)^2 \\approx 49284.0000\\)",
+        "explanation": "Identify the principal value, periodic rate, and total number of compounding periods.",
+        "workingOut": "\\(P = 57000, \\quad r = \\frac\\{14\\%\\}\\{4\\} = 3.5\\% = 0.0350, \\quad n = 3 \\times 4 = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{10.5}{100}\\right)^3 \\approx 35332.5559\\)",
+        "explanation": "Apply the reducing balance compound depreciation formula.",
+        "workingOut": "\\(A = P(1 - r)^n = 57000 \\times (1 - 0.0350)^\\{12\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 90000 - V_5 \\approx 54667.44\\)",
+        "explanation": "Evaluate the power and calculate the final depreciated book value.",
+        "workingOut": "\\(A \\approx 57000 \\times 0.652120 \\approx 37170.86\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "57400.81",
-      "49200.70",
-      "60134.18",
-      "54667.44"
     ]
   },
   {
@@ -3914,30 +3914,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 100000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 27\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 11\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "62432.20",
+    "question": "A company claims that its commercial coffee roasting machine has depreciated to a book value of exactly \\( 40834 \\) dollars after \\( 4 \\) years. Under their accounting model, the asset depreciates at a rate of \\( 8\\% \\) p.a. compounded annually using the reducing balance method. Calculate the original purchase price of the commercial coffee roasting machine, correct to the nearest cent.",
+    "a": "57000.00",
+    "opts": [
+      "\\(59850.00\\)",
+      "\\(51300.00\\)",
+      "\\(62700.00\\)",
+      "\\(57000.00\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 100000 \\times \\left(1 - \\frac{27}{100}\\right)^2 \\approx 53290.0000\\)",
+        "explanation": "Set up the compound depreciation formula to solve for the principal value.",
+        "workingOut": "\\(A = P(1 - r)^n \\implies 40834 = P(1 - 0.08)^\\{4\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{11}{100}\\right)^3 \\approx 37567.7980\\)",
+        "explanation": "Isolate the principal variable by dividing the final value by the decay factor.",
+        "workingOut": "\\(\\(P = \\frac\\{40834\\}\\{(0.83)^\\{4\\}\\}\\) (using the specific rate)\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 100000 - V_5 \\approx 62432.20\\)",
+        "explanation": "Evaluate the quotient to determine the initial value.",
+        "workingOut": "\\(P = \\frac\\{40834\\}\\{0.716393\\} \\approx 57000.00\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "65553.81",
-      "56188.98",
-      "68675.42",
-      "62432.20"
     ]
   },
   {
@@ -3946,30 +3946,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 110000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 28\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 11.5\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "70473.58",
+    "question": "A commercial construction excavator is purchased for \\( 248000 \\) dollars and depreciates to a salvage value of \\( 91943 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
+    "a": "18.0%",
+    "opts": [
+      "\\(18.0%\\)",
+      "\\(19.8%\\)",
+      "\\(18.9%\\)",
+      "\\(16.2%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 110000 \\times \\left(1 - \\frac{28}{100}\\right)^2 \\approx 57024.0000\\)",
+        "explanation": "Set up the compound depreciation equation.",
+        "workingOut": "\\(91943 = 248000 \\times (1 - r)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{11.5}{100}\\right)^3 \\approx 39526.4208\\)",
+        "explanation": "Solve for the term \\( (1-r) \\) by dividing and taking the n-th root.",
+        "workingOut": "\\(1 - r = \\sqrt[5]\\{\\frac\\{91943\\}\\{248000\\}\\} = \\left(\\frac\\{91943\\}\\{248000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 110000 - V_5 \\approx 70473.58\\)",
+        "explanation": "Calculate the value of r and convert it to a percentage.",
+        "workingOut": "\\(r = 1 - \\left(\\frac\\{91943\\}\\{248000\\}\\right)^\\{\\frac\\{1\\}\\{5\\}\\} \\approx 0.18 \\implies r \\approx 18.0%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "70473.58",
-      "77520.94",
-      "73997.26",
-      "63426.22"
     ]
   },
   {
@@ -3978,30 +3978,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 120000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 29\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 12\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "78776.40",
+    "question": "An operator purchases a CNC milling machine for \\( 89000 \\) dollars. The asset depreciates at \\( 15\\% \\) p.a. compounded annually under the reducing balance method. Using logarithms, calculate the number of years it will take for the asset's value to drop below \\( 35600 \\) dollars for the first time. Correct to one decimal place.",
+    "a": "5.6",
+    "opts": [
+      "\\(5.0\\)",
+      "\\(5.9\\)",
+      "\\(6.2\\)",
+      "\\(5.6\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 120000 \\times \\left(1 - \\frac{29}{100}\\right)^2 \\approx 60492.0000\\)",
+        "explanation": "Formulate the compound depreciation inequality.",
+        "workingOut": "\\(89000 \\times (1 - 0.15)^n \\le 35600\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{12}{100}\\right)^3 \\approx 41223.6042\\)",
+        "explanation": "Take the natural logarithm of both sides to solve for the exponent.",
+        "workingOut": "\\(n \\ge \\frac\\{\\ln\\left(\\frac\\{35600\\}\\{89000\\}\\right)\\}\\{\\ln(0.85)\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 120000 - V_5 \\approx 78776.40\\)",
+        "explanation": "Perform the logarithmic division and round to one decimal place.",
+        "workingOut": "\\(n \\ge \\frac\\{-0.9163\\}\\{-0.1625\\} \\approx 5.6\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "78776.40",
-      "86654.04",
-      "70898.76",
-      "82715.22"
     ]
   },
   {
@@ -4010,30 +4010,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 130000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 30\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 12.5\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "87325.98",
+    "question": "A business acquires a automated packaging line for \\( 369000 \\) dollars. Due to heavy wear, the asset depreciates at \\( 13\\% \\) p.a. compounded annually for the first 2 years. After that, the depreciation rate decreases to \\( 9.1\\% \\) p.a. compounded annually for the next \\( 5 \\) years. Find the final book value of the asset at the end of Year \\( 7 \\), correct to the nearest cent.",
+    "a": "173334.21",
+    "opts": [
+      "\\(173334.21\\)",
+      "\\(190667.63\\)",
+      "\\(156000.79\\)",
+      "\\(182000.92\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 130000 \\times \\left(1 - \\frac{30}{100}\\right)^2 \\approx 63700.0000\\)",
+        "explanation": "Calculate the depreciated value at the end of the first stage (after 2 years).",
+        "workingOut": "\\(V_2 = 369000 \\times (1 - 0.13)^2 \\approx 279296.1000\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{12.5}{100}\\right)^3 \\approx 42674.0234\\)",
+        "explanation": "Apply the second depreciation rate to the intermediate value for the remaining period.",
+        "workingOut": "\\(V_\\{7\\} = V_2 \\times (1 - 0.091)^\\{5\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 130000 - V_5 \\approx 87325.98\\)",
+        "explanation": "Compute the final depreciated value.",
+        "workingOut": "\\(V_\\{7\\} \\approx 279296.10 \\times 0.620611 \\approx 173334.21\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "91692.28",
-      "78593.38",
-      "96058.58",
-      "87325.98"
     ]
   },
   {
@@ -4042,30 +4042,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 140000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 31\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 13\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "96108.14",
+    "question": "An operator buys a digital printing press for \\( 190000 \\) dollars. It depreciates at \\( 23\\% \\) p.a. compounded annually. At the end of Year 2, the owner invests \\( 47500 \\) dollars into major refurbishments, which is added directly to the book value. The asset continues to depreciate at the same rate for the next \\( 1 \\) years. Find its final book value at the end of Year \\( 3 \\), correct to the nearest cent.",
+    "a": "123316.27",
+    "opts": [
+      "\\(129482.08\\)",
+      "\\(135647.90\\)",
+      "\\(110984.64\\)",
+      "\\(123316.27\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 140000 \\times \\left(1 - \\frac{31}{100}\\right)^2 \\approx 66654.0000\\)",
+        "explanation": "Find the book value of the asset right before the refurbishment.",
+        "workingOut": "\\(V_2 = 190000 \\times (1 - 0.23)^2 \\approx 112651.0000\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{13}{100}\\right)^3 \\approx 43891.8590\\)",
+        "explanation": "Add the capital upgrade cost to obtain the new depreciable base.",
+        "workingOut": "\\(V_\\{\\text\\{new\\}\\} = 112651.00 + 47500 = 160151.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 140000 - V_5 \\approx 96108.14\\)",
+        "explanation": "Apply the depreciation for the final years to calculate the final book value.",
+        "workingOut": "\\(V_\\{3\\} = 160151.00 \\times (1 - 0.23)^\\{1\\} \\approx 123316.27\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "100913.55",
-      "86497.33",
-      "105718.95",
-      "96108.14"
     ]
   },
   {
@@ -4074,30 +4074,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 150000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 32\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 13.5\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "105109.19",
+    "question": "A company purchases a electric delivery van for \\( 86000 \\) dollars. They compare two depreciation methods over \\( 4 \\) years: Straight-line depreciation at \\( 18\\% \\) p.a. vs. Reducing balance depreciation at \\( 18\\% \\) p.a. compounded annually. Find the absolute difference in the asset's book value between the two methods at the end of the term, correct to the nearest cent.",
+    "a": "14802.47",
+    "opts": [
+      "\\(14802.47\\)",
+      "\\(15542.59\\)",
+      "\\(16282.72\\)",
+      "\\(13322.22\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 150000 \\times \\left(1 - \\frac{32}{100}\\right)^2 \\approx 69360.0000\\)",
+        "explanation": "Calculate the book value under the straight-line method.",
+        "workingOut": "\\(V_\\{\\text\\{SL\\}\\} = 86000 - (86000 \\times 0.18 \\times 4) = 24080.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{13.5}{100}\\right)^3 \\approx 44890.8064\\)",
+        "explanation": "Calculate the book value under the reducing balance method.",
+        "workingOut": "\\(V_\\{\\text\\{RB\\}\\} = 86000 \\times (1 - 0.18)^\\{4\\} \\approx 38882.4714\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 150000 - V_5 \\approx 105109.19\\)",
+        "explanation": "Calculate the absolute difference between the two values.",
+        "workingOut": "\\(\\text\\{Difference\\} = |38882.47 - 24080.00| \\approx 14802.47\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "115620.11",
-      "105109.19",
-      "110364.65",
-      "94598.27"
     ]
   },
   {
@@ -4106,30 +4106,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 160000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 33\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 14\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "114315.91",
+    "question": "A fleet operator buys a hospital ventilator array for \\( 182000 \\) dollars. The asset depreciates at \\( 16\\% \\) p.a. compounded annually on a reducing balance. If the general inflation rate remains constant at \\( 3.0\\% \\) p.a., find the real purchasing power value of the asset at the end of \\( 5 \\) years (adjusted for inflation, in today's dollars). Correct to the nearest cent.",
+    "a": "65657.10",
+    "opts": [
+      "\\(65657.10\\)",
+      "\\(72222.81\\)",
+      "\\(59091.39\\)",
+      "\\(68939.96\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 160000 \\times \\left(1 - \\frac{33}{100}\\right)^2 \\approx 71824.0000\\)",
+        "explanation": "Calculate the nominal future value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{nominal\\}\\} = 182000 \\times (1 - 0.16)^\\{5\\} \\approx 76114.5735\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{14}{100}\\right)^3 \\approx 45684.0861\\)",
+        "explanation": "Discount the nominal value back by the cumulative inflation rate to find its real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} = \\frac\\{V_\\{\\text\\{nominal\\}\\}\\}\\{(1 + 0.03)^\\{5\\}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 160000 - V_5 \\approx 114315.91\\)",
+        "explanation": "Compute the final real value.",
+        "workingOut": "\\(V_\\{\\text\\{real\\}\\} \\approx \\frac\\{76114.57\\}\\{1.159274\\} \\approx 65657.10\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "125747.50",
-      "114315.91",
-      "120031.71",
-      "102884.32"
     ]
   },
   {
@@ -4138,30 +4138,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 170000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 34\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 14.5\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "123715.55",
+    "question": "A commercial logistics hub buys a cold storage refrigeration system for \\( 82000 \\) dollars. The accounting department depreciates the asset at \\( 7\\% \\) p.a. compounded annually, while the actual resale market value of the asset drops by \\( 11.5\\% \\) p.a. compounded annually. Find the difference between the accounting book value and the actual market value after \\( 6 \\) years, correct to the nearest cent.",
+    "a": "13655.26",
+    "opts": [
+      "\\(13655.26\\)",
+      "\\(15020.79\\)",
+      "\\(12289.73\\)",
+      "\\(14338.02\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 170000 \\times \\left(1 - \\frac{34}{100}\\right)^2 \\approx 74052.0000\\)",
+        "explanation": "Calculate the accounting book value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{book\\}\\} = 82000 \\times (1 - 0.07)^\\{6\\} \\approx 53053.1950\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{14.5}{100}\\right)^3 \\approx 46284.4531\\)",
+        "explanation": "Calculate the actual market resale value of the asset.",
+        "workingOut": "\\(V_\\{\\text\\{market\\}\\} = 82000 \\times (1 - 0.115)^\\{6\\} \\approx 39397.9366\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 170000 - V_5 \\approx 123715.55\\)",
+        "explanation": "Subtract the market value from the book value to find the difference.",
+        "workingOut": "\\(\\text\\{Difference\\} = V_\\{\\text\\{book\\}\\} - V_\\{\\text\\{market\\}\\} \\approx 13655.26\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "129901.33",
-      "123715.55",
-      "111344.00",
-      "136087.11"
     ]
   },
   {
@@ -4170,30 +4170,30 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Compound depreciation",
-    "question": "Heavy machinery worth \\( 180000 \\) dollars depreciates under the reducing-balance method. Due to high wear, the rate is \\( 35\\% \\) p.a. for the first \\( 2 \\) years, and then drops to \\( 15\\% \\) p.a. for the next \\( 3 \\) years. Find the total depreciation amount (loss of value) over the \\( 5 \\)-year period. Correct to the nearest cent.",
-    "a": "133295.79",
+    "question": "An industrial chemical reactor contains \\( 28000 \\) liters of a chemical solution. Every year, \\( 7840 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
+    "a": "10.03%",
+    "opts": [
+      "\\(10.03%\\)",
+      "\\(11.03%\\)",
+      "\\(10.53%\\)",
+      "\\(9.03%\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the value of the machinery after the first 2 years of high-wear depreciation.",
-        "workingOut": "\\(V_2 = 180000 \\times \\left(1 - \\frac{35}{100}\\right)^2 \\approx 76050.0000\\)",
+        "explanation": "Find the fractional reduction of concentration per replacement cycle.",
+        "workingOut": "\\(F = 1 - \\frac\\{7840\\}\\{28000\\} = 0.7200\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the final value after 3 additional years of normal-wear depreciation.",
-        "workingOut": "\\(V_5 = V_2 \\times \\left(1 - \\frac{15}{100}\\right)^3 \\approx 46704.2063\\)",
+        "explanation": "Calculate the concentration factor after n cycles of dilution.",
+        "workingOut": "\\(C = 1.00 \\times (0.7200)^\\{7\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the final value from the original purchase price to find the total loss of value.",
-        "workingOut": "\\(\\text{Total Depreciation} = 180000 - V_5 \\approx 133295.79\\)",
+        "explanation": "Convert to percentage and round to two decimal places.",
+        "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
         "graphData": null
       }
-    ],
-    "opts": [
-      "139960.58",
-      "119966.21",
-      "146625.37",
-      "133295.79"
     ]
   }
 ];
