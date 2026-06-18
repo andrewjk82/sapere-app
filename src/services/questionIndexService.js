@@ -200,7 +200,17 @@ export const rebuildChapterIndex = async (chapterId) => {
  * Admin session bootstrap: rebuild all indexes iff the question bank changed
  * outside the incremental hooks (legacy import tools bump sync_meta only).
  * Cost when in sync: 2 reads. Cost when stale: one full questions scan.
+ *
+ * COST GUARD: a sessionStorage flag ensures the full questions-collection
+ * scan runs at most ONCE per browser tab/session, even if the component
+ * mounts/unmounts multiple times or React Strict Mode double-invokes it.
+ * The flag is keyed by bankVersion so a real new seed import (which bumps
+ * sync_meta/questions.version) will still trigger a rebuild on the next
+ * hard-refresh / new tab — it just prevents the redundant re-scans within
+ * the same session.
  */
+const INDEX_SESSION_KEY = 'sapere:qindex:checkedVersion';
+
 export const ensureQuestionIndexFresh = async () => {
   try {
     const [versionSnap, metaSnap] = await Promise.all([
@@ -209,7 +219,29 @@ export const ensureQuestionIndexFresh = async () => {
     ]);
     const bankVersion = Number(versionSnap.data()?.version) || 0;
     const builtVersion = Number(metaSnap.data()?.builtVersion) || 0;
-    if (builtVersion >= bankVersion && metaSnap.exists()) return false;
+
+    // Already in sync — nothing to do.
+    if (builtVersion >= bankVersion && metaSnap.exists()) {
+      // Record the version we just confirmed so repeated mounts are instant.
+      try { sessionStorage.setItem(INDEX_SESSION_KEY, String(bankVersion)); } catch (_) { /* private mode */ }
+      return false;
+    }
+
+    // Already ran a rebuild for this bankVersion in this session — skip.
+    // This prevents multiple re-renders / HMR from each triggering their own
+    // full questions-collection scan.
+    try {
+      const checkedVersion = Number(sessionStorage.getItem(INDEX_SESSION_KEY) || 0);
+      if (checkedVersion >= bankVersion && bankVersion > 0) {
+        console.info('[questionIndex] skipping rebuild — already ran this session (version:', bankVersion, ')');
+        return false;
+      }
+    } catch (_) { /* sessionStorage unavailable — proceed */ }
+
+    // Mark this version as "being rebuilt" before the expensive scan so a
+    // concurrent invocation (React Strict Mode, rapid navigation) also bails.
+    try { sessionStorage.setItem(INDEX_SESSION_KEY, String(bankVersion)); } catch (_) { /* private mode */ }
+
     const chapters = await rebuildAllQuestionIndexes();
     console.info(`[questionIndex] rebuilt indexes for ${chapters} chapters`);
     return true;
