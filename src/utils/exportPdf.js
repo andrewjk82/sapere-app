@@ -54,6 +54,23 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers
   const headerLeft = year ? `${year} — ${chapterTitle || ''}` : (chapterTitle || '');
   const dateStr = new Date().toLocaleDateString('en-AU', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ', ' + new Date().toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
 
+  // Generate lined working space HTML
+  const workingLines = (numLines) => {
+    let html = '<div class="working-space">';
+    for (let i = 0; i < numLines; i++) {
+      html += '<div class="working-line"></div>';
+    }
+    html += '</div>';
+    return html;
+  };
+
+  // Determine number of working lines by difficulty
+  const getLineCount = (diff) => {
+    if (diff === 'easy') return 3;
+    if (diff === 'hard') return 12;
+    return 8; // medium
+  };
+
   let questionsHtml = '';
 
   questions.forEach((q, idx) => {
@@ -83,6 +100,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers
       q.subQuestions.forEach((sq, sIdx) => {
         const sqText = sq.question || sq.q || '';
         const sqAnswer = sq.answer ?? sq.a ?? '';
+        const sqDifficulty = sq.difficulty || difficulty;
         questionsHtml += `
           <div class="sub-question">
             <div class="sub-label">(${String.fromCharCode(97 + sIdx)})</div>
@@ -90,44 +108,49 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers
               <div class="question-text">${mathHtml(sqText)}</div>
         `;
 
-        // Sub-question MC options
-        if (sq.type === 'multiple_choice' && sq.options) {
-          questionsHtml += '<div class="options-grid">';
-          sq.options.forEach((opt, oIdx) => {
-            const optText = typeof opt === 'string' ? opt : opt.text || '';
-            const isCorrect = showAnswers && !isNaN(Number(sqAnswer)) && oIdx === Number(sqAnswer);
-            questionsHtml += `
-              <div class="option ${isCorrect ? 'correct' : ''}">
-                <span class="option-letter">${optLetter(oIdx)}.</span>
-                <span>${mathHtml(optText)}</span>
-                ${isCorrect ? '<span class="correct-mark">✓</span>' : ''}
-              </div>
-            `;
-          });
-          questionsHtml += '</div>';
-        }
-
-        // Sub-question answer
-        if (showAnswers && sqAnswer !== '' && sqAnswer != null) {
-          questionsHtml += `<div class="answer-box"><strong>Answer:</strong> ${mathHtml(String(sqAnswer))}</div>`;
-        }
-
-        // Sub-question solution steps
-        if (showAnswers && Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0) {
-          questionsHtml += '<div class="solution-steps">';
-          questionsHtml += '<div class="solution-title">Solution Steps:</div>';
-          sq.solutionSteps.forEach((step, si) => {
-            questionsHtml += `
-              <div class="step">
-                <span class="step-num">${si + 1}.</span>
-                <div class="step-content">
-                  ${step.explanation ? `<div class="step-explanation">${mathHtml(step.explanation)}</div>` : ''}
-                  ${step.workingOut ? `<div class="step-working">${mathHtml(step.workingOut)}</div>` : ''}
+        if (showAnswers) {
+          // Sub-question MC options (answer version)
+          if (sq.type === 'multiple_choice' && sq.options) {
+            questionsHtml += '<div class="options-grid">';
+            sq.options.forEach((opt, oIdx) => {
+              const optText = typeof opt === 'string' ? opt : opt.text || '';
+              const isCorrect = !isNaN(Number(sqAnswer)) && oIdx === Number(sqAnswer);
+              questionsHtml += `
+                <div class="option ${isCorrect ? 'correct' : ''}">
+                  <span class="option-letter">${optLetter(oIdx)}.</span>
+                  <span>${mathHtml(optText)}</span>
+                  ${isCorrect ? '<span class="correct-mark">✓</span>' : ''}
                 </div>
-              </div>
-            `;
-          });
-          questionsHtml += '</div>';
+              `;
+            });
+            questionsHtml += '</div>';
+          }
+
+          // Sub-question answer
+          if (sqAnswer !== '' && sqAnswer != null) {
+            questionsHtml += `<div class="answer-box"><strong>Answer:</strong> ${mathHtml(String(sqAnswer))}</div>`;
+          }
+
+          // Sub-question solution steps
+          if (Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0) {
+            questionsHtml += '<div class="solution-steps">';
+            questionsHtml += '<div class="solution-title">Solution Steps:</div>';
+            sq.solutionSteps.forEach((step, si) => {
+              questionsHtml += `
+                <div class="step">
+                  <span class="step-num">${si + 1}.</span>
+                  <div class="step-content">
+                    ${step.explanation ? `<div class="step-explanation">${mathHtml(step.explanation)}</div>` : ''}
+                    ${step.workingOut ? `<div class="step-working">${mathHtml(step.workingOut)}</div>` : ''}
+                  </div>
+                </div>
+              `;
+            });
+            questionsHtml += '</div>';
+          }
+        } else {
+          // Student version: lined working space for each sub-question
+          questionsHtml += workingLines(getLineCount(sqDifficulty));
         }
 
         questionsHtml += '</div></div>'; // close sub-content, sub-question
@@ -138,35 +161,45 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers
     // MC options (top-level)
     const isMC = type === 'multiple_choice' || (!q.subQuestions?.length && (q.options || []).length > 0);
     if (isMC && q.options) {
-      questionsHtml += '<div class="options-grid">';
-      q.options.forEach((opt, i) => {
-        const optText = typeof opt === 'string' ? opt : opt.text || '';
-        const correctIdx = Number(answer);
-        const isCorrect = showAnswers && !isNaN(correctIdx) && i === correctIdx;
-        questionsHtml += `
-          <div class="option ${isCorrect ? 'correct' : ''}">
-            <span class="option-letter">${optLetter(i)}.</span>
-            <span>${mathHtml(optText)}</span>
-            ${isCorrect ? '<span class="correct-mark">✓</span>' : ''}
-          </div>
-        `;
-      });
-      questionsHtml += '</div>';
+      if (showAnswers) {
+        // Answer version: show options with correct marked
+        questionsHtml += '<div class="options-grid">';
+        q.options.forEach((opt, i) => {
+          const optText = typeof opt === 'string' ? opt : opt.text || '';
+          const correctIdx = Number(answer);
+          const isCorrect = !isNaN(correctIdx) && i === correctIdx;
+          questionsHtml += `
+            <div class="option ${isCorrect ? 'correct' : ''}">
+              <span class="option-letter">${optLetter(i)}.</span>
+              <span>${mathHtml(optText)}</span>
+              ${isCorrect ? '<span class="correct-mark">✓</span>' : ''}
+            </div>
+          `;
+        });
+        questionsHtml += '</div>';
+      } else {
+        // Student version: lined working space instead of MC options
+        questionsHtml += workingLines(getLineCount(difficulty));
+      }
     }
 
     // Fill-in-the-blank
     if (type === 'fill_blank' && q.blanks) {
-      questionsHtml += '<div class="blanks-area">';
-      q.blanks.forEach((b) => {
-        questionsHtml += `
-          <div class="blank-item">
-            ${b.label ? `<span class="blank-label">${mathHtml(b.label)}</span>` : ''}
-            <span class="blank-box">________</span>
-            ${showAnswers && b.answer ? `<span class="blank-answer">(${mathHtml(String(b.answer))})</span>` : ''}
-          </div>
-        `;
-      });
-      questionsHtml += '</div>';
+      if (showAnswers) {
+        questionsHtml += '<div class="blanks-area">';
+        q.blanks.forEach((b) => {
+          questionsHtml += `
+            <div class="blank-item">
+              ${b.label ? `<span class="blank-label">${mathHtml(b.label)}</span>` : ''}
+              <span class="blank-box">________</span>
+              <span class="blank-answer">(${mathHtml(String(b.answer || ''))})</span>
+            </div>
+          `;
+        });
+        questionsHtml += '</div>';
+      } else {
+        questionsHtml += workingLines(getLineCount(difficulty));
+      }
     }
 
     // Answer line (for short answer / teacher review)
@@ -174,9 +207,9 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers
       questionsHtml += `<div class="answer-box"><strong>Answer:</strong> ${mathHtml(String(answer))}</div>`;
     }
 
-    // Answer space for student version (no answers)
-    if (!showAnswers && !isMC && type !== 'fill_blank') {
-      questionsHtml += '<div class="answer-space"></div>';
+    // Student version: working space for non-MC, non-fill-blank, non-subquestion questions
+    if (!showAnswers && !isMC && type !== 'fill_blank' && !(q.subQuestions && q.subQuestions.length > 0)) {
+      questionsHtml += workingLines(getLineCount(difficulty));
     }
 
     // Solution steps
@@ -367,10 +400,15 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, showAnswers
       font-weight: 600;
     }
 
-    .answer-space {
-      margin-top: 12px;
-      height: 60px;
-      border-bottom: 1px dashed #cbd5e1;
+    .working-space {
+      margin-top: 14px;
+      padding: 4px 0;
+    }
+
+    .working-line {
+      height: 28px;
+      border-bottom: 1px solid #cbd5e1;
+      width: 100%;
     }
 
     .solution-steps {
