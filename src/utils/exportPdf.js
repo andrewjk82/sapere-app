@@ -559,12 +559,46 @@ export const exportQuestionsPdf = (questions, meta, options = {}) => {
     alert('No questions to export');
     return;
   }
+  // Build a "skeleton" of each question by stripping numbers, LaTeX commands,
+  // and whitespace. Two questions sharing the same skeleton are considered
+  // variants of the same template (same wording, different numbers).
+  const skeleton = (q) => {
+    const text = q.question || q.q || '';
+    return text
+      .replace(/\\[a-zA-Z]+/g, '')       // strip LaTeX commands
+      .replace(/[{}$()\[\]]/g, '')       // strip delimiters
+      .replace(/[0-9]+([.,][0-9]+)*/g, '#') // replace all numbers with #
+      .replace(/\s+/g, ' ')             // normalise whitespace
+      .trim()
+      .toLowerCase();
+  };
 
-  // Shuffle and pick the requested count
-  validQuestions = shuffleArray(validQuestions);
-  if (count && count > 0 && count < validQuestions.length) {
-    validQuestions = validQuestions.slice(0, count);
+  // Shuffle the full pool first, then pick unique-template questions
+  const shuffled = shuffleArray(validQuestions);
+  const selected = [];
+  const usedSkeletons = new Set();
+  const targetCount = (count && count > 0) ? Math.min(count, shuffled.length) : shuffled.length;
+
+  for (const q of shuffled) {
+    if (selected.length >= targetCount) break;
+    const sk = skeleton(q);
+    if (usedSkeletons.has(sk)) continue; // skip duplicate template
+    usedSkeletons.add(sk);
+    selected.push(q);
   }
+
+  // If we couldn't fill the count with unique templates, allow some duplicates
+  // from the remaining pool (better to have some questions than too few)
+  if (selected.length < targetCount) {
+    for (const q of shuffled) {
+      if (selected.length >= targetCount) break;
+      if (!selected.includes(q)) {
+        selected.push(q);
+      }
+    }
+  }
+
+  validQuestions = selected;
 
   const html = buildPrintHtml(validQuestions, {
     chapterTitle: meta.chapterTitle || '',
