@@ -2150,17 +2150,25 @@ export const buildRatiosLesson = ({ audioBase = null } = {}) => {
 
     // ── Step 5 — Summary ─────────────────────────────────────────────────────
     {
-      narration: `<b>Summary — ratios in 3 rules.</b> ① Write quantities in the given order, separated by a colon. ② To find a fraction from a ratio $a:b$, the total is $a+b$ parts. ③ Simplify by dividing both terms by their HCF — just like a fraction.`,
+      narration: `<b>Summary — ratios in 3 rules.</b> ① Write quantities in the given order, separated by a colon. ② To find a fraction from a ratio $a:b$, the total is $a+b$ parts — watch the blocks show this visually. ③ Simplify by dividing both terms by their HCF — just like a fraction.`,
       speech: `Summary — three rules for ratios. Rule 1: write quantities in the given order, separated by a colon. Rule 2: to find a fraction from a ratio a to b, add the parts to get a plus b total. Rule 3: simplify by dividing both terms by their highest common factor — just like a fraction.`,
       audioUrl: audio(5),
       board: [
-        { type: 'workingOut', align: 'left', lines: [
-          { text: '① Order matters:  a : b  ≠  b : a', delay: 0.3, color: PRP, bold: true },
-          { text: '② Fraction from ratio  a : b  →  total = a + b parts', delay: 0.9, color: GRN, bold: true },
-          { math: `$$a : b \\implies \\text{fraction of } b = \\dfrac{b}{a+b}$$`, delay: 1.3, color: GRN },
-          { text: '③ Simplest form: divide both by HCF', delay: 1.9, color: AMB, bold: true },
-          { math: `$$625 : 575 \\div 25 = 25 : 23$$`, delay: 2.3, color: AMB },
+        { type: 'stepCards', cards: [
+          { title: 'Order matters', math: `$$a : b \\neq b : a$$`, color: PRP, delay: 0.0 },
+          { title: 'Fraction from ratio', math: `$$\\dfrac{b}{a+b}$$`, color: GRN, delay: 0.45 },
+          { title: 'Simplest form', math: `$$\\div \\text{HCF}$$`, color: AMB, delay: 0.9 },
         ]},
+        { type: 'ratioFractionVisual',
+          a: 2, b: 7, labelA: 'butter', labelB: 'flour',
+          colorA: AMB, colorB: '#a16207',
+          example: { a: 2, b: 7, label: 'flour fraction' },
+        },
+        { type: 'ratioSimplifySteps',
+          start: [625, 575], divisors: [5, 5], hcf: 25,
+          colorA: PRP, colorB: PNK,
+          labelA: 'males', labelB: 'females',
+        },
       ],
     },
 

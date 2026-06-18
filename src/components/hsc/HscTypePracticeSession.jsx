@@ -565,7 +565,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
               <span style={{ fontWeight: 900, marginRight: '8px', color: draft === String(i) ? '#7c3aed' : '#94a3b8' }}>
                 {String.fromCharCode(65 + i)}.
               </span>
-              <MathView content={String(opt)} inline style={{ display: 'inline' }} />
+              <MathView content={typeof opt === 'string' ? opt : (opt?.text ?? String(opt))} inline style={{ display: 'inline' }} />
             </button>
           ))}
         </div>

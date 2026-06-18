@@ -1417,6 +1417,233 @@ const RatioSimplifier = ({ a: initA = 625, b: initB = 575, colorA = '#7c3aed', c
   );
 };
 
+// ── Ratio → Fraction Visual ────────────────────────────────────────────────
+// Animated block diagram: a blocks (colorA) + b blocks (colorB), then
+// highlights b-blocks and derives the fraction b/(a+b).
+const RatioFractionVisual = ({
+  a = 2, b = 7,
+  labelA = 'A', labelB = 'B',
+  colorA = '#7c3aed', colorB = '#059669',
+  example = null, // optional: { a, b, fraction, label }
+}) => {
+  const total = a + b;
+  const BLOCK = 38, GAP = 5, MAX_BLOCKS = 12;
+  const displayA = Math.min(a, MAX_BLOCKS);
+  const displayB = Math.min(b, MAX_BLOCKS);
+  const displayTotal = displayA + displayB;
+
+  return (
+    <div style={{ fontFamily: FONT, display: 'flex', flexDirection: 'column', gap: 20, alignItems: 'center', width: '100%' }}>
+
+      {/* Rule label */}
+      <motion.div initial={{ opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
+        style={{ fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#9ca3af' }}>
+        Ratio → Fraction
+      </motion.div>
+
+      {/* Block strip */}
+      <div style={{ display: 'flex', gap: GAP, alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
+        {Array.from({ length: displayA }, (_, i) => (
+          <motion.div key={`a-${i}`}
+            initial={{ opacity: 0, scale: 0.4, y: -12 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.2 + i * 0.07, type: 'spring', stiffness: 380, damping: 20 }}
+            style={{ width: BLOCK, height: BLOCK, borderRadius: 8, background: colorA,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              color: '#fff', fontWeight: 900, fontSize: '0.8rem',
+              boxShadow: `0 3px 12px ${colorA}55` }} >
+            {labelA[0]}
+          </motion.div>
+        ))}
+        {/* divider */}
+        <motion.div initial={{ opacity: 0, scaleY: 0 }} animate={{ opacity: 1, scaleY: 1 }}
+          transition={{ delay: 0.2 + displayA * 0.07 + 0.1 }}
+          style={{ width: 2, height: BLOCK + 8, background: '#e5e7eb', borderRadius: 2, margin: '0 4px' }} />
+        {Array.from({ length: displayB }, (_, i) => (
+          <motion.div key={`b-${i}`}
+            initial={{ opacity: 0, scale: 0.4, y: -12 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.3 + displayA * 0.07 + i * 0.07, type: 'spring', stiffness: 380, damping: 20 }}
+            style={{ width: BLOCK, height: BLOCK, borderRadius: 8, background: colorB,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              color: '#fff', fontWeight: 900, fontSize: '0.8rem',
+              boxShadow: `0 3px 12px ${colorB}55` }} >
+            {labelB[0]}
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Labels under blocks */}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 + displayTotal * 0.07 }}
+        style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '1.1rem', fontWeight: 900, color: colorA }}>{a}</div>
+          <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af' }}>{labelA} parts</div>
+        </div>
+        <div style={{ fontSize: '1.3rem', color: '#d1d5db', fontWeight: 300 }}>+</div>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '1.1rem', fontWeight: 900, color: colorB }}>{b}</div>
+          <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af' }}>{labelB} parts</div>
+        </div>
+        <div style={{ fontSize: '1.3rem', color: '#d1d5db', fontWeight: 300 }}>=</div>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#374151' }}>{total}</div>
+          <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af' }}>total parts</div>
+        </div>
+      </motion.div>
+
+      {/* Arrow + fraction reveal */}
+      <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 + displayTotal * 0.07 + 0.2, type: 'spring', stiffness: 260, damping: 22 }}
+        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+        <div style={{ fontSize: '1.6rem', color: '#c4b5fd' }}>↓</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16, background: `linear-gradient(135deg, ${colorB}11, ${colorB}22)`,
+          border: `2px solid ${colorB}55`, borderRadius: 18, padding: '14px 28px' }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af', marginBottom: 4 }}>fraction of {labelB}</div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0 }}>
+              <div style={{ fontSize: '1.4rem', fontWeight: 900, color: colorB, lineHeight: 1.1 }}>{b}</div>
+              <div style={{ width: 40, height: 2.5, background: colorB, borderRadius: 2 }} />
+              <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#374151', lineHeight: 1.1 }}>{total}</div>
+            </div>
+          </div>
+          {example && (
+            <>
+              <div style={{ fontSize: '1rem', color: '#d1d5db' }}>→</div>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af', marginBottom: 4 }}>{example.label}</div>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0 }}>
+                  <div style={{ fontSize: '1.4rem', fontWeight: 900, color: colorB, lineHeight: 1.1 }}>{example.b}</div>
+                  <div style={{ width: 40, height: 2.5, background: colorB, borderRadius: 2 }} />
+                  <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#374151', lineHeight: 1.1 }}>{example.a + example.b}</div>
+                </div>
+              </div>
+            </>
+          )}
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
+// ── Ratio Simplify Steps ───────────────────────────────────────────────────
+// Shows a chain: 625:575 → (÷5) → 125:115 → (÷5) → 25:23
+// with animated pill steps and HCF note.
+const RatioSimplifySteps = ({
+  start = [625, 575],
+  divisors: divSteps = [5, 5],
+  hcf = 25,
+  colorA = '#7c3aed', colorB = '#f59e0b',
+  labelA = 'males', labelB = 'females',
+}) => {
+  // Build all steps
+  const chain = [start];
+  divSteps.forEach(d => {
+    const last = chain[chain.length - 1];
+    chain.push([last[0] / d, last[1] / d]);
+  });
+
+  return (
+    <div style={{ fontFamily: FONT, display: 'flex', flexDirection: 'column', gap: 18, alignItems: 'center', width: '100%' }}>
+
+      {/* Header */}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }}
+        style={{ fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#9ca3af' }}>
+        Simplify to lowest terms
+      </motion.div>
+
+      {/* Chain of ratio pills */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', justifyContent: 'center' }}>
+        {chain.map((step, i) => {
+          const isLast = i === chain.length - 1;
+          return (
+            <React.Fragment key={i}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.7 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: i * 0.55, type: 'spring', stiffness: 300, damping: 22 }}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: 8,
+                  background: isLast ? 'linear-gradient(135deg,#f0fdf4,#dcfce7)' : 'linear-gradient(135deg,#faf5ff,#f3f0ff)',
+                  border: `2px solid ${isLast ? '#86efac' : '#e9e2fb'}`,
+                  borderRadius: 18, padding: '12px 20px',
+                  boxShadow: isLast ? '0 6px 24px rgba(34,197,94,0.18)' : '0 4px 16px rgba(124,58,237,0.1)',
+                }}>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '0.65rem', fontWeight: 700, color: '#9ca3af', marginBottom: 2 }}>{labelA}</div>
+                  <div style={{ fontSize: '1.4rem', fontWeight: 900, color: colorA }}>{step[0]}</div>
+                </div>
+                <div style={{ fontSize: '1.2rem', fontWeight: 300, color: '#c4b5fd' }}>:</div>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '0.65rem', fontWeight: 700, color: '#9ca3af', marginBottom: 2 }}>{labelB}</div>
+                  <div style={{ fontSize: '1.4rem', fontWeight: 900, color: colorB }}>{step[1]}</div>
+                </div>
+                {isLast && (
+                  <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: i * 0.55 + 0.3, type: 'spring', stiffness: 400 }}
+                    style={{ fontSize: '0.75rem', fontWeight: 900, color: '#16a34a', background: '#bbf7d0', borderRadius: 20, padding: '3px 10px', marginLeft: 4 }}>
+                    ✓ simplest
+                  </motion.div>
+                )}
+              </motion.div>
+
+              {i < chain.length - 1 && (
+                <motion.div
+                  initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.55 + 0.25 }}
+                  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#7c3aed', background: '#ede9fe', borderRadius: 20, padding: '3px 10px' }}>÷{divSteps[i]}</div>
+                  <div style={{ fontSize: '1.1rem', color: '#c4b5fd' }}>→</div>
+                </motion.div>
+              )}
+            </React.Fragment>
+          );
+        })}
+      </div>
+
+      {/* HCF shortcut note */}
+      <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: chain.length * 0.55 }}
+        style={{ display: 'flex', alignItems: 'center', gap: 10, background: '#fffbeb', border: '1.5px solid #fde68a', borderRadius: 14, padding: '10px 18px' }}>
+        <div style={{ fontSize: '1.1rem' }}>💡</div>
+        <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#92400e' }}>
+          HCF of {start[0]} and {start[1]} = <strong>{hcf}</strong> — you can divide directly by {hcf} in one step!
+        </div>
+      </motion.div>
+
+      {/* Visual bar shrinking */}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: chain.length * 0.55 + 0.2 }}
+        style={{ width: '100%', maxWidth: 400 }}>
+        <div style={{ height: 32, borderRadius: 8, overflow: 'hidden', display: 'flex', gap: 2 }}>
+          {chain.map((step, i) => {
+            if (i !== chain.length - 1) return null;
+            const total = step[0] + step[1];
+            return (
+              <React.Fragment key={i}>
+                <motion.div initial={{ flex: 0 }} animate={{ flex: step[0] }}
+                  transition={{ delay: i * 0.55 + 0.1, duration: 0.6, ease: 'easeOut' }}
+                  style={{ background: colorA, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <span style={{ color: '#fff', fontWeight: 800, fontSize: '0.8rem' }}>{step[0]}</span>
+                </motion.div>
+                <motion.div initial={{ flex: 0 }} animate={{ flex: step[1] }}
+                  transition={{ delay: i * 0.55 + 0.2, duration: 0.6, ease: 'easeOut' }}
+                  style={{ background: colorB, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <span style={{ color: '#fff', fontWeight: 800, fontSize: '0.8rem' }}>{step[1]}</span>
+                </motion.div>
+              </React.Fragment>
+            );
+          })}
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
+          <span style={{ fontSize: '0.72rem', fontWeight: 700, color: colorA }}>{labelA}</span>
+          <span style={{ fontSize: '0.72rem', fontWeight: 700, color: colorB }}>{labelB}</span>
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
 // ── Percentage Grid ────────────────────────────────────────────────────────
 // 10×10 grid of 100 squares. The first `count` squares fill in left-to-right,
 // top-to-bottom so students can literally watch "X out of 100" being coloured.
@@ -1468,14 +1695,18 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'graph') inner = <div style={{ display: 'flex', justifyContent: 'center' }}><FunctionGraph {...item} /></div>;
   else if (item.type === 'valueTable') inner = <ValueTable rows={item.rows} />;
   else if (item.type === 'math') inner = (
-    <div style={{
-      padding: item.emphasis ? '18px 22px' : '8px', borderRadius: '16px',
-      background: item.highlightColor ? item.highlightColor : (item.emphasis ? 'linear-gradient(135deg,#faf5ff,#f3f0ff)' : 'transparent'),
-      border: item.emphasis || item.highlightColor ? '1px solid #e9e2fb' : 'none', textAlign: 'center',
-      boxShadow: item.emphasis || item.highlightColor ? '0 6px 18px rgba(124,58,237,0.06)' : 'none',
-    }}>
-      <MathView content={item.content} style={{ fontSize: '1.3rem', fontWeight: 700, color: '#1e1b4b' }} />
-    </div>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.93, y: 10 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ type: 'spring', stiffness: 320, damping: 24 }}
+      style={{
+        padding: item.emphasis ? '22px 28px' : '10px', borderRadius: '20px',
+        background: item.highlightColor ? item.highlightColor : (item.emphasis ? 'linear-gradient(135deg,#faf5ff,#f0ebff)' : 'transparent'),
+        border: item.emphasis || item.highlightColor ? '1.5px solid rgba(167,139,250,0.3)' : 'none', textAlign: 'center',
+        boxShadow: item.emphasis || item.highlightColor ? '0 8px 32px rgba(124,58,237,0.12), inset 0 1px 0 rgba(255,255,255,0.8)' : 'none',
+      }}>
+      <MathView content={item.content} style={{ fontSize: item.emphasis ? '1.5rem' : '1.3rem', fontWeight: 700, color: item.textColor || '#1e1b4b' }} />
+    </motion.div>
   );
   else if (item.type === 'mathRow') inner = (
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', alignItems: 'center' }}>
@@ -1499,6 +1730,8 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'ratioBar') inner = <RatioBar {...item} />;
   else if (item.type === 'ratioFamilyInteractive') inner = <RatioFamilyInteractive {...item} />;
   else if (item.type === 'ratioSimplifier') inner = <RatioSimplifier {...item} />;
+  else if (item.type === 'ratioFractionVisual') inner = <RatioFractionVisual {...item} />;
+  else if (item.type === 'ratioSimplifySteps') inner = <RatioSimplifySteps {...item} />;
   else if (item.type === 'percentGridRow') inner = <PercentGridRow {...item} />;
   else if (item.type === 'percentTableInteractive') inner = <PercentTableInteractive {...item} />;
   else if (item.type === 'workingOut') inner = <WorkingOut {...item} />;
@@ -1747,43 +1980,59 @@ const LessonPlayer = ({ lesson, onClose }) => {
                 variants={{ hidden: {}, show: { transition: { staggerChildren: 0.22, delayChildren: 0.08 } } }}
                 initial="hidden" animate="show"
                 style={{
-                  position: 'relative', display: 'flex', flexDirection: 'column', gap: '18px',
-                  background: 'rgba(255,255,255,0.96)', borderRadius: '26px', padding: '28px 26px',
-                  border: '1px solid rgba(167,139,250,0.18)',
-                  boxShadow: '0 40px 90px -28px rgba(124,58,237,0.4), 0 0 0 6px rgba(167,139,250,0.05)',
+                  position: 'relative', display: 'flex', flexDirection: 'column', gap: '20px',
+                  background: 'linear-gradient(160deg, rgba(255,255,255,0.98) 0%, rgba(248,245,255,0.97) 100%)',
+                  borderRadius: '28px', padding: '32px 28px',
+                  border: '1.5px solid rgba(167,139,250,0.22)',
+                  boxShadow: '0 50px 100px -30px rgba(124,58,237,0.35), 0 0 0 8px rgba(167,139,250,0.06), inset 0 1px 0 rgba(255,255,255,0.9)',
                 }}>
+                {/* subtle top accent line */}
+                <div style={{ position: 'absolute', top: 0, left: '10%', right: '10%', height: '2px', borderRadius: '0 0 4px 4px', background: 'linear-gradient(90deg, transparent, rgba(167,139,250,0.6), rgba(124,58,237,0.8), rgba(167,139,250,0.6), transparent)' }} />
                 {(step.board || []).map((item, i) => <BoardItem key={i} item={item} />)}
               </motion.div>
 
               {/* AI tutor chat bubble */}
-              <div style={{ display: 'flex', gap: '14px', alignItems: 'flex-end' }}>
-                <div style={{ position: 'relative', flexShrink: 0, width: '46px', height: '46px', borderRadius: '50%', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', boxShadow: '0 10px 24px rgba(124,58,237,0.4)' }}>
+              <div style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
+                {/* Avatar */}
+                <div style={{ position: 'relative', flexShrink: 0, width: '48px', height: '48px', borderRadius: '50%', background: 'linear-gradient(135deg,#c4b5fd,#7c3aed,#4f46e5)', color: '#fff', display: 'grid', placeItems: 'center', boxShadow: '0 12px 28px rgba(124,58,237,0.45), 0 0 0 3px rgba(167,139,250,0.25)', marginTop: '2px' }}>
                   <Sparkles size={20} fill="#fff" />
-                  {(speaking || hdLoading) && <span style={{ position: 'absolute', inset: '-5px', borderRadius: '50%', border: '2px solid #a78bfa', animation: 'lp-pulse 1.1s ease-out infinite' }} />}
+                  {(speaking || hdLoading) && <span style={{ position: 'absolute', inset: '-6px', borderRadius: '50%', border: '2px solid rgba(167,139,250,0.7)', animation: 'lp-pulse 1.1s ease-out infinite' }} />}
                 </div>
-                <motion.div key={`bub-${idx}`} initial={{ opacity: 0, y: 8, scale: 0.98 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ type: 'spring', stiffness: 280, damping: 22 }}
-                  style={{ position: 'relative', flex: 1, background: '#fff', borderRadius: '20px 20px 20px 6px', padding: '16px 20px', boxShadow: '0 16px 40px -10px rgba(124,58,237,0.22)', border: '1px solid rgba(167,139,250,0.16)' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '7px', marginBottom: '6px' }}>
-                    <span style={{ fontSize: '0.66rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7c3aed' }}>AI Tutor</span>
+                {/* Bubble */}
+                <motion.div key={`bub-${idx}`} initial={{ opacity: 0, y: 10, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ type: 'spring', stiffness: 300, damping: 24, delay: 0.1 }}
+                  style={{ position: 'relative', flex: 1, background: 'linear-gradient(135deg, #ffffff 0%, #fdfbff 100%)', borderRadius: '22px 22px 22px 6px', padding: '18px 22px', boxShadow: '0 20px 50px -12px rgba(124,58,237,0.2), 0 4px 16px rgba(0,0,0,0.04)', border: '1.5px solid rgba(167,139,250,0.2)' }}>
+                  {/* Header badge */}
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', marginBottom: '10px', background: 'linear-gradient(135deg,#f5f0ff,#ede9fe)', borderRadius: '999px', padding: '4px 12px 4px 8px', border: '1px solid rgba(167,139,250,0.3)' }}>
+                    <div style={{ width: '18px', height: '18px', borderRadius: '50%', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', display: 'grid', placeItems: 'center' }}>
+                      <Sparkles size={10} fill="#fff" />
+                    </div>
+                    <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#7c3aed' }}>AI Tutor</span>
                     {(speaking || hdLoading) && (
-                      <span style={{ display: 'inline-flex', gap: '3px', alignItems: 'center' }}>
+                      <span style={{ display: 'inline-flex', gap: '3px', alignItems: 'center', marginLeft: '2px' }}>
                         {[0, 1, 2].map((d) => <span key={d} style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#a78bfa', display: 'inline-block', animation: `lp-bounce 1s ${d * 0.15}s infinite ease-in-out` }} />)}
                       </span>
                     )}
                   </div>
-                  <div className="lp-narr" ref={renderMathIn} onClick={onTermClick} style={{ fontSize: '1.08rem', lineHeight: 1.7, fontWeight: 500, color: '#2e2553' }}
-                       dangerouslySetInnerHTML={{ __html: renderNarration(step.narration || '', glossary) }} />
+                  {/* Narration text */}
+                  <div className="lp-narr" ref={renderMathIn} onClick={onTermClick}
+                    style={{ fontSize: '1.05rem', lineHeight: 1.78, fontWeight: 500, color: '#1e1b4b', letterSpacing: '0.01em' }}
+                    dangerouslySetInnerHTML={{ __html: renderNarration(step.narration || '', glossary) }} />
                   {Object.keys(glossary).length > 0 && (
-                    <div style={{ marginTop: '8px', fontSize: '0.72rem', fontWeight: 700, color: '#a78bfa' }}>
-                      💡 Tap the <span style={{ borderBottom: '2px dotted #a78bfa' }}>underlined</span> words for a definition.
+                    <div style={{ marginTop: '10px', fontSize: '0.74rem', fontWeight: 700, color: '#9b72f5', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                      <span style={{ background: '#f0ebff', borderRadius: '6px', padding: '2px 8px', border: '1px solid rgba(167,139,250,0.3)' }}>
+                        💡 Tap <span style={{ borderBottom: '2px dotted #a78bfa' }}>underlined</span> words for a definition
+                      </span>
                     </div>
                   )}
                   {hdLoading && (
-                    <div style={{ marginTop: '8px', fontSize: '0.78rem', fontWeight: 700, color: '#7c3aed', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                    <div style={{ marginTop: '10px', fontSize: '0.78rem', fontWeight: 700, color: '#7c3aed', display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#f5f0ff', borderRadius: '8px', padding: '6px 10px' }}>
                       <span style={{ width: '12px', height: '12px', border: '2px solid #c4b5fd', borderTopColor: '#7c3aed', borderRadius: '50%', display: 'inline-block', animation: 'lp-spin 0.8s linear infinite' }} />
                       Preparing natural voice… (one-time download)
                     </div>
                   )}
+                  {/* tail */}
+                  <div style={{ position: 'absolute', left: '-8px', top: '18px', width: 0, height: 0, borderTop: '8px solid transparent', borderBottom: '8px solid transparent', borderRight: '8px solid rgba(167,139,250,0.2)' }} />
+                  <div style={{ position: 'absolute', left: '-6px', top: '19px', width: 0, height: 0, borderTop: '7px solid transparent', borderBottom: '7px solid transparent', borderRight: '7px solid #fdfbff' }} />
                 </motion.div>
               </div>
             </motion.div>
