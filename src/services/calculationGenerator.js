@@ -2562,6 +2562,75 @@ const calcMCQOptions = (answerStr) => {
     return shuffleArr([s, ...distractors]);
   }
 
+  // ── Yes / No answer ──────────────────────────────────────────
+  if (s === 'Yes' || s === 'No') {
+    return shuffleArr([s, s === 'Yes' ? 'No' : 'Yes', 'Sometimes', 'Cannot tell']);
+  }
+
+  // ── Remainder answer e.g. "7 r3" ─────────────────────────────
+  const remMatch = s.match(/^(\d+) r(\d+)$/);
+  if (remMatch) {
+    const q2 = parseInt(remMatch[1], 10);
+    const r2 = parseInt(remMatch[2], 10);
+    const variants = [
+      `${q2 + 1} r${r2}`, `${q2 - 1} r${r2}`,
+      `${q2} r${r2 + 1}`, `${q2 + 1} r${r2 + 1}`,
+    ].filter(v => !v.includes('-'));
+    const seen = new Set([s]);
+    const distractors = [];
+    for (const v of variants) {
+      if (!seen.has(v)) { seen.add(v); distractors.push(v); }
+      if (distractors.length >= 3) break;
+    }
+    return shuffleArr([s, ...distractors]);
+  }
+
+  // ── Time answer e.g. "3:00 pm", "10:45 am", "14:30" ─────────
+  const time12 = s.match(/^(\d{1,2}):(\d{2}) (am|pm)$/i);
+  if (time12) {
+    const h = parseInt(time12[1], 10);
+    const m = parseInt(time12[2], 10);
+    const ap = time12[3].toLowerCase();
+    const fmt = (hh, mm) => `${hh}:${String(mm).padStart(2, '0')} ${ap}`;
+    const variants = [
+      fmt(h, (m + 15) % 60), fmt(h, (m + 30) % 60),
+      fmt(h === 12 ? 1 : h + 1, m), fmt(Math.max(1, h - 1), m),
+    ].filter(v => v !== s);
+    const seen = new Set([s]);
+    const distractors = [];
+    for (const v of variants) {
+      if (!seen.has(v)) { seen.add(v); distractors.push(v); }
+      if (distractors.length >= 3) break;
+    }
+    return shuffleArr([s, ...distractors]);
+  }
+
+  const time24 = s.match(/^(\d{2}):(\d{2})$/);
+  if (time24) {
+    const h = parseInt(time24[1], 10);
+    const m = parseInt(time24[2], 10);
+    const fmt24 = (hh, mm) => `${String(hh % 24).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;
+    const variants = [fmt24(h, (m+15)%60), fmt24(h, (m+30)%60), fmt24((h+1)%24, m), fmt24((h+23)%24, m)].filter(v => v !== s);
+    const seen = new Set([s]);
+    const d = [];
+    for (const v of variants) { if (!seen.has(v)) { seen.add(v); d.push(v); } if (d.length >= 3) break; }
+    return shuffleArr([s, ...d]);
+  }
+
+  // ── Duration e.g. "2 hours", "1 hour", "90 minutes" ──────────
+  const durH = s.match(/^(\d+) hours?$/);
+  if (durH) {
+    const h = parseInt(durH[1], 10);
+    const variants = [h+1, h-1, h+2].filter(v => v > 0).map(v => `${v} hour${v === 1 ? '' : 's'}`);
+    return shuffleArr([s, ...variants.slice(0, 3)]);
+  }
+  const durM = s.match(/^(\d+) minutes?$/);
+  if (durM) {
+    const m = parseInt(durM[1], 10);
+    const variants = [m+5, m-5, m+10].filter(v => v > 0).map(v => `${v} minutes`);
+    return shuffleArr([s, ...variants.slice(0, 3)]);
+  }
+
   // ── Fallback: return empty (question stays as short_answer) ──
   return [];
 };
@@ -2580,7 +2649,7 @@ export const generateCalculationSet = (assignedTopics, count, year = 'Year 1', t
   }
 
   const yearNum = parseInt(String(year).replace(/[^0-9]/g, '')) || 99;
-  const useMCQ = yearNum >= 1 && yearNum <= 4;
+  const useMCQ = true; // all years use multiple choice
 
   const questions = [];
   for (let i = 0; i < count; i++) {
