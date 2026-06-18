@@ -705,8 +705,8 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
   <div class="cover-page">
     <div class="cover-top">
       <div class="cover-logo-text" style="line-height: 1.2;">
-        <span style="font-size: 1.4rem; font-weight: 900; display: block;">Sapere Aude</span>
-        <span style="font-size: 0.95rem; font-weight: 900; color: #7c3aed; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-top: 2px;">Academia</span>
+        <span style="font-size: 1.35rem; font-weight: 900; display: block; text-transform: uppercase; color: #7c3aed;">Sapere Aude</span>
+        <span style="font-size: 1.35rem; font-weight: 900; color: #7c3aed; letter-spacing: 0.05em; text-transform: uppercase; display: block; margin-top: 2px;">Academia</span>
       </div>
       <div class="cover-metadata">
         <div>${year || 'Mathematics'}</div>
@@ -717,8 +717,8 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
 
     <div class="cover-middle">
       <div class="cover-subject">Mathematics Assessment</div>
-      <div class="cover-title">${(chapterTitle || 'Exam Paper').replace(/^Chapter\s+\d+:\s*/i, '')}</div>
-      <div class="cover-subtitle">${year || ''}</div>
+      <div class="cover-title" style="margin-bottom: 8px;">${(chapterTitle || 'Exam Paper').replace(/^Chapter\s+\d+:\s*/i, '')}</div>
+      <div class="cover-subtitle" style="font-size: 1.4rem; font-weight: 700; color: #475569; margin-top: 4px;">${year || ''}</div>
     </div>
 
     <div>
