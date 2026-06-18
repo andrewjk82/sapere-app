@@ -5,33 +5,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 3 units of smart projector and 4 units of screen setup cost a combined total of \\(675\\text{ dollars}\\). Another order of 4 units of smart projector and 3 units of screen setup costs \\(767\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(149\\)",
+    "question": "Evelyn allocates a total capital of 25000 dollars into two different term deposits: government bonds yielding 5% interest per annum, and corporate debentures yielding 8% interest per annum. If the combined annual interest credited is exactly 1550.00 dollars, calculate the principal sum placed in the government bonds.",
+    "a": "\\(15000\\)",
     "opts": [
-      "\\(156\\)",
-      "\\(134\\)",
-      "\\(164\\)",
-      "\\(149\\)"
+      "\\(15000\\)",
+      "\\(16500\\)",
+      "\\(13500\\)",
+      "\\(15750\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Formulate variables representing the investment placed in government bonds (x) and corporate debentures (y).",
+        "workingOut": "\\(x + y = 25000\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 4y = 675 \\\\ 4x + 3y = 767 \\end{cases}\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 1550.00 \\implies 5x + 8y = 155000\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 9x + 12y = 2025 \\\\ 16x + 12y = 3068 \\end{cases}\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(5x + 8(25000 - x) = 155000\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((9 - 16)x = -1043 \\implies x = 149\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-3x = -45000 \\implies x = 15000\\)",
         "graphData": null
       }
     ]
@@ -42,33 +42,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(76\\%\\) concentrated solution to produce exactly \\(76\\text{ litres}\\) of a solution with a final concentration of \\(56.63\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(32\\)",
+    "question": "A university endowment fund splits a budget of 40000 dollars between green energy shares earning 4% annually and a municipal bond portfolio yielding 6% interest. If the total interest received at year-end is 1960.00 dollars, find the amount deposited into the green energy shares.",
+    "a": "\\(22000\\)",
     "opts": [
-      "\\(29\\)",
-      "\\(35\\)",
-      "\\(34\\)",
-      "\\(32\\)"
+      "\\(23100\\)",
+      "\\(22000\\)",
+      "\\(24200\\)",
+      "\\(19800\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 76\\)",
+        "explanation": "Formulate variables representing the investment placed in green energy shares (x) and municipal bonds (y).",
+        "workingOut": "\\(x + y = 40000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{76}{100}y = \\frac{56.63}{100} \\times 76 \\implies 30x + 76y = 4303.9\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 1960.00 \\implies 4x + 6y = 196000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 76(76 - x) = 4303.9\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(4x + 6(40000 - x) = 196000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 76)x = -1472.1 \\implies x = 32\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-2x = -44000 \\implies x = 22000\\)",
         "graphData": null
       }
     ]
@@ -79,33 +79,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(450\\text{ dollars}\\). If the store gives a \\(25\\%\\) discount on the electric guitar and a \\(20\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(345.35\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(293\\)",
+    "question": "Daniel distributes a retirement grant of 15000 dollars between a conservative index fund returning 3% per annum and a real estate trust returning 7% per annum. If his combined annual yield is 730.00 dollars, how much was invested in the index fund?",
+    "a": "\\(8000\\)",
     "opts": [
-      "\\(322\\)",
-      "\\(264\\)",
-      "\\(293\\)",
-      "\\(308\\)"
+      "\\(8000\\)",
+      "\\(8800\\)",
+      "\\(7200\\)",
+      "\\(8400\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 450\\)",
+        "explanation": "Formulate variables representing the investment placed in index fund (x) and real estate trust (y).",
+        "workingOut": "\\(x + y = 15000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{25}{100})x + (1 - \\frac{20}{100})y = 345.35 \\implies 0.75x + 0.80y = 345.35\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{3}{100}x + \\frac{7}{100}y = 730.00 \\implies 3x + 7y = 73000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.75x + 0.80(450 - x) = 345.35\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(3x + 7(15000 - x) = 73000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(-0.05x = -14.65 \\implies x = 293\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-4x = -32000 \\implies x = 8000\\)",
         "graphData": null
       }
     ]
@@ -116,33 +116,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Daniel sets up two separate commercial loans at BioSphere Research totaling \\(20844\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(4\\%\\) per annum, and Loan B is charged at \\(6\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1140.64\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(5500\\)",
+    "question": "An art dealer invests 30000 dollars in two projects: high-end lithograph collections yielding 5% p.a. and rare sculpture restorations yielding 9% p.a. If the combined interest at the end of the term is 2220.00 dollars, calculate the amount allocated to the lithographs.",
+    "a": "\\(12000\\)",
     "opts": [
-      "\\(5500\\)",
-      "\\(6050\\)",
-      "\\(4950\\)",
-      "\\(5775\\)"
+      "\\(12600\\)",
+      "\\(12000\\)",
+      "\\(13200\\)",
+      "\\(10800\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 20844\\)",
+        "explanation": "Formulate variables representing the investment placed in lithograph collections (x) and sculpture restorations (y).",
+        "workingOut": "\\(x + y = 30000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 1140.64 \\implies 4x + 6y = 114064\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{9}{100}y = 2220.00 \\implies 5x + 9y = 222000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(4x + 6(20844 - x) = 114064\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(5x + 9(30000 - x) = 222000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-2x = -11000 \\implies x = 5500\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-4x = -48000 \\implies x = 12000\\)",
         "graphData": null
       }
     ]
@@ -153,33 +153,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Amelia invests a total capital of \\(10615\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(5\\%\\) interest per annum, and corporate debentures yielding \\(9\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(819.35\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(3400\\)",
+    "question": "A cooperative dairy farm puts 50000 dollars into two commercial reserve funds. Fund A pays a return rate of 4.5% p.a., while Fund B pays 8.5% p.a. If the total earnings generated at the end of one year equal 3050.00 dollars, what sum was placed in Fund A?",
+    "a": "\\(30000\\)",
     "opts": [
-      "\\(3740\\)",
-      "\\(3400\\)",
-      "\\(3570\\)",
-      "\\(3060\\)"
+      "\\(27000\\)",
+      "\\(33000\\)",
+      "\\(30000\\)",
+      "\\(31500\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 10615\\)",
+        "explanation": "Formulate variables representing the investment placed in Fund A (x) and Fund B (y).",
+        "workingOut": "\\(x + y = 50000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{9}{100}y = 819.35 \\implies 5x + 9y = 81935\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{4.5}{100}x + \\frac{8.5}{100}y = 3050.00 \\implies 4.5x + 8.5y = 305000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 9(10615 - x) = 81935\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(4.5x + 8.5(50000 - x) = 305000\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-4x = -13600 \\implies x = 3400\\)",
+        "workingOut": "\\(-4x = -120000 \\implies x = 30000\\)",
         "graphData": null
       }
     ]
@@ -190,33 +190,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 2 units of smart projector and 5 units of screen setup cost a combined total of \\(1298\\text{ dollars}\\). Another order of 3 units of smart projector and 2 units of screen setup costs \\(1166\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(294\\)",
+    "question": "Charlotte splits 35000 dollars in start-up capital between biotech research bonds yielding 5.2% p.a. and e-commerce expansion stock yielding 7.6% p.a. If the combined annual dividend is 2180.00 dollars, determine the amount invested in biotech bonds.",
+    "a": "\\(20000\\)",
     "opts": [
-      "\\(265\\)",
-      "\\(323\\)",
-      "\\(309\\)",
-      "\\(294\\)"
+      "\\(21000\\)",
+      "\\(22000\\)",
+      "\\(20000\\)",
+      "\\(18000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Formulate variables representing the investment placed in biotech bonds (x) and e-commerce expansion (y).",
+        "workingOut": "\\(x + y = 35000\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 5y = 1298 \\\\ 3x + 2y = 1166 \\end{cases}\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{5.2}{100}x + \\frac{7.6}{100}y = 2180.00 \\implies 5.2x + 7.6y = 218000\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 4x + 10y = 2596 \\\\ 15x + 10y = 5830 \\end{cases}\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(5.2x + 7.6(35000 - x) = 218000\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((4 - 15)x = -3234 \\implies x = 294\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-2.3999999999999995x = -48000 \\implies x = 20000\\)",
         "graphData": null
       }
     ]
@@ -227,33 +227,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(84\\%\\) concentrated solution to produce exactly \\(141\\text{ litres}\\) of a solution with a final concentration of \\(50.68\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(87\\)",
+    "question": "To fund a local park restoration, a council splits a grant of 20000 dollars into two treasury accounts paying 4.8% and 6.4% interest respectively. If the total annual interest earned is 1080.00 dollars, find the amount allocated to the first account.",
+    "a": "\\(12500\\)",
     "opts": [
-      "\\(96\\)",
-      "\\(87\\)",
-      "\\(91\\)",
-      "\\(78\\)"
+      "\\(11250\\)",
+      "\\(13750\\)",
+      "\\(12500\\)",
+      "\\(13125\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 141\\)",
+        "explanation": "Formulate variables representing the investment placed in first account (x) and second account (y).",
+        "workingOut": "\\(x + y = 20000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{84}{100}y = \\frac{50.68}{100} \\times 141 \\implies 30x + 84y = 7145.9\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{4.8}{100}x + \\frac{6.4}{100}y = 1080.00 \\implies 4.8x + 6.4y = 108000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 84(141 - x) = 7145.9\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(4.8x + 6.4(20000 - x) = 108000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 84)x = -4698.1 \\implies x = 87\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-1.6000000000000005x = -20000 \\implies x = 12500\\)",
         "graphData": null
       }
     ]
@@ -264,33 +264,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(700\\text{ dollars}\\). If the store gives a \\(10\\%\\) discount on the electric guitar and a \\(30\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(579.60\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(448\\)",
+    "question": "A private school foundation divides 45000 dollars between a low-risk government security yielding 3.5% p.a. and a balanced commercial bond fund yielding 5.5% p.a. If the total interest return is 1975.00 dollars, find the sum placed in the government security.",
+    "a": "\\(25000\\)",
     "opts": [
-      "\\(470\\)",
-      "\\(403\\)",
-      "\\(493\\)",
-      "\\(448\\)"
+      "\\(26250\\)",
+      "\\(25000\\)",
+      "\\(27500\\)",
+      "\\(22500\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 700\\)",
+        "explanation": "Formulate variables representing the investment placed in government security (x) and balanced bond fund (y).",
+        "workingOut": "\\(x + y = 45000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{30}{100})y = 579.60 \\implies 0.90x + 0.70y = 579.60\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{3.5}{100}x + \\frac{5.5}{100}y = 1975.00 \\implies 3.5x + 5.5y = 197500\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.70(700 - x) = 579.60\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(3.5x + 5.5(45000 - x) = 197500\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.20x = 89.60 \\implies x = 448\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-2x = -50000 \\implies x = 25000\\)",
         "graphData": null
       }
     ]
@@ -301,33 +301,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Isabella sets up two separate commercial loans at Prime Enterprises totaling \\(21899\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(3\\%\\) per annum, and Loan B is charged at \\(7\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1284.93\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(6200\\)",
+    "question": "Amelia invests 28000 dollars in two agricultural projects: organic soil upgrades yielding 5% and automatic irrigation shares yielding 7.5%. If the combined interest at the end of the year is 1700.00 dollars, find the soil upgrade investment.",
+    "a": "\\(16000\\)",
     "opts": [
-      "\\(6200\\)",
-      "\\(6820\\)",
-      "\\(5580\\)",
-      "\\(6510\\)"
+      "\\(16000\\)",
+      "\\(17600\\)",
+      "\\(16800\\)",
+      "\\(14400\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 21899\\)",
+        "explanation": "Formulate variables representing the investment placed in soil upgrades (x) and irrigation shares (y).",
+        "workingOut": "\\(x + y = 28000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{7}{100}y = 1284.93 \\implies 3x + 7y = 128493\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{7.5}{100}y = 1700.00 \\implies 5x + 7.5y = 170000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(3x + 7(21899 - x) = 128493\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(5x + 7.5(28000 - x) = 170000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-4x = -24800 \\implies x = 6200\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-2.5x = -40000 \\implies x = 16000\\)",
         "graphData": null
       }
     ]
@@ -338,33 +338,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Matthew invests a total capital of \\(11230\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(6\\%\\) interest per annum, and corporate debentures yielding \\(8\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(820.40\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(3900\\)",
+    "question": "A technology studio sets aside 60000 dollars of its reserve capital in two cash deposits. The first pays 4.2% p.a. simple interest, and the second pays 6.8% p.a. If the total interest credited is 3170.00 dollars, what was the principal of the first deposit?",
+    "a": "\\(35000\\)",
     "opts": [
-      "\\(3900\\)",
-      "\\(4290\\)",
-      "\\(3510\\)",
-      "\\(4095\\)"
+      "\\(35000\\)",
+      "\\(38500\\)",
+      "\\(31500\\)",
+      "\\(36750\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 11230\\)",
+        "explanation": "Formulate variables representing the investment placed in first deposit (x) and second deposit (y).",
+        "workingOut": "\\(x + y = 60000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{8}{100}y = 820.40 \\implies 6x + 8y = 82040\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{4.2}{100}x + \\frac{6.8}{100}y = 3170.00 \\implies 4.2x + 6.8y = 317000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(6x + 8(11230 - x) = 82040\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(4.2x + 6.8(60000 - x) = 317000\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2x = -7800 \\implies x = 3900\\)",
+        "workingOut": "\\(-2.5999999999999996x = -91000 \\implies x = 35000\\)",
         "graphData": null
       }
     ]
@@ -375,33 +375,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 4 units of smart projector and 6 units of screen setup cost a combined total of \\(1018\\text{ dollars}\\). Another order of 4 units of smart projector and 4 units of screen setup costs \\(864\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(139\\)",
+    "question": "Benjamin splits a commercial loan of 18000 dollars into two equipment leasing funds. Fund X yields a return of 6% p.a., while Fund Y yields 9.5% p.a. If the combined annual dividend is 1360.00 dollars, calculate the amount allocated to Fund X.",
+    "a": "\\(10000\\)",
     "opts": [
-      "\\(146\\)",
-      "\\(125\\)",
-      "\\(153\\)",
-      "\\(139\\)"
+      "\\(9000\\)",
+      "\\(10500\\)",
+      "\\(11000\\)",
+      "\\(10000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Formulate variables representing the investment placed in Fund X (x) and Fund Y (y).",
+        "workingOut": "\\(x + y = 18000\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 6y = 1018 \\\\ 4x + 4y = 864 \\end{cases}\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{6}{100}x + \\frac{9.5}{100}y = 1360.00 \\implies 6x + 9.5y = 136000\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 16x + 24y = 4072 \\\\ 24x + 24y = 5184 \\end{cases}\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(6x + 9.5(18000 - x) = 136000\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((16 - 24)x = -1112 \\implies x = 139\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-3.5x = -35000 \\implies x = 10000\\)",
         "graphData": null
       }
     ]
@@ -412,33 +412,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(60\\%\\) concentrated solution to produce exactly \\(56\\text{ litres}\\) of a solution with a final concentration of \\(41.79\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(34\\)",
+    "question": "A retail company divides a surplus of 32000 dollars between treasury notes earning 5.5% and retail warehouse developments returning 8%. If the total return received at the end of the year is 2110.00 dollars, find the amount placed in treasury notes.",
+    "a": "\\(18000\\)",
     "opts": [
-      "\\(37\\)",
-      "\\(31\\)",
-      "\\(34\\)",
-      "\\(36\\)"
+      "\\(19800\\)",
+      "\\(18000\\)",
+      "\\(16200\\)",
+      "\\(18900\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 56\\)",
+        "explanation": "Formulate variables representing the investment placed in treasury notes (x) and retail developments (y).",
+        "workingOut": "\\(x + y = 32000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{60}{100}y = \\frac{41.79}{100} \\times 56 \\implies 30x + 60y = 2340.2\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{5.5}{100}x + \\frac{8}{100}y = 2110.00 \\implies 5.5x + 8y = 211000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 60(56 - x) = 2340.2\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(5.5x + 8(32000 - x) = 211000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 60)x = -1019.8 \\implies x = 34\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-2.5x = -45000 \\implies x = 18000\\)",
         "graphData": null
       }
     ]
@@ -449,33 +449,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(950\\text{ dollars}\\). If the store gives a \\(15\\%\\) discount on the electric guitar and a \\(25\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(772.80\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(603\\)",
+    "question": "Olivia divides 55000 dollars of savings between local infrastructure bonds returning 3.8% p.a. and tech index stocks yielding 6.2% p.a. If the total annual interest credit is 2642.00 dollars, calculate the principal sum in the infrastructure bonds.",
+    "a": "\\(32000\\)",
     "opts": [
-      "\\(633\\)",
-      "\\(603\\)",
-      "\\(663\\)",
-      "\\(543\\)"
+      "\\(33600\\)",
+      "\\(28800\\)",
+      "\\(35200\\)",
+      "\\(32000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 950\\)",
+        "explanation": "Formulate variables representing the investment placed in infrastructure bonds (x) and tech index stocks (y).",
+        "workingOut": "\\(x + y = 55000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 772.80 \\implies 0.85x + 0.75y = 772.80\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{3.8}{100}x + \\frac{6.2}{100}y = 2642.00 \\implies 3.8x + 6.2y = 264200\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.75(950 - x) = 772.80\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(3.8x + 6.2(55000 - x) = 264200\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 60.30 \\implies x = 603\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-2.4000000000000004x = -76800 \\implies x = 32000\\)",
         "graphData": null
       }
     ]
@@ -486,33 +486,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Ethan sets up two separate commercial loans at BioSphere Research totaling \\(22954\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(5\\%\\) per annum, and Loan B is charged at \\(8\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1629.32\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(6900\\)",
+    "question": "A family farm places a cash reserve of 22000 dollars in two interest-bearing bank deposits. Deposit A earns 4.5% simple interest p.a., and Deposit B earns 7.2%. If the total interest at the end of the first year is 1206.00 dollars, find the amount in Deposit A.",
+    "a": "\\(14000\\)",
     "opts": [
-      "\\(6900\\)",
-      "\\(7590\\)",
-      "\\(6210\\)",
-      "\\(7245\\)"
+      "\\(14700\\)",
+      "\\(14000\\)",
+      "\\(15400\\)",
+      "\\(12600\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 22954\\)",
+        "explanation": "Formulate variables representing the investment placed in Deposit A (x) and Deposit B (y).",
+        "workingOut": "\\(x + y = 22000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 1629.32 \\implies 5x + 8y = 162932\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{4.5}{100}x + \\frac{7.2}{100}y = 1206.00 \\implies 4.5x + 7.2y = 120600\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(5x + 8(22954 - x) = 162932\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(4.5x + 7.2(22000 - x) = 120600\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-3x = -20700 \\implies x = 6900\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-2.7x = -37800 \\implies x = 14000\\)",
         "graphData": null
       }
     ]
@@ -523,33 +523,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Abigail invests a total capital of \\(11845\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(7\\%\\) interest per annum, and corporate debentures yielding \\(7\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(829.15\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(4300\\)",
+    "question": "A shipping harbor trust allocates 48000 dollars between marine safety bonds returning 5.1% and automated logistics deposits returning 7.9%. If the total annual yield is 3008.00 dollars, how much was allocated to the marine safety bonds?",
+    "a": "\\(28000\\)",
     "opts": [
-      "\\(4515\\)",
-      "\\(3870\\)",
-      "\\(4730\\)",
-      "\\(4300\\)"
+      "\\(29400\\)",
+      "\\(25200\\)",
+      "\\(30800\\)",
+      "\\(28000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 11845\\)",
+        "explanation": "Formulate variables representing the investment placed in marine safety bonds (x) and logistics deposits (y).",
+        "workingOut": "\\(x + y = 48000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{7}{100}y = 829.15 \\implies 7x + 7y = 82915\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{5.1}{100}x + \\frac{7.9}{100}y = 3008.00 \\implies 5.1x + 7.9y = 300800\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 7(11845 - x) = 82915\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(5.1x + 7.9(48000 - x) = 300800\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-0x = 0 \\implies x = 4300\\)",
+        "workingOut": "\\(-2.8000000000000007x = -78400 \\implies x = 28000\\)",
         "graphData": null
       }
     ]
@@ -560,33 +560,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 3 units of smart projector and 3 units of screen setup cost a combined total of \\(1338\\text{ dollars}\\). Another order of 3 units of smart projector and 3 units of screen setup costs \\(1338\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(284\\)",
+    "question": "Logan invests 26000 dollars in two startup hubs: clean energy innovations yielding 4% p.a. and AI software testing yielding 6.5% p.a. If the total annual yield is 1315.00 dollars, calculate the amount allocated to clean energy innovations.",
+    "a": "\\(15000\\)",
     "opts": [
-      "\\(298\\)",
-      "\\(256\\)",
-      "\\(312\\)",
-      "\\(284\\)"
+      "\\(15000\\)",
+      "\\(16500\\)",
+      "\\(13500\\)",
+      "\\(15750\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Formulate variables representing the investment placed in clean energy innovations (x) and AI software testing (y).",
+        "workingOut": "\\(x + y = 26000\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 3y = 1338 \\\\ 3x + 3y = 1338 \\end{cases}\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{6.5}{100}y = 1315.00 \\implies 4x + 6.5y = 131500\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 9x + 9y = 4014 \\\\ 9x + 9y = 4014 \\end{cases}\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(4x + 6.5(26000 - x) = 131500\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((9 - 9)x = 0 \\implies x = 284\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-2.5x = -37500 \\implies x = 15000\\)",
         "graphData": null
       }
     ]
@@ -597,33 +597,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(68\\%\\) concentrated solution to produce exactly \\(121\\text{ litres}\\) of a solution with a final concentration of \\(37.85\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(96\\)",
+    "question": "A local forestry company puts 38000 dollars into two commercial tree-planting programs. Program A earns a return of 5.8% p.a., while Program B earns 8.2% p.a. If the total earnings generated at the end of the first year is 2588.00 dollars, find the amount in Program A.",
+    "a": "\\(22000\\)",
     "opts": [
-      "\\(106\\)",
-      "\\(101\\)",
-      "\\(96\\)",
-      "\\(86\\)"
+      "\\(23100\\)",
+      "\\(19800\\)",
+      "\\(24200\\)",
+      "\\(22000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 121\\)",
+        "explanation": "Formulate variables representing the investment placed in Program A (x) and Program B (y).",
+        "workingOut": "\\(x + y = 38000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{68}{100}y = \\frac{37.85}{100} \\times 121 \\implies 30x + 68y = 4579.9\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{5.8}{100}x + \\frac{8.2}{100}y = 2588.00 \\implies 5.8x + 8.2y = 258800\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 68(121 - x) = 4579.9\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(5.8x + 8.2(38000 - x) = 258800\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 68)x = -3648.1 \\implies x = 96\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-2.3999999999999995x = -52800 \\implies x = 22000\\)",
         "graphData": null
       }
     ]
@@ -634,33 +634,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(400\\text{ dollars}\\). If the store gives a \\(20\\%\\) discount on the electric guitar and a \\(20\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(320.00\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(258\\)",
+    "question": "A corporate marketing group splits a reserve budget of 42000 dollars between digital media bonds returning 3.6% p.a. and print publishing shares returning 5.6% p.a. If the total annual dividend is 1872.00 dollars, determine the amount invested in digital media bonds.",
+    "a": "\\(24000\\)",
     "opts": [
-      "\\(258\\)",
-      "\\(284\\)",
-      "\\(232\\)",
-      "\\(271\\)"
+      "\\(24000\\)",
+      "\\(21600\\)",
+      "\\(26400\\)",
+      "\\(25200\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 400\\)",
+        "explanation": "Formulate variables representing the investment placed in digital media bonds (x) and print publishing shares (y).",
+        "workingOut": "\\(x + y = 42000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{20}{100})y = 320.00 \\implies 0.80x + 0.80y = 320.00\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{3.6}{100}x + \\frac{5.6}{100}y = 1872.00 \\implies 3.6x + 5.6y = 187200\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.80(400 - x) = 320.00\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(3.6x + 5.6(42000 - x) = 187200\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.00x = 0.00 \\implies x = 258\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-1.9999999999999996x = -47999.99999999997 \\implies x = 24000\\)",
         "graphData": null
       }
     ]
@@ -671,33 +671,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Mila sets up two separate commercial loans at Prime Enterprises totaling \\(24009\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(4\\%\\) per annum, and Loan B is charged at \\(9\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1780.81\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(7600\\)",
+    "question": "A boutique hotel splits a grant of 12000 dollars into two treasury accounts paying 5% and 9% interest respectively. If the total annual interest earned is 800.00 dollars, find the amount allocated to the first account.",
+    "a": "\\(7000\\)",
     "opts": [
-      "\\(7980\\)",
-      "\\(6840\\)",
-      "\\(8360\\)",
-      "\\(7600\\)"
+      "\\(7350\\)",
+      "\\(6300\\)",
+      "\\(7700\\)",
+      "\\(7000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 24009\\)",
+        "explanation": "Formulate variables representing the investment placed in first account (x) and second account (y).",
+        "workingOut": "\\(x + y = 12000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{9}{100}y = 1780.81 \\implies 4x + 9y = 178081\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{9}{100}y = 800.00 \\implies 5x + 9y = 80000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(4x + 9(24009 - x) = 178081\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(5x + 9(12000 - x) = 80000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-5x = -38000 \\implies x = 7600\\)",
+        "explanation": "Solve the linear equation to isolate and find the value of x.",
+        "workingOut": "\\(-4x = -28000 \\implies x = 7000\\)",
         "graphData": null
       }
     ]
@@ -708,33 +708,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Michael invests a total capital of \\(12460\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(4\\%\\) interest per annum, and corporate debentures yielding \\(9\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(886.40\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(4700\\)",
+    "question": "A research laboratory foundation divides 58000 dollars between a low-risk government security yielding 4.4% p.a. and a balanced commercial bond fund yielding 6.4% p.a. If the total interest return is 3032.00 dollars, find the sum placed in the government security.",
+    "a": "\\(34000\\)",
     "opts": [
-      "\\(4935\\)",
-      "\\(5170\\)",
-      "\\(4230\\)",
-      "\\(4700\\)"
+      "\\(34000\\)",
+      "\\(37400\\)",
+      "\\(35700\\)",
+      "\\(30600\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 12460\\)",
+        "explanation": "Formulate variables representing the investment placed in government security (x) and balanced bond fund (y).",
+        "workingOut": "\\(x + y = 58000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{9}{100}y = 886.40 \\implies 4x + 9y = 88640\\)",
+        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
+        "workingOut": "\\(\\frac{4.4}{100}x + \\frac{6.4}{100}y = 3032.00 \\implies 4.4x + 6.4y = 303200\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 9(12460 - x) = 88640\\)",
+        "explanation": "Substitute y to solve the simultaneous equations for x.",
+        "workingOut": "\\(4.4x + 6.4(58000 - x) = 303200\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-5x = -23500 \\implies x = 4700\\)",
+        "workingOut": "\\(-2x = -68000 \\implies x = 34000\\)",
         "graphData": null
       }
     ]
@@ -745,33 +745,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 2 units of smart projector and 4 units of screen setup cost a combined total of \\(646\\text{ dollars}\\). Another order of 4 units of smart projector and 2 units of screen setup costs \\(710\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(129\\)",
+    "question": "An inventory invoice at NovaTech Solutions shows that 3 premium espresso machines and 5 commercial grinders cost a combined total of 850 dollars. Another order containing 4 premium espresso machines and 2 commercial grinders costs 760 dollars. Find the individual price of a premium espresso machine.",
+    "a": "\\(150\\)",
     "opts": [
-      "\\(129\\)",
-      "\\(142\\)",
-      "\\(116\\)",
-      "\\(135\\)"
+      "\\(135\\)",
+      "\\(165\\)",
+      "\\(150\\)",
+      "\\(158\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Define variables x and y for the individual unit prices of espresso machine and grinder.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{espresso machine} \\text{ and } y \\text{ be the price of the } \\text{grinder}.\\)",
         "graphData": null
       },
       {
         "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 4y = 646 \\\\ 4x + 2y = 710 \\end{cases}\\)",
+        "workingOut": "\\(\\begin{cases} 3x + 5y = 850 \\\\ 4x + 2y = 760 \\end{cases}\\)",
         "graphData": null
       },
       {
         "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 4x + 8y = 1292 \\\\ 16x + 8y = 2840 \\end{cases}\\)",
+        "workingOut": "\\(\\begin{cases} 6x + 10y = 1700 \\\\ 20x + 10y = 3800 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((4 - 16)x = -1548 \\implies x = 129\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((6 - 20)x = -2100 \\implies x = 150\\)",
         "graphData": null
       }
     ]
@@ -782,33 +782,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(76\\%\\) concentrated solution to produce exactly \\(186\\text{ litres}\\) of a solution with a final concentration of \\(54.73\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(86\\)",
+    "question": "A school purchases classroom technology: one invoice for 2 smart projectors and 4 interactive screens totals 800 dollars, while another for 3 smart projectors and 3 interactive screens totals 930 dollars. Calculate the individual unit price of a smart projector.",
+    "a": "\\(220\\)",
     "opts": [
-      "\\(86\\)",
-      "\\(95\\)",
-      "\\(77\\)",
-      "\\(90\\)"
+      "\\(231\\)",
+      "\\(198\\)",
+      "\\(242\\)",
+      "\\(220\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 186\\)",
+        "explanation": "Define variables x and y for the individual unit prices of smart projector and interactive screen.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{interactive screen}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{76}{100}y = \\frac{54.73}{100} \\times 186 \\implies 30x + 76y = 10179.8\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 2x + 4y = 800 \\\\ 3x + 3y = 930 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 76(186 - x) = 10179.8\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 6x + 12y = 2400 \\\\ 12x + 12y = 3720 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 76)x = -3956.2 \\implies x = 86\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((6 - 12)x = -1320 \\implies x = 220\\)",
         "graphData": null
       }
     ]
@@ -819,33 +819,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(650\\text{ dollars}\\). If the store gives a \\(25\\%\\) discount on the electric guitar and a \\(30\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(475.65\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(413\\)",
+    "question": "A gym ordering weight gear gets 4 commercial spin bikes and 3 adjustable benches for a total of 930 dollars. A second delivery of 5 spin bikes and 2 adjustable benches costs 1040 dollars. Determine the individual cost of a spin bike.",
+    "a": "\\(180\\)",
     "opts": [
-      "\\(372\\)",
-      "\\(454\\)",
-      "\\(413\\)",
-      "\\(434\\)"
+      "\\(198\\)",
+      "\\(162\\)",
+      "\\(180\\)",
+      "\\(189\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 650\\)",
+        "explanation": "Define variables x and y for the individual unit prices of spin bike and adjustable bench.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{spin bike} \\text{ and } y \\text{ be the price of the } \\text{adjustable bench}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{25}{100})x + (1 - \\frac{30}{100})y = 475.65 \\implies 0.75x + 0.70y = 475.65\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 4x + 3y = 930 \\\\ 5x + 2y = 1040 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.75x + 0.70(650 - x) = 475.65\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 8x + 6y = 1860 \\\\ 15x + 6y = 3120 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.05x = 20.65 \\implies x = 413\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((8 - 15)x = -1260 \\implies x = 180\\)",
         "graphData": null
       }
     ]
@@ -856,33 +856,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Jacob sets up two separate commercial loans at BioSphere Research totaling \\(25064\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(3\\%\\) per annum, and Loan B is charged at \\(6\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1254.84\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(8300\\)",
+    "question": "A music store buys performance gear for its lessons studio. The first purchase of 3 drum kits and 2 cymbal packs costs 1140 dollars. A second batch containing 2 drum kits and 5 cymbal packs costs 1200 dollars. Determine the individual unit price of a drum kit.",
+    "a": "\\(300\\)",
     "opts": [
-      "\\(8715\\)",
-      "\\(8300\\)",
-      "\\(9130\\)",
-      "\\(7470\\)"
+      "\\(315\\)",
+      "\\(270\\)",
+      "\\(330\\)",
+      "\\(300\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 25064\\)",
+        "explanation": "Define variables x and y for the individual unit prices of drum kit and cymbal pack.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drum kit} \\text{ and } y \\text{ be the price of the } \\text{cymbal pack}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{6}{100}y = 1254.84 \\implies 3x + 6y = 125484\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 3x + 2y = 1140 \\\\ 2x + 5y = 1200 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(3x + 6(25064 - x) = 125484\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 15x + 10y = 5700 \\\\ 4x + 10y = 2400 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-3x = -24900 \\implies x = 8300\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((15 - 4)x = 3300 \\implies x = 300\\)",
         "graphData": null
       }
     ]
@@ -893,33 +893,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Sofia invests a total capital of \\(13075\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(5\\%\\) interest per annum, and corporate debentures yielding \\(8\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(890.00\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(5200\\)",
+    "question": "An office manager buys workstation components: 5 ergonomic desks and 3 mesh chairs cost 1580 dollars. Another transaction for 4 ergonomic desks and 4 mesh chairs costs 1440 dollars. What is the individual unit price of an ergonomic desk?",
+    "a": "\\(250\\)",
     "opts": [
-      "\\(5460\\)",
-      "\\(4680\\)",
-      "\\(5720\\)",
-      "\\(5200\\)"
+      "\\(263\\)",
+      "\\(225\\)",
+      "\\(275\\)",
+      "\\(250\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 13075\\)",
+        "explanation": "Define variables x and y for the individual unit prices of ergonomic desk and mesh chair.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{ergonomic desk} \\text{ and } y \\text{ be the price of the } \\text{mesh chair}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 890.00 \\implies 5x + 8y = 89000\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 5x + 3y = 1580 \\\\ 4x + 4y = 1440 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 8(13075 - x) = 89000\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 20x + 12y = 6320 \\\\ 12x + 12y = 4320 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-3x = -15600 \\implies x = 5200\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((20 - 12)x = 2000 \\implies x = 250\\)",
         "graphData": null
       }
     ]
@@ -930,33 +930,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 4 units of smart projector and 5 units of screen setup cost a combined total of \\(2006\\text{ dollars}\\). Another order of 3 units of smart projector and 4 units of screen setup costs \\(1550\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(274\\)",
+    "question": "A restaurant buys kitchen essentials: 3 commercial blenders and 4 food processors cost a total of 660 dollars. A second purchase of 5 commercial blenders and 3 food processors costs 880 dollars. What is the unit cost of a commercial blender?",
+    "a": "\\(140\\)",
     "opts": [
-      "\\(247\\)",
-      "\\(288\\)",
-      "\\(301\\)",
-      "\\(274\\)"
+      "\\(140\\)",
+      "\\(154\\)",
+      "\\(126\\)",
+      "\\(147\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Define variables x and y for the individual unit prices of commercial blender and food processor.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{commercial blender} \\text{ and } y \\text{ be the price of the } \\text{food processor}.\\)",
         "graphData": null
       },
       {
         "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 5y = 2006 \\\\ 3x + 4y = 1550 \\end{cases}\\)",
+        "workingOut": "\\(\\begin{cases} 3x + 4y = 660 \\\\ 5x + 3y = 880 \\end{cases}\\)",
         "graphData": null
       },
       {
         "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 16x + 20y = 8024 \\\\ 15x + 20y = 7750 \\end{cases}\\)",
+        "workingOut": "\\(\\begin{cases} 9x + 12y = 1980 \\\\ 20x + 12y = 3520 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((16 - 15)x = 274 \\implies x = 274\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((9 - 20)x = -1540 \\implies x = 140\\)",
         "graphData": null
       }
     ]
@@ -967,33 +967,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(84\\%\\) concentrated solution to produce exactly \\(101\\text{ litres}\\) of a solution with a final concentration of \\(49.78\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(64\\)",
+    "question": "A shipping port orders automation equipment: 2 heavy-duty barcode scanners and 5 mobile terminal units cost 1550 dollars. A second order of 3 scanners and 4 terminal units costs 1800 dollars. Calculate the individual unit price of a scanner.",
+    "a": "\\(400\\)",
     "opts": [
-      "\\(58\\)",
-      "\\(70\\)",
-      "\\(64\\)",
-      "\\(67\\)"
+      "\\(360\\)",
+      "\\(440\\)",
+      "\\(400\\)",
+      "\\(420\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 101\\)",
+        "explanation": "Define variables x and y for the individual unit prices of scanner and terminal unit.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{scanner} \\text{ and } y \\text{ be the price of the } \\text{terminal unit}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{84}{100}y = \\frac{49.78}{100} \\times 101 \\implies 30x + 84y = 5027.8\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 2x + 5y = 1550 \\\\ 3x + 4y = 1800 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 84(101 - x) = 5027.8\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 8x + 20y = 6200 \\\\ 15x + 20y = 9000 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 84)x = -3456.2 \\implies x = 64\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((8 - 15)x = -2800 \\implies x = 400\\)",
         "graphData": null
       }
     ]
@@ -1004,33 +1004,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(900\\text{ dollars}\\). If the store gives a \\(10\\%\\) discount on the electric guitar and a \\(25\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(760.20\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(568\\)",
+    "question": "A laboratory orders chemistry apparatus: 4 digital scale plates and 5 magnetic stirrers cost 1185 dollars. A subsequent batch of 6 scale plates and 3 magnetic stirrers costs 1395 dollars. Determine the individual unit cost of a scale plate.",
+    "a": "\\(190\\)",
     "opts": [
-      "\\(511\\)",
-      "\\(568\\)",
-      "\\(625\\)",
-      "\\(596\\)"
+      "\\(200\\)",
+      "\\(190\\)",
+      "\\(209\\)",
+      "\\(171\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 900\\)",
+        "explanation": "Define variables x and y for the individual unit prices of scale plate and magnetic stirrer.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{scale plate} \\text{ and } y \\text{ be the price of the } \\text{magnetic stirrer}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{25}{100})y = 760.20 \\implies 0.90x + 0.75y = 760.20\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 4x + 5y = 1185 \\\\ 6x + 3y = 1395 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.75(900 - x) = 760.20\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 12x + 15y = 3555 \\\\ 30x + 15y = 6975 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.15x = 85.20 \\implies x = 568\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((12 - 30)x = -3420 \\implies x = 190\\)",
         "graphData": null
       }
     ]
@@ -1041,33 +1041,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Aria sets up two separate commercial loans at Prime Enterprises totaling \\(26119\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(5\\%\\) per annum, and Loan B is charged at \\(7\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1648.33\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(9000\\)",
+    "question": "A recording studio orders audio hardware: 3 dual-channel compressors and 4 multi-mic preamps cost 1480 dollars. A second invoice for 4 compressors and 2 preamps totals 1540 dollars. Find the unit cost of a compressor.",
+    "a": "\\(320\\)",
     "opts": [
-      "\\(8100\\)",
-      "\\(9900\\)",
-      "\\(9450\\)",
-      "\\(9000\\)"
+      "\\(336\\)",
+      "\\(288\\)",
+      "\\(352\\)",
+      "\\(320\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 26119\\)",
+        "explanation": "Define variables x and y for the individual unit prices of compressor and mic preamp.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{compressor} \\text{ and } y \\text{ be the price of the } \\text{mic preamp}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{7}{100}y = 1648.33 \\implies 5x + 7y = 164833\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 3x + 4y = 1480 \\\\ 4x + 2y = 1540 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(5x + 7(26119 - x) = 164833\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 6x + 8y = 2960 \\\\ 16x + 8y = 6160 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-2x = -18000 \\implies x = 9000\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((6 - 16)x = -3200 \\implies x = 320\\)",
         "graphData": null
       }
     ]
@@ -1078,33 +1078,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Alexander invests a total capital of \\(13690\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(6\\%\\) interest per annum, and corporate debentures yielding \\(7\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(902.30\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(5600\\)",
+    "question": "A clinic purchases ward monitors: 5 pulse oximeter arrays and 2 portable ECG displays cost 1590 dollars. A subsequent purchase of 3 oximeter arrays and 4 ECG displays costs 1220 dollars. What is the cost of a pulse oximeter array?",
+    "a": "\\(280\\)",
     "opts": [
-      "\\(5880\\)",
-      "\\(5600\\)",
-      "\\(6160\\)",
-      "\\(5040\\)"
+      "\\(294\\)",
+      "\\(308\\)",
+      "\\(280\\)",
+      "\\(252\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 13690\\)",
+        "explanation": "Define variables x and y for the individual unit prices of pulse oximeter array and ECG display.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{pulse oximeter array} \\text{ and } y \\text{ be the price of the } \\text{ECG display}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{7}{100}y = 902.30 \\implies 6x + 7y = 90230\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 5x + 2y = 1590 \\\\ 3x + 4y = 1220 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(6x + 7(13690 - x) = 90230\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 20x + 8y = 6360 \\\\ 6x + 8y = 2440 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-1x = -5600 \\implies x = 5600\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((20 - 6)x = 3920 \\implies x = 280\\)",
         "graphData": null
       }
     ]
@@ -1115,33 +1115,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 3 units of smart projector and 6 units of screen setup cost a combined total of \\(1959\\text{ dollars}\\). Another order of 4 units of smart projector and 3 units of screen setup costs \\(2027\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(419\\)",
+    "question": "A warehouse orders logistics assets: 4 heavy-duty plastic pallets and 3 steel hand trucks cost 865 dollars. A second batch containing 3 pallets and 5 hand trucks costs 855 dollars. Find the cost of a plastic pallet.",
+    "a": "\\(160\\)",
     "opts": [
-      "\\(440\\)",
-      "\\(461\\)",
-      "\\(377\\)",
-      "\\(419\\)"
+      "\\(160\\)",
+      "\\(176\\)",
+      "\\(144\\)",
+      "\\(168\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Define variables x and y for the individual unit prices of plastic pallet and steel hand truck.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{plastic pallet} \\text{ and } y \\text{ be the price of the } \\text{steel hand truck}.\\)",
         "graphData": null
       },
       {
         "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 6y = 1959 \\\\ 4x + 3y = 2027 \\end{cases}\\)",
+        "workingOut": "\\(\\begin{cases} 4x + 3y = 865 \\\\ 3x + 5y = 855 \\end{cases}\\)",
         "graphData": null
       },
       {
         "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 9x + 18y = 5877 \\\\ 24x + 18y = 12162 \\end{cases}\\)",
+        "workingOut": "\\(\\begin{cases} 20x + 15y = 4325 \\\\ 9x + 15y = 2565 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((9 - 24)x = -6285 \\implies x = 419\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((20 - 9)x = 1760 \\implies x = 160\\)",
         "graphData": null
       }
     ]
@@ -1152,33 +1152,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(60\\%\\) concentrated solution to produce exactly \\(166\\text{ litres}\\) of a solution with a final concentration of \\(47.35\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(70\\)",
+    "question": "An art center buys studio easels: 2 premium wooden easels and 4 metal drawing tables cost 820 dollars. A second invoice containing 5 wooden easels and 2 metal tables totals 1250 dollars. Determine the price of a wooden easel.",
+    "a": "\\(210\\)",
     "opts": [
-      "\\(77\\)",
-      "\\(70\\)",
-      "\\(63\\)",
-      "\\(74\\)"
+      "\\(210\\)",
+      "\\(231\\)",
+      "\\(189\\)",
+      "\\(221\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 166\\)",
+        "explanation": "Define variables x and y for the individual unit prices of wooden easel and metal table.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{wooden easel} \\text{ and } y \\text{ be the price of the } \\text{metal table}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{60}{100}y = \\frac{47.35}{100} \\times 166 \\implies 30x + 60y = 7860.1\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 2x + 4y = 820 \\\\ 5x + 2y = 1250 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 60(166 - x) = 7860.1\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 4x + 8y = 1640 \\\\ 20x + 8y = 5000 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 60)x = -2099.9 \\implies x = 70\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((4 - 20)x = -3360 \\implies x = 210\\)",
         "graphData": null
       }
     ]
@@ -1189,33 +1189,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(350\\text{ dollars}\\). If the store gives a \\(15\\%\\) discount on the electric guitar and a \\(20\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(291.15\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(223\\)",
+    "question": "A software office buys computer desks: 3 electric standing desks and 3 ergonomic chairs cost 1470 dollars. Another order of 4 standing desks and 2 chairs costs 1680 dollars. Find the unit price of a standing desk.",
+    "a": "\\(350\\)",
     "opts": [
-      "\\(201\\)",
-      "\\(223\\)",
-      "\\(234\\)",
-      "\\(245\\)"
+      "\\(350\\)",
+      "\\(315\\)",
+      "\\(385\\)",
+      "\\(368\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 350\\)",
+        "explanation": "Define variables x and y for the individual unit prices of standing desk and chair.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{standing desk} \\text{ and } y \\text{ be the price of the } \\text{chair}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{20}{100})y = 291.15 \\implies 0.85x + 0.80y = 291.15\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 3x + 3y = 1470 \\\\ 4x + 2y = 1680 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.80(350 - x) = 291.15\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 6x + 6y = 2940 \\\\ 12x + 6y = 5040 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.05x = 11.15 \\implies x = 223\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((6 - 12)x = -2100 \\implies x = 350\\)",
         "graphData": null
       }
     ]
@@ -1226,33 +1226,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Daniel sets up two separate commercial loans at BioSphere Research totaling \\(27174\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(4\\%\\) per annum, and Loan B is charged at \\(8\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1785.92\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(9700\\)",
+    "question": "A cycle team orders parts: 4 aerodynamic helmets and 2 carbon handlebars cost 1080 dollars. A second delivery of 3 helmets and 5 handlebars costs 1090 dollars. Calculate the unit price of an aerodynamic helmet.",
+    "a": "\\(230\\)",
     "opts": [
-      "\\(10185\\)",
-      "\\(9700\\)",
-      "\\(10670\\)",
-      "\\(8730\\)"
+      "\\(253\\)",
+      "\\(230\\)",
+      "\\(207\\)",
+      "\\(242\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 27174\\)",
+        "explanation": "Define variables x and y for the individual unit prices of aerodynamic helmet and handlebars.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{aerodynamic helmet} \\text{ and } y \\text{ be the price of the } \\text{handlebars}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{8}{100}y = 1785.92 \\implies 4x + 8y = 178592\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 4x + 2y = 1080 \\\\ 3x + 5y = 1090 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(4x + 8(27174 - x) = 178592\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 20x + 10y = 5400 \\\\ 6x + 10y = 2180 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-4x = -38800 \\implies x = 9700\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((20 - 6)x = 3220 \\implies x = 230\\)",
         "graphData": null
       }
     ]
@@ -1263,33 +1263,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Amelia invests a total capital of \\(14305\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(7\\%\\) interest per annum, and corporate debentures yielding \\(9\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1167.45\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(6000\\)",
+    "question": "A hardware shop stocks hand drills: 5 cordless rotary drills and 3 circular saw kits cost 1120 dollars. Another order of 4 cordless drills and 4 saw kits costs 1040 dollars. Find the unit price of a cordless rotary drill.",
+    "a": "\\(170\\)",
     "opts": [
-      "\\(6300\\)",
-      "\\(5400\\)",
-      "\\(6000\\)",
-      "\\(6600\\)"
+      "\\(187\\)",
+      "\\(153\\)",
+      "\\(179\\)",
+      "\\(170\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 14305\\)",
+        "explanation": "Define variables x and y for the individual unit prices of cordless drill and saw kit.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{cordless drill} \\text{ and } y \\text{ be the price of the } \\text{saw kit}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{9}{100}y = 1167.45 \\implies 7x + 9y = 116745\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 5x + 3y = 1120 \\\\ 4x + 4y = 1040 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 9(14305 - x) = 116745\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 20x + 12y = 4480 \\\\ 12x + 12y = 3120 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2x = -12000 \\implies x = 6000\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((20 - 12)x = 1360 \\implies x = 170\\)",
         "graphData": null
       }
     ]
@@ -1300,33 +1300,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 2 units of smart projector and 3 units of screen setup cost a combined total of \\(684\\text{ dollars}\\). Another order of 3 units of smart projector and 2 units of screen setup costs \\(896\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(264\\)",
+    "question": "A construction foreman buys tools: 2 demolition jackhammers and 4 industrial generators cost 1700 dollars. Another order for 3 jackhammers and 3 generators costs 1950 dollars. Find the unit price of a jackhammer.",
+    "a": "\\(450\\)",
     "opts": [
-      "\\(277\\)",
-      "\\(290\\)",
-      "\\(238\\)",
-      "\\(264\\)"
+      "\\(405\\)",
+      "\\(495\\)",
+      "\\(450\\)",
+      "\\(473\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Define variables x and y for the individual unit prices of jackhammer and generator.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{jackhammer} \\text{ and } y \\text{ be the price of the } \\text{generator}.\\)",
         "graphData": null
       },
       {
         "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 3y = 684 \\\\ 3x + 2y = 896 \\end{cases}\\)",
+        "workingOut": "\\(\\begin{cases} 2x + 4y = 1700 \\\\ 3x + 3y = 1950 \\end{cases}\\)",
         "graphData": null
       },
       {
         "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 4x + 6y = 1368 \\\\ 9x + 6y = 2688 \\end{cases}\\)",
+        "workingOut": "\\(\\begin{cases} 6x + 12y = 5100 \\\\ 12x + 12y = 7800 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((4 - 9)x = -1320 \\implies x = 264\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((6 - 12)x = -2700 \\implies x = 450\\)",
         "graphData": null
       }
     ]
@@ -1337,33 +1337,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(68\\%\\) concentrated solution to produce exactly \\(81\\text{ litres}\\) of a solution with a final concentration of \\(44.07\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(51\\)",
+    "question": "A coffee kiosk buys cafe tools: 4 electric milk frothers and 4 digital scales cost 780 dollars. A second delivery of 6 frothers and 2 scales costs 910 dollars. What is the unit cost of a milk frother?",
+    "a": "\\(130\\)",
     "opts": [
-      "\\(51\\)",
-      "\\(56\\)",
-      "\\(46\\)",
-      "\\(54\\)"
+      "\\(130\\)",
+      "\\(143\\)",
+      "\\(117\\)",
+      "\\(137\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 81\\)",
+        "explanation": "Define variables x and y for the individual unit prices of milk frother and scale.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{milk frother} \\text{ and } y \\text{ be the price of the } \\text{scale}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{68}{100}y = \\frac{44.07}{100} \\times 81 \\implies 30x + 68y = 3569.7\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 4x + 4y = 780 \\\\ 6x + 2y = 910 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 68(81 - x) = 3569.7\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 8x + 8y = 1560 \\\\ 24x + 8y = 3640 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 68)x = -1938.3 \\implies x = 51\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((8 - 24)x = -2080 \\implies x = 130\\)",
         "graphData": null
       }
     ]
@@ -1374,33 +1374,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(600\\text{ dollars}\\). If the store gives a \\(20\\%\\) discount on the electric guitar and a \\(30\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(457.80\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(378\\)",
+    "question": "A security firm installs sensors: 3 smart door locks and 5 infrared sensors cost 1555 dollars. A subsequent order of 5 smart door locks and 2 sensors costs 1800 dollars. Find the unit cost of a smart door lock.",
+    "a": "\\(310\\)",
     "opts": [
-      "\\(340\\)",
-      "\\(378\\)",
-      "\\(416\\)",
-      "\\(397\\)"
+      "\\(326\\)",
+      "\\(341\\)",
+      "\\(310\\)",
+      "\\(279\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 600\\)",
+        "explanation": "Define variables x and y for the individual unit prices of door lock and sensor.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{door lock} \\text{ and } y \\text{ be the price of the } \\text{sensor}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{30}{100})y = 457.80 \\implies 0.80x + 0.70y = 457.80\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 3x + 5y = 1555 \\\\ 5x + 2y = 1800 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.70(600 - x) = 457.80\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 6x + 10y = 3110 \\\\ 25x + 10y = 9000 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 37.80 \\implies x = 378\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((6 - 25)x = -5890 \\implies x = 310\\)",
         "graphData": null
       }
     ]
@@ -1411,33 +1411,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Isabella sets up two separate commercial loans at Prime Enterprises totaling \\(28229\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(3\\%\\) per annum, and Loan B is charged at \\(9\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1922.61\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(10300\\)",
+    "question": "A photography shop buys gear: 4 ring light stands and 3 wireless trigger remotes cost 1395 dollars. A subsequent batch of 3 light stands and 5 trigger remotes costs 1335 dollars. Find the price of a light stand.",
+    "a": "\\(270\\)",
     "opts": [
-      "\\(11330\\)",
-      "\\(10300\\)",
-      "\\(9270\\)",
-      "\\(10815\\)"
+      "\\(243\\)",
+      "\\(284\\)",
+      "\\(297\\)",
+      "\\(270\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 28229\\)",
+        "explanation": "Define variables x and y for the individual unit prices of light stand and trigger remote.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{light stand} \\text{ and } y \\text{ be the price of the } \\text{trigger remote}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{9}{100}y = 1922.61 \\implies 3x + 9y = 192261\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 4x + 3y = 1395 \\\\ 3x + 5y = 1335 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(3x + 9(28229 - x) = 192261\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 20x + 15y = 6975 \\\\ 9x + 15y = 4005 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-6x = -61800 \\implies x = 10300\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((20 - 9)x = 2970 \\implies x = 270\\)",
         "graphData": null
       }
     ]
@@ -1448,33 +1448,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Matthew invests a total capital of \\(14920\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(4\\%\\) interest per annum, and corporate debentures yielding \\(8\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(933.60\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(6500\\)",
+    "question": "A school garden buys tools: 5 organic composting bins and 2 copper watering cans cost 1430 dollars. A second order of 4 composting bins and 4 watering cans costs 1420 dollars. What is the price of a composting bin?",
+    "a": "\\(240\\)",
     "opts": [
-      "\\(6500\\)",
-      "\\(6825\\)",
-      "\\(7150\\)",
-      "\\(5850\\)"
+      "\\(216\\)",
+      "\\(264\\)",
+      "\\(240\\)",
+      "\\(252\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 14920\\)",
+        "explanation": "Define variables x and y for the individual unit prices of composting bin and watering can.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{composting bin} \\text{ and } y \\text{ be the price of the } \\text{watering can}.\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{8}{100}y = 933.60 \\implies 4x + 8y = 93360\\)",
+        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
+        "workingOut": "\\(\\begin{cases} 5x + 2y = 1430 \\\\ 4x + 4y = 1420 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 8(14920 - x) = 93360\\)",
+        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
+        "workingOut": "\\(\\begin{cases} 20x + 8y = 5720 \\\\ 8x + 8y = 2840 \\end{cases}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-4x = -26000 \\implies x = 6500\\)",
+        "explanation": "Subtract the equations to isolate and solve for x.",
+        "workingOut": "\\((20 - 8)x = 2880 \\implies x = 240\\)",
         "graphData": null
       }
     ]
@@ -1485,33 +1485,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 4 units of smart projector and 4 units of screen setup cost a combined total of \\(2184\\text{ dollars}\\). Another order of 4 units of smart projector and 4 units of screen setup costs \\(2184\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(409\\)",
+    "question": "A chemical plant at Apex Industries needs to mix a 10% concentrated saline chemical solution with a 50% concentrated saline solution to create a final mixture of exactly 100 litres. If the final concentration of the mixture is 38.00%, calculate the number of litres of the {conc1}% solution that must be used.",
+    "a": "\\(30\\)",
     "opts": [
-      "\\(429\\)",
-      "\\(409\\)",
-      "\\(450\\)",
-      "\\(368\\)"
+      "\\(27\\)",
+      "\\(32\\)",
+      "\\(33\\)",
+      "\\(30\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Define x and y as the volumes of the 10% solution and 50% solution. Write the total volume equation.",
+        "workingOut": "\\(x + y = 100\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 4y = 2184 \\\\ 4x + 4y = 2184 \\end{cases}\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{10}{100}x + \\frac{50}{100}y = \\frac{38.00}{100} \\times 100 \\implies 10x + 50y = 3800.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 16x + 16y = 8736 \\\\ 16x + 16y = 8736 \\end{cases}\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(10x + 50(100 - x) = 3800.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((16 - 16)x = 0 \\implies x = 409\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((10 - 50)x = -1200.0 \\implies x = 30\\)",
         "graphData": null
       }
     ]
@@ -1522,33 +1522,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(76\\%\\) concentrated solution to produce exactly \\(146\\text{ litres}\\) of a solution with a final concentration of \\(46.38\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(94\\)",
+    "question": "A brewery fermentation specialist combines a 20% sugar malt extract solution with a 60% sugar malt extract solution to yield exactly 80 litres of fermentation base. If the targeted concentration of the combined batch is 35.00%, find the required volume of the {conc1}% sugar malt extract.",
+    "a": "\\(50\\)",
     "opts": [
-      "\\(94\\)",
-      "\\(103\\)",
-      "\\(85\\)",
-      "\\(99\\)"
+      "\\(50\\)",
+      "\\(55\\)",
+      "\\(45\\)",
+      "\\(53\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 146\\)",
+        "explanation": "Define x and y as the volumes of the 20% extract and 60% extract. Write the total volume equation.",
+        "workingOut": "\\(x + y = 80\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{76}{100}y = \\frac{46.38}{100} \\times 146 \\implies 30x + 76y = 6771.5\\)",
+        "workingOut": "\\(\\frac{20}{100}x + \\frac{60}{100}y = \\frac{35.00}{100} \\times 80 \\implies 20x + 60y = 2800.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 76(146 - x) = 6771.5\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(20x + 60(80 - x) = 2800.0\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 76)x = -4324.5 \\implies x = 94\\)",
+        "workingOut": "\\((20 - 60)x = -2000.0 \\implies x = 50\\)",
         "graphData": null
       }
     ]
@@ -1559,33 +1559,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(850\\text{ dollars}\\). If the store gives a \\(25\\%\\) discount on the electric guitar and a \\(25\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(637.50\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(533\\)",
+    "question": "An agricultural compound mixer needs to combine a 15% nitrogen fertilizer with a 45% nitrogen fertilizer to fill a tank of 120 litres. If the final combined batch must have a nitrogen concentration of 35.00%, calculate the volume of the {conc1}% nitrogen fertilizer to include.",
+    "a": "\\(40\\)",
     "opts": [
-      "\\(480\\)",
-      "\\(560\\)",
-      "\\(586\\)",
-      "\\(533\\)"
+      "\\(36\\)",
+      "\\(44\\)",
+      "\\(40\\)",
+      "\\(42\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 850\\)",
+        "explanation": "Define x and y as the volumes of the 15% fertilizer and 45% fertilizer. Write the total volume equation.",
+        "workingOut": "\\(x + y = 120\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{25}{100})x + (1 - \\frac{25}{100})y = 637.50 \\implies 0.75x + 0.75y = 637.50\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{15}{100}x + \\frac{45}{100}y = \\frac{35.00}{100} \\times 120 \\implies 15x + 45y = 4200.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.75x + 0.75(850 - x) = 637.50\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(15x + 45(120 - x) = 4200.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.00x = 0.00 \\implies x = 533\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((15 - 45)x = -1200.0 \\implies x = 40\\)",
         "graphData": null
       }
     ]
@@ -1596,33 +1596,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Ethan sets up two separate commercial loans at BioSphere Research totaling \\(29284\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(5\\%\\) per annum, and Loan B is charged at \\(6\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1647.04\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(11000\\)",
+    "question": "A pool technician mixes a pool chlorine compound at 5% concentration with a stronger 25% concentration compound to produce a total volume of 150 litres. If the target concentration for the swimming pool is 13.00%, find the volume of the {conc1}% pool chlorine used.",
+    "a": "\\(90\\)",
     "opts": [
-      "\\(9900\\)",
-      "\\(11550\\)",
-      "\\(12100\\)",
-      "\\(11000\\)"
+      "\\(99\\)",
+      "\\(90\\)",
+      "\\(95\\)",
+      "\\(81\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 29284\\)",
+        "explanation": "Define x and y as the volumes of the 5% compound and 25% compound. Write the total volume equation.",
+        "workingOut": "\\(x + y = 150\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{6}{100}y = 1647.04 \\implies 5x + 6y = 164704\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{25}{100}y = \\frac{13.00}{100} \\times 150 \\implies 5x + 25y = 1950.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(5x + 6(29284 - x) = 164704\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(5x + 25(150 - x) = 1950.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-1x = -11000 \\implies x = 11000\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((5 - 25)x = -1800.0 \\implies x = 90\\)",
         "graphData": null
       }
     ]
@@ -1633,33 +1633,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Abigail invests a total capital of \\(15535\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(5\\%\\) interest per annum, and corporate debentures yielding \\(7\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(949.45\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(6900\\)",
+    "question": "A metallurgical smelter melts a brass alloy containing 30% pure zinc with another containing 70% pure zinc to produce 60 kg of a brass mixture. If the zinc content of the output alloy is 53.33%, how many kg of the {conc1}% zinc alloy are required?",
+    "a": "\\(25\\)",
     "opts": [
-      "\\(6900\\)",
-      "\\(7590\\)",
-      "\\(7245\\)",
-      "\\(6210\\)"
+      "\\(26\\)",
+      "\\(23\\)",
+      "\\(25\\)",
+      "\\(28\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 15535\\)",
+        "explanation": "Define x and y as the volumes of the 30% alloy and 70% alloy. Write the total volume equation.",
+        "workingOut": "\\(x + y = 60\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{7}{100}y = 949.45 \\implies 5x + 7y = 94945\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{30}{100}x + \\frac{70}{100}y = \\frac{53.33}{100} \\times 60 \\implies 30x + 70y = 3199.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 7(15535 - x) = 94945\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(30x + 70(60 - x) = 3199.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2x = -13800 \\implies x = 6900\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((30 - 70)x = -1000.2 \\implies x = 25\\)",
         "graphData": null
       }
     ]
@@ -1670,33 +1670,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 3 units of smart projector and 5 units of screen setup cost a combined total of \\(1122\\text{ dollars}\\). Another order of 3 units of smart projector and 3 units of screen setup costs \\(978\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(254\\)",
+    "question": "A cosmetics manufacturer combines an essential oil batch with 8% lavender oil extract with a stronger batch containing 18% lavender oil extract to make a 50-litre mixture. If the final mixture must have a concentration of 14.00%, find the volume of the {conc1}% lavender extract.",
+    "a": "\\(20\\)",
     "opts": [
-      "\\(254\\)",
-      "\\(279\\)",
-      "\\(229\\)",
-      "\\(267\\)"
+      "\\(20\\)",
+      "\\(21\\)",
+      "\\(22\\)",
+      "\\(18\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Define x and y as the volumes of the 8% extract and 18% extract. Write the total volume equation.",
+        "workingOut": "\\(x + y = 50\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 5y = 1122 \\\\ 3x + 3y = 978 \\end{cases}\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{8}{100}x + \\frac{18}{100}y = \\frac{14.00}{100} \\times 50 \\implies 8x + 18y = 700.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 9x + 15y = 3366 \\\\ 15x + 15y = 4890 \\end{cases}\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(8x + 18(50 - x) = 700.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((9 - 15)x = -1524 \\implies x = 254\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((8 - 18)x = -200.0 \\implies x = 20\\)",
         "graphData": null
       }
     ]
@@ -1707,33 +1707,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(84\\%\\) concentrated solution to produce exactly \\(61\\text{ litres}\\) of a solution with a final concentration of \\(53.02\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(35\\)",
+    "question": "A paint plant dilutes a high-density pigment base. They combine a 12% density pigment paint with a 32% density pigment paint to make 200 litres of paint. If the target density of the finished paint is 20.00%, calculate the volume of the {conc1}% density paint used.",
+    "a": "\\(120\\)",
     "opts": [
-      "\\(35\\)",
-      "\\(39\\)",
-      "\\(32\\)",
-      "\\(37\\)"
+      "\\(132\\)",
+      "\\(126\\)",
+      "\\(120\\)",
+      "\\(108\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 61\\)",
+        "explanation": "Define x and y as the volumes of the 12% paint and 32% paint. Write the total volume equation.",
+        "workingOut": "\\(x + y = 200\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{84}{100}y = \\frac{53.02}{100} \\times 61 \\implies 30x + 84y = 3234.2\\)",
+        "workingOut": "\\(\\frac{12}{100}x + \\frac{32}{100}y = \\frac{20.00}{100} \\times 200 \\implies 12x + 32y = 4000.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 84(61 - x) = 3234.2\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(12x + 32(200 - x) = 4000.0\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 84)x = -1889.8 \\implies x = 35\\)",
+        "workingOut": "\\((12 - 32)x = -2400.0 \\implies x = 120\\)",
         "graphData": null
       }
     ]
@@ -1744,33 +1744,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(800\\text{ dollars}\\). If the store gives a \\(10\\%\\) discount on the electric guitar and a \\(20\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(708.80\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(688\\)",
+    "question": "A food factory combines a light cane syrup of 10% sugar content with a heavy syrup of 40% sugar content to produce a 90-litre canning syrup. If the final syrup has a concentration of 25.00%, calculate the volume of the light cane syrup.",
+    "a": "\\(45\\)",
     "opts": [
-      "\\(722\\)",
-      "\\(619\\)",
-      "\\(757\\)",
-      "\\(688\\)"
+      "\\(45\\)",
+      "\\(41\\)",
+      "\\(47\\)",
+      "\\(50\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 800\\)",
+        "explanation": "Define x and y as the volumes of the 10% syrup and 40% syrup. Write the total volume equation.",
+        "workingOut": "\\(x + y = 90\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{20}{100})y = 708.80 \\implies 0.90x + 0.80y = 708.80\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{10}{100}x + \\frac{40}{100}y = \\frac{25.00}{100} \\times 90 \\implies 10x + 40y = 2250.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.80(800 - x) = 708.80\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(10x + 40(90 - x) = 2250.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 68.80 \\implies x = 688\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((10 - 40)x = -1350.0 \\implies x = 45\\)",
         "graphData": null
       }
     ]
@@ -1781,33 +1781,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Mila sets up two separate commercial loans at Prime Enterprises totaling \\(30339\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(4\\%\\) per annum, and Loan B is charged at \\(7\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1772.73\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(11700\\)",
+    "question": "A textile dye vat is filled by mixing a 25% concentrated dye agent with a 75% concentrated dye agent to produce 110 litres of dye solution. If the final dye concentration is 47.73%, how many litres of the {conc1}% concentrated dye agent are needed?",
+    "a": "\\(60\\)",
     "opts": [
-      "\\(12285\\)",
-      "\\(12870\\)",
-      "\\(11700\\)",
-      "\\(10530\\)"
+      "\\(63\\)",
+      "\\(60\\)",
+      "\\(66\\)",
+      "\\(54\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 30339\\)",
+        "explanation": "Define x and y as the volumes of the 25% dye and 75% dye. Write the total volume equation.",
+        "workingOut": "\\(x + y = 110\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{7}{100}y = 1772.73 \\implies 4x + 7y = 177273\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{25}{100}x + \\frac{75}{100}y = \\frac{47.73}{100} \\times 110 \\implies 25x + 75y = 5250.3\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(4x + 7(30339 - x) = 177273\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(25x + 75(110 - x) = 5250.3\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-3x = -35100 \\implies x = 11700\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((25 - 75)x = -2999.7 \\implies x = 60\\)",
         "graphData": null
       }
     ]
@@ -1818,33 +1818,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Michael invests a total capital of \\(16150\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(6\\%\\) interest per annum, and corporate debentures yielding \\(9\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1231.50\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(7400\\)",
+    "question": "A cleaning chemicals facility mixes a 15% industrial acid solution with a 50% acid solution to yield 70 litres of heavy-duty cleaner. If the concentration of the final cleaner is 35.00%, find the volume of the {conc1}% acid solution.",
+    "a": "\\(30\\)",
     "opts": [
-      "\\(7770\\)",
-      "\\(6660\\)",
-      "\\(8140\\)",
-      "\\(7400\\)"
+      "\\(33\\)",
+      "\\(30\\)",
+      "\\(32\\)",
+      "\\(27\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 16150\\)",
+        "explanation": "Define x and y as the volumes of the 15% acid and 50% acid. Write the total volume equation.",
+        "workingOut": "\\(x + y = 70\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{9}{100}y = 1231.50 \\implies 6x + 9y = 123150\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{15}{100}x + \\frac{50}{100}y = \\frac{35.00}{100} \\times 70 \\implies 15x + 50y = 2450.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(6x + 9(16150 - x) = 123150\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(15x + 50(70 - x) = 2450.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-3x = -22200 \\implies x = 7400\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((15 - 50)x = -1050.0 \\implies x = 30\\)",
         "graphData": null
       }
     ]
@@ -1855,33 +1855,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 2 units of smart projector and 6 units of screen setup cost a combined total of \\(1740\\text{ dollars}\\). Another order of 4 units of smart projector and 2 units of screen setup costs \\(1910\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(399\\)",
+    "question": "A fruit juice brand mixes a juice concentrate containing 10% fruit solids with another containing 30% fruit solids to make 140 litres of standard juice. If the final solids concentration is 18.57%, how many litres of the {conc1}% concentrate are needed?",
+    "a": "\\(80\\)",
     "opts": [
-      "\\(399\\)",
-      "\\(419\\)",
-      "\\(439\\)",
-      "\\(359\\)"
+      "\\(80\\)",
+      "\\(88\\)",
+      "\\(84\\)",
+      "\\(72\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Define x and y as the volumes of the 10% juice and 30% juice. Write the total volume equation.",
+        "workingOut": "\\(x + y = 140\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 6y = 1740 \\\\ 4x + 2y = 1910 \\end{cases}\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{10}{100}x + \\frac{30}{100}y = \\frac{18.57}{100} \\times 140 \\implies 10x + 30y = 2599.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 4x + 12y = 3480 \\\\ 24x + 12y = 11460 \\end{cases}\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(10x + 30(140 - x) = 2599.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((4 - 24)x = -7980 \\implies x = 399\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((10 - 30)x = -1600.2 \\implies x = 80\\)",
         "graphData": null
       }
     ]
@@ -1892,33 +1892,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(60\\%\\) concentrated solution to produce exactly \\(126\\text{ litres}\\) of a solution with a final concentration of \\(47.62\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(52\\)",
+    "question": "A dairy processor combines low-fat milk containing 18% cream with a higher fat milk containing 38% cream to fill a tank of 95 litres. If the final combined batch has a cream concentration of 28.53%, find the volume of the low-fat milk.",
+    "a": "\\(45\\)",
     "opts": [
-      "\\(52\\)",
-      "\\(57\\)",
       "\\(47\\)",
-      "\\(55\\)"
+      "\\(45\\)",
+      "\\(50\\)",
+      "\\(41\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 126\\)",
+        "explanation": "Define x and y as the volumes of the 18% milk and 38% milk. Write the total volume equation.",
+        "workingOut": "\\(x + y = 95\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{60}{100}y = \\frac{47.62}{100} \\times 126 \\implies 30x + 60y = 6000.1\\)",
+        "workingOut": "\\(\\frac{18}{100}x + \\frac{38}{100}y = \\frac{28.53}{100} \\times 95 \\implies 18x + 38y = 2710.3\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 60(126 - x) = 6000.1\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(18x + 38(95 - x) = 2710.3\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 60)x = -1559.9 \\implies x = 52\\)",
+        "workingOut": "\\((18 - 38)x = -899.7 \\implies x = 45\\)",
         "graphData": null
       }
     ]
@@ -1929,33 +1929,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(550\\text{ dollars}\\). If the store gives a \\(15\\%\\) discount on the electric guitar and a \\(30\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(436.45\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(343\\)",
+    "question": "A nursery mixes a 5% organic fertilizer liquid with a 15% organic fertilizer liquid to fill a tank of 130 litres. If the final fertilizer concentration is 10.00%, find the volume of the {conc1}% liquid.",
+    "a": "\\(65\\)",
     "opts": [
-      "\\(377\\)",
-      "\\(343\\)",
-      "\\(309\\)",
-      "\\(360\\)"
+      "\\(65\\)",
+      "\\(72\\)",
+      "\\(59\\)",
+      "\\(68\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 550\\)",
+        "explanation": "Define x and y as the volumes of the 5% liquid and 15% liquid. Write the total volume equation.",
+        "workingOut": "\\(x + y = 130\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{30}{100})y = 436.45 \\implies 0.85x + 0.70y = 436.45\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{15}{100}y = \\frac{10.00}{100} \\times 130 \\implies 5x + 15y = 1300.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.70(550 - x) = 436.45\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(5x + 15(130 - x) = 1300.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.15x = 51.45 \\implies x = 343\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((5 - 15)x = -650.0 \\implies x = 65\\)",
         "graphData": null
       }
     ]
@@ -1966,33 +1966,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Jacob sets up two separate commercial loans at BioSphere Research totaling \\(31394\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(3\\%\\) per annum, and Loan B is charged at \\(8\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1891.52\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(12400\\)",
+    "question": "A chemical company mixes a 20% concentrated cleaning chemical with a 40% concentrated cleaning chemical to make 75 litres of dilution. If the final chemical concentration is 30.67%, find the volume of the {conc1}% cleaning chemical.",
+    "a": "\\(35\\)",
     "opts": [
-      "\\(12400\\)",
-      "\\(11160\\)",
-      "\\(13020\\)",
-      "\\(13640\\)"
+      "\\(32\\)",
+      "\\(37\\)",
+      "\\(35\\)",
+      "\\(39\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 31394\\)",
+        "explanation": "Define x and y as the volumes of the 20% chemical and 40% chemical. Write the total volume equation.",
+        "workingOut": "\\(x + y = 75\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{8}{100}y = 1891.52 \\implies 3x + 8y = 189152\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{20}{100}x + \\frac{40}{100}y = \\frac{30.67}{100} \\times 75 \\implies 20x + 40y = 2300.3\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(3x + 8(31394 - x) = 189152\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(20x + 40(75 - x) = 2300.3\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-5x = -62000 \\implies x = 12400\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((20 - 40)x = -699.8 \\implies x = 35\\)",
         "graphData": null
       }
     ]
@@ -2003,33 +2003,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Sofia invests a total capital of \\(16765\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(7\\%\\) interest per annum, and corporate debentures yielding \\(8\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1263.20\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(7800\\)",
+    "question": "A cosmetics manufacturer combines an essential oil batch with 12% tea tree oil extract with a stronger batch containing 22% tea tree oil extract to make a 85-litre mixture. If the final mixture must have a concentration of 17.29%, find the volume of the {conc1}% tea tree extract.",
+    "a": "\\(40\\)",
     "opts": [
-      "\\(8190\\)",
-      "\\(7020\\)",
-      "\\(8580\\)",
-      "\\(7800\\)"
+      "\\(40\\)",
+      "\\(42\\)",
+      "\\(36\\)",
+      "\\(44\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 16765\\)",
+        "explanation": "Define x and y as the volumes of the 12% extract and 22% extract. Write the total volume equation.",
+        "workingOut": "\\(x + y = 85\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{8}{100}y = 1263.20 \\implies 7x + 8y = 126320\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{12}{100}x + \\frac{22}{100}y = \\frac{17.29}{100} \\times 85 \\implies 12x + 22y = 1469.6\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 8(16765 - x) = 126320\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(12x + 22(85 - x) = 1469.6\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-1x = -7800 \\implies x = 7800\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((12 - 22)x = -400.4 \\implies x = 40\\)",
         "graphData": null
       }
     ]
@@ -2040,33 +2040,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 4 units of smart projector and 3 units of screen setup cost a combined total of \\(1252\\text{ dollars}\\). Another order of 3 units of smart projector and 4 units of screen setup costs \\(1100\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(244\\)",
+    "question": "A paint plant dilutes a high-density pigment base. They combine a 10% density pigment paint with a 25% density pigment paint to make 160 litres of paint. If the target density of the finished paint is 15.63%, calculate the volume of the {conc1}% density paint used.",
+    "a": "\\(100\\)",
     "opts": [
-      "\\(244\\)",
-      "\\(268\\)",
-      "\\(220\\)",
-      "\\(256\\)"
+      "\\(90\\)",
+      "\\(110\\)",
+      "\\(105\\)",
+      "\\(100\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Define x and y as the volumes of the 10% paint and 25% paint. Write the total volume equation.",
+        "workingOut": "\\(x + y = 160\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 3y = 1252 \\\\ 3x + 4y = 1100 \\end{cases}\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{10}{100}x + \\frac{25}{100}y = \\frac{15.63}{100} \\times 160 \\implies 10x + 25y = 2500.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 16x + 12y = 5008 \\\\ 9x + 12y = 3300 \\end{cases}\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(10x + 25(160 - x) = 2500.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((16 - 9)x = 1708 \\implies x = 244\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((10 - 25)x = -1499.2 \\implies x = 100\\)",
         "graphData": null
       }
     ]
@@ -2077,33 +2077,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(68\\%\\) concentrated solution to produce exactly \\(191\\text{ litres}\\) of a solution with a final concentration of \\(43.33\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(124\\)",
+    "question": "A food factory combines a light cane syrup of 15% sugar content with a heavy syrup of 35% sugar content to produce a 105-litre canning syrup. If the final syrup has a concentration of 23.57%, calculate the volume of the light cane syrup.",
+    "a": "\\(60\\)",
     "opts": [
-      "\\(130\\)",
-      "\\(124\\)",
-      "\\(136\\)",
-      "\\(112\\)"
+      "\\(63\\)",
+      "\\(60\\)",
+      "\\(66\\)",
+      "\\(54\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 191\\)",
+        "explanation": "Define x and y as the volumes of the 15% syrup and 35% syrup. Write the total volume equation.",
+        "workingOut": "\\(x + y = 105\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{68}{100}y = \\frac{43.33}{100} \\times 191 \\implies 30x + 68y = 8276.0\\)",
+        "workingOut": "\\(\\frac{15}{100}x + \\frac{35}{100}y = \\frac{23.57}{100} \\times 105 \\implies 15x + 35y = 2474.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 68(191 - x) = 8276.0\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(15x + 35(105 - x) = 2474.8\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 68)x = -4712.0 \\implies x = 124\\)",
+        "workingOut": "\\((15 - 35)x = -1200.2 \\implies x = 60\\)",
         "graphData": null
       }
     ]
@@ -2114,33 +2114,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(800\\text{ dollars}\\). If the store gives a \\(20\\%\\) discount on the electric guitar and a \\(25\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(624.90\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(498\\)",
+    "question": "A textile dye vat is filled by mixing a 20% concentrated dye agent with a 50% concentrated dye agent to produce 115 litres of dye solution. If the final dye concentration is 30.43%, how many litres of the {conc1}% concentrated dye agent are needed?",
+    "a": "\\(75\\)",
     "opts": [
-      "\\(498\\)",
-      "\\(548\\)",
-      "\\(448\\)",
-      "\\(523\\)"
+      "\\(75\\)",
+      "\\(83\\)",
+      "\\(79\\)",
+      "\\(68\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 800\\)",
+        "explanation": "Define x and y as the volumes of the 20% dye and 50% dye. Write the total volume equation.",
+        "workingOut": "\\(x + y = 115\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{25}{100})y = 624.90 \\implies 0.80x + 0.75y = 624.90\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{20}{100}x + \\frac{50}{100}y = \\frac{30.43}{100} \\times 115 \\implies 20x + 50y = 3499.4\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.75(800 - x) = 624.90\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(20x + 50(115 - x) = 3499.4\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.05x = 24.90 \\implies x = 498\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((20 - 50)x = -2250.6 \\implies x = 75\\)",
         "graphData": null
       }
     ]
@@ -2151,33 +2151,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Aria sets up two separate commercial loans at Prime Enterprises totaling \\(32449\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(5\\%\\) per annum, and Loan B is charged at \\(9\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(2396.41\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(13100\\)",
+    "question": "A cleaning chemicals facility mixes a 15% industrial acid solution with a 45% acid solution to yield 65 litres of heavy-duty cleaner. If the concentration of the final cleaner is 31.15%, find the volume of the {conc1}% acid solution.",
+    "a": "\\(30\\)",
     "opts": [
-      "\\(13755\\)",
-      "\\(11790\\)",
-      "\\(14410\\)",
-      "\\(13100\\)"
+      "\\(33\\)",
+      "\\(30\\)",
+      "\\(27\\)",
+      "\\(32\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 32449\\)",
+        "explanation": "Define x and y as the volumes of the 15% acid and 45% acid. Write the total volume equation.",
+        "workingOut": "\\(x + y = 65\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{9}{100}y = 2396.41 \\implies 5x + 9y = 239641\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{15}{100}x + \\frac{45}{100}y = \\frac{31.15}{100} \\times 65 \\implies 15x + 45y = 2024.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(5x + 9(32449 - x) = 239641\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(15x + 45(65 - x) = 2024.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-4x = -52400 \\implies x = 13100\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((15 - 45)x = -900.3 \\implies x = 30\\)",
         "graphData": null
       }
     ]
@@ -2188,33 +2188,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Alexander invests a total capital of \\(17380\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(4\\%\\) interest per annum, and corporate debentures yielding \\(7\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(970.60\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(8200\\)",
+    "question": "A fruit juice brand mixes a juice concentrate containing 10% fruit solids with another containing 25% fruit solids to make 125 litres of juice. If the final solids concentration is 16.00%, how many litres of the {conc1}% concentrate are needed?",
+    "a": "\\(75\\)",
     "opts": [
-      "\\(8610\\)",
-      "\\(7380\\)",
-      "\\(9020\\)",
-      "\\(8200\\)"
+      "\\(75\\)",
+      "\\(83\\)",
+      "\\(68\\)",
+      "\\(79\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 17380\\)",
+        "explanation": "Define x and y as the volumes of the 10% juice and 25% juice. Write the total volume equation.",
+        "workingOut": "\\(x + y = 125\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{7}{100}y = 970.60 \\implies 4x + 7y = 97060\\)",
+        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
+        "workingOut": "\\(\\frac{10}{100}x + \\frac{25}{100}y = \\frac{16.00}{100} \\times 125 \\implies 10x + 25y = 2000.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 7(17380 - x) = 97060\\)",
+        "explanation": "Substitute y to eliminate variables and isolate x.",
+        "workingOut": "\\(10x + 25(125 - x) = 2000.0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-3x = -24600 \\implies x = 8200\\)",
+        "explanation": "Solve for x to find the volume of the first chemical solution.",
+        "workingOut": "\\((10 - 25)x = -1125.0 \\implies x = 75\\)",
         "graphData": null
       }
     ]
@@ -2225,33 +2225,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 3 units of smart projector and 4 units of screen setup cost a combined total of \\(1875\\text{ dollars}\\). Another order of 4 units of smart projector and 3 units of screen setup costs \\(2087\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(389\\)",
+    "question": "A commercial buyer at AeroLogistics buys a heavy-duty rotary printer and a companion cartridge deck for a combined list price of 600 dollars. If the vendor grants a 15% discount on the printer and a 25% discount on the cartridge deck, the final checkout price is 490.00 dollars. What was the original price of the heavy-duty rotary printer?",
+    "a": "\\(400\\)",
     "opts": [
-      "\\(350\\)",
-      "\\(408\\)",
-      "\\(428\\)",
-      "\\(389\\)"
+      "\\(400\\)",
+      "\\(440\\)",
+      "\\(360\\)",
+      "\\(420\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of rotary printer) and y (price of cartridge deck).",
+        "workingOut": "\\(x + y = 600\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 4y = 1875 \\\\ 4x + 3y = 2087 \\end{cases}\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 490.00 \\implies 0.85x + 0.75y = 490.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 9x + 12y = 5625 \\\\ 16x + 12y = 8348 \\end{cases}\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.85x + 0.75(600 - x) = 490.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((9 - 16)x = -2723 \\implies x = 389\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.10x = 40.00 \\implies x = 400\\)",
         "graphData": null
       }
     ]
@@ -2262,33 +2262,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(76\\%\\) concentrated solution to produce exactly \\(106\\text{ litres}\\) of a solution with a final concentration of \\(36.94\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(90\\)",
+    "question": "A photographer buys a professional camera body and an adjustable zoom lens for a total price of 450 dollars. The store runs a bundle promotion offering a 10% discount on the camera body and a 20% discount on the zoom lens, resulting in a total cost of 390.00 dollars. Determine the original price of the camera body.",
+    "a": "\\(300\\)",
     "opts": [
-      "\\(99\\)",
-      "\\(95\\)",
-      "\\(81\\)",
-      "\\(90\\)"
+      "\\(315\\)",
+      "\\(300\\)",
+      "\\(330\\)",
+      "\\(270\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 106\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of camera body) and y (price of zoom lens).",
+        "workingOut": "\\(x + y = 450\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{76}{100}y = \\frac{36.94}{100} \\times 106 \\implies 30x + 76y = 3915.6\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{20}{100})y = 390.00 \\implies 0.90x + 0.80y = 390.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 76(106 - x) = 3915.6\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.90x + 0.80(450 - x) = 390.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 76)x = -4140.4 \\implies x = 90\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.10x = 30.00 \\implies x = 300\\)",
         "graphData": null
       }
     ]
@@ -2299,33 +2299,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(1050\\text{ dollars}\\). If the store gives a \\(25\\%\\) discount on the electric guitar and a \\(20\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(807.35\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(653\\)",
+    "question": "A cyclist purchases a lightweight carbon road bike frame and an electronic gear shifting set for a total of 800 dollars. In a clearance, the frame has a 20% discount and the gear set has a 15% discount. If the buyer paid a total of 655.00 dollars, calculate the original price of the carbon road bike frame.",
+    "a": "\\(500\\)",
     "opts": [
-      "\\(653\\)",
-      "\\(686\\)",
-      "\\(588\\)",
-      "\\(718\\)"
+      "\\(550\\)",
+      "\\(500\\)",
+      "\\(450\\)",
+      "\\(525\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 1050\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of bike frame) and y (price of gear shifting set).",
+        "workingOut": "\\(x + y = 800\\)",
         "graphData": null
       },
       {
         "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{25}{100})x + (1 - \\frac{20}{100})y = 807.35 \\implies 0.75x + 0.80y = 807.35\\)",
+        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{15}{100})y = 655.00 \\implies 0.80x + 0.85y = 655.00\\)",
         "graphData": null
       },
       {
         "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.75x + 0.80(1050 - x) = 807.35\\)",
+        "workingOut": "\\(0.80x + 0.85(800 - x) = 655.00\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(-0.05x = -32.65 \\implies x = 653\\)",
+        "workingOut": "\\(-0.05x = -25.00 \\implies x = 500\\)",
         "graphData": null
       }
     ]
@@ -2336,33 +2336,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Daniel sets up two separate commercial loans at BioSphere Research totaling \\(33504\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(4\\%\\) per annum, and Loan B is charged at \\(6\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1734.24\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(13800\\)",
+    "question": "A studio manager buys a high-end keyboard workstation and active monitor speakers for a combined original price of 850 dollars. After a 10% discount on the keyboard and a 30% discount on the monitor speakers, the total checkout price is 715.00 dollars. Find the original price of the keyboard workstation.",
+    "a": "\\(600\\)",
     "opts": [
-      "\\(15180\\)",
-      "\\(13800\\)",
-      "\\(12420\\)",
-      "\\(14490\\)"
+      "\\(600\\)",
+      "\\(660\\)",
+      "\\(630\\)",
+      "\\(540\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 33504\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of keyboard workstation) and y (price of monitor speakers).",
+        "workingOut": "\\(x + y = 850\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 1734.24 \\implies 4x + 6y = 173424\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{30}{100})y = 715.00 \\implies 0.90x + 0.70y = 715.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(4x + 6(33504 - x) = 173424\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.90x + 0.70(850 - x) = 715.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-2x = -27600 \\implies x = 13800\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.20x = 120.00 \\implies x = 600\\)",
         "graphData": null
       }
     ]
@@ -2373,33 +2373,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Amelia invests a total capital of \\(17995\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(5\\%\\) interest per annum, and corporate debentures yielding \\(9\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1271.55\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(8700\\)",
+    "question": "A buyer orders a commercial air conditioner unit and its outdoor condenser unit for a combined price of 630 dollars. If the wholesale supplier applies a 15% discount on the air conditioner unit and a 25% discount on the condenser, the invoice total comes to 517.50 dollars. What was the original price of the air conditioner unit?",
+    "a": "\\(450\\)",
     "opts": [
-      "\\(8700\\)",
-      "\\(9570\\)",
-      "\\(7830\\)",
-      "\\(9135\\)"
+      "\\(473\\)",
+      "\\(450\\)",
+      "\\(495\\)",
+      "\\(405\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 17995\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of air conditioner unit) and y (price of condenser).",
+        "workingOut": "\\(x + y = 630\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{9}{100}y = 1271.55 \\implies 5x + 9y = 127155\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 517.50 \\implies 0.85x + 0.75y = 517.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 9(17995 - x) = 127155\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.85x + 0.75(630 - x) = 517.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-4x = -34800 \\implies x = 8700\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.10x = 45.00 \\implies x = 450\\)",
         "graphData": null
       }
     ]
@@ -2410,33 +2410,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 2 units of smart projector and 5 units of screen setup cost a combined total of \\(1028\\text{ dollars}\\). Another order of 3 units of smart projector and 2 units of screen setup costs \\(926\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(234\\)",
+    "question": "An administrative assistant buys a commercial coffee brewer and a set of glass carafes for a total price of 470 dollars. If the vendor grants a 20% discount on the coffee brewer and a 10% discount on the glass carafes, the checkout price is 388.00 dollars. Determine the original price of the coffee brewer.",
+    "a": "\\(350\\)",
     "opts": [
-      "\\(234\\)",
-      "\\(257\\)",
-      "\\(211\\)",
-      "\\(246\\)"
+      "\\(315\\)",
+      "\\(385\\)",
+      "\\(350\\)",
+      "\\(368\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of coffee brewer) and y (price of glass carafes).",
+        "workingOut": "\\(x + y = 470\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 5y = 1028 \\\\ 3x + 2y = 926 \\end{cases}\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{10}{100})y = 388.00 \\implies 0.80x + 0.90y = 388.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 4x + 10y = 2056 \\\\ 15x + 10y = 4630 \\end{cases}\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.80x + 0.90(470 - x) = 388.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((4 - 15)x = -2574 \\implies x = 234\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(-0.10x = -35.00 \\implies x = 350\\)",
         "graphData": null
       }
     ]
@@ -2447,33 +2447,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(84\\%\\) concentrated solution to produce exactly \\(171\\text{ litres}\\) of a solution with a final concentration of \\(38.84\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(143\\)",
+    "question": "A hardware shop orders stock: a pallet of wood planks and a bundle of steel brackets for a total price of 770 dollars. Under a dealer deal, the wood planks have a 10% discount and the steel brackets have a 25% discount. If the shop paid a total of 660.00 dollars, find the original price of the pallet of wood planks.",
+    "a": "\\(550\\)",
     "opts": [
-      "\\(129\\)",
-      "\\(157\\)",
-      "\\(143\\)",
-      "\\(150\\)"
+      "\\(495\\)",
+      "\\(605\\)",
+      "\\(550\\)",
+      "\\(578\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 171\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of pallet of wood planks) and y (price of steel brackets).",
+        "workingOut": "\\(x + y = 770\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{84}{100}y = \\frac{38.84}{100} \\times 171 \\implies 30x + 84y = 6641.6\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{25}{100})y = 660.00 \\implies 0.90x + 0.75y = 660.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 84(171 - x) = 6641.6\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.90x + 0.75(770 - x) = 660.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 84)x = -7722.4 \\implies x = 143\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.15x = 82.50 \\implies x = 550\\)",
         "graphData": null
       }
     ]
@@ -2484,33 +2484,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(500\\text{ dollars}\\). If the store gives a \\(10\\%\\) discount on the electric guitar and a \\(30\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(411.60\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(308\\)",
+    "question": "A software office buys computer desk assets: a group of mesh back chairs and a steel filing cabinet for a combined price of 580 dollars. After a 15% discount on the chairs and a 30% discount on the cabinet, the total checkout price is 469.00 dollars. Find the original price of the mesh back chairs.",
+    "a": "\\(420\\)",
     "opts": [
-      "\\(339\\)",
-      "\\(308\\)",
-      "\\(323\\)",
-      "\\(277\\)"
+      "\\(441\\)",
+      "\\(462\\)",
+      "\\(420\\)",
+      "\\(378\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 500\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of mesh back chairs) and y (price of filing cabinet).",
+        "workingOut": "\\(x + y = 580\\)",
         "graphData": null
       },
       {
         "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{30}{100})y = 411.60 \\implies 0.90x + 0.70y = 411.60\\)",
+        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{30}{100})y = 469.00 \\implies 0.85x + 0.70y = 469.00\\)",
         "graphData": null
       },
       {
         "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.70(500 - x) = 411.60\\)",
+        "workingOut": "\\(0.85x + 0.70(580 - x) = 469.00\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.20x = 61.60 \\implies x = 308\\)",
+        "workingOut": "\\(0.15x = 63.00 \\implies x = 420\\)",
         "graphData": null
       }
     ]
@@ -2521,33 +2521,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Isabella sets up two separate commercial loans at Prime Enterprises totaling \\(34559\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(3\\%\\) per annum, and Loan B is charged at \\(7\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1839.13\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(14500\\)",
+    "question": "A cycle team orders parts: a set of aerodynamic helmets and a bundle of safety lights for a total price of 370 dollars. If the store gives a 10% discount on the helmets and a 20% discount on the safety lights, the final checkout price is 320.00 dollars. What was the original price of the aerodynamic helmets?",
+    "a": "\\(240\\)",
     "opts": [
-      "\\(15225\\)",
-      "\\(13050\\)",
-      "\\(15950\\)",
-      "\\(14500\\)"
+      "\\(252\\)",
+      "\\(216\\)",
+      "\\(264\\)",
+      "\\(240\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 34559\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of aerodynamic helmets) and y (price of safety lights).",
+        "workingOut": "\\(x + y = 370\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{7}{100}y = 1839.13 \\implies 3x + 7y = 183913\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{20}{100})y = 320.00 \\implies 0.90x + 0.80y = 320.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(3x + 7(34559 - x) = 183913\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.90x + 0.80(370 - x) = 320.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-4x = -58000 \\implies x = 14500\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.10x = 24.00 \\implies x = 240\\)",
         "graphData": null
       }
     ]
@@ -2558,33 +2558,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Matthew invests a total capital of \\(18610\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(6\\%\\) interest per annum, and corporate debentures yielding \\(8\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1306.80\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(9100\\)",
+    "question": "A school garden buys tools: a set of organic composting bins and a bundle of steel rake tools for a total price of 460 dollars. If the vendor grants a 15% discount on the composting bins and a 25% discount on the rake tools, the checkout price is 377.00 dollars. Determine the original price of the composting bins.",
+    "a": "\\(320\\)",
     "opts": [
-      "\\(9100\\)",
-      "\\(8190\\)",
-      "\\(10010\\)",
-      "\\(9555\\)"
+      "\\(320\\)",
+      "\\(352\\)",
+      "\\(288\\)",
+      "\\(336\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 18610\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of composting bins) and y (price of rake tools).",
+        "workingOut": "\\(x + y = 460\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{8}{100}y = 1306.80 \\implies 6x + 8y = 130680\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 377.00 \\implies 0.85x + 0.75y = 377.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(6x + 8(18610 - x) = 130680\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.85x + 0.75(460 - x) = 377.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2x = -18200 \\implies x = 9100\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.10x = 32.00 \\implies x = 320\\)",
         "graphData": null
       }
     ]
@@ -2595,33 +2595,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 4 units of smart projector and 6 units of screen setup cost a combined total of \\(1798\\text{ dollars}\\). Another order of 4 units of smart projector and 4 units of screen setup costs \\(1704\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(379\\)",
+    "question": "A commercial buyer at NovaTech Solutions buys a heavy-duty rotary printer and a companion cartridge deck for a combined list price of 700 dollars. If the vendor grants a 20% discount on the printer and a 10% discount on the cartridge deck, the final checkout price is 582.00 dollars. What was the original price of the heavy-duty rotary printer?",
+    "a": "\\(480\\)",
     "opts": [
-      "\\(341\\)",
-      "\\(379\\)",
-      "\\(417\\)",
-      "\\(398\\)"
+      "\\(480\\)",
+      "\\(432\\)",
+      "\\(504\\)",
+      "\\(528\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of rotary printer) and y (price of cartridge deck).",
+        "workingOut": "\\(x + y = 700\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 6y = 1798 \\\\ 4x + 4y = 1704 \\end{cases}\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{10}{100})y = 582.00 \\implies 0.80x + 0.90y = 582.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 16x + 24y = 7192 \\\\ 24x + 24y = 10224 \\end{cases}\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.80x + 0.90(700 - x) = 582.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((16 - 24)x = -3032 \\implies x = 379\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(-0.10x = -48.00 \\implies x = 480\\)",
         "graphData": null
       }
     ]
@@ -2632,33 +2632,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(60\\%\\) concentrated solution to produce exactly \\(86\\text{ litres}\\) of a solution with a final concentration of \\(56.51\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(10\\)",
+    "question": "A photographer buys a professional camera body and an adjustable zoom lens for a total price of 470 dollars. The store runs a bundle promotion offering a 10% discount on the camera body and a 20% discount on the zoom lens, resulting in a total cost of 407.00 dollars. Determine the original price of the camera body.",
+    "a": "\\(310\\)",
     "opts": [
-      "\\(10\\)",
-      "\\(11\\)",
-      "\\(9\\)",
-      "\\(12\\)"
+      "\\(326\\)",
+      "\\(279\\)",
+      "\\(341\\)",
+      "\\(310\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 86\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of camera body) and y (price of zoom lens).",
+        "workingOut": "\\(x + y = 470\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{60}{100}y = \\frac{56.51}{100} \\times 86 \\implies 30x + 60y = 4859.9\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{20}{100})y = 407.00 \\implies 0.90x + 0.80y = 407.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 60(86 - x) = 4859.9\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.90x + 0.80(470 - x) = 407.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 60)x = -300.1 \\implies x = 10\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.10x = 31.00 \\implies x = 310\\)",
         "graphData": null
       }
     ]
@@ -2669,33 +2669,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(750\\text{ dollars}\\). If the store gives a \\(15\\%\\) discount on the electric guitar and a \\(25\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(608.80\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(463\\)",
+    "question": "A cyclist purchases a lightweight carbon road bike frame and an electronic gear shifting set for a total of 800 dollars. In a clearance, the frame has a 20% discount and the gear set has a 15% discount. If the buyer paid a total of 654.00 dollars, calculate the original price of the carbon road bike frame.",
+    "a": "\\(520\\)",
     "opts": [
-      "\\(417\\)",
-      "\\(509\\)",
-      "\\(463\\)",
-      "\\(486\\)"
+      "\\(468\\)",
+      "\\(520\\)",
+      "\\(546\\)",
+      "\\(572\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 750\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of bike frame) and y (price of gear shifting set).",
+        "workingOut": "\\(x + y = 800\\)",
         "graphData": null
       },
       {
         "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 608.80 \\implies 0.85x + 0.75y = 608.80\\)",
+        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{15}{100})y = 654.00 \\implies 0.80x + 0.85y = 654.00\\)",
         "graphData": null
       },
       {
         "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.75(750 - x) = 608.80\\)",
+        "workingOut": "\\(0.80x + 0.85(800 - x) = 654.00\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 46.30 \\implies x = 463\\)",
+        "workingOut": "\\(-0.05x = -26.00 \\implies x = 520\\)",
         "graphData": null
       }
     ]
@@ -2706,33 +2706,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Ethan sets up two separate commercial loans at BioSphere Research totaling \\(35614\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(5\\%\\) per annum, and Loan B is charged at \\(8\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(2396.12\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(15100\\)",
+    "question": "A studio manager buys a high-end keyboard workstation and active monitor speakers for a combined original price of 820 dollars. After a 10% discount on the keyboard and a 30% discount on the monitor speakers, the total checkout price is 690.00 dollars. Find the original price of the keyboard workstation.",
+    "a": "\\(580\\)",
     "opts": [
-      "\\(15100\\)",
-      "\\(16610\\)",
-      "\\(15855\\)",
-      "\\(13590\\)"
+      "\\(609\\)",
+      "\\(522\\)",
+      "\\(638\\)",
+      "\\(580\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 35614\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of keyboard workstation) and y (price of monitor speakers).",
+        "workingOut": "\\(x + y = 820\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 2396.12 \\implies 5x + 8y = 239612\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{30}{100})y = 690.00 \\implies 0.90x + 0.70y = 690.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(5x + 8(35614 - x) = 239612\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.90x + 0.70(820 - x) = 690.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-3x = -45300 \\implies x = 15100\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.20x = 116.00 \\implies x = 580\\)",
         "graphData": null
       }
     ]
@@ -2743,33 +2743,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Abigail invests a total capital of \\(19225\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(7\\%\\) interest per annum, and corporate debentures yielding \\(7\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1345.75\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(9500\\)",
+    "question": "A buyer orders a commercial air conditioner unit and its outdoor condenser unit for a combined price of 650 dollars. If the wholesale supplier applies a 15% discount on the air conditioner unit and a 25% discount on the condenser, the invoice total comes to 533.50 dollars. What was the original price of the air conditioner unit?",
+    "a": "\\(460\\)",
     "opts": [
-      "\\(9975\\)",
-      "\\(8550\\)",
-      "\\(10450\\)",
-      "\\(9500\\)"
+      "\\(460\\)",
+      "\\(506\\)",
+      "\\(414\\)",
+      "\\(483\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 19225\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of air conditioner unit) and y (price of condenser).",
+        "workingOut": "\\(x + y = 650\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{7}{100}y = 1345.75 \\implies 7x + 7y = 134575\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 533.50 \\implies 0.85x + 0.75y = 533.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 7(19225 - x) = 134575\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.85x + 0.75(650 - x) = 533.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-0x = 0 \\implies x = 9500\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.10x = 46.00 \\implies x = 460\\)",
         "graphData": null
       }
     ]
@@ -2780,33 +2780,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 3 units of smart projector and 3 units of screen setup cost a combined total of \\(1068\\text{ dollars}\\). Another order of 3 units of smart projector and 3 units of screen setup costs \\(1068\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(224\\)",
+    "question": "An administrative assistant buys a commercial coffee brewer and a set of glass carafes for a total price of 470 dollars. If the vendor grants a 20% discount on the coffee brewer and a 10% discount on the glass carafes, the checkout price is 389.00 dollars. Determine the original price of the coffee brewer.",
+    "a": "\\(340\\)",
     "opts": [
-      "\\(202\\)",
-      "\\(246\\)",
-      "\\(235\\)",
-      "\\(224\\)"
+      "\\(340\\)",
+      "\\(357\\)",
+      "\\(374\\)",
+      "\\(306\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of coffee brewer) and y (price of glass carafes).",
+        "workingOut": "\\(x + y = 470\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 3y = 1068 \\\\ 3x + 3y = 1068 \\end{cases}\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{10}{100})y = 389.00 \\implies 0.80x + 0.90y = 389.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 9x + 9y = 3204 \\\\ 9x + 9y = 3204 \\end{cases}\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.80x + 0.90(470 - x) = 389.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((9 - 9)x = 0 \\implies x = 224\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(-0.10x = -34.00 \\implies x = 340\\)",
         "graphData": null
       }
     ]
@@ -2817,33 +2817,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(68\\%\\) concentrated solution to produce exactly \\(151\\text{ litres}\\) of a solution with a final concentration of \\(50.13\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(71\\)",
+    "question": "A hardware shop orders stock: a pallet of wood planks and a bundle of steel brackets for a total price of 750 dollars. Under a dealer deal, the wood planks have a 10% discount and the steel brackets have a 25% discount. If the shop paid a total of 643.50 dollars, find the original price of the pallet of wood planks.",
+    "a": "\\(540\\)",
     "opts": [
-      "\\(71\\)",
-      "\\(75\\)",
-      "\\(78\\)",
-      "\\(64\\)"
+      "\\(540\\)",
+      "\\(594\\)",
+      "\\(486\\)",
+      "\\(567\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 151\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of pallet of wood planks) and y (price of steel brackets).",
+        "workingOut": "\\(x + y = 750\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{68}{100}y = \\frac{50.13}{100} \\times 151 \\implies 30x + 68y = 7569.6\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{25}{100})y = 643.50 \\implies 0.90x + 0.75y = 643.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 68(151 - x) = 7569.6\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.90x + 0.75(750 - x) = 643.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 68)x = -2698.4 \\implies x = 71\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.15x = 81.00 \\implies x = 540\\)",
         "graphData": null
       }
     ]
@@ -2854,33 +2854,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(1000\\text{ dollars}\\). If the store gives a \\(20\\%\\) discount on the electric guitar and a \\(20\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(800.00\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(618\\)",
+    "question": "A software office buys computer desk assets: a group of mesh back chairs and a steel filing cabinet for a combined price of 580 dollars. After a 15% discount on the chairs and a 30% discount on the cabinet, the total checkout price is 467.50 dollars. Find the original price of the mesh back chairs.",
+    "a": "\\(410\\)",
     "opts": [
-      "\\(618\\)",
-      "\\(649\\)",
-      "\\(680\\)",
-      "\\(556\\)"
+      "\\(431\\)",
+      "\\(369\\)",
+      "\\(451\\)",
+      "\\(410\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 1000\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of mesh back chairs) and y (price of filing cabinet).",
+        "workingOut": "\\(x + y = 580\\)",
         "graphData": null
       },
       {
         "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{20}{100})y = 800.00 \\implies 0.80x + 0.80y = 800.00\\)",
+        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{30}{100})y = 467.50 \\implies 0.85x + 0.70y = 467.50\\)",
         "graphData": null
       },
       {
         "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.80(1000 - x) = 800.00\\)",
+        "workingOut": "\\(0.85x + 0.70(580 - x) = 467.50\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.00x = 0.00 \\implies x = 618\\)",
+        "workingOut": "\\(0.15x = 61.50 \\implies x = 410\\)",
         "graphData": null
       }
     ]
@@ -2891,33 +2891,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Mila sets up two separate commercial loans at Prime Enterprises totaling \\(36669\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(4\\%\\) per annum, and Loan B is charged at \\(9\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(2510.21\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(15800\\)",
+    "question": "A cycle team orders parts: a set of aerodynamic helmets and a bundle of safety lights for a total price of 370 dollars. If the store gives a 10% discount on the helmets and a 20% discount on the safety lights, the final checkout price is 321.00 dollars. What was the original price of the aerodynamic helmets?",
+    "a": "\\(250\\)",
     "opts": [
-      "\\(15800\\)",
-      "\\(17380\\)",
-      "\\(14220\\)",
-      "\\(16590\\)"
+      "\\(250\\)",
+      "\\(263\\)",
+      "\\(275\\)",
+      "\\(225\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 36669\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of aerodynamic helmets) and y (price of safety lights).",
+        "workingOut": "\\(x + y = 370\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{9}{100}y = 2510.21 \\implies 4x + 9y = 251021\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{20}{100})y = 321.00 \\implies 0.90x + 0.80y = 321.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(4x + 9(36669 - x) = 251021\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.90x + 0.80(370 - x) = 321.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-5x = -79000 \\implies x = 15800\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.10x = 25.00 \\implies x = 250\\)",
         "graphData": null
       }
     ]
@@ -2928,33 +2928,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Michael invests a total capital of \\(19840\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(4\\%\\) interest per annum, and corporate debentures yielding \\(9\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1285.60\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(10000\\)",
+    "question": "A school garden buys tools: a set of organic composting bins and a bundle of steel rake tools for a total price of 480 dollars. If the vendor grants a 15% discount on the composting bins and a 25% discount on the rake tools, the checkout price is 393.00 dollars. Determine the original price of the composting bins.",
+    "a": "\\(330\\)",
     "opts": [
-      "\\(9000\\)",
-      "\\(10000\\)",
-      "\\(11000\\)",
-      "\\(10500\\)"
+      "\\(330\\)",
+      "\\(363\\)",
+      "\\(297\\)",
+      "\\(347\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 19840\\)",
+        "explanation": "Formulate the total original price sum equation using variables x (price of composting bins) and y (price of rake tools).",
+        "workingOut": "\\(x + y = 480\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{9}{100}y = 1285.60 \\implies 4x + 9y = 128560\\)",
+        "explanation": "Formulate the total discounted checkout cost equation.",
+        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 393.00 \\implies 0.85x + 0.75y = 393.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 9(19840 - x) = 128560\\)",
+        "explanation": "Substitute y = total - x into the discounted equation.",
+        "workingOut": "\\(0.85x + 0.75(480 - x) = 393.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-5x = -50000 \\implies x = 10000\\)",
+        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
+        "workingOut": "\\(0.10x = 33.00 \\implies x = 330\\)",
         "graphData": null
       }
     ]
@@ -2965,33 +2965,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 2 units of smart projector and 4 units of screen setup cost a combined total of \\(1006\\text{ dollars}\\). Another order of 4 units of smart projector and 2 units of screen setup costs \\(1610\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(369\\)",
+    "question": "William arranges two separate business loans totaling 30000 dollars. Loan A is charged at a flat simple interest rate of 4% per annum, and Loan B is charged at 7% per annum. If the total interest interest accrued at the end of the first year is exactly 1560.00 dollars, calculate the principal sum of Loan A.",
+    "a": "\\(18000\\)",
     "opts": [
-      "\\(406\\)",
-      "\\(387\\)",
-      "\\(332\\)",
-      "\\(369\\)"
+      "\\(16200\\)",
+      "\\(19800\\)",
+      "\\(18000\\)",
+      "\\(18900\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
+        "workingOut": "\\(x + y = 30000\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 4y = 1006 \\\\ 4x + 2y = 1610 \\end{cases}\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{7}{100}y = 1560.00 \\implies 4x + 7y = 156000\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 4x + 8y = 2012 \\\\ 16x + 8y = 6440 \\end{cases}\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4x + 7(30000 - x) = 156000\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((4 - 16)x = -4428 \\implies x = 369\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-3x = -54000 \\implies x = 18000\\)",
         "graphData": null
       }
     ]
@@ -3002,33 +3002,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(76\\%\\) concentrated solution to produce exactly \\(66\\text{ litres}\\) of a solution with a final concentration of \\(49.52\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(38\\)",
+    "question": "A franchise owner finances a new storefront using two commercial loans totaling 45000 dollars. The interest rate on the first loan is 5% p.a., and the second loan rate is 8% p.a. If the combined annual interest due is exactly 2850.00 dollars, determine the principal sum of the first loan.",
+    "a": "\\(25000\\)",
     "opts": [
-      "\\(38\\)",
-      "\\(40\\)",
-      "\\(42\\)",
-      "\\(34\\)"
+      "\\(26250\\)",
+      "\\(22500\\)",
+      "\\(27500\\)",
+      "\\(25000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 66\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
+        "workingOut": "\\(x + y = 45000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{76}{100}y = \\frac{49.52}{100} \\times 66 \\implies 30x + 76y = 3268.3\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 2850.00 \\implies 5x + 8y = 285000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 76(66 - x) = 3268.3\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(5x + 8(45000 - x) = 285000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 76)x = -1747.7 \\implies x = 38\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-3x = -75000 \\implies x = 25000\\)",
         "graphData": null
       }
     ]
@@ -3039,33 +3039,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(450\\text{ dollars}\\). If the store gives a \\(25\\%\\) discount on the electric guitar and a \\(30\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(328.65\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(273\\)",
+    "question": "A real estate developer takes out two bridging loans totaling 25000 dollars. Loan X has a flat rate of 3.5% p.a. and Loan Y has a flat rate of 6.5% p.a. If the combined annual interest charge is exactly 1265.00 dollars, find the principal amount of Loan X.",
+    "a": "\\(12000\\)",
     "opts": [
-      "\\(300\\)",
-      "\\(273\\)",
-      "\\(246\\)",
-      "\\(287\\)"
+      "\\(12600\\)",
+      "\\(10800\\)",
+      "\\(13200\\)",
+      "\\(12000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 450\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
+        "workingOut": "\\(x + y = 25000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{25}{100})x + (1 - \\frac{30}{100})y = 328.65 \\implies 0.75x + 0.70y = 328.65\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{3.5}{100}x + \\frac{6.5}{100}y = 1265.00 \\implies 3.5x + 6.5y = 126500\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.75x + 0.70(450 - x) = 328.65\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(3.5x + 6.5(25000 - x) = 126500\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.05x = 13.65 \\implies x = 273\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-3x = -36000 \\implies x = 12000\\)",
         "graphData": null
       }
     ]
@@ -3076,33 +3076,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Jacob sets up two separate commercial loans at BioSphere Research totaling \\(37724\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(3\\%\\) per annum, and Loan B is charged at \\(6\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(1768.44\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(16500\\)",
+    "question": "A shipping company leases cargo containers using two separate lease loans totaling 50000 dollars. The first lease loan carries an annual charge rate of 4.8%, and the second carries 7.2%. If the total lease interest paid for the first year is 2880.00 dollars, calculate the principal of the first lease loan.",
+    "a": "\\(30000\\)",
     "opts": [
-      "\\(16500\\)",
-      "\\(18150\\)",
-      "\\(14850\\)",
-      "\\(17325\\)"
+      "\\(30000\\)",
+      "\\(33000\\)",
+      "\\(27000\\)",
+      "\\(31500\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 37724\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of first lease loan and second lease loan.",
+        "workingOut": "\\(x + y = 50000\\)",
         "graphData": null
       },
       {
         "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{6}{100}y = 1768.44 \\implies 3x + 6y = 176844\\)",
+        "workingOut": "\\(\\frac{4.8}{100}x + \\frac{7.2}{100}y = 2880.00 \\implies 4.8x + 7.2y = 288000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(3x + 6(37724 - x) = 176844\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4.8x + 7.2(50000 - x) = 288000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-3x = -49500 \\implies x = 16500\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2.4000000000000004x = -72000 \\implies x = 30000\\)",
         "graphData": null
       }
     ]
@@ -3113,33 +3113,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Sofia invests a total capital of \\(20455\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(5\\%\\) interest per annum, and corporate debentures yielding \\(8\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1324.40\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(10400\\)",
+    "question": "To build a sports field, a university secures two loans totaling 35000 dollars. Loan A is at a rate of 5.5% p.a. and Loan B is at 7.5% p.a. If the combined interest at the end of the first year is exactly 2325.00 dollars, calculate the principal sum of Loan A.",
+    "a": "\\(15000\\)",
     "opts": [
-      "\\(10920\\)",
-      "\\(9360\\)",
-      "\\(11440\\)",
-      "\\(10400\\)"
+      "\\(16500\\)",
+      "\\(15000\\)",
+      "\\(15750\\)",
+      "\\(13500\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 20455\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
+        "workingOut": "\\(x + y = 35000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 1324.40 \\implies 5x + 8y = 132440\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{5.5}{100}x + \\frac{7.5}{100}y = 2325.00 \\implies 5.5x + 7.5y = 232500\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 8(20455 - x) = 132440\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(5.5x + 7.5(35000 - x) = 232500\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-3x = -31200 \\implies x = 10400\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2x = -30000 \\implies x = 15000\\)",
         "graphData": null
       }
     ]
@@ -3150,33 +3150,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 4 units of smart projector and 5 units of screen setup cost a combined total of \\(1616\\text{ dollars}\\). Another order of 3 units of smart projector and 4 units of screen setup costs \\(1250\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(214\\)",
+    "question": "A tech startup takes two loans totaling 55000 dollars to purchase servers. The first loan rate is 4.2% p.a. and the second is 6.8% p.a. If the combined interest return at the end of the first year is 2830.00 dollars, determine the principal sum of the first loan.",
+    "a": "\\(35000\\)",
     "opts": [
-      "\\(214\\)",
-      "\\(225\\)",
-      "\\(235\\)",
-      "\\(193\\)"
+      "\\(35000\\)",
+      "\\(38500\\)",
+      "\\(31500\\)",
+      "\\(36750\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
+        "workingOut": "\\(x + y = 55000\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 5y = 1616 \\\\ 3x + 4y = 1250 \\end{cases}\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{4.2}{100}x + \\frac{6.8}{100}y = 2830.00 \\implies 4.2x + 6.8y = 283000\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 16x + 20y = 6464 \\\\ 15x + 20y = 6250 \\end{cases}\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4.2x + 6.8(55000 - x) = 283000\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((16 - 15)x = 214 \\implies x = 214\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2.5999999999999996x = -91000 \\implies x = 35000\\)",
         "graphData": null
       }
     ]
@@ -3187,33 +3187,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(84\\%\\) concentrated solution to produce exactly \\(131\\text{ litres}\\) of a solution with a final concentration of \\(51.44\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(79\\)",
+    "question": "A local logistics company secures two loans totaling 28000 dollars. Loan X has a flat rate of 3.8% p.a. and Loan Y has a flat rate of 5.8% p.a. If the combined annual interest charge is exactly 1264.00 dollars, find the principal amount of Loan X.",
+    "a": "\\(18000\\)",
     "opts": [
-      "\\(79\\)",
-      "\\(87\\)",
-      "\\(71\\)",
-      "\\(83\\)"
+      "\\(16200\\)",
+      "\\(18000\\)",
+      "\\(19800\\)",
+      "\\(18900\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 131\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
+        "workingOut": "\\(x + y = 28000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{84}{100}y = \\frac{51.44}{100} \\times 131 \\implies 30x + 84y = 6738.6\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{3.8}{100}x + \\frac{5.8}{100}y = 1264.00 \\implies 3.8x + 5.8y = 126400\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 84(131 - x) = 6738.6\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(3.8x + 5.8(28000 - x) = 126400\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 84)x = -4265.4 \\implies x = 79\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2x = -36000 \\implies x = 18000\\)",
         "graphData": null
       }
     ]
@@ -3224,33 +3224,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(700\\text{ dollars}\\). If the store gives a \\(10\\%\\) discount on the electric guitar and a \\(25\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(589.20\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(428\\)",
+    "question": "A municipal utility borrows 40000 dollars via two separate infrastructure loans. Loan A is charged at a flat interest rate of 4.5% p.a., and Loan B is charged at 6.5% p.a. If the total interest accrued at the end of the first year is exactly 2160.00 dollars, calculate the principal sum of Loan A.",
+    "a": "\\(22000\\)",
     "opts": [
-      "\\(471\\)",
-      "\\(428\\)",
-      "\\(385\\)",
-      "\\(449\\)"
+      "\\(24200\\)",
+      "\\(19800\\)",
+      "\\(23100\\)",
+      "\\(22000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 700\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
+        "workingOut": "\\(x + y = 40000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{25}{100})y = 589.20 \\implies 0.90x + 0.75y = 589.20\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{4.5}{100}x + \\frac{6.5}{100}y = 2160.00 \\implies 4.5x + 6.5y = 216000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.75(700 - x) = 589.20\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4.5x + 6.5(40000 - x) = 216000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.15x = 64.20 \\implies x = 428\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2x = -44000 \\implies x = 22000\\)",
         "graphData": null
       }
     ]
@@ -3261,33 +3261,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Aria sets up two separate commercial loans at Prime Enterprises totaling \\(38779\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(5\\%\\) per annum, and Loan B is charged at \\(7\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(2370.53\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(17200\\)",
+    "question": "A research hospital secures two loans totaling 48000 dollars to buy equipment. The first loan rate is 5.2% p.a. and the second is 8.2% p.a. If the combined interest return at the end of the first year is 3096.00 dollars, determine the principal sum of the first loan.",
+    "a": "\\(28000\\)",
     "opts": [
-      "\\(17200\\)",
-      "\\(18920\\)",
-      "\\(15480\\)",
-      "\\(18060\\)"
+      "\\(29400\\)",
+      "\\(30800\\)",
+      "\\(25200\\)",
+      "\\(28000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 38779\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
+        "workingOut": "\\(x + y = 48000\\)",
         "graphData": null
       },
       {
         "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{7}{100}y = 2370.53 \\implies 5x + 7y = 237053\\)",
+        "workingOut": "\\(\\frac{5.2}{100}x + \\frac{8.2}{100}y = 3096.00 \\implies 5.2x + 8.2y = 309600\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(5x + 7(38779 - x) = 237053\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(5.2x + 8.2(48000 - x) = 309600\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-2x = -34400 \\implies x = 17200\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2.999999999999999x = -83999.99999999994 \\implies x = 28000\\)",
         "graphData": null
       }
     ]
@@ -3298,33 +3298,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Alexander invests a total capital of \\(21070\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(6\\%\\) interest per annum, and corporate debentures yielding \\(7\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1366.90\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(10800\\)",
+    "question": "A private school foundation secures two loans totaling 26000 dollars. Loan X has a flat rate of 4% p.a. and Loan Y has a flat rate of 6% p.a. If the combined annual interest charge is exactly 1260.00 dollars, find the principal amount of Loan X.",
+    "a": "\\(15000\\)",
     "opts": [
-      "\\(10800\\)",
-      "\\(11880\\)",
-      "\\(9720\\)",
-      "\\(11340\\)"
+      "\\(15000\\)",
+      "\\(16500\\)",
+      "\\(13500\\)",
+      "\\(15750\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 21070\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
+        "workingOut": "\\(x + y = 26000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{7}{100}y = 1366.90 \\implies 6x + 7y = 136690\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 1260.00 \\implies 4x + 6y = 126000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(6x + 7(21070 - x) = 136690\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4x + 6(26000 - x) = 126000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-1x = -10800 \\implies x = 10800\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2x = -30000 \\implies x = 15000\\)",
         "graphData": null
       }
     ]
@@ -3335,33 +3335,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at NovaTech Solutions shows that 3 units of smart projector and 6 units of screen setup cost a combined total of \\(1599\\text{ dollars}\\). Another order of 4 units of smart projector and 3 units of screen setup costs \\(1697\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(359\\)",
+    "question": "William arranges two separate business loans totaling 31000 dollars. Loan A is charged at a flat simple interest rate of 4% per annum, and Loan B is charged at 7% per annum. If the total interest interest accrued at the end of the first year is exactly 1600.00 dollars, calculate the principal sum of Loan A.",
+    "a": "\\(19000\\)",
     "opts": [
-      "\\(377\\)",
-      "\\(323\\)",
-      "\\(395\\)",
-      "\\(359\\)"
+      "\\(19950\\)",
+      "\\(17100\\)",
+      "\\(20900\\)",
+      "\\(19000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
+        "workingOut": "\\(x + y = 31000\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 6y = 1599 \\\\ 4x + 3y = 1697 \\end{cases}\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{7}{100}y = 1600.00 \\implies 4x + 7y = 160000\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 9x + 18y = 4797 \\\\ 24x + 18y = 10182 \\end{cases}\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4x + 7(31000 - x) = 160000\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((9 - 24)x = -5385 \\implies x = 359\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-3x = -57000 \\implies x = 19000\\)",
         "graphData": null
       }
     ]
@@ -3372,33 +3372,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at Apex Industries needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(60\\%\\) concentrated solution to produce exactly \\(196\\text{ litres}\\) of a solution with a final concentration of \\(38.27\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(142\\)",
+    "question": "A franchise owner finances a new storefront using two commercial loans totaling 46000 dollars. The interest rate on the first loan is 5% p.a., and the second loan rate is 8% p.a. If the combined annual interest due is exactly 2900.00 dollars, determine the principal sum of the first loan.",
+    "a": "\\(26000\\)",
     "opts": [
-      "\\(149\\)",
-      "\\(142\\)",
-      "\\(156\\)",
-      "\\(128\\)"
+      "\\(23400\\)",
+      "\\(28600\\)",
+      "\\(26000\\)",
+      "\\(27300\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 196\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
+        "workingOut": "\\(x + y = 46000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{60}{100}y = \\frac{38.27}{100} \\times 196 \\implies 30x + 60y = 7500.9\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 2900.00 \\implies 5x + 8y = 290000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 60(196 - x) = 7500.9\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(5x + 8(46000 - x) = 290000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 60)x = -4259.1 \\implies x = 142\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-3x = -78000 \\implies x = 26000\\)",
         "graphData": null
       }
     ]
@@ -3409,33 +3409,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Quantum Group purchases an electric guitar and a valve amplifier for a combined marked price of \\(950\\text{ dollars}\\). If the store gives a \\(15\\%\\) discount on the electric guitar and a \\(20\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(789.15\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(583\\)",
+    "question": "A real estate developer takes out two bridging loans totaling 27000 dollars. Loan X has a flat rate of 3.5% p.a. and Loan Y has a flat rate of 6.5% p.a. If the combined annual interest charge is exactly 1365.00 dollars, find the principal amount of Loan X.",
+    "a": "\\(13000\\)",
     "opts": [
-      "\\(583\\)",
-      "\\(641\\)",
-      "\\(525\\)",
-      "\\(612\\)"
+      "\\(13650\\)",
+      "\\(11700\\)",
+      "\\(14300\\)",
+      "\\(13000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 950\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
+        "workingOut": "\\(x + y = 27000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{20}{100})y = 789.15 \\implies 0.85x + 0.80y = 789.15\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{3.5}{100}x + \\frac{6.5}{100}y = 1365.00 \\implies 3.5x + 6.5y = 136500\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.80(950 - x) = 789.15\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(3.5x + 6.5(27000 - x) = 136500\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.05x = 29.15 \\implies x = 583\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-3x = -39000 \\implies x = 13000\\)",
         "graphData": null
       }
     ]
@@ -3446,33 +3446,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Daniel sets up two separate commercial loans at BioSphere Research totaling \\(39834\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(4\\%\\) per annum, and Loan B is charged at \\(8\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(2470.72\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(17900\\)",
+    "question": "A shipping company leases cargo containers using two separate lease loans totaling 51000 dollars. The first lease loan carries an annual charge rate of 4.8%, and the second carries 7.2%. If the total lease interest paid for the first year is 2928.00 dollars, calculate the principal of the first lease loan.",
+    "a": "\\(31000\\)",
     "opts": [
-      "\\(18795\\)",
-      "\\(16110\\)",
-      "\\(19690\\)",
-      "\\(17900\\)"
+      "\\(32550\\)",
+      "\\(27900\\)",
+      "\\(31000\\)",
+      "\\(34100\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 39834\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of first lease loan and second lease loan.",
+        "workingOut": "\\(x + y = 51000\\)",
         "graphData": null
       },
       {
         "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{8}{100}y = 2470.72 \\implies 4x + 8y = 247072\\)",
+        "workingOut": "\\(\\frac{4.8}{100}x + \\frac{7.2}{100}y = 2928.00 \\implies 4.8x + 7.2y = 292800\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(4x + 8(39834 - x) = 247072\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4.8x + 7.2(51000 - x) = 292800\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-4x = -71600 \\implies x = 17900\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2.4000000000000004x = -74400 \\implies x = 31000\\)",
         "graphData": null
       }
     ]
@@ -3483,33 +3483,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Amelia invests a total capital of \\(21685\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(7\\%\\) interest per annum, and corporate debentures yielding \\(9\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1725.65\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(11300\\)",
+    "question": "To build a sports field, a university secures two loans totaling 36000 dollars. Loan A is at a rate of 5.5% p.a. and Loan B is at 7.5% p.a. If the combined interest at the end of the first year is exactly 2380.00 dollars, calculate the principal sum of Loan A.",
+    "a": "\\(16000\\)",
     "opts": [
-      "\\(11300\\)",
-      "\\(12430\\)",
-      "\\(11865\\)",
-      "\\(10170\\)"
+      "\\(16000\\)",
+      "\\(17600\\)",
+      "\\(14400\\)",
+      "\\(16800\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 21685\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
+        "workingOut": "\\(x + y = 36000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{9}{100}y = 1725.65 \\implies 7x + 9y = 172565\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{5.5}{100}x + \\frac{7.5}{100}y = 2380.00 \\implies 5.5x + 7.5y = 238000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 9(21685 - x) = 172565\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(5.5x + 7.5(36000 - x) = 238000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2x = -22600 \\implies x = 11300\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2x = -32000 \\implies x = 16000\\)",
         "graphData": null
       }
     ]
@@ -3520,33 +3520,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A wholesale invoice at Zenith Media shows that 2 units of smart projector and 3 units of screen setup cost a combined total of \\(924\\text{ dollars}\\). Another order of 3 units of smart projector and 2 units of screen setup costs \\(956\\text{ dollars}\\). Determine the individual unit price of the smart projector.",
-    "a": "\\(204\\)",
+    "question": "A tech startup takes two loans totaling 56000 dollars to purchase servers. The first loan rate is 4.2% p.a. and the second is 6.8% p.a. If the combined interest return at the end of the first year is 2872.00 dollars, determine the principal sum of the first loan.",
+    "a": "\\(36000\\)",
     "opts": [
-      "\\(204\\)",
-      "\\(184\\)",
-      "\\(214\\)",
-      "\\(224\\)"
+      "\\(37800\\)",
+      "\\(32400\\)",
+      "\\(39600\\)",
+      "\\(36000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual prices of the two products.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{screen setup}.\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
+        "workingOut": "\\(x + y = 56000\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 3y = 924 \\\\ 3x + 2y = 956 \\end{cases}\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{4.2}{100}x + \\frac{6.8}{100}y = 2872.00 \\implies 4.2x + 6.8y = 287200\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 4x + 6y = 1848 \\\\ 9x + 6y = 2868 \\end{cases}\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4.2x + 6.8(56000 - x) = 287200\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the equations to solve for x.",
-        "workingOut": "\\((4 - 9)x = -1020 \\implies x = 204\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2.5999999999999996x = -93600 \\implies x = 36000\\)",
         "graphData": null
       }
     ]
@@ -3557,33 +3557,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory at AeroLogistics needs to mix a \\(30\\%\\) concentrated chemical solution with a \\(68\\%\\) concentrated solution to produce exactly \\(111\\text{ litres}\\) of a solution with a final concentration of \\(41.98\\%\\). How many litres of the \\(30\\%\\) solution are required?",
-    "a": "\\(76\\)",
+    "question": "A local logistics company secures two loans totaling 29000 dollars. Loan X has a flat rate of 3.8% p.a. and Loan Y has a flat rate of 5.8% p.a. If the combined annual interest charge is exactly 1302.00 dollars, find the principal amount of Loan X.",
+    "a": "\\(19000\\)",
     "opts": [
-      "\\(68\\)",
-      "\\(76\\)",
-      "\\(84\\)",
-      "\\(80\\)"
+      "\\(19000\\)",
+      "\\(20900\\)",
+      "\\(17100\\)",
+      "\\(19950\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the two solutions. Write the total volume equation.",
-        "workingOut": "\\(x + y = 111\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
+        "workingOut": "\\(x + y = 29000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{68}{100}y = \\frac{41.98}{100} \\times 111 \\implies 30x + 68y = 4659.8\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{3.8}{100}x + \\frac{5.8}{100}y = 1302.00 \\implies 3.8x + 5.8y = 130200\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = mass - x into the concentration equation.",
-        "workingOut": "\\(30x + 68(111 - x) = 4659.8\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(3.8x + 5.8(29000 - x) = 130200\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 68)x = -2888.2 \\implies x = 76\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2x = -38000 \\implies x = 19000\\)",
         "graphData": null
       }
     ]
@@ -3594,33 +3594,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A buyer at Alpha Ventures purchases an electric guitar and a valve amplifier for a combined marked price of \\(400\\text{ dollars}\\). If the store gives a \\(20\\%\\) discount on the electric guitar and a \\(30\\%\\) discount on the valve amplifier, the final checkout price is exactly \\(303.80\\text{ dollars}\\). What was the original price of the electric guitar?",
-    "a": "\\(238\\)",
+    "question": "A municipal utility borrows 41000 dollars via two separate infrastructure loans. Loan A is charged at a flat interest rate of 4.5% p.a., and Loan B is charged at 6.5% p.a. If the total interest accrued at the end of the first year is exactly 2205.00 dollars, calculate the principal sum of Loan A.",
+    "a": "\\(23000\\)",
     "opts": [
-      "\\(238\\)",
-      "\\(262\\)",
-      "\\(250\\)",
-      "\\(214\\)"
+      "\\(20700\\)",
+      "\\(23000\\)",
+      "\\(25300\\)",
+      "\\(24150\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x and y.",
-        "workingOut": "\\(x + y = 400\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
+        "workingOut": "\\(x + y = 41000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{30}{100})y = 303.80 \\implies 0.80x + 0.70y = 303.80\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{4.5}{100}x + \\frac{6.5}{100}y = 2205.00 \\implies 4.5x + 6.5y = 220500\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.70(400 - x) = 303.80\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4.5x + 6.5(41000 - x) = 220500\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 23.80 \\implies x = 238\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2x = -46000 \\implies x = 23000\\)",
         "graphData": null
       }
     ]
@@ -3631,33 +3631,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Isabella sets up two separate commercial loans at Prime Enterprises totaling \\(40889\\text{ dollars}\\). Loan A is charged at a flat interest rate of \\(3\\%\\) per annum, and Loan B is charged at \\(9\\%\\) per annum. If the total interest interest accrued at the end of the first year is exactly \\(2564.01\\text{ dollars}\\), calculate the principal sum of Loan A.",
-    "a": "\\(18600\\)",
+    "question": "A research hospital secures two loans totaling 49000 dollars to buy equipment. The first loan rate is 5.2% p.a. and the second is 8.2% p.a. If the combined interest return at the end of the first year is 3148.00 dollars, determine the principal sum of the first loan.",
+    "a": "\\(29000\\)",
     "opts": [
-      "\\(18600\\)",
-      "\\(20460\\)",
-      "\\(16740\\)",
-      "\\(19530\\)"
+      "\\(29000\\)",
+      "\\(31900\\)",
+      "\\(26100\\)",
+      "\\(30450\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of the loans.",
-        "workingOut": "\\(x + y = 40889\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
+        "workingOut": "\\(x + y = 49000\\)",
         "graphData": null
       },
       {
         "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{9}{100}y = 2564.01 \\implies 3x + 9y = 256401\\)",
+        "workingOut": "\\(\\frac{5.2}{100}x + \\frac{8.2}{100}y = 3148.00 \\implies 5.2x + 8.2y = 314800\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the equation.",
-        "workingOut": "\\(3x + 9(40889 - x) = 256401\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(5.2x + 8.2(49000 - x) = 314800\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of Loan A.",
-        "workingOut": "\\(-6x = -111600 \\implies x = 18600\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2.999999999999999x = -86999.99999999994 \\implies x = 29000\\)",
         "graphData": null
       }
     ]
@@ -3668,33 +3668,33 @@ export const Y10_CH1F_HIGH_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Matthew invests a total capital of \\(22300\\text{ dollars}\\) divided between two accounts: government bonds yielding \\(4\\%\\) interest per annum, and corporate debentures yielding \\(8\\%\\) interest per annum. If the combined total interest received at the end of the first year is exactly \\(1316.00\\text{ dollars}\\), calculate the amount invested in the government bonds.",
-    "a": "\\(11700\\)",
+    "question": "A private school foundation secures two loans totaling 27000 dollars. Loan X has a flat rate of 4% p.a. and Loan Y has a flat rate of 6% p.a. If the combined annual interest charge is exactly 1300.00 dollars, find the principal amount of Loan X.",
+    "a": "\\(16000\\)",
     "opts": [
-      "\\(11700\\)",
-      "\\(10530\\)",
-      "\\(12870\\)",
-      "\\(12285\\)"
+      "\\(14400\\)",
+      "\\(17600\\)",
+      "\\(16800\\)",
+      "\\(16000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the two separate investment sums.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in bond, and } y \\text{ be the amount in corporate debentures. } x + y = 22300\\)",
+        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
+        "workingOut": "\\(x + y = 27000\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the linear interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{8}{100}y = 1316.00 \\implies 4x + 8y = 131600\\)",
+        "explanation": "Express the total annual interest from the flat rates.",
+        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 1300.00 \\implies 4x + 6y = 130000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 8(22300 - x) = 131600\\)",
+        "explanation": "Substitute y = total - x into the interest equation.",
+        "workingOut": "\\(4x + 6(27000 - x) = 130000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-4x = -46800 \\implies x = 11700\\)",
+        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
+        "workingOut": "\\(-2x = -32000 \\implies x = 16000\\)",
         "graphData": null
       }
     ]
