@@ -768,11 +768,8 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
 
   <div class="header">
     <div class="header-left">
-      <h1>${headerLeft}</h1>
+      <h1>${(year ? `${year} — ` : '') + (chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</h1>
       ${topicTitle ? `<div class="topic-line">${topicTitle} · ${questions.length} Questions</div>` : `<div class="topic-line">${questions.length} Questions</div>`}
-    </div>
-    <div class="header-right">
-      <div class="date">${dateStr}</div>
     </div>
   </div>
 
