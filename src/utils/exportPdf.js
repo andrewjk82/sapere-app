@@ -692,7 +692,11 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
     }
 
     @media print {
-      body { padding: 20px; }
+      @page {
+        size: auto;
+        margin: 15mm 15mm 15mm 15mm; /* custom margins strip browser headers/footers */
+      }
+      body { padding: 0; }
       .question-block { border: 1px solid #ddd; box-shadow: none; }
       .no-print { display: none !important; }
     }
