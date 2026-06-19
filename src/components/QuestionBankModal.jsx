@@ -1604,12 +1604,22 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       let savedQuestionId = editingQuestion;
       if (!editingQuestion) {
         payload.createdAt = serverTimestamp();
+        // Provenance: teacher-added questions are tagged 'teacher' so the
+        // chapter seeder's clear step never deletes them when re-seeding a
+        // topic that this question shares with a seed file.
+        payload.origin = 'teacher';
         const newRef = await addDoc(collection(db, 'questions'), payload);
         savedQuestionId = newRef.id;
       }
       const bankVersion = Date.now();
+      // `version` bumps on every save (drives daily-assignment content refresh).
+      // `membershipVersion` bumps ONLY when the set of question IDs changes
+      // (add / delete) — it drives practice_pool rebuilds. A content-only edit
+      // leaves membershipVersion untouched (merge:true preserves it), so we
+      // avoid rebuilding every student's pool for a typo fix.
       await setDoc(doc(db, 'sync_meta', 'questions'), {
         version: bankVersion,
+        ...(editingQuestion ? {} : { membershipVersion: bankVersion }),
         updatedAt: serverTimestamp(),
       }, { merge: true });
       // Keep the aggregate counts doc in step: new question → +1 per id;
@@ -1654,6 +1664,12 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       const bankVersion = Date.now();
       removeQuestionFromIndex(chapterId, id, bankVersion)
         .catch((err) => console.warn('question index sync failed:', err?.code || err));
+      // Deletion changes the active-question set → bump membershipVersion so
+      // every student's practice_pool drops this ID on their next session.
+      setDoc(doc(db, 'sync_meta', 'questions'), {
+        membershipVersion: bankVersion,
+        updatedAt: serverTimestamp(),
+      }, { merge: true }).catch((err) => console.warn('membershipVersion bump failed:', err?.code || err));
       // Aggregate counts doc: −1 for this question's chapter/topic.
       {
         const deleted = questions.find(q => q.id === id);

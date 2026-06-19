@@ -3,6 +3,19 @@ import { collection, writeBatch, doc, getDoc, setDoc, serverTimestamp, query, wh
 import { recountIds } from './questionCountsService';
 import { applySeedToIndexes } from './questionIndexService';
 
+// djb2-style hash of sorted question IDs — fast, zero-dependency, no Firestore reads.
+const hashSeedIds = (seed) => {
+  if (!Array.isArray(seed) || seed.length === 0) return '0';
+  const str = seed.map((q) => q.id || '').sort().join(',');
+  let h = 5381;
+  for (let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0;
+  return (h >>> 0).toString(36);
+};
+
+const SEED_HASHES_REF = () => doc(db, 'sync_meta', 'seed_hashes');
+// Session guard: only run auto-sync once per admin browser session.
+const AUTO_SYNC_SESSION_KEY = 'sapere:seeds:autoSynced';
+
 /**
  * Generic chapter question seeder.
  *
@@ -70,6 +83,10 @@ const mapSeedQuestion = (raw, chapter) => {
     topicTitle: resolvedTopicTitle,
     year: chapter.year,
     isManual: true,
+    // Provenance tag: questions written by the seeder are 'seed'. Teacher-added
+    // questions are tagged 'teacher' (see QuestionBankModal) and the seeder's
+    // clear step never deletes them, so manual additions survive re-seeding.
+    origin: 'seed',
     title: `${questionText.replace(/\$/g, '').slice(0, 30)}...`,
     question: questionText,
     difficulty: raw.difficulty || 'medium',
@@ -117,28 +134,43 @@ export const seedChapterQuestions = async (chapter) => {
   const indexRemoved = {}; // { [chapterId]: [questionId, ...] }
   const indexAdded = {};
 
-  const topicIndexSnap = await getDoc(doc(db, 'question_topic_index', chapter.topicId));
-  let existingIds = topicIndexSnap.exists() ? (topicIndexSnap.data().ids || []) : null;
+  // The IDs the new seed will (over)write. Reconciliation deletes only the
+  // STALE seed questions — prior seed IDs that are no longer in the seed file.
+  // Questions never written by the seeder (teacher-added, origin:'teacher') are
+  // never in this set and are never deleted.
+  const newSeedIds = new Set(seed.map((raw) => raw.id).filter(Boolean));
 
-  if (existingIds === null) {
-    // First-time seed — fall back to full query to catch orphaned docs.
+  const topicIndexSnap = await getDoc(doc(db, 'question_topic_index', chapter.topicId));
+  const topicIndexIds = topicIndexSnap.exists() ? (topicIndexSnap.data().ids || []) : null;
+
+  let toDelete;
+  if (topicIndexIds !== null) {
+    // Fast path: question_topic_index holds ONLY prior seed IDs (teacher-added
+    // questions are never written there). Delete prior seed IDs dropped from
+    // the seed file; keep everything else.
+    toDelete = topicIndexIds.filter((id) => !newSeedIds.has(id));
+  } else {
+    // Fallback (first-ever seed for this topic, or pre-index orphans): full
+    // query. Delete only NON-teacher questions that aren't in the new seed, so
+    // any manually-added question on this topic is preserved.
     const snap = await getDocsFromServer(
       query(collRef, where('topicId', '==', chapter.topicId))
     );
-    existingIds = snap.docs.map(d => d.id);
+    toDelete = [];
     snap.docs.forEach((d) => {
       const data = d.data();
       if (data.chapterId) affectedChapterIds.add(data.chapterId);
       if (data.topicId) affectedTopicIds.add(data.topicId);
+      if (data.origin !== 'teacher' && !newSeedIds.has(d.id)) toDelete.push(d.id);
     });
   }
 
-  if (existingIds.length > 0) {
-    (indexRemoved[chapter.chapterId] = indexRemoved[chapter.chapterId] || []).push(...existingIds);
+  if (toDelete.length > 0) {
+    (indexRemoved[chapter.chapterId] = indexRemoved[chapter.chapterId] || []).push(...toDelete);
     const CHUNK = 400;
-    for (let i = 0; i < existingIds.length; i += CHUNK) {
+    for (let i = 0; i < toDelete.length; i += CHUNK) {
       const clearBatch = writeBatch(db);
-      existingIds.slice(i, i + CHUNK).forEach(id => clearBatch.delete(doc(collRef, id)));
+      toDelete.slice(i, i + CHUNK).forEach(id => clearBatch.delete(doc(collRef, id)));
       await clearBatch.commit();
     }
   }
@@ -228,4 +260,67 @@ export const seedChapterQuestions = async (chapter) => {
     console.warn('ExamPrep cache invalidation after seed failed (non-fatal):', err);
   }
   return seed.length;
+};
+
+/**
+ * Auto-sync: compare local seed hashes with the last-synced hashes stored in
+ * sync_meta/seed_hashes (1 Firestore read). For each topic whose hash changed,
+ * run seedChapterQuestions. Updates seed_hashes after syncing.
+ *
+ * Cost when nothing changed: 1 read.
+ * Cost when N topics changed: 1 read + batch writes for those N topics only.
+ *
+ * Called once per admin browser session (guarded by sessionStorage flag).
+ */
+export const autoSyncSeedsIfChanged = async () => {
+  try {
+    const alreadyRan = sessionStorage.getItem(AUTO_SYNC_SESSION_KEY);
+    if (alreadyRan) return { synced: 0, skipped: true };
+  } catch (_) { /* private mode — proceed */ }
+
+  try {
+    const { CHAPTER_SEED_REGISTRY } = await import('../constants/curriculumSeeds.js');
+    if (!Array.isArray(CHAPTER_SEED_REGISTRY) || CHAPTER_SEED_REGISTRY.length === 0) return { synced: 0 };
+
+    // 1 read: fetch stored hashes
+    const hashSnap = await getDoc(SEED_HASHES_REF());
+    const storedHashes = hashSnap.exists() ? (hashSnap.data() || {}) : {};
+
+    // Compute current hashes client-side (zero reads)
+    const currentHashes = {};
+    CHAPTER_SEED_REGISTRY.forEach((entry) => {
+      if (entry.topicId) currentHashes[entry.topicId] = hashSeedIds(entry.seed);
+    });
+
+    const changedEntries = CHAPTER_SEED_REGISTRY.filter(
+      (entry) => entry.topicId && currentHashes[entry.topicId] !== storedHashes[entry.topicId]
+    );
+
+    if (changedEntries.length === 0) {
+      try { sessionStorage.setItem(AUTO_SYNC_SESSION_KEY, '1'); } catch (_) {}
+      console.info('[autoSyncSeeds] all seeds up-to-date — no sync needed');
+      return { synced: 0 };
+    }
+
+    console.info(`[autoSyncSeeds] ${changedEntries.length} topic(s) changed — syncing...`);
+    let synced = 0;
+    for (const entry of changedEntries) {
+      try {
+        const count = await seedChapterQuestions(entry);
+        console.info(`  ✓ ${entry.topicId} (${count} questions)`);
+        synced++;
+      } catch (err) {
+        console.warn(`  ✗ ${entry.topicId} seed failed:`, err?.code || err);
+      }
+    }
+
+    // Persist updated hashes (merge so unrelated topics are preserved)
+    await setDoc(SEED_HASHES_REF(), { ...currentHashes, _updatedAt: Date.now() }, { merge: true });
+    try { sessionStorage.setItem(AUTO_SYNC_SESSION_KEY, '1'); } catch (_) {}
+    console.info(`[autoSyncSeeds] done — synced ${synced}/${changedEntries.length} topic(s)`);
+    return { synced };
+  } catch (err) {
+    console.warn('[autoSyncSeeds] failed (non-fatal):', err?.code || err);
+    return { synced: 0, error: err };
+  }
 };

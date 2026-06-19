@@ -400,13 +400,19 @@ function App() {
   }, [isAdmin, user, showToast]);
   
   // Question-index freshness: if the question bank changed outside the
-  // incremental hooks (e.g. legacy import tools that only bump sync_meta),
-  // rebuild the per-chapter sampling indexes once per admin session.
+  // On admin login: (1) auto-sync any seed files that changed since last session
+  // (1 Firestore read when nothing changed; batch writes only when topics changed),
+  // then (2) rebuild question_index if the bank version drifted (legacy imports).
   useEffect(() => {
     if (!user?.uid || !isAdmin) return;
-    import('./services/questionIndexService')
-      .then(({ ensureQuestionIndexFresh }) => ensureQuestionIndexFresh())
-      .catch((err) => console.warn('question index freshness check failed:', err?.code || err));
+    import('./services/chapterSeeder')
+      .then(({ autoSyncSeedsIfChanged }) => autoSyncSeedsIfChanged())
+      .catch((err) => console.warn('auto seed sync failed:', err?.code || err))
+      .finally(() => {
+        import('./services/questionIndexService')
+          .then(({ ensureQuestionIndexFresh }) => ensureQuestionIndexFresh())
+          .catch((err) => console.warn('question index freshness check failed:', err?.code || err));
+      });
   }, [user?.uid, isAdmin]);
 
   // Secret-Note blocklist: when a teacher flags a broken question, purge any

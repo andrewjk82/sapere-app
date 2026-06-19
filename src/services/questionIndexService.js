@@ -86,23 +86,32 @@ export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) 
     const add = [...new Set((added[chapterId] || []).map(String))];
     // An id being re-seeded appears in both lists — keep it (add wins).
     const rem = [...new Set((removed[chapterId] || []).map(String))].filter((id) => !add.includes(id));
+    const ARRAY_LIMIT = 100;
     if (rem.length) {
-      ops.push(setDoc(indexRef(chapterId), {
-        ids: arrayRemove(...rem),
-        updatedAt: serverTimestamp(),
-      }, { merge: true }));
+      for (let i = 0; i < rem.length; i += ARRAY_LIMIT) {
+        const chunk = rem.slice(i, i + ARRAY_LIMIT);
+        ops.push(setDoc(indexRef(chapterId), {
+          ids: arrayRemove(...chunk),
+          updatedAt: serverTimestamp(),
+        }, { merge: true }));
+      }
     }
     if (add.length) {
-      ops.push(setDoc(indexRef(chapterId), {
-        ids: arrayUnion(...add),
-        updatedAt: serverTimestamp(),
-      }, { merge: true }));
+      for (let i = 0; i < add.length; i += ARRAY_LIMIT) {
+        const chunk = add.slice(i, i + ARRAY_LIMIT);
+        ops.push(setDoc(indexRef(chapterId), {
+          ids: arrayUnion(...chunk),
+          updatedAt: serverTimestamp(),
+        }, { merge: true }));
+      }
     }
   });
   await Promise.all(ops);
   const v = Number(version) || Date.now();
+  // Seeding changes the active-question set → also bump membershipVersion so
+  // students' practice_pool signatures rebuild and pick up added/removed IDs.
   await Promise.all([
-    setDoc(questionsVersionRef(), { version: v, updatedAt: serverTimestamp() }, { merge: true }),
+    setDoc(questionsVersionRef(), { version: v, membershipVersion: v, updatedAt: serverTimestamp() }, { merge: true }),
     setDoc(metaRef(), { builtVersion: v, updatedAt: serverTimestamp() }, { merge: true }),
   ]);
 };

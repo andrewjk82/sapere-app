@@ -68,10 +68,10 @@ const shuffle = (arr) => {
  *
  * Returns: pool data object (Firestore 데이터 형태)
  */
-export const ensurePracticePool = async (uid, studentProfile) => {
+export const ensurePracticePool = async (uid, studentProfile, membershipVersion) => {
   if (!uid) throw new Error('uid required');
 
-  const newSignature = getCurriculumSignature(studentProfile);
+  const newSignature = getCurriculumSignature(studentProfile, membershipVersion);
 
   // 세션 캐시 히트 → Firestore read 없음
   const cached = getCached(uid, newSignature);
