@@ -256,11 +256,24 @@ export const buildDailyTargets = (studentProfile = {}) => {
   if (assignedYears.length === 0) assignedYears = [DEFAULT_YEAR];
 
   // Priority: dailyPracticeConfig.chapters → curriculum assignedChapters → all chapters of year.
+  //
+  // IMPORTANT: dailyPracticeConfig is the source of truth for daily practice.
+  // When the teacher set config.years (e.g. "Year 9 (All)") but left
+  // config.chapters empty, that explicitly means "all chapters of those years"
+  // — we must NOT narrow it down with the Curriculum-tab assignedChapters
+  // (which is progress tracking, not a practice scope). Falling back to
+  // assignedChapters here used to shrink "Year 9 (All)" down to the 1-2
+  // progress-tracked chapters, which could yield an empty target pool and
+  // break daily practice entirely. The curriculum-tab fallback therefore only
+  // applies when NO dailyPracticeConfig (years or chapters) is set at all.
+  const hasDailyConfig = hasConfigYears || hasConfigChapters;
   let assignedChapters = hasConfigChapters
     ? config.chapters.slice()
-    : hasCurriculumChapters
-      ? curriculumChapters.slice()
-      : [];
+    : hasDailyConfig
+      ? [] // config.years only → all chapters of those years
+      : hasCurriculumChapters
+        ? curriculumChapters.slice()
+        : [];
 
   const assignedTopics = [];
 
@@ -433,7 +446,8 @@ const fetchManualQuestions = async (targets, { questionCount = 10, recentlySeen 
 
   const chapterPools = await Promise.all(chaptersToQuery.map(async (chapterId) => {
     const index = await readChapterIndex(chapterId);
-    if (!index) return { chapterId, ids: null }; // no index yet → legacy
+    // index 없거나 ids 비어있으면 → legacy 경로로 폴백
+    if (!index || index.ids.length === 0) return { chapterId, ids: null };
     const all = index.ids;
     let unseen = all.filter((id) => !recentlySeen.has(String(id)));
     if (unseen.length === 0 && all.length > 0) {
@@ -473,8 +487,8 @@ const fetchManualQuestions = async (targets, { questionCount = 10, recentlySeen 
 
   // Unindexed chapters: legacy random-window fallback.
   const legacyChapters = chapterPools.filter((p) => p.ids === null).map((p) => p.chapterId);
-  // Cap legacy queries to 6 chapters to prevent burning read quota if indexes are missing
-  const cappedLegacyChapters = shuffle(legacyChapters).slice(0, 6);
+  // Cap 늘림: 20개 챕터 전체 커버 가능하도록 (기존 6은 Year 9 전체 할당 시 seeded 챕터를 못 잡는 문제 있었음)
+  const cappedLegacyChapters = shuffle(legacyChapters).slice(0, 20);
   const legacyDocs = (await Promise.all(
     cappedLegacyChapters.map((chapterId) => fetchChapterQuestionsLegacy(chapterId)),
   )).flat();
@@ -562,12 +576,20 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
   const orderById = new Map(selectedIds.map((id, i) => [String(id), i]));
   rawDocs.sort((a, b) => (orderById.get(String(a.id)) ?? 0) - (orderById.get(String(b.id)) ?? 0));
 
-  const questions = rawDocs
+  let questions = rawDocs
     .filter((d) => d.isActive !== false)
     .map(slimQuestion)
     .map(correctQuestionAnswer);
 
   const targets = buildDailyTargets(studentProfile);
+
+  // question_index 미구축으로 practicePool이 0개를 반환한 경우 legacy 경로로 폴백.
+  if (questions.length === 0) {
+    const recentlySeen = await fetchRecentlySeenQuestionIds(uid);
+    const { questions: legacyQs, pruneIds } = await fetchManualQuestions(targets, { questionCount, recentlySeen });
+    questions = legacyQs.map(correctQuestionAnswer);
+    if (pruneIds.length > 0) pruneSeenQuestions(uid, pruneIds).catch(() => {});
+  }
 
   // Top up the shortfall with procedurally-generated questions for the lower
   // years (Year 1-6), which rely on generation rather than seeded questions.
