@@ -49,7 +49,7 @@ const optLetter = (i) => String.fromCharCode(65 + i);
 /**
  * Generate the full HTML document for the printable question sheet.
  */
-const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime = 5, workingTime = 60, showAnswers = true }) => {
+const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, readingTime = 5, workingTime = 60, showAnswers = true }) => {
   const title = `${chapterTitle || ''} – ${topicTitle || 'Questions'}`.trim().replace(/^–\s*/, '');
   const headerLeft = year ? `${year} — ${chapterTitle || ''}` : (chapterTitle || '');
   const dateStr = new Date().toLocaleDateString('en-AU', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ', ' + new Date().toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
@@ -711,7 +711,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
         <span style="font-size: 1.4rem; font-weight: 900; color: #7c3aed; letter-spacing: 0.05em; text-transform: uppercase; display: block; margin-top: 2px;">Academia</span>
       </div>
       <div class="cover-metadata">
-        <div>${year || (chapterTitle.toLowerCase().includes('year') ? '' : 'Year 10')}</div>
+        <div>${year || (chapterTitle.toLowerCase().includes('year') ? '' : 'Year 10')} ${course ? `— ${course}` : ''}</div>
         <div>${(chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</div>
         <div>${topicTitle || ''}</div>
       </div>
@@ -721,15 +721,17 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
       <div class="cover-subject">Mathematics Assessment</div>
       <div class="cover-title" style="margin-bottom: 8px;">
         ${(() => {
-          if (year && year.trim()) return year;
-          if (chapterTitle.toLowerCase().includes('year 12')) return 'Year 12';
-          if (chapterTitle.toLowerCase().includes('year 11')) return 'Year 11';
-          if (chapterTitle.toLowerCase().includes('year 10')) return 'Year 10';
-          if (chapterTitle.toLowerCase().includes('year 9')) return 'Year 9';
-          if (chapterTitle.toLowerCase().includes('year 8')) return 'Year 8';
-          if (chapterTitle.toLowerCase().includes('year 7')) return 'Year 7';
-          if (chapterTitle.toLowerCase().includes('year 6')) return 'Year 6';
-          return 'Year 10';
+          let yr = 'Year 10';
+          if (year && year.trim()) yr = year;
+          else if (chapterTitle.toLowerCase().includes('year 12')) yr = 'Year 12';
+          else if (chapterTitle.toLowerCase().includes('year 11')) yr = 'Year 11';
+          else if (chapterTitle.toLowerCase().includes('year 10')) yr = 'Year 10';
+          else if (chapterTitle.toLowerCase().includes('year 9')) yr = 'Year 9';
+          else if (chapterTitle.toLowerCase().includes('year 8')) yr = 'Year 8';
+          else if (chapterTitle.toLowerCase().includes('year 7')) yr = 'Year 7';
+          else if (chapterTitle.toLowerCase().includes('year 6')) yr = 'Year 6';
+          
+          return yr + (course ? ` ${course}` : '');
         })()}
       </div>
       <div class="cover-subtitle" style="font-size: 2.8rem; font-weight: 900; color: #1e1b4b; line-height: 1.15; margin-top: 4px; letter-spacing: -0.03em;">
@@ -772,7 +774,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
 
   <div class="header">
     <div class="header-left">
-      <h1>${(year ? `${year} — ` : '') + (chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</h1>
+      <h1>${(year ? `${year}${course ? ` ${course}` : ''} — ` : '') + (chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</h1>
       ${topicTitle ? `<div class="topic-line">${topicTitle} · ${questions.length} Questions</div>` : `<div class="topic-line">${questions.length} Questions</div>`}
     </div>
   </div>
@@ -868,6 +870,7 @@ export const exportQuestionsPdf = (questions, meta, options = {}) => {
     chapterTitle: meta.chapterTitle || '',
     topicTitle: meta.topicTitle || '',
     year: meta.year || '',
+    course: meta.course || '',
     readingTime: meta.readingTime || 5,
     workingTime: meta.workingTime || 60,
     showAnswers,

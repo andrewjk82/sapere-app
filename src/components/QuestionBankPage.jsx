@@ -108,6 +108,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
               chapterTitle: chapter.title,
               topicTitle: topic?.title || 'All Topics',
               year: chapter.year || '',
+              course: chapter.course || '',
               readingTime: pdfReadingTime,
               workingTime: pdfWorkingTime,
             }, { showAnswers: pdfWithAnswers, count: pdfCount });
@@ -124,6 +125,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         chapterTitle: chapter.title,
         topicTitle: topic?.title || 'All Topics',
         year: chapter.year || '',
+        course: chapter.course || '',
         readingTime: pdfReadingTime,
         workingTime: pdfWorkingTime,
       }, { showAnswers: pdfWithAnswers, count: pdfCount });
