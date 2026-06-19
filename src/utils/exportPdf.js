@@ -88,8 +88,6 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, readingTime
       <div class="question-block">
         <div class="question-header">
           <span class="question-number">Question ${idx + 1}</span>
-          <span class="difficulty-badge ${difficulty}">${diffBadge}</span>
-          <span class="type-badge">${type.replace(/_/g, ' ')}</span>
         </div>
         <div class="question-text">${mathHtml(questionText)}</div>
     `;
