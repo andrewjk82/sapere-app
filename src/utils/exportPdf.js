@@ -36,8 +36,9 @@ const mathHtml = (text) => {
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
-    // Convert literal \n sequences to <br>
-    .replace(/\\n/g, '<br>');
+    // Convert newlines and literal \n sequences to <br> (avoiding LaTeX commands like \neq)
+    .replace(/\n/g, '<br>')
+    .replace(/\\n(?![a-zA-Z])/g, '<br>');
   return escaped;
 };
 
