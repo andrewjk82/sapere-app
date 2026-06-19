@@ -576,36 +576,32 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     // Lock immediately so auto-update can't reload the page during Firebase writes.
     if (setIsLocked) setIsLocked(true);
 
-    // Firebase start-record (crash-safety lock)
-    if (user?.uid) {
-      setLoading(true);
-      try {
-        const now = new Date();
-        await setDoc(doc(db, 'users', user.uid, 'calc_stats', today), {
-          completed: false, abandoned: true, score: 0, total: qCount,
-          challengeType: 'calc',
-          timestamp: now.toISOString(), date: today,
-          dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
-          questionCount: qCount,
-          engineVersion: sessionMeta.engineVersion,
-          generationMode: sessionMeta.generationMode,
-          seed: sessionMeta.seed,
-        }, { merge: true });
-        await writeChallengeStatusMeta(user.uid, today, 'calc', 'abandoned');
-        updateAdminDailySummary({ userId: user.uid, date: today, challengeType: 'calc', score: 0, total: qCount, studentProfile, user })
-          .catch(e => console.warn('Admin summary pre-write failed:', e));
-      } catch (err) {
-        console.error('Calc start-up Firebase lock failed:', err);
-        showToast('Connection failed. Please check your internet and try again.', 'error');
-        if (setIsLocked) setIsLocked(false);
-        setLoading(false);
-        return;
-      }
-    }
-
+    // Enter the quiz immediately. The crash-safety lock writes below run in the
+    // background (fire-and-forget) — awaiting them risked an infinite spinner,
+    // since Firestore setDoc only resolves on backend ack and never rejects when
+    // the connection is stalled (offline / quota).
     beginQuiz(combinedQs);
     setCalcAbandonedToday(true);
     mergeChallengeBootCache(user?.uid, { date: today, calcStatus: 'abandoned', calcCompletedToday: false, calcAbandonedToday: true, savedAt: Date.now() });
+
+    // Firebase start-record (crash-safety lock) — non-blocking
+    if (user?.uid) {
+      const now = new Date();
+      setDoc(doc(db, 'users', user.uid, 'calc_stats', today), {
+        completed: false, abandoned: true, score: 0, total: qCount,
+        challengeType: 'calc',
+        timestamp: now.toISOString(), date: today,
+        dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
+        questionCount: qCount,
+        engineVersion: sessionMeta.engineVersion,
+        generationMode: sessionMeta.generationMode,
+        seed: sessionMeta.seed,
+      }, { merge: true }).catch(e => console.warn('Calc start-lock write failed (non-fatal):', e?.code || e));
+      writeChallengeStatusMeta(user.uid, today, 'calc', 'abandoned')
+        .catch(e => console.warn('Calc status-meta write failed (non-fatal):', e?.code || e));
+      updateAdminDailySummary({ userId: user.uid, date: today, challengeType: 'calc', score: 0, total: qCount, studentProfile, user })
+        .catch(e => console.warn('Admin summary pre-write failed:', e));
+    }
   };
 
   const startDailyQuiz = async () => {
@@ -615,12 +611,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setLoading(true);
       const today = new Date().toLocaleDateString('en-CA');
 
-      const assignment = await fetchOrCreateDailyAssignment({
-        uid: user?.uid,
-        studentProfile: { ...(studentProfile || {}), difficultyMix: chapterProgress?.difficultyMix },
-        dateKey: today,
-        questionCount: qCount,
-      });
+      // Timeout guard: a Firestore write inside fetchOrCreateDailyAssignment
+      // (new-assignment create / prep stamp) only resolves on backend ack, so a
+      // stalled connection could hang here forever. Surface an error instead.
+      const assignment = await Promise.race([
+        fetchOrCreateDailyAssignment({
+          uid: user?.uid,
+          studentProfile: { ...(studentProfile || {}), difficultyMix: chapterProgress?.difficultyMix },
+          dateKey: today,
+          questionCount: qCount,
+        }),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('Assignment load timed out')), 12000)),
+      ]);
       const combinedQs = (assignment.questions || []).map(correctQuestionAnswer);
       if (combinedQs.length === 0) throw new Error('No daily assignment questions were generated.');
 
@@ -628,26 +630,32 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       // Lock immediately so auto-update can't reload the page during Firebase writes.
       if (setIsLocked) setIsLocked(true);
 
-      // Firebase start-record (crash-safety lock)
+      // Enter the quiz immediately. The crash-safety lock writes below run in the
+      // background (fire-and-forget). Awaiting them risked an infinite spinner:
+      // Firestore setDoc promises only resolve on backend acknowledgement, so an
+      // offline/quota-stalled connection leaves the write pending forever — never
+      // rejecting, so the catch never fires and `loading` never clears.
+      beginQuiz(combinedQs);
+      setAbandonedToday(true);
+      mergeChallengeBootCache(user?.uid, { date: today, dailyStatus: 'abandoned', todayCompleted: false, abandonedToday: true, savedAt: Date.now() });
+
+      // Firebase start-record (crash-safety lock) — non-blocking
       if (user?.uid) {
         const now = new Date();
-        await setDoc(doc(db, 'users', user.uid, 'daily_stats', today), {
+        setDoc(doc(db, 'users', user.uid, 'daily_stats', today), {
           completed: false, abandoned: true, score: 0, total: combinedQs.length,
           challengeType: 'daily',
           timestamp: now.toISOString(), date: today,
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
           questionCount: combinedQs.length,
           assignmentVersion: assignment.version || null,
-        }, { merge: true });
-        await writeChallengeStatusMeta(user.uid, today, 'daily', 'abandoned');
-        await markDailyAssignmentStarted(user.uid, today).catch(() => {});
+        }, { merge: true }).catch(e => console.warn('Daily start-lock write failed (non-fatal):', e?.code || e));
+        writeChallengeStatusMeta(user.uid, today, 'daily', 'abandoned')
+          .catch(e => console.warn('Daily status-meta write failed (non-fatal):', e?.code || e));
+        markDailyAssignmentStarted(user.uid, today).catch(() => {});
         updateAdminDailySummary({ userId: user.uid, date: today, challengeType: 'daily', score: 0, total: combinedQs.length, studentProfile, user })
           .catch(e => console.warn('Admin summary pre-write failed:', e));
       }
-
-      beginQuiz(combinedQs);
-      setAbandonedToday(true);
-      mergeChallengeBootCache(user?.uid, { date: today, dailyStatus: 'abandoned', todayCompleted: false, abandonedToday: true, savedAt: Date.now() });
     } catch (error) {
       console.error('Critical error in startDailyQuiz:', error);
       showToast(`Failed to start challenge${error?.message ? ` (${error.message})` : ''}. Please check your assigned curriculum or try again later.`, 'error');
