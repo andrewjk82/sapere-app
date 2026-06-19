@@ -272,12 +272,11 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     .cover-page {
       display: flex;
       flex-direction: column;
-      height: 100vh;
-      max-height: 1000px;
+      height: 250mm;
       justify-content: space-between;
       page-break-after: always;
       break-after: page;
-      padding: 20px 0 60px 0;
+      padding: 10px 0 30px 0;
       box-sizing: border-box;
     }
 
