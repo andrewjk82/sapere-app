@@ -592,6 +592,8 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
       gap: 10px;
       margin-bottom: 8px;
       align-items: flex-start;
+      page-break-inside: avoid;
+      break-inside: avoid;
     }
 
     .step-num {
@@ -641,6 +643,8 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
       gap: 10px;
       margin-bottom: 14px;
       align-items: flex-start;
+      page-break-inside: avoid;
+      break-inside: avoid;
     }
 
     .sub-label {
