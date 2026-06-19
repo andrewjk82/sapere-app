@@ -251,6 +251,8 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
       throwOnError: false
     });">
   </script>
+  <!-- Load html2pdf.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700&display=swap');
 
@@ -288,7 +290,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     }
 
     .cover-logo-text {
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       font-weight: 900;
       letter-spacing: -0.02em;
       color: #7c3aed;
@@ -809,11 +811,44 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
   <div class="page-footer"></div>
 
   <script>
-    // Auto-trigger print dialog after math is rendered
+    // Trigger html2pdf to download the document after rendering
     window.addEventListener('load', function() {
+      // Give KaTeX a moment to render the formulas nicely before generating PDF
       setTimeout(function() {
-        window.print();
-      }, 1500); // give KaTeX time to render
+        const filename = "${title.replace(/\s+/g, '_')}_${showAnswers ? 'Answers' : 'Student'}.pdf";
+        const element = document.body;
+        const opt = {
+          margin:       [15, 15, 20, 15],
+          filename:     filename,
+          image:        { type: 'jpeg', quality: 0.98 },
+          html2canvas:  { scale: 2, useCORS: true, letterRendering: true },
+          jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+          pagebreak:    { mode: ['css', 'legacy'] }
+        };
+        
+        // Generate and download PDF, then close the tab automatically
+        html2pdf().set(opt).from(element).toPdf().get('pdf').then(function(pdf) {
+          const totalPages = pdf.internal.getNumberOfPages();
+          for (let i = 1; i <= totalPages; i++) {
+            if (i === 1) continue; // Skip cover page
+            pdf.setPage(i);
+            pdf.setFontSize(9);
+            pdf.setTextColor(148, 163, 184); // #94a3b8
+            pdf.setFont("helvetica", "normal");
+            const pageWidth = pdf.internal.pageSize.getWidth();
+            const pageHeight = pdf.internal.pageSize.getHeight();
+            // i - 1 because we skipped the cover page
+            pdf.text(String(i - 1), pageWidth / 2, pageHeight - 10, { align: 'center' });
+          }
+        }).save().then(() => {
+          setTimeout(() => {
+            window.close();
+          }, 1000);
+        }).catch(err => {
+          console.error("PDF generation failed, falling back to window.print():", err);
+          window.print();
+        });
+      }, 2000);
     });
   </script>
 </body>
