@@ -144,10 +144,12 @@ export const seedChapterQuestions = async (chapter) => {
   const topicIndexIds = topicIndexSnap.exists() ? (topicIndexSnap.data().ids || []) : null;
 
   let toDelete;
+  const priorSeedIds = new Set(); // seed-origin IDs that existed before this run
   if (topicIndexIds !== null) {
     // Fast path: question_topic_index holds ONLY prior seed IDs (teacher-added
     // questions are never written there). Delete prior seed IDs dropped from
     // the seed file; keep everything else.
+    topicIndexIds.forEach((id) => priorSeedIds.add(String(id)));
     toDelete = topicIndexIds.filter((id) => !newSeedIds.has(id));
   } else {
     // Fallback (first-ever seed for this topic, or pre-index orphans): full
@@ -161,9 +163,15 @@ export const seedChapterQuestions = async (chapter) => {
       const data = d.data();
       if (data.chapterId) affectedChapterIds.add(data.chapterId);
       if (data.topicId) affectedTopicIds.add(data.topicId);
+      if (data.origin !== 'teacher') priorSeedIds.add(String(d.id));
       if (data.origin !== 'teacher' && !newSeedIds.has(d.id)) toDelete.push(d.id);
     });
   }
+
+  // Report counts: how the seed changed this topic.
+  const addedCount = [...newSeedIds].filter((id) => !priorSeedIds.has(String(id))).length;
+  const removedCount = toDelete.length;
+  const updatedCount = seed.length - addedCount; // existing seed questions overwritten
 
   if (toDelete.length > 0) {
     (indexRemoved[chapter.chapterId] = indexRemoved[chapter.chapterId] || []).push(...toDelete);
@@ -259,7 +267,15 @@ export const seedChapterQuestions = async (chapter) => {
   } catch (err) {
     console.warn('ExamPrep cache invalidation after seed failed (non-fatal):', err);
   }
-  return seed.length;
+  // Detailed result for the admin sync report (added/removed/updated this run).
+  return {
+    topicId: chapter.topicId,
+    label: chapter.label || chapter.topicTitle || chapter.topicId,
+    total: seed.length,
+    added: addedCount,
+    removed: removedCount,
+    updated: updatedCount,
+  };
 };
 
 /**
@@ -303,22 +319,32 @@ export const autoSyncSeedsIfChanged = async () => {
     }
 
     console.info(`[autoSyncSeeds] ${changedEntries.length} topic(s) changed — syncing...`);
-    let synced = 0;
+    const report = []; // per-topic detail for the admin sync report
+    const failed = [];
     for (const entry of changedEntries) {
       try {
-        const count = await seedChapterQuestions(entry);
-        console.info(`  ✓ ${entry.topicId} (${count} questions)`);
-        synced++;
+        const res = await seedChapterQuestions(entry);
+        console.info(`  ✓ ${entry.topicId} — +${res.added}/−${res.removed}/~${res.updated} (total ${res.total})`);
+        report.push(res);
       } catch (err) {
         console.warn(`  ✗ ${entry.topicId} seed failed:`, err?.code || err);
+        failed.push({ topicId: entry.topicId, label: entry.label || entry.topicId, error: String(err?.code || err?.message || err) });
       }
     }
 
-    // Persist updated hashes (merge so unrelated topics are preserved)
-    await setDoc(SEED_HASHES_REF(), { ...currentHashes, _updatedAt: Date.now() }, { merge: true });
+    // Persist updated hashes (merge so unrelated topics are preserved). Only
+    // stamp hashes for topics that actually synced, so a failed topic retries
+    // next session instead of being marked done.
+    const syncedHashes = {};
+    report.forEach((r) => { syncedHashes[r.topicId] = currentHashes[r.topicId]; });
+    await setDoc(SEED_HASHES_REF(), { ...syncedHashes, _updatedAt: Date.now() }, { merge: true });
     try { sessionStorage.setItem(AUTO_SYNC_SESSION_KEY, '1'); } catch (_) {}
-    console.info(`[autoSyncSeeds] done — synced ${synced}/${changedEntries.length} topic(s)`);
-    return { synced };
+    console.info(`[autoSyncSeeds] done — synced ${report.length}/${changedEntries.length} topic(s)`);
+    // Aggregate totals for a quick headline.
+    const totals = report.reduce((a, r) => ({
+      added: a.added + r.added, removed: a.removed + r.removed, updated: a.updated + r.updated,
+    }), { added: 0, removed: 0, updated: 0 });
+    return { synced: report.length, report, failed, totals };
   } catch (err) {
     console.warn('[autoSyncSeeds] failed (non-fatal):', err?.code || err);
     return { synced: 0, error: err };

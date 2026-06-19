@@ -8,6 +8,7 @@ import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
 import ErrorBoundary from './components/ErrorBoundary';
 import MedalCelebrationModal from './components/MedalCelebrationModal';
+import SeedSyncReport from './components/SeedSyncReport';
 import {
   evaluateWeeklyProgress,
   getUnseenMedals,
@@ -328,6 +329,8 @@ function App() {
 
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
   const [cloudAppVersion, setCloudAppVersion] = useState('');
+  // Result of the on-login seed auto-sync, surfaced to admins as a report panel.
+  const [seedSyncReport, setSeedSyncReport] = useState(null);
   const [isLocked, setIsLocked] = useState(false);
   const isLockedRef = useRef(false);
   useEffect(() => { isLockedRef.current = isLocked; }, [isLocked]);
@@ -407,6 +410,13 @@ function App() {
     if (!user?.uid || !isAdmin) return;
     import('./services/chapterSeeder')
       .then(({ autoSyncSeedsIfChanged }) => autoSyncSeedsIfChanged())
+      .then((res) => {
+        // Surface a report when the seed auto-sync actually changed something
+        // (or hit a per-topic failure) so the admin sees what was updated.
+        if (res && ((res.synced > 0) || (res.failed && res.failed.length > 0))) {
+          setSeedSyncReport(res);
+        }
+      })
       .catch((err) => console.warn('auto seed sync failed:', err?.code || err))
       .finally(() => {
         import('./services/questionIndexService')
@@ -1181,6 +1191,11 @@ function App() {
           medals={celebrationMedals}
           onClose={dismissCelebration}
         />,
+        document.body,
+      )}
+
+      {seedSyncReport && createPortal(
+        <SeedSyncReport report={seedSyncReport} onClose={() => setSeedSyncReport(null)} />,
         document.body,
       )}
 
