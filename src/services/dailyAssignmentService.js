@@ -84,7 +84,7 @@ const CHAPTER_YEAR_MAP = (() => {
 // changes and a previously-generated daily assignment is regenerated.
 // NOTE: the Curriculum tab's progress tracking (assignedChapters/assignedTopics)
 // is intentionally excluded — it does not affect daily practice.
-export const getCurriculumSignature = (studentProfile = {}) => {
+export const getCurriculumSignature = (studentProfile = {}, membershipVersion) => {
   const rawYear = studentProfile.assignedYear || studentProfile.year || DEFAULT_YEAR;
   const years = (Array.isArray(rawYear)
     ? rawYear
@@ -96,7 +96,11 @@ export const getCurriculumSignature = (studentProfile = {}) => {
   const config = studentProfile.dailyPracticeConfig || {};
   const cfgYears = (Array.isArray(config.years) ? config.years : []).map(normalizeYearLabel).filter(Boolean).sort();
   const cfgChapters = (Array.isArray(config.chapters) ? config.chapters : []).slice().sort();
-  return JSON.stringify({ years, courses, cfgYears, cfgChapters });
+  // Include membershipVersion (bumps only on add/delete/seed) so that a changed
+  // set of question IDs triggers a practice_pool rebuild — but content-only
+  // edits (which don't change membershipVersion) do NOT.
+  const mv = membershipVersion != null ? Number(membershipVersion) : undefined;
+  return JSON.stringify({ years, courses, cfgYears, cfgChapters, ...(mv ? { mv } : {}) });
 };
 
 const getOptions = (question) => {
@@ -560,11 +564,11 @@ const hashGeneratedQuestion = (question) => {
   return `gen-${(h >>> 0).toString(36)}`;
 };
 
-const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
+const buildQuestionsForStudent = async (studentProfile, questionCount, uid, membershipVersion) => {
   const { ensurePracticePool, selectDailyQuestions } = await import("./practicePoolService");
 
-  // 1. 풀 초기화 / 커리큘럼 변경 감지 (이미 최신이면 1 read만 발생)
-  await ensurePracticePool(uid, studentProfile);
+  // 1. 풀 초기화 / 커리큘럼·문제집합(add·delete) 변경 감지 (이미 최신이면 1 read만 발생)
+  await ensurePracticePool(uid, studentProfile, membershipVersion);
 
   // 2. 풀에서 균등+약점 보충 알고리즘으로 ID 선택 (1 read)
   const { selectedIds, chapterBreakdown } = await selectDailyQuestions(uid, questionCount);
@@ -650,11 +654,17 @@ export const createDailyAssignment = async ({
 }) => {
   if (!uid) throw new Error("Daily assignment requires a user id.");
   const resolvedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
-  const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid);
 
-  // Record the current question-bank version so we can detect future edits.
+  // Read question-bank versions FIRST. `version` (content) is stored on the
+  // assignment to detect future content edits; `membershipVersion` (add/delete)
+  // feeds the practice_pool signature so the pool rebuilds ONLY when the set of
+  // question IDs changed — not on every content edit.
   const syncMetaSnap = await getDoc(doc(db, "sync_meta", "questions")).catch(() => null);
-  const questionsVersion = syncMetaSnap?.exists() ? (syncMetaSnap.data().version || 0) : 0;
+  const syncData = syncMetaSnap?.exists() ? syncMetaSnap.data() : {};
+  const questionsVersion = syncData.version || 0;
+  const membershipVersion = syncData.membershipVersion ?? questionsVersion;
+
+  const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid, membershipVersion);
 
   const assignment = {
     date: dateKey,
@@ -685,7 +695,11 @@ export const prepareNextDailyAssignment = async ({
 }) => {
   if (!uid) throw new Error("Daily assignment prep requires a user id.");
   const resolvedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
-  const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid);
+  const syncMetaSnap = await getDoc(doc(db, "sync_meta", "questions")).catch(() => null);
+  const syncData = syncMetaSnap?.exists() ? syncMetaSnap.data() : {};
+  const questionsVersion = syncData.version || 0;
+  const membershipVersion = syncData.membershipVersion ?? questionsVersion;
+  const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid, membershipVersion);
 
   const prepAssignment = {
     date: "next_prep",
@@ -693,7 +707,12 @@ export const prepareNextDailyAssignment = async ({
     version: Date.now(),
     questionCount: questions.length,
     requestedQuestionCount: resolvedQuestionCount,
+    // Assignment-level signature is curriculum-only (no version) so it matches
+    // the expectedSignature computed in fetchOrCreateDailyAssignment and the
+    // prepared assignment is actually reused. Content/membership staleness is
+    // handled separately (questionsVersion + practice_pool signature).
     curriculumSignature: getCurriculumSignature(studentProfile),
+    questionsVersion,
     questionIds: questions.map((question) => question.id).filter(Boolean),
     questions,
     source,
