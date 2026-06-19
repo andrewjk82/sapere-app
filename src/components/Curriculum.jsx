@@ -2905,7 +2905,7 @@ const Curriculum = () => {
               {displayData.length > 0 ? displayData.map((chapter, chapterIndex) => {
                 const p = chapter.modules > 0 ? Math.round(((chapter.completed || 0) / chapter.modules) * 100) : 0;
                 return (
-                  <div key={chapter.id} className="chapter-card" onClick={() => setSelectedChapterForQuestions(chapter)}>
+                  <div key={chapter.id} className="chapter-card" onClick={() => setSelectedChapterForQuestions({ ...chapter, year: selectedYear })}>
                     <div className="chapter-card__head">
                       <div className="chapter-card__icon"><BookText size={18} /></div>
                       <div className="chapter-card__edits">
