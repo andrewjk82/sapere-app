@@ -694,9 +694,35 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     @media print {
       @page {
         size: auto;
-        margin: 15mm 15mm 15mm 15mm; /* custom margins strip browser headers/footers */
+        margin: 15mm 15mm 20mm 15mm; /* custom margins strip browser headers/footers */
+        @bottom-center {
+          content: counter(page);
+          font-family: 'Inter', sans-serif;
+          font-size: 8pt;
+          color: #94a3b8;
+        }
       }
-      body { padding: 0; }
+      body { 
+        padding: 0; 
+        counter-reset: page 1; /* Reset page counter to 1 starting on the cover */
+      }
+      
+      /* Pure CSS fallback counter representation if browser doesn't fully support CSS page margin boxes */
+      .page-footer {
+        position: fixed;
+        bottom: -10mm;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 9pt;
+        font-family: 'Inter', sans-serif;
+        color: #94a3b8;
+        font-weight: 700;
+      }
+      .page-footer::after {
+        content: counter(page);
+      }
+      
       .question-block { border: 1px solid #ddd; box-shadow: none; }
       .no-print { display: none !important; }
     }
@@ -784,6 +810,9 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
   <div class="footer">
     Sapere – Question Bank Export
   </div>
+
+  <!-- Fallback page footer for printing page numbers -->
+  <div class="page-footer"></div>
 
   <script>
     // Auto-trigger print dialog after math is rendered
