@@ -695,12 +695,6 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
       @page {
         size: auto;
         margin: 15mm 15mm 20mm 15mm; /* custom margins strip browser headers/footers */
-        @bottom-center {
-          content: counter(page);
-          font-family: 'Inter', sans-serif;
-          font-size: 8pt;
-          color: #94a3b8;
-        }
       }
       body { 
         padding: 0; 
