@@ -463,9 +463,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
 
     .question-block {
       margin-bottom: 28px;
-      padding: 20px 24px;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
+      padding: 12px 0;
       page-break-inside: avoid;
       break-inside: avoid;
     }
@@ -722,7 +720,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
         content: counter(page);
       }
       
-      .question-block { border: 1px solid #ddd; box-shadow: none; }
+      .question-block { border: none; box-shadow: none; }
       .no-print { display: none !important; }
     }
   </style>
