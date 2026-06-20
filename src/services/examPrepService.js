@@ -16,9 +16,10 @@
  *   examPrep:v1:<uid>:history     Session[]   recent rounds (capped)
  */
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, getDoc, doc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, getDoc, doc, setDoc, serverTimestamp, documentId } from 'firebase/firestore';
 import { addMistakes } from '../utils/secretNote';
 import { idbGet, idbSet, idbDel } from '../utils/idbStore';
+import { readChapterIndex } from './questionIndexService';
 
 export const EXAM_PREP_NOTE_KIND = 'exam_prep';
 
@@ -274,12 +275,49 @@ export const ensurePool = async (uid, selection, { force = false } = {}) => {
     await saveCachedPool(uid, selection, [], latestVersion);
     return [];
   }
-  // Firestore `in` is limited to 30. Chunk the chapter list.
-  const chunks = [];
+
   const chapters = selection.chapters;
-  for (let i = 0; i < chapters.length; i += 30) chunks.push(chapters.slice(i, i + 30));
   const all = [];
-  for (const chunk of chunks) {
+
+  // Index-based fetch (read-quota optimisation):
+  //   Old path read EVERY question doc in the selected chapters via
+  //   `where('chapterId', 'in', chunk)` — e.g. ~1,275 reads for full Year 7.
+  //   New path reads each chapter's question_index doc (1 read/chapter) to get
+  //   the active question IDs, then fetches only those docs by document ID
+  //   (~ceil(N/30) reads). Identical result set; ~90% fewer reads.
+  //
+  //   Chapters that have no question_index doc yet (legacy/unseeded) fall back
+  //   to the original chapterId query so coverage is unchanged.
+  const indexedIds = [];
+  const unindexedChapters = [];
+  await Promise.all(chapters.map(async (chapterId) => {
+    const index = await readChapterIndex(chapterId);
+    if (index && index.ids.length > 0) {
+      indexedIds.push(...index.ids);
+    } else {
+      unindexedChapters.push(chapterId);
+    }
+  }));
+
+  // Fetch indexed questions by document ID (Firestore `in` caps at 30 per query).
+  // A stale ID that no longer exists simply isn't returned — no error, fewer rows.
+  const uniqueIds = [...new Set(indexedIds.map(String))];
+  for (let i = 0; i < uniqueIds.length; i += 30) {
+    const batch = uniqueIds.slice(i, i + 30);
+    const snap = await getDocs(query(
+      collection(db, 'questions'),
+      where(documentId(), 'in', batch),
+    ));
+    snap.forEach((d) => {
+      const data = d.data();
+      if (data?.isActive === false) return;
+      all.push({ id: d.id, ...data });
+    });
+  }
+
+  // Legacy fallback: chapters without an index doc keep the original full query.
+  for (let i = 0; i < unindexedChapters.length; i += 30) {
+    const chunk = unindexedChapters.slice(i, i + 30);
     const snap = await getDocs(query(
       collection(db, 'questions'),
       where('chapterId', 'in', chunk),
@@ -290,10 +328,20 @@ export const ensurePool = async (uid, selection, { force = false } = {}) => {
       all.push({ id: d.id, ...data });
     });
   }
+  // Dedupe by id — defensive: the indexed batch-fetch and the legacy fallback
+  // are mutually exclusive per chapter, but guard against any ID appearing in
+  // more than one chapter's index so a question is never offered twice.
+  const seenIds = new Set();
+  const deduped = all.filter((q) => {
+    if (seenIds.has(q.id)) return false;
+    seenIds.add(q.id);
+    return true;
+  });
+
   // Keep teacher_review / requiresManualGrading questions — they get queued in
   // grading_queue when the student submits, and appear in the teacher's Reports tab.
   // When examPaperOnly is set, restrict to questions sourced from HSC trial papers.
-  const usable = all.filter((q) =>
+  const usable = deduped.filter((q) =>
     (!selection.examPaperOnly || Boolean(q.examPaper))
   );
   await saveCachedPool(uid, selection, usable, latestVersion);
