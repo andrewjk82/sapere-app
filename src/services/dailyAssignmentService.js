@@ -580,18 +580,25 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
   const orderById = new Map(selectedIds.map((id, i) => [String(id), i]));
   rawDocs.sort((a, b) => (orderById.get(String(a.id)) ?? 0) - (orderById.get(String(b.id)) ?? 0));
 
+  const targets = buildDailyTargets(studentProfile);
+
+  // For Year 1-6, only keep questions that already have multiple-choice options.
+  // Open-ended questions from the bank are replaced by the procedural generator below.
+  const isPrimaryStudent = targets.assignedYears.some((y) => getYearNumber(y) < 7);
+
   let questions = rawDocs
     .filter((d) => d.isActive !== false)
+    .filter((d) => !isPrimaryStudent || (Array.isArray(d.options) && d.options.length >= 2))
     .map(slimQuestion)
     .map(correctQuestionAnswer);
-
-  const targets = buildDailyTargets(studentProfile);
 
   // question_index 미구축으로 practicePool이 0개를 반환한 경우 legacy 경로로 폴백.
   if (questions.length === 0) {
     const recentlySeen = await fetchRecentlySeenQuestionIds(uid);
     const { questions: legacyQs, pruneIds } = await fetchManualQuestions(targets, { questionCount, recentlySeen });
-    questions = legacyQs.map(correctQuestionAnswer);
+    questions = legacyQs
+      .filter((q) => !isPrimaryStudent || (Array.isArray(q.options) && q.options.length >= 2))
+      .map(correctQuestionAnswer);
     if (pruneIds.length > 0) pruneSeenQuestions(uid, pruneIds).catch(() => {});
   }
 
