@@ -39,15 +39,24 @@ async function callGemini(parts) {
   }
 
   const data = await res.json();
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!text) throw new Error('Empty Gemini response');
+  const candidate = data.candidates?.[0];
+  const finishReason = candidate?.finishReason;
+  const text = candidate?.content?.parts?.[0]?.text;
+
+  if (!text) {
+    console.error('[auto-grade] Empty Gemini response. finishReason:', finishReason, 'raw:', JSON.stringify(data).slice(0, 400));
+    throw new Error(`Empty Gemini response (finishReason: ${finishReason || 'none'})`);
+  }
 
   try {
     return JSON.parse(text);
   } catch {
-    // Sometimes Gemini wraps JSON in markdown fences despite responseMimeType
+    // Try extracting JSON object from markdown fences or surrounding text
     const match = text.match(/\{[\s\S]*\}/);
-    if (match) return JSON.parse(match[0]);
+    if (match) {
+      try { return JSON.parse(match[0]); } catch { /* fall through */ }
+    }
+    console.error('[auto-grade] Could not parse Gemini JSON. finishReason:', finishReason, 'text:', text.slice(0, 400));
     throw new Error('Could not parse Gemini JSON response');
   }
 }
