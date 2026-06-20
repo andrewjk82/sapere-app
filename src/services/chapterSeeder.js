@@ -2,43 +2,89 @@ import { db } from '../firebase/config';
 import { collection, writeBatch, doc, getDoc, setDoc, serverTimestamp, query, where, getDocs, getDocsFromServer } from 'firebase/firestore';
 import { recountIds } from './questionCountsService';
 import { applySeedToIndexes } from './questionIndexService';
+import { validateSeedQuestion } from '../utils/latexValidate';
 
-// djb2-style hash of sorted question IDs — fast, zero-dependency, no Firestore reads.
-const hashSeedIds = (seed) => {
-  if (!Array.isArray(seed) || seed.length === 0) return '0';
-  const str = seed.map((q) => q.id || '').sort().join(',');
+// Write-time LaTeX gate: a question whose rendered math KaTeX cannot parse must
+// not reach Firestore (it shows as a broken/red box or raw source to students).
+// Uses the SAME preprocessing the renderer applies. Skipped only if KaTeX is
+// not loaded in this context (the build-time `npm run validate-seeds` then
+// remains the backstop).
+const validateRawQuestion = (raw) => {
+  const katexRender = typeof window !== 'undefined' && window.katex
+    ? (tex, opts) => window.katex.renderToString(tex, opts)
+    : null;
+  if (!katexRender) return []; // KaTeX unavailable -- let build-time gate catch it
+  try {
+    return validateSeedQuestion(raw, katexRender);
+  } catch (_) {
+    return []; // never let the validator itself break a seed run
+  }
+};
+
+// djb2-style hash -- fast, zero-dependency.
+const djb2 = (str) => {
   let h = 5381;
   for (let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0;
   return (h >>> 0).toString(36);
 };
 
+// Per-question content fingerprint (stable, deterministic).
+// Covers every field that changes what a student sees.
+const questionFingerprint = (q) => {
+  if (!q || typeof q !== 'object') return String(q);
+  const opts = (q.opts || q.options || [])
+    .map((o) => (typeof o === 'object' && o !== null ? `${o.text || ''}|${o.imageUrl || ''}` : String(o)))
+    .join('~');
+  const steps = Array.isArray(q.solutionSteps)
+    ? q.solutionSteps.map((s) => `${s?.explanation || ''}=>${s?.workingOut || ''}`).join('~')
+    : '';
+  return djb2([
+    q.id || '',
+    q.q ?? q.question ?? '',
+    q.a ?? q.answer ?? q.solution ?? '',
+    q.h ?? q.hint ?? '',
+    q.s ?? q.solution ?? '',
+    q.type || '',
+    opts,
+    steps,
+  ].join(''));
+};
+
+// Topic-level hash (fast pre-filter: if unchanged, skip per-question work).
+const hashSeedIds = (seed) => {
+  if (!Array.isArray(seed) || seed.length === 0) return '0';
+  return djb2(seed.map(questionFingerprint).sort().join(''));
+};
+
+// Per-question hash map for a seed array: { [questionId]: hash }
+const perQuestionHashes = (seed) => {
+  const map = {};
+  if (!Array.isArray(seed)) return map;
+  seed.forEach((q) => { if (q?.id) map[q.id] = questionFingerprint(q); });
+  return map;
+};
+
 const SEED_HASHES_REF = () => doc(db, 'sync_meta', 'seed_hashes');
-// Session guard: only run auto-sync once per admin browser session.
-const AUTO_SYNC_SESSION_KEY = 'sapere:seeds:autoSynced';
+
+// Session guard: auto-sync runs at most once per browser session so a quick
+// refresh doesn't trigger a second sync while the first one's hashes are
+// still propagating.
+let _syncRanThisSession = false;
 
 /**
  * Generic chapter question seeder.
  *
- * Replaces the per-chapter handleSeedY9ChX copy-paste functions with one
- * routine. It normalises any of the seed formats used across the seed files
- * (q/question, a/answer/solution, opts/options, h/hint, s/solution, t/topic,
- * graphData, type incl. "teacher_review") onto the app's question schema.
- *
- * To add a new chapter: create its seed file and add one entry to the
- * CHAPTER_SEED_REGISTRY (see Curriculum.jsx) — no new handler needed.
+ * KEY CHANGE: per-question diff instead of full topic clear+rewrite.
+ *   - Only writes questions whose content fingerprint changed.
+ *   - Only deletes questions removed from the seed file.
+ *   - Result: editing 1 question in a 100-question topic costs 1 write, not 100.
  */
 
-// Normalise one raw seed question → the app's question document.
-// Open tasks that genuinely need a teacher to grade — drawing, proof and
-// construction. A "Find x, giving reasons" question has a definite answer
-// and is auto-graded, so it must NOT be flagged for manual review.
 const MANUAL_GRADE_KEYWORDS = /(draw|sketch|construct|show that|prove|justify|explain why)/i;
 
 const mapSeedQuestion = (raw, chapter) => {
   const isMC = raw.type === 'multiple_choice';
   const questionText = raw.q || raw.question || '';
-  // requiresManualGrading is set ONLY for true open/construction/proof tasks,
-  // regardless of whether the seed labelled the question "teacher_review".
   const isOpenReview = (raw.requiresManualGrading === true)
     || (raw.type === 'teacher_review' && MANUAL_GRADE_KEYWORDS.test(questionText));
 
@@ -61,15 +107,10 @@ const mapSeedQuestion = (raw, chapter) => {
     answer = String(correctIndex >= 0 ? correctIndex : 0);
   }
 
-  // Per-question overrides (e.g. exam papers that span multiple topics)
   const resolvedTopicId = raw.topicId || chapter.topicId;
   const resolvedTopicCode = raw.c || raw.topicCode || chapter.topicCode || '';
   const resolvedTopicTitle = raw.t || raw.topicTitle || chapter.topicTitle || '';
 
-  // Derive the real chapter ID from topicId (e.g. 'y12a-3D' → 'y12a-3').
-  // Exam-paper questions are stored under their curriculum chapters so they
-  // appear in topic practice and Daily Challenge. The examPaper field lets
-  // the exam paper view filter them separately.
   const resolvedChapterId = raw.chapterId
     || (resolvedTopicId !== chapter.topicId
       ? resolvedTopicId.replace(/[A-Z]+$/, '')
@@ -83,9 +124,6 @@ const mapSeedQuestion = (raw, chapter) => {
     topicTitle: resolvedTopicTitle,
     year: chapter.year,
     isManual: true,
-    // Provenance tag: questions written by the seeder are 'seed'. Teacher-added
-    // questions are tagged 'teacher' (see QuestionBankModal) and the seeder's
-    // clear step never deletes them, so manual additions survive re-seeding.
     origin: 'seed',
     title: `${questionText.replace(/\$/g, '').slice(0, 30)}...`,
     question: questionText,
@@ -102,8 +140,6 @@ const mapSeedQuestion = (raw, chapter) => {
     subQuestions: Array.isArray(raw.subQuestions) ? raw.subQuestions : [],
     blanks: Array.isArray(raw.blanks) ? raw.blanks : [],
     graphData: raw.graphData || null,
-    // Exam-paper provenance — lets teachers filter "HSC trial only" in Exam
-    // Prep without disconnecting the question from its real curriculum chapter.
     examPaper: raw.examPaper || chapter.examPaper || '',
     createdAt: serverTimestamp(),
     updatedAt: serverTimestamp(),
@@ -111,50 +147,41 @@ const mapSeedQuestion = (raw, chapter) => {
 };
 
 /**
- * Seed one chapter's questions. Clears existing questions for the topic,
- * then writes the mapped seed questions (chunked for the 500-op batch cap).
- * @param {object} chapter  registry entry with { chapterId, chapterTitle,
- *   topicId, topicCode, topicTitle, year, seed: [] }
- * @returns {Promise<number>} number of questions written
+ * Seed one topic's questions using per-question diff.
+ *
+ * Cost:
+ *   - 1 read (question_topic_index)
+ *   - Writes only for new/changed questions (not the entire topic)
+ *   - Deletes only stale seed IDs removed from the seed file
+ *   - Teacher-added questions (origin:'teacher') are never touched
+ *
+ * @param {object} chapter  registry entry
+ * @param {object} storedQHashes  { [questionId]: hash } from sync_meta/seed_hashes
+ * @returns {Promise<object>} { topicId, added, removed, updated, skipped, total, newQHashes }
  */
-export const seedChapterQuestions = async (chapter) => {
+export const seedChapterQuestions = async (chapter, storedQHashes = {}) => {
   const seed = Array.isArray(chapter?.seed) ? chapter.seed : [];
-  if (seed.length === 0) return 0;
+  if (seed.length === 0) return { topicId: chapter.topicId, added: 0, removed: 0, updated: 0, skipped: 0, total: 0, newQHashes: {} };
   const collRef = collection(db, 'questions');
 
-  // CLEAR EXISTING QUESTIONS FOR THIS TOPIC
-  // Fast path (≥2nd seed): read question_topic_index/{topicId} — 1 doc read —
-  // to get existing question IDs, then delete by ID directly (no per-doc reads).
-  // This avoids the previous getDocsFromServer scan (1 read per question).
-  //
-  // Fallback (first-ever seed for this topic, or orphaned docs before the
-  // topic-index existed): fall back to the original getDocsFromServer query.
   const affectedChapterIds = new Set([chapter.chapterId]);
   const affectedTopicIds = new Set([chapter.topicId]);
-  const indexRemoved = {}; // { [chapterId]: [questionId, ...] }
+  const indexRemoved = {};
   const indexAdded = {};
 
-  // The IDs the new seed will (over)write. Reconciliation deletes only the
-  // STALE seed questions — prior seed IDs that are no longer in the seed file.
-  // Questions never written by the seeder (teacher-added, origin:'teacher') are
-  // never in this set and are never deleted.
   const newSeedIds = new Set(seed.map((raw) => raw.id).filter(Boolean));
 
+  // 1 read: get existing seed question IDs for this topic
   const topicIndexSnap = await getDoc(doc(db, 'question_topic_index', chapter.topicId));
   const topicIndexIds = topicIndexSnap.exists() ? (topicIndexSnap.data().ids || []) : null;
 
   let toDelete;
-  const priorSeedIds = new Set(); // seed-origin IDs that existed before this run
+  const priorSeedIds = new Set();
   if (topicIndexIds !== null) {
-    // Fast path: question_topic_index holds ONLY prior seed IDs (teacher-added
-    // questions are never written there). Delete prior seed IDs dropped from
-    // the seed file; keep everything else.
     topicIndexIds.forEach((id) => priorSeedIds.add(String(id)));
     toDelete = topicIndexIds.filter((id) => !newSeedIds.has(id));
   } else {
-    // Fallback (first-ever seed for this topic, or pre-index orphans): full
-    // query. Delete only NON-teacher questions that aren't in the new seed, so
-    // any manually-added question on this topic is preserved.
+    // First-ever seed for this topic: fallback scan
     const snap = await getDocsFromServer(
       query(collRef, where('topicId', '==', chapter.topicId))
     );
@@ -168,11 +195,7 @@ export const seedChapterQuestions = async (chapter) => {
     });
   }
 
-  // Report counts: how the seed changed this topic.
-  const addedCount = [...newSeedIds].filter((id) => !priorSeedIds.has(String(id))).length;
-  const removedCount = toDelete.length;
-  const updatedCount = seed.length - addedCount; // existing seed questions overwritten
-
+  // Delete stale seed questions (removed from seed file)
   if (toDelete.length > 0) {
     (indexRemoved[chapter.chapterId] = indexRemoved[chapter.chapterId] || []).push(...toDelete);
     const CHUNK = 400;
@@ -183,40 +206,53 @@ export const seedChapterQuestions = async (chapter) => {
     }
   }
 
-  // WRITE NEW SEED QUESTIONS
-  // FULL OVERWRITE: questions are written by their stable `id` with
-  // set({ merge: false }) — a full REPLACE. This ensures stale fields
-  // (e.g. old geometry data on jsxGraph questions) are completely removed
-  // when re-seeding. New questions are upserted and existing ones are fully
-  // replaced with the latest seed data. (Every seed question must carry a unique `id`.)
-  const CHUNK = 400; // Firestore writeBatch caps at 500 operations.
-  for (let i = 0; i < seed.length; i += CHUNK) {
-    const batch = writeBatch(db);
-    seed.slice(i, i + CHUNK).forEach((raw) => {
-      const mapped = mapSeedQuestion(raw, chapter);
-      if (mapped.topicId) affectedTopicIds.add(mapped.topicId);
-      const docRef = raw.id ? doc(collRef, raw.id) : doc(collRef);
-      if (mapped.chapterId) {
-        affectedChapterIds.add(mapped.chapterId);
-        (indexAdded[mapped.chapterId] = indexAdded[mapped.chapterId] || []).push(docRef.id);
-      }
-      batch.set(docRef, mapped, { merge: false });
-    });
-    await batch.commit();
+  // Validate and filter bad LaTeX
+  const invalid = [];
+  const writable = seed.filter((raw) => {
+    const errs = validateRawQuestion(raw);
+    if (errs.length === 0) return true;
+    errs.forEach((e) => invalid.push({ id: raw.id || '(no id)', field: e.field, error: e.error }));
+    console.warn(`[seed] skipping invalid LaTeX in ${chapter.topicId} id=${raw.id || '?'}:`, errs.map((e) => `${e.field}: ${e.error}`).join('; '));
+    return false;
+  });
+
+  // PER-QUESTION DIFF: only write questions that are new or have changed content.
+  const currentQHashes = perQuestionHashes(seed);
+  const toWrite = writable.filter((raw) => {
+    if (!raw.id) return true; // no ID -- always write (can't diff)
+    const stored = storedQHashes[raw.id];
+    return stored === undefined || stored !== currentQHashes[raw.id];
+  });
+
+  const addedCount = toWrite.filter((raw) => !priorSeedIds.has(String(raw.id))).length;
+  const updatedCount = toWrite.length - addedCount;
+  const removedCount = toDelete.length;
+
+  if (toWrite.length > 0) {
+    const CHUNK = 400;
+    for (let i = 0; i < toWrite.length; i += CHUNK) {
+      const batch = writeBatch(db);
+      toWrite.slice(i, i + CHUNK).forEach((raw) => {
+        const mapped = mapSeedQuestion(raw, chapter);
+        if (mapped.topicId) affectedTopicIds.add(mapped.topicId);
+        const docRef = raw.id ? doc(collRef, raw.id) : doc(collRef);
+        if (mapped.chapterId) {
+          affectedChapterIds.add(mapped.chapterId);
+          (indexAdded[mapped.chapterId] = indexAdded[mapped.chapterId] || []).push(docRef.id);
+        }
+        batch.set(docRef, mapped, { merge: false });
+      });
+      await batch.commit();
+    }
   }
-  // Update the per-chapter sampling indexes incrementally (zero reads) and
-  // stamp BOTH sync_meta/questions.version and question_index/_meta.
-  // builtVersion with the same value — this is what prevents the next admin
-  // session from running ensureQuestionIndexFresh's full questions scan
-  // (~1 read per question in the whole bank).
+
   const seedVersion = Date.now();
 
-  // Write the topic-level index so future re-seeds can use the fast path.
-  // This is the doc we read at the top: question_topic_index/{topicId}.
-  const newTopicIds = (indexAdded[chapter.chapterId] || []);
+  // Update the topic-level index (IDs of all seed questions in this topic)
+  const allSeedIds = writable.map((raw) => raw.id).filter(Boolean);
   try {
     await setDoc(doc(db, 'question_topic_index', chapter.topicId), {
-      ids: newTopicIds,
+      ids: allSeedIds,
       chapterId: chapter.chapterId,
       updatedAt: serverTimestamp(),
     });
@@ -224,50 +260,54 @@ export const seedChapterQuestions = async (chapter) => {
     console.warn('question_topic_index write failed (non-fatal):', err?.code || err);
   }
 
-  try {
-    await applySeedToIndexes({ added: indexAdded, removed: indexRemoved, version: seedVersion });
-  } catch (err) {
-    console.warn('question index update after seed failed (non-fatal):', err);
-    // Fall back to the plain version bump so chapter-card counts still refresh.
+  // Only update question_index and counts if membership actually changed
+  // (adds or deletes), not for pure content edits.
+  if (addedCount > 0 || removedCount > 0) {
+    try {
+      await applySeedToIndexes({ added: indexAdded, removed: indexRemoved, version: seedVersion });
+    } catch (err) {
+      console.warn('question index update after seed failed (non-fatal):', err);
+      try {
+        await setDoc(doc(db, 'sync_meta', 'questions'), {
+          version: seedVersion,
+          updatedAt: serverTimestamp(),
+        }, { merge: true });
+      } catch (err2) {
+        console.warn('sync_meta bump after seed failed (non-fatal):', err2);
+      }
+    }
+    try {
+      await recountIds({
+        chapterIds: [...affectedChapterIds],
+        topicIds: [...affectedTopicIds],
+        version: seedVersion,
+      });
+    } catch (err) {
+      console.warn('question_counts recount after seed failed (non-fatal):', err);
+    }
+  } else if (toWrite.length > 0) {
+    // Content-only edits: bump version so students see updated content, but
+    // do NOT bump membershipVersion -- practice pools don't need to rebuild.
     try {
       await setDoc(doc(db, 'sync_meta', 'questions'), {
         version: seedVersion,
         updatedAt: serverTimestamp(),
       }, { merge: true });
-    } catch (err2) {
-      console.warn('sync_meta bump after seed failed (non-fatal):', err2);
+    } catch (err) {
+      console.warn('sync_meta version bump failed (non-fatal):', err);
     }
   }
-  // Re-count ONLY the touched ids into the aggregate counts doc (a few dozen
-  // aggregation queries) and stamp it with the same version, so admin clients
-  // read 1 doc instead of rebuilding ~1,600 counts after every seed.
-  try {
-    await recountIds({
-      chapterIds: [...affectedChapterIds],
-      topicIds: [...affectedTopicIds],
-      version: seedVersion,
-    });
-  } catch (err) {
-    console.warn('question_counts recount after seed failed (non-fatal):', err);
-  }
-  // Invalidate all ExamPrep pool caches in localStorage so every student
-  // picks up the freshly-seeded questions on their next session start.
+
+  // Invalidate ExamPrep pool caches in localStorage
   try {
     const keysToRemove = [];
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i);
-      if (key && key.startsWith('examPrep:') && key.endsWith(':pool')) {
-        keysToRemove.push(key);
-      }
+      if (key && key.startsWith('examPrep:') && key.endsWith(':pool')) keysToRemove.push(key);
     }
     keysToRemove.forEach((k) => localStorage.removeItem(k));
-    if (keysToRemove.length > 0) {
-      console.log(`Invalidated ${keysToRemove.length} ExamPrep pool cache(s) after seed.`);
-    }
-  } catch (err) {
-    console.warn('ExamPrep cache invalidation after seed failed (non-fatal):', err);
-  }
-  // Detailed result for the admin sync report (added/removed/updated this run).
+  } catch (_) {}
+
   return {
     topicId: chapter.topicId,
     label: chapter.label || chapter.topicTitle || chapter.topicId,
@@ -275,75 +315,106 @@ export const seedChapterQuestions = async (chapter) => {
     added: addedCount,
     removed: removedCount,
     updated: updatedCount,
+    skipped: invalid.length,
+    invalid,
+    newQHashes: currentQHashes, // caller merges into seed_hashes
   };
 };
 
 /**
- * Auto-sync: compare local seed hashes with the last-synced hashes stored in
- * sync_meta/seed_hashes (1 Firestore read). For each topic whose hash changed,
- * run seedChapterQuestions. Updates seed_hashes after syncing.
+ * Auto-sync on admin login.
  *
- * Cost when nothing changed: 1 read.
- * Cost when N topics changed: 1 read + batch writes for those N topics only.
+ * Traffic model:
+ *   Nothing changed : 1 read (seed_hashes)
+ *   N questions changed: 1 read + N writes (only changed questions)
+ *   M questions added/removed: + index/count writes
  *
- * Called once per admin browser session (guarded by sessionStorage flag).
+ * Previously: topic hash changed -> rewrite ENTIRE topic. Now: per-question diff.
  */
 export const autoSyncSeedsIfChanged = async () => {
-  try {
-    const alreadyRan = sessionStorage.getItem(AUTO_SYNC_SESSION_KEY);
-    if (alreadyRan) return { synced: 0, skipped: true };
-  } catch (_) { /* private mode — proceed */ }
+  if (_syncRanThisSession) {
+    console.info('[autoSyncSeeds] already ran this session -- skipping');
+    return { synced: 0 };
+  }
 
   try {
     const { CHAPTER_SEED_REGISTRY } = await import('../constants/curriculumSeeds.js');
     if (!Array.isArray(CHAPTER_SEED_REGISTRY) || CHAPTER_SEED_REGISTRY.length === 0) return { synced: 0 };
 
-    // 1 read: fetch stored hashes
+    // 1 read: fetch stored hashes (both topic-level and per-question)
     const hashSnap = await getDoc(SEED_HASHES_REF());
-    const storedHashes = hashSnap.exists() ? (hashSnap.data() || {}) : {};
+    const stored = hashSnap.exists() ? (hashSnap.data() || {}) : {};
 
-    // Compute current hashes client-side (zero reads)
-    const currentHashes = {};
+    // stored structure (new format):
+    //   _topicHashes: { [topicId]: hash }  -- fast pre-filter
+    //   _qHashes: { [questionId]: hash }   -- per-question diff
+    //
+    // Migration from old flat format { [topicId]: hash }:
+    // If _topicHashes is absent but other keys exist, treat the flat keys as
+    // topic hashes so previously-synced topics don't all re-sync unnecessarily.
+    let storedTopicHashes = stored._topicHashes || {};
+    const storedQHashes = stored._qHashes || {};
+    if (!stored._topicHashes) {
+      // Old flat format -- lift any non-internal key into storedTopicHashes
+      Object.entries(stored).forEach(([k, v]) => {
+        if (!k.startsWith('_') && typeof v === 'string') storedTopicHashes[k] = v;
+      });
+    }
+
+    // Compute current topic hashes client-side (zero reads)
+    const currentTopicHashes = {};
     CHAPTER_SEED_REGISTRY.forEach((entry) => {
-      if (entry.topicId) currentHashes[entry.topicId] = hashSeedIds(entry.seed);
+      if (entry.topicId) currentTopicHashes[entry.topicId] = hashSeedIds(entry.seed);
     });
 
     const changedEntries = CHAPTER_SEED_REGISTRY.filter(
-      (entry) => entry.topicId && currentHashes[entry.topicId] !== storedHashes[entry.topicId]
+      (entry) => entry.topicId && currentTopicHashes[entry.topicId] !== storedTopicHashes[entry.topicId]
     );
 
     if (changedEntries.length === 0) {
-      try { sessionStorage.setItem(AUTO_SYNC_SESSION_KEY, '1'); } catch (_) {}
-      console.info('[autoSyncSeeds] all seeds up-to-date — no sync needed');
+      console.info('[autoSyncSeeds] all seeds up-to-date -- no sync needed');
+      _syncRanThisSession = true;
       return { synced: 0 };
     }
 
-    console.info(`[autoSyncSeeds] ${changedEntries.length} topic(s) changed — syncing...`);
-    const report = []; // per-topic detail for the admin sync report
+    console.info(`[autoSyncSeeds] ${changedEntries.length} topic(s) changed -- syncing (per-question diff)...`);
+    const report = [];
     const failed = [];
+    const newTopicHashes = { ...storedTopicHashes };
+    const newQHashes = { ...storedQHashes };
+
     for (const entry of changedEntries) {
       try {
-        const res = await seedChapterQuestions(entry);
-        console.info(`  ✓ ${entry.topicId} — +${res.added}/−${res.removed}/~${res.updated} (total ${res.total})`);
+        const res = await seedChapterQuestions(entry, storedQHashes);
+        const skipNote = res.skipped ? ` (${res.skipped} skipped bad LaTeX)` : '';
+        console.info(`  [${entry.topicId}] +${res.added} new / ~${res.updated} updated / -${res.removed} removed${skipNote}`);
         report.push(res);
+        newTopicHashes[entry.topicId] = currentTopicHashes[entry.topicId];
+        Object.assign(newQHashes, res.newQHashes);
       } catch (err) {
-        console.warn(`  ✗ ${entry.topicId} seed failed:`, err?.code || err);
+        console.warn(`  [${entry.topicId}] seed failed:`, err?.code || err);
         failed.push({ topicId: entry.topicId, label: entry.label || entry.topicId, error: String(err?.code || err?.message || err) });
       }
     }
 
-    // Persist updated hashes (merge so unrelated topics are preserved). Only
-    // stamp hashes for topics that actually synced, so a failed topic retries
-    // next session instead of being marked done.
-    const syncedHashes = {};
-    report.forEach((r) => { syncedHashes[r.topicId] = currentHashes[r.topicId]; });
-    await setDoc(SEED_HASHES_REF(), { ...syncedHashes, _updatedAt: Date.now() }, { merge: true });
-    try { sessionStorage.setItem(AUTO_SYNC_SESSION_KEY, '1'); } catch (_) {}
-    console.info(`[autoSyncSeeds] done — synced ${report.length}/${changedEntries.length} topic(s)`);
-    // Aggregate totals for a quick headline.
+    // Persist updated hashes (1 write).
+    // Separate _topicHashes and _qHashes so both levels are maintained.
+    await setDoc(SEED_HASHES_REF(), {
+      _topicHashes: newTopicHashes,
+      _qHashes: newQHashes,
+      _updatedAt: Date.now(),
+    }, { merge: false });
+
+    _syncRanThisSession = true;
+    console.info(`[autoSyncSeeds] done -- synced ${report.length}/${changedEntries.length} topic(s)`);
+
     const totals = report.reduce((a, r) => ({
-      added: a.added + r.added, removed: a.removed + r.removed, updated: a.updated + r.updated,
-    }), { added: 0, removed: 0, updated: 0 });
+      added: a.added + r.added,
+      removed: a.removed + r.removed,
+      updated: a.updated + r.updated,
+      skipped: a.skipped + (r.skipped || 0),
+    }), { added: 0, removed: 0, updated: 0, skipped: 0 });
+
     return { synced: report.length, report, failed, totals };
   } catch (err) {
     console.warn('[autoSyncSeeds] failed (non-fatal):', err?.code || err);
