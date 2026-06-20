@@ -730,9 +730,12 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
   <!-- Exam Cover Page -->
   <div class="cover-page">
     <div class="cover-top">
-      <div class="cover-logo-text" style="line-height: 1.2;">
-        <span style="font-size: 1.4rem; font-weight: 900; display: block; text-transform: uppercase; color: #7c3aed;">Sapere Aude</span>
-        <span style="font-size: 1.4rem; font-weight: 900; color: #7c3aed; letter-spacing: 0.05em; text-transform: uppercase; display: block; margin-top: 2px;">Academia</span>
+      <div class="cover-logo-text" style="display: flex; align-items: stretch; gap: 14px;">
+        <div style="width: 3px; background: #7c3aed; border-radius: 2px; flex-shrink: 0;"></div>
+        <div style="line-height: 1.2;">
+          <span style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.1em; display: block;">Sapere Aude</span>
+          <span style="font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.25em; opacity: 0.55; display: block; margin-top: 3px;">Academia</span>
+        </div>
       </div>
       <div class="cover-metadata">
         <div>${year || (chapterTitle.toLowerCase().includes('year') ? '' : 'Year 10')} ${course ? `— ${course}` : ''}</div>
@@ -809,14 +812,29 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     Sapere – Question Bank Export
   </div>
 
+  <div id="pdf-status-overlay" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: rgba(30, 27, 75, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: white; padding: 14px 22px; border-radius: 12px; box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; display: flex; align-items: center; gap: 14px; z-index: 999999; border: 1px solid rgba(255, 255, 255, 0.15); transition: all 0.3s ease;">
+    <div id="pdf-spinner" style="border: 2.5px solid rgba(255, 255, 255, 0.2); border-top: 2.5px solid #6366f1; border-radius: 50%; width: 18px; height: 18px; animation: pdf-spin 1s linear infinite;"></div>
+    <span id="pdf-status-text" style="font-weight: 500; font-size: 14px; letter-spacing: -0.01em;">Preparing PDF layout...</span>
+    <button id="pdf-close-btn" onclick="window.close()" style="background: #ef4444; hover: background: #dc2626; border: none; color: white; padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; display: none; transition: background 0.2s;">Close Window</button>
+  </div>
+
+  <style>
+    @keyframes pdf-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  </style>
+
   <!-- Fallback page footer for printing page numbers -->
   <div class="page-footer"></div>
 
   <script>
     // Trigger html2pdf to download the document after rendering
     window.addEventListener('load', function() {
+      const statusText = document.getElementById('pdf-status-text');
+      const spinner = document.getElementById('pdf-spinner');
+      const closeBtn = document.getElementById('pdf-close-btn');
+
       // Give KaTeX a moment to render the formulas nicely before generating PDF
       setTimeout(function() {
+        statusText.textContent = "Generating PDF document...";
         const filename = "${title.replace(/\s+/g, '_')}_${showAnswers ? 'Answers' : 'Student'}.pdf";
         const element = document.body;
         const opt = {
@@ -828,7 +846,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
           pagebreak:    { mode: ['css', 'legacy'] }
         };
         
-        // Generate and download PDF, then close the tab automatically
+        // Generate and download PDF
         html2pdf().set(opt).from(element).toPdf().get('pdf').then(function(pdf) {
           const totalPages = pdf.internal.getNumberOfPages();
           for (let i = 1; i <= totalPages; i++) {
@@ -843,11 +861,14 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
             pdf.text(String(i - 1), pageWidth / 2, pageHeight - 10, { align: 'center' });
           }
         }).save().then(() => {
-          setTimeout(() => {
-            window.close();
-          }, 1000);
+          spinner.style.display = 'none';
+          statusText.textContent = "PDF generated successfully!";
+          closeBtn.style.display = 'block';
         }).catch(err => {
           console.error("PDF generation failed, falling back to window.print():", err);
+          spinner.style.display = 'none';
+          statusText.textContent = "PDF generation failed. Printing window instead...";
+          closeBtn.style.display = 'block';
           window.print();
         });
       }, 2000);
