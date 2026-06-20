@@ -353,6 +353,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       await addDoc(collection(db, 'users', user.uid, 'saved_feedback'), {
         questionId: result.questionId || '',
         teacherFeedback: result.teacherFeedback,
+        teacherAnnotation: result.teacherAnnotation || null,
         correct: result.correct,
         gradedAt: result.gradedAt || null,
         chapterTitle: challenge.chapterTitle || '',
@@ -360,14 +361,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         challengeDate: challenge.id || '',
         savedAt: serverTimestamp(),
       });
-      // Clear from stat doc so it moves to saved section
+      // Use in-memory answerResults to avoid an extra Firestore read
       const statCol = challenge.statCollection || (challenge.challengeType === 'calc' ? 'calc_stats' : 'daily_stats');
       const statRef = doc(db, 'users', user.uid, statCol, challenge.id);
-      const statSnap = await getDoc(statRef);
-      if (statSnap.exists()) {
-        const updated = [...(statSnap.data().answerResults || [])];
-        const idx = updated.findIndex(r => r.questionId === result.questionId);
-        if (idx !== -1) { delete updated[idx].teacherFeedback; await updateDoc(statRef, { answerResults: updated }); }
+      const updated = [...(challenge.answerResults || [])];
+      const idx = updated.findIndex(r => r.questionId === result.questionId);
+      if (idx !== -1) {
+        delete updated[idx].teacherFeedback;
+        delete updated[idx].teacherAnnotation;
+        await updateDoc(statRef, { answerResults: updated });
       }
       showToast('Feedback saved to your notes!', 'success');
     } catch (err) { showToast('Could not save: ' + (err?.message || err), 'error'); }
@@ -378,11 +380,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     try {
       const statCol = challenge.statCollection || (challenge.challengeType === 'calc' ? 'calc_stats' : 'daily_stats');
       const statRef = doc(db, 'users', user.uid, statCol, challenge.id);
-      const statSnap = await getDoc(statRef);
-      if (statSnap.exists()) {
-        const updated = [...(statSnap.data().answerResults || [])];
-        const idx = updated.findIndex(r => r.questionId === result.questionId);
-        if (idx !== -1) { delete updated[idx].teacherFeedback; await updateDoc(statRef, { answerResults: updated }); }
+      // Use in-memory answerResults to avoid an extra Firestore read
+      const updated = [...(challenge.answerResults || [])];
+      const idx = updated.findIndex(r => r.questionId === result.questionId);
+      if (idx !== -1) {
+        delete updated[idx].teacherFeedback;
+        delete updated[idx].teacherAnnotation;
+        await updateDoc(statRef, { answerResults: updated });
       }
       showToast('Feedback removed.', 'success');
     } catch (err) { showToast('Could not delete: ' + (err?.message || err), 'error'); }
@@ -1783,6 +1787,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                             <button onClick={() => handleDeleteFeedback(result, selectedChallenge)} style={{ padding: '4px 12px', borderRadius: '8px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.72rem', cursor: 'pointer', marginLeft: '6px' }}>Delete</button>
                           </div>
                           <p style={{ margin: 0, fontSize: '0.92rem', color: result?.correct ? '#166534' : '#7f1d1d', lineHeight: 1.6 }}>{result.teacherFeedback}</p>
+                          {result.teacherAnnotation && (
+                            <img src={result.teacherAnnotation} alt="Teacher markup" style={{ marginTop: '12px', width: '100%', borderRadius: '10px', objectFit: 'contain', border: '1px solid #e2e8f0' }} />
+                          )}
                         </div>
                       )}
 
@@ -1854,6 +1861,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   <button onClick={() => handleDeleteSavedFeedback(note.id)} style={{ padding: '4px 10px', borderRadius: '8px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.7rem', cursor: 'pointer' }}>Delete</button>
                 </div>
                 <p style={{ margin: 0, fontSize: '0.9rem', color: note.correct ? '#166534' : '#7f1d1d', lineHeight: 1.6 }}>{note.teacherFeedback}</p>
+                {note.teacherAnnotation && (
+                  <img src={note.teacherAnnotation} alt="Teacher markup" style={{ marginTop: '12px', width: '100%', borderRadius: '10px', objectFit: 'contain', border: '1px solid #e2e8f0' }} />
+                )}
               </div>
             ))}
           </div>

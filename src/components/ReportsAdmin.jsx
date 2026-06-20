@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
@@ -73,6 +73,13 @@ const ReportsAdmin = () => {
   const [isDeletingAll, setIsDeletingAll] = useState(false);
   const [processingId, setProcessingId] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [annotatingItem, setAnnotatingItem] = useState(null); // grading item being marked up
+  const annotationCanvasRef = useRef(null);
+  const annotationDrawing = useRef(false);
+  const annotationLastPos = useRef(null);
+  const [annotationColor, setAnnotationColor] = useState('#ef4444');
+  const [annotationSize, setAnnotationSize] = useState(4);
+  const [annotationSaving, setAnnotationSaving] = useState(false);
   const ADMIN_REPORT_LIMIT = 100;
 
   const formatStudentAnswer = (answer) => {
@@ -595,13 +602,175 @@ const ReportsAdmin = () => {
     try {
       setProcessingId(item.id);
       const feedback = item.aiAssessment?.feedback || null;
-      await gradeSubmission(item, approved, feedback);
+      const annotation = item.teacherAnnotation || null;
+      await gradeSubmission(item, approved, feedback, annotation);
     } catch (err) {
       console.error('Error grading submission:', err);
       alert(`Failed to update grade: ${err.message || err}`);
     } finally {
       setProcessingId(null);
     }
+  };
+
+  // ── Teacher annotation helpers ──────────────────────────────────────────
+  const getAnnotationPos = (e, canvas) => {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const clientX = e.clientX ?? e.touches?.[0]?.clientX ?? 0;
+    const clientY = e.clientY ?? e.touches?.[0]?.clientY ?? 0;
+    return { x: (clientX - rect.left) * scaleX, y: (clientY - rect.top) * scaleY };
+  };
+
+  const handleAnnotationPointerDown = useCallback((e) => {
+    e.preventDefault();
+    const canvas = annotationCanvasRef.current;
+    if (!canvas) return;
+    annotationDrawing.current = true;
+    annotationLastPos.current = getAnnotationPos(e, canvas);
+  }, []);
+
+  const handleAnnotationPointerMove = useCallback((e) => {
+    e.preventDefault();
+    if (!annotationDrawing.current) return;
+    const canvas = annotationCanvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const pos = getAnnotationPos(e, canvas);
+    const last = annotationLastPos.current;
+    ctx.beginPath();
+    ctx.moveTo(last.x, last.y);
+    ctx.lineTo(pos.x, pos.y);
+    ctx.strokeStyle = annotationColor;
+    ctx.lineWidth = annotationSize;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.stroke();
+    annotationLastPos.current = pos;
+  }, [annotationColor, annotationSize]);
+
+  const handleAnnotationPointerUp = useCallback(() => {
+    annotationDrawing.current = false;
+    annotationLastPos.current = null;
+  }, []);
+
+  const clearAnnotationCanvas = () => {
+    const canvas = annotationCanvasRef.current;
+    if (!canvas) return;
+    canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+  };
+
+  const saveAnnotation = async () => {
+    const item = annotatingItem;
+    if (!item) return;
+    setAnnotationSaving(true);
+    try {
+      const validImages = (item.answerImages || []).filter(u => u && u.length > 100);
+      const primaryImage = validImages[0] || (item.answerImage?.length > 100 ? item.answerImage : null);
+      const annotCanvas = annotationCanvasRef.current;
+
+      let mergedDataUrl = null;
+      if (primaryImage && annotCanvas) {
+        const out = document.createElement('canvas');
+        out.width = annotCanvas.width;
+        out.height = annotCanvas.height;
+        const ctx = out.getContext('2d');
+        // white background
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, out.width, out.height);
+        // draw student image
+        await new Promise((resolve) => {
+          const img = new Image();
+          img.onload = () => { ctx.drawImage(img, 0, 0, out.width, out.height); resolve(); };
+          img.onerror = resolve;
+          img.src = primaryImage;
+        });
+        // draw teacher annotation on top
+        ctx.drawImage(annotCanvas, 0, 0);
+        mergedDataUrl = out.toDataURL('image/png');
+      }
+
+      if (mergedDataUrl) {
+        await updateDoc(doc(db, 'grading_queue', item.id), {
+          teacherAnnotation: mergedDataUrl,
+          annotatedAt: serverTimestamp(),
+        });
+      }
+      setAnnotatingItem(null);
+    } catch (err) {
+      console.error('[annotation] save failed:', err);
+      alert('Could not save annotation: ' + (err?.message || err));
+    } finally {
+      setAnnotationSaving(false);
+    }
+  };
+
+  const renderAnnotationModal = () => {
+    if (!annotatingItem) return null;
+    const item = annotatingItem;
+    const validImages = (item.answerImages || []).filter(u => u && u.length > 100);
+    const primaryImage = validImages[0] || (item.answerImage?.length > 100 ? item.answerImage : null);
+    const CANVAS_W = 800;
+    const CANVAS_H = 600;
+    const COLORS = ['#ef4444', '#3b82f6', '#10b981', '#f59e0b', '#000000'];
+    const SIZES = [2, 4, 8, 14];
+
+    return (
+      <div style={{ position: 'fixed', inset: 0, zIndex: 99999, background: 'rgba(15,23,42,0.92)', backdropFilter: 'blur(8px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+        {/* Toolbar */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '14px', background: '#1e293b', padding: '10px 20px', borderRadius: '16px', flexWrap: 'wrap' }}>
+          <span style={{ color: '#94a3b8', fontWeight: 800, fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Colour</span>
+          {COLORS.map(c => (
+            <button key={c} onClick={() => setAnnotationColor(c)} style={{ width: '26px', height: '26px', borderRadius: '50%', background: c, border: annotationColor === c ? '3px solid #fff' : '3px solid transparent', cursor: 'pointer' }} />
+          ))}
+          <span style={{ color: '#94a3b8', fontWeight: 800, fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', marginLeft: '8px' }}>Size</span>
+          {SIZES.map(s => (
+            <button key={s} onClick={() => setAnnotationSize(s)} style={{ width: '32px', height: '32px', borderRadius: '8px', background: annotationSize === s ? '#6366f1' : '#334155', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ width: s * 1.5, height: s * 1.5, borderRadius: '50%', background: '#fff' }} />
+            </button>
+          ))}
+          <button onClick={clearAnnotationCanvas} style={{ marginLeft: '8px', padding: '6px 14px', borderRadius: '10px', border: 'none', background: '#475569', color: '#fff', fontWeight: 800, fontSize: '0.78rem', cursor: 'pointer' }}>Clear</button>
+          <button onClick={() => setAnnotatingItem(null)} style={{ padding: '6px 14px', borderRadius: '10px', border: 'none', background: '#475569', color: '#fff', fontWeight: 800, fontSize: '0.78rem', cursor: 'pointer' }}>Cancel</button>
+          <button onClick={saveAnnotation} disabled={annotationSaving} style={{ padding: '6px 20px', borderRadius: '10px', border: 'none', background: '#6366f1', color: '#fff', fontWeight: 900, fontSize: '0.85rem', cursor: 'pointer' }}>
+            {annotationSaving ? 'Saving…' : 'Save & Send ✓'}
+          </button>
+        </div>
+
+        {/* Canvas area */}
+        <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', background: '#fff', maxWidth: '100%', maxHeight: '70vh' }}>
+          {primaryImage ? (
+            <img src={primaryImage} alt="Student drawing" style={{ display: 'block', maxWidth: '100%', maxHeight: '65vh', objectFit: 'contain', userSelect: 'none', pointerEvents: 'none' }} />
+          ) : (
+            <div style={{ width: CANVAS_W, height: CANVAS_H, background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#94a3b8', fontWeight: 700 }}>No student drawing</div>
+          )}
+          <canvas
+            ref={(el) => {
+              annotationCanvasRef.current = el;
+              if (el && primaryImage) {
+                const img = new Image();
+                img.onload = () => {
+                  // Match canvas to natural image aspect ratio, capped to viewport
+                  const maxW = Math.min(window.innerWidth - 40, 1200);
+                  const maxH = window.innerHeight * 0.65;
+                  const scale = Math.min(maxW / img.naturalWidth, maxH / img.naturalHeight, 1);
+                  el.width = Math.round(img.naturalWidth * scale);
+                  el.height = Math.round(img.naturalHeight * scale);
+                };
+                img.src = primaryImage;
+              } else if (el) {
+                el.width = CANVAS_W; el.height = CANVAS_H;
+              }
+            }}
+            onPointerDown={handleAnnotationPointerDown}
+            onPointerMove={handleAnnotationPointerMove}
+            onPointerUp={handleAnnotationPointerUp}
+            onPointerLeave={handleAnnotationPointerUp}
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', cursor: 'crosshair', touchAction: 'none' }}
+          />
+        </div>
+        <p style={{ color: '#64748b', fontSize: '0.8rem', marginTop: '10px' }}>Draw on the student's work — click Save & Send to attach it to this submission</p>
+      </div>
+    );
   };
 
   const filterBySearch = (name) => {
@@ -876,7 +1045,21 @@ const ReportsAdmin = () => {
                 </div>
               )}
 
-              <div style={{ marginTop: '24px', display: 'flex', gap: '16px' }}>
+              {/* Teacher annotation preview */}
+              {item.teacherAnnotation && (
+                <div style={{ marginTop: '20px', padding: '14px', borderRadius: '16px', background: '#f0f9ff', border: '1px solid #bae6fd' }}>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#0369a1', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>✏️ Your Markup</div>
+                  <img src={item.teacherAnnotation} alt="Teacher annotation" style={{ width: '100%', borderRadius: '10px', objectFit: 'contain', maxHeight: '300px' }} />
+                </div>
+              )}
+
+              <div style={{ marginTop: '24px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                <button
+                  onClick={() => setAnnotatingItem(item)}
+                  style={{ padding: '14px 20px', borderRadius: '20px', border: '2px solid #e0e7ff', background: '#fff', color: '#6366f1', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
+                >
+                  ✏️ {item.teacherAnnotation ? 'Re-mark' : 'Mark Up'}
+                </button>
                 <button
                   onClick={() => handleGradeSubmission(item, true)}
                   disabled={!!processingId}
@@ -887,7 +1070,7 @@ const ReportsAdmin = () => {
                 <button
                   onClick={() => handleGradeSubmission(item, false)}
                   disabled={!!processingId}
-                  style={{ padding: '0 32px', borderRadius: '20px', border: '2px solid #fee2e2', background: '#fff', color: '#ef4444', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
+                  style={{ padding: '0 28px', borderRadius: '20px', border: '2px solid #fee2e2', background: '#fff', color: '#ef4444', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
                 >
                   Reject
                 </button>
@@ -902,6 +1085,7 @@ const ReportsAdmin = () => {
 
   return (
     <div className="app-page">
+      {renderAnnotationModal()}
       <div className="app-page__header">
         <div className="app-page__title">
           <h2>Reports & Review</h2>

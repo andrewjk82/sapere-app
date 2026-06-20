@@ -23,7 +23,7 @@ const resolveStatId = (item) => {
  * (correct=false on rejection) so it stops showing as "Teacher marking".
  * Score / XP are untouched.
  */
-const finalizeStatAnswer = async (item, correct, feedback = null) => {
+const finalizeStatAnswer = async (item, correct, feedback = null, annotation = null) => {
   const colName = (item.challengeType === 'calc') ? 'calc_stats' : 'daily_stats';
   const safeStatId = String(resolveStatId(item)).replace(/\//g, '-');
 
@@ -46,6 +46,7 @@ const finalizeStatAnswer = async (item, correct, feedback = null) => {
     isPending: false,
     gradedAt: new Date().toISOString(),
     ...(feedback ? { teacherFeedback: feedback } : {}),
+    ...(annotation ? { teacherAnnotation: annotation } : {}),
   };
   await updateDoc(statRef, { answerResults: updatedResults });
 };
@@ -65,7 +66,7 @@ const finalizeStatAnswer = async (item, correct, feedback = null) => {
  * @param {boolean} approved
  * @returns {{ xpAwarded: number }}
  */
-export const gradeSubmission = async (item, approved, feedback = null) => {
+export const gradeSubmission = async (item, approved, feedback = null, annotation = null) => {
   if (!item || !item.id) {
     throw new Error("Invalid grading item: missing document ID");
   }
@@ -90,7 +91,7 @@ export const gradeSubmission = async (item, approved, feedback = null) => {
         }),
       }).catch(() => {});
     } else {
-      await finalizeStatAnswer(item, false, feedback).catch(() => {});
+      await finalizeStatAnswer(item, false, feedback, annotation).catch(() => {});
     }
     await deleteDoc(doc(db, 'grading_queue', item.id));
     return { xpAwarded: 0 };
@@ -183,6 +184,7 @@ export const gradeSubmission = async (item, approved, feedback = null) => {
       updatedResults[qIndex].isPending = false;
       updatedResults[qIndex].selectedAnswer = 'Approved';
       if (feedback) updatedResults[qIndex].teacherFeedback = feedback;
+      if (annotation) updatedResults[qIndex].teacherAnnotation = annotation;
     }
     await updateDoc(statRef, {
       score: increment(1),
