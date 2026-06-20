@@ -1762,6 +1762,11 @@ const RatioPartsCount = ({
 //   knownSide        — 'total' | 'a' | 'b'  (what we know)
 //   knownValue       — the number we know (total or one side)
 //   findSide         — 'a' | 'b' | 'total'  (what we want to find)
+// ── Ratio Unitary Chain ────────────────────────────────────────────────────
+// Visual unitary method:
+//   Phase 1 – bar split into (a+b) equal cells, each showing "?"
+//   Phase 2 – divide equation appears, then each cell fills with onePart value
+//   Phase 3 – target cells glow, answer equation pops in
 const RatioUnitaryChain = ({
   ratioA = 3, ratioB = 5,
   labelA = 'Red', labelB = 'Blue',
@@ -1772,117 +1777,155 @@ const RatioUnitaryChain = ({
   const totalParts = ratioA + ratioB;
   const onePart = knownSide === 'total'
     ? knownValue / totalParts
-    : knownSide === 'a'
-      ? knownValue / ratioA
-      : knownValue / ratioB;
+    : knownSide === 'a' ? knownValue / ratioA : knownValue / ratioB;
 
   const ansA = ratioA * onePart;
   const ansB = ratioB * onePart;
   const ansTotal = totalParts * onePart;
 
-  const steps = [
-    {
-      label: 'Ratio bar',
-      content: null, // rendered as bar
-      delay: 0.1,
-    },
-    {
-      label: 'Total parts',
-      math: `${ratioA} + ${ratioB} = ${totalParts} \\text{ parts}`,
-      color: '#7c3aed',
-      delay: 0.55,
-    },
-    {
-      label: knownSide === 'total'
-        ? `${totalParts} parts = ${knownValue}`
-        : knownSide === 'a'
-          ? `${ratioA} parts = ${knownValue} ${labelA}`
-          : `${ratioB} parts = ${knownValue} ${labelB}`,
-      math: `1 \\text{ part} = ${onePart}`,
-      color: '#059669',
-      delay: 1.1,
-    },
-    {
-      label: findSide === 'a'
-        ? `${labelA}: ${ratioA} parts`
-        : findSide === 'b'
-          ? `${labelB}: ${ratioB} parts`
-          : 'Total',
-      math: findSide === 'a'
-        ? `${ratioA} \\times ${onePart} = ${ansA}`
-        : findSide === 'b'
-          ? `${ratioB} \\times ${onePart} = ${ansB}`
-          : `${totalParts} \\times ${onePart} = ${ansTotal}`,
-      color: findSide === 'a' ? colorA : findSide === 'b' ? colorB : '#f59e0b',
-      delay: 1.65,
-      highlight: true,
-    },
-  ];
+  // which cells to highlight for the answer
+  const highlightStart = findSide === 'b' ? ratioA : 0;
+  const highlightCount = findSide === 'a' ? ratioA : findSide === 'b' ? ratioB : totalParts;
+  const highlightColor = findSide === 'a' ? colorA : findSide === 'b' ? colorB : '#f59e0b';
+  const answerValue = findSide === 'a' ? ansA : findSide === 'b' ? ansB : ansTotal;
+  const answerLabel = findSide === 'a' ? labelA : findSide === 'b' ? labelB : 'Total';
+  const answerParts = findSide === 'a' ? ratioA : findSide === 'b' ? ratioB : totalParts;
+
+  // known cell range (for highlighting what we already know)
+  const knownStart = knownSide === 'b' ? ratioA : 0;
+  const knownCount = knownSide === 'a' ? ratioA : knownSide === 'b' ? ratioB : totalParts;
+
+  const CELL_H = 54;
+
+  // phase timings
+  const T_BAR   = 0.1;   // bar + cells appear
+  const T_DIV   = 1.0;   // divide equation
+  const T_FILL  = 1.8;   // cells fill in
+  const T_GLOW  = 2.8;   // target cells glow
+  const T_ANS   = 3.4;   // answer equation
+
+  const knownEquation = knownSide === 'total'
+    ? `${knownValue} ÷ ${totalParts} = ${onePart}`
+    : knownSide === 'a'
+      ? `${knownValue} ÷ ${ratioA} = ${onePart}`
+      : `${knownValue} ÷ ${ratioB} = ${onePart}`;
+
+  const knownLabel = knownSide === 'total'
+    ? `Total ${knownValue} ÷ ${totalParts} parts`
+    : knownSide === 'a'
+      ? `${labelA}: ${ratioA} parts = ${knownValue}`
+      : `${labelB}: ${ratioB} parts = ${knownValue}`;
 
   return (
-    <div style={{ fontFamily: FONT, display: 'flex', flexDirection: 'column', gap: 14, width: '100%', maxWidth: 480, margin: '0 auto' }}>
+    <div style={{ fontFamily: FONT, display: 'flex', flexDirection: 'column', gap: 20, alignItems: 'center', width: '100%' }}>
 
-      {/* Ratio bar */}
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }}>
-        <div style={{ height: 52, borderRadius: 12, overflow: 'hidden', display: 'flex', gap: 3 }}>
-          <motion.div initial={{ flex: 0 }} animate={{ flex: ratioA }}
-            transition={{ delay: 0.25, duration: 0.6, ease: 'easeOut' }}
-            style={{ background: colorA, display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 0 }}>
-            <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9 }}
-              style={{ color: '#fff', fontWeight: 900, fontSize: '1rem' }}>{ratioA}</motion.span>
-          </motion.div>
-          <motion.div initial={{ flex: 0 }} animate={{ flex: ratioB }}
-            transition={{ delay: 0.35, duration: 0.6, ease: 'easeOut' }}
-            style={{ background: colorB, display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 0 }}>
-            <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0 }}
-              style={{ color: '#fff', fontWeight: 900, fontSize: '1rem' }}>{ratioB}</motion.span>
-          </motion.div>
+      {/* ── Bar: split into equal cells ── */}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: T_BAR }}
+        style={{ width: '100%' }}>
+
+        {/* label row above */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
+          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: colorA }}>{labelA} ({ratioA} parts)</span>
+          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: colorB }}>{labelB} ({ratioB} parts)</span>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 6 }}>
-          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: colorA }}>{labelA}</span>
-          <span style={{ fontSize: '0.82rem', fontWeight: 900, color: '#374151', letterSpacing: 3 }}>{ratioA} : {ratioB}</span>
-          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: colorB }}>{labelB}</span>
+
+        {/* cells */}
+        <div style={{ display: 'flex', gap: 3, width: '100%' }}>
+          {Array.from({ length: totalParts }, (_, i) => {
+            const isA = i < ratioA;
+            const cellColor = isA ? colorA : colorB;
+            const isKnown = i >= knownStart && i < knownStart + knownCount && knownSide !== 'total';
+            return (
+              <motion.div key={i}
+                initial={{ opacity: 0, scaleY: 0 }}
+                animate={{ opacity: 1, scaleY: 1 }}
+                transition={{ delay: T_BAR + 0.15 + i * 0.07, type: 'spring', stiffness: 380, damping: 22 }}
+                style={{
+                  flex: 1, height: CELL_H, borderRadius: 10, position: 'relative', overflow: 'hidden',
+                  background: isKnown ? cellColor : `${cellColor}55`,
+                  border: `2px solid ${cellColor}`,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                }}>
+                {/* "?" placeholder */}
+                <motion.span
+                  initial={{ opacity: 1 }} animate={{ opacity: 0 }}
+                  transition={{ delay: T_FILL + i * 0.08, duration: 0.15 }}
+                  style={{ position: 'absolute', fontSize: '1.1rem', fontWeight: 900, color: cellColor }}>?</motion.span>
+                {/* filled value */}
+                <motion.span
+                  initial={{ opacity: 0, scale: 0.4 }} animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: T_FILL + i * 0.08, type: 'spring', stiffness: 500, damping: 18 }}
+                  style={{ position: 'absolute', fontSize: '1.05rem', fontWeight: 900, color: '#fff' }}>
+                  {onePart}
+                </motion.span>
+                {/* glow overlay for answer cells */}
+                {i >= highlightStart && i < highlightStart + highlightCount && (
+                  <motion.div
+                    initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                    transition={{ delay: T_GLOW + (i - highlightStart) * 0.08 }}
+                    style={{ position: 'absolute', inset: 0, background: highlightColor, borderRadius: 8 }}>
+                    <motion.span
+                      initial={{ opacity: 0, scale: 0.4 }} animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: T_GLOW + 0.1 + (i - highlightStart) * 0.08, type: 'spring', stiffness: 500 }}
+                      style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.05rem', fontWeight: 900, color: '#fff' }}>
+                      {onePart}
+                    </motion.span>
+                  </motion.div>
+                )}
+              </motion.div>
+            );
+          })}
         </div>
+
+        {/* total known label */}
+        {knownSide === 'total' && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: T_BAR + 0.5 }}
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, marginTop: 8 }}>
+            <div style={{ flex: 1, height: 1.5, background: '#c4b5fd' }} />
+            <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#7c3aed', whiteSpace: 'nowrap' }}>Total = {knownValue}</span>
+            <div style={{ flex: 1, height: 1.5, background: '#c4b5fd' }} />
+          </motion.div>
+        )}
       </motion.div>
 
-      {/* Step chain */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-        {steps.slice(1).map((step, i) => (
-          <motion.div key={i}
-            initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: step.delay, type: 'spring', stiffness: 280, damping: 24 }}
-            style={{
-              display: 'flex', alignItems: 'center', gap: 14,
-              background: step.highlight
-                ? `linear-gradient(135deg, ${step.color}18, ${step.color}28)`
-                : '#f8fafc',
-              border: `1.5px solid ${step.highlight ? step.color + '55' : '#e2e8f0'}`,
-              borderRadius: 14, padding: '11px 16px',
-              boxShadow: step.highlight ? `0 6px 20px ${step.color}22` : 'none',
-            }}>
-            <div style={{
-              width: 28, height: 28, borderRadius: '50%', flexShrink: 0,
-              background: step.highlight
-                ? `linear-gradient(135deg, ${step.color}cc, ${step.color})`
-                : `linear-gradient(135deg, #7c3aedcc, #7c3aed)`,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              color: '#fff', fontWeight: 900, fontSize: '0.75rem',
-              boxShadow: `0 3px 10px ${step.color || '#7c3aed'}44`,
-            }}>
-              {i + 2}
-            </div>
-            <div style={{ flex: 1 }}>
-              <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af', marginBottom: 2 }}>{step.label}</div>
-              <MathView content={`$${step.math}$`} style={{ fontSize: step.highlight ? '1.2rem' : '1rem', fontWeight: step.highlight ? 900 : 700, color: step.color || '#1e1b4b' }} />
-            </div>
-            {step.highlight && (
-              <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
-                transition={{ delay: step.delay + 0.3, type: 'spring', stiffness: 400 }}
-                style={{ fontSize: '1.3rem' }}>✓</motion.div>
-            )}
-          </motion.div>
-        ))}
-      </div>
+      {/* ── Step 2: divide equation ── */}
+      <motion.div
+        initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: T_DIV, type: 'spring', stiffness: 260, damping: 24 }}
+        style={{ display: 'flex', alignItems: 'center', gap: 12, background: '#f5f3ff', border: '1.5px solid #c4b5fd', borderRadius: 16, padding: '12px 22px' }}>
+        <div style={{ fontSize: '0.82rem', fontWeight: 700, color: '#6b7280' }}>{knownLabel}</div>
+        <div style={{ width: 1.5, height: 28, background: '#ddd6fe' }} />
+        <div style={{ fontSize: '1.15rem', fontWeight: 900, color: '#7c3aed' }}>1 part = {onePart}</div>
+      </motion.div>
+
+      {/* ── Step 3: answer equation ── */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: T_ANS, type: 'spring', stiffness: 300, damping: 20 }}
+        style={{
+          display: 'flex', alignItems: 'center', gap: 14,
+          background: `linear-gradient(135deg, ${highlightColor}18, ${highlightColor}30)`,
+          border: `2px solid ${highlightColor}66`,
+          borderRadius: 20, padding: '14px 24px',
+          boxShadow: `0 8px 28px ${highlightColor}25`,
+        }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+          <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af' }}>{answerLabel}</span>
+          <span style={{ fontSize: '0.88rem', fontWeight: 700, color: '#6b7280' }}>{answerParts} × {onePart}</span>
+        </div>
+        <div style={{ fontSize: '1.5rem', color: '#d1d5db' }}>=</div>
+        <motion.div
+          animate={{ scale: [1, 1.2, 1] }}
+          transition={{ delay: T_ANS + 0.3, duration: 0.4 }}
+          style={{ fontSize: '2.2rem', fontWeight: 900, color: highlightColor, lineHeight: 1 }}>
+          {answerValue}
+        </motion.div>
+        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
+          transition={{ delay: T_ANS + 0.5, type: 'spring', stiffness: 400 }}
+          style={{ fontSize: '0.8rem', fontWeight: 900, color: '#fff', background: highlightColor, borderRadius: 20, padding: '4px 12px' }}>
+          ✓ answer
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

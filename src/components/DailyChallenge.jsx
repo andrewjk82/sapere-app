@@ -1037,12 +1037,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         };
         const gradingDocRef = await addDoc(collection(db, 'grading_queue'), gradingEntry);
         // Fire-and-forget: ask Gemini to pre-grade so the teacher sees an AI assessment
-        const autoGradeEndpoint = import.meta.env.DEV ? '/api/auto-grade' : '/api/auto-grade';
-        fetch(autoGradeEndpoint, {
+        fetch('/api/auto-grade', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ gradingItemId: gradingDocRef.id }),
-        }).catch(() => {});
+        }).then(async (r) => {
+          const body = await r.json().catch(() => ({}));
+          if (!body.success) console.warn('[auto-grade] failed:', body.message || body.error || r.status);
+          else console.log('[auto-grade] ok:', gradingDocRef.id);
+        }).catch((err) => console.warn('[auto-grade] network error:', err?.message));
         markSessionReviewRequested();
         notifyTeacherPendingReview({
           studentId: user.uid,

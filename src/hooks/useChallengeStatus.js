@@ -230,6 +230,9 @@ export const useChallengeStatus = (uid) => {
           applyStatusFromCache();
           
           if (hasNewerDailyReset || hasNewerCalcReset) {
+            try {
+              localStorage.removeItem(`quiz_draft_${uid}`);
+            } catch (_) {}
             window.dispatchEvent(new Event('sapere-challenge-reset-applied'));
           }
         }

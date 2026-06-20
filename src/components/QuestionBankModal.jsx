@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Plus, Trash2, Edit2, Image as ImageIcon, Eye, Check, AlertTriangle, BarChart, Lightbulb, Clock } from 'lucide-react';
 import { MATH_SYMBOLS } from '../utils/challengeUtils';
-import { db } from '../firebase/config';
+import { db, auth } from '../firebase/config';
 import {
   collection,
   query,
@@ -1572,6 +1572,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         updatedAt: serverTimestamp()
       });
 
+      let savedQuestionId = editingQuestion;
       if (editingQuestion) {
         let savePayload = { ...payload };
         try {
@@ -1584,25 +1585,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
             throw err;
           }
         }
-        
-        if (import.meta.env.DEV) {
-          try {
-            const syncRes = await fetch('/__local-api/sync-seed', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ id: editingQuestion, question: savePayload })
-            });
-            const syncData = await syncRes.json();
-            if (syncData.success) {
-              console.log('Local seed file synced:', syncData.file);
-            }
-          } catch (err) {
-            console.error('Failed to sync local seed file:', err);
-          }
-        }
-      }
-      let savedQuestionId = editingQuestion;
-      if (!editingQuestion) {
+      } else {
         payload.createdAt = serverTimestamp();
         // Provenance: teacher-added questions are tagged 'teacher' so the
         // chapter seeder's clear step never deletes them when re-seeding a

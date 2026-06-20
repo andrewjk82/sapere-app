@@ -73,40 +73,41 @@ const stampVersions = async (version) => {
 
 /**
  * Bulk incremental update for the chapter seeder: apply all added/removed
- * question ids per chapter with arrayUnion/arrayRemove (ZERO reads), then
+ * question ids per chapter with in-memory merging, then
  * stamp BOTH version docs with the seeder's version so the next admin
  * session does not trigger a full questions-collection rebuild scan.
  * added/removed: { [chapterId]: [questionId, ...] }
  */
 export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) => {
-  const chapterIds = new Set([...Object.keys(added), ...Object.keys(removed)]);
-  const ops = [];
-  chapterIds.forEach((chapterId) => {
-    if (!chapterId) return;
+  const chapterIds = [...new Set([...Object.keys(added), ...Object.keys(removed)])].filter(Boolean);
+  
+  for (const chapterId of chapterIds) {
     const add = [...new Set((added[chapterId] || []).map(String))];
     // An id being re-seeded appears in both lists — keep it (add wins).
     const rem = [...new Set((removed[chapterId] || []).map(String))].filter((id) => !add.includes(id));
-    const ARRAY_LIMIT = 100;
+    
+    const docRef = indexRef(chapterId);
+    const snap = await getDoc(docRef);
+    let ids = snap.exists() ? (snap.data().ids || []) : [];
+    
     if (rem.length) {
-      for (let i = 0; i < rem.length; i += ARRAY_LIMIT) {
-        const chunk = rem.slice(i, i + ARRAY_LIMIT);
-        ops.push(setDoc(indexRef(chapterId), {
-          ids: arrayRemove(...chunk),
-          updatedAt: serverTimestamp(),
-        }, { merge: true }));
-      }
+      const remSet = new Set(rem);
+      ids = ids.filter(id => !remSet.has(String(id)));
     }
+    
     if (add.length) {
-      for (let i = 0; i < add.length; i += ARRAY_LIMIT) {
-        const chunk = add.slice(i, i + ARRAY_LIMIT);
-        ops.push(setDoc(indexRef(chapterId), {
-          ids: arrayUnion(...chunk),
-          updatedAt: serverTimestamp(),
-        }, { merge: true }));
-      }
+      const idsSet = new Set(ids.map(String));
+      add.forEach(id => idsSet.add(id));
+      ids = [...idsSet];
     }
-  });
-  await Promise.all(ops);
+    
+    await setDoc(docRef, {
+      ids,
+      count: ids.length,
+      updatedAt: serverTimestamp(),
+    }, { merge: true });
+  }
+  
   const v = Number(version) || Date.now();
   // Seeding changes the active-question set → also bump membershipVersion so
   // students' practice_pool signatures rebuild and pick up added/removed IDs.
@@ -251,9 +252,10 @@ export const ensureQuestionIndexFresh = async () => {
     // concurrent invocation (React Strict Mode, rapid navigation) also bails.
     try { sessionStorage.setItem(INDEX_SESSION_KEY, String(bankVersion)); } catch (_) { /* private mode */ }
 
-    const chapters = await rebuildAllQuestionIndexes();
-    console.info(`[questionIndex] rebuilt indexes for ${chapters} chapters`);
-    return true;
+    // Avoid expensive collection scans (1,600+ reads) on client side.
+    // The chapter seeder and question bank admin already apply index modifications incrementally.
+    console.info('[questionIndex] skipping full database index rebuild to save Firestore read quota.');
+    return false;
   } catch (err) {
     console.warn('ensureQuestionIndexFresh failed (non-fatal):', err?.code || err);
     return false;

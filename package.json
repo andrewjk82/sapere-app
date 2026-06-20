@@ -10,9 +10,13 @@
     "preview": "vite preview",
     "get-inputs": "node scratch/read_last_user_input.js",
     "gen-5d": "node scratch/generateYear12Ch5DQuestions.js",
-    "sync-seeds": "node scratch/dump_db_to_seeds.js"
+    "sync-seeds": "node scratch/dump_db_to_seeds.js",
+    "validate-seeds": "node --import ./scripts/extResolve.mjs scripts/validateSeeds.mjs"
   },
   "dependencies": {
+    "@babel/generator": "^7.27.0",
+    "@babel/parser": "^7.27.0",
+    "@babel/traverse": "^7.27.0",
     "3d-force-graph": "^1.80.0",
     "firebase": "^12.12.1",
     "firebase-admin": "^13.8.0",

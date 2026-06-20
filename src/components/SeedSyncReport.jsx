@@ -16,7 +16,7 @@ const SeedSyncReport = ({ report, onClose }) => {
   if (!report) return null;
   const rows = report.report || [];
   const failed = report.failed || [];
-  const totals = report.totals || { added: 0, removed: 0, updated: 0 };
+  const totals = report.totals || { added: 0, removed: 0, updated: 0, skipped: 0 };
 
   const Stat = ({ icon, value, label, color }) => (
     <div style={{ display: 'flex', alignItems: 'center', gap: 6, color }}>
@@ -87,6 +87,9 @@ const SeedSyncReport = ({ report, onClose }) => {
             <Stat icon={<Plus size={16} />} value={totals.added} label="added" color="#059669" />
             <Stat icon={<Minus size={16} />} value={totals.removed} label="removed" color="#e11d48" />
             <Stat icon={<RotateCw size={16} />} value={totals.updated} label="updated" color="#2563eb" />
+            {totals.skipped > 0 && (
+              <Stat icon={<AlertTriangle size={16} />} value={totals.skipped} label="skipped (bad LaTeX)" color="#d97706" />
+            )}
           </div>
 
           <div style={{ overflowY: 'auto', padding: '8px 12px 16px' }}>
@@ -112,7 +115,8 @@ const SeedSyncReport = ({ report, onClose }) => {
                   {r.added > 0 && <span style={{ color: '#059669' }}>+{r.added}</span>}
                   {r.removed > 0 && <span style={{ color: '#e11d48' }}>−{r.removed}</span>}
                   {r.updated > 0 && <span style={{ color: '#2563eb' }}>~{r.updated}</span>}
-                  {r.added === 0 && r.removed === 0 && r.updated === 0 && (
+                  {r.skipped > 0 && <span style={{ color: '#d97706' }} title="withheld: KaTeX could not parse">⚠{r.skipped}</span>}
+                  {r.added === 0 && r.removed === 0 && r.updated === 0 && !r.skipped && (
                     <span style={{ color: '#94a3b8' }}>no change</span>
                   )}
                 </div>
