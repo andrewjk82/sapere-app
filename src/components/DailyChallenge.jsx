@@ -445,22 +445,23 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   // ── Listen for forced resets (from teacher) ──
   useEffect(() => {
     const handleReset = () => {
+      // Clear local storage draft immediately so it doesn't get restored
+      clearDraft();
+      
       // Abort active quiz/review and return to start
-      if (stepRef.current !== 'start') {
-        setStep('start');
-        setCurrentIdx(0);
-        setUserAnswers([]);
-        setAnswerResults([]);
-        setSubAnswers({});
-        setIsFinishing(false);
-        setElapsedSeconds(null);
-        setSelectedChallenge(null);
-        showToast('Challenge was reset by your teacher. Starting over...', 'info');
-      }
+      setStep('start');
+      setCurrentIdx(0);
+      setUserAnswers([]);
+      setAnswerResults([]);
+      setSubAnswers({});
+      setIsFinishing(false);
+      setElapsedSeconds(null);
+      setSelectedChallenge(null);
+      showToast('Challenge was reset by your teacher. Starting over...', 'info');
     };
     window.addEventListener('sapere-challenge-reset-applied', handleReset);
     return () => window.removeEventListener('sapere-challenge-reset-applied', handleReset);
-  }, []);
+  }, [draftKey]);
 
   // ── Lazy-load working-out images for the open detail view ──
   // Heavy base64 canvas exports live in a sibling subcollection
@@ -939,7 +940,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           solution: currentQ?.solution || '',
           requiresManualGrading: currentQ?.requiresManualGrading || true,
         };
-        await addDoc(collection(db, 'grading_queue'), gradingEntry);
+        const gradingDocRef = await addDoc(collection(db, 'grading_queue'), gradingEntry);
+        // Fire-and-forget: ask Gemini to pre-grade so the teacher sees an AI assessment
+        const autoGradeEndpoint = import.meta.env.DEV ? '/api/auto-grade' : '/api/auto-grade';
+        fetch(autoGradeEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ gradingItemId: gradingDocRef.id }),
+        }).catch(() => {});
         markSessionReviewRequested();
         notifyTeacherPendingReview({
           studentId: user.uid,

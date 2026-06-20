@@ -1,0 +1,130 @@
+import admin from 'firebase-admin';
+
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
+
+function getAdminApp() {
+  if (admin.apps.length > 0) return admin.apps[0];
+  const projectId = process.env.FIREBASE_PROJECT_ID;
+  const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
+  const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n');
+  if (!projectId || !clientEmail || !privateKey) throw new Error('Missing Firebase admin credentials');
+  return admin.initializeApp({ credential: admin.credential.cert({ projectId, clientEmail, privateKey }) });
+}
+
+function stripDataUrl(dataUrl) {
+  return dataUrl?.replace(/^data:image\/[a-z]+;base64,/, '') || null;
+}
+
+async function callGemini(parts) {
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts }],
+        generationConfig: {
+          temperature: 0.3,
+          maxOutputTokens: 600,
+          responseMimeType: 'application/json',
+        },
+      }),
+    }
+  );
+
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error(`Gemini API ${res.status}: ${errText.slice(0, 200)}`);
+  }
+
+  const data = await res.json();
+  const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+  if (!text) throw new Error('Empty Gemini response');
+
+  try {
+    return JSON.parse(text);
+  } catch {
+    // Sometimes Gemini wraps JSON in markdown fences despite responseMimeType
+    const match = text.match(/\{[\s\S]*\}/);
+    if (match) return JSON.parse(match[0]);
+    throw new Error('Could not parse Gemini JSON response');
+  }
+}
+
+export default async function handler(req, res) {
+  if (req.method !== 'POST') return res.status(405).end();
+
+  if (!GEMINI_API_KEY) {
+    return res.status(200).json({ success: false, message: 'Auto-grading not configured (GEMINI_API_KEY missing)' });
+  }
+
+  const { gradingItemId } = req.body || {};
+  if (!gradingItemId) return res.status(400).json({ error: 'Missing gradingItemId' });
+
+  try {
+    const app = getAdminApp();
+    const adminDb = admin.firestore(app);
+
+    const itemSnap = await adminDb.collection('grading_queue').doc(gradingItemId).get();
+    if (!itemSnap.exists) return res.status(404).json({ error: 'Grading item not found' });
+
+    const item = itemSnap.data();
+
+    // Build Gemini multimodal parts
+    const parts = [];
+
+    const hasDrawing = item.hasDrawing || (item.answerImage && item.answerImage.length > 100);
+    const validImages = (item.answerImages || []).filter((u) => u && u.length > 100);
+    const imagesToSend = validImages.length > 0
+      ? validImages
+      : (item.answerImage && item.answerImage.length > 100 ? [item.answerImage] : []);
+
+    const promptText = [
+      'You are an expert mathematics tutor grading a student\'s submitted work.',
+      '',
+      `Question: ${item.questionText || 'N/A'}`,
+      `Correct Answer: ${item.correctAnswer || 'N/A'}`,
+      item.solution ? `Solution / Working Guide: ${item.solution}` : '',
+      item.answerText ? `Student\'s typed answer: ${item.answerText}` : '',
+      '',
+      hasDrawing && imagesToSend.length > 0
+        ? 'The student\'s handwritten working-out or graph is attached as an image. Grade based on both their method and final answer.'
+        : 'The student did not submit any drawing.',
+      '',
+      'Respond with JSON only (no markdown):',
+      '{',
+      '  "isCorrect": true or false,',
+      '  "confidence": "high" | "medium" | "low",',
+      '  "feedback": "2-3 sentences for the student — encouraging tone. If correct, praise their method. If incorrect, kindly explain the main mistake and what they should try instead.",',
+      '  "teacherNote": "One sentence for the teacher summarising your assessment."',
+      '}',
+    ].filter(Boolean).join('\n');
+
+    parts.push({ text: promptText });
+
+    // Attach up to 4 images (Gemini 2.0 Flash supports multiple inline images)
+    for (const imgUrl of imagesToSend.slice(0, 4)) {
+      const b64 = stripDataUrl(imgUrl);
+      if (b64) parts.push({ inlineData: { mimeType: 'image/png', data: b64 } });
+    }
+
+    const assessment = await callGemini(parts);
+
+    await adminDb.collection('grading_queue').doc(gradingItemId).update({
+      aiAssessment: {
+        isCorrect: Boolean(assessment.isCorrect),
+        confidence: assessment.confidence || 'medium',
+        feedback: assessment.feedback || '',
+        teacherNote: assessment.teacherNote || '',
+        gradedAt: admin.firestore.FieldValue.serverTimestamp(),
+      },
+    });
+
+    console.log(`[auto-grade] Graded ${gradingItemId}: ${assessment.isCorrect ? 'CORRECT' : 'INCORRECT'} (${assessment.confidence})`);
+    return res.status(200).json({ success: true, assessment });
+  } catch (err) {
+    console.error('[auto-grade] Error:', err?.message || err);
+    return res.status(500).json({ success: false, error: err?.message || 'Unknown error' });
+  }
+}

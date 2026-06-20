@@ -851,15 +851,39 @@ const ReportsAdmin = () => {
                 </div>
               </div>
 
-              <div style={{ marginTop: '32px', display: 'flex', gap: '16px' }}>
-                <button 
+              {item.aiAssessment && (
+                <div style={{ marginTop: '24px', padding: '20px', borderRadius: '20px', border: `2px solid ${item.aiAssessment.isCorrect ? '#bbf7d0' : '#fecaca'}`, background: item.aiAssessment.isCorrect ? '#f0fdf4' : '#fef2f2' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+                    <span style={{ fontSize: '1.2rem' }}>{item.aiAssessment.isCorrect ? '✅' : '❌'}</span>
+                    <span style={{ fontWeight: 900, fontSize: '0.85rem', color: item.aiAssessment.isCorrect ? '#166534' : '#991b1b', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                      AI Assessment — {item.aiAssessment.isCorrect ? 'Correct' : 'Incorrect'}
+                    </span>
+                    <span style={{ marginLeft: 'auto', padding: '2px 8px', borderRadius: '100px', background: item.aiAssessment.confidence === 'high' ? '#dcfce7' : item.aiAssessment.confidence === 'low' ? '#fee2e2' : '#fef3c7', color: item.aiAssessment.confidence === 'high' ? '#166534' : item.aiAssessment.confidence === 'low' ? '#991b1b' : '#92400e', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase' }}>
+                      {item.aiAssessment.confidence} confidence
+                    </span>
+                  </div>
+                  {item.aiAssessment.teacherNote && (
+                    <p style={{ margin: '0 0 8px', fontSize: '0.82rem', color: '#475569', lineHeight: 1.5 }}>
+                      <span style={{ fontWeight: 900, color: '#64748b' }}>Teacher note: </span>{item.aiAssessment.teacherNote}
+                    </p>
+                  )}
+                  {item.aiAssessment.feedback && (
+                    <p style={{ margin: 0, fontSize: '0.85rem', color: item.aiAssessment.isCorrect ? '#166534' : '#7f1d1d', lineHeight: 1.5 }}>
+                      <span style={{ fontWeight: 900 }}>Student feedback: </span>{item.aiAssessment.feedback}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              <div style={{ marginTop: '24px', display: 'flex', gap: '16px' }}>
+                <button
                   onClick={() => handleGradeSubmission(item, true)}
                   disabled={!!processingId}
                   style={{ flex: 1, padding: '18px', borderRadius: '20px', border: 'none', background: '#10b981', color: 'white', fontWeight: 900, fontSize: '1.05rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', boxShadow: '0 8px 20px rgba(16,185,129,0.2)' }}
                 >
                   <CheckCircle size={22} /> {processingId === item.id ? 'Processing...' : 'Approve & Give Points'}
                 </button>
-                <button 
+                <button
                   onClick={() => handleGradeSubmission(item, false)}
                   disabled={!!processingId}
                   style={{ padding: '0 32px', borderRadius: '20px', border: '2px solid #fee2e2', background: '#fff', color: '#ef4444', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
