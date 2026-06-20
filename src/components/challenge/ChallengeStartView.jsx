@@ -321,6 +321,8 @@ const ChallengeStartView = ({
   isMobile,
   secretNote,
   onOpenSecretNote,
+  newFeedbackCount = 0,
+  onViewFeedback,
 }) => {
   const calculationEnabled = studentProfile?.calculationEnabled !== false;
 
@@ -458,6 +460,32 @@ const ChallengeStartView = ({
             <div className="cs__streak">🔥 {streakDays}-day streak</div>
           )}
         </div>
+
+        {/* Teacher feedback notification */}
+        {newFeedbackCount > 0 && (
+          <button
+            onClick={onViewFeedback}
+            style={{
+              display: 'flex', alignItems: 'center', gap: '14px',
+              width: '100%', marginBottom: '16px',
+              padding: '16px 20px', borderRadius: '18px', border: 'none', cursor: 'pointer',
+              background: 'linear-gradient(135deg, #fef3c7, #fde68a)',
+              boxShadow: '0 4px 16px rgba(245,158,11,0.18)',
+              textAlign: 'left',
+            }}
+          >
+            <span style={{ fontSize: '1.6rem', flexShrink: 0 }}>💬</span>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontWeight: 900, fontSize: '0.95rem', color: '#78350f' }}>
+                Teacher feedback arrived!
+              </div>
+              <div style={{ fontSize: '0.8rem', color: '#92400e', marginTop: '2px' }}>
+                {newFeedbackCount} question{newFeedbackCount > 1 ? 's' : ''} graded — tap to review
+              </div>
+            </div>
+            <ArrowRight size={18} color="#b45309" />
+          </button>
+        )}
 
         {/* Test cards (each with its attached Secret Note footer) */}
         <div className="cs__tests">

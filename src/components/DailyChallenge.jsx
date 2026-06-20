@@ -306,6 +306,27 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const hasCalculationTest = studentProfile?.calculationEnabled !== false;
 
+  const FEEDBACK_SEEN_KEY = 'sapere:feedback:seenAt';
+  const newFeedbackCount = useMemo(() => {
+    try {
+      const seenAt = localStorage.getItem(FEEDBACK_SEEN_KEY);
+      const seenDate = seenAt ? new Date(seenAt) : null;
+      let count = 0;
+      for (const stat of history) {
+        for (const r of stat.answerResults || []) {
+          if (!r?.teacherFeedback) continue;
+          if (!seenDate || (r.gradedAt && new Date(r.gradedAt) > seenDate)) count++;
+        }
+      }
+      return count;
+    } catch { return 0; }
+  }, [history]);
+
+  const handleViewFeedback = () => {
+    try { localStorage.setItem(FEEDBACK_SEEN_KEY, new Date().toISOString()); } catch { /* */ }
+    setViewMode('history');
+  };
+
   // Question-based correct count for display (a multi-part question counts as
   // correct only when every part is right). Keeps the headline/denominator in
   // terms of assigned questions while XP stays point-based.
@@ -1896,6 +1917,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   onStartDailyQuiz={startDailyQuiz}
                   onStartCalculationQuiz={startCalculationQuiz}
                   onViewHistory={() => setViewMode('history')}
+                  newFeedbackCount={newFeedbackCount}
+                  onViewFeedback={handleViewFeedback}
                   onBack={onBack}
                   getQuestionCount={getQuestionCount}
                   getChallengeMaxXp={getChallengeMaxXp}
