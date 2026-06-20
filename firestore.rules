@@ -150,6 +150,10 @@ service cloud.firestore {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
 
+      match /saved_feedback/{noteId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
       // Seen-question tracking for daily assignment de-duplication. Without
       // this match the subcollection was unreachable and the seen filter
       // silently never worked.
