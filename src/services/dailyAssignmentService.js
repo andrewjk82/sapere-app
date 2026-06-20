@@ -507,6 +507,11 @@ const fetchManualQuestions = async (targets, { questionCount = 10, recentlySeen 
 
 const seenQuestionsRef = (uid) => doc(db, "users", uid, "seen_questions", "current_week");
 
+// Hard cap on seen IDs — prevents unbounded doc growth for high-question years
+// (e.g. Y7 ~1,500 questions). Pruning happens naturally per-chapter when a
+// chapter pool exhausts, but this cap is a safety-net for slow-cycling pools.
+const MAX_SEEN_IDS = 2000;
+
 // Returns the Set of question IDs the student has seen (1 Firestore read).
 // Cumulative — entries are pruned per chapter only when that chapter's whole
 // pool has been exhausted and recycles, so a student keeps getting NEW
@@ -530,10 +535,26 @@ export const updateSeenQuestions = async (uid, questionIds) => {
   const ids = questionIds.filter(Boolean).map(String);
   if (ids.length === 0) return;
   try {
-    await setDoc(seenQuestionsRef(uid), {
-      questionIds: arrayUnion(...ids),
-      updatedAt: serverTimestamp(),
-    }, { merge: true });
+    // Fast path: arrayUnion (no read required).
+    // If the doc is approaching MAX_SEEN_IDS, read + trim before writing so
+    // the doc stays bounded. This extra read is rare (only triggers once the
+    // student has seen ~1,980+ unique questions without a full chapter cycle).
+    const snap = await getDoc(seenQuestionsRef(uid)).catch(() => null);
+    const existing = snap?.exists() ? (snap.data().questionIds || []) : [];
+    const merged = [...new Set([...existing, ...ids])];
+    if (merged.length > MAX_SEEN_IDS) {
+      // Keep the most recent MAX_SEEN_IDS entries (tail = newest after arrayUnion ordering).
+      const trimmed = merged.slice(merged.length - MAX_SEEN_IDS);
+      await setDoc(seenQuestionsRef(uid), {
+        questionIds: trimmed,
+        updatedAt: serverTimestamp(),
+      }, { merge: false });
+    } else {
+      await setDoc(seenQuestionsRef(uid), {
+        questionIds: arrayUnion(...ids),
+        updatedAt: serverTimestamp(),
+      }, { merge: true });
+    }
   } catch (err) {
     console.warn("updateSeenQuestions failed (non-critical):", err?.code || err);
   }

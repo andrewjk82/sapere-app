@@ -267,10 +267,17 @@ export const updatePoolAfterQuiz = async (uid, results) => {
   if (!uid || !Array.isArray(results) || results.length === 0) return;
 
   try {
-    const snap = await getDoc(poolRef(uid));
-    if (!snap.exists()) return;
-
-    const data = snap.data();
+    // Use in-memory cache when available — avoids a redundant Firestore read
+    // immediately after a quiz (ensurePracticePool already read this doc).
+    let data;
+    const cachedEntry = _poolCache.get(uid);
+    if (cachedEntry?.data) {
+      data = cachedEntry.data;
+    } else {
+      const snap = await getDoc(poolRef(uid));
+      if (!snap.exists()) return;
+      data = snap.data();
+    }
     const chapter_pools = JSON.parse(JSON.stringify(data.chapter_pools || {}));
     const chapter_accuracy = JSON.parse(JSON.stringify(data.chapter_accuracy || {}));
 
@@ -301,8 +308,9 @@ export const updatePoolAfterQuiz = async (uid, results) => {
 
     const updated = { ...data, chapter_pools, chapter_accuracy, updatedAt: serverTimestamp() };
     await setDoc(poolRef(uid), updated, { merge: false });
-    // 캐시 무효화 — 다음 ensurePracticePool/selectDailyQuestions에서 최신 데이터 사용
-    _poolCache.delete(uid);
+    // Update cache in-place so the next selectDailyQuestions call uses fresh
+    // data without an extra Firestore read.
+    setCached(uid, updated.curriculumSignature, updated);
   } catch (err) {
     // non-critical: 실패해도 퀴즈 경험에 영향 없음
     console.warn('updatePoolAfterQuiz failed (non-critical):', err?.code || err);

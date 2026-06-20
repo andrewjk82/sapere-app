@@ -23,7 +23,7 @@ import { idbGet, idbSet, idbDel } from '../utils/idbStore';
 export const EXAM_PREP_NOTE_KIND = 'exam_prep';
 
 const ROUND_SIZE = 15;
-const POOL_TTL_MS = 1000 * 60 * 60 * 6; // 6h — pool refresh
+const POOL_TTL_MS = 1000 * 60 * 60 * 24; // 24h safety-net TTL (version-based invalidation is primary)
 const HISTORY_CAP = 30;
 const V = 'v1';
 
@@ -223,19 +223,26 @@ const purgeLegacyLocalStoragePool = () => {
   } catch { /* ignore */ }
 };
 
-const loadCachedPool = async (uid, selection) => {
+const loadCachedPool = async (uid, selection, latestVersion) => {
   purgeLegacyLocalStoragePool();
   const cached = await idbGet(k(uid, 'pool'));
   if (!cached) return null;
   if (cached.signature !== signatureFor(selection)) return null;
+  // Version-based invalidation: if the question bank hasn't changed since we
+  // cached the pool, reuse it regardless of age — no re-fetch needed.
+  if (latestVersion && cached.questionsVersion != null && cached.questionsVersion === latestVersion) {
+    return cached.questions || [];
+  }
+  // Safety-net: time-based TTL (24h) when version data is unavailable.
   if (Date.now() - (cached.fetchedAt || 0) > POOL_TTL_MS) return null;
   return cached.questions || [];
 };
 
-const saveCachedPool = async (uid, selection, questions) => {
+const saveCachedPool = async (uid, selection, questions, questionsVersion) => {
   await idbSet(k(uid, 'pool'), {
     fetchedAt: Date.now(),
     signature: signatureFor(selection),
+    questionsVersion: questionsVersion || 0,
     questions,
   });
 };
@@ -243,17 +250,28 @@ const saveCachedPool = async (uid, selection, questions) => {
 /**
  * Fetch the candidate pool from Firestore once, then cache. Subsequent rounds
  * sample from the local cache for free.
+ *
+ * Cache invalidation strategy:
+ *   1. Read sync_meta/questions.version (1 read) — if version matches the
+ *      cached pool, skip re-fetch entirely (free ride, no matter how old).
+ *   2. Safety-net 24h TTL when version data is unavailable.
+ *   Previously: 6h time-based TTL → could re-fetch hundreds of docs every 6h.
+ *   Now: only re-fetches when questions actually changed.
  */
 export const ensurePool = async (uid, selection, { force = false } = {}) => {
+  // 1 read: check if the question bank changed since we last built the pool.
+  const syncSnap = await getDoc(doc(db, 'sync_meta', 'questions')).catch(() => null);
+  const latestVersion = syncSnap?.data()?.version || 0;
+
   if (!force) {
-    const cached = await loadCachedPool(uid, selection);
+    const cached = await loadCachedPool(uid, selection, latestVersion);
     // Only reuse a NON-empty cached pool. An empty cache (e.g. fetched before
     // the teacher added questions) should fall through to a fresh fetch rather
     // than block rounds until the TTL expires.
     if (cached && cached.length > 0) return cached;
   }
   if (!selection?.chapters?.length) {
-    await saveCachedPool(uid, selection, []);
+    await saveCachedPool(uid, selection, [], latestVersion);
     return [];
   }
   // Firestore `in` is limited to 30. Chunk the chapter list.
@@ -278,7 +296,7 @@ export const ensurePool = async (uid, selection, { force = false } = {}) => {
   const usable = all.filter((q) =>
     (!selection.examPaperOnly || Boolean(q.examPaper))
   );
-  await saveCachedPool(uid, selection, usable);
+  await saveCachedPool(uid, selection, usable, latestVersion);
   return usable;
 };
 
