@@ -1289,7 +1289,7 @@ export const Y8_CH6H_QUESTIONS = [
     "id": "y8-6h-q10",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "Entry fee for an amusement park is $\\$22$ per adult and $\\$12$ per child. The cost of each ride is $\\$7$ per person. A family of $2$ adults and $2$ children went to the park and spent $\\$124$ on rides and entrance tickets. If the whole family always went on rides together, how many rides did they go on?",
+    "question": "Entry fee for an amusement park is $22 per adult and $12 per child. The cost of each ride is $7 per person. A family of $2$ adults and $2$ children went to the park and spent $124 on rides and entrance tickets. If the whole family always went on rides together, how many rides did they go on?",
     "a": "2",
     "solution": "Total tickets = $2 \\times 22 + 2 \\times 12 = 44 + 24 = 68$.\nTotal spent on rides = $124 - 68 = 56$.\nCost per family ride = $4 \\times 7 = 28$.\nNumber of rides = $56 / 28 = 2$.",
     "t": "Review of algebra",

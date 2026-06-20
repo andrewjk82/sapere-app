@@ -174,7 +174,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       'Domain: $(2, \\infty)$, Range $(0, \\infty)$'
     ],
     h: 'Find the domain and range of each composite separately, then take the values common to both.',
-    s: '$f(g(x)) = \\sqrt{\\dfrac{1}{x-2}}$ needs $\\dfrac{1}{x-2} > 0$, i.e. $x > 2$: domain $(2,\\infty)$, range $(0,\\infty)$.\n\n$g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}$ needs $x \\geq 0$ and $\\sqrt{x} \\neq 2$: domain $[0,\\infty)\\setminus\\{4\\}$, range $(-\\infty,-\\frac{1}{2}] \\cup (0,\\infty)$.\n\nCommon domain: $(2, \\infty)$. Common range: $(0, \\infty)$.',
+    s: '$f(g(x)) = \\sqrt{\\dfrac{1}{x-2}}$ needs $\\dfrac{1}{x-2} > 0$, i.e. $x > 2$: domain $(2,\\infty)$, range $(0,\\infty)$.\n\n$g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}$ needs $x \\geq 0$ and $\\sqrt{x} \\neq 2$: domain $[0,\\infty)\\setminus{4}$, range $(-\\infty,-\\frac{1}{2}] \\cup (0,\\infty)$.\n\nCommon domain: $(2, \\infty)$. Common range: $(0, \\infty)$.',
     solutionSteps: [
       {
         explanation: 'Form $f(g(x)) = \\sqrt{\\dfrac{1}{x-2}}$. The square root needs a non-negative argument and the fraction cannot equal zero, so $\\dfrac{1}{x-2} > 0$, which requires $x > 2$.',
@@ -185,8 +185,8 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
         workingOut: '\\text{range of } f(g(x)) = (0, \\infty)'
       },
       {
-        explanation: 'Form $g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}$, which requires $x \\geq 0$ and $\\sqrt{x} \\neq 2$, i.e. $x \\neq 4$. Its range: $\\sqrt{x} - 2$ covers $[-2, \\infty)\\setminus\\{0\\}$, so the reciprocal covers $(-\\infty, -\\tfrac{1}{2}] \\cup (0, \\infty)$.',
-        workingOut: 'g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}, \\quad \\text{domain: } [0,\\infty)\\setminus\\{4\\}'
+        explanation: 'Form $g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}$, which requires $x \\geq 0$ and $\\sqrt{x} \\neq 2$, i.e. $x \\neq 4$. Its range: $\\sqrt{x} - 2$ covers $[-2, \\infty)\\setminus{0}$, so the reciprocal covers $(-\\infty, -\\tfrac{1}{2}] \\cup (0, \\infty)$.',
+        workingOut: 'g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}, \\quad \\text{domain: } [0,\\infty)\\setminus{4}'
       },
       {
         explanation: 'Intersect the two domains and the two ranges to find what is valid for both composites.',
@@ -662,7 +662,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     source: 'Cranbrook 2023 Trial Q17(a)',
     type: 'short_answer',
     difficulty: 'easy',
-    q: 'Mia buys a ticket in a raffle, where the first prize is \\$20,000. Tickets cost \\$25 each, and the prize distribution is: $P(X=0) = 0.7$, $P(X=25) = m$, $P(X=100) = 0.03$, $P(X=500) = 0.002$, $P(X=5000) = 0.0005$, $P(X=20\\,000) = 0.0001$. Find the value of $m$.',
+    q: 'Mia buys a ticket in a raffle, where the first prize is $20,000. Tickets cost $25 each, and the prize distribution is: $P(X=0) = 0.7$, $P(X=25) = m$, $P(X=100) = 0.03$, $P(X=500) = 0.002$, $P(X=5000) = 0.0005$, $P(X=20\\,000) = 0.0001$. Find the value of $m$.',
     a: '$m = 0.2674$',
     opts: [],
     h: 'The probabilities in a discrete distribution must sum to 1.',
@@ -691,7 +691,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     source: 'Cranbrook 2023 Trial Q17(b)',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Using the raffle distribution with $m = 0.2674$ (prizes 0, 25, 100, 500, 5000, 20000 with probabilities 0.7, 0.2674, 0.03, 0.002, 0.0005, 0.0001) and a ticket price of \\$25, show that Mia is expected to lose \\$9.82 every time she plays this raffle.',
+    q: 'Using the raffle distribution with $m = 0.2674$ (prizes 0, 25, 100, 500, 5000, 20000 with probabilities 0.7, 0.2674, 0.03, 0.002, 0.0005, 0.0001) and a ticket price of $25, show that Mia is expected to lose $9.82 every time she plays this raffle.',
     a: '$E(X) = 15.185$, so expected loss $= 25 - 15.185 = 9.815 \\approx \\$9.82$',
     opts: [],
     h: 'Compute $E(X) = \\sum x \\cdot P(X=x)$, then compare with the \\$25 ticket price.',
@@ -710,8 +710,8 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
         workingOut: '= 0 + 6.685 + 3 + 1 + 2.5 + 2 = 15.185'
       },
       {
-        explanation: 'Compare the expected winnings with the \\$25 ticket cost: the expected loss is the difference.',
-        workingOut: '\\text{Expected loss} = 25 - 15.185 = 9.815 \\approx \\$9.82 \\quad \\blacksquare'
+        explanation: 'Compare the expected winnings with the $25 ticket cost: the expected loss is the difference.',
+        workingOut: '\\text{Expected loss} = 25 - 15.185 = 9.815 \\approx $9.82 \\quad \\blacksquare'
       }
     ]
   },
@@ -930,7 +930,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     source: 'Cranbrook 2023 Trial Q21',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Leo has plotted the income he received each week for the past five weeks: $(1, 150), (2, 250), (3, 250), (4, 350), (5, 500)$, where the first coordinate is the week number $n$ and the second is the amount in dollars. Over the same five weeks, Leo\'s expenses, which were originally \\$250 per week, increase by \\$30 each week. Write the equation of the least-squares regression line for Leo\'s income, and determine the equation of Leo\'s expenses.',
+    q: 'Leo has plotted the income he received each week for the past five weeks: $(1, 150), (2, 250), (3, 250), (4, 350), (5, 500)$, where the first coordinate is the week number $n$ and the second is the amount in dollars. Over the same five weeks, Leo\'s expenses, which were originally $250 per week, increase by $30 each week. Write the equation of the least-squares regression line for Leo\'s income, and determine the equation of Leo\'s expenses.',
     a: 'Income $= 80n + 60$; Expenses $= 30n + 220$',
     opts: [],
     h: 'For the regression line compute $b = \\dfrac{\\sum xy - n\\bar{x}\\bar{y}}{\\sum x^2 - n\\bar{x}^2}$ and $a = \\bar{y} - b\\bar{x}$. The expenses form a linear pattern.',
@@ -957,7 +957,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
         workingOut: 'E = 250 + 30(n-1) = 30n + 220'
       },
       {
-        explanation: 'Draw both lines neatly over Leo\'s five income data points $(1,150), (2,250), (3,250), (4,350), (5,500)$. The income regression line (blue) passes through the mean point $(3, 300)$; the expenses line (green) starts at $(1, 250)$ and rises $\\$30$ each week.',
+        explanation: 'Draw both lines neatly over Leo\'s five income data points $(1,150), (2,250), (3,250), (4,350), (5,500)$. The income regression line (blue) passes through the mean point $(3, 300)$; the expenses line (green) starts at $(1, 250)$ and rises $30 each week.',
         workingOut: '',
         graphData: {
           jsxGraph: {

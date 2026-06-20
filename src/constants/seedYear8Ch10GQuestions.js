@@ -314,9 +314,9 @@ export const Y8_CH10G_QUESTIONS = [
     "id": "y8-10g-q5",
     "type": "short_answer",
     "difficulty": "easy",
-    "question": "Divide $\$1350$ in the ratio $4 : 1$. Enter the two parts without dollar signs, in order from largest to smallest, separated by a comma (e.g. 1080, 270).",
+    "question": "Divide $1350 in the ratio $4 : 1$. Enter the two parts without dollar signs, in order from largest to smallest, separated by a comma (e.g. 1080, 270).",
     "a": "1080, 270",
-    "solution": "To divide $\$1350$ in the ratio $4 : 1$:\n1. Find the total parts:\n   $$\\text{Total parts} = 4 + 1 = 5$$\n2. Find the value of one part:\n   $$\\text{Value of 1 part} = 1350 \\div 5 = 270$$\n3. Find the two parts:\n   - First part: $4 \\times 270 = 1080$\n   - Second part: $1 \\times 270 = 270$\n\nSo the two parts are $\$1080$ and $\$270$.",
+    "solution": "To divide $1350 in the ratio $4 : 1$:\n1. Find the total parts:\n   $$\\text{Total parts} = 4 + 1 = 5$$\n2. Find the value of one part:\n   $$\\text{Value of 1 part} = 1350 \\div 5 = 270$$\n3. Find the two parts:\n   - First part: $4 \\times 270 = 1080$\n   - Second part: $1 \\times 270 = 270$\n\nSo the two parts are $1080 and $270.",
     "t": "Review of rates and ratios",
     "hint": "Add $4$ and $1$ to find the total parts, then calculate the value of each part.",
     "solutionSteps": [
@@ -340,11 +340,11 @@ export const Y8_CH10G_QUESTIONS = [
     "id": "y8-10g-q6",
     "type": "short_answer",
     "difficulty": "easy",
-    "question": "Divide $\$2520$ in the ratio $4 : 2 : 1$. Enter the parts without dollar signs, from largest to smallest, separated by commas (e.g. 1440, 720, 360).",
+    "question": "Divide $2520 in the ratio $4 : 2 : 1$. Enter the parts without dollar signs, from largest to smallest, separated by commas (e.g. 1440, 720, 360).",
     "a": "1440, 720, 360",
-    "solution": "To divide $\$2520$ in the ratio $4 : 2 : 1$:\n1. Total number of parts:\n   $$\\text{Total parts} = 4 + 2 + 1 = 7$$\n2. Value of one part:\n   $$\\text{Value of 1 part} = 2520 \\div 7 = 360$$\n3. Calculate the three shares:\n   - First part: $4 \\times 360 = 1440$\n   - Second part: $2 \\times 360 = 720$\n   - Third part: $1 \\times 360 = 360$\n\nThus, the parts are $\$1440$, $\$720$ and $\$360$.",
+    "solution": "To divide $2520 in the ratio $4 : 2 : 1$:\n1. Total number of parts:\n   $$\\text{Total parts} = 4 + 2 + 1 = 7$$\n2. Value of one part:\n   $$\\text{Value of 1 part} = 2520 \\div 7 = 360$$\n3. Calculate the three shares:\n   - First part: $4 \\times 360 = 1440$\n   - Second part: $2 \\times 360 = 720$\n   - Third part: $1 \\times 360 = 360$\n\nThus, the parts are $1440, $720 and $360.",
     "t": "Review of rates and ratios",
-    "hint": "Determine the sum of the ratio parts first. Then divide $\$2520$ by that sum to find the value of one part.",
+    "hint": "Determine the sum of the ratio parts first. Then divide $2520 by that sum to find the value of one part.",
     "solutionSteps": [
       {
         "explanation": "Add the ratio parts.",
@@ -366,11 +366,11 @@ export const Y8_CH10G_QUESTIONS = [
     "id": "y8-10g-q7",
     "type": "short_answer",
     "difficulty": "easy",
-    "question": "If a dozen eggs costs $\$4.80$, what is the cost of $35$ eggs? (Enter the number without the dollar sign, e.g. 14)",
+    "question": "If a dozen eggs costs $4.80, what is the cost of $35$ eggs? (Enter the number without the dollar sign, e.g. 14)",
     "a": "14",
-    "solution": "To find the cost of $35$ eggs using the unitary method:\n1. Identify that a dozen eggs means $12$ eggs cost $\$4.80$.\n2. Calculate the cost of $1$ egg:\n   $$\\text{Cost of 1 egg} = 4.80 \\div 12 = 0.40\\text{ dollars} \\quad (40\\text{ cents})$$\n3. Calculate the cost of $35$ eggs:\n   $$\\text{Cost of 35 eggs} = 35 \\times 0.40 = 14\\text{ dollars}$$\n\nTherefore, the cost of $35$ eggs is $\$14$.",
+    "solution": "To find the cost of $35$ eggs using the unitary method:\n1. Identify that a dozen eggs means $12$ eggs cost $4.80.\n2. Calculate the cost of $1$ egg:\n   $$\\text{Cost of 1 egg} = 4.80 \\div 12 = 0.40\\text{ dollars} \\quad (40\\text{ cents})$$\n3. Calculate the cost of $35$ eggs:\n   $$\\text{Cost of 35 eggs} = 35 \\times 0.40 = 14\\text{ dollars}$$\n\nTherefore, the cost of $35$ eggs is $14.",
     "t": "Review of rates and ratios",
-    "hint": "A dozen is $12$ eggs. Find the price of $1$ egg first by dividing $\$4.80$ by $12$.",
+    "hint": "A dozen is $12$ eggs. Find the price of $1$ egg first by dividing $4.80 by $12$.",
     "solutionSteps": [
       {
         "explanation": "Determine the cost of a single egg.",
@@ -388,7 +388,7 @@ export const Y8_CH10G_QUESTIONS = [
     "id": "y8-10g-q8",
     "type": "short_answer",
     "difficulty": "easy",
-    "question": "A person works for $8$ hours and gets paid $\$192$. Answer the following sub-questions.",
+    "question": "A person works for $8$ hours and gets paid $192. Answer the following sub-questions.",
     "a": "Refer to sub-questions",
     "solution": "To solve this problem:\na) Calculate the hourly rate by dividing the total pay by the hours worked:\n   $$\\text{Hourly rate} = 192 \\div 8 = 24\\text{ dollars/hour}$$\nb) Multiply the hourly rate by the number of hours worked ($12$):\n   $$\\text{Pay for 12 hours} = 12 \\times 24 = 288\\text{ dollars}$$",
     "t": "Review of rates and ratios",
@@ -446,9 +446,9 @@ export const Y8_CH10G_QUESTIONS = [
     "id": "y8-10g-q10",
     "type": "short_answer",
     "difficulty": "easy",
-    "question": "The cost of $1\\text{ kg}$ of a certain type of fish is $\$9.50$. Answer the sub-questions below.",
+    "question": "The cost of $1\\text{ kg}$ of a certain type of fish is $9.50. Answer the sub-questions below.",
     "a": "Refer to sub-questions",
-    "solution": "Using rates:\na) Find the cost of $3.6\\text{ kg}$ by multiplying the weight by the price per kg:\n   $$\\text{Cost} = 3.6 \\times 9.50 = 34.20\\text{ dollars}$$\nb) Find the weight you can buy for $\$57$ by dividing the budget by the price per kg:\n   $$\\text{Weight} = 57 \\div 9.50 = 6\\text{ kg}$$",
+    "solution": "Using rates:\na) Find the cost of $3.6\\text{ kg}$ by multiplying the weight by the price per kg:\n   $$\\text{Cost} = 3.6 \\times 9.50 = 34.20\\text{ dollars}$$\nb) Find the weight you can buy for $57 by dividing the budget by the price per kg:\n   $$\\text{Weight} = 57 \\div 9.50 = 6\\text{ kg}$$",
     "t": "Review of rates and ratios",
     "hint": "For part a, multiply weight by cost per kg. For part b, divide total money by cost per kg.",
     "solutionSteps": [
@@ -472,7 +472,7 @@ export const Y8_CH10G_QUESTIONS = [
       {
         "id": "y8-10g-q10b",
         "type": "short_answer",
-        "question": "b) How many kilograms can you buy for $\$57$? (Enter the number of kg, e.g. 6)",
+        "question": "b) How many kilograms can you buy for $57? (Enter the number of kg, e.g. 6)",
         "a": "6"
       }
     ]
@@ -817,7 +817,7 @@ export const Y8_CH10G_QUESTIONS = [
     "id": "y8-10g-q18a",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "For the scale ratio $5 : 8$, complete the conversion of scale:\n\n$1\\text{ cm} : \\text{____ cm}$",
+    "question": "For the scale ratio $5 : 8$, complete the conversion of scale:\n\n$1\\text{ cm} : \\text{\\_\\_\\_\\_ cm}$",
     "a": "1.6",
     "solution": "To find the number of centimetres represented by $1\\text{ cm}$:\n1. The ratio is $5 : 8$, meaning $5\\text{ units}$ on the plan represents $8\\text{ units}$ in reality.\n2. Divide both terms by $5$ to find what $1\\text{ unit}$ on the plan represents:\n   $$(5 \\div 5) : (8 \\div 5) = 1 : 1.6$$\n3. So, $1\\text{ cm}$ represents $1.6\\text{ cm}$.\n\nTherefore, the missing number is $1.6$.",
     "t": "Review of rates and ratios",
@@ -838,7 +838,7 @@ export const Y8_CH10G_QUESTIONS = [
     "id": "y8-10g-q18b",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "For the scale ratio $5 : 8$, complete the conversion of scale:\n\n$1\\text{ cm} : \\text{____ mm}$",
+    "question": "For the scale ratio $5 : 8$, complete the conversion of scale:\n\n$1\\text{ cm} : \\text{\\_\\_\\_\\_ mm}$",
     "a": "16",
     "solution": "To find the scale in millimetres:\n1. From the previous step, we know that $1\\text{ cm}$ represents $1.6\\text{ cm}$.\n2. Convert $1.6\\text{ cm}$ to millimetres by multiplying by $10$:\n   $$1.6 \\times 10 = 16\\text{ mm}$$\n\nTherefore, the missing number is $16$.",
     "t": "Review of rates and ratios",
@@ -859,7 +859,7 @@ export const Y8_CH10G_QUESTIONS = [
     "id": "y8-10g-q18c",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "For the scale ratio $5 : 8$, complete the conversion of scale:\n\n$1\\text{ cm} : \\text{____ m}$",
+    "question": "For the scale ratio $5 : 8$, complete the conversion of scale:\n\n$1\\text{ cm} : \\text{\\_\\_\\_\\_ m}$",
     "a": "0.016",
     "solution": "To find the scale in metres:\n1. From the first step, $1\\text{ cm}$ represents $1.6\\text{ cm}$.\n2. Convert $1.6\\text{ cm}$ to metres by dividing by $100$:\n   $$1.6 \\div 100 = 0.016\\text{ m}$$\n\nTherefore, the missing number is $0.016$.",
     "t": "Review of rates and ratios",

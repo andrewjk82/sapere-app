@@ -3,19 +3,19 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q1a",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "If $4$ kg of potatoes cost $\\$4.80$, find the cost of $7$ kg.",
-    "a": "\\$8.40",
+    "question": "If $4$ kg of potatoes cost $4.80, find the cost of $7$ kg.",
+    "a": "$8.40",
     "solution": "1. Find the cost of $1$ kg of potatoes:\n   $$\\$4.80 \\div 4 = \\$1.20$$\n2. Multiply the cost of $1$ kg by $7$ to find the cost of $7$ kg:\n   $$\\$1.20 \\times 7 = \\$8.40$$",
     "t": "Review of the unitary method",
     "hint": "Find the cost of 1 kg first by dividing the total cost by the weight.",
     "solutionSteps": [
       {
         "explanation": "Find the cost of $1$ kg of potatoes.",
-        "workingOut": "\\$4.80 \\div 4 = \\$1.20"
+        "workingOut": "$4.80 \\div 4 = $1.20"
       },
       {
         "explanation": "Calculate the cost of $7$ kg.",
-        "workingOut": "\\$1.20 \\times 7 = \\$8.40"
+        "workingOut": "$1.20 \\times 7 = $8.40"
       }
     ],
     "graphData": null
@@ -24,19 +24,19 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q1b",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "If $6$ pens cost $\\$24$, find the cost of $8$ pens.",
-    "a": "\\$32",
+    "question": "If $6$ pens cost $24, find the cost of $8$ pens.",
+    "a": "$32",
     "solution": "1. Find the cost of $1$ pen:\n   $$\\$24 \\div 6 = \\$4$$\n2. Multiply the cost of $1$ pen by $8$:\n   $$\\$4 \\times 8 = \\$32$$",
     "t": "Review of the unitary method",
     "hint": "Find the cost of 1 pen first.",
     "solutionSteps": [
       {
         "explanation": "Find the cost of $1$ pen.",
-        "workingOut": "\\$24 \\div 6 = \\$4"
+        "workingOut": "$24 \\div 6 = $4"
       },
       {
         "explanation": "Calculate the cost of $8$ pens.",
-        "workingOut": "\\$4 \\times 8 = \\$32"
+        "workingOut": "$4 \\times 8 = $32"
       }
     ],
     "graphData": null
@@ -45,19 +45,19 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q1c",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "If $6$ tennis balls cost $\\$15$, find the cost of $16$ tennis balls.",
-    "a": "\\$40",
+    "question": "If $6$ tennis balls cost $15, find the cost of $16$ tennis balls.",
+    "a": "$40",
     "solution": "1. Find the cost of $1$ tennis ball:\n   $$\\$15 \\div 6 = \\$2.50$$\n2. Multiply by $16$ to find the cost of $16$ tennis balls:\n   $$\\$2.50 \\times 16 = \\$40$$",
     "t": "Review of the unitary method",
     "hint": "Find the cost of 1 tennis ball first.",
     "solutionSteps": [
       {
         "explanation": "Find the cost of $1$ tennis ball.",
-        "workingOut": "\\$15 \\div 6 = \\$2.50"
+        "workingOut": "$15 \\div 6 = $2.50"
       },
       {
         "explanation": "Calculate the cost of $16$ tennis balls.",
-        "workingOut": "\\$2.50 \\times 16 = \\$40"
+        "workingOut": "$2.50 \\times 16 = $40"
       }
     ],
     "graphData": null
@@ -129,7 +129,7 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q2a",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "If $8$ bananas cost $\\$3.60$, how many can I buy for $\\$13.50$?",
+    "question": "If $8$ bananas cost $3.60, how many can I buy for $13.50?",
     "a": "30",
     "solution": "1. Find the cost of $1$ banana:\n   $$\\$3.60 \\div 8 = \\$0.45$$\n2. Divide the total money available by the cost of $1$ banana:\n   $$\\$13.50 \\div \\$0.45 = 30$$",
     "t": "Review of the unitary method",
@@ -137,11 +137,11 @@ export const Y8_CH10A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the cost of $1$ banana.",
-        "workingOut": "\\$3.60 \\div 8 = \\$0.45"
+        "workingOut": "$3.60 \\div 8 = $0.45"
       },
       {
         "explanation": "Calculate the number of bananas that can be bought.",
-        "workingOut": "\\$13.50 \\div \\$0.45 = 30"
+        "workingOut": "$13.50 \\div $0.45 = 30"
       }
     ],
     "graphData": null
@@ -150,7 +150,7 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q2b",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "How many shares can I buy for $\\$7200$ if $800$ shares cost $\\$960$?",
+    "question": "How many shares can I buy for $7200 if $800$ shares cost $960?",
     "a": "6000",
     "solution": "1. Find the cost of $1$ share:\n   $$\\$960 \\div 800 = \\$1.20$$\n2. Divide the total budget by the share price:\n   $$\\$7200 \\div \\$1.20 = 6000$$",
     "t": "Review of the unitary method",
@@ -158,11 +158,11 @@ export const Y8_CH10A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the price per share.",
-        "workingOut": "\\$960 \\div 800 = \\$1.20"
+        "workingOut": "$960 \\div 800 = $1.20"
       },
       {
         "explanation": "Calculate the number of shares.",
-        "workingOut": "\\$7200 \\div \\$1.20 = 6000"
+        "workingOut": "$7200 \\div $1.20 = 6000"
       }
     ],
     "graphData": null
@@ -171,7 +171,7 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q2c",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "At a sale, notebooks cost $\\$6$ per dozen. How many can I buy for $\\$25$?",
+    "question": "At a sale, notebooks cost $6 per dozen. How many can I buy for $25?",
     "a": "50",
     "solution": "1. Find the cost of $1$ notebook (remembering that $1$ dozen = $12$ notebooks):\n   $$\\$6 \\div 12 = \\$0.50$$\n2. Divide the budget by the cost of $1$ notebook:\n   $$\\text{Number of notebooks} = \\$25 \\div \\$0.50 = 50$$",
     "t": "Review of the unitary method",
@@ -179,11 +179,11 @@ export const Y8_CH10A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the price of one notebook.",
-        "workingOut": "\\$6 \\div 12 = \\$0.50"
+        "workingOut": "$6 \\div 12 = $0.50"
       },
       {
         "explanation": "Calculate notebooks purchased.",
-        "workingOut": "\\$25 \\div \\$0.50 = 50"
+        "workingOut": "$25 \\div $0.50 = 50"
       }
     ],
     "graphData": null
@@ -339,7 +339,7 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q5a",
     "type": "short_answer",
     "difficulty": "medium",
-    "question": "If $4$ kg of tomatoes cost $\\$14$, how many kilograms of tomatoes can I buy for $\\$35$?",
+    "question": "If $4$ kg of tomatoes cost $14, how many kilograms of tomatoes can I buy for $35?",
     "a": "10\\text{ kg}",
     "solution": "1. Find the cost of $1$ kg of tomatoes:\n   $$\\$14 \\div 4 = \\$3.50$$\n2. Divide the total money available by the cost of $1$ kg:\n   $$35 \\div 3.50 = 10\\text{ kg}$$",
     "t": "Review of the unitary method",
@@ -347,11 +347,11 @@ export const Y8_CH10A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the price per kilogram.",
-        "workingOut": "\\$14 \\div 4 = \\$3.50"
+        "workingOut": "$14 \\div 4 = $3.50"
       },
       {
         "explanation": "Divide the budget by price per kilogram.",
-        "workingOut": "\\$35 \\div \\$3.50 = 10"
+        "workingOut": "$35 \\div $3.50 = 10"
       }
     ],
     "graphData": null
@@ -360,19 +360,19 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q5b",
     "type": "short_answer",
     "difficulty": "medium",
-    "question": "If a dozen oranges costs $\\$4.80$, how much do $19$ oranges cost?",
-    "a": "\\$7.60",
+    "question": "If a dozen oranges costs $4.80, how much do $19$ oranges cost?",
+    "a": "$7.60",
     "solution": "1. Find the cost of $1$ orange (since $1$ dozen = $12$ oranges):\n   $$\\$4.80 \\div 12 = \\$0.40$$\n2. Multiply the cost of $1$ orange by $19$:\n   $$\\$0.40 \\times 19 = \\$7.60$$",
     "t": "Review of the unitary method",
     "hint": "A dozen is 12. Find the cost of 1 orange first.",
     "solutionSteps": [
       {
         "explanation": "Find the price of 1 orange.",
-        "workingOut": "\\$4.80 \\div 12 = \\$0.40"
+        "workingOut": "$4.80 \\div 12 = $0.40"
       },
       {
         "explanation": "Multiply by 19 oranges.",
-        "workingOut": "\\$0.40 \\times 19 = \\$7.60"
+        "workingOut": "$0.40 \\times 19 = $7.60"
       }
     ],
     "graphData": null
@@ -427,19 +427,19 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q6a",
     "type": "short_answer",
     "difficulty": "medium",
-    "question": "Four-fifths of an amount is $\\$360$. Find three-fifths of the amount.",
-    "a": "\\$270",
+    "question": "Four-fifths of an amount is $360. Find three-fifths of the amount.",
+    "a": "$270",
     "solution": "1. Find one-fifth ($\\frac{1}{5}$) of the amount:\n   $$\\$360 \\div 4 = \\$90$$\n2. Multiply this by $3$ to find three-fifths ($\\frac{3}{5}$) of the amount:\n   $$\\$90 \\times 3 = \\$270$$",
     "t": "Review of the unitary method",
     "hint": "Find one-fifth of the amount first.",
     "solutionSteps": [
       {
         "explanation": "Calculate one-fifth of the amount.",
-        "workingOut": "\\$360 \\div 4 = \\$90"
+        "workingOut": "$360 \\div 4 = $90"
       },
       {
         "explanation": "Calculate three-fifths of the amount.",
-        "workingOut": "\\$90 \\times 3 = \\$270"
+        "workingOut": "$90 \\times 3 = $270"
       }
     ],
     "graphData": null
@@ -532,29 +532,29 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q7a",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which is the better buy: $500$ g of tinned peaches costing $\\$6.50$, or $650$ g costing $\\$8.19$?",
-    "a": "650 g costing \\$8.19",
+    "question": "Which is the better buy: $500$ g of tinned peaches costing $6.50, or $650$ g costing $8.19?",
+    "a": "650 g costing $8.19",
     "opts": [
-      "500 g costing \\$6.50",
-      "650 g costing \\$8.19",
+      "500 g costing $6.50",
+      "650 g costing $8.19",
       "They are equal value",
       "Cannot be determined"
     ],
-    "solution": "1. Find the cost per $100$ g of the first option:\n   $$\\frac{\\$6.50}{5} = \\$1.30\\text{ per 100g}$$\n2. Find the cost per $100$ g of the second option:\n   $$\\frac{\\$8.19}{6.5} = \\$1.26\\text{ per 100g}$$\n3. Compare the costs:\n   $$\\$1.26 < \\$1.30$$\nTherefore, $650$ g costing $\\$8.19$ is the better buy.",
+    "solution": "1. Find the cost per $100$ g of the first option:\n   $$\\frac{\\$6.50}{5} = \\$1.30\\text{ per 100g}$$\n2. Find the cost per $100$ g of the second option:\n   $$\\frac{\\$8.19}{6.5} = \\$1.26\\text{ per 100g}$$\n3. Compare the costs:\n   $$\\$1.26 < \\$1.30$$\nTherefore, $650$ g costing $8.19 is the better buy.",
     "t": "Review of the unitary method",
     "hint": "Find the cost per gram or per 100 grams for both options to compare.",
     "solutionSteps": [
       {
         "explanation": "Calculate the price per 100g for the 500g option.",
-        "workingOut": "\\$6.50 \\div 5 = \\$1.30"
+        "workingOut": "$6.50 \\div 5 = $1.30"
       },
       {
         "explanation": "Calculate the price per 100g for the 650g option.",
-        "workingOut": "\\$8.19 \\div 6.5 = \\$1.26"
+        "workingOut": "$8.19 \\div 6.5 = $1.26"
       },
       {
         "explanation": "Compare and choose the cheaper option.",
-        "workingOut": "\\$1.26 < \\$1.30"
+        "workingOut": "$1.26 < $1.30"
       }
     ],
     "graphData": null
@@ -563,29 +563,29 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q7b",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which is the better buy: $600$ g of grapes costing $\\$5.40$, or $400$ g costing $\\$3.80$?",
-    "a": "600 g costing \\$5.40",
+    "question": "Which is the better buy: $600$ g of grapes costing $5.40, or $400$ g costing $3.80?",
+    "a": "600 g costing $5.40",
     "opts": [
-      "600 g costing \\$5.40",
-      "400 g costing \\$3.80",
+      "600 g costing $5.40",
+      "400 g costing $3.80",
       "They are equal value",
       "Cannot be determined"
     ],
-    "solution": "1. Find the cost per $100$ g of the first option:\n   $$\\frac{\\$5.40}{6} = \\$0.90\\text{ per 100g}$$\n2. Find the cost per $100$ g of the second option:\n   $$\\frac{\\$3.80}{4} = \\$0.95\\text{ per 100g}$$\n3. Compare the costs:\n   $$\\$0.90 < \\$0.95$$\nTherefore, $600$ g costing $\\$5.40$ is the better buy.",
+    "solution": "1. Find the cost per $100$ g of the first option:\n   $$\\frac{\\$5.40}{6} = \\$0.90\\text{ per 100g}$$\n2. Find the cost per $100$ g of the second option:\n   $$\\frac{\\$3.80}{4} = \\$0.95\\text{ per 100g}$$\n3. Compare the costs:\n   $$\\$0.90 < \\$0.95$$\nTherefore, $600$ g costing $5.40 is the better buy.",
     "t": "Review of the unitary method",
     "hint": "Find the cost per 100 grams for both options.",
     "solutionSteps": [
       {
         "explanation": "Calculate the price per 100g for the 600g option.",
-        "workingOut": "\\$5.40 \\div 6 = \\$0.90"
+        "workingOut": "$5.40 \\div 6 = $0.90"
       },
       {
         "explanation": "Calculate the price per 100g for the 400g option.",
-        "workingOut": "\\$3.80 \\div 4 = \\$0.95"
+        "workingOut": "$3.80 \\div 4 = $0.95"
       },
       {
         "explanation": "Compare and choose the cheaper option.",
-        "workingOut": "\\$0.90 < \\$0.95"
+        "workingOut": "$0.90 < $0.95"
       }
     ],
     "graphData": null
@@ -594,29 +594,29 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q7c",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Which is the better buy: $150$ g of toothpaste costing $\\$1.80$, or $200$ g costing $\\$2.60$?",
-    "a": "150 g costing \\$1.80",
+    "question": "Which is the better buy: $150$ g of toothpaste costing $1.80, or $200$ g costing $2.60?",
+    "a": "150 g costing $1.80",
     "opts": [
-      "150 g costing \\$1.80",
-      "200 g costing \\$2.60",
+      "150 g costing $1.80",
+      "200 g costing $2.60",
       "They are equal value",
       "Cannot be determined"
     ],
-    "solution": "1. Find the cost per $50$ g of the first option:\n   $$\\frac{\\$1.80}{3} = \\$0.60\\text{ per 50g}$$\n2. Find the cost per $50$ g of the second option:\n   $$\\frac{\\$2.60}{4} = \\$0.65\\text{ per 50g}$$\n3. Compare the costs:\n   $$\\text{First option is cheaper (\\$0.60 < \\$0.65)}$$\nTherefore, $150$ g costing $\\$1.80$ is the better buy.",
+    "solution": "1. Find the cost per $50$ g of the first option:\n   $$\\frac{\\$1.80}{3} = \\$0.60\\text{ per 50g}$$\n2. Find the cost per $50$ g of the second option:\n   $$\\frac{\\$2.60}{4} = \\$0.65\\text{ per 50g}$$\n3. Compare the costs:\n   $$\\text{First option is cheaper (\\$0.60 < \\$0.65)}$$\nTherefore, $150$ g costing $1.80 is the better buy.",
     "t": "Review of the unitary method",
     "hint": "Find the cost per 50 grams or per gram for both options.",
     "solutionSteps": [
       {
         "explanation": "Calculate the price per 50g for the 150g option.",
-        "workingOut": "\\$1.80 \\div 3 = \\$0.60"
+        "workingOut": "$1.80 \\div 3 = $0.60"
       },
       {
         "explanation": "Calculate the price per 50g for the 200g option.",
-        "workingOut": "\\$2.60 \\div 4 = \\$0.65"
+        "workingOut": "$2.60 \\div 4 = $0.65"
       },
       {
         "explanation": "Compare and choose the cheaper option.",
-        "workingOut": "\\$0.60 < \\$0.65"
+        "workingOut": "$0.60 < $0.65"
       }
     ],
     "graphData": null
@@ -625,23 +625,23 @@ export const Y8_CH10A_QUESTIONS = [
     "id": "y8-10a-q8",
     "type": "teacher_review",
     "difficulty": "medium",
-    "question": "If a box of cereal is selling on special at $\\$4.20$ for a $350$ g packet, how much is $500$ g of the cereal at this price? If there is actually a $500$ g box selling for $\\$5.50$, which is the cheaper way to buy $500$ g of cereal, and by how much?",
-    "a": "Buying the 500 g box for \\$5.50 is cheaper by \\$0.50 (the scaled special packet costs \\$6.00).",
-    "solution": "1. Calculate the cost of $500$ g of cereal using the special packet's rate:\n   $$\\text{Cost per gram} = \\frac{\\$4.20}{350\\text{ g}} = \\$0.012\\text{ per gram}$$\n   $$\\text{Cost of 500g} = 500 \\times \\$0.012 = \\$6.00$$\n2. Compare this to the cost of the actual $500$ g box ($\\$5.50$):\n   $$\\text{Difference} = \\$6.00 - \\$5.50 = \\$0.50$$\nBuying the $500$ g box is cheaper by $\\$0.50$.",
+    "question": "If a box of cereal is selling on special at $4.20 for a $350$ g packet, how much is $500$ g of the cereal at this price? If there is actually a $500$ g box selling for $5.50, which is the cheaper way to buy $500$ g of cereal, and by how much?",
+    "a": "Buying the 500 g box for $5.50 is cheaper by $0.50 (the scaled special packet costs $6.00).",
+    "solution": "1. Calculate the cost of $500$ g of cereal using the special packet's rate:\n   $$\\text{Cost per gram} = \\frac{\\$4.20}{350\\text{ g}} = \\$0.012\\text{ per gram}$$\n   $$\\text{Cost of 500g} = 500 \\times \\$0.012 = \\$6.00$$\n2. Compare this to the cost of the actual $500$ g box ($5.50):\n   $$\\text{Difference} = \\$6.00 - \\$5.50 = \\$0.50$$\nBuying the $500$ g box is cheaper by $0.50.",
     "t": "Review of the unitary method",
     "hint": "First scale the cost of the 350 g packet to 500 g, then compare it to $5.50.",
     "solutionSteps": [
       {
         "explanation": "Find cost per gram of the special packet.",
-        "workingOut": "\\$4.20 \\div 350 = \\$0.012"
+        "workingOut": "$4.20 \\div 350 = $0.012"
       },
       {
         "explanation": "Calculate cost of 500g at special packet rate.",
-        "workingOut": "500 \\times \\$0.012 = \\$6.00"
+        "workingOut": "500 \\times $0.012 = $6.00"
       },
       {
         "explanation": "Compare with 500g box price to find savings.",
-        "workingOut": "\\$6.00 - \\$5.50 = \\$0.50"
+        "workingOut": "$6.00 - $5.50 = $0.50"
       }
     ],
     "graphData": null

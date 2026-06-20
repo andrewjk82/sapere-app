@@ -415,7 +415,7 @@ export const Y10_CH15D_QUESTIONS = [
           },
           {
             "explanation": "Find \\(P(A \\cap B)\\): outcomes where the first die is 3 AND the sum is at least 9. Only the outcome (3, 6) satisfies both conditions, since \\(3 + 6 = 9\\).",
-            "workingOut": "A \\cap B = \\{(3, 6)\\}, \\quad P(A \\cap B) = \\frac{1}{36}"
+            "workingOut": "A \\cap B = {(3, 6)}, \\quad P(A \\cap B) = \\frac{1}{36}"
           },
           {
             "explanation": "Calculate \\(P(A) \\times P(B)\\) and compare with \\(P(A \\cap B)\\).",
@@ -443,10 +443,10 @@ export const Y10_CH15D_QUESTIONS = [
           },
           {
             "explanation": "Check if there is any outcome that belongs to both \\(A\\) and \\(B\\). Event \\(A\\) requires the first die to be 3. Event \\(B\\) requires the sum to be at least 9. The outcome (3, 6) has a first die of 3 and a sum of \\(3 + 6 = 9 \\geq 9\\).",
-            "workingOut": "A \\cap B = \\{(3, 6)\\}"
+            "workingOut": "A \\cap B = {(3, 6)}"
           },
           {
-            "explanation": "Since \\(A \\cap B = \\{(3, 6)\\} \\neq \\emptyset\\), the events can occur at the same time. Therefore, events \\(A\\) and \\(B\\) are not mutually exclusive.",
+            "explanation": "Since \\(A \\cap B = {(3, 6)} \\neq \\emptyset\\), the events can occur at the same time. Therefore, events \\(A\\) and \\(B\\) are not mutually exclusive.",
             "workingOut": "A \\cap B \\neq \\emptyset"
           }
         ],

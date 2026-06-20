@@ -92,7 +92,7 @@ export const Y9_CH5I_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "\\$600 is divided between A, B and C. B receives \\$30 less than A, and C receives half as much as A and B together. Find how much each person receives.",
+    "question": "$600 is divided between A, B and C. B receives $30 less than A, and C receives half as much as A and B together. Find how much each person receives.",
     "opts": null,
     "solution": "Follow the sub-questions to find the share of A, B, and C.",
     "t": "Revision",
@@ -431,7 +431,7 @@ export const Y9_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let x = number of 10-cent coins, so 20-cent coins = 2x.",
-        "workingOut": "\\$25 = 2500 \\text{ cents}"
+        "workingOut": "$25 = 2500 \\text{ cents}"
       },
       {
         "explanation": "Write the total value equation in cents.",

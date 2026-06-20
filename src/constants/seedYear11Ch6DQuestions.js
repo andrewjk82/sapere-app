@@ -3247,7 +3247,7 @@ export const Y11_CH6D_QUESTIONS = [
     "q": "Show that \\(\\sin 2\\theta = 2 \\sin \\theta \\cos \\theta\\) is satisfied by \\(\\theta = 120^{\\circ}\\). Show your substitutions and simplify both sides.",
     "a": "LHS = RHS = -sqrt(3)/2",
     "h": "Substitute 120° into both sides and evaluate.",
-    "s": "LHS: \\(\\sin(2 \\times 120^{\\circ}) = \\sin 240^{\\circ} = -\\sin 60^{\\circ} = -\\frac{\\sqrt{3}}{2}\\).\nRHS: \\(2 \\sin 120^{\\circ} \\cos 120^{\\circ} = 2 \\left(\\frac{\\sqrt{3}}{2}\\right) \\left(-\\frac{1}{2}\right) = -\\frac{\\sqrt{3}}{2}\\).\nSince LHS = RHS, the identity is satisfied.",
+    "s": "LHS: \\(\\sin(2 \\times 120^{\\circ}) = \\sin 240^{\\circ} = -\\sin 60^{\\circ} = -\\frac{\\sqrt{3}}{2}\\).\nRHS: \\(2 \\sin 120^{\\circ} \\cos 120^{\\circ} = 2 \\left(\\frac{\\sqrt{3}}{2}\\right) \\left(-\\frac{1}{2}\\right) = -\\frac{\\sqrt{3}}{2}\\).\nSince LHS = RHS, the identity is satisfied.",
     "solutionSteps": [
       {
         "explanation": "Evaluate the Left-Hand Side (LHS) by substituting \\(\\theta = 120^{\\circ}\\).",
@@ -3281,7 +3281,7 @@ export const Y11_CH6D_QUESTIONS = [
     "q": "Show that \\(\\cos 3\\theta = 4 \\cos^3 \\theta - 3 \\cos \\theta\\) is satisfied by \\(\\theta = 150^{\\circ}\\).",
     "a": "LHS = RHS = 0",
     "h": "Substitute 150° and evaluate.",
-    "s": "LHS: \\(\\cos(3 \\times 150^{\\circ}) = \\cos 450^{\\circ} = \\cos(450^{\\circ} - 360^{\\circ}) = \\cos 90^{\\circ} = 0\\).\nRHS: \\(4 \\cos^3 150^{\\circ} - 3 \\cos 150^{\\circ} = 4 \\left(-\\frac{\\sqrt{3}}{2}\right)^3 - 3 \\left(-\\frac{\\sqrt{3}}{2}\right) = 4 \\left(-\\frac{3\\sqrt{3}}{8}\right) + \\frac{3\\sqrt{3}}{2} = 0\\).\nSince LHS = RHS, the identity is satisfied.",
+    "s": "LHS: \\(\\cos(3 \\times 150^{\\circ}) = \\cos 450^{\\circ} = \\cos(450^{\\circ} - 360^{\\circ}) = \\cos 90^{\\circ} = 0\\).\nRHS: \\(4 \\cos^3 150^{\\circ} - 3 \\cos 150^{\\circ} = 4 \\left(-\\frac{\\sqrt{3}}{2}\\right)^3 - 3 \\left(-\\frac{\\sqrt{3}}{2}\\right) = 4 \\left(-\\frac{3\\sqrt{3}}{8}\\right) + \\frac{3\\sqrt{3}}{2} = 0\\).\nSince LHS = RHS, the identity is satisfied.",
     "solutionSteps": [
       {
         "explanation": "Evaluate LHS for \\(\\theta = 150^{\\circ}\\).",
@@ -3315,7 +3315,7 @@ export const Y11_CH6D_QUESTIONS = [
     "q": "Show that \\(\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B\\) is satisfied when \\(A = 240^{\\circ}\\) and \\(B = 120^{\\circ}\\).",
     "a": "LHS = RHS = 0",
     "h": "Substitute A and B into both sides.",
-    "s": "LHS: \\(\\sin(240^{\\circ} + 120^{\\circ}) = \\sin 360^{\\circ} = 0\\).\nRHS: \\(\\sin 240^{\\circ} \\cos 120^{\\circ} + \\cos 240^{\\circ} \\sin 120^{\\circ} = \\left(-\\frac{\\sqrt{3}}{2}\right)\\left(-\\frac{1}{2}\right) + \\left(-\\frac{1}{2}\right)\\left(\frac{\\sqrt{3}}{2}\right) = \\frac{\\sqrt{3}}{4} - \\frac{\\sqrt{3}}{4} = 0\\).\nLHS = RHS, so the identity is satisfied.",
+    "s": "LHS: \\(\\sin(240^{\\circ} + 120^{\\circ}) = \\sin 360^{\\circ} = 0\\).\nRHS: \\(\\sin 240^{\\circ} \\cos 120^{\\circ} + \\cos 240^{\\circ} \\sin 120^{\\circ} = \\left(-\\frac{\\sqrt{3}}{2}\\right)\\left(-\\frac{1}{2}\\right) + \\left(-\\frac{1}{2}\\right)\\left(\\frac{\\sqrt{3}}{2}\\right) = \\frac{\\sqrt{3}}{4} - \\frac{\\sqrt{3}}{4} = 0\\).\nLHS = RHS, so the identity is satisfied.",
     "solutionSteps": [
       {
         "explanation": "Evaluate LHS.",

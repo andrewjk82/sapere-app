@@ -934,7 +934,7 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "medium",
     "question": "Find the side length of the outer square, $z$.",
     "a": "9",
-    "solution": "The concentric squares are divided along their diagonals by equal ticks. This means the ratio of side lengths of the squares is $1 : 2 : 3$. Since the inner square side length is 3, the outer square side length $z = 3 \\\\times 3 = 9$.",
+    "solution": "The concentric squares are divided along their diagonals by equal ticks. This means the ratio of side lengths of the squares is $1 : 2 : 3$. Since the inner square side length is 3, the outer square side length $z = 3 \\\times 3 = 9$.",
     "t": "Review",
     "hint": "The ratio of the concentric square side lengths is $1 : 2 : 3$.",
     "solutionSteps": [
@@ -1071,7 +1071,7 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "easy",
     "question": "Find the perimeter of the parallelogram in cm.",
     "a": "20",
-    "solution": "A parallelogram has opposite sides equal in length. The side lengths are 6 cm and 4 cm. The perimeter is: $P = 2 \\\\times (6 + 4) = 20\\\\text{ cm}$.",
+    "solution": "A parallelogram has opposite sides equal in length. The side lengths are 6 cm and 4 cm. The perimeter is: $P = 2 \\\times (6 + 4) = 20\\\text{ cm}$.",
     "t": "Review",
     "hint": "The perimeter of a parallelogram is $2(a + b)$.",
     "solutionSteps": [
@@ -1107,9 +1107,9 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "easy",
     "question": "Find the perimeter of the square in km.",
     "a": "32",
-    "solution": "The diagonals of this quadrilateral bisect each other at right angles and are equal in length, which makes the shape a square. Since all four sides are equal to 8 km, the perimeter is: $P = 4 \\\\times 8 = 32\\\\text{ km}$.",
+    "solution": "The diagonals of this quadrilateral bisect each other at right angles and are equal in length, which makes the shape a square. Since all four sides are equal to 8 km, the perimeter is: $P = 4 \\\times 8 = 32\\\text{ km}$.",
     "t": "Review",
-    "hint": "The perimeter of a square is $4 \\\\times \\\\text{side}$.",
+    "hint": "The perimeter of a square is $4 \\\times \\\text{side}$.",
     "solutionSteps": [
       {
         "explanation": "Multiply the side length of 8 km by 4.",
@@ -1142,7 +1142,7 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "easy",
     "question": "Find the perimeter of the parallelogram in m.",
     "a": "34",
-    "solution": "Opposite sides are equal in length (indicated by ticks). The side lengths are 7 m and 10 m. The perimeter is: $P = 2 \\\\times (7 + 10) = 34\\\\text{ m}$.",
+    "solution": "Opposite sides are equal in length (indicated by ticks). The side lengths are 7 m and 10 m. The perimeter is: $P = 2 \\\times (7 + 10) = 34\\\text{ m}$.",
     "t": "Review",
     "hint": "Sum all four sides, where opposite sides are equal.",
     "solutionSteps": [
@@ -1178,7 +1178,7 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "easy",
     "question": "Find the perimeter of the parallelogram in m.",
     "a": "24",
-    "solution": "Opposite sides of a parallelogram are equal. The side lengths are 8 m and 4 m. The perimeter is: $P = 2 \\\\times (8 + 4) = 24\\\\text{ m}$.",
+    "solution": "Opposite sides of a parallelogram are equal. The side lengths are 8 m and 4 m. The perimeter is: $P = 2 \\\times (8 + 4) = 24\\\text{ m}$.",
     "t": "Review",
     "hint": "The perimeter of a parallelogram is $2(a + b)$.",
     "solutionSteps": [
@@ -1216,9 +1216,9 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "easy",
     "question": "Find the area of the square in $\\text{mm}^2$.",
     "a": "100",
-    "solution": "Since all sides are equal and it contains a right angle, the shape is a square of side 10 mm. The area is: $A = 10 \\\\times 10 = 100\\\\text{ mm}^2$.",
+    "solution": "Since all sides are equal and it contains a right angle, the shape is a square of side 10 mm. The area is: $A = 10 \\\times 10 = 100\\\text{ mm}^2$.",
     "t": "Review",
-    "hint": "The area of a square is $\\\\text{side}^2$.",
+    "hint": "The area of a square is $\\\text{side}^2$.",
     "solutionSteps": [
       {
         "explanation": "Multiply the side length by itself.",
@@ -1249,9 +1249,9 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "easy",
     "question": "Find the area of the rhombus in $\\text{mm}^2$.",
     "a": "120",
-    "solution": "The base of the rhombus is 15 mm and its vertical height is 8 mm. The area is: $A = \\\\text{base} \\\\times \\\\text{height} = 15 \\\\times 8 = 120\\\\text{ mm}^2$.",
+    "solution": "The base of the rhombus is 15 mm and its vertical height is 8 mm. The area is: $A = \\\text{base} \\\times \\\text{height} = 15 \\\times 8 = 120\\\text{ mm}^2$.",
     "t": "Review",
-    "hint": "The area of a rhombus/parallelogram is $\\\\text{base} \\\\times \\\\text{height}$.",
+    "hint": "The area of a rhombus/parallelogram is $\\\text{base} \\\times \\\text{height}$.",
     "solutionSteps": [
       {
         "explanation": "Multiply the base length by the height.",
@@ -1285,7 +1285,7 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "easy",
     "question": "Find the area of the parallelogram in $\\text{mm}^2$.",
     "a": "126",
-    "solution": "The base (left side) is 14 mm and the height perpendicular to this base is 9 mm. The area is: $A = \\\\text{base} \\\\times \\\\text{height} = 14 \\\\times 9 = 126\\\\text{ mm}^2$.",
+    "solution": "The base (left side) is 14 mm and the height perpendicular to this base is 9 mm. The area is: $A = \\\text{base} \\\times \\\text{height} = 14 \\\times 9 = 126\\\text{ mm}^2$.",
     "t": "Review",
     "hint": "Make sure to multiply the correct base and its perpendicular height.",
     "solutionSteps": [
@@ -1319,7 +1319,7 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "medium",
     "question": "Find the area of the parallelogram in $\\text{mm}^2$.",
     "a": "80",
-    "solution": "1. First, find the vertical height $h$ using Pythagoras on the right-angled triangle formed on the right side: \n   $$h = \\\\sqrt{10^2 - 6^2} = \\\\sqrt{64} = 8\\\\text{ mm}$$\n2. The base of the parallelogram is 10 mm. The area is: \n   $$A = \\\\text{base} \\\\times \\\\text{height} = 10 \\\\times 8 = 80\\\\text{ mm}^2$$",
+    "solution": "1. First, find the vertical height $h$ using Pythagoras on the right-angled triangle formed on the right side: \n   $$h = \\\sqrt{10^2 - 6^2} = \\\sqrt{64} = 8\\\text{ mm}$$\n2. The base of the parallelogram is 10 mm. The area is: \n   $$A = \\\text{base} \\\times \\\text{height} = 10 \\\times 8 = 80\\\text{ mm}^2$$",
     "t": "Review",
     "hint": "Use Pythagoras first to calculate the perpendicular height of the parallelogram.",
     "solutionSteps": [

@@ -898,10 +898,10 @@ export const Y12A_CH8F_QUESTIONS = [
           },
           {
             "explanation": "Evaluate the owing balance.",
-            "workingOut": "A_{60} \\approx 4125000 - 3335432.63 = 789567.37 \\implies \\$789,567"
+            "workingOut": "A_{60} \\approx 4125000 - 3335432.63 = 789567.37 \\implies $789,567"
           },
           {
-            "explanation": "Compare the owing amount with half of the principal (\\$750000).",
+            "explanation": "Compare the owing amount with half of the principal ($750000).",
             "workingOut": "789567 > 750000 \\implies \\text{more}"
           }
         ]
@@ -920,7 +920,7 @@ export const Y12A_CH8F_QUESTIONS = [
           },
           {
             "explanation": "Evaluate to the nearest dollar.",
-            "workingOut": "A_{120} \\approx -113138.63 \\implies -\\$113139"
+            "workingOut": "A_{120} \\approx -113138.63 \\implies -$113139"
           }
         ]
       },

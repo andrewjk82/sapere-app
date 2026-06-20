@@ -948,28 +948,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$276.43\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "A local branch of AeroSpaceX purchases a industrial laser cutter for their regional office. If the equipment depreciates at a rate of \\(8\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(375\\)",
-      "\\(321\\)",
-      "\\(393\\)",
-      "\\(357\\)"
+      "\\(18.63\\%\\)",
+      "\\(22.13\\%\\)",
+      "\\(24.00\\%\\)",
+      "\\(24.93\\%\\)"
     ],
-    "a": "\\(357\\)",
+    "a": "\\(22.13\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{11}{100} = 0.89,\\ M_2 = 1 - \\frac{13}{100} = 0.87\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{8}{100} = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.89 \\times 0.87 = 0.7743\\)",
+        "explanation": "Calculate the residual value multiplier after \\(3\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.92)^3 \\approx 0.7787\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{276.43}{0.7743} \\approx \\$357\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.7787) \\times 100\\% \\approx 22.13\\%\\)",
         "graphData": null
       }
     ],
@@ -980,28 +980,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "QuantumCorp buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A local branch of BioPharma purchases a hospital MRI scanner for their regional office. If the equipment depreciates at a rate of \\(11\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(4\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(29.500%\\)",
-      "\\(32.450%\\)",
-      "\\(30.975%\\)",
-      "\\(26.550%\\)"
+      "\\(33.76\\%\\)",
+      "\\(37.26\\%\\)",
+      "\\(40.06\\%\\)",
+      "\\(44.00\\%\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(37.26\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
+        "explanation": "Find the annual depreciation multiplier.",
         "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Calculate the residual value multiplier after \\(4\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.89)^4 \\approx 0.6274\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.6274) \\times 100\\% \\approx 37.26\\%\\)",
         "graphData": null
       }
     ],
@@ -1012,28 +1012,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to BioSphere's annual report, A shipping port's cargo throughput volume increases by \\(13\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(19.78\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A local branch of CyberNet purchases a automated packaging line for their regional office. If the equipment depreciates at a rate of \\(14\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(5\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(6\\)",
-      "\\(8\\)",
-      "\\(7\\)",
-      "\\(5\\)"
+      "\\(49.46\\%\\)",
+      "\\(52.96\\%\\)",
+      "\\(55.76\\%\\)",
+      "\\(70.00\\%\\)"
     ],
-    "a": "\\(6\\)",
+    "a": "\\(52.96\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{19.78}{100} = 1.1978\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{14}{100} = 0.86\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{13}{100}) \\times (1 + \\frac{x}{100}) = 1.1978 \\implies 1.13 \\times (1 + \\frac{x}{100}) = 1.1978\\)",
+        "explanation": "Calculate the residual value multiplier after \\(5\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.86)^5 \\approx 0.4704\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1978}{1.13} = 1.06 \\implies x = 6\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.4704) \\times 100\\% \\approx 52.96\\%\\)",
         "graphData": null
       }
     ],
@@ -1044,23 +1044,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(22972\\) units. In the subsequent year, it increases by \\(3\\%\\), followed by a decrease of \\(5\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A local branch of DeepDive purchases a data server rack for their regional office. If the equipment depreciates at a rate of \\(17\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(22478\\)",
-      "\\(20230\\)",
-      "\\(23602\\)",
-      "\\(24726\\)"
+      "\\(39.32\\%\\)",
+      "\\(42.82\\%\\)",
+      "\\(45.62\\%\\)",
+      "\\(51.00\\%\\)"
     ],
-    "a": "\\(22478\\)",
+    "a": "\\(42.82\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 22972 \\times (1 + \\frac{3}{100}) = 22972 \\times 1.03 = 23661\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{17}{100} = 0.83\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 23661 \\times (1 - \\frac{5}{100}) = 23661 \\times 0.95 \\approx 22478\\)",
+        "explanation": "Calculate the residual value multiplier after \\(3\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.83)^3 \\approx 0.5718\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.5718) \\times 100\\% \\approx 42.82\\%\\)",
         "graphData": null
       }
     ],
@@ -1071,28 +1076,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$415\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(7\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A local branch of EcoSystems purchases a HVAC cooling unit for their regional office. If the equipment depreciates at a rate of \\(20\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(4\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(531.87\\)",
-      "\\(483.52\\)",
-      "\\(507.70\\)",
-      "\\(435.17\\)"
+      "\\(55.54\\%\\)",
+      "\\(59.04\\%\\)",
+      "\\(61.84\\%\\)",
+      "\\(80.00\\%\\)"
     ],
-    "a": "\\(483.52\\)",
+    "a": "\\(59.04\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{7}{100} = 0.93,\\ M_3 = 1 + \\frac{16}{100} = 1.16\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{20}{100} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.93 \\times 1.16 = 1.1651\\)",
+        "explanation": "Calculate the residual value multiplier after \\(4\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.80)^4 \\approx 0.4096\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$415 \\times 1.1651 \\approx \\$483.52\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.4096) \\times 100\\% \\approx 59.04\\%\\)",
         "graphData": null
       }
     ],
@@ -1103,28 +1108,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$500.89\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "A local branch of FutureAI purchases a robotic assembly arm for their regional office. If the equipment depreciates at a rate of \\(8\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(5\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(674\\)",
-      "\\(642\\)",
-      "\\(578\\)",
-      "\\(706\\)"
+      "\\(30.59\\%\\)",
+      "\\(34.09\\%\\)",
+      "\\(36.89\\%\\)",
+      "\\(40.00\\%\\)"
     ],
-    "a": "\\(642\\)",
+    "a": "\\(34.09\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{6}{100} = 0.94,\\ M_2 = 1 - \\frac{17}{100} = 0.83\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{8}{100} = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.94 \\times 0.83 = 0.7802\\)",
+        "explanation": "Calculate the residual value multiplier after \\(5\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.92)^5 \\approx 0.6591\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{500.89}{0.7802} \\approx \\$642\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.6591) \\times 100\\% \\approx 34.09\\%\\)",
         "graphData": null
       }
     ],
@@ -1135,28 +1140,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "AeroLogistics buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A local branch of GigaVolt purchases a solar panel array for their regional office. If the equipment depreciates at a rate of \\(11\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(29.500%\\)",
-      "\\(32.450%\\)",
-      "\\(26.550%\\)",
-      "\\(30.975%\\)"
+      "\\(26.00\\%\\)",
+      "\\(29.50\\%\\)",
+      "\\(32.30\\%\\)",
+      "\\(33.00\\%\\)"
     ],
     "a": "\\(29.50\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
+        "explanation": "Find the annual depreciation multiplier.",
         "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Calculate the residual value multiplier after \\(3\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.89)^3 \\approx 0.7050\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.7050) \\times 100\\% \\approx 29.50\\%\\)",
         "graphData": null
       }
     ],
@@ -1167,28 +1172,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to ApexGroup's annual report, A digital game studio's concurrent player base rises by \\(4\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(18.56\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A local branch of HyperLoop purchases a hydroelectric generator for their regional office. If the equipment depreciates at a rate of \\(14\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(4\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(14\\)",
-      "\\(17\\)",
-      "\\(15\\)",
-      "\\(13\\)"
+      "\\(41.80\\%\\)",
+      "\\(45.30\\%\\)",
+      "\\(48.10\\%\\)",
+      "\\(56.00\\%\\)"
     ],
-    "a": "\\(14\\)",
+    "a": "\\(45.30\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{18.56}{100} = 1.1856\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{14}{100} = 0.86\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{4}{100}) \\times (1 + \\frac{x}{100}) = 1.1856 \\implies 1.04 \\times (1 + \\frac{x}{100}) = 1.1856\\)",
+        "explanation": "Calculate the residual value multiplier after \\(4\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.86)^4 \\approx 0.5470\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1856}{1.04} = 1.14 \\implies x = 14\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.5470) \\times 100\\% \\approx 45.30\\%\\)",
         "graphData": null
       }
     ],
@@ -1199,23 +1204,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(24187\\) units. In the subsequent year, it increases by \\(5\\%\\), followed by a decrease of \\(2\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A local branch of InnovaTech purchases a chemical mixing vat for their regional office. If the equipment depreciates at a rate of \\(17\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(5\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(24888\\)",
-      "\\(26132\\)",
-      "\\(27377\\)",
-      "\\(22399\\)"
+      "\\(57.11\\%\\)",
+      "\\(60.61\\%\\)",
+      "\\(63.41\\%\\)",
+      "\\(85.00\\%\\)"
     ],
-    "a": "\\(24888\\)",
+    "a": "\\(60.61\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 24187 \\times (1 + \\frac{5}{100}) = 24187 \\times 1.05 = 25396\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{17}{100} = 0.83\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 25396 \\times (1 - \\frac{2}{100}) = 25396 \\times 0.98 \\approx 24888\\)",
+        "explanation": "Calculate the residual value multiplier after \\(5\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.83)^5 \\approx 0.3939\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.3939) \\times 100\\% \\approx 60.61\\%\\)",
         "graphData": null
       }
     ],
@@ -1226,28 +1236,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$630\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(10\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A local branch of JoulePower purchases a high-speed centrifuge for their regional office. If the equipment depreciates at a rate of \\(20\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(611.75\\)",
-      "\\(679.72\\)",
-      "\\(747.69\\)",
-      "\\(713.71\\)"
+      "\\(45.30\\%\\)",
+      "\\(48.80\\%\\)",
+      "\\(51.60\\%\\)",
+      "\\(60.00\\%\\)"
     ],
-    "a": "\\(679.72\\)",
+    "a": "\\(48.80\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{10}{100} = 0.90,\\ M_3 = 1 + \\frac{11}{100} = 1.11\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{20}{100} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.90 \\times 1.11 = 1.0789\\)",
+        "explanation": "Calculate the residual value multiplier after \\(3\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.80)^3 \\approx 0.5120\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$630 \\times 1.0789 \\approx \\$679.72\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.5120) \\times 100\\% \\approx 48.80\\%\\)",
         "graphData": null
       }
     ],
@@ -1258,28 +1268,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$615.16\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(21\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "A local branch of KiloByte purchases a 3D printing system for their regional office. If the equipment depreciates at a rate of \\(8\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(4\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(927\\)",
-      "\\(1020\\)",
-      "\\(834\\)",
-      "\\(973\\)"
+      "\\(24.86\\%\\)",
+      "\\(28.36\\%\\)",
+      "\\(31.16\\%\\)",
+      "\\(32.00\\%\\)"
     ],
-    "a": "\\(927\\)",
+    "a": "\\(28.36\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{16}{100} = 0.84,\\ M_2 = 1 - \\frac{21}{100} = 0.79\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{8}{100} = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.84 \\times 0.79 = 0.6636\\)",
+        "explanation": "Calculate the residual value multiplier after \\(4\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.92)^4 \\approx 0.7164\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{615.16}{0.6636} \\approx \\$927\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.7164) \\times 100\\% \\approx 28.36\\%\\)",
         "graphData": null
       }
     ],
@@ -1290,28 +1300,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "TerraFarms buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A local branch of LogiTech purchases a heavy haul truck for their regional office. If the equipment depreciates at a rate of \\(11\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(5\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(32.450%\\)",
-      "\\(30.975%\\)",
-      "\\(29.500%\\)",
-      "\\(26.550%\\)"
+      "\\(40.66\\%\\)",
+      "\\(44.16\\%\\)",
+      "\\(46.96\\%\\)",
+      "\\(55.00\\%\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(44.16\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
+        "explanation": "Find the annual depreciation multiplier.",
         "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Calculate the residual value multiplier after \\(5\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.89)^5 \\approx 0.5584\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.5584) \\times 100\\% \\approx 44.16\\%\\)",
         "graphData": null
       }
     ],
@@ -1322,28 +1332,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to ZenithMedia's annual report, A shipping port's cargo throughput volume increases by \\(7\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(17.70\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A local branch of MegaCorp purchases a backup power generator for their regional office. If the equipment depreciates at a rate of \\(14\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(10\\)",
-      "\\(11\\)",
-      "\\(9\\)",
-      "\\(12\\)"
+      "\\(32.89\\%\\)",
+      "\\(36.39\\%\\)",
+      "\\(39.19\\%\\)",
+      "\\(42.00\\%\\)"
     ],
-    "a": "\\(10\\)",
+    "a": "\\(36.39\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{17.70}{100} = 1.1770\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{14}{100} = 0.86\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{7}{100}) \\times (1 + \\frac{x}{100}) = 1.1770 \\implies 1.07 \\times (1 + \\frac{x}{100}) = 1.1770\\)",
+        "explanation": "Calculate the residual value multiplier after \\(3\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.86)^3 \\approx 0.6361\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1770}{1.07} = 1.10 \\implies x = 10\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.6361) \\times 100\\% \\approx 36.39\\%\\)",
         "graphData": null
       }
     ],
@@ -1354,23 +1364,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(25402\\) units. In the subsequent year, it increases by \\(7\\%\\), followed by a decrease of \\(8\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A local branch of NanoTech purchases a water purification unit for their regional office. If the equipment depreciates at a rate of \\(17\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(4\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(22505\\)",
-      "\\(27507\\)",
-      "\\(26256\\)",
-      "\\(25006\\)"
+      "\\(49.04\\%\\)",
+      "\\(52.54\\%\\)",
+      "\\(55.34\\%\\)",
+      "\\(68.00\\%\\)"
     ],
-    "a": "\\(25006\\)",
+    "a": "\\(52.54\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 25402 \\times (1 + \\frac{7}{100}) = 25402 \\times 1.07 = 27180\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{17}{100} = 0.83\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 27180 \\times (1 - \\frac{8}{100}) = 27180 \\times 0.92 \\approx 25006\\)",
+        "explanation": "Calculate the residual value multiplier after \\(4\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.83)^4 \\approx 0.4746\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.4746) \\times 100\\% \\approx 52.54\\%\\)",
         "graphData": null
       }
     ],
@@ -1381,28 +1396,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$845\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(13\\%\\) in the second quarter, and a final increase of \\(6\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A local branch of OmniCorp purchases a optical fiber routing hub for their regional office. If the equipment depreciates at a rate of \\(20\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(5\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(883.68\\)",
-      "\\(757.44\\)",
-      "\\(925.76\\)",
-      "\\(841.60\\)"
+      "\\(100.00\\%\\)",
+      "\\(63.73\\%\\)",
+      "\\(67.23\\%\\)",
+      "\\(70.03\\%\\)"
     ],
-    "a": "\\(841.60\\)",
+    "a": "\\(67.23\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{13}{100} = 0.87,\\ M_3 = 1 + \\frac{6}{100} = 1.06\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{20}{100} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.87 \\times 1.06 = 0.9960\\)",
+        "explanation": "Calculate the residual value multiplier after \\(5\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.80)^5 \\approx 0.3277\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$845 \\times 0.9960 \\approx \\$841.60\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.3277) \\times 100\\% \\approx 67.23\\%\\)",
         "graphData": null
       }
     ],
@@ -1413,28 +1428,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$981.60\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(9\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "A local branch of PicoCell purchases a industrial laser cutter for their regional office. If the equipment depreciates at a rate of \\(8\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(1273\\)",
-      "\\(1091\\)",
-      "\\(1333\\)",
-      "\\(1212\\)"
+      "\\(18.63\\%\\)",
+      "\\(22.13\\%\\)",
+      "\\(24.00\\%\\)",
+      "\\(24.93\\%\\)"
     ],
-    "a": "\\(1212\\)",
+    "a": "\\(22.13\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{11}{100} = 0.89,\\ M_2 = 1 - \\frac{9}{100} = 0.91\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{8}{100} = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.89 \\times 0.91 = 0.8099\\)",
+        "explanation": "Calculate the residual value multiplier after \\(3\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.92)^3 \\approx 0.7787\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{981.60}{0.8099} \\approx \\$1212\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.7787) \\times 100\\% \\approx 22.13\\%\\)",
         "graphData": null
       }
     ],
@@ -1445,28 +1460,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "StellarLabs buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A local branch of QuantumCorp purchases a hospital MRI scanner for their regional office. If the equipment depreciates at a rate of \\(11\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(4\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(29.500%\\)",
-      "\\(32.450%\\)",
-      "\\(26.550%\\)",
-      "\\(30.975%\\)"
+      "\\(33.76\\%\\)",
+      "\\(37.26\\%\\)",
+      "\\(40.06\\%\\)",
+      "\\(44.00\\%\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(37.26\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
+        "explanation": "Find the annual depreciation multiplier.",
         "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Calculate the residual value multiplier after \\(4\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.89)^4 \\approx 0.6274\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.6274) \\times 100\\% \\approx 37.26\\%\\)",
         "graphData": null
       }
     ],
@@ -1477,28 +1492,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to QuantumCorp's annual report, A digital game studio's concurrent player base rises by \\(10\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(16.60\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A local branch of RoboTech purchases a automated packaging line for their regional office. If the equipment depreciates at a rate of \\(14\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(5\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(6\\)",
-      "\\(7\\)",
-      "\\(5\\)",
-      "\\(8\\)"
+      "\\(49.46\\%\\)",
+      "\\(52.96\\%\\)",
+      "\\(55.76\\%\\)",
+      "\\(70.00\\%\\)"
     ],
-    "a": "\\(6\\)",
+    "a": "\\(52.96\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{16.60}{100} = 1.1660\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{14}{100} = 0.86\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{10}{100}) \\times (1 + \\frac{x}{100}) = 1.1660 \\implies 1.10 \\times (1 + \\frac{x}{100}) = 1.1660\\)",
+        "explanation": "Calculate the residual value multiplier after \\(5\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.86)^5 \\approx 0.4704\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1660}{1.10} = 1.06 \\implies x = 6\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.4704) \\times 100\\% \\approx 52.96\\%\\)",
         "graphData": null
       }
     ],
@@ -1509,23 +1524,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(26617\\) units. In the subsequent year, it increases by \\(9\\%\\), followed by a decrease of \\(5\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A local branch of SolaRise purchases a data server rack for their regional office. If the equipment depreciates at a rate of \\(17\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(24806\\)",
-      "\\(28940\\)",
-      "\\(30318\\)",
-      "\\(27562\\)"
+      "\\(39.32\\%\\)",
+      "\\(42.82\\%\\)",
+      "\\(45.62\\%\\)",
+      "\\(51.00\\%\\)"
     ],
-    "a": "\\(27562\\)",
+    "a": "\\(42.82\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 26617 \\times (1 + \\frac{9}{100}) = 26617 \\times 1.09 = 29013\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{17}{100} = 0.83\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 29013 \\times (1 - \\frac{5}{100}) = 29013 \\times 0.95 \\approx 27562\\)",
+        "explanation": "Calculate the residual value multiplier after \\(3\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.83)^3 \\approx 0.5718\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.5718) \\times 100\\% \\approx 42.82\\%\\)",
         "graphData": null
       }
     ],
@@ -1536,28 +1556,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$1060\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(4\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A local branch of TerraForm purchases a HVAC cooling unit for their regional office. If the equipment depreciates at a rate of \\(20\\%\\) per annum compounded annually under the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(4\\) years. Correct to two decimal places.",
     "opts": [
-      "\\(1338.59\\)",
-      "\\(1274.85\\)",
-      "\\(1402.34\\)",
-      "\\(1147.37\\)"
+      "\\(55.54\\%\\)",
+      "\\(59.04\\%\\)",
+      "\\(61.84\\%\\)",
+      "\\(80.00\\%\\)"
     ],
-    "a": "\\(1274.85\\)",
+    "a": "\\(59.04\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{4}{100} = 0.96,\\ M_3 = 1 + \\frac{16}{100} = 1.16\\)",
+        "explanation": "Find the annual depreciation multiplier.",
+        "workingOut": "\\(M = 1 - \\frac{20}{100} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.96 \\times 1.16 = 1.2027\\)",
+        "explanation": "Calculate the residual value multiplier after \\(4\\) years.",
+        "workingOut": "\\(M_{\\text{residual}} = (0.80)^4 \\approx 0.4096\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$1060 \\times 1.2027 \\approx \\$1274.85\\)",
+        "explanation": "Subtract the residual multiplier from 1 to find the net percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1 - 0.4096) \\times 100\\% \\approx 59.04\\%\\)",
         "graphData": null
       }
     ],
@@ -1568,28 +1588,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$1224.25\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "A collector buys a rare vintage wristwatch valued at \\(\\$250\\). Over the next two years, the value is first increased by \\(10\\%\\) in the first year, and then increased by \\(5\\%\\) in the second year. Calculate the final value of the rare vintage wristwatch at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(1497\\)",
-      "\\(1647\\)",
-      "\\(1347\\)",
-      "\\(1572\\)"
+      "\\(\\$225.00\\)",
+      "\\(\\$275.00\\)",
+      "\\(\\$287.50\\)",
+      "\\(\\$288.75\\)"
     ],
-    "a": "\\(1497\\)",
+    "a": "\\(\\$288.75\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{6}{100} = 0.94,\\ M_2 = 1 - \\frac{13}{100} = 0.87\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{10}{100} = 1.10\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.94 \\times 0.87 = 0.8178\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 + \\frac{5}{100} = 1.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{1224.25}{0.8178} \\approx \\$1497\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$250 \\times 1.10 \\times 1.05 \\approx \\$288.75\\)",
         "graphData": null
       }
     ],
@@ -1600,28 +1620,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "NovaTech buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A collector buys a antique oak cabinet valued at \\(\\$285\\). Over the next two years, the value is first discounted by \\(12\\%\\) in the first year, and then decreased by \\(8\\%\\) in the second year. Calculate the final value of the antique oak cabinet at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(29.500%\\)",
-      "\\(32.450%\\)",
-      "\\(30.975%\\)",
-      "\\(26.550%\\)"
+      "\\(\\$228.00\\)",
+      "\\(\\$230.74\\)",
+      "\\(\\$250.80\\)",
+      "\\(\\$256.50\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(\\$230.74\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{12}{100} = 0.88\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{8}{100} = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$285 \\times 0.88 \\times 0.92 \\approx \\$230.74\\)",
         "graphData": null
       }
     ],
@@ -1632,28 +1652,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to AeroLogistics's annual report, A shipping port's cargo throughput volume increases by \\(13\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(28.82\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A collector buys a first-edition comic book valued at \\(\\$320\\). Over the next two years, the value is first increased by \\(14\\%\\) in the first year, and then decreased by \\(11\\%\\) in the second year. Calculate the final value of the first-edition comic book at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(14\\)",
-      "\\(13\\)",
-      "\\(15\\)",
-      "\\(17\\)"
+      "\\(\\$288.00\\)",
+      "\\(\\$324.67\\)",
+      "\\(\\$364.80\\)",
+      "\\(\\$400.00\\)"
     ],
-    "a": "\\(14\\)",
+    "a": "\\(\\$324.67\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{28.82}{100} = 1.2882\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{14}{100} = 1.14\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{13}{100}) \\times (1 + \\frac{x}{100}) = 1.2882 \\implies 1.13 \\times (1 + \\frac{x}{100}) = 1.2882\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{11}{100} = 0.89\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2882}{1.13} = 1.14 \\implies x = 14\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$320 \\times 1.14 \\times 0.89 \\approx \\$324.67\\)",
         "graphData": null
       }
     ],
@@ -1664,23 +1684,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(27832\\) units. In the subsequent year, it increases by \\(3\\%\\), followed by a decrease of \\(2\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A collector buys a limited-issue silver coin valued at \\(\\$355\\). Over the next two years, the value is first discounted by \\(16\\%\\) in the first year, and then increased by \\(14\\%\\) in the second year. Calculate the final value of the limited-issue silver coin at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(28094\\)",
-      "\\(30903\\)",
-      "\\(25285\\)",
-      "\\(29499\\)"
+      "\\(\\$248.50\\)",
+      "\\(\\$298.20\\)",
+      "\\(\\$319.50\\)",
+      "\\(\\$339.95\\)"
     ],
-    "a": "\\(28094\\)",
+    "a": "\\(\\$339.95\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 27832 \\times (1 + \\frac{3}{100}) = 27832 \\times 1.03 = 28667\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{16}{100} = 0.84\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 28667 \\times (1 - \\frac{2}{100}) = 28667 \\times 0.98 \\approx 28094\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 + \\frac{14}{100} = 1.14\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$355 \\times 0.84 \\times 1.14 \\approx \\$339.95\\)",
         "graphData": null
       }
     ],
@@ -1691,28 +1716,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$375\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(7\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A collector buys a autographed sports jersey valued at \\(\\$390\\). Over the next two years, the value is first increased by \\(18\\%\\) in the first year, and then decreased by \\(5\\%\\) in the second year. Calculate the final value of the autographed sports jersey at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(438.98\\)",
-      "\\(376.27\\)",
-      "\\(459.89\\)",
-      "\\(418.08\\)"
+      "\\(\\$351.00\\)",
+      "\\(\\$437.19\\)",
+      "\\(\\$460.20\\)",
+      "\\(\\$479.70\\)"
     ],
-    "a": "\\(418.08\\)",
+    "a": "\\(\\$437.19\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{7}{100} = 0.93,\\ M_3 = 1 + \\frac{11}{100} = 1.11\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{18}{100} = 1.18\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.93 \\times 1.11 = 1.1149\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{5}{100} = 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$375 \\times 1.1149 \\approx \\$418.08\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$390 \\times 1.18 \\times 0.95 \\approx \\$437.19\\)",
         "graphData": null
       }
     ],
@@ -1723,28 +1748,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$405.77\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "A collector buys a original oil painting valued at \\(\\$425\\). Over the next two years, the value is first discounted by \\(20\\%\\) in the first year, and then decreased by \\(8\\%\\) in the second year. Calculate the final value of the original oil painting at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(611\\)",
-      "\\(582\\)",
-      "\\(640\\)",
-      "\\(524\\)"
+      "\\(\\$306.00\\)",
+      "\\(\\$312.80\\)",
+      "\\(\\$340.00\\)",
+      "\\(\\$382.50\\)"
     ],
-    "a": "\\(582\\)",
+    "a": "\\(\\$312.80\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{16}{100} = 0.84,\\ M_2 = 1 - \\frac{17}{100} = 0.83\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{20}{100} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.84 \\times 0.83 = 0.6972\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{8}{100} = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{405.77}{0.6972} \\approx \\$582\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$425 \\times 0.80 \\times 0.92 \\approx \\$312.80\\)",
         "graphData": null
       }
     ],
@@ -1755,28 +1780,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "BioSphere buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A collector buys a vintage acoustic guitar valued at \\(\\$460\\). Over the next two years, the value is first increased by \\(22\\%\\) in the first year, and then increased by \\(11\\%\\) in the second year. Calculate the final value of the vintage acoustic guitar at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(26.550%\\)",
-      "\\(30.975%\\)",
-      "\\(32.450%\\)",
-      "\\(29.500%\\)"
+      "\\(\\$414.00\\)",
+      "\\(\\$561.20\\)",
+      "\\(\\$611.80\\)",
+      "\\(\\$622.93\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(\\$622.93\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{22}{100} = 1.22\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 + \\frac{11}{100} = 1.11\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$460 \\times 1.22 \\times 1.11 \\approx \\$622.93\\)",
         "graphData": null
       }
     ],
@@ -1787,28 +1812,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to TerraFarms's annual report, A digital game studio's concurrent player base rises by \\(4\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(14.40\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A collector buys a retro arcade cabinet valued at \\(\\$495\\). Over the next two years, the value is first discounted by \\(24\\%\\) in the first year, and then decreased by \\(14\\%\\) in the second year. Calculate the final value of the retro arcade cabinet at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(9\\)",
-      "\\(10\\)",
-      "\\(12\\)",
-      "\\(11\\)"
+      "\\(\\$306.90\\)",
+      "\\(\\$323.53\\)",
+      "\\(\\$376.20\\)",
+      "\\(\\$445.50\\)"
     ],
-    "a": "\\(10\\)",
+    "a": "\\(\\$323.53\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{14.40}{100} = 1.1440\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{24}{100} = 0.76\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{4}{100}) \\times (1 + \\frac{x}{100}) = 1.1440 \\implies 1.04 \\times (1 + \\frac{x}{100}) = 1.1440\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{14}{100} = 0.86\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1440}{1.04} = 1.10 \\implies x = 10\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$495 \\times 0.76 \\times 0.86 \\approx \\$323.53\\)",
         "graphData": null
       }
     ],
@@ -1819,23 +1844,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(29047\\) units. In the subsequent year, it increases by \\(5\\%\\), followed by a decrease of \\(8\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A collector buys a rare postage stamp valued at \\(\\$530\\). Over the next two years, the value is first increased by \\(11\\%\\) in the first year, and then decreased by \\(5\\%\\) in the second year. Calculate the final value of the rare postage stamp at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(30865\\)",
-      "\\(28059\\)",
-      "\\(29462\\)",
-      "\\(25253\\)"
+      "\\(\\$477.00\\)",
+      "\\(\\$558.88\\)",
+      "\\(\\$588.30\\)",
+      "\\(\\$614.80\\)"
     ],
-    "a": "\\(28059\\)",
+    "a": "\\(\\$558.88\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 29047 \\times (1 + \\frac{5}{100}) = 29047 \\times 1.05 = 30499\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{11}{100} = 1.11\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 30499 \\times (1 - \\frac{8}{100}) = 30499 \\times 0.92 \\approx 28059\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{5}{100} = 0.95\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$530 \\times 1.11 \\times 0.95 \\approx \\$558.88\\)",
         "graphData": null
       }
     ],
@@ -1846,28 +1876,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$590\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(10\\%\\) in the second quarter, and a final increase of \\(6\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A collector buys a historic pocket watch valued at \\(\\$565\\). Over the next two years, the value is first discounted by \\(13\\%\\) in the first year, and then increased by \\(8\\%\\) in the second year. Calculate the final value of the historic pocket watch at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(668.68\\)",
-      "\\(607.89\\)",
-      "\\(547.10\\)",
-      "\\(638.28\\)"
+      "\\(\\$446.35\\)",
+      "\\(\\$491.55\\)",
+      "\\(\\$508.50\\)",
+      "\\(\\$530.87\\)"
     ],
-    "a": "\\(607.89\\)",
+    "a": "\\(\\$530.87\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{10}{100} = 0.90,\\ M_3 = 1 + \\frac{6}{100} = 1.06\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{13}{100} = 0.87\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.90 \\times 1.06 = 1.0303\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 + \\frac{8}{100} = 1.08\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$590 \\times 1.0303 \\approx \\$607.89\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$565 \\times 0.87 \\times 1.08 \\approx \\$530.87\\)",
         "graphData": null
       }
     ],
@@ -1878,28 +1908,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$609.59\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(21\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "A collector buys a rare vintage wristwatch valued at \\(\\$600\\). Over the next two years, the value is first increased by \\(15\\%\\) in the first year, and then decreased by \\(11\\%\\) in the second year. Calculate the final value of the rare vintage wristwatch at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(910\\)",
-      "\\(954\\)",
-      "\\(867\\)",
-      "\\(780\\)"
+      "\\(\\$540.00\\)",
+      "\\(\\$614.10\\)",
+      "\\(\\$690.00\\)",
+      "\\(\\$756.00\\)"
     ],
-    "a": "\\(867\\)",
+    "a": "\\(\\$614.10\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{11}{100} = 0.89,\\ M_2 = 1 - \\frac{21}{100} = 0.79\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{15}{100} = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.89 \\times 0.79 = 0.7031\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{11}{100} = 0.89\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{609.59}{0.7031} \\approx \\$867\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$600 \\times 1.15 \\times 0.89 \\approx \\$614.10\\)",
         "graphData": null
       }
     ],
@@ -1910,28 +1940,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "ApexGroup buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A collector buys a antique oak cabinet valued at \\(\\$635\\). Over the next two years, the value is first discounted by \\(17\\%\\) in the first year, and then decreased by \\(14\\%\\) in the second year. Calculate the final value of the antique oak cabinet at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(32.450%\\)",
-      "\\(29.500%\\)",
-      "\\(30.975%\\)",
-      "\\(26.550%\\)"
+      "\\(\\$438.15\\)",
+      "\\(\\$453.26\\)",
+      "\\(\\$527.05\\)",
+      "\\(\\$571.50\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(\\$453.26\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{17}{100} = 0.83\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{14}{100} = 0.86\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$635 \\times 0.83 \\times 0.86 \\approx \\$453.26\\)",
         "graphData": null
       }
     ],
@@ -1942,28 +1972,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to StellarLabs's annual report, A shipping port's cargo throughput volume increases by \\(7\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(13.42\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A collector buys a first-edition comic book valued at \\(\\$670\\). Over the next two years, the value is first increased by \\(19\\%\\) in the first year, and then increased by \\(5\\%\\) in the second year. Calculate the final value of the first-edition comic book at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(6\\)",
-      "\\(8\\)",
-      "\\(7\\)",
-      "\\(5\\)"
+      "\\(\\$603.00\\)",
+      "\\(\\$797.30\\)",
+      "\\(\\$830.80\\)",
+      "\\(\\$837.16\\)"
     ],
-    "a": "\\(6\\)",
+    "a": "\\(\\$837.16\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{13.42}{100} = 1.1342\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{19}{100} = 1.19\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{7}{100}) \\times (1 + \\frac{x}{100}) = 1.1342 \\implies 1.07 \\times (1 + \\frac{x}{100}) = 1.1342\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 + \\frac{5}{100} = 1.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1342}{1.07} = 1.06 \\implies x = 6\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$670 \\times 1.19 \\times 1.05 \\approx \\$837.16\\)",
         "graphData": null
       }
     ],
@@ -1974,23 +2004,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(22262\\) units. In the subsequent year, it increases by \\(7\\%\\), followed by a decrease of \\(5\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A collector buys a limited-issue silver coin valued at \\(\\$705\\). Over the next two years, the value is first discounted by \\(21\\%\\) in the first year, and then decreased by \\(8\\%\\) in the second year. Calculate the final value of the limited-issue silver coin at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(22629\\)",
-      "\\(24892\\)",
-      "\\(20366\\)",
-      "\\(23760\\)"
+      "\\(\\$500.55\\)",
+      "\\(\\$512.39\\)",
+      "\\(\\$556.95\\)",
+      "\\(\\$634.50\\)"
     ],
-    "a": "\\(22629\\)",
+    "a": "\\(\\$512.39\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 22262 \\times (1 + \\frac{7}{100}) = 22262 \\times 1.07 = 23820\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{21}{100} = 0.79\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 23820 \\times (1 - \\frac{5}{100}) = 23820 \\times 0.95 \\approx 22629\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{8}{100} = 0.92\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$705 \\times 0.79 \\times 0.92 \\approx \\$512.39\\)",
         "graphData": null
       }
     ],
@@ -2001,28 +2036,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$805\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(13\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A collector buys a autographed sports jersey valued at \\(\\$740\\). Over the next two years, the value is first increased by \\(23\\%\\) in the first year, and then decreased by \\(11\\%\\) in the second year. Calculate the final value of the autographed sports jersey at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(789.66\\)",
-      "\\(921.27\\)",
-      "\\(965.14\\)",
-      "\\(877.40\\)"
+      "\\(\\$666.00\\)",
+      "\\(\\$810.08\\)",
+      "\\(\\$910.20\\)",
+      "\\(\\$991.60\\)"
     ],
-    "a": "\\(877.40\\)",
+    "a": "\\(\\$810.08\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{13}{100} = 0.87,\\ M_3 = 1 + \\frac{16}{100} = 1.16\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{23}{100} = 1.23\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.87 \\times 1.16 = 1.0899\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{11}{100} = 0.89\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$805 \\times 1.0899 \\approx \\$877.40\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$740 \\times 1.23 \\times 0.89 \\approx \\$810.08\\)",
         "graphData": null
       }
     ],
@@ -2033,28 +2068,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$985.42\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(9\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "A collector buys a original oil painting valued at \\(\\$775\\). Over the next two years, the value is first discounted by \\(10\\%\\) in the first year, and then increased by \\(14\\%\\) in the second year. Calculate the final value of the original oil painting at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(1152\\)",
-      "\\(1267\\)",
-      "\\(1037\\)",
-      "\\(1210\\)"
+      "\\(\\$589.00\\)",
+      "\\(\\$697.50\\)",
+      "\\(\\$697.50\\)",
+      "\\(\\$795.15\\)"
     ],
-    "a": "\\(1152\\)",
+    "a": "\\(\\$795.15\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{6}{100} = 0.94,\\ M_2 = 1 - \\frac{9}{100} = 0.91\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{10}{100} = 0.90\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.94 \\times 0.91 = 0.8554\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 + \\frac{14}{100} = 1.14\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{985.42}{0.8554} \\approx \\$1152\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$775 \\times 0.90 \\times 1.14 \\approx \\$795.15\\)",
         "graphData": null
       }
     ],
@@ -2065,28 +2100,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "ZenithMedia buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A collector buys a vintage acoustic guitar valued at \\(\\$810\\). Over the next two years, the value is first increased by \\(12\\%\\) in the first year, and then decreased by \\(5\\%\\) in the second year. Calculate the final value of the vintage acoustic guitar at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(29.500%\\)",
-      "\\(30.975%\\)",
-      "\\(32.450%\\)",
-      "\\(26.550%\\)"
+      "\\(\\$729.00\\)",
+      "\\(\\$861.84\\)",
+      "\\(\\$907.20\\)",
+      "\\(\\$947.70\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(\\$861.84\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{12}{100} = 1.12\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{5}{100} = 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$810 \\times 1.12 \\times 0.95 \\approx \\$861.84\\)",
         "graphData": null
       }
     ],
@@ -2097,28 +2132,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to NovaTech's annual report, A digital game studio's concurrent player base rises by \\(10\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(25.40\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A collector buys a retro arcade cabinet valued at \\(\\$845\\). Over the next two years, the value is first discounted by \\(14\\%\\) in the first year, and then decreased by \\(8\\%\\) in the second year. Calculate the final value of the retro arcade cabinet at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(17\\)",
-      "\\(15\\)",
-      "\\(14\\)",
-      "\\(13\\)"
+      "\\(\\$659.10\\)",
+      "\\(\\$668.56\\)",
+      "\\(\\$726.70\\)",
+      "\\(\\$760.50\\)"
     ],
-    "a": "\\(14\\)",
+    "a": "\\(\\$668.56\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{25.40}{100} = 1.2540\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{14}{100} = 0.86\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{10}{100}) \\times (1 + \\frac{x}{100}) = 1.2540 \\implies 1.10 \\times (1 + \\frac{x}{100}) = 1.2540\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{8}{100} = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2540}{1.10} = 1.14 \\implies x = 14\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$845 \\times 0.86 \\times 0.92 \\approx \\$668.56\\)",
         "graphData": null
       }
     ],
@@ -2129,23 +2164,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(23477\\) units. In the subsequent year, it increases by \\(9\\%\\), followed by a decrease of \\(2\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A collector buys a rare postage stamp valued at \\(\\$880\\). Over the next two years, the value is first increased by \\(16\\%\\) in the first year, and then increased by \\(11\\%\\) in the second year. Calculate the final value of the rare postage stamp at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(26332\\)",
-      "\\(25078\\)",
-      "\\(27586\\)",
-      "\\(22570\\)"
+      "\\(\\$1020.80\\)",
+      "\\(\\$1117.60\\)",
+      "\\(\\$1133.09\\)",
+      "\\(\\$792.00\\)"
     ],
-    "a": "\\(25078\\)",
+    "a": "\\(\\$1133.09\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 23477 \\times (1 + \\frac{9}{100}) = 23477 \\times 1.09 = 25590\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 + \\frac{16}{100} = 1.16\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 25590 \\times (1 - \\frac{2}{100}) = 25590 \\times 0.98 \\approx 25078\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 + \\frac{11}{100} = 1.11\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$880 \\times 1.16 \\times 1.11 \\approx \\$1133.09\\)",
         "graphData": null
       }
     ],
@@ -2156,28 +2196,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$1020\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(4\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A collector buys a historic pocket watch valued at \\(\\$915\\). Over the next two years, the value is first discounted by \\(18\\%\\) in the first year, and then decreased by \\(14\\%\\) in the second year. Calculate the final value of the historic pocket watch at the end of the second year, correct to two decimal places.",
     "opts": [
-      "\\(1291.25\\)",
-      "\\(1173.86\\)",
-      "\\(1232.55\\)",
-      "\\(1056.47\\)"
+      "\\(\\$622.20\\)",
+      "\\(\\$645.26\\)",
+      "\\(\\$750.30\\)",
+      "\\(\\$823.50\\)"
     ],
-    "a": "\\(1173.86\\)",
+    "a": "\\(\\$645.26\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{4}{100} = 0.96,\\ M_3 = 1 + \\frac{11}{100} = 1.11\\)",
+        "explanation": "Calculate the multiplier for the first year fluctuation.",
+        "workingOut": "\\(M_1 = 1 - \\frac{18}{100} = 0.82\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.96 \\times 1.11 = 1.1508\\)",
+        "explanation": "Calculate the multiplier for the second year fluctuation.",
+        "workingOut": "\\(M_2 = 1 - \\frac{14}{100} = 0.86\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$1020 \\times 1.1508 \\approx \\$1173.86\\)",
+        "explanation": "Apply the consecutive multipliers to the original value.",
+        "workingOut": "\\(\\text{Final Value} = \\$915 \\times 0.82 \\times 0.86 \\approx \\$645.26\\)",
         "graphData": null
       }
     ],
@@ -2188,28 +2228,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$1050.16\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "Following a demographic shift, the population of Sydney decreases by \\(4\\%\\) in 2024, and then increases by \\(3\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(44496\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(1581\\)",
-      "\\(1437\\)",
-      "\\(1293\\)",
-      "\\(1509\\)"
+      "\\(42271\\)",
+      "\\(45000\\)",
+      "\\(46721\\)",
+      "\\(49500\\)"
     ],
-    "a": "\\(1437\\)",
+    "a": "\\(45000\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{16}{100} = 0.84,\\ M_2 = 1 - \\frac{13}{100} = 0.87\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.96,\\ M_2 = 1.03\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.84 \\times 0.87 = 0.7308\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 44496\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{1050.16}{0.7308} \\approx \\$1437\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{44496}{0.96 \\times 1.03} \\approx 45000\\)",
         "graphData": null
       }
     ],
@@ -2220,28 +2260,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "QuantumCorp buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "Following a demographic shift, the population of Melbourne decreases by \\(5\\%\\) in 2024, and then increases by \\(4\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(45695\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(30.975%\\)",
-      "\\(26.550%\\)",
-      "\\(32.450%\\)",
-      "\\(29.500%\\)"
+      "\\(43410\\)",
+      "\\(46250\\)",
+      "\\(47980\\)",
+      "\\(50875\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(46250\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.95,\\ M_2 = 1.04\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 45695\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{45695}{0.95 \\times 1.04} \\approx 46250\\)",
         "graphData": null
       }
     ],
@@ -2252,28 +2292,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to BioSphere's annual report, A shipping port's cargo throughput volume increases by \\(13\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(24.30\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "Following a demographic shift, the population of Brisbane decreases by \\(6\\%\\) in 2024, and then increases by \\(5\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(46883\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(10\\)",
-      "\\(12\\)",
-      "\\(11\\)",
-      "\\(9\\)"
+      "\\(44539\\)",
+      "\\(47501\\)",
+      "\\(49227\\)",
+      "\\(52250\\)"
     ],
-    "a": "\\(10\\)",
+    "a": "\\(47501\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{24.30}{100} = 1.2430\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.94,\\ M_2 = 1.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{13}{100}) \\times (1 + \\frac{x}{100}) = 1.2430 \\implies 1.13 \\times (1 + \\frac{x}{100}) = 1.2430\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 46883\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2430}{1.13} = 1.10 \\implies x = 10\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{46883}{0.94 \\times 1.05} \\approx 47501\\)",
         "graphData": null
       }
     ],
@@ -2284,23 +2324,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(24692\\) units. In the subsequent year, it increases by \\(3\\%\\), followed by a decrease of \\(8\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "Following a demographic shift, the population of Perth decreases by \\(7\\%\\) in 2024, and then increases by \\(6\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(48058\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(24568\\)",
-      "\\(23398\\)",
-      "\\(21058\\)",
-      "\\(25738\\)"
+      "\\(45655\\)",
+      "\\(48750\\)",
+      "\\(50461\\)",
+      "\\(53625\\)"
     ],
-    "a": "\\(23398\\)",
+    "a": "\\(48750\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 24692 \\times (1 + \\frac{3}{100}) = 24692 \\times 1.03 = 25433\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.93,\\ M_2 = 1.06\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 25433 \\times (1 - \\frac{8}{100}) = 25433 \\times 0.92 \\approx 23398\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 48058\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{48058}{0.93 \\times 1.06} \\approx 48750\\)",
         "graphData": null
       }
     ],
@@ -2311,28 +2356,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$335\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(7\\%\\) in the second quarter, and a final increase of \\(6\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "Following a demographic shift, the population of Adelaide decreases by \\(8\\%\\) in 2024, and then increases by \\(3\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(47380\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(356.66\\)",
-      "\\(374.49\\)",
-      "\\(392.33\\)",
-      "\\(320.99\\)"
+      "\\(45011\\)",
+      "\\(49749\\)",
+      "\\(50000\\)",
+      "\\(55000\\)"
     ],
-    "a": "\\(356.66\\)",
+    "a": "\\(50000\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{7}{100} = 0.93,\\ M_3 = 1 + \\frac{6}{100} = 1.06\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.92,\\ M_2 = 1.03\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.93 \\times 1.06 = 1.0647\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 47380\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$335 \\times 1.0647 \\approx \\$356.66\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{47380}{0.92 \\times 1.03} \\approx 50000\\)",
         "graphData": null
       }
     ],
@@ -2343,28 +2388,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$385.60\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "Following a demographic shift, the population of Hobart decreases by \\(4\\%\\) in 2024, and then increases by \\(4\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(51168\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(548\\)",
-      "\\(470\\)",
-      "\\(522\\)",
-      "\\(574\\)"
+      "\\(48610\\)",
+      "\\(51250\\)",
+      "\\(53726\\)",
+      "\\(56375\\)"
     ],
-    "a": "\\(522\\)",
+    "a": "\\(51250\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{11}{100} = 0.89,\\ M_2 = 1 - \\frac{17}{100} = 0.83\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.96,\\ M_2 = 1.04\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.89 \\times 0.83 = 0.7387\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 51168\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{385.60}{0.7387} \\approx \\$522\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{51168}{0.96 \\times 1.04} \\approx 51250\\)",
         "graphData": null
       }
     ],
@@ -2375,28 +2420,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "AeroLogistics buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "Following a demographic shift, the population of Darwin decreases by \\(5\\%\\) in 2024, and then increases by \\(5\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(52369\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(30.975%\\)",
-      "\\(29.500%\\)",
-      "\\(26.550%\\)",
-      "\\(32.450%\\)"
+      "\\(49751\\)",
+      "\\(52500\\)",
+      "\\(54987\\)",
+      "\\(57750\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(52500\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.95,\\ M_2 = 1.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 52369\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{52369}{0.95 \\times 1.05} \\approx 52500\\)",
         "graphData": null
       }
     ],
@@ -2407,28 +2452,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to ApexGroup's annual report, A digital game studio's concurrent player base rises by \\(4\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(10.24\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "Following a demographic shift, the population of Canberra decreases by \\(6\\%\\) in 2024, and then increases by \\(6\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(53557\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(8\\)",
-      "\\(5\\)",
-      "\\(7\\)",
-      "\\(6\\)"
+      "\\(50879\\)",
+      "\\(53751\\)",
+      "\\(56235\\)",
+      "\\(59125\\)"
     ],
-    "a": "\\(6\\)",
+    "a": "\\(53751\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{10.24}{100} = 1.1024\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.94,\\ M_2 = 1.06\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{4}{100}) \\times (1 + \\frac{x}{100}) = 1.1024 \\implies 1.04 \\times (1 + \\frac{x}{100}) = 1.1024\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 53557\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1024}{1.04} = 1.06 \\implies x = 6\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{53557}{0.94 \\times 1.06} \\approx 53751\\)",
         "graphData": null
       }
     ],
@@ -2439,23 +2484,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(25907\\) units. In the subsequent year, it increases by \\(5\\%\\), followed by a decrease of \\(5\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "Following a demographic shift, the population of Newcastle decreases by \\(7\\%\\) in 2024, and then increases by \\(3\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(52685\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(25842\\)",
-      "\\(28426\\)",
-      "\\(23258\\)",
-      "\\(27134\\)"
+      "\\(50051\\)",
+      "\\(55001\\)",
+      "\\(55319\\)",
+      "\\(60500\\)"
     ],
-    "a": "\\(25842\\)",
+    "a": "\\(55001\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 25907 \\times (1 + \\frac{5}{100}) = 25907 \\times 1.05 = 27202\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.93,\\ M_2 = 1.03\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 27202 \\times (1 - \\frac{5}{100}) = 27202 \\times 0.95 \\approx 25842\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 52685\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{52685}{0.93 \\times 1.03} \\approx 55001\\)",
         "graphData": null
       }
     ],
@@ -2466,28 +2516,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$550\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(10\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "Following a demographic shift, the population of Wollongong decreases by \\(8\\%\\) in 2024, and then increases by \\(4\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(53820\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(558.13\\)",
-      "\\(651.15\\)",
-      "\\(620.14\\)",
-      "\\(682.15\\)"
+      "\\(51129\\)",
+      "\\(56250\\)",
+      "\\(56511\\)",
+      "\\(61875\\)"
     ],
-    "a": "\\(620.14\\)",
+    "a": "\\(56250\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{10}{100} = 0.90,\\ M_3 = 1 + \\frac{16}{100} = 1.16\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.92,\\ M_2 = 1.04\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.90 \\times 1.16 = 1.1275\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 53820\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$550 \\times 1.1275 \\approx \\$620.14\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{53820}{0.92 \\times 1.04} \\approx 56250\\)",
         "graphData": null
       }
     ],
@@ -2498,28 +2548,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$599.28\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(21\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "Following a demographic shift, the population of Geelong decreases by \\(4\\%\\) in 2024, and then increases by \\(5\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(57960\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(888\\)",
-      "\\(847\\)",
-      "\\(807\\)",
-      "\\(726\\)"
+      "\\(55062\\)",
+      "\\(57500\\)",
+      "\\(60858\\)",
+      "\\(63250\\)"
     ],
-    "a": "\\(807\\)",
+    "a": "\\(57500\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{6}{100} = 0.94,\\ M_2 = 1 - \\frac{21}{100} = 0.79\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.96,\\ M_2 = 1.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.94 \\times 0.79 = 0.7426\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 57960\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{599.28}{0.7426} \\approx \\$807\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{57960}{0.96 \\times 1.05} \\approx 57500\\)",
         "graphData": null
       }
     ],
@@ -2530,28 +2580,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "TerraFarms buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "Following a demographic shift, the population of Townsville decreases by \\(5\\%\\) in 2024, and then increases by \\(6\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(59161\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(29.500%\\)",
-      "\\(32.450%\\)",
-      "\\(26.550%\\)",
-      "\\(30.975%\\)"
+      "\\(56203\\)",
+      "\\(58750\\)",
+      "\\(62119\\)",
+      "\\(64625\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(58750\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.95,\\ M_2 = 1.06\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 59161\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{59161}{0.95 \\times 1.06} \\approx 58750\\)",
         "graphData": null
       }
     ],
@@ -2562,28 +2612,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to ZenithMedia's annual report, A shipping port's cargo throughput volume increases by \\(7\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(21.98\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "Following a demographic shift, the population of Cairns decreases by \\(6\\%\\) in 2024, and then increases by \\(3\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(58092\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(14\\)",
-      "\\(15\\)",
-      "\\(13\\)",
-      "\\(17\\)"
+      "\\(55187\\)",
+      "\\(60000\\)",
+      "\\(60997\\)",
+      "\\(66000\\)"
     ],
-    "a": "\\(14\\)",
+    "a": "\\(60000\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{21.98}{100} = 1.2198\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.94,\\ M_2 = 1.03\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{7}{100}) \\times (1 + \\frac{x}{100}) = 1.2198 \\implies 1.07 \\times (1 + \\frac{x}{100}) = 1.2198\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 58092\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2198}{1.07} = 1.14 \\implies x = 14\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{58092}{0.94 \\times 1.03} \\approx 60000\\)",
         "graphData": null
       }
     ],
@@ -2594,23 +2644,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(27122\\) units. In the subsequent year, it increases by \\(7\\%\\), followed by a decrease of \\(2\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "Following a demographic shift, the population of Toowoomba decreases by \\(7\\%\\) in 2024, and then increases by \\(4\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(59241\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(28440\\)",
-      "\\(31284\\)",
-      "\\(25596\\)",
-      "\\(29862\\)"
+      "\\(56279\\)",
+      "\\(61250\\)",
+      "\\(62203\\)",
+      "\\(67375\\)"
     ],
-    "a": "\\(28440\\)",
+    "a": "\\(61250\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 27122 \\times (1 + \\frac{7}{100}) = 27122 \\times 1.07 = 29021\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.93,\\ M_2 = 1.04\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 29021 \\times (1 - \\frac{2}{100}) = 29021 \\times 0.98 \\approx 28440\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 59241\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{59241}{0.93 \\times 1.04} \\approx 61250\\)",
         "graphData": null
       }
     ],
@@ -2621,28 +2676,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$765\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(13\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "Following a demographic shift, the population of Ballarat decreases by \\(8\\%\\) in 2024, and then increases by \\(5\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(60375\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(837.75\\)",
-      "\\(718.07\\)",
-      "\\(877.65\\)",
-      "\\(797.86\\)"
+      "\\(57356\\)",
+      "\\(62500\\)",
+      "\\(63394\\)",
+      "\\(68750\\)"
     ],
-    "a": "\\(797.86\\)",
+    "a": "\\(62500\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{13}{100} = 0.87,\\ M_3 = 1 + \\frac{11}{100} = 1.11\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.92,\\ M_2 = 1.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.87 \\times 1.11 = 1.0430\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 60375\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$765 \\times 1.0430 \\approx \\$797.86\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{60375}{0.92 \\times 1.05} \\approx 62500\\)",
         "graphData": null
       }
     ],
@@ -2653,28 +2708,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$834.72\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(9\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "Following a demographic shift, the population of Bendigo decreases by \\(4\\%\\) in 2024, and then increases by \\(6\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(64872\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(1092\\)",
-      "\\(1201\\)",
-      "\\(1147\\)",
-      "\\(983\\)"
+      "\\(61628\\)",
+      "\\(63750\\)",
+      "\\(68116\\)",
+      "\\(70125\\)"
     ],
-    "a": "\\(1092\\)",
+    "a": "\\(63750\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{16}{100} = 0.84,\\ M_2 = 1 - \\frac{9}{100} = 0.91\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.96,\\ M_2 = 1.06\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.84 \\times 0.91 = 0.7644\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 64872\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{834.72}{0.7644} \\approx \\$1092\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{64872}{0.96 \\times 1.06} \\approx 63750\\)",
         "graphData": null
       }
     ],
@@ -2685,28 +2740,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "StellarLabs buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "Following a demographic shift, the population of Sydney decreases by \\(5\\%\\) in 2024, and then increases by \\(3\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(63603\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(32.450%\\)",
-      "\\(26.550%\\)",
-      "\\(30.975%\\)",
-      "\\(29.500%\\)"
+      "\\(60423\\)",
+      "\\(65001\\)",
+      "\\(66783\\)",
+      "\\(71500\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(65001\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.95,\\ M_2 = 1.03\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 63603\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{63603}{0.95 \\times 1.03} \\approx 65001\\)",
         "graphData": null
       }
     ],
@@ -2717,28 +2772,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to QuantumCorp's annual report, A digital game studio's concurrent player base rises by \\(10\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(21.00\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "Following a demographic shift, the population of Melbourne decreases by \\(6\\%\\) in 2024, and then increases by \\(4\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(64766\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(11\\)",
-      "\\(12\\)",
-      "\\(10\\)",
-      "\\(9\\)"
+      "\\(61528\\)",
+      "\\(66250\\)",
+      "\\(68004\\)",
+      "\\(72875\\)"
     ],
-    "a": "\\(10\\)",
+    "a": "\\(66250\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{21.00}{100} = 1.2100\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.94,\\ M_2 = 1.04\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{10}{100}) \\times (1 + \\frac{x}{100}) = 1.2100 \\implies 1.10 \\times (1 + \\frac{x}{100}) = 1.2100\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 64766\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2100}{1.10} = 1.10 \\implies x = 10\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{64766}{0.94 \\times 1.04} \\approx 66250\\)",
         "graphData": null
       }
     ],
@@ -2749,23 +2804,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(28337\\) units. In the subsequent year, it increases by \\(9\\%\\), followed by a decrease of \\(8\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "Following a demographic shift, the population of Brisbane decreases by \\(7\\%\\) in 2024, and then increases by \\(5\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(65914\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(31258\\)",
-      "\\(29837\\)",
-      "\\(28416\\)",
-      "\\(25574\\)"
+      "\\(62618\\)",
+      "\\(67500\\)",
+      "\\(69210\\)",
+      "\\(74250\\)"
     ],
-    "a": "\\(28416\\)",
+    "a": "\\(67500\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 28337 \\times (1 + \\frac{9}{100}) = 28337 \\times 1.09 = 30887\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.93,\\ M_2 = 1.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 30887 \\times (1 - \\frac{8}{100}) = 30887 \\times 0.92 \\approx 28416\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 65914\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{65914}{0.93 \\times 1.05} \\approx 67500\\)",
         "graphData": null
       }
     ],
@@ -2776,28 +2836,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$980\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(4\\%\\) in the second quarter, and a final increase of \\(6\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "Following a demographic shift, the population of Perth decreases by \\(8\\%\\) in 2024, and then increases by \\(6\\%\\) in 2025. If the census records the final population at the end of 2025 as \\(67045\\), find the initial population at the beginning of 2024. Correct to the nearest whole integer.",
     "opts": [
-      "\\(1184.73\\)",
-      "\\(1077.03\\)",
-      "\\(1130.88\\)",
-      "\\(969.33\\)"
+      "\\(63693\\)",
+      "\\(68750\\)",
+      "\\(70397\\)",
+      "\\(75625\\)"
     ],
-    "a": "\\(1077.03\\)",
+    "a": "\\(68750\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{4}{100} = 0.96,\\ M_3 = 1 + \\frac{6}{100} = 1.06\\)",
+        "explanation": "Identify the multipliers for the consecutive changes.",
+        "workingOut": "\\(M_1 = 0.92,\\ M_2 = 1.06\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.96 \\times 1.06 = 1.0990\\)",
+        "explanation": "Set up the population equation.",
+        "workingOut": "\\(P_{\\text{initial}} \\times M_1 \\times M_2 = 67045\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$980 \\times 1.0990 \\approx \\$1077.03\\)",
+        "explanation": "Divide the final population by the combined multipliers to solve for the initial population.",
+        "workingOut": "\\(P_{\\text{initial}} = \\frac{67045}{0.92 \\times 1.06} \\approx 68750\\)",
         "graphData": null
       }
     ],
@@ -2808,28 +2868,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$1066.21\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "In a financial report, FutureAI's annual revenue increases by \\(5\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(11.30\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(1446\\)",
-      "\\(1239\\)",
-      "\\(1515\\)",
-      "\\(1377\\)"
+      "\\(11\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(8\\)"
     ],
-    "a": "\\(1377\\)",
+    "a": "\\(6\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{11}{100} = 0.89,\\ M_2 = 1 - \\frac{13}{100} = 0.87\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{11.30}{100} = 1.1130\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.89 \\times 0.87 = 0.7743\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.05 \\times (1 + \\frac{x}{100}) = 1.1130\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{1066.21}{0.7743} \\approx \\$1377\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1130}{1.05} = 1.06 \\implies x = 6\\)",
         "graphData": null
       }
     ],
@@ -2840,28 +2900,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "NovaTech buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "In a financial report, GigaVolt's annual revenue decreases by \\(7\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(1.37\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(26.550%\\)",
-      "\\(30.975%\\)",
-      "\\(32.450%\\)",
-      "\\(29.500%\\)"
+      "\\(11\\)",
+      "\\(1\\)",
+      "\\(7\\)",
+      "\\(9\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(9\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{1.37}{100} = 1.0137\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.93 \\times (1 + \\frac{x}{100}) = 1.0137\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.0137}{0.93} = 1.09 \\implies x = 9\\)",
         "graphData": null
       }
     ],
@@ -2872,28 +2932,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to AeroLogistics's annual report, A shipping port's cargo throughput volume increases by \\(13\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(19.78\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "In a financial report, HyperLoop's annual revenue increases by \\(9\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(22.08\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(6\\)",
-      "\\(7\\)",
-      "\\(5\\)",
-      "\\(8\\)"
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(14\\)",
+      "\\(22\\)"
     ],
-    "a": "\\(6\\)",
+    "a": "\\(12\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{19.78}{100} = 1.1978\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{22.08}{100} = 1.2208\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{13}{100}) \\times (1 + \\frac{x}{100}) = 1.1978 \\implies 1.13 \\times (1 + \\frac{x}{100}) = 1.1978\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.09 \\times (1 + \\frac{x}{100}) = 1.2208\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1978}{1.13} = 1.06 \\implies x = 6\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2208}{1.09} = 1.12 \\implies x = 12\\)",
         "graphData": null
       }
     ],
@@ -2904,23 +2964,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(29552\\) units. In the subsequent year, it increases by \\(3\\%\\), followed by a decrease of \\(5\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "In a financial report, InnovaTech's annual revenue decreases by \\(11\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(2.35\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(30363\\)",
-      "\\(26025\\)",
-      "\\(31809\\)",
-      "\\(28917\\)"
+      "\\(13\\)",
+      "\\(15\\)",
+      "\\(17\\)",
+      "\\(2\\)"
     ],
-    "a": "\\(28917\\)",
+    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 29552 \\times (1 + \\frac{3}{100}) = 29552 \\times 1.03 = 30439\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{2.35}{100} = 1.0235\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 30439 \\times (1 - \\frac{5}{100}) = 30439 \\times 0.95 \\approx 28917\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.89 \\times (1 + \\frac{x}{100}) = 1.0235\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.0235}{0.89} = 1.15 \\implies x = 15\\)",
         "graphData": null
       }
     ],
@@ -2931,28 +2996,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$295\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(7\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "In a financial report, JoulePower's annual revenue increases by \\(13\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(19.78\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(343.71\\)",
-      "\\(378.08\\)",
-      "\\(309.34\\)",
-      "\\(360.90\\)"
+      "\\(20\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(8\\)"
     ],
-    "a": "\\(343.71\\)",
+    "a": "\\(6\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{7}{100} = 0.93,\\ M_3 = 1 + \\frac{16}{100} = 1.16\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{19.78}{100} = 1.1978\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.93 \\times 1.16 = 1.1651\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.13 \\times (1 + \\frac{x}{100}) = 1.1978\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$295 \\times 1.1651 \\approx \\$343.71\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1978}{1.13} = 1.06 \\implies x = 6\\)",
         "graphData": null
       }
     ],
@@ -2963,28 +3028,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$360.45\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "In a financial report, KiloByte's annual revenue decreases by \\(5\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(3.55\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(416\\)",
-      "\\(508\\)",
-      "\\(485\\)",
-      "\\(462\\)"
+      "\\(11\\)",
+      "\\(4\\)",
+      "\\(7\\)",
+      "\\(9\\)"
     ],
-    "a": "\\(462\\)",
+    "a": "\\(9\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{6}{100} = 0.94,\\ M_2 = 1 - \\frac{17}{100} = 0.83\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{3.55}{100} = 1.0355\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.94 \\times 0.83 = 0.7802\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.95 \\times (1 + \\frac{x}{100}) = 1.0355\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{360.45}{0.7802} \\approx \\$462\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.0355}{0.95} = 1.09 \\implies x = 9\\)",
         "graphData": null
       }
     ],
@@ -2995,28 +3060,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "BioSphere buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "In a financial report, LogiTech's annual revenue increases by \\(7\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(19.84\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(26.550%\\)",
-      "\\(32.450%\\)",
-      "\\(30.975%\\)",
-      "\\(29.500%\\)"
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(14\\)",
+      "\\(20\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(12\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{19.84}{100} = 1.1984\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.07 \\times (1 + \\frac{x}{100}) = 1.1984\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1984}{1.07} = 1.12 \\implies x = 12\\)",
         "graphData": null
       }
     ],
@@ -3027,28 +3092,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to TerraFarms's annual report, A digital game studio's concurrent player base rises by \\(4\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(18.56\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "In a financial report, MegaCorp's annual revenue decreases by \\(9\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(4.65\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(14\\)",
-      "\\(15\\)",
       "\\(13\\)",
-      "\\(17\\)"
+      "\\(15\\)",
+      "\\(17\\)",
+      "\\(5\\)"
     ],
-    "a": "\\(14\\)",
+    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{18.56}{100} = 1.1856\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{4.65}{100} = 1.0465\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{4}{100}) \\times (1 + \\frac{x}{100}) = 1.1856 \\implies 1.04 \\times (1 + \\frac{x}{100}) = 1.1856\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.91 \\times (1 + \\frac{x}{100}) = 1.0465\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1856}{1.04} = 1.14 \\implies x = 14\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.0465}{0.91} = 1.15 \\implies x = 15\\)",
         "graphData": null
       }
     ],
@@ -3059,23 +3124,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(22767\\) units. In the subsequent year, it increases by \\(5\\%\\), followed by a decrease of \\(2\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "In a financial report, NanoTech's annual revenue increases by \\(11\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(17.66\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(23427\\)",
-      "\\(24598\\)",
-      "\\(25770\\)",
-      "\\(21084\\)"
+      "\\(18\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(8\\)"
     ],
-    "a": "\\(23427\\)",
+    "a": "\\(6\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 22767 \\times (1 + \\frac{5}{100}) = 22767 \\times 1.05 = 23905\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{17.66}{100} = 1.1766\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 23905 \\times (1 - \\frac{2}{100}) = 23905 \\times 0.98 \\approx 23427\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.11 \\times (1 + \\frac{x}{100}) = 1.1766\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1766}{1.11} = 1.06 \\implies x = 6\\)",
         "graphData": null
       }
     ],
@@ -3086,28 +3156,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$510\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(10\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "In a financial report, OmniCorp's annual revenue decreases by \\(13\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(-5.17\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(577.76\\)",
-      "\\(495.23\\)",
-      "\\(605.28\\)",
-      "\\(550.25\\)"
+      "\\(-5\\)",
+      "\\(11\\)",
+      "\\(7\\)",
+      "\\(9\\)"
     ],
-    "a": "\\(550.25\\)",
+    "a": "\\(9\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{10}{100} = 0.90,\\ M_3 = 1 + \\frac{11}{100} = 1.11\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{-5.17}{100} = 0.9483\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.90 \\times 1.11 = 1.0789\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.87 \\times (1 + \\frac{x}{100}) = 0.9483\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$510 \\times 1.0789 \\approx \\$550.25\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{0.9483}{0.87} = 1.09 \\implies x = 9\\)",
         "graphData": null
       }
     ],
@@ -3118,28 +3188,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$495.71\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(21\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "In a financial report, PicoCell's annual revenue increases by \\(5\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(17.60\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(784\\)",
-      "\\(672\\)",
-      "\\(822\\)",
-      "\\(747\\)"
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(14\\)",
+      "\\(18\\)"
     ],
-    "a": "\\(747\\)",
+    "a": "\\(12\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{16}{100} = 0.84,\\ M_2 = 1 - \\frac{21}{100} = 0.79\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{17.60}{100} = 1.1760\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.84 \\times 0.79 = 0.6636\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.05 \\times (1 + \\frac{x}{100}) = 1.1760\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{495.71}{0.6636} \\approx \\$747\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1760}{1.05} = 1.12 \\implies x = 12\\)",
         "graphData": null
       }
     ],
@@ -3150,28 +3220,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "ApexGroup buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "In a financial report, QuantumCorp's annual revenue decreases by \\(7\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(6.95\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(30.975%\\)",
-      "\\(26.550%\\)",
-      "\\(32.450%\\)",
-      "\\(29.500%\\)"
+      "\\(13\\)",
+      "\\(15\\)",
+      "\\(17\\)",
+      "\\(7\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{6.95}{100} = 1.0695\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.93 \\times (1 + \\frac{x}{100}) = 1.0695\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.0695}{0.93} = 1.15 \\implies x = 15\\)",
         "graphData": null
       }
     ],
@@ -3182,28 +3252,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to StellarLabs's annual report, A shipping port's cargo throughput volume increases by \\(7\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(17.70\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "In a financial report, RoboTech's annual revenue increases by \\(9\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(15.54\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(12\\)",
-      "\\(10\\)",
-      "\\(11\\)",
-      "\\(9\\)"
+      "\\(16\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(8\\)"
     ],
-    "a": "\\(10\\)",
+    "a": "\\(6\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{17.70}{100} = 1.1770\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{15.54}{100} = 1.1554\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{7}{100}) \\times (1 + \\frac{x}{100}) = 1.1770 \\implies 1.07 \\times (1 + \\frac{x}{100}) = 1.1770\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.09 \\times (1 + \\frac{x}{100}) = 1.1554\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1770}{1.07} = 1.10 \\implies x = 10\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1554}{1.09} = 1.06 \\implies x = 6\\)",
         "graphData": null
       }
     ],
@@ -3214,23 +3284,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(23982\\) units. In the subsequent year, it increases by \\(7\\%\\), followed by a decrease of \\(8\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "In a financial report, SolaRise's annual revenue decreases by \\(11\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(-2.99\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(23608\\)",
-      "\\(25969\\)",
-      "\\(21247\\)",
-      "\\(24788\\)"
+      "\\(-3\\)",
+      "\\(11\\)",
+      "\\(7\\)",
+      "\\(9\\)"
     ],
-    "a": "\\(23608\\)",
+    "a": "\\(9\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 23982 \\times (1 + \\frac{7}{100}) = 23982 \\times 1.07 = 25661\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{-2.99}{100} = 0.9701\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 25661 \\times (1 - \\frac{8}{100}) = 25661 \\times 0.92 \\approx 23608\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.89 \\times (1 + \\frac{x}{100}) = 0.9701\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{0.9701}{0.89} = 1.09 \\implies x = 9\\)",
         "graphData": null
       }
     ],
@@ -3241,28 +3316,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$725\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(13\\%\\) in the second quarter, and a final increase of \\(6\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "In a financial report, TerraForm's annual revenue increases by \\(13\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(26.56\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(649.87\\)",
-      "\\(758.18\\)",
-      "\\(794.29\\)",
-      "\\(722.08\\)"
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(14\\)",
+      "\\(27\\)"
     ],
-    "a": "\\(722.08\\)",
+    "a": "\\(12\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{13}{100} = 0.87,\\ M_3 = 1 + \\frac{6}{100} = 1.06\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{26.56}{100} = 1.2656\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.87 \\times 1.06 = 0.9960\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.13 \\times (1 + \\frac{x}{100}) = 1.2656\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$725 \\times 0.9960 \\approx \\$722.08\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2656}{1.13} = 1.12 \\implies x = 12\\)",
         "graphData": null
       }
     ],
@@ -3273,28 +3348,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$835.82\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(9\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "In a financial report, UltraNet's annual revenue decreases by \\(5\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(9.25\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(1084\\)",
-      "\\(929\\)",
-      "\\(1032\\)",
-      "\\(1135\\)"
+      "\\(13\\)",
+      "\\(15\\)",
+      "\\(17\\)",
+      "\\(9\\)"
     ],
-    "a": "\\(1032\\)",
+    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{11}{100} = 0.89,\\ M_2 = 1 - \\frac{9}{100} = 0.91\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{9.25}{100} = 1.0925\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.89 \\times 0.91 = 0.8099\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.95 \\times (1 + \\frac{x}{100}) = 1.0925\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{835.82}{0.8099} \\approx \\$1032\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.0925}{0.95} = 1.15 \\implies x = 15\\)",
         "graphData": null
       }
     ],
@@ -3305,28 +3380,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "ZenithMedia buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "In a financial report, VeloCity's annual revenue increases by \\(7\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(13.42\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(29.500%\\)",
-      "\\(32.450%\\)",
-      "\\(30.975%\\)",
-      "\\(26.550%\\)"
+      "\\(13\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(8\\)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(6\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{13.42}{100} = 1.1342\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.07 \\times (1 + \\frac{x}{100}) = 1.1342\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1342}{1.07} = 1.06 \\implies x = 6\\)",
         "graphData": null
       }
     ],
@@ -3337,28 +3412,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to NovaTech's annual report, A digital game studio's concurrent player base rises by \\(10\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(16.60\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "In a financial report, WaveFront's annual revenue decreases by \\(9\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(-0.81\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(8\\)",
-      "\\(5\\)",
+      "\\(-1\\)",
+      "\\(11\\)",
       "\\(7\\)",
-      "\\(6\\)"
+      "\\(9\\)"
     ],
-    "a": "\\(6\\)",
+    "a": "\\(9\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{16.60}{100} = 1.1660\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{-0.81}{100} = 0.9919\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{10}{100}) \\times (1 + \\frac{x}{100}) = 1.1660 \\implies 1.10 \\times (1 + \\frac{x}{100}) = 1.1660\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.91 \\times (1 + \\frac{x}{100}) = 0.9919\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1660}{1.10} = 1.06 \\implies x = 6\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{0.9919}{0.91} = 1.09 \\implies x = 9\\)",
         "graphData": null
       }
     ],
@@ -3369,23 +3444,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(25197\\) units. In the subsequent year, it increases by \\(9\\%\\), followed by a decrease of \\(5\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "In a financial report, XenonLab's annual revenue increases by \\(11\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(24.32\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(26091\\)",
-      "\\(28700\\)",
-      "\\(23482\\)",
-      "\\(27396\\)"
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(14\\)",
+      "\\(24\\)"
     ],
-    "a": "\\(26091\\)",
+    "a": "\\(12\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 25197 \\times (1 + \\frac{9}{100}) = 25197 \\times 1.09 = 27465\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{24.32}{100} = 1.2432\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 27465 \\times (1 - \\frac{5}{100}) = 27465 \\times 0.95 \\approx 26091\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(1.11 \\times (1 + \\frac{x}{100}) = 1.2432\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2432}{1.11} = 1.12 \\implies x = 12\\)",
         "graphData": null
       }
     ],
@@ -3396,28 +3476,28 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$940\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(4\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "In a financial report, YottaByte's annual revenue decreases by \\(13\\%\\) in the first half of the fiscal year, and then increases by \\(x\\%\\) in the second half. If the net change in revenue across the entire year is exactly \\(0.05\\%\\), find the value of \\(x\\). Correct to the nearest whole integer.",
     "opts": [
-      "\\(1130.53\\)",
-      "\\(1243.58\\)",
-      "\\(1017.48\\)",
-      "\\(1187.06\\)"
+      "\\(0\\)",
+      "\\(13\\)",
+      "\\(15\\)",
+      "\\(17\\)"
     ],
-    "a": "\\(1130.53\\)",
+    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{4}{100} = 0.96,\\ M_3 = 1 + \\frac{16}{100} = 1.16\\)",
+        "explanation": "Express the net year-end change as a combined multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{0.05}{100} = 1.0005\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.96 \\times 1.16 = 1.2027\\)",
+        "explanation": "Set up the multiplication equation using the first half multiplier.",
+        "workingOut": "\\(0.87 \\times (1 + \\frac{x}{100}) = 1.0005\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$940 \\times 1.2027 \\approx \\$1130.53\\)",
+        "explanation": "Solve for the unknown rate x by dividing and converting to a percentage.",
+        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.0005}{0.87} = 1.15 \\implies x = 15\\)",
         "graphData": null
       }
     ],
@@ -3428,28 +3508,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$1077.04\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "A vintage limited-issue silver coin is initially valued at \\(\\$1200\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(1317\\)",
-      "\\(1449\\)",
-      "\\(1185\\)",
-      "\\(1383\\)"
+      "\\(\\$1344.00\\)",
+      "\\(\\$1421.95\\)",
+      "\\(\\$1428.00\\)",
+      "\\(\\$1500.00\
+)"
     ],
-    "a": "\\(1317\\)",
+    "a": "\\(\\$1421.95\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{6}{100} = 0.94,\\ M_2 = 1 - \\frac{13}{100} = 0.87\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.94 \\times 0.87 = 0.8178\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{1077.04}{0.8178} \\approx \\$1317\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$1200 \\times 1.1850 \\approx \\$1421.95\\)",
         "graphData": null
       }
     ],
@@ -3460,28 +3541,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "QuantumCorp buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A vintage autographed sports jersey is initially valued at \\(\\$1350\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(30.975%\\)",
-      "\\(26.550%\\)",
-      "\\(32.450%\\)",
-      "\\(29.500%\\)"
+      "\\(\\$1512.00\\)",
+      "\\(\\$1599.70\\)",
+      "\\(\\$1606.50\\)",
+      "\\(\\$1687.50\
+)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(\\$1599.70\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$1350 \\times 1.1850 \\approx \\$1599.70\\)",
         "graphData": null
       }
     ],
@@ -3492,28 +3574,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to BioSphere's annual report, A shipping port's cargo throughput volume increases by \\(13\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(28.82\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A vintage original oil painting is initially valued at \\(\\$1500\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(13\\)",
-      "\\(17\\)",
-      "\\(15\\)",
-      "\\(14\\)"
+      "\\(\\$1680.00\\)",
+      "\\(\\$1777.44\\)",
+      "\\(\\$1785.00\\)",
+      "\\(\\$1875.00\
+)"
     ],
-    "a": "\\(14\\)",
+    "a": "\\(\\$1777.44\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{28.82}{100} = 1.2882\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{13}{100}) \\times (1 + \\frac{x}{100}) = 1.2882 \\implies 1.13 \\times (1 + \\frac{x}{100}) = 1.2882\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2882}{1.13} = 1.14 \\implies x = 14\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$1500 \\times 1.1850 \\approx \\$1777.44\\)",
         "graphData": null
       }
     ],
@@ -3524,23 +3607,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(26412\\) units. In the subsequent year, it increases by \\(3\\%\\), followed by a decrease of \\(2\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A vintage vintage acoustic guitar is initially valued at \\(\\$1650\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(23994\\)",
-      "\\(27993\\)",
-      "\\(29326\\)",
-      "\\(26660\\)"
+      "\\(\\$1848.00\\)",
+      "\\(\\$1955.18\\)",
+      "\\(\\$1963.50\\)",
+      "\\(\\$2062.50\
+)"
     ],
-    "a": "\\(26660\\)",
+    "a": "\\(\\$1955.18\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 26412 \\times (1 + \\frac{3}{100}) = 26412 \\times 1.03 = 27204\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 27204 \\times (1 - \\frac{2}{100}) = 27204 \\times 0.98 \\approx 26660\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$1650 \\times 1.1850 \\approx \\$1955.18\\)",
         "graphData": null
       }
     ],
@@ -3551,28 +3640,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$255\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(7\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A vintage retro arcade cabinet is initially valued at \\(\\$1800\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(255.87\\)",
-      "\\(312.73\\)",
-      "\\(298.52\\)",
-      "\\(284.30\\)"
+      "\\(\\$2016.00\\)",
+      "\\(\\$2132.93\\)",
+      "\\(\\$2142.00\\)",
+      "\\(\\$2250.00\
+)"
     ],
-    "a": "\\(284.30\\)",
+    "a": "\\(\\$2132.93\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{7}{100} = 0.93,\\ M_3 = 1 + \\frac{11}{100} = 1.11\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.93 \\times 1.11 = 1.1149\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$255 \\times 1.1149 \\approx \\$284.30\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$1800 \\times 1.1850 \\approx \\$2132.93\\)",
         "graphData": null
       }
     ],
@@ -3583,28 +3673,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$280.27\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "A vintage rare postage stamp is initially valued at \\(\\$1950\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(422\\)",
-      "\\(362\\)",
-      "\\(442\\)",
-      "\\(402\\)"
+      "\\(\\$2184.00\\)",
+      "\\(\\$2310.67\\)",
+      "\\(\\$2320.50\\)",
+      "\\(\\$2437.50\
+)"
     ],
-    "a": "\\(402\\)",
+    "a": "\\(\\$2310.67\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{16}{100} = 0.84,\\ M_2 = 1 - \\frac{17}{100} = 0.83\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.84 \\times 0.83 = 0.6972\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{280.27}{0.6972} \\approx \\$402\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$1950 \\times 1.1850 \\approx \\$2310.67\\)",
         "graphData": null
       }
     ],
@@ -3615,28 +3706,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "AeroLogistics buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A vintage historic pocket watch is initially valued at \\(\\$2100\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(26.550%\\)",
-      "\\(29.500%\\)",
-      "\\(32.450%\\)",
-      "\\(30.975%\\)"
+      "\\(\\$2352.00\\)",
+      "\\(\\$2488.42\\)",
+      "\\(\\$2499.00\\)",
+      "\\(\\$2625.00\
+)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(\\$2488.42\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$2100 \\times 1.1850 \\approx \\$2488.42\\)",
         "graphData": null
       }
     ],
@@ -3647,28 +3739,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to ApexGroup's annual report, A digital game studio's concurrent player base rises by \\(4\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(14.40\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A vintage rare vintage wristwatch is initially valued at \\(\\$2250\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(10\\)",
-      "\\(11\\)",
-      "\\(9\\)",
-      "\\(12\\)"
+      "\\(\\$2520.00\\)",
+      "\\(\\$2666.16\\)",
+      "\\(\\$2677.50\\)",
+      "\\(\\$2812.50\
+)"
     ],
-    "a": "\\(10\\)",
+    "a": "\\(\\$2666.16\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{14.40}{100} = 1.1440\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{4}{100}) \\times (1 + \\frac{x}{100}) = 1.1440 \\implies 1.04 \\times (1 + \\frac{x}{100}) = 1.1440\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1440}{1.04} = 1.10 \\implies x = 10\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$2250 \\times 1.1850 \\approx \\$2666.16\\)",
         "graphData": null
       }
     ],
@@ -3679,23 +3772,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(27627\\) units. In the subsequent year, it increases by \\(5\\%\\), followed by a decrease of \\(8\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A vintage antique oak cabinet is initially valued at \\(\\$2400\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(29357\\)",
-      "\\(28022\\)",
-      "\\(26688\\)",
-      "\\(24019\\)"
+      "\\(\\$2688.00\\)",
+      "\\(\\$2843.90\\)",
+      "\\(\\$2856.00\\)",
+      "\\(\\$3000.00\
+)"
     ],
-    "a": "\\(26688\\)",
+    "a": "\\(\\$2843.90\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 27627 \\times (1 + \\frac{5}{100}) = 27627 \\times 1.05 = 29008\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 29008 \\times (1 - \\frac{8}{100}) = 29008 \\times 0.92 \\approx 26688\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$2400 \\times 1.1850 \\approx \\$2843.90\\)",
         "graphData": null
       }
     ],
@@ -3706,28 +3805,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$470\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(10\\%\\) in the second quarter, and a final increase of \\(6\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A vintage first-edition comic book is initially valued at \\(\\$2550\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(508.46\\)",
-      "\\(484.25\\)",
-      "\\(532.68\\)",
-      "\\(435.82\\)"
+      "\\(\\$2856.00\\)",
+      "\\(\\$3021.65\\)",
+      "\\(\\$3034.50\\)",
+      "\\(\\$3187.50\
+)"
     ],
-    "a": "\\(484.25\\)",
+    "a": "\\(\\$3021.65\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{10}{100} = 0.90,\\ M_3 = 1 + \\frac{6}{100} = 1.06\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.90 \\times 1.06 = 1.0303\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$470 \\times 1.0303 \\approx \\$484.25\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$2550 \\times 1.1850 \\approx \\$3021.65\\)",
         "graphData": null
       }
     ],
@@ -3738,28 +3838,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$483.03\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(21\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+    "question": "A vintage limited-issue silver coin is initially valued at \\(\\$2700\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(721\\)",
-      "\\(618\\)",
-      "\\(756\\)",
-      "\\(687\\)"
+      "\\(\\$3024.00\\)",
+      "\\(\\$3199.39\\)",
+      "\\(\\$3213.00\\)",
+      "\\(\\$3375.00\
+)"
     ],
-    "a": "\\(687\\)",
+    "a": "\\(\\$3199.39\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{11}{100} = 0.89,\\ M_2 = 1 - \\frac{21}{100} = 0.79\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.89 \\times 0.79 = 0.7031\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{483.03}{0.7031} \\approx \\$687\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$2700 \\times 1.1850 \\approx \\$3199.39\\)",
         "graphData": null
       }
     ],
@@ -3770,28 +3871,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "TerraFarms buys a specialized automated commercial packaging line for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A vintage autographed sports jersey is initially valued at \\(\\$2850\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(30.975%\\)",
-      "\\(26.550%\\)",
-      "\\(32.450%\\)",
-      "\\(29.500%\\)"
+      "\\(\\$3192.00\\)",
+      "\\(\\$3377.14\\)",
+      "\\(\\$3391.50\\)",
+      "\\(\\$3562.50\
+)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(\\$3377.14\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$2850 \\times 1.1850 \\approx \\$3377.14\\)",
         "graphData": null
       }
     ],
@@ -3802,28 +3904,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to ZenithMedia's annual report, A shipping port's cargo throughput volume increases by \\(7\\%\\) in the first half of the year, and then increases by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(13.42\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A vintage original oil painting is initially valued at \\(\\$3000\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(5\\)",
-      "\\(7\\)",
-      "\\(8\\)",
-      "\\(6\\)"
+      "\\(\\$3360.00\\)",
+      "\\(\\$3554.88\\)",
+      "\\(\\$3570.00\\)",
+      "\\(\\$3750.00\
+)"
     ],
-    "a": "\\(6\\)",
+    "a": "\\(\\$3554.88\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{13.42}{100} = 1.1342\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{7}{100}) \\times (1 + \\frac{x}{100}) = 1.1342 \\implies 1.07 \\times (1 + \\frac{x}{100}) = 1.1342\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.1342}{1.07} = 1.06 \\implies x = 6\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$3000 \\times 1.1850 \\approx \\$3554.88\\)",
         "graphData": null
       }
     ],
@@ -3834,23 +3937,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(28842\\) units. In the subsequent year, it increases by \\(7\\%\\), followed by a decrease of \\(5\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A vintage vintage acoustic guitar is initially valued at \\(\\$3150\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(29318\\)",
-      "\\(32250\\)",
-      "\\(26386\\)",
-      "\\(30784\\)"
+      "\\(\\$3528.00\\)",
+      "\\(\\$3732.62\\)",
+      "\\(\\$3748.50\\)",
+      "\\(\\$3937.50\
+)"
     ],
-    "a": "\\(29318\\)",
+    "a": "\\(\\$3732.62\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 28842 \\times (1 + \\frac{7}{100}) = 28842 \\times 1.07 = 30861\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 30861 \\times (1 - \\frac{5}{100}) = 30861 \\times 0.95 \\approx 29318\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$3150 \\times 1.1850 \\approx \\$3732.62\\)",
         "graphData": null
       }
     ],
@@ -3861,28 +3970,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The retail price of fine leather exports starts at \\(\\$685\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(13\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A vintage retro arcade cabinet is initially valued at \\(\\$3300\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(746.61\\)",
-      "\\(821.27\\)",
-      "\\(783.94\\)",
-      "\\(671.95\\)"
+      "\\(\\$3696.00\\)",
+      "\\(\\$3910.37\\)",
+      "\\(\\$3927.00\\)",
+      "\\(\\$4125.00\
+)"
     ],
-    "a": "\\(746.61\\)",
+    "a": "\\(\\$3910.37\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{13}{100} = 0.87,\\ M_3 = 1 + \\frac{16}{100} = 1.16\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.87 \\times 1.16 = 1.0899\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$685 \\times 1.0899 \\approx \\$746.61\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$3300 \\times 1.1850 \\approx \\$3910.37\\)",
         "graphData": null
       }
     ],
@@ -3893,28 +4003,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A customer pays a final promotional checkout price of \\(\\$831.45\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(9\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+    "question": "A vintage rare postage stamp is initially valued at \\(\\$3450\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(875\\)",
-      "\\(1069\\)",
-      "\\(972\\)",
-      "\\(1021\\)"
+      "\\(\\$3864.00\\)",
+      "\\(\\$4088.11\\)",
+      "\\(\\$4105.50\\)",
+      "\\(\\$4312.50\
+)"
     ],
-    "a": "\\(972\\)",
+    "a": "\\(\\$4088.11\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the multipliers representing the consecutive discounts.",
-        "workingOut": "\\(M_1 = 1 - \\frac{6}{100} = 0.94,\\ M_2 = 1 - \\frac{9}{100} = 0.91\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Obtain the combined net discount multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 0.94 \\times 0.91 = 0.8554\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Divide the checkout price by the combined multiplier to recover the original price.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{831.45}{0.8554} \\approx \\$972\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$3450 \\times 1.1850 \\approx \\$4088.11\\)",
         "graphData": null
       }
     ],
@@ -3925,28 +4036,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "StellarLabs buys a specialized hospital MRI coolant system for industrial operations. If the asset depreciates at a constant rate of \\(11\\%\\) per annum compounded annually using the reducing balance method, find the total accumulated percentage decrease in the asset's value after \\(3\\) years. Correct to two decimal places.",
+    "question": "A vintage historic pocket watch is initially valued at \\(\\$3600\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(26.550%\\)",
-      "\\(29.500%\\)",
-      "\\(32.450%\\)",
-      "\\(30.975%\\)"
+      "\\(\\$4032.00\\)",
+      "\\(\\$4265.86\\)",
+      "\\(\\$4284.00\\)",
+      "\\(\\$4500.00\
+)"
     ],
-    "a": "\\(29.50\\%\\)",
+    "a": "\\(\\$4265.86\\)",
     "solutionSteps": [
       {
-        "explanation": "Determine the annual depreciation multiplier.",
-        "workingOut": "\\(M = 1 - \\frac{11}{100} = 0.89\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the residual value multiplier after 3 years.",
-        "workingOut": "\\(M_{\\text{3 years}} = (0.89)^3 = 0.7050\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
-        "workingOut": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$3600 \\times 1.1850 \\approx \\$4265.86\\)",
         "graphData": null
       }
     ],
@@ -3957,28 +4069,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "According to QuantumCorp's annual report, A digital game studio's concurrent player base rises by \\(10\\%\\) in the first half of the year, and then rises by an unknown percentage \\(x\\%\\) in the second half. If the net expansion over the entire year is exactly \\(25.40\\%\\), calculate the value of \\(x\\), correct to the nearest whole integer.",
+    "question": "A vintage rare vintage wristwatch is initially valued at \\(\\$3750\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(14\\)",
-      "\\(17\\)",
-      "\\(15\\)",
-      "\\(13\\)"
+      "\\(\\$4200.00\\)",
+      "\\(\\$4443.60\\)",
+      "\\(\\$4462.50\\)",
+      "\\(\\$4687.50\
+)"
     ],
-    "a": "\\(14\\)",
+    "a": "\\(\\$4443.60\\)",
     "solutionSteps": [
       {
-        "explanation": "Represent the overall year-end change as a combined multiplier.",
-        "workingOut": "\\(M_{\\text{net}} = 1 + \\frac{25.40}{100} = 1.2540\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the equation expressing the product of the two half-year multipliers.",
-        "workingOut": "\\((1 + \\frac{10}{100}) \\times (1 + \\frac{x}{100}) = 1.2540 \\implies 1.10 \\times (1 + \\frac{x}{100}) = 1.2540\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the unknown rate x by dividing by the first half multiplier.",
-        "workingOut": "\\(1 + \\frac{x}{100} = \\frac{1.2540}{1.10} = 1.14 \\implies x = 14\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$3750 \\times 1.1850 \\approx \\$4443.60\\)",
         "graphData": null
       }
     ],
@@ -3989,23 +4102,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The estimated number of mature pines in a commercial plantation stands at \\(22057\\) units. In the subsequent year, it increases by \\(9\\%\\), followed by a decrease of \\(2\\%\\) in the year after due to rapid replanting followed by selected logging cycles. Calculate the final population count at the end of the second year, rounded to the nearest whole integer.",
+    "question": "A vintage antique oak cabinet is initially valued at \\(\\$3900\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(21205\\)",
-      "\\(25917\\)",
-      "\\(23561\\)",
-      "\\(24739\\)"
+      "\\(\\$4368.00\\)",
+      "\\(\\$4621.34\\)",
+      "\\(\\$4641.00\\)",
+      "\\(\\$4875.00\
+)"
     ],
-    "a": "\\(23561\\)",
+    "a": "\\(\\$4621.34\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the population at the end of the first year.",
-        "workingOut": "\\(P_1 = 22057 \\times (1 + \\frac{9}{100}) = 22057 \\times 1.09 = 24042\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the second year's percentage decrease to find the final count.",
-        "workingOut": "\\(P_2 = 24042 \\times (1 - \\frac{2}{100}) = 24042 \\times 0.98 \\approx 23561\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$3900 \\times 1.1850 \\approx \\$4621.34\\)",
         "graphData": null
       }
     ],
@@ -4016,28 +4135,29 @@ export const Y10_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The share value of a biotech startup starts at \\(\\$900\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(4\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+    "question": "A vintage first-edition comic book is initially valued at \\(\\$4050\\). Over three successive quarters, its value experiences the following sequential changes: an increase of \\(12\\%\\), a decrease of \\(8\\%\\), and a final increase of \\(15\\%\\). Find the final valuation at the end of the third quarter, correct to two decimal places.",
     "opts": [
-      "\\(1087.55\\)",
-      "\\(932.18\\)",
-      "\\(1139.34\\)",
-      "\\(1035.76\\)"
+      "\\(\\$4536.00\\)",
+      "\\(\\$4799.09\\)",
+      "\\(\\$4819.50\\)",
+      "\\(\\$5062.50\
+)"
     ],
-    "a": "\\(1035.76\\)",
+    "a": "\\(\\$4799.09\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the multipliers for each of the three successive changes.",
-        "workingOut": "\\(M_1 = 1 + \\frac{8}{100} = 1.08,\\ M_2 = 1 - \\frac{4}{100} = 0.96,\\ M_3 = 1 + \\frac{11}{100} = 1.11\\)",
+        "explanation": "Identify the three multipliers for each successive change.",
+        "workingOut": "\\(M_1 = 1.12,\\ M_2 = 0.92,\\ M_3 = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the individual multipliers to determine the combined net factor.",
-        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.96 \\times 1.11 = 1.1508\\)",
+        "explanation": "Multiply the multipliers to obtain the overall combined net factor.",
+        "workingOut": "\\(M_{\\text{net}} = 1.12 \\times 0.92 \\times 1.15 = 1.1850\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the net factor to the original value to find the final price.",
-        "workingOut": "\\(\\text{Final Price} = \\$900 \\times 1.1508 \\approx \\$1035.76\\)",
+        "explanation": "Apply the combined multiplier to the original value to find the final price.",
+        "workingOut": "\\(\\text{Final Valuation} = \\$4050 \\times 1.1850 \\approx \\$4799.09\\)",
         "graphData": null
       }
     ],

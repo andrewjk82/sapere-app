@@ -675,7 +675,7 @@ export const Y7_CH3B_QUESTIONS = [
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    question: "Apples are $\\$4$ a kilogram and bananas are $\\$3$ a kilogram. What is the total cost of $a$ kilograms of apples and $b$ kilograms of bananas?",
+    question: "Apples are $4 a kilogram and bananas are $3 a kilogram. What is the total cost of $a$ kilograms of apples and $b$ kilograms of bananas?",
     a: "4a + 3b",
     t: "Algebraic notation",
     hint: "Calculate the cost for apples and bananas separately, then add them together.",

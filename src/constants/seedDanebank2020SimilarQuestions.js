@@ -1059,15 +1059,15 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     source: 'Danebank 2020 Trial Q34(a)',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Using a future-value factor of $6.3081$ for $n = 6$ periods at $2\\%$, an annuity has contributions of $\\$1500$ at the end of each half-year for $3$ years at $4\\%$ p.a. compounding half-yearly. Calculate the final amount immediately after the last contribution.',
-    a: '$\\$9462.15$',
+    q: 'Using a future-value factor of $6.3081$ for $n = 6$ periods at $2\\%$, an annuity has contributions of $1500 at the end of each half-year for $3$ years at $4\\%$ p.a. compounding half-yearly. Calculate the final amount immediately after the last contribution.',
+    a: '$9462.15',
     opts: [],
     h: 'Per period: $2\\%$, $6$ periods. Multiply the contribution by the factor.',
     s: '$n = 6$, $r = 2\\%$, factor $= 6.3081$. $FV = 1500 \\times 6.3081 = \\$9462.15$.',
     solutionSteps: [
       { explanation: 'Convert to per-period values.', workingOut: 'r = 2\\%, \\quad n = 6' },
       { explanation: 'Use the future-value factor.', workingOut: '\\text{factor} = 6.3081' },
-      { explanation: 'Multiply by the contribution.', workingOut: 'FV = 1500 \\times 6.3081 = \\$9462.15' }
+      { explanation: 'Multiply by the contribution.', workingOut: 'FV = 1500 \\times 6.3081 = $9462.15' }
     ]
   },
 
@@ -1079,8 +1079,8 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     source: 'Danebank 2020 Trial Q34(b)',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Calculate the single lump sum needed at the start to reach the same final amount ($\\$9462.15$) after $3$ years at $4\\%$ p.a. compounding half-yearly.',
-    a: '$\\$8402.11$',
+    q: 'Calculate the single lump sum needed at the start to reach the same final amount ($9462.15) after $3$ years at $4\\%$ p.a. compounding half-yearly.',
+    a: '$8402.11',
     opts: [],
     h: 'Use $A = P(1+r)^n$ with $A = 9462.15$, $r = 0.02$, $n = 6$.',
     s: '$9462.15 = P(1.02)^6$, so $P = \\frac{9462.15}{(1.02)^6} = \\$8402.11$.',
@@ -1130,7 +1130,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       { explanation: 'The loss is the value at the start of the third year minus the value at its end.', workingOut: '\\text{Loss} = V(2) - V(3)' },
       { explanation: 'Evaluate $V(2)$.', workingOut: 'V(2) = 30\\,000e^{-0.8}' },
       { explanation: 'Evaluate $V(3)$.', workingOut: 'V(3) = 30\\,000e^{-1.2}' },
-      { explanation: 'Subtract.', workingOut: '\\text{Loss} = 30\\,000(e^{-0.8} - e^{-1.2}) \\approx \\$4444.05' }
+      { explanation: 'Subtract.', workingOut: '\\text{Loss} = 30\\,000(e^{-0.8} - e^{-1.2}) \\approx $4444.05' }
     ]
   },
 
@@ -1142,7 +1142,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     source: 'Danebank 2020 Trial Q36(b)',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'For $V = 30\\,000\\,e^{-0.4t}$, find the year in which the car is losing value at a rate of $\\$100$ per year.',
+    q: 'For $V = 30\\,000\\,e^{-0.4t}$, find the year in which the car is losing value at a rate of $100 per year.',
     a: 'During the $12^{\\text{th}}$ year ($t \\approx 11.97$)',
     opts: [],
     h: 'Set $\\frac{dV}{dt} = -100$ and solve for $t$.',
@@ -1164,7 +1164,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     source: 'Danebank 2020 Trial Q37',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'Bianca retires with $\\$800\\,000$ earning $6\\%$ p.a. compounded monthly. She withdraws $\\$5000$ at the end of each month, with $A_n = 800\\,000(1.005)^n - 5000\\{1 + 1.005 + \\cdots + (1.005)^{n-1}\\}$. Find, to the nearest month, the time for the fund to halve.',
+    q: 'Bianca retires with $800,000 earning $6\\%$ p.a. compounded monthly. She withdraws $5000 at the end of each month, with $A_n = 800\\,000(1.005)^n - 5000{1 + 1.005 + \\cdots + (1.005)^{n-1}}$. Find, to the nearest month, the time for the fund to halve.',
     a: '$n \\approx 220$ months ($\\approx 18$ years $4$ months)',
     opts: [],
     h: 'Sum the geometric bracket, set $A_n = 400\\,000$, solve for $n$ with logarithms.',

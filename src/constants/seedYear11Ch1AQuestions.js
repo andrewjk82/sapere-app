@@ -15,11 +15,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(64y^3 - 96y^2 + 24y - 1\\)",
+        "text": "\\(64y^3 - 1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(64y^3 - 1\\)",
+        "text": "\\(64y^3 - 96y^2 + 24y - 1\\)",
         "imageUrl": ""
       }
     ],
@@ -55,6 +55,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x^2 - \\frac{1}{x^2})^2\\)",
     "options": [
       {
+        "text": "\\(x^4  + 2 + \\frac{1}{x^4}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^4  + \\frac{1}{x^4}\\)",
         "imageUrl": ""
       },
@@ -65,13 +69,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(x^4 - 2 + \\frac{1}{x^4}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(x^4  + 2 + \\frac{1}{x^4}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((x^2 - \\frac{1}{x^2})^2 = x^4 - 2 + \\frac{1}{x^4}\\)",
@@ -107,11 +107,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + y^2 + z^2 - 2xy - 2yz + 2zx\\)",
+        "text": "\\(x^2 + y^2 + z^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + y^2 + z^2\\)",
+        "text": "\\(x^2 + y^2 + z^2 - 2xy - 2yz + 2zx\\)",
         "imageUrl": ""
       },
       {
@@ -119,7 +119,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((x - y + z)^2 = x^2 + y^2 + z^2 - 2xy - 2yz + 2zx\\)",
@@ -177,23 +177,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((A + B)(A + B)\\)",
     "options": [
       {
-        "text": "\\(A^2 + AB + B^2\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(2A + 2B\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(A^2 + 2AB + B^2\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(A^2 + B^2\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(A^2 + AB + B^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(A^2 + 2AB + B^2\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(A^2 + 2AB + B^2\\)",
@@ -224,11 +224,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(w^4 - 7w^2 + 1\\)",
+        "text": "\\(x^2 - 7w^2 + 1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 7w^2 + 1\\)",
+        "text": "\\(w^4 - 7w^2 + 1\\)",
         "imageUrl": ""
       },
       {
@@ -268,23 +268,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x - y)(x^2 + xy + y^2)\\)",
     "options": [
       {
-        "text": "\\(x^3 - 3x^2y + 3xy^2 - y^3\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((x - y)^3\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3 - y^3\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^3 + y^3\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 - 3x^2y + 3xy^2 - y^3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 - y^3\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "This is the difference of cubes identity: \\(x^3 - y^3\\)",
@@ -311,11 +311,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((y + 4)^3\\)",
     "options": [
       {
-        "text": "\\(y^3 + 64\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^3 + 12y^2 + 48y + 64\\)",
+        "text": "\\(y^3 + 24y^2 + 96y + 64\\)",
         "imageUrl": ""
       },
       {
@@ -323,11 +319,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y^3 + 24y^2 + 96y + 64\\)",
+        "text": "\\(y^3 + 12y^2 + 48y + 64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^3 + 64\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((y + 4)^3 = y^3 + 12y^2 + 48y + 64\\)",
@@ -359,7 +359,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((5x - 2y)^2\\)",
     "options": [
       {
-        "text": "\\(25x^2 + 4y^2\\)",
+        "text": "\\(25x^2 - 20xy + 4y^2\\)",
         "imageUrl": ""
       },
       {
@@ -367,7 +367,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(25x^2 - 20xy + 4y^2\\)",
+        "text": "\\(25x^2 + 4y^2\\)",
         "imageUrl": ""
       },
       {
@@ -375,7 +375,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(25x^2 - 20xy + 4y^2\\)",
@@ -428,23 +428,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((2a + 3b)(4a^2 - 6ab + 3b^2)\\)",
     "options": [
       {
-        "text": "\\(8a^3 + 3b^3\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(8a^3 + 32a3b + 3b^3\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(8a^3 - 3b^3\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(2a^2 + 3b^2\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(8a^3 + 3b^3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8a^3 + 32a3b + 3b^3\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
     "solution": "\\((2a + 3b)(4a^2 - 6ab + 3b^2) = 8a^3 + 3b^3\\)",
@@ -476,7 +476,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((x + 1)^3\\)",
     "options": [
       {
-        "text": "\\(x^3 + 1\\)",
+        "text": "\\(x^3 + 3x^2 - 3x + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 + 6x^2 + 6x + 1\\)",
         "imageUrl": ""
       },
       {
@@ -484,15 +488,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 + 3x^2 - 3x + 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3 + 6x^2 + 6x + 1\\)",
+        "text": "\\(x^3 + 1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((x + 1)^3 = x^3 + 3x^2 + 3x + 1\\)",
@@ -532,11 +532,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 3x^2 + 3x - 1\\)",
+        "text": "\\(x^3 + 3x^2 - 3x + 1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 + 3x^2 - 3x + 1\\)",
+        "text": "\\(x^2 - 3x^2 + 3x - 1\\)",
         "imageUrl": ""
       }
     ],
@@ -624,10 +624,6 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((a^2 + \\frac{3}{a^2})^2\\)",
     "options": [
       {
-        "text": "\\(a^4  - 6 + \\frac{9}{a^4}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(a^4 + 6 + \\frac{9}{a^4}\\)",
         "imageUrl": ""
       },
@@ -638,9 +634,13 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(a^4  + \\frac{9}{a^4}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(a^4  - 6 + \\frac{9}{a^4}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((a^2 + \\frac{3}{a^2})^2 = a^4 + 6 + \\frac{9}{a^4}\\)",
@@ -672,6 +672,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((t + 4)^2\\)",
     "options": [
       {
+        "text": "\\(t^2 + 8t + 8\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(t^2 + 4t + 16\\)",
         "imageUrl": ""
       },
@@ -682,13 +686,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(t^2 + 16\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(t^2 + 8t + 8\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(t^2 + 8t + 16\\)",
@@ -715,11 +715,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((2a - 1)(2a + 1)\\)",
     "options": [
       {
-        "text": "\\(4a^2 + 1\\)",
+        "text": "\\(2a^2 - 1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(2a^2 - 1\\)",
+        "text": "\\(4a^2 + 1\\)",
         "imageUrl": ""
       },
       {
@@ -784,11 +784,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x - 1)(x - 2)(x - 3)\\)",
     "options": [
       {
-        "text": "\\(x^3 + -6\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3 - 6x^2 + 11x - 6\\)",
+        "text": "\\(x^3 + 6x^2 - 11x + 6\\)",
         "imageUrl": ""
       },
       {
@@ -796,11 +792,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 + 6x^2 - 11x + 6\\)",
+        "text": "\\(x^3 - 6x^2 + 11x - 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 + -6\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x - 1)(x - 2)(x - 3) = x^3 - 6x^2 + 11x - 6\\)",
@@ -858,11 +858,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((2k - 5)(4k^2 + 10k + 25)\\)",
     "options": [
       {
-        "text": "\\(2k^2 - 25\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(8k^3 + 125\\)",
+        "text": "\\(8k^3 - 32k5 - 125\\)",
         "imageUrl": ""
       },
       {
@@ -870,11 +866,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(8k^3 - 32k5 - 125\\)",
+        "text": "\\(8k^3 + 125\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2k^2 - 25\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "blanks": [],
     "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
     "solution": "\\((2k - 5)(4k^2 + 10k + 25) = 8k^3 - 125\\)",
@@ -932,6 +932,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((3a + \\frac{1}{3a})^2\\)",
     "options": [
       {
+        "text": "\\(9a^2  + \\frac{1}{9a^2}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(9a^2  - 2 + \\frac{1}{9a^2}\\)",
         "imageUrl": ""
       },
@@ -942,13 +946,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(9a^2 + 2 + \\frac{1}{9a^2}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(9a^2  + \\frac{1}{9a^2}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((3a + \\frac{1}{3a})^2 = 9a^2 + 2 + \\frac{1}{9a^2}\\)",
@@ -980,7 +980,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((5a + 2b)^2\\)",
     "options": [
       {
-        "text": "\\(25a^2 + 10ab + 4b^2\\)",
+        "text": "\\(25a^2 + 4b^2\\)",
         "imageUrl": ""
       },
       {
@@ -988,15 +988,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(25a^2 + 4b^2\\)",
+        "text": "\\(25a^2 + 20ab + 4b^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(25a^2 + 20ab + 4b^2\\)",
+        "text": "\\(25a^2 + 10ab + 4b^2\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(25a^2 + 20ab + 4b^2\\)",
@@ -1023,7 +1023,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 2y)(x^2 - 2xy + 2y^2)\\)",
     "options": [
       {
-        "text": "\\(x^3 + 3x2y + 2y^3\\)",
+        "text": "\\(x^3 - 2y^3\\)",
         "imageUrl": ""
       },
       {
@@ -1031,7 +1031,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 2y^3\\)",
+        "text": "\\(x^3 + 3x2y + 2y^3\\)",
         "imageUrl": ""
       },
       {
@@ -1071,11 +1071,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Simplify: \\((a + b + c)^2 - 2(ab + bc + ca)\\)",
     "options": [
       {
-        "text": "\\(a^2 + b^2 + c^2 + 4(ab+bc+ca)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^2 + b^2 + c^2\\)",
+        "text": "\\(0\\)",
         "imageUrl": ""
       },
       {
@@ -1083,11 +1079,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(0\\)",
+        "text": "\\(a^2 + b^2 + c^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^2 + b^2 + c^2 + 4(ab+bc+ca)\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\((a^2 + b^2 + c^2 + 2ab + 2bc + 2ca) - 2(ab + bc + ca) = a^2 + b^2 + c^2\\)",
@@ -1114,6 +1114,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((p^2 + \\frac{4}{p^2})^2\\)",
     "options": [
       {
+        "text": "\\(p^4  - 8 + \\frac{16}{p^4}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(p^4  + \\frac{16}{p^4}\\)",
         "imageUrl": ""
       },
@@ -1122,15 +1126,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(p^4  - 8 + \\frac{16}{p^4}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(p^4 + 8 + \\frac{16}{p^4}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((p^2 + \\frac{4}{p^2})^2 = p^4 + 8 + \\frac{16}{p^4}\\)",
@@ -1162,15 +1162,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((3t^2 - \\frac{1}{2t^2})^2\\)",
     "options": [
       {
+        "text": "\\(9t^4 - 3 + \\frac{1}{4t^4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9t^4 - 3 + \\frac{1}{4t^4}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(9t^4  + \\frac{1}{4t^4}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(9t^4 - 3 + \\frac{1}{4t^4}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(9t^4 - 3 + \\frac{1}{4t^4}\\)",
         "imageUrl": ""
       },
       {
@@ -1178,7 +1178,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((3t^2 - \\frac{1}{2t^2})^2 = 9t^4 - 3 + \\frac{1}{4t^4}\\)",
@@ -1210,6 +1210,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "\\((3t - 4)^2\\)",
     "options": [
       {
+        "text": "\\(9t^2 - 24t - 16\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(9t^2 - 12t + 16\\)",
         "imageUrl": ""
       },
@@ -1220,13 +1224,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(9t^2 + 16\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(9t^2 - 24t - 16\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Use $(a-b)^2 = a^2 - 2ab + b^2$.",
     "solution": "\\((3t)^2 - 2(3t)(4) + 4^2 = 9t^2 - 24t + 16\\)",
@@ -1253,11 +1253,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((2x - y)^3\\)",
     "options": [
       {
-        "text": "\\(8x^3 - y^3\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(8x^3 - 24x^2y + 12xy^2 - y^3\\)",
+        "text": "\\(8x^3 - 12x^2y + 6xy^2 - y^3\\)",
         "imageUrl": ""
       },
       {
@@ -1265,11 +1261,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(8x^3 - 12x^2y + 6xy^2 - y^3\\)",
+        "text": "\\(8x^3 - y^3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^3 - 24x^2y + 12xy^2 - y^3\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((2x - y)^3 = 8x^3 - 12x^2y + 6xy^2 - y^3\\)",
@@ -1353,20 +1353,20 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((a^2 + b)(a^4 - ba^2 + b^2)\\)",
     "options": [
       {
-        "imageUrl": "",
-        "text": "\\(a^6 - b^3\\)"
+        "text": "\\(a^6 - b^3\\)",
+        "imageUrl": ""
       },
       {
-        "imageUrl": "",
-        "text": "\\(a^6 + b^3\\)"
+        "text": "\\(a^6 + b^3\\)",
+        "imageUrl": ""
       },
       {
-        "imageUrl": "",
-        "text": "\\(a^6 + 3a^2b + b^3\\)"
+        "text": "\\(a^2 + b^2\\)",
+        "imageUrl": ""
       },
       {
-        "imageUrl": "",
-        "text": "\\(a^2 + b^2\\)"
+        "text": "\\(a^6 + 3a^2b + b^3\\)",
+        "imageUrl": ""
       }
     ],
     "answer": "1",
@@ -1401,6 +1401,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((m^2 + \\frac{2}{m^2})^2\\)",
     "options": [
       {
+        "text": "\\(m^4  + \\frac{4}{m^4}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(m^4 + 4 + \\frac{4}{m^4}\\)",
         "imageUrl": ""
       },
@@ -1411,13 +1415,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(m^4 + 4 + \\frac{4}{m^4}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(m^4  + \\frac{4}{m^4}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((m^2 + \\frac{2}{m^2})^2 = m^4 + 4 + \\frac{4}{m^4}\\)",
@@ -1453,19 +1453,19 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(x^4 - 2x^3 + 3x^2 - 2x + 1\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^4 - 2x^3 - x^2 - 2x + 1\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^4 + x^2 + 1\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(x^4 - 2x^3 + 3x^2 - 2x + 1\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((x^2 - x + 1)^2 = x^4 - 2x^3 + 3x^2 - 2x + 1\\)",
@@ -1575,10 +1575,6 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((m^2 + 3m + 9)(m^2 - 3m + 9)\\)",
     "options": [
       {
-        "text": "\\(m^4 - 9m^2 - 81\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(m^4 + 9m^2 + 81\\)",
         "imageUrl": ""
       },
@@ -1587,11 +1583,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(m^4 - 9m^2 - 81\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(m^4 + 9m^2 + 81\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Regroup terms to use the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\). For example, group as \\(((x^2 + 1) + x)((x^2 + 1) - x)\\).",
     "solution": "\\((m^2 + 3m + 9)(m^2 - 3m + 9) = m^4 + 9m^2 + 81\\)",
@@ -1631,15 +1631,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(81 - 36m + 4m^2\\)",
+        "text": "\\(81 - 18m + 4m^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(81 - 18m + 4m^2\\)",
+        "text": "\\(81 - 36m + 4m^2\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(81 - 36m + 4m^2\\)",
@@ -1714,11 +1714,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 1)(x - 1)(x + 5)\\)",
     "options": [
       {
-        "text": "\\(x^3 + -5\\)",
+        "text": "\\(x^3 + 5x^2 - x - 5\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 + 5x^2 - x - 5\\)",
+        "text": "\\(x^3 + -5\\)",
         "imageUrl": ""
       },
       {
@@ -1730,7 +1730,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x + 1)(x - 1)(x + 5) = x^3 + 5x^2 - x - 5\\)",
@@ -1788,23 +1788,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((4m - \\frac{1}{4m})^2\\)",
     "options": [
       {
+        "text": "\\(16m^2  + \\frac{1}{16m^2}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(16m^2 - 2 + \\frac{1}{16m^2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(16m^2  + \\frac{1}{16m^2}\\)",
+        "text": "\\(16m^2 - 2 + \\frac{1}{16m^2}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(16m^2  + 2 + \\frac{1}{16m^2}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(16m^2 - 2 + \\frac{1}{16m^2}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((4m - \\frac{1}{4m})^2 = 16m^2 - 2 + \\frac{1}{16m^2}\\)",
@@ -1836,6 +1836,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((t + \\frac{1}{t})^2\\)",
     "options": [
       {
+        "text": "\\(t^2 + \\frac{2}{t} + \\frac{1}{t^2}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(t^2 + \\frac{1}{t^2}\\)",
         "imageUrl": ""
       },
@@ -1846,13 +1850,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(t^2 + 2 + \\frac{1}{t^2}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(t^2 + \\frac{2}{t} + \\frac{1}{t^2}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\((t)^2 + 2(t)(\\frac{1}{t}) + (\\frac{1}{t})^2\\)\n2. \\(t^2 + 2 + \\frac{1}{t^2}\\)\n\nResult: **\\(t^2 + 2 + \\frac{1}{t^2}\\)**",
@@ -1884,11 +1884,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x^2 - 1)(x^4 + 1x^2 + 1)\\)",
     "options": [
       {
-        "text": "\\(x^6 - 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^6 + 1\\)",
+        "text": "\\(x^4 - 1\\)",
         "imageUrl": ""
       },
       {
@@ -1896,11 +1892,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^4 - 1\\)",
+        "text": "\\(x^6 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^6 - 1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
     "solution": "\\((x^2 - 1)(x^4 + 1x^2 + 1) = x^6 - 1\\)",
@@ -1932,7 +1932,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((4y - 5)^2\\)",
     "options": [
       {
-        "text": "\\(8y^2 - 40y + 25\\)",
+        "text": "\\(16y^2 - 20y + 25\\)",
         "imageUrl": ""
       },
       {
@@ -1940,7 +1940,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(16y^2 - 20y + 25\\)",
+        "text": "\\(8y^2 - 40y + 25\\)",
         "imageUrl": ""
       },
       {
@@ -1983,11 +1983,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a^2 + 4b^2 + c^2\\)",
+        "text": "\\(a^2 + 4b^2 + c^2 - 4ab - 4bc + 2ca\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(a^2 + 4b^2 + c^2 - 4ab - 4bc + 2ca\\)",
+        "text": "\\(a^2 + 4b^2 + c^2\\)",
         "imageUrl": ""
       }
     ],
@@ -2031,11 +2031,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(25x^2  + \\frac{1}{25x^2}\\)",
+        "text": "\\(25x^2 + 2 + \\frac{1}{25x^2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(25x^2 + 2 + \\frac{1}{25x^2}\\)",
+        "text": "\\(25x^2  + \\frac{1}{25x^2}\\)",
         "imageUrl": ""
       }
     ],
@@ -2071,23 +2071,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((x^2 + x + 1)^2\\)",
     "options": [
       {
-        "imageUrl": "",
-        "text": "\\(x^4  + 2x^3  + 3x^2+2x+1\\)"
+        "text": "\\(x^4 + 2x^3 + 3x^2 + 2x + 1\\)",
+        "imageUrl": ""
       },
       {
-        "imageUrl": "",
-        "text": "\\(x^4 - x^2 + 1 - 2x^3 + 2x - 2x^2\\)"
+        "text": "\\(x^4 - x^2 + 1 - 2x^3 + 2x - 2x^2\\)",
+        "imageUrl": ""
       },
       {
-        "imageUrl": "",
-        "text": "\\(x^4 + 2x^3 + 3x^2 + 2x + 1\\)"
+        "text": "\\(x^4 + x^2 + 1\\)",
+        "imageUrl": ""
       },
       {
-        "imageUrl": "",
-        "text": "\\(x^4 + x^2 + 1\\)"
+        "text": "\\(x^4  + 2x^3  + 3x^2+2x+1\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((x^2 + x + 1)^2 = x^4 + x^2 + 1 + 2x^3 + 2x + 2x^2\\)",
@@ -2119,11 +2119,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 1)(x - 3)(x + 5)\\)",
     "options": [
       {
-        "text": "\\(x^3 + -15\\)",
+        "text": "\\(x^2 + 3x^2 - 13x - 15\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 3x^2 - 13x - 15\\)",
+        "text": "\\(x^3 + -15\\)",
         "imageUrl": ""
       },
       {
@@ -2167,23 +2167,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((2z + 3)^2\\)",
     "options": [
       {
-        "text": "\\(4z^2 + 12z + 9\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(2z^2 + 12z + 9\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(4z^2 + 9\\)",
+        "text": "\\(4z^2 + 12z + 9\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(4z^2 + 6z + 9\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(4z^2 + 9\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(4z^2 + 12z + 9\\)",
@@ -2322,15 +2322,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(27m^3 + 8\\)",
+        "text": "\\(27m^3 + 33m2 + 8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(27m^3 + 33m2 + 8\\)",
+        "text": "\\(27m^3 + 8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
     "solution": "\\((3m + 2)(9m^2 - 6m + 4) = 27m^3 + 8\\)",
@@ -2388,7 +2388,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 1)(x + 2)(x + 4)\\)",
     "options": [
       {
-        "text": "\\(x^2 + 7x^2 + 14x + 8\\)",
+        "text": "\\(x^3 + 8\\)",
         "imageUrl": ""
       },
       {
@@ -2396,11 +2396,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 7x^2 - 14x - 8\\)",
+        "text": "\\(x^2 + 7x^2 + 14x + 8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 + 8\\)",
+        "text": "\\(x^3 - 7x^2 - 14x - 8\\)",
         "imageUrl": ""
       }
     ],
@@ -2436,23 +2436,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((x + 2y + 3z)^2\\)",
     "options": [
       {
+        "text": "\\(x^2 + 4y^2 + 9z^2\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^2 + 4y^2 + 9z^2 + 4xy + 12yz + 6zx\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 4y^2 + 9z^2\\)",
+        "text": "\\(x^2 + 4y^2 + 9z^2 + 4xy + 12yz + 6zx\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^2 - 4y^2 + 9z^2 - 4xy + 12yz - 6zx\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 + 4y^2 + 9z^2 + 4xy + 12yz + 6zx\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((x + 2y + 3z)^2 = x^2 + 4y^2 + 9z^2 + 4xy + 12yz + 6zx\\)",
@@ -2510,15 +2510,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((2a + 2b - c)^2\\)",
     "options": [
       {
+        "text": "\\(4a^2 - 4b^2 + c^2 - 8ab + 4bc - 4ca\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(4a^2 + 4b^2 + c^2 + 8ab - 4bc + 4ca\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(4a^2 + 4b^2 + c^2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4a^2 - 4b^2 + c^2 - 8ab + 4bc - 4ca\\)",
         "imageUrl": ""
       },
       {
@@ -2641,7 +2641,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((a + 3b)^3\\)",
     "options": [
       {
-        "text": "\\(a^3 + 3a^23b + 3a3b^2 + 3b^3\\)",
+        "text": "\\(a^3 + 3b^3\\)",
         "imageUrl": ""
       },
       {
@@ -2649,15 +2649,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a^3 + 6a^23b + 6a3b^2 + 3b^3\\)",
+        "text": "\\(a^3 + 3a^23b + 3a3b^2 + 3b^3\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(a^3 + 3b^3\\)",
+        "text": "\\(a^3 + 6a^23b + 6a3b^2 + 3b^3\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((a + 3b)^3 = a^3 + 3a^23b + 3a3b^2 + 3b^3\\)",
@@ -2697,15 +2697,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4y^2 - 49\\)",
+        "text": "\\(4y^2 + 49\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(4y^2 + 49\\)",
+        "text": "\\(4y^2 - 49\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "Difference of squares pattern: $(a-b)(a+b) = a^2 - b^2$.",
     "solution": "\\((2y)^2 - 7^2 = 4y^2 - 49\\)",
@@ -2758,7 +2758,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x - 2)(x - 3)(x + 4)\\)",
     "options": [
       {
-        "text": "\\(x^3 - x^2 - 14x + 24\\)",
+        "text": "\\(x^2 - x^2 - 14x + 24\\)",
         "imageUrl": ""
       },
       {
@@ -2766,7 +2766,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - x^2 - 14x + 24\\)",
+        "text": "\\(x^3 - x^2 - 14x + 24\\)",
         "imageUrl": ""
       },
       {
@@ -2774,7 +2774,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x - 2)(x - 3)(x + 4) = x^3 - x^2 - 14x + 24\\)",
@@ -2837,6 +2837,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((y^4 - \\frac{1}{y^4})^2\\)",
     "options": [
       {
+        "text": "\\(y^8  + \\frac{1}{y^8}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(y^8 - 2 + \\frac{1}{y^8}\\)",
         "imageUrl": ""
       },
@@ -2847,13 +2851,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(y^8 - 2 + \\frac{1}{y^8}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(y^8  + \\frac{1}{y^8}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((y^4 - \\frac{1}{y^4})^2 = y^8 - 2 + \\frac{1}{y^8}\\)",
@@ -2933,6 +2933,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((A - B)(A + B)\\)",
     "options": [
       {
+        "text": "\\(A^2 + B^2\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(A^2 + 2AB + B^2\\)",
         "imageUrl": ""
       },
@@ -2943,13 +2947,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(A^2 - 2AB + B^2\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(A^2 + B^2\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(A^2 - B^2\\)",
@@ -2976,11 +2976,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((x + y + z)^2\\)",
     "options": [
       {
-        "text": "\\(x^2 + y^2 + z^2 + 2xy + 2yz + 2zx\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 + y^2 + z^2 + 2xy + 2yz + 2zx\\)",
+        "text": "\\(x^2 + y^2 + z^2\\)",
         "imageUrl": ""
       },
       {
@@ -2988,11 +2984,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + y^2 + z^2\\)",
+        "text": "\\(x^2 + y^2 + z^2 + 2xy + 2yz + 2zx\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 + y^2 + z^2 + 2xy + 2yz + 2zx\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((x + y + z)^2 = x^2 + y^2 + z^2 + 2xy + 2yz + 2zx\\)",
@@ -3050,23 +3050,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 1)(x + 4)\\)",
     "options": [
       {
-        "text": "\\(2x + 5\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 + 5x + 5\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 4x + 1\\)",
+        "text": "\\(2x + 5\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^2 + 5x + 4\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 + 4x + 1\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(x^2 + 5x + 4\\)",
@@ -3093,6 +3093,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((2y + 1)(y + 3)\\)",
     "options": [
       {
+        "text": "\\(2y^2 + 7y + 3\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(3y^2 + 7y + 3\\)",
         "imageUrl": ""
       },
@@ -3103,13 +3107,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(2y^2 + 6y + 3\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(2y^2 + 7y + 3\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(2y^2 + 7y + 3\\)",
@@ -3136,11 +3136,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x - 2)^3\\)",
     "options": [
       {
-        "text": "\\(x^3 - 4x^2 + 8x - 8\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3 - 6x^2 + 12x - 8\\)",
+        "text": "\\(x^3 - 8\\)",
         "imageUrl": ""
       },
       {
@@ -3148,11 +3144,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 8\\)",
+        "text": "\\(x^3 - 6x^2 + 12x - 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 - 4x^2 + 8x - 8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\((x - 2)(x^2 - 4x + 4)\\)\n2. \\(x(x^2 - 4x + 4) - 2(x^2 - 4x + 4)\\)\n3. \\(x^3 - 4x^2 + 4x - 2x^2 + 8x - 8 = x^3 - 6x^2 + 12x - 8\\)",
@@ -3183,15 +3183,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(z^4 + z^2 + 25\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(z^4 - z^2 - 25\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^2 + z^2 + 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(z^4 + z^2 + 25\\)",
         "imageUrl": ""
       }
     ],
@@ -3306,23 +3306,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x^2 + \\frac{1}{x^2})^2\\)",
     "options": [
       {
+        "text": "\\(x^4 + 2 + \\frac{1}{x^4}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^4  - 2 + \\frac{1}{x^4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 2 + \\frac{1}{x^4}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^4  + \\frac{1}{x^4}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(x^4 + 2 + \\frac{1}{x^4}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^4 + 2 + \\frac{1}{x^4}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((x^2 + \\frac{1}{x^2})^2 = x^4 + 2 + \\frac{1}{x^4}\\)",
@@ -3354,11 +3354,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((y + \\frac{3}{y})(y - \\frac{3}{y})\\)",
     "options": [
       {
-        "text": "\\(y^2 - \\frac{9}{y^2}\\)",
+        "text": "\\(y^2 + \\frac{9}{y^2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(y^2 + \\frac{9}{y^2}\\)",
+        "text": "\\(y^2 - \\frac{9}{y^2}\\)",
         "imageUrl": ""
       },
       {
@@ -3370,7 +3370,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(y^2 - (\\frac{3}{y})^2 = y^2 - \\frac{9}{y^2}\\)",
@@ -3528,6 +3528,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((m + n - 3)^2\\)",
     "options": [
       {
+        "text": "\\(m^2 - n^2 + 9 - 2mn + 6n - 6m\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(m^2 + n^2 + 9 + 2mn - 6n - 6m\\)",
         "imageUrl": ""
       },
@@ -3538,13 +3542,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(m^2 + n^2 + 9\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(m^2 - n^2 + 9 - 2mn + 6n - 6m\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((m + n - 3)^2 = m^2 + n^2 + 9 + 2mn - 6n - 6m\\)",
@@ -3641,11 +3641,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-2x^3 - 4x^2\\)",
+        "text": "\\(-10x^3 - 20x^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-10x^3 - 20x^2\\)",
+        "text": "\\(-2x^3 - 4x^2\\)",
         "imageUrl": ""
       }
     ],
@@ -3840,23 +3840,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((t + 5)(t - 2)\\)",
     "options": [
       {
-        "text": "\\(t^2 + 3t - 10\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(t^2 + 3t + 10\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(t^2 - 3t - 10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(t^2 + 3t - 10\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(t^2 + 7t - 10\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(t^2 + 3t + 10\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(t^2 + 3t - 10\\)",
@@ -3883,11 +3883,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "\\((2p + 9)^2\\)",
     "options": [
       {
-        "text": "\\(4p^2 + 18p + 81\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4p^2 + 36p + 81\\)",
+        "text": "\\(4p^2 + 81\\)",
         "imageUrl": ""
       },
       {
@@ -3895,11 +3891,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4p^2 + 81\\)",
+        "text": "\\(4p^2 + 36p + 81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4p^2 + 18p + 81\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Square the first, twice the product, square the last.",
     "solution": "\\(4p^2 + 18p + 18p + 81 = 4p^2 + 36p + 81\\)",
@@ -3926,10 +3926,6 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 3)(x^2 - 3x + 9)\\)",
     "options": [
       {
-        "text": "\\(x^2 + 9\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^3 - 27\\)",
         "imageUrl": ""
       },
@@ -3938,11 +3934,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(x^2 + 9\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^3 + 3x3 + 27\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "blanks": [],
     "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
     "solution": "\\((x + 3)(x^2 - 3x + 9) = x^3 + 27\\)",
@@ -3974,11 +3974,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 3)(x - 3)(x + 2)\\)",
     "options": [
       {
-        "text": "\\(x^3 + -18\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3 + 2x^2 - 9x - 18\\)",
+        "text": "\\(x^2 + 2x^2 - 9x - 18\\)",
         "imageUrl": ""
       },
       {
@@ -3986,11 +3982,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 2x^2 - 9x - 18\\)",
+        "text": "\\(x^3 + 2x^2 - 9x - 18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 + -18\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x + 3)(x - 3)(x + 2) = x^3 + 2x^2 - 9x - 18\\)",
@@ -4022,7 +4022,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((a - b - c)^2\\)",
     "options": [
       {
-        "text": "\\(a^2 + b^2 + c^2 - 2ab - 2bc + 2ca\\)",
+        "text": "\\(a^2 + b^2 + c^2 - 2ab + 2bc - 2ca\\)",
         "imageUrl": ""
       },
       {
@@ -4030,7 +4030,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a^2 + b^2 + c^2 - 2ab + 2bc - 2ca\\)",
+        "text": "\\(a^2 + b^2 + c^2 - 2ab - 2bc + 2ca\\)",
         "imageUrl": ""
       },
       {
@@ -4038,7 +4038,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((a - b - c)^2 = a^2 + b^2 + c^2 - 2ab + 2bc - 2ca\\)",
@@ -4070,7 +4070,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x^2 + 5x + 25)(x^2 - 5x + 25)\\)",
     "options": [
       {
-        "text": "\\(x^4 + 25x^2 + 625\\)",
+        "text": "\\(x^2 + 25x^2 + 625\\)",
         "imageUrl": ""
       },
       {
@@ -4078,7 +4078,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 25x^2 + 625\\)",
+        "text": "\\(x^4 + 25x^2 + 625\\)",
         "imageUrl": ""
       },
       {
@@ -4086,7 +4086,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Regroup terms to use the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\). For example, group as \\(((x^2 + 1) + x)((x^2 + 1) - x)\\).",
     "solution": "\\((x^2 + 5x + 25)(x^2 - 5x + 25) = x^4 + 25x^2 + 625\\)",
@@ -4149,7 +4149,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x - \\frac{2}{x})^2\\)",
     "options": [
       {
-        "text": "\\(x^2 - 2 + \\frac{4}{x^2}\\)",
+        "text": "\\(x^2 - 4x + \\frac{4}{x^2}\\)",
         "imageUrl": ""
       },
       {
@@ -4157,15 +4157,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 4 + \\frac{4}{x^2}\\)",
+        "text": "\\(x^2 - 2 + \\frac{4}{x^2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 4x + \\frac{4}{x^2}\\)",
+        "text": "\\(x^2 - 4 + \\frac{4}{x^2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(x^2 - 2(x)(\\frac{2}{x}) + (\\frac{2}{x})^2 = x^2 - 4 + \\frac{4}{x^2}\\)",
@@ -4201,11 +4201,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(16j^2 + 12j + 9\\)",
+        "text": "\\(8j^2 + 24j + 9\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(8j^2 + 24j + 9\\)",
+        "text": "\\(16j^2 + 12j + 9\\)",
         "imageUrl": ""
       },
       {
@@ -4240,6 +4240,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "\\((5c + 4)(5c - 4)\\)",
     "options": [
       {
+        "text": "\\(25c^2 + 16\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(10c^2 - 16\\)",
         "imageUrl": ""
       },
@@ -4250,13 +4254,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(25c^2 - 16\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(25c^2 + 16\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "Difference of squares.",
     "solution": "\\((5c)^2 - 4^2 = 25c^2 - 16\\)",
@@ -4283,7 +4283,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((y - 1)(y^2 + 1y + 1)\\)",
     "options": [
       {
-        "text": "\\(y^2 - 1\\)",
+        "text": "\\(y^3 - 1\\)",
         "imageUrl": ""
       },
       {
@@ -4291,7 +4291,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y^3 - 1\\)",
+        "text": "\\(y^2 - 1\\)",
         "imageUrl": ""
       },
       {
@@ -4299,7 +4299,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
     "solution": "\\((y - 1)(y^2 + 1y + 1) = y^3 - 1\\)",
@@ -4339,11 +4339,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 12x^2 + 4\\)",
+        "text": "\\(x^4 - 12x^2 + 4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^4 - 12x^2 + 4\\)",
+        "text": "\\(x^2 - 12x^2 + 4\\)",
         "imageUrl": ""
       }
     ],
@@ -4387,15 +4387,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(2n^2 - 3n - 20\\)",
+        "text": "\\(2n^2 + 3n - 20\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(2n^2 + 3n - 20\\)",
+        "text": "\\(2n^2 - 3n - 20\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "Use FOIL method.",
     "solution": "\\(2n^2 - 8n + 5n - 20 = 2n^2 - 3n - 20\\)",
@@ -4430,11 +4430,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 6x^2 + 11x + 6\\)",
+        "text": "\\(x^3 + 6\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 + 6\\)",
+        "text": "\\(x^2 + 6x^2 + 11x + 6\\)",
         "imageUrl": ""
       }
     ],
@@ -4470,11 +4470,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((3a + 1)(a + 2)\\)",
     "options": [
       {
-        "text": "\\(3a^2 + 7a + 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4a^2 + 7a + 2\\)",
+        "text": "\\(3a^2 + 7a + 2\\)",
         "imageUrl": ""
       },
       {
@@ -4482,11 +4478,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(3a^2 + 7a + 2\\)",
+        "text": "\\(4a^2 + 7a + 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3a^2 + 7a + 1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(3a^2 + 7a + 2\\)",
@@ -4517,19 +4517,19 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(4x^2 - 12x + 9\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(4x^2 + 9\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(4x^2 - 6x + 9\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(4x^2 - 12x + 9\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(4x^2 - 12x + 9\\)",
@@ -4556,19 +4556,19 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((a^2 + ab + b^2)(a^2 - ab + b^2)\\)",
     "options": [
       {
-        "text": "\\(a^4 - a^2b^2 - b^4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^4 + a^2b^2 + b^4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^4 + a^2b^2 + b^4\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 + a^2b^2 + b^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^4 + a^2b^2 + b^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^4 + a^2b^2 + b^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^4 - a^2b^2 - b^4\\)",
         "imageUrl": ""
       }
     ],
@@ -4604,7 +4604,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((2x + 1)^3\\)",
     "options": [
       {
-        "text": "\\(8x^3 + 24x^2 + 12x + 1\\)",
+        "text": "\\(8x^3 + 12x^2 - 6x + 1\\)",
         "imageUrl": ""
       },
       {
@@ -4612,11 +4612,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(8x^3 + 12x^2 - 6x + 1\\)",
+        "text": "\\(8x^3 + 1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(8x^3 + 1\\)",
+        "text": "\\(8x^3 + 24x^2 + 12x + 1\\)",
         "imageUrl": ""
       }
     ],
@@ -4652,23 +4652,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x^2 + 6x + 36)(x^2 - 6x + 36)\\)",
     "options": [
       {
-        "text": "\\(x^4 - 36x^2 - 1296\\)",
+        "text": "\\(x^4 + 36x^2 + 1296\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^4 + 36x^2 + 1296\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 36x^2 - 1296\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^2 + 36x^2 + 1296\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(x^4 + 36x^2 + 1296\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Regroup terms to use the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\). For example, group as \\(((x^2 + 1) + x)((x^2 + 1) - x)\\).",
     "solution": "\\((x^2 + 6x + 36)(x^2 - 6x + 36) = x^4 + 36x^2 + 1296\\)",
@@ -4756,15 +4756,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(a^2 + 16\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(a^3 - 64\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(a^3 + 3a4 + 64\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^2 + 16\\)",
         "imageUrl": ""
       }
     ],
@@ -4826,7 +4826,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((3x + 1)^2\\)",
     "options": [
       {
-        "text": "\\(9x^2 + 6x + 1\\)",
+        "text": "\\(6x^2 + 6x + 1\\)",
         "imageUrl": ""
       },
       {
@@ -4834,15 +4834,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(6x^2 + 6x + 1\\)",
+        "text": "\\(9x^2 + 3x + 1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(9x^2 + 3x + 1\\)",
+        "text": "\\(9x^2 + 6x + 1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(9x^2 + 6x + 1\\)",
@@ -4952,23 +4952,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((3p + 4q)(3p - 4q)\\)",
     "options": [
       {
-        "text": "\\(9p^2 - 24pq + 16q^2\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(9p^2 + 16q^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(9p^2 - 16q^2\\)",
+        "text": "\\(9p^2 - 24pq + 16q^2\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(3p^2 - 4q^2\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(9p^2 - 16q^2\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(9p^2 - 16q^2\\)",
@@ -4995,11 +4995,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((u^2 + uv + v^2)(u^2 - uv + v^2)\\)",
     "options": [
       {
-        "text": "\\(u^4 - u^2v^2 - v^4\\)",
+        "text": "\\(u^4 + u^2v^2 + v^4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(u^4 + u^2v^2 + v^4\\)",
+        "text": "\\(u^4 - u^2v^2 - v^4\\)",
         "imageUrl": ""
       },
       {
@@ -5011,7 +5011,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Regroup terms to use the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\). For example, group as \\(((x^2 + 1) + x)((x^2 + 1) - x)\\).",
     "solution": "\\((u^2 + uv + v^2)(u^2 - uv + v^2) = u^4 + u^2v^2 + v^4\\)",
@@ -5043,11 +5043,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((10 - 7k)^2\\)",
     "options": [
       {
-        "text": "\\(100 - 140k + 49k^2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(100 - 70k + 49k^2\\)",
+        "text": "\\(100 + 49k^2\\)",
         "imageUrl": ""
       },
       {
@@ -5055,11 +5051,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(100 + 49k^2\\)",
+        "text": "\\(100 - 70k + 49k^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100 - 140k + 49k^2\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(100 - 140k + 49k^2\\)",
@@ -5112,6 +5112,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((x^2 + 2)^3\\)",
     "options": [
       {
+        "text": "\\(x^6 + 12x^4 + 24x^ + 8\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^6 + 8\\)",
         "imageUrl": ""
       },
@@ -5122,13 +5126,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(x^6 + 6x^4 - 12x^ + 8\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(x^6 + 12x^4 + 24x^ + 8\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((x^2 + 2)^3 = x^6 + 6x^4 + 12x^ + 8\\)",
@@ -5160,23 +5160,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 1)(x + 3)(x - 2)\\)",
     "options": [
       {
-        "text": "\\(x^2 + 2x^2 - 5x - 6\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^3 + 2x^2 - 5x - 6\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 2x^2 + 5x + 6\\)",
+        "text": "\\(x^2 + 2x^2 - 5x - 6\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^3 + -6\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 - 2x^2 + 5x + 6\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x + 1)(x + 3)(x - 2) = x^3 + 2x^2 - 5x - 6\\)",
@@ -5212,11 +5212,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 8\\)",
+        "text": "\\(x^2 - 4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 4\\)",
+        "text": "\\(x^3 - 8\\)",
         "imageUrl": ""
       },
       {
@@ -5224,7 +5224,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
     "solution": "\\((x - 2)(x^2 + 2x + 4) = x^3 - 8\\)",
@@ -5304,23 +5304,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 2)(x + 2)(x - 2)\\)",
     "options": [
       {
-        "text": "\\(x^3 + 2x^2 - 4x - 8\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 + 2x^2 - 4x - 8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 2x^2 + 4x + 8\\)",
+        "text": "\\(x^3 + 2x^2 - 4x - 8\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^3 + -8\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 - 2x^2 + 4x + 8\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x + 2)(x + 2)(x - 2) = x^3 + 2x^2 - 4x - 8\\)",
@@ -5352,23 +5352,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\(10 - 2(y + 4)\\)",
     "options": [
       {
-        "text": "\\(6 - 2y\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(2y + 2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(18 - 2y\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(2 - 2y\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(6 - 2y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18 - 2y\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(2 - 2y\\)",
@@ -5395,11 +5395,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((p - q)^2\\)",
     "options": [
       {
-        "text": "p^2+2pq+q^2",
+        "text": "$p^2-2pq+q^2$",
         "imageUrl": ""
       },
       {
-        "text": "$p^2-2pq+q^2$",
+        "text": "p^2+2pq+q^2",
         "imageUrl": ""
       },
       {
@@ -5411,7 +5411,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(p^2 - 2pq + q^2\\)",
@@ -5486,11 +5486,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((3u - 2v)^3\\)",
     "options": [
       {
-        "text": "\\(27u^3 - 27u^22v + 9u2v^2 - 2v^3\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(27u^3 - 54u^22v + 18u2v^2 - 2v^3\\)",
+        "text": "\\(27u^3 - 27u^22v - 9u2v^2 - 2v^3\\)",
         "imageUrl": ""
       },
       {
@@ -5498,11 +5494,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(27u^3 - 27u^22v - 9u2v^2 - 2v^3\\)",
+        "text": "\\(27u^3 - 54u^22v + 18u2v^2 - 2v^3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27u^3 - 27u^22v + 9u2v^2 - 2v^3\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((3u - 2v)^3 = 27u^3 - 27u^22v + 9u2v^2 - 2v^3\\)",
@@ -5534,19 +5534,19 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((2x - \\frac{3}{2x})^2\\)",
     "options": [
       {
-        "text": "\\(4x^2  + 6 + \\frac{9}{4x^2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4x^2 - 6 + \\frac{9}{4x^2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(4x^2  + \\frac{9}{4x^2}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(4x^2 - 6 + \\frac{9}{4x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 - 6 + \\frac{9}{4x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2  + 6 + \\frac{9}{4x^2}\\)",
         "imageUrl": ""
       }
     ],
@@ -5582,6 +5582,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x^2 + 2x + 2)(x^2 - 2x + 2)\\)",
     "options": [
       {
+        "text": "\\(x^4 - 4\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^4 + 4\\)",
         "imageUrl": ""
       },
@@ -5592,13 +5596,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(x^4 + 4\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(x^4 - 4\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Regroup terms to use the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\). For example, group as \\(((x^2 + 1) + x)((x^2 + 1) - x)\\).",
     "solution": "\\((x^2 + 2x + 2)(x^2 - 2x + 2) = x^4 + 4\\)",
@@ -5664,15 +5664,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a^2 + 9b^2 + 4 - 6ab - 12b + 4a\\)",
+        "text": "\\(a^2 + 9b^2 + 4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(a^2 + 9b^2 + 4\\)",
+        "text": "\\(a^2 + 9b^2 + 4 - 6ab - 12b + 4a\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((a - 3b + 2)^2 = a^2 + 9b^2 + 4 - 6ab - 12b + 4a\\)",
@@ -5704,7 +5704,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((2u - 5v)(2u + 5v)\\)",
     "options": [
       {
-        "text": "\\(4u^2 + 25v^2\\)",
+        "text": "\\(4u^2 - 25v^2\\)",
         "imageUrl": ""
       },
       {
@@ -5712,7 +5712,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4u^2 - 25v^2\\)",
+        "text": "\\(4u^2 + 25v^2\\)",
         "imageUrl": ""
       },
       {
@@ -5720,7 +5720,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(4u^2 - 25v^2\\)",
@@ -5747,7 +5747,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x - 1)(x + 2)(x + 4)\\)",
     "options": [
       {
-        "text": "\\(x^3 + 5x^2 + 2x - 8\\)",
+        "text": "\\(x^3 - 5x^2 - 2x + 8\\)",
         "imageUrl": ""
       },
       {
@@ -5755,15 +5755,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 5x^2 - 2x + 8\\)",
+        "text": "\\(x^2 + 5x^2 + 2x - 8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 5x^2 + 2x - 8\\)",
+        "text": "\\(x^3 + 5x^2 + 2x - 8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x - 1)(x + 2)(x + 4) = x^3 + 5x^2 + 2x - 8\\)",
@@ -5795,11 +5795,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 1)(x + 2)(x - 3)\\)",
     "options": [
       {
-        "text": "\\(x^2 - 7x - 6\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3 + -6\\)",
+        "text": "\\(x^3 + 7x + 6\\)",
         "imageUrl": ""
       },
       {
@@ -5807,11 +5803,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 + 7x + 6\\)",
+        "text": "\\(x^3 + -6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 - 7x - 6\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x + 1)(x + 2)(x - 3) = x^3 - 7x - 6\\)",
@@ -5953,23 +5953,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((p^2 + 2p + 5)(p^2 - 2p + 5)\\)",
     "options": [
       {
+        "text": "\\(p^4 + 6p^2 + 25\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^2 + 6p^2 + 25\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(p^4 + 6p^2 + 25\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(p^4 + 6p^2 + 25\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(p^4 - 6p^2 - 25\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(p^4 + 6p^2 + 25\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Regroup terms to use the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\). For example, group as \\(((x^2 + 1) + x)((x^2 + 1) - x)\\).",
     "solution": "\\((p^2 + 2p + 5)(p^2 - 2p + 5) = p^4 + 6p^2 + 25\\)",
@@ -6027,11 +6027,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((x + 2)^3\\)",
     "options": [
       {
-        "text": "\\(x^3 + 6x^2 - 12x + 8\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3 + 6x^2 + 12x + 8\\)",
+        "text": "\\(x^3 + 12x^2 + 24x + 8\\)",
         "imageUrl": ""
       },
       {
@@ -6039,11 +6035,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 + 12x^2 + 24x + 8\\)",
+        "text": "\\(x^3 + 6x^2 + 12x + 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 + 6x^2 - 12x + 8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((x + 2)^3 = x^3 + 6x^2 + 12x + 8\\)",
@@ -6101,11 +6101,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((3k - 2)(k + 4)\\)",
     "options": [
       {
-        "text": "\\(3k^2 + 12k - 8\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(3k^2 + 10k + 8\\)",
+        "text": "\\(3k^2 - 10k - 8\\)",
         "imageUrl": ""
       },
       {
@@ -6113,11 +6109,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(3k^2 - 10k - 8\\)",
+        "text": "\\(3k^2 + 10k + 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3k^2 + 12k - 8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(3k^2 + 10k - 8\\)",
@@ -6170,10 +6170,6 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x^2 - \\frac{5}{x^2})^2\\)",
     "options": [
       {
-        "text": "\\(x^4  + 10 + \\frac{25}{x^4}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^4 - 10 + \\frac{25}{x^4}\\)",
         "imageUrl": ""
       },
@@ -6184,9 +6180,13 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(x^4 - 10 + \\frac{25}{x^4}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4  + 10 + \\frac{25}{x^4}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((x^2 - \\frac{5}{x^2})^2 = x^4 - 10 + \\frac{25}{x^4}\\)",
@@ -6218,23 +6218,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((x - 3)^3\\)",
     "options": [
       {
-        "text": "\\(x^3 - 9x^2 - 27x - 27\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^3 - 9x^2 + 27x - 27\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 18x^2 + 54x - 27\\)",
+        "text": "\\(x^3 - 9x^2 - 27x - 27\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^3 - 27\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 - 18x^2 + 54x - 27\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((x - 3)^3 = x^3 - 9x^2 + 27x - 27\\)",
@@ -6266,6 +6266,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 2)(x + 3)(x - 5)\\)",
     "options": [
       {
+        "text": "\\(x^2 - 19x - 30\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^3 + -30\\)",
         "imageUrl": ""
       },
@@ -6276,13 +6280,9 @@ export const Y11_CH1A_QUESTIONS = [
       {
         "text": "\\(x^3 + 19x + 30\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 - 19x - 30\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x + 2)(x + 3)(x - 5) = x^3 - 19x - 30\\)",
@@ -6314,7 +6314,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((6 + 7n)(6 - 7n)\\)",
     "options": [
       {
-        "text": "\\(49n^2 - 36\\)",
+        "text": "\\(36 - 49n^2\\)",
         "imageUrl": ""
       },
       {
@@ -6322,7 +6322,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(36 - 49n^2\\)",
+        "text": "\\(49n^2 - 36\\)",
         "imageUrl": ""
       },
       {
@@ -6330,7 +6330,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(36 - 49n^2\\)",
@@ -6361,15 +6361,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "11-2g+g^2",
+        "imageUrl": ""
+      },
+      {
         "text": "11+2g+g^2",
         "imageUrl": ""
       },
       {
         "text": "121+22g+g^2",
-        "imageUrl": ""
-      },
-      {
-        "text": "11-2g+g^2",
         "imageUrl": ""
       }
     ],
@@ -6426,11 +6426,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((5t + 2)^3\\)",
     "options": [
       {
-        "text": "\\(125t^3 + 150t^2 + 60t + 8\\)",
+        "text": "\\(125t^3 + 300t^2 + 120t + 8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(125t^3 + 8\\)",
+        "text": "\\(125t^3 + 150t^2 + 60t + 8\\)",
         "imageUrl": ""
       },
       {
@@ -6438,11 +6438,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(125t^3 + 300t^2 + 120t + 8\\)",
+        "text": "\\(125t^3 + 8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((5t + 2)^3 = 125t^3 + 150t^2 + 60t + 8\\)",
@@ -6474,11 +6474,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((3x - 2)^3\\)",
     "options": [
       {
-        "text": "\\(27x^3 - 54x^2 + 36x - 8\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(27x^3 - 108x^2 + 72x - 8\\)",
+        "text": "\\(27x^3 - 54x^2 - 36x - 8\\)",
         "imageUrl": ""
       },
       {
@@ -6486,11 +6482,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(27x^3 - 54x^2 - 36x - 8\\)",
+        "text": "\\(27x^3 - 108x^2 + 72x - 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27x^3 - 54x^2 + 36x - 8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((3x - 2)^3 = 27x^3 - 54x^2 + 36x - 8\\)",
@@ -6548,7 +6548,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((2x - 1)(4x^2 + 2x + 1)\\)",
     "options": [
       {
-        "text": "\\(8x^3 + 1\\)",
+        "text": "\\(8x^3 - 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^3 - 32x1 - 1\\)",
         "imageUrl": ""
       },
       {
@@ -6556,15 +6560,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(8x^3 - 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(8x^3 - 32x1 - 1\\)",
+        "text": "\\(8x^3 + 1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
     "solution": "\\((2x - 1)(4x^2 + 2x + 1) = 8x^3 - 1\\)",
@@ -6596,7 +6596,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((a - 5)^3\\)",
     "options": [
       {
-        "text": "\\(a^3 - 15a^2 + 75a - 125\\)",
+        "text": "\\(a^3 - 15a^2 - 75a - 125\\)",
         "imageUrl": ""
       },
       {
@@ -6604,7 +6604,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a^3 - 15a^2 - 75a - 125\\)",
+        "text": "\\(a^3 - 15a^2 + 75a - 125\\)",
         "imageUrl": ""
       },
       {
@@ -6612,7 +6612,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
     "solution": "\\((a - 5)^3 = a^3 - 15a^2 + 75a - 125\\)",
@@ -6674,11 +6674,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(9x^2 - 4y^2 + z^2 - 12xy + 4yz - 6zx\\)",
+        "text": "\\(9x^2 + 4y^2 + z^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(9x^2 + 4y^2 + z^2\\)",
+        "text": "\\(9x^2 - 4y^2 + z^2 - 12xy + 4yz - 6zx\\)",
         "imageUrl": ""
       },
       {
@@ -6718,6 +6718,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x^2 + x + 1)(x^2 - x + 1)\\)",
     "options": [
       {
+        "text": "\\(x^2 + x^2 + 1\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^4 + x^2 + 1\\)",
         "imageUrl": ""
       },
@@ -6726,15 +6730,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + x^2 + 1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^4 + x^2 + 1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Regroup terms to use the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\). For example, group as \\(((x^2 + 1) + x)((x^2 + 1) - x)\\).",
     "solution": "\\((x^2 + x + 1)(x^2 - x + 1) = x^4 + x^2 + 1\\)",
@@ -6766,7 +6766,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((p - q)(p^2 + qp + q^2)\\)",
     "options": [
       {
-        "text": "\\(p^2 - q^2\\)",
+        "text": "\\(p^3 - 3pq - q^3\\)",
         "imageUrl": ""
       },
       {
@@ -6774,7 +6774,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(p^3 - 3pq - q^3\\)",
+        "text": "\\(p^2 - q^2\\)",
         "imageUrl": ""
       },
       {
@@ -6814,7 +6814,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((x + y - z)^2\\)",
     "options": [
       {
-        "text": "\\(x^2 - y^2 + z^2 - 2xy + 2yz - 2zx\\)",
+        "text": "\\(x^2 + y^2 + z^2 + 2xy - 2yz + 2zx\\)",
         "imageUrl": ""
       },
       {
@@ -6822,11 +6822,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + y^2 + z^2 + 2xy - 2yz + 2zx\\)",
+        "text": "\\(x^2 + y^2 + z^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + y^2 + z^2\\)",
+        "text": "\\(x^2 - y^2 + z^2 - 2xy + 2yz - 2zx\\)",
         "imageUrl": ""
       }
     ],
@@ -6888,23 +6888,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((t^2 + 4t + 16)(t^2 - 4t + 16)\\)",
     "options": [
       {
+        "text": "\\(t^4 + 16t^2 + 256\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^2 + 16t^2 + 256\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(t^4 + 16t^2 + 256\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(t^4 + 16t^2 + 256\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(t^4 - 16t^2 - 256\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(t^4 + 16t^2 + 256\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Regroup terms to use the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\). For example, group as \\(((x^2 + 1) + x)((x^2 + 1) - x)\\).",
     "solution": "\\((t^2 + 4t + 16)(t^2 - 4t + 16) = t^4 + 16t^2 + 256\\)",
@@ -6936,10 +6936,6 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((8a + 3b)^2\\)",
     "options": [
       {
-        "text": "\\(64a^2 + 48ab + 9b^2\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(64a^2 + 24ab + 9b^2\\)",
         "imageUrl": ""
       },
@@ -6948,11 +6944,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(64a^2 + 48ab + 9b^2\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(64a^2 + 9b^2\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(64a^2 + 48ab + 9b^2\\)",
@@ -6979,11 +6979,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "\\((4u - 5)^2\\)",
     "options": [
       {
-        "text": "\\(16u^2 - 40u + 25\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(16u^2 + 25\\)",
+        "text": "\\(16u^2 - 40u - 25\\)",
         "imageUrl": ""
       },
       {
@@ -6991,11 +6987,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(16u^2 - 40u - 25\\)",
+        "text": "\\(16u^2 + 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16u^2 - 40u + 25\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Square the first, twice the product, square the last.",
     "solution": "\\(16u^2 - 20u - 20u + 25 = 16u^2 - 40u + 25\\)",
@@ -7078,11 +7078,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(27u^3 - 33uv - v^3\\)",
+        "text": "\\(3u^2 - v^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(3u^2 - v^2\\)",
+        "text": "\\(27u^3 - 33uv - v^3\\)",
         "imageUrl": ""
       }
     ],
@@ -7223,11 +7223,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x - 3)(x + 1)\\)",
     "options": [
       {
-        "text": "\\(x^2 - 3\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 - 2x - 3\\)",
+        "text": "\\(x^2 + 2x - 3\\)",
         "imageUrl": ""
       },
       {
@@ -7235,11 +7231,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 2x - 3\\)",
+        "text": "\\(x^2 - 2x - 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 - 3\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(x^2 - 2x - 3\\)",
@@ -7318,7 +7318,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((y + 3)(y + 2)\\)",
     "options": [
       {
-        "text": "\\(y^2 + 5y + 6\\)",
+        "text": "\\(y^2 + 5y + 5\\)",
         "imageUrl": ""
       },
       {
@@ -7326,15 +7326,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y^2 + 6\\)",
+        "text": "\\(y^2 + 5y + 6\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(y^2 + 5y + 5\\)",
+        "text": "\\(y^2 + 6\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(y^2 + 5y + 6\\)",
@@ -7361,11 +7361,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((2a^2 + \\frac{3}{a^2})^2\\)",
     "options": [
       {
-        "text": "\\(4a^4 + 12 + \\frac{9}{a^4}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4a^4 + 12 + \\frac{9}{a^4}\\)",
+        "text": "\\(4a^4  + \\frac{9}{a^4}\\)",
         "imageUrl": ""
       },
       {
@@ -7373,11 +7369,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4a^4  + \\frac{9}{a^4}\\)",
+        "text": "\\(4a^4 + 12 + \\frac{9}{a^4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4a^4 + 12 + \\frac{9}{a^4}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
     "solution": "\\((2a^2 + \\frac{3}{a^2})^2 = 4a^4 + 12 + \\frac{9}{a^4}\\)",
@@ -7487,19 +7487,19 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((2x + y + z)^2\\)",
     "options": [
       {
-        "text": "\\(4x^2 - y^2 + z^2 - 4xy + 2yz - 4zx\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4x^2 + y^2 + z^2 + 4xy + 2yz + 4zx\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4x^2 + y^2 + z^2 + 4xy + 2yz + 4zx\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(4x^2 + y^2 + z^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 + y^2 + z^2 + 4xy + 2yz + 4zx\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 + y^2 + z^2 + 4xy + 2yz + 4zx\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 - y^2 + z^2 - 4xy + 2yz - 4zx\\)",
         "imageUrl": ""
       }
     ],
@@ -7535,11 +7535,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((a^2 + 2ab + 2b^2)(a^2 - 2ab + 2b^2)\\)",
     "options": [
       {
-        "text": "\\(a^4 + 4b^4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^4 + 4b^4\\)",
+        "text": "\\(x^2 + 4b^4\\)",
         "imageUrl": ""
       },
       {
@@ -7547,11 +7543,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 4b^4\\)",
+        "text": "\\(a^4 + 4b^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^4 + 4b^4\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Regroup terms to use the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\). For example, group as \\(((x^2 + 1) + x)((x^2 + 1) - x)\\).",
     "solution": "\\((a^2 + 2ab + 2b^2)(a^2 - 2ab + 2b^2) = a^4 + 4b^4\\)",
@@ -7583,6 +7583,10 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((2u - v + 4w)^2\\)",
     "options": [
       {
+        "text": "\\(4u^2 + v^2 + 16w^2 - 4uv + 8vw + 16wu\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(4u^2 + v^2 + 16w^2 - 4uv - 8vw + 16wu\\)",
         "imageUrl": ""
       },
@@ -7591,15 +7595,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4u^2 + v^2 + 16w^2 - 4uv + 8vw + 16wu\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(4u^2 + v^2 + 16w^2\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((2u - v + 4w)^2 = 4u^2 + v^2 + 16w^2 - 4uv - 8vw + 16wu\\)",
@@ -7722,7 +7722,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "\\((4x - 3)(3x - 2)\\)",
     "options": [
       {
-        "text": "\\(12x^2 - 17x - 6\\)",
+        "text": "\\(12x^2 + 17x + 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7x^2 - 17x + 6\\)",
         "imageUrl": ""
       },
       {
@@ -7730,15 +7734,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(12x^2 + 17x + 6\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(7x^2 - 17x + 6\\)",
+        "text": "\\(12x^2 - 17x - 6\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Use FOIL.",
     "solution": "\\(12x^2 - 8x - 9x + 6 = 12x^2 - 17x + 6\\)",
@@ -7765,11 +7765,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "\\((2r + 5)^2\\)",
     "options": [
       {
-        "text": "\\(4r^2 + 10r + 25\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4r^2 + 20r + 25\\)",
+        "text": "\\(4r^2 + 25\\)",
         "imageUrl": ""
       },
       {
@@ -7777,11 +7773,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4r^2 + 25\\)",
+        "text": "\\(4r^2 + 20r + 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4r^2 + 10r + 25\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Use $(a+b)^2 = a^2 + 2ab + b^2$.",
     "solution": "\\((2r)^2 + 2(2r)(5) + 5^2 = 4r^2 + 20r + 25\\)",
@@ -7808,23 +7808,23 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\((x + 2)(x - 2)(x + 3)\\)",
     "options": [
       {
-        "text": "\\(x^3 + -12\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^3 - 3x^2 + 4x + 12\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3 + 3x^2 - 4x - 12\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x^2 + 3x^2 - 4x - 12\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 + -12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 + 3x^2 - 4x - 12\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "First expand the product of the first two brackets, then multiply the resulting quadratic by the third bracket.",
     "solution": "\\((x + 2)(x - 2)(x + 3) = x^3 + 3x^2 - 4x - 12\\)",
@@ -7882,7 +7882,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((A - B)^2\\)",
     "options": [
       {
-        "text": "\\(A^2 - 2AB - B^2\\)",
+        "text": "\\(A^2 - 2AB + B^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(A^2 - B^2\\)",
         "imageUrl": ""
       },
       {
@@ -7890,15 +7894,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(A^2 - 2AB + B^2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(A^2 - B^2\\)",
+        "text": "\\(A^2 - 2AB - B^2\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(A^2 - 2AB + B^2\\)",

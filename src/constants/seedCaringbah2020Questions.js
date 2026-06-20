@@ -831,18 +831,18 @@ export const CARINGBAH_2020_QUESTIONS = [
     source: 'Caringbah 2020 Trial Q37',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'At time $t$ years after it was purchased the value $\\$V$ of a car is given by $V = 25\\,000e^{-0.5t}$.\n\n(a) Find the loss in value of the car during the third year.\n\n(b) Find the year in which the car is losing value at a rate of $\\$100$ per year.',
+    q: 'At time $t$ years after it was purchased the value $V$ of a car is given by $V = 25\\,000e^{-0.5t}$.\n\n(a) Find the loss in value of the car during the third year.\n\n(b) Find the year in which the car is losing value at a rate of $100 per year.',
     a: '(a) $\\approx \\$3620$\n\n(b) During the $10$th year',
     opts: [],
     h: 'For (a), compute $V(2) - V(3)$. For (b), set $|dV/dt| = 100$ and solve for $t$.',
     s: '(a) Loss $= V(2) - V(3) = 25000e^{-1} - 25000e^{-1.5} = 25000(e^{-1}-e^{-1.5}) \\approx \\$3620$.\n\n(b) $\\frac{dV}{dt} = -12500e^{-0.5t}$. Set $12500e^{-0.5t} = 100 \\Rightarrow e^{-0.5t} = \\frac{1}{125} \\Rightarrow -0.5t = -\\ln 125 \\Rightarrow t = 2\\ln 125 \\approx 9.66$ years, so during the 10th year.',
     solutionSteps: [
       { explanation: 'For (a): the loss during the third year is the value at the start of year 3 ($t=2$) minus the value at the end ($t=3$).', workingOut: '\\text{Loss} = V(2) - V(3) = 25000e^{-1} - 25000e^{-1.5}' },
-      { explanation: 'Factor and evaluate numerically.', workingOut: '= 25000(e^{-1} - e^{-1.5}) \\approx 25000(0.3679 - 0.2231) \\approx \\$3620' },
+      { explanation: 'Factor and evaluate numerically.', workingOut: '= 25000(e^{-1} - e^{-1.5}) \\approx 25000(0.3679 - 0.2231) \\approx $3620' },
       { explanation: 'For (b): differentiate $V$ with respect to $t$ to find the rate of change.', workingOut: '\\dfrac{dV}{dt} = -12500e^{-0.5t}' },
       { explanation: 'The rate of loss is $\\left|\\frac{dV}{dt}\\right| = 100$. Set up the equation.', workingOut: '12500e^{-0.5t} = 100 \\implies e^{-0.5t} = \\dfrac{1}{125}' },
       { explanation: 'Take the natural log of both sides and solve for $t$.', workingOut: '-0.5t = -\\ln 125 \\implies t = 2\\ln 125 \\approx 9.66 \\text{ years}' },
-      { explanation: 'Since $t \\approx 9.66$ years (between years 9 and 10), the car loses value at $\\$100$ per year during the 10th year.', workingOut: '\\text{During the 10th year}' }
+      { explanation: 'Since $t \\approx 9.66$ years (between years 9 and 10), the car loses value at $100 per year during the 10th year.', workingOut: '\\text{During the 10th year}' }
     ]
   },
 

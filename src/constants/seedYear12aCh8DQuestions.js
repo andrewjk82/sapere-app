@@ -557,11 +557,11 @@ export const Y12A_CH8D_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Evaluate the formula for \\( A_{20} \\) to the nearest dollar",
-            "workingOut": "A_{20} = \\frac{4300 \\times (1.075^{20} - 1)}{0.075} \\approx 186213.91 \\implies \\$186214"
+            "workingOut": "A_{20} = \\frac{4300 \\times (1.075^{20} - 1)}{0.075} \\approx 186213.91 \\implies $186214"
           },
           {
             "explanation": "Calculate the total contribution amount",
-            "workingOut": "\\text{Contributions} = 20 \\times 4000 = \\$80000"
+            "workingOut": "\\text{Contributions} = 20 \\times 4000 = $80000"
           }
         ]
       }
@@ -715,7 +715,7 @@ export const Y12A_CH8D_QUESTIONS = [
           },
           {
             "explanation": "Evaluate",
-            "workingOut": "M \\approx 21741.664 \\implies \\$21741.66"
+            "workingOut": "M \\approx 21741.664 \\implies $21741.66"
           }
         ]
       },

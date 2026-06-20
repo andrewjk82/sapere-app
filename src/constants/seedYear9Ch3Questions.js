@@ -1049,15 +1049,15 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "easy",
-    "q": "Evaluate $58\\%$ of $\\$20$, correct to the nearest cent where necessary. (Include $ sign)",
-    "a": "\\$11.60",
+    "q": "Evaluate $58\\%$ of $20, correct to the nearest cent where necessary. (Include $ sign)",
+    "a": "$11.60",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
     "s": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the percentage (as a decimal) by the amount.",
-        "workingOut": "0.58 \\times 20 = \\$11.60"
+        "workingOut": "0.58 \\times 20 = $11.60"
       }
     ]
   },
@@ -1067,15 +1067,15 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "easy",
-    "q": "Evaluate $28.4\\%$ of $\\$850$, correct to the nearest cent where necessary. (Include $ sign)",
-    "a": "\\$241.40",
+    "q": "Evaluate $28.4\\%$ of $850, correct to the nearest cent where necessary. (Include $ sign)",
+    "a": "$241.40",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
     "s": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the percentage (as a decimal) by the amount.",
-        "workingOut": "0.284 \\times 850 = \\$241.40"
+        "workingOut": "0.284 \\times 850 = $241.40"
       }
     ]
   },
@@ -1085,15 +1085,15 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "easy",
-    "q": "Evaluate $4.5\\%$ of $\\$2200$, correct to the nearest cent where necessary. (Include $ sign)",
-    "a": "\\$99.00",
+    "q": "Evaluate $4.5\\%$ of $2200, correct to the nearest cent where necessary. (Include $ sign)",
+    "a": "$99.00",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
     "s": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the percentage (as a decimal) by the amount.",
-        "workingOut": "0.045 \\times 2200 = \\$99.00"
+        "workingOut": "0.045 \\times 2200 = $99.00"
       }
     ]
   },
@@ -1103,15 +1103,15 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "easy",
-    "q": "Evaluate $120\\%$ of $\\$1450$, correct to the nearest cent where necessary. (Include $ sign)",
-    "a": "\\$1740.00",
+    "q": "Evaluate $120\\%$ of $1450, correct to the nearest cent where necessary. (Include $ sign)",
+    "a": "$1740.00",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
     "s": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the percentage (as a decimal) by the amount.",
-        "workingOut": "1.2 \\times 1450 = \\$1740.00"
+        "workingOut": "1.2 \\times 1450 = $1740.00"
       }
     ]
   },
@@ -1121,15 +1121,15 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "easy",
-    "q": "Evaluate $0.35\\%$ of $\\$600$, correct to the nearest cent where necessary. (Include $ sign)",
-    "a": "\\$2.10",
+    "q": "Evaluate $0.35\\%$ of $600, correct to the nearest cent where necessary. (Include $ sign)",
+    "a": "$2.10",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
     "s": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the percentage (as a decimal) by the amount.",
-        "workingOut": "0.0035 \\times 600 = \\$2.10"
+        "workingOut": "0.0035 \\times 600 = $2.10"
       }
     ]
   },
@@ -1139,15 +1139,15 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "easy",
-    "q": "Evaluate $5\\frac{1}{2}\\%$ of $\\$400$, correct to the nearest cent where necessary. (Include $ sign)",
-    "a": "\\$22.00",
+    "q": "Evaluate $5\\frac{1}{2}\\%$ of $400, correct to the nearest cent where necessary. (Include $ sign)",
+    "a": "$22.00",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
     "s": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the percentage (as a decimal) by the amount.",
-        "workingOut": "0.055 \\times 400 = \\$22.00"
+        "workingOut": "0.055 \\times 400 = $22.00"
       }
     ]
   },
@@ -1157,15 +1157,15 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "easy",
-    "q": "Evaluate $8\\frac{1}{4}\\%$ of $\\$1200$, correct to the nearest cent where necessary. (Include $ sign)",
-    "a": "\\$99.00",
+    "q": "Evaluate $8\\frac{1}{4}\\%$ of $1200, correct to the nearest cent where necessary. (Include $ sign)",
+    "a": "$99.00",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
     "s": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the percentage (as a decimal) by the amount.",
-        "workingOut": "0.0825 \\times 1200 = \\$99.00"
+        "workingOut": "0.0825 \\times 1200 = $99.00"
       }
     ]
   },
@@ -1175,15 +1175,15 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "easy",
-    "q": "Evaluate $\\frac{1}{5}\\%$ of $\\$950$, correct to the nearest cent where necessary. (Include $ sign)",
-    "a": "\\$1.90",
+    "q": "Evaluate $\\frac{1}{5}\\%$ of $950, correct to the nearest cent where necessary. (Include $ sign)",
+    "a": "$1.90",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
     "s": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the percentage (as a decimal) by the amount.",
-        "workingOut": "0.002 \\times 950 = \\$1.90"
+        "workingOut": "0.002 \\times 950 = $1.90"
       }
     ]
   },
@@ -1193,15 +1193,15 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "easy",
-    "q": "Evaluate $8.75\\%$ of $\\$1800$, correct to the nearest cent where necessary. (Include $ sign)",
-    "a": "\\$157.50",
+    "q": "Evaluate $8.75\\%$ of $1800, correct to the nearest cent where necessary. (Include $ sign)",
+    "a": "$157.50",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
     "s": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the percentage (as a decimal) by the amount.",
-        "workingOut": "0.0875 \\times 1800 = \\$157.50"
+        "workingOut": "0.0875 \\times 1800 = $157.50"
       }
     ]
   },
@@ -1229,7 +1229,7 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "Find what percentage the first quantity is of the second quantity, correct to 1 decimal place: \\$6, \\$300",
+    "q": "Find what percentage the first quantity is of the second quantity, correct to 1 decimal place: $6, $300",
     "a": "2.0\\%",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
@@ -1319,7 +1319,7 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 85 cents, \\$4.00",
+    "q": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 85 cents, $4.00",
     "a": "21.25\\%",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",
@@ -1589,7 +1589,7 @@ export const Y9_CH3A_QUESTIONS = [
     "t": "Review of percentages",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "Find what percentage the first quantity is of the second quantity, correct to 4 decimal places where necessary: 4.8 cents, \\$2500",
+    "q": "Find what percentage the first quantity is of the second quantity, correct to 4 decimal places where necessary: 4.8 cents, $2500",
     "a": "0.0019\\%",
     "opts": [],
     "h": "Convert between percentages, fractions, and decimals.",

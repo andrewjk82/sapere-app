@@ -467,7 +467,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Tom has $\\$a$ dollars, Jerry has $\\$b$ dollars and Spike has $\\$c$ dollars. How much do they have in total?",
+    "question": "Tom has $a$ dollars, Jerry has $b$ dollars and Spike has $c$ dollars. How much do they have in total?",
     "a": "a + b + c",
     "t": "Chapter review",
     "hint": "Add all the amounts together.",
@@ -3417,7 +3417,7 @@ export const Y7_CH3H_QUESTIONS = [
           },
           {
             "explanation": "Now list the last digits of each result: $0, 1, 4, 9, 6, 5, 6, 9, 4, 1$. Remove the duplicates to get the set of possible last digits.",
-            "workingOut": "\\text{Possible last digits of } p^2: \\{0, 1, 4, 5, 6, 9\\}"
+            "workingOut": "\\text{Possible last digits of } p^2: {0, 1, 4, 5, 6, 9}"
           }
         ]
       },
@@ -3437,7 +3437,7 @@ export const Y7_CH3H_QUESTIONS = [
           },
           {
             "explanation": "Remove duplicates to get the set of possible last digits.",
-            "workingOut": "\\text{Possible last digits of } p^2+1: \\{1, 5, 7\\}"
+            "workingOut": "\\text{Possible last digits of } p^2+1: {1, 5, 7}"
           }
         ]
       },
@@ -3449,11 +3449,11 @@ export const Y7_CH3H_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "An even number ends in $0, 2, 4, 6,$ or $8$. A number divisible by $5$ ends in $0$ or $5$.",
-            "workingOut": "\\text{Even last digits: } \\{0,2,4,6,8\\} \\quad \\text{Divisible by 5 last digits: } \\{0,5\\}"
+            "workingOut": "\\text{Even last digits: } {0,2,4,6,8} \\quad \\text{Divisible by 5 last digits: } {0,5}"
           },
           {
             "explanation": "For $q$ to be BOTH even AND divisible by $5$, its last digit must appear in both lists. The only digit that is in both sets is $0$.",
-            "workingOut": "\\{0,2,4,6,8\\} \\cap \\{0,5\\} = \\{0\\}"
+            "workingOut": "{0,2,4,6,8} \\cap {0,5} = {0}"
           },
           {
             "explanation": "Therefore $q$ must be divisible by $10$, and the only possible last digit is $0$.",

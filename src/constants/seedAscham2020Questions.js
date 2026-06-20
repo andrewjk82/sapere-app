@@ -404,7 +404,7 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'multiple_choice',
     difficulty: 'medium',
-    q: 'Percy hopes to have $\\\\$25\\\\,000$ in 4 years to buy a car. He opens an account today which pays interest of 4% p.a., compounded every 6 months. Using the compound interest table, which expression calculates the minimum single sum that Percy needs to invest today to ensure he reaches his savings goal?\n\nNote: 4% p.a. compounded every 6 months means 2% per period, and 4 years = 8 periods. The compounded value of $\\$1$ at 2% over 8 periods is 1.1717.',
+    q: 'Percy hopes to have $\\\\$25\\\\,000$ in 4 years to buy a car. He opens an account today which pays interest of 4% p.a., compounded every 6 months. Using the compound interest table, which expression calculates the minimum single sum that Percy needs to invest today to ensure he reaches his savings goal?\n\nNote: 4% p.a. compounded every 6 months means 2% per period, and 4 years = 8 periods. The compounded value of $1 at 2% over 8 periods is 1.1717.',
     a: '$25\\,000 \\div 1.1717$',
     opts: [
       '$25000 \\times 1.3686$',
@@ -413,11 +413,11 @@ export const ASCHAM_2020_QUESTIONS = [
       '$25000 \\div 1.1717$'
     ],
     h: 'To find the present value (amount to invest now), divide the future value by the compound interest factor.',
-    s: 'The rate per period is $4\\% \\div 2 = 2\\%$ per period. The number of periods is $4 \\times 2 = 8$. From the table, the compounded value of $\\$1$ at 2% over 8 periods is 1.1717. So Percy needs to invest $\\$25\\,000 \\div 1.1717$ today.',
+    s: 'The rate per period is $4\\% \\div 2 = 2\\%$ per period. The number of periods is $4 \\times 2 = 8$. From the table, the compounded value of $1 at 2% over 8 periods is 1.1717. So Percy needs to invest $\\$25\\,000 \\div 1.1717$ today.',
     solutionSteps: [
       { explanation: 'Find the interest rate per compounding period.', workingOut: '\\text{Rate per period} = \\frac{4\\%}{2} = 2\\% \\text{ per period}' },
       { explanation: 'Find the number of compounding periods.', workingOut: 'n = 4 \\text{ years} \\times 2 = 8 \\text{ periods}' },
-      { explanation: 'From the table, read the compounded value of $\\$1$ at 2% for 8 periods.', workingOut: '\\text{Factor} = 1.1717' },
+      { explanation: 'From the table, read the compounded value of $1 at 2% for 8 periods.', workingOut: '\\text{Factor} = 1.1717' },
       { explanation: 'To find the present value $PV$, use $FV = PV \\times \\text{factor}$.', workingOut: '25000 = PV \\times 1.1717' },
       { explanation: 'Solve for $PV$.', workingOut: 'PV = \\frac{25000}{1.1717}' }
     ]
@@ -432,7 +432,7 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'multiple_choice',
     difficulty: 'medium',
-    q: 'Mia wants to have $\\$18\\,000$ in 3 years time. Her bank account pays 6% p.a. interest, compounded quarterly. If the compounded value of $\\$1$ at 1.5% over 12 periods is 1.1956, which expression gives the amount she must invest today?',
+    q: 'Mia wants to have $18,000 in 3 years time. Her bank account pays 6% p.a. interest, compounded quarterly. If the compounded value of $1 at 1.5% over 12 periods is 1.1956, which expression gives the amount she must invest today?',
     a: '$18000 \\div 1.1956$',
     opts: [
       '$18000 \\times 1.1956$',
@@ -795,7 +795,7 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'easy',
-    q: 'Ali decides to turn her crochet hobby into a small not-for-profit business. She spends $\\$60$ on equipment and estimates that it costs her $\\$16$ to manufacture each crochet doll. She plans to sell each doll for $\\$20$.',
+    q: 'Ali decides to turn her crochet hobby into a small not-for-profit business. She spends $60 on equipment and estimates that it costs her $16 to manufacture each crochet doll. She plans to sell each doll for $20.',
     a: 'See parts (a) and (b)',
     opts: [],
     h: 'Write cost and income equations, then set them equal to find break-even.',
@@ -814,8 +814,8 @@ export const ASCHAM_2020_QUESTIONS = [
         answer: '$C = 60 + 16x$ and $I = 20x$',
         hint: 'Cost = fixed cost + cost per item × number of items. Income = price per item × number sold.',
         solutionSteps: [
-          { explanation: 'Write the cost equation: fixed cost of $\\$60$ plus $\\$16$ per doll.', workingOut: 'C = 60 + 16x' },
-          { explanation: 'Write the income equation: $\\$20$ per doll sold.', workingOut: 'I = 20x' }
+          { explanation: 'Write the cost equation: fixed cost of $60 plus $16 per doll.', workingOut: 'C = 60 + 16x' },
+          { explanation: 'Write the income equation: $20 per doll sold.', workingOut: 'I = 20x' }
         ]
       },
       {
@@ -843,7 +843,7 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'easy',
-    q: 'Ben starts a small business making candles. He spends $\\$120$ on equipment and it costs $\\$8$ to make each candle. He sells each candle for $\\$14$.\n\n(a) Write equations for cost $C$ and income $I$ for $x$ candles.\n\n(b) Find the number of candles Ben must sell to break even.',
+    q: 'Ben starts a small business making candles. He spends $120 on equipment and it costs $8 to make each candle. He sells each candle for $14.\n\n(a) Write equations for cost $C$ and income $I$ for $x$ candles.\n\n(b) Find the number of candles Ben must sell to break even.',
     a: '$C = 120 + 8x$,  $I = 14x$;  break-even at $x = 20$ candles',
     opts: [],
     h: 'Set $C = I$ to find the break-even point.',
@@ -1479,11 +1479,11 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Kelly has been offered two part-time jobs at local furniture shops. At shop $X$ she receives a retainer of $\\$300$ per week plus $\\$200$ for each lounge suite sold. At shop $Y$ she receives $\\$450$ per week plus $\\$100$ per suite sold.\n\nPast weekly sales follow this probability distribution:\n\n| Suites sold | 0 | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|---|\n| Probability | 0.1 | 0.2 | 0.5 | 0.15 | 0.04 | 0.01 |',
+    q: 'Kelly has been offered two part-time jobs at local furniture shops. At shop $X$ she receives a retainer of $300 per week plus $200 for each lounge suite sold. At shop $Y$ she receives $450 per week plus $100 per suite sold.\n\nPast weekly sales follow this probability distribution:\n\n| Suites sold | 0 | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|---|\n| Probability | 0.1 | 0.2 | 0.5 | 0.15 | 0.04 | 0.01 |',
     a: 'See parts (a), (b), (c)',
     opts: [],
     h: 'Use $E(X) = \\sum xP(x)$ and $\\text{Var}(X) = E(X^2) - [E(X)]^2$.',
-    s: '$E(X) \\approx 2$, $\\text{Var}(X) \\approx 0.98$. Shop $X$ pays more ($\\$700$ vs $\\$650$).',
+    s: '$E(X) \\approx 2$, $\\text{Var}(X) \\approx 0.98$. Shop $X$ pays more ($700 vs $650).',
     solutionSteps: [
       { explanation: 'Calculate $E(X)$.', workingOut: 'E(X) = 1.86 \\approx 2' },
       { explanation: 'Calculate $\\text{Var}(X)$.', workingOut: '\\text{Var}(X) = 4.44 - (1.86)^2 \\approx 0.98' }
@@ -1517,12 +1517,12 @@ export const ASCHAM_2020_QUESTIONS = [
         type: 'short_answer',
         difficulty: 'medium',
         question: '(c) Which furniture shop job should Kelly take? Justify your answer by referring to the expected weekly pay based on your result from part (a).',
-        answer: 'Kelly should take Shop $X$. Expected pay: Shop $X$ = $\\$700$, Shop $Y$ = $\\$650$.',
+        answer: 'Kelly should take Shop $X$. Expected pay: Shop $X$ = $700, Shop $Y$ = $650.',
         hint: 'Calculate expected pay at each shop: retainer + commission × $E(X)$.',
         solutionSteps: [
           { explanation: 'Shop $X$ expected pay.', workingOut: '300 + 200 \\times 2 = \\$700' },
           { explanation: 'Shop $Y$ expected pay.', workingOut: '450 + 100 \\times 2 = \\$650' },
-          { explanation: 'Conclusion.', workingOut: '\\$700 > \\$650 \\Rightarrow \\text{Take Shop } X' }
+          { explanation: 'Conclusion.', workingOut: '$700 > $650 \\Rightarrow \\text{Take Shop } X' }
         ]
       }
     ]
@@ -1546,7 +1546,7 @@ export const ASCHAM_2020_QUESTIONS = [
       { explanation: 'Calculate $E(X)$.', workingOut: 'E(X) = 1(0.3) + 2(0.4) + 3(0.1) = 0.3 + 0.8 + 0.3 = 1.4' },
       { explanation: 'Calculate $E(X^2)$.', workingOut: 'E(X^2) = 1(0.3) + 4(0.4) + 9(0.1) = 0.3 + 1.6 + 0.9 = 2.8' },
       { explanation: 'Calculate variance.', workingOut: '\\text{Var}(X) = 2.8 - 1.4^2 = 2.8 - 1.96 = 0.84' },
-      { explanation: 'Expected salary.', workingOut: 'E(500 + 80X) = 500 + 80 \\times 1.4 = 500 + 112 = \\$612' }
+      { explanation: 'Expected salary.', workingOut: 'E(500 + 80X) = 500 + 80 \\times 1.4 = 500 + 112 = $612' }
     ]
   },
 

@@ -373,7 +373,7 @@ export const Y12A_CH5J_QUESTIONS = [
     solutionSteps: [
       { explanation: "Split at x=1.", workingOut: "A=\\int_{1/2}^1(\\frac{1}{x}-1)dx+\\int_1^2(1-\\frac{1}{x})dx" },
       { explanation: "Evaluate each.", workingOut: "=[\\log_e x-x]_{1/2}^1+[x-\\log_e x]_1^2=(-1+\\log_e 2)+(2-\\log_e 2-1)... =(-1+\\log_e 2)+(1-\\log_e 2)=0... " },
-      { explanation: "Correct evaluation.", workingOut: "[\\log_e x-x]_{1/2}^1=(0-1)-(-\\log_e 2-\\frac{1}{2})=\\log_e 2-\\frac{1}{2}\\\\[x-\\log_e x]_1^2=(2-\\log_e 2)-1=1-\\log_e 2\\\\\\text{Total}=(\\log_e 2-\\frac{1}{2})+(1-\\log_e 2)=\\frac{1}{2}" }
+      { explanation: "Correct evaluation.", workingOut: "[\\log_e x-x]_{1/2}^1=(0-1)-(-\\log_e 2-\\frac{1}{2})=\\log_e 2-\\frac{1}{2}\\\\[x-\\log_e x]_1^2=(2-\\log_e 2)-1=1-\\log_e 2\\\\\text{Total}=(\\log_e 2-\\frac{1}{2})+(1-\\log_e 2)=\\frac{1}{2}" }
     ], graphData: null
   },
   {

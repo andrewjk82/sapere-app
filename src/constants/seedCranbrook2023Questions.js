@@ -182,7 +182,7 @@ export const CRANBROOK_2023_QUESTIONS = [
       'Domain: $(1, \\infty)$, Range $(0, \\infty)$'
     ],
     h: 'Find the domain and range of each composite separately, then take the values common to both.',
-    s: '$f(g(x)) = \\sqrt{\\dfrac{1}{x-1}}$ needs $\\dfrac{1}{x-1} > 0$, i.e. $x > 1$: domain $(1,\\infty)$, range $(0,\\infty)$.\n\n$g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}$ needs $x \\geq 0$ and $\\sqrt{x} \\neq 1$: domain $[0,\\infty)\\setminus\\{1\\}$, range $(-\\infty,-1] \\cup (0,\\infty)$.\n\nThe domain common to both is $(1, \\infty)$ and the range common to both is $(0, \\infty)$.',
+    s: '$f(g(x)) = \\sqrt{\\dfrac{1}{x-1}}$ needs $\\dfrac{1}{x-1} > 0$, i.e. $x > 1$: domain $(1,\\infty)$, range $(0,\\infty)$.\n\n$g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}$ needs $x \\geq 0$ and $\\sqrt{x} \\neq 1$: domain $[0,\\infty)\\setminus{1}$, range $(-\\infty,-1] \\cup (0,\\infty)$.\n\nThe domain common to both is $(1, \\infty)$ and the range common to both is $(0, \\infty)$.',
     solutionSteps: [
       {
         explanation: 'Form the first composite $f(g(x)) = \\sqrt{\\dfrac{1}{x-1}}$. The square root requires its argument to be non-negative, and the fraction cannot be zero, so we need $\\dfrac{1}{x-1} > 0$, which happens exactly when $x - 1 > 0$.',
@@ -194,14 +194,14 @@ export const CRANBROOK_2023_QUESTIONS = [
       },
       {
         explanation: 'Form the second composite $g(f(x)) = \\dfrac{1}{\\sqrt{x} - 1}$. It requires $x \\geq 0$ for the square root and $\\sqrt{x} \\neq 1$ (i.e. $x \\neq 1$) so the denominator is non-zero.',
-        workingOut: 'g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}, \\quad \\text{domain: } [0,\\infty)\\setminus\\{1\\}'
+        workingOut: 'g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}, \\quad \\text{domain: } [0,\\infty)\\setminus{1}'
       },
       {
-        explanation: 'Find the range of $g(f(x))$: $\\sqrt{x} - 1$ covers $[-1, \\infty)\\setminus\\{0\\}$, so its reciprocal covers $(-\\infty, -1] \\cup (0, \\infty)$.',
+        explanation: 'Find the range of $g(f(x))$: $\\sqrt{x} - 1$ covers $[-1, \\infty)\\setminus{0}$, so its reciprocal covers $(-\\infty, -1] \\cup (0, \\infty)$.',
         workingOut: '\\text{range of } g(f(x)) = (-\\infty, -1] \\cup (0, \\infty)'
       },
       {
-        explanation: 'Intersect the two domains and the two ranges to find what is valid for both composites: $(1,\\infty) \\cap [0,\\infty)\\setminus\\{1\\} = (1,\\infty)$ and $(0,\\infty) \\cap \\bigl((-\\infty,-1] \\cup (0,\\infty)\\bigr) = (0,\\infty)$.',
+        explanation: 'Intersect the two domains and the two ranges to find what is valid for both composites: $(1,\\infty) \\cap [0,\\infty)\\setminus{1} = (1,\\infty)$ and $(0,\\infty) \\cap \\bigl((-\\infty,-1] \\cup (0,\\infty)\\bigr) = (0,\\infty)$.',
         workingOut: '\\text{Domain: } (1, \\infty), \\quad \\text{Range: } (0, \\infty) \\implies \\text{(D)}'
       }
     ]
@@ -694,7 +694,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     source: 'Cranbrook 2023 Trial Q17(a)',
     type: 'short_answer',
     difficulty: 'easy',
-    q: 'Jason buys a ticket in a lottery, where the first prize is \\$10,000. Tickets cost \\$20 each, and the prize distribution is: $P(X=0) = 0.75$, $P(X=20) = m$, $P(X=100) = 0.03$, $P(X=500) = 0.002$, $P(X=5000) = 0.001$, $P(X=10\\,000) = 0.0001$. Find the value of $m$.',
+    q: 'Jason buys a ticket in a lottery, where the first prize is $10,000. Tickets cost $20 each, and the prize distribution is: $P(X=0) = 0.75$, $P(X=20) = m$, $P(X=100) = 0.03$, $P(X=500) = 0.002$, $P(X=5000) = 0.001$, $P(X=10\\,000) = 0.0001$. Find the value of $m$.',
     a: '$m = 0.2169$',
     opts: [],
     h: 'The probabilities in a discrete distribution must sum to 1.',
@@ -723,7 +723,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     source: 'Cranbrook 2023 Trial Q17(b)',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Using the lottery distribution with $m = 0.2169$ (prizes 0, 20, 100, 500, 5000, 10000 with probabilities 0.75, 0.2169, 0.03, 0.002, 0.001, 0.0001) and a ticket price of \\$20, show that Jason is expected to lose \\$5.66 every time he plays this lottery.',
+    q: 'Using the lottery distribution with $m = 0.2169$ (prizes 0, 20, 100, 500, 5000, 10000 with probabilities 0.75, 0.2169, 0.03, 0.002, 0.001, 0.0001) and a ticket price of $20, show that Jason is expected to lose $5.66 every time he plays this lottery.',
     a: '$E(X) = 14.338$, so expected loss $= 20 - 14.338 = 5.662 \\approx \\$5.66$',
     opts: [],
     h: 'Compute $E(X) = \\sum x \\cdot P(X=x)$, then compare with the \\$20 ticket price.',
@@ -742,12 +742,12 @@ export const CRANBROOK_2023_QUESTIONS = [
         workingOut: '= 0 + 4.338 + 3 + 1 + 5 + 1 = 14.338'
       },
       {
-        explanation: 'The expected winnings are \\$14.338 per game, but each ticket costs \\$20. The expected loss is the difference between the cost and the expected return.',
+        explanation: 'The expected winnings are $14.338 per game, but each ticket costs $20. The expected loss is the difference between the cost and the expected return.',
         workingOut: '\\text{Expected loss} = 20 - 14.338 = 5.662'
       },
       {
-        explanation: 'Round to the nearest cent: Jason expects to lose \\$5.66 per play, as required.',
-        workingOut: '\\approx \\$5.66 \\quad \\blacksquare'
+        explanation: 'Round to the nearest cent: Jason expects to lose $5.66 per play, as required.',
+        workingOut: '\\approx $5.66 \\quad \\blacksquare'
       }
     ]
   },
@@ -970,7 +970,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     source: 'Cranbrook 2023 Trial Q21',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Ivy has plotted the income she received each week for the past five weeks: $(1, 200), (2, 100), (3, 300), (4, 300), (5, 400)$, where the first coordinate is the week number $n$ and the second is the amount in dollars. Over the same five weeks, Ivy\'s expenses, which were originally \\$200 per week, increase by \\$20 each week. Write the equation of the least-squares regression line for Ivy\'s income, and determine the equation of Ivy\'s expenses.',
+    q: 'Ivy has plotted the income she received each week for the past five weeks: $(1, 200), (2, 100), (3, 300), (4, 300), (5, 400)$, where the first coordinate is the week number $n$ and the second is the amount in dollars. Over the same five weeks, Ivy\'s expenses, which were originally $200 per week, increase by $20 each week. Write the equation of the least-squares regression line for Ivy\'s income, and determine the equation of Ivy\'s expenses.',
     a: 'Income $= 60n + 80$; Expenses $= 20n + 180$',
     opts: [],
     h: 'For the regression line compute $b = \\dfrac{\\sum xy - n\\bar{x}\\bar{y}}{\\sum x^2 - n\\bar{x}^2}$ and $a = \\bar{y} - b\\bar{x}$. The expenses form an arithmetic (linear) pattern.',
@@ -1001,7 +1001,7 @@ export const CRANBROOK_2023_QUESTIONS = [
         workingOut: '\\text{Income} = 60n + 80, \\quad \\text{Expenses} = 20n + 180'
       },
       {
-        explanation: 'Draw both lines neatly over Ivy\'s five income data points $(1,200), (2,100), (3,300), (4,300), (5,400)$. The income regression line (blue) passes through the mean point $(3, 260)$; the expenses line (green) starts at $(1, 200)$ and rises $\\$20$ each week.',
+        explanation: 'Draw both lines neatly over Ivy\'s five income data points $(1,200), (2,100), (3,300), (4,300), (5,400)$. The income regression line (blue) passes through the mean point $(3, 260)$; the expenses line (green) starts at $(1, 200)$ and rises $20 each week.',
         workingOut: '',
         graphData: {
           jsxGraph: {

@@ -110,7 +110,7 @@ export const Y8_CH19A_QUESTIONS = [
     "id": "y8-19a-q3",
     "type": "short_answer",
     "difficulty": "easy",
-    "question": "The mean price of bags of apples at different supermarkets was $\$6.40$. The sum of the data was $\$96.00$. How many bags of apples were included in the survey?",
+    "question": "The mean price of bags of apples at different supermarkets was $6.40. The sum of the data was $96.00. How many bags of apples were included in the survey?",
     "a": "15",
     "solution": "1. The formula relating the mean, sum, and count $n$ is:\n   $$\\text{Mean} = \\frac{\\text{Sum}}{n}$$\n2. Substitute the given values into the formula:\n   $$6.40 = \\frac{96.00}{n}$$\n3. Solve for $n$:\n   $$n = \\frac{96.00}{6.40} = 15$$",
     "t": "Comparing means and medians",

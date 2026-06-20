@@ -78,7 +78,7 @@ export const Y10_CH15_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List all numbers from 1 to 12 and count how many are multiples of three.",
-        "workingOut": "\\text{Multiples of three} = \\{3, 6, 9, 12\\} \\implies 4 \\; \\text{numbers}"
+        "workingOut": "\\text{Multiples of three} = {3, 6, 9, 12} \\implies 4 \\; \\text{numbers}"
       },
       {
         "explanation": "Subtract the multiples of three from the total count to find the number of slips that are not multiples of three.",
@@ -164,7 +164,7 @@ export const Y10_CH15_QUESTIONS = [
           },
           {
             "explanation": "List all unique values obtained from this table.",
-            "workingOut": "\\text{Sample Space} = \\{4, 5, 6, 7, 8, 9\\}"
+            "workingOut": "\\text{Sample Space} = {4, 5, 6, 7, 8, 9}"
           }
         ]
       },
@@ -196,7 +196,7 @@ export const Y10_CH15_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify the outcomes in the sample space that are greater than 7, which are 8 and 9.",
-            "workingOut": "\\text{Favourable outcomes} = \\{8, 9\\}"
+            "workingOut": "\\text{Favourable outcomes} = {8, 9}"
           },
           {
             "explanation": "Sum the probabilities of these two outcomes.",
@@ -254,7 +254,7 @@ export const Y10_CH15_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "List all possible ordered pairs by combining each number from Box 1 with each number from Box 2.",
-            "workingOut": "\\text{Sample Space} = \\{(2,3), (2,5), (2,8), (3,3), (3,5), (3,8), (4,3), (4,5), (4,8)\\}"
+            "workingOut": "\\text{Sample Space} = {(2,3), (2,5), (2,8), (3,3), (3,5), (3,8), (4,3), (4,5), (4,8)}"
           }
         ]
       },
@@ -286,7 +286,7 @@ export const Y10_CH15_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify the outcomes where both numbers in the pair are odd.",
-            "workingOut": "\\text{Odd pairs} = \\{(3,3), (3,5)\\}"
+            "workingOut": "\\text{Odd pairs} = {(3,3), (3,5)}"
           },
           {
             "explanation": "Count these outcomes (2) and divide by the total number of outcomes (9).",
@@ -346,7 +346,7 @@ export const Y10_CH15_QUESTIONS = [
           },
           {
             "explanation": "Extract the unique sums from the grid table.",
-            "workingOut": "\\text{Sample Space} = \\{4, 5, 6, 7, 8, 9\\}"
+            "workingOut": "\\text{Sample Space} = {4, 5, 6, 7, 8, 9}"
           }
         ]
       },
@@ -378,7 +378,7 @@ export const Y10_CH15_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify the sums in the sample space that are less than 6, which are 4 and 5.",
-            "workingOut": "\\text{Favourable sums} = \\{4, 5\\}"
+            "workingOut": "\\text{Favourable sums} = {4, 5}"
           },
           {
             "explanation": "Add the probabilities of obtaining 4 and 5.",
@@ -412,7 +412,7 @@ export const Y10_CH15_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Recall the numbers on a die that are odd.",
-            "workingOut": "\\text{Odd numbers} = \\{1, 3, 5\\} \\implies 3 \\; \\text{numbers}"
+            "workingOut": "\\text{Odd numbers} = {1, 3, 5} \\implies 3 \\; \\text{numbers}"
           },
           {
             "explanation": "Determine the number of outcomes where both dice show odd numbers. Since each die has 3 odd numbers, there are \\(3 \\times 3\\) combinations.",
@@ -456,7 +456,7 @@ export const Y10_CH15_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify the pairs where one die shows a 4 and the other die shows an odd number (1, 3, or 5). The two cases are (4, odd) and (odd, 4).",
-            "workingOut": "\\begin{aligned} \\text{Case 1}: &\\quad \\{(4,1), (4,3), (4,5)\\} \\implies 3 \\; \\text{outcomes} \\\\ \\text{Case 2}: &\\quad \\{(1,4), (3,4), (5,4)\\} \\implies 3 \\; \\text{outcomes} \\end{aligned}"
+            "workingOut": "\\begin{aligned} \\text{Case 1}: &\\quad {(4,1), (4,3), (4,5)} \\implies 3 \\; \\text{outcomes} \\\\ \\text{Case 2}: &\\quad {(1,4), (3,4), (5,4)} \\implies 3 \\; \\text{outcomes} \\end{aligned}"
           },
           {
             "explanation": "Sum the total number of favourable outcomes.",
@@ -494,7 +494,7 @@ export const Y10_CH15_QUESTIONS = [
           },
           {
             "explanation": "List all integer values from the minimum to the maximum.",
-            "workingOut": "\\text{Sample Space} = \\{-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5\\}"
+            "workingOut": "\\text{Sample Space} = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}"
           }
         ]
       },
@@ -526,7 +526,7 @@ export const Y10_CH15_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify the pairs where both dice show the same number.",
-            "workingOut": "\\text{Pairs} = \\{(1,1), (2,2), (3,3), (4,4), (5,5), (6,6)\\} \\implies 6 \\; \\text{outcomes}"
+            "workingOut": "\\text{Pairs} = {(1,1), (2,2), (3,3), (4,4), (5,5), (6,6)} \\implies 6 \\; \\text{outcomes}"
           },
           {
             "explanation": "Calculate the probability.",
@@ -544,7 +544,7 @@ export const Y10_CH15_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify the pairs where \\(\\text{die 1} - \\text{die 2} = 2\\).",
-            "workingOut": "\\text{Pairs} = \\{(3,1), (4,2), (5,3), (6,4)\\} \\implies 4 \\; \\text{outcomes}"
+            "workingOut": "\\text{Pairs} = {(3,1), (4,2), (5,3), (6,4)} \\implies 4 \\; \\text{outcomes}"
           },
           {
             "explanation": "Calculate and simplify the probability.",
@@ -596,7 +596,7 @@ export const Y10_CH15_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Write out the 36 possible outcomes based on the 6 balls with replacement. Let \\(B_1, B_2, B_3\\) represent the blue balls, \\(G_1, G_2\\) represent the green balls, and \\(R\\) represent the red ball.",
-            "workingOut": "\\text{Sample Space} = \\{(B_1, B_1), (B_1, B_2), \\dots, (R, R)\\} \\quad (36 \\; \\text{outcomes})"
+            "workingOut": "\\text{Sample Space} = {(B_1, B_1), (B_1, B_2), \\dots, (R, R)} \\quad (36 \\; \\text{outcomes})"
           }
         ]
       },

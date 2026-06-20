@@ -113,7 +113,7 @@ export const Y12A_CH6E_QUESTIONS = [
           4,
           -2
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return Math.sin(x); };\nvar curve = board.create('functiongraph', [f, -0.5, 3.5], {strokeColor: 'black'});\nvar integral = board.create('integral', [[0, Math.PI/2], curve], {color: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/2, -0.3], '\\\\(\\\\frac{\\\\pi}{2}\\\\)', {anchorX: 'middle'});\nboard.create('text', [Math.PI, -0.3], '\\\\(\\\\pi\\\\)', {anchorX: 'middle'});\nboard.create('text', [-0.3, 1], '1', {anchorX: 'right'});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return Math.sin(x); };\nvar curve = board.create('functiongraph', [f, -0.5, 3.5], {strokeColor: 'black'});\nvar integral = board.create('integral', [[0, Math.PI/2], curve], {color: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/2, -0.3], '\\\\(\\\frac{\\\pi}{2}\\\\)', {anchorX: 'middle'});\nboard.create('text', [Math.PI, -0.3], '\\\\(\\\pi\\\\)', {anchorX: 'middle'});\nboard.create('text', [-0.3, 1], '1', {anchorX: 'right'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -141,7 +141,7 @@ export const Y12A_CH6E_QUESTIONS = [
           4,
           -2
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return Math.cos(x); };\nvar curve = board.create('functiongraph', [f, -0.5, 3.5], {strokeColor: 'black'});\nvar integral = board.create('integral', [[Math.PI/2, Math.PI], curve], {color: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/2, 0.3], '\\\\(\\\\frac{\\\\pi}{2}\\\\)', {anchorX: 'middle'});\nboard.create('text', [Math.PI, 0.3], '\\\\(\\\\pi\\\\)', {anchorX: 'middle'});\nboard.create('text', [-0.3, 1], '1', {anchorX: 'right'});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return Math.cos(x); };\nvar curve = board.create('functiongraph', [f, -0.5, 3.5], {strokeColor: 'black'});\nvar integral = board.create('integral', [[Math.PI/2, Math.PI], curve], {color: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/2, 0.3], '\\\\(\\\frac{\\\pi}{2}\\\\)', {anchorX: 'middle'});\nboard.create('text', [Math.PI, 0.3], '\\\\(\\\pi\\\\)', {anchorX: 'middle'});\nboard.create('text', [-0.3, 1], '1', {anchorX: 'right'});\nboard.unsuspendUpdate();"
       }
     }
   },

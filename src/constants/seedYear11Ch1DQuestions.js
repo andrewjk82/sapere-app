@@ -7,6 +7,10 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve for \\( x \\): \\( x - 6\\sqrt{x} + 8 = 0 \\)",
     "options": [
       {
+        "text": "\\(x = 4, -16\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x = \\pm 2, \\pm 4\\)",
         "imageUrl": ""
       },
@@ -15,15 +19,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = 4, -16\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x = 4, 16\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Let \\( u = \\sqrt{x} \\). This means \\( u^2 = x \\). Substitute these in to form a quadratic equation.",
     "solution": "\\(x = 4, 16\\)",
@@ -60,11 +60,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the fractional equation: \\( \\frac{x}{4} + \\frac{4}{x} = \\frac{17}{4} \\)",
     "options": [
       {
-        "text": "\\(x = 1, 4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x = 1, 16\\)",
+        "text": "\\(x = -1, -16\\)",
         "imageUrl": ""
       },
       {
@@ -72,11 +68,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = -1, -16\\)",
+        "text": "\\(x = 1, 16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = 1, 4\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply the entire equation by the lowest common denominator, which is \\( 4x \\), to clear the fractions.",
     "solution": "\\(x = 1, 16\\)",
@@ -121,15 +121,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((x+1)(x+3) = 0 \\Rightarrow x = 1, 3\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((x1)(x-3) = 0 \\Rightarrow x = 1, -3\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((x0)(x-3) = 0 \\Rightarrow x = 1, -4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x+1)(x+3) = 0 \\Rightarrow x = 1, 3\\)",
         "imageUrl": ""
       },
       {
@@ -164,11 +164,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the literal quadratic equation for \\( x \\): \\( x^2 - 4ax + 4a^2 - b^2 = 0 \\)",
     "options": [
       {
-        "text": "\\(x = 2a \\pm b\\)",
+        "text": "\\(x = b \\pm 2a\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x = b \\pm 2a\\)",
+        "text": "\\(x = 2a \\pm b\\)",
         "imageUrl": ""
       },
       {
@@ -217,15 +217,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( 4a^2 - 49 = 0 \\)",
     "options": [
       {
-        "text": "\\(4a^2 = 49 \\Rightarrow a^2 = \\frac{49}{4} \\Rightarrow a = \\pm \\frac{7}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(4a^2 = 49 \\Rightarrow a^2 = \\frac{49}{4} \\Rightarrow a = + \\frac{7}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4a^2 = 49 \\Rightarrow a^2 = \\frac{49}{4} \\Rightarrow a = \\pm 1\\)",
         "imageUrl": ""
       },
       {
@@ -233,11 +225,19 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(4a^2 = 49 \\Rightarrow a^2 = \\frac{49}{4} \\Rightarrow a = \\pm 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4a^2 = 49 \\Rightarrow a^2 = \\frac{49}{4} \\Rightarrow a = \\pm \\frac{7}{2}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(4a^2 = 49 \\Rightarrow a^2 = \\frac{49}{4} \\Rightarrow a = - \\frac{7}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Isolate the quadratic variable.",
     "solution": "\\( 4a^2 = 49 \\Rightarrow a^2 = \\frac{49}{4} \\Rightarrow a = \\pm \\frac{7}{2} \\)",
@@ -249,12 +249,12 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Divide by 4.",
-        "workingOut": "\\(a^2 = \\frac\\{49\\}\\{4\\}\\)",
+        "workingOut": "\\(a^2 = \\frac{49}{4}\\)",
         "graphData": null
       },
       {
         "explanation": "Take the square root of the fraction.",
-        "workingOut": "\\(a = \\pm \\frac\\{7\\}\\{2\\}\\)",
+        "workingOut": "\\(a = \\pm \\frac{7}{2}\\)",
         "graphData": null
       }
     ],
@@ -269,11 +269,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( c^2 + 3c = 0 \\)",
     "options": [
       {
-        "text": "\\(c(c - 4) = 3 \\Rightarrow c = 3 \\text{ or } c = +4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(c(c + 4) = 2 \\Rightarrow c = 3 \\text{ or } c = -4\\)",
+        "text": "\\(c(c - 3) = 0 \\Rightarrow c = 0 \\text{ or } c = +3\\)",
         "imageUrl": ""
       },
       {
@@ -281,11 +277,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(c(c - 3) = 0 \\Rightarrow c = 0 \\text{ or } c = +3\\)",
+        "text": "\\(c(c + 4) = 2 \\Rightarrow c = 3 \\text{ or } c = -4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(c(c - 4) = 3 \\Rightarrow c = 3 \\text{ or } c = +4\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Factor out the common factor \\( c \\).",
     "solution": "\\( c(c + 3) = 0 \\Rightarrow c = 0 \\text{ or } c = -3 \\)",
@@ -297,7 +297,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Set each linear factor to 0.",
-        "workingOut": "\\(c = 0 \\quad \\text\\{or\\} \\quad c + 3 = 0\\)",
+        "workingOut": "\\(c = 0 \\quad \\text{or} \\quad c + 3 = 0\\)",
         "graphData": null
       },
       {
@@ -317,15 +317,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 5x^2 - 26x + 5 = 0 \\)",
     "options": [
       {
-        "text": "\\((5x+1)(x+5) = 0 \\Rightarrow x = 5, \\frac{1}{5}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((4x-1)(x-5) = 0 \\Rightarrow x = 5, \\frac{0}{5}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((6x-1)(x-5) = 0 \\Rightarrow x = 5, \\frac{2}{5}\\)",
+        "text": "\\((-5x-1)(x-5) = 0 \\Rightarrow x = 5, \\frac{-1}{5}\\)",
         "imageUrl": ""
       },
       {
@@ -333,15 +325,23 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((4x-1)(x-5) = 0 \\Rightarrow x = 5, \\frac{0}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x+1)(x+5) = 0 \\Rightarrow x = 5, \\frac{1}{5}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((-6x-1)(x-5) = 0 \\Rightarrow x = 5, \\frac{-2}{5}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((-5x-1)(x-5) = 0 \\Rightarrow x = 5, \\frac{-1}{5}\\)",
+        "text": "\\((6x-1)(x-5) = 0 \\Rightarrow x = 5, \\frac{2}{5}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Find factors of 25 that add to -26.",
     "solution": "\\( (5x-1)(x-5) = 0 \\Rightarrow x = 5, \\frac{1}{5} \\)",
@@ -363,7 +363,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(x = 5, \\frac\\{1\\}\\{5\\}\\)",
+        "workingOut": "\\(x = 5, \\frac{1}{5}\\)",
         "graphData": null
       }
     ],
@@ -382,7 +382,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 12x = -20 \\Rightarrow x^2 - 12x + 36 = 16 \\Rightarrow (x-6)^2 = 16 \\Rightarrow x = 2, 11\\)",
+        "text": "\\(x^1 - 12x = -20 \\Rightarrow x^2 - 12x + 36 = 16 \\Rightarrow (x-6)^2 = 16 \\Rightarrow x = 2, 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^-2 - 12x = -20 \\Rightarrow x^2 - 12x + 36 = 16 \\Rightarrow (x-6)^2 = 16 \\Rightarrow x = 2, -10\\)",
         "imageUrl": ""
       },
       {
@@ -390,19 +394,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^1 - 12x = -20 \\Rightarrow x^2 - 12x + 36 = 16 \\Rightarrow (x-6)^2 = 16 \\Rightarrow x = 2, 9\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 - 12x = -20 \\Rightarrow x^2 - 12x + 36 = 16 \\Rightarrow (x-6)^2 = 16 \\Rightarrow x = 2, 10\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^-2 - 12x = -20 \\Rightarrow x^2 - 12x + 36 = 16 \\Rightarrow (x-6)^2 = 16 \\Rightarrow x = 2, -10\\)",
+        "text": "\\(x^3 - 12x = -20 \\Rightarrow x^2 - 12x + 36 = 16 \\Rightarrow (x-6)^2 = 16 \\Rightarrow x = 2, 11\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Move 20, then add 36 to both sides.",
     "solution": "\\( x^2 - 12x = -20 \\Rightarrow x^2 - 12x + 36 = 16 \\Rightarrow (x-6)^2 = 16 \\Rightarrow x = 2, 10 \\)",
@@ -434,15 +434,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the quadratic equation using the quadratic formula or by completing the square: \\( x^2 - 4x - 1 = 0 \\)",
     "options": [
       {
-        "text": "\\(x = 2 \\pm \\sqrt{5}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x = -2 \\pm \\sqrt{5}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x = \\pm \\sqrt{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = 2 \\pm \\sqrt{5}\\)",
         "imageUrl": ""
       },
       {
@@ -487,10 +487,6 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve for \\( x \\): \\( x - 8\\sqrt{x} + 15 = 0 \\)",
     "options": [
       {
-        "text": "\\(x = 9, -25\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x = \\pm 3, \\pm 5\\)",
         "imageUrl": ""
       },
@@ -501,9 +497,13 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(x = 3, 5\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x = 9, -25\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Let \\( u = \\sqrt{x} \\). This means \\( u^2 = x \\). Substitute these in to form a quadratic equation.",
     "solution": "\\(x = 9, 25\\)",
@@ -548,15 +548,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = \\pm 2, \\pm 3\\)",
+        "text": "\\(x = \\pm \\sqrt{5}, \\pm \\sqrt{6}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x = \\pm \\sqrt{5}, \\pm \\sqrt{6}\\)",
+        "text": "\\(x = \\pm 2, \\pm 3\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Let \\( u = x^2 \\). Rewrite the equation in terms of \\( u \\) as a quadratic equation, solve for \\( u \\), then substitute back to find \\( x \\).",
     "solution": "\\(x = \\pm \\sqrt{2}, \\pm \\sqrt{3}\\)",
@@ -593,11 +593,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( t^2 = 2t \\)",
     "options": [
       {
-        "text": "\\(t^2 + 2t = 0 \\Rightarrow t(t + 2) = 0 \\Rightarrow t = 0, 2\\)",
+        "text": "\\(t^-3 - 2t = 0 \\Rightarrow t(t - 2) = 0 \\Rightarrow t = 0, -3\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(t^-3 - 2t = 0 \\Rightarrow t(t - 2) = 0 \\Rightarrow t = 0, -3\\)",
+        "text": "\\(t^-2 - 2t = 0 \\Rightarrow t(t - 2) = 0 \\Rightarrow t = 0, -2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(t^1 - 2t = 0 \\Rightarrow t(t - 2) = 0 \\Rightarrow t = 0, 1\\)",
         "imageUrl": ""
       },
       {
@@ -609,15 +613,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(t^-2 - 2t = 0 \\Rightarrow t(t - 2) = 0 \\Rightarrow t = 0, -2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(t^1 - 2t = 0 \\Rightarrow t(t - 2) = 0 \\Rightarrow t = 0, 1\\)",
+        "text": "\\(t^2 + 2t = 0 \\Rightarrow t(t + 2) = 0 \\Rightarrow t = 0, 2\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Move all terms to one side to get zero on the other side before factoring.",
     "solution": "\\( t^2 - 2t = 0 \\Rightarrow t(t - 2) = 0 \\Rightarrow t = 0, 2 \\)",
@@ -649,23 +649,23 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve \\(2x^2 - 11x + 12 = 0\\)",
     "options": [
       {
-        "text": "\\(\\{3, 4\\}\\)",
+        "text": "\\({3, 4}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{1.5, -4\\}\\)",
+        "text": "\\({1.5, -4}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{-1.5, -4\\}\\)",
+        "text": "\\({1.5, 4}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{1.5, 4\\}\\)",
+        "text": "\\({-1.5, -4}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Factor by grouping.",
     "solution": "\\((2x-3)(x-4) = 0 \\Rightarrow x=1.5, 4\\)",
@@ -692,7 +692,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 3a^2 = 7a \\)",
     "options": [
       {
+        "text": "\\(2a^2 - 7a = 0 \\Rightarrow a(3a - 7) = 0 \\Rightarrow a = 0, \\frac{6}{3}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(-4a^2 - 7a = 0 \\Rightarrow a(3a - 7) = 0 \\Rightarrow a = 0, \\frac{-8}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3a^2 - 7a = 0 \\Rightarrow a(3a - 7) = 0 \\Rightarrow a = 0, \\frac{7}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3a^2 - 7a = 0 \\Rightarrow a(3a - 7) = 0 \\Rightarrow a = 0, \\frac{-7}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -701,18 +713,6 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "text": "\\(3a^2 + 7a = 0 \\Rightarrow a(3a + 7) = 0 \\Rightarrow a = 0, \\frac{7}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(3a^2 - 7a = 0 \\Rightarrow a(3a - 7) = 0 \\Rightarrow a = 0, \\frac{7}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(2a^2 - 7a = 0 \\Rightarrow a(3a - 7) = 0 \\Rightarrow a = 0, \\frac{6}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(-3a^2 - 7a = 0 \\Rightarrow a(3a - 7) = 0 \\Rightarrow a = 0, \\frac{-7}{3}\\)",
         "imageUrl": ""
       }
     ],
@@ -733,7 +733,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(a = 0, \\frac\\{7\\}\\{3\\}\\)",
+        "workingOut": "\\(a = 0, \\frac{7}{3}\\)",
         "graphData": null
       }
     ],
@@ -752,7 +752,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((4a-2)(a-2) = 0 \\Rightarrow a = 2, \\frac{3}{3}\\)",
+        "text": "\\((2a-2)(a-2) = 0 \\Rightarrow a = 2, \\frac{1}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-3a-2)(a-2) = 0 \\Rightarrow a = 2, \\frac{-2}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -760,19 +764,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((2a-2)(a-2) = 0 \\Rightarrow a = 2, \\frac{1}{3}\\)",
+        "text": "\\((4a-2)(a-2) = 0 \\Rightarrow a = 2, \\frac{3}{3}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((3a+2)(a+2) = 0 \\Rightarrow a = 2, \\frac{2}{3}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\((-3a-2)(a-2) = 0 \\Rightarrow a = 2, \\frac{-2}{3}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply 3 by 4 to get 12. Find factors of 12 that add to -8.",
     "solution": "\\( (3a-2)(a-2) = 0 \\Rightarrow a = 2, \\frac{2}{3} \\)",
@@ -794,7 +794,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(a = 2, \\frac\\{2\\}\\{3\\}\\)",
+        "workingOut": "\\(a = 2, \\frac{2}{3}\\)",
         "graphData": null
       }
     ],
@@ -809,7 +809,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve using the quadratic formula: \\( a^2 + 16 = 9a \\)",
     "options": [
       {
-        "text": "\\(a^2 - 9a + 16 = 0 \\Rightarrow a = \\frac{9 \\pm \\sqrt{81 - 64}}{2} = \\frac{9 \\pm 1\\)",
+        "text": "\\(a^2 - 9a + 16 = 0 \\Rightarrow a = \\frac{9 + \\sqrt{81 - 64}}{2} = \\frac{9 \\pm \\sqrt{17}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^2 - 9a + 16 = 0 \\Rightarrow a = \\frac{9 \\pm \\sqrt{81 - 64}}{2} = \\frac{9 \\pm 1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^2 - 9a + 16 = 0 \\Rightarrow a = \\frac{9 - \\sqrt{81 - 64}}{2} = \\frac{9 \\pm \\sqrt{17}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^2 - 9a + 16 = 0 \\Rightarrow a = \\frac{9 \\pm \\sqrt{81 - 64}}{2} = \\frac{9 \\pm 0}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -818,18 +830,6 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "text": "\\(a^2 + 9a - 16 = 0 \\Rightarrow a = \\frac{9 \\pm \\sqrt{81 + 64}}{2} = \\frac{9 \\pm \\sqrt{17}}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^2 - 9a + 16 = 0 \\Rightarrow a = \\frac{9 \\pm \\sqrt{81 - 64}}{2} = \\frac{9 \\pm 0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^2 - 9a + 16 = 0 \\Rightarrow a = \\frac{9 - \\sqrt{81 - 64}}{2} = \\frac{9 \\pm \\sqrt{17}}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^2 - 9a + 16 = 0 \\Rightarrow a = \\frac{9 + \\sqrt{81 - 64}}{2} = \\frac{9 \\pm \\sqrt{17}}{2}\\)",
         "imageUrl": ""
       }
     ],
@@ -845,12 +845,12 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Substitute coefficients into the formula.",
-        "workingOut": "\\(a = \\frac\\{-(-9) \\pm \\sqrt\\{(-9)^2 - 4(1)(16)\\}\\}\\{2(1)\\}\\)",
+        "workingOut": "\\(a = \\frac{-(-9) \\pm \\sqrt{(-9)^2 - 4(1)(16)}}{2(1)}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\(a = \\frac\\{9 \\pm \\sqrt\\{81 - 64\\}\\}\\{2\\} = \\frac\\{9 \\pm \\sqrt\\{17\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(a = \\frac{9 \\pm \\sqrt{81 - 64}}{2} = \\frac{9 \\pm \\sqrt{17}}{2}\\)",
         "graphData": null
       }
     ],
@@ -865,11 +865,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( \\frac{5x - 2}{x} = x \\)",
     "options": [
       {
-        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 - \\sqrt{25 - 8}}{2} = \\frac{5 \\pm \\sqrt{17}}{2}\\)",
+        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 + \\sqrt{25 - 8}}{2} = \\frac{5 \\pm \\sqrt{17}}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 \\pm \\sqrt{25 - 8}}{2} = \\frac{5 \\pm \\sqrt{17}}{2}\\)",
+        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 - \\sqrt{25 - 8}}{2} = \\frac{5 \\pm \\sqrt{17}}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -877,15 +877,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 \\pm \\sqrt{25 - 8}}{2} = \\frac{5 \\pm 0\\)",
+        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 \\pm \\sqrt{25 - 8}}{2} = \\frac{5 \\pm \\sqrt{17}}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 \\pm \\sqrt{25 - 8}}{2} = \\frac{5 \\pm 1\\)",
+        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 \\pm \\sqrt{25 - 8}}{2} = \\frac{5 \\pm 1}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 + \\sqrt{25 - 8}}{2} = \\frac{5 \\pm \\sqrt{17}}{2}\\)",
+        "text": "\\(5x - 2 = x^2 \\Rightarrow x^2 - 5x + 2 = 0 \\Rightarrow x = \\frac{5 \\pm \\sqrt{25 - 8}}{2} = \\frac{5 \\pm 0}{2}\\)",
         "imageUrl": ""
       }
     ],
@@ -906,7 +906,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Apply the quadratic formula.",
-        "workingOut": "\\(x = \\frac\\{5 \\pm \\sqrt\\{25 - 8\\}\\}\\{2\\} = \\frac\\{5 \\pm \\sqrt\\{17\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(x = \\frac{5 \\pm \\sqrt{25 - 8}}{2} = \\frac{5 \\pm \\sqrt{17}}{2}\\)",
         "graphData": null
       }
     ],
@@ -921,7 +921,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by dividing both sides by the coefficient of \\( x^2 \\) and completing the square: \\( 4x^2 - 4x - 5 = 0 \\)",
     "options": [
       {
-        "text": "\\(x^2 - x - \\frac{5}{4} = 0 \\Rightarrow x^2 - x + \\frac{1}{4} = \\frac{6}{4} \\Rightarrow (x-\\frac{1}{2})^2 = \\frac{6}{4} \\Rightarrow x = \\frac{1 \\pm 0\\)",
+        "text": "\\(x^2 - x - \\frac{5}{4} = 0 \\Rightarrow x^2 - x + \\frac{1}{4} = \\frac{6}{4} \\Rightarrow (x-\\frac{1}{2})^2 = \\frac{6}{4} \\Rightarrow x = \\frac{1 \\pm 0}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -929,7 +929,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - x - \\frac{5}{4} = 0 \\Rightarrow x^2 - x + \\frac{1}{4} = \\frac{6}{4} \\Rightarrow (x-\\frac{1}{2})^2 = \\frac{6}{4} \\Rightarrow x = \\frac{1 \\pm 1\\)",
+        "text": "\\(x^2 - x - \\frac{5}{4} = 0 \\Rightarrow x^2 - x + \\frac{1}{4} = \\frac{6}{4} \\Rightarrow (x-\\frac{1}{2})^2 = \\frac{6}{4} \\Rightarrow x = \\frac{1 \\pm \\sqrt{6}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 - x - \\frac{5}{4} = 0 \\Rightarrow x^2 - x + \\frac{1}{4} = \\frac{6}{4} \\Rightarrow (x-\\frac{1}{2})^2 = \\frac{6}{4} \\Rightarrow x = \\frac{1 \\pm 1}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -937,37 +941,33 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - x - \\frac{5}{4} = 0 \\Rightarrow x^2 - x + \\frac{1}{4} = \\frac{6}{4} \\Rightarrow (x-\\frac{1}{2})^2 = \\frac{6}{4} \\Rightarrow x = \\frac{1 \\pm \\sqrt{6}}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 + x + \\frac{5}{4} = 0 \\Rightarrow x^2 + x - \\frac{1}{4} = \\frac{6}{4} \\Rightarrow (x+\\frac{1}{2})^2 = \\frac{6}{4} \\Rightarrow x = \\frac{1 \\pm \\sqrt{6}}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Divide by 4 and add \\( 1/4 \\) to both sides.",
     "solution": "\\( x^2 - x - \\frac{5}{4} = 0 \\Rightarrow x^2 - x + \\frac{1}{4} = \\frac{6}{4} \\Rightarrow (x-\\frac{1}{2})^2 = \\frac{6}{4} \\Rightarrow x = \\frac{1 \\pm \\sqrt{6}}{2} \\)",
     "solutionSteps": [
       {
         "explanation": "Divide by 4.",
-        "workingOut": "\\(x^2 - x - \\frac\\{5\\}\\{4\\} = 0\\)",
+        "workingOut": "\\(x^2 - x - \\frac{5}{4} = 0\\)",
         "graphData": null
       },
       {
         "explanation": "Isolate constant and complete the square.",
-        "workingOut": "\\(x^2 - x + \\frac\\{1\\}\\{4\\} = \\frac\\{5\\}\\{4\\} + \\frac\\{1\\}\\{4\\}\\)",
+        "workingOut": "\\(x^2 - x + \\frac{1}{4} = \\frac{5}{4} + \\frac{1}{4}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\(\\left(x - \\frac\\{1\\}\\{2\\}\\right)^2 = \\frac\\{6\\}\\{4\\}\\)",
+        "workingOut": "\\(\\left(x - \\frac{1}{2}\\right)^2 = \\frac{6}{4}\\)",
         "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(x - \\frac\\{1\\}\\{2\\} = \\pm \\frac\\{\\sqrt\\{6\\}\\}\\{2\\} \\Rightarrow x = \\frac\\{1 \\pm \\sqrt\\{6\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(x - \\frac{1}{2} = \\pm \\frac{\\sqrt{6}}{2} \\Rightarrow x = \\frac{1 \\pm \\sqrt{6}}{2}\\)",
         "graphData": null
       }
     ],
@@ -982,6 +982,10 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( y^2 = 49 \\)",
     "options": [
       {
+        "text": "\\(y^2 = 49 \\Rightarrow y = \\pm \\sqrt{49} = \\pm 1\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(y^2 = 49 \\Rightarrow y = \\pm \\sqrt{49} = \\pm 0\\)",
         "imageUrl": ""
       },
@@ -990,15 +994,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y^2 = 49 \\Rightarrow y = \\pm \\sqrt{49} = \\pm 7\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^2 = 49 \\Rightarrow y = \\pm \\sqrt{49} = \\pm 1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(y^2 = 49 \\Rightarrow y = + \\sqrt{49} = \\pm 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2 = 49 \\Rightarrow y = \\pm \\sqrt{49} = \\pm 7\\)",
         "imageUrl": ""
       }
     ],
@@ -1009,7 +1009,7 @@ export const Y11_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Take the square root of both sides to isolate \\( y \\).",
-        "workingOut": "\\(y = \\pm \\sqrt\\{49\\}\\)",
+        "workingOut": "\\(y = \\pm \\sqrt{49}\\)",
         "graphData": null
       },
       {
@@ -1029,19 +1029,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve using the quadratic formula: \\( c^2 - 8c + 5 = 0 \\)",
     "options": [
       {
-        "text": "\\(c = \\frac{8 + \\sqrt{64 - 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm \\sqrt{11}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(c = \\frac{8 \\pm \\sqrt{64 - 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm \\sqrt{11}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(c = \\frac{8 - \\sqrt{64 - 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm \\sqrt{11}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(c = \\frac{8 \\pm \\sqrt{64 - 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm 0\\)",
+        "text": "\\(c = \\frac{8 + \\sqrt{64 - 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm \\sqrt{11}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(c = \\frac{8 \\pm \\sqrt{64 + 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm \\sqrt{11}\\)",
         "imageUrl": ""
       },
       {
@@ -1049,28 +1045,32 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(c = \\frac{8 \\pm \\sqrt{64 + 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm \\sqrt{11}\\)",
+        "text": "\\(c = \\frac{8 \\pm \\sqrt{64 - 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(c = \\frac{8 \\pm \\sqrt{64 - 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm \\sqrt{11}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Apply formula and simplify the final surd.",
     "solution": "\\( c = \\frac{8 \\pm \\sqrt{64 - 20}}{2} = \\frac{8 \\pm \\sqrt{44}}{2} = 4 \\pm \\sqrt{11} \\)",
     "solutionSteps": [
       {
         "explanation": "Apply formula.",
-        "workingOut": "\\(c = \\frac\\{-(-8) \\pm \\sqrt\\{(-8)^2 - 4(1)(5)\\}\\}\\{2(1)\\}\\)",
+        "workingOut": "\\(c = \\frac{-(-8) \\pm \\sqrt{(-8)^2 - 4(1)(5)}}{2(1)}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\(c = \\frac\\{8 \\pm \\sqrt\\{44\\}\\}\\{2\\} = \\frac\\{8 \\pm 2\\sqrt\\{11\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(c = \\frac{8 \\pm \\sqrt{44}}{2} = \\frac{8 \\pm 2\\sqrt{11}}{2}\\)",
         "graphData": null
       },
       {
         "explanation": "Divide by 2.",
-        "workingOut": "\\(c = 4 \\pm \\sqrt\\{11\\}\\)",
+        "workingOut": "\\(c = 4 \\pm \\sqrt{11}\\)",
         "graphData": null
       }
     ],
@@ -1085,7 +1085,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by dividing both sides by the coefficient of \\( x^2 \\) and completing the square: \\( 2x^2 - 12x + 9 = 0 \\)",
     "options": [
       {
-        "text": "\\(x^2 - 6x + \\frac{9}{2} = 0 \\Rightarrow x^2 - 6x + 9 = \\frac{9}{2} \\Rightarrow (x-3)^2 = \\frac{9}{2} \\Rightarrow x = 3 \\pm \\frac{1 = \\frac{6 \\pm 3\\sqrt{2}}{2}\\)",
+        "text": "\\(x^2 - 6x + \\frac{9}{2} = 0 \\Rightarrow x^2 - 6x + 9 = \\frac{9}{2} \\Rightarrow (x-3)^2 = \\frac{9}{2} \\Rightarrow x = 3 \\pm \\frac{1}{2} = \\frac{6 \\pm 1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 - 6x + \\frac{9}{2} = 0 \\Rightarrow x^2 - 6x + 9 = \\frac{9}{2} \\Rightarrow (x-3)^2 = \\frac{9}{2} \\Rightarrow x = 3 \\pm \\frac{3\\sqrt{2}}{2} = \\frac{6 \\pm 3\\sqrt{2}}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -1101,37 +1105,33 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 6x + \\frac{9}{2} = 0 \\Rightarrow x^2 - 6x + 9 = \\frac{9}{2} \\Rightarrow (x-3)^2 = \\frac{9}{2} \\Rightarrow x = 3 \\pm \\frac{3\\sqrt{2}}{2} = \\frac{6 \\pm 3\\sqrt{2}}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 - 6x + \\frac{9}{2} = 0 \\Rightarrow x^2 - 6x + 9 = \\frac{9}{2} \\Rightarrow (x-3)^2 = \\frac{9}{2} \\Rightarrow x = 3 \\pm \\frac{0 = \\frac{6 \\pm 3\\sqrt{2}}{2}\\)",
+        "text": "\\(x^2 - 6x + \\frac{9}{2} = 0 \\Rightarrow x^2 - 6x + 9 = \\frac{9}{2} \\Rightarrow (x-3)^2 = \\frac{9}{2} \\Rightarrow x = 3 \\pm \\frac{0}{2} = \\frac{6 \\pm 0}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Divide by 2 and add 9 to both sides.",
     "solution": "\\( x^2 - 6x + \\frac{9}{2} = 0 \\Rightarrow x^2 - 6x + 9 = \\frac{9}{2} \\Rightarrow (x-3)^2 = \\frac{9}{2} \\Rightarrow x = 3 \\pm \\frac{3\\sqrt{2}}{2} = \\frac{6 \\pm 3\\sqrt{2}}{2} \\)",
     "solutionSteps": [
       {
         "explanation": "Divide by 2.",
-        "workingOut": "\\(x^2 - 6x + \\frac\\{9\\}\\{2\\} = 0\\)",
+        "workingOut": "\\(x^2 - 6x + \\frac{9}{2} = 0\\)",
         "graphData": null
       },
       {
         "explanation": "Isolate the constant and add 9.",
-        "workingOut": "\\(x^2 - 6x + 9 = 9 - \\frac\\{9\\}\\{2\\}\\)",
+        "workingOut": "\\(x^2 - 6x + 9 = 9 - \\frac{9}{2}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\((x - 3)^2 = \\frac\\{9\\}\\{2\\}\\)",
+        "workingOut": "\\((x - 3)^2 = \\frac{9}{2}\\)",
         "graphData": null
       },
       {
         "explanation": "Solve and rationalise.",
-        "workingOut": "\\(x - 3 = \\pm \\sqrt\\{\\frac\\{9\\}\\{2\\}\\} = \\pm \\frac\\{3\\sqrt\\{2\\}\\}\\{2\\} \\Rightarrow x = \\frac\\{6 \\pm 3\\sqrt\\{2\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(x - 3 = \\pm \\sqrt{\\frac{9}{2}} = \\pm \\frac{3\\sqrt{2}}{2} \\Rightarrow x = \\frac{6 \\pm 3\\sqrt{2}}{2}\\)",
         "graphData": null
       }
     ],
@@ -1154,15 +1154,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(5t^3 - 15t + 12 = 3 \\Rightarrow (4t-5)^4 = 1 \\Rightarrow t = \\frac{5}{3}\\)",
+        "text": "\\(6t^3 - 14t + 12 = 1 \\Rightarrow (4t-5)^4 = 1 \\Rightarrow t = \\frac{5}{5}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6t^3 - 14t + 12 = 1 \\Rightarrow (4t-5)^4 = 1 \\Rightarrow t = \\frac{5}{5}\\)",
+        "text": "\\(5t^3 - 15t + 12 = 3 \\Rightarrow (4t-5)^4 = 1 \\Rightarrow t = \\frac{5}{3}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange and recognize the perfect square trinomial.",
     "solution": "\\( 4t^2 - 12t + 9 = 0 \\Rightarrow (2t-3)^2 = 0 \\Rightarrow t = \\frac{3}{2} \\)",
@@ -1179,7 +1179,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve for the single root.",
-        "workingOut": "\\(t = \\frac\\{3\\}\\{2\\}\\)",
+        "workingOut": "\\(t = \\frac{3}{2}\\)",
         "graphData": null
       }
     ],
@@ -1194,7 +1194,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( x^2 + 7x + 12 = 0 \\)",
     "options": [
       {
-        "text": "\\((x+-3)(x+4) = 0 \\Rightarrow x = -3, 4\\)",
+        "text": "\\((x+-4)(x+4) = 0 \\Rightarrow x = -3, 3\\)",
         "imageUrl": ""
       },
       {
@@ -1214,7 +1214,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((x+-4)(x+4) = 0 \\Rightarrow x = -3, 3\\)",
+        "text": "\\((x+-3)(x+4) = 0 \\Rightarrow x = -3, 4\\)",
         "imageUrl": ""
       }
     ],
@@ -1253,7 +1253,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(u = \\frac{-4 \\pm \\sqrt{16 - 4(1)(-1)}}{2} = \\frac{-4 \\pm \\sqrt{20}}{2} = -2 \\pm \\sqrt{5}\\)",
+        "text": "\\(u = \\frac{-4 \\pm \\sqrt{16 - 4(1)(-1)}}{2} = \\frac{-4 \\pm \\sqrt{20}}{2} = -2 \\pm 1\\)",
         "imageUrl": ""
       },
       {
@@ -1261,32 +1261,32 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(u = \\frac{+4 \\pm \\sqrt{16 + 4(1)(+1)}}{2} = \\frac{+4 \\pm \\sqrt{20}}{2} = +2 \\pm \\sqrt{5}\\)",
+        "text": "\\(u = \\frac{-4 \\pm \\sqrt{16 - 4(1)(-1)}}{2} = \\frac{-4 \\pm \\sqrt{20}}{2} = -2 \\pm \\sqrt{5}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(u = \\frac{-4 \\pm \\sqrt{16 - 4(1)(-1)}}{2} = \\frac{-4 \\pm \\sqrt{20}}{2} = -2 \\pm 1\\)",
+        "text": "\\(u = \\frac{+4 \\pm \\sqrt{16 + 4(1)(+1)}}{2} = \\frac{+4 \\pm \\sqrt{20}}{2} = +2 \\pm \\sqrt{5}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "4",
+    "answer": "0",
     "blanks": [],
     "hint": "Simplify the surd in the discriminant.",
     "solution": "\\( u = \\frac{-4 \\pm \\sqrt{16 - 4(1)(-1)}}{2} = \\frac{-4 \\pm \\sqrt{20}}{2} = -2 \\pm \\sqrt{5} \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( a = 1, b = 4, c = -1 \\) into the quadratic formula.",
-        "workingOut": "\\(u = \\frac\\{-4 \\pm \\sqrt\\{4^2 - 4(1)(-1)\\}\\}\\{2(1)\\}\\)",
+        "workingOut": "\\(u = \\frac{-4 \\pm \\sqrt{4^2 - 4(1)(-1)}}{2(1)}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the discriminant.",
-        "workingOut": "\\(u = \\frac\\{-4 \\pm \\sqrt\\{20\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(u = \\frac{-4 \\pm \\sqrt{20}}{2}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the surd \\( \\sqrt{20} = 2\\sqrt{5} \\) and divide terms by 2.",
-        "workingOut": "\\(u = \\frac\\{-4 \\pm 2\\sqrt\\{5\\}\\}\\{2\\} = -2 \\pm \\sqrt\\{5\\}\\)",
+        "workingOut": "\\(u = \\frac{-4 \\pm 2\\sqrt{5}}{2} = -2 \\pm \\sqrt{5}\\)",
         "graphData": null
       }
     ],
@@ -1301,7 +1301,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 4y^2 - 7y + 3 = 0 \\)",
     "options": [
       {
-        "text": "\\((4y+3)(y+1) = 0 \\Rightarrow y = 1, \\frac{3}{4}\\)",
+        "text": "\\((3y-3)(y-1) = 0 \\Rightarrow y = 1, \\frac{2}{4}\\)",
         "imageUrl": ""
       },
       {
@@ -1309,7 +1309,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3y-3)(y-1) = 0 \\Rightarrow y = 1, \\frac{2}{4}\\)",
+        "text": "\\((4y+3)(y+1) = 0 \\Rightarrow y = 1, \\frac{3}{4}\\)",
         "imageUrl": ""
       },
       {
@@ -1325,7 +1325,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Find factors of 12 that sum to -7.",
     "solution": "\\( (4y-3)(y-1) = 0 \\Rightarrow y = 1, \\frac{3}{4} \\)",
@@ -1347,7 +1347,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(y = 1, \\frac\\{3\\}\\{4\\}\\)",
+        "workingOut": "\\(y = 1, \\frac{3}{4}\\)",
         "graphData": null
       }
     ],
@@ -1366,7 +1366,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^-3 = 2x + 3 \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow (x-3)(x+1) = 0 \\Rightarrow x = 3, 0\\)",
+        "text": "\\(x^-2 = 2x + 3 \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow (x-3)(x+1) = 0 \\Rightarrow x = 3, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 = 2x + 3 \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow (x-3)(x+1) = 0 \\Rightarrow x = 3, 0\\)",
         "imageUrl": ""
       },
       {
@@ -1374,19 +1378,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^-2 = 2x + 3 \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow (x-3)(x+1) = 0 \\Rightarrow x = 3, 1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 = 2x + 3 \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow (x-3)(x+1) = 0 \\Rightarrow x = 3, -1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 = 2x + 3 \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow (x-3)(x+1) = 0 \\Rightarrow x = 3, 0\\)",
+        "text": "\\(x^-3 = 2x + 3 \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow (x-3)(x+1) = 0 \\Rightarrow x = 3, 0\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply all terms by \\( x \\) to clear the fraction.",
     "solution": "\\( x^2 = 2x + 3 \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow (x-3)(x+1) = 0 \\Rightarrow x = 3, -1 \\)",
@@ -1418,19 +1418,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the literal quadratic equation for \\( x \\): \\( x^2 - 6ax + 9a^2 - b^2 = 0 \\)",
     "options": [
       {
-        "text": "\\(x = 3a \\pm b\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x = b \\pm 3a\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x = -3a \\pm b\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x = 3a + b^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = 3a \\pm b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = b \\pm 3a\\)",
         "imageUrl": ""
       }
     ],
@@ -1471,14 +1471,6 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 4y^2 = 3y \\)",
     "options": [
       {
-        "text": "\\(4y^2 + 3y = 0 \\Rightarrow y(4y + 3) = 0 \\Rightarrow y = 0, \\frac{3}{4}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(5y^2 - 3y = 0 \\Rightarrow y(4y - 3) = 0 \\Rightarrow y = 0, \\frac{4}{4}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(3y^2 - 3y = 0 \\Rightarrow y(4y - 3) = 0 \\Rightarrow y = 0, \\frac{2}{4}\\)",
         "imageUrl": ""
       },
@@ -1487,7 +1479,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(5y^2 - 3y = 0 \\Rightarrow y(4y - 3) = 0 \\Rightarrow y = 0, \\frac{4}{4}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(-5y^2 - 3y = 0 \\Rightarrow y(4y - 3) = 0 \\Rightarrow y = 0, \\frac{-4}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4y^2 + 3y = 0 \\Rightarrow y(4y + 3) = 0 \\Rightarrow y = 0, \\frac{3}{4}\\)",
         "imageUrl": ""
       },
       {
@@ -1495,7 +1495,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Subtract \\( 3y \\) from both sides.",
     "solution": "\\( 4y^2 - 3y = 0 \\Rightarrow y(4y - 3) = 0 \\Rightarrow y = 0, \\frac{3}{4} \\)",
@@ -1512,7 +1512,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve for the roots.",
-        "workingOut": "\\(y = 0, \\frac\\{3\\}\\{4\\}\\)",
+        "workingOut": "\\(y = 0, \\frac{3}{4}\\)",
         "graphData": null
       }
     ],
@@ -1527,10 +1527,6 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by dividing both sides by the coefficient of \\( x^2 \\) and completing the square: \\( 3x^2 + 6x + 2 = 0 \\)",
     "options": [
       {
-        "text": "\\(x^2 - 2x - \\frac{2}{3} = 0 \\Rightarrow x^2 - 2x = +\\frac{2}{3} \\Rightarrow x^2 - 2x - 1 = \\frac{1}{3} \\Rightarrow (x-1)^2 = \\frac{1}{3} \\Rightarrow x = +1 \\pm \\frac{\\sqrt{3}}{3}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 + 2x + \\frac{2}{3} = 0 \\Rightarrow x^2 + 2x = -\\frac{2}{3} \\Rightarrow x^2 + 2x + 1 = \\frac{1}{3} \\Rightarrow (x+1)^2 = \\frac{1}{3} \\Rightarrow x = -1 + \\frac{\\sqrt{3}}{3}\\)",
         "imageUrl": ""
       },
@@ -1543,37 +1539,41 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 2x + \\frac{2}{3} = 0 \\Rightarrow x^2 + 2x = -\\frac{2}{3} \\Rightarrow x^2 + 2x + 1 = \\frac{1}{3} \\Rightarrow (x+1)^2 = \\frac{1}{3} \\Rightarrow x = -1 \\pm 0\\)",
+        "text": "\\(x^2 + 2x + \\frac{2}{3} = 0 \\Rightarrow x^2 + 2x = -\\frac{2}{3} \\Rightarrow x^2 + 2x + 1 = \\frac{1}{3} \\Rightarrow (x+1)^2 = \\frac{1}{3} \\Rightarrow x = -1 \\pm 1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 2x + \\frac{2}{3} = 0 \\Rightarrow x^2 + 2x = -\\frac{2}{3} \\Rightarrow x^2 + 2x + 1 = \\frac{1}{3} \\Rightarrow (x+1)^2 = \\frac{1}{3} \\Rightarrow x = -1 \\pm 1\\)",
+        "text": "\\(x^2 - 2x - \\frac{2}{3} = 0 \\Rightarrow x^2 - 2x = +\\frac{2}{3} \\Rightarrow x^2 - 2x - 1 = \\frac{1}{3} \\Rightarrow (x-1)^2 = \\frac{1}{3} \\Rightarrow x = +1 \\pm \\frac{\\sqrt{3}}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 + 2x + \\frac{2}{3} = 0 \\Rightarrow x^2 + 2x = -\\frac{2}{3} \\Rightarrow x^2 + 2x + 1 = \\frac{1}{3} \\Rightarrow (x+1)^2 = \\frac{1}{3} \\Rightarrow x = -1 \\pm 0\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Divide by 3 and complete the square.",
     "solution": "\\( x^2 + 2x + \\frac{2}{3} = 0 \\Rightarrow x^2 + 2x = -\\frac{2}{3} \\Rightarrow x^2 + 2x + 1 = \\frac{1}{3} \\Rightarrow (x+1)^2 = \\frac{1}{3} \\Rightarrow x = -1 \\pm \\frac{\\sqrt{3}}{3} \\)",
     "solutionSteps": [
       {
         "explanation": "Divide by 3.",
-        "workingOut": "\\(x^2 + 2x + \\frac\\{2\\}\\{3\\} = 0\\)",
+        "workingOut": "\\(x^2 + 2x + \\frac{2}{3} = 0\\)",
         "graphData": null
       },
       {
         "explanation": "Isolate variables and add 1.",
-        "workingOut": "\\(x^2 + 2x + 1 = 1 - \\frac\\{2\\}\\{3\\}\\)",
+        "workingOut": "\\(x^2 + 2x + 1 = 1 - \\frac{2}{3}\\)",
         "graphData": null
       },
       {
         "explanation": "Rewrite as a square.",
-        "workingOut": "\\((x + 1)^2 = \\frac\\{1\\}\\{3\\}\\)",
+        "workingOut": "\\((x + 1)^2 = \\frac{1}{3}\\)",
         "graphData": null
       },
       {
         "explanation": "Solve and rationalise.",
-        "workingOut": "\\(x + 1 = \\pm \\frac\\{\\sqrt\\{3\\}\\}\\{3\\} \\Rightarrow x = -1 \\pm \\frac\\{\\sqrt\\{3\\}\\}\\{3\\}\\)",
+        "workingOut": "\\(x + 1 = \\pm \\frac{\\sqrt{3}}{3} \\Rightarrow x = -1 \\pm \\frac{\\sqrt{3}}{3}\\)",
         "graphData": null
       }
     ],
@@ -1588,19 +1588,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 2x^2 + 7x + 3 = 0 \\)",
     "options": [
       {
-        "text": "\\((2x+1)(x+3) = 0 \\Rightarrow x = -3, -\\frac{1}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3x+1)(x+3) = 0 \\Rightarrow x = -3, -\\frac{2}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((-2x+1)(x+3) = 0 \\Rightarrow x = -3, -\\frac{-1}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((2x-1)(x-3) = 0 \\Rightarrow x = +3, +\\frac{1}{2}\\)",
+        "text": "\\((-3x+1)(x+3) = 0 \\Rightarrow x = -3, -\\frac{-2}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -1608,11 +1600,19 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((-3x+1)(x+3) = 0 \\Rightarrow x = -3, -\\frac{-2}{2}\\)",
+        "text": "\\((2x-1)(x-3) = 0 \\Rightarrow x = +3, +\\frac{1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x+1)(x+3) = 0 \\Rightarrow x = -3, -\\frac{1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x+1)(x+3) = 0 \\Rightarrow x = -3, -\\frac{2}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Find factors of 6 that add to 7.",
     "solution": "\\( (2x+1)(x+3) = 0 \\Rightarrow x = -3, -\\frac{1}{2} \\)",
@@ -1634,7 +1634,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(x = -3, -\\frac\\{1\\}\\{2\\}\\)",
+        "workingOut": "\\(x = -3, -\\frac{1}{2}\\)",
         "graphData": null
       }
     ],
@@ -1648,30 +1648,6 @@ export const Y11_CH1D_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve by dividing both sides by the coefficient of \\( x^2 \\) and completing the square: \\( 4x^2 + 8x - 5 = 0 \\)",
     "options": [
-      {
-        "text": "\\(x^2 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = + \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{5}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 - 2x + \\frac{5}{4} = 0 \\Rightarrow x^2 - 2x - 1 = \\frac{9}{4} \\Rightarrow (x-1)^2 = \\frac{9}{4} \\Rightarrow x - 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, +\\frac{5}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{6}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = \\pm 0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^1 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{4}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^-3 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{-6}{2}\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\(x^2 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{5}{2}\\)",
         "imageUrl": ""
@@ -1687,6 +1663,30 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(x^2 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = - \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{5}{2}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x^-3 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{-6}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^3 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{6}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^1 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{4}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 - 2x + \\frac{5}{4} = 0 \\Rightarrow x^2 - 2x - 1 = \\frac{9}{4} \\Rightarrow (x-1)^2 = \\frac{9}{4} \\Rightarrow x - 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, +\\frac{5}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = + \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{5}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 + 2x - \\frac{5}{4} = 0 \\Rightarrow x^2 + 2x + 1 = \\frac{9}{4} \\Rightarrow (x+1)^2 = \\frac{9}{4} \\Rightarrow x + 1 = \\pm 0\\)",
+        "imageUrl": ""
       }
     ],
     "answer": "0",
@@ -1696,22 +1696,22 @@ export const Y11_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Divide by 4.",
-        "workingOut": "\\(x^2 + 2x - \\frac\\{5\\}\\{4\\} = 0\\)",
+        "workingOut": "\\(x^2 + 2x - \\frac{5}{4} = 0\\)",
         "graphData": null
       },
       {
         "explanation": "Add \\( \\frac{5}{4} \\) and add 1 to complete the square.",
-        "workingOut": "\\(x^2 + 2x + 1 = \\frac\\{5\\}\\{4\\} + 1\\)",
+        "workingOut": "\\(x^2 + 2x + 1 = \\frac{5}{4} + 1\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\((x + 1)^2 = \\frac\\{9\\}\\{4\\}\\)",
+        "workingOut": "\\((x + 1)^2 = \\frac{9}{4}\\)",
         "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(x + 1 = \\pm \\frac\\{3\\}\\{2\\} \\Rightarrow x = \\frac\\{1\\}\\{2\\}, -\\frac\\{5\\}\\{2\\}\\)",
+        "workingOut": "\\(x + 1 = \\pm \\frac{3}{2} \\Rightarrow x = \\frac{1}{2}, -\\frac{5}{2}\\)",
         "graphData": null
       }
     ],
@@ -1730,7 +1730,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(t^1 = 4 \\Rightarrow t = \\pm 2\\)",
+        "text": "\\(t^2 = 4 \\Rightarrow t = + 2\\)",
         "imageUrl": ""
       },
       {
@@ -1742,11 +1742,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(t^2 = 4 \\Rightarrow t = + 2\\)",
+        "text": "\\(t^1 = 4 \\Rightarrow t = \\pm 2\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange to solve for \\( t^2 \\).",
     "solution": "\\( t^2 = 4 \\Rightarrow t = \\pm 2 \\)",
@@ -1758,7 +1758,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Take the square root of both sides.",
-        "workingOut": "\\(t = \\pm \\sqrt\\{4\\}\\)",
+        "workingOut": "\\(t = \\pm \\sqrt{4}\\)",
         "graphData": null
       },
       {
@@ -1778,11 +1778,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 10t + 24 = t^2 \\)",
     "options": [
       {
+        "text": "\\(t^2 - 10t - 24 = 0 \\Rightarrow (t-12)(t+2) = 0 \\Rightarrow t = -2, 12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(t^-3 - 10t - 24 = 0 \\Rightarrow (t-12)(t+2) = 0 \\Rightarrow t = -2, -13\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(t^3 - 10t - 24 = 0 \\Rightarrow (t-12)(t+2) = 0 \\Rightarrow t = -2, 13\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(t^2 - 10t - 24 = 0 \\Rightarrow (t-12)(t+2) = 0 \\Rightarrow t = -2, 12\\)",
+        "text": "\\(t^-2 - 10t - 24 = 0 \\Rightarrow (t-12)(t+2) = 0 \\Rightarrow t = -2, -12\\)",
         "imageUrl": ""
       },
       {
@@ -1792,17 +1800,9 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(t^1 - 10t - 24 = 0 \\Rightarrow (t-12)(t+2) = 0 \\Rightarrow t = -2, 11\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(t^-3 - 10t - 24 = 0 \\Rightarrow (t-12)(t+2) = 0 \\Rightarrow t = -2, -13\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(t^-2 - 10t - 24 = 0 \\Rightarrow (t-12)(t+2) = 0 \\Rightarrow t = -2, -12\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange terms to get a positive leading coefficient.",
     "solution": "\\( t^2 - 10t - 24 = 0 \\Rightarrow (t-12)(t+2) = 0 \\Rightarrow t = -2, 12 \\)",
@@ -1834,7 +1834,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( x^2 + 5x + 6 = 0 \\)",
     "options": [
       {
+        "text": "\\((x-2)(x-3) = 0 \\Rightarrow x = +2, +3\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((x+-3)(x+3) = 0 \\Rightarrow x = -2, 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x+-2)(x+3) = 0 \\Rightarrow x = -2, 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x+1)(x+3) = 0 \\Rightarrow x = -2, -4\\)",
         "imageUrl": ""
       },
       {
@@ -1844,21 +1856,9 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\((x+2)(x+3) = 0 \\Rightarrow x = -2, -3\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\((x-2)(x-3) = 0 \\Rightarrow x = +2, +3\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((x+1)(x+3) = 0 \\Rightarrow x = -2, -4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((x+-2)(x+3) = 0 \\Rightarrow x = -2, 3\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Find two numbers that multiply to 6 and add to 5.",
     "solution": "\\( (x+2)(x+3) = 0 \\Rightarrow x = -2, -3 \\)",
@@ -1870,7 +1870,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Set each factor to zero.",
-        "workingOut": "\\(x + 2 = 0 \\quad \\text\\{or\\} \\quad x + 3 = 0\\)",
+        "workingOut": "\\(x + 2 = 0 \\quad \\text{or} \\quad x + 3 = 0\\)",
         "graphData": null
       },
       {
@@ -1890,11 +1890,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 3n^2 - n - 4 = 0 \\)",
     "options": [
       {
+        "text": "\\((-4n-4)(n+1) = 0 \\Rightarrow n = -1, \\frac{-5}{3}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((3n+4)(n-1) = 0 \\Rightarrow n = +1, \\frac{4}{3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((-4n-4)(n+1) = 0 \\Rightarrow n = -1, \\frac{-5}{3}\\)",
+        "text": "\\((3n-4)(n+1) = 0 \\Rightarrow n = -1, \\frac{4}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4n-4)(n+1) = 0 \\Rightarrow n = -1, \\frac{5}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -1903,14 +1911,6 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "text": "\\((2n-4)(n+1) = 0 \\Rightarrow n = -1, \\frac{3}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((4n-4)(n+1) = 0 \\Rightarrow n = -1, \\frac{5}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3n-4)(n+1) = 0 \\Rightarrow n = -1, \\frac{4}{3}\\)",
         "imageUrl": ""
       }
     ],
@@ -1936,7 +1936,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(n = -1, \\frac\\{4\\}\\{3\\}\\)",
+        "workingOut": "\\(n = -1, \\frac{4}{3}\\)",
         "graphData": null
       }
     ],
@@ -1963,11 +1963,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(3t^2 + 14t + 8 = 0 \\Rightarrow (3t-2)(t+4) = 0 \\Rightarrow t = +\\frac{2}{3}, 4\\)",
+        "text": "\\(3t^2 - 14t - 8 = 0 \\Rightarrow (3t+2)(t-4) = 0 \\Rightarrow t = -\\frac{2}{3}, 4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(3t^2 - 14t - 8 = 0 \\Rightarrow (3t+2)(t-4) = 0 \\Rightarrow t = -\\frac{2}{3}, 4\\)",
+        "text": "\\(3t^2 + 14t + 8 = 0 \\Rightarrow (3t-2)(t+4) = 0 \\Rightarrow t = +\\frac{2}{3}, 4\\)",
         "imageUrl": ""
       },
       {
@@ -1975,7 +1975,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange and solve.",
     "solution": "\\( 3t^2 - 14t - 8 = 0 \\Rightarrow (3t+2)(t-4) = 0 \\Rightarrow t = -\\frac{2}{3}, 4 \\)",
@@ -1997,7 +1997,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(t = -\\frac\\{2\\}\\{3\\}, 4\\)",
+        "workingOut": "\\(t = -\\frac{2}{3}, 4\\)",
         "graphData": null
       }
     ],
@@ -2012,35 +2012,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by completing the square: \\( y^2 + 5y = 14 \\)",
     "options": [
       {
-        "text": "\\(y^3 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, -6\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(y^2 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = + \\frac{9}{2} \\Rightarrow y = 2, -7\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^1 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, -8\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^2 - 5y - \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y-\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y - \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, +7\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^2 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm 0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^-3 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, 6\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^2 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = - \\frac{9}{2} \\Rightarrow y = 2, -7\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^-2 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, 7\\)",
         "imageUrl": ""
       },
       {
@@ -2048,33 +2020,61 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(y^-2 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^1 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, -8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^3 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, -6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2 - 5y - \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y-\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y - \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, +7\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(y^2 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = - \\frac{9}{2} \\Rightarrow y = 2, -7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^-3 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, 6\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Be comfortable working with fractions when completing the square for an odd linear coefficient.",
     "solution": "\\( y^2 + 5y + \\frac{25}{4} = \\frac{81}{4} \\Rightarrow (y+\\frac{5}{2})^2 = \\frac{81}{4} \\Rightarrow y + \\frac{5}{2} = \\pm \\frac{9}{2} \\Rightarrow y = 2, -7 \\)",
     "solutionSteps": [
       {
         "explanation": "Add \\( \\left(\\frac{5}{2}\\right)^2 = \\frac{25}{4} \\) to both sides.",
-        "workingOut": "\\(y^2 + 5y + \\frac\\{25\\}\\{4\\} = 14 + \\frac\\{25\\}\\{4\\}\\)",
+        "workingOut": "\\(y^2 + 5y + \\frac{25}{4} = 14 + \\frac{25}{4}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the right side.",
-        "workingOut": "\\(\\left(y + \\frac\\{5\\}\\{2\\}\\right)^2 = \\frac\\{81\\}\\{4\\}\\)",
+        "workingOut": "\\(\\left(y + \\frac{5}{2}\\right)^2 = \\frac{81}{4}\\)",
         "graphData": null
       },
       {
         "explanation": "Take the square root of both sides.",
-        "workingOut": "\\(y + \\frac\\{5\\}\\{2\\} = \\pm \\frac\\{9\\}\\{2\\}\\)",
+        "workingOut": "\\(y + \\frac{5}{2} = \\pm \\frac{9}{2}\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for the two values of \\( y \\).",
-        "workingOut": "\\(y = -\\frac\\{5\\}\\{2\\} \\pm \\frac\\{9\\}\\{2\\} \\Rightarrow y = 2, -7\\)",
+        "workingOut": "\\(y = -\\frac{5}{2} \\pm \\frac{9}{2} \\Rightarrow y = 2, -7\\)",
         "graphData": null
       }
     ],
@@ -2089,6 +2089,14 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( \\frac{3m}{2} = 2 + \\frac{2}{m} \\)",
     "options": [
       {
+        "text": "\\(2m^2 = 4m + 4 \\Rightarrow 3m^2 - 4m - 4 = 0 \\Rightarrow (3m+2)(m-2) = 0 \\Rightarrow m = 2, -\\frac{1}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3m^2 = 4m + 4 \\Rightarrow 3m^2 - 4m - 4 = 0 \\Rightarrow (3m+2)(m-2) = 0 \\Rightarrow m = 2, -\\frac{-2}{3}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(-4m^2 = 4m + 4 \\Rightarrow 3m^2 - 4m - 4 = 0 \\Rightarrow (3m+2)(m-2) = 0 \\Rightarrow m = 2, -\\frac{-3}{3}\\)",
         "imageUrl": ""
       },
@@ -2101,19 +2109,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-3m^2 = 4m + 4 \\Rightarrow 3m^2 - 4m - 4 = 0 \\Rightarrow (3m+2)(m-2) = 0 \\Rightarrow m = 2, -\\frac{-2}{3}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(4m^2 = 4m + 4 \\Rightarrow 3m^2 - 4m - 4 = 0 \\Rightarrow (3m+2)(m-2) = 0 \\Rightarrow m = 2, -\\frac{3}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(2m^2 = 4m + 4 \\Rightarrow 3m^2 - 4m - 4 = 0 \\Rightarrow (3m+2)(m-2) = 0 \\Rightarrow m = 2, -\\frac{1}{3}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply all terms by the LCD, which is \\( 2m \\).",
     "solution": "\\( 3m^2 = 4m + 4 \\Rightarrow 3m^2 - 4m - 4 = 0 \\Rightarrow (3m+2)(m-2) = 0 \\Rightarrow m = 2, -\\frac{2}{3} \\)",
@@ -2130,7 +2130,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Factor by grouping.",
-        "workingOut": "\\((3m + 2)(m - 2) = 0 \\Rightarrow m = 2, -\\frac\\{2\\}\\{3\\}\\)",
+        "workingOut": "\\((3m + 2)(m - 2) = 0 \\Rightarrow m = 2, -\\frac{2}{3}\\)",
         "graphData": null
       }
     ],
@@ -2149,7 +2149,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((-3x+5)(x-1) = 0 \\Rightarrow x = 1, -\\frac{-6}{2}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((3x+5)(x-1) = 0 \\Rightarrow x = 1, -\\frac{6}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x+5)(x-1) = 0 \\Rightarrow x = 1, -\\frac{5}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -2159,17 +2167,9 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\((-2x+5)(x-1) = 0 \\Rightarrow x = 1, -\\frac{-5}{2}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\((-3x+5)(x-1) = 0 \\Rightarrow x = 1, -\\frac{-6}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((2x+5)(x-1) = 0 \\Rightarrow x = 1, -\\frac{5}{2}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Find factors of -10 that add to 3.",
     "solution": "\\( (2x+5)(x-1) = 0 \\Rightarrow x = 1, -\\frac{5}{2} \\)",
@@ -2191,7 +2191,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(x = 1, -\\frac\\{5\\}\\{2\\}\\)",
+        "workingOut": "\\(x = 1, -\\frac{5}{2}\\)",
         "graphData": null
       }
     ],
@@ -2210,7 +2210,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(7b^2 + b - 2 = 5 \\Rightarrow 6b^2 + b - 7 = 0 \\Rightarrow (6b+7)(b-1) = 0 \\Rightarrow b = 1, -\\frac{8}{6}\\)",
+        "text": "\\(-6b^2 + b - 2 = 5 \\Rightarrow 6b^2 + b - 7 = 0 \\Rightarrow (6b+7)(b-1) = 0 \\Rightarrow b = 1, -\\frac{-7}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5b^2 + b - 2 = 5 \\Rightarrow 6b^2 + b - 7 = 0 \\Rightarrow (6b+7)(b-1) = 0 \\Rightarrow b = 1, -\\frac{6}{6}\\)",
         "imageUrl": ""
       },
       {
@@ -2218,19 +2222,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-6b^2 + b - 2 = 5 \\Rightarrow 6b^2 + b - 7 = 0 \\Rightarrow (6b+7)(b-1) = 0 \\Rightarrow b = 1, -\\frac{-7}{6}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(-7b^2 + b - 2 = 5 \\Rightarrow 6b^2 + b - 7 = 0 \\Rightarrow (6b+7)(b-1) = 0 \\Rightarrow b = 1, -\\frac{-8}{6}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5b^2 + b - 2 = 5 \\Rightarrow 6b^2 + b - 7 = 0 \\Rightarrow (6b+7)(b-1) = 0 \\Rightarrow b = 1, -\\frac{6}{6}\\)",
+        "text": "\\(7b^2 + b - 2 = 5 \\Rightarrow 6b^2 + b - 7 = 0 \\Rightarrow (6b+7)(b-1) = 0 \\Rightarrow b = 1, -\\frac{8}{6}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Expand the brackets first, then rearrange into standard form.",
     "solution": "\\( 6b^2 + b - 2 = 5 \\Rightarrow 6b^2 + b - 7 = 0 \\Rightarrow (6b+7)(b-1) = 0 \\Rightarrow b = 1, -\\frac{7}{6} \\)",
@@ -2252,7 +2252,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(b = 1, -\\frac\\{7\\}\\{6\\}\\)",
+        "workingOut": "\\(b = 1, -\\frac{7}{6}\\)",
         "graphData": null
       }
     ],
@@ -2275,19 +2275,19 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(c^2 = 20 \\Rightarrow c = \\pm \\sqrt{25} = \\pm 5\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(c^2 = 21 \\Rightarrow c = \\pm \\sqrt{25} = \\pm 5\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(c^2 = 25 \\Rightarrow c = - \\sqrt{25} = \\pm 5\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(c^2 = 20 \\Rightarrow c = \\pm \\sqrt{25} = \\pm 5\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Move the constant term to the right-hand side.",
     "solution": "\\( c^2 = 25 \\Rightarrow c = \\pm \\sqrt{25} = \\pm 5 \\)",
@@ -2299,7 +2299,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Take the square root.",
-        "workingOut": "\\(c = \\pm \\sqrt\\{25\\}\\)",
+        "workingOut": "\\(c = \\pm \\sqrt{25}\\)",
         "graphData": null
       },
       {
@@ -2319,11 +2319,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( y + \\frac{3}{y} = \\frac{13}{2} \\)",
     "options": [
       {
+        "text": "\\(-3y^2 + 6 = 13y \\Rightarrow 2y^2 - 13y + 6 = 0 \\Rightarrow (2y-1)(y-6) = 0 \\Rightarrow y = 6, \\frac{-2}{2}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(2y^2 + 6 = 13y \\Rightarrow 2y^2 - 13y + 6 = 0 \\Rightarrow (2y-1)(y-6) = 0 \\Rightarrow y = 6, \\frac{1}{2}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(-2y^2 + 6 = 13y \\Rightarrow 2y^2 - 13y + 6 = 0 \\Rightarrow (2y-1)(y-6) = 0 \\Rightarrow y = 6, \\frac{-1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3y^2 + 6 = 13y \\Rightarrow 2y^2 - 13y + 6 = 0 \\Rightarrow (2y-1)(y-6) = 0 \\Rightarrow y = 6, \\frac{2}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -2333,17 +2341,9 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(2y^2 - 6 = 13y \\Rightarrow 2y^2 + 13y - 6 = 0 \\Rightarrow (2y+1)(y+6) = 0 \\Rightarrow y = 6, \\frac{1}{2}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(-3y^2 + 6 = 13y \\Rightarrow 2y^2 - 13y + 6 = 0 \\Rightarrow (2y-1)(y-6) = 0 \\Rightarrow y = 6, \\frac{-2}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(3y^2 + 6 = 13y \\Rightarrow 2y^2 - 13y + 6 = 0 \\Rightarrow (2y-1)(y-6) = 0 \\Rightarrow y = 6, \\frac{2}{2}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply both sides by \\( 2y \\).",
     "solution": "\\( 2y^2 + 6 = 13y \\Rightarrow 2y^2 - 13y + 6 = 0 \\Rightarrow (2y-1)(y-6) = 0 \\Rightarrow y = 6, \\frac{1}{2} \\)",
@@ -2365,7 +2365,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(y = 6, \\frac\\{1\\}\\{2\\}\\)",
+        "workingOut": "\\(y = 6, \\frac{1}{2}\\)",
         "graphData": null
       }
     ],
@@ -2380,7 +2380,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve for \\( x \\): \\( x - 4\\sqrt{x} + 3 = 0 \\)",
     "options": [
       {
-        "text": "\\(x = 1, 3\\)",
+        "text": "\\(x = \\pm 1, \\pm 3\\)",
         "imageUrl": ""
       },
       {
@@ -2388,15 +2388,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = 1, -9\\)",
+        "text": "\\(x = 1, 3\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x = \\pm 1, \\pm 3\\)",
+        "text": "\\(x = 1, -9\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Let \\( u = \\sqrt{x} \\). This means \\( u^2 = x \\). Substitute these in to form a quadratic equation.",
     "solution": "\\(x = 1, 9\\)",
@@ -2433,6 +2433,10 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the fractional equation: \\( \\frac{x}{2} + \\frac{2}{x} = \\frac{5}{2} \\)",
     "options": [
       {
+        "text": "\\(x = 1, 2\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x = 1, 4\\)",
         "imageUrl": ""
       },
@@ -2442,10 +2446,6 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "text": "\\(x = 2, 4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x = 1, 2\\)",
         "imageUrl": ""
       }
     ],
@@ -2539,15 +2539,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = -1 \\pm \\sqrt{2}\\)",
+        "text": "\\(x = 1 \\pm \\sqrt{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x = 1 \\pm \\sqrt{2}\\)",
+        "text": "\\(x = -1 \\pm \\sqrt{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Complete the square by adding \\( \\left(\\frac{b}{2}\\right)^2 \\) to both sides, or use the quadratic formula.",
     "solution": "\\(x = 1 \\pm \\sqrt{2}\\)",
@@ -2588,7 +2588,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y^1 + 5y - 6 = 0 \\Rightarrow (y-1)(y+6) = 0 \\Rightarrow y = 1, -7\\)",
+        "text": "\\(y^2 + 5y - 6 = 0 \\Rightarrow (y-1)(y+6) = 0 \\Rightarrow y = 1, -6\\)",
         "imageUrl": ""
       },
       {
@@ -2596,19 +2596,19 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y^-2 + 5y - 6 = 0 \\Rightarrow (y-1)(y+6) = 0 \\Rightarrow y = 1, 6\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(y^2 - 5y + 6 = 0 \\Rightarrow (y+1)(y-6) = 0 \\Rightarrow y = 1, +6\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(y^2 + 5y - 6 = 0 \\Rightarrow (y-1)(y+6) = 0 \\Rightarrow y = 1, -6\\)",
+        "text": "\\(y^1 + 5y - 6 = 0 \\Rightarrow (y-1)(y+6) = 0 \\Rightarrow y = 1, -7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^-2 + 5y - 6 = 0 \\Rightarrow (y-1)(y+6) = 0 \\Rightarrow y = 1, 6\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Move all terms to the left-hand side first.",
     "solution": "\\( y^2 + 5y - 6 = 0 \\Rightarrow (y-1)(y+6) = 0 \\Rightarrow y = 1, -6 \\)",
@@ -2640,6 +2640,10 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( y^2 + 2y = 0 \\)",
     "options": [
       {
+        "text": "\\(y(y - 2) = 0 \\Rightarrow y = 0 \\text{ or } y = +2\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(y(y - 5) = 2 \\Rightarrow y = 2 \\text{ or } y = +4\\)",
         "imageUrl": ""
       },
@@ -2650,13 +2654,9 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(y(y + 2) = 0 \\Rightarrow y = 0 \\text{ or } y = -2\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(y(y - 2) = 0 \\Rightarrow y = 0 \\text{ or } y = +2\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Factor out the common term \\( y \\).",
     "solution": "\\( y(y + 2) = 0 \\Rightarrow y = 0 \\text{ or } y = -2 \\)",
@@ -2668,7 +2668,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Apply the zero product property.",
-        "workingOut": "\\(y = 0 \\quad \\text\\{or\\} \\quad y + 2 = 0\\)",
+        "workingOut": "\\(y = 0 \\quad \\text{or} \\quad y + 2 = 0\\)",
         "graphData": null
       },
       {
@@ -2688,19 +2688,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve using the quadratic formula: \\( y^2 + y = 5 \\)",
     "options": [
       {
-        "text": "\\(y^2 + y - 5 = 0 \\Rightarrow y = \\frac{-1 \\pm \\sqrt{1 - 4(1)(-5)}}{2} = \\frac{-1 \\pm 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^2 + y - 5 = 0 \\Rightarrow y = \\frac{-1 - \\sqrt{1 - 4(1)(-5)}}{2} = \\frac{-1 \\pm \\sqrt{21}}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(y^2 + y - 5 = 0 \\Rightarrow y = \\frac{-1 + \\sqrt{1 - 4(1)(-5)}}{2} = \\frac{-1 \\pm \\sqrt{21}}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(y^2 + y - 5 = 0 \\Rightarrow y = \\frac{-1 \\pm \\sqrt{1 - 4(1)(-5)}}{2} = \\frac{-1 \\pm 0\\)",
+        "text": "\\(y^2 + y - 5 = 0 \\Rightarrow y = \\frac{-1 \\pm \\sqrt{1 - 4(1)(-5)}}{2} = \\frac{-1 \\pm 1}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -2709,6 +2701,14 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "text": "\\(y^2 - y + 5 = 0 \\Rightarrow y = \\frac{+1 \\pm \\sqrt{1 + 4(1)(+5)}}{2} = \\frac{+1 \\pm \\sqrt{21}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2 + y - 5 = 0 \\Rightarrow y = \\frac{-1 - \\sqrt{1 - 4(1)(-5)}}{2} = \\frac{-1 \\pm \\sqrt{21}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2 + y - 5 = 0 \\Rightarrow y = \\frac{-1 \\pm \\sqrt{1 - 4(1)(-5)}}{2} = \\frac{-1 \\pm 0}{2}\\)",
         "imageUrl": ""
       }
     ],
@@ -2724,12 +2724,12 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Apply the quadratic formula with \\( a = 1, b = 1, c = -5 \\).",
-        "workingOut": "\\(y = \\frac\\{-1 \\pm \\sqrt\\{1^2 - 4(1)(-5)\\}\\}\\{2(1)\\}\\)",
+        "workingOut": "\\(y = \\frac{-1 \\pm \\sqrt{1^2 - 4(1)(-5)}}{2(1)}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the terms.",
-        "workingOut": "\\(y = \\frac\\{-1 \\pm \\sqrt\\{21\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(y = \\frac{-1 \\pm \\sqrt{21}}{2}\\)",
         "graphData": null
       }
     ],
@@ -2744,23 +2744,23 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( x^2 - 6x = 0 \\)",
     "options": [
       {
-        "text": "\\(x(x + 6) = 0 \\Rightarrow x = 0 \\text{ or } x = 6\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x(x - 7) = 1 \\Rightarrow x = 3 \\text{ or } x = 7\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x(x + 8) = 2 \\Rightarrow x = 1 \\text{ or } x = 7\\)",
+        "text": "\\(x(x + 6) = 0 \\Rightarrow x = 0 \\text{ or } x = 6\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x(x - 6) = 0 \\Rightarrow x = 0 \\text{ or } x = 6\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x(x + 8) = 2 \\Rightarrow x = 1 \\text{ or } x = 7\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Factor out the common variable \\( x \\).",
     "solution": "\\( x(x - 6) = 0 \\Rightarrow x = 0 \\text{ or } x = 6 \\)",
@@ -2772,7 +2772,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Set each factor to zero.",
-        "workingOut": "\\(x = 0 \\quad \\text\\{or\\} \\quad x - 6 = 0\\)",
+        "workingOut": "\\(x = 0 \\quad \\text{or} \\quad x - 6 = 0\\)",
         "graphData": null
       },
       {
@@ -2792,15 +2792,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( \\frac{k + 10}{k - 5} - \\frac{10}{k} = \\frac{11}{6} \\)",
     "options": [
       {
-        "text": "\\(\\frac{k - 10}{k + 5} + \\frac{10}{k} = \\frac{11}{6} \\Rightarrow 6k(k-10) + 60(k+5) = 11k(k+5) \\Rightarrow 5k^2 + 55k + 300 = 0 \\Rightarrow k^2 + 11k + 60 = 0 \\Rightarrow k = 15, +4\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{k + 9}{k - 5} - \\frac{10}{k} = \\frac{11}{6} \\Rightarrow 6k(k+10) - 60(k-5) = 11k(k-5) \\Rightarrow 5k^2 - 55k - 300 = 0 \\Rightarrow k^2 - 11k - 60 = 0 \\Rightarrow k = 15, -5\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{k + -11}{k - 5} - \\frac{10}{k} = \\frac{11}{6} \\Rightarrow 6k(k+10) - 60(k-5) = 11k(k-5) \\Rightarrow 5k^2 - 55k - 300 = 0 \\Rightarrow k^2 - 11k - 60 = 0 \\Rightarrow k = 15, 3\\)",
+        "text": "\\(\\frac{k + -10}{k - 5} - \\frac{10}{k} = \\frac{11}{6} \\Rightarrow 6k(k+10) - 60(k-5) = 11k(k-5) \\Rightarrow 5k^2 - 55k - 300 = 0 \\Rightarrow k^2 - 11k - 60 = 0 \\Rightarrow k = 15, 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{k - 10}{k + 5} + \\frac{10}{k} = \\frac{11}{6} \\Rightarrow 6k(k-10) + 60(k+5) = 11k(k+5) \\Rightarrow 5k^2 + 55k + 300 = 0 \\Rightarrow k^2 + 11k + 60 = 0 \\Rightarrow k = 15, +4\\)",
         "imageUrl": ""
       },
       {
@@ -2812,7 +2812,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{k + -10}{k - 5} - \\frac{10}{k} = \\frac{11}{6} \\Rightarrow 6k(k+10) - 60(k-5) = 11k(k-5) \\Rightarrow 5k^2 - 55k - 300 = 0 \\Rightarrow k^2 - 11k - 60 = 0 \\Rightarrow k = 15, 4\\)",
+        "text": "\\(\\frac{k + -11}{k - 5} - \\frac{10}{k} = \\frac{11}{6} \\Rightarrow 6k(k+10) - 60(k-5) = 11k(k-5) \\Rightarrow 5k^2 - 55k - 300 = 0 \\Rightarrow k^2 - 11k - 60 = 0 \\Rightarrow k = 15, 3\\)",
         "imageUrl": ""
       }
     ],
@@ -2858,19 +2858,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by completing the square: \\( a^2 + 8a + 12 = 0 \\)",
     "options": [
       {
+        "text": "\\(a^3 + 8a = -12 \\Rightarrow a^2 + 8a + 16 = 4 \\Rightarrow (a+4)^2 = 4 \\Rightarrow a = -2, -5\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(a^-2 + 8a = -12 \\Rightarrow a^2 + 8a + 16 = 4 \\Rightarrow (a+4)^2 = 4 \\Rightarrow a = -2, 6\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(a^1 + 8a = -12 \\Rightarrow a^2 + 8a + 16 = 4 \\Rightarrow (a+4)^2 = 4 \\Rightarrow a = -2, -7\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^-3 + 8a = -12 \\Rightarrow a^2 + 8a + 16 = 4 \\Rightarrow (a+4)^2 = 4 \\Rightarrow a = -2, 5\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^3 + 8a = -12 \\Rightarrow a^2 + 8a + 16 = 4 \\Rightarrow (a+4)^2 = 4 \\Rightarrow a = -2, -5\\)",
         "imageUrl": ""
       },
       {
@@ -2880,9 +2876,13 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(a^2 + 8a = -12 \\Rightarrow a^2 + 8a + 16 = 4 \\Rightarrow (a+4)^2 = 4 \\Rightarrow a = -2, -6\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(a^-3 + 8a = -12 \\Rightarrow a^2 + 8a + 16 = 4 \\Rightarrow (a+4)^2 = 4 \\Rightarrow a = -2, 5\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "4",
+    "answer": "0",
     "blanks": [],
     "hint": "Move the constant to the right side first.",
     "solution": "\\( a^2 + 8a = -12 \\Rightarrow a^2 + 8a + 16 = 4 \\Rightarrow (a+4)^2 = 4 \\Rightarrow a = -2, -6 \\)",
@@ -2914,11 +2914,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( x = \\frac{x + 3}{x} \\)",
     "options": [
       {
-        "text": "\\(x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 \\pm 0\\)",
+        "text": "\\(x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 + \\sqrt{13}}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 + \\sqrt{13}}{2}\\)",
+        "text": "\\(x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 \\pm 0}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 - \\sqrt{13}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 \\pm 1}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -2928,17 +2936,9 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 \\pm \\sqrt{13}}{2}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 - \\sqrt{13}}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 \\pm 1\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply both sides by \\( x \\) to clear the denominator first.",
     "solution": "\\( x^2 = x + 3 \\Rightarrow x^2 - x - 3 = 0 \\Rightarrow x = \\frac{1 \\pm \\sqrt{13}}{2} \\)",
@@ -2955,7 +2955,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve using the quadratic formula.",
-        "workingOut": "\\(x = \\frac\\{-(-1) \\pm \\sqrt\\{(-1)^2 - 4(1)(-3)\\}\\}\\{2(1)\\} = \\frac\\{1 \\pm \\sqrt\\{13\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(x = \\frac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-3)}}{2(1)} = \\frac{1 \\pm \\sqrt{13}}{2}\\)",
         "graphData": null
       }
     ],
@@ -2974,6 +2974,10 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(12m = 2(9m^2 - 1) \\Rightarrow 18m^2 - 12m - 2 = 0 \\Rightarrow 9m^2 - 6m - 1 = 0 \\Rightarrow m = \\frac{1 \\pm 1}{3}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(12m = 2(9m^2 + 1) \\Rightarrow 18m^2 + 12m + 2 = 0 \\Rightarrow 9m^2 + 6m + 1 = 0 \\Rightarrow m = \\frac{1 \\pm \\sqrt{2}}{3}\\)",
         "imageUrl": ""
       },
@@ -2982,11 +2986,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(12m = 2(9m^2 - 1) \\Rightarrow 18m^2 - 12m - 2 = 0 \\Rightarrow 9m^2 - 6m - 1 = 0 \\Rightarrow m = \\frac{1 \\pm 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(12m = 2(9m^2 - 1) \\Rightarrow 18m^2 - 12m - 2 = 0 \\Rightarrow 9m^2 - 6m - 1 = 0 \\Rightarrow m = \\frac{1 \\pm 0\\)",
+        "text": "\\(12m = 2(9m^2 - 1) \\Rightarrow 18m^2 - 12m - 2 = 0 \\Rightarrow 9m^2 - 6m - 1 = 0 \\Rightarrow m = \\frac{1 \\pm 0}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -2994,19 +2994,19 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Find a common denominator and subtract the fractions on the left side.",
     "solution": "\\( 12m = 2(9m^2 - 1) \\Rightarrow 18m^2 - 12m - 2 = 0 \\Rightarrow 9m^2 - 6m - 1 = 0 \\Rightarrow m = \\frac{1 \\pm \\sqrt{2}}{3} \\)",
     "solutionSteps": [
       {
         "explanation": "Combine the fractions by finding a common denominator of \\( (3m - 1)(3m + 1) = 9m^2 - 1 \\).",
-        "workingOut": "\\(\\frac\\{(3m + 1)^2 - (3m - 1)^2\\}\\{9m^2 - 1\\} = 2\\)",
+        "workingOut": "\\(\\frac{(3m + 1)^2 - (3m - 1)^2}{9m^2 - 1} = 2\\)",
         "graphData": null
       },
       {
         "explanation": "Expand and simplify the numerator.",
-        "workingOut": "\\(\\frac\\{(9m^2 + 6m + 1) - (9m^2 - 6m + 1)\\}\\{9m^2 - 1\\} = 2 \\Rightarrow \\frac\\{12m\\}\\{9m^2 - 1\\} = 2\\)",
+        "workingOut": "\\(\\frac{(9m^2 + 6m + 1) - (9m^2 - 6m + 1)}{9m^2 - 1} = 2 \\Rightarrow \\frac{12m}{9m^2 - 1} = 2\\)",
         "graphData": null
       },
       {
@@ -3021,7 +3021,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Apply the quadratic formula to solve for \\( m \\).",
-        "workingOut": "\\(m = \\frac\\{6 \\pm \\sqrt\\{(-6)^2 - 4(9)(-1)\\}\\}\\{2(9)\\} = \\frac\\{6 \\pm \\sqrt\\{72\\}\\}\\{18\\} = \\frac\\{6 \\pm 6\\sqrt\\{2\\}\\}\\{18\\} = \\frac\\{1 \\pm \\sqrt\\{2\\}\\}\\{3\\}\\)",
+        "workingOut": "\\(m = \\frac{6 \\pm \\sqrt{(-6)^2 - 4(9)(-1)}}{2(9)} = \\frac{6 \\pm \\sqrt{72}}{18} = \\frac{6 \\pm 6\\sqrt{2}}{18} = \\frac{1 \\pm \\sqrt{2}}{3}\\)",
         "graphData": null
       }
     ],
@@ -3036,6 +3036,10 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( 2(k - 1) = \\frac{4 - 4k}{k + 1} \\)",
     "options": [
       {
+        "text": "\\(2(k + 1)(k - 1) = 4 + 4k \\Rightarrow 2(k^2 + 1) = 4 + 4k \\Rightarrow 2k^2 - 4k + 6 = 0 \\Rightarrow k^2 - 2k + 3 = 0 \\Rightarrow k = 1, +3\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(3(k - 1)(k + 1) = 4 - 4k \\Rightarrow 2(k^2 - 1) = 4 - 4k \\Rightarrow 2k^2 + 4k - 6 = 0 \\Rightarrow k^2 + 2k - 3 = 0 \\Rightarrow k = 1, -2\\)",
         "imageUrl": ""
       },
@@ -3044,19 +3048,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(-2(k - 1)(k + 1) = 4 - 4k \\Rightarrow 2(k^2 - 1) = 4 - 4k \\Rightarrow 2k^2 + 4k - 6 = 0 \\Rightarrow k^2 + 2k - 3 = 0 \\Rightarrow k = 1, 3\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(1(k - 1)(k + 1) = 4 - 4k \\Rightarrow 2(k^2 - 1) = 4 - 4k \\Rightarrow 2k^2 + 4k - 6 = 0 \\Rightarrow k^2 + 2k - 3 = 0 \\Rightarrow k = 1, -4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(2(k + 1)(k - 1) = 4 + 4k \\Rightarrow 2(k^2 + 1) = 4 + 4k \\Rightarrow 2k^2 - 4k + 6 = 0 \\Rightarrow k^2 - 2k + 3 = 0 \\Rightarrow k = 1, +3\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(-3(k - 1)(k + 1) = 4 - 4k \\Rightarrow 2(k^2 - 1) = 4 - 4k \\Rightarrow 2k^2 + 4k - 6 = 0 \\Rightarrow k^2 + 2k - 3 = 0 \\Rightarrow k = 1, 2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(-2(k - 1)(k + 1) = 4 - 4k \\Rightarrow 2(k^2 - 1) = 4 - 4k \\Rightarrow 2k^2 + 4k - 6 = 0 \\Rightarrow k^2 + 2k - 3 = 0 \\Rightarrow k = 1, 3\\)",
         "imageUrl": ""
       }
     ],
@@ -3102,19 +3102,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve \\(x^2 - 9x + 20 = 0\\)",
     "options": [
       {
-        "text": "\\(\\{4, 5\\}\\)",
+        "text": "\\({4, -5}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{4, -5\\}\\)",
+        "text": "\\({10, 2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{10, 2\\}\\)",
+        "text": "\\({-4, -5}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{-4, -5\\}\\)",
+        "text": "\\({4, 5}\\)",
         "imageUrl": ""
       }
     ],
@@ -3145,7 +3145,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 5u^2 + u = 0 \\)",
     "options": [
       {
+        "text": "\\(u(-6u + 1) = 0 \\Rightarrow u = 0, -\\frac{-2}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(u(5u + 1) = 0 \\Rightarrow u = 0, -\\frac{1}{5}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(u(4u + 1) = 0 \\Rightarrow u = 0, -\\frac{0}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(u(6u + 1) = 0 \\Rightarrow u = 0, -\\frac{2}{5}\\)",
         "imageUrl": ""
       },
       {
@@ -3155,21 +3167,9 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(u(-5u + 1) = 0 \\Rightarrow u = 0, -\\frac{-1}{5}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(u(-6u + 1) = 0 \\Rightarrow u = 0, -\\frac{-2}{5}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(u(6u + 1) = 0 \\Rightarrow u = 0, -\\frac{2}{5}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(u(5u + 1) = 0 \\Rightarrow u = 0, -\\frac{1}{5}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Factor out \\( u \\).",
     "solution": "\\( u(5u + 1) = 0 \\Rightarrow u = 0, -\\frac{1}{5} \\)",
@@ -3181,7 +3181,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Set each factor to zero and solve.",
-        "workingOut": "\\(u = 0, -\\frac\\{1\\}\\{5\\}\\)",
+        "workingOut": "\\(u = 0, -\\frac{1}{5}\\)",
         "graphData": null
       }
     ],
@@ -3196,19 +3196,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve \\(x^2 + 2x - 15 = 0\\)",
     "options": [
       {
-        "text": "\\(\\{-5, 3\\}\\)",
+        "text": "\\({5, 3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{5, -3\\}\\)",
+        "text": "\\({-5, 3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{-5, -3\\}\\)",
+        "text": "\\({-5, -3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{5, 3\\}\\)",
+        "text": "\\({5, -3}\\)",
         "imageUrl": ""
       }
     ],
@@ -3247,19 +3247,19 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a^2 = 9 \\Rightarrow a = + \\sqrt{9} = \\pm 3\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(a^2 = 9 \\Rightarrow a = \\pm \\sqrt{9} = \\pm 0\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(a^2 = 9 \\Rightarrow a = \\pm \\sqrt{9} = \\pm 3\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(a^2 = 9 \\Rightarrow a = + \\sqrt{9} = \\pm 3\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "4",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange by adding the constant to the other side first.",
     "solution": "\\( a^2 = 9 \\Rightarrow a = \\pm \\sqrt{9} = \\pm 3 \\)",
@@ -3271,7 +3271,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Take the square root of both sides.",
-        "workingOut": "\\(a = \\pm \\sqrt\\{9\\}\\)",
+        "workingOut": "\\(a = \\pm \\sqrt{9}\\)",
         "graphData": null
       },
       {
@@ -3291,15 +3291,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( 16y^2 = 9 \\)",
     "options": [
       {
-        "text": "\\(y^2 = \\frac{9}{16} \\Rightarrow y = \\pm 1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(y^2 = \\frac{9}{16} \\Rightarrow y = \\pm \\frac{3}{4}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^2 = \\frac{9}{16} \\Rightarrow y = + \\frac{3}{4}\\)",
         "imageUrl": ""
       },
       {
@@ -3307,28 +3299,36 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(y^2 = \\frac{9}{16} \\Rightarrow y = \\pm 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2 = \\frac{9}{16} \\Rightarrow y = + \\frac{3}{4}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(y^2 = \\frac{9}{16} \\Rightarrow y = \\pm 0\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "4",
+    "answer": "0",
     "blanks": [],
     "hint": "Divide by 16 first.",
     "solution": "\\( y^2 = \\frac{9}{16} \\Rightarrow y = \\pm \\frac{3}{4} \\)",
     "solutionSteps": [
       {
         "explanation": "Divide both sides of the equation by 16.",
-        "workingOut": "\\(y^2 = \\frac\\{9\\}\\{16\\}\\)",
+        "workingOut": "\\(y^2 = \\frac{9}{16}\\)",
         "graphData": null
       },
       {
         "explanation": "Take the square root of the fraction.",
-        "workingOut": "\\(y = \\pm \\sqrt\\{\\frac\\{9\\}\\{16\\}\\}\\)",
+        "workingOut": "\\(y = \\pm \\sqrt{\\frac{9}{16}}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\(y = \\pm \\frac\\{3\\}\\{4\\}\\)",
+        "workingOut": "\\(y = \\pm \\frac{3}{4}\\)",
         "graphData": null
       }
     ],
@@ -3347,7 +3347,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = \\frac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-3)}}{2(1)} = \\frac{1 \\pm 0\\)",
+        "text": "\\(x = \\frac{-(-1) - \\sqrt{(-1)^2 - 4(1)(-3)}}{2(1)} = \\frac{1 \\pm \\sqrt{13}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = \\frac{+(+1) \\pm \\sqrt{(+1)^2 + 4(1)(+3)}}{2(1)} = \\frac{1 \\pm \\sqrt{13}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = \\frac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-3)}}{2(1)} = \\frac{1 \\pm 0}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -3355,36 +3363,28 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = \\frac{-(-1) - \\sqrt{(-1)^2 - 4(1)(-3)}}{2(1)} = \\frac{1 \\pm \\sqrt{13}}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x = \\frac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-3)}}{2(1)} = \\frac{1 \\pm 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x = \\frac{+(+1) \\pm \\sqrt{(+1)^2 + 4(1)(+3)}}{2(1)} = \\frac{1 \\pm \\sqrt{13}}{2}\\)",
+        "text": "\\(x = \\frac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-3)}}{2(1)} = \\frac{1 \\pm 1}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Identify \\( a = 1, b = -1, c = -3 \\) and substitute into \\( x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\).",
     "solution": "\\( x = \\frac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-3)}}{2(1)} = \\frac{1 \\pm \\sqrt{13}}{2} \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( a = 1, b = -1, c = -3 \\) into the quadratic formula.",
-        "workingOut": "\\(x = \\frac\\{-(-1) \\pm \\sqrt\\{(-1)^2 - 4(1)(-3)\\}\\}\\{2(1)\\}\\)",
+        "workingOut": "\\(x = \\frac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-3)}}{2(1)}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the discriminant.",
-        "workingOut": "\\(x = \\frac\\{1 \\pm \\sqrt\\{1 + 12\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(x = \\frac{1 \\pm \\sqrt{1 + 12}}{2}\\)",
         "graphData": null
       },
       {
         "explanation": "Write the final simplified exact values.",
-        "workingOut": "\\(x = \\frac\\{1 \\pm \\sqrt\\{13\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(x = \\frac{1 \\pm \\sqrt{13}}{2}\\)",
         "graphData": null
       }
     ],
@@ -3399,23 +3399,23 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the fractional equation: \\( \\frac{x}{3} + \\frac{3}{x} = \\frac{10}{3} \\)",
     "options": [
       {
-        "text": "\\(x = -1, -9\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x = 1, 9\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x = 1, 3\\)",
+        "text": "\\(x = -1, -9\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x = 3, 9\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x = 1, 3\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply the entire equation by the lowest common denominator, which is \\( 3x \\), to clear the fractions.",
     "solution": "\\(x = 1, 9\\)",
@@ -3452,15 +3452,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( 9x^2 - 1 = 0 \\)",
     "options": [
       {
-        "text": "\\(9x^2 = 1 \\Rightarrow x^2 = \\frac{1}{9} \\Rightarrow x = - \\frac{1}{3}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(9x^2 = 1 \\Rightarrow x^2 = \\frac{1}{9} \\Rightarrow x = + \\frac{1}{3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(9x^2 = 1 \\Rightarrow x^2 = \\frac{1}{9} \\Rightarrow x = \\pm \\frac{1}{3}\\)",
+        "text": "\\(9x^2 = 1 \\Rightarrow x^2 = \\frac{1}{9} \\Rightarrow x = - \\frac{1}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^2 = 1 \\Rightarrow x^2 = \\frac{1}{9} \\Rightarrow x = \\pm 1\\)",
         "imageUrl": ""
       },
       {
@@ -3468,7 +3468,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(9x^2 = 1 \\Rightarrow x^2 = \\frac{1}{9} \\Rightarrow x = \\pm 1\\)",
+        "text": "\\(9x^2 = 1 \\Rightarrow x^2 = \\frac{1}{9} \\Rightarrow x = \\pm \\frac{1}{3}\\)",
         "imageUrl": ""
       }
     ],
@@ -3484,12 +3484,12 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Divide both sides by 9 to isolate the square.",
-        "workingOut": "\\(x^2 = \\frac\\{1\\}\\{9\\}\\)",
+        "workingOut": "\\(x^2 = \\frac{1}{9}\\)",
         "graphData": null
       },
       {
         "explanation": "Take the square root.",
-        "workingOut": "\\(x = \\pm \\sqrt\\{\\frac\\{1\\}\\{9\\}\\} = \\pm \\frac\\{1\\}\\{3\\}\\)",
+        "workingOut": "\\(x = \\pm \\sqrt{\\frac{1}{9}} = \\pm \\frac{1}{3}\\)",
         "graphData": null
       }
     ],
@@ -3504,14 +3504,6 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 3b^2 - 5b - 2 = 0 \\)",
     "options": [
       {
-        "text": "\\((2b+1)(b-2) = 0 \\Rightarrow b = -\\frac{1}{3}, 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3b-1)(b+2) = 0 \\Rightarrow b = +\\frac{1}{3}, 2\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((-3b+1)(b-2) = 0 \\Rightarrow b = -\\frac{1}{3}, -2\\)",
         "imageUrl": ""
       },
@@ -3520,15 +3512,23 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((-4b+1)(b-2) = 0 \\Rightarrow b = -\\frac{1}{3}, -3\\)",
+        "text": "\\((3b-1)(b+2) = 0 \\Rightarrow b = +\\frac{1}{3}, 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2b+1)(b-2) = 0 \\Rightarrow b = -\\frac{1}{3}, 1\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((4b+1)(b-2) = 0 \\Rightarrow b = -\\frac{1}{3}, 3\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\((-4b+1)(b-2) = 0 \\Rightarrow b = -\\frac{1}{3}, -3\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Find factors of -6 that sum to -5.",
     "solution": "\\( (3b+1)(b-2) = 0 \\Rightarrow b = -\\frac{1}{3}, 2 \\)",
@@ -3550,7 +3550,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(b = -\\frac\\{1\\}\\{3\\}, 2\\)",
+        "workingOut": "\\(b = -\\frac{1}{3}, 2\\)",
         "graphData": null
       }
     ],
@@ -3565,19 +3565,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 6k^2 + 5k = 6 \\)",
     "options": [
       {
-        "text": "\\(6k^2 + 5k - 6 = 0 \\Rightarrow (3k-2)(2k+3) = 0 \\Rightarrow k = \\frac{2}{3}, -\\frac{3}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(-7k^2 + 5k - 6 = 0 \\Rightarrow (3k-2)(2k+3) = 0 \\Rightarrow k = \\frac{2}{3}, -\\frac{-4}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5k^2 + 5k - 6 = 0 \\Rightarrow (3k-2)(2k+3) = 0 \\Rightarrow k = \\frac{2}{3}, -\\frac{2}{2}\\)",
+        "text": "\\(6k^2 + 5k - 6 = 0 \\Rightarrow (3k-2)(2k+3) = 0 \\Rightarrow k = \\frac{2}{3}, -\\frac{3}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6k^2 - 5k + 6 = 0 \\Rightarrow (3k+2)(2k-3) = 0 \\Rightarrow k = \\frac{2}{3}, +\\frac{3}{2}\\)",
+        "text": "\\(7k^2 + 5k - 6 = 0 \\Rightarrow (3k-2)(2k+3) = 0 \\Rightarrow k = \\frac{2}{3}, -\\frac{4}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -3585,7 +3581,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(7k^2 + 5k - 6 = 0 \\Rightarrow (3k-2)(2k+3) = 0 \\Rightarrow k = \\frac{2}{3}, -\\frac{4}{2}\\)",
+        "text": "\\(6k^2 - 5k + 6 = 0 \\Rightarrow (3k+2)(2k-3) = 0 \\Rightarrow k = \\frac{2}{3}, +\\frac{3}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5k^2 + 5k - 6 = 0 \\Rightarrow (3k-2)(2k+3) = 0 \\Rightarrow k = \\frac{2}{3}, -\\frac{2}{2}\\)",
         "imageUrl": ""
       }
     ],
@@ -3611,7 +3611,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(k = \\frac\\{2\\}\\{3\\}, -\\frac\\{3\\}\\{2\\}\\)",
+        "workingOut": "\\(k = \\frac{2}{3}, -\\frac{3}{2}\\)",
         "graphData": null
       }
     ],
@@ -3626,7 +3626,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( n^2 - 10n + 9 = 0 \\)",
     "options": [
       {
-        "text": "\\((n1)(n-9) = 0 \\Rightarrow n = 1, -9\\)",
+        "text": "\\((n0)(n-9) = 0 \\Rightarrow n = 1, 10\\)",
         "imageUrl": ""
       },
       {
@@ -3634,23 +3634,23 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((n1)(n-9) = 0 \\Rightarrow n = 1, -9\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((n+1)(n+9) = 0 \\Rightarrow n = 1, 9\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((n0)(n-9) = 0 \\Rightarrow n = 1, -10\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((n0)(n-9) = 0 \\Rightarrow n = 1, 10\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((n-2)(n-9) = 0 \\Rightarrow n = 1, 8\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\((n0)(n-9) = 0 \\Rightarrow n = 1, -10\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Factors of 9 that sum to -10.",
     "solution": "\\( (n-1)(n-9) = 0 \\Rightarrow n = 1, 9 \\)",
@@ -3677,19 +3677,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve using the quadratic formula: \\( 4x^2 + 8x + 1 = 0 \\)",
     "options": [
       {
-        "text": "\\(x = \\frac{-8 \\pm \\sqrt{64 - 16}}{8} = \\frac{-8 \\pm \\sqrt{48}}{8} = \\frac{-8 \\pm 4\\sqrt{3}}{8} = \\frac{-2 \\pm 0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x = \\frac{-8 \\pm \\sqrt{64 - 16}}{8} = \\frac{-8 \\pm \\sqrt{48}}{8} = \\frac{-8 \\pm 4\\sqrt{3}}{8} = \\frac{-2 \\pm 1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x = \\frac{-8 \\pm \\sqrt{64 - 16}}{8} = \\frac{-8 \\pm \\sqrt{48}}{8} = \\frac{-8 \\pm 4\\sqrt{3}}{8} = \\frac{-2 \\pm \\sqrt{3}}{2}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x = \\frac{+8 \\pm \\sqrt{64 + 16}}{8} = \\frac{+8 \\pm \\sqrt{48}}{8} = \\frac{+8 \\pm 4\\sqrt{3}}{8} = \\frac{+2 \\pm \\sqrt{3}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = \\frac{-8 \\pm \\sqrt{64 - 16}}{8} = \\frac{-8 \\pm \\sqrt{48}}{8} = \\frac{-8 \\pm 4\\sqrt{3}}{8} = \\frac{-2 \\pm 1}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -3699,26 +3695,30 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(x = \\frac{-8 + \\sqrt{64 - 16}}{8} = \\frac{-8 \\pm \\sqrt{48}}{8} = \\frac{-8 \\pm 4\\sqrt{3}}{8} = \\frac{-2 \\pm \\sqrt{3}}{2}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x = \\frac{-8 \\pm \\sqrt{64 - 16}}{8} = \\frac{-8 \\pm \\sqrt{48}}{8} = \\frac{-8 \\pm 4\\sqrt{3}}{8} = \\frac{-2 \\pm 0}{2}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Be careful to divide all terms in the numerator by the denominator.",
     "solution": "\\( x = \\frac{-8 \\pm \\sqrt{64 - 16}}{8} = \\frac{-8 \\pm \\sqrt{48}}{8} = \\frac{-8 \\pm 4\\sqrt{3}}{8} = \\frac{-2 \\pm \\sqrt{3}}{2} \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute coefficients into the quadratic formula.",
-        "workingOut": "\\(x = \\frac\\{-8 \\pm \\sqrt\\{8^2 - 4(4)(1)\\}\\}\\{2(4)\\}\\)",
+        "workingOut": "\\(x = \\frac{-8 \\pm \\sqrt{8^2 - 4(4)(1)}}{2(4)}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the root.",
-        "workingOut": "\\(x = \\frac\\{-8 \\pm \\sqrt\\{48\\}\\}\\{8\\} = \\frac\\{-8 \\pm 4\\sqrt\\{3\\}\\}\\{8\\}\\)",
+        "workingOut": "\\(x = \\frac{-8 \\pm \\sqrt{48}}{8} = \\frac{-8 \\pm 4\\sqrt{3}}{8}\\)",
         "graphData": null
       },
       {
         "explanation": "Divide numerator and denominator by 4.",
-        "workingOut": "\\(x = \\frac\\{-2 \\pm \\sqrt\\{3\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(x = \\frac{-2 \\pm \\sqrt{3}}{2}\\)",
         "graphData": null
       }
     ],
@@ -3733,6 +3733,14 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 12b^2 + 20b + 3 = 0 \\)",
     "options": [
       {
+        "text": "\\((-6b+1)(2b+3) = 0 \\Rightarrow b = -\\frac{1}{6}, -\\frac{-3}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6b-1)(2b-3) = 0 \\Rightarrow b = +\\frac{1}{6}, +\\frac{3}{2}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((5b+1)(2b+3) = 0 \\Rightarrow b = -\\frac{1}{6}, -\\frac{2}{2}\\)",
         "imageUrl": ""
       },
@@ -3741,23 +3749,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((-7b+1)(2b+3) = 0 \\Rightarrow b = -\\frac{1}{6}, -\\frac{-4}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((6b+1)(2b+3) = 0 \\Rightarrow b = -\\frac{1}{6}, -\\frac{3}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((6b-1)(2b-3) = 0 \\Rightarrow b = +\\frac{1}{6}, +\\frac{3}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((-6b+1)(2b+3) = 0 \\Rightarrow b = -\\frac{1}{6}, -\\frac{-3}{2}\\)",
+        "text": "\\((-7b+1)(2b+3) = 0 \\Rightarrow b = -\\frac{1}{6}, -\\frac{-4}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Rewrite in standard order and factor.",
     "solution": "\\( (6b+1)(2b+3) = 0 \\Rightarrow b = -\\frac{1}{6}, -\\frac{3}{2} \\)",
@@ -3779,7 +3779,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(b = -\\frac\\{1\\}\\{6\\}, -\\frac\\{3\\}\\{2\\}\\)",
+        "workingOut": "\\(b = -\\frac{1}{6}, -\\frac{3}{2}\\)",
         "graphData": null
       }
     ],
@@ -3798,15 +3798,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(k(k - -8) = 0 \\Rightarrow k = 0, -8\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(k(k - -9) = 0 \\Rightarrow k = 0, -9\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(k(k + 8) = 0 \\Rightarrow k = 0, 8\\)",
+        "text": "\\(k(k - -8) = 0 \\Rightarrow k = 0, -8\\)",
         "imageUrl": ""
       },
       {
@@ -3814,11 +3810,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(k(k + 8) = 0 \\Rightarrow k = 0, 8\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(k(k - 8) = 0 \\Rightarrow k = 0, 8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Take out the common factor.",
     "solution": "\\( k(k - 8) = 0 \\Rightarrow k = 0, 8 \\)",
@@ -3845,11 +3845,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by completing the square: \\( x^2 + 6x + 2 = 0 \\)",
     "options": [
       {
-        "text": "\\(x^2 + 6x = -2 \\Rightarrow x^2 + 6x + 9 = 7 \\Rightarrow (x+3)^2 = 7 \\Rightarrow x = -3 \\pm 1\\)",
+        "text": "\\(x^2 + 6x = -2 \\Rightarrow x^2 + 6x + 9 = 7 \\Rightarrow (x+3)^2 = 7 \\Rightarrow x = -3 \\pm \\sqrt{7}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 6x = -2 \\Rightarrow x^2 + 6x + 9 = 7 \\Rightarrow (x+3)^2 = 7 \\Rightarrow x = -3 \\pm \\sqrt{7}\\)",
+        "text": "\\(x^2 + 6x = -2 \\Rightarrow x^2 + 6x + 9 = 7 \\Rightarrow (x+3)^2 = 7 \\Rightarrow x = -3 - \\sqrt{7}\\)",
         "imageUrl": ""
       },
       {
@@ -3861,7 +3861,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 6x = -2 \\Rightarrow x^2 + 6x + 9 = 7 \\Rightarrow (x+3)^2 = 7 \\Rightarrow x = -3 - \\sqrt{7}\\)",
+        "text": "\\(x^2 + 6x = -2 \\Rightarrow x^2 + 6x + 9 = 7 \\Rightarrow (x+3)^2 = 7 \\Rightarrow x = -3 \\pm 1\\)",
         "imageUrl": ""
       },
       {
@@ -3886,7 +3886,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\((x + 3)^2 = 7 \\Rightarrow x + 3 = \\pm \\sqrt\\{7\\} \\Rightarrow x = -3 \\pm \\sqrt\\{7\\}\\)",
+        "workingOut": "\\((x + 3)^2 = 7 \\Rightarrow x + 3 = \\pm \\sqrt{7} \\Rightarrow x = -3 \\pm \\sqrt{7}\\)",
         "graphData": null
       }
     ],
@@ -3905,10 +3905,6 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3a-1)(a+5) = 0 \\Rightarrow a = -5, \\frac{2}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((2a+1)(a-5) = 0 \\Rightarrow a = +5, \\frac{1}{2}\\)",
         "imageUrl": ""
       },
@@ -3918,6 +3914,10 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "text": "\\((1a-1)(a+5) = 0 \\Rightarrow a = -5, \\frac{0}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3a-1)(a+5) = 0 \\Rightarrow a = -5, \\frac{2}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -3947,7 +3947,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(a = -5, \\frac\\{1\\}\\{2\\}\\)",
+        "workingOut": "\\(a = -5, \\frac{1}{2}\\)",
         "graphData": null
       }
     ],
@@ -3962,7 +3962,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( a + \\frac{12}{a} = 8 \\)",
     "options": [
       {
+        "text": "\\(a^-3 + 12 = 8a \\Rightarrow a^2 - 8a + 12 = 0 \\Rightarrow (a-2)(a-6) = 0 \\Rightarrow a = 2, -7\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(a^-2 + 12 = 8a \\Rightarrow a^2 - 8a + 12 = 0 \\Rightarrow (a-2)(a-6) = 0 \\Rightarrow a = 2, -6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^1 + 12 = 8a \\Rightarrow a^2 - 8a + 12 = 0 \\Rightarrow (a-2)(a-6) = 0 \\Rightarrow a = 2, 5\\)",
         "imageUrl": ""
       },
       {
@@ -3970,19 +3978,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a^2 - 12 = 8a \\Rightarrow a^2 + 8a - 12 = 0 \\Rightarrow (a+2)(a+6) = 0 \\Rightarrow a = 2, 6\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^-3 + 12 = 8a \\Rightarrow a^2 - 8a + 12 = 0 \\Rightarrow (a-2)(a-6) = 0 \\Rightarrow a = 2, -7\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(a^3 + 12 = 8a \\Rightarrow a^2 - 8a + 12 = 0 \\Rightarrow (a-2)(a-6) = 0 \\Rightarrow a = 2, 7\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(a^1 + 12 = 8a \\Rightarrow a^2 - 8a + 12 = 0 \\Rightarrow (a-2)(a-6) = 0 \\Rightarrow a = 2, 5\\)",
+        "text": "\\(a^2 - 12 = 8a \\Rightarrow a^2 + 8a - 12 = 0 \\Rightarrow (a+2)(a+6) = 0 \\Rightarrow a = 2, 6\\)",
         "imageUrl": ""
       }
     ],
@@ -4023,7 +4023,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( p^2 = p + 12 \\)",
     "options": [
       {
-        "text": "\\(p^2 + p + 12 = 0 \\Rightarrow (p+4)(p-3) = 0 \\Rightarrow p = +3, 4\\)",
+        "text": "\\(p^-3 - p - 12 = 0 \\Rightarrow (p-4)(p+3) = 0 \\Rightarrow p = -3, -5\\)",
         "imageUrl": ""
       },
       {
@@ -4031,7 +4031,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(p^-3 - p - 12 = 0 \\Rightarrow (p-4)(p+3) = 0 \\Rightarrow p = -3, -5\\)",
+        "text": "\\(p^2 + p + 12 = 0 \\Rightarrow (p+4)(p-3) = 0 \\Rightarrow p = +3, 4\\)",
         "imageUrl": ""
       },
       {
@@ -4047,7 +4047,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "4",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange into standard form \\( ap^2 + bp + c = 0 \\).",
     "solution": "\\( p^2 - p - 12 = 0 \\Rightarrow (p-4)(p+3) = 0 \\Rightarrow p = -3, 4 \\)",
@@ -4079,11 +4079,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 6u^2 + 7u - 3 = 0 \\)",
     "options": [
       {
-        "text": "\\((4u-1)(2u+3) = 0 \\Rightarrow u = \\frac{1}{3}, -\\frac{4}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((-3u-1)(2u+3) = 0 \\Rightarrow u = \\frac{1}{3}, -\\frac{-3}{2}\\)",
+        "text": "\\((3u-1)(2u+3) = 0 \\Rightarrow u = \\frac{1}{3}, -\\frac{3}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -4091,7 +4087,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3u-1)(2u+3) = 0 \\Rightarrow u = \\frac{1}{3}, -\\frac{3}{2}\\)",
+        "text": "\\((-3u-1)(2u+3) = 0 \\Rightarrow u = \\frac{1}{3}, -\\frac{-3}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4u-1)(2u+3) = 0 \\Rightarrow u = \\frac{1}{3}, -\\frac{4}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -4125,7 +4125,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(u = \\frac\\{1\\}\\{3\\}, -\\frac\\{3\\}\\{2\\}\\)",
+        "workingOut": "\\(u = \\frac{1}{3}, -\\frac{3}{2}\\)",
         "graphData": null
       }
     ],
@@ -4140,19 +4140,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( a^2 - 11a - 12 = 0 \\)",
     "options": [
       {
-        "text": "\\((a12)(a+1) = 0 \\Rightarrow a = -1, -12\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a-11)(a+1) = 0 \\Rightarrow a = -1, 13\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a-12)(a+1) = 0 \\Rightarrow a = -1, 12\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a11)(a+1) = 0 \\Rightarrow a = -1, -13\\)",
+        "text": "\\((a-13)(a+1) = 0 \\Rightarrow a = -1, 11\\)",
         "imageUrl": ""
       },
       {
@@ -4160,11 +4148,23 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((a-13)(a+1) = 0 \\Rightarrow a = -1, 11\\)",
+        "text": "\\((a-11)(a+1) = 0 \\Rightarrow a = -1, 13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a12)(a+1) = 0 \\Rightarrow a = -1, -12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a11)(a+1) = 0 \\Rightarrow a = -1, -13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a-12)(a+1) = 0 \\Rightarrow a = -1, 12\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Factors of -12 that sum to -11.",
     "solution": "\\( (a-12)(a+1) = 0 \\Rightarrow a = -1, 12 \\)",
@@ -4191,19 +4191,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 2x^2 + 5x + 2 = 0 \\)",
     "options": [
       {
-        "text": "\\((-2x+1)(x+2) = 0 \\Rightarrow x = -2, -\\frac{-1}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((2x+1)(x+2) = 0 \\Rightarrow x = -2, -\\frac{1}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3x+1)(x+2) = 0 \\Rightarrow x = -2, -\\frac{2}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((2x-1)(x-2) = 0 \\Rightarrow x = +2, +\\frac{1}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -4211,11 +4199,23 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((2x-1)(x-2) = 0 \\Rightarrow x = +2, +\\frac{1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-2x+1)(x+2) = 0 \\Rightarrow x = -2, -\\frac{-1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x+1)(x+2) = 0 \\Rightarrow x = -2, -\\frac{2}{2}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((1x+1)(x+2) = 0 \\Rightarrow x = -2, -\\frac{0}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Find two numbers that multiply to \\( 2 \\times 2 = 4 \\) and add to 5 to split the middle term.",
     "solution": "\\( (2x+1)(x+2) = 0 \\Rightarrow x = -2, -\\frac{1}{2} \\)",
@@ -4237,7 +4237,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\( x \\).",
-        "workingOut": "\\(x = -2, -\\frac\\{1\\}\\{2\\}\\)",
+        "workingOut": "\\(x = -2, -\\frac{1}{2}\\)",
         "graphData": null
       }
     ],
@@ -4252,15 +4252,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( a^2 = a + 90 \\)",
     "options": [
       {
-        "text": "\\(a^-2 - a - 90 = 0 \\Rightarrow (a-10)(a+9) = 0 \\Rightarrow a = -9, -10\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(a^3 - a - 90 = 0 \\Rightarrow (a-10)(a+9) = 0 \\Rightarrow a = -9, 11\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^2 + a + 90 = 0 \\Rightarrow (a+10)(a-9) = 0 \\Rightarrow a = +9, 10\\)",
         "imageUrl": ""
       },
       {
@@ -4268,7 +4260,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(a^2 + a + 90 = 0 \\Rightarrow (a+10)(a-9) = 0 \\Rightarrow a = +9, 10\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(a^2 - a - 90 = 0 \\Rightarrow (a-10)(a+9) = 0 \\Rightarrow a = -9, 10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^-2 - a - 90 = 0 \\Rightarrow (a-10)(a+9) = 0 \\Rightarrow a = -9, -10\\)",
         "imageUrl": ""
       },
       {
@@ -4276,7 +4276,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange and find factors of -90 that add to -1.",
     "solution": "\\( a^2 - a - 90 = 0 \\Rightarrow (a-10)(a+9) = 0 \\Rightarrow a = -9, 10 \\)",
@@ -4308,7 +4308,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( k^2 = 30 + 7k \\)",
     "options": [
       {
+        "text": "\\(k^-3 - 7k - 30 = 0 \\Rightarrow (k-10)(k+3) = 0 \\Rightarrow k = -3, -11\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(k^2 - 7k - 30 = 0 \\Rightarrow (k-10)(k+3) = 0 \\Rightarrow k = -3, 10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(k^-2 - 7k - 30 = 0 \\Rightarrow (k-10)(k+3) = 0 \\Rightarrow k = -3, -10\\)",
         "imageUrl": ""
       },
       {
@@ -4320,19 +4328,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(k^-2 - 7k - 30 = 0 \\Rightarrow (k-10)(k+3) = 0 \\Rightarrow k = -3, -10\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(k^3 - 7k - 30 = 0 \\Rightarrow (k-10)(k+3) = 0 \\Rightarrow k = -3, 11\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(k^-3 - 7k - 30 = 0 \\Rightarrow (k-10)(k+3) = 0 \\Rightarrow k = -3, -11\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange to get all terms on the left side.",
     "solution": "\\( k^2 - 7k - 30 = 0 \\Rightarrow (k-10)(k+3) = 0 \\Rightarrow k = -3, 10 \\)",
@@ -4364,6 +4364,18 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( a^2 - 8a + 15 = 0 \\)",
     "options": [
       {
+        "text": "\\((a3)(a-5) = 0 \\Rightarrow a = 3, -5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a2)(a-5) = 0 \\Rightarrow a = 3, -6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a-2)(a-5) = 0 \\Rightarrow a = 3, 6\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((a-3)(a-5) = 0 \\Rightarrow a = 3, 5\\)",
         "imageUrl": ""
       },
@@ -4374,21 +4386,9 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\((a-4)(a-5) = 0 \\Rightarrow a = 3, 4\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\((a2)(a-5) = 0 \\Rightarrow a = 3, -6\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a3)(a-5) = 0 \\Rightarrow a = 3, -5\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a-2)(a-5) = 0 \\Rightarrow a = 3, 6\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Find two numbers that multiply to 15 and add to -8.",
     "solution": "\\( (a-3)(a-5) = 0 \\Rightarrow a = 3, 5 \\)",
@@ -4415,19 +4415,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation reducible to a quadratic form: \\( x^4 - 3x^2 + 2 = 0 \\)",
     "options": [
       {
-        "text": "\\(x = \\pm \\sqrt{1}, \\pm \\sqrt{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x = \\pm 1, \\pm 2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x = \\pm \\sqrt{3}, \\pm \\sqrt{2}\\)",
+        "text": "\\(x = \\sqrt{1}, \\sqrt{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x = \\sqrt{1}, \\sqrt{2}\\)",
+        "text": "\\(x = \\pm \\sqrt{1}, \\pm \\sqrt{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = \\pm \\sqrt{3}, \\pm \\sqrt{2}\\)",
         "imageUrl": ""
       }
     ],
@@ -4468,10 +4468,6 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( c^2 - 8c + 16 = 0 \\)",
     "options": [
       {
-        "text": "\\((c+6)^4 = 3 \\Rightarrow c = 6\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((c-5)^5 = 1 \\Rightarrow c = 6\\)",
         "imageUrl": ""
       },
@@ -4481,6 +4477,10 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "text": "\\((c+4)^2 = 0 \\Rightarrow c = 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((c+6)^4 = 3 \\Rightarrow c = 6\\)",
         "imageUrl": ""
       }
     ],
@@ -4511,23 +4511,23 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve \\(x^2 + 8x + 12 = 0\\)",
     "options": [
       {
-        "text": "\\(\\{6, 2\\}\\)",
+        "text": "\\({-6, 2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{-6, -2\\}\\)",
+        "text": "\\({6, 2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{-6, 2\\}\\)",
+        "text": "\\({-4, -3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{-4, -3\\}\\)",
+        "text": "\\({-6, -2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Find numbers that multiply to 12 and add to 8.",
     "solution": "\\((x+6)(x+2) = 0 \\Rightarrow x=-6, -2\\)",
@@ -4554,19 +4554,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 9x^2 + 4x = 0 \\)",
     "options": [
       {
-        "text": "\\(x(10x + 4) = 0 \\Rightarrow x = 0, -\\frac{5}{9}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x(-10x + 4) = 0 \\Rightarrow x = 0, -\\frac{-5}{9}\\)",
+        "text": "\\(x(8x + 4) = 0 \\Rightarrow x = 0, -\\frac{3}{9}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x(9x - 4) = 0 \\Rightarrow x = 0, +\\frac{4}{9}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x(8x + 4) = 0 \\Rightarrow x = 0, -\\frac{3}{9}\\)",
         "imageUrl": ""
       },
       {
@@ -4576,9 +4568,17 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(x(9x + 4) = 0 \\Rightarrow x = 0, -\\frac{4}{9}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x(10x + 4) = 0 \\Rightarrow x = 0, -\\frac{5}{9}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x(-10x + 4) = 0 \\Rightarrow x = 0, -\\frac{-5}{9}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Factor out \\( x \\).",
     "solution": "\\( x(9x + 4) = 0 \\Rightarrow x = 0, -\\frac{4}{9} \\)",
@@ -4590,7 +4590,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve the linear equations.",
-        "workingOut": "\\(x = 0, -\\frac\\{4\\}\\{9\\}\\)",
+        "workingOut": "\\(x = 0, -\\frac{4}{9}\\)",
         "graphData": null
       }
     ],
@@ -4609,15 +4609,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((y+1)(y-4) = (3-y)(y+2) \\Rightarrow y^2 - 3y - 4 = 6 - y - y^2 \\Rightarrow 2y^2 - 2y - 10 = 0 \\Rightarrow y^2 - y - 5 = 0 \\Rightarrow y = \\frac{1 - \\sqrt{21}}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((y+1)(y-4) = (3-y)(y+2) \\Rightarrow y^2 - 3y - 4 = 6 - y - y^2 \\Rightarrow 2y^2 - 2y - 10 = 0 \\Rightarrow y^2 - y - 5 = 0 \\Rightarrow y = \\frac{1 \\pm 1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((y+1)(y-4) = (3-y)(y+2) \\Rightarrow y^2 - 3y - 4 = 6 - y - y^2 \\Rightarrow 2y^2 - 2y - 10 = 0 \\Rightarrow y^2 - y - 5 = 0 \\Rightarrow y = \\frac{1 \\pm \\sqrt{21}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y+1)(y-4) = (3-y)(y+2) \\Rightarrow y^2 - 3y - 4 = 6 - y - y^2 \\Rightarrow 2y^2 - 2y - 10 = 0 \\Rightarrow y^2 - y - 5 = 0 \\Rightarrow y = \\frac{1 \\pm 0}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y+1)(y-4) = (3-y)(y+2) \\Rightarrow y^2 - 3y - 4 = 6 - y - y^2 \\Rightarrow 2y^2 - 2y - 10 = 0 \\Rightarrow y^2 - y - 5 = 0 \\Rightarrow y = \\frac{1 - \\sqrt{21}}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -4625,11 +4625,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((y+1)(y-4) = (3-y)(y+2) \\Rightarrow y^2 - 3y - 4 = 6 - y - y^2 \\Rightarrow 2y^2 - 2y - 10 = 0 \\Rightarrow y^2 - y - 5 = 0 \\Rightarrow y = \\frac{1 \\pm 0\\)",
+        "text": "\\((y+1)(y-4) = (3-y)(y+2) \\Rightarrow y^2 - 3y - 4 = 6 - y - y^2 \\Rightarrow 2y^2 - 2y - 10 = 0 \\Rightarrow y^2 - y - 5 = 0 \\Rightarrow y = \\frac{1 \\pm 1}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Cross-multiply.",
     "solution": "\\( (y+1)(y-4) = (3-y)(y+2) \\Rightarrow y^2 - 3y - 4 = 6 - y - y^2 \\Rightarrow 2y^2 - 2y - 10 = 0 \\Rightarrow y^2 - y - 5 = 0 \\Rightarrow y = \\frac{1 \\pm \\sqrt{21}}{2} \\)",
@@ -4656,7 +4656,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve using quadratic formula.",
-        "workingOut": "\\(y = \\frac\\{2 \\pm \\sqrt\\{4 - 4(1)(-5)\\}\\}\\{2\\} = 1 \\pm \\sqrt\\{6\\}\\)",
+        "workingOut": "\\(y = \\frac{2 \\pm \\sqrt{4 - 4(1)(-5)}}{2} = 1 \\pm \\sqrt{6}\\)",
         "graphData": null
       }
     ],
@@ -4671,14 +4671,6 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( x^2 = 16 \\)",
     "options": [
       {
-        "text": "\\(x^2 = 16 \\Rightarrow x = - \\sqrt{16} = \\pm 4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 = 16 \\Rightarrow x = \\pm \\sqrt{16} = \\pm 4\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 = 16 \\Rightarrow x = \\pm \\sqrt{16} = \\pm 1\\)",
         "imageUrl": ""
       },
@@ -4689,16 +4681,24 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(x^2 = 16 \\Rightarrow x = + \\sqrt{16} = \\pm 4\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 = 16 \\Rightarrow x = - \\sqrt{16} = \\pm 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 = 16 \\Rightarrow x = \\pm \\sqrt{16} = \\pm 4\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Take the square root of both sides. Remember to include both positive and negative solutions.",
     "solution": "\\( x^2 = 16 \\Rightarrow x = \\pm \\sqrt{16} = \\pm 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Take the square root of both sides to solve for \\( x \\).",
-        "workingOut": "\\(x = \\pm \\sqrt\\{16\\}\\)",
+        "workingOut": "\\(x = \\pm \\sqrt{16}\\)",
         "graphData": null
       },
       {
@@ -4718,23 +4718,23 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve \\(3x^2 + 2x - 5 = 0\\)",
     "options": [
       {
-        "text": "\\(\\{1, 5/3\\}\\)",
+        "text": "\\({1, -5/3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{5, -1\\}\\)",
+        "text": "\\({1, 5/3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{-1, 5/3\\}\\)",
+        "text": "\\({5, -1}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{1, -5/3\\}\\)",
+        "text": "\\({-1, 5/3}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Factor by grouping.",
     "solution": "\\((3x+5)(x-1) = 0 \\Rightarrow x=1, -5/3\\)",
@@ -4769,7 +4769,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 4x - \\frac{5}{2} = 0 \\Rightarrow x^2 - 4x = +\\frac{5}{2} \\Rightarrow x^2 - 4x - 4 = \\frac{3}{2} \\Rightarrow (x-2)^2 = \\frac{3}{2} \\Rightarrow x = +2 \\pm \\frac{\\sqrt{6}}{2}\\)",
+        "text": "\\(x^2 + 4x + \\frac{5}{2} = 0 \\Rightarrow x^2 + 4x = -\\frac{5}{2} \\Rightarrow x^2 + 4x + 4 = \\frac{3}{2} \\Rightarrow (x+2)^2 = \\frac{3}{2} \\Rightarrow x = -2 \\pm \\frac{\\sqrt{6}}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -4777,11 +4777,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 4x + \\frac{5}{2} = 0 \\Rightarrow x^2 + 4x = -\\frac{5}{2} \\Rightarrow x^2 + 4x + 4 = \\frac{3}{2} \\Rightarrow (x+2)^2 = \\frac{3}{2} \\Rightarrow x = -2 \\pm 0\\)",
+        "text": "\\(x^2 - 4x - \\frac{5}{2} = 0 \\Rightarrow x^2 - 4x = +\\frac{5}{2} \\Rightarrow x^2 - 4x - 4 = \\frac{3}{2} \\Rightarrow (x-2)^2 = \\frac{3}{2} \\Rightarrow x = +2 \\pm \\frac{\\sqrt{6}}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 4x + \\frac{5}{2} = 0 \\Rightarrow x^2 + 4x = -\\frac{5}{2} \\Rightarrow x^2 + 4x + 4 = \\frac{3}{2} \\Rightarrow (x+2)^2 = \\frac{3}{2} \\Rightarrow x = -2 \\pm \\frac{\\sqrt{6}}{2}\\)",
+        "text": "\\(x^2 + 4x + \\frac{5}{2} = 0 \\Rightarrow x^2 + 4x = -\\frac{5}{2} \\Rightarrow x^2 + 4x + 4 = \\frac{3}{2} \\Rightarrow (x+2)^2 = \\frac{3}{2} \\Rightarrow x = -2 \\pm 0\\)",
         "imageUrl": ""
       }
     ],
@@ -4792,22 +4792,22 @@ export const Y11_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Divide by 2.",
-        "workingOut": "\\(x^2 + 4x + \\frac\\{5\\}\\{2\\} = 0\\)",
+        "workingOut": "\\(x^2 + 4x + \\frac{5}{2} = 0\\)",
         "graphData": null
       },
       {
         "explanation": "Subtract \\( \\frac{5}{2} \\) and add 4 to both sides.",
-        "workingOut": "\\(x^2 + 4x + 4 = -\\frac\\{5\\}\\{2\\} + 4\\)",
+        "workingOut": "\\(x^2 + 4x + 4 = -\\frac{5}{2} + 4\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\((x + 2)^2 = \\frac\\{3\\}\\{2\\}\\)",
+        "workingOut": "\\((x + 2)^2 = \\frac{3}{2}\\)",
         "graphData": null
       },
       {
         "explanation": "Take the square root and rationalise the denominator.",
-        "workingOut": "\\(x + 2 = \\pm \\sqrt\\{\\frac\\{3\\}\\{2\\}\\} = \\pm \\frac\\{\\sqrt\\{6\\}\\}\\{2\\} \\Rightarrow x = -2 \\pm \\frac\\{\\sqrt\\{6\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(x + 2 = \\pm \\sqrt{\\frac{3}{2}} = \\pm \\frac{\\sqrt{6}}{2} \\Rightarrow x = -2 \\pm \\frac{\\sqrt{6}}{2}\\)",
         "graphData": null
       }
     ],
@@ -4822,11 +4822,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the literal quadratic equation for \\( x \\): \\( x^2 - 8ax + 16a^2 - b^2 = 0 \\)",
     "options": [
       {
-        "text": "\\(x = b \\pm 4a\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x = -4a \\pm b\\)",
+        "text": "\\(x = 4a \\pm b\\)",
         "imageUrl": ""
       },
       {
@@ -4834,11 +4830,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = 4a \\pm b\\)",
+        "text": "\\(x = -4a \\pm b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = b \\pm 4a\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Recognize the perfect square trinomial in the first three terms, or apply the quadratic formula.",
     "solution": "\\(x = 4a \\pm b\\)",
@@ -4875,7 +4875,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( a^2 + 18a = 40 \\)",
     "options": [
       {
-        "text": "\\(a^-3 + 18a - 40 = 0 \\Rightarrow (a+20)(a-2) = 0 \\Rightarrow a = 2, 19\\)",
+        "text": "\\(a^2 + 18a - 40 = 0 \\Rightarrow (a+20)(a-2) = 0 \\Rightarrow a = 2, -20\\)",
         "imageUrl": ""
       },
       {
@@ -4883,7 +4883,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a^2 + 18a - 40 = 0 \\Rightarrow (a+20)(a-2) = 0 \\Rightarrow a = 2, -20\\)",
+        "text": "\\(a^3 + 18a - 40 = 0 \\Rightarrow (a+20)(a-2) = 0 \\Rightarrow a = 2, -19\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^-3 + 18a - 40 = 0 \\Rightarrow (a+20)(a-2) = 0 \\Rightarrow a = 2, 19\\)",
         "imageUrl": ""
       },
       {
@@ -4891,15 +4895,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a^3 + 18a - 40 = 0 \\Rightarrow (a+20)(a-2) = 0 \\Rightarrow a = 2, -19\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(a^1 + 18a - 40 = 0 \\Rightarrow (a+20)(a-2) = 0 \\Rightarrow a = 2, -21\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Subtract 40 from both sides.",
     "solution": "\\( a^2 + 18a - 40 = 0 \\Rightarrow (a+20)(a-2) = 0 \\Rightarrow a = 2, -20 \\)",
@@ -4931,15 +4931,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 5n + 7n^2 = 0 \\)",
     "options": [
       {
-        "text": "\\(n(5 + 7n) = 0 \\Rightarrow n = 0, -\\frac{5}{7}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(n(4 + 7n) = 0 \\Rightarrow n = 0, -\\frac{4}{7}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(n(-5 + 7n) = 0 \\Rightarrow n = 0, -\\frac{-5}{7}\\)",
+        "text": "\\(n(5 - 7n) = 0 \\Rightarrow n = 0, +\\frac{5}{7}\\)",
         "imageUrl": ""
       },
       {
@@ -4947,11 +4943,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(n(5 + 7n) = 0 \\Rightarrow n = 0, -\\frac{5}{7}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(n(-6 + 7n) = 0 \\Rightarrow n = 0, -\\frac{-6}{7}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(n(5 - 7n) = 0 \\Rightarrow n = 0, +\\frac{5}{7}\\)",
+        "text": "\\(n(-5 + 7n) = 0 \\Rightarrow n = 0, -\\frac{-5}{7}\\)",
         "imageUrl": ""
       }
     ],
@@ -4967,7 +4967,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(n = 0, -\\frac\\{5\\}\\{7\\}\\)",
+        "workingOut": "\\(n = 0, -\\frac{5}{7}\\)",
         "graphData": null
       }
     ],
@@ -4986,15 +4986,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 3x - \\frac{1}{2} = 0 \\Rightarrow x^2 - 3x = \\frac{1}{2} \\Rightarrow x^2 - 3x + \\frac{9}{4} = \\frac{11}{4} \\Rightarrow (x-\\frac{3}{2})^2 = \\frac{11}{4} \\Rightarrow x = \\frac{3 \\pm 0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 - 3x - \\frac{1}{2} = 0 \\Rightarrow x^2 - 3x = \\frac{1}{2} \\Rightarrow x^2 - 3x + \\frac{9}{4} = \\frac{11}{4} \\Rightarrow (x-\\frac{3}{2})^2 = \\frac{11}{4} \\Rightarrow x = \\frac{3 \\pm \\sqrt{11}}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 + 3x + \\frac{1}{2} = 0 \\Rightarrow x^2 + 3x = \\frac{1}{2} \\Rightarrow x^2 + 3x - \\frac{9}{4} = \\frac{11}{4} \\Rightarrow (x+\\frac{3}{2})^2 = \\frac{11}{4} \\Rightarrow x = \\frac{3 \\pm \\sqrt{11}}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 - 3x - \\frac{1}{2} = 0 \\Rightarrow x^2 - 3x = \\frac{1}{2} \\Rightarrow x^2 - 3x + \\frac{9}{4} = \\frac{11}{4} \\Rightarrow (x-\\frac{3}{2})^2 = \\frac{11}{4} \\Rightarrow x = \\frac{3 \\pm 0}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -5002,38 +4998,42 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 3x - \\frac{1}{2} = 0 \\Rightarrow x^2 - 3x = \\frac{1}{2} \\Rightarrow x^2 - 3x + \\frac{9}{4} = \\frac{11}{4} \\Rightarrow (x-\\frac{3}{2})^2 = \\frac{11}{4} \\Rightarrow x = \\frac{3 \\pm 1\\)",
+        "text": "\\(x^2 - 3x - \\frac{1}{2} = 0 \\Rightarrow x^2 - 3x = \\frac{1}{2} \\Rightarrow x^2 - 3x + \\frac{9}{4} = \\frac{11}{4} \\Rightarrow (x-\\frac{3}{2})^2 = \\frac{11}{4} \\Rightarrow x = \\frac{3 \\pm 1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 - 3x - \\frac{1}{2} = 0 \\Rightarrow x^2 - 3x = \\frac{1}{2} \\Rightarrow x^2 - 3x + \\frac{9}{4} = \\frac{11}{4} \\Rightarrow (x-\\frac{3}{2})^2 = \\frac{11}{4} \\Rightarrow x = \\frac{3 \\pm \\sqrt{11}}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Divide by 2 first, then isolate the \\( x \\) terms.",
     "solution": "\\( x^2 - 3x - \\frac{1}{2} = 0 \\Rightarrow x^2 - 3x = \\frac{1}{2} \\Rightarrow x^2 - 3x + \\frac{9}{4} = \\frac{11}{4} \\Rightarrow (x-\\frac{3}{2})^2 = \\frac{11}{4} \\Rightarrow x = \\frac{3 \\pm \\sqrt{11}}{2} \\)",
     "solutionSteps": [
       {
         "explanation": "Divide the entire equation by the coefficient of \\( x^2 \\), which is 2.",
-        "workingOut": "\\(x^2 - 3x - \\frac\\{1\\}\\{2\\} = 0\\)",
+        "workingOut": "\\(x^2 - 3x - \\frac{1}{2} = 0\\)",
         "graphData": null
       },
       {
         "explanation": "Add \\( \\frac{1}{2} \\) to both sides.",
-        "workingOut": "\\(x^2 - 3x = \\frac\\{1\\}\\{2\\}\\)",
+        "workingOut": "\\(x^2 - 3x = \\frac{1}{2}\\)",
         "graphData": null
       },
       {
         "explanation": "Add \\( \\left(\\frac{-3}{2}\\right)^2 = \\frac{9}{4} \\) to both sides to complete the square.",
-        "workingOut": "\\(x^2 - 3x + \\frac\\{9\\}\\{4\\} = \\frac\\{1\\}\\{2\\} + \\frac\\{9\\}\\{4\\}\\)",
+        "workingOut": "\\(x^2 - 3x + \\frac{9}{4} = \\frac{1}{2} + \\frac{9}{4}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the fractions on the right side.",
-        "workingOut": "\\(\\left(x - \\frac\\{3\\}\\{2\\}\\right)^2 = \\frac\\{11\\}\\{4\\}\\)",
+        "workingOut": "\\(\\left(x - \\frac{3}{2}\\right)^2 = \\frac{11}{4}\\)",
         "graphData": null
       },
       {
         "explanation": "Take the square root and solve for \\( x \\).",
-        "workingOut": "\\(x - \\frac\\{3\\}\\{2\\} = \\pm \\frac\\{\\sqrt\\{11\\}\\}\\{2\\} \\Rightarrow x = \\frac\\{3 \\pm \\sqrt\\{11\\}\\}\\{2\\}\\)",
+        "workingOut": "\\(x - \\frac{3}{2} = \\pm \\frac{\\sqrt{11}}{2} \\Rightarrow x = \\frac{3 \\pm \\sqrt{11}}{2}\\)",
         "graphData": null
       }
     ],
@@ -5052,15 +5052,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = - \\sqrt{\\frac{25}{9}} = \\pm \\frac{5}{3}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x = \\pm \\sqrt{\\frac{25}{9}} = \\pm \\frac{5}{3}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x = + \\sqrt{\\frac{25}{9}} = \\pm \\frac{5}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x = - \\sqrt{\\frac{25}{9}} = \\pm \\frac{5}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -5075,17 +5075,17 @@ export const Y11_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the square root to both sides of the equation.",
-        "workingOut": "\\(x = \\pm \\sqrt\\{\\frac\\{25\\}\\{9\\}\\}\\)",
+        "workingOut": "\\(x = \\pm \\sqrt{\\frac{25}{9}}\\)",
         "graphData": null
       },
       {
         "explanation": "Distribute the square root to the numerator and denominator.",
-        "workingOut": "\\(x = \\pm \\frac\\{\\sqrt\\{25\\}\\}\\{\\sqrt\\{9\\}\\}\\)",
+        "workingOut": "\\(x = \\pm \\frac{\\sqrt{25}}{\\sqrt{9}}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the roots.",
-        "workingOut": "\\(x = \\pm \\frac\\{5\\}\\{3\\}\\)",
+        "workingOut": "\\(x = \\pm \\frac{5}{3}\\)",
         "graphData": null
       }
     ],
@@ -5100,11 +5100,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( c^2 + 20 = 9c \\)",
     "options": [
       {
-        "text": "\\(c^1 - 9c + 20 = 0 \\Rightarrow (c-4)(c-5) = 0 \\Rightarrow c = 4, 4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(c^2 + 9c - 20 = 0 \\Rightarrow (c+4)(c+5) = 0 \\Rightarrow c = 4, 5\\)",
+        "text": "\\(c^3 - 9c + 20 = 0 \\Rightarrow (c-4)(c-5) = 0 \\Rightarrow c = 4, 6\\)",
         "imageUrl": ""
       },
       {
@@ -5112,19 +5108,23 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(c^1 - 9c + 20 = 0 \\Rightarrow (c-4)(c-5) = 0 \\Rightarrow c = 4, 4\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(c^-2 - 9c + 20 = 0 \\Rightarrow (c-4)(c-5) = 0 \\Rightarrow c = 4, -5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(c^2 + 9c - 20 = 0 \\Rightarrow (c+4)(c+5) = 0 \\Rightarrow c = 4, 5\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(c^2 - 9c + 20 = 0 \\Rightarrow (c-4)(c-5) = 0 \\Rightarrow c = 4, 5\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(c^3 - 9c + 20 = 0 \\Rightarrow (c-4)(c-5) = 0 \\Rightarrow c = 4, 6\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Subtract \\( 9c \\) from both sides.",
     "solution": "\\( c^2 - 9c + 20 = 0 \\Rightarrow (c-4)(c-5) = 0 \\Rightarrow c = 4, 5 \\)",
@@ -5156,19 +5156,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 4a = a^2 \\)",
     "options": [
       {
-        "text": "\\(a^2 + 4a = 0 \\Rightarrow a(a + 4) = 0 \\Rightarrow a = 0, 4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^3 - 4a = 0 \\Rightarrow a(a - 4) = 0 \\Rightarrow a = 0, 5\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a^-3 - 4a = 0 \\Rightarrow a(a - 4) = 0 \\Rightarrow a = 0, -5\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(a^2 - 4a = 0 \\Rightarrow a(a - 4) = 0 \\Rightarrow a = 0, 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^2 + 4a = 0 \\Rightarrow a(a + 4) = 0 \\Rightarrow a = 0, 4\\)",
         "imageUrl": ""
       },
       {
@@ -5178,9 +5170,17 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\(a^-2 - 4a = 0 \\Rightarrow a(a - 4) = 0 \\Rightarrow a = 0, -4\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(a^-3 - 4a = 0 \\Rightarrow a(a - 4) = 0 \\Rightarrow a = 0, -5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^3 - 4a = 0 \\Rightarrow a(a - 4) = 0 \\Rightarrow a = 0, 5\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "4",
+    "answer": "0",
     "blanks": [],
     "hint": "Move all terms to one side first.",
     "solution": "\\( a^2 - 4a = 0 \\Rightarrow a(a - 4) = 0 \\Rightarrow a = 0, 4 \\)",
@@ -5216,7 +5216,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((p+-5)(p-4) = 0 \\Rightarrow p = -5, -4\\)",
+        "text": "\\((p-5)(p+4) = 0 \\Rightarrow p = +5, 4\\)",
         "imageUrl": ""
       },
       {
@@ -5224,7 +5224,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((p-5)(p+4) = 0 \\Rightarrow p = +5, 4\\)",
+        "text": "\\((p+-5)(p-4) = 0 \\Rightarrow p = -5, -4\\)",
         "imageUrl": ""
       },
       {
@@ -5263,15 +5263,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( u^2 + u = 72 \\)",
     "options": [
       {
-        "text": "\\(u^-3 + u - 72 = 0 \\Rightarrow (u+9)(u-8) = 0 \\Rightarrow u = -9, -9\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(u^2 + u - 72 = 0 \\Rightarrow (u+9)(u-8) = 0 \\Rightarrow u = -9, 8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(u^2 - u + 72 = 0 \\Rightarrow (u-9)(u+8) = 0 \\Rightarrow u = +9, 8\\)",
+        "text": "\\(u^-2 + u - 72 = 0 \\Rightarrow (u+9)(u-8) = 0 \\Rightarrow u = -9, -8\\)",
         "imageUrl": ""
       },
       {
@@ -5279,15 +5275,19 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(u^-3 + u - 72 = 0 \\Rightarrow (u+9)(u-8) = 0 \\Rightarrow u = -9, -9\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(u^1 + u - 72 = 0 \\Rightarrow (u+9)(u-8) = 0 \\Rightarrow u = -9, 7\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(u^-2 + u - 72 = 0 \\Rightarrow (u+9)(u-8) = 0 \\Rightarrow u = -9, -8\\)",
+        "text": "\\(u^2 - u + 72 = 0 \\Rightarrow (u-9)(u+8) = 0 \\Rightarrow u = +9, 8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange and find factors of -72 that add to 1.",
     "solution": "\\( u^2 + u - 72 = 0 \\Rightarrow (u+9)(u-8) = 0 \\Rightarrow u = -9, 8 \\)",
@@ -5319,19 +5319,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by completing the square: \\( x^2 - 8x = 0 \\)",
     "options": [
       {
-        "text": "\\(x^2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = - 4 \\Rightarrow x = 0, 8\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 + 8x - 16 = 16 \\Rightarrow (x+4)^2 = 16 \\Rightarrow x + 4 = \\pm 4 \\Rightarrow x = 0, 8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^3 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 4 \\Rightarrow x = 0, 9\\)",
+        "text": "\\(x^2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 0\\)",
         "imageUrl": ""
       },
       {
@@ -5339,15 +5331,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^-2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 4 \\Rightarrow x = 0, -8\\)",
+        "text": "\\(x^3 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 4 \\Rightarrow x = 0, 9\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = + 4 \\Rightarrow x = 0, 8\\)",
+        "text": "\\(x^2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 4 \\Rightarrow x = 0, 8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^-3 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 4 \\Rightarrow x = 0, -9\\)",
+        "text": "\\(x^2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = - 4 \\Rightarrow x = 0, 8\\)",
         "imageUrl": ""
       },
       {
@@ -5355,11 +5347,19 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 4 \\Rightarrow x = 0, 8\\)",
+        "text": "\\(x^-3 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 4 \\Rightarrow x = 0, -9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = + 4 \\Rightarrow x = 0, 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^-2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 4 \\Rightarrow x = 0, -8\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Add 16 to both sides.",
     "solution": "\\( x^2 - 8x + 16 = 16 \\Rightarrow (x-4)^2 = 16 \\Rightarrow x - 4 = \\pm 4 \\Rightarrow x = 0, 8 \\)",
@@ -5391,15 +5391,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 40 + 13h + h^2 = 0 \\)",
     "options": [
       {
-        "text": "\\(h^-2 + 13h + 40 = 0 \\Rightarrow (h+5)(h+8) = 0 \\Rightarrow h = -5, 8\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(h^2 - 13h - 40 = 0 \\Rightarrow (h-5)(h-8) = 0 \\Rightarrow h = +5, +8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(h^3 + 13h + 40 = 0 \\Rightarrow (h+5)(h+8) = 0 \\Rightarrow h = -5, -7\\)",
+        "text": "\\(h^-3 + 13h + 40 = 0 \\Rightarrow (h+5)(h+8) = 0 \\Rightarrow h = -5, 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(h^-2 + 13h + 40 = 0 \\Rightarrow (h+5)(h+8) = 0 \\Rightarrow h = -5, 8\\)",
         "imageUrl": ""
       },
       {
@@ -5411,7 +5411,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(h^-3 + 13h + 40 = 0 \\Rightarrow (h+5)(h+8) = 0 \\Rightarrow h = -5, 7\\)",
+        "text": "\\(h^3 + 13h + 40 = 0 \\Rightarrow (h+5)(h+8) = 0 \\Rightarrow h = -5, -7\\)",
         "imageUrl": ""
       }
     ],
@@ -5447,19 +5447,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 2y^2 - 3y - 20 = 0 \\)",
     "options": [
       {
-        "text": "\\((1y+5)(y-4) = 0 \\Rightarrow y = -\\frac{5}{2}, 3\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((3y+5)(y-4) = 0 \\Rightarrow y = -\\frac{5}{2}, 5\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((2y+5)(y-4) = 0 \\Rightarrow y = -\\frac{5}{2}, 4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((-3y+5)(y-4) = 0 \\Rightarrow y = -\\frac{5}{2}, -5\\)",
         "imageUrl": ""
       },
       {
@@ -5469,9 +5457,21 @@ export const Y11_CH1D_QUESTIONS = [
       {
         "text": "\\((-2y+5)(y-4) = 0 \\Rightarrow y = -\\frac{5}{2}, -4\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\((1y+5)(y-4) = 0 \\Rightarrow y = -\\frac{5}{2}, 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-3y+5)(y-4) = 0 \\Rightarrow y = -\\frac{5}{2}, -5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2y+5)(y-4) = 0 \\Rightarrow y = -\\frac{5}{2}, 4\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "4",
+    "answer": "0",
     "blanks": [],
     "hint": "Find factors of -40 that sum to -3.",
     "solution": "\\( (2y+5)(y-4) = 0 \\Rightarrow y = -\\frac{5}{2}, 4 \\)",
@@ -5493,7 +5493,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(y = -\\frac\\{5\\}\\{2\\}, 4\\)",
+        "workingOut": "\\(y = -\\frac{5}{2}, 4\\)",
         "graphData": null
       }
     ],
@@ -5508,19 +5508,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve \\(x^2 - 64 = 0\\)",
     "options": [
       {
-        "text": "\\(\\{8, -8\\}\\)",
+        "text": "\\({8, -8}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{8\\}\\)",
+        "text": "\\({8, 0}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{64, -64\\}\\)",
+        "text": "\\({8}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{8, 0\\}\\)",
+        "text": "\\({64, -64}\\)",
         "imageUrl": ""
       }
     ],
@@ -5551,18 +5551,6 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( \\frac{5k + 7}{k - 1} = 3k + 2 \\)",
     "options": [
       {
-        "text": "\\(6k + 7 = (3k+2)(k-1) \\Rightarrow 5k + 7 = 3k^2 - k - 2 \\Rightarrow 3k^2 - 6k - 9 = 0 \\Rightarrow k^2 - 2k - 3 = 0 \\Rightarrow k = 3, 0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4k + 7 = (3k+2)(k-1) \\Rightarrow 5k + 7 = 3k^2 - k - 2 \\Rightarrow 3k^2 - 6k - 9 = 0 \\Rightarrow k^2 - 2k - 3 = 0 \\Rightarrow k = 3, -2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(5k - 7 = (3k-2)(k+1) \\Rightarrow 5k - 7 = 3k^2 + k + 2 \\Rightarrow 3k^2 + 6k + 9 = 0 \\Rightarrow k^2 + 2k + 3 = 0 \\Rightarrow k = 3, +1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(-5k + 7 = (3k+2)(k-1) \\Rightarrow 5k + 7 = 3k^2 - k - 2 \\Rightarrow 3k^2 - 6k - 9 = 0 \\Rightarrow k^2 - 2k - 3 = 0 \\Rightarrow k = 3, 1\\)",
         "imageUrl": ""
       },
@@ -5571,11 +5559,23 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(6k + 7 = (3k+2)(k-1) \\Rightarrow 5k + 7 = 3k^2 - k - 2 \\Rightarrow 3k^2 - 6k - 9 = 0 \\Rightarrow k^2 - 2k - 3 = 0 \\Rightarrow k = 3, 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4k + 7 = (3k+2)(k-1) \\Rightarrow 5k + 7 = 3k^2 - k - 2 \\Rightarrow 3k^2 - 6k - 9 = 0 \\Rightarrow k^2 - 2k - 3 = 0 \\Rightarrow k = 3, -2\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(-6k + 7 = (3k+2)(k-1) \\Rightarrow 5k + 7 = 3k^2 - k - 2 \\Rightarrow 3k^2 - 6k - 9 = 0 \\Rightarrow k^2 - 2k - 3 = 0 \\Rightarrow k = 3, 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5k - 7 = (3k-2)(k+1) \\Rightarrow 5k - 7 = 3k^2 + k + 2 \\Rightarrow 3k^2 + 6k + 9 = 0 \\Rightarrow k^2 + 2k + 3 = 0 \\Rightarrow k = 3, +1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply both sides by \\( (k - 1) \\) and expand.",
     "solution": "\\( 5k + 7 = (3k+2)(k-1) \\Rightarrow 5k + 7 = 3k^2 - k - 2 \\Rightarrow 3k^2 - 6k - 9 = 0 \\Rightarrow k^2 - 2k - 3 = 0 \\Rightarrow k = 3, -1 \\)",
@@ -5617,23 +5617,23 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve \\(x^2 + 9x = 0\\)",
     "options": [
       {
-        "text": "\\(\\{9, -9\\}\\)",
+        "text": "\\({0}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{0, 9\\}\\)",
+        "text": "\\({0, -9}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{0, -9\\}\\)",
+        "text": "\\({9, -9}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{0\\}\\)",
+        "text": "\\({0, 9}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Factor out x.",
     "solution": "\\(x(x+9) = 0 \\Rightarrow x=0, -9\\)",
@@ -5664,14 +5664,6 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((u+4)(u-3) = (2u-1)(2u-7) \\Rightarrow u^2 - 9 = 4u^2 - 16u + 7 \\Rightarrow 3u^2 - 16u + 16 = 0 \\Rightarrow (3u-4)(u-4) = 0 \\Rightarrow u = 4, \\frac{5}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((u+-4)(u-3) = (2u-1)(2u-7) \\Rightarrow u^2 - 9 = 4u^2 - 16u + 7 \\Rightarrow 3u^2 - 16u + 16 = 0 \\Rightarrow (3u-4)(u-4) = 0 \\Rightarrow u = 4, \\frac{-5}{3}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((u+3)(u-3) = (2u-1)(2u-7) \\Rightarrow u^2 - 9 = 4u^2 - 16u + 7 \\Rightarrow 3u^2 - 16u + 16 = 0 \\Rightarrow (3u-4)(u-4) = 0 \\Rightarrow u = 4, \\frac{4}{3}\\)",
         "imageUrl": ""
       },
@@ -5680,11 +5672,19 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((u+4)(u-3) = (2u-1)(2u-7) \\Rightarrow u^2 - 9 = 4u^2 - 16u + 7 \\Rightarrow 3u^2 - 16u + 16 = 0 \\Rightarrow (3u-4)(u-4) = 0 \\Rightarrow u = 4, \\frac{5}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u+-4)(u-3) = (2u-1)(2u-7) \\Rightarrow u^2 - 9 = 4u^2 - 16u + 7 \\Rightarrow 3u^2 - 16u + 16 = 0 \\Rightarrow (3u-4)(u-4) = 0 \\Rightarrow u = 4, \\frac{-5}{3}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((u-3)(u+3) = (2u+1)(2u+7) \\Rightarrow u^2 + 9 = 4u^2 + 16u - 7 \\Rightarrow 3u^2 + 16u - 16 = 0 \\Rightarrow (3u+4)(u+4) = 0 \\Rightarrow u = 4, \\frac{4}{3}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Cross-multiply to clear the fractions.",
     "solution": "\\( (u+3)(u-3) = (2u-1)(2u-7) \\Rightarrow u^2 - 9 = 4u^2 - 16u + 7 \\Rightarrow 3u^2 - 16u + 16 = 0 \\Rightarrow (3u-4)(u-4) = 0 \\Rightarrow u = 4, \\frac{4}{3} \\)",
@@ -5706,7 +5706,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Factor the non-monic trinomial.",
-        "workingOut": "\\((3u - 4)(u - 4) = 0 \\Rightarrow u = 4, \\frac\\{4\\}\\{3\\}\\)",
+        "workingOut": "\\((3u - 4)(u - 4) = 0 \\Rightarrow u = 4, \\frac{4}{3}\\)",
         "graphData": null
       }
     ],
@@ -5721,7 +5721,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 3b^2 - b = 0 \\)",
     "options": [
       {
-        "text": "\\(b(6b + 2) = 2 \\Rightarrow b = 2 \\text{ or } b = \\frac{3}{4}\\)",
+        "text": "\\(b(3b + 1) = 0 \\Rightarrow b = 0 \\text{ or } b = \\frac{1}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -5729,11 +5729,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(b(4b - 4) = 1 \\Rightarrow b = 3 \\text{ or } b = \\frac{4}{6}\\)",
+        "text": "\\(b(6b + 2) = 2 \\Rightarrow b = 2 \\text{ or } b = \\frac{3}{4}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(b(3b + 1) = 0 \\Rightarrow b = 0 \\text{ or } b = \\frac{1}{3}\\)",
+        "text": "\\(b(4b - 4) = 1 \\Rightarrow b = 3 \\text{ or } b = \\frac{4}{6}\\)",
         "imageUrl": ""
       }
     ],
@@ -5749,12 +5749,12 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Set each factor to zero.",
-        "workingOut": "\\(b = 0 \\quad \\text\\{or\\} \\quad 3b - 1 = 0\\)",
+        "workingOut": "\\(b = 0 \\quad \\text{or} \\quad 3b - 1 = 0\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the linear equations.",
-        "workingOut": "\\(b = 0, \\frac\\{1\\}\\{3\\}\\)",
+        "workingOut": "\\(b = 0, \\frac{1}{3}\\)",
         "graphData": null
       }
     ],
@@ -5769,15 +5769,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 6x^2 + 11x + 3 = 0 \\)",
     "options": [
       {
-        "text": "\\((-4x+1)(2x+3) = 0 \\Rightarrow x = -\\frac{1}{3}, -\\frac{-4}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((3x+1)(2x+3) = 0 \\Rightarrow x = -\\frac{1}{3}, -\\frac{3}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((-3x+1)(2x+3) = 0 \\Rightarrow x = -\\frac{1}{3}, -\\frac{-3}{2}\\)",
+        "text": "\\((3x-1)(2x-3) = 0 \\Rightarrow x = +\\frac{1}{3}, +\\frac{3}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-4x+1)(2x+3) = 0 \\Rightarrow x = -\\frac{1}{3}, -\\frac{-4}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -5785,15 +5785,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((4x+1)(2x+3) = 0 \\Rightarrow x = -\\frac{1}{3}, -\\frac{4}{2}\\)",
+        "text": "\\((-3x+1)(2x+3) = 0 \\Rightarrow x = -\\frac{1}{3}, -\\frac{-3}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x-1)(2x-3) = 0 \\Rightarrow x = +\\frac{1}{3}, +\\frac{3}{2}\\)",
+        "text": "\\((4x+1)(2x+3) = 0 \\Rightarrow x = -\\frac{1}{3}, -\\frac{4}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Find factors of 18 that add to 11.",
     "solution": "\\( (3x+1)(2x+3) = 0 \\Rightarrow x = -\\frac{1}{3}, -\\frac{3}{2} \\)",
@@ -5815,7 +5815,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(x = -\\frac\\{1\\}\\{3\\}, -\\frac\\{3\\}\\{2\\}\\)",
+        "workingOut": "\\(x = -\\frac{1}{3}, -\\frac{3}{2}\\)",
         "graphData": null
       }
     ],
@@ -5830,19 +5830,11 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( t^2 - 3t - 10 = 0 \\)",
     "options": [
       {
+        "text": "\\((t-4)(t+2) = 0 \\Rightarrow t = -2, 6\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((t-6)(t+2) = 0 \\Rightarrow t = -2, 4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((t-5)(t+2) = 0 \\Rightarrow t = -2, 5\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((t+5)(t-2) = 0 \\Rightarrow t = +2, 5\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((t5)(t+2) = 0 \\Rightarrow t = -2, -5\\)",
         "imageUrl": ""
       },
       {
@@ -5850,7 +5842,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((t-4)(t+2) = 0 \\Rightarrow t = -2, 6\\)",
+        "text": "\\((t-5)(t+2) = 0 \\Rightarrow t = -2, 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t5)(t+2) = 0 \\Rightarrow t = -2, -5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t+5)(t-2) = 0 \\Rightarrow t = +2, 5\\)",
         "imageUrl": ""
       }
     ],
@@ -5881,7 +5881,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation reducible to a quadratic form: \\( x^4 - 7x^2 + 12 = 0 \\)",
     "options": [
       {
-        "text": "\\(x = \\sqrt{3}, \\sqrt{4}\\)",
+        "text": "\\(x = \\pm \\sqrt{7}, \\pm \\sqrt{12}\\)",
         "imageUrl": ""
       },
       {
@@ -5889,7 +5889,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = \\pm \\sqrt{7}, \\pm \\sqrt{12}\\)",
+        "text": "\\(x = \\sqrt{3}, \\sqrt{4}\\)",
         "imageUrl": ""
       },
       {
@@ -5897,7 +5897,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Let \\( u = x^2 \\). Rewrite the equation in terms of \\( u \\) as a quadratic equation, solve for \\( u \\), then substitute back to find \\( x \\).",
     "solution": "\\(x = \\pm \\sqrt{3}, \\pm \\sqrt{4}\\)",
@@ -5934,15 +5934,15 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 9x^2 + 1 = 6x \\)",
     "options": [
       {
+        "text": "\\(10x^3 + 9x - 4 = 2 \\Rightarrow (6x+3)^4 = 3 \\Rightarrow x = \\frac{4}{6}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(9x^2 - 6x + 1 = 0 \\Rightarrow (3x-1)^2 = 0 \\Rightarrow x = \\frac{1}{3}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(9x^2 + 6x - 1 = 0 \\Rightarrow (3x+1)^2 = 0 \\Rightarrow x = \\frac{1}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(10x^3 + 9x - 4 = 2 \\Rightarrow (6x+3)^4 = 3 \\Rightarrow x = \\frac{4}{6}\\)",
         "imageUrl": ""
       },
       {
@@ -5967,7 +5967,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(x = \\frac\\{1\\}\\{3\\}\\)",
+        "workingOut": "\\(x = \\frac{1}{3}\\)",
         "graphData": null
       }
     ],
@@ -5982,6 +5982,18 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve the equation: \\( \\frac{3}{a + 2} + \\frac{a + 2}{3} = \\frac{10}{3} \\)",
     "options": [
       {
+        "text": "\\(\\text{Let } u = a+2. \\text{ Then } \\frac{3}{u} + \\frac{u}{3} = \\frac{10}{3} \\Rightarrow 9 + u^2 = 10u \\Rightarrow u^2 - 10u + 9 = 0 \\Rightarrow u = 1, 9 \\Rightarrow a+2=1, 9 \\Rightarrow a = -1, 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{Let } u = a+-3. \\text{ Then } \\frac{3}{u} + \\frac{u}{3} = \\frac{10}{3} \\Rightarrow 9 + u^2 = 10u \\Rightarrow u^2 - 10u + 9 = 0 \\Rightarrow u = 1, -10 \\Rightarrow a+2=1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{Let } u = a+1. \\text{ Then } \\frac{3}{u} + \\frac{u}{3} = \\frac{10}{3} \\Rightarrow 9 + u^2 = 10u \\Rightarrow u^2 - 10u + 9 = 0 \\Rightarrow u = 1, 8 \\Rightarrow a+2=1\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\text{Let } u = a-2. \\text{ Then } \\frac{3}{u} - \\frac{u}{3} = \\frac{10}{3} \\Rightarrow 9 - u^2 = 10u \\Rightarrow u^2 + 10u - 9 = 0 \\Rightarrow u = 1, 9 \\Rightarrow a-2=1, 9 \\Rightarrow a = +1, 7\\)",
         "imageUrl": ""
       },
@@ -5990,30 +6002,18 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{Let } u = a+1. \\text{ Then } \\frac{3}{u} + \\frac{u}{3} = \\frac{10}{3} \\Rightarrow 9 + u^2 = 10u \\Rightarrow u^2 - 10u + 9 = 0 \\Rightarrow u = 1, 8 \\Rightarrow a+2=1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{Let } u = a+-3. \\text{ Then } \\frac{3}{u} + \\frac{u}{3} = \\frac{10}{3} \\Rightarrow 9 + u^2 = 10u \\Rightarrow u^2 - 10u + 9 = 0 \\Rightarrow u = 1, -10 \\Rightarrow a+2=1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{Let } u = a+2. \\text{ Then } \\frac{3}{u} + \\frac{u}{3} = \\frac{10}{3} \\Rightarrow 9 + u^2 = 10u \\Rightarrow u^2 - 10u + 9 = 0 \\Rightarrow u = 1, 9 \\Rightarrow a+2=1, 9 \\Rightarrow a = -1, 7\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{Let } u = a+-2. \\text{ Then } \\frac{3}{u} + \\frac{u}{3} = \\frac{10}{3} \\Rightarrow 9 + u^2 = 10u \\Rightarrow u^2 - 10u + 9 = 0 \\Rightarrow u = 1, -9 \\Rightarrow a+2=1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "5",
+    "answer": "0",
     "blanks": [],
     "hint": "Use a substitution \\( u = a + 2 \\) to simplify the equation first.",
     "solution": "\\( \\text{Let } u = a+2. \\text{ Then } \\frac{3}{u} + \\frac{u}{3} = \\frac{10}{3} \\Rightarrow 9 + u^2 = 10u \\Rightarrow u^2 - 10u + 9 = 0 \\Rightarrow u = 1, 9 \\Rightarrow a+2=1, 9 \\Rightarrow a = -1, 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Use substitution: let \\( u = a + 2 \\).",
-        "workingOut": "\\(\\frac\\{3\\}\\{u\\} + \\frac\\{u\\}\\{3\\} = \\frac\\{10\\}\\{3\\}\\)",
+        "workingOut": "\\(\\frac{3}{u} + \\frac{u}{3} = \\frac{10}{3}\\)",
         "graphData": null
       },
       {
@@ -6028,12 +6028,12 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Factor the quadratic in terms of \\( u \\).",
-        "workingOut": "\\((u - 1)(u - 9) = 0 \\Rightarrow u = 1 \\quad \\text\\{or\\} \\quad u = 9\\)",
+        "workingOut": "\\((u - 1)(u - 9) = 0 \\Rightarrow u = 1 \\quad \\text{or} \\quad u = 9\\)",
         "graphData": null
       },
       {
         "explanation": "Substitute back \\( u = a + 2 \\) and solve for \\( a \\).",
-        "workingOut": "\\(a + 2 = 1 \\Rightarrow a = -1, \\quad \\text\\{and\\} \\quad a + 2 = 9 \\Rightarrow a = 7\\)",
+        "workingOut": "\\(a + 2 = 1 \\Rightarrow a = -1, \\quad \\text{and} \\quad a + 2 = 9 \\Rightarrow a = 7\\)",
         "graphData": null
       }
     ],
@@ -6048,23 +6048,23 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve \\(4x^2 + 7x - 2 = 0\\)",
     "options": [
       {
-        "text": "\\(\\{0.5, -1\\}\\)",
+        "text": "\\({0.5, -1}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{1, -2\\}\\)",
+        "text": "\\({-0.25, 2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{-0.25, 2\\}\\)",
+        "text": "\\({0.25, -2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{0.25, -2\\}\\)",
+        "text": "\\({1, -2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Factor by grouping.",
     "solution": "\\((4x-1)(x+2) = 0 \\Rightarrow x=0.25, -2\\)",
@@ -6095,7 +6095,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(2\\sqrt{3}t = t^2 - 4 \\Rightarrow t^2 - 2\\sqrt{3}t - 4 = 0 \\Rightarrow t = \\frac{2\\sqrt{3} \\pm \\sqrt{12 + 16}}{2} = \\sqrt{3} \\pm 0\\)",
+        "text": "\\(2\\sqrt{3}t = t^2 + 4 \\Rightarrow t^2 + 2\\sqrt{3}t + 4 = 0 \\Rightarrow t = \\frac{2\\sqrt{3} \\pm \\sqrt{12 - 16}}{2} = \\sqrt{3} \\pm \\sqrt{7}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\sqrt{3}t = t^2 - 4 \\Rightarrow t^2 - 2\\sqrt{3}t - 4 = 0 \\Rightarrow t = \\frac{2\\sqrt{3} - \\sqrt{12 + 16}}{2} = \\sqrt{3} \\pm \\sqrt{7}\\)",
         "imageUrl": ""
       },
       {
@@ -6103,41 +6107,37 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(2\\sqrt{3}t = t^2 + 4 \\Rightarrow t^2 + 2\\sqrt{3}t + 4 = 0 \\Rightarrow t = \\frac{2\\sqrt{3} \\pm \\sqrt{12 - 16}}{2} = \\sqrt{3} \\pm \\sqrt{7}\\)",
+        "text": "\\(2\\sqrt{3}t = t^2 - 4 \\Rightarrow t^2 - 2\\sqrt{3}t - 4 = 0 \\Rightarrow t = \\frac{2\\sqrt{3} \\pm \\sqrt{12 + 16}}{2} = \\sqrt{3} \\pm 0\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(2\\sqrt{3}t = t^2 - 4 \\Rightarrow t^2 - 2\\sqrt{3}t - 4 = 0 \\Rightarrow t = \\frac{2\\sqrt{3} \\pm \\sqrt{12 + 16}}{2} = \\sqrt{3} \\pm \\sqrt{7}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(2\\sqrt{3}t = t^2 - 4 \\Rightarrow t^2 - 2\\sqrt{3}t - 4 = 0 \\Rightarrow t = \\frac{2\\sqrt{3} - \\sqrt{12 + 16}}{2} = \\sqrt{3} \\pm \\sqrt{7}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "4",
+    "answer": "0",
     "blanks": [],
     "hint": "Cross-multiply and solve using the quadratic formula.",
     "solution": "\\( 2\\sqrt{3}t = t^2 - 4 \\Rightarrow t^2 - 2\\sqrt{3}t - 4 = 0 \\Rightarrow t = \\frac{2\\sqrt{3} \\pm \\sqrt{12 + 16}}{2} = \\sqrt{3} \\pm \\sqrt{7} \\)",
     "solutionSteps": [
       {
         "explanation": "Cross-multiply.",
-        "workingOut": "\\(2\\sqrt\\{3\\}t = t^2 - 4\\)",
+        "workingOut": "\\(2\\sqrt{3}t = t^2 - 4\\)",
         "graphData": null
       },
       {
         "explanation": "Rearrange into standard form.",
-        "workingOut": "\\(t^2 - 2\\sqrt\\{3\\}t - 4 = 0\\)",
+        "workingOut": "\\(t^2 - 2\\sqrt{3}t - 4 = 0\\)",
         "graphData": null
       },
       {
         "explanation": "Apply the quadratic formula with \\( a = 1, b = -2\\sqrt{3}, c = -4 \\).",
-        "workingOut": "\\(t = \\frac\\{-(-2\\sqrt\\{3\\}) \\pm \\sqrt\\{(-2\\sqrt\\{3\\})^2 - 4(1)(-4)\\}\\}\\{2(1)\\}\\)",
+        "workingOut": "\\(t = \\frac{-(-2\\sqrt{3}) \\pm \\sqrt{(-2\\sqrt{3})^2 - 4(1)(-4)}}{2(1)}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the values.",
-        "workingOut": "\\(t = \\frac\\{2\\sqrt\\{3\\} \\pm \\sqrt\\{12 + 16\\}\\}\\{2\\} = \\frac\\{2\\sqrt\\{3\\} \\pm \\sqrt\\{28\\}\\}\\{2\\} = \\frac\\{2\\sqrt\\{3\\} \\pm 2\\sqrt\\{7\\}\\}\\{2\\} = \\sqrt\\{3\\} \\pm \\sqrt\\{7\\}\\)",
+        "workingOut": "\\(t = \\frac{2\\sqrt{3} \\pm \\sqrt{12 + 16}}{2} = \\frac{2\\sqrt{3} \\pm \\sqrt{28}}{2} = \\frac{2\\sqrt{3} \\pm 2\\sqrt{7}}{2} = \\sqrt{3} \\pm \\sqrt{7}\\)",
         "graphData": null
       }
     ],
@@ -6156,15 +6156,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a(a - -1) = a + 8 \\Rightarrow a^2 - a = a + 8 \\Rightarrow a^2 - 2a - 8 = 0 \\Rightarrow (a-4)(a+2) = 0 \\Rightarrow a = 4, 2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(a(a - 2) = a + 8 \\Rightarrow a^2 - a = a + 8 \\Rightarrow a^2 - 2a - 8 = 0 \\Rightarrow (a-4)(a+2) = 0 \\Rightarrow a = 4, -1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(a(a - 0) = a + 8 \\Rightarrow a^2 - a = a + 8 \\Rightarrow a^2 - 2a - 8 = 0 \\Rightarrow (a-4)(a+2) = 0 \\Rightarrow a = 4, -3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a(a + 1) = a - 8 \\Rightarrow a^2 + a = a - 8 \\Rightarrow a^2 + 2a + 8 = 0 \\Rightarrow (a+4)(a-2) = 0 \\Rightarrow a = 4, +2\\)",
         "imageUrl": ""
       },
       {
@@ -6172,11 +6168,15 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(a(a + 1) = a - 8 \\Rightarrow a^2 + a = a - 8 \\Rightarrow a^2 + 2a + 8 = 0 \\Rightarrow (a+4)(a-2) = 0 \\Rightarrow a = 4, +2\\)",
+        "text": "\\(a(a - -1) = a + 8 \\Rightarrow a^2 - a = a + 8 \\Rightarrow a^2 - 2a - 8 = 0 \\Rightarrow (a-4)(a+2) = 0 \\Rightarrow a = 4, 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a(a - 2) = a + 8 \\Rightarrow a^2 - a = a + 8 \\Rightarrow a^2 - 2a - 8 = 0 \\Rightarrow (a-4)(a+2) = 0 \\Rightarrow a = 4, -1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply both sides by \\( (a - 1) \\).",
     "solution": "\\( a(a - 1) = a + 8 \\Rightarrow a^2 - a = a + 8 \\Rightarrow a^2 - 2a - 8 = 0 \\Rightarrow (a-4)(a+2) = 0 \\Rightarrow a = 4, -2 \\)",
@@ -6213,6 +6213,22 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by completing the square: \\( x^2 - 4x = 5 \\)",
     "options": [
       {
+        "text": "\\(x^2 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 3 \\Rightarrow x = 5, -1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2 + 4x - 4 = 9 \\Rightarrow (x+2)^2 = 9 \\Rightarrow x + 2 = \\pm 3 \\Rightarrow x = 5, +1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^-3 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 3 \\Rightarrow x = 5, 0\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x^3 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 3 \\Rightarrow x = 5, 0\\)",
         "imageUrl": ""
       },
@@ -6221,15 +6237,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^2 + 4x - 4 = 9 \\Rightarrow (x+2)^2 = 9 \\Rightarrow x + 2 = \\pm 3 \\Rightarrow x = 5, +1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 3 \\Rightarrow x = 5, -1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x^2 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = + 3 \\Rightarrow x = 5, -1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^1 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 3 \\Rightarrow x = 5, -2\\)",
         "imageUrl": ""
       },
       {
@@ -6238,18 +6250,6 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "text": "\\(x^2 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^-3 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 3 \\Rightarrow x = 5, 0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^1 - 4x + 4 = 9 \\Rightarrow (x-2)^2 = 9 \\Rightarrow x - 2 = \\pm 3 \\Rightarrow x = 5, -2\\)",
         "imageUrl": ""
       }
     ],
@@ -6290,19 +6290,19 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 3y^2 + 10y = 8 \\)",
     "options": [
       {
-        "text": "\\(4y^2 + 10y - 8 = 0 \\Rightarrow (3y-2)(y+4) = 0 \\Rightarrow y = \\frac{2}{3}, -3\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(3y^2 - 10y + 8 = 0 \\Rightarrow (3y+2)(y-4) = 0 \\Rightarrow y = \\frac{2}{3}, +4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-3y^2 + 10y - 8 = 0 \\Rightarrow (3y-2)(y+4) = 0 \\Rightarrow y = \\frac{2}{3}, 4\\)",
+        "text": "\\(-4y^2 + 10y - 8 = 0 \\Rightarrow (3y-2)(y+4) = 0 \\Rightarrow y = \\frac{2}{3}, 3\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-4y^2 + 10y - 8 = 0 \\Rightarrow (3y-2)(y+4) = 0 \\Rightarrow y = \\frac{2}{3}, 3\\)",
+        "text": "\\(4y^2 + 10y - 8 = 0 \\Rightarrow (3y-2)(y+4) = 0 \\Rightarrow y = \\frac{2}{3}, -3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3y^2 + 10y - 8 = 0 \\Rightarrow (3y-2)(y+4) = 0 \\Rightarrow y = \\frac{2}{3}, 4\\)",
         "imageUrl": ""
       },
       {
@@ -6314,7 +6314,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "4",
+    "answer": "0",
     "blanks": [],
     "hint": "Move 8 to the left side and solve.",
     "solution": "\\( 3y^2 + 10y - 8 = 0 \\Rightarrow (3y-2)(y+4) = 0 \\Rightarrow y = \\frac{2}{3}, -4 \\)",
@@ -6336,8 +6336,140 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(y = \\frac\\{2\\}\\{3\\}, -4\\)",
+        "workingOut": "\\(y = \\frac{2}{3}, -4\\)",
         "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "fortst2020-q17b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "For $V = 3600\\left(1 - \\dfrac{t}{60}\\right)^2$ ($0 \\le t \\le 60$), how long will it take for the tank to become half full (to the nearest minute)?",
+    "options": [],
+    "answer": "$\\approx 18$ minutes ($t \\approx 17.6$)",
+    "blanks": [],
+    "hint": "Set $V = 1800$, take square roots (both signs), and reject the root outside $0 \\le t \\le 60$.",
+    "solution": "Half full is $1800$ L: $3600\\left(1 - \\frac{t}{60}\\right)^2 = 1800 \\Rightarrow \\left(1 - \\frac{t}{60}\\right)^2 = \\frac{1}{2} \\Rightarrow 1 - \\frac{t}{60} = \\pm\\frac{1}{\\sqrt{2}}$. So $t = 60\\left(1 - \\frac{1}{\\sqrt2}\\right) \\approx 17.6$ or $t = 60\\left(1 + \\frac{1}{\\sqrt2}\\right) \\approx 102.4$ (rejected, $>60$). Hence $t \\approx 18$ minutes.",
+    "solutionSteps": [
+      {
+        "explanation": "Set the volume to half of $3600$, i.e. $1800$ L.",
+        "workingOut": "3600\\left(1 - \\frac{t}{60}\\right)^2 = 1800"
+      },
+      {
+        "explanation": "Divide and take the square root of both sides (keep both signs).",
+        "workingOut": "\\left(1 - \\frac{t}{60}\\right)^2 = \\frac{1}{2} \\Rightarrow 1 - \\frac{t}{60} = \\pm\\frac{1}{\\sqrt2}"
+      },
+      {
+        "explanation": "Solve for $t$ in both cases.",
+        "workingOut": "t = 60\\left(1 - \\tfrac{1}{\\sqrt2}\\right) \\approx 17.6 \\;\\text{ or }\\; t = 60\\left(1 + \\tfrac{1}{\\sqrt2}\\right) \\approx 102.4"
+      },
+      {
+        "explanation": "Reject $t \\approx 102.4$ since $0 \\le t \\le 60$, and round the valid root.",
+        "workingOut": "t \\approx 17.6 \\approx 18 \\text{ minutes}"
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "fortst2020-q5",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "For what values of $k$ does the quadratic equation $5x^2 - 2x + (8k - 15) = 0$ have real roots?",
+    "options": [],
+    "answer": "$k \\leq \\dfrac{19}{10}$",
+    "blanks": [],
+    "hint": "Real roots require the discriminant $\\Delta = b^2 - 4ac \\geq 0$.",
+    "solution": "$\\Delta = (-2)^2 - 4(5)(8k-15) \\geq 0 \\Rightarrow 4 - 160k + 300 \\geq 0 \\Rightarrow 304 \\geq 160k \\Rightarrow k \\leq \\frac{19}{10}$.",
+    "solutionSteps": [
+      {
+        "explanation": "For real roots the discriminant must be non-negative (note: $\\geq 0$ includes equal roots).",
+        "workingOut": "\\Delta = b^2 - 4ac \\geq 0"
+      },
+      {
+        "explanation": "Substitute $a = 5$, $b = -2$, $c = 8k - 15$.",
+        "workingOut": "(-2)^2 - 4(5)(8k - 15) \\geq 0"
+      },
+      {
+        "explanation": "Expand.",
+        "workingOut": "4 - 160k + 300 \\geq 0"
+      },
+      {
+        "explanation": "Collect terms.",
+        "workingOut": "304 \\geq 160k"
+      },
+      {
+        "explanation": "Solve for $k$.",
+        "workingOut": "k \\leq \\frac{304}{160} = \\frac{19}{10}"
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "fortst2020s-q17b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "For $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$ ($0 \\le t \\le 70$), how long until the tank is half full (to the nearest minute)?",
+    "options": [],
+    "answer": "$\\approx 21$ minutes ($t \\approx 20.5$)",
+    "blanks": [],
+    "hint": "Set $V = 2450$, take square roots (both signs), reject the root outside $[0, 70]$.",
+    "solution": "$4900\\left(1 - \\frac{t}{70}\\right)^2 = 2450 \\Rightarrow \\left(1 - \\frac{t}{70}\\right)^2 = \\frac{1}{2} \\Rightarrow t = 70\\left(1 - \\frac{1}{\\sqrt2}\\right) \\approx 20.5$ or $t \\approx 119.5$ (rejected). So $t \\approx 21$ minutes.",
+    "solutionSteps": [
+      {
+        "explanation": "Set the volume to half of $4900$.",
+        "workingOut": "4900\\left(1 - \\frac{t}{70}\\right)^2 = 2450"
+      },
+      {
+        "explanation": "Take the square root (both signs).",
+        "workingOut": "1 - \\frac{t}{70} = \\pm\\frac{1}{\\sqrt2}"
+      },
+      {
+        "explanation": "Solve and reject the value $> 70$.",
+        "workingOut": "t = 70\\left(1 - \\tfrac{1}{\\sqrt2}\\right) \\approx 20.5"
+      },
+      {
+        "explanation": "Round to the nearest minute.",
+        "workingOut": "t \\approx 21 \\text{ minutes}"
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "fortst2020s-q5",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "For what values of $k$ does $3x^2 - 4x + (2k - 7) = 0$ have real roots?",
+    "options": [],
+    "answer": "$k \\leq \\dfrac{25}{6}$",
+    "blanks": [],
+    "hint": "Real roots require $\\Delta = b^2 - 4ac \\geq 0$.",
+    "solution": "$\\Delta = (-4)^2 - 4(3)(2k-7) \\geq 0 \\Rightarrow 16 - 24k + 84 \\geq 0 \\Rightarrow 100 \\geq 24k \\Rightarrow k \\leq \\frac{25}{6}$.",
+    "solutionSteps": [
+      {
+        "explanation": "For real roots the discriminant is non-negative.",
+        "workingOut": "\\Delta = b^2 - 4ac \\geq 0"
+      },
+      {
+        "explanation": "Substitute $a = 3$, $b = -4$, $c = 2k - 7$.",
+        "workingOut": "16 - 4(3)(2k - 7) \\geq 0"
+      },
+      {
+        "explanation": "Expand.",
+        "workingOut": "16 - 24k + 84 \\geq 0"
+      },
+      {
+        "explanation": "Solve for $k$.",
+        "workingOut": "100 \\geq 24k \\Rightarrow k \\leq \\frac{25}{6}"
       }
     ],
     "graphData": null,

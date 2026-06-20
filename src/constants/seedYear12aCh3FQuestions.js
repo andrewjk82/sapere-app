@@ -398,7 +398,7 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare all values to find the absolute minimum and maximum.",
-        "workingOut": "\\text{Values: } \\{-18, -2, 2, 2\\} \\implies \\text{min: } -18 \\text{ at } x=-2, \\, \\text{max: } 2 \\text{ at } x=0, 3"
+        "workingOut": "\\text{Values: } {-18, -2, 2, 2} \\implies \\text{min: } -18 \\text{ at } x=-2, \\, \\text{max: } 2 \\text{ at } x=0, 3"
       }
     ],
     "graphData": {
@@ -433,7 +433,7 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare values to identify the absolute minimum and maximum.",
-        "workingOut": "\\text{Values: } \\{0, 2, 0, 2\\} \\implies \\text{min: } 0 \\text{ at } x=-1, 0.5, \\, \\text{max: } 2 \\text{ at } x=-0.5, 1"
+        "workingOut": "\\text{Values: } {0, 2, 0, 2} \\implies \\text{min: } 0 \\text{ at } x=-1, 0.5, \\, \\text{max: } 2 \\text{ at } x=-0.5, 1"
       }
     ],
     "graphData": {
@@ -538,7 +538,7 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare turning points and boundaries to identify the global extrema.",
-        "workingOut": "\\text{Values: } \\{2, 3, 11, 2.5625\\} \\implies \\text{global min: } 2 \\text{ at } x=-1, \\, \\text{global max: } 11 \\text{ at } x=-2"
+        "workingOut": "\\text{Values: } {2, 3, 11, 2.5625} \\implies \\text{global min: } 2 \\text{ at } x=-1, \\, \\text{global max: } 11 \\text{ at } x=-2"
       }
     ]
   },

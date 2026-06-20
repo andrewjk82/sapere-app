@@ -1286,7 +1286,7 @@ export const Y12A_CH3G_QUESTIONS = [
       },
       {
         "explanation": "Find the minimum cost in cents and convert it to dollars.",
-        "workingOut": "C(90) = 300\\left(\\frac{8100}{90} + 90\\right) = 300(180) = 54000 \\text{ cents} = \\$540"
+        "workingOut": "C(90) = 300\\left(\\frac{8100}{90} + 90\\right) = 300(180) = 54000 \\text{ cents} = $540"
       }
     ]
   },

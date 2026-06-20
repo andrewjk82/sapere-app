@@ -357,7 +357,7 @@ export const Y9_CH14F_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The lines with equations \\( y = x + k \\) and \\( y = mx + 3 \\) intersect at \\( (1, 2) \\index{point} \\). Find \\( k \\).",
+    "question": "The lines with equations \\( y = x + k \\) and \\( y = mx + 3 \\) intersect at \\( (1, 2) \\). Find \\( k \\).",
     "a": "1",
     "solution": "Substitute the intersection point \\( (1, 2) \\) into the first equation:\n\\( 2 = 1 + k \\implies k = 1 \\).",
     "solutionSteps": [

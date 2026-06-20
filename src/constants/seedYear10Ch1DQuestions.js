@@ -9,7 +9,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text\\{Answer\\} = 212000.00\\)",
+        "workingOut": "\\(\\text{Answer} = 212000.00\\)",
         "graphData": null
       }
     ],
@@ -31,7 +31,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text\\{Answer\\} = 224720.00\\)",
+        "workingOut": "\\(\\text{Answer} = 224720.00\\)",
         "graphData": null
       }
     ],
@@ -53,7 +53,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text\\{Answer\\} = 267645.12\\)",
+        "workingOut": "\\(\\text{Answer} = 267645.12\\)",
         "graphData": null
       }
     ],
@@ -75,7 +75,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text\\{Answer\\} = 33.82%\\)",
+        "workingOut": "\\(\\text{Answer} = 33.82%\\)",
         "graphData": null
       }
     ],
@@ -97,7 +97,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text\\{Answer\\} = 67645.12\\)",
+        "workingOut": "\\(\\text{Answer} = 67645.12\\)",
         "graphData": null
       }
     ],
@@ -119,7 +119,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text\\{Answer\\} = 60000.00\\)",
+        "workingOut": "\\(\\text{Answer} = 60000.00\\)",
         "graphData": null
       }
     ],
@@ -141,7 +141,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute using successive annual growth multiplier.",
-        "workingOut": "\\(\\text\\{Answer\\} = 69884\\)",
+        "workingOut": "\\(\\text{Answer} = 69884\\)",
         "graphData": null
       }
     ],
@@ -163,7 +163,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute using successive annual growth multiplier.",
-        "workingOut": "\\(\\text\\{Answer\\} = 55%\\)",
+        "workingOut": "\\(\\text{Answer} = 55%\\)",
         "graphData": null
       }
     ],
@@ -185,7 +185,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use compound interest formula with correct frequency of compounding.",
-        "workingOut": "\\(\\text\\{Answer\\} = 1353520.62\\)",
+        "workingOut": "\\(\\text{Answer} = 1353520.62\\)",
         "graphData": null
       }
     ],
@@ -207,7 +207,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use compound interest formula with correct frequency of compounding.",
-        "workingOut": "\\(\\text\\{Answer\\} = 238%\\)",
+        "workingOut": "\\(\\text{Answer} = 238%\\)",
         "graphData": null
       }
     ],
@@ -229,7 +229,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use compound interest formula with correct frequency of compounding.",
-        "workingOut": "\\(\\text\\{Answer\\} = 1324087.05\\)",
+        "workingOut": "\\(\\text{Answer} = 1324087.05\\)",
         "graphData": null
       }
     ],
@@ -251,7 +251,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use compound interest formula with correct frequency of compounding.",
-        "workingOut": "\\(\\text\\{Answer\\} = 231%\\)",
+        "workingOut": "\\(\\text{Answer} = 231%\\)",
         "graphData": null
       }
     ],
@@ -273,7 +273,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply compound interest formula.",
-        "workingOut": "\\(\\text\\{Answer\\} = 270000.00\\)",
+        "workingOut": "\\(\\text{Answer} = 270000.00\\)",
         "graphData": null
       }
     ],
@@ -295,7 +295,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply compound interest formula.",
-        "workingOut": "\\(\\text\\{Answer\\} = 428459.78\\)",
+        "workingOut": "\\(\\text{Answer} = 428459.78\\)",
         "graphData": null
       }
     ],
@@ -317,7 +317,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply compound interest formula.",
-        "workingOut": "\\(\\text\\{Answer\\} = 71.38%\\)",
+        "workingOut": "\\(\\text{Answer} = 71.38%\\)",
         "graphData": null
       }
     ],
@@ -339,7 +339,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply compound interest formula.",
-        "workingOut": "\\(\\text\\{Answer\\} = 178459.78\\)",
+        "workingOut": "\\(\\text{Answer} = 178459.78\\)",
         "graphData": null
       }
     ],
@@ -361,7 +361,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply compound interest formula.",
-        "workingOut": "\\(\\text\\{Answer\\} = 140000.00\\)",
+        "workingOut": "\\(\\text{Answer} = 140000.00\\)",
         "graphData": null
       }
     ],
@@ -383,7 +383,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use interest formulas to solve.",
-        "workingOut": "\\(\\text\\{Answer\\} = 167389146.40\\)",
+        "workingOut": "\\(\\text{Answer} = 167389146.40\\)",
         "graphData": null
       }
     ],
@@ -405,7 +405,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use interest formulas to solve.",
-        "workingOut": "\\(\\text\\{Answer\\} = 295551381.18\\)",
+        "workingOut": "\\(\\text{Answer} = 295551381.18\\)",
         "graphData": null
       }
     ],
@@ -427,7 +427,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use interest formulas to solve.",
-        "workingOut": "\\(\\text\\{Answer\\} = 24000.00\\)",
+        "workingOut": "\\(\\text{Answer} = 24000.00\\)",
         "graphData": null
       }
     ],
@@ -562,7 +562,7 @@ export const Y10_CH1D_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Solve for the principal with monthly compounding over 72 months.",
-            "workingOut": "\\(300000 \\div 1.006^\\{72\\} = 195079.458\\)",
+            "workingOut": "\\(300000 \\div 1.006^{72} = 195079.458\\)",
             "graphData": null
           }
         ],
@@ -581,7 +581,7 @@ export const Y10_CH1D_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Calculate the ratio of the increase over the initial principal.",
-            "workingOut": "\\((1.006^\\{72\\} - 1) \\times 100\\% \\approx 53.78\\% \\approx 54\\%\\)",
+            "workingOut": "\\((1.006^{72} - 1) \\times 100\\% \\approx 53.78\\% \\approx 54\\%\\)",
             "graphData": null
           }
         ],
@@ -611,7 +611,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The number of compounding periods is \\(120\\) months.",
-        "workingOut": "\\(150000 \\div 1.008^\\{120\\} = 57672.48\\)",
+        "workingOut": "\\(150000 \\div 1.008^{120} = 57672.48\\)",
         "graphData": null
       }
     ],
@@ -633,7 +633,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The number of compounding periods is \\(240\\) months.",
-        "workingOut": "\\(150000 \\div 1.008^\\{240\\} = 22173.83\\)",
+        "workingOut": "\\(150000 \\div 1.008^{240} = 22173.83\\)",
         "graphData": null
       }
     ],
@@ -743,7 +743,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use the compound interest formulas to find the missing spreadsheet cells.",
-        "workingOut": "\\(\\text\\{Answer\\} = 16035.67\\)",
+        "workingOut": "\\(\\text{Answer} = 16035.67\\)",
         "graphData": null
       }
     ],
@@ -765,7 +765,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use the compound interest formulas to find the missing spreadsheet cells.",
-        "workingOut": "\\(\\text\\{Answer\\} = 11035.67\\)",
+        "workingOut": "\\(\\text{Answer} = 11035.67\\)",
         "graphData": null
       }
     ],
@@ -787,7 +787,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use the compound interest formulas to find the missing spreadsheet cells.",
-        "workingOut": "\\(\\text\\{Answer\\} = 1247.22\\)",
+        "workingOut": "\\(\\text{Answer} = 1247.22\\)",
         "graphData": null
       }
     ],
@@ -809,7 +809,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use the compound interest formulas to find the missing spreadsheet cells.",
-        "workingOut": "\\(\\text\\{Answer\\} = 2752.78\\)",
+        "workingOut": "\\(\\text{Answer} = 2752.78\\)",
         "graphData": null
       }
     ],
@@ -905,12 +905,12 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The daily interest rate is \\(0.015\\% = 0.00015\\).",
-        "workingOut": "\\(\\text\\{\\{Multiplier\\}\\} = 1.00015^\\{365\\} \\approx 1.0561735\\)",
+        "workingOut": "\\(\\text{{Multiplier}} = 1.00015^{365} \\approx 1.0561735\\)",
         "graphData": null
       },
       {
         "explanation": "Calculate the interest earned.",
-        "workingOut": "\\(15000000 \\times (1.00015^\\{365\\} - 1) = 842603.952\\)",
+        "workingOut": "\\(15000000 \\times (1.00015^{365} - 1) = 842603.952\\)",
         "graphData": null
       }
     ],
@@ -932,7 +932,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply daily compounding factor over 365 days.",
-        "workingOut": "\\((1.0001^\\{365\\} - 1) \\times 100\\% = 3.72%\\)",
+        "workingOut": "\\((1.0001^{365} - 1) \\times 100\\% = 3.72%\\)",
         "graphData": null
       }
     ],
@@ -954,7 +954,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply daily compounding factor over 365 days.",
-        "workingOut": "\\((1.0003^\\{365\\} - 1) \\times 100\\% = 11.57%\\)",
+        "workingOut": "\\((1.0003^{365} - 1) \\times 100\\% = 11.57%\\)",
         "graphData": null
       }
     ],
@@ -976,7 +976,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the compound interest growth factor and convert to a percentage.",
-        "workingOut": "\\(((1 + 0.120)^\\{2\\} - 1) \\times 100\\% = 25.4%\\)",
+        "workingOut": "\\(((1 + 0.120)^{2} - 1) \\times 100\\% = 25.4%\\)",
         "graphData": null
       }
     ],
@@ -998,7 +998,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the compound interest growth factor and convert to a percentage.",
-        "workingOut": "\\(((1 + 0.080)^\\{3\\} - 1) \\times 100\\% = 26.0%\\)",
+        "workingOut": "\\(((1 + 0.080)^{3} - 1) \\times 100\\% = 26.0%\\)",
         "graphData": null
       }
     ],
@@ -1020,7 +1020,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the compound interest growth factor and convert to a percentage.",
-        "workingOut": "\\(((1 + 0.050)^\\{5\\} - 1) \\times 100\\% = 27.6%\\)",
+        "workingOut": "\\(((1 + 0.050)^{5} - 1) \\times 100\\% = 27.6%\\)",
         "graphData": null
       }
     ],
@@ -1042,7 +1042,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the compound interest growth factor and convert to a percentage.",
-        "workingOut": "\\(((1 + 0.040)^\\{6\\} - 1) \\times 100\\% = 26.5%\\)",
+        "workingOut": "\\(((1 + 0.040)^{6} - 1) \\times 100\\% = 26.5%\\)",
         "graphData": null
       }
     ],
@@ -1064,7 +1064,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the compound interest growth factor and convert to a percentage.",
-        "workingOut": "\\(((1 + 0.025)^\\{10\\} - 1) \\times 100\\% = 28.0%\\)",
+        "workingOut": "\\(((1 + 0.025)^{10} - 1) \\times 100\\% = 28.0%\\)",
         "graphData": null
       }
     ],
@@ -1086,7 +1086,7 @@ export const Y10_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the compound interest growth factor and convert to a percentage.",
-        "workingOut": "\\(((1 + 0.018)^\\{15\\} - 1) \\times 100\\% = 30.6%\\)",
+        "workingOut": "\\(((1 + 0.018)^{15} - 1) \\times 100\\% = 30.6%\\)",
         "graphData": null
       }
     ],
@@ -1140,7 +1140,7 @@ export const Y10_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Multiply them to find the overall growth multiplier, and convert to percentage increase.",
-        "workingOut": "\\(\\text\\{\\{Total Multiplier\\}\\} = 1.2597 \\times 1.4049 \\approx 1.7698 \\implies 77\\%\\)",
+        "workingOut": "\\(\\text{{Total Multiplier}} = 1.2597 \\times 1.4049 \\approx 1.7698 \\implies 77\\%\\)",
         "graphData": null
       }
     ],

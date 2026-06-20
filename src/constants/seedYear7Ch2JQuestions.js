@@ -306,7 +306,7 @@ export const Y7_CH2J_QUESTIONS = [
       },
       {
         explanation: "Find the common prime factors.",
-        workingOut: "\\text{Common prime factors} = \\{2, 3\\}"
+        workingOut: "\\text{Common prime factors} = {2, 3}"
       },
       {
         explanation: "Select the factor that is odd and prime.",
@@ -2143,7 +2143,7 @@ export const Y7_CH2J_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "Identify primes: 2, 3, 5, 7, 11, 13, 17, 19.",
-        workingOut: "\\text{Primes} = \\{2, 3, 5, 7, 11, 13, 17, 19, \\dots\\}"
+        workingOut: "\\text{Primes} = {2, 3, 5, 7, 11, 13, 17, 19, \\dots}"
       },
       {
         explanation: "List combinations of prime products between 10 and 40.",
@@ -2360,7 +2360,7 @@ export const Y7_CH2J_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "Test squares: 1, 4, 9, 16, 25, 36, 49, 64, 81.",
-        workingOut: "\\text{Squares} = \\{1, 4, 9, 16, 25, 36, 49, 64, 81\\}"
+        workingOut: "\\text{Squares} = {1, 4, 9, 16, 25, 36, 49, 64, 81}"
       },
       {
         explanation: "Look for numbers that can be formed in two different ways by summing two squares.",
@@ -2842,7 +2842,7 @@ export const Y7_CH2J_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "List squares greater than 1: 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169.",
-        workingOut: "\\text{Squares} = \\{4, 9, \\dots, 169\\}"
+        workingOut: "\\text{Squares} = {4, 9, \\dots, 169}"
       },
       {
         explanation: "Test if any two of these sum to 180.",

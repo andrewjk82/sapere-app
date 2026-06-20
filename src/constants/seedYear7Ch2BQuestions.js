@@ -114,7 +114,7 @@ export const Y7_CH2B_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "The odd whole numbers less than 100 are 1, 3, 5, ..., 99.",
-        workingOut: "\\text{Odd numbers} = \\{1, 3, 5, \\dots, 99\\}"
+        workingOut: "\\text{Odd numbers} = {1, 3, 5, \\dots, 99}"
       },
       {
         explanation: "Calculate the total count using the formula for arithmetic progressions.",

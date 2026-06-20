@@ -1907,7 +1907,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     s: '$M=\\dfrac{300000(1.005)^{240}\\times0.005}{(1.005)^{240}-1}\\approx\\$2149.29$.',
     solutionSteps: [
       { explanation: 'Apply loan repayment formula with $P=300000$, $r=0.005$, $n=240$.', workingOut: 'M=\\frac{300000\\times(1.005)^{240}\\times0.005}{(1.005)^{240}-1}' },
-      { explanation: 'Evaluate.', workingOut: 'M\\approx\\$2149.29' },
+      { explanation: 'Evaluate.', workingOut: 'M\\approx$2149.29' },
     ],
   },
 

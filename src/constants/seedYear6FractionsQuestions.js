@@ -368,27 +368,27 @@ export const FRACTION_QUESTIONS_Y6 = [
     "t": "Fraction Word Problems",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Lily has $\\$30$ and spends $\\frac{1}{3}$ of it on a movie and $\\frac{2}{5}$ of it on a t-shirt. How much money does she have left?",
-    "a": "$\\$8$",
-    "opts": ["$\\$8$", "$\\$10$", "$\\$12$", "$\\$18$"],
-    "h": "Calculate how much she spent on the movie and t-shirt, then subtract the total spent from $\\$30$.",
+    "q": "Lily has $30 and spends $\\frac{1}{3}$ of it on a movie and $\\frac{2}{5}$ of it on a t-shirt. How much money does she have left?",
+    "a": "$8",
+    "opts": ["$8", "$10", "$12", "$18"],
+    "h": "Calculate how much she spent on the movie and t-shirt, then subtract the total spent from $30.",
     "s": "Movie: $\\frac{1}{3}$ of $\\$30 = \\$10$. T-shirt: $\\frac{2}{5}$ of $\\$30 = \\$30 \\div 5 \\times 2 = \\$12$. Total spent = $\\$10 + \\$12 = \\$22$. Money left = $\\$30 - \\$22 = \\$8$.",
     "solutionSteps": [
       {
         "explanation": "Calculate the amount spent on the movie.",
-        "workingOut": "\\frac{1}{3} \\times 30 = \\$10"
+        "workingOut": "\\frac{1}{3} \\times 30 = $10"
       },
       {
         "explanation": "Calculate the amount spent on the t-shirt.",
-        "workingOut": "\\frac{2}{5} \\times 30 = \\frac{60}{5} = \\$12"
+        "workingOut": "\\frac{2}{5} \\times 30 = \\frac{60}{5} = $12"
       },
       {
         "explanation": "Add the expenses to find the total amount spent.",
-        "workingOut": "10 + 12 = \\$22"
+        "workingOut": "10 + 12 = $22"
       },
       {
         "explanation": "Subtract the total spent from the original amount to find the money left.",
-        "workingOut": "30 - 22 = \\$8"
+        "workingOut": "30 - 22 = $8"
       }
     ]
   },
@@ -524,22 +524,22 @@ export const FRACTION_QUESTIONS_Y6 = [
     "t": "Fraction Word Problems",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "David is taxed $\\frac{1}{4}$ of his weekly wages. He saves $\\frac{1}{5}$ of what is left over. If he saves $\\$60$ every week, how much does he earn each week before he is taxed?",
-    "a": "$\\$400$",
-    "opts": ["$\\$400$", "$\\$300$", "$\\$480$", "$\\$240$"],
-    "h": "Work backwards. If $\\frac{1}{5}$ of his 'left over' money is $\\$60$, find the total 'left over' money. Then figure out his original wage.",
-    "s": "Let his left over money be $L$. $\\frac{1}{5}$ of $L = \\$60$, so $L = \\$60 \\times 5 = \\$300$. This $\\$300$ is what remains after a $\\frac{1}{4}$ tax. So, $\\$300$ is $\\frac{3}{4}$ of his total wage. Let his total wage be $W$. $\\frac{3}{4}$ of $W = \\$300$. So, $W = \\$300 \\div 3 \\times 4 = \\$100 \\times 4 = \\$400$.",
+    "q": "David is taxed $\\frac{1}{4}$ of his weekly wages. He saves $\\frac{1}{5}$ of what is left over. If he saves $60 every week, how much does he earn each week before he is taxed?",
+    "a": "$400",
+    "opts": ["$400", "$300", "$480", "$240"],
+    "h": "Work backwards. If $\\frac{1}{5}$ of his 'left over' money is $60, find the total 'left over' money. Then figure out his original wage.",
+    "s": "Let his left over money be $L$. $\\frac{1}{5}$ of $L = \\$60$, so $L = \\$60 \\times 5 = \\$300$. This $300 is what remains after a $\\frac{1}{4}$ tax. So, $300 is $\\frac{3}{4}$ of his total wage. Let his total wage be $W$. $\\frac{3}{4}$ of $W = \\$300$. So, $W = \\$300 \\div 3 \\times 4 = \\$100 \\times 4 = \\$400$.",
     "solutionSteps": [
       {
-        "explanation": "Find the amount of money left over after tax. The savings ($\\$60$) is $\\frac{1}{5}$ of this left over amount.",
-        "workingOut": "\\text{Left over} = \\$60 \\times 5 = \\$300"
+        "explanation": "Find the amount of money left over after tax. The savings ($60) is $\\frac{1}{5}$ of this left over amount.",
+        "workingOut": "\\text{Left over} = $60 \\times 5 = $300"
       },
       {
         "explanation": "Determine the fraction of the original wage that is left over. He is taxed $\\frac{1}{4}$, so $\\frac{3}{4}$ is left over.",
         "workingOut": "1 - \\frac{1}{4} = \\frac{3}{4}"
       },
       {
-        "explanation": "Find the original wage. $\\frac{3}{4}$ of the wage is $\\$300$. Divide by 3 to find $\\frac{1}{4}$, then multiply by 4.",
+        "explanation": "Find the original wage. $\\frac{3}{4}$ of the wage is $300. Divide by 3 to find $\\frac{1}{4}$, then multiply by 4.",
         "workingOut": "\\begin{aligned} \\frac{1}{4} \\text{ of wage} &= 300 \\div 3 = 100 \\\\ \\text{Total wage} &= 100 \\times 4 = 400 \\end{aligned}"
       }
     ]

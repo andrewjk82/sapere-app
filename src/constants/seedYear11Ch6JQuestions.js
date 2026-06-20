@@ -13,11 +13,11 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sine rule formula.",
-        "workingOut": "\\\frac{x}{\\sin 58^{\\circ}} = \\\frac{25}{\\sin 42^{\\circ}}"
+        "workingOut": "\\frac{x}{\\sin 58^{\\circ}} = \\frac{25}{\\sin 42^{\\circ}}"
       },
       {
         "explanation": "Solve for \\(x\\).",
-        "workingOut": "x = \\\frac{25 \\sin 58^{\\circ}}{\\sin 42^{\\circ}}"
+        "workingOut": "x = \\frac{25 \\sin 58^{\\circ}}{\\sin 42^{\\circ}}"
       },
       {
         "explanation": "Calculate the value and round to one decimal place.",
@@ -39,11 +39,11 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cosine ratio definition.",
-        "workingOut": "\\cos 50^{\\circ} = \\\frac{14.5}{x}"
+        "workingOut": "\\cos 50^{\\circ} = \\frac{14.5}{x}"
       },
       {
         "explanation": "Rearrange to solve for \\(x\\).",
-        "workingOut": "x = \\\frac{14.5}{\\cos 50^{\\circ}}"
+        "workingOut": "x = \\frac{14.5}{\\cos 50^{\\circ}}"
       },
       {
         "explanation": "Calculate and round to one decimal place.",
@@ -95,11 +95,11 @@ export const Y11_CH6J_QUESTIONS = [
       },
       {
         "explanation": "Apply the sine ratio formula.",
-        "workingOut": "\\sin 43.5^{\\circ} = \\\frac{26}{x}"
+        "workingOut": "\\sin 43.5^{\\circ} = \\frac{26}{x}"
       },
       {
         "explanation": "Solve for \\(x\\).",
-        "workingOut": "x = \\\frac{26}{\\sin 43.5^{\\circ}} \\approx 37.8"
+        "workingOut": "x = \\frac{26}{\\sin 43.5^{\\circ}} \\approx 37.8"
       }
     ]
   },
@@ -147,11 +147,11 @@ export const Y11_CH6J_QUESTIONS = [
       },
       {
         "explanation": "Set up the sine rule relative to the third angle.",
-        "workingOut": "\\\frac{x}{\\sin 75^{\\circ}} = \\\frac{20}{\\sin 50^{\\circ}}"
+        "workingOut": "\\frac{x}{\\sin 75^{\\circ}} = \\frac{20}{\\sin 50^{\\circ}}"
       },
       {
         "explanation": "Solve for \\(x\\) and round.",
-        "workingOut": "x = \\\frac{20 \\sin 75^{\\circ}}{\\sin 50^{\\circ}} \\approx 25.2"
+        "workingOut": "x = \\frac{20 \\sin 75^{\\circ}}{\\sin 50^{\\circ}} \\approx 25.2"
       }
     ]
   },
@@ -169,11 +169,11 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the cosine rule for \\(\\cos \\theta\\).",
-        "workingOut": "\\cos \\theta = \\\frac{11^2 + 13^2 - 9^2}{2(11)(13)}"
+        "workingOut": "\\cos \\theta = \\frac{11^2 + 13^2 - 9^2}{2(11)(13)}"
       },
       {
         "explanation": "Simplify the fraction.",
-        "workingOut": "\\cos \\theta = \\\frac{209}{286} \\approx 0.7308"
+        "workingOut": "\\cos \\theta = \\frac{209}{286} \\approx 0.7308"
       },
       {
         "explanation": "Find the angle and round to the nearest degree.",
@@ -195,11 +195,11 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sine rule to find the angle.",
-        "workingOut": "\\\frac{\\sin \\theta}{7} = \\\frac{\\sin 65^{\\circ}}{10}"
+        "workingOut": "\\frac{\\sin \\theta}{7} = \\frac{\\sin 65^{\\circ}}{10}"
       },
       {
         "explanation": "Solve for \\(\\sin \\theta\\).",
-        "workingOut": "\\sin \\theta = \\\frac{7 \\sin 65^{\\circ}}{10} \\approx 0.6344"
+        "workingOut": "\\sin \\theta = \\frac{7 \\sin 65^{\\circ}}{10} \\approx 0.6344"
       },
       {
         "explanation": "Find the inverse sine.",
@@ -221,7 +221,7 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cosine definition.",
-        "workingOut": "\\cos \\theta = \\\frac{14}{19}"
+        "workingOut": "\\cos \\theta = \\frac{14}{19}"
       },
       {
         "explanation": "Compute inverse cosine.",
@@ -243,7 +243,7 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sine rule.",
-        "workingOut": "\\\frac{\\sin \\theta}{8.2} = \\\frac{\\sin 110^{\\circ}}{12.5}"
+        "workingOut": "\\frac{\\sin \\theta}{8.2} = \\frac{\\sin 110^{\\circ}}{12.5}"
       },
       {
         "explanation": "Solve for \\(\\sin \\theta\\).",
@@ -269,7 +269,7 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the cosine ratio.",
-        "workingOut": "\\cos \\theta = \\\frac{7.2}{9.4}"
+        "workingOut": "\\cos \\theta = \\frac{7.2}{9.4}"
       },
       {
         "explanation": "Calculate the angle.",
@@ -291,11 +291,11 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the cosine rule for the angle opposite side 20.",
-        "workingOut": "\\cos \\theta = \\\frac{6^2 + 17^2 - 20^2}{2(6)(17)}"
+        "workingOut": "\\cos \\theta = \\frac{6^2 + 17^2 - 20^2}{2(6)(17)}"
       },
       {
         "explanation": "Simplify the fraction to get a negative value (signifying an obtuse angle).",
-        "workingOut": "\\cos \\theta = \\\frac{-75}{204} \\approx -0.3676"
+        "workingOut": "\\cos \\theta = \\frac{-75}{204} \\approx -0.3676"
       },
       {
         "explanation": "Solve for the angle using arccos.",
@@ -369,7 +369,7 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the sine definition.",
-        "workingOut": "\\sin \\theta = \\\frac{12}{15} = 0.8"
+        "workingOut": "\\sin \\theta = \\frac{12}{15} = 0.8"
       },
       {
         "explanation": "Find the inverse sine.",
@@ -391,7 +391,7 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the sine ratio to the shortest side (opposite) and hypotenuse (13).",
-        "workingOut": "\\sin \\theta = \\\frac{5}{13} \\approx 0.3846"
+        "workingOut": "\\sin \\theta = \\frac{5}{13} \\approx 0.3846"
       },
       {
         "explanation": "Find the angle and round.",
@@ -417,7 +417,7 @@ export const Y11_CH6J_QUESTIONS = [
       },
       {
         "explanation": "Use the sine rule in \\(\\triangle PQR\\) to find side \\(PQ\\).",
-        "workingOut": "PQ = \\\frac{42 \\sin 56^{\\circ}}{\\sin 72^{\\circ}} \\approx 36.61\\text{ m}"
+        "workingOut": "PQ = \\frac{42 \\sin 56^{\\circ}}{\\sin 72^{\\circ}} \\approx 36.61\\text{ m}"
       },
       {
         "explanation": "In right-angled triangle \\(PQT\\), calculate the perpendicular height \\(PT\\).",
@@ -473,7 +473,7 @@ export const Y11_CH6J_QUESTIONS = [
       },
       {
         "explanation": "Apply the sine rule in \\(\\triangle ACP\\) to find \\(PC\\).",
-        "workingOut": "PC = \\\frac{22 \\sin 32^{\\circ}}{\\sin 38^{\\circ}} \\approx 18.93\\text{ cm}"
+        "workingOut": "PC = \\frac{22 \\sin 32^{\\circ}}{\\sin 38^{\\circ}} \\approx 18.93\\text{ cm}"
       },
       {
         "explanation": "In right-angled triangle \\(CPB\\), solve for \\(PB\\) using the cosine ratio.",
@@ -549,7 +549,7 @@ export const Y11_CH6J_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Apply the sine rule to find the angle.",
-            "workingOut": "\\\frac{\\sin(\\angle CBD)}{9.5} = \\\frac{\\sin 75^{\\circ}}{12.5}"
+            "workingOut": "\\frac{\\sin(\\angle CBD)}{9.5} = \\frac{\\sin 75^{\\circ}}{12.5}"
           },
           {
             "explanation": "Solve for the sine value.",
@@ -577,11 +577,11 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the cosine rule for the angle at B.",
-        "workingOut": "\\cos B = \\\frac{5^2 + 8^2 - 6^2}{2(5)(8)}"
+        "workingOut": "\\cos B = \\frac{5^2 + 8^2 - 6^2}{2(5)(8)}"
       },
       {
         "explanation": "Simplify the fraction.",
-        "workingOut": "\\cos B = \\\frac{53}{80} = 0.6625"
+        "workingOut": "\\cos B = \\frac{53}{80} = 0.6625"
       },
       {
         "explanation": "Find the angle in degrees and minutes.",
@@ -601,7 +601,7 @@ export const Y11_CH6J_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Use the sine area formula with sides AB and BC.",
-            "workingOut": "\\text{Area} = \\\frac{1}{2} \\times 5 \\times 8 \\times \\sin(48^{\\circ}30')"
+            "workingOut": "\\text{Area} = \\frac{1}{2} \\times 5 \\times 8 \\times \\sin(48^{\\circ}30')"
           },
           {
             "explanation": "Compute the value.",
@@ -628,15 +628,15 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the cosine of the angle opposite the side of length 13.",
-        "workingOut": "\\cos A = \\\frac{14^2 + 15^2 - 13^2}{2(14)(15)} = \\\frac{252}{420} = \\\frac{3}{5}"
+        "workingOut": "\\cos A = \\frac{14^2 + 15^2 - 13^2}{2(14)(15)} = \\frac{252}{420} = \\frac{3}{5}"
       },
       {
         "explanation": "Calculate the sine of angle A using the trigonometric identity.",
-        "workingOut": "\\sin A = \\sqrt{1 - \\left(\\\frac{3}{5}\\right)^2} = \\\frac{4}{5}"
+        "workingOut": "\\sin A = \\sqrt{1 - \\left(\\frac{3}{5}\\right)^2} = \\frac{4}{5}"
       },
       {
         "explanation": "Use the area formula \\(\\text{Area} = \\frac{1}{2} b c \\sin A\\) to verify the area.",
-        "workingOut": "\\text{Area} = \\\frac{1}{2} \\times 14 \\times 15 \\times \\\frac{4}{5} = 7 \\times 3 \\times 4 = 84\\text{ cm}^2"
+        "workingOut": "\\text{Area} = \\frac{1}{2} \\times 14 \\times 15 \\times \\frac{4}{5} = 7 \\times 3 \\times 4 = 84\\text{ cm}^2"
       }
     ]
   },
@@ -654,11 +654,11 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the sine ratio in right-angled triangle \\(XPY\\).",
-        "workingOut": "\\sin 70^{\\circ} = \\\frac{28}{XY}"
+        "workingOut": "\\sin 70^{\\circ} = \\frac{28}{XY}"
       },
       {
         "explanation": "Solve for \\(XY\\).",
-        "workingOut": "XY = \\\frac{28}{\\sin 70^{\\circ}}"
+        "workingOut": "XY = \\frac{28}{\\sin 70^{\\circ}}"
       },
       {
         "explanation": "Calculate the decimal value.",
@@ -678,7 +678,7 @@ export const Y11_CH6J_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Calculate the base segment \\(YP\\) in \\(\\triangle XPY\\).",
-            "workingOut": "YP = \\\frac{28}{\\tan 70^{\\circ}} \\approx 10.19\\text{ cm}"
+            "workingOut": "YP = \\frac{28}{\\tan 70^{\\circ}} \\approx 10.19\\text{ cm}"
           },
           {
             "explanation": "Find the third angle \\(\\angle Z\\).",
@@ -686,7 +686,7 @@ export const Y11_CH6J_QUESTIONS = [
           },
           {
             "explanation": "Calculate the base segment \\(PZ\\) in \\(\\triangle XPZ\\).",
-            "workingOut": "PZ = \\\frac{28}{\\tan 42^{\\circ}} \\approx 31.10\\text{ cm}"
+            "workingOut": "PZ = \\frac{28}{\\tan 42^{\\circ}} \\approx 31.10\\text{ cm}"
           },
           {
             "explanation": "Sum the segments to find the total length \\(YZ\\).",
@@ -740,7 +740,7 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the sine rule in triangle \\(GBH\\).",
-        "workingOut": "\\\frac{\\sin(\\angle GBH)}{65} = \\\frac{\\sin 8^{\\circ}}{12}"
+        "workingOut": "\\frac{\\sin(\\angle GBH)}{65} = \\frac{\\sin 8^{\\circ}}{12}"
       },
       {
         "explanation": "Solve for \\(\\sin(\\angle GBH)\\).",
@@ -770,7 +770,7 @@ export const Y11_CH6J_QUESTIONS = [
       },
       {
         "explanation": "Calculate the shorter distance \\(GB\\) using the sine rule.",
-        "workingOut": "GB_1 = \\\frac{12 \\sin 40^{\\circ} 55'}{\\sin 8^{\\circ}} \\approx 56.5\\text{ m}"
+        "workingOut": "GB_1 = \\frac{12 \\sin 40^{\\circ} 55'}{\\sin 8^{\\circ}} \\approx 56.5\\text{ m}"
       },
       {
         "explanation": "Find the third angle for the acute angle case.",
@@ -778,7 +778,7 @@ export const Y11_CH6J_QUESTIONS = [
       },
       {
         "explanation": "Calculate the longer distance \\(GB\\) using the sine rule.",
-        "workingOut": "GB_2 = \\\frac{12 \\sin 123^{\\circ} 5'}{\\sin 8^{\\circ}} \\approx 72.2\\text{ m}"
+        "workingOut": "GB_2 = \\frac{12 \\sin 123^{\\circ} 5'}{\\sin 8^{\\circ}} \\approx 72.2\\text{ m}"
       }
     ]
   },
@@ -822,11 +822,11 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the sine ratio in right-angled triangle \\(PBQ\\).",
-        "workingOut": "\\sin 22^{\\circ} = \\\frac{75}{BP}"
+        "workingOut": "\\sin 22^{\\circ} = \\frac{75}{BP}"
       },
       {
         "explanation": "Solve for the hypotenuse \\(BP\\).",
-        "workingOut": "BP = \\\frac{75}{\\sin 22^{\\circ}} \\approx 200.2\\text{ m}"
+        "workingOut": "BP = \\frac{75}{\\sin 22^{\\circ}} \\approx 200.2\\text{ m}"
       },
       {
         "explanation": "Round to the nearest metre.",
@@ -876,7 +876,7 @@ export const Y11_CH6J_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Apply the sine rule to find angle \\(\\angle ACB\\).",
-            "workingOut": "\\\frac{\\sin(\\angle ACB)}{60} = \\\frac{\\sin 50^{\\circ}}{111.4}"
+            "workingOut": "\\frac{\\sin(\\angle ACB)}{60} = \\frac{\\sin 50^{\\circ}}{111.4}"
           },
           {
             "explanation": "Solve for the angle.",
@@ -904,7 +904,7 @@ export const Y11_CH6J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the height difference \\(AK = 15\\text{ m}\\) and find the horizontal distance \\(KP\\) using the angle of depression of P.",
-        "workingOut": "KP = \\\frac{15}{\\tan 30^{\\circ}} = 15\\sqrt{3} \\approx 25.98\\text{ m}"
+        "workingOut": "KP = \\frac{15}{\\tan 30^{\\circ}} = 15\\sqrt{3} \\approx 25.98\\text{ m}"
       },
       {
         "explanation": "Use the horizontal distance \\(BQ = KP\\) to find the height of the taller tower \\(AB\\).",
@@ -942,11 +942,11 @@ export const Y11_CH6J_QUESTIONS = [
       },
       {
         "explanation": "Calculate the travel time for Car \\(P_1\\) in minutes.",
-        "workingOut": "t_1 = \\\frac{9 + 13.89}{80} \\times 60 \\approx 17.17\\text{ minutes}"
+        "workingOut": "t_1 = \\frac{9 + 13.89}{80} \\times 60 \\approx 17.17\\text{ minutes}"
       },
       {
         "explanation": "Calculate the travel time for Car \\(P_2\\) in minutes.",
-        "workingOut": "t_2 = \\\frac{16}{50} \\times 60 = 19.2\\text{ minutes}"
+        "workingOut": "t_2 = \\frac{16}{50} \\times 60 = 19.2\\text{ minutes}"
       },
       {
         "explanation": "Find the difference between the two travel times.",
@@ -976,7 +976,7 @@ export const Y11_CH6J_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(x\\).",
-        "workingOut": "x = \\\frac{20}{\\cos 55^{\\circ}}"
+        "workingOut": "x = \\frac{20}{\\cos 55^{\\circ}}"
       },
       {
         "explanation": "Compute and round to one decimal place.",

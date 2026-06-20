@@ -638,7 +638,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "t": "Paying off a loan",
     "solutionSteps": [
       {
-        "explanation": "Aria makes 180 payments of \\$937.01 each.",
+        "explanation": "Aria makes 180 payments of $937.01 each.",
         "workingOut": "\\text{Total Paid} = 180 \\times 937.01"
       },
       {
@@ -886,10 +886,10 @@ export const Y12A_CH8E_QUESTIONS = [
           },
           {
             "explanation": "Calculate the value and round to the nearest dollar.",
-            "workingOut": "A_{120} = 440000 - 140000 \\times 1.819397 \\approx 185284.42 \\implies \\$185,284"
+            "workingOut": "A_{120} = 440000 - 140000 \\times 1.819397 \\approx 185284.42 \\implies $185,284"
           },
           {
-            "explanation": "Compare with half the principal (\\$150000).",
+            "explanation": "Compare with half the principal ($150000).",
             "workingOut": "185284 > 150000 \\implies \\text{more}"
           }
         ]
@@ -908,7 +908,7 @@ export const Y12A_CH8E_QUESTIONS = [
           },
           {
             "explanation": "Evaluate to the nearest dollar.",
-            "workingOut": "A_{300} \\approx -185095.80 \\implies -\\$185,096"
+            "workingOut": "A_{300} \\approx -185095.80 \\implies -$185,096"
           }
         ]
       },
@@ -1085,7 +1085,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "t": "Paying off a loan",
     "solutionSteps": [
       {
-        "explanation": "The monthly payment is \\$1432.86 and there are 240 payments.",
+        "explanation": "The monthly payment is $1432.86 and there are 240 payments.",
         "workingOut": "\\text{Total Paid} = 240 \\times 1432.86"
       },
       {
@@ -1213,7 +1213,7 @@ export const Y12A_CH8E_QUESTIONS = [
         "difficulty": "medium",
         "timeLimit": 240,
         "question": "c) Explain why this has happened.",
-        "a": "Rounding the exact repayment of \\$5331.78 up to the nearest dollar (\\$5332) changes each payment amount slightly. Compounded over 10 periods, this small difference results in a non-zero final balance.",
+        "a": "Rounding the exact repayment of $5331.78 up to the nearest dollar ($5332) changes each payment amount slightly. Compounded over 10 periods, this small difference results in a non-zero final balance.",
         "solutionSteps": [
           {
             "explanation": "Rounding the payment introduces a small error in each payment, which compounds over the term of the loan.",

@@ -513,7 +513,7 @@ export const Y8_CH15A_QUESTIONS = [
     "id": "y8-15a-q6",
     "type": "short_answer",
     "difficulty": "medium",
-    "question": "A room has 4 walls and 2 doorways. The walls each have dimensions $8\\text{ m}$ by $4\\text{ m}$, and the doorways have dimensions $1\\text{ m}$ by $2\\text{ m}$. If the inside walls of the room must be painted, how much will this cost (in dollars) if the rate for painting is $\$6$ per square metre?",
+    "question": "A room has 4 walls and 2 doorways. The walls each have dimensions $8\\text{ m}$ by $4\\text{ m}$, and the doorways have dimensions $1\\text{ m}$ by $2\\text{ m}$. If the inside walls of the room must be painted, how much will this cost (in dollars) if the rate for painting is $6 per square metre?",
     "a": "744",
     "solution": "1. Find the total area of the 4 walls: $4 \\times (8\\text{ m} \\times 4\\text{ m}) = 128\\text{ m}^2$.\n2. Find the total area of the 2 doorways: $2 \\times (1\\text{ m} \\times 2\\text{ m}) = 4\\text{ m}^2$.\n3. Find the net area to be painted: $128 - 4 = 124\\text{ m}^2$.\n4. Calculate the cost: $124\\text{ m}^2 \\times \\$6/\\text{m}^2 = \\$744$.",
     "t": "Review of area and length",

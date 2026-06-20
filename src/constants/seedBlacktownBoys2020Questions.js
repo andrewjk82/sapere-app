@@ -113,7 +113,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     source: 'Blacktown Boys 2020 Trial Q5',
     type: 'multiple_choice',
     difficulty: 'easy',
-    q: 'A graph shows the cost and income lines for producing boxes of chocolates. The cost line starts at about \\$5 (fixed cost) and has a gentler slope; the income line starts at 0 with a steeper slope. They intersect at the break-even point. How many boxes need to be sold to break even?',
+    q: 'A graph shows the cost and income lines for producing boxes of chocolates. The cost line starts at about $5 (fixed cost) and has a gentler slope; the income line starts at 0 with a steeper slope. They intersect at the break-even point. How many boxes need to be sold to break even?',
     a: '$3$',
     opts: [
       '$5$',
@@ -572,12 +572,12 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     difficulty: 'medium',
     marks: 2,
     q: 'Jesse plans to invest $7500 per year for 8 years in an annuity. His investment will earn interest at the rate of 6% per annum. Using the PVA table (factor for $N=8$, $r=6\\%$ is 6.2098), calculate the present value of his annuity.',
-    a: '\\$46\\,573.50',
+    a: '$46\\,573.50',
     h: 'Present Value = Payment × PVA factor.',
     s: '$\\text{PVA} = 7500 \\times 6.2098 = \\$46{,}573.50$.',
     solutionSteps: [
       { explanation: 'Read the PVA factor for $N = 8$, $r = 6\\%$.', workingOut: '\\text{PVA factor} = 6.2098' },
-      { explanation: 'Multiply by the annual payment.', workingOut: '\\text{PVA} = 7500 \\times 6.2098 = \\$46{,}573.50' }
+      { explanation: 'Multiply by the annual payment.', workingOut: '\\text{PVA} = 7500 \\times 6.2098 = $46{,}573.50' }
     ]
   },
 
@@ -591,7 +591,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     difficulty: 'medium',
     marks: 2,
     q: 'Shaon takes out a loan of $12\\,000$ to buy a car. This loan is to be repaid over 5 years at an interest rate of 8% per year. Using the PVA table (factor for $N=5$, $r=8\\%$ is 3.9927), find his yearly repayments.',
-    a: '\\$3005.49',
+    a: '$3005.49',
     h: '$\\text{PVA} = M \\times \\text{PVA factor} \\Rightarrow M = \\frac{\\text{PVA}}{\\text{factor}}$.',
     s: '$3.9927M = 12000 \\Rightarrow M = \\frac{12000}{3.9927} \\approx \\$3005.49$.',
     solutionSteps: [

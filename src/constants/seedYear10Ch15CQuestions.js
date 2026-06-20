@@ -154,11 +154,11 @@ export const Y10_CH15C_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify the set of odd numbers (the given condition).",
-            "workingOut": "\\text{Odd numbers} = \\{1, 3, 5\\} \\implies 3 \\; \\text{outcomes}"
+            "workingOut": "\\text{Odd numbers} = {1, 3, 5} \\implies 3 \\; \\text{outcomes}"
           },
           {
             "explanation": "Find the outcomes in this set that are greater than 3.",
-            "workingOut": "\\text{Favourable outcome} = \\{5\\} \\implies 1 \\; \\text{outcome}"
+            "workingOut": "\\text{Favourable outcome} = {5} \\implies 1 \\; \\text{outcome}"
           },
           {
             "explanation": "Calculate the conditional probability.",
@@ -176,11 +176,11 @@ export const Y10_CH15C_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify the outcomes that are greater than 1.",
-            "workingOut": "\\text{Condition set} = \\{2, 3, 4, 5, 6\\} \\implies 5 \\; \\text{outcomes}"
+            "workingOut": "\\text{Condition set} = {2, 3, 4, 5, 6} \\implies 5 \\; \\text{outcomes}"
           },
           {
             "explanation": "Identify the outcomes in this set that are greater than 3.",
-            "workingOut": "\\text{Favourable outcomes} = \\{4, 5, 6\\} \\implies 3 \\; \\text{outcomes}"
+            "workingOut": "\\text{Favourable outcomes} = {4, 5, 6} \\implies 3 \\; \\text{outcomes}"
           },
           {
             "explanation": "Calculate the probability.",
@@ -202,11 +202,11 @@ export const Y10_CH15C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List all 8 outcomes of tossing three coins and filter for the condition 'at least one head'.",
-        "workingOut": "\\text{At least one head} = \\{HHH, HHT, HTH, HTT, THH, THT, TTH\\} \\implies 7 \\; \\text{outcomes}"
+        "workingOut": "\\text{At least one head} = {HHH, HHT, HTH, HTT, THH, THT, TTH} \\implies 7 \\; \\text{outcomes}"
       },
       {
         "explanation": "Find the outcomes in this group that have exactly two heads.",
-        "workingOut": "\\text{Exactly two heads} = \\{HHT, HTH, THH\\} \\implies 3 \\; \\text{outcomes}"
+        "workingOut": "\\text{Exactly two heads} = {HHT, HTH, THH} \\implies 3 \\; \\text{outcomes}"
       },
       {
         "explanation": "Calculate the conditional probability.",
@@ -698,11 +698,11 @@ export const Y10_CH15C_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "List all odd numbers in the range 1 to 30.",
-            "workingOut": "\\text{Odd numbers} = \\{1, 3, 5, \\dots, 29\\} \\implies 15 \\; \\text{numbers}"
+            "workingOut": "\\text{Odd numbers} = {1, 3, 5, \\dots, 29} \\implies 15 \\; \\text{numbers}"
           },
           {
             "explanation": "Identify the number of favourable outcomes (the number 5).",
-            "workingOut": "\\text{Favourable} = \\{5\\} \\implies 1 \\; \\text{number}"
+            "workingOut": "\\text{Favourable} = {5} \\implies 1 \\; \\text{number}"
           },
           {
             "explanation": "Calculate the probability.",
@@ -720,11 +720,11 @@ export const Y10_CH15C_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify the given condition: numbers less than 24.",
-            "workingOut": "\\text{Condition set} = \\{1, 2, \\dots, 23\\} \\implies 23 \\; \\text{numbers}"
+            "workingOut": "\\text{Condition set} = {1, 2, \\dots, 23} \\implies 23 \\; \\text{numbers}"
           },
           {
             "explanation": "Identify which of these are less than 12.",
-            "workingOut": "\\text{Favourable} = \\{1, 2, \\dots, 11\\} \\implies 11 \\; \\text{numbers}"
+            "workingOut": "\\text{Favourable} = {1, 2, \\dots, 11} \\implies 11 \\; \\text{numbers}"
           },
           {
             "explanation": "Calculate the conditional probability.",
@@ -742,11 +742,11 @@ export const Y10_CH15C_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Count how many numbers are greater than 6.",
-            "workingOut": "\\text{Condition set} = \\{7, 8, \\dots, 30\\} \\implies 24 \\; \\text{numbers}"
+            "workingOut": "\\text{Condition set} = {7, 8, \\dots, 30} \\implies 24 \\; \\text{numbers}"
           },
           {
             "explanation": "Identify numbers in this set that are greater than 12.",
-            "workingOut": "\\text{Favourable} = \\{13, 14, \\dots, 30\\} \\implies 18 \\; \\text{numbers}"
+            "workingOut": "\\text{Favourable} = {13, 14, \\dots, 30} \\implies 18 \\; \\text{numbers}"
           },
           {
             "explanation": "Calculate and simplify.",
@@ -768,7 +768,7 @@ export const Y10_CH15C_QUESTIONS = [
           },
           {
             "explanation": "Find numbers in this group that are greater than 12.",
-            "workingOut": "\\text{Favourable} = \\{13, 14, \\dots, 23\\} \\implies 11 \\; \\text{numbers}"
+            "workingOut": "\\text{Favourable} = {13, 14, \\dots, 23} \\implies 11 \\; \\text{numbers}"
           },
           {
             "explanation": "Calculate.",
@@ -786,11 +786,11 @@ export const Y10_CH15C_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "List all numbers from 1 to 30 that are divisible by 4.",
-            "workingOut": "\\text{Divisible by 4} = \\{4, 8, 12, 16, 20, 24, 28\\} \\implies 7 \\; \\text{numbers}"
+            "workingOut": "\\text{Divisible by 4} = {4, 8, 12, 16, 20, 24, 28} \\implies 7 \\; \\text{numbers}"
           },
           {
             "explanation": "Identify which of these numbers are also divisible by 8.",
-            "workingOut": "\\text{Divisible by 8} = \\{8, 16, 24\\} \\implies 3 \\; \\text{numbers}"
+            "workingOut": "\\text{Divisible by 8} = {8, 16, 24} \\implies 3 \\; \\text{numbers}"
           },
           {
             "explanation": "Calculate.",

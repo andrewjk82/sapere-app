@@ -504,27 +504,27 @@ export const Y8_CH2H_QUESTIONS = [
     "id": "y8-2h-q7",
     "type": "short_answer",
     "difficulty": "medium",
-    "question": "Horatia has saved $\\$1800$. If she spends $\\frac{1}{3}$ of the money on rent and shopping, and $\\frac{3}{8}$ of the remaining money on petrol, how much does she have left?",
-    "a": "\\$750",
+    "question": "Horatia has saved $1800. If she spends $\\frac{1}{3}$ of the money on rent and shopping, and $\\frac{3}{8}$ of the remaining money on petrol, how much does she have left?",
+    "a": "$750",
     "solution": "Rent/shopping: $\\frac{1}{3} \\times 1800 = \\$600$. Remaining: $1800 - 600 = \\$1200$. Petrol: $\\frac{3}{8} \\times 1200 = \\$450$. Left: $1200 - 450 = \\$750$.",
     "t": "Review of fractions and decimals",
     "hint": "Calculate the remaining amount after each expense.",
     "solutionSteps": [
       {
         "explanation": "Rent and shopping",
-        "workingOut": "\\frac{1}{3} \\times 1800 = \\$600"
+        "workingOut": "\\frac{1}{3} \\times 1800 = $600"
       },
       {
         "explanation": "Remaining money",
-        "workingOut": "1800 - 600 = \\$1200"
+        "workingOut": "1800 - 600 = $1200"
       },
       {
         "explanation": "Petrol",
-        "workingOut": "\\frac{3}{8} \\times 1200 = \\$450"
+        "workingOut": "\\frac{3}{8} \\times 1200 = $450"
       },
       {
         "explanation": "Amount left",
-        "workingOut": "1200 - 450 = \\$750"
+        "workingOut": "1200 - 450 = $750"
       }
     ],
     "graphData": null

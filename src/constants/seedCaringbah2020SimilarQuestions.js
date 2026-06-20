@@ -795,7 +795,7 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     source: 'Caringbah 2020 Trial Q37',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'At time $t$ years after purchase, the value $\\$V$ of a laptop is given by $V = 1200e^{-0.4t}$.\n\n(a) Find the loss in value during the second year.\n\n(b) Find the year in which the laptop is losing value at a rate of $\\$50$ per year.',
+    q: 'At time $t$ years after purchase, the value $V$ of a laptop is given by $V = 1200e^{-0.4t}$.\n\n(a) Find the loss in value during the second year.\n\n(b) Find the year in which the laptop is losing value at a rate of $50 per year.',
     a: '(a) $\\approx \\$264$\n\n(b) During the $8$th year',
     opts: [],
     h: 'For (a), compute $V(1) - V(2)$. For (b), set $|dV/dt| = 50$.',

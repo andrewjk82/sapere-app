@@ -166,7 +166,7 @@ export const Y7_CH2H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "List the factors of each number.",
-        workingOut: "\\text{Factors of 30} = \\{1, 2, 3, 5, 6, 10, 15, 30\\} \\\\ \\text{Factors of 24} = \\{1, 2, 3, 4, 6, 8, 12, 24\\}"
+        workingOut: "\\text{Factors of 30} = {1, 2, 3, 5, 6, 10, 15, 30} \\\\ \\text{Factors of 24} = {1, 2, 3, 4, 6, 8, 12, 24}"
       },
       {
         explanation: "Identify the largest factor that appears in both lists.",
@@ -188,7 +188,7 @@ export const Y7_CH2H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "List factors.",
-        workingOut: "\\text{Factors of 15} = \\{1, 3, 5, 15\\} \\\\ \\text{Factors of 21} = \\{1, 3, 7, 21\\}"
+        workingOut: "\\text{Factors of 15} = {1, 3, 5, 15} \\\\ \\text{Factors of 21} = {1, 3, 7, 21}"
       },
       {
         explanation: "Find the largest common factor.",
@@ -276,7 +276,7 @@ export const Y7_CH2H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "Find common factors.",
-        workingOut: "\\text{Common factors of } 12, 18, 30 = \\{1, 2, 3, 6\\}"
+        workingOut: "\\text{Common factors of } 12, 18, 30 = {1, 2, 3, 6}"
       },
       {
         explanation: "Choose the largest.",
@@ -298,7 +298,7 @@ export const Y7_CH2H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "List factors.",
-        workingOut: "15: \\{1, 3, 5, 15\\} \\\\ 6: \\{1, 2, 3, 6\\} \\\\ 14: \\{1, 2, 7, 14\\}"
+        workingOut: "15: {1, 3, 5, 15} \\\\ 6: {1, 2, 3, 6} \\\\ 14: {1, 2, 7, 14}"
       },
       {
         explanation: "Only 1 is a common factor for all three.",

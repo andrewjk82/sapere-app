@@ -466,7 +466,7 @@ export const Y7_CH1M_QUESTIONS = [
       },
       {
         explanation: 'Try placing the middle number 4 at B or C. Since 4 has two consecutive neighbors (3 and 5), placing 4 at B or C (which have 3 neighbors) leaves only {2, 6} for those neighbors, which is not enough circles. Thus, B and C must be the extreme values 2 and 6.',
-        workingOut: '\\{B, C\\} = \\{2, 6\\}'
+        workingOut: '{B, C} = {2, 6}'
       },
       {
         explanation: 'If B = 6 and C = 2, then A (connected to both 2 and 6) cannot contain 3 or 5. Therefore, the only available number for A is 4.',
@@ -583,7 +583,7 @@ export const Y7_CH1M_QUESTIONS = [
     solutionSteps: [
       {
         explanation: 'Identify the connections. Circles B and E are connected to 4 other circles each (highest degree). Thus, we should place numbers with the fewest consecutive neighbors, 2 and 7, at B and E.',
-        workingOut: '\\text{Degree of B and E: } 4 \\implies \\{B, E\\} = \\{2, 7\\}'
+        workingOut: '\\text{Degree of B and E: } 4 \\implies {B, E} = {2, 7}'
       },
       {
         explanation: 'Since B is given as 7, E must be the other high-degree value.',

@@ -1,1001 +1,4285 @@
 export const Y7_CH1B_QUESTIONS = [
-  // ── QUESTION 1a ──
   {
     "id": "y7-1b-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 60,
+    "timeLimit": 30,
     "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 14 + 6 \\)",
+    "question": "Carry out this addition mentally:\n\\\\( 15 + 5 \\\\)",
     "a": "20",
+    "options": [
+      "\\\\( 20 \\\\)",
+      "\\\\( 19 \\\\)",
+      "\\\\( 21 \\\\)",
+      "\\\\( 15 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Add the single-digits.",
-        "workingOut": "4 + 6 = 10"
+        "explanation": "Add the units digits first.",
+        "workingOut": "\\\\( 5 + 5 = 10 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add this to the tens column.",
-        "workingOut": "10 + 10 = 20"
+        "explanation": "Add the result to the remaining tens.",
+        "workingOut": "\\\\( 10 + 10 = 20 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 1b ──
   {
     "id": "y7-1b-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 60,
+    "timeLimit": 30,
     "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 6 + 34 \\)",
-    "a": "40",
+    "question": "Carry out this addition mentally:\n\\\\( 8 + 22 \\\\)",
+    "a": "30",
+    "options": [
+      "\\\\( 30 \\\\)",
+      "\\\\( 28 \\\\)",
+      "\\\\( 32 \\\\)",
+      "\\\\( 40 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Add the single-digits.",
-        "workingOut": "6 + 4 = 10"
+        "explanation": "Add the units digits to make a round ten.",
+        "workingOut": "\\\\( 8 + 2 = 10 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add this to the tens column.",
-        "workingOut": "30 + 10 = 40"
+        "explanation": "Add this to the tens digit.",
+        "workingOut": "\\\\( 20 + 10 = 30 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 1c ──
   {
     "id": "y7-1b-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 60,
+    "timeLimit": 30,
     "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 25 + 5 \\)",
-    "a": "30",
+    "question": "Carry out this addition mentally:\n\\\\( 13 + 7 \\\\)",
+    "a": "20",
+    "options": [
+      "\\\\( 20 \\\\)",
+      "\\\\( 19 \\\\)",
+      "\\\\( 21 \\\\)",
+      "\\\\( 23 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Add the single-digits.",
-        "workingOut": "5 + 5 = 10"
+        "explanation": "Combine the units digits.",
+        "workingOut": "\\\\( 3 + 7 = 10 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add this to the tens column.",
-        "workingOut": "20 + 10 = 30"
+        "explanation": "Add the result to the tens.",
+        "workingOut": "\\\\( 10 + 10 = 20 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 1d ──
   {
     "id": "y7-1b-q1d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 60,
+    "timeLimit": 30,
     "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 62 + 8 \\)",
-    "a": "70",
+    "question": "Carry out this addition mentally:\n\\\\( 74 + 6 \\\\)",
+    "a": "80",
+    "options": [
+      "\\\\( 80 \\\\)",
+      "\\\\( 78 \\\\)",
+      "\\\\( 82 \\\\)",
+      "\\\\( 84 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Add the single-digits.",
-        "workingOut": "2 + 8 = 10"
+        "explanation": "Combine the units digits.",
+        "workingOut": "\\\\( 4 + 6 = 10 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add this to the tens column.",
-        "workingOut": "60 + 10 = 70"
+        "explanation": "Add this to the tens digit.",
+        "workingOut": "\\\\( 70 + 10 = 80 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 1e ──
   {
     "id": "y7-1b-q1e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 60,
+    "timeLimit": 30,
     "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 5 + 69 \\)",
-    "a": "74",
+    "question": "Carry out this addition mentally:\n\\\\( 7 + 58 \\\\)",
+    "a": "65",
+    "options": [
+      "\\\\( 65 \\\\)",
+      "\\\\( 63 \\\\)",
+      "\\\\( 66 \\\\)",
+      "\\\\( 55 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Add the single-digits.",
-        "workingOut": "5 + 9 = 14"
+        "explanation": "Add the units digits.",
+        "workingOut": "\\\\( 7 + 8 = 15 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add this to the tens column.",
-        "workingOut": "60 + 14 = 74"
+        "explanation": "Add this to the tens digit.",
+        "workingOut": "\\\\( 50 + 15 = 65 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 1f ──
   {
     "id": "y7-1b-q1f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 60,
+    "timeLimit": 30,
     "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 7 + 48 \\)",
-    "a": "55",
+    "question": "Carry out this addition mentally:\n\\\\( 6 + 38 \\\\)",
+    "a": "44",
+    "options": [
+      "\\\\( 44 \\\\)",
+      "\\\\( 42 \\\\)",
+      "\\\\( 46 \\\\)",
+      "\\\\( 38 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Add the single-digits.",
-        "workingOut": "7 + 8 = 15"
+        "explanation": "Add the units digits.",
+        "workingOut": "\\\\( 6 + 8 = 14 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add this to the tens column.",
-        "workingOut": "40 + 15 = 55"
+        "explanation": "Add this to the tens digit.",
+        "workingOut": "\\\\( 30 + 14 = 44 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 1g ──
   {
     "id": "y7-1b-q1g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 60,
+    "timeLimit": 30,
     "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 6 + 79 \\)",
-    "a": "85",
+    "question": "Carry out this addition mentally:\n\\\\( 8 + 89 \\\\)",
+    "a": "97",
+    "options": [
+      "\\\\( 97 \\\\)",
+      "\\\\( 96 \\\\)",
+      "\\\\( 98 \\\\)",
+      "\\\\( 87 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Add the single-digits.",
-        "workingOut": "6 + 9 = 15"
+        "explanation": "Add the units digits.",
+        "workingOut": "\\\\( 8 + 9 = 17 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add this to the tens column.",
-        "workingOut": "70 + 15 = 85"
+        "explanation": "Add this to the tens digit.",
+        "workingOut": "\\\\( 80 + 17 = 97 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 1h ──
   {
     "id": "y7-1b-q1h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 60,
+    "timeLimit": 30,
     "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 52 + 9 \\)",
-    "a": "61",
+    "question": "Carry out this addition mentally:\n\\\\( 32 + 9 \\\\)",
+    "a": "41",
+    "options": [
+      "\\\\( 41 \\\\)",
+      "\\\\( 39 \\\\)",
+      "\\\\( 40 \\\\)",
+      "\\\\( 43 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Add the single-digits.",
-        "workingOut": "2 + 9 = 11"
+        "explanation": "Add the units digits.",
+        "workingOut": "\\\\( 2 + 9 = 11 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add this to the tens column.",
-        "workingOut": "50 + 11 = 61"
+        "explanation": "Add this to the tens digit.",
+        "workingOut": "\\\\( 30 + 11 = 41 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 1i ──
   {
     "id": "y7-1b-q1i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 60,
+    "timeLimit": 30,
     "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 26 + 37 \\)",
-    "a": "63",
+    "question": "Carry out this addition mentally:\n\\\\( 35 + 27 \\\\)",
+    "a": "62",
+    "options": [
+      "\\\\( 62 \\\\)",
+      "\\\\( 52 \\\\)",
+      "\\\\( 63 \\\\)",
+      "\\\\( 65 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Add the single-digits.",
-        "workingOut": "6 + 7 = 13"
+        "explanation": "Add the units digits.",
+        "workingOut": "\\\\( 5 + 7 = 12 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add the tens digit sums.",
-        "workingOut": "20 + 30 = 50"
-      },
-      {
-        "explanation": "Add the parts together.",
-        "workingOut": "50 + 13 = 63"
-      }
-    ]
-  },
-
-  // ── QUESTION 1j ──
-  {
-    "id": "y7-1b-q1j",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 33 + 19 \\)",
-    "a": "52",
-    "solutionSteps": [
-      {
-        "explanation": "Add the single-digits.",
-        "workingOut": "3 + 9 = 12"
-      },
-      {
-        "explanation": "Add the tens digit sums.",
-        "workingOut": "30 + 10 = 40"
-      },
-      {
-        "explanation": "Add the parts together.",
-        "workingOut": "40 + 12 = 52"
-      }
-    ]
-  },
-
-  // ── QUESTION 1k ──
-  {
-    "id": "y7-1b-q1k",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 19 + 45 \\)",
-    "a": "64",
-    "solutionSteps": [
-      {
-        "explanation": "Add the single-digits.",
-        "workingOut": "9 + 5 = 14"
-      },
-      {
-        "explanation": "Add the tens digit sums.",
-        "workingOut": "10 + 40 = 50"
-      },
-      {
-        "explanation": "Add the parts together.",
-        "workingOut": "50 + 14 = 64"
-      }
-    ]
-  },
-
-  // ── QUESTION 1l ──
-  {
-    "id": "y7-1b-q1l",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition mentally:\n\\( 48 + 75 \\)",
-    "a": "123",
-    "solutionSteps": [
-      {
-        "explanation": "Add the single-digits.",
-        "workingOut": "8 + 5 = 13"
-      },
-      {
-        "explanation": "Add the tens digit sums.",
-        "workingOut": "40 + 70 = 110"
-      },
-      {
-        "explanation": "Add the parts together.",
-        "workingOut": "110 + 13 = 123"
-      }
-    ]
-  },
-
-  // ── QUESTION 2a ──
-  {
-    "id": "y7-1b-q2a",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 2 + 8 + 43 \\)",
-    "a": "53",
-    "solutionSteps": [
-      {
-        "explanation": "Add the first two numbers to make a round ten.",
-        "workingOut": "2 + 8 = 10"
-      },
-      {
-        "explanation": "Add the remaining number to the result.",
-        "workingOut": "10 + 43 = 53"
-      }
-    ]
-  },
-
-  // ── QUESTION 2b ──
-  {
-    "id": "y7-1b-q2b",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 3 + 27 + 6 \\)",
-    "a": "36",
-    "solutionSteps": [
-      {
-        "explanation": "Add the numbers that sum to a round ten.",
-        "workingOut": "3 + 27 = 30"
-      },
-      {
-        "explanation": "Add the remaining number to the result.",
-        "workingOut": "30 + 6 = 36"
-      }
-    ]
-  },
-
-  // ── QUESTION 2c ──
-  {
-    "id": "y7-1b-q2c",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 36 + 5 + 4 \\)",
-    "a": "45",
-    "solutionSteps": [
-      {
-        "explanation": "Group the numbers that sum to a round ten.",
-        "workingOut": "36 + 4 = 40"
-      },
-      {
-        "explanation": "Add the remaining number to the result.",
-        "workingOut": "40 + 5 = 45"
-      }
-    ]
-  },
-
-  // ── QUESTION 2d ──
-  {
-    "id": "y7-1b-q2d",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 18 + 22 + 7 \\)",
-    "a": "47",
-    "solutionSteps": [
-      {
-        "explanation": "Add the first two numbers that sum to a round ten.",
-        "workingOut": "18 + 22 = 40"
-      },
-      {
-        "explanation": "Add the remaining number to the result.",
-        "workingOut": "40 + 7 = 47"
-      }
-    ]
-  },
-
-  // ── QUESTION 2e ──
-  {
-    "id": "y7-1b-q2e",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 42 + 8 + 35 \\)",
-    "a": "85",
-    "solutionSteps": [
-      {
-        "explanation": "Add the first two numbers that sum to a round ten.",
-        "workingOut": "42 + 8 = 50"
-      },
-      {
-        "explanation": "Add the remaining number to the result.",
-        "workingOut": "50 + 35 = 85"
-      }
-    ]
-  },
-
-  // ── QUESTION 2f ──
-  {
-    "id": "y7-1b-q2f",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 6 + 53 + 27 \\)",
-    "a": "86",
-    "solutionSteps": [
-      {
-        "explanation": "Add the second and third numbers that sum to a round ten.",
-        "workingOut": "53 + 27 = 80"
-      },
-      {
-        "explanation": "Add the remaining number to the result.",
-        "workingOut": "6 + 80 = 86"
-      }
-    ]
-  },
-
-  // ── QUESTION 2g ──
-  {
-    "id": "y7-1b-q2g",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 14 + 48 + 25 \\)",
-    "a": "87",
-    "solutionSteps": [
-      {
-        "explanation": "Add the first two numbers.",
-        "workingOut": "14 + 48 = 62"
-      },
-      {
-        "explanation": "Add the third number to the result.",
-        "workingOut": "62 + 25 = 87"
-      }
-    ]
-  },
-
-  // ── QUESTION 2h ──
-  {
-    "id": "y7-1b-q2h",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 63 + 18 + 34 \\)",
-    "a": "115",
-    "solutionSteps": [
-      {
-        "explanation": "Add the first and third numbers first.",
-        "workingOut": "63 + 34 = 97"
-      },
-      {
-        "explanation": "Add the remaining number to the result.",
-        "workingOut": "97 + 18 = 115"
-      }
-    ]
-  },
-
-  // ── QUESTION 3a ──
-  {
-    "id": "y7-1b-q3a",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Perform the computation using grouping:\n\\( 31 + 16 + 19 + 24 \\)",
-    "a": "90",
-    "solutionSteps": [
-      {
-        "explanation": "Group numbers to form multiples of 10.",
-        "workingOut": "(31 + 19) + (16 + 24)"
-      },
-      {
-        "explanation": "Compute the sum of each group.",
-        "workingOut": "50 + 40"
-      },
-      {
-        "explanation": "Add the group sums together.",
-        "workingOut": "50 + 40 = 90"
-      }
-    ]
-  },
-
-  // ── QUESTION 3b ──
-  {
-    "id": "y7-1b-q3b",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Perform the computation using grouping:\n\\( 13 + 17 + 87 + 83 \\)",
-    "a": "200",
-    "solutionSteps": [
-      {
-        "explanation": "Group numbers that sum to 100.",
-        "workingOut": "(13 + 87) + (17 + 83)"
-      },
-      {
-        "explanation": "Compute the sum of each group.",
-        "workingOut": "100 + 100"
-      },
-      {
-        "explanation": "Add the group sums together.",
-        "workingOut": "100 + 100 = 200"
-      }
-    ]
-  },
-
-  // ── QUESTION 3c ──
-  {
-    "id": "y7-1b-q3c",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Perform the computation using grouping:\n\\( 12 + 38 + 55 + 5 \\)",
-    "a": "110",
-    "solutionSteps": [
-      {
-        "explanation": "Group numbers that sum to round tens.",
-        "workingOut": "(12 + 38) + (55 + 5)"
-      },
-      {
-        "explanation": "Compute the sum of each group.",
-        "workingOut": "50 + 60"
-      },
-      {
-        "explanation": "Add the group sums together.",
-        "workingOut": "50 + 60 = 110"
-      }
-    ]
-  },
-
-  // ── QUESTION 3d ──
-  {
-    "id": "y7-1b-q3d",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Perform the computation using grouping:\n\\( 35 + 43 + 25 + 17 \\)",
-    "a": "120",
-    "solutionSteps": [
-      {
-        "explanation": "Group numbers that sum to round tens.",
-        "workingOut": "(35 + 25) + (43 + 17)"
-      },
-      {
-        "explanation": "Compute the sum of each group.",
-        "workingOut": "60 + 60"
-      },
-      {
-        "explanation": "Add the group sums together.",
-        "workingOut": "60 + 60 = 120"
-      }
-    ]
-  },
-
-  // ── QUESTION 3e ──
-  {
-    "id": "y7-1b-q3e",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Perform the computation using grouping:\n\\( 25 + 42 + 18 + 15 \\)",
-    "a": "100",
-    "solutionSteps": [
-      {
-        "explanation": "Group numbers that sum to round tens.",
-        "workingOut": "(25 + 15) + (42 + 18)"
-      },
-      {
-        "explanation": "Compute the sum of each group.",
-        "workingOut": "40 + 60"
-      },
-      {
-        "explanation": "Add the group sums together.",
-        "workingOut": "40 + 60 = 100"
-      }
-    ]
-  },
-
-  // ── QUESTION 3f ──
-  {
-    "id": "y7-1b-q3f",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Perform the computation using grouping:\n\\( 14 + 29 + 16 + 1 \\)",
-    "a": "60",
-    "solutionSteps": [
-      {
-        "explanation": "Group numbers that sum to round tens.",
-        "workingOut": "(14 + 16) + (29 + 1)"
-      },
-      {
-        "explanation": "Compute the sum of each group.",
-        "workingOut": "30 + 30"
-      },
-      {
-        "explanation": "Add the group sums together.",
-        "workingOut": "30 + 30 = 60"
-      }
-    ]
-  },
-
-  // ── QUESTION 4a ──
-  {
-    "id": "y7-1b-q4a",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 136 + 64 \\)",
-    "a": "200",
-    "solutionSteps": [
-      {
-        "explanation": "Add the units digit.",
-        "workingOut": "6 + 4 = 10"
-      },
-      {
-        "explanation": "Add the tens, carrying over the 10.",
-        "workingOut": "30 + 60 + 10 = 100"
-      },
-      {
-        "explanation": "Add the hundreds.",
-        "workingOut": "100 + 100 = 200"
-      }
-    ]
-  },
-
-  // ── QUESTION 4b ──
-  {
-    "id": "y7-1b-q4b",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 472 + 28 \\)",
-    "a": "500",
-    "solutionSteps": [
-      {
-        "explanation": "Pair the tens and units.",
-        "workingOut": "72 + 28 = 100"
-      },
-      {
-        "explanation": "Add this to the hundreds column.",
-        "workingOut": "400 + 100 = 500"
-      }
-    ]
-  },
-
-  // ── QUESTION 4c ──
-  {
-    "id": "y7-1b-q4c",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 235 + 15 \\)",
-    "a": "250",
-    "solutionSteps": [
-      {
-        "explanation": "Pair the tens and units.",
-        "workingOut": "35 + 15 = 50"
-      },
-      {
-        "explanation": "Add this to the hundreds column.",
-        "workingOut": "200 + 50 = 250"
-      }
-    ]
-  },
-
-  // ── QUESTION 4d ──
-  {
-    "id": "y7-1b-q4d",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 673 + 27 \\)",
-    "a": "700",
-    "solutionSteps": [
-      {
-        "explanation": "Pair the tens and units.",
-        "workingOut": "73 + 27 = 100"
-      },
-      {
-        "explanation": "Add this to the hundreds column.",
-        "workingOut": "600 + 100 = 700"
-      }
-    ]
-  },
-
-  // ── QUESTION 4e ──
-  {
-    "id": "y7-1b-q4e",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 345 + 15 \\)",
-    "a": "360",
-    "solutionSteps": [
-      {
-        "explanation": "Pair the tens and units.",
-        "workingOut": "45 + 15 = 60"
-      },
-      {
-        "explanation": "Add this to the hundreds column.",
-        "workingOut": "300 + 60 = 360"
-      }
-    ]
-  },
-
-  // ── QUESTION 4f ──
-  {
-    "id": "y7-1b-q4f",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 874 + 26 \\)",
-    "a": "900",
-    "solutionSteps": [
-      {
-        "explanation": "Pair the tens and units.",
-        "workingOut": "74 + 26 = 100"
-      },
-      {
-        "explanation": "Add this to the hundreds column.",
-        "workingOut": "800 + 100 = 900"
-      }
-    ]
-  },
-
-  // ── QUESTION 4g ──
-  {
-    "id": "y7-1b-q4g",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 382 + 618 \\)",
-    "a": "1000",
-    "solutionSteps": [
-      {
-        "explanation": "Pair the tens and units.",
-        "workingOut": "82 + 18 = 100"
-      },
-      {
-        "explanation": "Add the hundreds, including the carry.",
-        "workingOut": "300 + 600 + 100 = 1000"
-      }
-    ]
-  },
-
-  // ── QUESTION 4h ──
-  {
-    "id": "y7-1b-q4h",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "t": "Addition",
-    "question": "Carry out this addition:\n\\( 275 + 123 \\)",
-    "a": "398",
-    "solutionSteps": [
-      {
-        "explanation": "Add the units digit.",
-        "workingOut": "5 + 3 = 8"
-      },
-      {
-        "explanation": "Add the tens digit.",
-        "workingOut": "70 + 20 = 90"
-      },
-      {
-        "explanation": "Add the hundreds digit.",
-        "workingOut": "200 + 100 = 300"
+        "explanation": "Add the tens digits.",
+        "workingOut": "\\\\( 30 + 20 = 50 \\\\)",
+        "graphData": null
       },
       {
         "explanation": "Combine the sums.",
-        "workingOut": "300 + 90 + 8 = 398"
+        "workingOut": "\\\\( 50 + 12 = 62 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 5 ──
+  {
+    "id": "y7-1b-q1j",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition mentally:\n\\\\( 42 + 19 \\\\)",
+    "a": "61",
+    "options": [
+      "\\\\( 61 \\\\)",
+      "\\\\( 51 \\\\)",
+      "\\\\( 62 \\\\)",
+      "\\\\( 59 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Add the units digits.",
+        "workingOut": "\\\\( 2 + 9 = 11 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens digits.",
+        "workingOut": "\\\\( 40 + 10 = 50 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the sums.",
+        "workingOut": "\\\\( 50 + 11 = 61 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q1k",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition mentally:\n\\\\( 29 + 36 \\\\)",
+    "a": "65",
+    "options": [
+      "\\\\( 65 \\\\)",
+      "\\\\( 55 \\\\)",
+      "\\\\( 66 \\\\)",
+      "\\\\( 64 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Add the units digits.",
+        "workingOut": "\\\\( 9 + 6 = 15 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens digits.",
+        "workingOut": "\\\\( 20 + 30 = 50 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the sums.",
+        "workingOut": "\\\\( 50 + 15 = 65 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q1l",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition mentally:\n\\\\( 57 + 86 \\\\)",
+    "a": "143",
+    "options": [
+      "\\\\( 143 \\\\)",
+      "\\\\( 133 \\\\)",
+      "\\\\( 144 \\\\)",
+      "\\\\( 153 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Add the units digits.",
+        "workingOut": "\\\\( 7 + 8 = 15 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens digits.",
+        "workingOut": "\\\\( 50 + 80 = 130 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the sums.",
+        "workingOut": "\\\\( 130 + 15 = 145 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q2a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 1 + 9 + 33 \\\\)",
+    "a": "43",
+    "options": [
+      "\\\\( 43 \\\\)",
+      "\\\\( 42 \\\\)",
+      "\\\\( 33 \\\\)",
+      "\\\\( 53 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the numbers that sum to a round ten.",
+        "workingOut": "\\\\( 1 + 9 = 10 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining term.",
+        "workingOut": "\\\\( 10 + 33 = 43 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q2b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 2 + 38 + 5 \\\\)",
+    "a": "45",
+    "options": [
+      "\\\\( 45 \\\\)",
+      "\\\\( 40 \\\\)",
+      "\\\\( 43 \\\\)",
+      "\\\\( 55 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the numbers that sum to a round ten.",
+        "workingOut": "\\\\( 2 + 38 = 40 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining term.",
+        "workingOut": "\\\\( 40 + 5 = 45 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q2c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 27 + 6 + 3 \\\\)",
+    "a": "36",
+    "options": [
+      "\\\\( 36 \\\\)",
+      "\\\\( 30 \\\\)",
+      "\\\\( 33 \\\\)",
+      "\\\\( 46 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the numbers that sum to a round ten.",
+        "workingOut": "\\\\( 27 + 3 = 30 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining term.",
+        "workingOut": "\\\\( 30 + 6 = 36 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q2d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 16 + 24 + 5 \\\\)",
+    "a": "45",
+    "options": [
+      "\\\\( 45 \\\\)",
+      "\\\\( 40 \\\\)",
+      "\\\\( 41 \\\\)",
+      "\\\\( 55 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the numbers that sum to a round ten.",
+        "workingOut": "\\\\( 16 + 24 = 40 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining term.",
+        "workingOut": "\\\\( 40 + 5 = 45 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q2e",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 61 + 9 + 24 \\\\)",
+    "a": "94",
+    "options": [
+      "\\\\( 94 \\\\)",
+      "\\\\( 70 \\\\)",
+      "\\\\( 84 \\\\)",
+      "\\\\( 95 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the numbers that sum to a round ten.",
+        "workingOut": "\\\\( 61 + 9 = 70 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining term.",
+        "workingOut": "\\\\( 70 + 24 = 94 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q2f",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 4 + 42 + 38 \\\\)",
+    "a": "84",
+    "options": [
+      "\\\\( 84 \\\\)",
+      "\\\\( 80 \\\\)",
+      "\\\\( 46 \\\\)",
+      "\\\\( 94 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the numbers that sum to a round ten.",
+        "workingOut": "\\\\( 42 + 38 = 80 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining term.",
+        "workingOut": "\\\\( 80 + 4 = 84 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q2g",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 16 + 55 + 27 \\\\)",
+    "a": "98",
+    "options": [
+      "\\\\( 98 \\\\)",
+      "\\\\( 88 \\\\)",
+      "\\\\( 99 \\\\)",
+      "\\\\( 108 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Add the first two numbers.",
+        "workingOut": "\\\\( 16 + 55 = 71 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining term.",
+        "workingOut": "\\\\( 71 + 27 = 98 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q2h",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 72 + 19 + 26 \\\\)",
+    "a": "117",
+    "options": [
+      "\\\\( 117 \\\\)",
+      "\\\\( 107 \\\\)",
+      "\\\\( 118 \\\\)",
+      "\\\\( 127 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Add the first two numbers.",
+        "workingOut": "\\\\( 72 + 19 = 91 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining term.",
+        "workingOut": "\\\\( 91 + 26 = 117 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q3a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Do this computation using pairing techniques:\n\\\\( 22 + 17 + 18 + 23 \\\\)",
+    "a": "80",
+    "options": [
+      "\\\\( 80 \\\\)",
+      "\\\\( 70 \\\\)",
+      "\\\\( 90 \\\\)",
+      "\\\\( 85 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the terms that form round tens.",
+        "workingOut": "\\\\( (22 + 18) + (17 + 23) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum each grouped pair.",
+        "workingOut": "\\\\( 40 + 40 = 80 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q3b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Do this computation using pairing techniques:\n\\\\( 14 + 18 + 76 + 92 \\\\)",
+    "a": "200",
+    "options": [
+      "\\\\( 200 \\\\)",
+      "\\\\( 190 \\\\)",
+      "\\\\( 210 \\\\)",
+      "\\\\( 220 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the terms that form round tens or hundreds.",
+        "workingOut": "\\\\( (14 + 76) + (18 + 92) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum each grouped pair.",
+        "workingOut": "\\\\( 90 + 110 = 200 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q3c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Do this computation using pairing techniques:\n\\\\( 13 + 27 + 64 + 6 \\\\)",
+    "a": "110",
+    "options": [
+      "\\\\( 110 \\\\)",
+      "\\\\( 100 \\\\)",
+      "\\\\( 120 \\\\)",
+      "\\\\( 105 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the terms that form round tens.",
+        "workingOut": "\\\\( (13 + 27) + (64 + 6) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum each grouped pair.",
+        "workingOut": "\\\\( 40 + 70 = 110 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q3d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Do this computation using pairing techniques:\n\\\\( 25 + 32 + 15 + 18 \\\\)",
+    "a": "90",
+    "options": [
+      "\\\\( 90 \\\\)",
+      "\\\\( 80 \\\\)",
+      "\\\\( 100 \\\\)",
+      "\\\\( 95 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the terms that form round tens.",
+        "workingOut": "\\\\( (25 + 15) + (32 + 18) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum each grouped pair.",
+        "workingOut": "\\\\( 40 + 50 = 90 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q3e",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Do this computation using pairing techniques:\n\\\\( 15 + 34 + 26 + 35 \\\\)",
+    "a": "110",
+    "options": [
+      "\\\\( 110 \\\\)",
+      "\\\\( 100 \\\\)",
+      "\\\\( 120 \\\\)",
+      "\\\\( 115 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the terms that form round tens.",
+        "workingOut": "\\\\( (15 + 35) + (34 + 26) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum each grouped pair.",
+        "workingOut": "\\\\( 50 + 60 = 110 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q3f",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Do this computation using pairing techniques:\n\\\\( 12 + 19 + 18 + 1 \\\\)",
+    "a": "50",
+    "options": [
+      "\\\\( 50 \\\\)",
+      "\\\\( 40 \\\\)",
+      "\\\\( 60 \\\\)",
+      "\\\\( 55 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Group the terms that form round tens.",
+        "workingOut": "\\\\( (12 + 18) + (19 + 1) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum each grouped pair.",
+        "workingOut": "\\\\( 30 + 20 = 50 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q4a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 243 + 57 \\\\)",
+    "a": "300",
+    "options": [
+      "\\\\( 300 \\\\)",
+      "\\\\( 290 \\\\)",
+      "\\\\( 310 \\\\)",
+      "\\\\( 250 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Separate the tens and units.",
+        "workingOut": "\\\\( 43 + 57 = 100 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the result to the remaining hundreds.",
+        "workingOut": "\\\\( 200 + 100 = 300 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q4b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 567 + 43 \\\\)",
+    "a": "610",
+    "options": [
+      "\\\\( 610 \\\\)",
+      "\\\\( 600 \\\\)",
+      "\\\\( 620 \\\\)",
+      "\\\\( 510 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Separate the tens and units.",
+        "workingOut": "\\\\( 67 + 43 = 110 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the result to the remaining hundreds.",
+        "workingOut": "\\\\( 500 + 110 = 610 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q4c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 328 + 22 \\\\)",
+    "a": "350",
+    "options": [
+      "\\\\( 350 \\\\)",
+      "\\\\( 340 \\\\)",
+      "\\\\( 360 \\\\)",
+      "\\\\( 300 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Separate the tens and units.",
+        "workingOut": "\\\\( 28 + 22 = 50 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the result to the remaining hundreds.",
+        "workingOut": "\\\\( 300 + 50 = 350 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q4d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 786 + 24 \\\\)",
+    "a": "810",
+    "options": [
+      "\\\\( 810 \\\\)",
+      "\\\\( 800 \\\\)",
+      "\\\\( 820 \\\\)",
+      "\\\\( 710 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Separate the tens and units.",
+        "workingOut": "\\\\( 86 + 24 = 110 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the result to the remaining hundreds.",
+        "workingOut": "\\\\( 700 + 110 = 810 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q4e",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 435 + 25 \\\\)",
+    "a": "460",
+    "options": [
+      "\\\\( 460 \\\\)",
+      "\\\\( 450 \\\\)",
+      "\\\\( 470 \\\\)",
+      "\\\\( 400 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Separate the tens and units.",
+        "workingOut": "\\\\( 35 + 25 = 60 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the result to the remaining hundreds.",
+        "workingOut": "\\\\( 400 + 60 = 460 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q4f",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 963 + 57 \\\\)",
+    "a": "1020",
+    "options": [
+      "\\\\( 1020 \\\\)",
+      "\\\\( 1000 \\\\)",
+      "\\\\( 1010 \\\\)",
+      "\\\\( 920 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Separate the tens and units.",
+        "workingOut": "\\\\( 63 + 57 = 120 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the result to the remaining hundreds.",
+        "workingOut": "\\\\( 900 + 120 = 1020 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q4g",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 486 + 524 \\\\)",
+    "a": "1010",
+    "options": [
+      "\\\\( 1010 \\\\)",
+      "\\\\( 1000 \\\\)",
+      "\\\\( 1020 \\\\)",
+      "\\\\( 910 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Separate the tens and units.",
+        "workingOut": "\\\\( 86 + 24 = 110 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining values.",
+        "workingOut": "\\\\( 400 + 500 + 110 = 1010 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q4h",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Addition",
+    "question": "Carry out this addition:\n\\\\( 364 + 251 \\\\)",
+    "a": "615",
+    "options": [
+      "\\\\( 615 \\\\)",
+      "\\\\( 605 \\\\)",
+      "\\\\( 625 \\\\)",
+      "\\\\( 515 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Add the units digits.",
+        "workingOut": "\\\\( 4 + 1 = 5 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens digits.",
+        "workingOut": "\\\\( 60 + 50 = 110 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the hundreds digits.",
+        "workingOut": "\\\\( 300 + 200 = 500 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum all components together.",
+        "workingOut": "\\\\( 500 + 110 + 5 = 615 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
   {
     "id": "y7-1b-q5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Addition",
-    "question": "Three cows produced 28 litres, 45 litres and 22 litres of milk in one day. How much milk did they produce in total?",
-    "a": "95",
+    "question": "Three cows produced 29 litres, 47 litres and 23 litres of milk in one day. How much milk did they produce in total?",
+    "a": "99",
+    "options": [
+      "\\\\( 99 \\\\)",
+      "\\\\( 96 \\\\)",
+      "\\\\( 89 \\\\)",
+      "\\\\( 109 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the addition for total milk production.",
-        "workingOut": "28 + 45 + 22"
+        "explanation": "Set up the addition expression for total milk production.",
+        "workingOut": "\\\\( 29 + 47 + 23 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Group numbers to make addition easier.",
-        "workingOut": "(28 + 22) + 45"
-      },
-      {
-        "explanation": "Sum the grouped numbers.",
-        "workingOut": "50 + 45 = 95"
-      }
-    ]
-  },
-
-  // ── QUESTION 6 ──
-  {
-    "id": "y7-1b-q6",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "t": "Addition",
-    "question": "A tiler laid 258 tiles in the kitchen, 30 tiles in the laundry and 122 tiles in the bathroom. How many tiles did he lay in total?",
-    "a": "410",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the addition for the total number of tiles.",
-        "workingOut": "258 + 30 + 122"
-      },
-      {
-        "explanation": "Group numbers to make addition easier.",
-        "workingOut": "(258 + 122) + 30"
-      },
-      {
-        "explanation": "Sum the grouped numbers.",
-        "workingOut": "380 + 30 = 410"
-      }
-    ]
-  },
-
-  // ── QUESTION 7 ──
-  {
-    "id": "y7-1b-q7",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "t": "Addition",
-    "question": "On the first day of my holidays, I travelled 75 kilometres from my home in Victor Harbor to Adelaide, then 524 kilometres from Adelaide to Broken Hill. The next day I travelled 286 kilometres from Broken Hill to Mildura. How many kilometres did I travel in the first two days of my trip?",
-    "a": "885",
-    "solutionSteps": [
-      {
-        "explanation": "Add the distances travelled on the first day.",
-        "workingOut": "75 + 524 = 599"
-      },
-      {
-        "explanation": "Add the distance travelled on the second day to the first day's total.",
-        "workingOut": "599 + 286"
+        "explanation": "Pair numbers to make addition simpler.",
+        "workingOut": "\\\\( 29 + (47 + 23) = 29 + 70 \\\\)",
+        "graphData": null
       },
       {
         "explanation": "Calculate the final sum.",
-        "workingOut": "885"
+        "workingOut": "\\\\( 29 + 70 = 99 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 8 ──
   {
-    "id": "y7-1b-q8",
-    "type": "short_answer",
+    "id": "y7-1b-q6",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Addition",
-    "question": "A busker collected $7.00, $14.00, $6.00 and $13.00 over four days. How much did she earn in total?",
-    "a": "40",
+    "question": "A tiler laid 267 tiles in the kitchen, 20 tiles in the laundry and 113 tiles in the bathroom. How many tiles did he lay in total?",
+    "a": "400",
+    "options": [
+      "\\\\( 400 \\\\)",
+      "\\\\( 380 \\\\)",
+      "\\\\( 410 \\\\)",
+      "\\\\( 390 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the sum of earnings over the four days.",
-        "workingOut": "7 + 14 + 6 + 13"
+        "explanation": "Set up the addition expression for total tiles.",
+        "workingOut": "\\\\( 267 + 20 + 113 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Pair numbers to make addition easier.",
-        "workingOut": "(7 + 13) + (14 + 6)"
+        "explanation": "Group numbers to form round hundreds.",
+        "workingOut": "\\\\( (267 + 113) + 20 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Sum the pairs.",
-        "workingOut": "20 + 20 = 40"
+        "explanation": "Compute the grouped sum.",
+        "workingOut": "\\\\( 380 + 20 = 400 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 9 ──
   {
-    "id": "y7-1b-q9",
-    "type": "short_answer",
-    "difficulty": "hard",
-    "timeLimit": 120,
+    "id": "y7-1b-q7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
     "t": "Addition",
-    "question": "In three Year 7 classes, 28 students, 32 students and 25 students attended roll call one morning. How many Year 7 students were present in total?",
-    "a": "85",
+    "question": "On the first day of my holidays, I travelled 85 kilometres from my home in Victor Harbor to Adelaide, then 516 kilometres from Adelaide to Broken Hill. The next day I travelled 298 kilometres from Broken Hill to Mildura. How many kilometres did I travel in the first two days of my trip?",
+    "a": "899",
+    "options": [
+      "\\\\( 899 \\\\)",
+      "\\\\( 601 \\\\)",
+      "\\\\( 889 \\\\)",
+      "\\\\( 901 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the addition for all students present.",
-        "workingOut": "28 + 32 + 25"
+        "explanation": "List all distances travelled over the two days.",
+        "workingOut": "\\\\( 85 + 516 + 298 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add the first two class counts.",
-        "workingOut": "28 + 32 = 60"
+        "explanation": "Add the first two distances.",
+        "workingOut": "\\\\( 85 + 516 = 601 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add the third class count.",
-        "workingOut": "60 + 25 = 85"
+        "explanation": "Add the final distance.",
+        "workingOut": "\\\\( 601 + 298 = 899 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 10 ──
   {
-    "id": "y7-1b-q10",
-    "type": "short_answer",
-    "difficulty": "hard",
-    "timeLimit": 120,
+    "id": "y7-1b-q8",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
     "t": "Addition",
-    "question": "I picked 16 daffodils from my garden on Monday, 4 on Tuesday, 24 on Wednesday, 8 on Thursday and 12 on Friday. How many daffodils did I pick over the five days?",
-    "a": "64",
+    "question": "A busker collected 8 dollars, 13 dollars, 4 dollars and 12 dollars over four days. How much did she earn?",
+    "a": "37",
+    "options": [
+      "\\\\( 37 \\\\)",
+      "\\\\( 35 \\\\)",
+      "\\\\( 47 \\\\)",
+      "\\\\( 38 \\\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the addition for the daffodils picked each day.",
-        "workingOut": "16 + 4 + 24 + 8 + 12"
+        "explanation": "Set up the addition for daily earnings.",
+        "workingOut": "\\\\( 8 + 13 + 4 + 12 \\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Group numbers to form round tens.",
-        "workingOut": "(16 + 4) + (24 + 8 + 12)"
-      },
-      {
-        "explanation": "Add the first pair and group the rest.",
-        "workingOut": "20 + (24 + 8) + 12 = 20 + 32 + 12"
-      },
-      {
-        "explanation": "Find the total sum.",
-        "workingOut": "52 + 12 = 64"
-      }
-    ]
-  },
-
-  // ── QUESTION 11 ──
-  {
-    "id": "y7-1b-q11",
-    "type": "short_answer",
-    "difficulty": "hard",
-    "timeLimit": 120,
-    "t": "Addition",
-    "question": "In one week, Sam read four books. The first book had 324 pages, the second 165, the third 36 and the fourth 95. How many pages did Sam read in the week?",
-    "a": "620",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the addition for the pages read in all four books.",
-        "workingOut": "324 + 165 + 36 + 95"
-      },
-      {
-        "explanation": "Group numbers to make addition easier.",
-        "workingOut": "(324 + 36) + (165 + 95)"
+        "explanation": "Group numbers to find simpler sums.",
+        "workingOut": "\\\\( (8 + 12) + (13 + 4) \\\\)",
+        "graphData": null
       },
       {
         "explanation": "Calculate the sums of the groups.",
-        "workingOut": "360 + 260"
-      },
-      {
-        "explanation": "Find the total pages read.",
-        "workingOut": "620"
+        "workingOut": "\\\\( 20 + 17 = 37 \\\\)",
+        "graphData": null
       }
     ]
   },
-
-  // ── QUESTION 12 ──
   {
-    "id": "y7-1b-q12",
-    "type": "teacher_review",
+    "id": "y7-1b-q9",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Addition",
+    "question": "In three Year 7 classes, 27 students, 31 students and 26 students attended roll call one morning. How many Year 7 students were present?",
+    "a": "84",
+    "options": [
+      "\\\\( 84 \\\\)",
+      "\\\\( 82 \\\\)",
+      "\\\\( 94 \\\\)",
+      "\\\\( 74 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Express the sum of students in all classes.",
+        "workingOut": "\\\\( 27 + 31 + 26 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two class sizes.",
+        "workingOut": "\\\\( 27 + 31 = 58 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining class size.",
+        "workingOut": "\\\\( 58 + 26 = 84 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q10",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Addition",
+    "question": "I picked 18 daffodils from my garden on Monday, 3 on Tuesday, 27 on Wednesday, 6 on Thursday and 12 on Friday. How many daffodils did I pick over the five days?",
+    "a": "66",
+    "options": [
+      "\\\\( 66 \\\\)",
+      "\\\\( 64 \\\\)",
+      "\\\\( 56 \\\\)",
+      "\\\\( 76 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the overall sum.",
+        "workingOut": "\\\\( 18 + 3 + 27 + 6 + 12 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Pair elements to find round tens.",
+        "workingOut": "\\\\( (18 + 12) + (3 + 27) + 6 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the sums.",
+        "workingOut": "\\\\( 30 + 30 + 6 = 66 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q11",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Addition",
+    "question": "In one week, Sam read four books. The first book had 312 pages, the second 175, the third 48 and the fourth 98. How many pages did Sam read in the week?",
+    "a": "633",
+    "options": [
+      "\\\\( 633 \\\\)",
+      "\\\\( 623 \\\\)",
+      "\\\\( 643 \\\\)",
+      "\\\\( 533 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the sum of all pages read.",
+        "workingOut": "\\\\( 312 + 175 + 48 + 98 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Pair matching components to calculate easily.",
+        "workingOut": "\\\\( (312 + 48) + (175 + 98) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each paired sum.",
+        "workingOut": "\\\\( 360 + 273 = 633 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q12a",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Addition",
-    "question": "Appropriately pair numbers to calculate sums.",
-    "subQuestions": [
+    "question": "By appropriately pairing numbers, carry out the addition:\n\\\\( 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 \\\\)",
+    "a": "45",
+    "options": [
+      "\\\\( 45 \\\\)",
+      "\\\\( 40 \\\\)",
+      "\\\\( 50 \\\\)",
+      "\\\\( 55 \\\\)"
+    ],
+    "solutionSteps": [
       {
-        "id": "y7-1b-q12a",
-        "type": "short_answer",
-        "question": "a) By appropriately pairing numbers, find the sum:\n\\( 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 \\)",
-        "a": "66",
-        "solutionSteps": [
-          {
-            "explanation": "Pair the numbers from opposite ends.",
-            "workingOut": "(1 + 11) + (2 + 10) + (3 + 9) + (4 + 8) + (5 + 7) + 6"
-          },
-          {
-            "explanation": "Sum each pair.",
-            "workingOut": "12 + 12 + 12 + 12 + 12 + 6"
-          },
-          {
-            "explanation": "Multiply the number of pairs and add the middle term.",
-            "workingOut": "5 \\times 12 + 6 = 60 + 6 = 66"
-          }
-        ]
+        "explanation": "Pair the numbers from the outside in.",
+        "workingOut": "\\\\( (1 + 9) + (2 + 8) + (3 + 7) + (4 + 6) + 5 \\\\)",
+        "graphData": null
       },
       {
-        "id": "y7-1b-q12b",
-        "type": "short_answer",
-        "question": "b) Use the same pairing technique to find the sum of numbers from 1 to 199 inclusive.",
-        "a": "19900",
-        "solutionSteps": [
-          {
-            "explanation": "Pair the first and last numbers, second and second-last, etc.",
-            "workingOut": "(1 + 199) + (2 + 198) + \\dots + (99 + 101) + 100"
-          },
-          {
-            "explanation": "Each of the 99 pairs sums to 200, and the middle number 100 is left.",
-            "workingOut": "99 \\times 200 + 100"
-          },
-          {
-            "explanation": "Calculate the final sum.",
-            "workingOut": "19800 + 100 = 19900"
-          }
-        ]
+        "explanation": "Determine the sum of the pairs.",
+        "workingOut": "\\\\( 10 + 10 + 10 + 10 + 5 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the total sum.",
+        "workingOut": "\\\\( 4 \\\\times 10 + 5 = 45 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-q12b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Addition",
+    "question": "Use the pairing technique to find the sum of numbers from 1 to 99 inclusive.",
+    "a": "4950",
+    "options": [
+      "\\\\( 4950 \\\\)",
+      "\\\\( 5000 \\\\)",
+      "\\\\( 4900 \\\\)",
+      "\\\\( 5050 \\\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Pair the first and last numbers, second and second-last, and so on.",
+        "workingOut": "\\\\( (1 + 99) + (2 + 98) + \\\\dots + (49 + 51) + 50 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the sum of each pair and count the total number of pairs.",
+        "workingOut": "\\\\( 49 \\\\text{ pairs of } 100, \\\\text{ plus the middle term } 50 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final sum.",
+        "workingOut": "\\\\( 49 \\\\times 100 + 50 = 4950 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h16",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Cargo Logistics",
+    "question": "A cargo vessel is loaded with three shipments of wheat weighing \\( 4520 \\) kg, \\( 3890 \\) kg, and \\( 1245 \\) kg respectively. Find the total weight of the wheat cargo.",
+    "a": "\\( 9655 \\)",
+    "options": [
+      "\\( 9555 \\)",
+      "\\( 9645 \\)",
+      "\\( 9655 \\)",
+      "\\( 9755 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 4520 + 3890 + 1245 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 4520 + 3890 = 8410 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 8410 + 1245 = 9655 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h17",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Wildlife Conservation",
+    "question": "Conservationists tracked three migrating herds of caribou containing \\( 1850 \\), \\( 2430 \\), and \\( 975 \\) animals. Calculate the total number of caribou tracked.",
+    "a": "\\( 5255 \\)",
+    "options": [
+      "\\( 5155 \\)",
+      "\\( 5245 \\)",
+      "\\( 5255 \\)",
+      "\\( 5355 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 1850 + 2430 + 975 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 1850 + 2430 = 4280 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 4280 + 975 = 5255 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h18",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Deep Space Telescope",
+    "question": "An astronomer cataloged three new stellar clusters with \\( 3400 \\), \\( 5680 \\), and \\( 1290 \\) stars. Determine the total count of cataloged stars.",
+    "a": "\\( 10370 \\)",
+    "options": [
+      "\\( 10270 \\)",
+      "\\( 10360 \\)",
+      "\\( 10370 \\)",
+      "\\( 10470 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3400 + 5680 + 1290 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3400 + 5680 = 9080 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 9080 + 1290 = 10370 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h19",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Urban Infrastructure",
+    "question": "A city water reservoir receives three inflows of \\( 12500 \\) liters, \\( 8900 \\) liters, and \\( 4350 \\) liters from different tributaries. What is the total volume of water added?",
+    "a": "\\( 25750 \\)",
+    "options": [
+      "\\( 25650 \\)",
+      "\\( 25740 \\)",
+      "\\( 25750 \\)",
+      "\\( 25850 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12500 + 8900 + 4350 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12500 + 8900 = 21400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 21400 + 4350 = 25750 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h20",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Microchip Manufacturing",
+    "question": "A silicon foundry produced three batches of processors consisting of \\( 8500 \\) units, \\( 9200 \\) units, and \\( 3450 \\) units. Find the total number of processors produced.",
+    "a": "\\( 21150 \\)",
+    "options": [
+      "\\( 21050 \\)",
+      "\\( 21140 \\)",
+      "\\( 21150 \\)",
+      "\\( 21250 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8500 + 9200 + 3450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8500 + 9200 = 17700 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 17700 + 3450 = 21150 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h21",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Agricultural Harvest",
+    "question": "An orchard harvested three varieties of apples, yielding \\( 2850 \\) organic Granny Smiths, \\( 3120 \\) Honeycrisps, and \\( 1475 \\) Fujis. Calculate the total apple yield.",
+    "a": "\\( 7445 \\)",
+    "options": [
+      "\\( 7345 \\)",
+      "\\( 7435 \\)",
+      "\\( 7445 \\)",
+      "\\( 7545 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 2850 + 3120 + 1475 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 2850 + 3120 = 5970 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 5970 + 1475 = 7445 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h22",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Financial Audit",
+    "question": "A startup's quarterly expenses consist of \\( \\$15400 \\) for marketing, \\( \\$22800 \\) for development, and \\( \\$4950 \\) for office rental. What are the total expenses?",
+    "a": "\\( \\$43150 \\)",
+    "options": [
+      "\\( \\$43050 \\)",
+      "\\( \\$43140 \\)",
+      "\\( \\$43150 \\)",
+      "\\( \\$43250 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 15400 + 22800 + 4950 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 15400 + 22800 = 38200 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 38200 + 4950 = 43150 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h23",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Data Cloud Network",
+    "question": "A database server processed three data streams containing \\( 6800 \\) MB, \\( 12450 \\) MB, and \\( 3120 \\) MB of transaction logs. Solve for the total processed data size.",
+    "a": "\\( 22370 \\)",
+    "options": [
+      "\\( 22270 \\)",
+      "\\( 22360 \\)",
+      "\\( 22370 \\)",
+      "\\( 22470 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 6800 + 12450 + 3120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 6800 + 12450 = 19250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 19250 + 3120 = 22370 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h24",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Power Grid Integration",
+    "question": "A hybrid power station generates electricity from three sources: wind turbine (\\( 7350 \\) kW), solar array (\\( 4890 \\) kW), and biomass generator (\\( 2110 \\) kW). Find the total power output.",
+    "a": "\\( 14350 \\)",
+    "options": [
+      "\\( 14250 \\)",
+      "\\( 14340 \\)",
+      "\\( 14350 \\)",
+      "\\( 14450 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 7350 + 4890 + 2110 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 7350 + 4890 = 12240 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 12240 + 2110 = 14350 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h25",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Archaeological Excavation",
+    "question": "Archaeologists at a historical site uncovered three categories of artifacts: \\( 450 \\) pottery shards, \\( 890 \\) metal coins, and \\( 125 \\) bone tools. Find the total artifact count.",
+    "a": "\\( 1465 \\)",
+    "options": [
+      "\\( 1365 \\)",
+      "\\( 1455 \\)",
+      "\\( 1465 \\)",
+      "\\( 1565 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 450 + 890 + 125 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 450 + 890 = 1340 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 1340 + 125 = 1465 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h26",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "High-Speed Transit",
+    "question": "A regional train line recorded ridership of \\( 14200 \\) on Monday, \\( 16800 \\) on Tuesday, and \\( 9350 \\) on Wednesday. Calculate the total ridership over these three days.",
+    "a": "\\( 40350 \\)",
+    "options": [
+      "\\( 40250 \\)",
+      "\\( 40340 \\)",
+      "\\( 40350 \\)",
+      "\\( 40450 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 14200 + 16800 + 9350 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 14200 + 16800 = 31000 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 31000 + 9350 = 40350 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h27",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Marine Biology Study",
+    "question": "Researchers monitoring a coral reef count three populations of reef fish: \\( 3560 \\) damselfish, \\( 2840 \\) clownfish, and \\( 1120 \\) wrasses. Find the total number of fish counted.",
+    "a": "\\( 7520 \\)",
+    "options": [
+      "\\( 7420 \\)",
+      "\\( 7510 \\)",
+      "\\( 7520 \\)",
+      "\\( 7620 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3560 + 2840 + 1120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3560 + 2840 = 6400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 6400 + 1120 = 7520 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h28",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Civil Engineering",
+    "question": "A suspension bridge construction project uses three structural steel cable segments measuring \\( 850 \\) meters, \\( 925 \\) meters, and \\( 430 \\) meters. What is the total length of the cables?",
+    "a": "\\( 2205 \\)",
+    "options": [
+      "\\( 2105 \\)",
+      "\\( 2195 \\)",
+      "\\( 2205 \\)",
+      "\\( 2305 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 850 + 925 + 430 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 850 + 925 = 1775 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 1775 + 430 = 2205 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h29",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Eco-Reforestation",
+    "question": "A forest conservation team planted three blocks of native saplings: Block A (\\( 12500 \\) oak), Block B (\\( 9800 \\) pine), and Block C (\\( 6450 \\) birch). Calculate the total saplings planted.",
+    "a": "\\( 28750 \\)",
+    "options": [
+      "\\( 28650 \\)",
+      "\\( 28740 \\)",
+      "\\( 28750 \\)",
+      "\\( 28850 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12500 + 9800 + 6450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12500 + 9800 = 22300 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 22300 + 6450 = 28750 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h30",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Sports Arena Event",
+    "question": "A multi-day athletics tournament registered \\( 8560 \\) spectators on day one, \\( 11240 \\) on day two, and \\( 6800 \\) on day three. Determine the total spectator attendance.",
+    "a": "\\( 26600 \\)",
+    "options": [
+      "\\( 26500 \\)",
+      "\\( 26590 \\)",
+      "\\( 26600 \\)",
+      "\\( 26700 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8560 + 11240 + 6800 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8560 + 11240 = 19800 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 19800 + 6800 = 26600 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h31",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Library Archives",
+    "question": "A university archive restored three historical collections containing \\( 3250 \\) rare manuscripts, \\( 4890 \\) photographs, and \\( 1560 \\) maps. How many items were restored in total?",
+    "a": "\\( 9700 \\)",
+    "options": [
+      "\\( 9600 \\)",
+      "\\( 9690 \\)",
+      "\\( 9700 \\)",
+      "\\( 9800 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3250 + 4890 + 1560 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3250 + 4890 = 8140 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 8140 + 1560 = 9700 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h32",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Industrial Chemistry",
+    "question": "A chemical plant blends three batches of solvent containing \\( 8950 \\) liters, \\( 12400 \\) liters, and \\( 5250 \\) liters. Find the total volume of blended solvent.",
+    "a": "\\( 26600 \\)",
+    "options": [
+      "\\( 26500 \\)",
+      "\\( 26590 \\)",
+      "\\( 26600 \\)",
+      "\\( 26700 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8950 + 12400 + 5250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8950 + 12400 = 21350 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 21350 + 5250 = 26600 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h33",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Digital Cryptography",
+    "question": "A security protocol requires verification of three prime hashes containing \\( 5400 \\) bits, \\( 8192 \\) bits, and \\( 2048 \\) bits. Solve for the total bits verified.",
+    "a": "\\( 15640 \\)",
+    "options": [
+      "\\( 15540 \\)",
+      "\\( 15630 \\)",
+      "\\( 15640 \\)",
+      "\\( 15740 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 5400 + 8192 + 2048 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 5400 + 8192 = 13592 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 13592 + 2048 = 15640 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Aerospace Propulsion",
+    "question": "A spacecraft fuel system consists of a main tank (\\( 45800 \\) kg), secondary booster (\\( 24900 \\) kg), and orbital maneuvering reserve (\\( 3850 \\) kg). Calculate the total fuel weight.",
+    "a": "\\( 74550 \\)",
+    "options": [
+      "\\( 74450 \\)",
+      "\\( 74540 \\)",
+      "\\( 74550 \\)",
+      "\\( 74650 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 45800 + 24900 + 3850 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 45800 + 24900 = 70700 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 70700 + 3850 = 74550 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h35",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Hospital Inventory",
+    "question": "A medical supply depot distributed three shipments of vaccine vials containing \\( 18900 \\), \\( 22400 \\), and \\( 9350 \\) doses. Determine the total doses distributed.",
+    "a": "\\( 50650 \\)",
+    "options": [
+      "\\( 50550 \\)",
+      "\\( 50640 \\)",
+      "\\( 50650 \\)",
+      "\\( 50750 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 18900 + 22400 + 9350 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 18900 + 22400 = 41300 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 41300 + 9350 = 50650 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h36",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Volcanic Activity Monitoring",
+    "question": "Seismologists detected three series of micro-tremors during a month: \\( 1250 \\) in week one, \\( 1890 \\) in week two, and \\( 640 \\) in week three. Find the total number of tremors.",
+    "a": "\\( 3780 \\)",
+    "options": [
+      "\\( 3680 \\)",
+      "\\( 3770 \\)",
+      "\\( 3780 \\)",
+      "\\( 3880 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 1250 + 1890 + 640 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 1250 + 1890 = 3140 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 3140 + 640 = 3780 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h37",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Botanical Seed Bank",
+    "question": "A seed repository catalogs three shipments of wildflower seeds: \\( 35000 \\) poppy, \\( 48000 \\) lupine, and \\( 12500 \\) daisy seeds. Find the total wildflower seed count.",
+    "a": "\\( 95500 \\)",
+    "options": [
+      "\\( 95400 \\)",
+      "\\( 95490 \\)",
+      "\\( 95500 \\)",
+      "\\( 95600 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 35000 + 48000 + 12500 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 35000 + 48000 = 83000 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 83000 + 12500 = 95500 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h38",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Corporate Acquisition",
+    "question": "An energy conglomerate acquires three wind farms with operating capacities of \\( 145 \\) MW, \\( 230 \\) MW, and \\( 85 \\) MW. Calculate the total acquired capacity.",
+    "a": "\\( 460 \\)",
+    "options": [
+      "\\( 360 \\)",
+      "\\( 450 \\)",
+      "\\( 460 \\)",
+      "\\( 560 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 145 + 230 + 85 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 145 + 230 = 375 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 375 + 85 = 460 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h39",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Textile Production",
+    "question": "A textile mill processes three shipments of raw cotton yarn measuring \\( 12800 \\) meters, \\( 15600 \\) meters, and \\( 9250 \\) meters. Solve for the total length of cotton yarn.",
+    "a": "\\( 37650 \\)",
+    "options": [
+      "\\( 37550 \\)",
+      "\\( 37640 \\)",
+      "\\( 37650 \\)",
+      "\\( 37750 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12800 + 15600 + 9250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12800 + 15600 = 28400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 28400 + 9250 = 37650 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h40",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Municipal Waste Recycling",
+    "question": "A recycling plant processed three categories of household waste: \\( 5240 \\) kg of glass, \\( 8950 \\) kg of paper, and \\( 3120 \\) kg of plastics. What is the total weight of recycled waste?",
+    "a": "\\( 17310 \\)",
+    "options": [
+      "\\( 17210 \\)",
+      "\\( 17300 \\)",
+      "\\( 17310 \\)",
+      "\\( 17410 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 5240 + 8950 + 3120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 5240 + 8950 = 14190 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 14190 + 3120 = 17310 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h41",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Antarctic Ice Drill",
+    "question": "Climatologists extracted three ice core samples from different depths measuring \\( 1450 \\) cm, \\( 2280 \\) cm, and \\( 890 \\) cm. Calculate the combined length of the ice core samples.",
+    "a": "\\( 4620 \\)",
+    "options": [
+      "\\( 4520 \\)",
+      "\\( 4610 \\)",
+      "\\( 4620 \\)",
+      "\\( 4720 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 1450 + 2280 + 890 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 1450 + 2280 = 3730 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 3730 + 890 = 4620 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h42",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Supercomputer Core",
+    "question": "A high-performance computing cluster distributes a simulation across three node blocks using \\( 8192 \\) cores, \\( 4096 \\) cores, and \\( 2048 \\) cores. What is the total core count?",
+    "a": "\\( 14336 \\)",
+    "options": [
+      "\\( 14236 \\)",
+      "\\( 14326 \\)",
+      "\\( 14336 \\)",
+      "\\( 14436 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8192 + 4096 + 2048 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8192 + 4096 = 12288 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 12288 + 2048 = 14336 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h43",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Global Telecommunications",
+    "question": "A submarine fiber-optic network routes three light wavelengths carrying bandwidths of \\( 45 \\) Gbps, \\( 75 \\) Gbps, and \\( 32 \\) Gbps. Determine the total combined bandwidth.",
+    "a": "\\( 152 \\)",
+    "options": [
+      "\\( 52 \\)",
+      "\\( 142 \\)",
+      "\\( 152 \\)",
+      "\\( 252 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 45 + 75 + 32 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 45 + 75 = 120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 120 + 32 = 152 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h44",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Renewable Hydropower",
+    "question": "A water reservoir receives hourly inflows from three glacier melt streams: \\( 14500 \\) cubic meters, \\( 18900 \\) cubic meters, and \\( 7250 \\) cubic meters. Find the total hourly inflow.",
+    "a": "\\( 40650 \\)",
+    "options": [
+      "\\( 40550 \\)",
+      "\\( 40640 \\)",
+      "\\( 40650 \\)",
+      "\\( 40750 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 14500 + 18900 + 7250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 14500 + 18900 = 33400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 33400 + 7250 = 40650 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h45",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Oceanographic Buoy",
+    "question": "An ocean sensor logs waves over three days: \\( 3240 \\) wave crests on day one, \\( 4180 \\) on day two, and \\( 1950 \\) on day three. Calculate the total wave crest count.",
+    "a": "\\( 9370 \\)",
+    "options": [
+      "\\( 9270 \\)",
+      "\\( 9360 \\)",
+      "\\( 9370 \\)",
+      "\\( 9470 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3240 + 4180 + 1950 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3240 + 4180 = 7420 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 7420 + 1950 = 9370 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h46",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Urban Density Study",
+    "question": "A regional demographic survey records populations of three neighboring residential sectors: Sector A (\\( 12850 \\)), Sector B (\\( 15600 \\)), and Sector C (\\( 9450 \\)). Find the total population.",
+    "a": "\\( 37900 \\)",
+    "options": [
+      "\\( 37800 \\)",
+      "\\( 37890 \\)",
+      "\\( 37900 \\)",
+      "\\( 38000 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12850 + 15600 + 9450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12850 + 15600 = 28450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 28450 + 9450 = 37900 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h47",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Commercial Air Fleet",
+    "question": "An airline's three passenger routes carried \\( 184500 \\), \\( 212900 \\), and \\( 93800 \\) travelers in a quarter. Solve for the total number of route passengers.",
+    "a": "\\( 491200 \\)",
+    "options": [
+      "\\( 491100 \\)",
+      "\\( 491190 \\)",
+      "\\( 491200 \\)",
+      "\\( 491300 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 184500 + 212900 + 93800 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 184500 + 212900 = 397400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 397400 + 93800 = 491200 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h48",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Food Grain Storage",
+    "question": "A grain elevator stores three shipments of barley weighing \\( 12500 \\) kg, \\( 16800 \\) kg, and \\( 8950 \\) kg. Find the total weight of stored barley.",
+    "a": "\\( 38250 \\)",
+    "options": [
+      "\\( 38150 \\)",
+      "\\( 38240 \\)",
+      "\\( 38250 \\)",
+      "\\( 38350 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12500 + 16800 + 8950 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12500 + 16800 = 29300 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 29300 + 8950 = 38250 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h49",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Solar Farm Grid",
+    "question": "A solar facility registers power peaks of \\( 5240 \\) kW, \\( 8350 \\) kW, and \\( 3120 \\) kW across its three major photovoltaic fields. What is the total peak output?",
+    "a": "\\( 16710 \\)",
+    "options": [
+      "\\( 16610 \\)",
+      "\\( 16700 \\)",
+      "\\( 16710 \\)",
+      "\\( 16810 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 5240 + 8350 + 3120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 5240 + 8350 = 13590 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 13590 + 3120 = 16710 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h50",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Space Rocket Cargo",
+    "question": "A lunar supply ship carries a scientific payload of \\( 1850 \\) kg, life support supplies of \\( 2430 \\) kg, and structural spare parts of \\( 970 \\) kg. Find the total cargo weight.",
+    "a": "\\( 5250 \\)",
+    "options": [
+      "\\( 5150 \\)",
+      "\\( 5240 \\)",
+      "\\( 5250 \\)",
+      "\\( 5350 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 1850 + 2430 + 970 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 1850 + 2430 = 4280 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 4280 + 970 = 5250 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h51",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Cyber Security Token",
+    "question": "A digital wallet processes three ledger transactions containing \\( 6800 \\) tokens, \\( 12450 \\) tokens, and \\( 3120 \\) tokens. Calculate the total token value of the transactions.",
+    "a": "\\( 22370 \\)",
+    "options": [
+      "\\( 22270 \\)",
+      "\\( 22360 \\)",
+      "\\( 22370 \\)",
+      "\\( 22470 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 6800 + 12450 + 3120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 6800 + 12450 = 19250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 19250 + 3120 = 22370 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h52",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Historical Preservation",
+    "question": "A library digitizes three rare scroll volumes: Volume I (\\( 1250 \\) pages), Volume II (\\( 1890 \\) pages), and Volume III (\\( 640 \\) pages). How many pages are digitized in total?",
+    "a": "\\( 3780 \\)",
+    "options": [
+      "\\( 3680 \\)",
+      "\\( 3770 \\)",
+      "\\( 3780 \\)",
+      "\\( 3880 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 1250 + 1890 + 640 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 1250 + 1890 = 3140 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 3140 + 640 = 3780 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h53",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Petroleum Refiner",
+    "question": "A refining column processes three crude components yielding \\( 35000 \\) barrels of diesel, \\( 48000 \\) barrels of gasoline, and \\( 12500 \\) barrels of aviation fuel. Find the total barrels.",
+    "a": "\\( 95500 \\)",
+    "options": [
+      "\\( 95400 \\)",
+      "\\( 95490 \\)",
+      "\\( 95500 \\)",
+      "\\( 95600 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 35000 + 48000 + 12500 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 35000 + 48000 = 83000 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 83000 + 12500 = 95500 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h54",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Microgrid Integration",
+    "question": "A local microgrid integrates power from three residential battery units storing \\( 145 \\) kWh, \\( 230 \\) kWh, and \\( 85 \\) kWh. Calculate the total microgrid battery storage capacity.",
+    "a": "\\( 460 \\)",
+    "options": [
+      "\\( 360 \\)",
+      "\\( 450 \\)",
+      "\\( 460 \\)",
+      "\\( 560 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 145 + 230 + 85 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 145 + 230 = 375 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 375 + 85 = 460 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h55",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Textile Mill Raw Material",
+    "question": "A yarn manufacturer imports three raw wool shipments weighing \\( 12800 \\) kg, \\( 15600 \\) kg, and \\( 9250 \\) kg. Solve for the total weight of the imported wool.",
+    "a": "\\( 37650 \\)",
+    "options": [
+      "\\( 37550 \\)",
+      "\\( 37640 \\)",
+      "\\( 37650 \\)",
+      "\\( 37750 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12800 + 15600 + 9250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12800 + 15600 = 28400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 28400 + 9250 = 37650 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h56",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Industrial Recycling Stream",
+    "question": "An industrial recycler collects three containers of copper scrap weighing \\( 5240 \\) kg, \\( 8950 \\) kg, and \\( 3120 \\) kg. Calculate the total weight of copper scrap collected.",
+    "a": "\\( 17310 \\)",
+    "options": [
+      "\\( 17210 \\)",
+      "\\( 17300 \\)",
+      "\\( 17310 \\)",
+      "\\( 17410 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 5240 + 8950 + 3120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 5240 + 8950 = 14190 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 14190 + 3120 = 17310 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h57",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Climatology Core Station",
+    "question": "A scientific expedition extracts three sediment cores measuring \\( 1450 \\) mm, \\( 2280 \\) mm, and \\( 890 \\) mm. Find the total length of the sediment cores.",
+    "a": "\\( 4620 \\)",
+    "options": [
+      "\\( 4520 \\)",
+      "\\( 4610 \\)",
+      "\\( 4620 \\)",
+      "\\( 4720 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 1450 + 2280 + 890 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 1450 + 2280 = 3730 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 3730 + 890 = 4620 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h58",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Processor Node Block",
+    "question": "A cluster splits a computing task across three server nodes, using \\( 8192 \\) threads, \\( 4096 \\) threads, and \\( 2048 \\) threads. Solve for the total thread count.",
+    "a": "\\( 14336 \\)",
+    "options": [
+      "\\( 14236 \\)",
+      "\\( 14326 \\)",
+      "\\( 14336 \\)",
+      "\\( 14436 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8192 + 4096 + 2048 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8192 + 4096 = 12288 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 12288 + 2048 = 14336 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h59",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Ocean Buoy Drift",
+    "question": "A drifting scientific buoy logs wave counts over three observation windows: \\( 3240 \\) waves, \\( 4180 \\) waves, and \\( 1950 \\) waves. What is the total logged wave count?",
+    "a": "\\( 9370 \\)",
+    "options": [
+      "\\( 9270 \\)",
+      "\\( 9360 \\)",
+      "\\( 9370 \\)",
+      "\\( 9470 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3240 + 4180 + 1950 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3240 + 4180 = 7420 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 7420 + 1950 = 9370 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h60",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Regional Demographics",
+    "question": "A municipal report details the populations of three villages: \\( 12850 \\) residents, \\( 15600 \\) residents, and \\( 9450 \\) residents. Find the total combined population.",
+    "a": "\\( 37900 \\)",
+    "options": [
+      "\\( 37800 \\)",
+      "\\( 37890 \\)",
+      "\\( 37900 \\)",
+      "\\( 38000 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12850 + 15600 + 9450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12850 + 15600 = 28450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 28450 + 9450 = 37900 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h61",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Air Fleet Logistics",
+    "question": "A freight airline's cargo planes transported \\( 184500 \\) kg, \\( 212900 \\) kg, and \\( 93800 \\) kg of industrial machinery in a month. Calculate the total cargo weight.",
+    "a": "\\( 491200 \\)",
+    "options": [
+      "\\( 491100 \\)",
+      "\\( 491190 \\)",
+      "\\( 491200 \\)",
+      "\\( 491300 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 184500 + 212900 + 93800 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 184500 + 212900 = 397400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 397400 + 93800 = 491200 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h62",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Hydropower Inflow",
+    "question": "A high-altitude dam logs water inflows of \\( 14500 \\) L/s, \\( 18900 \\) L/s, and \\( 7250 \\) L/s from three mountain creeks. Find the total water inflow rate.",
+    "a": "\\( 40650 \\)",
+    "options": [
+      "\\( 40550 \\)",
+      "\\( 40640 \\)",
+      "\\( 40650 \\)",
+      "\\( 40750 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 14500 + 18900 + 7250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 14500 + 18900 = 33400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 33400 + 7250 = 40650 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h63",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Crypto Transaction Hash",
+    "question": "A blockchain explorer records three smart contract transactions with gas costs of \\( 15400 \\) units, \\( 22800 \\) units, and \\( 4950 \\) units. What is the total gas consumed?",
+    "a": "\\( 43150 \\)",
+    "options": [
+      "\\( 43050 \\)",
+      "\\( 43140 \\)",
+      "\\( 43150 \\)",
+      "\\( 43250 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 15400 + 22800 + 4950 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 15400 + 22800 = 38200 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 38200 + 4950 = 43150 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h64",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Cloud Server Bandwidth",
+    "question": "A cloud database server handles three network streams of \\( 6800 \\) GB, \\( 12450 \\) GB, and \\( 3120 \\) GB of asset files. Find the total file data transfer size.",
+    "a": "\\( 22370 \\)",
+    "options": [
+      "\\( 22270 \\)",
+      "\\( 22360 \\)",
+      "\\( 22370 \\)",
+      "\\( 22470 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 6800 + 12450 + 3120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 6800 + 12450 = 19250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 19250 + 3120 = 22370 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h65",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Power Grid Peak Load",
+    "question": "A local substation integrates peak currents from three industrial feeders measuring \\( 7350 \\) A, \\( 4890 \\) A, and \\( 2110 \\) A. Find the total peak current.",
+    "a": "\\( 14350 \\)",
+    "options": [
+      "\\( 14250 \\)",
+      "\\( 14340 \\)",
+      "\\( 14350 \\)",
+      "\\( 14450 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 7350 + 4890 + 2110 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 7350 + 4890 = 12240 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 12240 + 2110 = 14350 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h66",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Archaeological Coin Cache",
+    "question": "An excavation catalog lists three groups of bronze coins recovered from different levels: \\( 450 \\) coins, \\( 890 \\) coins, and \\( 125 \\) coins. Find the total coin count.",
+    "a": "\\( 1465 \\)",
+    "options": [
+      "\\( 1365 \\)",
+      "\\( 1455 \\)",
+      "\\( 1465 \\)",
+      "\\( 1565 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 450 + 890 + 125 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 450 + 890 = 1340 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 1340 + 125 = 1465 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h67",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "High-Speed Transit Daily",
+    "question": "A high-speed rail line logs passenger boardings of \\( 14200 \\), \\( 16800 \\), and \\( 9350 \\) across three stations on Tuesday. Calculate the total boardings.",
+    "a": "\\( 40350 \\)",
+    "options": [
+      "\\( 40250 \\)",
+      "\\( 40340 \\)",
+      "\\( 40350 \\)",
+      "\\( 40450 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 14200 + 16800 + 9350 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 14200 + 16800 = 31000 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 31000 + 9350 = 40350 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h68",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Reef Survey Count",
+    "question": "Marine ecologists tracking sea turtles record three regional nesting counts: \\( 3560 \\), \\( 2840 \\), and \\( 1120 \\) nests. Calculate the total sea turtle nests recorded.",
+    "a": "\\( 7520 \\)",
+    "options": [
+      "\\( 7420 \\)",
+      "\\( 7510 \\)",
+      "\\( 7520 \\)",
+      "\\( 7620 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3560 + 2840 + 1120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3560 + 2840 = 6400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 6400 + 1120 = 7520 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h69",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Cable Segment Assembly",
+    "question": "A power transmission installation uses three sections of insulated copper wire measuring \\( 850 \\) m, \\( 925 \\) m, and \\( 430 \\) m. Calculate the total transmission line length.",
+    "a": "\\( 2205 \\)",
+    "options": [
+      "\\( 2105 \\)",
+      "\\( 2195 \\)",
+      "\\( 2205 \\)",
+      "\\( 2305 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 850 + 925 + 430 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 850 + 925 = 1775 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 1775 + 430 = 2205 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h70",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Forest Sapling Plantation",
+    "question": "A regional reforestation agency coordinates planting of three native species: \\( 12500 \\) maples, \\( 9800 \\) firs, and \\( 6450 \\) birches. Find the total tree count.",
+    "a": "\\( 28750 \\)",
+    "options": [
+      "\\( 28650 \\)",
+      "\\( 28740 \\)",
+      "\\( 28750 \\)",
+      "\\( 28850 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12500 + 9800 + 6450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12500 + 9800 = 22300 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 22300 + 6450 = 28750 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h71",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Sports Spectator Gates",
+    "question": "A major stadium reports gate entries from three security checkpoints: Gate A (\\( 8560 \\)), Gate B (\\( 11240 \\)), and Gate C (\\( 6800 \\)). Solve for the total entries.",
+    "a": "\\( 26600 \\)",
+    "options": [
+      "\\( 26500 \\)",
+      "\\( 26590 \\)",
+      "\\( 26600 \\)",
+      "\\( 26700 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8560 + 11240 + 6800 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8560 + 11240 = 19800 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 19800 + 6800 = 26600 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h72",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Manuscript Archive Scan",
+    "question": "A digital library scans three book collections containing \\( 3250 \\) books, \\( 4890 \\) books, and \\( 1560 \\) books. Determine the total books digitized.",
+    "a": "\\( 9700 \\)",
+    "options": [
+      "\\( 9600 \\)",
+      "\\( 9690 \\)",
+      "\\( 9700 \\)",
+      "\\( 9800 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3250 + 4890 + 1560 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3250 + 4890 = 8140 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 8140 + 1560 = 9700 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h73",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Industrial Solvent Blend",
+    "question": "A production batch requires combining three vats of chemical solvent holding \\( 8950 \\) L, \\( 12400 \\) L, and \\( 5250 \\) L. Find the total solvent volume.",
+    "a": "\\( 26600 \\)",
+    "options": [
+      "\\( 26500 \\)",
+      "\\( 26590 \\)",
+      "\\( 26600 \\)",
+      "\\( 26700 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8950 + 12400 + 5250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8950 + 12400 = 21350 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 21350 + 5250 = 26600 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h74",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Hash Token Ledger",
+    "question": "A distributed database logs three block updates containing \\( 5400 \\) records, \\( 8192 \\) records, and \\( 2048 \\) records. Solve for the total number of records.",
+    "a": "\\( 15640 \\)",
+    "options": [
+      "\\( 15540 \\)",
+      "\\( 15630 \\)",
+      "\\( 15640 \\)",
+      "\\( 15740 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 5400 + 8192 + 2048 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 5400 + 8192 = 13592 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 13592 + 2048 = 15640 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h75",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Launch Vehicle Fuel",
+    "question": "A rocket propellant loading sequence pumps \\( 45800 \\) kg of oxygen, \\( 24900 \\) kg of kerosene, and \\( 3850 \\) kg of nitrogen gas. Determine the total propellant load.",
+    "a": "\\( 74550 \\)",
+    "options": [
+      "\\( 74450 \\)",
+      "\\( 74540 \\)",
+      "\\( 74550 \\)",
+      "\\( 74650 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 45800 + 24900 + 3850 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 45800 + 24900 = 70700 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 70700 + 3850 = 74550 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h76",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Vaccine Vial Depot",
+    "question": "A distribution hub logs vaccine shipments containing \\( 18900 \\) Pfizer, \\( 22400 \\) Moderna, and \\( 9350 \\) Novavax vials. What is the total number of vials logged?",
+    "a": "\\( 50650 \\)",
+    "options": [
+      "\\( 50550 \\)",
+      "\\( 50640 \\)",
+      "\\( 50650 \\)",
+      "\\( 50750 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 18900 + 22400 + 9350 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 18900 + 22400 = 41300 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 41300 + 9350 = 50650 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h77",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Micro-Tremor Catalog",
+    "question": "A seismic station logs micro-quakes across three regional fault lines: Fault A (\\( 1250 \\)), Fault B (\\( 1890 \\)), and Fault C (\\( 640 \\)). Find the total logged tremors.",
+    "a": "\\( 3780 \\)",
+    "options": [
+      "\\( 3680 \\)",
+      "\\( 3770 \\)",
+      "\\( 3780 \\)",
+      "\\( 3880 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 1250 + 1890 + 640 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 1250 + 1890 = 3140 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 3140 + 640 = 3780 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h78",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Seed Vault Accession",
+    "question": "A global seed bank registers crop seed packs containing \\( 35000 \\) wheat, \\( 48000 \\) rice, and \\( 12500 \\) maize varieties. Find the total number of seed packs.",
+    "a": "\\( 95500 \\)",
+    "options": [
+      "\\( 95400 \\)",
+      "\\( 95490 \\)",
+      "\\( 95500 \\)",
+      "\\( 95600 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 35000 + 48000 + 12500 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 35000 + 48000 = 83000 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 83000 + 12500 = 95500 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h79",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Wind Farm Grid Peak",
+    "question": "A regional wind network logs peak hourly yields from three offshore locations: \\( 145 \\) MW, \\( 230 \\) MW, and \\( 85 \\) MW. Calculate the total peak offshore yield.",
+    "a": "\\( 460 \\)",
+    "options": [
+      "\\( 360 \\)",
+      "\\( 450 \\)",
+      "\\( 460 \\)",
+      "\\( 560 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 145 + 230 + 85 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 145 + 230 = 375 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 375 + 85 = 460 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h80",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Wool Raw Material Weight",
+    "question": "A spinning mill logs three bales of fine merino wool weighing \\( 12800 \\) g, \\( 15600 \\) g, and \\( 9250 \\) g. Determine the total wool batch weight.",
+    "a": "\\( 37650 \\)",
+    "options": [
+      "\\( 37550 \\)",
+      "\\( 37640 \\)",
+      "\\( 37650 \\)",
+      "\\( 37750 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12800 + 15600 + 9250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12800 + 15600 = 28400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 28400 + 9250 = 37650 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h81",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Steel Casting Foundry",
+    "question": "A blast furnace pours three batches of cast iron weighing \\( 5240 \\) kg, \\( 8950 \\) kg, and \\( 3120 \\) kg. Calculate the total cast iron yield.",
+    "a": "\\( 17310 \\)",
+    "options": [
+      "\\( 17210 \\)",
+      "\\( 17300 \\)",
+      "\\( 17310 \\)",
+      "\\( 17410 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 5240 + 8950 + 3120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 5240 + 8950 = 14190 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 14190 + 3120 = 17310 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h82",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Marine Survey Coral",
+    "question": "Marine biologists catalog coral structures in three survey sectors: Sector A (\\( 1450 \\)), Sector B (\\( 2280 \\)), and Sector C (\\( 890 \\)). Find the total cataloged structures.",
+    "a": "\\( 4620 \\)",
+    "options": [
+      "\\( 4520 \\)",
+      "\\( 4610 \\)",
+      "\\( 4620 \\)",
+      "\\( 4720 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 1450 + 2280 + 890 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 1450 + 2280 = 3730 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 3730 + 890 = 4620 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h83",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Computer Task Core Allocation",
+    "question": "A grid network coordinates job execution using \\( 8192 \\) virtual CPUs, \\( 4096 \\) virtual CPUs, and \\( 2048 \\) virtual CPUs. Find the total virtual CPU allocation.",
+    "a": "\\( 14336 \\)",
+    "options": [
+      "\\( 14236 \\)",
+      "\\( 14326 \\)",
+      "\\( 14336 \\)",
+      "\\( 14436 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8192 + 4096 + 2048 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8192 + 4096 = 12288 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 12288 + 2048 = 14336 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h84",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Offshore Buoy Wave Count",
+    "question": "An offshore beacon logs wave cycles over three intervals: \\( 3240 \\) cycles, \\( 4180 \\) cycles, and \\( 1950 \\) cycles. Solve for the total logged wave cycles.",
+    "a": "\\( 9370 \\)",
+    "options": [
+      "\\( 9270 \\)",
+      "\\( 9360 \\)",
+      "\\( 9370 \\)",
+      "\\( 9470 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3240 + 4180 + 1950 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3240 + 4180 = 7420 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 7420 + 1950 = 9370 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h85",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Rural Settlement Population",
+    "question": "A regional board compiles demographic counts for three rural districts: District A (\\( 12850 \\)), District B (\\( 15600 \\)), and District C (\\( 9450 \\)). Find the total count.",
+    "a": "\\( 37900 \\)",
+    "options": [
+      "\\( 37800 \\)",
+      "\\( 37890 \\)",
+      "\\( 37900 \\)",
+      "\\( 38000 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12850 + 15600 + 9450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12850 + 15600 = 28450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 28450 + 9450 = 37900 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h86",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Cargo Fleet Capacity Weight",
+    "question": "A freighter shipping firm transports cargo batches weighing \\( 184500 \\) tonnes, \\( 212900 \\) tonnes, and \\( 93800 \\) tonnes. What is the total cargo weight transported?",
+    "a": "\\( 491200 \\)",
+    "options": [
+      "\\( 491100 \\)",
+      "\\( 491190 \\)",
+      "\\( 491200 \\)",
+      "\\( 491300 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 184500 + 212900 + 93800 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 184500 + 212900 = 397400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 397400 + 93800 = 491200 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h87",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Stream Flow Rate Total",
+    "question": "Hydrologists measure discharge rates of three streams entering a lake: Stream A (\\( 14500 \\) L/min), Stream B (\\( 18900 \\) L/min), and Stream C (\\( 7250 \\) L/min). Find the total discharge.",
+    "a": "\\( 40650 \\)",
+    "options": [
+      "\\( 40550 \\)",
+      "\\( 40640 \\)",
+      "\\( 40650 \\)",
+      "\\( 40750 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 14500 + 18900 + 7250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 14500 + 18900 = 33400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 33400 + 7250 = 40650 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h88",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Gas Network Pressure",
+    "question": "An inspector logs pipeline gas volumes of \\( 15400 \\) cubic feet, \\( 22800 \\) cubic feet, and \\( 4950 \\) cubic feet across three storage vaults. Calculate the total volume.",
+    "a": "\\( 43150 \\)",
+    "options": [
+      "\\( 43050 \\)",
+      "\\( 43140 \\)",
+      "\\( 43150 \\)",
+      "\\( 43250 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 15400 + 22800 + 4950 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 15400 + 22800 = 38200 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 38200 + 4950 = 43150 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h89",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Data Storage Logs",
+    "question": "A log collector system aggregates data logs size: \\( 6800 \\) files, \\( 12450 \\) files, and \\( 3120 \\) files from different applications. Calculate the total number of log files.",
+    "a": "\\( 22370 \\)",
+    "options": [
+      "\\( 22270 \\)",
+      "\\( 22360 \\)",
+      "\\( 22370 \\)",
+      "\\( 22470 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 6800 + 12450 + 3120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 6800 + 12450 = 19250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 19250 + 3120 = 22370 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h90",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Electric Substation Peak Load",
+    "question": "An electrical grid logs peak currents of \\( 7350 \\) amperes, \\( 4890 \\) amperes, and \\( 2110 \\) amperes across three transformers. Determine the total combined peak current.",
+    "a": "\\( 14350 \\)",
+    "options": [
+      "\\( 14250 \\)",
+      "\\( 14340 \\)",
+      "\\( 14350 \\)",
+      "\\( 14450 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 7350 + 4890 + 2110 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 7350 + 4890 = 12240 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 12240 + 2110 = 14350 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h91",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Museum Artifact Coins",
+    "question": "A museum displays three collections of gold coins: Collection A (\\( 450 \\) coins), Collection B (\\( 890 \\) coins), and Collection C (\\( 125 \\) coins). Find the total coin display count.",
+    "a": "\\( 1465 \\)",
+    "options": [
+      "\\( 1365 \\)",
+      "\\( 1455 \\)",
+      "\\( 1465 \\)",
+      "\\( 1565 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 450 + 890 + 125 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 450 + 890 = 1340 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 1340 + 125 = 1465 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h92",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Passenger Station Transit Boardings",
+    "question": "An urban transport system counts daily boardings at three key metro stations: \\( 14200 \\) boardings, \\( 16800 \\) boardings, and \\( 9350 \\) boardings. Find the total daily boardings.",
+    "a": "\\( 40350 \\)",
+    "options": [
+      "\\( 40250 \\)",
+      "\\( 40340 \\)",
+      "\\( 40350 \\)",
+      "\\( 40450 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 14200 + 16800 + 9350 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 14200 + 16800 = 31000 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 31000 + 9350 = 40350 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h93",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Offshore Turtle Nests",
+    "question": "Marine surveyors catalog nesting grounds for green turtles on three islands: Island A (\\( 3560 \\)), Island B (\\( 2840 \\)), and Island C (\\( 1120 \\)). Solve for the total nests.",
+    "a": "\\( 7520 \\)",
+    "options": [
+      "\\( 7420 \\)",
+      "\\( 7510 \\)",
+      "\\( 7520 \\)",
+      "\\( 7620 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3560 + 2840 + 1120 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3560 + 2840 = 6400 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 6400 + 1120 = 7520 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h94",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Cable Transmission Line Length",
+    "question": "A utility company lays three sections of submarine high-voltage cable measuring \\( 850 \\) km, \\( 925 \\) km, and \\( 430 \\) km. Calculate the total submarine cable length.",
+    "a": "\\( 2205 \\)",
+    "options": [
+      "\\( 2105 \\)",
+      "\\( 2195 \\)",
+      "\\( 2205 \\)",
+      "\\( 2305 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 850 + 925 + 430 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 850 + 925 = 1775 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 1775 + 430 = 2205 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h95",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Tree Plantation Reforest Species",
+    "question": "A municipal reforestation project reports planting three categories of saplings: \\( 12500 \\) redwoods, \\( 9800 \\) cedars, and \\( 6450 \\) hemlocks. Find the total combined saplings.",
+    "a": "\\( 28750 \\)",
+    "options": [
+      "\\( 28650 \\)",
+      "\\( 28740 \\)",
+      "\\( 28750 \\)",
+      "\\( 28850 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 12500 + 9800 + 6450 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 12500 + 9800 = 22300 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 22300 + 6450 = 28750 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h96",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Spectator Stadium Gate Entries",
+    "question": "A sports arena logs admissions at three major turnstile groups: North (\\( 8560 \\)), South (\\( 11240 \\)), and East (\\( 6800 \\)). Determine the total spectators admitted.",
+    "a": "\\( 26600 \\)",
+    "options": [
+      "\\( 26500 \\)",
+      "\\( 26590 \\)",
+      "\\( 26600 \\)",
+      "\\( 26700 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8560 + 11240 + 6800 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8560 + 11240 = 19800 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 19800 + 6800 = 26600 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h97",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Archival Manuscripts Scanner",
+    "question": "A preservation society catalogs three sets of historical documents containing \\( 3250 \\), \\( 4890 \\), and \\( 1560 \\) pages. Find the total number of document pages.",
+    "a": "\\( 9700 \\)",
+    "options": [
+      "\\( 9600 \\)",
+      "\\( 9690 \\)",
+      "\\( 9700 \\)",
+      "\\( 9800 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 3250 + 4890 + 1560 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 3250 + 4890 = 8140 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 8140 + 1560 = 9700 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h98",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Industrial Chemistry Blend Vat",
+    "question": "A chemical process requires mixing three liquid components holding \\( 8950 \\) mL, \\( 12400 \\) mL, and \\( 5250 \\) mL. Solve for the total chemical mix volume.",
+    "a": "\\( 26600 \\)",
+    "options": [
+      "\\( 26500 \\)",
+      "\\( 26590 \\)",
+      "\\( 26600 \\)",
+      "\\( 26700 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 8950 + 12400 + 5250 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 8950 + 12400 = 21350 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 21350 + 5250 = 26600 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h99",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Hash Ledger Database Record",
+    "question": "A security backup system aggregates three logs containing \\( 5400 \\), \\( 8192 \\), and \\( 2048 \\) entries. Find the total aggregated entries in the backup system.",
+    "a": "\\( 15640 \\)",
+    "options": [
+      "\\( 15540 \\)",
+      "\\( 15630 \\)",
+      "\\( 15640 \\)",
+      "\\( 15740 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 5400 + 8192 + 2048 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 5400 + 8192 = 13592 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 13592 + 2048 = 15640 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h100",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Propellant Rocket Loading Oxygen",
+    "question": "A space vehicle takes three liquid oxygen loads weighing \\( 45800 \\) kg, \\( 24900 \\) kg, and \\( 3850 \\) kg. Calculate the total liquid oxygen weight.",
+    "a": "\\( 74550 \\)",
+    "options": [
+      "\\( 74450 \\)",
+      "\\( 74540 \\)",
+      "\\( 74550 \\)",
+      "\\( 74650 \\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the three values from the problem text to sum.",
+        "workingOut": "\\( 45800 + 24900 + 3850 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the first two values together first.",
+        "workingOut": "\\( 45800 + 24900 = 70700 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the third value to find the final total sum.",
+        "workingOut": "\\( 70700 + 3850 = 74550 \\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h1",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Associative Grouping",
+    "question": "Show that the sum of the three integer payloads \\\\( 157 \\\\) kg, \\\\( 243 \\\\) kg, and \\\\( 89 \\\\) kg is exactly \\\\( 489 \\\\) kg by grouping the numbers that sum to a round hundred first. Write down your steps.",
+    "a": "489",
+    "solutionSteps": [
+      {
+        "explanation": "Identify and group the numbers whose units digits sum to 10 (or whose sum forms a round hundred).",
+        "workingOut": "\\\\( (157 + 243) + 89 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the sum of the grouped pair.",
+        "workingOut": "\\\\( 400 + 89 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the final addition to obtain the total payload.",
+        "workingOut": "\\\\( 489 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h2",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Commutative Properties",
+    "question": "Show that adding \\\\( 84 + 19 + 16 \\\\) yields the same result as \\\\( (84 + 16) + 19 \\\\). State the mathematical law that justifies this rearrangement.",
+    "a": "119",
+    "solutionSteps": [
+      {
+        "explanation": "State the Commutative and Associative Laws of Addition.",
+        "workingOut": "\\\\( a + b + c = (a + c) + b \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the sum using the rearranged grouping.",
+        "workingOut": "\\\\( (84 + 16) + 19 = 100 + 19 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the final sum.",
+        "workingOut": "\\\\( 119 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h3",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Double-Carry Verification",
+    "question": "Show that adding \\\\( 895 \\\\) and \\\\( 148 \\\\) requires carrying a digit over twice in the standard vertical algorithm. Write out the digits carried to the tens and hundreds columns.",
+    "a": "1043",
+    "solutionSteps": [
+      {
+        "explanation": "Align the numbers vertically and add the units: \\\\( 5 + 8 = 13 \\\\), carrying 1 to the tens place.",
+        "workingOut": "\\\\( 5 + 8 = 13 \\\\rightarrow \\\\text{Carry } 1 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens column: \\\\( 9 + 4 + 1 \\\\text{ (carry)} = 14 \\\\), carrying 1 to the hundreds place.",
+        "workingOut": "\\\\( 14 \\\\rightarrow \\\\text{Carry } 1 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the hundreds column: \\\\( 8 + 1 + 1 \\\\text{ (carry)} = 10 \\\\).",
+        "workingOut": "\\\\( 1043 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h4",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multi-Addend Decomposition",
+    "question": "Show that \\\\( 12 + 34 + 56 + 78 \\\\) is exactly equal to \\\\( 180 \\\\) by decomposing each two-digit number into its tens and units components before summing.",
+    "a": "180",
+    "solutionSteps": [
+      {
+        "explanation": "Decompose each number into tens and units.",
+        "workingOut": "\\\\( (10+30+50+70) + (2+4+6+8) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the tens component and the units component separately.",
+        "workingOut": "\\\\( 160 + 20 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the sums to find the total.",
+        "workingOut": "\\\\( 180 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h5",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Balance Equations",
+    "question": "Show that if \\\\( A + 78 = 150 \\\\) and \\\\( B + 45 = 150 \\\\), then the sum \\\\( A + B \\\\) is exactly \\\\( 177 \\\\). Explain your steps algebraically.",
+    "a": "177",
+    "solutionSteps": [
+      {
+        "explanation": "Solve for the value of A.",
+        "workingOut": "\\\\( A = 150 - 78 = 72 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for the value of B.",
+        "workingOut": "\\\\( B = 150 - 45 = 105 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the values of A and B.",
+        "workingOut": "\\\\( 72 + 105 = 177 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h6",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Odd Number Properties",
+    "question": "Prove that the sum of any two odd consecutive integers is always a multiple of \\\\( 4 \\\\). Write down the algebraic proof.",
+    "a": "Proof that (2n+1) + (2n+3) = 4n+4 = 4(n+1), which is a multiple of 4.",
+    "solutionSteps": [
+      {
+        "explanation": "Define two consecutive odd integers using an integer parameter n.",
+        "workingOut": "\\\\( 2n + 1 \\\\quad \\\\text{and} \\\\quad 2n + 3 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the two expressions together and simplify.",
+        "workingOut": "\\\\( (2n + 1) + (2n + 3) = 4n + 4 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor out 4 to demonstrate it is always a multiple of 4.",
+        "workingOut": "\\\\( 4(n + 1) \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h7",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Consecutive Integers Proof",
+    "question": "Prove that the sum of three consecutive integers is always equal to three times the middle integer.",
+    "a": "Proof that (x-1) + x + (x+1) = 3x.",
+    "solutionSteps": [
+      {
+        "explanation": "Represent the three consecutive integers in terms of the middle integer, x.",
+        "workingOut": "\\\\( x - 1, \\\\; x, \\\\; x + 1 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the three expressions together.",
+        "workingOut": "\\\\( (x - 1) + x + (x + 1) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the sum by canceling out the -1 and +1.",
+        "workingOut": "\\\\( 3x \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h8",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Parity Rules",
+    "question": "Prove that the sum of an even number and an odd number is always an odd number.",
+    "a": "Proof that 2n + (2m+1) = 2(n+m) + 1, which is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Express an arbitrary even number and an arbitrary odd number algebraically.",
+        "workingOut": "\\\\( \\\\text{Even: } 2n, \\\\quad \\\\text{Odd: } 2m + 1 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the two numbers.",
+        "workingOut": "\\\\( 2n + 2m + 1 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor out 2 from the first two terms to show the result fits the definition of an odd number.",
+        "workingOut": "\\\\( 2(n + m) + 1 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h9",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Distributive Summation",
+    "question": "Prove that the sum of the first 10 multiples of 3 (which is \\\\( 3 + 6 + 9 + \\\\dots + 30 \\\\)) is equal to 3 times the sum of the first 10 positive integers.",
+    "a": "Proof that 3(1) + 3(2) + ... + 3(10) = 3 * (1 + 2 + ... + 10) by distributive law.",
+    "solutionSteps": [
+      {
+        "explanation": "Write out the sum of the multiples of 3.",
+        "workingOut": "\\\\( 3(1) + 3(2) + 3(3) + \\\\dots + 3(10) \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor out the common multiplier 3 using the distributive law.",
+        "workingOut": "\\\\( 3(1 + 2 + 3 + \\\\dots + 10) \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h10",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Upper Bounds",
+    "question": "Prove that the sum of any two two-digit numbers can never result in a four-digit number.",
+    "a": "Proof that max sum is 99 + 99 = 198, which is a three-digit number.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the greatest possible two-digit number.",
+        "workingOut": "\\\\( 99 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the two greatest two-digit numbers.",
+        "workingOut": "\\\\( 99 + 99 = 198 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude that since the maximum possible sum (198) is a three-digit number, no sum of two two-digit numbers can reach four digits.",
+        "workingOut": "\\\\( 198 < 1000 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h13",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Commutative Paths Sketch",
+    "question": "Sketch two parallel number lines to compare the paths: Line 1 showing \\\\( 6 + 3 \\\\) (an arrow of 6 then 3), and Line 2 showing \\\\( 3 + 6 \\\\) (an arrow of 3 then 6). Demonstrate visually that they land on the same coordinate.",
+    "a": "A diagram comparing two parallel number line paths landing on 9.",
+    "solutionSteps": [
+      {
+        "explanation": "Draw the first number line showing a vector arrow of 6 units followed by a vector arrow of 3 units.",
+        "workingOut": "\\\\( 6 + 3 = 9 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Draw the second number line showing a vector arrow of 3 units followed by a vector arrow of 6 units.",
+        "workingOut": "\\\\( 3 + 6 = 9 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h14",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Area Grid Sketch",
+    "question": "Sketch a grid-based area model representing the sum of a \\\\( 3 \\\\times 4 \\\\) rectangle and a \\\\( 3 \\\\times 2 \\\\) rectangle sharing a side of length 3. Shade the two regions differently and label the dimensions.",
+    "a": "A sketch showing a shaded grid of 12 squares adjacent to a grid of 6 squares, forming a 3x6 grid total.",
+    "solutionSteps": [
+      {
+        "explanation": "Draw the first rectangle of size 3 units high and 4 units wide.",
+        "workingOut": "\\\\( 3 \\\\times 4 = 12 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Draw the second rectangle sharing the height of 3 units, with a width of 2 units, next to the first one.",
+        "workingOut": "\\\\( 3 \\\\times 2 = 6 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Indicate the overall dimensions of the combined rectangle.",
+        "workingOut": "\\\\( 3 \\\\times (4 + 2) = 18 \\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y7-1b-h15",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Segment Addition Sketch",
+    "question": "Sketch a continuous line segment divided into three parts: Segment AB = \\\\( 4 \\\\) cm, BC = \\\\( 5 \\\\) cm, and CD = \\\\( 6 \\\\) cm. Draw the segment to scale and label the length of the total segment AD.",
+    "a": "A drawing of a line segment AD divided into AB, BC, CD labeled with lengths and showing total AD = 15 cm.",
+    "solutionSteps": [
+      {
+        "explanation": "Draw the first segment AB and label it 4 cm.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Draw the adjacent segment BC (5 cm) and the final segment CD (6 cm) in a straight line.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate and label the total length of segment AD.",
+        "workingOut": "\\\\( AD = 4 + 5 + 6 = 15 \\\\text{ cm} \\\\)",
+        "graphData": null
       }
     ]
   }

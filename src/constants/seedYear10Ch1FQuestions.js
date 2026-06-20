@@ -5,7 +5,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
-    "question": "The sum of $\\$8000$ is borrowed for $4$ years at $7\\%$ p.a. simple interest. How much interest is paid?",
+    "question": "The sum of $8000 is borrowed for $4$ years at $7\\%$ p.a. simple interest. How much interest is paid?",
     "a": "\\(2240\\)",
     "solutionSteps": [
       {
@@ -31,7 +31,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
-    "question": "The sum of $\\$6000$ is borrowed at $8.5\\%$ p.a. simple interest and $\\$1530$ is paid in interest. For how many years has the money been borrowed?",
+    "question": "The sum of $6000 is borrowed at $8.5\\%$ p.a. simple interest and $1530 is paid in interest. For how many years has the money been borrowed?",
     "a": "\\(3\\)",
     "solutionSteps": [
       {
@@ -61,7 +61,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
-    "question": "The sum of $\\$9000$ is borrowed for $5$ years and $\\$2700$ is paid in interest. Calculate the (per annum) rate of simple interest charged, as a percentage.",
+    "question": "The sum of $9000 is borrowed for $5$ years and $2700 is paid in interest. Calculate the (per annum) rate of simple interest charged, as a percentage.",
     "a": "\\(6\\)\\%",
     "solutionSteps": [
       {
@@ -95,7 +95,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
-    "question": "A department store is offering a $30\\%$ discount on all items in the store. Calculate the discounted price on a jacket with a marked price of $\\$250$.",
+    "question": "A department store is offering a $30\\%$ discount on all items in the store. Calculate the discounted price on a jacket with a marked price of $250.",
     "a": "\\(175\\)",
     "solutionSteps": [
       {
@@ -121,7 +121,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
-    "question": "A department store is offering a $30\\%$ discount on all items in the store. Calculate the discounted price on a dress with a marked price of $\\$180$.",
+    "question": "A department store is offering a $30\\%$ discount on all items in the store. Calculate the discounted price on a dress with a marked price of $180.",
     "a": "\\(126\\)",
     "solutionSteps": [
       {
@@ -143,7 +143,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
-    "question": "A pair of shoes marked at $\\$150$ is sold for $\\$120$. What percentage discount has been allowed?",
+    "question": "A pair of shoes marked at $150 is sold for $120. What percentage discount has been allowed?",
     "a": "\\(20\\)\\%",
     "solutionSteps": [
       {
@@ -169,7 +169,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
-    "question": "A music store is offering a $35\\%$ discount during a sale. Calculate the original marked price of a DVD that has a sale price of $\\$15.60$.",
+    "question": "A music store is offering a $35\\%$ discount during a sale. Calculate the original marked price of a DVD that has a sale price of $15.60.",
     "a": "\\(24\\)",
     "solutionSteps": [
       {
@@ -195,7 +195,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Revision",
-    "question": "A music store is offering a $35\\%$ discount during a sale. Calculate the original marked price of a boxed set of DVDs that has a sale price of $\\$52$.",
+    "question": "A music store is offering a $35\\%$ discount during a sale. Calculate the original marked price of a boxed set of DVDs that has a sale price of $52.",
     "a": "\\(80\\)",
     "solutionSteps": [
       {
@@ -673,7 +673,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
-    "question": "Calculate the amount that an investment of $\\$20\\,000$ will be worth if it is invested at $5.5\\%$ p.a. for $8$ years compounded annually.",
+    "question": "Calculate the amount that an investment of $20,000 will be worth if it is invested at $5.5\\%$ p.a. for $8$ years compounded annually.",
     "a": "\\(30693.31\\)",
     "solutionSteps": [
       {
@@ -686,7 +686,7 @@ export const Y10_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Round to the nearest cent.",
-        "workingOut": "\\$30693.31"
+        "workingOut": "$30693.31"
       }
     ],
     "graphData": null,
@@ -703,7 +703,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
-    "question": "Calculate the amount that an investment of $\\$15\\,000$ will be worth if it is invested at $6\\%$ p.a. for $5$ years compounded annually.",
+    "question": "Calculate the amount that an investment of $15,000 will be worth if it is invested at $6\\%$ p.a. for $5$ years compounded annually.",
     "a": "\\(20073.38\\)",
     "solutionSteps": [
       {
@@ -729,7 +729,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
-    "question": "Calculate the amount that an investment of $\\$15\\,000$ will be worth if it is invested at $6\\%$ p.a. for $5$ years compounded quarterly (assume $1.5\\%$ per quarter).",
+    "question": "Calculate the amount that an investment of $15,000 will be worth if it is invested at $6\\%$ p.a. for $5$ years compounded quarterly (assume $1.5\\%$ per quarter).",
     "a": "\\(20202.83\\)",
     "solutionSteps": [
       {
@@ -759,7 +759,7 @@ export const Y10_CH1F_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
-    "question": "Calculate the amount that an investment of $\\$15\\,000$ will be worth if it is invested at $6\\%$ p.a. for $5$ years compounded monthly (assume $0.5\\%$ per month).",
+    "question": "Calculate the amount that an investment of $15,000 will be worth if it is invested at $6\\%$ p.a. for $5$ years compounded monthly (assume $0.5\\%$ per month).",
     "a": "\\(20232.79\\)",
     "solutionSteps": [
       {

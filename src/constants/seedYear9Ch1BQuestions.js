@@ -355,7 +355,7 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Determine if the variables and their powers match exactly.",
-        "workingOut": "\\(\\text{They have the same combination of variables (a^2 and b) raised to the same powers.}\\)"
+        "workingOut": "They have the same combination of variables (a² and b) raised to the same powers."
       }
     ]
   },
@@ -379,7 +379,7 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Determine if the variables and their powers match exactly.",
-        "workingOut": "\\(\\text{They have the same combination of variables (m and n^2) raised to the same powers.}\\)"
+        "workingOut": "They have the same combination of variables (m and n²) raised to the same powers."
       }
     ]
   },
@@ -403,7 +403,7 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Determine if the variables and their powers match exactly.",
-        "workingOut": "\\(\\text{The variables have different powers: one has l^2 s, and the other has l s^2.}\\)"
+        "workingOut": "The variables have different powers: one has l²s, and the other has ls²."
       }
     ]
   },
@@ -427,7 +427,7 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Determine if the variables and their powers match exactly.",
-        "workingOut": "\\(\\text{The variables have different powers: one has d^2 e, and the other has d e^2.}\\)"
+        "workingOut": "The variables have different powers: one has d²e, and the other has de²."
       }
     ]
   },
@@ -451,7 +451,7 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Determine if the variables and their powers match exactly.",
-        "workingOut": "\\(\\text{They have the same combination of variables (x^2 and y^2) raised to the same powers.}\\)"
+        "workingOut": "They have the same combination of variables (x² and y²) raised to the same powers."
       }
     ]
   },
@@ -475,7 +475,7 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Determine if the variables and their powers match exactly.",
-        "workingOut": "\\(\\text{They have the same combination of variables (a^2, b, and c^2) raised to the same powers.}\\)"
+        "workingOut": "They have the same combination of variables (a², b, and c²) raised to the same powers."
       }
     ]
   },
@@ -499,7 +499,7 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Determine if the variables and their powers match exactly.",
-        "workingOut": "\\(\\text{The variables have different powers: one has a^2 b c, and the other has a^2 b c^2.}\\)"
+        "workingOut": "The variables have different powers: one has a²bc, and the other has a²bc²."
       }
     ]
   },

@@ -15,7 +15,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Draw a vertical line, for example at \\( x = 2 \\). It cuts the circle at two distinct points: \\( (2, \\sqrt{12}) \\) and \\( (2, -\\sqrt{12}) \\).",
-        "workingOut": "\\(x^2 + y^2 = 16 \\implies 2^2 + y^2 = 16 \\implies y = \\pm \\sqrt\\{12\\}\\)",
+        "workingOut": "\\(x^2 + y^2 = 16 \\implies 2^2 + y^2 = 16 \\implies y = \\pm \\sqrt{12}\\)",
         "graphData": null
       },
       {
@@ -54,7 +54,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Any vertical line drawn for \\( 0 < x < 3 \\) (for example, \\( x = 1.5 \\)) will intersect the curve at two distinct y-coordinates.",
-        "workingOut": "\\(x = \\sqrt\\{9-y^2\\} \\implies 1.5^2 + y^2 = 9 \\implies y = \\pm \\sqrt\\{6.75\\} \\approx \\pm 2.6\\)",
+        "workingOut": "\\(x = \\sqrt{9-y^2} \\implies 1.5^2 + y^2 = 9 \\implies y = \\pm \\sqrt{6.75} \\approx \\pm 2.6\\)",
         "graphData": null
       },
       {
@@ -93,7 +93,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "If we draw a vertical line near the y-axis, such as \\( x = 1 \\), it intersects the curve three times because the curve curves back on itself.",
-        "workingOut": "\\(y^3 - 4y = 1 \\implies \\text\\{three real solutions for \\} y\\)",
+        "workingOut": "\\(y^3 - 4y = 1 \\implies \\text{three real solutions for } y\\)",
         "graphData": null
       },
       {
@@ -132,7 +132,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Draw a vertical line at \\( x = 1 \\). Find the corresponding y-values.",
-        "workingOut": "\\(1 = 3 - \\frac\\{y^2\\}\\{2\\} \\implies y^2 = 4 \\implies y = \\pm 2\\)",
+        "workingOut": "\\(1 = 3 - \\frac{y^2}{2} \\implies y^2 = 4 \\implies y = \\pm 2\\)",
         "graphData": null
       },
       {
@@ -171,7 +171,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Choose a vertical line like \\( x = 1 \\). Substitute it to find the points of intersection.",
-        "workingOut": "\\(y^2 - 1^2 = 4 \\implies y^2 = 5 \\implies y = \\pm \\sqrt\\{5\\}\\)",
+        "workingOut": "\\(y^2 - 1^2 = 4 \\implies y^2 = 5 \\implies y = \\pm \\sqrt{5}\\)",
         "graphData": null
       },
       {
@@ -210,7 +210,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Any vertical line drawn for \\( -1 < x < 0 \\) (such as \\( x = -0.5 \\)) intersects the loop at two distinct points.",
-        "workingOut": "\\(t^2 - 1 = -0.5 \\implies t = \\pm \\frac\\{1\\}\\{\\sqrt\\{2\\}\\} \\implies y = \\pm \\frac\\{1\\}\\{2\\sqrt\\{2\\}\\} - (\\pm \\frac\\{1\\}\\{\\sqrt\\{2\\}\\}) \\implies y = \\pm \\frac\\{1\\}\\{2\\sqrt\\{2\\}\\}\\)",
+        "workingOut": "\\(t^2 - 1 = -0.5 \\implies t = \\pm \\frac{1}{\\sqrt{2}} \\implies y = \\pm \\frac{1}{2\\sqrt{2}} - (\\pm \\frac{1}{\\sqrt{2}}) \\implies y = \\pm \\frac{1}{2\\sqrt{2}}\\)",
         "graphData": null
       },
       {
@@ -555,17 +555,17 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The graph is a circle of radius \\( 5 \\) with the top part missing. The open endpoints are at \\( (-4, 3) \\) and \\( (4, 3) \\).",
-        "workingOut": "\\(x^2 + y^2 = 25 \\implies x = \\pm 4 \\text\\{ when \\} y = 3\\)",
+        "workingOut": "\\(x^2 + y^2 = 25 \\implies x = \\pm 4 \\text{ when } y = 3\\)",
         "graphData": null
       },
       {
         "explanation": "The domain goes between the open points in the x direction: \\( -5 < x < 5 \\). Wait, the endpoints of the arc are at \\( x = -4 \\) and \\( x = 4 \\) but the circle extends to the sides to \\( -5 \\) and \\( 5 \\).",
-        "workingOut": "\\(\\text\\{Domain is \\} -5 < x < 5\\)",
+        "workingOut": "\\(\\text{Domain is } -5 < x < 5\\)",
         "graphData": null
       },
       {
         "explanation": "The lowest point of the circle is at \\( y = -5 \\) (included), and the highest points are the open circles at \\( y = 3 \\). So range is \\( -5 \\le y < 3 \\).",
-        "workingOut": "\\(\\text\\{Range is \\} -5 \\le y < 3\\)",
+        "workingOut": "\\(\\text{Range is } -5 \\le y < 3\\)",
         "graphData": null
       }
     ],
@@ -818,7 +818,7 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x = 0, 1, 2 \\) into \\( y = -3x + 2 \\).",
-        "workingOut": "\\(\\begin\\{aligned\\} x=0 \\implies y &= -3(0)+2 = 2 \\\\ x=1 \\implies y &= -3(1)+2 = -1 \\\\ x=2 \\implies y &= -3(2)+2 = -4 \\end\\{aligned\\}\\)",
+        "workingOut": "\\(\\begin{aligned} x=0 \\implies y &= -3(0)+2 = 2 \\\\ x=1 \\implies y &= -3(1)+2 = -1 \\\\ x=2 \\implies y &= -3(2)+2 = -4 \\end{aligned}\\)",
         "graphData": null
       },
       {
@@ -828,7 +828,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Since it is a non-vertical straight line, the domain and range are both all real numbers.",
-        "workingOut": "\\(\\text\\{Domain: all real \\} x, \\quad \\text\\{Range: all real \\} y\\)",
+        "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: all real } y\\)",
         "graphData": null
       }
     ]
@@ -844,7 +844,7 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x \\) values into \\( y = x^2 - 2x + 3 \\).",
-        "workingOut": "\\(\\begin\\{aligned\\} x=-1 \\implies y &= (-1)^2 - 2(-1) + 3 = 6 \\\\ x=0 \\implies y &= (0)^2 - 2(0) + 3 = 3 \\\\ x=1 \\implies y &= (1)^2 - 2(1) + 3 = 2 \\\\ x=2 \\implies y &= (2)^2 - 2(2) + 3 = 3 \\\\ x=3 \\implies y &= (3)^2 - 2(3) + 3 = 6 \\end\\{aligned\\}\\)",
+        "workingOut": "\\(\\begin{aligned} x=-1 \\implies y &= (-1)^2 - 2(-1) + 3 = 6 \\\\ x=0 \\implies y &= (0)^2 - 2(0) + 3 = 3 \\\\ x=1 \\implies y &= (1)^2 - 2(1) + 3 = 2 \\\\ x=2 \\implies y &= (2)^2 - 2(2) + 3 = 3 \\\\ x=3 \\implies y &= (3)^2 - 2(3) + 3 = 6 \\end{aligned}\\)",
         "graphData": null
       },
       {
@@ -854,7 +854,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Identify the domain and range. The graph extends horizontally infinitely, and vertically starts from its minimum at \\( y = 2 \\).",
-        "workingOut": "\\(\\text\\{Domain: all real \\} x, \\quad \\text\\{Range: \\} y \\ge 2\\)",
+        "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: } y \\ge 2\\)",
         "graphData": null
       }
     ]
@@ -1033,7 +1033,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "A mapping diagram shows domain elements \\(\\{-3, 3, -2, 2, 0\\}\\) mapping to range elements \\(\\{9, 4, 0\\}\\) as follows:\n\n- \\(-3 \\rightarrow 9\\)\n- \\(3 \\rightarrow 9\\)\n- \\(-2 \\rightarrow 4\\)\n- \\(2 \\rightarrow 4\\)\n- \\(0 \\rightarrow 0\\)\n\nIs this relation also a function? Explain why.",
+    "question": "A mapping diagram shows domain elements \\({-3, 3, -2, 2, 0}\\) mapping to range elements \\({9, 4, 0}\\) as follows:\n\n- \\(-3 \\rightarrow 9\\)\n- \\(3 \\rightarrow 9\\)\n- \\(-2 \\rightarrow 4\\)\n- \\(2 \\rightarrow 4\\)\n- \\(0 \\rightarrow 0\\)\n\nIs this relation also a function? Explain why.",
     "opts": [
       "Yes, because each element in the domain maps to exactly one element in the range.",
       "No, because two different domain elements map to the same range element.",
@@ -1065,7 +1065,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "A relation is described by a diagram where domain elements \\(\\{9, 4, 0\\}\\) map to range elements \\(\\{-3, 3, -2, 2, 0\\}\\) as follows:\n\n- \\(9 \\rightarrow -3\\) and \\(9 \\rightarrow 3\\)\n- \\(4 \\rightarrow -2\\) and \\(4 \\rightarrow 2\\)\n- \\(0 \\rightarrow 0\\)\n\nIs this relation a function? Explain why.",
+    "question": "A relation is described by a diagram where domain elements \\({9, 4, 0}\\) map to range elements \\({-3, 3, -2, 2, 0}\\) as follows:\n\n- \\(9 \\rightarrow -3\\) and \\(9 \\rightarrow 3\\)\n- \\(4 \\rightarrow -2\\) and \\(4 \\rightarrow 2\\)\n- \\(0 \\rightarrow 0\\)\n\nIs this relation a function? Explain why.",
     "opts": [
       "No, because the inputs 9 and 4 map to more than one output value.",
       "Yes, because every element in the domain has an output.",
@@ -1097,7 +1097,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "A relation maps \\(\\{-1, 1, 2\\}\\) to \\(\\{3, 5, 8\\}\\) as follows:\n\n- \\(-1 \\rightarrow 3\\)\n- \\(1 \\rightarrow 5\\)\n- \\(2 \\rightarrow 8\\)\n\nIs this relation a function?",
+    "question": "A relation maps \\({-1, 1, 2}\\) to \\({3, 5, 8}\\) as follows:\n\n- \\(-1 \\rightarrow 3\\)\n- \\(1 \\rightarrow 5\\)\n- \\(2 \\rightarrow 8\\)\n\nIs this relation a function?",
     "opts": [
       "Yes, it is a one-to-one function.",
       "No, it is not a function.",
@@ -1124,7 +1124,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "A mapping diagram contains domain elements \\(\\{-2, 2, 0\\}\\) and range elements \\(\\{-3, 3, -4, 4\\}\\) as follows:\n\n- \\(-2 \\rightarrow -3\\)\n- \\(2 \\rightarrow 3\\)\n- \\(0 \\rightarrow -4\\) and \\(0 \\rightarrow 4\\)\n\nIs this relation a function?",
+    "question": "A mapping diagram contains domain elements \\({-2, 2, 0}\\) and range elements \\({-3, 3, -4, 4}\\) as follows:\n\n- \\(-2 \\rightarrow -3\\)\n- \\(2 \\rightarrow 3\\)\n- \\(0 \\rightarrow -4\\) and \\(0 \\rightarrow 4\\)\n\nIs this relation a function?",
     "opts": [
       "No, because the domain element 0 maps to two range elements.",
       "Yes, because every element in the range has a preimage.",
@@ -1156,7 +1156,7 @@ export const Y11_CH3B_QUESTIONS = [
       {
         "id": "y11a-3b-q8a",
         "type": "multiple_choice",
-        "question": "a) Consider the set of points \\(\\{(1, 3), (2, 4), (3, 1), (5, 3)\\}\\). Is this a function or a relation?",
+        "question": "a) Consider the set of points \\({(1, 3), (2, 4), (3, 1), (5, 3)}\\). Is this a function or a relation?",
         "opts": [
           "It is a function.",
           "It is a relation but not a function."
@@ -1172,18 +1172,18 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "For part a, check if any x-coordinate repeats with a different y-value in the set \\(\\{(1, 3), (2, 4), (3, 1), (5, 3)\\}\\).",
-        "workingOut": "\\(\\text\\{x-coordinates: \\} 1, 2, 3, 5 \\quad \\text\\{(no repeats) \\} \\implies \\text\\{Function\\}\\)",
+        "explanation": "For part a, check if any x-coordinate repeats with a different y-value in the set \\({(1, 3), (2, 4), (3, 1), (5, 3)}\\).",
+        "workingOut": "\\(\\text{x-coordinates: } 1, 2, 3, 5 \\quad \\text{(no repeats) } \\implies \\text{Function}\\)",
         "graphData": null
       },
       {
         "explanation": "For part b(i), find combinations of numbers on two dice (values 1 to 6) that sum to 4 or multiply to 4.",
-        "workingOut": "\\(\\begin\\{aligned\\} \\text\\{Sum to 4: \\} &(1, 3), (2, 2), (3, 1) \\\\ \\text\\{Multiply to 4: \\} &(1, 4), (2, 2), (4, 1) \\\\ \\text\\{Combined: \\} &\\{(1,3), (1,4), (2,2), (3,1), (4,1)\\} \\end\\{aligned\\}\\)",
+        "workingOut": "\\(\\begin{aligned} \\text{Sum to 4: } &(1, 3), (2, 2), (3, 1) \\\\ \\text{Multiply to 4: } &(1, 4), (2, 2), (4, 1) \\\\ \\text{Combined: } &{(1,3), (1,4), (2,2), (3,1), (4,1)} \\end{aligned}\\)",
         "graphData": null
       },
       {
         "explanation": "For part b(ii), look at \\( x = 1 \\). It maps to both \\( y = 3 \\) and \\( y = 4 \\).",
-        "workingOut": "\\(x=1 \\implies y=3 \\text\\{ and \\} y=4 \\implies \\text\\{Relation, not a function\\}\\)",
+        "workingOut": "\\(x=1 \\implies y=3 \\text{ and } y=4 \\implies \\text{Relation, not a function}\\)",
         "graphData": null
       }
     ]
@@ -1282,7 +1282,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Solve for y.",
-        "workingOut": "\\(y = 2 \\pm 3 \\implies y = 5 \\text\\{ or \\} y = -1\\)",
+        "workingOut": "\\(y = 2 \\pm 3 \\implies y = 5 \\text{ or } y = -1\\)",
         "graphData": null
       },
       {
@@ -1321,7 +1321,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Any point on this vertical line has an x-coordinate of 3. We can choose any two different y-values, for example \\( y = 1 \\) and \\( y = 2 \\).",
-        "workingOut": "\\(\\text\\{Points: \\} (3, 1) \\text\\{ and \\} (3, 2)\\)",
+        "workingOut": "\\(\\text{Points: } (3, 1) \\text{ and } (3, 2)\\)",
         "graphData": null
       }
     ],
@@ -1355,7 +1355,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Polynomial functions are defined for all real values of \\( x \\).",
-        "workingOut": "\\(\\text\\{Domain: all real \\} x\\)",
+        "workingOut": "\\(\\text{Domain: all real } x\\)",
         "graphData": null
       }
     ]
@@ -1376,7 +1376,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "There are no fractions or square roots to restrict the input. The domain is all real numbers.",
-        "workingOut": "\\(\\text\\{Domain: all real \\} x\\)",
+        "workingOut": "\\(\\text{Domain: all real } x\\)",
         "graphData": null
       }
     ]
@@ -1413,7 +1413,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\( x \\).",
-        "workingOut": "\\(3x \\neq 2 \\implies x \\neq \\frac\\{2\\}\\{3\\}\\)",
+        "workingOut": "\\(3x \\neq 2 \\implies x \\neq \\frac{2}{3}\\)",
         "graphData": null
       }
     ]
@@ -1455,7 +1455,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Solve the linear inequality.",
-        "workingOut": "\\(3x \\ge -2 \\implies x \\ge -\\frac\\{2\\}\\{3\\}\\)",
+        "workingOut": "\\(3x \\ge -2 \\implies x \\ge -\\frac{2}{3}\\)",
         "graphData": null
       }
     ]
@@ -1576,7 +1576,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Solve the inequality.",
-        "workingOut": "\\(3x > 4 \\implies x > \\frac\\{4\\}\\{3\\}\\)",
+        "workingOut": "\\(3x > 4 \\implies x > \\frac{4}{3}\\)",
         "graphData": null
       }
     ]
@@ -1592,7 +1592,7 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate \\( y = 3^x \\) for each given \\( x \\) value.",
-        "workingOut": "\\(\\begin\\{aligned\\} x=-2 \\implies y &= 3^\\{-2\\} = \\frac\\{1\\}\\{9\\} \\\\ x=-1 \\implies y &= 3^\\{-1\\} = \\frac\\{1\\}\\{3\\} \\\\ x=0 \\implies y &= 3^0 = 1 \\\\ x=1 \\implies y &= 3^1 = 3 \\\\ x=2 \\implies y &= 3^2 = 9 \\end\\{aligned\\}\\)",
+        "workingOut": "\\(\\begin{aligned} x=-2 \\implies y &= 3^{-2} = \\frac{1}{9} \\\\ x=-1 \\implies y &= 3^{-1} = \\frac{1}{3} \\\\ x=0 \\implies y &= 3^0 = 1 \\\\ x=1 \\implies y &= 3^1 = 3 \\\\ x=2 \\implies y &= 3^2 = 9 \\end{aligned}\\)",
         "graphData": null
       },
       {
@@ -1602,7 +1602,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Identify the domain and range.",
-        "workingOut": "\\(\\text\\{Domain: all real \\} x, \\quad \\text\\{Range: \\} y > 0\\)",
+        "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: } y > 0\\)",
         "graphData": null
       }
     ]
@@ -1618,7 +1618,7 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x \\) values into the function expression.",
-        "workingOut": "\\(\\begin\\{aligned\\} x=-3 \\implies y &= 0.25 \\times (3(-3) - (-3)^3) = 0.25 \\times (-9 + 27) = 4.5 \\\\ x=-2 \\implies y &= 0.25 \\times (3(-2) - (-2)^3) = 0.25 \\times (-6 + 8) = 0.5 \\\\ x=-1 \\implies y &= 0.25 \\times (3(-1) - (-1)^3) = 0.25 \\times (-3 + 1) = -0.5 \\\\ x=0 \\implies y &= 0.25 \\times (0) = 0 \\\\ x=1 \\implies y &= 0.25 \\times (3(1) - 1^3) = 0.25 \\times (3 - 1) = 0.5 \\\\ x=2 \\implies y &= 0.25 \\times (3(2) - 2^3) = 0.25 \\times (6 - 8) = -0.5 \\\\ x=3 \\implies y &= 0.25 \\times (3(3) - 3^3) = 0.25 \\times (9 - 27) = -4.5 \\end\\{aligned\\}\\)",
+        "workingOut": "\\(\\begin{aligned} x=-3 \\implies y &= 0.25 \\times (3(-3) - (-3)^3) = 0.25 \\times (-9 + 27) = 4.5 \\\\ x=-2 \\implies y &= 0.25 \\times (3(-2) - (-2)^3) = 0.25 \\times (-6 + 8) = 0.5 \\\\ x=-1 \\implies y &= 0.25 \\times (3(-1) - (-1)^3) = 0.25 \\times (-3 + 1) = -0.5 \\\\ x=0 \\implies y &= 0.25 \\times (0) = 0 \\\\ x=1 \\implies y &= 0.25 \\times (3(1) - 1^3) = 0.25 \\times (3 - 1) = 0.5 \\\\ x=2 \\implies y &= 0.25 \\times (3(2) - 2^3) = 0.25 \\times (6 - 8) = -0.5 \\\\ x=3 \\implies y &= 0.25 \\times (3(3) - 3^3) = 0.25 \\times (9 - 27) = -4.5 \\end{aligned}\\)",
         "graphData": null
       },
       {
@@ -1628,7 +1628,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Since it is a cubic polynomial, the domain and range are both unrestricted.",
-        "workingOut": "\\(\\text\\{Domain: all real \\} x, \\quad \\text\\{Range: all real \\} y\\)",
+        "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: all real } y\\)",
         "graphData": null
       }
     ]
@@ -1668,12 +1668,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "For part b, calculate \\( R(x) = \\sqrt{2x} \\) for each input.",
-        "workingOut": "\\(\\begin\\{aligned\\} R(0) &= \\sqrt\\{0\\} = 0 \\\\ R(0.5) &= \\sqrt\\{1\\} = 1 \\\\ R(1) &= \\sqrt\\{2\\} \\approx 1.4 \\\\ R(2) &= \\sqrt\\{4\\} = 2 \\\\ R(3) &= \\sqrt\\{6\\} \\approx 2.4 \\\\ R(4.5) &= \\sqrt\\{9\\} = 3 \\\\ R(8) &= \\sqrt\\{16\\} = 4 \\end\\{aligned\\}\\)",
+        "workingOut": "\\(\\begin{aligned} R(0) &= \\sqrt{0} = 0 \\\\ R(0.5) &= \\sqrt{1} = 1 \\\\ R(1) &= \\sqrt{2} \\approx 1.4 \\\\ R(2) &= \\sqrt{4} = 2 \\\\ R(3) &= \\sqrt{6} \\approx 2.4 \\\\ R(4.5) &= \\sqrt{9} = 3 \\\\ R(8) &= \\sqrt{16} = 4 \\end{aligned}\\)",
         "graphData": null
       },
       {
         "explanation": "For part c, plotting \\( y = \\sqrt{2x} \\) and squaring both sides gives \\( y^2 = 2x \\), which is a horizontal parabola.",
-        "workingOut": "\\(y = \\sqrt\\{2x\\} \\implies y^2 = 2x \\quad (y \\ge 0)\\)",
+        "workingOut": "\\(y = \\sqrt{2x} \\implies y^2 = 2x \\quad (y \\ge 0)\\)",
         "graphData": null
       }
     ],
@@ -1726,7 +1726,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "For part b, calculate \\( h(x) = \\frac{3}{x} \\) for each input value.",
-        "workingOut": "\\(\\begin\\{aligned\\} h(-6) &= -0.5, \\quad h(-3) = -1, \\quad h(-1.5) = -2, \\quad h(-1) = -3 \\\\ h(0) &\\rightarrow \\text\\{division by zero \\} \\implies \\text\\{undefined\\} \\\\ h(1) &= 3, \\quad h(1.5) = 2, \\quad h(3) = 1, \\quad h(6) = 0.5 \\end\\{aligned\\}\\)",
+        "workingOut": "\\(\\begin{aligned} h(-6) &= -0.5, \\quad h(-3) = -1, \\quad h(-1.5) = -2, \\quad h(-1) = -3 \\\\ h(0) &\\rightarrow \\text{division by zero } \\implies \\text{undefined} \\\\ h(1) &= 3, \\quad h(1.5) = 2, \\quad h(3) = 1, \\quad h(6) = 0.5 \\end{aligned}\\)",
         "graphData": null
       },
       {
@@ -1796,7 +1796,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "For part b, the total perimeter is \\( 24 \\text{ cm} \\). Thus, the sum of adjacent sides is half the perimeter.",
-        "workingOut": "\\(\\text\\{Adjacent side\\} = \\frac\\{24 - 2x\\}\\{2\\} = 12 - x\\)",
+        "workingOut": "\\(\\text{Adjacent side} = \\frac{24 - 2x}{2} = 12 - x\\)",
         "graphData": null
       },
       {
@@ -1806,7 +1806,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "For part d, physical dimensions must be positive, so both \\( x > 0 \\) and \\( 12 - x > 0 \\).",
-        "workingOut": "\\(x > 0 \\quad \\text\\{and\\} \\quad 12 - x > 0 \\implies 0 < x < 12\\)",
+        "workingOut": "\\(x > 0 \\quad \\text{and} \\quad 12 - x > 0 \\implies 0 < x < 12\\)",
         "graphData": null
       },
       {
@@ -1866,7 +1866,7 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Divide both sides by \\( x \\), noting that \\( x \\neq 0 \\).",
-        "workingOut": "\\(y = \\frac\\{6\\}\\{x\\} \\quad (x \\neq 0)\\)",
+        "workingOut": "\\(y = \\frac{6}{x} \\quad (x \\neq 0)\\)",
         "graphData": null
       },
       {
@@ -1897,7 +1897,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Divide by \\( x - 3 \\) to solve for \\( y \\).",
-        "workingOut": "\\(y = \\frac\\{4\\}\\{x - 3\\} \\quad (x \\neq 3)\\)",
+        "workingOut": "\\(y = \\frac{4}{x - 3} \\quad (x \\neq 3)\\)",
         "graphData": null
       },
       {
@@ -1923,7 +1923,7 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Subtract 3 from both sides of the equation.",
-        "workingOut": "\\(y = \\sqrt\\{16 - x^2\\} - 3\\)",
+        "workingOut": "\\(y = \\sqrt{16 - x^2} - 3\\)",
         "graphData": null
       },
       {
@@ -1954,7 +1954,7 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Consider the restrictions. The denominator cannot be zero, and the radicand must be non-negative.",
-        "workingOut": "\\(\\text\\{Radicand: \\} x + 3 \\ge 0 \\implies x \\ge -3 \\\\\n\\text\\{Denominator \\} \\neq 0 \\implies \\sqrt\\{x+3\\} \\neq 0 \\implies x \\neq -3\\)",
+        "workingOut": "\\(\\text{Radicand: } x + 3 \\ge 0 \\implies x \\ge -3 \\\\\n\\text{Denominator } \\neq 0 \\implies \\sqrt{x+3} \\neq 0 \\implies x \\neq -3\\)",
         "graphData": null
       },
       {
@@ -1980,7 +1980,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\((x - 3)(x + 3) \\neq 0 \\implies x \\neq 3 \\text\\{ and \\} x \\neq -3\\)",
+        "workingOut": "\\((x - 3)(x + 3) \\neq 0 \\implies x \\neq 3 \\text{ and } x \\neq -3\\)",
         "graphData": null
       }
     ]
@@ -2006,7 +2006,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Identify the values to exclude.",
-        "workingOut": "\\(x \\neq 0 \\text\\{ and \\} x \\neq -2\\)",
+        "workingOut": "\\(x \\neq 0 \\text{ and } x \\neq -2\\)",
         "graphData": null
       }
     ]
@@ -2032,7 +2032,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Solve the exclusions.",
-        "workingOut": "\\(x \\neq 2 \\text\\{ and \\} x \\neq -4 \\implies x \\neq 2, 4\\)",
+        "workingOut": "\\(x \\neq 2 \\text{ and } x \\neq -4 \\implies x \\neq 2, 4\\)",
         "graphData": null
       }
     ]
@@ -2058,7 +2058,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "For the product to be positive or zero, \\( x \\) must lie outside the roots \\( -3 \\) and \\( 3 \\).",
-        "workingOut": "\\(x \\le -3 \\quad \\text\\{or\\} \\quad x \\ge 3\\)",
+        "workingOut": "\\(x \\le -3 \\quad \\text{or} \\quad x \\ge 3\\)",
         "graphData": null
       }
     ]

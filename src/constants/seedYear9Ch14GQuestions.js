@@ -2061,7 +2061,7 @@ export const Y9_CH14G_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The lines \\( y = mx + 4 \\) and \\( y = nx - 2 \\) meet at a point where \\( x = 6 \\). Find \\( n \\ if \\( m + n = 5 \\).",
+    "question": "The lines \\( y = mx + 4 \\) and \\( y = nx - 2 \\) meet at a point where \\( x = 6 \\). Find \\( n \\) if \\( m + n = 5 \\).",
     "a": "3",
     "solution": "At \\( x = 6 \\):\n\\( 6m + 4 = 6n - 2 \\implies n - m = 1 \\).\nCombined with \\( n + m = 5 \\):\nAdd the equations: \\( 2n = 6 \\implies n = 3 \\).\nThus, \\( n = 3 \\).",
     "solutionSteps": [

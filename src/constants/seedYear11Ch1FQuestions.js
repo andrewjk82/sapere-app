@@ -59,12 +59,12 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve for x.",
-        "workingOut": "x = 3 \\\\text{ or } x = -1",
+        "workingOut": "x = 3 \\\text{ or } x = -1",
         "graphData": null
       },
       {
         "explanation": "Find y values.",
-        "workingOut": "y = 9 \\\\text{ or } y = 1",
+        "workingOut": "y = 9 \\\text{ or } y = 1",
         "graphData": null
       }
     ],
@@ -268,19 +268,19 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(-12 \\pm \\sqrt{26}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(-6 \\pm \\sqrt{26}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(6 \\pm \\sqrt{26}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(-12 \\pm \\sqrt{26}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Add $(b/2)^2 = 36$.",
     "solution": "\\(x^2 + 12x + 36 = 26 \\Rightarrow (x+6)^2 = 26 \\Rightarrow x = -6 \\pm \\sqrt{26}\\)",
@@ -292,7 +292,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\(x^2 + 12x + 36 = 26 \\Rightarrow (x+6)^2 = 26 \\Rightarrow x = -6 \\pm \\sqrt\\{26\\}\\)",
+        "workingOut": "\\(x^2 + 12x + 36 = 26 \\Rightarrow (x+6)^2 = 26 \\Rightarrow x = -6 \\pm \\sqrt{26}\\)",
         "graphData": null
       }
     ],
@@ -364,7 +364,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Answer.",
-        "workingOut": "\\\\text{The numbers are 4 and 7.}",
+        "workingOut": "\\\text{The numbers are 4 and 7.}",
         "graphData": null
       }
     ],
@@ -461,10 +461,10 @@ export const Y11_CH1F_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find the value(s) of \\\\( k \\\\) such that \\\\( x^2 + kx + 9 = 0 \\\\) has equal roots.",
     "options": [],
-    "answer": "k = \\\\pm 6",
+    "answer": "k = \\pm 6",
     "blanks": [],
-    "hint": "Equal roots means \\\\( \\\\Delta = b^2 - 4ac = 0 \\\\).",
-    "solution": "For equal roots, \\\\( \\\\Delta = 0 \\\\): \\\\( k^2 - 4(1)(9) = 0 \\\\Rightarrow k^2 = 36 \\\\Rightarrow k = \\\\pm 6 \\\\).",
+    "hint": "Equal roots means \\\\( \\Delta = b^2 - 4ac = 0 \\\\).",
+    "solution": "For equal roots, \\\\( \\Delta = 0 \\\\): \\\\( k^2 - 4(1)(9) = 0 \\\\Rightarrow k^2 = 36 \\\\Rightarrow k = \\pm 6 \\\\).",
     "solutionSteps": [
       {
         "explanation": "Set discriminant to zero.",
@@ -478,7 +478,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "k = \\\\pm 6",
+        "workingOut": "k = \\pm 6",
         "graphData": null
       }
     ],
@@ -695,7 +695,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = -3, y = -2 \\\\quad \\\\text{or} \\\\quad x = 2, y = 3",
+        "workingOut": "x = -3, y = -2 \\\\quad \\\text{or} \\\\quad x = 2, y = 3",
         "graphData": null
       }
     ],
@@ -759,16 +759,16 @@ export const Y11_CH1F_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A rectangle has area \\\\( 24 \\\\text{ cm}^2 \\\\) and perimeter \\\\( 22 \\\\text{ cm} \\\\). Find its dimensions.",
+    "question": "A rectangle has area \\\\( 24 \\\text{ cm}^2 \\\\) and perimeter \\\\( 22 \\\text{ cm} \\\\). Find its dimensions.",
     "options": [],
-    "answer": "3 cm \\\\times 8 cm",
+    "answer": "3 cm \\\times 8 cm",
     "blanks": [],
     "hint": "Set up two equations using area and perimeter.",
     "solution": "Let length = \\\\( l \\\\), width = \\\\( w \\\\). \\\\( lw = 24 \\\\), \\\\( 2l + 2w = 22 \\\\Rightarrow l + w = 11 \\\\). So \\\\( w = 11 - l \\\\), \\\\( l(11 - l) = 24 \\\\Rightarrow l^2 - 11l + 24 = 0 \\\\Rightarrow (l - 3)(l - 8) = 0 \\\\).",
     "solutionSteps": [
       {
         "explanation": "Set up equations.",
-        "workingOut": "lw = 24 \\\\quad \\\\text{and} \\\\quad l + w = 11",
+        "workingOut": "lw = 24 \\\\quad \\\text{and} \\\\quad l + w = 11",
         "graphData": null
       },
       {
@@ -788,12 +788,12 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "l = 3, w = 8 \\\\quad \\\\text{or} \\\\quad l = 8, w = 3",
+        "workingOut": "l = 3, w = 8 \\\\quad \\\text{or} \\\\quad l = 8, w = 3",
         "graphData": null
       },
       {
         "explanation": "Answer.",
-        "workingOut": "\\\\text{Dimensions: } 3 \\\\text{ cm} \\\\times 8 \\\\text{ cm}",
+        "workingOut": "\\\text{Dimensions: } 3 \\\text{ cm} \\\times 8 \\\text{ cm}",
         "graphData": null
       }
     ],
@@ -808,7 +808,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve \\(x^2 - 4x = 11\\) by completing the square.",
     "options": [
       {
-        "text": "\\(2 \\pm \\sqrt{15}\\)",
+        "text": "\\(2 \\pm \\sqrt{11}\\)",
         "imageUrl": ""
       },
       {
@@ -816,11 +816,11 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4 \\pm \\sqrt{15}\\)",
+        "text": "\\(2 \\pm \\sqrt{15}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(2 \\pm \\sqrt{11}\\)",
+        "text": "\\(4 \\pm \\sqrt{15}\\)",
         "imageUrl": ""
       }
     ],
@@ -836,7 +836,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\(x^2 - 4x + 4 = 15 \\Rightarrow (x-2)^2 = 15 \\Rightarrow x = 2 \\pm \\sqrt\\{15\\}\\)",
+        "workingOut": "\\(x^2 - 4x + 4 = 15 \\Rightarrow (x-2)^2 = 15 \\Rightarrow x = 2 \\pm \\sqrt{15}\\)",
         "graphData": null
       }
     ],
@@ -893,7 +893,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = 2 \\\\text{ or } x = 3",
+        "workingOut": "x = 2 \\\text{ or } x = 3",
         "graphData": null
       }
     ],
@@ -912,7 +912,7 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-6 \\pm \\sqrt{14}\\)",
+        "text": "\\(-3 \\pm \\sqrt{5}\\)",
         "imageUrl": ""
       },
       {
@@ -920,11 +920,11 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-3 \\pm \\sqrt{5}\\)",
+        "text": "\\(-6 \\pm \\sqrt{14}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Add $(b/2)^2 = 9$ to both sides.",
     "solution": "\\(x^2 + 6x + 9 = 14 \\Rightarrow (x+3)^2 = 14 \\Rightarrow x = -3 \\pm \\sqrt{14}\\)",
@@ -936,7 +936,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\(x^2 + 6x + 9 = 14 \\Rightarrow (x+3)^2 = 14 \\Rightarrow x = -3 \\pm \\sqrt\\{14\\}\\)",
+        "workingOut": "\\(x^2 + 6x + 9 = 14 \\Rightarrow (x+3)^2 = 14 \\Rightarrow x = -3 \\pm \\sqrt{14}\\)",
         "graphData": null
       }
     ],
@@ -957,7 +957,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find two numbers whose product is 12 and sum is 7: 3 and 4.",
-        "workingOut": "3 \\\\times 4 = 12, \\quad 3 + 4 = 7",
+        "workingOut": "3 \\\times 4 = 12, \\quad 3 + 4 = 7",
         "graphData": null
       },
       {
@@ -978,12 +978,12 @@ export const Y11_CH1F_QUESTIONS = [
     "options": [],
     "answer": "(3x + 1)(x - 4)",
     "blanks": [],
-    "hint": "Find two numbers that multiply to \\\\( 3 \\\\times (-4) = -12 \\\\) and add to -11.",
+    "hint": "Find two numbers that multiply to \\\\( 3 \\\times (-4) = -12 \\\\) and add to -11.",
     "solution": "\\\\( 3x^2 - 11x - 4 = (3x + 1)(x - 4) \\\\)",
     "solutionSteps": [
       {
         "explanation": "Find two numbers with product -12 and sum -11: -12 and 1.",
-        "workingOut": "-12 \\\\times 1 = -12, \\quad -12 + 1 = -11",
+        "workingOut": "-12 \\\times 1 = -12, \\quad -12 + 1 = -11",
         "graphData": null
       },
       {
@@ -1008,11 +1008,11 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve \\(x^2 - 8x + 4 = 0\\) by completing the square.",
     "options": [
       {
-        "text": "\\(4 \\pm 2\\sqrt{3}\\)",
+        "text": "\\(-4 \\pm 2\\sqrt{3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-4 \\pm 2\\sqrt{3}\\)",
+        "text": "\\(4 \\pm 2\\sqrt{3}\\)",
         "imageUrl": ""
       },
       {
@@ -1036,7 +1036,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\(x^2 - 8x + 16 = 12 \\Rightarrow (x-4)^2 = 12 \\Rightarrow x = 4 \\pm \\sqrt\\{12\\} = 4 \\pm 2\\sqrt\\{3\\}\\)",
+        "workingOut": "\\(x^2 - 8x + 16 = 12 \\Rightarrow (x-4)^2 = 12 \\Rightarrow x = 4 \\pm \\sqrt{12} = 4 \\pm 2\\sqrt{3}\\)",
         "graphData": null
       }
     ],
@@ -1082,8 +1082,8 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\\\( 2x^2 + 5x + 3 = (2x + 3)(x + 1) \\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find two numbers with product \\\\( 2 \\\\times 3 = 6 \\\\) and sum 5: 2 and 3.",
-        "workingOut": "2 \\\\times 3 = 6, \\quad 2 + 3 = 5",
+        "explanation": "Find two numbers with product \\\\( 2 \\\times 3 = 6 \\\\) and sum 5: 2 and 3.",
+        "workingOut": "2 \\\times 3 = 6, \\quad 2 + 3 = 5",
         "graphData": null
       },
       {
@@ -1171,7 +1171,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find factors of -14 that sum to -5: -7 and 2.",
-        "workingOut": "-7 \\\\times 2 = -14, \\quad -7 + 2 = -5",
+        "workingOut": "-7 \\\times 2 = -14, \\quad -7 + 2 = -5",
         "graphData": null
       },
       {
@@ -1252,10 +1252,10 @@ export const Y11_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "question": "Find the discriminant of \\\\( 2x^2 - 5x + 1 = 0 \\\\) and state the nature of the roots.",
     "options": [],
-    "answer": "\\\\Delta = 17; two distinct irrational roots",
+    "answer": "\\Delta = 17; two distinct irrational roots",
     "blanks": [],
-    "hint": "Use \\\\( \\\\Delta = b^2 - 4ac \\\\).",
-    "solution": "\\\\( \\\\Delta = (-5)^2 - 4(2)(1) = 25 - 8 = 17 > 0 \\\\), so two distinct real roots.",
+    "hint": "Use \\\\( \\Delta = b^2 - 4ac \\\\).",
+    "solution": "\\\\( \\Delta = (-5)^2 - 4(2)(1) = 25 - 8 = 17 > 0 \\\\), so two distinct real roots.",
     "solutionSteps": [
       {
         "explanation": "Identify coefficients.",
@@ -1264,12 +1264,12 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Calculate.",
-        "workingOut": "\\\\Delta = 25 - 8 = 17",
+        "workingOut": "\\Delta = 25 - 8 = 17",
         "graphData": null
       },
       {
         "explanation": "Interpret.",
-        "workingOut": "\\\\Delta > 0 \\\\text{ and not a perfect square, so two distinct irrational roots}",
+        "workingOut": "\\Delta > 0 \\\text{ and not a perfect square, so two distinct irrational roots}",
         "graphData": null
       }
     ],

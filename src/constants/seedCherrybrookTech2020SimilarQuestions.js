@@ -146,7 +146,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     source: 'Cherrybrook Tech 2020 Trial Q6',
     type: 'multiple_choice',
     difficulty: 'easy',
-    q: 'Which type of relation is shown below?\n\nSet $P = \\{a, b, c, d\\}$ maps to set $Q = \\{1, 2, 3\\}$ with: $a \\to 1$, $b \\to 2$, $c \\to 2$, $d \\to 3$.',
+    q: 'Which type of relation is shown below?\n\nSet $P = {a, b, c, d}$ maps to set $Q = {1, 2, 3}$ with: $a \\to 1$, $b \\to 2$, $c \\to 2$, $d \\to 3$.',
     a: 'Many-to-one',
     opts: [
       'One-to-one',

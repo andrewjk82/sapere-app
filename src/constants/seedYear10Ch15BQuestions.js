@@ -10,7 +10,7 @@ export const Y10_CH15B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List all the prime numbers up to 20.",
-        "workingOut": "\\text{Prime numbers} = \\{2, 3, 5, 7, 11, 13, 17, 19\\} \\implies 8 \\; \\text{numbers}"
+        "workingOut": "\\text{Prime numbers} = {2, 3, 5, 7, 11, 13, 17, 19} \\implies 8 \\; \\text{numbers}"
       },
       {
         "explanation": "Find the number of non-prime numbers by subtracting the count of primes from the total.",
@@ -58,7 +58,7 @@ export const Y10_CH15B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Count how many numbers up to 40 are divisible by 6.",
-        "workingOut": "\\text{Divisible by 6} = \\{6, 12, 18, 24, 30, 36\\} \\implies 6 \\; \\text{numbers}"
+        "workingOut": "\\text{Divisible by 6} = {6, 12, 18, 24, 30, 36} \\implies 6 \\; \\text{numbers}"
       },
       {
         "explanation": "Determine the count of numbers that are not divisible by 6.",
@@ -150,7 +150,7 @@ export const Y10_CH15B_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Identify and count all vowels (O, A, I, I) in 'PROBABILITY'.",
-            "workingOut": "\\text{Vowels} = \\{O, A, I, I\\} \\implies 4 \\; \\text{letters}"
+            "workingOut": "\\text{Vowels} = {O, A, I, I} \\implies 4 \\; \\text{letters}"
           },
           {
             "explanation": "Find probability.",
@@ -310,7 +310,7 @@ export const Y10_CH15B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify outcomes that are both odd and the number 5.",
-        "workingOut": "\\text{Favourable outcome} = \\{5\\} \\implies 1 \\; \\text{outcome}"
+        "workingOut": "\\text{Favourable outcome} = {5} \\implies 1 \\; \\text{outcome}"
       },
       {
         "explanation": "Calculate the probability.",
@@ -329,8 +329,8 @@ export const Y10_CH15B_QUESTIONS = [
     "a": "1/2",
     "solutionSteps": [
       {
-        "explanation": "Find the union of the set of odd numbers \\(\\{1, 3, 5\\}\\) and the set containing five \\(\\{5\\}\\).",
-        "workingOut": "\\text{Union set} = \\{1, 3, 5\\}"
+        "explanation": "Find the union of the set of odd numbers \\({1, 3, 5}\\) and the set containing five \\({5}\\).",
+        "workingOut": "\\text{Union set} = {1, 3, 5}"
       },
       {
         "explanation": "Count outcomes and find the probability.",
@@ -349,8 +349,8 @@ export const Y10_CH15B_QUESTIONS = [
     "a": "1/6",
     "solutionSteps": [
       {
-        "explanation": "Find the intersection of numbers greater than or equal to three \\(\\{3, 4, 5, 6\\}\\) and the number five \\(\\{5\\}\\).",
-        "workingOut": "\\text{Intersection} = \\{5\\}"
+        "explanation": "Find the intersection of numbers greater than or equal to three \\({3, 4, 5, 6}\\) and the number five \\({5}\\).",
+        "workingOut": "\\text{Intersection} = {5}"
       },
       {
         "explanation": "Compute probability.",
@@ -369,8 +369,8 @@ export const Y10_CH15B_QUESTIONS = [
     "a": "1/2",
     "solutionSteps": [
       {
-        "explanation": "Find the union of numbers greater than or equal to four \\(\\{4, 5, 6\\}\\) and five \\(\\{5\\}\\).",
-        "workingOut": "\\text{Union} = \\{4, 5, 6\\}"
+        "explanation": "Find the union of numbers greater than or equal to four \\({4, 5, 6}\\) and five \\({5}\\).",
+        "workingOut": "\\text{Union} = {4, 5, 6}"
       },
       {
         "explanation": "Determine probability.",
@@ -389,8 +389,8 @@ export const Y10_CH15B_QUESTIONS = [
     "a": "1/3",
     "solutionSteps": [
       {
-        "explanation": "Identify numbers that are odd \\(\\{1, 3, 5\\}\\) and greater than or equal to three \\(\\{3, 4, 5, 6\\}\\).",
-        "workingOut": "\\text{Intersection} = \\{3, 5\\}"
+        "explanation": "Identify numbers that are odd \\({1, 3, 5}\\) and greater than or equal to three \\({3, 4, 5, 6}\\).",
+        "workingOut": "\\text{Intersection} = {3, 5}"
       },
       {
         "explanation": "Calculate probability.",
@@ -409,8 +409,8 @@ export const Y10_CH15B_QUESTIONS = [
     "a": "2/3",
     "solutionSteps": [
       {
-        "explanation": "Identify numbers that are even \\(\\{2, 4, 6\\}\\) or greater than or equal to four \\(\\{4, 5, 6\\}\\).",
-        "workingOut": "\\text{Union} = \\{2, 4, 5, 6\\}"
+        "explanation": "Identify numbers that are even \\({2, 4, 6}\\) or greater than or equal to four \\({4, 5, 6}\\).",
+        "workingOut": "\\text{Union} = {2, 4, 5, 6}"
       },
       {
         "explanation": "Find the probability.",
@@ -1171,15 +1171,15 @@ export const Y10_CH15B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List the multiples of 3 up to 20.",
-        "workingOut": "\\text{Multiples of 3} = \\{3, 6, 9, 12, 15, 18\\} \\implies 6 \\; \\text{numbers}"
+        "workingOut": "\\text{Multiples of 3} = {3, 6, 9, 12, 15, 18} \\implies 6 \\; \\text{numbers}"
       },
       {
         "explanation": "List the multiples of 4 up to 20.",
-        "workingOut": "\\text{Multiples of 4} = \\{4, 8, 12, 16, 20\\} \\implies 5 \\; \\text{numbers}"
+        "workingOut": "\\text{Multiples of 4} = {4, 8, 12, 16, 20} \\implies 5 \\; \\text{numbers}"
       },
       {
         "explanation": "Identify the intersection: multiples of both 3 and 4 (multiples of 12).",
-        "workingOut": "\\text{Multiples of 12} = \\{12\\} \\implies 1 \\; \\text{number}"
+        "workingOut": "\\text{Multiples of 12} = {12} \\implies 1 \\; \\text{number}"
       },
       {
         "explanation": "Use the addition rule: \\(n(A \\cup B) = n(A) + n(B) - n(A \\cap B)\\).",

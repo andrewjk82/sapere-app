@@ -146,7 +146,7 @@ export const CTHS_2020_QUESTIONS = [
     source: 'Cherrybrook Tech 2020 Trial Q6',
     type: 'multiple_choice',
     difficulty: 'easy',
-    q: 'Which type of relation is shown below?\n\nSet $X = \\{1, 2, 3, 4\\}$ maps to set $Y = \\{D, B, C\\}$ with: $1 \\to D$, $2 \\to B$, $3 \\to B$, $4 \\to C$.',
+    q: 'Which type of relation is shown below?\n\nSet $X = {1, 2, 3, 4}$ maps to set $Y = {D, B, C}$ with: $1 \\to D$, $2 \\to B$, $3 \\to B$, $4 \\to C$.',
     a: 'Many-to-one',
     opts: [
       'One-to-one',
@@ -832,7 +832,7 @@ export const CTHS_2020_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     q: 'Max conducted a survey about age and weekly wage:\n\n| Age ($x$) | 18 | 45 | 28 | 15 | 32 | 68 |\n|---|---|---|---|---|---|---|\n| Wage (\\$/week) ($W$) | 715 | 2350 | 1530 | 438 | 1690 | 1320 |\n\n(a) Using your calculator, find (r) Pearson\'s correlation coefficient correct to 2 decimal places and describe the type and strength of correlation.\n\n(b) Using your calculator, find the equation of the least-squares regression line in the form $W = Bx + A$ where $A$ and $B$ are integers.\n\n(c) Use your equation to estimate the earnings of a 50 year-old worker.\n\n(d) Justify why the equation from part (b) cannot be used to make valid estimates for ages greater than 68 and less than 15 years.',
-    a: '(a) $r \\approx 0.53$, moderate positive correlation\n(b) $W = 18x + 706$\n(c) $\\$1606$\n(d) Extrapolation beyond the data range is unreliable.',
+    a: '(a) $r \\approx 0.53$, moderate positive correlation\n(b) $W = 18x + 706$\n(c) $1606\n(d) Extrapolation beyond the data range is unreliable.',
     opts: [],
     h: 'Enter data into calculator for (a) and (b). For (d): the regression model is only valid within the range of collected data.',
     s: '(a) $r \\approx 0.53$: moderate positive correlation. (b) $W = 18x + 706$. (c) $W = 18(50)+706 = \\$1606$. (d) The model is only reliable within the data range $[15, 68]$; extrapolating beyond this range may be inaccurate as the relationship may not hold.',
@@ -840,7 +840,7 @@ export const CTHS_2020_QUESTIONS = [
       { explanation: 'Part (a): Enter the data pairs into a calculator and compute the Pearson correlation coefficient.', workingOut: 'r \\approx 0.53 \\Rightarrow \\text{moderate positive correlation}' },
       { explanation: 'Part (b): Use the calculator\'s linear regression function to find the least-squares line.', workingOut: 'W = 18x + 706' },
       { explanation: 'Part (c): Substitute $x = 50$ into the regression equation.', workingOut: 'W = 18(50) + 706 = 900 + 706 = \\$1606' },
-      { explanation: 'Part (d): The equation is derived from data in the range $15 \\leq x \\leq 68$. Extrapolating beyond this range assumes the linear relationship continues, which may not be valid. For example, substituting $x=8$ gives $\\$850$ (unrealistic for an 8-year-old).', workingOut: '\\text{Valid only for } 15 \\leq x \\leq 68 \\text{ (interpolation)}' }
+      { explanation: 'Part (d): The equation is derived from data in the range $15 \\leq x \\leq 68$. Extrapolating beyond this range assumes the linear relationship continues, which may not be valid. For example, substituting $x=8$ gives $850 (unrealistic for an 8-year-old).', workingOut: '\\text{Valid only for } 15 \\leq x \\leq 68 \\text{ (interpolation)}' }
     ]
   },
 

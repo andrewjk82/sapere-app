@@ -30,7 +30,7 @@ export const Y8_CH16A_QUESTIONS = [
     "difficulty": "easy",
     "question": "What is the probability of choosing a prime number from the numbers 11, 12, 13, 14, 15, 16, 17, 18?",
     "a": "\\frac{3}{8}",
-    "solution": "1. The set of numbers is $\\{11, 12, 13, 14, 15, 16, 17, 18\\}$, which has a total of 8 numbers.\n2. The prime numbers in this set are 11, 13, and 17. There are 3 prime numbers in total.\n3. The probability is the number of prime numbers divided by the total count: $\\text{Probability} = \\frac{3}{8}$.",
+    "solution": "1. The set of numbers is ${11, 12, 13, 14, 15, 16, 17, 18}$, which has a total of 8 numbers.\n2. The prime numbers in this set are 11, 13, and 17. There are 3 prime numbers in total.\n3. The probability is the number of prime numbers divided by the total count: $\\text{Probability} = \\frac{3}{8}$.",
     "t": "An introduction to probability",
     "hint": "List the prime numbers in the given set and divide by the total number of elements.",
     "solutionSteps": [
@@ -78,7 +78,7 @@ export const Y8_CH16A_QUESTIONS = [
     "id": "y8-16a-q4",
     "type": "short_answer",
     "difficulty": "easy",
-    "question": "What is the probability of choosing an integer that is exactly divisible by 3 from the set $\\{4, 5, 6, 7, 8, 9, 10, 11, 12, 13\\}$?",
+    "question": "What is the probability of choosing an integer that is exactly divisible by 3 from the set ${4, 5, 6, 7, 8, 9, 10, 11, 12, 13}$?",
     "a": "\\frac{3}{10}",
     "solution": "1. The set of integers has 10 elements.\n2. Let's find which integers are divisible by 3: 6, 9, and 12. There are 3 integers divisible by 3.\n3. The probability is: $\\text{Probability} = \\frac{3}{10}$.",
     "t": "An introduction to probability",
@@ -155,7 +155,7 @@ export const Y8_CH16A_QUESTIONS = [
     "difficulty": "easy",
     "question": "A number is chosen from the first 25 positive whole numbers. What is the probability that it is exactly divisible by both 2 and 5?",
     "a": "\\frac{2}{25}",
-    "solution": "1. The first 25 positive whole numbers are $\\{1, 2, 3, \\dots, 25\\}$.\n2. A number divisible by both 2 and 5 must be divisible by $2 \\times 5 = 10$.\n3. The multiples of 10 in this set are 10 and 20. There are 2 numbers in total.\n4. Probability = $\\frac{2}{25}$.",
+    "solution": "1. The first 25 positive whole numbers are ${1, 2, 3, \\dots, 25}$.\n2. A number divisible by both 2 and 5 must be divisible by $2 \\times 5 = 10$.\n3. The multiples of 10 in this set are 10 and 20. There are 2 numbers in total.\n4. Probability = $\\frac{2}{25}$.",
     "t": "An introduction to probability",
     "hint": "A number divisible by both 2 and 5 must be a multiple of 10. List the multiples of 10 up to 25.",
     "solutionSteps": [
@@ -165,7 +165,7 @@ export const Y8_CH16A_QUESTIONS = [
       },
       {
         "explanation": "Find multiples of 10 in this range.",
-        "workingOut": "\\text{Multiples of 10} = \\{10, 20\\} \\implies 2 \\text{ outcomes}"
+        "workingOut": "\\text{Multiples of 10} = {10, 20} \\implies 2 \\text{ outcomes}"
       },
       {
         "explanation": "Compute the probability.",
@@ -334,7 +334,7 @@ export const Y8_CH16A_QUESTIONS = [
     "difficulty": "medium",
     "question": "The numbers on a spinner wheel go from 0 to 24. The spinner is spun. What is the probability that when it stops it will be pointing to:\n\na) an even number?\nb) an odd number?\nc) a number less than 8, excluding zero?",
     "a": "See sub-questions for individual answers.",
-    "solution": "1. The numbers on the spinner are $\\{0, 1, 2, \\dots, 24\\}$, so there are 25 outcomes in total.\na) Even numbers (from 1 to 24) are $\\{2, 4, 6, \\dots, 24\\}$ (12 numbers). Note that zero is excluded from the standard set of positive even spinner numbers. Probability = $\\frac{12}{25}$.\nb) Odd numbers are $\\{1, 3, 5, \\dots, 23\\}$ (12 numbers). Probability = $\\frac{12}{25}$.\nc) Numbers less than 8, excluding zero: $\\{1, 2, 3, 4, 5, 6, 7\\}$ (7 numbers). Probability = $\\frac{7}{25}$.",
+    "solution": "1. The numbers on the spinner are ${0, 1, 2, \\dots, 24}$, so there are 25 outcomes in total.\na) Even numbers (from 1 to 24) are ${2, 4, 6, \\dots, 24}$ (12 numbers). Note that zero is excluded from the standard set of positive even spinner numbers. Probability = $\\frac{12}{25}$.\nb) Odd numbers are ${1, 3, 5, \\dots, 23}$ (12 numbers). Probability = $\\frac{12}{25}$.\nc) Numbers less than 8, excluding zero: ${1, 2, 3, 4, 5, 6, 7}$ (7 numbers). Probability = $\\frac{7}{25}$.",
     "t": "An introduction to probability",
     "hint": "There are 25 total possible numbers (0 to 24). Determine how many of them satisfy each condition and put that over 25.",
     "solutionSteps": [
@@ -383,7 +383,7 @@ export const Y8_CH16A_QUESTIONS = [
     "difficulty": "medium",
     "question": "A number is chosen at random from the first 16 positive whole numbers. What is the probability that it is not a prime number?",
     "a": "\\frac{5}{8}",
-    "solution": "1. The first 16 positive whole numbers are $\\{1, 2, 3, \\dots, 16\\}$. There are 16 numbers in total.\n2. The prime numbers in this set are 2, 3, 5, 7, 11, 13 (6 prime numbers).\n3. The numbers that are NOT prime are the remaining numbers: $\\{1, 4, 6, 8, 9, 10, 12, 14, 15, 16\\}$ (10 numbers). Note that 1 is not a prime number.\n4. The probability is $\\frac{10}{16} = \\frac{5}{8}$.",
+    "solution": "1. The first 16 positive whole numbers are ${1, 2, 3, \\dots, 16}$. There are 16 numbers in total.\n2. The prime numbers in this set are 2, 3, 5, 7, 11, 13 (6 prime numbers).\n3. The numbers that are NOT prime are the remaining numbers: ${1, 4, 6, 8, 9, 10, 12, 14, 15, 16}$ (10 numbers). Note that 1 is not a prime number.\n4. The probability is $\\frac{10}{16} = \\frac{5}{8}$.",
     "t": "An introduction to probability",
     "hint": "List the prime numbers up to 16, subtract their count from 16 to find the non-prime count, and simplify the fraction.",
     "solutionSteps": [
@@ -393,7 +393,7 @@ export const Y8_CH16A_QUESTIONS = [
       },
       {
         "explanation": "Identify prime numbers up to 16.",
-        "workingOut": "\\text{Primes} = \\{2, 3, 5, 7, 11, 13\\} \\implies 6 \\text{ numbers}"
+        "workingOut": "\\text{Primes} = {2, 3, 5, 7, 11, 13} \\implies 6 \\text{ numbers}"
       },
       {
         "explanation": "Calculate non-prime numbers.",
@@ -487,13 +487,13 @@ export const Y8_CH16A_QUESTIONS = [
     "difficulty": "medium",
     "question": "A number is chosen at random from the first 15 positive whole numbers. What is the probability that it is not exactly divisible by 5?",
     "a": "\\frac{4}{5}",
-    "solution": "1. The first 15 positive whole numbers are $\\{1, 2, 3, \\dots, 15\\}$ (15 numbers in total).\n2. The numbers divisible by 5 are 5, 10, and 15 (3 numbers).\n3. The numbers that are NOT divisible by 5 are $15 - 3 = 12$ numbers.\n4. The probability is $\\frac{12}{15}$, which simplifies to $\\frac{4}{5}$.",
+    "solution": "1. The first 15 positive whole numbers are ${1, 2, 3, \\dots, 15}$ (15 numbers in total).\n2. The numbers divisible by 5 are 5, 10, and 15 (3 numbers).\n3. The numbers that are NOT divisible by 5 are $15 - 3 = 12$ numbers.\n4. The probability is $\\frac{12}{15}$, which simplifies to $\\frac{4}{5}$.",
     "t": "An introduction to probability",
     "hint": "Identify the multiples of 5 up to 15, subtract their count from 15, and simplify the fraction.",
     "solutionSteps": [
       {
         "explanation": "Count total integers and multiples of 5.",
-        "workingOut": "\\text{Total} = 15, \\quad \\text{Multiples of 5} = \\{5, 10, 15\\} \\implies 3"
+        "workingOut": "\\text{Total} = 15, \\quad \\text{Multiples of 5} = {5, 10, 15} \\implies 3"
       },
       {
         "explanation": "Find numbers not divisible by 5.",
@@ -562,7 +562,7 @@ export const Y8_CH16A_QUESTIONS = [
     "difficulty": "medium",
     "question": "If you roll an ordinary six-sided die, what is the probability that you will not get a score of 3 or more?",
     "a": "\\frac{1}{3}",
-    "solution": "1. A six-sided die has 6 possible outcomes: $\\{1, 2, 3, 4, 5, 6\\}$.\n2. The outcomes that are '3 or more' are $\\{3, 4, 5, 6\\}$ (4 outcomes).\n3. The outcomes that are NOT '3 or more' (which means less than 3) are $\\{1, 2\\}$ (2 outcomes).\n4. The probability is $\\frac{2}{6} = \\frac{1}{3}$.",
+    "solution": "1. A six-sided die has 6 possible outcomes: ${1, 2, 3, 4, 5, 6}$.\n2. The outcomes that are '3 or more' are ${3, 4, 5, 6}$ (4 outcomes).\n3. The outcomes that are NOT '3 or more' (which means less than 3) are ${1, 2}$ (2 outcomes).\n4. The probability is $\\frac{2}{6} = \\frac{1}{3}$.",
     "t": "An introduction to probability",
     "hint": "List the outcomes on a die that are less than 3, and write that count over 6.",
     "solutionSteps": [
@@ -612,7 +612,7 @@ export const Y8_CH16A_QUESTIONS = [
     "difficulty": "hard",
     "question": "When a standard deck of 52 playing cards is cut, what is the probability that the card showing is not a number card from 2 to 10 (inclusive)?",
     "a": "\\frac{4}{13}",
-    "solution": "1. A standard deck contains 52 cards.\n2. The number cards from 2 to 10 in each suit are $\\{2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ (9 cards per suit).\n3. For all 4 suits, the total number cards is $9 \\times 4 = 36$.\n4. The cards that are NOT number cards from 2 to 10 are the remaining cards (Aces, Jacks, Queens, Kings): $52 - 36 = 16$ cards.\n5. The probability of cutting one of these 16 cards is $\\frac{16}{52} = \\frac{4}{13}$.",
+    "solution": "1. A standard deck contains 52 cards.\n2. The number cards from 2 to 10 in each suit are ${2, 3, 4, 5, 6, 7, 8, 9, 10}$ (9 cards per suit).\n3. For all 4 suits, the total number cards is $9 \\times 4 = 36$.\n4. The cards that are NOT number cards from 2 to 10 are the remaining cards (Aces, Jacks, Queens, Kings): $52 - 36 = 16$ cards.\n5. The probability of cutting one of these 16 cards is $\\frac{16}{52} = \\frac{4}{13}$.",
     "t": "An introduction to probability",
     "hint": "Count how many cards in the deck are NOT number cards from 2 to 10 (Aces, Jacks, Queens, Kings), and simplify the fraction over 52.",
     "solutionSteps": [
@@ -873,7 +873,7 @@ export const Y8_CH16A_QUESTIONS = [
     "difficulty": "hard",
     "question": "A whole number is chosen at random from the first 50 positive whole numbers. What is the probability that:\n\na) it is divisible by 5?\nb) it is divisible by 5 and 3?\nc) it is divisible by 5 but not by 3?\nd) it is even and divisible by 5?",
     "a": "See sub-questions for individual answers.",
-    "solution": "1. The first 50 positive whole numbers contain 50 total elements.\na) Divisible by 5: $\\{5, 10, 15, 20, 25, 30, 35, 40, 45, 50\\}$ (10 numbers). Probability = $\\frac{10}{50} = \\frac{1}{5}$.\nb) Divisible by 5 and 3 (which means divisible by 15): $\\{15, 30, 45\\}$ (3 numbers). Probability = $\\frac{3}{50}$.\nc) Divisible by 5 but not 3: multiples of 5 excluding multiples of 15, which are $\\{5, 10, 20, 25, 35, 40, 50\\}$ (7 numbers). Probability = $\\frac{7}{50}$.\nd) Even and divisible by 5 (which means divisible by 10): $\\{10, 20, 30, 40, 50\\}$ (5 numbers). Probability = $\\frac{5}{50} = \\frac{1}{10}$.",
+    "solution": "1. The first 50 positive whole numbers contain 50 total elements.\na) Divisible by 5: ${5, 10, 15, 20, 25, 30, 35, 40, 45, 50}$ (10 numbers). Probability = $\\frac{10}{50} = \\frac{1}{5}$.\nb) Divisible by 5 and 3 (which means divisible by 15): ${15, 30, 45}$ (3 numbers). Probability = $\\frac{3}{50}$.\nc) Divisible by 5 but not 3: multiples of 5 excluding multiples of 15, which are ${5, 10, 20, 25, 35, 40, 50}$ (7 numbers). Probability = $\\frac{7}{50}$.\nd) Even and divisible by 5 (which means divisible by 10): ${10, 20, 30, 40, 50}$ (5 numbers). Probability = $\\frac{5}{50} = \\frac{1}{10}$.",
     "t": "An introduction to probability",
     "hint": "Analyze divisibility by identifying multiples of 5, 15, and 10 within the first 50 numbers.",
     "solutionSteps": [

@@ -1074,15 +1074,15 @@ export const DANEBANK_2020_QUESTIONS = [
     source: 'Danebank 2020 Trial Q34(a)',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Using the future-value table (the factor for $n = 6$ periods at $2\\%$ is $6.3081$), an annuity has contributions of $\\$1200$ at the end of each half-year for $3$ years at $4\\%$ p.a. compounding half-yearly. Calculate the final amount immediately after the last contribution.',
-    a: '$\\$7569.72$',
+    q: 'Using the future-value table (the factor for $n = 6$ periods at $2\\%$ is $6.3081$), an annuity has contributions of $1200 at the end of each half-year for $3$ years at $4\\%$ p.a. compounding half-yearly. Calculate the final amount immediately after the last contribution.',
+    a: '$7569.72',
     opts: [],
     h: 'Per period: rate $= 4\\% \\div 2 = 2\\%$, number of periods $= 3 \\times 2 = 6$. Multiply the contribution by the table factor.',
     s: 'There are $n = 3 \\times 2 = 6$ half-yearly periods at $r = 4\\% \\div 2 = 2\\%$ per period. The future-value factor is $6.3081$, so $FV = 1200 \\times 6.3081 = \\$7569.72$.',
     solutionSteps: [
       { explanation: 'Convert the annual terms to per-period terms: the half-yearly rate is $4\\% \\div 2 = 2\\%$, and over $3$ years there are $3 \\times 2 = 6$ compounding periods.', workingOut: 'r = 2\\%, \\quad n = 6' },
       { explanation: 'Look up the future-value interest factor for $n = 6$ at $2\\%$ from the table.', workingOut: '\\text{factor} = 6.3081' },
-      { explanation: 'Multiply the regular contribution by the factor.', workingOut: 'FV = 1200 \\times 6.3081 = \\$7569.72' }
+      { explanation: 'Multiply the regular contribution by the factor.', workingOut: 'FV = 1200 \\times 6.3081 = $7569.72' }
     ]
   },
 
@@ -1094,8 +1094,8 @@ export const DANEBANK_2020_QUESTIONS = [
     source: 'Danebank 2020 Trial Q34(b)',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Calculate the single lump sum that would need to be invested at the start to reach the same final amount ($\\$7569.72$) at the end of $3$ years at $4\\%$ p.a. compounding half-yearly.',
-    a: '$\\$6721.69$',
+    q: 'Calculate the single lump sum that would need to be invested at the start to reach the same final amount ($7569.72) at the end of $3$ years at $4\\%$ p.a. compounding half-yearly.',
+    a: '$6721.69',
     opts: [],
     h: 'Use $A = P(1+r)^n$ with $A = 7569.72$, $r = 0.02$, $n = 6$, and solve for $P$.',
     s: 'Using $A = P(1+r)^n$ with $A = 7569.72$, $r = 0.02$, $n = 6$: $7569.72 = P(1.02)^6$, so $P = \\frac{7569.72}{(1.02)^6} = \\$6721.69$.',
@@ -1103,7 +1103,7 @@ export const DANEBANK_2020_QUESTIONS = [
       { explanation: 'Apply the compound interest formula for a single lump sum, with the same per-period rate and number of periods.', workingOut: 'A = P(1 + r)^n' },
       { explanation: 'Substitute the target amount, $r = 0.02$ and $n = 6$.', workingOut: '7569.72 = P(1.02)^6' },
       { explanation: 'Solve for $P$ by dividing.', workingOut: 'P = \\frac{7569.72}{(1.02)^6}' },
-      { explanation: 'Evaluate to the nearest cent.', workingOut: 'P = \\$6721.69' }
+      { explanation: 'Evaluate to the nearest cent.', workingOut: 'P = $6721.69' }
     ]
   },
 
@@ -1138,7 +1138,7 @@ export const DANEBANK_2020_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     q: 'At time $t$ years after purchase the value of a car is $V = 25\\,000\\,e^{-0.5t}$. Find the loss in value of the car during the third year.',
-    a: '$\\$3618.73$',
+    a: '$3618.73',
     opts: [],
     h: 'The third year runs from $t = 2$ to $t = 3$; the loss is $V(2) - V(3)$.',
     s: 'Loss $= V(2) - V(3) = 25\\,000e^{-1} - 25\\,000e^{-1.5} = 9196.99 - 5578.25 = \\$3618.73$.',
@@ -1146,7 +1146,7 @@ export const DANEBANK_2020_QUESTIONS = [
       { explanation: 'The third year spans from $t = 2$ to $t = 3$. The loss in value is the value at the start minus the value at the end.', workingOut: '\\text{Loss} = V(2) - V(3)' },
       { explanation: 'Evaluate the value at $t = 2$.', workingOut: 'V(2) = 25\\,000e^{-0.5(2)} = 25\\,000e^{-1}' },
       { explanation: 'Evaluate the value at $t = 3$.', workingOut: 'V(3) = 25\\,000e^{-0.5(3)} = 25\\,000e^{-1.5}' },
-      { explanation: 'Subtract to find the loss.', workingOut: '\\text{Loss} = 25\\,000(e^{-1} - e^{-1.5}) \\approx \\$3618.73' }
+      { explanation: 'Subtract to find the loss.', workingOut: '\\text{Loss} = 25\\,000(e^{-1} - e^{-1.5}) \\approx $3618.73' }
     ]
   },
 
@@ -1158,14 +1158,14 @@ export const DANEBANK_2020_QUESTIONS = [
     source: 'Danebank 2020 Trial Q36(b)',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'For $V = 25\\,000\\,e^{-0.5t}$, find the year in which the car is losing value at a rate of $\\$100$ per year.',
+    q: 'For $V = 25\\,000\\,e^{-0.5t}$, find the year in which the car is losing value at a rate of $100 per year.',
     a: 'During the $10^{\\text{th}}$ year ($t \\approx 9.66$)',
     opts: [],
     h: 'The rate of change is $\\frac{dV}{dt}$; set it equal to $-100$ (losing value) and solve for $t$.',
     s: '$\\frac{dV}{dt} = -12\\,500e^{-0.5t}$. Set $\\frac{dV}{dt} = -100$: $e^{-0.5t} = \\frac{100}{12\\,500} = 0.008$, so $-0.5t = \\ln 0.008$, giving $t \\approx 9.66$. This is during the $10^{\\text{th}}$ year.',
     solutionSteps: [
       { explanation: 'Differentiate $V$ with respect to $t$ to get the rate of change of value.', workingOut: '\\frac{dV}{dt} = 25\\,000 \\times (-0.5)e^{-0.5t} = -12\\,500e^{-0.5t}' },
-      { explanation: 'Losing value at $\\$100$ per year means the rate is $-100$. Set up the equation.', workingOut: '-100 = -12\\,500e^{-0.5t}' },
+      { explanation: 'Losing value at $100 per year means the rate is $-100$. Set up the equation.', workingOut: '-100 = -12\\,500e^{-0.5t}' },
       { explanation: 'Divide both sides by $-12\\,500$.', workingOut: 'e^{-0.5t} = \\frac{100}{12\\,500} = 0.008' },
       { explanation: 'Take natural logarithms of both sides.', workingOut: '-0.5t = \\ln 0.008' },
       { explanation: 'Solve for $t$.', workingOut: 't = \\frac{\\ln 0.008}{-0.5} \\approx 9.66' },
@@ -1181,7 +1181,7 @@ export const DANEBANK_2020_QUESTIONS = [
     source: 'Danebank 2020 Trial Q37',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'Ozzie retires with $\\$600\\,000$ earning $3\\%$ p.a. compounded monthly. He withdraws $\\$4000$ at the end of each month, and the amount after the $n^{\\text{th}}$ withdrawal is $A_n = 600\\,000(1.0025)^n - 4000\\{1 + 1.0025 + \\cdots + (1.0025)^{n-1}\\}$. Find, to the nearest month, the time for the fund to halve.',
+    q: 'Ozzie retires with $600,000 earning $3\\%$ p.a. compounded monthly. He withdraws $4000 at the end of each month, and the amount after the $n^{\\text{th}}$ withdrawal is $A_n = 600\\,000(1.0025)^n - 4000{1 + 1.0025 + \\cdots + (1.0025)^{n-1}}$. Find, to the nearest month, the time for the fund to halve.',
     a: '$n \\approx 105$ months ($\\approx 8$ years $9$ months)',
     opts: [],
     h: 'Sum the geometric bracket, set $A_n = 300\\,000$, and solve for $n$ using logarithms.',

@@ -326,7 +326,7 @@ export const Y12A_CH6F_QUESTIONS = [
           1.2,
           -0.2
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.15, -0.05], 'x', {anchorX: 'right', anchorY: 'top'});\nboard.create('text', [-0.05, 1.15], 'y', {anchorX: 'right', anchorY: 'top'});\nvar c1 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, 0, Math.PI/3], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(x);}, 0, Math.PI/3], {strokeColor: 'black'});\nboard.create('inequality', [c1], {inverse: true, fillColor: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/3, -0.05], '\\\\(\\\\frac{\\\\pi}{3}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.15, -0.05], 'x', {anchorX: 'right', anchorY: 'top'});\nboard.create('text', [-0.05, 1.15], 'y', {anchorX: 'right', anchorY: 'top'});\nvar c1 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, 0, Math.PI/3], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(x);}, 0, Math.PI/3], {strokeColor: 'black'});\nboard.create('inequality', [c1], {inverse: true, fillColor: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/3, -0.05], '\\\\(\\\frac{\\\pi}{3}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -351,7 +351,7 @@ export const Y12A_CH6F_QUESTIONS = [
           1.8,
           -0.5
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.8, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar c1 = board.create('functiongraph', [function(x){return Math.cos(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.05], '\\\\(\\\\frac{\\\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.05], '\\\\(\\\\frac{\\\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.8, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar c1 = board.create('functiongraph', [function(x){return Math.cos(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.05], '\\\\(\\\frac{\\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.05], '\\\\(\\\frac{\\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -391,7 +391,7 @@ export const Y12A_CH6F_QUESTIONS = [
           2,
           -0.5
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 3]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return Math.cos(x)/Math.sin(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.1], '\\\\(\\\\frac{\\\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.1], '\\\\(\\\\frac{\\\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 3]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return Math.cos(x)/Math.sin(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.1], '\\\\(\\\frac{\\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.1], '\\\\(\\\frac{\\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
       }
     }
   }

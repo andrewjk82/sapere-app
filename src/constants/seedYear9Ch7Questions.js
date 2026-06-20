@@ -1066,7 +1066,7 @@ export const Y9_CH7A_QUESTIONS = [
     "id": "y9-7a-q3b-gamma",
     "type": "short_answer",
     "difficulty": "medium",
-    "question": "Find the angle marked with the pronumeral $\\γ$, giving reasons.",
+    "question": "Find the angle marked with the pronumeral $\\gamma$, giving reasons.",
     "a": "75^\\circ",
     "solution": "Corresponding angles are equal.",
     "t": "Review of angles",
