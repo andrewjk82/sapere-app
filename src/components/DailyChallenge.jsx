@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   X, Flag, ChevronLeft, ChevronRight,
-  Trophy, AlertTriangle, Check, Lightbulb,
+  Trophy, AlertTriangle, Check, Lightbulb, MessageSquare,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
@@ -1683,6 +1683,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                         </div>
                       )}
                       
+                      {result?.teacherFeedback && (
+                        <div style={{ marginTop: '16px', padding: '16px', borderRadius: '12px', background: result?.correct ? '#f0fdf4' : '#fef2f2', border: `1px solid ${result?.correct ? '#bbf7d0' : '#fecaca'}` }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em', color: result?.correct ? '#166534' : '#991b1b' }}>
+                            <MessageSquare size={14} /> Teacher Feedback
+                          </div>
+                          <p style={{ margin: 0, fontSize: '0.92rem', color: result?.correct ? '#166534' : '#7f1d1d', lineHeight: 1.6 }}>{result.teacherFeedback}</p>
+                        </div>
+                      )}
+
                       {qData.solution && (
                         <div style={{ marginTop: '16px', padding: '16px', borderRadius: '12px', background: '#e0e7ff', color: '#4338ca', fontSize: '0.9rem', fontWeight: 600 }}>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>

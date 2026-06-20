@@ -594,7 +594,8 @@ const ReportsAdmin = () => {
     if (processingId) return;
     try {
       setProcessingId(item.id);
-      await gradeSubmission(item, approved);
+      const feedback = item.aiAssessment?.feedback || null;
+      await gradeSubmission(item, approved, feedback);
     } catch (err) {
       console.error('Error grading submission:', err);
       alert(`Failed to update grade: ${err.message || err}`);

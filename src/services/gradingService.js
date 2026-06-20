@@ -23,7 +23,7 @@ const resolveStatId = (item) => {
  * (correct=false on rejection) so it stops showing as "Teacher marking".
  * Score / XP are untouched.
  */
-const finalizeStatAnswer = async (item, correct) => {
+const finalizeStatAnswer = async (item, correct, feedback = null) => {
   const colName = (item.challengeType === 'calc') ? 'calc_stats' : 'daily_stats';
   const safeStatId = String(resolveStatId(item)).replace(/\//g, '-');
 
@@ -45,6 +45,7 @@ const finalizeStatAnswer = async (item, correct) => {
     correct,
     isPending: false,
     gradedAt: new Date().toISOString(),
+    ...(feedback ? { teacherFeedback: feedback } : {}),
   };
   await updateDoc(statRef, { answerResults: updatedResults });
 };
@@ -64,7 +65,7 @@ const finalizeStatAnswer = async (item, correct) => {
  * @param {boolean} approved
  * @returns {{ xpAwarded: number }}
  */
-export const gradeSubmission = async (item, approved) => {
+export const gradeSubmission = async (item, approved, feedback = null) => {
   if (!item || !item.id) {
     throw new Error("Invalid grading item: missing document ID");
   }
@@ -89,7 +90,7 @@ export const gradeSubmission = async (item, approved) => {
         }),
       }).catch(() => {});
     } else {
-      await finalizeStatAnswer(item, false).catch(() => {});
+      await finalizeStatAnswer(item, false, feedback).catch(() => {});
     }
     await deleteDoc(doc(db, 'grading_queue', item.id));
     return { xpAwarded: 0 };
@@ -181,6 +182,7 @@ export const gradeSubmission = async (item, approved) => {
       updatedResults[qIndex].correct = true;
       updatedResults[qIndex].isPending = false;
       updatedResults[qIndex].selectedAnswer = 'Approved';
+      if (feedback) updatedResults[qIndex].teacherFeedback = feedback;
     }
     await updateDoc(statRef, {
       score: increment(1),
