@@ -1433,6 +1433,11 @@ const StudentDetail = ({ studentId, onBack }) => {
         );
       }
       const statRef = doc(db, activeStudentCollection, activeStudentId, statCollection, stat.id);
+      // Read the xpEarned from the stat doc BEFORE deleting so we can deduct it precisely
+      // instead of wiping the whole totalXP with a full recalculation (which would lose
+      // Secret Note XP and manual bonus XP that live only on the user doc).
+      const statSnap = await getDoc(statRef);
+      const statXpEarned = Number(statSnap.data()?.xpEarned) || 0;
       await deleteDoc(statRef);
       // Also delete from users/{registeredUid} if student used a different path
       if (syncUid !== activeStudentId) {
@@ -1483,9 +1488,25 @@ const StudentDetail = ({ studentId, onBack }) => {
         }),
       }).catch((err) => console.warn("Challenge reset notification failed:", err));
 
-      const totals = await recalculateStudentTotals(activeStudentCollection, { allowDecrease: true });
+      // Deduct only the XP from the deleted stat — do NOT full-recalculate with
+      // allowDecrease:true, which would wipe Secret Note XP and manual bonus XP
+      // that live only on the user doc (not in stat sub-docs).
+      let finalXP;
+      if (statXpEarned > 0) {
+        const userDocRef = doc(db, activeStudentCollection, activeStudentId);
+        const userSnap = await getDoc(userDocRef);
+        const currentXP = Number(userSnap.data()?.totalXP) || 0;
+        finalXP = Math.max(0, currentXP - statXpEarned);
+        await setDoc(userDocRef, { totalXP: finalXP }, { merge: true });
+        // Keep leaderboard in sync
+        const totals = await recalculateStudentTotals(activeStudentCollection, { allowDecrease: false });
+        finalXP = totals.totalXP;
+      } else {
+        const totals = await recalculateStudentTotals(activeStudentCollection, { allowDecrease: false });
+        finalXP = totals.totalXP;
+      }
       showToast(
-        `Challenge reset. XP recalculated to ${totals.totalXP}. Removed ${deletedWorkingOutCount} saved working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,
+        `Challenge reset. XP adjusted to ${finalXP}. Removed ${deletedWorkingOutCount} working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,
         "success",
       );
     } catch (err) {
