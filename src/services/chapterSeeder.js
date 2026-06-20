@@ -395,6 +395,22 @@ export const autoSyncSeedsIfChanged = async () => {
 
     for (const entry of changedEntries) {
       try {
+        // Downgrade guard: if Firestore already holds MORE seed questions than
+        // the local file, the local file is almost certainly an older (stale)
+        // version — a reversion would silently delete questions. Skip the topic
+        // and surface a warning instead of overwriting.
+        const topicIndexSnap = await getDoc(doc(db, 'question_topic_index', entry.topicId));
+        if (topicIndexSnap.exists()) {
+          const firestoreCount = (topicIndexSnap.data().ids || []).length;
+          const localCount = Array.isArray(entry.seed) ? entry.seed.length : 0;
+          if (firestoreCount > localCount) {
+            const msg = `local seed (${localCount}) < Firestore (${firestoreCount}) — skipped to prevent downgrade`;
+            console.warn(`[autoSyncSeeds] [${entry.topicId}] SKIP: ${msg}`);
+            failed.push({ topicId: entry.topicId, label: entry.label || entry.topicId, error: msg });
+            continue;
+          }
+        }
+
         const res = await seedChapterQuestions(entry, storedQHashes);
         const skipNote = res.skipped ? ` (${res.skipped} skipped bad LaTeX)` : '';
         console.info(`  [${entry.topicId}] +${res.added} new / ~${res.updated} updated / -${res.removed} removed${skipNote}`);
