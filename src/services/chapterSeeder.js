@@ -66,9 +66,10 @@ const perQuestionHashes = (seed) => {
 
 const SEED_HASHES_REF = () => doc(db, 'sync_meta', 'seed_hashes');
 
-// Session guard: auto-sync runs at most once per browser session so a quick
-// refresh doesn't trigger a second sync while the first one's hashes are
-// still propagating.
+// Session guard: auto-sync runs at most once per browser tab session.
+// Uses sessionStorage (persists across page refreshes within the same tab)
+// so a hard refresh doesn't re-read seed_hashes unnecessarily.
+const SYNC_SESSION_KEY = 'sapere:seedSync:ranAt';
 let _syncRanThisSession = false;
 
 /**
@@ -333,9 +334,17 @@ export const seedChapterQuestions = async (chapter, storedQHashes = {}) => {
  */
 export const autoSyncSeedsIfChanged = async () => {
   if (_syncRanThisSession) {
-    console.info('[autoSyncSeeds] already ran this session -- skipping');
+    console.info('[autoSyncSeeds] already ran this session (memory) -- skipping');
     return { synced: 0 };
   }
+  try {
+    const ranAt = sessionStorage.getItem(SYNC_SESSION_KEY);
+    if (ranAt && Date.now() - Number(ranAt) < 30 * 60 * 1000) {
+      _syncRanThisSession = true;
+      console.info('[autoSyncSeeds] already ran this session (sessionStorage) -- skipping');
+      return { synced: 0 };
+    }
+  } catch (_) { /* private mode / unavailable */ }
 
   try {
     const { CHAPTER_SEED_REGISTRY } = await import('../constants/curriculumSeeds.js');
@@ -374,6 +383,7 @@ export const autoSyncSeedsIfChanged = async () => {
     if (changedEntries.length === 0) {
       console.info('[autoSyncSeeds] all seeds up-to-date -- no sync needed');
       _syncRanThisSession = true;
+      try { sessionStorage.setItem(SYNC_SESSION_KEY, String(Date.now())); } catch (_) {}
       return { synced: 0 };
     }
 
@@ -406,6 +416,7 @@ export const autoSyncSeedsIfChanged = async () => {
     }, { merge: false });
 
     _syncRanThisSession = true;
+    try { sessionStorage.setItem(SYNC_SESSION_KEY, String(Date.now())); } catch (_) {}
     console.info(`[autoSyncSeeds] done -- synced ${report.length}/${changedEntries.length} topic(s)`);
 
     const totals = report.reduce((a, r) => ({

@@ -142,12 +142,18 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
  * Returns: { selectedIds: string[], chapterBreakdown: { [chapterId]: string[] }, poolData }
  */
 export const selectDailyQuestions = async (uid, questionCount) => {
-  const snap = await getDoc(poolRef(uid));
-  if (!snap.exists()) throw new Error('Practice pool not initialized. Call ensurePracticePool first.');
+  // Use in-memory cache if available — ensurePracticePool already read/wrote
+  // the pool doc in this call chain, so a second getDoc is redundant.
+  const cachedEntry = _poolCache.get(uid);
+  let data = cachedEntry?.data || null;
 
-  let data = snap.data();
-  // 세션 캐시 갱신 (selectDailyQuestions는 항상 최신 데이터를 읽으므로 캐시 동기화)
-  if (data.curriculumSignature) setCached(uid, data.curriculumSignature, data);
+  if (!data) {
+    const snap = await getDoc(poolRef(uid));
+    if (!snap.exists()) throw new Error('Practice pool not initialized. Call ensurePracticePool first.');
+    data = snap.data();
+    if (data.curriculumSignature) setCached(uid, data.curriculumSignature, data);
+  }
+
   let chapter_pools = data.chapter_pools || {};
   const chapter_accuracy = data.chapter_accuracy || {};
   const chapterIds = Object.keys(chapter_pools);
