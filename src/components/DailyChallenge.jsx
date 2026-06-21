@@ -8,7 +8,7 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
 import {
-  doc, getDoc, setDoc, deleteDoc, collection, addDoc, getDocs, orderBy, query, updateDoc, serverTimestamp, runTransaction,
+  doc, getDoc, setDoc, deleteDoc, collection, addDoc, getDocs, query, updateDoc, serverTimestamp, runTransaction,
 } from 'firebase/firestore';
 import { localCache } from '../services/localCacheService';
 import { generateCalculationSet } from '../services/calculationGenerator';
@@ -126,9 +126,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const [workingOutPreview, setWorkingOutPreview] = useState(null);
   const [warnings, setWarnings] = useState(0);
   const [secretNoteKind, setSecretNoteKind] = useState(null);
-  const [historyTab, setHistoryTab] = useState('history'); // 'history' | 'saved'
-  const [savedFeedbackNotes, setSavedFeedbackNotes] = useState([]);
-  const [savedFeedbackLoading, setSavedFeedbackLoading] = useState(false);
 
   // ── Report modal state ──
   const [isReporting, setIsReporting] = useState(false);
@@ -330,77 +327,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     // Clear the dashboard "new comments" badge once the student opens feedback.
     if (user?.uid) updateDoc(doc(db, 'users', user.uid), { unreadFeedbackCount: 0 }).catch(() => {});
     setViewMode('history');
-  };
-
-  const loadSavedFeedback = useCallback(async () => {
-    if (!user?.uid) return;
-    setSavedFeedbackLoading(true);
-    try {
-      const snap = await getDocs(query(
-        collection(db, 'users', user.uid, 'saved_feedback'),
-        orderBy('savedAt', 'desc')
-      ));
-      setSavedFeedbackNotes(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-    } catch { /* non-fatal */ }
-    finally { setSavedFeedbackLoading(false); }
-  }, [user?.uid]);
-
-  useEffect(() => {
-    if (viewMode === 'history' && historyTab === 'saved') loadSavedFeedback();
-  }, [viewMode, historyTab, loadSavedFeedback]);
-
-  const handleSaveFeedback = async (result, challenge) => {
-    if (!user?.uid) return;
-    try {
-      await addDoc(collection(db, 'users', user.uid, 'saved_feedback'), {
-        questionId: result.questionId || '',
-        teacherFeedback: result.teacherFeedback,
-        teacherAnnotation: result.teacherAnnotation || null,
-        correct: result.correct,
-        gradedAt: result.gradedAt || null,
-        chapterTitle: challenge.chapterTitle || '',
-        topicTitle: challenge.topicTitle || '',
-        challengeDate: challenge.id || '',
-        savedAt: serverTimestamp(),
-      });
-      // Use in-memory answerResults to avoid an extra Firestore read
-      const statCol = challenge.statCollection || (challenge.challengeType === 'calc' ? 'calc_stats' : 'daily_stats');
-      const statRef = doc(db, 'users', user.uid, statCol, challenge.id);
-      const updated = [...(challenge.answerResults || [])];
-      const idx = updated.findIndex(r => r.questionId === result.questionId);
-      if (idx !== -1) {
-        delete updated[idx].teacherFeedback;
-        delete updated[idx].teacherAnnotation;
-        await updateDoc(statRef, { answerResults: updated });
-      }
-      showToast('Feedback saved to your notes!', 'success');
-    } catch (err) { showToast('Could not save: ' + (err?.message || err), 'error'); }
-  };
-
-  const handleDeleteFeedback = async (result, challenge) => {
-    if (!user?.uid) return;
-    try {
-      const statCol = challenge.statCollection || (challenge.challengeType === 'calc' ? 'calc_stats' : 'daily_stats');
-      const statRef = doc(db, 'users', user.uid, statCol, challenge.id);
-      // Use in-memory answerResults to avoid an extra Firestore read
-      const updated = [...(challenge.answerResults || [])];
-      const idx = updated.findIndex(r => r.questionId === result.questionId);
-      if (idx !== -1) {
-        delete updated[idx].teacherFeedback;
-        delete updated[idx].teacherAnnotation;
-        await updateDoc(statRef, { answerResults: updated });
-      }
-      showToast('Feedback removed.', 'success');
-    } catch (err) { showToast('Could not delete: ' + (err?.message || err), 'error'); }
-  };
-
-  const handleDeleteSavedFeedback = async (noteId) => {
-    if (!user?.uid) return;
-    try {
-      await deleteDoc(doc(db, 'users', user.uid, 'saved_feedback', noteId));
-      setSavedFeedbackNotes(prev => prev.filter(n => n.id !== noteId));
-      showToast('Saved note removed.', 'success');
-    } catch (err) { showToast('Could not delete: ' + (err?.message || err), 'error'); }
   };
 
   // Question-based correct count for display (a multi-part question counts as
@@ -1799,8 +1725,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                           <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
                             <MessageSquare size={14} style={{ color: result?.correct ? '#166534' : '#991b1b' }} />
                             <span style={{ fontSize: '0.75rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em', color: result?.correct ? '#166534' : '#991b1b', flex: 1 }}>Teacher Feedback</span>
-                            <button onClick={() => handleSaveFeedback(result, selectedChallenge)} style={{ padding: '4px 12px', borderRadius: '8px', border: 'none', background: '#6366f1', color: '#fff', fontWeight: 800, fontSize: '0.72rem', cursor: 'pointer' }}>Save</button>
-                            <button onClick={() => handleDeleteFeedback(result, selectedChallenge)} style={{ padding: '4px 12px', borderRadius: '8px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.72rem', cursor: 'pointer', marginLeft: '6px' }}>Delete</button>
                           </div>
                           <p style={{ margin: 0, fontSize: '0.92rem', color: result?.correct ? '#166534' : '#7f1d1d', lineHeight: 1.6 }}>{result.teacherFeedback}</p>
                           {result.teacherAnnotation && (
@@ -1849,41 +1773,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       </div>
       
       <div className="challenge-container" style={{ maxWidth: '600px', margin: '0 auto', width: '100%', paddingBottom: '40px' }}>
-        {/* Tabs */}
-        <div style={{ display: 'flex', gap: '8px', marginBottom: '20px', background: '#f1f5f9', borderRadius: '16px', padding: '4px' }}>
-          {[{ key: 'history', label: 'History' }, { key: 'saved', label: '💬 Saved Feedback' }].map(t => (
-            <button key={t.key} onClick={() => setHistoryTab(t.key)} style={{ flex: 1, padding: '10px', borderRadius: '12px', border: 'none', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer', background: historyTab === t.key ? '#fff' : 'transparent', color: historyTab === t.key ? '#6366f1' : '#64748b', boxShadow: historyTab === t.key ? '0 2px 8px rgba(0,0,0,0.08)' : 'none', transition: 'all 0.15s' }}>
-              {t.label}
-            </button>
-          ))}
-        </div>
-
-        {historyTab === 'saved' ? (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {savedFeedbackLoading ? (
-              <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8' }}><div className="app-spinner" style={{ margin: '0 auto 12px' }} /><p style={{ margin: 0, fontWeight: 700 }}>Loading...</p></div>
-            ) : savedFeedbackNotes.length === 0 ? (
-              <div style={{ textAlign: 'center', padding: '60px 20px', color: '#94a3b8', background: '#f8fafc', borderRadius: '16px', border: '2px dashed #e2e8f0' }}>
-                <MessageSquare size={40} style={{ opacity: 0.2, margin: '0 auto 12px', display: 'block' }} />
-                <p style={{ margin: 0, fontWeight: 700 }}>No saved feedback yet</p>
-                <p style={{ margin: '6px 0 0', fontSize: '0.85rem' }}>Tap Save on any teacher feedback to keep it here.</p>
-              </div>
-            ) : savedFeedbackNotes.map(note => (
-              <div key={note.id} style={{ padding: '18px', borderRadius: '16px', background: note.correct ? '#f0fdf4' : '#fef2f2', border: `1px solid ${note.correct ? '#bbf7d0' : '#fecaca'}` }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
-                  <span style={{ fontSize: '0.7rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em', color: note.correct ? '#166534' : '#991b1b', flex: 1 }}>
-                    {note.correct ? '✅ Correct' : '❌ Incorrect'} · {note.chapterTitle || note.challengeDate || ''}
-                  </span>
-                  <button onClick={() => handleDeleteSavedFeedback(note.id)} style={{ padding: '4px 10px', borderRadius: '8px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.7rem', cursor: 'pointer' }}>Delete</button>
-                </div>
-                <p style={{ margin: 0, fontSize: '0.9rem', color: note.correct ? '#166534' : '#7f1d1d', lineHeight: 1.6 }}>{note.teacherFeedback}</p>
-                {note.teacherAnnotation && (
-                  <img src={note.teacherAnnotation} alt="Teacher markup" style={{ marginTop: '12px', width: '100%', borderRadius: '10px', objectFit: 'contain', border: '1px solid #e2e8f0' }} />
-                )}
-              </div>
-            ))}
-          </div>
-        ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {history.length > 0 ? history.map((item, idx) => (
             <motion.div 
@@ -1919,7 +1808,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             </div>
           )}
         </div>
-        )} {/* end historyTab === 'history' */}
       </div>
     </>
   );
