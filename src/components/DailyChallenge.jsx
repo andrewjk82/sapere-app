@@ -81,7 +81,7 @@ import {
   getChallengeBootMetaId,
 } from '../utils/challengeUtils';
 
-const DailyChallenge = ({ onBack, setIsLocked }) => {
+const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
 
@@ -2049,8 +2049,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   onStartDailyQuiz={startDailyQuiz}
                   onStartCalculationQuiz={startCalculationQuiz}
                   onViewHistory={handleViewFeedback}
-                  newFeedbackCount={newFeedbackCount}
-                  onViewFeedback={handleViewFeedback}
+                  newFeedbackCount={Number(studentProfile?.unreadFeedbackCount) || 0}
+                  onViewFeedback={onOpenFeedback}
+                  onOpenFeedback={onOpenFeedback}
                   onBack={onBack}
                   getQuestionCount={getQuestionCount}
                   getChallengeMaxXp={getChallengeMaxXp}

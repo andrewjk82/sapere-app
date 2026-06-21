@@ -437,7 +437,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         })()}
 
         {!isAdmin && Number(profile?.unreadFeedbackCount) > 0 && (
-          <button type="button" onClick={() => setActiveTab('Challenge')} style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 0 16px' : '0 0 24px', maxWidth: '100%', padding: '20px 24px', borderRadius: '28px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #0ea5e9, #6366f1)', border: 'none', color: '#fff', boxShadow: '0 15px 35px rgba(14,165,233,0.25)', position: 'relative', overflow: 'hidden' }}>
+          <button type="button" onClick={() => setActiveTab('Feedback')} style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 0 16px' : '0 0 24px', maxWidth: '100%', padding: '20px 24px', borderRadius: '28px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #0ea5e9, #6366f1)', border: 'none', color: '#fff', boxShadow: '0 15px 35px rgba(14,165,233,0.25)', position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
             <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>💬</div>
             <div style={{ flex: 1, minWidth: 0 }}>

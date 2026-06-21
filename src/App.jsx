@@ -70,6 +70,7 @@ const lazyWithReload = (importer) => {
 // students and tutors see, so lazy-loading them only adds latency and risks
 // "Failed to fetch dynamically imported module" errors on stale deploys.
 import Dashboard from './components/Dashboard';
+import Feedback from './components/Feedback';
 import CurriculumGraph3D from './components/CurriculumGraph3D';
 import Schedule from './components/Schedule';
 import Library from './components/Library';
@@ -1135,12 +1136,15 @@ function App() {
         return <Schedule students={students} />;
       case 'Challenge':
         return (
-          <DailyChallenge 
+          <DailyChallenge
             key={`challenge-${user?.uid}`}
-            onBack={handleChallengeBack} 
-            setIsLocked={setIsLocked} 
+            onBack={handleChallengeBack}
+            setIsLocked={setIsLocked}
+            onOpenFeedback={() => handleTabChange('Feedback')}
           />
         );
+      case 'Feedback':
+        return <Feedback setActiveTab={handleTabChange} />;
       case 'Curriculum':
         return <Curriculum />;
       case 'ExamPrep':

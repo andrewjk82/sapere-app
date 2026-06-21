@@ -1,8 +1,36 @@
 import {
   doc, deleteDoc, getDoc, updateDoc, runTransaction,
-  increment, serverTimestamp, arrayUnion,
+  increment, serverTimestamp, arrayUnion, collection, addDoc,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
+
+/**
+ * Persist a teacher comment as a card in the student's Feedback page store
+ * (users/{uid}/saved_feedback) and bump the unread badge counter.
+ * @param {import('firebase/firestore').DocumentReference} userRef users/{uid} or students/{uid}
+ */
+const writeFeedbackCard = async (userRef, item, correct, feedback, annotation) => {
+  if (!feedback && !annotation) return;
+  try {
+    await addDoc(collection(userRef, 'saved_feedback'), {
+      questionId: item.questionId || '',
+      questionText: item.questionText || '',
+      teacherFeedback: feedback || '',
+      teacherAnnotation: annotation || null,
+      correct: !!correct,
+      challengeType: item.challengeType || 'daily',
+      topicTitle: item.topicTitle || '',
+      chapterTitle: item.chapterTitle || '',
+      gradedAt: new Date().toISOString(),
+      savedAt: serverTimestamp(),
+      source: 'teacher',
+      read: false,
+    });
+    await updateDoc(userRef, { unreadFeedbackCount: increment(1) });
+  } catch (err) {
+    console.warn('[grading] feedback card write failed (non-fatal):', err?.message || err);
+  }
+};
 
 /**
  * Resolve the stats-document date key from a grading queue item.
@@ -45,16 +73,20 @@ const finalizeStatAnswer = async (item, correct, feedback = null, annotation = n
     correct,
     isPending: false,
     gradedAt: new Date().toISOString(),
-    ...(feedback ? { teacherFeedback: feedback } : {}),
-    ...(annotation ? { teacherAnnotation: annotation } : {}),
   };
   await updateDoc(statRef, { answerResults: updatedResults });
+};
 
-  // Surface an unread badge on the student's dashboard when a comment is sent.
-  if (feedback) {
-    const userRef = statRef.parent.parent; // users/{uid} or students/{uid}
-    await updateDoc(userRef, { unreadFeedbackCount: increment(1) }).catch(() => {});
-  }
+/**
+ * Resolve the student's root user document (users/{uid} preferred,
+ * students/{uid} for manual students).
+ */
+const resolveUserRef = async (userId) => {
+  const usersRef = doc(db, 'users', userId);
+  if ((await getDoc(usersRef)).exists()) return usersRef;
+  const studentsRef = doc(db, 'students', userId);
+  if ((await getDoc(studentsRef)).exists()) return studentsRef;
+  return usersRef; // default
 };
 
 /**
@@ -99,6 +131,9 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
       }).catch(() => {});
     } else {
       await finalizeStatAnswer(item, false, feedback, annotation).catch(() => {});
+      if (feedback || annotation) {
+        await writeFeedbackCard(await resolveUserRef(userId), item, false, feedback, annotation);
+      }
     }
     await deleteDoc(doc(db, 'grading_queue', item.id));
     return { xpAwarded: 0 };
@@ -148,8 +183,6 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
       totalXP: newXP,
       points: increment(10),
       updatedAt: new Date().toISOString(),
-      // Surface an unread badge on the student's dashboard when a comment is sent.
-      ...(feedback ? { unreadFeedbackCount: increment(1) } : {}),
     });
 
     const leaderboardId = source === 'manual' ? `manual-${userId}` : userId;
@@ -193,14 +226,17 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
       updatedResults[qIndex].correct = true;
       updatedResults[qIndex].isPending = false;
       updatedResults[qIndex].selectedAnswer = 'Approved';
-      if (feedback) updatedResults[qIndex].teacherFeedback = feedback;
-      if (annotation) updatedResults[qIndex].teacherAnnotation = annotation;
     }
     await updateDoc(statRef, {
       score: increment(1),
       xpEarned: increment(xpPerQuestion),
       ...(qIndex !== -1 ? { answerResults: updatedResults } : {}),
     });
+  }
+
+  // Save the teacher comment as a Feedback-page card (+ unread badge).
+  if (feedback || annotation) {
+    await writeFeedbackCard(statRef.parent.parent, item, true, feedback, annotation);
   }
 
   // Credit fully applied — now it is safe to remove the queue item.
