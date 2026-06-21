@@ -13,6 +13,7 @@ import { gradeSubmission } from '../services/gradingService';
 import { localCache } from '../services/localCacheService';
 
 import AvatarPickerModal from './AvatarPickerModal';
+import AnnotationModal from './AnnotationModal';
 import AdminDashboard from './AdminDashboard';
 import ScheduleLessonModal from './ScheduleLessonModal';
 import { TIME_OPTIONS } from '../constants/timeOptions';
@@ -48,6 +49,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const pendingGrading = useMemo(() => feedPendingGrading.slice(0, 5), [feedPendingGrading]);
   const [selectedGradingItem, setSelectedGradingItem] = useState(null);
   const [gradeComment, setGradeComment] = useState('');
+  const [annotatingItem, setAnnotatingItem] = useState(null);
   const [isImporting, setIsImporting] = useState(false);
   const [importDone, setImportDone] = useState(false);
   const [isSeedingLeaderboard, setIsSeedingLeaderboard] = useState(false);
@@ -260,6 +262,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       }
       setSelectedGradingItem(null);
       setGradeComment('');
+      setAnnotatingItem(null);
     } catch (err) {
       console.error('Error grading submission:', err);
       showToast(`Failed to update grade: ${err.message || 'connection error'}`, 'error');
@@ -575,6 +578,15 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                     style={{ width: '100%', padding: '12px 14px', borderRadius: '14px', border: '1.5px solid #e2e8f0', fontSize: '0.9rem', fontWeight: 500, color: '#1e293b', outline: 'none', resize: 'vertical', fontFamily: 'inherit', boxSizing: 'border-box' }}
                   />
                 </div>
+                {selectedGradingItem.teacherAnnotation && (
+                  <div style={{ padding: '12px', borderRadius: '14px', background: '#f0f9ff', border: '1px solid #bae6fd' }}>
+                    <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#0369a1', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>✏️ Your Markup</div>
+                    <img src={selectedGradingItem.teacherAnnotation} alt="Markup" style={{ width: '100%', borderRadius: '10px', objectFit: 'contain', maxHeight: '300px' }} />
+                  </div>
+                )}
+                <button onClick={() => setAnnotatingItem(selectedGradingItem)} style={{ padding: '14px', borderRadius: '14px', background: '#fff', border: '2px solid #e0e7ff', color: '#6366f1', fontWeight: 800, cursor: 'pointer' }}>
+                  ✏️ {selectedGradingItem.teacherAnnotation ? 'Re-mark' : 'Mark Up'}
+                </button>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                   <button onClick={() => handleGrade('incorrect')} style={{ padding: '18px', borderRadius: '16px', background: '#fef2f2', border: '2px solid #fee2e2', color: '#ef4444', fontWeight: 800 }}>Incorrect</button>
                   <button onClick={() => handleGrade('correct')} style={{ padding: '18px', borderRadius: '16px', background: '#f0fdf4', border: '2px solid #dcfce7', color: '#10b981', fontWeight: 800 }}>Correct</button>
@@ -584,6 +596,17 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           </div>
         )}
       </AnimatePresence>
+
+      {annotatingItem && (
+        <AnnotationModal
+          item={annotatingItem}
+          onCancel={() => setAnnotatingItem(null)}
+          onSave={(dataUrl) => {
+            setSelectedGradingItem(prev => prev ? { ...prev, teacherAnnotation: dataUrl } : prev);
+            setAnnotatingItem(null);
+          }}
+        />
+      )}
 
       <AvatarPickerModal open={avatarOpen} onClose={() => setAvatarOpen(false)} onApply={async ({ avatarStyle, avatarSeed, avatarUrl: nextUrl }) => {
         if (!user?.uid) return;
