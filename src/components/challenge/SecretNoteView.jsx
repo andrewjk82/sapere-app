@@ -789,21 +789,28 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
           </>
         )}
 
-        {/* Submit */}
+        {/* Submit + Skip */}
         {!isFeedback && (
-          <button
-            className="sn__btn sn__btn--primary"
-            style={{ background: headerGradient }}
-            disabled={activePrep?.mode === 'mc' ? selectedIdx == null : !answer.trim()}
-            onClick={() => {
-              const optText = activePrep?.mode === 'mc'
-                ? getOptionText(activePrep.options[selectedIdx])
-                : null;
-              isTwinPhase ? submitTwin(answer, optText) : submitOriginal(answer, optText);
-            }}
-          >
-            Check answer
-          </button>
+          <>
+            <button
+              className="sn__btn sn__btn--primary"
+              style={{ background: headerGradient }}
+              disabled={activePrep?.mode === 'mc' ? selectedIdx == null : !answer.trim()}
+              onClick={() => {
+                const optText = activePrep?.mode === 'mc'
+                  ? getOptionText(activePrep.options[selectedIdx])
+                  : null;
+                isTwinPhase ? submitTwin(answer, optText) : submitOriginal(answer, optText);
+              }}
+            >
+              Check answer
+            </button>
+            {/* Skip — move on without answering. The question stays in the
+                notebook (no grading recorded) so it comes back next time. */}
+            <button className="sn__skip" onClick={advance}>
+              Skip this question <ArrowRight size={15} />
+            </button>
+          </>
         )}
 
         {/* Feedback */}
@@ -1114,6 +1121,14 @@ const secretNoteStyles = `
     transition: all 0.15s ease;
   }
   .sn__tag--on { border-color: #8b5cf6; background: #f5f3ff; color: #6d28d9; }
+
+  .sn__skip {
+    display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+    padding: 13px; border-radius: 14px; cursor: pointer; margin-top: -6px;
+    background: #f8fafc; border: 1.5px solid #e2e8f0; color: #64748b;
+    font-weight: 800; font-size: 0.88rem; width: 100%; transition: all 0.15s ease;
+  }
+  .sn__skip:hover { background: #f1f5f9; color: #475569; }
 
   .sn__ask {
     display: inline-flex; align-items: center; justify-content: center; gap: 7px;
