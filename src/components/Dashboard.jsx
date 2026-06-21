@@ -436,6 +436,22 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           );
         })()}
 
+        {!isAdmin && Number(profile?.unreadFeedbackCount) > 0 && (
+          <button type="button" onClick={() => setActiveTab('Challenge')} style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 0 16px' : '0 0 24px', maxWidth: '100%', padding: '20px 24px', borderRadius: '28px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #0ea5e9, #6366f1)', border: 'none', color: '#fff', boxShadow: '0 15px 35px rgba(14,165,233,0.25)', position: 'relative', overflow: 'hidden' }}>
+            <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
+            <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>💬</div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)', marginBottom: '3px' }}>Teacher Feedback</div>
+              <div style={{ fontSize: '0.97rem', fontWeight: 700, lineHeight: 1.4, color: '#fff' }}>
+                You have <strong style={{ fontWeight: 900 }}>{Number(profile.unreadFeedbackCount)} new comment{Number(profile.unreadFeedbackCount) > 1 ? 's' : ''}</strong> from your teacher.
+              </div>
+            </div>
+            <div style={{ width: '36px', height: '36px', borderRadius: '12px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+              <ArrowRight size={18} />
+            </div>
+          </button>
+        )}
+
         {isAdmin && (
           <AdminDashboard
             students={students}

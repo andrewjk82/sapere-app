@@ -49,6 +49,12 @@ const finalizeStatAnswer = async (item, correct, feedback = null, annotation = n
     ...(annotation ? { teacherAnnotation: annotation } : {}),
   };
   await updateDoc(statRef, { answerResults: updatedResults });
+
+  // Surface an unread badge on the student's dashboard when a comment is sent.
+  if (feedback) {
+    const userRef = statRef.parent.parent; // users/{uid} or students/{uid}
+    await updateDoc(userRef, { unreadFeedbackCount: increment(1) }).catch(() => {});
+  }
 };
 
 /**
@@ -142,6 +148,8 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
       totalXP: newXP,
       points: increment(10),
       updatedAt: new Date().toISOString(),
+      // Surface an unread badge on the student's dashboard when a comment is sent.
+      ...(feedback ? { unreadFeedbackCount: increment(1) } : {}),
     });
 
     const leaderboardId = source === 'manual' ? `manual-${userId}` : userId;

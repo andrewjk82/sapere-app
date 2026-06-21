@@ -327,6 +327,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const handleViewFeedback = () => {
     try { localStorage.setItem(FEEDBACK_SEEN_KEY, new Date().toISOString()); } catch { /* */ }
+    // Clear the dashboard "new comments" badge once the student opens feedback.
+    if (user?.uid) updateDoc(doc(db, 'users', user.uid), { unreadFeedbackCount: 0 }).catch(() => {});
     setViewMode('history');
   };
 
@@ -2046,7 +2048,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   history={history}
                   onStartDailyQuiz={startDailyQuiz}
                   onStartCalculationQuiz={startCalculationQuiz}
-                  onViewHistory={() => setViewMode('history')}
+                  onViewHistory={handleViewFeedback}
                   newFeedbackCount={newFeedbackCount}
                   onViewFeedback={handleViewFeedback}
                   onBack={onBack}
