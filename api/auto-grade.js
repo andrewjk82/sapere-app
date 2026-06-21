@@ -89,6 +89,15 @@ export default async function handler(req, res) {
       ? validImages
       : (item.answerImage && item.answerImage.length > 100 ? [item.answerImage] : []);
 
+    // Defense-in-depth: never spend a Gemini call on an empty submission (no
+    // drawing and no typed answer). The client already skips these, but this
+    // guards any other caller. Leave the item unassessed for manual grading.
+    const hasContent = imagesToSend.length > 0 || (item.answerText && String(item.answerText).trim());
+    if (!hasContent) {
+      console.log(`[auto-grade] skipped — empty submission ${gradingItemId}`);
+      return res.status(200).json({ success: false, skipped: true, message: 'Empty submission — nothing to grade' });
+    }
+
     const promptText = [
       'You are an expert mathematics tutor grading a student\'s submitted work.',
       '',

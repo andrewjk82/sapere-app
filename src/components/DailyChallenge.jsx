@@ -1036,16 +1036,27 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           requiresManualGrading: currentQ?.requiresManualGrading || true,
         };
         const gradingDocRef = await addDoc(collection(db, 'grading_queue'), gradingEntry);
-        // Fire-and-forget: ask Gemini to pre-grade so the teacher sees an AI assessment
-        fetch('/api/auto-grade', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ gradingItemId: gradingDocRef.id }),
-        }).then(async (r) => {
-          const body = await r.json().catch(() => ({}));
-          if (!body.success) console.warn('[auto-grade] failed:', body.message || body.error || r.status);
-          else console.log('[auto-grade] ok:', gradingDocRef.id);
-        }).catch((err) => console.warn('[auto-grade] network error:', err?.message));
+        // Skip AI grading when the student submitted nothing (no drawing and no
+        // typed answer) — there is nothing for Gemini to assess, and an empty
+        // submission would only waste an API call. The teacher still sees the
+        // blank submission in the queue and can grade it manually.
+        const hasSubmittedContent = gradingEntry.hasDrawing
+          || (gradingEntry.answerImages && gradingEntry.answerImages.length > 0)
+          || Boolean(gradingEntry.answerText);
+        if (hasSubmittedContent) {
+          // Fire-and-forget: ask Gemini to pre-grade so the teacher sees an AI assessment
+          fetch('/api/auto-grade', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ gradingItemId: gradingDocRef.id }),
+          }).then(async (r) => {
+            const body = await r.json().catch(() => ({}));
+            if (!body.success) console.warn('[auto-grade] failed:', body.message || body.error || r.status);
+            else console.log('[auto-grade] ok:', gradingDocRef.id);
+          }).catch((err) => console.warn('[auto-grade] network error:', err?.message));
+        } else {
+          console.log('[auto-grade] skipped — empty submission:', gradingDocRef.id);
+        }
         markSessionReviewRequested();
         notifyTeacherPendingReview({
           studentId: user.uid,
