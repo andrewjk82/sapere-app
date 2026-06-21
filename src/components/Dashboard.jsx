@@ -537,6 +537,34 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               </div>
               <div style={{ padding: '28px 32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div style={{ background: '#f8fafc', padding: '16px 20px', borderRadius: '16px', border: '1px solid #e2e8f0' }}><p style={{ margin: 0, fontWeight: 700, color: '#1e1b4b' }}>{selectedGradingItem.questionText}</p></div>
+
+                {/* Student's submitted answer */}
+                {(() => {
+                  const imgs = (selectedGradingItem.answerImages || []).filter(u => u && u.length > 100);
+                  const single = selectedGradingItem.answerImage && selectedGradingItem.answerImage.length > 100 ? [selectedGradingItem.answerImage] : [];
+                  const allImgs = imgs.length ? imgs : single;
+                  const text = selectedGradingItem.answerText;
+                  if (!allImgs.length && !text) return (
+                    <div style={{ padding: '12px 16px', borderRadius: '14px', background: '#fff7ed', border: '1px solid #fed7aa', color: '#c2410c', fontSize: '0.85rem', fontWeight: 700 }}>No answer submitted (blank).</div>
+                  );
+                  return (
+                    <div>
+                      <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>Student's Answer</div>
+                      {text && <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#eef2ff', color: '#1e1b4b', fontWeight: 700, marginBottom: allImgs.length ? '10px' : 0 }}>{text}</div>}
+                      {allImgs.map((src, i) => (
+                        <img key={i} src={src} alt={`Answer ${i + 1}`} style={{ width: '100%', borderRadius: '12px', border: '1px solid #e2e8f0', marginBottom: '8px', objectFit: 'contain', maxHeight: '360px' }} />
+                      ))}
+                    </div>
+                  );
+                })()}
+
+                {selectedGradingItem.correctAnswer && (
+                  <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
+                    <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#15803d' }}>EXPECTED: </span>
+                    <span style={{ color: '#166534', fontWeight: 700 }}>{selectedGradingItem.correctAnswer}</span>
+                  </div>
+                )}
+
                 <div>
                   <label style={{ fontSize: '0.72rem', fontWeight: 900, color: '#0369a1', textTransform: 'uppercase', letterSpacing: '0.05em', display: 'block', marginBottom: '8px' }}>💬 Comment to student</label>
                   <textarea

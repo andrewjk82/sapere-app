@@ -88,8 +88,17 @@ const Feedback = ({ setActiveTab }) => {
               </span>
               <button onClick={() => handleDelete(note.id)} style={{ padding: '4px 10px', borderRadius: '8px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.7rem', cursor: 'pointer' }}>Delete</button>
             </div>
-            {note.teacherFeedback && (
+            {note.questionText && (
+              <p style={{ margin: '0 0 8px', fontSize: '0.82rem', color: '#475569', lineHeight: 1.5, fontWeight: 600 }}>
+                <span style={{ fontWeight: 800, color: '#94a3b8' }}>Q: </span>{note.questionText}
+              </p>
+            )}
+            {note.teacherFeedback ? (
               <p style={{ margin: 0, fontSize: '0.92rem', color: note.correct ? '#166534' : '#7f1d1d', lineHeight: 1.6 }}>{note.teacherFeedback}</p>
+            ) : (
+              <p style={{ margin: 0, fontSize: '0.88rem', color: '#64748b', lineHeight: 1.6, fontStyle: 'italic' }}>
+                {note.correct ? 'Your teacher marked this correct.' : 'Your teacher marked this incorrect.'}
+              </p>
             )}
             {note.teacherAnnotation && (
               <img src={note.teacherAnnotation} alt="Teacher markup" style={{ marginTop: '12px', width: '100%', borderRadius: '10px', objectFit: 'contain', border: '1px solid #e2e8f0' }} />
