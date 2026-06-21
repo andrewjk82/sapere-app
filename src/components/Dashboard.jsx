@@ -47,6 +47,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const { pendingGrading: feedPendingGrading } = useAdminFeed();
   const pendingGrading = useMemo(() => feedPendingGrading.slice(0, 5), [feedPendingGrading]);
   const [selectedGradingItem, setSelectedGradingItem] = useState(null);
+  const [gradeComment, setGradeComment] = useState('');
   const [isImporting, setIsImporting] = useState(false);
   const [importDone, setImportDone] = useState(false);
   const [isSeedingLeaderboard, setIsSeedingLeaderboard] = useState(false);
@@ -249,13 +250,16 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     if (!selectedGradingItem) return;
     try {
       const approved = status === 'correct';
-      const { xpAwarded } = await gradeSubmission(selectedGradingItem, approved);
+      const feedback = gradeComment.trim() || selectedGradingItem.aiAssessment?.feedback || null;
+      const annotation = selectedGradingItem.teacherAnnotation || null;
+      const { xpAwarded } = await gradeSubmission(selectedGradingItem, approved, feedback, annotation);
       if (approved) {
         showToast(`Graded as Correct. Student received ${xpAwarded} XP!`, 'success');
       } else {
         showToast('Graded as Incorrect.', 'info');
       }
       setSelectedGradingItem(null);
+      setGradeComment('');
     } catch (err) {
       console.error('Error grading submission:', err);
       showToast(`Failed to update grade: ${err.message || 'connection error'}`, 'error');
@@ -525,14 +529,24 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       <AnimatePresence>
         {selectedGradingItem && (
           <div style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSelectedGradingItem(null)} style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.6)', backdropFilter: 'blur(8px)' }} />
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => { setSelectedGradingItem(null); setGradeComment(""); }} style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.6)', backdropFilter: 'blur(8px)' }} />
             <motion.div initial={{ scale: 0.9, opacity: 0, y: 20 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.9, opacity: 0, y: 20 }} style={{ position: 'relative', width: '100%', maxWidth: '620px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.2)', maxHeight: '90vh', overflowY: 'auto' }}>
               <div style={{ background: 'linear-gradient(135deg, #1e1b4b, #312e81)', padding: '24px 32px', color: '#fff', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                 <div><h3 style={{ margin: '4px 0 2px', color: 'white', fontWeight: 900 }}>{selectedGradingItem.userName}</h3></div>
-                <button onClick={() => setSelectedGradingItem(null)} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}><X size={20} /></button>
+                <button onClick={() => { setSelectedGradingItem(null); setGradeComment(""); }} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}><X size={20} /></button>
               </div>
               <div style={{ padding: '28px 32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div style={{ background: '#f8fafc', padding: '16px 20px', borderRadius: '16px', border: '1px solid #e2e8f0' }}><p style={{ margin: 0, fontWeight: 700, color: '#1e1b4b' }}>{selectedGradingItem.questionText}</p></div>
+                <div>
+                  <label style={{ fontSize: '0.72rem', fontWeight: 900, color: '#0369a1', textTransform: 'uppercase', letterSpacing: '0.05em', display: 'block', marginBottom: '8px' }}>💬 Comment to student</label>
+                  <textarea
+                    value={gradeComment}
+                    onChange={(e) => setGradeComment(e.target.value)}
+                    placeholder="Write a message the student will see in their Feedback page…"
+                    rows={3}
+                    style={{ width: '100%', padding: '12px 14px', borderRadius: '14px', border: '1.5px solid #e2e8f0', fontSize: '0.9rem', fontWeight: 500, color: '#1e293b', outline: 'none', resize: 'vertical', fontFamily: 'inherit', boxSizing: 'border-box' }}
+                  />
+                </div>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                   <button onClick={() => handleGrade('incorrect')} style={{ padding: '18px', borderRadius: '16px', background: '#fef2f2', border: '2px solid #fee2e2', color: '#ef4444', fontWeight: 800 }}>Incorrect</button>
                   <button onClick={() => handleGrade('correct')} style={{ padding: '18px', borderRadius: '16px', background: '#f0fdf4', border: '2px solid #dcfce7', color: '#10b981', fontWeight: 800 }}>Correct</button>
