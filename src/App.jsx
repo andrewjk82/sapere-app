@@ -408,21 +408,11 @@ function App() {
   // then (2) rebuild question_index if the bank version drifted (legacy imports).
   useEffect(() => {
     if (!user?.uid || !isAdmin) return;
-    import('./services/chapterSeeder')
-      .then(({ autoSyncSeedsIfChanged }) => autoSyncSeedsIfChanged())
-      .then((res) => {
-        // Surface a report when the seed auto-sync actually changed something
-        // (or hit a per-topic failure) so the admin sees what was updated.
-        if (res && ((res.synced > 0) || (res.failed && res.failed.length > 0))) {
-          setSeedSyncReport(res);
-        }
-      })
-      .catch((err) => console.warn('auto seed sync failed:', err?.code || err))
-      .finally(() => {
-        import('./services/questionIndexService')
-          .then(({ ensureQuestionIndexFresh }) => ensureQuestionIndexFresh())
-          .catch((err) => console.warn('question index freshness check failed:', err?.code || err));
-      });
+    // Client-side auto-sync is disabled to prevent stale local browser/bundle caches from reverting Firestore.
+    // Please perform all database seeding explicitly via CLI: npm run seed <topic>
+    import('./services/questionIndexService')
+      .then(({ ensureQuestionIndexFresh }) => ensureQuestionIndexFresh())
+      .catch((err) => console.warn('question index freshness check failed:', err?.code || err));
   }, [user?.uid, isAdmin]);
 
   // Secret-Note blocklist: when a teacher flags a broken question, purge any
@@ -473,12 +463,24 @@ function App() {
           // The approved question also sits in the exam-prep Secret Note deck
           // (wrong/pending answers are auto-added) — graduate it there too.
           applySecretNoteApprovals(user.uid, examApprovals.map((a) => ({ kind: 'exam_prep', questionId: a.questionId })));
-          if (n > 0) showToast(`Your teacher marked ${n} exam prep answer${n === 1 ? '' : 's'} correct!`, 'success');
+          if (n > 0) {
+            const comment = examApprovals.map(a => a?.teacherFeedback).find(Boolean);
+            showToast(
+              `Your teacher marked ${n} exam prep answer${n === 1 ? '' : 's'} correct!${comment ? ` 💬 "${comment}"` : ''}`,
+              'success',
+            );
+          }
           clear.examPrepApprovals = deleteField();
         }
         if (Array.isArray(examRejections) && examRejections.length) {
           const fresh = applyExamPrepRejections(user.uid, examRejections);
-          if (fresh.length > 0) showToast(`Your teacher reviewed ${fresh.length} exam prep answer${fresh.length === 1 ? '' : 's'} — marked incorrect. Check your Secret Note to retry.`, 'info');
+          if (fresh.length > 0) {
+            const comment = fresh.map(r => r?.teacherFeedback).find(Boolean);
+            showToast(
+              `Your teacher reviewed ${fresh.length} exam prep answer${fresh.length === 1 ? '' : 's'} — marked incorrect. Check your Secret Note to retry.${comment ? ` 💬 "${comment}"` : ''}`,
+              'info',
+            );
+          }
           clear.examPrepRejections = deleteField();
         }
       } catch (_) { /* non-fatal — retried on next snapshot */ }

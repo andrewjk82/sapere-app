@@ -88,6 +88,7 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
           topicId: item.topicId || '',
           topicTitle: item.topicTitle || '',
           rejectedAt: new Date().toISOString(),
+          ...(feedback ? { teacherFeedback: feedback } : {}),
         }),
       }).catch(() => {});
     } else {
@@ -108,6 +109,7 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
         topicId: item.topicId || '',
         topicTitle: item.topicTitle || '',
         approvedAt: new Date().toISOString(),
+        ...(feedback ? { teacherFeedback: feedback } : {}),
       }),
     });
     await deleteDoc(doc(db, 'grading_queue', item.id));

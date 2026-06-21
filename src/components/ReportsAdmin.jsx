@@ -80,6 +80,7 @@ const ReportsAdmin = () => {
   const [annotationColor, setAnnotationColor] = useState('#ef4444');
   const [annotationSize, setAnnotationSize] = useState(4);
   const [annotationSaving, setAnnotationSaving] = useState(false);
+  const [comments, setComments] = useState({}); // { [itemId]: teacher comment text }
   const ADMIN_REPORT_LIMIT = 100;
 
   const formatStudentAnswer = (answer) => {
@@ -601,9 +602,11 @@ const ReportsAdmin = () => {
     if (processingId) return;
     try {
       setProcessingId(item.id);
-      const feedback = item.aiAssessment?.feedback || null;
+      const typedComment = (comments[item.id] || '').trim();
+      const feedback = typedComment || item.aiAssessment?.feedback || null;
       const annotation = item.teacherAnnotation || null;
       await gradeSubmission(item, approved, feedback, annotation);
+      setComments(prev => { const next = { ...prev }; delete next[item.id]; return next; });
     } catch (err) {
       console.error('Error grading submission:', err);
       alert(`Failed to update grade: ${err.message || err}`);
@@ -1053,7 +1056,21 @@ const ReportsAdmin = () => {
                 </div>
               )}
 
-              <div style={{ marginTop: '24px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+              {/* Teacher comment to the student */}
+              <div style={{ marginTop: '20px' }}>
+                <label style={{ fontSize: '0.72rem', fontWeight: 900, color: '#0369a1', textTransform: 'uppercase', letterSpacing: '0.05em', display: 'block', marginBottom: '8px' }}>
+                  💬 Comment to student {item.aiAssessment?.feedback ? '(overrides AI feedback)' : ''}
+                </label>
+                <textarea
+                  value={comments[item.id] ?? ''}
+                  onChange={(e) => setComments(prev => ({ ...prev, [item.id]: e.target.value }))}
+                  placeholder="Write a message the student will see in their History…"
+                  rows={3}
+                  style={{ width: '100%', padding: '12px 14px', borderRadius: '14px', border: '1.5px solid #e2e8f0', fontSize: '0.9rem', fontWeight: 500, color: '#1e293b', outline: 'none', resize: 'vertical', fontFamily: 'inherit', boxSizing: 'border-box' }}
+                />
+              </div>
+
+              <div style={{ marginTop: '16px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
                 <button
                   onClick={() => setAnnotatingItem(item)}
                   style={{ padding: '14px 20px', borderRadius: '20px', border: '2px solid #e0e7ff', background: '#fff', color: '#6366f1', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
