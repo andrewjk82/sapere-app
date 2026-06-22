@@ -134,9 +134,14 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
 
   const [questionIds, setQuestionIds] = useState([]);
   const [loadedQuestions, setLoadedQuestions] = useState({}); // id -> question doc
+  // IDs present in question_index but with no matching (active) question doc —
+  // a stale index. We drop these from the visible list so the bank never gets
+  // stuck on "Loading question details..." for a pointer that can't resolve.
+  const [deadIds, setDeadIds] = useState(() => new Set());
 
   const reload = useCallback(async () => {
     setLoading(true);
+    setDeadIds(new Set()); // fresh chapter/topic — don't carry over dead pointers
     try {
       const isTypeChapter = chapter.id?.startsWith('type:');
       const isExamChapter = chapter.id?.startsWith('exam:');
@@ -247,17 +252,19 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     
     const fetchAroundIndex = async () => {
       const windowSize = 20;
+      // Window over the *visible* list so the current question is always in range.
+      const visibleIds = questionIds.filter(id => !deadIds.has(id));
       const startIndex = Math.max(0, currentIdx - 5);
-      const endIndex = Math.min(questionIds.length, startIndex + windowSize);
-      
+      const endIndex = Math.min(visibleIds.length, startIndex + windowSize);
+
       const idsToFetch = [];
       for (let i = startIndex; i < endIndex; i++) {
-        const id = questionIds[i];
+        const id = visibleIds[i];
         if (id && !loadedQuestions[id]) {
           idsToFetch.push(id);
         }
       }
-      
+
       if (idsToFetch.length === 0) return;
 
       try {
@@ -266,11 +273,11 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         for (let i = 0; i < idsToFetch.length; i += 30) {
           chunks.push(idsToFetch.slice(i, i + 30));
         }
-        
+
         const snaps = await Promise.all(
           chunks.map(chunk => getDocs(query(collection(db, 'questions'), where('__name__', 'in', chunk))))
         );
-        
+
         const fetched = {};
         snaps.forEach(snap => {
           snap.docs.forEach(d => {
@@ -279,17 +286,29 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         });
 
         setLoadedQuestions(prev => ({ ...prev, ...fetched }));
+
+        // Any id we asked for but didn't get back is a stale index pointer —
+        // mark it dead so it's dropped from the list instead of spinning forever.
+        const newlyDead = idsToFetch.filter(id => !fetched[id]);
+        if (newlyDead.length) {
+          setDeadIds(prev => {
+            const next = new Set(prev);
+            newlyDead.forEach(id => next.add(id));
+            return next;
+          });
+        }
       } catch (err) {
         console.error('Failed to prefetch questions:', err);
       }
     };
 
     fetchAroundIndex();
-  }, [currentIdx, questionIds, loadedQuestions, loading]);
+  }, [currentIdx, questionIds, loadedQuestions, loading, deadIds]);
 
-  const questions = questionIds.map(id => loadedQuestions[id] || { id, loading: true });
+  const liveIds = questionIds.filter(id => !deadIds.has(id));
+  const questions = liveIds.map(id => loadedQuestions[id] || { id, loading: true });
   const q = questions[currentIdx]?.loading ? null : questions[currentIdx];
-  const total = questionIds.length;
+  const total = liveIds.length;
   const isFillBlank = q?.type === 'fill_blank';
   const isShort = q?.type === 'short_answer';
   const isMC = q && !isShort && !isFillBlank && !q.subQuestions?.length && (q.options || []).length > 0;
