@@ -95,9 +95,11 @@ const ReportsAdmin = () => {
   const getPreviewStudentAnswer = () => {
     if (!previewReport) return null;
     const reportAnswer = previewReport.studentAnswer;
-    // Ignore a stringified object ("[object Object]") that lost its structure at
-    // report-capture time — fall through to the attempt, which keeps the real object.
-    if (reportAnswer !== undefined && reportAnswer !== null && reportAnswer !== '' && String(reportAnswer) !== '[object Object]') {
+    // A plain object (Firestore map) is a valid sub-answers dict — return it directly.
+    // Only skip if the answer was accidentally stringified as "[object Object]" at save time.
+    const isValidAnswer = reportAnswer !== undefined && reportAnswer !== null && reportAnswer !== '';
+    const isStringifiedObject = typeof reportAnswer === 'string' && reportAnswer === '[object Object]';
+    if (isValidAnswer && !isStringifiedObject) {
       return reportAnswer;
     }
     const attemptResult = previewAttempt?.results?.[previewAttempt?.resultIndex];
@@ -107,6 +109,8 @@ const ReportsAdmin = () => {
     if (Array.isArray(detailAnswers) && previewAttempt?.resultIndex !== undefined) {
       return detailAnswers[previewAttempt.resultIndex];
     }
+    // Last resort: return reportAnswer even if it's an object (better than null for sub-questions)
+    if (isValidAnswer) return reportAnswer;
     return null;
   };
 
