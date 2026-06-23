@@ -16,26 +16,41 @@ function stripDataUrl(dataUrl) {
   return dataUrl?.replace(/^data:image\/[a-z]+;base64,/, '') || null;
 }
 
-async function callGemini(parts) {
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts }],
-        generationConfig: {
-          temperature: 0.3,
-          maxOutputTokens: 600,
-          responseMimeType: 'application/json',
-        },
-      }),
-    }
-  );
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  if (!res.ok) {
-    const errText = await res.text();
-    throw new Error(`Gemini API ${res.status}: ${errText.slice(0, 200)}`);
+async function callGemini(parts) {
+  // Gemini frequently returns 503 (UNAVAILABLE) / 429 (rate limit) under load.
+  // These are transient — retry with exponential backoff instead of leaving the
+  // submission permanently ungraded (the call is fire-and-forget at submit time).
+  const RETRIABLE = new Set([429, 500, 502, 503, 504]);
+  const MAX_ATTEMPTS = 4;
+  let res;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts }],
+          generationConfig: {
+            temperature: 0.3,
+            maxOutputTokens: 600,
+            responseMimeType: 'application/json',
+          },
+        }),
+      }
+    );
+
+    if (res.ok) break;
+    if (!RETRIABLE.has(res.status) || attempt === MAX_ATTEMPTS) {
+      const errText = await res.text();
+      throw new Error(`Gemini API ${res.status}: ${errText.slice(0, 200)}`);
+    }
+    // 0.8s, 1.6s, 3.2s (+ jitter) — well within Vercel's function timeout.
+    const backoff = 800 * 2 ** (attempt - 1) + Math.floor(Math.random() * 300);
+    console.warn(`[auto-grade] Gemini ${res.status}, retry ${attempt}/${MAX_ATTEMPTS - 1} in ${backoff}ms`);
+    await sleep(backoff);
   }
 
   const data = await res.json();

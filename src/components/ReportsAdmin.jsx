@@ -77,6 +77,7 @@ const ReportsAdmin = () => {
   const [annotatingItem, setAnnotatingItem] = useState(null); // grading item being marked up
   const [annotationSaving, setAnnotationSaving] = useState(false);
   const [comments, setComments] = useState({}); // { [itemId]: teacher comment text }
+  const [aiBusy, setAiBusy] = useState({}); // { [itemId]: true } while re-running AI grading
   const ADMIN_REPORT_LIMIT = 100;
 
   const formatStudentAnswer = (answer) => {
@@ -611,6 +612,29 @@ const ReportsAdmin = () => {
     }
   };
 
+  // Re-run AI pre-grading for a submission that has no aiAssessment yet (the
+  // fire-and-forget call at submit time can fail on a transient Gemini 503).
+  // The grading_queue live listener picks up the written aiAssessment on success.
+  const handleRunAi = async (item) => {
+    if (aiBusy[item.id]) return;
+    setAiBusy(prev => ({ ...prev, [item.id]: true }));
+    try {
+      const res = await fetch('/api/auto-grade', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ gradingItemId: item.id }),
+      });
+      const body = await res.json().catch(() => ({}));
+      if (!body.success) {
+        alert(`AI grading failed: ${body.error || body.message || res.status}`);
+      }
+    } catch (err) {
+      alert(`AI grading network error: ${err?.message || err}`);
+    } finally {
+      setAiBusy(prev => { const next = { ...prev }; delete next[item.id]; return next; });
+    }
+  };
+
   // ── Teacher annotation ──────────────────────────────────────────────────
   const saveAnnotation = async (mergedDataUrl) => {
     const item = annotatingItem;
@@ -899,6 +923,21 @@ const ReportsAdmin = () => {
                       <span style={{ fontWeight: 900 }}>Student feedback: </span>{item.aiAssessment.feedback}
                     </p>
                   )}
+                </div>
+              )}
+
+              {!item.aiAssessment && (
+                <div style={{ marginTop: '24px', padding: '16px 20px', borderRadius: '20px', border: '2px dashed #e2e8f0', background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
+                  <span style={{ fontSize: '0.82rem', color: '#64748b', fontWeight: 700 }}>
+                    No AI assessment yet {aiBusy[item.id] ? '— grading…' : '(it may have failed at submit time)'}
+                  </span>
+                  <button
+                    onClick={() => handleRunAi(item)}
+                    disabled={!!aiBusy[item.id]}
+                    style={{ padding: '10px 18px', borderRadius: '12px', border: 'none', background: aiBusy[item.id] ? '#c7d2fe' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', color: '#fff', fontWeight: 800, fontSize: '0.82rem', cursor: aiBusy[item.id] ? 'wait' : 'pointer', whiteSpace: 'nowrap' }}
+                  >
+                    {aiBusy[item.id] ? 'Running…' : '✨ Run AI grading'}
+                  </button>
                 </div>
               )}
 
