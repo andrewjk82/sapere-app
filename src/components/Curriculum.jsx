@@ -1824,6 +1824,73 @@ const Curriculum = () => {
   // Admin utility: verify the aggregate counts doc against live Firestore
   // counts for the selected year only (~150 aggregation reads, on demand).
   // Reports mismatches and writes the corrected values back.
+  const handleAssignAllChaptersToAllStudents = async () => {
+    if (!window.confirm('모든 학생의 assignedChapters를 전체 챕터로 업데이트합니다. 계속할까요?')) return;
+    setIsMigrating(true);
+    try {
+      const { getDocs, writeBatch, doc: fsDoc, collection: fsCol, getDoc: fsGetDoc } = await import('firebase/firestore');
+
+      // 1. 모든 curriculum 챕터 ID를 year+course별로 수집
+      const currSnap = await getDocs(fsCol(db, 'curriculum'));
+      const chaptersByDoc = {};
+      currSnap.docs.forEach(d => {
+        const chapters = (d.data().chapters || []).map(ch => ch.id).filter(Boolean);
+        chaptersByDoc[d.id] = chapters;
+      });
+
+      // 2. 모든 학생 (students + users) 가져오기
+      const [manualSnap, usersSnap] = await Promise.all([
+        getDocs(fsCol(db, 'students')),
+        getDocs(fsCol(db, 'users')),
+      ]);
+
+      const toUpdate = [];
+      manualSnap.docs.forEach(d => toUpdate.push({ col: 'students', id: d.id, data: d.data() }));
+      usersSnap.docs.forEach(d => {
+        const data = d.data();
+        if (data.email !== 'andrewjk82@gmail.com' && data.role !== 'admin') {
+          toUpdate.push({ col: 'users', id: d.id, data });
+        }
+      });
+
+      // 3. 각 학생의 year+course에 맞는 챕터 ID를 결합
+      const CHUNK = 400;
+      let updated = 0;
+      for (let i = 0; i < toUpdate.length; i += CHUNK) {
+        const batch = writeBatch(db);
+        toUpdate.slice(i, i + CHUNK).forEach(({ col, id, data }) => {
+          const years = Array.isArray(data.assignedYear) ? data.assignedYear : [data.assignedYear || 'Year 11'];
+          const courses = Array.isArray(data.assignedCourse) ? data.assignedCourse : [data.assignedCourse || 'Advanced'];
+          const allIds = new Set();
+          years.forEach(year => {
+            const isSenior = ['Year 11', 'Year 12'].includes(year);
+            if (isSenior) {
+              courses.forEach(course => {
+                const docId = `${year.replace(' ', '_')}_${course}`;
+                (chaptersByDoc[docId] || []).forEach(cid => allIds.add(cid));
+              });
+            } else {
+              const docId = year.replace(' ', '_');
+              (chaptersByDoc[docId] || []).forEach(cid => allIds.add(cid));
+            }
+          });
+          if (allIds.size > 0) {
+            batch.update(fsDoc(db, col, id), { assignedChapters: [...allIds] });
+            updated++;
+          }
+        });
+        await batch.commit();
+      }
+
+      showToast(`완료: ${updated}명 학생의 챕터가 Active로 설정됐습니다.`, 'success');
+    } catch (err) {
+      console.error(err);
+      showToast('오류: ' + err.message, 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleVerifyCounts = async () => {
     const chapterIds = displayData.map((ch) => ch.id).filter(Boolean);
     const topicIds = displayData.flatMap((ch) => (ch.topics || []).map((t) => t.id)).filter(Boolean);
@@ -2822,6 +2889,19 @@ const Curriculum = () => {
 
                   {adminActiveTab === 'utils' && (
                     <div className="admin-sync-grid">
+                      {/* Assign all chapters to all students */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge generic">BULK</span>
+                          <span className="sync-card-title">모든 학생 전 챕터 Active 설정</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={handleAssignAllChaptersToAllStudents} disabled={isMigrating} className="sync-btn warning">
+                            ✅ 전체 Active
+                          </button>
+                        </div>
+                      </div>
+
                       {/* Add Curve Q */}
                       <div className="sync-card">
                         <div className="sync-card-info">
