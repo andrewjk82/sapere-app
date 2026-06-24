@@ -15,10 +15,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "630000.00",
-      "540000.00",
-      "660000.00",
-      "600000.00"
+      "\\(630000.00\\)",
+      "\\(540000.00\\)",
+      "\\(660000.00\\)",
+      "\\(600000.00\\)"
     ]
   },
   {
@@ -37,10 +37,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "450000.00",
-      "472500.00",
-      "495000.00",
-      "405000.00"
+      "\\(450000.00\\)",
+      "\\(472500.00\\)",
+      "\\(495000.00\\)",
+      "\\(405000.00\\)"
     ]
   },
   {
@@ -59,10 +59,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "149501.95",
-      "128144.53",
-      "156621.09",
-      "142382.81"
+      "\\(149501.95\\)",
+      "\\(128144.53\\)",
+      "\\(156621.09\\)",
+      "\\(142382.81\\)"
     ]
   },
   {
@@ -81,10 +81,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "86.31%",
-      "73.98%",
-      "90.42%",
-      "82.20%"
+      "\\(86.31\\%\\)",
+      "\\(73.98\\%\\)",
+      "\\(90.42\\%\\)",
+      "\\(82.20\\%\\)"
     ]
   },
   {
@@ -103,10 +103,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "115083.01",
-      "98642.58",
-      "120563.16",
-      "109602.87"
+      "\\(115083.01\\)",
+      "\\(98642.58\\)",
+      "\\(120563.16\\)",
+      "\\(109602.87\\)"
     ]
   },
   {
@@ -125,10 +125,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "158403.03",
-      "150860.03",
-      "165946.03",
-      "135774.03"
+      "\\(158403.03\\)",
+      "\\(150860.03\\)",
+      "\\(165946.03\\)",
+      "\\(135774.03\\)"
     ]
   },
   {
@@ -147,10 +147,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "62.28%",
-      "68.51%",
-      "56.05%",
-      "65.39%"
+      "\\(62.28\\%\\)",
+      "\\(68.51\\%\\)",
+      "\\(56.05\\%\\)",
+      "\\(65.39\\%\\)"
     ]
   },
   {
@@ -169,10 +169,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "624148.87",
-      "567408.06",
-      "595778.46",
-      "510667.25"
+      "\\(624148.87\\)",
+      "\\(567408.06\\)",
+      "\\(595778.46\\)",
+      "\\(510667.25\\)"
     ]
   },
   {
@@ -222,10 +222,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "1557.42",
-      "1903.52",
-      "1730.47",
-      "1816.99"
+      "\\(1557.42\\)",
+      "\\(1903.52\\)",
+      "\\(1730.47\\)",
+      "\\(1816.99\\)"
     ]
   },
   {
@@ -244,10 +244,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "1470000",
-      "1400000",
-      "1540000",
-      "1260000"
+      "\\(1470000\\)",
+      "\\(1400000\\)",
+      "\\(1540000\\)",
+      "\\(1260000\\)"
     ]
   },
   {
@@ -266,10 +266,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "540000",
-      "600000",
-      "630000",
-      "660000"
+      "\\(540000\\)",
+      "\\(600000\\)",
+      "\\(630000\\)",
+      "\\(660000\\)"
     ]
   },
   {
@@ -288,10 +288,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "1029000",
-      "882000",
-      "1078000",
-      "980000"
+      "\\(1029000\\)",
+      "\\(882000\\)",
+      "\\(1078000\\)",
+      "\\(980000\\)"
     ]
   },
   {
@@ -310,10 +310,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "378000",
-      "462000",
-      "441000",
-      "420000"
+      "\\(378000\\)",
+      "\\(462000\\)",
+      "\\(441000\\)",
+      "\\(420000\\)"
     ]
   },
   {
@@ -332,10 +332,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "617400",
-      "754600",
-      "720300",
-      "686000"
+      "\\(617400\\)",
+      "\\(754600\\)",
+      "\\(720300\\)",
+      "\\(686000\\)"
     ]
   },
   {
@@ -354,10 +354,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "264600",
-      "308700",
-      "323400",
-      "294000"
+      "\\(264600\\)",
+      "\\(308700\\)",
+      "\\(323400\\)",
+      "\\(294000\\)"
     ]
   },
   {
@@ -376,10 +376,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "432180",
-      "504210",
-      "480200",
-      "528220"
+      "\\(432180\\)",
+      "\\(504210\\)",
+      "\\(480200\\)",
+      "\\(528220\\)"
     ]
   },
   {
@@ -398,10 +398,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "185220",
-      "205800",
-      "216090",
-      "226380"
+      "\\(185220\\)",
+      "\\(205800\\)",
+      "\\(216090\\)",
+      "\\(226380\\)"
     ]
   },
   {
@@ -420,10 +420,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "135065.74",
-      "157576.69",
-      "150073.04",
-      "165080.34"
+      "\\(135065.74\\)",
+      "\\(157576.69\\)",
+      "\\(150073.04\\)",
+      "\\(165080.34\\)"
     ]
   },
   {
@@ -442,10 +442,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "31920.70",
-      "27360.60",
-      "30400.67",
-      "33440.74"
+      "\\(31920.70\\)",
+      "\\(27360.60\\)",
+      "\\(30400.67\\)",
+      "\\(33440.74\\)"
     ]
   },
   {
@@ -464,10 +464,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "97.23%",
-      "87.51%",
-      "102.09%",
-      "106.95%"
+      "\\(97.23\\%\\)",
+      "\\(87.51\\%\\)",
+      "\\(102.09\\%\\)",
+      "\\(106.95\\%\\)"
     ]
   },
   {
@@ -486,10 +486,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "73.79%",
-      "81.17%",
-      "66.41%",
-      "77.48%"
+      "\\(73.79\\%\\)",
+      "\\(81.17\\%\\)",
+      "\\(66.41\\%\\)",
+      "\\(77.48\\%\\)"
     ]
   },
   {
@@ -508,10 +508,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "2344633.59",
-      "2579096.95",
-      "2110170.23",
-      "2461865.27"
+      "\\(2344633.59\\)",
+      "\\(2579096.95\\)",
+      "\\(2110170.23\\)",
+      "\\(2461865.27\\)"
     ]
   },
   {
@@ -530,10 +530,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "9000",
-      "9900",
-      "8100",
-      "9450"
+      "\\(9000\\)",
+      "\\(9900\\)",
+      "\\(8100\\)",
+      "\\(9450\\)"
     ]
   },
   {
@@ -552,10 +552,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "11250",
-      "12375",
-      "10125",
-      "11813"
+      "\\(11250\\)",
+      "\\(12375\\)",
+      "\\(10125\\)",
+      "\\(11813\\)"
     ]
   },
   {
@@ -574,10 +574,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "70408",
-      "60350",
-      "73761",
-      "67055"
+      "\\(70408\\)",
+      "\\(60350\\)",
+      "\\(73761\\)",
+      "\\(67055\\)"
     ]
   },
   {
@@ -596,10 +596,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "98.19%",
-      "93.72%",
-      "89.26%",
-      "80.33%"
+      "\\(98.19\\%\\)",
+      "\\(93.72\\%\\)",
+      "\\(89.26\\%\\)",
+      "\\(80.33\\%\\)"
     ]
   },
   {
@@ -618,10 +618,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "5985.50",
-      "6584.05",
-      "5386.95",
-      "6284.78"
+      "\\(5985.50\\)",
+      "\\(6584.05\\)",
+      "\\(5386.95\\)",
+      "\\(6284.78\\)"
     ]
   },
   {
@@ -640,10 +640,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "16406",
-      "14063",
-      "17188",
-      "15625"
+      "\\(16406\\)",
+      "\\(14063\\)",
+      "\\(17188\\)",
+      "\\(15625\\)"
     ]
   },
   {
@@ -662,10 +662,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "33570",
-      "30518",
-      "27466",
-      "32044"
+      "\\(33570\\)",
+      "\\(30518\\)",
+      "\\(27466\\)",
+      "\\(32044\\)"
     ]
   },
   {
@@ -684,10 +684,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "79.03%",
-      "86.93%",
-      "82.98%",
-      "71.13%"
+      "\\(79.03\\%\\)",
+      "\\(86.93\\%\\)",
+      "\\(82.98\\%\\)",
+      "\\(71.13\\%\\)"
     ]
   },
   {
@@ -706,10 +706,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "3445.43",
-      "3789.97",
-      "3617.70",
-      "3100.89"
+      "\\(3445.43\\)",
+      "\\(3789.97\\)",
+      "\\(3617.70\\)",
+      "\\(3100.89\\)"
     ]
   },
   {
@@ -728,10 +728,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "2421.56",
-      "2306.25",
-      "2536.88",
-      "2075.63"
+      "\\(2421.56\\)",
+      "\\(2306.25\\)",
+      "\\(2536.88\\)",
+      "\\(2075.63\\)"
     ]
   },
   {
@@ -750,10 +750,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "4467.90",
-      "5212.55",
-      "5460.76",
-      "4964.33"
+      "\\(4467.90\\)",
+      "\\(5212.55\\)",
+      "\\(5460.76\\)",
+      "\\(4964.33\\)"
     ]
   },
   {
@@ -777,10 +777,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "1.40%",
-      "1.64%",
-      "1.72%",
-      "1.56%"
+      "\\(1.40\\%\\)",
+      "\\(1.64\\%\\)",
+      "\\(1.72\\%\\)",
+      "\\(1.56\\%\\)"
     ]
   },
   {
@@ -804,10 +804,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "gain of 45.68%",
-      "gain of 45.68% (estimated)",
-      "gain of 45.68% (nominal)",
-      "gain of 45.68% (rounded)"
+      "\\(gain of 45.68\\%\\)",
+      "\\(gain of 45.68\\% (estimated)\\)",
+      "\\(gain of 45.68\\% (nominal)\\)",
+      "\\(gain of 45.68\\% (rounded)\\)"
     ]
   },
   {
@@ -826,10 +826,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "23.7%",
-      "22.6%",
-      "24.9%",
-      "20.3%"
+      "\\(23.7\\%\\)",
+      "\\(22.6\\%\\)",
+      "\\(24.9\\%\\)",
+      "\\(20.3\\%\\)"
     ]
   },
   {
@@ -848,10 +848,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "23.2%",
-      "24.3%",
-      "22.1%",
-      "19.9%"
+      "\\(23.2\\%\\)",
+      "\\(24.3\\%\\)",
+      "\\(22.1\\%\\)",
+      "\\(19.9\\%\\)"
     ]
   },
   {
@@ -870,10 +870,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "23.7%",
-      "22.6%",
-      "24.9%",
-      "20.3%"
+      "\\(23.7\\%\\)",
+      "\\(22.6\\%\\)",
+      "\\(24.9\\%\\)",
+      "\\(20.3\\%\\)"
     ]
   },
   {
@@ -892,10 +892,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "23.9%",
-      "21.7%",
-      "22.8%",
-      "19.5%"
+      "\\(23.9\\%\\)",
+      "\\(21.7\\%\\)",
+      "\\(22.8\\%\\)",
+      "\\(19.5\\%\\)"
     ]
   },
   {
@@ -914,10 +914,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "22.4%",
-      "23.5%",
-      "20.2%",
-      "24.6%"
+      "\\(22.4\\%\\)",
+      "\\(23.5\\%\\)",
+      "\\(20.2\\%\\)",
+      "\\(24.6\\%\\)"
     ]
   },
   {
@@ -936,10 +936,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "21.5%",
-      "25.1%",
-      "23.9%",
-      "26.3%"
+      "\\(21.5\\%\\)",
+      "\\(25.1\\%\\)",
+      "\\(23.9\\%\\)",
+      "\\(26.3\\%\\)"
     ]
   },
   {
@@ -963,10 +963,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "87.85%",
-      "79.06%",
-      "96.64%",
-      "92.24%"
+      "\\(87.85\\%\\)",
+      "\\(79.06\\%\\)",
+      "\\(96.64\\%\\)",
+      "\\(92.24\\%\\)"
     ]
   },
   {
@@ -990,10 +990,10 @@ export const Y10_CH1E_QUESTIONS = [
     ],
     "t": "Compound depreciation",
     "opts": [
-      "3.52%",
-      "3.70%",
-      "3.87%",
-      "3.17%"
+      "\\(3.52\\%\\)",
+      "\\(3.70\\%\\)",
+      "\\(3.87\\%\\)",
+      "\\(3.17\\%\\)"
     ]
   },
   {
@@ -1069,10 +1069,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 181000 \\) dollars and depreciates to a salvage value of \\( 55695 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "21.0%",
     "opts": [
-      "\\(22.1%\\)",
-      "\\(18.9%\\)",
-      "\\(23.1%\\)",
-      "\\(21.0%\\)"
+      "\\(22.1\\%\\)",
+      "\\(18.9\\%\\)",
+      "\\(23.1\\%\\)",
+      "\\(21.0\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -1293,10 +1293,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 22000 \\) liters of a chemical solution. Every year, \\( 6160 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(9.03%\\)",
-      "\\(10.03%\\)",
-      "\\(11.03%\\)",
-      "\\(10.53%\\)"
+      "\\(9.03\\%\\)",
+      "\\(10.03\\%\\)",
+      "\\(11.03\\%\\)",
+      "\\(10.53\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -1389,10 +1389,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 189000 \\) dollars and depreciates to a salvage value of \\( 79042 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "16.0%",
     "opts": [
-      "\\(16.8%\\)",
-      "\\(14.4%\\)",
-      "\\(17.6%\\)",
-      "\\(16.0%\\)"
+      "\\(16.8\\%\\)",
+      "\\(14.4\\%\\)",
+      "\\(17.6\\%\\)",
+      "\\(16.0\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -1613,10 +1613,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 29000 \\) liters of a chemical solution. Every year, \\( 8120 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(10.03%\\)",
-      "\\(11.03%\\)",
-      "\\(10.53%\\)",
-      "\\(9.03%\\)"
+      "\\(10.03\\%\\)",
+      "\\(11.03\\%\\)",
+      "\\(10.53\\%\\)",
+      "\\(9.03\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -1709,10 +1709,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 196000 \\) dollars and depreciates to a salvage value of \\( 72665 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "18.0%",
     "opts": [
-      "\\(18.0%\\)",
-      "\\(19.8%\\)",
-      "\\(18.9%\\)",
-      "\\(16.2%\\)"
+      "\\(18.0\\%\\)",
+      "\\(19.8\\%\\)",
+      "\\(18.9\\%\\)",
+      "\\(16.2\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -1933,10 +1933,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 16000 \\) liters of a chemical solution. Every year, \\( 4480 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(10.03%\\)",
-      "\\(11.03%\\)",
-      "\\(9.03%\\)",
-      "\\(10.53%\\)"
+      "\\(10.03\\%\\)",
+      "\\(11.03\\%\\)",
+      "\\(9.03\\%\\)",
+      "\\(10.53\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -2029,10 +2029,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 204000 \\) dollars and depreciates to a salvage value of \\( 66847 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "20.0%",
     "opts": [
-      "\\(18.0%\\)",
-      "\\(22.0%\\)",
-      "\\(21.0%\\)",
-      "\\(20.0%\\)"
+      "\\(18.0\\%\\)",
+      "\\(22.0\\%\\)",
+      "\\(21.0\\%\\)",
+      "\\(20.0\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -2253,10 +2253,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 24000 \\) liters of a chemical solution. Every year, \\( 6720 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(10.03%\\)",
-      "\\(11.03%\\)",
-      "\\(9.03%\\)",
-      "\\(10.53%\\)"
+      "\\(10.03\\%\\)",
+      "\\(11.03\\%\\)",
+      "\\(9.03\\%\\)",
+      "\\(10.53\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -2349,10 +2349,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 211000 \\) dollars and depreciates to a salvage value of \\( 93622 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "15.0%",
     "opts": [
-      "\\(13.5%\\)",
-      "\\(15.0%\\)",
-      "\\(16.5%\\)",
-      "\\(15.8%\\)"
+      "\\(13.5\\%\\)",
+      "\\(15.0\\%\\)",
+      "\\(16.5\\%\\)",
+      "\\(15.8\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -2573,10 +2573,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 31000 \\) liters of a chemical solution. Every year, \\( 8680 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(9.03%\\)",
-      "\\(10.53%\\)",
-      "\\(11.03%\\)",
-      "\\(10.03%\\)"
+      "\\(9.03\\%\\)",
+      "\\(10.53\\%\\)",
+      "\\(11.03\\%\\)",
+      "\\(10.03\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -2669,10 +2669,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 218000 \\) dollars and depreciates to a salvage value of \\( 85871 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "17.0%",
     "opts": [
-      "\\(17.0%\\)",
-      "\\(18.7%\\)",
-      "\\(15.3%\\)",
-      "\\(17.9%\\)"
+      "\\(17.0\\%\\)",
+      "\\(18.7\\%\\)",
+      "\\(15.3\\%\\)",
+      "\\(17.9\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -2893,10 +2893,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 19000 \\) liters of a chemical solution. Every year, \\( 5320 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(9.03%\\)",
-      "\\(11.03%\\)",
-      "\\(10.03%\\)",
-      "\\(10.53%\\)"
+      "\\(9.03\\%\\)",
+      "\\(11.03\\%\\)",
+      "\\(10.03\\%\\)",
+      "\\(10.53\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -2989,10 +2989,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 226000 \\) dollars and depreciates to a salvage value of \\( 78801 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "19.0%",
     "opts": [
-      "\\(17.1%\\)",
-      "\\(20.9%\\)",
-      "\\(19.0%\\)",
-      "\\(19.9%\\)"
+      "\\(17.1\\%\\)",
+      "\\(20.9\\%\\)",
+      "\\(19.0\\%\\)",
+      "\\(19.9\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -3213,10 +3213,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 26000 \\) liters of a chemical solution. Every year, \\( 7280 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(9.03%\\)",
-      "\\(11.03%\\)",
-      "\\(10.53%\\)",
-      "\\(10.03%\\)"
+      "\\(9.03\\%\\)",
+      "\\(11.03\\%\\)",
+      "\\(10.53\\%\\)",
+      "\\(10.03\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -3309,10 +3309,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 233000 \\) dollars and depreciates to a salvage value of \\( 71695 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "21.0%",
     "opts": [
-      "\\(23.1%\\)",
-      "\\(18.9%\\)",
-      "\\(21.0%\\)",
-      "\\(22.1%\\)"
+      "\\(23.1\\%\\)",
+      "\\(18.9\\%\\)",
+      "\\(21.0\\%\\)",
+      "\\(22.1\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -3533,10 +3533,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 33000 \\) liters of a chemical solution. Every year, \\( 9240 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(9.03%\\)",
-      "\\(10.03%\\)",
-      "\\(10.53%\\)",
-      "\\(11.03%\\)"
+      "\\(9.03\\%\\)",
+      "\\(10.03\\%\\)",
+      "\\(10.53\\%\\)",
+      "\\(11.03\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -3629,10 +3629,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 241000 \\) dollars and depreciates to a salvage value of \\( 100789 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "16.0%",
     "opts": [
-      "\\(17.6%\\)",
-      "\\(14.4%\\)",
-      "\\(16.0%\\)",
-      "\\(16.8%\\)"
+      "\\(17.6\\%\\)",
+      "\\(14.4\\%\\)",
+      "\\(16.0\\%\\)",
+      "\\(16.8\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -3853,10 +3853,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 21000 \\) liters of a chemical solution. Every year, \\( 5880 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(11.03%\\)",
-      "\\(10.03%\\)",
-      "\\(10.53%\\)",
-      "\\(9.03%\\)"
+      "\\(11.03\\%\\)",
+      "\\(10.03\\%\\)",
+      "\\(10.53\\%\\)",
+      "\\(9.03\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -3949,10 +3949,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "A commercial construction excavator is purchased for \\( 248000 \\) dollars and depreciates to a salvage value of \\( 91943 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
     "a": "18.0%",
     "opts": [
-      "\\(18.0%\\)",
-      "\\(19.8%\\)",
-      "\\(18.9%\\)",
-      "\\(16.2%\\)"
+      "\\(18.0\\%\\)",
+      "\\(19.8\\%\\)",
+      "\\(18.9\\%\\)",
+      "\\(16.2\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -4173,10 +4173,10 @@ export const Y10_CH1E_QUESTIONS = [
     "question": "An industrial chemical reactor contains \\( 28000 \\) liters of a chemical solution. Every year, \\( 7840 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
     "a": "10.03%",
     "opts": [
-      "\\(10.03%\\)",
-      "\\(11.03%\\)",
-      "\\(10.53%\\)",
-      "\\(9.03%\\)"
+      "\\(10.03\\%\\)",
+      "\\(11.03\\%\\)",
+      "\\(10.53\\%\\)",
+      "\\(9.03\\%\\)"
     ],
     "solutionSteps": [
       {
@@ -4192,6 +4192,3206 @@ export const Y10_CH1E_QUESTIONS = [
       {
         "explanation": "Convert to percentage and round to two decimal places.",
         "workingOut": "\\(\\text\\{Concentration\\} = C \\times 100\\% \\approx 10.03%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q1",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "VortexEnergy purchased a new autonomous logistics drone for \\(\\$58500\\). For the first \\(3\\) years, it depreciates at a reducing balance rate of \\(12.8\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(16.8\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(5\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$26850.48\\)",
+    "opts": [
+      "\\(\\$26263.57\\)",
+      "\\(\\$28193.00\\)",
+      "\\(\\$26850.48\\)",
+      "\\(\\$25507.95\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 3 years.",
+        "workingOut": "\\(V_{3} = 58500 \\times \\left(1 - \\frac{12.8}{100}\\right)^{3} \\approx 38788.7086\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{5} = V_{3} \\times \\left(1 - \\frac{16.8}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{5} \\approx \\$26850.48\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q2",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "AeroSystems purchased a new robotic assembly arm for \\(\\$67000\\). For the first \\(4\\) years, it depreciates at a reducing balance rate of \\(13.6\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(18.6\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(6\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$24738.80\\)",
+    "opts": [
+      "\\(\\$23501.86\\)",
+      "\\(\\$25975.74\\)",
+      "\\(\\$23369.35\\)",
+      "\\(\\$24738.80\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 4 years.",
+        "workingOut": "\\(V_{4} = 67000 \\times \\left(1 - \\frac{13.6}{100}\\right)^{4} \\approx 37336.1706\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{6} = V_{4} \\times \\left(1 - \\frac{18.6}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{6} \\approx \\$24738.80\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q3",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "EcoSphere purchased a new hydroponic nutrient pump for \\(\\$75500\\). For the first \\(2\\) years, it depreciates at a reducing balance rate of \\(14.4\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(17.4\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(4\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$37744.58\\)",
+    "opts": [
+      "\\(\\$37744.58\\)",
+      "\\(\\$39631.81\\)",
+      "\\(\\$37768.60\\)",
+      "\\(\\$35857.35\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 2 years.",
+        "workingOut": "\\(V_{2} = 75500 \\times \\left(1 - \\frac{14.4}{100}\\right)^{2} \\approx 55321.5680\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{4} = V_{2} \\times \\left(1 - \\frac{17.4}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{4} \\approx \\$37744.58\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q4",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "NexusRobotics purchased a new spectrometer analyzer for \\(\\$84000\\). For the first \\(3\\) years, it depreciates at a reducing balance rate of \\(15.2\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(19.2\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(5\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$33441.79\\)",
+    "opts": [
+      "\\(\\$31769.70\\)",
+      "\\(\\$35113.88\\)",
+      "\\(\\$33441.79\\)",
+      "\\(\\$32691.21\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 3 years.",
+        "workingOut": "\\(V_{3} = 84000 \\times \\left(1 - \\frac{15.2}{100}\\right)^{3} \\approx 51223.2161\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{5} = V_{3} \\times \\left(1 - \\frac{19.2}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{5} \\approx \\$33441.79\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q5",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "QuantumDynamics purchased a new heavy-duty excavating crane for \\(\\$92500\\). For the first \\(4\\) years, it depreciates at a reducing balance rate of \\(16.0\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(21.0\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(6\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$28741.74\\)",
+    "opts": [
+      "\\(\\$28741.74\\)",
+      "\\(\\$30178.83\\)",
+      "\\(\\$27304.65\\)",
+      "\\(\\$27107.37\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 4 years.",
+        "workingOut": "\\(V_{4} = 92500 \\times \\left(1 - \\frac{16.0}{100}\\right)^{4} \\approx 46053.1008\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{6} = V_{4} \\times \\left(1 - \\frac{21.0}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{6} \\approx \\$28741.74\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q6",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "HelixAgriTech purchased a new high-volume commercial printer for \\(\\$101000\\). For the first \\(2\\) years, it depreciates at a reducing balance rate of \\(16.8\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(19.8\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(4\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$44969.37\\)",
+    "opts": [
+      "\\(\\$42720.90\\)",
+      "\\(\\$47217.83\\)",
+      "\\(\\$44969.37\\)",
+      "\\(\\$44999.70\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 2 years.",
+        "workingOut": "\\(V_{2} = 101000 \\times \\left(1 - \\frac{16.8}{100}\\right)^{2} \\approx 69914.6240\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{4} = V_{2} \\times \\left(1 - \\frac{19.8}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{4} \\approx \\$44969.37\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "StellarMining purchased a new smart conveyor system for \\(\\$109500\\). For the first \\(3\\) years, it depreciates at a reducing balance rate of \\(17.6\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(21.6\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(5\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$37655.45\\)",
+    "opts": [
+      "\\(\\$37655.45\\)",
+      "\\(\\$39538.23\\)",
+      "\\(\\$36787.00\\)",
+      "\\(\\$35772.68\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 3 years.",
+        "workingOut": "\\(V_{3} = 109500 \\times \\left(1 - \\frac{17.6}{100}\\right)^{3} \\approx 61262.6465\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{5} = V_{3} \\times \\left(1 - \\frac{21.6}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{5} \\approx \\$37655.45\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q8",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "BioPharmaCorp purchased a new cryogenic storage container for \\(\\$118000\\). For the first \\(4\\) years, it depreciates at a reducing balance rate of \\(18.4\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(23.4\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(6\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$30697.30\\)",
+    "opts": [
+      "\\(\\$29162.44\\)",
+      "\\(\\$30697.30\\)",
+      "\\(\\$28902.87\\)",
+      "\\(\\$32232.17\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 4 years.",
+        "workingOut": "\\(V_{4} = 118000 \\times \\left(1 - \\frac{18.4}{100}\\right)^{4} \\approx 52316.9771\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{6} = V_{4} \\times \\left(1 - \\frac{23.4}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{6} \\approx \\$30697.30\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q9",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "ApexLogistics purchased a new electric delivery vehicle for \\(\\$126500\\). For the first \\(2\\) years, it depreciates at a reducing balance rate of \\(19.2\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(22.2\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(4\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$49988.77\\)",
+    "opts": [
+      "\\(\\$52488.21\\)",
+      "\\(\\$50024.56\\)",
+      "\\(\\$47489.33\\)",
+      "\\(\\$49988.77\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 2 years.",
+        "workingOut": "\\(V_{2} = 126500 \\times \\left(1 - \\frac{19.2}{100}\\right)^{2} \\approx 82587.2960\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{4} = V_{2} \\times \\left(1 - \\frac{22.2}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{4} \\approx \\$49988.77\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q10",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "NovaTech purchased a new pneumatic metal press for \\(\\$135000\\). For the first \\(3\\) years, it depreciates at a reducing balance rate of \\(20.0\\%\\) p.a. Due to wear and tear, the depreciation rate increases to \\(24.0\\%\\) p.a. for the subsequent \\(2\\) years. Calculate the book value of the asset at the end of this \\(5\\)-year period, correct to the nearest cent.",
+    "a": "\\(\\$39923.71\\)",
+    "opts": [
+      "\\(\\$37927.53\\)",
+      "\\(\\$39923.71\\)",
+      "\\(\\$41919.90\\)",
+      "\\(\\$38976.85\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after the first 3 years.",
+        "workingOut": "\\(V_{3} = 135000 \\times \\left(1 - \\frac{20.0}{100}\\right)^{3} \\approx 69120.0000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the new value, calculate the final book value after another 2 years.",
+        "workingOut": "\\(V_{5} = V_{3} \\times \\left(1 - \\frac{24.0}{100}\\right)^{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the final book value rounded to the nearest cent.",
+        "workingOut": "\\(V_{5} \\approx \\$39923.71\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q11",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "EcoSphere compares two depreciation models for a \\(\\$92000\\) robotic assembly arm. Model A uses the reducing balance method at \\(15.9\\%\\) p.a. Model B uses the straight-line method at \\(8.5\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(\\$14194.93\\)",
+    "opts": [
+      "\\(\\$14904.68\\)",
+      "\\(\\$14194.93\\)",
+      "\\(\\$13485.19\\)",
+      "\\(\\$34040.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 5 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 92000 \\times \\left(1 - \\frac{15.9}{100}\\right)^{5} \\approx 38705.0655\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 5 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 92000 - \\left(92000 \\times \\frac{8.5}{100} \\times 5\\right) = 52900.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$14194.93\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q12",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "NexusRobotics compares two depreciation models for a \\(\\$104000\\) hydroponic nutrient pump. Model A uses the reducing balance method at \\(16.8\\%\\) p.a. Model B uses the straight-line method at \\(9.0\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$13343.64\\)",
+    "opts": [
+      "\\(\\$13343.64\\)",
+      "\\(\\$14010.82\\)",
+      "\\(\\$12676.46\\)",
+      "\\(\\$48672.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 6 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 104000 \\times \\left(1 - \\frac{16.8}{100}\\right)^{6} \\approx 34496.3620\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 6 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 104000 - \\left(104000 \\times \\frac{9.0}{100} \\times 6\\right) = 47840.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$13343.64\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q13",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "QuantumDynamics compares two depreciation models for a \\(\\$116000\\) spectrometer analyzer. Model A uses the reducing balance method at \\(17.7\\%\\) p.a. Model B uses the straight-line method at \\(9.5\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(4\\) years, correct to the nearest cent.",
+    "a": "\\(\\$18702.15\\)",
+    "opts": [
+      "\\(\\$18702.15\\)",
+      "\\(\\$19637.26\\)",
+      "\\(\\$17767.04\\)",
+      "\\(\\$38048.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 4 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 116000 \\times \\left(1 - \\frac{17.7}{100}\\right)^{4} \\approx 53217.8506\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 4 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 116000 - \\left(116000 \\times \\frac{9.5}{100} \\times 4\\right) = 71920.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$18702.15\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q14",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "HelixAgriTech compares two depreciation models for a \\(\\$128000\\) heavy-duty excavating crane. Model A uses the reducing balance method at \\(18.6\\%\\) p.a. Model B uses the straight-line method at \\(10.0\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(\\$18256.23\\)",
+    "opts": [
+      "\\(\\$18256.23\\)",
+      "\\(\\$19169.04\\)",
+      "\\(\\$55040.00\\)",
+      "\\(\\$17343.41\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 5 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 128000 \\times \\left(1 - \\frac{18.6}{100}\\right)^{5} \\approx 45743.7742\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 5 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 128000 - \\left(128000 \\times \\frac{10.0}{100} \\times 5\\right) = 64000.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$18256.23\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q15",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "StellarMining compares two depreciation models for a \\(\\$140000\\) high-volume commercial printer. Model A uses the reducing balance method at \\(19.5\\%\\) p.a. Model B uses the straight-line method at \\(10.5\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$13701.90\\)",
+    "opts": [
+      "\\(\\$13701.90\\)",
+      "\\(\\$75600.00\\)",
+      "\\(\\$14386.99\\)",
+      "\\(\\$13016.80\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 6 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 140000 \\times \\left(1 - \\frac{19.5}{100}\\right)^{6} \\approx 38098.1000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 6 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 140000 - \\left(140000 \\times \\frac{10.5}{100} \\times 6\\right) = 51800.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$13701.90\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q16",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "BioPharmaCorp compares two depreciation models for a \\(\\$152000\\) smart conveyor system. Model A uses the reducing balance method at \\(20.4\\%\\) p.a. Model B uses the straight-line method at \\(11.0\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(4\\) years, correct to the nearest cent.",
+    "a": "\\(\\$24096.68\\)",
+    "opts": [
+      "\\(\\$57152.00\\)",
+      "\\(\\$22891.84\\)",
+      "\\(\\$25301.51\\)",
+      "\\(\\$24096.68\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 4 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 152000 \\times \\left(1 - \\frac{20.4}{100}\\right)^{4} \\approx 61023.3238\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 4 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 152000 - \\left(152000 \\times \\frac{11.0}{100} \\times 4\\right) = 85120.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$24096.68\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q17",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "ApexLogistics compares two depreciation models for a \\(\\$164000\\) cryogenic storage container. Model A uses the reducing balance method at \\(21.3\\%\\) p.a. Model B uses the straight-line method at \\(11.5\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(\\$20187.20\\)",
+    "opts": [
+      "\\(\\$80360.00\\)",
+      "\\(\\$19177.84\\)",
+      "\\(\\$21196.56\\)",
+      "\\(\\$20187.20\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 5 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 164000 \\times \\left(1 - \\frac{21.3}{100}\\right)^{5} \\approx 49512.8026\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 5 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 164000 - \\left(164000 \\times \\frac{11.5}{100} \\times 5\\right) = 69700.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$20187.20\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q18",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "NovaTech compares two depreciation models for a \\(\\$176000\\) electric delivery vehicle. Model A uses the reducing balance method at \\(22.2\\%\\) p.a. Model B uses the straight-line method at \\(12.0\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$10250.75\\)",
+    "opts": [
+      "\\(\\$107712.00\\)",
+      "\\(\\$10250.75\\)",
+      "\\(\\$10763.28\\)",
+      "\\(\\$9738.21\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 6 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 176000 \\times \\left(1 - \\frac{22.2}{100}\\right)^{6} \\approx 39029.2539\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 6 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 176000 - \\left(176000 \\times \\frac{12.0}{100} \\times 6\\right) = 49280.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$10250.75\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q19",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "HorizonManufacturing compares two depreciation models for a \\(\\$188000\\) pneumatic metal press. Model A uses the reducing balance method at \\(23.1\\%\\) p.a. Model B uses the straight-line method at \\(12.5\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(4\\) years, correct to the nearest cent.",
+    "a": "\\(\\$28254.93\\)",
+    "opts": [
+      "\\(\\$79712.00\\)",
+      "\\(\\$26842.18\\)",
+      "\\(\\$29667.67\\)",
+      "\\(\\$28254.93\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 4 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 188000 \\times \\left(1 - \\frac{23.1}{100}\\right)^{4} \\approx 65745.0725\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 4 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 188000 - \\left(188000 \\times \\frac{12.5}{100} \\times 4\\right) = 94000.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$28254.93\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q20",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "ZenithAutomation compares two depreciation models for a \\(\\$200000\\) supercomputing node cluster. Model A uses the reducing balance method at \\(24.0\\%\\) p.a. Model B uses the straight-line method at \\(13.0\\%\\) p.a. Find the absolute difference in the asset's book value between the two models after \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(\\$19289.49\\)",
+    "opts": [
+      "\\(\\$20253.97\\)",
+      "\\(\\$110000.00\\)",
+      "\\(\\$19289.49\\)",
+      "\\(\\$18325.02\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value after 5 years using the reducing balance method (Model A).",
+        "workingOut": "\\(V_{\\text{RB}} = 200000 \\times \\left(1 - \\frac{24.0}{100}\\right)^{5} \\approx 50710.5075\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value after 5 years using the straight-line method (Model B).",
+        "workingOut": "\\(V_{\\text{SL}} = 200000 - \\left(200000 \\times \\frac{13.0}{100} \\times 5\\right) = 70000.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$19289.49\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q21",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized hydroponic nutrient pump is purchased by QuantumDynamics for \\(\\$69000\\). The asset depreciates by \\(10.7\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(2.2\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$35144.06\\)",
+    "opts": [
+      "\\(\\$33386.86\\)",
+      "\\(\\$35144.06\\)",
+      "\\(\\$39183.79\\)",
+      "\\(\\$36901.26\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 69000 \\times \\left(1 - \\frac{10.7}{100}\\right)^5 \\approx 39183.7850\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{2.2}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$35144.06\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q22",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized spectrometer analyzer is purchased by HelixAgriTech for \\(\\$78000\\). The asset depreciates by \\(11.4\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(2.4\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$37823.65\\)",
+    "opts": [
+      "\\(\\$39714.83\\)",
+      "\\(\\$37823.65\\)",
+      "\\(\\$42585.64\\)",
+      "\\(\\$35932.47\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 78000 \\times \\left(1 - \\frac{11.4}{100}\\right)^5 \\approx 42585.6433\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{2.4}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$37823.65\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q23",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized heavy-duty excavating crane is purchased by StellarMining for \\(\\$87000\\). The asset depreciates by \\(12.1\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(2.6\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$40153.82\\)",
+    "opts": [
+      "\\(\\$40153.82\\)",
+      "\\(\\$45652.40\\)",
+      "\\(\\$38146.13\\)",
+      "\\(\\$42161.51\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 87000 \\times \\left(1 - \\frac{12.1}{100}\\right)^5 \\approx 45652.4015\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{2.6}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$40153.82\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q24",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized high-volume commercial printer is purchased by BioPharmaCorp for \\(\\$96000\\). The asset depreciates by \\(12.8\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(2.8\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$42158.78\\)",
+    "opts": [
+      "\\(\\$40050.85\\)",
+      "\\(\\$44266.72\\)",
+      "\\(\\$48400.92\\)",
+      "\\(\\$42158.78\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 96000 \\times \\left(1 - \\frac{12.8}{100}\\right)^5 \\approx 48400.9246\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{2.8}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$42158.78\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q25",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized smart conveyor system is purchased by ApexLogistics for \\(\\$105000\\). The asset depreciates by \\(13.5\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(3.0\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$43861.52\\)",
+    "opts": [
+      "\\(\\$46054.60\\)",
+      "\\(\\$41668.45\\)",
+      "\\(\\$43861.52\\)",
+      "\\(\\$50847.53\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 105000 \\times \\left(1 - \\frac{13.5}{100}\\right)^5 \\approx 50847.5271\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{3.0}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$43861.52\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q26",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized cryogenic storage container is purchased by NovaTech for \\(\\$114000\\). The asset depreciates by \\(14.2\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(3.2\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$45283.79\\)",
+    "opts": [
+      "\\(\\$43019.60\\)",
+      "\\(\\$53007.98\\)",
+      "\\(\\$45283.79\\)",
+      "\\(\\$47547.98\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 114000 \\times \\left(1 - \\frac{14.2}{100}\\right)^5 \\approx 53007.9844\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{3.2}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$45283.79\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q27",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized electric delivery vehicle is purchased by HorizonManufacturing for \\(\\$123000\\). The asset depreciates by \\(14.9\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(3.4\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$46446.20\\)",
+    "opts": [
+      "\\(\\$48768.51\\)",
+      "\\(\\$54897.54\\)",
+      "\\(\\$44123.89\\)",
+      "\\(\\$46446.20\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 123000 \\times \\left(1 - \\frac{14.9}{100}\\right)^5 \\approx 54897.5435\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{3.4}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$46446.20\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q28",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized pneumatic metal press is purchased by ZenithAutomation for \\(\\$132000\\). The asset depreciates by \\(15.6\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(3.6\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$47368.26\\)",
+    "opts": [
+      "\\(\\$56530.93\\)",
+      "\\(\\$47368.26\\)",
+      "\\(\\$49736.67\\)",
+      "\\(\\$44999.84\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 132000 \\times \\left(1 - \\frac{15.6}{100}\\right)^5 \\approx 56530.9344\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{3.6}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$47368.26\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q29",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized supercomputing node cluster is purchased by SigmaFoundry for \\(\\$141000\\). The asset depreciates by \\(16.3\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(3.8\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$48068.40\\)",
+    "opts": [
+      "\\(\\$50471.82\\)",
+      "\\(\\$57922.38\\)",
+      "\\(\\$48068.40\\)",
+      "\\(\\$45664.98\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 141000 \\times \\left(1 - \\frac{16.3}{100}\\right)^5 \\approx 57922.3806\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{3.8}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$48068.40\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q30",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "A specialized seismic testing rig is purchased by PinnacleSteel for \\(\\$150000\\). The asset depreciates by \\(17.0\\%\\) p.a. using the reducing balance method. Over the same \\(5\\)-year period, inflation averages \\(4.0\\%\\) p.a. Calculate the real value (purchasing power in today's dollars) of the asset's book value at the end of the term, correct to the nearest cent.",
+    "a": "\\(\\$48564.06\\)",
+    "opts": [
+      "\\(\\$46135.86\\)",
+      "\\(\\$59085.61\\)",
+      "\\(\\$48564.06\\)",
+      "\\(\\$50992.27\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal book value after 5 years of compound depreciation.",
+        "workingOut": "\\(V_{\\text{nominal}} = 150000 \\times \\left(1 - \\frac{17.0}{100}\\right)^5 \\approx 59085.6096\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal book value by the compound inflation rate to find its real value.",
+        "workingOut": "\\(V_{\\text{real}} = \\frac{V_{\\text{nominal}}}{\\left(1 + \\frac{4.0}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the quotient and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{real}} \\approx \\$48564.06\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q31",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "StellarMining reports that a spectrometer analyzer purchased for \\(\\$135000\\) has a book value of \\(\\$44550\\) after \\(4\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(24.21\\%\\)",
+    "opts": [
+      "\\(16.75\\%\\)",
+      "\\(22.27\\%\\)",
+      "\\(26.14\\%\\)",
+      "\\(24.21\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(44550 = 135000 \\times (1 - r)^{4}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{44550}{135000}\\right)^{\\frac{1}{4}} \\approx 0.757929\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 24.21\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q32",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "BioPharmaCorp reports that a heavy-duty excavating crane purchased for \\(\\$150000\\) has a book value of \\(\\$54000\\) after \\(5\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(18.48\\%\\)",
+    "opts": [
+      "\\(12.80\\%\\)",
+      "\\(18.48\\%\\)",
+      "\\(19.96\\%\\)",
+      "\\(17.00\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(54000 = 150000 \\times (1 - r)^{5}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{54000}{150000}\\right)^{\\frac{1}{5}} \\approx 0.815193\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 18.48\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q33",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "ApexLogistics reports that a high-volume commercial printer purchased for \\(\\$165000\\) has a book value of \\(\\$64350\\) after \\(3\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(26.94\\%\\)",
+    "opts": [
+      "\\(24.78\\%\\)",
+      "\\(20.33\\%\\)",
+      "\\(29.09\\%\\)",
+      "\\(26.94\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(64350 = 165000 \\times (1 - r)^{3}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{64350}{165000}\\right)^{\\frac{1}{3}} \\approx 0.730614\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 26.94\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "NovaTech reports that a smart conveyor system purchased for \\(\\$180000\\) has a book value of \\(\\$75600\\) after \\(4\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(19.50\\%\\)",
+    "opts": [
+      "\\(14.50\\%\\)",
+      "\\(17.94\\%\\)",
+      "\\(21.06\\%\\)",
+      "\\(19.50\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(75600 = 180000 \\times (1 - r)^{4}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{75600}{180000}\\right)^{\\frac{1}{4}} \\approx 0.805030\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 19.50\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q35",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "HorizonManufacturing reports that a cryogenic storage container purchased for \\(\\$195000\\) has a book value of \\(\\$87750\\) after \\(5\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(14.76\\%\\)",
+    "opts": [
+      "\\(14.76\\%\\)",
+      "\\(11.00\\%\\)",
+      "\\(15.94\\%\\)",
+      "\\(13.58\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(87750 = 195000 \\times (1 - r)^{5}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{87750}{195000}\\right)^{\\frac{1}{5}} \\approx 0.852398\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 14.76\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q36",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "ZenithAutomation reports that a electric delivery vehicle purchased for \\(\\$210000\\) has a book value of \\(\\$100800\\) after \\(3\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(21.70\\%\\)",
+    "opts": [
+      "\\(21.70\\%\\)",
+      "\\(23.44\\%\\)",
+      "\\(19.97\\%\\)",
+      "\\(17.33\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(100800 = 210000 \\times (1 - r)^{3}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{100800}{210000}\\right)^{\\frac{1}{3}} \\approx 0.782974\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 21.70\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q37",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "SigmaFoundry reports that a pneumatic metal press purchased for \\(\\$225000\\) has a book value of \\(\\$114750\\) after \\(4\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(15.49\\%\\)",
+    "opts": [
+      "\\(15.49\\%\\)",
+      "\\(16.73\\%\\)",
+      "\\(14.25\\%\\)",
+      "\\(12.25\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(114750 = 225000 \\times (1 - r)^{4}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{114750}{225000}\\right)^{\\frac{1}{4}} \\approx 0.845070\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 15.49\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q38",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "PinnacleSteel reports that a supercomputing node cluster purchased for \\(\\$240000\\) has a book value of \\(\\$129600\\) after \\(5\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(11.59\\%\\)",
+    "opts": [
+      "\\(10.67\\%\\)",
+      "\\(12.52\\%\\)",
+      "\\(11.59\\%\\)",
+      "\\(9.20\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(129600 = 240000 \\times (1 - r)^{5}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{129600}{240000}\\right)^{\\frac{1}{5}} \\approx 0.884054\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 11.59\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q39",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "GenesisLabs reports that a seismic testing rig purchased for \\(\\$255000\\) has a book value of \\(\\$145350\\) after \\(3\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(17.09\\%\\)",
+    "opts": [
+      "\\(14.33\\%\\)",
+      "\\(17.09\\%\\)",
+      "\\(15.72\\%\\)",
+      "\\(18.45\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(145350 = 255000 \\times (1 - r)^{3}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{145350}{255000}\\right)^{\\frac{1}{3}} \\approx 0.829134\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 17.09\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q40",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "CrestTelecom reports that a high-speed packaging unit purchased for \\(\\$270000\\) has a book value of \\(\\$162000\\) after \\(4\\) years. Assuming depreciation was calculated using the reducing balance method, find the annual depreciation rate, correct to two decimal places.",
+    "a": "\\(11.99\\%\\)",
+    "opts": [
+      "\\(11.03\\%\\)",
+      "\\(11.99\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(12.95\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance depreciation formula.",
+        "workingOut": "\\(162000 = 270000 \\times (1 - r)^{4}\\), where \\(r\\) is the annual depreciation rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Isolate the base term by dividing by the initial value and taking the root.",
+        "workingOut": "\\(1 - r = \\left(\\frac{162000}{270000}\\right)^{\\frac{1}{4}} \\approx 0.880112\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 11.99\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q41",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "Beatrice wants to determine when the book value of a specialized heavy-duty excavating crane will fall to exactly \\(81\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(13.2\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(1.5\\)",
+    "opts": [
+      "\\(1.4\\)",
+      "\\(1.7\\)",
+      "\\(1.3\\)",
+      "\\(1.5\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{13.2}{100}\\right)^n = 0.81\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.81)}{\\log(0.8680)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 1.5\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q42",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "Charles wants to determine when the book value of a specialized high-volume commercial printer will fall to exactly \\(77\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(14.4\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(1.7\\)",
+    "opts": [
+      "\\(1.7\\)",
+      "\\(1.4\\)",
+      "\\(1.6\\)",
+      "\\(1.9\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{14.4}{100}\\right)^n = 0.77\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.77)}{\\log(0.8560)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 1.7\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q43",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "Diana wants to determine when the book value of a specialized smart conveyor system will fall to exactly \\(73\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(15.6\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(1.9\\)",
+    "opts": [
+      "\\(2.1\\)",
+      "\\(1.7\\)",
+      "\\(1.9\\)",
+      "\\(1.6\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{15.6}{100}\\right)^n = 0.73\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.73)}{\\log(0.8440)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 1.9\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q44",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "Ethan wants to determine when the book value of a specialized cryogenic storage container will fall to exactly \\(69\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(16.8\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(2.0\\)",
+    "opts": [
+      "\\(2.0\\)",
+      "\\(2.3\\)",
+      "\\(1.8\\)",
+      "\\(1.7\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{16.8}{100}\\right)^n = 0.69\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.69)}{\\log(0.8320)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 2.0\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q45",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "Fiona wants to determine when the book value of a specialized electric delivery vehicle will fall to exactly \\(65\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(18.0\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(2.2\\)",
+    "opts": [
+      "\\(2.2\\)",
+      "\\(2.5\\)",
+      "\\(1.9\\)",
+      "\\(1.8\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{18.0}{100}\\right)^n = 0.65\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.65)}{\\log(0.8200)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 2.2\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q46",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "George wants to determine when the book value of a specialized pneumatic metal press will fall to exactly \\(61\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(19.2\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(2.3\\)",
+    "opts": [
+      "\\(2.7\\)",
+      "\\(2.3\\)",
+      "\\(2.0\\)",
+      "\\(2.0\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{19.2}{100}\\right)^n = 0.61\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.61)}{\\log(0.8080)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 2.3\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q47",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "Helen wants to determine when the book value of a specialized supercomputing node cluster will fall to exactly \\(57\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(20.4\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(2.5\\)",
+    "opts": [
+      "\\(2.5\\)",
+      "\\(2.1\\)",
+      "\\(2.1\\)",
+      "\\(2.8\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{20.4}{100}\\right)^n = 0.57\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.57)}{\\log(0.7960)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 2.5\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q48",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "Ian wants to determine when the book value of a specialized seismic testing rig will fall to exactly \\(53\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(21.6\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(2.6\\)",
+    "opts": [
+      "\\(2.6\\)",
+      "\\(3.0\\)",
+      "\\(2.2\\)",
+      "\\(2.2\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{21.6}{100}\\right)^n = 0.53\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.53)}{\\log(0.7840)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 2.6\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q49",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "Julia wants to determine when the book value of a specialized high-speed packaging unit will fall to exactly \\(49\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(22.8\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(2.8\\)",
+    "opts": [
+      "\\(3.2\\)",
+      "\\(2.8\\)",
+      "\\(2.2\\)",
+      "\\(2.3\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{22.8}{100}\\right)^n = 0.49\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.49)}{\\log(0.7720)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 2.8\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q50",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "Keith wants to determine when the book value of a specialized ventilation turbine array will fall to exactly \\(45\\%\\) of its original cost. If the asset depreciates at a reducing balance rate of \\(24.0\\%\\) p.a., calculate the number of years required, correct to one decimal place.",
+    "a": "\\(2.9\\)",
+    "opts": [
+      "\\(2.5\\)",
+      "\\(3.3\\)",
+      "\\(2.9\\)",
+      "\\(2.3\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the reducing balance equation in terms of the fractional value.",
+        "workingOut": "\\(V_n = V_0(1 - r)^n \\implies \\left(1 - \\frac{24.0}{100}\\right)^n = 0.45\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to isolate the number of years n.",
+        "workingOut": "\\(n = \\frac{\\log(0.45)}{\\log(0.7600)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the division and round to one decimal place.",
+        "workingOut": "\\(n \\approx 2.9\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q51",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "ApexLogistics purchases a high-volume commercial printer for \\(\\$47500\\). It depreciates at \\(15.1\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$11000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$6788.52\\)",
+    "opts": [
+      "\\(\\$8567.37\\)",
+      "\\(\\$5009.67\\)",
+      "\\(\\$6788.52\\)",
+      "\\(\\$17788.52\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 47500 \\times \\left(1 - \\frac{15.1}{100}\\right)^{6} \\approx 17788.5173\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 11000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$6788.52\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q52",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "NovaTech purchases a smart conveyor system for \\(\\$55000\\). It depreciates at \\(16.2\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$12000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$7047.01\\)",
+    "opts": [
+      "\\(\\$7047.01\\)",
+      "\\(\\$19047.01\\)",
+      "\\(\\$8951.71\\)",
+      "\\(\\$5142.31\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 55000 \\times \\left(1 - \\frac{16.2}{100}\\right)^{6} \\approx 19047.0096\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 12000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$7047.01\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q53",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "HorizonManufacturing purchases a cryogenic storage container for \\(\\$62500\\). It depreciates at \\(17.3\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$13000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$6994.62\\)",
+    "opts": [
+      "\\(\\$4995.15\\)",
+      "\\(\\$6994.62\\)",
+      "\\(\\$19994.62\\)",
+      "\\(\\$8994.08\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 62500 \\times \\left(1 - \\frac{17.3}{100}\\right)^{6} \\approx 19994.6163\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 13000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$6994.62\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q54",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "ZenithAutomation purchases a electric delivery vehicle for \\(\\$70000\\). It depreciates at \\(18.4\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$14000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$6665.17\\)",
+    "opts": [
+      "\\(\\$6665.17\\)",
+      "\\(\\$8731.69\\)",
+      "\\(\\$20665.17\\)",
+      "\\(\\$4598.65\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 70000 \\times \\left(1 - \\frac{18.4}{100}\\right)^{6} \\approx 20665.1705\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 14000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$6665.17\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q55",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "SigmaFoundry purchases a pneumatic metal press for \\(\\$77500\\). It depreciates at \\(19.5\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$15000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$6090.02\\)",
+    "opts": [
+      "\\(\\$6090.02\\)",
+      "\\(\\$21090.02\\)",
+      "\\(\\$8199.02\\)",
+      "\\(\\$3981.02\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 77500 \\times \\left(1 - \\frac{19.5}{100}\\right)^{6} \\approx 21090.0197\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 15000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$6090.02\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q56",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "PinnacleSteel purchases a supercomputing node cluster for \\(\\$85000\\). It depreciates at \\(20.6\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$16000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$5298.15\\)",
+    "opts": [
+      "\\(\\$3168.34\\)",
+      "\\(\\$7427.97\\)",
+      "\\(\\$21298.15\\)",
+      "\\(\\$5298.15\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 85000 \\times \\left(1 - \\frac{20.6}{100}\\right)^{6} \\approx 21298.1529\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 16000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$5298.15\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q57",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "GenesisLabs purchases a seismic testing rig for \\(\\$92500\\). It depreciates at \\(21.7\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$17000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$4316.32\\)",
+    "opts": [
+      "\\(\\$4316.32\\)",
+      "\\(\\$6447.96\\)",
+      "\\(\\$2184.69\\)",
+      "\\(\\$21316.32\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 92500 \\times \\left(1 - \\frac{21.7}{100}\\right)^{6} \\approx 21316.3236\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 17000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$4316.32\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q58",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "CrestTelecom purchases a high-speed packaging unit for \\(\\$100000\\). It depreciates at \\(22.8\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$18000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$3169.17\\)",
+    "opts": [
+      "\\(\\$1052.25\\)",
+      "\\(\\$5286.09\\)",
+      "\\(\\$21169.17\\)",
+      "\\(\\$3169.17\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 100000 \\times \\left(1 - \\frac{22.8}{100}\\right)^{6} \\approx 21169.1686\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 18000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$3169.17\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q59",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "VelocitaMotors purchases a ventilation turbine array for \\(\\$107500\\). It depreciates at \\(23.9\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$19000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$1879.32\\)",
+    "opts": [
+      "\\(\\$3967.25\\)",
+      "\\(\\$1879.32\\)",
+      "\\(\\$-208.61\\)",
+      "\\(\\$20879.32\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 107500 \\times \\left(1 - \\frac{23.9}{100}\\right)^{6} \\approx 20879.3226\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 19000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$1879.32\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q60",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "OmniMarine purchases a die-casting machine for \\(\\$115000\\). It depreciates at \\(25.0\\%\\) p.a. reducing balance for \\(6\\) years. The company plans to sell it at a fixed scrap value of \\(\\$20000\\) at the end of Year \\(6\\). Calculate the difference between the book value and the scrap value at the end of the sixth year, correct to the nearest cent.",
+    "a": "\\(\\$467.53\\)",
+    "opts": [
+      "\\(\\$-1579.22\\)",
+      "\\(\\$2514.28\\)",
+      "\\(\\$20467.53\\)",
+      "\\(\\$467.53\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 6 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{6} = 115000 \\times \\left(1 - \\frac{25.0}{100}\\right)^{6} \\approx 20467.5293\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the difference calculation between the book value and the predetermined scrap value.",
+        "workingOut": "\\(\\text{Difference} = V_{6} - 20000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference and round to the nearest cent.",
+        "workingOut": "\\(\\text{Difference} \\approx \\$467.53\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q61",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, Ethan applies a reducing balance depreciation of \\(18.8\\%\\) p.a., compounded quarterly, on a \\(\\$40500\\) smart conveyor system. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$22728.45\\)",
+    "opts": [
+      "\\(\\$21592.03\\)",
+      "\\(\\$23864.87\\)",
+      "\\(\\$21683.19\\)",
+      "\\(\\$22728.45\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{18.8}{4} = 4.700\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 40500 \\times \\left(1 - \\frac{4.700}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$22728.45\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q62",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, Fiona applies a reducing balance depreciation of \\(19.6\\%\\) p.a., compounded quarterly, on a \\(\\$46000\\) cryogenic storage container. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$25172.37\\)",
+    "opts": [
+      "\\(\\$25172.37\\)",
+      "\\(\\$23907.05\\)",
+      "\\(\\$26430.98\\)",
+      "\\(\\$23913.75\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{19.6}{4} = 4.900\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 46000 \\times \\left(1 - \\frac{4.900}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$25172.37\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q63",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, George applies a reducing balance depreciation of \\(20.4\\%\\) p.a., compounded quarterly, on a \\(\\$51500\\) electric delivery vehicle. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$27479.05\\)",
+    "opts": [
+      "\\(\\$26105.10\\)",
+      "\\(\\$28853.01\\)",
+      "\\(\\$25974.45\\)",
+      "\\(\\$27479.05\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{20.4}{4} = 5.100\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 51500 \\times \\left(1 - \\frac{5.100}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$27479.05\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q64",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, Helen applies a reducing balance depreciation of \\(21.2\\%\\) p.a., compounded quarterly, on a \\(\\$57000\\) pneumatic metal press. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$29653.41\\)",
+    "opts": [
+      "\\(\\$29653.41\\)",
+      "\\(\\$28170.74\\)",
+      "\\(\\$31136.08\\)",
+      "\\(\\$27890.32\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{21.2}{4} = 5.300\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 57000 \\times \\left(1 - \\frac{5.300}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$29653.41\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q65",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, Ian applies a reducing balance depreciation of \\(22.0\\%\\) p.a., compounded quarterly, on a \\(\\$62500\\) supercomputing node cluster. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$31700.18\\)",
+    "opts": [
+      "\\(\\$33285.19\\)",
+      "\\(\\$29659.50\\)",
+      "\\(\\$30115.17\\)",
+      "\\(\\$31700.18\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{22.0}{4} = 5.500\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 62500 \\times \\left(1 - \\frac{5.500}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$31700.18\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q66",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, Julia applies a reducing balance depreciation of \\(22.8\\%\\) p.a., compounded quarterly, on a \\(\\$68000\\) seismic testing rig. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$33623.99\\)",
+    "opts": [
+      "\\(\\$31942.79\\)",
+      "\\(\\$35305.19\\)",
+      "\\(\\$31286.78\\)",
+      "\\(\\$33623.99\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{22.8}{4} = 5.700\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 68000 \\times \\left(1 - \\frac{5.700}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$33623.99\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q67",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, Keith applies a reducing balance depreciation of \\(23.6\\%\\) p.a., compounded quarterly, on a \\(\\$73500\\) high-speed packaging unit. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$35429.32\\)",
+    "opts": [
+      "\\(\\$33657.85\\)",
+      "\\(\\$37200.79\\)",
+      "\\(\\$35429.32\\)",
+      "\\(\\$32776.87\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{23.6}{4} = 5.900\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 73500 \\times \\left(1 - \\frac{5.900}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$35429.32\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q68",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, Laura applies a reducing balance depreciation of \\(24.4\\%\\) p.a., compounded quarterly, on a \\(\\$79000\\) ventilation turbine array. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$37120.53\\)",
+    "opts": [
+      "\\(\\$38976.56\\)",
+      "\\(\\$34134.42\\)",
+      "\\(\\$35264.51\\)",
+      "\\(\\$37120.53\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{24.4}{4} = 6.100\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 79000 \\times \\left(1 - \\frac{6.100}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$37120.53\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q69",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, Malcolm applies a reducing balance depreciation of \\(25.2\\%\\) p.a., compounded quarterly, on a \\(\\$84500\\) die-casting machine. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$38701.86\\)",
+    "opts": [
+      "\\(\\$35364.01\\)",
+      "\\(\\$36766.76\\)",
+      "\\(\\$38701.86\\)",
+      "\\(\\$40636.95\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{25.2}{4} = 6.300\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 84500 \\times \\left(1 - \\frac{6.300}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$38701.86\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q70",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "For tax optimization, Nadia applies a reducing balance depreciation of \\(26.0\\%\\) p.a., compounded quarterly, on a \\(\\$90000\\) industrial autoclave. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$40177.40\\)",
+    "opts": [
+      "\\(\\$38168.53\\)",
+      "\\(\\$42186.27\\)",
+      "\\(\\$36470.16\\)",
+      "\\(\\$40177.40\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly depreciation rate and total compounding periods.",
+        "workingOut": "\\(r = \\frac{26.0}{4} = 6.500\\%, \\quad n = 3 \\times 4 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the periodic values into the reducing balance depreciation formula.",
+        "workingOut": "\\(V_{12} = 90000 \\times \\left(1 - \\frac{6.500}{100}\\right)^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the book value and round to two decimal places.",
+        "workingOut": "\\(V_{12} \\approx \\$40177.40\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q71",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "HorizonManufacturing purchases a commercial site for \\(\\$405000\\), where the land value is estimated at \\(\\$235000\\) and the building at \\(\\$170000\\). The land value appreciates by \\(4.35\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(8.60\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$402516.86\\)",
+    "opts": [
+      "\\(\\$356029.25\\)",
+      "\\(\\$402516.86\\)",
+      "\\(\\$303404.89\\)",
+      "\\(\\$204292.93\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 235000 \\times \\left(1 + \\frac{4.35}{100}\\right)^6 \\approx 303404.8946\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 170000 \\times \\left(1 - \\frac{8.60}{100}\\right)^6 \\approx 99111.9671\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$402516.86\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q72",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "ZenithAutomation purchases a commercial site for \\(\\$460000\\), where the land value is estimated at \\(\\$270000\\) and the building at \\(\\$190000\\). The land value appreciates by \\(4.70\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(9.20\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$462147.39\\)",
+    "opts": [
+      "\\(\\$401290.08\\)",
+      "\\(\\$249187.07\\)",
+      "\\(\\$355667.23\\)",
+      "\\(\\$462147.39\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 270000 \\times \\left(1 + \\frac{4.70}{100}\\right)^6 \\approx 355667.2314\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 190000 \\times \\left(1 - \\frac{9.20}{100}\\right)^6 \\approx 106480.1593\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$462147.39\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q73",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "SigmaFoundry purchases a commercial site for \\(\\$515000\\), where the land value is estimated at \\(\\$305000\\) and the building at \\(\\$210000\\). The land value appreciates by \\(5.05\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(9.80\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$522997.30\\)",
+    "opts": [
+      "\\(\\$296799.42\\)",
+      "\\(\\$409898.36\\)",
+      "\\(\\$522997.30\\)",
+      "\\(\\$445834.33\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 305000 \\times \\left(1 + \\frac{5.05}{100}\\right)^6 \\approx 409898.3591\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 210000 \\times \\left(1 - \\frac{9.80}{100}\\right)^6 \\approx 113098.9362\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$522997.30\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q74",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "PinnacleSteel purchases a commercial site for \\(\\$570000\\), where the land value is estimated at \\(\\$340000\\) and the building at \\(\\$230000\\). The land value appreciates by \\(5.40\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(10.40\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$585154.59\\)",
+    "opts": [
+      "\\(\\$489668.93\\)",
+      "\\(\\$347138.74\\)",
+      "\\(\\$466146.67\\)",
+      "\\(\\$585154.59\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 340000 \\times \\left(1 + \\frac{5.40}{100}\\right)^6 \\approx 466146.6659\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 230000 \\times \\left(1 - \\frac{10.40}{100}\\right)^6 \\approx 119007.9280\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$585154.59\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q75",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "GenesisLabs purchases a commercial site for \\(\\$625000\\), where the land value is estimated at \\(\\$375000\\) and the building at \\(\\$250000\\). The land value appreciates by \\(5.75\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(11.00\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$648706.72\\)",
+    "opts": [
+      "\\(\\$524461.39\\)",
+      "\\(\\$648706.72\\)",
+      "\\(\\$400216.07\\)",
+      "\\(\\$532800.77\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 375000 \\times \\left(1 + \\frac{5.75}{100}\\right)^6 \\approx 524461.3929\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 250000 \\times \\left(1 - \\frac{11.00}{100}\\right)^6 \\approx 124245.3227\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$648706.72\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q76",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "CrestTelecom purchases a commercial site for \\(\\$680000\\), where the land value is estimated at \\(\\$410000\\) and the building at \\(\\$270000\\). The land value appreciates by \\(6.10\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(11.60\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$713740.55\\)",
+    "opts": [
+      "\\(\\$456044.74\\)",
+      "\\(\\$584892.64\\)",
+      "\\(\\$575236.68\\)",
+      "\\(\\$713740.55\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 410000 \\times \\left(1 + \\frac{6.10}{100}\\right)^6 \\approx 584892.6450\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 270000 \\times \\left(1 - \\frac{11.60}{100}\\right)^6 \\approx 128847.9028\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$713740.55\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q77",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "VelocitaMotors purchases a commercial site for \\(\\$735000\\), where the land value is estimated at \\(\\$445000\\) and the building at \\(\\$290000\\). The land value appreciates by \\(6.45\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(12.20\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$780342.48\\)",
+    "opts": [
+      "\\(\\$780342.48\\)",
+      "\\(\\$514640.32\\)",
+      "\\(\\$647491.40\\)",
+      "\\(\\$616983.47\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 445000 \\times \\left(1 + \\frac{6.45}{100}\\right)^6 \\approx 647491.4017\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 290000 \\times \\left(1 - \\frac{12.20}{100}\\right)^6 \\approx 132851.0812\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$780342.48\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q78",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "OmniMarine purchases a commercial site for \\(\\$790000\\), where the land value is estimated at \\(\\$480000\\) and the building at \\(\\$310000\\). The land value appreciates by \\(6.80\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(12.80\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$848598.46\\)",
+    "opts": [
+      "\\(\\$712309.53\\)",
+      "\\(\\$848598.46\\)",
+      "\\(\\$576020.59\\)",
+      "\\(\\$658047.88\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 480000 \\times \\left(1 + \\frac{6.80}{100}\\right)^6 \\approx 712309.5279\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 310000 \\times \\left(1 - \\frac{12.80}{100}\\right)^6 \\approx 136288.9368\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$848598.46\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q79",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "TerraInfrastructure purchases a commercial site for \\(\\$845000\\), where the land value is estimated at \\(\\$515000\\) and the building at \\(\\$330000\\). The land value appreciates by \\(7.15\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(13.40\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$918594.03\\)",
+    "opts": [
+      "\\(\\$918594.03\\)",
+      "\\(\\$779399.78\\)",
+      "\\(\\$640205.54\\)",
+      "\\(\\$698436.62\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 515000 \\times \\left(1 + \\frac{7.15}{100}\\right)^6 \\approx 779399.7844\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 330000 \\times \\left(1 - \\frac{13.40}{100}\\right)^6 \\approx 139194.2489\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$918594.03\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q80",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "TitanIndustries purchases a commercial site for \\(\\$900000\\), where the land value is estimated at \\(\\$550000\\) and the building at \\(\\$350000\\). The land value appreciates by \\(7.50\\%\\) p.a., while the building depreciates at a reducing balance rate of \\(14.00\\%\\) p.a. Calculate the total value of the property after \\(6\\) years, correct to the nearest cent.",
+    "a": "\\(\\$990414.37\\)",
+    "opts": [
+      "\\(\\$990414.37\\)",
+      "\\(\\$707217.31\\)",
+      "\\(\\$848815.84\\)",
+      "\\(\\$738156.34\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the appreciated value of the land after 6 years.",
+        "workingOut": "\\(V_{\\text{land}} = 550000 \\times \\left(1 + \\frac{7.50}{100}\\right)^6 \\approx 848815.8391\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the depreciated value of the building after 6 years using the reducing balance method.",
+        "workingOut": "\\(V_{\\text{building}} = 350000 \\times \\left(1 - \\frac{14.00}{100}\\right)^6 \\approx 141598.5323\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the land and building values to find the total property value, and round to the nearest cent.",
+        "workingOut": "\\(V_{\\text{total}} = V_{\\text{land}} + V_{\\text{building}} \\approx \\$990414.37\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q81",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "SigmaFoundry evaluates two machines costing \\(\\$60000\\) each. Machine 1 depreciates by \\(12.9\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$1.75\\) per hour, and is used for \\(3200\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$3553.42\\)",
+    "opts": [
+      "\\(\\$3553.42\\)",
+      "\\(\\$39646.58\\)",
+      "\\(\\$3731.09\\)",
+      "\\(\\$3375.75\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 60000 \\times \\left(1 - \\frac{12.9}{100}\\right)^{3} \\approx 39646.5787\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 60000 - (1.75 \\times 3200 \\times 3) = 43200.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$3553.42\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q82",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "PinnacleSteel evaluates two machines costing \\(\\$70000\\) each. Machine 1 depreciates by \\(13.8\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$2.00\\) per hour, and is used for \\(3400\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$4764.73\\)",
+    "opts": [
+      "\\(\\$44835.27\\)",
+      "\\(\\$4764.73\\)",
+      "\\(\\$5002.96\\)",
+      "\\(\\$4526.49\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 70000 \\times \\left(1 - \\frac{13.8}{100}\\right)^{3} \\approx 44835.2750\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 70000 - (2.00 \\times 3400 \\times 3) = 49600.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$4764.73\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q83",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "GenesisLabs evaluates two machines costing \\(\\$80000\\) each. Machine 1 depreciates by \\(14.7\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$2.25\\) per hour, and is used for \\(3600\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$6047.96\\)",
+    "opts": [
+      "\\(\\$49652.04\\)",
+      "\\(\\$5745.56\\)",
+      "\\(\\$6350.36\\)",
+      "\\(\\$6047.96\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 80000 \\times \\left(1 - \\frac{14.7}{100}\\right)^{3} \\approx 49652.0382\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 80000 - (2.25 \\times 3600 \\times 3) = 55700.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$6047.96\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q84",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "CrestTelecom evaluates two machines costing \\(\\$90000\\) each. Machine 1 depreciates by \\(15.6\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$2.50\\) per hour, and is used for \\(3800\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$7390.96\\)",
+    "opts": [
+      "\\(\\$54109.04\\)",
+      "\\(\\$7021.41\\)",
+      "\\(\\$7760.51\\)",
+      "\\(\\$7390.96\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 90000 \\times \\left(1 - \\frac{15.6}{100}\\right)^{3} \\approx 54109.0426\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 90000 - (2.50 \\times 3800 \\times 3) = 61500.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$7390.96\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q85",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "VelocitaMotors evaluates two machines costing \\(\\$100000\\) each. Machine 1 depreciates by \\(16.5\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$2.75\\) per hour, and is used for \\(4000\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$8781.71\\)",
+    "opts": [
+      "\\(\\$9220.80\\)",
+      "\\(\\$8342.63\\)",
+      "\\(\\$8781.71\\)",
+      "\\(\\$58218.29\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 100000 \\times \\left(1 - \\frac{16.5}{100}\\right)^{3} \\approx 58218.2875\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 100000 - (2.75 \\times 4000 \\times 3) = 67000.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$8781.71\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q86",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "OmniMarine evaluates two machines costing \\(\\$110000\\) each. Machine 1 depreciates by \\(17.4\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$3.00\\) per hour, and is used for \\(4200\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$10208.40\\)",
+    "opts": [
+      "\\(\\$61991.60\\)",
+      "\\(\\$10208.40\\)",
+      "\\(\\$10718.82\\)",
+      "\\(\\$9697.98\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 110000 \\times \\left(1 - \\frac{17.4}{100}\\right)^{3} \\approx 61991.5974\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 110000 - (3.00 \\times 4200 \\times 3) = 72200.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$10208.40\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q87",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "TerraInfrastructure evaluates two machines costing \\(\\$120000\\) each. Machine 1 depreciates by \\(18.3\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$3.25\\) per hour, and is used for \\(4400\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$11659.38\\)",
+    "opts": [
+      "\\(\\$65440.62\\)",
+      "\\(\\$11076.41\\)",
+      "\\(\\$12242.35\\)",
+      "\\(\\$11659.38\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 120000 \\times \\left(1 - \\frac{18.3}{100}\\right)^{3} \\approx 65440.6216\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 120000 - (3.25 \\times 4400 \\times 3) = 77100.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$11659.38\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q88",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "TitanIndustries evaluates two machines costing \\(\\$130000\\) each. Machine 1 depreciates by \\(19.2\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$3.50\\) per hour, and is used for \\(4600\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$13123.17\\)",
+    "opts": [
+      "\\(\\$13123.17\\)",
+      "\\(\\$13779.32\\)",
+      "\\(\\$68576.83\\)",
+      "\\(\\$12467.01\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 130000 \\times \\left(1 - \\frac{19.2}{100}\\right)^{3} \\approx 68576.8346\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 130000 - (3.50 \\times 4600 \\times 3) = 81700.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$13123.17\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q89",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "VortexEnergy evaluates two machines costing \\(\\$140000\\) each. Machine 1 depreciates by \\(20.1\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$3.75\\) per hour, and is used for \\(4800\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$14588.46\\)",
+    "opts": [
+      "\\(\\$71411.54\\)",
+      "\\(\\$14588.46\\)",
+      "\\(\\$15317.89\\)",
+      "\\(\\$13859.04\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 140000 \\times \\left(1 - \\frac{20.1}{100}\\right)^{3} \\approx 71411.5359\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 140000 - (3.75 \\times 4800 \\times 3) = 86000.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$14588.46\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q90",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "AeroSystems evaluates two machines costing \\(\\$150000\\) each. Machine 1 depreciates by \\(21.0\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$4.00\\) per hour, and is used for \\(5000\\) hours per year. Calculate the absolute difference in their book values after \\(3\\) years, correct to the nearest cent.",
+    "a": "\\(\\$16044.15\\)",
+    "opts": [
+      "\\(\\$16044.15\\)",
+      "\\(\\$16846.36\\)",
+      "\\(\\$15241.94\\)",
+      "\\(\\$73955.85\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of Machine 1 after 3 years using reducing balance depreciation.",
+        "workingOut": "\\(V_{\\text{RB}} = 150000 \\times \\left(1 - \\frac{21.0}{100}\\right)^{3} \\approx 73955.8500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the book value of Machine 2 after 3 years using unit-of-use depreciation.",
+        "workingOut": "\\(V_{\\text{use}} = 150000 - (4.00 \\times 5000 \\times 3) = 90000.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the absolute difference between the two values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{use}}| \\approx \\$16044.15\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q91",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "GenesisLabs purchases a electric delivery vehicle for \\(\\$115000\\) and depreciates it using reducing balance at \\(16.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(26\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$12178.15\\)",
+    "opts": [
+      "\\(\\$46839.04\\)",
+      "\\(\\$12178.15\\)",
+      "\\(\\$11569.24\\)",
+      "\\(\\$12787.06\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 115000 \\times \\left(1 - \\frac{16.0}{100}\\right)^{3} \\approx 68160.9600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 115000 - V_{3} \\approx 46839.0400\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 26%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{26}{100} \\approx \\$12178.15\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q92",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "CrestTelecom purchases a pneumatic metal press for \\(\\$130000\\) and depreciates it using reducing balance at \\(17.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(27\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$15030.28\\)",
+    "opts": [
+      "\\(\\$55667.69\\)",
+      "\\(\\$14278.77\\)",
+      "\\(\\$15781.79\\)",
+      "\\(\\$15030.28\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 130000 \\times \\left(1 - \\frac{17.0}{100}\\right)^{3} \\approx 74332.3100\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 130000 - V_{3} \\approx 55667.6900\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 27%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{27}{100} \\approx \\$15030.28\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q93",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "VelocitaMotors purchases a supercomputing node cluster for \\(\\$145000\\) and depreciates it using reducing balance at \\(18.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(28\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$18214.46\\)",
+    "opts": [
+      "\\(\\$18214.46\\)",
+      "\\(\\$65051.64\\)",
+      "\\(\\$19125.18\\)",
+      "\\(\\$17303.74\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 145000 \\times \\left(1 - \\frac{18.0}{100}\\right)^{3} \\approx 79948.3600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 145000 - V_{3} \\approx 65051.6400\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 28%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{28}{100} \\approx \\$18214.46\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q94",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "OmniMarine purchases a seismic testing rig for \\(\\$160000\\) and depreciates it using reducing balance at \\(19.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(29\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$21741.14\\)",
+    "opts": [
+      "\\(\\$20654.08\\)",
+      "\\(\\$22828.20\\)",
+      "\\(\\$74969.44\\)",
+      "\\(\\$21741.14\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 160000 \\times \\left(1 - \\frac{19.0}{100}\\right)^{3} \\approx 85030.5600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 160000 - V_{3} \\approx 74969.4400\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 29%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{29}{100} \\approx \\$21741.14\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q95",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "TerraInfrastructure purchases a high-speed packaging unit for \\(\\$175000\\) and depreciates it using reducing balance at \\(20.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(30\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$25620.00\\)",
+    "opts": [
+      "\\(\\$25620.00\\)",
+      "\\(\\$26901.00\\)",
+      "\\(\\$24339.00\\)",
+      "\\(\\$85400.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 175000 \\times \\left(1 - \\frac{20.0}{100}\\right)^{3} \\approx 89600.0000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 175000 - V_{3} \\approx 85400.0000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 30%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{30}{100} \\approx \\$25620.00\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q96",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "TitanIndustries purchases a ventilation turbine array for \\(\\$190000\\) and depreciates it using reducing balance at \\(21.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(25\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$24080.65\\)",
+    "opts": [
+      "\\(\\$24080.65\\)",
+      "\\(\\$96322.59\\)",
+      "\\(\\$25284.68\\)",
+      "\\(\\$22876.62\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 190000 \\times \\left(1 - \\frac{21.0}{100}\\right)^{3} \\approx 93677.4100\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 190000 - V_{3} \\approx 96322.5900\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 25%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{25}{100} \\approx \\$24080.65\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q97",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "VortexEnergy purchases a die-casting machine for \\(\\$205000\\) and depreciates it using reducing balance at \\(22.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(26\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$28006.38\\)",
+    "opts": [
+      "\\(\\$26606.06\\)",
+      "\\(\\$29406.70\\)",
+      "\\(\\$107716.84\\)",
+      "\\(\\$28006.38\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 205000 \\times \\left(1 - \\frac{22.0}{100}\\right)^{3} \\approx 97283.1600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 205000 - V_{3} \\approx 107716.8400\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 26%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{26}{100} \\approx \\$28006.38\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q98",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "AeroSystems purchases a industrial autoclave for \\(\\$220000\\) and depreciates it using reducing balance at \\(23.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(27\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$32281.94\\)",
+    "opts": [
+      "\\(\\$30667.84\\)",
+      "\\(\\$32281.94\\)",
+      "\\(\\$119562.74\\)",
+      "\\(\\$33896.04\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 220000 \\times \\left(1 - \\frac{23.0}{100}\\right)^{3} \\approx 100437.2600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 220000 - V_{3} \\approx 119562.7400\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 27%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{27}{100} \\approx \\$32281.94\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q99",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "EcoSphere purchases a autonomous logistics drone for \\(\\$235000\\) and depreciates it using reducing balance at \\(24.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(28\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$36915.38\\)",
+    "opts": [
+      "\\(\\$35069.61\\)",
+      "\\(\\$38761.15\\)",
+      "\\(\\$36915.38\\)",
+      "\\(\\$131840.64\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 235000 \\times \\left(1 - \\frac{24.0}{100}\\right)^{3} \\approx 103159.3600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 235000 - V_{3} \\approx 131840.6400\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 28%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{28}{100} \\approx \\$36915.38\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1e-high-q100",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound depreciation",
+    "question": "NexusRobotics purchases a robotic assembly arm for \\(\\$250000\\) and depreciates it using reducing balance at \\(25.0\\%\\) p.a. over \\(3\\) years. If the company pays corporate tax at a rate of \\(29\\%\\) and can write off the annual depreciation against tax, calculate the total tax savings over the \\(3\\)-year period. Correct to the nearest cent.",
+    "a": "\\(\\$41914.06\\)",
+    "opts": [
+      "\\(\\$144531.25\\)",
+      "\\(\\$41914.06\\)",
+      "\\(\\$44009.76\\)",
+      "\\(\\$39818.36\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the book value of the asset after 3 years.",
+        "workingOut": "\\(V_{3} = 250000 \\times \\left(1 - \\frac{25.0}{100}\\right)^{3} \\approx 105468.7500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the total accumulated depreciation over this period.",
+        "workingOut": "\\(D_{\\text{total}} = 250000 - V_{3} \\approx 144531.2500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate tax savings using the tax rate of 29%.",
+        "workingOut": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{29}{100} \\approx \\$41914.06\\)",
         "graphData": null
       }
     ]

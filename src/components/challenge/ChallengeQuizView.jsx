@@ -411,7 +411,7 @@ const ChallengeQuizView = ({
             <MathView
               content={currentQuestion?.question}
               graphData={(currentQuestion?.type === 'graph_sketch' || currentQuestion?.type === 'teacher_review' || (currentQuestion?.requiresManualGrading && /(draw|sketch|construct)/i.test(currentQuestion?.question || ''))) ? (isFeedback ? currentQuestion?.graphData : null) : currentQuestion?.graphData}
-              style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
+              style={{ fontSize: '0.98rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
             />
 
             {/* Step-by-step hint — shown only while solving (hidden after feedback) */}
@@ -758,7 +758,7 @@ const ChallengeQuizView = ({
                       </div>
                       <div style={{ flex: 1, minWidth: 0 }}>
                         {(!hasImage || (optText && optText !== String.fromCharCode(65 + i))) && (
-                          <MathView content={optText} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
+                          <MathView content={optText} style={{ fontWeight: 500, fontSize: '0.98rem', color: '#1e1b4b' }} />
                         )}
                         {hasImage && (
                           <img

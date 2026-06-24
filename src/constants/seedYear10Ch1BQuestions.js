@@ -1131,8 +1131,12 @@ export const Y10_CH1B_QUESTIONS = [
     "a": "3850",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 1.10",
-        "workingOut": "\\(\\text{Answer} = 3850\\)"
+        "explanation": "Express the total price including 10% GST as 110% of the pre-tax price.",
+        "workingOut": "\\(100\\% + 10\\% = 110\\% = 1.10\\)"
+      },
+      {
+        "explanation": "Multiply the pre-tax price by 1.10 to obtain the after-tax price.",
+        "workingOut": "\\(3500 \\times 1.10 = 3850\\)"
       }
     ],
     "t": "Percentage increase and decrease",
@@ -1152,8 +1156,12 @@ export const Y10_CH1B_QUESTIONS = [
     "a": "137500",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 1.10",
-        "workingOut": "\\(\\text{Answer} = 137500\\)"
+        "explanation": "Express the total price including 10% GST as 110% of the pre-tax price.",
+        "workingOut": "\\(100\\% + 10\\% = 110\\% = 1.10\\)"
+      },
+      {
+        "explanation": "Multiply the pre-tax price by 1.10 to obtain the after-tax price.",
+        "workingOut": "\\(125000 \\times 1.10 = 137500\\)"
       }
     ],
     "t": "Percentage increase and decrease",
@@ -1173,8 +1181,12 @@ export const Y10_CH1B_QUESTIONS = [
     "a": "7.04",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 1.10",
-        "workingOut": "\\(\\text{Answer} = 7.04\\)"
+        "explanation": "Express the total price including 10% GST as 110% of the pre-tax price.",
+        "workingOut": "\\(100\\% + 10\\% = 110\\% = 1.10\\)"
+      },
+      {
+        "explanation": "Multiply the pre-tax price by 1.10 to obtain the after-tax price.",
+        "workingOut": "\\(6.40 \\times 1.10 = 7.04\\)"
       }
     ],
     "t": "Percentage increase and decrease",
@@ -1694,33 +1706,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Sophia purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$316\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$312.09\\). What was the original price of the road bike?",
+    "question": "A commercial logistics hub buys a heavy duty crane for \\( 125000 \\) dollars. The reseller marks up the price by \\( 18\\% \\), and later offers a seasonal discount of \\( 15\\% \\) on the marked-up price. Find the final price.",
+    "a": "\\(125375.00\\)",
     "opts": [
-      "\\(188\\)",
-      "\\(161\\)",
-      "\\(197\\)",
-      "\\(179\\)"
+      "\\(143750.00\\)",
+      "\\(128750.00\\)",
+      "\\(122500.00\\)",
+      "\\(125375.00\\)"
     ],
-    "a": "\\(179\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 316\\)",
+        "explanation": "Calculate the price after the initial markup of 18%.",
+        "workingOut": "\\(V_1 = 125000 \\times 1.18 = 147500.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 312.09 \\implies 1.07x + 0.88y = 312.09\\)",
+        "explanation": "Apply the subsequent discount of 15% to the marked-up price.",
+        "workingOut": "\\(V_2 = 147500.00 \\times (1 - 0.15) = 147500.00 \\times 0.85\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.88(316 - x) = 312.09\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.19x + 278.08 = 312.09 \\implies x = 179\\)",
+        "explanation": "Calculate the final retail price.",
+        "workingOut": "\\(V_2 = 125375.00\\)",
         "graphData": null
       }
     ],
@@ -1731,33 +1738,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(80\\%\\) nitrogen to produce exactly \\(46\\text{ kg}\\) of a blended mixture containing \\(67.61\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "question": "An agricultural depot lists premium soil fertilizer at \\( 240 \\) dollars per drum. A wholesaler adds a markup of \\( 25\\% \\) to the list price, then offers a bulk buyers discount of \\( 12\\% \\) off the marked-up price. Determine the bulk price per drum.",
+    "a": "\\(264.00\\)",
     "opts": [
-      "\\(19\\)",
-      "\\(21\\)",
-      "\\(17\\)",
-      "\\(20\\)"
+      "\\(271.20\\)",
+      "\\(264.00\\)",
+      "\\(232.80\\)",
+      "\\(264.00\\)"
     ],
-    "a": "\\(19\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 46\\)",
+        "explanation": "Compute the wholesale price after the 25% markup.",
+        "workingOut": "\\(V_1 = 240 \\times 1.25 = 300.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{67.61}{100}(46) \\implies 50x + 80y = 3110.0\\)",
+        "explanation": "Apply the 12% discount to the wholesale price.",
+        "workingOut": "\\(V_2 = 300.00 \\times 0.88\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 80(46 - x) = 3110.0 \\implies -30x = -570.0\\)",
+        "explanation": "Find the final bulk price.",
+        "workingOut": "\\(V_2 = 264.00\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 19\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -1767,28 +1770,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Charlotte bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$1641\\). Later, she sold the used delivery trucks at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$-64.10\\), find the original cost price of the used delivery trucks.",
+    "question": "A boutique electronics firm builds luxury mechanical keyboards costing \\( 450 \\) dollars. They mark up the price by \\( 40\\% \\) for retailers, who then offer a holiday promotion discount of \\( 20\\% \\). Calculate the promotional price.",
+    "a": "\\(504.00\\)",
     "opts": [
-      "\\(500\\)",
-      "\\(450\\)",
-      "\\(525\\)",
-      "\\(550\\)"
+      "\\(540.00\\)",
+      "\\(517.50\\)",
+      "\\(504.00\\)",
+      "\\(504.00\\)"
     ],
-    "a": "\\(500\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 1641\\)",
+        "explanation": "Calculate the retail price after the 40% markup.",
+        "workingOut": "\\(V_1 = 450 \\times 1.40 = 630.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -64.10 \\implies 10x - 10y = -6410\\)",
+        "explanation": "Apply the 20% promotional discount.",
+        "workingOut": "\\(V_2 = 630.00 \\times 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(10x - 10(1641 - x) = -6410 \\implies (10 + 10)x - 16410 = -6410 \\implies x = 500\\)",
+        "explanation": "Evaluate the final price.",
+        "workingOut": "\\(V_2 = 504.00\\)",
         "graphData": null
       }
     ],
@@ -1799,33 +1802,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Daniel splits a lump sum of \\(\\$10292\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$906.20\\), how much capital was originally deposited into Account A?",
+    "question": "A dental equipment supplier purchases state-of-the-art curing lights for \\( 850 \\) dollars each. The supplier applies a \\( 30\\% \\) markup, but later discounts them by \\( 15\\% \\) during a trade show. Find the trade show price.",
+    "a": "\\(939.25\\)",
     "opts": [
-      "\\(4100\\)",
-      "\\(4510\\)",
-      "\\(4305\\)",
-      "\\(3690\\)"
+      "\\(939.25\\)",
+      "\\(939.25\\)",
+      "\\(1020.00\\)",
+      "\\(977.50\\)"
     ],
-    "a": "\\(4100\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 10292\\)",
+        "explanation": "Compute the marked-up price.",
+        "workingOut": "\\(V_1 = 850 \\times 1.30 = 1105.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{10}{100}y = 906.20\\ \\rightarrow\\ 7x + 10y = 90620\\)",
+        "explanation": "Apply the 15% discount.",
+        "workingOut": "\\(V_2 = 1105.00 \\times 0.85\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 10(10292 - x) = 90620\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(7x + 102920 - 10x = 90620 \\implies -3x = -12300 \\implies x = 4100\\)",
+        "explanation": "Determine the final price.",
+        "workingOut": "\\(V_2 = 939.25\\)",
         "graphData": null
       }
     ],
@@ -1836,33 +1834,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Amelia purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$580\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$555.05\\). What was the original price of the leather sofa?",
+    "question": "A drone logistics firm lists custom batteries at \\( 220 \\) dollars. The list price is marked up by \\( 45\\% \\), and later discounted by \\( 30\\% \\) during a inventory clearance sale. Determine the clearance sale price.",
+    "a": "\\(223.30\\)",
     "opts": [
-      "\\(295\\)",
-      "\\(310\\)",
-      "\\(325\\)",
-      "\\(266\\)"
+      "\\(223.30\\)",
+      "\\(223.30\\)",
+      "\\(209.00\\)",
+      "\\(253.00\\)"
     ],
-    "a": "\\(295\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 580\\)",
+        "explanation": "Determine the marked-up price.",
+        "workingOut": "\\(V_1 = 220 \\times 1.45 = 319.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 555.05 \\implies 1.07x + 0.84y = 555.05\\)",
+        "explanation": "Apply the 30% discount to the marked-up price.",
+        "workingOut": "\\(V_2 = 319.00 \\times 0.70\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.84(580 - x) = 555.05\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.23x + 487.20 = 555.05 \\implies x = 295\\)",
+        "explanation": "Compute the final price.",
+        "workingOut": "\\(V_2 = 223.30\\)",
         "graphData": null
       }
     ],
@@ -1873,33 +1866,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(60\\%\\) pure silver to produce exactly \\(98\\text{ kg}\\) of a blended mixture containing \\(55.20\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "question": "After a store-wide clearance discount of \\( 18\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$246.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event.",
+    "a": "\\(300.00\\)",
     "opts": [
-      "\\(49\\)",
-      "\\(42\\)",
-      "\\(52\\)",
-      "\\(47\\)"
+      "\\(307.50\\)",
+      "\\(300.00\\)",
+      "\\(300.12\\)",
+      "\\(290.28\\)"
     ],
-    "a": "\\(47\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 98\\)",
+        "explanation": "Identify the final sale price and the discount rate.",
+        "workingOut": "\\(\\text{Sale Price} = 246.00, \\quad \\text{Discount} = 18\\% = 0.18\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{55.20}{100}(98) \\implies 50x + 60y = 5410.0\\)",
+        "explanation": "Divide the sale price by the discount multiplier to find the original price.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{246.00}{1 - 0.18} = \\frac{246.00}{0.82}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 60(98 - x) = 5410.0 \\implies -10x = -470.0\\)",
+        "explanation": "Calculate the original price.",
+        "workingOut": "\\(\\text{Original Price} = 300.00\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 47\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -1909,28 +1898,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Olivia bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$1829\\). Later, she sold the estate jewellery rings at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$-32.90\\), find the original cost price of the estate jewellery rings.",
+    "question": "A refurbished industrial printing press is sold for \\( 76000 \\) dollars after a markdown of \\( 24\\% \\). Find the original list price of the printing press.",
+    "a": "\\(100000.00\\)",
     "opts": [
-      "\\(600\\)",
-      "\\(660\\)",
-      "\\(540\\)",
-      "\\(630\\)"
+      "\\(101333.33\\)",
+      "\\(95000.00\\)",
+      "\\(100000.00\\)",
+      "\\(94240.00\\)"
     ],
-    "a": "\\(600\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 1829\\)",
+        "explanation": "Identify the parameters for the reverse percentage equation.",
+        "workingOut": "\\(\\text{Markdown Price} = 76000, \\quad \\text{Rate} = 24\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = -32.90 \\implies 15x - 10y = -3290\\)",
+        "explanation": "Divide the current price by the multiplier.",
+        "workingOut": "\\(\\text{Original List Price} = \\frac{76000}{0.76}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(15x - 10(1829 - x) = -3290 \\implies (15 + 10)x - 18290 = -3290 \\implies x = 600\\)",
+        "explanation": "Evaluate the division.",
+        "workingOut": "\\(\\text{Original List Price} = 100000.00\\)",
         "graphData": null
       }
     ],
@@ -1941,33 +1930,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "James splits a lump sum of \\(\\$10584\\) into two different savings accounts. Account A earns a yield of \\(6\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$762.72\\), how much capital was originally deposited into Account A?",
+    "question": "A space technology developer purchases titanium alloys for \\( 31500 \\) dollars, which includes a special distributor discount of \\( 12.5\\% \\) on the original list price. Determine the original list price.",
+    "a": "\\(36000.00\\)",
     "opts": [
-      "\\(4410\\)",
-      "\\(3780\\)",
-      "\\(4620\\)",
-      "\\(4200\\)"
+      "\\(37058.82\\)",
+      "\\(35437.50\\)",
+      "\\(36000.00\\)",
+      "\\(36225.00\\)"
     ],
-    "a": "\\(4200\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 10584\\)",
+        "explanation": "Determine the discount multiplier.",
+        "workingOut": "\\(\\text{Multiplier} = 1 - 0.125 = 0.875\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{8}{100}y = 762.72\\ \\rightarrow\\ 6x + 8y = 76272\\)",
+        "explanation": "Divide the discounted price by the multiplier to find the original list price.",
+        "workingOut": "\\(\\text{Original List Price} = \\frac{31500}{0.875}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(6x + 8(10584 - x) = 76272\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(6x + 84672 - 8x = 76272 \\implies -2x = -8400 \\implies x = 4200\\)",
+        "explanation": "Compute the final result.",
+        "workingOut": "\\(\\text{Original List Price} = 36000.00\\)",
         "graphData": null
       }
     ],
@@ -1978,33 +1962,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Isabella purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$844\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$838.13\\). What was the original price of the drone?",
+    "question": "An electric scooter is offered at a promotional price of \\( 1032 \\) dollars after a holiday discount of \\( 14\\% \\) is applied. Determine the original retail price.",
+    "a": "\\(1200.00\\)",
     "opts": [
-      "\\(411\\)",
-      "\\(452\\)",
-      "\\(370\\)",
-      "\\(432\\)"
+      "\\(1176.48\\)",
+      "\\(1197.12\\)",
+      "\\(1214.12\\)",
+      "\\(1200.00\\)"
     ],
-    "a": "\\(411\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 844\\)",
+        "explanation": "Express the discount multiplier.",
+        "workingOut": "\\(\\text{Multiplier} = 1 - 0.14 = 0.86\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 838.13 \\implies 1.07x + 0.92y = 838.13\\)",
+        "explanation": "Divide the promotional price by the multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{1032}{0.86}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.92(844 - x) = 838.13\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.15x + 776.48 = 838.13 \\implies x = 411\\)",
+        "explanation": "Calculate the exact original price.",
+        "workingOut": "\\(\\text{Original Price} = 1200.00\\)",
         "graphData": null
       }
     ],
@@ -2015,33 +1994,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(70\\%\\) pure gold to produce exactly \\(70\\text{ kg}\\) of a blended mixture containing \\(65.71\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "question": "A veterinary surgical table sells for \\( 3230 \\) dollars after a winter discount of \\( 15\\% \\). Find the list price before the discount.",
+    "a": "\\(3800.00\\)",
     "opts": [
-      "\\(15\\)",
-      "\\(17\\)",
-      "\\(16\\)",
-      "\\(14\\)"
+      "\\(3714.50\\)",
+      "\\(3800.00\\)",
+      "\\(3876.00\\)",
+      "\\(4037.50\\)"
     ],
-    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 70\\)",
+        "explanation": "Express the discount rate as a decimal.",
+        "workingOut": "\\(d = 0.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{65.71}{100}(70) \\implies 50x + 70y = 4600.0\\)",
+        "explanation": "Calculate the original price using the formula \\(P_{\\text{orig}} = \\frac{P_{\\text{final}}}{1 - d}\\).",
+        "workingOut": "\\(P_{\\text{orig}} = \\frac{3230}{0.85}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 70(70 - x) = 4600.0 \\implies -20x = -300.0\\)",
+        "explanation": "Compute the result.",
+        "workingOut": "\\(P_{\\text{orig}} = 3800.00\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 15\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2051,28 +2026,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Harper bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$2017\\). Later, she sold the antique clocks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$8.30\\), find the original cost price of the antique clocks.",
+    "question": "A commercial real estate building starts with a valuation of \\( 450000 \\) dollars. The valuation increases by \\( 12\\% \\) in the first year and then decreases by \\( 5\\% \\) in the second year. Find the final valuation.",
+    "a": "\\(478800.00\\)",
     "opts": [
-      "\\(630\\)",
-      "\\(700\\)",
-      "\\(735\\)",
-      "\\(770\\)"
+      "\\(478800.00\\)",
+      "\\(478800.00\\)",
+      "\\(472500.00\\)",
+      "\\(481500.00\\)"
     ],
-    "a": "\\(700\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 2017\\)",
+        "explanation": "Calculate the valuation after the first year increase of 12%.",
+        "workingOut": "\\(V_1 = 450000 \\times 1.12 = 504000.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 8.30 \\implies 20x - 10y = 830\\)",
+        "explanation": "Apply the second year decrease of 5% to the new valuation.",
+        "workingOut": "\\(V_2 = 504000.00 \\times (1 - 0.05) = 504000.00 \\times 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(20x - 10(2017 - x) = 830 \\implies (20 + 10)x - 20170 = 830 \\implies x = 700\\)",
+        "explanation": "Evaluate the final valuation.",
+        "workingOut": "\\(V_2 = 478800.00\\)",
         "graphData": null
       }
     ],
@@ -2083,33 +2058,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Lucas splits a lump sum of \\(\\$10876\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$610.56\\), how much capital was originally deposited into Account A?",
+    "question": "A cryptocurrency fund starts with an asset value of \\( 80000 \\) dollars. The fund experiences a growth of \\( 35\\% \\) in the first quarter, followed by a decline of \\( 20\\% \\) in the second quarter. Calculate the final asset value.",
+    "a": "\\(86400.00\\)",
     "opts": [
-      "\\(3780\\)",
-      "\\(4620\\)",
-      "\\(4410\\)",
-      "\\(4200\\)"
+      "\\(86400.00\\)",
+      "\\(88000.00\\)",
+      "\\(86400.00\\)",
+      "\\(92000.00\\)"
     ],
-    "a": "\\(4200\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 10876\\)",
+        "explanation": "Determine the asset value after the first quarter gain of 35%.",
+        "workingOut": "\\(V_1 = 80000 \\times 1.35 = 108000.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{6}{100}y = 610.56\\ \\rightarrow\\ 5x + 6y = 61056\\)",
+        "explanation": "Apply the second quarter loss of 20% to the marked-up value.",
+        "workingOut": "\\(V_2 = 108000.00 \\times 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 6(10876 - x) = 61056\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(5x + 65256 - 6x = 61056 \\implies -1x = -4200 \\implies x = 4200\\)",
+        "explanation": "Evaluate the final fund value.",
+        "workingOut": "\\(V_2 = 86400.00\\)",
         "graphData": null
       }
     ],
@@ -2120,33 +2090,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evelyn purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$1108\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1075.17\\). What was the original price of the dining table?",
+    "question": "A warehouse stock of raw copper is valued at \\( 120000 \\) dollars. Due to market demands, the price surges by \\( 15\\% \\), but soon drops by \\( 8\\% \\) in a subsequent correction. Find the final stock value.",
+    "a": "\\(126960.00\\)",
     "opts": [
-      "\\(527\\)",
-      "\\(474\\)",
-      "\\(553\\)",
-      "\\(580\\)"
+      "\\(126960.00\\)",
+      "\\(129600.00\\)",
+      "\\(128400.00\\)",
+      "\\(126960.00\\)"
     ],
-    "a": "\\(527\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 1108\\)",
+        "explanation": "Compute value after the 15% surge.",
+        "workingOut": "\\(V_1 = 120000 \\times 1.15 = 138000.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 1075.17 \\implies 1.07x + 0.88y = 1075.17\\)",
+        "explanation": "Apply the 8% drop to the peak value.",
+        "workingOut": "\\(V_2 = 138000.00 \\times 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.88(1108 - x) = 1075.17\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.19x + 975.04 = 1075.17 \\implies x = 527\\)",
+        "explanation": "Determine the final stock value.",
+        "workingOut": "\\(V_2 = 126960.00\\)",
         "graphData": null
       }
     ],
@@ -2157,33 +2122,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(80\\%\\) ethanol to produce exactly \\(42\\text{ kg}\\) of a blended mixture containing \\(75.00\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "question": "A tech company's stock option pool is valued at \\( 250000 \\) dollars. If the valuation grows by \\( 40\\% \\) and later drops by \\( 15\\% \\), determine the final valuation.",
+    "a": "\\(297500.00\\)",
     "opts": [
-      "\\(7\\)",
-      "\\(9\\)",
-      "\\(8\\)",
-      "\\(6\\)"
+      "\\(312500.00\\)",
+      "\\(300000.00\\)",
+      "\\(297500.00\\)",
+      "\\(297500.00\\)"
     ],
-    "a": "\\(7\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 42\\)",
+        "explanation": "Find valuation after the 40% growth.",
+        "workingOut": "\\(V_1 = 250000 \\times 1.40 = 350000.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{75.00}{100}(42) \\implies 50x + 80y = 3150.0\\)",
+        "explanation": "Apply the 15% decline to the peak valuation.",
+        "workingOut": "\\(V_2 = 350000.00 \\times 0.85\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 80(42 - x) = 3150.0 \\implies -30x = -210.0\\)",
+        "explanation": "Determine the final value.",
+        "workingOut": "\\(V_2 = 297500.00\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 7\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2193,28 +2154,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Abigail bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$2205\\). Later, she sold the rehabilitated office desk suites at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$-50.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "question": "A collector's vintage luxury vehicle has an initial value of \\( 60000 \\) dollars. Its value increases by \\( 25\\% \\) during a collector's boom, but drops by \\( 12\\% \\) in the next economic cycle. Find the final vehicle value.",
+    "a": "\\(66000.00\\)",
     "opts": [
-      "\\(850\\)",
-      "\\(935\\)",
-      "\\(893\\)",
-      "\\(765\\)"
+      "\\(67800.00\\)",
+      "\\(69000.00\\)",
+      "\\(66000.00\\)",
+      "\\(66000.00\\)"
     ],
-    "a": "\\(850\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 2205\\)",
+        "explanation": "Find valuation after the 25% boom.",
+        "workingOut": "\\(V_1 = 60000 \\times 1.25 = 75000.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -50.50 \\implies 10x - 10y = -5050\\)",
+        "explanation": "Apply the 12% drop to the peak valuation.",
+        "workingOut": "\\(V_2 = 75000.00 \\times 0.88\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(10x - 10(2205 - x) = -5050 \\implies (10 + 10)x - 22050 = -5050 \\implies x = 850\\)",
+        "explanation": "Determine the final value.",
+        "workingOut": "\\(V_2 = 66000.00\\)",
         "graphData": null
       }
     ],
@@ -2225,33 +2186,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Mason splits a lump sum of \\(\\$11168\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$858.80\\), how much capital was originally deposited into Account A?",
+    "question": "A chemical blending vat contains \\( 180 \\) liters of a chemical solution with a concentration of \\( 12\\% \\) acid. If the technician wants to dilute it to a concentration of \\( 10\\% \\) acid, how many liters of pure water must be added?",
+    "a": "\\(36.00\\)",
     "opts": [
-      "\\(4730\\)",
-      "\\(3870\\)",
-      "\\(4515\\)",
-      "\\(4300\\)"
+      "\\(36.00\\)",
+      "\\(36.00\\)",
+      "\\(15.00\\)",
+      "\\(20.00\\)"
     ],
-    "a": "\\(4300\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 11168\\)",
+        "explanation": "Find the volume of pure acid in the original solution.",
+        "workingOut": "\\(V_{\\text{acid}} = 180 \\times 0.12 = 21.60 \\text{ liters}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{10}{100}y = 858.80\\ \\rightarrow\\ 4x + 10y = 85880\\)",
+        "explanation": "Calculate the required total volume of the mixture for a 10% concentration.",
+        "workingOut": "\\(V_{\\text{total}} = \\frac{21.60}{0.10} = 216.00 \\text{ liters}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 10(11168 - x) = 85880\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(4x + 111680 - 10x = 85880 \\implies -6x = -25800 \\implies x = 4300\\)",
+        "explanation": "Determine the volume of water that must be added.",
+        "workingOut": "\\(V_{\\text{added}} = 216.00 - 180 = 36.00 \\text{ liters}\\)",
         "graphData": null
       }
     ],
@@ -2262,33 +2218,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Elizabeth purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$772\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$796.37\\). What was the original price of the camping tent?",
+    "question": "A pharmaceutical developer mixes a batch of saline solution containing \\( 90 \\) liters of \\( 8\\% \\) sodium chloride. To dilute the batch to a concentration of \\( 6\\% \\), calculate the volume of distilled water that must be added.",
+    "a": "\\(30.00\\)",
     "opts": [
-      "\\(643\\)",
-      "\\(707\\)",
-      "\\(579\\)",
-      "\\(675\\)"
+      "\\(33.33\\)",
+      "\\(30.00\\)",
+      "\\(20.00\\)",
+      "\\(25.00\\)"
     ],
-    "a": "\\(643\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 772\\)",
+        "explanation": "Find the weight of sodium chloride in the original mixture.",
+        "workingOut": "\\(W_{\\text{salt}} = 90 \\times 0.08 = 7.20 \\text{ kg}\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 796.37 \\implies 1.07x + 0.84y = 796.37\\)",
+        "explanation": "Determine the final volume of the solution at 6% concentration.",
+        "workingOut": "\\(V_{\\text{total}} = \\frac{7.20}{0.06} = 120.00 \\text{ liters}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.84(772 - x) = 796.37\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.23x + 648.48 = 796.37 \\implies x = 643\\)",
+        "explanation": "Calculate the volume of water to be added.",
+        "workingOut": "\\(V_{\\text{added}} = 120.00 - 90 = 30.00 \\text{ liters}\\)",
         "graphData": null
       }
     ],
@@ -2299,33 +2250,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(60\\%\\) copper to produce exactly \\(94\\text{ kg}\\) of a blended mixture containing \\(55.00\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "question": "A soil nutrient compound has \\( 400 \\) kg of organic compost at \\( 20\\% \\) nitrogen concentration. To reduce the nitrogen concentration to \\( 16\\% \\) by adding inert dry clay, find the weight of clay required.",
+    "a": "\\(100.00\\)",
     "opts": [
-      "\\(42\\)",
-      "\\(52\\)",
-      "\\(47\\)",
-      "\\(49\\)"
+      "\\(80.00\\)",
+      "\\(120.00\\)",
+      "\\(90.00\\)",
+      "\\(100.00\\)"
     ],
-    "a": "\\(47\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 94\\)",
+        "explanation": "Calculate the weight of pure nitrogen in the compound.",
+        "workingOut": "\\(W_{\\text{nitrogen}} = 400 \\times 0.20 = 80.00 \\text{ kg}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{55.00}{100}(94) \\implies 50x + 60y = 5170.0\\)",
+        "explanation": "Determine the final weight of the compound at 16% concentration.",
+        "workingOut": "\\(W_{\\text{total}} = \\frac{80.00}{0.16} = 500.00 \\text{ kg}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 60(94 - x) = 5170.0 \\implies -10x = -470.0\\)",
+        "explanation": "Compute the weight of clay to be added.",
+        "workingOut": "\\(W_{\\text{added}} = 500.00 - 400 = 100.00 \\text{ kg}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 47\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2335,28 +2282,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Mila bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$2393\\). Later, she sold the second-hand server cabinets at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$-1.80\\), find the original cost price of the second-hand server cabinets.",
+    "question": "A laboratory container holds \\( 250 \\) mL of \\( 40\\% \\) sulfuric acid. If the lab technician wants to reduce the concentration to \\( 25\\% \\), determine the volume of pure water that must be added.",
+    "a": "\\(150.00\\)",
     "opts": [
-      "\\(855\\)",
-      "\\(1045\\)",
-      "\\(998\\)",
-      "\\(950\\)"
+      "\\(100.00\\)",
+      "\\(180.00\\)",
+      "\\(125.00\\)",
+      "\\(150.00\\)"
     ],
-    "a": "\\(950\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 2393\\)",
+        "explanation": "Determine the volume of pure acid.",
+        "workingOut": "\\(V_{\\text{acid}} = 250 \\times 0.40 = 100.00 \\text{ mL}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = -1.80 \\implies 15x - 10y = -180\\)",
+        "explanation": "Determine the final volume of the solution at 25% concentration.",
+        "workingOut": "\\(V_{\\text{total}} = \\frac{100.00}{0.25} = 400.00 \\text{ mL}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(15x - 10(2393 - x) = -180 \\implies (15 + 10)x - 23930 = -180 \\implies x = 950\\)",
+        "explanation": "Calculate the water volume to be added.",
+        "workingOut": "\\(V_{\\text{added}} = 400.00 - 250 = 150.00 \\text{ mL}\\)",
         "graphData": null
       }
     ],
@@ -2367,33 +2314,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Michael splits a lump sum of \\(\\$11460\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$696.80\\), how much capital was originally deposited into Account A?",
+    "question": "A swimming pool contains \\( 15000 \\) liters of water at a chlorine concentration of \\( 0.5\\% \\). If the pool owner wants to dilute the chlorine concentration to \\( 0.4\\% \\), find the volume of tap water that must be added.",
+    "a": "\\(3750.00\\)",
     "opts": [
-      "\\(4620\\)",
-      "\\(3960\\)",
-      "\\(4840\\)",
-      "\\(4400\\)"
+      "\\(3750.00\\)",
+      "\\(2500.00\\)",
+      "\\(3000.00\\)",
+      "\\(4500.00\\)"
     ],
-    "a": "\\(4400\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 11460\\)",
+        "explanation": "Calculate the volume of pure chlorine in the pool.",
+        "workingOut": "\\(V_{\\text{chlorine}} = 15000 \\times 0.005 = 75.00 \\text{ liters}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{8}{100}y = 696.80\\ \\rightarrow\\ 3x + 8y = 69680\\)",
+        "explanation": "Determine the final volume of water at 0.4% concentration.",
+        "workingOut": "\\(V_{\\text{total}} = \\frac{75.00}{0.004} = 18750.00 \\text{ liters}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(3x + 8(11460 - x) = 69680\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(3x + 91680 - 8x = 69680 \\implies -5x = -22000 \\implies x = 4400\\)",
+        "explanation": "Calculate the required added water volume.",
+        "workingOut": "\\(V_{\\text{added}} = 18750.00 - 15000 = 3750.00 \\text{ liters}\\)",
         "graphData": null
       }
     ],
@@ -2404,33 +2346,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Ella purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$1036\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1066.97\\). What was the original price of the road bike?",
+    "question": "An independent wholesale dealer Charlotte bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$2000\\). Later, she sold the delivery trucks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the forklifts. If her net profit from the double transaction was \\(\\$125\\), find the original cost price of the delivery trucks.",
+    "a": "\\(1300.00\\)",
     "opts": [
-      "\\(683\\)",
-      "\\(835\\)",
-      "\\(797\\)",
-      "\\(759\\)"
+      "\\(1100.00\\)",
+      "\\(1400.00\\)",
+      "\\(1300.00\\)",
+      "\\(1200.00\\)"
     ],
-    "a": "\\(759\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 1036\\)",
+        "explanation": "State equations representing total cost.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the cost of the trucks}, \\text{ and } y \\text{ be the cost of the forklifts}.\\ \\rightarrow\\ x + y = 2000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 1066.97 \\implies 1.07x + 0.92y = 1066.97\\)",
+        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
+        "workingOut": "\\(0.15x - 0.10y = 125\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.92(1036 - x) = 1066.97\\)",
+        "explanation": "Substitute y = 2000 - x to solve for the cost price of the delivery trucks.",
+        "workingOut": "\\(0.15x - 0.10(2000 - x) = 125 \\implies 0.25x - 200 = 125\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.15x + 953.12 = 1066.97 \\implies x = 759\\)",
+        "explanation": "Solve for x.",
+        "workingOut": "\\(0.25x = 325 \\implies x = 1300\\)",
         "graphData": null
       }
     ],
@@ -2441,33 +2383,34 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(70\\%\\) nitrogen to produce exactly \\(66\\text{ kg}\\) of a blended mixture containing \\(55.76\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "question": "A merchant buys a vintage watch and a designer ring for a total of \\( 4500 \\) dollars. The merchant sells the watch at a \\( 20\\% \\) profit, and the ring at a \\( 12\\% \\) loss. If the total net profit is \\( 420 \\) dollars, find the cost price of the watch.",
+    "a": "\\(3000.00\\)",
     "opts": [
-      "\\(49\\)",
-      "\\(52\\)",
-      "\\(42\\)",
-      "\\(47\\)"
+      "\\(2500.00\\)",
+      "\\(3000.00\\)",
+      "\\(2800.00\\)",
+      "\\(3200.00\\)"
     ],
-    "a": "\\(47\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 66\\)",
+        "explanation": "Formulate the variables for the cost of the watch and ring.",
+        "workingOut": "\\(x + y = 4500\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{55.76}{100}(66) \\implies 50x + 70y = 3680.0\\)",
+        "explanation": "Express the total net profit algebraically.",
+        "workingOut": "\\(0.20x - 0.12y = 420\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 70(66 - x) = 3680.0 \\implies -20x = -940.0\\)",
+        "explanation": "Substitute y to form a single variable equation.",
+        "workingOut": "\\(0.20x - 0.12(4500 - x) = 420 \\implies 0.32x - 540 = 420\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 47\\)"
+        "explanation": "Solve for the cost of the watch.",
+        "workingOut": "\\(0.32x = 960 \\implies x = 3000\\)",
+        "graphData": null
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2477,28 +2420,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Avery bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$2581\\). Later, she sold the used delivery trucks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$56.90\\), find the original cost price of the used delivery trucks.",
+    "question": "An antique dealer purchases a painting and a sculpture for a total of \\( 8000 \\) dollars. The dealer sells the painting at an \\( 18\\% \\) markup and the sculpture at an \\( 8\\% \\) loss. If the net profit on the transaction is \\( 660 \\) dollars, calculate the cost of the painting.",
+    "a": "\\(5000.00\\)",
     "opts": [
-      "\\(945\\)",
-      "\\(1155\\)",
-      "\\(1103\\)",
-      "\\(1050\\)"
+      "\\(5500.00\\)",
+      "\\(5000.00\\)",
+      "\\(4500.00\\)",
+      "\\(6000.00\\)"
     ],
-    "a": "\\(1050\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 2581\\)",
+        "explanation": "Formulate the variables for cost.",
+        "workingOut": "\\(x + y = 8000\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 56.90 \\implies 20x - 10y = 5690\\)",
+        "explanation": "Write the net transaction equation.",
+        "workingOut": "\\(0.18x - 0.08y = 660\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(20x - 10(2581 - x) = 5690 \\implies (20 + 10)x - 25810 = 5690 \\implies x = 1050\\)",
+        "explanation": "Substitute y and simplify.",
+        "workingOut": "\\(0.18x - 0.08(8000 - x) = 660 \\implies 0.26x - 640 = 660\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the cost of the painting.",
+        "workingOut": "\\(0.26x = 1300 \\implies x = 5000\\)",
         "graphData": null
       }
     ],
@@ -2509,33 +2457,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jacob splits a lump sum of \\(\\$11752\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$750.12\\), how much capital was originally deposited into Account A?",
+    "question": "A car dealer buys a sedan and a hatchback at auction for a combined sum of \\( 22000 \\) dollars. He sells the sedan at a \\( 12\\% \\) profit and the hatchback at a \\( 5\\% \\) loss. If the net gain is \\( 1120 \\) dollars, find the purchase price of the sedan.",
+    "a": "\\(13000.00\\)",
     "opts": [
-      "\\(4500\\)",
-      "\\(4950\\)",
-      "\\(4725\\)",
-      "\\(4050\\)"
+      "\\(12000.00\\)",
+      "\\(14000.00\\)",
+      "\\(15000.00\\)",
+      "\\(13000.00\\)"
     ],
-    "a": "\\(4500\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 11752\\)",
+        "explanation": "Define the cost variables sedan and hatchback.",
+        "workingOut": "\\(x + y = 22000\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{6}{100}y = 750.12\\ \\rightarrow\\ 7x + 6y = 75012\\)",
+        "explanation": "Formulate the profit equation.",
+        "workingOut": "\\(0.12x - 0.05y = 1110\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 6(11752 - x) = 75012\\)",
+        "explanation": "Substitute y = 22000 - x and expand.",
+        "workingOut": "\\(0.12x - 0.05(22000 - x) = 1110 \\implies 0.17x - 1100 = 1110\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(7x + 70512 - 6x = 75012 \\implies -1x = 4500 \\implies x = 4500\\)",
+        "explanation": "Find sedan price.",
+        "workingOut": "\\(0.17x = 2210 \\implies x = 13000\\)",
         "graphData": null
       }
     ],
@@ -2546,33 +2494,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Sofia purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$1300\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1310.25\\). What was the original price of the leather sofa?",
+    "question": "A broker purchases shares of TechA and TechB for a combined value of \\( 50000 \\) dollars. TechA shares increase in value by \\( 25\\% \\), while TechB shares decrease by \\( 15\\% \\). If the total value increased by \\( 4500 \\) dollars, determine the investment in TechA.",
+    "a": "\\(30000.00\\)",
     "opts": [
-      "\\(788\\)",
-      "\\(875\\)",
-      "\\(963\\)",
-      "\\(919\\)"
+      "\\(30000.00\\)",
+      "\\(25000.00\\)",
+      "\\(35000.00\\)",
+      "\\(28000.00\\)"
     ],
-    "a": "\\(875\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 1300\\)",
+        "explanation": "Define variables for investment in TechA and TechB.",
+        "workingOut": "\\(x + y = 50000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 1310.25 \\implies 1.07x + 0.88y = 1310.25\\)",
+        "explanation": "Formulate the net change equation.",
+        "workingOut": "\\(0.25x - 0.15y = 4500\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.88(1300 - x) = 1310.25\\)",
+        "explanation": "Substitute y and simplify the linear equation.",
+        "workingOut": "\\(0.25x - 0.15(50000 - x) = 4500 \\implies 0.40x - 7500 = 4500\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.19x + 1144.00 = 1310.25 \\implies x = 875\\)",
+        "explanation": "Determine TechA investment capital.",
+        "workingOut": "\\(0.40x = 12000 \\implies x = 30000\\)",
         "graphData": null
       }
     ],
@@ -2583,33 +2531,34 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(80\\%\\) pure silver to produce exactly \\(38\\text{ kg}\\) of a blended mixture containing \\(65.00\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "question": "Daniel splits a capital of \\(\\$15000\\) into two savings accounts. Account A earns a yield of \\(6\\%\\) interest per annum, while Account B earns \\(8.5\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1075\\), how much capital was originally deposited into Account A?",
+    "a": "\\(8000.00\\)",
     "opts": [
-      "\\(17\\)",
-      "\\(21\\)",
-      "\\(19\\)",
-      "\\(20\\)"
+      "\\(8000.00\\)",
+      "\\(7000.00\\)",
+      "\\(9000.00\\)",
+      "\\(7500.00\\)"
     ],
-    "a": "\\(19\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 38\\)",
+        "explanation": "Formulate variables for the two investments.",
+        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 15000\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{65.00}{100}(38) \\implies 50x + 80y = 2470.0\\)",
+        "explanation": "Write down the interest equation.",
+        "workingOut": "\\(0.06x + 0.085y = 1075\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 80(38 - x) = 2470.0 \\implies -30x = -570.0\\)",
+        "explanation": "Substitute the value of y into the interest equation.",
+        "workingOut": "\\(0.06x + 0.085(15000 - x) = 1075 \\implies -0.025x + 1275 = 1075\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 19\\)"
+        "explanation": "Solve the linear equation to find the value of x.",
+        "workingOut": "\\(-0.025x = -200 \\implies x = 8000\\)",
+        "graphData": null
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2619,28 +2568,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Camila bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$2769\\). Later, she sold the estate jewellery rings at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$-36.90\\), find the original cost price of the estate jewellery rings.",
+    "question": "A trust fund of \\( 60000 \\) dollars is divided into two municipal bond investments. Bond A yields \\( 4\\% \\) annually and Bond B yields \\( 7\\% \\) annually. If the total annual yield is \\( 3600 \\) dollars, calculate the amount in Bond A.",
+    "a": "\\(20000.00\\)",
     "opts": [
-      "\\(1320\\)",
-      "\\(1260\\)",
-      "\\(1200\\)",
-      "\\(1080\\)"
+      "\\(30000.00\\)",
+      "\\(20000.00\\)",
+      "\\(15000.00\\)",
+      "\\(25000.00\\)"
     ],
-    "a": "\\(1200\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 2769\\)",
+        "explanation": "Define the investment variables.",
+        "workingOut": "\\(x + y = 60000\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -36.90 \\implies 10x - 10y = -3690\\)",
+        "explanation": "Formulate the total annual yield equation.",
+        "workingOut": "\\(0.04x + 0.07y = 3600\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(10x - 10(2769 - x) = -3690 \\implies (10 + 10)x - 27690 = -3690 \\implies x = 1200\\)",
+        "explanation": "Substitute y Bond B investment.",
+        "workingOut": "\\(0.04x + 0.07(60000 - x) = 3600 \\implies -0.03x + 4200 = 3600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for Bond A investment size.",
+        "workingOut": "\\(-0.03x = -600 \\implies x = 20000\\)",
         "graphData": null
       }
     ],
@@ -2651,33 +2605,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Henry splits a lump sum of \\(\\$12044\\) into two different savings accounts. Account A earns a yield of \\(6\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1024.40\\), how much capital was originally deposited into Account A?",
+    "question": "An investor allocates \\( 40000 \\) dollars between a high-yield account at \\( 5.5\\% \\) p.a. and a tech index fund yielding \\( 9\\% \\) p.a. If the total interest at year end is \\( 2750 \\) dollars, find the capital in the high-yield account.",
+    "a": "\\(25000.00\\)",
     "opts": [
-      "\\(4725\\)",
-      "\\(4500\\)",
-      "\\(4950\\)",
-      "\\(4050\\)"
+      "\\(20000.00\\)",
+      "\\(25000.00\\)",
+      "\\(22000.00\\)",
+      "\\(30000.00\\)"
     ],
-    "a": "\\(4500\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 12044\\)",
+        "explanation": "Define investment allocations.",
+        "workingOut": "\\(x + y = 40000\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{10}{100}y = 1024.40\\ \\rightarrow\\ 6x + 10y = 102440\\)",
+        "explanation": "Write the interest equation based on yields.",
+        "workingOut": "\\(0.055x + 0.09y = 2725\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(6x + 10(12044 - x) = 102440\\)",
+        "explanation": "Substitute y to yield single variable equation.",
+        "workingOut": "\\(0.055x + 0.09(40000 - x) = 2725 \\implies -0.035x + 3600 = 2725\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(6x + 120440 - 10x = 102440 \\implies -4x = -18000 \\implies x = 4500\\)",
+        "explanation": "Determine allocation in the high-yield account.",
+        "workingOut": "\\(-0.035x = -875 \\implies x = 25000\\)",
         "graphData": null
       }
     ],
@@ -2688,33 +2642,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Aria purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$764\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$685.69\\). What was the original price of the drone?",
+    "question": "A business partner deposits a startup capital of \\( 32000 \\) dollars into two accounts. The first account accrues a dividend yield of \\( 8\\% \\) annually, whereas the second account accrues \\( 12\\% \\) annually. If the total dividends earned after one year equal \\( 3440 \\) dollars, find the amount in the 8% dividend account.",
+    "a": "\\(10000.00\\)",
     "opts": [
-      "\\(191\\)",
-      "\\(172\\)",
-      "\\(201\\)",
-      "\\(210\\)"
+      "\\(10000.00\\)",
+      "\\(8000.00\\)",
+      "\\(15000.00\\)",
+      "\\(12000.00\\)"
     ],
-    "a": "\\(191\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 764\\)",
+        "explanation": "Define variables for the dividend allocations.",
+        "workingOut": "\\(x + y = 32000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 685.69 \\implies 1.07x + 0.84y = 685.69\\)",
+        "explanation": "Set up the dividend equation.",
+        "workingOut": "\\(0.08x + 0.12y = 3440\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.84(764 - x) = 685.69\\)",
+        "explanation": "Substitute the second account value.",
+        "workingOut": "\\(0.08x + 0.12(32000 - x) = 3440 \\implies -0.04x + 3840 = 3440\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.23x + 641.76 = 685.69 \\implies x = 191\\)",
+        "explanation": "Compute the amount in the first account.",
+        "workingOut": "\\(-0.04x = -400 \\implies x = 10000\\)",
         "graphData": null
       }
     ],
@@ -2725,33 +2679,34 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(60\\%\\) pure gold to produce exactly \\(90\\text{ kg}\\) of a blended mixture containing \\(53.89\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "question": "A commercial venture splits a development pool of \\( 90000 \\) dollars. One portion is allocated to low-risk bonds at \\( 5\\% \\) yield, and the remaining portion to venture assets yielding \\( 11\\% \\). If the total return at the end of the year is \\( 7500 \\) dollars, calculate the low-risk bond allocation.",
+    "a": "\\(40000.00\\)",
     "opts": [
-      "\\(61\\)",
-      "\\(50\\)",
-      "\\(55\\)",
-      "\\(58\\)"
+      "\\(35000.00\\)",
+      "\\(45000.00\\)",
+      "\\(40000.00\\)",
+      "\\(50000.00\\)"
     ],
-    "a": "\\(55\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 90\\)",
+        "explanation": "Define allocation variables.",
+        "workingOut": "\\(x + y = 90000\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{53.89}{100}(90) \\implies 50x + 60y = 4850.0\\)",
+        "explanation": "Formulate return equation.",
+        "workingOut": "\\(0.05x + 0.11y = 7500\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 60(90 - x) = 4850.0 \\implies -10x = -550.0\\)",
+        "explanation": "Substitute y for venture asset allocation.",
+        "workingOut": "\\(0.05x + 0.11(90000 - x) = 7500 \\implies -0.06x + 9900 = 7500\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 55\\)"
+        "explanation": "Solve for the low-risk bond capital.",
+        "workingOut": "\\(-0.06x = -2400 \\implies x = 40000\\)",
+        "graphData": null
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2761,28 +2716,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Sophia bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$2957\\). Later, she sold the antique clocks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$29.30\\), find the original cost price of the antique clocks.",
+    "question": "A semiconductor facility produces \\( 8000 \\) microchips daily. Due to machinery modernization, the daily output is increased by \\( 15\\% \\), but the defect rate also increases from \\( 2.5\\% \\) to \\( 4.0\\% \\). Calculate the net daily number of functional microchips produced after the modernization.",
+    "a": "\\(8832\\)",
     "opts": [
-      "\\(1365\\)",
-      "\\(1170\\)",
-      "\\(1430\\)",
-      "\\(1300\\)"
+      "\\(8500\\)",
+      "\\(8832\\)",
+      "\\(8900\\)",
+      "\\(8832\\)"
     ],
-    "a": "\\(1300\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 2957\\)",
+        "explanation": "Calculate the new daily microchip output after the 15% increase.",
+        "workingOut": "\\(N_{\\text{new}} = 8000 \\times 1.15 = 9200\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 29.30 \\implies 15x - 10y = 2930\\)",
+        "explanation": "Determine the percentage of functional chips after the defect rate increases to 4.0%.",
+        "workingOut": "\\(P_{\\text{functional}} = 100\\% - 4.0\\% = 96\\% = 0.96\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(15x - 10(2957 - x) = 2930 \\implies (15 + 10)x - 29570 = 2930 \\implies x = 1300\\)",
+        "explanation": "Calculate the net daily number of functional microchips.",
+        "workingOut": "\\(N_{\\text{functional}} = 9200 \\times 0.96 = 8832\\)",
         "graphData": null
       }
     ],
@@ -2793,33 +2748,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Benjamin splits a lump sum of \\(\\$12336\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$848.88\\), how much capital was originally deposited into Account A?",
+    "question": "A textile factory manufacturing organic cotton shirts produces \\( 5000 \\) units per week. If production volume is increased by \\( 20\\% \\), but quality control issues cause the defect rate to double from \\( 3\\% \\) to \\( 6\\% \\), find the net weekly output of non-defective shirts.",
+    "a": "\\(5640\\)",
     "opts": [
-      "\\(5060\\)",
-      "\\(4600\\)",
-      "\\(4830\\)",
-      "\\(4140\\)"
+      "\\(5640\\)",
+      "\\(5500\\)",
+      "\\(5700\\)",
+      "\\(5820\\)"
     ],
-    "a": "\\(4600\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 12336\\)",
+        "explanation": "Compute the updated weekly production volume.",
+        "workingOut": "\\(N_{\\text{new}} = 5000 \\times 1.20 = 6000\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 848.88\\ \\rightarrow\\ 5x + 8y = 84888\\)",
+        "explanation": "Compute the non-defective percentage after defect rate increases to 6%.",
+        "workingOut": "\\(P_{\\text{good}} = 1 - 0.06 = 0.94\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 8(12336 - x) = 84888\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(5x + 98688 - 8x = 84888 \\implies -3x = -13800 \\implies x = 4600\\)",
+        "explanation": "Find the weekly functional shirts.",
+        "workingOut": "\\(N_{\\text{good}} = 6000 \\times 0.94 = 5640\\)",
         "graphData": null
       }
     ],
@@ -2830,33 +2780,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Charlotte purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$428\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$439.81\\). What was the original price of the dining table?",
+    "question": "A factory produces custom steel bolts at a baseline of \\( 15000 \\) bolts per day. Daily output increases by \\( 10\\% \\), but the processing error defect rate rises from \\( 1.5\\% \\) to \\( 3\\% \\). Find the net number of flawless bolts produced daily.",
+    "a": "\\(16005\\)",
     "opts": [
-      "\\(276\\)",
-      "\\(307\\)",
-      "\\(322\\)",
-      "\\(338\\)"
+      "\\(15500\\)",
+      "\\(16120\\)",
+      "\\(15800\\)",
+      "\\(16005\\)"
     ],
-    "a": "\\(307\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 428\\)",
+        "explanation": "Calculate daily bolt production after 10% increase.",
+        "workingOut": "\\(N_{\\text{new}} = 15000 \\times 1.10 = 16500\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 439.81 \\implies 1.07x + 0.92y = 439.81\\)",
+        "explanation": "Apply the new defect rate of 3.0% to determine functional yield.",
+        "workingOut": "\\(N_{\\text{good}} = 16500 \\times (1 - 0.03) = 16500 \\times 0.97\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.92(428 - x) = 439.81\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.15x + 393.76 = 439.81 \\implies x = 307\\)",
+        "explanation": "Calculate final flawless daily yield.",
+        "workingOut": "\\(N_{\\text{good}} = 16005\\)",
         "graphData": null
       }
     ],
@@ -2867,33 +2812,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(70\\%\\) ethanol to produce exactly \\(62\\text{ kg}\\) of a blended mixture containing \\(58.71\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "question": "A chemical synthesis line generates \\( 1200 \\) kg of a plasticizer agent weekly. A new catalyst increases output by \\( 25\\% \\), but impurity defects increase from \\( 4\\% \\) to \\( 8\\% \\). Calculate the functional weekly yield.",
+    "a": "\\(1380\\)",
     "opts": [
-      "\\(39\\)",
-      "\\(35\\)",
-      "\\(37\\)",
-      "\\(32\\)"
+      "\\(1410\\)",
+      "\\(1380\\)",
+      "\\(1350\\)",
+      "\\(1390\\)"
     ],
-    "a": "\\(35\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 62\\)",
+        "explanation": "Calculate weekly output with catalyst.",
+        "workingOut": "\\(W_{\\text{new}} = 1200 \\times 1.25 = 1500\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{58.71}{100}(62) \\implies 50x + 70y = 3640.0\\)",
+        "explanation": "Compute yield after accounting for the 8% impurity rate.",
+        "workingOut": "\\(W_{\\text{good}} = 1500 \\times 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 70(62 - x) = 3640.0 \\implies -20x = -700.0\\)",
+        "explanation": "Determine weekly functional yield.",
+        "workingOut": "\\(W_{\\text{good}} = 1380\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 35\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -2903,28 +2844,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Amelia bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$3145\\). Later, she sold the rehabilitated office desk suites at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$105.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "question": "A processing plant packaging frozen food packs \\( 20000 \\) boxes per shift. Output expands by \\( 8\\% \\), but sorting failures cause the box reject rate to rise from \\( 2\\% \\) to \\( 5\\% \\). Find the net functional boxes per shift.",
+    "a": "\\(20520\\)",
     "opts": [
-      "\\(1540\\)",
-      "\\(1260\\)",
-      "\\(1400\\)",
-      "\\(1470\\)"
+      "\\(20420\\)",
+      "\\(20800\\)",
+      "\\(20520\\)",
+      "\\(20600\\)"
     ],
-    "a": "\\(1400\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 3145\\)",
+        "explanation": "Calculate box output after 8% expansion.",
+        "workingOut": "\\(N_{\\text{new}} = 20000 \\times 1.08 = 21600\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 105.50 \\implies 20x - 10y = 10550\\)",
+        "explanation": "Apply the 5% sorting failure rate.",
+        "workingOut": "\\(N_{\\text{good}} = 21600 \\times 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(20x - 10(3145 - x) = 10550 \\implies (20 + 10)x - 31450 = 10550 \\implies x = 1400\\)",
+        "explanation": "Compute final accepted boxes.",
+        "workingOut": "\\(N_{\\text{good}} = 20520\\)",
         "graphData": null
       }
     ],
@@ -2935,33 +2876,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "William splits a lump sum of \\(\\$12628\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$663.68\\), how much capital was originally deposited into Account A?",
+    "question": "A regional town has a population of \\( 36000 \\). In one year, the population increases by \\( 8\\% \\) due to economic immigration, but then decreases by \\( 3\\% \\) in the winter due to rural migration. Calculate the net population at the end of the year.",
+    "a": "\\(37714\\)",
     "opts": [
-      "\\(4230\\)",
-      "\\(4700\\)",
-      "\\(5170\\)",
-      "\\(4935\\)"
+      "\\(37800\\)",
+      "\\(37714\\)",
+      "\\(38160\\)",
+      "\\(37440\\)"
     ],
-    "a": "\\(4700\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 12628\\)",
+        "explanation": "Calculate the population after the 8% increase.",
+        "workingOut": "\\(P_1 = 36000 \\times 1.08 = 38880\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 663.68\\ \\rightarrow\\ 4x + 6y = 66368\\)",
+        "explanation": "Apply the 3% decrease to the immigration peak.",
+        "workingOut": "\\(P_2 = 38880 \\times (1 - 0.03) = 38880 \\times 0.97\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 6(12628 - x) = 66368\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(4x + 75768 - 6x = 66368 \\implies -2x = -9400 \\implies x = 4700\\)",
+        "explanation": "Determine the final population count.",
+        "workingOut": "\\(P_2 = 37713.6 \\approx 37714\\)",
         "graphData": null
       }
     ],
@@ -2972,33 +2908,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Olivia purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$692\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$689.33\\). What was the original price of the camping tent?",
+    "question": "A marine bay seal population is estimated at \\( 4500 \\). If a conservation effort increases population by \\( 12\\% \\), but a severe storm later causes a \\( 5\\% \\) drop, find the final seal population.",
+    "a": "\\(4788\\)",
     "opts": [
-      "\\(444\\)",
-      "\\(423\\)",
-      "\\(465\\)",
-      "\\(381\\)"
+      "\\(4750\\)",
+      "\\(4800\\)",
+      "\\(4815\\)",
+      "\\(4788\\)"
     ],
-    "a": "\\(423\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 692\\)",
+        "explanation": "Compute seal population after conservation increase.",
+        "workingOut": "\\(S_1 = 4500 \\times 1.12 = 5040\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 689.33 \\implies 1.07x + 0.88y = 689.33\\)",
+        "explanation": "Apply the 5% drop to the peak population.",
+        "workingOut": "\\(S_2 = 5040 \\times 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.88(692 - x) = 689.33\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.19x + 608.96 = 689.33 \\implies x = 423\\)",
+        "explanation": "Find the final population size.",
+        "workingOut": "\\(S_2 = 4788\\)",
         "graphData": null
       }
     ],
@@ -3009,33 +2940,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(80\\%\\) copper to produce exactly \\(34\\text{ kg}\\) of a blended mixture containing \\(73.82\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "question": "An urban suburb registers \\( 120000 \\) residents. Over a decade, urban expansion increases population by \\( 22\\% \\), but industrial rezoning prompts a \\( 10\\% \\) departure. Find the final resident count.",
+    "a": "\\(131760\\)",
     "opts": [
-      "\\(9\\)",
-      "\\(6\\)",
-      "\\(8\\)",
-      "\\(7\\)"
+      "\\(130000\\)",
+      "\\(131760\\)",
+      "\\(132000\\)",
+      "\\(134400\\)"
     ],
-    "a": "\\(7\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 34\\)",
+        "explanation": "Calculate population after expansion increase.",
+        "workingOut": "\\(P_1 = 120000 \\times 1.22 = 146400\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{73.82}{100}(34) \\implies 50x + 80y = 2510.0\\)",
+        "explanation": "Apply the 10% departure reduction.",
+        "workingOut": "\\(P_2 = 146400 \\times 0.90\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 80(34 - x) = 2510.0 \\implies -30x = -210.0\\)",
+        "explanation": "Determine final population count.",
+        "workingOut": "\\(P_2 = 131760\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 7\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3045,28 +2972,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Isabella bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$3333\\). Later, she sold the second-hand server cabinets at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$-23.30\\), find the original cost price of the second-hand server cabinets.",
+    "question": "A wild forest has a bird population of \\( 8500 \\). Seasonal migration increases the population by \\( 15\\% \\), but cold weather causes a \\( 7\\% \\) decrease. Find the final bird population.",
+    "a": "\\(9091\\)",
     "opts": [
-      "\\(1550\\)",
-      "\\(1705\\)",
-      "\\(1628\\)",
-      "\\(1395\\)"
+      "\\(9100\\)",
+      "\\(9150\\)",
+      "\\(9050\\)",
+      "\\(9091\\)"
     ],
-    "a": "\\(1550\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 3333\\)",
+        "explanation": "Compute population after migration peak.",
+        "workingOut": "\\(B_1 = 8500 \\times 1.15 = 9775\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -23.30 \\implies 10x - 10y = -2330\\)",
+        "explanation": "Apply the 7% winter decline.",
+        "workingOut": "\\(B_2 = 9775 \\times 0.93\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(10x - 10(3333 - x) = -2330 \\implies (10 + 10)x - 33330 = -2330 \\implies x = 1550\\)",
+        "explanation": "Evaluate the final population count.",
+        "workingOut": "\\(B_2 = 9090.75 \\approx 9091\\)",
         "graphData": null
       }
     ],
@@ -3077,33 +3004,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Matthew splits a lump sum of \\(\\$12920\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$956.00\\), how much capital was originally deposited into Account A?",
+    "question": "An isolated island ecosystem starts with a reptile population of \\( 650 \\). Invasive species control yields a \\( 30\\% \\) increase, but later volcanic activity causes a \\( 15\\% \\) decrease. Find the final reptile population.",
+    "a": "\\(718\\)",
     "opts": [
-      "\\(4800\\)",
-      "\\(4320\\)",
-      "\\(5280\\)",
-      "\\(5040\\)"
+      "\\(718\\)",
+      "\\(730\\)",
+      "\\(720\\)",
+      "\\(715\\)"
     ],
-    "a": "\\(4800\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 12920\\)",
+        "explanation": "Compute island reptile population after increase.",
+        "workingOut": "\\(R_1 = 650 \\times 1.30 = 845\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{10}{100}y = 956.00\\ \\rightarrow\\ 3x + 10y = 95600\\)",
+        "explanation": "Apply the 15% volcanic decline.",
+        "workingOut": "\\(R_2 = 845 \\times 0.85\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(3x + 10(12920 - x) = 95600\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(3x + 129200 - 10x = 95600 \\implies -7x = -33600 \\implies x = 4800\\)",
+        "explanation": "Evaluate the final reptile count.",
+        "workingOut": "\\(R_2 = 718.25 \\approx 718\\)",
         "graphData": null
       }
     ],
@@ -3114,33 +3036,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Harper purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$956\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$927.01\\). What was the original price of the road bike?",
+    "question": "A researcher receives a salary raise of \\( 8\\% \\). However, over the same year, the local cost of living index increases by \\( 5\\% \\). Determine the net percentage increase in their purchasing power, correct to two decimal places.",
+    "a": "\\(2.86\\%\\)",
     "opts": [
-      "\\(566\\)",
-      "\\(593\\)",
-      "\\(485\\)",
-      "\\(539\\)"
+      "\\(2.86\\%\\)",
+      "\\(3.00\\%\\)",
+      "\\(3.15\\%\\)",
+      "\\(2.86\\%\\)"
     ],
-    "a": "\\(539\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 956\\)",
+        "explanation": "Set up the purchasing power ratio comparing raise multiplier to inflation multiplier.",
+        "workingOut": "\\(R = \\frac{1.08}{1.05}\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 927.01 \\implies 1.07x + 0.84y = 927.01\\)",
+        "explanation": "Compute the ratio as a decimal.",
+        "workingOut": "\\(R \\approx 1.02857\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.84(956 - x) = 927.01\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.23x + 803.04 = 927.01 \\implies x = 539\\)",
+        "explanation": "Convert the growth multiplier to a net percentage increase.",
+        "workingOut": "\\(P_{\\text{net}} = (1.02857 - 1) \\times 100\\% \\approx 2.86\\%\\)",
         "graphData": null
       }
     ],
@@ -3151,33 +3068,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(60\\%\\) nitrogen to produce exactly \\(86\\text{ kg}\\) of a blended mixture containing \\(51.74\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "question": "A factory specialist gets a wages markup of \\( 12\\% \\), but inflation causes utility and food indices to climb by \\( 7\\% \\). Find the net percentage increase in their real income purchasing power.",
+    "a": "\\(4.67\\%\\)",
     "opts": [
-      "\\(64\\)",
-      "\\(78\\)",
-      "\\(71\\)",
-      "\\(75\\)"
+      "\\(4.90\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(4.67\\%\\)",
+      "\\(4.67\\%\\)"
     ],
-    "a": "\\(71\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 86\\)",
+        "explanation": "Express real purchasing power multiplier.",
+        "workingOut": "\\(R = \\frac{1.12}{1.07}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{51.74}{100}(86) \\implies 50x + 60y = 4450.0\\)",
+        "explanation": "Divide parameters.",
+        "workingOut": "\\(R \\approx 1.04673\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 60(86 - x) = 4450.0 \\implies -10x = -710.0\\)",
+        "explanation": "Compute real wages growth percentage.",
+        "workingOut": "\\(P_{\\text{net}} = 4.67\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 71\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3187,28 +3100,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Evelyn bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$3521\\). Later, she sold the used delivery trucks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$60.40\\), find the original cost price of the used delivery trucks.",
+    "question": "A civil supervisor gets a salary increase of \\( 6.5\\% \\). If the cost of living index concurrently increases by \\( 4.2\\% \\), calculate the net percentage improvement in purchasing power.",
+    "a": "\\(2.21\\%\\)",
     "opts": [
-      "\\(1815\\)",
-      "\\(1733\\)",
-      "\\(1650\\)",
-      "\\(1485\\)"
+      "\\(2.21\\%\\)",
+      "\\(2.21\\%\\)",
+      "\\(2.30\\%\\)",
+      "\\(2.45\\%\\)"
     ],
-    "a": "\\(1650\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 3521\\)",
+        "explanation": "Express the real wages ratio.",
+        "workingOut": "\\(R = \\frac{1.065}{1.042}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 60.40 \\implies 15x - 10y = 6040\\)",
+        "explanation": "Divide multipliers.",
+        "workingOut": "\\(R \\approx 1.02207\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(15x - 10(3521 - x) = 6040 \\implies (15 + 10)x - 35210 = 6040 \\implies x = 1650\\)",
+        "explanation": "Compute final percentage increase.",
+        "workingOut": "\\(P_{\\text{net}} = 2.21\\%\\)",
         "graphData": null
       }
     ],
@@ -3219,33 +3132,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Ethan splits a lump sum of \\(\\$13212\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1008.96\\), how much capital was originally deposited into Account A?",
+    "question": "A retail clerk receives a basic salary increase of \\( 5\\% \\), while inflation hikes goods prices by \\( 6\\% \\). Calculate the net percentage change in their purchasing power.",
+    "a": "\\(-0.94\\%\\)",
     "opts": [
-      "\\(5040\\)",
-      "\\(4320\\)",
-      "\\(5280\\)",
-      "\\(4800\\)"
+      "\\(-0.94\\%\\)",
+      "\\(-1.05\\%\\)",
+      "\\(-0.94\\%\\)",
+      "\\(-1.00\\%\\)"
     ],
-    "a": "\\(4800\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 13212\\)",
+        "explanation": "Express real purchasing power ratio.",
+        "workingOut": "\\(R = \\frac{1.05}{1.06}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{8}{100}y = 1008.96\\ \\rightarrow\\ 7x + 8y = 100896\\)",
+        "explanation": "Divide the multipliers.",
+        "workingOut": "\\(R \\approx 0.99057\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 8(13212 - x) = 100896\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(7x + 105696 - 8x = 100896 \\implies -1x = -4800 \\implies x = 4800\\)",
+        "explanation": "Calculate the net percentage drop.",
+        "workingOut": "\\(P_{\\text{net}} = (0.99057 - 1) \\times 100\\% \\approx -0.94\\%\\)",
         "graphData": null
       }
     ],
@@ -3256,33 +3164,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Abigail purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$1220\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1220.65\\). What was the original price of the leather sofa?",
+    "question": "An administrative manager receives a salary increase of \\( 15\\% \\), while regional rent indices increase by \\( 12\\% \\). Find the net percentage growth in their rent-adjusted purchasing power.",
+    "a": "\\(2.68\\%\\)",
     "opts": [
-      "\\(590\\)",
-      "\\(688\\)",
-      "\\(721\\)",
-      "\\(655\\)"
+      "\\(2.85\\%\\)",
+      "\\(2.68\\%\\)",
+      "\\(2.68\\%\\)",
+      "\\(3.00\\%\\)"
     ],
-    "a": "\\(655\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 1220\\)",
+        "explanation": "Determine purchasing power ratio.",
+        "workingOut": "\\(R = \\frac{1.15}{1.12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 1220.65 \\implies 1.07x + 0.92y = 1220.65\\)",
+        "explanation": "Divide multipliers.",
+        "workingOut": "\\(R \\approx 1.02679\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.92(1220 - x) = 1220.65\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.15x + 1122.40 = 1220.65 \\implies x = 655\\)",
+        "explanation": "Evaluate percentage growth.",
+        "workingOut": "\\(P_{\\text{net}} = 2.68\\%\\)",
         "graphData": null
       }
     ],
@@ -3293,33 +3196,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(70\\%\\) pure silver to produce exactly \\(58\\text{ kg}\\) of a blended mixture containing \\(56.55\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "question": "A special customs duty is applied at a rate of \\( 15\\% \\) on electronic imports exceeding \\( 20000 \\) dollars. If a batch of imports is valued at \\( 35000 \\) dollars, and the duty rate is increased to \\( 18\\% \\), determine the percentage increase in the total duty paid.",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(35\\)",
-      "\\(39\\)",
-      "\\(43\\)",
-      "\\(41\\)"
+      "\\(18.50\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(22.00\\%\\)",
+      "\\(20.00\\%\\)"
     ],
-    "a": "\\(39\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 58\\)",
+        "explanation": "Calculate the total duty paid under the old rate of 15%.",
+        "workingOut": "\\(D_{\\text{old}} = (35000 - 20000) \\times 0.15 = 2250.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{56.55}{100}(58) \\implies 50x + 70y = 3280.0\\)",
+        "explanation": "Calculate the total duty paid under the new rate of 18%.",
+        "workingOut": "\\(D_{\\text{new}} = (35000 - 20000) \\times 0.18 = 2700.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 70(58 - x) = 3280.0 \\implies -20x = -780.0\\)",
+        "explanation": "Find the percentage increase in duty paid.",
+        "workingOut": "\\(P = \\frac{2700.00 - 2250.00}{2250.00} \\times 100\\% = 20.00\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 39\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3329,28 +3228,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Elizabeth bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$3709\\). Later, she sold the estate jewellery rings at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$154.10\\), find the original cost price of the estate jewellery rings.",
+    "question": "An environmental regulation charges an emissions fee of \\( 10\\% \\) on factories exceeding a threshold of \\( 5000 \\) tons of carbon. For a plant emitting \\( 9000 \\) tons, if the fee is increased to \\( 12\\% \\), calculate the percentage increase in the emissions fee paid.",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(1838\\)",
-      "\\(1575\\)",
-      "\\(1925\\)",
-      "\\(1750\\)"
+      "\\(22.00\\%\\)",
+      "\\(18.00\\%\\)",
+      "\\(20.00\\%\\)",
+      "\\(24.00\\%\\)"
     ],
-    "a": "\\(1750\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 3709\\)",
+        "explanation": "Calculate old emissions fee paid.",
+        "workingOut": "\\(F_{\\text{old}} = (9000 - 5000) \\times 0.10 = 400.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 154.10 \\implies 20x - 10y = 15410\\)",
+        "explanation": "Calculate new emissions fee paid.",
+        "workingOut": "\\(F_{\\text{new}} = (9000 - 5000) \\times 0.12 = 480.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(20x - 10(3709 - x) = 15410 \\implies (20 + 10)x - 37090 = 15410 \\implies x = 1750\\)",
+        "explanation": "Determine percentage fee increase.",
+        "workingOut": "\\(P = \\frac{480.00 - 400.00}{400.00} \\times 100\\% = 20.00\\%\\)",
         "graphData": null
       }
     ],
@@ -3361,33 +3260,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Mila purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$884\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$924.41\\). What was the original price of the drone?",
+    "question": "A luxury tax levies \\( 8\\% \\) on jewelry purchases over \\( 10000 \\) dollars. For a diamond ring priced at \\( 25000 \\) dollars, if the luxury tax rate increases to \\( 10\\% \\), find the percentage increase in luxury tax paid.",
+    "a": "\\(25.00\\%\\)",
     "opts": [
-      "\\(771\\)",
-      "\\(848\\)",
-      "\\(694\\)",
-      "\\(810\\)"
+      "\\(26.00\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(24.00\\%\\)",
+      "\\(22.50\\%\\)"
     ],
-    "a": "\\(771\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 884\\)",
+        "explanation": "Identify tax calculation bounds.",
+        "workingOut": "\\(\\text{Taxable value} = 25000 - 10000 = 15000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 924.41 \\implies 1.07x + 0.88y = 924.41\\)",
+        "explanation": "Express tax ratio using the rates.",
+        "workingOut": "\\(\\text{Increase} = \\frac{10 - 8}{8} \\times 100\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.88(884 - x) = 924.41\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.19x + 777.92 = 924.41 \\implies x = 771\\)",
+        "explanation": "Calculate percentage tax increase.",
+        "workingOut": "\\(\\text{Increase} = 25.00\\%\\)",
         "graphData": null
       }
     ],
@@ -3398,33 +3292,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(80\\%\\) pure gold to produce exactly \\(30\\text{ kg}\\) of a blended mixture containing \\(65.00\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "question": "A water utility charges a surcharge of \\( 6\\% \\) on daily usage exceeding \\( 8000 \\) liters. For a brewery consuming \\( 12000 \\) liters daily, if the surcharge increases to \\( 9\\% \\), calculate the percentage increase in daily surcharge.",
+    "a": "\\(50.00\\%\\)",
     "opts": [
-      "\\(17\\)",
-      "\\(16\\)",
-      "\\(15\\)",
-      "\\(14\\)"
+      "\\(48.00\\%\\)",
+      "\\(45.00\\%\\)",
+      "\\(50.00\\%\\)",
+      "\\(52.00\\%\\)"
     ],
-    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 30\\)",
+        "explanation": "Determine usage above threshold.",
+        "workingOut": "\\(\\text{Taxable volume} = 12000 - 8000 = 4000\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{65.00}{100}(30) \\implies 50x + 80y = 1950.0\\)",
+        "explanation": "Express increase multiplier.",
+        "workingOut": "\\(\\text{Increase} = \\frac{9 - 6}{6} \\times 100\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 80(30 - x) = 1950.0 \\implies -30x = -450.0\\)",
+        "explanation": "Compute final percentage increase.",
+        "workingOut": "\\(\\text{Increase} = 50.00\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 15\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3434,28 +3324,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Ella bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$3897\\). Later, she sold the antique clocks at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$-9.70\\), find the original cost price of the antique clocks.",
+    "question": "A transactional pool fee of \\( 2.5\\% \\) is paid on block rewards exceeding \\( 15000 \\) dollars. For blocks valued at \\( 35000 \\) dollars, if the fee increases to \\( 3.5\\% \\rd\\), find the percentage increase in transaction fees.",
+    "a": "\\(40.00\\%\\)",
     "opts": [
-      "\\(1900\\)",
-      "\\(1995\\)",
-      "\\(1710\\)",
-      "\\(2090\\)"
+      "\\(38.00\\%\\)",
+      "\\(45.00\\%\\)",
+      "\\(40.00\\%\\)",
+      "\\(42.00\\%\\)"
     ],
-    "a": "\\(1900\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 3897\\)",
+        "explanation": "Calculate threshold value.",
+        "workingOut": "\\(\\text{Value} = 35000 - 15000 = 20000\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -9.70 \\implies 10x - 10y = -970\\)",
+        "explanation": "Express fee growth ratio.",
+        "workingOut": "\\(\\text{Increase} = \\frac{3.5 - 2.5}{2.5} \\times 100\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(10x - 10(3897 - x) = -970 \\implies (10 + 10)x - 38970 = -970 \\implies x = 1900\\)",
+        "explanation": "Determine final percentage fee increase.",
+        "workingOut": "\\(\\text{Increase} = 40.00\\%\\)",
         "graphData": null
       }
     ],
@@ -3466,33 +3356,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Elijah splits a lump sum of \\(\\$13796\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1129.60\\), how much capital was originally deposited into Account A?",
+    "question": "A commercial delivery truck consumes \\( 16.00 \\) liters of diesel per hour. An eco-friendly hybrid delivery truck consumes \\( 12.00 \\) liters per hour. Calculate the percentage savings of the hybrid truck.",
+    "a": "\\(25.00\\%\\)",
     "opts": [
-      "\\(5250\\)",
-      "\\(4500\\)",
-      "\\(5500\\)",
-      "\\(5000\\)"
+      "\\(28.00\\%\\)",
+      "\\(22.50\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(33.33\\%\\)"
     ],
-    "a": "\\(5000\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 13796\\)",
+        "explanation": "Calculate the hourly fuel consumption difference.",
+        "workingOut": "\\(\\text{Difference} = 16.00 - 12.00 = 4.00 \\text{ liters/hour}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{10}{100}y = 1129.60\\ \\rightarrow\\ 5x + 10y = 112960\\)",
+        "explanation": "Divide the savings by the original truck consumption.",
+        "workingOut": "\\(\\text{Savings} = \\frac{4.00}{16.00} \\times 100\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 10(13796 - x) = 112960\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(5x + 137960 - 10x = 112960 \\implies -5x = -25000 \\implies x = 5000\\)",
+        "explanation": "Compute the percentage savings.",
+        "workingOut": "\\(\\text{Savings} = 25.00\\%\\)",
         "graphData": null
       }
     ],
@@ -3503,33 +3388,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Avery purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$1148\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1168.33\\). What was the original price of the dining table?",
+    "question": "A factory boiler uses \\( 9.00 \\) tons of coal per day. An upgraded eco-boiler uses \\( 7.20 \\) tons of coal per day. Calculate the percentage coal savings of the eco-boiler.",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(931\\)",
-      "\\(887\\)",
-      "\\(798\\)",
-      "\\(976\\)"
+      "\\(22.50\\%\\)",
+      "\\(20.00\\%\\)",
+      "\\(18.00\\%\\)",
+      "\\(24.00\\%\\)"
     ],
-    "a": "\\(887\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 1148\\)",
+        "explanation": "Find the difference in coal consumption.",
+        "workingOut": "\\(\\text{Difference} = 9.00 - 7.20 = 1.80 \\text{ tons/day}\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 1168.33 \\implies 1.07x + 0.84y = 1168.33\\)",
+        "explanation": "Divide the savings by the original boiler consumption.",
+        "workingOut": "\\(\\text{Savings} = \\frac{1.80}{9.00} \\times 100\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.84(1148 - x) = 1168.33\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.23x + 964.32 = 1168.33 \\implies x = 887\\)",
+        "explanation": "Determine the final percentage savings.",
+        "workingOut": "\\(\\text{Savings} = 20.00\\%\\)",
         "graphData": null
       }
     ],
@@ -3540,33 +3420,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(60\\%\\) ethanol to produce exactly \\(82\\text{ kg}\\) of a blended mixture containing \\(57.20\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "question": "An electric furnace requires \\( 45.00 \\) kWh per cycle. A new insulation shield reduces this to \\( 36.00 \\) kWh. Find the percentage electricity savings.",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(23\\)",
-      "\\(25\\)",
-      "\\(21\\)",
-      "\\(24\\)"
+      "\\(18.00\\%\\)",
+      "\\(22.50\\%\\)",
+      "\\(24.00\\%\\)",
+      "\\(20.00\\%\\)"
     ],
-    "a": "\\(23\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 82\\)",
+        "explanation": "Determine electrical usage reduction.",
+        "workingOut": "\\(\\text{Reduction} = 45.00 - 36.00 = 9.00 \\text{ kWh}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{57.20}{100}(82) \\implies 50x + 60y = 4690.0\\)",
+        "explanation": "Divide by baseline furnace usage.",
+        "workingOut": "\\(\\text{Savings} = \\frac{9.00}{45.00} \\times 100\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 60(82 - x) = 4690.0 \\implies -10x = -230.0\\)",
+        "explanation": "Determine percentage savings.",
+        "workingOut": "\\(\\text{Savings} = 20.00\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 23\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3576,28 +3452,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Sofia bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$4085\\). Later, she sold the rehabilitated office desk suites at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$91.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "question": "A commercial aircraft engine burns \\( 3200 \\) kg of fuel per hour. Aerodynamic improvements reduce consumption to \\( 2880 \\) kg per hour. Find the percentage fuel savings.",
+    "a": "\\(10.00\\%\\)",
     "opts": [
-      "\\(2000\\)",
-      "\\(2100\\)",
-      "\\(2200\\)",
-      "\\(1800\\)"
+      "\\(10.00\\%\\)",
+      "\\(9.50\\%\\)",
+      "\\(12.00\\%\\)",
+      "\\(8.50\\%\\)"
     ],
-    "a": "\\(2000\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 4085\\)",
+        "explanation": "Compute fuel rate decrease.",
+        "workingOut": "\\(\\text{Difference} = 3200 - 2880 = 320 \\text{ kg}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 91.50 \\implies 15x - 10y = 9150\\)",
+        "explanation": "Divide by the original fuel rate.",
+        "workingOut": "\\(\\text{Savings} = \\frac{320}{3200} \\times 100\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(15x - 10(4085 - x) = 9150 \\implies (15 + 10)x - 40850 = 9150 \\implies x = 2000\\)",
+        "explanation": "Calculate the fuel savings percentage.",
+        "workingOut": "\\(\\text{Savings} = 10.00\\%\\)",
         "graphData": null
       }
     ],
@@ -3608,33 +3484,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Oliver splits a lump sum of \\(\\$14088\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$923.04\\), how much capital was originally deposited into Account A?",
+    "question": "A cargo container ship averages \\( 55.00 \\) liters of fuel per nautical mile. Slow steaming strategies reduce fuel to \\( 44.00 \\) liters. Calculate the percentage fuel savings.",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(5100\\)",
-      "\\(5610\\)",
-      "\\(4590\\)",
-      "\\(5355\\)"
+      "\\(22.50\\%\\)",
+      "\\(18.00\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(20.00\\%\\)"
     ],
-    "a": "\\(5100\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 14088\\)",
+        "explanation": "Compute fuel rate reduction.",
+        "workingOut": "\\(\\text{Difference} = 55.00 - 44.00 = 11.00 \\text{ liters}\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{8}{100}y = 923.04\\ \\rightarrow\\ 4x + 8y = 92304\\)",
+        "explanation": "Divide the savings by the original ship usage.",
+        "workingOut": "\\(\\text{Savings} = \\frac{11.00}{55.00} \\times 100\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 8(14088 - x) = 92304\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(4x + 112704 - 8x = 92304 \\implies -4x = -20400 \\implies x = 5100\\)",
+        "explanation": "Compute the final savings percentage.",
+        "workingOut": "\\(\\text{Savings} = 20.00\\%\\)",
         "graphData": null
       }
     ],
@@ -3645,33 +3516,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Camila purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$612\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$593.49\\). What was the original price of the camping tent?",
+    "question": "A farm uses a new fertilizer, increasing yield per acre of wheat by \\( 15\\% \\), but due to flooding, total arable land decreases by \\( 8\\% \\). Find the net percentage change in total wheat output.",
+    "a": "\\(5.80\\%\\)",
     "opts": [
-      "\\(213\\)",
-      "\\(183\\)",
-      "\\(223\\)",
-      "\\(203\\)"
+      "\\(5.80\\%\\)",
+      "\\(7.00\\%\\)",
+      "\\(6.20\\%\\)",
+      "\\(5.80\\%\\)"
     ],
-    "a": "\\(203\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 612\\)",
+        "explanation": "State growth multiplier for yield per acre.",
+        "workingOut": "\\(M_{\\text{yield}} = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 593.49 \\implies 1.07x + 0.92y = 593.49\\)",
+        "explanation": "State growth multiplier for arable land.",
+        "workingOut": "\\(M_{\\text{land}} = 1 - 0.08 = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.92(612 - x) = 593.49\\)",
+        "explanation": "Multiply the factors to find the net output multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1.15 \\times 0.92 = 1.058\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.15x + 563.04 = 593.49 \\implies x = 203\\)",
+        "explanation": "Calculate the net percentage change.",
+        "workingOut": "\\(P = (1.058 - 1) \\times 100\\% = 5.80\\%\\)",
         "graphData": null
       }
     ],
@@ -3682,33 +3553,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(70\\%\\) copper to produce exactly \\(54\\text{ kg}\\) of a blended mixture containing \\(64.44\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "question": "A vineyard increases grape yield per vine by \\( 20\\% \\) through soil conditioning, but vine disease forces them to cut active vines by \\( 15\\% \\). Determine the net percentage change in grape production.",
+    "a": "\\(2.00\\%\\)",
     "opts": [
-      "\\(16\\)",
-      "\\(14\\)",
-      "\\(17\\)",
-      "\\(15\\)"
+      "\\(3.00\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(2.00\\%\\)",
+      "\\(1.50\\%\\)"
     ],
-    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 54\\)",
+        "explanation": "Determine yield and vine multiplier factors.",
+        "workingOut": "\\(M_{\\text{yield}} = 1.20, \\quad M_{\\text{vines}} = 0.85\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{64.44}{100}(54) \\implies 50x + 70y = 3480.0\\)",
+        "explanation": "Calculate net grape output multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1.20 \\times 0.85 = 1.02\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 70(54 - x) = 3480.0 \\implies -20x = -300.0\\)",
+        "explanation": "Calculate percentage change.",
+        "workingOut": "\\(P = 2.00\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 15\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3718,28 +3585,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Aria bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$4273\\). Later, she sold the second-hand server cabinets at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$202.70\\), find the original cost price of the second-hand server cabinets.",
+    "question": "A commercial orchard increases cherry crop density by \\( 8\\% \\) p.a., but pest issues cause active trees to shrink by \\( 12\\% \\). Find the net percentage change in cherry output.",
+    "a": "\\(-4.96\\%\\)",
     "opts": [
-      "\\(1890\\)",
-      "\\(2100\\)",
-      "\\(2310\\)",
-      "\\(2205\\)"
+      "\\(-4.80\\%\\)",
+      "\\(-5.12\\%\\)",
+      "\\(-4.96\\%\\)",
+      "\\(-4.00\\%\\)"
     ],
-    "a": "\\(2100\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 4273\\)",
+        "explanation": "Write multiplier factors.",
+        "workingOut": "\\(M_{\\text{density}} = 1.08, \\quad M_{\\text{trees}} = 0.88\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 202.70 \\implies 20x - 10y = 20270\\)",
+        "explanation": "Evaluate net output multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.88 = 0.9504\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(20x - 10(4273 - x) = 20270 \\implies (20 + 10)x - 42730 = 20270 \\implies x = 2100\\)",
+        "explanation": "Compute net percentage change.",
+        "workingOut": "\\(P = (0.9504 - 1) \\times 100\\% = -4.96\\%\\)",
         "graphData": null
       }
     ],
@@ -3750,33 +3617,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Alexander splits a lump sum of \\(\\$14380\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$709.80\\), how much capital was originally deposited into Account A?",
+    "question": "A vegetable farm increases potato output per plot by \\( 25\\% \\), but reduces active plots by \\( 20\\% \\). Find the net percentage change in total potato output.",
+    "a": "\\(0.00\\%\\)",
     "opts": [
-      "\\(5355\\)",
-      "\\(4590\\)",
-      "\\(5610\\)",
-      "\\(5100\\)"
+      "\\(5.00\\%\\)",
+      "\\(0.00\\%\\)",
+      "\\(1.50\\%\\)",
+      "\\(2.00\\%\\)"
     ],
-    "a": "\\(5100\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 14380\\)",
+        "explanation": "Determine multipliers.",
+        "workingOut": "\\(M_{\\text{yield}} = 1.25, \\quad M_{\\text{plots}} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{6}{100}y = 709.80\\ \\rightarrow\\ 3x + 6y = 70980\\)",
+        "explanation": "Compute total net multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1.25 \\times 0.80 = 1.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(3x + 6(14380 - x) = 70980\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(3x + 86280 - 6x = 70980 \\implies -3x = -15300 \\implies x = 5100\\)",
+        "explanation": "Determine net percentage change.",
+        "workingOut": "\\(P = 0.00\\%\\)",
         "graphData": null
       }
     ],
@@ -3787,33 +3649,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Sophia purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$876\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$831.49\\). What was the original price of the road bike?",
+    "question": "A dairy farm increases milk production per cow by \\( 10\\% \\), but cow herd size decreases by \\( 5\\% \\). Determine the net percentage change in total milk production.",
+    "a": "\\(4.50\\%\\)",
     "opts": [
-      "\\(319\\)",
-      "\\(351\\)",
-      "\\(287\\)",
-      "\\(335\\)"
+      "\\(4.80\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(4.50\\%\\)",
+      "\\(4.20\\%\\)"
     ],
-    "a": "\\(319\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 876\\)",
+        "explanation": "Write multipliers.",
+        "workingOut": "\\(M_{\\text{yield}} = 1.10, \\quad M_{\\text{herd}} = 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 831.49 \\implies 1.07x + 0.88y = 831.49\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{net}} = 1.10 \\times 0.95 = 1.045\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.88(876 - x) = 831.49\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.19x + 770.88 = 831.49 \\implies x = 319\\)",
+        "explanation": "Compute net percentage change.",
+        "workingOut": "\\(P = 4.50\\%\\)",
         "graphData": null
       }
     ],
@@ -3824,33 +3681,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(80\\%\\) nitrogen to produce exactly \\(26\\text{ kg}\\) of a blended mixture containing \\(71.92\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "question": "An importer faces a tariff increase of \\( 12\\% \\) on goods, followed by a discount of \\( 15\\% \\) on shipping. If the original cost of goods is \\( 5000 \\) dollars and original shipping is \\( 1200 \\) dollars, find the final total cost.",
+    "a": "\\(6620.00\\)",
     "opts": [
-      "\\(6\\)",
-      "\\(9\\)",
-      "\\(8\\)",
-      "\\(7\\)"
+      "\\(6076.00\\)",
+      "\\(6620.00\\)",
+      "\\(6324.00\\)",
+      "\\(6510.00\\)"
     ],
-    "a": "\\(7\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 26\\)",
+        "explanation": "Calculate the new cost of goods after the 12% tariff increase.",
+        "workingOut": "\\(C_{\\text{goods}} = 5000 \\times 1.12 = 5600.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{71.92}{100}(26) \\implies 50x + 80y = 1870.0\\)",
+        "explanation": "Calculate the new cost of shipping after the 15% discount.",
+        "workingOut": "\\(C_{\\text{shipping}} = 1200 \\times 0.85 = 1020.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 80(26 - x) = 1870.0 \\implies -30x = -210.0\\)",
+        "explanation": "Find the final total cost.",
+        "workingOut": "\\(C_{\\text{total}} = 5600.00 + 1020.00 = 6620.00\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 7\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -3860,28 +3713,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Charlotte bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$4461\\). Later, she sold the used delivery trucks at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$3.90\\), find the original cost price of the used delivery trucks.",
+    "question": "A luxury vehicle importer pays a tariff markup of \\( 20\\% \\) on a vehicle priced at \\( 85000 \\) dollars, but receives a loyalty shipping discount of \\( 30\\% \\) on a baseline shipping charge of \\( 4000 \\) dollars. Find the total import cost.",
+    "a": "\\(104800.00\\)",
     "opts": [
-      "\\(2363\\)",
-      "\\(2250\\)",
-      "\\(2475\\)",
-      "\\(2025\\)"
+      "\\(105020.00\\)",
+      "\\(102350.00\\)",
+      "\\(104800.00\\)",
+      "\\(97900.00\\)"
     ],
-    "a": "\\(2250\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 4461\\)",
+        "explanation": "Compute vehicle price after tariff markup.",
+        "workingOut": "\\(C_{\\text{car}} = 85000 \\times 1.20 = 102000.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 3.90 \\implies 10x - 10y = 390\\)",
+        "explanation": "Apply the 30% shipping discount.",
+        "workingOut": "\\(C_{\\text{ship}} = 4000 \\times 0.70 = 2800.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(10x - 10(4461 - x) = 390 \\implies (10 + 10)x - 44610 = 390 \\implies x = 2250\\)",
+        "explanation": "Determine total import cost.",
+        "workingOut": "\\(C_{\\text{total}} = 102000.00 + 2800.00 = 104800.00\\)",
         "graphData": null
       }
     ],
@@ -3892,33 +3745,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Daniel splits a lump sum of \\(\\$14672\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1311.20\\), how much capital was originally deposited into Account A?",
+    "question": "A medical supplier faces a tariff increase of \\( 8\\% \\) on raw pharmaceuticals valued at \\( 25000 \\) dollars, and gets a shipping rebate discount of \\( 20\\% \\) on shipping valued at \\( 3500 \\) dollars. Calculate final supply cost.",
+    "a": "\\(29800.00\\)",
     "opts": [
-      "\\(5460\\)",
-      "\\(4680\\)",
-      "\\(5720\\)",
-      "\\(5200\\)"
+      "\\(30780.00\\)",
+      "\\(29800.00\\)",
+      "\\(29925.00\\)",
+      "\\(29355.00\\)"
     ],
-    "a": "\\(5200\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 14672\\)",
+        "explanation": "Compute marked-up pharmaceutical cost.",
+        "workingOut": "\\(C_{\\text{pharm}} = 25000 \\times 1.08 = 27000.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{10}{100}y = 1311.20\\ \\rightarrow\\ 7x + 10y = 131120\\)",
+        "explanation": "Compute discounted shipping.",
+        "workingOut": "\\(C_{\\text{ship}} = 3500 \\times 0.80 = 2800.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 10(14672 - x) = 131120\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(7x + 146720 - 10x = 131120 \\implies -3x = -15600 \\implies x = 5200\\)",
+        "explanation": "Determine final cost.",
+        "workingOut": "\\(C_{\\text{total}} = 27000.00 + 2800.00 = 29800.00\\)",
         "graphData": null
       }
     ],
@@ -3929,33 +3777,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Amelia purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$540\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$553.65\\). What was the original price of the leather sofa?",
+    "question": "An importer of vintage wines faces a customs tariff increase of \\( 15\\% \\) on a batch valued at \\( 18000 \\) dollars, but enjoys a carrier discount of \\( 25\\% \\) on shipping of \\( 2400 \\) dollars. Find the total import cost.",
+    "a": "\\(22500.00\\)",
     "opts": [
-      "\\(457\\)",
-      "\\(435\\)",
-      "\\(392\\)",
-      "\\(479\\)"
+      "\\(22848.00\\)",
+      "\\(22440.00\\)",
+      "\\(22500.00\\)",
+      "\\(21420.00\\)"
     ],
-    "a": "\\(435\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 540\\)",
+        "explanation": "Determine wine batch cost with tariff.",
+        "workingOut": "\\(C_{\\text{wine}} = 18000 \\times 1.15 = 20700.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 553.65 \\implies 1.07x + 0.84y = 553.65\\)",
+        "explanation": "Determine shipping cost with discount.",
+        "workingOut": "\\(C_{\\text{ship}} = 2400 \\times 0.75 = 1800.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.84(540 - x) = 553.65\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.23x + 453.60 = 553.65 \\implies x = 435\\)",
+        "explanation": "Sum batch and shipping costs.",
+        "workingOut": "\\(C_{\\text{total}} = 20700.00 + 1800.00 = 22500.00\\)",
         "graphData": null
       }
     ],
@@ -3966,33 +3809,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(60\\%\\) pure silver to produce exactly \\(78\\text{ kg}\\) of a blended mixture containing \\(52.44\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "question": "An electronics dealer imports custom displays at a cost of \\( 60000 \\) dollars subject to a \\( 5\\% \\) tariff markup, while shipping is \\( 8000 \\) dollars subject to a \\( 10\\% \\) fuel surcharge markup. Calculate final delivery cost.",
+    "a": "\\(71800.00\\)",
     "opts": [
-      "\\(62\\)",
-      "\\(65\\)",
-      "\\(59\\)",
-      "\\(53\\)"
+      "\\(70720.00\\)",
+      "\\(73440.00\\)",
+      "\\(72080.00\\)",
+      "\\(71800.00\\)"
     ],
-    "a": "\\(59\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 78\\)",
+        "explanation": "Determine displays cost with tariff.",
+        "workingOut": "\\(C_{\\text{displays}} = 60000 \\times 1.05 = 63000.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{52.44}{100}(78) \\implies 50x + 60y = 4090.0\\)",
+        "explanation": "Determine shipping cost with surcharge.",
+        "workingOut": "\\(C_{\\text{ship}} = 8000 \\times 1.10 = 8800.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 60(78 - x) = 4090.0 \\implies -10x = -590.0\\)",
+        "explanation": "Determine total import cost.",
+        "workingOut": "\\(C_{\\text{total}} = 63000.00 + 8800.00 = 71800.00\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 59\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -4002,28 +3841,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Olivia bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$4649\\). Later, she sold the estate jewellery rings at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$122.60\\), find the original cost price of the estate jewellery rings.",
+    "question": "Electricity rates increase by \\( 15\\% \\), prompting a consumer to decrease usage by \\( 10\\% \\). Find the percentage change in the total bill.",
+    "a": "\\(3.50\\%\\)",
     "opts": [
-      "\\(2115\\)",
-      "\\(2350\\)",
-      "\\(2585\\)",
-      "\\(2468\\)"
+      "\\(5.00\\%\\)",
+      "\\(3.20\\%\\)",
+      "\\(3.50\\%\\)",
+      "\\(4.00\\%\\)"
     ],
-    "a": "\\(2350\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 4649\\)",
+        "explanation": "State growth multiplier for rate increase.",
+        "workingOut": "\\(M_{\\text{rate}} = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 122.60 \\implies 15x - 10y = 12260\\)",
+        "explanation": "State growth multiplier for usage decrease.",
+        "workingOut": "\\(M_{\\text{usage}} = 1 - 0.10 = 0.90\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(15x - 10(4649 - x) = 12260 \\implies (15 + 10)x - 46490 = 12260 \\implies x = 2350\\)",
+        "explanation": "Multiply the factors to find the net bill multiplier.",
+        "workingOut": "\\(M_{\\text{bill}} = 1.15 \\times 0.90 = 1.035\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the percentage change.",
+        "workingOut": "\\(P = (1.035 - 1) \\times 100\\% = 3.50\\%\\)",
         "graphData": null
       }
     ],
@@ -4034,33 +3878,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "James splits a lump sum of \\(\\$14964\\) into two different savings accounts. Account A earns a yield of \\(6\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1091.12\\), how much capital was originally deposited into Account A?",
+    "question": "Water tariffs rise by \\( 12\\% \\) p.a., prompting a chemical plant to reduce usage by \\( 8\\% \\). Find the percentage change in the plant's water bill.",
+    "a": "\\(3.04\\%\\)",
     "opts": [
-      "\\(5565\\)",
-      "\\(4770\\)",
-      "\\(5830\\)",
-      "\\(5300\\)"
+      "\\(3.12\\%\\)",
+      "\\(4.00\\%\\)",
+      "\\(2.86\\%\\)",
+      "\\(3.04\\%\\)"
     ],
-    "a": "\\(5300\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 14964\\)",
+        "explanation": "Determine water rate and usage multipliers.",
+        "workingOut": "\\(M_{\\text{rate}} = 1.12, \\quad M_{\\text{usage}} = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{8}{100}y = 1091.12\\ \\rightarrow\\ 6x + 8y = 109112\\)",
+        "explanation": "Multiply the factors.",
+        "workingOut": "\\(M_{\\text{bill}} = 1.12 \\times 0.92 = 1.0304\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(6x + 8(14964 - x) = 109112\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(6x + 119712 - 8x = 109112 \\implies -2x = -10600 \\implies x = 5300\\)",
+        "explanation": "Calculate percentage bill increase.",
+        "workingOut": "\\(P = 3.04\\%\\)",
         "graphData": null
       }
     ],
@@ -4071,33 +3910,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Isabella purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$804\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$822.33\\). What was the original price of the drone?",
+    "question": "A warehouse's gas utility rate increases by \\( 20\\% \\), causing the manager to reduce consumption by \\( 15\\% \\). Calculate the net percentage change in their gas bill.",
+    "a": "\\(2.00\\%\\)",
     "opts": [
-      "\\(496\\)",
-      "\\(606\\)",
-      "\\(579\\)",
-      "\\(551\\)"
+      "\\(5.00\\%\\)",
+      "\\(1.50\\%\\)",
+      "\\(2.50\\%\\)",
+      "\\(2.00\\%\\)"
     ],
-    "a": "\\(551\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 804\\)",
+        "explanation": "Write multipliers.",
+        "workingOut": "\\(M_{\\text{rate}} = 1.20, \\quad M_{\\text{usage}} = 0.85\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 822.33 \\implies 1.07x + 0.92y = 822.33\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{bill}} = 1.20 \\times 0.85 = 1.02\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.92(804 - x) = 822.33\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.15x + 739.68 = 822.33 \\implies x = 551\\)",
+        "explanation": "Compute net percentage change.",
+        "workingOut": "\\(P = 2.00\\%\\)",
         "graphData": null
       }
     ],
@@ -4108,33 +3942,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(70\\%\\) pure gold to produce exactly \\(50\\text{ kg}\\) of a blended mixture containing \\(64.00\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "question": "A logistics hub's internet broadband rates increase by \\( 8\\% \\), but data reduction strategies decrease usage fees by \\( 12\\% \\). Calculate the net percentage change in the internet bill.",
+    "a": "\\(-4.96\\%\\)",
     "opts": [
-      "\\(15\\)",
-      "\\(14\\)",
-      "\\(17\\)",
-      "\\(16\\)"
+      "\\(-4.96\\%\\)",
+      "\\(-4.96\\%\\)",
+      "\\(-4.50\\%\\)",
+      "\\(-4.00\\%\\)"
     ],
-    "a": "\\(15\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 50\\)",
+        "explanation": "Determine rate and data multipliers.",
+        "workingOut": "\\(M_{\\text{rate}} = 1.08, \\quad M_{\\text{data}} = 0.88\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{64.00}{100}(50) \\implies 50x + 70y = 3200.0\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{bill}} = 1.08 \\times 0.88 = 0.9504\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 70(50 - x) = 3200.0 \\implies -20x = -300.0\\)",
+        "explanation": "Calculate net percentage drop.",
+        "workingOut": "\\(P = (0.9504 - 1) \\times 100\\% \\approx -4.96\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 15\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -4144,28 +3974,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Harper bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$4837\\). Later, she sold the antique clocks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$251.30\\), find the original cost price of the antique clocks.",
+    "question": "A commercial kitchen's heating oil rate rises by \\( 25\\% \\), while efficiency measures reduce oil usage by \\( 20\\% \\). Find the net percentage change in total heating oil costs.",
+    "a": "\\(0.00\\%\\)",
     "opts": [
-      "\\(2205\\)",
-      "\\(2695\\)",
-      "\\(2450\\)",
-      "\\(2573\\)"
+      "\\(2.00\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(1.20\\%\\)",
+      "\\(0.00\\%\\)"
     ],
-    "a": "\\(2450\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 4837\\)",
+        "explanation": "Determine multipliers.",
+        "workingOut": "\\(M_{\\text{rate}} = 1.25, \\quad M_{\\text{usage}} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 251.30 \\implies 20x - 10y = 25130\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{bill}} = 1.25 \\times 0.80 = 1.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(20x - 10(4837 - x) = 25130 \\implies (20 + 10)x - 48370 = 25130 \\implies x = 2450\\)",
+        "explanation": "Determine net percentage change.",
+        "workingOut": "\\(P = 0.00\\%\\)",
         "graphData": null
       }
     ],
@@ -4176,33 +4006,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Lucas splits a lump sum of \\(\\$15256\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$861.36\\), how much capital was originally deposited into Account A?",
+    "question": "The length of a rectangle increases by \\( 20\\% \\) and the width decreases by \\( 15\\% \\). Find the percentage change in the area.",
+    "a": "\\(2.00\\%\\)",
     "opts": [
-      "\\(5940\\)",
-      "\\(5670\\)",
-      "\\(4860\\)",
-      "\\(5400\\)"
+      "\\(2.00\\%\\)",
+      "\\(1.50\\%\\)",
+      "\\(3.00\\%\\)",
+      "\\(5.00\\%\\)"
     ],
-    "a": "\\(5400\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 15256\\)",
+        "explanation": "State growth multiplier for the length.",
+        "workingOut": "\\(M_{\\text{length}} = 1.20\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{6}{100}y = 861.36\\ \\rightarrow\\ 5x + 6y = 86136\\)",
+        "explanation": "State growth multiplier for the width.",
+        "workingOut": "\\(M_{\\text{width}} = 1 - 0.15 = 0.85\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 6(15256 - x) = 86136\\)",
+        "explanation": "Multiply the factors to find the area multiplier.",
+        "workingOut": "\\(M_{\\text{area}} = 1.20 \\times 0.85 = 1.02\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(5x + 91536 - 6x = 86136 \\implies -1x = -5400 \\implies x = 5400\\)",
+        "explanation": "Calculate the percentage change.",
+        "workingOut": "\\(P = (1.02 - 1) \\times 100\\% = 2.00\\%\\)",
         "graphData": null
       }
     ],
@@ -4213,33 +4043,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evelyn purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$1068\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1066.57\\). What was the original price of the dining table?",
+    "question": "The radius of a cylinder increases by \\( 10\\% \\) and its height decreases by \\( 20\\% \\). Determine the percentage change in the cylinder's volume.",
+    "a": "\\(-3.20\\%\\)",
     "opts": [
-      "\\(667\\)",
-      "\\(600\\)",
-      "\\(734\\)",
-      "\\(700\\)"
+      "\\(-3.20\\%\\)",
+      "\\(-3.20\\%\\)",
+      "\\(-2.80\\%\\)",
+      "\\(-4.00\\%\\)"
     ],
-    "a": "\\(667\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 1068\\)",
+        "explanation": "State multipliers for radius and height.",
+        "workingOut": "\\(M_{\\text{radius}} = 1.10, \\quad M_{\\text{height}} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 1066.57 \\implies 1.07x + 0.88y = 1066.57\\)",
+        "explanation": "Express volume multiplier proportional to radius squared times height.",
+        "workingOut": "\\(M_{\\text{volume}} = 1.10^2 \\times 0.80 = 1.21 \\times 0.80 = 0.968\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.88(1068 - x) = 1066.57\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.19x + 939.84 = 1066.57 \\implies x = 667\\)",
+        "explanation": "Determine percentage change.",
+        "workingOut": "\\(P = (0.968 - 1) \\times 100\\% = -3.20\\%\\)",
         "graphData": null
       }
     ],
@@ -4250,33 +4075,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(80\\%\\) ethanol to produce exactly \\(22\\text{ kg}\\) of a blended mixture containing \\(70.45\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "question": "The side length of a square sheet metal plate increases by \\( 8\\% \\) due to thermal expansion. Find the percentage increase in the area.",
+    "a": "\\(16.64\\%\\)",
     "opts": [
-      "\\(9\\)",
-      "\\(6\\)",
-      "\\(8\\)",
-      "\\(7\\)"
+      "\\(16.64\\%\\)",
+      "\\(16.64\\%\\)",
+      "\\(16.00\\%\\)",
+      "\\(17.20\\%\\)"
     ],
-    "a": "\\(7\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 22\\)",
+        "explanation": "Write side multiplier factor.",
+        "workingOut": "\\(M_{\\text{side}} = 1.08\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{70.45}{100}(22) \\implies 50x + 80y = 1550.0\\)",
+        "explanation": "Express area multiplier as side squared.",
+        "workingOut": "\\(M_{\\text{area}} = 1.08^2 = 1.1664\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 80(22 - x) = 1550.0 \\implies -30x = -210.0\\)",
+        "explanation": "Compute percentage change.",
+        "workingOut": "\\(P = (1.1664 - 1) \\times 100\\% = 16.64\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 7\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -4286,28 +4107,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Abigail bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$5025\\). Later, she sold the rehabilitated office desk suites at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$17.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "question": "The base of a triangle increases by \\( 25\\% \\), while its height decreases by \\( 12\\% \\). Find the percentage change in the area.",
+    "a": "\\(10.00\\%\\)",
     "opts": [
-      "\\(2600\\)",
-      "\\(2860\\)",
-      "\\(2340\\)",
-      "\\(2730\\)"
+      "\\(12.50\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(11.00\\%\\)"
     ],
-    "a": "\\(2600\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 5025\\)",
+        "explanation": "Determine base and height multipliers.",
+        "workingOut": "\\(M_{\\text{base}} = 1.25, \\quad M_{\\text{height}} = 0.88\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 17.50 \\implies 10x - 10y = 1750\\)",
+        "explanation": "Compute area multiplier.",
+        "workingOut": "\\(M_{\\text{area}} = 1.25 \\times 0.88 = 1.10\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(10x - 10(5025 - x) = 1750 \\implies (10 + 10)x - 50250 = 1750 \\implies x = 2600\\)",
+        "explanation": "Determine net percentage change.",
+        "workingOut": "\\(P = 10.00\\%\\)",
         "graphData": null
       }
     ],
@@ -4318,33 +4139,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Mason splits a lump sum of \\(\\$15548\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1230.80\\), how much capital was originally deposited into Account A?",
+    "question": "The radius of a spherical weather balloon decreases by \\( 5\\% \\). Find the percentage change in the balloon's volume.",
+    "a": "\\(-14.26\\%\\)",
     "opts": [
-      "\\(5400\\)",
-      "\\(5670\\)",
-      "\\(5940\\)",
-      "\\(4860\\)"
+      "\\(-14.26\\%\\)",
+      "\\(-15.00\\%\\)",
+      "\\(-13.50\\%\\)",
+      "\\(-14.26\\%\\)"
     ],
-    "a": "\\(5400\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 15548\\)",
+        "explanation": "Write radius multiplier.",
+        "workingOut": "\\(M_{\\text{radius}} = 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{10}{100}y = 1230.80\\ \\rightarrow\\ 4x + 10y = 123080\\)",
+        "explanation": "Express volume multiplier as radius cubed.",
+        "workingOut": "\\(M_{\\text{volume}} = 0.95^3 = 0.857375\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 10(15548 - x) = 123080\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(4x + 155480 - 10x = 123080 \\implies -6x = -32400 \\implies x = 5400\\)",
+        "explanation": "Compute net percentage change.",
+        "workingOut": "\\(P = (0.857375 - 1) \\times 100\\% \\approx -14.26\\%\\)",
         "graphData": null
       }
     ],
@@ -4355,33 +4171,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Elizabeth purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$1332\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1298.97\\). What was the original price of the camping tent?",
+    "question": "A chemical reaction's theoretical yield is increased by \\( 25\\% \\) using a catalyst, but retrieval loss increases by \\( 12\\% \\). Find the net yield percentage change.",
+    "a": "\\(10.00\\%\\)",
     "opts": [
-      "\\(783\\)",
-      "\\(861\\)",
-      "\\(705\\)",
-      "\\(822\\)"
+      "\\(10.00\\%\\)",
+      "\\(13.00\\%\\)",
+      "\\(12.50\\%\\)",
+      "\\(10.00\\%\\)"
     ],
-    "a": "\\(783\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 1332\\)",
+        "explanation": "State growth multiplier for catalyst yield increase.",
+        "workingOut": "\\(M_{\\text{catalyst}} = 1.25\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 1298.97 \\implies 1.07x + 0.84y = 1298.97\\)",
+        "explanation": "State multiplier for retrieval loss decrease.",
+        "workingOut": "\\(M_{\\text{retrieval}} = 1 - 0.12 = 0.88\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.84(1332 - x) = 1298.97\\)",
+        "explanation": "Multiply the factors to find the net yield multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1.25 \\times 0.88 = 1.10\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.23x + 1118.88 = 1298.97 \\implies x = 783\\)",
+        "explanation": "Calculate the net percentage change.",
+        "workingOut": "\\(P = (1.10 - 1) \\times 100\\% = 10.00\\%\\)",
         "graphData": null
       }
     ],
@@ -4392,33 +4208,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(60\\%\\) copper to produce exactly \\(74\\text{ kg}\\) of a blended mixture containing \\(54.73\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "question": "A bio-fuel extraction process increases biomass intake by \\( 18\\% \\), but extraction efficiency falls by \\( 6\\% \\). Find the net percentage change in bio-fuel yield.",
+    "a": "\\(10.92\\%\\)",
     "opts": [
-      "\\(39\\)",
-      "\\(43\\)",
-      "\\(35\\)",
-      "\\(41\\)"
+      "\\(11.20\\%\\)",
+      "\\(10.92\\%\\)",
+      "\\(12.00\\%\\)",
+      "\\(10.92\\%\\)"
     ],
-    "a": "\\(39\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 74\\)",
+        "explanation": "Determine biomass and extraction efficiency multipliers.",
+        "workingOut": "\\(M_{\\text{biomass}} = 1.18, \\quad M_{\\text{eff}} = 0.94\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{54.73}{100}(74) \\implies 50x + 60y = 4050.0\\)",
+        "explanation": "Multiply the factors.",
+        "workingOut": "\\(M_{\\text{yield}} = 1.18 \\times 0.94 = 1.1092\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 60(74 - x) = 4050.0 \\implies -10x = -390.0\\)",
+        "explanation": "Calculate percentage yield increase.",
+        "workingOut": "\\(P = 10.92\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 39\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -4428,28 +4240,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Mila bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$5213\\). Later, she sold the second-hand server cabinets at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$153.70\\), find the original cost price of the second-hand server cabinets.",
+    "question": "A pharmacy line increases raw herb input by \\( 30\\% \\), but processing waste increases by \\( 15\\% \\). Calculate the net percentage change in active ingredient yield.",
+    "a": "\\(10.50\\%\\)",
     "opts": [
-      "\\(2700\\)",
-      "\\(2970\\)",
-      "\\(2835\\)",
-      "\\(2430\\)"
+      "\\(10.50\\%\\)",
+      "\\(15.00\\%\\)",
+      "\\(10.50\\%\\)",
+      "\\(12.00\\%\\)"
     ],
-    "a": "\\(2700\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 5213\\)",
+        "explanation": "Write multipliers.",
+        "workingOut": "\\(M_{\\text{input}} = 1.30, \\quad M_{\\text{waste}} = 0.85\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 153.70 \\implies 15x - 10y = 15370\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{yield}} = 1.30 \\times 0.85 = 1.105\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(15x - 10(5213 - x) = 15370 \\implies (15 + 10)x - 52130 = 15370 \\implies x = 2700\\)",
+        "explanation": "Compute net percentage change.",
+        "workingOut": "\\(P = 10.50\\%\\)",
         "graphData": null
       }
     ],
@@ -4460,33 +4272,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Michael splits a lump sum of \\(\\$15840\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$992.20\\), how much capital was originally deposited into Account A?",
+    "question": "An agricultural feed mill increases raw grain throughput by \\( 15\\% \\), but processing sorting loss increases by \\( 5\\% \\). Calculate the net percentage change in finished feed yield.",
+    "a": "\\(9.25\\%\\)",
     "opts": [
-      "\\(4950\\)",
-      "\\(5775\\)",
-      "\\(5500\\)",
-      "\\(6050\\)"
+      "\\(9.25\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(9.25\\%\\)",
+      "\\(8.50\\%\\)"
     ],
-    "a": "\\(5500\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 15840\\)",
+        "explanation": "Determine throughput and sorting loss multipliers.",
+        "workingOut": "\\(M_{\\text{through}} = 1.15, \\quad M_{\\text{loss}} = 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{8}{100}y = 992.20\\ \\rightarrow\\ 3x + 8y = 99220\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{yield}} = 1.15 \\times 0.95 = 1.0925\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(3x + 8(15840 - x) = 99220\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(3x + 126720 - 8x = 99220 \\implies -5x = -27500 \\implies x = 5500\\)",
+        "explanation": "Calculate net percentage change.",
+        "workingOut": "\\(P = (1.0925 - 1) \\times 100\\% = 9.25\\%\\)",
         "graphData": null
       }
     ],
@@ -4497,33 +4304,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Ella purchases a package set containing a high-end road bike and a helmet for a combined price of \\(\\$1596\\). In a pricing update, the road bike's individual price is marked up by \\(7\\%\\) whereas the helmet's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1603.17\\). What was the original price of the road bike?",
+    "question": "A factory increases raw steel smelting throughput by \\( 8\\% \\), but casting slag waste decreases net output by \\( 3\\% \\). Find the net percentage change in finished cast iron yield.",
+    "a": "\\(4.76\\%\\)",
     "opts": [
-      "\\(944\\)",
-      "\\(809\\)",
-      "\\(989\\)",
-      "\\(899\\)"
+      "\\(4.20\\%\\)",
+      "\\(4.76\\%\\)",
+      "\\(4.76\\%\\)",
+      "\\(5.00\\%\\)"
     ],
-    "a": "\\(899\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{road bike} \\text{ and } y \\text{ be the price of the } \\text{helmet}.\\ \\rightarrow\\ x + y = 1596\\)",
+        "explanation": "Determine multipliers.",
+        "workingOut": "\\(M_{\\text{smelt}} = 1.08, \\quad M_{\\text{slag}} = 0.97\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 1603.17 \\implies 1.07x + 0.92y = 1603.17\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{yield}} = 1.08 \\times 0.97 = 1.0476\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.92(1596 - x) = 1603.17\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.15x + 1468.32 = 1603.17 \\implies x = 899\\)",
+        "explanation": "Determine net percentage change.",
+        "workingOut": "\\(P = 4.76\\%\\)",
         "graphData": null
       }
     ],
@@ -4534,33 +4336,34 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend an organic fertilizer mix containing \\(50\\%\\) nitrogen with a nitrogen-dense compound containing \\(70\\%\\) nitrogen to produce exactly \\(46\\text{ kg}\\) of a blended mixture containing \\(53.04\\%\\) nitrogen. Calculate the mass of the an organic fertilizer mix that must be added to the blend.",
+    "question": "A store increases the unit price of an item by \\( 10\\% \\), causing the sales volume to decrease by \\( 5\\% \\). Find the percentage change in total revenue.",
+    "a": "\\(4.50\\%\\)",
     "opts": [
-      "\\(41\\)",
-      "\\(43\\)",
-      "\\(39\\)",
-      "\\(35\\)"
+      "\\(4.20\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(4.50\\%\\)",
+      "\\(4.50\\%\\)"
     ],
-    "a": "\\(39\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 46\\)",
+        "explanation": "State growth multiplier for unit price.",
+        "workingOut": "\\(M_{\\text{price}} = 1.10\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{53.04}{100}(46) \\implies 50x + 70y = 2440.0\\)",
+        "explanation": "State growth multiplier for sales volume.",
+        "workingOut": "\\(M_{\\text{volume}} = 1 - 0.05 = 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 70(46 - x) = 2440.0 \\implies -20x = -780.0\\)",
+        "explanation": "Multiply the factors to find the net revenue multiplier.",
+        "workingOut": "\\(M_{\\text{revenue}} = 1.10 \\times 0.95 = 1.045\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 39\\)"
+        "explanation": "Calculate the percentage change.",
+        "workingOut": "\\(P = (1.045 - 1) \\times 100\\% = 4.50\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Percentage increase and decrease"
@@ -4570,28 +4373,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Avery bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$5401\\). Later, she sold the used delivery trucks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$299.90\\), find the original cost price of the used delivery trucks.",
+    "question": "A consulting firm increases hourly rates by \\( 15\\% \\), but experiences a decline in billable client hours by \\( 12\\% \\). Determine the percentage change in total firm revenue.",
+    "a": "\\(1.20\\%\\)",
     "opts": [
-      "\\(2800\\)",
-      "\\(2940\\)",
-      "\\(3080\\)",
-      "\\(2520\\)"
+      "\\(2.50\\%\\)",
+      "\\(1.20\\%\\)",
+      "\\(3.00\\%\\)",
+      "\\(1.20\\%\\)"
     ],
-    "a": "\\(2800\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, \\text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 5401\\)",
+        "explanation": "Determine rate and hours multiplier factors.",
+        "workingOut": "\\(M_{\\text{rate}} = 1.15, \\quad M_{\\text{hours}} = 0.88\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 299.90 \\implies 20x - 10y = 29990\\)",
+        "explanation": "Calculate net revenue multiplier.",
+        "workingOut": "\\(M_{\\text{revenue}} = 1.15 \\times 0.88 = 1.012\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(20x - 10(5401 - x) = 29990 \\implies (20 + 10)x - 54010 = 29990 \\implies x = 2800\\)",
+        "explanation": "Calculate percentage change.",
+        "workingOut": "\\(P = 1.20\\%\\)",
         "graphData": null
       }
     ],
@@ -4602,33 +4405,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Jacob splits a lump sum of \\(\\$16132\\) into two different savings accounts. Account A earns a yield of \\(7\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1023.92\\), how much capital was originally deposited into Account A?",
+    "question": "A subscription software firm raises monthly seat prices by \\( 8\\% \\), but customer attrition drops active seats by \\( 10\\% \\). Find the net percentage change in monthly recurring revenue.",
+    "a": "\\(-2.80\\%\\)",
     "opts": [
-      "\\(6160\\)",
-      "\\(5040\\)",
-      "\\(5600\\)",
-      "\\(5880\\)"
+      "\\(-2.80\\%\\)",
+      "\\(-2.50\\%\\)",
+      "\\(-2.80\\%\\)",
+      "\\(-2.00\\%\\)"
     ],
-    "a": "\\(5600\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 16132\\)",
+        "explanation": "Write multiplier factors.",
+        "workingOut": "\\(M_{\\text{price}} = 1.08, \\quad M_{\\text{seats}} = 0.90\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{7}{100}x + \\frac{6}{100}y = 1023.92\\ \\rightarrow\\ 7x + 6y = 102392\\)",
+        "explanation": "Evaluate net revenue multiplier.",
+        "workingOut": "\\(M_{\\text{revenue}} = 1.08 \\times 0.90 = 0.972\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(7x + 6(16132 - x) = 102392\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(7x + 96792 - 6x = 102392 \\implies -1x = 5600 \\implies x = 5600\\)",
+        "explanation": "Compute net percentage change.",
+        "workingOut": "\\(P = (0.972 - 1) \\times 100\\% = -2.80\\%\\)",
         "graphData": null
       }
     ],
@@ -4639,33 +4437,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Sofia purchases a package set containing a leather sofa and a coffee table for a combined price of \\(\\$460\\). In a pricing update, the leather sofa's individual price is marked up by \\(7\\%\\) whereas the coffee table's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$445.65\\). What was the original price of the leather sofa?",
+    "question": "A cinema chain raises ticket prices by \\( 25\\% \\), but ticket sales volume drops by \\( 20\\% \\). Find the net percentage change in total ticket sales revenue.",
+    "a": "\\(0.00\\%\\)",
     "opts": [
-      "\\(215\\)",
-      "\\(237\\)",
-      "\\(194\\)",
-      "\\(226\\)"
+      "\\(2.00\\%\\)",
+      "\\(1.50\\%\\)",
+      "\\(0.00\\%\\)",
+      "\\(5.00\\%\\)"
     ],
-    "a": "\\(215\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{leather sofa} \\text{ and } y \\text{ be the price of the } \\text{coffee table}.\\ \\rightarrow\\ x + y = 460\\)",
+        "explanation": "Determine multipliers.",
+        "workingOut": "\\(M_{\\text{price}} = 1.25, \\quad M_{\\text{volume}} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 445.65 \\implies 1.07x + 0.88y = 445.65\\)",
+        "explanation": "Compute total net multiplier.",
+        "workingOut": "\\(M_{\\text{revenue}} = 1.25 \\times 0.80 = 1.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.88(460 - x) = 445.65\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.19x + 404.80 = 445.65 \\implies x = 215\\)",
+        "explanation": "Determine net percentage change.",
+        "workingOut": "\\(P = 0.00\\%\\)",
         "graphData": null
       }
     ],
@@ -4676,33 +4469,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a silver plating compound containing \\(50\\%\\) pure silver with a sterling silver melt containing \\(80\\%\\) pure silver to produce exactly \\(98\\text{ kg}\\) of a blended mixture containing \\(55.82\\%\\) pure silver. Calculate the mass of the a silver plating compound that must be added to the blend.",
+    "question": "A publisher increases textbook wholesale cost by \\( 12.5\\% \\), causing bookstore orders to drop by \\( 8\\% \\). Determine the net percentage change in textbook sales revenue.",
+    "a": "\\(3.50\\%\\)",
     "opts": [
-      "\\(79\\)",
-      "\\(87\\)",
-      "\\(71\\)",
-      "\\(83\\)"
+      "\\(4.20\\%\\)",
+      "\\(3.50\\%\\)",
+      "\\(4.50\\%\\)",
+      "\\(3.50\\%\\)"
     ],
-    "a": "\\(79\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 98\\)",
+        "explanation": "Write multipliers.",
+        "workingOut": "\\(M_{\\text{price}} = 1.125, \\quad M_{\\text{orders}} = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{55.82}{100}(98) \\implies 50x + 80y = 5470.0\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{revenue}} = 1.125 \\times 0.92 = 1.035\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 80(98 - x) = 5470.0 \\implies -30x = -2370.0\\)",
+        "explanation": "Compute net percentage change.",
+        "workingOut": "\\(P = 3.50\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 79\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -4712,28 +4501,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Camila bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$5589\\). Later, she sold the estate jewellery rings at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$21.10\\), find the original cost price of the estate jewellery rings.",
+    "question": "A water reservoir has a volume of \\( 60000 \\) megalitres. Inflow increases the volume by \\( 12\\% \\), but evaporation causes a \\( 5\\% \\) loss on the updated volume. Find the final volume.",
+    "a": "\\(63840\\)",
     "opts": [
-      "\\(2900\\)",
-      "\\(3045\\)",
-      "\\(3190\\)",
-      "\\(2610\\)"
+      "\\(64200\\)",
+      "\\(63840\\)",
+      "\\(63840\\)",
+      "\\(64800\\)"
     ],
-    "a": "\\(2900\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, \\text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 5589\\)",
+        "explanation": "Calculate the volume after the 12% inflow increase.",
+        "workingOut": "\\(V_1 = 60000 \\times 1.12 = 67200\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 21.10 \\implies 10x - 10y = 2110\\)",
+        "explanation": "Apply the 5% evaporation loss to the peak volume.",
+        "workingOut": "\\(V_2 = 67200 \\times (1 - 0.05) = 67200 \\times 0.95\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(10x - 10(5589 - x) = 2110 \\implies (10 + 10)x - 55890 = 2110 \\implies x = 2900\\)",
+        "explanation": "Determine the final volume.",
+        "workingOut": "\\(V_2 = 63840\\)",
         "graphData": null
       }
     ],
@@ -4744,33 +4533,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Henry splits a lump sum of \\(\\$16424\\) into two different savings accounts. Account A earns a yield of \\(6\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1414.40\\), how much capital was originally deposited into Account A?",
+    "question": "A dairy silo starts with \\( 8000 \\) liters of milk. Daily collection adds \\( 15\\% \\), but processing transfers consume \\( 8\\% \\) of that volume. Determine the final milk volume.",
+    "a": "\\(8464\\)",
     "opts": [
-      "\\(5700\\)",
-      "\\(6270\\)",
-      "\\(5985\\)",
-      "\\(5130\\)"
+      "\\(8464\\)",
+      "\\(8400\\)",
+      "\\(8560\\)",
+      "\\(8640\\)"
     ],
-    "a": "\\(5700\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 16424\\)",
+        "explanation": "Compute volume after collection addition.",
+        "workingOut": "\\(V_1 = 8000 \\times 1.15 = 9200\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{10}{100}y = 1414.40\\ \\rightarrow\\ 6x + 10y = 141440\\)",
+        "explanation": "Apply the 8% transfer reduction.",
+        "workingOut": "\\(V_2 = 9200 \\times 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(6x + 10(16424 - x) = 141440\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(6x + 164240 - 10x = 141440 \\implies -4x = -22800 \\implies x = 5700\\)",
+        "explanation": "Find the final milk volume.",
+        "workingOut": "\\(V_2 = 8464\\)",
         "graphData": null
       }
     ],
@@ -4781,33 +4565,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Aria purchases a package set containing a drone and a spare battery pack for a combined price of \\(\\$724\\). In a pricing update, the drone's individual price is marked up by \\(7\\%\\) whereas the spare battery pack's price is discounted by \\(16\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$684.29\\). What was the original price of the drone?",
+    "question": "A commercial fish pond contains \\( 12000 \\) fish. A breeding cycle increases the fish count by \\( 25\\% \\), but harvesting removes \\( 15\\% \\) of the population. Find the final fish count.",
+    "a": "\\(12750\\)",
     "opts": [
-      "\\(348\\)",
-      "\\(364\\)",
-      "\\(298\\)",
-      "\\(331\\)"
+      "\\(13000\\)",
+      "\\(12750\\)",
+      "\\(13200\\)",
+      "\\(12750\\)"
     ],
-    "a": "\\(331\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drone} \\text{ and } y \\text{ be the price of the } \\text{spare battery pack}.\\ \\rightarrow\\ x + y = 724\\)",
+        "explanation": "Calculate count after breeding cycle.",
+        "workingOut": "\\(F_1 = 12000 \\times 1.25 = 15000\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{16}{100})y = 684.29 \\implies 1.07x + 0.84y = 684.29\\)",
+        "explanation": "Apply the 15% harvest reduction.",
+        "workingOut": "\\(F_2 = 15000 \\times 0.85\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.84(724 - x) = 684.29\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.23x + 608.16 = 684.29 \\implies x = 331\\)",
+        "explanation": "Determine final fish count.",
+        "workingOut": "\\(F_2 = 12750\\)",
         "graphData": null
       }
     ],
@@ -4818,33 +4597,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-grade gold alloy containing \\(50\\%\\) pure gold with a high-grade gold alloy containing \\(60\\%\\) pure gold to produce exactly \\(70\\text{ kg}\\) of a blended mixture containing \\(55.00\\%\\) pure gold. Calculate the mass of the a low-grade gold alloy that must be added to the blend.",
+    "question": "A municipal recycling facility holds \\( 4500 \\) tons of processed paper. A sorting drive increases paper stocks by \\( 18\\% \\), but moisture decay drops usable inventory by \\( 6\\% \\). Find the final paper weight.",
+    "a": "\\(4991\\)",
     "opts": [
-      "\\(37\\)",
-      "\\(35\\)",
-      "\\(39\\)",
-      "\\(32\\)"
+      "\\(5050\\)",
+      "\\(4986\\)",
+      "\\(5000\\)",
+      "\\(4991\\)"
     ],
-    "a": "\\(35\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 60\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 70\\)",
+        "explanation": "Compute paper weight after sorting drive.",
+        "workingOut": "\\(W_1 = 4500 \\times 1.18 = 5310\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{60}{100}y = \\frac{55.00}{100}(70) \\implies 50x + 60y = 3850.0\\)",
+        "explanation": "Apply the 6% moisture decay loss.",
+        "workingOut": "\\(W_2 = 5310 \\times 0.94\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 60(70 - x) = 3850.0 \\implies -10x = -350.0\\)",
+        "explanation": "Evaluate final paper weight.",
+        "workingOut": "\\(W_2 = 4991.4 \\approx 4991\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 35\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -4854,28 +4629,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Sophia bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$5777\\). Later, she sold the antique clocks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$184.80\\), find the original cost price of the antique clocks.",
+    "question": "A logistics warehouse stores \\( 16000 \\) packages. A shipment arrivals wave increases packages by \\( 30\\% \\), while daily outbound dispatch waves ship \\( 25\\% \\) of that peak storage. Find the final package count.",
+    "a": "\\(15600\\)",
     "opts": [
-      "\\(3355\\)",
-      "\\(3203\\)",
-      "\\(2745\\)",
-      "\\(3050\\)"
+      "\\(15600\\)",
+      "\\(16800\\)",
+      "\\(16200\\)",
+      "\\(15600\\)"
     ],
-    "a": "\\(3050\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, \\text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 5777\\)",
+        "explanation": "Compute package count after arrivals wave.",
+        "workingOut": "\\(N_1 = 16000 \\times 1.30 = 20800\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 184.80 \\implies 15x - 10y = 18480\\)",
+        "explanation": "Apply the 25% dispatch wave reduction.",
+        "workingOut": "\\(N_2 = 20800 \\times 0.75\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(15x - 10(5777 - x) = 18480 \\implies (15 + 10)x - 57770 = 18480 \\implies x = 3050\\)",
+        "explanation": "Evaluate the final package count.",
+        "workingOut": "\\(N_2 = 15600\\)",
         "graphData": null
       }
     ],
@@ -4886,33 +4661,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Benjamin splits a lump sum of \\(\\$16716\\) into two different savings accounts. Account A earns a yield of \\(5\\%\\) interest per annum, while Account B earns \\(8\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1166.28\\), how much capital was originally deposited into Account A?",
+    "question": "A server upgrade increases bandwidth by \\( 20\\% \\), but routing overhead increases packet loss by \\( 8\\% \\). Find the net usable bandwidth percentage change.",
+    "a": "\\(10.40\\%\\)",
     "opts": [
-      "\\(5700\\)",
-      "\\(6270\\)",
-      "\\(5130\\)",
-      "\\(5985\\)"
+      "\\(10.40\\%\\)",
+      "\\(10.80\\%\\)",
+      "\\(12.00\\%\\)",
+      "\\(10.40\\%\\)"
     ],
-    "a": "\\(5700\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 16716\\)",
+        "explanation": "State growth multiplier for bandwidth increase.",
+        "workingOut": "\\(M_{\\text{band}} = 1.20\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 1166.28\\ \\rightarrow\\ 5x + 8y = 116628\\)",
+        "explanation": "State growth multiplier for packet loss overhead.",
+        "workingOut": "\\(M_{\\text{loss}} = 1 - 0.08 = 0.92\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(5x + 8(16716 - x) = 116628\\)",
+        "explanation": "Multiply the factors to find the net usable multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 1.20 \\times 0.92 = 1.104\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(5x + 133728 - 8x = 116628 \\implies -3x = -17100 \\implies x = 5700\\)",
+        "explanation": "Calculate the net percentage change.",
+        "workingOut": "\\(P = (1.104 - 1) \\times 100\\% = 10.40\\%\\)",
         "graphData": null
       }
     ],
@@ -4923,33 +4698,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Charlotte purchases a package set containing a dining table and a set of chairs for a combined price of \\(\\$988\\). In a pricing update, the dining table's individual price is marked up by \\(7\\%\\) whereas the set of chairs's price is discounted by \\(8\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$976.01\\). What was the original price of the dining table?",
+    "question": "A cloud cluster expands processing nodes by \\( 25\\% \\), but node sync latency overhead drops overall throughput by \\( 12\\% \\). Find the net percentage change in throughput.",
+    "a": "\\(10.00\\%\\)",
     "opts": [
-      "\\(447\\)",
-      "\\(492\\)",
-      "\\(402\\)",
-      "\\(469\\)"
+      "\\(12.50\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(13.00\\%\\)"
     ],
-    "a": "\\(447\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{dining table} \\text{ and } y \\text{ be the price of the } \\text{set of chairs}.\\ \\rightarrow\\ x + y = 988\\)",
+        "explanation": "Determine node expansion and sync multipliers.",
+        "workingOut": "\\(M_{\\text{nodes}} = 1.25, \\quad M_{\\text{sync}} = 0.88\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{8}{100})y = 976.01 \\implies 1.07x + 0.92y = 976.01\\)",
+        "explanation": "Multiply the factors.",
+        "workingOut": "\\(M_{\\text{net}} = 1.25 \\times 0.88 = 1.10\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.92(988 - x) = 976.01\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.15x + 908.96 = 976.01 \\implies x = 447\\)",
+        "explanation": "Calculate net percentage throughput increase.",
+        "workingOut": "\\(P = 10.00\\%\\)",
         "graphData": null
       }
     ],
@@ -4960,33 +4730,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-proof alcohol mixture containing \\(50\\%\\) ethanol with a high-proof spirits mix containing \\(70\\%\\) ethanol to produce exactly \\(42\\text{ kg}\\) of a blended mixture containing \\(59.05\\%\\) ethanol. Calculate the mass of the a low-proof alcohol mixture that must be added to the blend.",
+    "question": "A fiber optic channel increases transmitter power by \\( 15\\% \\), but dispersion distortion drops packet recovery by \\( 6\\% \\). Find the net percentage change in data recovery yield.",
+    "a": "\\(8.10\\%\\)",
     "opts": [
-      "\\(21\\)",
-      "\\(24\\)",
-      "\\(25\\)",
-      "\\(23\\)"
+      "\\(8.50\\%\\)",
+      "\\(9.00\\%\\)",
+      "\\(8.10\\%\\)",
+      "\\(8.10\\%\\)"
     ],
-    "a": "\\(23\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 70\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 42\\)",
+        "explanation": "Write multipliers.",
+        "workingOut": "\\(M_{\\text{power}} = 1.15, \\quad M_{\\text{disp}} = 0.94\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{70}{100}y = \\frac{59.05}{100}(42) \\implies 50x + 70y = 2480.0\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{net}} = 1.15 \\times 0.94 = 1.081\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 70(42 - x) = 2480.0 \\implies -20x = -460.0\\)",
+        "explanation": "Compute net percentage change.",
+        "workingOut": "\\(P = 8.10\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 23\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -4996,28 +4762,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Amelia bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$5965\\). Later, she sold the rehabilitated office desk suites at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$348.50\\), find the original cost price of the rehabilitated office desk suites.",
+    "question": "A databases indexing upgrade increases search velocity by \\( 35\\% \\), but cache miss overhead rates drop search counts by \\( 20\\% \\). Find the net percentage change in search processing velocity.",
+    "a": "\\(8.00\\%\\)",
     "opts": [
-      "\\(3150\\)",
-      "\\(3465\\)",
-      "\\(2835\\)",
-      "\\(3308\\)"
+      "\\(8.00\\%\\)",
+      "\\(15.00\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(8.00\\%\\)"
     ],
-    "a": "\\(3150\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, \\text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 5965\\)",
+        "explanation": "Determine velocity and cache multipliers.",
+        "workingOut": "\\(M_{\\text{velocity}} = 1.35, \\quad M_{\\text{cache}} = 0.80\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 348.50 \\implies 20x - 10y = 34850\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{net}} = 1.35 \\times 0.80 = 1.08\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(20x - 10(5965 - x) = 34850 \\implies (20 + 10)x - 59650 = 34850 \\implies x = 3150\\)",
+        "explanation": "Calculate net percentage change.",
+        "workingOut": "\\(P = (1.08 - 1) \\times 100\\% = 8.00\\%\\)",
         "graphData": null
       }
     ],
@@ -5028,33 +4794,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "William splits a lump sum of \\(\\$17008\\) into two different savings accounts. Account A earns a yield of \\(4\\%\\) interest per annum, while Account B earns \\(6\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$904.48\\), how much capital was originally deposited into Account A?",
+    "question": "A network routing protocol increases parallel pathways by \\( 8\\% \\), while latency overhead drops throughput by \\( 3\\% \\). Find the net percentage change in data throughput.",
+    "a": "\\(4.76\\%\\)",
     "opts": [
-      "\\(5800\\)",
-      "\\(6380\\)",
-      "\\(6090\\)",
-      "\\(5220\\)"
+      "\\(4.20\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(4.76\\%\\)",
+      "\\(4.76\\%\\)"
     ],
-    "a": "\\(5800\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 17008\\)",
+        "explanation": "Determine multipliers.",
+        "workingOut": "\\(M_{\\text{paths}} = 1.08, \\quad M_{\\text{latency}} = 0.97\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 904.48\\ \\rightarrow\\ 4x + 6y = 90448\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{net}} = 1.08 \\times 0.97 = 1.0476\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(4x + 6(17008 - x) = 90448\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(4x + 102048 - 6x = 90448 \\implies -2x = -11600 \\implies x = 5800\\)",
+        "explanation": "Determine net percentage change.",
+        "workingOut": "\\(P = 4.76\\%\\)",
         "graphData": null
       }
     ],
@@ -5065,33 +4826,33 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Olivia purchases a package set containing a camping tent and a sleeping bag for a combined price of \\(\\$1252\\). In a pricing update, the camping tent's individual price is marked up by \\(7\\%\\) whereas the sleeping bag's price is discounted by \\(12\\%\\). Under this new pricing scheme, the total cost of the package set becomes \\(\\$1208.73\\). What was the original price of the camping tent?",
+    "question": "A factory implements carbon capture, reducing emissions by \\( 25\\% \\), but production expansion increases baseline emissions by \\( 12\\% \\). Find the net percentage change in carbon emissions.",
+    "a": "\\(-16.00\\%\\)",
     "opts": [
-      "\\(563\\)",
-      "\\(619\\)",
-      "\\(507\\)",
-      "\\(591\\)"
+      "\\(-12.50\\%\\)",
+      "\\(-14.00\\%\\)",
+      "\\(-13.00\\%\\)",
+      "\\(-16.00\\%\\)"
     ],
-    "a": "\\(563\\)",
     "solutionSteps": [
       {
-        "explanation": "Let the variables represent the original prices.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{camping tent} \\text{ and } y \\text{ be the price of the } \\text{sleeping bag}.\\ \\rightarrow\\ x + y = 1252\\)",
+        "explanation": "State growth multiplier for carbon capture reduction.",
+        "workingOut": "\\(M_{\\text{capture}} = 1 - 0.25 = 0.75\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the updated total pricing equation.",
-        "workingOut": "\\((1 + \\frac{7}{100})x + (1 - \\frac{12}{100})y = 1208.73 \\implies 1.07x + 0.88y = 1208.73\\)",
+        "explanation": "State growth multiplier for production expansion increase.",
+        "workingOut": "\\(M_{\\text{production}} = 1.12\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(1.07x + 0.88(1252 - x) = 1208.73\\)",
+        "explanation": "Multiply the factors to find the net emissions multiplier.",
+        "workingOut": "\\(M_{\\text{net}} = 0.75 \\times 1.12 = 0.84\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the resulting equation for x.",
-        "workingOut": "\\(0.19x + 1101.76 = 1208.73 \\implies x = 563\\)",
+        "explanation": "Calculate the net percentage change.",
+        "workingOut": "\\(P = (0.84 - 1) \\times 100\\% = -16.00\\%\\)",
         "graphData": null
       }
     ],
@@ -5102,33 +4863,29 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A laboratory assistant wants to blend a low-copper scrap batch containing \\(50\\%\\) copper with a refined copper smelting grade containing \\(80\\%\\) copper to produce exactly \\(94\\text{ kg}\\) of a blended mixture containing \\(73.94\\%\\) copper. Calculate the mass of the a low-copper scrap batch that must be added to the blend.",
+    "question": "A steel smelter implements recycling, reducing coal usage by \\( 18\\% \\), but daily shift expansion increases baseline smelter run times by \\( 6\\% \\). Find the net percentage change in coal consumption.",
+    "a": "\\(-13.08\\%\\)",
     "opts": [
-      "\\(17\\)",
-      "\\(21\\)",
-      "\\(20\\)",
-      "\\(19\\)"
+      "\\(-12.00\\%\\)",
+      "\\(-12.80\\%\\)",
+      "\\(-13.08\\%\\)",
+      "\\(-13.08\\%\\)"
     ],
-    "a": "\\(19\\)",
     "solutionSteps": [
       {
-        "explanation": "State the variables for both mixture components.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the mass of the } 50\\% \\text{ mixture, and } y \\text{ be the mass of the } 80\\% \\text{ mixture.}\\ \\rightarrow\\ x + y = 94\\)",
+        "explanation": "Determine recycling and shift expansion multipliers.",
+        "workingOut": "\\(M_{\\text{recycle}} = 0.82, \\quad M_{\\text{shift}} = 1.06\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the conservation equation for the active substance.",
-        "workingOut": "\\(\\frac{50}{100}x + \\frac{80}{100}y = \\frac{73.94}{100}(94) \\implies 50x + 80y = 6950.0\\)",
+        "explanation": "Multiply the factors.",
+        "workingOut": "\\(M_{\\text{net}} = 0.82 \\times 1.06 = 0.8692\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = totalMass - x and expand.",
-        "workingOut": "\\(50x + 80(94 - x) = 6950.0 \\implies -30x = -570.0\\)",
+        "explanation": "Calculate net percentage coal usage reduction.",
+        "workingOut": "\\(P = -13.08\\%\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Solve for the required component mass.",
-        "workingOut": "\\(x = 19\\)"
       }
     ],
     "t": "Percentage increase and decrease"
@@ -5138,28 +4895,28 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An independent wholesale dealer Isabella bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$6153\\). Later, she sold the second-hand server cabinets at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$34.70\\), find the original cost price of the second-hand server cabinets.",
+    "question": "A paper mill implements water saving measures, reducing usage by \\( 30\\% \\), but paper volume expansion increases baseline usage by \\( 15\\% \\). Calculate the net percentage change in water usage.",
+    "a": "\\(-19.50\\%\\)",
     "opts": [
-      "\\(2925\\)",
-      "\\(3413\\)",
-      "\\(3250\\)",
-      "\\(3575\\)"
+      "\\(-15.00\\%\\)",
+      "\\(-19.50\\%\\)",
+      "\\(-19.50\\%\\)",
+      "\\(-18.00\\%\\)"
     ],
-    "a": "\\(3250\\)",
     "solutionSteps": [
       {
-        "explanation": "State equations representing total cost.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, \\text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 6153\\)",
+        "explanation": "Write multipliers.",
+        "workingOut": "\\(M_{\\text{saving}} = 0.70, \\quad M_{\\text{volume}} = 1.15\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the net profit equation expressing profit as positive and loss as negative.",
-        "workingOut": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 34.70 \\implies 10x - 10y = 3470\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{net}} = 0.70 \\times 1.15 = 0.805\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve for the cost price of the first item.",
-        "workingOut": "\\(10x - 10(6153 - x) = 3470 \\implies (10 + 10)x - 61530 = 3470 \\implies x = 3250\\)",
+        "explanation": "Compute net percentage change.",
+        "workingOut": "\\(P = -19.50\\%\\)",
         "graphData": null
       }
     ],
@@ -5170,33 +4927,60 @@ export const Y10_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Matthew splits a lump sum of \\(\\$17300\\) into two different savings accounts. Account A earns a yield of \\(3\\%\\) interest per annum, while Account B earns \\(10\\%\\) interest per annum. If the combined total interest credited at the end of the first year is exactly \\(\\$1317.00\\), how much capital was originally deposited into Account A?",
+    "question": "A vehicle fleet uses biofuel to reduce emissions by \\( 15\\% \\), but logistics routing extensions increase daily mileage by \\( 5\\% \\). Calculate the net percentage change in emissions.",
+    "a": "\\(-10.75\\%\\)",
     "opts": [
-      "\\(6195\\)",
-      "\\(6490\\)",
-      "\\(5310\\)",
-      "\\(5900\\)"
+      "\\(-10.75\\%\\)",
+      "\\(-9.50\\%\\)",
+      "\\(-10.75\\%\\)",
+      "\\(-10.00\\%\\)"
     ],
-    "a": "\\(5900\\)",
     "solutionSteps": [
       {
-        "explanation": "Formulate variables for the two investments.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the amount in Account A, and } y \\text{ be the amount in Account B.}\\ \\rightarrow\\ x + y = 17300\\)",
+        "explanation": "Determine biofuel and mileage multipliers.",
+        "workingOut": "\\(M_{\\text{biofuel}} = 0.85, \\quad M_{\\text{mileage}} = 1.05\\)",
         "graphData": null
       },
       {
-        "explanation": "Write down the interest equation.",
-        "workingOut": "\\(\\frac{3}{100}x + \\frac{10}{100}y = 1317.00\\ \\rightarrow\\ 3x + 10y = 131700\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{net}} = 0.85 \\times 1.05 = 0.8925\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of y into the interest equation.",
-        "workingOut": "\\(3x + 10(17300 - x) = 131700\\)",
+        "explanation": "Calculate net percentage change.",
+        "workingOut": "\\(P = (0.8925 - 1) \\times 100\\% = -10.75\\%\\)",
+        "graphData": null
+      }
+    ],
+    "t": "Percentage increase and decrease"
+  },
+  {
+    "id": "y10-1b-high-q100",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "A datacenter installs solar panels, reducing grid power reliance by \\( 8\\% \\), but hardware expansion increases baseline power draw by \\( 3\\% \\). Find the net percentage change in grid power reliance.",
+    "a": "\\(-5.24\\%\\)",
+    "opts": [
+      "\\(-4.80\\%\\)",
+      "\\(-5.24\\%\\)",
+      "\\(-5.00\\%\\)",
+      "\\(-5.24\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine multipliers.",
+        "workingOut": "\\(M_{\\text{solar}} = 0.92, \\quad M_{\\text{hardware}} = 1.03\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equation to find the value of x.",
-        "workingOut": "\\(3x + 173000 - 10x = 131700 \\implies -7x = -41300 \\implies x = 5900\\)",
+        "explanation": "Multiply factors.",
+        "workingOut": "\\(M_{\\text{net}} = 0.92 \\times 1.03 = 0.9476\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine net percentage change.",
+        "workingOut": "\\(P = -5.24\\%\\)",
         "graphData": null
       }
     ],

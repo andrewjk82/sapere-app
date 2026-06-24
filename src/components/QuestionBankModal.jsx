@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Plus, Trash2, Edit2, Image as ImageIcon, Eye, Check, AlertTriangle, BarChart, Lightbulb, Clock } from 'lucide-react';
+import { X, Plus, Trash2, Edit2, Image as ImageIcon, Eye, Check, AlertTriangle, BarChart, Lightbulb, Clock, ClipboardCheck } from 'lucide-react';
 import { MATH_SYMBOLS } from '../utils/challengeUtils';
 import { db, auth } from '../firebase/config';
 import {
@@ -1188,7 +1188,7 @@ const StudentViewPreview = ({ question, onClose }) => {
             <MathView
               content={question.question}
               graphData={question.graphData}
-              style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
+              style={{ fontSize: '0.98rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
             />
             <AnimatePresence>
               {showHint && question.hint && (
@@ -1267,8 +1267,23 @@ const StudentViewPreview = ({ question, onClose }) => {
             </div>
           ) : (
             // teacher_review / graph_sketch fallback — just show submit pill
-            <div style={{ padding: '16px', borderRadius: '16px', background: '#fef9c3', color: '#854d0e', fontSize: '0.9rem', fontWeight: 700, textAlign: 'center' }}>
-              Teacher reviews this question manually.
+            <div style={{ 
+              padding: '18px 24px', 
+              borderRadius: '20px', 
+              background: '#fefce8', 
+              border: '1px solid #fef08a', 
+              color: '#854d0e', 
+              fontSize: '0.9rem', 
+              fontWeight: 800, 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center', 
+              gap: '8px',
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em'
+            }}>
+              <ClipboardCheck size={18} color="#a16207" />
+              <span>Teacher reviews this question manually.</span>
             </div>
           )}
 

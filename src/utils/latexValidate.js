@@ -11,7 +11,7 @@
  * the Node script passes the `katex` package; the browser seeder passes
  * window.katex.
  */
-import { toDisplayText } from './mathPreprocess';
+import { toDisplayText } from './mathPreprocess.js';
 
 // Same delimiter set KaTeX auto-render scans for in MathView.
 const MATH_BLOCK_REGEX = /(\$\$[\s\S]*?\$\$|\$[\s\S]*?\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;

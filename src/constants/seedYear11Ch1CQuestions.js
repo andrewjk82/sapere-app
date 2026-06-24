@@ -15,11 +15,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-3x+22}{30}\\)",
+        "text": "\\(\\frac{3x+22}{30}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3x+22}{30}\\)",
+        "text": "\\(\\frac{-3x+22}{30}\\)",
         "imageUrl": ""
       }
     ],
@@ -111,11 +111,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x - 3\\)",
+        "text": "\\(\\frac{1}{x + 3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{1}{x + 3}\\)",
+        "text": "\\(x - 3\\)",
         "imageUrl": ""
       }
     ],
@@ -146,7 +146,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{4x^2 + 13x - 12}{16x^2 - 9} \\)",
     "options": [
       {
-        "text": "\\frac{x + 4}{4x - 3}",
+        "text": "\\frac{1}{4x + 3}",
         "imageUrl": ""
       },
       {
@@ -154,11 +154,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{4x + 3}",
+        "text": "\\frac{x + 4}{4x + 3}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 4}{4x + 3}",
+        "text": "\\frac{x + 4}{4x - 3}",
         "imageUrl": ""
       }
     ],
@@ -194,11 +194,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{m}{m^2} \\) (where \\( m \\neq 0 \\))",
     "options": [
       {
-        "text": "\\(\\frac{-1}{m}\\)",
+        "text": "\\(\\frac{1}{m}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{1}{m}\\)",
+        "text": "\\(\\frac{m}{1}\\)",
         "imageUrl": ""
       },
       {
@@ -206,7 +206,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{m}{1}\\)",
+        "text": "\\(\\frac{-1}{m}\\)",
         "imageUrl": ""
       }
     ],
@@ -232,11 +232,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\(\\frac{8a + 4b}{12a + 6b}\\)",
     "options": [
       {
-        "text": "\\(\\frac{2}{3}\\)",
+        "text": "\\(\\frac{1}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{1}{2}\\)",
+        "text": "\\(\\frac{2}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -275,19 +275,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Factor where possible and simplify: \\( \\frac{a^2+3a}{a^2-9} \\)",
     "options": [
       {
-        "text": "\\(\\frac{a}{a-3}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{a-3}{a}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-a}{a-3}\\)",
+        "text": "\\(\\frac{a}{a-3}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{a}{a+3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-a}{a-3}\\)",
         "imageUrl": ""
       }
     ],
@@ -318,11 +318,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{\\frac{1}{3} - \\frac{1}{4}}{1 + \\frac{1}{12}} \\)",
     "options": [
       {
-        "text": "\\(\\frac{1}{12}\\)",
+        "text": "\\(\\frac{2}{13}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{2}{13}\\)",
+        "text": "\\(\\frac{1}{12}\\)",
         "imageUrl": ""
       },
       {
@@ -365,7 +365,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{(y+2)(y-2)}{y-14}\\)",
+        "text": "\\(\\frac{y-14}{(y+2)(y-2)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{y+14}{(y-2)(y+2)}\\)",
         "imageUrl": ""
       },
       {
@@ -373,11 +377,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{y-14}{(y+2)(y-2)}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{y+14}{(y-2)(y+2)}\\)",
+        "text": "\\(\\frac{(y+2)(y-2)}{y-14}\\)",
         "imageUrl": ""
       }
     ],
@@ -412,11 +412,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y + 1\\)",
+        "text": "\\(y + 3\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(y + 3\\)",
+        "text": "\\(y + 1\\)",
         "imageUrl": ""
       },
       {
@@ -451,11 +451,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{4x^2 + 12x - 16}{16x^2 - 16} \\)",
     "options": [
       {
-        "text": "\\frac{x + 4}{4x + 4}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x + 4}{4x - 4}",
+        "text": "\\frac{x - 4}{4x - 4}",
         "imageUrl": ""
       },
       {
@@ -463,7 +459,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x - 4}{4x - 4}",
+        "text": "\\frac{x + 4}{4x + 4}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 4}{4x - 4}",
         "imageUrl": ""
       }
     ],
@@ -499,7 +499,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{1}{u-v} - \\frac{1}{v-u} \\)",
     "options": [
       {
-        "text": "\\(\\frac{2}{u-v}\\)",
+        "text": "\\(\\frac{2u}{u-v}\\)",
         "imageUrl": ""
       },
       {
@@ -511,7 +511,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{2u}{u-v}\\)",
+        "text": "\\(\\frac{2}{u-v}\\)",
         "imageUrl": ""
       }
     ],
@@ -550,11 +550,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-\\frac{11}{10p}\\)",
+        "text": "\\(\\frac{10p}{11}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{10p}{11}\\)",
+        "text": "\\(-\\frac{11}{10p}\\)",
         "imageUrl": ""
       },
       {
@@ -589,11 +589,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Write as a single fraction: \\( \\frac{3x}{4} + \\frac{4x}{3} \\)",
     "options": [
       {
-        "text": "\\(\\frac{12}{25x}\\)",
+        "text": "\\(\\frac{26x}{14}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{26x}{14}\\)",
+        "text": "\\(\\frac{12}{25x}\\)",
         "imageUrl": ""
       },
       {
@@ -632,7 +632,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{1}{a} - \\frac{1}{a+3} \\)",
     "options": [
       {
-        "text": "\\(\\frac{a(a+3)}{3}\\)",
+        "text": "\\(\\frac{3}{a(a+3)}\\)",
         "imageUrl": ""
       },
       {
@@ -640,11 +640,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3}{a(a-3)}\\)",
+        "text": "\\(\\frac{a(a+3)}{3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3}{a(a+3)}\\)",
+        "text": "\\(\\frac{3}{a(a-3)}\\)",
         "imageUrl": ""
       }
     ],
@@ -675,11 +675,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 2x - 4}{4x^2 - 4} \\)",
     "options": [
       {
-        "text": "\\frac{x - 2}{2x - 2}",
+        "text": "\\frac{1}{2x + 2}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 2}{2x - 2}",
+        "text": "\\frac{x - 2}{2x - 2}",
         "imageUrl": ""
       },
       {
@@ -687,7 +687,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{2x + 2}",
+        "text": "\\frac{x + 2}{2x - 2}",
         "imageUrl": ""
       }
     ],
@@ -727,7 +727,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x - 3}{3x - 3}",
+        "text": "\\frac{1}{3x + 3}",
         "imageUrl": ""
       },
       {
@@ -735,7 +735,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{3x + 3}",
+        "text": "\\frac{x - 3}{3x - 3}",
         "imageUrl": ""
       }
     ],
@@ -771,11 +771,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{a}{4} - \\frac{a}{12}\\)",
     "options": [
       {
-        "text": "\\(\\frac{a}{3}\\)",
+        "text": "\\(\\frac{2a}{12}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{2a}{12}\\)",
+        "text": "\\(\\frac{a}{8}\\)",
         "imageUrl": ""
       },
       {
@@ -783,7 +783,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{a}{8}\\)",
+        "text": "\\(\\frac{a}{3}\\)",
         "imageUrl": ""
       }
     ],
@@ -818,15 +818,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{2x}{9}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{3x}{6}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{x}{9}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{2x}{9}\\)",
         "imageUrl": ""
       }
     ],
@@ -857,11 +857,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{\\frac{9}{10} - \\frac{4}{5}}{\\frac{3}{4} - \\frac{1}{2}} \\)",
     "options": [
       {
-        "text": "\\(\\frac{5}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{1}{5}\\)",
+        "text": "\\(\\frac{2}{5}\\)",
         "imageUrl": ""
       },
       {
@@ -869,7 +865,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{2}{5}\\)",
+        "text": "\\(\\frac{1}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{2}\\)",
         "imageUrl": ""
       }
     ],
@@ -900,6 +900,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{2}{x} + \\frac{3}{y}\\)",
     "options": [
       {
+        "text": "\\(\\frac{5}{x+y}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{5}{xy}\\)",
         "imageUrl": ""
       },
@@ -909,10 +913,6 @@ export const Y11_CH1C_QUESTIONS = [
       },
       {
         "text": "\\(\\frac{6}{xy}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{5}{x+y}\\)",
         "imageUrl": ""
       }
     ],
@@ -943,11 +943,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 3x - 2}{4x^2 - 1} \\)",
     "options": [
       {
-        "text": "\\frac{x + 2}{2x + 1}",
+        "text": "\\frac{1}{2x + 1}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{2x + 1}",
+        "text": "\\frac{x + 2}{2x + 1}",
         "imageUrl": ""
       },
       {
@@ -991,7 +991,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{3x^2 + 8x - 3}{9x^2 - 1} \\)",
     "options": [
       {
-        "text": "\\frac{x + 3}{3x - 1}",
+        "text": "\\frac{x + 3}{3x + 1}",
         "imageUrl": ""
       },
       {
@@ -999,11 +999,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 3}{3x + 1}",
+        "text": "\\frac{x - 3}{3x - 1}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x - 3}{3x - 1}",
+        "text": "\\frac{x + 3}{3x - 1}",
         "imageUrl": ""
       }
     ],
@@ -1039,19 +1039,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{1}{\\frac{1}{x} + \\frac{1}{y}} \\)",
     "options": [
       {
-        "text": "\\(xy\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x+y\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{xy}{x+y}\\)",
+        "text": "\\(\\frac{x+y}{xy}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+y}{xy}\\)",
+        "text": "\\(xy\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{xy}{x+y}\\)",
         "imageUrl": ""
       }
     ],
@@ -1082,11 +1082,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{a+2}{3} + \\frac{a+3}{4} \\)",
     "options": [
       {
-        "text": "\\(\\frac{-7a+17}{12}\\)",
+        "text": "\\(\\frac{12}{7a+17}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{12}{7a+17}\\)",
+        "text": "\\(\\frac{7a+17}{12}\\)",
         "imageUrl": ""
       },
       {
@@ -1094,7 +1094,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{7a+17}{12}\\)",
+        "text": "\\(\\frac{-7a+17}{12}\\)",
         "imageUrl": ""
       }
     ],
@@ -1129,15 +1129,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{u^2+v^2}{u^2-v^2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{u^2+v^2}{uv}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{u+v}{u-v}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{u^2+v^2}{u^2-v^2}\\)",
         "imageUrl": ""
       }
     ],
@@ -1168,6 +1168,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{2a}{5b} \\times \\frac{10b}{a}\\)",
     "options": [
       {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{2a}{b}\\)",
         "imageUrl": ""
       },
@@ -1177,10 +1181,6 @@ export const Y11_CH1C_QUESTIONS = [
       },
       {
         "text": "\\(4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(20\\)",
         "imageUrl": ""
       }
     ],
@@ -1211,15 +1211,15 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{4k^2}{12kr} \\)",
     "options": [
       {
+        "text": "\\(\\frac{-k}{3r}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{k}{3r}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{k}{4r}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{-k}{3r}\\)",
         "imageUrl": ""
       },
       {
@@ -1249,11 +1249,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Factor where possible and simplify: \\( \\frac{x^2-16}{x^2+x-20} \\)",
     "options": [
       {
-        "text": "\\(\\frac{x+5}{x+4}\\)",
+        "text": "\\(\\frac{x+4}{x+5}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+4}{x+5}\\)",
+        "text": "\\(\\frac{x+5}{x+4}\\)",
         "imageUrl": ""
       },
       {
@@ -1296,15 +1296,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{2x + 3}{2x - 5}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{x - 5}{2x - 5}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{x + 5}{2x + 5}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{2x + 3}{2x - 5}\\)",
         "imageUrl": ""
       }
     ],
@@ -1335,7 +1335,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 1}{x^2 - 1} \\)",
     "options": [
       {
-        "text": "x - 1",
+        "text": "\\frac{x^2 - 1x + 1}{x - 1}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x^2 + 1}{x + 1}",
         "imageUrl": ""
       },
       {
@@ -1343,11 +1347,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 - 1x + 1}{x - 1}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x^2 + 1}{x + 1}",
+        "text": "x - 1",
         "imageUrl": ""
       }
     ],
@@ -1391,11 +1391,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{8a}{5}\\)",
+        "text": "\\(\\frac{8}{10a}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{8}{10a}\\)",
+        "text": "\\(\\frac{8a}{5}\\)",
         "imageUrl": ""
       }
     ],
@@ -1478,11 +1478,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x^2-4}{2x}\\)",
+        "text": "\\(\\frac{-2x}{x^2-4}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-2x}{x^2-4}\\)",
+        "text": "\\(\\frac{x^2-4}{2x}\\)",
         "imageUrl": ""
       },
       {
@@ -1517,19 +1517,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{2}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x + 2}{x}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x}{1 + 2x}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{x + 2}",
+        "text": "\\frac{x}{x + 2}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{x + 2}",
+        "text": "\\frac{x + 2}{x}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{1}{x + 2}",
         "imageUrl": ""
       }
     ],
@@ -1608,15 +1608,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Write as a single fraction: \\( \\frac{2}{y} - \\frac{5}{y} \\)",
     "options": [
       {
-        "text": "\\(\\frac{-3}{y}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{y}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{3}{y}\\)",
         "imageUrl": ""
       },
       {
@@ -1625,6 +1617,14 @@ export const Y11_CH1C_QUESTIONS = [
       },
       {
         "text": "\\(+\\frac{3}{y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-3}{y}\\)",
         "imageUrl": ""
       }
     ],
@@ -1650,19 +1650,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{3}{x + 3} - \\frac{2}{x - 1}\\)",
     "options": [
       {
-        "text": "\\(\\frac{x + 9}{(x + 3)(x - 1)}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{x-3}{x^2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{1}{2x + 2}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{x - 9}{(x + 3)(x - 1)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{x + 9}{(x + 3)(x - 1)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{x-3}{x^2}\\)",
         "imageUrl": ""
       }
     ],
@@ -1697,15 +1697,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{13a}{6b}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{7a}{6b}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{4a}{b}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{13a}{6b}\\)",
         "imageUrl": ""
       }
     ],
@@ -1736,11 +1736,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{y}{y} \\) (where \\( y \\neq 0 \\))",
     "options": [
       {
-        "text": "\\(2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(-1\\)",
+        "text": "\\(1\\)",
         "imageUrl": ""
       },
       {
@@ -1748,7 +1744,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1\\)",
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
         "imageUrl": ""
       }
     ],
@@ -1778,11 +1778,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{4}{1}\\)",
+        "text": "\\(\\frac{4}{7}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{4}{7}\\)",
+        "text": "\\(\\frac{4}{1}\\)",
         "imageUrl": ""
       },
       {
@@ -1816,11 +1816,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3}{32}\\)",
+        "text": "\\(6\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6\\)",
+        "text": "\\(\\frac{3}{32}\\)",
         "imageUrl": ""
       },
       {
@@ -1859,7 +1859,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{2x - 1}{9}\\)",
+        "text": "\\(\\frac{9x - 2}{20}\\)",
         "imageUrl": ""
       },
       {
@@ -1867,7 +1867,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{9x - 2}{20}\\)",
+        "text": "\\(\\frac{2x - 1}{9}\\)",
         "imageUrl": ""
       }
     ],
@@ -1898,19 +1898,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 0x - 8}{4x^2 - 16} \\)",
     "options": [
       {
-        "text": "\\frac{x + 2}{2x - 4}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{1}{2x + 4}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 2}{2x + 4}",
+        "text": "\\frac{x + 2}{2x - 4}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x - 2}{2x - 4}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 2}{2x + 4}",
         "imageUrl": ""
       }
     ],
@@ -1946,7 +1946,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{4}{x + 2} + \\frac{5}{x - 3}\\)",
     "options": [
       {
-        "text": "\\(\\frac{x-2}{x^2}\\)",
+        "text": "\\(\\frac{9x + 22}{(x+2)(x-3)}\\)",
         "imageUrl": ""
       },
       {
@@ -1954,7 +1954,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{9x + 22}{(x+2)(x-3)}\\)",
+        "text": "\\(\\frac{x-2}{x^2}\\)",
         "imageUrl": ""
       },
       {
@@ -1997,7 +1997,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-\\frac{3ab}{40}\\)",
+        "text": "\\(\\frac{40}{3ab}\\)",
         "imageUrl": ""
       },
       {
@@ -2005,7 +2005,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{40}{3ab}\\)",
+        "text": "\\(-\\frac{3ab}{40}\\)",
         "imageUrl": ""
       }
     ],
@@ -2036,19 +2036,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{1}{y} + \\frac{1}{y+2} \\)",
     "options": [
       {
-        "text": "\\(\\frac{2y+2}{y(y+2)}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{2y-2}{y(y-2)}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-2y+2}{y(y+2)}\\)",
+        "text": "\\(\\frac{2y+2}{y(y+2)}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{y(y+2)}{2y+2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-2y+2}{y(y+2)}\\)",
         "imageUrl": ""
       }
     ],
@@ -2079,6 +2079,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 27}{x^2 - 9} \\)",
     "options": [
       {
+        "text": "\\frac{x^2 + 3x + 9}{x + 3}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{x^2 + 9}{x + 3}",
         "imageUrl": ""
       },
@@ -2088,10 +2092,6 @@ export const Y11_CH1C_QUESTIONS = [
       },
       {
         "text": "\\frac{x^2 - 3x + 9}{x - 3}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x^2 + 3x + 9}{x + 3}",
         "imageUrl": ""
       }
     ],
@@ -2127,11 +2127,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\(\\frac{x^2 + 3x - 10}{x^2 - x - 2}\\)",
     "options": [
       {
-        "text": "\\(\\frac{x - 5}{x - 1}\\)",
+        "text": "\\(\\frac{x + 5}{x - 2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x + 5}{x - 2}\\)",
+        "text": "\\(\\frac{x - 5}{x - 1}\\)",
         "imageUrl": ""
       },
       {
@@ -2170,19 +2170,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\(\\frac{3x^2 + 4x + 1}{3x^3 + x^2 + 3x + 1}\\)",
     "options": [
       {
-        "text": "\\(\\frac{x + 1}{x + 1}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{1}{x + 1}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x^2 + 1}{x + 1}\\)",
+        "text": "\\(\\frac{x + 1}{x + 1}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{x + 1}{x^2 + 1}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{x^2 + 1}{x + 1}\\)",
         "imageUrl": ""
       }
     ],
@@ -2217,19 +2217,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{7x-25}{(x+4)(x+3)}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{-7x-25}{(x-4)(x-3)}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{7x-25}{(x-4)(x-3)}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{7x+25}{(x+4)(x+3)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7x-25}{(x+4)(x+3)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-7x-25}{(x-4)(x-3)}\\)",
         "imageUrl": ""
       }
     ],
@@ -2260,11 +2260,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{x + 3}{2} - \\frac{x - 1}{3}\\)",
     "options": [
       {
-        "text": "\\(\\frac{x + 11}{6}\\)",
+        "text": "\\(\\frac{x + 11}{5}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x + 11}{5}\\)",
+        "text": "\\(\\frac{x + 11}{6}\\)",
         "imageUrl": ""
       },
       {
@@ -2303,19 +2303,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{m}{6} \\div \\frac{m}{3} \\)",
     "options": [
       {
-        "text": "\\(\\frac{1}{2}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{-1}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{2}{1}\\)",
+        "text": "\\(\\frac{1}{2}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{3}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2}{1}\\)",
         "imageUrl": ""
       }
     ],
@@ -2346,19 +2346,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{3}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x}{1 + 3x}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x}{x + 3}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x + 3}{x}",
         "imageUrl": ""
       },
       {
+        "text": "\\frac{x}{1 + 3x}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{1}{x + 3}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x}{x + 3}",
         "imageUrl": ""
       }
     ],
@@ -2394,11 +2394,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{3}{a-3} - \\frac{3}{a+4} \\)",
     "options": [
       {
-        "text": "\\(\\frac{21}{(a+3)(a+4)}\\)",
+        "text": "\\(\\frac{(a-3)(a+4)}{21}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{(a-3)(a+4)}{21}\\)",
+        "text": "\\(\\frac{21}{(a-3)(a+4)}\\)",
         "imageUrl": ""
       },
       {
@@ -2406,7 +2406,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{21}{(a-3)(a+4)}\\)",
+        "text": "\\(\\frac{21}{(a+3)(a+4)}\\)",
         "imageUrl": ""
       },
       {
@@ -2441,11 +2441,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 4}{x + 1} \\times \\frac{x^2 - 1}{x - 2} \\)",
     "options": [
       {
-        "text": "x^2 - 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "x^2 - 1x - 2",
+        "text": "x^2 + 2x - 1",
         "imageUrl": ""
       },
       {
@@ -2453,7 +2449,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 2x - 1",
+        "text": "x^2 - 1x - 2",
+        "imageUrl": ""
+      },
+      {
+        "text": "x^2 - 4",
         "imageUrl": ""
       }
     ],
@@ -2489,19 +2489,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{4}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{1}{x + 4}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x + 4}{x}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{1 + 4x}",
+        "text": "\\frac{1}{x + 4}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x}{x + 4}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x}{1 + 4x}",
         "imageUrl": ""
       }
     ],
@@ -2537,11 +2537,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{a - \\frac{1}{a}}{a + \\frac{1}{a}} \\)",
     "options": [
       {
-        "text": "\\(\\frac{a-1}{a+1}\\)",
+        "text": "\\(1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1\\)",
+        "text": "\\(\\frac{a-1}{a+1}\\)",
         "imageUrl": ""
       },
       {
@@ -2588,11 +2588,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{10}{3x+4}\\)",
+        "text": "\\(\\frac{3x-4}{10}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3x-4}{10}\\)",
+        "text": "\\(\\frac{10}{3x+4}\\)",
         "imageUrl": ""
       }
     ],
@@ -2627,15 +2627,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "x^2 + 3x - 1",
+        "imageUrl": ""
+      },
+      {
         "text": "x^2 - 2x - 3",
         "imageUrl": ""
       },
       {
         "text": "x^2 + 2x - 3",
-        "imageUrl": ""
-      },
-      {
-        "text": "x^2 + 3x - 1",
         "imageUrl": ""
       }
     ],
@@ -2675,15 +2675,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 3}{3x - 2}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x + 3}{3x + 2}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{1}{3x + 2}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 3}{3x - 2}",
         "imageUrl": ""
       }
     ],
@@ -2723,11 +2723,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{8}{y}\\)",
+        "text": "\\(\\frac{-6}{y}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-6}{y}\\)",
+        "text": "\\(\\frac{8}{y}\\)",
         "imageUrl": ""
       },
       {
@@ -2757,19 +2757,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{x}{5} \\times \\frac{y}{2}\\)",
     "options": [
       {
-        "text": "\\(\\frac{xy}{10}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{x+y}{7}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{2x+5y}{10}\\)",
+        "text": "\\(\\frac{xy}{7}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{xy}{7}\\)",
+        "text": "\\(\\frac{xy}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2x+5y}{10}\\)",
         "imageUrl": ""
       }
     ],
@@ -2800,19 +2800,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{4x^2 + 14x - 8}{16x^2 - 4} \\)",
     "options": [
       {
-        "text": "\\frac{x + 4}{4x + 2}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{1}{4x + 2}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x - 4}{4x - 2}",
         "imageUrl": ""
       },
       {
+        "text": "\\frac{x + 4}{4x + 2}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{x + 4}{4x - 2}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{1}{4x + 2}",
         "imageUrl": ""
       }
     ],
@@ -2848,11 +2848,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{1}{a^2+2a} + \\frac{1}{a^2-2a} \\)",
     "options": [
       {
-        "text": "\\(\\frac{2}{a^2-4}\\)",
+        "text": "\\(\\frac{2}{a^2+4}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{1}{a^2-4}\\)",
+        "text": "\\(\\frac{2}{a^2-4}\\)",
         "imageUrl": ""
       },
       {
@@ -2860,7 +2860,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{2}{a^2+4}\\)",
+        "text": "\\(\\frac{1}{a^2-4}\\)",
         "imageUrl": ""
       }
     ],
@@ -2901,19 +2901,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Factor where possible and simplify: \\( \\frac{3a+3b}{a+b} \\)",
     "options": [
       {
-        "text": "\\(4\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(5\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6\\)",
+        "text": "\\(4\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
         "imageUrl": ""
       }
     ],
@@ -2944,19 +2944,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{u}{5} \\times \\frac{5}{u} \\)",
     "options": [
       {
-        "text": "\\(1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-1\\)",
+        "text": "\\(0\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(0\\)",
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
         "imageUrl": ""
       }
     ],
@@ -2982,7 +2982,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{3y-2}{4} + \\frac{3y+1}{3} \\)",
     "options": [
       {
-        "text": "\\(\\frac{21y+2}{12}\\)",
+        "text": "\\(\\frac{-21y-2}{12}\\)",
         "imageUrl": ""
       },
       {
@@ -2990,11 +2990,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-21y-2}{12}\\)",
+        "text": "\\(\\frac{21y-2}{12}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{21y-2}{12}\\)",
+        "text": "\\(\\frac{21y+2}{12}\\)",
         "imageUrl": ""
       }
     ],
@@ -3025,7 +3025,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{4p}{5} \\times \\frac{3}{p^2} \\)",
     "options": [
       {
-        "text": "\\(\\frac{5p}{12}\\)",
+        "text": "\\(\\frac{12}{5p}\\)",
         "imageUrl": ""
       },
       {
@@ -3033,11 +3033,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{14}{7p}\\)",
+        "text": "\\(\\frac{5p}{12}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{12}{5p}\\)",
+        "text": "\\(\\frac{14}{7p}\\)",
         "imageUrl": ""
       }
     ],
@@ -3068,6 +3068,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{y-x}{x-y} \\) (where \\( x \\neq y \\))",
     "options": [
       {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(1\\)",
         "imageUrl": ""
       },
@@ -3077,10 +3081,6 @@ export const Y11_CH1C_QUESTIONS = [
       },
       {
         "text": "\\(x-y\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(-1\\)",
         "imageUrl": ""
       }
     ],
@@ -3106,7 +3106,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{a}{a-b} + \\frac{b}{b-a} \\)",
     "options": [
       {
-        "text": "\\(1\\)",
+        "text": "\\(\\frac{a+b}{a-b}\\)",
         "imageUrl": ""
       },
       {
@@ -3114,7 +3114,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{a+b}{a-b}\\)",
+        "text": "\\(1\\)",
         "imageUrl": ""
       },
       {
@@ -3149,11 +3149,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{\\frac{4}{y+3} - \\frac{3}{y+2}}{\\frac{6}{y+3} - \\frac{5}{y+2}} \\)",
     "options": [
       {
-        "text": "\\(\\frac{y+1}{y-3}\\)",
+        "text": "\\(\\frac{y-3}{y-1}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{y-1}{y+3}\\)",
+        "text": "\\(\\frac{y+1}{y-3}\\)",
         "imageUrl": ""
       },
       {
@@ -3161,7 +3161,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{y-3}{y-1}\\)",
+        "text": "\\(\\frac{y-1}{y+3}\\)",
         "imageUrl": ""
       }
     ],
@@ -3192,11 +3192,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Factor where possible and simplify: \\( \\frac{y^2+4y}{4y+16} \\)",
     "options": [
       {
-        "text": "\\(\\frac{y}{5}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{4}{y}\\)",
+        "text": "\\(\\frac{-y}{4}\\)",
         "imageUrl": ""
       },
       {
@@ -3204,7 +3200,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-y}{4}\\)",
+        "text": "\\(\\frac{4}{y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{y}{5}\\)",
         "imageUrl": ""
       }
     ],
@@ -3235,7 +3235,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Write as a single fraction: \\( \\frac{1}{u} + \\frac{2}{u} \\)",
     "options": [
       {
-        "text": "\\(\\frac{6}{u}\\)",
+        "text": "\\(\\frac{-3}{u}\\)",
         "imageUrl": ""
       },
       {
@@ -3243,11 +3243,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{u}{3}\\)",
+        "text": "\\(\\frac{6}{u}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-3}{u}\\)",
+        "text": "\\(\\frac{u}{3}\\)",
         "imageUrl": ""
       }
     ],
@@ -3281,11 +3281,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(6\\)",
+        "text": "\\(5\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5\\)",
+        "text": "\\(6\\)",
         "imageUrl": ""
       }
     ],
@@ -3358,15 +3358,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{5p}{18}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{-3p}{16}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{3p}{16}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5p}{18}\\)",
         "imageUrl": ""
       }
     ],
@@ -3397,7 +3397,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Write as a single fraction: \\( a + \\frac{a}{3} \\)",
     "options": [
       {
-        "text": "\\(\\frac{5a}{5}\\)",
+        "text": "\\(\\frac{-4a}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4a}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -3405,11 +3409,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-4a}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{4a}{3}\\)",
+        "text": "\\(\\frac{5a}{5}\\)",
         "imageUrl": ""
       }
     ],
@@ -3448,11 +3448,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(6y\\)",
+        "text": "\\(4y\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(4y\\)",
+        "text": "\\(6y\\)",
         "imageUrl": ""
       }
     ],
@@ -3478,11 +3478,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{3m-2}{4} - \\frac{3m+2}{8} \\)",
     "options": [
       {
-        "text": "\\(\\frac{3m+6}{8}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{3m-6}{8}\\)",
+        "text": "\\(\\frac{8}{3m-6}\\)",
         "imageUrl": ""
       },
       {
@@ -3490,7 +3486,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{8}{3m-6}\\)",
+        "text": "\\(\\frac{3m+6}{8}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3m-6}{8}\\)",
         "imageUrl": ""
       }
     ],
@@ -3521,6 +3521,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{x^2}{y} \\div \\frac{x}{y^2}\\)",
     "options": [
       {
+        "text": "\\(x^3y\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x/y\\)",
         "imageUrl": ""
       },
@@ -3530,10 +3534,6 @@ export const Y11_CH1C_QUESTIONS = [
       },
       {
         "text": "\\(xy^3\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^3y\\)",
         "imageUrl": ""
       }
     ],
@@ -3564,19 +3564,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{1}{3a} \\times a^2 \\)",
     "options": [
       {
-        "text": "\\(\\frac{3}{a}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{a}{4}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{a}{3}\\)",
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{3}{a}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{-a}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{a}{4}\\)",
         "imageUrl": ""
       }
     ],
@@ -3602,19 +3602,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x}{4} \\div 8 \\)",
     "options": [
       {
-        "text": "\\(\\frac{32}{x}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{-x}{32}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{x}{33}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{x}{32}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{32}{x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-x}{32}\\)",
         "imageUrl": ""
       }
     ],
@@ -3640,7 +3640,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Factor where possible and simplify: \\( \\frac{y^2+6y+9}{y^2-9} \\)",
     "options": [
       {
-        "text": "\\(\\frac{y-3}{y+3}\\)",
+        "text": "\\(\\frac{-y+3}{y-3}\\)",
         "imageUrl": ""
       },
       {
@@ -3652,7 +3652,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-y+3}{y-3}\\)",
+        "text": "\\(\\frac{y-3}{y+3}\\)",
         "imageUrl": ""
       }
     ],
@@ -3683,19 +3683,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{9pq}{7} \\div \\frac{3pq}{14} \\)",
     "options": [
       {
-        "text": "\\(6\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(9\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(8\\)",
+        "text": "\\(7\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(7\\)",
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
         "imageUrl": ""
       }
     ],
@@ -3726,15 +3726,15 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^2+x-20}{x^2+2x-24} \\times \\frac{x^2-2x-3}{x^2+2x-15} \\div \\frac{x+1}{x^2+6x} \\)",
     "options": [
       {
-        "text": "\\(x + 3\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x + 1\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x + 3\\)",
         "imageUrl": ""
       },
       {
@@ -3774,19 +3774,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Factor where possible and simplify: \\( \\frac{x}{xy+xz} \\)",
     "options": [
       {
-        "text": "\\(\\frac{1}{y+z}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{1}{y-z}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-1}{y+z}\\)",
+        "text": "\\(\\frac{y+z}{1}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{y+z}{1}\\)",
+        "text": "\\(\\frac{1}{y+z}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-1}{y+z}\\)",
         "imageUrl": ""
       }
     ],
@@ -3817,19 +3817,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{2x}{3} \\div \\frac{4x}{9}\\)",
     "options": [
       {
-        "text": "\\(6\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{2}{3}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{8x^2}{27}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{3}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2}{3}\\)",
         "imageUrl": ""
       }
     ],
@@ -3860,19 +3860,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{3 + \\frac{1}{2}}{4 - \\frac{1}{4}} \\)",
     "options": [
       {
-        "text": "\\(\\frac{13}{15}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{7}{8}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{14}{15}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{15}{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{13}{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7}{8}\\)",
         "imageUrl": ""
       }
     ],
@@ -3903,11 +3903,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 1x - 6}{4x^2 - 9} \\)",
     "options": [
       {
-        "text": "\\frac{x + 2}{2x + 3}",
+        "text": "\\frac{x + 2}{2x - 3}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 2}{2x - 3}",
+        "text": "\\frac{x + 2}{2x + 3}",
         "imageUrl": ""
       },
       {
@@ -3951,11 +3951,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Write as a single fraction: \\( \\frac{k}{3} - \\frac{k}{7} \\)",
     "options": [
       {
-        "text": "\\(\\frac{21}{4k}\\)",
+        "text": "\\(\\frac{-4k}{21}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-4k}{21}\\)",
+        "text": "\\(\\frac{7k}{22}\\)",
         "imageUrl": ""
       },
       {
@@ -3963,7 +3963,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{7k}{22}\\)",
+        "text": "\\(\\frac{21}{4k}\\)",
         "imageUrl": ""
       }
     ],
@@ -3994,6 +3994,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{1 - \\frac{1}{x+2}}{\\frac{1}{x+1} + \\frac{1}{x+2}} \\)",
     "options": [
       {
+        "text": "\\(\\frac{x^2+1}{2x+3}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{x+1}{2x+3}\\)",
         "imageUrl": ""
       },
@@ -4003,10 +4007,6 @@ export const Y11_CH1C_QUESTIONS = [
       },
       {
         "text": "\\(\\frac{(x+1)(x+2)}{2x+3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{x^2+1}{2x+3}\\)",
         "imageUrl": ""
       }
     ],
@@ -4045,11 +4045,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x - 4}{3}\\)",
+        "text": "\\(\\frac{3x + 4}{6}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3x + 4}{6}\\)",
+        "text": "\\(\\frac{x - 4}{3}\\)",
         "imageUrl": ""
       }
     ],
@@ -4084,11 +4084,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{5y}{21}\\)",
+        "text": "\\(\\frac{21}{5y}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{21}{5y}\\)",
+        "text": "\\(\\frac{5y}{21}\\)",
         "imageUrl": ""
       },
       {
@@ -4123,11 +4123,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{3x^2 + 5x - 12}{9x^2 - 16} \\)",
     "options": [
       {
-        "text": "\\frac{x + 3}{3x - 4}",
+        "text": "\\frac{1}{3x + 4}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{3x + 4}",
+        "text": "\\frac{x + 3}{3x - 4}",
         "imageUrl": ""
       },
       {
@@ -4171,7 +4171,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{4}{a} - \\frac{1}{b}\\)",
     "options": [
       {
-        "text": "\\(\\frac{3}{a-b}\\)",
+        "text": "\\(\\frac{3}{ab}\\)",
         "imageUrl": ""
       },
       {
@@ -4179,11 +4179,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3}{ab}\\)",
+        "text": "\\(\\frac{4b - a}{ab}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{4b - a}{ab}\\)",
+        "text": "\\(\\frac{3}{a-b}\\)",
         "imageUrl": ""
       }
     ],
@@ -4218,11 +4218,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{4x + 1}",
+        "text": "\\frac{x + 4}{4x - 1}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 4}{4x - 1}",
+        "text": "\\frac{1}{4x + 1}",
         "imageUrl": ""
       },
       {
@@ -4262,11 +4262,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\(\\frac{3x - 3y}{x^2 - y^2}\\)",
     "options": [
       {
-        "text": "\\(\\frac{3}{x + y}\\)",
+        "text": "\\(\\frac{1}{x + y}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{1}{x + y}\\)",
+        "text": "\\(\\frac{3}{x + y}\\)",
         "imageUrl": ""
       },
       {
@@ -4305,6 +4305,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{5}{x} - \\frac{x}{x + 2}\\)",
     "options": [
       {
+        "text": "\\(\\frac{10 + 5x - x^2}{x(x + 2)}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{5x + 10 - x}{x(x+2)}\\)",
         "imageUrl": ""
       },
@@ -4314,10 +4318,6 @@ export const Y11_CH1C_QUESTIONS = [
       },
       {
         "text": "\\(\\frac{10 - x^2}{x(x+2)}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{10 + 5x - x^2}{x(x + 2)}\\)",
         "imageUrl": ""
       }
     ],
@@ -4348,15 +4348,15 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 2} - \\frac{1}{x - 3} \\)",
     "options": [
       {
+        "text": "\\frac{-1}{(x - 2)(x + 3)}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{5}{x^2 - 5x + 6}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{-1}{x^2 - 5x + 6}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{-1}{(x - 2)(x + 3)}",
         "imageUrl": ""
       },
       {
@@ -4404,11 +4404,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{6}{x}\\)",
+        "text": "\\(\\frac{x}{3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x}{3}\\)",
+        "text": "\\(\\frac{6}{x}\\)",
         "imageUrl": ""
       }
     ],
@@ -4477,11 +4477,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{\\frac{1}{y}}{1 + \\frac{3}{y}} \\)",
     "options": [
       {
-        "text": "\\(\\frac{1}{y+3}\\)",
+        "text": "\\(\\frac{1}{y}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{1}{y}\\)",
+        "text": "\\(\\frac{1}{y+3}\\)",
         "imageUrl": ""
       },
       {
@@ -4520,7 +4520,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 8}{x^2 - 4} \\)",
     "options": [
       {
-        "text": "x - 2",
+        "text": "\\frac{x^2 + 4}{x + 2}",
         "imageUrl": ""
       },
       {
@@ -4528,7 +4528,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 4}{x + 2}",
+        "text": "x - 2",
         "imageUrl": ""
       },
       {
@@ -4572,15 +4572,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(x^2y^2\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x/y\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x^2y^2\\)",
         "imageUrl": ""
       }
     ],
@@ -4615,15 +4615,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{3b}{4}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{-4}{3b}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{4}{3b}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{3b}{4}\\)",
         "imageUrl": ""
       }
     ],
@@ -4654,11 +4654,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^2-7x+12}{3-x} \\)",
     "options": [
       {
-        "text": "\\(4-x\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(3-x\\)",
+        "text": "\\(x-3\\)",
         "imageUrl": ""
       },
       {
@@ -4666,7 +4662,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x-3\\)",
+        "text": "\\(3-x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4-x\\)",
         "imageUrl": ""
       }
     ],
@@ -4702,19 +4702,19 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 1} - \\frac{1}{x - 2} \\)",
     "options": [
       {
-        "text": "\\frac{3}{x^2 - 3x + 2}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{-1}{x^2 - 3x + 2}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{-1}{(x - 1)(x + 2)}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{2x - 3}{x^2 - 3x + 2}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{3}{x^2 - 3x + 2}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{-1}{x^2 - 3x + 2}",
         "imageUrl": ""
       }
     ],
@@ -4750,7 +4750,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 3} - \\frac{1}{x - 4} \\)",
     "options": [
       {
-        "text": "\\frac{7}{x^2 - 7x + 12}",
+        "text": "\\frac{-1}{(x - 3)(x + 4)}",
         "imageUrl": ""
       },
       {
@@ -4758,11 +4758,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{x^2 - 7x + 12}",
+        "text": "\\frac{7}{x^2 - 7x + 12}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{(x - 3)(x + 4)}",
+        "text": "\\frac{-1}{x^2 - 7x + 12}",
         "imageUrl": ""
       }
     ],
@@ -4798,15 +4798,15 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{a^2+6a+8}{a^2-9} \\div \\frac{a+4}{a-3} \\)",
     "options": [
       {
-        "text": "\\(\\frac{-a+2}{a+3}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{a-2}{a-3}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{a+3}{a+2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-a+2}{a+3}\\)",
         "imageUrl": ""
       },
       {
@@ -4841,11 +4841,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{1}{u-v} + \\frac{2u-v}{u^2-v^2} \\)",
     "options": [
       {
-        "text": "\\(\\frac{3}{u+v}\\)",
+        "text": "\\(\\frac{3u}{u^2-v^2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3u}{u^2-v^2}\\)",
+        "text": "\\(\\frac{u}{u^2-v^2}\\)",
         "imageUrl": ""
       },
       {
@@ -4853,7 +4853,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{u}{u^2-v^2}\\)",
+        "text": "\\(\\frac{3}{u+v}\\)",
         "imageUrl": ""
       }
     ],
@@ -4889,7 +4889,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Factor where possible and simplify: \\( \\frac{x^2+8x+16}{x^2+7x+12} \\)",
     "options": [
       {
-        "text": "\\(\\frac{-x+4}{x+3}\\)",
+        "text": "\\(\\frac{x-4}{x-3}\\)",
         "imageUrl": ""
       },
       {
@@ -4897,11 +4897,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+3}{x+4}\\)",
+        "text": "\\(\\frac{-x+4}{x+3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x-4}{x-3}\\)",
+        "text": "\\(\\frac{x+3}{x+4}\\)",
         "imageUrl": ""
       }
     ],
@@ -4932,7 +4932,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Write as a single fraction: \\( \\frac{a}{6} - \\frac{b}{15} \\)",
     "options": [
       {
-        "text": "\\(\\frac{-5a - 2b}{30}\\)",
+        "text": "\\(\\frac{30}{5a - 2b}\\)",
         "imageUrl": ""
       },
       {
@@ -4940,7 +4940,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{30}{5a - 2b}\\)",
+        "text": "\\(\\frac{-5a - 2b}{30}\\)",
         "imageUrl": ""
       },
       {
@@ -4975,7 +4975,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{p+3}{3} - \\frac{p+4}{4} \\)",
     "options": [
       {
-        "text": "\\(\\frac{p}{12}\\)",
+        "text": "\\(\\frac{-p}{12}\\)",
         "imageUrl": ""
       },
       {
@@ -4983,7 +4983,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-p}{12}\\)",
+        "text": "\\(\\frac{p}{12}\\)",
         "imageUrl": ""
       },
       {
@@ -5018,15 +5018,15 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Write as a single fraction: \\( \\frac{1}{3m} - \\frac{1}{4m} \\)",
     "options": [
       {
+        "text": "\\(\\frac{1}{12m}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{12m}{1}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{3}{15m}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{1}{12m}\\)",
         "imageUrl": ""
       },
       {
@@ -5061,11 +5061,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{4}{x^2+3x-10} - \\frac{3}{x^2+2x-8} \\)",
     "options": [
       {
-        "text": "\\(\\frac{x+31}{(x+5)(x-2)(x+4)}\\)",
+        "text": "\\(\\frac{x+1}{(x+5)(x-2)(x+4)}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+1}{(x-2)(x-5)(x-4)}\\)",
+        "text": "\\(\\frac{x+31}{(x+5)(x-2)(x+4)}\\)",
         "imageUrl": ""
       },
       {
@@ -5073,7 +5073,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+1}{(x+5)(x-2)(x+4)}\\)",
+        "text": "\\(\\frac{x+1}{(x-2)(x-5)(x-4)}\\)",
         "imageUrl": ""
       }
     ],
@@ -5109,11 +5109,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{4x}{3y} + \\frac{x}{2y}\\)",
     "options": [
       {
-        "text": "\\(\\frac{3x}{6y}\\)",
+        "text": "\\(\\frac{4x^2}{6y^2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{5x}{5y}\\)",
+        "text": "\\(\\frac{3x}{6y}\\)",
         "imageUrl": ""
       },
       {
@@ -5121,7 +5121,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{4x^2}{6y^2}\\)",
+        "text": "\\(\\frac{5x}{5y}\\)",
         "imageUrl": ""
       }
     ],
@@ -5152,15 +5152,15 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Factor where possible and simplify: \\( \\frac{4m^2-8mn}{3m^2n-6mn^2} \\)",
     "options": [
       {
-        "text": "\\(\\frac{4}{3n}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{3n}{4}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{-4}{3n}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{3n}\\)",
         "imageUrl": ""
       },
       {
@@ -5199,15 +5199,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{3(x-1)}{4x}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{-4x}{3(x-1)}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{4x}{3(x-1)}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{3(x-1)}{4x}\\)",
         "imageUrl": ""
       }
     ],

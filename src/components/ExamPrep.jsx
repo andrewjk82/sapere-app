@@ -428,7 +428,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
           </button>
         )}
       </div>
-      <MathView content={q.question} graphData={(q.type === 'graph_sketch' || q.type === 'teacher_review' || (q.requiresManualGrading && /(draw|sketch|construct)/i.test(q.question || ''))) ? (showFeedback ? q.graphData : null) : q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
+      <MathView content={q.question} graphData={(q.type === 'graph_sketch' || q.type === 'teacher_review' || (q.requiresManualGrading && /(draw|sketch|construct)/i.test(q.question || ''))) ? (showFeedback ? q.graphData : null) : q.graphData} style={{ fontSize: '0.98rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
 
       {/* Watch the lecture — shown when this topic has an authored lesson */}
       {lesson && (
@@ -821,7 +821,7 @@ const ReviewView = ({ questions, answers, onDone }) => {
             {isPending ? 'Teacher marking' : isCorrect ? 'Correct' : 'Incorrect'}
           </span>
         </div>
-        <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '1.05rem', lineHeight: 1.7, color: '#1e1b4b', fontWeight: 500 }} />
+        <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '0.98rem', lineHeight: 1.7, color: '#1e1b4b', fontWeight: 500 }} />
       </div>
 
       {/* your answer vs correct */}

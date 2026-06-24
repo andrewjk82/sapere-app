@@ -4,14 +4,14 @@
 > ① src/constants/ 에 시드 파일 작성 → ② Curriculum.jsx의 CHAPTER_SEED_REGISTRY에 등록(seed: 연결) → ③ Admin Seeder/sync 스크립트로 동기화(DB·매핑·sync_meta 함께 갱신). 매핑 안 하면 UI에 안 보임.
 
 ## ✏️ 설정값 (여기만 수정)
-학년: Year 11 | 챕터 번호: 6 | chapterId: y11a-6
-서브토픽 ID: y11a-6k | 토픽 코드: 6K | 서브토픽 제목: Revision
+학년: Year 12a | 챕터 번호: 1 | chapterId: y12a-1
+서브토픽 ID: y12a-1a| 토픽 코드: 1A | 서브토픽 제목: Miscellaneous questions
 
-난이도: Q1~Q2 easy / Q3~Q12 medium / Q13 hard (명백히 다르면 조정)
+난이도: Q1~Q6 easy / Q7~Q12 medium / Q13 hard (명백히 다르면 조정)
 timeLimit: easy 60 / medium 90 / hard 120
 SPLIT_SUB_QUESTIONS=true (a)b)c)→subQuestions 배열)
 SPLIT_MULTI_UNKNOWN=true ("Find x,y"→미지수별 분리)
-개별 top-level 분리: Q1~Q3, Q11~Q12
+개별 top-level 분리: Q1~Q14
 
 ---
 이하 규칙은 위 설정값 기준 자동 적용. 수정 금지.
@@ -36,6 +36,7 @@ JS 파일 하나, 설명·주석 없이 코드만: `export const Y8_CH1_QUESTION
 - solutionSteps: [{explanation, workingOut, graphData:null}]  ★정답/힌트 그래프는 최상위 아닌 마지막 step에만
 - graphData: 본문용 그림 또는 null  ★정답/풀이 힌트가 들어있는 단위원/함수 그래프는 여기 넣지 말 것(solutionSteps의 마지막 step으로)
 - subQuestions: ★사용 금지. 서브문제는 항상 평탄화(Flatten)하여 개별 top-level 문제로 분리할 것.
+- 질문 데이터 자체에 줄바꿈 문자(\n)를 삽입하여, 수식 영역이 브라우저 캐시 여부나 특정 기기의 렌더링 엔진 차이에 관계없이 항상 다음 줄에 독립적이고 보기 좋게 정렬
 
 무결성 규칙:
 1. 모든 텍스트 영어만 (한국어 금지).
@@ -110,6 +111,8 @@ jsxGraph 필수:
 - ★KaTeX array에서 `@` 절대 금지(r@{\quad}l 등 Parse Error). 기본 r/c/l만, 띄어쓰기는 셀 안 \quad.
 - ★workingOut에서 3글자↑ 영단어를 \text{} 금지(Parse Error). 단일문자 x 쓰거나 \mathrm{} 사용.
 - geometry 라벨은 LaTeX 아님, 유니코드 그대로.
+- - **수식과 일반 텍스트 사이의 줄바꿈 및 분리**: 질문 본문(`question`)이나 답안 설명(`answer` 및 `solution`)에서 수학 Delimiter `\\( ... \\)` 가 적용된 수식 영역이 일반 텍스트와 연속해서 붙어나오는 경우, 줄바꿈 문자(`\\n`)를 적극적으로 사용하여 수식과 평문 텍스트가 완전히 쪼개져 렌더링되도록 작성해야 합니다. (줄글 형태로 길게 이어 쓰지 마세요.)
+
 
 ## [11] 정확성·무결성 ⚠️
 기하: ①좌표 짐작금지, 수식으로 산출 ②비퇴화 삼각형(세 점 일직선 금지) ③교재 비례 유지(아래 꼭짓점은 y최소) ④NSW 용어(CPCTC 금지→"corresponding angles/sides of congruent triangles are equal") ⑤그림에 없는 조건 given 처리 금지, 합동조건(RHS/SAS) 단계별 증명.
@@ -149,11 +152,31 @@ jsxGraph 필수:
 - 예:
   * [AS-IS] `"workingOut: '\\{0, 1, 2, 3, 4, 5\\}'"` (렌더링 시 `\{0, 1, 2, 3, 4, 5\}`로 깨짐)
   * [TO-BE] `"workingOut: '\\(\\{0, 1, 2, 3, 4, 5\\}\\)'"` (렌더링 시 수식으로 정상 변환됨)
-- 멀티플 초이스에 가능한 답이 잘 보이게 가끔 식도 들어가는데 불필요한 식을 여기에 적을 필요없어 
+- 멀티플 초이스에 가능한 답이 잘 보이게 가끔 식도 들어가는데 불필요한 식을 여기에 적을 필요없어
+
+### [규칙 4] 질문 문항 구조화 및 줄바꿈 적용 규칙 (가독성 향상)
+1. **문항 끝 수식 블록 줄바꿈**:
+   - 질문 본문(question)의 맨 끝에 오는 핵심 수식/계산 식은 가독성을 위해 반드시 앞에 줄바꿈 문자 `\\n`을 추가하여 다음 줄에 출력되도록 합니다.
+   - 예: `"question": "Expand:\\n\\((x-2)(x+2)\\)."`
+2. **다중 조건/치수 정보의 목록화 (Bullet Points)**:
+   - 기하학 문제나 변수 정보가 여러 개 주어지는 문장형 문제의 경우, 줄글로 한 번에 나열하지 말고 가독성을 위해 불릿 포인트를 활용하여 구조화하십시오.
+   - 본문 텍스트와 조건 목록, 그리고 마지막 질문 문장 사이에는 줄바꿈(`\\n`)을 적절히 사용해 여백을 주십시오.
+   - 예:
+     `"question": "Refer to the diagram. The figure is made from a square and rectangles with:\\n- \\(AC = a = 8\\) units\\n- \\(BC = b = 3\\) units\\n\\nWhat is the length of segment \\(AB\\)?"`
+
+### [규칙 5] JSXGraph 기하 다이어그램 시각 왜곡 방지 및 레이블 관리
+1. **중앙 정렬 및 여백 확보 (`boundingbox`)**:
+   - 다이어그램의 테두리 선이나 텍스트 레이블이 잘리는 것을 방지하기 위해, 요소들의 좌표 최소/최대값 기준 사방으로 최소 1.5 ~ 2.0 단위 이상의 마진(Margin)을 반영한 `boundingbox`를 명시적으로 설정하십시오. (Format: `[xmin, ymax, xmax, ymin]`)
+2. **점(Point) 가시성 및 텍스트 레이블 분리**:
+   - 기하 도형의 꼭짓점에는 불필요하고 투박한 검은색 점(`visible: true`)을 노출하는 대신, 점은 투명하게 처리(`visible: false`)하고 꼭짓점 문자(`A`, `B`, `C` 등)는 명시적으로 `text` 타입 요소를 사용해 세부 좌표로 정밀하게 렌더링하십시오.
+3. **길이 표시 치수선(Arrow) 배치**:
+   - 특정 선분의 길이를 표시할 때는 양방향 화살표(`type: 'arrow'`, `bidirectional: true`) 선을 긋고, 그 상단/옆에 변수나 숫자 텍스트를 배치하여 실제 수학 교재와 완벽히 동일한 포맷을 유지하십시오.
+
+### [규칙 6] 서술형 및 증명형 문제(`teacher_review`)의 줄바꿈 규칙
+   - `teacher_review` 타입 문항의 `answer` 필드 및 `solutionSteps` 내부 단계별 텍스트는 브라우저 렌더링 시 자동으로 한 줄로 뭉쳐서 표시되는 문제를 원천 차단하기 위해, 문장 끝 마침표(`.`)를 기준으로 반드시 줄바꿈 기호(`\\n`)를 명시적으로 추가하여 문장 단위로 줄바꿈이 깔끔하게 표시되도록 포맷팅해야 합니다.
 
 ---
 
 ## 🛠️ 변환 대상 데이터 예시 (여기에 대상 코드를 붙여넣으세요)
 
 [여기에 수정이 필요한 JSON/JS Array 문제 데이터를 넣어주세요]
-

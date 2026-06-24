@@ -145,12 +145,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "067b500417f518fb02defeaaa5287eab",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\(-4(y + 3)\\)",
-    "options": [],
-    "answer": "$-4y-12$",
+    "options": [
+      {
+        "text": "\\(-4y-12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(+4y+12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-6y-14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-4y - 12\\)",
@@ -396,12 +413,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "0c98e3c3dc54f2b5d330c778de46ae5e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\(-k(k^2 - 4)\\)",
-    "options": [],
-    "answer": "$-k^3+4k$",
+    "options": [
+      {
+        "text": "\\(+k^3+4k\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-k^5+6k\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-k^3+4k\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-k^3-4k\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-k^3 + 4k\\)",
@@ -566,12 +600,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "14dbd0fcdecc60271a7dfb1cf5a4d5d8",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\((x + 5)^2\\)",
-    "options": [],
-    "answer": "x^2+10x+25",
+    "options": [
+      {
+        "text": "\\(x^2+10x+25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4+12x+27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2-10x-25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(x^2 + 10x + 25\\)",
@@ -592,12 +643,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "15413390b7e096180b1c55c6737db65a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand and simplify: \\(x(x + 2) - x(x - 3)\\)",
-    "options": [],
-    "answer": "$5x$",
+    "options": [
+      {
+        "text": "\\(5x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative C",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(5x\\)",
@@ -752,12 +820,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "18b75eaedde35094e636779d537b59b4",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\((m + n)^2\\)",
-    "options": [],
-    "answer": "m^2+2mn+n^2",
+    "options": [
+      {
+        "text": "\\(m^4+4mn+n^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(m^2+2mn+n^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(m^2-2mn-n^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(m^2 + 2mn + n^2\\)",
@@ -826,12 +911,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "1b5899a9c5cd56129ebf33fb25f07a88",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Expand and simplify: \\((x + 3)^2 - (x + 2)^2\\)",
-    "options": [],
-    "answer": "$2x+5$",
+    "options": [
+      {
+        "text": "\\(2x+5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x+7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\((x^2 + 6x + 9) - (x^2 + 4x + 4)\\)\n2. \\(x^2 + 6x + 9 - x^2 - 4x - 4 = 2x + 5\\)",
@@ -900,12 +1002,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "1d3dea947f7b4a31390d6260a27595ef",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\(302 \\times 298\\) using special expansions.",
-    "options": [],
-    "answer": "89996",
+    "options": [
+      {
+        "text": "\\(97195.68\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(103495.40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(76496.60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(89996\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\((300 + 2)(300 - 2) = 300^2 - 2^2\\)\n2. \\(90000 - 4 = 89996\\)",
@@ -1295,12 +1414,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "27217c58e85d0d37e446547862fd1977",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\(3(a + 4)\\)",
-    "options": [],
-    "answer": "$3a+12$",
+    "options": [
+      {
+        "text": "\\(3a+12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(358.80\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(336.96\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(265.20\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(3a + 12\\)",
@@ -1321,12 +1457,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "2782ed52b40362bf547a2785b68edc10",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\((k + 8)^2\\)",
-    "options": [],
-    "answer": "k^2+16k+64",
+    "options": [
+      {
+        "text": "\\(k^4+18k+66\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(k^2-16k-64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(k^2+16k+64\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(k^2 + 16k + 64\\)",
@@ -1491,12 +1644,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "2d8924be0f47a2677c07d81d1d397e61",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand and simplify: \\(5(x + 1) - 3x\\)",
-    "options": [],
-    "answer": "\\(2x + 5\\)",
+    "options": [
+      {
+        "text": "\\(2x + 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x - 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x + 7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(2x + 5\\)",
@@ -1517,12 +1687,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "2d9e85410314eea49c006c5d1de13c97",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\((a - 7)(a + 7)\\)",
-    "options": [],
-    "answer": "a^2-49",
+    "options": [
+      {
+        "text": "\\(2.30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a^2-49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.70\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.16\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(a^2 - 49\\)",
@@ -1543,12 +1730,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "2de4a42f81a78f7a5fa195c8e7decf7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand and simplify: \\(2(x - 3) - 3(x - 1)\\)",
-    "options": [],
-    "answer": "\\(-x - 3\\)",
+    "options": [
+      {
+        "text": "\\(-x - 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-x - 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(+x + 3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-x - 3\\)",
@@ -1756,12 +1960,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "326967100407fd68a210906e4974b111",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "3(x + 5) + 4(3x - 2)",
-    "options": [],
-    "answer": "\\(15x + 7\\)",
+    "options": [
+      {
+        "text": "\\(15x - 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15x + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17x + 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "Distribute the 3 and 4 across the brackets.",
     "solution": "\\(3x + 15 + 12x - 8 = 15x + 7\\)",
@@ -2204,12 +2425,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "387638a35ff96f119508e0461fbc0413",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand and simplify: \\(3(2a + b) + 2(a - 2b)\\)",
-    "options": [],
-    "answer": "\\(8a - b\\)",
+    "options": [
+      {
+        "text": "\\(8a - b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9.20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6.80\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8.64\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(8a - b\\)",
@@ -2230,12 +2468,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "3abb0585a23cb51f1c5b1e76b06817b6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Expand and simplify: \\((2x + 1)(x - 2) - (x - 3)(x + 2)\\)",
-    "options": [],
-    "answer": "x^2-2x+4",
+    "options": [
+      {
+        "text": "\\(x^2-2x+4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2+2x+4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2-2x-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4-4x+6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\((2x^2 - 4x + x - 2) - (x^2 + 2x - 3x - 6)\\)\n2. \\((2x^2 - 3x - 2) - (x^2 - x - 6)\\)\n3. \\(x^2 - 2x + 4\\)",
@@ -2256,12 +2511,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "3b2decd987cf0200254a889859ec03c2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand: \\(7(x - 2)\\)",
-    "options": [],
-    "answer": "$7x-14$",
+    "options": [
+      {
+        "text": "\\(7x-14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7x+14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x-16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(7x - 14\\)",
@@ -2282,12 +2554,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "3b429019908ed2e1896ffbc6907efcae",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand and simplify: \\(3(x + 2) - 2x\\)",
-    "options": [],
-    "answer": "\\(x + 6\\)",
+    "options": [
+      {
+        "text": "\\(x + 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x - 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x + 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(x + 6\\)",
@@ -2356,12 +2645,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "3ee10ae2b4b6be5b82b76ad630d300cd",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\((u - v)(u + v)\\)",
-    "options": [],
-    "answer": "u^2-v^2",
+    "options": [
+      {
+        "text": "\\(2.16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.70\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(u^2-v^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(u^2 - v^2\\)",
@@ -2478,12 +2784,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "415bcb87f834277f3a83ddb8c038ec8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\((y - 3)^2\\)",
-    "options": [],
-    "answer": "y^2-6y+9",
+    "options": [
+      {
+        "text": "\\(y^4-8y+11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2-6y+9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2-6y-9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2+6y+9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(y^2 - 6y + 9\\)",
@@ -2552,12 +2875,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "4222bb235925314e2ae2519a271c1ab5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand and simplify: \\(2(p - q) - (p + q)\\)",
-    "options": [],
-    "answer": "\\(p - 3q\\)",
+    "options": [
+      {
+        "text": "\\(-3.45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2.55\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(p - 3q\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3.24\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(p - 3q\\)",
@@ -2578,12 +2918,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "42fb9493fe0e0c6af16e28c956a7e50d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using algebraic expansion: \\(29.8^2\\)",
-    "options": [],
-    "answer": "888.04",
+    "options": [
+      {
+        "text": "\\(959.08\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(754.83\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1021.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(888.04\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "Express the number as \\((B \\pm d)^2\\) where B is a round base, then apply the perfect square identity.",
     "solution": "\\((30 - 0.2)^2 = 30^2 - 2(30)(0.2) + 0.2^2 = 888.04\\)",
@@ -2609,12 +2966,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "438f2e0d5beeee35d31c04fa5e4efc53",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\(-3(p - 2q)\\)",
-    "options": [],
-    "answer": "$-3p+6q$",
+    "options": [
+      {
+        "text": "\\(-30.60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-41.40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3p+6q\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-38.88\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-3p + 6q\\)",
@@ -2726,12 +3100,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "475951ae2f4bd6abbf742e2919f15fe2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\((5 + c)^2\\)",
-    "options": [],
-    "answer": "c^2+10c+25",
+    "options": [
+      {
+        "text": "\\(22707.00\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17871.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24178.75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(c^2+10c+25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(25 + 10c + c^2\\)",
@@ -2800,12 +3191,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "4864d425af8910a1201060618085c822",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using difference of squares: \\(1002 \\times 998\\)",
-    "options": [],
-    "answer": "999996",
+    "options": [
+      {
+        "text": "\\(1079995.68\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(849996.60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1149995.40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(999996\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "Express the numbers as \\((B + d)(B - d)\\) where B is the round base, then apply the difference of squares identity.",
     "solution": "\\((1000 + 2)(1000 - 2) = 1000^2 - 2^2 = 1000000 - 4 = 999996\\)",
@@ -3018,12 +3426,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "501681aad198d8161bf3b58097952475",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(2x(y - z)\\)",
-    "options": [],
-    "answer": "$2xy-2xz$",
+    "options": [
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2xy-2xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2xy+2xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4xy-4xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(2xy - 2xz\\)",
@@ -3269,12 +3694,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "54919daf3ba6a6159796300d5d511798",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using difference of squares: \\(403 \\times 397\\)",
-    "options": [],
-    "answer": "159991",
+    "options": [
+      {
+        "text": "\\(159991\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(183989.65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(135992.35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(172790.28\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "Express the numbers as \\((B + d)(B - d)\\) where B is the round base, then apply the difference of squares identity.",
     "solution": "\\((400 + 3)(400 - 3) = 400^2 - 3^2 = 160000 - 9 = 159991\\)",
@@ -3439,12 +3881,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "5a6ecd3bfb422babecea7536604ff6c0",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(-3y(2y + 1)\\)",
-    "options": [],
-    "answer": "$-6y^2-3y$",
+    "options": [
+      {
+        "text": "\\(-6y^2-3y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(+6y^2+3y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-8y^4-5y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-6y^2 - 3y\\)",
@@ -3465,12 +3924,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "5b3c83aeb94126b2bce2a719ac492bca",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
     "question": "Evaluate using algebraic expansion: \\(1005^2\\)",
-    "options": [],
-    "answer": "\\(1010025\\)",
+    "options": [
+      {
+        "text": "\\(1010025\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1161528.75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(858521.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1090827.00\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "Express the number as \\((B \\pm d)^2\\) where B is a round base, then apply the perfect square identity.",
     "solution": "\\((1000 + 5)^2 = 1000^2 + 2(1000)(5) + 5^2 = 1010025\\)",
@@ -3496,12 +3972,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "5c3828e6cf06d4caa13685f78f9d2d42",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(-2(5 - z)\\)",
-    "options": [],
-    "answer": "$-10+2z$",
+    "options": [
+      {
+        "text": "\\(-10+2z\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-86.70\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-110.16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-117.30\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-10 + 2z\\)",
@@ -3570,12 +4063,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "5cf72bf6b564775a161299ef3379c290",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\((h + 12)(h - 12)\\)",
-    "options": [],
-    "answer": "h^2-144",
+    "options": [
+      {
+        "text": "\\(2.16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.70\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(h^2-144\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(h^2 - 144\\)",
@@ -3596,12 +4106,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "600c5ccef8db70bd0d4ad24eb5757995",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
     "question": "Evaluate using algebraic expansion: \\(200.5^2\\)",
-    "options": [],
-    "answer": "\\(40200.25\\)",
+    "options": [
+      {
+        "text": "\\(43416.27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(46230.29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34170.21\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40200.25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "Express the number as \\((B \\pm d)^2\\) where B is a round base, then apply the perfect square identity.",
     "solution": "\\((200 + 0.5)^2 = 200^2 + 2(200)(0.5) + 0.5^2 = 40200.25\\)",
@@ -3670,12 +4197,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "6074afedb162ad9115f5f7d4f7092020",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(2a(a - 3)\\)",
-    "options": [],
-    "answer": "$2a^2-6a$",
+    "options": [
+      {
+        "text": "\\(2a^2-6a\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25.30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18.70\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(23.76\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(2a^2 - 6a\\)",
@@ -3696,12 +4240,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "60a65a49a17544b674fa202511953442",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand and simplify: \\((3x - 2y) - (2x - 3y)\\)",
-    "options": [],
-    "answer": "$x+y$",
+    "options": [
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x+y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x-y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative C",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(x + y\\)",
@@ -3722,12 +4283,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "614626aeaef400ec904466975bffb15a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Expand and simplify: \\(4(x - 2) - 3(x + 1)\\)",
-    "options": [],
-    "answer": "\\(x - 11\\)",
+    "options": [
+      {
+        "text": "\\(x - 11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x + 11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x - 13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(x - 11\\)",
@@ -4112,12 +4690,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "6a4e1a401223d4deceb73300ac471064",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 30,
     "question": "Evaluate using algebraic expansion: \\(10.02^2\\)",
-    "options": [],
-    "answer": "\\(100.4004\\)",
+    "options": [
+      {
+        "text": "\\(108.43\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(115.46\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100.4004\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(85.34\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "Express the number as \\((B \\pm d)^2\\) where B is a round base, then apply the perfect square identity.",
     "solution": "\\((10 + 0.02)^2 = 10^2 + 2(10)(0.02) + 0.02^2 = 100.4004\\)",
@@ -4694,12 +5289,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "7e67ce97bec038e63db84ca7c011119d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Expand: \\(6(2x + 3)\\)",
-    "options": [],
-    "answer": "$12x+18$",
+    "options": [
+      {
+        "text": "\\(12x+18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12x-18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14x+20\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(12x + 18\\)",
@@ -4720,12 +5332,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "7f229ad53fcb15c4ca69184748a2d4ac",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\(998^2\\) using special expansions.",
-    "options": [],
-    "answer": "996004",
+    "options": [
+      {
+        "text": "\\(1075684.32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(846603.40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1145404.60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(996004\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\((1000 - 2)^2 = 1000^2 - 2(1000)(2) + 2^2\\)\n2. \\(1000000 - 4000 + 4 = 996004\\)",
@@ -4794,12 +5423,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "822bb69b8185c671cfa6b27489376125",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Expand: \\((10 + b)(10 - b)\\)",
-    "options": [],
-    "answer": "100-b^2",
+    "options": [
+      {
+        "text": "\\(108.00\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100-b^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(115.00\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(85.00\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(100 - b^2\\)",
@@ -4863,12 +5509,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "83b7af89485183047cbb50aac04b6c6d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(-y(y - 2)\\)",
-    "options": [],
-    "answer": "$-y^2+2y$",
+    "options": [
+      {
+        "text": "\\(-y^4+4y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-y^2-2y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(+y^2+2y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-y^2+2y\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-y^2 + 2y\\)",
@@ -4889,12 +5552,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "8464bd25ae6be56751215575e5742085",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(-2(y - 5)\\)",
-    "options": [],
-    "answer": "$-2y+10$",
+    "options": [
+      {
+        "text": "\\(-2y+10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(+2y+10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4y+12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2y-10\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-2y + 10\\)",
@@ -4915,12 +5595,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "84b10bd1a754e27fb3d79f48a0282e90",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
     "question": "Evaluate using difference of squares: \\(50.1 \\times 49.9\\)",
-    "options": [],
-    "answer": "\\(2499.99\\)",
+    "options": [
+      {
+        "text": "\\(2699.99\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2124.99\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2874.99\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2499.99\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "Express the numbers as \\((B + d)(B - d)\\) where B is the round base, then apply the difference of squares identity.",
     "solution": "\\((50 + 0.1)(50 - 0.1) = 50^2 - 0.1^2 = 2500 - 0.010000000000000002 = 2499.99\\)",
@@ -5080,12 +5777,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "8846ac6a99572e541906b4444022981a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(-3(z + 4)\\)",
-    "options": [],
-    "answer": "$-3z-12$",
+    "options": [
+      {
+        "text": "\\(-3.24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2.55\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3.45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3z-12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-3z - 12\\)",
@@ -5395,19 +6109,19 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((p - q)^2\\)",
     "options": [
       {
-        "text": "$p^2-2pq+q^2$",
+        "text": "\\(\\$p^2-2pq+q^2\\$\\)",
         "imageUrl": ""
       },
       {
-        "text": "p^2+2pq+q^2",
+        "text": "\\(p^2+2pq+q^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "p^2-3pq+q",
+        "text": "\\(p^2-3pq+q\\)",
         "imageUrl": ""
       },
       {
-        "text": "p^2+3pq+q^2",
+        "text": "\\(p^2+3pq+q^2\\)",
         "imageUrl": ""
       }
     ],
@@ -5624,12 +6338,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "a3a4b50a55c1e3e67a0795d7ba093bed",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand and simplify: \\(2(3a - 4) + 5\\)",
-    "options": [],
-    "answer": "\\(6a - 3\\)",
+    "options": [
+      {
+        "text": "\\(6.48\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6.90\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6a - 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5.10\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(6a - 3\\)",
@@ -5885,12 +6616,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "ab8d533a4730a42645defea9eaa87fba",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
     "question": "Evaluate using algebraic expansion: \\(9997^2\\)",
-    "options": [],
-    "answer": "\\(99940009\\)",
+    "options": [
+      {
+        "text": "\\(107935209.72\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(84949007.65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(114931010.35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(99940009\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "Express the number as \\((B \\pm d)^2\\) where B is a round base, then apply the perfect square identity.",
     "solution": "\\((10000 - 3)^2 = 10000^2 - 2(10000)(3) + 3^2 = 99940009\\)",
@@ -5916,12 +6664,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "aba4cc9411144cb3c382006e15973594",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
     "question": "Evaluate using algebraic expansion: \\(99.5^2\\)",
-    "options": [],
-    "answer": "\\(9900.25\\)",
+    "options": [
+      {
+        "text": "\\(11385.29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9900.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8415.21\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10692.27\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "Express the number as \\((B \\pm d)^2\\) where B is a round base, then apply the perfect square identity.",
     "solution": "\\((100 - 0.5)^2 = 100^2 - 2(100)(0.5) + 0.5^2 = 9900.25\\)",
@@ -5995,12 +6760,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "af3b769ff778d9cb1a3dc9e9de443ce8",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
     "question": "Find the value of \\(103^2\\) using special expansions.",
-    "options": [],
-    "answer": "\\(10609\\)",
+    "options": [
+      {
+        "text": "\\(11457.72\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9017.65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12200.35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10609\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\((100 + 3)^2 = 100^2 + 2(100)(3) + 3^2\\)\n2. \\(10000 + 600 + 9 = 10609\\)",
@@ -6069,12 +6851,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "b3e4b358ae5305ba2c7fb7f27eaf86a6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(4(3x - 2y)\\)",
-    "options": [],
-    "answer": "$12x-8y$",
+    "options": [
+      {
+        "text": "\\(14x-10y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12x+8y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12x-8y\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(12x - 8y\\)",
@@ -6138,12 +6937,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "b6c600a1feb66c0ef210d4f0bddb4339",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(4(x - 3)\\)",
-    "options": [],
-    "answer": "$4x-12$",
+    "options": [
+      {
+        "text": "\\(6x-14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x+12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x-12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(4x - 12\\)",
@@ -6357,19 +7173,19 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((11 - g)^2\\)",
     "options": [
       {
-        "text": "121-22g+g^2",
+        "text": "\\(121-22g+g^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "11-2g+g^2",
+        "text": "\\(11-2g+g^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "11+2g+g^2",
+        "text": "\\(11+2g+g^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "121+22g+g^2",
+        "text": "\\(121+22g+g^2\\)",
         "imageUrl": ""
       }
     ],
@@ -6394,12 +7210,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "bdf4a25350a86886fd26d7b48df6d158",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(-(x + 7)\\)",
-    "options": [],
-    "answer": "$-x-7$",
+    "options": [
+      {
+        "text": "\\(-x-7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(+x+7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-x-9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(-x - 7\\)",
@@ -6516,12 +7349,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "c54fd16af88fa9f5e34d2f4c962df923",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(x(x + 5)\\)",
-    "options": [],
-    "answer": "$x^2+5x$",
+    "options": [
+      {
+        "text": "\\(x^4+7x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2-5x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^2+5x\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(x^2 + 5x\\)",
@@ -6638,12 +7488,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "c88361554ffd9cc8f75e75cecdf8a6b5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Expand and simplify: \\((a - 4)^2 - (a - 4)(a + 4)\\)",
-    "options": [],
-    "answer": "-8a+32",
+    "options": [
+      {
+        "text": "\\(-8a+32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-898.56\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-956.80\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-707.20\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\((a^2 - 8a + 16) - (a^2 - 16)\\)\n2. \\(a^2 - 8a + 16 - a^2 + 16 = -8a + 32\\)",
@@ -6856,12 +7723,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "cf3aa66ab87a2e8f8e12c0e69cad355f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand: \\(2(x + 3y)\\)",
-    "options": [],
-    "answer": "$2x+6y$",
+    "options": [
+      {
+        "text": "\\(2x-6y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x+6y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x+8y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(2x + 6y\\)",
@@ -7112,12 +7996,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "d8e0ccd8678f49e677fe74a04044afd8",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Expand: \\((i + 13)^2\\)",
-    "options": [],
-    "answer": "i^2+26i+169",
+    "options": [
+      {
+        "text": "\\(244262.52\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(192243.65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(260094.35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(i^2+26i+169\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(i^2 + 26i + 169\\)",
@@ -7138,12 +8039,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "d95106501963f53befad825c74aae4eb",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
     "question": "Evaluate using algebraic expansion: \\(1.003^2\\)",
-    "options": [],
-    "answer": "$1.006009$",
+    "options": [
+      {
+        "text": "\\(1.09\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.86\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.006009\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "Express the number as \\((B \\pm d)^2\\) where B is a round base, then apply the perfect square identity.",
     "solution": "\\((1 + 0.003)^2 = 1^2 + 2(1)(0.003) + 0.003^2 = 1.006009\\)",
@@ -7260,12 +8178,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "e4090d21948122be1bbba8562ef7acd7",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Expand: \\(5(a - 2)\\)",
-    "options": [],
-    "answer": "$5a-10$",
+    "options": [
+      {
+        "text": "\\(4.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5.40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5a-10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5.75\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(5a - 10\\)",
@@ -7286,12 +8221,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "e54335b0e14819294690237705b908ed",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "-(2x - 3y) - (3x + 2y)",
-    "options": [],
-    "answer": "\\(-5x + y\\)",
+    "options": [
+      {
+        "text": "\\(-7x + y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5x - y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(+5x + y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5x + y\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "Distribute the negative sign to both terms in each bracket.",
     "solution": "\\(-2x + 3y - 3x - 2y = -5x + y\\)",
@@ -7403,12 +8355,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "e9292b02a25adc1cc5a2bac50acfc49f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "7(a - 3b) - 5(2a - 4b)",
-    "options": [],
-    "answer": "\\(-3a - b\\)",
+    "options": [
+      {
+        "text": "\\(-3.45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3a - b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2.55\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3.24\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "Careful with the negative sign when distributing the -5.",
     "solution": "\\(7a - 21b - 10a + 20b = -3a - b\\)",
@@ -7429,12 +8398,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "ea05ffbc962a5e3def2b1b1984802b90",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 30,
     "question": "Expand and simplify: \\(2a + 4 + 3(a - 1)\\)",
-    "options": [],
-    "answer": "\\(5a + 1\\)",
+    "options": [
+      {
+        "text": "\\(5a + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(43.35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(58.65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(55.08\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(5a + 1\\)",
@@ -7455,12 +8441,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "ea630096c7f3b14e1a75fc3b439cdd5b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Expand and simplify: \\(7 - (x + 2)\\)",
-    "options": [],
-    "answer": "\\(5 - x\\)",
+    "options": [
+      {
+        "text": "\\(5 - x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5 + x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7 - x\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(5 - x\\)",
@@ -7850,12 +8853,29 @@ export const Y11_CH1A_QUESTIONS = [
   },
   {
     "id": "feca23651598484bfc36393ea96d936d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Expand: \\(k(x - 5)\\)",
-    "options": [],
-    "answer": "$kx-5k$",
+    "options": [
+      {
+        "text": "Alternative D",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(kx-7k\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(kx+5k\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(kx-5k\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "1. \\(kx - 5k\\)",
@@ -7916,5 +8936,4605 @@ export const Y11_CH1A_QUESTIONS = [
     ],
     "graphData": null,
     "requiresManualGrading": false
+  },
+  {
+    "id": "y11-1a-high-q1",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((2x - 1y + 11z)^2\\)",
+    "options": [
+      {
+        "text": "\\(4x^2 + 1y^2 + 121z^2 + 4xy + 22yz + 44xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 + 1y^2 + 121z^2 - 4xy - 22yz + 44xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 + 1y^2 + 121z^2 - 4xy + 22yz - 44xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 - 1y^2 + 121z^2 - 4xy - 22yz + 44xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((2x - 1y + 11z)^2 = (2x)^2 + (-1y)^2 + (11z)^2 + 2(2x)(-1y) + 2(-1y)(11z) + 2(11z)(2x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 4x^2 + 1y^2 + 121z^2 + 2(2x)(-1y) + 2(-1y)(11z) + 2(11z)(2x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 4x^2 + 1y^2 + 121z^2 - 4xy - 22yz + 44xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q2",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((3x - 2y + 10z)^2\\)",
+    "options": [
+      {
+        "text": "\\(9x^2 + 4y^2 + 100z^2 - 12xy - 40yz + 60xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^2 + 4y^2 + 100z^2 + 12xy + 40yz + 60xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^2 + 4y^2 + 100z^2 - 12xy + 40yz - 60xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^2 - 4y^2 + 100z^2 - 12xy - 40yz + 60xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((3x - 2y + 10z)^2 = (3x)^2 + (-2y)^2 + (10z)^2 + 2(3x)(-2y) + 2(-2y)(10z) + 2(10z)(3x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 9x^2 + 4y^2 + 100z^2 + 2(3x)(-2y) + 2(-2y)(10z) + 2(10z)(3x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 9x^2 + 4y^2 + 100z^2 - 12xy - 40yz + 60xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q3",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((4x - 3y + 9z)^2\\)",
+    "options": [
+      {
+        "text": "\\(16x^2 + 9y^2 + 81z^2 - 24xy - 54yz + 72xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16x^2 + 9y^2 + 81z^2 - 24xy + 54yz - 72xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16x^2 + 9y^2 + 81z^2 + 24xy + 54yz + 72xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16x^2 - 9y^2 + 81z^2 - 24xy - 54yz + 72xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((4x - 3y + 9z)^2 = (4x)^2 + (-3y)^2 + (9z)^2 + 2(4x)(-3y) + 2(-3y)(9z) + 2(9z)(4x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 16x^2 + 9y^2 + 81z^2 + 2(4x)(-3y) + 2(-3y)(9z) + 2(9z)(4x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 16x^2 + 9y^2 + 81z^2 - 24xy - 54yz + 72xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q4",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((5x - 4y + 8z)^2\\)",
+    "options": [
+      {
+        "text": "\\(25x^2 + 16y^2 + 64z^2 - 40xy - 64yz + 80xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25x^2 + 16y^2 + 64z^2 - 40xy + 64yz - 80xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25x^2 + 16y^2 + 64z^2 + 40xy + 64yz + 80xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25x^2 - 16y^2 + 64z^2 - 40xy - 64yz + 80xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((5x - 4y + 8z)^2 = (5x)^2 + (-4y)^2 + (8z)^2 + 2(5x)(-4y) + 2(-4y)(8z) + 2(8z)(5x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 25x^2 + 16y^2 + 64z^2 + 2(5x)(-4y) + 2(-4y)(8z) + 2(8z)(5x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 25x^2 + 16y^2 + 64z^2 - 40xy - 64yz + 80xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q5",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((6x - 5y + 7z)^2\\)",
+    "options": [
+      {
+        "text": "\\(36x^2 + 25y^2 + 49z^2 + 60xy + 70yz + 84xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36x^2 + 25y^2 + 49z^2 - 60xy - 70yz + 84xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36x^2 + 25y^2 + 49z^2 - 60xy + 70yz - 84xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36x^2 - 25y^2 + 49z^2 - 60xy - 70yz + 84xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((6x - 5y + 7z)^2 = (6x)^2 + (-5y)^2 + (7z)^2 + 2(6x)(-5y) + 2(-5y)(7z) + 2(7z)(6x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 36x^2 + 25y^2 + 49z^2 + 2(6x)(-5y) + 2(-5y)(7z) + 2(7z)(6x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 36x^2 + 25y^2 + 49z^2 - 60xy - 70yz + 84xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q6",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((7x - 6y + 6z)^2\\)",
+    "options": [
+      {
+        "text": "\\(49x^2 + 36y^2 + 36z^2 - 84xy + 72yz - 84xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49x^2 + 36y^2 + 36z^2 - 84xy - 72yz + 84xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49x^2 + 36y^2 + 36z^2 + 84xy + 72yz + 84xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49x^2 - 36y^2 + 36z^2 - 84xy - 72yz + 84xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((7x - 6y + 6z)^2 = (7x)^2 + (-6y)^2 + (6z)^2 + 2(7x)(-6y) + 2(-6y)(6z) + 2(6z)(7x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 49x^2 + 36y^2 + 36z^2 + 2(7x)(-6y) + 2(-6y)(6z) + 2(6z)(7x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 49x^2 + 36y^2 + 36z^2 - 84xy - 72yz + 84xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((8x - 7y + 5z)^2\\)",
+    "options": [
+      {
+        "text": "\\(64x^2 + 49y^2 + 25z^2 - 112xy + 70yz - 80xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^2 - 49y^2 + 25z^2 - 112xy - 70yz + 80xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^2 + 49y^2 + 25z^2 - 112xy - 70yz + 80xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^2 + 49y^2 + 25z^2 + 112xy + 70yz + 80xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((8x - 7y + 5z)^2 = (8x)^2 + (-7y)^2 + (5z)^2 + 2(8x)(-7y) + 2(-7y)(5z) + 2(5z)(8x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 64x^2 + 49y^2 + 25z^2 + 2(8x)(-7y) + 2(-7y)(5z) + 2(5z)(8x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 64x^2 + 49y^2 + 25z^2 - 112xy - 70yz + 80xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q8",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((9x - 8y + 4z)^2\\)",
+    "options": [
+      {
+        "text": "\\(81x^2 + 64y^2 + 16z^2 + 144xy + 64yz + 72xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81x^2 - 64y^2 + 16z^2 - 144xy - 64yz + 72xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81x^2 + 64y^2 + 16z^2 - 144xy - 64yz + 72xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81x^2 + 64y^2 + 16z^2 - 144xy + 64yz - 72xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((9x - 8y + 4z)^2 = (9x)^2 + (-8y)^2 + (4z)^2 + 2(9x)(-8y) + 2(-8y)(4z) + 2(4z)(9x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 81x^2 + 64y^2 + 16z^2 + 2(9x)(-8y) + 2(-8y)(4z) + 2(4z)(9x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 81x^2 + 64y^2 + 16z^2 - 144xy - 64yz + 72xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q9",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((10x - 9y + 3z)^2\\)",
+    "options": [
+      {
+        "text": "\\(100x^2 - 81y^2 + 9z^2 - 180xy - 54yz + 60xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100x^2 + 81y^2 + 9z^2 + 180xy + 54yz + 60xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100x^2 + 81y^2 + 9z^2 - 180xy + 54yz - 60xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100x^2 + 81y^2 + 9z^2 - 180xy - 54yz + 60xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((10x - 9y + 3z)^2 = (10x)^2 + (-9y)^2 + (3z)^2 + 2(10x)(-9y) + 2(-9y)(3z) + 2(3z)(10x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 100x^2 + 81y^2 + 9z^2 + 2(10x)(-9y) + 2(-9y)(3z) + 2(3z)(10x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 100x^2 + 81y^2 + 9z^2 - 180xy - 54yz + 60xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q10",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the trinomial square: \\((11x - 10y + 2z)^2\\)",
+    "options": [
+      {
+        "text": "\\(121x^2 + 100y^2 + 4z^2 - 220xy + 40yz - 44xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(121x^2 - 100y^2 + 4z^2 - 220xy - 40yz + 44xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(121x^2 + 100y^2 + 4z^2 + 220xy + 40yz + 44xz\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(121x^2 + 100y^2 + 4z^2 - 220xy - 40yz + 44xz\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial squaring identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((11x - 10y + 2z)^2 = (11x)^2 + (-10y)^2 + (2z)^2 + 2(11x)(-10y) + 2(-10y)(2z) + 2(2z)(11x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the squares of the individual terms.",
+        "workingOut": "\\(= 121x^2 + 100y^2 + 4z^2 + 2(11x)(-10y) + 2(-10y)(2z) + 2(2z)(11x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the cross-product terms and write the final expanded expression.",
+        "workingOut": "\\(= 121x^2 + 100y^2 + 4z^2 - 220xy - 40yz + 44xz\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q11",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(2x^{2} - \\frac{1}{x^{2}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(8x^{6} -12x^{2} - \\frac{6}{x^{2}} -\\frac{1}{x^{6}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^{6} + -12x^{2} + \\frac{6}{x^{2}} + -\\frac{1}{x^{6}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^{6} - -12x^{2} + \\frac{6}{x^{2}} - -\\frac{1}{x^{6}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^{6} -12x^{2} + \\frac{6}{x^{2}} -\\frac{1}{x^{6}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 2x^{2}, \\quad B = \\frac{1}{x^{2}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(2x^{2} - \\frac{1}{x^{2}}\\right)^3 = (2x^{2})^3 - 3(2x^{2})^2\\left(\\frac{1}{x^{2}}\\right) + 3(2x^{2})\\left(\\frac{1}{x^{2}}\\right)^2 - \\left(\\frac{1}{x^{2}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 8x^{6} -12x^{2} + \\frac{6}{x^{2}} -\\frac{1}{x^{6}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q12",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(3x^{3} - \\frac{2}{x^{3}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(27x^{9} -54x^{3} + \\frac{36}{x^{3}} -\\frac{8}{x^{9}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27x^{9} -54x^{3} - \\frac{36}{x^{3}} -\\frac{8}{x^{9}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27x^{9} - -54x^{3} + \\frac{36}{x^{3}} - -\\frac{8}{x^{9}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27x^{9} + -54x^{3} + \\frac{36}{x^{3}} + -\\frac{8}{x^{9}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 3x^{3}, \\quad B = \\frac{2}{x^{3}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(3x^{3} - \\frac{2}{x^{3}}\\right)^3 = (3x^{3})^3 - 3(3x^{3})^2\\left(\\frac{2}{x^{3}}\\right) + 3(3x^{3})\\left(\\frac{2}{x^{3}}\\right)^2 - \\left(\\frac{2}{x^{3}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 27x^{9} -54x^{3} + \\frac{36}{x^{3}} -\\frac{8}{x^{9}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q13",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(4x^{4} - \\frac{3}{x^{4}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(64x^{12} -144x^{4} - \\frac{108}{x^{4}} -\\frac{27}{x^{12}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^{12} -144x^{4} + \\frac{108}{x^{4}} -\\frac{27}{x^{12}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^{12} + -144x^{4} + \\frac{108}{x^{4}} + -\\frac{27}{x^{12}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^{12} - -144x^{4} + \\frac{108}{x^{4}} - -\\frac{27}{x^{12}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 4x^{4}, \\quad B = \\frac{3}{x^{4}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(4x^{4} - \\frac{3}{x^{4}}\\right)^3 = (4x^{4})^3 - 3(4x^{4})^2\\left(\\frac{3}{x^{4}}\\right) + 3(4x^{4})\\left(\\frac{3}{x^{4}}\\right)^2 - \\left(\\frac{3}{x^{4}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 64x^{12} -144x^{4} + \\frac{108}{x^{4}} -\\frac{27}{x^{12}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q14",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(5x^{5} - \\frac{4}{x^{5}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(125x^{15} - -300x^{5} + \\frac{240}{x^{5}} - -\\frac{64}{x^{15}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125x^{15} + -300x^{5} + \\frac{240}{x^{5}} + -\\frac{64}{x^{15}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125x^{15} -300x^{5} - \\frac{240}{x^{5}} -\\frac{64}{x^{15}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125x^{15} -300x^{5} + \\frac{240}{x^{5}} -\\frac{64}{x^{15}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 5x^{5}, \\quad B = \\frac{4}{x^{5}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(5x^{5} - \\frac{4}{x^{5}}\\right)^3 = (5x^{5})^3 - 3(5x^{5})^2\\left(\\frac{4}{x^{5}}\\right) + 3(5x^{5})\\left(\\frac{4}{x^{5}}\\right)^2 - \\left(\\frac{4}{x^{5}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 125x^{15} -300x^{5} + \\frac{240}{x^{5}} -\\frac{64}{x^{15}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q15",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(6x^{6} - \\frac{5}{x^{6}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(216x^{18} -540x^{6} - \\frac{450}{x^{6}} -\\frac{125}{x^{18}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(216x^{18} - -540x^{6} + \\frac{450}{x^{6}} - -\\frac{125}{x^{18}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(216x^{18} -540x^{6} + \\frac{450}{x^{6}} -\\frac{125}{x^{18}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(216x^{18} + -540x^{6} + \\frac{450}{x^{6}} + -\\frac{125}{x^{18}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 6x^{6}, \\quad B = \\frac{5}{x^{6}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(6x^{6} - \\frac{5}{x^{6}}\\right)^3 = (6x^{6})^3 - 3(6x^{6})^2\\left(\\frac{5}{x^{6}}\\right) + 3(6x^{6})\\left(\\frac{5}{x^{6}}\\right)^2 - \\left(\\frac{5}{x^{6}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 216x^{18} -540x^{6} + \\frac{450}{x^{6}} -\\frac{125}{x^{18}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q16",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(7x^{7} - \\frac{6}{x^{7}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(343x^{21} -882x^{7} - \\frac{756}{x^{7}} -\\frac{216}{x^{21}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(343x^{21} + -882x^{7} + \\frac{756}{x^{7}} + -\\frac{216}{x^{21}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(343x^{21} - -882x^{7} + \\frac{756}{x^{7}} - -\\frac{216}{x^{21}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(343x^{21} -882x^{7} + \\frac{756}{x^{7}} -\\frac{216}{x^{21}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 7x^{7}, \\quad B = \\frac{6}{x^{7}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(7x^{7} - \\frac{6}{x^{7}}\\right)^3 = (7x^{7})^3 - 3(7x^{7})^2\\left(\\frac{6}{x^{7}}\\right) + 3(7x^{7})\\left(\\frac{6}{x^{7}}\\right)^2 - \\left(\\frac{6}{x^{7}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 343x^{21} -882x^{7} + \\frac{756}{x^{7}} -\\frac{216}{x^{21}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q17",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(8x^{8} - \\frac{7}{x^{8}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(512x^{24} + -1344x^{8} + \\frac{1176}{x^{8}} + -\\frac{343}{x^{24}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(512x^{24} -1344x^{8} - \\frac{1176}{x^{8}} -\\frac{343}{x^{24}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(512x^{24} -1344x^{8} + \\frac{1176}{x^{8}} -\\frac{343}{x^{24}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(512x^{24} - -1344x^{8} + \\frac{1176}{x^{8}} - -\\frac{343}{x^{24}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 8x^{8}, \\quad B = \\frac{7}{x^{8}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(8x^{8} - \\frac{7}{x^{8}}\\right)^3 = (8x^{8})^3 - 3(8x^{8})^2\\left(\\frac{7}{x^{8}}\\right) + 3(8x^{8})\\left(\\frac{7}{x^{8}}\\right)^2 - \\left(\\frac{7}{x^{8}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 512x^{24} -1344x^{8} + \\frac{1176}{x^{8}} -\\frac{343}{x^{24}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q18",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(9x^{9} - \\frac{8}{x^{9}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(729x^{27} + -1944x^{9} + \\frac{1728}{x^{9}} + -\\frac{512}{x^{27}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(729x^{27} -1944x^{9} - \\frac{1728}{x^{9}} -\\frac{512}{x^{27}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(729x^{27} -1944x^{9} + \\frac{1728}{x^{9}} -\\frac{512}{x^{27}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(729x^{27} - -1944x^{9} + \\frac{1728}{x^{9}} - -\\frac{512}{x^{27}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 9x^{9}, \\quad B = \\frac{8}{x^{9}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(9x^{9} - \\frac{8}{x^{9}}\\right)^3 = (9x^{9})^3 - 3(9x^{9})^2\\left(\\frac{8}{x^{9}}\\right) + 3(9x^{9})\\left(\\frac{8}{x^{9}}\\right)^2 - \\left(\\frac{8}{x^{9}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 729x^{27} -1944x^{9} + \\frac{1728}{x^{9}} -\\frac{512}{x^{27}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q19",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(10x^{10} - \\frac{9}{x^{10}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(1000x^{30} + -2700x^{10} + \\frac{2430}{x^{10}} + -\\frac{729}{x^{30}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1000x^{30} -2700x^{10} + \\frac{2430}{x^{10}} -\\frac{729}{x^{30}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1000x^{30} - -2700x^{10} + \\frac{2430}{x^{10}} - -\\frac{729}{x^{30}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1000x^{30} -2700x^{10} - \\frac{2430}{x^{10}} -\\frac{729}{x^{30}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 10x^{10}, \\quad B = \\frac{9}{x^{10}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(10x^{10} - \\frac{9}{x^{10}}\\right)^3 = (10x^{10})^3 - 3(10x^{10})^2\\left(\\frac{9}{x^{10}}\\right) + 3(10x^{10})\\left(\\frac{9}{x^{10}}\\right)^2 - \\left(\\frac{9}{x^{10}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 1000x^{30} -2700x^{10} + \\frac{2430}{x^{10}} -\\frac{729}{x^{30}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q20",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the binomial: \\(\\left(11x^{11} - \\frac{10}{x^{11}}\\right)^3\\)",
+    "options": [
+      {
+        "text": "\\(1331x^{33} + -3630x^{11} + \\frac{3300}{x^{11}} + -\\frac{1000}{x^{33}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1331x^{33} -3630x^{11} + \\frac{3300}{x^{11}} -\\frac{1000}{x^{33}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1331x^{33} -3630x^{11} - \\frac{3300}{x^{11}} -\\frac{1000}{x^{33}}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1331x^{33} - -3630x^{11} + \\frac{3300}{x^{11}} - -\\frac{1000}{x^{33}}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
+        "workingOut": "\\(A = 11x^{11}, \\quad B = \\frac{10}{x^{11}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the terms into the cubic formula.",
+        "workingOut": "\\(\\left(11x^{11} - \\frac{10}{x^{11}}\\right)^3 = (11x^{11})^3 - 3(11x^{11})^2\\left(\\frac{10}{x^{11}}\\right) + 3(11x^{11})\\left(\\frac{10}{x^{11}}\\right)^2 - \\left(\\frac{10}{x^{11}}\\right)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power and product coefficients to find the final expanded form.",
+        "workingOut": "\\(= 1331x^{33} -3630x^{11} + \\frac{3300}{x^{11}} -\\frac{1000}{x^{33}}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q21",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 3x + 2)(x^2 - 3x + 2)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + (-5)x^2 + 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - (-5)x^2 - 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (13)x^2 + 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-5)x^2 - 4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 3x + 2)(x^2 - 3x + 2) = [(x^2 + 2) + 3x][(x^2 + 2) - 3x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 2)^2 - (3x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 4x^2 + 4) - 9x^2 = x^4 + (-5)x^2 + 4\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q22",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 4x + 3)(x^2 - 4x + 3)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + (-10)x^2 - 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - (-10)x^2 - 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (22)x^2 + 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-10)x^2 + 9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 4x + 3)(x^2 - 4x + 3) = [(x^2 + 3) + 4x][(x^2 + 3) - 4x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 3)^2 - (4x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 6x^2 + 9) - 16x^2 = x^4 + (-10)x^2 + 9\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q23",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 5x + 4)(x^2 - 5x + 4)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + (-17)x^2 + 16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - (-17)x^2 - 16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-17)x^2 - 16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (33)x^2 + 16\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 5x + 4)(x^2 - 5x + 4) = [(x^2 + 4) + 5x][(x^2 + 4) - 5x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 4)^2 - (5x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 8x^2 + 16) - 25x^2 = x^4 + (-17)x^2 + 16\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q24",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 6x + 5)(x^2 - 6x + 5)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + (-26)x^2 + 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - (-26)x^2 - 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-26)x^2 - 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (46)x^2 + 25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 6x + 5)(x^2 - 6x + 5) = [(x^2 + 5) + 6x][(x^2 + 5) - 6x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 5)^2 - (6x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 10x^2 + 25) - 36x^2 = x^4 + (-26)x^2 + 25\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q25",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 7x + 6)(x^2 - 7x + 6)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + (61)x^2 + 36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-37)x^2 - 36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - (-37)x^2 - 36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-37)x^2 + 36\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 7x + 6)(x^2 - 7x + 6) = [(x^2 + 6) + 7x][(x^2 + 6) - 7x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 6)^2 - (7x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 12x^2 + 36) - 49x^2 = x^4 + (-37)x^2 + 36\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q26",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 8x + 7)(x^2 - 8x + 7)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + (-50)x^2 - 49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-50)x^2 + 49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - (-50)x^2 - 49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (78)x^2 + 49\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 8x + 7)(x^2 - 8x + 7) = [(x^2 + 7) + 8x][(x^2 + 7) - 8x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 7)^2 - (8x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 14x^2 + 49) - 64x^2 = x^4 + (-50)x^2 + 49\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q27",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 9x + 8)(x^2 - 9x + 8)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + (-65)x^2 - 64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-65)x^2 + 64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - (-65)x^2 - 64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (97)x^2 + 64\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 9x + 8)(x^2 - 9x + 8) = [(x^2 + 8) + 9x][(x^2 + 8) - 9x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 8)^2 - (9x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 16x^2 + 64) - 81x^2 = x^4 + (-65)x^2 + 64\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q28",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 10x + 9)(x^2 - 10x + 9)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - (-82)x^2 - 81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-82)x^2 - 81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-82)x^2 + 81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (118)x^2 + 81\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 10x + 9)(x^2 - 10x + 9) = [(x^2 + 9) + 10x][(x^2 + 9) - 10x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 9)^2 - (10x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 18x^2 + 81) - 100x^2 = x^4 + (-82)x^2 + 81\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q29",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 11x + 10)(x^2 - 11x + 10)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + (-101)x^2 + 100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-101)x^2 - 100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (141)x^2 + 100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - (-101)x^2 - 100\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 11x + 10)(x^2 - 11x + 10) = [(x^2 + 10) + 11x][(x^2 + 10) - 11x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 10)^2 - (11x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 20x^2 + 100) - 121x^2 = x^4 + (-101)x^2 + 100\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q30",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((x^2 + 12x + 11)(x^2 - 12x + 11)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + (166)x^2 + 121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-122)x^2 - 121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - (-122)x^2 - 121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + (-122)x^2 + 121\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Regroup the terms to form a difference of squares pattern: \\([(x^2 + B) + Ax][(x^2 + B) - Ax]\\).",
+        "workingOut": "\\((x^2 + 12x + 11)(x^2 - 12x + 11) = [(x^2 + 11) + 12x][(x^2 + 11) - 12x]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the difference of squares identity: \\((A + B)(A - B) = A^2 - B^2\\).",
+        "workingOut": "\\(= (x^2 + 11)^2 - (12x)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and combine like terms of x^2.",
+        "workingOut": "\\(= (x^4 + 22x^2 + 121) - 144x^2 = x^4 + (-122)x^2 + 121\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q31",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((2x^2 + 1y^2)(4x^4 - 2x^2y^2 + 1y^4)\\)",
+    "options": [
+      {
+        "text": "\\(8x^6 + 1y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^6 - 1y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^4 + 1y^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^6 + 34x^4y^2 + 32x^2y^4 + 1y^6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 2x^2, \\quad B = 1y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((2x^2 + 1y^2)((2x^2)^2 - (2x^2)(1y^2) + (1y^2)^2) = (2x^2)^3 + (1y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 8x^6 + 1y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q32",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((3x^2 + 2y^2)(9x^4 - 6x^2y^2 + 4y^4)\\)",
+    "options": [
+      {
+        "text": "\\(9x^4 + 4y^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27x^6 + 318x^4y^2 + 312x^2y^4 + 8y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27x^6 + 8y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27x^6 - 8y^6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 3x^2, \\quad B = 2y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((3x^2 + 2y^2)((3x^2)^2 - (3x^2)(2y^2) + (2y^2)^2) = (3x^2)^3 + (2y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 27x^6 + 8y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q33",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((4x^2 + 3y^2)(16x^4 - 12x^2y^2 + 9y^4)\\)",
+    "options": [
+      {
+        "text": "\\(64x^6 + 348x^4y^2 + 336x^2y^4 + 27y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^6 - 27y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^6 + 27y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16x^4 + 9y^4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 4x^2, \\quad B = 3y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((4x^2 + 3y^2)((4x^2)^2 - (4x^2)(3y^2) + (3y^2)^2) = (4x^2)^3 + (3y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 64x^6 + 27y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((5x^2 + 4y^2)(25x^4 - 20x^2y^2 + 16y^4)\\)",
+    "options": [
+      {
+        "text": "\\(125x^6 + 64y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125x^6 + 3100x^4y^2 + 380x^2y^4 + 64y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125x^6 - 64y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25x^4 + 16y^4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 5x^2, \\quad B = 4y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((5x^2 + 4y^2)((5x^2)^2 - (5x^2)(4y^2) + (4y^2)^2) = (5x^2)^3 + (4y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 125x^6 + 64y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q35",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((6x^2 + 5y^2)(36x^4 - 30x^2y^2 + 25y^4)\\)",
+    "options": [
+      {
+        "text": "\\(216x^6 - 125y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36x^4 + 25y^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(216x^6 + 3180x^4y^2 + 3150x^2y^4 + 125y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(216x^6 + 125y^6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 6x^2, \\quad B = 5y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((6x^2 + 5y^2)((6x^2)^2 - (6x^2)(5y^2) + (5y^2)^2) = (6x^2)^3 + (5y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 216x^6 + 125y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q36",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((7x^2 + 6y^2)(49x^4 - 42x^2y^2 + 36y^4)\\)",
+    "options": [
+      {
+        "text": "\\(343x^6 + 3294x^4y^2 + 3252x^2y^4 + 216y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49x^4 + 36y^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(343x^6 + 216y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(343x^6 - 216y^6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 7x^2, \\quad B = 6y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((7x^2 + 6y^2)((7x^2)^2 - (7x^2)(6y^2) + (6y^2)^2) = (7x^2)^3 + (6y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 343x^6 + 216y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q37",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((8x^2 + 7y^2)(64x^4 - 56x^2y^2 + 49y^4)\\)",
+    "options": [
+      {
+        "text": "\\(512x^6 + 3448x^4y^2 + 3392x^2y^4 + 343y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(512x^6 - 343y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^4 + 49y^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(512x^6 + 343y^6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 8x^2, \\quad B = 7y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((8x^2 + 7y^2)((8x^2)^2 - (8x^2)(7y^2) + (7y^2)^2) = (8x^2)^3 + (7y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 512x^6 + 343y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q38",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((9x^2 + 8y^2)(81x^4 - 72x^2y^2 + 64y^4)\\)",
+    "options": [
+      {
+        "text": "\\(729x^6 + 3648x^4y^2 + 3576x^2y^4 + 512y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(729x^6 - 512y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81x^4 + 64y^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(729x^6 + 512y^6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 9x^2, \\quad B = 8y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((9x^2 + 8y^2)((9x^2)^2 - (9x^2)(8y^2) + (8y^2)^2) = (9x^2)^3 + (8y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 729x^6 + 512y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q39",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((10x^2 + 9y^2)(100x^4 - 90x^2y^2 + 81y^4)\\)",
+    "options": [
+      {
+        "text": "\\(100x^4 + 81y^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1000x^6 - 729y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1000x^6 + 729y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1000x^6 + 3900x^4y^2 + 3810x^2y^4 + 729y^6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 10x^2, \\quad B = 9y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((10x^2 + 9y^2)((10x^2)^2 - (10x^2)(9y^2) + (9y^2)^2) = (10x^2)^3 + (9y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 1000x^6 + 729y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q40",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify: \\((11x^2 + 10y^2)(121x^4 - 110x^2y^2 + 100y^4)\\)",
+    "options": [
+      {
+        "text": "\\(121x^4 + 100y^4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1331x^6 + 31210x^4y^2 + 31100x^2y^4 + 1000y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1331x^6 - 1000y^6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1331x^6 + 1000y^6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
+        "workingOut": "\\(A = 11x^2, \\quad B = 10y^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sum of cubes identity directly.",
+        "workingOut": "\\((11x^2 + 10y^2)((11x^2)^2 - (11x^2)(10y^2) + (10y^2)^2) = (11x^2)^3 + (10y^2)^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the power exponents.",
+        "workingOut": "\\(= 1331x^6 + 1000y^6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q41",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 1)(x - 2)(x - 3)(x - 4)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 10x^3 - 35x^2 - 50x + 24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 10x^3 + 35x^2 - 50x - 24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 10x^3 + 35x^2 + 50x + 24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 10x^3 + 35x^2 - 50x + 24\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 5x + 4)(x^2 - 5x + 6)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 4)(u + 6) = u^2 + 10u + 24\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 5x)^2 + 10(x^2 - 5x) + 24\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 10x^3 + 25x^2) + (10x^2 - 50x) + 24 = x^4 - 10x^3 + 35x^2 - 50x + 24\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q42",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 2)(x - 4)(x - 6)(x - 8)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 20x^3 - 140x^2 - 400x + 384\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 20x^3 + 140x^2 + 400x + 384\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 20x^3 + 140x^2 - 400x + 384\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 20x^3 + 140x^2 - 400x - 384\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 10x + 16)(x^2 - 10x + 24)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 16)(u + 24) = u^2 + 40u + 384\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 10x)^2 + 40(x^2 - 10x) + 384\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 20x^3 + 100x^2) + (40x^2 - 400x) + 384 = x^4 - 20x^3 + 140x^2 - 400x + 384\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q43",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 3)(x - 6)(x - 9)(x - 12)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 30x^3 + 315x^2 - 1350x - 1944\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 30x^3 + 315x^2 + 1350x + 1944\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 30x^3 - 315x^2 - 1350x + 1944\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 30x^3 + 315x^2 - 1350x + 1944\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 15x + 36)(x^2 - 15x + 54)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 36)(u + 54) = u^2 + 90u + 1944\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 15x)^2 + 90(x^2 - 15x) + 1944\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 30x^3 + 225x^2) + (90x^2 - 1350x) + 1944 = x^4 - 30x^3 + 315x^2 - 1350x + 1944\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q44",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 4)(x - 8)(x - 12)(x - 16)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 40x^3 + 560x^2 - 3200x - 6144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 40x^3 + 560x^2 - 3200x + 6144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 40x^3 + 560x^2 + 3200x + 6144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 40x^3 - 560x^2 - 3200x + 6144\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 20x + 64)(x^2 - 20x + 96)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 64)(u + 96) = u^2 + 160u + 6144\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 20x)^2 + 160(x^2 - 20x) + 6144\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 40x^3 + 400x^2) + (160x^2 - 3200x) + 6144 = x^4 - 40x^3 + 560x^2 - 3200x + 6144\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q45",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 5)(x - 10)(x - 15)(x - 20)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 50x^3 + 875x^2 - 6250x - 15000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 50x^3 + 875x^2 + 6250x + 15000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 50x^3 + 875x^2 - 6250x + 15000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 50x^3 - 875x^2 - 6250x + 15000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 25x + 100)(x^2 - 25x + 150)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 100)(u + 150) = u^2 + 250u + 15000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 25x)^2 + 250(x^2 - 25x) + 15000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 50x^3 + 625x^2) + (250x^2 - 6250x) + 15000 = x^4 - 50x^3 + 875x^2 - 6250x + 15000\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q46",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 6)(x - 12)(x - 18)(x - 24)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + 60x^3 + 1260x^2 + 10800x + 31104\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 60x^3 - 1260x^2 - 10800x + 31104\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 60x^3 + 1260x^2 - 10800x + 31104\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 60x^3 + 1260x^2 - 10800x - 31104\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 30x + 144)(x^2 - 30x + 216)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 144)(u + 216) = u^2 + 360u + 31104\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 30x)^2 + 360(x^2 - 30x) + 31104\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 60x^3 + 900x^2) + (360x^2 - 10800x) + 31104 = x^4 - 60x^3 + 1260x^2 - 10800x + 31104\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q47",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 7)(x - 14)(x - 21)(x - 28)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 70x^3 - 1715x^2 - 17150x + 57624\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 70x^3 + 1715x^2 - 17150x + 57624\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 70x^3 + 1715x^2 + 17150x + 57624\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 70x^3 + 1715x^2 - 17150x - 57624\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 35x + 196)(x^2 - 35x + 294)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 196)(u + 294) = u^2 + 490u + 57624\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 35x)^2 + 490(x^2 - 35x) + 57624\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 70x^3 + 1225x^2) + (490x^2 - 17150x) + 57624 = x^4 - 70x^3 + 1715x^2 - 17150x + 57624\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q48",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 8)(x - 16)(x - 24)(x - 32)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 80x^3 + 2240x^2 - 25600x - 98304\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 80x^3 - 2240x^2 - 25600x + 98304\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 80x^3 + 2240x^2 + 25600x + 98304\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 80x^3 + 2240x^2 - 25600x + 98304\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 40x + 256)(x^2 - 40x + 384)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 256)(u + 384) = u^2 + 640u + 98304\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 40x)^2 + 640(x^2 - 40x) + 98304\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 80x^3 + 1600x^2) + (640x^2 - 25600x) + 98304 = x^4 - 80x^3 + 2240x^2 - 25600x + 98304\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q49",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 9)(x - 18)(x - 27)(x - 36)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + 90x^3 + 2835x^2 + 36450x + 157464\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 90x^3 + 2835x^2 - 36450x + 157464\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 90x^3 - 2835x^2 - 36450x + 157464\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 90x^3 + 2835x^2 - 36450x - 157464\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 45x + 324)(x^2 - 45x + 486)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 324)(u + 486) = u^2 + 810u + 157464\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 45x)^2 + 810(x^2 - 45x) + 157464\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 90x^3 + 2025x^2) + (810x^2 - 36450x) + 157464 = x^4 - 90x^3 + 2835x^2 - 36450x + 157464\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q50",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the product of four linear factors: \\((x - 10)(x - 20)(x - 30)(x - 40)\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + 100x^3 + 3500x^2 + 50000x + 240000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 100x^3 + 3500x^2 - 50000x + 240000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 100x^3 + 3500x^2 - 50000x - 240000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 100x^3 - 3500x^2 - 50000x + 240000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Group the factors in pairs that yield a common linear coefficient: \\([(x - k)(x - 4k)][(x - 2k)(x - 3k)]\\).",
+        "workingOut": "\\(= (x^2 - 50x + 400)(x^2 - 50x + 600)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute a dummy variable u = x^2 - 5kx to simplify the product.",
+        "workingOut": "\\(= (u + 400)(u + 600) = u^2 + 1000u + 240000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back u = x^2 - 5kx and expand the terms.",
+        "workingOut": "\\(= (x^2 - 50x)^2 + 1000(x^2 - 50x) + 240000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square and group like terms.",
+        "workingOut": "\\(= (x^4 - 100x^3 + 2500x^2) + (1000x^2 - 50000x) + 240000 = x^4 - 100x^3 + 3500x^2 - 50000x + 240000\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q51",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 2)^3 - (x - 2)^3\\)",
+    "options": [
+      {
+        "text": "\\(2x^3 + 12x^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12x^2 + 16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12x^2 - 16\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 2)^3 = x^3 + 3(2)x^2 + 3(2^2)x + 2^3 = x^3 + 6x^2 + 12x + 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 2)^3 = x^3 - 3(2)x^2 + 3(2^2)x - 2^3 = x^3 - 6x^2 + 12x - 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 2)^3 - (x - 2)^3 = (x^3 - x^3) + (6 - (-6))x^2 + (12 - 12)x + (8 - (-8))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 12x^2 + 16\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q52",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 3)^3 - (x - 3)^3\\)",
+    "options": [
+      {
+        "text": "\\(18x^2 + 54\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18x^2 - 54\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 18x^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 54\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 3)^3 = x^3 + 3(3)x^2 + 3(3^2)x + 3^3 = x^3 + 9x^2 + 27x + 27\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 3)^3 = x^3 - 3(3)x^2 + 3(3^2)x - 3^3 = x^3 - 9x^2 + 27x - 27\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 3)^3 - (x - 3)^3 = (x^3 - x^3) + (9 - (-9))x^2 + (27 - 27)x + (27 - (-27))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 18x^2 + 54\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q53",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 4)^3 - (x - 4)^3\\)",
+    "options": [
+      {
+        "text": "\\(2x^3 + 24x^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 128\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24x^2 + 128\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24x^2 - 128\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 4)^3 = x^3 + 3(4)x^2 + 3(4^2)x + 4^3 = x^3 + 12x^2 + 48x + 64\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 4)^3 = x^3 - 3(4)x^2 + 3(4^2)x - 4^3 = x^3 - 12x^2 + 48x - 64\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 4)^3 - (x - 4)^3 = (x^3 - x^3) + (12 - (-12))x^2 + (48 - 48)x + (64 - (-64))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 24x^2 + 128\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q54",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 5)^3 - (x - 5)^3\\)",
+    "options": [
+      {
+        "text": "\\(30x^2 - 250\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 250\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 30x^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30x^2 + 250\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 5)^3 = x^3 + 3(5)x^2 + 3(5^2)x + 5^3 = x^3 + 15x^2 + 75x + 125\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 5)^3 = x^3 - 3(5)x^2 + 3(5^2)x - 5^3 = x^3 - 15x^2 + 75x - 125\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 5)^3 - (x - 5)^3 = (x^3 - x^3) + (15 - (-15))x^2 + (75 - 75)x + (125 - (-125))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 30x^2 + 250\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q55",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 6)^3 - (x - 6)^3\\)",
+    "options": [
+      {
+        "text": "\\(36x^2 - 432\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36x^2 + 432\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 432\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 36x^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 6)^3 = x^3 + 3(6)x^2 + 3(6^2)x + 6^3 = x^3 + 18x^2 + 108x + 216\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 6)^3 = x^3 - 3(6)x^2 + 3(6^2)x - 6^3 = x^3 - 18x^2 + 108x - 216\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 6)^3 - (x - 6)^3 = (x^3 - x^3) + (18 - (-18))x^2 + (108 - 108)x + (216 - (-216))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 36x^2 + 432\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q56",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 7)^3 - (x - 7)^3\\)",
+    "options": [
+      {
+        "text": "\\(2x^3 + 42x^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42x^2 + 686\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42x^2 - 686\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 686\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 7)^3 = x^3 + 3(7)x^2 + 3(7^2)x + 7^3 = x^3 + 21x^2 + 147x + 343\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 7)^3 = x^3 - 3(7)x^2 + 3(7^2)x - 7^3 = x^3 - 21x^2 + 147x - 343\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 7)^3 - (x - 7)^3 = (x^3 - x^3) + (21 - (-21))x^2 + (147 - 147)x + (343 - (-343))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 42x^2 + 686\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q57",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 8)^3 - (x - 8)^3\\)",
+    "options": [
+      {
+        "text": "\\(2x^3 + 1024\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48x^2 - 1024\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48x^2 + 1024\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 48x^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 8)^3 = x^3 + 3(8)x^2 + 3(8^2)x + 8^3 = x^3 + 24x^2 + 192x + 512\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 8)^3 = x^3 - 3(8)x^2 + 3(8^2)x - 8^3 = x^3 - 24x^2 + 192x - 512\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 8)^3 - (x - 8)^3 = (x^3 - x^3) + (24 - (-24))x^2 + (192 - 192)x + (512 - (-512))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 48x^2 + 1024\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q58",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 9)^3 - (x - 9)^3\\)",
+    "options": [
+      {
+        "text": "\\(2x^3 + 54x^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54x^2 - 1458\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 1458\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54x^2 + 1458\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 9)^3 = x^3 + 3(9)x^2 + 3(9^2)x + 9^3 = x^3 + 27x^2 + 243x + 729\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 9)^3 = x^3 - 3(9)x^2 + 3(9^2)x - 9^3 = x^3 - 27x^2 + 243x - 729\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 9)^3 - (x - 9)^3 = (x^3 - x^3) + (27 - (-27))x^2 + (243 - 243)x + (729 - (-729))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 54x^2 + 1458\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q59",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 10)^3 - (x - 10)^3\\)",
+    "options": [
+      {
+        "text": "\\(60x^2 - 2000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 2000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 60x^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60x^2 + 2000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 10)^3 = x^3 + 3(10)x^2 + 3(10^2)x + 10^3 = x^3 + 30x^2 + 300x + 1000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 10)^3 = x^3 - 3(10)x^2 + 3(10^2)x - 10^3 = x^3 - 30x^2 + 300x - 1000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 10)^3 - (x - 10)^3 = (x^3 - x^3) + (30 - (-30))x^2 + (300 - 300)x + (1000 - (-1000))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 60x^2 + 2000\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q60",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Simplify the symmetric cubic difference: \\((x + 11)^3 - (x - 11)^3\\)",
+    "options": [
+      {
+        "text": "\\(66x^2 + 2662\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 2662\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(66x^2 - 2662\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^3 + 66x^2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first cubic binomial term.",
+        "workingOut": "\\((x + 11)^3 = x^3 + 3(11)x^2 + 3(11^2)x + 11^3 = x^3 + 33x^2 + 363x + 1331\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the second cubic binomial term.",
+        "workingOut": "\\((x - 11)^3 = x^3 - 3(11)x^2 + 3(11^2)x - 11^3 = x^3 - 33x^2 + 363x - 1331\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the second expanded polynomial from the first.",
+        "workingOut": "\\((x + 11)^3 - (x - 11)^3 = (x^3 - x^3) + (33 - (-33))x^2 + (363 - 363)x + (1331 - (-1331))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find the final reduced polynomial.",
+        "workingOut": "\\(= 66x^2 + 2662\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q61",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{2}x - \\frac{3}{\\sqrt{2}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(2x^2 - 6 - \\frac{9}{2x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^2 - 6 + \\frac{9}{2x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^2 - 3 + \\frac{9}{2x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x^2 + 6 + \\frac{9}{2x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{2}x, \\quad B = \\frac{3}{\\sqrt{2}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{2}x - \\frac{3}{\\sqrt{2}x}\\right)^2 = (\\sqrt{2}x)^2 - 2(\\sqrt{2}x)\\left(\\frac{3}{\\sqrt{2}x}\\right) + \\left(\\frac{3}{\\sqrt{2}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 2x^2 - 6 + \\frac{9}{2x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q62",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{3}x - \\frac{4}{\\sqrt{3}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(3x^2 - 8 + \\frac{16}{3x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3x^2 + 8 + \\frac{16}{3x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3x^2 - 4 + \\frac{16}{3x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3x^2 - 8 - \\frac{16}{3x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{3}x, \\quad B = \\frac{4}{\\sqrt{3}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{3}x - \\frac{4}{\\sqrt{3}x}\\right)^2 = (\\sqrt{3}x)^2 - 2(\\sqrt{3}x)\\left(\\frac{4}{\\sqrt{3}x}\\right) + \\left(\\frac{4}{\\sqrt{3}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 3x^2 - 8 + \\frac{16}{3x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q63",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{4}x - \\frac{5}{\\sqrt{4}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(4x^2 + 10 + \\frac{25}{4x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 - 5 + \\frac{25}{4x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 - 10 + \\frac{25}{4x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^2 - 10 - \\frac{25}{4x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{4}x, \\quad B = \\frac{5}{\\sqrt{4}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{4}x - \\frac{5}{\\sqrt{4}x}\\right)^2 = (\\sqrt{4}x)^2 - 2(\\sqrt{4}x)\\left(\\frac{5}{\\sqrt{4}x}\\right) + \\left(\\frac{5}{\\sqrt{4}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 4x^2 - 10 + \\frac{25}{4x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q64",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{5}x - \\frac{6}{\\sqrt{5}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(5x^2 - 12 + \\frac{36}{5x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5x^2 - 12 - \\frac{36}{5x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5x^2 + 12 + \\frac{36}{5x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5x^2 - 6 + \\frac{36}{5x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{5}x, \\quad B = \\frac{6}{\\sqrt{5}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{5}x - \\frac{6}{\\sqrt{5}x}\\right)^2 = (\\sqrt{5}x)^2 - 2(\\sqrt{5}x)\\left(\\frac{6}{\\sqrt{5}x}\\right) + \\left(\\frac{6}{\\sqrt{5}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 5x^2 - 12 + \\frac{36}{5x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q65",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{6}x - \\frac{7}{\\sqrt{6}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(6x^2 - 7 + \\frac{49}{6x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6x^2 + 14 + \\frac{49}{6x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6x^2 - 14 + \\frac{49}{6x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6x^2 - 14 - \\frac{49}{6x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{6}x, \\quad B = \\frac{7}{\\sqrt{6}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{6}x - \\frac{7}{\\sqrt{6}x}\\right)^2 = (\\sqrt{6}x)^2 - 2(\\sqrt{6}x)\\left(\\frac{7}{\\sqrt{6}x}\\right) + \\left(\\frac{7}{\\sqrt{6}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 6x^2 - 14 + \\frac{49}{6x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q66",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{7}x - \\frac{8}{\\sqrt{7}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(7x^2 - 16 - \\frac{64}{7x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7x^2 - 16 + \\frac{64}{7x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7x^2 - 8 + \\frac{64}{7x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7x^2 + 16 + \\frac{64}{7x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{7}x, \\quad B = \\frac{8}{\\sqrt{7}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{7}x - \\frac{8}{\\sqrt{7}x}\\right)^2 = (\\sqrt{7}x)^2 - 2(\\sqrt{7}x)\\left(\\frac{8}{\\sqrt{7}x}\\right) + \\left(\\frac{8}{\\sqrt{7}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 7x^2 - 16 + \\frac{64}{7x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q67",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{8}x - \\frac{9}{\\sqrt{8}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(8x^2 - 9 + \\frac{81}{8x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^2 + 18 + \\frac{81}{8x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^2 - 18 - \\frac{81}{8x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8x^2 - 18 + \\frac{81}{8x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{8}x, \\quad B = \\frac{9}{\\sqrt{8}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{8}x - \\frac{9}{\\sqrt{8}x}\\right)^2 = (\\sqrt{8}x)^2 - 2(\\sqrt{8}x)\\left(\\frac{9}{\\sqrt{8}x}\\right) + \\left(\\frac{9}{\\sqrt{8}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 8x^2 - 18 + \\frac{81}{8x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q68",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{9}x - \\frac{10}{\\sqrt{9}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(9x^2 + 20 + \\frac{100}{9x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^2 - 20 - \\frac{100}{9x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^2 - 20 + \\frac{100}{9x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^2 - 10 + \\frac{100}{9x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{9}x, \\quad B = \\frac{10}{\\sqrt{9}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{9}x - \\frac{10}{\\sqrt{9}x}\\right)^2 = (\\sqrt{9}x)^2 - 2(\\sqrt{9}x)\\left(\\frac{10}{\\sqrt{9}x}\\right) + \\left(\\frac{10}{\\sqrt{9}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 9x^2 - 20 + \\frac{100}{9x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q69",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{10}x - \\frac{11}{\\sqrt{10}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(10x^2 - 22 + \\frac{121}{10x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10x^2 - 11 + \\frac{121}{10x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10x^2 + 22 + \\frac{121}{10x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10x^2 - 22 - \\frac{121}{10x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{10}x, \\quad B = \\frac{11}{\\sqrt{10}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{10}x - \\frac{11}{\\sqrt{10}x}\\right)^2 = (\\sqrt{10}x)^2 - 2(\\sqrt{10}x)\\left(\\frac{11}{\\sqrt{10}x}\\right) + \\left(\\frac{11}{\\sqrt{10}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 10x^2 - 22 + \\frac{121}{10x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q70",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{11}x - \\frac{12}{\\sqrt{11}x}\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(11x^2 - 12 + \\frac{144}{11x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11x^2 + 24 + \\frac{144}{11x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11x^2 - 24 - \\frac{144}{11x^2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11x^2 - 24 + \\frac{144}{11x^2}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+        "workingOut": "\\(A = \\sqrt{11}x, \\quad B = \\frac{12}{\\sqrt{11}x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the surd terms into the perfect square expression.",
+        "workingOut": "\\(\\left(\\sqrt{11}x - \\frac{12}{\\sqrt{11}x}\\right)^2 = (\\sqrt{11}x)^2 - 2(\\sqrt{11}x)\\left(\\frac{12}{\\sqrt{11}x}\\right) + \\left(\\frac{12}{\\sqrt{11}x}\\right)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the radical products and fractional powers.",
+        "workingOut": "\\(= 11x^2 - 24 + \\frac{144}{11x^2}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q71",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((1x^2 - 2x + 3)^2\\)",
+    "options": [
+      {
+        "text": "\\(1x^4 + 4x^3 + 10x^2 + 12x + 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1x^4 - 4x^3 - 10x^2 - 12x + 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1x^4 - 4x^3 + 10x^2 - 12x + 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1x^4 - 4x^3 + 10x^2 - 12x - 9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((1x^2 - 2x + 3)^2 = (1x^2)^2 + (-2x)^2 + (3)^2 + 2(1x^2)(-2x) + 2(-2x)(3) + 2(3)(1x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 1x^4 + 4x^2 + 9 - 4x^3 - 12x + 6x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 1x^4 - 4x^3 + 10x^2 - 12x + 9\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q72",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((2x^2 - 3x + 4)^2\\)",
+    "options": [
+      {
+        "text": "\\(4x^4 - 12x^3 + 25x^2 - 24x + 16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^4 - 12x^3 - 25x^2 - 24x + 16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^4 - 12x^3 + 25x^2 - 24x - 16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^4 + 12x^3 + 25x^2 + 24x + 16\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((2x^2 - 3x + 4)^2 = (2x^2)^2 + (-3x)^2 + (4)^2 + 2(2x^2)(-3x) + 2(-3x)(4) + 2(4)(2x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 4x^4 + 9x^2 + 16 - 12x^3 - 24x + 16x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 4x^4 - 12x^3 + 25x^2 - 24x + 16\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q73",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((3x^2 - 4x + 5)^2\\)",
+    "options": [
+      {
+        "text": "\\(9x^4 + 24x^3 + 46x^2 + 40x + 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^4 - 24x^3 - 46x^2 - 40x + 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^4 - 24x^3 + 46x^2 - 40x + 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9x^4 - 24x^3 + 46x^2 - 40x - 25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((3x^2 - 4x + 5)^2 = (3x^2)^2 + (-4x)^2 + (5)^2 + 2(3x^2)(-4x) + 2(-4x)(5) + 2(5)(3x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 9x^4 + 16x^2 + 25 - 24x^3 - 40x + 30x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 9x^4 - 24x^3 + 46x^2 - 40x + 25\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q74",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((4x^2 - 5x + 6)^2\\)",
+    "options": [
+      {
+        "text": "\\(16x^4 - 40x^3 - 73x^2 - 60x + 36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16x^4 - 40x^3 + 73x^2 - 60x + 36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16x^4 - 40x^3 + 73x^2 - 60x - 36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16x^4 + 40x^3 + 73x^2 + 60x + 36\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((4x^2 - 5x + 6)^2 = (4x^2)^2 + (-5x)^2 + (6)^2 + 2(4x^2)(-5x) + 2(-5x)(6) + 2(6)(4x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 16x^4 + 25x^2 + 36 - 40x^3 - 60x + 48x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 16x^4 - 40x^3 + 73x^2 - 60x + 36\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q75",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((5x^2 - 6x + 7)^2\\)",
+    "options": [
+      {
+        "text": "\\(25x^4 - 60x^3 + 106x^2 - 84x + 49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25x^4 - 60x^3 - 106x^2 - 84x + 49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25x^4 - 60x^3 + 106x^2 - 84x - 49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25x^4 + 60x^3 + 106x^2 + 84x + 49\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((5x^2 - 6x + 7)^2 = (5x^2)^2 + (-6x)^2 + (7)^2 + 2(5x^2)(-6x) + 2(-6x)(7) + 2(7)(5x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 25x^4 + 36x^2 + 49 - 60x^3 - 84x + 70x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 25x^4 - 60x^3 + 106x^2 - 84x + 49\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q76",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((6x^2 - 7x + 8)^2\\)",
+    "options": [
+      {
+        "text": "\\(36x^4 - 84x^3 - 145x^2 - 112x + 64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36x^4 + 84x^3 + 145x^2 + 112x + 64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36x^4 - 84x^3 + 145x^2 - 112x - 64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36x^4 - 84x^3 + 145x^2 - 112x + 64\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((6x^2 - 7x + 8)^2 = (6x^2)^2 + (-7x)^2 + (8)^2 + 2(6x^2)(-7x) + 2(-7x)(8) + 2(8)(6x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 36x^4 + 49x^2 + 64 - 84x^3 - 112x + 96x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 36x^4 - 84x^3 + 145x^2 - 112x + 64\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q77",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((7x^2 - 8x + 9)^2\\)",
+    "options": [
+      {
+        "text": "\\(49x^4 - 112x^3 + 190x^2 - 144x + 81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49x^4 - 112x^3 - 190x^2 - 144x + 81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49x^4 + 112x^3 + 190x^2 + 144x + 81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49x^4 - 112x^3 + 190x^2 - 144x - 81\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((7x^2 - 8x + 9)^2 = (7x^2)^2 + (-8x)^2 + (9)^2 + 2(7x^2)(-8x) + 2(-8x)(9) + 2(9)(7x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 49x^4 + 64x^2 + 81 - 112x^3 - 144x + 126x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 49x^4 - 112x^3 + 190x^2 - 144x + 81\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q78",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((8x^2 - 9x + 10)^2\\)",
+    "options": [
+      {
+        "text": "\\(64x^4 - 144x^3 - 241x^2 - 180x + 100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^4 - 144x^3 + 241x^2 - 180x - 100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^4 - 144x^3 + 241x^2 - 180x + 100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64x^4 + 144x^3 + 241x^2 + 180x + 100\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((8x^2 - 9x + 10)^2 = (8x^2)^2 + (-9x)^2 + (10)^2 + 2(8x^2)(-9x) + 2(-9x)(10) + 2(10)(8x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 64x^4 + 81x^2 + 100 - 144x^3 - 180x + 160x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 64x^4 - 144x^3 + 241x^2 - 180x + 100\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q79",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((9x^2 - 10x + 11)^2\\)",
+    "options": [
+      {
+        "text": "\\(81x^4 - 180x^3 + 298x^2 - 220x + 121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81x^4 + 180x^3 + 298x^2 + 220x + 121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81x^4 - 180x^3 - 298x^2 - 220x + 121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81x^4 - 180x^3 + 298x^2 - 220x - 121\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((9x^2 - 10x + 11)^2 = (9x^2)^2 + (-10x)^2 + (11)^2 + 2(9x^2)(-10x) + 2(-10x)(11) + 2(11)(9x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 81x^4 + 100x^2 + 121 - 180x^3 - 220x + 198x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 81x^4 - 180x^3 + 298x^2 - 220x + 121\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q80",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the quadratic trinomial square: \\((10x^2 - 11x + 12)^2\\)",
+    "options": [
+      {
+        "text": "\\(100x^4 + 220x^3 + 361x^2 + 264x + 144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100x^4 - 220x^3 + 361x^2 - 264x - 144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100x^4 - 220x^3 + 361x^2 - 264x + 144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100x^4 - 220x^3 - 361x^2 - 264x + 144\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trinomial square expansion identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\).",
+        "workingOut": "\\((10x^2 - 11x + 12)^2 = (10x^2)^2 + (-11x)^2 + (12)^2 + 2(10x^2)(-11x) + 2(-11x)(12) + 2(12)(10x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the squares of each individual term.",
+        "workingOut": "\\(= 100x^4 + 121x^2 + 144 - 220x^3 - 264x + 240x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in descending order.",
+        "workingOut": "\\(= 100x^4 - 220x^3 + 361x^2 - 264x + 144\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q81",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 1)(x + 2)(3x - 4)^2\\)",
+    "options": [
+      {
+        "text": "\\(-36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-26\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 1)(x + 2) = x^2 + (2 - 1)x - 2 = x^2 + 1x - 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((3x - 4)^2 = 9x^2 - 24x + 16\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 2)(9x^2 - 24x + 16)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 16) + (1 \\times -24) + (-2 \\times 9) = 16 + (-24) + (-18) = -26\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q82",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 2)(x + 3)(4x - 5)^2\\)",
+    "options": [
+      {
+        "text": "\\(-91\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-111\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-101\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 2)(x + 3) = x^2 + (3 - 2)x - 6 = x^2 + 1x - 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((4x - 5)^2 = 16x^2 - 40x + 25\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 6)(16x^2 - 40x + 25)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 25) + (1 \\times -40) + (-6 \\times 16) = 25 + (-40) + (-96) = -111\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q83",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 3)(x + 4)(5x - 6)^2\\)",
+    "options": [
+      {
+        "text": "\\(-334\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-294\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-324\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-314\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 3)(x + 4) = x^2 + (4 - 3)x - 12 = x^2 + 1x - 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((5x - 6)^2 = 25x^2 - 60x + 36\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 12)(25x^2 - 60x + 36)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 36) + (1 \\times -60) + (-12 \\times 25) = 36 + (-60) + (-300) = -324\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q84",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 4)(x + 5)(6x - 7)^2\\)",
+    "options": [
+      {
+        "text": "\\(-755\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-765\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-713\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-745\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 4)(x + 5) = x^2 + (5 - 4)x - 20 = x^2 + 1x - 20\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((6x - 7)^2 = 36x^2 - 84x + 49\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 20)(36x^2 - 84x + 49)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 49) + (1 \\times -84) + (-20 \\times 36) = 49 + (-84) + (-720) = -755\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q85",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 5)(x + 6)(7x - 8)^2\\)",
+    "options": [
+      {
+        "text": "\\(-1518\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1462\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1528\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1508\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 5)(x + 6) = x^2 + (6 - 5)x - 30 = x^2 + 1x - 30\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((7x - 8)^2 = 49x^2 - 112x + 64\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 30)(49x^2 - 112x + 64)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 64) + (1 \\times -112) + (-30 \\times 49) = 64 + (-112) + (-1470) = -1518\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q86",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 6)(x + 7)(8x - 9)^2\\)",
+    "options": [
+      {
+        "text": "\\(-2679\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2751\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2761\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2741\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 6)(x + 7) = x^2 + (7 - 6)x - 42 = x^2 + 1x - 42\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((8x - 9)^2 = 64x^2 - 144x + 81\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 42)(64x^2 - 144x + 81)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 81) + (1 \\times -144) + (-42 \\times 64) = 81 + (-144) + (-2688) = -2751\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q87",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 7)(x + 8)(9x - 10)^2\\)",
+    "options": [
+      {
+        "text": "\\(-4606\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4616\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4626\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4526\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 7)(x + 8) = x^2 + (8 - 7)x - 56 = x^2 + 1x - 56\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((9x - 10)^2 = 81x^2 - 180x + 100\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 56)(81x^2 - 180x + 100)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 100) + (1 \\times -180) + (-56 \\times 81) = 100 + (-180) + (-4536) = -4616\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q88",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 8)(x + 9)(10x - 11)^2\\)",
+    "options": [
+      {
+        "text": "\\(-7309\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-7289\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-7299\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-7189\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 8)(x + 9) = x^2 + (9 - 8)x - 72 = x^2 + 1x - 72\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((10x - 11)^2 = 100x^2 - 220x + 121\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 72)(100x^2 - 220x + 121)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 121) + (1 \\times -220) + (-72 \\times 100) = 121 + (-220) + (-7200) = -7299\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q89",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 9)(x + 10)(11x - 12)^2\\)",
+    "options": [
+      {
+        "text": "\\(-11000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-10878\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-11010\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-11020\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 9)(x + 10) = x^2 + (10 - 9)x - 90 = x^2 + 1x - 90\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((11x - 12)^2 = 121x^2 - 264x + 144\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 90)(121x^2 - 264x + 144)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 144) + (1 \\times -264) + (-90 \\times 121) = 144 + (-264) + (-10890) = -11010\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q90",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Without fully expanding the polynomial, find the coefficient of \\(x^2\\) in the product: \\((x - 10)(x + 11)(12x - 13)^2\\)",
+    "options": [
+      {
+        "text": "\\(-15827\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-15983\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-15993\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-15973\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the first two linear factors to form a quadratic expression.",
+        "workingOut": "\\((x - 10)(x + 11) = x^2 + (11 - 10)x - 110 = x^2 + 1x - 110\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the perfect square binomial term.",
+        "workingOut": "\\((12x - 13)^2 = 144x^2 - 312x + 169\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the combinations of terms from both parts that multiply to yield an x^2 term.",
+        "workingOut": "\\(\\text{Part A} \\times \\text{Part B} = (x^2 + 1x - 110)(144x^2 - 312x + 169)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Extract and sum the coefficients of the resulting x^2 terms.",
+        "workingOut": "\\(\\text{Coeff} = (1 \\times 169) + (1 \\times -312) + (-110 \\times 144) = 169 + (-312) + (-15840) = -15983\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q91",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 1)^2 - 2\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + 4x^3 + 2x^2 + -4x + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 4x^3 + 2x^2 - -4x - 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 4x^3 - 2x^2 - -4x + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 4x^3 + 2x^2 - -4x + 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 1)^2 - 2 = (x^2 - 2x + 1) - 2 = x^2 - 2x + (-1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-2x)^2 + (-1)^2 + 2(x^2)(-2x) + 2(-2x)(-1) + 2(-1)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 4x^2 + 1 - 4x^3 - -4x + -2x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 4x^3 + 2x^2 - -4x + 1\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q92",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 2)^2 - 3\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 8x^3 + 18x^2 - 8x - 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 8x^3 + 18x^2 + 8x + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 8x^3 + 18x^2 - 8x + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 8x^3 - 18x^2 - 8x + 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 2)^2 - 3 = (x^2 - 4x + 4) - 3 = x^2 - 4x + (1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-4x)^2 + (1)^2 + 2(x^2)(-4x) + 2(-4x)(1) + 2(1)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 16x^2 + 1 - 8x^3 - 8x + 2x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 8x^3 + 18x^2 - 8x + 1\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q93",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 3)^2 - 4\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + 12x^3 + 46x^2 + 60x + 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 12x^3 - 46x^2 - 60x + 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 12x^3 + 46x^2 - 60x - 25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 12x^3 + 46x^2 - 60x + 25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 3)^2 - 4 = (x^2 - 6x + 9) - 4 = x^2 - 6x + (5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-6x)^2 + (5)^2 + 2(x^2)(-6x) + 2(-6x)(5) + 2(5)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 36x^2 + 25 - 12x^3 - 60x + 10x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 12x^3 + 46x^2 - 60x + 25\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q94",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 4)^2 - 5\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 16x^3 + 86x^2 - 176x + 121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 16x^3 - 86x^2 - 176x + 121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 16x^3 + 86x^2 + 176x + 121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 16x^3 + 86x^2 - 176x - 121\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 4)^2 - 5 = (x^2 - 8x + 16) - 5 = x^2 - 8x + (11)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-8x)^2 + (11)^2 + 2(x^2)(-8x) + 2(-8x)(11) + 2(11)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 64x^2 + 121 - 16x^3 - 176x + 22x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 16x^3 + 86x^2 - 176x + 121\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q95",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 5)^2 - 6\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + 20x^3 + 138x^2 + 380x + 361\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 20x^3 - 138x^2 - 380x + 361\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 20x^3 + 138x^2 - 380x + 361\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 20x^3 + 138x^2 - 380x - 361\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 5)^2 - 6 = (x^2 - 10x + 25) - 6 = x^2 - 10x + (19)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-10x)^2 + (19)^2 + 2(x^2)(-10x) + 2(-10x)(19) + 2(19)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 100x^2 + 361 - 20x^3 - 380x + 38x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 20x^3 + 138x^2 - 380x + 361\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q96",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 6)^2 - 7\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 24x^3 + 202x^2 - 696x + 841\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 24x^3 + 202x^2 + 696x + 841\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 24x^3 - 202x^2 - 696x + 841\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 24x^3 + 202x^2 - 696x - 841\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 6)^2 - 7 = (x^2 - 12x + 36) - 7 = x^2 - 12x + (29)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-12x)^2 + (29)^2 + 2(x^2)(-12x) + 2(-12x)(29) + 2(29)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 144x^2 + 841 - 24x^3 - 696x + 58x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 24x^3 + 202x^2 - 696x + 841\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q97",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 7)^2 - 8\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 28x^3 + 278x^2 - 1148x - 1681\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 28x^3 + 278x^2 + 1148x + 1681\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 28x^3 + 278x^2 - 1148x + 1681\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 28x^3 - 278x^2 - 1148x + 1681\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 7)^2 - 8 = (x^2 - 14x + 49) - 8 = x^2 - 14x + (41)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-14x)^2 + (41)^2 + 2(x^2)(-14x) + 2(-14x)(41) + 2(41)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 196x^2 + 1681 - 28x^3 - 1148x + 82x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 28x^3 + 278x^2 - 1148x + 1681\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q98",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 8)^2 - 9\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 32x^3 - 366x^2 - 1760x + 3025\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 32x^3 + 366x^2 - 1760x + 3025\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 32x^3 + 366x^2 + 1760x + 3025\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 32x^3 + 366x^2 - 1760x - 3025\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 8)^2 - 9 = (x^2 - 16x + 64) - 9 = x^2 - 16x + (55)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-16x)^2 + (55)^2 + 2(x^2)(-16x) + 2(-16x)(55) + 2(55)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 256x^2 + 3025 - 32x^3 - 1760x + 110x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 32x^3 + 366x^2 - 1760x + 3025\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q99",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 9)^2 - 10\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 - 36x^3 + 466x^2 - 2556x - 5041\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 36x^3 - 466x^2 - 2556x + 5041\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 36x^3 + 466x^2 - 2556x + 5041\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 + 36x^3 + 466x^2 + 2556x + 5041\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 9)^2 - 10 = (x^2 - 18x + 81) - 10 = x^2 - 18x + (71)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-18x)^2 + (71)^2 + 2(x^2)(-18x) + 2(-18x)(71) + 2(71)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 324x^2 + 5041 - 36x^3 - 2556x + 142x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 36x^3 + 466x^2 - 2556x + 5041\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11-1a-high-q100",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Algebraic expansion",
+    "question": "Expand and simplify the nested binomial square: \\(\\left((x - 10)^2 - 11\\right)^2\\)",
+    "options": [
+      {
+        "text": "\\(x^4 + 40x^3 + 578x^2 + 3560x + 7921\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 40x^3 + 578x^2 - 3560x + 7921\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 40x^3 - 578x^2 - 3560x + 7921\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^4 - 40x^3 + 578x^2 - 3560x - 7921\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "solutionSteps": [
+      {
+        "explanation": "First, expand the inner perfect square expression.",
+        "workingOut": "\\((x - 10)^2 - 11 = (x^2 - 20x + 100) - 11 = x^2 - 20x + (89)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Treat this as a trinomial square with terms A = x^2, B = -2ax, and C = a^2 - b, and apply the trinomial expansion identity.",
+        "workingOut": "\\(= (x^2)^2 + (-20x)^2 + (89)^2 + 2(x^2)(-20x) + 2(-20x)(89) + 2(89)(x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand each product and power.",
+        "workingOut": "\\(= x^4 + 400x^2 + 7921 - 40x^3 - 3560x + 178x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine like terms of x^2 and arrange the polynomial in standard order.",
+        "workingOut": "\\(= x^4 - 40x^3 + 578x^2 - 3560x + 7921\\)",
+        "graphData": null
+      }
+    ]
   }
 ];

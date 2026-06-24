@@ -566,7 +566,7 @@ export const Y10_CH8E_QUESTIONS = [
     type: "teacher_review",
     difficulty: "medium",
     timeLimit: 90,
-    question: "Complete the proof that, in the figure shown, \\(\\Delta DAE\\) is isosceles.\n\n**Given:** In \\(\\Delta ABC\\), \\(AB = AC\\), \\(D\\) is on the ray from \\(B\\) through \\(A\\), \\(DF \\perp BC\\) and \\(DF\\) intersects \\(AC\\) at \\(E\\).\n**Prove:** \\(\\Delta DAE\\) is isosceles.",
+    question: "Complete the proof that, in the figure shown, \\(\\Delta DAE\\) is isosceles.\n\n<strong>Given:</strong> In \\(\\Delta ABC\\), \\(AB = AC\\), \\(D\\) is on the ray from \\(B\\) through \\(A\\), \\(DF \\perp BC\\) and \\(DF\\) intersects \\(AC\\) at \\(E\\).\n<strong>Prove:</strong> \\(\\Delta DAE\\) is isosceles.",
     a: "See solution",
     solution: "Proof:\n1. Since \\(AB = AC\\), the base angles of \\(\\Delta ABC\\) are equal:\n   \\(\\angle ABC = \\angle ACB = \\theta\\)\n2. In right-angled triangle \\(DFB\\) (with \\(\\angle DFB = 90^\\circ\\)):\n   \\(\\angle BDF = 90^\\circ - \\angle ABC = 90^\\circ - \\theta\\)\n3. In right-angled triangle \\(EFC\\) (with \\(\\angle EFC = 90^\\circ\\)):\n   \\(\\angle FEC = 90^\\circ - \\angle ACB = 90^\\circ - \\theta\\)\n4. Vertically opposite angles are equal, so:\n   \\(\\angle AED = \\angle FEC = 90^\\circ - \\theta\\)\n5. Comparing the angles of \\(\\Delta DAE\\):\n   \\(\\angle ADE = \\angle BDF = 90^\\circ - \\theta\\)\n   \\(\\angle AED = 90^\\circ - \\theta\\)\n   Therefore, \\(\\angle ADE = \\angle AED\\).\n\nSince \\(\\Delta DAE\\) has two equal angles, it is an isosceles triangle with \\(AD = AE\\).",
     t: "Revision",
@@ -574,19 +574,19 @@ export const Y10_CH8E_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "Relate the base angles of the isosceles triangle \\(ABC\\).",
-        workingOut: "\\angle ABC = \\angle ACB = \\theta"
+        workingOut: "\\(\\angle ABC = \\angle ACB = \\theta\\)"
       },
       {
         explanation: "Calculate \\(\\angle BDF\\) in the right-angled triangle \\(DFB\\).",
-        workingOut: "\\angle BDF = 90^\\circ - \\theta"
+        workingOut: "\\(\\angle BDF = 90^\\circ - \\theta\\)"
       },
       {
         explanation: "Calculate \\(\\angle FEC\\) in the right-angled triangle \\(EFC\\) and use vertically opposite angles.",
-        workingOut: "\\angle AED = \\angle FEC = 90^\\circ - \\theta"
+        workingOut: "\\(\\angle AED = \\angle FEC = 90^\\circ - \\theta\\)"
       },
       {
         explanation: "Conclude that \\(\\angle ADE = \\angle AED\\), meaning the triangle is isosceles.",
-        workingOut: "\\angle ADE = \\angle AED = 90^\\circ - \\theta \\implies AD = AE"
+        workingOut: "\\(\\angle ADE = \\angle AED = 90^\\circ - \\theta \\implies AD = AE\\)"
       }
     ],
     graphData: {
@@ -594,11 +594,11 @@ export const Y10_CH8E_QUESTIONS = [
         width: 300,
         points: {
           "B": [0, 0],
-          "C": [6, 0],
-          "A": [3, 4],
-          "D": [4.5, 6],
-          "F": [4.5, 0],
-          "E": [4.5, 2]
+          "C": [12, 0],
+          "A": [6, 9],
+          "D": [8, 12],
+          "F": [8, 0],
+          "E": [8, 6]
         },
         segments: [
           { from: "A", to: "B", ticks: 1 },

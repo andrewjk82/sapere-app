@@ -1,260 +1,363 @@
 export const Y8_CH1C_QUESTIONS = [
   {
     "id": "y8-1c-q1",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "The population of an ant colony was $14\\,000$ at the start of January. By the end of the month, $256$ ants had died, $89$ ants had moved into the colony and $123$ ants had moved out. The population at the end of January was $14\\,298$. How many ants were born between the start and the end of the month?",
-    "a": "588",
-    "solution": "Population without births = $14\\,000 - 256 + 89 - 123 = 13\\,710$. Number born = $14\\,298 - 13\\,710 = 588$.",
+    "timeLimit": 90,
+    "question": "The population of an ant colony was \\(14000\\) at the start of January. By the end of the month, \\(256\\) ants had died, \\(89\\) ants had moved into the colony and \\(123\\) ants had moved out. If the population at the end of January was \\(14298\\), how many ants were born between the start and the end of the month?",
+    "a": "\\(588\\)",
+    "opts": [
+      "\\(588\\)",
+      "\\(578\\)",
+      "\\(598\\)",
+      "\\(688\\)"
+    ],
     "t": "Problem solving",
     "hint": "Calculate the population without new births first.",
     "solutionSteps": [
       {
-        "explanation": "Calculate population without births",
-        "workingOut": "$14\\,000 - 256 + 89 - 123 = 13\\,710$"
+        "explanation": "Calculate population without births.",
+        "workingOut": "\\(14000 - 256 + 89 - 123 = 13710\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the difference to get births",
-        "workingOut": "$14\\,298 - 13\\,710 = 588$"
+        "explanation": "Find the difference to get the number of births.",
+        "workingOut": "\\(14298 - 13710 = 588\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q2",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "If each of $37$ students in $24$ classes ate $5$ pies in one week, how many pies were eaten in total?",
-    "a": "4440",
-    "solution": "Total pies = $37 \\times 24 \\times 5 = 4440$.",
+    "timeLimit": 90,
+    "question": "If each of \\(37\\) students in \\(24\\text{ classes}\\) ate \\(5\\text{ pies}\\) in one week, how many pies were eaten in total?",
+    "a": "\\(4440\\)",
+    "opts": [
+      "\\(4440\\)",
+      "\\(4340\\)",
+      "\\(4540\\)",
+      "\\(4400\\)"
+    ],
     "t": "Problem solving",
     "hint": "Multiply the number of students by the number of classes, then by the number of pies.",
     "solutionSteps": [
       {
-        "explanation": "Find total number of students",
-        "workingOut": "$37 \\times 24 = 888$"
+        "explanation": "Find the total number of students.",
+        "workingOut": "\\(37 \\times 24 = 888\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply by pies per student",
-        "workingOut": "$888 \\times 5 = 4440$"
+        "explanation": "Multiply the total students by the number of pies eaten by each student.",
+        "workingOut": "\\(888 \\times 5 = 4440\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "The cost of $20$ packets of chips is $9.50, while each packet costs $65$ cents when sold individually. If you want to buy $40$ packets of chips, which option is cheaper?",
+    "timeLimit": 90,
+    "question": "The cost of \\(20\\text{ packets of chips}\\) is \\(9.50\\text{ dollars}\\), while each packet costs \\(65\\text{ cents}\\) when sold individually. If you want to buy \\(40\\text{ packets of chips}\\), which option is cheaper?",
     "a": "The 20 packets option",
-    "solution": "Buying $40$ packets using the $20$-packet deal costs $2 \\times \\$9.50 = \\$19.00$. Buying $40$ packets individually costs $40 \\times \\$0.65 = \\$26.00$. The $20$-packet deal is cheaper.",
+    "opts": [
+      "The 20 packets option",
+      "Buying individually",
+      "Both cost the same",
+      "Neither option is valid"
+    ],
     "t": "Problem solving",
     "hint": "Calculate the total cost for 40 packets using both options.",
     "solutionSteps": [
       {
-        "explanation": "Cost using 20-packet deal",
-        "workingOut": "$2 \\times \\$9.50 = \\$19.00$"
+        "explanation": "Cost using 20-packet deal.",
+        "workingOut": "\\(2 \\times 9.50 = 19.00\\text{ dollars}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cost buying individually",
-        "workingOut": "$40 \\times \\$0.65 = \\$26.00$"
+        "explanation": "Cost buying individually.",
+        "workingOut": "\\(40 \\times 0.65 = 26.00\\text{ dollars}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Compare the two options",
-        "workingOut": "$\\$19.00 < \\$26.00$"
+        "explanation": "Compare the two options.",
+        "workingOut": "\\(19.00 < 26.00\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "The cost of $20$ packets of chips is $9.50, while each packet costs $65$ cents when sold individually. If you buy $40$ packets of chips taking the cheaper option, how much do you save?",
-    "a": "$7.00",
-    "solution": "Savings = $\\$26.00 - \\$19.00 = \\$7.00$.",
+    "timeLimit": 90,
+    "question": "The cost of \\(20\\text{ packets of chips}\\) is \\(9.50\\text{ dollars}\\), while each packet costs \\(65\\text{ cents}\\) when sold individually. If you buy \\(40\\text{ packets of chips}\\) taking the cheaper option, how much do you save?",
+    "a": "\\(7.00\\text{ dollars}\\)",
+    "opts": [
+      "\\(7.00\\text{ dollars}\\)",
+      "\\(6.00\\text{ dollars}\\)",
+      "\\(8.00\\text{ dollars}\\)",
+      "\\(7.50\\text{ dollars}\\)"
+    ],
     "t": "Problem solving",
     "hint": "Subtract the cheaper cost from the more expensive cost.",
     "solutionSteps": [
       {
-        "explanation": "Calculate the difference in cost",
-        "workingOut": "$\\$26.00 - \\$19.00 = \\$7.00$"
+        "explanation": "Calculate individual cost for 40 packets.",
+        "workingOut": "\\(40 \\times 0.65 = 26.00\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate 20-packet deal cost for 40 packets.",
+        "workingOut": "\\(2 \\times 9.50 = 19.00\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the cheaper cost from the individual cost.",
+        "workingOut": "\\(26.00 - 19.00 = 7.00\\text{ dollars}\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q4",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "What is the smallest number that must be subtracted from $34\\,657$ so that the result may be exactly divided by $129$?",
-    "a": "85",
-    "solution": "Divide $34\\,657$ by $129$ to find the remainder. $34\\,657 \\div 129 = 268$ with a remainder of $85$. Therefore, $85$ must be subtracted.",
+    "timeLimit": 90,
+    "question": "What is the smallest number that must be subtracted from \\(34657\\) so that the result may be exactly divided by \\(129\\)?",
+    "a": "\\(85\\)",
+    "opts": [
+      "\\(85\\)",
+      "\\(75\\)",
+      "\\(95\\)",
+      "\\(80\\)"
+    ],
     "t": "Problem solving",
     "hint": "Find the remainder when dividing the number by 129.",
     "solutionSteps": [
       {
-        "explanation": "Divide the number by 129",
-        "workingOut": "$34\\,657 \\div 129 = 268$ remainder $85$"
+        "explanation": "Divide the number by 129 to find the remainder.",
+        "workingOut": "\\(34657 \\div 129 = 268\\text{ remainder } 85\\)",
+        "graphData": null
       },
       {
-        "explanation": "The remainder is the amount to subtract",
-        "workingOut": "$85$"
+        "explanation": "The remainder represents the amount that must be subtracted.",
+        "workingOut": "\\(85\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "The quotient arising from the division of a number by $53$ is $29$ and the remainder is $23$. What is this number?",
-    "a": "1560",
-    "solution": "Number = $(\\text{Quotient} \\times \\text{Divisor}) + \\text{Remainder} = (29 \\times 53) + 23 = 1537 + 23 = 1560$.",
+    "timeLimit": 90,
+    "question": "The quotient arising from the division of a number by \\(53\\) is \\(29\\) and the remainder is \\(23\\). What is this number?",
+    "a": "\\(1560\\)",
+    "opts": [
+      "\\(1560\\)",
+      "\\(1537\\)",
+      "\\(1583\\)",
+      "\\(1600\\)"
+    ],
     "t": "Problem solving",
-    "hint": "Use the formula: Number = (Quotient \u00d7 Divisor) + Remainder.",
+    "hint": "Use the formula: Number = (Quotient × Divisor) + Remainder.",
     "solutionSteps": [
       {
-        "explanation": "Multiply quotient by divisor",
-        "workingOut": "$29 \\times 53 = 1537$"
+        "explanation": "Multiply the quotient by the divisor.",
+        "workingOut": "\\(29 \\times 53 = 1537\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add the remainder",
-        "workingOut": "$1537 + 23 = 1560$"
+        "explanation": "Add the remainder to get the number.",
+        "workingOut": "\\(1537 + 23 = 1560\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q6",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "The product of two numbers is $67\\,267$, and the smaller of them is $137$. Find the sum of the two numbers.",
-    "a": "628",
-    "solution": "Larger number = $67\\,267 \\div 137 = 491$. Sum = $137 + 491 = 628$.",
+    "timeLimit": 90,
+    "question": "The product of two numbers is \\(67267\\), and the smaller of them is \\(137\\). Find the sum of the two numbers.",
+    "a": "\\(628\\)",
+    "opts": [
+      "\\(628\\)",
+      "\\(618\\)",
+      "\\(638\\)",
+      "\\(608\\)"
+    ],
     "t": "Problem solving",
     "hint": "Divide the product by the smaller number to find the larger number.",
     "solutionSteps": [
       {
-        "explanation": "Find the larger number",
-        "workingOut": "$67\\,267 \\div 137 = 491$"
+        "explanation": "Find the larger number by dividing the product by the smaller number.",
+        "workingOut": "\\(67267 \\div 137 = 491\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the sum",
-        "workingOut": "$137 + 491 = 628$"
+        "explanation": "Calculate the sum of the two numbers.",
+        "workingOut": "\\(137 + 491 = 628\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Andrew and Bashir play marbles. At one stage of the game, Andrew has $347$ marbles and Bashir has $135$. Bashir wins $106$ marbles from Andrew. How many marbles does Andrew have now?",
-    "a": "241",
-    "solution": "Andrew loses $106$ marbles, so he has $347 - 106 = 241$ marbles.",
+    "timeLimit": 90,
+    "question": "Andrew and Bashir play marbles. At one stage of the game, Andrew has \\(347\\text{ marbles}\\) and Bashir has \\(135\\text{ marbles}\\). Bashir wins \\(106\\text{ marbles}\\) from Andrew. How many marbles does Andrew have now?",
+    "a": "\\(241\\)",
+    "opts": [
+      "\\(241\\)",
+      "\\(231\\)",
+      "\\(251\\)",
+      "\\(247\\)"
+    ],
     "t": "Problem solving",
     "hint": "Subtract the lost marbles from Andrew's initial total.",
     "solutionSteps": [
       {
-        "explanation": "Subtract lost marbles",
-        "workingOut": "$347 - 106 = 241$"
+        "explanation": "Subtract the marbles Andrew lost from his original count.",
+        "workingOut": "\\(347 - 106 = 241\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "Andrew and Bashir play marbles. At one stage of the game, Andrew has $347$ marbles and Bashir has $135$. Bashir wins $106$ marbles from Andrew. How many marbles does Bashir have now?",
-    "a": "241",
-    "solution": "Bashir wins $106$ marbles, so he has $135 + 106 = 241$ marbles.",
+    "timeLimit": 90,
+    "question": "Andrew and Bashir play marbles. At one stage of the game, Andrew has \\(347\\text{ marbles}\\) and Bashir has \\(135\\text{ marbles}\\). Bashir wins \\(106\\text{ marbles}\\) from Andrew. How many marbles does Bashir have now?",
+    "a": "\\(241\\)",
+    "opts": [
+      "\\(241\\)",
+      "\\(231\\)",
+      "\\(251\\)",
+      "\\(221\\)"
+    ],
     "t": "Problem solving",
     "hint": "Add the won marbles to Bashir's initial total.",
     "solutionSteps": [
       {
-        "explanation": "Add won marbles",
-        "workingOut": "$135 + 106 = 241$"
+        "explanation": "Add the marbles Bashir won to his original count.",
+        "workingOut": "\\(135 + 106 = 241\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q8",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "What number multiplied by $23$ will give the same product as $391$ multiplied by $37$?",
-    "a": "629",
-    "solution": "Let the number be $x$. $x \\times 23 = 391 \\times 37$. Divide both sides by $23$: $x = (391 \\div 23) \\times 37 = 17 \\times 37 = 629$.",
+    "timeLimit": 90,
+    "question": "What number multiplied by \\(23\\) will give the same product as \\(391\\) multiplied by \\(37\\)?",
+    "a": "\\(629\\)",
+    "opts": [
+      "\\(629\\)",
+      "\\(619\\)",
+      "\\(639\\)",
+      "\\(609\\)"
+    ],
     "t": "Problem solving",
     "hint": "Set up an equation and solve for the unknown number.",
     "solutionSteps": [
       {
-        "explanation": "Set up equation",
-        "workingOut": "$x \\times 23 = 391 \\times 37$"
+        "explanation": "Formulate the equation.",
+        "workingOut": "\\(x \\times 23 = 391 \\times 37\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify by dividing 391 by 23",
-        "workingOut": "$391 \\div 23 = 17$"
+        "explanation": "Divide both sides by 23 to isolate the variable.",
+        "workingOut": "\\(x = (391 \\div 23) \\times 37\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply to find x",
-        "workingOut": "$x = 17 \\times 37 = 629$"
+        "explanation": "Calculate the value.",
+        "workingOut": "\\(x = 17 \\times 37 = 629\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q9",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "How many times must $43$ be added to $1649$ to give $4186$?",
-    "a": "59",
-    "solution": "Let the number of times be $x$. $1649 + 43x = 4186$. $43x = 4186 - 1649 = 2537$. $x = 2537 \\div 43 = 59$.",
+    "timeLimit": 90,
+    "question": "How many times must \\(43\\) be added to \\(1649\\) to give \\(4186\\)?",
+    "a": "\\(59\\)",
+    "opts": [
+      "\\(59\\)",
+      "\\(49\\)",
+      "\\(69\\)",
+      "\\(55\\)"
+    ],
     "t": "Problem solving",
     "hint": "Find the difference between the two numbers and divide by 43.",
     "solutionSteps": [
       {
-        "explanation": "Find the required difference",
-        "workingOut": "$4186 - 1649 = 2537$"
+        "explanation": "Find the difference between the target and starting number.",
+        "workingOut": "\\(4186 - 1649 = 2537\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide by 43",
-        "workingOut": "$2537 \\div 43 = 59$"
+        "explanation": "Divide the difference by 43 to find the number of additions.",
+        "workingOut": "\\(2537 \\div 43 = 59\\)",
+        "graphData": null
       }
     ],
     "graphData": null
   },
   {
     "id": "y8-1c-q10",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "question": "At an election, there are three candidates, A, B and C. A obtains $19\\,878$ more votes than C, and B obtains $12\\,435$ more votes than C. A and B together obtain $137\\,187$ votes. How many voted for C?",
-    "a": "52437",
-    "solution": "Let $C$ be the votes for candidate C. $A = C + 19\\,878$. $B = C + 12\\,435$. $A + B = 137\\,187$, so $(C + 19\\,878) + (C + 12\\,435) = 137\\,187$. $2C + 32\\,313 = 137\\,187$. $2C = 104\\,874$. $C = 52\\,437$.",
+    "timeLimit": 90,
+    "question": "At an election, there are three candidates, A, B and C. A obtains \\(19878\\text{ more votes}\\) than C, and B obtains \\(12435\\text{ more votes}\\) than C. If A and B together obtain \\(137187\\text{ votes}\\), how many voted for C?",
+    "a": "\\(52437\\)",
+    "opts": [
+      "\\(52437\\)",
+      "\\(51437\\)",
+      "\\(53437\\)",
+      "\\(52000\\)"
+    ],
     "t": "Problem solving",
     "hint": "Express the votes for A and B in terms of C.",
     "solutionSteps": [
       {
-        "explanation": "Write expressions for A and B",
-        "workingOut": "$A = C + 19\\,878$, $B = C + 12\\,435$"
+        "explanation": "Set up expressions for candidates A and B.",
+        "workingOut": "\\(A = C + 19878, \\quad B = C + 12435\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add expressions and equate to total",
-        "workingOut": "$(C + 19\\,878) + (C + 12\\,435) = 137\\,187$"
+        "explanation": "Combine the expressions for A and B.",
+        "workingOut": "\\((C + 19878) + (C + 12435) = 137187\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify equation",
-        "workingOut": "$2C + 32\\,313 = 137\\,187$"
+        "explanation": "Simplify the equation.",
+        "workingOut": "\\(2C + 32313 = 137187\\)",
+        "graphData": null
       },
       {
-        "explanation": "Subtract 32,313",
-        "workingOut": "$2C = 104\\,874$"
-      },
-      {
-        "explanation": "Divide by 2",
-        "workingOut": "$C = 52\\,437$"
+        "explanation": "Solve for C by isolating the variable.",
+        "workingOut": "\\(2C = 104874 \\implies C = 52437\\)",
+        "graphData": null
       }
     ],
     "graphData": null

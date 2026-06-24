@@ -423,6 +423,51 @@ const Curriculum = () => {
         const resolvedTopicTitle = raw.t || raw.topicTitle || chapter.topicTitle || '';
         const resolvedChapterId = raw.chapterId || chapter.chapterId;
 
+        const mappedSubQuestions = Array.isArray(raw.subQuestions)
+          ? raw.subQuestions.map((sq) => {
+              const isSqMC = sq.type === 'multiple_choice';
+              let sqOptions = [];
+              let sqAnswer = sq.a ?? sq.answer ?? sq.solution ?? '';
+
+              if (isSqMC) {
+                const rawOpts = sq.opts || sq.options || [];
+                const correct = sq.a ?? sq.answer ?? sq.solution;
+
+                let correctText = '';
+                const isIndex = /^[0-9]$/.test(String(correct).trim());
+                if (isIndex && rawOpts[parseInt(correct)]) {
+                  const opt = rawOpts[parseInt(correct)];
+                  correctText = typeof opt === 'object' && opt !== null ? opt.text : opt;
+                } else {
+                  correctText = String(correct);
+                }
+
+                const shuffled = [...rawOpts].sort(() => Math.random() - 0.5);
+                const correctIndex = shuffled.findIndex((opt) => {
+                  const text = typeof opt === 'object' && opt !== null ? opt.text : opt;
+                  const clean = (s) => String(s).replace(/\\\(|\\\)/g, '').trim();
+                  return clean(text) === clean(correctText);
+                });
+                sqOptions = shuffled.map((opt) => (
+                  typeof opt === 'object' && opt !== null
+                    ? { text: String(opt.text || ''), imageUrl: opt.imageUrl || '' }
+                    : { text: String(opt), imageUrl: '' }
+                ));
+                sqAnswer = String(correctIndex >= 0 ? correctIndex : 0);
+              }
+
+              return {
+                id: sq.id,
+                type: sq.type || 'short_answer',
+                question: sq.question || sq.q || '',
+                options: sqOptions,
+                answer: sqAnswer,
+                solutionSteps: Array.isArray(sq.solutionSteps) ? sq.solutionSteps : [],
+                graphData: sq.graphData || null,
+              };
+            })
+          : [];
+
         return {
           chapterId: resolvedChapterId,
           chapterTitle: chapter.chapterTitle,
@@ -443,7 +488,7 @@ const Curriculum = () => {
           solution: raw.s || raw.solution || raw.a || '',
           solutionSteps: Array.isArray(raw.solutionSteps) ? raw.solutionSteps : [],
           questionImage: raw.questionImage || raw.imageUrl || '',
-          subQuestions: Array.isArray(raw.subQuestions) ? raw.subQuestions : [],
+          subQuestions: mappedSubQuestions,
           blanks: Array.isArray(raw.blanks) ? raw.blanks : [],
           graphData: raw.graphData || null,
           examPaper: raw.examPaper || chapter.examPaper || '',

@@ -6,14 +6,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve the simultaneous equations:\\n\\\\(  3x - 5y = 21  \\\\)\\n\\\\(  2x + 3y = -5  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -3 \\)",
-      "\\( x = -2, \\; y = 3 \\)",
-      "\\( x = 2, \\; y = -3 \\)",
-      "\\( x = 2, \\; y = 3 \\)"
+      {
+        "text": "\\( x = 2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Multiply so that the y-coefficients are opposite, then add.",
+    "solution": "\\( x = -2, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the first equation by 3 and the second by 5.",
@@ -32,7 +45,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x = 2 into the second equation.",
-        "workingOut": "\\( 2(2 \\) + 3y = -5 \\\Rightarrow 4 + 3y = -5 \\\Rightarrow 3y = -9 \\\Rightarrow y = -3)",
+        "workingOut": "\\( 2(2 \\) + 3y = -5 \\Rightarrow 4 + 3y = -5 \\Rightarrow 3y = -9 \\Rightarrow y = -3)",
         "graphData": null
       }
     ],
@@ -46,14 +59,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  x - y = 2  \\\\)\\n\\\\(  x^2 + y^2 = 74  \\\\)",
     "options": [
-      "\\( y = -5, \\; -7 \\)",
-      "\\( y = -5, \\; 7 \\)",
-      "\\( y = 5, \\; -7 \\)",
-      "\\( y = 5, \\; 7 \\)"
+      {
+        "text": "\\( y = -5, \\; -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 5, \\; 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 5, \\; -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -5, \\; 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -5, \\; -7 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Substitute \\( x = y + 2 \\) into the second equation and solve the quadratic in \\( y \\).",
+    "solution": "\\( y = -5, \\; -7 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( x \\).",
@@ -81,14 +107,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  2x + y = 8  \\\\)\\n\\\\(  x^2 + xy = 12  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -4 \\)",
-      "\\( x = -2, \\; y = 4 \\)",
-      "\\( x = 2, \\; y = -4 \\)",
-      "\\( x = 2, \\; y = 4 \\)"
+      {
+        "text": "\\( x = 2, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -4 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Express y from the linear equation and substitute.",
+    "solution": "\\( x = -2, \\; y = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y.",
@@ -102,12 +141,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\( -x^2 + 8x - 12 = 0 \\\Rightarrow x^2 - 8x + 12 = 0 \\)",
+        "workingOut": "\\( -x^2 + 8x - 12 = 0 \\Rightarrow x^2 - 8x + 12 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (x - 2 \\)\\( x - 6 \\) = 0 \\\Rightarrow x = 2, y = 4 \\\text{ or } x = 6, y = -4)",
+        "workingOut": "\\( (x - 2 \\)\\( x - 6 \\) = 0 \\Rightarrow x = 2, y = 4 \\\text{ or } x = 6, y = -4)",
         "graphData": null
       }
     ],
@@ -121,23 +160,36 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "The sum of two numbers is 15 and their difference is 3. Find the two numbers.",
     "options": [
-      "\\( -9 \\text{ and } 6 \\)",
-      "\\( 10 \\text{ and } 5 \\)",
-      "\\( 8 \\text{ and } 7 \\)",
-      "\\( 9 \\text{ and } 6 \\)"
+      {
+        "text": "\\( 10 \\text{ and } 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 8 \\text{ and } 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -9 \\text{ and } 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9 \\text{ and } 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -9 \\text{ and } 6 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Set up two equations from the given conditions and solve.",
+    "solution": "\\( -9 \\text{ and } 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Let the two numbers be x and y. Write the equations.",
-        "workingOut": "\\( x + y = 15 \\\quad \\\text{and} \\\quad x - y = 3 \\)",
+        "workingOut": "\\( x + y = 15 \\quad \\\text{and} \\quad x - y = 3 \\)",
         "graphData": null
       },
       {
         "explanation": "Add the equations.",
-        "workingOut": "\\( 2x = 18 \\\Rightarrow x = 9 \\)",
+        "workingOut": "\\( 2x = 18 \\Rightarrow x = 9 \\)",
         "graphData": null
       },
       {
@@ -156,14 +208,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 5  \\\\)\\n\\\\(  x^2 - y^2 = 15  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -1 \\)",
-      "\\( x = -4, \\; y = 1 \\)",
-      "\\( x = 4, \\; y = -1 \\)",
-      "\\( x = 4, \\; y = 1 \\)"
+      {
+        "text": "\\( x = 4, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -1 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor the difference of squares and use the sum.",
+    "solution": "\\( x = -4, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Factor the left side.",
@@ -172,12 +237,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x + y = 5.",
-        "workingOut": "\\( 5(x - y \\) = 15 \\\Rightarrow x - y = 3)",
+        "workingOut": "\\( 5(x - y \\) = 15 \\Rightarrow x - y = 3)",
         "graphData": null
       },
       {
         "explanation": "Solve the two linear equations x + y = 5 and x - y = 3.",
-        "workingOut": "\\( 2x = 8 \\\Rightarrow x = 4 \\)",
+        "workingOut": "\\( 2x = 8 \\Rightarrow x = 4 \\)",
         "graphData": null
       },
       {
@@ -196,14 +261,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = x + 6  \\\\)\\n\\\\(  y = x^2 + 2x  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -3 \\)",
-      "\\( x = -3, \\; y = 3 \\)",
-      "\\( x = 3, \\; y = -3 \\)",
-      "\\( x = 3, \\; y = 3 \\)"
+      {
+        "text": "\\( x = -3, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -3 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Equate and solve the quadratic.",
+    "solution": "\\( x = -3, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the expressions equal.",
@@ -222,7 +300,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve and find y.",
-        "workingOut": "\\( x = -3 \\\Rightarrow y = 3; \\\quad x = 2 \\\Rightarrow y = 8 \\)",
+        "workingOut": "\\( x = -3 \\Rightarrow y = 3; \\quad x = 2 \\Rightarrow y = 8 \\)",
         "graphData": null
       }
     ],
@@ -236,28 +314,41 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve simultaneously:\\n\\\\(  x^2 + y^2 = 25  \\\\)\\n\\\\(  xy = 12  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -3 \\)",
-      "\\( x = -4, \\; y = 3 \\)",
-      "\\( x = 4, \\; y = -3 \\)",
-      "\\( x = 4, \\; y = 3 \\)"
+      {
+        "text": "\\( x = 4, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -3 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Use the identities for (x+y)^2 and (x-y)^2.",
+    "solution": "\\( x = -4, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Find (x+y)^2.",
-        "workingOut": "\\( (x + y \\)^2 = x^2 + 2xy + y^2 = 25 + 24 = 49 \\\Rightarrow x + y = \\pm 7)",
+        "workingOut": "\\( (x + y \\)^2 = x^2 + 2xy + y^2 = 25 + 24 = 49 \\Rightarrow x + y = \\pm 7)",
         "graphData": null
       },
       {
         "explanation": "Find (x-y)^2.",
-        "workingOut": "\\( (x - y \\)^2 = x^2 - 2xy + y^2 = 25 - 24 = 1 \\\Rightarrow x - y = \\pm 1)",
+        "workingOut": "\\( (x - y \\)^2 = x^2 - 2xy + y^2 = 25 - 24 = 1 \\Rightarrow x - y = \\pm 1)",
         "graphData": null
       },
       {
         "explanation": "Solve the four cases.",
-        "workingOut": "\\( x + y = 7, x - y = 1 \\\Rightarrow x = 4, y = 3 \\)",
+        "workingOut": "\\( x + y = 7, x - y = 1 \\Rightarrow x = 4, y = 3 \\)",
         "graphData": null
       },
       {
@@ -276,14 +367,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  3x - y = 8  \\\\)\\n\\\\(  2x - 5y = -12  \\\\)",
     "options": [
-      "\\( x = -4 \\)",
-      "\\( x = 2 \\)",
-      "\\( x = 4 \\)",
-      "\\( x = 6 \\)"
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 4 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange the first equation to express \\( y \\) in terms of \\( x \\).",
+    "solution": "\\( x = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( y \\) in terms of \\( x \\).",
@@ -316,14 +420,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  b  \\\\):\\n\\\\(  a = 3b + 2  \\\\)\\n\\\\(  a - 2b = 5  \\\\)",
     "options": [
-      "\\( b = -3 \\)",
-      "\\( b = 1 \\)",
-      "\\( b = 3 \\)",
-      "\\( b = 5 \\)"
+      {
+        "text": "\\( b = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( b = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( b = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( b = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( b = 3 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Substitute \\( a = 3b + 2 \\) into the second equation to isolate \\( b \\).",
+    "solution": "\\( b = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( a = 3b + 2 \\) into the second equation.",
@@ -351,28 +468,41 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  x + y + z = 6  \\\\)\\n\\\\(  x - y + z = 2  \\\\)\\n\\\\(  2x + y - z = 1  \\\\)",
     "options": [
-      "\\( x = -1, \\; y = -2 \\)",
-      "\\( x = -1, \\; y = 2 \\)",
-      "\\( x = 1, \\; y = -2 \\)",
-      "\\( x = 1, \\; y = 2 \\)"
+      {
+        "text": "\\( x = 1, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1, \\; y = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1, \\; y = -2 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Eliminate variables by combining equations in pairs.",
+    "solution": "\\( x = -1, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the 2nd equation from the 1st to find y.",
-        "workingOut": "\\( (x + y + z \\) - \\( x - y + z \\) = 6 - 2 \\\Rightarrow 2y = 4 \\\Rightarrow y = 2)",
+        "workingOut": "\\( (x + y + z \\) - \\( x - y + z \\) = 6 - 2 \\Rightarrow 2y = 4 \\Rightarrow y = 2)",
         "graphData": null
       },
       {
         "explanation": "Substitute y = 2 into equations 1 and 3.",
-        "workingOut": "\\( x + z = 4 \\\quad \\\text{and} \\\quad 2x - z = -1 \\)",
+        "workingOut": "\\( x + z = 4 \\quad \\\text{and} \\quad 2x - z = -1 \\)",
         "graphData": null
       },
       {
         "explanation": "Add these two equations.",
-        "workingOut": "\\( 3x = 3 \\\Rightarrow x = 1 \\)",
+        "workingOut": "\\( 3x = 3 \\Rightarrow x = 1 \\)",
         "graphData": null
       },
       {
@@ -391,17 +521,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "For what values of \\\\(  k  \\\\) does \\\\(  y = 4x + k  \\\\) NOT intersect \\\\(  y = x^2 + 2x + 3  \\\\)?",
     "options": [
-      "\\( -1 \\)",
-      "\\( 1 \\)",
-      "\\( 2 \\)"
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -1 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "The line does not intersect the parabola when the discriminant is negative.",
+    "solution": "\\( -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
-        "workingOut": "\\( x^2 + 2x + 3 = 4x + k \\\Rightarrow x^2 - 2x + (3 - k \\) = 0)",
+        "workingOut": "\\( x^2 + 2x + 3 = 4x + k \\Rightarrow x^2 - 2x + (3 - k \\) = 0)",
         "graphData": null
       },
       {
@@ -411,7 +551,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "For no intersection, discriminant must be negative.",
-        "workingOut": "\\( 4k - 8 < 0 \\\Rightarrow k < 2 \\)",
+        "workingOut": "\\( 4k - 8 < 0 \\Rightarrow k < 2 \\)",
         "graphData": null
       }
     ],
@@ -425,14 +565,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = x - 1  \\\\)\\n\\\\(  x^2 + y^2 = 13  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -2 \\)",
-      "\\( x = -3, \\; y = 2 \\)",
-      "\\( x = 3, \\; y = -2 \\)",
-      "\\( x = 3, \\; y = 2 \\)"
+      {
+        "text": "\\( x = 3, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -2 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Substitute the linear equation into the circle equation.",
+    "solution": "\\( x = -3, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute y = x - 1 into the circle equation.",
@@ -441,7 +594,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( x^2 + x^2 - 2x + 1 = 13 \\\Rightarrow 2x^2 - 2x - 12 = 0 \\\Rightarrow x^2 - x - 6 = 0 \\)",
+        "workingOut": "\\( x^2 + x^2 - 2x + 1 = 13 \\Rightarrow 2x^2 - 2x - 12 = 0 \\Rightarrow x^2 - x - 6 = 0 \\)",
         "graphData": null
       },
       {
@@ -465,14 +618,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  3x + y = 11  \\\\)\\n\\\\(  x + y = 5  \\\\)",
     "options": [
-      "\\( y = -2 \\)",
-      "\\( y = 0 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)"
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute it into the second equation.",
+    "solution": "\\( y = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the equations to solve for \\( x \\).",
@@ -500,14 +666,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = 3x + 4  \\\\)\\n\\\\(  y = x^2 + 3x  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -10 \\)",
-      "\\( x = -2, \\; y = 10 \\)",
-      "\\( x = 2, \\; y = -10 \\)",
-      "\\( x = 2, \\; y = 10 \\)"
+      {
+        "text": "\\( x = 2, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -10 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Equate and simplify.",
+    "solution": "\\( x = -2, \\; y = -10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the expressions equal.",
@@ -526,7 +705,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Find y values.",
-        "workingOut": "\\( x = 2: y = 10; \\\quad x = -2: y = -2 \\)",
+        "workingOut": "\\( x = 2: y = 10; \\quad x = -2: y = -2 \\)",
         "graphData": null
       }
     ],
@@ -540,14 +719,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 1  \\\\)\\n\\\\(  x^2 + y^2 = 25  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -3 \\)",
-      "\\( x = -4, \\; y = 3 \\)",
-      "\\( x = 4, \\; y = -3 \\)",
-      "\\( x = 4, \\; y = 3 \\)"
+      {
+        "text": "\\( x = 4, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Express y from the linear equation and substitute into the quadratic.",
+    "solution": "\\( x = -4, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y from the linear equation.",
@@ -561,12 +753,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( x^2 + 1 - 2x + x^2 = 25 \\\Rightarrow 2x^2 - 2x - 24 = 0 \\\Rightarrow x^2 - x - 12 = 0 \\)",
+        "workingOut": "\\( x^2 + 1 - 2x + x^2 = 25 \\Rightarrow 2x^2 - 2x - 24 = 0 \\Rightarrow x^2 - x - 12 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (x - 4 \\)\\( x + 3 \\) = 0 \\\Rightarrow x = 4, y = -3 \\\text{ or } x = -3, y = 4)",
+        "workingOut": "\\( (x - 4 \\)\\( x + 3 \\) = 0 \\Rightarrow x = 4, y = -3 \\\text{ or } x = -3, y = 4)",
         "graphData": null
       }
     ],
@@ -580,14 +772,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  2x + y = 8  \\\\)\\n\\\\(  xy = 6  \\\\)",
     "options": [
-      "\\( y = -6, \\; -2 \\)",
-      "\\( y = -6, \\; 2 \\)",
-      "\\( y = 6, \\; -2 \\)",
-      "\\( y = 6, \\; 2 \\)"
+      {
+        "text": "\\( y = -6, \\; -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6, \\; -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -6, \\; 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6, \\; 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -6, \\; -2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Determine \\( y \\) values from the linear equation using the solved \\( x \\) values.",
+    "solution": "\\( y = -6, \\; -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Find \\( x \\).",
@@ -615,14 +820,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = 2 - x  \\\\)\\n\\\\(  y = x^2 - 4x + 2  \\\\)",
     "options": [
-      "\\( x = 0, \\; y = -2 \\)",
-      "\\( x = 0, \\; y = 2 \\)",
-      "\\( x = 1, \\; y = 1 \\)",
-      "\\( x = 2, \\; y = 0 \\)"
+      {
+        "text": "\\( x = 1, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0, \\; y = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 0, \\; y = -2 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Equate the two y-expressions and solve.",
+    "solution": "\\( x = 0, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
@@ -641,7 +859,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve and find y.",
-        "workingOut": "\\( x = 0 \\\Rightarrow y = 2; \\\quad x = 3 \\\Rightarrow y = -1 \\)",
+        "workingOut": "\\( x = 0 \\Rightarrow y = 2; \\quad x = 3 \\Rightarrow y = -1 \\)",
         "graphData": null
       }
     ],
@@ -655,14 +873,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  x - y = 3  \\\\)\\n\\\\(  y = x^2 - 9  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Express \\( y \\) from the first equation, then substitute it into the second.",
+    "solution": "\\( x = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Rearrange the first equation to isolate \\( y \\).",
@@ -695,14 +926,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  3x - y = 8  \\\\)\\n\\\\(  2x - 5y = -12  \\\\)",
     "options": [
-      "\\( y = -4 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)",
-      "\\( y = 6 \\)"
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 4 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute back.",
+    "solution": "\\( y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Solve for \\( x \\).",
@@ -725,14 +969,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x - y = 3  \\\\)\\n\\\\(  xy = 10  \\\\)",
     "options": [
-      "\\( x = -5, \\; y = -2 \\)",
-      "\\( x = -5, \\; y = 2 \\)",
-      "\\( x = 5, \\; y = -2 \\)",
-      "\\( x = 5, \\; y = 2 \\)"
+      {
+        "text": "\\( x = -5, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -5, \\; y = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -5, \\; y = -2 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Isolate x and substitute into the product equation.",
+    "solution": "\\( x = -5, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x.",
@@ -741,7 +998,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute.",
-        "workingOut": "\\( (y + 3 \\)y = 10 \\\Rightarrow y^2 + 3y - 10 = 0)",
+        "workingOut": "\\( (y + 3 \\)y = 10 \\Rightarrow y^2 + 3y - 10 = 0)",
         "graphData": null
       },
       {
@@ -765,14 +1022,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  2x + 3y = 31  \\\\)\\n\\\\(  3x - y = 19  \\\\)",
     "options": [
-      "\\( x = -8 \\)",
-      "\\( x = 10 \\)",
-      "\\( x = 6 \\)",
-      "\\( x = 8 \\)"
+      {
+        "text": "\\( x = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 8 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Express \\( y \\) using the second equation.",
+    "solution": "\\( x = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( y \\) from the second equation.",
@@ -805,14 +1075,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  y = -2x  \\\\)\\n\\\\(  3x + 4y = -10  \\\\)",
     "options": [
-      "\\( x = -2 \\)",
-      "\\( x = 0 \\)",
-      "\\( x = 2 \\)",
-      "\\( x = 4 \\)"
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 2 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Substitute \\( y = -2x \\) into the second equation.",
+    "solution": "\\( x = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute.",
@@ -840,14 +1123,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve the simultaneous equations:\\n\\\\(  4x + 6y = 15  \\\\)\\n\\\\(  2x - 2y = 5  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -1 \\)",
-      "\\( x = -3, \\; y = 1 \\)",
-      "\\( x = 3, \\; y = -1 \\)",
-      "\\( x = 3, \\; y = 1 \\)"
+      {
+        "text": "\\( x = -3, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -1 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Multiply the second equation by 3 so y-coefficients cancel.",
+    "solution": "\\( x = -3, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the second equation by 3.",
@@ -856,7 +1152,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Add to the first equation.",
-        "workingOut": "\\( 4x + 6y + 6x - 6y = 15 + 15 \\\Rightarrow 10x = 30 \\)",
+        "workingOut": "\\( 4x + 6y + 6x - 6y = 15 + 15 \\Rightarrow 10x = 30 \\)",
         "graphData": null
       },
       {
@@ -866,7 +1162,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x = 3 into the second equation.",
-        "workingOut": "\\( 2(3 \\) - 2y = 5 \\\Rightarrow 6 - 2y = 5 \\\Rightarrow 2y = 1 \\\Rightarrow y = \\\frac{1}{2})",
+        "workingOut": "\\( 2(3 \\) - 2y = 5 \\Rightarrow 6 - 2y = 5 \\Rightarrow 2y = 1 \\Rightarrow y = \\\frac{1}{2})",
         "graphData": null
       }
     ],
@@ -880,14 +1176,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 8  \\\\)\\n\\\\(  x^2 + xy + y^2 = 52  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -6 \\)",
-      "\\( x = -2, \\; y = 6 \\)",
-      "\\( x = 2, \\; y = -6 \\)",
-      "\\( x = 2, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -2, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -6 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Use the square of the sum identity to find xy.",
+    "solution": "\\( x = -2, \\; y = -6 \\)",
     "solutionSteps": [
       {
         "explanation": "Note that (x+y)^2 = x^2 + 2xy + y^2 = 64.",
@@ -896,12 +1205,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute into the second equation.",
-        "workingOut": "\\( 64 - 2xy + xy = 52 \\\Rightarrow 64 - xy = 52 \\\Rightarrow xy = 12 \\)",
+        "workingOut": "\\( 64 - 2xy + xy = 52 \\Rightarrow 64 - xy = 52 \\Rightarrow xy = 12 \\)",
         "graphData": null
       },
       {
         "explanation": "Now solve x + y = 8 and xy = 12 via the quadratic.",
-        "workingOut": "\\( t^2 - 8t + 12 = 0 \\\Rightarrow (t - 2 \\)\\( t - 6 \\) = 0)",
+        "workingOut": "\\( t^2 - 8t + 12 = 0 \\Rightarrow (t - 2 \\)\\( t - 6 \\) = 0)",
         "graphData": null
       },
       {
@@ -920,13 +1229,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  y = x - 2  \\\\)\\n\\\\(  3x + y = 10  \\\\)",
     "options": [
-      "\\( y = -1 \\)",
-      "\\( y = 1 \\)",
-      "\\( y = 3 \\)"
+      {
+        "text": "\\( y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 1 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Solve for \\( x \\) first, then substitute into \\( y = x - 2 \\).",
+    "solution": "\\( y = 1 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = x - 2 \\) to solve for \\( x \\).",
@@ -954,14 +1273,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  2x + y = 7  \\\\)\\n\\\\(  5x + 3y = 18  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Rearrange the first equation to express \\( y \\) in terms of \\( x \\).",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( y \\) from the first equation.",
@@ -989,13 +1321,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  3x + y = 7  \\\\)\\n\\\\(  9x^2 + y^2 = 25  \\\\)",
     "options": [
-      "\\( x = -1 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)"
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Isolate \\( y \\) from the linear equation and substitute.",
+    "solution": "\\( x = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( y \\).",
@@ -1038,14 +1380,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  3x + y = 11  \\\\)\\n\\\\(  x + y = 5  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 3 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Subtract the second equation from the first to eliminate \\( y \\).",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the equations.",
@@ -1068,14 +1423,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x + 4y = 25  \\\\)\\n\\\\(  4x + 3y = 24  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 3 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Make the coefficients of \\( y \\) equal by multiplying the first equation by 3 and the second by 4.",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply both equations.",
@@ -1103,14 +1471,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x^2 + 4y^2 = 20  \\\\)\\n\\\\(  x + 2y = 6  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -1 \\)",
-      "\\( x = -4, \\; y = 1 \\)",
-      "\\( x = 4, \\; y = -1 \\)",
-      "\\( x = 4, \\; y = 1 \\)"
+      {
+        "text": "\\( x = 4, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -1 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Express x from the linear equation and substitute into the ellipse equation.",
+    "solution": "\\( x = -4, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x.",
@@ -1124,12 +1505,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 36 - 24y + 4y^2 + 4y^2 = 20 \\\Rightarrow 8y^2 - 24y + 16 = 0 \\\Rightarrow y^2 - 3y + 2 = 0 \\)",
+        "workingOut": "\\( 36 - 24y + 4y^2 + 4y^2 = 20 \\Rightarrow 8y^2 - 24y + 16 = 0 \\Rightarrow y^2 - 3y + 2 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (y - 1 \\)\\( y - 2 \\) = 0 \\\Rightarrow y = 1, x = 4 \\\text{ or } y = 2, x = 2)",
+        "workingOut": "\\( (y - 1 \\)\\( y - 2 \\) = 0 \\Rightarrow y = 1, x = 4 \\\text{ or } y = 2, x = 2)",
         "graphData": null
       }
     ],
@@ -1143,23 +1524,36 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  x + y = 8  \\\\)\\n\\\\(  y + z = 13  \\\\)\\n\\\\(  x + z = 11  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -5 \\)",
-      "\\( x = -3, \\; y = 5 \\)",
-      "\\( x = 3, \\; y = -5 \\)",
-      "\\( x = 3, \\; y = 5 \\)"
+      {
+        "text": "\\( x = -3, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -5 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Add all three equations to find the sum, then subtract each pair.",
+    "solution": "\\( x = -3, \\; y = -5 \\)",
     "solutionSteps": [
       {
         "explanation": "Add all three.",
-        "workingOut": "\\( 2(x + y + z \\) = 32 \\\Rightarrow x + y + z = 16)",
+        "workingOut": "\\( 2(x + y + z \\) = 32 \\Rightarrow x + y + z = 16)",
         "graphData": null
       },
       {
         "explanation": "Subtract each equation.",
-        "workingOut": "\\( z = 16 - 8 = 8, \\\quad x = 16 - 13 = 3, \\\quad y = 16 - 11 = 5 \\)",
+        "workingOut": "\\( z = 16 - 8 = 8, \\quad x = 16 - 13 = 3, \\quad y = 16 - 11 = 5 \\)",
         "graphData": null
       }
     ],
@@ -1173,14 +1567,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  5x - 2y = 26  \\\\)\\n\\\\(  2x - 2y = 14  \\\\)",
     "options": [
-      "\\( x = -4 \\)",
-      "\\( x = 2 \\)",
-      "\\( x = 4 \\)",
-      "\\( x = 6 \\)"
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 4 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Subtract the second equation from the first to eliminate \\( -2y \\).",
+    "solution": "\\( x = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the second equation.",
@@ -1203,18 +1610,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "A rectangle has a perimeter of 34 cm and an area of 60 cm\\\\( ^2 \\\\). Find the dimensions.",
     "options": [
-      "\\( -12 cm by -5 cm \\)",
-      "\\( 10 cm by 3 cm \\)",
-      "\\( 12 cm by 5 cm \\)",
-      "\\( 13 cm by 6 cm \\)"
+      {
+        "text": "\\( 13 cm by 6 cm \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -12 cm by -5 cm \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 12 cm by 5 cm \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 10 cm by 3 cm \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 12 cm by 5 cm \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Use perimeter and area to set up a system of equations.",
+    "solution": "\\( 12 cm by 5 cm \\)",
     "solutionSteps": [
       {
         "explanation": "Let length = l, width = w. From perimeter: l + w = 17.",
-        "workingOut": "\\( 2(l + w \\) = 34 \\\Rightarrow l + w = 17)",
+        "workingOut": "\\( 2(l + w \\) = 34 \\Rightarrow l + w = 17)",
         "graphData": null
       },
       {
@@ -1224,12 +1644,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Form the quadratic.",
-        "workingOut": "\\( t^2 - 17t + 60 = 0 \\\Rightarrow (t - 5 \\)\\( t - 12 \\) = 0)",
+        "workingOut": "\\( t^2 - 17t + 60 = 0 \\Rightarrow (t - 5 \\)\\( t - 12 \\) = 0)",
         "graphData": null
       },
       {
         "explanation": "State dimensions.",
-        "workingOut": "\\( l = 12 \\\text{ cm}, \\\quad w = 5 \\\text{ cm} \\)",
+        "workingOut": "\\( l = 12 \\\text{ cm}, \\quad w = 5 \\\text{ cm} \\)",
         "graphData": null
       }
     ],
@@ -1243,13 +1663,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  a  \\\\):\\n\\\\(  a + 4b = 13  \\\\)\\n\\\\(  a + 3b = 10  \\\\)",
     "options": [
-      "\\( a = -1 \\)",
-      "\\( a = 1 \\)",
-      "\\( a = 3 \\)"
+      {
+        "text": "\\( a = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( a = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( a = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( a = 1 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Subtract the second equation from the first to find \\( b \\), then solve for \\( a \\).",
+    "solution": "\\( a = 1 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the equations to eliminate \\( a \\).",
@@ -1275,29 +1705,43 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\\\(  k  \\\\) such that \\\\(  y = x + k  \\\\) is tangent to \\\\(  y = 2x^2 + 1  \\\\).",
+    "question": "Find \\\\( k \\\\) such that \\\\( y = x + k \\\\) is tangent to \\\\( y = 2x^2 + 1 \\\\).",
     "options": [
-      "\\( -1 \\)",
-      "\\( 1 \\)",
-      "\\( 2 \\)"
+      {
+        "text": "\\\\(k = -\\\\frac{7}{8}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = \\\\frac{7}{8}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = \\\\frac{1}{8}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = 1\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -1 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Set discriminant to zero.",
+    "solution": "\\\\( 2x^2 - x + 1 - k = 0 \\\\). \\\\( \\\\Delta = 8k - 7 = 0 \\\\Rightarrow k = \\\\frac{7}{8} \\\\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
-        "workingOut": "\\( 2x^2 + 1 = x + k \\\Rightarrow 2x^2 - x + (1 - k \\) = 0)",
+        "workingOut": "\\\\(2x^2 + 1 = x + k \\\\Rightarrow 2x^2 - x + (1 - k) = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "Discriminant.",
-        "workingOut": "\\( \\Delta = 1 - 8(1 - k \\) = 8k - 7)",
+        "workingOut": "\\\\(\\\\Delta = 1 - 8(1 - k) = 8k - 7\\\\)",
         "graphData": null
       },
       {
         "explanation": "Set to zero.",
-        "workingOut": "\\( 8k - 7 = 0 \\\Rightarrow k = \\\frac{7}{8} \\)",
+        "workingOut": "\\\\(8k - 7 = 0 \\\\Rightarrow k = \\\\frac{7}{8}\\\\)",
         "graphData": null
       }
     ],
@@ -1311,14 +1755,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "A two-digit number has digits that sum to 11. When the digits are reversed, the new number is 27 more than the original. Find the original number.",
     "options": [
-      "\\( -47 \\)",
-      "\\( 45 \\)",
-      "\\( 47 \\)",
-      "\\( 48 \\)"
+      {
+        "text": "\\( 48 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -47 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 47 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 45 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -47 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Set up equations for the digit sum and the difference between the numbers.",
+    "solution": "\\( -47 \\)",
     "solutionSteps": [
       {
         "explanation": "Let the tens digit be x and units digit be y.",
@@ -1327,12 +1784,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "The reversed number exceeds the original by 27.",
-        "workingOut": "\\( (10y + x \\) - \\( 10x + y \\) = 27 \\\Rightarrow 9y - 9x = 27 \\\Rightarrow y - x = 3)",
+        "workingOut": "\\( (10y + x \\) - \\( 10x + y \\) = 27 \\Rightarrow 9y - 9x = 27 \\Rightarrow y - x = 3)",
         "graphData": null
       },
       {
         "explanation": "Solve the system: x + y = 11, y - x = 3.",
-        "workingOut": "\\( 2y = 14 \\\Rightarrow y = 7, \\\quad x = 4 \\)",
+        "workingOut": "\\( 2y = 14 \\Rightarrow y = 7, \\quad x = 4 \\)",
         "graphData": null
       },
       {
@@ -1351,14 +1808,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  y = 6 - x  \\\\)\\n\\\\(  y = x^2  \\\\)",
     "options": [
-      "\\( y = -4, \\; -9 \\)",
-      "\\( y = -4, \\; 9 \\)",
-      "\\( y = 4, \\; -9 \\)",
-      "\\( y = 4, \\; 9 \\)"
+      {
+        "text": "\\( y = -4, \\; -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4, \\; 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4, \\; 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4, \\; -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -4, \\; -9 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Find \\( x \\) values first, then calculate \\( y = x^2 \\).",
+    "solution": "\\( y = -4, \\; -9 \\)",
     "solutionSteps": [
       {
         "explanation": "Solve the quadratic in \\( x \\).",
@@ -1386,14 +1856,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 11  \\\\)\\n\\\\(  x^2 + y^2 = 61  \\\\)",
     "options": [
-      "\\( x = -5, \\; y = -6 \\)",
-      "\\( x = -5, \\; y = 6 \\)",
-      "\\( x = 5, \\; y = -6 \\)",
-      "\\( x = 5, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -5, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -5, \\; y = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -5, \\; y = -6 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Express y and substitute into the sum of squares equation.",
+    "solution": "\\( x = -5, \\; y = -6 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y.",
@@ -1402,17 +1885,17 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute and expand.",
-        "workingOut": "\\( x^2 + (11 - x \\)^2 = 61 \\\Rightarrow 2x^2 - 22x + 121 = 61)",
+        "workingOut": "\\( x^2 + (11 - x \\)^2 = 61 \\Rightarrow 2x^2 - 22x + 121 = 61)",
         "graphData": null
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\( 2x^2 - 22x + 60 = 0 \\\Rightarrow x^2 - 11x + 30 = 0 \\)",
+        "workingOut": "\\( 2x^2 - 22x + 60 = 0 \\Rightarrow x^2 - 11x + 30 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (x - 5 \\)\\( x - 6 \\) = 0 \\\Rightarrow x = 5, y = 6 \\\text{ or } x = 6, y = 5)",
+        "workingOut": "\\( (x - 5 \\)\\( x - 6 \\) = 0 \\Rightarrow x = 5, y = 6 \\\text{ or } x = 6, y = 5)",
         "graphData": null
       }
     ],
@@ -1421,38 +1904,34 @@ export const Y11_CH1E_QUESTIONS = [
   },
   {
     "id": "34fb82c3ec8c5df6ffba7bb09010cd3b",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "\\\\$10{,}000 is invested in two accounts: one earning 5% and another earning 8% annual interest. The total interest earned in one year is \\\\$620. How much was invested in each account?",
-    "options": [
-      "\\( $-6000 at -5%, $-4000 at -8% \\)",
-      "\\( $5998 at 3%, $3998 at 6% \\)",
-      "\\( $6000 at 5%, $4000 at 8% \\)",
-      "\\( $6001 at 6%, $4001 at 9% \\)"
-    ],
-    "a": "\\( $6000 at 5%, $4000 at 8% \\)",
+    "options": [],
+    "answer": "$6000 at 5%, $4000 at 8%",
     "blanks": [],
     "hint": "Set up equations for total investment and total interest.",
+    "solution": "\\\\( x + y = 10000 \\\\), \\\\( 0.05x + 0.08y = 620 \\\\). Solve: x = 6000, y = 4000.",
     "solutionSteps": [
       {
         "explanation": "Let x = amount at 5%, y = amount at 8%.",
-        "workingOut": "\\( x + y = 10{,}000 \\\quad \\\text{and} \\\quad 0.05x + 0.08y = 620 \\)",
+        "workingOut": "\\\\(x + y = 10{,}000 \\\\quad \\\\text{and} \\\\quad 0.05x + 0.08y = 620\\\\)",
         "graphData": null
       },
       {
         "explanation": "Multiply the interest equation by 100.",
-        "workingOut": "\\( 5x + 8y = 62{,}000 \\)",
+        "workingOut": "\\\\(5x + 8y = 62{,}000\\\\)",
         "graphData": null
       },
       {
         "explanation": "Multiply the first equation by 5 and subtract.",
-        "workingOut": "\\( 5x + 8y - 5x - 5y = 62{,}000 - 50{,}000 \\\Rightarrow 3y = 12{,}000 \\)",
+        "workingOut": "\\\\(5x + 8y - 5x - 5y = 62{,}000 - 50{,}000 \\\\Rightarrow 3y = 12{,}000\\\\)",
         "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\( y = 4{,}000, \\\quad x = 6{,}000 \\)",
+        "workingOut": "\\\\(y = 4{,}000, \\\\quad x = 6{,}000\\\\)",
         "graphData": null
       }
     ],
@@ -1466,18 +1945,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve the simultaneous equations:\\n\\\\(  4x - 5y = 13  \\\\)\\n\\\\(  6x + 5y = 57  \\\\)",
     "options": [
-      "\\( x = -7, \\; y = -3 \\)",
-      "\\( x = -7, \\; y = 3 \\)",
-      "\\( x = 7, \\; y = -3 \\)",
-      "\\( x = 7, \\; y = 3 \\)"
+      {
+        "text": "\\( x = 7, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -7, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 7, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -7, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -7, \\; y = -3 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Notice the y-coefficients are already opposite — add the equations directly.",
+    "solution": "\\( x = -7, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Add the two equations — the y-terms cancel.",
-        "workingOut": "\\( 4x - 5y + 6x + 5y = 13 + 57 \\\Rightarrow 10x = 70 \\)",
+        "workingOut": "\\( 4x - 5y + 6x + 5y = 13 + 57 \\Rightarrow 10x = 70 \\)",
         "graphData": null
       },
       {
@@ -1487,7 +1979,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x = 7 into the first equation.",
-        "workingOut": "\\( 4(7 \\) - 5y = 13 \\\Rightarrow 28 - 5y = 13 \\\Rightarrow 5y = 15 \\\Rightarrow y = 3)",
+        "workingOut": "\\( 4(7 \\) - 5y = 13 \\Rightarrow 28 - 5y = 13 \\Rightarrow 5y = 15 \\Rightarrow y = 3)",
         "graphData": null
       }
     ],
@@ -1496,38 +1988,34 @@ export const Y11_CH1E_QUESTIONS = [
   },
   {
     "id": "35e8d9c99a6f09056cce7811f2d584fa",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "5 kg of Mix A and 3 kg of Mix B costs \\\\$43. 3 kg of Mix A and 5 kg of Mix B costs \\\\$37. Find the cost per kg of each mix.",
-    "options": [
-      "\\( Mix A = $-6.-50/kg, Mix B = $-3.-50/kg \\)",
-      "\\( Mix A = $4.48/kg, Mix B = $1.48/kg \\)",
-      "\\( Mix A = $6.50/kg, Mix B = $3.50/kg \\)",
-      "\\( Mix A = $7.51/kg, Mix B = $4.51/kg \\)"
-    ],
-    "a": "\\( Mix A = $6.50/kg, Mix B = $3.50/kg \\)",
+    "options": [],
+    "answer": "Mix A = $6.50/kg, Mix B = $3.50/kg",
     "blanks": [],
     "hint": "Set up equations from the cost information.",
+    "solution": "\\\\( 5a + 3b = 43 \\\\), \\\\( 3a + 5b = 37 \\\\). Add: a + b = 10. Subtract: a - b = 3. Solve: a = 6.5, b = 3.5.",
     "solutionSteps": [
       {
         "explanation": "Write the equations.",
-        "workingOut": "\\( 5a + 3b = 43 \\\quad \\\text{and} \\\quad 3a + 5b = 37 \\)",
+        "workingOut": "\\\\(5a + 3b = 43 \\\\quad \\\\text{and} \\\\quad 3a + 5b = 37\\\\)",
         "graphData": null
       },
       {
         "explanation": "Add the equations.",
-        "workingOut": "\\( 8a + 8b = 80 \\\Rightarrow a + b = 10 \\)",
+        "workingOut": "\\\\(8a + 8b = 80 \\\\Rightarrow a + b = 10\\\\)",
         "graphData": null
       },
       {
         "explanation": "Subtract the second from the first.",
-        "workingOut": "\\( 2a - 2b = 6 \\\Rightarrow a - b = 3 \\)",
+        "workingOut": "\\\\(2a - 2b = 6 \\\\Rightarrow a - b = 3\\\\)",
         "graphData": null
       },
       {
         "explanation": "Solve the simple system.",
-        "workingOut": "\\( a = 6.50, \\\quad b = 3.50 \\)",
+        "workingOut": "\\\\(a = 6.50, \\\\quad b = 3.50\\\\)",
         "graphData": null
       }
     ],
@@ -1541,14 +2029,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  x - y = 2  \\\\)\\n\\\\(  x^2 + y^2 = 74  \\\\)",
     "options": [
-      "\\( x = -7 \\)",
-      "\\( x = 5 \\)",
-      "\\( x = 7 \\)",
-      "\\( x = 9 \\)"
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -7 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Express \\( x \\) as \\( y + 2 \\) and substitute.",
+    "solution": "\\( x = -7 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( x \\) in terms of \\( y \\).",
@@ -1596,13 +2097,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\\\( 3x^2 + 5x - 1 = 0 \\\\)",
     "options": [
-      "\\( -2 \\)",
-      "\\( 0 \\)",
-      "\\( 1 \\)"
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 0 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Apply formula with $a=3, b=5, c=-1$.",
+    "solution": "\\( 0 \\)",
     "solutionSteps": [
       {
         "explanation": "Expand the algebraic terms.",
@@ -1611,7 +2122,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\( x = \\frac\{-5 \pm \\sqrt\{25+12\}\}\{6\} = \\frac\{-5 \pm \\sqrt\{37\}\}\{6\} \\)",
+        "workingOut": "\\( x = \\frac{-5 pm \\sqrt{25+12}}{6} = \\frac{-5 pm \\sqrt{37}}{6} \\)",
         "graphData": null
       }
     ],
@@ -1625,14 +2136,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  3x - y = 5  \\\\)\\n\\\\(  2x + y = 10  \\\\)",
     "options": [
-      "\\( y = -4 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)",
-      "\\( y = 6 \\)"
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 4 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute it back.",
+    "solution": "\\( y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Add the equations to find \\( x \\).",
@@ -1660,14 +2184,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  x + 2y = 3  \\\\)\\n\\\\(  2xy - x^2 = 1  \\\\)",
     "options": [
-      "\\( y = -1, \\; -5 \\)",
-      "\\( y = -1, \\; 5 \\)",
-      "\\( y = 1, \\; -5 \\)",
-      "\\( y = 1, \\; 5 \\)"
+      {
+        "text": "\\( y = 1, \\; 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -1, \\; -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 1, \\; -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -1, \\; 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -1, \\; -5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Substitute \\( x = 3 - 2y \\) into the second equation and solve the quadratic in \\( y \\).",
+    "solution": "\\( y = -1, \\; -5 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( x \\).",
@@ -1695,13 +2232,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  x + 2y = 3  \\\\)\\n\\\\(  2xy - x^2 = 1  \\\\)",
     "options": [
-      "\\( x = -1 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)"
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Express \\( x = 3 - 2y \\) from the linear equation and substitute.",
+    "solution": "\\( x = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Rearrange the linear equation.",
@@ -1749,33 +2296,46 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Twice a number plus three times another number equals 23. Three times the first number minus twice the second equals 2. Find both numbers.",
     "options": [
-      "\\( -4 \\text{ and } 5 \\)",
-      "\\( 3 \\text{ and } 6 \\)",
-      "\\( 4 \\text{ and } 5 \\)",
-      "\\( 5 \\text{ and } 4 \\)"
+      {
+        "text": "\\( -4 \\text{ and } 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\text{ and } 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\text{ and } 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\text{ and } 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -4 \\text{ and } 5 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Set up the simultaneous equations from the word problem.",
+    "solution": "\\( -4 \\text{ and } 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Write the equations.",
-        "workingOut": "\\( 2x + 3y = 23 \\\quad \\\text{and} \\\quad 3x - 2y = 2 \\)",
+        "workingOut": "\\( 2x + 3y = 23 \\quad \\\text{and} \\quad 3x - 2y = 2 \\)",
         "graphData": null
       },
       {
         "explanation": "Multiply first by 2, second by 3 to eliminate y.",
-        "workingOut": "\\( 4x + 6y = 46 \\\quad \\\text{and} \\\quad 9x - 6y = 6 \\)",
+        "workingOut": "\\( 4x + 6y = 46 \\quad \\\text{and} \\quad 9x - 6y = 6 \\)",
         "graphData": null
       },
       {
         "explanation": "Add.",
-        "workingOut": "\\( 13x = 52 \\\Rightarrow x = 4 \\)",
+        "workingOut": "\\( 13x = 52 \\Rightarrow x = 4 \\)",
         "graphData": null
       },
       {
         "explanation": "Find y.",
-        "workingOut": "\\( 2(4 \\) + 3y = 23 \\\Rightarrow 3y = 15 \\\Rightarrow y = 5)",
+        "workingOut": "\\( 2(4 \\) + 3y = 23 \\Rightarrow 3y = 15 \\Rightarrow y = 5)",
         "graphData": null
       }
     ],
@@ -1789,14 +2349,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  p  \\\\):\\n\\\\(  p - 3q = 2  \\\\)\\n\\\\(  2p - 3q = 7  \\\\)",
     "options": [
-      "\\( p = -5 \\)",
-      "\\( p = 3 \\)",
-      "\\( p = 5 \\)",
-      "\\( p = 7 \\)"
+      {
+        "text": "\\( p = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( p = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( p = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( p = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( p = 5 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Subtract the first equation from the second to eliminate \\( q \\).",
+    "solution": "\\( p = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the first equation from the second.",
@@ -1819,14 +2392,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  y = 2x  \\\\)\\n\\\\(  3x + y = 15  \\\\)",
     "options": [
-      "\\( y = -6 \\)",
-      "\\( y = 4 \\)",
-      "\\( y = 6 \\)",
-      "\\( y = 8 \\)"
+      {
+        "text": "\\( y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Solve for \\( x \\) first, then substitute it into \\( y = 2x \\).",
+    "solution": "\\( y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = 2x \\) into the second equation to solve for \\( x \\).",
@@ -1854,14 +2440,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve the simultaneous equations:\\n\\\\(  5x - 2y = 1  \\\\)\\n\\\\(  3x + 4y = 24  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -9 \\)",
-      "\\( x = -2, \\; y = 9 \\)",
-      "\\( x = 2, \\; y = -9 \\)",
-      "\\( x = 2, \\; y = 9 \\)"
+      {
+        "text": "\\( x = 2, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -9 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Multiply the first equation by 2 so the y-coefficients cancel when added.",
+    "solution": "\\( x = -2, \\; y = -9 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the first equation by 2.",
@@ -1870,7 +2469,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Add to the second equation.",
-        "workingOut": "\\( 10x - 4y + 3x + 4y = 2 + 24 \\\Rightarrow 13x = 26 \\)",
+        "workingOut": "\\( 10x - 4y + 3x + 4y = 2 + 24 \\Rightarrow 13x = 26 \\)",
         "graphData": null
       },
       {
@@ -1880,7 +2479,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x = 2 into the first equation to find y.",
-        "workingOut": "\\( 5(2 \\) - 2y = 1 \\\Rightarrow 10 - 2y = 1 \\\Rightarrow 2y = 9 \\\Rightarrow y = \\\frac{9}{2})",
+        "workingOut": "\\( 5(2 \\) - 2y = 1 \\Rightarrow 10 - 2y = 1 \\Rightarrow 2y = 9 \\Rightarrow y = \\\frac{9}{2})",
         "graphData": null
       }
     ],
@@ -1894,14 +2493,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x - 2y = 8  \\\\)\\n\\\\(  4x + 3y = 22  \\\\)",
     "options": [
-      "\\( x = -4 \\)",
-      "\\( x = 2 \\)",
-      "\\( x = 4 \\)",
-      "\\( x = 6 \\)"
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 4 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Make coefficients of \\( y \\) opposite in sign and equal in magnitude by multiplying.",
+    "solution": "\\( x = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply equations to align \\( y \\) terms.",
@@ -1929,18 +2541,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x - y = 2  \\\\)\\n\\\\(  x^2 - y^2 = 8  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -1 \\)",
-      "\\( x = -3, \\; y = 1 \\)",
-      "\\( x = 3, \\; y = -1 \\)",
-      "\\( x = 3, \\; y = 1 \\)"
+      {
+        "text": "\\( x = 3, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -1 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor the difference of squares and use the known difference.",
+    "solution": "\\( x = -3, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Factor.",
-        "workingOut": "\\( (x - y \\)\\( x + y \\) = 8 \\\Rightarrow 2\\( x + y \\) = 8)",
+        "workingOut": "\\( (x - y \\)\\( x + y \\) = 8 \\Rightarrow 2\\( x + y \\) = 8)",
         "graphData": null
       },
       {
@@ -1950,7 +2575,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve x - y = 2 and x + y = 4.",
-        "workingOut": "\\( 2x = 6 \\\Rightarrow x = 3, \\\quad y = 1 \\)",
+        "workingOut": "\\( 2x = 6 \\Rightarrow x = 3, \\quad y = 1 \\)",
         "graphData": null
       }
     ],
@@ -1964,14 +2589,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  y = 2x  \\\\)\\n\\\\(  3x + y = 15  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 3 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Substitute \\( y = 2x \\) into the second equation.",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = 2x \\) from the first equation into the second equation.",
@@ -1999,33 +2637,46 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  x + 2y + z = 8  \\\\)\\n\\\\(  2x + y + z = 7  \\\\)\\n\\\\(  x + y + 2z = 9  \\\\)",
     "options": [
-      "\\( x = -1, \\; y = -2 \\)",
-      "\\( x = -1, \\; y = 2 \\)",
-      "\\( x = 1, \\; y = -2 \\)",
-      "\\( x = 1, \\; y = 2 \\)"
+      {
+        "text": "\\( x = -1, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1, \\; y = -2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Subtract equations in pairs to reduce the system.",
+    "solution": "\\( x = -1, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract equation 2 from equation 1.",
-        "workingOut": "\\( -x + y = 1 \\\Rightarrow x = y - 1 \\)",
+        "workingOut": "\\( -x + y = 1 \\Rightarrow x = y - 1 \\)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation 3 from equation 1.",
-        "workingOut": "\\( y - z = -1 \\\Rightarrow z = y + 1 \\)",
+        "workingOut": "\\( y - z = -1 \\Rightarrow z = y + 1 \\)",
         "graphData": null
       },
       {
         "explanation": "Substitute both into equation 1.",
-        "workingOut": "\\( (y - 1 \\) + 2y + \\( y + 1 \\) = 8 \\\Rightarrow 4y = 8 \\\Rightarrow y = 2)",
+        "workingOut": "\\( (y - 1 \\) + 2y + \\( y + 1 \\) = 8 \\Rightarrow 4y = 8 \\Rightarrow y = 2)",
         "graphData": null
       },
       {
         "explanation": "Find x and z.",
-        "workingOut": "\\( x = 1, \\\quad z = 3 \\)",
+        "workingOut": "\\( x = 1, \\quad z = 3 \\)",
         "graphData": null
       }
     ],
@@ -2039,13 +2690,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  y = 3x - 2  \\\\)\\n\\\\(  y = x^2 - 2x + 2  \\\\)",
     "options": [
-      "\\( x = -1 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)"
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Equate the two expressions for \\( y \\).",
+    "solution": "\\( x = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the quadratic expression equal to the linear expression.",
@@ -2078,14 +2739,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + 3y = 10  \\\\)\\n\\\\(  xy = 8  \\\\)",
     "options": [
-      "\\( x = -6, \\; y = -4 \\)",
-      "\\( x = -6, \\; y = 4 \\)",
-      "\\( x = 6, \\; y = -4 \\)",
-      "\\( x = 6, \\; y = 4 \\)"
+      {
+        "text": "\\( x = -6, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -6, \\; y = -4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -6, \\; y = -4 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Express x from the first equation and substitute into xy = 8.",
+    "solution": "\\( x = -6, \\; y = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x from the first equation.",
@@ -2104,7 +2778,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (3y - 4 \\)\\( y - 2 \\) = 0 \\\Rightarrow y = \\\frac{4}{3}, x = 6 \\\text{ or } y = 2, x = 4)",
+        "workingOut": "\\( (3y - 4 \\)\\( y - 2 \\) = 0 \\Rightarrow y = \\\frac{4}{3}, x = 6 \\\text{ or } y = 2, x = 4)",
         "graphData": null
       }
     ],
@@ -2118,17 +2792,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find the value of \\\\(  c  \\\\) for which the line \\\\(  y = 2x + c  \\\\) is tangent to \\\\(  y = x^2 - 4x + 5  \\\\).",
     "options": [
-      "\\( -2 \\)",
-      "\\( 0 \\)",
-      "\\( 1 \\)"
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 0 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Set the discriminant to zero for tangency.",
+    "solution": "\\( 0 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the expressions equal.",
-        "workingOut": "\\( x^2 - 4x + 5 = 2x + c \\\Rightarrow x^2 - 6x + (5 - c \\) = 0)",
+        "workingOut": "\\( x^2 - 4x + 5 = 2x + c \\Rightarrow x^2 - 6x + (5 - c \\) = 0)",
         "graphData": null
       },
       {
@@ -2138,7 +2822,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Set discriminant to zero.",
-        "workingOut": "\\( 16 + 4c = 0 \\\Rightarrow c = -4 \\)",
+        "workingOut": "\\( 16 + 4c = 0 \\Rightarrow c = -4 \\)",
         "graphData": null
       }
     ],
@@ -2152,14 +2836,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\\\( x^2 - 6x + 4 = 0 \\\\)",
     "options": [
-      "\\( -2 \\)",
-      "\\( 0 \\)",
-      "\\( 2 \\)",
-      "\\( 3 \\)"
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -2 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Use quadratic formula: $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+    "solution": "\\( -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Expand the algebraic terms.",
@@ -2168,7 +2865,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\( x = \\frac\{6 \pm \\sqrt\{36-16\}\}\{2\} = \\frac\{6 \pm \\sqrt\{20\}\}\{2\} = 3 \pm \\sqrt\{5\} \\)",
+        "workingOut": "\\( x = \\frac{6 pm \\sqrt{36-16}}{2} = \\frac{6 pm \\sqrt{20}}{2} = 3 pm \\sqrt{5} \\)",
         "graphData": null
       }
     ],
@@ -2182,33 +2879,46 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve simultaneously:\\n\\\\(  \\\\\\sqrt{x} + \\\\\\sqrt{y} = 5  \\\\)\\n\\\\(  x + y = 13  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -9 \\)",
-      "\\( x = -4, \\; y = 9 \\)",
-      "\\( x = 4, \\; y = -9 \\)",
-      "\\( x = 4, \\; y = 9 \\)"
+      {
+        "text": "\\( x = 4, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -9 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Use substitution u = sqrt(x), v = sqrt(y) to reduce to a standard sum/product problem.",
+    "solution": "\\( x = -4, \\; y = -9 \\)",
     "solutionSteps": [
       {
         "explanation": "Let u = sqrt(x), v = sqrt(y). Then u + v = 5 and u^2 + v^2 = 13.",
-        "workingOut": "\\( u + v = 5, \\\quad u^2 + v^2 = 13 \\)",
+        "workingOut": "\\( u + v = 5, \\quad u^2 + v^2 = 13 \\)",
         "graphData": null
       },
       {
         "explanation": "Find uv using (u+v)^2 = u^2 + 2uv + v^2.",
-        "workingOut": "\\( 25 = 13 + 2uv \\\Rightarrow uv = 6 \\)",
+        "workingOut": "\\( 25 = 13 + 2uv \\Rightarrow uv = 6 \\)",
         "graphData": null
       },
       {
         "explanation": "Solve u + v = 5, uv = 6.",
-        "workingOut": "\\( t^2 - 5t + 6 = 0 \\\Rightarrow (t - 2 \\)\\( t - 3 \\) = 0)",
+        "workingOut": "\\( t^2 - 5t + 6 = 0 \\Rightarrow (t - 2 \\)\\( t - 3 \\) = 0)",
         "graphData": null
       },
       {
         "explanation": "Convert back to x and y.",
-        "workingOut": "\\( u = 2 \\\Rightarrow x = 4, v = 3 \\\Rightarrow y = 9 \\\text{ (or vice versa \\)})",
+        "workingOut": "\\( u = 2 \\Rightarrow x = 4, v = 3 \\Rightarrow y = 9 \\\text{ (or vice versa \\)})",
         "graphData": null
       }
     ],
@@ -2222,14 +2932,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "A boat travels upstream at 12 km/h and downstream at 18 km/h. Find the boat's speed in still water and the speed of the current.",
     "options": [
-      "\\( t = -15 \\)",
-      "\\( t = 13 \\)",
-      "\\( t = 15 \\)",
-      "\\( t = 17 \\)"
+      {
+        "text": "\\( t = 15 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( t = -15 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( t = 13 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( t = 17 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( t = -15 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Let b = boat speed, c = current speed. Set up equations for upstream and downstream.",
+    "solution": "\\( t = -15 \\)",
     "solutionSteps": [
       {
         "explanation": "Upstream: boat speed minus current.",
@@ -2243,7 +2966,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Add the equations.",
-        "workingOut": "\\( 2b = 30 \\\Rightarrow b = 15 \\)",
+        "workingOut": "\\( 2b = 30 \\Rightarrow b = 15 \\)",
         "graphData": null
       },
       {
@@ -2262,14 +2985,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 3  \\\\)\\n\\\\(  x^3 + y^3 = 9  \\\\)",
     "options": [
-      "\\( x = -1, \\; y = -2 \\)",
-      "\\( x = -1, \\; y = 2 \\)",
-      "\\( x = 1, \\; y = -2 \\)",
-      "\\( x = 1, \\; y = 2 \\)"
+      {
+        "text": "\\( x = 1, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1, \\; y = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1, \\; y = -2 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the sum of cubes factorisation identity.",
+    "solution": "\\( x = -1, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Factor x^3 + y^3 using the identity.",
@@ -2283,12 +3019,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Use (x+y)^2 = x^2 + 2xy + y^2 = 9 to find xy.",
-        "workingOut": "\\( 9 - 2xy - xy = 3 \\\Rightarrow 3xy = 6 \\\Rightarrow xy = 2 \\)",
+        "workingOut": "\\( 9 - 2xy - xy = 3 \\Rightarrow 3xy = 6 \\Rightarrow xy = 2 \\)",
         "graphData": null
       },
       {
         "explanation": "Solve x + y = 3, xy = 2.",
-        "workingOut": "\\( t^2 - 3t + 2 = 0 \\\Rightarrow (t - 1 \\)\\( t - 2 \\) = 0 \\\Rightarrow x = 1, y = 2 \\\text{ or } x = 2, y = 1)",
+        "workingOut": "\\( t^2 - 3t + 2 = 0 \\Rightarrow (t - 1 \\)\\( t - 2 \\) = 0 \\Rightarrow x = 1, y = 2 \\\text{ or } x = 2, y = 1)",
         "graphData": null
       }
     ],
@@ -2302,14 +3038,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  x + y + z = 9  \\\\)\\n\\\\(  x + 2y + 3z = 22  \\\\)\\n\\\\(  2x + y + z = 12  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -1 \\)",
-      "\\( x = -3, \\; y = 1 \\)",
-      "\\( x = 3, \\; y = -1 \\)",
-      "\\( x = 3, \\; y = 1 \\)"
+      {
+        "text": "\\( x = -3, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -1 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Subtract equations to simplify the system.",
+    "solution": "\\( x = -3, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract equation 1 from equation 3.",
@@ -2328,7 +3077,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve: y = 6 - z, substitute.",
-        "workingOut": "\\( 2(6 - z \\) + 3z = 19 \\\Rightarrow z = 7, \\\quad y = -1)",
+        "workingOut": "\\( 2(6 - z \\) + 3z = 19 \\Rightarrow z = 7, \\quad y = -1)",
         "graphData": null
       }
     ],
@@ -2342,13 +3091,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x + y = 2  \\\\)\\n\\\\(  x - y = -6  \\\\)",
     "options": [
-      "\\( x = -1 \\)",
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)"
+      {
+        "text": "\\( x = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Add the two equations to eliminate \\( y \\).",
+    "solution": "\\( x = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Add the two equations directly.",
@@ -2371,12 +3130,19 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  y = 2x^2  \\\\)\\n\\\\(  y = 6x - x^2  \\\\)",
     "options": [
-      "\\( y = 0, \\; -8 \\)",
-      "\\( y = 0, \\; 8 \\)"
+      {
+        "text": "\\( y = 0, \\; 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0, \\; -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 0, \\; -8 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Determine the corresponding \\( y \\) values from \\( x = 0, 2 \\).",
+    "solution": "\\( y = 0, \\; -8 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x = 0 \\).",
@@ -2399,14 +3165,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  2x + 3y = 31  \\\\)\\n\\\\(  3x - y = 19  \\\\)",
     "options": [
-      "\\( y = -5 \\)",
-      "\\( y = 3 \\)",
-      "\\( y = 5 \\)",
-      "\\( y = 7 \\)"
+      {
+        "text": "\\( y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Solve for \\( x \\) first, then substitute back.",
+    "solution": "\\( y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Solve for \\( x \\).",
@@ -2429,14 +3208,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve the simultaneous equations:\\n\\\\(  2x + 5y = 19  \\\\)\\n\\\\(  3x - 2y = 0  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -3 \\)",
-      "\\( x = -2, \\; y = 3 \\)",
-      "\\( x = 2, \\; y = -3 \\)",
-      "\\( x = 2, \\; y = 3 \\)"
+      {
+        "text": "\\( x = -2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -3 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Multiply both equations to make the y-coefficients equal in magnitude but opposite in sign.",
+    "solution": "\\( x = -2, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the first equation by 2 and the second by 5 so the y-coefficients become +10 and -10.",
@@ -2455,7 +3247,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x = 2 into the second equation to find y.",
-        "workingOut": "\\( 3(2 \\) - 2y = 0 \\\Rightarrow 6 = 2y \\\Rightarrow y = 3)",
+        "workingOut": "\\( 3(2 \\) - 2y = 0 \\Rightarrow 6 = 2y \\Rightarrow y = 3)",
         "graphData": null
       }
     ],
@@ -2469,14 +3261,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  a  \\\\):\\n\\\\(  a = 3b + 2  \\\\)\\n\\\\(  a - 2b = 5  \\\\)",
     "options": [
-      "\\( a = -11 \\)",
-      "\\( a = 11 \\)",
-      "\\( a = 13 \\)",
-      "\\( a = 9 \\)"
+      {
+        "text": "\\( a = 13 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( a = 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( a = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( a = -11 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( a = 11 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Solve for \\( b \\) first, then find \\( a \\).",
+    "solution": "\\( a = 11 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( a = 3b + 2 \\) into the second equation.",
@@ -2504,14 +3309,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  y = 6 - x  \\\\)\\n\\\\(  y = x^2  \\\\)",
     "options": [
-      "\\( x = -2 \\)",
-      "\\( x = 0 \\)",
-      "\\( x = 2 \\)",
-      "\\( x = 4 \\)"
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Substitute \\( y = x^2 \\) into the linear equation.",
+    "solution": "\\( x = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute the second equation into the first.",
@@ -2544,23 +3362,36 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  x + y = 5  \\\\)\\n\\\\(  y + z = 7  \\\\)\\n\\\\(  x + z = 6  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -3 \\)",
-      "\\( x = -2, \\; y = 3 \\)",
-      "\\( x = 2, \\; y = -3 \\)",
-      "\\( x = 2, \\; y = 3 \\)"
+      {
+        "text": "\\( x = -2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Add all three equations to find the total sum, then subtract each equation.",
+    "solution": "\\( x = -2, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Add all three equations.",
-        "workingOut": "\\( 2(x + y + z \\) = 18 \\\Rightarrow x + y + z = 9)",
+        "workingOut": "\\( 2(x + y + z \\) = 18 \\Rightarrow x + y + z = 9)",
         "graphData": null
       },
       {
         "explanation": "Subtract each equation from x + y + z = 9.",
-        "workingOut": "\\( z = 9 - 5 = 4, \\\quad x = 9 - 7 = 2, \\\quad y = 9 - 6 = 3 \\)",
+        "workingOut": "\\( z = 9 - 5 = 4, \\quad x = 9 - 7 = 2, \\quad y = 9 - 6 = 3 \\)",
         "graphData": null
       }
     ],
@@ -2574,14 +3405,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  2x + 3y = 16  \\\\)\\n\\\\(  xy = 10  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Substitute \\( y = \\frac{10}{x} \\) into the linear equation.",
+    "solution": "\\( x = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Rearrange the product equation to isolate \\( y \\).",
@@ -2619,14 +3463,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\\\( 2x^2 - 3x - 4 = 0 \\\\)",
     "options": [
-      "\\( -3 \\)",
-      "\\( 1 \\)",
-      "\\( 3 \\)",
-      "\\( 4 \\)"
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -3 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Apply formula with $a=2, b=-3, c=-4$.",
+    "solution": "\\( -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Expand the algebraic terms.",
@@ -2635,7 +3492,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\( x = \\frac\{3 \pm \\sqrt\{9+32\}\}\{4\} = \\frac\{3 \pm \\sqrt\{41\}\}\{4\} \\)",
+        "workingOut": "\\( x = \\frac{3 pm \\sqrt{9+32}}{4} = \\frac{3 pm \\sqrt{41}}{4} \\)",
         "graphData": null
       }
     ],
@@ -2649,14 +3506,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  x = 4y + 3  \\\\)\\n\\\\(  2x - y = 13  \\\\)",
     "options": [
-      "\\( x = -7 \\)",
-      "\\( x = 5 \\)",
-      "\\( x = 7 \\)",
-      "\\( x = 9 \\)"
+      {
+        "text": "\\( x = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 7 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Substitute \\( x = 4y + 3 \\) to find \\( y \\) first.",
+    "solution": "\\( x = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x = 4y + 3 \\) into the second equation.",
@@ -2684,14 +3554,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x + 4y = 25  \\\\)\\n\\\\(  4x + 3y = 24  \\\\)",
     "options": [
-      "\\( y = -4 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)",
-      "\\( y = 6 \\)"
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 4 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Solve for \\( x \\) first, then substitute it back.",
+    "solution": "\\( y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Solve for \\( x \\) by cross-multiplication of coefficients.",
@@ -2719,14 +3602,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x - y = 4  \\\\)\\n\\\\(  x^2 + y^2 = 40  \\\\)",
     "options": [
-      "\\( x = -6, \\; y = -2 \\)",
-      "\\( x = -6, \\; y = 2 \\)",
-      "\\( x = 6, \\; y = -2 \\)",
-      "\\( x = 6, \\; y = 2 \\)"
+      {
+        "text": "\\( x = -6, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -6, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6, \\; y = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -6, \\; y = -2 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Express x and substitute into the sum of squares.",
+    "solution": "\\( x = -6, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x.",
@@ -2740,12 +3636,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 2y^2 + 8y + 16 = 40 \\\Rightarrow y^2 + 4y - 12 = 0 \\)",
+        "workingOut": "\\( 2y^2 + 8y + 16 = 40 \\Rightarrow y^2 + 4y - 12 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (y + 6 \\)\\( y - 2 \\) = 0 \\\Rightarrow y = 2, x = 6 \\\text{ or } y = -6, x = -2)",
+        "workingOut": "\\( (y + 6 \\)\\( y - 2 \\) = 0 \\Rightarrow y = 2, x = 6 \\\text{ or } y = -6, x = -2)",
         "graphData": null
       }
     ],
@@ -2759,14 +3655,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  3x - y = 5  \\\\)\\n\\\\(  2x + y = 10  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 3 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Add the equations to eliminate \\( y \\).",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Add the equations.",
@@ -2794,14 +3703,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x + 2y = 17  \\\\)\\n\\\\(  3x + 5y = 29  \\\\)",
     "options": [
-      "\\( y = -4 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)",
-      "\\( y = 6 \\)"
+      {
+        "text": "\\( y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 4 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Subtract the first equation from the second to eliminate \\( 3x \\).",
+    "solution": "\\( y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract equations.",
@@ -2824,13 +3746,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\\\( 5x^2 - 8x + 2 = 0 \\\\)",
     "options": [
-      "\\( -2 \\)",
-      "\\( 0 \\)",
-      "\\( 1 \\)"
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 0 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Apply formula and simplify.",
+    "solution": "\\( 0 \\)",
     "solutionSteps": [
       {
         "explanation": "Expand the algebraic terms.",
@@ -2839,7 +3771,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\( x = \\frac\{8 \pm \\sqrt\{64-40\}\}\{10\} = \\frac\{8 \pm \\sqrt\{24\}\}\{10\} = \\frac\{4 \pm \\sqrt\{6\}\}\{5\} \\)",
+        "workingOut": "\\( x = \\frac{8 pm \\sqrt{64-40}}{10} = \\frac{8 pm \\sqrt{24}}{10} = \\frac{4 pm \\sqrt{6}}{5} \\)",
         "graphData": null
       }
     ],
@@ -2853,18 +3785,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "A right triangle has a hypotenuse of 13 cm. One leg is 7 cm longer than the other. Find the lengths of the two legs.",
     "options": [
-      "\\( -5 cm and -12 cm \\)",
-      "\\( 3 cm and 10 cm \\)",
-      "\\( 5 cm and 12 cm \\)",
-      "\\( 6 cm and 13 cm \\)"
+      {
+        "text": "\\( 3 cm and 10 cm \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 cm and 12 cm \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 6 cm and 13 cm \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -5 cm and -12 cm \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 5 cm and 12 cm \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Use Pythagoras' theorem and the given relationship between the sides.",
+    "solution": "\\( 5 cm and 12 cm \\)",
     "solutionSteps": [
       {
         "explanation": "Let b be the shorter leg, a = b + 7.",
-        "workingOut": "\\( a^2 + b^2 = 169 \\\quad \\\text{and} \\\quad a = b + 7 \\)",
+        "workingOut": "\\( a^2 + b^2 = 169 \\quad \\\text{and} \\quad a = b + 7 \\)",
         "graphData": null
       },
       {
@@ -2874,12 +3819,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 2b^2 + 14b + 49 = 169 \\\Rightarrow b^2 + 7b - 60 = 0 \\)",
+        "workingOut": "\\( 2b^2 + 14b + 49 = 169 \\Rightarrow b^2 + 7b - 60 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise.",
-        "workingOut": "\\( (b + 12 \\)\\( b - 5 \\) = 0 \\\Rightarrow b = 5, a = 12)",
+        "workingOut": "\\( (b + 12 \\)\\( b - 5 \\) = 0 \\Rightarrow b = 5, a = 12)",
         "graphData": null
       }
     ],
@@ -2893,33 +3838,46 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  2x + 3y - z = 9  \\\\)\\n\\\\(  x - 2y + 3z = 8  \\\\)\\n\\\\(  3x + y + 2z = 17  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -1 \\)",
-      "\\( x = -4, \\; y = 1 \\)",
-      "\\( x = 4, \\; y = -1 \\)",
-      "\\( x = 4, \\; y = 1 \\)"
+      {
+        "text": "\\( x = 4, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -1 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Eliminate one variable by combining pairs of equations.",
+    "solution": "\\( x = -4, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply equation 2 by 2 and subtract equation 1.",
-        "workingOut": "\\( 2(x - 2y + 3z \\) - \\( 2x + 3y - z \\) = 16 - 9 \\\Rightarrow -7y + 7z = 7 \\\Rightarrow z - y = 1)",
+        "workingOut": "\\( 2(x - 2y + 3z \\) - \\( 2x + 3y - z \\) = 16 - 9 \\Rightarrow -7y + 7z = 7 \\Rightarrow z - y = 1)",
         "graphData": null
       },
       {
         "explanation": "Multiply equation 2 by 3 and subtract equation 3.",
-        "workingOut": "\\( 3(x - 2y + 3z \\) - \\( 3x + y + 2z \\) = 24 - 17 \\\Rightarrow -7y + 7z = 7 \\\Rightarrow z - y = 1)",
+        "workingOut": "\\( 3(x - 2y + 3z \\) - \\( 3x + y + 2z \\) = 24 - 17 \\Rightarrow -7y + 7z = 7 \\Rightarrow z - y = 1)",
         "graphData": null
       },
       {
         "explanation": "So z = y + 1. Substitute into equation 2.",
-        "workingOut": "\\( x - 2y + 3(y + 1 \\) = 8 \\\Rightarrow x + y = 5)",
+        "workingOut": "\\( x - 2y + 3(y + 1 \\) = 8 \\Rightarrow x + y = 5)",
         "graphData": null
       },
       {
         "explanation": "Substitute z = y + 1 and x = 5 - y into equation 1.",
-        "workingOut": "\\( 2(5 - y \\) + 3y - \\( y + 1 \\) = 9 \\\Rightarrow 9 = 9 \\\text{ \\( always true \\)})",
+        "workingOut": "\\( 2(5 - y \\) + 3y - \\( y + 1 \\) = 9 \\Rightarrow 9 = 9 \\\text{ \\( always true \\)})",
         "graphData": null
       },
       {
@@ -2938,14 +3896,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  5x - 3y = 29  \\\\)\\n\\\\(  2x - y = 11  \\\\)",
     "options": [
-      "\\( x = -4 \\)",
-      "\\( x = 2 \\)",
-      "\\( x = 4 \\)",
-      "\\( x = 6 \\)"
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 4 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Multiply the second equation by 3 to align the \\( y \\) terms, then subtract.",
+    "solution": "\\( x = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the second equation by 3.",
@@ -2973,23 +3944,36 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "A rectangular garden has an area of 150 m\\\\( ^2 \\\\). Its length is 5 m more than its width. Find the dimensions.",
     "options": [
-      "\\( h = -15 \\)",
-      "\\( h = 13 \\)",
-      "\\( h = 15 \\)",
-      "\\( h = 17 \\)"
+      {
+        "text": "\\( h = 13 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( h = 15 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( h = 17 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( h = -15 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( h = -15 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Use the area formula and the given relationship between length and width.",
+    "solution": "\\( h = -15 \\)",
     "solutionSteps": [
       {
         "explanation": "Let width = w, length = w + 5.",
-        "workingOut": "\\( l = w + 5, \\\quad lw = 150 \\)",
+        "workingOut": "\\( l = w + 5, \\quad lw = 150 \\)",
         "graphData": null
       },
       {
         "explanation": "Substitute.",
-        "workingOut": "\\( (w + 5 \\)w = 150 \\\Rightarrow w^2 + 5w - 150 = 0)",
+        "workingOut": "\\( (w + 5 \\)w = 150 \\Rightarrow w^2 + 5w - 150 = 0)",
         "graphData": null
       },
       {
@@ -2999,7 +3983,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Since w must be positive, w = 10, l = 15.",
-        "workingOut": "\\( w = 10 \\\text{ m}, \\\quad l = 15 \\\text{ m} \\)",
+        "workingOut": "\\( w = 10 \\\text{ m}, \\quad l = 15 \\\text{ m} \\)",
         "graphData": null
       }
     ],
@@ -3013,13 +3997,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  4x + 3y = 10  \\\\)\\n\\\\(  3x + y = 5  \\\\)",
     "options": [
-      "\\( x = -1 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)"
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 1 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply the second equation by 3 to match the \\( y \\) coefficients, then subtract.",
+    "solution": "\\( x = 1 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the second equation by 3.",
@@ -3047,14 +4041,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  v  \\\\):\\n\\\\(  v = 5 - 4u  \\\\)\\n\\\\(  3u + v = 2  \\\\)",
     "options": [
-      "\\( v = -5 \\)",
-      "\\( v = -7 \\)",
-      "\\( v = -9 \\)",
-      "\\( v = 7 \\)"
+      {
+        "text": "\\( v = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( v = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( v = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( v = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( v = -7 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Solve for \\( u \\) first, then substitute it back.",
+    "solution": "\\( v = -7 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute to solve for \\( u \\).",
@@ -3082,14 +4089,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  y = x - 2  \\\\)\\n\\\\(  3x + y = 10  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Substitute the expression for \\( y \\) into the second equation.",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = x - 2 \\) into the second equation.",
@@ -3117,18 +4137,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "A jar contains \\\\$2 and \\\\$1 coins. There are 25 coins in total, worth \\\\$38. How many of each type of coin are there?",
     "options": [
-      "\\( -2 \\text{ and } 12 \\)",
-      "\\( 1 \\text{ and } 13 \\)",
-      "\\( 2 \\text{ and } 12 \\)",
-      "\\( 3 \\text{ and } 11 \\)"
+      {
+        "text": "\\( -2 \\text{ and } 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\text{ and } 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\text{ and } 13 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\text{ and } 12 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -2 \\text{ and } 12 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Set up equations for the number of coins and total value.",
+    "solution": "\\( -2 \\text{ and } 12 \\)",
     "solutionSteps": [
       {
         "explanation": "Let x = number of $2 coins, y = number of $1 coins.",
-        "workingOut": "\\( x + y = 25 \\\quad \\\text{and} \\\quad 2x + y = 38 \\)",
+        "workingOut": "\\( x + y = 25 \\quad \\\text{and} \\quad 2x + y = 38 \\)",
         "graphData": null
       },
       {
@@ -3152,14 +4185,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x - y = 1  \\\\)\\n\\\\(  x^2 + xy + y^2 = 7  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -1 \\)",
-      "\\( x = -2, \\; y = 1 \\)",
-      "\\( x = 2, \\; y = -1 \\)",
-      "\\( x = 2, \\; y = 1 \\)"
+      {
+        "text": "\\( x = -2, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -1 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Express x from the linear equation and substitute.",
+    "solution": "\\( x = -2, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x.",
@@ -3173,12 +4219,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 3y^2 + 3y + 1 = 7 \\\Rightarrow y^2 + y - 2 = 0 \\)",
+        "workingOut": "\\( 3y^2 + 3y + 1 = 7 \\Rightarrow y^2 + y - 2 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (y + 2 \\)\\( y - 1 \\) = 0 \\\Rightarrow y = 1, x = 2 \\\text{ or } y = -2, x = -1)",
+        "workingOut": "\\( (y + 2 \\)\\( y - 1 \\) = 0 \\Rightarrow y = 1, x = 2 \\\text{ or } y = -2, x = -1)",
         "graphData": null
       }
     ],
@@ -3192,14 +4238,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  2x - y = 3  \\\\)\\n\\\\(  x^2 + y^2 = 18  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -3 \\)",
-      "\\( x = -3, \\; y = 3 \\)",
-      "\\( x = 3, \\; y = -3 \\)",
-      "\\( x = 3, \\; y = 3 \\)"
+      {
+        "text": "\\( x = -3, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Express y and substitute into the circle equation.",
+    "solution": "\\( x = -3, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y.",
@@ -3213,12 +4272,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 5x^2 - 12x + 9 = 18 \\\Rightarrow 5x^2 - 12x - 9 = 0 \\)",
+        "workingOut": "\\( 5x^2 - 12x + 9 = 18 \\Rightarrow 5x^2 - 12x - 9 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (5x + 3 \\)\\( x - 3 \\) = 0 \\\Rightarrow x = 3, y = 3 \\\text{ or } x = -\\\frac{3}{5}, y = -\\\frac{21}{5})",
+        "workingOut": "\\( (5x + 3 \\)\\( x - 3 \\) = 0 \\Rightarrow x = 3, y = 3 \\\text{ or } x = -\\\frac{3}{5}, y = -\\\frac{21}{5})",
         "graphData": null
       }
     ],
@@ -3232,14 +4291,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = 5x - 6  \\\\)\\n\\\\(  y = x^2 + x - 6  \\\\)",
     "options": [
-      "\\( x = -6, \\; y = 0 \\)",
-      "\\( x = 0, \\; y = -6 \\)",
-      "\\( x = 0, \\; y = 6 \\)",
-      "\\( x = 1, \\; y = -7 \\)"
+      {
+        "text": "\\( x = 0, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -6, \\; y = 0 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -6, \\; y = 0 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Set the expressions equal and factorise.",
+    "solution": "\\( x = -6, \\; y = 0 \\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
@@ -3258,7 +4330,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Find solutions.",
-        "workingOut": "\\( x = 0 \\\Rightarrow y = -6; \\\quad x = 4 \\\Rightarrow y = 14 \\)",
+        "workingOut": "\\( x = 0 \\Rightarrow y = -6; \\quad x = 4 \\Rightarrow y = 14 \\)",
         "graphData": null
       }
     ],
@@ -3272,14 +4344,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  u  \\\\):\\n\\\\(  v = 5 - 4u  \\\\)\\n\\\\(  3u + v = 2  \\\\)",
     "options": [
-      "\\( u = -3 \\)",
-      "\\( u = 1 \\)",
-      "\\( u = 3 \\)",
-      "\\( u = 5 \\)"
+      {
+        "text": "\\( u = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( u = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( u = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( u = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( u = 3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Substitute \\( v = 5 - 4u \\) into the second equation.",
+    "solution": "\\( u = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute the expression for \\( v \\).",
@@ -3307,33 +4392,46 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "The difference of two positive numbers is 2 and the sum of their squares is 34. Find the numbers.",
     "options": [
-      "\\( -5 \\text{ and } 3 \\)",
-      "\\( 4 \\text{ and } 4 \\)",
-      "\\( 5 \\text{ and } 3 \\)",
-      "\\( 6 \\text{ and } 2 \\)"
+      {
+        "text": "\\( -5 \\text{ and } 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\text{ and } 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 6 \\text{ and } 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\text{ and } 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -5 \\text{ and } 3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Form equations from the given conditions and solve.",
+    "solution": "\\( -5 \\text{ and } 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Let the numbers be x and y where x > y.",
-        "workingOut": "\\( x - y = 2, \\\quad x^2 + y^2 = 34 \\)",
+        "workingOut": "\\( x - y = 2, \\quad x^2 + y^2 = 34 \\)",
         "graphData": null
       },
       {
         "explanation": "Substitute x = y + 2.",
-        "workingOut": "\\( (y + 2 \\)^2 + y^2 = 34 \\\Rightarrow 2y^2 + 4y - 30 = 0)",
+        "workingOut": "\\( (y + 2 \\)^2 + y^2 = 34 \\Rightarrow 2y^2 + 4y - 30 = 0)",
         "graphData": null
       },
       {
         "explanation": "Simplify and factorise.",
-        "workingOut": "\\( y^2 + 2y - 15 = 0 \\\Rightarrow (y - 3 \\)\\( y + 5 \\) = 0)",
+        "workingOut": "\\( y^2 + 2y - 15 = 0 \\Rightarrow (y - 3 \\)\\( y + 5 \\) = 0)",
         "graphData": null
       },
       {
         "explanation": "Since positive, y = 3 and x = 5.",
-        "workingOut": "\\( y = 3, \\\quad x = 5 \\)",
+        "workingOut": "\\( y = 3, \\quad x = 5 \\)",
         "graphData": null
       }
     ],
@@ -3342,38 +4440,34 @@ export const Y11_CH1E_QUESTIONS = [
   },
   {
     "id": "84032d3c6f5028695d4d0b1f30b52831",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 2x  \\\\)\\n\\\\(  y^2 = 3x + 10  \\\\)",
-    "options": [
-      "\\( x = -2, \\; y = -4 \\)",
-      "\\( x = -2, \\; y = 4 \\)",
-      "\\( x = 2, \\; y = -4 \\)",
-      "\\( x = 2, \\; y = 4 \\)"
-    ],
-    "a": "\\( x = -2, \\; y = -4 \\)",
+    "question": "Solve simultaneously:\\n\\\\( y = 2x \\\\)\\n\\\\( y^2 = 3x + 10 \\\\)",
+    "options": [],
+    "answer": "x = 2, y = 4 and x = -5/4, y = -5/2",
     "blanks": [],
     "hint": "Substitute the linear relation into the quadratic equation.",
+    "solution": "Substitute \\\\( y = 2x \\\\): \\\\( 4x^2 = 3x + 10 \\\\Rightarrow 4x^2 - 3x - 10 = 0 \\\\)",
     "solutionSteps": [
       {
         "explanation": "Substitute y = 2x into the second equation.",
-        "workingOut": "\\( (2x \\)^2 = 3x + 10 \\\Rightarrow 4x^2 = 3x + 10)",
+        "workingOut": "\\\\((2x)^2 = 3x + 10 \\\\Rightarrow 4x^2 = 3x + 10\\\\)",
         "graphData": null
       },
       {
         "explanation": "Rearrange.",
-        "workingOut": "\\( 4x^2 - 3x - 10 = 0 \\)",
+        "workingOut": "\\\\(4x^2 - 3x - 10 = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "Factorise.",
-        "workingOut": "\\( (4x + 5 \\)\\( x - 2 \\) = 0)",
+        "workingOut": "\\\\((4x + 5)(x - 2) = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\( x = 2, y = 4 \\\text{ or } x = -\\\frac{5}{4}, y = -\\\frac{5}{2} \\)",
+        "workingOut": "\\\\(x = 2, y = 4 \\\\text{ or } x = -\\\\frac{5}{4}, y = -\\\\frac{5}{2}\\\\)",
         "graphData": null
       }
     ],
@@ -3387,14 +4481,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  2x + 3y = 0  \\\\)\\n\\\\(  3x - y = 22  \\\\)",
     "options": [
-      "\\( y = -2 \\)",
-      "\\( y = -4 \\)",
-      "\\( y = -6 \\)",
-      "\\( y = 4 \\)"
+      {
+        "text": "\\( y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -4 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute it back.",
+    "solution": "\\( y = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Eliminate to solve for \\( x \\).",
@@ -3420,29 +4527,43 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The line \\\\(  y = 3x + k  \\\\) is tangent to \\\\(  y = x^2 + 1  \\\\). Find \\\\(  k  \\\\).",
+    "question": "The line \\\\( y = 3x + k \\\\) is tangent to \\\\( y = x^2 + 1 \\\\). Find \\\\( k \\\\).",
     "options": [
-      "\\( -2 \\)",
-      "\\( 0 \\)",
-      "\\( 1 \\)"
+      {
+        "text": "\\\\(k = \\\\frac{5}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = -\\\\frac{5}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = -5\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 0 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Use the discriminant condition for tangency.",
+    "solution": "\\\\( x^2 - 3x + 1 - k = 0 \\\\). \\\\( \\\\Delta = 5 + 4k = 0 \\\\Rightarrow k = -\\\\frac{5}{4} \\\\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
-        "workingOut": "\\( x^2 + 1 = 3x + k \\\Rightarrow x^2 - 3x + (1 - k \\) = 0)",
+        "workingOut": "\\\\(x^2 + 1 = 3x + k \\\\Rightarrow x^2 - 3x + (1 - k) = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "Discriminant.",
-        "workingOut": "\\( \\Delta = 9 - 4(1 - k \\) = 5 + 4k)",
+        "workingOut": "\\\\(\\\\Delta = 9 - 4(1 - k) = 5 + 4k\\\\)",
         "graphData": null
       },
       {
         "explanation": "Set to zero.",
-        "workingOut": "\\( 5 + 4k = 0 \\\Rightarrow k = -\\\frac{5}{4} \\)",
+        "workingOut": "\\\\(5 + 4k = 0 \\\\Rightarrow k = -\\\\frac{5}{4}\\\\)",
         "graphData": null
       }
     ],
@@ -3456,14 +4577,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  y = 3x - 2  \\\\)\\n\\\\(  y = x^2 - 2x + 2  \\\\)",
     "options": [
-      "\\( y = -1, \\; -10 \\)",
-      "\\( y = -1, \\; 10 \\)",
-      "\\( y = 1, \\; -10 \\)",
-      "\\( y = 1, \\; 10 \\)"
+      {
+        "text": "\\( y = -1, \\; -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 1, \\; 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -1, \\; 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 1, \\; -10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -1, \\; -10 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Find \\( x \\) values first, then substitute into \\( y = 3x - 2 \\).",
+    "solution": "\\( y = -1, \\; -10 \\)",
     "solutionSteps": [
       {
         "explanation": "Find \\( x \\) values first.",
@@ -3491,14 +4625,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  x - y = 4  \\\\)\\n\\\\(  xy = 12  \\\\)",
     "options": [
-      "\\( x = -6 \\)",
-      "\\( x = 4 \\)",
-      "\\( x = 6 \\)",
-      "\\( x = 8 \\)"
+      {
+        "text": "\\( x = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Isolate \\( y \\) in the linear equation and substitute into \\( xy = 12 \\).",
+    "solution": "\\( x = -6 \\)",
     "solutionSteps": [
       {
         "explanation": "Isolate \\( y \\).",
@@ -3531,14 +4678,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  5x - 2y = 26  \\\\)\\n\\\\(  2x - 2y = 14  \\\\)",
     "options": [
-      "\\( y = -1 \\)",
-      "\\( y = -3 \\)",
-      "\\( y = -5 \\)",
-      "\\( y = 3 \\)"
+      {
+        "text": "\\( y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -3 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute back.",
+    "solution": "\\( y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract to find \\( x \\).",
@@ -3566,18 +4726,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Adult tickets cost \\\\$8 and child tickets cost \\\\$5. A total of 50 tickets were sold for \\\\$310. How many of each type were sold?",
     "options": [
-      "\\( -20 adult, -30 child \\)",
-      "\\( 18 adult, 28 child \\)",
-      "\\( 20 adult, 30 child \\)",
-      "\\( 21 adult, 31 child \\)"
+      {
+        "text": "\\( -20 adult, -30 child \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 18 adult, 28 child \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 20 adult, 30 child \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 21 adult, 31 child \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 20 adult, 30 child \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Set up equations for total tickets and total cost.",
+    "solution": "\\( 20 adult, 30 child \\)",
     "solutionSteps": [
       {
         "explanation": "Let a = adult tickets, c = child tickets.",
-        "workingOut": "\\( a + c = 50 \\\quad \\\text{and} \\\quad 8a + 5c = 310 \\)",
+        "workingOut": "\\( a + c = 50 \\quad \\\text{and} \\quad 8a + 5c = 310 \\)",
         "graphData": null
       },
       {
@@ -3587,7 +4760,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\( 8a + 250 - 5a = 310 \\\Rightarrow 3a = 60 \\\Rightarrow a = 20 \\)",
+        "workingOut": "\\( 8a + 250 - 5a = 310 \\Rightarrow 3a = 60 \\Rightarrow a = 20 \\)",
         "graphData": null
       },
       {
@@ -3606,14 +4779,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x^2 - y^2 = 7  \\\\)\\n\\\\(  x + y = 7  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -3 \\)",
-      "\\( x = -4, \\; y = 3 \\)",
-      "\\( x = 4, \\; y = -3 \\)",
-      "\\( x = 4, \\; y = 3 \\)"
+      {
+        "text": "\\( x = 4, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the difference of squares factorisation.",
+    "solution": "\\( x = -4, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Factor the left side.",
@@ -3622,12 +4808,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x + y = 7.",
-        "workingOut": "\\( 7(x - y \\) = 7 \\\Rightarrow x - y = 1)",
+        "workingOut": "\\( 7(x - y \\) = 7 \\Rightarrow x - y = 1)",
         "graphData": null
       },
       {
         "explanation": "Solve x + y = 7 and x - y = 1.",
-        "workingOut": "\\( 2x = 8 \\\Rightarrow x = 4, \\\quad y = 3 \\)",
+        "workingOut": "\\( 2x = 8 \\Rightarrow x = 4, \\quad y = 3 \\)",
         "graphData": null
       }
     ],
@@ -3641,14 +4827,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x - y = 1  \\\\)\\n\\\\(  x^2 - y^2 = 5  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -2 \\)",
-      "\\( x = -3, \\; y = 2 \\)",
-      "\\( x = 3, \\; y = -2 \\)",
-      "\\( x = 3, \\; y = 2 \\)"
+      {
+        "text": "\\( x = 3, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -2 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the difference of squares factorisation on the second equation.",
+    "solution": "\\( x = -3, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Factor the left side of the second equation using difference of squares.",
@@ -3657,12 +4856,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x - y = 1 from the first equation.",
-        "workingOut": "\\( 1 \\cdot (x + y \\) = 5 \\\Rightarrow x + y = 5)",
+        "workingOut": "\\( 1 \\cdot (x + y \\) = 5 \\Rightarrow x + y = 5)",
         "graphData": null
       },
       {
         "explanation": "Now solve the two linear equations: x - y = 1 and x + y = 5.",
-        "workingOut": "\\( 2x = 6 \\\Rightarrow x = 3 \\)",
+        "workingOut": "\\( 2x = 6 \\Rightarrow x = 3 \\)",
         "graphData": null
       },
       {
@@ -3681,14 +4880,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = 4 - x  \\\\)\\n\\\\(  y = x^2 - 4x + 4  \\\\)",
     "options": [
-      "\\( x = 0, \\; y = -4 \\)",
-      "\\( x = 0, \\; y = 4 \\)",
-      "\\( x = 1, \\; y = 3 \\)",
-      "\\( x = 4, \\; y = 0 \\)"
+      {
+        "text": "\\( x = 0, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 0, \\; y = -4 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Equate the two expressions for y.",
+    "solution": "\\( x = 0, \\; y = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the expressions equal.",
@@ -3707,7 +4919,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve and find y.",
-        "workingOut": "\\( x = 0 \\\Rightarrow y = 4; \\\quad x = 3 \\\Rightarrow y = 1 \\)",
+        "workingOut": "\\( x = 0 \\Rightarrow y = 4; \\quad x = 3 \\Rightarrow y = 1 \\)",
         "graphData": null
       }
     ],
@@ -3721,14 +4933,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  y = -2x  \\\\)\\n\\\\(  3x + 4y = -10  \\\\)",
     "options": [
-      "\\( y = -2 \\)",
-      "\\( y = -4 \\)",
-      "\\( y = -6 \\)",
-      "\\( y = 4 \\)"
+      {
+        "text": "\\( y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -4 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute it back.",
+    "solution": "\\( y = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute to find \\( x \\).",
@@ -3751,28 +4976,41 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 6  \\\\)\\n\\\\(  x^2 - xy + y^2 = 21  \\\\)",
     "options": [
-      "\\( x = -1, \\; y = -5 \\)",
-      "\\( x = -1, \\; y = 5 \\)",
-      "\\( x = 1, \\; y = -5 \\)",
-      "\\( x = 1, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 1, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1, \\; y = -5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Use an algebraic identity to convert the quadratic equation.",
+    "solution": "\\( x = -1, \\; y = -5 \\)",
     "solutionSteps": [
       {
         "explanation": "Use the identity: x^2 - xy + y^2 = (x+y)^2 - 3xy.",
-        "workingOut": "\\( (x + y \\)^2 - 3xy = 21 \\\Rightarrow 36 - 3xy = 21)",
+        "workingOut": "\\( (x + y \\)^2 - 3xy = 21 \\Rightarrow 36 - 3xy = 21)",
         "graphData": null
       },
       {
         "explanation": "Solve for xy.",
-        "workingOut": "\\( 3xy = 15 \\\Rightarrow xy = 5 \\)",
+        "workingOut": "\\( 3xy = 15 \\Rightarrow xy = 5 \\)",
         "graphData": null
       },
       {
         "explanation": "Now solve x + y = 6 and xy = 5 using the quadratic t^2 - 6t + 5 = 0.",
-        "workingOut": "\\( t^2 - 6t + 5 = 0 \\\Rightarrow (t - 1 \\)\\( t - 5 \\) = 0)",
+        "workingOut": "\\( t^2 - 6t + 5 = 0 \\Rightarrow (t - 1 \\)\\( t - 5 \\) = 0)",
         "graphData": null
       },
       {
@@ -3791,14 +5029,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = x^2  \\\\)\\n\\\\(  y = 4x - 4  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -4 \\)",
-      "\\( x = -2, \\; y = 4 \\)",
-      "\\( x = 2, \\; y = -4 \\)",
-      "\\( x = 2, \\; y = 4 \\)"
+      {
+        "text": "\\( x = 2, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -4 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Set equal and note the repeated root indicates tangency.",
+    "solution": "\\( x = -2, \\; y = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the expressions equal.",
@@ -3812,7 +5063,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factor (perfect square).",
-        "workingOut": "\\( (x - 2 \\)^2 = 0 \\\Rightarrow x = 2)",
+        "workingOut": "\\( (x - 2 \\)^2 = 0 \\Rightarrow x = 2)",
         "graphData": null
       },
       {
@@ -3831,14 +5082,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 6  \\\\)\\n\\\\(  x^2 - y^2 = 12  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -2 \\)",
-      "\\( x = -4, \\; y = 2 \\)",
-      "\\( x = 4, \\; y = -2 \\)",
-      "\\( x = 4, \\; y = 2 \\)"
+      {
+        "text": "\\( x = 4, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -2 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor the difference of squares and use the known sum.",
+    "solution": "\\( x = -4, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Factor using difference of squares.",
@@ -3847,12 +5111,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x + y = 6.",
-        "workingOut": "\\( 6(x - y \\) = 12 \\\Rightarrow x - y = 2)",
+        "workingOut": "\\( 6(x - y \\) = 12 \\Rightarrow x - y = 2)",
         "graphData": null
       },
       {
         "explanation": "Solve the linear system: x + y = 6, x - y = 2.",
-        "workingOut": "\\( 2x = 8 \\\Rightarrow x = 4, \\\quad y = 2 \\)",
+        "workingOut": "\\( 2x = 8 \\Rightarrow x = 4, \\quad y = 2 \\)",
         "graphData": null
       }
     ],
@@ -3866,14 +5130,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  x + y = 7  \\\\)\\n\\\\(  x - y = 3  \\\\)",
     "options": [
-      "\\( x = -5 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)",
-      "\\( x = 7 \\)"
+      {
+        "text": "\\( x = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 5 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Add the two equations to eliminate \\( y \\).",
+    "solution": "\\( x = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Add the first and second equations together to eliminate \\( y \\).",
@@ -3901,14 +5178,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x - 2y = 8  \\\\)\\n\\\\(  4x + 3y = 22  \\\\)",
     "options": [
-      "\\( y = -2 \\)",
-      "\\( y = 0 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)"
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute back.",
+    "solution": "\\( y = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Add equations to find \\( x \\).",
@@ -3931,38 +5221,34 @@ export const Y11_CH1E_QUESTIONS = [
   },
   {
     "id": "9ecc497c1b30ca2568b296fce66a3e2e",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve simultaneously:\\n\\\\(  \\\\\\frac{1}{x} + \\\\\\frac{1}{y} = \\\\\\frac{5}{6}  \\\\)\\n\\\\(  x + y = 5  \\\\)",
-    "options": [
-      "\\( x = -2, \\; y = -3 \\)",
-      "\\( x = -2, \\; y = 3 \\)",
-      "\\( x = 2, \\; y = -3 \\)",
-      "\\( x = 2, \\; y = 3 \\)"
-    ],
-    "a": "\\( x = -2, \\; y = -3 \\)",
+    "question": "Solve simultaneously:\\n\\\\( \\\\frac{1}{x} + \\\\frac{1}{y} = \\\\frac{5}{6} \\\\)\\n\\\\( x + y = 5 \\\\)",
+    "options": [],
+    "answer": "x = 2, y = 3 and x = 3, y = 2",
     "blanks": [],
     "hint": "Combine the fractions and use the sum to find the product.",
+    "solution": "Note \\\\( \\\\frac{1}{x} + \\\\frac{1}{y} = \\\\frac{x+y}{xy} = \\\\frac{5}{xy} = \\\\frac{5}{6} \\\\Rightarrow xy = 6 \\\\). Then solve x+y=5, xy=6.",
     "solutionSteps": [
       {
         "explanation": "Combine the fractions.",
-        "workingOut": "\\( \\\frac{1}{x} + \\\frac{1}{y} = \\\frac{x + y}{xy} = \\\frac{5}{xy} = \\\frac{5}{6} \\)",
+        "workingOut": "\\\\(\\\\frac{1}{x} + \\\\frac{1}{y} = \\\\frac{x + y}{xy} = \\\\frac{5}{xy} = \\\\frac{5}{6}\\\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for xy.",
-        "workingOut": "\\( xy = 6 \\)",
+        "workingOut": "\\\\(xy = 6\\\\)",
         "graphData": null
       },
       {
         "explanation": "Form the quadratic from x + y = 5 and xy = 6.",
-        "workingOut": "\\( t^2 - 5t + 6 = 0 \\\Rightarrow (t - 2 \\)\\( t - 3 \\) = 0)",
+        "workingOut": "\\\\(t^2 - 5t + 6 = 0 \\\\Rightarrow (t - 2)(t - 3) = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "State solutions.",
-        "workingOut": "\\( x = 2, y = 3 \\\text{ or } x = 3, y = 2 \\)",
+        "workingOut": "\\\\(x = 2, y = 3 \\\\text{ or } x = 3, y = 2\\\\)",
         "graphData": null
       }
     ],
@@ -3976,14 +5262,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  y = 3x  \\\\)\\n\\\\(  2x + y = 10  \\\\)",
     "options": [
-      "\\( y = -6 \\)",
-      "\\( y = 4 \\)",
-      "\\( y = 6 \\)",
-      "\\( y = 8 \\)"
+      {
+        "text": "\\( y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 6 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Solve for \\( x \\) first, then substitute back.",
+    "solution": "\\( y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = 3x \\) to find \\( x \\).",
@@ -4011,14 +5310,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x + 2y = 17  \\\\)\\n\\\\(  3x + 5y = 29  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 3 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Subtract the first equation from the second to find \\( y \\).",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the first equation from the second.",
@@ -4046,14 +5358,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x - y = 3  \\\\)\\n\\\\(  x^2 + y^2 = 45  \\\\)",
     "options": [
-      "\\( x = -6, \\; y = -3 \\)",
-      "\\( x = -6, \\; y = 3 \\)",
-      "\\( x = 6, \\; y = -3 \\)",
-      "\\( x = 6, \\; y = 3 \\)"
+      {
+        "text": "\\( x = -6, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -6, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6, \\; y = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -6, \\; y = -3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Express x from the linear equation and substitute.",
+    "solution": "\\( x = -6, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x in terms of y.",
@@ -4067,12 +5392,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( y^2 + 6y + 9 + y^2 = 45 \\\Rightarrow 2y^2 + 6y - 36 = 0 \\\Rightarrow y^2 + 3y - 18 = 0 \\)",
+        "workingOut": "\\( y^2 + 6y + 9 + y^2 = 45 \\Rightarrow 2y^2 + 6y - 36 = 0 \\Rightarrow y^2 + 3y - 18 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (y + 6 \\)\\( y - 3 \\) = 0 \\\Rightarrow y = 3, x = 6 \\\text{ or } y = -6, x = -3)",
+        "workingOut": "\\( (y + 6 \\)\\( y - 3 \\) = 0 \\Rightarrow y = 3, x = 6 \\\text{ or } y = -6, x = -3)",
         "graphData": null
       }
     ],
@@ -4086,14 +5411,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  y = 5 - x  \\\\)\\n\\\\(  x + 4y = 11  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 3 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Substitute \\( y = 5 - x \\) into the second equation.",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y \\).",
@@ -4121,12 +5459,19 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  x - y = 3  \\\\)\\n\\\\(  y = x^2 - 9  \\\\)",
     "options": [
-      "\\( y = 0, \\; -5 \\)",
-      "\\( y = 0, \\; 5 \\)"
+      {
+        "text": "\\( y = 0, \\; -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0, \\; 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 0, \\; -5 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Solve for \\( x \\) values first, then calculate \\( y = x - 3 \\).",
+    "solution": "\\( y = 0, \\; -5 \\)",
     "solutionSteps": [
       {
         "explanation": "Find \\( x \\).",
@@ -4152,29 +5497,43 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "For what value of \\\\(  k  \\\\) does the line \\\\(  y = x + k  \\\\) touch the parabola \\\\(  y = x^2  \\\\) at exactly one point?",
+    "question": "For what value of \\\\( k \\\\) does the line \\\\( y = x + k \\\\) touch the parabola \\\\( y = x^2 \\\\) at exactly one point?",
     "options": [
-      "\\( -2 \\)",
-      "\\( 0 \\)",
-      "\\( 1 \\)"
+      {
+        "text": "\\\\(k = \\\\frac{1}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = -\\\\frac{1}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = 0\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 0 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "The line is tangent when the discriminant of the resulting quadratic equals zero.",
+    "solution": "Set equal: \\\\( x^2 - x - k = 0 \\\\). For tangency, \\\\( \\\\Delta = 1 + 4k = 0 \\\\Rightarrow k = -\\\\frac{1}{4} \\\\)",
     "solutionSteps": [
       {
         "explanation": "Set the line and parabola equal.",
-        "workingOut": "\\( x^2 = x + k \\\Rightarrow x^2 - x - k = 0 \\)",
+        "workingOut": "\\\\(x^2 = x + k \\\\Rightarrow x^2 - x - k = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "For exactly one intersection, the discriminant must equal zero.",
-        "workingOut": "\\( \\Delta = (-1 \\)^2 - 4\\( 1 \\)\\( -k \\) = 1 + 4k)",
+        "workingOut": "\\\\(\\\\Delta = (-1)^2 - 4(1)(-k) = 1 + 4k\\\\)",
         "graphData": null
       },
       {
         "explanation": "Set the discriminant to zero and solve.",
-        "workingOut": "\\( 1 + 4k = 0 \\\Rightarrow k = -\\\frac{1}{4} \\)",
+        "workingOut": "\\\\(1 + 4k = 0 \\\\Rightarrow k = -\\\\frac{1}{4}\\\\)",
         "graphData": null
       }
     ],
@@ -4188,14 +5547,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve the simultaneous equations:\\n\\\\(  2x + 3y = 7  \\\\)\\n\\\\(  5x - 4y = 6  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -1 \\)",
-      "\\( x = -2, \\; y = 1 \\)",
-      "\\( x = 2, \\; y = -1 \\)",
-      "\\( x = 2, \\; y = 1 \\)"
+      {
+        "text": "\\( x = -2, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -1 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Multiply equations to make y-coefficients opposite, then add.",
+    "solution": "\\( x = -2, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the first equation by 4 and the second by 3 to align y-coefficients.",
@@ -4214,7 +5586,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x = 2 into the first equation to find y.",
-        "workingOut": "\\( 2(2 \\) + 3y = 7 \\\Rightarrow 3y = 3 \\\Rightarrow y = 1)",
+        "workingOut": "\\( 2(2 \\) + 3y = 7 \\Rightarrow 3y = 3 \\Rightarrow y = 1)",
         "graphData": null
       }
     ],
@@ -4223,37 +5595,34 @@ export const Y11_CH1E_QUESTIONS = [
   },
   {
     "id": "a68a344d83f2ed38d93e5170c749407e",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  6x + y = 4  \\\\)\\n\\\\(  9x - 2y = -1  \\\\)",
-    "options": [
-      "\\( x = -1 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)"
-    ],
-    "a": "\\( x = -1 \\)",
+    "question": "Solve the simultaneous equations:\\n\\\\( 6x + y = 4 \\\\)\\n\\\\( 9x - 2y = -1 \\\\)",
+    "options": [],
+    "answer": "x = 1/3, y = 2",
     "blanks": [],
     "hint": "Multiply the first equation by 2 to match the y-coefficient, then add.",
+    "solution": "Multiply first by 2: \\\\( 12x + 2y = 8 \\\\). Add to second: \\\\( 21x = 7 \\\\Rightarrow x = \\\\frac{1}{3} \\\\). Then \\\\( y = 2 \\\\).",
     "solutionSteps": [
       {
         "explanation": "Multiply the first equation by 2.",
-        "workingOut": "\\( 12x + 2y = 8 \\)",
+        "workingOut": "\\\\(12x + 2y = 8\\\\)",
         "graphData": null
       },
       {
         "explanation": "Add to the second equation.",
-        "workingOut": "\\( 12x + 2y + 9x - 2y = 8 + (-1 \\) \\\Rightarrow 21x = 7)",
+        "workingOut": "\\\\(12x + 2y + 9x - 2y = 8 + (-1) \\\\Rightarrow 21x = 7\\\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for x.",
-        "workingOut": "\\( x = \\\frac{1}{3} \\)",
+        "workingOut": "\\\\(x = \\\\frac{1}{3}\\\\)",
         "graphData": null
       },
       {
         "explanation": "Substitute into the first equation.",
-        "workingOut": "\\( 6 \\cdot \\\frac{1}{3} + y = 4 \\\Rightarrow 2 + y = 4 \\\Rightarrow y = 2 \\)",
+        "workingOut": "\\\\(6 \\\\cdot \\\\frac{1}{3} + y = 4 \\\\Rightarrow 2 + y = 4 \\\\Rightarrow y = 2\\\\)",
         "graphData": null
       }
     ],
@@ -4265,30 +5634,43 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find \\\\(  k  \\\\) if \\\\(  y = 2x - 3  \\\\) is tangent to \\\\(  y = x^2 - x + k  \\\\).",
+    "question": "Find \\\\( k \\\\) if \\\\( y = 2x - 3 \\\\) is tangent to \\\\( y = x^2 - x + k \\\\).",
     "options": [
-      "\\( -3 \\)",
-      "\\( 1 \\)",
-      "\\( 3 \\)",
-      "\\( 4 \\)"
+      {
+        "text": "\\\\(k = -3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = \\\\frac{3}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = -\\\\frac{3}{4}\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Use the discriminant condition for tangency.",
+    "solution": "\\\\( x^2 - 3x + k + 3 = 0 \\\\). \\\\( \\\\Delta = -3 - 4k = 0 \\\\Rightarrow k = -\\\\frac{3}{4} \\\\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
-        "workingOut": "\\( x^2 - x + k = 2x - 3 \\\Rightarrow x^2 - 3x + (k + 3 \\) = 0)",
+        "workingOut": "\\\\(x^2 - x + k = 2x - 3 \\\\Rightarrow x^2 - 3x + (k + 3) = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "Discriminant.",
-        "workingOut": "\\( \\Delta = 9 - 4(k + 3 \\) = -3 - 4k)",
+        "workingOut": "\\\\(\\\\Delta = 9 - 4(k + 3) = -3 - 4k\\\\)",
         "graphData": null
       },
       {
         "explanation": "Set to zero.",
-        "workingOut": "\\( -3 - 4k = 0 \\\Rightarrow k = -\\\frac{3}{4} \\)",
+        "workingOut": "\\\\(-3 - 4k = 0 \\\\Rightarrow k = -\\\\frac{3}{4}\\\\)",
         "graphData": null
       }
     ],
@@ -4302,14 +5684,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve the simultaneous equations:\\n\\\\(  3x + 2y = -11  \\\\)\\n\\\\(  5x - 3y = 7  \\\\)",
     "options": [
-      "\\( x = -1, \\; y = -4 \\)",
-      "\\( x = -1, \\; y = 4 \\)",
-      "\\( x = 1, \\; y = -4 \\)",
-      "\\( x = 1, \\; y = 4 \\)"
+      {
+        "text": "\\( x = -1, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1, \\; y = -4 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Make the y-coefficients equal in magnitude by multiplying appropriately.",
+    "solution": "\\( x = -1, \\; y = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the first equation by 3 and the second by 2.",
@@ -4328,7 +5723,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute x = -1 into the first equation.",
-        "workingOut": "\\( 3(-1 \\) + 2y = -11 \\\Rightarrow -3 + 2y = -11 \\\Rightarrow 2y = -8 \\\Rightarrow y = -4)",
+        "workingOut": "\\( 3(-1 \\) + 2y = -11 \\Rightarrow -3 + 2y = -11 \\Rightarrow 2y = -8 \\Rightarrow y = -4)",
         "graphData": null
       }
     ],
@@ -4342,18 +5737,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "In a triangle, angle A is twice angle B. Angle C is 20° more than angle B. Find all three angles.",
     "options": [
-      "\\( A = -80 \\)",
-      "\\( A = 78 \\)",
-      "\\( A = 80 \\)",
-      "\\( A = 82 \\)"
+      {
+        "text": "\\( A = 82 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A = -80 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A = 78 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A = 80 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( A = -80 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Use angle sum of a triangle and the given relationships.",
+    "solution": "\\( A = -80 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the relationships.",
-        "workingOut": "\\( A = 2B, \\\quad C = B + 20 \\)",
+        "workingOut": "\\( A = 2B, \\quad C = B + 20 \\)",
         "graphData": null
       },
       {
@@ -4363,12 +5771,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\( 4B + 20 = 180 \\\Rightarrow 4B = 160 \\\Rightarrow B = 40 \\)",
+        "workingOut": "\\( 4B + 20 = 180 \\Rightarrow 4B = 160 \\Rightarrow B = 40 \\)",
         "graphData": null
       },
       {
         "explanation": "Find all angles.",
-        "workingOut": "\\( A = 80°, \\\quad B = 40°, \\\quad C = 60° \\)",
+        "workingOut": "\\( A = 80°, \\quad B = 40°, \\quad C = 60° \\)",
         "graphData": null
       }
     ],
@@ -4382,13 +5790,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  x = 4y + 3  \\\\)\\n\\\\(  2x - y = 13  \\\\)",
     "options": [
-      "\\( y = -1 \\)",
-      "\\( y = 1 \\)",
-      "\\( y = 3 \\)"
+      {
+        "text": "\\( y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 1 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Substitute \\( x = 4y + 3 \\) into the second equation and solve for \\( y \\).",
+    "solution": "\\( y = 1 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x \\).",
@@ -4416,14 +5834,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  2x + 3y = 0  \\\\)\\n\\\\(  3x - y = 22  \\\\)",
     "options": [
-      "\\( x = -6 \\)",
-      "\\( x = 4 \\)",
-      "\\( x = 6 \\)",
-      "\\( x = 8 \\)"
+      {
+        "text": "\\( x = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Multiply the second equation by 3 and add to the first equation.",
+    "solution": "\\( x = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the second equation by 3.",
@@ -4451,14 +5882,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  2x + y = 10  \\\\)\\n\\\\(  xy = 12  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -6 \\)",
-      "\\( x = -2, \\; y = 6 \\)",
-      "\\( x = 2, \\; y = -6 \\)",
-      "\\( x = 2, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -2, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -6 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Express y from the linear equation and substitute.",
+    "solution": "\\( x = -2, \\; y = -6 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y.",
@@ -4467,7 +5911,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute into xy = 12.",
-        "workingOut": "\\( x(10 - 2x \\) = 12 \\\Rightarrow 2x^2 - 10x + 12 = 0)",
+        "workingOut": "\\( x(10 - 2x \\) = 12 \\Rightarrow 2x^2 - 10x + 12 = 0)",
         "graphData": null
       },
       {
@@ -4477,7 +5921,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (x - 2 \\)\\( x - 3 \\) = 0 \\\Rightarrow x = 2, y = 6 \\\text{ or } x = 3, y = 4)",
+        "workingOut": "\\( (x - 2 \\)\\( x - 3 \\) = 0 \\Rightarrow x = 2, y = 6 \\\text{ or } x = 3, y = 4)",
         "graphData": null
       }
     ],
@@ -4491,23 +5935,36 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "In a right triangle, the two shorter sides differ by 1 and the hypotenuse is \\\\(  \\\\\\sqrt{61}  \\\\). Find the two shorter sides.",
     "options": [
-      "\\( -5 \\text{ and } 6 \\)",
-      "\\( 4 \\text{ and } 7 \\)",
-      "\\( 5 \\text{ and } 6 \\)",
-      "\\( 6 \\text{ and } 5 \\)"
+      {
+        "text": "\\( 6 \\text{ and } 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\text{ and } 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\text{ and } 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -5 \\text{ and } 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -5 \\text{ and } 6 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Use Pythagoras' theorem and the given difference.",
+    "solution": "\\( -5 \\text{ and } 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Let the sides be b and b + 1.",
-        "workingOut": "\\( a = b + 1, \\\quad a^2 + b^2 = 61 \\)",
+        "workingOut": "\\( a = b + 1, \\quad a^2 + b^2 = 61 \\)",
         "graphData": null
       },
       {
         "explanation": "Substitute.",
-        "workingOut": "\\( (b + 1 \\)^2 + b^2 = 61 \\\Rightarrow 2b^2 + 2b + 1 = 61)",
+        "workingOut": "\\( (b + 1 \\)^2 + b^2 = 61 \\Rightarrow 2b^2 + 2b + 1 = 61)",
         "graphData": null
       },
       {
@@ -4517,7 +5974,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factorise.",
-        "workingOut": "\\( (b + 6 \\)\\( b - 5 \\) = 0 \\\Rightarrow b = 5, \\\quad a = 6)",
+        "workingOut": "\\( (b + 6 \\)\\( b - 5 \\) = 0 \\Rightarrow b = 5, \\quad a = 6)",
         "graphData": null
       }
     ],
@@ -4531,13 +5988,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  d  \\\\):\\n\\\\(  5c - d = 11  \\\\)\\n\\\\(  3c - d = 7  \\\\)",
     "options": [
-      "\\( d = -1 \\)",
-      "\\( d = -3 \\)",
-      "\\( d = 1 \\)"
+      {
+        "text": "\\( d = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( d = -1 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Find \\( c \\) first, then substitute it back.",
+    "solution": "\\( d = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the equations to solve for \\( c \\).",
@@ -4565,14 +6032,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\\\( x^2 + 5x - 2 = 0 \\\\)",
     "options": [
-      "\\( -2 \\)",
-      "\\( 0 \\)",
-      "\\( 2 \\)",
-      "\\( 3 \\)"
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Apply formula with $a=1, b=5, c=-2$.",
+    "solution": "\\( -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Expand the algebraic terms.",
@@ -4581,7 +6061,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\( x = \\frac\{-5 \pm \\sqrt\{25+8\}\}\{2\} = \\frac\{-5 \pm \\sqrt\{33\}\}\{2\} \\)",
+        "workingOut": "\\( x = \\frac{-5 pm \\sqrt{25+8}}{2} = \\frac{-5 pm \\sqrt{33}}{2} \\)",
         "graphData": null
       }
     ],
@@ -4595,14 +6075,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  x - y = 4  \\\\)\\n\\\\(  xy = 12  \\\\)",
     "options": [
-      "\\( y = -2, \\; -6 \\)",
-      "\\( y = -2, \\; 6 \\)",
-      "\\( y = 2, \\; -6 \\)",
-      "\\( y = 2, \\; 6 \\)"
+      {
+        "text": "\\( y = 2, \\; -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2, \\; 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2, \\; -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 2, \\; 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -2, \\; -6 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Solve for \\( x \\) values first, then calculate \\( y = x - 4 \\).",
+    "solution": "\\( y = -2, \\; -6 \\)",
     "solutionSteps": [
       {
         "explanation": "Find \\( x \\).",
@@ -4625,13 +6118,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  y = 2x^2  \\\\)\\n\\\\(  y = 6x - x^2  \\\\)",
     "options": [
-      "\\( x = -2 \\)",
-      "\\( x = 0 \\)",
-      "\\( x = 2 \\)"
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Equate the two equations to solve for \\( x \\).",
+    "solution": "\\( x = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the two equations equal.",
@@ -4664,18 +6167,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Two numbers have a sum of 12 and a product of 35. Find the two numbers.",
     "options": [
-      "\\( -5 \\text{ and } 7 \\)",
-      "\\( 4 \\text{ and } 8 \\)",
-      "\\( 5 \\text{ and } 7 \\)",
-      "\\( 6 \\text{ and } 6 \\)"
+      {
+        "text": "\\( 6 \\text{ and } 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\text{ and } 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\text{ and } 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -5 \\text{ and } 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -5 \\text{ and } 7 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Set up sum and product equations, then form a quadratic.",
+    "solution": "\\( -5 \\text{ and } 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Let the numbers be x and y.",
-        "workingOut": "\\( x + y = 12, \\\quad xy = 35 \\)",
+        "workingOut": "\\( x + y = 12, \\quad xy = 35 \\)",
         "graphData": null
       },
       {
@@ -4704,18 +6220,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "How many points of intersection do \\\\(  y = x + 5  \\\\) and \\\\(  y = x^2 + 3  \\\\) have?",
     "options": [
-      "\\( -3 \\)",
-      "\\( 1 \\)",
-      "\\( 3 \\)",
-      "\\( 4 \\)"
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Find the discriminant of the resulting quadratic.",
+    "solution": "\\( -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
-        "workingOut": "\\( x + 5 = x^2 + 3 \\\Rightarrow x^2 - x - 2 = 0 \\)",
+        "workingOut": "\\( x + 5 = x^2 + 3 \\Rightarrow x^2 - x - 2 = 0 \\)",
         "graphData": null
       },
       {
@@ -4739,13 +6268,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  2x + y = 7  \\\\)\\n\\\\(  5x + 3y = 18  \\\\)",
     "options": [
-      "\\( y = -1 \\)",
-      "\\( y = 1 \\)",
-      "\\( y = 3 \\)"
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 1 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Solve for \\( x \\) first, then substitute it back.",
+    "solution": "\\( y = 1 \\)",
     "solutionSteps": [
       {
         "explanation": "Rearrange and substitute to find \\( x \\).",
@@ -4768,17 +6307,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "For what value of \\\\(  m  \\\\) is the line \\\\(  y = mx + 1  \\\\) tangent to \\\\(  y = x^2 + 2x + 1  \\\\)?",
     "options": [
-      "\\( -1 \\)",
-      "\\( 1 \\)",
-      "\\( 2 \\)"
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -1 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "A tangent line touches the curve at exactly one point — set the discriminant to zero.",
+    "solution": "\\( -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the equations equal.",
-        "workingOut": "\\( x^2 + 2x + 1 = mx + 1 \\\Rightarrow x^2 + (2 - m \\)x = 0)",
+        "workingOut": "\\( x^2 + 2x + 1 = mx + 1 \\Rightarrow x^2 + (2 - m \\)x = 0)",
         "graphData": null
       },
       {
@@ -4788,7 +6337,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "For tangency, both roots must be equal (x = 0 repeated).",
-        "workingOut": "\\( 2 - m = 0 \\\Rightarrow m = 2 \\)",
+        "workingOut": "\\( 2 - m = 0 \\Rightarrow m = 2 \\)",
         "graphData": null
       }
     ],
@@ -4802,14 +6351,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = x + 2  \\\\)\\n\\\\(  y = x^2  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -4 \\)",
-      "\\( x = -2, \\; y = 4 \\)",
-      "\\( x = 2, \\; y = -4 \\)",
-      "\\( x = 2, \\; y = 4 \\)"
+      {
+        "text": "\\( x = 2, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -4 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Set the two expressions for y equal and solve the resulting quadratic.",
+    "solution": "\\( x = -2, \\; y = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the two expressions for y equal to each other.",
@@ -4847,14 +6409,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + 3y = 11  \\\\)\\n\\\\(  xy = 6  \\\\)",
     "options": [
-      "\\( x = -9, \\; y = -2 \\)",
-      "\\( x = -9, \\; y = 2 \\)",
-      "\\( x = 9, \\; y = -2 \\)",
-      "\\( x = 9, \\; y = 2 \\)"
+      {
+        "text": "\\( x = -9, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -9, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9, \\; y = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -9, \\; y = -2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Express x from the linear equation and substitute into the product equation.",
+    "solution": "\\( x = -9, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x.",
@@ -4863,7 +6438,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute.",
-        "workingOut": "\\( (11 - 3y \\)y = 6 \\\Rightarrow 11y - 3y^2 = 6)",
+        "workingOut": "\\( (11 - 3y \\)y = 6 \\Rightarrow 11y - 3y^2 = 6)",
         "graphData": null
       },
       {
@@ -4873,7 +6448,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (3y - 2 \\)\\( y - 3 \\) = 0 \\\Rightarrow y = \\\frac{2}{3}, x = 9 \\\text{ or } y = 3, x = 2)",
+        "workingOut": "\\( (3y - 2 \\)\\( y - 3 \\) = 0 \\Rightarrow y = \\\frac{2}{3}, x = 9 \\\text{ or } y = 3, x = 2)",
         "graphData": null
       }
     ],
@@ -4887,14 +6462,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  x + y = 8  \\\\)\\n\\\\(  x^2 + xy + y^2 = 49  \\\\)",
     "options": [
-      "\\( y = -5, \\; -3 \\)",
-      "\\( y = -5, \\; 3 \\)",
-      "\\( y = 5, \\; -3 \\)",
-      "\\( y = 5, \\; 3 \\)"
+      {
+        "text": "\\( y = -5, \\; -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -5, \\; 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 5, \\; 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 5, \\; -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -5, \\; -3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Use \\( y = 8 - x \\) with the solved \\( x \\) values.",
+    "solution": "\\( y = -5, \\; -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Find \\( x \\).",
@@ -4917,14 +6505,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  c  \\\\):\\n\\\\(  5c - d = 11  \\\\)\\n\\\\(  3c - d = 7  \\\\)",
     "options": [
-      "\\( c = -2 \\)",
-      "\\( c = 0 \\)",
-      "\\( c = 2 \\)",
-      "\\( c = 4 \\)"
+      {
+        "text": "\\( c = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( c = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( c = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( c = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( c = 2 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Subtract the second equation from the first.",
+    "solution": "\\( c = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the equations.",
@@ -4947,33 +6548,46 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  2x + y + z = 12  \\\\)\\n\\\\(  x + 2y + z = 11  \\\\)\\n\\\\(  x + y + 2z = 13  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -2 \\)",
-      "\\( x = -3, \\; y = 2 \\)",
-      "\\( x = 3, \\; y = -2 \\)",
-      "\\( x = 3, \\; y = 2 \\)"
+      {
+        "text": "\\( x = -3, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Subtract equations pairwise to reduce the system.",
+    "solution": "\\( x = -3, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract equation 2 from equation 1.",
-        "workingOut": "\\( x - y = 1 \\\Rightarrow y = x - 1 \\)",
+        "workingOut": "\\( x - y = 1 \\Rightarrow y = x - 1 \\)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation 3 from equation 1.",
-        "workingOut": "\\( x - z = -1 \\\Rightarrow z = x + 1 \\)",
+        "workingOut": "\\( x - z = -1 \\Rightarrow z = x + 1 \\)",
         "graphData": null
       },
       {
         "explanation": "Substitute into equation 1.",
-        "workingOut": "\\( 2x + (x - 1 \\) + \\( x + 1 \\) = 12 \\\Rightarrow 4x = 12 \\\Rightarrow x = 3)",
+        "workingOut": "\\( 2x + (x - 1 \\) + \\( x + 1 \\) = 12 \\Rightarrow 4x = 12 \\Rightarrow x = 3)",
         "graphData": null
       },
       {
         "explanation": "Find y and z.",
-        "workingOut": "\\( y = 2, \\\quad z = 4 \\)",
+        "workingOut": "\\( y = 2, \\quad z = 4 \\)",
         "graphData": null
       }
     ],
@@ -4987,14 +6601,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 9  \\\\)\\n\\\\(  xy = 20  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -5 \\)",
-      "\\( x = -4, \\; y = 5 \\)",
-      "\\( x = 4, \\; y = -5 \\)",
-      "\\( x = 4, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 4, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Express y from the sum equation and substitute into the product equation.",
+    "solution": "\\( x = -4, \\; y = -5 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y from the sum.",
@@ -5003,7 +6630,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute into xy = 20.",
-        "workingOut": "\\( x(9 - x \\) = 20 \\\Rightarrow 9x - x^2 = 20)",
+        "workingOut": "\\( x(9 - x \\) = 20 \\Rightarrow 9x - x^2 = 20)",
         "graphData": null
       },
       {
@@ -5013,7 +6640,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (x - 4 \\)\\( x - 5 \\) = 0 \\\Rightarrow x = 4, y = 5 \\\text{ or } x = 5, y = 4)",
+        "workingOut": "\\( (x - 4 \\)\\( x - 5 \\) = 0 \\Rightarrow x = 4, y = 5 \\\text{ or } x = 5, y = 4)",
         "graphData": null
       }
     ],
@@ -5027,18 +6654,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find \\\\(  k  \\\\) if \\\\(  y = x - 1  \\\\) is tangent to \\\\(  y = x^2 - 3x + k  \\\\).",
     "options": [
-      "\\( -2 \\)",
-      "\\( 0 \\)",
-      "\\( 2 \\)",
-      "\\( 3 \\)"
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -2 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Set discriminant to zero for tangency.",
+    "solution": "\\( -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
-        "workingOut": "\\( x^2 - 3x + k = x - 1 \\\Rightarrow x^2 - 4x + (k + 1 \\) = 0)",
+        "workingOut": "\\( x^2 - 3x + k = x - 1 \\Rightarrow x^2 - 4x + (k + 1 \\) = 0)",
         "graphData": null
       },
       {
@@ -5048,7 +6688,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Set to zero.",
-        "workingOut": "\\( 12 - 4k = 0 \\\Rightarrow k = 3 \\)",
+        "workingOut": "\\( 12 - 4k = 0 \\Rightarrow k = 3 \\)",
         "graphData": null
       }
     ],
@@ -5062,14 +6702,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  6x + 5y = 21  \\\\)\\n\\\\(  2x + 3y = 11  \\\\)",
     "options": [
-      "\\( y = -3 \\)",
-      "\\( y = 1 \\)",
-      "\\( y = 3 \\)",
-      "\\( y = 5 \\)"
+      {
+        "text": "\\( y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 3 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Multiply the second equation by 3 to match the \\( x \\) terms, then subtract.",
+    "solution": "\\( y = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the second equation by 3.",
@@ -5097,14 +6750,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 7  \\\\)\\n\\\\(  x^2 + y^2 = 29  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -5 \\)",
-      "\\( x = -2, \\; y = 5 \\)",
-      "\\( x = 2, \\; y = -5 \\)",
-      "\\( x = 2, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 2, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Express y from the linear equation and substitute into the sum of squares.",
+    "solution": "\\( x = -2, \\; y = -5 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y.",
@@ -5118,12 +6784,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 2x^2 - 14x + 49 = 29 \\\Rightarrow 2x^2 - 14x + 20 = 0 \\\Rightarrow x^2 - 7x + 10 = 0 \\)",
+        "workingOut": "\\( 2x^2 - 14x + 49 = 29 \\Rightarrow 2x^2 - 14x + 20 = 0 \\Rightarrow x^2 - 7x + 10 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (x - 2 \\)\\( x - 5 \\) = 0 \\\Rightarrow x = 2, y = 5 \\\text{ or } x = 5, y = 2)",
+        "workingOut": "\\( (x - 2 \\)\\( x - 5 \\) = 0 \\Rightarrow x = 2, y = 5 \\\text{ or } x = 5, y = 2)",
         "graphData": null
       }
     ],
@@ -5137,14 +6803,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  y = 3x  \\\\)\\n\\\\(  2x + 3y = 22  \\\\)",
     "options": [
-      "\\( y = -6 \\)",
-      "\\( y = 4 \\)",
-      "\\( y = 6 \\)",
-      "\\( y = 8 \\)"
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Find \\( x \\) first, then calculate \\( y = 3x \\).",
+    "solution": "\\( y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute to solve for \\( x \\).",
@@ -5167,14 +6846,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  x + y = 7  \\\\)\\n\\\\(  x - y = 3  \\\\)",
     "options": [
-      "\\( y = -2 \\)",
-      "\\( y = 0 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)"
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Subtract the second equation from the first to eliminate \\( x \\).",
+    "solution": "\\( y = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the second equation from the first.",
@@ -5202,14 +6894,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve the simultaneous equations:\\n\\\\(  3x + 4y = 18  \\\\)\\n\\\\(  5x + 2y = 16  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -3 \\)",
-      "\\( x = -2, \\; y = 3 \\)",
-      "\\( x = 2, \\; y = -3 \\)",
-      "\\( x = 2, \\; y = 3 \\)"
+      {
+        "text": "\\( x = 2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -3 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Multiply the second equation by 2 to match the y-coefficient, then subtract.",
+    "solution": "\\( x = -2, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the second equation by 2 so both equations have 4y.",
@@ -5223,12 +6928,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify and solve for x.",
-        "workingOut": "\\( 7x = 14 \\\Rightarrow x = 2 \\)",
+        "workingOut": "\\( 7x = 14 \\Rightarrow x = 2 \\)",
         "graphData": null
       },
       {
         "explanation": "Substitute x = 2 into the first equation.",
-        "workingOut": "\\( 3(2 \\) + 4y = 18 \\\Rightarrow 4y = 12 \\\Rightarrow y = 3)",
+        "workingOut": "\\( 3(2 \\) + 4y = 18 \\Rightarrow 4y = 12 \\Rightarrow y = 3)",
         "graphData": null
       }
     ],
@@ -5242,13 +6947,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\\\( x^2 + 4x - 1 = 0 \\\\)",
     "options": [
-      "\\( -1 \\)",
-      "\\( 1 \\)",
-      "\\( 2 \\)"
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -1 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Apply formula and simplify surd.",
+    "solution": "\\( -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Expand the algebraic terms.",
@@ -5257,7 +6972,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression by combining like terms.",
-        "workingOut": "\\( x = \\frac\{-4 \pm \\sqrt\{16+4\}\}\{2\} = \\frac\{-4 \pm \\sqrt\{20\}\}\{2\} = -2 \pm \\sqrt\{5\} \\)",
+        "workingOut": "\\( x = \\frac{-4 pm \\sqrt{16+4}}{2} = \\frac{-4 pm \\sqrt{20}}{2} = -2 pm \\sqrt{5} \\)",
         "graphData": null
       }
     ],
@@ -5271,14 +6986,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x^2 + y^2 = 50  \\\\)\\n\\\\(  x - y = 0  \\\\)",
     "options": [
-      "\\( x = -5, \\; y = -5 \\)",
-      "\\( x = -5, \\; y = 5 \\)",
-      "\\( x = 5, \\; y = -5 \\)",
-      "\\( x = 5, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 5, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -5, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -5, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -5, \\; y = -5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Use x = y to simplify the quadratic equation.",
+    "solution": "\\( x = -5, \\; y = -5 \\)",
     "solutionSteps": [
       {
         "explanation": "From x - y = 0, we get x = y.",
@@ -5287,12 +7015,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute into the first equation.",
-        "workingOut": "\\( x^2 + x^2 = 50 \\\Rightarrow 2x^2 = 50 \\)",
+        "workingOut": "\\( x^2 + x^2 = 50 \\Rightarrow 2x^2 = 50 \\)",
         "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\( x^2 = 25 \\\Rightarrow x = \\pm 5, \\\quad y = \\pm 5 \\)",
+        "workingOut": "\\( x^2 = 25 \\Rightarrow x = \\pm 5, \\quad y = \\pm 5 \\)",
         "graphData": null
       }
     ],
@@ -5306,14 +7034,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x + 2y = -4  \\\\)\\n\\\\(  x - 2y = -12  \\\\)",
     "options": [
-      "\\( x = -2 \\)",
-      "\\( x = -4 \\)",
-      "\\( x = -6 \\)",
-      "\\( x = 4 \\)"
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Add the two equations to eliminate the \\( 2y \\) terms.",
+    "solution": "\\( x = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Add the equations.",
@@ -5336,14 +7077,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  x + y = 10  \\\\)\\n\\\\(  x^2 + y^2 = 58  \\\\)",
     "options": [
-      "\\( y = -7, \\; -3 \\)",
-      "\\( y = -7, \\; 3 \\)",
-      "\\( y = 7, \\; -3 \\)",
-      "\\( y = 7, \\; 3 \\)"
+      {
+        "text": "\\( y = -7, \\; -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -7, \\; 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 7, \\; -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 7, \\; 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -7, \\; -3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Solve for \\( x \\) values first, then calculate \\( y = 10 - x \\).",
+    "solution": "\\( y = -7, \\; -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Find \\( x \\).",
@@ -5366,14 +7120,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + 2y = 7  \\\\)\\n\\\\(  x^2 + 4y^2 = 37  \\\\)",
     "options": [
-      "\\( x = -6, \\; y = -1 \\)",
-      "\\( x = -6, \\; y = 1 \\)",
-      "\\( x = 6, \\; y = -1 \\)",
-      "\\( x = 6, \\; y = 1 \\)"
+      {
+        "text": "\\( x = -6, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -6, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6, \\; y = -1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -6, \\; y = -1 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Express x from the linear equation and substitute.",
+    "solution": "\\( x = -6, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x.",
@@ -5387,12 +7154,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 49 - 28y + 4y^2 + 4y^2 = 37 \\\Rightarrow 8y^2 - 28y + 12 = 0 \\\Rightarrow 2y^2 - 7y + 3 = 0 \\)",
+        "workingOut": "\\( 49 - 28y + 4y^2 + 4y^2 = 37 \\Rightarrow 8y^2 - 28y + 12 = 0 \\Rightarrow 2y^2 - 7y + 3 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (2y - 1 \\)\\( y - 3 \\) = 0 \\\Rightarrow y = \\\frac{1}{2}, x = 6 \\\text{ or } y = 3, x = 1)",
+        "workingOut": "\\( (2y - 1 \\)\\( y - 3 \\) = 0 \\Rightarrow y = \\\frac{1}{2}, x = 6 \\\text{ or } y = 3, x = 1)",
         "graphData": null
       }
     ],
@@ -5406,14 +7173,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  3x + y = 7  \\\\)\\n\\\\(  9x^2 + y^2 = 25  \\\\)",
     "options": [
-      "\\( y = -4, \\; -3 \\)",
-      "\\( y = -4, \\; 3 \\)",
-      "\\( y = 4, \\; -3 \\)",
-      "\\( y = 4, \\; 3 \\)"
+      {
+        "text": "\\( y = -4, \\; -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4, \\; -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4, \\; 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4, \\; 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -4, \\; -3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Find \\( x \\) values first, then calculate \\( y = 7 - 3x \\).",
+    "solution": "\\( y = -4, \\; -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Find \\( x \\).",
@@ -5436,28 +7216,41 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  x + y + z = 10  \\\\)\\n\\\\(  2x - y + z = 6  \\\\)\\n\\\\(  x + 2y - z = 3  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -3 \\)",
-      "\\( x = -2, \\; y = 3 \\)",
-      "\\( x = 2, \\; y = -3 \\)",
-      "\\( x = 2, \\; y = 3 \\)"
+      {
+        "text": "\\( x = 2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Combine pairs of equations to eliminate one variable at a time.",
+    "solution": "\\( x = -2, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Add equations 1 and 2 to eliminate y.",
-        "workingOut": "\\( 3x + 2z = 16 \\\quad \\cdots (A \\))",
+        "workingOut": "\\( 3x + 2z = 16 \\quad \\cdots (A \\))",
         "graphData": null
       },
       {
         "explanation": "Add equations 1 and 3 to get another relation.",
-        "workingOut": "\\( 2x + 3y = 13 \\\quad \\cdots (B \\))",
+        "workingOut": "\\( 2x + 3y = 13 \\quad \\cdots (B \\))",
         "graphData": null
       },
       {
         "explanation": "From equation 1: y = 10 - x - z. Substitute into (B) and solve with (A).",
-        "workingOut": "\\( x + 3z = 17 \\\quad \\\text{and} \\\quad 3x + 2z = 16 \\\Rightarrow z = 5, x = 2 \\)",
+        "workingOut": "\\( x + 3z = 17 \\quad \\\text{and} \\quad 3x + 2z = 16 \\Rightarrow z = 5, x = 2 \\)",
         "graphData": null
       },
       {
@@ -5476,14 +7269,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  3x + y = 10  \\\\)\\n\\\\(  x^2 + y^2 = 20  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -4 \\)",
-      "\\( x = -2, \\; y = 4 \\)",
-      "\\( x = 2, \\; y = -4 \\)",
-      "\\( x = 2, \\; y = 4 \\)"
+      {
+        "text": "\\( x = -2, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -4 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Express y from the linear equation and substitute.",
+    "solution": "\\( x = -2, \\; y = -4 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y.",
@@ -5497,12 +7303,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 10x^2 - 60x + 100 = 20 \\\Rightarrow x^2 - 6x + 8 = 0 \\)",
+        "workingOut": "\\( 10x^2 - 60x + 100 = 20 \\Rightarrow x^2 - 6x + 8 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (x - 2 \\)\\( x - 4 \\) = 0 \\\Rightarrow x = 2, y = 4 \\\text{ or } x = 4, y = -2)",
+        "workingOut": "\\( (x - 2 \\)\\( x - 4 \\) = 0 \\Rightarrow x = 2, y = 4 \\\text{ or } x = 4, y = -2)",
         "graphData": null
       }
     ],
@@ -5516,13 +7322,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  q  \\\\):\\n\\\\(  p - 3q = 2  \\\\)\\n\\\\(  2p - 3q = 7  \\\\)",
     "options": [
-      "\\( q = -1 \\)",
-      "\\( q = 1 \\)",
-      "\\( q = 3 \\)"
+      {
+        "text": "\\( q = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( q = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( q = -1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( q = 1 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Find \\( p \\) first, then substitute back.",
+    "solution": "\\( q = 1 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract to find \\( p \\).",
@@ -5550,14 +7366,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve the simultaneous equations:\\n\\\\(  5x + 3y = 19  \\\\)\\n\\\\(  4x - 9y = 38  \\\\)",
     "options": [
-      "\\( x = -5, \\; y = -2 \\)",
-      "\\( x = -5, \\; y = 2 \\)",
-      "\\( x = 5, \\; y = -2 \\)",
-      "\\( x = 5, \\; y = 2 \\)"
+      {
+        "text": "\\( x = -5, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -5, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -5, \\; y = -2 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Multiply the first equation by 3 to match the y-coefficient magnitude.",
+    "solution": "\\( x = -5, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the first equation by 3.",
@@ -5571,12 +7400,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify and solve for x.",
-        "workingOut": "\\( 19x = 95 \\\Rightarrow x = 5 \\)",
+        "workingOut": "\\( 19x = 95 \\Rightarrow x = 5 \\)",
         "graphData": null
       },
       {
         "explanation": "Substitute x = 5 into the first equation.",
-        "workingOut": "\\( 5(5 \\) + 3y = 19 \\\Rightarrow 25 + 3y = 19 \\\Rightarrow 3y = -6 \\\Rightarrow y = -2)",
+        "workingOut": "\\( 5(5 \\) + 3y = 19 \\Rightarrow 25 + 3y = 19 \\Rightarrow 3y = -6 \\Rightarrow y = -2)",
         "graphData": null
       }
     ],
@@ -5590,14 +7419,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  y = 3x  \\\\)\\n\\\\(  2x + y = 10  \\\\)",
     "options": [
-      "\\( x = -2 \\)",
-      "\\( x = 0 \\)",
-      "\\( x = 2 \\)",
-      "\\( x = 4 \\)"
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Substitute \\( y = 3x \\) into the second equation.",
+    "solution": "\\( x = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = 3x \\) into the second equation.",
@@ -5625,14 +7467,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  x + y = 10  \\\\)\\n\\\\(  x^2 + y^2 = 58  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Substitute \\( y = 10 - x \\) into the quadratic equation.",
+    "solution": "\\( x = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Rearrange to make \\( y \\) the subject.",
@@ -5675,18 +7530,31 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "A rectangle has perimeter 28 cm and diagonal 10 cm. Find the length and width.",
     "options": [
-      "\\( -8 cm and -6 cm \\)",
-      "\\( 6 cm and 4 cm \\)",
-      "\\( 8 cm and 6 cm \\)",
-      "\\( 9 cm and 7 cm \\)"
+      {
+        "text": "\\( 6 cm and 4 cm \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9 cm and 7 cm \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 8 cm and 6 cm \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -8 cm and -6 cm \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 8 cm and 6 cm \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Use perimeter, Pythagoras' theorem, and the sum/product identity.",
+    "solution": "\\( 8 cm and 6 cm \\)",
     "solutionSteps": [
       {
         "explanation": "From the perimeter: l + w = 14.",
-        "workingOut": "\\( 2(l + w \\) = 28 \\\Rightarrow l + w = 14)",
+        "workingOut": "\\( 2(l + w \\) = 28 \\Rightarrow l + w = 14)",
         "graphData": null
       },
       {
@@ -5696,12 +7564,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Use (l+w)^2 = l^2 + 2lw + w^2 to find lw.",
-        "workingOut": "\\( 196 = 100 + 2lw \\\Rightarrow lw = 48 \\)",
+        "workingOut": "\\( 196 = 100 + 2lw \\Rightarrow lw = 48 \\)",
         "graphData": null
       },
       {
         "explanation": "Solve t^2 - 14t + 48 = 0.",
-        "workingOut": "\\( (t - 6 \\)\\( t - 8 \\) = 0 \\\Rightarrow l = 8, w = 6)",
+        "workingOut": "\\( (t - 6 \\)\\( t - 8 \\) = 0 \\Rightarrow l = 8, w = 6)",
         "graphData": null
       }
     ],
@@ -5715,14 +7583,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = 2x + 3  \\\\)\\n\\\\(  y = x^2 + 2x - 1  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -7 \\)",
-      "\\( x = -2, \\; y = 7 \\)",
-      "\\( x = 2, \\; y = -7 \\)",
-      "\\( x = 2, \\; y = 7 \\)"
+      {
+        "text": "\\( x = 2, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -7 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Set the expressions equal and simplify.",
+    "solution": "\\( x = -2, \\; y = -7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
@@ -5741,7 +7622,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Find y values.",
-        "workingOut": "\\( x = 2 \\\Rightarrow y = 7; \\\quad x = -2 \\\Rightarrow y = -1 \\)",
+        "workingOut": "\\( x = 2 \\Rightarrow y = 7; \\quad x = -2 \\Rightarrow y = -1 \\)",
         "graphData": null
       }
     ],
@@ -5753,29 +7634,43 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "For what values of \\\\(  k  \\\\) does \\\\(  y = 2x + k  \\\\) intersect \\\\(  y = x^2 + x - 6  \\\\) at two points?",
+    "question": "For what values of \\\\( k \\\\) does \\\\( y = 2x + k \\\\) intersect \\\\( y = x^2 + x - 6 \\\\) at two points?",
     "options": [
-      "\\( -2 \\)",
-      "\\( 0 \\)",
-      "\\( 1 \\)"
+      {
+        "text": "\\\\(k > 0\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k > -\\\\frac{25}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k < -\\\\frac{25}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(k = -\\\\frac{25}{4}\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( 0 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Two intersection points occur when the discriminant is positive.",
+    "solution": "\\\\( \\\\Delta = 25 + 4k > 0 \\\\Rightarrow k > -\\\\frac{25}{4} \\\\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
-        "workingOut": "\\( x^2 + x - 6 = 2x + k \\\Rightarrow x^2 - x - (6 + k \\) = 0)",
+        "workingOut": "\\\\(x^2 + x - 6 = 2x + k \\\\Rightarrow x^2 - x - (6 + k) = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "Calculate discriminant.",
-        "workingOut": "\\( \\Delta = 1 + 4(6 + k \\) = 25 + 4k)",
+        "workingOut": "\\\\(\\\\Delta = 1 + 4(6 + k) = 25 + 4k\\\\)",
         "graphData": null
       },
       {
         "explanation": "For two intersections, require discriminant > 0.",
-        "workingOut": "\\( 25 + 4k > 0 \\\Rightarrow k > -\\\frac{25}{4} \\)",
+        "workingOut": "\\\\(25 + 4k > 0 \\\\Rightarrow k > -\\\\frac{25}{4}\\\\)",
         "graphData": null
       }
     ],
@@ -5789,13 +7684,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  6x + 5y = 21  \\\\)\\n\\\\(  2x + 3y = 11  \\\\)",
     "options": [
-      "\\( x = -1 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)"
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 1 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Multiply the second equation by 3 and subtract.",
+    "solution": "\\( x = 1 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the second equation by 3.",
@@ -5828,14 +7733,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = 2x - 1  \\\\)\\n\\\\(  y = x^2 - 4  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -5 \\)",
-      "\\( x = -3, \\; y = 5 \\)",
-      "\\( x = 3, \\; y = -5 \\)",
-      "\\( x = 3, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 3, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -5 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Set the quadratic equal to the linear expression.",
+    "solution": "\\( x = -3, \\; y = -5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the two expressions equal.",
@@ -5854,7 +7772,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve for x and find corresponding y values.",
-        "workingOut": "\\( x = 3 \\\Rightarrow y = 5; \\\quad x = -1 \\\Rightarrow y = -3 \\)",
+        "workingOut": "\\( x = 3 \\Rightarrow y = 5; \\quad x = -1 \\Rightarrow y = -3 \\)",
         "graphData": null
       }
     ],
@@ -5868,14 +7786,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  q  \\\\):\\n\\\\(  p = 6 - q  \\\\)\\n\\\\(  p - q = 2  \\\\)",
     "options": [
-      "\\( q = -2 \\)",
-      "\\( q = 0 \\)",
-      "\\( q = 2 \\)",
-      "\\( q = 4 \\)"
+      {
+        "text": "\\( q = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( q = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( q = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( q = 2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( q = 2 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Substitute the expression for \\( p \\) to solve for \\( q \\).",
+    "solution": "\\( q = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( p = 6 - q \\) into the second equation.",
@@ -5903,32 +7834,143 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  x + y + z = 12  \\\\)\\n\\\\(  x - y + z = 6  \\\\)\\n\\\\(  x + y - z = 4  \\\\)",
     "options": [
-      "\\( x = -5, \\; y = -3 \\)",
-      "\\( x = -5, \\; y = 3 \\)",
-      "\\( x = 5, \\; y = -3 \\)",
-      "\\( x = 5, \\; y = 3 \\)"
+      {
+        "text": "\\( x = -5, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -5, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -5, \\; y = -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Subtract pairs of equations to isolate individual variables.",
+    "solution": "\\( x = -5, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract equation 2 from equation 1.",
-        "workingOut": "\\( 2y = 6 \\\Rightarrow y = 3 \\)",
+        "workingOut": "\\( 2y = 6 \\Rightarrow y = 3 \\)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation 3 from equation 1.",
-        "workingOut": "\\( 2z = 8 \\\Rightarrow z = 4 \\)",
+        "workingOut": "\\( 2z = 8 \\Rightarrow z = 4 \\)",
         "graphData": null
       },
       {
         "explanation": "Substitute y = 3 and z = 4 into equation 1.",
-        "workingOut": "\\( x + 3 + 4 = 12 \\\Rightarrow x = 5 \\)",
+        "workingOut": "\\( x + 3 + 4 = 12 \\Rightarrow x = 5 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "dane2020-q14a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The diagram shows the curves $y = 2 - \\dfrac{3}{x}$ and $y = x - 2$ for $x \\geq 0$, meeting at $P$ and $Q$. Find the $x$-coordinates of $P$ and $Q$.",
+    "options": [],
+    "answer": "$x = 1$ (at $P$) and $x = 3$ (at $Q$)",
+    "blanks": [],
+    "hint": "Set the two expressions equal and multiply through by $x$ to form a quadratic.",
+    "solution": "Set $x - 2 = 2 - \\frac{3}{x}$. Multiply by $x$: $x^2 - 2x = 2x - 3$, so $x^2 - 4x + 3 = 0$, i.e. $(x-3)(x-1) = 0$. Thus $x = 1$ (at $P$) and $x = 3$ (at $Q$).",
+    "solutionSteps": [
+      {
+        "explanation": "At the points of intersection the two $y$-values are equal, so set the right-hand sides equal.",
+        "workingOut": "x - 2 = 2 - \\frac{3}{x}"
+      },
+      {
+        "explanation": "Multiply every term by $x$ to clear the fraction (valid since $x > 0$).",
+        "workingOut": "x^2 - 2x = 2x - 3"
+      },
+      {
+        "explanation": "Collect all terms on one side to form a quadratic equation in standard form.",
+        "workingOut": "x^2 - 4x + 3 = 0"
+      },
+      {
+        "explanation": "Factorise the quadratic.",
+        "workingOut": "(x - 3)(x - 1) = 0"
+      },
+      {
+        "explanation": "Solve for $x$; the smaller value is the $x$-coordinate of $P$ and the larger is that of $Q$.",
+        "workingOut": "x = 1 \\;(P), \\quad x = 3 \\;(Q)"
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 400,
+        "height": 320,
+        "boundingbox": [
+          -1,
+          4,
+          5,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": false
+        },
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - 2; }, -1, 5], {strokeColor:'#15803d',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2 - 3/x; }, 0.4, 5], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [1,-1], {name:'P', size:2.5, color:'red', fixed:true, label:{offset:[-14,-4]}});\nboard.create('point', [3,1], {name:'Q', size:2.5, color:'red', fixed:true, label:{offset:[8,8]}});\nboard.create('text', [4.6, 0.4, 'x'], {fontSize:13});\nboard.create('text', [0.25, 3.6, 'y'], {fontSize:13});\nboard.create('text', [4.1, 2.5, 'y = x - 2'], {fontSize:11, strokeColor:'#15803d'});\nboard.unsuspendUpdate();"
+      }
+    },
+    "requiresManualGrading": false
+  },
+  {
+    "id": "dane2020s-q14a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The curves $y = 2 - \\dfrac{2}{x}$ and $y = x - 1$ (for $x \\geq 0$) meet at $P$ and $Q$. Find the $x$-coordinates of $P$ and $Q$.",
+    "options": [],
+    "answer": "$x = 1$ (at $P$) and $x = 2$ (at $Q$)",
+    "blanks": [],
+    "hint": "Set the expressions equal and multiply by $x$ to form a quadratic.",
+    "solution": "Set $x - 1 = 2 - \\frac{2}{x}$. Multiply by $x$: $x^2 - x = 2x - 2$, so $x^2 - 3x + 2 = 0$, i.e. $(x-1)(x-2) = 0$. Thus $x = 1$ (at $P$) and $x = 2$ (at $Q$).",
+    "solutionSteps": [
+      {
+        "explanation": "Set the $y$-values equal at the intersections.",
+        "workingOut": "x - 1 = 2 - \\frac{2}{x}"
+      },
+      {
+        "explanation": "Multiply every term by $x$.",
+        "workingOut": "x^2 - x = 2x - 2"
+      },
+      {
+        "explanation": "Form a quadratic in standard form.",
+        "workingOut": "x^2 - 3x + 2 = 0"
+      },
+      {
+        "explanation": "Factorise and solve.",
+        "workingOut": "(x-1)(x-2) = 0 \\Rightarrow x = 1\\,(P),\\ 2\\,(Q)"
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 400,
+        "height": 320,
+        "boundingbox": [
+          -1,
+          4,
+          5,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": false
+        },
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - 1; }, -1, 5], {strokeColor:'#15803d',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2 - 2/x; }, 0.35, 5], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [1,0], {name:'P', size:2.5, color:'red', fixed:true, label:{offset:[-14,-6]}});\nboard.create('point', [2,1], {name:'Q', size:2.5, color:'red', fixed:true, label:{offset:[8,8]}});\nboard.create('text', [4.6, 0.4, 'x'], {fontSize:13});\nboard.create('text', [0.25, 3.6, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     "requiresManualGrading": false
   },
   {
@@ -5938,14 +7980,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  2x + y = 7  \\\\)\\n\\\\(  xy = 6  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -3 \\)",
-      "\\( x = -2, \\; y = 3 \\)",
-      "\\( x = 2, \\; y = -3 \\)",
-      "\\( x = 2, \\; y = 3 \\)"
+      {
+        "text": "\\( x = 2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Express y from the linear equation and substitute into the product equation.",
+    "solution": "\\( x = -2, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Isolate y.",
@@ -5954,7 +8009,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute into xy = 6.",
-        "workingOut": "\\( x(7 - 2x \\) = 6 \\\Rightarrow 7x - 2x^2 = 6)",
+        "workingOut": "\\( x(7 - 2x \\) = 6 \\Rightarrow 7x - 2x^2 = 6)",
         "graphData": null
       },
       {
@@ -5964,7 +8019,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (2x - 3 \\)\\( x - 2 \\) = 0 \\\Rightarrow x = \\\frac{3}{2}, y = 4 \\\text{ or } x = 2, y = 3)",
+        "workingOut": "\\( (2x - 3 \\)\\( x - 2 \\) = 0 \\Rightarrow x = \\\frac{3}{2}, y = 4 \\\text{ or } x = 2, y = 3)",
         "graphData": null
       }
     ],
@@ -5978,14 +8033,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  3x - 4y = 2  \\\\)\\n\\\\(  x + 8y = 38  \\\\)",
     "options": [
-      "\\( y = -4 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)",
-      "\\( y = 6 \\)"
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 4 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Isolate \\( x \\) in the second equation and substitute into the first.",
+    "solution": "\\( y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( x \\).",
@@ -6013,23 +8081,36 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "One number is 4 more than another. Their product is 60. Find both numbers.",
     "options": [
-      "\\( -10 \\text{ and } 6 \\)",
-      "\\( 10 \\text{ and } 6 \\)",
-      "\\( 11 \\text{ and } 5 \\)",
-      "\\( 9 \\text{ and } 7 \\)"
+      {
+        "text": "\\( 11 \\text{ and } 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 10 \\text{ and } 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -10 \\text{ and } 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9 \\text{ and } 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( -10 \\text{ and } 6 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Set up equations from the conditions and solve the quadratic.",
+    "solution": "\\( -10 \\text{ and } 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Let the numbers be x and y where x = y + 4.",
-        "workingOut": "\\( x = y + 4, \\\quad xy = 60 \\)",
+        "workingOut": "\\( x = y + 4, \\quad xy = 60 \\)",
         "graphData": null
       },
       {
         "explanation": "Substitute.",
-        "workingOut": "\\( (y + 4 \\)y = 60 \\\Rightarrow y^2 + 4y - 60 = 0)",
+        "workingOut": "\\( (y + 4 \\)y = 60 \\Rightarrow y^2 + 4y - 60 = 0)",
         "graphData": null
       },
       {
@@ -6039,7 +8120,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Taking the positive root.",
-        "workingOut": "\\( y = 6, \\\quad x = 10 \\)",
+        "workingOut": "\\( y = 6, \\quad x = 10 \\)",
         "graphData": null
       }
     ],
@@ -6053,14 +8134,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + 2y = 5  \\\\)\\n\\\\(  x^2 + y^2 = 10  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -1 \\)",
-      "\\( x = -3, \\; y = 1 \\)",
-      "\\( x = 3, \\; y = -1 \\)",
-      "\\( x = 3, \\; y = 1 \\)"
+      {
+        "text": "\\( x = -3, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -1 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Isolate x and substitute into the circle equation.",
+    "solution": "\\( x = -3, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x from the linear equation.",
@@ -6074,12 +8168,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 25 - 20y + 4y^2 + y^2 = 10 \\\Rightarrow 5y^2 - 20y + 15 = 0 \\\Rightarrow y^2 - 4y + 3 = 0 \\)",
+        "workingOut": "\\( 25 - 20y + 4y^2 + y^2 = 10 \\Rightarrow 5y^2 - 20y + 15 = 0 \\Rightarrow y^2 - 4y + 3 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (y - 1 \\)\\( y - 3 \\) = 0 \\\Rightarrow y = 1, x = 3 \\\text{ or } y = 3, x = -1)",
+        "workingOut": "\\( (y - 1 \\)\\( y - 3 \\) = 0 \\Rightarrow y = 1, x = 3 \\\text{ or } y = 3, x = -1)",
         "graphData": null
       }
     ],
@@ -6093,14 +8187,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  y = 3x  \\\\)\\n\\\\(  2x + 3y = 22  \\\\)",
     "options": [
-      "\\( x = -2 \\)",
-      "\\( x = 0 \\)",
-      "\\( x = 2 \\)",
-      "\\( x = 4 \\)"
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Substitute \\( y = 3x \\) into the second equation.",
+    "solution": "\\( x = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = 3x \\) into the second equation.",
@@ -6128,14 +8235,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "A father is three times as old as his son. In 12 years, the father will be twice as old as the son. Find their current ages.",
     "options": [
-      "\\( r = -36 \\)",
-      "\\( r = 34 \\)",
-      "\\( r = 36 \\)",
-      "\\( r = 38 \\)"
+      {
+        "text": "\\( r = -36 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( r = 34 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( r = 38 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( r = 36 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( r = -36 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Set up equations using the current and future age relationships.",
+    "solution": "\\( r = -36 \\)",
     "solutionSteps": [
       {
         "explanation": "Current ages: father is three times the son.",
@@ -6149,7 +8269,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute f = 3s.",
-        "workingOut": "\\( 3s + 12 = 2s + 24 \\\Rightarrow s = 12 \\)",
+        "workingOut": "\\( 3s + 12 = 2s + 24 \\Rightarrow s = 12 \\)",
         "graphData": null
       },
       {
@@ -6168,33 +8288,46 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "Solve the system:\\n\\\\(  x + 2y - z = 7  \\\\)\\n\\\\(  3x - y + 2z = 5  \\\\)\\n\\\\(  2x + y + 3z = 10  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -3 \\)",
-      "\\( x = -2, \\; y = 3 \\)",
-      "\\( x = 2, \\; y = -3 \\)",
-      "\\( x = 2, \\; y = 3 \\)"
+      {
+        "text": "\\( x = -2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Use elimination systematically to reduce the system.",
+    "solution": "\\( x = -2, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Multiply equation 1 by 3 and subtract equation 2.",
-        "workingOut": "\\( 3(x + 2y - z \\) - \\( 3x - y + 2z \\) = 21 - 5 \\\Rightarrow 7y - 5z = 16)",
+        "workingOut": "\\( 3(x + 2y - z \\) - \\( 3x - y + 2z \\) = 21 - 5 \\Rightarrow 7y - 5z = 16)",
         "graphData": null
       },
       {
         "explanation": "Multiply equation 1 by 2 and subtract equation 3.",
-        "workingOut": "\\( 2(x + 2y - z \\) - \\( 2x + y + 3z \\) = 14 - 10 \\\Rightarrow 3y - 5z = 4)",
+        "workingOut": "\\( 2(x + 2y - z \\) - \\( 2x + y + 3z \\) = 14 - 10 \\Rightarrow 3y - 5z = 4)",
         "graphData": null
       },
       {
         "explanation": "Subtract the second result from the first.",
-        "workingOut": "\\( 4y = 12 \\\Rightarrow y = 3 \\)",
+        "workingOut": "\\( 4y = 12 \\Rightarrow y = 3 \\)",
         "graphData": null
       },
       {
         "explanation": "Back-substitute to find z and x.",
-        "workingOut": "\\( 9 - 5z = 4 \\\Rightarrow z = 1, \\\quad x = 7 - 6 + 1 = 2 \\)",
+        "workingOut": "\\( 9 - 5z = 4 \\Rightarrow z = 1, \\quad x = 7 - 6 + 1 = 2 \\)",
         "graphData": null
       }
     ],
@@ -6208,14 +8341,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  5x - 3y = 29  \\\\)\\n\\\\(  2x - y = 11  \\\\)",
     "options": [
-      "\\( y = -1 \\)",
-      "\\( y = -3 \\)",
-      "\\( y = -5 \\)",
-      "\\( y = 3 \\)"
+      {
+        "text": "\\( y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -3 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute back.",
+    "solution": "\\( y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Eliminate to solve for \\( x \\).",
@@ -6243,14 +8389,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 12  \\\\)\\n\\\\(  x^2 + y^2 = 80  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -8 \\)",
-      "\\( x = -4, \\; y = 8 \\)",
-      "\\( x = 4, \\; y = -8 \\)",
-      "\\( x = 4, \\; y = 8 \\)"
+      {
+        "text": "\\( x = 4, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -8 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Express y and substitute into the sum of squares.",
+    "solution": "\\( x = -4, \\; y = -8 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y.",
@@ -6264,12 +8423,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Simplify.",
-        "workingOut": "\\( 2x^2 - 24x + 144 = 80 \\\Rightarrow x^2 - 12x + 32 = 0 \\)",
+        "workingOut": "\\( 2x^2 - 24x + 144 = 80 \\Rightarrow x^2 - 12x + 32 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (x - 4 \\)\\( x - 8 \\) = 0 \\\Rightarrow x = 4, y = 8 \\\text{ or } x = 8, y = 4)",
+        "workingOut": "\\( (x - 4 \\)\\( x - 8 \\) = 0 \\Rightarrow x = 4, y = 8 \\\text{ or } x = 8, y = 4)",
         "graphData": null
       }
     ],
@@ -6283,14 +8442,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  p  \\\\):\\n\\\\(  p = 6 - q  \\\\)\\n\\\\(  p - q = 2  \\\\)",
     "options": [
-      "\\( p = -4 \\)",
-      "\\( p = 2 \\)",
-      "\\( p = 4 \\)",
-      "\\( p = 6 \\)"
+      {
+        "text": "\\( p = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( p = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( p = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( p = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( p = 4 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Find \\( q \\) by substituting \\( p \\), then find \\( p \\).",
+    "solution": "\\( p = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( p = 6 - q \\) into the second equation.",
@@ -6318,23 +8490,36 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  |x + y| = 5  \\\\)\\n\\\\(  x - y = 1  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -2 \\)",
-      "\\( x = -3, \\; y = 2 \\)",
-      "\\( x = 3, \\; y = -2 \\)",
-      "\\( x = 3, \\; y = 2 \\)"
+      {
+        "text": "\\( x = 3, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -2 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -2 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Consider both cases for the absolute value equation.",
+    "solution": "\\( x = -3, \\; y = -2 \\)",
     "solutionSteps": [
       {
         "explanation": "Case 1: x + y = 5 and x - y = 1.",
-        "workingOut": "\\( 2x = 6 \\\Rightarrow x = 3, y = 2 \\)",
+        "workingOut": "\\( 2x = 6 \\Rightarrow x = 3, y = 2 \\)",
         "graphData": null
       },
       {
         "explanation": "Case 2: x + y = -5 and x - y = 1.",
-        "workingOut": "\\( 2x = -4 \\\Rightarrow x = -2, y = -3 \\)",
+        "workingOut": "\\( 2x = -4 \\Rightarrow x = -2, y = -3 \\)",
         "graphData": null
       }
     ],
@@ -6348,14 +8533,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = x - 4  \\\\)\\n\\\\(  y = x^2 - 6x + 8  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -1 \\)",
-      "\\( x = -3, \\; y = 1 \\)",
-      "\\( x = 3, \\; y = -1 \\)",
-      "\\( x = 3, \\; y = 1 \\)"
+      {
+        "text": "\\( x = 3, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -1 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Equate the expressions and solve the quadratic.",
+    "solution": "\\( x = -3, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the expressions equal.",
@@ -6374,7 +8572,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve and find y.",
-        "workingOut": "\\( x = 3 \\\Rightarrow y = -1; \\\quad x = 4 \\\Rightarrow y = 0 \\)",
+        "workingOut": "\\( x = 3 \\Rightarrow y = -1; \\quad x = 4 \\Rightarrow y = 0 \\)",
         "graphData": null
       }
     ],
@@ -6388,14 +8586,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Solve the simultaneous equations for \\\\(  b  \\\\):\\n\\\\(  a + 4b = 13  \\\\)\\n\\\\(  a + 3b = 10  \\\\)",
     "options": [
-      "\\( b = -3 \\)",
-      "\\( b = 1 \\)",
-      "\\( b = 3 \\)",
-      "\\( b = 5 \\)"
+      {
+        "text": "\\( b = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( b = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( b = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( b = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( b = 3 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Subtract the second equation from the first to eliminate \\( a \\).",
+    "solution": "\\( b = 3 \\)",
     "solutionSteps": [
       {
         "explanation": "Subtract the equations.",
@@ -6418,14 +8629,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  2x + 3y = 16  \\\\)\\n\\\\(  xy = 10  \\\\)",
     "options": [
-      "\\( y = -10 \\)",
-      "\\( y = 10 \\)",
-      "\\( y = 12 \\)",
-      "\\( y = 8 \\)"
+      {
+        "text": "\\( y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = -10 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute it into \\( y = \\frac{10}{x} \\).",
+    "solution": "\\( y = -10 \\)",
     "solutionSteps": [
       {
         "explanation": "Find \\( x \\).",
@@ -6448,14 +8672,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  4x + 3y = 10  \\\\)\\n\\\\(  3x + y = 5  \\\\)",
     "options": [
-      "\\( y = -2 \\)",
-      "\\( y = 0 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)"
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 2 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute it back.",
+    "solution": "\\( y = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Eliminate to solve for \\( x \\).",
@@ -6483,14 +8720,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = 2x + 3  \\\\)\\n\\\\(  y = x^2 + x - 3  \\\\)",
     "options": [
-      "\\( x = -3, \\; y = -9 \\)",
-      "\\( x = -3, \\; y = 9 \\)",
-      "\\( x = 3, \\; y = -9 \\)",
-      "\\( x = 3, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -3, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3, \\; y = 9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3, \\; y = -9 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Set the two y-expressions equal.",
+    "solution": "\\( x = -3, \\; y = -9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set the expressions equal.",
@@ -6509,7 +8759,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve and find y.",
-        "workingOut": "\\( x = 3 \\\Rightarrow y = 9; \\\quad x = -2 \\\Rightarrow y = -1 \\)",
+        "workingOut": "\\( x = 3 \\Rightarrow y = 9; \\quad x = -2 \\Rightarrow y = -1 \\)",
         "graphData": null
       }
     ],
@@ -6523,14 +8773,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  2x^2 + 3y^2 = 35  \\\\)\\n\\\\(  x + y = 5  \\\\)",
     "options": [
-      "\\( x = -4, \\; y = -1 \\)",
-      "\\( x = -4, \\; y = 1 \\)",
-      "\\( x = 4, \\; y = -1 \\)",
-      "\\( x = 4, \\; y = 1 \\)"
+      {
+        "text": "\\( x = 4, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4, \\; y = 1 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -4, \\; y = -1 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Express x from the linear equation and substitute.",
+    "solution": "\\( x = -4, \\; y = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x.",
@@ -6544,12 +8807,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 50 - 20y + 2y^2 + 3y^2 = 35 \\\Rightarrow 5y^2 - 20y + 15 = 0 \\\Rightarrow y^2 - 4y + 3 = 0 \\)",
+        "workingOut": "\\( 50 - 20y + 2y^2 + 3y^2 = 35 \\Rightarrow 5y^2 - 20y + 15 = 0 \\Rightarrow y^2 - 4y + 3 = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( (y - 1 \\)\\( y - 3 \\) = 0 \\\Rightarrow y = 1, x = 4 \\\text{ or } y = 3, x = 2)",
+        "workingOut": "\\( (y - 1 \\)\\( y - 3 \\) = 0 \\Rightarrow y = 1, x = 4 \\\text{ or } y = 3, x = 2)",
         "graphData": null
       }
     ],
@@ -6563,14 +8826,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  y = 1 - 2x  \\\\)\\n\\\\(  y = x^2 - 2x - 3  \\\\)",
     "options": [
-      "\\( x = -2, \\; y = -3 \\)",
-      "\\( x = -2, \\; y = 3 \\)",
-      "\\( x = 2, \\; y = -3 \\)",
-      "\\( x = 2, \\; y = 3 \\)"
+      {
+        "text": "\\( x = 2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2, \\; y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2, \\; y = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -2, \\; y = -3 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Set the expressions equal and simplify.",
+    "solution": "\\( x = -2, \\; y = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Set equal.",
@@ -6589,7 +8865,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Find y.",
-        "workingOut": "\\( x = 2: y = -3; \\\quad x = -2: y = 5 \\)",
+        "workingOut": "\\( x = 2: y = -3; \\quad x = -2: y = 5 \\)",
         "graphData": null
       }
     ],
@@ -6603,14 +8879,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  3x - y = 5  \\\\)\\n\\\\(  x^2 + y^2 = 25  \\\\)",
     "options": [
-      "\\( x = -5, \\; y = 0 \\)",
-      "\\( x = 0, \\; y = -5 \\)",
-      "\\( x = 0, \\; y = 5 \\)",
-      "\\( x = 1, \\; y = -6 \\)"
+      {
+        "text": "\\( x = -5, \\; y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -5, \\; y = 0 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Express y from the linear equation and substitute into the circle equation.",
+    "solution": "\\( x = -5, \\; y = 0 \\)",
     "solutionSteps": [
       {
         "explanation": "Express y.",
@@ -6624,12 +8913,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( x^2 + 9x^2 - 30x + 25 = 25 \\\Rightarrow 10x^2 - 30x = 0 \\)",
+        "workingOut": "\\( x^2 + 9x^2 - 30x + 25 = 25 \\Rightarrow 10x^2 - 30x = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( 10x(x - 3 \\) = 0 \\\Rightarrow x = 0, y = -5 \\\text{ or } x = 3, y = 4)",
+        "workingOut": "\\( 10x(x - 3 \\) = 0 \\Rightarrow x = 0, y = -5 \\\text{ or } x = 3, y = 4)",
         "graphData": null
       }
     ],
@@ -6643,14 +8932,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x + y = 2  \\\\)\\n\\\\(  x - y = -6  \\\\)",
     "options": [
-      "\\( y = -5 \\)",
-      "\\( y = 3 \\)",
-      "\\( y = 5 \\)",
-      "\\( y = 7 \\)"
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute back.",
+    "solution": "\\( y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Add to solve for \\( x \\).",
@@ -6678,14 +8980,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x + 2y = -4  \\\\)\\n\\\\(  x - 2y = -12  \\\\)",
     "options": [
-      "\\( y = -4 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)",
-      "\\( y = 6 \\)"
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 4 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Find \\( x \\) first, then substitute back.",
+    "solution": "\\( y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Add the equations to solve for \\( x \\).",
@@ -6713,14 +9028,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  x + y = 8  \\\\)\\n\\\\(  x^2 + xy + y^2 = 49  \\\\)",
     "options": [
-      "\\( x = -3 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)",
-      "\\( x = 5 \\)"
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -3 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Substitute \\( y = 8 - x \\) into the quadratic equation.",
+    "solution": "\\( x = -3 \\)",
     "solutionSteps": [
       {
         "explanation": "Rearrange the linear equation.",
@@ -6763,14 +9091,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve simultaneously:\\n\\\\(  x + y = 5  \\\\)\\n\\\\(  x^2 + 3y^2 = 25  \\\\)",
     "options": [
-      "\\( x = -5, \\; y = 0 \\)",
-      "\\( x = 0, \\; y = 5 \\)",
-      "\\( x = 5, \\; y = 0 \\)",
-      "\\( x = 6, \\; y = -1 \\)"
+      {
+        "text": "\\( x = -5, \\; y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5, \\; y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -5, \\; y = 0 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Express x and substitute into the quadratic equation.",
+    "solution": "\\( x = -5, \\; y = 0 \\)",
     "solutionSteps": [
       {
         "explanation": "Express x.",
@@ -6784,12 +9125,12 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify.",
-        "workingOut": "\\( 25 - 10y + y^2 + 3y^2 = 25 \\\Rightarrow 4y^2 - 10y = 0 \\)",
+        "workingOut": "\\( 25 - 10y + y^2 + 3y^2 = 25 \\Rightarrow 4y^2 - 10y = 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "\\( 2y(2y - 5 \\) = 0 \\\Rightarrow y = 0, x = 5 \\\text{ or } y = \\\frac{5}{2}, x = \\\frac{5}{2})",
+        "workingOut": "\\( 2y(2y - 5 \\) = 0 \\Rightarrow y = 0, x = 5 \\\text{ or } y = \\\frac{5}{2}, x = \\\frac{5}{2})",
         "graphData": null
       }
     ],
@@ -6803,14 +9144,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  3x - 4y = 2  \\\\)\\n\\\\(  x + 8y = 38  \\\\)",
     "options": [
-      "\\( x = -6 \\)",
-      "\\( x = 4 \\)",
-      "\\( x = 6 \\)",
-      "\\( x = 8 \\)"
+      {
+        "text": "\\( x = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 6 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Isolate \\( x \\) in the second equation.",
+    "solution": "\\( x = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( x \\) using the second equation.",
@@ -6843,14 +9197,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  y = 5 - x  \\\\)\\n\\\\(  x + 4y = 11  \\\\)",
     "options": [
-      "\\( y = -2 \\)",
-      "\\( y = 0 \\)",
-      "\\( y = 2 \\)",
-      "\\( y = 4 \\)"
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( y = 2 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Solve for \\( x \\) first, then substitute it back.",
+    "solution": "\\( y = 2 \\)",
     "solutionSteps": [
       {
         "explanation": "Solve for \\( x \\).",
@@ -6873,14 +9240,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Two cars travel towards each other. Car A travels at \\\\(  x  \\\\) km/h and Car B at \\\\(  y  \\\\) km/h. They start 200 km apart and meet after 2 hours. If Car A is 20 km/h faster than Car B, find both speeds.",
     "options": [
-      "\\( A = -60 \\)",
-      "\\( A = 58 \\)",
-      "\\( A = 60 \\)",
-      "\\( A = 62 \\)"
+      {
+        "text": "\\( A = 58 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A = 60 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A = 62 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A = -60 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( A = -60 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Use distance = speed × time to set up the equations.",
+    "solution": "\\( A = -60 \\)",
     "solutionSteps": [
       {
         "explanation": "Total distance covered in 2 hours: 2x + 2y = 200.",
@@ -6894,7 +9274,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute.",
-        "workingOut": "\\( (y + 20 \\) + y = 100 \\\Rightarrow 2y = 80 \\\Rightarrow y = 40)",
+        "workingOut": "\\( (y + 20 \\) + y = 100 \\Rightarrow 2y = 80 \\Rightarrow y = 40)",
         "graphData": null
       },
       {
@@ -6908,38 +9288,34 @@ export const Y11_CH1E_QUESTIONS = [
   },
   {
     "id": "fc1edb66e671a9c8a9083339a6831efd",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Apples cost \\\\(  \\\\$x  \\\\) each and bananas cost \\\\(  \\\\$y  \\\\) each. If 3 apples and 5 bananas cost \\\\(  \\\\$14.50  \\\\), and 5 apples and 3 bananas cost \\\\(  \\\\$13.50  \\\\), find the cost of each fruit.",
-    "options": [
-      "\\( Apple = $-1.-50, Banana = $-2.0 \\)",
-      "\\( Apple = $-1.48, Banana = $0.-2 \\)",
-      "\\( Apple = $1.50, Banana = $2.00 \\)",
-      "\\( Apple = $2.51, Banana = $3.1 \\)"
-    ],
-    "a": "\\( Apple = $1.50, Banana = $2.00 \\)",
+    "question": "Apples cost \\\\( \\\\$x \\\\) each and bananas cost \\\\( \\\\$y \\\\) each. If 3 apples and 5 bananas cost \\\\( \\\\$14.50 \\\\), and 5 apples and 3 bananas cost \\\\( \\\\$13.50 \\\\), find the cost of each fruit.",
+    "options": [],
+    "answer": "",
     "blanks": [],
     "hint": "Set up two equations from the cost information and solve by elimination.",
+    "solution": "\\\\( 3x + 5y = 14.50 \\\\) and \\\\( 5x + 3y = 13.50 \\\\). Solve to get \\\\( x = 1.50, y = 2.00 \\\\).",
     "solutionSteps": [
       {
         "explanation": "Write the equations.",
-        "workingOut": "\\( 3x + 5y = 14.50 \\\quad \\\text{and} \\\quad 5x + 3y = 13.50 \\)",
+        "workingOut": "\\\\(3x + 5y = 14.50 \\\\quad \\\\text{and} \\\\quad 5x + 3y = 13.50\\\\)",
         "graphData": null
       },
       {
         "explanation": "Multiply first by 3, second by 5 to eliminate y.",
-        "workingOut": "\\( 9x + 15y = 43.50 \\\quad \\\text{and} \\\quad 25x + 15y = 67.50 \\)",
+        "workingOut": "\\\\(9x + 15y = 43.50 \\\\quad \\\\text{and} \\\\quad 25x + 15y = 67.50\\\\)",
         "graphData": null
       },
       {
         "explanation": "Subtract.",
-        "workingOut": "\\( 16x = 24 \\\Rightarrow x = 1.50 \\)",
+        "workingOut": "\\\\(16x = 24 \\\\Rightarrow x = 1.50\\\\)",
         "graphData": null
       },
       {
         "explanation": "Find y.",
-        "workingOut": "\\( 3(1.50 \\) + 5y = 14.50 \\\Rightarrow 5y = 10 \\\Rightarrow y = 2.00)",
+        "workingOut": "\\\\(3(1.50) + 5y = 14.50 \\\\Rightarrow 5y = 10 \\\\Rightarrow y = 2.00\\\\)",
         "graphData": null
       }
     ],
@@ -6948,38 +9324,34 @@ export const Y11_CH1E_QUESTIONS = [
   },
   {
     "id": "fd86831b3328c6ffa2f15e714d3ce14a",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 2x + 1  \\\\)\\n\\\\(  x^2 + y^2 = 10  \\\\)",
-    "options": [
-      "\\( x = -1, \\; y = -3 \\)",
-      "\\( x = -1, \\; y = 3 \\)",
-      "\\( x = 1, \\; y = -3 \\)",
-      "\\( x = 1, \\; y = 3 \\)"
-    ],
-    "a": "\\( x = -1, \\; y = -3 \\)",
+    "question": "Solve simultaneously:\\n\\\\( y = 2x + 1 \\\\)\\n\\\\( x^2 + y^2 = 10 \\\\)",
+    "options": [],
+    "answer": "x = 1, y = 3 and x = -9/5, y = -13/5",
     "blanks": [],
     "hint": "Substitute the linear expression into the circle equation.",
+    "solution": "Substitute \\\\( y = 2x+1 \\\\): \\\\( 5x^2 + 4x - 9 = 0 \\\\Rightarrow (5x+9)(x-1) = 0 \\\\)",
     "solutionSteps": [
       {
         "explanation": "Substitute y = 2x + 1.",
-        "workingOut": "\\( x^2 + (2x + 1 \\)^2 = 10)",
+        "workingOut": "\\\\(x^2 + (2x + 1)^2 = 10\\\\)",
         "graphData": null
       },
       {
         "explanation": "Expand.",
-        "workingOut": "\\( x^2 + 4x^2 + 4x + 1 = 10 \\\Rightarrow 5x^2 + 4x - 9 = 0 \\)",
+        "workingOut": "\\\\(x^2 + 4x^2 + 4x + 1 = 10 \\\\Rightarrow 5x^2 + 4x - 9 = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "Factorise.",
-        "workingOut": "\\( (5x + 9 \\)\\( x - 1 \\) = 0)",
+        "workingOut": "\\\\((5x + 9)(x - 1) = 0\\\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for both solution pairs.",
-        "workingOut": "\\( x = 1, y = 3 \\\text{ or } x = -\\\frac{9}{5}, y = -\\\frac{13}{5} \\)",
+        "workingOut": "\\\\(x = 1, y = 3 \\\\text{ or } x = -\\\\frac{9}{5}, y = -\\\\frac{13}{5}\\\\)",
         "graphData": null
       }
     ],
@@ -6993,13 +9365,23 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  2x + y = 8  \\\\)\\n\\\\(  xy = 6  \\\\)",
     "options": [
-      "\\( x = -1 \\)",
-      "\\( x = 1 \\)",
-      "\\( x = 3 \\)"
+      {
+        "text": "\\( x = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = -1 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Express \\( y \\) from the linear equation and substitute into the product equation.",
+    "solution": "\\( x = -1 \\)",
     "solutionSteps": [
       {
         "explanation": "Express \\( y \\).",
@@ -7037,14 +9419,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Aria, 2 trucks and 3 vans carry a total of 39 metric tons. Another configuration of 3 trucks and 2 vans carries 46 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -12, \\; y = -5 \\)",
-      "\\( x = -12, \\; y = 5 \\)",
-      "\\( x = 12, \\; y = -5 \\)",
-      "\\( x = 12, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 12, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 5 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7071,340 +9466,33 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
-    "id": "y11a-1e-h2",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 150,
-    "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 65 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 68 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
-    "options": [
-      "\\( x = -11, \\; y = -8 \\)",
-      "\\( x = -11, \\; y = 8 \\)",
-      "\\( x = 11, \\; y = -8 \\)",
-      "\\( x = 11, \\; y = 8 \\)"
-    ],
-    "a": "\\( x = 11, \\; y = 8 \\)",
-    "blanks": [],
-    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the simultaneous equations representing the system.",
-        "workingOut": "\\( 3x + 4y = 65 \\) \\text{ and } \\( 4x + 3y = 68 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Multiply the equations to eliminate one variable.",
-        "workingOut": "\\( 12x + 16y = 260 \\) \\text{ and } \\( 12x + 9y = 204 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract and solve for y.",
-        "workingOut": "\\( (7)y = 56 \\implies y = 8 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y back to solve for x.",
-        "workingOut": "\\( 3x + 4(8) = 65 \\implies x = 11 \\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "requiresManualGrading": false
-  },
-  {
-    "id": "y11a-1e-h3",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 150,
-    "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 139 gas units. Under Maya's audit, 5 standard pools and 4 vaults burn 149 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
-    "options": [
-      "\\( x = -21, \\; y = -11 \\)",
-      "\\( x = -21, \\; y = 11 \\)",
-      "\\( x = 21, \\; y = -11 \\)",
-      "\\( x = 21, \\; y = 11 \\)"
-    ],
-    "a": "\\( x = 21, \\; y = 11 \\)",
-    "blanks": [],
-    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the simultaneous equations representing the system.",
-        "workingOut": "\\( 4x + 5y = 139 \\) \\text{ and } \\( 5x + 4y = 149 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Multiply the equations to eliminate one variable.",
-        "workingOut": "\\( 20x + 25y = 695 \\) \\text{ and } \\( 20x + 16y = 596 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract and solve for y.",
-        "workingOut": "\\( (9)y = 99 \\implies y = 11 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y back to solve for x.",
-        "workingOut": "\\( 4x + 5(11) = 139 \\implies x = 21 \\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "requiresManualGrading": false
-  },
-  {
-    "id": "y11a-1e-h4",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 150,
-    "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 54 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 61 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
-    "options": [
-      "\\( x = -12, \\; y = -5 \\)",
-      "\\( x = -12, \\; y = 5 \\)",
-      "\\( x = 12, \\; y = -5 \\)",
-      "\\( x = 12, \\; y = 5 \\)"
-    ],
-    "a": "\\( x = 12, \\; y = 5 \\)",
-    "blanks": [],
-    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the simultaneous equations representing the system.",
-        "workingOut": "\\( 2x + 6y = 54 \\) \\text{ and } \\( 3x + 5y = 61 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Multiply the equations to eliminate one variable.",
-        "workingOut": "\\( 6x + 18y = 162 \\) \\text{ and } \\( 6x + 10y = 122 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract and solve for y.",
-        "workingOut": "\\( (8)y = 40 \\implies y = 5 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y back to solve for x.",
-        "workingOut": "\\( 2x + 6(5) = 54 \\implies x = 12 \\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "requiresManualGrading": false
-  },
-  {
-    "id": "y11a-1e-h5",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 150,
-    "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Elena, 3 trucks and 3 vans carry a total of 75 metric tons. Another configuration of 4 trucks and 2 vans carries 84 metric tons. Solve for the capacity of one truck (x) and one van (y).",
-    "options": [
-      "\\( x = -17, \\; y = -8 \\)",
-      "\\( x = -17, \\; y = 8 \\)",
-      "\\( x = 17, \\; y = -8 \\)",
-      "\\( x = 17, \\; y = 8 \\)"
-    ],
-    "a": "\\( x = 17, \\; y = 8 \\)",
-    "blanks": [],
-    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the simultaneous equations representing the system.",
-        "workingOut": "\\( 3x + 3y = 75 \\) \\text{ and } \\( 4x + 2y = 84 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Multiply the equations to eliminate one variable.",
-        "workingOut": "\\( 12x + 12y = 300 \\) \\text{ and } \\( 12x + 6y = 252 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract and solve for y.",
-        "workingOut": "\\( (6)y = 48 \\implies y = 8 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y back to solve for x.",
-        "workingOut": "\\( 3x + 3(8) = 75 \\implies x = 17 \\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "requiresManualGrading": false
-  },
-  {
-    "id": "y11a-1e-h6",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 150,
-    "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 4 monocrystalline lines and 4 polycrystalline arrays output 60 kilowatts. Simultaneously, 5 monocrystalline lines and 3 polycrystalline arrays output 63 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
-    "options": [
-      "\\( x = -9, \\; y = -6 \\)",
-      "\\( x = -9, \\; y = 6 \\)",
-      "\\( x = 9, \\; y = -6 \\)",
-      "\\( x = 9, \\; y = 6 \\)"
-    ],
-    "a": "\\( x = 9, \\; y = 6 \\)",
-    "blanks": [],
-    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the simultaneous equations representing the system.",
-        "workingOut": "\\( 4x + 4y = 60 \\) \\text{ and } \\( 5x + 3y = 63 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Multiply the equations to eliminate one variable.",
-        "workingOut": "\\( 20x + 20y = 300 \\) \\text{ and } \\( 20x + 12y = 252 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract and solve for y.",
-        "workingOut": "\\( (8)y = 48 \\implies y = 6 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y back to solve for x.",
-        "workingOut": "\\( 4x + 4(6) = 60 \\implies x = 9 \\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "requiresManualGrading": false
-  },
-  {
-    "id": "y11a-1e-h7",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 150,
-    "question": "A smart contract manages standard liquid pools and high-frequency vaults. 2 standard pools and 5 vaults burn a total of 83 gas units. Under Clara's audit, 3 standard pools and 4 vaults burn 93 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
-    "options": [
-      "\\( x = -19, \\; y = -9 \\)",
-      "\\( x = -19, \\; y = 9 \\)",
-      "\\( x = 19, \\; y = -9 \\)",
-      "\\( x = 19, \\; y = 9 \\)"
-    ],
-    "a": "\\( x = 19, \\; y = 9 \\)",
-    "blanks": [],
-    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the simultaneous equations representing the system.",
-        "workingOut": "\\( 2x + 5y = 83 \\) \\text{ and } \\( 3x + 4y = 93 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Multiply the equations to eliminate one variable.",
-        "workingOut": "\\( 6x + 15y = 249 \\) \\text{ and } \\( 6x + 8y = 186 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract and solve for y.",
-        "workingOut": "\\( (7)y = 63 \\implies y = 9 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y back to solve for x.",
-        "workingOut": "\\( 2x + 5(9) = 83 \\implies x = 19 \\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "requiresManualGrading": false
-  },
-  {
-    "id": "y11a-1e-h8",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 150,
-    "question": "A testing laboratory processes culture samples and diagnostic slides. 3 culture samples and 6 slides require a total of 78 minutes of centrifugation. A batch of 4 culture samples and 5 slides requires 80 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
-    "options": [
-      "\\( x = -10, \\; y = -8 \\)",
-      "\\( x = -10, \\; y = 8 \\)",
-      "\\( x = 10, \\; y = -8 \\)",
-      "\\( x = 10, \\; y = 8 \\)"
-    ],
-    "a": "\\( x = 10, \\; y = 8 \\)",
-    "blanks": [],
-    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the simultaneous equations representing the system.",
-        "workingOut": "\\( 3x + 6y = 78 \\) \\text{ and } \\( 4x + 5y = 80 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Multiply the equations to eliminate one variable.",
-        "workingOut": "\\( 12x + 24y = 312 \\) \\text{ and } \\( 12x + 15y = 240 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract and solve for y.",
-        "workingOut": "\\( (9)y = 72 \\implies y = 8 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y back to solve for x.",
-        "workingOut": "\\( 3x + 6(8) = 78 \\implies x = 10 \\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "requiresManualGrading": false
-  },
-  {
-    "id": "y11a-1e-h9",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 150,
-    "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Iris, 4 trucks and 3 vans carry a total of 78 metric tons. Another configuration of 5 trucks and 2 vans carries 87 metric tons. Solve for the capacity of one truck (x) and one van (y).",
-    "options": [
-      "\\( x = -15, \\; y = -6 \\)",
-      "\\( x = -15, \\; y = 6 \\)",
-      "\\( x = 15, \\; y = -6 \\)",
-      "\\( x = 15, \\; y = 6 \\)"
-    ],
-    "a": "\\( x = 15, \\; y = 6 \\)",
-    "blanks": [],
-    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the simultaneous equations representing the system.",
-        "workingOut": "\\( 4x + 3y = 78 \\) \\text{ and } \\( 5x + 2y = 87 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Multiply the equations to eliminate one variable.",
-        "workingOut": "\\( 20x + 15y = 390 \\) \\text{ and } \\( 20x + 8y = 348 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract and solve for y.",
-        "workingOut": "\\( (7)y = 42 \\implies y = 6 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y back to solve for x.",
-        "workingOut": "\\( 4x + 3(6) = 78 \\implies x = 15 \\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "requiresManualGrading": false
-  },
-  {
     "id": "y11a-1e-h10",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 2 monocrystalline lines and 4 polycrystalline arrays output 64 kilowatts. Simultaneously, 3 monocrystalline lines and 3 polycrystalline arrays output 69 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -14, \\; y = -9 \\)",
-      "\\( x = -14, \\; y = 9 \\)",
-      "\\( x = 14, \\; y = -9 \\)",
-      "\\( x = 14, \\; y = 9 \\)"
+      {
+        "text": "\\( x = 14, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = 9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 9 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7431,20 +9519,86 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
+    "id": "y11a-1e-h100",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 68 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 74 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
+    "options": [
+      {
+        "text": "\\( x = -13, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "blanks": [],
+    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 7 \\)",
+    "solutionSteps": [
+      {
+        "explanation": "Set up the simultaneous equations representing the system.",
+        "workingOut": "\\( 2x + 6y = 68 \\) \\text{ and } \\( 3x + 5y = 74 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the equations to eliminate one variable.",
+        "workingOut": "\\( 6x + 18y = 204 \\) \\text{ and } \\( 6x + 10y = 148 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract and solve for y.",
+        "workingOut": "\\( (8)y = 56 \\implies y = 7 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute y back to solve for x.",
+        "workingOut": "\\( 2x + 6(7) = 68 \\implies x = 13 \\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
     "id": "y11a-1e-h11",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 3 standard pools and 5 vaults burn a total of 86 gas units. Under Sofia's audit, 4 standard pools and 4 vaults burn 96 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -17, \\; y = -7 \\)",
-      "\\( x = -17, \\; y = 7 \\)",
-      "\\( x = 17, \\; y = -7 \\)",
-      "\\( x = 17, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -17, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 17, \\; y = 7 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 17, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7477,14 +9631,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 4 culture samples and 6 slides require a total of 96 minutes of centrifugation. A batch of 5 culture samples and 5 slides requires 105 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -15, \\; y = -6 \\)",
-      "\\( x = -15, \\; y = 6 \\)",
-      "\\( x = 15, \\; y = -6 \\)",
-      "\\( x = 15, \\; y = 6 \\)"
+      {
+        "text": "\\( x = 15, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 6 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7517,14 +9684,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Nova, 2 trucks and 3 vans carry a total of 53 metric tons. Another configuration of 3 trucks and 2 vans carries 57 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -13, \\; y = -9 \\)",
-      "\\( x = -13, \\; y = 9 \\)",
-      "\\( x = 13, \\; y = -9 \\)",
-      "\\( x = 13, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -13, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 9 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7557,14 +9737,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 64 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 69 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -12, \\; y = -7 \\)",
-      "\\( x = -12, \\; y = 7 \\)",
-      "\\( x = 12, \\; y = -7 \\)",
-      "\\( x = 12, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -12, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 7 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7597,14 +9790,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 110 gas units. Under Ruby's audit, 5 standard pools and 4 vaults burn 115 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -15, \\; y = -10 \\)",
-      "\\( x = -15, \\; y = 10 \\)",
-      "\\( x = 15, \\; y = -10 \\)",
-      "\\( x = 15, \\; y = 10 \\)"
+      {
+        "text": "\\( x = -15, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = -10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 10 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7637,14 +9843,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 50 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 59 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -13, \\; y = -4 \\)",
-      "\\( x = -13, \\; y = 4 \\)",
-      "\\( x = 13, \\; y = -4 \\)",
-      "\\( x = 13, \\; y = 4 \\)"
+      {
+        "text": "\\( x = -13, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 4 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7677,14 +9896,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Luna, 3 trucks and 3 vans carry a total of 75 metric tons. Another configuration of 4 trucks and 2 vans carries 86 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -18, \\; y = -7 \\)",
-      "\\( x = -18, \\; y = 7 \\)",
-      "\\( x = 18, \\; y = -7 \\)",
-      "\\( x = 18, \\; y = 7 \\)"
+      {
+        "text": "\\( x = 18, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 18, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 18, \\; y = 7 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 18, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7717,14 +9949,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 4 monocrystalline lines and 4 polycrystalline arrays output 80 kilowatts. Simultaneously, 5 monocrystalline lines and 3 polycrystalline arrays output 80 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -10, \\; y = -10 \\)",
-      "\\( x = -10, \\; y = 10 \\)",
-      "\\( x = 10, \\; y = -10 \\)",
-      "\\( x = 10, \\; y = 10 \\)"
+      {
+        "text": "\\( x = 10, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = 10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 10, \\; y = 10 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 10, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7757,14 +10002,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 2 standard pools and 5 vaults burn a total of 80 gas units. Under Zara's audit, 3 standard pools and 4 vaults burn 92 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -20, \\; y = -8 \\)",
-      "\\( x = -20, \\; y = 8 \\)",
-      "\\( x = 20, \\; y = -8 \\)",
-      "\\( x = 20, \\; y = 8 \\)"
+      {
+        "text": "\\( x = -20, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -20, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 20, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 20, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 20, \\; y = 8 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 20, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7791,20 +10049,86 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
+    "id": "y11a-1e-h2",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 65 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 68 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
+    "options": [
+      {
+        "text": "\\( x = 11, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -11, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -11, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "blanks": [],
+    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 11, \\; y = 8 \\)",
+    "solutionSteps": [
+      {
+        "explanation": "Set up the simultaneous equations representing the system.",
+        "workingOut": "\\( 3x + 4y = 65 \\) \\text{ and } \\( 4x + 3y = 68 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the equations to eliminate one variable.",
+        "workingOut": "\\( 12x + 16y = 260 \\) \\text{ and } \\( 12x + 9y = 204 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract and solve for y.",
+        "workingOut": "\\( (7)y = 56 \\implies y = 8 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute y back to solve for x.",
+        "workingOut": "\\( 3x + 4(8) = 65 \\implies x = 11 \\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
     "id": "y11a-1e-h20",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 3 culture samples and 6 slides require a total of 75 minutes of centrifugation. A batch of 4 culture samples and 5 slides requires 79 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -11, \\; y = -7 \\)",
-      "\\( x = -11, \\; y = 7 \\)",
-      "\\( x = 11, \\; y = -7 \\)",
-      "\\( x = 11, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -11, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -11, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 11, \\; y = 7 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 11, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7837,14 +10161,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Aria, 4 trucks and 3 vans carry a total of 79 metric tons. Another configuration of 5 trucks and 2 vans carries 90 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -16, \\; y = -5 \\)",
-      "\\( x = -16, \\; y = 5 \\)",
-      "\\( x = 16, \\; y = -5 \\)",
-      "\\( x = 16, \\; y = 5 \\)"
+      {
+        "text": "\\( x = -16, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 16, \\; y = 5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 16, \\; y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7877,14 +10214,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 2 monocrystalline lines and 4 polycrystalline arrays output 48 kilowatts. Simultaneously, 3 monocrystalline lines and 3 polycrystalline arrays output 48 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -8, \\; y = -8 \\)",
-      "\\( x = -8, \\; y = 8 \\)",
-      "\\( x = 8, \\; y = -8 \\)",
-      "\\( x = 8, \\; y = 8 \\)"
+      {
+        "text": "\\( x = 8, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -8, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -8, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 8, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 8, \\; y = 8 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 8, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7917,14 +10267,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 3 standard pools and 5 vaults burn a total of 109 gas units. Under Maya's audit, 4 standard pools and 4 vaults burn 116 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -18, \\; y = -11 \\)",
-      "\\( x = -18, \\; y = 11 \\)",
-      "\\( x = 18, \\; y = -11 \\)",
-      "\\( x = 18, \\; y = 11 \\)"
+      {
+        "text": "\\( x = 18, \\; y = -11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = -11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 18, \\; y = 11 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 18, \\; y = 11 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 18, \\; y = 11 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7957,14 +10320,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 4 culture samples and 6 slides require a total of 94 minutes of centrifugation. A batch of 5 culture samples and 5 slides requires 105 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -16, \\; y = -5 \\)",
-      "\\( x = -16, \\; y = 5 \\)",
-      "\\( x = 16, \\; y = -5 \\)",
-      "\\( x = 16, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 16, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 16, \\; y = 5 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 16, \\; y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -7997,14 +10373,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Elena, 2 trucks and 3 vans carry a total of 52 metric tons. Another configuration of 3 trucks and 2 vans carries 58 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -14, \\; y = -8 \\)",
-      "\\( x = -14, \\; y = 8 \\)",
-      "\\( x = 14, \\; y = -8 \\)",
-      "\\( x = 14, \\; y = 8 \\)"
+      {
+        "text": "\\( x = 14, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 8 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8037,14 +10426,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 63 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 70 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -13, \\; y = -6 \\)",
-      "\\( x = -13, \\; y = 6 \\)",
-      "\\( x = 13, \\; y = -6 \\)",
-      "\\( x = 13, \\; y = 6 \\)"
+      {
+        "text": "\\( x = 13, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 6 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8077,14 +10479,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 109 gas units. Under Clara's audit, 5 standard pools and 4 vaults burn 116 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -16, \\; y = -9 \\)",
-      "\\( x = -16, \\; y = 9 \\)",
-      "\\( x = 16, \\; y = -9 \\)",
-      "\\( x = 16, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -16, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = 9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 16, \\; y = 9 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 16, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8117,14 +10532,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 76 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 82 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -14, \\; y = -8 \\)",
-      "\\( x = -14, \\; y = 8 \\)",
-      "\\( x = 14, \\; y = -8 \\)",
-      "\\( x = 14, \\; y = 8 \\)"
+      {
+        "text": "\\( x = 14, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 8 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8157,14 +10585,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Iris, 3 trucks and 3 vans carry a total of 54 metric tons. Another configuration of 4 trucks and 2 vans carries 60 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -12, \\; y = -6 \\)",
-      "\\( x = -12, \\; y = 6 \\)",
-      "\\( x = 12, \\; y = -6 \\)",
-      "\\( x = 12, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -12, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8191,20 +10632,86 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
+    "id": "y11a-1e-h3",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 139 gas units. Under Maya's audit, 5 standard pools and 4 vaults burn 149 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
+    "options": [
+      {
+        "text": "\\( x = -21, \\; y = 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 21, \\; y = 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -21, \\; y = -11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 21, \\; y = -11 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "blanks": [],
+    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 21, \\; y = 11 \\)",
+    "solutionSteps": [
+      {
+        "explanation": "Set up the simultaneous equations representing the system.",
+        "workingOut": "\\( 4x + 5y = 139 \\) \\text{ and } \\( 5x + 4y = 149 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the equations to eliminate one variable.",
+        "workingOut": "\\( 20x + 25y = 695 \\) \\text{ and } \\( 20x + 16y = 596 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract and solve for y.",
+        "workingOut": "\\( (9)y = 99 \\implies y = 11 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute y back to solve for x.",
+        "workingOut": "\\( 4x + 5(11) = 139 \\implies x = 21 \\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
     "id": "y11a-1e-h30",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 4 monocrystalline lines and 4 polycrystalline arrays output 80 kilowatts. Simultaneously, 5 monocrystalline lines and 3 polycrystalline arrays output 82 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -11, \\; y = -9 \\)",
-      "\\( x = -11, \\; y = 9 \\)",
-      "\\( x = 11, \\; y = -9 \\)",
-      "\\( x = 11, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -11, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -11, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 11, \\; y = 9 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 11, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8237,14 +10744,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 2 standard pools and 5 vaults burn a total of 77 gas units. Under Sofia's audit, 3 standard pools and 4 vaults burn 91 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -21, \\; y = -7 \\)",
-      "\\( x = -21, \\; y = 7 \\)",
-      "\\( x = 21, \\; y = -7 \\)",
-      "\\( x = 21, \\; y = 7 \\)"
+      {
+        "text": "\\( x = 21, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -21, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 21, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -21, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 21, \\; y = 7 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 21, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8277,14 +10797,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 3 culture samples and 6 slides require a total of 72 minutes of centrifugation. A batch of 4 culture samples and 5 slides requires 78 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -12, \\; y = -6 \\)",
-      "\\( x = -12, \\; y = 6 \\)",
-      "\\( x = 12, \\; y = -6 \\)",
-      "\\( x = 12, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -12, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 6 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8317,14 +10850,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Nova, 4 trucks and 3 vans carry a total of 95 metric tons. Another configuration of 5 trucks and 2 vans carries 103 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -17, \\; y = -9 \\)",
-      "\\( x = -17, \\; y = 9 \\)",
-      "\\( x = 17, \\; y = -9 \\)",
-      "\\( x = 17, \\; y = 9 \\)"
+      {
+        "text": "\\( x = 17, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 17, \\; y = 9 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 17, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8357,14 +10903,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 2 monocrystalline lines and 4 polycrystalline arrays output 46 kilowatts. Simultaneously, 3 monocrystalline lines and 3 polycrystalline arrays output 48 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -9, \\; y = -7 \\)",
-      "\\( x = -9, \\; y = 7 \\)",
-      "\\( x = 9, \\; y = -7 \\)",
-      "\\( x = 9, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -9, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -9, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 9, \\; y = 7 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 9, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8397,14 +10956,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 3 standard pools and 5 vaults burn a total of 107 gas units. Under Ruby's audit, 4 standard pools and 4 vaults burn 116 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -19, \\; y = -10 \\)",
-      "\\( x = -19, \\; y = 10 \\)",
-      "\\( x = 19, \\; y = -10 \\)",
-      "\\( x = 19, \\; y = 10 \\)"
+      {
+        "text": "\\( x = 19, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -19, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -19, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 19, \\; y = 10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 19, \\; y = 10 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 19, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8437,14 +11009,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 4 culture samples and 6 slides require a total of 64 minutes of centrifugation. A batch of 5 culture samples and 5 slides requires 70 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -10, \\; y = -4 \\)",
-      "\\( x = -10, \\; y = 4 \\)",
-      "\\( x = 10, \\; y = -4 \\)",
-      "\\( x = 10, \\; y = 4 \\)"
+      {
+        "text": "\\( x = 10, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = -4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 10, \\; y = 4 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 10, \\; y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8477,14 +11062,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Luna, 2 trucks and 3 vans carry a total of 51 metric tons. Another configuration of 3 trucks and 2 vans carries 59 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -15, \\; y = -7 \\)",
-      "\\( x = -15, \\; y = 7 \\)",
-      "\\( x = 15, \\; y = -7 \\)",
-      "\\( x = 15, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -15, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 7 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8517,14 +11115,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 82 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 86 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -14, \\; y = -10 \\)",
-      "\\( x = -14, \\; y = 10 \\)",
-      "\\( x = 14, \\; y = -10 \\)",
-      "\\( x = 14, \\; y = 10 \\)"
+      {
+        "text": "\\( x = -14, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = 10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 10 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8557,14 +11168,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 108 gas units. Under Zara's audit, 5 standard pools and 4 vaults burn 117 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -17, \\; y = -8 \\)",
-      "\\( x = -17, \\; y = 8 \\)",
-      "\\( x = 17, \\; y = -8 \\)",
-      "\\( x = 17, \\; y = 8 \\)"
+      {
+        "text": "\\( x = -17, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 17, \\; y = 8 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 17, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8591,20 +11215,86 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
+    "id": "y11a-1e-h4",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 54 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 61 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
+    "options": [
+      {
+        "text": "\\( x = -12, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "blanks": [],
+    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 5 \\)",
+    "solutionSteps": [
+      {
+        "explanation": "Set up the simultaneous equations representing the system.",
+        "workingOut": "\\( 2x + 6y = 54 \\) \\text{ and } \\( 3x + 5y = 61 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the equations to eliminate one variable.",
+        "workingOut": "\\( 6x + 18y = 162 \\) \\text{ and } \\( 6x + 10y = 122 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract and solve for y.",
+        "workingOut": "\\( (8)y = 40 \\implies y = 5 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute y back to solve for x.",
+        "workingOut": "\\( 2x + 6(5) = 54 \\implies x = 12 \\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
     "id": "y11a-1e-h40",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 72 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 80 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -15, \\; y = -7 \\)",
-      "\\( x = -15, \\; y = 7 \\)",
-      "\\( x = 15, \\; y = -7 \\)",
-      "\\( x = 15, \\; y = 7 \\)"
+      {
+        "text": "\\( x = 15, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 7 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8637,14 +11327,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Aria, 3 trucks and 3 vans carry a total of 54 metric tons. Another configuration of 4 trucks and 2 vans carries 62 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -13, \\; y = -5 \\)",
-      "\\( x = -13, \\; y = 5 \\)",
-      "\\( x = 13, \\; y = -5 \\)",
-      "\\( x = 13, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 13, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 5 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8677,14 +11380,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 4 monocrystalline lines and 4 polycrystalline arrays output 80 kilowatts. Simultaneously, 5 monocrystalline lines and 3 polycrystalline arrays output 84 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -12, \\; y = -8 \\)",
-      "\\( x = -12, \\; y = 8 \\)",
-      "\\( x = 12, \\; y = -8 \\)",
-      "\\( x = 12, \\; y = 8 \\)"
+      {
+        "text": "\\( x = 12, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 8 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8717,14 +11433,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 2 standard pools and 5 vaults burn a total of 85 gas units. Under Maya's audit, 3 standard pools and 4 vaults burn 89 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -15, \\; y = -11 \\)",
-      "\\( x = -15, \\; y = 11 \\)",
-      "\\( x = 15, \\; y = -11 \\)",
-      "\\( x = 15, \\; y = 11 \\)"
+      {
+        "text": "\\( x = -15, \\; y = 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = -11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -11 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 11 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 11 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8757,14 +11486,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 3 culture samples and 6 slides require a total of 69 minutes of centrifugation. A batch of 4 culture samples and 5 slides requires 77 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -13, \\; y = -5 \\)",
-      "\\( x = -13, \\; y = 5 \\)",
-      "\\( x = 13, \\; y = -5 \\)",
-      "\\( x = 13, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 13, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 5 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8797,14 +11539,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Elena, 4 trucks and 3 vans carry a total of 96 metric tons. Another configuration of 5 trucks and 2 vans carries 106 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -18, \\; y = -8 \\)",
-      "\\( x = -18, \\; y = 8 \\)",
-      "\\( x = 18, \\; y = -8 \\)",
-      "\\( x = 18, \\; y = 8 \\)"
+      {
+        "text": "\\( x = -18, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 18, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 18, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 18, \\; y = 8 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 18, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8837,14 +11592,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 2 monocrystalline lines and 4 polycrystalline arrays output 44 kilowatts. Simultaneously, 3 monocrystalline lines and 3 polycrystalline arrays output 48 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -10, \\; y = -6 \\)",
-      "\\( x = -10, \\; y = 6 \\)",
-      "\\( x = 10, \\; y = -6 \\)",
-      "\\( x = 10, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -10, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 10, \\; y = 6 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 10, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8877,14 +11645,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 3 standard pools and 5 vaults burn a total of 105 gas units. Under Clara's audit, 4 standard pools and 4 vaults burn 116 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -20, \\; y = -9 \\)",
-      "\\( x = -20, \\; y = 9 \\)",
-      "\\( x = 20, \\; y = -9 \\)",
-      "\\( x = 20, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -20, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 20, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 20, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -20, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 20, \\; y = 9 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 20, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8917,14 +11698,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 4 culture samples and 6 slides require a total of 92 minutes of centrifugation. A batch of 5 culture samples and 5 slides requires 95 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -11, \\; y = -8 \\)",
-      "\\( x = -11, \\; y = 8 \\)",
-      "\\( x = 11, \\; y = -8 \\)",
-      "\\( x = 11, \\; y = 8 \\)"
+      {
+        "text": "\\( x = -11, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -11, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 11, \\; y = 8 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 11, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8957,14 +11751,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Iris, 2 trucks and 3 vans carry a total of 50 metric tons. Another configuration of 3 trucks and 2 vans carries 60 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -16, \\; y = -6 \\)",
-      "\\( x = -16, \\; y = 6 \\)",
-      "\\( x = 16, \\; y = -6 \\)",
-      "\\( x = 16, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -16, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 16, \\; y = 6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 16, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -8991,20 +11798,86 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
+    "id": "y11a-1e-h5",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Elena, 3 trucks and 3 vans carry a total of 75 metric tons. Another configuration of 4 trucks and 2 vans carries 84 metric tons. Solve for the capacity of one truck (x) and one van (y).",
+    "options": [
+      {
+        "text": "\\( x = 17, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "blanks": [],
+    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 17, \\; y = 8 \\)",
+    "solutionSteps": [
+      {
+        "explanation": "Set up the simultaneous equations representing the system.",
+        "workingOut": "\\( 3x + 3y = 75 \\) \\text{ and } \\( 4x + 2y = 84 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the equations to eliminate one variable.",
+        "workingOut": "\\( 12x + 12y = 300 \\) \\text{ and } \\( 12x + 6y = 252 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract and solve for y.",
+        "workingOut": "\\( (6)y = 48 \\implies y = 8 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute y back to solve for x.",
+        "workingOut": "\\( 3x + 3(8) = 75 \\implies x = 17 \\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
     "id": "y11a-1e-h50",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 60 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 59 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -8, \\; y = -9 \\)",
-      "\\( x = -8, \\; y = 9 \\)",
-      "\\( x = 8, \\; y = -9 \\)",
-      "\\( x = 8, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -8, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -8, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 8, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 8, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 8, \\; y = 9 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 8, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9037,14 +11910,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 107 gas units. Under Sofia's audit, 5 standard pools and 4 vaults burn 118 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -18, \\; y = -7 \\)",
-      "\\( x = -18, \\; y = 7 \\)",
-      "\\( x = 18, \\; y = -7 \\)",
-      "\\( x = 18, \\; y = 7 \\)"
+      {
+        "text": "\\( x = 18, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 18, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 18, \\; y = 7 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 18, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9077,14 +11963,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 68 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 78 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -16, \\; y = -6 \\)",
-      "\\( x = -16, \\; y = 6 \\)",
-      "\\( x = 16, \\; y = -6 \\)",
-      "\\( x = 16, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -16, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 16, \\; y = 6 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 16, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9117,14 +12016,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Nova, 3 trucks and 3 vans carry a total of 69 metric tons. Another configuration of 4 trucks and 2 vans carries 74 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -14, \\; y = -9 \\)",
-      "\\( x = -14, \\; y = 9 \\)",
-      "\\( x = 14, \\; y = -9 \\)",
-      "\\( x = 14, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -14, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = 9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 9 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9157,14 +12069,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 4 monocrystalline lines and 4 polycrystalline arrays output 80 kilowatts. Simultaneously, 5 monocrystalline lines and 3 polycrystalline arrays output 86 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -13, \\; y = -7 \\)",
-      "\\( x = -13, \\; y = 7 \\)",
-      "\\( x = 13, \\; y = -7 \\)",
-      "\\( x = 13, \\; y = 7 \\)"
+      {
+        "text": "\\( x = 13, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 7 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9197,14 +12122,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 2 standard pools and 5 vaults burn a total of 82 gas units. Under Ruby's audit, 3 standard pools and 4 vaults burn 88 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -16, \\; y = -10 \\)",
-      "\\( x = -16, \\; y = 10 \\)",
-      "\\( x = 16, \\; y = -10 \\)",
-      "\\( x = 16, \\; y = 10 \\)"
+      {
+        "text": "\\( x = -16, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = -10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 16, \\; y = 10 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 16, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9237,14 +12175,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 3 culture samples and 6 slides require a total of 66 minutes of centrifugation. A batch of 4 culture samples and 5 slides requires 76 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -14, \\; y = -4 \\)",
-      "\\( x = -14, \\; y = 4 \\)",
-      "\\( x = 14, \\; y = -4 \\)",
-      "\\( x = 14, \\; y = 4 \\)"
+      {
+        "text": "\\( x = -14, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 4 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9277,14 +12228,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Luna, 4 trucks and 3 vans carry a total of 69 metric tons. Another configuration of 5 trucks and 2 vans carries 74 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -12, \\; y = -7 \\)",
-      "\\( x = -12, \\; y = 7 \\)",
-      "\\( x = 12, \\; y = -7 \\)",
-      "\\( x = 12, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -12, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 7 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9317,14 +12281,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 2 monocrystalline lines and 4 polycrystalline arrays output 62 kilowatts. Simultaneously, 3 monocrystalline lines and 3 polycrystalline arrays output 63 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -11, \\; y = -10 \\)",
-      "\\( x = -11, \\; y = 10 \\)",
-      "\\( x = 11, \\; y = -10 \\)",
-      "\\( x = 11, \\; y = 10 \\)"
+      {
+        "text": "\\( x = -11, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -11, \\; y = 10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 11, \\; y = 10 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 11, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9357,14 +12334,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 3 standard pools and 5 vaults burn a total of 103 gas units. Under Zara's audit, 4 standard pools and 4 vaults burn 116 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -21, \\; y = -8 \\)",
-      "\\( x = -21, \\; y = 8 \\)",
-      "\\( x = 21, \\; y = -8 \\)",
-      "\\( x = 21, \\; y = 8 \\)"
+      {
+        "text": "\\( x = -21, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 21, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -21, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 21, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 21, \\; y = 8 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 21, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9391,20 +12381,86 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
+    "id": "y11a-1e-h6",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 4 monocrystalline lines and 4 polycrystalline arrays output 60 kilowatts. Simultaneously, 5 monocrystalline lines and 3 polycrystalline arrays output 63 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
+    "options": [
+      {
+        "text": "\\( x = -9, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -9, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9, \\; y = 6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "blanks": [],
+    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 9, \\; y = 6 \\)",
+    "solutionSteps": [
+      {
+        "explanation": "Set up the simultaneous equations representing the system.",
+        "workingOut": "\\( 4x + 4y = 60 \\) \\text{ and } \\( 5x + 3y = 63 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the equations to eliminate one variable.",
+        "workingOut": "\\( 20x + 20y = 300 \\) \\text{ and } \\( 20x + 12y = 252 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract and solve for y.",
+        "workingOut": "\\( (8)y = 48 \\implies y = 6 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute y back to solve for x.",
+        "workingOut": "\\( 4x + 4(6) = 60 \\implies x = 9 \\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
     "id": "y11a-1e-h60",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 4 culture samples and 6 slides require a total of 90 minutes of centrifugation. A batch of 5 culture samples and 5 slides requires 95 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -12, \\; y = -7 \\)",
-      "\\( x = -12, \\; y = 7 \\)",
-      "\\( x = 12, \\; y = -7 \\)",
-      "\\( x = 12, \\; y = 7 \\)"
+      {
+        "text": "\\( x = 12, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 7 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9437,14 +12493,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Aria, 2 trucks and 3 vans carry a total of 49 metric tons. Another configuration of 3 trucks and 2 vans carries 61 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -17, \\; y = -5 \\)",
-      "\\( x = -17, \\; y = 5 \\)",
-      "\\( x = 17, \\; y = -5 \\)",
-      "\\( x = 17, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 17, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 17, \\; y = 5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 17, \\; y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9477,14 +12546,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 59 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 60 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -9, \\; y = -8 \\)",
-      "\\( x = -9, \\; y = 8 \\)",
-      "\\( x = 9, \\; y = -8 \\)",
-      "\\( x = 9, \\; y = 8 \\)"
+      {
+        "text": "\\( x = -9, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -9, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 9, \\; y = 8 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 9, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9517,14 +12599,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 131 gas units. Under Maya's audit, 5 standard pools and 4 vaults burn 139 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -19, \\; y = -11 \\)",
-      "\\( x = -19, \\; y = 11 \\)",
-      "\\( x = 19, \\; y = -11 \\)",
-      "\\( x = 19, \\; y = 11 \\)"
+      {
+        "text": "\\( x = 19, \\; y = -11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 19, \\; y = 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -19, \\; y = -11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -19, \\; y = 11 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 19, \\; y = 11 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 19, \\; y = 11 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9557,14 +12652,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 50 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 55 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -10, \\; y = -5 \\)",
-      "\\( x = -10, \\; y = 5 \\)",
-      "\\( x = 10, \\; y = -5 \\)",
-      "\\( x = 10, \\; y = 5 \\)"
+      {
+        "text": "\\( x = 10, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = 5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 10, \\; y = 5 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 10, \\; y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9597,14 +12705,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Elena, 3 trucks and 3 vans carry a total of 69 metric tons. Another configuration of 4 trucks and 2 vans carries 76 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -15, \\; y = -8 \\)",
-      "\\( x = -15, \\; y = 8 \\)",
-      "\\( x = 15, \\; y = -8 \\)",
-      "\\( x = 15, \\; y = 8 \\)"
+      {
+        "text": "\\( x = 15, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 8 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9637,14 +12758,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 4 monocrystalline lines and 4 polycrystalline arrays output 80 kilowatts. Simultaneously, 5 monocrystalline lines and 3 polycrystalline arrays output 88 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -14, \\; y = -6 \\)",
-      "\\( x = -14, \\; y = 6 \\)",
-      "\\( x = 14, \\; y = -6 \\)",
-      "\\( x = 14, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -14, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9677,14 +12811,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 2 standard pools and 5 vaults burn a total of 79 gas units. Under Clara's audit, 3 standard pools and 4 vaults burn 87 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -17, \\; y = -9 \\)",
-      "\\( x = -17, \\; y = 9 \\)",
-      "\\( x = 17, \\; y = -9 \\)",
-      "\\( x = 17, \\; y = 9 \\)"
+      {
+        "text": "\\( x = 17, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = 9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 17, \\; y = 9 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 17, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9717,14 +12864,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 3 culture samples and 6 slides require a total of 93 minutes of centrifugation. A batch of 4 culture samples and 5 slides requires 100 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -15, \\; y = -8 \\)",
-      "\\( x = -15, \\; y = 8 \\)",
-      "\\( x = 15, \\; y = -8 \\)",
-      "\\( x = 15, \\; y = 8 \\)"
+      {
+        "text": "\\( x = 15, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 8 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9757,14 +12917,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Iris, 4 trucks and 3 vans carry a total of 70 metric tons. Another configuration of 5 trucks and 2 vans carries 77 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -13, \\; y = -6 \\)",
-      "\\( x = -13, \\; y = 6 \\)",
-      "\\( x = 13, \\; y = -6 \\)",
-      "\\( x = 13, \\; y = 6 \\)"
+      {
+        "text": "\\( x = 13, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9791,20 +12964,86 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
+    "id": "y11a-1e-h7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "A smart contract manages standard liquid pools and high-frequency vaults. 2 standard pools and 5 vaults burn a total of 83 gas units. Under Clara's audit, 3 standard pools and 4 vaults burn 93 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
+    "options": [
+      {
+        "text": "\\( x = -19, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 19, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -19, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 19, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "blanks": [],
+    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 19, \\; y = 9 \\)",
+    "solutionSteps": [
+      {
+        "explanation": "Set up the simultaneous equations representing the system.",
+        "workingOut": "\\( 2x + 5y = 83 \\) \\text{ and } \\( 3x + 4y = 93 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the equations to eliminate one variable.",
+        "workingOut": "\\( 6x + 15y = 249 \\) \\text{ and } \\( 6x + 8y = 186 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract and solve for y.",
+        "workingOut": "\\( (7)y = 63 \\implies y = 9 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute y back to solve for x.",
+        "workingOut": "\\( 2x + 5(9) = 83 \\implies x = 19 \\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
     "id": "y11a-1e-h70",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 2 monocrystalline lines and 4 polycrystalline arrays output 60 kilowatts. Simultaneously, 3 monocrystalline lines and 3 polycrystalline arrays output 63 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -12, \\; y = -9 \\)",
-      "\\( x = -12, \\; y = 9 \\)",
-      "\\( x = 12, \\; y = -9 \\)",
-      "\\( x = 12, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -12, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = 9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 9 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9837,14 +13076,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 3 standard pools and 5 vaults burn a total of 80 gas units. Under Sofia's audit, 4 standard pools and 4 vaults burn 88 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -15, \\; y = -7 \\)",
-      "\\( x = -15, \\; y = 7 \\)",
-      "\\( x = 15, \\; y = -7 \\)",
-      "\\( x = 15, \\; y = 7 \\)"
+      {
+        "text": "\\( x = 15, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 7 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9877,14 +13129,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 4 culture samples and 6 slides require a total of 88 minutes of centrifugation. A batch of 5 culture samples and 5 slides requires 95 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -13, \\; y = -6 \\)",
-      "\\( x = -13, \\; y = 6 \\)",
-      "\\( x = 13, \\; y = -6 \\)",
-      "\\( x = 13, \\; y = 6 \\)"
+      {
+        "text": "\\( x = 13, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 6 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9917,14 +13182,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Nova, 2 trucks and 3 vans carry a total of 63 metric tons. Another configuration of 3 trucks and 2 vans carries 72 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -18, \\; y = -9 \\)",
-      "\\( x = -18, \\; y = 9 \\)",
-      "\\( x = 18, \\; y = -9 \\)",
-      "\\( x = 18, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -18, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 18, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 18, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = 9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 18, \\; y = 9 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 18, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9957,14 +13235,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 58 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 61 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -10, \\; y = -7 \\)",
-      "\\( x = -10, \\; y = 7 \\)",
-      "\\( x = 10, \\; y = -7 \\)",
-      "\\( x = 10, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -10, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 10, \\; y = 7 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 10, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -9997,14 +13288,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 130 gas units. Under Ruby's audit, 5 standard pools and 4 vaults burn 140 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -20, \\; y = -10 \\)",
-      "\\( x = -20, \\; y = 10 \\)",
-      "\\( x = 20, \\; y = -10 \\)",
-      "\\( x = 20, \\; y = 10 \\)"
+      {
+        "text": "\\( x = 20, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -20, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 20, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -20, \\; y = -10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 20, \\; y = 10 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 20, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10037,14 +13341,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 46 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 53 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -11, \\; y = -4 \\)",
-      "\\( x = -11, \\; y = 4 \\)",
-      "\\( x = 11, \\; y = -4 \\)",
-      "\\( x = 11, \\; y = 4 \\)"
+      {
+        "text": "\\( x = -11, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -11, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = -4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 11, \\; y = 4 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 11, \\; y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10077,14 +13394,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Luna, 3 trucks and 3 vans carry a total of 69 metric tons. Another configuration of 4 trucks and 2 vans carries 78 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -16, \\; y = -7 \\)",
-      "\\( x = -16, \\; y = 7 \\)",
-      "\\( x = 16, \\; y = -7 \\)",
-      "\\( x = 16, \\; y = 7 \\)"
+      {
+        "text": "\\( x = 16, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 16, \\; y = 7 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 16, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10117,14 +13447,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 4 monocrystalline lines and 4 polycrystalline arrays output 72 kilowatts. Simultaneously, 5 monocrystalline lines and 3 polycrystalline arrays output 70 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -8, \\; y = -10 \\)",
-      "\\( x = -8, \\; y = 10 \\)",
-      "\\( x = 8, \\; y = -10 \\)",
-      "\\( x = 8, \\; y = 10 \\)"
+      {
+        "text": "\\( x = 8, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 8, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -8, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -8, \\; y = -10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 8, \\; y = 10 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 8, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10157,14 +13500,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 2 standard pools and 5 vaults burn a total of 76 gas units. Under Zara's audit, 3 standard pools and 4 vaults burn 86 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -18, \\; y = -8 \\)",
-      "\\( x = -18, \\; y = 8 \\)",
-      "\\( x = 18, \\; y = -8 \\)",
-      "\\( x = 18, \\; y = 8 \\)"
+      {
+        "text": "\\( x = 18, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 18, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -18, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 18, \\; y = 8 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 18, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10191,20 +13547,86 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
+    "id": "y11a-1e-h8",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "A testing laboratory processes culture samples and diagnostic slides. 3 culture samples and 6 slides require a total of 78 minutes of centrifugation. A batch of 4 culture samples and 5 slides requires 80 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
+    "options": [
+      {
+        "text": "\\( x = 10, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "blanks": [],
+    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 10, \\; y = 8 \\)",
+    "solutionSteps": [
+      {
+        "explanation": "Set up the simultaneous equations representing the system.",
+        "workingOut": "\\( 3x + 6y = 78 \\) \\text{ and } \\( 4x + 5y = 80 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the equations to eliminate one variable.",
+        "workingOut": "\\( 12x + 24y = 312 \\) \\text{ and } \\( 12x + 15y = 240 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract and solve for y.",
+        "workingOut": "\\( (9)y = 72 \\implies y = 8 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute y back to solve for x.",
+        "workingOut": "\\( 3x + 6(8) = 78 \\implies x = 10 \\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
     "id": "y11a-1e-h80",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 3 culture samples and 6 slides require a total of 90 minutes of centrifugation. A batch of 4 culture samples and 5 slides requires 99 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -16, \\; y = -7 \\)",
-      "\\( x = -16, \\; y = 7 \\)",
-      "\\( x = 16, \\; y = -7 \\)",
-      "\\( x = 16, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -16, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 16, \\; y = 7 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 16, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10237,14 +13659,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Aria, 4 trucks and 3 vans carry a total of 71 metric tons. Another configuration of 5 trucks and 2 vans carries 80 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -14, \\; y = -5 \\)",
-      "\\( x = -14, \\; y = 5 \\)",
-      "\\( x = 14, \\; y = -5 \\)",
-      "\\( x = 14, \\; y = 5 \\)"
+      {
+        "text": "\\( x = -14, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 5 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10277,14 +13712,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 2 monocrystalline lines and 4 polycrystalline arrays output 58 kilowatts. Simultaneously, 3 monocrystalline lines and 3 polycrystalline arrays output 63 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -13, \\; y = -8 \\)",
-      "\\( x = -13, \\; y = 8 \\)",
-      "\\( x = 13, \\; y = -8 \\)",
-      "\\( x = 13, \\; y = 8 \\)"
+      {
+        "text": "\\( x = -13, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 8 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10317,14 +13765,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 3 standard pools and 5 vaults burn a total of 103 gas units. Under Maya's audit, 4 standard pools and 4 vaults burn 108 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -16, \\; y = -11 \\)",
-      "\\( x = -16, \\; y = 11 \\)",
-      "\\( x = 16, \\; y = -11 \\)",
-      "\\( x = 16, \\; y = 11 \\)"
+      {
+        "text": "\\( x = -16, \\; y = 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -16, \\; y = -11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = -11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 16, \\; y = 11 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 16, \\; y = 11 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 16, \\; y = 11 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10357,14 +13818,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 4 culture samples and 6 slides require a total of 86 minutes of centrifugation. A batch of 5 culture samples and 5 slides requires 95 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -14, \\; y = -5 \\)",
-      "\\( x = -14, \\; y = 5 \\)",
-      "\\( x = 14, \\; y = -5 \\)",
-      "\\( x = 14, \\; y = 5 \\)"
+      {
+        "text": "\\( x = -14, \\; y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = -5 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 5 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 5 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10397,14 +13871,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Elena, 2 trucks and 3 vans carry a total of 48 metric tons. Another configuration of 3 trucks and 2 vans carries 52 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -12, \\; y = -8 \\)",
-      "\\( x = -12, \\; y = 8 \\)",
-      "\\( x = 12, \\; y = -8 \\)",
-      "\\( x = 12, \\; y = 8 \\)"
+      {
+        "text": "\\( x = -12, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 8 \\)",
+    "answer": "2",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10437,14 +13924,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 57 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 62 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -11, \\; y = -6 \\)",
-      "\\( x = -11, \\; y = 6 \\)",
-      "\\( x = 11, \\; y = -6 \\)",
-      "\\( x = 11, \\; y = 6 \\)"
+      {
+        "text": "\\( x = 11, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -11, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -11, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 11, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 11, \\; y = 6 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 11, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10477,14 +13977,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 129 gas units. Under Clara's audit, 5 standard pools and 4 vaults burn 141 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -21, \\; y = -9 \\)",
-      "\\( x = -21, \\; y = 9 \\)",
-      "\\( x = 21, \\; y = -9 \\)",
-      "\\( x = 21, \\; y = 9 \\)"
+      {
+        "text": "\\( x = 21, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -21, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 21, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -21, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 21, \\; y = 9 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 21, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10517,14 +14030,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 72 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 76 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -12, \\; y = -8 \\)",
-      "\\( x = -12, \\; y = 8 \\)",
-      "\\( x = 12, \\; y = -8 \\)",
-      "\\( x = 12, \\; y = 8 \\)"
+      {
+        "text": "\\( x = -12, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 8 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10557,14 +14083,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Iris, 3 trucks and 3 vans carry a total of 69 metric tons. Another configuration of 4 trucks and 2 vans carries 80 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -17, \\; y = -6 \\)",
-      "\\( x = -17, \\; y = 6 \\)",
-      "\\( x = 17, \\; y = -6 \\)",
-      "\\( x = 17, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -17, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 17, \\; y = 6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 17, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10591,20 +14130,86 @@ export const Y11_CH1E_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
+    "id": "y11a-1e-h9",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Iris, 4 trucks and 3 vans carry a total of 78 metric tons. Another configuration of 5 trucks and 2 vans carries 87 metric tons. Solve for the capacity of one truck (x) and one van (y).",
+    "options": [
+      {
+        "text": "\\( x = -15, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = -6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "blanks": [],
+    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 6 \\)",
+    "solutionSteps": [
+      {
+        "explanation": "Set up the simultaneous equations representing the system.",
+        "workingOut": "\\( 4x + 3y = 78 \\) \\text{ and } \\( 5x + 2y = 87 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the equations to eliminate one variable.",
+        "workingOut": "\\( 20x + 15y = 390 \\) \\text{ and } \\( 20x + 8y = 348 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract and solve for y.",
+        "workingOut": "\\( (7)y = 42 \\implies y = 6 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute y back to solve for x.",
+        "workingOut": "\\( 4x + 3(6) = 78 \\implies x = 15 \\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false
+  },
+  {
     "id": "y11a-1e-h90",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 4 monocrystalline lines and 4 polycrystalline arrays output 72 kilowatts. Simultaneously, 5 monocrystalline lines and 3 polycrystalline arrays output 72 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -9, \\; y = -9 \\)",
-      "\\( x = -9, \\; y = 9 \\)",
-      "\\( x = 9, \\; y = -9 \\)",
-      "\\( x = 9, \\; y = 9 \\)"
+      {
+        "text": "\\( x = 9, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -9, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -9, \\; y = 9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 9, \\; y = 9 \\)",
+    "answer": "0",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 9, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10637,14 +14242,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 2 standard pools and 5 vaults burn a total of 73 gas units. Under Sofia's audit, 3 standard pools and 4 vaults burn 85 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -19, \\; y = -7 \\)",
-      "\\( x = -19, \\; y = 7 \\)",
-      "\\( x = 19, \\; y = -7 \\)",
-      "\\( x = 19, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -19, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -19, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 19, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 19, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 19, \\; y = 7 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 19, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10677,14 +14295,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 3 culture samples and 6 slides require a total of 66 minutes of centrifugation. A batch of 4 culture samples and 5 slides requires 70 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -10, \\; y = -6 \\)",
-      "\\( x = -10, \\; y = 6 \\)",
-      "\\( x = 10, \\; y = -6 \\)",
-      "\\( x = 10, \\; y = 6 \\)"
+      {
+        "text": "\\( x = -10, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 10, \\; y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -10, \\; y = 6 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 10, \\; y = 6 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 10, \\; y = 6 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10717,14 +14348,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Nova, 4 trucks and 3 vans carry a total of 87 metric tons. Another configuration of 5 trucks and 2 vans carries 93 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -15, \\; y = -9 \\)",
-      "\\( x = -15, \\; y = 9 \\)",
-      "\\( x = 15, \\; y = -9 \\)",
-      "\\( x = 15, \\; y = 9 \\)"
+      {
+        "text": "\\( x = -15, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = -9 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 9 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 9 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10757,14 +14401,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 2 monocrystalline lines and 4 polycrystalline arrays output 56 kilowatts. Simultaneously, 3 monocrystalline lines and 3 polycrystalline arrays output 63 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -14, \\; y = -7 \\)",
-      "\\( x = -14, \\; y = 7 \\)",
-      "\\( x = 14, \\; y = -7 \\)",
-      "\\( x = 14, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -14, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -14, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 14, \\; y = 7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 14, \\; y = 7 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 14, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10797,14 +14454,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 3 standard pools and 5 vaults burn a total of 101 gas units. Under Ruby's audit, 4 standard pools and 4 vaults burn 108 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -17, \\; y = -10 \\)",
-      "\\( x = -17, \\; y = 10 \\)",
-      "\\( x = 17, \\; y = -10 \\)",
-      "\\( x = 17, \\; y = 10 \\)"
+      {
+        "text": "\\( x = -17, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -17, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 17, \\; y = 10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 17, \\; y = 10 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 17, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10837,14 +14507,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A testing laboratory processes culture samples and diagnostic slides. 4 culture samples and 6 slides require a total of 84 minutes of centrifugation. A batch of 5 culture samples and 5 slides requires 95 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
     "options": [
-      "\\( x = -15, \\; y = -4 \\)",
-      "\\( x = -15, \\; y = 4 \\)",
-      "\\( x = 15, \\; y = -4 \\)",
-      "\\( x = 15, \\; y = 4 \\)"
+      {
+        "text": "\\( x = 15, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = 4 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 4 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 4 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10877,14 +14560,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A logistics depot routes transport trucks and smaller delivery vans. Under superviser Luna, 2 trucks and 3 vans carry a total of 47 metric tons. Another configuration of 3 trucks and 2 vans carries 53 metric tons. Solve for the capacity of one truck (x) and one van (y).",
     "options": [
-      "\\( x = -13, \\; y = -7 \\)",
-      "\\( x = -13, \\; y = 7 \\)",
-      "\\( x = 13, \\; y = -7 \\)",
-      "\\( x = 13, \\; y = 7 \\)"
+      {
+        "text": "\\( x = -13, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -13, \\; y = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 13, \\; y = -7 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 13, \\; y = 7 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 13, \\; y = 7 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10917,14 +14613,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A solar developer test-runs monocrystalline grids and polycrystalline arrays. 3 monocrystalline lines and 4 polycrystalline arrays output 76 kilowatts. Simultaneously, 4 monocrystalline lines and 3 polycrystalline arrays output 78 kilowatts. Calculate the yield of one monocrystalline line (x) and one polycrystalline array (y).",
     "options": [
-      "\\( x = -12, \\; y = -10 \\)",
-      "\\( x = -12, \\; y = 10 \\)",
-      "\\( x = 12, \\; y = -10 \\)",
-      "\\( x = 12, \\; y = 10 \\)"
+      {
+        "text": "\\( x = -12, \\; y = 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -12, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = -10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 12, \\; y = 10 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 12, \\; y = 10 \\)",
+    "answer": "3",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 12, \\; y = 10 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10957,14 +14666,27 @@ export const Y11_CH1E_QUESTIONS = [
     "timeLimit": 150,
     "question": "A smart contract manages standard liquid pools and high-frequency vaults. 4 standard pools and 5 vaults burn a total of 100 gas units. Under Zara's audit, 5 standard pools and 4 vaults burn 107 gas units. Determine the gas burned by one standard pool (x) and one vault (y).",
     "options": [
-      "\\( x = -15, \\; y = -8 \\)",
-      "\\( x = -15, \\; y = 8 \\)",
-      "\\( x = 15, \\; y = -8 \\)",
-      "\\( x = 15, \\; y = 8 \\)"
+      {
+        "text": "\\( x = 15, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 15, \\; y = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -15, \\; y = 8 \\)",
+        "imageUrl": ""
+      }
     ],
-    "a": "\\( x = 15, \\; y = 8 \\)",
+    "answer": "1",
     "blanks": [],
     "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
+    "solution": "\\( x = 15, \\; y = 8 \\)",
     "solutionSteps": [
       {
         "explanation": "Set up the simultaneous equations representing the system.",
@@ -10984,46 +14706,6 @@ export const Y11_CH1E_QUESTIONS = [
       {
         "explanation": "Substitute y back to solve for x.",
         "workingOut": "\\( 4x + 5(8) = 100 \\implies x = 15 \\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "requiresManualGrading": false
-  },
-  {
-    "id": "y11a-1e-h100",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 150,
-    "question": "A testing laboratory processes culture samples and diagnostic slides. 2 culture samples and 6 slides require a total of 68 minutes of centrifugation. A batch of 3 culture samples and 5 slides requires 74 minutes. Calculate the processing time for one culture sample (x) and one slide (y).",
-    "options": [
-      "\\( x = -13, \\; y = -7 \\)",
-      "\\( x = -13, \\; y = 7 \\)",
-      "\\( x = 13, \\; y = -7 \\)",
-      "\\( x = 13, \\; y = 7 \\)"
-    ],
-    "a": "\\( x = 13, \\; y = 7 \\)",
-    "blanks": [],
-    "hint": "Represent the sentences as a system of linear equations, multiply to align coefficients, and subtract.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the simultaneous equations representing the system.",
-        "workingOut": "\\( 2x + 6y = 68 \\) \\text{ and } \\( 3x + 5y = 74 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Multiply the equations to eliminate one variable.",
-        "workingOut": "\\( 6x + 18y = 204 \\) \\text{ and } \\( 6x + 10y = 148 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract and solve for y.",
-        "workingOut": "\\( (8)y = 56 \\implies y = 7 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute y back to solve for x.",
-        "workingOut": "\\( 2x + 6(7) = 68 \\implies x = 13 \\)",
         "graphData": null
       }
     ],

@@ -64,8 +64,8 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
     let currentLine = "";
     for (let i = 0; i < parts.length; i++) {
       if (i % 2 === 0) {
-        // Plain text part: split by actual newlines or the literal string "\n"
-        const textParts = parts[i].split(/\r?\n|\\n/);
+        // Plain text part: split by actual newlines or the literal string "\n" (handling double-escaped newlines)
+        const textParts = parts[i].split(/\\+n|\r?\n/);
         for (let j = 0; j < textParts.length; j++) {
           if (j > 0) {
             lines.push(currentLine);
@@ -86,10 +86,11 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
 
   // Auto-split trailing math block at the end of a single-line question to center it
   if (lines.length === 1 && typeof lines[0] === 'string') {
-    // Match text followed by optional spacing/punctuation and a math block (e.g. \(...\) or $$...$$ or $...$) at the end
-    const match = lines[0].match(/^(.*?)(?:\s+|:\s*|,\s*)(\$\$[\s\S]+?\$\$|\$[\s\S]+?\$|\\\([\s\S]+?\\\)|\\\[[\s\S]+?\\\])$/);
+    // Only auto-split if the preceding text ends with a colon (:) or the math block is a block math block ($$ or \[)
+    const match = lines[0].match(/^(.*?:)(?:\s+)(\$\$[\s\S]+?\$\$|\$[\s\S]+?\$|\\\([\s\S]+?\\\)|\\\[[\s\S]+?\\\])([.?!]*)$/) ||
+                  lines[0].match(/^(.*?(?::|,)?)(?:\s+)(\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\])([.?!]*)$/);
     if (match) {
-      lines = [match[1].trim(), match[2].trim()];
+      lines = [match[1].trim(), (match[2] + match[3]).trim()];
     }
   }
 
@@ -219,8 +220,9 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       <div ref={containerRef} style={combinedStyle}>
         {lines.map((line, idx) => {
           const isSecondLine = idx === 1;
-          const hasMath = /\\\(|\\\[|\$|\\dots/.test(String(line));
-          const isCentered = idx > 0 && (isSecondLine || hasMath || String(line).trim().length < 30);
+          const hasDisplayMath = /\\\[|\$\$/.test(String(line));
+          const isPureMath = /^\s*(?:\$\$|\\\[|\$|\\\()[\s\S]+?(?:\$\$|\\\]|\$|\\\))[\s,;:?.!]*$/.test(String(line).trim());
+          const isCentered = idx > 0 && (hasDisplayMath || isPureMath);
           return (
             <div
               key={idx}

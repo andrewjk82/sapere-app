@@ -8,8 +8,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.45",
     "solutionSteps": [
       {
-        "explanation": "To convert a percentage to a decimal, divide by 100 (move the decimal point two places to the left).",
-        "workingOut": "\\(45\\% = 45 \\div 100 = 0.45\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(45\\% = \\frac{45}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{45}{100} = 0.45\\)"
       }
     ],
     "t": "Review of percentage",
@@ -29,8 +33,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.064",
     "solutionSteps": [
       {
-        "explanation": "To convert a percentage to a decimal, divide by 100 (move the decimal point two places to the left).",
-        "workingOut": "\\(6.4\\% = 6.4 \\div 100 = 0.064\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(6.4\\% = \\frac{6.4}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{6.4}{100} = 0.064\\)"
       }
     ],
     "t": "Review of percentage",
@@ -50,8 +58,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.18",
     "solutionSteps": [
       {
-        "explanation": "To convert a percentage to a decimal, divide by 100 (move the decimal point two places to the left).",
-        "workingOut": "\\(18\\% = 18 \\div 100 = 0.18\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(18\\% = \\frac{18}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{18}{100} = 0.18\\)"
       }
     ],
     "t": "Review of percentage",
@@ -71,8 +83,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.0425",
     "solutionSteps": [
       {
-        "explanation": "To convert a percentage to a decimal, divide by 100 (move the decimal point two places to the left).",
-        "workingOut": "\\(4.25\\% = 4.25 \\div 100 = 0.0425\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(4.25\\% = \\frac{4.25}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{4.25}{100} = 0.0425\\)"
       }
     ],
     "t": "Review of percentage",
@@ -92,8 +108,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "3.1",
     "solutionSteps": [
       {
-        "explanation": "To convert a percentage to a decimal, divide by 100 (move the decimal point two places to the left).",
-        "workingOut": "\\(310\\% = 310 \\div 100 = 3.1\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(310\\% = \\frac{310}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{310}{100} = 3.1\\)"
       }
     ],
     "t": "Review of percentage",
@@ -113,8 +133,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.005",
     "solutionSteps": [
       {
-        "explanation": "To convert a percentage to a decimal, divide by 100 (move the decimal point two places to the left).",
-        "workingOut": "\\(0.5\\% = 0.5 \\div 100 = 0.005\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(0.5\\% = \\frac{0.5}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{0.5}{100} = 0.005\\)"
       }
     ],
     "t": "Review of percentage",
@@ -134,8 +158,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.4225",
     "solutionSteps": [
       {
-        "explanation": "To convert a percentage to a decimal, divide by 100 (move the decimal point two places to the left).",
-        "workingOut": "\\(42\\frac{1}{4}\\% = 42.25 \\div 100 = 0.4225\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(42\\frac{1}{4}\\% = \\frac{42\\frac{1}{4}}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{42\\frac{1}{4}}{100} = 0.4225\\)"
       }
     ],
     "t": "Review of percentage",
@@ -155,8 +183,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.00375",
     "solutionSteps": [
       {
-        "explanation": "To convert a percentage to a decimal, divide by 100 (move the decimal point two places to the left).",
-        "workingOut": "\\(\\frac{3}{8}\\% = 0.375 \\div 100 = 0.00375\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(\\frac{3}{8}\\% = \\frac{\\frac{3}{8}}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{\\frac{3}{8}}{100} = 0.00375\\)"
       }
     ],
     "t": "Review of percentage",
@@ -176,16 +208,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{7}{20}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(35\\% = \\frac{35}{100} = \\frac{7}{20}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(35\\% = \\frac{35}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{7}{20}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{7}{20}",
-      "\\frac{7}{20} (estimated)",
-      "\\frac{7}{20} (rounded)",
-      "\\frac{7}{20} (nominal)"
+      "\\frac{9}{20}",
+      "\\frac{7}{25}",
+      "\\frac{20}{7}",
+      "\\frac{7}{20}"
     ]
   },
   {
@@ -197,15 +233,19 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{12}{25}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(48\\% = \\frac{48}{100} = \\frac{12}{25}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(48\\% = \\frac{48}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{12}{25}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{12}{25} (nominal)",
-      "\\frac{12}{25} (rounded)",
-      "\\frac{12}{25} (estimated)",
+      "\\frac{14}{25}",
+      "\\frac{25}{12}",
+      "\\frac{12}{30}",
       "\\frac{12}{25}"
     ]
   },
@@ -218,16 +258,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{3}{8}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(37\\frac{1}{2}\\% = \\frac{37\\frac{1}{2}}{100} = \\frac{3}{8}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(37\\frac{1}{2}\\% = \\frac{37\\frac{1}{2}}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{3}{8}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
+      "\\frac{3}{13}",
       "\\frac{3}{8}",
-      "\\frac{3}{8} (estimated)",
-      "\\frac{3}{8} (nominal)",
-      "\\frac{3}{8} (rounded)"
+      "\\frac{5}{8}",
+      "\\frac{8}{3}"
     ]
   },
   {
@@ -239,16 +283,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{1}{3}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(33\\frac{1}{3}\\% = \\frac{33\\frac{1}{3}}{100} = \\frac{1}{3}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(33\\frac{1}{3}\\% = \\frac{33\\frac{1}{3}}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{1}{3}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{1}{3} (estimated)",
-      "\\frac{1}{3} (rounded)",
-      "\\frac{1}{3} (nominal)",
-      "\\frac{1}{3}"
+      "\\frac{1}{8}",
+      "\\frac{3}{3}",
+      "\\frac{1}{3}",
+      "\\frac{3}{1}"
     ]
   },
   {
@@ -260,16 +308,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{1}{16}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(6.25\\% = \\frac{6.25}{100} = \\frac{1}{16}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(6.25\\% = \\frac{6.25}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{1}{16}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{1}{16} (nominal)",
-      "\\frac{1}{16} (rounded)",
+      "\\frac{1}{21}",
+      "\\frac{16}{1}",
       "\\frac{1}{16}",
-      "\\frac{1}{16} (estimated)"
+      "\\frac{3}{16}"
     ]
   },
   {
@@ -281,16 +333,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{11}{25}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(4.4\\% = \\frac{4.4}{100} = \\frac{11}{25}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(4.4\\% = \\frac{4.4}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{11}{25}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
+      "\\frac{11}{30}",
       "\\frac{11}{25}",
-      "\\frac{11}{25} (rounded)",
-      "\\frac{11}{25} (estimated)",
-      "\\frac{11}{25} (nominal)"
+      "\\frac{25}{11}",
+      "\\frac{13}{25}"
     ]
   },
   {
@@ -302,8 +358,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "1\\frac{2}{5}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(140\\% = \\frac{140}{100} = 1\\frac{2}{5}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(140\\% = \\frac{140}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = 1\\frac{2}{5}\\)"
       }
     ],
     "t": "Review of percentage",
@@ -323,8 +383,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "1\\frac{3}{5}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(160\\% = \\frac{160}{100} = 1\\frac{3}{5}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(160\\% = \\frac{160}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = 1\\frac{3}{5}\\)"
       }
     ],
     "t": "Review of percentage",
@@ -344,15 +408,19 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{23}{400}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(5.75\\% = \\frac{5.75}{100} = \\frac{23}{400}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(5.75\\% = \\frac{5.75}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{23}{400}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{23}{400} (rounded)",
-      "\\frac{23}{400} (nominal)",
-      "\\frac{23}{400} (estimated)",
+      "\\frac{25}{400}",
+      "\\frac{23}{405}",
+      "\\frac{400}{23}",
       "\\frac{23}{400}"
     ]
   },
@@ -365,16 +433,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{57}{400}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(14\\frac{1}{4}\\% = \\frac{14\\frac{1}{4}}{100} = \\frac{57}{400}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(14\\frac{1}{4}\\% = \\frac{14\\frac{1}{4}}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{57}{400}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{57}{400}",
-      "\\frac{57}{400} (estimated)",
-      "\\frac{57}{400} (rounded)",
-      "\\frac{57}{400} (nominal)"
+      "\\frac{59}{400}",
+      "\\frac{57}{405}",
+      "\\frac{400}{57}",
+      "\\frac{57}{400}"
     ]
   },
   {
@@ -386,16 +458,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{1}{400}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(\\frac{1}{4}\\% = \\frac{\\frac{1}{4}}{100} = \\frac{1}{400}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(\\frac{1}{4}\\% = \\frac{\\frac{1}{4}}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{1}{400}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{1}{400} (estimated)",
+      "\\frac{1}{405}",
+      "\\frac{400}{1}",
       "\\frac{1}{400}",
-      "\\frac{1}{400} (rounded)",
-      "\\frac{1}{400} (nominal)"
+      "\\frac{3}{400}"
     ]
   },
   {
@@ -407,16 +483,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{43}{500}",
     "solutionSteps": [
       {
-        "explanation": "To express a percentage as a fraction, divide by 100 and simplify.",
-        "workingOut": "\\(8.6\\% = \\frac{8.6}{100} = \\frac{43}{500}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(8.6\\% = \\frac{8.6}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{43}{500}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{43}{500} (nominal)",
-      "\\frac{43}{500} (estimated)",
+      "\\frac{45}{500}",
       "\\frac{43}{500}",
-      "\\frac{43}{500} (rounded)"
+      "\\frac{500}{43}",
+      "\\frac{43}{505}"
     ]
   },
   {
@@ -428,8 +508,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "60%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(\\frac{3}{5} = \\frac{3}{5} \\times 100 = 60\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(\\frac{3}{5} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 60\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -449,8 +533,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "62.5%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(\\frac{5}{8} = \\frac{5}{8} \\times 100 = 62.5\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(\\frac{5}{8} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 62.5\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -470,8 +558,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "18.75%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(\\frac{3}{16} = \\frac{3}{16} \\times 100 = 18.75\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(\\frac{3}{16} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 18.75\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -491,8 +583,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "125%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(1\\frac{1}{4} = \\frac{5}{4} \\times 100 = 125\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(1\\frac{1}{4} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 125\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -512,8 +608,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "35%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(\\frac{7}{20} = \\frac{7}{20} \\times 100 = 35\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(\\frac{7}{20} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 35\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -533,8 +633,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "133\\frac{1}{3}%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(\\frac{4}{3} = \\frac{4}{3} \\times 100 = 133\\frac{1}{3}\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(\\frac{4}{3} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 133\\frac{1}{3}\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -554,8 +658,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "58%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(0.58 = 0.58 \\times 100 = 58\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(0.58 \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 58\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -575,8 +683,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "3.5%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(0.035 = 0.035 \\times 100 = 3.5\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(0.035 \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 3.5\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -596,8 +708,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "160%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(1.6 = 1.6 \\times 100 = 160\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(1.6 \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 160\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -617,8 +733,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "137.5%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(1.375 = 1.375 \\times 100 = 137.5\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(1.375 \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 137.5\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -638,8 +758,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.045%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(0.00045 = 0.00045 \\times 100 = 0.045\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(0.00045 \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 0.045\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -659,8 +783,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "350%",
     "solutionSteps": [
       {
-        "explanation": "To convert a fraction or decimal to a percentage, multiply by 100.",
-        "workingOut": "\\(3\\frac{1}{2} = \\frac{7}{2} \\times 100 = 350\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(3\\frac{1}{2} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 350\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -680,16 +808,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{12}{25}",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a fraction.",
-        "workingOut": "\\(\\frac{12}{25}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(48\\% = \\frac{48}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{12}{25}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{12}{25} (rounded)",
-      "\\frac{12}{25} (nominal)",
-      "\\frac{12}{25} (estimated)",
-      "\\frac{12}{25}"
+      "\\frac{12}{30}",
+      "\\frac{25}{12}",
+      "\\frac{12}{25}",
+      "\\frac{14}{25}"
     ]
   },
   {
@@ -701,8 +833,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.48",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a decimal.",
-        "workingOut": "\\(0.48\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(48\\% = \\frac{48}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{48}{100} = 0.48\\)"
       }
     ],
     "t": "Review of percentage",
@@ -722,8 +858,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "80%",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a percentage.",
-        "workingOut": "\\(80\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(\\frac{4}{5} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 80\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -743,8 +883,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.8",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a decimal.",
-        "workingOut": "\\(0.8\\)"
+        "explanation": "Write the fraction as a division expression.",
+        "workingOut": "\\(\\frac{4}{5} = 4{5}\\)"
+      },
+      {
+        "explanation": "Divide the numerator by the denominator to get the decimal value.",
+        "workingOut": "\\(\\text{Answer} = 0.8\\)"
       }
     ],
     "t": "Review of percentage",
@@ -764,8 +908,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "24%",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a percentage.",
-        "workingOut": "\\(24\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(0.24 \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 24\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -785,16 +933,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{6}{25}",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a fraction.",
-        "workingOut": "\\(\\frac{6}{25}\\)"
+        "explanation": "Express the decimal as a fraction based on its place value.",
+        "workingOut": "\\(0.24 = \\frac{24}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction by dividing both the numerator and the denominator by their greatest common divisor.",
+        "workingOut": "\\(\\text{Answer} = \\frac{6}{25}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{6}{25} (nominal)",
-      "\\frac{6}{25} (rounded)",
-      "\\frac{6}{25} (estimated)",
-      "\\frac{6}{25}"
+      "\\frac{6}{25}",
+      "\\frac{8}{25}",
+      "\\frac{6}{30}",
+      "\\frac{25}{6}"
     ]
   },
   {
@@ -806,16 +958,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "\\frac{61}{200}",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a fraction.",
-        "workingOut": "\\(\\frac{61}{200}\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(30.5\\% = \\frac{30.5}{100}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction to its simplest form.",
+        "workingOut": "\\(\\text{Answer} = \\frac{61}{200}\\)"
       }
     ],
     "t": "Review of percentage",
     "opts": [
-      "\\frac{61}{200} (rounded)",
       "\\frac{61}{200}",
-      "\\frac{61}{200} (estimated)",
-      "\\frac{61}{200} (nominal)"
+      "\\frac{63}{200}",
+      "\\frac{61}{205}",
+      "\\frac{200}{61}"
     ]
   },
   {
@@ -827,8 +983,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.305",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a decimal.",
-        "workingOut": "\\(0.305\\)"
+        "explanation": "Write the percentage as a fraction with a denominator of 100.",
+        "workingOut": "\\(30.5\\% = \\frac{30.5}{100}\\)"
+      },
+      {
+        "explanation": "Convert to a decimal by dividing the numerator by 100 (which shifts the decimal point two places to the left).",
+        "workingOut": "\\(\\frac{30.5}{100} = 0.305\\)"
       }
     ],
     "t": "Review of percentage",
@@ -848,8 +1008,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "150%",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a percentage.",
-        "workingOut": "\\(150\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(1.5 \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 150\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -869,8 +1033,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "1\\frac{1}{2}",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a fraction.",
-        "workingOut": "\\(1\\frac{1}{2}\\)"
+        "explanation": "Express the decimal as a fraction based on its place value.",
+        "workingOut": "\\(1.5 = \\frac{15}{10}\\)"
+      },
+      {
+        "explanation": "Simplify the fraction by dividing both the numerator and the denominator by their greatest common divisor.",
+        "workingOut": "\\(\\text{Answer} = 1\\frac{1}{2}\\)"
       }
     ],
     "t": "Review of percentage",
@@ -890,8 +1058,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "87.5%",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a percentage.",
-        "workingOut": "\\(87.5\\%\\)"
+        "explanation": "To convert any quantity to a percentage, multiply the value by 100%.",
+        "workingOut": "\\(\\frac{7}{8} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Perform the multiplication and simplify the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 87.5\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -911,8 +1083,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.875",
     "solutionSteps": [
       {
-        "explanation": "Convert the value to a decimal.",
-        "workingOut": "\\(0.875\\)"
+        "explanation": "Write the fraction as a division expression.",
+        "workingOut": "\\(\\frac{7}{8} = 7{8}\\)"
+      },
+      {
+        "explanation": "Divide the numerator by the denominator to get the decimal value.",
+        "workingOut": "\\(\\text{Answer} = 0.875\\)"
       }
     ],
     "t": "Review of percentage",
@@ -932,7 +1108,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "9.00",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount.",
+        "explanation": "Convert the percentage \\(18\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(18\\% = \\frac{18}{100} = 0.18\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.18 \\times 50 = 9.00\\)"
       }
     ],
@@ -953,7 +1133,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "173.04",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount.",
+        "explanation": "Convert the percentage \\(42\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(42\\% = \\frac{42}{100} = 0.42\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.42 \\times 412 = 173.04\\)"
       }
     ],
@@ -974,7 +1158,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "335.40",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount.",
+        "explanation": "Convert the percentage \\(130\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(130\\% = \\frac{130}{100} = 1.3\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(1.3 \\times 258 = 335.40\\)"
       }
     ],
@@ -995,7 +1183,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "803.20",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount.",
+        "explanation": "Convert the percentage \\(125.50\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(125.50\\% = \\frac{125.50}{100} = 1.255\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(1.255 \\times 640 = 803.20\\)"
       }
     ],
@@ -1016,7 +1208,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "3.57",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount.",
+        "explanation": "Convert the percentage \\(4.20\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(4.20\\% = \\frac{4.20}{100} = 0.042\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.042 \\times 85 = 3.57\\)"
       }
     ],
@@ -1037,7 +1233,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "1.40",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount.",
+        "explanation": "Convert the percentage \\(0.40\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(0.40\\% = \\frac{0.40}{100} = 0.004\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.004 \\times 350 = 1.40\\)"
       }
     ],
@@ -1058,7 +1258,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "28.80",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount in dollars.",
+        "explanation": "Convert the percentage \\(48\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(48\\% = \\frac{48}{100} = 0.48\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.48 \\times 60 = 28.80\\)"
       }
     ],
@@ -1079,7 +1283,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "442.50",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount in dollars.",
+        "explanation": "Convert the percentage \\(35.40\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(35.40\\% = \\frac{35.40}{100} = 0.354\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.354 \\times 1250 = 442.50\\)"
       }
     ],
@@ -1100,7 +1308,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "1633.00",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount in dollars.",
+        "explanation": "Convert the percentage \\(115\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(115\\% = \\frac{115}{100} = 1.15\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(1.15 \\times 1420 = 1633.00\\)"
       }
     ],
@@ -1121,7 +1333,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "3.20",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount in dollars.",
+        "explanation": "Convert the percentage \\(0.40\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(0.40\\% = \\frac{0.40}{100} = 0.004\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.004 \\times 800 = 3.20\\)"
       }
     ],
@@ -1142,7 +1358,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "93.75",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount in dollars.",
+        "explanation": "Convert the percentage \\(6.25\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(6.25\\% = \\frac{6.25}{100} = 0.0625\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.0625 \\times 1500 = 93.75\\)"
       }
     ],
@@ -1163,7 +1383,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "4.60",
     "solutionSteps": [
       {
-        "explanation": "Convert the percentage to a decimal, then multiply by the amount in dollars.",
+        "explanation": "Convert the percentage \\(0.40\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(0.40\\% = \\frac{0.40}{100} = 0.004\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.004 \\times 1150 = 4.60\\)"
       }
     ],
@@ -1184,8 +1408,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "6.7%",
     "solutionSteps": [
       {
-        "explanation": "Write the first quantity as a fraction of the second, then multiply by 100.",
-        "workingOut": "\\(\\frac{8}{120} \\times 100 = 6.7\\%\\)"
+        "explanation": "Express the first quantity as a fraction of the second, ensuring they are in the same units.",
+        "workingOut": "\\(\\frac{8}{120}\\)"
+      },
+      {
+        "explanation": "Multiply the fraction by 100% to convert it to a percentage.",
+        "workingOut": "\\(\\frac{8}{120} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Simplify the fraction and calculate the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 6.7\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1205,8 +1437,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "6.0%",
     "solutionSteps": [
       {
-        "explanation": "Write the first quantity as a fraction of the second, then multiply by 100.",
-        "workingOut": "\\(\\frac{15}{250} \\times 100 = 6.0\\%\\)"
+        "explanation": "Express the first quantity as a fraction of the second, ensuring they are in the same units.",
+        "workingOut": "\\(\\frac{15}{250}\\)"
+      },
+      {
+        "explanation": "Multiply the fraction by 100% to convert it to a percentage.",
+        "workingOut": "\\(\\frac{15}{250} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Simplify the fraction and calculate the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 6.0\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1226,8 +1466,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "4.4%",
     "solutionSteps": [
       {
-        "explanation": "Write the first quantity as a fraction of the second, then multiply by 100.",
-        "workingOut": "\\(\\frac{35}{800} \\times 100 = 4.4\\%\\)"
+        "explanation": "Express the first quantity as a fraction of the second, ensuring they are in the same units.",
+        "workingOut": "\\(\\frac{35}{800}\\)"
+      },
+      {
+        "explanation": "Multiply the fraction by 100% to convert it to a percentage.",
+        "workingOut": "\\(\\frac{35}{800} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Simplify the fraction and calculate the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 4.4\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1247,8 +1495,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "150.0%",
     "solutionSteps": [
       {
-        "explanation": "Write the first quantity as a fraction of the second, then multiply by 100.",
-        "workingOut": "\\(\\frac{60}{40} \\times 100 = 150.0\\%\\)"
+        "explanation": "Express the first quantity as a fraction of the second, ensuring they are in the same units.",
+        "workingOut": "\\(\\frac{60}{40}\\)"
+      },
+      {
+        "explanation": "Multiply the fraction by 100% to convert it to a percentage.",
+        "workingOut": "\\(\\frac{60}{40} \\times 100\\%\\)"
+      },
+      {
+        "explanation": "Simplify the fraction and calculate the final percentage.",
+        "workingOut": "\\(\\text{Answer} = 150.0\\%\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1418,7 +1674,11 @@ export const Y10_CH1_QUESTIONS = [
     "a": "44",
     "solutionSteps": [
       {
-        "explanation": "Find 8% of 550.",
+        "explanation": "Convert the percentage \\(8\\%\\) to a decimal multiplier by dividing by 100.",
+        "workingOut": "\\(8\\% = \\frac{8}{100} = 0.08\\)"
+      },
+      {
+        "explanation": "Multiply the decimal multiplier by the amount to calculate the final value.",
         "workingOut": "\\(0.08 \\times 550 = 44\\)"
       }
     ],
@@ -1481,10 +1741,10 @@ export const Y10_CH1_QUESTIONS = [
       }
     ],
     "opts": [
-      " (estimated)",
+      " (A)",
+      " (B)",
       "",
-      " (rounded)",
-      " (nominal)"
+      " (C)"
     ]
   },
   {
@@ -1567,10 +1827,10 @@ export const Y10_CH1_QUESTIONS = [
       }
     ],
     "opts": [
-      " (rounded)",
-      " (nominal)",
-      " (estimated)",
-      ""
+      " (C)",
+      "",
+      " (A)",
+      " (B)"
     ]
   },
   {
@@ -1582,8 +1842,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "400 dollars",
     "solutionSteps": [
       {
-        "explanation": "Divide the given value by the decimal equivalent of the percentage to find the original amount (100%).",
-        "workingOut": "\\(32 / 0.08 = 400\\)"
+        "explanation": "Convert the percentage \\(8\\%\\) to its decimal equivalent.",
+        "workingOut": "\\(8\\% = \\frac{8}{100} = 0.08\\)"
+      },
+      {
+        "explanation": "Divide the given amount by the decimal to determine the original 100% quantity.",
+        "workingOut": "\\(\\frac{32}{0.08} = 400\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1603,8 +1867,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "225 minutes",
     "solutionSteps": [
       {
-        "explanation": "Divide the given value by the decimal equivalent of the percentage to find the original amount (100%).",
-        "workingOut": "\\(90 / 0.40 = 225\\)"
+        "explanation": "Convert the percentage \\(40\\%\\) to its decimal equivalent.",
+        "workingOut": "\\(40\\% = \\frac{40}{100} = 0.40\\)"
+      },
+      {
+        "explanation": "Divide the given amount by the decimal to determine the original 100% quantity.",
+        "workingOut": "\\(\\frac{90}{0.40} = 225\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1624,8 +1892,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "300 cm",
     "solutionSteps": [
       {
-        "explanation": "Divide the given value by the decimal equivalent of the percentage to find the original amount (100%).",
-        "workingOut": "\\(255 / 0.85 = 300\\)"
+        "explanation": "Convert the percentage \\(85\\%\\) to its decimal equivalent.",
+        "workingOut": "\\(85\\% = \\frac{85}{100} = 0.85\\)"
+      },
+      {
+        "explanation": "Divide the given amount by the decimal to determine the original 100% quantity.",
+        "workingOut": "\\(\\frac{255}{0.85} = 300\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1645,8 +1917,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "240 dollars",
     "solutionSteps": [
       {
-        "explanation": "Divide the given value by the decimal equivalent of the percentage to find the original amount (100%).",
-        "workingOut": "\\(14.40 / 0.06 = 240\\)"
+        "explanation": "Convert the percentage \\(6\\%\\) to its decimal equivalent.",
+        "workingOut": "\\(6\\% = \\frac{6}{100} = 0.06\\)"
+      },
+      {
+        "explanation": "Divide the given amount by the decimal to determine the original 100% quantity.",
+        "workingOut": "\\(\\frac{14.40}{0.06} = 240\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1666,8 +1942,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "1500 mm",
     "solutionSteps": [
       {
-        "explanation": "Divide the given value by the decimal equivalent of the percentage to find the original amount (100%).",
-        "workingOut": "\\(6 / 0.004 = 1500\\)"
+        "explanation": "Convert the percentage \\(0.40\\%\\) to its decimal equivalent.",
+        "workingOut": "\\(0.40\\% = \\frac{0.40}{100} = 0.004\\)"
+      },
+      {
+        "explanation": "Divide the given amount by the decimal to determine the original 100% quantity.",
+        "workingOut": "\\(\\frac{6}{0.004} = 1500\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1687,8 +1967,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "450 mm",
     "solutionSteps": [
       {
-        "explanation": "Divide the given value by the decimal equivalent of the percentage to find the original amount (100%).",
-        "workingOut": "\\(81 / 0.18 = 450\\)"
+        "explanation": "Convert the percentage \\(18\\%\\) to its decimal equivalent.",
+        "workingOut": "\\(18\\% = \\frac{18}{100} = 0.18\\)"
+      },
+      {
+        "explanation": "Divide the given amount by the decimal to determine the original 100% quantity.",
+        "workingOut": "\\(\\frac{81}{0.18} = 450\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1933,7 +2217,7 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.00",
     "solutionSteps": [
       {
-        "explanation": "Apply the tax brackets to the income.",
+        "explanation": "Identify which tax bracket the income falls under. An income of \\(11000\\) dollars is up to 15,000 dollars, which falls under the tax-free threshold.",
         "workingOut": "\\(\\text{Tax} = 0.00\\)"
       }
     ],
@@ -1954,8 +2238,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "540.00",
     "solutionSteps": [
       {
-        "explanation": "Apply the tax brackets to the income.",
-        "workingOut": "\\(\\text{Tax} = 540.00\\)"
+        "explanation": "Calculate the taxable income exceeding the 15,000 tax-free threshold.",
+        "workingOut": "\\(18000 - 15000 = 3000\\)"
+      },
+      {
+        "explanation": "Multiply the excess income by the tax rate of 18c (0.18 dollars) per dollar.",
+        "workingOut": "\\(3000 \\times 0.18 = 540.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1975,8 +2263,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "6400.00",
     "solutionSteps": [
       {
-        "explanation": "Apply the tax brackets to the income.",
-        "workingOut": "\\(\\text{Tax} = 6400.00\\)"
+        "explanation": "Calculate the tax on the second bracket (income between 15,001 and 35,000 dollars).",
+        "workingOut": "\\((35000 - 15000) \\times 0.18 = 3600.00\\)"
+      },
+      {
+        "explanation": "Calculate the tax on the third bracket (income exceeding 35,000 dollars).",
+        "workingOut": "\\((45000 - 35000) \\times 0.28 = 2800.0000000000005\\)"
+      },
+      {
+        "explanation": "Sum the taxes from both brackets to find the total tax payable.",
+        "workingOut": "\\(3600.00 + 2800.0000000000005 = 6400.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -1996,8 +2292,20 @@ export const Y10_CH1_QUESTIONS = [
     "a": "175800.00",
     "solutionSteps": [
       {
-        "explanation": "Apply the tax brackets to the income.",
-        "workingOut": "\\(\\text{Tax} = 175800.00\\)"
+        "explanation": "Calculate the tax on the second bracket (income between 15,001 and 35,000 dollars).",
+        "workingOut": "\\((35000 - 15000) \\times 0.18 = 3600.00\\)"
+      },
+      {
+        "explanation": "Calculate the tax on the third bracket (income between 35,001 and 80,000 dollars).",
+        "workingOut": "\\((80000 - 35000) \\times 0.28 = 12600.00\\)"
+      },
+      {
+        "explanation": "Calculate the tax on the fourth bracket (income exceeding 80,000 dollars).",
+        "workingOut": "\\((500000 - 80000) \\times 0.38 = 159600\\)"
+      },
+      {
+        "explanation": "Sum the taxes from all brackets to find the total tax payable.",
+        "workingOut": "\\(3600.00 + 12600.00 + 159600 = 175800.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2017,8 +2325,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "0.00%",
     "solutionSteps": [
       {
-        "explanation": "Divide the tax by the income and multiply by 100.",
-        "workingOut": "\\(\\frac{0.00}{11000} \\times 100 = 0.00\\%\\)"
+        "explanation": "Divide the calculated tax payable by the taxable income to find the tax ratio.",
+        "workingOut": "\\(\\frac{0.00}{11000}\\)"
+      },
+      {
+        "explanation": "Multiply the tax ratio by 100% to convert it to a percentage.",
+        "workingOut": "\\(\\frac{0.00}{11000} \\times 100\\% = 0.00\\\\%\\)\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2038,8 +2350,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "3.00%",
     "solutionSteps": [
       {
-        "explanation": "Divide the tax by the income and multiply by 100.",
-        "workingOut": "\\(\\frac{540.00}{18000} \\times 100 = 3.00\\%\\)"
+        "explanation": "Divide the calculated tax payable by the taxable income to find the tax ratio.",
+        "workingOut": "\\(\\frac{540.00}{18000}\\)"
+      },
+      {
+        "explanation": "Multiply the tax ratio by 100% to convert it to a percentage.",
+        "workingOut": "\\(\\frac{540.00}{18000} \\times 100\\% = 3.00\\\\%\\)\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2059,8 +2375,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "14.22%",
     "solutionSteps": [
       {
-        "explanation": "Divide the tax by the income and multiply by 100.",
-        "workingOut": "\\(\\frac{6400.00}{45000} \\times 100 = 14.22\\%\\)"
+        "explanation": "Divide the calculated tax payable by the taxable income to find the tax ratio.",
+        "workingOut": "\\(\\frac{6400.00}{45000}\\)"
+      },
+      {
+        "explanation": "Multiply the tax ratio by 100% to convert it to a percentage.",
+        "workingOut": "\\(\\frac{6400.00}{45000} \\times 100\\% = 14.22\\\\%\\)\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2080,8 +2400,12 @@ export const Y10_CH1_QUESTIONS = [
     "a": "35.16%",
     "solutionSteps": [
       {
-        "explanation": "Divide the tax by the income and multiply by 100.",
-        "workingOut": "\\(\\frac{175800.00}{500000} \\times 100 = 35.16\\%\\)"
+        "explanation": "Divide the calculated tax payable by the taxable income to find the tax ratio.",
+        "workingOut": "\\(\\frac{175800.00}{500000}\\)"
+      },
+      {
+        "explanation": "Multiply the tax ratio by 100% to convert it to a percentage.",
+        "workingOut": "\\(\\frac{175800.00}{500000} \\times 100\\% = 35.16\\\\%\\)\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2101,8 +2425,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "25000.00",
     "solutionSteps": [
       {
-        "explanation": "Determine which bracket the tax falls into, then reverse the calculation.",
-        "workingOut": "\\(\\text{Income} = 25000.00\\)"
+        "explanation": "Identify which tax bracket this tax amount falls into. Since the maximum tax for the second bracket is 3,600 dollars, a tax of \\(1800\\) dollars lies in the second bracket (rate of 18c per dollar over 15,000).",
+        "workingOut": "\\(1800 \\le 3600.00\\)"
+      },
+      {
+        "explanation": "Calculate the income exceeding 15,000 dollars by dividing the tax by the rate of 18c (0.18).",
+        "workingOut": "\\(\\frac{1800}{0.18} = 10000\\)"
+      },
+      {
+        "explanation": "Add the threshold of 15,000 dollars to find the total income.",
+        "workingOut": "\\(15000 + 10000 = 25000.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2122,8 +2454,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "37142.86",
     "solutionSteps": [
       {
-        "explanation": "Determine which bracket the tax falls into, then reverse the calculation.",
-        "workingOut": "\\(\\text{Income} = 37142.86\\)"
+        "explanation": "Determine which tax bracket the tax amount falls into. A tax of \\(4200\\) dollars is higher than the second bracket maximum (3,600) but below the third bracket maximum (16,200).",
+        "workingOut": "\\(3600 < 4200 \\le 16200\\)"
+      },
+      {
+        "explanation": "Subtract the tax payable from the second bracket (3,600) and divide the remaining tax by the rate of 28c (0.28).",
+        "workingOut": "\\(\\frac{4200 - 3600}{0.28} = 2142.86\\)"
+      },
+      {
+        "explanation": "Add the threshold of 35,000 dollars to find the total income.",
+        "workingOut": "\\(35000 + 2142.86 = 37142.86\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2143,8 +2483,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "79285.71",
     "solutionSteps": [
       {
-        "explanation": "Determine which bracket the tax falls into, then reverse the calculation.",
-        "workingOut": "\\(\\text{Income} = 79285.71\\)"
+        "explanation": "Determine which tax bracket the tax amount falls into. A tax of \\(16000\\) dollars is higher than the second bracket maximum (3,600) but below the third bracket maximum (16,200).",
+        "workingOut": "\\(3600 < 16000 \\le 16200\\)"
+      },
+      {
+        "explanation": "Subtract the tax payable from the second bracket (3,600) and divide the remaining tax by the rate of 28c (0.28).",
+        "workingOut": "\\(\\frac{16000 - 3600}{0.28} = 44285.71\\)"
+      },
+      {
+        "explanation": "Add the threshold of 35,000 dollars to find the total income.",
+        "workingOut": "\\(35000 + 44285.71 = 79285.71\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2164,8 +2512,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "77500.00",
     "solutionSteps": [
       {
-        "explanation": "Determine which bracket the tax falls into, then reverse the calculation.",
-        "workingOut": "\\(\\text{Income} = 77500.00\\)"
+        "explanation": "Determine which tax bracket the tax amount falls into. A tax of \\(15500\\) dollars is higher than the second bracket maximum (3,600) but below the third bracket maximum (16,200).",
+        "workingOut": "\\(3600 < 15500 \\le 16200\\)"
+      },
+      {
+        "explanation": "Subtract the tax payable from the second bracket (3,600) and divide the remaining tax by the rate of 28c (0.28).",
+        "workingOut": "\\(\\frac{15500 - 3600}{0.28} = 42500\\)"
+      },
+      {
+        "explanation": "Add the threshold of 35,000 dollars to find the total income.",
+        "workingOut": "\\(35000 + 42500 = 77500.00\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2227,10 +2583,10 @@ export const Y10_CH1_QUESTIONS = [
       }
     ],
     "opts": [
-      " (estimated)",
       "",
-      " (rounded)",
-      " (nominal)"
+      " (C)",
+      " (A)",
+      " (B)"
     ]
   },
   {
@@ -2242,8 +2598,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "1400",
     "solutionSteps": [
       {
-        "explanation": "Use the formula \\(I = PRT\\).",
-        "workingOut": "\\(I = 5000 \\times 0.07 \\times 4 = 1400\\)"
+        "explanation": "Identify the simple interest formula.",
+        "workingOut": "\\(I = PRT\\)"
+      },
+      {
+        "explanation": "Substitute the principal \\(P = 5000\\), rate \\(R = 0.07\\), and time \\(T = 4\\) years.",
+        "workingOut": "\\(I = 5000 \\times 0.07 \\times 4\\)"
+      },
+      {
+        "explanation": "Compute the final simple interest.",
+        "workingOut": "\\(I = 1400\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2263,8 +2627,16 @@ export const Y10_CH1_QUESTIONS = [
     "a": "2337.50",
     "solutionSteps": [
       {
-        "explanation": "Use the formula \\(I = PRT\\).",
-        "workingOut": "\\(I = 8500 \\times 0.055 \\times 5 = 2337.50\\)"
+        "explanation": "Identify the simple interest formula.",
+        "workingOut": "\\(I = PRT\\)"
+      },
+      {
+        "explanation": "Substitute the principal \\(P = 8500\\), rate \\(R = 0.055\\), and time \\(T = 5\\) years.",
+        "workingOut": "\\(I = 8500 \\times 0.055 \\times 5\\)"
+      },
+      {
+        "explanation": "Compute the final simple interest.",
+        "workingOut": "\\(I = 2337.50\\)"
       }
     ],
     "t": "Review of percentage",
@@ -2438,26 +2810,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$108.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
-    "a": "\\(120.00\\)",
+    "question": "A commercial logistics hub buys a building generator for \\( 85000 \\) dollars. The reseller marks up the price by \\( 15\\% \\), and later offers a clearance discount of \\( 12\\% \\). Find the final price.",
+    "a": "\\(86020.00\\)",
     "opts": [
-      "\\(120.00\\)",
-      "\\(132.00\\)",
-      "\\(108.00\\)",
-      "\\(126.00\\)"
+      "\\(95200.00\\)",
+      "\\(83300.00\\)",
+      "\\(87550.00\\)",
+      "\\(86020.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{108.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate the price after the initial markup of 15%.",
+        "workingOut": "\\(V_1 = 85000 \\times 1.15 = 97750.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{108.00}{1 - 0.10} = \\frac{108.00}{0.90}\\)"
+        "explanation": "Apply the subsequent discount of 12% to the marked-up price.",
+        "workingOut": "\\(V_2 = 97750.00 \\times (1 - 0.12) = 97750.00 \\times 0.88\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{120.00 dollars}\\)"
+        "explanation": "Calculate the final retail price.",
+        "workingOut": "\\(V_2 = 86020.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2467,26 +2842,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$103\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
-    "a": "\\(98.45\\)",
+    "question": "An agricultural supply depot lists premium soil fertilizer at \\( 120 \\) dollars per drum. A wholesaler adds a markup of \\( 22\\% \\) to the list price, then offers a bulk buyers discount of \\( 15\\% \\) off the marked-up price. Determine the bulk price per drum.",
+    "a": "\\(124.44\\)",
     "opts": [
-      "\\(103.37\\)",
-      "\\(88.61\\)",
-      "\\(108.30\\)",
-      "\\(98.45\\)"
+      "\\(138.00\\)",
+      "\\(124.44\\)",
+      "\\(117.60\\)",
+      "\\(128.40\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{103 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{103 dollars} \\times 1.18 = \\text{121.54 dollars}\\)"
+        "explanation": "Compute the wholesale price after the 22% markup.",
+        "workingOut": "\\(V_1 = 120 \\times 1.22 = 146.40\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{121.54 dollars} \\times 0.81\\)"
+        "explanation": "Apply the 15% discount to the wholesale price.",
+        "workingOut": "\\(V_2 = 146.40 \\times 0.85\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{98.45 dollars}\\)"
+        "explanation": "Find the final bulk price.",
+        "workingOut": "\\(V_2 = 124.44\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2496,26 +2874,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 78 \\) out of \\( 662 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(11.78\\%\\)",
+    "question": "A boutique electronics firm builds luxury mechanical keyboards costing \\( 350 \\) dollars. They mark up the price by \\( 45\\% \\) for retailers, who then offer a holiday promotion discount of \\( 18\\% \\). Calculate the promotional price.",
+    "a": "\\(416.15\\)",
     "opts": [
-      "\\(11.780%\\)",
-      "\\(12.958%\\)",
-      "\\(10.602%\\)",
-      "\\(12.369%\\)"
+      "\\(416.15\\)",
+      "\\(444.50\\)",
+      "\\(472.50\\)",
+      "\\(413.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{78}{662}\\)"
+        "explanation": "Calculate the retail price after the 45% markup.",
+        "workingOut": "\\(V_1 = 350 \\times 1.45 = 507.50\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{78}{662} \\times 100\\%\\)"
+        "explanation": "Apply the 18% promotional discount.",
+        "workingOut": "\\(V_2 = 507.50 \\times 0.82\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 11.78\\%\\)"
+        "explanation": "Evaluate the final price.",
+        "workingOut": "\\(V_2 = 416.15\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2525,26 +2906,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 1551 \\) dollars for testing. If \\( 29\\% \\) of this budget is assigned to the electric scooter division, and \\( 14\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(62.97\\)",
+    "question": "A dental equipment supplier purchases state-of-the-art curing lights for \\( 750 \\) dollars each. The supplier applies a \\( 28\\% \\) markup, but later discounts them by \\( 10\\% \\) during a trade show. Find the trade show price.",
+    "a": "\\(864.00\\)",
     "opts": [
-      "\\(62.97\\)",
-      "\\(66.12\\)",
-      "\\(69.27\\)",
-      "\\(56.67\\)"
+      "\\(864.00\\)",
+      "\\(862.50\\)",
+      "\\(900.00\\)",
+      "\\(885.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 1551 \\times \\frac{29}{100} = 1551 \\times 0.29 = 449.79\\)"
+        "explanation": "Compute the marked-up price.",
+        "workingOut": "\\(V_1 = 750 \\times 1.28 = 960.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{14}{100} = 449.79 \\times 0.14\\)"
+        "explanation": "Apply the 10% discount.",
+        "workingOut": "\\(V_2 = 960.00 \\times 0.90\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 62.97\\)"
+        "explanation": "Determine the final price.",
+        "workingOut": "\\(V_2 = 864.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2554,26 +2938,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 318 \\) units to \\( 566 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(77.99\\%\\)",
+    "question": "A drone logistics firm lists custom batteries at \\( 180 \\) dollars. The list price is marked up by \\( 35\\% \\), and later discounted by \\( 25\\% \\) during a inventory clearance sale. Determine the clearance sale price.",
+    "a": "\\(182.25\\)",
     "opts": [
-      "\\(70.191%\\)",
-      "\\(81.889%\\)",
-      "\\(85.789%\\)",
-      "\\(77.990%\\)"
+      "\\(171.00\\)",
+      "\\(189.00\\)",
+      "\\(182.25\\)",
+      "\\(198.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 566 - 318 = 248\\)"
+        "explanation": "Determine the marked-up price.",
+        "workingOut": "\\(V_1 = 180 \\times 1.35 = 243.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{248}{318} \\times 100\\%\\)"
+        "explanation": "Apply the 25% discount to the marked-up price.",
+        "workingOut": "\\(V_2 = 243.00 \\times 0.75\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 77.99\\%\\)"
+        "explanation": "Compute the final price.",
+        "workingOut": "\\(V_2 = 182.25\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2583,26 +2970,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$166.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
-    "a": "\\(185.00\\)",
+    "question": "After a store-wide clearance discount of \\( 15\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$204.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event.",
+    "a": "\\(240.00\\)",
     "opts": [
-      "\\(194.25\\)",
-      "\\(166.50\\)",
-      "\\(203.50\\)",
-      "\\(185.00\\)"
+      "\\(255.00\\)",
+      "\\(255.00\\)",
+      "\\(234.60\\)",
+      "\\(240.00\\)"
     ],
     "solutionSteps": [
       {
         "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{166.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "workingOut": "\\(\\text{Sale Price} = 204.00, \\quad \\text{Discount} = 15\\% = 0.15\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{166.50}{1 - 0.10} = \\frac{166.50}{0.90}\\)"
+        "explanation": "Divide the sale price by the discount multiplier to find the original price.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{204.00}{1 - 0.15} = \\frac{204.00}{0.85}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{185.00 dollars}\\)"
+        "explanation": "Calculate the original price.",
+        "workingOut": "\\(\\text{Original Price} = 240.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2612,26 +3002,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$218\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
-    "a": "\\(220.35\\)",
+    "question": "A refurbished industrial printing press is sold for \\( 68000 \\) dollars after a markdown of \\( 20\\% \\). Find the original list price of the printing press.",
+    "a": "\\(85000.00\\)",
     "opts": [
-      "\\(198.31\\)",
-      "\\(242.39\\)",
-      "\\(220.35\\)",
-      "\\(231.37\\)"
+      "\\(81600.00\\)",
+      "\\(85000.00\\)",
+      "\\(85000.00\\)",
+      "\\(90666.67\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{218 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{218 dollars} \\times 1.33 = \\text{289.94 dollars}\\)"
+        "explanation": "Identify the parameters for the reverse percentage equation.",
+        "workingOut": "\\(\\text{Markdown Price} = 68000, \\quad \\text{Rate} = 20\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{289.94 dollars} \\times 0.76\\)"
+        "explanation": "Divide the current price by the multiplier.",
+        "workingOut": "\\(\\text{Original List Price} = \\frac{68000}{0.80}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{220.35 dollars}\\)"
+        "explanation": "Evaluate the division.",
+        "workingOut": "\\(\\text{Original List Price} = 85000.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2641,26 +3034,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 173 \\) out of \\( 817 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(21.18\\%\\)",
+    "question": "A space technology developer purchases titanium alloys for \\( 22950 \\) dollars, which includes a special distributor discount of \\( 10\\% \\) on the original list price. Determine the original list price.",
+    "a": "\\(25500.00\\)",
     "opts": [
-      "\\(21.180%\\)",
-      "\\(23.298%\\)",
-      "\\(19.062%\\)",
-      "\\(22.239%\\)"
+      "\\(25245.00\\)",
+      "\\(26392.50\\)",
+      "\\(27000.00\\)",
+      "\\(25500.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{173}{817}\\)"
+        "explanation": "Determine the discount multiplier.",
+        "workingOut": "\\(\\text{Multiplier} = 1 - 0.10 = 0.90\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{173}{817} \\times 100\\%\\)"
+        "explanation": "Divide the discounted price by the multiplier to find the original list price.",
+        "workingOut": "\\(\\text{Original List Price} = \\frac{22950}{0.90}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 21.18\\%\\)"
+        "explanation": "Compute the final result.",
+        "workingOut": "\\(\\text{Original List Price} = 25500.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2670,26 +3066,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 2136 \\) dollars for testing. If \\( 34\\% \\) of this budget is assigned to the graphics card division, and \\( 29\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(210.61\\)",
+    "question": "An electric scooter is offered at a promotional price of \\( 945 \\) dollars after a holiday discount of \\( 12.5\\% \\) is applied. Determine the original retail price.",
+    "a": "\\(1080.00\\)",
     "opts": [
-      "\\(221.14\\)",
-      "\\(210.61\\)",
-      "\\(189.55\\)",
-      "\\(231.67\\)"
+      "\\(1063.13\\)",
+      "\\(1086.75\\)",
+      "\\(1080.00\\)",
+      "\\(1111.76\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 2136 \\times \\frac{34}{100} = 2136 \\times 0.34 = 726.24\\)"
+        "explanation": "Express the discount multiplier.",
+        "workingOut": "\\(\\text{Multiplier} = 1 - 0.125 = 0.875\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{29}{100} = 726.24 \\times 0.29\\)"
+        "explanation": "Divide the promotional price by the multiplier.",
+        "workingOut": "\\(\\text{Original Price} = \\frac{945}{0.875}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 210.61\\)"
+        "explanation": "Calculate the exact original price.",
+        "workingOut": "\\(\\text{Original Price} = 1080.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2699,26 +3098,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 403 \\) units to \\( 711 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(76.43\\%\\)",
+    "question": "A veterinary surgical table sells for \\( 2975 \\) dollars after a winter discount of \\( 15\\% \\). Find the list price before the discount.",
+    "a": "\\(3500.00\\)",
     "opts": [
-      "\\(76.430%\\)",
-      "\\(84.073%\\)",
-      "\\(68.787%\\)",
-      "\\(80.252%\\)"
+      "\\(3421.25\\)",
+      "\\(3570.00\\)",
+      "\\(3718.75\\)",
+      "\\(3500.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 711 - 403 = 308\\)"
+        "explanation": "Express the discount rate as a decimal.",
+        "workingOut": "\\(d = 0.15\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{308}{403} \\times 100\\%\\)"
+        "explanation": "Calculate the original price using the formula \\(P_{\\text{orig}} = \\frac{P_{\\text{final}}}{1 - d}\\).",
+        "workingOut": "\\(P_{\\text{orig}} = \\frac{2975}{0.85}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 76.43\\%\\)"
+        "explanation": "Compute the result.",
+        "workingOut": "\\(P_{\\text{orig}} = 3500.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2728,26 +3130,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$225.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
-    "a": "\\(250.00\\)",
+    "question": "The population of a rare koala reserve is \\( 1200 \\). If the population increases by \\( 15\\% \\) in the first year and then by \\( 20\\% \\) in the second year, find the final population of the reserve.",
+    "a": "\\(1656\\)",
     "opts": [
-      "\\(250.00\\)",
-      "\\(275.00\\)",
-      "\\(225.00\\)",
-      "\\(262.50\\)"
+      "\\(1680\\)",
+      "\\(1656\\)",
+      "\\(1560\\)",
+      "\\(1620\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{225.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate the population after the first year increase of 15%.",
+        "workingOut": "\\(P_1 = 1200 \\times 1.15 = 1380\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{225.00}{1 - 0.10} = \\frac{225.00}{0.90}\\)"
+        "explanation": "Apply the second year increase of 20% to the new population.",
+        "workingOut": "\\(P_2 = 1380 \\times 1.20\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{250.00 dollars}\\)"
+        "explanation": "Evaluate the final population size.",
+        "workingOut": "\\(P_2 = 1656\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2757,26 +3162,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$333\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
-    "a": "\\(278.99\\)",
+    "question": "A yeast cell colony starts with \\( 5000 \\) cells. The population grows by \\( 8\\% \\) in the first hour and by \\( 12\\% \\) in the second hour. Determine the total yeast count after two hours.",
+    "a": "\\(6048\\)",
     "opts": [
-      "\\(278.99\\)",
-      "\\(306.89\\)",
-      "\\(251.09\\)",
-      "\\(292.94\\)"
+      "\\(6000\\)",
+      "\\(5900\\)",
+      "\\(6100\\)",
+      "\\(6048\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{333 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{333 dollars} \\times 1.18 = \\text{392.94 dollars}\\)"
+        "explanation": "Compute the yeast population after one hour.",
+        "workingOut": "\\(N_1 = 5000 \\times 1.08 = 5400\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{392.94 dollars} \\times 0.71\\)"
+        "explanation": "Apply the 12% growth rate in the second hour.",
+        "workingOut": "\\(N_2 = 5400 \\times 1.12\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{278.99 dollars}\\)"
+        "explanation": "Find the total yeast count.",
+        "workingOut": "\\(N_2 = 6048\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2786,26 +3194,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 118 \\) out of \\( 972 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(12.14\\%\\)",
+    "question": "The number of active users of a decentralized finance application grows from \\( 8000 \\) by \\( 25\\% \\) in month 1, but due to market correction, drops by \\( 10\\% \\) in month 2. Find the user base at the end of month 2.",
+    "a": "\\(9000\\)",
     "opts": [
-      "\\(12.747%\\)",
-      "\\(13.354%\\)",
-      "\\(12.140%\\)",
-      "\\(10.926%\\)"
+      "\\(8960\\)",
+      "\\(9600\\)",
+      "\\(9200\\)",
+      "\\(9000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{118}{972}\\)"
+        "explanation": "Calculate the active users after the first month growth of 25%.",
+        "workingOut": "\\(U_1 = 8000 \\times 1.25 = 10000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{118}{972} \\times 100\\%\\)"
+        "explanation": "Reduce the user base by 10% in the second month.",
+        "workingOut": "\\(U_2 = 10000 \\times 0.90\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 12.14\\%\\)"
+        "explanation": "Determine the final active user count.",
+        "workingOut": "\\(U_2 = 9000\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2815,26 +3226,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 2721 \\) dollars for testing. If \\( 9\\% \\) of this budget is assigned to the leather briefcase division, and \\( 19\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(46.53\\)",
+    "question": "A regional honeybee population is estimated at \\( 15000 \\). In the first season, it increases by \\( 6\\% \\), and in the second season, it grows by another \\( 15\\% \\). Find the final honeybee population.",
+    "a": "\\(18285\\)",
     "opts": [
-      "\\(48.86\\)",
-      "\\(46.53\\)",
-      "\\(51.18\\)",
-      "\\(41.88\\)"
+      "\\(18000\\)",
+      "\\(18150\\)",
+      "\\(18285\\)",
+      "\\(18300\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 2721 \\times \\frac{9}{100} = 2721 \\times 0.09 = 244.89\\)"
+        "explanation": "Calculate the population after the first season increase.",
+        "workingOut": "\\(H_1 = 15000 \\times 1.06 = 15900\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{19}{100} = 244.89 \\times 0.19\\)"
+        "explanation": "Apply the second season growth of 15% to the new population.",
+        "workingOut": "\\(H_2 = 15900 \\times 1.15\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 46.53\\)"
+        "explanation": "Evaluate the final population count.",
+        "workingOut": "\\(H_2 = 18285\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2844,26 +3258,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 488 \\) units to \\( 856 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(75.41\\%\\)",
+    "question": "A cloud computing firm database cluster processes \\( 25000 \\) queries per second. Due to node additions, capacity increases by \\( 18\\% \\), and later optimizations add another \\( 5\\% \\) capacity. Determine the final queries per second.",
+    "a": "\\(30975\\)",
     "opts": [
-      "\\(79.180%\\)",
-      "\\(67.869%\\)",
-      "\\(82.951%\\)",
-      "\\(75.410%\\)"
+      "\\(31000\\)",
+      "\\(30500\\)",
+      "\\(30975\\)",
+      "\\(30750\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 856 - 488 = 368\\)"
+        "explanation": "Compute queries per second capacity after node additions.",
+        "workingOut": "\\(C_1 = 25000 \\times 1.18 = 29500\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{368}{488} \\times 100\\%\\)"
+        "explanation": "Apply the 5% optimization capacity increase.",
+        "workingOut": "\\(C_2 = 29500 \\times 1.05\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 75.41\\%\\)"
+        "explanation": "Determine the final Capacity.",
+        "workingOut": "\\(C_2 = 30975\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2873,26 +3290,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$283.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
-    "a": "\\(315.00\\)",
+    "question": "A research department allocates a budget of \\( 8000 \\) dollars for testing. If \\( 45\\% \\) of this budget is assigned to the electric vehicle division, and \\( 20\\% \\) of that division's budget is used specifically for battery testing, find the amount spent on battery testing.",
+    "a": "\\(720.00\\)",
     "opts": [
-      "\\(346.50\\)",
-      "\\(283.50\\)",
-      "\\(330.75\\)",
-      "\\(315.00\\)"
+      "\\(1200.00\\)",
+      "\\(5200.00\\)",
+      "\\(2000.00\\)",
+      "\\(720.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{283.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate the budget allocated to the electric vehicle division.",
+        "workingOut": "\\(B_{\\text{div}} = 8000 \\times 0.45 = 3600.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{283.50}{1 - 0.10} = \\frac{283.50}{0.90}\\)"
+        "explanation": "Find the amount allocated to battery testing from the division's budget.",
+        "workingOut": "\\(B_{\\text{test}} = 3600.00 \\times 0.20\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{315.00 dollars}\\)"
+        "explanation": "Compute the final testing budget.",
+        "workingOut": "\\(B_{\\text{test}} = 720.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2902,26 +3322,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$448\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
-    "a": "\\(512.42\\)",
+    "question": "A regional development grant of \\( 125000 \\) dollars is awarded. \\( 32\\% \\) of the grant is dedicated to infrastructural projects, of which \\( 15\\% \\) is set aside for local pedestrian walkways. Find the walkway budget.",
+    "a": "\\(6000.00\\)",
     "opts": [
-      "\\(563.66\\)",
-      "\\(538.04\\)",
-      "\\(461.18\\)",
-      "\\(512.42\\)"
+      "\\(12500.00\\)",
+      "\\(6250.00\\)",
+      "\\(6000.00\\)",
+      "\\(58750.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{448 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{448 dollars} \\times 1.33 = \\text{595.84 dollars}\\)"
+        "explanation": "Calculate the infrastructural project allocation.",
+        "workingOut": "\\(I = 125000 \\times 0.32 = 40000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{595.84 dollars} \\times 0.86\\)"
+        "explanation": "Find the pedestrian walkway allocation.",
+        "workingOut": "\\(W = 40000.00 \\times 0.15\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{512.42 dollars}\\)"
+        "explanation": "Compute the walkway budget.",
+        "workingOut": "\\(W = 6000.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2931,26 +3354,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 63 \\) out of \\( 1127 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(5.59\\%\\)",
+    "question": "An environmental charity receives \\( 45000 \\) dollars in donations. They allocate \\( 40\\% \\) of this to conservation programs, and \\( 18\\% \\) of the conservation budget is designated for marine ecosystem studies. Find the amount spent on marine studies.",
+    "a": "\\(3240.00\\)",
     "opts": [
-      "\\(5.590%\\)",
-      "\\(6.149%\\)",
-      "\\(5.031%\\)",
-      "\\(5.870%\\)"
+      "\\(5400.00\\)",
+      "\\(3600.00\\)",
+      "\\(3240.00\\)",
+      "\\(26100.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{63}{1127}\\)"
+        "explanation": "Compute the conservation programs allocation.",
+        "workingOut": "\\(C = 45000 \\times 0.40 = 18000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{63}{1127} \\times 100\\%\\)"
+        "explanation": "Find the marine studies allocation.",
+        "workingOut": "\\(M = 18000.00 \\times 0.18\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 5.59\\%\\)"
+        "explanation": "Evaluate the final budget for marine studies.",
+        "workingOut": "\\(M = 3240.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2960,26 +3386,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 3306 \\) dollars for testing. If \\( 14\\% \\) of this budget is assigned to the camping tent division, and \\( 9\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(41.66\\)",
+    "question": "A technology startup allocates \\( 65000 \\) dollars to research. If \\( 25\\% \\) of the research budget is assigned to user interface development, and \\( 12\\% \\) of that division's budget is used for usability testing, find the usability testing budget.",
+    "a": "\\(1950.00\\)",
     "opts": [
-      "\\(41.66\\)",
-      "\\(43.74\\)",
-      "\\(45.83\\)",
-      "\\(37.49\\)"
+      "\\(1950.00\\)",
+      "\\(3250.00\\)",
+      "\\(24050.00\\)",
+      "\\(1950.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 3306 \\times \\frac{14}{100} = 3306 \\times 0.14 = 462.84\\)"
+        "explanation": "Compute the user interface development budget.",
+        "workingOut": "\\(U = 65000 \\times 0.25 = 16250.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{9}{100} = 462.84 \\times 0.09\\)"
+        "explanation": "Find the usability testing allocation.",
+        "workingOut": "\\(T = 16250.00 \\times 0.12\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 41.66\\)"
+        "explanation": "Determine the usability testing budget.",
+        "workingOut": "\\(T = 1950.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -2989,26 +3418,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 573 \\) units to \\( 501 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(-12.57\\%\\)",
+    "question": "A hospital foundation assigns \\( 180000 \\) dollars to research. If \\( 30\\% \\) of the budget is given to cardiology research, and \\( 8\\% \\) of that research budget is designated for pacemakers, find the pacemaker budget.",
+    "a": "\\(4320.00\\)",
     "opts": [
-      "\\(-9.570%\\)",
-      "\\(-10.570%\\)",
-      "\\(-11.570%\\)",
-      "\\(-12.570%\\)"
+      "\\(4320.00\\)",
+      "\\(68400.00\\)",
+      "\\(7200.00\\)",
+      "\\(4320.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 501 - 573 = -72\\)"
+        "explanation": "Compute the cardiology research budget.",
+        "workingOut": "\\(C = 180000 \\times 0.30 = 54000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{-72}{573} \\times 100\\%\\)"
+        "explanation": "Find the pacemaker research allocation.",
+        "workingOut": "\\(P = 54000.00 \\times 0.08\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx -12.57\\%\\)"
+        "explanation": "Evaluate the final budget.",
+        "workingOut": "\\(P = 4320.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3018,26 +3450,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$342.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
-    "a": "\\(380.00\\)",
+    "question": "A chemical blending vat contains \\( 120 \\) liters of a chemical solution with a concentration of \\( 15\\% \\) acid. If \\( 30 \\) liters of pure water are added, find the new percentage concentration of the acid.",
+    "a": "\\(12.00\\%\\)",
     "opts": [
-      "\\(380.00\\)",
-      "\\(418.00\\)",
-      "\\(342.00\\)",
-      "\\(399.00\\)"
+      "\\(12.00\\%\\)",
+      "\\(13.50\\%\\)",
+      "\\(15.00\\%\\)",
+      "\\(12.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{342.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Find the volume of pure acid in the original solution.",
+        "workingOut": "\\(V_{\\text{acid}} = 120 \\times 0.15 = 18.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{342.00}{1 - 0.10} = \\frac{342.00}{0.90}\\)"
+        "explanation": "Determine the total volume of the mixture after water is added.",
+        "workingOut": "\\(V_{\\text{total}} = 120 + 30 = 150\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{380.00 dollars}\\)"
+        "explanation": "Calculate the new percentage concentration.",
+        "workingOut": "\\(C_{\\text{new}} = \\frac{18.00}{150} \\times 100\\% = 12.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3047,26 +3482,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$563\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
-    "a": "\\(538.12\\)",
+    "question": "A pharmaceutical developer mixes a batch of saline solution containing \\( 80 \\) liters of \\( 6.5\\% \\) sodium chloride. If \\( 20 \\) liters of distilled water are mixed in, find the new concentration of sodium chloride.",
+    "a": "\\(5.20\\%\\)",
     "opts": [
-      "\\(565.03\\)",
-      "\\(484.31\\)",
-      "\\(591.93\\)",
-      "\\(538.12\\)"
+      "\\(5.20\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(6.00\\%\\)",
+      "\\(5.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{563 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{563 dollars} \\times 1.18 = \\text{664.34 dollars}\\)"
+        "explanation": "Find the weight of sodium chloride in the original mixture.",
+        "workingOut": "\\(W_{\\text{salt}} = 80 \\times 0.065 = 5.20\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{664.34 dollars} \\times 0.81\\)"
+        "explanation": "Determine the final volume of the solution.",
+        "workingOut": "\\(V_{\\text{total}} = 80 + 20 = 100\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{538.12 dollars}\\)"
+        "explanation": "Calculate the new concentration.",
+        "workingOut": "\\(C_{\\text{new}} = \\frac{5.20}{100} \\times 100\\% = 5.20\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3076,26 +3514,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 158 \\) out of \\( 1282 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(12.32\\%\\)",
+    "question": "A soil nutrient compound has \\( 450 \\) kg of organic compost at \\( 24\\% \\) nitrogen concentration. If the agriculturalist adds \\( 50 \\) kg of inert dry clay, find the new nitrogen concentration of the soil compound.",
+    "a": "\\(21.60\\%\\)",
     "opts": [
-      "\\(12.936%\\)",
-      "\\(12.320%\\)",
-      "\\(11.088%\\)",
-      "\\(13.552%\\)"
+      "\\(20.00\\%\\)",
+      "\\(21.80\\%\\)",
+      "\\(21.60\\%\\)",
+      "\\(22.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{158}{1282}\\)"
+        "explanation": "Calculate the weight of pure nitrogen in the compound.",
+        "workingOut": "\\(W_{\\text{nitrogen}} = 450 \\times 0.24 = 108.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{158}{1282} \\times 100\\%\\)"
+        "explanation": "Determine the final weight of the compound.",
+        "workingOut": "\\(W_{\\text{total}} = 450 + 50 = 500\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 12.32\\%\\)"
+        "explanation": "Compute the new percentage concentration.",
+        "workingOut": "\\(C_{\\text{new}} = \\frac{108.00}{500} \\times 100\\% = 21.60\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3105,26 +3546,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 3891 \\) dollars for testing. If \\( 19\\% \\) of this budget is assigned to the electric scooter division, and \\( 24\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(177.43\\)",
+    "question": "A swimming pool contains \\( 18000 \\) liters of water at a chlorine concentration of \\( 0.4\\% \\). If \\( 2000 \\) liters of tap water are added to the pool, find the new chlorine concentration.",
+    "a": "\\(0.360\\%\\)",
     "opts": [
-      "\\(177.43\\)",
-      "\\(195.17\\)",
-      "\\(159.69\\)",
-      "\\(186.30\\)"
+      "\\(0.380\\%\\)",
+      "\\(0.360\\%\\)",
+      "\\(0.350\\%\\)",
+      "\\(0.340\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 3891 \\times \\frac{19}{100} = 3891 \\times 0.19 = 739.29\\)"
+        "explanation": "Calculate the volume of pure chlorine in the pool.",
+        "workingOut": "\\(V_{\\text{chlorine}} = 18000 \\times 0.004 = 72.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{24}{100} = 739.29 \\times 0.24\\)"
+        "explanation": "Determine the final volume of water in the pool.",
+        "workingOut": "\\(V_{\\text{total}} = 18000 + 2000 = 20000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 177.43\\)"
+        "explanation": "Calculate the new chlorine percentage.",
+        "workingOut": "\\(C_{\\text{new}} = \\frac{72.00}{20000} \\times 100\\% = 0.360\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3134,26 +3578,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 258 \\) units to \\( 646 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(150.39\\%\\)",
+    "question": "A lab container holds \\( 250 \\) mL of \\( 45\\% \\) sulfuric acid. If the lab technician adds \\( 50 \\) mL of pure water, determine the new concentration of the acid.",
+    "a": "\\(37.50\\%\\)",
     "opts": [
-      "\\(157.909%\\)",
-      "\\(135.351%\\)",
-      "\\(165.429%\\)",
-      "\\(150.390%\\)"
+      "\\(36.50\\%\\)",
+      "\\(40.50\\%\\)",
+      "\\(38.00\\%\\)",
+      "\\(37.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 646 - 258 = 388\\)"
+        "explanation": "Determine the volume of pure acid.",
+        "workingOut": "\\(V_{\\text{acid}} = 250 \\times 0.45 = 112.50\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{388}{258} \\times 100\\%\\)"
+        "explanation": "Determine the final volume of the solution.",
+        "workingOut": "\\(V_{\\text{total}} = 250 + 50 = 300\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 150.39\\%\\)"
+        "explanation": "Calculate the final concentration percentage.",
+        "workingOut": "\\(C_{\\text{new}} = \\frac{112.50}{300} \\times 100\\% = 37.50\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3163,26 +3610,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$400.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
-    "a": "\\(445.00\\)",
+    "question": "A solar sail speed estimate evaluates the efficiency of energy transfer. The primary sail absorbs \\( 85\\% \\) of light, but the reflection filter loses \\( 12\\% \\) of that absorbed energy. Find the net percentage efficiency of the solar sail system.",
+    "a": "\\(74.80\\%\\)",
     "opts": [
-      "\\(445.00\\)",
-      "\\(489.50\\)",
-      "\\(467.25\\)",
-      "\\(400.50\\)"
+      "\\(76.50\\%\\)",
+      "\\(74.80\\%\\)",
+      "\\(73.00\\%\\)",
+      "\\(74.80\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{400.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Identify the primary absorption rate.",
+        "workingOut": "\\(A_1 = 85\\% = 0.85\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{400.50}{1 - 0.10} = \\frac{400.50}{0.90}\\)"
+        "explanation": "Apply the subsequent energy loss of 12% to the primary absorption.",
+        "workingOut": "\\(A_2 = 0.85 \\times (1 - 0.12) = 0.85 \\times 0.88\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{445.00 dollars}\\)"
+        "explanation": "Calculate the net percentage efficiency.",
+        "workingOut": "\\(A_2 = 74.80\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3192,26 +3642,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$678\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
-    "a": "\\(685.32\\)",
+    "question": "A hydroelectric power turbine captures \\( 64\\% \\) of potential water energy, but generator transformer losses account for a further \\( 8\\% \\) reduction. Compute the net efficiency of the turbine system.",
+    "a": "\\(58.88\\%\\)",
     "opts": [
-      "\\(685.32\\)",
-      "\\(616.79\\)",
-      "\\(719.59\\)",
-      "\\(753.85\\)"
+      "\\(56.00\\%\\)",
+      "\\(58.88\\%\\)",
+      "\\(58.88\\%\\)",
+      "\\(57.60\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{678 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{678 dollars} \\times 1.33 = \\text{901.74 dollars}\\)"
+        "explanation": "Identify the energy capture rate.",
+        "workingOut": "\\(E_1 = 64\\% = 0.64\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{901.74 dollars} \\times 0.76\\)"
+        "explanation": "Apply the transformer loss of 8%.",
+        "workingOut": "\\(E_2 = 0.64 \\times (1 - 0.08) = 0.64 \\times 0.92\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{685.32 dollars}\\)"
+        "explanation": "Compute the net efficiency.",
+        "workingOut": "\\(E_2 = 58.88\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3221,26 +3674,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 103 \\) out of \\( 637 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(16.17\\%\\)",
+    "question": "A database query distribution model forwards \\( 72\\% \\) of queries to the main server, but connection latency drops \\( 5\\% \\) of these forwarded queries. Find the net percentage of queries processed by the main server.",
+    "a": "\\(68.40\\%\\)",
     "opts": [
-      "\\(16.170%\\)",
-      "\\(17.787%\\)",
-      "\\(14.553%\\)",
-      "\\(16.979%\\)"
+      "\\(68.40\\%\\)",
+      "\\(68.40\\%\\)",
+      "\\(69.50\\%\\)",
+      "\\(67.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{103}{637}\\)"
+        "explanation": "Identify the query forwarding rate.",
+        "workingOut": "\\(Q_1 = 72\\% = 0.72\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{103}{637} \\times 100\\%\\)"
+        "explanation": "Calculate the proportion processed after the 5% drop.",
+        "workingOut": "\\(Q_2 = 0.72 \\times 0.95\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 16.17\\%\\)"
+        "explanation": "Determine the final percentage of queries processed.",
+        "workingOut": "\\(Q_2 = 68.40\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3250,26 +3706,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 4476 \\) dollars for testing. If \\( 24\\% \\) of this budget is assigned to the graphics card division, and \\( 14\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(150.39\\)",
+    "question": "A manufacturing inspection machine detects \\( 95\\% \\) of defects, but secondary manual inspections fail to report \\( 4\\% \\) of those detected defects. Calculate the net defect reporting percentage.",
+    "a": "\\(91.20\\%\\)",
     "opts": [
-      "\\(150.39\\)",
-      "\\(165.43\\)",
-      "\\(135.35\\)",
-      "\\(157.91\\)"
+      "\\(91.00\\%\\)",
+      "\\(91.20\\%\\)",
+      "\\(90.50\\%\\)",
+      "\\(91.20\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 4476 \\times \\frac{24}{100} = 4476 \\times 0.24 = 1074.24\\)"
+        "explanation": "Identify the machine detection rate.",
+        "workingOut": "\\(D_1 = 95\\% = 0.95\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{14}{100} = 1074.24 \\times 0.14\\)"
+        "explanation": "Calculate the net reporting rate after the 4% manual reporting failure.",
+        "workingOut": "\\(D_2 = 0.95 \\times 0.96\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 150.39\\)"
+        "explanation": "Compute the final reported percentage.",
+        "workingOut": "\\(D_2 = 91.20\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3279,26 +3738,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 343 \\) units to \\( 791 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(130.61\\%\\)",
+    "question": "An optical networking transmitter propagates \\( 88\\% \\) of original signal packets, but dispersion losses drop \\( 6\\% \\) of the propagated packets. Determine the net signal propagation efficiency.",
+    "a": "\\(82.72\\%\\)",
     "opts": [
-      "\\(137.141%\\)",
-      "\\(117.549%\\)",
-      "\\(143.671%\\)",
-      "\\(130.610%\\)"
+      "\\(83.20\\%\\)",
+      "\\(82.72\\%\\)",
+      "\\(82.72\\%\\)",
+      "\\(82.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 791 - 343 = 448\\)"
+        "explanation": "Identify the initial signal propagation rate.",
+        "workingOut": "\\(S_1 = 88\\% = 0.88\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{448}{343} \\times 100\\%\\)"
+        "explanation": "Calculate the net propagation after the 6% dispersion drop.",
+        "workingOut": "\\(S_2 = 0.88 \\times 0.94\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 130.61\\%\\)"
+        "explanation": "Determine the final signal propagation efficiency.",
+        "workingOut": "\\(S_2 = 82.72\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3308,26 +3770,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$459.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
-    "a": "\\(510.00\\)",
+    "question": "An electronics importer is subjected to a customs tariff of \\( 12\\% \\) on the value of luxury watches exceeding \\( 10000 \\) dollars. If a batch of watches is valued at \\( 25000 \\) dollars, determine the total customs tariff as a percentage of the total batch value.",
+    "a": "\\(7.20\\%\\)",
     "opts": [
-      "\\(510.00\\)",
-      "\\(459.00\\)",
-      "\\(561.00\\)",
-      "\\(535.50\\)"
+      "\\(7.20\\%\\)",
+      "\\(7.50\\%\\)",
+      "\\(6.80\\%\\)",
+      "\\(7.20\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{459.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Determine the taxable value exceeding the 10,000 threshold.",
+        "workingOut": "\\(V_{\\text{taxable}} = 25000 - 10000 = 15000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{459.00}{1 - 0.10} = \\frac{459.00}{0.90}\\)"
+        "explanation": "Calculate the total tariff paid.",
+        "workingOut": "\\(T = 15000 \\times 0.12 = 1800.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{510.00 dollars}\\)"
+        "explanation": "Express the total tariff as a percentage of the total batch value.",
+        "workingOut": "\\(P = \\frac{1800.00}{25000} \\times 100\\% = 7.20\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3337,26 +3802,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$193\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
-    "a": "\\(161.70\\)",
+    "question": "A corporate tax scheme levies a surcharge rate of \\( 15\\% \\) on profits exceeding \\( 500000 \\) dollars. If a logistics firm records a profit of \\( 1200000 \\) dollars, find the corporate surcharge as a percentage of the total profits.",
+    "a": "\\(8.75\\%\\)",
     "opts": [
-      "\\(177.87\\)",
-      "\\(145.53\\)",
-      "\\(169.78\\)",
-      "\\(161.70\\)"
+      "\\(9.00\\%\\)",
+      "\\(8.75\\%\\)",
+      "\\(8.50\\%\\)",
+      "\\(8.75\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{193 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{193 dollars} \\times 1.18 = \\text{227.74 dollars}\\)"
+        "explanation": "Find the profit amount exceeding the 500,000 threshold.",
+        "workingOut": "\\(P_{\\text{taxable}} = 1200000 - 500000 = 700000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{227.74 dollars} \\times 0.71\\)"
+        "explanation": "Calculate the total surcharge amount.",
+        "workingOut": "\\(S = 700000 \\times 0.15 = 105000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{161.70 dollars}\\)"
+        "explanation": "Determine the percentage of total profits that this surcharge represents.",
+        "workingOut": "\\(P = \\frac{105000.00}{1200000} \\times 100\\% = 8.75\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3366,26 +3834,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 48 \\) out of \\( 792 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(6.06\\%\\)",
+    "question": "A carbon emission regulation charges a fine of \\( 18\\% \\) on carbon emissions exceeding a baseline threshold of \\( 3000 \\) tons. If an industrial chemical plant emits \\( 8000 \\) tons, find the carbon fine as a percentage of total emissions.",
+    "a": "\\(11.25\\%\\)",
     "opts": [
-      "\\(6.363%\\)",
-      "\\(5.454%\\)",
-      "\\(6.666%\\)",
-      "\\(6.060%\\)"
+      "\\(10.50\\%\\)",
+      "\\(11.50\\%\\)",
+      "\\(11.25\\%\\)",
+      "\\(11.25\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{48}{792}\\)"
+        "explanation": "Calculate the excess carbon emissions.",
+        "workingOut": "\\(E_{\\text{excess}} = 8000 - 3000 = 5000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{48}{792} \\times 100\\%\\)"
+        "explanation": "Calculate the total fine.",
+        "workingOut": "\\(F = 5000 \\times 0.18 = 900.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 6.06\\%\\)"
+        "explanation": "Calculate the fine as a percentage of total emissions.",
+        "workingOut": "\\(P = \\frac{900.00}{8000} \\times 100\\% = 11.25\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3395,26 +3866,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 5061 \\) dollars for testing. If \\( 29\\% \\) of this budget is assigned to the leather briefcase division, and \\( 29\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(425.63\\)",
+    "question": "A water utility charges a surcharge of \\( 22\\% \\) on daily usage exceeding \\( 8000 \\) liters. If a brewery uses \\( 15000 \\) liters in a day, determine the surcharge as a percentage of total water consumption.",
+    "a": "\\(10.27\\%\\)",
     "opts": [
-      "\\(446.91\\)",
-      "\\(383.07\\)",
-      "\\(468.19\\)",
-      "\\(425.63\\)"
+      "\\(10.27\\%\\)",
+      "\\(9.50\\%\\)",
+      "\\(10.50\\%\\)",
+      "\\(10.27\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 5061 \\times \\frac{29}{100} = 5061 \\times 0.29 = 1467.69\\)"
+        "explanation": "Calculate water consumption exceeding the threshold.",
+        "workingOut": "\\(W_{\\text{excess}} = 15000 - 8000 = 7000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{29}{100} = 1467.69 \\times 0.29\\)"
+        "explanation": "Calculate the total surcharge amount.",
+        "workingOut": "\\(S = 7000 \\times 0.22 = 1540.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 425.63\\)"
+        "explanation": "Determine the surcharge percentage of total consumption.",
+        "workingOut": "\\(P = \\frac{1540.00}{15000} \\times 100\\% = 10.27\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3424,26 +3898,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 428 \\) units to \\( 936 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(118.69\\%\\)",
+    "question": "A cryptocurrency miner pays a transactional pool fee of \\( 2.5\\% \\) on blocks generated over a weekly weekly minimum value of \\( 15000 \\) dollars. If they generate blocks valued at \\( 45000 \\) dollars, find the weekly pool fee as a percentage of total blocks generated.",
+    "a": "\\(1.67\\%\\)",
     "opts": [
-      "\\(130.559%\\)",
-      "\\(118.690%\\)",
-      "\\(106.821%\\)",
-      "\\(124.624%\\)"
+      "\\(1.67\\%\\)",
+      "\\(1.50\\%\\)",
+      "\\(1.67\\%\\)",
+      "\\(1.75\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 936 - 428 = 508\\)"
+        "explanation": "Determine block value exceeding the threshold.",
+        "workingOut": "\\(B_{\\text{excess}} = 45000 - 15000 = 30000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{508}{428} \\times 100\\%\\)"
+        "explanation": "Calculate the transactional pool fee.",
+        "workingOut": "\\(F = 30000 \\times 0.025 = 750.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 118.69\\%\\)"
+        "explanation": "Calculate the pool fee as a percentage of total blocks generated.",
+        "workingOut": "\\(P = \\frac{750.00}{45000} \\times 100\\% = 1.67\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3453,26 +3930,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$157.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
-    "a": "\\(175.00\\)",
+    "question": "During a high-precision calibration of a laser interferometer, an expected wavelength measurement of \\( 632.8 \\) nm is recorded as \\( 635.2 \\) nm. Calculate the percentage error in the measurement, correct to two decimal places.",
+    "a": "\\(0.38\\%\\)",
     "opts": [
-      "\\(183.75\\)",
-      "\\(157.50\\)",
-      "\\(192.50\\)",
-      "\\(175.00\\)"
+      "\\(0.38\\%\\)",
+      "\\(0.40\\%\\)",
+      "\\(0.38\\%\\)",
+      "\\(0.35\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{157.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate the absolute error in measurement.",
+        "workingOut": "\\(\\text{Absolute Error} = |635.2 - 632.8| = 2.4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{157.50}{1 - 0.10} = \\frac{157.50}{0.90}\\)"
+        "explanation": "Divide the absolute error by the expected value and multiply by 100 to find the percentage error.",
+        "workingOut": "\\(\\text{Percentage Error} = \\frac{2.4}{632.8} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{175.00 dollars}\\)"
+        "explanation": "Evaluate the percentage error.",
+        "workingOut": "\\(\\text{Percentage Error} \\approx 0.38\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3482,26 +3962,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$308\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
-    "a": "\\(352.29\\)",
+    "question": "A lab scales calibration expects a mass reference of \\( 250.00 \\) grams, but measures it at \\( 248.80 \\) grams. Determine the percentage error of the scales.",
+    "a": "\\(0.48\\%\\)",
     "opts": [
-      "\\(317.06\\)",
-      "\\(387.52\\)",
-      "\\(352.29\\)",
-      "\\(369.90\\)"
+      "\\(0.50\\%\\)",
+      "\\(0.48\\%\\)",
+      "\\(0.45\\%\\)",
+      "\\(0.48\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{308 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{308 dollars} \\times 1.33 = \\text{409.64 dollars}\\)"
+        "explanation": "Compute the absolute error.",
+        "workingOut": "\\(\\text{Absolute Error} = |248.80 - 250.00| = 1.20\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{409.64 dollars} \\times 0.86\\)"
+        "explanation": "Calculate the percentage error based on the expected reference mass.",
+        "workingOut": "\\(\\text{Percentage Error} = \\frac{1.20}{250.00} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{352.29 dollars}\\)"
+        "explanation": "Determine the final percentage error.",
+        "workingOut": "\\(\\text{Percentage Error} = 0.48\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3511,26 +3994,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 143 \\) out of \\( 947 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(15.10\\%\\)",
+    "question": "A satellite telemetry system predicts an orbital altitude of \\( 420.00 \\) km, but GPS validation registers it at \\( 423.50 \\) km. Find the percentage error in the prediction.",
+    "a": "\\(0.83\\%\\)",
     "opts": [
-      "\\(15.855%\\)",
-      "\\(15.100%\\)",
-      "\\(13.590%\\)",
-      "\\(16.610%\\)"
+      "\\(0.83\\%\\)",
+      "\\(0.85\\%\\)",
+      "\\(0.83\\%\\)",
+      "\\(0.80\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{143}{947}\\)"
+        "explanation": "Compute the absolute error of prediction.",
+        "workingOut": "\\(\\text{Absolute Error} = |423.50 - 420.00| = 3.50\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{143}{947} \\times 100\\%\\)"
+        "explanation": "Divide the absolute error by the predicted altitude.",
+        "workingOut": "\\(\\text{Percentage Error} = \\frac{3.50}{420.00} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 15.10\\%\\)"
+        "explanation": "Determine the percentage error.",
+        "workingOut": "\\(\\text{Percentage Error} \\approx 0.83\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3540,26 +4026,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 5646 \\) dollars for testing. If \\( 34\\% \\) of this budget is assigned to the camping tent division, and \\( 19\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(364.73\\)",
+    "question": "An oil pipeline flowmeter measures a flow rate of \\( 12.80 \\) liters per second, whereas the actual calibrated flow is \\( 12.50 \\) liters per second. Find the percentage error of the flowmeter.",
+    "a": "\\(2.40\\%\\)",
     "opts": [
-      "\\(364.73\\)",
-      "\\(401.20\\)",
-      "\\(328.26\\)",
-      "\\(382.97\\)"
+      "\\(2.40\\%\\)",
+      "\\(2.34\\%\\)",
+      "\\(2.45\\%\\)",
+      "\\(2.40\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 5646 \\times \\frac{34}{100} = 5646 \\times 0.34 = 1919.64\\)"
+        "explanation": "Calculate the absolute flow error.",
+        "workingOut": "\\(\\text{Absolute Error} = |12.80 - 12.50| = 0.30\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{19}{100} = 1919.64 \\times 0.19\\)"
+        "explanation": "Divide by the actual calibrated flow rate to find the percentage error.",
+        "workingOut": "\\(\\text{Percentage Error} = \\frac{0.30}{12.50} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 364.73\\)"
+        "explanation": "Calculate the final percentage error.",
+        "workingOut": "\\(\\text{Percentage Error} = 2.40\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3569,26 +4058,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 513 \\) units to \\( 581 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(13.26\\%\\)",
+    "question": "A structural civil engineer estimates the deflection of a concrete beam under a test load to be \\( 15.00 \\) mm, but actual sensor verification measures it at \\( 16.20 \\) mm. Determine the percentage error of the estimate.",
+    "a": "\\(7.41\\%\\)",
     "opts": [
-      "\\(13.923%\\)",
-      "\\(11.934%\\)",
-      "\\(14.586%\\)",
-      "\\(13.260%\\)"
+      "\\(7.50\\%\\)",
+      "\\(7.41\\%\\)",
+      "\\(8.00\\%\\)",
+      "\\(7.41\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 581 - 513 = 68\\)"
+        "explanation": "Calculate the absolute error of deflection.",
+        "workingOut": "\\(\\text{Absolute Error} = |16.20 - 15.00| = 1.20\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{68}{513} \\times 100\\%\\)"
+        "explanation": "Divide by the verified sensor reading to find the percentage error.",
+        "workingOut": "\\(\\text{Percentage Error} = \\frac{1.20}{16.20} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 13.26\\%\\)"
+        "explanation": "Determine the final percentage error.",
+        "workingOut": "\\(\\text{Percentage Error} \\approx 7.41\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3598,26 +4090,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$216.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
-    "a": "\\(240.00\\)",
+    "question": "A software licensing representative earns a commission rate of \\( 5\\% \\) on the first \\( 20000 \\) dollars of contract sales, and \\( 8\\% \\) on any sales exceeding that amount. If they close a contract of \\( 45000 \\) dollars, find the total commission earned.",
+    "a": "\\(3000.00\\)",
     "opts": [
-      "\\(216.00\\)",
-      "\\(264.00\\)",
-      "\\(240.00\\)",
-      "\\(252.00\\)"
+      "\\(2700.00\\)",
+      "\\(3600.00\\)",
+      "\\(2250.00\\)",
+      "\\(3000.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{216.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate the commission on the first bracket of 20,000 dollars.",
+        "workingOut": "\\(C_1 = 20000 \\times 0.05 = 1000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{216.00}{1 - 0.10} = \\frac{216.00}{0.90}\\)"
+        "explanation": "Calculate the commission on the sales value exceeding 20,000 dollars.",
+        "workingOut": "\\(C_2 = (45000 - 20000) \\times 0.08 = 25000 \\times 0.08 = 2000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{240.00 dollars}\\)"
+        "explanation": "Sum the commission from both brackets.",
+        "workingOut": "\\(C_{\\text{total}} = 1000.00 + 2000.00 = 3000.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3627,26 +4122,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$423\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
-    "a": "\\(404.30\\)",
+    "question": "A commercial real estate agent earns \\( 2.5\\% \\) commission on the first \\( 100000 \\) dollars of property lease value, and \\( 4.0\\% \\) on lease value above that. Determine the commission on a lease worth \\( 280000 \\) dollars.",
+    "a": "\\(9700.00\\)",
     "opts": [
-      "\\(424.52\\)",
-      "\\(404.30\\)",
-      "\\(444.73\\)",
-      "\\(363.87\\)"
+      "\\(9215.00\\)",
+      "\\(11200.00\\)",
+      "\\(7000.00\\)",
+      "\\(9700.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{423 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{423 dollars} \\times 1.18 = \\text{499.14 dollars}\\)"
+        "explanation": "Calculate the commission for the first 100,000 dollars.",
+        "workingOut": "\\(C_1 = 100000 \\times 0.025 = 2500.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{499.14 dollars} \\times 0.81\\)"
+        "explanation": "Calculate the commission on the remaining property lease value.",
+        "workingOut": "\\(C_2 = (280000 - 100000) \\times 0.04 = 180000 \\times 0.04 = 7200.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{404.30 dollars}\\)"
+        "explanation": "Find the total commission amount.",
+        "workingOut": "\\(C_{\\text{total}} = 2500.00 + 7200.00 = 9700.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3656,26 +4154,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 88 \\) out of \\( 1102 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(7.99\\%\\)",
+    "question": "An art broker charges a commission of \\( 6\\% \\) on the first \\( 5000 \\) dollars of a painting's sale price, and \\( 10\\% \\) on the remainder. Find the commission on a painting sold for \\( 18500 \\) dollars.",
+    "a": "\\(1650.00\\)",
     "opts": [
-      "\\(8.789%\\)",
-      "\\(7.990%\\)",
-      "\\(7.191%\\)",
-      "\\(8.389%\\)"
+      "\\(1650.00\\)",
+      "\\(1485.00\\)",
+      "\\(1850.00\\)",
+      "\\(1110.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{88}{1102}\\)"
+        "explanation": "Calculate the commission on the first 5,000 dollars.",
+        "workingOut": "\\(C_1 = 5000 \\times 0.06 = 300.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{88}{1102} \\times 100\\%\\)"
+        "explanation": "Calculate the commission on the sale price exceeding 5,000 dollars.",
+        "workingOut": "\\(C_2 = (18500 - 5000) \\times 0.10 = 13500 \\times 0.10 = 1350.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 7.99\\%\\)"
+        "explanation": "Sum the commissions.",
+        "workingOut": "\\(C_{\\text{total}} = 300.00 + 1350.00 = 1650.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3685,26 +4186,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 1231 \\) dollars for testing. If \\( 9\\% \\) of this budget is assigned to the electric scooter division, and \\( 9\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(9.97\\)",
+    "question": "A solar panel installation consultant earns a flat rate commission of \\( 4\\% \\) on monthly sales up to \\( 12000 \\) dollars, and \\( 7\\% \\) on any sales above that. If their monthly sales total \\( 28000 \\) dollars, find the commission.",
+    "a": "\\(1600.00\\)",
     "opts": [
-      "\\(8.97\\)",
-      "\\(9.97\\)",
-      "\\(10.97\\)",
-      "\\(10.47\\)"
+      "\\(1520.00\\)",
+      "\\(1960.00\\)",
+      "\\(1120.00\\)",
+      "\\(1600.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 1231 \\times \\frac{9}{100} = 1231 \\times 0.09 = 110.79\\)"
+        "explanation": "Calculate the commission for the sales up to 12,000 dollars.",
+        "workingOut": "\\(C_1 = 12000 \\times 0.04 = 480.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{9}{100} = 110.79 \\times 0.09\\)"
+        "explanation": "Calculate the commission on sales exceeding the threshold.",
+        "workingOut": "\\(C_2 = (28000 - 12000) \\times 0.07 = 16000 \\times 0.07 = 1120.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 9.97\\)"
+        "explanation": "Determine the total commission.",
+        "workingOut": "\\(C_{\\text{total}} = 480.00 + 1120.00 = 1600.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3714,26 +4218,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 598 \\) units to \\( 726 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(21.40\\%\\)",
+    "question": "A corporate travel consultant charges a booking commission of \\( 3.5\\% \\) on total tickets up to \\( 30000 \\) dollars, and \\( 5\\% \\) on ticket value above that. Determine the commission on tickets worth \\( 85000 \\) dollars.",
+    "a": "\\(3800.00\\)",
     "opts": [
-      "\\(21.400%\\)",
-      "\\(23.540%\\)",
-      "\\(19.260%\\)",
-      "\\(22.470%\\)"
+      "\\(3610.00\\)",
+      "\\(3800.00\\)",
+      "\\(2975.00\\)",
+      "\\(4250.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 726 - 598 = 128\\)"
+        "explanation": "Calculate the commission for the first 30,000 dollars.",
+        "workingOut": "\\(C_1 = 30000 \\times 0.035 = 1050.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{128}{598} \\times 100\\%\\)"
+        "explanation": "Calculate the commission on remaining ticket values.",
+        "workingOut": "\\(C_2 = (85000 - 30000) \\times 0.05 = 55000 \\times 0.05 = 2750.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 21.40\\%\\)"
+        "explanation": "Determine the total commission.",
+        "workingOut": "\\(C_{\\text{total}} = 1050.00 + 2750.00 = 3800.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3743,26 +4250,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$274.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
-    "a": "\\(305.00\\)",
+    "question": "A specialty retail shop sells high-end carbon bicycles for a final shelf price of \\( 3105 \\) dollars. This price reflects a \\( 15\\% \\) distributor markup followed by a \\( 35\\% \\) retail markup. Find the original wholesale cost of the bicycle.",
+    "a": "\\(2000.00\\)",
     "opts": [
-      "\\(305.00\\)",
-      "\\(335.50\\)",
-      "\\(274.50\\)",
-      "\\(320.25\\)"
+      "\\(2141.38\\)",
+      "\\(1552.50\\)",
+      "\\(2000.00\\)",
+      "\\(2070.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{274.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Write the equation expressing the final price in terms of the wholesale cost P.",
+        "workingOut": "\\(P \\times 1.15 \\times 1.35 = 3105\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{274.50}{1 - 0.10} = \\frac{274.50}{0.90}\\)"
+        "explanation": "Combine the markup multiplier factors.",
+        "workingOut": "\\(P \\times 1.5525 = 3105\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{305.00 dollars}\\)"
+        "explanation": "Solve for the original wholesale cost P by dividing the final price by the combined multiplier.",
+        "workingOut": "\\(P = \\frac{3105}{1.5525} = 2000.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3772,26 +4282,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$538\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
-    "a": "\\(543.81\\)",
+    "question": "A custom medical scanner has a final delivery price of \\( 194400 \\) dollars. This price includes a \\( 8\\% \\) manufacturer markup followed by a \\( 25\\% \\) dealership markup. Determine the factory production cost of the scanner.",
+    "a": "\\(144000.00\\)",
     "opts": [
-      "\\(598.19\\)",
-      "\\(571.00\\)",
-      "\\(489.43\\)",
-      "\\(543.81\\)"
+      "\\(136080.00\\)",
+      "\\(146165.41\\)",
+      "\\(144000.00\\)",
+      "\\(144000.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{538 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{538 dollars} \\times 1.33 = \\text{715.54 dollars}\\)"
+        "explanation": "Write the equation expressing the delivery price.",
+        "workingOut": "\\(C \\times 1.08 \\times 1.25 = 194400\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{715.54 dollars} \\times 0.76\\)"
+        "explanation": "Combine the manufacturer and dealer markup factors.",
+        "workingOut": "\\(C \\times 1.35 = 194400\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{543.81 dollars}\\)"
+        "explanation": "Solve for the factory production cost C.",
+        "workingOut": "\\(C = \\frac{194400}{1.35} = 144000.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3801,26 +4314,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 183 \\) out of \\( 1257 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(14.56\\%\\)",
+    "question": "A premium organic honey jar is retailed at \\( 27.60 \\) dollars. The distributor marked up the apiary price by \\( 20\\% \\), and the supermarket marked it up by a further \\( 15\\% \\). Find the apiary price.",
+    "a": "\\(20.00\\)",
     "opts": [
-      "\\(15.288%\\)",
-      "\\(16.016%\\)",
-      "\\(13.104%\\)",
-      "\\(14.560%\\)"
+      "\\(19.87\\)",
+      "\\(20.00\\)",
+      "\\(20.44\\)",
+      "\\(20.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{183}{1257}\\)"
+        "explanation": "Express the apiary price P as an equation.",
+        "workingOut": "\\(P \\times 1.20 \\times 1.15 = 27.60\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{183}{1257} \\times 100\\%\\)"
+        "explanation": "Combine the markups into a single factor.",
+        "workingOut": "\\(P \\times 1.38 = 27.60\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 14.56\\%\\)"
+        "explanation": "Solve for the apiary price P.",
+        "workingOut": "\\(P = \\frac{27.60}{1.38} = 20.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3830,26 +4346,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 1816 \\) dollars for testing. If \\( 14\\% \\) of this budget is assigned to the graphics card division, and \\( 24\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(61.02\\)",
+    "question": "A construction steel beam has a retail price of \\( 462.00 \\) dollars. This incorporates a \\( 10\\% \\) processing markup and a subsequent \\( 40\\% \\) retail markup. Find the wholesale price.",
+    "a": "\\(300.00\\)",
     "opts": [
-      "\\(67.12\\)",
-      "\\(54.92\\)",
-      "\\(61.02\\)",
-      "\\(64.07\\)"
+      "\\(308.00\\)",
+      "\\(300.00\\)",
+      "\\(300.30\\)",
+      "\\(300.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 1816 \\times \\frac{14}{100} = 1816 \\times 0.14 = 254.24\\)"
+        "explanation": "Set up the equation for the wholesale price W.",
+        "workingOut": "\\(W \\times 1.10 \\times 1.40 = 462.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{24}{100} = 254.24 \\times 0.24\\)"
+        "explanation": "Combine the markup multipliers.",
+        "workingOut": "\\(W \\times 1.54 = 462.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 61.02\\)"
+        "explanation": "Solve for the wholesale price W.",
+        "workingOut": "\\(W = \\frac{462.00}{1.54} = 300.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3859,26 +4378,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 283 \\) units to \\( 871 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(207.77\\%\\)",
+    "question": "A designer handbag has a final retail price of \\( 1296.00 \\) dollars. This incorporates a \\( 20\\% \\) importing markup and a subsequent \\( 80\\% \\) boutique markup. Find the original manufacturing cost.",
+    "a": "\\(600.00\\)",
     "opts": [
-      "\\(207.770%\\)",
-      "\\(228.547%\\)",
-      "\\(186.993%\\)",
-      "\\(218.159%\\)"
+      "\\(600.00\\)",
+      "\\(583.20\\)",
+      "\\(648.00\\)",
+      "\\(600.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 871 - 283 = 588\\)"
+        "explanation": "Set up the equation for manufacturing cost C.",
+        "workingOut": "\\(C \\times 1.20 \\times 1.80 = 1296.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{588}{283} \\times 100\\%\\)"
+        "explanation": "Combine the markup multipliers.",
+        "workingOut": "\\(C \\times 2.16 = 1296.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 207.77\\%\\)"
+        "explanation": "Solve for manufacturing cost C.",
+        "workingOut": "\\(C = \\frac{1296.00}{2.16} = 600.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3888,26 +4410,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$333.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
-    "a": "\\(370.00\\)",
+    "question": "Farmer A produces \\( 360 \\) tonnes of organic grain from \\( 120 \\) hectares. Farmer B produces \\( 450 \\) tonnes of organic grain from \\( 180 \\) hectares. By what percentage does Farmer A's yield per hectare exceed Farmer B's yield per hectare?",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(370.00\\)",
-      "\\(388.50\\)",
-      "\\(407.00\\)",
-      "\\(333.00\\)"
+      "\\(22.00\\%\\)",
+      "\\(15.00\\%\\)",
+      "\\(20.00\\%\\)",
+      "\\(18.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{333.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate Farmer A's yield per hectare.",
+        "workingOut": "\\(Y_A = \\frac{360}{120} = 3.00 \\text{ tonnes/ha}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{333.00}{1 - 0.10} = \\frac{333.00}{0.90}\\)"
+        "explanation": "Calculate Farmer B's yield per hectare.",
+        "workingOut": "\\(Y_B = \\frac{450}{180} = 2.50 \\text{ tonnes/ha}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{370.00 dollars}\\)"
+        "explanation": "Find the percentage by which Farmer A's yield exceeds Farmer B's.",
+        "workingOut": "\\(P = \\frac{3.00 - 2.50}{2.50} \\times 100\\% = \\frac{0.50}{2.50} \\times 100\\% = 20.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3917,26 +4442,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$653\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
-    "a": "\\(547.08\\)",
+    "question": "Solar Array A generates \\( 5400 \\) kWh of electricity from \\( 30 \\) panels. Solar Array B generates \\( 6300 \\) kWh of electricity from \\( 42 \\) panels. Find the percentage by which the efficiency (kWh per panel) of Solar Array A exceeds Solar Array B.",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(492.37\\)",
-      "\\(601.79\\)",
-      "\\(547.08\\)",
-      "\\(574.43\\)"
+      "\\(20.00\\%\\)",
+      "\\(22.50\\%\\)",
+      "\\(18.00\\%\\)",
+      "\\(15.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{653 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{653 dollars} \\times 1.18 = \\text{770.54 dollars}\\)"
+        "explanation": "Calculate efficiency of Solar Array A.",
+        "workingOut": "\\(E_A = \\frac{5400}{30} = 180.00 \\text{ kWh/panel}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{770.54 dollars} \\times 0.71\\)"
+        "explanation": "Calculate efficiency of Solar Array B.",
+        "workingOut": "\\(E_B = \\frac{6300}{42} = 150.00 \\text{ kWh/panel}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{547.08 dollars}\\)"
+        "explanation": "Calculate the percentage efficiency excess.",
+        "workingOut": "\\(P = \\frac{180.00 - 150.00}{150.00} \\times 100\\% = 20.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3946,26 +4474,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 128 \\) out of \\( 612 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(20.92\\%\\)",
+    "question": "Mining Site A extracts \\( 960 \\) kg of gold ore from \\( 80 \\) tons of rock. Mining Site B extracts \\( 1440 \\) kg of gold ore from \\( 150 \\) tons of rock. By what percentage does Site A's concentration (kg per ton) exceed Site B's concentration?",
+    "a": "\\(25.00\\%\\)",
     "opts": [
-      "\\(21.966%\\)",
-      "\\(18.828%\\)",
-      "\\(23.012%\\)",
-      "\\(20.920%\\)"
+      "\\(26.50\\%\\)",
+      "\\(22.50\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(24.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{128}{612}\\)"
+        "explanation": "Calculate Site A's concentration.",
+        "workingOut": "\\(C_A = \\frac{960}{80} = 12.00 \\text{ kg/ton}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{128}{612} \\times 100\\%\\)"
+        "explanation": "Calculate Site B's concentration.",
+        "workingOut": "\\(C_B = \\frac{1440}{150} = 9.60 \\text{ kg/ton}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 20.92\\%\\)"
+        "explanation": "Find the percentage excess.",
+        "workingOut": "\\(P = \\frac{12.00 - 9.60}{9.60} \\times 100\\% = 25.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -3975,26 +4506,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 2401 \\) dollars for testing. If \\( 19\\% \\) of this budget is assigned to the leather briefcase division, and \\( 14\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(63.87\\)",
+    "question": "Bacterial Culture A produces \\( 1200 \\) enzyme units in \\( 24 \\) hours. Bacterial Culture B produces \\( 1800 \\) enzyme units in \\( 45 \\) hours. Calculate the percentage by which Culture A's hourly rate exceeds Culture B's.",
+    "a": "\\(25.00\\%\\)",
     "opts": [
-      "\\(67.06\\)",
-      "\\(57.48\\)",
-      "\\(70.26\\)",
-      "\\(63.87\\)"
+      "\\(26.50\\%\\)",
+      "\\(24.00\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(22.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 2401 \\times \\frac{19}{100} = 2401 \\times 0.19 = 456.19\\)"
+        "explanation": "Find hourly rate of Culture A.",
+        "workingOut": "\\(R_A = \\frac{1200}{24} = 50.00 \\text{ units/hour}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{14}{100} = 456.19 \\times 0.14\\)"
+        "explanation": "Find hourly rate of Culture B.",
+        "workingOut": "\\(R_B = \\frac{1800}{45} = 40.00 \\text{ units/hour}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 63.87\\)"
+        "explanation": "Calculate the percentage excess of rate A over rate B.",
+        "workingOut": "\\(P = \\frac{50.00 - 40.00}{40.00} \\times 100\\% = 25.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4004,26 +4538,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 368 \\) units to \\( 516 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(40.22\\%\\)",
+    "question": "Data Center A transfers \\( 7500 \\) Terabytes of data using \\( 50 \\) fiber links. Data Center B transfers \\( 9000 \\) Terabytes using \\( 75 \\) fiber links. Find the percentage by which the link density of Center A exceeds Center B.",
+    "a": "\\(25.00\\%\\)",
     "opts": [
-      "\\(44.242%\\)",
-      "\\(36.198%\\)",
-      "\\(40.220%\\)",
-      "\\(42.231%\\)"
+      "\\(22.50\\%\\)",
+      "\\(24.00\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(26.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 516 - 368 = 148\\)"
+        "explanation": "Compute data transfer density of Center A.",
+        "workingOut": "\\(D_A = \\frac{7500}{50} = 150.00 \\text{ TB/link}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{148}{368} \\times 100\\%\\)"
+        "explanation": "Compute data transfer density of Center B.",
+        "workingOut": "\\(D_B = \\frac{9000}{75} = 120.00 \\text{ TB/link}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 40.22\\%\\)"
+        "explanation": "Calculate the percentage excess.",
+        "workingOut": "\\(P = \\frac{150.00 - 120.00}{120.00} \\times 100\\% = 25.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4033,26 +4570,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$391.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
-    "a": "\\(435.00\\)",
+    "question": "Batch A of \\( 600 \\) microchips has a defect rate of \\( 4\\% \\). Batch B of \\( 400 \\) microchips has a defect rate of \\( 9\\% \\). Find the overall defect rate of the combined microchip batches.",
+    "a": "\\(6.00\\%\\)",
     "opts": [
-      "\\(435.00\\)",
-      "\\(478.50\\)",
-      "\\(391.50\\)",
-      "\\(456.75\\)"
+      "\\(6.20\\%\\)",
+      "\\(6.50\\%\\)",
+      "\\(6.00\\%\\)",
+      "\\(5.80\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{391.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Find the number of defective microchips in Batch A.",
+        "workingOut": "\\(D_A = 600 \\times 0.04 = 24.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{391.50}{1 - 0.10} = \\frac{391.50}{0.90}\\)"
+        "explanation": "Find the number of defective microchips in Batch B.",
+        "workingOut": "\\(D_B = 400 \\times 0.09 = 36.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{435.00 dollars}\\)"
+        "explanation": "Calculate the total defects and divide by the total count (1000) to find the overall percentage.",
+        "workingOut": "\\(P = \\frac{24.00 + 36.00}{1000} \\times 100\\% = \\frac{60.00}{1000} \\times 100\\% = 6.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4062,26 +4602,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$168\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
-    "a": "\\(192.16\\)",
+    "question": "A factory produces custom steel bolts. Box A contains \\( 1200 \\) bolts with \\( 1.5\\% \\) defective bolts. Box B contains \\( 800 \\) bolts with \\( 4.0\\% \\) defective bolts. Calculate the overall percentage of defective bolts when combined.",
+    "a": "\\(2.50\\%\\)",
     "opts": [
-      "\\(192.16\\)",
-      "\\(172.94\\)",
-      "\\(211.38\\)",
-      "\\(201.77\\)"
+      "\\(2.20\\%\\)",
+      "\\(2.80\\%\\)",
+      "\\(2.50\\%\\)",
+      "\\(2.75\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{168 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{168 dollars} \\times 1.33 = \\text{223.44 dollars}\\)"
+        "explanation": "Determine defective count in Box A.",
+        "workingOut": "\\(D_A = 1200 \\times 0.015 = 18.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{223.44 dollars} \\times 0.86\\)"
+        "explanation": "Determine defective count in Box B.",
+        "workingOut": "\\(D_B = 800 \\times 0.04 = 32.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{192.16 dollars}\\)"
+        "explanation": "Calculate the combined percentage of defective bolts.",
+        "workingOut": "\\(P = \\frac{18.00 + 32.00}{2000} \\times 100\\% = \\frac{50.00}{2000} \\times 100\\% = 2.50\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4091,26 +4634,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 73 \\) out of \\( 767 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(9.52\\%\\)",
+    "question": "An agricultural depot mixes two grain storage bins. Bin A holds \\( 3000 \\) kg of grain with \\( 2.5\\% \\) moisture content. Bin B holds \\( 2000 \\) kg of grain with \\( 6.0\\% \\) moisture content. Find the moisture percentage of the mixture.",
+    "a": "\\(3.90\\%\\)",
     "opts": [
-      "\\(8.568%\\)",
-      "\\(10.472%\\)",
-      "\\(9.520%\\)",
-      "\\(9.996%\\)"
+      "\\(4.25\\%\\)",
+      "\\(4.10\\%\\)",
+      "\\(3.90\\%\\)",
+      "\\(3.90\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{73}{767}\\)"
+        "explanation": "Calculate the total weight of moisture in Bin A.",
+        "workingOut": "\\(M_A = 3000 \\times 0.025 = 75.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{73}{767} \\times 100\\%\\)"
+        "explanation": "Calculate the total weight of moisture in Bin B.",
+        "workingOut": "\\(M_B = 2000 \\times 0.06 = 120.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 9.52\\%\\)"
+        "explanation": "Determine the combined moisture percentage.",
+        "workingOut": "\\(P = \\frac{75.00 + 120.00}{5000} \\times 100\\% = \\frac{195.00}{5000} \\times 100\\% = 3.90\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4120,26 +4666,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 2986 \\) dollars for testing. If \\( 24\\% \\) of this budget is assigned to the camping tent division, and \\( 29\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(207.83\\)",
+    "question": "A warehouse receives two deliveries of light bulbs. Delivery A contains \\( 1500 \\) bulbs with a defect rate of \\( 2.0\\% \\). Delivery B contains \\( 1000 \\) bulbs with a defect rate of \\( 4.5\\% \\). Compute the combined defect rate.",
+    "a": "\\(3.00\\%\\)",
     "opts": [
-      "\\(207.83\\)",
-      "\\(218.22\\)",
-      "\\(228.61\\)",
-      "\\(187.05\\)"
+      "\\(2.80\\%\\)",
+      "\\(3.25\\%\\)",
+      "\\(3.10\\%\\)",
+      "\\(3.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 2986 \\times \\frac{24}{100} = 2986 \\times 0.24 = 716.64\\)"
+        "explanation": "Determine defective count in Delivery A.",
+        "workingOut": "\\(D_A = 1500 \\times 0.02 = 30.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{29}{100} = 716.64 \\times 0.29\\)"
+        "explanation": "Determine defective count in Delivery B.",
+        "workingOut": "\\(D_B = 1000 \\times 0.045 = 45.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 207.83\\)"
+        "explanation": "Determine overall defect rate.",
+        "workingOut": "\\(P = \\frac{30.00 + 45.00}{2500} \\times 100\\% = \\frac{75.00}{2500} \\times 100\\% = 3.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4149,26 +4698,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 453 \\) units to \\( 661 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(45.92\\%\\)",
+    "question": "A computer lab merges two student laptop batches. Batch 1 has \\( 80 \\) laptops with \\( 5.0\\% \\) battery failures. Batch 2 has \\( 120 \\) laptops with \\( 10.0\\% \\) battery failures. Find the overall battery failure percentage.",
+    "a": "\\(8.00\\%\\)",
     "opts": [
-      "\\(45.920%\\)",
-      "\\(50.512%\\)",
-      "\\(41.328%\\)",
-      "\\(48.216%\\)"
+      "\\(7.50\\%\\)",
+      "\\(8.00\\%\\)",
+      "\\(7.80\\%\\)",
+      "\\(8.20\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 661 - 453 = 208\\)"
+        "explanation": "Find defective laptops in Batch 1.",
+        "workingOut": "\\(D_1 = 80 \\times 0.05 = 4.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{208}{453} \\times 100\\%\\)"
+        "explanation": "Find defective laptops in Batch 2.",
+        "workingOut": "\\(D_2 = 120 \\times 0.10 = 12.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 45.92\\%\\)"
+        "explanation": "Compute the combined percentage of defective laptops.",
+        "workingOut": "\\(P = \\frac{4.00 + 12.00}{200} \\times 100\\% = \\frac{16.00}{200} \\times 100\\% = 8.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4178,26 +4730,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$450.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
-    "a": "\\(500.00\\)",
+    "question": "Due to high inflation, consumer prices increase by \\( 25\\% \\) over a five-year period. By what percentage does the purchasing power of a fixed savings sum contract over this period?",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(450.00\\)",
-      "\\(550.00\\)",
-      "\\(525.00\\)",
-      "\\(500.00\\)"
+      "\\(15.00\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(20.00\\%\\)",
+      "\\(20.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{450.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Model the initial purchasing power and the price level increase.",
+        "workingOut": "\\(\\text{Price Multiplier} = 1.25\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{450.00}{1 - 0.10} = \\frac{450.00}{0.90}\\)"
+        "explanation": "Calculate the new purchasing power of a unit of savings.",
+        "workingOut": "\\(\\text{New Purchasing Power} = \\frac{1.00}{1.25} = 0.80\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{500.00 dollars}\\)"
+        "explanation": "Calculate the percentage reduction in purchasing power.",
+        "workingOut": "\\(\\text{Contraction} = (1.00 - 0.80) \\times 100\\% = 20.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4207,26 +4762,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$283\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
-    "a": "\\(270.49\\)",
+    "question": "An index rate adjustment increases rent costs in a logistics park by \\( 60\\% \\) over three years. By what percentage does the space efficiency (area rentable per dollar spent) decrease?",
+    "a": "\\(37.50\\%\\)",
     "opts": [
-      "\\(270.49\\)",
-      "\\(297.54\\)",
-      "\\(243.44\\)",
-      "\\(284.01\\)"
+      "\\(37.50\\%\\)",
+      "\\(37.50\\%\\)",
+      "\\(60.00\\%\\)",
+      "\\(40.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{283 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{283 dollars} \\times 1.18 = \\text{333.94 dollars}\\)"
+        "explanation": "Identify the price multiplier.",
+        "workingOut": "\\(\\text{Price Multiplier} = 1.60\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{333.94 dollars} \\times 0.81\\)"
+        "explanation": "Calculate the new space efficiency value.",
+        "workingOut": "\\(\\text{New Efficiency} = \\frac{1.00}{1.60} = 0.625\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{270.49 dollars}\\)"
+        "explanation": "Calculate the percentage efficiency decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1.00 - 0.625) \\times 100\\% = 37.50\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4236,26 +4794,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 168 \\) out of \\( 922 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(18.22\\%\\)",
+    "question": "Local utility energy tariffs spike by \\( 100\\% \\) due to resource scarcity. By what percentage does the electricity purchasing power of a fixed monthly budget drop?",
+    "a": "\\(50.00\\%\\)",
     "opts": [
-      "\\(19.131%\\)",
-      "\\(16.398%\\)",
-      "\\(20.042%\\)",
-      "\\(18.220%\\)"
+      "\\(50.00\\%\\)",
+      "\\(75.00\\%\\)",
+      "\\(100.00\\%\\)",
+      "\\(50.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{168}{922}\\)"
+        "explanation": "Identify the energy tariff multiplier.",
+        "workingOut": "\\(\\text{Tariff Multiplier} = 2.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{168}{922} \\times 100\\%\\)"
+        "explanation": "Calculate the new quantity purchasable per dollar.",
+        "workingOut": "\\(\\text{New Quantity} = \\frac{1.00}{2.00} = 0.50\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 18.22\\%\\)"
+        "explanation": "Calculate the percentage drop in purchasing power.",
+        "workingOut": "\\(\\text{Drop} = (1.00 - 0.50) \\times 100\\% = 50.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4265,26 +4826,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 3571 \\) dollars for testing. If \\( 29\\% \\) of this budget is assigned to the electric scooter division, and \\( 19\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(196.76\\)",
+    "question": "If the cost of building materials increases by \\( 33.33\\% \\) due to concrete shortages, find the percentage contraction in the volume of concrete that can be purchased for a fixed budget.",
+    "a": "\\(25.00\\%\\)",
     "opts": [
-      "\\(206.60\\)",
-      "\\(177.08\\)",
-      "\\(216.44\\)",
-      "\\(196.76\\)"
+      "\\(33.33\\%\\)",
+      "\\(20.00\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(25.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 3571 \\times \\frac{29}{100} = 3571 \\times 0.29 = 1035.59\\)"
+        "explanation": "Determine the cost multiplier.",
+        "workingOut": "\\(\\text{Cost Multiplier} = 1.3333\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{19}{100} = 1035.59 \\times 0.19\\)"
+        "explanation": "Calculate the new volume coefficient.",
+        "workingOut": "\\(\\text{New Volume Coefficient} = \\frac{1.00}{1.3333} \\approx 0.75\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 196.76\\)"
+        "explanation": "Calculate the percentage contraction.",
+        "workingOut": "\\(\\text{Contraction} = (1.00 - 0.75) \\times 100\\% = 25.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4294,26 +4858,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 538 \\) units to \\( 806 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(49.81\\%\\)",
+    "question": "A software developer license cost spikes by \\( 25\\% \\). Find the percentage decrease in the number of seats that can be acquired under a fixed corporate IT budget.",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(54.791%\\)",
-      "\\(49.810%\\)",
-      "\\(52.301%\\)",
-      "\\(44.829%\\)"
+      "\\(20.00\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(15.00\\%\\)",
+      "\\(20.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 806 - 538 = 268\\)"
+        "explanation": "Identify the license cost multiplier.",
+        "workingOut": "\\(\\text{License Multiplier} = 1.25\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{268}{538} \\times 100\\%\\)"
+        "explanation": "Calculate the new seat acquisition capacity.",
+        "workingOut": "\\(\\text{New Capacity} = \\frac{1.00}{1.25} = 0.80\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 49.81\\%\\)"
+        "explanation": "Determine the percentage decrease.",
+        "workingOut": "\\(\\text{Decrease} = (1.00 - 0.80) \\times 100\\% = 20.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4323,26 +4890,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$148.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
-    "a": "\\(165.00\\)",
+    "question": "A surplus distributor sells \\( 60\\% \\) of inventory stock at a markup of \\( 30\\% \\), and clearances the remaining \\( 40\\% \\) of stock at a discount of \\( 20\\% \\). Find the net percentage profit or loss.",
+    "a": "\\(10.00\\%\\)",
     "opts": [
-      "\\(165.00\\)",
-      "\\(181.50\\)",
-      "\\(173.25\\)",
-      "\\(148.50\\)"
+      "\\(10.00\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(12.00\\%\\)",
+      "\\(8.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{148.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate the revenue factor from the first 60% of inventory sold at 30% markup.",
+        "workingOut": "\\(R_1 = 0.60 \\times 1.30 = 0.78\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{148.50}{1 - 0.10} = \\frac{148.50}{0.90}\\)"
+        "explanation": "Calculate the revenue factor from the remaining 40% of inventory sold at 20% discount.",
+        "workingOut": "\\(R_2 = 0.40 \\times 0.80 = 0.32\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{165.00 dollars}\\)"
+        "explanation": "Determine the total net revenue and subtract 1.00 to find the percentage profit.",
+        "workingOut": "\\(\\text{Net} = (0.78 + 0.32 - 1.00) \\times 100\\% = (1.10 - 1.00) \\times 100\\% = 10.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4352,26 +4922,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$398\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
-    "a": "\\(402.30\\)",
+    "question": "A luxury showroom sells \\( 70\\% \\) of display vehicles at a markup of \\( 15\\% \\), and clearances the remaining \\( 30\\% \\) at a discount of \\( 10\\% \\). Find the net percentage profit on total displays.",
+    "a": "\\(7.50\\%\\)",
     "opts": [
-      "\\(442.53\\)",
-      "\\(362.07\\)",
-      "\\(422.42\\)",
-      "\\(402.30\\)"
+      "\\(8.00\\%\\)",
+      "\\(6.50\\%\\)",
+      "\\(7.50\\%\\)",
+      "\\(7.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{398 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{398 dollars} \\times 1.33 = \\text{529.34 dollars}\\)"
+        "explanation": "Calculate the revenue factor for the 70% portion.",
+        "workingOut": "\\(R_1 = 0.70 \\times 1.15 = 0.805\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{529.34 dollars} \\times 0.76\\)"
+        "explanation": "Calculate the revenue factor for the remaining 30% portion.",
+        "workingOut": "\\(R_2 = 0.30 \\times 0.90 = 0.270\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{402.30 dollars}\\)"
+        "explanation": "Sum the portions and evaluate the net percentage profit.",
+        "workingOut": "\\(\\text{Net} = (0.805 + 0.270 - 1.00) \\times 100\\% = 7.50\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4381,26 +4954,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 113 \\) out of \\( 1077 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(10.49\\%\\)",
+    "question": "An electronics retailer liquidation scheme sells \\( 40\\% \\) of items at a markup of \\( 50\\% \\), but discounts the remaining \\( 60\\% \\) of stock by \\( 30\\% \\). Determine the net percentage profit or loss.",
+    "a": "\\(2.00\\%\\)",
     "opts": [
-      "\\(10.490%\\)",
-      "\\(11.014%\\)",
-      "\\(11.539%\\)",
-      "\\(9.441%\\)"
+      "\\(2.00\\%\\)",
+      "\\(2.00\\%\\)",
+      "\\(1.50\\%\\)",
+      "\\(-2.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{113}{1077}\\)"
+        "explanation": "Calculate the revenue factor for the 40% marked-up portion.",
+        "workingOut": "\\(R_1 = 0.40 \\times 1.50 = 0.60\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{113}{1077} \\times 100\\%\\)"
+        "explanation": "Calculate the revenue factor for the 60% discounted portion.",
+        "workingOut": "\\(R_2 = 0.60 \\times 0.70 = 0.42\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 10.49\\%\\)"
+        "explanation": "Sum the revenues and subtract 1.00 to evaluate the net profit.",
+        "workingOut": "\\(\\text{Net} = (0.60 + 0.42 - 1.00) \\times 100\\% = 2.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4410,26 +4986,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 4156 \\) dollars for testing. If \\( 34\\% \\) of this budget is assigned to the graphics card division, and \\( 9\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(127.17\\)",
+    "question": "A commercial developer leases out \\( 80\\% \\) of units at a markup of \\( 20\\% \\), but leases the final \\( 20\\% \\) of units at a discount of \\( 15\\% \\). Find the net percentage profit.",
+    "a": "\\(13.00\\%\\)",
     "opts": [
-      "\\(127.17\\)",
-      "\\(139.89\\)",
-      "\\(114.45\\)",
-      "\\(133.53\\)"
+      "\\(11.00\\%\\)",
+      "\\(12.50\\%\\)",
+      "\\(13.00\\%\\)",
+      "\\(13.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 4156 \\times \\frac{34}{100} = 4156 \\times 0.34 = 1413.04\\)"
+        "explanation": "Calculate the leasing revenue factor for the 80% portion.",
+        "workingOut": "\\(R_1 = 0.80 \\times 1.20 = 0.96\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{9}{100} = 1413.04 \\times 0.09\\)"
+        "explanation": "Calculate the leasing revenue factor for the 20% portion.",
+        "workingOut": "\\(R_2 = 0.20 \\times 0.85 = 0.17\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 127.17\\)"
+        "explanation": "Find the net percentage profit.",
+        "workingOut": "\\(\\text{Net} = (0.96 + 0.17 - 1.00) \\times 100\\% = 13.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4439,26 +5018,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 623 \\) units to \\( 451 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(-27.61\\%\\)",
+    "question": "A clothing store clearance sells \\( 55\\% \\) of seasonal inventory at a markup of \\( 40\\% \\), and clearances the remaining \\( 45\\% \\) at a discount of \\( 50\\% \\). Determine the net percentage profit or loss.",
+    "a": "\\(-0.50\\%\\)",
     "opts": [
-      "\\(-26.610%\\)",
-      "\\(-27.610%\\)",
-      "\\(-24.610%\\)",
-      "\\(-25.610%\\)"
+      "\\(-1.50\\%\\)",
+      "\\(-0.50\\%\\)",
+      "\\(2.00\\%\\)",
+      "\\(-0.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 451 - 623 = -172\\)"
+        "explanation": "Calculate the revenue factor for the 55% portion.",
+        "workingOut": "\\(R_1 = 0.55 \\times 1.40 = 0.77\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{-172}{623} \\times 100\\%\\)"
+        "explanation": "Calculate the revenue factor for the 45% portion.",
+        "workingOut": "\\(R_2 = 0.45 \\times 0.50 = 0.225\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx -27.61\\%\\)"
+        "explanation": "Evaluate the net percentage profit or loss.",
+        "workingOut": "\\(\\text{Net} = (0.77 + 0.225 - 1.00) \\times 100\\% = -0.50\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4468,26 +5050,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$207.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
-    "a": "\\(230.00\\)",
+    "question": "An automated upgrading scheme reduces factory energy consumption from \\( 450 \\) kWh to \\( 342 \\) kWh. Find the percentage savings in energy consumption.",
+    "a": "\\(24.00\\%\\)",
     "opts": [
-      "\\(253.00\\)",
-      "\\(230.00\\)",
-      "\\(241.50\\)",
-      "\\(207.00\\)"
+      "\\(22.50\\%\\)",
+      "\\(24.00\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(24.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{207.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate the absolute reduction in energy consumption.",
+        "workingOut": "\\(\\text{Reduction} = 450 - 342 = 108\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{207.00}{1 - 0.10} = \\frac{207.00}{0.90}\\)"
+        "explanation": "Divide the absolute reduction by the original consumption to find the savings percentage.",
+        "workingOut": "\\(\\text{Percentage Savings} = \\frac{108}{450} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{230.00 dollars}\\)"
+        "explanation": "Evaluate the percentage savings.",
+        "workingOut": "\\(\\text{Percentage Savings} = 24.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4497,26 +5082,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$513\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
-    "a": "\\(429.79\\)",
+    "question": "A cryptocurrency mining farm installs new ASIC miners, decreasing power consumption from \\( 12500 \\) watts to \\( 8500 \\) watts. Determine the percentage efficiency savings.",
+    "a": "\\(32.00\\%\\)",
     "opts": [
-      "\\(386.81\\)",
-      "\\(472.77\\)",
-      "\\(451.28\\)",
-      "\\(429.79\\)"
+      "\\(32.00\\%\\)",
+      "\\(32.00\\%\\)",
+      "\\(30.00\\%\\)",
+      "\\(35.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{513 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{513 dollars} \\times 1.18 = \\text{605.34 dollars}\\)"
+        "explanation": "Calculate the power reduction in watts.",
+        "workingOut": "\\(\\text{Reduction} = 12500 - 8500 = 4000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{605.34 dollars} \\times 0.71\\)"
+        "explanation": "Divide by the original capacity to determine the savings percentage.",
+        "workingOut": "\\(\\text{Percentage Savings} = \\frac{4000}{12500} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{429.79 dollars}\\)"
+        "explanation": "Determine the final percentage savings.",
+        "workingOut": "\\(\\text{Percentage Savings} = 32.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4526,26 +5114,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 58 \\) out of \\( 1232 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(4.71\\%\\)",
+    "question": "A data database query optimization reduces server compute time for a reports query from \\( 2.40 \\) seconds to \\( 1.56 \\) seconds. Determine the percentage decrease in compute time.",
+    "a": "\\(35.00\\%\\)",
     "opts": [
-      "\\(4.710%\\)",
-      "\\(5.181%\\)",
-      "\\(4.239%\\)",
-      "\\(4.946%\\)"
+      "\\(35.00\\%\\)",
+      "\\(36.50\\%\\)",
+      "\\(32.00\\%\\)",
+      "\\(35.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{58}{1232}\\)"
+        "explanation": "Compute the compute time reduction.",
+        "workingOut": "\\(\\text{Reduction} = 2.40 - 1.56 = 0.84\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{58}{1232} \\times 100\\%\\)"
+        "explanation": "Divide by the original compute time.",
+        "workingOut": "\\(\\text{Percentage Decrease} = \\frac{0.84}{2.40} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 4.71\\%\\)"
+        "explanation": "Calculate the final percentage.",
+        "workingOut": "\\(\\text{Percentage Decrease} = 35.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4555,26 +5146,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 4741 \\) dollars for testing. If \\( 9\\% \\) of this budget is assigned to the leather briefcase division, and \\( 24\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(102.41\\)",
+    "question": "A logistics company redesigns delivery routes, lowering monthly fleet diesel usage from \\( 15000 \\) liters to \\( 12450 \\) liters. Find the percentage reduction in fuel consumption.",
+    "a": "\\(17.00\\%\\)",
     "opts": [
-      "\\(112.65\\)",
-      "\\(102.41\\)",
-      "\\(107.53\\)",
-      "\\(92.17\\)"
+      "\\(15.50\\%\\)",
+      "\\(17.00\\%\\)",
+      "\\(18.20\\%\\)",
+      "\\(17.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 4741 \\times \\frac{9}{100} = 4741 \\times 0.09 = 426.69\\)"
+        "explanation": "Find the fuel savings in liters.",
+        "workingOut": "\\(\\text{Reduction} = 15000 - 12450 = 2550\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{24}{100} = 426.69 \\times 0.24\\)"
+        "explanation": "Calculate the percentage fuel savings.",
+        "workingOut": "\\(\\text{Percentage Savings} = \\frac{2550}{15000} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 102.41\\)"
+        "explanation": "Evaluate the percentage reduction.",
+        "workingOut": "\\(\\text{Percentage Savings} = 17.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4584,26 +5178,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 308 \\) units to \\( 596 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(93.51\\%\\)",
+    "question": "A solar panel system upgrade cuts electricity consumption from the grid from \\( 1800 \\) kWh to \\( 1350 \\) kWh per month. Determine the percentage grid savings.",
+    "a": "\\(25.00\\%\\)",
     "opts": [
-      "\\(84.159%\\)",
-      "\\(102.861%\\)",
-      "\\(93.510%\\)",
-      "\\(98.186%\\)"
+      "\\(22.50\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(27.00\\%\\)",
+      "\\(25.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 596 - 308 = 288\\)"
+        "explanation": "Calculate grid consumption reduction.",
+        "workingOut": "\\(\\text{Reduction} = 1800 - 1350 = 450\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{288}{308} \\times 100\\%\\)"
+        "explanation": "Divide by the original grid consumption.",
+        "workingOut": "\\(\\text{Percentage Savings} = \\frac{450}{1800} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 93.51\\%\\)"
+        "explanation": "Determine the final percentage savings.",
+        "workingOut": "\\(\\text{Percentage Savings} = 25.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4613,26 +5210,34 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$265.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
-    "a": "\\(295.00\\)",
+    "question": "Alloy A contains \\( 18\\% \\) copper. Alloy B contains \\( 45\\% \\) copper. If we melt \\( 300 \\) kg of Alloy A and \\( 200 \\) kg of Alloy B together, find the percentage of copper in the new alloy.",
+    "a": "\\(28.80\\%\\)",
     "opts": [
-      "\\(295.00\\)",
-      "\\(324.50\\)",
-      "\\(265.50\\)",
-      "\\(309.75\\)"
+      "\\(28.80\\%\\)",
+      "\\(28.80\\%\\)",
+      "\\(27.00\\%\\)",
+      "\\(31.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{265.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate the total weight of copper contributed by Alloy A.",
+        "workingOut": "\\(W_{\\text{copper A}} = 300 \\times 0.18 = 54.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{265.50}{1 - 0.10} = \\frac{265.50}{0.90}\\)"
+        "explanation": "Calculate the total weight of copper contributed by Alloy B.",
+        "workingOut": "\\(W_{\\text{copper B}} = 200 \\times 0.45 = 90.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{295.00 dollars}\\)"
+        "explanation": "Find the total weight of the combined alloy.",
+        "workingOut": "\\(W_{\\text{total}} = 300 + 200 = 500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final copper concentration percentage.",
+        "workingOut": "\\(C_{\\text{new}} = \\frac{54.00 + 90.00}{500} \\times 100\\% = \\frac{144.00}{500} \\times 100\\% = 28.80\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4642,26 +5247,34 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$628\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
-    "a": "\\(718.31\\)",
+    "question": "Solution A contains \\( 5\\% \\) salt. Solution B contains \\( 15\\% \\) salt. If \\( 120 \\) liters of A are mixed with \\( 80 \\) liters of B, find the percentage concentration of salt in the mixture.",
+    "a": "\\(9.00\\%\\)",
     "opts": [
-      "\\(718.31\\)",
-      "\\(790.14\\)",
-      "\\(646.48\\)",
-      "\\(754.23\\)"
+      "\\(9.00\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(9.50\\%\\)",
+      "\\(9.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{628 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{628 dollars} \\times 1.33 = \\text{835.24 dollars}\\)"
+        "explanation": "Calculate salt from Solution A.",
+        "workingOut": "\\(S_A = 120 \\times 0.05 = 6.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{835.24 dollars} \\times 0.86\\)"
+        "explanation": "Calculate salt from Solution B.",
+        "workingOut": "\\(S_B = 80 \\times 0.15 = 12.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{718.31 dollars}\\)"
+        "explanation": "Find the total volume of the mixture.",
+        "workingOut": "\\(V_{\\text{total}} = 120 + 80 = 200\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the combined salt percentage.",
+        "workingOut": "\\(C_{\\text{new}} = \\frac{6.00 + 12.00}{200} \\times 100\\% = \\frac{18.00}{200} \\times 100\\% = 9.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4671,26 +5284,34 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 153 \\) out of \\( 1387 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(11.03\\%\\)",
+    "question": "Fertilizer compound A is \\( 10\\% \\) potassium. Fertilizer compound B is \\( 30\\% \\) potassium. If we blend \\( 450 \\) kg of A and \\( 150 \\) kg of B, find the percentage of potassium in the blend.",
+    "a": "\\(15.00\\%\\)",
     "opts": [
-      "\\(11.030%\\)",
-      "\\(12.133%\\)",
-      "\\(9.927%\\)",
-      "\\(11.582%\\)"
+      "\\(14.50\\%\\)",
+      "\\(18.00\\%\\)",
+      "\\(15.00\\%\\)",
+      "\\(15.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{153}{1387}\\)"
+        "explanation": "Find potassium weight from compound A.",
+        "workingOut": "\\(K_A = 450 \\times 0.10 = 45.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{153}{1387} \\times 100\\%\\)"
+        "explanation": "Find potassium weight from compound B.",
+        "workingOut": "\\(K_B = 150 \\times 0.30 = 45.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 11.03\\%\\)"
+        "explanation": "Find total weight of the blend.",
+        "workingOut": "\\(W_{\\text{total}} = 450 + 150 = 600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the potassium percentage in the blend.",
+        "workingOut": "\\(P = \\frac{45.00 + 45.00}{600} \\times 100\\% = \\frac{90.00}{600} \\times 100\\% = 15.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4700,26 +5321,34 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 5326 \\) dollars for testing. If \\( 14\\% \\) of this budget is assigned to the camping tent division, and \\( 14\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(104.39\\)",
+    "question": "Batch A of paint has \\( 8\\% \\) yellow pigment. Batch B has \\( 20\\% \\) yellow pigment. If a designer mixes \\( 1500 \\) mL of Batch A and \\( 500 \\) mL of Batch B, determine the yellow pigment percentage of the mix.",
+    "a": "\\(11.00\\%\\)",
     "opts": [
-      "\\(109.61\\)",
-      "\\(104.39\\)",
-      "\\(93.95\\)",
-      "\\(114.83\\)"
+      "\\(10.50\\%\\)",
+      "\\(11.00\\%\\)",
+      "\\(11.50\\%\\)",
+      "\\(11.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 5326 \\times \\frac{14}{100} = 5326 \\times 0.14 = 745.64\\)"
+        "explanation": "Calculate yellow pigment volume from Batch A.",
+        "workingOut": "\\(V_A = 1500 \\times 0.08 = 120.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{14}{100} = 745.64 \\times 0.14\\)"
+        "explanation": "Calculate yellow pigment volume from Batch B.",
+        "workingOut": "\\(V_B = 500 \\times 0.20 = 100.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 104.39\\)"
+        "explanation": "Determine total volume of the mix.",
+        "workingOut": "\\(V_{\\text{total}} = 1500 + 500 = 2000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine yellow pigment percentage.",
+        "workingOut": "\\(P = \\frac{120.00 + 100.00}{2000} \\times 100\\% = \\frac{220.00}{2000} \\times 100\\% = 11.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4729,26 +5358,34 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 393 \\) units to \\( 741 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(88.55\\%\\)",
+    "question": "Alloy 1 is \\( 12\\% \\) nickel. Alloy 2 is \\( 24\\% \\) nickel. If an industrial smelter melts \\( 80 \\) kg of Alloy 1 and \\( 120 \\) kg of Alloy 2, find the percentage of nickel in the combined alloy.",
+    "a": "\\(19.20\\%\\)",
     "opts": [
-      "\\(88.550%\\)",
-      "\\(97.405%\\)",
-      "\\(79.695%\\)",
-      "\\(92.978%\\)"
+      "\\(19.20\\%\\)",
+      "\\(19.20\\%\\)",
+      "\\(18.00\\%\\)",
+      "\\(19.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 741 - 393 = 348\\)"
+        "explanation": "Find nickel weight from Alloy 1.",
+        "workingOut": "\\(N_1 = 80 \\times 0.12 = 9.60\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{348}{393} \\times 100\\%\\)"
+        "explanation": "Find nickel weight from Alloy 2.",
+        "workingOut": "\\(N_2 = 120 \\times 0.24 = 28.80\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 88.55\\%\\)"
+        "explanation": "Find total weight of melted alloys.",
+        "workingOut": "\\(W_{\\text{total}} = 80 + 120 = 200\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate combined nickel percentage.",
+        "workingOut": "\\(P = \\frac{9.60 + 28.80}{200} \\times 100\\% = \\frac{38.40}{200} \\times 100\\% = 19.20\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4758,26 +5395,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$324.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event, correct to the nearest cent.",
-    "a": "\\(360.00\\)",
+    "question": "A crypto investment fund loses \\( 40\\% \\) of its value during the first quarter, but recovers \\( 50\\% \\) of its new value in the second quarter. Find the net percentage change from the original investment value.",
+    "a": "\\(-10.00\\%\\)",
     "opts": [
-      "\\(378.00\\)",
-      "\\(324.00\\)",
-      "\\(396.00\\)",
-      "\\(360.00\\)"
+      "\\(5.00\\%\\)",
+      "\\(-10.00\\%\\)",
+      "\\(-10.00\\%\\)",
+      "\\(10.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{324.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Calculate the value factor after the 40% loss in the first quarter.",
+        "workingOut": "\\(V_1 = 1.00 \\times (1 - 0.40) = 0.60\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{324.00}{1 - 0.10} = \\frac{324.00}{0.90}\\)"
+        "explanation": "Calculate the value factor after the 50% recovery of the new value in the second quarter.",
+        "workingOut": "\\(V_2 = 0.60 \\times (1 + 0.50) = 0.60 \\times 1.50\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{360.00 dollars}\\)"
+        "explanation": "Determine the net percentage change from the original value.",
+        "workingOut": "\\(\\text{Net} = (0.90 - 1.00) \\times 100\\% = -10.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4787,26 +5427,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a high-end laptop at Quantum originally costs \\(\\$143\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 19\\% \\) discount on the marked price. Calculate the final retail price of the high-end laptop, correct to the nearest cent.",
-    "a": "\\(136.68\\)",
+    "question": "A technology stock portfolio contracts by \\( 20\\% \\) over month 1, and then increases by \\( 30\\% \\) over month 2. Determine the net percentage change from the start.",
+    "a": "\\(4.00\\%\\)",
     "opts": [
-      "\\(123.01\\)",
-      "\\(143.51\\)",
-      "\\(150.35\\)",
-      "\\(136.68\\)"
+      "\\(4.00\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(4.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{143 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{143 dollars} \\times 1.18 = \\text{168.74 dollars}\\)"
+        "explanation": "Calculate the portfolio value coefficient after month 1.",
+        "workingOut": "\\(V_1 = 1.00 \\times 0.80 = 0.80\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{19}{100}\\right) = \\text{168.74 dollars} \\times 0.81\\)"
+        "explanation": "Apply the 30% increase in month 2.",
+        "workingOut": "\\(V_2 = 0.80 \\times 1.30\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{136.68 dollars}\\)"
+        "explanation": "Determine the net percentage change.",
+        "workingOut": "\\(\\text{Net} = (1.04 - 1.00) \\times 100\\% = 4.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4816,26 +5459,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 98 \\) out of \\( 742 \\) units of robotic vacuum were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(13.21\\%\\)",
+    "question": "An agricultural wheat reserve shrinks by \\( 15\\% \\) due to pest damage, but later imports add \\( 20\\% \\) to the remaining reserve. Find the net percentage change in the reserve size.",
+    "a": "\\(2.00\\%\\)",
     "opts": [
-      "\\(14.531%\\)",
-      "\\(13.210%\\)",
-      "\\(11.889%\\)",
-      "\\(13.871%\\)"
+      "\\(2.00\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(4.00\\%\\)",
+      "\\(2.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{98}{742}\\)"
+        "explanation": "Find the reserve coefficient after the 15% loss.",
+        "workingOut": "\\(R_1 = 1.00 \\times 0.85 = 0.85\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{98}{742} \\times 100\\%\\)"
+        "explanation": "Apply the 20% increase to the remaining reserve.",
+        "workingOut": "\\(R_2 = 0.85 \\times 1.20\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 13.21\\%\\)"
+        "explanation": "Calculate the net percentage change.",
+        "workingOut": "\\(\\text{Net} = (1.02 - 1.00) \\times 100\\% = 2.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4845,26 +5491,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 5911 \\) dollars for testing. If \\( 19\\% \\) of this budget is assigned to the electric scooter division, and \\( 29\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(325.70\\)",
+    "question": "A commercial real estate fund loses \\( 25\\% \\) of its capitalization during a downturn, but gains \\( 40\\% \\) in the subsequent recovery phase. Compute the net percentage change.",
+    "a": "\\(5.00\\%\\)",
     "opts": [
-      "\\(325.70\\)",
-      "\\(358.27\\)",
-      "\\(341.99\\)",
-      "\\(293.13\\)"
+      "\\(5.00\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(15.00\\%\\)",
+      "\\(8.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 5911 \\times \\frac{19}{100} = 5911 \\times 0.19 = 1123.09\\)"
+        "explanation": "Calculate the fund capitalization coefficient after the 25% downturn.",
+        "workingOut": "\\(V_1 = 1.00 \\times 0.75 = 0.75\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{29}{100} = 1123.09 \\times 0.29\\)"
+        "explanation": "Apply the 40% growth to the capitalization factor.",
+        "workingOut": "\\(V_2 = 0.75 \\times 1.40\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 325.70\\)"
+        "explanation": "Determine the net percentage change.",
+        "workingOut": "\\(\\text{Net} = (1.05 - 1.00) \\times 100\\% = 5.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4874,26 +5523,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of digital mirrors at the Apex plant increases from \\( 478 \\) units to \\( 886 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(85.36\\%\\)",
+    "question": "An index commodity tracking fund contracts by \\( 10\\% \\) in week 1, and grows by \\( 15\\% \\) in week 2. Calculate the net weekly percentage change.",
+    "a": "\\(3.50\\%\\)",
     "opts": [
-      "\\(93.896%\\)",
-      "\\(85.360%\\)",
-      "\\(76.824%\\)",
-      "\\(89.628%\\)"
+      "\\(3.50\\%\\)",
+      "\\(4.00\\%\\)",
+      "\\(5.00\\%\\)",
+      "\\(3.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 886 - 478 = 408\\)"
+        "explanation": "Find the fund value factor after week 1.",
+        "workingOut": "\\(V_1 = 1.00 \\times 0.90 = 0.90\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{408}{478} \\times 100\\%\\)"
+        "explanation": "Apply the 15% growth in week 2.",
+        "workingOut": "\\(V_2 = 0.90 \\times 1.15\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 85.36\\%\\)"
+        "explanation": "Calculate the net percentage change.",
+        "workingOut": "\\(\\text{Net} = (1.035 - 1.00) \\times 100\\% = 3.50\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4903,26 +5555,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new office workstation is sold at a retail price of \\(\\$382.50\\) by EcoFarms. Determine the original price of the office workstation before the clearance event, correct to the nearest cent.",
-    "a": "\\(425.00\\)",
+    "question": "A book publisher pays a \\( 12.5\\% \\) royalty on total book sales to an author, who then pays \\( 16\\% \\) of their royalty directly to their literary agent. Find what percentage of total book sales goes to the literary agent.",
+    "a": "\\(2.00\\%\\)",
     "opts": [
-      "\\(425.00\\)",
-      "\\(467.50\\)",
-      "\\(382.50\\)",
-      "\\(446.25\\)"
+      "\\(2.00\\%\\)",
+      "\\(2.50\\%\\)",
+      "\\(2.00\\%\\)",
+      "\\(3.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{382.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Identify the author's royalty rate.",
+        "workingOut": "\\(R_{\\text{author}} = 12.5\\% = 0.125\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{382.50}{1 - 0.10} = \\frac{382.50}{0.90}\\)"
+        "explanation": "Multiply the author's royalty rate by the agent's commission rate of 16% to find the agent's share of total sales.",
+        "workingOut": "\\(R_{\\text{agent}} = 0.125 \\times 0.16\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{425.00 dollars}\\)"
+        "explanation": "Evaluate the percentage of total sales.",
+        "workingOut": "\\(R_{\\text{agent}} = 2.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4932,26 +5587,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a ergonomic chair at Alpha originally costs \\(\\$258\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 24\\% \\) discount on the marked price. Calculate the final retail price of the ergonomic chair, correct to the nearest cent.",
-    "a": "\\(260.79\\)",
+    "question": "A recording studio receives a \\( 18\\% \\) royalty on music streams, and redirects \\( 25\\% \\) of their streaming royalty to a marketing agency. Find the percentage of streams revenue that goes to the marketing agency.",
+    "a": "\\(4.50\\%\\)",
     "opts": [
-      "\\(260.79\\)",
-      "\\(273.83\\)",
-      "\\(286.87\\)",
-      "\\(234.71\\)"
+      "\\(5.00\\%\\)",
+      "\\(4.50\\%\\)",
+      "\\(4.00\\%\\)",
+      "\\(4.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{258 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{258 dollars} \\times 1.33 = \\text{343.14 dollars}\\)"
+        "explanation": "Identify the recording studio's royalty rate.",
+        "workingOut": "\\(R_{\\text{studio}} = 18\\% = 0.18\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{24}{100}\\right) = \\text{343.14 dollars} \\times 0.76\\)"
+        "explanation": "Multiply the studio's royalty rate by the marketing agency's share of 25%.",
+        "workingOut": "\\(R_{\\text{agency}} = 0.18 \\times 0.25\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{260.79 dollars}\\)"
+        "explanation": "Compute the percentage of total stream revenues.",
+        "workingOut": "\\(R_{\\text{agency}} = 4.50\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4961,26 +5619,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 43 \\) out of \\( 897 \\) units of drone stabilizer were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(4.79\\%\\)",
+    "question": "A mobile application store takes a \\( 30\\% \\) commission on app sales. A software developer allocates \\( 10\\% \\) of their store earnings to localization services. What percentage of total app sales is spent on localization?",
+    "a": "\\(7.00\\%\\)",
     "opts": [
-      "\\(4.790%\\)",
-      "\\(5.269%\\)",
-      "\\(4.311%\\)",
-      "\\(5.030%\\)"
+      "\\(7.00\\%\\)",
+      "\\(8.00\\%\\)",
+      "\\(7.00\\%\\)",
+      "\\(6.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{43}{897}\\)"
+        "explanation": "Find the developer's share of app sales after store commission.",
+        "workingOut": "\\(S_{\\text{dev}} = 100\\% - 30\\% = 70\\% = 0.70\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{43}{897} \\times 100\\%\\)"
+        "explanation": "Multiply the developer's share by the localization share of 10%.",
+        "workingOut": "\\(S_{\\text{localization}} = 0.70 \\times 0.10\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 4.79\\%\\)"
+        "explanation": "Determine the final percentage.",
+        "workingOut": "\\(S_{\\text{localization}} = 7.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -4990,26 +5651,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 1496 \\) dollars for testing. If \\( 24\\% \\) of this budget is assigned to the graphics card division, and \\( 19\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(68.22\\)",
+    "question": "A patent owner licensing agreement pays a \\( 8\\% \\) royalty on hardware sales to an inventor, who redirects \\( 12.5\\% \\) of their royalty to their patent attorney. Find the percentage of hardware sales going to the patent attorney.",
+    "a": "\\(1.00\\%\\)",
     "opts": [
-      "\\(75.04\\)",
-      "\\(71.63\\)",
-      "\\(61.40\\)",
-      "\\(68.22\\)"
+      "\\(1.50\\%\\)",
+      "\\(0.80\\%\\)",
+      "\\(1.00\\%\\)",
+      "\\(1.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 1496 \\times \\frac{24}{100} = 1496 \\times 0.24 = 359.04\\)"
+        "explanation": "Identify the inventor's royalty rate.",
+        "workingOut": "\\(R_{\\text{inventor}} = 8\\% = 0.08\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{19}{100} = 359.04 \\times 0.19\\)"
+        "explanation": "Multiply the inventor's rate by the attorney's share of 12.5%.",
+        "workingOut": "\\(R_{\\text{attorney}} = 0.08 \\times 0.125\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 68.22\\)"
+        "explanation": "Determine the percentage of hardware sales.",
+        "workingOut": "\\(R_{\\text{attorney}} = 1.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5019,26 +5683,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of soundbars at the Prime plant increases from \\( 563 \\) units to \\( 531 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(-5.68\\%\\)",
+    "question": "A franchise agreement pays a \\( 5\\% \\) royalty on total grocery sales to a master franchisee, who pays \\( 20\\% \\) of their royalty to a regional advertising fund. Find the percentage of total sales going to the advertising fund.",
+    "a": "\\(1.00\\%\\)",
     "opts": [
-      "\\(-2.680%\\)",
-      "\\(-5.680%\\)",
-      "\\(-4.680%\\)",
-      "\\(-3.680%\\)"
+      "\\(1.20\\%\\)",
+      "\\(0.80\\%\\)",
+      "\\(1.00\\%\\)",
+      "\\(1.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 531 - 563 = -32\\)"
+        "explanation": "Identify the master franchisee's royalty rate.",
+        "workingOut": "\\(R_{\\text{franchisee}} = 5\\% = 0.05\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{-32}{563} \\times 100\\%\\)"
+        "explanation": "Multiply the royalty rate by the advertising fund share of 20%.",
+        "workingOut": "\\(R_{\\text{fund}} = 0.05 \\times 0.20\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx -5.68\\%\\)"
+        "explanation": "Calculate the final percentage.",
+        "workingOut": "\\(R_{\\text{fund}} = 1.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5048,26 +5715,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new espresso brewer is sold at a retail price of \\(\\$441.00\\) by NovaTech. Determine the original price of the espresso brewer before the clearance event, correct to the nearest cent.",
-    "a": "\\(490.00\\)",
+    "question": "A regional tax code levies a flat tax rate of \\( 32\\% \\) on taxable income exceeding \\( 15000 \\) dollars. If a citizen pays a total tax of \\( 9600 \\) dollars, find their total income.",
+    "a": "\\(45000.00\\)",
     "opts": [
-      "\\(514.50\\)",
-      "\\(441.00\\)",
-      "\\(539.00\\)",
-      "\\(490.00\\)"
+      "\\(49500.00\\)",
+      "\\(40500.00\\)",
+      "\\(45000.00\\)",
+      "\\(40000.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{441.00 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Express the taxable income exceeding the 15,000 threshold as an equation using tax paid.",
+        "workingOut": "\\(T_{\\text{excess}} \\times 0.32 = 9600\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{441.00}{1 - 0.10} = \\frac{441.00}{0.90}\\)"
+        "explanation": "Solve for the excess income by dividing the tax paid by the tax rate of 32%.",
+        "workingOut": "\\(T_{\\text{excess}} = \\frac{9600}{0.32} = 30000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{490.00 dollars}\\)"
+        "explanation": "Add the threshold of 15,000 dollars to the excess income to find the total income.",
+        "workingOut": "\\(\\text{Total Income} = 30000.00 + 15000 = 45000.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5077,26 +5747,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart thermostat at Quantum originally costs \\(\\$373\\). The retailer marks up the wholesale price by \\( 18\\% \\), but later runs a seasonal promotion offering a \\( 29\\% \\) discount on the marked price. Calculate the final retail price of the smart thermostat, correct to the nearest cent.",
-    "a": "\\(312.50\\)",
+    "question": "A carbon emission tariff charges \\( 45 \\) dollars per ton on emissions exceeding a threshold of \\( 1200 \\) tons. If an industrial plant pays \\( 18000 \\) dollars in tariffs, find their total carbon emissions.",
+    "a": "\\(1600.00\\)",
     "opts": [
-      "\\(312.50\\)",
-      "\\(343.75\\)",
-      "\\(281.25\\)",
-      "\\(328.13\\)"
+      "\\(1600.00\\)",
+      "\\(1400.00\\)",
+      "\\(1760.00\\)",
+      "\\(1440.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{373 dollars} \\times \\left(1 + \\frac{18}{100}\\right) = \\text{373 dollars} \\times 1.18 = \\text{440.14 dollars}\\)"
+        "explanation": "Set up the equation for excess carbon emissions E.",
+        "workingOut": "\\(E \\times 45 = 18000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{29}{100}\\right) = \\text{440.14 dollars} \\times 0.71\\)"
+        "explanation": "Divide the tariff amount by the cost per ton to find the excess emissions.",
+        "workingOut": "\\(E = \\frac{18000}{45} = 400.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{312.50 dollars}\\)"
+        "explanation": "Add the baseline threshold of 1,200 tons.",
+        "workingOut": "\\(\\text{Total Emissions} = 400.00 + 1200 = 1600.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5106,26 +5779,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by Zenith, \\( 138 \\) out of \\( 1052 \\) units of air purifier were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(13.12\\%\\)",
+    "question": "A surcharge of \\( 15\\% \\) is levied on profits over \\( 100000 \\) dollars. If a regional pharmacy pays a surcharge of \\( 12000 \\) dollars, find their total profits.",
+    "a": "\\(180000.00\\)",
     "opts": [
-      "\\(13.776%\\)",
-      "\\(14.432%\\)",
-      "\\(13.120%\\)",
-      "\\(11.808%\\)"
+      "\\(198000.00\\)",
+      "\\(180000.00\\)",
+      "\\(170000.00\\)",
+      "\\(162000.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{138}{1052}\\)"
+        "explanation": "Set up the equation for profits exceeding 100,000.",
+        "workingOut": "\\(P_{\\text{excess}} \\times 0.15 = 12000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{138}{1052} \\times 100\\%\\)"
+        "explanation": "Divide by the surcharge rate of 15%.",
+        "workingOut": "\\(P_{\\text{excess}} = \\frac{12000}{0.15} = 80000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 13.12\\%\\)"
+        "explanation": "Add the threshold of 100,000.",
+        "workingOut": "\\(\\text{Total Profits} = 80000.00 + 100000 = 180000.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5135,26 +5811,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at Stellar allocates a budget of \\( 2081 \\) dollars for testing. If \\( 29\\% \\) of this budget is assigned to the leather briefcase division, and \\( 9\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(54.31\\)",
+    "question": "A municipality charges an extra water tax of \\( 8\\% \\) on usage exceeding \\( 50000 \\) liters. If a brewery pays \\( 1600 \\) dollars in water tax, determine the total water usage in liters.",
+    "a": "\\(70000.00\\)",
     "opts": [
-      "\\(54.31\\)",
-      "\\(59.74\\)",
-      "\\(48.88\\)",
-      "\\(57.03\\)"
+      "\\(70000.00\\)",
+      "\\(77000.00\\)",
+      "\\(65000.00\\)",
+      "\\(63000.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 2081 \\times \\frac{29}{100} = 2081 \\times 0.29 = 603.49\\)"
+        "explanation": "Set up the equation for excess water usage U.",
+        "workingOut": "\\(U \\times 0.08 = 1600\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{9}{100} = 603.49 \\times 0.09\\)"
+        "explanation": "Divide by the tax rate of 8%.",
+        "workingOut": "\\(U = \\frac{1600}{0.08} = 20000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 54.31\\)"
+        "explanation": "Add the baseline threshold of 50,000 liters.",
+        "workingOut": "\\(\\text{Total Usage} = 20000.00 + 50000 = 70000.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5164,26 +5843,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of carbon tennis rackets at the Apex plant increases from \\( 648 \\) units to \\( 676 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(4.32\\%\\)",
+    "question": "A luxury vehicle tax levies a surcharge of \\( 25\\% \\) on valuation exceeding \\( 80000 \\) dollars. If a buyer pays \\( 5000 \\) dollars in luxury vehicle tax, find the total valuation of the vehicle.",
+    "a": "\\(100000.00\\)",
     "opts": [
-      "\\(4.320%\\)",
-      "\\(4.752%\\)",
-      "\\(3.888%\\)",
-      "\\(4.536%\\)"
+      "\\(98000.00\\)",
+      "\\(110000.00\\)",
+      "\\(100000.00\\)",
+      "\\(90000.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 676 - 648 = 28\\)"
+        "explanation": "Set up the equation for valuation exceeding 80,000.",
+        "workingOut": "\\(V_{\\text{excess}} \\times 0.25 = 5000\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{28}{648} \\times 100\\%\\)"
+        "explanation": "Divide by the luxury tax rate of 25%.",
+        "workingOut": "\\(V_{\\text{excess}} = \\frac{5000}{0.25} = 20000.00\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 4.32\\%\\)"
+        "explanation": "Add the baseline threshold of 80,000.",
+        "workingOut": "\\(\\text{Total Valuation} = 20000.00 + 80000 = 100000.00\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5193,26 +5875,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "After a store-wide clearance discount of \\( 10\\% \\), a brand new noise-cancelling headphones is sold at a retail price of \\(\\$139.50\\) by EcoFarms. Determine the original price of the noise-cancelling headphones before the clearance event, correct to the nearest cent.",
-    "a": "\\(155.00\\)",
+    "question": "Vehicle A consumes \\( 6.0 \\) liters of fuel per 100km. Vehicle B consumes \\( 4.8 \\) liters of fuel per 100km. By what percentage is the fuel efficiency of Vehicle B better than Vehicle A?",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(162.75\\)",
-      "\\(155.00\\)",
-      "\\(170.50\\)",
-      "\\(139.50\\)"
+      "\\(20.00\\%\\)",
+      "\\(18.00\\%\\)",
+      "\\(25.00\\%\\)",
+      "\\(22.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = \\text{139.50 dollars}, \\quad \\text{Discount Rate} = 10\\% = 0.10\\)"
+        "explanation": "Determine the absolute difference in fuel consumption between the two vehicles.",
+        "workingOut": "\\(\\text{Difference} = 6.0 - 4.8 = 1.2 \\text{ liters/100km}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the reverse percentage change formula by dividing the final price by the discount multiplier.",
-        "workingOut": "\\(\\text{Original Price} = \\frac{\\text{Sale Price}}{1 - \\text{Discount Rate}} = \\frac{139.50}{1 - 0.10} = \\frac{139.50}{0.90}\\)"
+        "explanation": "Divide this difference by Vehicle A's consumption to find the percentage improvement.",
+        "workingOut": "\\(\\text{Improvement} = \\frac{1.2}{6.0} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the exact value and round it to two decimal places.",
-        "workingOut": "\\(\\text{Original Price} = \\text{155.00 dollars}\\)"
+        "explanation": "Compute the final percentage improvement.",
+        "workingOut": "\\(\\text{Improvement} = 20.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5222,26 +5907,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A manufacturing batch of a smart projector at Alpha originally costs \\(\\$488\\). The retailer marks up the wholesale price by \\( 33\\% \\), but later runs a seasonal promotion offering a \\( 14\\% \\) discount on the marked price. Calculate the final retail price of the smart projector, correct to the nearest cent.",
-    "a": "\\(558.17\\)",
+    "question": "ASIC Miner A consumes \\( 1200 \\) watts per terahash. ASIC Miner B consumes \\( 900 \\) watts per terahash. Find the percentage by which Miner B's efficiency is better than Miner A.",
+    "a": "\\(25.00\\%\\)",
     "opts": [
-      "\\(586.08\\)",
-      "\\(558.17\\)",
-      "\\(613.99\\)",
-      "\\(502.35\\)"
+      "\\(25.00\\%\\)",
+      "\\(30.00\\%\\)",
+      "\\(33.33\\%\\)",
+      "\\(25.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the price after the initial markup.",
-        "workingOut": "\\(V_1 = \\text{488 dollars} \\times \\left(1 + \\frac{33}{100}\\right) = \\text{488 dollars} \\times 1.33 = \\text{649.04 dollars}\\)"
+        "explanation": "Determine the absolute power reduction.",
+        "workingOut": "\\(\\text{Difference} = 1200 - 900 = 300 \\text{ watts}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the subsequent percentage discount to the marked-up price.",
-        "workingOut": "\\(V_2 = V_1 \\times \\left(1 - \\frac{14}{100}\\right) = \\text{649.04 dollars} \\times 0.86\\)"
+        "explanation": "Divide by Miner A's consumption to calculate the percentage improvement.",
+        "workingOut": "\\(\\text{Improvement} = \\frac{300}{1200} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the product to determine the final promotional price.",
-        "workingOut": "\\(V_2 = \\text{558.17 dollars}\\)"
+        "explanation": "Determine the final percentage improvement.",
+        "workingOut": "\\(\\text{Improvement} = 25.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5251,26 +5939,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "At a quality inspection center run by AeroGroup, \\( 83 \\) out of \\( 1207 \\) units of wireless security kit were selected for fine calibration. Express the selected fraction as a percentage of the total inspected batch, correct to two decimal places.",
-    "a": "\\(6.88\\%\\)",
+    "question": "Computer Server A processes a batch job in \\( 2.50 \\) hours. Optimized Server B processes the same batch job in \\( 2.00 \\) hours. Find the percentage improvement in processing efficiency.",
+    "a": "\\(20.00\\%\\)",
     "opts": [
-      "\\(6.880%\\)",
-      "\\(6.192%\\)",
-      "\\(7.568%\\)",
-      "\\(7.224%\\)"
+      "\\(25.00\\%\\)",
+      "\\(22.50\\%\\)",
+      "\\(20.00\\%\\)",
+      "\\(18.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Write the fraction representing the selected units.",
-        "workingOut": "\\(\\text{Fraction} = \\frac{83}{1207}\\)"
+        "explanation": "Determine the processing time difference.",
+        "workingOut": "\\(\\text{Difference} = 2.50 - 2.00 = 0.50 \\text{ hours}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Convert the fraction to a percentage by multiplying the ratio by 100.",
-        "workingOut": "\\(\\text{Percentage} = \\frac{83}{1207} \\times 100\\%\\)"
+        "explanation": "Divide by the original processing time of Server A.",
+        "workingOut": "\\(\\text{Improvement} = \\frac{0.50}{2.50} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the value and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage} \\approx 6.88\\%\\)"
+        "explanation": "Determine the final percentage efficiency improvement.",
+        "workingOut": "\\(\\text{Improvement} = 20.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5280,26 +5971,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A research department at BioLabs allocates a budget of \\( 2666 \\) dollars for testing. If \\( 34\\% \\) of this budget is assigned to the camping tent division, and \\( 24\\% \\) of that division's budget is used specifically for microchip testing, find the exact amount spent on microchip testing, correct to two decimal places.",
-    "a": "\\(217.55\\)",
+    "question": "A delivery truck consumes \\( 18.00 \\) liters of diesel per hour. A hybrid delivery truck consumes \\( 13.50 \\) liters per hour. Calculate the percentage savings of the hybrid truck.",
+    "a": "\\(25.00\\%\\)",
     "opts": [
-      "\\(217.55\\)",
-      "\\(239.31\\)",
-      "\\(228.43\\)",
-      "\\(195.80\\)"
+      "\\(25.00\\%\\)",
+      "\\(30.00\\%\\)",
+      "\\(33.33\\%\\)",
+      "\\(25.00\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Calculate the budget allocated to the division.",
-        "workingOut": "\\(B_{\\text{division}} = 2666 \\times \\frac{34}{100} = 2666 \\times 0.34 = 906.44\\)"
+        "explanation": "Calculate the hourly fuel consumption difference.",
+        "workingOut": "\\(\\text{Difference} = 18.00 - 13.50 = 4.50 \\text{ liters/hour}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the percentage of the division's budget used for testing.",
-        "workingOut": "\\(B_{\\text{testing}} = B_{\\text{division}} \\times \\frac{24}{100} = 906.44 \\times 0.24\\)"
+        "explanation": "Divide the savings by the original truck consumption.",
+        "workingOut": "\\(\\text{Savings} = \\frac{4.50}{18.00} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the final expenditure.",
-        "workingOut": "\\(B_{\\text{testing}} = 217.55\\)"
+        "explanation": "Compute the percentage savings.",
+        "workingOut": "\\(\\text{Savings} = 25.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"
@@ -5309,26 +6003,29 @@ export const Y10_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The monthly production rate of road bicycles at the Prime plant increases from \\( 333 \\) units to \\( 821 \\) units due to automated upgrades. Find the percentage increase in the production rate, correct to two decimal places.",
-    "a": "\\(146.55\\%\\)",
+    "question": "A factory boiler uses \\( 8.00 \\) tons of coal per day. An upgraded eco-boiler uses \\( 6.80 \\) tons of coal per day. Calculate the percentage savings of the eco-boiler.",
+    "a": "\\(15.00\\%\\)",
     "opts": [
-      "\\(146.550%\\)",
-      "\\(161.205%\\)",
-      "\\(131.895%\\)",
-      "\\(153.878%\\)"
+      "\\(17.50\\%\\)",
+      "\\(15.00\\%\\)",
+      "\\(15.00\\%\\)",
+      "\\(12.50\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Determine the absolute increase in units produced.",
-        "workingOut": "\\(\\text{Increase} = 821 - 333 = 488\\)"
+        "explanation": "Find the difference in coal consumption.",
+        "workingOut": "\\(\\text{Difference} = 8.00 - 6.80 = 1.20 \\text{ tons/day}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide the absolute increase by the original rate and multiply by 100 to find the percentage change.",
-        "workingOut": "\\(\\text{Percentage Increase} = \\frac{488}{333} \\times 100\\%\\)"
+        "explanation": "Divide the savings by the original boiler consumption.",
+        "workingOut": "\\(\\text{Savings} = \\frac{1.20}{8.00} \\times 100\\%\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient and round to two decimal places.",
-        "workingOut": "\\(\\text{Percentage Increase} \\approx 146.55\\%\\)"
+        "explanation": "Determine the final percentage savings.",
+        "workingOut": "\\(\\text{Savings} = 15.00\\%\\)",
+        "graphData": null
       }
     ],
     "t": "Review of percentage"

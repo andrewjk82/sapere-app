@@ -94,7 +94,14 @@ const mapSeedQuestion = (raw, chapter) => {
 
   if (isMC) {
     const rawOpts = raw.opts || raw.options || [];
-    const correct = raw.a ?? raw.answer ?? raw.solution;
+    let correct = raw.a ?? raw.answer ?? raw.solution;
+    if (raw.options && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
+      const idx = parseInt(correct, 10);
+      if (idx >= 0 && idx < rawOpts.length) {
+        const correctOpt = rawOpts[idx];
+        correct = typeof correctOpt === 'object' && correctOpt !== null ? correctOpt.text : correctOpt;
+      }
+    }
     const shuffled = [...rawOpts].sort(() => Math.random() - 0.5);
     const correctIndex = shuffled.findIndex((opt) => {
       const text = typeof opt === 'object' && opt !== null ? opt.text : opt;
@@ -117,6 +124,47 @@ const mapSeedQuestion = (raw, chapter) => {
       ? resolvedTopicId.replace(/[A-Z]+$/, '')
       : chapter.chapterId);
 
+  const mappedSubQuestions = Array.isArray(raw.subQuestions)
+    ? raw.subQuestions.map((sq) => {
+        const isSqMC = sq.type === 'multiple_choice';
+        let sqOptions = [];
+        let sqAnswer = sq.a ?? sq.answer ?? sq.solution ?? '';
+
+        if (isSqMC) {
+          const rawOpts = sq.opts || sq.options || [];
+          let correct = sq.a ?? sq.answer ?? sq.solution;
+          if (sq.options && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
+            const idx = parseInt(correct, 10);
+            if (idx >= 0 && idx < rawOpts.length) {
+              const correctOpt = rawOpts[idx];
+              correct = typeof correctOpt === 'object' && correctOpt !== null ? correctOpt.text : correctOpt;
+            }
+          }
+          const shuffled = [...rawOpts].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffled.findIndex((opt) => {
+            const text = typeof opt === 'object' && opt !== null ? opt.text : opt;
+            return String(text).trim() === String(correct).trim();
+          });
+          sqOptions = shuffled.map((opt) => (
+            typeof opt === 'object' && opt !== null
+              ? { text: String(opt.text || ''), imageUrl: opt.imageUrl || '' }
+              : { text: String(opt), imageUrl: '' }
+          ));
+          sqAnswer = String(correctIndex >= 0 ? correctIndex : 0);
+        }
+
+        return {
+          id: sq.id,
+          type: sq.type || 'short_answer',
+          question: sq.question || sq.q || '',
+          options: sqOptions,
+          answer: sqAnswer,
+          solutionSteps: Array.isArray(sq.solutionSteps) ? sq.solutionSteps : [],
+          graphData: sq.graphData || null,
+        };
+      })
+    : [];
+
   return {
     chapterId: resolvedChapterId,
     chapterTitle: chapter.chapterTitle,
@@ -138,7 +186,7 @@ const mapSeedQuestion = (raw, chapter) => {
     solution: raw.s || raw.solution || raw.a || '',
     solutionSteps: Array.isArray(raw.solutionSteps) ? raw.solutionSteps : [],
     questionImage: raw.questionImage || raw.imageUrl || '',
-    subQuestions: Array.isArray(raw.subQuestions) ? raw.subQuestions : [],
+    subQuestions: mappedSubQuestions,
     blanks: Array.isArray(raw.blanks) ? raw.blanks : [],
     graphData: raw.graphData || null,
     examPaper: raw.examPaper || chapter.examPaper || '',

@@ -7,11 +7,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by taking out the common factors: \\( 8b^2 + 2b^3 \\)",
     "options": [
       {
-        "text": "b^2(4 -b)",
+        "text": "2b^3(b-4)",
         "imageUrl": ""
       },
       {
-        "text": "2b^3(b-4)",
+        "text": "b^2(4 -b)",
         "imageUrl": ""
       },
       {
@@ -45,11 +45,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( y^2 - 5y - 36 \\)",
     "options": [
       {
-        "text": "\\((y - 4)(y + 9)\\)",
+        "text": "\\((y + 4)(y - 9)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((y + 4)(y - 9)\\)",
+        "text": "\\((y - 4)(y - 9)\\)",
         "imageUrl": ""
       },
       {
@@ -57,7 +57,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((y - 4)(y - 9)\\)",
+        "text": "\\((y - 4)(y + 9)\\)",
         "imageUrl": ""
       }
     ],
@@ -82,6 +82,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by taking out the common factors: \\( 6a^3b - 12a^2b^2 \\)",
     "options": [
       {
+        "text": "\\(3a^2b(a - 2b)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(12a^2b(a - 2b)\\)",
         "imageUrl": ""
       },
@@ -91,10 +95,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\(6a^2b(a - 2b)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(3a^2b(a - 2b)\\)",
         "imageUrl": ""
       }
     ],
@@ -119,19 +119,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( p^2 - 64 \\)",
     "options": [
       {
-        "text": "\\((p + 8)(p + 8)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((p - 8)(p - 8)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((p - 8)(p + 8)\\)",
         "imageUrl": ""
       },
       {
+        "text": "\\((p + 8)(p + 8)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((p + 8)(p - 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p - 8)(p - 8)\\)",
         "imageUrl": ""
       }
     ],
@@ -160,15 +160,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((5x + 1)(x - 3)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((5x - 1)(x - 3)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((5x - 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5x + 1)(x - 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -197,11 +197,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x - 4)(x - 1)\\)",
+        "text": "\\((3x + 4)(x - 1)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 4)(x - 1)\\)",
+        "text": "\\((3x - 4)(x - 1)\\)",
         "imageUrl": ""
       },
       {
@@ -234,11 +234,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((u - 3)(u - 9)\\)",
+        "text": "\\((u + 3)(u - 9)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((u + 3)(u - 9)\\)",
+        "text": "\\((u - 3)(u - 9)\\)",
         "imageUrl": ""
       },
       {
@@ -267,15 +267,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( x^2 + 13x + 30 \\)",
     "options": [
       {
-        "text": "\\((x + 3)(x + 10)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((x + 3)(x - 10)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((x - 3)(x + 10)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 3)(x + 10)\\)",
         "imageUrl": ""
       },
       {
@@ -308,7 +308,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((u + 13)^2\\)",
+        "text": "\\((u - 26)^2\\)",
         "imageUrl": ""
       },
       {
@@ -316,7 +316,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((u - 26)^2\\)",
+        "text": "\\((u + 13)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -378,19 +378,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( by^2 - b - 3y^2 + 3 \\)",
     "options": [
       {
-        "text": "\\((b + 3)(y - 1)(y + 1)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((b - 3)(y - 1)(y - 1)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((b - 3)(y - 1)(y + 1)\\)",
         "imageUrl": ""
       },
       {
+        "text": "\\((b + 3)(y - 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((b - 3)(y + 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 3)(y - 1)(y - 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -419,19 +419,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( 36 - z^2 \\)",
     "options": [
       {
-        "text": "\\((6 - z)(6 - z)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((6 + z)(6 - z) + 7rk\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((6 - z)(6 + z)\\)",
+        "text": "\\((6 - z)(6 - z)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((6 + z)(6 - z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6 - z)(6 + z)\\)",
         "imageUrl": ""
       }
     ],
@@ -456,7 +456,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 6x^2 - 7x + 2 \\)",
     "options": [
       {
-        "text": "\\((2x - 1)(3x + 2)\\)",
+        "text": "\\((2x + 1)(3x - 2)\\)",
         "imageUrl": ""
       },
       {
@@ -464,11 +464,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((2x + 1)(3x + 2)\\)",
+        "text": "\\((2x - 1)(3x + 2)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((2x + 1)(3x - 2)\\)",
+        "text": "\\((2x + 1)(3x + 2)\\)",
         "imageUrl": ""
       }
     ],
@@ -493,7 +493,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 25 - x^2 \\)",
     "options": [
       {
-        "text": "\\((5 + x)(5 - x) + wn4\\)",
+        "text": "\\((5 + x)(5 - x)\\)",
         "imageUrl": ""
       },
       {
@@ -501,11 +501,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((5 + x)(5 - x)\\)",
+        "text": "\\((5 - x)(5 - x)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((5 - x)(5 - x)\\)",
+        "text": "\\((5 + x)(5 - x) + wn4\\)",
         "imageUrl": ""
       }
     ],
@@ -534,11 +534,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((4x - 5)(4x - 5)\\)",
+        "text": "\\((4x - 5)(4x + 5)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((4x - 5)(4x + 5)\\)",
+        "text": "\\((4x - 5)(4x - 5)\\)",
         "imageUrl": ""
       },
       {
@@ -567,6 +567,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( x^2 - 2x - 24 \\)",
     "options": [
       {
+        "text": "\\((x - 4)(x - 6)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((x + 4)(x + 6)\\)",
         "imageUrl": ""
       },
@@ -576,10 +580,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((x + 4)(x - 6)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((x - 4)(x - 6)\\)",
         "imageUrl": ""
       }
     ],
@@ -608,15 +608,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((j + 8)(3j + 1)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((3j + 4)(j + 2)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((3j + 2)(j + 4)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((j + 8)(3j + 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -647,7 +647,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 9x^2 - 12x + 4 \\)",
     "options": [
       {
-        "text": "\\((3x - 4)^2\\)",
+        "text": "\\((3x + 2)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)^2\\)",
         "imageUrl": ""
       },
       {
@@ -655,11 +659,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 2)^2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3x - 2)^2\\)",
+        "text": "\\((3x - 4)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -684,11 +684,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( x^2 - 1 \\)",
     "options": [
       {
-        "text": "\\((x - 1)(x - 1)\\)",
+        "text": "\\((x + 1)(x - 1)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((x - 1)(x + 1)\\)",
+        "text": "\\((x - 1)(x - 1)\\)",
         "imageUrl": ""
       },
       {
@@ -696,7 +696,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((x + 1)(x - 1)\\)",
+        "text": "\\((x - 1)(x + 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -721,19 +721,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( a^2 - 9 \\)",
     "options": [
       {
-        "text": "\\((a + 3)(a + 3)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a + 3)(a - 3)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((a - 3)(a + 3)\\)",
         "imageUrl": ""
       },
       {
+        "text": "\\((a + 3)(a + 3)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((a - 3)(a - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 3)(a - 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -758,19 +758,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by taking out the common factors: \\( 24pq - 36p \\)",
     "options": [
       {
-        "text": "\\(12p(2q - 3)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(24p(2q - 3)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(6p(2q - 3)\\)",
         "imageUrl": ""
       },
       {
+        "text": "\\(12p(2q - 3)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(12p(2q + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24p(2q - 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -795,11 +795,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(64 - 9g^2\\)",
     "options": [
       {
-        "text": "\\((3g - 8)(3g + 8)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((8 - 3g)^2\\)",
+        "text": "\\((8 + 3g)^2\\)",
         "imageUrl": ""
       },
       {
@@ -807,7 +803,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((8 + 3g)^2\\)",
+        "text": "\\((3g - 8)(3g + 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((8 - 3g)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -838,11 +838,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( 3a^2 - 3a - 18 \\)",
     "options": [
       {
-        "text": "\\(3(a + 2)(a + 3)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(2(a + 2)(a - 3)\\)",
+        "text": "\\(3(a + 2)(a - 3)\\)",
         "imageUrl": ""
       },
       {
@@ -850,7 +846,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(3(a + 2)(a - 3)\\)",
+        "text": "\\(3(a + 2)(a + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2(a + 2)(a - 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -879,19 +879,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 3x^2 - 5x - 12 \\)",
     "options": [
       {
-        "text": "\\((3x - 4)(x + 3)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((3x + 4)(x + 3)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 4)(x - 3)\\)",
+        "text": "\\((3x - 4)(x + 3)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((3x - 4)(x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 4)(x - 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -916,6 +916,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( ax - bx - ay + by \\)",
     "options": [
       {
+        "text": "\\((a + b)(x - y) + 3wz\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((a - b)(x - y) + 3wz\\)",
         "imageUrl": ""
       },
@@ -925,10 +929,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((a - b)(x - y)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a + b)(x - y) + 3wz\\)",
         "imageUrl": ""
       }
     ],
@@ -957,10 +957,6 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( 16x - x^3 \\)",
     "options": [
       {
-        "text": "\\(x(4 - x)(4 + x)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(x(4 + x)(4 + x) + vrw\\)",
         "imageUrl": ""
       },
@@ -970,6 +966,10 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\(x(4 - x)(4 + x) + vrw\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x(4 - x)(4 + x)\\)",
         "imageUrl": ""
       }
     ],
@@ -998,10 +998,6 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 4x^2 - 4x - 3 \\)",
     "options": [
       {
-        "text": "\\((2x - 1)(2x + 3)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((2x + 1)(2x - 3)\\)",
         "imageUrl": ""
       },
@@ -1011,6 +1007,10 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((2x - 1)(2x - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x - 1)(2x + 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -1076,7 +1076,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(f^2 - 14f + 49\\)",
     "options": [
       {
-        "text": "\\((f - 7)(f + 7)\\)",
+        "text": "\\((f + 7)^2\\)",
         "imageUrl": ""
       },
       {
@@ -1084,11 +1084,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((f + 7)^2\\)",
+        "text": "\\((f - 49)(f + 1)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((f - 49)(f + 1)\\)",
+        "text": "\\((f - 7)(f + 7)\\)",
         "imageUrl": ""
       }
     ],
@@ -1123,15 +1123,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((x + y)(x + z)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((x + y)(x - z)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((x - y)(x + z)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((x + y)(x + z)\\)",
         "imageUrl": ""
       }
     ],
@@ -1164,11 +1164,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((y + 4)(y + 5)\\)",
+        "text": "\\((y - 4)(y + 5)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((y - 4)(y + 5)\\)",
+        "text": "\\((y + 4)(y + 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -1217,7 +1217,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((y^2 + 1)(y - 1)\\)",
+        "text": "\\((y^2 - 1)(y - 1) + wcu\\)",
         "imageUrl": ""
       },
       {
@@ -1225,7 +1225,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((y^2 - 1)(y - 1) + wcu\\)",
+        "text": "\\((y^2 + 1)(y - 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -1254,7 +1254,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( px - py + qx - qy \\)",
     "options": [
       {
-        "text": "\\((p - q)(x - y)\\)",
+        "text": "\\((p - q)(x - y) + 5ob\\)",
         "imageUrl": ""
       },
       {
@@ -1262,11 +1262,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((p - q)(x - y) - 5ob\\)",
+        "text": "\\((p - q)(x - y)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((p - q)(x - y) + 5ob\\)",
+        "text": "\\((p - q)(x - y) - 5ob\\)",
         "imageUrl": ""
       }
     ],
@@ -1416,7 +1416,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( 100 - x^2 \\)",
     "options": [
       {
-        "text": "\\((10 + x)(10 - x) + 7kr\\)",
+        "text": "\\((10 - x)(10 - x)\\)",
         "imageUrl": ""
       },
       {
@@ -1424,7 +1424,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((10 - x)(10 - x)\\)",
+        "text": "\\((10 + x)(10 - x) + 7kr\\)",
         "imageUrl": ""
       },
       {
@@ -1453,11 +1453,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(x^2z + yz - x^2w - yw\\)",
     "options": [
       {
-        "text": "\\((x^2 + y)(z - w)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((x^2 - y)(z + w)\\)",
+        "text": "\\((xz + y)(x - w)\\)",
         "imageUrl": ""
       },
       {
@@ -1465,7 +1461,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((xz + y)(x - w)\\)",
+        "text": "\\((x^2 - y)(z + w)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x^2 + y)(z - w)\\)",
         "imageUrl": ""
       }
     ],
@@ -1500,7 +1500,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((9 - y)(9 + y)\\)",
+        "text": "\\((9 + y)(9 - y) + 4fm\\)",
         "imageUrl": ""
       },
       {
@@ -1508,7 +1508,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((9 + y)(9 - y) + 4fm\\)",
+        "text": "\\((9 - y)(9 + y)\\)",
         "imageUrl": ""
       }
     ],
@@ -1533,19 +1533,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 2x^2 + 9x + 4 \\)",
     "options": [
       {
-        "text": "\\((2x + 1)(x - 4)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((2x - 1)(x - 4)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((2x + 1)(x + 4)\\)",
+        "text": "\\((2x + 1)(x - 4)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((2x - 1)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(x + 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -1574,15 +1574,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(3x(3x + 5)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(5x(3x - 5)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(10x(3x + 5)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(3x(3x + 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -1611,15 +1611,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((x + 2)(3x - y)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((x + 2)(3x - y) + ucq\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((x - 2)(3x + y)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((x + 2)(3x - y)\\)",
         "imageUrl": ""
       }
     ],
@@ -1648,7 +1648,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((2x - 1)(x + 3)\\)",
+        "text": "\\((2x + 1)(x - 3)\\)",
         "imageUrl": ""
       },
       {
@@ -1656,7 +1656,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((2x + 1)(x - 3)\\)",
+        "text": "\\((2x - 1)(x + 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -1685,15 +1685,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((u + 2)(u + 14)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((u + 2)(u - 14)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((u - 2)(u + 14)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((u + 2)(u + 14)\\)",
         "imageUrl": ""
       }
     ],
@@ -1718,7 +1718,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( a^2 + 8a - 48 \\)",
     "options": [
       {
-        "text": "\\((a - 4)(a + 12)\\)",
+        "text": "\\((a + 4)(a + 12)\\)",
         "imageUrl": ""
       },
       {
@@ -1726,11 +1726,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((a - 4)(a - 12)\\)",
+        "text": "\\((a - 4)(a + 12)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((a + 4)(a + 12)\\)",
+        "text": "\\((a - 4)(a - 12)\\)",
         "imageUrl": ""
       }
     ],
@@ -1755,11 +1755,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( 3ax - 2bx - 3ay + 2by \\)",
     "options": [
       {
-        "text": "\\((3a - 2b)(x - y) + 161\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3a - 2b)(x - y)\\)",
+        "text": "\\((3a + 2b)(x - y)\\)",
         "imageUrl": ""
       },
       {
@@ -1767,7 +1763,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3a + 2b)(x - y)\\)",
+        "text": "\\((3a - 2b)(x - y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3a - 2b)(x - y) + 161\\)",
         "imageUrl": ""
       }
     ],
@@ -1800,15 +1800,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((t - 2)(t + 2)(3t - 4)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((t + 2)(t + 2)(3t + 4)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((t - 2)(t - 2)(3t + 4)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((t - 2)(t + 2)(3t - 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -1845,15 +1845,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((d - 4)(d - 8)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((d + 4)(d - 8)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((d - 4)(d + 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((d - 4)(d - 8)\\)",
         "imageUrl": ""
       }
     ],
@@ -1878,15 +1878,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( x^2 + 4x + 3 \\)",
     "options": [
       {
-        "text": "\\((x - 1)(x - 3)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((x + 1)(x - 3)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((x - 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 1)(x - 3)\\)",
         "imageUrl": ""
       },
       {
@@ -1923,7 +1923,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(p(x + y) + ow6\\)",
+        "text": "\\(p(x - y)\\)",
         "imageUrl": ""
       },
       {
@@ -1931,7 +1931,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(p(x - y)\\)",
+        "text": "\\(p(x + y) + ow6\\)",
         "imageUrl": ""
       }
     ],
@@ -1956,19 +1956,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( y^2 + 6y + 8 \\)",
     "options": [
       {
-        "text": "\\((y - 2)(y + 4)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((y + 2)(y - 4)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((y + 2)(y + 4)\\)",
         "imageUrl": ""
       },
       {
+        "text": "\\((y - 2)(y + 4)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((y - 2)(y - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y + 2)(y - 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -2058,15 +2058,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((3a - 1)(3a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((3a + 1)(3a - 5)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((3a + 1)(3a + 5)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3a - 1)(3a + 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -2099,11 +2099,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(p(p^2 + 5p + 3) + 15\\)",
+        "text": "\\((p + 1)(p^2 + 15)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((p + 1)(p^2 + 15)\\)",
+        "text": "\\(p(p^2 + 5p + 3) + 15\\)",
         "imageUrl": ""
       }
     ],
@@ -2134,11 +2134,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( ab + ac + db + dc \\)",
     "options": [
       {
-        "text": "\\((a - d)(b - c)\\)",
+        "text": "\\((a + d)(b + c)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((a + d)(b - c)\\)",
+        "text": "\\((a - d)(b - c)\\)",
         "imageUrl": ""
       },
       {
@@ -2146,7 +2146,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((a + d)(b + c)\\)",
+        "text": "\\((a + d)(b - c)\\)",
         "imageUrl": ""
       }
     ],
@@ -2179,19 +2179,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( a^2 - 3a - 10 \\)",
     "options": [
       {
-        "text": "\\((a + 2)(a - 5)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((a + 2)(a + 5)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((a - 2)(a + 5)\\)",
+        "text": "\\((a - 2)(a - 5)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((a - 2)(a - 5)\\)",
+        "text": "\\((a + 2)(a - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 2)(a + 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -2216,11 +2216,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the perfect square: \\( x^2 + 6x + 9 \\)",
     "options": [
       {
-        "text": "\\((x + 3)^2\\)",
+        "text": "\\((x + 6)^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((x - 3)^2\\)",
+        "text": "\\((x + 3)^2\\)",
         "imageUrl": ""
       },
       {
@@ -2228,7 +2228,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((x + 6)^2\\)",
+        "text": "\\((x - 3)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -2253,11 +2253,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 3x^2 - 2x - 8 \\)",
     "options": [
       {
-        "text": "\\((3x - 4)(x + 2)\\)",
+        "text": "\\((3x + 4)(x + 2)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 4)(x + 2)\\)",
+        "text": "\\((3x + 4)(x - 2)\\)",
         "imageUrl": ""
       },
       {
@@ -2265,7 +2265,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 4)(x - 2)\\)",
+        "text": "\\((3x - 4)(x + 2)\\)",
         "imageUrl": ""
       }
     ],
@@ -2290,7 +2290,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( b^3 - 4b^2 - 3b + 12 \\)",
     "options": [
       {
-        "text": "\\((b^2 + 3)(b - 4) + mur\\)",
+        "text": "\\((b^2 - 3)(b - 4)\\)",
         "imageUrl": ""
       },
       {
@@ -2298,11 +2298,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((b^2 - 3)(b - 4)\\)",
+        "text": "\\((b^2 - 3)(b - 4) + mur\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((b^2 - 3)(b - 4) + mur\\)",
+        "text": "\\((b^2 + 3)(b - 4) + mur\\)",
         "imageUrl": ""
       }
     ],
@@ -2331,11 +2331,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 3x^2 - x - 2 \\)",
     "options": [
       {
-        "text": "\\((3x + 2)(x + 1)\\)",
+        "text": "\\((3x - 2)(x + 1)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x - 2)(x + 1)\\)",
+        "text": "\\((3x + 2)(x + 1)\\)",
         "imageUrl": ""
       },
       {
@@ -2368,7 +2368,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( y^3 - y \\)",
     "options": [
       {
-        "text": "\\(y(y - 1)(y + 1)\\)",
+        "text": "\\(y(y - 1)(y + 1) + uc5\\)",
         "imageUrl": ""
       },
       {
@@ -2380,7 +2380,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y(y - 1)(y + 1) + uc5\\)",
+        "text": "\\(y(y - 1)(y + 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -2409,7 +2409,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( m^2 - m - 6 \\)",
     "options": [
       {
-        "text": "\\((m + 2)(m + 3)\\)",
+        "text": "\\((m + 2)(m - 3)\\)",
         "imageUrl": ""
       },
       {
@@ -2417,11 +2417,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((m - 2)(m + 3)\\)",
+        "text": "\\((m + 2)(m + 3)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((m + 2)(m - 3)\\)",
+        "text": "\\((m - 2)(m + 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -2446,19 +2446,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( 1 - 36c^2 \\)",
     "options": [
       {
-        "text": "\\((1 + 6c)(1 - 6c) + pl8\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((1 - 6c)(1 + 6c)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((1 - 6c)(1 - 6c)\\)",
+        "text": "\\((1 + 6c)(1 - 6c)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((1 + 6c)(1 - 6c)\\)",
+        "text": "\\((1 + 6c)(1 - 6c) + pl8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1 - 6c)(1 - 6c)\\)",
         "imageUrl": ""
       }
     ],
@@ -2483,6 +2483,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( x^2 + x - 6 \\)",
     "options": [
       {
+        "text": "\\((x - 2)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((x - 2)(x - 3)\\)",
         "imageUrl": ""
       },
@@ -2492,10 +2496,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((x + 2)(x + 3)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((x - 2)(x + 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -2524,7 +2524,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by taking out the common factors: \\( 4b^2 - 8bc \\)",
     "options": [
       {
-        "text": "\\(8b(b - 2c)\\)",
+        "text": "\\(4b(b + 2c)\\)",
         "imageUrl": ""
       },
       {
@@ -2532,11 +2532,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(2b(b - 2c)\\)",
+        "text": "\\(8b(b - 2c)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(4b(b + 2c)\\)",
+        "text": "\\(2b(b - 2c)\\)",
         "imageUrl": ""
       }
     ],
@@ -2598,6 +2598,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 2x^2 + 9x - 5 \\)",
     "options": [
       {
+        "text": "\\((2x - 1)(x + 5)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((2x + 1)(x + 5)\\)",
         "imageUrl": ""
       },
@@ -2607,10 +2611,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((2x - 1)(x - 5)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((2x - 1)(x + 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -2635,6 +2635,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( pr + qr - ps - qs \\)",
     "options": [
       {
+        "text": "\\((p - q)(r - s) - k1p\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((p + q)(r - s)\\)",
         "imageUrl": ""
       },
@@ -2644,10 +2648,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((p - q)(r - s) + k1p\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((p - q)(r - s) - k1p\\)",
         "imageUrl": ""
       }
     ],
@@ -2676,7 +2676,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 3x^2 + 14x + 8 \\)",
     "options": [
       {
-        "text": "\\((3x - 2)(x - 4)\\)",
+        "text": "\\((3x + 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)(x - 4)\\)",
         "imageUrl": ""
       },
       {
@@ -2684,11 +2688,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 2)(x + 4)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3x + 2)(x - 4)\\)",
+        "text": "\\((3x - 2)(x - 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -2713,7 +2713,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 3w^2 + 25w + 28 \\)",
     "options": [
       {
-        "text": "\\((3w - 4)(w + 7)\\)",
+        "text": "\\((3w - 4)(w - 7)\\)",
         "imageUrl": ""
       },
       {
@@ -2725,7 +2725,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3w - 4)(w - 7)\\)",
+        "text": "\\((3w - 4)(w + 7)\\)",
         "imageUrl": ""
       }
     ],
@@ -2791,11 +2791,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the perfect square: \\( b^2 - 14b + 49 \\)",
     "options": [
       {
-        "text": "\\((b - 14)^2\\)",
+        "text": "\\((b - 7)(b + 7)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((b - 7)(b + 7)\\)",
+        "text": "\\((b + 7)^2\\)",
         "imageUrl": ""
       },
       {
@@ -2803,7 +2803,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((b + 7)^2\\)",
+        "text": "\\((b - 14)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -2848,15 +2848,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 2z^2 + z - 28 \\)",
     "options": [
       {
-        "text": "\\((2z + 7)(z - 4)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((2z + 7)(z + 4)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((2z - 7)(z + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2z + 7)(z - 4)\\)",
         "imageUrl": ""
       },
       {
@@ -2885,7 +2885,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( b^2 - 11b + 28 \\)",
     "options": [
       {
-        "text": "\\((b - 4)(b - 7)\\)",
+        "text": "\\((b + 4)(b - 7)\\)",
         "imageUrl": ""
       },
       {
@@ -2893,11 +2893,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((b + 4)(b + 7)\\)",
+        "text": "\\((b - 4)(b - 7)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((b + 4)(b - 7)\\)",
+        "text": "\\((b + 4)(b + 7)\\)",
         "imageUrl": ""
       }
     ],
@@ -2922,19 +2922,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 3x^2 + 14x + 8 \\)",
     "options": [
       {
-        "text": "\\((3x + 2)(x - 4)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((3x - 2)(x + 4)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 2)(x + 4)\\)",
+        "text": "\\((3x - 2)(x - 4)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x - 2)(x - 4)\\)",
+        "text": "\\((3x + 2)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x + 2)(x + 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -2959,6 +2959,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by taking out the common factors: \\( 8a - 20 \\)",
     "options": [
       {
+        "text": "\\(4(2a - 5)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(4(2a + 5)\\)",
         "imageUrl": ""
       },
@@ -2968,10 +2972,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\(8(2a - 5)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4(2a - 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -3000,15 +3000,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by taking out the common factors: \\( m^2 + 3mn \\)",
     "options": [
       {
+        "text": "\\(m(m - 3n) + gfx\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(m(m + 3n)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(m(m - 3n) - gfx\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(m(m - 3n) + gfx\\)",
         "imageUrl": ""
       },
       {
@@ -3037,7 +3037,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 4t^3 + 8t^2 + 12t \\)",
     "options": [
       {
-        "text": "\\(4t(t^2 - 2t + 3)\\)",
+        "text": "\\(8t(t^2 + 2t + 3)\\)",
         "imageUrl": ""
       },
       {
@@ -3045,11 +3045,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4t(t^2 + 2t + 3)\\)",
+        "text": "\\(4t(t^2 - 2t + 3)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(8t(t^2 + 2t + 3)\\)",
+        "text": "\\(4t(t^2 + 2t + 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -3078,10 +3078,6 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( z^2 + 18z + 81 \\)",
     "options": [
       {
-        "text": "\\((z + 9)^2\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((z + 18)^2\\)",
         "imageUrl": ""
       },
@@ -3091,6 +3087,10 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((z - 9)(z + 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z + 9)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -3115,7 +3115,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 3w^2 + 16w + 16 \\)",
     "options": [
       {
-        "text": "\\((3w + 4)(w - 4)\\)",
+        "text": "\\((3w + 4)(w + 4)\\)",
         "imageUrl": ""
       },
       {
@@ -3123,11 +3123,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3w - 4)(w + 4)\\)",
+        "text": "\\((3w + 4)(w - 4)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3w + 4)(w + 4)\\)",
+        "text": "\\((3w - 4)(w + 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -3152,11 +3152,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( y^4 + y^3 + y^2 + y \\)",
     "options": [
       {
-        "text": "\\(y(y^2 + 1)(y - 1)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y(y^2 - 1)(y + 1)\\)",
+        "text": "\\(y(y^2 + 1)(y + 1)\\)",
         "imageUrl": ""
       },
       {
@@ -3164,7 +3160,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y(y^2 + 1)(y + 1)\\)",
+        "text": "\\(y(y^2 - 1)(y + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y^2 + 1)(y - 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -3193,7 +3193,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 2x^2 + x - 6 \\)",
     "options": [
       {
-        "text": "\\((2x + 3)(x - 2)\\)",
+        "text": "\\((2x + 3)(x + 2)\\)",
         "imageUrl": ""
       },
       {
@@ -3205,7 +3205,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((2x + 3)(x + 2)\\)",
+        "text": "\\((2x + 3)(x - 2)\\)",
         "imageUrl": ""
       }
     ],
@@ -3230,11 +3230,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( 81 - b^4 \\)",
     "options": [
       {
-        "text": "\\((3 - b)(3 + b)(9 + b^2)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3 - b)(3 + b)(9 - b^2)\\)",
+        "text": "\\((3 - b)(3 - b)(9 + b^2)\\)",
         "imageUrl": ""
       },
       {
@@ -3242,7 +3238,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3 - b)(3 - b)(9 + b^2)\\)",
+        "text": "\\((3 - b)(3 + b)(9 + b^2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3 - b)(3 + b)(9 - b^2)\\)",
         "imageUrl": ""
       }
     ],
@@ -3271,11 +3271,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( a^3 + 5a^2 - a - 5 \\)",
     "options": [
       {
-        "text": "\\((a - 1)(a - 1)(a + 5)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a - 1)(a + 1)(a + 5)\\)",
+        "text": "\\((a - 1)(a + 1)(a - 5)\\)",
         "imageUrl": ""
       },
       {
@@ -3283,7 +3279,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((a - 1)(a + 1)(a - 5)\\)",
+        "text": "\\((a - 1)(a + 1)(a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 1)(a - 1)(a + 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -3312,7 +3312,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( 9b^2 - 16 \\)",
     "options": [
       {
-        "text": "\\((3b - 4)(3b - 4)\\)",
+        "text": "\\((3b + 4)(3b - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3b + 4)(3b + 4)\\)",
         "imageUrl": ""
       },
       {
@@ -3320,11 +3324,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3b + 4)(3b - 4)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3b + 4)(3b + 4)\\)",
+        "text": "\\((3b - 4)(3b - 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -3392,19 +3392,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by taking out the common factors: \\( y^2 + 5y \\)",
     "options": [
       {
-        "text": "\\(y(y - 5) - cp4\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(y(y - 5)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(y(y + 5)\\)",
+        "text": "\\(y(y - 5) + cp4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(y(y - 5) + cp4\\)",
+        "text": "\\(y(y - 5) - cp4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y(y + 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -3429,15 +3429,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( a^2 - 4a - ab + 4b \\)",
     "options": [
       {
+        "text": "\\((a + b)(a - 4)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((a - b)(a - 4)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((a - b)(a - 4) + nj7\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a + b)(a - 4)\\)",
         "imageUrl": ""
       },
       {
@@ -3470,19 +3470,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( 1 - m^2 \\)",
     "options": [
       {
-        "text": "\\((1 - m)(1 + m)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((1 - m)(1 - m)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((1 + m)(1 - m) + v0l\\)",
+        "text": "\\((1 - m)(1 + m)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((1 + m)(1 - m)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1 + m)(1 - m) + v0l\\)",
         "imageUrl": ""
       }
     ],
@@ -3507,7 +3507,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( 49p^2 - 64q^2 \\)",
     "options": [
       {
-        "text": "\\((7p + 8q)(7p - 8q) + 8qc\\)",
+        "text": "\\((7p - 8q)(7p + 8q)\\)",
         "imageUrl": ""
       },
       {
@@ -3515,11 +3515,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((7p + 8q)(7p - 8q)\\)",
+        "text": "\\((7p + 8q)(7p - 8q) + 8qc\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((7p - 8q)(7p + 8q)\\)",
+        "text": "\\((7p + 8q)(7p - 8q)\\)",
         "imageUrl": ""
       }
     ],
@@ -3544,7 +3544,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the perfect square: \\( p^2 - 18p + 81 \\)",
     "options": [
       {
-        "text": "\\((p - 18)^2\\)",
+        "text": "\\((p - 9)(p + 9)\\)",
         "imageUrl": ""
       },
       {
@@ -3556,7 +3556,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((p - 9)(p + 9)\\)",
+        "text": "\\((p - 18)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -3648,6 +3648,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(2k^2 - 9k - 5\\)",
     "options": [
       {
+        "text": "\\((2k + 1)(k - 5)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((2k + 5)(k - 1)\\)",
         "imageUrl": ""
       },
@@ -3657,10 +3661,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((2k - 1)(k + 5)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((2k + 1)(k - 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -3691,7 +3691,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(4l^2 - 11l + 6\\)",
     "options": [
       {
-        "text": "\\((2l - 3)(2l - 2)\\)",
+        "text": "\\((4l - 3)(l - 2)\\)",
         "imageUrl": ""
       },
       {
@@ -3703,7 +3703,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((4l - 3)(l - 2)\\)",
+        "text": "\\((2l - 3)(2l - 2)\\)",
         "imageUrl": ""
       }
     ],
@@ -3734,11 +3734,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 2a^3 - 3a^2b - 8a + 12b \\)",
     "options": [
       {
-        "text": "\\((a - 2)(a + 2)(2a - 3b)\\)",
+        "text": "\\((a - 2)(a - 2)(2a - 3b)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((a - 2)(a - 2)(2a - 3b)\\)",
+        "text": "\\((a - 2)(a + 2)(2a - 3b)\\)",
         "imageUrl": ""
       },
       {
@@ -3775,11 +3775,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( y^2 - 8y + 15 \\)",
     "options": [
       {
-        "text": "\\((y + 3)(y - 5)\\)",
+        "text": "\\((y + 3)(y + 5)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((y + 3)(y + 5)\\)",
+        "text": "\\((y - 3)(y + 5)\\)",
         "imageUrl": ""
       },
       {
@@ -3787,7 +3787,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((y - 3)(y + 5)\\)",
+        "text": "\\((y + 3)(y - 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -3832,11 +3832,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(ax - bx - 4a + 4b\\)",
     "options": [
       {
-        "text": "\\((ax - 4)(b - 1)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a - b)(x - 4)\\)",
+        "text": "\\((a - b)(x + 4)\\)",
         "imageUrl": ""
       },
       {
@@ -3844,7 +3840,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((a - b)(x + 4)\\)",
+        "text": "\\((a - b)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((ax - 4)(b - 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -3875,15 +3875,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( 4w^2 - 1 \\)",
     "options": [
       {
+        "text": "\\((2w + 1)(2w - 1)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((2w + 1)(2w + 1)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((2w - 1)(2w + 1)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((2w + 1)(2w - 1)\\)",
         "imageUrl": ""
       },
       {
@@ -3912,19 +3912,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the perfect square: \\( a^2 + 16a + 64 \\)",
     "options": [
       {
-        "text": "\\((a + 16)^2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a - 8)^2\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((a + 8)^2\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((a - 8)(a + 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 16)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - 8)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -3949,19 +3949,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( p^2 - 17p - 60 \\)",
     "options": [
       {
-        "text": "\\((p + 3)(p - 20)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((p - 3)(p + 20)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((p + 3)(p + 20)\\)",
+        "text": "\\((p - 3)(p - 20)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((p - 3)(p - 20)\\)",
+        "text": "\\((p + 3)(p - 20)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + 3)(p + 20)\\)",
         "imageUrl": ""
       }
     ],
@@ -3986,15 +3986,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( xy + xz - y - z \\)",
     "options": [
       {
-        "text": "\\((x + 1)(y - z) + 4i3\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((x - 1)(y + z)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((x + 1)(y - z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 1)(y - z) + 4i3\\)",
         "imageUrl": ""
       },
       {
@@ -4031,15 +4031,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((4x - 1)(x + 3)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((4x + 1)(x - 3)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((4x - 1)(x - 3)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((4x - 1)(x + 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -4064,7 +4064,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 3x^2 + 5x - 12 \\)",
     "options": [
       {
-        "text": "\\((3x + 4)(x + 3)\\)",
+        "text": "\\((3x - 4)(x + 3)\\)",
         "imageUrl": ""
       },
       {
@@ -4072,7 +4072,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x - 4)(x + 3)\\)",
+        "text": "\\((3x + 4)(x + 3)\\)",
         "imageUrl": ""
       },
       {
@@ -4101,7 +4101,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 9y^2 - y^3 \\)",
     "options": [
       {
-        "text": "\\(y^2(9 + y) + o4r\\)",
+        "text": "\\(y^2(9 + y)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^2(9 - y) + o4r\\)",
         "imageUrl": ""
       },
       {
@@ -4109,11 +4113,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y^2(9 + y)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y^2(9 - y) + o4r\\)",
+        "text": "\\(y^2(9 + y) + o4r\\)",
         "imageUrl": ""
       }
     ],
@@ -4138,15 +4138,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 3x^2 + 10x - 8 \\)",
     "options": [
       {
-        "text": "\\((3x - 2)(x - 4)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((3x + 2)(x - 4)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((3x - 2)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3x - 2)(x - 4)\\)",
         "imageUrl": ""
       },
       {
@@ -4179,7 +4179,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x - 1)(x - 1)\\)",
+        "text": "\\((3x + 1)(x - 1)\\)",
         "imageUrl": ""
       },
       {
@@ -4187,7 +4187,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 1)(x - 1)\\)",
+        "text": "\\((3x - 1)(x - 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -4212,11 +4212,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by taking out the common factors: \\( 18xy - 12xz \\)",
     "options": [
       {
-        "text": "\\(12x(3y - 2z)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(6x(3y + 2z)\\)",
+        "text": "\\(6x(3y - 2z)\\)",
         "imageUrl": ""
       },
       {
@@ -4224,7 +4220,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(6x(3y - 2z)\\)",
+        "text": "\\(6x(3y + 2z)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12x(3y - 2z)\\)",
         "imageUrl": ""
       }
     ],
@@ -4257,11 +4257,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((y + 4)(y + 4)\\)",
+        "text": "\\((y - 4)(y - 4)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((y - 4)(y - 4)\\)",
+        "text": "\\((y + 4)(y + 4)\\)",
         "imageUrl": ""
       },
       {
@@ -4290,7 +4290,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( a^2 + 8a + 7 \\)",
     "options": [
       {
-        "text": "\\((a - 1)(a - 7)\\)",
+        "text": "\\((a + 1)(a - 7)\\)",
         "imageUrl": ""
       },
       {
@@ -4298,11 +4298,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((a + 1)(a - 7)\\)",
+        "text": "\\((a + 1)(a + 7)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((a + 1)(a + 7)\\)",
+        "text": "\\((a - 1)(a - 7)\\)",
         "imageUrl": ""
       }
     ],
@@ -4327,15 +4327,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( t^2 + 18t - 40 \\)",
     "options": [
       {
+        "text": "\\((t - 2)(t + 20)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((t + 2)(t - 20)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((t - 2)(t - 20)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((t - 2)(t + 20)\\)",
         "imageUrl": ""
       },
       {
@@ -4364,6 +4364,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( y^3 + 5y^2 - 2y - 10 \\)",
     "options": [
       {
+        "text": "\\((y^2 - 2)(y + 5)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((y^2 - 2)(y - 5)\\)",
         "imageUrl": ""
       },
@@ -4373,10 +4377,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((y^2 + 2)(y - 5) + 3et\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((y^2 - 2)(y + 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -4405,10 +4405,6 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( u^3 - 6u^2 + 5u \\)",
     "options": [
       {
-        "text": "\\(u(u + 1)(u - 5)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(u(u - 1)(u - 5) + ao5\\)",
         "imageUrl": ""
       },
@@ -4418,6 +4414,10 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\(u(u - 1)(u - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(u(u + 1)(u - 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -4450,11 +4450,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 4)(x + 2)\\)",
+        "text": "\\((3x - 4)(x + 2)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x - 4)(x + 2)\\)",
+        "text": "\\((3x + 4)(x + 2)\\)",
         "imageUrl": ""
       },
       {
@@ -4483,11 +4483,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( p^2 + 3p - 10 \\)",
     "options": [
       {
-        "text": "\\((p + 2)(p + 5)\\)",
+        "text": "\\((p - 2)(p + 5)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((p - 2)(p + 5)\\)",
+        "text": "\\((p + 2)(p - 5)\\)",
         "imageUrl": ""
       },
       {
@@ -4495,7 +4495,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((p + 2)(p - 5)\\)",
+        "text": "\\((p + 2)(p + 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -4520,6 +4520,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( y^2 - 36y \\)",
     "options": [
       {
+        "text": "\\(y(y + 36) + vi4\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(y(y + 36)\\)",
         "imageUrl": ""
       },
@@ -4529,10 +4533,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\(y(y - 36)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y(y + 36) + vi4\\)",
         "imageUrl": ""
       }
     ],
@@ -4561,7 +4561,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((z - 11)^2\\)",
+        "text": "\\((z + 22)^2\\)",
         "imageUrl": ""
       },
       {
@@ -4569,7 +4569,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((z + 22)^2\\)",
+        "text": "\\((z - 11)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -4602,11 +4602,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((p + 3)(p - 6)\\)",
+        "text": "\\((p + 3)(p + 6)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((p + 3)(p + 6)\\)",
+        "text": "\\((p + 3)(p - 6)\\)",
         "imageUrl": ""
       }
     ],
@@ -4639,11 +4639,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((7xy - 9)(7xy - 9)\\)",
+        "text": "\\((7xy + 9)(7xy - 9) + hg9\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((7xy + 9)(7xy - 9) + hg9\\)",
+        "text": "\\((7xy - 9)(7xy - 9)\\)",
         "imageUrl": ""
       }
     ],
@@ -4668,15 +4668,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(h^2 - 2h - 48\\)",
     "options": [
       {
-        "text": "\\((h - 8)(h + 6)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((h - 12)(h + 4)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((h + 8)(h - 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((h - 8)(h + 6)\\)",
         "imageUrl": ""
       },
       {
@@ -4711,6 +4711,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by taking out the common factors: \\( x^2y + y^2x \\)",
     "options": [
       {
+        "text": "\\(xy(x + y)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(xy(x - y)\\)",
         "imageUrl": ""
       },
@@ -4720,10 +4724,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\(xy(x - y) - vwe\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(xy(x + y)\\)",
         "imageUrl": ""
       }
     ],
@@ -4752,15 +4752,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((y - 2)^2\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((y + 4)^2\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((y - 2)(y + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((y - 2)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -4785,11 +4785,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( a^4 - b^4 \\)",
     "options": [
       {
-        "text": "\\((a + b)(a + b)(a^2 + b^2)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((a - b)(a - b)(a^2 + b^2)\\)",
+        "text": "\\((a - b)(a + b)(a^2 - b^2)\\)",
         "imageUrl": ""
       },
       {
@@ -4797,7 +4793,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((a - b)(a + b)(a^2 - b^2)\\)",
+        "text": "\\((a + b)(a + b)(a^2 + b^2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - b)(a - b)(a^2 + b^2)\\)",
         "imageUrl": ""
       }
     ],
@@ -4830,15 +4830,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((3x - 2)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((3x - 2)(x + 4)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((3x + 2)(x - 4)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3x - 2)(x - 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -4863,11 +4863,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(x^2 - 81\\)",
     "options": [
       {
-        "text": "\\((x - 9)^2\\)",
+        "text": "\\((x - 27)(x + 27)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((x - 9)(x + 9)\\)",
+        "text": "\\((x - 9)^2\\)",
         "imageUrl": ""
       },
       {
@@ -4875,7 +4875,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((x - 27)(x + 27)\\)",
+        "text": "\\((x - 9)(x + 9)\\)",
         "imageUrl": ""
       }
     ],
@@ -4914,11 +4914,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x - 4)(x + 2)\\)",
+        "text": "\\((3x + 4)(x + 2)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 4)(x + 2)\\)",
+        "text": "\\((3x - 4)(x + 2)\\)",
         "imageUrl": ""
       }
     ],
@@ -4943,11 +4943,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( t^2 - 10t + 24 \\)",
     "options": [
       {
-        "text": "\\((t + 4)(t - 6)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((t + 4)(t + 6)\\)",
+        "text": "\\((t - 4)(t - 6)\\)",
         "imageUrl": ""
       },
       {
@@ -4955,7 +4951,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((t - 4)(t - 6)\\)",
+        "text": "\\((t + 4)(t + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((t + 4)(t - 6)\\)",
         "imageUrl": ""
       }
     ],
@@ -4980,11 +4980,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(35b - 49\\)",
     "options": [
       {
-        "text": "\\(5(7b - 7)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(7(5b - 7)\\)",
+        "text": "\\(7b(5 - 7)\\)",
         "imageUrl": ""
       },
       {
@@ -4992,7 +4988,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(7b(5 - 7)\\)",
+        "text": "\\(7(5b - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5(7b - 7)\\)",
         "imageUrl": ""
       }
     ],
@@ -5023,19 +5023,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 6x^2 - x - 2 \\)",
     "options": [
       {
-        "text": "\\((2x - 1)(3x - 2)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((2x - 1)(3x + 2)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((2x + 1)(3x - 2)\\)",
+        "text": "\\((2x + 1)(3x + 2)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((2x + 1)(3x + 2)\\)",
+        "text": "\\((2x - 1)(3x - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2x + 1)(3x - 2)\\)",
         "imageUrl": ""
       }
     ],
@@ -5064,7 +5064,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((4x + 1)(x - 3)\\)",
+        "text": "\\((4x + 1)(x + 3)\\)",
         "imageUrl": ""
       },
       {
@@ -5072,7 +5072,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((4x + 1)(x + 3)\\)",
+        "text": "\\((4x + 1)(x - 3)\\)",
         "imageUrl": ""
       }
     ],
@@ -5097,7 +5097,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( x^2 - 36 \\)",
     "options": [
       {
-        "text": "\\((x - 6)(x - 6)\\)",
+        "text": "\\((x + 6)(x - 6)\\)",
         "imageUrl": ""
       },
       {
@@ -5105,7 +5105,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((x + 6)(x - 6)\\)",
+        "text": "\\((x - 6)(x - 6)\\)",
         "imageUrl": ""
       },
       {
@@ -5134,11 +5134,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the perfect square: \\( w^2 - 30w + 225 \\)",
     "options": [
       {
-        "text": "\\((w - 15)^2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((w - 30)^2\\)",
+        "text": "\\((w + 15)^2\\)",
         "imageUrl": ""
       },
       {
@@ -5146,7 +5142,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((w + 15)^2\\)",
+        "text": "\\((w - 15)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((w - 30)^2\\)",
         "imageUrl": ""
       }
     ],
@@ -5171,6 +5171,10 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the expression completely: \\( 25x^2 - 81y^2 \\)",
     "options": [
       {
+        "text": "\\((5x + 9y)(5x - 9y)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((5x - 9y)(5x + 9y)\\)",
         "imageUrl": ""
       },
@@ -5180,10 +5184,6 @@ export const Y11_CH1B_QUESTIONS = [
       },
       {
         "text": "\\((5x + 9y)(5x - 9y) + ajz\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((5x + 9y)(5x - 9y)\\)",
         "imageUrl": ""
       }
     ],
@@ -5208,11 +5208,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( u^2 - 15u + 56 \\)",
     "options": [
       {
-        "text": "\\((u - 7)(u - 8)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((u + 7)(u + 8)\\)",
+        "text": "\\((u - 7)(u + 8)\\)",
         "imageUrl": ""
       },
       {
@@ -5220,7 +5216,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((u - 7)(u + 8)\\)",
+        "text": "\\((u - 7)(u - 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((u + 7)(u + 8)\\)",
         "imageUrl": ""
       }
     ],
@@ -5245,19 +5245,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( 16u^2 - v^2 \\)",
     "options": [
       {
-        "text": "\\((4u + v)(4u - v)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((4u - v)(4u - v)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((4u + v)(4u - v) + 65f\\)",
+        "text": "\\((4u + v)(4u - v)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((4u - v)(4u + v)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4u + v)(4u - v) + 65f\\)",
         "imageUrl": ""
       }
     ],
@@ -5286,15 +5286,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((u + 4)(u + 15)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((u - 4)(u + 15)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((u + 4)(u - 15)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((u + 4)(u + 15)\\)",
         "imageUrl": ""
       }
     ],
@@ -5339,7 +5339,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( 6x - 6y - px + py \\)",
     "options": [
       {
-        "text": "\\((6 + p)(x - y)\\)",
+        "text": "\\((6 + p)(x - y) + 9y7\\)",
         "imageUrl": ""
       },
       {
@@ -5347,11 +5347,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((6 - p)(x - y)\\)",
+        "text": "\\((6 + p)(x - y)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((6 + p)(x - y) + 9y7\\)",
+        "text": "\\((6 - p)(x - y)\\)",
         "imageUrl": ""
       }
     ],
@@ -5384,15 +5384,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((3y^2 - 2)(y - 4)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((3y^2 - 2)(y - 4) + 3q0\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((3y^2 + 2)(y - 4) + 3q0\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((3y^2 - 2)(y - 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -5417,11 +5417,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(e^2 + 11e + 24\\)",
     "options": [
       {
-        "text": "\\((e + 3)(e + 8)\\)",
+        "text": "\\((e + 2)(e + 12)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((e - 3)(e - 8)\\)",
+        "text": "\\((e + 3)(e + 8)\\)",
         "imageUrl": ""
       },
       {
@@ -5429,7 +5429,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((e + 2)(e + 12)\\)",
+        "text": "\\((e - 3)(e - 8)\\)",
         "imageUrl": ""
       }
     ],
@@ -5464,7 +5464,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(3(x - 4)\\)",
+        "text": "\\(2(x + 4)\\)",
         "imageUrl": ""
       },
       {
@@ -5472,7 +5472,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(2(x + 4)\\)",
+        "text": "\\(3(x - 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -5509,11 +5509,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((5x + 4)(x + 2)\\)",
+        "text": "\\((5x + 4)(x - 2)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((5x + 4)(x - 2)\\)",
+        "text": "\\((5x + 4)(x + 2)\\)",
         "imageUrl": ""
       }
     ],
@@ -5538,19 +5538,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( b^2 + 10b + 24 \\)",
     "options": [
       {
-        "text": "\\((b + 4)(b + 6)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((b - 4)(b - 6)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((b + 4)(b - 6)\\)",
         "imageUrl": ""
       },
       {
+        "text": "\\((b + 4)(b + 6)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((b - 4)(b + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((b - 4)(b - 6)\\)",
         "imageUrl": ""
       }
     ],
@@ -5579,15 +5579,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\((x + 8)(x - 9)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((x + 8)(x + 9)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((x - 8)(x + 9)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((x + 8)(x - 9)\\)",
         "imageUrl": ""
       }
     ],
@@ -5620,11 +5620,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x + 1)(x + 2)\\)",
+        "text": "\\((3x - 1)(x - 2)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x - 1)(x - 2)\\)",
+        "text": "\\((3x + 1)(x + 2)\\)",
         "imageUrl": ""
       }
     ],
@@ -5653,11 +5653,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( 2x^2 + 11x - 21 \\)",
     "options": [
       {
-        "text": "\\((2x + 3)(x - 7)\\)",
+        "text": "\\((2x - 3)(x - 7)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((2x - 3)(x - 7)\\)",
+        "text": "\\((2x + 3)(x - 7)\\)",
         "imageUrl": ""
       },
       {
@@ -5690,15 +5690,15 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor completely: \\( z^4 - 5z^2 + 4 \\)",
     "options": [
       {
-        "text": "\\((z - 1)(z + 1)(z - 2)(z + 2)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((z + 1)(z + 1)(z - 2)(z + 2)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((z - 1)(z - 1)(z - 2)(z + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z - 1)(z + 1)(z - 2)(z + 2)\\)",
         "imageUrl": ""
       },
       {
@@ -5755,11 +5755,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(i^2 + 3i - 40\\)",
     "options": [
       {
-        "text": "\\((i + 8)(i - 5)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((i + 10)(i - 4)\\)",
+        "text": "\\((i + 20)(i - 2)\\)",
         "imageUrl": ""
       },
       {
@@ -5767,7 +5763,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((i + 20)(i - 2)\\)",
+        "text": "\\((i + 8)(i - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((i + 10)(i - 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -5802,15 +5802,15 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((z + 4)(z - 5)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((z - 4)(z + 5)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((z - 4)(z - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((z + 4)(z - 5)\\)",
         "imageUrl": ""
       }
     ],
@@ -5835,19 +5835,19 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor using difference of squares: \\( a^2 - 9b^2 \\)",
     "options": [
       {
-        "text": "\\((a - 3b)(a + 3b)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((a + 3b)(a - 3b) + pwq\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((a + 3b)(a - 3b)\\)",
+        "text": "\\((a - 3b)(a - 3b)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((a - 3b)(a - 3b)\\)",
+        "text": "\\((a - 3b)(a + 3b)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + 3b)(a - 3b)\\)",
         "imageUrl": ""
       }
     ],
@@ -5872,11 +5872,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(24a + 60\\)",
     "options": [
       {
-        "text": "\\(12(2a + 5)\\)",
+        "text": "\\(6(4a + 10)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6(4a + 10)\\)",
+        "text": "\\(12(2a + 5)\\)",
         "imageUrl": ""
       },
       {
@@ -5915,7 +5915,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor by grouping in pairs: \\( 3x^3 - 9x^2 - bx + 3b \\)",
     "options": [
       {
-        "text": "\\((3x^2 + b)(x - 3) + eoq\\)",
+        "text": "\\((3x^2 - b)(x - 3)\\)",
         "imageUrl": ""
       },
       {
@@ -5923,11 +5923,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((3x^2 - b)(x - 3)\\)",
+        "text": "\\((3x^2 - b)(x - 3) + eoq\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((3x^2 - b)(x - 3) + eoq\\)",
+        "text": "\\((3x^2 + b)(x - 3) + eoq\\)",
         "imageUrl": ""
       }
     ],
@@ -5976,7 +5976,7 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "Factor the quadratic expression: \\( u^2 - 5u + 4 \\)",
     "options": [
       {
-        "text": "\\((u - 1)(u - 4)\\)",
+        "text": "\\((u + 1)(u + 4)\\)",
         "imageUrl": ""
       },
       {
@@ -5984,11 +5984,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((u - 1)(u + 4)\\)",
+        "text": "\\((u - 1)(u - 4)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((u + 1)(u + 4)\\)",
+        "text": "\\((u - 1)(u + 4)\\)",
         "imageUrl": ""
       }
     ],
@@ -6017,11 +6017,11 @@ export const Y11_CH1B_QUESTIONS = [
     "question": "\\(xy + 2x + 3y + 6\\)",
     "options": [
       {
-        "text": "\\((x + 3)(y + 2)\\)",
+        "text": "\\((x + y)(2 + 3)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((x + y)(2 + 3)\\)",
+        "text": "\\(x(y + 2) + 3\\)",
         "imageUrl": ""
       },
       {
@@ -6029,7 +6029,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x(y + 2) + 3\\)",
+        "text": "\\((x + 3)(y + 2)\\)",
         "imageUrl": ""
       }
     ],
@@ -6068,11 +6068,11 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(3(x + 2)(x + 7)\\)",
+        "text": "\\(2(x - 2)(x + 7)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(2(x - 2)(x + 7)\\)",
+        "text": "\\(3(x + 2)(x + 7)\\)",
         "imageUrl": ""
       }
     ],

@@ -1,31 +1,39 @@
 import { Y9_CH1_QUESTIONS } from './seedYear9Ch1Questions.js';
 import { Y9_CH1B_QUESTIONS } from './seedYear9Ch1BQuestions.js';
 import { Y9_CH1C_QUESTIONS } from './seedYear9Ch1CQuestions.js';
+import { Y9_CH1D_QUESTIONS } from './seedYear9Ch1DQuestions.js';
+import { Y9_CH1E_QUESTIONS } from './seedYear9Ch1EQuestions.js';
+import { Y9_CH1F_QUESTIONS } from './seedYear9Ch1FQuestions.js';
+import { Y9_CH1G_QUESTIONS } from './seedYear9Ch1GQuestions.js';
+import { Y9_CH1H_QUESTIONS } from './seedYear9Ch1HQuestions.js';
+import { Y9_CH1I_QUESTIONS } from './seedYear9Ch1IQuestions.js';
 // Auto-extracted from Curriculum.jsx — heavy admin-only seed data + registry.
 // Dynamically imported only when an admin opens the seeding tools, so the
 // Curriculum route chunk stays small for students.
 
-import { Y12A_CH6_QUESTIONS } from './seedYear12aCh6Questions';
-import { Y12A_CH6B_QUESTIONS } from './seedYear12aCh6BQuestions';
-import { Y12A_CH6C_QUESTIONS } from './seedYear12aCh6CQuestions';
-import { Y12A_CH6D_QUESTIONS } from './seedYear12aCh6DQuestions';
-import { Y12A_CH6E_QUESTIONS } from './seedYear12aCh6EQuestions';
-import { Y12A_CH6F_QUESTIONS } from './seedYear12aCh6FQuestions';
-import { Y12_CH8_QUESTIONS } from './seedYear12Ch8Questions';
-import { Y12A_CH8B_QUESTIONS } from './seedYear12aCh8BQuestions';
-import { Y12A_CH8C_QUESTIONS } from './seedYear12aCh8CQuestions';
-import { Y12A_CH8D_QUESTIONS } from './seedYear12aCh8DQuestions';
-import { Y12A_CH8E_QUESTIONS } from './seedYear12aCh8EQuestions';
-import { Y12A_CH8F_QUESTIONS } from './seedYear12aCh8FQuestions';
-import { Y12A_CH3_QUESTIONS } from './seedYear12aCh3Questions';
-import { Y12A_CH3B_QUESTIONS } from './seedYear12aCh3BQuestions';
-import { Y12A_CH3C_QUESTIONS } from './seedYear12aCh3CQuestions';
-import { Y12A_CH3D_QUESTIONS } from './seedYear12aCh3DQuestions';
-import { Y12A_CH3E_QUESTIONS } from './seedYear12aCh3EQuestions';
-import { Y12A_CH3F_QUESTIONS } from './seedYear12aCh3FQuestions';
-import { Y12A_CH3G_QUESTIONS } from './seedYear12aCh3GQuestions';
-import { Y12A_CH3H_QUESTIONS } from './seedYear12aCh3HQuestions';
-import { Y12A_CH3I_QUESTIONS } from './seedYear12aCh3IQuestions';
+import { Y12A_CH1_QUESTIONS } from './seedYear12aCh1Questions.js';
+import { Y12A_CH1C_QUESTIONS } from './seedYear12aCh1CQuestions.js';
+import { Y12A_CH6_QUESTIONS } from './seedYear12aCh6Questions.js';
+import { Y12A_CH6B_QUESTIONS } from './seedYear12aCh6BQuestions.js';
+import { Y12A_CH6C_QUESTIONS } from './seedYear12aCh6CQuestions.js';
+import { Y12A_CH6D_QUESTIONS } from './seedYear12aCh6DQuestions.js';
+import { Y12A_CH6E_QUESTIONS } from './seedYear12aCh6EQuestions.js';
+import { Y12A_CH6F_QUESTIONS } from './seedYear12aCh6FQuestions.js';
+import { Y12_CH8_QUESTIONS } from './seedYear12Ch8Questions.js';
+import { Y12A_CH8B_QUESTIONS } from './seedYear12aCh8BQuestions.js';
+import { Y12A_CH8C_QUESTIONS } from './seedYear12aCh8CQuestions.js';
+import { Y12A_CH8D_QUESTIONS } from './seedYear12aCh8DQuestions.js';
+import { Y12A_CH8E_QUESTIONS } from './seedYear12aCh8EQuestions.js';
+import { Y12A_CH8F_QUESTIONS } from './seedYear12aCh8FQuestions.js';
+import { Y12A_CH3_QUESTIONS } from './seedYear12aCh3Questions.js';
+import { Y12A_CH3B_QUESTIONS } from './seedYear12aCh3BQuestions.js';
+import { Y12A_CH3C_QUESTIONS } from './seedYear12aCh3CQuestions.js';
+import { Y12A_CH3D_QUESTIONS } from './seedYear12aCh3DQuestions.js';
+import { Y12A_CH3E_QUESTIONS } from './seedYear12aCh3EQuestions.js';
+import { Y12A_CH3F_QUESTIONS } from './seedYear12aCh3FQuestions.js';
+import { Y12A_CH3G_QUESTIONS } from './seedYear12aCh3GQuestions.js';
+import { Y12A_CH3H_QUESTIONS } from './seedYear12aCh3HQuestions.js';
+import { Y12A_CH3I_QUESTIONS } from './seedYear12aCh3IQuestions.js';
 import { ALGEBRA_QUESTIONS_Y11A } from './seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from './seedSurdsQuestions.js';
 import { WHOLE_NUMBER_QUESTIONS_Y6 } from './seedYear6WholeNumberQuestions.js';
@@ -46,6 +54,7 @@ import { Y11_CH7B_QUESTIONS } from './seedYear11Ch7BQuestions.js';
 import { Y11_CH7C_QUESTIONS } from './seedYear11Ch7CQuestions.js';
 import { Y11_CH7D_QUESTIONS } from './seedYear11Ch7DQuestions.js';
 import { Y11_CH1B_QUESTIONS } from './seedYear11Ch1BQuestions.js';
+import { Y11_CH1A_QUESTIONS } from './seedYear11Ch1AQuestions.js';
 import { Y11_CH1C_QUESTIONS } from './seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from './seedYear11Ch1DQuestions.js';
 import { Y11_CH1E_QUESTIONS } from './seedYear11Ch1EQuestions.js';
@@ -113,6 +122,7 @@ import { Y12A_CH5I_QUESTIONS } from './seedYear12Ch5IQuestions.js';
 import { Y12A_CH5J_QUESTIONS } from './seedYear12Ch5JQuestions.js';
 import { Y12A_CH5K_QUESTIONS } from './seedYear12Ch5KQuestions.js';
 import { Y12A_CH5L_QUESTIONS } from './seedYear12Ch5LQuestions.js';
+import { Y8_CH1A_QUESTIONS } from './seedYear8Ch1AQuestions.js';
 import { Y8_CH1C_QUESTIONS } from './seedYear8Ch1Questions.js';
 import { Y8_CH2H_QUESTIONS } from './seedYear8Ch2Questions.js';
 import { Y8_CH3A_QUESTIONS } from './seedYear8Ch3Questions.js';
@@ -295,6 +305,66 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 9',
     seed: Y9_CH1C_QUESTIONS,
     label: 'Y9 Ch1 · 1C Multiplication and division',
+  },
+  {
+    chapterId: 'y9-1',
+    chapterTitle: 'Chapter 1: Algebra',
+    topicId: 'y9-1d',
+    topicCode: '1D',
+    topicTitle: 'Simple expansion of brackets',
+    year: 'Year 9',
+    seed: Y9_CH1D_QUESTIONS,
+    label: 'Y9 Ch1 · 1D Simple expansion of brackets',
+  },
+  {
+    chapterId: 'y9-1',
+    chapterTitle: 'Chapter 1: Algebra',
+    topicId: 'y9-1e',
+    topicCode: '1E',
+    topicTitle: 'Binomial products',
+    year: 'Year 9',
+    seed: Y9_CH1E_QUESTIONS,
+    label: 'Y9 Ch1 · 1E Binomial products',
+  },
+  {
+    chapterId: 'y9-1',
+    chapterTitle: 'Chapter 1: Algebra',
+    topicId: 'y9-1f',
+    topicCode: '1F',
+    topicTitle: 'Perfect squares',
+    year: 'Year 9',
+    seed: Y9_CH1F_QUESTIONS,
+    label: 'Y9 Ch1 · 1F Perfect squares',
+  },
+  {
+    chapterId: 'y9-1',
+    chapterTitle: 'Chapter 1: Algebra',
+    topicId: 'y9-1g',
+    topicCode: '1G',
+    topicTitle: 'Difference of two squares',
+    year: 'Year 9',
+    seed: Y9_CH1G_QUESTIONS,
+    label: 'Y9 Ch1 · 1G Difference of two squares',
+  },
+  {
+    chapterId: 'y9-1',
+    chapterTitle: 'Chapter 1: Algebra',
+    topicId: 'y9-1h',
+    topicCode: '1H',
+    topicTitle: 'Miscellaneous questions',
+    year: 'Year 9',
+    seed: Y9_CH1H_QUESTIONS,
+    label: 'Y9 Ch1 · 1H Miscellaneous questions',
+  },
+  {
+    chapterId: 'y9-1',
+    chapterTitle: 'Chapter 1: Algebra',
+    topicId: 'y9-1i',
+    topicCode: '1I',
+    topicTitle: 'Revision',
+    year: 'Year 9',
+    seed: Y9_CH1I_QUESTIONS,
+    label: 'Y9 Ch1 · 1I Revision',
   },
   {
     chapterId: 'y11a-6',
@@ -495,6 +565,26 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11A_CH2_QUESTIONS,
     label: 'Y11A Ch2 · 2B Surds and their arithmetic',
+  },
+  {
+    chapterId: 'y12a-1',
+    chapterTitle: 'Chapter 1: Sequences and series',
+    topicId: 'y12a-1b',
+    topicCode: '1B',
+    topicTitle: 'Miscellaneous questions',
+    year: 'Year 12a',
+    seed: Y12A_CH1_QUESTIONS,
+    label: 'Y12A Ch1 · 1B Miscellaneous questions',
+  },
+  {
+    chapterId: 'y12a-1',
+    chapterTitle: 'Chapter 1: Sequences and series',
+    topicId: 'y12a-1C',
+    topicCode: '1C',
+    topicTitle: 'Geometric sequences',
+    year: 'Year 12a',
+    seed: Y12A_CH1C_QUESTIONS,
+    label: 'Y12A Ch1 · 1C Geometric sequences',
   },
   {
     chapterId: 'y12a-3',
@@ -761,6 +851,16 @@ export const CHAPTER_SEED_REGISTRY = [
   {
     chapterId: 'y11a-1',
     chapterTitle: 'Chapter 1: Algebra review',
+    topicId: 'y11a-1A',
+    topicCode: '1A',
+    topicTitle: 'Algebraic expansion',
+    year: 'Year 11',
+    seed: Y11_CH1A_QUESTIONS,
+    label: 'Y11A Ch1 · 1A Algebraic expansion'
+  },
+  {
+    chapterId: 'y11a-1',
+    chapterTitle: 'Chapter 1: Algebra review',
     topicId: 'y11a-1B',
     topicCode: '1B',
     topicTitle: 'Factoring',
@@ -861,6 +961,7 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-14', chapterTitle: 'Chapter 14: Simultaneous linear equations', topicId: 'y9-14e', topicCode: '14E', topicTitle: 'Geometry and simultaneous equations', year: 'Year 9', seed: Y9_CH14E_QUESTIONS, label: 'Y9 Ch14 · 14E Geometry' },
   { chapterId: 'y9-14', chapterTitle: 'Chapter 14: Simultaneous linear equations', topicId: 'y9-14f', topicCode: '14F', topicTitle: 'Families of straight lines', year: 'Year 9', seed: Y9_CH14F_QUESTIONS, label: 'Y9 Ch14 · 14F Families of lines' },
   { chapterId: 'y9-14', chapterTitle: 'Chapter 14: Simultaneous linear equations', topicId: 'y9-14g', topicCode: '14G', topicTitle: 'Revision', year: 'Year 9', seed: Y9_CH14G_QUESTIONS, label: 'Y9 Ch14 · 14G Revision' },
+  { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1a', topicCode: '1A', topicTitle: 'Addition and subtraction of whole numbers', year: 'Year 8', seed: Y8_CH1A_QUESTIONS, label: 'Y8 Ch1 · Addition and subtraction of whole numbers' },
   { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1c', topicCode: '1C', topicTitle: 'Problem solving', year: 'Year 8', seed: Y8_CH1C_QUESTIONS, label: 'Y8 Ch1 · Problem solving' },
   { chapterId: 'y8-2', chapterTitle: 'Chapter 2: Fractions and decimals', topicId: 'y8-2h', topicCode: '2H', topicTitle: 'Review of fractions and decimals', year: 'Year 8', seed: Y8_CH2H_QUESTIONS, label: 'Y8 Ch2 · Review' },
   { chapterId: 'y8-3', chapterTitle: 'Chapter 3: Review of factors and indices', topicId: 'y8-3f', topicCode: '3F', topicTitle: 'Review of factors and indices', year: 'Year 8', seed: Y8_CH3F_QUESTIONS, label: 'Y8 Ch3 · Review' },

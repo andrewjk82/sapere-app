@@ -321,7 +321,7 @@ const ChallengeReviewView = ({
                   ? null
                   : q.graphData
               }
-              style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7 }}
+              style={{ fontSize: '0.98rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7 }}
             />
             {q.questionImage && (
               <img src={q.questionImage} alt="Question" style={{ width: '100%', maxHeight: '260px', objectFit: 'contain', marginTop: '14px', borderRadius: '14px', background: '#f8fafc' }} />

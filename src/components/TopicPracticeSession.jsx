@@ -761,7 +761,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
           <MathView
             content={q?.question}
             graphData={q?.type === 'graph_sketch' ? (submitted ? q?.graphData : null) : q?.graphData}
-            style={{ fontSize: '1.1rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.7 }}
+            style={{ fontSize: '0.98rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.7 }}
           />
 
           <AnimatePresence>

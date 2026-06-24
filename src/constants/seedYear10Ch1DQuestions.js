@@ -8,9 +8,16 @@ export const Y10_CH1D_QUESTIONS = [
     "a": "212000.00",
     "solutionSteps": [
       {
-        "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text{Answer} = 212000.00\\)",
-        "graphData": null
+        "explanation": "Identify the formula for compound interest.",
+        "workingOut": "\\(A = P(1 + r)^n\\)"
+      },
+      {
+        "explanation": "Identify the given values: principal \\(P\\), rate \\(r\\), and periods \\(n\\), then substitute them.",
+        "workingOut": "\\(\\text{Formula parameters substituted accordingly.}\\)"
+      },
+      {
+        "explanation": "Calculate the final value.",
+        "workingOut": "\\(\\text{Answer} = 212000.00\\)"
       }
     ],
     "t": "Compound interest",
@@ -30,9 +37,16 @@ export const Y10_CH1D_QUESTIONS = [
     "a": "224720.00",
     "solutionSteps": [
       {
-        "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text{Answer} = 224720.00\\)",
-        "graphData": null
+        "explanation": "Identify the formula for compound interest.",
+        "workingOut": "\\(A = P(1 + r)^n\\)"
+      },
+      {
+        "explanation": "Identify the given values: principal \\(P\\), rate \\(r\\), and periods \\(n\\), then substitute them.",
+        "workingOut": "\\(\\text{Formula parameters substituted accordingly.}\\)"
+      },
+      {
+        "explanation": "Calculate the final value.",
+        "workingOut": "\\(\\text{Answer} = 224720.00\\)"
       }
     ],
     "t": "Compound interest",
@@ -52,9 +66,16 @@ export const Y10_CH1D_QUESTIONS = [
     "a": "267645.12",
     "solutionSteps": [
       {
-        "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text{Answer} = 267645.12\\)",
-        "graphData": null
+        "explanation": "Identify the formula for compound interest.",
+        "workingOut": "\\(A = P(1 + r)^n\\)"
+      },
+      {
+        "explanation": "Identify the given values: principal \\(P\\), rate \\(r\\), and periods \\(n\\), then substitute them.",
+        "workingOut": "\\(\\text{Formula parameters substituted accordingly.}\\)"
+      },
+      {
+        "explanation": "Calculate the final value.",
+        "workingOut": "\\(\\text{Answer} = 267645.12\\)"
       }
     ],
     "t": "Compound interest",
@@ -74,9 +95,16 @@ export const Y10_CH1D_QUESTIONS = [
     "a": "33.82%",
     "solutionSteps": [
       {
-        "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text{Answer} = 33.82%\\)",
-        "graphData": null
+        "explanation": "Identify the formula for compound interest.",
+        "workingOut": "\\(A = P(1 + r)^n\\)"
+      },
+      {
+        "explanation": "Identify the given values: principal \\(P\\), rate \\(r\\), and periods \\(n\\), then substitute them.",
+        "workingOut": "\\(\\text{Formula parameters substituted accordingly.}\\)"
+      },
+      {
+        "explanation": "Calculate the final value.",
+        "workingOut": "\\(\\text{Answer} = 33.82%\\)"
       }
     ],
     "t": "Compound interest",
@@ -96,9 +124,16 @@ export const Y10_CH1D_QUESTIONS = [
     "a": "67645.12",
     "solutionSteps": [
       {
-        "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text{Answer} = 67645.12\\)",
-        "graphData": null
+        "explanation": "Identify the formula for compound interest.",
+        "workingOut": "\\(A = P(1 + r)^n\\)"
+      },
+      {
+        "explanation": "Identify the given values: principal \\(P\\), rate \\(r\\), and periods \\(n\\), then substitute them.",
+        "workingOut": "\\(\\text{Formula parameters substituted accordingly.}\\)"
+      },
+      {
+        "explanation": "Calculate the final value.",
+        "workingOut": "\\(\\text{Answer} = 67645.12\\)"
       }
     ],
     "t": "Compound interest",
@@ -118,9 +153,16 @@ export const Y10_CH1D_QUESTIONS = [
     "a": "60000.00",
     "solutionSteps": [
       {
-        "explanation": "Identify the values and formula for compound interest or simple interest.",
-        "workingOut": "\\(\\text{Answer} = 60000.00\\)",
-        "graphData": null
+        "explanation": "Identify the formula for compound interest.",
+        "workingOut": "\\(A = P(1 + r)^n\\)"
+      },
+      {
+        "explanation": "Identify the given values: principal \\(P\\), rate \\(r\\), and periods \\(n\\), then substitute them.",
+        "workingOut": "\\(\\text{Formula parameters substituted accordingly.}\\)"
+      },
+      {
+        "explanation": "Calculate the final value.",
+        "workingOut": "\\(\\text{Answer} = 60000.00\\)"
       }
     ],
     "t": "Compound interest",
@@ -4350,6 +4392,3206 @@ export const Y10_CH1D_QUESTIONS = [
       "1317.29",
       "1254.56",
       "1129.10"
+    ]
+  },
+  {
+    "id": "y10-1d-high-q1",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "ApexIndustries evaluates financing plans for purchasing a server rack cluster. Plan A offers \\(4.95\\%\\) p.a. compounded quarterly. Plan B offers \\(4.65\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(5.04\\%\\)",
+    "opts": [
+      "\\(5.45\\%\\)",
+      "\\(5.54\\%\\)",
+      "\\(5.04\\%\\)",
+      "\\(4.64\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0495}{4}\\right)^4 - 1 \\approx 5.0426\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0465}{12}\\right)^{12} - 1 \\approx 4.7504\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 5.04\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q2",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "NovaLogistics evaluates financing plans for purchasing a commercial solar array. Plan A offers \\(5.40\\%\\) p.a. compounded quarterly. Plan B offers \\(5.10\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(5.51\\%\\)",
+    "opts": [
+      "\\(5.51\\%\\)",
+      "\\(6.01\\%\\)",
+      "\\(5.95\\%\\)",
+      "\\(5.07\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0540}{4}\\right)^4 - 1 \\approx 5.5103\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0510}{12}\\right)^{12} - 1 \\approx 5.2209\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 5.51\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q3",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "TerraFarms evaluates financing plans for purchasing a delivery drone fleet. Plan A offers \\(5.85\\%\\) p.a. compounded quarterly. Plan B offers \\(5.55\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(5.98\\%\\)",
+    "opts": [
+      "\\(5.98\\%\\)",
+      "\\(6.46\\%\\)",
+      "\\(5.50\\%\\)",
+      "\\(6.48\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0585}{4}\\right)^4 - 1 \\approx 5.9796\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0555}{12}\\right)^{12} - 1 \\approx 5.6934\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 5.98\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q4",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "AeroVentures evaluates financing plans for purchasing a hydroponic growth chamber. Plan A offers \\(6.30\\%\\) p.a. compounded quarterly. Plan B offers \\(6.00\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(6.45\\%\\)",
+    "opts": [
+      "\\(6.95\\%\\)",
+      "\\(5.93\\%\\)",
+      "\\(6.97\\%\\)",
+      "\\(6.45\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0630}{4}\\right)^4 - 1 \\approx 6.4504\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0600}{12}\\right)^{12} - 1 \\approx 6.1678\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 6.45\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q5",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "EcoEnergy evaluates financing plans for purchasing a cryogenic freezer. Plan A offers \\(6.75\\%\\) p.a. compounded quarterly. Plan B offers \\(6.45\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(6.92\\%\\)",
+    "opts": [
+      "\\(7.42\\%\\)",
+      "\\(6.37\\%\\)",
+      "\\(7.48\\%\\)",
+      "\\(6.92\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0675}{4}\\right)^4 - 1 \\approx 6.9228\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0645}{12}\\right)^{12} - 1 \\approx 6.6441\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 6.92\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q6",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "QuantumSoft evaluates financing plans for purchasing a heavy mining drill. Plan A offers \\(7.20\\%\\) p.a. compounded quarterly. Plan B offers \\(6.90\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(7.40\\%\\)",
+    "opts": [
+      "\\(7.40\\%\\)",
+      "\\(7.90\\%\\)",
+      "\\(7.99\\%\\)",
+      "\\(6.81\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0720}{4}\\right)^4 - 1 \\approx 7.3967\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0690}{12}\\right)^{12} - 1 \\approx 7.1224\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 7.40\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "VertexBio evaluates financing plans for purchasing a high-speed CNC router. Plan A offers \\(7.65\\%\\) p.a. compounded quarterly. Plan B offers \\(7.35\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(7.87\\%\\)",
+    "opts": [
+      "\\(7.24\\%\\)",
+      "\\(8.50\\%\\)",
+      "\\(8.37\\%\\)",
+      "\\(7.87\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0765}{4}\\right)^4 - 1 \\approx 7.8723\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0735}{12}\\right)^{12} - 1 \\approx 7.6027\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 7.87\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q8",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "HelixFinance evaluates financing plans for purchasing a automated forklift. Plan A offers \\(8.10\\%\\) p.a. compounded quarterly. Plan B offers \\(7.80\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(8.35\\%\\)",
+    "opts": [
+      "\\(7.68\\%\\)",
+      "\\(8.35\\%\\)",
+      "\\(9.02\\%\\)",
+      "\\(8.85\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0810}{4}\\right)^4 - 1 \\approx 8.3494\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0780}{12}\\right)^{12} - 1 \\approx 8.0850\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 8.35\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q9",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "OrionSecurity evaluates financing plans for purchasing a medical imaging scanner. Plan A offers \\(8.55\\%\\) p.a. compounded quarterly. Plan B offers \\(8.25\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(8.83\\%\\)",
+    "opts": [
+      "\\(9.53\\%\\)",
+      "\\(8.83\\%\\)",
+      "\\(8.12\\%\\)",
+      "\\(9.33\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0855}{4}\\right)^4 - 1 \\approx 8.8281\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0825}{12}\\right)^{12} - 1 \\approx 8.5692\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 8.83\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q10",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "NexusMining evaluates financing plans for purchasing a cleanroom filtration system. Plan A offers \\(9.00\\%\\) p.a. compounded quarterly. Plan B offers \\(8.70\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+    "a": "\\(9.31\\%\\)",
+    "opts": [
+      "\\(9.31\\%\\)",
+      "\\(10.05\\%\\)",
+      "\\(8.56\\%\\)",
+      "\\(9.81\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+        "workingOut": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0900}{4}\\right)^4 - 1 \\approx 9.3083\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+        "workingOut": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0870}{12}\\right)^{12} - 1 \\approx 9.0554\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the higher effective annual rate and round to two decimal places.",
+        "workingOut": "\\(\\text{Max}(\\text{EAR}_A, \\text{EAR}_B) = 9.31\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q11",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "TerraFarms establishes a capital reserve to replace a hydroponic growth chamber in 5 years. If the target replacement cost is \\(\\$65000\\), calculate the present value required to be deposited now at \\(3.85\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(53634.66\\)",
+    "opts": [
+      "\\(53634.66\\)",
+      "\\(50952.92\\)",
+      "\\(54507.34\\)",
+      "\\(56316.39\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 65000, \\quad r = \\frac{0.0385}{12}, \\quad n = 60\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{65000}{\\left(1 + \\frac{0.0385}{12}\\right)^{60}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 53634.66\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q12",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "AeroVentures establishes a capital reserve to replace a cryogenic freezer in 6 years. If the target replacement cost is \\(\\$80000\\), calculate the present value required to be deposited now at \\(4.20\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(62206.94\\)",
+    "opts": [
+      "\\(62206.94\\)",
+      "\\(65317.29\\)",
+      "\\(59096.60\\)",
+      "\\(63897.76\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 80000, \\quad r = \\frac{0.0420}{12}, \\quad n = 72\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{80000}{\\left(1 + \\frac{0.0420}{12}\\right)^{72}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 62206.94\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q13",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "EcoEnergy establishes a capital reserve to replace a heavy mining drill in 7 years. If the target replacement cost is \\(\\$95000\\), calculate the present value required to be deposited now at \\(4.55\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(69129.34\\)",
+    "opts": [
+      "\\(69129.34\\)",
+      "\\(72585.80\\)",
+      "\\(65672.87\\)",
+      "\\(72051.57\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 95000, \\quad r = \\frac{0.0455}{12}, \\quad n = 84\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{95000}{\\left(1 + \\frac{0.0455}{12}\\right)^{84}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 69129.34\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q14",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "QuantumSoft establishes a capital reserve to replace a high-speed CNC router in 8 years. If the target replacement cost is \\(\\$110000\\), calculate the present value required to be deposited now at \\(4.90\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(74386.80\\)",
+    "opts": [
+      "\\(74386.80\\)",
+      "\\(70667.46\\)",
+      "\\(78106.14\\)",
+      "\\(79022.99\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 110000, \\quad r = \\frac{0.0490}{12}, \\quad n = 96\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{110000}{\\left(1 + \\frac{0.0490}{12}\\right)^{96}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 74386.80\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q15",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "VertexBio establishes a capital reserve to replace a automated forklift in 4 years. If the target replacement cost is \\(\\$125000\\), calculate the present value required to be deposited now at \\(5.25\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(101369.45\\)",
+    "opts": [
+      "\\(103305.79\\)",
+      "\\(96300.98\\)",
+      "\\(106437.92\\)",
+      "\\(101369.45\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 125000, \\quad r = \\frac{0.0525}{12}, \\quad n = 48\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{125000}{\\left(1 + \\frac{0.0525}{12}\\right)^{48}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 101369.45\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q16",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "HelixFinance establishes a capital reserve to replace a medical imaging scanner in 5 years. If the target replacement cost is \\(\\$140000\\), calculate the present value required to be deposited now at \\(5.60\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(105878.66\\)",
+    "opts": [
+      "\\(109375.00\\)",
+      "\\(100584.73\\)",
+      "\\(111172.59\\)",
+      "\\(105878.66\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 140000, \\quad r = \\frac{0.0560}{12}, \\quad n = 60\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{140000}{\\left(1 + \\frac{0.0560}{12}\\right)^{60}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 105878.66\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q17",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "OrionSecurity establishes a capital reserve to replace a cleanroom filtration system in 6 years. If the target replacement cost is \\(\\$155000\\), calculate the present value required to be deposited now at \\(5.95\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(108560.46\\)",
+    "opts": [
+      "\\(108560.46\\)",
+      "\\(114222.55\\)",
+      "\\(113988.48\\)",
+      "\\(103132.44\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 155000, \\quad r = \\frac{0.0595}{12}, \\quad n = 72\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{155000}{\\left(1 + \\frac{0.0595}{12}\\right)^{72}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 108560.46\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q18",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "NexusMining establishes a capital reserve to replace a electric transit van in 7 years. If the target replacement cost is \\(\\$170000\\), calculate the present value required to be deposited now at \\(6.30\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(109503.01\\)",
+    "opts": [
+      "\\(104027.86\\)",
+      "\\(117973.63\\)",
+      "\\(109503.01\\)",
+      "\\(114978.16\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 170000, \\quad r = \\frac{0.0630}{12}, \\quad n = 84\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{170000}{\\left(1 + \\frac{0.0630}{12}\\right)^{84}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 109503.01\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q19",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "SolarisTech establishes a capital reserve to replace a smart warehouse conveyer in 8 years. If the target replacement cost is \\(\\$185000\\), calculate the present value required to be deposited now at \\(6.65\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(108834.08\\)",
+    "opts": [
+      "\\(108834.08\\)",
+      "\\(114275.78\\)",
+      "\\(103392.37\\)",
+      "\\(120757.18\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 185000, \\quad r = \\frac{0.0665}{12}, \\quad n = 96\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{185000}{\\left(1 + \\frac{0.0665}{12}\\right)^{96}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 108834.08\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q20",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "ZenithMedia establishes a capital reserve to replace a lab centrifuge unit in 4 years. If the target replacement cost is \\(\\$200000\\), calculate the present value required to be deposited now at \\(7.00\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+    "a": "\\(151279.77\\)",
+    "opts": [
+      "\\(151279.77\\)",
+      "\\(158843.75\\)",
+      "\\(143715.78\\)",
+      "\\(156250.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify parameters: future value A, periodic rate r, and total periods n.",
+        "workingOut": "\\(A = 200000, \\quad r = \\frac{0.0700}{12}, \\quad n = 48\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute values into the present value formula.",
+        "workingOut": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{200000}{\\left(1 + \\frac{0.0700}{12}\\right)^{48}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the result and round to two decimal places.",
+        "workingOut": "\\(P \\approx 151279.77\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q21",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Elena deposits \\(\\$19500\\) into a high-yield investment account. The funds earn \\(4.05\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(4.55\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(24098.06\\)",
+    "opts": [
+      "\\(24068.90\\)",
+      "\\(23375.12\\)",
+      "\\(24821.00\\)",
+      "\\(24098.06\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 19500 \\times \\left(1 + \\frac{4.05}{400}\\right)^{12} \\approx 22005.7436\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{4.55}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 24098.06\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q22",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Kaelen deposits \\(\\$24000\\) into a high-yield investment account. The funds earn \\(4.30\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(4.90\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(30089.19\\)",
+    "opts": [
+      "\\(29186.51\\)",
+      "\\(30051.74\\)",
+      "\\(30991.86\\)",
+      "\\(30089.19\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 24000 \\times \\left(1 + \\frac{4.30}{400}\\right)^{12} \\approx 27285.7717\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{4.90}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 30089.19\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q23",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Sienna deposits \\(\\$28500\\) into a high-yield investment account. The funds earn \\(4.55\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(5.25\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(36248.74\\)",
+    "opts": [
+      "\\(36201.14\\)",
+      "\\(37336.20\\)",
+      "\\(36248.74\\)",
+      "\\(35161.28\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 28500 \\times \\left(1 + \\frac{4.55}{400}\\right)^{12} \\approx 32643.1026\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{5.25}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 36248.74\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q24",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Darius deposits \\(\\$33000\\) into a high-yield investment account. The funds earn \\(4.80\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(5.60\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(42580.22\\)",
+    "opts": [
+      "\\(42580.22\\)",
+      "\\(43857.63\\)",
+      "\\(41302.82\\)",
+      "\\(42519.94\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 33000 \\times \\left(1 + \\frac{4.80}{400}\\right)^{12} \\approx 38078.5226\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{5.60}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 42580.22\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q25",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Amara deposits \\(\\$37500\\) into a high-yield investment account. The funds earn \\(5.05\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(5.95\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(49087.21\\)",
+    "opts": [
+      "\\(49011.00\\)",
+      "\\(47614.59\\)",
+      "\\(50559.83\\)",
+      "\\(49087.21\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 37500 \\times \\left(1 + \\frac{5.05}{400}\\right)^{12} \\approx 43592.8246\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{5.95}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 49087.21\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q26",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Rowan deposits \\(\\$42000\\) into a high-yield investment account. The funds earn \\(5.30\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(6.30\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(55773.33\\)",
+    "opts": [
+      "\\(55773.33\\)",
+      "\\(55677.23\\)",
+      "\\(57446.53\\)",
+      "\\(54100.13\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 42000 \\times \\left(1 + \\frac{5.30}{400}\\right)^{12} \\approx 49186.8080\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{6.30}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 55773.33\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q27",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Jillian deposits \\(\\$46500\\) into a high-yield investment account. The funds earn \\(5.55\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(6.65\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(62642.29\\)",
+    "opts": [
+      "\\(62642.29\\)",
+      "\\(62521.57\\)",
+      "\\(64521.56\\)",
+      "\\(60763.02\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 46500 \\times \\left(1 + \\frac{5.55}{400}\\right)^{12} \\approx 54861.2787\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{6.65}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 62642.29\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q28",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Tobias deposits \\(\\$51000\\) into a high-yield investment account. The funds earn \\(5.80\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(7.00\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(69697.85\\)",
+    "opts": [
+      "\\(69697.85\\)",
+      "\\(71788.78\\)",
+      "\\(67606.91\\)",
+      "\\(69546.99\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 51000 \\times \\left(1 + \\frac{5.80}{400}\\right)^{12} \\approx 60617.0494\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{7.00}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 69697.85\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q29",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Seraphina deposits \\(\\$55500\\) into a high-yield investment account. The funds earn \\(6.05\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(7.35\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(76943.84\\)",
+    "opts": [
+      "\\(76943.84\\)",
+      "\\(74635.52\\)",
+      "\\(76756.49\\)",
+      "\\(79252.15\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 55500 \\times \\left(1 + \\frac{6.05}{400}\\right)^{12} \\approx 66454.9392\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{7.35}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 76943.84\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q30",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Leo deposits \\(\\$60000\\) into a high-yield investment account. The funds earn \\(6.30\\%\\) p.a. compounded quarterly for the first \\(3\\) years, after which the rate changes to \\(7.70\\%\\) p.a. compounded monthly for another \\(2\\) years. Determine the final balance at the end of the \\(5\\) years, correct to the nearest cent.",
+    "a": "\\(84384.16\\)",
+    "opts": [
+      "\\(86915.68\\)",
+      "\\(81852.63\\)",
+      "\\(84384.16\\)",
+      "\\(84153.10\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the balance after the first 3 years with quarterly compounding.",
+        "workingOut": "\\(A_1 = 60000 \\times \\left(1 + \\frac{6.30}{400}\\right)^{12} \\approx 72375.7742\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final balance after the remaining 2 years with monthly compounding.",
+        "workingOut": "\\(A_2 = A_1 \\times \\left(1 + \\frac{7.70}{1200}\\right)^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the product and round to the nearest cent.",
+        "workingOut": "\\(A_2 \\approx 84384.16\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q31",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Amara deposits \\(\\$2000\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(4.60\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(8139.06\\)",
+    "opts": [
+      "\\(7813.50\\)",
+      "\\(8464.62\\)",
+      "\\(8139.06\\)",
+      "\\(8000.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0460}{4} = 0.011500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 2000(1 + r)^3 + 2000(1 + r)^2 + 2000(1 + r) + 2000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 8139.06\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q32",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Rowan deposits \\(\\$2500\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(5.00\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(10189.07\\)",
+    "opts": [
+      "\\(10189.07\\)",
+      "\\(10596.63\\)",
+      "\\(9781.50\\)",
+      "\\(10000.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0500}{4} = 0.012500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 2500(1 + r)^3 + 2500(1 + r)^2 + 2500(1 + r) + 2500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 10189.07\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q33",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Jillian deposits \\(\\$3000\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(5.40\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(12245.19\\)",
+    "opts": [
+      "\\(12245.19\\)",
+      "\\(12735.00\\)",
+      "\\(11755.39\\)",
+      "\\(12000.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0540}{4} = 0.013500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 3000(1 + r)^3 + 3000(1 + r)^2 + 3000(1 + r) + 3000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 12245.19\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Tobias deposits \\(\\$3500\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(5.80\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(14307.45\\)",
+    "opts": [
+      "\\(14000.00\\)",
+      "\\(14879.75\\)",
+      "\\(14307.45\\)",
+      "\\(13735.16\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0580}{4} = 0.014500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 3500(1 + r)^3 + 3500(1 + r)^2 + 3500(1 + r) + 3500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 14307.45\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q35",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Seraphina deposits \\(\\$4000\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(6.20\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(16375.86\\)",
+    "opts": [
+      "\\(17030.89\\)",
+      "\\(15720.82\\)",
+      "\\(16375.86\\)",
+      "\\(16000.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0620}{4} = 0.015500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 4000(1 + r)^3 + 4000(1 + r)^2 + 4000(1 + r) + 4000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 16375.86\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q36",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Leo deposits \\(\\$4500\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(6.60\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(18450.42\\)",
+    "opts": [
+      "\\(19188.44\\)",
+      "\\(18000.00\\)",
+      "\\(18450.42\\)",
+      "\\(17712.40\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0660}{4} = 0.016500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 4500(1 + r)^3 + 4500(1 + r)^2 + 4500(1 + r) + 4500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 18450.42\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q37",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Vivienne deposits \\(\\$5000\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(7.00\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(20531.15\\)",
+    "opts": [
+      "\\(20531.15\\)",
+      "\\(21352.40\\)",
+      "\\(20000.00\\)",
+      "\\(19709.91\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0700}{4} = 0.017500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 5000(1 + r)^3 + 5000(1 + r)^2 + 5000(1 + r) + 5000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 20531.15\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q38",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Gideon deposits \\(\\$5500\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(7.40\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(22618.06\\)",
+    "opts": [
+      "\\(21713.34\\)",
+      "\\(22000.00\\)",
+      "\\(23522.79\\)",
+      "\\(22618.06\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0740}{4} = 0.018500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 5500(1 + r)^3 + 5500(1 + r)^2 + 5500(1 + r) + 5500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 22618.06\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q39",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Clara deposits \\(\\$6000\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(7.80\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(24711.17\\)",
+    "opts": [
+      "\\(24711.17\\)",
+      "\\(24000.00\\)",
+      "\\(25699.62\\)",
+      "\\(23722.72\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0780}{4} = 0.019500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 6000(1 + r)^3 + 6000(1 + r)^2 + 6000(1 + r) + 6000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 24711.17\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q40",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Xavier deposits \\(\\$6500\\) at the end of every quarter for \\(1\\) year into a savings trust paying \\(8.20\\%\\) p.a. interest, compounded quarterly. Calculate the total value of the savings trust immediately after the fourth deposit is made. Correct to the nearest cent.",
+    "a": "\\(26810.48\\)",
+    "opts": [
+      "\\(26810.48\\)",
+      "\\(27882.90\\)",
+      "\\(25738.06\\)",
+      "\\(26000.00\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the quarterly interest rate.",
+        "workingOut": "\\(r = \\frac{0.0820}{4} = 0.020500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the sum representing the future value of the four periodic deposits.",
+        "workingOut": "\\(S = 6500(1 + r)^3 + 6500(1 + r)^2 + 6500(1 + r) + 6500\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate each term and compute the final sum.",
+        "workingOut": "\\(S \\approx 26810.48\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q41",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "QuantumSoft aims to triple its initial venture capital investment. If the funds grow at a rate of \\(5.75\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(19.2\\)",
+    "opts": [
+      "\\(19.2\\)",
+      "\\(22.0\\)",
+      "\\(16.3\\)",
+      "\\(19.1\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.0575}{12}\\right)^n \\implies \\left(1 + \\frac{0.0575}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0575}{12}\\right)} \\approx 229.82\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 19.2\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q42",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "VertexBio aims to triple its initial venture capital investment. If the funds grow at a rate of \\(6.30\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(17.5\\)",
+    "opts": [
+      "\\(17.5\\)",
+      "\\(17.4\\)",
+      "\\(20.1\\)",
+      "\\(14.9\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.0630}{12}\\right)^n \\implies \\left(1 + \\frac{0.0630}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0630}{12}\\right)} \\approx 209.81\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 17.5\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q43",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "HelixFinance aims to triple its initial venture capital investment. If the funds grow at a rate of \\(6.85\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(16.1\\)",
+    "opts": [
+      "\\(16.0\\)",
+      "\\(13.7\\)",
+      "\\(18.5\\)",
+      "\\(16.1\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.0685}{12}\\right)^n \\implies \\left(1 + \\frac{0.0685}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0685}{12}\\right)} \\approx 193.01\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 16.1\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q44",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "OrionSecurity aims to triple its initial venture capital investment. If the funds grow at a rate of \\(7.40\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(14.9\\)",
+    "opts": [
+      "\\(17.1\\)",
+      "\\(14.9\\)",
+      "\\(12.7\\)",
+      "\\(14.8\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.0740}{12}\\right)^n \\implies \\left(1 + \\frac{0.0740}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0740}{12}\\right)} \\approx 178.70\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 14.9\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q45",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "NexusMining aims to triple its initial venture capital investment. If the funds grow at a rate of \\(7.95\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(13.9\\)",
+    "opts": [
+      "\\(11.8\\)",
+      "\\(15.9\\)",
+      "\\(13.9\\)",
+      "\\(13.8\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.0795}{12}\\right)^n \\implies \\left(1 + \\frac{0.0795}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0795}{12}\\right)} \\approx 166.38\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 13.9\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q46",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "SolarisTech aims to triple its initial venture capital investment. If the funds grow at a rate of \\(8.50\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(13.0\\)",
+    "opts": [
+      "\\(13.0\\)",
+      "\\(14.9\\)",
+      "\\(12.9\\)",
+      "\\(11.0\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.0850}{12}\\right)^n \\implies \\left(1 + \\frac{0.0850}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0850}{12}\\right)} \\approx 155.65\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 13.0\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q47",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "ZenithMedia aims to triple its initial venture capital investment. If the funds grow at a rate of \\(9.05\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(12.2\\)",
+    "opts": [
+      "\\(12.1\\)",
+      "\\(12.2\\)",
+      "\\(14.0\\)",
+      "\\(10.4\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.0905}{12}\\right)^n \\implies \\left(1 + \\frac{0.0905}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0905}{12}\\right)} \\approx 146.22\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 12.2\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q48",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "BioSphere aims to triple its initial venture capital investment. If the funds grow at a rate of \\(9.60\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(11.5\\)",
+    "opts": [
+      "\\(13.2\\)",
+      "\\(11.4\\)",
+      "\\(11.5\\)",
+      "\\(9.8\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.0960}{12}\\right)^n \\implies \\left(1 + \\frac{0.0960}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0960}{12}\\right)} \\approx 137.88\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 11.5\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q49",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "StellarLabs aims to triple its initial venture capital investment. If the funds grow at a rate of \\(10.15\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(10.9\\)",
+    "opts": [
+      "\\(10.9\\)",
+      "\\(12.5\\)",
+      "\\(9.2\\)",
+      "\\(10.8\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.1015}{12}\\right)^n \\implies \\left(1 + \\frac{0.1015}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.1015}{12}\\right)} \\approx 130.43\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 10.9\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q50",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "SigmaRetail aims to triple its initial venture capital investment. If the funds grow at a rate of \\(10.70\\%\\) p.a., compounded monthly, calculate the number of years required to achieve this target. Correct to one decimal place.",
+    "a": "\\(10.3\\)",
+    "opts": [
+      "\\(10.3\\)",
+      "\\(11.9\\)",
+      "\\(10.3\\)",
+      "\\(8.8\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest formula for a tripling balance.",
+        "workingOut": "\\(3P = P\\left(1 + \\frac{0.1070}{12}\\right)^n \\implies \\left(1 + \\frac{0.1070}{12}\\right)^n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply logarithms to find the total compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.1070}{12}\\right)} \\approx 123.76\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert the periods from months to years and round to one decimal place.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 10.3\\text{ years}\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q51",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to VertexBio initially costs \\(\\$51000\\). If the asset depreciates at a rate of \\(12.8\\%\\) p.a. using the reducing balance method, find its book value after \\(4\\) years, correct to the nearest dollar.",
+    "a": "\\(29487\\)",
+    "opts": [
+      "\\(27718\\)",
+      "\\(31257\\)",
+      "\\(24888\\)",
+      "\\(29487\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 51000, \\quad d = 12.8\\%, \\quad n = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 51000 \\times \\left(1 - \\frac{12.8}{100}\\right)^{4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 29487\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q52",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to HelixFinance initially costs \\(\\$57000\\). If the asset depreciates at a rate of \\(13.6\\%\\) p.a. using the reducing balance method, find its book value after \\(5\\) years, correct to the nearest dollar.",
+    "a": "\\(27444\\)",
+    "opts": [
+      "\\(25797\\)",
+      "\\(29090\\)",
+      "\\(18240\\)",
+      "\\(27444\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 57000, \\quad d = 13.6\\%, \\quad n = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 57000 \\times \\left(1 - \\frac{13.6}{100}\\right)^{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 27444\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q53",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to OrionSecurity initially costs \\(\\$63000\\). If the asset depreciates at a rate of \\(14.4\\%\\) p.a. using the reducing balance method, find its book value after \\(3\\) years, correct to the nearest dollar.",
+    "a": "\\(39515\\)",
+    "opts": [
+      "\\(37144\\)",
+      "\\(41886\\)",
+      "\\(39515\\)",
+      "\\(35784\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 63000, \\quad d = 14.4\\%, \\quad n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 63000 \\times \\left(1 - \\frac{14.4}{100}\\right)^{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 39515\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q54",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to NexusMining initially costs \\(\\$69000\\). If the asset depreciates at a rate of \\(15.2\\%\\) p.a. using the reducing balance method, find its book value after \\(4\\) years, correct to the nearest dollar.",
+    "a": "\\(35681\\)",
+    "opts": [
+      "\\(35681\\)",
+      "\\(37821\\)",
+      "\\(33540\\)",
+      "\\(27048\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 69000, \\quad d = 15.2\\%, \\quad n = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 69000 \\times \\left(1 - \\frac{15.2}{100}\\right)^{4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 35681\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q55",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to SolarisTech initially costs \\(\\$75000\\). If the asset depreciates at a rate of \\(16.0\\%\\) p.a. using the reducing balance method, find its book value after \\(5\\) years, correct to the nearest dollar.",
+    "a": "\\(31366\\)",
+    "opts": [
+      "\\(33248\\)",
+      "\\(29484\\)",
+      "\\(31366\\)",
+      "\\(15000\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 75000, \\quad d = 16.0\\%, \\quad n = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 75000 \\times \\left(1 - \\frac{16.0}{100}\\right)^{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 31366\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q56",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to ZenithMedia initially costs \\(\\$81000\\). If the asset depreciates at a rate of \\(16.8\\%\\) p.a. using the reducing balance method, find its book value after \\(3\\) years, correct to the nearest dollar.",
+    "a": "\\(46650\\)",
+    "opts": [
+      "\\(49449\\)",
+      "\\(40176\\)",
+      "\\(43851\\)",
+      "\\(46650\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 81000, \\quad d = 16.8\\%, \\quad n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 81000 \\times \\left(1 - \\frac{16.8}{100}\\right)^{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 46650\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q57",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to BioSphere initially costs \\(\\$87000\\). If the asset depreciates at a rate of \\(17.6\\%\\) p.a. using the reducing balance method, find its book value after \\(4\\) years, correct to the nearest dollar.",
+    "a": "\\(40108\\)",
+    "opts": [
+      "\\(40108\\)",
+      "\\(42514\\)",
+      "\\(25752\\)",
+      "\\(37701\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 87000, \\quad d = 17.6\\%, \\quad n = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 87000 \\times \\left(1 - \\frac{17.6}{100}\\right)^{4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 40108\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q58",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to StellarLabs initially costs \\(\\$93000\\). If the asset depreciates at a rate of \\(18.4\\%\\) p.a. using the reducing balance method, find its book value after \\(5\\) years, correct to the nearest dollar.",
+    "a": "\\(33646\\)",
+    "opts": [
+      "\\(35665\\)",
+      "\\(33646\\)",
+      "\\(31627\\)",
+      "\\(7440\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 93000, \\quad d = 18.4\\%, \\quad n = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 93000 \\times \\left(1 - \\frac{18.4}{100}\\right)^{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 33646\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q59",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to SigmaRetail initially costs \\(\\$99000\\). If the asset depreciates at a rate of \\(19.2\\%\\) p.a. using the reducing balance method, find its book value after \\(3\\) years, correct to the nearest dollar.",
+    "a": "\\(52224\\)",
+    "opts": [
+      "\\(55357\\)",
+      "\\(41976\\)",
+      "\\(52224\\)",
+      "\\(49090\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 99000, \\quad d = 19.2\\%, \\quad n = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 99000 \\times \\left(1 - \\frac{19.2}{100}\\right)^{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 52224\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q60",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "An industrial logistics system belonging to SynergyCorp initially costs \\(\\$105000\\). If the asset depreciates at a rate of \\(20.0\\%\\) p.a. using the reducing balance method, find its book value after \\(4\\) years, correct to the nearest dollar.",
+    "a": "\\(43008\\)",
+    "opts": [
+      "\\(21000\\)",
+      "\\(40428\\)",
+      "\\(45588\\)",
+      "\\(43008\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify the initial value, depreciation rate, and period.",
+        "workingOut": "\\(P = 105000, \\quad d = 20.0\\%, \\quad n = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the reducing balance depreciation formula.",
+        "workingOut": "\\(V_n = P(1 - \\frac{d}{100})^n = 105000 \\times \\left(1 - \\frac{20.0}{100}\\right)^{4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute the final value and round to the nearest integer.",
+        "workingOut": "\\(V_n \\approx 43008\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q61",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Tobias invests \\(\\$15500\\) at a fixed compound interest rate of \\(6.15\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(2.25\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(18690.25\\)",
+    "opts": [
+      "\\(18690.25\\)",
+      "\\(19437.86\\)",
+      "\\(20889.68\\)",
+      "\\(17942.64\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 15500 \\times \\left(1 + \\frac{6.15}{100}\\right)^5 \\approx 20889.6754\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{2.25}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 18690.25\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q62",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Seraphina invests \\(\\$19000\\) at a fixed compound interest rate of \\(6.50\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(2.40\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(23120.75\\)",
+    "opts": [
+      "\\(26031.65\\)",
+      "\\(23120.75\\)",
+      "\\(24045.58\\)",
+      "\\(22195.92\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 19000 \\times \\left(1 + \\frac{6.50}{100}\\right)^5 \\approx 26031.6466\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{2.40}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 23120.75\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q63",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Leo invests \\(\\$22500\\) at a fixed compound interest rate of \\(6.85\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(2.55\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(27629.74\\)",
+    "opts": [
+      "\\(28734.93\\)",
+      "\\(31336.84\\)",
+      "\\(27629.74\\)",
+      "\\(26524.55\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 22500 \\times \\left(1 + \\frac{6.85}{100}\\right)^5 \\approx 31336.8364\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{2.55}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 27629.74\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q64",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Vivienne invests \\(\\$26000\\) at a fixed compound interest rate of \\(7.20\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(2.70\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(32217.74\\)",
+    "opts": [
+      "\\(30929.03\\)",
+      "\\(32217.74\\)",
+      "\\(33506.45\\)",
+      "\\(36808.43\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 26000 \\times \\left(1 + \\frac{7.20}{100}\\right)^5 \\approx 36808.4284\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{2.70}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 32217.74\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q65",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Gideon invests \\(\\$29500\\) at a fixed compound interest rate of \\(7.55\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(2.85\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(36885.24\\)",
+    "opts": [
+      "\\(35409.83\\)",
+      "\\(42449.65\\)",
+      "\\(38360.65\\)",
+      "\\(36885.24\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 29500 \\times \\left(1 + \\frac{7.55}{100}\\right)^5 \\approx 42449.6476\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{2.85}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 36885.24\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q66",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Clara invests \\(\\$33000\\) at a fixed compound interest rate of \\(7.90\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(3.00\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(41632.74\\)",
+    "opts": [
+      "\\(41632.74\\)",
+      "\\(43298.05\\)",
+      "\\(39967.43\\)",
+      "\\(48263.76\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 33000 \\times \\left(1 + \\frac{7.90}{100}\\right)^5 \\approx 48263.7612\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{3.00}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 41632.74\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q67",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Xavier invests \\(\\$36500\\) at a fixed compound interest rate of \\(8.25\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(3.15\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(46460.75\\)",
+    "opts": [
+      "\\(46460.75\\)",
+      "\\(48319.18\\)",
+      "\\(44602.32\\)",
+      "\\(54254.08\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 36500 \\times \\left(1 + \\frac{8.25}{100}\\right)^5 \\approx 54254.0783\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{3.15}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 46460.75\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q68",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Naomi invests \\(\\$40000\\) at a fixed compound interest rate of \\(8.60\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(3.30\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(51369.76\\)",
+    "opts": [
+      "\\(60423.95\\)",
+      "\\(49314.97\\)",
+      "\\(53424.55\\)",
+      "\\(51369.76\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 40000 \\times \\left(1 + \\frac{8.60}{100}\\right)^5 \\approx 60423.9507\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{3.30}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 51369.76\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q69",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Marcus invests \\(\\$43500\\) at a fixed compound interest rate of \\(8.95\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(3.45\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(56360.26\\)",
+    "opts": [
+      "\\(54105.85\\)",
+      "\\(56360.26\\)",
+      "\\(66776.77\\)",
+      "\\(58614.67\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 43500 \\times \\left(1 + \\frac{8.95}{100}\\right)^5 \\approx 66776.7733\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{3.45}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 56360.26\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q70",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Elena invests \\(\\$47000\\) at a fixed compound interest rate of \\(9.30\\%\\) p.a., compounded annually, for \\(5\\) years. If the rate of inflation averages \\(3.60\\%\\) p.a. over the same period, calculate the real value of the investment at the end of the term (in today's purchasing power). Correct to the nearest cent.",
+    "a": "\\(61432.74\\)",
+    "opts": [
+      "\\(63890.05\\)",
+      "\\(61432.74\\)",
+      "\\(58975.43\\)",
+      "\\(73315.98\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the nominal future value of the investment.",
+        "workingOut": "\\(A_{\\text{nominal}} = 47000 \\times \\left(1 + \\frac{9.30}{100}\\right)^5 \\approx 73315.9840\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Discount the nominal future value by the inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{3.60}{100}\\right)^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Obtain the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx 61432.74\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q71",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "OrionSecurity evaluates simple vs. compound interest for a \\(\\$33000\\) treasury bond over a \\(6\\)-year duration at \\(5.25\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(1463.69\\)",
+    "opts": [
+      "\\(1390.50\\)",
+      "\\(1536.87\\)",
+      "\\(1463.69\\)",
+      "\\(11858.69\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 33000 \\times \\frac{5.25}{100} \\times 6 = 10395.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 33000 \\times \\left[\\left(1 + \\frac{5.25}{100}\\right)^{6} - 1\\right] \\approx 11858.6879\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 1463.69\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q72",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "NexusMining evaluates simple vs. compound interest for a \\(\\$41000\\) treasury bond over a \\(6\\)-year duration at \\(5.70\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(2156.63\\)",
+    "opts": [
+      "\\(2264.47\\)",
+      "\\(16178.63\\)",
+      "\\(2048.80\\)",
+      "\\(2156.63\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 41000 \\times \\frac{5.70}{100} \\times 6 = 14022.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 41000 \\times \\left[\\left(1 + \\frac{5.70}{100}\\right)^{6} - 1\\right] \\approx 16178.6346\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 2156.63\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q73",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "SolarisTech evaluates simple vs. compound interest for a \\(\\$49000\\) treasury bond over a \\(6\\)-year duration at \\(6.15\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(3018.69\\)",
+    "opts": [
+      "\\(21099.69\\)",
+      "\\(3018.69\\)",
+      "\\(3169.62\\)",
+      "\\(2867.75\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 49000 \\times \\frac{6.15}{100} \\times 6 = 18081.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 49000 \\times \\left[\\left(1 + \\frac{6.15}{100}\\right)^{6} - 1\\right] \\approx 21099.6857\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 3018.69\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q74",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "ZenithMedia evaluates simple vs. compound interest for a \\(\\$57000\\) treasury bond over a \\(6\\)-year duration at \\(6.60\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(4068.78\\)",
+    "opts": [
+      "\\(4272.22\\)",
+      "\\(26640.78\\)",
+      "\\(4068.78\\)",
+      "\\(3865.34\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 57000 \\times \\frac{6.60}{100} \\times 6 = 22572.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 57000 \\times \\left[\\left(1 + \\frac{6.60}{100}\\right)^{6} - 1\\right] \\approx 26640.7818\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 4068.78\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q75",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "BioSphere evaluates simple vs. compound interest for a \\(\\$65000\\) treasury bond over a \\(6\\)-year duration at \\(7.05\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(5326.29\\)",
+    "opts": [
+      "\\(32821.29\\)",
+      "\\(5059.98\\)",
+      "\\(5592.60\\)",
+      "\\(5326.29\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 65000 \\times \\frac{7.05}{100} \\times 6 = 27495.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 65000 \\times \\left[\\left(1 + \\frac{7.05}{100}\\right)^{6} - 1\\right] \\approx 32821.2902\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 5326.29\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q76",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "StellarLabs evaluates simple vs. compound interest for a \\(\\$73000\\) treasury bond over a \\(6\\)-year duration at \\(7.50\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(6811.01\\)",
+    "opts": [
+      "\\(6470.46\\)",
+      "\\(7151.56\\)",
+      "\\(39661.01\\)",
+      "\\(6811.01\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 73000 \\times \\frac{7.50}{100} \\times 6 = 32850.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 73000 \\times \\left[\\left(1 + \\frac{7.50}{100}\\right)^{6} - 1\\right] \\approx 39661.0114\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 6811.01\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q77",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "SigmaRetail evaluates simple vs. compound interest for a \\(\\$81000\\) treasury bond over a \\(6\\)-year duration at \\(7.95\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(8543.19\\)",
+    "opts": [
+      "\\(8543.19\\)",
+      "\\(8970.35\\)",
+      "\\(47180.19\\)",
+      "\\(8116.03\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 81000 \\times \\frac{7.95}{100} \\times 6 = 38637.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 81000 \\times \\left[\\left(1 + \\frac{7.95}{100}\\right)^{6} - 1\\right] \\approx 47180.1864\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 8543.19\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q78",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "SynergyCorp evaluates simple vs. compound interest for a \\(\\$89000\\) treasury bond over a \\(6\\)-year duration at \\(8.40\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(10543.50\\)",
+    "opts": [
+      "\\(55399.50\\)",
+      "\\(10016.33\\)",
+      "\\(10543.50\\)",
+      "\\(11070.68\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 89000 \\times \\frac{8.40}{100} \\times 6 = 44856.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 89000 \\times \\left[\\left(1 + \\frac{8.40}{100}\\right)^{6} - 1\\right] \\approx 55399.5035\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 10543.50\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q79",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "ApexIndustries evaluates simple vs. compound interest for a \\(\\$97000\\) treasury bond over a \\(6\\)-year duration at \\(8.85\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(12833.10\\)",
+    "opts": [
+      "\\(12833.10\\)",
+      "\\(64340.10\\)",
+      "\\(12191.45\\)",
+      "\\(13474.76\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 97000 \\times \\frac{8.85}{100} \\times 6 = 51507.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 97000 \\times \\left[\\left(1 + \\frac{8.85}{100}\\right)^{6} - 1\\right] \\approx 64340.1047\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 12833.10\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q80",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "NovaLogistics evaluates simple vs. compound interest for a \\(\\$105000\\) treasury bond over a \\(6\\)-year duration at \\(9.30\\%\\) p.a. If the compound interest is compounded annually, find the difference in total interest earned. Correct to the nearest cent.",
+    "a": "\\(15433.59\\)",
+    "opts": [
+      "\\(14661.91\\)",
+      "\\(16205.27\\)",
+      "\\(15433.59\\)",
+      "\\(74023.59\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Calculate simple interest earned.",
+        "workingOut": "\\(I_{\\text{simple}} = 105000 \\times \\frac{9.30}{100} \\times 6 = 58590.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate compound interest earned.",
+        "workingOut": "\\(I_{\\text{compound}} = 105000 \\times \\left[\\left(1 + \\frac{9.30}{100}\\right)^{6} - 1\\right] \\approx 74023.5937\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the two values to find the final difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx 15433.59\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q81",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Leo opens a cash deposit account earning \\(4.25\\%\\) p.a., compounded daily. If \\(\\$14500\\) is deposited, calculate the interest earned after a period of \\(105\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(178.36\\)",
+    "opts": [
+      "\\(178.36\\)",
+      "\\(177.28\\)",
+      "\\(185.49\\)",
+      "\\(171.22\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0425}{365} \\approx 0.00011644\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 14500 \\times (1 + r)^{105} \\approx 14678.3551\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 178.36\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q82",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Vivienne opens a cash deposit account earning \\(4.60\\%\\) p.a., compounded daily. If \\(\\$17000\\) is deposited, calculate the interest earned after a period of \\(120\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(259.03\\)",
+    "opts": [
+      "\\(259.03\\)",
+      "\\(257.10\\)",
+      "\\(248.67\\)",
+      "\\(269.39\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0460}{365} \\approx 0.00012603\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 17000 \\times (1 + r)^{120} \\approx 17259.0333\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 259.03\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q83",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Gideon opens a cash deposit account earning \\(4.95\\%\\) p.a., compounded daily. If \\(\\$19500\\) is deposited, calculate the interest earned after a period of \\(135\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(360.27\\)",
+    "opts": [
+      "\\(360.27\\)",
+      "\\(345.86\\)",
+      "\\(357.01\\)",
+      "\\(374.68\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0495}{365} \\approx 0.00013562\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 19500 \\times (1 + r)^{135} \\approx 19860.2738\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 360.27\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q84",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Clara opens a cash deposit account earning \\(5.30\\%\\) p.a., compounded daily. If \\(\\$22000\\) is deposited, calculate the interest earned after a period of \\(150\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(484.40\\)",
+    "opts": [
+      "\\(484.40\\)",
+      "\\(479.18\\)",
+      "\\(503.78\\)",
+      "\\(465.02\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0530}{365} \\approx 0.00014521\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 22000 \\times (1 + r)^{150} \\approx 22484.3991\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 484.40\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q85",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Xavier opens a cash deposit account earning \\(5.65\\%\\) p.a., compounded daily. If \\(\\$24500\\) is deposited, calculate the interest earned after a period of \\(165\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(633.77\\)",
+    "opts": [
+      "\\(659.12\\)",
+      "\\(625.76\\)",
+      "\\(633.77\\)",
+      "\\(608.42\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0565}{365} \\approx 0.00015479\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 24500 \\times (1 + r)^{165} \\approx 25133.7669\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 633.77\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q86",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Naomi opens a cash deposit account earning \\(6.00\\%\\) p.a., compounded daily. If \\(\\$27000\\) is deposited, calculate the interest earned after a period of \\(180\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(810.77\\)",
+    "opts": [
+      "\\(843.20\\)",
+      "\\(798.90\\)",
+      "\\(810.77\\)",
+      "\\(778.34\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0600}{365} \\approx 0.00016438\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 27000 \\times (1 + r)^{180} \\approx 27810.7733\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 810.77\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q87",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Marcus opens a cash deposit account earning \\(6.35\\%\\) p.a., compounded daily. If \\(\\$29500\\) is deposited, calculate the interest earned after a period of \\(195\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(1017.86\\)",
+    "opts": [
+      "\\(977.14\\)",
+      "\\(1058.57\\)",
+      "\\(1000.78\\)",
+      "\\(1017.86\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0635}{365} \\approx 0.00017397\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 29500 \\times (1 + r)^{195} \\approx 30517.8565\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 1017.86\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q88",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Elena opens a cash deposit account earning \\(6.70\\%\\) p.a., compounded daily. If \\(\\$32000\\) is deposited, calculate the interest earned after a period of \\(210\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(1257.50\\)",
+    "opts": [
+      "\\(1233.53\\)",
+      "\\(1257.50\\)",
+      "\\(1207.20\\)",
+      "\\(1307.80\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0670}{365} \\approx 0.00018356\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 32000 \\times (1 + r)^{210} \\approx 33257.5002\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 1257.50\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q89",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Kaelen opens a cash deposit account earning \\(7.05\\%\\) p.a., compounded daily. If \\(\\$34500\\) is deposited, calculate the interest earned after a period of \\(225\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(1532.24\\)",
+    "opts": [
+      "\\(1532.24\\)",
+      "\\(1499.33\\)",
+      "\\(1593.53\\)",
+      "\\(1470.95\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0705}{365} \\approx 0.00019315\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 34500 \\times (1 + r)^{225} \\approx 36032.2378\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 1532.24\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q90",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "Sienna opens a cash deposit account earning \\(7.40\\%\\) p.a., compounded daily. If \\(\\$37000\\) is deposited, calculate the interest earned after a period of \\(240\\) days. Assume a 365-day year and correct your answer to the nearest cent.",
+    "a": "\\(1844.66\\)",
+    "opts": [
+      "\\(1770.87\\)",
+      "\\(1844.66\\)",
+      "\\(1800.33\\)",
+      "\\(1918.44\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Determine the daily periodic rate.",
+        "workingOut": "\\(r = \\frac{0.0740}{365} \\approx 0.00020274\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the compound interest formula for daily compounding over the specified number of days.",
+        "workingOut": "\\(A = 37000 \\times (1 + r)^{240} \\approx 38844.6561\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the principal to find the interest earned.",
+        "workingOut": "\\(I = A - P \\approx 1844.66\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q91",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "SolarisTech holds a specialized investment. An initial deposit of \\(\\$10000\\) grows to \\(\\$15000\\) over \\(4\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(10.67\\%\\)",
+    "opts": [
+      "\\(10.67\\%\\)",
+      "\\(12.50\\%\\)",
+      "\\(11.20\\%\\)",
+      "\\(10.13\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(15000 = 10000 \\times (1 + r)^{4}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{15000}{10000}\\right)^{\\frac{1}{4}} = 1.5^{\\frac{1}{4}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{4}} - 1\\right) \\times 100\\% \\approx 10.67\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q92",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "ZenithMedia holds a specialized investment. An initial deposit of \\(\\$12000\\) grows to \\(\\$18000\\) over \\(5\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(8.45\\%\\)",
+    "opts": [
+      "\\(10.00\\%\\)",
+      "\\(8.02\\%\\)",
+      "\\(8.87\\%\\)",
+      "\\(8.45\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(18000 = 12000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{18000}{12000}\\right)^{\\frac{1}{5}} = 1.5^{\\frac{1}{5}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{5}} - 1\\right) \\times 100\\% \\approx 8.45\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q93",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "BioSphere holds a specialized investment. An initial deposit of \\(\\$14000\\) grows to \\(\\$21000\\) over \\(3\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(14.47\\%\\)",
+    "opts": [
+      "\\(13.75\\%\\)",
+      "\\(14.47\\%\\)",
+      "\\(16.67\\%\\)",
+      "\\(15.19\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(21000 = 14000 \\times (1 + r)^{3}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{21000}{14000}\\right)^{\\frac{1}{3}} = 1.5^{\\frac{1}{3}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{3}} - 1\\right) \\times 100\\% \\approx 14.47\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q94",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "StellarLabs holds a specialized investment. An initial deposit of \\(\\$16000\\) grows to \\(\\$24000\\) over \\(4\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(10.67\\%\\)",
+    "opts": [
+      "\\(10.67\\%\\)",
+      "\\(11.20\\%\\)",
+      "\\(12.50\\%\\)",
+      "\\(10.13\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(24000 = 16000 \\times (1 + r)^{4}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{24000}{16000}\\right)^{\\frac{1}{4}} = 1.5^{\\frac{1}{4}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{4}} - 1\\right) \\times 100\\% \\approx 10.67\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q95",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "SigmaRetail holds a specialized investment. An initial deposit of \\(\\$18000\\) grows to \\(\\$27000\\) over \\(5\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(8.45\\%\\)",
+    "opts": [
+      "\\(10.00\\%\\)",
+      "\\(8.45\\%\\)",
+      "\\(8.87\\%\\)",
+      "\\(8.02\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(27000 = 18000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{27000}{18000}\\right)^{\\frac{1}{5}} = 1.5^{\\frac{1}{5}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{5}} - 1\\right) \\times 100\\% \\approx 8.45\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q96",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "SynergyCorp holds a specialized investment. An initial deposit of \\(\\$20000\\) grows to \\(\\$30000\\) over \\(3\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(14.47\\%\\)",
+    "opts": [
+      "\\(16.67\\%\\)",
+      "\\(14.47\\%\\)",
+      "\\(15.19\\%\\)",
+      "\\(13.75\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(30000 = 20000 \\times (1 + r)^{3}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{30000}{20000}\\right)^{\\frac{1}{3}} = 1.5^{\\frac{1}{3}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{3}} - 1\\right) \\times 100\\% \\approx 14.47\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q97",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "ApexIndustries holds a specialized investment. An initial deposit of \\(\\$22000\\) grows to \\(\\$33000\\) over \\(4\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(10.67\\%\\)",
+    "opts": [
+      "\\(12.50\\%\\)",
+      "\\(10.13\\%\\)",
+      "\\(11.20\\%\\)",
+      "\\(10.67\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(33000 = 22000 \\times (1 + r)^{4}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{33000}{22000}\\right)^{\\frac{1}{4}} = 1.5^{\\frac{1}{4}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{4}} - 1\\right) \\times 100\\% \\approx 10.67\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q98",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "NovaLogistics holds a specialized investment. An initial deposit of \\(\\$24000\\) grows to \\(\\$36000\\) over \\(5\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(8.45\\%\\)",
+    "opts": [
+      "\\(8.45\\%\\)",
+      "\\(8.87\\%\\)",
+      "\\(10.00\\%\\)",
+      "\\(8.02\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(36000 = 24000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{36000}{24000}\\right)^{\\frac{1}{5}} = 1.5^{\\frac{1}{5}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{5}} - 1\\right) \\times 100\\% \\approx 8.45\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q99",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "TerraFarms holds a specialized investment. An initial deposit of \\(\\$26000\\) grows to \\(\\$39000\\) over \\(3\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(14.47\\%\\)",
+    "opts": [
+      "\\(13.75\\%\\)",
+      "\\(16.67\\%\\)",
+      "\\(15.19\\%\\)",
+      "\\(14.47\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(39000 = 26000 \\times (1 + r)^{3}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{39000}{26000}\\right)^{\\frac{1}{3}} = 1.5^{\\frac{1}{3}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{3}} - 1\\right) \\times 100\\% \\approx 14.47\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1d-high-q100",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Compound interest",
+    "question": "AeroVentures holds a specialized investment. An initial deposit of \\(\\$28000\\) grows to \\(\\$42000\\) over \\(4\\) years under annual compound interest. Calculate the annual interest rate, correct to two decimal places.",
+    "a": "\\(10.67\\%\\)",
+    "opts": [
+      "\\(12.50\\%\\)",
+      "\\(10.13\\%\\)",
+      "\\(11.20\\%\\)",
+      "\\(10.67\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Set up the compound interest equation.",
+        "workingOut": "\\(42000 = 28000 \\times (1 + r)^{4}\\), where \\(r\\) is the annual decimal rate.",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide by the principal and solve for the base.",
+        "workingOut": "\\(1 + r = \\left(\\frac{42000}{28000}\\right)^{\\frac{1}{4}} = 1.5^{\\frac{1}{4}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the rate as a percentage and round to two decimal places.",
+        "workingOut": "\\(r = \\left(1.5^{\\frac{1}{4}} - 1\\right) \\times 100\\% \\approx 10.67\\%\\)",
+        "graphData": null
+      }
     ]
   }
 ];

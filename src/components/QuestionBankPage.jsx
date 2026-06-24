@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown
+  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown, ClipboardCheck
 } from 'lucide-react';
 import { exportQuestionsPdf } from '../utils/exportPdf';
 import { db } from '../firebase/config';
@@ -27,6 +27,28 @@ import { useToast } from '../context/ToastContext';
 import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { applyCountDeltas } from '../services/questionCountsService';
 import { answersMatch } from '../utils/answerMatching';
+
+// Split a long model-answer string into sentence-level lines for readability.
+// Careful to skip periods inside math delimiters \(...\) and $$...$$.
+const splitAnswerIntoLines = (text) => {
+  if (typeof text !== 'string') return text;
+  // Already contains explicit newlines — respect them
+  if (/\n/.test(text)) return text;
+  // Tokenise: alternate between math blocks and plain text
+  const mathRe = /(\$\$[\s\S]*?\$\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
+  const tokens = text.split(mathRe);
+  let result = '';
+  for (let i = 0; i < tokens.length; i++) {
+    if (i % 2 === 1) {
+      // Math block — keep as-is
+      result += tokens[i];
+    } else {
+      // Plain text — insert newline after ". " (sentence boundary)
+      result += tokens[i].replace(/\.\s+(?=[A-Z])/g, '.\n');
+    }
+  }
+  return result;
+};
 
 /**
  * Full-page question-bank browser for a single chapter+topic.
@@ -505,7 +527,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                   <MathView
                     content={q?.question}
                     graphData={q?.graphData}
-                    style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
+                    style={{ fontSize: '0.98rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
                   />
 
                   <AnimatePresence>
@@ -706,11 +728,58 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                     })}
                   </div>
                 ) : isTeacherReview ? (
-                  <div style={{ padding: '16px', borderRadius: '16px', background: '#fef9c3', color: '#854d0e', fontSize: '0.9rem', fontWeight: 700, textAlign: 'center' }}>
-                    Teacher reviews this question manually.
+                  <div style={{ 
+                    padding: '24px', 
+                    borderRadius: '24px', 
+                    background: '#fefce8', 
+                    border: '1px solid #fef08a', 
+                    color: '#854d0e', 
+                    fontSize: '0.95rem',
+                    boxShadow: '0 4px 12px rgba(254, 240, 138, 0.15)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '16px'
+                  }}>
+                    <div style={{ 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center', 
+                      gap: '8px', 
+                      fontWeight: 800, 
+                      fontSize: '0.9rem', 
+                      textTransform: 'uppercase', 
+                      letterSpacing: '0.05em', 
+                      color: '#a16207',
+                      borderBottom: q.answer ? '1px dashed #fef08a' : 'none',
+                      paddingBottom: q.answer ? '12px' : '0px',
+                    }}>
+                      <ClipboardCheck size={18} />
+                      <span>Teacher reviews this question manually</span>
+                    </div>
                     {q.answer && (
-                      <div style={{ marginTop: '8px', color: '#713f12', fontWeight: 600, fontSize: '0.85rem' }}>
-                        Model answer: <MathView content={String(q.answer)} style={{ display: 'inline' }} />
+                      <div style={{ textAlign: 'left' }}>
+                        <div style={{ 
+                          fontWeight: 900, 
+                          color: '#713f12', 
+                          fontSize: '0.85rem', 
+                          textTransform: 'uppercase', 
+                          letterSpacing: '0.05em',
+                          marginBottom: '8px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '6px'
+                        }}>
+                          Model Answer:
+                        </div>
+                        <div style={{ 
+                          background: '#ffffff', 
+                          padding: '18px 24px', 
+                          borderRadius: '20px', 
+                          border: '1px solid #fef08a', 
+                          boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.02)'
+                        }}>
+                          <MathView content={splitAnswerIntoLines(String(q.answer))} style={{ color: '#451a03', fontSize: '0.95rem', lineHeight: 1.8 }} />
+                        </div>
                       </div>
                     )}
                   </div>

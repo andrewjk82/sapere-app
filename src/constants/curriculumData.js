@@ -1672,7 +1672,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y9-1',
       title: 'Chapter 1: Algebra',
-      modules: 8,
+      modules: 9,
       topics: [
         { id: 'y9-1a', code: '1A', title: 'Substitution' },
         { id: 'y9-1b', code: '1B', title: 'Like terms' },
@@ -1681,7 +1681,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-1e', code: '1E', title: 'Binomial products' },
         { id: 'y9-1f', code: '1F', title: 'Perfect squares' },
         { id: 'y9-1g', code: '1G', title: 'Difference of two squares' },
-        { id: 'y9-1h', code: '1H', title: 'Miscellaneous questions' }
+        { id: 'y9-1h', code: '1H', title: 'Miscellaneous questions' },
+        { id: 'y9-1i', code: '1I', title: 'Revision' }
       ]
     },
     {
@@ -3023,6 +3024,8 @@ export const CURRICULUM_DATA = {
         title: 'Chapter 1: Sequences and series',
         modules: 9,
         topics: [
+          { id: 'y12a-1a', code: '1A', title: 'Miscellaneous questions' },
+          { id: 'y12a-1b', code: '1B', title: 'Miscellaneous questions' },
           { id: 'y12a-1A', code: '1A', title: 'Sequences and how to specify them' },
           { id: 'y12a-1B', code: '1B', title: 'Arithmetic sequences' },
           { id: 'y12a-1C', code: '1C', title: 'Geometric sequences' },

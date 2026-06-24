@@ -9,6 +9,90 @@
  * wrapping). It NEVER renders. The database already stores correct LaTeX in the
  * common case; this layer papers over the messy imports.
  */
+const mathFunctions = new Set(['sin', 'cos', 'tan', 'log', 'ln', 'exp', 'lim', 'max', 'min', 'det', 'gcd', 'lcm', 'deg', 'val']);
+const commonShortProse = new Set(['a', 'an', 'the', 'by', 'to', 'is', 'in', 'of', 'at', 'on', 'or', 'so', 'if', 'as', 'it', 'be', 'do', 'no', 'us', 'we', 'am', 'me', 'my', 'up', 'he', 'and']);
+const PROSE_PUNCTUATION = /^[.,;:?!'"\-\s]+$/;
+
+function healProseInMath(inner) {
+  const clean = inner.replace(/\\[a-zA-Z]+/g, '').replace(/[\{\}]/g, '');
+  const words = clean.match(/[a-zA-Z]{3,}/g) || [];
+  const proseWords = words.filter(w => !mathFunctions.has(w.toLowerCase()));
+  
+  if (proseWords.length === 0) {
+    return inner;
+  }
+  
+  const tokenRegex = /(\\[a-zA-Z]+\s*(?:\{(?:[^{}]|\{[^{}]*\})*\})*|\\[a-zA-Z]+|\\[^a-zA-Z]|[a-zA-Z]+|\s+|[^\\[a-zA-Z\s]+)/g;
+  const tokens = inner.split(tokenRegex).filter(Boolean);
+  const tokenTypes = tokens.map((t) => {
+    if (t.startsWith('\\')) {
+      return 'math-command';
+    }
+    if (/^[a-zA-Z]+$/.test(t)) {
+      const lower = t.toLowerCase();
+      if (mathFunctions.has(lower)) return 'math-word';
+      if (t.length >= 3 || commonShortProse.has(lower)) return 'prose-word';
+      return 'math-word';
+    }
+    if (/^\s+$/.test(t)) {
+      return 'space';
+    }
+    return 'other';
+  });
+
+  const isProse = new Array(tokens.length).fill(false);
+  for (let i = 0; i < tokens.length; i++) {
+    if (tokenTypes[i] === 'prose-word') {
+      isProse[i] = true;
+    }
+  }
+
+  // propagate prose to adjacent spaces and punctuation
+  for (let i = 0; i < tokens.length; i++) {
+    if (tokenTypes[i] === 'space' || tokenTypes[i] === 'other') {
+      if (PROSE_PUNCTUATION.test(tokens[i])) {
+        const prevProse = i > 0 && isProse[i-1];
+        const nextProse = i < tokens.length - 1 && isProse[i+1];
+        if (prevProse || nextProse) {
+          isProse[i] = true;
+        }
+      }
+    }
+  }
+
+  // Second pass (reverse propagation)
+  for (let i = tokens.length - 1; i >= 0; i--) {
+    if (tokenTypes[i] === 'space' || tokenTypes[i] === 'other') {
+      if (PROSE_PUNCTUATION.test(tokens[i])) {
+        const prevProse = i > 0 && isProse[i-1];
+        const nextProse = i < tokens.length - 1 && isProse[i+1];
+        if (prevProse || nextProse) {
+          isProse[i] = true;
+        }
+      }
+    }
+  }
+
+  const result = [];
+  let currentProse = [];
+  for (let i = 0; i < tokens.length; i++) {
+    if (isProse[i]) {
+      currentProse.push(tokens[i]);
+    } else {
+      if (currentProse.length > 0) {
+        result.push(`\\text{${currentProse.join('')}}`);
+        currentProse = [];
+      }
+      result.push(tokens[i]);
+    }
+  }
+  if (currentProse.length > 0) {
+    result.push(`\\text{${currentProse.join('')}}`);
+  }
+
+  return result.join('');
+}
+
 const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
   if (value === null || value === undefined) return fallback;
 
@@ -222,19 +306,48 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
       // --- INSIDE MATH BLOCKS ---
       let math = parts[i];
 
-      // We convert A / (B) into \frac{A}{B} WITHOUT wrapping in $, because we are already inside a block!
-      math = math.replace(/([a-zA-Z0-9\.\,\\]+)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}');
-      math = math.replace(/\(([^()]+)\)\s*\/\s*([a-zA-Z0-9\.\,\\]+)/g, '\\frac{$1}{$2}');
-      math = math.replace(/\(([^()]+)\)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}');
+      const isDisplay = math.startsWith('$$') || math.startsWith('\\[');
+      const isInlineParen = math.startsWith('\\(');
+      const isInlineDollar = math.startsWith('$') && !isDisplay;
 
-      // Heal double superscripts: "x^2^{2}" is invalid in KaTeX but authors
-      // write it to mean (x^2)^2. Re-group the base + first exponent so it
-      // renders exactly as intended: x^2^{2} → {x^2}^{2}. Loop for chains.
-      let prevMath;
-      do {
-        prevMath = math;
-        math = math.replace(/([A-Za-z0-9)\]])\^(\{[^{}]*\}|[A-Za-z0-9])\^/g, '{$1^$2}^');
-      } while (math !== prevMath);
+      let delimiterStart = '';
+      let delimiterEnd = '';
+      let inner = '';
+      if (isDisplay) {
+        delimiterStart = math.startsWith('$$') ? '$$' : '\\[';
+        delimiterEnd = math.startsWith('$$') ? '$$' : '\\]';
+        inner = math.slice(2, -2);
+      } else if (isInlineParen) {
+        delimiterStart = '\\(';
+        delimiterEnd = '\\)';
+        inner = math.slice(2, -2);
+      } else if (isInlineDollar) {
+        delimiterStart = '$';
+        delimiterEnd = '$';
+        inner = math.slice(1, -1);
+      }
+
+      if (inner) {
+        inner = healProseInMath(inner);
+        // We convert A / (B) into \frac{A}{B} WITHOUT wrapping in $, because we are already inside a block!
+        inner = inner.replace(/([a-zA-Z0-9\.\,\{\}\[\]][a-zA-Z0-9\.\,\{\}\[\]\\]*)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}');
+        inner = inner.replace(/\(([^()]+)\)\s*\/\s*([a-zA-Z0-9\.\,\{\}\[\]\\]*[a-zA-Z0-9\.\,\{\}\[\]])/g, '\\frac{$1}{$2}');
+        inner = inner.replace(/\(([^()]+)\)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}');
+        // Convert simple numerical fractions like 5/2 into \frac{5}{2}
+        inner = inner.replace(/\b(\d+)\s*\/\s*(\d+)\b/g, '\\frac{$1}{$2}');
+        // Convert plain "and" / "or" to LaTeX text counterparts so they render with space and proper font
+        inner = inner.replace(/\band\b/g, '\\text{ and }');
+        inner = inner.replace(/\bor\b/g, '\\text{ or }');
+
+        // Heal double superscripts
+        let prevInner;
+        do {
+          prevInner = inner;
+          inner = inner.replace(/([A-Za-z0-9)\]])\^(\{[^{}]*\}|[A-Za-z0-9])\^/g, '{$1^$2}^');
+        } while (inner !== prevInner);
+
+        math = delimiterStart + inner + delimiterEnd;
+      }
 
       parts[i] = math;
     }
@@ -251,8 +364,8 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
       let text = parts2[i];
       // Convert (A) / (B) into $\frac{A}{B}$
       text = text.replace(/\(([^()]+)\)\s*\/\s*\(([^()]+)\)/g, '$\\frac{$1}{$2}$');
-      text = text.replace(/([a-zA-Z0-9\.\,\\]+)\s*\/\s*\(([^()]+)\)/g, '$\\frac{$1}{$2}$');
-      text = text.replace(/\(([^()]+)\)\s*\/\s*([a-zA-Z0-9\.\,\\]+)/g, '$\\frac{$1}{$2}$');
+      text = text.replace(/([a-zA-Z0-9\.\,\{\}\[\]][a-zA-Z0-9\.\,\{\}\[\]\\]*)\s*\/\s*\(([^()]+)\)/g, '$\\frac{$1}{$2}$');
+      text = text.replace(/\(([^()]+)\)\s*\/\s*([a-zA-Z0-9\.\,\{\}\[\]\\]*[a-zA-Z0-9\.\,\{\}\[\]])/g, '$\\frac{$1}{$2}$');
 
       // Convert n/4 -> $\frac{n}{4}$
       text = text.replace(/\b(\d*[a-zA-Z]+|\d+)\s*\/\s*(\d+)\b/g, (match, p1, p2) => {

@@ -19,10 +19,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(2240\\) (nominal)",
+      "\\(2016\\)",
+      "\\(1904\\)",
       "\\(2240\\)",
-      "\\(2240\\) (estimated)",
-      "\\(2240\\) (rounded)"
+      "\\(2464\\)"
     ]
   },
   {
@@ -62,7 +62,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 30,
     "t": "Revision",
     "question": "The sum of $9000 is borrowed for $5$ years and $2700 is paid in interest. Calculate the (per annum) rate of simple interest charged, as a percentage.",
-    "a": "\\(6\\)\\%",
+    "a": "\\(\\(6\\)\\\\%\\)",
     "solutionSteps": [
       {
         "explanation": "Use the simple interest formula $I = PRN$.",
@@ -83,10 +83,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(5%\\)",
-      "\\(7%\\)",
-      "\\(6%\\)",
-      "\\(8%\\)"
+      "\\(5\\%\\)",
+      "\\(7\\%\\)",
+      "\\(6\\%\\)",
+      "\\(8\\%\\)"
     ]
   },
   {
@@ -109,10 +109,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(175\\) (nominal)",
-      "\\(175\\) (rounded)",
-      "\\(175\\) (estimated)",
-      "\\(175\\)"
+      "\\(193\\)",
+      "\\(175\\)",
+      "\\(158\\)",
+      "\\(149\\)"
     ]
   },
   {
@@ -125,16 +125,20 @@ export const Y10_CH1F_QUESTIONS = [
     "a": "\\(126\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply the marked price by $0.7$.",
-        "workingOut": "180 \\times 0.7 = 126"
+        "explanation": "Determine the multiplier based on the percentage change.",
+        "workingOut": "\\(0.7\\)"
+      },
+      {
+        "explanation": "Multiply the value by the multiplier.",
+        "workingOut": "\\(180 \\times 0.7 = \\(126\\)\\)"
       }
     ],
     "graphData": null,
     "opts": [
-      "\\(126\\) (nominal)",
-      "\\(126\\) (estimated)",
-      "\\(126\\) (rounded)",
-      "\\(126\\)"
+      "\\(113\\)",
+      "\\(126\\)",
+      "\\(139\\)",
+      "\\(107\\)"
     ]
   },
   {
@@ -144,7 +148,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 30,
     "t": "Revision",
     "question": "A pair of shoes marked at $150 is sold for $120. What percentage discount has been allowed?",
-    "a": "\\(20\\)\\%",
+    "a": "\\(\\(20\\)\\\\%\\)",
     "solutionSteps": [
       {
         "explanation": "Calculate the discount amount.",
@@ -157,10 +161,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(20%\\)",
-      "\\(22%\\)",
-      "\\(18%\\)",
-      "\\(21%\\)"
+      "\\(20\\%\\)",
+      "\\(22\\%\\)",
+      "\\(18\\%\\)",
+      "\\(21\\%\\)"
     ]
   },
   {
@@ -183,10 +187,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(24\\) (nominal)",
-      "\\(24\\) (rounded)",
-      "\\(24\\) (estimated)",
-      "\\(24\\)"
+      "\\(24\\)",
+      "\\(20\\)",
+      "\\(22\\)",
+      "\\(26\\)"
     ]
   },
   {
@@ -209,10 +213,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(80\\) (rounded)",
-      "\\(80\\) (nominal)",
-      "\\(80\\) (estimated)",
-      "\\(80\\)"
+      "\\(88\\)",
+      "\\(68\\)",
+      "\\(80\\)",
+      "\\(72\\)"
     ]
   },
   {
@@ -225,8 +229,12 @@ export const Y10_CH1F_QUESTIONS = [
     "a": "\\(120\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by $1 - 0.20 = 0.80$.",
-        "workingOut": "150 \\times 0.8 = 120"
+        "explanation": "Determine the multiplier based on the percentage change.",
+        "workingOut": "\\(0.8\\)"
+      },
+      {
+        "explanation": "Multiply the value by the multiplier.",
+        "workingOut": "\\(150 \\times 0.8 = \\(120\\)\\)"
       }
     ],
     "graphData": null,
@@ -247,8 +255,12 @@ export const Y10_CH1F_QUESTIONS = [
     "a": "\\(100\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by $1 + 0.25 = 1.25$.",
-        "workingOut": "80 \\times 1.25 = 100"
+        "explanation": "Determine the multiplier based on the percentage change.",
+        "workingOut": "\\(1.25\\)"
+      },
+      {
+        "explanation": "Multiply the value by the multiplier.",
+        "workingOut": "\\(80 \\times 1.25 = \\(100\\)\\)"
       }
     ],
     "graphData": null,
@@ -269,8 +281,12 @@ export const Y10_CH1F_QUESTIONS = [
     "a": "\\(35\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by $0.70$.",
-        "workingOut": "50 \\times 0.7 = 35"
+        "explanation": "Determine the multiplier based on the percentage change.",
+        "workingOut": "\\(0.7\\)"
+      },
+      {
+        "explanation": "Multiply the value by the multiplier.",
+        "workingOut": "\\(50 \\times 0.7 = \\(35\\)\\)"
       }
     ],
     "graphData": null,
@@ -314,7 +330,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "An original value of $400$ becomes a new value of $280$. Calculate the percentage change (e.g., '30% decrease').",
-    "a": "\\(30\\)\\% decrease",
+    "a": "\\(\\(30\\)\\\\% decrease\\)",
     "solutionSteps": [
       {
         "explanation": "Calculate the absolute change.",
@@ -344,7 +360,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "An original value of $120$ becomes a new value of $270$. Calculate the percentage change (e.g., '125% increase').",
-    "a": "\\(125\\)\\% increase",
+    "a": "\\(\\(125\\)\\\\% increase\\)",
     "solutionSteps": [
       {
         "explanation": "Calculate the absolute change.",
@@ -400,7 +416,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "Find the single percentage change that is equivalent to a $30\\%$ increase followed by a $30\\%$ decrease.",
-    "a": "\\(9\\)\\% decrease",
+    "a": "\\(\\(9\\)\\\\% decrease\\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the two multiplier factors.",
@@ -430,7 +446,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "Find the single percentage change that is equivalent to a $20\\%$ increase followed by a $10\\%$ increase.",
-    "a": "\\(32\\)\\% increase",
+    "a": "\\(\\(32\\)\\\\% increase\\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the two multiplier factors.",
@@ -460,7 +476,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "Find the single percentage change that is equivalent to a $15\\%$ decrease followed by a $5\\%$ increase.",
-    "a": "\\(10.75\\)\\% decrease",
+    "a": "\\(\\(10.75\\)\\\\% decrease\\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the two multiplier factors.",
@@ -490,7 +506,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "Find the single percentage change that is equivalent to a $20\\%$ decrease followed by a $20\\%$ decrease.",
-    "a": "\\(36\\)\\% decrease",
+    "a": "\\(\\(36\\)\\\\% decrease\\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the two multiplier factors.",
@@ -520,7 +536,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "Due to market demands, the cost of petrol increases by $3\\%$, $6\\%$ and $2\\%$ in three successive months. By what percentage has the cost of petrol increased over the three-month period? (Give your answer to 2 decimal places)",
-    "a": "\\(11.36\\)\\%",
+    "a": "\\(\\(11.36\\)\\\\%\\)",
     "solutionSteps": [
       {
         "explanation": "Multiply the factors for each increase.",
@@ -541,10 +557,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(11.360%\\)",
-      "\\(12.496%\\)",
-      "\\(10.224%\\)",
-      "\\(11.928%\\)"
+      "\\(11.360\\%\\)",
+      "\\(12.496\\%\\)",
+      "\\(10.224\\%\\)",
+      "\\(11.928\\%\\)"
     ]
   },
   {
@@ -554,7 +570,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "A quantity is increased by $10\\%$. What further percentage change, applied to the increased value, is required to produce an overall increase of $43\\%$?",
-    "a": "Increase of 30\\%",
+    "a": "\\(Increase of 30\\\\%\\)",
     "solutionSteps": [
       {
         "explanation": "Let the further multiplier be $x$.",
@@ -571,10 +587,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "Increase of 30\\% (rounded)",
-      "Increase of 30\\% (nominal)",
-      "Increase of 30\\% (estimated)",
-      "Increase of 30\\%"
+      "\\(Increase of 27\\\\%\\)",
+      "\\(Increase of 30\\\\%\\)",
+      "\\(Increase of 24\\\\%\\)",
+      "\\(Increase of 33\\\\%\\)"
     ]
   },
   {
@@ -584,7 +600,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "A quantity is increased by $10\\%$. What further percentage change, applied to the increased value, is required to produce an overall increase of $21\\%$?",
-    "a": "Increase of 10\\%",
+    "a": "\\(Increase of 10\\\\%\\)",
     "solutionSteps": [
       {
         "explanation": "Let the further multiplier be $x$.",
@@ -601,10 +617,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "Increase of 10\\%",
-      "Increase of 10\\% (estimated)",
-      "Increase of 10\\% (nominal)",
-      "Increase of 10\\% (rounded)"
+      "\\(Increase of 11\\\\%\\)",
+      "\\(Increase of 8\\\\%\\)",
+      "\\(Increase of 10\\\\%\\)",
+      "\\(Increase of 9\\\\%\\)"
     ]
   },
   {
@@ -614,7 +630,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "A quantity is increased by $10\\%$. What further percentage change, applied to the increased value, is required to produce an overall decrease of $23\\%$?",
-    "a": "Decrease of 30\\%",
+    "a": "\\(Decrease of 30\\\\%\\)",
     "solutionSteps": [
       {
         "explanation": "Let the further multiplier be $x$. A $23\\%$ decrease means a multiplier of $0.77$.",
@@ -631,10 +647,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "Decrease of 30\\%",
-      "Decrease of 30\\% (estimated)",
-      "Decrease of 30\\% (nominal)",
-      "Decrease of 30\\% (rounded)"
+      "\\(Decrease of 33\\\\%\\)",
+      "\\(Decrease of 30\\\\%\\)",
+      "\\(Decrease of 24\\\\%\\)",
+      "\\(Decrease of 27\\\\%\\)"
     ]
   },
   {
@@ -644,7 +660,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 90,
     "t": "Revision",
     "question": "A quantity is increased by $10\\%$. What further percentage change, applied to the increased value, is required to produce an overall decrease of $1\\%$?",
-    "a": "Decrease of 10\\%",
+    "a": "\\(Decrease of 10\\\\%\\)",
     "solutionSteps": [
       {
         "explanation": "Let the further multiplier be $x$. A $1\\%$ decrease means a multiplier of $0.99$.",
@@ -661,10 +677,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "Decrease of 10\\%",
-      "Decrease of 10\\% (estimated)",
-      "Decrease of 10\\% (rounded)",
-      "Decrease of 10\\% (nominal)"
+      "\\(Decrease of 9\\\\%\\)",
+      "\\(Decrease of 10\\\\%\\)",
+      "\\(Decrease of 11\\\\%\\)",
+      "\\(Decrease of 8\\\\%\\)"
     ]
   },
   {
@@ -691,10 +707,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(30693.31\\) (estimated)",
-      "\\(30693.31\\)",
-      "\\(30693.31\\) (rounded)",
-      "\\(30693.31\\) (nominal)"
+      "\\(27623.98\\)",
+      "\\(33762.64\\)",
+      "\\(26089.31\\)",
+      "\\(30693.31\\)"
     ]
   },
   {
@@ -717,10 +733,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
+      "\\(22080.72\\)",
       "\\(20073.38\\)",
-      "\\(20073.38\\) (estimated)",
-      "\\(20073.38\\) (nominal)",
-      "\\(20073.38\\) (rounded)"
+      "\\(18066.04\\)",
+      "\\(17062.37\\)"
     ]
   },
   {
@@ -747,10 +763,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(20202.83\\) (nominal)",
-      "\\(20202.83\\) (estimated)",
-      "\\(20202.83\\)",
-      "\\(20202.83\\) (rounded)"
+      "\\(18182.55\\)",
+      "\\(22223.11\\)",
+      "\\(17172.41\\)",
+      "\\(20202.83\\)"
     ]
   },
   {
@@ -777,10 +793,10 @@ export const Y10_CH1F_QUESTIONS = [
     ],
     "graphData": null,
     "opts": [
-      "\\(20232.79\\) (rounded)",
-      "\\(20232.79\\) (nominal)",
-      "\\(20232.79\\) (estimated)",
-      "\\(20232.79\\)"
+      "\\(20232.79\\)",
+      "\\(22256.07\\)",
+      "\\(17197.87\\)",
+      "\\(18209.51\\)"
     ]
   },
   {
@@ -973,34 +989,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "Charlotte splits 35000 dollars in start-up capital between biotech research bonds yielding 5.2% p.a. and e-commerce expansion stock yielding 7.6% p.a. If the combined annual dividend is 2180.00 dollars, determine the amount invested in biotech bonds.",
-    "a": "\\(20000\\)",
+    "t": "Financial mathematics",
+    "question": "SolarisEnergy is considering financing a new autonomous server unit costing \\(\\$36500\\). Option A charges \\(4.9\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(4.9\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$1714.80\\)",
     "opts": [
-      "\\(21000\\)",
-      "\\(22000\\)",
-      "\\(20000\\)",
-      "\\(18000\\)"
+      "\\(\\$1714.80\\)",
+      "\\(\\$622.29\\)",
+      "\\(\\$1611.91\\)",
+      "\\(\\$1817.69\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in biotech bonds (x) and e-commerce expansion (y).",
-        "workingOut": "\\(x + y = 35000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 36500 \\times \\frac{4.9}{100} \\times 6 = 10731.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5.2}{100}x + \\frac{7.6}{100}y = 2180.00 \\implies 5.2x + 7.6y = 218000\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 36500 \\times \\left(1 + \\frac{4.9000}{12}\\right)^{72} - 36500 \\approx 12445.8037\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(5.2x + 7.6(35000 - x) = 218000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2.3999999999999995x = -48000 \\implies x = 20000\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$1714.80\\)",
         "graphData": null
       }
     ]
@@ -1010,34 +1021,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "To fund a local park restoration, a council splits a grant of 20000 dollars into two treasury accounts paying 4.8% and 6.4% interest respectively. If the total annual interest earned is 1080.00 dollars, find the amount allocated to the first account.",
-    "a": "\\(12500\\)",
+    "t": "Financial mathematics",
+    "question": "VertexLogistics is considering financing a new robotic picking line costing \\(\\$43000\\). Option A charges \\(5.3\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(5.3\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$2382.81\\)",
     "opts": [
-      "\\(11250\\)",
-      "\\(13750\\)",
-      "\\(12500\\)",
-      "\\(13125\\)"
+      "\\(\\$2382.81\\)",
+      "\\(\\$2525.78\\)",
+      "\\(\\$2239.84\\)",
+      "\\(\\$802.84\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in first account (x) and second account (y).",
-        "workingOut": "\\(x + y = 20000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 43000 \\times \\frac{5.3}{100} \\times 6 = 13674.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4.8}{100}x + \\frac{6.4}{100}y = 1080.00 \\implies 4.8x + 6.4y = 108000\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 43000 \\times \\left(1 + \\frac{5.3000}{12}\\right)^{72} - 43000 \\approx 16056.8138\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(4.8x + 6.4(20000 - x) = 108000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-1.6000000000000005x = -20000 \\implies x = 12500\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$2382.81\\)",
         "graphData": null
       }
     ]
@@ -1047,34 +1053,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A private school foundation divides 45000 dollars between a low-risk government security yielding 3.5% p.a. and a balanced commercial bond fund yielding 5.5% p.a. If the total interest return is 1975.00 dollars, find the sum placed in the government security.",
-    "a": "\\(25000\\)",
+    "t": "Financial mathematics",
+    "question": "ApexFoundry is considering financing a new industrial bioreactor costing \\(\\$49500\\). Option A charges \\(5.7\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(5.7\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$3198.74\\)",
     "opts": [
-      "\\(26250\\)",
-      "\\(25000\\)",
-      "\\(27500\\)",
-      "\\(22500\\)"
+      "\\(\\$3006.82\\)",
+      "\\(\\$3390.66\\)",
+      "\\(\\$3198.74\\)",
+      "\\(\\$1006.39\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in government security (x) and balanced bond fund (y).",
-        "workingOut": "\\(x + y = 45000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 49500 \\times \\frac{5.7}{100} \\times 6 = 16929.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{3.5}{100}x + \\frac{5.5}{100}y = 1975.00 \\implies 3.5x + 5.5y = 197500\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 49500 \\times \\left(1 + \\frac{5.7000}{12}\\right)^{72} - 49500 \\approx 20127.7352\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(3.5x + 5.5(45000 - x) = 197500\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2x = -50000 \\implies x = 25000\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$3198.74\\)",
         "graphData": null
       }
     ]
@@ -1084,34 +1085,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "Amelia invests 28000 dollars in two agricultural projects: organic soil upgrades yielding 5% and automatic irrigation shares yielding 7.5%. If the combined interest at the end of the year is 1700.00 dollars, find the soil upgrade investment.",
-    "a": "\\(16000\\)",
+    "t": "Financial mathematics",
+    "question": "CrestAgri is considering financing a new hydraulic smelting press costing \\(\\$56000\\). Option A charges \\(6.1\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(6.1\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$4178.66\\)",
     "opts": [
-      "\\(16000\\)",
-      "\\(17600\\)",
-      "\\(16800\\)",
-      "\\(14400\\)"
+      "\\(\\$3927.94\\)",
+      "\\(\\$4178.66\\)",
+      "\\(\\$4429.38\\)",
+      "\\(\\$1233.73\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in soil upgrades (x) and irrigation shares (y).",
-        "workingOut": "\\(x + y = 28000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 56000 \\times \\frac{6.1}{100} \\times 6 = 20496.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{7.5}{100}y = 1700.00 \\implies 5x + 7.5y = 170000\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 56000 \\times \\left(1 + \\frac{6.1000}{12}\\right)^{72} - 56000 \\approx 24674.6647\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(5x + 7.5(28000 - x) = 170000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2.5x = -40000 \\implies x = 16000\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$4178.66\\)",
         "graphData": null
       }
     ]
@@ -1121,34 +1117,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A technology studio sets aside 60000 dollars of its reserve capital in two cash deposits. The first pays 4.2% p.a. simple interest, and the second pays 6.8% p.a. If the total interest credited is 3170.00 dollars, what was the principal of the first deposit?",
-    "a": "\\(35000\\)",
+    "t": "Financial mathematics",
+    "question": "StellarAerospace is considering financing a new smart climate chamber costing \\(\\$62500\\). Option A charges \\(6.5\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(6.5\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$5339.20\\)",
     "opts": [
-      "\\(35000\\)",
-      "\\(38500\\)",
-      "\\(31500\\)",
-      "\\(36750\\)"
+      "\\(\\$1485.71\\)",
+      "\\(\\$5339.20\\)",
+      "\\(\\$5659.55\\)",
+      "\\(\\$5018.85\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in first deposit (x) and second deposit (y).",
-        "workingOut": "\\(x + y = 60000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 62500 \\times \\frac{6.5}{100} \\times 6 = 24375.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4.2}{100}x + \\frac{6.8}{100}y = 3170.00 \\implies 4.2x + 6.8y = 317000\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 62500 \\times \\left(1 + \\frac{6.5000}{12}\\right)^{72} - 62500 \\approx 29714.1976\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(4.2x + 6.8(60000 - x) = 317000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2.5999999999999996x = -91000 \\implies x = 35000\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$5339.20\\)",
         "graphData": null
       }
     ]
@@ -1158,34 +1149,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "Benjamin splits a commercial loan of 18000 dollars into two equipment leasing funds. Fund X yields a return of 6% p.a., while Fund Y yields 9.5% p.a. If the combined annual dividend is 1360.00 dollars, calculate the amount allocated to Fund X.",
-    "a": "\\(10000\\)",
+    "t": "Financial mathematics",
+    "question": "BioPharmaSystems is considering financing a new electric shipping vessel costing \\(\\$69000\\). Option A charges \\(6.9\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(6.9\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$6697.44\\)",
     "opts": [
-      "\\(9000\\)",
-      "\\(10500\\)",
-      "\\(11000\\)",
-      "\\(10000\\)"
+      "\\(\\$6697.44\\)",
+      "\\(\\$7099.29\\)",
+      "\\(\\$1763.17\\)",
+      "\\(\\$6295.59\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in Fund X (x) and Fund Y (y).",
-        "workingOut": "\\(x + y = 18000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 69000 \\times \\frac{6.9}{100} \\times 6 = 28566.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{6}{100}x + \\frac{9.5}{100}y = 1360.00 \\implies 6x + 9.5y = 136000\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 69000 \\times \\left(1 + \\frac{6.9000}{12}\\right)^{72} - 69000 \\approx 35263.4425\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(6x + 9.5(18000 - x) = 136000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-3.5x = -35000 \\implies x = 10000\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$6697.44\\)",
         "graphData": null
       }
     ]
@@ -1195,34 +1181,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A retail company divides a surplus of 32000 dollars between treasury notes earning 5.5% and retail warehouse developments returning 8%. If the total return received at the end of the year is 2110.00 dollars, find the amount placed in treasury notes.",
-    "a": "\\(18000\\)",
+    "t": "Financial mathematics",
+    "question": "QuantumFinance is considering financing a new precision CNC mill costing \\(\\$75500\\). Option A charges \\(7.3\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(7.3\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$8271.04\\)",
     "opts": [
-      "\\(19800\\)",
-      "\\(18000\\)",
-      "\\(16200\\)",
-      "\\(18900\\)"
+      "\\(\\$8271.04\\)",
+      "\\(\\$8767.30\\)",
+      "\\(\\$7774.78\\)",
+      "\\(\\$2067.00\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in treasury notes (x) and retail developments (y).",
-        "workingOut": "\\(x + y = 32000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 75500 \\times \\frac{7.3}{100} \\times 6 = 33069.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5.5}{100}x + \\frac{8}{100}y = 2110.00 \\implies 5.5x + 8y = 211000\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 75500 \\times \\left(1 + \\frac{7.3000}{12}\\right)^{72} - 75500 \\approx 41340.0359\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(5.5x + 8(32000 - x) = 211000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2.5x = -45000 \\implies x = 18000\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$8271.04\\)",
         "graphData": null
       }
     ]
@@ -1232,34 +1213,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "Olivia divides 55000 dollars of savings between local infrastructure bonds returning 3.8% p.a. and tech index stocks yielding 6.2% p.a. If the total annual interest credit is 2642.00 dollars, calculate the principal sum in the infrastructure bonds.",
-    "a": "\\(32000\\)",
+    "t": "Financial mathematics",
+    "question": "TerraBuilders is considering financing a new heavy conveyor array costing \\(\\$82000\\). Option A charges \\(7.7\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(7.7\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$10078.16\\)",
     "opts": [
-      "\\(33600\\)",
-      "\\(28800\\)",
-      "\\(35200\\)",
-      "\\(32000\\)"
+      "\\(\\$9473.47\\)",
+      "\\(\\$10078.16\\)",
+      "\\(\\$2398.11\\)",
+      "\\(\\$10682.85\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in infrastructure bonds (x) and tech index stocks (y).",
-        "workingOut": "\\(x + y = 55000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 82000 \\times \\frac{7.7}{100} \\times 6 = 37884.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{3.8}{100}x + \\frac{6.2}{100}y = 2642.00 \\implies 3.8x + 6.2y = 264200\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 82000 \\times \\left(1 + \\frac{7.7000}{12}\\right)^{72} - 82000 \\approx 47962.1569\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(3.8x + 6.2(55000 - x) = 264200\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2.4000000000000004x = -76800 \\implies x = 32000\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$10078.16\\)",
         "graphData": null
       }
     ]
@@ -1269,34 +1245,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A family farm places a cash reserve of 22000 dollars in two interest-bearing bank deposits. Deposit A earns 4.5% simple interest p.a., and Deposit B earns 7.2%. If the total interest at the end of the first year is 1206.00 dollars, find the amount in Deposit A.",
-    "a": "\\(14000\\)",
+    "t": "Financial mathematics",
+    "question": "HelixMining is considering financing a new high-volume water pump costing \\(\\$88500\\). Option A charges \\(8.1\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(8.1\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$12137.54\\)",
     "opts": [
-      "\\(14700\\)",
-      "\\(14000\\)",
-      "\\(15400\\)",
-      "\\(12600\\)"
+      "\\(\\$12865.79\\)",
+      "\\(\\$12137.54\\)",
+      "\\(\\$11409.29\\)",
+      "\\(\\$2757.43\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in Deposit A (x) and Deposit B (y).",
-        "workingOut": "\\(x + y = 22000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 88500 \\times \\frac{8.1}{100} \\times 6 = 43011.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4.5}{100}x + \\frac{7.2}{100}y = 1206.00 \\implies 4.5x + 7.2y = 120600\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 88500 \\times \\left(1 + \\frac{8.1000}{12}\\right)^{72} - 88500 \\approx 55148.5435\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(4.5x + 7.2(22000 - x) = 120600\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2.7x = -37800 \\implies x = 14000\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$12137.54\\)",
         "graphData": null
       }
     ]
@@ -1306,34 +1277,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A shipping harbor trust allocates 48000 dollars between marine safety bonds returning 5.1% and automated logistics deposits returning 7.9%. If the total annual yield is 3008.00 dollars, how much was allocated to the marine safety bonds?",
-    "a": "\\(28000\\)",
+    "t": "Financial mathematics",
+    "question": "ZenithMedia is considering financing a new seismic shock absorber costing \\(\\$95000\\). Option A charges \\(8.5\\%\\) p.a. simple interest over \\(6\\) years. Option B charges \\(8.5\\%\\) p.a. compound interest, compounded monthly, over the same period. Find the absolute difference in the total interest paid between Option A and Option B. Correct to the nearest cent.",
+    "a": "\\(\\$14468.51\\)",
     "opts": [
-      "\\(29400\\)",
-      "\\(25200\\)",
-      "\\(30800\\)",
-      "\\(28000\\)"
+      "\\(\\$3145.93\\)",
+      "\\(\\$13600.40\\)",
+      "\\(\\$15336.62\\)",
+      "\\(\\$14468.51\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in marine safety bonds (x) and logistics deposits (y).",
-        "workingOut": "\\(x + y = 48000\\)",
+        "explanation": "Calculate the total simple interest paid under Option A.",
+        "workingOut": "\\(I_{\\text{simple}} = 95000 \\times \\frac{8.5}{100} \\times 6 = 48450.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5.1}{100}x + \\frac{7.9}{100}y = 3008.00 \\implies 5.1x + 7.9y = 300800\\)",
+        "explanation": "Calculate the total compound interest paid under Option B (compounded monthly).",
+        "workingOut": "\\(I_{\\text{compound}} = 95000 \\times \\left(1 + \\frac{8.5000}{12}\\right)^{72} - 95000 \\approx 62918.5077\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(5.1x + 7.9(48000 - x) = 300800\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2.8000000000000007x = -78400 \\implies x = 28000\\)",
+        "explanation": "Subtract the two interest amounts to obtain the absolute difference.",
+        "workingOut": "\\(\\text{Difference} = I_{\\text{compound}} - I_{\\text{simple}} \\approx \\$14468.51\\)",
         "graphData": null
       }
     ]
@@ -1343,34 +1309,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "Logan invests 26000 dollars in two startup hubs: clean energy innovations yielding 4% p.a. and AI software testing yielding 6.5% p.a. If the total annual yield is 1315.00 dollars, calculate the amount allocated to clean energy innovations.",
-    "a": "\\(15000\\)",
+    "t": "Financial mathematics",
+    "question": "Elena invests a capital of \\(\\$13500\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(3.85\\%\\) p.a. and total interest earned is exactly \\(\\$2295.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(4.42\\text{ years}\\)",
     "opts": [
-      "\\(15000\\)",
-      "\\(16500\\)",
-      "\\(13500\\)",
-      "\\(15750\\)"
+      "\\(5.08\\text{ years}\\)",
+      "\\(4.92\\text{ years}\\)",
+      "\\(4.42\\text{ years}\\)",
+      "\\(3.75\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in clean energy innovations (x) and AI software testing (y).",
-        "workingOut": "\\(x + y = 26000\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 2295.00 = 13500 \\times \\frac{3.85}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{6.5}{100}y = 1315.00 \\implies 4x + 6.5y = 131500\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "2295.00 = 519.7500 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(4x + 6.5(26000 - x) = 131500\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2.5x = -37500 \\implies x = 15000\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{2295.00}{519.7500} \\approx 4.42\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1380,34 +1341,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A local forestry company puts 38000 dollars into two commercial tree-planting programs. Program A earns a return of 5.8% p.a., while Program B earns 8.2% p.a. If the total earnings generated at the end of the first year is 2588.00 dollars, find the amount in Program A.",
-    "a": "\\(22000\\)",
+    "t": "Financial mathematics",
+    "question": "Kaelen invests a capital of \\(\\$17000\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(4.20\\%\\) p.a. and total interest earned is exactly \\(\\$3230.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(4.52\\text{ years}\\)",
     "opts": [
-      "\\(23100\\)",
-      "\\(19800\\)",
-      "\\(24200\\)",
-      "\\(22000\\)"
+      "\\(5.02\\text{ years}\\)",
+      "\\(3.85\\text{ years}\\)",
+      "\\(5.20\\text{ years}\\)",
+      "\\(4.52\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in Program A (x) and Program B (y).",
-        "workingOut": "\\(x + y = 38000\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 3230.00 = 17000 \\times \\frac{4.20}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5.8}{100}x + \\frac{8.2}{100}y = 2588.00 \\implies 5.8x + 8.2y = 258800\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "3230.00 = 714.0000 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(5.8x + 8.2(38000 - x) = 258800\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2.3999999999999995x = -52800 \\implies x = 22000\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{3230.00}{714.0000} \\approx 4.52\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1417,34 +1373,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A corporate marketing group splits a reserve budget of 42000 dollars between digital media bonds returning 3.6% p.a. and print publishing shares returning 5.6% p.a. If the total annual dividend is 1872.00 dollars, determine the amount invested in digital media bonds.",
-    "a": "\\(24000\\)",
+    "t": "Financial mathematics",
+    "question": "Sienna invests a capital of \\(\\$20500\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(4.55\\%\\) p.a. and total interest earned is exactly \\(\\$4305.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(4.62\\text{ years}\\)",
     "opts": [
-      "\\(24000\\)",
-      "\\(21600\\)",
-      "\\(26400\\)",
-      "\\(25200\\)"
+      "\\(5.12\\text{ years}\\)",
+      "\\(5.31\\text{ years}\\)",
+      "\\(4.62\\text{ years}\\)",
+      "\\(3.92\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in digital media bonds (x) and print publishing shares (y).",
-        "workingOut": "\\(x + y = 42000\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 4305.00 = 20500 \\times \\frac{4.55}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{3.6}{100}x + \\frac{5.6}{100}y = 1872.00 \\implies 3.6x + 5.6y = 187200\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "4305.00 = 932.7500 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(3.6x + 5.6(42000 - x) = 187200\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-1.9999999999999996x = -47999.99999999997 \\implies x = 24000\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{4305.00}{932.7500} \\approx 4.62\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1454,34 +1405,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A boutique hotel splits a grant of 12000 dollars into two treasury accounts paying 5% and 9% interest respectively. If the total annual interest earned is 800.00 dollars, find the amount allocated to the first account.",
-    "a": "\\(7000\\)",
+    "t": "Financial mathematics",
+    "question": "Darius invests a capital of \\(\\$24000\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(4.90\\%\\) p.a. and total interest earned is exactly \\(\\$5520.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(4.69\\text{ years}\\)",
     "opts": [
-      "\\(7350\\)",
-      "\\(6300\\)",
-      "\\(7700\\)",
-      "\\(7000\\)"
+      "\\(3.99\\text{ years}\\)",
+      "\\(5.40\\text{ years}\\)",
+      "\\(5.19\\text{ years}\\)",
+      "\\(4.69\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in first account (x) and second account (y).",
-        "workingOut": "\\(x + y = 12000\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 5520.00 = 24000 \\times \\frac{4.90}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{9}{100}y = 800.00 \\implies 5x + 9y = 80000\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "5520.00 = 1176.0000 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(5x + 9(12000 - x) = 80000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-4x = -28000 \\implies x = 7000\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{5520.00}{1176.0000} \\approx 4.69\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1491,34 +1437,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A research laboratory foundation divides 58000 dollars between a low-risk government security yielding 4.4% p.a. and a balanced commercial bond fund yielding 6.4% p.a. If the total interest return is 3032.00 dollars, find the sum placed in the government security.",
-    "a": "\\(34000\\)",
+    "t": "Financial mathematics",
+    "question": "Amara invests a capital of \\(\\$27500\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(5.25\\%\\) p.a. and total interest earned is exactly \\(\\$6875.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(4.76\\text{ years}\\)",
     "opts": [
-      "\\(34000\\)",
-      "\\(37400\\)",
-      "\\(35700\\)",
-      "\\(30600\\)"
+      "\\(4.05\\text{ years}\\)",
+      "\\(5.26\\text{ years}\\)",
+      "\\(4.76\\text{ years}\\)",
+      "\\(5.48\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate variables representing the investment placed in government security (x) and balanced bond fund (y).",
-        "workingOut": "\\(x + y = 58000\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 6875.00 = 27500 \\times \\frac{5.25}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the interest yield equation representing the total annual interest credit.",
-        "workingOut": "\\(\\frac{4.4}{100}x + \\frac{6.4}{100}y = 3032.00 \\implies 4.4x + 6.4y = 303200\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "6875.00 = 1443.7500 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to solve the simultaneous equations for x.",
-        "workingOut": "\\(4.4x + 6.4(58000 - x) = 303200\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the linear equation to isolate and find the value of x.",
-        "workingOut": "\\(-2x = -68000 \\implies x = 34000\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{6875.00}{1443.7500} \\approx 4.76\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1528,34 +1469,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "An inventory invoice at NovaTech Solutions shows that 3 premium espresso machines and 5 commercial grinders cost a combined total of 850 dollars. Another order containing 4 premium espresso machines and 2 commercial grinders costs 760 dollars. Find the individual price of a premium espresso machine.",
-    "a": "\\(150\\)",
+    "t": "Financial mathematics",
+    "question": "Rowan invests a capital of \\(\\$31000\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(5.60\\%\\) p.a. and total interest earned is exactly \\(\\$8370.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(4.82\\text{ years}\\)",
     "opts": [
-      "\\(135\\)",
-      "\\(165\\)",
-      "\\(150\\)",
-      "\\(158\\)"
+      "\\(5.32\\text{ years}\\)",
+      "\\(4.10\\text{ years}\\)",
+      "\\(5.54\\text{ years}\\)",
+      "\\(4.82\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of espresso machine and grinder.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{espresso machine} \\text{ and } y \\text{ be the price of the } \\text{grinder}.\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 8370.00 = 31000 \\times \\frac{5.60}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 5y = 850 \\\\ 4x + 2y = 760 \\end{cases}\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "8370.00 = 1736.0000 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 6x + 10y = 1700 \\\\ 20x + 10y = 3800 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((6 - 20)x = -2100 \\implies x = 150\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{8370.00}{1736.0000} \\approx 4.82\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1565,34 +1501,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A school purchases classroom technology: one invoice for 2 smart projectors and 4 interactive screens totals 800 dollars, while another for 3 smart projectors and 3 interactive screens totals 930 dollars. Calculate the individual unit price of a smart projector.",
-    "a": "\\(220\\)",
+    "t": "Financial mathematics",
+    "question": "Jillian invests a capital of \\(\\$34500\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(5.95\\%\\) p.a. and total interest earned is exactly \\(\\$10005.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(4.87\\text{ years}\\)",
     "opts": [
-      "\\(231\\)",
-      "\\(198\\)",
-      "\\(242\\)",
-      "\\(220\\)"
+      "\\(5.37\\text{ years}\\)",
+      "\\(4.14\\text{ years}\\)",
+      "\\(5.61\\text{ years}\\)",
+      "\\(4.87\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of smart projector and interactive screen.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{smart projector} \\text{ and } y \\text{ be the price of the } \\text{interactive screen}.\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 10005.00 = 34500 \\times \\frac{5.95}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 4y = 800 \\\\ 3x + 3y = 930 \\end{cases}\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "10005.00 = 2052.7500 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 6x + 12y = 2400 \\\\ 12x + 12y = 3720 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((6 - 12)x = -1320 \\implies x = 220\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{10005.00}{2052.7500} \\approx 4.87\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1602,34 +1533,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A gym ordering weight gear gets 4 commercial spin bikes and 3 adjustable benches for a total of 930 dollars. A second delivery of 5 spin bikes and 2 adjustable benches costs 1040 dollars. Determine the individual cost of a spin bike.",
-    "a": "\\(180\\)",
+    "t": "Financial mathematics",
+    "question": "Tobias invests a capital of \\(\\$38000\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(6.30\\%\\) p.a. and total interest earned is exactly \\(\\$11780.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(4.92\\text{ years}\\)",
     "opts": [
-      "\\(198\\)",
-      "\\(162\\)",
-      "\\(180\\)",
-      "\\(189\\)"
+      "\\(5.42\\text{ years}\\)",
+      "\\(4.92\\text{ years}\\)",
+      "\\(5.66\\text{ years}\\)",
+      "\\(4.18\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of spin bike and adjustable bench.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{spin bike} \\text{ and } y \\text{ be the price of the } \\text{adjustable bench}.\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 11780.00 = 38000 \\times \\frac{6.30}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 3y = 930 \\\\ 5x + 2y = 1040 \\end{cases}\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "11780.00 = 2394.0000 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 8x + 6y = 1860 \\\\ 15x + 6y = 3120 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((8 - 15)x = -1260 \\implies x = 180\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{11780.00}{2394.0000} \\approx 4.92\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1639,34 +1565,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A music store buys performance gear for its lessons studio. The first purchase of 3 drum kits and 2 cymbal packs costs 1140 dollars. A second batch containing 2 drum kits and 5 cymbal packs costs 1200 dollars. Determine the individual unit price of a drum kit.",
-    "a": "\\(300\\)",
+    "t": "Financial mathematics",
+    "question": "Seraphina invests a capital of \\(\\$41500\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(6.65\\%\\) p.a. and total interest earned is exactly \\(\\$13695.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(4.96\\text{ years}\\)",
     "opts": [
-      "\\(315\\)",
-      "\\(270\\)",
-      "\\(330\\)",
-      "\\(300\\)"
+      "\\(4.22\\text{ years}\\)",
+      "\\(5.71\\text{ years}\\)",
+      "\\(4.96\\text{ years}\\)",
+      "\\(5.46\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of drum kit and cymbal pack.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{drum kit} \\text{ and } y \\text{ be the price of the } \\text{cymbal pack}.\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 13695.00 = 41500 \\times \\frac{6.65}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 2y = 1140 \\\\ 2x + 5y = 1200 \\end{cases}\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "13695.00 = 2759.7500 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 15x + 10y = 5700 \\\\ 4x + 10y = 2400 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((15 - 4)x = 3300 \\implies x = 300\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{13695.00}{2759.7500} \\approx 4.96\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1676,34 +1597,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "An office manager buys workstation components: 5 ergonomic desks and 3 mesh chairs cost 1580 dollars. Another transaction for 4 ergonomic desks and 4 mesh chairs costs 1440 dollars. What is the individual unit price of an ergonomic desk?",
-    "a": "\\(250\\)",
+    "t": "Financial mathematics",
+    "question": "Leo invests a capital of \\(\\$45000\\) in a municipal bonds treasury. If the account accrues simple interest at a rate of \\(7.00\\%\\) p.a. and total interest earned is exactly \\(\\$15750.00\\), determine the duration of this investment in years. Correct to two decimal places.",
+    "a": "\\(5.00\\text{ years}\\)",
     "opts": [
-      "\\(263\\)",
-      "\\(225\\)",
-      "\\(275\\)",
-      "\\(250\\)"
+      "\\(4.25\\text{ years}\\)",
+      "\\(5.75\\text{ years}\\)",
+      "\\(5.00\\text{ years}\\)",
+      "\\(5.50\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of ergonomic desk and mesh chair.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{ergonomic desk} \\text{ and } y \\text{ be the price of the } \\text{mesh chair}.\\)",
+        "explanation": "Identify variables and state the simple interest formula.",
+        "workingOut": "\\(I = P \\cdot r \\cdot t \\implies 15750.00 = 45000 \\times \\frac{7.00}{100} \\times t\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 5x + 3y = 1580 \\\\ 4x + 4y = 1440 \\end{cases}\\)",
+        "explanation": "Simplify the right hand side of the equation.",
+        "workingOut": "15750.00 = 3150.0000 \\times t",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 20x + 12y = 6320 \\\\ 12x + 12y = 4320 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((20 - 12)x = 2000 \\implies x = 250\\)",
+        "explanation": "Divide to isolate t and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{15750.00}{3150.0000} \\approx 5.00\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -1713,34 +1629,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A restaurant buys kitchen essentials: 3 commercial blenders and 4 food processors cost a total of 660 dollars. A second purchase of 5 commercial blenders and 3 food processors costs 880 dollars. What is the unit cost of a commercial blender?",
-    "a": "\\(140\\)",
+    "t": "Financial mathematics",
+    "question": "CrestAgri runs a liquidation sale on a industrial bioreactor. They apply an initial discount of \\(16.5\\%\\), followed by a member-only discount of \\(11.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(8.5\\%\\) is tacked on. If the final invoice checkout price is \\(\\$1450\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$1798.30\\)",
     "opts": [
-      "\\(140\\)",
-      "\\(154\\)",
-      "\\(126\\)",
-      "\\(147\\)"
+      "\\(\\$1654.43\\)",
+      "\\(\\$1790.12\\)",
+      "\\(\\$1798.30\\)",
+      "\\(\\$1942.16\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of commercial blender and food processor.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{commercial blender} \\text{ and } y \\text{ be the price of the } \\text{food processor}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{16.5}{100}\\right) \\times \\left(1 - \\frac{11.0}{100}\\right) \\times \\left(1 + \\frac{8.5}{100}\\right) \\approx 0.806318\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 4y = 660 \\\\ 5x + 3y = 880 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{1450}{0.806318}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 9x + 12y = 1980 \\\\ 20x + 12y = 3520 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((9 - 20)x = -1540 \\implies x = 140\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$1798.30\\)",
         "graphData": null
       }
     ]
@@ -1750,34 +1661,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A shipping port orders automation equipment: 2 heavy-duty barcode scanners and 5 mobile terminal units cost 1550 dollars. A second order of 3 scanners and 4 terminal units costs 1800 dollars. Calculate the individual unit price of a scanner.",
-    "a": "\\(400\\)",
+    "t": "Financial mathematics",
+    "question": "StellarAerospace runs a liquidation sale on a hydraulic smelting press. They apply an initial discount of \\(18.0\\%\\), followed by a member-only discount of \\(12.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(9.0\\%\\) is tacked on. If the final invoice checkout price is \\(\\$1700\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$2161.35\\)",
     "opts": [
-      "\\(360\\)",
-      "\\(440\\)",
-      "\\(400\\)",
-      "\\(420\\)"
+      "\\(\\$2161.35\\)",
+      "\\(\\$2334.26\\)",
+      "\\(\\$1988.45\\)",
+      "\\(\\$2151.90\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of scanner and terminal unit.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{scanner} \\text{ and } y \\text{ be the price of the } \\text{terminal unit}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{18.0}{100}\\right) \\times \\left(1 - \\frac{12.0}{100}\\right) \\times \\left(1 + \\frac{9.0}{100}\\right) \\approx 0.786544\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 5y = 1550 \\\\ 3x + 4y = 1800 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{1700}{0.786544}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 8x + 20y = 6200 \\\\ 15x + 20y = 9000 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((8 - 15)x = -2800 \\implies x = 400\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$2161.35\\)",
         "graphData": null
       }
     ]
@@ -1787,34 +1693,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A laboratory orders chemistry apparatus: 4 digital scale plates and 5 magnetic stirrers cost 1185 dollars. A subsequent batch of 6 scale plates and 3 magnetic stirrers costs 1395 dollars. Determine the individual unit cost of a scale plate.",
-    "a": "\\(190\\)",
+    "t": "Financial mathematics",
+    "question": "BioPharmaSystems runs a liquidation sale on a smart climate chamber. They apply an initial discount of \\(19.5\\%\\), followed by a member-only discount of \\(13.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(9.5\\%\\) is tacked on. If the final invoice checkout price is \\(\\$1950\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$2542.76\\)",
     "opts": [
-      "\\(200\\)",
-      "\\(190\\)",
-      "\\(209\\)",
-      "\\(171\\)"
+      "\\(\\$2339.34\\)",
+      "\\(\\$2532.47\\)",
+      "\\(\\$2746.18\\)",
+      "\\(\\$2542.76\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of scale plate and magnetic stirrer.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{scale plate} \\text{ and } y \\text{ be the price of the } \\text{magnetic stirrer}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{19.5}{100}\\right) \\times \\left(1 - \\frac{13.0}{100}\\right) \\times \\left(1 + \\frac{9.5}{100}\\right) \\approx 0.766883\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 5y = 1185 \\\\ 6x + 3y = 1395 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{1950}{0.766883}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 12x + 15y = 3555 \\\\ 30x + 15y = 6975 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((12 - 30)x = -3420 \\implies x = 190\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$2542.76\\)",
         "graphData": null
       }
     ]
@@ -1824,34 +1725,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A recording studio orders audio hardware: 3 dual-channel compressors and 4 multi-mic preamps cost 1480 dollars. A second invoice for 4 compressors and 2 preamps totals 1540 dollars. Find the unit cost of a compressor.",
-    "a": "\\(320\\)",
+    "t": "Financial mathematics",
+    "question": "QuantumFinance runs a liquidation sale on a electric shipping vessel. They apply an initial discount of \\(21.0\\%\\), followed by a member-only discount of \\(14.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(10.0\\%\\) is tacked on. If the final invoice checkout price is \\(\\$2200\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$2943.77\\)",
     "opts": [
-      "\\(336\\)",
-      "\\(288\\)",
-      "\\(352\\)",
-      "\\(320\\)"
+      "\\(\\$2933.33\\)",
+      "\\(\\$2943.77\\)",
+      "\\(\\$3179.28\\)",
+      "\\(\\$2708.27\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of compressor and mic preamp.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{compressor} \\text{ and } y \\text{ be the price of the } \\text{mic preamp}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{21.0}{100}\\right) \\times \\left(1 - \\frac{14.0}{100}\\right) \\times \\left(1 + \\frac{10.0}{100}\\right) \\approx 0.747340\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 4y = 1480 \\\\ 4x + 2y = 1540 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{2200}{0.747340}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 6x + 8y = 2960 \\\\ 16x + 8y = 6160 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((6 - 16)x = -3200 \\implies x = 320\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$2943.77\\)",
         "graphData": null
       }
     ]
@@ -1861,34 +1757,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A clinic purchases ward monitors: 5 pulse oximeter arrays and 2 portable ECG displays cost 1590 dollars. A subsequent purchase of 3 oximeter arrays and 4 ECG displays costs 1220 dollars. What is the cost of a pulse oximeter array?",
-    "a": "\\(280\\)",
+    "t": "Financial mathematics",
+    "question": "TerraBuilders runs a liquidation sale on a precision CNC mill. They apply an initial discount of \\(22.5\\%\\), followed by a member-only discount of \\(15.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(10.5\\%\\) is tacked on. If the final invoice checkout price is \\(\\$2450\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$3365.76\\)",
     "opts": [
-      "\\(294\\)",
-      "\\(308\\)",
-      "\\(280\\)",
-      "\\(252\\)"
+      "\\(\\$3356.16\\)",
+      "\\(\\$3096.50\\)",
+      "\\(\\$3635.02\\)",
+      "\\(\\$3365.76\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of pulse oximeter array and ECG display.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{pulse oximeter array} \\text{ and } y \\text{ be the price of the } \\text{ECG display}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{22.5}{100}\\right) \\times \\left(1 - \\frac{15.0}{100}\\right) \\times \\left(1 + \\frac{10.5}{100}\\right) \\approx 0.727919\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 5x + 2y = 1590 \\\\ 3x + 4y = 1220 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{2450}{0.727919}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 20x + 8y = 6360 \\\\ 6x + 8y = 2440 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((20 - 6)x = 3920 \\implies x = 280\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$3365.76\\)",
         "graphData": null
       }
     ]
@@ -1898,34 +1789,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A warehouse orders logistics assets: 4 heavy-duty plastic pallets and 3 steel hand trucks cost 865 dollars. A second batch containing 3 pallets and 5 hand trucks costs 855 dollars. Find the cost of a plastic pallet.",
-    "a": "\\(160\\)",
+    "t": "Financial mathematics",
+    "question": "HelixMining runs a liquidation sale on a heavy conveyor array. They apply an initial discount of \\(24.0\\%\\), followed by a member-only discount of \\(16.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(11.0\\%\\) is tacked on. If the final invoice checkout price is \\(\\$2700\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$3810.20\\)",
     "opts": [
-      "\\(160\\)",
-      "\\(176\\)",
-      "\\(144\\)",
-      "\\(168\\)"
+      "\\(\\$3802.82\\)",
+      "\\(\\$3505.39\\)",
+      "\\(\\$4115.02\\)",
+      "\\(\\$3810.20\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of plastic pallet and steel hand truck.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{plastic pallet} \\text{ and } y \\text{ be the price of the } \\text{steel hand truck}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{24.0}{100}\\right) \\times \\left(1 - \\frac{16.0}{100}\\right) \\times \\left(1 + \\frac{11.0}{100}\\right) \\approx 0.708624\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 3y = 865 \\\\ 3x + 5y = 855 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{2700}{0.708624}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 20x + 15y = 4325 \\\\ 9x + 15y = 2565 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((20 - 9)x = 1760 \\implies x = 160\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$3810.20\\)",
         "graphData": null
       }
     ]
@@ -1935,34 +1821,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "An art center buys studio easels: 2 premium wooden easels and 4 metal drawing tables cost 820 dollars. A second invoice containing 5 wooden easels and 2 metal tables totals 1250 dollars. Determine the price of a wooden easel.",
-    "a": "\\(210\\)",
+    "t": "Financial mathematics",
+    "question": "ZenithMedia runs a liquidation sale on a high-volume water pump. They apply an initial discount of \\(25.5\\%\\), followed by a member-only discount of \\(17.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(11.5\\%\\) is tacked on. If the final invoice checkout price is \\(\\$2950\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$4278.71\\)",
     "opts": [
-      "\\(210\\)",
-      "\\(231\\)",
-      "\\(189\\)",
-      "\\(221\\)"
+      "\\(\\$4278.71\\)",
+      "\\(\\$4621.01\\)",
+      "\\(\\$3936.41\\)",
+      "\\(\\$4275.36\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of wooden easel and metal table.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{wooden easel} \\text{ and } y \\text{ be the price of the } \\text{metal table}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{25.5}{100}\\right) \\times \\left(1 - \\frac{17.0}{100}\\right) \\times \\left(1 + \\frac{11.5}{100}\\right) \\approx 0.689460\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 4y = 820 \\\\ 5x + 2y = 1250 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{2950}{0.689460}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 4x + 8y = 1640 \\\\ 20x + 8y = 5000 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((4 - 20)x = -3360 \\implies x = 210\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$4278.71\\)",
         "graphData": null
       }
     ]
@@ -1972,34 +1853,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A software office buys computer desks: 3 electric standing desks and 3 ergonomic chairs cost 1470 dollars. Another order of 4 standing desks and 2 chairs costs 1680 dollars. Find the unit price of a standing desk.",
-    "a": "\\(350\\)",
+    "t": "Financial mathematics",
+    "question": "PinnacleRetail runs a liquidation sale on a seismic shock absorber. They apply an initial discount of \\(27.0\\%\\), followed by a member-only discount of \\(18.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(12.0\\%\\) is tacked on. If the final invoice checkout price is \\(\\$3200\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$4773.04\\)",
     "opts": [
-      "\\(350\\)",
-      "\\(315\\)",
-      "\\(385\\)",
-      "\\(368\\)"
+      "\\(\\$4776.12\\)",
+      "\\(\\$4773.04\\)",
+      "\\(\\$4391.20\\)",
+      "\\(\\$5154.89\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of standing desk and chair.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{standing desk} \\text{ and } y \\text{ be the price of the } \\text{chair}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{27.0}{100}\\right) \\times \\left(1 - \\frac{18.0}{100}\\right) \\times \\left(1 + \\frac{12.0}{100}\\right) \\approx 0.670432\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 3y = 1470 \\\\ 4x + 2y = 1680 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{3200}{0.670432}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 6x + 6y = 2940 \\\\ 12x + 6y = 5040 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((6 - 12)x = -2100 \\implies x = 350\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$4773.04\\)",
         "graphData": null
       }
     ]
@@ -2009,34 +1885,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A cycle team orders parts: 4 aerodynamic helmets and 2 carbon handlebars cost 1080 dollars. A second delivery of 3 helmets and 5 handlebars costs 1090 dollars. Calculate the unit price of an aerodynamic helmet.",
-    "a": "\\(230\\)",
+    "t": "Financial mathematics",
+    "question": "AeroVentures runs a liquidation sale on a satellite transceiver. They apply an initial discount of \\(28.5\\%\\), followed by a member-only discount of \\(19.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(12.5\\%\\) is tacked on. If the final invoice checkout price is \\(\\$3450\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$5295.12\\)",
     "opts": [
-      "\\(253\\)",
-      "\\(230\\)",
-      "\\(207\\)",
-      "\\(242\\)"
+      "\\(\\$4871.51\\)",
+      "\\(\\$5718.73\\)",
+      "\\(\\$5307.69\\)",
+      "\\(\\$5295.12\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of aerodynamic helmet and handlebars.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{aerodynamic helmet} \\text{ and } y \\text{ be the price of the } \\text{handlebars}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{28.5}{100}\\right) \\times \\left(1 - \\frac{19.0}{100}\\right) \\times \\left(1 + \\frac{12.5}{100}\\right) \\approx 0.651544\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 2y = 1080 \\\\ 3x + 5y = 1090 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{3450}{0.651544}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 20x + 10y = 5400 \\\\ 6x + 10y = 2180 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((20 - 6)x = 3220 \\implies x = 230\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$5295.12\\)",
         "graphData": null
       }
     ]
@@ -2046,34 +1917,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A hardware shop stocks hand drills: 5 cordless rotary drills and 3 circular saw kits cost 1120 dollars. Another order of 4 cordless drills and 4 saw kits costs 1040 dollars. Find the unit price of a cordless rotary drill.",
-    "a": "\\(170\\)",
+    "t": "Financial mathematics",
+    "question": "EcoSolutions runs a liquidation sale on a high-pressure autoclave. They apply an initial discount of \\(30.0\\%\\), followed by a member-only discount of \\(20.0\\%\\) on the reduced price. Finally, an environmental logistics levy of \\(13.0\\%\\) is tacked on. If the final invoice checkout price is \\(\\$3700\\), calculate the original marked price of the asset before any discounts/levies. Correct to the nearest cent.",
+    "a": "\\(\\$5847.03\\)",
     "opts": [
-      "\\(187\\)",
-      "\\(153\\)",
-      "\\(179\\)",
-      "\\(170\\)"
+      "\\(\\$5873.02\\)",
+      "\\(\\$5379.27\\)",
+      "\\(\\$6314.79\\)",
+      "\\(\\$5847.03\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of cordless drill and saw kit.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{cordless drill} \\text{ and } y \\text{ be the price of the } \\text{saw kit}.\\)",
+        "explanation": "Calculate the combined factor of the successive discounts and the logistics markup.",
+        "workingOut": "\\(F = \\left(1 - \\frac{30.0}{100}\\right) \\times \\left(1 - \\frac{20.0}{100}\\right) \\times \\left(1 + \\frac{13.0}{100}\\right) \\approx 0.632800\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 5x + 3y = 1120 \\\\ 4x + 4y = 1040 \\end{cases}\\)",
+        "explanation": "Express the original price in terms of the final invoice price and the combined factor.",
+        "workingOut": "\\(P_{\\text{original}} = \\frac{P_{\\text{final}}}{F} = \\frac{3700}{0.632800}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 20x + 12y = 4480 \\\\ 12x + 12y = 3120 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((20 - 12)x = 1360 \\implies x = 170\\)",
+        "explanation": "Evaluate the fraction and round the original price to the nearest cent.",
+        "workingOut": "\\(P_{\\text{original}} \\approx \\$5847.03\\)",
         "graphData": null
       }
     ]
@@ -2083,34 +1949,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A construction foreman buys tools: 2 demolition jackhammers and 4 industrial generators cost 1700 dollars. Another order for 3 jackhammers and 3 generators costs 1950 dollars. Find the unit price of a jackhammer.",
-    "a": "\\(450\\)",
+    "t": "Financial mathematics",
+    "question": "Rowan deposits \\(\\$25000\\) into a high-interest fixed bond yielding \\(6.45\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(2.25\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$30573.96\\)",
     "opts": [
-      "\\(405\\)",
-      "\\(495\\)",
-      "\\(450\\)",
-      "\\(473\\)"
+      "\\(\\$30573.96\\)",
+      "\\(\\$34171.84\\)",
+      "\\(\\$32102.66\\)",
+      "\\(\\$29045.27\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of jackhammer and generator.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{jackhammer} \\text{ and } y \\text{ be the price of the } \\text{generator}.\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 25000 \\times \\left(1 + \\frac{6.45}{100}\\right)^{5} \\approx 34171.8379\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 2x + 4y = 1700 \\\\ 3x + 3y = 1950 \\end{cases}\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{2.25}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 6x + 12y = 5100 \\\\ 12x + 12y = 7800 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((6 - 12)x = -2700 \\implies x = 450\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$30573.96\\)",
         "graphData": null
       }
     ]
@@ -2120,34 +1981,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A coffee kiosk buys cafe tools: 4 electric milk frothers and 4 digital scales cost 780 dollars. A second delivery of 6 frothers and 2 scales costs 910 dollars. What is the unit cost of a milk frother?",
-    "a": "\\(130\\)",
+    "t": "Financial mathematics",
+    "question": "Jillian deposits \\(\\$30000\\) into a high-interest fixed bond yielding \\(6.90\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(2.50\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$37016.08\\)",
     "opts": [
-      "\\(130\\)",
-      "\\(143\\)",
-      "\\(117\\)",
-      "\\(137\\)"
+      "\\(\\$35165.28\\)",
+      "\\(\\$37016.08\\)",
+      "\\(\\$41880.30\\)",
+      "\\(\\$38866.89\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of milk frother and scale.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{milk frother} \\text{ and } y \\text{ be the price of the } \\text{scale}.\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 30000 \\times \\left(1 + \\frac{6.90}{100}\\right)^{5} \\approx 41880.2997\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 4y = 780 \\\\ 6x + 2y = 910 \\end{cases}\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{2.50}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 8x + 8y = 1560 \\\\ 24x + 8y = 3640 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((8 - 24)x = -2080 \\implies x = 130\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$37016.08\\)",
         "graphData": null
       }
     ]
@@ -2157,34 +2013,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A security firm installs sensors: 3 smart door locks and 5 infrared sensors cost 1555 dollars. A subsequent order of 5 smart door locks and 2 sensors costs 1800 dollars. Find the unit cost of a smart door lock.",
-    "a": "\\(310\\)",
+    "t": "Financial mathematics",
+    "question": "Tobias deposits \\(\\$35000\\) into a high-interest fixed bond yielding \\(7.35\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(2.75\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$43568.15\\)",
     "opts": [
-      "\\(326\\)",
-      "\\(341\\)",
-      "\\(310\\)",
-      "\\(279\\)"
+      "\\(\\$41389.74\\)",
+      "\\(\\$45746.56\\)",
+      "\\(\\$49897.44\\)",
+      "\\(\\$43568.15\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of door lock and sensor.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{door lock} \\text{ and } y \\text{ be the price of the } \\text{sensor}.\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 35000 \\times \\left(1 + \\frac{7.35}{100}\\right)^{5} \\approx 49897.4427\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 3x + 5y = 1555 \\\\ 5x + 2y = 1800 \\end{cases}\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{2.75}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 6x + 10y = 3110 \\\\ 25x + 10y = 9000 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((6 - 25)x = -5890 \\implies x = 310\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$43568.15\\)",
         "graphData": null
       }
     ]
@@ -2194,34 +2045,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A photography shop buys gear: 4 ring light stands and 3 wireless trigger remotes cost 1395 dollars. A subsequent batch of 3 light stands and 5 trigger remotes costs 1335 dollars. Find the price of a light stand.",
-    "a": "\\(270\\)",
+    "t": "Financial mathematics",
+    "question": "Seraphina deposits \\(\\$40000\\) into a high-interest fixed bond yielding \\(7.80\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(3.00\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$50230.52\\)",
     "opts": [
-      "\\(243\\)",
-      "\\(284\\)",
-      "\\(297\\)",
-      "\\(270\\)"
+      "\\(\\$50230.52\\)",
+      "\\(\\$47718.99\\)",
+      "\\(\\$58230.94\\)",
+      "\\(\\$52742.05\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of light stand and trigger remote.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{light stand} \\text{ and } y \\text{ be the price of the } \\text{trigger remote}.\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 40000 \\times \\left(1 + \\frac{7.80}{100}\\right)^{5} \\approx 58230.9393\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 4x + 3y = 1395 \\\\ 3x + 5y = 1335 \\end{cases}\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{3.00}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 20x + 15y = 6975 \\\\ 9x + 15y = 4005 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((20 - 9)x = 2970 \\implies x = 270\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$50230.52\\)",
         "graphData": null
       }
     ]
@@ -2231,34 +2077,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A school garden buys tools: 5 organic composting bins and 2 copper watering cans cost 1430 dollars. A second order of 4 composting bins and 4 watering cans costs 1420 dollars. What is the price of a composting bin?",
-    "a": "\\(240\\)",
+    "t": "Financial mathematics",
+    "question": "Leo deposits \\(\\$45000\\) into a high-interest fixed bond yielding \\(8.25\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(3.25\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$57003.53\\)",
     "opts": [
-      "\\(216\\)",
-      "\\(264\\)",
-      "\\(240\\)",
-      "\\(252\\)"
+      "\\(\\$57003.53\\)",
+      "\\(\\$54153.35\\)",
+      "\\(\\$66888.59\\)",
+      "\\(\\$59853.70\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define variables x and y for the individual unit prices of composting bin and watering can.",
-        "workingOut": "\\(\\text{Let } x \\text{ be the price of the } \\text{composting bin} \\text{ and } y \\text{ be the price of the } \\text{watering can}.\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 45000 \\times \\left(1 + \\frac{8.25}{100}\\right)^{5} \\approx 66888.5896\\)",
         "graphData": null
       },
       {
-        "explanation": "Establish the system of simultaneous equations from the transaction totals.",
-        "workingOut": "\\(\\begin{cases} 5x + 2y = 1430 \\\\ 4x + 4y = 1420 \\end{cases}\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{3.25}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Eliminate variable y by multiplying the equations to match coefficients.",
-        "workingOut": "\\(\\begin{cases} 20x + 8y = 5720 \\\\ 8x + 8y = 2840 \\end{cases}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Subtract the equations to isolate and solve for x.",
-        "workingOut": "\\((20 - 8)x = 2880 \\implies x = 240\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$57003.53\\)",
         "graphData": null
       }
     ]
@@ -2268,34 +2109,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A chemical plant at Apex Industries needs to mix a 10% concentrated saline chemical solution with a 50% concentrated saline solution to create a final mixture of exactly 100 litres. If the final concentration of the mixture is 38.00%, calculate the number of litres of the {conc1}% solution that must be used.",
-    "a": "\\(30\\)",
+    "t": "Financial mathematics",
+    "question": "Vivienne deposits \\(\\$50000\\) into a high-interest fixed bond yielding \\(8.70\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(3.50\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$63887.51\\)",
     "opts": [
-      "\\(27\\)",
-      "\\(32\\)",
-      "\\(33\\)",
-      "\\(30\\)"
+      "\\(\\$63887.51\\)",
+      "\\(\\$67081.89\\)",
+      "\\(\\$75878.32\\)",
+      "\\(\\$60693.14\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 10% solution and 50% solution. Write the total volume equation.",
-        "workingOut": "\\(x + y = 100\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 50000 \\times \\left(1 + \\frac{8.70}{100}\\right)^{5} \\approx 75878.3232\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{10}{100}x + \\frac{50}{100}y = \\frac{38.00}{100} \\times 100 \\implies 10x + 50y = 3800.0\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{3.50}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(10x + 50(100 - x) = 3800.0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((10 - 50)x = -1200.0 \\implies x = 30\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$63887.51\\)",
         "graphData": null
       }
     ]
@@ -2305,34 +2141,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A brewery fermentation specialist combines a 20% sugar malt extract solution with a 60% sugar malt extract solution to yield exactly 80 litres of fermentation base. If the targeted concentration of the combined batch is 35.00%, find the required volume of the {conc1}% sugar malt extract.",
-    "a": "\\(50\\)",
+    "t": "Financial mathematics",
+    "question": "Gideon deposits \\(\\$55000\\) into a high-interest fixed bond yielding \\(9.15\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(3.75\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$70882.80\\)",
     "opts": [
-      "\\(50\\)",
-      "\\(55\\)",
-      "\\(45\\)",
-      "\\(53\\)"
+      "\\(\\$70882.80\\)",
+      "\\(\\$85208.20\\)",
+      "\\(\\$74426.94\\)",
+      "\\(\\$67338.66\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 20% extract and 60% extract. Write the total volume equation.",
-        "workingOut": "\\(x + y = 80\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 55000 \\times \\left(1 + \\frac{9.15}{100}\\right)^{5} \\approx 85208.1997\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{20}{100}x + \\frac{60}{100}y = \\frac{35.00}{100} \\times 80 \\implies 20x + 60y = 2800.0\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{3.75}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(20x + 60(80 - x) = 2800.0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((20 - 60)x = -2000.0 \\implies x = 50\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$70882.80\\)",
         "graphData": null
       }
     ]
@@ -2342,34 +2173,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "An agricultural compound mixer needs to combine a 15% nitrogen fertilizer with a 45% nitrogen fertilizer to fill a tank of 120 litres. If the final combined batch must have a nitrogen concentration of 35.00%, calculate the volume of the {conc1}% nitrogen fertilizer to include.",
-    "a": "\\(40\\)",
+    "t": "Financial mathematics",
+    "question": "Clara deposits \\(\\$60000\\) into a high-interest fixed bond yielding \\(9.60\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(4.00\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$77989.71\\)",
     "opts": [
-      "\\(36\\)",
-      "\\(44\\)",
-      "\\(40\\)",
-      "\\(42\\)"
+      "\\(\\$81889.20\\)",
+      "\\(\\$74090.23\\)",
+      "\\(\\$94886.41\\)",
+      "\\(\\$77989.71\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 15% fertilizer and 45% fertilizer. Write the total volume equation.",
-        "workingOut": "\\(x + y = 120\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 60000 \\times \\left(1 + \\frac{9.60}{100}\\right)^{5} \\approx 94886.4112\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{15}{100}x + \\frac{45}{100}y = \\frac{35.00}{100} \\times 120 \\implies 15x + 45y = 4200.0\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{4.00}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(15x + 45(120 - x) = 4200.0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((15 - 45)x = -1200.0 \\implies x = 40\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$77989.71\\)",
         "graphData": null
       }
     ]
@@ -2379,34 +2205,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A pool technician mixes a pool chlorine compound at 5% concentration with a stronger 25% concentration compound to produce a total volume of 150 litres. If the target concentration for the swimming pool is 13.00%, find the volume of the {conc1}% pool chlorine used.",
-    "a": "\\(90\\)",
+    "t": "Financial mathematics",
+    "question": "Xavier deposits \\(\\$65000\\) into a high-interest fixed bond yielding \\(10.05\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(4.25\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$85208.57\\)",
     "opts": [
-      "\\(99\\)",
-      "\\(90\\)",
-      "\\(95\\)",
-      "\\(81\\)"
+      "\\(\\$89469.00\\)",
+      "\\(\\$80948.14\\)",
+      "\\(\\$104921.28\\)",
+      "\\(\\$85208.57\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 5% compound and 25% compound. Write the total volume equation.",
-        "workingOut": "\\(x + y = 150\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 65000 \\times \\left(1 + \\frac{10.05}{100}\\right)^{5} \\approx 104921.2826\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{25}{100}y = \\frac{13.00}{100} \\times 150 \\implies 5x + 25y = 1950.0\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{4.25}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(5x + 25(150 - x) = 1950.0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((5 - 25)x = -1800.0 \\implies x = 90\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$85208.57\\)",
         "graphData": null
       }
     ]
@@ -2416,34 +2237,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A metallurgical smelter melts a brass alloy containing 30% pure zinc with another containing 70% pure zinc to produce 60 kg of a brass mixture. If the zinc content of the output alloy is 53.33%, how many kg of the {conc1}% zinc alloy are required?",
-    "a": "\\(25\\)",
+    "t": "Financial mathematics",
+    "question": "Naomi deposits \\(\\$70000\\) into a high-interest fixed bond yielding \\(10.50\\%\\) p.a. compounded annually for \\(5\\) years. If consumer inflation averages \\(4.50\\%\\) p.a. over the same period, determine the real value (purchasing power in today's dollars) of the investment at maturity. Correct to the nearest cent.",
+    "a": "\\(\\$92539.68\\)",
     "opts": [
-      "\\(26\\)",
-      "\\(23\\)",
-      "\\(25\\)",
-      "\\(28\\)"
+      "\\(\\$97166.66\\)",
+      "\\(\\$87912.69\\)",
+      "\\(\\$92539.68\\)",
+      "\\(\\$115321.27\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 30% alloy and 70% alloy. Write the total volume equation.",
-        "workingOut": "\\(x + y = 60\\)",
+        "explanation": "Calculate the nominal future value of the investment at maturity.",
+        "workingOut": "\\(A_{\\text{nominal}} = 70000 \\times \\left(1 + \\frac{10.50}{100}\\right)^{5} \\approx 115321.2736\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{30}{100}x + \\frac{70}{100}y = \\frac{53.33}{100} \\times 60 \\implies 30x + 70y = 3199.8\\)",
+        "explanation": "Discount the nominal future value by the average compound inflation rate.",
+        "workingOut": "\\(A_{\\text{real}} = \\frac{A_{\\text{nominal}}}{\\left(1 + \\frac{4.50}{100}\\right)^{5}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(30x + 70(60 - x) = 3199.8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((30 - 70)x = -1000.2 \\implies x = 25\\)",
+        "explanation": "Calculate the final real value and round to the nearest cent.",
+        "workingOut": "\\(A_{\\text{real}} \\approx \\$92539.68\\)",
         "graphData": null
       }
     ]
@@ -2453,34 +2269,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A cosmetics manufacturer combines an essential oil batch with 8% lavender oil extract with a stronger batch containing 18% lavender oil extract to make a 50-litre mixture. If the final mixture must have a concentration of 14.00%, find the volume of the {conc1}% lavender extract.",
-    "a": "\\(20\\)",
+    "t": "Financial mathematics",
+    "question": "TerraBuilders evaluates financing rates for a smart climate chamber. The lender quotes a nominal rate of \\(6.35\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.0525\\%\\)",
     "opts": [
-      "\\(20\\)",
-      "\\(21\\)",
-      "\\(22\\)",
-      "\\(18\\)"
+      "\\(6.3500\\%\\)",
+      "\\(0.0446\\%\\)",
+      "\\(0.0604\\%\\)",
+      "\\(0.0525\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 8% extract and 18% extract. Write the total volume equation.",
-        "workingOut": "\\(x + y = 50\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0635}{4}\\right)^4 - 1 \\approx 6.502816\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{8}{100}x + \\frac{18}{100}y = \\frac{14.00}{100} \\times 50 \\implies 8x + 18y = 700.0\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0635}{365}\\right)^{365} - 1 \\approx 6.555360\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(8x + 18(50 - x) = 700.0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((8 - 18)x = -200.0 \\implies x = 20\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.0525\\%\\)",
         "graphData": null
       }
     ]
@@ -2490,34 +2301,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A paint plant dilutes a high-density pigment base. They combine a 12% density pigment paint with a 32% density pigment paint to make 200 litres of paint. If the target density of the finished paint is 20.00%, calculate the volume of the {conc1}% density paint used.",
-    "a": "\\(120\\)",
+    "t": "Financial mathematics",
+    "question": "HelixMining evaluates financing rates for a electric shipping vessel. The lender quotes a nominal rate of \\(6.70\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.0587\\%\\)",
     "opts": [
-      "\\(132\\)",
-      "\\(126\\)",
-      "\\(120\\)",
-      "\\(108\\)"
+      "\\(6.7000\\%\\)",
+      "\\(0.0675\\%\\)",
+      "\\(0.0587\\%\\)",
+      "\\(0.0499\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 12% paint and 32% paint. Write the total volume equation.",
-        "workingOut": "\\(x + y = 200\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0670}{4}\\right)^4 - 1 \\approx 6.870225\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{12}{100}x + \\frac{32}{100}y = \\frac{20.00}{100} \\times 200 \\implies 12x + 32y = 4000.0\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0670}{365}\\right)^{365} - 1 \\approx 6.928890\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(12x + 32(200 - x) = 4000.0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((12 - 32)x = -2400.0 \\implies x = 120\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.0587\\%\\)",
         "graphData": null
       }
     ]
@@ -2527,34 +2333,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A food factory combines a light cane syrup of 10% sugar content with a heavy syrup of 40% sugar content to produce a 90-litre canning syrup. If the final syrup has a concentration of 25.00%, calculate the volume of the light cane syrup.",
-    "a": "\\(45\\)",
+    "t": "Financial mathematics",
+    "question": "ZenithMedia evaluates financing rates for a precision CNC mill. The lender quotes a nominal rate of \\(7.05\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.0651\\%\\)",
     "opts": [
-      "\\(45\\)",
-      "\\(41\\)",
-      "\\(47\\)",
-      "\\(50\\)"
+      "\\(0.0651\\%\\)",
+      "\\(0.0749\\%\\)",
+      "\\(0.0553\\%\\)",
+      "\\(7.0500\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 10% syrup and 40% syrup. Write the total volume equation.",
-        "workingOut": "\\(x + y = 90\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0705}{4}\\right)^4 - 1 \\approx 7.238584\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{10}{100}x + \\frac{40}{100}y = \\frac{25.00}{100} \\times 90 \\implies 10x + 40y = 2250.0\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0705}{365}\\right)^{365} - 1 \\approx 7.303726\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(10x + 40(90 - x) = 2250.0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((10 - 40)x = -1350.0 \\implies x = 45\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.0651\\%\\)",
         "graphData": null
       }
     ]
@@ -2564,34 +2365,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A textile dye vat is filled by mixing a 25% concentrated dye agent with a 75% concentrated dye agent to produce 110 litres of dye solution. If the final dye concentration is 47.73%, how many litres of the {conc1}% concentrated dye agent are needed?",
-    "a": "\\(60\\)",
+    "t": "Financial mathematics",
+    "question": "PinnacleRetail evaluates financing rates for a heavy conveyor array. The lender quotes a nominal rate of \\(7.40\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.0720\\%\\)",
     "opts": [
-      "\\(63\\)",
-      "\\(60\\)",
-      "\\(66\\)",
-      "\\(54\\)"
+      "\\(7.4000\\%\\)",
+      "\\(0.0612\\%\\)",
+      "\\(0.0828\\%\\)",
+      "\\(0.0720\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 25% dye and 75% dye. Write the total volume equation.",
-        "workingOut": "\\(x + y = 110\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0740}{4}\\right)^4 - 1 \\approx 7.607894\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{25}{100}x + \\frac{75}{100}y = \\frac{47.73}{100} \\times 110 \\implies 25x + 75y = 5250.3\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0740}{365}\\right)^{365} - 1 \\approx 7.679873\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(25x + 75(110 - x) = 5250.3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((25 - 75)x = -2999.7 \\implies x = 60\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.0720\\%\\)",
         "graphData": null
       }
     ]
@@ -2601,34 +2397,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A cleaning chemicals facility mixes a 15% industrial acid solution with a 50% acid solution to yield 70 litres of heavy-duty cleaner. If the concentration of the final cleaner is 35.00%, find the volume of the {conc1}% acid solution.",
-    "a": "\\(30\\)",
+    "t": "Financial mathematics",
+    "question": "AeroVentures evaluates financing rates for a high-volume water pump. The lender quotes a nominal rate of \\(7.75\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.0792\\%\\)",
     "opts": [
-      "\\(33\\)",
-      "\\(30\\)",
-      "\\(32\\)",
-      "\\(27\\)"
+      "\\(0.0911\\%\\)",
+      "\\(0.0792\\%\\)",
+      "\\(7.7500\\%\\)",
+      "\\(0.0673\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 15% acid and 50% acid. Write the total volume equation.",
-        "workingOut": "\\(x + y = 70\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0775}{4}\\right)^4 - 1 \\approx 7.978158\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{15}{100}x + \\frac{50}{100}y = \\frac{35.00}{100} \\times 70 \\implies 15x + 50y = 2450.0\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0775}{365}\\right)^{365} - 1 \\approx 8.057334\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(15x + 50(70 - x) = 2450.0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((15 - 50)x = -1050.0 \\implies x = 30\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.0792\\%\\)",
         "graphData": null
       }
     ]
@@ -2638,34 +2429,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A fruit juice brand mixes a juice concentrate containing 10% fruit solids with another containing 30% fruit solids to make 140 litres of standard juice. If the final solids concentration is 18.57%, how many litres of the {conc1}% concentrate are needed?",
-    "a": "\\(80\\)",
+    "t": "Financial mathematics",
+    "question": "EcoSolutions evaluates financing rates for a seismic shock absorber. The lender quotes a nominal rate of \\(8.10\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.0867\\%\\)",
     "opts": [
-      "\\(80\\)",
-      "\\(88\\)",
-      "\\(84\\)",
-      "\\(72\\)"
+      "\\(0.0867\\%\\)",
+      "\\(8.1000\\%\\)",
+      "\\(0.0997\\%\\)",
+      "\\(0.0737\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 10% juice and 30% juice. Write the total volume equation.",
-        "workingOut": "\\(x + y = 140\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0810}{4}\\right)^4 - 1 \\approx 8.349376\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{10}{100}x + \\frac{30}{100}y = \\frac{18.57}{100} \\times 140 \\implies 10x + 30y = 2599.8\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0810}{365}\\right)^{365} - 1 \\approx 8.436115\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(10x + 30(140 - x) = 2599.8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((10 - 30)x = -1600.2 \\implies x = 80\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.0867\\%\\)",
         "graphData": null
       }
     ]
@@ -2675,34 +2461,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A dairy processor combines low-fat milk containing 18% cream with a higher fat milk containing 38% cream to fill a tank of 95 litres. If the final combined batch has a cream concentration of 28.53%, find the volume of the low-fat milk.",
-    "a": "\\(45\\)",
+    "t": "Financial mathematics",
+    "question": "VelocitaMotors evaluates financing rates for a satellite transceiver. The lender quotes a nominal rate of \\(8.45\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.0947\\%\\)",
     "opts": [
-      "\\(47\\)",
-      "\\(45\\)",
-      "\\(50\\)",
-      "\\(41\\)"
+      "\\(0.0947\\%\\)",
+      "\\(0.1089\\%\\)",
+      "\\(0.0805\\%\\)",
+      "\\(8.4500\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 18% milk and 38% milk. Write the total volume equation.",
-        "workingOut": "\\(x + y = 95\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0845}{4}\\right)^4 - 1 \\approx 8.721550\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{18}{100}x + \\frac{38}{100}y = \\frac{28.53}{100} \\times 95 \\implies 18x + 38y = 2710.3\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0845}{365}\\right)^{365} - 1 \\approx 8.816220\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(18x + 38(95 - x) = 2710.3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((18 - 38)x = -899.7 \\implies x = 45\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.0947\\%\\)",
         "graphData": null
       }
     ]
@@ -2712,34 +2493,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A nursery mixes a 5% organic fertilizer liquid with a 15% organic fertilizer liquid to fill a tank of 130 litres. If the final fertilizer concentration is 10.00%, find the volume of the {conc1}% liquid.",
-    "a": "\\(65\\)",
+    "t": "Financial mathematics",
+    "question": "OmniSolutions evaluates financing rates for a high-pressure autoclave. The lender quotes a nominal rate of \\(8.80\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.1030\\%\\)",
     "opts": [
-      "\\(65\\)",
-      "\\(72\\)",
-      "\\(59\\)",
-      "\\(68\\)"
+      "\\(8.8000\\%\\)",
+      "\\(0.0875\\%\\)",
+      "\\(0.1184\\%\\)",
+      "\\(0.1030\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 5% liquid and 15% liquid. Write the total volume equation.",
-        "workingOut": "\\(x + y = 130\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0880}{4}\\right)^4 - 1 \\approx 9.094683\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{15}{100}y = \\frac{10.00}{100} \\times 130 \\implies 5x + 15y = 1300.0\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0880}{365}\\right)^{365} - 1 \\approx 9.197654\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(5x + 15(130 - x) = 1300.0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((5 - 15)x = -650.0 \\implies x = 65\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.1030\\%\\)",
         "graphData": null
       }
     ]
@@ -2749,34 +2525,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A chemical company mixes a 20% concentrated cleaning chemical with a 40% concentrated cleaning chemical to make 75 litres of dilution. If the final chemical concentration is 30.67%, find the volume of the {conc1}% cleaning chemical.",
-    "a": "\\(35\\)",
+    "t": "Financial mathematics",
+    "question": "TitanSteel evaluates financing rates for a ventilation fan cluster. The lender quotes a nominal rate of \\(9.15\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.1116\\%\\)",
     "opts": [
-      "\\(32\\)",
-      "\\(37\\)",
-      "\\(35\\)",
-      "\\(39\\)"
+      "\\(9.1500\\%\\)",
+      "\\(0.1116\\%\\)",
+      "\\(0.1283\\%\\)",
+      "\\(0.0949\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 20% chemical and 40% chemical. Write the total volume equation.",
-        "workingOut": "\\(x + y = 75\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0915}{4}\\right)^4 - 1 \\approx 9.468775\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{20}{100}x + \\frac{40}{100}y = \\frac{30.67}{100} \\times 75 \\implies 20x + 40y = 2300.3\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0915}{365}\\right)^{365} - 1 \\approx 9.580421\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(20x + 40(75 - x) = 2300.3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((20 - 40)x = -699.8 \\implies x = 35\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.1116\\%\\)",
         "graphData": null
       }
     ]
@@ -2786,34 +2557,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A cosmetics manufacturer combines an essential oil batch with 12% tea tree oil extract with a stronger batch containing 22% tea tree oil extract to make a 85-litre mixture. If the final mixture must have a concentration of 17.29%, find the volume of the {conc1}% tea tree extract.",
-    "a": "\\(40\\)",
+    "t": "Financial mathematics",
+    "question": "GenesisIndustries evaluates financing rates for a die-casting module. The lender quotes a nominal rate of \\(9.50\\%\\) p.a. Find the difference between the Effective Annual Rate (EAR) when compounded daily (365 days) and the EAR when compounded quarterly. Express your answer as a percentage, correct to four decimal places.",
+    "a": "\\(0.1207\\%\\)",
     "opts": [
-      "\\(40\\)",
-      "\\(42\\)",
-      "\\(36\\)",
-      "\\(44\\)"
+      "\\(0.1207\\%\\)",
+      "\\(0.1388\\%\\)",
+      "\\(0.1026\\%\\)",
+      "\\(9.5000\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 12% extract and 22% extract. Write the total volume equation.",
-        "workingOut": "\\(x + y = 85\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded quarterly.",
+        "workingOut": "\\(\\text{EAR}_{\\text{quarterly}} = \\left(1 + \\frac{0.0950}{4}\\right)^4 - 1 \\approx 9.843828\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{12}{100}x + \\frac{22}{100}y = \\frac{17.29}{100} \\times 85 \\implies 12x + 22y = 1469.6\\)",
+        "explanation": "Calculate the Effective Annual Rate (EAR) compounded daily (365 compounding periods).",
+        "workingOut": "\\(\\text{EAR}_{\\text{daily}} = \\left(1 + \\frac{0.0950}{365}\\right)^{365} - 1 \\approx 9.964526\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(12x + 22(85 - x) = 1469.6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((12 - 22)x = -400.4 \\implies x = 40\\)",
+        "explanation": "Find the difference between the daily EAR and quarterly EAR, converting to percentage and rounding.",
+        "workingOut": "\\(\\text{Difference} = \\text{EAR}_{\\text{daily}} - \\text{EAR}_{\\text{quarterly}} \\approx 0.1207\\%\\)",
         "graphData": null
       }
     ]
@@ -2823,34 +2589,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A paint plant dilutes a high-density pigment base. They combine a 10% density pigment paint with a 25% density pigment paint to make 160 litres of paint. If the target density of the finished paint is 15.63%, calculate the volume of the {conc1}% density paint used.",
-    "a": "\\(100\\)",
+    "t": "Financial mathematics",
+    "question": "Leo splits a capital budget of \\(\\$35000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(4.30\\%\\) p.a., while Fund B pays \\(7.45\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$2166.50\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$14000\\)",
     "opts": [
-      "\\(90\\)",
-      "\\(110\\)",
-      "\\(105\\)",
-      "\\(100\\)"
+      "\\(\\$21000\\)",
+      "\\(\\$14000\\)",
+      "\\(\\$16000\\)",
+      "\\(\\$12000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 10% paint and 25% paint. Write the total volume equation.",
-        "workingOut": "\\(x + y = 160\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 35000\\) and \\(\\frac{4.30}{100}x + \\frac{7.45}{100}y = 2166.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{10}{100}x + \\frac{25}{100}y = \\frac{15.63}{100} \\times 160 \\implies 10x + 25y = 2500.8\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(4.30x + 7.45y = 216650\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(10x + 25(160 - x) = 2500.8\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(4.30x + 7.45(35000 - x) = 216650\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((10 - 25)x = -1499.2 \\implies x = 100\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-3.15x = -44100 \\implies x = 14000\\)",
         "graphData": null
       }
     ]
@@ -2860,34 +2626,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A food factory combines a light cane syrup of 15% sugar content with a heavy syrup of 35% sugar content to produce a 105-litre canning syrup. If the final syrup has a concentration of 23.57%, calculate the volume of the light cane syrup.",
-    "a": "\\(60\\)",
+    "t": "Financial mathematics",
+    "question": "Vivienne splits a capital budget of \\(\\$40000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(4.60\\%\\) p.a., while Fund B pays \\(7.90\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$2632.00\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$16000\\)",
     "opts": [
-      "\\(63\\)",
-      "\\(60\\)",
-      "\\(66\\)",
-      "\\(54\\)"
+      "\\(\\$16000\\)",
+      "\\(\\$24000\\)",
+      "\\(\\$18000\\)",
+      "\\(\\$14000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 15% syrup and 35% syrup. Write the total volume equation.",
-        "workingOut": "\\(x + y = 105\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 40000\\) and \\(\\frac{4.60}{100}x + \\frac{7.90}{100}y = 2632.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{15}{100}x + \\frac{35}{100}y = \\frac{23.57}{100} \\times 105 \\implies 15x + 35y = 2474.8\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(4.60x + 7.90y = 263200\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(15x + 35(105 - x) = 2474.8\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(4.60x + 7.90(40000 - x) = 263200\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((15 - 35)x = -1200.2 \\implies x = 60\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-3.30x = -52800 \\implies x = 16000\\)",
         "graphData": null
       }
     ]
@@ -2897,34 +2663,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A textile dye vat is filled by mixing a 20% concentrated dye agent with a 50% concentrated dye agent to produce 115 litres of dye solution. If the final dye concentration is 30.43%, how many litres of the {conc1}% concentrated dye agent are needed?",
-    "a": "\\(75\\)",
+    "t": "Financial mathematics",
+    "question": "Gideon splits a capital budget of \\(\\$45000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(4.90\\%\\) p.a., while Fund B pays \\(8.35\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$3136.50\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$18000\\)",
     "opts": [
-      "\\(75\\)",
-      "\\(83\\)",
-      "\\(79\\)",
-      "\\(68\\)"
+      "\\(\\$27000\\)",
+      "\\(\\$16000\\)",
+      "\\(\\$20000\\)",
+      "\\(\\$18000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 20% dye and 50% dye. Write the total volume equation.",
-        "workingOut": "\\(x + y = 115\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 45000\\) and \\(\\frac{4.90}{100}x + \\frac{8.35}{100}y = 3136.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{20}{100}x + \\frac{50}{100}y = \\frac{30.43}{100} \\times 115 \\implies 20x + 50y = 3499.4\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(4.90x + 8.35y = 313650\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(20x + 50(115 - x) = 3499.4\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(4.90x + 8.35(45000 - x) = 313650\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((20 - 50)x = -2250.6 \\implies x = 75\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-3.45x = -62100 \\implies x = 18000\\)",
         "graphData": null
       }
     ]
@@ -2934,34 +2700,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A cleaning chemicals facility mixes a 15% industrial acid solution with a 45% acid solution to yield 65 litres of heavy-duty cleaner. If the concentration of the final cleaner is 31.15%, find the volume of the {conc1}% acid solution.",
-    "a": "\\(30\\)",
+    "t": "Financial mathematics",
+    "question": "Clara splits a capital budget of \\(\\$50000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(5.20\\%\\) p.a., while Fund B pays \\(8.80\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$3680.00\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$20000\\)",
     "opts": [
-      "\\(33\\)",
-      "\\(30\\)",
-      "\\(27\\)",
-      "\\(32\\)"
+      "\\(\\$20000\\)",
+      "\\(\\$30000\\)",
+      "\\(\\$18000\\)",
+      "\\(\\$22000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 15% acid and 45% acid. Write the total volume equation.",
-        "workingOut": "\\(x + y = 65\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 50000\\) and \\(\\frac{5.20}{100}x + \\frac{8.80}{100}y = 3680.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{15}{100}x + \\frac{45}{100}y = \\frac{31.15}{100} \\times 65 \\implies 15x + 45y = 2024.8\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(5.20x + 8.80y = 368000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(15x + 45(65 - x) = 2024.8\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(5.20x + 8.80(50000 - x) = 368000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((15 - 45)x = -900.3 \\implies x = 30\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-3.60x = -72000 \\implies x = 20000\\)",
         "graphData": null
       }
     ]
@@ -2971,34 +2737,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A fruit juice brand mixes a juice concentrate containing 10% fruit solids with another containing 25% fruit solids to make 125 litres of juice. If the final solids concentration is 16.00%, how many litres of the {conc1}% concentrate are needed?",
-    "a": "\\(75\\)",
+    "t": "Financial mathematics",
+    "question": "Xavier splits a capital budget of \\(\\$55000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(5.50\\%\\) p.a., while Fund B pays \\(9.25\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$4262.50\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$22000\\)",
     "opts": [
-      "\\(75\\)",
-      "\\(83\\)",
-      "\\(68\\)",
-      "\\(79\\)"
+      "\\(\\$33000\\)",
+      "\\(\\$22000\\)",
+      "\\(\\$24000\\)",
+      "\\(\\$20000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Define x and y as the volumes of the 10% juice and 25% juice. Write the total volume equation.",
-        "workingOut": "\\(x + y = 125\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 55000\\) and \\(\\frac{5.50}{100}x + \\frac{9.25}{100}y = 4262.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Set up the chemical substance balance equation based on concentration levels.",
-        "workingOut": "\\(\\frac{10}{100}x + \\frac{25}{100}y = \\frac{16.00}{100} \\times 125 \\implies 10x + 25y = 2000.0\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(5.50x + 9.25y = 426250\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y to eliminate variables and isolate x.",
-        "workingOut": "\\(10x + 25(125 - x) = 2000.0\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(5.50x + 9.25(55000 - x) = 426250\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for x to find the volume of the first chemical solution.",
-        "workingOut": "\\((10 - 25)x = -1125.0 \\implies x = 75\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-3.75x = -82500 \\implies x = 22000\\)",
         "graphData": null
       }
     ]
@@ -3008,34 +2774,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A commercial buyer at AeroLogistics buys a heavy-duty rotary printer and a companion cartridge deck for a combined list price of 600 dollars. If the vendor grants a 15% discount on the printer and a 25% discount on the cartridge deck, the final checkout price is 490.00 dollars. What was the original price of the heavy-duty rotary printer?",
-    "a": "\\(400\\)",
+    "t": "Financial mathematics",
+    "question": "Naomi splits a capital budget of \\(\\$60000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(5.80\\%\\) p.a., while Fund B pays \\(9.70\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$4884.00\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$24000\\)",
     "opts": [
-      "\\(400\\)",
-      "\\(440\\)",
-      "\\(360\\)",
-      "\\(420\\)"
+      "\\(\\$36000\\)",
+      "\\(\\$24000\\)",
+      "\\(\\$26000\\)",
+      "\\(\\$22000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of rotary printer) and y (price of cartridge deck).",
-        "workingOut": "\\(x + y = 600\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 60000\\) and \\(\\frac{5.80}{100}x + \\frac{9.70}{100}y = 4884.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 490.00 \\implies 0.85x + 0.75y = 490.00\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(5.80x + 9.70y = 488400\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.75(600 - x) = 490.00\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(5.80x + 9.70(60000 - x) = 488400\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 40.00 \\implies x = 400\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-3.90x = -93600 \\implies x = 24000\\)",
         "graphData": null
       }
     ]
@@ -3045,34 +2811,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A photographer buys a professional camera body and an adjustable zoom lens for a total price of 450 dollars. The store runs a bundle promotion offering a 10% discount on the camera body and a 20% discount on the zoom lens, resulting in a total cost of 390.00 dollars. Determine the original price of the camera body.",
-    "a": "\\(300\\)",
+    "t": "Financial mathematics",
+    "question": "Marcus splits a capital budget of \\(\\$65000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(6.10\\%\\) p.a., while Fund B pays \\(10.15\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$5544.50\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$26000\\)",
     "opts": [
-      "\\(315\\)",
-      "\\(300\\)",
-      "\\(330\\)",
-      "\\(270\\)"
+      "\\(\\$26000\\)",
+      "\\(\\$39000\\)",
+      "\\(\\$24000\\)",
+      "\\(\\$28000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of camera body) and y (price of zoom lens).",
-        "workingOut": "\\(x + y = 450\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 65000\\) and \\(\\frac{6.10}{100}x + \\frac{10.15}{100}y = 5544.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{20}{100})y = 390.00 \\implies 0.90x + 0.80y = 390.00\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(6.10x + 10.15y = 554450\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.80(450 - x) = 390.00\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(6.10x + 10.15(65000 - x) = 554450\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 30.00 \\implies x = 300\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-4.05x = -105300 \\implies x = 26000\\)",
         "graphData": null
       }
     ]
@@ -3082,34 +2848,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A cyclist purchases a lightweight carbon road bike frame and an electronic gear shifting set for a total of 800 dollars. In a clearance, the frame has a 20% discount and the gear set has a 15% discount. If the buyer paid a total of 655.00 dollars, calculate the original price of the carbon road bike frame.",
-    "a": "\\(500\\)",
+    "t": "Financial mathematics",
+    "question": "Elena splits a capital budget of \\(\\$70000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(6.40\\%\\) p.a., while Fund B pays \\(10.60\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$6244.00\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$28000\\)",
     "opts": [
-      "\\(550\\)",
-      "\\(500\\)",
-      "\\(450\\)",
-      "\\(525\\)"
+      "\\(\\$26000\\)",
+      "\\(\\$30000\\)",
+      "\\(\\$42000\\)",
+      "\\(\\$28000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of bike frame) and y (price of gear shifting set).",
-        "workingOut": "\\(x + y = 800\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 70000\\) and \\(\\frac{6.40}{100}x + \\frac{10.60}{100}y = 6244.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{15}{100})y = 655.00 \\implies 0.80x + 0.85y = 655.00\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(6.40x + 10.60y = 624400\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.85(800 - x) = 655.00\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(6.40x + 10.60(70000 - x) = 624400\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(-0.05x = -25.00 \\implies x = 500\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-4.20x = -117600 \\implies x = 28000\\)",
         "graphData": null
       }
     ]
@@ -3119,34 +2885,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A studio manager buys a high-end keyboard workstation and active monitor speakers for a combined original price of 850 dollars. After a 10% discount on the keyboard and a 30% discount on the monitor speakers, the total checkout price is 715.00 dollars. Find the original price of the keyboard workstation.",
-    "a": "\\(600\\)",
+    "t": "Financial mathematics",
+    "question": "Kaelen splits a capital budget of \\(\\$75000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(6.70\\%\\) p.a., while Fund B pays \\(11.05\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$6982.50\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$30000\\)",
     "opts": [
-      "\\(600\\)",
-      "\\(660\\)",
-      "\\(630\\)",
-      "\\(540\\)"
+      "\\(\\$30000\\)",
+      "\\(\\$32000\\)",
+      "\\(\\$28000\\)",
+      "\\(\\$45000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of keyboard workstation) and y (price of monitor speakers).",
-        "workingOut": "\\(x + y = 850\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 75000\\) and \\(\\frac{6.70}{100}x + \\frac{11.05}{100}y = 6982.50\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{30}{100})y = 715.00 \\implies 0.90x + 0.70y = 715.00\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(6.70x + 11.05y = 698250\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.70(850 - x) = 715.00\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(6.70x + 11.05(75000 - x) = 698250\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.20x = 120.00 \\implies x = 600\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-4.35x = -130500 \\implies x = 30000\\)",
         "graphData": null
       }
     ]
@@ -3156,34 +2922,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A buyer orders a commercial air conditioner unit and its outdoor condenser unit for a combined price of 630 dollars. If the wholesale supplier applies a 15% discount on the air conditioner unit and a 25% discount on the condenser, the invoice total comes to 517.50 dollars. What was the original price of the air conditioner unit?",
-    "a": "\\(450\\)",
+    "t": "Financial mathematics",
+    "question": "Sienna splits a capital budget of \\(\\$80000\\) into two separate venture funds. Fund A pays a guaranteed annual return of \\(7.00\\%\\) p.a., while Fund B pays \\(11.50\\%\\) p.a. If the combined annual yield received at the end of the first year is exactly \\(\\$7760.00\\), calculate the principal sum allocated to Fund A.",
+    "a": "\\(\\$32000\\)",
     "opts": [
-      "\\(473\\)",
-      "\\(450\\)",
-      "\\(495\\)",
-      "\\(405\\)"
+      "\\(\\$48000\\)",
+      "\\(\\$30000\\)",
+      "\\(\\$34000\\)",
+      "\\(\\$32000\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of air conditioner unit) and y (price of condenser).",
-        "workingOut": "\\(x + y = 630\\)",
+        "explanation": "Formulate a system of linear equations representing the total principal split and total annual yield.",
+        "workingOut": "\\(x + y = 80000\\) and \\(\\frac{7.00}{100}x + \\frac{11.50}{100}y = 7760.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 517.50 \\implies 0.85x + 0.75y = 517.50\\)",
+        "explanation": "Multiply the yield equation by 100 to clear the denominators.",
+        "workingOut": "\\(7.00x + 11.50y = 776000\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.75(630 - x) = 517.50\\)",
+        "explanation": "Substitute y = totalBudget - x into the simplified equation.",
+        "workingOut": "\\(7.00x + 11.50(80000 - x) = 776000\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 45.00 \\implies x = 450\\)",
+        "explanation": "Solve the linear equation to find the value of x (Fund A).",
+        "workingOut": "\\(-4.50x = -144000 \\implies x = 32000\\)",
         "graphData": null
       }
     ]
@@ -3193,34 +2959,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "An administrative assistant buys a commercial coffee brewer and a set of glass carafes for a total price of 470 dollars. If the vendor grants a 20% discount on the coffee brewer and a 10% discount on the glass carafes, the checkout price is 388.00 dollars. Determine the original price of the coffee brewer.",
-    "a": "\\(350\\)",
+    "t": "Financial mathematics",
+    "question": "ZenithMedia wants to calculate the time required for a cash reserve deposit to grow by exactly \\(200\\%\\) (i.e. to reach \\(3\\) times its original value). If the account earns compound interest at \\(5.55\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(19.84\\text{ years}\\)",
     "opts": [
-      "\\(315\\)",
-      "\\(385\\)",
-      "\\(350\\)",
-      "\\(368\\)"
+      "\\(19.79\\text{ years}\\)",
+      "\\(16.86\\text{ years}\\)",
+      "\\(22.82\\text{ years}\\)",
+      "\\(19.84\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of coffee brewer) and y (price of glass carafes).",
-        "workingOut": "\\(x + y = 470\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.0555}{12}\\right)^n = 3\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{10}{100})y = 388.00 \\implies 0.80x + 0.90y = 388.00\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0555}{12}\\right)} \\approx 238.0867\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.90(470 - x) = 388.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(-0.10x = -35.00 \\implies x = 350\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 19.84\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3230,34 +2991,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A hardware shop orders stock: a pallet of wood planks and a bundle of steel brackets for a total price of 770 dollars. Under a dealer deal, the wood planks have a 10% discount and the steel brackets have a 25% discount. If the shop paid a total of 660.00 dollars, find the original price of the pallet of wood planks.",
-    "a": "\\(550\\)",
+    "t": "Financial mathematics",
+    "question": "PinnacleRetail wants to calculate the time required for a cash reserve deposit to grow by exactly \\(100\\%\\) (i.e. to reach \\(2\\) times its original value). If the account earns compound interest at \\(6.10\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(11.39\\text{ years}\\)",
     "opts": [
-      "\\(495\\)",
-      "\\(605\\)",
-      "\\(550\\)",
-      "\\(578\\)"
+      "\\(11.36\\text{ years}\\)",
+      "\\(9.68\\text{ years}\\)",
+      "\\(13.10\\text{ years}\\)",
+      "\\(11.39\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of pallet of wood planks) and y (price of steel brackets).",
-        "workingOut": "\\(x + y = 770\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.0610}{12}\\right)^n = 2\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{25}{100})y = 660.00 \\implies 0.90x + 0.75y = 660.00\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(2)}{\\log\\left(1 + \\frac{0.0610}{12}\\right)} \\approx 136.7031\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.75(770 - x) = 660.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.15x = 82.50 \\implies x = 550\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 11.39\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3267,34 +3023,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A software office buys computer desk assets: a group of mesh back chairs and a steel filing cabinet for a combined price of 580 dollars. After a 15% discount on the chairs and a 30% discount on the cabinet, the total checkout price is 469.00 dollars. Find the original price of the mesh back chairs.",
-    "a": "\\(420\\)",
+    "t": "Financial mathematics",
+    "question": "AeroVentures wants to calculate the time required for a cash reserve deposit to grow by exactly \\(200\\%\\) (i.e. to reach \\(3\\) times its original value). If the account earns compound interest at \\(6.65\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(16.57\\text{ years}\\)",
     "opts": [
-      "\\(441\\)",
-      "\\(462\\)",
-      "\\(420\\)",
-      "\\(378\\)"
+      "\\(16.57\\text{ years}\\)",
+      "\\(16.52\\text{ years}\\)",
+      "\\(19.05\\text{ years}\\)",
+      "\\(14.08\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of mesh back chairs) and y (price of filing cabinet).",
-        "workingOut": "\\(x + y = 580\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.0665}{12}\\right)^n = 3\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{30}{100})y = 469.00 \\implies 0.85x + 0.70y = 469.00\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0665}{12}\\right)} \\approx 198.7946\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.70(580 - x) = 469.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.15x = 63.00 \\implies x = 420\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 16.57\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3304,34 +3055,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A cycle team orders parts: a set of aerodynamic helmets and a bundle of safety lights for a total price of 370 dollars. If the store gives a 10% discount on the helmets and a 20% discount on the safety lights, the final checkout price is 320.00 dollars. What was the original price of the aerodynamic helmets?",
-    "a": "\\(240\\)",
+    "t": "Financial mathematics",
+    "question": "EcoSolutions wants to calculate the time required for a cash reserve deposit to grow by exactly \\(100\\%\\) (i.e. to reach \\(2\\) times its original value). If the account earns compound interest at \\(7.20\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(9.66\\text{ years}\\)",
     "opts": [
-      "\\(252\\)",
-      "\\(216\\)",
-      "\\(264\\)",
-      "\\(240\\)"
+      "\\(9.63\\text{ years}\\)",
+      "\\(9.66\\text{ years}\\)",
+      "\\(8.21\\text{ years}\\)",
+      "\\(11.10\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of aerodynamic helmets) and y (price of safety lights).",
-        "workingOut": "\\(x + y = 370\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.0720}{12}\\right)^n = 2\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{20}{100})y = 320.00 \\implies 0.90x + 0.80y = 320.00\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(2)}{\\log\\left(1 + \\frac{0.0720}{12}\\right)} \\approx 115.8708\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.80(370 - x) = 320.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 24.00 \\implies x = 240\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 9.66\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3341,34 +3087,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A school garden buys tools: a set of organic composting bins and a bundle of steel rake tools for a total price of 460 dollars. If the vendor grants a 15% discount on the composting bins and a 25% discount on the rake tools, the checkout price is 377.00 dollars. Determine the original price of the composting bins.",
-    "a": "\\(320\\)",
+    "t": "Financial mathematics",
+    "question": "VelocitaMotors wants to calculate the time required for a cash reserve deposit to grow by exactly \\(200\\%\\) (i.e. to reach \\(3\\) times its original value). If the account earns compound interest at \\(7.75\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(14.22\\text{ years}\\)",
     "opts": [
-      "\\(320\\)",
-      "\\(352\\)",
-      "\\(288\\)",
-      "\\(336\\)"
+      "\\(12.09\\text{ years}\\)",
+      "\\(16.35\\text{ years}\\)",
+      "\\(14.18\\text{ years}\\)",
+      "\\(14.22\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of composting bins) and y (price of rake tools).",
-        "workingOut": "\\(x + y = 460\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.0775}{12}\\right)^n = 3\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 377.00 \\implies 0.85x + 0.75y = 377.00\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0775}{12}\\right)} \\approx 170.6564\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.75(460 - x) = 377.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 32.00 \\implies x = 320\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 14.22\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3378,34 +3119,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A commercial buyer at NovaTech Solutions buys a heavy-duty rotary printer and a companion cartridge deck for a combined list price of 700 dollars. If the vendor grants a 20% discount on the printer and a 10% discount on the cartridge deck, the final checkout price is 582.00 dollars. What was the original price of the heavy-duty rotary printer?",
-    "a": "\\(480\\)",
+    "t": "Financial mathematics",
+    "question": "OmniSolutions wants to calculate the time required for a cash reserve deposit to grow by exactly \\(100\\%\\) (i.e. to reach \\(2\\) times its original value). If the account earns compound interest at \\(8.30\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(8.38\\text{ years}\\)",
     "opts": [
-      "\\(480\\)",
-      "\\(432\\)",
-      "\\(504\\)",
-      "\\(528\\)"
+      "\\(8.38\\text{ years}\\)",
+      "\\(9.64\\text{ years}\\)",
+      "\\(8.35\\text{ years}\\)",
+      "\\(7.12\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of rotary printer) and y (price of cartridge deck).",
-        "workingOut": "\\(x + y = 700\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.0830}{12}\\right)^n = 2\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{10}{100})y = 582.00 \\implies 0.80x + 0.90y = 582.00\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(2)}{\\log\\left(1 + \\frac{0.0830}{12}\\right)} \\approx 100.5602\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.90(700 - x) = 582.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(-0.10x = -48.00 \\implies x = 480\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 8.38\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3415,34 +3151,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A photographer buys a professional camera body and an adjustable zoom lens for a total price of 470 dollars. The store runs a bundle promotion offering a 10% discount on the camera body and a 20% discount on the zoom lens, resulting in a total cost of 407.00 dollars. Determine the original price of the camera body.",
-    "a": "\\(310\\)",
+    "t": "Financial mathematics",
+    "question": "TitanSteel wants to calculate the time required for a cash reserve deposit to grow by exactly \\(200\\%\\) (i.e. to reach \\(3\\) times its original value). If the account earns compound interest at \\(8.85\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(12.46\\text{ years}\\)",
     "opts": [
-      "\\(326\\)",
-      "\\(279\\)",
-      "\\(341\\)",
-      "\\(310\\)"
+      "\\(10.59\\text{ years}\\)",
+      "\\(14.33\\text{ years}\\)",
+      "\\(12.41\\text{ years}\\)",
+      "\\(12.46\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of camera body) and y (price of zoom lens).",
-        "workingOut": "\\(x + y = 470\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.0885}{12}\\right)^n = 3\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{20}{100})y = 407.00 \\implies 0.90x + 0.80y = 407.00\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0885}{12}\\right)} \\approx 149.5130\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.80(470 - x) = 407.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 31.00 \\implies x = 310\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 12.46\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3452,34 +3183,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A cyclist purchases a lightweight carbon road bike frame and an electronic gear shifting set for a total of 800 dollars. In a clearance, the frame has a 20% discount and the gear set has a 15% discount. If the buyer paid a total of 654.00 dollars, calculate the original price of the carbon road bike frame.",
-    "a": "\\(520\\)",
+    "t": "Financial mathematics",
+    "question": "GenesisIndustries wants to calculate the time required for a cash reserve deposit to grow by exactly \\(100\\%\\) (i.e. to reach \\(2\\) times its original value). If the account earns compound interest at \\(9.40\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(7.40\\text{ years}\\)",
     "opts": [
-      "\\(468\\)",
-      "\\(520\\)",
-      "\\(546\\)",
-      "\\(572\\)"
+      "\\(8.51\\text{ years}\\)",
+      "\\(7.37\\text{ years}\\)",
+      "\\(7.40\\text{ years}\\)",
+      "\\(6.29\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of bike frame) and y (price of gear shifting set).",
-        "workingOut": "\\(x + y = 800\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.0940}{12}\\right)^n = 2\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{15}{100})y = 654.00 \\implies 0.80x + 0.85y = 654.00\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(2)}{\\log\\left(1 + \\frac{0.0940}{12}\\right)} \\approx 88.8330\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.85(800 - x) = 654.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(-0.05x = -26.00 \\implies x = 520\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 7.40\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3489,34 +3215,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A studio manager buys a high-end keyboard workstation and active monitor speakers for a combined original price of 820 dollars. After a 10% discount on the keyboard and a 30% discount on the monitor speakers, the total checkout price is 690.00 dollars. Find the original price of the keyboard workstation.",
-    "a": "\\(580\\)",
+    "t": "Financial mathematics",
+    "question": "SigmaCapital wants to calculate the time required for a cash reserve deposit to grow by exactly \\(200\\%\\) (i.e. to reach \\(3\\) times its original value). If the account earns compound interest at \\(9.95\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(11.09\\text{ years}\\)",
     "opts": [
-      "\\(609\\)",
-      "\\(522\\)",
-      "\\(638\\)",
-      "\\(580\\)"
+      "\\(9.42\\text{ years}\\)",
+      "\\(11.04\\text{ years}\\)",
+      "\\(12.75\\text{ years}\\)",
+      "\\(11.09\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of keyboard workstation) and y (price of monitor speakers).",
-        "workingOut": "\\(x + y = 820\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.0995}{12}\\right)^n = 3\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{30}{100})y = 690.00 \\implies 0.90x + 0.70y = 690.00\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(3)}{\\log\\left(1 + \\frac{0.0995}{12}\\right)} \\approx 133.0445\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.70(820 - x) = 690.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.20x = 116.00 \\implies x = 580\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 11.09\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3526,34 +3247,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A buyer orders a commercial air conditioner unit and its outdoor condenser unit for a combined price of 650 dollars. If the wholesale supplier applies a 15% discount on the air conditioner unit and a 25% discount on the condenser, the invoice total comes to 533.50 dollars. What was the original price of the air conditioner unit?",
-    "a": "\\(460\\)",
+    "t": "Financial mathematics",
+    "question": "VortexRobotics wants to calculate the time required for a cash reserve deposit to grow by exactly \\(100\\%\\) (i.e. to reach \\(2\\) times its original value). If the account earns compound interest at \\(10.50\\%\\) p.a., compounded monthly, determine the duration in years. Correct to two decimal places.",
+    "a": "\\(6.63\\text{ years}\\)",
     "opts": [
-      "\\(460\\)",
-      "\\(506\\)",
-      "\\(414\\)",
-      "\\(483\\)"
+      "\\(5.64\\text{ years}\\)",
+      "\\(6.60\\text{ years}\\)",
+      "\\(7.62\\text{ years}\\)",
+      "\\(6.63\\text{ years}\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of air conditioner unit) and y (price of condenser).",
-        "workingOut": "\\(x + y = 650\\)",
+        "explanation": "Set up the compound interest growth equation in terms of the multiplier factor.",
+        "workingOut": "\\(\\left(1 + \\frac{0.1050}{12}\\right)^n = 2\\), where n is the total number of months.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 533.50 \\implies 0.85x + 0.75y = 533.50\\)",
+        "explanation": "Take natural logarithms of both sides to solve for the compounding periods (months) n.",
+        "workingOut": "\\(n = \\frac{\\log(2)}{\\log\\left(1 + \\frac{0.1050}{12}\\right)} \\approx 79.5629\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.75(650 - x) = 533.50\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 46.00 \\implies x = 460\\)",
+        "explanation": "Convert the periods from months to years and round to two decimal places.",
+        "workingOut": "\\(t = \\frac{n}{12} \\approx 6.63\\text{ years}\\)",
         "graphData": null
       }
     ]
@@ -3563,34 +3279,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "An administrative assistant buys a commercial coffee brewer and a set of glass carafes for a total price of 470 dollars. If the vendor grants a 20% discount on the coffee brewer and a 10% discount on the glass carafes, the checkout price is 389.00 dollars. Determine the original price of the coffee brewer.",
-    "a": "\\(340\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to AeroVentures was bought for \\(\\$48000\\). At the end of \\(5\\) years, it was valued at \\(\\$71040\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(8.16\\%\\)",
     "opts": [
-      "\\(340\\)",
-      "\\(357\\)",
-      "\\(374\\)",
-      "\\(306\\)"
+      "\\(9.60\\%\\)",
+      "\\(7.67\\%\\)",
+      "\\(8.65\\%\\)",
+      "\\(8.16\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of coffee brewer) and y (price of glass carafes).",
-        "workingOut": "\\(x + y = 470\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(71040 = 48000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{20}{100})x + (1 - \\frac{10}{100})y = 389.00 \\implies 0.80x + 0.90y = 389.00\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{71040}{48000}\\right)^{\\frac{1}{5}} \\approx 1.081564\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.80x + 0.90(470 - x) = 389.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(-0.10x = -34.00 \\implies x = 340\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 8.16\\%\\)",
         "graphData": null
       }
     ]
@@ -3600,34 +3311,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A hardware shop orders stock: a pallet of wood planks and a bundle of steel brackets for a total price of 750 dollars. Under a dealer deal, the wood planks have a 10% discount and the steel brackets have a 25% discount. If the shop paid a total of 643.50 dollars, find the original price of the pallet of wood planks.",
-    "a": "\\(540\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to EcoSolutions was bought for \\(\\$56000\\). At the end of \\(5\\) years, it was valued at \\(\\$87360\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(9.30\\%\\)",
     "opts": [
-      "\\(540\\)",
-      "\\(594\\)",
-      "\\(486\\)",
-      "\\(567\\)"
+      "\\(11.20\\%\\)",
+      "\\(9.30\\%\\)",
+      "\\(9.86\\%\\)",
+      "\\(8.74\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of pallet of wood planks) and y (price of steel brackets).",
-        "workingOut": "\\(x + y = 750\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(87360 = 56000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{25}{100})y = 643.50 \\implies 0.90x + 0.75y = 643.50\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{87360}{56000}\\right)^{\\frac{1}{5}} \\approx 1.093012\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.75(750 - x) = 643.50\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.15x = 81.00 \\implies x = 540\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 9.30\\%\\)",
         "graphData": null
       }
     ]
@@ -3637,34 +3343,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A software office buys computer desk assets: a group of mesh back chairs and a steel filing cabinet for a combined price of 580 dollars. After a 15% discount on the chairs and a 30% discount on the cabinet, the total checkout price is 467.50 dollars. Find the original price of the mesh back chairs.",
-    "a": "\\(410\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to VelocitaMotors was bought for \\(\\$64000\\). At the end of \\(5\\) years, it was valued at \\(\\$104960\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(10.40\\%\\)",
     "opts": [
-      "\\(431\\)",
-      "\\(369\\)",
-      "\\(451\\)",
-      "\\(410\\)"
+      "\\(12.80\\%\\)",
+      "\\(9.78\\%\\)",
+      "\\(11.02\\%\\)",
+      "\\(10.40\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of mesh back chairs) and y (price of filing cabinet).",
-        "workingOut": "\\(x + y = 580\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(104960 = 64000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{30}{100})y = 467.50 \\implies 0.85x + 0.70y = 467.50\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{104960}{64000}\\right)^{\\frac{1}{5}} \\approx 1.103999\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.70(580 - x) = 467.50\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.15x = 61.50 \\implies x = 410\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 10.40\\%\\)",
         "graphData": null
       }
     ]
@@ -3674,34 +3375,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A cycle team orders parts: a set of aerodynamic helmets and a bundle of safety lights for a total price of 370 dollars. If the store gives a 10% discount on the helmets and a 20% discount on the safety lights, the final checkout price is 321.00 dollars. What was the original price of the aerodynamic helmets?",
-    "a": "\\(250\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to OmniSolutions was bought for \\(\\$72000\\). At the end of \\(5\\) years, it was valued at \\(\\$123840\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(11.46\\%\\)",
     "opts": [
-      "\\(250\\)",
-      "\\(263\\)",
-      "\\(275\\)",
-      "\\(225\\)"
+      "\\(11.46\\%\\)",
+      "\\(10.77\\%\\)",
+      "\\(12.14\\%\\)",
+      "\\(14.40\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of aerodynamic helmets) and y (price of safety lights).",
-        "workingOut": "\\(x + y = 370\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(123840 = 72000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{10}{100})x + (1 - \\frac{20}{100})y = 321.00 \\implies 0.90x + 0.80y = 321.00\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{123840}{72000}\\right)^{\\frac{1}{5}} \\approx 1.114566\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.90x + 0.80(370 - x) = 321.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 25.00 \\implies x = 250\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 11.46\\%\\)",
         "graphData": null
       }
     ]
@@ -3711,34 +3407,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A school garden buys tools: a set of organic composting bins and a bundle of steel rake tools for a total price of 480 dollars. If the vendor grants a 15% discount on the composting bins and a 25% discount on the rake tools, the checkout price is 393.00 dollars. Determine the original price of the composting bins.",
-    "a": "\\(330\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to TitanSteel was bought for \\(\\$80000\\). At the end of \\(5\\) years, it was valued at \\(\\$144000\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(12.47\\%\\)",
     "opts": [
-      "\\(330\\)",
-      "\\(363\\)",
-      "\\(297\\)",
-      "\\(347\\)"
+      "\\(16.00\\%\\)",
+      "\\(11.73\\%\\)",
+      "\\(13.22\\%\\)",
+      "\\(12.47\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Formulate the total original price sum equation using variables x (price of composting bins) and y (price of rake tools).",
-        "workingOut": "\\(x + y = 480\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(144000 = 80000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Formulate the total discounted checkout cost equation.",
-        "workingOut": "\\((1 - \\frac{15}{100})x + (1 - \\frac{25}{100})y = 393.00 \\implies 0.85x + 0.75y = 393.00\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{144000}{80000}\\right)^{\\frac{1}{5}} \\approx 1.124746\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the discounted equation.",
-        "workingOut": "\\(0.85x + 0.75(480 - x) = 393.00\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the isolated equation for x to determine the price of the first product.",
-        "workingOut": "\\(0.10x = 33.00 \\implies x = 330\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 12.47\\%\\)",
         "graphData": null
       }
     ]
@@ -3748,34 +3439,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "William arranges two separate business loans totaling 30000 dollars. Loan A is charged at a flat simple interest rate of 4% per annum, and Loan B is charged at 7% per annum. If the total interest interest accrued at the end of the first year is exactly 1560.00 dollars, calculate the principal sum of Loan A.",
-    "a": "\\(18000\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to GenesisIndustries was bought for \\(\\$88000\\). At the end of \\(5\\) years, it was valued at \\(\\$165440\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(13.46\\%\\)",
     "opts": [
-      "\\(16200\\)",
-      "\\(19800\\)",
-      "\\(18000\\)",
-      "\\(18900\\)"
+      "\\(14.26\\%\\)",
+      "\\(13.46\\%\\)",
+      "\\(17.60\\%\\)",
+      "\\(12.65\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
-        "workingOut": "\\(x + y = 30000\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(165440 = 88000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{7}{100}y = 1560.00 \\implies 4x + 7y = 156000\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{165440}{88000}\\right)^{\\frac{1}{5}} \\approx 1.134571\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4x + 7(30000 - x) = 156000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-3x = -54000 \\implies x = 18000\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 13.46\\%\\)",
         "graphData": null
       }
     ]
@@ -3785,34 +3471,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A franchise owner finances a new storefront using two commercial loans totaling 45000 dollars. The interest rate on the first loan is 5% p.a., and the second loan rate is 8% p.a. If the combined annual interest due is exactly 2850.00 dollars, determine the principal sum of the first loan.",
-    "a": "\\(25000\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to SigmaCapital was bought for \\(\\$96000\\). At the end of \\(5\\) years, it was valued at \\(\\$188160\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(14.41\\%\\)",
     "opts": [
-      "\\(26250\\)",
-      "\\(22500\\)",
-      "\\(27500\\)",
-      "\\(25000\\)"
+      "\\(14.41\\%\\)",
+      "\\(19.20\\%\\)",
+      "\\(13.54\\%\\)",
+      "\\(15.27\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
-        "workingOut": "\\(x + y = 45000\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(188160 = 96000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 2850.00 \\implies 5x + 8y = 285000\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{188160}{96000}\\right)^{\\frac{1}{5}} \\approx 1.144066\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(5x + 8(45000 - x) = 285000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-3x = -75000 \\implies x = 25000\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 14.41\\%\\)",
         "graphData": null
       }
     ]
@@ -3822,34 +3503,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A real estate developer takes out two bridging loans totaling 25000 dollars. Loan X has a flat rate of 3.5% p.a. and Loan Y has a flat rate of 6.5% p.a. If the combined annual interest charge is exactly 1265.00 dollars, find the principal amount of Loan X.",
-    "a": "\\(12000\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to VortexRobotics was bought for \\(\\$104000\\). At the end of \\(5\\) years, it was valued at \\(\\$212160\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(15.33\\%\\)",
     "opts": [
-      "\\(12600\\)",
-      "\\(10800\\)",
-      "\\(13200\\)",
-      "\\(12000\\)"
+      "\\(14.41\\%\\)",
+      "\\(16.25\\%\\)",
+      "\\(15.33\\%\\)",
+      "\\(20.80\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
-        "workingOut": "\\(x + y = 25000\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(212160 = 104000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3.5}{100}x + \\frac{6.5}{100}y = 1265.00 \\implies 3.5x + 6.5y = 126500\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{212160}{104000}\\right)^{\\frac{1}{5}} \\approx 1.153257\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(3.5x + 6.5(25000 - x) = 126500\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-3x = -36000 \\implies x = 12000\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 15.33\\%\\)",
         "graphData": null
       }
     ]
@@ -3859,34 +3535,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A shipping company leases cargo containers using two separate lease loans totaling 50000 dollars. The first lease loan carries an annual charge rate of 4.8%, and the second carries 7.2%. If the total lease interest paid for the first year is 2880.00 dollars, calculate the principal of the first lease loan.",
-    "a": "\\(30000\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to NovaTech was bought for \\(\\$112000\\). At the end of \\(5\\) years, it was valued at \\(\\$237440\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(16.22\\%\\)",
     "opts": [
-      "\\(30000\\)",
-      "\\(33000\\)",
-      "\\(27000\\)",
-      "\\(31500\\)"
+      "\\(16.22\\%\\)",
+      "\\(22.40\\%\\)",
+      "\\(17.19\\%\\)",
+      "\\(15.24\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of first lease loan and second lease loan.",
-        "workingOut": "\\(x + y = 50000\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(237440 = 112000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4.8}{100}x + \\frac{7.2}{100}y = 2880.00 \\implies 4.8x + 7.2y = 288000\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{237440}{112000}\\right)^{\\frac{1}{5}} \\approx 1.162163\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4.8x + 7.2(50000 - x) = 288000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2.4000000000000004x = -72000 \\implies x = 30000\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 16.22\\%\\)",
         "graphData": null
       }
     ]
@@ -3896,34 +3567,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "To build a sports field, a university secures two loans totaling 35000 dollars. Loan A is at a rate of 5.5% p.a. and Loan B is at 7.5% p.a. If the combined interest at the end of the first year is exactly 2325.00 dollars, calculate the principal sum of Loan A.",
-    "a": "\\(15000\\)",
+    "t": "Financial mathematics",
+    "question": "A specialized property and facility asset belonging to SolarisEnergy was bought for \\(\\$120000\\). At the end of \\(5\\) years, it was valued at \\(\\$264000\\). Calculate the compounded annual growth rate (CAGR) of the property value, correct to two decimal places.",
+    "a": "\\(17.08\\%\\)",
     "opts": [
-      "\\(16500\\)",
-      "\\(15000\\)",
-      "\\(15750\\)",
-      "\\(13500\\)"
+      "\\(16.06\\%\\)",
+      "\\(18.11\\%\\)",
+      "\\(24.00\\%\\)",
+      "\\(17.08\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
-        "workingOut": "\\(x + y = 35000\\)",
+        "explanation": "Set up the compound growth rate equation.",
+        "workingOut": "\\(264000 = 120000 \\times (1 + r)^{5}\\), where \\(r\\) is the annual compounded growth rate.",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5.5}{100}x + \\frac{7.5}{100}y = 2325.00 \\implies 5.5x + 7.5y = 232500\\)",
+        "explanation": "Isolate the base term by dividing by the principal and taking the fifth root.",
+        "workingOut": "\\(1 + r = \\left(\\frac{264000}{120000}\\right)^{\\frac{1}{5}} \\approx 1.170805\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(5.5x + 7.5(35000 - x) = 232500\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2x = -30000 \\implies x = 15000\\)",
+        "explanation": "Subtract 1 to solve for r, convert to a percentage, and round to two decimal places.",
+        "workingOut": "\\(r \\approx 17.08\\%\\)",
         "graphData": null
       }
     ]
@@ -3933,34 +3599,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A tech startup takes two loans totaling 55000 dollars to purchase servers. The first loan rate is 4.2% p.a. and the second is 6.8% p.a. If the combined interest return at the end of the first year is 2830.00 dollars, determine the principal sum of the first loan.",
-    "a": "\\(35000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity high-volume water pump purchased by VelocitaMotors costs \\(\\$58500\\). The finance department compares reducing balance depreciation at \\(12.8\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$8434.31\\)",
     "opts": [
-      "\\(35000\\)",
-      "\\(38500\\)",
-      "\\(31500\\)",
-      "\\(36750\\)"
+      "\\(\\$29494.31\\)",
+      "\\(\\$8940.37\\)",
+      "\\(\\$8434.31\\)",
+      "\\(\\$7928.25\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
-        "workingOut": "\\(x + y = 55000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 58500 \\times \\left(1 - \\frac{12.8}{100}\\right)^{5} \\approx 29494.3134\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4.2}{100}x + \\frac{6.8}{100}y = 2830.00 \\implies 4.2x + 6.8y = 283000\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 58500 - \\left(58500 \\times \\frac{12.8}{100} \\times 5\\right) = 21060.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4.2x + 6.8(55000 - x) = 283000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2.5999999999999996x = -91000 \\implies x = 35000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$8434.31\\)",
         "graphData": null
       }
     ]
@@ -3970,34 +3631,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A local logistics company secures two loans totaling 28000 dollars. Loan X has a flat rate of 3.8% p.a. and Loan Y has a flat rate of 5.8% p.a. If the combined annual interest charge is exactly 1264.00 dollars, find the principal amount of Loan X.",
-    "a": "\\(18000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity seismic shock absorber purchased by OmniSolutions costs \\(\\$67000\\). The finance department compares reducing balance depreciation at \\(13.6\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$10818.45\\)",
     "opts": [
-      "\\(16200\\)",
-      "\\(18000\\)",
-      "\\(19800\\)",
-      "\\(18900\\)"
+      "\\(\\$32258.45\\)",
+      "\\(\\$10169.34\\)",
+      "\\(\\$11467.56\\)",
+      "\\(\\$10818.45\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
-        "workingOut": "\\(x + y = 28000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 67000 \\times \\left(1 - \\frac{13.6}{100}\\right)^{5} \\approx 32258.4514\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3.8}{100}x + \\frac{5.8}{100}y = 1264.00 \\implies 3.8x + 5.8y = 126400\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 67000 - \\left(67000 \\times \\frac{13.6}{100} \\times 5\\right) = 21440.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(3.8x + 5.8(28000 - x) = 126400\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2x = -36000 \\implies x = 18000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$10818.45\\)",
         "graphData": null
       }
     ]
@@ -4007,34 +3663,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A municipal utility borrows 40000 dollars via two separate infrastructure loans. Loan A is charged at a flat interest rate of 4.5% p.a., and Loan B is charged at 6.5% p.a. If the total interest accrued at the end of the first year is exactly 2160.00 dollars, calculate the principal sum of Loan A.",
-    "a": "\\(22000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity satellite transceiver purchased by TitanSteel costs \\(\\$75500\\). The finance department compares reducing balance depreciation at \\(14.4\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$13558.91\\)",
     "opts": [
-      "\\(24200\\)",
-      "\\(19800\\)",
-      "\\(23100\\)",
-      "\\(22000\\)"
+      "\\(\\$34698.91\\)",
+      "\\(\\$14372.44\\)",
+      "\\(\\$13558.91\\)",
+      "\\(\\$12745.38\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
-        "workingOut": "\\(x + y = 40000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 75500 \\times \\left(1 - \\frac{14.4}{100}\\right)^{5} \\approx 34698.9054\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4.5}{100}x + \\frac{6.5}{100}y = 2160.00 \\implies 4.5x + 6.5y = 216000\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 75500 - \\left(75500 \\times \\frac{14.4}{100} \\times 5\\right) = 21140.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4.5x + 6.5(40000 - x) = 216000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2x = -44000 \\implies x = 22000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$13558.91\\)",
         "graphData": null
       }
     ]
@@ -4044,34 +3695,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A research hospital secures two loans totaling 48000 dollars to buy equipment. The first loan rate is 5.2% p.a. and the second is 8.2% p.a. If the combined interest return at the end of the first year is 3096.00 dollars, determine the principal sum of the first loan.",
-    "a": "\\(28000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity high-pressure autoclave purchased by GenesisIndustries costs \\(\\$84000\\). The finance department compares reducing balance depreciation at \\(15.2\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$16674.82\\)",
     "opts": [
-      "\\(29400\\)",
-      "\\(30800\\)",
-      "\\(25200\\)",
-      "\\(28000\\)"
+      "\\(\\$16674.82\\)",
+      "\\(\\$36834.82\\)",
+      "\\(\\$17675.31\\)",
+      "\\(\\$15674.33\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
-        "workingOut": "\\(x + y = 48000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 84000 \\times \\left(1 - \\frac{15.2}{100}\\right)^{5} \\approx 36834.8196\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5.2}{100}x + \\frac{8.2}{100}y = 3096.00 \\implies 5.2x + 8.2y = 309600\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 84000 - \\left(84000 \\times \\frac{15.2}{100} \\times 5\\right) = 20160.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(5.2x + 8.2(48000 - x) = 309600\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2.999999999999999x = -83999.99999999994 \\implies x = 28000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$16674.82\\)",
         "graphData": null
       }
     ]
@@ -4081,34 +3727,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A private school foundation secures two loans totaling 26000 dollars. Loan X has a flat rate of 4% p.a. and Loan Y has a flat rate of 6% p.a. If the combined annual interest charge is exactly 1260.00 dollars, find the principal amount of Loan X.",
-    "a": "\\(15000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity ventilation fan cluster purchased by SigmaCapital costs \\(\\$92500\\). The finance department compares reducing balance depreciation at \\(16.0\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$20184.60\\)",
     "opts": [
-      "\\(15000\\)",
-      "\\(16500\\)",
-      "\\(13500\\)",
-      "\\(15750\\)"
+      "\\(\\$18973.52\\)",
+      "\\(\\$21395.68\\)",
+      "\\(\\$20184.60\\)",
+      "\\(\\$38684.60\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
-        "workingOut": "\\(x + y = 26000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 92500 \\times \\left(1 - \\frac{16.0}{100}\\right)^{5} \\approx 38684.6047\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 1260.00 \\implies 4x + 6y = 126000\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 92500 - \\left(92500 \\times \\frac{16.0}{100} \\times 5\\right) = 18500.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4x + 6(26000 - x) = 126000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2x = -30000 \\implies x = 15000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$20184.60\\)",
         "graphData": null
       }
     ]
@@ -4118,34 +3759,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "William arranges two separate business loans totaling 31000 dollars. Loan A is charged at a flat simple interest rate of 4% per annum, and Loan B is charged at 7% per annum. If the total interest interest accrued at the end of the first year is exactly 1600.00 dollars, calculate the principal sum of Loan A.",
-    "a": "\\(19000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity die-casting module purchased by VortexRobotics costs \\(\\$101000\\). The finance department compares reducing balance depreciation at \\(16.8\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$24105.96\\)",
     "opts": [
-      "\\(19950\\)",
-      "\\(17100\\)",
-      "\\(20900\\)",
-      "\\(19000\\)"
+      "\\(\\$25552.32\\)",
+      "\\(\\$24105.96\\)",
+      "\\(\\$40265.96\\)",
+      "\\(\\$22659.60\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
-        "workingOut": "\\(x + y = 31000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 101000 \\times \\left(1 - \\frac{16.8}{100}\\right)^{5} \\approx 40265.9551\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{7}{100}y = 1600.00 \\implies 4x + 7y = 160000\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 101000 - \\left(101000 \\times \\frac{16.8}{100} \\times 5\\right) = 16160.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4x + 7(31000 - x) = 160000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-3x = -57000 \\implies x = 19000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$24105.96\\)",
         "graphData": null
       }
     ]
@@ -4155,34 +3791,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A franchise owner finances a new storefront using two commercial loans totaling 46000 dollars. The interest rate on the first loan is 5% p.a., and the second loan rate is 8% p.a. If the combined annual interest due is exactly 2900.00 dollars, determine the principal sum of the first loan.",
-    "a": "\\(26000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity cleanroom filter assembly purchased by NovaTech costs \\(\\$109500\\). The finance department compares reducing balance depreciation at \\(17.6\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$28455.87\\)",
     "opts": [
-      "\\(23400\\)",
-      "\\(28600\\)",
-      "\\(26000\\)",
-      "\\(27300\\)"
+      "\\(\\$28455.87\\)",
+      "\\(\\$30163.22\\)",
+      "\\(\\$26748.52\\)",
+      "\\(\\$41595.87\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
-        "workingOut": "\\(x + y = 46000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 109500 \\times \\left(1 - \\frac{17.6}{100}\\right)^{5} \\approx 41595.8667\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5}{100}x + \\frac{8}{100}y = 2900.00 \\implies 5x + 8y = 290000\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 109500 - \\left(109500 \\times \\frac{17.6}{100} \\times 5\\right) = 13140.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(5x + 8(46000 - x) = 290000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-3x = -78000 \\implies x = 26000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$28455.87\\)",
         "graphData": null
       }
     ]
@@ -4192,34 +3823,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A real estate developer takes out two bridging loans totaling 27000 dollars. Loan X has a flat rate of 3.5% p.a. and Loan Y has a flat rate of 6.5% p.a. If the combined annual interest charge is exactly 1365.00 dollars, find the principal amount of Loan X.",
-    "a": "\\(13000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity commercial warehouse purchased by SolarisEnergy costs \\(\\$118000\\). The finance department compares reducing balance depreciation at \\(18.4\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$33250.65\\)",
     "opts": [
-      "\\(13650\\)",
-      "\\(11700\\)",
-      "\\(14300\\)",
-      "\\(13000\\)"
+      "\\(\\$42690.65\\)",
+      "\\(\\$31255.61\\)",
+      "\\(\\$33250.65\\)",
+      "\\(\\$35245.69\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
-        "workingOut": "\\(x + y = 27000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 118000 \\times \\left(1 - \\frac{18.4}{100}\\right)^{5} \\approx 42690.6533\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3.5}{100}x + \\frac{6.5}{100}y = 1365.00 \\implies 3.5x + 6.5y = 136500\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 118000 - \\left(118000 \\times \\frac{18.4}{100} \\times 5\\right) = 9440.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(3.5x + 6.5(27000 - x) = 136500\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-3x = -39000 \\implies x = 13000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$33250.65\\)",
         "graphData": null
       }
     ]
@@ -4229,34 +3855,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A shipping company leases cargo containers using two separate lease loans totaling 51000 dollars. The first lease loan carries an annual charge rate of 4.8%, and the second carries 7.2%. If the total lease interest paid for the first year is 2928.00 dollars, calculate the principal of the first lease loan.",
-    "a": "\\(31000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity autonomous server unit purchased by VertexLogistics costs \\(\\$126500\\). The finance department compares reducing balance depreciation at \\(19.2\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$38505.96\\)",
     "opts": [
-      "\\(32550\\)",
-      "\\(27900\\)",
-      "\\(31000\\)",
-      "\\(34100\\)"
+      "\\(\\$43565.96\\)",
+      "\\(\\$36195.60\\)",
+      "\\(\\$40816.32\\)",
+      "\\(\\$38505.96\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of first lease loan and second lease loan.",
-        "workingOut": "\\(x + y = 51000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 126500 \\times \\left(1 - \\frac{19.2}{100}\\right)^{5} \\approx 43565.9641\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4.8}{100}x + \\frac{7.2}{100}y = 2928.00 \\implies 4.8x + 7.2y = 292800\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 126500 - \\left(126500 \\times \\frac{19.2}{100} \\times 5\\right) = 5060.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4.8x + 7.2(51000 - x) = 292800\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2.4000000000000004x = -74400 \\implies x = 31000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$38505.96\\)",
         "graphData": null
       }
     ]
@@ -4266,34 +3887,29 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "To build a sports field, a university secures two loans totaling 36000 dollars. Loan A is at a rate of 5.5% p.a. and Loan B is at 7.5% p.a. If the combined interest at the end of the first year is exactly 2380.00 dollars, calculate the principal sum of Loan A.",
-    "a": "\\(16000\\)",
+    "t": "Financial mathematics",
+    "question": "A high-capacity robotic picking line purchased by ApexFoundry costs \\(\\$135000\\). The finance department compares reducing balance depreciation at \\(20.0\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+    "a": "\\(\\$44236.80\\)",
     "opts": [
-      "\\(16000\\)",
-      "\\(17600\\)",
-      "\\(14400\\)",
-      "\\(16800\\)"
+      "\\(\\$46891.01\\)",
+      "\\(\\$41582.59\\)",
+      "\\(\\$44236.80\\)",
+      "\\(\\$44236.80\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
-        "workingOut": "\\(x + y = 36000\\)",
+        "explanation": "Calculate the asset book value using the reducing balance depreciation method.",
+        "workingOut": "\\(V_{\\text{RB}} = 135000 \\times \\left(1 - \\frac{20.0}{100}\\right)^{5} \\approx 44236.8000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5.5}{100}x + \\frac{7.5}{100}y = 2380.00 \\implies 5.5x + 7.5y = 238000\\)",
+        "explanation": "Calculate the asset book value using the straight-line depreciation method.",
+        "workingOut": "\\(V_{\\text{SL}} = 135000 - \\left(135000 \\times \\frac{20.0}{100} \\times 5\\right) = 0.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(5.5x + 7.5(36000 - x) = 238000\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2x = -32000 \\implies x = 16000\\)",
+        "explanation": "Compute the absolute difference between the two book values.",
+        "workingOut": "\\(\\text{Difference} = |V_{\\text{RB}} - V_{\\text{SL}}| \\approx \\$44236.80\\)",
         "graphData": null
       }
     ]
@@ -4303,34 +3919,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A tech startup takes two loans totaling 56000 dollars to purchase servers. The first loan rate is 4.2% p.a. and the second is 6.8% p.a. If the combined interest return at the end of the first year is 2872.00 dollars, determine the principal sum of the first loan.",
-    "a": "\\(36000\\)",
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Gideon generates a gross revenue of \\(\\$81000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(22.9\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(77.10\\%\\)",
     "opts": [
-      "\\(37800\\)",
-      "\\(32400\\)",
-      "\\(39600\\)",
-      "\\(36000\\)"
+      "\\(77.10\\%\\)",
+      "\\(73.24\\%\\)",
+      "\\(77.10\\%\\)",
+      "\\(80.95\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
-        "workingOut": "\\(x + y = 56000\\)",
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 81000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4.2}{100}x + \\frac{6.8}{100}y = 2872.00 \\implies 4.2x + 6.8y = 287200\\)",
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 81000 \\times \\frac{22.9}{100} = 18549.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4.2x + 6.8(56000 - x) = 287200\\)",
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 81000 - 18549.00 = 62451.00\\text{ dollars}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2.5999999999999996x = -93600 \\implies x = 36000\\)",
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{62451.00}{81000} \\times 100\\% \\approx 77.10\\%\\)",
         "graphData": null
       }
     ]
@@ -4340,34 +3956,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A local logistics company secures two loans totaling 29000 dollars. Loan X has a flat rate of 3.8% p.a. and Loan Y has a flat rate of 5.8% p.a. If the combined annual interest charge is exactly 1302.00 dollars, find the principal amount of Loan X.",
-    "a": "\\(19000\\)",
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Clara generates a gross revenue of \\(\\$87000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(23.8\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(76.20\\%\\)",
     "opts": [
-      "\\(19000\\)",
-      "\\(20900\\)",
-      "\\(17100\\)",
-      "\\(19950\\)"
+      "\\(76.20\\%\\)",
+      "\\(76.20\\%\\)",
+      "\\(72.39\\%\\)",
+      "\\(80.01\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
-        "workingOut": "\\(x + y = 29000\\)",
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 87000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{3.8}{100}x + \\frac{5.8}{100}y = 1302.00 \\implies 3.8x + 5.8y = 130200\\)",
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 87000 \\times \\frac{23.8}{100} = 20706.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(3.8x + 5.8(29000 - x) = 130200\\)",
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 87000 - 20706.00 = 66294.00\\text{ dollars}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2x = -38000 \\implies x = 19000\\)",
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{66294.00}{87000} \\times 100\\% \\approx 76.20\\%\\)",
         "graphData": null
       }
     ]
@@ -4377,34 +3993,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A municipal utility borrows 41000 dollars via two separate infrastructure loans. Loan A is charged at a flat interest rate of 4.5% p.a., and Loan B is charged at 6.5% p.a. If the total interest accrued at the end of the first year is exactly 2205.00 dollars, calculate the principal sum of Loan A.",
-    "a": "\\(23000\\)",
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Xavier generates a gross revenue of \\(\\$93000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(24.7\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(75.30\\%\\)",
     "opts": [
-      "\\(20700\\)",
-      "\\(23000\\)",
-      "\\(25300\\)",
-      "\\(24150\\)"
+      "\\(75.30\\%\\)",
+      "\\(75.30\\%\\)",
+      "\\(79.06\\%\\)",
+      "\\(71.53\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan A and Loan B.",
-        "workingOut": "\\(x + y = 41000\\)",
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 93000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4.5}{100}x + \\frac{6.5}{100}y = 2205.00 \\implies 4.5x + 6.5y = 220500\\)",
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 93000 \\times \\frac{24.7}{100} = 22971.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4.5x + 6.5(41000 - x) = 220500\\)",
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 93000 - 22971.00 = 70029.00\\text{ dollars}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2x = -46000 \\implies x = 23000\\)",
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{70029.00}{93000} \\times 100\\% \\approx 75.30\\%\\)",
         "graphData": null
       }
     ]
@@ -4414,34 +4030,34 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A research hospital secures two loans totaling 49000 dollars to buy equipment. The first loan rate is 5.2% p.a. and the second is 8.2% p.a. If the combined interest return at the end of the first year is 3148.00 dollars, determine the principal sum of the first loan.",
-    "a": "\\(29000\\)",
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Naomi generates a gross revenue of \\(\\$99000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(25.6\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(74.40\\%\\)",
     "opts": [
-      "\\(29000\\)",
-      "\\(31900\\)",
-      "\\(26100\\)",
-      "\\(30450\\)"
+      "\\(70.68\\%\\)",
+      "\\(74.40\\%\\)",
+      "\\(78.12\\%\\)",
+      "\\(74.40\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of first loan and second loan.",
-        "workingOut": "\\(x + y = 49000\\)",
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 99000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{5.2}{100}x + \\frac{8.2}{100}y = 3148.00 \\implies 5.2x + 8.2y = 314800\\)",
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 99000 \\times \\frac{25.6}{100} = 25344.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(5.2x + 8.2(49000 - x) = 314800\\)",
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 99000 - 25344.00 = 73656.00\\text{ dollars}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2.999999999999999x = -86999.99999999994 \\implies x = 29000\\)",
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{73656.00}{99000} \\times 100\\% \\approx 74.40\\%\\)",
         "graphData": null
       }
     ]
@@ -4451,34 +4067,219 @@ export const Y10_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Revision",
-    "question": "A private school foundation secures two loans totaling 27000 dollars. Loan X has a flat rate of 4% p.a. and Loan Y has a flat rate of 6% p.a. If the combined annual interest charge is exactly 1300.00 dollars, find the principal amount of Loan X.",
-    "a": "\\(16000\\)",
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Marcus generates a gross revenue of \\(\\$105000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(26.5\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(73.50\\%\\)",
     "opts": [
-      "\\(14400\\)",
-      "\\(17600\\)",
-      "\\(16800\\)",
-      "\\(16000\\)"
+      "\\(69.83\\%\\)",
+      "\\(73.50\\%\\)",
+      "\\(73.50\\%\\)",
+      "\\(77.17\\%\\)"
     ],
     "solutionSteps": [
       {
-        "explanation": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
-        "workingOut": "\\(x + y = 27000\\)",
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 105000\\)",
         "graphData": null
       },
       {
-        "explanation": "Express the total annual interest from the flat rates.",
-        "workingOut": "\\(\\frac{4}{100}x + \\frac{6}{100}y = 1300.00 \\implies 4x + 6y = 130000\\)",
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 105000 \\times \\frac{26.5}{100} = 27825.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute y = total - x into the interest equation.",
-        "workingOut": "\\(4x + 6(27000 - x) = 130000\\)",
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 105000 - 27825.00 = 77175.00\\text{ dollars}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for variable x to calculate the principal sum of the first loan.",
-        "workingOut": "\\(-2x = -32000 \\implies x = 16000\\)",
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{77175.00}{105000} \\times 100\\% \\approx 73.50\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1f-high-q101",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Elena generates a gross revenue of \\(\\$111000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(27.4\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(72.60\\%\\)",
+    "opts": [
+      "\\(68.97\\%\\)",
+      "\\(72.60\\%\\)",
+      "\\(72.60\\%\\)",
+      "\\(76.23\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 111000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 111000 \\times \\frac{27.4}{100} = 30414.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 111000 - 30414.00 = 80586.00\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{80586.00}{111000} \\times 100\\% \\approx 72.60\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1f-high-q102",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Kaelen generates a gross revenue of \\(\\$117000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(28.3\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(71.70\\%\\)",
+    "opts": [
+      "\\(71.70\\%\\)",
+      "\\(71.70\\%\\)",
+      "\\(75.29\\%\\)",
+      "\\(68.11\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 117000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 117000 \\times \\frac{28.3}{100} = 33111.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 117000 - 33111.00 = 83889.00\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{83889.00}{117000} \\times 100\\% \\approx 71.70\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1f-high-q103",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Sienna generates a gross revenue of \\(\\$123000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(29.2\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(70.80\\%\\)",
+    "opts": [
+      "\\(70.80\\%\\)",
+      "\\(70.80\\%\\)",
+      "\\(74.34\\%\\)",
+      "\\(67.26\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 123000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 123000 \\times \\frac{29.2}{100} = 35916.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 123000 - 35916.00 = 87084.00\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{87084.00}{123000} \\times 100\\% \\approx 70.80\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1f-high-q104",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Darius generates a gross revenue of \\(\\$129000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(30.1\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(69.90\\%\\)",
+    "opts": [
+      "\\(69.90\\%\\)",
+      "\\(69.90\\%\\)",
+      "\\(73.40\\%\\)",
+      "\\(66.41\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 129000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 129000 \\times \\frac{30.1}{100} = 38829.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 129000 - 38829.00 = 90171.00\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{90171.00}{129000} \\times 100\\% \\approx 69.90\\%\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-1f-high-q105",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Financial mathematics",
+    "question": "A consulting firm managed by Amara generates a gross revenue of \\(\\$135000\\) (excluding GST). The firm must pay \\(10\\%\\) GST on top of revenue, and has a corporate income tax liability of \\(31.0\\%\\) on gross profit (excluding GST). Calculate the firm's net profit after tax as a percentage of the gross revenue (excluding GST), correct to two decimal places.",
+    "a": "\\(69.00\\%\\)",
+    "opts": [
+      "\\(69.00\\%\\)",
+      "\\(69.00\\%\\)",
+      "\\(72.45\\%\\)",
+      "\\(65.55\\%\\)"
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Identify that GST does not affect the corporate tax base, which is calculated directly from gross revenue excluding GST.",
+        "workingOut": "\\(P_{\\text{excluding GST}} = 135000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the corporate income tax paid at the specified rate.",
+        "workingOut": "\\(T = 135000 \\times \\frac{31.0}{100} = 41850.00\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the net profit and express it as a percentage of the gross revenue.",
+        "workingOut": "\\(\\text{Net Profit} = 135000 - 41850.00 = 93150.00\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the percentage ratio.",
+        "workingOut": "\\(\\text{Percentage} = \\frac{93150.00}{135000} \\times 100\\% \\approx 69.00\\%\\)",
         "graphData": null
       }
     ]
