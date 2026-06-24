@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
-import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Zap, Trophy, BookOpen, GraduationCap, Network } from 'lucide-react';
+import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
 import { doc, getDoc, onSnapshot, collection, query, where, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -105,13 +105,18 @@ const LearningPath = ({ profile }) => {
     return () => { cancelled = true; };
   }, [year, activeSubject, activeCourse]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ── Fetch per-chapter progress ────────────────────────────────────────
+  // ── Fetch per-topic progress (used to compute chapter mastery) ───────
   useEffect(() => {
     if (!user?.uid) return undefined;
-    const q = query(collection(db, 'chapterProgress'), where('userId', '==', user.uid));
+    const q = query(collection(db, 'topicProgress'), where('userId', '==', user.uid));
     const unsub = onSnapshot(q, (snap) => {
+      // Build map: chapterId → { topicId → progress% }
       const prog = {};
-      snap.docs.forEach((d) => { const data = d.data(); prog[data.chapterId] = data; });
+      snap.docs.forEach((d) => {
+        const data = d.data();
+        if (!prog[data.chapterId]) prog[data.chapterId] = {};
+        prog[data.chapterId][data.topicId] = data.progress || 0;
+      });
       setProgress(prog);
     });
     return unsub;
@@ -129,45 +134,48 @@ const LearningPath = ({ profile }) => {
     if (!availableSubjects.includes(activeSubject)) setActiveSubject(availableSubjects[0]);
   }, [availableSubjects, activeSubject]);
 
-  // ── Derive each chapter's state, XP and lesson count ──────────────────
+  // ── Derive each chapter's state and lesson count ──────────────────────
   const nodes = useMemo(() => {
     const teacherAssigned = profile?.assignedChapters || [];
-    const teacherCompleted = profile?.completedChapters || [];
+    const noAssignments = teacherAssigned.length === 0;
+
     return curriculum.map((chapter, idx) => {
-      const chapProgress = progress[chapter.id]?.progress || 0;
-      const isTeacherCompleted = teacherCompleted.includes(chapter.id);
+      const topicMap = progress[chapter.id] || {};
+      const topics = Array.isArray(chapter.topics) ? chapter.topics : [];
+      const lessons = topics.length || chapter.modules || 12;
+
+      // Mastered only when every topic in the chapter has been completed (progress === 100)
+      const isDone = topics.length > 0
+        ? topics.every((t) => (topicMap[t.id] || 0) === 100)
+        : false;
+
+      // Overall chapter progress = average of topic progresses
+      const topicPcts = topics.map((t) => topicMap[t.id] || 0);
+      const pct = topics.length > 0
+        ? Math.round(topicPcts.reduce((s, p) => s + p, 0) / topics.length)
+        : 0;
+
       const isTeacherAssigned = teacherAssigned.includes(chapter.id);
-      const noAssignments = teacherAssigned.length === 0 && teacherCompleted.length === 0;
-
-      const isDone = isTeacherCompleted || chapProgress === 100;
-      const isCurrent = !isDone && ((isTeacherAssigned) || (noAssignments && idx === 0));
+      const isCurrent = !isDone && (isTeacherAssigned || (noAssignments && idx === 0));
       const isNext = !isDone && !isCurrent && (isTeacherAssigned || (noAssignments && idx < 3));
-      const isLocked = !isDone && !isCurrent && !isNext;
-
-      const lessons = (Array.isArray(chapter.topics) && chapter.topics.length) || chapter.modules || 12;
-      const xpTotal = Math.round((lessons * XP_PER_LESSON) / 10) * 10;
-      const pct = isTeacherCompleted ? 100 : chapProgress;
-      const xpEarned = Math.round((pct / 100) * xpTotal);
 
       return {
-        ...chapter, idx, lessons, xpTotal, xpEarned, pct,
+        ...chapter, idx, lessons, pct,
         state: isDone ? 'done' : isCurrent ? 'current' : isNext ? 'next' : 'locked',
       };
     });
-  }, [curriculum, progress, profile?.assignedChapters, profile?.completedChapters]);
+  }, [curriculum, progress, profile?.assignedChapters]);
 
   const overview = useMemo(() => {
     const total = nodes.length || 1;
     const doneCount = nodes.filter((n) => n.state === 'done').length;
-    const xpAvailable = nodes.reduce((s, n) => s + n.xpTotal, 0);
-    const xpEarned = nodes.reduce((s, n) => s + n.xpEarned, 0);
     const totalLessons = nodes.reduce((s, n) => s + n.lessons, 0);
     const started = nodes.filter((n) => n.pct > 0);
     const mastery = started.length
       ? Math.round(started.reduce((s, n) => s + n.pct, 0) / started.length)
       : 0;
     return {
-      total, doneCount, xpAvailable, xpEarned, totalLessons, mastery,
+      total, doneCount, totalLessons, mastery,
       termPct: Math.round((doneCount / total) * 100),
     };
   }, [nodes]);
@@ -316,7 +324,6 @@ const LearningPath = ({ profile }) => {
       {/* Overview pills */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '14px', marginBottom: '22px' }}>
         {pill('Term progress', `${overview.termPct}%`, `${overview.doneCount} of ${overview.total} chapters complete`, { lead: true, icon: <GraduationCap size={20} /> })}
-        {pill('XP earned', overview.xpEarned.toLocaleString(), `of ${overview.xpAvailable.toLocaleString()} available`, { icon: <Zap size={18} /> })}
         {pill('Lessons', overview.totalLessons, `across ${overview.total} chapters`, { icon: <BookOpen size={18} /> })}
         {pill('Mastery score', `${overview.mastery}%`, overview.mastery >= 80 ? 'excellent consistency' : 'keep building it up', { icon: <Trophy size={18} /> })}
       </div>
@@ -387,10 +394,6 @@ const LearningPath = ({ profile }) => {
 
                 {/* Meta row */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginTop: '12px', flexWrap: 'wrap' }}>
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.78rem', fontWeight: 800, color: '#64748b' }}>
-                    <Zap size={13} style={{ color: '#f59e0b' }} />
-                    {n.xpEarned} / {n.xpTotal} XP
-                  </span>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.78rem', fontWeight: 700, color: '#94a3b8' }}>
                     <BookOpen size={13} /> {n.lessons} lessons
                   </span>
@@ -400,6 +403,30 @@ const LearningPath = ({ profile }) => {
                     </span>
                   )}
                 </div>
+
+                {/* Per-topic progress chips */}
+                {n.state !== 'locked' && Array.isArray(n.topics) && n.topics.length > 0 && (
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', marginTop: '10px' }}>
+                    {n.topics.map((t) => {
+                      const pct = (progress[n.id] || {})[t.id] || 0;
+                      const done = pct === 100;
+                      const started = pct > 0 && pct < 100;
+                      const chipColor = done ? '#10b981' : started ? '#f59e0b' : '#e2e8f0';
+                      const textColor = done ? '#fff' : started ? '#fff' : '#94a3b8';
+                      return (
+                        <span key={t.id} style={{
+                          display: 'inline-flex', alignItems: 'center', gap: '3px',
+                          padding: '2px 7px', borderRadius: '999px',
+                          background: chipColor, color: textColor,
+                          fontSize: '0.65rem', fontWeight: 800,
+                        }}>
+                          {t.code || t.id}
+                          {pct > 0 && !done && <span style={{ opacity: 0.9 }}>{pct}%</span>}
+                        </span>
+                      );
+                    })}
+                  </div>
+                )}
 
                 {/* Progress bar for the in-progress chapter */}
                 {n.state === 'current' && (
