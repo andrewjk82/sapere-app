@@ -1825,7 +1825,7 @@ const Curriculum = () => {
   // counts for the selected year only (~150 aggregation reads, on demand).
   // Reports mismatches and writes the corrected values back.
   const handleAssignAllChaptersToAllStudents = async () => {
-    if (!window.confirm('모든 학생의 assignedChapters를 전체 챕터로 업데이트합니다. 계속할까요?')) return;
+    if (!window.confirm('This will set all chapters to Active for every student. Continue?')) return;
     setIsMigrating(true);
     try {
       const { getDocs, writeBatch, doc: fsDoc, collection: fsCol, getDoc: fsGetDoc } = await import('firebase/firestore');
@@ -1882,10 +1882,10 @@ const Curriculum = () => {
         await batch.commit();
       }
 
-      showToast(`완료: ${updated}명 학생의 챕터가 Active로 설정됐습니다.`, 'success');
+      showToast(`Done: ${updated} students updated with all chapters set to Active.`, 'success');
     } catch (err) {
       console.error(err);
-      showToast('오류: ' + err.message, 'error');
+      showToast('Error: ' + err.message, 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -2893,7 +2893,7 @@ const Curriculum = () => {
                       <div className="sync-card">
                         <div className="sync-card-info">
                           <span className="sync-card-badge generic">BULK</span>
-                          <span className="sync-card-title">모든 학생 전 챕터 Active 설정</span>
+                          <span className="sync-card-title">Set all chapters Active for all students</span>
                         </div>
                         <div className="sync-card-actions">
                           <button onClick={handleAssignAllChaptersToAllStudents} disabled={isMigrating} className="sync-btn warning">
