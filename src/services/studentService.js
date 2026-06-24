@@ -1,16 +1,17 @@
-import { 
-  collection, 
-  addDoc, 
-  getDocs, 
-  query, 
-  where, 
+import {
+  collection,
+  addDoc,
+  getDocs,
+  query,
+  where,
   onSnapshot,
   doc,
   getDoc,
   setDoc,
   updateDoc,
   deleteDoc,
-  serverTimestamp
+  serverTimestamp,
+  writeBatch
 } from "firebase/firestore";
 import { db } from "../firebase/config";
 import { upsertManualStudentLeaderboard, removeFromLeaderboard } from "./leaderboardService";
@@ -330,6 +331,18 @@ export const studentService = {
     } catch (lbErr) {
       console.warn('leaderboard removeStudent failed (non-fatal):', lbErr.code);
     }
+    // Clean up any pending grading_queue items so stale review notifications
+    // don't keep firing after the student is deleted.
+    try {
+      const qSnap = await getDocs(query(collection(db, 'grading_queue'), where('userId', '==', studentId)));
+      if (!qSnap.empty) {
+        const batch = writeBatch(db);
+        qSnap.docs.forEach(d => batch.delete(d.ref));
+        await batch.commit();
+      }
+    } catch (qErr) {
+      console.warn('grading_queue cleanup failed (non-fatal):', qErr?.message || qErr);
+    }
     await touchStudentsSyncMeta(null, true).catch(() => {});
   },
 
@@ -341,6 +354,18 @@ export const studentService = {
       await removeFromLeaderboard(userId);
     } catch (lbErr) {
       console.warn('leaderboard removeUser failed (non-fatal):', lbErr.code);
+    }
+    // Clean up any pending grading_queue items so stale review notifications
+    // don't keep firing after the student is deleted.
+    try {
+      const qSnap = await getDocs(query(collection(db, 'grading_queue'), where('userId', '==', userId)));
+      if (!qSnap.empty) {
+        const batch = writeBatch(db);
+        qSnap.docs.forEach(d => batch.delete(d.ref));
+        await batch.commit();
+      }
+    } catch (qErr) {
+      console.warn('grading_queue cleanup failed (non-fatal):', qErr?.message || qErr);
     }
     await touchStudentsSyncMeta(null, true).catch(() => {});
   },
