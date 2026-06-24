@@ -132,7 +132,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const [reportMessage, setReportMessage] = useState('');
   const [submittingReport, setSubmittingReport] = useState(false);
   const reportTargetRef = useRef(null);
-  const [view, setView] = useState('list'); // 'list' | 'quiz' | 'done'
+  const [view, setView] = useState('quiz'); // 'quiz' | 'done'
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -405,9 +405,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.82rem', fontWeight: 800, color: '#64748b' }}>
               <BookOpen size={13} /> {loading ? '…' : total} question{total !== 1 ? 's' : ''}
             </span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.82rem', fontWeight: 800, color: '#f59e0b' }}>
-              <Zap size={13} /> Up to {XP_PER_TOPIC} XP
-            </span>
+
             {topic.pct > 0 && (
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.82rem', fontWeight: 800, color: stateColor }}>
                 <CheckCircle2 size={13} /> {topic.pct}% complete
@@ -490,6 +488,29 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
   // ── QUIZ VIEW ─────────────────────────────────────────────────────────────
   if (view === 'quiz') {
+    if (loading) {
+      return (
+        <div style={{ maxWidth: '760px', margin: '0 auto' }}>
+          {backBtn('Back to chapter', onBack)}
+          <div style={{ textAlign: 'center', padding: '80px', color: '#94a3b8', fontWeight: 700 }}>Loading questions…</div>
+        </div>
+      );
+    }
+    if (total === 0) {
+      return (
+        <div style={{ maxWidth: '760px', margin: '0 auto' }}>
+          {backBtn('Back to chapter', onBack)}
+          <div style={{ padding: '60px 30px', textAlign: 'center', borderRadius: '22px', background: '#fff', border: '1px dashed #e2e8f0' }}>
+            <BookOpen size={40} style={{ color: '#cbd5e1', margin: '0 auto 12px', display: 'block' }} />
+            <div style={{ fontWeight: 800, color: '#475569', fontSize: '1rem' }}>No practice questions yet</div>
+            <div style={{ color: '#94a3b8', marginTop: '6px', fontSize: '0.88rem', fontWeight: 600 }}>
+              Your teacher will add questions for this topic soon.
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     const answered = results.length;
     const progressPct = Math.round((answered / total) * 100);
 

@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ArrowLeft, CheckCircle2, Lock, Play, BookOpen, Zap,
-  Circle, ChevronRight, BookMarked, RotateCcw, GraduationCap
+  ArrowLeft, CheckCircle2, Lock, Play, BookOpen,
+  Circle, BookMarked, RotateCcw, GraduationCap
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot } from 'firebase/firestore';
@@ -153,7 +153,6 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.04 }}
-              onClick={() => topic.state !== 'locked' && onStartTopic?.(topic, chapter)}
               style={{
                 display: 'flex', alignItems: 'center', gap: '14px',
                 padding: '16px 18px', borderRadius: '16px',
@@ -162,11 +161,7 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
                 boxShadow: topic.state === 'current'
                   ? `0 8px 24px ${s.accent}14`
                   : '0 2px 8px rgba(15,23,42,0.04)',
-                cursor: 'pointer',
-                transition: 'transform 0.15s, box-shadow 0.15s',
               }}
-              whileHover={{ y: -2, boxShadow: `0 12px 28px ${s.accent}18` }}
-              whileTap={{ scale: 0.99 }}
             >
               {/* State icon */}
               <div style={{
@@ -210,37 +205,38 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
                 )}
               </div>
 
-              {/* Lesson preview button */}
-              {hasLesson(topic.id) && (
+              {/* Action buttons */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+                {hasLesson(topic.id) && (
+                  <button
+                    onClick={() => setPreviewLesson(getLesson(topic.id))}
+                    style={{
+                      display: 'inline-flex', alignItems: 'center', gap: '5px',
+                      padding: '7px 13px', borderRadius: '999px', border: '1.5px solid #ddd6fe',
+                      background: '#fff', color: '#7c3aed',
+                      fontSize: '0.75rem', fontWeight: 800,
+                      cursor: 'pointer', letterSpacing: '0.01em',
+                    }}
+                  >
+                    <GraduationCap size={13} />
+                    Lesson
+                  </button>
+                )}
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setPreviewLesson(getLesson(topic.id));
-                  }}
+                  onClick={() => onStartTopic?.(topic, chapter)}
                   style={{
                     display: 'inline-flex', alignItems: 'center', gap: '5px',
-                    padding: '5px 11px', borderRadius: '999px', border: 'none',
+                    padding: '7px 13px', borderRadius: '999px', border: 'none',
                     background: 'linear-gradient(135deg,#a78bfa,#7c3aed)',
-                    color: '#fff', fontSize: '0.72rem', fontWeight: 800,
-                    cursor: 'pointer', flexShrink: 0, letterSpacing: '0.01em',
-                    boxShadow: '0 2px 8px rgba(124,58,237,0.3)',
+                    color: '#fff', fontSize: '0.75rem', fontWeight: 800,
+                    cursor: 'pointer', letterSpacing: '0.01em',
+                    boxShadow: '0 2px 8px rgba(124,58,237,0.25)',
                   }}
                 >
-                  <GraduationCap size={13} />
-                  Lesson
+                  <Play size={12} fill="#fff" />
+                  Practice
                 </button>
-              )}
-
-              {/* XP */}
-              <div style={{ textAlign: 'right', flexShrink: 0 }}>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '0.78rem', fontWeight: 800, color: topic.state === 'done' ? '#10b981' : '#94a3b8' }}>
-                  <Zap size={12} style={{ color: '#f59e0b' }} />
-                  {topic.xpEarned} / {XP_PER_TOPIC} XP
-                </div>
               </div>
-
-              {/* Arrow */}
-              <ChevronRight size={16} style={{ color: '#cbd5e1', flexShrink: 0 }} />
             </motion.div>
           );
         })}
