@@ -137,25 +137,27 @@ const LearningPath = ({ profile }) => {
   // ── Derive each chapter's state and lesson count ──────────────────────
   const nodes = useMemo(() => {
     const teacherAssigned = profile?.assignedChapters || [];
-    const noAssignments = teacherAssigned.length === 0;
+    const teacherCompleted = profile?.completedChapters || [];
+    const noAssignments = teacherAssigned.length === 0 && teacherCompleted.length === 0;
 
     return curriculum.map((chapter, idx) => {
       const topicMap = progress[chapter.id] || {};
       const topics = Array.isArray(chapter.topics) ? chapter.topics : [];
       const lessons = topics.length || chapter.modules || 12;
 
-      // Mastered only when every topic in the chapter has been completed (progress === 100)
-      const isDone = topics.length > 0
-        ? topics.every((t) => (topicMap[t.id] || 0) === 100)
-        : false;
+      const isTeacherCompleted = teacherCompleted.includes(chapter.id);
+      const isTeacherAssigned = teacherAssigned.includes(chapter.id);
+
+      // Mastered when teacher marked complete OR every topic is at 100%
+      const allTopicsDone = topics.length > 0 && topics.every((t) => (topicMap[t.id] || 0) === 100);
+      const isDone = isTeacherCompleted || allTopicsDone;
 
       // Overall chapter progress = average of topic progresses
       const topicPcts = topics.map((t) => topicMap[t.id] || 0);
-      const pct = topics.length > 0
+      const pct = isTeacherCompleted ? 100 : topics.length > 0
         ? Math.round(topicPcts.reduce((s, p) => s + p, 0) / topics.length)
         : 0;
 
-      const isTeacherAssigned = teacherAssigned.includes(chapter.id);
       const isCurrent = !isDone && (isTeacherAssigned || (noAssignments && idx === 0));
       const isNext = !isDone && !isCurrent && (isTeacherAssigned || (noAssignments && idx < 3));
 
@@ -164,7 +166,7 @@ const LearningPath = ({ profile }) => {
         state: isDone ? 'done' : isCurrent ? 'current' : isNext ? 'next' : 'locked',
       };
     });
-  }, [curriculum, progress, profile?.assignedChapters]);
+  }, [curriculum, progress, profile?.assignedChapters, profile?.completedChapters]);
 
   const overview = useMemo(() => {
     const total = nodes.length || 1;
