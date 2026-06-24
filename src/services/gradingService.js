@@ -16,6 +16,19 @@ const writeFeedbackCard = async (userRef, item, correct, feedback, annotation) =
     await addDoc(collection(userRef, 'saved_feedback'), {
       questionId: item.questionId || '',
       questionText: item.questionText || '',
+      // Persist the full question so the student can re-read what was asked —
+      // not just the teacher's comment (image-only questions have no text).
+      questionImage: item.questionImage || null,
+      questionType: item.questionType || '',
+      options: Array.isArray(item.options) ? item.options : [],
+      graphData: item.graphData || null,
+      // The student's own submission and the model answer, so the card is
+      // self-contained: question → their answer → correct answer → comment.
+      answerText: item.answerText || null,
+      answerImage: item.answerImage || null,
+      answerImages: Array.isArray(item.answerImages) ? item.answerImages : [],
+      correctAnswer: item.correctAnswer || '',
+      solution: item.solution || '',
       teacherFeedback: feedback || '',
       teacherAnnotation: annotation || null,
       correct: !!correct,

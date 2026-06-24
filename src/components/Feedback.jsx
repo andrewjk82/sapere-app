@@ -6,6 +6,7 @@ import { useAuth } from '../context/AuthContext';
 import { useProfile } from '../context/ProfileContext';
 import { useToast } from '../context/ToastContext';
 import { localCache } from '../services/localCacheService';
+import MathView from './MathView';
 
 // Cap so a student with months of feedback never reads an unbounded list.
 const PAGE_LIMIT = 50;
@@ -154,10 +155,66 @@ const Feedback = ({ setActiveTab }) => {
               </span>
               <button onClick={() => handleDelete(note.id)} style={{ padding: '4px 10px', borderRadius: '8px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.7rem', cursor: 'pointer' }}>Delete</button>
             </div>
-            {note.questionText && (
-              <p style={{ margin: '0 0 8px', fontSize: '0.82rem', color: '#475569', lineHeight: 1.5, fontWeight: 600 }}>
-                <span style={{ fontWeight: 800, color: '#94a3b8' }}>Q: </span>{note.questionText}
-              </p>
+            {/* The question itself — so the student can re-read what was asked,
+                not just the teacher's comment. Image-only questions have no text. */}
+            {(note.questionText || note.questionImage || (Array.isArray(note.options) && note.options.length > 0)) && (
+              <div style={{ marginBottom: '10px', padding: '12px 14px', background: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+                <span style={{ fontSize: '0.65rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Question</span>
+                {note.questionText && (
+                  <MathView content={note.questionText} graphData={note.graphData || null} style={{ fontSize: '0.92rem', fontWeight: 700, color: '#1e293b', marginTop: '6px' }} />
+                )}
+                {note.questionImage && (
+                  <img src={note.questionImage} alt="Question diagram" style={{ width: '100%', maxHeight: '220px', objectFit: 'contain', marginTop: '10px', borderRadius: '10px', background: '#fff' }} />
+                )}
+                {Array.isArray(note.options) && note.options.length > 0 && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginTop: '10px' }}>
+                    {note.options.map((opt, i) => {
+                      const text = typeof opt === 'string' ? opt : (opt?.text || String(opt));
+                      const isCorrect = String(note.correctAnswer) === String(i) || String(note.correctAnswer) === String(text);
+                      return (
+                        <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 12px', borderRadius: '100px', background: isCorrect ? '#f0fdf4' : '#fff', boxShadow: isCorrect ? '0 0 0 2px #10b981' : '0 0 0 1px #e2e8f0' }}>
+                          <div style={{ width: '24px', height: '24px', borderRadius: '50%', flexShrink: 0, background: isCorrect ? '#10b981' : '#f1f5f9', color: isCorrect ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.78rem' }}>
+                            {String.fromCharCode(65 + i)}
+                          </div>
+                          <MathView content={text} style={{ fontWeight: 600, color: '#1e293b', flex: 1 }} />
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* The student's own submission, so the card stands alone. */}
+            {(note.answerText || note.answerImage || (Array.isArray(note.answerImages) && note.answerImages.length > 0)) && (
+              <div style={{ marginBottom: '10px' }}>
+                <span style={{ fontSize: '0.65rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Your answer</span>
+                {(Array.isArray(note.answerImages) ? note.answerImages : []).filter(u => u && u.length > 100).map((url, i) => (
+                  <img key={i} src={url} alt={`Your work page ${i + 1}`} style={{ width: '100%', objectFit: 'contain', marginTop: '6px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff' }} />
+                ))}
+                {(!note.answerImages || note.answerImages.length === 0) && note.answerImage && note.answerImage.length > 100 && (
+                  <img src={note.answerImage} alt="Your work" style={{ width: '100%', objectFit: 'contain', marginTop: '6px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff' }} />
+                )}
+                {note.answerText && (
+                  <MathView content={note.answerText} style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1e293b', marginTop: '6px' }} />
+                )}
+              </div>
+            )}
+
+            {/* Correct answer + solution guide. */}
+            {(note.correctAnswer || note.solution) && (
+              <div style={{ marginBottom: '10px', padding: '12px 14px', background: '#f0fdf4', borderRadius: '12px', border: '1px solid #bbf7d0' }}>
+                <span style={{ fontSize: '0.65rem', fontWeight: 900, color: '#15803d', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Correct answer</span>
+                {note.correctAnswer && (
+                  <MathView content={String(note.correctAnswer)} style={{ fontSize: '0.92rem', fontWeight: 700, color: '#166534', marginTop: '6px' }} />
+                )}
+                {note.solution && (
+                  <div style={{ borderTop: '1px solid #bbf7d0', paddingTop: '10px', marginTop: '10px' }}>
+                    <span style={{ fontSize: '0.65rem', fontWeight: 800, color: '#15803d' }}>SOLUTION GUIDE</span>
+                    <MathView content={note.solution} style={{ fontSize: '0.85rem', color: '#166534', marginTop: '4px' }} />
+                  </div>
+                )}
+              </div>
             )}
             {note.teacherFeedback ? (
               <p style={{ margin: 0, fontSize: '0.92rem', color: note.correct ? '#166534' : '#7f1d1d', lineHeight: 1.6 }}>{note.teacherFeedback}</p>
