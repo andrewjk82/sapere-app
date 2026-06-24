@@ -399,7 +399,7 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Add $(b/2)^2 = 36$.",
     "solution": "\\(x^2 + 12x + 36 = 26 \\Rightarrow (x+6)^2 = 26 \\Rightarrow x = -6 \\pm \\sqrt{26}\\)",
@@ -1215,7 +1215,7 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Add $(b/2)^2 = 4$.",
     "solution": "\\(x^2 - 4x + 4 = 15 \\Rightarrow (x-2)^2 = 15 \\Rightarrow x = 2 \\pm \\sqrt{15}\\)",
@@ -1483,7 +1483,7 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Add $(b/2)^2 = 16$ after moving constant.",
     "solution": "\\(x^2 - 8x + 16 = 12 \\Rightarrow (x-4)^2 = 12 \\Rightarrow x = 4 \\pm \\sqrt{12} = 4 \\pm 2\\sqrt{3}\\)",
@@ -3485,7 +3485,7 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the common denominator \\( x^2 - a^2 = (x-a)(x+a) \\).",
     "solution": "\\( \\frac{(x+5) - (x-5) + 2x + 10}{x^2 - 25} = \\frac{2x + 20}{x^2 - 25} \\)",
@@ -3716,11 +3716,11 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x + 4}{x - 3}\\)",
+        "text": "\\(\\frac{x - 4}{x - 3}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
     "solution": "\\( \\frac{(x - 2)(x - 4)}{(x - 2)^2} \\times \\frac{x(x - 2)}{x(x - 3)} = \\frac{x - 4}{x - 3} \\)",
@@ -3763,11 +3763,11 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x + 5}{x - 4}\\)",
+        "text": "\\(\\frac{x - 5}{x - 4}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
     "solution": "\\( \\frac{(x - 3)(x - 5)}{(x - 3)^2} \\times \\frac{x(x - 3)}{x(x - 4)} = \\frac{x - 5}{x - 4} \\)",
@@ -3810,11 +3810,11 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x + 6}{x - 5}\\)",
+        "text": "\\(\\frac{x - 6}{x - 5}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
     "solution": "\\( \\frac{(x - 4)(x - 6)}{(x - 4)^2} \\times \\frac{x(x - 4)}{x(x - 5)} = \\frac{x - 6}{x - 5} \\)",
@@ -3857,11 +3857,11 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x + 7}{x - 6}\\)",
+        "text": "\\(\\frac{x - 7}{x - 6}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
     "solution": "\\( \\frac{(x - 5)(x - 7)}{(x - 5)^2} \\times \\frac{x(x - 5)}{x(x - 6)} = \\frac{x - 7}{x - 6} \\)",
@@ -4080,7 +4080,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve: \\( \\frac{x}{x - 2} + \\frac{x - 6}{x} = 2 \\)",
     "options": [
       {
-        "text": "\\(x = -2, 4\\)",
+        "text": "\\(x = 3\\)",
         "imageUrl": ""
       },
       {
@@ -4127,7 +4127,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve: \\( \\frac{x}{x - 3} + \\frac{x - 9}{x} = 2 \\)",
     "options": [
       {
-        "text": "\\(x = -3, 6\\)",
+        "text": "\\(x = 4.5\\)",
         "imageUrl": ""
       },
       {
@@ -4174,7 +4174,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve: \\( \\frac{x}{x - 4} + \\frac{x - 12}{x} = 2 \\)",
     "options": [
       {
-        "text": "\\(x = -4, 8\\)",
+        "text": "\\(x = 6\\)",
         "imageUrl": ""
       },
       {
@@ -4221,7 +4221,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve: \\( \\frac{x}{x - 5} + \\frac{x - 15}{x} = 2 \\)",
     "options": [
       {
-        "text": "\\(x = -5, 10\\)",
+        "text": "\\(x = 7.5\\)",
         "imageUrl": ""
       },
       {
@@ -5584,7 +5584,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve simultaneously: \\( y - 2x = 4 \\) and \\( x^2 + y^2 = 16 \\).",
     "options": [
       {
-        "text": "\\(x = -2, y = 0 \\text{ or } x = 0, y = 4\\)",
+        "text": "\\(x = -3.2, y = -2.4 \\text{ or } x = 0, y = 4\\)",
         "imageUrl": ""
       },
       {
@@ -5631,7 +5631,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve simultaneously: \\( y - 3x = 9 \\) and \\( x^2 + y^2 = 81 \\).",
     "options": [
       {
-        "text": "\\(x = -3, y = 0 \\text{ or } x = 0, y = 9\\)",
+        "text": "\\(x = -5.4, y = -7.2 \\text{ or } x = 0, y = 9\\)",
         "imageUrl": ""
       },
       {
@@ -5678,7 +5678,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve simultaneously: \\( y - 4x = 16 \\) and \\( x^2 + y^2 = 256 \\).",
     "options": [
       {
-        "text": "\\(x = -4, y = 0 \\text{ or } x = 0, y = 16\\)",
+        "text": "\\(x = -\\frac{128}{17}, y = -\\frac{240}{17} \\text{ or } x = 0, y = 16\\)",
         "imageUrl": ""
       },
       {
@@ -5725,7 +5725,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Solve simultaneously: \\( y - 5x = 25 \\) and \\( x^2 + y^2 = 625 \\).",
     "options": [
       {
-        "text": "\\(x = -5, y = 0 \\text{ or } x = 0, y = 25\\)",
+        "text": "\\(x = -\\frac{125}{13}, y = -\\frac{300}{13} \\text{ or } x = 0, y = 25\\)",
         "imageUrl": ""
       },
       {
@@ -5960,7 +5960,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Pipe A can fill a tank in \\( x \\) hours. Pipe B takes \\( 4 \\) hours longer than Pipe A. Together they fill the tank in \\( 3 \\) hours. Find the time taken by Pipe A. (Format: 'x' hours)",
     "options": [
       {
-        "text": "\\(6 hours\\)",
+        "text": "\\(1 + \\sqrt{13} \\approx 4.61 \\text{ hours}\\)",
         "imageUrl": ""
       },
       {
@@ -6007,7 +6007,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Pipe A can fill a tank in \\( x \\) hours. Pipe B takes \\( 5 \\) hours longer than Pipe A. Together they fill the tank in \\( 4 \\) hours. Find the time taken by Pipe A. (Format: 'x' hours)",
     "options": [
       {
-        "text": "\\(6 hours\\)",
+        "text": "\\(\\frac{3 + \\sqrt{89}}{2} \\approx 6.22 \\text{ hours}\\)",
         "imageUrl": ""
       },
       {
@@ -6054,7 +6054,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Pipe A can fill a tank in \\( x \\) hours. Pipe B takes \\( 6 \\) hours longer than Pipe A. Together they fill the tank in \\( 5 \\) hours. Find the time taken by Pipe A. (Format: 'x' hours)",
     "options": [
       {
-        "text": "\\(6 hours\\)",
+        "text": "\\(2 + \\sqrt{34} \\approx 7.83 \\text{ hours}\\)",
         "imageUrl": ""
       },
       {
@@ -6101,7 +6101,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "Pipe A can fill a tank in \\( x \\) hours. Pipe B takes \\( 7 \\) hours longer than Pipe A. Together they fill the tank in \\( 6 \\) hours. Find the time taken by Pipe A. (Format: 'x' hours)",
     "options": [
       {
-        "text": "\\(6 hours\\)",
+        "text": "\\(\\frac{5 + \\sqrt{193}}{2} \\approx 9.44 \\text{ hours}\\)",
         "imageUrl": ""
       },
       {
@@ -6195,7 +6195,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "A boat travels \\( 14 \\) km upstream and then returns. The speed of the stream is \\( 3 \\) km/h. If the total round trip takes \\( 5 \\) hours, find the speed of the boat in still water.",
     "options": [
       {
-        "text": "\\(8 km/h\\)",
+        "text": "\\(6.90 \\text{ km/h}\\)",
         "imageUrl": ""
       },
       {
@@ -6242,7 +6242,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "A boat travels \\( 15 \\) km upstream and then returns. The speed of the stream is \\( 4 \\) km/h. If the total round trip takes \\( 6 \\) hours, find the speed of the boat in still water.",
     "options": [
       {
-        "text": "\\(8 km/h\\)",
+        "text": "\\(\\frac{5 + \\sqrt{89}}{2} \\approx 7.22 \\text{ km/h}\\)",
         "imageUrl": ""
       },
       {
@@ -6289,7 +6289,7 @@ export const Y11_CH1F_QUESTIONS = [
     "question": "A boat travels \\( 16 \\) km upstream and then returns. The speed of the stream is \\( 5 \\) km/h. If the total round trip takes \\( 7 \\) hours, find the speed of the boat in still water.",
     "options": [
       {
-        "text": "\\(8 km/h\\)",
+        "text": "\\(\\frac{16 + \\sqrt{1481}}{7} \\approx 7.78 \\text{ km/h}\\)",
         "imageUrl": ""
       },
       {

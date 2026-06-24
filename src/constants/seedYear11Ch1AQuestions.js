@@ -119,7 +119,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((x - y + z)^2 = x^2 + y^2 + z^2 - 2xy - 2yz + 2zx\\)",
@@ -2308,7 +2308,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((x^2 + x + 1)^2 = x^4 + x^2 + 1 + 2x^3 + 2x + 2x^2\\)",
@@ -2758,7 +2758,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((x + 2y + 3z)^2 = x^2 + 4y^2 + 9z^2 + 4xy + 12yz + 6zx\\)",
@@ -2849,7 +2849,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((2a + 2b - c)^2 = 4a^2 + 4b^2 + c^2 + 8ab - 4bc - 4ca\\)",
@@ -3400,7 +3400,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((x + y + z)^2 = x^2 + y^2 + z^2 + 2xy + 2yz + 2zx\\)",
@@ -6403,7 +6403,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((a - 3b + 2)^2 = a^2 + 9b^2 + 4 - 6ab - 12b + 4a\\)",
@@ -7553,7 +7553,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((3x - 2y - z)^2 = 9x^2 + 4y^2 + z^2 - 12xy + 4yz - 6zx\\)",
@@ -8506,7 +8506,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
     "solution": "\\((2x + y + z)^2 = 4x^2 + y^2 + z^2 + 4xy + 2yz + 4zx\\)",

@@ -1724,7 +1724,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Set discriminant to zero.",
     "solution": "\\\\( 2x^2 - x + 1 - k = 0 \\\\). \\\\( \\\\Delta = 8k - 7 = 0 \\\\Rightarrow k = \\\\frac{7}{8} \\\\)",
@@ -3480,7 +3480,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "blanks": [],
     "hint": "Apply formula with $a=2, b=-3, c=-4$.",
     "solution": "\\( -3 \\)",
@@ -4546,7 +4546,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Use the discriminant condition for tangency.",
     "solution": "\\\\( x^2 - 3x + 1 - k = 0 \\\\). \\\\( \\\\Delta = 5 + 4k = 0 \\\\Rightarrow k = -\\\\frac{5}{4} \\\\)",
@@ -5516,7 +5516,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "The line is tangent when the discriminant of the resulting quadratic equals zero.",
     "solution": "Set equal: \\\\( x^2 - x - k = 0 \\\\). For tangency, \\\\( \\\\Delta = 1 + 4k = 0 \\\\Rightarrow k = -\\\\frac{1}{4} \\\\)",
@@ -5653,7 +5653,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Use the discriminant condition for tangency.",
     "solution": "\\\\( x^2 - 3x + k + 3 = 0 \\\\). \\\\( \\\\Delta = -3 - 4k = 0 \\\\Rightarrow k = -\\\\frac{3}{4} \\\\)",
@@ -5952,7 +5952,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "blanks": [],
     "hint": "Use Pythagoras' theorem and the given difference.",
     "solution": "\\( -5 \\text{ and } 6 \\)",
@@ -6184,7 +6184,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "blanks": [],
     "hint": "Set up sum and product equations, then form a quadratic.",
     "solution": "\\( -5 \\text{ and } 7 \\)",
@@ -6237,7 +6237,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "blanks": [],
     "hint": "Find the discriminant of the resulting quadratic.",
     "solution": "\\( -3 \\)",
@@ -7653,7 +7653,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Two intersection points occur when the discriminant is positive.",
     "solution": "\\\\( \\\\Delta = 25 + 4k > 0 \\\\Rightarrow k > -\\\\frac{25}{4} \\\\)",
@@ -8098,7 +8098,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "blanks": [],
     "hint": "Set up equations from the conditions and solve the quadratic.",
     "solution": "\\( -10 \\text{ and } 6 \\)",

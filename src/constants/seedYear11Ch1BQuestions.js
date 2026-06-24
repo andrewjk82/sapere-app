@@ -23,7 +23,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "2b^2(4 + b)",
@@ -98,7 +98,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "6a^2b(a - 2b)",
@@ -172,7 +172,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(5x - 1)(x - 3)",
@@ -209,7 +209,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 4)(x - 1)",
@@ -246,7 +246,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(u - 3)(u - 9)",
@@ -283,7 +283,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(x + 3)(x + 10)",
@@ -357,7 +357,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(x - 6)(x + 8)",
@@ -435,7 +435,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(6 - z)(6 + z)",
@@ -472,7 +472,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(2x - 1)(3x - 2)",
@@ -509,7 +509,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(5 - x)(5 + x)",
@@ -546,7 +546,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(4x - 5)(4x + 5)",
@@ -583,7 +583,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(x + 4)(x - 6)",
@@ -620,7 +620,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor by grouping (AC method).",
     "solution": "\\(3j^2 + 6j + 4j + 8 = 3j(j+2) + 4(j+2) = (3j+4)(j+2)\\)",
@@ -663,7 +663,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 2)^2",
@@ -700,7 +700,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(x - 1)(x + 1)",
@@ -774,7 +774,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "12p(2q - 3)",
@@ -811,7 +811,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Difference of squares: $8^2 - (3g)^2$.",
     "solution": "\\((8-3g)(8+3g)\\)",
@@ -895,7 +895,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 4)(x - 3)",
@@ -932,7 +932,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(a - b)(x - y)",
@@ -973,7 +973,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "x(4 - x)(4 + x)",
@@ -1092,7 +1092,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Perfect square trinomial.",
     "solution": "\\(-7 \\times -7 = 49, -7 - 7 = -14 \\rightarrow (f-7)^2\\)",
@@ -1135,7 +1135,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(x + y)(x + z)",
@@ -1172,7 +1172,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(y - 4)(y + 5)",
@@ -1229,7 +1229,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(y^2 + 1)(y - 1)",
@@ -1270,7 +1270,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(p + q)(x - y)",
@@ -1352,7 +1352,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(a^2 + 3)(a + 3)",
@@ -1389,7 +1389,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor the difference of squares then factor out 5.",
     "solution": "\\((a-b)(a+b) + 5(a-b) = (a-b)(a+b+5)\\)",
@@ -1432,7 +1432,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(10 - x)(10 + x)",
@@ -1469,7 +1469,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor by grouping in pairs.",
     "solution": "\\(z(x^2+y) - w(x^2+y) = (x^2+y)(z-w)\\)",
@@ -1512,7 +1512,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(9 - y)(9 + y)",
@@ -1549,7 +1549,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(2x + 1)(x + 4)",
@@ -1623,7 +1623,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(x - 2)(3x + y)",
@@ -1660,7 +1660,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(2x + 1)(x + 3)",
@@ -1697,7 +1697,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(u + 2)(u - 14)",
@@ -1734,7 +1734,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(a - 4)(a + 12)",
@@ -1771,7 +1771,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(3a - 2b)(x - y)",
@@ -1857,7 +1857,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(d - 4)(d - 8)",
@@ -1894,7 +1894,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(x + 1)(x + 3)",
@@ -2033,7 +2033,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "4a^3b^3(a + 2b)",
@@ -2070,7 +2070,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(3a + 1)(3a - 5)",
@@ -2195,7 +2195,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(a + 2)(a - 5)",
@@ -2232,7 +2232,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(x + 3)^2",
@@ -2269,7 +2269,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 4)(x - 2)",
@@ -2347,7 +2347,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 2)(x - 1)",
@@ -2540,7 +2540,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "4b(b - 2c)",
@@ -2577,7 +2577,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(x + y - a)(x + y + a)",
@@ -2651,7 +2651,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(p + q)(r - s)",
@@ -2729,7 +2729,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3w + 4)(w + 7)",
@@ -2766,7 +2766,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(b + 3)(x + 4)",
@@ -2807,7 +2807,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(b - 7)^2",
@@ -2864,7 +2864,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(2z - 7)(z + 4)",
@@ -2901,7 +2901,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(b - 4)(b - 7)",
@@ -2938,7 +2938,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 2)(x + 4)",
@@ -3016,7 +3016,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "m(m + 3n)",
@@ -3053,7 +3053,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "4t(t^2 + 2t + 3)",
@@ -3094,7 +3094,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(z + 9)^2",
@@ -3209,7 +3209,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(2x - 3)(x + 2)",
@@ -3246,7 +3246,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(3 - b)(3 + b)(9 + b^2)",
@@ -3287,7 +3287,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(a - 1)(a + 1)(a + 5)",
@@ -3328,7 +3328,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(3b - 4)(3b + 4)",
@@ -3365,7 +3365,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Look for common number and variable.",
     "solution": "\\(12c(c) + 12c(4) = 12c(c + 4)\\)",
@@ -3408,7 +3408,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "y(y + 5)",
@@ -3445,7 +3445,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(a - b)(a - 4)",
@@ -3486,7 +3486,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(1 - m)(1 + m)",
@@ -3560,7 +3560,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(p - 9)^2",
@@ -3597,7 +3597,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor by grouping.",
     "solution": "\\(6m^2 - 8m + 9m - 12 = 2m(3m-4) + 3(3m-4) = (2m+3)(3m-4)\\)",
@@ -3750,7 +3750,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(a - 2)(a + 2)(2a - 3b)",
@@ -3791,7 +3791,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(y - 3)(y - 5)",
@@ -3848,7 +3848,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor by grouping in pairs.",
     "solution": "\\(x(a-b) - 4(a-b) = (a-b)(x-4)\\)",
@@ -3891,7 +3891,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(2w - 1)(2w + 1)",
@@ -3965,7 +3965,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(p + 3)(p - 20)",
@@ -4043,7 +4043,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(4x + 1)(x - 3)",
@@ -4117,7 +4117,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "y^2(9 - y)",
@@ -4154,7 +4154,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 2)(x + 4)",
@@ -4191,7 +4191,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 1)(x - 1)",
@@ -4306,7 +4306,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(a + 1)(a + 7)",
@@ -4462,7 +4462,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 4)(x - 2)",
@@ -4536,7 +4536,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "y(y - 36)",
@@ -4610,7 +4610,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(p + 3)(p + 6)",
@@ -4684,7 +4684,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Find numbers that multiply to -48 and add to -2.",
     "solution": "\\(-8 \\times 6 = -48, -8 + 6 = -2 \\rightarrow (h-8)(h+6)\\)",
@@ -4801,7 +4801,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(a - b)(a + b)(a^2 + b^2)",
@@ -4842,7 +4842,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 2)(x + 4)",
@@ -4879,7 +4879,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Difference of squares: $x^2 - 9^2$.",
     "solution": "\\((x-9)(x+9)\\)",
@@ -4922,7 +4922,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x - 4)(x + 2)",
@@ -4996,7 +4996,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Find the HCF of 35 and 49.",
     "solution": "\\(7(5b) - 7(7) = 7(5b - 7)\\)",
@@ -5113,7 +5113,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(x - 6)(x + 6)",
@@ -5150,7 +5150,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(w - 15)^2",
@@ -5187,7 +5187,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(5x - 9y)(5x + 9y)",
@@ -5224,7 +5224,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(u - 7)(u - 8)",
@@ -5261,7 +5261,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(4u - v)(4u + v)",
@@ -5298,7 +5298,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(u - 4)(u + 15)",
@@ -5355,7 +5355,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(6 - p)(x - y)",
@@ -5396,7 +5396,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(3y^2 - 2)(y - 4)",
@@ -5433,7 +5433,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Find numbers that multiply to 24 and add to 11.",
     "solution": "\\(3 \\times 8 = 24, 3 + 8 = 11 \\rightarrow (e+3)(e+8)\\)",
@@ -5554,7 +5554,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(b + 4)(b + 6)",
@@ -5591,7 +5591,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "(x + 8)(x - 9)",
@@ -5628,7 +5628,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "",
     "solution": "(3x + 1)(x + 2)",
@@ -5669,7 +5669,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(2x - 3)(x + 7)",
@@ -5706,7 +5706,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(z - 1)(z + 1)(z - 2)(z + 2)",
@@ -5771,7 +5771,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Find numbers that multiply to -40 and add to 3.",
     "solution": "\\(8 \\times -5 = -40, 8 - 5 = 3 \\rightarrow (i+8)(i-5)\\)",
@@ -5814,7 +5814,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(z - 4)(z - 5)",
@@ -5851,7 +5851,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(a - 3b)(a + 3b)",
@@ -5888,7 +5888,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Find the HCF of 24 and 60.",
     "solution": "\\(12(2a) + 12(5) = 12(2a + 5)\\)",
@@ -5992,7 +5992,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "",
     "solution": "(u - 1)(u - 4)",
@@ -6033,7 +6033,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor by grouping in pairs.",
     "solution": "\\(x(y+2) + 3(y+2) = (x+3)(y+2)\\)",
@@ -6076,7 +6076,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "3(x - 2)(x + 7)",

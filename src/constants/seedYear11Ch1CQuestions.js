@@ -23,7 +23,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{18x+12 - (15x-10)}{30} = \\frac{18x+12 - 15x+10}{30} = \\frac{3x+22}{30}",
@@ -162,7 +162,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 4}{4x + 3}",
@@ -248,7 +248,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor out the HCF in numerator and denominator.",
     "solution": "\\(\\frac{4(2a+b)}{6(2a+b)} = \\frac{4}{6} = \\frac{2}{3}\\)",
@@ -291,7 +291,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{a}{a-3}",
@@ -334,7 +334,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{1}{12} \\times \\frac{12}{13} = \\frac{1}{13}",
@@ -381,7 +381,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4y-8 - 3y-6}{(y+2)(y-2)} = \\frac{y-14}{(y+2)(y-2)}",
@@ -467,7 +467,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 4}{4x + 4}",
@@ -515,7 +515,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{2}{u-v}",
@@ -562,7 +562,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "-\\frac{11}{10p}",
@@ -605,7 +605,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{25x}{12}",
@@ -691,7 +691,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 2}",
@@ -739,7 +739,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 3}{3x + 3}",
@@ -916,7 +916,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Common denominator xy.",
     "solution": "\\(\\frac{2y}{xy} + \\frac{3x}{xy} = \\frac{2y+3x}{xy}\\)",
@@ -959,7 +959,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 1}",
@@ -1098,7 +1098,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4a+8 + 3a+9}{12} = \\frac{7a+17}{12}",
@@ -1141,7 +1141,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{u^2+v^2}{uv} \\times \\frac{uv}{u^2-v^2} = \\frac{u^2+v^2}{u^2-v^2}",
@@ -1227,7 +1227,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4k^2}{12kr} = \\frac{4}{12} \\times \\frac{k^2}{k} \\times \\frac{1}{r} = \\frac{k}{3r}",
@@ -1308,7 +1308,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor both numerator and denominator.",
     "solution": "\\(\\frac{(2x+3)(x-5)}{(2x-5)(2x+3)} = \\frac{x-5}{2x-5}\\)",
@@ -1351,7 +1351,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 1x + 1}{x + 1}",
@@ -1533,7 +1533,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 2}",
@@ -1628,7 +1628,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{2-5}{y} = -\\frac{3}{y}",
@@ -1666,7 +1666,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Common denominator $(x+3)(x-1)$.",
     "solution": "\\(\\frac{3(x-1) - 2(x+3)}{(x+3)(x-1)} = \\frac{3x-3-2x-6}{(x+3)(x-1)} = \\frac{x-9}{(x+3)(x-1)}\\)",
@@ -1709,7 +1709,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Common denominator 6b.",
     "solution": "\\(\\frac{15a}{6b} - \\frac{2a}{6b} = \\frac{13a}{6b}\\)",
@@ -1871,7 +1871,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Common denominator 20.",
     "solution": "\\(\\frac{5(x+2) + 4(x-3)}{20} = \\frac{5x+10+4x-12}{20} = \\frac{9x-2}{20}\\)",
@@ -1914,7 +1914,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 4}",
@@ -1962,7 +1962,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Common denominator $(x+2)(x-3)$.",
     "solution": "\\(\\frac{4(x-3) + 5(x+2)}{(x+2)(x-3)} = \\frac{4x-12+5x+10}{(x+2)(x-3)} = \\frac{9x-2}{(x+2)(x-3)}\\)",
@@ -2009,7 +2009,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{-3ab}{40} = -\\frac{3ab}{40}",
@@ -2052,7 +2052,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{2y+2}{y(y+2)}",
@@ -2143,7 +2143,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor the quadratics.",
     "solution": "\\(\\frac{(x+5)(x-2)}{(x+1)(x-2)} = \\frac{x+5}{x+1}\\)",
@@ -2186,7 +2186,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor by grouping in the denominator.",
     "solution": "\\(\\frac{(3x+1)(x+1)}{x^2(3x+1) + (3x+1)} = \\frac{(3x+1)(x+1)}{(3x+1)(x^2+1)} = \\frac{x+1}{x^2+1}\\)",
@@ -2233,7 +2233,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{3x-9 + 4x-16}{(x-4)(x-3)} = \\frac{7x-25}{(x-4)(x-3)}",
@@ -2276,7 +2276,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Common denominator 6. Be careful with the minus sign.",
     "solution": "\\(\\frac{3(x+3) - 2(x-1)}{6} = \\frac{3x+9-2x+2}{6} = \\frac{x+11}{6}\\)",
@@ -2319,7 +2319,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{3m}{6m} = \\frac{1}{2}",
@@ -2362,7 +2362,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 3}",
@@ -2414,7 +2414,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{3a+12 - 3a+9}{(a-3)(a+4)} = \\frac{21}{(a-3)(a+4)}",
@@ -2457,7 +2457,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 1x - 2",
@@ -2505,7 +2505,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 4}",
@@ -2639,7 +2639,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 2x - 3",
@@ -2687,7 +2687,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 3}{3x + 2}",
@@ -2773,7 +2773,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Multiply numerators and multiply denominators.",
     "solution": "\\(\\frac{x \\times y}{5 \\times 2} = \\frac{xy}{10}\\)",
@@ -2816,7 +2816,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 4}{4x + 2}",
@@ -2864,7 +2864,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{2}{(a+2)(a-2)} = \\frac{2}{a^2-4}",
@@ -2917,7 +2917,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "3",
@@ -2960,7 +2960,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{u \\times 5}{5 \\times u} = 1",
@@ -2998,7 +2998,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{9y-6 + 12y+4}{12} = \\frac{21y-2}{12}",
@@ -3122,7 +3122,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{a-b}{a-b} = 1",
@@ -3165,7 +3165,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{y-1}{(y+3)(y+2)} \\times \\frac{(y+3)(y+2)}{y-3} = \\frac{y-1}{y-3}",
@@ -3208,7 +3208,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{y}{4}",
@@ -3251,7 +3251,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{1+2}{u} = \\frac{3}{u}",
@@ -3289,7 +3289,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4a}{a} = 4",
@@ -3327,7 +3327,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4}{3}",
@@ -3370,7 +3370,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{3p}{16}",
@@ -3413,7 +3413,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{3a + a}{3} = \\frac{4a}{3}",
@@ -3456,7 +3456,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "y^2 \\times \\frac{4}{y} = \\frac{4y^2}{y} = 4y",
@@ -3494,7 +3494,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{6m-4 - 3m-2}{8} = \\frac{3m-6}{8}",
@@ -3521,7 +3521,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "\\(\\frac{x^2}{y} \\div \\frac{x}{y^2}\\)",
     "options": [
       {
-        "text": "\\(x^3y\\)",
+        "text": "\\(xy\\)",
         "imageUrl": ""
       },
       {
@@ -3618,7 +3618,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{x}{4} \\times \\frac{1}{8} = \\frac{x}{32}",
@@ -3656,7 +3656,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{y+3}{y-3}",
@@ -3790,7 +3790,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{1}{y+z}",
@@ -3833,7 +3833,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Multiply by the reciprocal.",
     "solution": "\\(\\frac{2x}{3} \\times \\frac{9}{4x} = \\frac{18x}{12x} = \\frac{3}{2}\\)",
@@ -3919,7 +3919,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 3}",
@@ -3967,7 +3967,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4k}{21}",
@@ -4010,7 +4010,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{x+1}{x+2} \\times \\frac{(x+1)(x+2)}{2x+3} = \\frac{(x+1)^2}{2x+3}",
@@ -4053,7 +4053,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Common denominator 6.",
     "solution": "\\(\\frac{2x - (x+4)}{6} = \\frac{x-4}{6}\\)",
@@ -4096,7 +4096,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{10y}{42} = \\frac{5y}{21}",
@@ -4139,7 +4139,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 3}{3x + 4}",
@@ -4187,7 +4187,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Common denominator ab.",
     "solution": "\\(\\frac{4b}{ab} - \\frac{a}{ab} = \\frac{4b-a}{ab}\\)",
@@ -4278,7 +4278,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor numerator and denominator.",
     "solution": "\\(\\frac{3(x-y)}{(x-y)(x+y)} = \\frac{3}{x+y}\\)",
@@ -4364,7 +4364,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 5x + 6}",
@@ -4412,7 +4412,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{15xy}{5x^2y} = \\frac{15}{5} \\times \\frac{x}{x^2} \\times \\frac{y}{y} = \\frac{3}{x}",
@@ -4536,7 +4536,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 2x + 4}{x + 2}",
@@ -4627,7 +4627,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4}{3b}",
@@ -4670,7 +4670,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "-(x-4) \\text{ or } 4-x",
@@ -4718,7 +4718,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 3x + 2}",
@@ -4766,7 +4766,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 7x + 12}",
@@ -4814,7 +4814,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{a+2}{a+3}",
@@ -4905,7 +4905,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{x+4}{x+3}",
@@ -4948,7 +4948,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{5a - 2b}{30}",
@@ -4991,7 +4991,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4p+12 - (3p+12)}{12} = \\frac{4p+12 - 3p-12}{12} = \\frac{p}{12}",
@@ -5125,7 +5125,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "blanks": [],
     "hint": "Common denominator 6y.",
     "solution": "\\(\\frac{8x}{6y} + \\frac{3x}{6y} = \\frac{11x}{6y}\\)",
@@ -5168,7 +5168,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4}{3n}",
@@ -5211,7 +5211,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{4x}{3(x-1)}",
