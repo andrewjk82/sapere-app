@@ -898,8 +898,30 @@ const shuffleArray = (arr) => {
  * @param {Object} meta - { chapterTitle, topicTitle, year }
  * @param {Object} options - { showAnswers: boolean, count: number }
  */
+// Open a print window that auto-downloads a single PDF for the given
+// (already-selected) questions. Returns true on success, false if blocked.
+const openPdfWindow = (selectedQuestions, meta, showAnswers) => {
+  const html = buildPrintHtml(selectedQuestions, {
+    chapterTitle: meta.chapterTitle || '',
+    topicTitle: meta.topicTitle || '',
+    year: meta.year || '',
+    course: meta.course || '',
+    readingTime: meta.readingTime || 5,
+    workingTime: meta.workingTime || 60,
+    showAnswers,
+  });
+
+  const printWindow = window.open('', '_blank');
+  if (!printWindow) {
+    return false;
+  }
+  printWindow.document.write(html);
+  printWindow.document.close();
+  return true;
+};
+
 export const exportQuestionsPdf = (questions, meta, options = {}) => {
-  const { showAnswers = true, count } = options;
+  const { showAnswers = true, count, bothVersions = false } = options;
   let validQuestions = questions.filter(q => q && !q.loading);
 
   if (validQuestions.length === 0) {
@@ -947,22 +969,20 @@ export const exportQuestionsPdf = (questions, meta, options = {}) => {
 
   validQuestions = selected;
 
-  const html = buildPrintHtml(validQuestions, {
-    chapterTitle: meta.chapterTitle || '',
-    topicTitle: meta.topicTitle || '',
-    year: meta.year || '',
-    course: meta.course || '',
-    readingTime: meta.readingTime || 5,
-    workingTime: meta.workingTime || 60,
-    showAnswers,
-  });
-
-  const printWindow = window.open('', '_blank');
-  if (!printWindow) {
-    alert('Popup blocked! Please allow popups for this site to export PDF.');
+  // When bothVersions is requested (triggered from "Student Version"), emit two
+  // PDFs from the SAME selected question set: the student paper and the answer
+  // key. Selection happens once above so both documents contain identical
+  // questions in the same order.
+  if (bothVersions) {
+    const studentOk = openPdfWindow(validQuestions, meta, false);
+    const answersOk = openPdfWindow(validQuestions, meta, true);
+    if (!studentOk || !answersOk) {
+      alert('Popup blocked! Please allow popups for this site to export both PDFs (student paper + answer key).');
+    }
     return;
   }
 
-  printWindow.document.write(html);
-  printWindow.document.close();
+  if (!openPdfWindow(validQuestions, meta, showAnswers)) {
+    alert('Popup blocked! Please allow popups for this site to export PDF.');
+  }
 };

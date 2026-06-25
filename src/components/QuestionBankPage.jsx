@@ -133,7 +133,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
               course: chapter.course || '',
               readingTime: pdfReadingTime,
               workingTime: pdfWorkingTime,
-            }, { showAnswers: pdfWithAnswers, count: pdfCount });
+            }, { showAnswers: pdfWithAnswers, count: pdfCount, bothVersions: !pdfWithAnswers });
             return merged;
           });
         } catch (err) {
@@ -150,7 +150,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         course: chapter.course || '',
         readingTime: pdfReadingTime,
         workingTime: pdfWorkingTime,
-      }, { showAnswers: pdfWithAnswers, count: pdfCount });
+      }, { showAnswers: pdfWithAnswers, count: pdfCount, bothVersions: !pdfWithAnswers });
     }
   };
 
