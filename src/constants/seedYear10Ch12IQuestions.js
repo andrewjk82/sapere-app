@@ -1,4 +1,3 @@
-import fs from 'fs';
 
 const Y10_CH12I_QUESTIONS = [
   {
