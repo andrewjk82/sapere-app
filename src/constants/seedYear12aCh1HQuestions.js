@@ -7,12 +7,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression has the first term \\(a = 24\\) and the common ratio \\(r = \\frac{1}{4}\\).\n\nFind the first six terms of the sequence of partial sums, \\(S_1, S_2, S_3, S_4, S_5, S_6\\).",
     "opts": [
-      null,
-      null,
-      "\\(24, 28, 29\\frac{1}{2}, 29\\frac{7}{8}, 29\\frac{31}{32}, 29\\frac{127}{128}\\)",
-      "\\(24, 30, 31\\frac{1}{4}, 31\\frac{5}{8}, 31\\frac{21}{32}, 31\\frac{85}{128}\\)"
+      "\\(24, 30, 31\\frac{1}{2}, 31\\frac{7}{8}, 31\\frac{31}{32}, 31\\frac{127}{128}\\)",
+      "\\(24, 26, 27\\frac{1}{2}, 27\\frac{7}{8}, 27\\frac{31}{32}, 27\\frac{127}{128}\\)",
+      "\\(24, 30, 31\\frac{1}{4}, 31\\frac{5}{8}, 31\\frac{21}{32}, 31\\frac{85}{128}\\)",
+      "\\(24, 28, 29\\frac{1}{2}, 29\\frac{7}{8}, 29\\frac{31}{32}, 29\\frac{127}{128}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Calculate the terms of the GP: \\(24, 6, 1.5, \\dots\\) and add them progressively to find the partial sums.",
     "solutionSteps": [
       {
@@ -45,12 +45,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression has the first term \\(a = 24\\) and the common ratio \\(r = \\frac{1}{4}\\).\n\nFind the limiting sum \\(S_{\\infty}\\) using the formula:\n\\(S_{\\infty} = \\frac{a}{1-r}\\).",
     "opts": [
-      null,
-      null,
       "\\(32\\)",
-      "\\(30\\)"
+      "\\(30\\)",
+      "\\(28\\)",
+      "\\(36\\)"
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Substitute \\(a = 24\\) and \\(r = \\frac{1}{4}\\) into the limiting sum formula.",
     "solutionSteps": [
       {
@@ -78,12 +78,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression has the first term \\(a = 24\\) and the common ratio \\(r = \\frac{1}{4}\\).\n\nFind the difference between the limiting sum and the sixth partial sum, \\(S_{\\infty} - S_6\\).",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(\\frac{1}{256}\\)",
+      "\\(\\frac{1}{64}\\)",
+      "\\(\\frac{1}{128}\\)",
       "\\(\\frac{3}{128}\\)"
     ],
-    "a": -1,
+    "a": 2,
     "hint": "Subtract the sixth partial sum \\(S_6 = 31\\frac{127}{128}\\) from the limiting sum \\(S_{\\infty} = 32\\).",
     "solutionSteps": [
       {
@@ -111,12 +111,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression has the first term \\(a = 18\\) and the common ratio \\(r = -\\frac{1}{3}\\).\n\nFind the first six terms of the sequence of partial sums, \\(S_1, S_2, S_3, S_4, S_5, S_6\\).",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(18, 12, 14, 13\\frac{1}{3}, 13\\frac{5}{9}, 13\\frac{13}{27}\\)"
+      "\\(18, 12, 16, 14\\frac{2}{3}, 15\\frac{1}{9}, 14\\frac{20}{27}\\)",
+      "\\(18, 15, 16, 15\\frac{1}{3}, 15\\frac{5}{9}, 15\\frac{13}{27}\\)",
+      "\\(18, 12, 14, 13\\frac{1}{3}, 13\\frac{5}{9}, 13\\frac{13}{27}\\)",
+      "\\(18, 12, 14, 13\\frac{2}{3}, 13\\frac{7}{9}, 13\\frac{19}{27}\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "The terms of this GP alternate in sign: \\(18, -6, 2, -\\frac{2}{3}, \\dots\\). Sum them sequentially.",
     "solutionSteps": [
       {
@@ -149,12 +149,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression has the first term \\(a = 18\\) and the common ratio \\(r = -\\frac{1}{3}\\).\n\nFind the limiting sum \\(S_{\\infty}\\) using the formula:\n\\(S_{\\infty} = \\frac{a}{1-r}\\).",
     "opts": [
-      null,
-      "\\(13.5\\)",
       "\\(12\\)",
-      null
+      "\\(18\\)",
+      "\\(14.5\\)",
+      "\\(13.5\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Substitute the negative common ratio \\(r = -\\frac{1}{3}\\) carefully into the formula.",
     "solutionSteps": [
       {
@@ -182,8 +182,8 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression has the first term \\(a = 18\\) and the common ratio \\(r = -\\frac{1}{3}\\).\n\nFind the difference between the limiting sum and the sixth partial sum, \\(S_{\\infty} - S_6\\).",
     "opts": [
-      null,
-      null,
+      "\\(\\frac{1}{18}\\)",
+      "\\(\\frac{1}{108}\\)",
       "\\(\\frac{1}{27}\\)",
       "\\(\\frac{1}{54}\\)"
     ],
@@ -215,12 +215,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression is given by the series:\n\\(2 + 1 + \\frac{1}{2} + \\dots\\)\n\nIdentify the first term \\(a\\) and find the limiting sum \\(S_{\\infty}\\).",
     "opts": [
-      null,
-      null,
-      null,
-      null
+      "\\(a = 2\\), \\(S_{\\infty} = 4\\)",
+      "\\(a = 2\\), \\(S_{\\infty} = 8\\)",
+      "\\(a = 2\\), \\(S_{\\infty} = 3\\)",
+      "\\(a = 1\\), \\(S_{\\infty} = 2\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "The first term is the first number in the series, and the ratio \\(r\\) is found by dividing the second term by the first term.",
     "solutionSteps": [
       {
@@ -248,12 +248,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression is given by the series:\n\\(12 + 6 + 3 + \\dots\\)\n\nIdentify the first term \\(a\\) and find the limiting sum \\(S_{\\infty}\\).",
     "opts": [
-      null,
-      null,
+      "\\(a = 6\\), \\(S_{\\infty} = 12\\)",
       "\\(a = 12\\), \\(S_{\\infty} = 24\\)",
+      "\\(a = 12\\), \\(S_{\\infty} = 18\\)",
       "\\(a = 12\\), \\(S_{\\infty} = 48\\)"
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Find \\(r\\) by dividing any term by the preceding term, then apply the formula.",
     "solutionSteps": [
       {
@@ -281,12 +281,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression is given by the series:\n\\(-6 - 3 - 1.5 - \\dots\\)\n\nIdentify the first term \\(a\\) and find the limiting sum \\(S_{\\infty}\\).",
     "opts": [
-      null,
-      null,
-      "\\(a = -6\\), \\(S_{\\infty} = -12\\)",
-      "\\(a = -6\\), \\(S_{\\infty} = -24\\)"
+      "\\(a = -6\\), \\(S_{\\infty} = -24\\)",
+      "\\(a = -3\\), \\(S_{\\infty} = -6\\)",
+      "\\(a = -6\\), \\(S_{\\infty} = -9\\)",
+      "\\(a = -6\\), \\(S_{\\infty} = -12\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Ensure the negative sign is retained for the first term.",
     "solutionSteps": [
       {
@@ -314,12 +314,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression is given by the series:\n\\(3 - 1 + \\frac{1}{3} - \\dots\\)\n\nIdentify the first term \\(a\\) and find the limiting sum \\(S_{\\infty}\\).",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(a = 3\\), \\(S_{\\infty} = 1\\frac{1}{2}\\)",
+      "\\(a = 3\\), \\(S_{\\infty} = 2\\frac{1}{4}\\)",
+      "\\(a = 3\\), \\(S_{\\infty} = 4\\frac{1}{2}\\)",
       "\\(a = 3\\), \\(S_{\\infty} = 2\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "The common ratio is negative because the terms alternate signs.",
     "solutionSteps": [
       {
@@ -347,10 +347,10 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression is given by the series:\n\\(45 - 15 + 5 - \\dots\\)\n\nIdentify the first term \\(a\\) and find the limiting sum \\(S_{\\infty}\\).",
     "opts": [
-      null,
+      "\\(a = 45\\), \\(S_{\\infty} = 37\\frac{1}{2}\\)",
       "\\(a = 45\\), \\(S_{\\infty} = 33\\frac{3}{4}\\)",
-      null,
-      "\\(a = 45\\), \\(S_{\\infty} = 30\\)"
+      "\\(a = 45\\), \\(S_{\\infty} = 30\\)",
+      "\\(a = 45\\), \\(S_{\\infty} = 27\\)"
     ],
     "a": 1,
     "hint": "Identify the common ratio by finding the ratio of the second term to the first term.",
@@ -380,12 +380,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression is given by the series:\n\\(-48 + 16 - 5\\frac{1}{3} + \\dots\\)\n\nIdentify the first term \\(a\\) and find the limiting sum \\(S_{\\infty}\\).",
     "opts": [
-      null,
-      null,
+      "\\(a = -48\\), \\(S_{\\infty} = -40\\)",
+      "\\(a = -48\\), \\(S_{\\infty} = -36\\)",
       "\\(a = -48\\), \\(S_{\\infty} = -32\\)",
-      null
+      "\\(a = -48\\), \\(S_{\\infty} = -44\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Note that \\(-5\\frac{1}{3} = -\\frac{16}{3}\\). Find \\(r\\) and use the formula.",
     "solutionSteps": [
       {
@@ -413,10 +413,10 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression is given by the series:\n\\(80 + 20 + 5 + \\dots\\)\n\nIdentify the common ratio \\(r\\) and find the limiting sum \\(S_{\\infty}\\).",
     "opts": [
-      null,
-      null,
+      "\\(r = \\frac{1}{4}\\), \\(S_{\\infty} = 100\\)",
+      "\\(r = \\frac{1}{4}\\), \\(S_{\\infty} = 110\\)",
       "\\(r = \\frac{1}{4}\\), \\(S_{\\infty} = 106\\frac{2}{3}\\)",
-      "\\(r = \\frac{1}{4}\\), \\(S_{\\infty} = 110\\)"
+      "\\(r = \\frac{1}{5}\\), \\(S_{\\infty} = 100\\)"
     ],
     "a": 2,
     "hint": "Identify the common ratio by dividing 20 by 80.",
@@ -446,12 +446,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression is given by the series:\n\\(80 + 26\\frac{2}{3} + 8\\frac{8}{9} + \\dots\\)\n\nIdentify the common ratio \\(r\\) and find the limiting sum \\(S_{\\infty}\\).",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(r = \\frac{1}{3}\\), \\(S_{\\infty} = 120\\)"
+      "\\(r = \\frac{1}{3}\\), \\(S_{\\infty} = 120\\)",
+      "\\(r = \\frac{1}{3}\\), \\(S_{\\infty} = 100\\)",
+      "\\(r = \\frac{1}{4}\\), \\(S_{\\infty} = 120\\)",
+      "\\(r = \\frac{1}{3}\\), \\(S_{\\infty} = 115\\)"
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Note that \\(26\\frac{2}{3} = \\frac{80}{3}\\). Find \\(r\\) using this term.",
     "solutionSteps": [
       {
@@ -479,9 +479,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geometric progression is given by the series:\n\\(80 - 16 + 3.2 - \\dots\\)\n\nIdentify the common ratio \\(r\\) and find the limiting sum \\(S_{\\infty}\\).",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(r = -\\frac{1}{4}\\), \\(S_{\\infty} = 64\\)",
+      "\\(r = -\\frac{1}{5}\\), \\(S_{\\infty} = 75\\)",
+      "\\(r = -\\frac{1}{5}\\), \\(S_{\\infty} = 60\\)",
       "\\(r = -\\frac{1}{5}\\), \\(S_{\\infty} = 66\\frac{2}{3}\\)"
     ],
     "a": 3,
@@ -512,12 +512,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(2 - 1 + \\frac{1}{2} - \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
+      "\\(S_{\\infty} = 1\\frac{2}{3}\\)",
       "\\(S_{\\infty} = 1\\frac{1}{2}\\)",
-      "\\(S_{\\infty} = 1\\frac{1}{3}\\)"
+      "\\(S_{\\infty} = 1\\frac{1}{3}\\)",
+      "No limiting sum exists"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Calculate \\(r = -1/2\\). Since \\(|r| < 1\\), a limiting sum exists.",
     "solutionSteps": [
       {
@@ -545,12 +545,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(3 + 1 + \\frac{1}{3} + \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(S_{\\infty} = 4.5\\)"
+      "\\(S_{\\infty} = 4.5\\)",
+      "\\(S_{\\infty} = 4.2\\)",
+      "No limiting sum exists",
+      "\\(S_{\\infty} = 5\\)"
     ],
-    "a": 3,
+    "a": 0,
     "hint": "The common ratio is \\(1/3\\). Since \\(1/3 < 1\\), the limiting sum exists.",
     "solutionSteps": [
       {
@@ -578,12 +578,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(3 - 2 + \\frac{4}{3} - \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(S_{\\infty} = 1\\frac{4}{5}\\)"
+      "\\(S_{\\infty} = 1\\frac{3}{5}\\)",
+      "\\(S_{\\infty} = 1\\frac{4}{5}\\)",
+      "No limiting sum exists",
+      "\\(S_{\\infty} = 2\\)"
     ],
-    "a": 3,
+    "a": 1,
     "hint": "The ratio is \\(r = -2/3\\). Compare its absolute value with 1.",
     "solutionSteps": [
       {
@@ -611,12 +611,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(2 + \\frac{6}{5} + \\frac{18}{25} + \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(S_{\\infty} = 5\\)"
+      "No limiting sum exists",
+      "\\(S_{\\infty} = 4\\)",
+      "\\(S_{\\infty} = 5\\)",
+      "\\(S_{\\infty} = 6\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "The common ratio is \\(r = 3/5\\). Check if the absolute value is less than 1.",
     "solutionSteps": [
       {
@@ -644,12 +644,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(6 - 9 + 13.5 - \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
-      "\\(S_{\\infty} = -12\\)",
-      null
+      "\\(S_{\\infty} = 2.4\\)",
+      "No limiting sum exists",
+      "\\(S_{\\infty} = 15\\)",
+      "\\(S_{\\infty} = -12\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Find the ratio \\(r\\) by dividing \\(-9\\) by \\(6\\). A limiting sum exists only if \\(|r| < 1\\).",
     "solutionSteps": [
       {
@@ -677,12 +677,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(18 + 6 + 2 + \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(S_{\\infty} = 27\\)"
+      "\\(S_{\\infty} = 27\\)",
+      "\\(S_{\\infty} = 36\\)",
+      "\\(S_{\\infty} = 24\\)",
+      "No limiting sum exists"
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Identify \\(a = 18\\) and \\(r = 1/3\\). Calculate the sum.",
     "solutionSteps": [
       {
@@ -710,12 +710,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(2000 + 200 + 20 + \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      "\\(S_{\\infty} = 2222\\frac{2}{9}\\)",
       "\\(S_{\\infty} = 2200\\)",
-      "\\(S_{\\infty} = 2222\\)"
+      "No limiting sum exists",
+      "\\(S_{\\infty} = 2222\\)",
+      "\\(S_{\\infty} = 2222\\frac{2}{9}\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "The ratio is \\(0.1\\), which is less than 1. Apply the formula.",
     "solutionSteps": [
       {
@@ -743,12 +743,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(2000 - 200 + 20 - \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
       "\\(S_{\\infty} = 1818\\frac{2}{11}\\)",
+      "No limiting sum exists",
+      "\\(S_{\\infty} = 1818\\)",
       "\\(S_{\\infty} = 1800\\)"
     ],
-    "a": 2,
+    "a": 0,
     "hint": "The ratio is \\(-0.1\\). Apply the formula with this negative ratio.",
     "solutionSteps": [
       {
@@ -776,12 +776,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(3 - 3 + 3 - \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
       "No limiting sum exists",
-      "\\(S_{\\infty} = 3\\)"
+      "\\(S_{\\infty} = 0\\)",
+      "\\(S_{\\infty} = 3\\)",
+      "\\(S_{\\infty} = 1.5\\)"
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Find the ratio \\(r = -1\\). Check if the absolute value is strictly less than 1.",
     "solutionSteps": [
       {
@@ -809,12 +809,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(200 + 180 + 162 + \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(S_{\\infty} = 1800\\)"
+      "\\(S_{\\infty} = 1800\\)",
+      "No limiting sum exists",
+      "\\(S_{\\infty} = 2200\\)",
+      "\\(S_{\\infty} = 2000\\)"
     ],
-    "a": -1,
+    "a": 3,
     "hint": "The common ratio is \\(r = 0.9\\). Verify convergence and calculate.",
     "solutionSteps": [
       {
@@ -842,10 +842,10 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(-3 + \\frac{3}{5} - \\frac{3}{25} + \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
+      "No limiting sum exists",
+      "\\(S_{\\infty} = -3\\frac{1}{3}\\)",
       "\\(S_{\\infty} = -2\\frac{1}{2}\\)",
-      "\\(S_{\\infty} = -3\\frac{1}{3}\\)"
+      "\\(S_{\\infty} = -2\\)"
     ],
     "a": 2,
     "hint": "The ratio is \\(r = -1/5\\). Apply the formula with \\(a = -3\\).",
@@ -875,12 +875,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Determine whether the geometric progression:\n\\(-\\frac{3}{4} - \\frac{3}{20} - \\frac{3}{100} - \\dots\\)\nhas a limiting sum. If it exists, find the limiting sum.",
     "opts": [
-      null,
-      null,
-      "\\(S_{\\infty} = -\\frac{3}{4}\\)",
-      "\\(S_{\\infty} = -\\frac{15}{16}\\)"
+      "\\(S_{\\infty} = -\\frac{15}{16}\\)",
+      "No limiting sum exists",
+      "\\(S_{\\infty} = -1\\frac{1}{8}\\)",
+      "\\(S_{\\infty} = -\\frac{3}{4}\\)"
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Identify \\(a = -3/4\\) and the ratio \\(r = 1/5\\). Apply the sum formula.",
     "solutionSteps": [
       {
@@ -936,12 +936,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A bouncy ball is dropped from a height of 18 metres. It bounces continually, each successive bounce height being one-third of the previous height.\n\nThrough what total distance did the ball eventually travel?",
     "opts": [
-      null,
-      null,
+      "\\(45\\text{ metres}\\)",
       "\\(36\\text{ metres}\\)",
+      "\\(30\\text{ metres}\\)",
       "\\(27\\text{ metres}\\)"
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Use the limiting sum formula with the first cycle distance \\(a = 24\\) and ratio \\(r = 1/3\\).",
     "solutionSteps": [
       {
@@ -969,7 +969,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For a geometric progression with first term \\(a = 8\\) and common ratio \\(r = 1\\):\n\nWrite down the first six terms of \\(T_n\\) and the partial sums \\(S_n\\), and describe the behaviour of \\(S_n\\) as \\(n \\to \\infty\\).",
     "opts": [],
-    "answer": "The terms of the progression are all 8, so \\(T_n = 8\\) for all \\(n\\).\\nThe sequence of partial sums is \\(8, 16, 24, 32, 40, 48\\).\\nSince \\(S_n = 8n\\), as \\(n\\) increases, \\(S_n\\) grows without bound.\\nTherefore, \\(S_n \\to \\infty\\) as \\(n \\to \\infty\\), meaning the series diverges and has no limiting sum.",
+    "answer": "The terms of the progression are all 8, so \\(T_n = 8\\) for all \\(n\\).\\nSequence of partial sums: \\(8, 16, 24, 32, 40, 48\\).\\nSince \\(S_n = 8n\\), as \\(n\\) increases, \\(S_n\\) grows without bound.\\nTherefore, \\(S_n \\to \\infty\\) as \\(n \\to \\infty\\), meaning the series diverges and has no limiting sum.",
     "hint": "For \\(r=1\\), every term is equal to the first term.",
     "solutionSteps": [
       {
@@ -997,7 +997,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For a geometric progression with first term \\(a = 12\\) and common ratio \\(r = -1\\):\n\nWrite down the first six terms of \\(T_n\\) and the partial sums \\(S_n\\), and describe the behaviour of \\(S_n\\) as \\(n \\to \\infty\\).",
     "opts": [],
-    "answer": "The terms of the progression alternate in sign: \\(12, -12, 12, -12, 12, -12\\).\\nThe sequence of partial sums is \\(12, 0, 12, 0, 12, 0\\).\\nAs \\(n \\to \\infty\\), the partial sums oscillate between 12 and 0.\\nSince they do not approach a single fixed limit, the series diverges and has no limiting sum.",
+    "answer": "The terms of the progression alternate in sign: \\(12, -12, 12, -12, 12, -12\\).\\nSequence of partial sums: \\(12, 0, 12, 0, 12, 0\\).\\nAs \\(n \\to \\infty\\), the partial sums oscillate between 12 and 0.\\nSince they do not approach a single fixed limit, the series diverges and has no limiting sum.",
     "hint": "Alternate the signs of the terms and calculate the running totals.",
     "solutionSteps": [
       {
@@ -1025,7 +1025,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For a geometric progression with first term \\(a = 5\\) and common ratio \\(r = 3\\):\n\nWrite down the first six terms of \\(T_n\\) and the partial sums \\(S_n\\), and describe the behaviour of \\(S_n\\) as \\(n \\to \\infty\\).",
     "opts": [],
-    "answer": "The terms of the progression are \\(5, 15, 45, 135, 405, 1215\\).\\nThe sequence of partial sums is \\(5, 20, 65, 200, 605, 1820\\).\\nSince \\(r = 3 > 1\\), the terms grow exponentially.\\nConsequently, \\(S_n \\to \\infty\\) as \\(n \\to \\infty\\), meaning the series diverges and has no limiting sum.",
+    "answer": "The terms of the progression are \\(5, 15, 45, 135, 405, 1215\\).\\nSequence of partial sums: \\(5, 20, 65, 200, 605, 1820\\).\\nSince \\(r = 3 > 1\\), the terms grow exponentially.\\nConsequently, \\(S_n \\to \\infty\\) as \\(n \\to \\infty\\), meaning the series diverges and has no limiting sum.",
     "hint": "Calculate the terms by multiplying by 3 at each step, then sum them.",
     "solutionSteps": [
       {
@@ -1053,7 +1053,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For a geometric progression with first term \\(a = 6\\) and common ratio \\(r = -3\\):\n\nWrite down the first six terms of \\(T_n\\) and the partial sums \\(S_n\\), and describe the behaviour of \\(S_n\\) as \\(n \\to \\infty\\).",
     "opts": [],
-    "answer": "The terms of the progression are \\(6, -18, 54, -162, 486, -1458\\).\\nThe sequence of partial sums is \\(6, -12, 42, -120, 366, -1092\\).\\nAs \\(n\\) increases, the partial sums oscillate with an ever-increasing magnitude.\\nTherefore, \\(S_n\\) does not approach any limit, and the series diverges with no limiting sum.",
+    "answer": "The terms of the progression are \\(6, -18, 54, -162, 486, -1458\\).\\nSequence of partial sums: \\(6, -12, 42, -120, 366, -1092\\).\\nAs \\(n\\) increases, the partial sums oscillate with an ever-increasing magnitude.\\nTherefore, \\(S_n\\) does not approach any limit, and the series diverges with no limiting sum.",
     "hint": "Each term is multiplied by \\(-3\\). Sum the alternating terms.",
     "solutionSteps": [
       {
@@ -1081,12 +1081,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For the geometric series:\n\\(96 + 48 + 24 + \\dots\\)\n\nFind the difference between its limiting sum and its fourth partial sum, \\(S_{\\infty} - S_4\\).",
     "opts": [
-      null,
-      null,
+      "\\(18\\)",
       "\\(6\\)",
-      null
+      "\\(8\\)",
+      "\\(12\\)"
     ],
-    "a": -1,
+    "a": 3,
     "hint": "Identify \\(a = 96\\) and \\(r = 1/2\\). Calculate \\(S_{\\infty}\\) and the sum of the first four terms.",
     "solutionSteps": [
       {
@@ -1119,12 +1119,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For the geometric series:\n\\(200 + 20 + 2 + \\dots\\)\n\nFind the difference between its limiting sum and its fourth partial sum, \\(S_{\\infty} - S_4\\).",
     "opts": [
-      null,
-      null,
+      "\\(\\frac{1}{90}\\)",
       "\\(\\frac{1}{45}\\)",
+      "\\(\\frac{1}{50}\\)",
       "\\(\\frac{2}{45}\\)"
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Write the fourth partial sum as a fraction or decimal, and calculate \\(S_{\\infty}\\) as a fraction.",
     "solutionSteps": [
       {
@@ -1157,8 +1157,8 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For the geometric series:\n\\(50 - 30 + 18 - \\dots\\)\n\nFind the difference between its limiting sum and its fourth partial sum, \\(S_{\\infty} - S_4\\).",
     "opts": [
-      null,
-      null,
+      "\\(4.15\\)",
+      "\\(4.25\\)",
       "\\(3.95\\)",
       "\\(4.05\\)"
     ],
@@ -1223,12 +1223,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A local council offered free reflective house numbers to its 20000 home owners. In the first month, 20% of the owners installed them. In each subsequent month, the number of owners installing them was exactly 20% of the number who installed them in the previous month.\n\nHow many home owners will eventually install the house numbers?",
     "opts": [
-      null,
       "\\(5000\\)",
+      "\\(4000\\)",
       "\\(4500\\)",
-      null
+      "\\(6000\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the first term \\(a = 4000\\) and ratio \\(r = 0.2\\) and use the limiting sum formula.",
     "solutionSteps": [
       {
@@ -1256,12 +1256,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A local council offered free reflective house numbers to its 20000 home owners. In the first month, 20% of the owners installed them. In each subsequent month, the number of owners installing them was exactly 20% of the number who installed them in the previous month.\n\nHow many eventual installations were not done in the first four months?",
     "opts": [
-      null,
-      null,
       "\\(16\\)",
-      "\\(8\\)"
+      "\\(32\\)",
+      "\\(8\\)",
+      "\\(4\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Find the difference between the limiting sum \\(S_{\\infty} = 5000\\) and the sum of the first four months \\(S_4\\).",
     "solutionSteps": [
       {
@@ -1289,12 +1289,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "The Wellington Widget Factory has been advertising its unbreakable widgets every month. The first advertisement brought in 1500 sales, but every successive advertisement is only bringing in 80% of the previous month's sales.\n\nHow many widget sales will the advertisements eventually bring in?",
     "opts": [
-      null,
-      null,
-      "\\(7500\\)",
-      "\\(6000\\)"
+      "\\(8000\\)",
+      "\\(9000\\)",
+      "\\(6000\\)",
+      "\\(7500\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Find the limiting sum with first term \\(a = 1500\\) and common ratio \\(r = 0.8\\).",
     "solutionSteps": [
       {
@@ -1322,12 +1322,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "The Wellington Widget Factory has been advertising its unbreakable widgets every month. The first advertisement brought in 1500 sales, but every successive advertisement is only bringing in 80% of the previous month's sales.\n\nAbout how many eventual sales were not brought in by the first 10 advertisements? (Round to the nearest whole number.)",
     "opts": [
-      null,
-      null,
       "\\(805\\)",
+      "\\(680\\)",
+      "\\(750\\)",
       "\\(920\\)"
     ],
-    "a": 2,
+    "a": 0,
     "hint": "The number of eventual sales not yet achieved after 10 advertisements is given by \\(S_{\\infty} - S_{10} = S_{\\infty} \\times r^{10}\\).",
     "solutionSteps": [
       {
@@ -1355,12 +1355,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find, in terms of \\(x\\), an expression for the limiting sum of the series:\n\\(4 + 4x + 4x^2 + \\dots\\)\nand solve the equation \\(4 + 4x + 4x^2 + \\dots = 8\\) to find \\(x\\).",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(S_{\\infty} = \\frac{4}{1-x}\\), \\(x = \\frac{1}{2}\\)"
+      "\\(S_{\\infty} = \\frac{4}{1-x}\\), \\(x = \\frac{2}{3}\\)",
+      "\\(S_{\\infty} = 4(1+x)\\), \\(x = \\frac{1}{2}\\)",
+      "\\(S_{\\infty} = \\frac{4}{1-x}\\), \\(x = \\frac{1}{2}\\)",
+      "\\(S_{\\infty} = \\frac{4}{1-x}\\), \\(x = \\frac{1}{3}\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Equate the limiting sum formula to 8 and solve for \\(x\\). Ensure \\(|x| < 1\\).",
     "solutionSteps": [
       {
@@ -1370,7 +1370,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Set the limiting sum equal to 8.",
-        "workingOut": "\\\\(\\frac{4}{1-x} = 8\\\\)",
+        "workingOut": "\\(\\frac{4}{1-x} = 8\\)",
         "graphData": null
       },
       {
@@ -1388,12 +1388,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find, in terms of \\(x\\), an expression for the limiting sum of the series:\n\\(4 + 4x + 4x^2 + \\dots\\)\nand solve the equation \\(4 + 4x + 4x^2 + \\dots = 6\\) to find \\(x\\).",
     "opts": [
-      null,
-      null,
-      "\\(S_{\\infty} = \\frac{4}{1-x}\\), \\(x = \\frac{1}{3}\\)",
-      "\\(S_{\\infty} = \\frac{4}{1-x}\\), \\(x = \\frac{1}{4}\\)"
+      "\\(S_{\\infty} = 4(1+x)\\), \\(x = \\frac{1}{3}\\)",
+      "\\(S_{\\infty} = \\frac{4}{1-x}\\), \\(x = \\frac{1}{4}\\)",
+      "\\(S_{\\infty} = \\frac{4}{1-x}\\), \\(x = \\frac{1}{2}\\)",
+      "\\(S_{\\infty} = \\frac{4}{1-x}\\), \\(x = \\frac{1}{3}\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Set the limiting sum formula equal to 6 and solve for \\(x\\).",
     "solutionSteps": [
       {
@@ -1403,7 +1403,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Set the expression equal to 6.",
-        "workingOut": "\\\\(\\frac{4}{1-x} = 6\\\\)",
+        "workingOut": "\\(\\frac{4}{1-x} = 6\\)",
         "graphData": null
       },
       {
@@ -1421,12 +1421,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find, in terms of \\(x\\), an expression for the limiting sum of the series:\n\\(6 - 6x + 6x^2 - \\dots\\)\nand solve the equation \\(6 - 6x + 6x^2 - \\dots = 9\\) to find \\(x\\).",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(S_{\\infty} = \\frac{6}{1-x}\\), \\(x = \\frac{1}{3}\\)"
+      "\\(S_{\\infty} = \\frac{6}{1-x}\\), \\(x = \\frac{1}{3}\\)",
+      "\\(S_{\\infty} = \\frac{6}{1+x}\\), \\(x = -\\frac{1}{2}\\)",
+      "\\(S_{\\infty} = \\frac{6}{1+x}\\), \\(x = \\frac{1}{3}\\)",
+      "\\(S_{\\infty} = \\frac{6}{1+x}\\), \\(x = -\\frac{1}{3}\\)"
     ],
-    "a": -1,
+    "a": 3,
     "hint": "Note that the common ratio is \\(-x\\) because the signs alternate.",
     "solutionSteps": [
       {
@@ -1436,7 +1436,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Set this sum equal to 9.",
-        "workingOut": "\\\\(\\frac{6}{1+x} = 9\\\\)",
+        "workingOut": "\\(\\frac{6}{1+x} = 9\\)",
         "graphData": null
       },
       {
@@ -1454,12 +1454,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find, in terms of \\(x\\), an expression for the limiting sum of the series:\n\\(x + \\frac{x}{4} + \\frac{x}{16} + \\dots\\)\nand solve the equation \\(x + \\frac{x}{4} + \\frac{x}{16} + \\dots = 8\\) to find \\(x\\).",
     "opts": [
-      null,
-      null,
       "\\(S_{\\infty} = \\frac{4x}{3}\\), \\(x = 6\\)",
-      "\\(S_{\\infty} = \\frac{4x}{3}\\), \\(x = 8\\)"
+      "\\(S_{\\infty} = \\frac{4x}{3}\\), \\(x = 8\\)",
+      "\\(S_{\\infty} = \\frac{5x}{4}\\), \\(x = 6.4\\)",
+      "\\(S_{\\infty} = \\frac{3x}{4}\\), \\(x = 6\\)"
     ],
-    "a": 2,
+    "a": 0,
     "hint": "The first term is \\(x\\) and the common ratio is \\(1/4\\).",
     "solutionSteps": [
       {
@@ -1487,12 +1487,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find, in terms of \\(x\\), an expression for the limiting sum of the series:\n\\(x - \\frac{x}{4} + \\frac{x}{16} - \\dots\\)\nand solve the equation \\(x - \\frac{x}{4} + \\frac{x}{16} - \\dots = 5\\) to find \\(x\\).",
     "opts": [
-      null,
-      null,
       "\\(S_{\\infty} = \\frac{4x}{5}\\), \\(x = 6.25\\)",
+      "\\(S_{\\infty} = \\frac{4x}{5}\\), \\(x = 5\\)",
+      "\\(S_{\\infty} = \\frac{5x}{4}\\), \\(x = 4\\)",
       "\\(S_{\\infty} = \\frac{4x}{3}\\), \\(x = 3.75\\)"
     ],
-    "a": 2,
+    "a": 0,
     "hint": "The common ratio is negative, \\(r = -1/4\\). Apply the formula and solve.",
     "solutionSteps": [
       {
@@ -1520,12 +1520,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find, in terms of \\(x\\), an expression for the limiting sum of the series:\n\\(x + \\frac{3x}{4} + \\frac{9x}{16} + \\dots\\)\nand solve the equation \\(x + \\frac{3x}{4} + \\frac{9x}{16} + \\dots = 8\\) to find \\(x\\).",
     "opts": [
-      null,
       "\\(S_{\\infty} = 4x\\), \\(x = 2\\)",
-      null,
-      "\\(S_{\\infty} = \\frac{4x}{3}\\), \\(x = 6\\)"
+      "\\(S_{\\infty} = \\frac{4x}{3}\\), \\(x = 6\\)",
+      "\\(S_{\\infty} = 4x\\), \\(x = 4\\)",
+      "\\(S_{\\infty} = \\frac{x}{4}\\), \\(x = 32\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the first term \\(a = x\\) and common ratio \\(r = 3/4\\).",
     "solutionSteps": [
       {
@@ -1553,12 +1553,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the condition for the geometric progression:\n\\(6 + 6x + 6x^2 + \\dots\\)\nto have a limiting sum, then find that limiting sum in terms of \\(x\\).",
     "opts": [
-      null,
-      null,
-      null,
-      "Condition: \\(|x| < 6\\), Limiting sum: \\(\\frac{6}{1-x}\\)"
+      "Condition: \\(|x| < 6\\), Limiting sum: \\(\\frac{6}{1-x}\\)",
+      "Condition: \\(|x| < 1\\), Limiting sum: \\(\\frac{6}{1+x}\\)",
+      "Condition: \\(x < 1\\), Limiting sum: \\(\\frac{6}{1-x}\\)",
+      "Condition: \\(|x| < 1\\), Limiting sum: \\(\\frac{6}{1-x}\\)"
     ],
-    "a": -1,
+    "a": 3,
     "hint": "A geometric progression has a limiting sum if and only if its common ratio satisfies \\(|r| < 1\\).",
     "solutionSteps": [
       {
@@ -1586,12 +1586,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the condition for the geometric progression:\n\\(3x + 12x^2 + 48x^3 + \\dots\\)\nto have a limiting sum, then find that limiting sum in terms of \\(x\\).",
     "opts": [
-      null,
-      "Condition: \\(|x| < \\frac{1}{4}\\), Limiting sum: \\(\\frac{3x}{1 - 4x}\\)",
-      null,
-      null
+      "Condition: \\(|x| < 1\\), Limiting sum: \\(\\frac{3x}{1 - 4x}\\)",
+      "Condition: \\(|x| < \\frac{1}{4}\\), Limiting sum: \\(\\frac{3x}{1 + 4x}\\)",
+      "Condition: \\(|x| < 4\\), Limiting sum: \\(\\frac{3x}{1 - 4x}\\)",
+      "Condition: \\(|x| < \\frac{1}{4}\\), Limiting sum: \\(\\frac{3x}{1 - 4x}\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "The common ratio is \\(4x\\). Require \\(|4x| < 1\\).",
     "solutionSteps": [
       {
@@ -1619,12 +1619,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the condition for the geometric progression:\n\\(1 + (x - 2) + (x - 2)^2 + \\dots\\)\nto have a limiting sum, then find that limiting sum in terms of \\(x\\).",
     "opts": [
-      null,
-      "Condition: \\(1 < x < 3\\), Limiting sum: \\(\\frac{1}{3-x}\\)",
       "Condition: \\(-1 < x < 1\\), Limiting sum: \\(\\frac{1}{3-x}\\)",
-      null
+      "Condition: \\(2 < x < 3\\), Limiting sum: \\(\\frac{1}{3-x}\\)",
+      "Condition: \\(1 < x < 3\\), Limiting sum: \\(\\frac{1}{3-x}\\)",
+      "Condition: \\(1 < x < 3\\), Limiting sum: \\(\\frac{1}{x-1}\\)"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "The ratio is \\(x-2\\). Solve the inequality \\(|x-2| < 1\\).",
     "solutionSteps": [
       {
@@ -1652,12 +1652,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the condition for the geometric progression:\n\\(1 + (2 + x) + (2 + x)^2 + \\dots\\)\nto have a limiting sum, then find that limiting sum in terms of \\(x\\).",
     "opts": [
-      null,
-      "Condition: \\(-3 < x < -1\\), Limiting sum: \\(\\frac{-1}{1+x}\\)",
+      "Condition: \\(-3 < x < 1\\), Limiting sum: \\(\\frac{-1}{1+x}\\)",
       "Condition: \\(-1 < x < 1\\), Limiting sum: \\(\\frac{1}{1+x}\\)",
-      null
+      "Condition: \\(-3 < x < -1\\), Limiting sum: \\(\\frac{-1}{1+x}\\)",
+      "Condition: \\(-3 < x < -1\\), Limiting sum: \\(\\frac{1}{3+x}\\)"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Solve the inequality \\(|2+x| < 1\\) and simplify the sum expression.",
     "solutionSteps": [
       {
@@ -1685,12 +1685,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum of the series, if it exists:\n\\(1 + (1.02) + (1.02)^2 + \\dots\\)",
     "opts": [
-      null,
-      null,
-      "\\(50\\)",
-      "Does not exist"
+      "\\(-50\\)",
+      "\\(100\\)",
+      "Does not exist",
+      "\\(50\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Identify the common ratio \\(r = 1.02\\) and check if \\(|r| < 1\\).",
     "solutionSteps": [
       {
@@ -1718,12 +1718,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum of the series, if it exists:\n\\(1 - 0.98 + (0.98)^2 - \\dots\\)",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(\\frac{1}{2}\\)"
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{50}{99}\\)",
+      "\\(\\frac{100}{99}\\)",
+      "Does not exist"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "The common ratio is \\(-0.98\\). Verify that its absolute value is less than 1.",
     "solutionSteps": [
       {
@@ -1751,9 +1751,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum of the series, if it exists:\n\\(1 + (1.02)^{-1} + (1.02)^{-2} + \\dots\\)",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(49\\)",
+      "Does not exist",
+      "\\(50\\)",
       "\\(51\\)"
     ],
     "a": 3,
@@ -1784,12 +1784,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum of the series, if it exists:\n\\(0.96 - 0.24 + 0.06 - \\dots\\)",
     "opts": [
-      null,
-      "\\(0.768\\)",
+      "\\(0.8\\)",
       "\\(0.72\\)",
-      null
+      "\\(0.768\\)",
+      "Does not exist"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Identify \\(a = 0.96\\) and the common ratio \\(r = -0.25\\).",
     "solutionSteps": [
       {
@@ -1817,12 +1817,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum, if it exists, of the series:\n\\(18\\sqrt{3} + 6\\sqrt{3} + 2\\sqrt{3} + \\dots\\)",
     "opts": [
-      null,
-      null,
+      "\\(36\\sqrt{3}\\)",
       "\\(27\\sqrt{3}\\)",
-      null
+      "\\(24\\sqrt{3}\\)",
+      "Does not exist"
     ],
-    "a": 2,
+    "a": 1,
     "hint": "The first term is \\(18\\sqrt{3}\\) and the common ratio is \\(1/3\\).",
     "solutionSteps": [
       {
@@ -1855,12 +1855,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum, if it exists, of the series:\n\\(32\\sqrt{5} - 16\\sqrt{5} + 8\\sqrt{5} - \\dots\\)",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(\\frac{64\\sqrt{5}}{3}\\)"
+      "\\(\\frac{64\\sqrt{5}}{3}\\)",
+      "\\(\\frac{32\\sqrt{5}}{3}\\)",
+      "\\(24\\sqrt{5}\\)",
+      "Does not exist"
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Identify the alternating ratio \\(r = -1/2\\).",
     "solutionSteps": [
       {
@@ -1893,12 +1893,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum, if it exists, of the series:\n\\(5 + \\sqrt{5} + 1 + \\dots\\)",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(\\frac{25 + 5\\sqrt{5}}{4}\\)",
+      "Does not exist",
+      "\\(\\frac{25 - 5\\sqrt{5}}{4}\\)",
       "\\(\\frac{5\\sqrt{5} - 5}{4}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "The common ratio is \\(1/\\sqrt{5}\\). Rationalize the denominator of your result.",
     "solutionSteps": [
       {
@@ -1931,9 +1931,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum, if it exists, of the series:\n\\(6 - 2\\sqrt{3} + 2 - \\dots\\)",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(9 + 3\\sqrt{3}\\)",
+      "\\(6 - 2\\sqrt{3}\\)",
+      "Does not exist",
       "\\(9 - 3\\sqrt{3}\\)"
     ],
     "a": 3,
@@ -1969,12 +1969,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum, if it exists, of the series:\n\\(7 - 2\\sqrt{7} + 4 - \\dots\\)",
     "opts": [
-      null,
-      null,
+      "\\(\\frac{49 - 14\\sqrt{7}}{3}\\)",
+      "\\(\\frac{35 - 7\\sqrt{7}}{3}\\)",
       "\\(\\frac{49 + 14\\sqrt{7}}{3}\\)",
-      "\\(\\frac{49 - 14\\sqrt{7}}{3}\\)"
+      "Does not exist"
     ],
-    "a": 3,
+    "a": 0,
     "hint": "The common ratio is \\(-2/\\sqrt{7}\\). Verify convergence.",
     "solutionSteps": [
       {
@@ -2007,12 +2007,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum, if it exists, of the series:\n\\(4 + 2\\sqrt{5} + 5 + \\dots\\)",
     "opts": [
-      null,
-      null,
-      null,
-      "Does not exist"
+      "\\(4\\sqrt{5} - 8\\)",
+      "\\(4\\sqrt{5} + 8\\)",
+      "Does not exist",
+      "\\(8\\sqrt{5} + 12\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Calculate the common ratio \\(r\\) and check if \\(|r| < 1\\).",
     "solutionSteps": [
       {
@@ -2040,12 +2040,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum, if it exists, of the series:\n\\(1 + (2 - \\sqrt{5}) + (2 - \\sqrt{5})^2 + \\dots\\)",
     "opts": [
-      null,
+      "\\(\\frac{\\sqrt{5} - 1}{4}\\)",
+      "Does not exist",
       "\\(\\frac{\\sqrt{5} + 1}{4}\\)",
-      null,
       "\\(\\frac{\\sqrt{5} + 3}{4}\\)"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "The common ratio is \\(2 - \\sqrt{5}\\). Since \\(\\sqrt{5} \\approx 2.236\\), the ratio is negative.",
     "solutionSteps": [
       {
@@ -2078,12 +2078,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the limiting sum, if it exists, of the series:\n\\(1 + (3 - \\sqrt{7}) + (3 - \\sqrt{7})^2 + \\dots\\)",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(\\frac{\\sqrt{7} + 2}{3}\\)",
+      "Does not exist",
+      "\\(\\frac{\\sqrt{7} + 1}{3}\\)",
       "\\(\\frac{\\sqrt{7} - 2}{3}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Identify \\(r = 3 - \\sqrt{7}\\). Apply the formula and rationalize.",
     "solutionSteps": [
       {
@@ -2116,12 +2116,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Expand the geometric series given below for the first few terms, write down \\(a\\) and \\(r\\), and find its limiting sum:\n\\(\\sum_{n=1}^{\\infty} \\left(\\frac{1}{4}\\right)^n\\)",
     "opts": [
-      null,
+      "\\(a = 1\\), \\(r = \\frac{1}{4}\\), \\(S_{\\infty} = \\frac{4}{3}\\)",
+      "\\(a = \\frac{1}{4}\\), \\(r = \\frac{1}{4}\\), \\(S_{\\infty} = \\frac{1}{4}\\)",
       "\\(a = \\frac{1}{4}\\), \\(r = \\frac{1}{4}\\), \\(S_{\\infty} = \\frac{1}{3}\\)",
-      null,
-      "\\(a = \\frac{1}{4}\\), \\(r = \\frac{1}{4}\\), \\(S_{\\infty} = \\frac{1}{4}\\)"
+      "\\(a = \\frac{1}{4}\\), \\(r = \\frac{1}{2}\\), \\(S_{\\infty} = \\frac{1}{2}\\)"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Expand the sigma notation by substituting \\(n=1, 2, 3\\).",
     "solutionSteps": [
       {
@@ -2149,12 +2149,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Expand the geometric series given below for the first few terms, write down \\(a\\) and \\(r\\), and find its limiting sum:\n\\(\\sum_{n=1}^{\\infty} 5 \\times \\left(\\frac{1}{3}\\right)^n\\)",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(a = \\frac{5}{3}\\), \\(r = \\frac{1}{3}\\), \\(S_{\\infty} = 2.5\\)"
+      "\\(a = \\frac{5}{3}\\), \\(r = \\frac{1}{3}\\), \\(S_{\\infty} = 2.5\\)",
+      "\\(a = \\frac{5}{3}\\), \\(r = \\frac{1}{3}\\), \\(S_{\\infty} = 5\\)",
+      "\\(a = \\frac{5}{3}\\), \\(r = \\frac{1}{3}\\), \\(S_{\\infty} = 3\\)",
+      "\\(a = 5\\), \\(r = \\frac{1}{3}\\), \\(S_{\\infty} = 7.5\\)"
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Substitute \\(n=1\\) to find the first term, then find the ratio.",
     "solutionSteps": [
       {
@@ -2182,12 +2182,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Expand the geometric series given below for the first few terms, write down \\(a\\) and \\(r\\), and find its limiting sum:\n\\(\\sum_{n=1}^{\\infty} 50 \\times \\left(-\\frac{2}{5}\\right)^n\\)",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(a = -20\\), \\(r = -\\frac{2}{5}\\), \\(S_{\\infty} = -14\\frac{2}{7}\\)",
+      "\\(a = -20\\), \\(r = \\frac{2}{5}\\), \\(S_{\\infty} = -14\\frac{2}{7}\\)",
+      "\\(a = 50\\), \\(r = -\\frac{2}{5}\\), \\(S_{\\infty} = 35\\frac{5}{7}\\)",
       "\\(a = -20\\), \\(r = -\\frac{2}{5}\\), \\(S_{\\infty} = -33\\frac{1}{3}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Note that the base is negative, so the first term will be negative and the terms will alternate.",
     "solutionSteps": [
       {
@@ -2215,12 +2215,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that \\(T_n = ar^{n-1}\\) is a geometric progression with a limiting sum.\n\nFind the common ratio \\(r\\) if the limiting sum equals 4 times the first term.",
     "opts": [
-      null,
       "\\(r = \\frac{3}{4}\\)",
-      null,
-      "\\(r = \\frac{1}{4}\\)"
+      "\\(r = \\frac{1}{4}\\)",
+      "\\(r = \\frac{2}{3}\\)",
+      "\\(r = \\frac{1}{2}\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Write down the equation setting \\(S_{\\infty} = 4a\\) and solve for \\(r\\).",
     "solutionSteps": [
       {
@@ -2248,9 +2248,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that \\(T_n = ar^{n-1}\\) is a geometric progression with a limiting sum.\n\nFind the first three terms of this progression if the second term is 8 and the limiting sum is 32.",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(24, 8, \\frac{8}{3}\\)",
+      "\\(18, 8, \\frac{32}{9}\\)",
+      "\\(12, 8, \\frac{16}{3}\\)",
       "\\(16, 8, 4\\)"
     ],
     "a": 3,
@@ -2291,12 +2291,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that \\(T_n = ar^{n-1}\\) is a geometric progression with a limiting sum.\n\nFind the common ratio \\(r\\) if the sum of all terms except the first term equals 3 times the first term.",
     "opts": [
-      null,
-      null,
+      "\\(r = \\frac{1}{3}\\)",
       "\\(r = \\frac{2}{3}\\)",
-      "\\(r = \\frac{3}{4}\\)"
+      "\\(r = \\frac{3}{4}\\)",
+      "\\(r = \\frac{1}{2}\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "The sum of all terms except the first is \\(S_{\\infty} - a\\). Set this equal to \\(3a\\) and solve.",
     "solutionSteps": [
       {
@@ -2352,12 +2352,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that \\(T_n = ar^{n-1}\\) is a geometric progression with a limiting sum, and \\(S\\) is the sum of all terms from the third term onwards:\n\\(S = \\frac{ar^2}{1-r}\\)\n\nFind the common ratio \\(r\\) if \\(S\\) is equal to the first term.",
     "opts": [
-      null,
-      "\\(r = \\frac{\\sqrt{5}-1}{2}\\)",
+      "\\(r = \\frac{1}{2}\\)",
       "\\(r = \\frac{\\sqrt{5}+1}{2}\\)",
-      "\\(r = \\frac{1}{2}\\)"
+      "\\(r = \\frac{\\sqrt{3}-1}{2}\\)",
+      "\\(r = \\frac{\\sqrt{5}-1}{2}\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Set \\(S = a\\) and solve the quadratic equation \\(r^2 + r - 1 = 0\\), selecting the root where \\(|r| < 1\\).",
     "solutionSteps": [
       {
@@ -2390,12 +2390,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that \\(T_n = ar^{n-1}\\) is a geometric progression with a limiting sum, and \\(S\\) is the sum of all terms from the third term onwards:\n\\(S = \\frac{ar^2}{1-r}\\)\n\nFind the common ratio \\(r\\) if \\(S\\) is equal to the second term.",
     "opts": [
-      null,
-      null,
+      "\\(r = \\frac{1}{4}\\)",
+      "\\(r = \\frac{1}{2}\\)",
       "\\(r = \\frac{1}{3}\\)",
-      null
+      "\\(r = \\frac{2}{3}\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Set \\(S = ar\\) and solve the resulting equation.",
     "solutionSteps": [
       {
@@ -2423,12 +2423,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that \\(T_n = ar^{n-1}\\) is a geometric progression with a limiting sum, and \\(S\\) is the sum of all terms from the third term onwards:\n\\(S = \\frac{ar^2}{1-r}\\)\n\nFind the positive common ratio \\(r\\) if \\(S\\) is equal to the sum of the first and second terms.",
     "opts": [
-      null,
-      "\\(r = \\frac{1}{\\sqrt{2}}\\)",
-      null,
-      "\\(r = \\frac{1}{3}\\)"
+      "\\(r = \\frac{1}{2}\\)",
+      "\\(r = \\frac{1}{3}\\)",
+      "\\(r = \\sqrt{2} - 1\\)",
+      "\\(r = \\frac{1}{\\sqrt{2}}\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Set \\(S = a + ar = a(1+r)\\) and solve for \\(r\\).",
     "solutionSteps": [
       {
@@ -2461,9 +2461,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the condition for the geometric series:\n\\(1 + (x^2 - 2) + (x^2 - 2)^2 + \\dots\\)\nto have a limiting sum, and find that limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
+      "Condition: \\(-\\sqrt{2} < x < \\sqrt{2}\\), Limiting sum: \\(\\frac{1}{2 - x^2}\\)",
+      "Condition: \\(-1 < x < 1\\), Limiting sum: \\(\\frac{1}{1 - x^2}\\)",
+      "Condition: \\(-\\sqrt{3} < x < \\sqrt{3}\\), Limiting sum: \\(\\frac{1}{3 - x^2}\\)",
       "Condition: \\(-\\sqrt{3} < x < -1\\) or \\(1 < x < \\sqrt{3}\\), Limiting sum: \\(\\frac{1}{3 - x^2}\\)"
     ],
     "a": 3,
@@ -2499,9 +2499,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the condition for the geometric series:\n\\(1 + \\frac{2}{2 + x^2} + \\frac{4}{(2 + x^2)^2} + \\dots\\)\nto have a limiting sum, and find that limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
+      "Condition: \\(x > 0\\), Limiting sum: \\(1 + \\frac{2}{x^2}\\)",
+      "Condition: \\(x \\neq 0\\), Limiting sum: \\(\\frac{x^2}{2+x^2}\\)",
+      "Condition: All real \\(x\\), Limiting sum: \\(\\frac{2+x^2}{x^2}\\)",
       "Condition: \\(x \\neq 0\\), Limiting sum: \\(1 + \\frac{2}{x^2}\\)"
     ],
     "a": 3,
@@ -2537,12 +2537,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that the geometric series:\n\\(v + v^2 + v^3 + \\dots\\)\nhas a limiting sum \\(w\\).\n\nWrite down an expression for \\(w\\) in terms of \\(v\\).",
     "opts": [
-      null,
+      "\\(w = v(1-v)\\)",
+      "\\(w = \\frac{v}{1+v}\\)",
       "\\(w = \\frac{v}{1-v}\\)",
-      null,
-      null
+      "\\(w = \\frac{1}{1-v}\\)"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Identify the first term \\(a = v\\) and the common ratio \\(r = v\\) and apply the sum formula.",
     "solutionSteps": [
       {
@@ -2565,12 +2565,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that the geometric series:\n\\(v + v^2 + v^3 + \\dots\\)\nhas a limiting sum \\(w\\).\n\nFind \\(v\\) in terms of \\(w\\).",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(v = \\frac{w}{1+w}\\)"
+      "\\(v = w(1+w)\\)",
+      "\\(v = \\frac{w}{1+w}\\)",
+      "\\(v = \\frac{w}{1-w}\\)",
+      "\\(v = \\frac{1+w}{w}\\)"
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Rearrange the equation \\(w = \\frac{v}{1-v}\\) to make \\(v\\) the subject.",
     "solutionSteps": [
       {
@@ -2603,12 +2603,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that the geometric series:\n\\(v + v^2 + v^3 + \\dots\\)\nhas a limiting sum \\(w\\).\n\nFind the limiting sum of the series \\(w - w^2 + w^3 - \\dots\\), assuming \\(|w| < 1\\), in terms of \\(v\\).",
     "opts": [
-      null,
-      "\\(v\\)",
       "\\(\\frac{v}{1-v}\\)",
-      "\\(\\frac{v}{1+v}\\)"
+      "\\(1-v\\)",
+      "\\(\\frac{v}{1+v}\\)",
+      "\\(v\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Find the limiting sum of the new series in terms of \\(w\\) first, then substitute the expression for \\(v\\).",
     "solutionSteps": [
       {
@@ -2669,17 +2669,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A fiber-optic network signal is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(22.50\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(18.75\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
+      "\\(a = 22.0\\)",
       "\\(a = 14.4\\)",
-      null
+      "\\(a = 18\\)",
+      "\\(a = 21.6\\)"
     ],
-    "a": -1,
+    "a": 2,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 22.50\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 18.75\\)",
         "graphData": null
       },
       {
@@ -2689,12 +2689,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(18.75 = 22.50 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{22.50}{18.75} = 1.20\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 22.50 \\times (1 - 0.2) = 18\\)",
         "graphData": null
       }
     ]
@@ -2707,17 +2707,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "An industrial cooling tower's heat dissipation rate is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(32.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(25.60\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(a = 24\\)"
+      "\\(a = 19.2\\)",
+      "\\(a = 28.0\\)",
+      "\\(a = 24\\)",
+      "\\(a = 28.8\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 32.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 25.60\\)",
         "graphData": null
       },
       {
@@ -2727,12 +2727,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(25.60 = 32.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{32.00}{25.60} = 1.25\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.25 = 0.25\\)\\n\\(a = S_{\\infty}(1-r) = 32.00 \\times (1 - 0.25) = 24\\)",
         "graphData": null
       }
     ]
@@ -2745,17 +2745,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A deep-sea sonar pulse reflection is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(45.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(37.50\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
+      "\\(a = 43.2\\)",
+      "\\(a = 36\\)",
       "\\(a = 28.8\\)",
-      "\\(a = 36\\)"
+      "\\(a = 40.0\\)"
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 45.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 37.50\\)",
         "graphData": null
       },
       {
@@ -2765,12 +2765,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(37.50 = 45.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{45.00}{37.50} = 1.20\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 45.00 \\times (1 - 0.2) = 36\\)",
         "graphData": null
       }
     ]
@@ -2783,17 +2783,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A precision robotic joint's rotational drift is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(24.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(16.00\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(a = 14.4\\)",
+      "\\(a = 12\\)",
+      "\\(a = 16.0\\)",
       "\\(a = 9.6\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 24.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 16.00\\)",
         "graphData": null
       },
       {
@@ -2803,12 +2803,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(16.00 = 24.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{24.00}{16.00} = 1.50\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.50 = 0.5\\)\\n\\(a = S_{\\infty}(1-r) = 24.00 \\times (1 - 0.5) = 12\\)",
         "graphData": null
       }
     ]
@@ -2821,17 +2821,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A quantum particle emission decay series is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(50.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(41.67\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
+      "\\(a = 48.0\\)",
+      "\\(a = 32.0\\)",
       "\\(a = 40\\)",
-      null
+      "\\(a = 44.0\\)"
     ],
     "a": 2,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 50.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 41.67\\)",
         "graphData": null
       },
       {
@@ -2841,12 +2841,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(41.67 = 50.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{50.00}{41.67} = 1.20\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 50.00 \\times (1 - 0.2) = 40\\)",
         "graphData": null
       }
     ]
@@ -2859,17 +2859,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A high-performance drone motor efficiency coefficient is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(25.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(17.86\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
-      null,
-      null
+      "\\(a = 12.0\\)",
+      "\\(a = 19.0\\)",
+      "\\(a = 18.0\\)",
+      "\\(a = 15\\)"
     ],
-    "a": -1,
+    "a": 3,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 25.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 17.86\\)",
         "graphData": null
       },
       {
@@ -2879,12 +2879,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(17.86 = 25.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{25.00}{17.86} = 1.40\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.40 = 0.4\\)\\n\\(a = S_{\\infty}(1-r) = 25.00 \\times (1 - 0.4) = 15\\)",
         "graphData": null
       }
     ]
@@ -2897,17 +2897,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "An automated satellite telemetry transmitter rate is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(40.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(32.00\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
+      "\\(a = 36.0\\)",
+      "\\(a = 24.0\\)",
       "\\(a = 30\\)",
-      "\\(a = 24.0\\)"
+      "\\(a = 34.0\\)"
     ],
     "a": 2,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 40.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 32.00\\)",
         "graphData": null
       },
       {
@@ -2917,12 +2917,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(32.00 = 40.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{40.00}{32.00} = 1.25\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.25 = 0.25\\)\\n\\(a = S_{\\infty}(1-r) = 40.00 \\times (1 - 0.25) = 30\\)",
         "graphData": null
       }
     ]
@@ -2935,17 +2935,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A solar panel array degradation model is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(55.56\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(50.51\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
       "\\(a = 40.0\\)",
-      null
+      "\\(a = 50\\)",
+      "\\(a = 54.0\\)",
+      "\\(a = 60.0\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 55.56\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 50.51\\)",
         "graphData": null
       },
       {
@@ -2955,12 +2955,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(50.51 = 55.56 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{55.56}{50.51} = 1.10\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.10 = 0.1\\)\\n\\(a = S_{\\infty}(1-r) = 55.56 \\times (1 - 0.1) = 50\\)",
         "graphData": null
       }
     ]
@@ -2973,9 +2973,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A biotechnology bioreactor growth rate is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(60.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(50.00\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(a = 38.4\\)",
+      "\\(a = 57.6\\)",
+      "\\(a = 52.0\\)",
       "\\(a = 48\\)"
     ],
     "a": 3,
@@ -2983,7 +2983,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 60.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 50.00\\)",
         "graphData": null
       },
       {
@@ -2993,12 +2993,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(50.00 = 60.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{60.00}{50.00} = 1.20\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.2) = 48\\)",
         "graphData": null
       }
     ]
@@ -3011,17 +3011,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A seismic sensor vibration damping factor is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(50.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(31.25\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
+      "\\(a = 24.0\\)",
+      "\\(a = 16.0\\)",
       "\\(a = 20\\)",
-      null,
-      "\\(a = 16.0\\)"
+      "\\(a = 24.0\\)"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 50.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 31.25\\)",
         "graphData": null
       },
       {
@@ -3031,12 +3031,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(31.25 = 50.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{50.00}{31.25} = 1.60\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.60 = 0.6\\)\\n\\(a = S_{\\infty}(1-r) = 50.00 \\times (1 - 0.6) = 20\\)",
         "graphData": null
       }
     ]
@@ -3049,17 +3049,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A hydraulic pump flow pressure decay is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(75.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(62.50\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
+      "\\(a = 72.0\\)",
       "\\(a = 60\\)",
-      null,
-      null
+      "\\(a = 48.0\\)",
+      "\\(a = 64.0\\)"
     ],
     "a": 1,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 75.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 62.50\\)",
         "graphData": null
       },
       {
@@ -3069,12 +3069,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(62.50 = 75.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{75.00}{62.50} = 1.20\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 75.00 \\times (1 - 0.2) = 60\\)",
         "graphData": null
       }
     ]
@@ -3087,17 +3087,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "An electric car battery self-discharge sequence is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(40.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(25.00\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
+      "\\(a = 20.0\\)",
       "\\(a = 16\\)",
-      null
+      "\\(a = 12.8\\)",
+      "\\(a = 19.2\\)"
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 40.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 25.00\\)",
         "graphData": null
       },
       {
@@ -3107,12 +3107,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(25.00 = 40.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{40.00}{25.00} = 1.60\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.60 = 0.6\\)\\n\\(a = S_{\\infty}(1-r) = 40.00 \\times (1 - 0.6) = 16\\)",
         "graphData": null
       }
     ]
@@ -3125,17 +3125,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A wind turbine blade aerodynamic resistance factor is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(60.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(48.00\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
-      "\\(a = 36.0\\)",
-      "\\(a = 54.0\\)"
+      "\\(a = 45\\)",
+      "\\(a = 49.0\\)",
+      "\\(a = 54.0\\)",
+      "\\(a = 36.0\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 60.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 48.00\\)",
         "graphData": null
       },
       {
@@ -3145,12 +3145,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(48.00 = 60.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{60.00}{48.00} = 1.25\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.25 = 0.25\\)\\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.25) = 45\\)",
         "graphData": null
       }
     ]
@@ -3163,17 +3163,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A laser pulse energy attenuation cascade is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(77.78\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(70.71\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(a = 74.0\\)",
+      "\\(a = 70\\)",
+      "\\(a = 84.0\\)",
       "\\(a = 56.0\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 77.78\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 70.71\\)",
         "graphData": null
       },
       {
@@ -3183,12 +3183,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(70.71 = 77.78 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{77.78}{70.71} = 1.10\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.10 = 0.1\\)\\n\\(a = S_{\\infty}(1-r) = 77.78 \\times (1 - 0.1) = 70\\)",
         "graphData": null
       }
     ]
@@ -3201,17 +3201,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A cryptographic token burn rate progression is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(40.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(30.77\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(a = 28\\)"
+      "\\(a = 33.6\\)",
+      "\\(a = 28\\)",
+      "\\(a = 22.4\\)",
+      "\\(a = 32.0\\)"
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 40.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 30.77\\)",
         "graphData": null
       },
       {
@@ -3221,12 +3221,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(30.77 = 40.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{40.00}{30.77} = 1.30\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.30 = 0.3\\)\\n\\(a = S_{\\infty}(1-r) = 40.00 \\times (1 - 0.3) = 28\\)",
         "graphData": null
       }
     ]
@@ -3239,17 +3239,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A precision balance beam gravitational oscillation is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(64.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(42.67\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
+      "\\(a = 25.6\\)",
+      "\\(a = 36.0\\)",
       "\\(a = 32\\)",
-      null
+      "\\(a = 38.4\\)"
     ],
     "a": 2,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 64.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 42.67\\)",
         "graphData": null
       },
       {
@@ -3259,12 +3259,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(42.67 = 64.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{64.00}{42.67} = 1.50\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.50 = 0.5\\)\\n\\(a = S_{\\infty}(1-r) = 64.00 \\times (1 - 0.5) = 32\\)",
         "graphData": null
       }
     ]
@@ -3277,17 +3277,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "An aircraft stabilizer hydraulic pressure drop is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(60.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(54.55\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
+      "\\(a = 64.8\\)",
+      "\\(a = 58.0\\)",
       "\\(a = 54\\)",
-      null,
-      "\\(a = 64.8\\)"
+      "\\(a = 43.2\\)"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 60.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 54.55\\)",
         "graphData": null
       },
       {
@@ -3297,12 +3297,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(54.55 = 60.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{60.00}{54.55} = 1.10\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.10 = 0.1\\)\\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.1) = 54\\)",
         "graphData": null
       }
     ]
@@ -3315,8 +3315,8 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A pharmaceutical capsule release rate profile is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(50.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(33.33\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
+      "\\(a = 30.0\\)",
+      "\\(a = 29.0\\)",
       "\\(a = 25\\)",
       "\\(a = 20.0\\)"
     ],
@@ -3325,7 +3325,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 50.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 33.33\\)",
         "graphData": null
       },
       {
@@ -3335,12 +3335,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(33.33 = 50.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{50.00}{33.33} = 1.50\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.50 = 0.5\\)\\n\\(a = S_{\\infty}(1-r) = 50.00 \\times (1 - 0.5) = 25\\)",
         "graphData": null
       }
     ]
@@ -3353,17 +3353,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A computer CPU cache miss decay model is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(100.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(90.91\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(a = 90\\)"
+      "\\(a = 94.0\\)",
+      "\\(a = 90\\)",
+      "\\(a = 72.0\\)",
+      "\\(a = 108.0\\)"
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 100.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 90.91\\)",
         "graphData": null
       },
       {
@@ -3373,12 +3373,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(90.91 = 100.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{100.00}{90.91} = 1.10\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.10 = 0.1\\)\\n\\(a = S_{\\infty}(1-r) = 100.00 \\times (1 - 0.1) = 90\\)",
         "graphData": null
       }
     ]
@@ -3391,17 +3391,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A chemical catalyst reaction rate cascade is modeled as a convergent infinite geometric progression. The limiting sum of the progression is \\(60.00\\) and the sum of all its odd-numbered terms (i.e., \\(T_1 + T_3 + T_5 + \\dots\\)) is \\(46.15\\).\n\nFind the first term \\(a\\) of the geometric progression.",
     "opts": [
-      null,
-      "\\(a = 42\\)",
-      null,
-      "\\(a = 33.6\\)"
+      "\\(a = 33.6\\)",
+      "\\(a = 46.0\\)",
+      "\\(a = 50.4\\)",
+      "\\(a = 42\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Use the formulas \\(S_{\\infty} = \\frac{a}{1-r}\\) and \\(S_{\\text{odd}} = \\frac{a}{1-r^2}\\) to set up a system of equations.",
     "solutionSteps": [
       {
         "explanation": "Write down the equations for the limiting sum of all terms and the sum of the odd terms.",
-        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = ${sInf.toFixed(2)}\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = ${sOdd.toFixed(2)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{a}{1-r} = 60.00\\), \\(S_{\\text{odd}} = \\frac{a}{1-r^2} = 46.15\\)",
         "graphData": null
       },
       {
@@ -3411,12 +3411,12 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the value of \\(S_{\\infty}\\) into the equation to find \\(r\\).",
-        "workingOut": "\\(${sOdd.toFixed(2)} = ${sInf.toFixed(2)} \\times \\frac{1}{1+r} \\implies 1+r = \\frac{${sInf.toFixed(2)}}{${sOdd.toFixed(2)}} = ${(sInf/sOdd).toFixed(2)}\\)",
+        "workingOut": "\\(46.15 = 60.00 \\times \\frac{1}{1+r} \\implies 1+r = \\frac{60.00}{46.15} = 1.30\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = ${(sInf/sOdd - 1).toFixed(2)} = ${r}\\)\n\\(a = S_{\\infty}(1-r) = ${sInf.toFixed(2)} \\times (1 - ${r}) = ${a}\\)",
+        "workingOut": "\\(r = 0.30 = 0.3\\)\\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.3) = 42\\)",
         "graphData": null
       }
     ]
@@ -3427,19 +3427,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of nested squares. The first square has a area of \\(256\\) cm\\(^2\\), and each subsequent square has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the areas for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of nested squares. The first square has a area of \\(256\\) \\(\\text{cm}^2\\), and each subsequent square has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the areas for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(460.8\\text{ }cm\\(^2\\)\\)",
-      null
+      "\\(563.2\\text{ }\\text{cm}^2\\)",
+      "\\(460.8\\text{ }\\text{cm}^2\\)",
+      "\\(768.0\\text{ }\\text{cm}^2\\)",
+      "\\(512.0\\text{ }\\text{cm}^2\\)"
     ],
-    "a": -1,
+    "a": 3,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 256\\), \\(r = 0.5\\)",
         "graphData": null
       },
       {
@@ -3449,7 +3449,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{256}{1 - 0.5} = \\frac{256}{0.50} = 512.0\\)",
         "graphData": null
       }
     ]
@@ -3460,19 +3460,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of nested equilateral triangles. The first triangle has a perimeter of \\(108\\) cm, and each subsequent triangle has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the perimeters for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of nested equilateral triangles. The first triangle has a perimeter of \\(108\\) \\(\\text{cm}\\), and each subsequent triangle has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the perimeters for all infinite elements in this sequence.",
     "opts": [
-      null,
-      "\\(216.0\\text{ }cm\\)",
-      null,
-      "\\(194.4\\text{ }cm\\)"
+      "\\(324.0\\text{ }\\text{cm}\\)",
+      "\\(216.0\\text{ }\\text{cm}\\)",
+      "\\(194.4\\text{ }\\text{cm}\\)",
+      "\\(237.6\\text{ }\\text{cm}\\)"
     ],
     "a": 1,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 108\\), \\(r = 0.5\\)",
         "graphData": null
       },
       {
@@ -3482,7 +3482,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{108}{1 - 0.5} = \\frac{108}{0.50} = 216.0\\)",
         "graphData": null
       }
     ]
@@ -3493,19 +3493,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of an oscillating pendulum. The first swing has a total distance of \\(80\\) cm, and each subsequent swing has its value reduced by a constant factor of \\(0.75\\).\n\nFind the total sum of the total distances for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of an oscillating pendulum. The first swing has a total distance of \\(80\\) \\(\\text{cm}\\), and each subsequent swing has its value reduced by a constant factor of \\(0.75\\).\n\nFind the total sum of the total distances for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(352.0\\text{ }cm\\)"
+      "\\(320.0\\text{ }\\text{cm}\\)",
+      "\\(288.0\\text{ }\\text{cm}\\)",
+      "\\(400.0\\text{ }\\text{cm}\\)",
+      "\\(352.0\\text{ }\\text{cm}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 80\\), \\(r = 0.75\\)",
         "graphData": null
       },
       {
@@ -3515,7 +3515,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{80}{1 - 0.75} = \\frac{80}{0.25} = 320.0\\)",
         "graphData": null
       }
     ]
@@ -3526,19 +3526,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a robotic arm overshoot. The first arc has a total displacement of \\(32\\) mm, and each subsequent arc has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the total displacements for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a robotic arm overshoot. The first arc has a total displacement of \\(32\\) \\(\\text{cm}\\), and each subsequent arc has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the total displacements for all infinite elements in this sequence.",
     "opts": [
-      null,
-      "\\(64.0\\text{ }mm\\)",
-      null,
-      null
+      "\\(96.0\\text{ }\\text{cm}\\)",
+      "\\(57.6\\text{ }\\text{cm}\\)",
+      "\\(70.4\\text{ }\\text{cm}\\)",
+      "\\(64.0\\text{ }\\text{cm}\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 32\\), \\(r = 0.5\\)",
         "graphData": null
       },
       {
@@ -3548,7 +3548,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{32}{1 - 0.5} = \\frac{32}{0.50} = 64.0\\)",
         "graphData": null
       }
     ]
@@ -3559,19 +3559,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a spiral of right-angled triangles. The first segment has a total length of \\(120\\) units, and each subsequent segment has its value reduced by a constant factor of \\(0.8\\).\n\nFind the total sum of the total lengths for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a spiral of right-angled triangles. The first segment has a total length of \\(120\\) \\(\\text{cm}\\), and each subsequent segment has its value reduced by a constant factor of \\(0.8\\).\n\nFind the total sum of the total lengths for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(540.0\\text{ }units\\)",
-      "\\(600.0\\text{ }units\\)"
+      "\\(720.0\\text{ }\\text{cm}\\)",
+      "\\(660.0\\text{ }\\text{cm}\\)",
+      "\\(540.0\\text{ }\\text{cm}\\)",
+      "\\(600.0\\text{ }\\text{cm}\\)"
     ],
     "a": 3,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 120\\), \\(r = 0.8\\)",
         "graphData": null
       },
       {
@@ -3581,7 +3581,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{120}{1 - 0.8} = \\frac{120}{0.20} = 600.0\\)",
         "graphData": null
       }
     ]
@@ -3592,19 +3592,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of concentric circles with geometric radii. The first circle has a sum of circumferences of \\(64\\) \\pi\\text{ cm}, and each subsequent circle has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of circumferencess for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of concentric circles with geometric radii. The first circle has a sum of circumferences of \\(64\\) \\(\\text{cm}\\), and each subsequent circle has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of circumferencess for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      null,
-      null
+      "\\(140.8\\text{ }\\text{cm}\\)",
+      "\\(192.0\\text{ }\\text{cm}\\)",
+      "\\(128.0\\text{ }\\text{cm}\\)",
+      "\\(115.2\\text{ }\\text{cm}\\)"
     ],
-    "a": -1,
+    "a": 2,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 64\\), \\(r = 0.5\\)",
         "graphData": null
       },
       {
@@ -3614,7 +3614,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{64}{1 - 0.5} = \\frac{64}{0.50} = 128.0\\)",
         "graphData": null
       }
     ]
@@ -3625,19 +3625,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of nested regular hexagons. The first hexagon has a sum of perimeters of \\(180\\) cm, and each subsequent hexagon has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of perimeterss for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of nested regular hexagons. The first hexagon has a sum of perimeters of \\(180\\) \\(\\text{cm}\\), and each subsequent hexagon has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of perimeterss for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(360.0\\text{ }cm\\)",
-      "\\(324.0\\text{ }cm\\)"
+      "\\(396.0\\text{ }\\text{cm}\\)",
+      "\\(324.0\\text{ }\\text{cm}\\)",
+      "\\(360.0\\text{ }\\text{cm}\\)",
+      "\\(540.0\\text{ }\\text{cm}\\)"
     ],
     "a": 2,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 180\\), \\(r = 0.5\\)",
         "graphData": null
       },
       {
@@ -3647,7 +3647,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{180}{1 - 0.5} = \\frac{180}{0.50} = 360.0\\)",
         "graphData": null
       }
     ]
@@ -3658,19 +3658,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a particle rebounding on a track. The first rebound has a total travel path of \\(150\\) m, and each subsequent rebound has its value reduced by a constant factor of \\(0.6\\).\n\nFind the total sum of the total travel paths for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a particle rebounding on a track. The first rebound has a total travel path of \\(150\\) \\(\\text{cm}\\), and each subsequent rebound has its value reduced by a constant factor of \\(0.6\\).\n\nFind the total sum of the total travel paths for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(337.5\\text{ }m\\)",
-      "\\(375.0\\text{ }m\\)"
+      "\\(525.0\\text{ }\\text{cm}\\)",
+      "\\(375.0\\text{ }\\text{cm}\\)",
+      "\\(337.5\\text{ }\\text{cm}\\)",
+      "\\(412.5\\text{ }\\text{cm}\\)"
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 150\\), \\(r = 0.6\\)",
         "graphData": null
       },
       {
@@ -3680,7 +3680,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{150}{1 - 0.6} = \\frac{150}{0.40} = 375.0\\)",
         "graphData": null
       }
     ]
@@ -3691,19 +3691,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a mathematical fractal tree. The first level has a sum of branch lengths of \\(100\\) cm, and each subsequent level has its value reduced by a constant factor of \\(0.6\\).\n\nFind the total sum of the sum of branch lengthss for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a mathematical fractal tree. The first level has a sum of branch lengths of \\(100\\) \\(\\text{cm}\\), and each subsequent level has its value reduced by a constant factor of \\(0.6\\).\n\nFind the total sum of the sum of branch lengthss for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(250.0\\text{ }cm\\)",
-      "\\(225.0\\text{ }cm\\)"
+      "\\(275.0\\text{ }\\text{cm}\\)",
+      "\\(350.0\\text{ }\\text{cm}\\)",
+      "\\(250.0\\text{ }\\text{cm}\\)",
+      "\\(225.0\\text{ }\\text{cm}\\)"
     ],
     "a": 2,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 100\\), \\(r = 0.6\\)",
         "graphData": null
       },
       {
@@ -3713,7 +3713,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{100}{1 - 0.6} = \\frac{100}{0.40} = 250.0\\)",
         "graphData": null
       }
     ]
@@ -3724,19 +3724,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of nested pentagons drawn inside each other. The first pentagon has a total area of \\(400\\) cm\\(^2\\), and each subsequent pentagon has its value reduced by a constant factor of \\(0.4\\).\n\nFind the total sum of the total areas for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of nested pentagons drawn inside each other. The first pentagon has a total area of \\(400\\) \\(\\text{cm}^2\\), and each subsequent pentagon has its value reduced by a constant factor of \\(0.4\\).\n\nFind the total sum of the total areas for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(600.0\\text{ }cm\\(^2\\)\\)",
-      "\\(666.7\\text{ }cm\\(^2\\)\\)"
+      "\\(666.7\\text{ }\\text{cm}^2\\)",
+      "\\(600.0\\text{ }\\text{cm}^2\\)",
+      "\\(733.3\\text{ }\\text{cm}^2\\)",
+      "\\(1066.7\\text{ }\\text{cm}^2\\)"
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 400\\), \\(r = 0.4\\)",
         "graphData": null
       },
       {
@@ -3746,7 +3746,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{400}{1 - 0.4} = \\frac{400}{0.60} = 666.7\\)",
         "graphData": null
       }
     ]
@@ -3757,19 +3757,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a piston bouncing due to backpressure. The first stroke has a total travel of \\(45\\) cm, and each subsequent stroke has its value reduced by a constant factor of \\(0.6\\).\n\nFind the total sum of the total travels for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a piston bouncing due to backpressure. The first stroke has a total travel of \\(45\\) \\(\\text{cm}\\), and each subsequent stroke has its value reduced by a constant factor of \\(0.6\\).\n\nFind the total sum of the total travels for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(101.3\\text{ }cm\\)"
+      "\\(112.5\\text{ }\\text{cm}\\)",
+      "\\(157.5\\text{ }\\text{cm}\\)",
+      "\\(123.8\\text{ }\\text{cm}\\)",
+      "\\(101.3\\text{ }\\text{cm}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 45\\), \\(r = 0.6\\)",
         "graphData": null
       },
       {
@@ -3779,7 +3779,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{45}{1 - 0.6} = \\frac{45}{0.40} = 112.5\\)",
         "graphData": null
       }
     ]
@@ -3790,19 +3790,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of nested right isosceles triangles. The first hypotenuse has a sum of hypotenuse lengths of \\(90\\) cm, and each subsequent hypotenuse has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of hypotenuse lengthss for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of nested right isosceles triangles. The first hypotenuse has a sum of hypotenuse lengths of \\(90\\) \\(\\text{cm}\\), and each subsequent hypotenuse has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of hypotenuse lengthss for all infinite elements in this sequence.",
     "opts": [
-      null,
-      "\\(180.0\\text{ }cm\\)",
-      null,
-      "\\(198.0\\text{ }cm\\)"
+      "\\(270.0\\text{ }\\text{cm}\\)",
+      "\\(198.0\\text{ }\\text{cm}\\)",
+      "\\(162.0\\text{ }\\text{cm}\\)",
+      "\\(180.0\\text{ }\\text{cm}\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 90\\), \\(r = 0.5\\)",
         "graphData": null
       },
       {
@@ -3812,7 +3812,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{90}{1 - 0.5} = \\frac{90}{0.50} = 180.0\\)",
         "graphData": null
       }
     ]
@@ -3823,19 +3823,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a drone adjusting its hover position. The first shift has a total corrections of \\(50\\) cm, and each subsequent shift has its value reduced by a constant factor of \\(0.4\\).\n\nFind the total sum of the total correctionss for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a drone adjusting its hover position. The first shift has a total corrections of \\(50\\) \\(\\text{cm}\\), and each subsequent shift has its value reduced by a constant factor of \\(0.4\\).\n\nFind the total sum of the total correctionss for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(83.3\\text{ }cm\\)"
+      "\\(91.7\\text{ }\\text{cm}\\)",
+      "\\(75.0\\text{ }\\text{cm}\\)",
+      "\\(133.3\\text{ }\\text{cm}\\)",
+      "\\(83.3\\text{ }\\text{cm}\\)"
     ],
     "a": 3,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 50\\), \\(r = 0.4\\)",
         "graphData": null
       },
       {
@@ -3845,7 +3845,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{50}{1 - 0.4} = \\frac{50}{0.60} = 83.3\\)",
         "graphData": null
       }
     ]
@@ -3856,19 +3856,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a light beam reflecting between mirror plates. The first bounce has a total path length of \\(300\\) mm, and each subsequent bounce has its value reduced by a constant factor of \\(0.8\\).\n\nFind the total sum of the total path lengths for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a light beam reflecting between mirror plates. The first bounce has a total path length of \\(300\\) \\(\\text{cm}\\), and each subsequent bounce has its value reduced by a constant factor of \\(0.8\\).\n\nFind the total sum of the total path lengths for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(1500.0\\text{ }mm\\)",
-      "\\(1350.0\\text{ }mm\\)"
+      "\\(1350.0\\text{ }\\text{cm}\\)",
+      "\\(1650.0\\text{ }\\text{cm}\\)",
+      "\\(1500.0\\text{ }\\text{cm}\\)",
+      "\\(1800.0\\text{ }\\text{cm}\\)"
     ],
     "a": 2,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 300\\), \\(r = 0.8\\)",
         "graphData": null
       },
       {
@@ -3878,7 +3878,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{300}{1 - 0.8} = \\frac{300}{0.20} = 1500.0\\)",
         "graphData": null
       }
     ]
@@ -3889,19 +3889,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of concentric spheres inscribed in cones. The first sphere has a sum of surface areas of \\(160\\) \\pi\\text{ cm}^2, and each subsequent sphere has its value reduced by a constant factor of \\(0.25\\).\n\nFind the total sum of the sum of surface areass for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of concentric spheres inscribed in cones. The first sphere has a sum of surface areas of \\(160\\) \\(\\text{cm}\\), and each subsequent sphere has its value reduced by a constant factor of \\(0.25\\).\n\nFind the total sum of the sum of surface areass for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(213.3\\text{ }\\pi\\text{ cm}^2\\)",
-      "\\(192.0\\text{ }\\pi\\text{ cm}^2\\)"
+      "\\(373.3\\text{ }\\text{cm}\\)",
+      "\\(234.7\\text{ }\\text{cm}\\)",
+      "\\(192.0\\text{ }\\text{cm}\\)",
+      "\\(213.3\\text{ }\\text{cm}\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 160\\), \\(r = 0.25\\)",
         "graphData": null
       },
       {
@@ -3911,7 +3911,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{160}{1 - 0.25} = \\frac{160}{0.75} = 213.3\\)",
         "graphData": null
       }
     ]
@@ -3922,19 +3922,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of nested regular octagons. The first octagon has a sum of areas of \\(240\\) cm\\(^2\\), and each subsequent octagon has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of areass for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of nested regular octagons. The first octagon has a sum of areas of \\(240\\) \\(\\text{cm}^2\\), and each subsequent octagon has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of areass for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(480.0\\text{ }cm\\(^2\\)\\)",
-      "\\(528.0\\text{ }cm\\(^2\\)\\)"
+      "\\(528.0\\text{ }\\text{cm}^2\\)",
+      "\\(720.0\\text{ }\\text{cm}^2\\)",
+      "\\(432.0\\text{ }\\text{cm}^2\\)",
+      "\\(480.0\\text{ }\\text{cm}^2\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 240\\), \\(r = 0.5\\)",
         "graphData": null
       },
       {
@@ -3944,7 +3944,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{240}{1 - 0.5} = \\frac{240}{0.50} = 480.0\\)",
         "graphData": null
       }
     ]
@@ -3955,19 +3955,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a shock absorber testing rig. The first rebound has a total displacement of \\(140\\) mm, and each subsequent rebound has its value reduced by a constant factor of \\(0.7\\).\n\nFind the total sum of the total displacements for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a shock absorber testing rig. The first rebound has a total displacement of \\(140\\) \\(\\text{cm}\\), and each subsequent rebound has its value reduced by a constant factor of \\(0.7\\).\n\nFind the total sum of the total displacements for all infinite elements in this sequence.",
     "opts": [
-      null,
-      "\\(466.7\\text{ }mm\\)",
-      "\\(420.0\\text{ }mm\\)",
-      null
+      "\\(420.0\\text{ }\\text{cm}\\)",
+      "\\(466.7\\text{ }\\text{cm}\\)",
+      "\\(513.3\\text{ }\\text{cm}\\)",
+      "\\(606.7\\text{ }\\text{cm}\\)"
     ],
     "a": 1,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 140\\), \\(r = 0.7\\)",
         "graphData": null
       },
       {
@@ -3977,7 +3977,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{140}{1 - 0.7} = \\frac{140}{0.30} = 466.7\\)",
         "graphData": null
       }
     ]
@@ -3988,19 +3988,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a sound wave reflecting off parallel acoustic baffles. The first reflection has a total travel distance of \\(85\\) m, and each subsequent reflection has its value reduced by a constant factor of \\(0.8\\).\n\nFind the total sum of the total travel distances for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a sound wave reflecting off parallel acoustic baffles. The first reflection has a total travel distance of \\(85\\) \\(\\text{cm}\\), and each subsequent reflection has its value reduced by a constant factor of \\(0.8\\).\n\nFind the total sum of the total travel distances for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      null,
-      null
+      "\\(510.0\\text{ }\\text{cm}\\)",
+      "\\(382.5\\text{ }\\text{cm}\\)",
+      "\\(425.0\\text{ }\\text{cm}\\)",
+      "\\(467.5\\text{ }\\text{cm}\\)"
     ],
-    "a": -1,
+    "a": 2,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 85\\), \\(r = 0.8\\)",
         "graphData": null
       },
       {
@@ -4010,7 +4010,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{85}{1 - 0.8} = \\frac{85}{0.20} = 425.0\\)",
         "graphData": null
       }
     ]
@@ -4021,19 +4021,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of nested golden rectangles. The first rectangle has a sum of perimeters of \\(220\\) mm, and each subsequent rectangle has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of perimeterss for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of nested golden rectangles. The first rectangle has a sum of perimeters of \\(220\\) \\(\\text{cm}\\), and each subsequent rectangle has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the sum of perimeterss for all infinite elements in this sequence.",
     "opts": [
-      null,
-      "\\(440.0\\text{ }mm\\)",
-      "\\(396.0\\text{ }mm\\)",
-      "\\(484.0\\text{ }mm\\)"
+      "\\(396.0\\text{ }\\text{cm}\\)",
+      "\\(440.0\\text{ }\\text{cm}\\)",
+      "\\(660.0\\text{ }\\text{cm}\\)",
+      "\\(484.0\\text{ }\\text{cm}\\)"
     ],
     "a": 1,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 220\\), \\(r = 0.5\\)",
         "graphData": null
       },
       {
@@ -4043,7 +4043,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{220}{1 - 0.5} = \\frac{220}{0.50} = 440.0\\)",
         "graphData": null
       }
     ]
@@ -4054,19 +4054,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A geometric model describes the geometry of a precision gyroscope settling. The first precession has a total angle rotated of \\(720\\) degrees, and each subsequent precession has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the total angle rotateds for all infinite elements in this sequence.",
+    "question": "A geometric model describes the geometry of a precision gyroscope settling. The first precession has a total angle rotated of \\(720\\) \\(\\text{cm}\\), and each subsequent precession has its value reduced by a constant factor of \\(0.5\\).\n\nFind the total sum of the total angle rotateds for all infinite elements in this sequence.",
     "opts": [
-      null,
-      null,
-      "\\(1296.0\\text{ }degrees\\)",
-      "\\(1440.0\\text{ }degrees\\)"
+      "\\(2160.0\\text{ }\\text{cm}\\)",
+      "\\(1584.0\\text{ }\\text{cm}\\)",
+      "\\(1296.0\\text{ }\\text{cm}\\)",
+      "\\(1440.0\\text{ }\\text{cm}\\)"
     ],
     "a": 3,
     "hint": "Identify the first term and common ratio of the geometric series, then apply the limiting sum formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\) of the geometric progression.",
-        "workingOut": "\\(a = ${a}\\), \\(r = ${r}\\)",
+        "workingOut": "\\(a = 720\\), \\(r = 0.5\\)",
         "graphData": null
       },
       {
@@ -4076,7 +4076,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values and simplify to calculate the final sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{${a}}{1 - ${r}} = \\frac{${a}}{${(1-r).toFixed(2)}} = ${total.toFixed(1)}\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{720}{1 - 0.5} = \\frac{720}{0.50} = 1440.0\\)",
         "graphData": null
       }
     ]
@@ -4089,22 +4089,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(5 + 5(\\cos(x)) + 5(\\cos(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      "\\(x \\neq n\\pi\\)",
-      null,
-      "\\(x \\in \\mathbb{R}\\)"
+      "\\(x > 0\\)",
+      "\\(-1 < x < 1\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x \\neq n\\pi\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 5\\), \\(r = \\cos(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\cos(x)| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\cos(x)| < 1\\)",
         "graphData": null
       },
       {
@@ -4122,22 +4122,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(3 + 3(\\sin(x)) + 3(\\sin(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
       "\\(x \\neq \\frac{\\pi}{2} + n\\pi\\)",
-      null,
-      "\\(-1 < x < 1\\)"
+      "\\(-1 < x < 1\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x > 0\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 3\\), \\(r = \\sin(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\sin(x)| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\sin(x)| < 1\\)",
         "graphData": null
       },
       {
@@ -4155,22 +4155,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(e^{-kx}) + 1(e^{-kx})^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(x \\in \\mathbb{R}\\)"
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x > 0\\)",
+      "\\(x > 0\\)",
+      "\\(-1 < x < 1\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 1\\), \\(r = e^{-kx}\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(e^{-kx} < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies e^{-kx} < 1\\)",
         "graphData": null
       },
       {
@@ -4188,9 +4188,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(2 + 2(\\ln(x)) + 2(\\ln(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
+      "\\(-1 < x < 1\\)",
       "\\(e^{-1} < x < e\\)",
-      null,
+      "\\(x > 0\\)",
       "\\(x \\in \\mathbb{R}\\)"
     ],
     "a": 1,
@@ -4198,12 +4198,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 2\\), \\(r = \\ln(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\ln(x)| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\ln(x)| < 1\\)",
         "graphData": null
       },
       {
@@ -4221,22 +4221,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(4 + 4(\\tan^2(x)) + 4(\\tan^2(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      "\\(-\\frac{\\pi}{4} + n\\pi < x < \\frac{\\pi}{4} + n\\pi\\)",
-      null,
-      null
+      "\\(-1 < x < 1\\)",
+      "\\(x > 0\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(-\\frac{\\pi}{4} + n\\pi < x < \\frac{\\pi}{4} + n\\pi\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 4\\), \\(r = \\tan^2(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(\\tan^2(x) < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies \\tan^2(x) < 1\\)",
         "graphData": null
       },
       {
@@ -4254,22 +4254,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(x + x(\\frac{x}{3}) + x(\\frac{x}{3})^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      "\\(-3 < x < 3\\)",
-      null
+      "\\(x > 0\\)",
+      "\\(-1 < x < 1\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(-3 < x < 3\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = x\\), \\(r = \\frac{x}{3}\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|x| < 3\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |x| < 3\\)",
         "graphData": null
       },
       {
@@ -4287,22 +4287,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(\\cos(2x)) + 1(\\cos(2x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      "\\(x \\in \\mathbb{R}\\)",
-      "\\(x \\neq \\frac{n\\pi}{2}\\)"
+      "\\(x \\neq \\frac{n\\pi}{2}\\)",
+      "\\(x > 0\\)",
+      "\\(-1 < x < 1\\)",
+      "\\(x \\in \\mathbb{R}\\)"
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 1\\), \\(r = \\cos(2x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\cos(2x)| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\cos(2x)| < 1\\)",
         "graphData": null
       },
       {
@@ -4320,22 +4320,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(6 + 6(\\sin\\left(\\frac{x}{2}\\right)) + 6(\\sin\\left(\\frac{x}{2}\\right))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
       "\\(x \\neq \\pi + 2n\\pi\\)",
-      null,
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x > 0\\)",
       "\\(-1 < x < 1\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 6\\), \\(r = \\sin\\left(\\frac{x}{2}\\right)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\sin\\left(\\frac{x}{2}\\right)| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\sin\\left(\\frac{x}{2}\\right)| < 1\\)",
         "graphData": null
       },
       {
@@ -4353,9 +4353,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(2x - 1) + 1(2x - 1)^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(-1 < x < 1\\)",
+      "\\(x > 0\\)",
       "\\(0 < x < 1\\)"
     ],
     "a": 3,
@@ -4363,12 +4363,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 1\\), \\(r = 2x - 1\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|2x - 1| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |2x - 1| < 1\\)",
         "graphData": null
       },
       {
@@ -4386,22 +4386,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(x+2 + x+2(\\frac{x+2}{5}) + x+2(\\frac{x+2}{5})^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
       "\\(-7 < x < 3\\)",
-      "\\(x \\in \\mathbb{R}\\)",
-      "\\(-1 < x < 1\\)"
+      "\\(x > 0\\)",
+      "\\(-1 < x < 1\\)",
+      "\\(x \\in \\mathbb{R}\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = x+2\\), \\(r = \\frac{x+2}{5}\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|x + 2| < 5\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |x + 2| < 5\\)",
         "graphData": null
       },
       {
@@ -4419,22 +4419,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(3 + 3(2^{-x}) + 3(2^{-x})^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x > 0\\)",
       "\\(x > 0\\)",
       "\\(-1 < x < 1\\)"
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 3\\), \\(r = 2^{-x}\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(2^{-x} < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies 2^{-x} < 1\\)",
         "graphData": null
       },
       {
@@ -4452,22 +4452,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(5 + 5(\\log_{10}(x)) + 5(\\log_{10}(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(0.1 < x < 10\\)"
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x > 0\\)",
+      "\\(0.1 < x < 10\\)",
+      "\\(-1 < x < 1\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 5\\), \\(r = \\log_{10}(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\log_{10}(x)| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\log_{10}(x)| < 1\\)",
         "graphData": null
       },
       {
@@ -4485,9 +4485,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(\\frac{1}{2}\\sec(x)) + 1(\\frac{1}{2}\\sec(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
+      "\\(x > 0\\)",
       "\\(-\\frac{\\pi}{3} + 2n\\pi < x < \\frac{\\pi}{3} + 2n\\pi\\)",
-      null,
+      "\\(x \\in \\mathbb{R}\\)",
       "\\(-1 < x < 1\\)"
     ],
     "a": 1,
@@ -4495,12 +4495,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 1\\), \\(r = \\frac{1}{2}\\sec(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\sec(x)| < 2\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\sec(x)| < 2\\)",
         "graphData": null
       },
       {
@@ -4518,22 +4518,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(2x + 2x(\\frac{2x}{x+3}) + 2x(\\frac{2x}{x+3})^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
       "\\(-1 < x < 3\\)",
-      null,
+      "\\(x > 0\\)",
+      "\\(-1 < x < 1\\)",
       "\\(x \\in \\mathbb{R}\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 2x\\), \\(r = \\frac{2x}{x+3}\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|2x| < |x+3|\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |2x| < |x+3|\\)",
         "graphData": null
       },
       {
@@ -4551,22 +4551,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(x^2 + x^2(x^2 - 1) + x^2(x^2 - 1)^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
+      "\\(-1 < x < 1\\)",
       "\\(-\\sqrt{2} < x < \\sqrt{2}, x \\neq 0\\)",
-      null
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x > 0\\)"
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = x^2\\), \\(r = x^2 - 1\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|x^2 - 1| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |x^2 - 1| < 1\\)",
         "graphData": null
       },
       {
@@ -4584,22 +4584,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(2 + 2(\\cos\\left(\\frac{x}{3}\\right)) + 2(\\cos\\left(\\frac{x}{3}\\right))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(x \\neq 3n\\pi\\)"
+      "\\(-1 < x < 1\\)",
+      "\\(x > 0\\)",
+      "\\(x \\neq 3n\\pi\\)",
+      "\\(x \\in \\mathbb{R}\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 2\\), \\(r = \\cos\\left(\\frac{x}{3}\\right)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\cos\\left(\\frac{x}{3}\\right)| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\cos\\left(\\frac{x}{3}\\right)| < 1\\)",
         "graphData": null
       },
       {
@@ -4617,22 +4617,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(\\frac{1}{x}) + 1(\\frac{1}{x})^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(x \\in \\mathbb{R}\\)"
+      "\\(x > 0\\)",
+      "\\(x < -1 \\text{ or } x > 1\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(-1 < x < 1\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 1\\), \\(r = \\frac{1}{x}\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|x| > 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |x| > 1\\)",
         "graphData": null
       },
       {
@@ -4650,22 +4650,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(10 + 10(e^{2-x}) + 10(e^{2-x})^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      "\\(x > 2\\)",
-      null
+      "\\(x > 0\\)",
+      "\\(-1 < x < 1\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x > 2\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 10\\), \\(r = e^{2-x}\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(e^{2-x} < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies e^{2-x} < 1\\)",
         "graphData": null
       },
       {
@@ -4683,8 +4683,8 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(\\ln(2x)) + 1(\\ln(2x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
+      "\\(-1 < x < 1\\)",
+      "\\(x > 0\\)",
       "\\(x \\in \\mathbb{R}\\)",
       "\\(\\frac{1}{2e} < x < \\frac{e}{2}\\)"
     ],
@@ -4693,12 +4693,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 1\\), \\(r = \\ln(2x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\ln(2x)| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\ln(2x)| < 1\\)",
         "graphData": null
       },
       {
@@ -4716,22 +4716,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(2 + 2(\\sin^2(x)) + 2(\\sin^2(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      "\\(x \\neq \\frac{\\pi}{2} + n\\pi\\)",
-      "\\(-1 < x < 1\\)"
+      "\\(-1 < x < 1\\)",
+      "\\(x > 0\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x \\neq \\frac{\\pi}{2} + n\\pi\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 2\\), \\(r = \\sin^2(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(\\sin^2(x) < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies \\sin^2(x) < 1\\)",
         "graphData": null
       },
       {
@@ -4749,22 +4749,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(x-1 + x-1(\\frac{x-1}{3}) + x-1(\\frac{x-1}{3})^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(-2 < x < 4\\)"
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(-2 < x < 4\\)",
+      "\\(-1 < x < 1\\)",
+      "\\(x > 0\\)"
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = x-1\\), \\(r = \\frac{x-1}{3}\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|x - 1| < 3\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |x - 1| < 3\\)",
         "graphData": null
       },
       {
@@ -4782,22 +4782,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(\\cos^2(x)) + 1(\\cos^2(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
       "\\(x \\neq n\\pi\\)",
-      null,
-      null
+      "\\(-1 < x < 1\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(x > 0\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 1\\), \\(r = \\cos^2(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(\\cos^2(x) < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies \\cos^2(x) < 1\\)",
         "graphData": null
       },
       {
@@ -4815,22 +4815,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(3x+2 + 3x+2(3x + 2) + 3x+2(3x + 2)^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
-      null,
-      null
+      "\\(x > 0\\)",
+      "\\(-1 < x < 1\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(-1 < x < -\\frac{1}{3}\\)"
     ],
-    "a": -1,
+    "a": 3,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 3x+2\\), \\(r = 3x + 2\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|3x + 2| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |3x + 2| < 1\\)",
         "graphData": null
       },
       {
@@ -4848,8 +4848,8 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(3 + 3(\\frac{3}{x}) + 3(\\frac{3}{x})^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      null,
+      "\\(x > 0\\)",
+      "\\(-1 < x < 1\\)",
       "\\(x < -3 \\text{ or } x > 3\\)",
       "\\(x \\in \\mathbb{R}\\)"
     ],
@@ -4858,12 +4858,12 @@ export const Y12A_CH1H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 3\\), \\(r = \\frac{3}{x}\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|x| > 3\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |x| > 3\\)",
         "graphData": null
       },
       {
@@ -4881,22 +4881,22 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(\\tan\\left(\\frac{x}{2}\\right)) + 1(\\tan\\left(\\frac{x}{2}\\right))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      null,
-      "\\(-\\frac{\\pi}{2} + 2n\\pi < x < \\frac{\\pi}{2} + 2n\\pi\\)",
-      null,
-      "\\(x \\in \\mathbb{R}\\)"
+      "\\(-1 < x < 1\\)",
+      "\\(x > 0\\)",
+      "\\(x \\in \\mathbb{R}\\)",
+      "\\(-\\frac{\\pi}{2} + 2n\\pi < x < \\frac{\\pi}{2} + 2n\\pi\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common ratio \\(r\\) of the geometric series.",
-        "workingOut": "\\(a = ${sc.aTerm}\\), \\(r = ${sc.expression}\\)",
+        "workingOut": "\\(a = 1\\), \\(r = \\tan\\left(\\frac{x}{2}\\right)\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the inequality for convergence of the infinite series.",
-        "workingOut": "\\(|r| < 1 \\implies \\(|\\tan\\left(\\frac{x}{2}\\right)| < 1\\)\\)",
+        "workingOut": "\\(|r| < 1 \\implies |\\tan\\left(\\frac{x}{2}\\right)| < 1\\)",
         "graphData": null
       },
       {
@@ -4914,17 +4914,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A patient receives a daily drug injection of 150 mg. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated drug.",
     "opts": [
-      null,
-      null,
-      "\\(750\\text{ }mg\\)",
-      "\\(675\\text{ }mg\\)"
+      "\\(850\\text{ }\\text{mg}\\)",
+      "\\(675\\text{ }\\text{mg}\\)",
+      "\\(825\\text{ }\\text{mg}\\)",
+      "\\(750\\text{ }\\text{mg}\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 150\\), \\(r = 1 - 20% = 0.8000\\)",
+        "workingOut": "\\(a = 150\\), \\(r = 1 - 20\\% = 0.8000\\)",
         "graphData": null
       },
       {
@@ -4934,7 +4934,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{150}{20%} = 750.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{150}{20\\%} = 750.0\\)",
         "graphData": null
       }
     ]
@@ -4947,17 +4947,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A perpetuity scholarship fund pays out 8000 dollars annually. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated scholarship.",
     "opts": [
-      null,
-      "\\(200,000\\text{ }dollars\\)",
-      "\\(180,000\\text{ }dollars\\)",
-      "\\(220,000\\text{ }dollars\\)"
+      "\\(200,100\\text{ }\\text{dollars}\\)",
+      "\\(220,000\\text{ }\\text{dollars}\\)",
+      "\\(180,000\\text{ }\\text{dollars}\\)",
+      "\\(200,000\\text{ }\\text{dollars}\\)"
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 8000\\), \\(r = 1 - 4% = 0.9600\\)",
+        "workingOut": "\\(a = 8000\\), \\(r = 1 - 4\\% = 0.9600\\)",
         "graphData": null
       },
       {
@@ -4967,7 +4967,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{8000}{4%} = 200000.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{8000}{4\\%} = 200000.0\\)",
         "graphData": null
       }
     ]
@@ -4980,17 +4980,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A water tank leaks 15% of its remaining volume each hour. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated water.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(666.7\\text{ }litres\\)"
+      "\\(766.7\\text{ }\\text{litres}\\)",
+      "\\(733.37\\text{ }\\text{litres}\\)",
+      "\\(666.7\\text{ }\\text{litres}\\)",
+      "\\(600.03\\text{ }\\text{litres}\\)"
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 15\\), \\(r = 1 - 15% = 0.8500\\)",
+        "workingOut": "\\(a = 15\\), \\(r = 1 - 15\\% = 0.8500\\)",
         "graphData": null
       },
       {
@@ -5000,7 +5000,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{15}{15%} = 666.7\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{15}{15\\%} = 666.7\\)",
         "graphData": null
       }
     ]
@@ -5013,17 +5013,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A chemical plant releases 40 kg of waste into a pond weekly, and 25% degrades each week. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated waste.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(144\\text{ }kg\\)"
+      "\\(176\\text{ }\\text{kg}\\)",
+      "\\(160\\text{ }\\text{kg}\\)",
+      "\\(260\\text{ }\\text{kg}\\)",
+      "\\(144\\text{ }\\text{kg}\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 40\\), \\(r = 1 - 25% = 0.7500\\)",
+        "workingOut": "\\(a = 40\\), \\(r = 1 - 25\\% = 0.7500\\)",
         "graphData": null
       },
       {
@@ -5033,7 +5033,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{40}{25%} = 160.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{40}{25\\%} = 160.0\\)",
         "graphData": null
       }
     ]
@@ -5046,17 +5046,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "An investment trust pays a perpetual monthly dividend of 250 dollars at a monthly rate of 0.5%. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated investment.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(45,000\\text{ }dollars\\)"
+      "\\(50,000\\text{ }\\text{dollars}\\)",
+      "\\(55,000\\text{ }\\text{dollars}\\)",
+      "\\(45,000\\text{ }\\text{dollars}\\)",
+      "\\(50,100\\text{ }\\text{dollars}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 250\\), \\(r = 1 - 0.5% = 0.9950\\)",
+        "workingOut": "\\(a = 250\\), \\(r = 1 - 0.5\\% = 0.9950\\)",
         "graphData": null
       },
       {
@@ -5066,7 +5066,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{250}{0.5%} = 50000.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{250}{0.5\\%} = 50000.0\\)",
         "graphData": null
       }
     ]
@@ -5079,17 +5079,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A precision machine tool experiences wear of 0.02 mm in the first month, and each month's wear is 90% of the previous. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated wear.",
     "opts": [
-      null,
-      "\\(0.2\\text{ }mm\\)",
-      null,
-      "\\(0.22\\text{ }mm\\)"
+      "\\(0.2\\text{ }\\text{mm}\\)",
+      "\\(0.18\\text{ }\\text{mm}\\)",
+      "\\(100.2\\text{ }\\text{mm}\\)",
+      "\\(0.22\\text{ }\\text{mm}\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 0.02\\), \\(r = 1 - 10% = 0.9000\\)",
+        "workingOut": "\\(a = 0.02\\), \\(r = 1 - 10\\% = 0.9000\\)",
         "graphData": null
       },
       {
@@ -5099,7 +5099,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{0.02}{10%} = 0.2\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{0.02}{10\\%} = 0.2\\)",
         "graphData": null
       }
     ]
@@ -5112,17 +5112,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A coal mine extracts 80000 tonnes in the first year, with production decreasing by 12% annually. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated coal.",
     "opts": [
-      null,
-      null,
-      null,
-      null
+      "\\(600,000.03\\text{ }\\text{tonnes}\\)",
+      "\\(666,666.7\\text{ }\\text{tonnes}\\)",
+      "\\(733,333.37\\text{ }\\text{tonnes}\\)",
+      "\\(666,766.7\\text{ }\\text{tonnes}\\)"
     ],
-    "a": -1,
+    "a": 1,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 80000\\), \\(r = 1 - 12% = 0.8800\\)",
+        "workingOut": "\\(a = 80000\\), \\(r = 1 - 12\\% = 0.8800\\)",
         "graphData": null
       },
       {
@@ -5132,7 +5132,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{80000}{12%} = 666666.7\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{80000}{12\\%} = 666666.7\\)",
         "graphData": null
       }
     ]
@@ -5145,17 +5145,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "An oil well produces 500 barrels on its first day, with daily output decreasing by 2%. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated oil.",
     "opts": [
-      null,
-      null,
-      "\\(25,000\\text{ }barrels\\)",
-      null
+      "\\(22,500\\text{ }\\text{barrels}\\)",
+      "\\(25,100\\text{ }\\text{barrels}\\)",
+      "\\(27,500\\text{ }\\text{barrels}\\)",
+      "\\(25,000\\text{ }\\text{barrels}\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 500\\), \\(r = 1 - 2% = 0.9800\\)",
+        "workingOut": "\\(a = 500\\), \\(r = 1 - 2\\% = 0.9800\\)",
         "graphData": null
       },
       {
@@ -5165,7 +5165,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{500}{2%} = 25000.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{500}{2\\%} = 25000.0\\)",
         "graphData": null
       }
     ]
@@ -5178,17 +5178,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A soil remediation process extracts 45 kg of contaminants in the first week, decreasing by 8% weekly. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated contaminant.",
     "opts": [
-      null,
-      "\\(562.5\\text{ }kg\\)",
-      null,
-      "\\(506.25\\text{ }kg\\)"
+      "\\(506.25\\text{ }\\text{kg}\\)",
+      "\\(562.5\\text{ }\\text{kg}\\)",
+      "\\(662.5\\text{ }\\text{kg}\\)",
+      "\\(618.75\\text{ }\\text{kg}\\)"
     ],
     "a": 1,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 45\\), \\(r = 1 - 8% = 0.9200\\)",
+        "workingOut": "\\(a = 45\\), \\(r = 1 - 8\\% = 0.9200\\)",
         "graphData": null
       },
       {
@@ -5198,7 +5198,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{45}{8%} = 562.5\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{45}{8\\%} = 562.5\\)",
         "graphData": null
       }
     ]
@@ -5211,17 +5211,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geothermal heating system loses 6% of its thermal energy reserves each winter. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated energy.",
     "opts": [
-      null,
-      "\\(1,666.7\\text{ }MJ\\)",
-      null,
-      "\\(1,500.03\\text{ }MJ\\)"
+      "\\(1,833.37\\text{ }\\text{MJ}\\)",
+      "\\(1,766.7\\text{ }\\text{MJ}\\)",
+      "\\(1,666.7\\text{ }\\text{MJ}\\)",
+      "\\(1,500.03\\text{ }\\text{MJ}\\)"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 6\\), \\(r = 1 - 6% = 0.9400\\)",
+        "workingOut": "\\(a = 6\\), \\(r = 1 - 6\\% = 0.9400\\)",
         "graphData": null
       },
       {
@@ -5231,7 +5231,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{6}{6%} = 1666.7\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{6}{6\\%} = 1666.7\\)",
         "graphData": null
       }
     ]
@@ -5244,17 +5244,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A corporate perpetual bond pays 1200 dollars annually at an interest rate of 3%. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated bond.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(36,000\\text{ }dollars\\)"
+      "\\(40,100\\text{ }\\text{dollars}\\)",
+      "\\(36,000\\text{ }\\text{dollars}\\)",
+      "\\(44,000\\text{ }\\text{dollars}\\)",
+      "\\(40,000\\text{ }\\text{dollars}\\)"
     ],
-    "a": -1,
+    "a": 3,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 1200\\), \\(r = 1 - 3% = 0.9700\\)",
+        "workingOut": "\\(a = 1200\\), \\(r = 1 - 3\\% = 0.9700\\)",
         "graphData": null
       },
       {
@@ -5264,7 +5264,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{1200}{3%} = 40000.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{1200}{3\\%} = 40000.0\\)",
         "graphData": null
       }
     ]
@@ -5277,17 +5277,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A manufacturing filter collects 12 g of particulate matter on the first day, with capacity dropping by 5% daily. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated particulate.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(216\\text{ }g\\)"
+      "\\(240\\text{ }\\text{g}\\)",
+      "\\(264\\text{ }\\text{g}\\)",
+      "\\(340\\text{ }\\text{g}\\)",
+      "\\(216\\text{ }\\text{g}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 12\\), \\(r = 1 - 5% = 0.9500\\)",
+        "workingOut": "\\(a = 12\\), \\(r = 1 - 5\\% = 0.9500\\)",
         "graphData": null
       },
       {
@@ -5297,7 +5297,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{12}{5%} = 240.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{12}{5\\%} = 240.0\\)",
         "graphData": null
       }
     ]
@@ -5310,17 +5310,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "An agricultural soil patch absorbs 35 kg of nitrogen fertilizer in the first application, with 70% retention. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated nitrogen.",
     "opts": [
-      null,
-      null,
-      "\\(105.03\\text{ }kg\\)",
-      "\\(116.7\\text{ }kg\\)"
+      "\\(128.37\\text{ }\\text{kg}\\)",
+      "\\(105.03\\text{ }\\text{kg}\\)",
+      "\\(216.7\\text{ }\\text{kg}\\)",
+      "\\(116.7\\text{ }\\text{kg}\\)"
     ],
     "a": 3,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 35\\), \\(r = 1 - 30% = 0.7000\\)",
+        "workingOut": "\\(a = 35\\), \\(r = 1 - 30\\% = 0.7000\\)",
         "graphData": null
       },
       {
@@ -5330,7 +5330,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{35}{30%} = 116.7\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{35}{30\\%} = 116.7\\)",
         "graphData": null
       }
     ]
@@ -5343,17 +5343,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A satellite solar array generates 600 W initially, with output dropping by 1.5% annually due to space radiation. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated power.",
     "opts": [
-      null,
-      null,
-      "\\(40,000\\text{ }W\\)",
-      null
+      "\\(36,000\\text{ }\\text{W}\\)",
+      "\\(40,100\\text{ }\\text{W}\\)",
+      "\\(44,000\\text{ }\\text{W}\\)",
+      "\\(40,000\\text{ }\\text{W}\\)"
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 600\\), \\(r = 1 - 1.5% = 0.9850\\)",
+        "workingOut": "\\(a = 600\\), \\(r = 1 - 1.5\\% = 0.9850\\)",
         "graphData": null
       },
       {
@@ -5363,7 +5363,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{600}{1.5%} = 40000.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{600}{1.5\\%} = 40000.0\\)",
         "graphData": null
       }
     ]
@@ -5376,17 +5376,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "An industrial dye mixer has 10 kg of dye added each cycle, with 10% flushed out. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated dye.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(100\\text{ }kg\\)"
+      "\\(90\\text{ }\\text{kg}\\)",
+      "\\(100\\text{ }\\text{kg}\\)",
+      "\\(200\\text{ }\\text{kg}\\)",
+      "\\(110\\text{ }\\text{kg}\\)"
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 10\\), \\(r = 1 - 10% = 0.9000\\)",
+        "workingOut": "\\(a = 10\\), \\(r = 1 - 10\\% = 0.9000\\)",
         "graphData": null
       },
       {
@@ -5396,7 +5396,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{10}{10%} = 100.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{10}{10\\%} = 100.0\\)",
         "graphData": null
       }
     ]
@@ -5409,17 +5409,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A gas pipeline leaks 0.08 cubic meters of gas per hour, with leak rates dropping by 4% hourly as pressure drops. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated gas.",
     "opts": [
-      null,
-      "\\(2\\text{ }cubic meters\\)",
-      null,
-      "\\(1.8\\text{ }cubic meters\\)"
+      "\\(102\\text{ }\\text{cubic meters}\\)",
+      "\\(2\\text{ }\\text{cubic meters}\\)",
+      "\\(2.2\\text{ }\\text{cubic meters}\\)",
+      "\\(1.8\\text{ }\\text{cubic meters}\\)"
     ],
     "a": 1,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 0.08\\), \\(r = 1 - 4% = 0.9600\\)",
+        "workingOut": "\\(a = 0.08\\), \\(r = 1 - 4\\% = 0.9600\\)",
         "graphData": null
       },
       {
@@ -5429,7 +5429,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{0.08}{4%} = 2.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{0.08}{4\\%} = 2.0\\)",
         "graphData": null
       }
     ]
@@ -5442,17 +5442,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A reservoir receives 2400 cubic meters of silt annually, and 8% is flushed over the spillway. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated silt.",
     "opts": [
-      null,
-      "\\(30,000\\text{ }cubic meters\\)",
-      "\\(27,000\\text{ }cubic meters\\)",
-      null
+      "\\(33,000\\text{ }\\text{cubic meters}\\)",
+      "\\(30,100\\text{ }\\text{cubic meters}\\)",
+      "\\(30,000\\text{ }\\text{cubic meters}\\)",
+      "\\(27,000\\text{ }\\text{cubic meters}\\)"
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 2400\\), \\(r = 1 - 8% = 0.9200\\)",
+        "workingOut": "\\(a = 2400\\), \\(r = 1 - 8\\% = 0.9200\\)",
         "graphData": null
       },
       {
@@ -5462,7 +5462,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{2400}{8%} = 30000.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{2400}{8\\%} = 30000.0\\)",
         "graphData": null
       }
     ]
@@ -5473,19 +5473,19 @@ export const Y12A_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The limiting sum of a geometric series",
-    "question": "A deep space probe transmits data at 128 kbps initially, with signal strength dropping by 12.5% each astronomical unit. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated bandwidth.",
+    "question": "A deep space probe transmits data at 128 kbps initially, with signal strength dropping by 12.5% each astronomical unit. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated undefined.",
     "opts": [
-      null,
-      null,
-      null,
-      null
+      "\\(1,024\\text{ }\\text{bandwidth}\\)",
+      "\\(1,126.4\\text{ }\\text{bandwidth}\\)",
+      "\\(1,124\\text{ }\\text{bandwidth}\\)",
+      "\\(921.6\\text{ }\\text{bandwidth}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 128\\), \\(r = 1 - 12.5% = 0.8750\\)",
+        "workingOut": "\\(a = 128\\), \\(r = 1 - 12.5\\% = 0.8750\\)",
         "graphData": null
       },
       {
@@ -5495,7 +5495,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{128}{12.5%} = 1024.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{128}{12.5\\%} = 1024.0\\)",
         "graphData": null
       }
     ]
@@ -5508,17 +5508,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A battery manufacturer calculates that a cell loses 0.05 V capacity in the first charge cycle, with degradation rate dropping by 8% per cycle. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated voltage.",
     "opts": [
-      null,
-      null,
-      "\\(0.625\\text{ }V\\)",
-      "\\(0.688\\text{ }V\\)"
+      "\\(0.563\\text{ }\\text{V}\\)",
+      "\\(0.625\\text{ }\\text{V}\\)",
+      "\\(0.688\\text{ }\\text{V}\\)",
+      "\\(100.625\\text{ }\\text{V}\\)"
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 0.05\\), \\(r = 1 - 8% = 0.9200\\)",
+        "workingOut": "\\(a = 0.05\\), \\(r = 1 - 8\\% = 0.9200\\)",
         "graphData": null
       },
       {
@@ -5528,7 +5528,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{0.05}{8%} = 0.6\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{0.05}{8\\%} = 0.6\\)",
         "graphData": null
       }
     ]
@@ -5541,17 +5541,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A pharmaceutical drug delivery patch releases 18 micrograms of compound in the first hour, decreasing by 6% hourly. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated dosage.",
     "opts": [
-      null,
-      null,
-      "\\(300\\text{ }micrograms\\)",
-      null
+      "\\(300\\text{ }\\text{micrograms}\\)",
+      "\\(330\\text{ }\\text{micrograms}\\)",
+      "\\(270\\text{ }\\text{micrograms}\\)",
+      "\\(400\\text{ }\\text{micrograms}\\)"
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 18\\), \\(r = 1 - 6% = 0.9400\\)",
+        "workingOut": "\\(a = 18\\), \\(r = 1 - 6\\% = 0.9400\\)",
         "graphData": null
       },
       {
@@ -5561,7 +5561,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{18}{6%} = 300.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{18}{6\\%} = 300.0\\)",
         "graphData": null
       }
     ]
@@ -5574,17 +5574,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A forestry reserve logs 2500 trees in the first year, with logging reduced by 5% annually for conservation. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated reserve.",
     "opts": [
-      null,
-      null,
-      "\\(50,000\\text{ }trees\\)",
-      "\\(55,000\\text{ }trees\\)"
+      "\\(55,000\\text{ }\\text{trees}\\)",
+      "\\(50,100\\text{ }\\text{trees}\\)",
+      "\\(50,000\\text{ }\\text{trees}\\)",
+      "\\(45,000\\text{ }\\text{trees}\\)"
     ],
     "a": 2,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 2500\\), \\(r = 1 - 5% = 0.9500\\)",
+        "workingOut": "\\(a = 2500\\), \\(r = 1 - 5\\% = 0.9500\\)",
         "graphData": null
       },
       {
@@ -5594,7 +5594,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{2500}{5%} = 50000.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{2500}{5\\%} = 50000.0\\)",
         "graphData": null
       }
     ]
@@ -5607,17 +5607,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A precision clock pendulum loses 0.01 degrees of swing amplitude per swing due to friction. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated amplitude.",
     "opts": [
-      null,
-      null,
-      null,
-      "\\(0.5\\text{ }degrees\\)"
+      "\\(0.45\\text{ }\\text{degrees}\\)",
+      "\\(0.5\\text{ }\\text{degrees}\\)",
+      "\\(100.5\\text{ }\\text{degrees}\\)",
+      "\\(0.55\\text{ }\\text{degrees}\\)"
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 0.01\\), \\(r = 1 - 2% = 0.9800\\)",
+        "workingOut": "\\(a = 0.01\\), \\(r = 1 - 2\\% = 0.9800\\)",
         "graphData": null
       },
       {
@@ -5627,7 +5627,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{0.01}{2%} = 0.5\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{0.01}{2\\%} = 0.5\\)",
         "graphData": null
       }
     ]
@@ -5640,17 +5640,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A marine ecosystem accumulates 15 tonnes of microplastics annually, with 5% consumed or buried. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated microplastics.",
     "opts": [
-      null,
-      null,
-      null,
-      null
+      "\\(300\\text{ }\\text{tonnes}\\)",
+      "\\(270\\text{ }\\text{tonnes}\\)",
+      "\\(330\\text{ }\\text{tonnes}\\)",
+      "\\(400\\text{ }\\text{tonnes}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 15\\), \\(r = 1 - 5% = 0.9500\\)",
+        "workingOut": "\\(a = 15\\), \\(r = 1 - 5\\% = 0.9500\\)",
         "graphData": null
       },
       {
@@ -5660,7 +5660,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{15}{5%} = 300.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{15}{5\\%} = 300.0\\)",
         "graphData": null
       }
     ]
@@ -5673,17 +5673,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A geothermal turbine loses 2.5 MW output capacity in the first year, with loss rates dropping by 10% annually. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated capacity.",
     "opts": [
-      null,
-      "\\(25\\text{ }MW\\)",
-      "\\(22.5\\text{ }MW\\)",
-      "\\(27.5\\text{ }MW\\)"
+      "\\(25\\text{ }\\text{MW}\\)",
+      "\\(125\\text{ }\\text{MW}\\)",
+      "\\(27.5\\text{ }\\text{MW}\\)",
+      "\\(22.5\\text{ }\\text{MW}\\)"
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 2.5\\), \\(r = 1 - 10% = 0.9000\\)",
+        "workingOut": "\\(a = 2.5\\), \\(r = 1 - 10\\% = 0.9000\\)",
         "graphData": null
       },
       {
@@ -5693,7 +5693,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{2.5}{10%} = 25.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{2.5}{10\\%} = 25.0\\)",
         "graphData": null
       }
     ]
@@ -5706,17 +5706,17 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A pension fund withdraws 15000 dollars in the first year, decreasing withdrawals by 2.5% annually to adjust for assets. If this process continues indefinitely, find the limiting value (limiting sum) of the total accumulated pension.",
     "opts": [
-      null,
-      null,
-      "\\(540,000\\text{ }dollars\\)",
-      "\\(660,000\\text{ }dollars\\)"
+      "\\(600,000\\text{ }\\text{dollars}\\)",
+      "\\(660,000\\text{ }\\text{dollars}\\)",
+      "\\(600,100\\text{ }\\text{dollars}\\)",
+      "\\(540,000\\text{ }\\text{dollars}\\)"
     ],
-    "a": -1,
+    "a": 0,
     "hint": "Identify the initial quantity and the rate of reduction, then calculate the limiting sum using the formula.",
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the problem.",
-        "workingOut": "\\(a = 15000\\), \\(r = 1 - 2.5% = 0.9750\\)",
+        "workingOut": "\\(a = 15000\\), \\(r = 1 - 2.5\\% = 0.9750\\)",
         "graphData": null
       },
       {
@@ -5726,7 +5726,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Substitute the values to calculate the final limiting sum.",
-        "workingOut": "\\(S_{\\infty} = \\frac{15000}{2.5%} = 600000.0\\)",
+        "workingOut": "\\(S_{\\infty} = \\frac{15000}{2.5\\%} = 600000.0\\)",
         "graphData": null
       }
     ]
