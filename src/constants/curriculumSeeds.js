@@ -13,6 +13,11 @@ import { Y9_CH1I_QUESTIONS } from './seedYear9Ch1IQuestions.js';
 
 import { Y12A_CH1_QUESTIONS } from './seedYear12aCh1Questions.js';
 import { Y12A_CH1C_QUESTIONS } from './seedYear12aCh1CQuestions.js';
+import { Y12A_CH1D_QUESTIONS } from './seedYear12aCh1DQuestions.js';
+import { Y12A_CH1E_QUESTIONS } from './seedYear12aCh1EQuestions.js';
+import { Y12A_CH1F_QUESTIONS } from './seedYear12aCh1FQuestions.js';
+import { Y12A_CH1G_QUESTIONS } from './seedYear12aCh1GQuestions.js';
+import { Y12A_CH1H_QUESTIONS } from './seedYear12aCh1HQuestions.js';
 import { Y12A_CH6_QUESTIONS } from './seedYear12aCh6Questions.js';
 import { Y12A_CH6B_QUESTIONS } from './seedYear12aCh6BQuestions.js';
 import { Y12A_CH6C_QUESTIONS } from './seedYear12aCh6CQuestions.js';
@@ -585,6 +590,56 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 12a',
     seed: Y12A_CH1C_QUESTIONS,
     label: 'Y12A Ch1 · 1C Geometric sequences',
+  },
+  {
+    chapterId: 'y12a-1',
+    chapterTitle: 'Chapter 1: Sequences and series',
+    topicId: 'y12a-1D',
+    topicCode: '1D',
+    topicTitle: 'Solving problems involving APs and GPs',
+    year: 'Year 12a',
+    seed: Y12A_CH1D_QUESTIONS,
+    label: 'Y12A Ch1 · 1D Solving problems involving APs and GPs',
+  },
+  {
+    chapterId: 'y12a-1',
+    chapterTitle: 'Chapter 1: Sequences and series',
+    topicId: 'y12a-1E',
+    topicCode: '1E',
+    topicTitle: 'Adding up the terms of a sequence',
+    year: 'Year 12a',
+    seed: Y12A_CH1E_QUESTIONS,
+    label: 'Y12A Ch1 · 1E Adding up the terms of a sequence',
+  },
+  {
+    chapterId: 'y12a-1',
+    chapterTitle: 'Chapter 1: Sequences and series',
+    topicId: 'y12a-1F',
+    topicCode: '1F',
+    topicTitle: 'Summing an arithmetic series',
+    year: 'Year 12a',
+    seed: Y12A_CH1F_QUESTIONS,
+    label: 'Y12A Ch1 · 1F Summing an arithmetic series',
+  },
+  {
+    chapterId: 'y12a-1',
+    chapterTitle: 'Chapter 1: Sequences and series',
+    topicId: 'y12a-1G',
+    topicCode: '1G',
+    topicTitle: 'Summing a geometric series',
+    year: 'Year 12a',
+    seed: Y12A_CH1G_QUESTIONS,
+    label: 'Y12A Ch1 · 1G Summing a geometric series',
+  },
+  {
+    chapterId: 'y12a-1',
+    chapterTitle: 'Chapter 1: Sequences and series',
+    topicId: 'y12a-1H',
+    topicCode: '1H',
+    topicTitle: 'The limiting sum of a geometric series',
+    year: 'Year 12a',
+    seed: Y12A_CH1H_QUESTIONS,
+    label: 'Y12A Ch1 · 1H The limiting sum of a geometric series',
   },
   {
     chapterId: 'y12a-3',
