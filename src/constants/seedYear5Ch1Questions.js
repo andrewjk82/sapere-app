@@ -3486,5 +3486,345 @@ export const Y5_CH1_QUESTIONS = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-rn-1-hard-q1a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Find the value of the underlined digit in the number:\n\\(4\\ \\underline{8}21\\)",
+    "opts": [
+      "\\(80\\)",
+      "\\(8\\)",
+      "\\(800\\)",
+      "\\(8\\ 000\\)"
+    ],
+    "a": 2,
+    "hint": "Identify the place value of the underlined digit.",
+    "solutionSteps": [
+      {
+        "explanation": "Determine the position of the underlined digit 8.",
+        "workingOut": "\\(\\text{The digit 8 is in the hundreds place.}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the digit by its place value.",
+        "workingOut": "\\(8 \\times 100 = 800\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value of the underlined digit.",
+        "workingOut": "\\(800\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q1b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Find the value of the underlined digit in the number:\n\\(6\\underline{7}2\\ 518\\)",
+    "opts": [
+      "\\(70\\ 000\\)",
+      "\\(7\\ 000\\)",
+      "\\(700\\)",
+      "\\(700\\ 000\\)"
+    ],
+    "a": 0,
+    "hint": "Identify the place value of the underlined digit.",
+    "solutionSteps": [
+      {
+        "explanation": "Determine the position of the underlined digit 7.",
+        "workingOut": "\\(\\text{The digit 7 is in the ten-thousands place.}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the digit by its place value.",
+        "workingOut": "\\(7 \\times 10\\ 000 = 70\\ 000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value of the underlined digit.",
+        "workingOut": "\\(70\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q1c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Find the value of the underlined digit in the number:\n\\(\\underline{7}\\ 352\\)",
+    "opts": [
+      "\\(700\\)",
+      "\\(7\\ 000\\)",
+      "\\(70\\)",
+      "\\(7\\)"
+    ],
+    "a": 1,
+    "hint": "Identify the place value of the underlined digit.",
+    "solutionSteps": [
+      {
+        "explanation": "Determine the position of the underlined digit 7.",
+        "workingOut": "\\(\\text{The digit 7 is in the thousands place.}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the digit by its place value.",
+        "workingOut": "\\(7 \\times 1\\ 000 = 7\\ 000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value of the underlined digit.",
+        "workingOut": "\\(7\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q1d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Find the value of the underlined digit in the number:\n\\(57\\ 3\\underline{7}4\\)",
+    "opts": [
+      "\\(7\\)",
+      "\\(700\\)",
+      "\\(70\\)",
+      "\\(7\\ 000\\)"
+    ],
+    "a": 2,
+    "hint": "Identify the place value of the underlined digit.",
+    "solutionSteps": [
+      {
+        "explanation": "Determine the position of the underlined digit 7.",
+        "workingOut": "\\(\\text{The digit 7 is in the tens place.}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the digit by its place value.",
+        "workingOut": "\\(7 \\times 10 = 70\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value of the underlined digit.",
+        "workingOut": "\\(70\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q2a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Round off the following number to the nearest \\(1\\ 000\\):\n\\(8\\ 243\\)",
+    "opts": [
+      "\\(8\\ 000\\)",
+      "\\(8\\ 200\\)",
+      "\\(8\\ 300\\)",
+      "\\(9\\ 000\\)"
+    ],
+    "a": 0,
+    "hint": "Look at the hundreds digit to decide whether to round up or down.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the thousands digit and the hundreds digit.",
+        "workingOut": "\\(\\text{Thousands digit} = 8, \\text{Hundreds digit} = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compare the hundreds digit to 5.",
+        "workingOut": "\\(2 < 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since the hundreds digit is less than 5, round down to the nearest thousand.",
+        "workingOut": "\\(8\\ 243 \\approx 8\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q2b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Round off the following number to the nearest \\(1\\ 000\\):\n\\(3\\ 502\\)",
+    "opts": [
+      "\\(3\\ 000\\)",
+      "\\(3\\ 500\\)",
+      "\\(4\\ 000\\)",
+      "\\(4\\ 500\\)"
+    ],
+    "a": 2,
+    "hint": "Look at the hundreds digit to decide whether to round up or down.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the thousands digit and the hundreds digit.",
+        "workingOut": "\\(\\text{Thousands digit} = 3, \\text{Hundreds digit} = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compare the hundreds digit to 5.",
+        "workingOut": "\\(5 \\ge 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since the hundreds digit is 5 or greater, round up to the nearest thousand.",
+        "workingOut": "\\(3\\ 502 \\approx 4\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q2c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Round off the following number to the nearest \\(1\\ 000\\):\n\\(83\\ 417\\)",
+    "opts": [
+      "\\(83\\ 000\\)",
+      "\\(84\\ 000\\)",
+      "\\(80\\ 000\\)",
+      "\\(83\\ 400\\)"
+    ],
+    "a": 0,
+    "hint": "Look at the hundreds digit to decide whether to round up or down.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the thousands digit and the hundreds digit.",
+        "workingOut": "\\(\\text{Thousands digit} = 3, \\text{Hundreds digit} = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compare the hundreds digit to 5.",
+        "workingOut": "\\(4 < 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since the hundreds digit is less than 5, round down to the nearest thousand.",
+        "workingOut": "\\(83\\ 417 \\approx 83\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q2d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Round off the following number to the nearest \\(1\\ 000\\):\n\\(7\\ 500\\)",
+    "opts": [
+      "\\(7\\ 000\\)",
+      "\\(8\\ 000\\)",
+      "\\(7\\ 600\\)",
+      "\\(7\\ 500\\)"
+    ],
+    "a": 1,
+    "hint": "Look at the hundreds digit to decide whether to round up or down.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the thousands digit and the hundreds digit.",
+        "workingOut": "\\(\\text{Thousands digit} = 7, \\text{Hundreds digit} = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compare the hundreds digit to 5.",
+        "workingOut": "\\(5 \\ge 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since the hundreds digit is 5 or greater, round up to the nearest thousand.",
+        "workingOut": "\\(7\\ 500 \\approx 8\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q5a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Write the following expanded expression as a single number:\n\\((7 \\times 10^3) + (4 \\times 10^2) + (8 \\times 10^1) + (3 \\times 1)\\)",
+    "opts": [
+      "\\(7\\ 483\\)",
+      "\\(74\\ 083\\)",
+      "\\(704\\ 830\\)",
+      "\\(7\\ 843\\)"
+    ],
+    "a": 0,
+    "hint": "Calculate the value of each term in the sum.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the value of each place-value term.",
+        "workingOut": "\\(7 \\times 10^3 = 7\\ 000\\), \\(4 \\times 10^2 = 400\\), \\(8 \\times 10^1 = 80\\), \\(3 \\times 1 = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the values together.",
+        "workingOut": "\\(7\\ 000 + 400 + 80 + 3 = 7\\ 483\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final standard form value.",
+        "workingOut": "\\(7\\ 483\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q5b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Write the following expanded expression as a single number:\n\\((9 \\times 10^5) + (0 \\times 10^4) + (5 \\times 10^3) + (0 \\times 10^2) + (4 \\times 10^1) + (8 \\times 1)\\)",
+    "opts": [
+      "\\(950\\ 048\\)",
+      "\\(905\\ 048\\)",
+      "\\(905\\ 408\\)",
+      "\\(9\\ 050\\ 480\\)"
+    ],
+    "a": 1,
+    "hint": "Calculate the value of each term, paying attention to the placeholder zeros.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the value of each non-zero term.",
+        "workingOut": "\\(9 \\times 10^5 = 900\\ 000\\), \\(5 \\times 10^3 = 5\\ 000\\), \\(4 \\times 10^1 = 40\\), \\(8 \\times 1 = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Include placeholder zeros for the empty place values (ten-thousands and hundreds).",
+        "workingOut": "\\(900\\ 000 + 0 + 5\\ 000 + 0 + 40 + 8 = 905\\ 048\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final standard form value.",
+        "workingOut": "\\(905\\ 048\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];

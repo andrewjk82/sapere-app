@@ -2118,6 +2118,620 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-ar-1-hard-q6a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the sum:\n\\(624 + 27 + 508 + 9 + 2\\ 083\\)",
+    "opts": [
+      "\\(3\\ 241\\)",
+      "\\(3\\ 251\\)",
+      "\\(3\\ 151\\)",
+      "\\(3\\ 261\\)"
+    ],
+    "a": 1,
+    "hint": "Add the numbers carefully by grouping them or using column addition.",
+    "solutionSteps": [
+      {
+        "explanation": "Group the numbers for easier calculation or align them in columns.",
+        "workingOut": "\\(624 + 27 + 508 + 9 + 2\\ 083\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the smaller and larger numbers together.",
+        "workingOut": "\\((624 + 508) + (27 + 9) + 2\\ 083 = 1\\ 132 + 36 + 2\\ 083\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the final addition.",
+        "workingOut": "\\(1\\ 168 + 2\\ 083 = 3\\ 251\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q6b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the sum:\n\\(87 + 763 + 482 + 45\\)",
+    "opts": [
+      "\\(1\\ 377\\)",
+      "\\(1\\ 367\\)",
+      "\\(1\\ 387\\)",
+      "\\(1\\ 277\\)"
+    ],
+    "a": 0,
+    "hint": "Align the digits by their place value and add.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the numbers vertically to add by columns.",
+        "workingOut": "\\(87 + 763 + 482 + 45\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the units column: 7 + 3 + 2 + 5 = 17. Write 7 and carry 1.",
+        "workingOut": "\\(17 \\implies 7\\text{ units, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens column with the carry: 8 + 6 + 8 + 4 + 1 = 27. Write 7 and carry 2.",
+        "workingOut": "\\(27 \\implies 7\\text{ tens, carry } 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the hundreds column with the carry: 7 + 4 + 2 = 13.",
+        "workingOut": "\\(13 \\implies 1\\text{ thousand, } 3\\text{ hundreds}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the results to obtain the final sum.",
+        "workingOut": "\\(1\\ 377\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q6c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the sum:\n\\(6\\ 391 + 24 + 783 + 512 + 70 + 689\\)",
+    "opts": [
+      "\\(8\\ 459\\)",
+      "\\(8\\ 369\\)",
+      "\\(8\\ 469\\)",
+      "\\(8\\ 569\\)"
+    ],
+    "a": 2,
+    "hint": "Group compatible numbers to make addition simpler.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify and group numbers that add up to multiples of 10 or 100.",
+        "workingOut": "\\(6\\ 391 + 689 = 7\\ 080\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Group the remaining terms.",
+        "workingOut": "\\(783 + 512 = 1\\ 295\\), \\(24 + 70 = 94\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine all the partial sums together.",
+        "workingOut": "\\(7\\ 080 + 1\\ 295 + 94 = 8\\ 375 + 94 = 8\\ 469\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q6d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the sum:\n\\(804 + 7 + 4\\ 389 + 58\\ 296\\)",
+    "opts": [
+      "\\(63\\ 496\\)",
+      "\\(63\\ 396\\)",
+      "\\(64\\ 496\\)",
+      "\\(63\\ 506\\)"
+    ],
+    "a": 0,
+    "hint": "Set up a column addition layout for accurate addition.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the numbers from smallest to largest or vice versa by their place value columns.",
+        "workingOut": "\\(58\\ 296 + 4\\ 389 + 804 + 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the columns step-by-step starting from the units.",
+        "workingOut": "\\(6 + 9 + 4 + 7 = 26 \\implies 6\\text{ units, carry } 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens and hundreds columns including carries.",
+        "workingOut": "\\(\\text{Tens}: 9 + 8 + 0 + 2\\text{ (carry)} = 19 \\implies 9\\text{ tens, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Continue addition for thousands and ten-thousands.",
+        "workingOut": "\\(\\text{Hundreds}: 2 + 3 + 8 + 1\\text{ (carry)} = 14 \\implies 4\\text{ hundreds, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final digits to get the sum.",
+        "workingOut": "\\(\\text{Thousands}: 8 + 4 + 1\\text{ (carry)} = 13 \\implies 3\\text{, carry } 1 \\implies 5 + 1 = 6\\text{ ten-thousands}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine columns for the final answer.",
+        "workingOut": "\\(63\\ 496\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q7a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(852 - 264\\)",
+    "opts": [
+      "\\(598\\)",
+      "\\(588\\)",
+      "\\(688\\)",
+      "\\(578\\)"
+    ],
+    "a": 1,
+    "hint": "Subtract column by column, borrowing where necessary.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the numbers vertically by place value.",
+        "workingOut": "\\(852 - 264\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the units column. Since 2 is less than 4, borrow 1 ten from the tens column.",
+        "workingOut": "\\(12 - 4 = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the tens column. Since 4 tens remain and 4 is less than 6, borrow 1 hundred from the hundreds column.",
+        "workingOut": "\\(14 - 6 = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the hundreds column: 7 hundreds remain.",
+        "workingOut": "\\(7 - 2 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final calculated difference.",
+        "workingOut": "\\(588\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q7b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(721 - 357\\)",
+    "opts": [
+      "\\(364\\)",
+      "\\(374\\)",
+      "\\(354\\)",
+      "\\(464\\)"
+    ],
+    "a": 0,
+    "hint": "Perform column subtraction with borrowing.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the digits and prepare to subtract.",
+        "workingOut": "\\(721 - 357\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow from the tens to subtract the units column.",
+        "workingOut": "\\(11 - 7 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow from the hundreds to subtract the tens column.",
+        "workingOut": "\\(11 - 5 = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the remaining hundreds.",
+        "workingOut": "\\(6 - 3 = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final result.",
+        "workingOut": "\\(364\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q7c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(7\\ 000 - 2\\ 483\\)",
+    "opts": [
+      "\\(4\\ 527\\)",
+      "\\(4\\ 617\\)",
+      "\\(4\\ 517\\)",
+      "\\(5\\ 517\\)"
+    ],
+    "a": 2,
+    "hint": "Borrow across zeros to perform the subtraction.",
+    "solutionSteps": [
+      {
+        "explanation": "Write the subtraction problem vertically.",
+        "workingOut": "\\(7\\ 000 - 2\\ 483\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow starting from the thousands place to rename the intermediate zeros.",
+        "workingOut": "\\(7\\ 000 = 6\\text{ thousands } 9\\text{ hundreds } 9\\text{ tens } 10\\text{ units}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract each column.",
+        "workingOut": "\\(10-3=7\\text{ (units)},\\ 9-8=1\\text{ (tens)},\\ 9-4=5\\text{ (hundreds)},\\ 6-2=4\\text{ (thousands)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the place values for the final difference.",
+        "workingOut": "\\(4\\ 517\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q7d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(5\\ 012 - 2\\ 847\\)",
+    "opts": [
+      "\\(2\\ 165\\)",
+      "\\(2\\ 265\\)",
+      "\\(2\\ 155\\)",
+      "\\(3\\ 165\\)"
+    ],
+    "a": 0,
+    "hint": "Borrow from the non-zero digits to subtract vertically.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the digits vertically.",
+        "workingOut": "\\(5\\ 012 - 2\\ 847\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the units column by borrowing from tens.",
+        "workingOut": "\\(12 - 7 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the tens column by borrowing across the hundreds place (from thousands).",
+        "workingOut": "\\(10 - 4 = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the hundreds column.",
+        "workingOut": "\\(9 - 8 = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the remaining thousands.",
+        "workingOut": "\\(4 - 2 = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final result.",
+        "workingOut": "\\(2\\ 165\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q1a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Peter has 3 stamp albums. In the first album he has \\(1\\ 548\\) stamps, in the second one \\(1\\ 832\\) stamps, and in the third album \\(2\\ 089\\) stamps.\n\nWhat is the average number of stamps per album?",
+    "opts": [
+      "\\(1\\ 823\\)",
+      "\\(1\\ 832\\)",
+      "\\(1\\ 813\\)",
+      "\\(1\\ 829\\)"
+    ],
+    "a": 0,
+    "hint": "Calculate the sum of all stamps first, then divide by the number of albums.",
+    "solutionSteps": [
+      {
+        "explanation": "Add the number of stamps in all 3 albums to find the total stamps.",
+        "workingOut": "\\(1\\ 548 + 1\\ 832 + 2\\ 089 = 5\\ 469\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the total stamps by the number of albums (3).",
+        "workingOut": "\\(5\\ 469 \\div 3 = 1\\ 823\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the average number of stamps per album.",
+        "workingOut": "\\(1\\ 823\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q1b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Peter has 3 stamp albums. In the first album he has \\(1\\ 548\\) stamps, in the second one \\(1\\ 832\\) stamps, and in the third album \\(2\\ 089\\) stamps.\n\nHow many more stamps will he need to reach \\(8\\ 000\\)?",
+    "opts": [
+      "\\(2\\ 431\\)",
+      "\\(2\\ 531\\)",
+      "\\(2\\ 541\\)",
+      "\\(2\\ 631\\)"
+    ],
+    "a": 1,
+    "hint": "Find the sum of all current stamps first, then subtract it from 8 000.",
+    "solutionSteps": [
+      {
+        "explanation": "Find the total number of stamps currently in the 3 albums.",
+        "workingOut": "\\(1\\ 548 + 1\\ 832 + 2\\ 089 = 5\\ 469\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the current total stamps from the target of 8 000.",
+        "workingOut": "\\(8\\ 000 - 5\\ 469 = 2\\ 531\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the remaining number of stamps needed.",
+        "workingOut": "\\(2\\ 531\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q2",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Jen goes shopping with 60 dollars. She buys 8 mangoes at 1.80 dollars each. She then spends 4.15 dollars on bread, 6.20 dollars on butter, and 3.45 dollars on jam.\n\nHow much will she have left over?",
+    "opts": [
+      "\\(31.80\\text{ dollars}\\)",
+      "\\(32.80\\text{ dollars}\\)",
+      "\\(31.20\\text{ dollars}\\)",
+      "\\(28.20\\text{ dollars}\\)"
+    ],
+    "a": 0,
+    "hint": "Calculate the total cost of mangoes, add the other items, and subtract from 60 dollars.",
+    "solutionSteps": [
+      {
+        "explanation": "Find the total cost of the 8 mangoes.",
+        "workingOut": "\\(8 \\times 1.80\\text{ dollars} = 14.40\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the costs of all items purchased.",
+        "workingOut": "\\(14.40 + 4.15 + 6.20 + 3.45 = 28.20\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the total spent from the starting 60 dollars.",
+        "workingOut": "\\(60.00 - 28.20 = 31.80\\text{ dollars}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q4",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Find the sum of the first \\(40\\) even numbers:\n\\(2 + 4 + 6 + 8 + \\dots + 76 + 78 + 80\\)",
+    "opts": [
+      "\\(1\\ 600\\)",
+      "\\(1\\ 640\\)",
+      "\\(1\\ 680\\)",
+      "\\(1\\ 560\\)"
+    ],
+    "a": 1,
+    "hint": "Use the formula for the sum of the first N even numbers: N x (N + 1).",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the number of terms (N) in the series.",
+        "workingOut": "\\(N = 40\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the arithmetic series sum formula for even numbers.",
+        "workingOut": "\\(\\text{Sum} = N \\times (N + 1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute N = 40 into the formula and evaluate.",
+        "workingOut": "\\(40 \\times (40 + 1) = 40 \\times 41 = 1\\ 640\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "In one week, a jelly bean factory produces \\(4\\ 521\\ 382\\) red beans, \\(2\\ 419\\ 253\\) yellow beans, \\(3\\ 185\\ 241\\) green beans, and \\(1\\ 274\\ 124\\) white beans.\n\nHow many jelly beans are produced altogether?",
+    "opts": [
+      "\\(11\\ 390\\ 000\\)",
+      "\\(11\\ 400\\ 000\\)",
+      "\\(11\\ 410\\ 000\\)",
+      "\\(12\\ 400\\ 000\\)"
+    ],
+    "a": 1,
+    "hint": "Add the four quantities together by aligning them in columns.",
+    "solutionSteps": [
+      {
+        "explanation": "Set up column addition by aligning the numbers by place value.",
+        "workingOut": "\\(4\\ 521\\ 382 + 2\\ 419\\ 253 + 3\\ 185\\ 241 + 1\\ 274\\ 124\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the units, tens, hundreds, and thousands columns with their respective carries.",
+        "workingOut": "\\(382 + 253 + 241 + 124 = 1\\ 000\\text{ (leads to carry of } 1\\text{ to thousands)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the remaining columns (thousands, ten-thousands, hundred-thousands, and millions).",
+        "workingOut": "\\(4\\ 521\\ 000 + 2\\ 419\\ 000 + 3\\ 185\\ 000 + 1\\ 274\\ 000 + 1\\ 000\\text{ (carry)} = 11\\ 400\\ 000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final total sum.",
+        "workingOut": "\\(11\\ 400\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q12a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Find three consecutive numbers that add up to \\(522\\).",
+    "opts": [
+      "\\(173, 174, 175\\)",
+      "\\(172, 174, 176\\)",
+      "\\(174, 175, 176\\)",
+      "\\(171, 172, 173\\)"
+    ],
+    "a": 0,
+    "hint": "Let the middle number be x. The sum of three consecutive numbers is 3x.",
+    "solutionSteps": [
+      {
+        "explanation": "Express the three consecutive numbers algebraically.",
+        "workingOut": "\\(x - 1\\), \\(x\\), and \\(x + 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write their sum as an equation and solve for the middle number x.",
+        "workingOut": "\\((x - 1) + x + (x + 1) = 3x = 522 \\implies x = 174\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the numbers by subtracting 1 and adding 1 to the middle number.",
+        "workingOut": "\\(x - 1 = 173\\), \\(x = 174\\), \\(x + 1 = 175\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q12b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Find three consecutive odd numbers that add up to \\(1\\ 095\\).",
+    "opts": [
+      "\\(361, 363, 365\\)",
+      "\\(363, 365, 367\\)",
+      "\\(365, 367, 369\\)",
+      "\\(367, 369, 371\\)"
+    ],
+    "a": 1,
+    "hint": "Let the middle odd number be x. The sum of three consecutive odd numbers is 3x.",
+    "solutionSteps": [
+      {
+        "explanation": "Express the three consecutive odd numbers algebraically.",
+        "workingOut": "\\(x - 2\\), \\(x\\), and \\(x + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write their sum as an equation and solve for the middle odd number x.",
+        "workingOut": "\\((x - 2) + x + (x + 2) = 3x = 1\\ 095 \\implies x = 365\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the three numbers around 365.",
+        "workingOut": "\\(x - 2 = 363\\), \\(x = 365\\), \\(x + 2 = 367\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q12c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the sum of the following expression:\n\\(72 - 58 + 70 - 56 + 68 - 54 + 66 - 52 + 64 - 50 + 62 - 48 + 60 - 46\\)",
+    "opts": [
+      "\\(91\\)",
+      "\\(98\\)",
+      "\\(105\\)",
+      "\\(84\\)"
+    ],
+    "a": 1,
+    "hint": "Group the expression into pairs of subtraction terms.",
+    "solutionSteps": [
+      {
+        "explanation": "Group the terms into consecutive subtraction pairs.",
+        "workingOut": "\\((72 - 58) + (70 - 56) + (68 - 54) + (66 - 52) + (64 - 50) + (62 - 48) + (60 - 46)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the difference of each pair. Each pair equals 14.",
+        "workingOut": "\\(72 - 58 = 14\\), \\(70 - 56 = 14\\), etc.",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the difference by the number of pairs (7).",
+        "workingOut": "\\(7 \\times 14 = 98\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];
 export const Y5_CH2_QUESTIONS_AR2 = [
@@ -2575,5 +3189,175 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-ar-2-hard-q3a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Reasonableness of solutions",
+    "question": "Firstly, round off the numbers to the nearest hundred, and then estimate the final answer:\n\\(582 + 739\\)",
+    "opts": [
+      "\\(1\\ 320\\)",
+      "\\(1\\ 300\\)",
+      "\\(1\\ 400\\)",
+      "\\(1\\ 200\\)"
+    ],
+    "a": 1,
+    "hint": "Round each number to the nearest multiple of 100 first.",
+    "solutionSteps": [
+      {
+        "explanation": "Round 582 to the nearest hundred. The tens digit is 8 (>= 5), so round up.",
+        "workingOut": "\\(582 \\approx 600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round 739 to the nearest hundred. The tens digit is 3 (< 5), so round down.",
+        "workingOut": "\\(739 \\approx 700\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Estimate the sum using the rounded values.",
+        "workingOut": "\\(600 + 700 = 1\\ 300\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-2-hard-q3b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Reasonableness of solutions",
+    "question": "Firstly, round off the numbers to the nearest hundred, and then estimate the final answer:\n\\(814 - 372\\)",
+    "opts": [
+      "\\(440\\)",
+      "\\(500\\)",
+      "\\(400\\)",
+      "\\(300\\)"
+    ],
+    "a": 2,
+    "hint": "Round each number to the nearest multiple of 100 first.",
+    "solutionSteps": [
+      {
+        "explanation": "Round 814 to the nearest hundred. The tens digit is 1 (< 5), so round down.",
+        "workingOut": "\\(814 \\approx 800\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round 372 to the nearest hundred. The tens digit is 7 (>= 5), so round up.",
+        "workingOut": "\\(372 \\approx 400\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Estimate the difference using the rounded values.",
+        "workingOut": "\\(800 - 400 = 400\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-2-hard-q3c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Reasonableness of solutions",
+    "question": "Firstly, round off the numbers to the nearest hundred, and then estimate the final answer:\n\\(6\\ 380 + 3\\ 092\\)",
+    "opts": [
+      "\\(9\\ 500\\)",
+      "\\(9\\ 400\\)",
+      "\\(9\\ 600\\)",
+      "\\(9\\ 470\\)"
+    ],
+    "a": 0,
+    "hint": "Round both numbers to the nearest hundred before adding.",
+    "solutionSteps": [
+      {
+        "explanation": "Round 6 380 to the nearest hundred. The tens digit is 8 (>= 5), so round up.",
+        "workingOut": "\\(6\\ 380 \\approx 6\\ 400\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round 3 092 to the nearest hundred. The tens digit is 9 (>= 5), so round up.",
+        "workingOut": "\\(3\\ 092 \\approx 3\\ 100\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the rounded values.",
+        "workingOut": "\\(6\\ 400 + 3\\ 100 = 9\\ 500\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-2-hard-q3d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Reasonableness of solutions",
+    "question": "Firstly, round off the numbers to the nearest hundred, and then estimate the final answer:\n\\(5\\ 862 - 1\\ 638\\)",
+    "opts": [
+      "\\(4\\ 200\\)",
+      "\\(4\\ 300\\)",
+      "\\(4\\ 400\\)",
+      "\\(4\\ 220\\)"
+    ],
+    "a": 1,
+    "hint": "Round both numbers to the nearest hundred before subtracting.",
+    "solutionSteps": [
+      {
+        "explanation": "Round 5 862 to the nearest hundred. The tens digit is 6 (>= 5), so round up.",
+        "workingOut": "\\(5\\ 862 \\approx 5\\ 900\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round 1 638 to the nearest hundred. The tens digit is 3 (< 5), so round down.",
+        "workingOut": "\\(1\\ 638 \\approx 1\\ 600\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the rounded values.",
+        "workingOut": "\\(5\\ 900 - 1\\ 600 = 4\\ 300\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-2-hard-q4a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Reasonableness of solutions",
+    "question": "Firstly, round off the numbers to the nearest ten, and then estimate the final answer:\n\\(584 + 319\\)",
+    "opts": [
+      "\\(900\\)",
+      "\\(910\\)",
+      "\\(890\\)",
+      "\\(903\\)"
+    ],
+    "a": 0,
+    "hint": "Round each number to the nearest ten before adding.",
+    "solutionSteps": [
+      {
+        "explanation": "Round 584 to the nearest ten. The units digit is 4 (< 5), so round down.",
+        "workingOut": "\\(584 \\approx 580\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round 319 to the nearest ten. The units digit is 9 (>= 5), so round up.",
+        "workingOut": "\\(319 \\approx 320\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the rounded values.",
+        "workingOut": "\\(580 + 320 = 900\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];

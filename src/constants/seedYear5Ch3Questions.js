@@ -788,6 +788,142 @@ export const Y5_CH3_QUESTIONS_MR1 = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-mr-1-hard-q3",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2, 3, 4-digit × 1-digit",
+    "question": "Steve is training for a marathon and his goal is to cycle \\(1\\ 200\\text{ km}\\) every week. In the first 6 days he averages \\(162\\text{ km}\\).\n\nHow far will he have to cycle on the \\(7\\text{th}\\) day to achieve his goal?",
+    "opts": [
+      "\\(218\\text{ km}\\)",
+      "\\(228\\text{ km}\\)",
+      "\\(238\\text{ km}\\)",
+      "\\(972\\text{ km}\\)"
+    ],
+    "a": 1,
+    "hint": "Find the total distance cycled in 6 days, then subtract from the weekly goal.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the total distance Steve cycled in the first 6 days by multiplying the daily average by 6.",
+        "workingOut": "\\(6 \\times 162 = 972\\text{ km}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the distance cycled so far from the weekly goal of 1 200 km.",
+        "workingOut": "\\(1\\ 200 - 972 = 228\\text{ km}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the distance Steve needs to cycle on the 7th day.",
+        "workingOut": "\\(228\\text{ km}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-1-hard-q5",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2, 3, 4-digit × 1-digit",
+    "question": "Wendy earns \\(165\\text{ dollars}\\) each day for working a five-day week. She has to pay \\(142\\text{ dollars}\\) in tax, \\(245\\text{ dollars}\\) in rent, and \\(115\\text{ dollars}\\) for food.\n\nHow much money does she have left over at the end of the week?",
+    "opts": [
+      "\\(313\\text{ dollars}\\)",
+      "\\(323\\text{ dollars}\\)",
+      "\\(333\\text{ dollars}\\)",
+      "\\(502\\text{ dollars}\\)"
+    ],
+    "a": 1,
+    "hint": "Calculate total weekly earnings, add up all expenses, and find the difference.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate Wendy's total earnings for the 5-day working week.",
+        "workingOut": "\\(5 \\times 165\\text{ dollars} = 825\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum all of Wendy's expenses (tax, rent, and food).",
+        "workingOut": "\\(142 + 245 + 115 = 502\\text{ dollars}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the total expenses from the total earnings to find the money left over.",
+        "workingOut": "\\(825 - 502 = 323\\text{ dollars}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-1-hard-q8",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2, 3, 4-digit × 1-digit",
+    "question": "The average of \\(3\\) numbers is \\(9\\). A fourth number is added to the group, and the new average is \\(11\\).\n\nWhat is the fourth number?",
+    "opts": [
+      "\\(15\\)",
+      "\\(17\\)",
+      "\\(19\\)",
+      "\\(20\\)"
+    ],
+    "a": 1,
+    "hint": "Find the sum of the numbers before and after adding the fourth number.",
+    "solutionSteps": [
+      {
+        "explanation": "Find the sum of the first 3 numbers by multiplying their average by 3.",
+        "workingOut": "\\(3 \\times 9 = 27\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the sum of the 4 numbers by multiplying their new average by 4.",
+        "workingOut": "\\(4 \\times 11 = 44\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the sum of the first 3 numbers from the sum of all 4 numbers to find the fourth number.",
+        "workingOut": "\\(44 - 27 = 17\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-1-hard-q9",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2, 3, 4-digit × 1-digit",
+    "question": "Rebecca had a pair of rabbits which had \\(8\\) baby rabbits: \\(5\\) female and \\(3\\) male. By the following summer, every female rabbit had given birth to \\(4\\) new baby rabbits. Providing that no rabbits died, how many rabbits does Rebecca have in total by the summer?",
+    "opts": [
+      "\\(30\\)",
+      "\\(34\\)",
+      "\\(38\\)",
+      "\\(24\\)"
+    ],
+    "a": 1,
+    "hint": "Count the total number of female rabbits first, then calculate the new births and total rabbits.",
+    "solutionSteps": [
+      {
+        "explanation": "Count the total number of female rabbits. This includes the original mother rabbit and the 5 female babies.",
+        "workingOut": "\\(1\\text{ mother} + 5\\text{ female babies} = 6\\text{ female rabbits}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the number of new baby rabbits born in the summer (4 babies per female).",
+        "workingOut": "\\(6 \\times 4 = 24\\text{ new baby rabbits}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the total number of rabbits: original pair (2) + first litter (8) + new summer births (24).",
+        "workingOut": "\\(2 + 8 + 24 = 34\\text{ rabbits}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];
 export const Y5_CH3_QUESTIONS_MR2 = [
@@ -1070,6 +1206,210 @@ export const Y5_CH3_QUESTIONS_MR2 = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-mr-2-hard-q4c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2 and 3-digit × 2-digit",
+    "question": "Firstly, round off the numbers to the nearest ten, and then estimate the final answer:\n\\(68 \\times 43\\)",
+    "opts": [
+      "\\(2\\ 800\\)",
+      "\\(2\\ 400\\)",
+      "\\(2\\ 700\\)",
+      "\\(3\\ 200\\)"
+    ],
+    "a": 0,
+    "hint": "Round 68 and 43 to the nearest ten before multiplying.",
+    "solutionSteps": [
+      {
+        "explanation": "Round 68 to the nearest ten.",
+        "workingOut": "\\(68 \\approx 70\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round 43 to the nearest ten.",
+        "workingOut": "\\(43 \\approx 40\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the rounded numbers.",
+        "workingOut": "\\(70 \\times 40 = 2\\ 800\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-2-hard-q4e",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2 and 3-digit × 2-digit",
+    "question": "Firstly, round off the numbers to the nearest ten, and then estimate the final answer:\n\\(153 \\times 59\\)",
+    "opts": [
+      "\\(9\\ 000\\)",
+      "\\(9\\ 500\\)",
+      "\\(8\\ 000\\)",
+      "\\(10\\ 000\\)"
+    ],
+    "a": 0,
+    "hint": "Round 153 and 59 to the nearest ten before multiplying.",
+    "solutionSteps": [
+      {
+        "explanation": "Round 153 to the nearest ten.",
+        "workingOut": "\\(153 \\approx 150\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round 59 to the nearest ten.",
+        "workingOut": "\\(59 \\approx 60\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the rounded numbers.",
+        "workingOut": "\\(150 \\times 60 = 9\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-2-hard-q8a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2 and 3-digit × 2-digit",
+    "question": "Multiply the numbers using column multiplication:\n\\(46 \\times 34\\)",
+    "opts": [
+      "\\(1\\ 564\\)",
+      "\\(1\\ 464\\)",
+      "\\(1\\ 554\\)",
+      "\\(1\\ 664\\)"
+    ],
+    "a": 0,
+    "hint": "Multiply 46 by 4 first, then multiply 46 by 30 and add the results.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply 46 by 4 units.",
+        "workingOut": "\\(46 \\times 4 = 184\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply 46 by 3 tens (30).",
+        "workingOut": "\\(46 \\times 30 = 1\\ 380\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the two partial products together.",
+        "workingOut": "\\(184 + 1\\ 380 = 1\\ 564\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-2-hard-q8b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2 and 3-digit × 2-digit",
+    "question": "Multiply the numbers using column multiplication:\n\\(67 \\times 52\\)",
+    "opts": [
+      "\\(3\\ 384\\)",
+      "\\(3\\ 484\\)",
+      "\\(3\\ 474\\)",
+      "\\(3\\ 584\\)"
+    ],
+    "a": 1,
+    "hint": "Multiply 67 by 2 first, then multiply 67 by 50 and add the results.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply 67 by 2 units.",
+        "workingOut": "\\(67 \\times 2 = 134\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply 67 by 5 tens (50).",
+        "workingOut": "\\(67 \\times 50 = 3\\ 350\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the two partial products together.",
+        "workingOut": "\\(134 + 3\\ 350 = 3\\ 484\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-2-hard-q8c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2 and 3-digit × 2-digit",
+    "question": "Multiply the numbers using column multiplication:\n\\(235 \\times 47\\)",
+    "opts": [
+      "\\(11\\ 045\\)",
+      "\\(10\\ 945\\)",
+      "\\(11\\ 145\\)",
+      "\\(10\\ 845\\)"
+    ],
+    "a": 0,
+    "hint": "Multiply 235 by 7 first, then multiply 235 by 40 and add the results.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply 235 by 7 units.",
+        "workingOut": "\\(235 \\times 7 = 1\\ 645\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply 235 by 4 tens (40).",
+        "workingOut": "\\(235 \\times 40 = 9\\ 400\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the two partial products together.",
+        "workingOut": "\\(1\\ 645 + 9\\ 400 = 11\\ 045\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-2-hard-q8d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Multiply 2 and 3-digit × 2-digit",
+    "question": "Multiply the numbers using column multiplication:\n\\(614 \\times 72\\)",
+    "opts": [
+      "\\(44\\ 108\\)",
+      "\\(44\\ 208\\)",
+      "\\(43\\ 208\\)",
+      "\\(45\\ 208\\)"
+    ],
+    "a": 1,
+    "hint": "Multiply 614 by 2 first, then multiply 614 by 70 and add the results.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply 614 by 2 units.",
+        "workingOut": "\\(614 \\times 2 = 1\\ 228\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply 614 by 7 tens (70).",
+        "workingOut": "\\(614 \\times 70 = 42\\ 980\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the two partial products together.",
+        "workingOut": "\\(1\\ 228 + 42\\ 980 = 44\\ 208\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];
 export const Y5_CH3_QUESTIONS_MR3 = [
@@ -2002,6 +2342,45 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-mr-3-hard-q11",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Factors and products",
+    "question": "Peter, Steve, and Robert play bowls regularly. Peter plays every \\(3\\text{rd}\\) day, Steve plays every \\(5\\text{th}\\) day, and Robert plays every \\(6\\text{th}\\) day. They all last played bowls together on the same day on the \\(10\\text{th}\\) of June. In how many days will they all play bowls on the same day again?",
+    "opts": [
+      "\\(15\\text{ days}\\)",
+      "\\(30\\text{ days}\\)",
+      "\\(60\\text{ days}\\)",
+      "\\(90\\text{ days}\\)"
+    ],
+    "a": 1,
+    "hint": "Find the lowest common multiple (LCM) of 3, 5, and 6.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the intervals for each player and plan to find the Lowest Common Multiple (LCM).",
+        "workingOut": "\\(\\text{Peter}: 3,\\ \\text{Steve}: 5,\\ \\text{Robert}: 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the multiples of 3, 5, and 6.",
+        "workingOut": "\\(\\text{Multiples of 3}: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, \\dots\\) \\n \\(\\text{Multiples of 5}: 5, 10, 15, 20, 25, 30, \\dots\\) \\n \\(\\text{Multiples of 6}: 6, 12, 18, 24, 30, \\dots\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the smallest multiple common to all three lists.",
+        "workingOut": "\\(\\text{LCM}(3, 5, 6) = 30\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the number of days until they play together again.",
+        "workingOut": "\\(30\\text{ days}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];
 export const Y5_CH3_QUESTIONS_MR4 = [
@@ -2849,6 +3228,249 @@ export const Y5_CH3_QUESTIONS_MR4 = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-mr-4-hard-q4b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Division with remainders",
+    "question": "Firstly, round off the numbers to the nearest ten, and then estimate the final answer:\n\\(348 \\div 53\\)",
+    "opts": [
+      "\\(7\\)",
+      "\\(6\\)",
+      "\\(8\\)",
+      "\\(9\\)"
+    ],
+    "a": 0,
+    "hint": "Round 348 and 53 to the nearest ten before dividing.",
+    "solutionSteps": [
+      {
+        "explanation": "Round 348 to the nearest ten.",
+        "workingOut": "\\(348 \\approx 350\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round 53 to the nearest ten.",
+        "workingOut": "\\(53 \\approx 50\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the rounded numbers to find the estimated quotient.",
+        "workingOut": "\\(350 \\div 50 = 7\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-4-hard-q4d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Division with remainders",
+    "question": "Firstly, round off the numbers to the nearest ten, and then estimate the final answer:\n\\(5\\ 423 \\div 93\\)",
+    "opts": [
+      "\\(50\\)",
+      "\\(60\\)",
+      "\\(70\\)",
+      "\\(55\\)"
+    ],
+    "a": 1,
+    "hint": "Round 5 423 and 93 to the nearest ten before dividing.",
+    "solutionSteps": [
+      {
+        "explanation": "Round 5 423 to the nearest ten.",
+        "workingOut": "\\(5\\ 423 \\approx 5\\ 420\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round 93 to the nearest ten.",
+        "workingOut": "\\(93 \\approx 90\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the estimate by rounding 5 420 to 5 400 for compatible numbers.",
+        "workingOut": "\\(5\\ 400 \\div 90 = 60\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-4-hard-q9a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Division with remainders",
+    "question": "Find the quotient and remainder for the division:\n\\(497 \\div 15\\)",
+    "opts": [
+      "\\(33\\) remainder \\(2\\)",
+      "\\(33\\) remainder \\(5\\)",
+      "\\(32\\) remainder \\(7\\)",
+      "\\(34\\) remainder \\(1\\)"
+    ],
+    "a": 0,
+    "hint": "Divide 497 by 15 to find the quotient and remainder.",
+    "solutionSteps": [
+      {
+        "explanation": "Find how many times 15 goes into 49 tens.",
+        "workingOut": "\\(49 \\div 15 = 3\\text{ remainder } 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Bring down the 7 and divide 47 units by 15.",
+        "workingOut": "\\(47 \\div 15 = 3\\text{ remainder } 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the quotient and the remainder.",
+        "workingOut": "\\(33\\text{ remainder } 2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-4-hard-q9b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Division with remainders",
+    "question": "Find the quotient and remainder for the division:\n\\(867 \\div 18\\)",
+    "opts": [
+      "\\(48\\) remainder \\(1\\)",
+      "\\(47\\) remainder \\(9\\)",
+      "\\(48\\) remainder \\(3\\)",
+      "\\(49\\) remainder \\(2\\)"
+    ],
+    "a": 2,
+    "hint": "Divide 867 by 18 to find the quotient and remainder.",
+    "solutionSteps": [
+      {
+        "explanation": "Find how many times 18 goes into 86 tens.",
+        "workingOut": "\\(18 \\times 4 = 72 \\implies 86 - 72 = 14\\text{ tens remainder}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Bring down the 7 and divide 147 units by 18.",
+        "workingOut": "\\(18 \\times 8 = 144 \\implies 147 - 144 = 3\\text{ remainder}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the quotient and the remainder.",
+        "workingOut": "\\(48\\text{ remainder } 3\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-4-hard-q9c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Division with remainders",
+    "question": "Find the quotient and remainder for the division:\n\\(620 \\div 23\\)",
+    "opts": [
+      "\\(26\\) remainder \\(22\\)",
+      "\\(27\\) remainder \\(2\\)",
+      "\\(26\\) remainder \\(12\\)",
+      "\\(27\\) remainder \\(12\\)"
+    ],
+    "a": 0,
+    "hint": "Divide 620 by 23 to find the quotient and remainder.",
+    "solutionSteps": [
+      {
+        "explanation": "Find how many times 23 goes into 62 tens.",
+        "workingOut": "\\(23 \\times 2 = 46 \\implies 62 - 46 = 16\\text{ tens remainder}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Bring down the 0 and divide 160 units by 23.",
+        "workingOut": "\\(23 \\times 6 = 138 \\implies 160 - 138 = 22\\text{ remainder}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the quotient and the remainder.",
+        "workingOut": "\\(26\\text{ remainder } 22\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-4-hard-q9d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Division with remainders",
+    "question": "Find the quotient and remainder for the division:\n\\(7\\ 647 \\div 30\\)",
+    "opts": [
+      "\\(254\\) remainder \\(17\\)",
+      "\\(254\\) remainder \\(27\\)",
+      "\\(255\\) remainder \\(7\\)",
+      "\\(253\\) remainder \\(27\\)"
+    ],
+    "a": 1,
+    "hint": "Divide 7 647 by 30 to find the quotient and remainder.",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the hundreds: 76 hundreds divided by 30.",
+        "workingOut": "\\(76 \\div 30 = 2\\text{ remainder } 16\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the tens: 164 tens divided by 30.",
+        "workingOut": "\\(164 \\div 30 = 5\\text{ remainder } 14\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the units: 147 units divided by 30.",
+        "workingOut": "\\(147 \\div 30 = 4\\text{ remainder } 27\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the results to state the final quotient and remainder.",
+        "workingOut": "\\(254\\text{ remainder } 27\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-4-hard-q10",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Division with remainders",
+    "question": "Mr and Mrs Chan, and their three children, spent \\(210\\text{ dollars}\\) in total on chairlift passes for one day. If the children were charged at half the price of an adult ticket, what was the cost of each adult ticket?",
+    "opts": [
+      "\\(50\\text{ dollars}\\)",
+      "\\(55\\text{ dollars}\\)",
+      "\\(60\\text{ dollars}\\)",
+      "\\(45\\text{ dollars}\\)"
+    ],
+    "a": 2,
+    "hint": "Let the adult ticket price be A. The child ticket price is 0.5A.",
+    "solutionSteps": [
+      {
+        "explanation": "Set up an equation representing the total cost of tickets for 2 adults and 3 children.",
+        "workingOut": "\\(2A + 3(0.5A) = 210\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the equation by combining the terms.",
+        "workingOut": "\\(2A + 1.5A = 3.5A = 210\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for the adult ticket price A by dividing 210 by 3.5.",
+        "workingOut": "\\(A = 210 \\div 3.5 = 60\\text{ dollars}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];
 export const Y5_CH3_QUESTIONS_MR6 = [
@@ -3211,5 +3833,243 @@ export const Y5_CH3_QUESTIONS_MR6 = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-mr-6-hard-q6",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Order of operations",
+    "question": "I think of a number, multiply it by \\(6\\), and then add \\(11\\) to give a total of \\(77\\).\n\nWhat is the number I first thought of?",
+    "opts": [
+      "\\(10\\)",
+      "\\(11\\)",
+      "\\(12\\)",
+      "\\(9\\)"
+    ],
+    "a": 1,
+    "hint": "Work backwards: subtract 11 from the total first, then divide by 6.",
+    "solutionSteps": [
+      {
+        "explanation": "Set up an equation where x represents the number first thought of.",
+        "workingOut": "\\(6x + 11 = 77\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract 11 from both sides of the equation to isolate the multiplication term.",
+        "workingOut": "\\(6x = 77 - 11 = 66\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide both sides by 6 to solve for x.",
+        "workingOut": "\\(x = 66 \\div 6 = 11\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-6-hard-q10a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\(20 + 12 \\div 3 + 2\\)",
+    "opts": [
+      "\\(14\\)",
+      "\\(26\\)",
+      "\\(16\\)",
+      "\\(24\\)"
+    ],
+    "a": 1,
+    "hint": "Remember the order of operations (BODMAS/BIDMAS): perform division before addition.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform the division first according to the order of operations.",
+        "workingOut": "\\(12 \\div 3 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the result back and add the remaining numbers from left to right.",
+        "workingOut": "\\(20 + 4 + 2 = 24 + 2 = 26\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final evaluated value.",
+        "workingOut": "\\(26\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-6-hard-q10b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\((20 + 12) \\div 4 + 2\\)",
+    "opts": [
+      "\\(10\\)",
+      "\\(8\\)",
+      "\\(12\\)",
+      "\\(26\\)"
+    ],
+    "a": 0,
+    "hint": "Evaluate the operation inside the parentheses first.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform the addition inside the parentheses first.",
+        "workingOut": "\\(20 + 12 = 32\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Next, perform the division.",
+        "workingOut": "\\(32 \\div 4 = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Finally, add 2.",
+        "workingOut": "\\(8 + 2 = 10\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-6-hard-q10c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\((20 + 12) \\div (6 + 2)\\)",
+    "opts": [
+      "\\(8\\)",
+      "\\(12\\)",
+      "\\(4\\)",
+      "\\(6\\)"
+    ],
+    "a": 2,
+    "hint": "Perform the operations inside both parentheses first, then divide.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform the addition inside the first parentheses.",
+        "workingOut": "\\(20 + 12 = 32\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the addition inside the second parentheses.",
+        "workingOut": "\\(6 + 2 = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the first result by the second result.",
+        "workingOut": "\\(32 \\div 8 = 4\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-6-hard-q10d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\(24 - 8 \\div 2 + 3\\)",
+    "opts": [
+      "\\(11\\)",
+      "\\(23\\)",
+      "\\(19\\)",
+      "\\(21\\)"
+    ],
+    "a": 1,
+    "hint": "Follow the order of operations: perform division before subtraction and addition.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform the division first.",
+        "workingOut": "\\(8 \\div 2 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute back and evaluate addition/subtraction from left to right.",
+        "workingOut": "\\(24 - 4 + 3 = 20 + 3 = 23\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final evaluated value.",
+        "workingOut": "\\(23\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-6-hard-q10e",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\(24 - 8 \\div (2 + 2)\\)",
+    "opts": [
+      "\\(22\\)",
+      "\\(4\\)",
+      "\\(20\\)",
+      "\\(23\\)"
+    ],
+    "a": 0,
+    "hint": "Evaluate the operation inside the parentheses first.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform the addition inside the parentheses first.",
+        "workingOut": "\\(2 + 2 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Next, perform the division.",
+        "workingOut": "\\(8 \\div 4 = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Finally, subtract the quotient from 24.",
+        "workingOut": "\\(24 - 2 = 22\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-mr-6-hard-q10f",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\((24 - 8) \\div 4 + 3\\)",
+    "opts": [
+      "\\(7\\)",
+      "\\(5\\)",
+      "\\(9\\)",
+      "\\(11\\)"
+    ],
+    "a": 0,
+    "hint": "Evaluate the expression inside the parentheses first, then follow the order of operations.",
+    "solutionSteps": [
+      {
+        "explanation": "Subtract inside the parentheses first.",
+        "workingOut": "\\(24 - 8 = 16\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Next, divide by 4.",
+        "workingOut": "\\(16 \\div 4 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Finally, add 3.",
+        "workingOut": "\\(4 + 3 = 7\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];
