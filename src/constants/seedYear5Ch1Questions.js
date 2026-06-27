@@ -12,11 +12,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(11\\)",
+        "text": "\\(15\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(15\\)",
+        "text": "\\(11\\)",
         "imageUrl": ""
       },
       {
@@ -24,7 +24,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Understand that X represents 10 and I represents 1.",
     "solutionSteps": [
       {
@@ -53,23 +53,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{XVII}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(16\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(18\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(15\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(17\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Break down the numeral into X, V, and I, then sum their values.",
     "solutionSteps": [
       {
@@ -98,11 +98,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{XXVI}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(27\\)",
+        "text": "\\(26\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(26\\)",
+        "text": "\\(25\\)",
         "imageUrl": ""
       },
       {
@@ -110,11 +110,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(25\\)",
+        "text": "\\(27\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "X represents 10. Combine the two Xs, V (5) and I (1).",
     "solutionSteps": [
       {
@@ -143,23 +143,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{LIII}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(43\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(52\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(53\\)",
+        "text": "\\(43\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(63\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(53\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Recall that L represents 50 and I represents 1.",
     "solutionSteps": [
       {
@@ -188,23 +188,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{XXXIV}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(36\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(34\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(44\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(24\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(34\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Notice the subtraction combination IV representing 4, added to XXX (30).",
     "solutionSteps": [
       {
@@ -233,7 +233,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(8\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{VIII}\\)",
+        "text": "\\(\\text{IX}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{VII}\\)",
         "imageUrl": ""
       },
       {
@@ -241,15 +245,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{IX}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{VII}\\)",
+        "text": "\\(\\text{VIII}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 3,
     "hint": "Express 8 as 5 + 3, using V and three Is.",
     "solutionSteps": [
       {
@@ -278,10 +278,6 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(13\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{XII}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{XIV}\\)",
         "imageUrl": ""
       },
@@ -290,11 +286,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\text{XII}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\text{VIII}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Express 13 as 10 + 3, using X and three Is.",
     "solutionSteps": [
       {
@@ -323,23 +323,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(18\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{XIIIV}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{IXX}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{XVII}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\text{XVIII}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{XIIIV}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{IXX}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Express 18 as 10 + 5 + 3.",
     "solutionSteps": [
       {
@@ -368,11 +368,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(19\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{XXI}\\)",
+        "text": "\\(\\text{IXX}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{IXX}\\)",
+        "text": "\\(\\text{XVIIII}\\)",
         "imageUrl": ""
       },
       {
@@ -380,7 +380,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{XVIIII}\\)",
+        "text": "\\(\\text{XXI}\\)",
         "imageUrl": ""
       }
     ],
@@ -413,10 +413,6 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(42\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{LXII}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{XLII}\\)",
         "imageUrl": ""
       },
@@ -427,9 +423,13 @@ export const Y5_CH1_QUESTIONS = [
       {
         "text": "\\(\\text{LII}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{LXII}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Recall that 40 is represented as XL (ten less than fifty).",
     "solutionSteps": [
       {
@@ -458,7 +458,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(132\\) in words.",
     "opts": [
       {
-        "text": "One hundred and thirty",
+        "text": "One hundred and thirty-two",
         "imageUrl": ""
       },
       {
@@ -470,7 +470,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "One hundred and thirty-two",
+        "text": "One hundred and thirty",
         "imageUrl": ""
       }
     ],
@@ -546,19 +546,19 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(560\\) in words.",
     "opts": [
       {
-        "text": "Five hundred and sixty",
-        "imageUrl": ""
-      },
-      {
         "text": "Five hundred and six",
         "imageUrl": ""
       },
       {
-        "text": "Five hundred sixty",
+        "text": "Five hundred and sixty",
         "imageUrl": ""
       },
       {
         "text": "Fifty-six",
+        "imageUrl": ""
+      },
+      {
+        "text": "Five hundred sixty",
         "imageUrl": ""
       }
     ],
@@ -590,11 +590,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(1542\\) in words.",
     "opts": [
       {
-        "text": "One thousand, five hundred and forty-two",
+        "text": "One thousand, five hundred and fourteen-two",
         "imageUrl": ""
       },
       {
-        "text": "One thousand and five hundred forty-two",
+        "text": "One thousand, five hundred and forty-two",
         "imageUrl": ""
       },
       {
@@ -602,11 +602,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "One thousand, five hundred and fourteen-two",
+        "text": "One thousand and five hundred forty-two",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Read the thousands place first, followed by the hundreds, tens, and units.",
     "solutionSteps": [
       {
@@ -635,23 +635,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following number as an ordinary numeral:\nThree hundred and ninety-six",
     "opts": [
       {
-        "text": "\\(369\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(396\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(3096\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(30096\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(369\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3096\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Read the number of hundreds and the final double-digit number.",
     "solutionSteps": [
       {
@@ -680,11 +680,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following number as an ordinary numeral:\nFive hundred and thirty-two",
     "opts": [
       {
-        "text": "\\(50032\\)",
+        "text": "\\(5032\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5032\\)",
+        "text": "\\(523\\)",
         "imageUrl": ""
       },
       {
@@ -692,7 +692,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(523\\)",
+        "text": "\\(50032\\)",
         "imageUrl": ""
       }
     ],
@@ -725,11 +725,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following expanded notation as an ordinary numeral:\n\\((7 \\times 100) + (5 \\times 10) + (4 \\times 1)\\)",
     "opts": [
       {
-        "text": "\\(70054\\)",
+        "text": "\\(7054\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(7054\\)",
+        "text": "\\(754\\)",
         "imageUrl": ""
       },
       {
@@ -737,11 +737,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(754\\)",
+        "text": "\\(70054\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Find the values of each bracketed term and add them.",
     "solutionSteps": [
       {
@@ -770,11 +770,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following expanded notation as an ordinary numeral:\n\\((3 \\times 100) + (4 \\times 10) + (7 \\times 1)\\)",
     "opts": [
       {
-        "text": "\\(374\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(30047\\)",
+        "text": "\\(347\\)",
         "imageUrl": ""
       },
       {
@@ -782,11 +778,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(347\\)",
+        "text": "\\(30047\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(374\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Add 300, 40 and 7.",
     "solutionSteps": [
       {
@@ -819,15 +819,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(90\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(9\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(9000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(90\\)",
         "imageUrl": ""
       }
     ],
@@ -860,11 +860,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Find the value of the underlined digit in the number:\n\\(\\underline{2}\\) 549",
     "opts": [
       {
-        "text": "\\(2000\\)",
+        "text": "\\(20000\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(20000\\)",
+        "text": "\\(2000\\)",
         "imageUrl": ""
       },
       {
@@ -876,7 +876,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Identify the column for the digit 2.",
     "solutionSteps": [
       {
@@ -905,23 +905,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Find the value of the underlined digit in the number:\n6 89\\(\\underline{1}\\)",
     "opts": [
       {
-        "text": "\\(10\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(100\\)",
+        "text": "\\(10\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(0\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(100\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Identify the place value of the digit 1.",
     "solutionSteps": [
       {
@@ -949,15 +949,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(30000\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(300\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(30\\)",
         "imageUrl": ""
       }
     ],
@@ -1030,7 +1030,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{XXI}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(11\\)",
+        "text": "\\(22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21\\)",
         "imageUrl": ""
       },
       {
@@ -1038,15 +1042,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(22\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(21\\)",
+        "text": "\\(11\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "X represents 10 and I represents 1.",
     "solutionSteps": [
       {
@@ -1074,19 +1074,19 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(11\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(15\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(9\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Since I is before X, subtract 1 from 10.",
     "solutionSteps": [
       {
@@ -1105,15 +1105,15 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{XXVI}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(27\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(36\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(24\\)",
         "imageUrl": ""
       },
       {
@@ -1140,23 +1140,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{LX}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(50\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(60\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(40\\)",
+        "text": "\\(50\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(70\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "L represents 50 and X represents 10.",
     "solutionSteps": [
       {
@@ -1175,15 +1175,15 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(4\\) as a Roman numeral.",
     "opts": [
       {
+        "text": "\\(\\text{IIII}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\text{VI}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\text{V}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{IIII}\\)",
         "imageUrl": ""
       },
       {
@@ -1210,23 +1210,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(15\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{XVI}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{VX}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{XIIIII}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\text{XV}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{XVI}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{XIIIII}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Write 15 as 10 + 5.",
     "solutionSteps": [
       {
@@ -1250,23 +1250,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(23\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{XXIII}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{XVIII}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{XXII}\\)",
+        "text": "\\(\\text{XXIII}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\text{XIIIV}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{XXII}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Write 23 as 20 + 3.",
     "solutionSteps": [
       {
@@ -1285,11 +1285,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(56\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{LVI}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{XLVI}\\)",
+        "text": "\\(\\text{LXVI}\\)",
         "imageUrl": ""
       },
       {
@@ -1297,11 +1293,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{LXVI}\\)",
+        "text": "\\(\\text{XLVI}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{LVI}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 3,
     "hint": "Write 56 as 50 + 5 + 1.",
     "solutionSteps": [
       {
@@ -1324,7 +1324,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{LXXX}\\)",
+        "text": "\\(\\text{LXX}\\)",
         "imageUrl": ""
       },
       {
@@ -1332,11 +1332,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{LXX}\\)",
+        "text": "\\(\\text{LXXX}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Write 70 as 50 + 20.",
     "solutionSteps": [
       {
@@ -1355,11 +1355,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(147\\) in words.",
     "opts": [
       {
-        "text": "One hundred forty seven",
-        "imageUrl": ""
-      },
-      {
-        "text": "One hundred and forty-seven",
+        "text": "One hundred and forty-six",
         "imageUrl": ""
       },
       {
@@ -1367,7 +1363,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "One hundred and forty-six",
+        "text": "One hundred forty seven",
+        "imageUrl": ""
+      },
+      {
+        "text": "One hundred and forty-seven",
         "imageUrl": ""
       }
     ],
@@ -1394,11 +1394,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(306\\) in words.",
     "opts": [
       {
-        "text": "Thirty-six",
+        "text": "Three hundred and sixty",
         "imageUrl": ""
       },
       {
-        "text": "Three hundred and sixty",
+        "text": "Thirty-six",
         "imageUrl": ""
       },
       {
@@ -1432,7 +1432,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Four hundred and seventy",
+        "text": "Forty-seven",
         "imageUrl": ""
       },
       {
@@ -1440,7 +1440,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Forty-seven",
+        "text": "Four hundred and seventy",
         "imageUrl": ""
       }
     ],
@@ -1462,15 +1462,15 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(1792\\) in words.",
     "opts": [
       {
-        "text": "One thousand, seven hundred and ninety-two",
-        "imageUrl": ""
-      },
-      {
         "text": "One thousand, seven hundred and nineteen-two",
         "imageUrl": ""
       },
       {
         "text": "Seventeen hundred and ninety-two",
+        "imageUrl": ""
+      },
+      {
+        "text": "One thousand, seven hundred and ninety-two",
         "imageUrl": ""
       },
       {
@@ -1496,23 +1496,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following number as an ordinary numeral:\nOne hundred and fifty-three",
     "opts": [
       {
-        "text": "\\(135\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(10053\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(153\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(135\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(1053\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(10053\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Combine 100 and 53.",
     "solutionSteps": [
       {
@@ -1535,11 +1535,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(628\\)",
+        "text": "\\(6028\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6028\\)",
+        "text": "\\(628\\)",
         "imageUrl": ""
       },
       {
@@ -1547,7 +1547,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Combine 600 and 28.",
     "solutionSteps": [
       {
@@ -1566,11 +1566,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following number as an ordinary numeral:\nFour hundred and nine",
     "opts": [
       {
-        "text": "\\(4009\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(409\\)",
+        "text": "\\(490\\)",
         "imageUrl": ""
       },
       {
@@ -1578,11 +1574,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(490\\)",
+        "text": "\\(4009\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(409\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Since there is no 'ty' word, the tens digit is 0.",
     "solutionSteps": [
       {
@@ -1636,6 +1636,10 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following expanded notation as an ordinary numeral:\n\\((5 \\times 100) + (7 \\times 10) + (4 \\times 1)\\)",
     "opts": [
       {
+        "text": "\\(574\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(547\\)",
         "imageUrl": ""
       },
@@ -1644,15 +1648,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(574\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(50074\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Multiply each bracket and add.",
     "solutionSteps": [
       {
@@ -1676,11 +1676,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following expanded notation as an ordinary numeral:\n\\((8 \\times 100) + (0 \\times 10) + (5 \\times 1)\\)",
     "opts": [
       {
-        "text": "\\(850\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(8005\\)",
+        "text": "\\(80005\\)",
         "imageUrl": ""
       },
       {
@@ -1688,11 +1684,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(80005\\)",
+        "text": "\\(8005\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(850\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Notice the tens place is multiplied by 0.",
     "solutionSteps": [
       {
@@ -1716,6 +1716,10 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(452\\) in expanded notation.",
     "opts": [
       {
+        "text": "\\((4 \\times 10) + (5 \\times 1) + (2 \\times 1)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\((4 \\times 1000) + (5 \\times 10) + (2 \\times 1)\\)",
         "imageUrl": ""
       },
@@ -1724,15 +1728,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((4 \\times 10) + (5 \\times 1) + (2 \\times 1)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((4 \\times 100) + (2 \\times 10) + (5 \\times 1)\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Write each digit multiplied by its place value.",
     "solutionSteps": [
       {
@@ -1764,11 +1764,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((7 \\times 100) + (8 \\times 10) + (4 \\times 1)\\)",
+        "text": "\\((7 \\times 1000) + (4 \\times 10) + (8 \\times 1)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((7 \\times 1000) + (4 \\times 10) + (8 \\times 1)\\)",
+        "text": "\\((7 \\times 100) + (8 \\times 10) + (4 \\times 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -1791,11 +1791,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(590\\) in expanded notation.",
     "opts": [
       {
-        "text": "\\((5 \\times 100) + (0 \\times 10) + (9 \\times 1)\\)",
+        "text": "\\((5 \\times 100) + (9 \\times 10)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((5 \\times 10) + (9 \\times 1) + (0 \\times 1)\\)",
+        "text": "\\((5 \\times 100) + (0 \\times 10) + (9 \\times 1)\\)",
         "imageUrl": ""
       },
       {
@@ -1803,7 +1803,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((5 \\times 100) + (9 \\times 10)\\)",
+        "text": "\\((5 \\times 10) + (9 \\times 1) + (0 \\times 1)\\)",
         "imageUrl": ""
       }
     ],
@@ -1826,7 +1826,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(803\\) in expanded notation.",
     "opts": [
       {
-        "text": "\\((8 \\times 100) + (3 \\times 10) + (0 \\times 1)\\)",
+        "text": "\\((8 \\times 100) + (3 \\times 1)\\)",
         "imageUrl": ""
       },
       {
@@ -1834,15 +1834,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((8 \\times 100) + (3 \\times 1)\\)",
+        "text": "\\((8 \\times 100) + (0 \\times 10) + (3 \\times 1)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((8 \\times 100) + (0 \\times 10) + (3 \\times 1)\\)",
+        "text": "\\((8 \\times 100) + (3 \\times 10) + (0 \\times 1)\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 2,
     "hint": "The tens digit is 0, so write 0 x 10.",
     "solutionSteps": [
       {
@@ -1861,7 +1861,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{XVII}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(22\\)",
+        "text": "\\(18\\)",
         "imageUrl": ""
       },
       {
@@ -1869,15 +1869,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(17\\)",
+        "text": "\\(22\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(18\\)",
+        "text": "\\(17\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 3,
     "hint": "X represents 10, V represents 5, and I represents 1.",
     "solutionSteps": [
       {
@@ -1905,11 +1905,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(39\\)",
+        "text": "\\(28\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(28\\)",
+        "text": "\\(39\\)",
         "imageUrl": ""
       },
       {
@@ -1941,11 +1941,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{XLII}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(62\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(42\\)",
+        "text": "\\(43\\)",
         "imageUrl": ""
       },
       {
@@ -1953,11 +1949,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(43\\)",
+        "text": "\\(62\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "XL represents 40 (ten less than fifty), and II represents 2.",
     "solutionSteps": [
       {
@@ -2021,11 +2021,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(24\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{XXVI}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{XXIIII}\\)",
+        "text": "\\(\\text{XXIV}\\)",
         "imageUrl": ""
       },
       {
@@ -2033,11 +2029,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{XXIV}\\)",
+        "text": "\\(\\text{XXIIII}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{XXVI}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Write 24 as 20 + 4, where 4 is IV.",
     "solutionSteps": [
       {
@@ -2066,7 +2066,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(39\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{XXXIX}\\)",
+        "text": "\\(\\text{XLIX}\\)",
         "imageUrl": ""
       },
       {
@@ -2078,10 +2078,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\text{XXXIX}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 3,
     "hint": "Write 39 as 30 + 9, where 9 is IX.",
     "solutionSteps": [
       {
@@ -2110,10 +2111,6 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(64\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{LXVI}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{LXIIII}\\)",
         "imageUrl": ""
       },
@@ -2124,9 +2121,13 @@ export const Y5_CH1_QUESTIONS = [
       {
         "text": "\\(\\text{XLIV}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{LXVI}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Write 64 as 60 + 4.",
     "solutionSteps": [
       {
@@ -2155,23 +2156,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(95\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{XCIV}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{LXXXXV}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{XCV}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{XCIV}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\text{CXV}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{LXXXXV}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Write 95 as 90 + 5, where 90 is XC (ten less than a hundred).",
     "solutionSteps": [
       {
@@ -2200,6 +2201,10 @@ export const Y5_CH1_QUESTIONS = [
     "question": "What is the place value of the digit \\(7\\) in the number \\(72\\)?",
     "opts": [
       {
+        "text": "Seventy",
+        "imageUrl": ""
+      },
+      {
         "text": "Tens",
         "imageUrl": ""
       },
@@ -2208,15 +2213,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Seventy",
-        "imageUrl": ""
-      },
-      {
         "text": "Units",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Determine the position of the digit 7 starting from the right.",
     "solutionSteps": [
       {
@@ -2240,23 +2241,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "What is the place value of the digit \\(7\\) in the number \\(537\\)?",
     "opts": [
       {
-        "text": "Hundreds",
-        "imageUrl": ""
-      },
-      {
         "text": "Tens",
         "imageUrl": ""
       },
       {
-        "text": "Seven",
+        "text": "Hundreds",
         "imageUrl": ""
       },
       {
         "text": "Units",
         "imageUrl": ""
+      },
+      {
+        "text": "Seven",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Check the position of 7.",
     "solutionSteps": [
       {
@@ -2275,7 +2276,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "What is the place value of the digit \\(7\\) in the number \\(702\\)?",
     "opts": [
       {
-        "text": "Tens",
+        "text": "Hundreds",
         "imageUrl": ""
       },
       {
@@ -2283,7 +2284,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Hundreds",
+        "text": "Tens",
         "imageUrl": ""
       },
       {
@@ -2291,7 +2292,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Check the position of 7.",
     "solutionSteps": [
       {
@@ -2310,23 +2311,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "What is the place value of the digit \\(7\\) in the number \\(4672\\)?",
     "opts": [
       {
-        "text": "Thousands",
-        "imageUrl": ""
-      },
-      {
-        "text": "Tens",
-        "imageUrl": ""
-      },
-      {
         "text": "Seventy",
         "imageUrl": ""
       },
       {
         "text": "Hundreds",
         "imageUrl": ""
+      },
+      {
+        "text": "Thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Tens",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Check the position of 7.",
     "solutionSteps": [
       {
@@ -2345,11 +2346,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(683\\) in words.",
     "opts": [
       {
-        "text": "Sixty-eighty-three",
+        "text": "Six hundred and eighty-three",
         "imageUrl": ""
       },
       {
-        "text": "Six hundred and eighty-three",
+        "text": "Sixty-eighty-three",
         "imageUrl": ""
       },
       {
@@ -2361,7 +2362,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Format the hundreds place followed by tens and units.",
     "solutionSteps": [
       {
@@ -2380,23 +2381,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(4312\\) in words.",
     "opts": [
       {
-        "text": "Four thousand, three hundred and twenty-one",
-        "imageUrl": ""
-      },
-      {
         "text": "Forty-three hundred and twelve",
-        "imageUrl": ""
-      },
-      {
-        "text": "Four thousand, three hundred and twelve",
         "imageUrl": ""
       },
       {
         "text": "Four thousand and three hundred twelve",
         "imageUrl": ""
+      },
+      {
+        "text": "Four thousand, three hundred and twenty-one",
+        "imageUrl": ""
+      },
+      {
+        "text": "Four thousand, three hundred and twelve",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Combine 4 thousand, 3 hundred, and 12.",
     "solutionSteps": [
       {
@@ -2415,23 +2416,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(5072\\) in words.",
     "opts": [
       {
-        "text": "Five thousand and seventy-two",
-        "imageUrl": ""
-      },
-      {
         "text": "Fifty thousand and seventy-two",
         "imageUrl": ""
       },
       {
-        "text": "Five thousand, seventy-two",
+        "text": "Five thousand and seventy-two",
         "imageUrl": ""
       },
       {
         "text": "Five thousand, seven hundred and two",
         "imageUrl": ""
+      },
+      {
+        "text": "Five thousand, seventy-two",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Since there is a 0 in the hundreds column, skip it.",
     "solutionSteps": [
       {
@@ -2450,23 +2451,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following numbers in descending order:\n\\(7, 13, 19, 5, 14, 17\\)",
     "opts": [
       {
-        "text": "\\(19, 17, 14, 13, 7, 5\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(19, 14, 17, 13, 7, 5\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(19, 17, 13, 14, 7, 5\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(5, 7, 13, 14, 17, 19\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(19, 17, 14, 13, 7, 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(19, 14, 17, 13, 7, 5\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Descending order means from largest to smallest.",
     "solutionSteps": [
       {
@@ -2495,11 +2496,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following numbers in descending order:\n\\(27, 4, 9, 32, 25, 11\\)",
     "opts": [
       {
-        "text": "\\(32, 27, 25, 11, 9, 4\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4, 9, 11, 25, 27, 32\\)",
+        "text": "\\(32, 27, 25, 9, 11, 4\\)",
         "imageUrl": ""
       },
       {
@@ -2507,11 +2504,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(32, 27, 25, 9, 11, 4\\)",
+        "text": "\\(4, 9, 11, 25, 27, 32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32, 27, 25, 11, 9, 4\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 3,
     "hint": "Descending means largest to smallest.",
     "solutionSteps": [
       {
@@ -2530,7 +2531,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following numbers in ascending order:\n\\(19, 21, 7, 23, 4, 11\\)",
     "opts": [
       {
-        "text": "\\(4, 7, 11, 19, 21, 23\\)",
+        "text": "\\(4, 7, 11, 21, 19, 23\\)",
         "imageUrl": ""
       },
       {
@@ -2538,15 +2539,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4, 7, 11, 21, 19, 23\\)",
+        "text": "\\(4, 7, 19, 11, 21, 23\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(4, 7, 19, 11, 21, 23\\)",
+        "text": "\\(4, 7, 11, 19, 21, 23\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 3,
     "hint": "Ascending order means from smallest to largest.",
     "solutionSteps": [
       {
@@ -2575,6 +2576,10 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following numbers in ascending order:\n\\(83, 49, 11, 68, 23, 18\\)",
     "opts": [
       {
+        "text": "\\(11, 18, 23, 49, 68, 83\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(83, 68, 49, 23, 18, 11\\)",
         "imageUrl": ""
       },
@@ -2583,15 +2588,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(11, 18, 23, 49, 68, 83\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(11, 18, 23, 68, 49, 83\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Ascending means smallest to largest.",
     "solutionSteps": [
       {
@@ -2614,11 +2615,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(536\\) (Five hundred and thirty-six)",
+        "text": "\\(536\\) (Fifty-three six)",
         "imageUrl": ""
       },
       {
-        "text": "\\(536\\) (Fifty-three six)",
+        "text": "\\(536\\) (Five hundred and thirty-six)",
         "imageUrl": ""
       },
       {
@@ -2626,7 +2627,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Read the value in H, T, and U respectively.",
     "solutionSteps": [
       {
@@ -2655,7 +2656,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Refer to the abacus diagram (b) with:\n- Thousands (Th) has 5 beads\n- Hundreds (H) has 3 beads\n- Tens (T) has 0 beads\n- Units (U) has 2 beads\n\nWrite down this numeral and its representation in words.",
     "opts": [
       {
-        "text": "\\(5302\\) (Five thousand, three hundred and two)",
+        "text": "\\(5302\\) (Five thousand three hundred two)",
         "imageUrl": ""
       },
       {
@@ -2663,15 +2664,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(5302\\) (Five thousand three hundred two)",
+        "text": "\\(5320\\) (Five thousand, three hundred and twenty)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5320\\) (Five thousand, three hundred and twenty)",
+        "text": "\\(5302\\) (Five thousand, three hundred and two)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 3,
     "hint": "Read Th, H, T, and U respectively.",
     "solutionSteps": [
       {
@@ -2700,23 +2701,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Refer to the abacus diagram (c) with:\n- Hundreds (H) has 5 beads\n- Tens (T) has 0 beads\n- Units (U) has 4 beads\n\nWrite down this numeral and its representation in words.",
     "opts": [
       {
-        "text": "\\(504\\) (Five hundred and four)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(5004\\) (Five thousand and four)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(540\\) (Five hundred and forty)",
         "imageUrl": ""
       },
       {
         "text": "\\(504\\) (Five hundred four)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(504\\) (Five hundred and four)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(540\\) (Five hundred and forty)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Read H, T, and U respectively.",
     "solutionSteps": [
       {
