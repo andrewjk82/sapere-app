@@ -19,6 +19,7 @@ import { Y12A_CH1F_QUESTIONS } from './seedYear12aCh1FQuestions.js';
 import { Y12A_CH1G_QUESTIONS } from './seedYear12aCh1GQuestions.js';
 import { Y12A_CH1H_QUESTIONS } from './seedYear12aCh1HQuestions.js';
 import { Y12A_CH1I_QUESTIONS } from './seedYear12aCh1IQuestions.js';
+import { Y12A_CH1J_QUESTIONS } from './seedYear12aCh1JQuestions.js';
 import { Y12A_CH6_QUESTIONS } from './seedYear12aCh6Questions.js';
 import { Y12A_CH6B_QUESTIONS } from './seedYear12aCh6BQuestions.js';
 import { Y12A_CH6C_QUESTIONS } from './seedYear12aCh6CQuestions.js';
@@ -651,6 +652,16 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 12a',
     seed: Y12A_CH1I_QUESTIONS,
     label: 'Y12A Ch1 · 1I Recurring decimals and geometric series',
+  },
+  {
+    chapterId: 'y12a-1',
+    chapterTitle: 'Chapter 1: Sequences and series',
+    topicId: 'y12a-1j',
+    topicCode: '1J',
+    topicTitle: 'Revision',
+    year: 'Year 12a',
+    seed: Y12A_CH1J_QUESTIONS,
+    label: 'Y12A Ch1 · 1J Revision',
   },
   {
     chapterId: 'y12a-3',

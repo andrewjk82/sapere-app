@@ -3022,7 +3022,7 @@ export const CURRICULUM_DATA = {
       {
         id: 'y12a-1',
         title: 'Chapter 1: Sequences and series',
-        modules: 9,
+        modules: 10,
         topics: [
           { id: 'y12a-1a', code: '1A', title: 'Miscellaneous questions' },
           { id: 'y12a-1b', code: '1B', title: 'Miscellaneous questions' },
@@ -3034,7 +3034,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12a-1F', code: '1F', title: 'Summing an arithmetic series' },
           { id: 'y12a-1G', code: '1G', title: 'Summing a geometric series' },
           { id: 'y12a-1H', code: '1H', title: 'The limiting sum of a geometric series' },
-          { id: 'y12a-1I', code: '1I', title: 'Recurring decimals and geometric series' }
+          { id: 'y12a-1I', code: '1I', title: 'Recurring decimals and geometric series' },
+          { id: 'y12a-1j', code: '1J', title: 'Revision' }
         ]
       },
       {
