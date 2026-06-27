@@ -3034,5 +3034,1238 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       }
     ],
     "graphData": null
+  },
+  {
+    "id": "y6-wn-q1a_p17",
+    "c": "WN1",
+    "t": "Roman Numerals",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XVIII\\)",
+    "a": 0,
+    "opts": [
+      "\\(18\\)",
+      "\\(17\\)",
+      "\\(19\\)",
+      "\\(23\\)"
+    ],
+    "h": "Add the values of the symbols: X = 10, V = 5, I = 1.",
+    "s": "X = 10, V = 5, III = 3. 10 + 5 + 3 = 18.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the values of individual Roman symbols.",
+        "workingOut": "\\(X = 10\\), \\(V = 5\\), \\(I = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the values from left to right.",
+        "workingOut": "\\(10 + 5 + 1 + 1 + 1 = 18\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q1b_p17",
+    "c": "WN1",
+    "t": "Roman Numerals",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XXIX\\)",
+    "a": 0,
+    "opts": [
+      "\\(29\\)",
+      "\\(31\\)",
+      "\\(28\\)",
+      "\\(39\\)"
+    ],
+    "h": "X = 10. IX is a subtractive pair (10 - 1 = 9).",
+    "s": "XX = 20. IX = 9. 20 + 9 = 29.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify individual symbols and subtractive pairs.",
+        "workingOut": "\\(X = 10\\), \\(IX = 10 - 1 = 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the values.",
+        "workingOut": "\\(10 + 10 + 9 = 29\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q1c_p17",
+    "c": "WN1",
+    "t": "Roman Numerals",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XLII\\)",
+    "a": 0,
+    "opts": [
+      "\\(42\\)",
+      "\\(62\\)",
+      "\\(43\\)",
+      "\\(52\\)"
+    ],
+    "h": "XL is a subtractive pair (50 - 10 = 40).",
+    "s": "XL = 40. II = 2. 40 + 2 = 42.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify individual symbols and subtractive pairs.",
+        "workingOut": "\\(XL = 50 - 10 = 40\\), \\(I = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the values.",
+        "workingOut": "\\(40 + 1 + 1 = 42\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q1d_p17",
+    "c": "WN1",
+    "t": "Roman Numerals",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(LXXII\\)",
+    "a": 0,
+    "opts": [
+      "\\(72\\)",
+      "\\(62\\)",
+      "\\(82\\)",
+      "\\(73\\)"
+    ],
+    "h": "L = 50, X = 10, I = 1.",
+    "s": "L = 50, XX = 20, II = 2. 50 + 20 + 2 = 72.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the values of individual symbols.",
+        "workingOut": "\\(L = 50\\), \\(X = 10\\), \\(I = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the values from left to right.",
+        "workingOut": "\\(50 + 10 + 10 + 1 + 1 = 72\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q2a_p17",
+    "c": "WN1",
+    "t": "Roman Numerals",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Convert the following number to Roman numerals:\n\\(24\\)",
+    "a": 0,
+    "opts": [
+      "\\(XXIV\\)",
+      "\\(XXVI\\)",
+      "\\(XXIIII\\)",
+      "\\(XIV\\)"
+    ],
+    "h": "Break 24 into 20 (XX) and 4 (IV).",
+    "s": "24 = 20 + 4. 20 is XX, 4 is IV. Combined: XXIV.",
+    "solutionSteps": [
+      {
+        "explanation": "Decompose 24 into tens and units.",
+        "workingOut": "\\(24 = 20 + 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the Roman numeral representation for each part.",
+        "workingOut": "\\(20 = XX\\), \\(4 = IV\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the representations.",
+        "workingOut": "\\text{XXIV}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q2b_p17",
+    "c": "WN1",
+    "t": "Roman Numerals",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Convert the following number to Roman numerals:\n\\(39\\)",
+    "a": 0,
+    "opts": [
+      "\\(XXXIX\\)",
+      "\\(XXXVII\\)",
+      "\\(XXIX\\)",
+      "\\(XLIX\\)"
+    ],
+    "h": "Break 39 into 30 (XXX) and 9 (IX).",
+    "s": "39 = 30 + 9. 30 is XXX, 9 is IX. Combined: XXXIX.",
+    "solutionSteps": [
+      {
+        "explanation": "Decompose 39 into tens and units.",
+        "workingOut": "\\(39 = 30 + 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert each part to Roman symbols.",
+        "workingOut": "\\(30 = XXX\\), \\(9 = IX\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the symbols.",
+        "workingOut": "\\text{XXXIX}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q2c_p17",
+    "c": "WN1",
+    "t": "Roman Numerals",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Convert the following number to Roman numerals:\n\\(64\\)",
+    "a": 0,
+    "opts": [
+      "\\(LXIV\\)",
+      "\\(LXVI\\)",
+      "\\(XLIV\\)",
+      "\\(LXXIV\\)"
+    ],
+    "h": "Break 64 into 60 (LX) and 4 (IV).",
+    "s": "64 = 60 + 4. 60 is LX, 4 is IV. Combined: LXIV.",
+    "solutionSteps": [
+      {
+        "explanation": "Decompose 64 into tens and units.",
+        "workingOut": "\\(64 = 60 + 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert each part to Roman symbols.",
+        "workingOut": "\\(60 = LX\\), \\(4 = IV\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the symbols.",
+        "workingOut": "\\text{LXIV}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q2d_p17",
+    "c": "WN1",
+    "t": "Roman Numerals",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Convert the following number to Roman numerals:\n\\(95\\)",
+    "a": 0,
+    "opts": [
+      "\\(XCV\\)",
+      "\\(LXXXXV\\)",
+      "\\(CXV\\)",
+      "\\(CXCV\\)"
+    ],
+    "h": "90 is represented as XC (10 before 100).",
+    "s": "95 = 90 + 5. 90 is XC, 5 is V. Combined: XCV.",
+    "solutionSteps": [
+      {
+        "explanation": "Decompose 95 into tens and units.",
+        "workingOut": "\\(95 = 90 + 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Represent 90 using subtractive notation.",
+        "workingOut": "\\(90 = XC\\), \\(5 = V\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the symbols.",
+        "workingOut": "\\text{XCV}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q3a_p17",
+    "c": "WN2",
+    "t": "Place Value",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "What is the place value of the digit \\(7\\) in the following number:\n\\(72\\)",
+    "a": 0,
+    "opts": [
+      "\\(70\\)",
+      "\\(7\\)",
+      "\\(700\\)",
+      "\\(7000\\)"
+    ],
+    "h": "Identify the place value column of the digit 7.",
+    "s": "In 72, the digit 7 is in the tens position, so its value is 70.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the position of 7 in 72.",
+        "workingOut": "\\text{7 is in the tens column.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the numerical place value.",
+        "workingOut": "\\(7 \\times 10 = 70\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q3b_p17",
+    "c": "WN2",
+    "t": "Place Value",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "What is the place value of the digit \\(7\\) in the following number:\n\\(537\\)",
+    "a": 0,
+    "opts": [
+      "\\(7\\)",
+      "\\(70\\)",
+      "\\(700\\)",
+      "\\(7000\\)"
+    ],
+    "h": "Identify the place value column of the digit 7.",
+    "s": "In 537, the digit 7 is in the units position, so its value is 7.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the position of 7 in 537.",
+        "workingOut": "\\text{7 is in the units column.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the numerical place value.",
+        "workingOut": "\\(7 \\times 1 = 7\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q3c_p17",
+    "c": "WN2",
+    "t": "Place Value",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "What is the place value of the digit \\(7\\) in the following number:\n\\(702\\)",
+    "a": 0,
+    "opts": [
+      "\\(700\\)",
+      "\\(70\\)",
+      "\\(7\\)",
+      "\\(7000\\)"
+    ],
+    "h": "Identify the place value column of the digit 7.",
+    "s": "In 702, the digit 7 is in the hundreds position, so its value is 700.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the position of 7 in 702.",
+        "workingOut": "\\text{7 is in the hundreds column.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the numerical place value.",
+        "workingOut": "\\(7 \\times 100 = 700\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q3d_p17",
+    "c": "WN2",
+    "t": "Place Value",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "What is the place value of the digit \\(7\\) in the following number:\n\\(4\\ 672\\)",
+    "a": 0,
+    "opts": [
+      "\\(70\\)",
+      "\\(7\\)",
+      "\\(700\\)",
+      "\\(7000\\)"
+    ],
+    "h": "Identify the place value column of the digit 7.",
+    "s": "In 4 672, the digit 7 is in the tens position, so its value is 70.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the position of 7 in 4 672.",
+        "workingOut": "\\text{7 is in the tens column.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the numerical place value.",
+        "workingOut": "\\(7 \\times 10 = 70\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q4a_p17",
+    "c": "WN2",
+    "t": "Writing numbers in words",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Write the following number in words:\n\\(683\\)",
+    "a": 0,
+    "opts": [
+      "Six hundred and eighty-three",
+      "Six hundred and thirty-eight",
+      "Six hundred and eighty",
+      "Six hundred and eighty-five"
+    ],
+    "h": "Identify place values: 6 hundreds, 8 tens, 3 units.",
+    "s": "683 consists of 6 hundreds and 83. Written as: Six hundred and eighty-three.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify place values.",
+        "workingOut": "600 \\implies \\text{Six hundred}, \\quad 80 \\implies \\text{eighty}, \\quad 3 \\implies \\text{three}",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine with 'and'.",
+        "workingOut": "\\text{Six hundred and eighty-three}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q4b_p17",
+    "c": "WN2",
+    "t": "Writing numbers in words",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Write the following number in words:\n\\(4\\ 312\\)",
+    "a": 0,
+    "opts": [
+      "Four thousand, three hundred and twelve",
+      "Four thousand, three hundred and twenty",
+      "Four thousand, two hundred and twelve",
+      "Four thousand, three hundred and two"
+    ],
+    "h": "Identify place values: 4 thousands, 3 hundreds, 12.",
+    "s": "4 312 consists of 4 thousands, 3 hundreds, and 12. Written as: Four thousand, three hundred and twelve.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify place values.",
+        "workingOut": "4\\,000 \\implies \\text{Four thousand}, \\quad 300 \\implies \\text{three hundred}, \\quad 12 \\implies \\text{twelve}",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine with proper formatting.",
+        "workingOut": "\\text{Four thousand, three hundred and twelve}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q4c_p17",
+    "c": "WN2",
+    "t": "Writing numbers in words",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Write the following number in words:\n\\(5\\ 072\\)",
+    "a": 0,
+    "opts": [
+      "Five thousand and seventy-two",
+      "Five thousand and twenty-seven",
+      "Five thousand, seven hundred and two",
+      "Five thousand and seventy"
+    ],
+    "h": "Identify place values: 5 thousands, 0 hundreds, 72.",
+    "s": "5 072 consists of 5 thousands and 72. Written as: Five thousand and seventy-two.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify place values.",
+        "workingOut": "5\\,000 \\implies \\text{Five thousand}, \\quad 72 \\implies \\text{seventy-two}",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine with 'and'.",
+        "workingOut": "\\text{Five thousand and seventy-two}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q5a_p17",
+    "c": "WN2",
+    "t": "Expanded Notation",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Evaluate the expanded expression to find the ordinary numeral:\n\\((5 \\times 100) + (0 \\times 10) + (3 \\times 1)\\)",
+    "a": 0,
+    "opts": [
+      "\\(503\\)",
+      "\\(530\\)",
+      "\\(53\\)",
+      "\\(5003\\)"
+    ],
+    "h": "Multiply terms in parentheses first.",
+    "s": "(5 x 100) = 500. (0 x 10) = 0. (3 x 1) = 3. 500 + 0 + 3 = 503.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the products.",
+        "workingOut": "\\(5 \\times 100 = 500\\), \\quad \\(0 \\times 10 = 0\\), \\quad \\(3 \\times 1 = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the components.",
+        "workingOut": "\\(500 + 0 + 3 = 503\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q5b_p17",
+    "c": "WN2",
+    "t": "Expanded Notation",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Evaluate the expanded expression to find the ordinary numeral:\n\\((7 \\times 1000) + (0 \\times 100) + (8 \\times 10) + (6 \\times 1)\\)",
+    "a": 0,
+    "opts": [
+      "\\(7086\\)",
+      "\\(786\\)",
+      "\\(7860\\)",
+      "\\(70860\\)"
+    ],
+    "h": "Multiply terms inside parentheses first.",
+    "s": "7000 + 0 + 80 + 6 = 7086.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the products.",
+        "workingOut": "\\(7000 + 0 + 80 + 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the values.",
+        "workingOut": "\\(7086\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q6a_p17",
+    "c": "WN3",
+    "t": "Rounding",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Round off the following number to the nearest hundred:\n\\(749\\)",
+    "a": 0,
+    "opts": [
+      "\\(700\\)",
+      "\\(800\\)",
+      "\\(750\\)",
+      "\\(740\\)"
+    ],
+    "h": "Look at the tens digit. If it is less than 5, round down.",
+    "s": "The tens digit in 749 is 4. Since 4 is less than 5, we round down to 700.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the tens digit of 749.",
+        "workingOut": "\\text{Tens digit} = 4",
+        "graphData": null
+      },
+      {
+        "explanation": "Since 4 < 5, round down.",
+        "workingOut": "\\(749 \\approx 700\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q6b_p17",
+    "c": "WN3",
+    "t": "Rounding",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Round off the following number to the nearest hundred:\n\\(751\\)",
+    "a": 0,
+    "opts": [
+      "\\(800\\)",
+      "\\(700\\)",
+      "\\(750\\)",
+      "\\(760\\)"
+    ],
+    "h": "Look at the tens digit. If it is 5 or more, round up.",
+    "s": "The tens digit in 751 is 5. Since it is 5 or more, we round up to 800.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the tens digit of 751.",
+        "workingOut": "\\text{Tens digit} = 5",
+        "graphData": null
+      },
+      {
+        "explanation": "Since 5 \\ge 5, round up.",
+        "workingOut": "\\(751 \\approx 800\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q6c_p17",
+    "c": "WN3",
+    "t": "Rounding",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Round off the following number to the nearest hundred:\n\\(750\\)",
+    "a": 0,
+    "opts": [
+      "\\(800\\)",
+      "\\(700\\)",
+      "\\(750\\)",
+      "\\(760\\)"
+    ],
+    "h": "Look at the tens digit. If it is 5 or more, round up.",
+    "s": "The tens digit in 750 is 5. We round up to 800.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the tens digit.",
+        "workingOut": "\\text{Tens digit} = 5",
+        "graphData": null
+      },
+      {
+        "explanation": "Since 5 \\ge 5, round up.",
+        "workingOut": "\\(750 \\approx 800\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q6d_p17",
+    "c": "WN3",
+    "t": "Rounding",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Round off the following number to the nearest hundred:\n\\(1\\ 432\\)",
+    "a": 0,
+    "opts": [
+      "\\(1\\ 400\\)",
+      "\\(1\\ 500\\)",
+      "\\(1\\ 430\\)",
+      "\\(1\\ 000\\)"
+    ],
+    "h": "Look at the tens digit. If it is less than 5, round down.",
+    "s": "The tens digit in 1 432 is 3. Since 3 is less than 5, we round down to 1 400.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the tens digit of 1 432.",
+        "workingOut": "\\text{Tens digit} = 3",
+        "graphData": null
+      },
+      {
+        "explanation": "Since 3 < 5, round down.",
+        "workingOut": "\\(1432 \\approx 1400\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q7a_p17",
+    "c": "WN3",
+    "t": "Addition",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the sum:\n\\(349 + 62\\)",
+    "a": 0,
+    "opts": [
+      "\\(411\\)",
+      "\\(401\\)",
+      "\\(412\\)",
+      "\\(311\\)"
+    ],
+    "h": "Add units, tens, and hundreds.",
+    "s": "349 + 62 = 411.",
+    "solutionSteps": [
+      {
+        "explanation": "Set up column addition.",
+        "workingOut": "\\begin{array}{r@{\\quad}l} 349 \\\\ +\\quad 62 \\\\ \\hline \\end{array}",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the units: 9 + 2 = 11 (write 1, carry 1).",
+        "workingOut": "\\(9 + 2 = 11\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens: 4 + 6 + 1 (carry) = 11 (write 1, carry 1).",
+        "workingOut": "\\(4 + 6 + 1 = 11\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the hundreds: 3 + 1 (carry) = 4.",
+        "workingOut": "\\(3 + 1 = 4\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q7b_p17",
+    "c": "WN3",
+    "t": "Addition",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the sum:\n\\(423 + 54\\)",
+    "a": 0,
+    "opts": [
+      "\\(477\\)",
+      "\\(467\\)",
+      "\\(478\\)",
+      "\\(577\\)"
+    ],
+    "h": "Perform column addition.",
+    "s": "423 + 54 = 477.",
+    "solutionSteps": [
+      {
+        "explanation": "Set up column addition.",
+        "workingOut": "\\begin{array}{r@{\\quad}l} 423 \\\\ +\\quad 54 \\\\ \\hline \\end{array}",
+        "graphData": null
+      },
+      {
+        "explanation": "Add place values.",
+        "workingOut": "\\(3+4=7\\), \\quad \\(2+5=7\\), \\quad \\(4+0=4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State final sum.",
+        "workingOut": "\\(477\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q7c_p17",
+    "c": "WN3",
+    "t": "Addition",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the sum:\n\\(742 + 339\\)",
+    "a": 0,
+    "opts": [
+      "\\(1\\ 081\\)",
+      "\\(1\\ 071\\)",
+      "\\(1\\ 082\\)",
+      "\\(981\\)"
+    ],
+    "h": "Set up column addition and carry over values.",
+    "s": "742 + 339 = 1081.",
+    "solutionSteps": [
+      {
+        "explanation": "Set up column addition.",
+        "workingOut": "\\begin{array}{r@{\\quad}l} 742 \\\\ +\\quad 339 \\\\ \\hline \\end{array}",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the units: 2 + 9 = 11 (carry 1).",
+        "workingOut": "\\(2 + 9 = 11\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens: 4 + 3 + 1 = 8.",
+        "workingOut": "\\(4 + 3 + 1 = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the hundreds: 7 + 3 = 10.",
+        "workingOut": "\\(7 + 3 = 10\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q8a_p17",
+    "c": "WN3",
+    "t": "Subtraction",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the difference:\n\\(79 - 25\\)",
+    "a": 0,
+    "opts": [
+      "\\(54\\)",
+      "\\(44\\)",
+      "\\(55\\)",
+      "\\(53\\)"
+    ],
+    "h": "Subtract place values.",
+    "s": "79 - 25 = 54.",
+    "solutionSteps": [
+      {
+        "explanation": "Subtract the units.",
+        "workingOut": "\\(9 - 5 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the tens.",
+        "workingOut": "\\(7 - 2 = 5\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q8b_p17",
+    "c": "WN3",
+    "t": "Subtraction",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the difference:\n\\(74 - 36\\)",
+    "a": 0,
+    "opts": [
+      "\\(38\\)",
+      "\\(48\\)",
+      "\\(37\\)",
+      "\\(42\\)"
+    ],
+    "h": "Borrow 1 ten to subtract in the units place.",
+    "s": "74 - 36 = 38.",
+    "solutionSteps": [
+      {
+        "explanation": "Set up column subtraction and borrow from tens.",
+        "workingOut": "\\(14 - 6 = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract remaining tens.",
+        "workingOut": "\\(6 - 3 = 3\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q8c_p17",
+    "c": "WN3",
+    "t": "Subtraction",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the difference:\n\\(327 - 51\\)",
+    "a": 0,
+    "opts": [
+      "\\(276\\)",
+      "\\(266\\)",
+      "\\(275\\)",
+      "\\(286\\)"
+    ],
+    "h": "Perform column subtraction.",
+    "s": "327 - 51 = 276.",
+    "solutionSteps": [
+      {
+        "explanation": "Subtract units.",
+        "workingOut": "\\(7 - 1 = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract tens by borrowing 1 hundred.",
+        "workingOut": "\\(12 - 5 = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract hundreds.",
+        "workingOut": "\\(2 - 0 = 2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q9a_p17",
+    "c": "WN3",
+    "t": "Multiplication",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the product:\n\\(37 \\times 6\\)",
+    "a": 0,
+    "opts": [
+      "\\(222\\)",
+      "\\(212\\)",
+      "\\(226\\)",
+      "\\(182\\)"
+    ],
+    "h": "Multiply 7 by 6, then multiply 30 by 6.",
+    "s": "37 x 6 = 222.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply units: 7 x 6 = 42 (carry 4).",
+        "workingOut": "\\(7 \\times 6 = 42\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply tens and add carry: (3 x 6) + 4 = 22.",
+        "workingOut": "\\((3 \\times 6) + 4 = 22\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q9b_p17",
+    "c": "WN3",
+    "t": "Multiplication",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the product:\n\\(48 \\times 10\\)",
+    "a": 0,
+    "opts": [
+      "\\(480\\)",
+      "\\(4800\\)",
+      "\\(408\\)",
+      "\\(48\\)"
+    ],
+    "h": "To multiply by 10, append a zero to the end of the number.",
+    "s": "48 x 10 = 480.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply by 10 by shifting decimal place.",
+        "workingOut": "\\(48 \\times 10 = 480\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q9c_p17",
+    "c": "WN3",
+    "t": "Multiplication",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the product:\n\\(59 \\times 13\\)",
+    "a": 0,
+    "opts": [
+      "\\(767\\)",
+      "\\(757\\)",
+      "\\(763\\)",
+      "\\(667\\)"
+    ],
+    "h": "Set up long multiplication.",
+    "s": "59 x 13 = 767.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply 59 by 3.",
+        "workingOut": "\\(59 \\times 3 = 177\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply 59 by 10.",
+        "workingOut": "\\(59 \\times 10 = 590\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the two partial products.",
+        "workingOut": "\\(177 + 590 = 767\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q10a_p17",
+    "c": "WN3",
+    "t": "Division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the quotient:\n\\(51 \\div 3\\)",
+    "a": 0,
+    "opts": [
+      "\\(17\\)",
+      "\\(16\\)",
+      "\\(18\\)",
+      "\\(21\\)"
+    ],
+    "h": "Use short division.",
+    "s": "51 / 3 = 17.",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the tens: 5 / 3 = 1 with remainder 2.",
+        "workingOut": "\\(5 \\div 3 = 1 \\text{ r } 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the remaining units: 21 / 3 = 7.",
+        "workingOut": "\\(21 \\div 3 = 7\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q10b_p17",
+    "c": "WN3",
+    "t": "Division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the quotient:\n\\(84 \\div 7\\)",
+    "a": 0,
+    "opts": [
+      "\\(12\\)",
+      "\\(11\\)",
+      "\\(13\\)",
+      "\\(14\\)"
+    ],
+    "h": "Use standard division tables.",
+    "s": "84 / 7 = 12.",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the tens: 8 / 7 = 1 with remainder 1.",
+        "workingOut": "\\(8 \\div 7 = 1 \\text{ r } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the remaining units: 14 / 7 = 2.",
+        "workingOut": "\\(14 \\div 7 = 2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q10c_p17",
+    "c": "WN3",
+    "t": "Division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Calculate the division including remainder:\n\\(53 \\div 4\\)",
+    "a": 0,
+    "opts": [
+      "\\(13 \\text{ remainder } 1\\)",
+      "\\(13 \\text{ remainder } 2\\)",
+      "\\(12 \\text{ remainder } 1\\)",
+      "\\(14 \\text{ remainder } 1\\)"
+    ],
+    "h": "Divide 53 by 4 and find the integer quotient and remainder.",
+    "s": "53 / 4 = 13 with remainder 1.",
+    "solutionSteps": [
+      {
+        "explanation": "Determine the highest multiple of 4 less than or equal to 53.",
+        "workingOut": "\\(4 \\times 13 = 52\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the remainder.",
+        "workingOut": "\\(53 - 52 = 1\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q11a_p17",
+    "c": "WN3",
+    "t": "Order of Operations",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Evaluate the expression:\n\\(8 + 7 \\times 2\\)",
+    "a": 0,
+    "opts": [
+      "\\(22\\)",
+      "\\(30\\)",
+      "\\(17\\)",
+      "\\(24\\)"
+    ],
+    "h": "Multiply before adding.",
+    "s": "7 x 2 = 14. 8 + 14 = 22.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform the multiplication first.",
+        "workingOut": "\\(7 \\times 2 = 14\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add 8 to the product.",
+        "workingOut": "\\(8 + 14 = 22\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q11b_p17",
+    "c": "WN3",
+    "t": "Order of Operations",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Evaluate the expression:\n\\(12 \\div (3 + 1)\\)",
+    "a": 0,
+    "opts": [
+      "\\(3\\)",
+      "\\(5\\)",
+      "\\(4\\)",
+      "\\(2\\)"
+    ],
+    "h": "Calculate terms inside parentheses first.",
+    "s": "(3 + 1) = 4. 12 / 4 = 3.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the addition inside parentheses.",
+        "workingOut": "\\(3 + 1 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide 12 by the sum.",
+        "workingOut": "\\(12 \\div 4 = 3\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q11c_p17",
+    "c": "WN3",
+    "t": "Order of Operations",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Evaluate the expression:\n\\(10 - 3 \\times 2 + 1\\)",
+    "a": 0,
+    "opts": [
+      "\\(5\\)",
+      "\\(15\\)",
+      "\\(4\\)",
+      "\\(6\\)"
+    ],
+    "h": "Multiply first, then perform addition and subtraction from left to right.",
+    "s": "3 x 2 = 6. 10 - 6 = 4. 4 + 1 = 5.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply first.",
+        "workingOut": "\\(3 \\times 2 = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform subtraction.",
+        "workingOut": "\\(10 - 6 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform addition.",
+        "workingOut": "\\(4 + 1 = 5\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q12a_p17",
+    "c": "WN3",
+    "t": "Mathematical Terminology",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Find the average of the following numbers:\n\\(3\\), \\(7\\) and \\(8\\)",
+    "a": 0,
+    "opts": [
+      "\\(6\\)",
+      "\\(7\\)",
+      "\\(8\\)",
+      "\\(18\\)"
+    ],
+    "h": "Add the numbers and divide by 3.",
+    "s": "(3 + 7 + 8)/3 = 18/3 = 6.",
+    "solutionSteps": [
+      {
+        "explanation": "Find the sum of the numbers.",
+        "workingOut": "\\(3 + 7 + 8 = 18\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the sum by 3.",
+        "workingOut": "\\(18 \\div 3 = 6\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y6-wn-q12b_p17",
+    "c": "WN3",
+    "t": "Mathematical Terminology",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "Find the average of the following numbers:\n\\(4\\), \\(7\\), \\(10\\), \\(13\\) and \\(11\\)",
+    "a": 0,
+    "opts": [
+      "\\(9\\)",
+      "\\(10\\)",
+      "\\(8\\)",
+      "\\(11\\)"
+    ],
+    "h": "Add the numbers and divide by 5.",
+    "s": "(4 + 7 + 10 + 13 + 11)/5 = 45/5 = 9.",
+    "solutionSteps": [
+      {
+        "explanation": "Find the sum of the numbers.",
+        "workingOut": "\\(4 + 7 + 10 + 13 + 11 = 45\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the sum by 5.",
+        "workingOut": "\\(45 \\div 5 = 9\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];
