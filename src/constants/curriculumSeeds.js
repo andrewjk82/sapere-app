@@ -281,8 +281,19 @@ import { Y11A_CH2_QUESTIONS } from './seedYear11aCh2Questions.js';
 import { Y11A_CH2C_QUESTIONS } from './seedYear11aCh2CQuestions.js';
 import { Y11A_CH2D_QUESTIONS } from './seedYear11aCh2DQuestions.js';
 import { Y11A_CH2E_QUESTIONS } from './seedYear11aCh2EQuestions.js';
+import { Y5_CH1_QUESTIONS } from './seedYear5Ch1Questions.js';
 
 export const CHAPTER_SEED_REGISTRY = [
+  {
+    chapterId: 'y5-rn',
+    chapterTitle: 'Represents Numbers (A)',
+    topicId: 'y5-rn-1',
+    topicCode: 'MA3-RN-01',
+    topicTitle: 'Numbers to millions',
+    year: 'Year 5',
+    seed: Y5_CH1_QUESTIONS,
+    label: 'Y5 Ch1 · MA3-RN-01 Numbers to millions',
+  },
   {
     chapterId: 'y9-1',
     chapterTitle: 'Chapter 1: Algebra',
