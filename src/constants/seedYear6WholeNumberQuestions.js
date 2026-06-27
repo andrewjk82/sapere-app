@@ -422,10 +422,10 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "q": "Write the number $8\\,352$ in expanded exponential notation.",
     "a": 0,
     "opts": [
-      "(8 * 10^3) + (3 * 10^2) + (5 * 10^1) + (2 * 1)",
-      "(8 * 10^4) + (3 * 10^3) + (5 * 10^2) + (2 * 10)",
-      "(8 * 1000) + (3 * 100) + (5 * 10) + 2",
-      "(8 * 10^3) + (3 * 10^2) + (5 * 10^2) + (2 * 1)"
+      "\\((8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^1) + (2 \\times 1)\\)",
+      "\\((8 \\times 10^4) + (3 \\times 10^3) + (5 \\times 10^2) + (2 \\times 10)\\)",
+      "\\((8 \\times 1000) + (3 \\times 100) + (5 \\times 10) + 2\\)",
+      "\\((8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^2) + (2 \\times 1)\\)"
     ],
     "h": "Write the place value of each digit using powers of $10$. E.g. Thousands place is $10^3$, Hundreds is $10^2$, Tens is $10^1$, and Units is $1$.",
     "s": "To express $8\\,352$:\n- $8$ is in Thousands ($8 \\times 10^3$)\n- $3$ is in Hundreds ($3 \\times 10^2$)\n- $5$ is in Tens ($5 \\times 10^1$)\n- $2$ is in Units ($2 \\times 1$)\n\nCombining these: $(8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^1) + (2 \\times 1)$.",
@@ -754,9 +754,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "q": "Compare $3 \\times (4 + 2)$ and $20 - 2$ with the correct symbol.",
     "a": 0,
     "opts": [
-      "3 * (4 + 2) = 20 - 2",
-      "3 * (4 + 2) > 20 - 2",
-      "3 * (4 + 2) < 20 - 2",
+      "\\(3 \\times (4 + 2) = 20 - 2\\)",
+      "\\(3 \\times (4 + 2) > 20 - 2\\)",
+      "\\(3 \\times (4 + 2) < 20 - 2\\)",
       "None of the above"
     ],
     "h": "Evaluate both sides of the expression first. Follow the order of operations (BODMAS) for the left side.",
@@ -1346,10 +1346,10 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "q": "Write the expression $5 \\times 5 \\times 5 \\times 5$ in exponential notation.",
     "a": 0,
     "opts": [
-      "5^4",
-      "5 * 4",
-      "4^5",
-      "20^1"
+      "\\(5^4\\)",
+      "\\(5 \\times 4\\)",
+      "\\(4^5\\)",
+      "\\(20^1\\)"
     ],
     "h": "Count how many times $5$ is multiplied by itself. This count is the exponent (power).",
     "s": "The number $5$ is multiplied by itself $4$ times. In exponential notation, this is written as $5^4$.",
@@ -1427,10 +1427,10 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "q": "Write the equation $8000 = 8 \\times 1000$ in exponential notation.",
     "a": 0,
     "opts": [
-      "8 * 10^3",
-      "8 * 10^2",
-      "80^3",
-      "8 * 10^4"
+      "\\(8 \\times 10^3\\)",
+      "\\(8 \\times 10^2\\)",
+      "\\(80^3\\)",
+      "\\(8 \\times 10^4\\)"
     ],
     "h": "Convert $1000$ into a power of $10$. Count the number of zeros in $1000$.",
     "s": "1. $1000 = 10 \\times 10 \\times 10 = 10^3$\n2. Therefore, $8 \\times 1000 = 8 \\times 10^3$.",
