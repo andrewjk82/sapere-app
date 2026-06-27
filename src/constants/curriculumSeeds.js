@@ -283,7 +283,7 @@ import { Y11A_CH2D_QUESTIONS } from './seedYear11aCh2DQuestions.js';
 import { Y11A_CH2E_QUESTIONS } from './seedYear11aCh2EQuestions.js';
 import { Y5_CH1_QUESTIONS } from './seedYear5Ch1Questions.js';
 import { Y5_CH2_QUESTIONS_AR1, Y5_CH2_QUESTIONS_AR2 } from './seedYear5Ch2Questions.js';
-import { Y5_CH3_QUESTIONS_MR1, Y5_CH3_QUESTIONS_MR3, Y5_CH3_QUESTIONS_MR4 } from './seedYear5Ch3Questions.js';
+import { Y5_CH3_QUESTIONS_MR1, Y5_CH3_QUESTIONS_MR2, Y5_CH3_QUESTIONS_MR3, Y5_CH3_QUESTIONS_MR4, Y5_CH3_QUESTIONS_MR6 } from './seedYear5Ch3Questions.js';
 
 export const CHAPTER_SEED_REGISTRY = [
   {
@@ -329,6 +329,16 @@ export const CHAPTER_SEED_REGISTRY = [
   {
     chapterId: 'y5-mr',
     chapterTitle: 'Multiplicative Relations (A)',
+    topicId: 'y5-mr-2',
+    topicCode: 'MA3-MR-01',
+    topicTitle: 'Multiply 2 and 3-digit \u00d7 2-digit',
+    year: 'Year 5',
+    seed: Y5_CH3_QUESTIONS_MR2,
+    label: 'Y5 Ch3 · MA3-MR-01 Multiply 2 and 3-digit \u00d7 2-digit',
+  },
+  {
+    chapterId: 'y5-mr',
+    chapterTitle: 'Multiplicative Relations (A)',
     topicId: 'y5-mr-3',
     topicCode: 'MA3-MR-01',
     topicTitle: 'Factors and products',
@@ -345,6 +355,16 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 5',
     seed: Y5_CH3_QUESTIONS_MR4,
     label: 'Y5 Ch3 · MA3-MR-02 Division with remainders',
+  },
+  {
+    chapterId: 'y5-mr',
+    chapterTitle: 'Multiplicative Relations (A)',
+    topicId: 'y5-mr-6',
+    topicCode: 'MA3-MR-01',
+    topicTitle: 'Order of operations',
+    year: 'Year 5',
+    seed: Y5_CH3_QUESTIONS_MR6,
+    label: 'Y5 Ch3 · MA3-MR-01 Order of operations',
   },
   {
     chapterId: 'y9-1',

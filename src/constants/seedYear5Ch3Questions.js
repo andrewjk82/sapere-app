@@ -8,7 +8,7 @@ export const Y5_CH3_QUESTIONS_MR1 = [
     "question": "Calculate the product:\n\\(12 \\times 5\\)",
     "opts": [
       {
-        "text": "\\(55\\)",
+        "text": "\\(50\\)",
         "imageUrl": ""
       },
       {
@@ -16,7 +16,7 @@ export const Y5_CH3_QUESTIONS_MR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(50\\)",
+        "text": "\\(55\\)",
         "imageUrl": ""
       },
       {
@@ -98,23 +98,23 @@ export const Y5_CH3_QUESTIONS_MR1 = [
     "question": "Calculate the product:\n\\(14 \\times 9\\)",
     "opts": [
       {
-        "text": "\\(126\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(124\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(116\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(136\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(126\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(116\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Multiply 14 by 9.",
     "solutionSteps": [
       {
@@ -143,23 +143,23 @@ export const Y5_CH3_QUESTIONS_MR1 = [
     "question": "Calculate the product:\n\\(38 \\times 7\\)",
     "opts": [
       {
-        "text": "\\(256\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(246\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(276\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(266\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(256\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(246\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Multiply 38 by 7.",
     "solutionSteps": [
       {
@@ -192,19 +192,19 @@ export const Y5_CH3_QUESTIONS_MR1 = [
         "imageUrl": ""
       },
       {
+        "text": "\\(41\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(51\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(48\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(41\\)",
-        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Multiply 17 by 3.",
     "solutionSteps": [
       {
@@ -233,7 +233,7 @@ export const Y5_CH3_QUESTIONS_MR1 = [
     "question": "Calculate the product:\n\\(12 \\times 8\\)",
     "opts": [
       {
-        "text": "\\(88\\)",
+        "text": "\\(86\\)",
         "imageUrl": ""
       },
       {
@@ -245,7 +245,7 @@ export const Y5_CH3_QUESTIONS_MR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(86\\)",
+        "text": "\\(88\\)",
         "imageUrl": ""
       }
     ],
@@ -278,10 +278,6 @@ export const Y5_CH3_QUESTIONS_MR1 = [
     "question": "Calculate the product:\n\\(16 \\times 7\\)",
     "opts": [
       {
-        "text": "\\(102\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(106\\)",
         "imageUrl": ""
       },
@@ -292,9 +288,13 @@ export const Y5_CH3_QUESTIONS_MR1 = [
       {
         "text": "\\(116\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(102\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Multiply 16 by 7.",
     "solutionSteps": [
       {
@@ -323,23 +323,23 @@ export const Y5_CH3_QUESTIONS_MR1 = [
     "question": "Calculate the product:\n\\(38 \\times 4\\)",
     "opts": [
       {
-        "text": "\\(156\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(148\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(152\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(156\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(142\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(148\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Multiply 38 by 4.",
     "solutionSteps": [
       {
@@ -358,6 +358,188 @@ export const Y5_CH3_QUESTIONS_MR1 = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-mr-1-l3-q8a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Multiply 2, 3, 4-digit × 1-digit",
+    "question": "Calculate the product:\n\\(37 \\times 6\\)",
+    "opts": [
+      {
+        "text": "\\(222\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(212\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(228\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(182\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Multiply 37 by 6.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply units.",
+        "workingOut": "\\(7 \\times 6 = 42 \\implies 2\\text{ units, carry } 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply tens.",
+        "workingOut": "\\(3 \\times 6 + 4 = 22\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(222\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-mr-1-l3-q8b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Multiply 2, 3, 4-digit × 1-digit",
+    "question": "Calculate the product:\n\\(48 \\times 10\\)",
+    "opts": [
+      {
+        "text": "\\(480\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(408\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4800\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Multiplying by 10 shifts digits to the left and adds a 0 to the units place.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the rule for multiplying by 10.",
+        "workingOut": "\\(48 \\times 10 = 480\\)",
+        "graphData": null
+      }
+    ]
+  }
+];
+export const Y5_CH3_QUESTIONS_MR2 = [
+  {
+    "id": "y5-mr-2-l3-q8c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Multiply 2 and 3-digit × 2-digit",
+    "question": "Calculate the product:\n\\(59 \\times 13\\)",
+    "opts": [
+      {
+        "text": "\\(747\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(757\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(767\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(777\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 2,
+    "hint": "Multiply 59 by 3, then 59 by 10, and add the results.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply 59 by the units digit 3.",
+        "workingOut": "\\(59 \\times 3 = 177\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply 59 by the tens digit 10.",
+        "workingOut": "\\(59 \\times 10 = 590\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum the partial products.",
+        "workingOut": "\\(177 + 590\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State final product.",
+        "workingOut": "\\(767\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-mr-2-l3-q8d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Multiply 2 and 3-digit × 2-digit",
+    "question": "Calculate the product:\n\\(68 \\times 24\\)",
+    "opts": [
+      {
+        "text": "\\(1622\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1632\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1642\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1532\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 1,
+    "hint": "Multiply 68 by 4, then 68 by 20, and add.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply 68 by 4.",
+        "workingOut": "\\(68 \\times 4 = 272\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply 68 by 20.",
+        "workingOut": "\\(68 \\times 20 = 1360\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sum.",
+        "workingOut": "\\(272 + 1360\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State final product.",
+        "workingOut": "\\(1632\\)",
+        "graphData": null
+      }
+    ]
   }
 ];
 export const Y5_CH3_QUESTIONS_MR3 = [
@@ -370,10 +552,6 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List all the factors of \\(6\\).",
     "opts": [
       {
-        "text": "\\(\\{1, 2, 3, 4, 6\\}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\{2, 3\\}\\)",
         "imageUrl": ""
       },
@@ -382,11 +560,15 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\{1, 2, 3, 4, 6\\}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\{1, 6\\}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Find divisors of 6.",
     "solutionSteps": [
       {
@@ -419,7 +601,7 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{1, 2, 4, 5, 10\\}\\)",
+        "text": "\\(\\{1, 2, 5, 10\\}\\)",
         "imageUrl": ""
       },
       {
@@ -427,11 +609,11 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{1, 2, 5, 10\\}\\)",
+        "text": "\\(\\{1, 2, 4, 5, 10\\}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Find divisors of 10.",
     "solutionSteps": [
       {
@@ -455,6 +637,10 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List all the factors of \\(20\\).",
     "opts": [
       {
+        "text": "\\(\\{1, 2, 4, 5, 10, 20\\}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\{1, 20\\}\\)",
         "imageUrl": ""
       },
@@ -465,13 +651,9 @@ export const Y5_CH3_QUESTIONS_MR3 = [
       {
         "text": "\\(\\{2, 4, 5, 10\\}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(\\{1, 2, 4, 5, 10, 20\\}\\)",
-        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Find divisors of 20.",
     "solutionSteps": [
       {
@@ -495,6 +677,10 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List all the factors of the prime number \\(13\\).",
     "opts": [
       {
+        "text": "\\(\\{1, 13\\}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\{1, 3, 13\\}\\)",
         "imageUrl": ""
       },
@@ -505,13 +691,9 @@ export const Y5_CH3_QUESTIONS_MR3 = [
       {
         "text": "\\(\\{1, 2, 13\\}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(\\{1, 13\\}\\)",
-        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Identify prime factors.",
     "solutionSteps": [
       {
@@ -535,11 +717,11 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List the first four multiples of \\(5\\).",
     "opts": [
       {
-        "text": "\\(\\{10, 15, 20, 25\\}\\)",
+        "text": "\\(\\{1, 5, 10, 15\\}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{5, 10, 15, 25\\}\\)",
+        "text": "\\(\\{10, 15, 20, 25\\}\\)",
         "imageUrl": ""
       },
       {
@@ -547,7 +729,7 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{1, 5, 10, 15\\}\\)",
+        "text": "\\(\\{5, 10, 15, 25\\}\\)",
         "imageUrl": ""
       }
     ],
@@ -579,11 +761,11 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{10, 20, 30, 40, 50, 60\\}\\)",
+        "text": "\\(\\{10, 20, 30, 40, 50, 70\\}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{10, 20, 30, 40, 50, 70\\}\\)",
+        "text": "\\(\\{10, 20, 30, 40, 50, 60\\}\\)",
         "imageUrl": ""
       },
       {
@@ -591,7 +773,7 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Multiply 10 by integers 1 to 6.",
     "solutionSteps": [
       {
@@ -615,6 +797,10 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List the multiples of \\(3\\) that are between \\(10\\) and \\(22\\).",
     "opts": [
       {
+        "text": "\\(\\{9, 12, 15, 18, 21\\}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\{10, 12, 15, 18, 21\\}\\)",
         "imageUrl": ""
       },
@@ -625,13 +811,9 @@ export const Y5_CH3_QUESTIONS_MR3 = [
       {
         "text": "\\(\\{12, 15, 18, 21, 24\\}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(\\{9, 12, 15, 18, 21\\}\\)",
-        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Find multiples of 3 between 10 and 22.",
     "solutionSteps": [
       {
@@ -664,11 +846,11 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1\\)",
+        "text": "\\(12\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(12\\)",
+        "text": "\\(1\\)",
         "imageUrl": ""
       },
       {
@@ -676,7 +858,7 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Product means multiplication.",
     "solutionSteps": [
       {
@@ -700,6 +882,10 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "Find the value of:\n\\(5^2\\)",
     "opts": [
       {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(7\\)",
         "imageUrl": ""
       },
@@ -710,13 +896,9 @@ export const Y5_CH3_QUESTIONS_MR3 = [
       {
         "text": "\\(50\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(10\\)",
-        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Multiply 5 by itself.",
     "solutionSteps": [
       {
@@ -740,11 +922,7 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List all the factors of \\(8\\).",
     "opts": [
       {
-        "text": "\\(\\{2, 4\\}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\{1, 8\\}\\)",
+        "text": "\\(\\{1, 2, 4, 8\\}\\)",
         "imageUrl": ""
       },
       {
@@ -752,11 +930,15 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{1, 2, 4, 8\\}\\)",
+        "text": "\\(\\{1, 8\\}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\{2, 4\\}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Find divisors of 8.",
     "solutionSteps": [
       {
@@ -780,23 +962,23 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List all the factors of \\(15\\).",
     "opts": [
       {
-        "text": "\\(\\{1, 3, 5, 15\\}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\{3, 5\\}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\{1, 15\\}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\{1, 3, 5, 9, 15\\}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\{1, 3, 5, 15\\}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\{3, 5\\}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Find divisors.",
     "solutionSteps": [
       {
@@ -820,10 +1002,6 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List all the factors of \\(18\\).",
     "opts": [
       {
-        "text": "\\(\\{2, 3, 6, 9\\}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\{1, 18\\}\\)",
         "imageUrl": ""
       },
@@ -834,9 +1012,13 @@ export const Y5_CH3_QUESTIONS_MR3 = [
       {
         "text": "\\(\\{1, 2, 3, 6, 9, 18\\}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\{2, 3, 6, 9\\}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Find divisors.",
     "solutionSteps": [
       {
@@ -860,7 +1042,7 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List all the factors of \\(24\\).",
     "opts": [
       {
-        "text": "\\(\\{1, 2, 4, 6, 12, 24\\}\\)",
+        "text": "\\(\\{2, 3, 4, 6, 8, 12\\}\\)",
         "imageUrl": ""
       },
       {
@@ -868,7 +1050,7 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{2, 3, 4, 6, 8, 12\\}\\)",
+        "text": "\\(\\{1, 2, 4, 6, 12, 24\\}\\)",
         "imageUrl": ""
       },
       {
@@ -900,23 +1082,23 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List all the factors of \\(30\\).",
     "opts": [
       {
-        "text": "\\(\\{2, 3, 5, 6, 10, 15\\}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\{1, 30\\}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{1, 2, 3, 5, 6, 10, 15, 30\\}\\)",
+        "text": "\\(\\{2, 3, 5, 6, 10, 15\\}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\{1, 2, 5, 6, 15, 30\\}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\{1, 2, 3, 5, 6, 10, 15, 30\\}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Find divisor pairs.",
     "solutionSteps": [
       {
@@ -940,23 +1122,23 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List the first five multiples of \\(4\\).",
     "opts": [
       {
-        "text": "\\(\\{8, 12, 16, 20, 24\\}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\{1, 4, 8, 12, 16\\}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\{4, 8, 12, 16, 24\\}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\{4, 8, 12, 16, 20\\}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\{8, 12, 16, 20, 24\\}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\{1, 4, 8, 12, 16\\}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Multiply 4 by integers 1 to 5.",
     "solutionSteps": [
       {
@@ -984,19 +1166,19 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\{12, 18, 24, 30\\}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\{1, 6, 12, 18\\}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\{6, 12, 18, 24\\}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\{12, 18, 24, 30\\}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Multiply 6 by 1, 2, 3, 4.",
     "solutionSteps": [
       {
@@ -1020,6 +1202,10 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "List the multiples of \\(7\\) that are between \\(10\\) and \\(30\\).",
     "opts": [
       {
+        "text": "\\(\\{7, 14, 21, 28\\}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\{10, 14, 21, 28\\}\\)",
         "imageUrl": ""
       },
@@ -1030,13 +1216,9 @@ export const Y5_CH3_QUESTIONS_MR3 = [
       {
         "text": "\\(\\{14, 21, 28, 35\\}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(\\{7, 14, 21, 28\\}\\)",
-        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Find multiples of 7 between 10 and 30.",
     "solutionSteps": [
       {
@@ -1065,7 +1247,7 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "Find the product of \\(5\\) and \\(8\\).",
     "opts": [
       {
-        "text": "\\(40\\)",
+        "text": "\\(13\\)",
         "imageUrl": ""
       },
       {
@@ -1077,11 +1259,11 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(13\\)",
+        "text": "\\(40\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 3,
     "hint": "Multiply 5 by 8.",
     "solutionSteps": [
       {
@@ -1100,11 +1282,11 @@ export const Y5_CH3_QUESTIONS_MR3 = [
     "question": "Find the value of:\n\\(8\\text{ squared}\\)",
     "opts": [
       {
-        "text": "\\(64\\)",
+        "text": "\\(80\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(16\\)",
+        "text": "\\(64\\)",
         "imageUrl": ""
       },
       {
@@ -1112,11 +1294,11 @@ export const Y5_CH3_QUESTIONS_MR3 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(80\\)",
+        "text": "\\(16\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Multiply 8 by itself.",
     "solutionSteps": [
       {
@@ -1142,23 +1324,23 @@ export const Y5_CH3_QUESTIONS_MR4 = [
     "question": "Calculate the quotient:\n\\(35 \\div 7\\)",
     "opts": [
       {
-        "text": "\\(5\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(7\\)",
+        "text": "\\(5\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(6\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Recall that 7 x 5 = 35.",
     "solutionSteps": [
       {
@@ -1177,23 +1359,23 @@ export const Y5_CH3_QUESTIONS_MR4 = [
     "question": "Calculate the quotient:\n\\(42 \\div 3\\)",
     "opts": [
       {
-        "text": "\\(12\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(14\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(16\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Divide 42 by 3.",
     "solutionSteps": [
       {
@@ -1222,11 +1404,7 @@ export const Y5_CH3_QUESTIONS_MR4 = [
     "question": "Calculate the quotient:\n\\(65 \\div 5\\)",
     "opts": [
       {
-        "text": "\\(12\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(13\\)",
+        "text": "\\(15\\)",
         "imageUrl": ""
       },
       {
@@ -1234,11 +1412,15 @@ export const Y5_CH3_QUESTIONS_MR4 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(15\\)",
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Divide 65 by 5.",
     "solutionSteps": [
       {
@@ -1267,23 +1449,23 @@ export const Y5_CH3_QUESTIONS_MR4 = [
     "question": "Calculate the quotient:\n\\(84 \\div 7\\)",
     "opts": [
       {
-        "text": "\\(12\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(13\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(11\\)",
+        "text": "\\(12\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(14\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Divide 84 by 7.",
     "solutionSteps": [
       {
@@ -1312,10 +1494,6 @@ export const Y5_CH3_QUESTIONS_MR4 = [
     "question": "Find the quotient of \\(6\\) and \\(3\\).",
     "opts": [
       {
-        "text": "\\(18\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(3\\)",
         "imageUrl": ""
       },
@@ -1324,11 +1502,15 @@ export const Y5_CH3_QUESTIONS_MR4 = [
         "imageUrl": ""
       },
       {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(9\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Quotient means division.",
     "solutionSteps": [
       {
@@ -1356,19 +1538,19 @@ export const Y5_CH3_QUESTIONS_MR4 = [
         "imageUrl": ""
       },
       {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(10\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(7\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(9\\)",
-        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Divide 45 by 5.",
     "solutionSteps": [
       {
@@ -1387,11 +1569,11 @@ export const Y5_CH3_QUESTIONS_MR4 = [
     "question": "Calculate the quotient:\n\\(72 \\div 3\\)",
     "opts": [
       {
-        "text": "\\(22\\)",
+        "text": "\\(24\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(24\\)",
+        "text": "\\(23\\)",
         "imageUrl": ""
       },
       {
@@ -1399,11 +1581,11 @@ export const Y5_CH3_QUESTIONS_MR4 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(23\\)",
+        "text": "\\(22\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Divide 72 by 3.",
     "solutionSteps": [
       {
@@ -1432,10 +1614,6 @@ export const Y5_CH3_QUESTIONS_MR4 = [
     "question": "Calculate the quotient:\n\\(60 \\div 4\\)",
     "opts": [
       {
-        "text": "\\(16\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(15\\)",
         "imageUrl": ""
       },
@@ -1444,11 +1622,15 @@ export const Y5_CH3_QUESTIONS_MR4 = [
         "imageUrl": ""
       },
       {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(12\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Divide 60 by 4.",
     "solutionSteps": [
       {
@@ -1477,7 +1659,7 @@ export const Y5_CH3_QUESTIONS_MR4 = [
     "question": "Calculate the quotient:\n\\(105 \\div 7\\)",
     "opts": [
       {
-        "text": "\\(14\\)",
+        "text": "\\(16\\)",
         "imageUrl": ""
       },
       {
@@ -1485,7 +1667,7 @@ export const Y5_CH3_QUESTIONS_MR4 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(16\\)",
+        "text": "\\(14\\)",
         "imageUrl": ""
       },
       {
@@ -1530,20 +1712,352 @@ export const Y5_CH3_QUESTIONS_MR4 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(5\\)",
+        "text": "\\(20\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(20\\)",
+        "text": "\\(5\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Divide 10 by 2.",
     "solutionSteps": [
       {
         "explanation": "Perform division.",
         "workingOut": "\\(10 \\div 2 = 5\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-mr-4-l3-q9a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Division with remainders",
+    "question": "Calculate: \\(51 \\div 3\\)",
+    "opts": [
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 2,
+    "hint": "Divide 51 by 3.",
+    "solutionSteps": [
+      {
+        "explanation": "Divide tens.",
+        "workingOut": "\\(5 \\div 3 = 1 \\quad \\text{remainder } 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide units with carry.",
+        "workingOut": "\\(21 \\div 3 = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(17\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-mr-4-l3-q9b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Division with remainders",
+    "question": "Calculate: \\(84 \\div 7\\)",
+    "opts": [
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 1,
+    "hint": "Divide 84 by 7.",
+    "solutionSteps": [
+      {
+        "explanation": "Divide tens.",
+        "workingOut": "\\(8 \\div 7 = 1 \\quad \\text{remainder } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide units.",
+        "workingOut": "\\(14 \\div 7 = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(12\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-mr-4-l3-q9c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Division with remainders",
+    "question": "Calculate: \\(53 \\div 4\\)",
+    "opts": [
+      {
+        "text": "\\(12\\text{ r } 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\text{ r } 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\text{ r } 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\text{ r } 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 2,
+    "hint": "Identify quotient and remainder.",
+    "solutionSteps": [
+      {
+        "explanation": "Divide 53 by 4.",
+        "workingOut": "\\(53 \\div 4 = 13 \\quad \\text{with remainder } 1\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-mr-4-l3-q9d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Division with remainders",
+    "question": "Calculate: \\(139 \\div 6\\)",
+    "opts": [
+      {
+        "text": "\\(23\\text{ r } 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(23\\text{ r } 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22\\text{ r } 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\text{ r } 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 1,
+    "hint": "Divide 139 by 6.",
+    "solutionSteps": [
+      {
+        "explanation": "Divide 13 by 6.",
+        "workingOut": "\\(13 \\div 6 = 2 \\quad \\text{remainder } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide 19 by 6.",
+        "workingOut": "\\(19 \\div 6 = 3 \\quad \\text{remainder } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(23\\text{ r } 1\\)",
+        "graphData": null
+      }
+    ]
+  }
+];
+export const Y5_CH3_QUESTIONS_MR6 = [
+  {
+    "id": "y5-mr-6-l3-q13a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\(6 + 2 \\times 7\\)",
+    "opts": [
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(56\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 1,
+    "hint": "BODMAS rule: perform multiplication before addition.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform multiplication first.",
+        "workingOut": "\\(2 \\times 7 = 14\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform addition.",
+        "workingOut": "\\(6 + 14 = 20\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-mr-6-l3-q13b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\(7 - 3 + 8\\)",
+    "opts": [
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 3,
+    "hint": "Perform addition and subtraction from left to right.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform subtraction first.",
+        "workingOut": "\\(7 - 3 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform addition.",
+        "workingOut": "\\(4 + 8 = 12\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-mr-6-l3-q13c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\(8 + 6 \\div 3\\)",
+    "opts": [
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 1,
+    "hint": "Divide before adding.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform division first.",
+        "workingOut": "\\(6 \\div 3 = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform addition.",
+        "workingOut": "\\(8 + 2 = 10\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-mr-6-l3-q13d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Order of operations",
+    "question": "Evaluate the expression:\n\\(7 + (8 - 2)\\)",
+    "opts": [
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 1,
+    "hint": "Evaluate the operations inside brackets first.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate inside brackets.",
+        "workingOut": "\\(8 - 2 = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform addition.",
+        "workingOut": "\\(7 + 6 = 13\\)",
         "graphData": null
       }
     ]
