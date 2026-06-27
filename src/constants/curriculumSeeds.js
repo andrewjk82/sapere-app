@@ -282,6 +282,8 @@ import { Y11A_CH2C_QUESTIONS } from './seedYear11aCh2CQuestions.js';
 import { Y11A_CH2D_QUESTIONS } from './seedYear11aCh2DQuestions.js';
 import { Y11A_CH2E_QUESTIONS } from './seedYear11aCh2EQuestions.js';
 import { Y5_CH1_QUESTIONS } from './seedYear5Ch1Questions.js';
+import { Y5_CH2_QUESTIONS_AR1, Y5_CH2_QUESTIONS_AR2 } from './seedYear5Ch2Questions.js';
+import { Y5_CH3_QUESTIONS_MR1, Y5_CH3_QUESTIONS_MR3, Y5_CH3_QUESTIONS_MR4 } from './seedYear5Ch3Questions.js';
 
 export const CHAPTER_SEED_REGISTRY = [
   {
@@ -293,6 +295,56 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 5',
     seed: Y5_CH1_QUESTIONS,
     label: 'Y5 Ch1 · MA3-RN-01 Numbers to millions',
+  },
+  {
+    chapterId: 'y5-ar',
+    chapterTitle: 'Additive Relations (A)',
+    topicId: 'y5-ar-1',
+    topicCode: 'MA3-AR-01',
+    topicTitle: 'Efficient mental and written strategies',
+    year: 'Year 5',
+    seed: Y5_CH2_QUESTIONS_AR1,
+    label: 'Y5 Ch2 · MA3-AR-01 Efficient mental and written strategies',
+  },
+  {
+    chapterId: 'y5-ar',
+    chapterTitle: 'Additive Relations (A)',
+    topicId: 'y5-ar-2',
+    topicCode: 'MA3-AR-01',
+    topicTitle: 'Reasonableness of solutions',
+    year: 'Year 5',
+    seed: Y5_CH2_QUESTIONS_AR2,
+    label: 'Y5 Ch2 · MA3-AR-01 Reasonableness of solutions',
+  },
+  {
+    chapterId: 'y5-mr',
+    chapterTitle: 'Multiplicative Relations (A)',
+    topicId: 'y5-mr-1',
+    topicCode: 'MA3-MR-01',
+    topicTitle: 'Multiply 2, 3, 4-digit \u00d7 1-digit',
+    year: 'Year 5',
+    seed: Y5_CH3_QUESTIONS_MR1,
+    label: 'Y5 Ch3 · MA3-MR-01 Multiply 2, 3, 4-digit \u00d7 1-digit',
+  },
+  {
+    chapterId: 'y5-mr',
+    chapterTitle: 'Multiplicative Relations (A)',
+    topicId: 'y5-mr-3',
+    topicCode: 'MA3-MR-01',
+    topicTitle: 'Factors and products',
+    year: 'Year 5',
+    seed: Y5_CH3_QUESTIONS_MR3,
+    label: 'Y5 Ch3 · MA3-MR-01 Factors and products',
+  },
+  {
+    chapterId: 'y5-mr',
+    chapterTitle: 'Multiplicative Relations (A)',
+    topicId: 'y5-mr-4',
+    topicCode: 'MA3-MR-02',
+    topicTitle: 'Division with remainders',
+    year: 'Year 5',
+    seed: Y5_CH3_QUESTIONS_MR4,
+    label: 'Y5 Ch3 · MA3-MR-02 Division with remainders',
   },
   {
     chapterId: 'y9-1',
