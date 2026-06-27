@@ -1504,5 +1504,1294 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
         workingOut: "\\text{Average} = \\frac{180}{6} = 30"
       }
     ]
+  },
+  {
+    id: "y6-wn-q1a_p16",
+    c: "WN1",
+    t: "Roman Numerals",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XII\\)",
+    a: 0,
+    opts: [
+      "\\(12\\)",
+      "\\(11\\)",
+      "\\(13\\)",
+      "\\(15\\)"
+    ],
+    h: "Add the values of the symbols together: X = 10, I = 1.",
+    s: "X = 10, II = 2. Adding them together gives: 10 + 2 = 12.",
+    solutionSteps: [
+      {
+        explanation: "Identify the values of individual Roman symbols.",
+        workingOut: "\\(X = 10\\), \\(I = 1\\)",
+        graphData: null
+      },
+      {
+        explanation: "Sum the values from left to right.",
+        workingOut: "\\(10 + 1 + 1 = 12\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q1b_p16",
+    c: "WN1",
+    t: "Roman Numerals",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XV\\)",
+    a: 0,
+    opts: [
+      "\\(15\\)",
+      "\\(14\\)",
+      "\\(16\\)",
+      "\\(20\\)"
+    ],
+    h: "Add the values of the symbols: X = 10, V = 5.",
+    s: "X = 10, V = 5. Adding them together gives: 10 + 5 = 15.",
+    solutionSteps: [
+      {
+        explanation: "Identify the values of individual Roman symbols.",
+        workingOut: "\\(X = 10\\), \\(V = 5\\)",
+        graphData: null
+      },
+      {
+        explanation: "Sum the values from left to right.",
+        workingOut: "\\(10 + 5 = 15\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q1c_p16",
+    c: "WN1",
+    t: "Roman Numerals",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XXVII\\)",
+    a: 0,
+    opts: [
+      "\\(27\\)",
+      "\\(26\\)",
+      "\\(28\\)",
+      "\\(37\\)"
+    ],
+    h: "Add the values of the symbols: X = 10, V = 5, I = 1.",
+    s: "XX = 20, V = 5, II = 2. Adding them together gives: 20 + 5 + 2 = 27.",
+    solutionSteps: [
+      {
+        explanation: "Identify the values of individual Roman symbols.",
+        workingOut: "\\(X = 10\\), \\(V = 5\\), \\(I = 1\\)",
+        graphData: null
+      },
+      {
+        explanation: "Sum the values from left to right.",
+        workingOut: "\\(10 + 10 + 5 + 1 + 1 = 27\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q1d_p16",
+    c: "WN1",
+    t: "Roman Numerals",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(LIV\\)",
+    a: 0,
+    opts: [
+      "\\(54\\)",
+      "\\(56\\)",
+      "\\(64\\)",
+      "\\(44\\)"
+    ],
+    h: "Note that L = 50 and IV is a subtractive pair (5 - 1 = 4).",
+    s: "L = 50, IV = 5 - 1 = 4. Adding them together gives: 50 + 4 = 54.",
+    solutionSteps: [
+      {
+        explanation: "Identify L and the subtractive pair IV.",
+        workingOut: "\\(L = 50\\), \\(IV = 5 - 1 = 4\\)",
+        graphData: null
+      },
+      {
+        explanation: "Sum the values.",
+        workingOut: "\\(50 + 4 = 54\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q2a_p16",
+    c: "WN1",
+    t: "Roman Numerals",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Convert the following number to Roman numerals:\n\\(14\\)",
+    a: 0,
+    opts: [
+      "\\(XIV\\)",
+      "\\(XIIII\\)",
+      "\\(XVI\\)",
+      "\\(IXV\\)"
+    ],
+    h: "Break the number into tens (10) and units (4). 10 is X, 4 is IV.",
+    s: "14 = 10 + 4. 10 is represented as X, and 4 is IV. Combined, they form XIV.",
+    solutionSteps: [
+      {
+        explanation: "Decompose 14 into tens and units.",
+        workingOut: "\\(14 = 10 + 4\\)",
+        graphData: null
+      },
+      {
+        explanation: "Find the Roman numeral representations for 10 and 4.",
+        workingOut: "\\(10 = X\\), \\(4 = IV\\)",
+        graphData: null
+      },
+      {
+        explanation: "Combine the representations.",
+        workingOut: "\\text{XIV}",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q2b_p16",
+    c: "WN1",
+    t: "Roman Numerals",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Convert the following number to Roman numerals:\n\\(17\\)",
+    a: 0,
+    opts: [
+      "\\(XVII\\)",
+      "\\(XVV\\)",
+      "\\(XIIV\\)",
+      "\\(XIVII\\)"
+    ],
+    h: "Break the number into 10 + 5 + 2. 10 is X, 5 is V, 2 is II.",
+    s: "17 = 10 + 5 + 2. 10 is X, 5 is V, 2 is II. Combined, they form XVII.",
+    solutionSteps: [
+      {
+        explanation: "Decompose 17 into standard Roman place values.",
+        workingOut: "\\(17 = 10 + 5 + 2\\)",
+        graphData: null
+      },
+      {
+        explanation: "Convert each part to Roman symbols.",
+        workingOut: "\\(10 = X\\), \\(5 = V\\), \\(2 = II\\)",
+        graphData: null
+      },
+      {
+        explanation: "Combine the symbols.",
+        workingOut: "\\text{XVII}",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q2c_p16",
+    c: "WN1",
+    t: "Roman Numerals",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Convert the following number to Roman numerals:\n\\(21\\)",
+    a: 0,
+    opts: [
+      "\\(XXI\\)",
+      "\\(XIX\\)",
+      "\\(XIXI\\)",
+      "\\(LXXI\\)"
+    ],
+    h: "Break 21 into 20 (XX) and 1 (I).",
+    s: "21 = 20 + 1. 20 is XX, 1 is I. Combined, they form XXI.",
+    solutionSteps: [
+      {
+        explanation: "Decompose 21 into tens and units.",
+        workingOut: "\\(21 = 20 + 1\\)",
+        graphData: null
+      },
+      {
+        explanation: "Convert each part to Roman symbols.",
+        workingOut: "\\(20 = XX\\), \\(1 = I\\)",
+        graphData: null
+      },
+      {
+        explanation: "Combine the symbols.",
+        workingOut: "\\text{XXI}",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q2d_p16",
+    c: "WN1",
+    t: "Roman Numerals",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Convert the following number to Roman numerals:\n\\(44\\)",
+    a: 0,
+    opts: [
+      "\\(XLIV\\)",
+      "\\(XXXXIV\\)",
+      "\\(LXIV\\)",
+      "\\(XLVI\\)"
+    ],
+    h: "Break 44 into 40 (XL) and 4 (IV).",
+    s: "44 = 40 + 4. 40 is represented as XL (10 before 50) and 4 as IV. Combined, they form XLIV.",
+    solutionSteps: [
+      {
+        explanation: "Decompose 44 into tens and units.",
+        workingOut: "\\(44 = 40 + 4\\)",
+        graphData: null
+      },
+      {
+        explanation: "Represent 40 and 4 using subtractive Roman notation.",
+        workingOut: "\\(40 = XL\\), \\(4 = IV\\)",
+        graphData: null
+      },
+      {
+        explanation: "Combine the symbols.",
+        workingOut: "\\text{XLIV}",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q3a_p16",
+    c: "WN2",
+    t: "Writing numbers in words",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following number in words:\n\\(143\\)",
+    a: 0,
+    opts: [
+      "One hundred and forty-three",
+      "One hundred and thirty-four",
+      "One hundred and forty-two",
+      "One hundred and thirty-three"
+    ],
+    h: "Break the number into hundreds, tens, and units.",
+    s: "143 consists of 1 hundred, 4 tens (forty), and 3 units (three).",
+    solutionSteps: [
+      {
+        explanation: "Identify the place values of 143.",
+        workingOut: "100 \\implies \\text{One hundred}, \\quad 40 \\implies \\text{forty}, \\quad 3 \\implies \\text{three}",
+        graphData: null
+      },
+      {
+        explanation: "Combine the parts with 'and'.",
+        workingOut: "\\text{One hundred and forty-three}",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q3b_p16",
+    c: "WN2",
+    t: "Writing numbers in words",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following number in words:\n\\(807\\)",
+    a: 0,
+    opts: [
+      "Eight hundred and seven",
+      "Eight hundred and seventy",
+      "Eight hundred and seventeen",
+      "Eighty-seven"
+    ],
+    h: "Break the number into hundreds and units, noting there are zero tens.",
+    s: "807 consists of 8 hundreds and 7 units. Written as: Eight hundred and seven.",
+    solutionSteps: [
+      {
+        explanation: "Identify the place values of 807.",
+        workingOut: "800 \\implies \\text{Eight hundred}, \\quad 0 \\implies \\text{tens}, \\quad 7 \\implies \\text{seven}",
+        graphData: null
+      },
+      {
+        explanation: "Combine the parts with 'and'.",
+        workingOut: "\\text{Eight hundred and seven}",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q3c_p16",
+    c: "WN2",
+    t: "Writing numbers in words",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following number in words:\n\\(650\\)",
+    a: 0,
+    opts: [
+      "Six hundred and fifty",
+      "Six hundred and fifteen",
+      "Six hundred and five",
+      "Six hundred and fifty-five"
+    ],
+    h: "Break the number into hundreds and tens, noting there are zero units.",
+    s: "650 consists of 6 hundreds and 5 tens. Written as: Six hundred and fifty.",
+    solutionSteps: [
+      {
+        explanation: "Identify the place values of 650.",
+        workingOut: "600 \\implies \\text{Six hundred}, \\quad 50 \\implies \\text{fifty}",
+        graphData: null
+      },
+      {
+        explanation: "Combine the parts with 'and'.",
+        workingOut: "\\text{Six hundred and fifty}",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q3d_p16",
+    c: "WN2",
+    t: "Writing numbers in words",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following number in words:\n\\(1\\ 634\\)",
+    a: 0,
+    opts: [
+      "One thousand, six hundred and thirty-four",
+      "One thousand, six hundred and forty-three",
+      "One thousand, six hundred and thirty-six",
+      "One thousand, six hundred and thirty"
+    ],
+    h: "Break the number into thousands, hundreds, tens, and units.",
+    s: "1 634 consists of 1 thousand, 6 hundreds, 3 tens (thirty), and 4 units (four).",
+    solutionSteps: [
+      {
+        explanation: "Identify the place values of 1 634.",
+        workingOut: "1\\,000 \\implies \\text{One thousand}, \\quad 600 \\implies \\text{six hundred}, \\quad 34 \\implies \\text{thirty-four}",
+        graphData: null
+      },
+      {
+        explanation: "Combine the parts with proper commas and 'and'.",
+        workingOut: "\\text{One thousand, six hundred and thirty-four}",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q4a_p16",
+    c: "WN2",
+    t: "Place Value",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following word number as an ordinary numeral:\nFour hundred and eighty-seven",
+    a: 0,
+    opts: [
+      "\\(487\\)",
+      "\\(478\\)",
+      "\\(400\\ 87\\)",
+      "\\(4870\\)"
+    ],
+    h: "Identify the value of each part: four hundred (400), eighty-seven (87).",
+    s: "Four hundred is 400. Eighty-seven is 87. Combining them gives 487.",
+    solutionSteps: [
+      {
+        explanation: "Identify the numbers representing each word part.",
+        workingOut: "\\text{Four hundred} = 400, \\quad \\text{eighty-seven} = 87",
+        graphData: null
+      },
+      {
+        explanation: "Sum the values to find the standard numeral.",
+        workingOut: "\\(400 + 87 = 487\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q4b_p16",
+    c: "WN2",
+    t: "Place Value",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Write the following word number as an ordinary numeral:\nSix hundred and three",
+    a: 0,
+    opts: [
+      "\\(603\\)",
+      "\\(630\\)",
+      "\\(6003\\)",
+      "\\(633\\)"
+    ],
+    h: "Identify the value of each part: six hundred (600), three (3). Use a zero in the tens place.",
+    s: "Six hundred is 600. Three is 3. Combining them gives 603.",
+    solutionSteps: [
+      {
+        explanation: "Identify the numbers representing each word part.",
+        workingOut: "\\text{Six hundred} = 600, \\quad \\text{three} = 3",
+        graphData: null
+      },
+      {
+        explanation: "Sum the values to find the standard numeral.",
+        workingOut: "\\(600 + 3 = 603\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q5a_p16",
+    c: "WN3",
+    t: "Expanded Notation",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the expanded expression to find the ordinary numeral:\n\\((8 \\times 100) + (6 \\times 10) + (3 \\times 1)\\)",
+    a: 0,
+    opts: [
+      "\\(863\\)",
+      "\\(836\\)",
+      "\\(800\\ 63\\)",
+      "\\(860\\)"
+    ],
+    h: "Evaluate the multiplication inside each set of parentheses first, then add them.",
+    s: "(8 x 100) = 800. (6 x 10) = 60. (3 x 1) = 3. Adding them gives: 800 + 60 + 3 = 863.",
+    solutionSteps: [
+      {
+        explanation: "Evaluate the products within parentheses.",
+        workingOut: "\\(8 \\times 100 = 800\\), \\quad \\(6 \\times 10 = 60\\), \\quad \\(3 \\times 1 = 3\\)",
+        graphData: null
+      },
+      {
+        explanation: "Add the terms together.",
+        workingOut: "\\(800 + 60 + 3 = 863\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q5b_p16",
+    c: "WN3",
+    t: "Expanded Notation",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the expanded expression to find the ordinary numeral:\n\\((4 \\times 100) + (0 \\times 10) + (9 \\times 1)\\)",
+    a: 0,
+    opts: [
+      "\\(409\\)",
+      "\\(490\\)",
+      "\\(49\\)",
+      "\\(4009\\)"
+    ],
+    h: "Multiply within the parentheses first, then add the results.",
+    s: "(4 x 100) = 400. (0 x 10) = 0. (9 x 1) = 9. Adding them gives: 400 + 0 + 9 = 409.",
+    solutionSteps: [
+      {
+        explanation: "Evaluate the products within parentheses.",
+        workingOut: "\\(4 \\times 100 = 400\\), \\quad \\(0 \\times 10 = 0\\), \\quad \\(9 \\times 1 = 9\\)",
+        graphData: null
+      },
+      {
+        explanation: "Add the terms together.",
+        workingOut: "\\(400 + 0 + 9 = 409\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q6a_p16",
+    c: "WN3",
+    t: "Rounding",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Determine the closer multiple of 10:\nIs \\(84\\) closer to \\(80\\) or \\(90\\)?",
+    a: 0,
+    opts: [
+      "\\(80\\)",
+      "\\(90\\)",
+      "It is exactly halfway between them",
+      "\\(85\\)"
+    ],
+    h: "Look at the units digit. If it is less than 5, it is closer to the lower multiple.",
+    s: "84 is 4 units away from 80 and 6 units away from 90. Therefore, it is closer to 80.",
+    solutionSteps: [
+      {
+        explanation: "Find the distance from 84 to 80.",
+        workingOut: "\\(84 - 80 = 4\\)",
+        graphData: null
+      },
+      {
+        explanation: "Find the distance from 84 to 90.",
+        workingOut: "\\(90 - 84 = 6\\)",
+        graphData: null
+      },
+      {
+        explanation: "Compare the distances. Since 4 is less than 6, 84 is closer to 80.",
+        workingOut: "\\(4 < 6 \\implies 80\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q6b_p16",
+    c: "WN3",
+    t: "Rounding",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Round off the following number to the nearest ten:\n\\(84\\)",
+    a: 0,
+    opts: [
+      "\\(80\\)",
+      "\\(90\\)",
+      "\\(85\\)",
+      "\\(84\\)"
+    ],
+    h: "Look at the units digit. If the units digit is less than 5, round down.",
+    s: "In 84, the units digit is 4. Since 4 is less than 5, we round down to 80.",
+    solutionSteps: [
+      {
+        explanation: "Identify the units digit of 84.",
+        workingOut: "\\text{Units digit} = 4",
+        graphData: null
+      },
+      {
+        explanation: "Compare the units digit to 5. Since 4 is less than 5, round down.",
+        workingOut: "\\(4 < 5 \\implies\\text{round down}\\)",
+        graphData: null
+      },
+      {
+        explanation: "Change the units digit to zero.",
+        workingOut: "\\(84 \\approx 80\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q7a_p16",
+    c: "WN3",
+    t: "Addition",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the sum:\n\\(46 + 33\\)",
+    a: 0,
+    opts: [
+      "\\(79\\)",
+      "\\(78\\)",
+      "\\(89\\)",
+      "\\(73\\)"
+    ],
+    h: "Add the units digits first, then add the tens digits.",
+    s: "Units: 6 + 3 = 9. Tens: 4 + 3 = 7. Combining them gives 79.",
+    solutionSteps: [
+      {
+        explanation: "Set up the addition by aligning the place values.",
+        workingOut: "\\begin{array}{r@{\\quad}l} 46 \\\\ +\\quad 33 \\\\ \\hline \\end{array}",
+        graphData: null
+      },
+      {
+        explanation: "Add the units column.",
+        workingOut: "\\(6 + 3 = 9\\)",
+        graphData: null
+      },
+      {
+        explanation: "Add the tens column.",
+        workingOut: "\\(4 + 3 = 7\\)",
+        graphData: null
+      },
+      {
+        explanation: "State the final sum.",
+        workingOut: "\\(79\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q7b_p16",
+    c: "WN3",
+    t: "Addition",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the sum:\n\\(68 + 25\\)",
+    a: 0,
+    opts: [
+      "\\(93\\)",
+      "\\(83\\)",
+      "\\(95\\)",
+      "\\(98\\)"
+    ],
+    h: "Add the units digits first. If the sum is 10 or more, carry over to the tens place.",
+    s: "Units: 8 + 5 = 13 (write 3, carry 1). Tens: 6 + 2 + 1 (carry) = 9. Sum is 93.",
+    solutionSteps: [
+      {
+        explanation: "Set up the vertical column addition.",
+        workingOut: "\\begin{array}{r@{\\quad}l} 68 \\\\ +\\quad 25 \\\\ \\hline \\end{array}",
+        graphData: null
+      },
+      {
+        explanation: "Add the units place and carry over 1 to the tens place.",
+        workingOut: "\\(8 + 5 = 13 \\implies 3\\text{ with carry of } 1\\)",
+        graphData: null
+      },
+      {
+        explanation: "Add the tens place including the carried value.",
+        workingOut: "\\(6 + 2 + 1\\text{ (carry)} = 9\\)",
+        graphData: null
+      },
+      {
+        explanation: "State the final sum.",
+        workingOut: "\\(93\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q7c_p16",
+    c: "WN3",
+    t: "Addition",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the sum:\n\\(83 + 54\\)",
+    a: 0,
+    opts: [
+      "\\(137\\)",
+      "\\(127\\)",
+      "\\(133\\)",
+      "\\(147\\)"
+    ],
+    h: "Add the units digits, then add the tens digits.",
+    s: "Units: 3 + 4 = 7. Tens: 8 + 5 = 13. Combined sum is 137.",
+    solutionSteps: [
+      {
+        explanation: "Set up the vertical column addition.",
+        workingOut: "\\begin{array}{r@{\\quad}l} 83 \\\\ +\\quad 54 \\\\ \\hline \\end{array}",
+        graphData: null
+      },
+      {
+        explanation: "Add the units place.",
+        workingOut: "\\(3 + 4 = 7\\)",
+        graphData: null
+      },
+      {
+        explanation: "Add the tens place.",
+        workingOut: "\\(8 + 5 = 13\\)",
+        graphData: null
+      },
+      {
+        explanation: "State the final sum.",
+        workingOut: "\\(137\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q8a_p16",
+    c: "WN3",
+    t: "Subtraction",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the difference:\n\\(47 - 24\\)",
+    a: 0,
+    opts: [
+      "\\(23\\)",
+      "\\(21\\)",
+      "\\(27\\)",
+      "\\(13\\)"
+    ],
+    h: "Subtract the units column first, then the tens column.",
+    s: "Units: 7 - 4 = 3. Tens: 4 - 2 = 2. Combined difference is 23.",
+    solutionSteps: [
+      {
+        explanation: "Set up the vertical column subtraction.",
+        workingOut: "\\begin{array}{r@{\\quad}l} 47 \\\\ -\\quad 24 \\\\ \\hline \\end{array}",
+        graphData: null
+      },
+      {
+        explanation: "Subtract the units place.",
+        workingOut: "\\(7 - 4 = 3\\)",
+        graphData: null
+      },
+      {
+        explanation: "Subtract the tens place.",
+        workingOut: "\\(4 - 2 = 2\\)",
+        graphData: null
+      },
+      {
+        explanation: "State the final difference.",
+        workingOut: "\\(23\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q8b_p16",
+    c: "WN3",
+    t: "Subtraction",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the difference:\n\\(58 - 15\\)",
+    a: 0,
+    opts: [
+      "\\(43\\)",
+      "\\(33\\)",
+      "\\(45\\)",
+      "\\(53\\)"
+    ],
+    h: "Subtract the units column first, then the tens column.",
+    s: "Units: 8 - 5 = 3. Tens: 5 - 1 = 4. Combined difference is 43.",
+    solutionSteps: [
+      {
+        explanation: "Set up the vertical column subtraction.",
+        workingOut: "\\begin{array}{r@{\\quad}l} 58 \\\\ -\\quad 15 \\\\ \\hline \\end{array}",
+        graphData: null
+      },
+      {
+        explanation: "Subtract the units place.",
+        workingOut: "\\(8 - 5 = 3\\)",
+        graphData: null
+      },
+      {
+        explanation: "Subtract the tens place.",
+        workingOut: "\\(5 - 1 = 4\\)",
+        graphData: null
+      },
+      {
+        explanation: "State the final difference.",
+        workingOut: "\\(43\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q8c_p16",
+    c: "WN3",
+    t: "Subtraction",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the difference:\n\\(64 - 18\\)",
+    a: 0,
+    opts: [
+      "\\(46\\)",
+      "\\(56\\)",
+      "\\(48\\)",
+      "\\(36\\)"
+    ],
+    h: "Borrow 1 ten from the tens place to subtract 8 from 4 in the units place.",
+    s: "Borrowing makes units 14 - 8 = 6. Tens place becomes 5 - 1 = 4. Difference is 46.",
+    solutionSteps: [
+      {
+        explanation: "Set up the vertical column subtraction.",
+        workingOut: "\\begin{array}{r@{\\quad}l} 64 \\\\ -\\quad 18 \\\\ \\hline \\end{array}",
+        graphData: null
+      },
+      {
+        explanation: "Borrow 1 ten from the tens column to make 14 in the units column.",
+        workingOut: "\\(14 - 8 = 6\\)",
+        graphData: null
+      },
+      {
+        explanation: "Subtract the remaining tens place (which is now 5).",
+        workingOut: "\\(5 - 1 = 4\\)",
+        graphData: null
+      },
+      {
+        explanation: "State the final difference.",
+        workingOut: "\\(46\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q9a_p16",
+    c: "WN3",
+    t: "Multiplication",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the product:\n\\(13 \\times 5\\)",
+    a: 0,
+    opts: [
+      "\\(65\\)",
+      "\\(55\\)",
+      "\\(75\\)",
+      "\\(60\\)"
+    ],
+    h: "Multiply 3 by 5, then multiply 10 by 5, and add the results.",
+    s: "13 x 5 = (10 + 3) x 5 = 50 + 15 = 65.",
+    solutionSteps: [
+      {
+        explanation: "Decompose 13 into tens and units.",
+        workingOut: "\\(13 = 10 + 3\\)",
+        graphData: null
+      },
+      {
+        explanation: "Distribute the multiplication by 5.",
+        workingOut: "\\((10 \\times 5) + (3 \\times 5)\\)",
+        graphData: null
+      },
+      {
+        explanation: "Evaluate the products and add them together.",
+        workingOut: "\\(50 + 15 = 65\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q9b_p16",
+    c: "WN3",
+    t: "Multiplication",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the product:\n\\(16 \\times 7\\)",
+    a: 0,
+    opts: [
+      "\\(112\\)",
+      "\\(102\\)",
+      "\\(116\\)",
+      "\\(122\\)"
+    ],
+    h: "Multiply 6 by 7 (42, carry 4), then multiply 1 by 7 and add the carry.",
+    s: "16 x 7 = (10 + 6) x 7 = 70 + 42 = 112.",
+    solutionSteps: [
+      {
+        explanation: "Decompose 16 into tens and units.",
+        workingOut: "\\(16 = 10 + 6\\)",
+        graphData: null
+      },
+      {
+        explanation: "Distribute the multiplication by 7.",
+        workingOut: "\\((10 \\times 7) + (6 \\times 7)\\)",
+        graphData: null
+      },
+      {
+        explanation: "Evaluate the products and add them together.",
+        workingOut: "\\(70 + 42 = 112\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q9c_p16",
+    c: "WN3",
+    t: "Multiplication",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the product:\n\\(15 \\times 8\\)",
+    a: 0,
+    opts: [
+      "\\(120\\)",
+      "\\(110\\)",
+      "\\(130\\)",
+      "\\(100\\)"
+    ],
+    h: "Multiply 15 by 8, or use doubling/halving: 15 x 8 = 30 x 4.",
+    s: "15 x 8 = (10 + 5) x 8 = 80 + 40 = 120.",
+    solutionSteps: [
+      {
+        explanation: "Apply doubling and halving to simplify the multiplication.",
+        workingOut: "\\(15 \\times 8 = (15 \\times 2) \\times (8 \\div 2)\\)",
+        graphData: null
+      },
+      {
+        explanation: "Evaluate the simplified expression.",
+        workingOut: "\\(30 \\times 4 = 120\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q10a_p16",
+    c: "WN3",
+    t: "Division",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the quotient:\n\\(48 \\div 8\\)",
+    a: 0,
+    opts: [
+      "\\(6\\)",
+      "\\(8\\)",
+      "\\(7\\)",
+      "\\(5\\)"
+    ],
+    h: "Recall the multiplication facts for 8: what number multiplied by 8 equals 48?",
+    s: "8 x 6 = 48. Therefore, 48 / 8 = 6.",
+    solutionSteps: [
+      {
+        explanation: "Recall related multiplication facts.",
+        workingOut: "\\(8 \\times 6 = 48\\)",
+        graphData: null
+      },
+      {
+        explanation: "Evaluate the division.",
+        workingOut: "\\(48 \\div 8 = 6\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q10b_p16",
+    c: "WN3",
+    t: "Division",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the quotient:\n\\(54 \\div 3\\)",
+    a: 0,
+    opts: [
+      "\\(18\\)",
+      "\\(16\\)",
+      "\\(17\\)",
+      "\\(21\\)"
+    ],
+    h: "Divide 50 by 3 (gives 10 with remainder 2) and combine with the remaining units.",
+    s: "54 / 3 = (30 + 24) / 3 = 10 + 8 = 18.",
+    solutionSteps: [
+      {
+        explanation: "Decompose 54 into multiples of 3.",
+        workingOut: "\\(54 = 30 + 24\\)",
+        graphData: null
+      },
+      {
+        explanation: "Divide each part by 3.",
+        workingOut: "\\((30 \\div 3) + (24 \\div 3)\\)",
+        graphData: null
+      },
+      {
+        explanation: "Sum the quotients.",
+        workingOut: "\\(10 + 8 = 18\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q10c_p16",
+    c: "WN3",
+    t: "Division",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Calculate the quotient:\n\\(78 \\div 6\\)",
+    a: 0,
+    opts: [
+      "\\(13\\)",
+      "\\(12\\)",
+      "\\(14\\)",
+      "\\(16\\)"
+    ],
+    h: "Decompose 78 into 60 and 18, and divide both parts by 6.",
+    s: "78 / 6 = (60 + 18) / 6 = 10 + 3 = 13.",
+    solutionSteps: [
+      {
+        explanation: "Decompose 78 into parts that are multiples of 6.",
+        workingOut: "\\(78 = 60 + 18\\)",
+        graphData: null
+      },
+      {
+        explanation: "Divide each part by 6.",
+        workingOut: "\\((60 \\div 6) + (18 \\div 6)\\)",
+        graphData: null
+      },
+      {
+        explanation: "Sum the quotients.",
+        workingOut: "\\(10 + 3 = 13\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q11a_p16",
+    c: "WN3",
+    t: "Order of Operations",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the expression:\n\\(6 \\times 3 + 4\\)",
+    a: 0,
+    opts: [
+      "\\(22\\)",
+      "\\(42\\)",
+      "\\(18\\)",
+      "\\(24\\)"
+    ],
+    h: "Evaluate the multiplication first, then perform the addition.",
+    s: "According to BODMAS/BOMDAS, multiplication is done first: 6 x 3 = 18. Then add 4: 18 + 4 = 22.",
+    solutionSteps: [
+      {
+        explanation: "Evaluate the multiplication first.",
+        workingOut: "\\(6 \\times 3 = 18\\)",
+        graphData: null
+      },
+      {
+        explanation: "Add 4 to the product.",
+        workingOut: "\\(18 + 4 = 22\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q11b_p16",
+    c: "WN3",
+    t: "Order of Operations",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the expression:\n\\(7 + 3 \\times 4\\)",
+    a: 0,
+    opts: [
+      "\\(19\\)",
+      "\\(40\\)",
+      "\\(14\\)",
+      "\\(17\\)"
+    ],
+    h: "Evaluate the multiplication first, then perform the addition.",
+    s: "Perform multiplication first: 3 x 4 = 12. Then perform addition: 7 + 12 = 19.",
+    solutionSteps: [
+      {
+        explanation: "Evaluate the multiplication first.",
+        workingOut: "\\(3 \\times 4 = 12\\)",
+        graphData: null
+      },
+      {
+        explanation: "Add 7 to the product.",
+        workingOut: "\\(7 + 12 = 19\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q11c_p16",
+    c: "WN3",
+    t: "Order of Operations",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the expression:\n\\(12 + 8 \\div 2\\)",
+    a: 0,
+    opts: [
+      "\\(16\\)",
+      "\\(10\\)",
+      "\\(14\\)",
+      "\\(18\\)"
+    ],
+    h: "Evaluate the division first, then perform the addition.",
+    s: "Perform division first: 8 / 2 = 4. Then perform addition: 12 + 4 = 16.",
+    solutionSteps: [
+      {
+        explanation: "Evaluate the division first.",
+        workingOut: "\\(8 \\div 2 = 4\\)",
+        graphData: null
+      },
+      {
+        explanation: "Add 12 to the quotient.",
+        workingOut: "\\(12 + 4 = 16\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q12a_p16",
+    c: "WN3",
+    t: "Mathematical Terminology",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the following terminology problem:\nWhat is the product of \\(4\\) and \\(5\\)?",
+    a: 0,
+    opts: [
+      "\\(20\\)",
+      "\\(9\\)",
+      "\\(1\\)",
+      "\\(25\\)"
+    ],
+    h: "The term 'product' means to multiply the two numbers.",
+    s: "The product of 4 and 5 is 4 x 5 = 20.",
+    solutionSteps: [
+      {
+        explanation: "Understand that 'product' refers to multiplication.",
+        workingOut: "\\(4 \\times 5\\)",
+        graphData: null
+      },
+      {
+        explanation: "Evaluate the product.",
+        workingOut: "\\(20\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q12b_p16",
+    c: "WN3",
+    t: "Mathematical Terminology",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the following terminology problem:\nWhat is the sum of \\(9\\) and \\(4\\)?",
+    a: 0,
+    opts: [
+      "\\(13\\)",
+      "\\(36\\)",
+      "\\(5\\)",
+      "\\(12\\)"
+    ],
+    h: "The term 'sum' means to add the two numbers.",
+    s: "The sum of 9 and 4 is 9 + 4 = 13.",
+    solutionSteps: [
+      {
+        explanation: "Understand that 'sum' refers to addition.",
+        workingOut: "\\(9 + 4\\)",
+        graphData: null
+      },
+      {
+        explanation: "Evaluate the sum.",
+        workingOut: "\\(13\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q12c_p16",
+    c: "WN3",
+    t: "Mathematical Terminology",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the following terminology problem:\nWhat is the difference between \\(11\\) and \\(4\\)?",
+    a: 0,
+    opts: [
+      "\\(7\\)",
+      "\\(15\\)",
+      "\\(44\\)",
+      "\\(8\\)"
+    ],
+    h: "The term 'difference' means to subtract the smaller number from the larger number.",
+    s: "The difference between 11 and 4 is 11 - 4 = 7.",
+    solutionSteps: [
+      {
+        explanation: "Understand that 'difference' refers to subtraction.",
+        workingOut: "\\(11 - 4\\)",
+        graphData: null
+      },
+      {
+        explanation: "Evaluate the subtraction.",
+        workingOut: "\\(7\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q12d_p16",
+    c: "WN3",
+    t: "Mathematical Terminology",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the following terminology problem:\nWhat is the quotient of \\(8\\) and \\(2\\)?",
+    a: 0,
+    opts: [
+      "\\(4\\)",
+      "\\(16\\)",
+      "\\(6\\)",
+      "\\(10\\)"
+    ],
+    h: "The term 'quotient' means the result of dividing the first number by the second.",
+    s: "The quotient of 8 and 2 is 8 / 2 = 4.",
+    solutionSteps: [
+      {
+        explanation: "Understand that 'quotient' refers to division.",
+        workingOut: "\\(8 \\div 2\\)",
+        graphData: null
+      },
+      {
+        explanation: "Evaluate the division.",
+        workingOut: "\\(4\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
+  },
+  {
+    id: "y6-wn-q12e_p16",
+    c: "WN3",
+    t: "Mathematical Terminology",
+    type: "multiple_choice",
+    difficulty: "hard",
+    timeLimit: 120,
+    q: "Evaluate the following terminology problem:\nWhat is the average of \\(8\\) and \\(12\\)?",
+    a: 0,
+    opts: [
+      "\\(10\\)",
+      "\\(8\\)",
+      "\\(12\\)",
+      "\\(20\\)"
+    ],
+    h: "To find the average of two numbers, add them together and divide by 2.",
+    s: "Sum of 8 and 12 is 20. Divide by 2: 20 / 2 = 10.",
+    solutionSteps: [
+      {
+        explanation: "Find the sum of the two numbers.",
+        workingOut: "\\(8 + 12 = 20\\)",
+        graphData: null
+      },
+      {
+        explanation: "Divide the sum by the count of numbers (2).",
+        workingOut: "\\(20 \\div 2 = 10\\)",
+        graphData: null
+      }
+    ],
+    graphData: null
   }
 ];
+
