@@ -3826,5 +3826,492 @@ export const Y5_CH1_QUESTIONS = [
       }
     ],
     "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q1a_p34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Write the following number in words:\n\\(3\\ 584\\ 806\\)",
+    "opts": [
+      "Three million, five hundred and eighty-four thousand, eight hundred and six",
+      "Three million, five hundred and eighty-four thousand, eighty-six",
+      "Three million, five hundred and eighty thousand, eight hundred and six",
+      "Three million, fifty-eight thousand, eight hundred and six"
+    ],
+    "a": 0,
+    "hint": "Break down the number into millions, thousands, and units groups.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the millions group.",
+        "workingOut": "\\(3\\) millions \\(\\implies\\) \"Three million\"",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the thousands group.",
+        "workingOut": "\\(584\\) thousands \\(\\implies\\) \"five hundred and eighty-four thousand\"",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the remaining units group.",
+        "workingOut": "\\(806\\) units \\(\\implies\\) \"eight hundred and six\"",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the parts into a single word string.",
+        "workingOut": "\\text{Three million, five hundred and eighty-four thousand, eight hundred and six}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q1b_p34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Write the following number in words:\n\\(86\\ 004\\ 003\\)",
+    "opts": [
+      "Eighty-six million, four thousand and three",
+      "Eighty-six million, forty thousand and three",
+      "Eighty-six million, four hundred and three",
+      "Eight million, six hundred and four thousand and three"
+    ],
+    "a": 0,
+    "hint": "Break down the number into millions, thousands, and units groups, paying attention to the placeholder zeros.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the millions group.",
+        "workingOut": "\\(86\\) millions \\(\\implies\\) \"Eighty-six million\"",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the thousands group, noting the zero placeholders.",
+        "workingOut": "\\(004\\) thousands \\(\\implies\\) \"four thousand\"",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the units group.",
+        "workingOut": "\\(003\\) units \\(\\implies\\) \"three\"",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the parts with proper commas and 'and'.",
+        "workingOut": "\\text{Eighty-six million, four thousand and three}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q1c_p34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Write the following number in words:\n\\(716\\ 542\\)",
+    "opts": [
+      "Seven hundred and sixteen thousand, five hundred and forty-two",
+      "Seven hundred and sixty thousand, five hundred and forty-two",
+      "Seven hundred and sixteen thousand, five hundred and twenty-four",
+      "Seven hundred and sixteen million, five hundred and forty-two"
+    ],
+    "a": 0,
+    "hint": "Break down the number into thousands and units groups.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the thousands group.",
+        "workingOut": "\\(716\\) thousands \\(\\implies\\) \"Seven hundred and sixteen thousand\"",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the units group.",
+        "workingOut": "\\(542\\) units \\(\\implies\\) \"five hundred and forty-two\"",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the parts into a single word string.",
+        "workingOut": "\\text{Seven hundred and sixteen thousand, five hundred and forty-two}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q2a_p34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Round off the following number to the nearest thousand:\n\\(81\\ 482\\)",
+    "opts": [
+      "\\(81\\ 000\\)",
+      "\\(82\\ 000\\)",
+      "\\(81\\ 500\\)",
+      "\\(80\\ 000\\)"
+    ],
+    "a": 0,
+    "hint": "Look at the hundreds digit to determine whether to round up or down.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the hundreds digit of the number.",
+        "workingOut": "\\text{In } 81\\ 482\\text{, the hundreds digit is } 4",
+        "graphData": null
+      },
+      {
+        "explanation": "Compare the hundreds digit to 5. Since 4 is less than 5, round down.",
+        "workingOut": "\\(4 < 5 \\implies\\text{round down}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Change the hundreds, tens, and units digits to zeros.",
+        "workingOut": "\\(81\\ 482 \\approx 81\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q2b_p34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Round off the following number to the nearest thousand:\n\\(584\\ 612\\)",
+    "opts": [
+      "\\(584\\ 000\\)",
+      "\\(585\\ 000\\)",
+      "\\(584\\ 600\\)",
+      "\\(580\\ 000\\)"
+    ],
+    "a": 1,
+    "hint": "Look at the hundreds digit to determine whether to round up or down.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the hundreds digit of the number.",
+        "workingOut": "\\text{In } 584\\ 612\\text{, the hundreds digit is } 6",
+        "graphData": null
+      },
+      {
+        "explanation": "Compare the hundreds digit to 5. Since 6 is 5 or greater, round up.",
+        "workingOut": "\\(6 \\ge 5 \\implies\\text{round up}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add 1 to the thousands place and change the hundreds, tens, and units digits to zeros.",
+        "workingOut": "\\(584\\ 000 + 1\\ 000 = 585\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q2c_p34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Round off the following number to the nearest thousand:\n\\(2\\ 507\\ 500\\)",
+    "opts": [
+      "\\(2\\ 507\\ 000\\)",
+      "\\(2\\ 508\\ 000\\)",
+      "\\(2\\ 510\\ 000\\)",
+      "\\(2\\ 507\\ 500\\)"
+    ],
+    "a": 1,
+    "hint": "Look at the hundreds digit to determine whether to round up or down.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the hundreds digit of the number.",
+        "workingOut": "\\text{In } 2\\ 507\\ 500\\text{, the hundreds digit is } 5",
+        "graphData": null
+      },
+      {
+        "explanation": "Compare the hundreds digit to 5. Since 5 is 5 or greater, round up.",
+        "workingOut": "\\(5 \\ge 5 \\implies\\text{round up}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add 1 to the thousands place and change the hundreds, tens, and units digits to zeros.",
+        "workingOut": "\\(2\\ 507\\ 500 \\approx 2\\ 508\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q3a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Find the value of the underlined digit:\n\\(8\\underline{3}\\ 615\\)",
+    "opts": [
+      "\\(3\\ 000\\)",
+      "\\(300\\)",
+      "\\(30\\ 000\\)",
+      "\\(3\\)"
+    ],
+    "a": 0,
+    "hint": "Identify the place value of the underlined digit.",
+    "solutionSteps": [
+      {
+        "explanation": "Determine the place value position of the underlined digit 3.",
+        "workingOut": "\\text{The digit 3 is in the thousands place.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the digit by its place value.",
+        "workingOut": "\\(3 \\times 1\\ 000 = 3\\ 000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the value of the underlined digit.",
+        "workingOut": "\\(3\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q3b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Find the value of the underlined digit:\n\\(4\\ \\underline{7}29\\ 183\\)",
+    "opts": [
+      "\\(70\\ 000\\)",
+      "\\(700\\ 000\\)",
+      "\\(7\\ 000\\)",
+      "\\(7\\ 000\\ 000\\)"
+    ],
+    "a": 1,
+    "hint": "Identify the place value of the underlined digit.",
+    "solutionSteps": [
+      {
+        "explanation": "Determine the place value position of the underlined digit 7.",
+        "workingOut": "\\text{The digit 7 is in the hundred-thousands place.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the digit by its place value.",
+        "workingOut": "\\(7 \\times 100\\ 000 = 700\\ 000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the value of the underlined digit.",
+        "workingOut": "\\(700\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q3c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Find the value of the underlined digit:\n\\(\\underline{5}8\\ 402\\)",
+    "opts": [
+      "\\(5\\ 000\\)",
+      "\\(50\\ 000\\)",
+      "\\(500\\ 000\\)",
+      "\\(500\\)"
+    ],
+    "a": 1,
+    "hint": "Identify the place value of the underlined digit.",
+    "solutionSteps": [
+      {
+        "explanation": "Determine the place value position of the underlined digit 5.",
+        "workingOut": "\\text{The digit 5 is in the ten-thousands place.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the digit by its place value.",
+        "workingOut": "\\(5 \\times 10\\ 000 = 50\\ 000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the value of the underlined digit.",
+        "workingOut": "\\(50\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q3d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "Find the value of the underlined digit:\n\\(\\underline{6}\\ 295\\ 481\\)",
+    "opts": [
+      "\\(600\\ 000\\)",
+      "\\(6\\ 000\\ 000\\)",
+      "\\(60\\ 000\\)",
+      "\\(600\\)"
+    ],
+    "a": 1,
+    "hint": "Identify the place value of the underlined digit.",
+    "solutionSteps": [
+      {
+        "explanation": "Determine the place value position of the underlined digit 6.",
+        "workingOut": "\\text{The digit 6 is in the millions place.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the digit by its place value.",
+        "workingOut": "\\(6 \\times 1\\ 000\\ 000 = 6\\ 000\\ 000\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the value of the underlined digit.",
+        "workingOut": "\\(6\\ 000\\ 000\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q14a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "A set of \\(27\\) small cubes has been glued together to make one larger \\(3 \\times 3 \\times 3\\) cube. The large cube is then painted red all over.\n\nHow many of the small cubes will have exactly 3 sides painted?",
+    "opts": [
+      "\\(8\\)",
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(4\\)"
+    ],
+    "a": 0,
+    "hint": "Cubes with 3 sides painted are located at the corners of the large cube.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify where the cubes with 3 painted sides are located. They must be at the outer corners of the \\(3 \\times 3 \\times 3\\) cube.",
+        "workingOut": "\\text{Corners of a 3D cube}",
+        "graphData": null
+      },
+      {
+        "explanation": "Recall the properties of a standard 3D cube. A cube always has exactly 8 corners.",
+        "workingOut": "\\text{Number of corners} = 8",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final number of small cubes with 3 sides painted.",
+        "workingOut": "\\(8\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q14b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "A set of \\(27\\) small cubes has been glued together to make one larger \\(3 \\times 3 \\times 3\\) cube. The large cube is then painted red all over.\n\nHow many of the small cubes will have exactly 2 sides painted?",
+    "opts": [
+      "\\(8\\)",
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(10\\)"
+    ],
+    "a": 1,
+    "hint": "Cubes with 2 sides painted are located along the edges of the large cube, excluding the corners.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify where the cubes with 2 painted sides are located. They are located along the edges of the cube, excluding the corner cubes.",
+        "workingOut": "\\text{Cubes on edges} = 12\\text{ edges} \\times 1\\text{ middle cube per edge}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the total count. A cube has 12 edges, and on each edge of a \\(3 \\times 3 \\times 3\\) cube, there is exactly 1 cube that is not a corner.",
+        "workingOut": "\\(12 \\times 1 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final number of small cubes with 2 sides painted.",
+        "workingOut": "\\(12\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q14c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "A set of \\(27\\) small cubes has been glued together to make one larger \\(3 \\times 3 \\times 3\\) cube. The large cube is then painted red all over.\n\nHow many of the small cubes will have exactly 1 side painted?",
+    "opts": [
+      "\\(8\\)",
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(9\\)"
+    ],
+    "a": 2,
+    "hint": "Cubes with 1 side painted are located at the center of each face of the large cube.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify where the cubes with 1 painted side are located. They are located at the center of each of the 6 faces of the large cube.",
+        "workingOut": "\\text{Cubes at center of faces} = 6\\text{ faces} \\times 1\\text{ center cube per face}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the total count. A cube has 6 faces, and each face of a \\(3 \\times 3 \\times 3\\) cube has exactly 1 center cube.",
+        "workingOut": "\\(6 \\times 1 = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final number of small cubes with 1 side painted.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-rn-1-hard-q14d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "question": "A set of \\(27\\) small cubes has been glued together to make one larger \\(3 \\times 3 \\times 3\\) cube. The large cube is then painted red all over.\n\nHow many of the small cubes will have no sides painted?",
+    "opts": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(4\\)"
+    ],
+    "a": 0,
+    "hint": "Cubes with no sides painted are located in the inner core of the large cube.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify where the cubes with no painted sides are located. They make up the inner core of the \\(3 \\times 3 \\times 3\\) cube.",
+        "workingOut": "\\text{Core dimensions} = (3-2) \\times (3-2) \\times (3-2)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the volume of the inner core.",
+        "workingOut": "\\(1 \\times 1 \\times 1 = 1\\text{ cube}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final number of unpainted small cubes.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];
+

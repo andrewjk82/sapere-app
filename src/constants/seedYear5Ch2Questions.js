@@ -2732,6 +2732,279 @@ export const Y5_CH2_QUESTIONS_AR1 = [
       }
     ],
     "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q6a_p34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Find the sum of the following numbers:\n\\(4\\ 213 + 283 + 12\\ 546 + 48 + 5\\ 819 + 364\\)",
+    "opts": [
+      "\\(23\\ 273\\)",
+      "\\(23\\ 173\\)",
+      "\\(23\\ 373\\)",
+      "\\(22\\ 273\\)"
+    ],
+    "a": 0,
+    "hint": "Set up column addition by aligning the digits by place value.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the numbers vertically by place value.",
+        "workingOut": "\\begin{array}{r@{\\quad}l} 4\\,213 \\\\ 283 \\\\ 12\\,546 \\\\ 48 \\\\ 5\\,819 \\\\ +\\quad 364 \\\\ \\hline \\end{array}",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the units column.",
+        "workingOut": "\\(3 + 3 + 6 + 8 + 9 + 4 = 33\\text{ (write 3, carry 3)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens column including the carry.",
+        "workingOut": "\\(1 + 8 + 4 + 4 + 1 + 6 + 3\\text{ (carry)} = 27\\text{ (write 7, carry 2)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the hundreds, thousands, and ten-thousands columns with their respective carries.",
+        "workingOut": "\\text{Hundreds}: 2 + 2 + 5 + 8 + 3 + 2\\text{ (carry)} = 22\\text{ (write 2, carry 2)} \\\\ \\text{Thousands}: 4 + 2 + 5 + 2\\text{ (carry)} = 13\\text{ (write 3, carry 1)} \\\\ \\text{Ten-thousands}: 1 + 1\\text{ (carry)} = 2",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final sum.",
+        "workingOut": "\\(23\\ 273\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q6b_p34",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Find the sum of the following numbers:\n\\(21\\ 582 + 482 + 24 + 6 + 1\\ 235 + 6\\ 128\\)",
+    "opts": [
+      "\\(29\\ 457\\)",
+      "\\(29\\ 357\\)",
+      "\\(28\\ 457\\)",
+      "\\(29\\ 557\\)"
+    ],
+    "a": 0,
+    "hint": "Set up column addition by aligning the digits by place value.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the numbers vertically by place value.",
+        "workingOut": "\\begin{array}{r@{\\quad}l} 21\\,582 \\\\ 482 \\\\ 24 \\\\ 6 \\\\ 1\\,235 \\\\ +\\quad 6\\,128 \\\\ \\hline \\end{array}",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the units column.",
+        "workingOut": "\\(2 + 2 + 4 + 6 + 5 + 8 = 27\\text{ (write 7, carry 2)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the tens column including the carry.",
+        "workingOut": "\\(8 + 8 + 2 + 3 + 2 + 2\\text{ (carry)} = 25\\text{ (write 5, carry 2)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the remaining columns.",
+        "workingOut": "\\text{Hundreds}: 5 + 4 + 2 + 1 + 2\\text{ (carry)} = 14\\text{ (write 4, carry 1)} \\\\ \\text{Thousands}: 1 + 1 + 6 + 1\\text{ (carry)} = 9 \\\\ \\text{Ten-thousands}: 2",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final sum.",
+        "workingOut": "\\(29\\ 457\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q8a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(2\\ 586 - 479\\)",
+    "opts": [
+      "\\(2\\ 107\\)",
+      "\\(2\\ 117\\)",
+      "\\(2\\ 007\\)",
+      "\\(2\\ 207\\)"
+    ],
+    "a": 0,
+    "hint": "Set up column subtraction, borrowing where necessary.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the digits by place value.",
+        "workingOut": "\\(2\\ 586 - 479\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the subtraction in the units place, borrowing 1 ten from the tens place.",
+        "workingOut": "\\(16 - 9 = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the tens place (which is now 7) and the remaining places.",
+        "workingOut": "\\text{Tens}: 7 - 7 = 0 \\\\ \\text{Hundreds}: 5 - 4 = 1 \\\\ \\text{Thousands}: 2 - 0 = 2",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final difference.",
+        "workingOut": "\\(2\\ 107\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q8b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(5\\ 384 - 2\\ 899\\)",
+    "opts": [
+      "\\(2\\ 485\\)",
+      "\\(2\\ 385\\)",
+      "\\(2\\ 585\\)",
+      "\\(2\\ 495\\)"
+    ],
+    "a": 0,
+    "hint": "Set up column subtraction, borrowing where necessary.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the digits by place value.",
+        "workingOut": "\\(5\\ 384 - 2\\ 899\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow 1 ten for the units column and subtract.",
+        "workingOut": "\\(14 - 9 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow 1 hundred for the tens column (now 7 tens) and subtract.",
+        "workingOut": "\\(17 - 9 = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow 1 thousand for the hundreds column (now 2 hundreds) and subtract.",
+        "workingOut": "\\(12 - 8 = 4 \\\\ \\text{Thousands}: 4 - 2 = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final difference.",
+        "workingOut": "\\(2\\ 485\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q8c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(15\\ 243 - 12\\ 586\\)",
+    "opts": [
+      "\\(2\\ 657\\)",
+      "\\(2\\ 757\\)",
+      "\\(2\\ 557\\)",
+      "\\(3\\ 657\\)"
+    ],
+    "a": 0,
+    "hint": "Set up column subtraction, borrowing where necessary.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the digits by place value.",
+        "workingOut": "\\(15\\ 243 - 12\\ 586\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow and subtract from right to left.",
+        "workingOut": "\\text{Units}: 13 - 6 = 7 \\\\ \\text{Tens}: 13 - 8 = 5 \\\\ \\text{Hundreds}: 11 - 5 = 6 \\\\ \\text{Thousands}: 4 - 2 = 2 \\\\ \\text{Ten-thousands}: 1 - 1 = 0",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final difference.",
+        "workingOut": "\\(2\\ 657\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q8d",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(624\\ 412 - 2\\ 783\\)",
+    "opts": [
+      "\\(621\\ 629\\)",
+      "\\(621\\ 729\\)",
+      "\\(622\\ 629\\)",
+      "\\(621\\ 529\\)"
+    ],
+    "a": 0,
+    "hint": "Set up column subtraction, borrowing where necessary.",
+    "solutionSteps": [
+      {
+        "explanation": "Align the digits by place value.",
+        "workingOut": "\\(624\\ 412 - 2\\ 783\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow and subtract from right to left.",
+        "workingOut": "\\text{Units}: 12 - 3 = 9 \\\\ \\text{Tens}: 10 - 8 = 2 \\\\ \\text{Hundreds}: 13 - 7 = 6 \\\\ \\text{Thousands}: 3 - 2 = 1 \\\\ \\text{Remaining}: 62\\text{ ten-thousands/hundred-thousands}",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude the final difference.",
+        "workingOut": "\\(621\\ 629\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y5-ar-1-hard-q11",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Efficient mental and written strategies",
+    "question": "My cricket batting average is \\(28\\) runs for \\(5\\) matches. If I score \\(112\\) runs in my \\(6\\text{th}\\) match, what is my new batting average?",
+    "opts": [
+      "\\(42\\text{ runs}\\)",
+      "\\(40\\text{ runs}\\)",
+      "\\(38\\text{ runs}\\)",
+      "\\(44\\text{ runs}\\)"
+    ],
+    "a": 0,
+    "hint": "Find the total runs from the first 5 matches, add the runs from the 6th match, and divide by 6.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the total runs scored in the first 5 matches.",
+        "workingOut": "\\(5 \\times 28 = 140\\text{ runs}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the runs from the 6th match to find the new total runs.",
+        "workingOut": "\\(140 + 112 = 252\\text{ runs}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide the new total runs by the total number of matches (6) to find the new average.",
+        "workingOut": "\\(252 \\div 6 = 42\\text{ runs}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null
   }
 ];
 export const Y5_CH2_QUESTIONS_AR2 = [
