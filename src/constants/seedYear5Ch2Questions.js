@@ -8,23 +8,23 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the sum:\n\\(37 + 42\\)",
     "opts": [
       {
-        "text": "\\(79\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(75\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(89\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(69\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(79\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(89\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Add the units digit first (7 + 2), then the tens digit (3 + 4).",
     "solutionSteps": [
       {
@@ -53,10 +53,6 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the sum:\n\\(75 + 18\\)",
     "opts": [
       {
-        "text": "\\(93\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(88\\)",
         "imageUrl": ""
       },
@@ -65,11 +61,15 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
+        "text": "\\(93\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(95\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Add the units: 5 + 8 = 13. Carry over 1 to the tens column.",
     "solutionSteps": [
       {
@@ -102,7 +102,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(116\\)",
+        "text": "\\(108\\)",
         "imageUrl": ""
       },
       {
@@ -110,7 +110,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(108\\)",
+        "text": "\\(116\\)",
         "imageUrl": ""
       }
     ],
@@ -147,19 +147,19 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(136\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(146\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(156\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(136\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Add units: 9 + 7 = 16. Carry 1. Add tens: 5 + 8 + 1.",
     "solutionSteps": [
       {
@@ -192,19 +192,19 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(24\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(18\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(22\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Subtract the units (8 - 6), then the tens (3 - 1).",
     "solutionSteps": [
       {
@@ -233,11 +233,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the difference:\n\\(49 - 13\\)",
     "opts": [
       {
-        "text": "\\(34\\)",
+        "text": "\\(38\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(38\\)",
+        "text": "\\(34\\)",
         "imageUrl": ""
       },
       {
@@ -282,15 +282,15 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(50\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(47\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
         "imageUrl": ""
       }
     ],
@@ -323,15 +323,15 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the difference:\n\\(63 - 17\\)",
     "opts": [
       {
+        "text": "\\(56\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(44\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(36\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(56\\)",
         "imageUrl": ""
       },
       {
@@ -373,11 +373,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Find the sum of \\(8\\) and \\(3\\).",
     "opts": [
       {
-        "text": "\\(10\\)",
+        "text": "\\(24\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5\\)",
+        "text": "\\(10\\)",
         "imageUrl": ""
       },
       {
@@ -385,7 +385,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(24\\)",
+        "text": "\\(5\\)",
         "imageUrl": ""
       }
     ],
@@ -413,7 +413,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Find the difference between \\(9\\) and \\(2\\).",
     "opts": [
       {
-        "text": "\\(18\\)",
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
         "imageUrl": ""
       },
       {
@@ -421,15 +425,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(11\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(7\\)",
+        "text": "\\(18\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "'Difference' means subtraction: subtract the smaller number from the larger.",
     "solutionSteps": [
       {
@@ -453,7 +453,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Find the average of \\(6\\) and \\(10\\).",
     "opts": [
       {
-        "text": "\\(16\\)",
+        "text": "\\(8\\)",
         "imageUrl": ""
       },
       {
@@ -465,11 +465,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(8\\)",
+        "text": "\\(16\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 0,
     "hint": "Add the numbers together, then divide by the count of numbers (2).",
     "solutionSteps": [
       {
@@ -498,23 +498,23 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the sum:\n\\(51 + 36\\)",
     "opts": [
       {
-        "text": "\\(97\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(85\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(87\\)",
+        "text": "\\(97\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(77\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(87\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Add units: 1 + 6. Add tens: 5 + 3.",
     "solutionSteps": [
       {
@@ -537,11 +537,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(52\\)",
+        "text": "\\(62\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(62\\)",
+        "text": "\\(52\\)",
         "imageUrl": ""
       },
       {
@@ -549,7 +549,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Add units: 7 + 5 = 12 (carry 1).",
     "solutionSteps": [
       {
@@ -586,15 +586,15 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(125\\)",
+        "text": "\\(135\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(135\\)",
+        "text": "\\(125\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Add units: 3 + 2. Add tens: 8 + 4.",
     "solutionSteps": [
       {
@@ -617,19 +617,19 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(153\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(152\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(148\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(153\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Add units: 7 + 5 = 12 (carry 1). Add tens: 6 + 8 + 1.",
     "solutionSteps": [
       {
@@ -662,11 +662,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(38\\)",
+        "text": "\\(36\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(36\\)",
+        "text": "\\(38\\)",
         "imageUrl": ""
       },
       {
@@ -674,7 +674,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Subtract units: 9 - 3. Subtract tens: 7 - 4.",
     "solutionSteps": [
       {
@@ -693,10 +693,6 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the difference:\n\\(85 - 42\\)",
     "opts": [
       {
-        "text": "\\(45\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(33\\)",
         "imageUrl": ""
       },
@@ -705,11 +701,15 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(53\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Subtract columns.",
     "solutionSteps": [
       {
@@ -728,6 +728,10 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the difference:\n\\(95 - 35\\)",
     "opts": [
       {
+        "text": "\\(65\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(60\\)",
         "imageUrl": ""
       },
@@ -736,15 +740,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(65\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(50\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Subtract columns.",
     "solutionSteps": [
       {
@@ -763,7 +763,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the difference:\n\\(74 - 25\\)",
     "opts": [
       {
-        "text": "\\(48\\)",
+        "text": "\\(59\\)",
         "imageUrl": ""
       },
       {
@@ -775,7 +775,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(59\\)",
+        "text": "\\(48\\)",
         "imageUrl": ""
       }
     ],
@@ -848,11 +848,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Find the difference between \\(25\\) and \\(13\\).",
     "opts": [
       {
-        "text": "\\(12\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(38\\)",
+        "text": "\\(15\\)",
         "imageUrl": ""
       },
       {
@@ -860,11 +856,15 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(15\\)",
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(38\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Subtract 13 from 25.",
     "solutionSteps": [
       {
@@ -927,19 +927,19 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(411\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(412\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(311\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(411\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Add units: 9 + 2 = 11 (carry 1). Add tens: 4 + 6 + 1 (carry 1). Add hundreds: 3 + 1.",
     "solutionSteps": [
       {
@@ -973,10 +973,6 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the sum:\n\\(423 + 54\\)",
     "opts": [
       {
-        "text": "\\(473\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(577\\)",
         "imageUrl": ""
       },
@@ -987,9 +983,13 @@ export const Y5_CH2_QUESTIONS_AR1 = [
       {
         "text": "\\(487\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(473\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Add units: 3 + 4. Add tens: 2 + 5. Hundreds remains 4.",
     "solutionSteps": [
       {
@@ -1008,7 +1008,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the sum:\n\\(742 + 339\\)",
     "opts": [
       {
-        "text": "\\(1082\\)",
+        "text": "\\(1071\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1081\\)",
         "imageUrl": ""
       },
       {
@@ -1016,15 +1020,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1071\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(1081\\)",
+        "text": "\\(1082\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Add units: 2 + 9 = 11 (carry 1). Add tens: 4 + 3 + 1. Add hundreds: 7 + 3.",
     "solutionSteps": [
       {
@@ -1062,7 +1062,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1624\\)",
+        "text": "\\(1634\\)",
         "imageUrl": ""
       },
       {
@@ -1070,11 +1070,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1634\\)",
+        "text": "\\(1624\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Add units: 9 + 5 = 14 (carry 1). Add tens: 3 + 9 + 1 (carry 1). Add hundreds: 8 + 7 + 1.",
     "solutionSteps": [
       {
@@ -1108,23 +1108,23 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the difference:\n\\(79 - 25\\)",
     "opts": [
       {
-        "text": "\\(55\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(54\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(44\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(53\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(55\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Subtract columns.",
     "solutionSteps": [
       {
@@ -1143,7 +1143,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the difference:\n\\(74 - 36\\)",
     "opts": [
       {
-        "text": "\\(37\\)",
+        "text": "\\(44\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48\\)",
         "imageUrl": ""
       },
       {
@@ -1151,15 +1155,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(44\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(48\\)",
+        "text": "\\(37\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "Borrow 1 ten from 7 to make 14 units.",
     "solutionSteps": [
       {
@@ -1183,15 +1183,15 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the difference:\n\\(327 - 51\\)",
     "opts": [
       {
+        "text": "\\(278\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(266\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(286\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(278\\)",
         "imageUrl": ""
       },
       {
@@ -1228,11 +1228,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "question": "Calculate the difference:\n\\(732 - 156\\)",
     "opts": [
       {
-        "text": "\\(578\\)",
+        "text": "\\(576\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(576\\)",
+        "text": "\\(676\\)",
         "imageUrl": ""
       },
       {
@@ -1240,11 +1240,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(676\\)",
+        "text": "\\(578\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "Borrow 1 ten to make 12 units. Borrow 1 hundred to make 12 tens.",
     "solutionSteps": [
       {
@@ -1282,7 +1282,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(7\\)",
+        "text": "\\(6\\)",
         "imageUrl": ""
       },
       {
@@ -1290,11 +1290,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(6\\)",
+        "text": "\\(7\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 1,
     "hint": "Sum the three numbers and divide by 3.",
     "solutionSteps": [
       {
@@ -1327,11 +1327,11 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(45\\)",
+        "text": "\\(10\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(10\\)",
+        "text": "\\(45\\)",
         "imageUrl": ""
       },
       {
@@ -1358,6 +1358,531 @@ export const Y5_CH2_QUESTIONS_AR1 = [
         "graphData": null
       }
     ]
+  },
+  {
+    "id": "y5-ar-1-l4-q7a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the sum:\n\\(472 + 629 + 254\\)",
+    "opts": [
+      {
+        "text": "\\(1354\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1355\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1345\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1255\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 1,
+    "hint": "Align the numbers and add units (2+9+4), then tens, then hundreds.",
+    "solutionSteps": [
+      {
+        "explanation": "Add units digits: 2 + 9 + 4 = 15.",
+        "workingOut": "\\(2 + 9 + 4 = 15 \\implies 5\\text{ units, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add tens digits: 7 + 2 + 5 + 1 (carry) = 15.",
+        "workingOut": "\\(7 + 2 + 5 + 1 = 15 \\implies 5\\text{ tens, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add hundreds digits: 4 + 6 + 2 + 1 (carry) = 13.",
+        "workingOut": "\\(4 + 6 + 2 + 1 = 13\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(1355\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q7b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the sum:\n\\(645 + 438 + 294\\)",
+    "opts": [
+      {
+        "text": "\\(1377\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1367\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1378\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1277\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Add columns: units, tens, hundreds.",
+    "solutionSteps": [
+      {
+        "explanation": "Add units digits: 5 + 8 + 4 = 17.",
+        "workingOut": "\\(5 + 8 + 4 = 17 \\implies 7\\text{ units, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add tens digits: 4 + 3 + 9 + 1 = 17.",
+        "workingOut": "\\(4 + 3 + 9 + 1 = 17 \\implies 7\\text{ tens, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add hundreds digits: 6 + 4 + 2 + 1 = 13.",
+        "workingOut": "\\(6 + 4 + 2 + 1 = 13\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(1377\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q7c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the sum:\n\\(1594 + 685 + 473\\)",
+    "opts": [
+      {
+        "text": "\\(2752\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2652\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2742\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2753\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Align and sum units, tens, hundreds, and thousands.",
+    "solutionSteps": [
+      {
+        "explanation": "Add units: 4 + 5 + 3 = 12.",
+        "workingOut": "\\(4 + 5 + 3 = 12 \\implies 2\\text{ units, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add tens: 9 + 8 + 7 + 1 = 25.",
+        "workingOut": "\\(9 + 8 + 7 + 1 = 25 \\implies 5\\text{ tens, carry } 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add hundreds: 5 + 6 + 4 + 2 = 17.",
+        "workingOut": "\\(5 + 6 + 4 + 2 = 17 \\implies 7\\text{ hundreds, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add thousands: 1 + 1 = 2.",
+        "workingOut": "\\(1 + 1\\text{ (carry)} = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(2752\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q7d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the sum:\n\\(7832 + 4519 + 403\\)",
+    "opts": [
+      {
+        "text": "\\(12654\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11754\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12744\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12754\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 3,
+    "hint": "Sum units, tens, hundreds, and thousands.",
+    "solutionSteps": [
+      {
+        "explanation": "Add units: 2 + 9 + 3 = 14.",
+        "workingOut": "\\(2 + 9 + 3 = 14 \\implies 4\\text{ units, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add tens: 3 + 1 + 0 + 1 = 5.",
+        "workingOut": "\\(3 + 1 + 0 + 1 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add hundreds: 8 + 5 + 4 = 17.",
+        "workingOut": "\\(8 + 5 + 4 = 17 \\implies 7\\text{ hundreds, carry } 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add thousands: 7 + 4 + 1 = 12.",
+        "workingOut": "\\(7 + 4 + 1 = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(12754\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q8a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(73 - 48\\)",
+    "opts": [
+      {
+        "text": "\\(23\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 2,
+    "hint": "Borrow 1 ten from 7 to make 13 units. 13 - 8 = 5.",
+    "solutionSteps": [
+      {
+        "explanation": "Borrow ten for units subtraction.",
+        "workingOut": "\\(7\\text{ tens } 3\\text{ units} \\implies 6\\text{ tens } 13\\text{ units}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract units.",
+        "workingOut": "\\(13 - 8 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract tens.",
+        "workingOut": "\\(6 - 4 = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(25\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q8b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(359 - 64\\)",
+    "opts": [
+      {
+        "text": "\\(295\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(305\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(294\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(285\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Subtract units: 9 - 4. Borrow hundred for tens: 15 - 6.",
+    "solutionSteps": [
+      {
+        "explanation": "Subtract units.",
+        "workingOut": "\\(9 - 4 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow from hundreds place to subtract tens.",
+        "workingOut": "\\(3\\text{ hundreds } 5\\text{ tens} \\implies 2\\text{ hundreds } 15\\text{ tens}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract tens.",
+        "workingOut": "\\(15 - 6 = 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State final difference.",
+        "workingOut": "\\(295\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q8c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(743 - 358\\)",
+    "opts": [
+      {
+        "text": "\\(385\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(485\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(395\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(375\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Borrow 1 ten to make 13 units. Borrow 1 hundred to make 13 tens.",
+    "solutionSteps": [
+      {
+        "explanation": "Borrow 1 ten for units.",
+        "workingOut": "\\(743 \\implies 73\\text{ tens } 13\\text{ units} \\implies 13-8=5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow 1 hundred for tens.",
+        "workingOut": "\\(73\\text{ tens} \\implies 6\\text{ hundreds } 13\\text{ tens} \\implies 13-5=8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract hundreds.",
+        "workingOut": "\\(6 - 3 = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(385\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q8d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Calculate the difference:\n\\(834 - 279\\)",
+    "opts": [
+      {
+        "text": "\\(655\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(565\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(555\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(545\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 2,
+    "hint": "Borrow ten to make 14 units. Borrow hundred to make 12 tens.",
+    "solutionSteps": [
+      {
+        "explanation": "Borrow ten for units.",
+        "workingOut": "\\(834 \\implies 82\\text{ tens } 14\\text{ units} \\implies 14-9=5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Borrow hundred for tens.",
+        "workingOut": "\\(82\\text{ tens} \\implies 7\\text{ hundreds } 12\\text{ tens} \\implies 12-7=5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract hundreds.",
+        "workingOut": "\\(7 - 2 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "\\(555\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q12b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Find the sum of \\(36\\) and \\(47\\).",
+    "opts": [
+      {
+        "text": "\\(93\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(83\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(73\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 1,
+    "hint": "Add the two numbers.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform addition.",
+        "workingOut": "\\(36 + 47 = 83\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q12d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Find the difference between \\(73\\) and \\(14\\).",
+    "opts": [
+      {
+        "text": "\\(59\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(57\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(87\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(69\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Subtract 14 from 73.",
+    "solutionSteps": [
+      {
+        "explanation": "Perform subtraction.",
+        "workingOut": "\\(73 - 14 = 59\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-ar-1-l4-q14b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Efficient mental and written strategies",
+    "question": "Eddie can hold his breath for 1 minute 32 seconds and Jane can hold her breath for only 57 seconds. What is the difference in time between them?",
+    "opts": [
+      {
+        "text": "\\(45\\text{ seconds}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ seconds}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\text{ seconds}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ seconds}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 2,
+    "hint": "Convert 1 minute 32 seconds entirely to seconds first.",
+    "solutionSteps": [
+      {
+        "explanation": "Convert Eddie's time to seconds.",
+        "workingOut": "\\(1\\text{ minute } 32\\text{ seconds} = 60 + 32 = 92\\text{ seconds}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the difference by subtracting Jane's time.",
+        "workingOut": "\\(92 - 57\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the final difference.",
+        "workingOut": "\\(35\\text{ seconds}\\)",
+        "graphData": null
+      }
+    ]
   }
 ];
 export const Y5_CH2_QUESTIONS_AR2 = [
@@ -1370,11 +1895,7 @@ export const Y5_CH2_QUESTIONS_AR2 = [
     "question": "Is \\(63\\) closer to \\(60\\) or \\(70\\)? Round off \\(63\\) to the nearest 10.",
     "opts": [
       {
-        "text": "Closer to \\(70\\); rounds to \\(70\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "Closer to \\(60\\); rounds to \\(70\\)",
+        "text": "Closer to \\(70\\); rounds to \\(60\\)",
         "imageUrl": ""
       },
       {
@@ -1382,11 +1903,15 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       },
       {
-        "text": "Closer to \\(70\\); rounds to \\(60\\)",
+        "text": "Closer to \\(70\\); rounds to \\(70\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Closer to \\(60\\); rounds to \\(70\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Look at the units digit. If it is less than 5, round down.",
     "solutionSteps": [
       {
@@ -1415,7 +1940,7 @@ export const Y5_CH2_QUESTIONS_AR2 = [
     "question": "Is \\(87\\) closer to \\(80\\) or \\(90\\)? Round off \\(87\\) to the nearest 10.",
     "opts": [
       {
-        "text": "Closer to \\(90\\); rounds to \\(90\\)",
+        "text": "Closer to \\(80\\); rounds to \\(80\\)",
         "imageUrl": ""
       },
       {
@@ -1423,15 +1948,15 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       },
       {
-        "text": "Closer to \\(90\\); rounds to \\(80\\)",
+        "text": "Closer to \\(90\\); rounds to \\(90\\)",
         "imageUrl": ""
       },
       {
-        "text": "Closer to \\(80\\); rounds to \\(80\\)",
+        "text": "Closer to \\(90\\); rounds to \\(80\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Since the units digit is 7 (which is 5 or more), round up.",
     "solutionSteps": [
       {
@@ -1460,10 +1985,6 @@ export const Y5_CH2_QUESTIONS_AR2 = [
     "question": "Is \\(24\\) closer to \\(20\\) or \\(30\\)? Round off \\(24\\) to the nearest 10.",
     "opts": [
       {
-        "text": "Closer to \\(30\\); rounds to \\(20\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "Closer to \\(20\\); rounds to \\(30\\)",
         "imageUrl": ""
       },
@@ -1474,9 +1995,13 @@ export const Y5_CH2_QUESTIONS_AR2 = [
       {
         "text": "Closer to \\(20\\); rounds to \\(20\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "Closer to \\(30\\); rounds to \\(20\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Check if the units digit is less than 5.",
     "solutionSteps": [
       {
@@ -1509,19 +2034,19 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       },
       {
+        "text": "Closer to \\(50\\); rounds to \\(60\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "Closer to \\(50\\); rounds to \\(50\\)",
         "imageUrl": ""
       },
       {
         "text": "Closer to \\(60\\); rounds to \\(60\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "Closer to \\(50\\); rounds to \\(60\\)",
-        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Since the units digit is 8 (which is 5 or more), round up.",
     "solutionSteps": [
       {
@@ -1549,19 +2074,19 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       },
       {
-        "text": "Closer to \\(90\\); rounds to \\(100\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "Closer to \\(90\\); rounds to \\(90\\)",
         "imageUrl": ""
       },
       {
         "text": "Closer to \\(100\\); rounds to \\(100\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "Closer to \\(90\\); rounds to \\(100\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Since the units digit is 4 (less than 5), round down.",
     "solutionSteps": [
       {
@@ -1585,7 +2110,11 @@ export const Y5_CH2_QUESTIONS_AR2 = [
     "question": "Is \\(35\\) closer to \\(30\\) or \\(40\\)? Round off \\(35\\) to the nearest 10.",
     "opts": [
       {
-        "text": "Closer to \\(40\\); rounds to \\(30\\)",
+        "text": "Closer to \\(40\\); rounds to \\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Closer to \\(30\\); rounds to \\(30\\)",
         "imageUrl": ""
       },
       {
@@ -1593,15 +2122,11 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       },
       {
-        "text": "Closer to \\(40\\); rounds to \\(40\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "Closer to \\(30\\); rounds to \\(30\\)",
+        "text": "Closer to \\(40\\); rounds to \\(30\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 0,
     "hint": "By convention, numbers ending in 5 are rounded up.",
     "solutionSteps": [
       {
@@ -1625,10 +2150,6 @@ export const Y5_CH2_QUESTIONS_AR2 = [
     "question": "Round off \\(749\\) to the nearest 100.",
     "opts": [
       {
-        "text": "\\(700\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(740\\)",
         "imageUrl": ""
       },
@@ -1637,11 +2158,15 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       },
       {
+        "text": "\\(700\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(800\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Check the tens digit. Since it is 4 (less than 5), round down.",
     "solutionSteps": [
       {
@@ -1670,6 +2195,10 @@ export const Y5_CH2_QUESTIONS_AR2 = [
     "question": "Round off \\(751\\) to the nearest 100.",
     "opts": [
       {
+        "text": "\\(800\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(760\\)",
         "imageUrl": ""
       },
@@ -1678,15 +2207,11 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(800\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(700\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Since the tens digit is 5, round up.",
     "solutionSteps": [
       {
@@ -1710,23 +2235,23 @@ export const Y5_CH2_QUESTIONS_AR2 = [
     "question": "Round off \\(750\\) to the nearest 100.",
     "opts": [
       {
-        "text": "\\(800\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(700\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(850\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(800\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(750\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(700\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "By convention, halfway values like 50 round up.",
     "solutionSteps": [
       {
@@ -1749,11 +2274,11 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1000\\)",
+        "text": "\\(1400\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1400\\)",
+        "text": "\\(1000\\)",
         "imageUrl": ""
       },
       {
@@ -1761,7 +2286,7 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 1,
     "hint": "Look at the tens digit, which is 3. Round down.",
     "solutionSteps": [
       {
@@ -1785,7 +2310,7 @@ export const Y5_CH2_QUESTIONS_AR2 = [
     "question": "Round off \\(1751\\) to the nearest 100.",
     "opts": [
       {
-        "text": "\\(1750\\)",
+        "text": "\\(1800\\)",
         "imageUrl": ""
       },
       {
@@ -1793,15 +2318,15 @@ export const Y5_CH2_QUESTIONS_AR2 = [
         "imageUrl": ""
       },
       {
-        "text": "\\(2000\\)",
+        "text": "\\(1750\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1800\\)",
+        "text": "\\(2000\\)",
         "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 0,
     "hint": "The tens digit is 5, so round up.",
     "solutionSteps": [
       {
