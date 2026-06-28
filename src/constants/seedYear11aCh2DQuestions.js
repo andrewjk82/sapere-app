@@ -5,10 +5,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the conjugate of:\n\n\\(\\sqrt{3}-1\\)",
-    "a": "\\sqrt{3}+1",
+    "answer": "\\sqrt{3}+1",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the two separate terms of the binomial expression: \\(\\sqrt{3}\\) and \\(1\\).",
@@ -27,7 +27,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q1b",
@@ -35,10 +35,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the conjugate of:\n\n\\(2\\sqrt{5}+3\\)",
-    "a": "2\\sqrt{5}-3",
+    "answer": "2\\sqrt{5}-3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the two separate terms of the binomial expression: \\(2\\sqrt{5}\\) and \\(3\\).",
@@ -57,7 +57,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q1c",
@@ -65,10 +65,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the conjugate of:\n\n\\(\\sqrt{7}-\\sqrt{2}\\)",
-    "a": "\\sqrt{7}+\\sqrt{2}",
+    "answer": "\\sqrt{7}+\\sqrt{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the two separate terms of the binomial expression: \\(\\sqrt{7}\\) and \\(\\sqrt{2}\\).",
@@ -87,7 +87,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q1d",
@@ -95,10 +95,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the conjugate of:\n\n\\(3\\sqrt{11}+4\\sqrt{6}\\)",
-    "a": "3\\sqrt{11}-4\\sqrt{6}",
+    "answer": "3\\sqrt{11}-4\\sqrt{6}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the two separate terms of the binomial expression: \\(3\\sqrt{11}\\) and \\(4\\sqrt{6}\\).",
@@ -117,7 +117,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q2a",
@@ -125,10 +125,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\(\\sqrt{3}-1\\) is multiplied by its conjugate.",
-    "a": "2",
+    "answer": "2",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the expression \\(\\sqrt{3}-1\\) and state its conjugate, which is \\(\\sqrt{3}+1\\).",
@@ -147,7 +147,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q2b",
@@ -155,10 +155,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\(2\\sqrt{5}+3\\) is multiplied by its conjugate.",
-    "a": "11",
+    "answer": "11",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the expression \\(2\\sqrt{5}+3\\) and state its conjugate, which is \\(2\\sqrt{5}-3\\).",
@@ -177,7 +177,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q2c",
@@ -185,10 +185,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\(\\sqrt{7}-\\sqrt{2}\\) is multiplied by its conjugate.",
-    "a": "5",
+    "answer": "5",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the expression \\(\\sqrt{7}-\\sqrt{2}\\) and state its conjugate, which is \\(\\sqrt{7}+\\sqrt{2}\\).",
@@ -207,7 +207,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q2d",
@@ -215,10 +215,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\(3\\sqrt{11}+4\\sqrt{6}\\) is multiplied by its conjugate.",
-    "a": "3",
+    "answer": "3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the expression \\(3\\sqrt{11}+4\\sqrt{6}\\) and state its conjugate, which is \\(3\\sqrt{11}-4\\sqrt{6}\\).",
@@ -237,7 +237,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q3a",
@@ -245,10 +245,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{3}}\\)",
-    "a": "\\frac{\\sqrt{3}}{3}",
+    "answer": "\\frac{\\sqrt{3}}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{3}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
@@ -267,7 +267,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q3b",
@@ -275,10 +275,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{7}}\\)",
-    "a": "\\frac{\\sqrt{7}}{7}",
+    "answer": "\\frac{\\sqrt{7}}{7}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{7}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
@@ -297,7 +297,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q3c",
@@ -305,10 +305,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3}{\\sqrt{5}}\\)",
-    "a": "\\frac{3\\sqrt{5}}{5}",
+    "answer": "\\frac{3\\sqrt{5}}{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{5}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
@@ -327,7 +327,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q3d",
@@ -335,10 +335,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{5}{\\sqrt{2}}\\)",
-    "a": "\\frac{5\\sqrt{2}}{2}",
+    "answer": "\\frac{5\\sqrt{2}}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{2}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
@@ -357,7 +357,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q3e",
@@ -365,10 +365,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{2}}{\\sqrt{3}}\\)",
-    "a": "\\frac{\\sqrt{6}}{3}",
+    "answer": "\\frac{\\sqrt{6}}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{3}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
@@ -387,7 +387,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q3f",
@@ -395,10 +395,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{5}}{\\sqrt{7}}\\)",
-    "a": "\\frac{\\sqrt{35}}{7}",
+    "answer": "\\frac{\\sqrt{35}}{7}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{7}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
@@ -417,7 +417,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q3g",
@@ -425,10 +425,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{2\\sqrt{11}}{\\sqrt{5}}\\)",
-    "a": "\\frac{2\\sqrt{55}}{5}",
+    "answer": "\\frac{2\\sqrt{55}}{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{5}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
@@ -447,7 +447,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q3h",
@@ -455,10 +455,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3\\sqrt{7}}{\\sqrt{2}}\\)",
-    "a": "\\frac{3\\sqrt{14}}{2}",
+    "answer": "\\frac{3\\sqrt{14}}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{2}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
@@ -477,7 +477,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q4a",
@@ -485,10 +485,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{3}-1}\\)",
-    "a": "\\frac{\\sqrt{3}+1}{2}",
+    "answer": "\\frac{\\sqrt{3}+1}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(\\sqrt{3-1}\\) by changing the middle sign. The conjugate is \\(\\sqrt{3}+1\\).",
@@ -507,7 +507,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q4b",
@@ -515,10 +515,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{7}+2}\\)",
-    "a": "\\frac{\\sqrt{7}-2}{3}",
+    "answer": "\\frac{\\sqrt{7}-2}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(\\sqrt{7+2}\\) by changing the middle sign. The conjugate is \\(\\sqrt{7}-2\\).",
@@ -537,7 +537,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q4c",
@@ -545,10 +545,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{3+\\sqrt{5}}\\)",
-    "a": "\\frac{3-\\sqrt{5}}{4}",
+    "answer": "\\frac{3-\\sqrt{5}}{4}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(3+\\sqrt{5}\\) by changing the middle sign. The conjugate is \\(3-\\sqrt{5}\\).",
@@ -567,7 +567,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q4d",
@@ -575,10 +575,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{4-\\sqrt{7}}\\)",
-    "a": "\\frac{4+\\sqrt{7}}{9}",
+    "answer": "\\frac{4+\\sqrt{7}}{9}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(4-\\sqrt{7}\\) by changing the middle sign. The conjugate is \\(4+\\sqrt{7}\\).",
@@ -597,7 +597,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q4e",
@@ -605,10 +605,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{5}-\\sqrt{2}}\\)",
-    "a": "\\frac{\\sqrt{5}+\\sqrt{2}}{3}",
+    "answer": "\\frac{\\sqrt{5}+\\sqrt{2}}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(\\sqrt{5-\\sqrt{2}}\\) by changing the middle sign. The conjugate is \\(\\sqrt{5}+\\sqrt{2}\\).",
@@ -627,7 +627,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q4f",
@@ -635,10 +635,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{10}+\\sqrt{6}}\\)",
-    "a": "\\frac{\\sqrt{10}-\\sqrt{6}}{4}",
+    "answer": "\\frac{\\sqrt{10}-\\sqrt{6}}{4}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(\\sqrt{10+\\sqrt{6}}\\) by changing the middle sign. The conjugate is \\(\\sqrt{10}-\\sqrt{6}\\).",
@@ -657,7 +657,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q4g",
@@ -665,10 +665,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{2\\sqrt{3}+1}\\)",
-    "a": "\\frac{2\\sqrt{3}-1}{11}",
+    "answer": "\\frac{2\\sqrt{3}-1}{11}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(2\\sqrt{3+1}\\) by changing the middle sign. The conjugate is \\(2\\sqrt{3}-1\\).",
@@ -687,7 +687,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q4h",
@@ -695,10 +695,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{5-3\\sqrt{2}}\\)",
-    "a": "\\frac{5+3\\sqrt{2}}{7}",
+    "answer": "\\frac{5+3\\sqrt{2}}{7}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(5-3\\sqrt{2}\\) by changing the middle sign. The conjugate is \\(5+3\\sqrt{2}\\).",
@@ -717,7 +717,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q5a",
@@ -725,10 +725,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{2}{\\sqrt{2}}\\)",
-    "a": "\\sqrt{2}",
+    "answer": "\\sqrt{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{2}\\). Multiply both numerator and denominator by this surd.",
@@ -747,7 +747,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q5b",
@@ -755,10 +755,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{5}{\\sqrt{5}}\\)",
-    "a": "\\sqrt{5}",
+    "answer": "\\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{5}\\). Multiply both numerator and denominator by this surd.",
@@ -777,7 +777,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q5c",
@@ -785,10 +785,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{6}{\\sqrt{3}}\\)",
-    "a": "2\\sqrt{3}",
+    "answer": "2\\sqrt{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{3}\\). Multiply both numerator and denominator by this surd.",
@@ -807,7 +807,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q5d",
@@ -815,10 +815,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{21}{\\sqrt{7}}\\)",
-    "a": "3\\sqrt{7}",
+    "answer": "3\\sqrt{7}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{7}\\). Multiply both numerator and denominator by this surd.",
@@ -837,7 +837,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q5e",
@@ -845,10 +845,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{3}{\\sqrt{6}}\\)",
-    "a": "\\frac{\\sqrt{6}}{2}",
+    "answer": "\\frac{\\sqrt{6}}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{6}\\). Multiply both numerator and denominator by this surd.",
@@ -867,7 +867,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q5f",
@@ -875,10 +875,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{5}{\\sqrt{15}}\\)",
-    "a": "\\frac{\\sqrt{15}}{3}",
+    "answer": "\\frac{\\sqrt{15}}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{15}\\). Multiply both numerator and denominator by this surd.",
@@ -897,7 +897,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q5g",
@@ -905,10 +905,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{8}{\\sqrt{6}}\\)",
-    "a": "\\frac{4\\sqrt{6}}{3}",
+    "answer": "\\frac{4\\sqrt{6}}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{6}\\). Multiply both numerator and denominator by this surd.",
@@ -927,7 +927,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q5h",
@@ -935,10 +935,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{14}{\\sqrt{10}}\\)",
-    "a": "\\frac{7\\sqrt{10}}{5}",
+    "answer": "\\frac{7\\sqrt{10}}{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{10}\\). Multiply both numerator and denominator by this surd.",
@@ -957,7 +957,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q6a",
@@ -965,10 +965,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{2\\sqrt{5}}\\)",
-    "a": "\\frac{\\sqrt{5}}{10}",
+    "answer": "\\frac{\\sqrt{5}}{10}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{5}\\). We only need to multiply numerator and denominator by this radical.",
@@ -987,7 +987,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q6b",
@@ -995,10 +995,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{3\\sqrt{7}}\\)",
-    "a": "\\frac{\\sqrt{7}}{21}",
+    "answer": "\\frac{\\sqrt{7}}{21}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{7}\\). We only need to multiply numerator and denominator by this radical.",
@@ -1017,7 +1017,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q6c",
@@ -1025,10 +1025,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3}{5\\sqrt{2}}\\)",
-    "a": "\\frac{3\\sqrt{2}}{10}",
+    "answer": "\\frac{3\\sqrt{2}}{10}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{2}\\). We only need to multiply numerator and denominator by this radical.",
@@ -1047,7 +1047,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q6d",
@@ -1055,10 +1055,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{2}{7\\sqrt{3}}\\)",
-    "a": "\\frac{2\\sqrt{3}}{21}",
+    "answer": "\\frac{2\\sqrt{3}}{21}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{3}\\). We only need to multiply numerator and denominator by this radical.",
@@ -1077,7 +1077,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q6e",
@@ -1085,10 +1085,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{10}{3\\sqrt{2}}\\)",
-    "a": "\\frac{5\\sqrt{2}}{3}",
+    "answer": "\\frac{5\\sqrt{2}}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{2}\\). We only need to multiply numerator and denominator by this radical.",
@@ -1107,7 +1107,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q6f",
@@ -1115,10 +1115,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{9}{4\\sqrt{3}}\\)",
-    "a": "\\frac{3\\sqrt{3}}{4}",
+    "answer": "\\frac{3\\sqrt{3}}{4}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{3}\\). We only need to multiply numerator and denominator by this radical.",
@@ -1137,7 +1137,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q6g",
@@ -1145,10 +1145,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{3}}{2\\sqrt{10}}\\)",
-    "a": "\\frac{\\sqrt{30}}{20}",
+    "answer": "\\frac{\\sqrt{30}}{20}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{10}\\). We only need to multiply numerator and denominator by this radical.",
@@ -1167,7 +1167,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q6h",
@@ -1175,10 +1175,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{2\\sqrt{11}}{5\\sqrt{7}}\\)",
-    "a": "\\frac{2\\sqrt{77}}{35}",
+    "answer": "\\frac{2\\sqrt{77}}{35}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{7}\\). We only need to multiply numerator and denominator by this radical.",
@@ -1197,7 +1197,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7a",
@@ -1205,10 +1205,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3}{\\sqrt{5}+1}\\)",
-    "a": "\\frac{3\\sqrt{5}-3}{4}",
+    "answer": "\\frac{3\\sqrt{5}-3}{4}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{5+1}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{5}-1\\).",
@@ -1232,7 +1232,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7b",
@@ -1240,10 +1240,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{4}{2\\sqrt{2}-\\sqrt{3}}\\)",
-    "a": "\\frac{8\\sqrt{2}+4\\sqrt{3}}{5}",
+    "answer": "\\frac{8\\sqrt{2}+4\\sqrt{3}}{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(2\\sqrt{2-\\sqrt{3}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(2\\sqrt{2}+\\sqrt{3}\\).",
@@ -1267,7 +1267,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7c",
@@ -1275,10 +1275,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{7}}{5-\\sqrt{7}}\\)",
-    "a": "\\frac{5\\sqrt{7}+7}{18}",
+    "answer": "\\frac{5\\sqrt{7}+7}{18}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(5-\\sqrt{7}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(5+\\sqrt{7}\\).",
@@ -1302,7 +1302,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7d",
@@ -1310,10 +1310,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3\\sqrt{3}}{\\sqrt{5}+\\sqrt{3}}\\)",
-    "a": "\\frac{3\\sqrt{15}-9}{2}",
+    "answer": "\\frac{3\\sqrt{15}-9}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{5+\\sqrt{3}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{5}-\\sqrt{3}\\).",
@@ -1337,7 +1337,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7e",
@@ -1345,10 +1345,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{2\\sqrt{7}}{2\\sqrt{7}-5}\\)",
-    "a": "\\frac{28+10\\sqrt{7}}{3}",
+    "answer": "\\frac{28+10\\sqrt{7}}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(2\\sqrt{7-5}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(2\\sqrt{7}+5\\).",
@@ -1372,7 +1372,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7f",
@@ -1380,10 +1380,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{5}}{\\sqrt{10}-\\sqrt{5}}\\)",
-    "a": "\\sqrt{2}+1",
+    "answer": "\\sqrt{2}+1",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{10-\\sqrt{5}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{10}+\\sqrt{5}\\).",
@@ -1407,7 +1407,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7g",
@@ -1415,10 +1415,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{3}-1}{\\sqrt{3}+1}\\)",
-    "a": "2-\\sqrt{3}",
+    "answer": "2-\\sqrt{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{3+1}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{3}-1\\).",
@@ -1442,7 +1442,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7h",
@@ -1450,10 +1450,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}}\\)",
-    "a": "\\frac{7+2\\sqrt{10}}{3}",
+    "answer": "\\frac{7+2\\sqrt{10}}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{5-\\sqrt{2}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{5}+\\sqrt{2}\\).",
@@ -1477,7 +1477,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7i",
@@ -1485,10 +1485,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3-\\sqrt{7}}{3+\\sqrt{7}}\\)",
-    "a": "8-3\\sqrt{7}",
+    "answer": "8-3\\sqrt{7}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(3+\\sqrt{7}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(3-\\sqrt{7}\\).",
@@ -1512,7 +1512,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7j",
@@ -1520,10 +1520,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3\\sqrt{2}+\\sqrt{5}}{3\\sqrt{2}-\\sqrt{5}}\\)",
-    "a": "\\frac{23+6\\sqrt{10}}{13}",
+    "answer": "\\frac{23+6\\sqrt{10}}{13}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(3\\sqrt{2-\\sqrt{5}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(3\\sqrt{2}+\\sqrt{5}\\).",
@@ -1547,7 +1547,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7k",
@@ -1555,10 +1555,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{10}-\\sqrt{6}}{\\sqrt{10}+\\sqrt{6}}\\)",
-    "a": "4-\\sqrt{15}",
+    "answer": "4-\\sqrt{15}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{10+\\sqrt{6}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{10}-\\sqrt{6}\\).",
@@ -1582,7 +1582,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q7l",
@@ -1590,10 +1590,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{7+2\\sqrt{11}}{7-2\\sqrt{11}}\\)",
-    "a": "93+28\\sqrt{11}",
+    "answer": "93+28\\sqrt{11}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(7-2\\sqrt{11}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(7+2\\sqrt{11}\\).",
@@ -1617,7 +1617,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q8a",
@@ -1625,10 +1625,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{\\sqrt{3}-1}{2-\\sqrt{3}}\\)",
-    "a": "\\sqrt{3}+1",
+    "answer": "\\sqrt{3}+1",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the denominator \\(2-\\sqrt{3}\\) and multiply the numerator and denominator by its conjugate, \\(2+\\sqrt{3}\\).",
@@ -1652,7 +1652,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q8b",
@@ -1660,10 +1660,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{2\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}\\)",
-    "a": "4-\\sqrt{10}",
+    "answer": "4-\\sqrt{10}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the denominator \\(\\sqrt{5+\\sqrt{2}}\\) and multiply the numerator and denominator by its conjugate, \\(\\sqrt{5}-\\sqrt{2}\\).",
@@ -1687,7 +1687,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q9a",
@@ -1695,10 +1695,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Show that the expression is rational by first rationalising the denominators:\n\n\\(\\frac{3}{\\sqrt{2}} + \\frac{3}{2+\\sqrt{2}}\\)",
-    "a": "3",
+    "answer": "3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Rationalise the first term by multiplying the numerator and denominator by \\(\\sqrt{2}\\).",
@@ -1722,7 +1722,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q9b",
@@ -1730,10 +1730,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Show that the expression is rational by first rationalising the denominators:\n\n\\(\\frac{1}{3+\\sqrt{6}} + \\frac{2}{\\sqrt{6}}\\)",
-    "a": "1",
+    "answer": "1",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Rationalise the first fraction using the conjugate \\(3-\\sqrt{6}\\).",
@@ -1757,7 +1757,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q9c",
@@ -1765,10 +1765,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Show that the expression is rational by first rationalising the denominators:\n\n\\(\\frac{4}{2+\\sqrt{2}} + \\frac{1}{3-2\\sqrt{2}}\\)",
-    "a": "7",
+    "answer": "7",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Rationalise the first fraction using its conjugate \\(2-\\sqrt{2}\\).",
@@ -1792,7 +1792,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q9d",
@@ -1800,10 +1800,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Show that the expression is rational by first rationalising the denominators:\n\n\\(\\frac{8}{3-\\sqrt{7}} - \\frac{6}{2\\sqrt{7}-5}\\)",
-    "a": "-2",
+    "answer": "-2",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Rationalise the first fraction using its conjugate \\(3+\\sqrt{7}\\).",
@@ -1827,7 +1827,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q10",
@@ -1835,10 +1835,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "If \\(x = \\frac{\\sqrt{5}+1}{2}\\), show that \\(1 + \\frac{1}{x} = x\\).",
-    "a": "x",
+    "answer": "x",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) into the term \\(\\frac{1}{x}\\) to write its reciprocal fraction.",
@@ -1862,7 +1862,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q11-a",
@@ -1870,10 +1870,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "The expression \\(\\frac{5+\\sqrt{6}}{\\sqrt{3}+\\sqrt{2}}\\) can be written in the form \\(a\\sqrt{3} + b\\sqrt{2}\\).\n\nFind \\(a\\).",
-    "a": "3",
+    "answer": "3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the conjugate of the denominator \\(\\sqrt{3}+\\sqrt{2}\\), which is \\(\\sqrt{3}-\\sqrt{2}\\).",
@@ -1897,7 +1897,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q11-b",
@@ -1905,10 +1905,10 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "The expression \\(\\frac{5+\\sqrt{6}}{\\sqrt{3}+\\sqrt{2}}\\) can be written in the form \\(a\\sqrt{3} + b\\sqrt{2}\\).\n\nFind \\(b\\).",
-    "a": "-2",
+    "answer": "-2",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the conjugate of the denominator \\(\\sqrt{3}+\\sqrt{2}\\), which is \\(\\sqrt{3}-\\sqrt{2}\\).",
@@ -1932,7 +1932,7 @@ export const Y11A_CH2D_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Rationalising the denominator"
   },
   {
     "id": "y11a-2d-q12",
@@ -1940,91 +1940,23 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Consider the following expression problems.",
-    "a": "",
+    "answer": "",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Rationalising the denominator",
-    "hint": "",
-    "solutionSteps": [],
-    "graphData": null,
-    "subQuestions": [
+    "solutionSteps": [
       {
-        "id": "y11a-2d-q12a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "question": "Expand \\((x+\\frac{1}{x})^2\\).",
-        "a": "x^2 + 2 + \\frac{1}{x^2}",
-        "solutionSteps": [
-          {
-            "explanation": "Recall the perfect square expansion formula: \\((a+b)^2 = a^2 + 2ab + b^2\\).",
-            "workingOut": "(x + \\frac{1}{x})^2 = x^2 + 2(x)(\\frac{1}{x}) + (\\frac{1}{x})^2",
-            "graphData": null
-          },
-          {
-            "explanation": "Simplify the middle multiplication term since \\(x \\times \\frac{1}{x} = 1\\).",
-            "workingOut": "2(x)(\\frac{1}{x}) = 2",
-            "graphData": null
-          },
-          {
-            "explanation": "Combine the simplified terms to write the expanded binomial expression.",
-            "workingOut": "= x^2 + 2 + \\frac{1}{x^2}",
-            "graphData": null
-          }
-        ],
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Consider the following expression problems.",
         "graphData": null
       },
       {
-        "id": "y11a-2d-q12b-i",
-        "type": "teacher_review",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "Suppose that \\(x = \\sqrt{7}+\\sqrt{6}\\).\n\nShow that \\(x + \\frac{1}{x} = 2\\sqrt{7}\\).",
-        "a": "2\\sqrt{7}",
-        "solutionSteps": [
-          {
-            "explanation": "Write down the reciprocal expression \\(\\frac{1}{x}\\) and find its conjugate.",
-            "workingOut": "\\frac{1}{x} = \\frac{1}{\\sqrt{7}+\\sqrt{6}}",
-            "graphData": null
-          },
-          {
-            "explanation": "Rationalise the denominator of \\(\\frac{1}{x}\\) by multiplying the numerator and denominator by the conjugate \\(\\sqrt{7}-\\sqrt{6}\\).",
-            "workingOut": "\\frac{1(\\sqrt{7}-\\sqrt{6})}{(\\sqrt{7}+\\sqrt{6})(\\sqrt{7}-\\sqrt{6})} = \\frac{\\sqrt{7}-\\sqrt{6}}{7-6} = \\sqrt{7}-\\sqrt{6}",
-            "graphData": null
-          },
-          {
-            "explanation": "Add the value of \\(x\\) and the simplified value of \\(\\frac{1}{x}\\) together and combine terms.",
-            "workingOut": "x + \\frac{1}{x} = (\\sqrt{7}+\\sqrt{6}) + (\\sqrt{7}-\\sqrt{6}) = 2\\sqrt{7}",
-            "graphData": null
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y11a-2d-q12b-ii",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "Use the result in part a and b(i) to find the value of \\(x^2 + \\frac{1}{x^2}\\).",
-        "a": "26",
-        "solutionSteps": [
-          {
-            "explanation": "Substitute the value of \\(x + \\frac{1}{x} = 2\\sqrt{7}\\) into the expansion identity from part a: \\((x+\\frac{1}{x})^2 = x^2 + 2 + \\frac{1}{x^2}\\).",
-            "workingOut": "(2\\sqrt{7})^2 = x^2 + 2 + \\frac{1}{x^2}",
-            "graphData": null
-          },
-          {
-            "explanation": "Evaluate the square on the left hand side: \\((2\\sqrt{7})^2 = 4 \\times 7 = 28\\).",
-            "workingOut": "28 = x^2 + 2 + \\frac{1}{x^2}",
-            "graphData": null
-          },
-          {
-            "explanation": "Subtract 2 from both sides of the equation to find the value of \\(x^2 + \\frac{1}{x^2}\\).",
-            "workingOut": "x^2 + \\frac{1}{x^2} = 28 - 2 = 26",
-            "graphData": null
-          }
-        ],
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "t": "Rationalising the denominator"
   }
 ];

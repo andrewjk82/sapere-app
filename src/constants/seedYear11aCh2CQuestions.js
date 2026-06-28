@@ -5,10 +5,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((\\sqrt{3} + 1)^2\\)",
-    "a": "4 + 2\\sqrt{3}",
+    "answer": "4 + 2\\sqrt{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is a perfect square of the form \\((a + b)^2\\). Recall the algebraic expansion identity: \\((a + b)^2 = a^2 + 2ab + b^2\\).",
@@ -26,7 +26,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q8b",
@@ -34,10 +35,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((\\sqrt{5} - 1)^2\\)",
-    "a": "6 - 2\\sqrt{5}",
+    "answer": "6 - 2\\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is a perfect square of the form \\((a - b)^2\\). Recall the algebraic expansion identity: \\((a - b)^2 = a^2 - 2ab + b^2\\).",
@@ -55,7 +56,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q8c",
@@ -63,10 +65,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((\\sqrt{3} + \\sqrt{2})^2\\)",
-    "a": "5 + 2\\sqrt{6}",
+    "answer": "5 + 2\\sqrt{6}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is a perfect square of the form \\((a + b)^2\\). Recall the algebraic expansion identity: \\((a + b)^2 = a^2 + 2ab + b^2\\).",
@@ -84,7 +86,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q8d",
@@ -92,10 +95,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((\\sqrt{7} - \\sqrt{5})^2\\)",
-    "a": "12 - 2\\sqrt{35}",
+    "answer": "12 - 2\\sqrt{35}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is a perfect square of the form \\((a - b)^2\\). Recall the algebraic expansion identity: \\((a - b)^2 = a^2 - 2ab + b^2\\).",
@@ -113,7 +116,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q8e",
@@ -121,10 +125,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((2\\sqrt{3} - 1)^2\\)",
-    "a": "13 - 4\\sqrt{3}",
+    "answer": "13 - 4\\sqrt{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is a perfect square of the form \\((a - b)^2\\). Recall the algebraic expansion identity: \\((a - b)^2 = a^2 - 2ab + b^2\\).",
@@ -142,7 +146,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q8f",
@@ -150,10 +155,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((2\\sqrt{5} + 3)^2\\)",
-    "a": "29 + 12\\sqrt{5}",
+    "answer": "29 + 12\\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is a perfect square of the form \\((a + b)^2\\). Recall the algebraic expansion identity: \\((a + b)^2 = a^2 + 2ab + b^2\\).",
@@ -171,7 +176,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q8g",
@@ -179,10 +185,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((2\\sqrt{7} + \\sqrt{5})^2\\)",
-    "a": "33 + 4\\sqrt{35}",
+    "answer": "33 + 4\\sqrt{35}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is a perfect square of the form \\((a + b)^2\\). Recall the algebraic expansion identity: \\((a + b)^2 = a^2 + 2ab + b^2\\).",
@@ -200,7 +206,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q8h",
@@ -208,10 +215,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((3\\sqrt{2} - 2\\sqrt{3})^2\\)",
-    "a": "30 - 12\\sqrt{6}",
+    "answer": "30 - 12\\sqrt{6}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is a perfect square of the form \\((a - b)^2\\). Recall the algebraic expansion identity: \\((a - b)^2 = a^2 - 2ab + b^2\\).",
@@ -229,7 +236,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q8i",
@@ -237,10 +245,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((3\\sqrt{5} + \\sqrt{10})^2\\)",
-    "a": "55 + 30\\sqrt{2}",
+    "answer": "55 + 30\\sqrt{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is a perfect square of the form \\((a + b)^2\\). Recall the algebraic expansion identity: \\((a + b)^2 = a^2 + 2ab + b^2\\).",
@@ -258,7 +266,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q9a",
@@ -266,10 +275,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{\\sqrt{40}}{\\sqrt{10}}\\)",
-    "a": "2",
+    "answer": "2",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Apply the quotient rule of radicals: \\(\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}\\).",
@@ -287,7 +296,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q9b",
@@ -295,10 +305,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{\\sqrt{18}}{\\sqrt{50}}\\)",
-    "a": "\\frac{3}{5}",
+    "answer": "\\frac{3}{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Combine the numerator and denominator into a single square root using the division property of radicals.",
@@ -316,7 +326,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q9c",
@@ -324,10 +335,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{2\\sqrt{6} \\times \\sqrt{5}}{\\sqrt{10}}\\)",
-    "a": "2\\sqrt{3}",
+    "answer": "2\\sqrt{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the surds in the numerator using the multiplication rule: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -345,7 +356,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q9d",
@@ -353,10 +365,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{5\\sqrt{7} \\times \\sqrt{3}}{\\sqrt{28}}\\)",
-    "a": "\\frac{5\\sqrt{3}}{2}",
+    "answer": "\\frac{5\\sqrt{3}}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the radicals in the numerator.",
@@ -379,7 +391,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q9e",
@@ -387,10 +400,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{\\sqrt{15} \\times \\sqrt{20}}{\\sqrt{12}}\\)",
-    "a": "5",
+    "answer": "5",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Simplify the numerator by multiplying the numbers under the square roots.",
@@ -413,7 +426,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q9f",
@@ -421,10 +435,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{6\\sqrt{3} \\times 8\\sqrt{2}}{\\sqrt{32} \\times \\sqrt{27}}\\)",
-    "a": "4",
+    "answer": "4",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the coefficients and surd parts in both the numerator and denominator separately.",
@@ -442,7 +456,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q10a",
@@ -450,10 +465,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(\\sqrt{2}\\) and \\(\\sqrt{7}\\).",
-    "a": "3",
+    "answer": "3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall Pythagoras' theorem, which states that the square of the hypotenuse \\(c\\) is equal to the sum of the squares of the other two sides: \\(c^2 = a^2 + b^2\\).",
@@ -471,7 +486,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q10b",
@@ -479,10 +495,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(\\sqrt{5}\\) and \\(2\\sqrt{5}\\).",
-    "a": "5",
+    "answer": "5",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall Pythagoras' theorem, which states that the square of the hypotenuse \\(c\\) is equal to the sum of the squares of the other two sides: \\(c^2 = a^2 + b^2\\).",
@@ -500,7 +516,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q10c",
@@ -508,10 +525,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(\\sqrt{7} + 1\\) and \\(\\sqrt{7} - 1\\).",
-    "a": "4",
+    "answer": "4",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall Pythagoras' theorem, which states that the square of the hypotenuse \\(c\\) is equal to the sum of the squares of the other two sides: \\(c^2 = a^2 + b^2\\).",
@@ -529,7 +546,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q10d",
@@ -537,10 +555,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(2\\sqrt{3} - \\sqrt{6}\\) and \\(2\\sqrt{3} + \\sqrt{6}\\).",
-    "a": "6",
+    "answer": "6",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall Pythagoras' theorem, which states that the square of the hypotenuse \\(c\\) is equal to the sum of the squares of the other two sides: \\(c^2 = a^2 + b^2\\).",
@@ -558,7 +576,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q11a",
@@ -566,10 +585,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify by forming the lowest common denominator:\n\n\\(\\frac{1}{\\sqrt{3}+1} + \\frac{1}{\\sqrt{3}-1}\\)",
-    "a": "\\sqrt{3}",
+    "answer": "\\sqrt{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find a common denominator by multiplying the two denominators: \\((\\sqrt{3}+1)(\\sqrt{3}-1)\\). Rewrite the fractions.",
@@ -587,7 +606,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q11b",
@@ -595,10 +615,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify by forming the lowest common denominator:\n\n\\(\\frac{3}{2\\sqrt{5}-\\sqrt{7}} - \\frac{3}{2\\sqrt{5}+\\sqrt{7}}\\)",
-    "a": "\\frac{6\\sqrt{7}}{13}",
+    "answer": "\\frac{6\\sqrt{7}}{13}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the lowest common denominator by multiplying the conjugate denominators: \\((2\\sqrt{5}-\\sqrt{7})(2\\sqrt{5}+\\sqrt{7})\\). Rewrite the combined numerator.",
@@ -616,7 +636,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q12a",
@@ -624,10 +645,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Write down the expansion of \\((a - b)^2\\).",
-    "a": "a^2 - 2ab + b^2",
+    "answer": "a^2 - 2ab + b^2",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall the perfect square algebraic expansion formula for subtraction.",
@@ -645,7 +666,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q12b",
@@ -653,10 +675,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Use the expansion in part a to square \\(\\sqrt{6+\\sqrt{11}} - \\sqrt{6-\\sqrt{11}}\\).",
-    "a": "2",
+    "answer": "2",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Let \\(x = \\sqrt{6+\\sqrt{11}} - \\sqrt{6-\\sqrt{11}}\\). Set up the square of this difference using the perfect square identity \\((a-b)^2 = a^2 - 2ab + b^2\\).",
@@ -679,7 +701,8 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   },
   {
     "id": "y11a-2C-q12c",
@@ -687,10 +710,10 @@ export const Y11A_CH2C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Hence simplify \\(\\sqrt{6+\\sqrt{11}} - \\sqrt{6-\\sqrt{11}}\\).",
-    "a": "\\sqrt{2}",
+    "answer": "\\sqrt{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Further simplification of surds",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Set the expression equal to a variable \\(x\\) and write down the result of its square from part b.",
@@ -708,6 +731,7 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "t": "Further simplification of surds"
   }
 ];

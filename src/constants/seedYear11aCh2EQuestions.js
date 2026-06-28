@@ -5,10 +5,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\(a/b\\) where \\(a\\) and \\(b\\) are integers.\n\n\\(7\\)",
-    "a": "Rational, 7/1",
+    "answer": "Rational, 7/1",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
@@ -27,7 +27,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q1b",
@@ -35,10 +35,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\(a/b\\) where \\(a\\) and \\(b\\) are integers.\n\n\\(-2\\frac{1}{4}\\)",
-    "a": "Rational, -9/4",
+    "answer": "Rational, -9/4",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
@@ -57,7 +57,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q1c",
@@ -65,10 +65,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\(a/b\\) where \\(a\\) and \\(b\\) are integers.\n\n\\(\\sqrt{9}\\)",
-    "a": "Rational, 3/1",
+    "answer": "Rational, 3/1",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
@@ -87,7 +87,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q1d",
@@ -95,10 +95,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\(a/b\\) where \\(a\\) and \\(b\\) are integers.\n\n\\(\\sqrt{10}\\)",
-    "a": "Irrational",
+    "answer": "Irrational",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
@@ -117,7 +117,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q1e",
@@ -125,10 +125,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\(a/b\\) where \\(a\\) and \\(b\\) are integers.\n\n\\(\\sqrt[3]{15}\\)",
-    "a": "Irrational",
+    "answer": "Irrational",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
@@ -147,7 +147,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q1f",
@@ -155,10 +155,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\(a/b\\) where \\(a\\) and \\(b\\) are integers.\n\n\\(\\sqrt[4]{16}\\)",
-    "a": "Rational, 2/1",
+    "answer": "Rational, 2/1",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
@@ -177,7 +177,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q1g",
@@ -185,10 +185,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\(a/b\\) where \\(a\\) and \\(b\\) are integers.\n\n\\(-0.16\\)",
-    "a": "Rational, -4/25",
+    "answer": "Rational, -4/25",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
@@ -207,7 +207,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q1h",
@@ -215,10 +215,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\(a/b\\) where \\(a\\) and \\(b\\) are integers.\n\n\\(\\pi\\)",
-    "a": "Irrational",
+    "answer": "Irrational",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
@@ -237,18 +237,35 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q2a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\(x \\le 2\\)",
-    "a": "Solid circle at 2, arrow to the left.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 \\\\times \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
@@ -267,18 +284,35 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q2b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\(x > -1\\)",
-    "a": "Open circle at -1, arrow to the right.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 \\\\times \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
@@ -297,18 +331,35 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q2c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\(-2 < x \\le 5\\)",
-    "a": "Open circle at -2, solid circle at 5, line connecting them.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 \\\\times \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
@@ -327,18 +378,35 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q3a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\([-2, \\infty)\\)",
-    "a": "Solid circle at -2, arrow to the right.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 \\\\times \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
@@ -357,18 +425,35 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q3b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\((-\\infty, 0)\\)",
-    "a": "Open circle at 0, arrow to the left.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 \\\\times \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
@@ -387,18 +472,35 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q3c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\([-3, 3)\\)",
-    "a": "Solid circle at -3, open circle at 3, line connecting them.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 \\\\times \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
@@ -417,7 +519,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q4a",
@@ -425,10 +527,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\(-4 \\le x \\le 6\\)",
-    "a": "[-4, 6]",
+    "answer": "[-4, 6]",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
@@ -447,7 +549,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q4b",
@@ -455,10 +557,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\(-4 < x < 6\\)",
-    "a": "(-4, 6)",
+    "answer": "(-4, 6)",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
@@ -477,7 +579,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q4c",
@@ -485,10 +587,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\(-4 < x \\le 6\\)",
-    "a": "(-4, 6]",
+    "answer": "(-4, 6]",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
@@ -507,7 +609,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q4d",
@@ -515,10 +617,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\(-4 \\le x < 6\\)",
-    "a": "[-4, 6)",
+    "answer": "[-4, 6)",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
@@ -537,7 +639,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q4e",
@@ -545,10 +647,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\(x \\le 6\\)",
-    "a": "(-\\infty, 6]",
+    "answer": "(-\\infty, 6]",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
@@ -567,7 +669,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q4f",
@@ -575,10 +677,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\(x > -4\\)",
-    "a": "(-4, \\infty)",
+    "answer": "(-4, \\infty)",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
@@ -597,7 +699,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q5a",
@@ -605,10 +707,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\((-5, 3)\\)",
-    "a": "-5 < x < 3",
+    "answer": "-5 < x < 3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
@@ -627,7 +729,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q5b",
@@ -635,10 +737,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\([-5, 3]\\)",
-    "a": "-5 \\le x \\le 3",
+    "answer": "-5 \\le x \\le 3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
@@ -657,7 +759,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q5c",
@@ -665,10 +767,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\([-5, 3)\\)",
-    "a": "-5 \\le x < 3",
+    "answer": "-5 \\le x < 3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
@@ -687,7 +789,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q5d",
@@ -695,10 +797,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\((-5, 3]\\)",
-    "a": "-5 < x \\le 3",
+    "answer": "-5 < x \\le 3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
@@ -717,7 +819,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q5e",
@@ -725,10 +827,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\((3, \\infty)\\)",
-    "a": "x > 3",
+    "answer": "x > 3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
@@ -747,7 +849,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q5f",
@@ -755,10 +857,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\((-\\infty, -5]\\)",
-    "a": "x \\le -5",
+    "answer": "x \\le -5",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
@@ -777,7 +879,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q6a",
@@ -785,10 +887,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(\\sqrt{24}\\)",
-    "a": "2\\sqrt{6}",
+    "answer": "2\\sqrt{6}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 4.",
@@ -807,7 +909,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q6b",
@@ -815,10 +917,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(\\sqrt{45}\\)",
-    "a": "3\\sqrt{5}",
+    "answer": "3\\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 9.",
@@ -837,7 +939,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q6c",
@@ -845,10 +947,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(\\sqrt{50}\\)",
-    "a": "5\\sqrt{2}",
+    "answer": "5\\sqrt{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 25.",
@@ -867,7 +969,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q6d",
@@ -875,10 +977,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(\\sqrt{500}\\)",
-    "a": "10\\sqrt{5}",
+    "answer": "10\\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 100.",
@@ -897,7 +999,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q6e",
@@ -905,10 +1007,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(3\\sqrt{18}\\)",
-    "a": "9\\sqrt{2}",
+    "answer": "9\\sqrt{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 9.",
@@ -927,7 +1029,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q6f",
@@ -935,10 +1037,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(2\\sqrt{40}\\)",
-    "a": "4\\sqrt{10}",
+    "answer": "4\\sqrt{10}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 4.",
@@ -957,7 +1059,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q7a",
@@ -965,10 +1067,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{5} + \\sqrt{5}\\)",
-    "a": "2\\sqrt{5}",
+    "answer": "2\\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify if the terms are like surds. Both contain \\(\\sqrt{5}\\).",
@@ -987,7 +1089,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q7b",
@@ -995,10 +1097,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{5} \\times \\sqrt{5}\\)",
-    "a": "5",
+    "answer": "5",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Recall the rule for multiplying square roots: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -1017,7 +1119,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q7c",
@@ -1025,10 +1127,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\((2\\sqrt{7})^2\\)",
-    "a": "28",
+    "answer": "28",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Apply the exponent to both parts of the product inside the parentheses: \\((ab)^2 = a^2 b^2\\).",
@@ -1047,7 +1149,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q7d",
@@ -1055,10 +1157,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(2\\sqrt{5} + \\sqrt{7} - 3\\sqrt{5}\\)",
-    "a": "\\sqrt{7} - \\sqrt{5}",
+    "answer": "\\sqrt{7} - \\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify and group the like surd terms that share the radical \\(\\sqrt{5}\\).",
@@ -1077,7 +1179,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q7e",
@@ -1085,10 +1187,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{35} \\div \\sqrt{5}\\)",
-    "a": "\\sqrt{7}",
+    "answer": "\\sqrt{7}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Apply the quotient rule of radicals: \\(\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}\\).",
@@ -1107,7 +1209,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q7f",
@@ -1115,10 +1217,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(6\\sqrt{55} \\div 2\\sqrt{11}\\)",
-    "a": "3\\sqrt{5}",
+    "answer": "3\\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Rewrite the division as a fraction and separate coefficient division from radical division.",
@@ -1137,7 +1239,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q7g",
@@ -1145,10 +1247,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{8} \\times \\sqrt{2}\\)",
-    "a": "4",
+    "answer": "4",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the numbers under the radicals.",
@@ -1167,7 +1269,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q7h",
@@ -1175,10 +1277,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{10} \\times \\sqrt{2}\\)",
-    "a": "2\\sqrt{5}",
+    "answer": "2\\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the radicals together using \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -1197,7 +1299,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q7i",
@@ -1205,10 +1307,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(2\\sqrt{6} \\times 4\\sqrt{15}\\)",
-    "a": "24\\sqrt{10}",
+    "answer": "24\\sqrt{10}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the outer coefficients and the numbers under the square roots separately.",
@@ -1227,7 +1329,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q8a",
@@ -1235,10 +1337,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{27} - \\sqrt{12}\\)",
-    "a": "\\sqrt{3}",
+    "answer": "\\sqrt{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Simplify both surd terms by factoring out their largest perfect square factors (9 and 4).",
@@ -1257,7 +1359,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q8b",
@@ -1265,10 +1367,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{18} + \\sqrt{32}\\)",
-    "a": "7\\sqrt{2}",
+    "answer": "7\\sqrt{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the perfect square factors in both terms (9 and 16).",
@@ -1287,7 +1389,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q8c",
@@ -1295,10 +1397,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(3\\sqrt{2} + 3\\sqrt{8} - \\sqrt{50}\\)",
-    "a": "4\\sqrt{2}",
+    "answer": "4\\sqrt{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Simplify each individual surd term inside the expression.",
@@ -1317,7 +1419,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q8d",
@@ -1325,10 +1427,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{54} - \\sqrt{20} + \\sqrt{150} - \\sqrt{80}\\)",
-    "a": "8\\sqrt{6} - 6\\sqrt{5}",
+    "answer": "8\\sqrt{6} - 6\\sqrt{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the perfect square factors inside the roots for all four terms.",
@@ -1347,7 +1449,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q9a",
@@ -1355,10 +1457,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\(\\sqrt{7}(3-\\sqrt{7})\\)",
-    "a": "3\\sqrt{7}-7",
+    "answer": "3\\sqrt{7}-7",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Distribute the term outside the brackets, \\(\\sqrt{7}\\), to each term inside.",
@@ -1377,7 +1479,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q9b",
@@ -1385,10 +1487,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\(\\sqrt{5}(2\\sqrt{6}+3\\sqrt{2})\\)",
-    "a": "2\\sqrt{30}+3\\sqrt{10}",
+    "answer": "2\\sqrt{30}+3\\sqrt{10}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Distribute \\(\\sqrt{5}\\) to each of the two terms inside the brackets.",
@@ -1407,7 +1509,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q9c",
@@ -1415,10 +1517,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\(\\sqrt{15}(\\sqrt{3}-5)\\)",
-    "a": "3\\sqrt{5}-5\\sqrt{15}",
+    "answer": "3\\sqrt{5}-5\\sqrt{15}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Distribute \\(\\sqrt{15}\\) across the subtraction inside the brackets.",
@@ -1437,7 +1539,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q9d",
@@ -1445,10 +1547,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\(\\sqrt{3}(\\sqrt{6}+2\\sqrt{3})\\)",
-    "a": "3\\sqrt{2}+6",
+    "answer": "3\\sqrt{2}+6",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Distribute \\(\\sqrt{3}\\) to each term inside the brackets.",
@@ -1467,7 +1569,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q10a",
@@ -1475,10 +1577,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{5}+2)(3-\\sqrt{5})\\)",
-    "a": "\\sqrt{5}+1",
+    "answer": "\\sqrt{5}+1",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Expand the brackets using the FOIL method (First, Outer, Inner, Last).",
@@ -1497,7 +1599,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q10b",
@@ -1505,10 +1607,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((2\\sqrt{3}-1)(3\\sqrt{3}+5)\\)",
-    "a": "13+7\\sqrt{3}",
+    "answer": "13+7\\sqrt{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Expand the product of binomials using FOIL.",
@@ -1527,7 +1629,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q10c",
@@ -1535,10 +1637,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{7}-3)(2\\sqrt{5}+4)\\)",
-    "a": "2\\sqrt{35}+4\\sqrt{7}-6\\sqrt{5}-12",
+    "answer": "2\\sqrt{35}+4\\sqrt{7}-6\\sqrt{5}-12",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Expand the product of binomials using FOIL.",
@@ -1557,7 +1659,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q10d",
@@ -1565,10 +1667,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{10}-3)(\\sqrt{10}+3)\\)",
-    "a": "1",
+    "answer": "1",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify that this expansion is of the form \\((a-b)(a+b)\\), representing a difference of squares.",
@@ -1587,7 +1689,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q10e",
@@ -1595,10 +1697,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((2\\sqrt{6}+\\sqrt{11})(2\\sqrt{6}-\\sqrt{11})\\)",
-    "a": "13",
+    "answer": "13",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Apply the difference of squares identity: \\((a+b)(a-b) = a^2 - b^2\\).",
@@ -1617,7 +1719,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q10f",
@@ -1625,10 +1727,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{7}-2)^2\\)",
-    "a": "11-4\\sqrt{7}",
+    "answer": "11-4\\sqrt{7}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((a-b)^2 = a^2 - 2ab + b^2\\).",
@@ -1647,7 +1749,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q10g",
@@ -1655,10 +1757,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{5}+\\sqrt{2})^2\\)",
-    "a": "7+2\\sqrt{10}",
+    "answer": "7+2\\sqrt{10}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((a+b)^2 = a^2 + 2ab + b^2\\).",
@@ -1677,7 +1779,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q10h",
@@ -1685,10 +1787,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((4-3\\sqrt{2})^2\\)",
-    "a": "34-24\\sqrt{2}",
+    "answer": "34-24\\sqrt{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion identity: \\((a-b)^2 = a^2 - 2ab + b^2\\).",
@@ -1707,7 +1809,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q11a",
@@ -1715,10 +1817,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{5}}\\)",
-    "a": "\\frac{\\sqrt{5}}{5}",
+    "answer": "\\frac{\\sqrt{5}}{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{5}\\). Multiply top and bottom of the fraction by this surd.",
@@ -1737,7 +1839,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q11b",
@@ -1745,10 +1847,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{3}{\\sqrt{2}}\\)",
-    "a": "\\frac{3\\sqrt{2}}{2}",
+    "answer": "\\frac{3\\sqrt{2}}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{2}\\). Multiply top and bottom of the fraction by this surd.",
@@ -1767,7 +1869,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q11c",
@@ -1775,10 +1877,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{\\sqrt{3}}{\\sqrt{11}}\\)",
-    "a": "\\frac{\\sqrt{33}}{11}",
+    "answer": "\\frac{\\sqrt{33}}{11}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{11}\\). Multiply top and bottom of the fraction by this surd.",
@@ -1797,7 +1899,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q11d",
@@ -1805,10 +1907,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{5\\sqrt{3}}\\)",
-    "a": "\\frac{\\sqrt{3}}{15}",
+    "answer": "\\frac{\\sqrt{3}}{15}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{3}\\). Multiply top and bottom of the fraction by this surd.",
@@ -1827,7 +1929,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q11e",
@@ -1835,10 +1937,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{5}{2\\sqrt{7}}\\)",
-    "a": "\\frac{5\\sqrt{7}}{14}",
+    "answer": "\\frac{5\\sqrt{7}}{14}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{7}\\). Multiply top and bottom of the fraction by this surd.",
@@ -1857,7 +1959,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q11f",
@@ -1865,10 +1967,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{\\sqrt{2}}{3\\sqrt{10}}\\)",
-    "a": "\\frac{\\sqrt{5}}{15}",
+    "answer": "\\frac{\\sqrt{5}}{15}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{10}\\). Multiply top and bottom of the fraction by this surd.",
@@ -1887,7 +1989,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q12a",
@@ -1895,10 +1997,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{5}+\\sqrt{2}}\\)",
-    "a": "\\frac{\\sqrt{5}-\\sqrt{2}}{3}",
+    "answer": "\\frac{\\sqrt{5}-\\sqrt{2}}{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{5+\\sqrt{2}}\\) and determine its conjugate: \\(\\sqrt{5}-\\sqrt{2}\\).",
@@ -1917,7 +2019,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q12b",
@@ -1925,10 +2027,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{3-\\sqrt{7}}\\)",
-    "a": "\\frac{3+\\sqrt{7}}{2}",
+    "answer": "\\frac{3+\\sqrt{7}}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(3-\\sqrt{7}\\) and determine its conjugate: \\(3+\\sqrt{7}\\).",
@@ -1947,7 +2049,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q12c",
@@ -1955,10 +2057,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{2\\sqrt{6}-\\sqrt{3}}\\)",
-    "a": "\\frac{2\\sqrt{6}+\\sqrt{3}}{21}",
+    "answer": "\\frac{2\\sqrt{6}+\\sqrt{3}}{21}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(2\\sqrt{6-\\sqrt{3}}\\) and determine its conjugate: \\(2\\sqrt{6}+\\sqrt{3}\\).",
@@ -1977,7 +2079,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q12d",
@@ -1985,10 +2087,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{\\sqrt{3}}{\\sqrt{3}+1}\\)",
-    "a": "\\frac{3-\\sqrt{3}}{2}",
+    "answer": "\\frac{3-\\sqrt{3}}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{3+1}\\) and determine its conjugate: \\(\\sqrt{3}-1\\).",
@@ -2007,7 +2109,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q12e",
@@ -2015,10 +2117,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{3}{\\sqrt{11}+\\sqrt{5}}\\)",
-    "a": "\\frac{\\sqrt{11}-\\sqrt{5}}{2}",
+    "answer": "\\frac{\\sqrt{11}-\\sqrt{5}}{2}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{11+\\sqrt{5}}\\) and determine its conjugate: \\(\\sqrt{11}-\\sqrt{5}\\).",
@@ -2037,7 +2139,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q12f",
@@ -2045,10 +2147,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{3\\sqrt{7}}{2\\sqrt{5}-\\sqrt{7}}\\)",
-    "a": "\\frac{6\\sqrt{35}+21}{13}",
+    "answer": "\\frac{6\\sqrt{35}+21}{13}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(2\\sqrt{5-\\sqrt{7}}\\) and determine its conjugate: \\(2\\sqrt{5}+\\sqrt{7}\\).",
@@ -2067,7 +2169,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q13a",
@@ -2075,10 +2177,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rationalise the denominator of the fraction.\n\n\\(\\frac{\\sqrt{7}-\\sqrt{2}}{\\sqrt{7}+\\sqrt{2}}\\)",
-    "a": "\\frac{9-2\\sqrt{14}}{5}",
+    "answer": "\\frac{9-2\\sqrt{14}}{5}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the denominator \\(\\sqrt{7+\\sqrt{2}}\\) and determine its conjugate: \\(\\sqrt{7}-\\sqrt{2}\\).",
@@ -2102,7 +2204,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q13b",
@@ -2110,10 +2212,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rationalise the denominator of the fraction.\n\n\\(\\frac{3\\sqrt{3}+5}{3\\sqrt{3}-5}\\)",
-    "a": "26+15\\sqrt{3}",
+    "answer": "26+15\\sqrt{3}",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the denominator \\(3\\sqrt{3-5}\\) and determine its conjugate: \\(3\\sqrt{3}+5\\).",
@@ -2137,7 +2239,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q14",
@@ -2145,10 +2247,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\(x\\) if \\(\\sqrt{18} + \\sqrt{8} = \\sqrt{x}\\).",
-    "a": "50",
+    "answer": "50",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Simplify the two surds on the left hand side of the equation by finding their perfect square factors (9 and 4).",
@@ -2172,7 +2274,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q15",
@@ -2180,10 +2282,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify \\(\\frac{3}{\\sqrt{5}-2} + \\frac{2}{\\sqrt{5}+2}\\) by forming the lowest common denominator.",
-    "a": "5\\sqrt{5}+2",
+    "answer": "5\\sqrt{5}+2",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Find the lowest common denominator by multiplying the two conjugate denominators: \\((\\sqrt{5}-2)(\\sqrt{5}+2)\\). Express the fractions over this common denominator.",
@@ -2207,7 +2309,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q16-p",
@@ -2215,10 +2317,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\(p\\) such that \\(\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}\\).",
-    "a": "5",
+    "answer": "5",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the denominator \\(\\sqrt{5}-2\\) and multiply numerator and denominator of the fraction by its conjugate \\(\\sqrt{5}+2\\).",
@@ -2242,7 +2344,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q16-q",
@@ -2250,10 +2352,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\(q\\) such that \\(\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}\\).",
-    "a": "2",
+    "answer": "2",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Identify the denominator \\(\\sqrt{5}-2\\) and multiply numerator and denominator of the fraction by its conjugate \\(\\sqrt{5}+2\\).",
@@ -2277,7 +2379,7 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   },
   {
     "id": "y11a-2e-q17",
@@ -2285,10 +2387,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Show that \\(\\frac{2}{6-3\\sqrt{3}} - \\frac{1}{2\\sqrt{3}+3}\\) is rational by first rationalising each denominator.",
-    "a": "7/3",
+    "answer": "7/3",
+    "options": [],
+    "hint": "Simplify the expression step-by-step.",
     "solution": "",
-    "t": "Revision",
-    "hint": "",
     "solutionSteps": [
       {
         "explanation": "Rationalise the first term by dividing the common factor of 3 first, then multiplying top and bottom by its conjugate: \\(2+\\sqrt{3}\\).",
@@ -2312,6 +2414,6 @@ export const Y11A_CH2E_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "subQuestions": null
+    "t": "Revision"
   }
 ];
