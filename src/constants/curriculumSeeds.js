@@ -189,6 +189,7 @@ import { Y7_CH1L_QUESTIONS } from './seedYear7Ch1LQuestions.js';
 import { Y7_CH1M_QUESTIONS } from './seedYear7Ch1MQuestions.js';
 import { Y7_CH1B_QUESTIONS } from './seedYear7Ch1BQuestions.js';
 import { Y7_CH1C_QUESTIONS } from './seedYear7Ch1CQuestions.js';
+import { Y7_CH1A_QUESTIONS } from './seedYear7Ch1AQuestions.js';
 import { Y7_CH2B_QUESTIONS } from './seedYear7Ch2BQuestions.js';
 import { Y7_CH2C_QUESTIONS } from './seedYear7Ch2CQuestions.js';
 import { Y7_CH2D_QUESTIONS } from './seedYear7Ch2DQuestions.js';
@@ -1156,6 +1157,7 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-18', chapterTitle: 'Chapter 18: Graphing straight lines', topicId: 'y8-18a', topicCode: '18A', topicTitle: 'The Cartesian plane', year: 'Year 8', seed: Y8_CH18A_QUESTIONS, label: 'Y8 Ch18 · Graphing straight lines' },
   { chapterId: 'y8-18', chapterTitle: 'Chapter 18: Graphing straight lines', topicId: 'y8-18i', topicCode: '18I', topicTitle: 'Review', year: 'Year 8', seed: Y8_CH18I_QUESTIONS, label: 'Y8 Ch18 · Review' },
   { chapterId: 'y8-19', chapterTitle: 'Chapter 19: Statistics', topicId: 'y8-19a', topicCode: '19A', topicTitle: 'Comparing means and medians', year: 'Year 8', seed: Y8_CH19A_QUESTIONS, label: 'Y8 Ch19 · Statistics' },
+  { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1a', topicCode: '1A', topicTitle: 'The number line', year: 'Year 7', seed: Y7_CH1A_QUESTIONS, label: 'Y7 Ch1 · 1A The number line' },
   { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1b', topicCode: '1B', topicTitle: 'Addition', year: 'Year 7', seed: Y7_CH1B_QUESTIONS, label: 'Y7 Ch1 · 1B Addition' },
   { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1c', topicCode: '1C', topicTitle: 'The standard addition algorithm', year: 'Year 7', seed: Y7_CH1C_QUESTIONS, label: 'Y7 Ch1 · 1C The standard addition algorithm' },
   { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1d', topicCode: '1D', topicTitle: 'Subtraction', year: 'Year 7', seed: Y7_CH1D_QUESTIONS, label: 'Y7 Ch1 · 1D Subtraction' },
