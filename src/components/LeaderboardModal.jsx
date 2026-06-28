@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, onSnapshot, query, orderBy, limit } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
 
 const RANK_EMOJI = ['🥇', '🥈', '🥉'];
 
@@ -40,12 +40,11 @@ const LeaderboardModal = ({ open, onClose, currentUserId, currentUserXP = 0, cur
     if (!open) { setReady(false); return; }
     setLoading(true);
     const q = query(collection(db, 'leaderboard'), orderBy('totalXP', 'desc'), limit(10));
-    const unsub = onSnapshot(q, (snap) => {
+    getDocs(q).then((snap) => {
       setLeaders(snap.docs.map(d => ({ id: d.id, ...d.data() })));
       setLoading(false);
       setTimeout(() => setReady(true), 400);
-    }, () => setLoading(false));
-    return () => unsub();
+    }).catch(() => setLoading(false));
   }, [open]);
 
   // ── Stadium ambience on open (loop, soft). Leaderboard opens from a button

@@ -127,7 +127,9 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
   const totalTopics = topics.length;
   const doneCount = topics.filter(t => t.state === 'done').length;
   const inProgressCount = topics.filter(t => t.state === 'current').length;
-  const overallPct = totalTopics ? Math.round((doneCount / totalTopics) * 100) : 0;
+  const totalMastered = topics.reduce((s, t) => s + (t.masteredCount || 0), 0);
+  const totalQuestions = topics.reduce((s, t) => s + (t.totalCount || 0), 0);
+  const overallPct = totalQuestions > 0 ? Math.round((totalMastered / totalQuestions) * 100) : 0;
 
   const chapterAccent = chapterState === 'done' ? '#10b981' : chapterState === 'current' ? '#7c3aed' : '#0ea5e9';
   const chapterSoft = chapterState === 'done' ? '#ecfdf5' : chapterState === 'current' ? '#f5f3ff' : '#f0f9ff';

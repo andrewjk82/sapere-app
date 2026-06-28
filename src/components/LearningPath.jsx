@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
-import { prefetchChapterQuestions, getConfirmedMembershipVersion, invalidateAllChapterCaches } from '../services/chapterQuestionsCache';
+import { getConfirmedMembershipVersion, invalidateAllChapterCaches } from '../services/chapterQuestionsCache';
 import ChapterDetailView from './ChapterDetailView';
 import TopicPracticeSession from './TopicPracticeSession';
 import './learning-path.css';
@@ -81,22 +81,15 @@ const LearningPath = ({ profile }) => {
         const metaSnap = await getDoc(doc(db, 'sync_meta', 'curriculum'));
         const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
         if (cached?.chapters?.length > 0 && cached?.version === remoteVersion && remoteVersion > 0) {
-          // Curriculum unchanged — still check if question caches are stale
+          // Curriculum unchanged — check if question version changed so lazy
+          // fetches (on topic open) pick up fresh data automatically.
           if (user?.uid) {
             getConfirmedMembershipVersion(true).then((mv) => {
-              // getConfirmedMembershipVersion updates sessionStorage; stale chapter
-              // caches are invalidated lazily on next getChapterQuestions call.
-              // If version changed we proactively invalidate so prefetch below gets fresh data.
               const prevMv = Number(sessionStorage.getItem('sapere:qcache:membershipVersion:prev') || 0);
               if (mv > 0 && prevMv > 0 && mv !== prevMv) {
                 invalidateAllChapterCaches(user.uid);
               }
               try { sessionStorage.setItem('sapere:qcache:membershipVersion:prev', String(mv)); } catch { /* ignore */ }
-              // Prefetch assigned chapters in background
-              const assignedIds = (profile?.assignedChapters || []);
-              if (assignedIds.length > 0) {
-                prefetchChapterQuestions(user.uid, assignedIds).catch(() => {});
-              }
             }).catch(() => {});
           }
           return;
@@ -111,13 +104,6 @@ const LearningPath = ({ profile }) => {
           }
           setCurriculum(chapters);
           localCache.set(cacheKey, { version, savedAt: Date.now(), chapters });
-          // Prefetch question caches for assigned chapters in the background
-          if (user?.uid) {
-            const assignedIds = profile?.assignedChapters || [];
-            if (assignedIds.length > 0) {
-              prefetchChapterQuestions(user.uid, assignedIds).catch(() => {});
-            }
-          }
         } else {
           setCurriculum(resolveFallbackCurriculum());
         }

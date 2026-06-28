@@ -7,7 +7,7 @@ import {
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
 import {
-  collection, query, orderBy, onSnapshot,
+  collection, query, orderBy, getDocs,
   addDoc, deleteDoc, doc, serverTimestamp
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
@@ -48,10 +48,10 @@ const Library = () => {
 
   useEffect(() => {
     const q = query(collection(db, 'materials'), orderBy('createdAt', 'desc'));
-    return onSnapshot(q, (snap) => {
+    getDocs(q).then((snap) => {
       setMaterials(snap.docs.map(d => ({ id: d.id, ...d.data() })));
       setLoading(false);
-    }, (err) => {
+    }).catch((err) => {
       console.error('Library materials error:', err);
       setMaterials([]);
       setLoading(false);
@@ -70,12 +70,13 @@ const Library = () => {
     if (!title || !url) return;
     setIsSubmitting(true);
     try {
-      await addDoc(collection(db, 'materials'), {
+      const newDoc = await addDoc(collection(db, 'materials'), {
         title, url, category: linkCategory,
         description: linkDescription.trim(),
         isExternal: true, fileType: 'link',
         uploadedBy: user.uid, createdAt: serverTimestamp()
       });
+      setMaterials(prev => [{ id: newDoc.id, title, url, category: linkCategory, description: linkDescription.trim(), isExternal: true, fileType: 'link', uploadedBy: user.uid }, ...prev]);
       setShowModal(false);
       setLinkTitle(''); setLinkUrl(''); setLinkDescription(''); setLinkCategory('General');
       showToast('Resource added successfully!', 'success');
@@ -91,6 +92,7 @@ const Library = () => {
     if (!confirm('Delete this resource?')) return;
     try {
       await deleteDoc(doc(db, 'materials', id));
+      setMaterials(prev => prev.filter(m => m.id !== id));
       showToast('Resource deleted.', 'success');
     } catch (err) {
       showToast('Failed to delete resource.', 'error');

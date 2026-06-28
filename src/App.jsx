@@ -586,6 +586,10 @@ function App() {
   useEffect(() => {
     if (!user?.uid) return undefined;
     return listenForForegroundNotifications((payload) => {
+      // pending_review and challenge_completed are already shown via AdminFeedContext
+      // grading queue listener / notifications subcollection — skip here to avoid duplicates.
+      const type = payload.data?.type || payload.notification?.data?.type || '';
+      if (type === 'pending_review' || type === 'challenge_completed') return;
       const title = payload.notification?.title || payload.data?.title || 'Notification';
       const body = payload.notification?.body || payload.data?.body || '';
       if (body) {

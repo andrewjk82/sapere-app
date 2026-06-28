@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { useProfile } from '../context/ProfileContext';
 import { db, requestNotificationPermission } from '../firebase/config';
-import { doc, onSnapshot, setDoc, updateDoc, getDoc } from 'firebase/firestore';
+import { doc, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 
@@ -58,10 +58,9 @@ const Settings = () => {
 
   useEffect(() => {
     if (!isAdmin) return;
-    const versionRef = doc(db, 'system_config', 'app');
-    return onSnapshot(versionRef, (snap) => {
+    getDoc(doc(db, 'system_config', 'app')).then((snap) => {
       if (snap.exists()) setCloudVersion(snap.data().version);
-    });
+    }).catch(() => {});
   }, [isAdmin]);
 
   const handleImageUpload = async (e) => {

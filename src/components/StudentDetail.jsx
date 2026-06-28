@@ -1299,8 +1299,8 @@ const StudentDetail = ({ studentId, onBack }) => {
     const mergedCalc = new Map();
     await Promise.all(paths.map(async ([col, uid]) => {
       const [dailySnap, calcSnap] = await Promise.all([
-        getDocs(collection(db, col, uid, "daily_stats")),
-        getDocs(collection(db, col, uid, "calc_stats")),
+        getDocs(query(collection(db, col, uid, "daily_stats"), orderBy("date", "desc"), limit(400))),
+        getDocs(query(collection(db, col, uid, "calc_stats"), orderBy("date", "desc"), limit(400))),
       ]);
       dailySnap.forEach((d) => { if (!mergedDaily.has(d.id)) mergedDaily.set(d.id, d.data()); });
       calcSnap.forEach((d) => { if (!mergedCalc.has(d.id)) mergedCalc.set(d.id, d.data()); });
