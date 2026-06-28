@@ -93,7 +93,10 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
 
   useEffect(() => {
     if (!user?.uid) return;
-    setTopicProgress(loadChapterProgress(user.uid, chapter.id));
+    const refresh = () => setTopicProgress(loadChapterProgress(user.uid, chapter.id));
+    refresh();
+    window.addEventListener('sapere:progress-updated', refresh);
+    return () => window.removeEventListener('sapere:progress-updated', refresh);
   }, [user?.uid, chapter.id]);
 
   const handleResetChapter = () => {

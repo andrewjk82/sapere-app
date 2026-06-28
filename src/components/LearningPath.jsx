@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
+import { prefetchChapterQuestions, getConfirmedMembershipVersion, invalidateAllChapterCaches } from '../services/chapterQuestionsCache';
 import ChapterDetailView from './ChapterDetailView';
 import TopicPracticeSession from './TopicPracticeSession';
 import './learning-path.css';
@@ -79,7 +80,27 @@ const LearningPath = ({ profile }) => {
       try {
         const metaSnap = await getDoc(doc(db, 'sync_meta', 'curriculum'));
         const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
-        if (cached?.chapters?.length > 0 && cached?.version === remoteVersion && remoteVersion > 0) return;
+        if (cached?.chapters?.length > 0 && cached?.version === remoteVersion && remoteVersion > 0) {
+          // Curriculum unchanged — still check if question caches are stale
+          if (user?.uid) {
+            getConfirmedMembershipVersion(true).then((mv) => {
+              // getConfirmedMembershipVersion updates sessionStorage; stale chapter
+              // caches are invalidated lazily on next getChapterQuestions call.
+              // If version changed we proactively invalidate so prefetch below gets fresh data.
+              const prevMv = Number(sessionStorage.getItem('sapere:qcache:membershipVersion:prev') || 0);
+              if (mv > 0 && prevMv > 0 && mv !== prevMv) {
+                invalidateAllChapterCaches(user.uid);
+              }
+              try { sessionStorage.setItem('sapere:qcache:membershipVersion:prev', String(mv)); } catch { /* ignore */ }
+              // Prefetch assigned chapters in background
+              const assignedIds = (profile?.assignedChapters || []);
+              if (assignedIds.length > 0) {
+                prefetchChapterQuestions(user.uid, assignedIds).catch(() => {});
+              }
+            }).catch(() => {});
+          }
+          return;
+        }
         const snap = await getDoc(doc(db, 'curriculum', docId));
         if (cancelled) return;
         if (snap.exists() && snap.data().chapters?.length > 0) {
@@ -90,6 +111,13 @@ const LearningPath = ({ profile }) => {
           }
           setCurriculum(chapters);
           localCache.set(cacheKey, { version, savedAt: Date.now(), chapters });
+          // Prefetch question caches for assigned chapters in the background
+          if (user?.uid) {
+            const assignedIds = profile?.assignedChapters || [];
+            if (assignedIds.length > 0) {
+              prefetchChapterQuestions(user.uid, assignedIds).catch(() => {});
+            }
+          }
         } else {
           setCurriculum(resolveFallbackCurriculum());
         }
@@ -107,49 +135,33 @@ const LearningPath = ({ profile }) => {
 
   // ── Load per-topic progress from localStorage (no Firestore read) ───────
   // Builds map: chapterId → { topicId → progress% } by scanning all stored metas.
-  useEffect(() => {
-    if (!user?.uid) return;
-    const prefix = `sapere:tp:${user.uid}:`;
-    const prog = {};
+  // Key format: sapere:tp:{uid}:{chapterId}:{topicId}:meta
+  // chapterId can contain ':' (e.g. "exam:FortSt2020") but topicId never does,
+  // so we split on the LAST ':' to separate chapterId from topicId.
+  const scanProgress = (uid) => {
+    const prefix = `sapere:tp:${uid}:`;
+    const p = {};
     try {
       for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if (key?.startsWith(prefix) && key.endsWith(':meta')) {
-          // key format: sapere:tp:{uid}:{chapterId}:{topicId}:meta
-          const inner = key.slice(prefix.length, -5); // "{chapterId}:{topicId}"
-          const sep = inner.indexOf(':');
-          if (sep === -1) continue;
-          const chapterId = inner.slice(0, sep);
-          const topicId = inner.slice(sep + 1);
-          const meta = JSON.parse(localStorage.getItem(key));
-          if (!prog[chapterId]) prog[chapterId] = {};
-          prog[chapterId][topicId] = meta?.progress || 0;
-        }
+        if (!key?.startsWith(prefix) || !key.endsWith(':meta')) continue;
+        const inner = key.slice(prefix.length, -5); // "{chapterId}:{topicId}"
+        const sep = inner.lastIndexOf(':');          // use LAST colon — topicId has none
+        if (sep === -1) continue;
+        const chapterId = inner.slice(0, sep);
+        const topicId = inner.slice(sep + 1);
+        const meta = JSON.parse(localStorage.getItem(key));
+        if (!p[chapterId]) p[chapterId] = {};
+        p[chapterId][topicId] = meta?.progress || 0;
       }
     } catch { /* ignore */ }
-    setProgress(prog);
+    return p;
+  };
 
-    // Re-read when returning from a practice session (storage event fires cross-tab;
-    // for same-tab updates TopicPracticeSession dispatches 'sapere:progress-updated').
-    const onUpdate = () => {
-      const p = {};
-      try {
-        for (let i = 0; i < localStorage.length; i++) {
-          const key = localStorage.key(i);
-          if (key?.startsWith(prefix) && key.endsWith(':meta')) {
-            const inner = key.slice(prefix.length, -5);
-            const sep = inner.indexOf(':');
-            if (sep === -1) continue;
-            const chapterId = inner.slice(0, sep);
-            const topicId = inner.slice(sep + 1);
-            const meta = JSON.parse(localStorage.getItem(key));
-            if (!p[chapterId]) p[chapterId] = {};
-            p[chapterId][topicId] = meta?.progress || 0;
-          }
-        }
-      } catch { /* ignore */ }
-      setProgress(p);
-    };
+  useEffect(() => {
+    if (!user?.uid) return;
+    setProgress(scanProgress(user.uid));
+    const onUpdate = () => setProgress(scanProgress(user.uid));
     window.addEventListener('sapere:progress-updated', onUpdate);
     return () => window.removeEventListener('sapere:progress-updated', onUpdate);
   }, [user?.uid]);

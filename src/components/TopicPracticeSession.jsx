@@ -6,7 +6,8 @@ import {
   Lightbulb, Check, X, Flag,
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { getChapterQuestions } from '../services/chapterQuestionsCache';
 
 // localStorage helpers for per-topic mastery (rings — no Firestore reads needed)
 export const lsTopicKey = (uid, chapterId, topicId) => `sapere:tp:${uid}:${chapterId}:${topicId}`;
@@ -20,7 +21,8 @@ const saveMastered = (uid, chapterId, topicId, masteredSet, totalQuestions) => {
   try {
     const ids = [...masteredSet];
     localStorage.setItem(lsTopicKey(uid, chapterId, topicId), JSON.stringify(ids));
-    const pct = totalQuestions > 0 ? Math.round((ids.length / totalQuestions) * 100) : 0;
+    const rawPct = totalQuestions > 0 ? Math.round((ids.length / totalQuestions) * 100) : 0;
+    const pct = ids.length > 0 && rawPct === 0 ? 1 : rawPct;
     localStorage.setItem(`${lsTopicKey(uid, chapterId, topicId)}:meta`, JSON.stringify({ progress: pct, masteredCount: ids.length, totalQuestions }));
     // Notify LearningPath (same tab) to refresh chapter-level progress
     window.dispatchEvent(new Event('sapere:progress-updated'));
@@ -184,16 +186,8 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     (async () => {
       setLoading(true);
       try {
-        const isExamChapter = chapter.id?.startsWith('exam:');
-        const examPaperKey = chapter.examPaper || chapter.id?.replace('exam:', '');
-        const snap = await getDocs(
-          isExamChapter
-            ? query(collection(db, 'questions'), where('examPaper', '==', examPaperKey))
-            : query(collection(db, 'questions'), where('chapterId', '==', chapter.id))
-        );
-        const all = snap.docs
-          .map((d) => ({ id: d.id, ...d.data() }))
-          .filter((q) => q.isActive !== false && q.topicId === topic.id);
+        const allChapter = await getChapterQuestions(user?.uid, chapter.id);
+        const all = allChapter.filter((q) => q.topicId === topic.id);
 
         // Load existing mastered IDs from localStorage (no Firestore read needed)
         const existingMastered = user?.uid
