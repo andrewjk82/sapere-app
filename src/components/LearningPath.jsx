@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom';
 import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
-import { doc, getDoc, onSnapshot, collection, query, where, setDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
@@ -105,21 +105,53 @@ const LearningPath = ({ profile }) => {
     return () => { cancelled = true; };
   }, [year, activeSubject, activeCourse]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ── Fetch per-topic progress (used to compute chapter mastery) ───────
+  // ── Load per-topic progress from localStorage (no Firestore read) ───────
+  // Builds map: chapterId → { topicId → progress% } by scanning all stored metas.
   useEffect(() => {
-    if (!user?.uid) return undefined;
-    const q = query(collection(db, 'topicProgress'), where('userId', '==', user.uid));
-    const unsub = onSnapshot(q, (snap) => {
-      // Build map: chapterId → { topicId → progress% }
-      const prog = {};
-      snap.docs.forEach((d) => {
-        const data = d.data();
-        if (!prog[data.chapterId]) prog[data.chapterId] = {};
-        prog[data.chapterId][data.topicId] = data.progress || 0;
-      });
-      setProgress(prog);
-    });
-    return unsub;
+    if (!user?.uid) return;
+    const prefix = `sapere:tp:${user.uid}:`;
+    const prog = {};
+    try {
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key?.startsWith(prefix) && key.endsWith(':meta')) {
+          // key format: sapere:tp:{uid}:{chapterId}:{topicId}:meta
+          const inner = key.slice(prefix.length, -5); // "{chapterId}:{topicId}"
+          const sep = inner.indexOf(':');
+          if (sep === -1) continue;
+          const chapterId = inner.slice(0, sep);
+          const topicId = inner.slice(sep + 1);
+          const meta = JSON.parse(localStorage.getItem(key));
+          if (!prog[chapterId]) prog[chapterId] = {};
+          prog[chapterId][topicId] = meta?.progress || 0;
+        }
+      }
+    } catch { /* ignore */ }
+    setProgress(prog);
+
+    // Re-read when returning from a practice session (storage event fires cross-tab;
+    // for same-tab updates TopicPracticeSession dispatches 'sapere:progress-updated').
+    const onUpdate = () => {
+      const p = {};
+      try {
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key?.startsWith(prefix) && key.endsWith(':meta')) {
+            const inner = key.slice(prefix.length, -5);
+            const sep = inner.indexOf(':');
+            if (sep === -1) continue;
+            const chapterId = inner.slice(0, sep);
+            const topicId = inner.slice(sep + 1);
+            const meta = JSON.parse(localStorage.getItem(key));
+            if (!p[chapterId]) p[chapterId] = {};
+            p[chapterId][topicId] = meta?.progress || 0;
+          }
+        }
+      } catch { /* ignore */ }
+      setProgress(p);
+    };
+    window.addEventListener('sapere:progress-updated', onUpdate);
+    return () => window.removeEventListener('sapere:progress-updated', onUpdate);
   }, [user?.uid]);
 
   const availableSubjects = useMemo(() => {

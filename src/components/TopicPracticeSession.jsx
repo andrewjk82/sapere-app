@@ -6,7 +6,7 @@ import {
   Lightbulb, Check, X, Flag,
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, setDoc, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, addDoc, serverTimestamp } from 'firebase/firestore';
 
 // localStorage helpers for per-topic mastery (rings — no Firestore reads needed)
 export const lsTopicKey = (uid, chapterId, topicId) => `sapere:tp:${uid}:${chapterId}:${topicId}`;
@@ -22,6 +22,8 @@ const saveMastered = (uid, chapterId, topicId, masteredSet, totalQuestions) => {
     localStorage.setItem(lsTopicKey(uid, chapterId, topicId), JSON.stringify(ids));
     const pct = totalQuestions > 0 ? Math.round((ids.length / totalQuestions) * 100) : 0;
     localStorage.setItem(`${lsTopicKey(uid, chapterId, topicId)}:meta`, JSON.stringify({ progress: pct, masteredCount: ids.length, totalQuestions }));
+    // Notify LearningPath (same tab) to refresh chapter-level progress
+    window.dispatchEvent(new Event('sapere:progress-updated'));
   } catch { /* storage full — ignore */ }
 };
 import { useAuth } from '../context/AuthContext';
@@ -278,18 +280,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     const overallPct = totalInTopic > 0 ? Math.round((masteredCount / totalInTopic) * 100) : pct;
 
     if (user?.uid) {
-      // localStorage: masteredIds for ring display (no Firestore read on enter)
       saveMastered(user.uid, chapter.id, topic.id, updatedMastered, totalInTopic);
-      // Firestore: slim summary only (LearningPath reads this for chapter-level progress)
-      try {
-        await setDoc(doc(db, 'topicProgress', `${user.uid}_${chapter.id}_${topic.id}`), {
-          userId: user.uid,
-          chapterId: chapter.id,
-          topicId: topic.id,
-          progress: overallPct,
-          updatedAt: serverTimestamp(),
-        }, { merge: true });
-      } catch { /* non-critical */ }
     }
 
     setView('done');
