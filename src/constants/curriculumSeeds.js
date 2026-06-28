@@ -131,6 +131,7 @@ import { Y12A_CH5K_QUESTIONS } from './seedYear12Ch5KQuestions.js';
 import { Y12A_CH5L_QUESTIONS } from './seedYear12Ch5LQuestions.js';
 import { Y8_CH1A_QUESTIONS } from './seedYear8Ch1AQuestions.js';
 import { Y8_CH1C_QUESTIONS } from './seedYear8Ch1Questions.js';
+import { Y8_CH1B_QUESTIONS } from './seedYear8Ch1BQuestions.js';
 import { Y8_CH2H_QUESTIONS } from './seedYear8Ch2Questions.js';
 import { Y8_CH3A_QUESTIONS } from './seedYear8Ch3Questions.js';
 import { Y8_CH3F_QUESTIONS } from './seedYear8Ch3ReviewQuestions.js';
@@ -1123,6 +1124,7 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-14', chapterTitle: 'Chapter 14: Simultaneous linear equations', topicId: 'y9-14f', topicCode: '14F', topicTitle: 'Families of straight lines', year: 'Year 9', seed: Y9_CH14F_QUESTIONS, label: 'Y9 Ch14 · 14F Families of lines' },
   { chapterId: 'y9-14', chapterTitle: 'Chapter 14: Simultaneous linear equations', topicId: 'y9-14g', topicCode: '14G', topicTitle: 'Revision', year: 'Year 9', seed: Y9_CH14G_QUESTIONS, label: 'Y9 Ch14 · 14G Revision' },
   { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1a', topicCode: '1A', topicTitle: 'Addition and subtraction of whole numbers', year: 'Year 8', seed: Y8_CH1A_QUESTIONS, label: 'Y8 Ch1 · Addition and subtraction of whole numbers' },
+  { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1b', topicCode: '1B', topicTitle: 'Multiplication and division', year: 'Year 8', seed: Y8_CH1B_QUESTIONS, label: 'Y8 Ch1 · Multiplication and division' },
   { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1c', topicCode: '1C', topicTitle: 'Problem solving', year: 'Year 8', seed: Y8_CH1C_QUESTIONS, label: 'Y8 Ch1 · Problem solving' },
   { chapterId: 'y8-2', chapterTitle: 'Chapter 2: Fractions and decimals', topicId: 'y8-2h', topicCode: '2H', topicTitle: 'Review of fractions and decimals', year: 'Year 8', seed: Y8_CH2H_QUESTIONS, label: 'Y8 Ch2 · Review' },
   { chapterId: 'y8-3', chapterTitle: 'Chapter 3: Review of factors and indices', topicId: 'y8-3f', topicCode: '3F', topicTitle: 'Review of factors and indices', year: 'Year 8', seed: Y8_CH3F_QUESTIONS, label: 'Y8 Ch3 · Review' },
