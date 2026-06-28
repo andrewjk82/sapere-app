@@ -107,6 +107,13 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
     str = fallback;
   }
 
+  // Heal JS-string-escape corruption from unescaped/partially-escaped backslashes in database seeds
+  str = str.replace(/\\?\x0c/g, '\\f'); // Form Feed (\f) -> \f (e.g. \frac)
+  str = str.replace(/\\?\x09/g, '\\t'); // Tab (\t) -> \t (e.g. \times, \theta, \text)
+  str = str.replace(/\\?\x08/g, '\\b'); // Backspace (\b) -> \b (e.g. \beta, \begin)
+  str = str.replace(/\\?\x0b/g, '\\v'); // Vertical Tab (\v) -> \v (e.g. \vec, \vert)
+  str = str.replace(/\\?\x0d(?=[a-zA-Z])/g, '\\r'); // Carriage Return (\r) -> \r (e.g. \right)
+
   // 1. Unicode → LaTeX symbol substitutions
   str = str.replace(/√/g, '\\sqrt');
   str = str.replace(/π/g, '\\pi');
