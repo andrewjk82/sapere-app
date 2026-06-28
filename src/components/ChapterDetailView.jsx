@@ -5,16 +5,45 @@ import {
   Circle, BookMarked, RotateCcw, GraduationCap
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, onSnapshot } from 'firebase/firestore';
+import { collection, query, where, onSnapshot, writeBatch, getDocs, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
 import { hasLesson, getLesson } from '../lessons/registry';
 import LessonPlayer from './lessons/LessonPlayer';
 
+// SVG ring progress indicator for per-topic completion
+const ProgressRing = ({ pct, accent, size = 40 }) => {
+  const r = (size - 6) / 2;
+  const circ = 2 * Math.PI * r;
+  const dash = (pct / 100) * circ;
+  const isComplete = pct >= 100;
+  return (
+    <svg width={size} height={size} style={{ flexShrink: 0, transform: 'rotate(-90deg)' }}>
+      <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="#e2e8f0" strokeWidth={4} />
+      <circle
+        cx={size / 2} cy={size / 2} r={r} fill="none"
+        stroke={isComplete ? '#10b981' : accent}
+        strokeWidth={4}
+        strokeDasharray={`${dash} ${circ}`}
+        strokeLinecap="round"
+        style={{ transition: 'stroke-dasharray 0.5s ease' }}
+      />
+      <text
+        x={size / 2} y={size / 2}
+        textAnchor="middle" dominantBaseline="central"
+        style={{ transform: 'rotate(90deg)', transformOrigin: `${size / 2}px ${size / 2}px`, fill: isComplete ? '#10b981' : accent, fontSize: pct === 0 ? '9px' : '8px', fontWeight: 900, fontFamily: 'inherit' }}
+      >
+        {pct === 0 ? '—' : `${pct}%`}
+      </text>
+    </svg>
+  );
+};
+
 const XP_PER_TOPIC = 15;
 
 const getTopicState = (topicId, topicProgress, teacherCompleted, teacherAssigned) => {
-  const prog = topicProgress?.[topicId] || 0;
-  const done = teacherCompleted?.includes(topicId) || prog === 100;
+  const entry = topicProgress?.[topicId];
+  const prog = entry?.progress || 0;
+  const done = teacherCompleted?.includes(topicId) || prog >= 100;
   const assigned = teacherAssigned?.includes(topicId);
   if (done) return 'done';
   if (assigned || prog > 0) return 'current';
@@ -29,10 +58,12 @@ const STATE = {
 
 const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopic }) => {
   const { user } = useAuth();
+  // topicProgress: { [topicId]: { progress, masteredIds, totalQuestions } }
   const [topicProgress, setTopicProgress] = useState({});
   const [previewLesson, setPreviewLesson] = useState(null);
+  const [resetting, setResetting] = useState(false);
 
-  // Load per-topic progress
+  // Load per-topic progress (live)
   useEffect(() => {
     if (!user?.uid) return;
     const q = query(
@@ -44,12 +75,44 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
       const prog = {};
       snap.docs.forEach((d) => {
         const data = d.data();
-        prog[data.topicId] = data.progress || 0;
+        prog[data.topicId] = {
+          progress: data.progress || 0,
+          masteredIds: data.masteredIds || [],
+          totalQuestions: data.totalQuestions || 0,
+        };
       });
       setTopicProgress(prog);
     }, () => {});
     return unsub;
   }, [user?.uid, chapter.id]);
+
+  const handleResetChapter = async () => {
+    if (!user?.uid || resetting) return;
+    setResetting(true);
+    try {
+      const q = query(
+        collection(db, 'topicProgress'),
+        where('userId', '==', user.uid),
+        where('chapterId', '==', chapter.id)
+      );
+      const snap = await getDocs(q);
+      const batch = writeBatch(db);
+      snap.docs.forEach((d) => {
+        batch.set(d.ref, {
+          ...d.data(),
+          progress: 0,
+          masteredIds: [],
+          correctCount: 0,
+          updatedAt: serverTimestamp(),
+        }, { merge: true });
+      });
+      await batch.commit();
+    } catch (e) {
+      console.error('Failed to reset chapter:', e);
+    } finally {
+      setResetting(false);
+    }
+  };
 
   const topics = useMemo(() => {
     return (chapter.topics || []).map((topic, idx) => {
@@ -59,9 +122,12 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
         profile?.completedChapters,
         profile?.assignedTopics
       );
-      const pct = topicProgress?.[topic.id] || (state === 'done' ? 100 : 0);
+      const entry = topicProgress?.[topic.id];
+      const pct = entry?.progress || (state === 'done' ? 100 : 0);
+      const masteredCount = entry?.masteredIds?.length || 0;
+      const totalCount = entry?.totalQuestions || 0;
       const xpEarned = Math.round((pct / 100) * XP_PER_TOPIC);
-      return { ...topic, idx, state, pct, xpEarned };
+      return { ...topic, idx, state, pct, masteredCount, totalCount, xpEarned };
     });
   }, [chapter.topics, topicProgress, profile]);
 
@@ -124,11 +190,30 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
               )}
             </div>
           </div>
-          <div style={{ textAlign: 'right', flexShrink: 0 }}>
-            <div style={{ fontSize: '2.2rem', fontWeight: 900, color: chapterAccent, lineHeight: 1, fontFamily: '"Outfit", sans-serif' }}>
-              {overallPct}%
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '8px', flexShrink: 0 }}>
+            <div style={{ textAlign: 'right' }}>
+              <div style={{ fontSize: '2.2rem', fontWeight: 900, color: chapterAccent, lineHeight: 1, fontFamily: '"Outfit", sans-serif' }}>
+                {overallPct}%
+              </div>
+              <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8', marginTop: '2px' }}>complete</div>
             </div>
-            <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8', marginTop: '2px' }}>complete</div>
+            <button
+              onClick={handleResetChapter}
+              disabled={resetting || overallPct === 0}
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '5px',
+                padding: '6px 12px', borderRadius: '10px',
+                border: `1.5px solid ${chapterAccent}40`,
+                background: 'rgba(255,255,255,0.7)',
+                color: overallPct === 0 ? '#cbd5e1' : chapterAccent,
+                fontSize: '0.72rem', fontWeight: 800,
+                cursor: overallPct === 0 ? 'default' : 'pointer',
+                opacity: overallPct === 0 ? 0.5 : 1,
+              }}
+            >
+              <RotateCcw size={12} />
+              {resetting ? 'Resetting…' : 'Reset chapter'}
+            </button>
           </div>
         </div>
 
@@ -163,15 +248,8 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
                   : '0 2px 8px rgba(15,23,42,0.04)',
               }}
             >
-              {/* State icon */}
-              <div style={{
-                width: '40px', height: '40px', borderRadius: '13px', flexShrink: 0,
-                background: s.soft,
-                display: 'grid', placeItems: 'center',
-                color: s.accent,
-              }}>
-                <s.Icon size={18} strokeWidth={2.3} />
-              </div>
+              {/* Progress ring */}
+              <ProgressRing pct={topic.pct} accent={s.accent} size={44} />
 
               {/* Topic info */}
               <div style={{ flex: 1, minWidth: 0 }}>
@@ -193,14 +271,21 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
                   {topic.title}
                 </div>
 
-                {/* Mini progress bar if in progress */}
-                {topic.state === 'current' && topic.pct > 0 && (
-                  <div style={{ height: '4px', borderRadius: '999px', background: '#eef2ff', marginTop: '7px', overflow: 'hidden' }}>
-                    <motion.div
-                      initial={{ width: 0 }}
-                      animate={{ width: `${topic.pct}%` }}
-                      style={{ height: '100%', borderRadius: '999px', background: s.accent }}
-                    />
+                {/* Mastery count + mini bar */}
+                {topic.pct > 0 && (
+                  <div style={{ marginTop: '6px' }}>
+                    {topic.totalCount > 0 && (
+                      <div style={{ fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8', marginBottom: '3px' }}>
+                        {topic.masteredCount}/{topic.totalCount} mastered
+                      </div>
+                    )}
+                    <div style={{ height: '4px', borderRadius: '999px', background: '#eef2ff', overflow: 'hidden' }}>
+                      <motion.div
+                        initial={{ width: 0 }}
+                        animate={{ width: `${topic.pct}%` }}
+                        style={{ height: '100%', borderRadius: '999px', background: topic.pct >= 100 ? '#10b981' : s.accent }}
+                      />
+                    </div>
                   </div>
                 )}
               </div>

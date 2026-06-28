@@ -6,7 +6,7 @@ import {
   Lightbulb, Check, X, Flag,
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, setDoc, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc, setDoc, addDoc, serverTimestamp } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import MathView from './MathView';
@@ -134,6 +134,8 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const reportTargetRef = useRef(null);
   const [view, setView] = useState('quiz'); // 'quiz' | 'done'
   const [questions, setQuestions] = useState([]);
+  const [allTopicQuestions, setAllTopicQuestions] = useState([]); // full set (for progress %)
+  const [masteredIds, setMasteredIds] = useState(new Set()); // correctly answered question IDs
   const [loading, setLoading] = useState(true);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [userAnswer, setUserAnswer] = useState(null);
@@ -157,7 +159,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const lesson = getLesson(topic.id);
   const [showLesson, setShowLesson] = useState(false);
 
-  // Load questions for this topic
+  // Load questions for this topic, filtering out already-mastered ones
   useEffect(() => {
     let cancelled = false;
     (async () => {
@@ -173,10 +175,27 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
         const all = snap.docs
           .map((d) => ({ id: d.id, ...d.data() }))
           .filter((q) => q.isActive !== false && q.topicId === topic.id);
-        // Shuffle question order (fresh random order each time the student
-        // enters), and shuffle each multiple-choice question's options.
-        const prepared = shuffleArray(all).map(shuffleQuestionOptions);
-        if (!cancelled) setQuestions(prepared);
+
+        // Load existing mastered IDs from topicProgress
+        let existingMastered = new Set();
+        if (user?.uid) {
+          try {
+            const progressSnap = await getDoc(doc(db, 'topicProgress', `${user.uid}_${chapter.id}_${topic.id}`));
+            if (progressSnap.exists()) {
+              const data = progressSnap.data();
+              existingMastered = new Set((data.masteredIds || []).map(String));
+            }
+          } catch { /* non-fatal */ }
+        }
+
+        if (!cancelled) {
+          setAllTopicQuestions(all);
+          setMasteredIds(existingMastered);
+          // Only show questions not yet mastered (wrong or never attempted)
+          const unmastered = all.filter(q => !existingMastered.has(String(q.id)));
+          const prepared = shuffleArray(unmastered).map(shuffleQuestionOptions);
+          setQuestions(prepared);
+        }
       } catch (e) {
         console.error('Failed to load topic questions:', e);
       } finally {
@@ -184,7 +203,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
       }
     })();
     return () => { cancelled = true; };
-  }, [chapter.id, topic.id]);
+  }, [chapter.id, topic.id, user?.uid]);
 
   const q = questions[currentIdx];
   const steps = useMemo(() => parseSolutionSteps(q), [q]);
@@ -232,12 +251,22 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   };
 
   const finishSession = useCallback(async () => {
-    const correct = results.filter((r) => r.correct).length + (isCorrect ? 1 : 0);
-    const total_ = results.length + 1;
-    const pct = Math.round((correct / total_) * 100);
+    const allResults = [...results, { correct: isCorrect, q }].filter(r => r.q);
+    const sessionCorrect = allResults.filter((r) => r.correct).length;
+    const sessionTotal = allResults.length;
+    const pct = sessionTotal ? Math.round((sessionCorrect / sessionTotal) * 100) : 0;
     const xp = pct >= 80 ? XP_PER_TOPIC : pct >= 50 ? Math.round(XP_PER_TOPIC * 0.6) : Math.round(XP_PER_TOPIC * 0.2);
 
-    // Save progress
+    // Build new mastered set: existing + questions answered correctly this session
+    const newlyMastered = allResults.filter(r => r.correct).map(r => String(r.q.id));
+    const updatedMastered = new Set([...masteredIds, ...newlyMastered]);
+    setMasteredIds(updatedMastered);
+
+    const totalInTopic = allTopicQuestions.length;
+    const masteredCount = updatedMastered.size;
+    // Progress = % of all topic questions mastered
+    const overallPct = totalInTopic > 0 ? Math.round((masteredCount / totalInTopic) * 100) : pct;
+
     if (user?.uid) {
       try {
         const ref = doc(db, 'topicProgress', `${user.uid}_${chapter.id}_${topic.id}`);
@@ -245,9 +274,11 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
           userId: user.uid,
           chapterId: chapter.id,
           topicId: topic.id,
-          progress: pct >= 80 ? 100 : pct,
-          correctCount: correct,
-          totalCount: total_,
+          progress: overallPct,
+          masteredIds: [...updatedMastered],
+          totalQuestions: totalInTopic,
+          correctCount: masteredCount,
+          totalCount: totalInTopic,
           xpEarned: xp,
           updatedAt: serverTimestamp(),
         }, { merge: true });
@@ -257,11 +288,12 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     }
 
     setView('done');
-  }, [results, isCorrect, user, chapter.id, topic.id]);
+  }, [results, isCorrect, q, masteredIds, allTopicQuestions, user, chapter.id, topic.id]);
 
   const handleRestart = () => {
-    // Reshuffle question order + MC options for a fresh attempt.
-    setQuestions((prev) => shuffleArray(prev).map(shuffleQuestionOptions));
+    // Re-show only unmastered questions (wrong or never attempted).
+    const unmastered = allTopicQuestions.filter(q => !masteredIds.has(String(q.id)));
+    setQuestions(shuffleArray(unmastered).map(shuffleQuestionOptions));
     setCurrentIdx(0);
     setResults([]);
     setUserAnswer('');
@@ -496,6 +528,50 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
         </div>
       );
     }
+    if (total === 0 && allTopicQuestions.length > 0) {
+      // All questions mastered — nothing left to practice
+      const overallPct = Math.round((masteredIds.size / allTopicQuestions.length) * 100);
+      return (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.97 }}
+          animate={{ opacity: 1, scale: 1 }}
+          style={{ maxWidth: '760px', margin: '0 auto' }}
+        >
+          {backBtn('Back to chapter', onBack)}
+          <div style={{ padding: '60px 30px', textAlign: 'center', borderRadius: '22px', background: 'linear-gradient(135deg, #ecfdf518, #d1fae508)', border: '1px solid #a7f3d040' }}>
+            <div style={{ fontSize: '3rem', marginBottom: '12px' }}>🎉</div>
+            <div style={{ fontFamily: '"Outfit", sans-serif', fontWeight: 900, color: '#059669', fontSize: '1.6rem', marginBottom: '6px' }}>Topic Complete!</div>
+            <div style={{ color: '#64748b', marginTop: '6px', fontSize: '0.9rem', fontWeight: 700, marginBottom: '24px' }}>
+              You've mastered all {allTopicQuestions.length} questions in <strong>{topic.title}</strong>.
+            </div>
+            <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <button
+                onClick={() => {
+                  // Allow re-practicing all questions (treat as practice run)
+                  const allShuffled = shuffleArray([...allTopicQuestions]).map(shuffleQuestionOptions);
+                  setQuestions(allShuffled);
+                  setCurrentIdx(0);
+                  setResults([]);
+                  setUserAnswer('');
+                  setSubmitted(false);
+                  setIsCorrect(null);
+                }}
+                style={{ padding: '14px 24px', borderRadius: '14px', border: '2px solid #ddd6fe', background: '#fff', color: '#7c3aed', fontWeight: 900, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+              >
+                <RotateCcw size={15} /> Practice again
+              </button>
+              <button
+                onClick={onBack}
+                style={{ padding: '14px 24px', borderRadius: '14px', border: 'none', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', fontWeight: 900, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '8px', boxShadow: '0 4px 12px rgba(124,58,237,0.25)' }}
+              >
+                <ArrowLeft size={15} /> Back to chapter
+              </button>
+            </div>
+          </div>
+        </motion.div>
+      );
+    }
+
     if (total === 0) {
       return (
         <div style={{ maxWidth: '760px', margin: '0 auto' }}>
@@ -1047,13 +1123,20 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
   // ── DONE VIEW ─────────────────────────────────────────────────────────────
   if (view === 'done') {
-    const allResults = results;
-    const correctCount = allResults.filter((r) => r.correct).length;
-    const pct = total ? Math.round((correctCount / total) * 100) : 0;
-    const xp = pct >= 80 ? XP_PER_TOPIC : pct >= 50 ? Math.round(XP_PER_TOPIC * 0.6) : Math.round(XP_PER_TOPIC * 0.2);
-    const grade = pct >= 80 ? { label: 'Excellent!', color: '#10b981', emoji: '🏆' }
-      : pct >= 50 ? { label: 'Good effort', color: '#7c3aed', emoji: '⭐' }
+    const sessionResults = results;
+    const sessionCorrect = sessionResults.filter((r) => r.correct).length;
+    const sessionTotal = sessionResults.length;
+    const sessionPct = sessionTotal ? Math.round((sessionCorrect / sessionTotal) * 100) : 0;
+    const xp = sessionPct >= 80 ? XP_PER_TOPIC : sessionPct >= 50 ? Math.round(XP_PER_TOPIC * 0.6) : Math.round(XP_PER_TOPIC * 0.2);
+    const grade = sessionPct >= 80 ? { label: 'Excellent!', color: '#10b981', emoji: '🏆' }
+      : sessionPct >= 50 ? { label: 'Good effort', color: '#7c3aed', emoji: '⭐' }
       : { label: 'Keep practising', color: '#f59e0b', emoji: '💪' };
+
+    const totalInTopic = allTopicQuestions.length;
+    const masteredCount = masteredIds.size;
+    const overallPct = totalInTopic > 0 ? Math.round((masteredCount / totalInTopic) * 100) : 0;
+    const remainingCount = totalInTopic - masteredCount;
+    const allMastered = remainingCount <= 0;
 
     return (
       <motion.div
@@ -1068,9 +1151,9 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
           border: `1px solid ${grade.color}30`,
           marginBottom: '24px',
         }}>
-          <div style={{ fontSize: '3rem', marginBottom: '8px' }}>{grade.emoji}</div>
+          <div style={{ fontSize: '3rem', marginBottom: '8px' }}>{allMastered ? '🎉' : grade.emoji}</div>
           <h2 style={{ fontFamily: '"Outfit", sans-serif', fontSize: '2rem', fontWeight: 900, color: '#1e1b4b', margin: '0 0 6px' }}>
-            {grade.label}
+            {allMastered ? 'Topic Complete!' : grade.label}
           </h2>
           <div style={{ fontSize: '0.9rem', fontWeight: 700, color: '#64748b', marginBottom: '28px' }}>
             {topic.title}
@@ -1078,8 +1161,8 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginBottom: '28px' }}>
             {[
-              { label: 'Score', value: `${correctCount}/${total}`, sub: 'correct', color: grade.color },
-              { label: 'Accuracy', value: `${pct}%`, sub: 'of questions', color: pct >= 80 ? '#10b981' : '#7c3aed' },
+              { label: 'This round', value: `${sessionCorrect}/${sessionTotal}`, sub: 'correct', color: grade.color },
+              { label: 'Mastered', value: `${masteredCount}/${totalInTopic}`, sub: `${overallPct}% complete`, color: '#10b981' },
               { label: 'XP earned', value: `+${xp}`, sub: `of ${XP_PER_TOPIC} XP`, color: '#f59e0b' },
             ].map((item) => (
               <div key={item.label} style={{ padding: '16px', borderRadius: '16px', background: 'rgba(255,255,255,0.8)', border: '1px solid rgba(255,255,255,0.5)' }}>
@@ -1090,9 +1173,30 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
             ))}
           </div>
 
+          {/* Overall mastery progress bar */}
+          <div style={{ marginBottom: '20px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
+              <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Overall mastery</span>
+              <span style={{ fontSize: '0.72rem', fontWeight: 900, color: '#10b981' }}>{overallPct}%</span>
+            </div>
+            <div style={{ height: '8px', borderRadius: '999px', background: '#e2e8f0', overflow: 'hidden' }}>
+              <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: `${overallPct}%` }}
+                transition={{ delay: 0.3, duration: 0.7 }}
+                style={{ height: '100%', borderRadius: '999px', background: 'linear-gradient(90deg, #10b981, #059669)' }}
+              />
+            </div>
+            {!allMastered && (
+              <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8', marginTop: '5px', textAlign: 'right' }}>
+                {remainingCount} question{remainingCount !== 1 ? 's' : ''} remaining
+              </div>
+            )}
+          </div>
+
           {/* Per-question results */}
           <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            {allResults.map((r, i) => (
+            {sessionResults.map((r, i) => (
               <div
                 key={i}
                 style={{
@@ -1109,16 +1213,18 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
         {/* Action buttons */}
         <div style={{ display: 'flex', gap: '12px' }}>
-          <button
-            onClick={handleRestart}
-            style={{
-              flex: 1, padding: '16px', borderRadius: '16px', border: '2px solid #ddd6fe',
-              background: '#fff', color: '#7c3aed', fontWeight: 900, fontSize: '0.95rem',
-              cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
-            }}
-          >
-            <RotateCcw size={16} /> Try again
-          </button>
+          {!allMastered && (
+            <button
+              onClick={handleRestart}
+              style={{
+                flex: 1, padding: '16px', borderRadius: '16px', border: '2px solid #ddd6fe',
+                background: '#fff', color: '#7c3aed', fontWeight: 900, fontSize: '0.95rem',
+                cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+              }}
+            >
+              <RotateCcw size={16} /> Practice wrong answers
+            </button>
+          )}
           <button
             onClick={onBack}
             style={{
