@@ -55,13 +55,33 @@ const STATE = {
   unlocked: { label: 'Not started', accent: '#94a3b8', soft: '#f8fafc', border: '#e2e8f0', Icon: Circle },
 };
 
-// localStorage helpers (must match TopicPracticeSession)
-const lsKey = (uid, chapterId, topicId) => `sapere:tp:${uid}:${chapterId}:${topicId}`;
-const loadTopicMeta = (uid, chapterId, topicId) => {
+// Scan localStorage for all topic metas under a chapter — no dependency on chapter.topics
+const loadChapterProgress = (uid, chapterId) => {
+  const prefix = `sapere:tp:${uid}:${chapterId}:`;
+  const prog = {};
   try {
-    const raw = localStorage.getItem(`${lsKey(uid, chapterId, topicId)}:meta`);
-    return raw ? JSON.parse(raw) : null;
-  } catch { return null; }
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith(prefix) && key.endsWith(':meta')) {
+        const topicId = key.slice(prefix.length, -5);
+        const meta = JSON.parse(localStorage.getItem(key));
+        if (meta && topicId) prog[topicId] = meta;
+      }
+    }
+  } catch { /* ignore */ }
+  return prog;
+};
+// Reset all topic progress for a chapter
+const clearChapterProgress = (uid, chapterId) => {
+  const prefix = `sapere:tp:${uid}:${chapterId}:`;
+  try {
+    const toRemove = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith(prefix)) toRemove.push(key);
+    }
+    toRemove.forEach(k => localStorage.removeItem(k));
+  } catch { /* ignore */ }
 };
 
 const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopic }) => {
@@ -71,33 +91,17 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
   const [previewLesson, setPreviewLesson] = useState(null);
   const [resetting, setResetting] = useState(false);
 
-  // Read per-topic progress from localStorage on mount and when returning
-  const refreshProgress = () => {
-    if (!user?.uid || !chapter?.topics) return;
-    const prog = {};
-    chapter.topics.forEach(t => {
-      const meta = loadTopicMeta(user.uid, chapter.id, t.id);
-      if (meta) prog[t.id] = meta;
-    });
-    setTopicProgress(prog);
-  };
-
   useEffect(() => {
-    refreshProgress();
+    if (!user?.uid) return;
+    setTopicProgress(loadChapterProgress(user.uid, chapter.id));
   }, [user?.uid, chapter.id]);
 
   const handleResetChapter = () => {
     if (!user?.uid || resetting) return;
     setResetting(true);
-    try {
-      (chapter.topics || []).forEach(t => {
-        localStorage.removeItem(lsKey(user.uid, chapter.id, t.id));
-        localStorage.removeItem(`${lsKey(user.uid, chapter.id, t.id)}:meta`);
-      });
-      setTopicProgress({});
-    } finally {
-      setResetting(false);
-    }
+    clearChapterProgress(user.uid, chapter.id);
+    setTopicProgress({});
+    setResetting(false);
   };
 
   const topics = useMemo(() => {

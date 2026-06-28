@@ -6,23 +6,22 @@ import {
   Lightbulb, Check, X, Flag,
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, setDoc, addDoc, serverTimestamp } from 'firebase/firestore';
 
-// localStorage helpers for per-topic mastery (zero Firestore reads/writes)
-const lsKey = (uid, chapterId, topicId) => `sapere:tp:${uid}:${chapterId}:${topicId}`;
+// localStorage helpers for per-topic mastery (rings — no Firestore reads needed)
+export const lsTopicKey = (uid, chapterId, topicId) => `sapere:tp:${uid}:${chapterId}:${topicId}`;
 const loadMastered = (uid, chapterId, topicId) => {
   try {
-    const raw = localStorage.getItem(lsKey(uid, chapterId, topicId));
+    const raw = localStorage.getItem(lsTopicKey(uid, chapterId, topicId));
     return raw ? new Set(JSON.parse(raw)) : new Set();
   } catch { return new Set(); }
 };
 const saveMastered = (uid, chapterId, topicId, masteredSet, totalQuestions) => {
   try {
     const ids = [...masteredSet];
-    localStorage.setItem(lsKey(uid, chapterId, topicId), JSON.stringify(ids));
-    // Also write a lightweight summary so ChapterDetailView can read progress
+    localStorage.setItem(lsTopicKey(uid, chapterId, topicId), JSON.stringify(ids));
     const pct = totalQuestions > 0 ? Math.round((ids.length / totalQuestions) * 100) : 0;
-    localStorage.setItem(`${lsKey(uid, chapterId, topicId)}:meta`, JSON.stringify({ progress: pct, masteredCount: ids.length, totalQuestions }));
+    localStorage.setItem(`${lsTopicKey(uid, chapterId, topicId)}:meta`, JSON.stringify({ progress: pct, masteredCount: ids.length, totalQuestions }));
   } catch { /* storage full — ignore */ }
 };
 import { useAuth } from '../context/AuthContext';
@@ -278,9 +277,19 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     // Progress = % of all topic questions mastered
     const overallPct = totalInTopic > 0 ? Math.round((masteredCount / totalInTopic) * 100) : pct;
 
-    // Save to localStorage — zero Firestore cost
     if (user?.uid) {
+      // localStorage: masteredIds for ring display (no Firestore read on enter)
       saveMastered(user.uid, chapter.id, topic.id, updatedMastered, totalInTopic);
+      // Firestore: slim summary only (LearningPath reads this for chapter-level progress)
+      try {
+        await setDoc(doc(db, 'topicProgress', `${user.uid}_${chapter.id}_${topic.id}`), {
+          userId: user.uid,
+          chapterId: chapter.id,
+          topicId: topic.id,
+          progress: overallPct,
+          updatedAt: serverTimestamp(),
+        }, { merge: true });
+      } catch { /* non-critical */ }
     }
 
     setView('done');
