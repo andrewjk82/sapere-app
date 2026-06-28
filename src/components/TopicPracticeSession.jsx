@@ -246,6 +246,17 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     setIsCorrect(correct);
     setSubmitted(true);
     setResults((prev) => [...prev, { correct, userAnswer, q }]);
+
+    // Persist mastery INCREMENTALLY — the moment a question is answered
+    // correctly. Topics have hundreds of questions, so a student almost never
+    // reaches the final question to trigger finishSession; saving here ensures
+    // progress survives even if they exit mid-session.
+    if (correct && q?.id && user?.uid && !masteredIds.has(String(q.id))) {
+      const updated = new Set(masteredIds);
+      updated.add(String(q.id));
+      setMasteredIds(updated);
+      saveMastered(user.uid, chapter.id, topic.id, updated, allTopicQuestions.length);
+    }
   };
 
   const handleNext = () => {
