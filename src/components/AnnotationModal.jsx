@@ -53,25 +53,19 @@ const AnnotationModal = ({ item, saving, onCancel, onSave }) => {
     };
   };
 
-  const strokeTo = (ctx, from, to) => {
-    // Quadratic curve through the midpoint for smoother lines.
-    const mid = { x: (from.x + to.x) / 2, y: (from.y + to.y) / 2 };
-    ctx.quadraticCurveTo(from.x, from.y, mid.x, mid.y);
-    ctx.stroke();
-  };
-
   const handleDown = useCallback((e) => {
     e.preventDefault();
     const canvas = canvasRef.current;
     if (!canvas) return;
     canvas.setPointerCapture?.(e.pointerId);
     drawing.current = true;
-    lastPos.current = getPos(e);
+    const pos = getPos(e);
+    lastPos.current = pos;
     // Dot for a single tap.
     const ctx = canvas.getContext('2d');
     ctx.beginPath();
     ctx.fillStyle = color;
-    ctx.arc(lastPos.current.x, lastPos.current.y, size / 2, 0, Math.PI * 2);
+    ctx.arc(pos.x, pos.y, size / 2, 0, Math.PI * 2);
     ctx.fill();
   }, [color, size]);
 
@@ -86,16 +80,31 @@ const AnnotationModal = ({ item, saving, onCancel, onSave }) => {
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
     const events = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
+    ctx.beginPath();
+    if (lastPos.current) {
+      ctx.moveTo(lastPos.current.x, lastPos.current.y);
+    }
     for (const ev of events) {
       const pos = getPos(ev);
-      ctx.beginPath();
-      ctx.moveTo(lastPos.current.x, lastPos.current.y);
-      strokeTo(ctx, lastPos.current, pos);
+      if (!lastPos.current) {
+        ctx.moveTo(pos.x, pos.y);
+      } else {
+        ctx.lineTo(pos.x, pos.y);
+      }
       lastPos.current = pos;
     }
+    ctx.stroke();
   }, [color, size]);
 
-  const handleUp = useCallback(() => {
+  const handleUp = useCallback((e) => {
+    if (drawing.current && e) {
+      const canvas = canvasRef.current;
+      if (canvas && e.pointerId !== undefined) {
+        try {
+          canvas.releasePointerCapture?.(e.pointerId);
+        } catch (err) {}
+      }
+    }
     drawing.current = false;
     lastPos.current = null;
   }, []);
@@ -128,8 +137,8 @@ const AnnotationModal = ({ item, saving, onCancel, onSave }) => {
   };
 
   return (
-    <div style={{ position: 'fixed', inset: 0, zIndex: 99999, background: 'rgba(15,23,42,0.92)', backdropFilter: 'blur(8px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '14px', background: '#1e293b', padding: '10px 20px', borderRadius: '16px', flexWrap: 'wrap' }}>
+    <div style={{ position: 'fixed', inset: 0, zIndex: 99999, background: 'rgba(15,23,42,0.92)', backdropFilter: 'blur(8px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '20px', userSelect: 'none', WebkitUserSelect: 'none', touchAction: 'none' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '14px', background: '#1e293b', padding: '10px 20px', borderRadius: '16px', flexWrap: 'wrap', userSelect: 'none', WebkitUserSelect: 'none' }}>
         <span style={{ color: '#94a3b8', fontWeight: 800, fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Colour</span>
         {COLORS.map((c) => (
           <button key={c} onClick={() => setColor(c)} style={{ width: '26px', height: '26px', borderRadius: '50%', background: c, border: color === c ? '3px solid #fff' : '3px solid transparent', cursor: 'pointer' }} />
@@ -147,11 +156,11 @@ const AnnotationModal = ({ item, saving, onCancel, onSave }) => {
         </button>
       </div>
 
-      <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', background: '#fff', maxWidth: '100%', maxHeight: '70vh' }}>
+      <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', background: '#fff', maxWidth: '100%', maxHeight: '70vh', userSelect: 'none', WebkitUserSelect: 'none' }}>
         {primaryImage ? (
-          <img src={primaryImage} alt="Student work" style={{ display: 'block', maxWidth: 'min(1200px, 100%)', maxHeight: '65vh', objectFit: 'contain', userSelect: 'none', pointerEvents: 'none' }} />
+          <img src={primaryImage} alt="Student work" style={{ display: 'block', maxWidth: 'min(1200px, 100%)', maxHeight: '65vh', objectFit: 'contain', userSelect: 'none', WebkitUserSelect: 'none', pointerEvents: 'none' }} />
         ) : (
-          <div style={{ width: FALLBACK_W / 1.4, height: FALLBACK_H / 1.4, background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#94a3b8', fontWeight: 700 }}>No student drawing — write feedback freehand</div>
+          <div style={{ width: FALLBACK_W / 1.4, height: FALLBACK_H / 1.4, background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#94a3b8', fontWeight: 700, userSelect: 'none', WebkitUserSelect: 'none' }}>No student drawing — write feedback freehand</div>
         )}
         <canvas
           ref={canvasRef}
@@ -160,10 +169,10 @@ const AnnotationModal = ({ item, saving, onCancel, onSave }) => {
           onPointerUp={handleUp}
           onPointerLeave={handleUp}
           onPointerCancel={handleUp}
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', cursor: 'crosshair', touchAction: 'none' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', cursor: 'crosshair', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none' }}
         />
       </div>
-      <p style={{ color: '#64748b', fontSize: '0.8rem', marginTop: '10px' }}>Draw on the student's work — click Save &amp; Send to attach it to this submission</p>
+      <p style={{ color: '#64748b', fontSize: '0.8rem', marginTop: '10px', userSelect: 'none', WebkitUserSelect: 'none' }}>Draw on the student's work — click Save &amp; Send to attach it to this submission</p>
     </div>
   );
 };
