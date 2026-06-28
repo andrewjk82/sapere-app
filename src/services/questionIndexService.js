@@ -63,10 +63,15 @@ export const readChapterIndex = async (chapterId) => {
  * Date.now() here would make the counts doc look stale and trigger a full
  * count rebuild on the next admin load.
  */
-const stampVersions = async (version) => {
+// bumpMembership=true when the active-question set changes (add/remove/move/activate/deactivate)
+// so students' practice_pool signatures rebuild and pick up the change.
+const stampVersions = async (version, bumpMembership = false) => {
   const v = Number(version) || Date.now();
+  const versionFields = bumpMembership
+    ? { version: v, membershipVersion: v, updatedAt: serverTimestamp() }
+    : { version: v, updatedAt: serverTimestamp() };
   await Promise.all([
-    setDoc(questionsVersionRef(), { version: v, updatedAt: serverTimestamp() }, { merge: true }),
+    setDoc(questionsVersionRef(), versionFields, { merge: true }),
     setDoc(metaRef(), { builtVersion: v, updatedAt: serverTimestamp() }, { merge: true }),
   ]);
 };
@@ -124,7 +129,7 @@ export const addQuestionToIndex = async (chapterId, questionId, version) => {
     ids: arrayUnion(String(questionId)),
     updatedAt: serverTimestamp(),
   }, { merge: true });
-  await stampVersions(version);
+  await stampVersions(version, true);
 };
 
 /** Incremental: a question was deleted or deactivated. */
@@ -134,7 +139,7 @@ export const removeQuestionFromIndex = async (chapterId, questionId, version) =>
     ids: arrayRemove(String(questionId)),
     updatedAt: serverTimestamp(),
   }, { merge: true });
-  await stampVersions(version);
+  await stampVersions(version, true);
 };
 
 /**
@@ -158,7 +163,7 @@ export const syncQuestionIndexOnSave = async ({ questionId, chapterId, prevChapt
   }
   if (ops.length) {
     await Promise.all(ops);
-    await stampVersions(version);
+    await stampVersions(version, true);
   }
 };
 
@@ -192,7 +197,7 @@ export const rebuildAllQuestionIndexes = async () => {
     });
     await batch.commit();
   }
-  await stampVersions();
+  await stampVersions(undefined, true);
   return entries.length;
 };
 
@@ -202,7 +207,7 @@ export const rebuildChapterIndex = async (chapterId) => {
   const snap = await getDocs(query(collection(db, 'questions'), where('chapterId', '==', chapterId)));
   const ids = snap.docs.filter((d) => d.data().isActive !== false).map((d) => d.id);
   await setDoc(indexRef(chapterId), { ids, count: ids.length, updatedAt: serverTimestamp() });
-  await stampVersions();
+  await stampVersions(undefined, true);
   return ids.length;
 };
 
