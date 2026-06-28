@@ -280,6 +280,7 @@ import { FORTST_2020_SIMILAR_QUESTIONS } from './seedFortSt2020SimilarQuestions.
 import { CTHS_2020_QUESTIONS } from './seedCherrybrookTech2020Questions.js';
 import { CTHS_2020_SIMILAR_QUESTIONS } from './seedCherrybrookTech2020SimilarQuestions.js';
 import { Y11A_CH2_QUESTIONS } from './seedYear11aCh2Questions.js';
+import { Y11A_CH2A_QUESTIONS } from './seedYear11aCh2AQuestions.js';
 import { Y11A_CH2C_QUESTIONS } from './seedYear11aCh2CQuestions.js';
 import { Y11A_CH2D_QUESTIONS } from './seedYear11aCh2DQuestions.js';
 import { Y11A_CH2E_QUESTIONS } from './seedYear11aCh2EQuestions.js';
@@ -647,6 +648,16 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11A_CH2C_QUESTIONS,
     label: 'Y11A Ch2 · 2C Further simplification of surds',
+  },
+  {
+    chapterId: 'y11a-2',
+    chapterTitle: 'Chapter 2: Numbers and surds',
+    topicId: 'y11a-2A',
+    topicCode: '2A',
+    topicTitle: 'Real numbers and intervals',
+    year: 'Year 11',
+    seed: Y11A_CH2A_QUESTIONS,
+    label: 'Y11A Ch2 · 2A Real numbers and intervals',
   },
   {
     chapterId: 'y11a-2',
