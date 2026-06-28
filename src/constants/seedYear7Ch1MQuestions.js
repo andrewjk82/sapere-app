@@ -5,14 +5,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate:\n\\(235 + 592 + 481\\)",
-    "a": "\\(1308\\)",
-    "opts": [
-      "\\(1308\\)",
-      "\\(1298\\)",
-      "\\(1318\\)",
-      "\\(1408\\)"
-    ],
-    "t": "Revision",
     "hint": "Add the numbers step by step or vertically.",
     "solutionSteps": [
       {
@@ -26,7 +18,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1308\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1298\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1318\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1408\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q1b",
@@ -34,14 +45,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate:\n\\(84 \\div 3\\)",
-    "a": "\\(28\\)",
-    "opts": [
-      "\\(28\\)",
-      "\\(26\\)",
-      "\\(24\\)",
-      "\\(32\\)"
-    ],
-    "t": "Revision",
     "hint": "Use the short division algorithm.",
     "solutionSteps": [
       {
@@ -60,7 +63,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(28\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q1c",
@@ -68,14 +90,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate:\n\\(172 - 145\\)",
-    "a": "\\(27\\)",
-    "opts": [
-      "\\(27\\)",
-      "\\(37\\)",
-      "\\(25\\)",
-      "\\(35\\)"
-    ],
-    "t": "Revision",
     "hint": "Perform subtraction using column subtraction if necessary.",
     "solutionSteps": [
       {
@@ -94,7 +108,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q1d",
@@ -102,14 +135,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate:\n\\(24 \\div (10 - 4) + 8\\)",
-    "a": "\\(12\\)",
-    "opts": [
-      "\\(12\\)",
-      "\\(14\\)",
-      "\\(10\\)",
-      "\\(16\\)"
-    ],
-    "t": "Revision",
     "hint": "Evaluate the expression inside the brackets first.",
     "solutionSteps": [
       {
@@ -128,7 +153,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q1e",
@@ -136,14 +180,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate:\n\\(7 \\times 432 + 5\\)",
-    "a": "\\(3029\\)",
-    "opts": [
-      "\\(3029\\)",
-      "\\(3024\\)",
-      "\\(3059\\)",
-      "\\(2999\\)"
-    ],
-    "t": "Revision",
     "hint": "Perform multiplication before addition.",
     "solutionSteps": [
       {
@@ -157,7 +193,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3029\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3024\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3059\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2999\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q1f",
@@ -165,14 +220,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate:\n\\(75 - 38 + 15 \\times 2\\)",
-    "a": "\\(67\\)",
-    "opts": [
-      "\\(67\\)",
-      "\\(104\\)",
-      "\\(74\\)",
-      "\\(57\\)"
-    ],
-    "t": "Revision",
     "hint": "Perform multiplication first, then evaluate the rest from left to right.",
     "solutionSteps": [
       {
@@ -191,7 +238,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(67\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(104\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(74\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(57\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q1g",
@@ -199,14 +265,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate:\n\\(415 - 846 \\div 3\\)",
-    "a": "\\(133\\)",
-    "opts": [
-      "\\(133\\)",
-      "\\(143\\)",
-      "\\(123\\)",
-      "\\(282\\)"
-    ],
-    "t": "Revision",
     "hint": "Divide 846 by 3 first, then subtract from 415.",
     "solutionSteps": [
       {
@@ -220,7 +278,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(133\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(143\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(123\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(282\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q1h",
@@ -228,14 +305,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate:\n\\(345 \\times (4 + 6)\\)",
-    "a": "\\(3450\\)",
-    "opts": [
-      "\\(3450\\)",
-      "\\(345\\)",
-      "\\(1390\\)",
-      "\\(34500\\)"
-    ],
-    "t": "Revision",
     "hint": "Add inside brackets first.",
     "solutionSteps": [
       {
@@ -249,7 +318,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3450\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(345\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1390\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q1i",
@@ -257,14 +345,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate:\n\\((84 \\div 3) + (273 \\div 3)\\)",
-    "a": "\\(119\\)",
-    "opts": [
-      "\\(119\\)",
-      "\\(109\\)",
-      "\\(129\\)",
-      "\\(91\\)"
-    ],
-    "t": "Revision",
     "hint": "Evaluate both bracket divisions first, then add the quotients.",
     "solutionSteps": [
       {
@@ -283,7 +363,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(119\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(109\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(129\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(91\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q2",
@@ -291,14 +390,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The contents of a tin of sweets weigh 7200 grams. The sweets are divided into packets of 300 grams. How many packets are there?",
-    "a": "\\(24\\)",
-    "opts": [
-      "\\(24\\)",
-      "\\(22\\)",
-      "\\(20\\)",
-      "\\(25\\)"
-    ],
-    "t": "Revision",
     "hint": "Divide the total weight by the weight of each packet: 7200 / 300.",
     "solutionSteps": [
       {
@@ -317,7 +408,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q3",
@@ -325,14 +435,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "There are 5000 oranges to be divided into boxes so that each box holds 80 oranges. How many boxes are required?",
-    "a": "\\(63\\)",
-    "opts": [
-      "\\(63\\)",
-      "\\(62\\)",
-      "\\(60\\)",
-      "\\(64\\)"
-    ],
-    "t": "Revision",
     "hint": "Divide 5000 by 80. If there is a remainder, you will need an extra box for the leftover oranges.",
     "solutionSteps": [
       {
@@ -351,7 +453,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(63\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(62\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q4",
@@ -359,14 +480,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A club started the year with 145 members. During the year, 32 people left and 74 people joined. How many people belonged to the club at the end of the year?",
-    "a": "\\(187\\)",
-    "opts": [
-      "\\(187\\)",
-      "\\(197\\)",
-      "\\(177\\)",
-      "\\(201\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract the people who left and add the people who joined.",
     "solutionSteps": [
       {
@@ -380,7 +493,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(187\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(197\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(177\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q5",
@@ -388,14 +520,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "If a bus can carry 40 passengers, how many buses are needed to transport 580 school students to a soccer game?",
-    "a": "\\(15\\)",
-    "opts": [
-      "\\(15\\)",
-      "\\(14\\)",
-      "\\(16\\)",
-      "\\(13\\)"
-    ],
-    "t": "Revision",
     "hint": "Divide 580 by 40, and round up to the nearest whole number to ensure all students have a seat.",
     "solutionSteps": [
       {
@@ -414,7 +538,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q6",
@@ -422,14 +565,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A supermarket takes delivery of 62 cartons of soft drink cans. Each carton contains 36 cans. How many cans are delivered?",
-    "a": "\\(2232\\)",
-    "opts": [
-      "\\(2232\\)",
-      "\\(2200\\)",
-      "\\(2250\\)",
-      "\\(2192\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of cartons by the number of cans per carton.",
     "solutionSteps": [
       {
@@ -448,7 +583,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2232\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2250\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2192\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q7",
@@ -456,14 +610,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "On a school excursion, 15 buses each carry 45 students. How many students are transported?",
-    "a": "\\(675\\)",
-    "opts": [
-      "\\(675\\)",
-      "\\(650\\)",
-      "\\(695\\)",
-      "\\(705\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of buses by the number of students on each bus.",
     "solutionSteps": [
       {
@@ -477,7 +623,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(675\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(650\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(695\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(705\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q8",
@@ -485,14 +650,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A school day is 7 hours long. How many minutes are there in a school day?",
-    "a": "\\(420\\)",
-    "opts": [
-      "\\(420\\)",
-      "\\(400\\)",
-      "\\(450\\)",
-      "\\(480\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of hours by 60, since there are 60 minutes in 1 hour.",
     "solutionSteps": [
       {
@@ -506,7 +663,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(420\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(450\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(480\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q9",
@@ -514,14 +690,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the sum of ninety-four and sixty-two and then subtract seventy-five.",
-    "a": "\\(81\\)",
-    "opts": [
-      "\\(81\\)",
-      "\\(91\\)",
-      "\\(71\\)",
-      "\\(85\\)"
-    ],
-    "t": "Revision",
     "hint": "Translate the written numbers to digits: 94, 62, and 75. Then perform the operations.",
     "solutionSteps": [
       {
@@ -540,7 +708,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(91\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(85\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q10",
@@ -548,14 +735,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "The manager of the school canteen orders 1500 burgers for the week. On Monday 425 are sold and on Tuesday 318 are sold. How many burgers does the school have left for the rest of the week?",
-    "a": "\\(757\\)",
-    "opts": [
-      "\\(757\\)",
-      "\\(743\\)",
-      "\\(767\\)",
-      "\\(737\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract the burgers sold on Monday and Tuesday from the initial order of 1500.",
     "solutionSteps": [
       {
@@ -574,7 +753,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(757\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(743\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(767\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(737\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q11",
@@ -582,14 +780,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Place the numbers 2, 3, 4, 5 and 6 in the circles of the given figure so that no two adjacent circles (circles connected by a line) contain consecutive numbers (numbers with a difference of 1).\n\nIf A is the top circle, B is the middle-left, C is the middle-right, D is the bottom-left, and E is the bottom-right, find the value that must be placed in circle A.",
-    "a": "\\(4\\)",
-    "opts": [
-      "\\(4\\)",
-      "\\(3\\)",
-      "\\(5\\)",
-      "\\(2\\)"
-    ],
-    "t": "Revision",
     "hint": "B and C are connected to almost every circle. Think about which numbers cannot be placed in B or C.",
     "solutionSteps": [
       {
@@ -666,7 +856,26 @@ export const Y7_CH1M_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "options": [
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q12",
@@ -674,14 +883,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A palindromic number is a whole number that is unchanged when the order of its digits is reversed. The number 48784 is palindromic.\nFind the next 5 palindromic numbers after 48784.",
-    "a": "\\(48884, 48984, 49094, 49194, 49294\\)",
-    "opts": [
-      "\\(48884, 48984, 49094, 49194, 49294\\)",
-      "\\(48884, 48984, 49004, 49114, 49224\\)",
-      "\\(48884, 48984, 49994, 50005, 50105\\)",
-      "\\(48884, 48984, 49094, 49294, 49494\\)"
-    ],
-    "t": "Revision",
     "hint": "Palindromic numbers of 5 digits look like abcba. Find the next ones by incrementing the middle digits.",
     "solutionSteps": [
       {
@@ -710,7 +911,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(48884, 48984, 49094, 49194, 49294\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48884, 48984, 49004, 49114, 49224\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48884, 48984, 49994, 50005, 50105\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48884, 48984, 49094, 49294, 49494\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q13",
@@ -718,14 +938,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Complete the following magic square, in which each row, column and diagonal must add up to the same sum. What is the value that goes in the top-right corner?\n\n\\(\\begin{array}{|c|c|c|} \\hline 24 & & \\\\ \\hline & 20 & \\\\ \\hline 27 & & 16 \\\\ \\hline \\end{array}\\)",
-    "a": "\\(13\\)",
-    "opts": [
-      "\\(13\\)",
-      "\\(17\\)",
-      "\\(9\\)",
-      "\\(15\\)"
-    ],
-    "t": "Revision",
     "hint": "First find the magic sum by adding the numbers in the main diagonal (top-left, center, bottom-right).",
     "solutionSteps": [
       {
@@ -754,7 +966,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q14",
@@ -762,14 +993,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Place the numbers 2, 3, 4, 5, 6 and 7 in the circles of the given figure so that no two adjacent circles contain consecutive numbers (difference of 1).\n\nIf B (top-right) has the value 7, what is the value of E (bottom-left)?",
-    "a": "\\(2\\)",
-    "opts": [
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(4\\)",
-      "\\(5\\)"
-    ],
-    "t": "Revision",
     "hint": "B and E have the highest number of connections. They must be placed with numbers that have few consecutive neighbors, like 2 and 7.",
     "solutionSteps": [
       {
@@ -857,7 +1080,26 @@ export const Y7_CH1M_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "options": [
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q15",
@@ -865,14 +1107,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Which of the following expressions correctly uses exactly five 5s and basic operations to equal 55?",
-    "a": "\\(55 + 5 - 5 + 5 - 5\\)",
-    "opts": [
-      "\\(55 + 5 - 5 + 5 - 5\\)",
-      "\\(5 \\times 5 \\times 5 - 5 + 5\\)",
-      "\\(55 \\times 5 \\div 5 + 5\\)",
-      "\\(55 + 5 + 5 - 5 - 5\\)"
-    ],
-    "t": "Revision",
     "hint": "Think about how you can use three of the 5s to write 55, then use the remaining two 5s to cancel each other out.",
     "solutionSteps": [
       {
@@ -896,7 +1130,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(55 + 5 - 5 + 5 - 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5 \\times 5 \\times 5 - 5 + 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(55 \\times 5 \\div 5 + 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(55 + 5 + 5 - 5 - 5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-q16",
@@ -904,14 +1157,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Using two straight lines, divide a circular dial containing the numbers 2 to 13 (arranged sequentially like a clock face) into three parts so that the sums of the numbers in each part are equal. What is the sum of the numbers in each part?",
-    "a": "\\(30\\)",
-    "opts": [
-      "\\(30\\)",
-      "\\(28\\)",
-      "\\(32\\)",
-      "\\(24\\)"
-    ],
-    "t": "Revision",
     "hint": "First find the total sum of all numbers from 2 to 13, then divide by 3 to find the target sum for each part.",
     "solutionSteps": [
       {
@@ -930,7 +1175,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(28\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h1",
@@ -938,14 +1202,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing satellite communications records \\(222\\) units from Station Alpha and \\(53\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(1100\\)",
-    "opts": [
-      "\\(1100\\)",
-      "\\(1050\\)",
-      "\\(1180\\)",
-      "\\(1220\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 222 and 53 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -959,7 +1215,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1050\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1180\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1220\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h2",
@@ -967,14 +1242,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking marine conservation operates \\(5\\) parallel lines, each producing \\(244\\) units. An additional reserve line supplies \\(56\\) units. What is the total units supplied across all lines?",
-    "a": "\\(1276\\)",
-    "opts": [
-      "\\(1276\\)",
-      "\\(1246\\)",
-      "\\(1316\\)",
-      "\\(1261\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -988,7 +1255,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1276\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1246\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1316\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1261\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h3",
@@ -996,14 +1282,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying urban traffic telemetry extracts a sample of \\(219\\text{ units}\\). They remove \\(59\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 59 from 219, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -1017,7 +1295,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h4",
@@ -1025,14 +1322,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in high-speed railway signaling trigger at regular intervals. Marker A triggers every \\(10\\text{ minutes}\\) and Marker B triggers every \\(8\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(40\\text{ minutes}\\)",
-    "opts": [
-      "\\(40\\text{ minutes}\\)",
-      "\\(52\\text{ minutes}\\)",
-      "\\(34\\text{ minutes}\\)",
-      "\\(80\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 10 and 8.",
     "solutionSteps": [
       {
@@ -1046,7 +1335,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(40\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h5",
@@ -1054,14 +1362,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of biotechnology lab diagnostics, an initial reading of \\(289\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(65\\) units in each window. What is the final reading?",
-    "a": "\\(94\\)",
-    "opts": [
-      "\\(94\\)",
-      "\\(84\\)",
-      "\\(109\\)",
-      "\\(69\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 65 by 3, and then subtract the result from 289.",
     "solutionSteps": [
       {
@@ -1075,7 +1375,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(94\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(84\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(109\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(69\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h6",
@@ -1083,14 +1402,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing volcanic gas analysis records \\(290\\) units from Station Alpha and \\(68\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(1432\\)",
-    "opts": [
-      "\\(1432\\)",
-      "\\(1382\\)",
-      "\\(1512\\)",
-      "\\(1552\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 290 and 68 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -1104,7 +1415,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1432\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1382\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1512\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1552\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h7",
@@ -1112,14 +1442,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking wind farm aerodynamics operates \\(5\\) parallel lines, each producing \\(312\\) units. An additional reserve line supplies \\(71\\) units. What is the total units supplied across all lines?",
-    "a": "\\(1631\\)",
-    "opts": [
-      "\\(1631\\)",
-      "\\(1601\\)",
-      "\\(1671\\)",
-      "\\(1616\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -1133,7 +1455,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1631\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1601\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1671\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1616\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h8",
@@ -1141,14 +1482,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying agricultural crop rotation extracts a sample of \\(234\\text{ units}\\). They remove \\(74\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 74 from 234, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -1162,7 +1495,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h9",
@@ -1170,14 +1522,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in commercial cargo flights trigger at regular intervals. Marker A triggers every \\(9\\text{ minutes}\\) and Marker B triggers every \\(9\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(9\\text{ minutes}\\)",
-    "opts": [
-      "\\(9\\text{ minutes}\\)",
-      "\\(21\\text{ minutes}\\)",
-      "\\(3\\text{ minutes}\\)",
-      "\\(18\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 9 and 9.",
     "solutionSteps": [
       {
@@ -1191,7 +1535,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(9\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h10",
@@ -1199,14 +1562,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of crypto-mining pool hash rates, an initial reading of \\(357\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(80\\) units in each window. What is the final reading?",
-    "a": "\\(117\\)",
-    "opts": [
-      "\\(117\\)",
-      "\\(107\\)",
-      "\\(132\\)",
-      "\\(92\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 80 by 3, and then subtract the result from 357.",
     "solutionSteps": [
       {
@@ -1220,7 +1575,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(117\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(107\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(132\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(92\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h11",
@@ -1228,14 +1602,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing geothermal loop pressures records \\(379\\) units from Station Alpha and \\(83\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(1848\\)",
-    "opts": [
-      "\\(1848\\)",
-      "\\(1798\\)",
-      "\\(1928\\)",
-      "\\(1968\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 379 and 83 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -1249,7 +1615,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1848\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1798\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1928\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1968\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h12",
@@ -1257,14 +1642,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking baking product distribution operates \\(5\\) parallel lines, each producing \\(380\\) units. An additional reserve line supplies \\(86\\) units. What is the total units supplied across all lines?",
-    "a": "\\(1986\\)",
-    "opts": [
-      "\\(1986\\)",
-      "\\(1956\\)",
-      "\\(2026\\)",
-      "\\(1971\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -1278,7 +1655,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1986\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1956\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2026\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1971\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h13",
@@ -1286,14 +1682,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying deep sea explorer diving extracts a sample of \\(249\\text{ units}\\). They remove \\(89\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 89 from 249, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -1307,7 +1695,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h14",
@@ -1315,14 +1722,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in microchip core frequencies trigger at regular intervals. Marker A triggers every \\(8\\text{ minutes}\\) and Marker B triggers every \\(10\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(40\\text{ minutes}\\)",
-    "opts": [
-      "\\(40\\text{ minutes}\\)",
-      "\\(52\\text{ minutes}\\)",
-      "\\(34\\text{ minutes}\\)",
-      "\\(80\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 8 and 10.",
     "solutionSteps": [
       {
@@ -1336,7 +1735,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(40\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h15",
@@ -1344,14 +1762,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of water reservoir flows, an initial reading of \\(425\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(95\\) units in each window. What is the final reading?",
-    "a": "\\(140\\)",
-    "opts": [
-      "\\(140\\)",
-      "\\(130\\)",
-      "\\(155\\)",
-      "\\(115\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 95 by 3, and then subtract the result from 425.",
     "solutionSteps": [
       {
@@ -1365,7 +1775,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(140\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(130\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(155\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(115\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h16",
@@ -1373,14 +1802,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing textile weave threads records \\(447\\) units from Station Alpha and \\(98\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(2180\\)",
-    "opts": [
-      "\\(2180\\)",
-      "\\(2130\\)",
-      "\\(2260\\)",
-      "\\(2300\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 447 and 98 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -1394,7 +1815,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2180\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2130\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2260\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2300\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h17",
@@ -1402,14 +1842,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking astronomy light epochs operates \\(5\\) parallel lines, each producing \\(469\\) units. An additional reserve line supplies \\(101\\) units. What is the total units supplied across all lines?",
-    "a": "\\(2446\\)",
-    "opts": [
-      "\\(2446\\)",
-      "\\(2416\\)",
-      "\\(2486\\)",
-      "\\(2431\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -1423,7 +1855,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2446\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2416\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2486\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2431\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h18",
@@ -1431,14 +1882,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying factory assembly line times extracts a sample of \\(264\\text{ units}\\). They remove \\(104\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 104 from 264, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -1452,7 +1895,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h19",
@@ -1460,14 +1922,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in concert hall pricing tiers trigger at regular intervals. Marker A triggers every \\(7\\text{ minutes}\\) and Marker B triggers every \\(11\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(77\\text{ minutes}\\)",
-    "opts": [
-      "\\(77\\text{ minutes}\\)",
-      "\\(89\\text{ minutes}\\)",
-      "\\(71\\text{ minutes}\\)",
-      "\\(154\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 7 and 11.",
     "solutionSteps": [
       {
@@ -1481,7 +1935,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(77\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(89\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(154\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h20",
@@ -1489,14 +1962,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of construction beam measures, an initial reading of \\(514\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(110\\) units in each window. What is the final reading?",
-    "a": "\\(184\\)",
-    "opts": [
-      "\\(184\\)",
-      "\\(174\\)",
-      "\\(199\\)",
-      "\\(159\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 110 by 3, and then subtract the result from 514.",
     "solutionSteps": [
       {
@@ -1510,7 +1975,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(184\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(174\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(159\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h21",
@@ -1518,14 +2002,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing dairy processing pasteurizers records \\(515\\) units from Station Alpha and \\(113\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(2512\\)",
-    "opts": [
-      "\\(2512\\)",
-      "\\(2462\\)",
-      "\\(2592\\)",
-      "\\(2632\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 515 and 113 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -1539,7 +2015,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2512\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2462\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2592\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2632\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h22",
@@ -1547,14 +2042,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking forestry planting quadrants operates \\(5\\) parallel lines, each producing \\(537\\) units. An additional reserve line supplies \\(116\\) units. What is the total units supplied across all lines?",
-    "a": "\\(2801\\)",
-    "opts": [
-      "\\(2801\\)",
-      "\\(2771\\)",
-      "\\(2841\\)",
-      "\\(2786\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -1568,7 +2055,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2801\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2771\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2841\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2786\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h23",
@@ -1576,14 +2082,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying aquarium water exchanges extracts a sample of \\(279\\text{ units}\\). They remove \\(119\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 119 from 279, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -1597,7 +2095,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h24",
@@ -1605,14 +2122,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in logistics hub loading bays trigger at regular intervals. Marker A triggers every \\(6\\text{ minutes}\\) and Marker B triggers every \\(8\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(24\\text{ minutes}\\)",
-    "opts": [
-      "\\(24\\text{ minutes}\\)",
-      "\\(36\\text{ minutes}\\)",
-      "\\(18\\text{ minutes}\\)",
-      "\\(48\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 6 and 8.",
     "solutionSteps": [
       {
@@ -1626,7 +2135,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(24\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h25",
@@ -1634,14 +2162,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of drip irrigation channels, an initial reading of \\(582\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(125\\) units in each window. What is the final reading?",
-    "a": "\\(207\\)",
-    "opts": [
-      "\\(207\\)",
-      "\\(197\\)",
-      "\\(222\\)",
-      "\\(182\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 125 by 3, and then subtract the result from 582.",
     "solutionSteps": [
       {
@@ -1655,7 +2175,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(207\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(197\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(222\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(182\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h26",
@@ -1663,14 +2202,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing drone battery cells records \\(604\\) units from Station Alpha and \\(128\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(2928\\)",
-    "opts": [
-      "\\(2928\\)",
-      "\\(2878\\)",
-      "\\(3008\\)",
-      "\\(3048\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 604 and 128 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -1684,7 +2215,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2928\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2878\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3008\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3048\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h27",
@@ -1692,14 +2242,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking printing paper sheets operates \\(5\\) parallel lines, each producing \\(605\\) units. An additional reserve line supplies \\(131\\) units. What is the total units supplied across all lines?",
-    "a": "\\(3156\\)",
-    "opts": [
-      "\\(3156\\)",
-      "\\(3126\\)",
-      "\\(3196\\)",
-      "\\(3141\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -1713,7 +2255,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3156\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3126\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3196\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3141\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h28",
@@ -1721,14 +2282,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying sports stadium gates extracts a sample of \\(294\\text{ units}\\). They remove \\(134\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 134 from 294, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -1742,7 +2295,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h29",
@@ -1750,14 +2322,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in beekeeping honey yields trigger at regular intervals. Marker A triggers every \\(11\\text{ minutes}\\) and Marker B triggers every \\(9\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(99\\text{ minutes}\\)",
-    "opts": [
-      "\\(99\\text{ minutes}\\)",
-      "\\(111\\text{ minutes}\\)",
-      "\\(93\\text{ minutes}\\)",
-      "\\(198\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 11 and 9.",
     "solutionSteps": [
       {
@@ -1771,7 +2335,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(99\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(198\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h30",
@@ -1779,14 +2362,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of chocolate tempering steps, an initial reading of \\(650\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(140\\) units in each window. What is the final reading?",
-    "a": "\\(230\\)",
-    "opts": [
-      "\\(230\\)",
-      "\\(220\\)",
-      "\\(245\\)",
-      "\\(205\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 140 by 3, and then subtract the result from 650.",
     "solutionSteps": [
       {
@@ -1800,7 +2375,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(230\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(220\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(245\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(205\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h31",
@@ -1808,14 +2402,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing solar grid outputs records \\(672\\) units from Station Alpha and \\(143\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(3260\\)",
-    "opts": [
-      "\\(3260\\)",
-      "\\(3210\\)",
-      "\\(3340\\)",
-      "\\(3380\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 672 and 143 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -1829,7 +2415,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3260\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3210\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3340\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3380\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h32",
@@ -1837,14 +2442,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking greenhouse shade fans operates \\(5\\) parallel lines, each producing \\(694\\) units. An additional reserve line supplies \\(146\\) units. What is the total units supplied across all lines?",
-    "a": "\\(3616\\)",
-    "opts": [
-      "\\(3616\\)",
-      "\\(3586\\)",
-      "\\(3656\\)",
-      "\\(3601\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -1858,7 +2455,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3616\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3586\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3656\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3601\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h33",
@@ -1866,14 +2482,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying electric bus charging cycles extracts a sample of \\(309\\text{ units}\\). They remove \\(149\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 149 from 309, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -1887,7 +2495,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h34",
@@ -1895,14 +2522,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in river salinity sensors trigger at regular intervals. Marker A triggers every \\(10\\text{ minutes}\\) and Marker B triggers every \\(10\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(10\\text{ minutes}\\)",
-    "opts": [
-      "\\(10\\text{ minutes}\\)",
-      "\\(22\\text{ minutes}\\)",
-      "\\(4\\text{ minutes}\\)",
-      "\\(20\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 10 and 10.",
     "solutionSteps": [
       {
@@ -1916,7 +2535,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(10\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h35",
@@ -1924,14 +2562,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of ocean current drifters, an initial reading of \\(739\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(155\\) units in each window. What is the final reading?",
-    "a": "\\(274\\)",
-    "opts": [
-      "\\(274\\)",
-      "\\(264\\)",
-      "\\(289\\)",
-      "\\(249\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 155 by 3, and then subtract the result from 739.",
     "solutionSteps": [
       {
@@ -1945,7 +2575,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(274\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(264\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(289\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(249\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h36",
@@ -1953,14 +2602,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing library archivism indexes records \\(740\\) units from Station Alpha and \\(158\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(3592\\)",
-    "opts": [
-      "\\(3592\\)",
-      "\\(3542\\)",
-      "\\(3672\\)",
-      "\\(3712\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 740 and 158 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -1974,7 +2615,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3592\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3542\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3672\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3712\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h37",
@@ -1982,14 +2642,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking mining excavator salvage operates \\(5\\) parallel lines, each producing \\(762\\) units. An additional reserve line supplies \\(161\\) units. What is the total units supplied across all lines?",
-    "a": "\\(3971\\)",
-    "opts": [
-      "\\(3971\\)",
-      "\\(3941\\)",
-      "\\(4011\\)",
-      "\\(3956\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -2003,7 +2655,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3971\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3941\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4011\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3956\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h38",
@@ -2011,14 +2682,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying chemical formulation vats extracts a sample of \\(324\\text{ units}\\). They remove \\(164\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 164 from 324, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -2032,7 +2695,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h39",
@@ -2040,14 +2722,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in supercomputer clusters trigger at regular intervals. Marker A triggers every \\(9\\text{ minutes}\\) and Marker B triggers every \\(11\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(99\\text{ minutes}\\)",
-    "opts": [
-      "\\(99\\text{ minutes}\\)",
-      "\\(111\\text{ minutes}\\)",
-      "\\(93\\text{ minutes}\\)",
-      "\\(198\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 9 and 11.",
     "solutionSteps": [
       {
@@ -2061,7 +2735,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(99\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(198\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h40",
@@ -2069,14 +2762,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of hospital ventilator arrays, an initial reading of \\(807\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(170\\) units in each window. What is the final reading?",
-    "a": "\\(297\\)",
-    "opts": [
-      "\\(297\\)",
-      "\\(287\\)",
-      "\\(312\\)",
-      "\\(272\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 170 by 3, and then subtract the result from 807.",
     "solutionSteps": [
       {
@@ -2090,7 +2775,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(297\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(287\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(312\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(272\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h41",
@@ -2098,14 +2802,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing hydroelectric spillways records \\(829\\) units from Station Alpha and \\(173\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(4008\\)",
-    "opts": [
-      "\\(4008\\)",
-      "\\(3958\\)",
-      "\\(4088\\)",
-      "\\(4128\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 829 and 173 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -2119,7 +2815,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4008\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3958\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4088\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4128\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h42",
@@ -2127,14 +2842,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking meteorite mass division operates \\(5\\) parallel lines, each producing \\(830\\) units. An additional reserve line supplies \\(176\\) units. What is the total units supplied across all lines?",
-    "a": "\\(4326\\)",
-    "opts": [
-      "\\(4326\\)",
-      "\\(4296\\)",
-      "\\(4366\\)",
-      "\\(4311\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -2148,7 +2855,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4326\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4296\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4366\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4311\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h43",
@@ -2156,14 +2882,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying microbrewery bottling lines extracts a sample of \\(339\\text{ units}\\). They remove \\(179\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 179 from 339, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -2177,7 +2895,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h44",
@@ -2185,14 +2922,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in urban vertical farming trigger at regular intervals. Marker A triggers every \\(8\\text{ minutes}\\) and Marker B triggers every \\(8\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(8\\text{ minutes}\\)",
-    "opts": [
-      "\\(8\\text{ minutes}\\)",
-      "\\(20\\text{ minutes}\\)",
-      "\\(2\\text{ minutes}\\)",
-      "\\(16\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 8 and 8.",
     "solutionSteps": [
       {
@@ -2206,7 +2935,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(8\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h45",
@@ -2214,14 +2962,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of subsea cable relays, an initial reading of \\(875\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(185\\) units in each window. What is the final reading?",
-    "a": "\\(320\\)",
-    "opts": [
-      "\\(320\\)",
-      "\\(310\\)",
-      "\\(335\\)",
-      "\\(295\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 185 by 3, and then subtract the result from 875.",
     "solutionSteps": [
       {
@@ -2235,7 +2975,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(320\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(310\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(335\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(295\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h46",
@@ -2243,14 +3002,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing optical fiber channels records \\(897\\) units from Station Alpha and \\(188\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(4340\\)",
-    "opts": [
-      "\\(4340\\)",
-      "\\(4290\\)",
-      "\\(4420\\)",
-      "\\(4460\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 897 and 188 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -2264,7 +3015,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4340\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4290\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4420\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4460\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h47",
@@ -2272,14 +3042,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking telescope optical lenses operates \\(5\\) parallel lines, each producing \\(919\\) units. An additional reserve line supplies \\(191\\) units. What is the total units supplied across all lines?",
-    "a": "\\(4786\\)",
-    "opts": [
-      "\\(4786\\)",
-      "\\(4756\\)",
-      "\\(4826\\)",
-      "\\(4771\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -2293,7 +3055,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4786\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4756\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4826\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4771\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h48",
@@ -2301,14 +3082,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying seismic recording sensors extracts a sample of \\(354\\text{ units}\\). They remove \\(194\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 194 from 354, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -2322,7 +3095,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h49",
@@ -2330,14 +3122,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in mine shaft ventilation trigger at regular intervals. Marker A triggers every \\(7\\text{ minutes}\\) and Marker B triggers every \\(9\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(63\\text{ minutes}\\)",
-    "opts": [
-      "\\(63\\text{ minutes}\\)",
-      "\\(75\\text{ minutes}\\)",
-      "\\(57\\text{ minutes}\\)",
-      "\\(126\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 7 and 9.",
     "solutionSteps": [
       {
@@ -2351,7 +3135,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(63\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(57\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(126\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h50",
@@ -2359,14 +3162,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of air filtration cartridges, an initial reading of \\(964\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(200\\) units in each window. What is the final reading?",
-    "a": "\\(364\\)",
-    "opts": [
-      "\\(364\\)",
-      "\\(354\\)",
-      "\\(379\\)",
-      "\\(339\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 200 by 3, and then subtract the result from 964.",
     "solutionSteps": [
       {
@@ -2380,7 +3175,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(364\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(354\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(379\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(339\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h51",
@@ -2388,14 +3202,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing train track segments records \\(965\\) units from Station Alpha and \\(203\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(4672\\)",
-    "opts": [
-      "\\(4672\\)",
-      "\\(4622\\)",
-      "\\(4752\\)",
-      "\\(4792\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 965 and 203 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -2409,7 +3215,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4672\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4622\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4752\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4792\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h52",
@@ -2417,14 +3242,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking postal sorting bins operates \\(5\\) parallel lines, each producing \\(987\\) units. An additional reserve line supplies \\(206\\) units. What is the total units supplied across all lines?",
-    "a": "\\(5141\\)",
-    "opts": [
-      "\\(5141\\)",
-      "\\(5111\\)",
-      "\\(5181\\)",
-      "\\(5126\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -2438,7 +3255,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5141\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5111\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5181\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5126\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h53",
@@ -2446,14 +3282,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying museum display cases extracts a sample of \\(369\\text{ units}\\). They remove \\(209\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 209 from 369, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -2467,7 +3295,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h54",
@@ -2475,14 +3322,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in airport baggage belts trigger at regular intervals. Marker A triggers every \\(6\\text{ minutes}\\) and Marker B triggers every \\(10\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(30\\text{ minutes}\\)",
-    "opts": [
-      "\\(30\\text{ minutes}\\)",
-      "\\(42\\text{ minutes}\\)",
-      "\\(24\\text{ minutes}\\)",
-      "\\(60\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 6 and 10.",
     "solutionSteps": [
       {
@@ -2496,7 +3335,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(30\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h55",
@@ -2504,14 +3362,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of hotel laundry batches, an initial reading of \\(1032\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(215\\) units in each window. What is the final reading?",
-    "a": "\\(387\\)",
-    "opts": [
-      "\\(387\\)",
-      "\\(377\\)",
-      "\\(402\\)",
-      "\\(362\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 215 by 3, and then subtract the result from 1032.",
     "solutionSteps": [
       {
@@ -2525,7 +3375,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(387\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(377\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(402\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(362\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h56",
@@ -2533,14 +3402,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing highway toll lanes records \\(1054\\) units from Station Alpha and \\(218\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(5088\\)",
-    "opts": [
-      "\\(5088\\)",
-      "\\(5038\\)",
-      "\\(5168\\)",
-      "\\(5208\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 1054 and 218 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -2554,7 +3415,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5088\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5038\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5168\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5208\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h57",
@@ -2562,14 +3442,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking cereal packing boxes operates \\(5\\) parallel lines, each producing \\(1055\\) units. An additional reserve line supplies \\(221\\) units. What is the total units supplied across all lines?",
-    "a": "\\(5496\\)",
-    "opts": [
-      "\\(5496\\)",
-      "\\(5466\\)",
-      "\\(5536\\)",
-      "\\(5481\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -2583,7 +3455,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5496\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5466\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5536\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5481\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h58",
@@ -2591,14 +3482,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying milk production runs extracts a sample of \\(384\\text{ units}\\). They remove \\(224\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 224 from 384, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -2612,7 +3495,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h59",
@@ -2620,14 +3522,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in coffee bean batches trigger at regular intervals. Marker A triggers every \\(11\\text{ minutes}\\) and Marker B triggers every \\(11\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(11\\text{ minutes}\\)",
-    "opts": [
-      "\\(11\\text{ minutes}\\)",
-      "\\(23\\text{ minutes}\\)",
-      "\\(5\\text{ minutes}\\)",
-      "\\(22\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 11 and 11.",
     "solutionSteps": [
       {
@@ -2641,7 +3535,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(11\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(23\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h60",
@@ -2649,14 +3562,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of tea blending ratios, an initial reading of \\(1100\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(230\\) units in each window. What is the final reading?",
-    "a": "\\(410\\)",
-    "opts": [
-      "\\(410\\)",
-      "\\(400\\)",
-      "\\(425\\)",
-      "\\(385\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 230 by 3, and then subtract the result from 1100.",
     "solutionSteps": [
       {
@@ -2670,7 +3575,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(410\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(425\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(385\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h61",
@@ -2678,14 +3602,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing juice pasteurization steps records \\(1122\\) units from Station Alpha and \\(233\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(5420\\)",
-    "opts": [
-      "\\(5420\\)",
-      "\\(5370\\)",
-      "\\(5500\\)",
-      "\\(5540\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 1122 and 233 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -2699,7 +3615,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5420\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5370\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5540\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h62",
@@ -2707,14 +3642,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking ice rink cooling tubes operates \\(5\\) parallel lines, each producing \\(1144\\) units. An additional reserve line supplies \\(236\\) units. What is the total units supplied across all lines?",
-    "a": "\\(5956\\)",
-    "opts": [
-      "\\(5956\\)",
-      "\\(5926\\)",
-      "\\(5996\\)",
-      "\\(5941\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -2728,7 +3655,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5956\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5926\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5996\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5941\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h63",
@@ -2736,14 +3682,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying theater sound decibels extracts a sample of \\(399\\text{ units}\\). They remove \\(239\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 239 from 399, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -2757,7 +3695,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h64",
@@ -2765,14 +3722,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in bridge suspension cables trigger at regular intervals. Marker A triggers every \\(10\\text{ minutes}\\) and Marker B triggers every \\(8\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(40\\text{ minutes}\\)",
-    "opts": [
-      "\\(40\\text{ minutes}\\)",
-      "\\(52\\text{ minutes}\\)",
-      "\\(34\\text{ minutes}\\)",
-      "\\(80\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 10 and 8.",
     "solutionSteps": [
       {
@@ -2786,7 +3735,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(40\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h65",
@@ -2794,14 +3762,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of dam reservoir capacities, an initial reading of \\(1189\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(245\\) units in each window. What is the final reading?",
-    "a": "\\(454\\)",
-    "opts": [
-      "\\(454\\)",
-      "\\(444\\)",
-      "\\(469\\)",
-      "\\(429\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 245 by 3, and then subtract the result from 1189.",
     "solutionSteps": [
       {
@@ -2815,7 +3775,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(454\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(444\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(469\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(429\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h66",
@@ -2823,14 +3802,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing glacier melt trackers records \\(1190\\) units from Station Alpha and \\(248\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(5752\\)",
-    "opts": [
-      "\\(5752\\)",
-      "\\(5702\\)",
-      "\\(5832\\)",
-      "\\(5872\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 1190 and 248 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -2844,7 +3815,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5752\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5702\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5832\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5872\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h67",
@@ -2852,14 +3842,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking weather balloon altitudes operates \\(5\\) parallel lines, each producing \\(1212\\) units. An additional reserve line supplies \\(251\\) units. What is the total units supplied across all lines?",
-    "a": "\\(6311\\)",
-    "opts": [
-      "\\(6311\\)",
-      "\\(6281\\)",
-      "\\(6351\\)",
-      "\\(6296\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -2873,7 +3855,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6311\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6281\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6351\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6296\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h68",
@@ -2881,14 +3882,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying radar signal reflections extracts a sample of \\(414\\text{ units}\\). They remove \\(254\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 254 from 414, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -2902,7 +3895,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h69",
@@ -2910,14 +3922,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in laser cutter speeds trigger at regular intervals. Marker A triggers every \\(9\\text{ minutes}\\) and Marker B triggers every \\(9\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(9\\text{ minutes}\\)",
-    "opts": [
-      "\\(9\\text{ minutes}\\)",
-      "\\(21\\text{ minutes}\\)",
-      "\\(3\\text{ minutes}\\)",
-      "\\(18\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 9 and 9.",
     "solutionSteps": [
       {
@@ -2931,7 +3935,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(9\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h70",
@@ -2939,14 +3962,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of 3D printer layers, an initial reading of \\(1257\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(260\\) units in each window. What is the final reading?",
-    "a": "\\(477\\)",
-    "opts": [
-      "\\(477\\)",
-      "\\(467\\)",
-      "\\(492\\)",
-      "\\(452\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 260 by 3, and then subtract the result from 1257.",
     "solutionSteps": [
       {
@@ -2960,7 +3975,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(477\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(467\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(492\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(452\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h71",
@@ -2968,14 +4002,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing weaving loom spindles records \\(1279\\) units from Station Alpha and \\(263\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(6168\\)",
-    "opts": [
-      "\\(6168\\)",
-      "\\(6118\\)",
-      "\\(6248\\)",
-      "\\(6288\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 1279 and 263 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -2989,7 +4015,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6168\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6118\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6248\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6288\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h72",
@@ -2997,14 +4042,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking bottling plant nozzles operates \\(5\\) parallel lines, each producing \\(1280\\) units. An additional reserve line supplies \\(266\\) units. What is the total units supplied across all lines?",
-    "a": "\\(6666\\)",
-    "opts": [
-      "\\(6666\\)",
-      "\\(6636\\)",
-      "\\(6706\\)",
-      "\\(6651\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -3018,7 +4055,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6666\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6636\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6706\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6651\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h73",
@@ -3026,14 +4082,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying cannery seal pressures extracts a sample of \\(429\\text{ units}\\). They remove \\(269\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 269 from 429, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -3047,7 +4095,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h74",
@@ -3055,14 +4122,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in dryer drum rotations trigger at regular intervals. Marker A triggers every \\(8\\text{ minutes}\\) and Marker B triggers every \\(10\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(40\\text{ minutes}\\)",
-    "opts": [
-      "\\(40\\text{ minutes}\\)",
-      "\\(52\\text{ minutes}\\)",
-      "\\(34\\text{ minutes}\\)",
-      "\\(80\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 8 and 10.",
     "solutionSteps": [
       {
@@ -3076,7 +4135,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(40\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h75",
@@ -3084,14 +4162,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of tram passenger counts, an initial reading of \\(1325\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(275\\) units in each window. What is the final reading?",
-    "a": "\\(500\\)",
-    "opts": [
-      "\\(500\\)",
-      "\\(490\\)",
-      "\\(515\\)",
-      "\\(475\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 275 by 3, and then subtract the result from 1325.",
     "solutionSteps": [
       {
@@ -3105,7 +4175,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(490\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(515\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(475\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h76",
@@ -3113,14 +4202,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing ultrasound wave pulses records \\(1347\\) units from Station Alpha and \\(278\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(6500\\)",
-    "opts": [
-      "\\(6500\\)",
-      "\\(6450\\)",
-      "\\(6580\\)",
-      "\\(6620\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 1347 and 278 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -3134,7 +4215,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6450\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6580\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6620\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h77",
@@ -3142,14 +4242,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking cooler storage boxes operates \\(5\\) parallel lines, each producing \\(1369\\) units. An additional reserve line supplies \\(281\\) units. What is the total units supplied across all lines?",
-    "a": "\\(7126\\)",
-    "opts": [
-      "\\(7126\\)",
-      "\\(7096\\)",
-      "\\(7166\\)",
-      "\\(7111\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -3163,7 +4255,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7126\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7096\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7166\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7111\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h78",
@@ -3171,14 +4282,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying compressor tank volumes extracts a sample of \\(444\\text{ units}\\). They remove \\(284\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 284 from 444, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -3192,7 +4295,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h79",
@@ -3200,14 +4322,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in elevator hoist speeds trigger at regular intervals. Marker A triggers every \\(7\\text{ minutes}\\) and Marker B triggers every \\(11\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(77\\text{ minutes}\\)",
-    "opts": [
-      "\\(77\\text{ minutes}\\)",
-      "\\(89\\text{ minutes}\\)",
-      "\\(71\\text{ minutes}\\)",
-      "\\(154\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 7 and 11.",
     "solutionSteps": [
       {
@@ -3221,7 +4335,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(77\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(89\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(154\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h80",
@@ -3229,14 +4362,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of pool chemical levels, an initial reading of \\(1414\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(290\\) units in each window. What is the final reading?",
-    "a": "\\(544\\)",
-    "opts": [
-      "\\(544\\)",
-      "\\(534\\)",
-      "\\(559\\)",
-      "\\(519\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 290 by 3, and then subtract the result from 1414.",
     "solutionSteps": [
       {
@@ -3250,7 +4375,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(544\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(534\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(559\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(519\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h81",
@@ -3258,14 +4402,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing smokehouse heat zones records \\(1415\\) units from Station Alpha and \\(293\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(6832\\)",
-    "opts": [
-      "\\(6832\\)",
-      "\\(6782\\)",
-      "\\(6912\\)",
-      "\\(6952\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 1415 and 293 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -3279,7 +4415,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6832\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6782\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6912\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6952\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h82",
@@ -3287,14 +4442,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking trencher dig depths operates \\(5\\) parallel lines, each producing \\(1437\\) units. An additional reserve line supplies \\(296\\) units. What is the total units supplied across all lines?",
-    "a": "\\(7481\\)",
-    "opts": [
-      "\\(7481\\)",
-      "\\(7451\\)",
-      "\\(7521\\)",
-      "\\(7466\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -3308,7 +4455,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7481\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7451\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7521\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7466\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h83",
@@ -3316,14 +4482,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying labeler slot rolls extracts a sample of \\(459\\text{ units}\\). They remove \\(299\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 299 from 459, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -3337,7 +4495,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h84",
@@ -3345,14 +4522,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in extruder dye temperatures trigger at regular intervals. Marker A triggers every \\(6\\text{ minutes}\\) and Marker B triggers every \\(8\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(24\\text{ minutes}\\)",
-    "opts": [
-      "\\(24\\text{ minutes}\\)",
-      "\\(36\\text{ minutes}\\)",
-      "\\(18\\text{ minutes}\\)",
-      "\\(48\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 6 and 8.",
     "solutionSteps": [
       {
@@ -3366,7 +4535,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(24\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h85",
@@ -3374,14 +4562,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of garbage collection routes, an initial reading of \\(1482\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(305\\) units in each window. What is the final reading?",
-    "a": "\\(567\\)",
-    "opts": [
-      "\\(567\\)",
-      "\\(557\\)",
-      "\\(582\\)",
-      "\\(542\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 305 by 3, and then subtract the result from 1482.",
     "solutionSteps": [
       {
@@ -3395,7 +4575,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(567\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(557\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(582\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(542\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h86",
@@ -3403,14 +4602,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing dialysis pump speeds records \\(1504\\) units from Station Alpha and \\(308\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(7248\\)",
-    "opts": [
-      "\\(7248\\)",
-      "\\(7198\\)",
-      "\\(7328\\)",
-      "\\(7368\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 1504 and 308 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -3424,7 +4615,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7248\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7198\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7328\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7368\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h87",
@@ -3432,14 +4642,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking generator watt hours operates \\(5\\) parallel lines, each producing \\(1505\\) units. An additional reserve line supplies \\(311\\) units. What is the total units supplied across all lines?",
-    "a": "\\(7836\\)",
-    "opts": [
-      "\\(7836\\)",
-      "\\(7806\\)",
-      "\\(7876\\)",
-      "\\(7821\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -3453,7 +4655,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7836\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7806\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7876\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7821\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h88",
@@ -3461,14 +4682,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying aquarium fish counts extracts a sample of \\(474\\text{ units}\\). They remove \\(314\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 314 from 474, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -3482,7 +4695,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h89",
@@ -3490,14 +4722,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in beehive colony weights trigger at regular intervals. Marker A triggers every \\(11\\text{ minutes}\\) and Marker B triggers every \\(9\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(99\\text{ minutes}\\)",
-    "opts": [
-      "\\(99\\text{ minutes}\\)",
-      "\\(111\\text{ minutes}\\)",
-      "\\(93\\text{ minutes}\\)",
-      "\\(198\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 11 and 9.",
     "solutionSteps": [
       {
@@ -3511,7 +4735,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(99\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(198\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h90",
@@ -3519,14 +4762,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of seedling growth heights, an initial reading of \\(1550\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(320\\) units in each window. What is the final reading?",
-    "a": "\\(590\\)",
-    "opts": [
-      "\\(590\\)",
-      "\\(580\\)",
-      "\\(605\\)",
-      "\\(565\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 320 by 3, and then subtract the result from 1550.",
     "solutionSteps": [
       {
@@ -3540,7 +4775,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(590\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(580\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(605\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(565\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h91",
@@ -3548,14 +4802,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing vineyard grape yields records \\(1572\\) units from Station Alpha and \\(323\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(7580\\)",
-    "opts": [
-      "\\(7580\\)",
-      "\\(7530\\)",
-      "\\(7660\\)",
-      "\\(7700\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 1572 and 323 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -3569,7 +4815,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7580\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7530\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7660\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7700\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h92",
@@ -3577,14 +4842,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking orchard tree spacing operates \\(5\\) parallel lines, each producing \\(1594\\) units. An additional reserve line supplies \\(326\\) units. What is the total units supplied across all lines?",
-    "a": "\\(8296\\)",
-    "opts": [
-      "\\(8296\\)",
-      "\\(8266\\)",
-      "\\(8336\\)",
-      "\\(8281\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -3598,7 +4855,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(8296\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8266\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8336\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8281\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h93",
@@ -3606,14 +4882,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying poultry house heaters extracts a sample of \\(489\\text{ units}\\). They remove \\(329\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 329 from 489, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -3627,7 +4895,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h94",
@@ -3635,14 +4922,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in fish hatchery tanks trigger at regular intervals. Marker A triggers every \\(10\\text{ minutes}\\) and Marker B triggers every \\(10\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(10\\text{ minutes}\\)",
-    "opts": [
-      "\\(10\\text{ minutes}\\)",
-      "\\(22\\text{ minutes}\\)",
-      "\\(4\\text{ minutes}\\)",
-      "\\(20\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 10 and 10.",
     "solutionSteps": [
       {
@@ -3656,7 +4935,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(10\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h95",
@@ -3664,14 +4962,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of timber log volumes, an initial reading of \\(1639\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(335\\) units in each window. What is the final reading?",
-    "a": "\\(634\\)",
-    "opts": [
-      "\\(634\\)",
-      "\\(624\\)",
-      "\\(649\\)",
-      "\\(609\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 335 by 3, and then subtract the result from 1639.",
     "solutionSteps": [
       {
@@ -3685,7 +4975,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(634\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(624\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(649\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(609\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h96",
@@ -3693,14 +5002,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An operator managing quarry stone crushing records \\(1640\\) units from Station Alpha and \\(338\\) units from Station Beta. The combined units are then scaled up by a factor of \\(4\\) during processing. What is the total processed output?",
-    "a": "\\(7912\\)",
-    "opts": [
-      "\\(7912\\)",
-      "\\(7862\\)",
-      "\\(7992\\)",
-      "\\(8032\\)"
-    ],
-    "t": "Revision",
     "hint": "Add 1640 and 338 first, then multiply the sum by 4.",
     "solutionSteps": [
       {
@@ -3714,7 +5015,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7912\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7862\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7992\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8032\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h97",
@@ -3722,14 +5042,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A facility tracking cement mixer turns operates \\(5\\) parallel lines, each producing \\(1662\\) units. An additional reserve line supplies \\(341\\) units. What is the total units supplied across all lines?",
-    "a": "\\(8651\\)",
-    "opts": [
-      "\\(8651\\)",
-      "\\(8621\\)",
-      "\\(8691\\)",
-      "\\(8636\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply the number of lines by the units per line, then add the reserve units.",
     "solutionSteps": [
       {
@@ -3743,7 +5055,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(8651\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8621\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8691\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8636\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h98",
@@ -3751,14 +5082,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientist studying asphalt layer thicks extracts a sample of \\(504\\text{ units}\\). They remove \\(344\\text{ units}\\) for reference. The remaining sample is divided equally into \\(8\\text{ sub-samples}\\). What is the size of each sub-sample?",
-    "a": "\\(20\\text{ units}\\)",
-    "opts": [
-      "\\(20\\text{ units}\\)",
-      "\\(15\\text{ units}\\)",
-      "\\(30\\text{ units}\\)",
-      "\\(25\\text{ units}\\)"
-    ],
-    "t": "Revision",
     "hint": "Subtract 344 from 504, then divide the result by 8.",
     "solutionSteps": [
       {
@@ -3772,7 +5095,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\text{ units}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\text{ units}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h99",
@@ -3780,14 +5122,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Two indicator markers in stepper laser pulses trigger at regular intervals. Marker A triggers every \\(9\\text{ minutes}\\) and Marker B triggers every \\(11\\text{ minutes}\\). If they both trigger together at 12:00 PM, after how many minutes will they next trigger at the exact same time?",
-    "a": "\\(99\\text{ minutes}\\)",
-    "opts": [
-      "\\(99\\text{ minutes}\\)",
-      "\\(111\\text{ minutes}\\)",
-      "\\(93\\text{ minutes}\\)",
-      "\\(198\\text{ minutes}\\)"
-    ],
-    "t": "Revision",
     "hint": "Find the lowest common multiple (LCM) of 9 and 11.",
     "solutionSteps": [
       {
@@ -3801,7 +5135,26 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(99\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93\\text{ minutes}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(198\\text{ minutes}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1m-h100",
@@ -3809,14 +5162,6 @@ export const Y7_CH1M_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In a system of lighting ballast volts, an initial reading of \\(1707\\) is recorded. Over the next \\(3\\) observation windows, the value decreases by \\(350\\) units in each window. What is the final reading?",
-    "a": "\\(657\\)",
-    "opts": [
-      "\\(657\\)",
-      "\\(647\\)",
-      "\\(672\\)",
-      "\\(632\\)"
-    ],
-    "t": "Revision",
     "hint": "Multiply 350 by 3, and then subtract the result from 1707.",
     "solutionSteps": [
       {
@@ -3830,6 +5175,25 @@ export const Y7_CH1M_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(657\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(647\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(672\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(632\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   }
 ];

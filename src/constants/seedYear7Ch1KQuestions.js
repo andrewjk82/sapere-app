@@ -5,14 +5,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the long division algorithm to calculate:\n\\(864 \\div 16\\)",
-    "a": "\\(54\\)",
-    "opts": [
-      "\\(54\\)",
-      "\\(56\\)",
-      "\\(44\\)",
-      "\\(52\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 86 by 16 first, then bring down the 4.",
     "solutionSteps": [
       {
@@ -36,7 +28,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(54\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(56\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-q1b",
@@ -44,14 +55,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the long division algorithm to calculate:\n\\(975 \\div 13\\)",
-    "a": "\\(75\\)",
-    "opts": [
-      "\\(65\\)",
-      "\\(85\\)",
-      "\\(75\\)",
-      "\\(73\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Determine how many times 13 goes into 97.",
     "solutionSteps": [
       {
@@ -75,7 +78,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(85\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(73\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-q1c",
@@ -83,14 +105,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the long division algorithm to calculate:\n\\(1512 \\div 18\\)",
-    "a": "\\(84\\)",
-    "opts": [
-      "\\(84\\)",
-      "\\(86\\)",
-      "\\(74\\)",
-      "\\(82\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 151 by 18 first.",
     "solutionSteps": [
       {
@@ -114,7 +128,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(84\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(86\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(74\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(82\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-q1d",
@@ -122,14 +155,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the long division algorithm to calculate:\n\\(4158 \\div 22\\)",
-    "a": "\\(189\\)",
-    "opts": [
-      "\\(199\\)",
-      "\\(188\\)",
-      "\\(189\\)",
-      "\\(179\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 41 by 22 first.",
     "solutionSteps": [
       {
@@ -163,7 +188,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(188\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(189\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(179\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-q2a",
@@ -171,14 +215,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the long division algorithm to calculate. Provide your answer in the form \"quotient r remainder\" (e.g. 43 r 15):\n\\(3154 \\div 73\\)",
-    "a": "\\(43\\text{ r }15\\)",
-    "opts": [
-      "\\(43\\text{ r }25\\)",
-      "\\(42\\text{ r }15\\)",
-      "\\(44\\text{ r }15\\)",
-      "\\(43\\text{ r }15\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 315 by 73 first.",
     "solutionSteps": [
       {
@@ -207,7 +243,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(43\\text{ r }25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42\\text{ r }15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44\\text{ r }15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(43\\text{ r }15\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-q2b",
@@ -215,14 +270,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the long division algorithm to calculate. Provide your answer in the form \"quotient r remainder\" (e.g. 88 r 18):\n\\(4682 \\div 53\\)",
-    "a": "\\(88\\text{ r }18\\)",
-    "opts": [
-      "\\(88\\text{ r }8\\)",
-      "\\(88\\text{ r }18\\)",
-      "\\(87\\text{ r }18\\)",
-      "\\(89\\text{ r }18\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 468 by 53 first.",
     "solutionSteps": [
       {
@@ -251,7 +298,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(88\\text{ r }8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(88\\text{ r }18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(87\\text{ r }18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(89\\text{ r }18\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-q2c",
@@ -259,14 +325,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the long division algorithm to calculate. Provide your answer in the form \"quotient r remainder\" (e.g. 81 r 22):\n\\(3829 \\div 47\\)",
-    "a": "\\(81\\text{ r }22\\)",
-    "opts": [
-      "\\(81\\text{ r }22\\)",
-      "\\(80\\text{ r }22\\)",
-      "\\(81\\text{ r }12\\)",
-      "\\(82\\text{ r }22\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 382 by 47 first.",
     "solutionSteps": [
       {
@@ -295,7 +353,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(81\\text{ r }22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\text{ r }22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81\\text{ r }12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(82\\text{ r }22\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-q2d",
@@ -303,14 +380,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the long division algorithm to calculate. Provide your answer in the form \"quotient r remainder\" (e.g. 17 r 69):\n\\(1854 \\div 105\\)",
-    "a": "\\(17\\text{ r }69\\)",
-    "opts": [
-      "\\(17\\text{ r }59\\)",
-      "\\(17\\text{ r }69\\)",
-      "\\(16\\text{ r }69\\)",
-      "\\(18\\text{ r }69\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 185 by 105 first.",
     "solutionSteps": [
       {
@@ -339,7 +408,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(17\\text{ r }59\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17\\text{ r }69\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\text{ r }69\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\text{ r }69\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-q3",
@@ -347,14 +435,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "If 5460 dollars is divided equally among 14 people, how much will each person receive? (Do not include the dollar sign or the word dollars in your answer)",
-    "a": "\\(390\\)",
-    "opts": [
-      "\\(390\\)",
-      "\\(380\\)",
-      "\\(370\\)",
-      "\\(400\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 5460 by 14 using long division.",
     "solutionSteps": [
       {
@@ -388,7 +468,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(390\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(380\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(370\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-q4",
@@ -396,14 +495,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "If 13650 dollars is divided equally among 25 people, how much will each person receive? (Do not include the dollar sign or the word dollars in your answer)",
-    "a": "\\(546\\)",
-    "opts": [
-      "\\(546\\)",
-      "\\(556\\)",
-      "\\(536\\)",
-      "\\(540\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 13650 by 25.",
     "solutionSteps": [
       {
@@ -437,7 +528,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(546\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(556\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(536\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(540\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-q5",
@@ -445,14 +555,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A piece of string that is 1485 cm long is to be cut into 33 equal lengths. How long is each piece? (Do not include units in your answer)",
-    "a": "\\(45\\)",
-    "opts": [
-      "\\(43\\)",
-      "\\(35\\)",
-      "\\(45\\)",
-      "\\(47\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 1485 by 33.",
     "solutionSteps": [
       {
@@ -476,7 +578,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(43\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-q6",
@@ -484,14 +605,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "There are 6245 golf balls to be packed into boxes of 35. How many boxes will be filled and how many golf balls will be left over?\nProvide your answer in the form \"boxes, left over\" (e.g. 178, 15).",
-    "a": "\\(178\\text{ boxes, }15\\text{ left over}\\)",
-    "opts": [
-      "\\(178\\text{ boxes, }25\\text{ left over}\\)",
-      "\\(179\\text{ boxes, }15\\text{ left over}\\)",
-      "\\(178\\text{ boxes, }15\\text{ left over}\\)",
-      "\\(177\\text{ boxes, }15\\text{ left over}\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 6245 by 35.",
     "solutionSteps": [
       {
@@ -530,7 +643,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(178\\text{ boxes, }25\\text{ left over}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(179\\text{ boxes, }15\\text{ left over}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(178\\text{ boxes, }15\\text{ left over}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(177\\text{ boxes, }15\\text{ left over}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-q7",
@@ -538,14 +670,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "If 1872 school children are to be transported on 36 buses, how many children will there be on each bus, if each bus contains the same number of children?",
-    "a": "\\(52\\)",
-    "opts": [
-      "\\(54\\)",
-      "\\(42\\)",
-      "\\(50\\)",
-      "\\(52\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 1872 by 36.",
     "solutionSteps": [
       {
@@ -569,7 +693,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(54\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-q8",
@@ -577,14 +720,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "There are 24 buses available to transport 1128 fans to a football match. How many people will there be on each bus, if each bus contains the same number of people?",
-    "a": "\\(47\\)",
-    "opts": [
-      "\\(37\\)",
-      "\\(49\\)",
-      "\\(47\\)",
-      "\\(45\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 1128 by 24.",
     "solutionSteps": [
       {
@@ -608,7 +743,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-q9",
@@ -616,14 +770,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A computer program runs for 8425 seconds. Convert this to hours, minutes and seconds.\nProvide your answer in the form \"H hours, M minutes, S seconds\" (e.g. 2 hours, 20 minutes, 25 seconds).",
-    "a": "\\(2\\text{ hours, }20\\text{ minutes, }25\\text{ seconds}\\)",
-    "opts": [
-      "\\(2\\text{ hours, }20\\text{ minutes, }15\\text{ seconds}\\)",
-      "\\(3\\text{ hours, }20\\text{ minutes, }25\\text{ seconds}\\)",
-      "\\(2\\text{ hours, }20\\text{ minutes, }25\\text{ seconds}\\)",
-      "\\(2\\text{ hours, }10\\text{ minutes, }25\\text{ seconds}\\)"
-    ],
-    "t": "The long division algorithm",
     "hint": "Divide 8425 by 3600 to find hours, then divide the remainder by 60 to find minutes.",
     "solutionSteps": [
       {
@@ -642,7 +788,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2\\text{ hours, }20\\text{ minutes, }15\\text{ seconds}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\text{ hours, }20\\text{ minutes, }25\\text{ seconds}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\text{ hours, }20\\text{ minutes, }25\\text{ seconds}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\text{ hours, }10\\text{ minutes, }25\\text{ seconds}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h1",
@@ -650,13 +815,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An aerospace fuel refinery processes 7488 liters of heavy biofuel to fill standard aerospace containers of 24 liters. How many containers are filled?",
-    "a": "\\(312\\)",
-    "opts": [
-      "\\(313\\)",
-      "\\(311\\)",
-      "\\(312\\)",
-      "\\(314\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 7488 by 24.",
@@ -679,8 +837,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(313\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(311\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(312\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(314\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h2",
@@ -688,13 +864,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A high-pressure geothermal plant monitors brine cycles. If 9856 liters of hot geothermal brine passes through pipes at a steady 32 liters per cycle, how many cycles are completed?",
-    "a": "\\(308\\)",
-    "opts": [
-      "\\(306\\)",
-      "\\(311\\)",
-      "\\(309\\)",
-      "\\(308\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9856 by 32.",
@@ -717,8 +886,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(306\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(311\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(309\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(308\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h3",
@@ -726,13 +913,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A cryptocurrency mining node pools 9345 transaction blocks to distribute them equally among 15 cluster directories. How many blocks are placed in each cluster directory?",
-    "a": "\\(623\\)",
-    "opts": [
-      "\\(627\\)",
-      "\\(620\\)",
-      "\\(624\\)",
-      "\\(623\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9345 by 15.",
@@ -755,8 +935,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(627\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(620\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(624\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(623\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h4",
@@ -764,13 +962,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An industrial distillation tower yields 8775 grams of volatile ester, which must be stored in vials of 13 grams each. How many vials are filled?",
-    "a": "\\(675\\)",
-    "opts": [
-      "\\(680\\)",
-      "\\(674\\)",
-      "\\(676\\)",
-      "\\(675\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8775 by 13.",
@@ -793,8 +984,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(680\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(674\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(676\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(675\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h5",
@@ -802,13 +1011,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A research greenhouse grows 9135 botanical saplings. If these saplings are distributed equally across 45 climate zones, how many saplings are placed in each zone?",
-    "a": "\\(203\\)",
-    "opts": [
-      "\\(205\\)",
-      "\\(201\\)",
-      "\\(203\\)",
-      "\\(204\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9135 by 45.",
@@ -831,8 +1033,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(205\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(203\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(204\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h6",
@@ -840,13 +1060,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional electrical grid routes 6848 megawatts of surplus power to 16 distribution substation blocks. Find the megawatts allocated per substation.",
-    "a": "\\(428\\)",
-    "opts": [
-      "\\(425\\)",
-      "\\(431\\)",
-      "\\(429\\)",
-      "\\(428\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 6848 by 16.",
@@ -869,8 +1082,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(425\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(431\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(429\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(428\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h7",
@@ -878,13 +1109,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An oceanographic pressure sensor records 9870 data pings. If these are saved in telemetry files of 14 pings each, how many files are generated?",
-    "a": "\\(705\\)",
-    "opts": [
-      "\\(705\\)",
-      "\\(709\\)",
-      "\\(704\\)",
-      "\\(706\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9870 by 14.",
@@ -907,8 +1131,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(705\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(709\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(704\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(706\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h8",
@@ -916,13 +1158,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An automated distribution warehouse loads 8976 cargo crates onto a cargo vessel using 34 automated gantry crane systems. If each crane loads the same number of crates, how many crates does each crane handle?",
-    "a": "\\(264\\)",
-    "opts": [
-      "\\(269\\)",
-      "\\(262\\)",
-      "\\(265\\)",
-      "\\(264\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8976 by 34.",
@@ -945,8 +1180,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(269\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(262\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(265\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(264\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h9",
@@ -954,13 +1207,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An archaeological research project indexes 9522 ceramic shard fragments. They are sorted into archive boxes of 18 fragments each. How many boxes are filled?",
-    "a": "\\(529\\)",
-    "opts": [
-      "\\(526\\)",
-      "\\(531\\)",
-      "\\(529\\)",
-      "\\(530\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9522 by 18.",
@@ -983,8 +1229,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(526\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(531\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(529\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(530\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h10",
@@ -992,13 +1256,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An astrophysical spectrometer analyzes 9984 light-wave spectra packets. If they are processed by 26 parallel analyzer threads, how many spectra packets are processed per thread?",
-    "a": "\\(384\\)",
-    "opts": [
-      "\\(387\\)",
-      "\\(384\\)",
-      "\\(383\\)",
-      "\\(385\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9984 by 26.",
@@ -1021,8 +1278,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(387\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(384\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(383\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(385\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h11",
@@ -1030,13 +1305,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An aquaculture salmon farm prepares 8568 kg of high-protein feed pellets. The feed is distributed equally across 17 circular pens. How many kilograms of feed does each pen receive?",
-    "a": "\\(504\\)",
-    "opts": [
-      "\\(502\\)",
-      "\\(508\\)",
-      "\\(504\\)",
-      "\\(505\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8568 by 17.",
@@ -1059,8 +1327,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(502\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(508\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(504\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(505\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h12",
@@ -1068,13 +1354,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A wind turbine array collects 9912 gigawatt-hours of rotational telemetry points. If they are segmented into 28 analysis blocks, how many telemetry points are in each block?",
-    "a": "\\(354\\)",
-    "opts": [
-      "\\(354\\)",
-      "\\(359\\)",
-      "\\(351\\)",
-      "\\(355\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9912 by 28.",
@@ -1097,8 +1376,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(354\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(359\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(351\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(355\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h13",
@@ -1106,13 +1403,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A robotic fulfillment center maps 9180 warehouse aisles to be swept by 15 cleaning units. How many aisles does each unit sweep?",
-    "a": "\\(612\\)",
-    "opts": [
-      "\\(613\\)",
-      "\\(614\\)",
-      "\\(611\\)",
-      "\\(612\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9180 by 15.",
@@ -1135,8 +1425,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(613\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(614\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(611\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(612\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h14",
@@ -1144,13 +1452,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A nanotech wafer etching lab manufactures 8910 silicon microprocessors using 18 identical lithography lines. How many microprocessors does each line etch?",
-    "a": "\\(495\\)",
-    "opts": [
-      "\\(498\\)",
-      "\\(496\\)",
-      "\\(493\\)",
-      "\\(495\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8910 by 18.",
@@ -1173,8 +1474,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(498\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(496\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(493\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(495\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h15",
@@ -1182,13 +1501,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A meteorology center measures 9464 mm of cumulative seasonal rainfall across 26 sensor grids. Find the average rainfall recorded per grid.",
-    "a": "\\(364\\)",
-    "opts": [
-      "\\(361\\)",
-      "\\(364\\)",
-      "\\(368\\)",
-      "\\(365\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9464 by 26.",
@@ -1211,8 +1523,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(361\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(364\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(368\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(365\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h16",
@@ -1220,13 +1550,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A global gaming server monitors latency. It records 9720 network heartbeat packets distributed across 24 regional server lanes. How many heartbeats are on each lane?",
-    "a": "\\(405\\)",
-    "opts": [
-      "\\(406\\)",
-      "\\(405\\)",
-      "\\(404\\)",
-      "\\(410\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9720 by 24.",
@@ -1249,8 +1572,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(406\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(405\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(404\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(410\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h17",
@@ -1258,13 +1599,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A specialty coffee roastery imports 9960 kg of organic green coffee beans. If they are stored in sacks of 15 kg each, how many sacks are filled?",
-    "a": "\\(664\\)",
-    "opts": [
-      "\\(666\\)",
-      "\\(665\\)",
-      "\\(662\\)",
-      "\\(664\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9960 by 15.",
@@ -1287,8 +1621,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(666\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(665\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(662\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(664\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h18",
@@ -1296,13 +1648,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional railway schedules 9282 route blocks to be overseen by 13 traffic control computers. How many route blocks are managed by each computer?",
-    "a": "\\(714\\)",
-    "opts": [
-      "\\(714\\)",
-      "\\(715\\)",
-      "\\(717\\)",
-      "\\(711\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9282 by 13.",
@@ -1325,8 +1670,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(714\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(715\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(717\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(711\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h19",
@@ -1334,13 +1697,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A municipal water filtration array filters 9984 kiloliters of waste water using 32 identical bioreactor channels. How many kiloliters are processed per channel?",
-    "a": "\\(312\\)",
-    "opts": [
-      "\\(316\\)",
-      "\\(313\\)",
-      "\\(311\\)",
-      "\\(312\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9984 by 32.",
@@ -1363,8 +1719,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(316\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(313\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(311\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(312\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h20",
@@ -1372,13 +1746,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental research flight records 9312 high-altitude air samples. If they are stored in 16 test racks, how many samples are in each rack?",
-    "a": "\\(582\\)",
-    "opts": [
-      "\\(582\\)",
-      "\\(587\\)",
-      "\\(583\\)",
-      "\\(580\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9312 by 16.",
@@ -1401,8 +1768,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(582\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(587\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(583\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(580\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h21",
@@ -1410,13 +1795,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A semiconductor factory packs 9856 microchips into trays. If each tray holds 16 microchips, how many trays are filled?",
-    "a": "\\(616\\)",
-    "opts": [
-      "\\(613\\)",
-      "\\(618\\)",
-      "\\(616\\)",
-      "\\(617\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9856 by 16.",
@@ -1439,8 +1817,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(613\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(618\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(616\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(617\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h22",
@@ -1448,13 +1844,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep-space radio telescope logs 8910 spectral frequency pulses over 22 observation periods. What is the average number of pulses logged per period?",
-    "a": "\\(405\\)",
-    "opts": [
-      "\\(405\\)",
-      "\\(408\\)",
-      "\\(406\\)",
-      "\\(404\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8910 by 22.",
@@ -1477,8 +1866,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(405\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(408\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(406\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(404\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h23",
@@ -1486,13 +1893,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A robotic fruit sorting plant processes 9216 organic apples. The apples are packed into crates of 36 apples each. How many crates are filled?",
-    "a": "\\(256\\)",
-    "opts": [
-      "\\(260\\)",
-      "\\(257\\)",
-      "\\(256\\)",
-      "\\(254\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9216 by 36.",
@@ -1515,8 +1915,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(260\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(257\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(256\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(254\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h24",
@@ -1524,13 +1942,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A quantum computing laboratory performs 9792 experimental logic gate operations across 32 superconducting qubits. How many operations are run per qubit?",
-    "a": "\\(306\\)",
-    "opts": [
-      "\\(311\\)",
-      "\\(306\\)",
-      "\\(303\\)",
-      "\\(307\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9792 by 32.",
@@ -1553,8 +1964,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(311\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(306\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(303\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(307\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h25",
@@ -1562,13 +1991,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A commercial greenhouse ships 9576 potted orchids. If the delivery trucks can carry 24 crates of orchids each, how many orchids are packed per crate?",
-    "a": "\\(399\\)",
-    "opts": [
-      "\\(401\\)",
-      "\\(399\\)",
-      "\\(400\\)",
-      "\\(398\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9576 by 24.",
@@ -1591,8 +2013,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(401\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(399\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h26",
@@ -1600,13 +2040,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A wind tunnel facility tests 9152 airfoil sensors across 16 different aerodynamic models. How many sensors are tested on each model?",
-    "a": "\\(572\\)",
-    "opts": [
-      "\\(573\\)",
-      "\\(575\\)",
-      "\\(570\\)",
-      "\\(572\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9152 by 16.",
@@ -1629,8 +2062,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(573\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(575\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(570\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(572\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h27",
@@ -1638,13 +2089,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A chemical synthesizer processes 8448 ml of pharmaceutical compound to fill ampoules of 12 ml. How many ampoules are completed?",
-    "a": "\\(704\\)",
-    "opts": [
-      "\\(701\\)",
-      "\\(705\\)",
-      "\\(708\\)",
-      "\\(704\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8448 by 12.",
@@ -1667,8 +2111,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(701\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(705\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(708\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(704\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h28",
@@ -1676,13 +2138,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An online education platform hosts 9828 learning videos. If these videos are distributed across 27 course modules, how many videos are in each module?",
-    "a": "\\(364\\)",
-    "opts": [
-      "\\(365\\)",
-      "\\(369\\)",
-      "\\(364\\)",
-      "\\(363\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9828 by 27.",
@@ -1705,8 +2160,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(365\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(369\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(364\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(363\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h29",
@@ -1714,13 +2187,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A commercial solar farm installs 9672 photovoltaic panels arranged in rows of 26. How many rows of solar panels are installed?",
-    "a": "\\(372\\)",
-    "opts": [
-      "\\(373\\)",
-      "\\(372\\)",
-      "\\(370\\)",
-      "\\(374\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9672 by 26.",
@@ -1743,8 +2209,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(373\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(372\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(370\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(374\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h30",
@@ -1752,13 +2236,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A marine research vessel collects 9435 deep-sea sediment core samples. The samples are archived in 15 temperature-controlled lockers. How many samples are in each locker?",
-    "a": "\\(629\\)",
-    "opts": [
-      "\\(632\\)",
-      "\\(626\\)",
-      "\\(629\\)",
-      "\\(630\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9435 by 15.",
@@ -1781,8 +2258,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(632\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(626\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(629\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(630\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h31",
@@ -1790,13 +2285,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A supercomputing cluster processes 9828 terabytes of particle physics data in 18 computation cycles. How many terabytes are processed per cycle?",
-    "a": "\\(546\\)",
-    "opts": [
-      "\\(545\\)",
-      "\\(546\\)",
-      "\\(550\\)",
-      "\\(547\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9828 by 18.",
@@ -1819,8 +2307,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(545\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(546\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(550\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(547\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h32",
@@ -1828,13 +2334,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pharmaceutical lab packages 8925 antibiotic capsules into bottles of 25. How many bottles are completely filled?",
-    "a": "\\(357\\)",
-    "opts": [
-      "\\(357\\)",
-      "\\(362\\)",
-      "\\(355\\)",
-      "\\(358\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8925 by 25.",
@@ -1857,8 +2356,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(357\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(362\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(355\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(358\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h33",
@@ -1866,13 +2383,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A botanical research institute catalogs 9576 leaf specimens from 18 species. What is the average number of leaves cataloged per species?",
-    "a": "\\(532\\)",
-    "opts": [
-      "\\(529\\)",
-      "\\(532\\)",
-      "\\(534\\)",
-      "\\(533\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9576 by 18.",
@@ -1895,8 +2405,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(529\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(532\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(534\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(533\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h34",
@@ -1904,13 +2432,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A secure datacenter backs up 9408 storage disks onto 28 high-density storage racks. How many disks are stored per rack?",
-    "a": "\\(336\\)",
-    "opts": [
-      "\\(339\\)",
-      "\\(335\\)",
-      "\\(336\\)",
-      "\\(337\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9408 by 28.",
@@ -1933,8 +2454,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(339\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(335\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(336\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(337\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h35",
@@ -1942,13 +2481,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A smart city grid installs 9248 streetlamp LED controllers across 34 zoning blocks. How many controllers are in each zoning block?",
-    "a": "\\(272\\)",
-    "opts": [
-      "\\(272\\)",
-      "\\(270\\)",
-      "\\(276\\)",
-      "\\(273\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9248 by 34.",
@@ -1971,8 +2503,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(272\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(270\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(276\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(273\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h36",
@@ -1980,13 +2530,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A manufacturing plant builds 8736 precision steel rods. They are bundled in crates of 14 rods each. How many crates are filled?",
-    "a": "\\(624\\)",
-    "opts": [
-      "\\(629\\)",
-      "\\(625\\)",
-      "\\(624\\)",
-      "\\(621\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8736 by 14.",
@@ -2009,8 +2552,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(629\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(625\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(624\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(621\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h37",
@@ -2018,13 +2579,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A maritime cargo company transports 9856 shipping containers across 44 trips. How many containers are shipped per trip?",
-    "a": "\\(224\\)",
-    "opts": [
-      "\\(224\\)",
-      "\\(225\\)",
-      "\\(226\\)",
-      "\\(223\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9856 by 44.",
@@ -2047,8 +2601,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(224\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(225\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(226\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(223\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h38",
@@ -2056,13 +2628,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A forestry project logs 9522 tree growth rings across 18 ancient core samples. Find the average growth rings analyzed per sample.",
-    "a": "\\(529\\)",
-    "opts": [
-      "\\(530\\)",
-      "\\(529\\)",
-      "\\(532\\)",
-      "\\(527\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9522 by 18.",
@@ -2085,8 +2650,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(530\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(529\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(532\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(527\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h39",
@@ -2094,13 +2677,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A high-performance car manufacturer installs 9984 cylinder valves across 26 engine test batches. How many valves are tested in each engine batch?",
-    "a": "\\(384\\)",
-    "opts": [
-      "\\(388\\)",
-      "\\(381\\)",
-      "\\(384\\)",
-      "\\(385\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9984 by 26.",
@@ -2123,8 +2699,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(388\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(381\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(384\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(385\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h40",
@@ -2132,13 +2726,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An organic vineyard harvests 9860 kg of premium grapes. They are distributed into crates of 34 kg each. How many crates are filled?",
-    "a": "\\(290\\)",
-    "opts": [
-      "\\(291\\)",
-      "\\(289\\)",
-      "\\(290\\)",
-      "\\(295\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9860 by 34.",
@@ -2161,8 +2748,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(291\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(289\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(290\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(295\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h41",
@@ -2170,13 +2775,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An industrial bakery mixes 7895 grams of spice compound to be divided into storage tins of 24 grams each. How many tins are fully filled, and how many grams of spice remain?",
-    "a": "\\(328\\text{ r }23\\)",
-    "opts": [
-      "\\(329\\text{ r }23\\)",
-      "\\(328\\text{ r }22\\)",
-      "\\(327\\text{ r }0\\)",
-      "\\(328\\text{ r }23\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 7895 by 24.",
@@ -2199,8 +2797,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(329\\text{ r }23\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(328\\text{ r }22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(327\\text{ r }0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(328\\text{ r }23\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h42",
@@ -2208,13 +2824,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep-sea mining drill extracts 9875 kg of rare earth core samples. If the samples are packed in crates of 32 kg each, how many crates are filled, and what is the leftover mass in kilograms?",
-    "a": "\\(308\\text{ r }19\\)",
-    "opts": [
-      "\\(308\\text{ r }18\\)",
-      "\\(307\\text{ r }20\\)",
-      "\\(308\\text{ r }19\\)",
-      "\\(309\\text{ r }19\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9875 by 32.",
@@ -2237,8 +2846,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(308\\text{ r }18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(307\\text{ r }20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(308\\text{ r }19\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(309\\text{ r }19\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h43",
@@ -2246,13 +2873,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A cybersecurity team monitors 9368 network data packets. They are grouped into database rows of 15 packets each. How many database rows are filled, and how many packets are leftover?",
-    "a": "\\(624\\text{ r }8\\)",
-    "opts": [
-      "\\(624\\text{ r }8\\)",
-      "\\(625\\text{ r }8\\)",
-      "\\(624\\text{ r }7\\)",
-      "\\(623\\text{ r }9\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9368 by 15.",
@@ -2275,8 +2895,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(624\\text{ r }8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(625\\text{ r }8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(624\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(623\\text{ r }9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h44",
@@ -2284,13 +2922,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A chemical crystallization process produces 8792 milliliters of acidic fluid. The fluid is poured into glass vials of 13 milliliters each. How many vials are fully filled, and how many milliliters remain?",
-    "a": "\\(676\\text{ r }4\\)",
-    "opts": [
-      "\\(677\\text{ r }4\\)",
-      "\\(675\\text{ r }5\\)",
-      "\\(676\\text{ r }3\\)",
-      "\\(676\\text{ r }4\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8792 by 13.",
@@ -2313,8 +2944,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(677\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(675\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(676\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(676\\text{ r }4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h45",
@@ -2322,13 +2971,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A commercial organic farm cultivates 9182 botanical seedlings. If they are distributed across 45 climate cells, how many seedlings are in each cell, and how many seedlings are left over?",
-    "a": "\\(204\\text{ r }2\\)",
-    "opts": [
-      "\\(204\\text{ r }2\\)",
-      "\\(205\\text{ r }2\\)",
-      "\\(203\\text{ r }3\\)",
-      "\\(204\\text{ r }1\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9182 by 45.",
@@ -2351,8 +2993,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(204\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(205\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(203\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(204\\text{ r }1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h46",
@@ -2360,13 +3020,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A high-capacity solar field allocates 6872 megawatt records across 16 database grids. How many records are allocated per grid, and how many records are left over?",
-    "a": "\\(429\\text{ r }8\\)",
-    "opts": [
-      "\\(429\\text{ r }8\\)",
-      "\\(430\\text{ r }8\\)",
-      "\\(429\\text{ r }7\\)",
-      "\\(428\\text{ r }9\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 6872 by 16.",
@@ -2389,8 +3042,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(429\\text{ r }8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(430\\text{ r }8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(429\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(428\\text{ r }9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h47",
@@ -2398,13 +3069,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An ocean floor acoustic array captures 9885 sonar pings. If they are organized into files of 14 pings each, how many files are completed, and how many pings are left over?",
-    "a": "\\(706\\text{ r }1\\)",
-    "opts": [
-      "\\(707\\text{ r }1\\)",
-      "\\(705\\text{ r }2\\)",
-      "\\(706\\text{ r }1\\)",
-      "\\(706\\text{ r }0\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9885 by 14.",
@@ -2427,8 +3091,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(707\\text{ r }1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(705\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(706\\text{ r }1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(706\\text{ r }0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h48",
@@ -2436,13 +3118,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An automated distribution warehouse tracks 8996 cargo pallets. If 34 automated gantry cranes move them, how many pallets does each crane move, and how many pallets are left over?",
-    "a": "\\(264\\text{ r }20\\)",
-    "opts": [
-      "\\(264\\text{ r }20\\)",
-      "\\(265\\text{ r }20\\)",
-      "\\(264\\text{ r }19\\)",
-      "\\(263\\text{ r }21\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8996 by 34.",
@@ -2465,8 +3140,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(264\\text{ r }20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(265\\text{ r }20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(264\\text{ r }19\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(263\\text{ r }21\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h49",
@@ -2474,13 +3167,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An archaeological expedition archives 9535 fossil teeth. They are stored in cases of 18 teeth each. How many cases are filled, and how many teeth are leftover?",
-    "a": "\\(529\\text{ r }13\\)",
-    "opts": [
-      "\\(529\\text{ r }12\\)",
-      "\\(528\\text{ r }14\\)",
-      "\\(529\\text{ r }13\\)",
-      "\\(530\\text{ r }13\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9535 by 18.",
@@ -2503,8 +3189,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(529\\text{ r }12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(528\\text{ r }14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(529\\text{ r }13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(530\\text{ r }13\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h50",
@@ -2512,13 +3216,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A stellar classification program scans 9995 stars. If they are divided among 26 analysis folders, how many stars are in each folder, and how many are left over?",
-    "a": "\\(384\\text{ r }11\\)",
-    "opts": [
-      "\\(384\\text{ r }11\\)",
-      "\\(385\\text{ r }11\\)",
-      "\\(384\\text{ r }10\\)",
-      "\\(383\\text{ r }12\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9995 by 26.",
@@ -2541,8 +3238,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(384\\text{ r }11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(385\\text{ r }11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(384\\text{ r }10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(383\\text{ r }12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h51",
@@ -2550,13 +3265,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An offshore kelp farm harvests 8590 kg of wet biomass. The biomass is packed in bags of 17 kg each. How many bags are filled, and what is the leftover mass in kilograms?",
-    "a": "\\(505\\text{ r }5\\)",
-    "opts": [
-      "\\(505\\text{ r }4\\)",
-      "\\(505\\text{ r }5\\)",
-      "\\(506\\text{ r }5\\)",
-      "\\(504\\text{ r }6\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8590 by 17.",
@@ -2579,8 +3287,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(505\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(505\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(506\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(504\\text{ r }6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h52",
@@ -2588,13 +3314,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A wind kinetic sensor records 9935 rotational records. If they are stored in logs of 28 records each, how many logs are completed, and how many records are leftover?",
-    "a": "\\(354\\text{ r }23\\)",
-    "opts": [
-      "\\(353\\text{ r }24\\)",
-      "\\(354\\text{ r }22\\)",
-      "\\(354\\text{ r }23\\)",
-      "\\(355\\text{ r }23\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9935 by 28.",
@@ -2617,8 +3336,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(353\\text{ r }24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(354\\text{ r }22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(354\\text{ r }23\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(355\\text{ r }23\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h53",
@@ -2626,13 +3363,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics hub schedules 9198 delivery routes to be shared by 15 regional fleets. How many routes does each fleet receive, and how many routes are left over?",
-    "a": "\\(613\\text{ r }3\\)",
-    "opts": [
-      "\\(612\\text{ r }4\\)",
-      "\\(614\\text{ r }3\\)",
-      "\\(613\\text{ r }2\\)",
-      "\\(613\\text{ r }3\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9198 by 15.",
@@ -2655,8 +3385,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(612\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(614\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(613\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(613\\text{ r }3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h54",
@@ -2664,13 +3412,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A microchip design house drafts 8935 precision layout shapes using 18 auto-routing modules. How many layouts does each module draw, and how many shapes are leftover?",
-    "a": "\\(496\\text{ r }7\\)",
-    "opts": [
-      "\\(496\\text{ r }7\\)",
-      "\\(497\\text{ r }7\\)",
-      "\\(496\\text{ r }6\\)",
-      "\\(495\\text{ r }8\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8935 by 18.",
@@ -2693,8 +3434,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(496\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(497\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(496\\text{ r }6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(495\\text{ r }8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h55",
@@ -2702,13 +3461,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A meteorological drone measures 9485 atmospheric pressure points across 26 sensor grids. How many pressure points are recorded per grid, and how many remain?",
-    "a": "\\(364\\text{ r }21\\)",
-    "opts": [
-      "\\(363\\text{ r }22\\)",
-      "\\(365\\text{ r }21\\)",
-      "\\(364\\text{ r }21\\)",
-      "\\(364\\text{ r }20\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9485 by 26.",
@@ -2731,8 +3483,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(363\\text{ r }22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(365\\text{ r }21\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(364\\text{ r }21\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(364\\text{ r }20\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h56",
@@ -2740,13 +3510,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A gaming server cluster handles 9745 online multiplayer actions on 24 local channel rings. How many actions are run per channel, and how many actions remain?",
-    "a": "\\(406\\text{ r }1\\)",
-    "opts": [
-      "\\(406\\text{ r }1\\)",
-      "\\(406\\text{ r }0\\)",
-      "\\(405\\text{ r }2\\)",
-      "\\(407\\text{ r }1\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9745 by 24.",
@@ -2769,8 +3532,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(406\\text{ r }1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(406\\text{ r }0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(405\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(407\\text{ r }1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h57",
@@ -2778,13 +3559,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A coffee roasting warehouse imports 9982 green coffee bags. They are loaded onto trucks that can carry 15 bags each. How many trucks are filled, and how many bags are leftover?",
-    "a": "\\(665\\text{ r }7\\)",
-    "opts": [
-      "\\(665\\text{ r }6\\)",
-      "\\(666\\text{ r }7\\)",
-      "\\(664\\text{ r }8\\)",
-      "\\(665\\text{ r }7\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9982 by 15.",
@@ -2807,8 +3581,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(665\\text{ r }6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(666\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(664\\text{ r }8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(665\\text{ r }7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h58",
@@ -2816,13 +3608,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional rail grid coordinates 9302 scheduling sheets using 13 computerized dispatch routes. How many sheets are managed per route, and how many sheets are leftover?",
-    "a": "\\(715\\text{ r }7\\)",
-    "opts": [
-      "\\(715\\text{ r }6\\)",
-      "\\(715\\text{ r }7\\)",
-      "\\(714\\text{ r }8\\)",
-      "\\(716\\text{ r }7\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9302 by 13.",
@@ -2845,8 +3630,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(715\\text{ r }6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(715\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(714\\text{ r }8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(716\\text{ r }7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h59",
@@ -2854,13 +3657,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A waste water system treats 9995 liters of biological residue using 32 bioreactor tubes. How many liters are processed per tube, and how many liters remain?",
-    "a": "\\(312\\text{ r }11\\)",
-    "opts": [
-      "\\(312\\text{ r }10\\)",
-      "\\(311\\text{ r }12\\)",
-      "\\(313\\text{ r }11\\)",
-      "\\(312\\text{ r }11\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9995 by 32.",
@@ -2883,8 +3679,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(312\\text{ r }10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(311\\text{ r }12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(313\\text{ r }11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(312\\text{ r }11\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h60",
@@ -2892,13 +3706,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental research balloon collects 9330 high-altitude particulate samples in 16 test tanks. How many samples are in each tank, and how many samples are leftover?",
-    "a": "\\(583\\text{ r }2\\)",
-    "opts": [
-      "\\(584\\text{ r }2\\)",
-      "\\(582\\text{ r }3\\)",
-      "\\(583\\text{ r }2\\)",
-      "\\(583\\text{ r }1\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9330 by 16.",
@@ -2921,8 +3728,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(584\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(582\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(583\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(583\\text{ r }1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h61",
@@ -2930,13 +3755,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A semiconductor cleanroom packs 9880 silicon microprocessors into trays. If each tray holds 16 microprocessors, how many trays are filled, and how many microprocessors are leftover?",
-    "a": "\\(617\\text{ r }8\\)",
-    "opts": [
-      "\\(618\\text{ r }8\\)",
-      "\\(617\\text{ r }7\\)",
-      "\\(616\\text{ r }9\\)",
-      "\\(617\\text{ r }8\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9880 by 16.",
@@ -2959,8 +3777,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(618\\text{ r }8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(617\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(616\\text{ r }9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(617\\text{ r }8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h62",
@@ -2968,13 +3804,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep-space radio receiver processes 8935 cosmic static pulses over 22 observation periods. How many pulses are processed per period, and how many pulses remain?",
-    "a": "\\(406\\text{ r }3\\)",
-    "opts": [
-      "\\(405\\text{ r }4\\)",
-      "\\(407\\text{ r }3\\)",
-      "\\(406\\text{ r }2\\)",
-      "\\(406\\text{ r }3\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8935 by 22.",
@@ -2997,8 +3826,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(405\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(407\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(406\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(406\\text{ r }3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h63",
@@ -3006,13 +3853,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A robotic fruit packaging plant processes 9245 organic pears. The pears are sorted into boxes of 36 pears each. How many boxes are filled, and how many pears are left over?",
-    "a": "\\(256\\text{ r }29\\)",
-    "opts": [
-      "\\(255\\text{ r }30\\)",
-      "\\(256\\text{ r }28\\)",
-      "\\(257\\text{ r }29\\)",
-      "\\(256\\text{ r }29\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9245 by 36.",
@@ -3035,8 +3875,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(255\\text{ r }30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(256\\text{ r }28\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(257\\text{ r }29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(256\\text{ r }29\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h64",
@@ -3044,13 +3902,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A physics research simulator logs 9815 atomic collision profiles across 32 processor nodes. How many collision profiles are logged per node, and how many profiles are leftover?",
-    "a": "\\(306\\text{ r }23\\)",
-    "opts": [
-      "\\(306\\text{ r }22\\)",
-      "\\(305\\text{ r }24\\)",
-      "\\(306\\text{ r }23\\)",
-      "\\(307\\text{ r }23\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9815 by 32.",
@@ -3073,8 +3924,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(306\\text{ r }22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(305\\text{ r }24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(306\\text{ r }23\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(307\\text{ r }23\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h65",
@@ -3082,13 +3951,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A botanist collects 9602 flower seeds. If they are packed in packets of 24 seeds each, how many packets are filled, and how many seeds are leftover?",
-    "a": "\\(400\\text{ r }2\\)",
-    "opts": [
-      "\\(400\\text{ r }2\\)",
-      "\\(399\\text{ r }3\\)",
-      "\\(401\\text{ r }2\\)",
-      "\\(400\\text{ r }1\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9602 by 24.",
@@ -3111,8 +3973,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(400\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(399\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(401\\text{ r }2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400\\text{ r }1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h66",
@@ -3120,13 +4000,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A wind turbine array reports 9175 aerodynamic velocity sensors across 16 different test models. How many sensors are tested per model, and how many sensors are leftover?",
-    "a": "\\(573\\text{ r }7\\)",
-    "opts": [
-      "\\(573\\text{ r }6\\)",
-      "\\(574\\text{ r }7\\)",
-      "\\(573\\text{ r }7\\)",
-      "\\(572\\text{ r }8\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9175 by 16.",
@@ -3149,8 +4022,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(573\\text{ r }6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(574\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(573\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(572\\text{ r }8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h67",
@@ -3158,13 +4049,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A chemical processing plant synthesizes 8465 liters of solvent to fill canisters of 12 liters each. How many canisters are completed, and how many liters remain?",
-    "a": "\\(705\\text{ r }5\\)",
-    "opts": [
-      "\\(704\\text{ r }6\\)",
-      "\\(706\\text{ r }5\\)",
-      "\\(705\\text{ r }4\\)",
-      "\\(705\\text{ r }5\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8465 by 12.",
@@ -3187,8 +4071,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(704\\text{ r }6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(706\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(705\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(705\\text{ r }5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h68",
@@ -3196,13 +4098,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An education network streams 9855 instructional videos across 27 course paths. How many videos are allocated per path, and how many videos are leftover?",
-    "a": "\\(365\\text{ r }0\\)",
-    "opts": [
-      "\\(365\\text{ r }13\\)",
-      "\\(364\\text{ r }1\\)",
-      "\\(366\\text{ r }0\\)",
-      "\\(365\\text{ r }0\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9855 by 27.",
@@ -3225,8 +4120,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(365\\text{ r }13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(364\\text{ r }1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(366\\text{ r }0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(365\\text{ r }0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h69",
@@ -3234,13 +4147,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar panel setup mounts 9695 solar modules in rows of 26. How many rows are completed, and how many modules are leftover?",
-    "a": "\\(372\\text{ r }23\\)",
-    "opts": [
-      "\\(372\\text{ r }23\\)",
-      "\\(372\\text{ r }22\\)",
-      "\\(373\\text{ r }23\\)",
-      "\\(371\\text{ r }24\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9695 by 26.",
@@ -3263,8 +4169,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(372\\text{ r }23\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(372\\text{ r }22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(373\\text{ r }23\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(371\\text{ r }24\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h70",
@@ -3272,13 +4196,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A marine exploration crew preserves 9450 deep-sea water vials in 15 storage boxes. How many vials are in each box, and how many vials are leftover?",
-    "a": "\\(630\\text{ r }0\\)",
-    "opts": [
-      "\\(630\\text{ r }7\\)",
-      "\\(630\\text{ r }0\\)",
-      "\\(629\\text{ r }1\\)",
-      "\\(631\\text{ r }0\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9450 by 15.",
@@ -3301,8 +4218,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(630\\text{ r }7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(630\\text{ r }0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(629\\text{ r }1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(631\\text{ r }0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h71",
@@ -3310,13 +4245,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A particle accelerator tracks 9845 subatomic decay events across 18 detection blocks. How many events are recorded per detection block, and how many events are leftover?",
-    "a": "\\(546\\text{ r }17\\)",
-    "opts": [
-      "\\(546\\text{ r }16\\)",
-      "\\(547\\text{ r }17\\)",
-      "\\(546\\text{ r }17\\)",
-      "\\(545\\text{ r }0\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9845 by 18.",
@@ -3339,8 +4267,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(546\\text{ r }16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(547\\text{ r }17\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(546\\text{ r }17\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(545\\text{ r }0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h72",
@@ -3348,13 +4294,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A high-security facility packages 8950 secure encryption keycards into cases of 25 keycards each. How many cases are filled, and how many keycards are leftover?",
-    "a": "\\(358\\text{ r }0\\)",
-    "opts": [
-      "\\(358\\text{ r }0\\)",
-      "\\(359\\text{ r }0\\)",
-      "\\(357\\text{ r }1\\)",
-      "\\(358\\text{ r }12\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8950 by 25.",
@@ -3377,8 +4316,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(358\\text{ r }0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(359\\text{ r }0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(357\\text{ r }1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(358\\text{ r }12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h73",
@@ -3386,13 +4343,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A botanical lab catalogs 9598 herbarium specimen files from 18 plant categories. How many files are in each category, and how many files are leftover?",
-    "a": "\\(533\\text{ r }4\\)",
-    "opts": [
-      "\\(533\\text{ r }3\\)",
-      "\\(532\\text{ r }5\\)",
-      "\\(533\\text{ r }4\\)",
-      "\\(534\\text{ r }4\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9598 by 18.",
@@ -3415,8 +4365,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(533\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(532\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(533\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(534\\text{ r }4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h74",
@@ -3424,13 +4392,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data backup tower houses 9435 archival tape modules on 28 storage racks. How many modules are on each rack, and how many modules are leftover?",
-    "a": "\\(336\\text{ r }27\\)",
-    "opts": [
-      "\\(335\\text{ r }0\\)",
-      "\\(336\\text{ r }26\\)",
-      "\\(337\\text{ r }27\\)",
-      "\\(336\\text{ r }27\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9435 by 28.",
@@ -3453,8 +4414,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(335\\text{ r }0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(336\\text{ r }26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(337\\text{ r }27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(336\\text{ r }27\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h75",
@@ -3462,13 +4441,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A city lighting project coordinates 9275 wireless streetlamp modems across 34 local zones. How many modems are in each zone, and how many modems are leftover?",
-    "a": "\\(272\\text{ r }27\\)",
-    "opts": [
-      "\\(272\\text{ r }27\\)",
-      "\\(273\\text{ r }27\\)",
-      "\\(272\\text{ r }26\\)",
-      "\\(271\\text{ r }28\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9275 by 34.",
@@ -3491,8 +4463,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(272\\text{ r }27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(273\\text{ r }27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(272\\text{ r }26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(271\\text{ r }28\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h76",
@@ -3500,13 +4490,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A metal rolling mill creates 8755 heavy steel shafts. They are loaded into flatbed trucks carrying 14 shafts each. How many trucks are filled, and how many shafts are leftover?",
-    "a": "\\(625\\text{ r }5\\)",
-    "opts": [
-      "\\(624\\text{ r }6\\)",
-      "\\(626\\text{ r }5\\)",
-      "\\(625\\text{ r }4\\)",
-      "\\(625\\text{ r }5\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 8755 by 14.",
@@ -3529,8 +4512,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(624\\text{ r }6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(626\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(625\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(625\\text{ r }5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h77",
@@ -3538,13 +4539,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A cargo carrier handles 9885 containers across 44 ocean routes. How many containers are routed per ocean route, and how many containers are leftover?",
-    "a": "\\(224\\text{ r }29\\)",
-    "opts": [
-      "\\(224\\text{ r }29\\)",
-      "\\(225\\text{ r }29\\)",
-      "\\(223\\text{ r }30\\)",
-      "\\(224\\text{ r }28\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9885 by 44.",
@@ -3567,8 +4561,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(224\\text{ r }29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(225\\text{ r }29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(223\\text{ r }30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(224\\text{ r }28\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h78",
@@ -3576,13 +4588,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A forest preservation unit counts 9545 tree growth rings across 18 core samples. How many rings are counted per sample on average, and how many rings remain?",
-    "a": "\\(530\\text{ r }5\\)",
-    "opts": [
-      "\\(530\\text{ r }5\\)",
-      "\\(531\\text{ r }5\\)",
-      "\\(530\\text{ r }4\\)",
-      "\\(529\\text{ r }6\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9545 by 18.",
@@ -3605,8 +4610,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(530\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(531\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(530\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(529\\text{ r }6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h79",
@@ -3614,13 +4637,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A vehicle test department measures 9998 engine valves across 26 vehicle models. How many valves are evaluated per model, and how many valves are leftover?",
-    "a": "\\(384\\text{ r }14\\)",
-    "opts": [
-      "\\(384\\text{ r }13\\)",
-      "\\(383\\text{ r }15\\)",
-      "\\(385\\text{ r }14\\)",
-      "\\(384\\text{ r }14\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9998 by 26.",
@@ -3643,8 +4659,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(384\\text{ r }13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(383\\text{ r }15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(385\\text{ r }14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(384\\text{ r }14\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h80",
@@ -3652,13 +4686,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A family-run vineyard harvests 9890 kg of pinot grapes to put in bins of 34 kg each. How many bins are filled, and how many kilograms are leftover?",
-    "a": "\\(290\\text{ r }30\\)",
-    "opts": [
-      "\\(291\\text{ r }30\\)",
-      "\\(289\\text{ r }31\\)",
-      "\\(290\\text{ r }30\\)",
-      "\\(290\\text{ r }29\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 9890 by 34.",
@@ -3681,8 +4708,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(291\\text{ r }30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(289\\text{ r }31\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(290\\text{ r }30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(290\\text{ r }29\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h81",
@@ -3690,13 +4735,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A telecommunications satellite group transmits 14850 telemetry frames through 110 orbital receiving channels. How many telemetry frames are processed per channel?",
-    "a": "\\(135\\)",
-    "opts": [
-      "\\(137\\)",
-      "\\(135\\)",
-      "\\(132\\)",
-      "\\(136\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 14850 by 110.",
@@ -3719,8 +4757,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(137\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(135\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(132\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(136\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h82",
@@ -3728,13 +4784,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A supercomputing task coordinator maps 16940 parallel threads to 140 processing nodes. How many threads run on each node?",
-    "a": "\\(121\\)",
-    "opts": [
-      "\\(124\\)",
-      "\\(122\\)",
-      "\\(120\\)",
-      "\\(121\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 16940 by 140.",
@@ -3757,8 +4806,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(124\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(122\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(121\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h83",
@@ -3766,13 +4833,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental simulation monitors 18560 forest grid sectors using 160 observation blocks. How many sectors are in each observation block?",
-    "a": "\\(116\\)",
-    "opts": [
-      "\\(117\\)",
-      "\\(120\\)",
-      "\\(114\\)",
-      "\\(116\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 18560 by 160.",
@@ -3795,8 +4855,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(117\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(114\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(116\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h84",
@@ -3804,13 +4882,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An advanced silicon wafer printer prints 21450 microelectronic circuits using 130 lithography lasers. How many circuits are printed per laser?",
-    "a": "\\(165\\)",
-    "opts": [
-      "\\(170\\)",
-      "\\(166\\)",
-      "\\(165\\)",
-      "\\(162\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 21450 by 130.",
@@ -3833,8 +4904,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(170\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(166\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(165\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(162\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h85",
@@ -3842,13 +4931,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientific data library compiles 24750 star coordinate pages onto 150 storage disks. How many pages are saved on each disk?",
-    "a": "\\(165\\)",
-    "opts": [
-      "\\(166\\)",
-      "\\(165\\)",
-      "\\(167\\)",
-      "\\(164\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 24750 by 150.",
@@ -3871,8 +4953,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(166\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(165\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(167\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(164\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h86",
@@ -3880,13 +4980,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional vaccine repository distributes 28800 medical vials to 120 regional clinics. How many vials does each clinic receive?",
-    "a": "\\(240\\)",
-    "opts": [
-      "\\(241\\)",
-      "\\(238\\)",
-      "\\(240\\)",
-      "\\(243\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 28800 by 120.",
@@ -3909,8 +5002,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(241\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(238\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(240\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(243\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h87",
@@ -3918,13 +5029,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics system routes 31850 courier packages through 130 city hubs. How many packages are processed per city hub?",
-    "a": "\\(245\\)",
-    "opts": [
-      "\\(249\\)",
-      "\\(246\\)",
-      "\\(245\\)",
-      "\\(242\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 31850 by 130.",
@@ -3947,8 +5051,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(249\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(246\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(245\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(242\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h88",
@@ -3956,13 +5078,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A geology core collection maps 35840 mineral samples across 140 deposit shelves. How many samples are on each shelf?",
-    "a": "\\(256\\)",
-    "opts": [
-      "\\(256\\)",
-      "\\(261\\)",
-      "\\(257\\)",
-      "\\(255\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 35840 by 140.",
@@ -3985,8 +5100,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(256\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(261\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(257\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(255\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h89",
@@ -3994,13 +5127,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A city transit network Schedules 38880 bus routes across 180 transit zones. How many bus routes are in each transit zone?",
-    "a": "\\(216\\)",
-    "opts": [
-      "\\(214\\)",
-      "\\(217\\)",
-      "\\(218\\)",
-      "\\(216\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 38880 by 180.",
@@ -4023,8 +5149,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(214\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(217\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(218\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(216\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h90",
@@ -4032,13 +5176,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A high-voltage power substation handles 43560 switchboard signals using 220 grid monitors. How many signals are processed per grid monitor?",
-    "a": "\\(198\\)",
-    "opts": [
-      "\\(198\\)",
-      "\\(199\\)",
-      "\\(195\\)",
-      "\\(201\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 43560 by 220.",
@@ -4061,8 +5198,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(198\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(195\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h91",
@@ -4070,13 +5225,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A global web application cluster handles 48750 user requests on 250 virtual load balancers. How many requests are sent to each load balancer?",
-    "a": "\\(195\\)",
-    "opts": [
-      "\\(199\\)",
-      "\\(195\\)",
-      "\\(194\\)",
-      "\\(196\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 48750 by 250.",
@@ -4099,8 +5247,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(195\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(194\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(196\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h92",
@@ -4108,13 +5274,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep-sea sonar system parses 52800 underwater frequency signals across 240 processing channels. How many signals are parsed per channel?",
-    "a": "\\(220\\)",
-    "opts": [
-      "\\(221\\)",
-      "\\(225\\)",
-      "\\(220\\)",
-      "\\(218\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 52800 by 240.",
@@ -4137,8 +5296,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(221\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(225\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(220\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(218\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h93",
@@ -4146,13 +5323,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A space probe maps 58500 deep-space photographic images into 150 astronomical databases. How many images are saved in each database?",
-    "a": "\\(390\\)",
-    "opts": [
-      "\\(391\\)",
-      "\\(390\\)",
-      "\\(392\\)",
-      "\\(387\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 58500 by 150.",
@@ -4175,8 +5345,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(391\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(390\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(392\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(387\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h94",
@@ -4184,13 +5372,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A modern automated steel rolling mill produces 62400 structural steel joints across 160 production batches. How many joints are in each production batch?",
-    "a": "\\(390\\)",
-    "opts": [
-      "\\(389\\)",
-      "\\(390\\)",
-      "\\(393\\)",
-      "\\(391\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 62400 by 160.",
@@ -4213,8 +5394,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(389\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(390\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(393\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(391\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h95",
@@ -4222,13 +5421,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A maritime harbor plans 66300 container cargo allocations using 170 gantry crane schedules. How many cargo allocations are handled per schedule?",
-    "a": "\\(390\\)",
-    "opts": [
-      "\\(390\\)",
-      "\\(388\\)",
-      "\\(394\\)",
-      "\\(391\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 66300 by 170.",
@@ -4251,8 +5443,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(390\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(388\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(394\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(391\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1k-h96",
@@ -4260,13 +5470,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A planetary modeling project computes 71280 atmospheric cell updates on 180 simulation cores. How many cell updates are run per core?",
-    "a": "\\(396\\)",
-    "opts": [
-      "\\(393\\)",
-      "\\(397\\)",
-      "\\(396\\)",
-      "\\(401\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 71280 by 180.",
@@ -4289,8 +5492,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(393\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(396\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(401\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h97",
@@ -4298,13 +5519,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural wheat storage farm dumps 75600 bushels of grain into 210 identical storage bins. How many bushels are dumped in each bin?",
-    "a": "\\(360\\)",
-    "opts": [
-      "\\(359\\)",
-      "\\(362\\)",
-      "\\(361\\)",
-      "\\(360\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 75600 by 210.",
@@ -4327,8 +5541,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(359\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(362\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(361\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(360\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1k-h98",
@@ -4336,13 +5568,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A biomedical scanner captures 79200 high-resolution cell tissue images across 120 testing plates. How many cell images are captured per testing plate?",
-    "a": "\\(660\\)",
-    "opts": [
-      "\\(661\\)",
-      "\\(663\\)",
-      "\\(660\\)",
-      "\\(658\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 79200 by 120.",
@@ -4365,8 +5590,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(661\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(663\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(660\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(658\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1k-h99",
@@ -4374,13 +5617,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A water reservoir monitors filtration across 83600 pipe units using 220 sensory nodes. How many pipe units are monitored per node?",
-    "a": "\\(380\\)",
-    "opts": [
-      "\\(381\\)",
-      "\\(380\\)",
-      "\\(377\\)",
-      "\\(384\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 83600 by 220.",
@@ -4403,8 +5639,26 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(381\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(380\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(377\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(384\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1k-h100",
@@ -4412,13 +5666,6 @@ export const Y7_CH1K_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A high-performance vehicle track records 94500 telemetry engine sensor logs across 150 driver batches. How many engine sensor logs are recorded per driver batch?",
-    "a": "\\(630\\)",
-    "opts": [
-      "\\(630\\)",
-      "\\(629\\)",
-      "\\(631\\)",
-      "\\(635\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the long division to divide 94500 by 150.",
@@ -4441,7 +5688,25 @@ export const Y7_CH1K_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The long division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(630\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(629\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(631\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(635\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   }
 ];

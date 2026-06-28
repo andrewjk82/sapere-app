@@ -364,15 +364,7 @@ export const Y7_CH1A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 25 \\text{ km} \\) and a subterranean probe at \\( -45 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(-20\\)",
-      "\\(25\\)",
-      "\\(45\\)",
-      "\\(70\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -386,22 +378,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 70 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q17",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( 16 \\) and point \\( Y \\) is at \\( 48 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(24\\)",
-      "\\(28\\)",
-      "\\(32\\)",
-      "\\(40\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -415,22 +418,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{48}2 = 24 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(28\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q18",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -12 \\) and point \\( B \\) is located at \\( 2 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{2}{7} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "1",
-    "opts": [
-      "\\(-10\\)",
-      "\\(-8\\)",
-      "\\(-6\\)",
-      "\\(-2\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -444,22 +458,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -12 + 4 = -8 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q19",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Teresa registers a sensor marker at depth \\( A = -36 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 14 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-86\\)",
-      "\\(-22\\)",
-      "\\(59\\)",
-      "\\(64\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -473,22 +498,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(14) - (-36) = 28 + 36 = 64 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-86\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(59\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q20",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all possible values of \\( x \\) on the number line such that the distance between \\( x \\) and \\( -12 \\) is exactly \\( 8 \\) units.",
-    "a": "0",
-    "opts": [
-      "\\(-24\\)",
-      "\\(-12\\)",
-      "\\(8\\)",
-      "\\(80\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Express the given condition as an absolute value equation.",
@@ -506,22 +542,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the sum of the two coordinates.",
         "workingOut": "\\( \\text{Sum} = -4 + (-20) = -24 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q21",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
-    "question": "A thermometer scale on a pressure chamber has major markers at \\( -20 \\text{\u00b0C} \\) and \\( 30 \\text{\u00b0C} \\). The space between these markers is divided into exactly \\( 10 \\) equal segments. Find the temperature coordinate at the \\( 2 \\)-th marker from the left.",
-    "a": "1",
-    "opts": [
-      "\\(-15\\)",
-      "\\(-10\\)",
-      "\\(-5\\)",
-      "\\(20\\)"
-    ],
+    "question": "A thermometer scale on a pressure chamber has major markers at \\( -20 \\text{°C} \\) and \\( 30 \\text{°C} \\). The space between these markers is divided into exactly \\( 10 \\) equal segments. Find the temperature coordinate at the \\( 2 \\)-th marker from the left.",
     "solutionSteps": [
       {
         "explanation": "Compute the total temperature difference between the two major markers.",
@@ -535,26 +582,37 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the coordinate of the target marker by adding the steps from the start.",
         "workingOut": "\\( T = -20 + 2 \\times 5 = -10 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q22",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all integers \\( x \\) represented on the number line that satisfy the compound inequality \\( -4 < x \\le 3 \\).",
-    "a": "3",
-    "opts": [
-      "\\(-7\\)",
-      "\\(-4\\)",
-      "\\(-3\\)",
-      "\\(0\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "List all integers that strictly satisfy the inequality conditions.",
-        "workingOut": "\\\\( x \\\\in \\\left\\{ -3, -2, -1, 0, 1, 2, 3 \\\right\\} \\\\)"
+        "workingOut": "\\\\( x \\\\in \\left\\{ -3, -2, -1, 0, 1, 2, 3 \\\right\\} \\\\)"
       },
       {
         "explanation": "Add the negative and positive parts of the set.",
@@ -564,22 +622,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Determine the final sum value.",
         "workingOut": "\\( \\text{Total Sum} = 0 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q23",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An experimental robotics device made by BioSynth Labs starts at position \\( 0 \\) on a test track coordinate line. It moves \\( 12 \\) units to the left, then \\( 20 \\) units to the right, and finally \\( 14 \\) units to the left. Determine its final coordinate.",
-    "a": "1",
-    "opts": [
-      "\\(-26\\)",
-      "\\(-6\\)",
-      "\\(6\\)",
-      "\\(18\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the first movement to the left (subtraction).",
@@ -593,22 +662,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final movement to the left (subtraction).",
         "workingOut": "\\( P_3 = 8 - 14 = -6 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q24",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -2.6 \\) and point \\( C_2 \\) is at coordinate \\( 3.1 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
-    "a": "1",
-    "opts": [
-      "\\(-0.25\\)",
-      "\\(0.25\\)",
-      "\\(0.75\\)",
-      "\\(5.7\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the average calculation for the two decimal values.",
@@ -622,22 +702,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Divide by 2 to determine the midpoint coordinate.",
         "workingOut": "\\( M = \\frac{0.5}2 = 0.25 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-0.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5.7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q25",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 75 \\text{ km} \\) and a subterranean probe at \\( -60 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(15\\)",
-      "\\(60\\)",
-      "\\(75\\)",
-      "\\(135\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -651,22 +742,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 135 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(135\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q26",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( 8 \\) and point \\( Y \\) is at \\( 40 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(16\\)",
-      "\\(20\\)",
-      "\\(24\\)",
-      "\\(32\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -680,22 +782,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{32}2 = 16 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q27",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -11 \\) and point \\( B \\) is located at \\( 13 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{2}{8} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "1",
-    "opts": [
-      "\\(-7\\)",
-      "\\(-5\\)",
-      "\\(-3\\)",
-      "\\(7\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -709,22 +822,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -11 + 6 = -5 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q28",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Caleb registers a sensor marker at depth \\( A = -44 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 14 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-102\\)",
-      "\\(-30\\)",
-      "\\(67\\)",
-      "\\(72\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -738,22 +862,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(14) - (-44) = 28 + 44 = 72 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-102\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(72\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q29",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all possible values of \\( x \\) on the number line such that the distance between \\( x \\) and \\( -12 \\) is exactly \\( 11 \\) units.",
-    "a": "0",
-    "opts": [
-      "\\(-24\\)",
-      "\\(-12\\)",
-      "\\(11\\)",
-      "\\(23\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Express the given condition as an absolute value equation.",
@@ -771,21 +906,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the sum of the two coordinates.",
         "workingOut": "\\( \\text{Sum} = -1 + (-23) = -24 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(23\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q30",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
-    "question": "A thermometer scale on a pressure chamber has major markers at \\( -20 \\text{\u00b0C} \\) and \\( 0 \\text{\u00b0C} \\). The space between these markers is divided into exactly \\( 4 \\) equal segments. Find the temperature coordinate at the \\( 2 \\)-th marker from the left.",
-    "a": "1",
-    "opts": [
-      "\\(-15\\)",
-      "\\(-10\\)",
-      "\\(-5\\)"
-    ],
+    "question": "A thermometer scale on a pressure chamber has major markers at \\( -20 \\text{°C} \\) and \\( 0 \\text{°C} \\). The space between these markers is divided into exactly \\( 4 \\) equal segments. Find the temperature coordinate at the \\( 2 \\)-th marker from the left.",
     "solutionSteps": [
       {
         "explanation": "Compute the total temperature difference between the two major markers.",
@@ -799,26 +946,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the coordinate of the target marker by adding the steps from the start.",
         "workingOut": "\\( T = -20 + 2 \\times 5 = -10 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q31",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all integers \\( x \\) represented on the number line that satisfy the compound inequality \\( -8 < x \\le 5 \\).",
-    "a": "3",
-    "opts": [
-      "\\(-26\\)",
-      "\\(-21\\)",
-      "\\(-18\\)",
-      "\\(-13\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "List all integers that strictly satisfy the inequality conditions.",
-        "workingOut": "\\\\( x \\\\in \\\left\\{ -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\right\\} \\\\)"
+        "workingOut": "\\\\( x \\\\in \\left\\{ -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\right\\} \\\\)"
       },
       {
         "explanation": "Add the negative and positive parts of the set.",
@@ -828,22 +982,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Determine the final sum value.",
         "workingOut": "\\( \\text{Total Sum} = -13 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-21\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-13\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q32",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An experimental robotics device made by Quantum Research starts at position \\( 0 \\) on a test track coordinate line. It moves \\( 12 \\) units to the left, then \\( 20 \\) units to the right, and finally \\( 14 \\) units to the left. Determine its final coordinate.",
-    "a": "1",
-    "opts": [
-      "\\(-26\\)",
-      "\\(-6\\)",
-      "\\(6\\)",
-      "\\(18\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the first movement to the left (subtraction).",
@@ -857,22 +1022,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final movement to the left (subtraction).",
         "workingOut": "\\( P_3 = 8 - 14 = -6 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q33",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -3.0 \\) and point \\( C_2 \\) is at coordinate \\( 5.2 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
-    "a": "1",
-    "opts": [
-      "\\(0.6\\)",
-      "\\(1.1\\)",
-      "\\(1.6\\)",
-      "\\(8.2\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the average calculation for the two decimal values.",
@@ -886,22 +1062,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Divide by 2 to determine the midpoint coordinate.",
         "workingOut": "\\( M = \\frac{2.2}2 = 1.1 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(0.6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8.2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q34",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 25 \\text{ km} \\) and a subterranean probe at \\( -45 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(-20\\)",
-      "\\(25\\)",
-      "\\(45\\)",
-      "\\(70\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -915,22 +1102,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 70 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q35",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( -8 \\) and point \\( Y \\) is at \\( 24 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(0\\)",
-      "\\(4\\)",
-      "\\(8\\)",
-      "\\(16\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -944,22 +1142,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{0}2 = 0 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q36",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -18 \\) and point \\( B \\) is located at \\( -8 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{2}{5} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "1",
-    "opts": [
-      "\\(-15\\)",
-      "\\(-14\\)",
-      "\\(-13\\)",
-      "\\(-12\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -973,22 +1182,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -18 + 4 = -14 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q37",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Lydia registers a sensor marker at depth \\( A = -25 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 17 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-67\\)",
-      "\\(-8\\)",
-      "\\(54\\)",
-      "\\(59\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -1002,22 +1222,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(17) - (-25) = 34 + 25 = 59 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-67\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(59\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q38",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all possible values of \\( x \\) on the number line such that the distance between \\( x \\) and \\( 3 \\) is exactly \\( 20 \\) units.",
-    "a": "2",
-    "opts": [
-      "\\(-391\\)",
-      "\\(3\\)",
-      "\\(6\\)",
-      "\\(20\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Express the given condition as an absolute value equation.",
@@ -1035,22 +1266,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the sum of the two coordinates.",
         "workingOut": "\\( \\text{Sum} = 23 + (-17) = 6 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-391\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q39",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
-    "question": "A thermometer scale on a pressure chamber has major markers at \\( 0 \\text{\u00b0C} \\) and \\( 25 \\text{\u00b0C} \\). The space between these markers is divided into exactly \\( 5 \\) equal segments. Find the temperature coordinate at the \\( 4 \\)-th marker from the left.",
-    "a": "2",
-    "opts": [
-      "\\(5\\)",
-      "\\(15\\)",
-      "\\(20\\)",
-      "\\(25\\)"
-    ],
+    "question": "A thermometer scale on a pressure chamber has major markers at \\( 0 \\text{°C} \\) and \\( 25 \\text{°C} \\). The space between these markers is divided into exactly \\( 5 \\) equal segments. Find the temperature coordinate at the \\( 4 \\)-th marker from the left.",
     "solutionSteps": [
       {
         "explanation": "Compute the total temperature difference between the two major markers.",
@@ -1064,26 +1306,37 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the coordinate of the target marker by adding the steps from the start.",
         "workingOut": "\\( T = 0 + 4 \\times 5 = 20 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q40",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all integers \\( x \\) represented on the number line that satisfy the compound inequality \\( -4 < x \\le 6 \\).",
-    "a": "3",
-    "opts": [
-      "\\(5\\)",
-      "\\(9\\)",
-      "\\(11\\)",
-      "\\(15\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "List all integers that strictly satisfy the inequality conditions.",
-        "workingOut": "\\\\( x \\\\in \\\left\\{ -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\right\\} \\\\)"
+        "workingOut": "\\\\( x \\\\in \\left\\{ -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\right\\} \\\\)"
       },
       {
         "explanation": "Add the negative and positive parts of the set.",
@@ -1093,22 +1346,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Determine the final sum value.",
         "workingOut": "\\( \\text{Total Sum} = 15 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q41",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An experimental robotics device made by Nova Energy starts at position \\( 0 \\) on a test track coordinate line. It moves \\( 15 \\) units to the left, then \\( 25 \\) units to the right, and finally \\( 5 \\) units to the left. Determine its final coordinate.",
-    "a": "2",
-    "opts": [
-      "\\(-20\\)",
-      "\\(-5\\)",
-      "\\(5\\)",
-      "\\(35\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the first movement to the left (subtraction).",
@@ -1122,22 +1386,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final movement to the left (subtraction).",
         "workingOut": "\\( P_3 = 10 - 5 = 5 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q42",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -4.3 \\) and point \\( C_2 \\) is at coordinate \\( 3.0 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
-    "a": "1",
-    "opts": [
-      "\\(-1.15\\)",
-      "\\(-0.65\\)",
-      "\\(-0.15\\)",
-      "\\(7.3\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the average calculation for the two decimal values.",
@@ -1151,22 +1426,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Divide by 2 to determine the midpoint coordinate.",
         "workingOut": "\\( M = \\frac{-1.3}2 = -0.65 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-1.15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-0.65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-0.15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7.3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q43",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 75 \\text{ km} \\) and a subterranean probe at \\( -45 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(30\\)",
-      "\\(45\\)",
-      "\\(75\\)",
-      "\\(120\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -1180,22 +1466,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 120 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q44",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( -16 \\) and point \\( Y \\) is at \\( 16 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(-8\\)",
-      "\\(-4\\)",
-      "\\(0\\)",
-      "\\(8\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -1209,22 +1506,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{-16}2 = -8 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q45",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -6 \\) and point \\( B \\) is located at \\( 4 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{2}{5} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "1",
-    "opts": [
-      "\\(-3\\)",
-      "\\(-2\\)",
-      "\\(-1\\)",
-      "\\(0\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -1238,22 +1546,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -6 + 4 = -2 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q46",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Ulysses registers a sensor marker at depth \\( A = -12 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 3 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-27\\)",
-      "\\(-9\\)",
-      "\\(13\\)",
-      "\\(18\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -1267,22 +1586,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(3) - (-12) = 6 + 12 = 18 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q47",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all possible values of \\( x \\) on the number line such that the distance between \\( x \\) and \\( 9 \\) is exactly \\( 8 \\) units.",
-    "a": "3",
-    "opts": [
-      "\\(8\\)",
-      "\\(9\\)",
-      "\\(17\\)",
-      "\\(18\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Express the given condition as an absolute value equation.",
@@ -1300,21 +1630,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the sum of the two coordinates.",
         "workingOut": "\\( \\text{Sum} = 17 + (1) = 18 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q48",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
-    "question": "A thermometer scale on a pressure chamber has major markers at \\( -40 \\text{\u00b0C} \\) and \\( -10 \\text{\u00b0C} \\). The space between these markers is divided into exactly \\( 5 \\) equal segments. Find the temperature coordinate at the \\( 3 \\)-th marker from the left.",
-    "a": "1",
-    "opts": [
-      "\\(-28\\)",
-      "\\(-22\\)",
-      "\\(-16\\)"
-    ],
+    "question": "A thermometer scale on a pressure chamber has major markers at \\( -40 \\text{°C} \\) and \\( -10 \\text{°C} \\). The space between these markers is divided into exactly \\( 5 \\) equal segments. Find the temperature coordinate at the \\( 3 \\)-th marker from the left.",
     "solutionSteps": [
       {
         "explanation": "Compute the total temperature difference between the two major markers.",
@@ -1328,26 +1670,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the coordinate of the target marker by adding the steps from the start.",
         "workingOut": "\\( T = -40 + 3 \\times 6 = -22 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-28\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-16\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q49",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all integers \\( x \\) represented on the number line that satisfy the compound inequality \\( -5 < x \\le 6 \\).",
-    "a": "3",
-    "opts": [
-      "\\(0\\)",
-      "\\(5\\)",
-      "\\(6\\)",
-      "\\(11\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "List all integers that strictly satisfy the inequality conditions.",
-        "workingOut": "\\\\( x \\\\in \\\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\right\\} \\\\)"
+        "workingOut": "\\\\( x \\\\in \\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\right\\} \\\\)"
       },
       {
         "explanation": "Add the negative and positive parts of the set.",
@@ -1357,22 +1706,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Determine the final sum value.",
         "workingOut": "\\( \\text{Total Sum} = 11 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q50",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An experimental robotics device made by Apex Logistics starts at position \\( 0 \\) on a test track coordinate line. It moves \\( 15 \\) units to the left, then \\( 25 \\) units to the right, and finally \\( 14 \\) units to the left. Determine its final coordinate.",
-    "a": "1",
-    "opts": [
-      "\\(-29\\)",
-      "\\(-4\\)",
-      "\\(4\\)",
-      "\\(26\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the first movement to the left (subtraction).",
@@ -1386,22 +1746,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final movement to the left (subtraction).",
         "workingOut": "\\( P_3 = 10 - 14 = -4 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q51",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -2.1 \\) and point \\( C_2 \\) is at coordinate \\( 4.3 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
-    "a": "1",
-    "opts": [
-      "\\(0.6\\)",
-      "\\(1.1\\)",
-      "\\(1.6\\)",
-      "\\(6.4\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the average calculation for the two decimal values.",
@@ -1415,22 +1786,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Divide by 2 to determine the midpoint coordinate.",
         "workingOut": "\\( M = \\frac{2.2}2 = 1.1 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(0.6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6.4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q52",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 40 \\text{ km} \\) and a subterranean probe at \\( -60 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(-20\\)",
-      "\\(40\\)",
-      "\\(60\\)",
-      "\\(100\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -1444,22 +1826,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 100 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q53",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( -16 \\) and point \\( Y \\) is at \\( 16 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(-8\\)",
-      "\\(-4\\)",
-      "\\(0\\)",
-      "\\(8\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -1473,22 +1866,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{-16}2 = -8 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q54",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -12 \\) and point \\( B \\) is located at \\( 2 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{5}{7} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "2",
-    "opts": [
-      "\\(-8\\)",
-      "\\(-4\\)",
-      "\\(-2\\)",
-      "\\(0\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -1502,22 +1906,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -12 + 10 = -2 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q55",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Diana registers a sensor marker at depth \\( A = -24 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 1 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-49\\)",
-      "\\(-23\\)",
-      "\\(21\\)",
-      "\\(26\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -1531,22 +1946,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(1) - (-24) = 2 + 24 = 26 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-23\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q56",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all possible values of \\( x \\) on the number line such that the distance between \\( x \\) and \\( -12 \\) is exactly \\( 11 \\) units.",
-    "a": "0",
-    "opts": [
-      "\\(-24\\)",
-      "\\(-12\\)",
-      "\\(11\\)",
-      "\\(23\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Express the given condition as an absolute value equation.",
@@ -1564,22 +1990,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the sum of the two coordinates.",
         "workingOut": "\\( \\text{Sum} = -1 + (-23) = -24 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(23\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q57",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
-    "question": "A thermometer scale on a pressure chamber has major markers at \\( -30 \\text{\u00b0C} \\) and \\( 50 \\text{\u00b0C} \\). The space between these markers is divided into exactly \\( 10 \\) equal segments. Find the temperature coordinate at the \\( 6 \\)-th marker from the left.",
-    "a": "2",
-    "opts": [
-      "\\(2\\)",
-      "\\(10\\)",
-      "\\(18\\)",
-      "\\(26\\)"
-    ],
+    "question": "A thermometer scale on a pressure chamber has major markers at \\( -30 \\text{°C} \\) and \\( 50 \\text{°C} \\). The space between these markers is divided into exactly \\( 10 \\) equal segments. Find the temperature coordinate at the \\( 6 \\)-th marker from the left.",
     "solutionSteps": [
       {
         "explanation": "Compute the total temperature difference between the two major markers.",
@@ -1593,26 +2030,37 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the coordinate of the target marker by adding the steps from the start.",
         "workingOut": "\\( T = -30 + 6 \\times 8 = 18 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q58",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all integers \\( x \\) represented on the number line that satisfy the compound inequality \\( -4 < x \\le 5 \\).",
-    "a": "3",
-    "opts": [
-      "\\(0\\)",
-      "\\(4\\)",
-      "\\(5\\)",
-      "\\(9\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "List all integers that strictly satisfy the inequality conditions.",
-        "workingOut": "\\\\( x \\\\in \\\left\\{ -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\right\\} \\\\)"
+        "workingOut": "\\\\( x \\\\in \\left\\{ -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\right\\} \\\\)"
       },
       {
         "explanation": "Add the negative and positive parts of the set.",
@@ -1622,22 +2070,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Determine the final sum value.",
         "workingOut": "\\( \\text{Total Sum} = 9 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q59",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An experimental robotics device made by Helios Solar starts at position \\( 10 \\) on a test track coordinate line. It moves \\( 15 \\) units to the left, then \\( 25 \\) units to the right, and finally \\( 5 \\) units to the left. Determine its final coordinate.",
-    "a": "2",
-    "opts": [
-      "\\(-10\\)",
-      "\\(5\\)",
-      "\\(15\\)",
-      "\\(45\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the first movement to the left (subtraction).",
@@ -1651,22 +2110,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final movement to the left (subtraction).",
         "workingOut": "\\( P_3 = 20 - 5 = 15 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q60",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -4.0 \\) and point \\( C_2 \\) is at coordinate \\( 3.5 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
-    "a": "1",
-    "opts": [
-      "\\(-0.75\\)",
-      "\\(-0.25\\)",
-      "\\(0.25\\)",
-      "\\(7.5\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the average calculation for the two decimal values.",
@@ -1680,22 +2150,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Divide by 2 to determine the midpoint coordinate.",
         "workingOut": "\\( M = \\frac{-0.5}2 = -0.25 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-0.75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-0.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7.5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q61",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 25 \\text{ km} \\) and a subterranean probe at \\( -30 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(-5\\)",
-      "\\(25\\)",
-      "\\(30\\)",
-      "\\(55\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -1709,22 +2190,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 55 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(55\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q62",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( 0 \\) and point \\( Y \\) is at \\( 32 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(8\\)",
-      "\\(12\\)",
-      "\\(16\\)",
-      "\\(24\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -1738,22 +2230,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{16}2 = 8 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q63",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -9 \\) and point \\( B \\) is located at \\( 23 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{6}{8} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "2",
-    "opts": [
-      "\\(-1\\)",
-      "\\(13\\)",
-      "\\(15\\)",
-      "\\(17\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -1767,22 +2270,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -9 + 24 = 15 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q64",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Marcus registers a sensor marker at depth \\( A = -40 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 16 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-96\\)",
-      "\\(-24\\)",
-      "\\(67\\)",
-      "\\(72\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -1796,22 +2310,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(16) - (-40) = 32 + 40 = 72 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-96\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(72\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q65",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all possible values of \\( x \\) on the number line such that the distance between \\( x \\) and \\( 9 \\) is exactly \\( 14 \\) units.",
-    "a": "3",
-    "opts": [
-      "\\(-115\\)",
-      "\\(9\\)",
-      "\\(14\\)",
-      "\\(18\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Express the given condition as an absolute value equation.",
@@ -1829,22 +2354,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the sum of the two coordinates.",
         "workingOut": "\\( \\text{Sum} = 23 + (-5) = 18 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-115\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q66",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
-    "question": "A thermometer scale on a pressure chamber has major markers at \\( -20 \\text{\u00b0C} \\) and \\( 5 \\text{\u00b0C} \\). The space between these markers is divided into exactly \\( 5 \\) equal segments. Find the temperature coordinate at the \\( 4 \\)-th marker from the left.",
-    "a": "2",
-    "opts": [
-      "\\(-15\\)",
-      "\\(-5\\)",
-      "\\(0\\)",
-      "\\(5\\)"
-    ],
+    "question": "A thermometer scale on a pressure chamber has major markers at \\( -20 \\text{°C} \\) and \\( 5 \\text{°C} \\). The space between these markers is divided into exactly \\( 5 \\) equal segments. Find the temperature coordinate at the \\( 4 \\)-th marker from the left.",
     "solutionSteps": [
       {
         "explanation": "Compute the total temperature difference between the two major markers.",
@@ -1858,26 +2394,37 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the coordinate of the target marker by adding the steps from the start.",
         "workingOut": "\\( T = -20 + 4 \\times 5 = 0 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q67",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all integers \\( x \\) represented on the number line that satisfy the compound inequality \\( -6 < x \\le 3 \\).",
-    "a": "3",
-    "opts": [
-      "\\(-18\\)",
-      "\\(-15\\)",
-      "\\(-12\\)",
-      "\\(-9\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "List all integers that strictly satisfy the inequality conditions.",
-        "workingOut": "\\\\( x \\\\in \\\left\\{ -5, -4, -3, -2, -1, 0, 1, 2, 3 \\\right\\} \\\\)"
+        "workingOut": "\\\\( x \\\\in \\left\\{ -5, -4, -3, -2, -1, 0, 1, 2, 3 \\\right\\} \\\\)"
       },
       {
         "explanation": "Add the negative and positive parts of the set.",
@@ -1887,22 +2434,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Determine the final sum value.",
         "workingOut": "\\( \\text{Total Sum} = -9 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q68",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An experimental robotics device made by Vertex Software starts at position \\( -5 \\) on a test track coordinate line. It moves \\( 15 \\) units to the left, then \\( 30 \\) units to the right, and finally \\( 14 \\) units to the left. Determine its final coordinate.",
-    "a": "2",
-    "opts": [
-      "\\(-34\\)",
-      "\\(-6\\)",
-      "\\(-4\\)",
-      "\\(26\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the first movement to the left (subtraction).",
@@ -1916,22 +2474,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final movement to the left (subtraction).",
         "workingOut": "\\( P_3 = 10 - 14 = -4 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-34\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q69",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -4.1 \\) and point \\( C_2 \\) is at coordinate \\( 5.1 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
-    "a": "1",
-    "opts": [
-      "\\(0.0\\)",
-      "\\(0.5\\)",
-      "\\(1.0\\)",
-      "\\(9.2\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the average calculation for the two decimal values.",
@@ -1945,22 +2514,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Divide by 2 to determine the midpoint coordinate.",
         "workingOut": "\\( M = \\frac{1.0}2 = 0.5 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(0.0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9.2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q70",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 75 \\text{ km} \\) and a subterranean probe at \\( -60 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(15\\)",
-      "\\(60\\)",
-      "\\(75\\)",
-      "\\(135\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -1974,22 +2554,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 135 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(135\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q71",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( 0 \\) and point \\( Y \\) is at \\( 32 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(8\\)",
-      "\\(12\\)",
-      "\\(16\\)",
-      "\\(24\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -2003,22 +2594,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{16}2 = 8 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q72",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -13 \\) and point \\( B \\) is located at \\( 3 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{3}{8} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "1",
-    "opts": [
-      "\\(-9\\)",
-      "\\(-7\\)",
-      "\\(-5\\)",
-      "\\(-3\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -2032,22 +2634,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -13 + 6 = -7 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q73",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Valerie registers a sensor marker at depth \\( A = -38 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 7 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-83\\)",
-      "\\(-31\\)",
-      "\\(47\\)",
-      "\\(52\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -2061,22 +2674,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(7) - (-38) = 14 + 38 = 52 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-83\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-31\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q74",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all possible values of \\( x \\) on the number line such that the distance between \\( x \\) and \\( -7 \\) is exactly \\( 11 \\) units.",
-    "a": "1",
-    "opts": [
-      "\\(-72\\)",
-      "\\(-14\\)",
-      "\\(-7\\)",
-      "\\(11\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Express the given condition as an absolute value equation.",
@@ -2094,22 +2718,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the sum of the two coordinates.",
         "workingOut": "\\( \\text{Sum} = 4 + (-18) = -14 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-72\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q75",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
-    "question": "A thermometer scale on a pressure chamber has major markers at \\( -30 \\text{\u00b0C} \\) and \\( -10 \\text{\u00b0C} \\). The space between these markers is divided into exactly \\( 4 \\) equal segments. Find the temperature coordinate at the \\( 3 \\)-th marker from the left.",
-    "a": "2",
-    "opts": [
-      "\\(-25\\)",
-      "\\(-20\\)",
-      "\\(-15\\)",
-      "\\(-10\\)"
-    ],
+    "question": "A thermometer scale on a pressure chamber has major markers at \\( -30 \\text{°C} \\) and \\( -10 \\text{°C} \\). The space between these markers is divided into exactly \\( 4 \\) equal segments. Find the temperature coordinate at the \\( 3 \\)-th marker from the left.",
     "solutionSteps": [
       {
         "explanation": "Compute the total temperature difference between the two major markers.",
@@ -2123,26 +2758,37 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the coordinate of the target marker by adding the steps from the start.",
         "workingOut": "\\( T = -30 + 3 \\times 5 = -15 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-10\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q76",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all integers \\( x \\) represented on the number line that satisfy the compound inequality \\( -5 < x \\le 4 \\).",
-    "a": "3",
-    "opts": [
-      "\\(-9\\)",
-      "\\(-5\\)",
-      "\\(-4\\)",
-      "\\(0\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "List all integers that strictly satisfy the inequality conditions.",
-        "workingOut": "\\\\( x \\\\in \\\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4 \\\right\\} \\\\)"
+        "workingOut": "\\\\( x \\\\in \\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4 \\\right\\} \\\\)"
       },
       {
         "explanation": "Add the negative and positive parts of the set.",
@@ -2152,22 +2798,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Determine the final sum value.",
         "workingOut": "\\( \\text{Total Sum} = 0 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q77",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An experimental robotics device made by Titan Mining starts at position \\( -5 \\) on a test track coordinate line. It moves \\( 15 \\) units to the left, then \\( 25 \\) units to the right, and finally \\( 14 \\) units to the left. Determine its final coordinate.",
-    "a": "1",
-    "opts": [
-      "\\(-34\\)",
-      "\\(-9\\)",
-      "\\(-1\\)",
-      "\\(21\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the first movement to the left (subtraction).",
@@ -2181,22 +2838,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final movement to the left (subtraction).",
         "workingOut": "\\( P_3 = 5 - 14 = -9 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-34\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q78",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -2.2 \\) and point \\( C_2 \\) is at coordinate \\( 5.2 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
-    "a": "1",
-    "opts": [
-      "\\(1.0\\)",
-      "\\(1.5\\)",
-      "\\(2.0\\)",
-      "\\(7.4\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the average calculation for the two decimal values.",
@@ -2210,22 +2878,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Divide by 2 to determine the midpoint coordinate.",
         "workingOut": "\\( M = \\frac{3.0}2 = 1.5 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(1.0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7.4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q79",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 75 \\text{ km} \\) and a subterranean probe at \\( -80 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(-5\\)",
-      "\\(75\\)",
-      "\\(80\\)",
-      "\\(155\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -2239,22 +2918,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 155 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(155\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q80",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( -16 \\) and point \\( Y \\) is at \\( 16 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(-8\\)",
-      "\\(-4\\)",
-      "\\(0\\)",
-      "\\(8\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -2268,22 +2958,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{-16}2 = -8 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q81",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -5 \\) and point \\( B \\) is located at \\( 22 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{2}{9} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "1",
-    "opts": [
-      "\\(-1\\)",
-      "\\(1\\)",
-      "\\(3\\)",
-      "\\(16\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -2297,22 +2998,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -5 + 6 = 1 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q82",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Ethan registers a sensor marker at depth \\( A = -24 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 6 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-54\\)",
-      "\\(-18\\)",
-      "\\(31\\)",
-      "\\(36\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -2326,22 +3038,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(6) - (-24) = 12 + 24 = 36 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-54\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q83",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all possible values of \\( x \\) on the number line such that the distance between \\( x \\) and \\( 15 \\) is exactly \\( 14 \\) units.",
-    "a": "3",
-    "opts": [
-      "\\(14\\)",
-      "\\(15\\)",
-      "\\(29\\)",
-      "\\(30\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Express the given condition as an absolute value equation.",
@@ -2359,22 +3082,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the sum of the two coordinates.",
         "workingOut": "\\( \\text{Sum} = 29 + (1) = 30 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q84",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
-    "question": "A thermometer scale on a pressure chamber has major markers at \\( 0 \\text{\u00b0C} \\) and \\( 30 \\text{\u00b0C} \\). The space between these markers is divided into exactly \\( 5 \\) equal segments. Find the temperature coordinate at the \\( 4 \\)-th marker from the left.",
-    "a": "2",
-    "opts": [
-      "\\(6\\)",
-      "\\(18\\)",
-      "\\(24\\)",
-      "\\(30\\)"
-    ],
+    "question": "A thermometer scale on a pressure chamber has major markers at \\( 0 \\text{°C} \\) and \\( 30 \\text{°C} \\). The space between these markers is divided into exactly \\( 5 \\) equal segments. Find the temperature coordinate at the \\( 4 \\)-th marker from the left.",
     "solutionSteps": [
       {
         "explanation": "Compute the total temperature difference between the two major markers.",
@@ -2388,25 +3122,37 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the coordinate of the target marker by adding the steps from the start.",
         "workingOut": "\\( T = 0 + 4 \\times 6 = 24 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q85",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all integers \\( x \\) represented on the number line that satisfy the compound inequality \\( -5 < x \\le 5 \\).",
-    "a": "2",
-    "opts": [
-      "\\(-5\\)",
-      "\\(0\\)",
-      "\\(5\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "List all integers that strictly satisfy the inequality conditions.",
-        "workingOut": "\\\\( x \\\\in \\\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\right\\} \\\\)"
+        "workingOut": "\\\\( x \\\\in \\left\\{ -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 \\\right\\} \\\\)"
       },
       {
         "explanation": "Add the negative and positive parts of the set.",
@@ -2416,22 +3162,29 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Determine the final sum value.",
         "workingOut": "\\( \\text{Total Sum} = 5 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q86",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An experimental robotics device made by DeepBlue Exploration starts at position \\( -5 \\) on a test track coordinate line. It moves \\( 12 \\) units to the left, then \\( 20 \\) units to the right, and finally \\( 14 \\) units to the left. Determine its final coordinate.",
-    "a": "1",
-    "opts": [
-      "\\(-31\\)",
-      "\\(-11\\)",
-      "\\(1\\)",
-      "\\(13\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the first movement to the left (subtraction).",
@@ -2445,22 +3198,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final movement to the left (subtraction).",
         "workingOut": "\\( P_3 = 3 - 14 = -11 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-31\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q87",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -2.7 \\) and point \\( C_2 \\) is at coordinate \\( 2.7 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
-    "a": "1",
-    "opts": [
-      "\\(-0.5\\)",
-      "\\(0.0\\)",
-      "\\(0.5\\)",
-      "\\(5.4\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the average calculation for the two decimal values.",
@@ -2474,22 +3238,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Divide by 2 to determine the midpoint coordinate.",
         "workingOut": "\\( M = \\frac{0.0}2 = 0.0 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-0.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5.4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q88",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 40 \\text{ km} \\) and a subterranean probe at \\( -80 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(-40\\)",
-      "\\(40\\)",
-      "\\(80\\)",
-      "\\(120\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -2503,22 +3278,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 120 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q89",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( 16 \\) and point \\( Y \\) is at \\( 48 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(24\\)",
-      "\\(28\\)",
-      "\\(32\\)",
-      "\\(40\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -2532,22 +3318,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{48}2 = 24 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(28\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q90",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -7 \\) and point \\( B \\) is located at \\( 14 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{3}{7} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "1",
-    "opts": [
-      "\\(0\\)",
-      "\\(2\\)",
-      "\\(4\\)",
-      "\\(5\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -2561,22 +3358,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -7 + 9 = 2 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q91",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Nora registers a sensor marker at depth \\( A = -21 \\) meters. If the midpoint of the geological segment lies at depth \\( M = -5 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-37\\)",
-      "\\(-26\\)",
-      "\\(6\\)",
-      "\\(11\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -2590,22 +3398,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(-5) - (-21) = -10 + 21 = 11 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-37\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q92",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all possible values of \\( x \\) on the number line such that the distance between \\( x \\) and \\( 3 \\) is exactly \\( 20 \\) units.",
-    "a": "2",
-    "opts": [
-      "\\(-391\\)",
-      "\\(3\\)",
-      "\\(6\\)",
-      "\\(20\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Express the given condition as an absolute value equation.",
@@ -2623,21 +3442,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the sum of the two coordinates.",
         "workingOut": "\\( \\text{Sum} = 23 + (-17) = 6 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-391\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q93",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
-    "question": "A thermometer scale on a pressure chamber has major markers at \\( -20 \\text{\u00b0C} \\) and \\( 12 \\text{\u00b0C} \\). The space between these markers is divided into exactly \\( 4 \\) equal segments. Find the temperature coordinate at the \\( 2 \\)-th marker from the left.",
-    "a": "1",
-    "opts": [
-      "\\(-12\\)",
-      "\\(-4\\)",
-      "\\(4\\)"
-    ],
+    "question": "A thermometer scale on a pressure chamber has major markers at \\( -20 \\text{°C} \\) and \\( 12 \\text{°C} \\). The space between these markers is divided into exactly \\( 4 \\) equal segments. Find the temperature coordinate at the \\( 2 \\)-th marker from the left.",
     "solutionSteps": [
       {
         "explanation": "Compute the total temperature difference between the two major markers.",
@@ -2651,26 +3482,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the coordinate of the target marker by adding the steps from the start.",
         "workingOut": "\\( T = -20 + 2 \\times 8 = -4 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q94",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Find the sum of all integers \\( x \\) represented on the number line that satisfy the compound inequality \\( -8 < x \\le 6 \\).",
-    "a": "3",
-    "opts": [
-      "\\(-21\\)",
-      "\\(-15\\)",
-      "\\(-13\\)",
-      "\\(-7\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "List all integers that strictly satisfy the inequality conditions.",
-        "workingOut": "\\\\( x \\\\in \\\left\\{ -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\right\\} \\\\)"
+        "workingOut": "\\\\( x \\\\in \\left\\{ -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6 \\\right\\} \\\\)"
       },
       {
         "explanation": "Add the negative and positive parts of the set.",
@@ -2680,22 +3518,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Determine the final sum value.",
         "workingOut": "\\( \\text{Total Sum} = -7 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-21\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q95",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An experimental robotics device made by EcoTech Agriculture starts at position \\( 0 \\) on a test track coordinate line. It moves \\( 8 \\) units to the left, then \\( 25 \\) units to the right, and finally \\( 9 \\) units to the left. Determine its final coordinate.",
-    "a": "2",
-    "opts": [
-      "\\(-17\\)",
-      "\\(-8\\)",
-      "\\(8\\)",
-      "\\(24\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the first movement to the left (subtraction).",
@@ -2709,22 +3558,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final movement to the left (subtraction).",
         "workingOut": "\\( P_3 = 17 - 9 = 8 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-17\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q96",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -4.2 \\) and point \\( C_2 \\) is at coordinate \\( 2.9 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
-    "a": "1",
-    "opts": [
-      "\\(-1.15\\)",
-      "\\(-0.65\\)",
-      "\\(-0.15\\)",
-      "\\(7.1\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the average calculation for the two decimal values.",
@@ -2738,22 +3598,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Divide by 2 to determine the midpoint coordinate.",
         "workingOut": "\\( M = \\frac{-1.3}2 = -0.65 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-1.15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-0.65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-0.15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7.1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1a-q97",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "An aerospace altitude tracking line records the elevation of a sounding balloon at \\( 55 \\text{ km} \\) and a subterranean probe at \\( -80 \\text{ km} \\). What is the absolute distance on the number line between these two measurement points?",
-    "a": "3",
-    "opts": [
-      "\\(-25\\)",
-      "\\(55\\)",
-      "\\(80\\)",
-      "\\(135\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write the absolute distance expression between the two coordinates.",
@@ -2767,22 +3638,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Calculate the final positive distance.",
         "workingOut": "\\( D = 135 \\text{ km} \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(55\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(135\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1a-q98",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "Point \\( X \\) is at \\( 8 \\) and point \\( Y \\) is at \\( 40 \\). Let \\( M_1 \\) be the midpoint of segment \\( XY \\). Let \\( M_2 \\) be the midpoint of segment \\( XM_1 \\). Find the coordinate of \\( M_2 \\).",
-    "a": "0",
-    "opts": [
-      "\\(16\\)",
-      "\\(20\\)",
-      "\\(24\\)",
-      "\\(32\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the coordinate of the first midpoint \\( M_1 \\).",
@@ -2796,22 +3678,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Perform the final calculation.",
         "workingOut": "\\( M_2 = \\frac{32}2 = 16 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1a-q99",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "On a high-precision number line, point \\( A \\) is located at \\( -9 \\) and point \\( B \\) is located at \\( 7 \\). Find the coordinate of point \\( P \\) that lies exactly \\( \\frac{5}{8} \\) of the distance from \\( A \\) to \\( B \\).",
-    "a": "2",
-    "opts": [
-      "\\(-3\\)",
-      "\\(-1\\)",
-      "\\(1\\)",
-      "\\(3\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the total distance between point \\( A \\) and point \\( B \\).",
@@ -2825,22 +3718,33 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Add the shift to the starting coordinate \\( A \\) to find the position of \\( P \\).",
         "workingOut": "\\( P = -9 + 10 = 1 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1a-q100",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "The number line",
     "question": "During a geological depth analysis, Wyatt registers a sensor marker at depth \\( A = -39 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 9 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
-    "a": "3",
-    "opts": [
-      "\\(-87\\)",
-      "\\(-30\\)",
-      "\\(52\\)",
-      "\\(57\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
@@ -2854,6 +3758,25 @@ export const Y7_CH1A_QUESTIONS = [
         "explanation": "Substitute the values to calculate the position of \\( B \\).",
         "workingOut": "\\( B = 2(9) - (-39) = 18 + 39 = 57 \\)"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "\\(-87\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(57\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   }
 ];

@@ -5,14 +5,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the correct number for the box: \\(80 = 8 \\times 10^\\Box\\)",
-    "a": "\\(1\\)",
-    "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(0\\)",
-      "\\(3\\)"
-    ],
-    "t": "Place value",
     "hint": "Count the number of zeros after the 8.",
     "solutionSteps": [
       {
@@ -26,7 +18,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q1b",
@@ -34,14 +45,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the correct number for the box: \\(400 = 4 \\times 10^\\Box\\)",
-    "a": "\\(2\\)",
-    "opts": [
-      "\\(2\\)",
-      "\\(1\\)",
-      "\\(3\\)",
-      "\\(4\\)"
-    ],
-    "t": "Place value",
     "hint": "Count the number of zeros after the 4.",
     "solutionSteps": [
       {
@@ -55,7 +58,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q1c",
@@ -63,14 +85,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the correct number for the box: \\(1500 = 15 \\times 10^\\Box\\)",
-    "a": "\\(2\\)",
-    "opts": [
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(1\\)",
-      "\\(4\\)"
-    ],
-    "t": "Place value",
     "hint": "Count the number of zeros after the 15.",
     "solutionSteps": [
       {
@@ -84,7 +98,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q1d",
@@ -92,14 +125,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the correct number for the box: \\(30000 = 3 \\times 10^\\Box\\)",
-    "a": "\\(4\\)",
-    "opts": [
-      "\\(4\\)",
-      "\\(3\\)",
-      "\\(5\\)",
-      "\\(6\\)"
-    ],
-    "t": "Place value",
     "hint": "Count the number of zeros after the 3.",
     "solutionSteps": [
       {
@@ -113,7 +138,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q1e",
@@ -121,14 +165,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the correct number for the box: \\(62000 = 62 \\times 10^\\Box\\)",
-    "a": "\\(3\\)",
-    "opts": [
-      "\\(3\\)",
-      "\\(2\\)",
-      "\\(4\\)",
-      "\\(5\\)"
-    ],
-    "t": "Place value",
     "hint": "Count the number of zeros after the 62.",
     "solutionSteps": [
       {
@@ -142,7 +178,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q1f",
@@ -150,14 +205,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the correct number for the box: \\(412000 = 412 \\times 10^\\Box\\)",
-    "a": "\\(3\\)",
-    "opts": [
-      "\\(3\\)",
-      "\\(2\\)",
-      "\\(4\\)",
-      "\\(1\\)"
-    ],
-    "t": "Place value",
     "hint": "Count the number of zeros after the 412.",
     "solutionSteps": [
       {
@@ -171,7 +218,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q1g",
@@ -179,14 +245,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the correct number for the box: \\(8000000 = 8 \\times 10^\\Box\\)",
-    "a": "\\(6\\)",
-    "opts": [
-      "\\(6\\)",
-      "\\(5\\)",
-      "\\(7\\)",
-      "\\(8\\)"
-    ],
-    "t": "Place value",
     "hint": "Count the number of zeros after the 8.",
     "solutionSteps": [
       {
@@ -200,7 +258,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q1h",
@@ -208,14 +285,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the correct number for the box: \\(36000000 = 36 \\times 10^\\Box\\)",
-    "a": "\\(6\\)",
-    "opts": [
-      "\\(6\\)",
-      "\\(5\\)",
-      "\\(7\\)",
-      "\\(4\\)"
-    ],
-    "t": "Place value",
     "hint": "Count the number of zeros after the 36.",
     "solutionSteps": [
       {
@@ -229,7 +298,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q2a",
@@ -237,14 +325,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 34 and the place value of the digit 4.",
-    "a": "Expanded form: \\(3 \\times 10 + 4 \\times 1\\), Place value: units",
-    "opts": [
-      "Expanded form: \\(3 \\times 10 + 4 \\times 1\\), Place value: units",
-      "Expanded form: \\(3 \\times 100 + 4 \\times 10\\), Place value: tens",
-      "Expanded form: \\(4 \\times 10 + 3 \\times 1\\), Place value: tens",
-      "Expanded form: \\(3 \\times 10 + 4 \\times 1\\), Place value: tens"
-    ],
-    "t": "Place value",
     "hint": "Look at the position of each digit starting from the right (units, tens).",
     "solutionSteps": [
       {
@@ -263,7 +343,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(3 \\times 10 + 4 \\times 1\\), Place value: units",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(3 \\times 100 + 4 \\times 10\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 10 + 3 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(3 \\times 10 + 4 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q2b",
@@ -271,14 +370,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 472 and the place value of the digit 4.",
-    "a": "Expanded form: \\(4 \\times 100 + 7 \\times 10 + 2 \\times 1\\), Place value: hundreds",
-    "opts": [
-      "Expanded form: \\(4 \\times 100 + 7 \\times 10 + 2 \\times 1\\), Place value: hundreds",
-      "Expanded form: \\(4 \\times 1000 + 7 \\times 100 + 2 \\times 10\\), Place value: thousands",
-      "Expanded form: \\(2 \\times 100 + 7 \\times 10 + 4 \\times 1\\), Place value: units",
-      "Expanded form: \\(4 \\times 100 + 7 \\times 10 + 2 \\times 1\\), Place value: tens"
-    ],
-    "t": "Place value",
     "hint": "Look at the position of each digit starting from the right (units, tens, hundreds).",
     "solutionSteps": [
       {
@@ -297,7 +388,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(4 \\times 100 + 7 \\times 10 + 2 \\times 1\\), Place value: hundreds",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 1000 + 7 \\times 100 + 2 \\times 10\\), Place value: thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(2 \\times 100 + 7 \\times 10 + 4 \\times 1\\), Place value: units",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 100 + 7 \\times 10 + 2 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q2c",
@@ -305,14 +415,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 941 and the place value of the digit 4.",
-    "a": "Expanded form: \\(9 \\times 100 + 4 \\times 10 + 1 \\times 1\\), Place value: tens",
-    "opts": [
-      "Expanded form: \\(9 \\times 100 + 4 \\times 10 + 1 \\times 1\\), Place value: tens",
-      "Expanded form: \\(9 \\times 100 + 4 \\times 10 + 1 \\times 1\\), Place value: units",
-      "Expanded form: \\(9 \\times 1000 + 4 \\times 100 + 1 \\times 10\\), Place value: hundreds",
-      "Expanded form: \\(1 \\times 100 + 4 \\times 10 + 9 \\times 1\\), Place value: tens"
-    ],
-    "t": "Place value",
     "hint": "Look at the position of each digit starting from the right (units, tens, hundreds).",
     "solutionSteps": [
       {
@@ -331,7 +433,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(9 \\times 100 + 4 \\times 10 + 1 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(9 \\times 100 + 4 \\times 10 + 1 \\times 1\\), Place value: units",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(9 \\times 1000 + 4 \\times 100 + 1 \\times 10\\), Place value: hundreds",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(1 \\times 100 + 4 \\times 10 + 9 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q2d",
@@ -339,14 +460,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 48 and the place value of the digit 4.",
-    "a": "Expanded form: \\(4 \\times 10 + 8 \\times 1\\), Place value: tens",
-    "opts": [
-      "Expanded form: \\(4 \\times 10 + 8 \\times 1\\), Place value: tens",
-      "Expanded form: \\(4 \\times 10 + 8 \\times 1\\), Place value: units",
-      "Expanded form: \\(8 \\times 10 + 4 \\times 1\\), Place value: units",
-      "Expanded form: \\(4 \\times 100 + 8 \\times 10\\), Place value: hundreds"
-    ],
-    "t": "Place value",
     "hint": "Look at the position of each digit starting from the right (units, tens).",
     "solutionSteps": [
       {
@@ -365,7 +478,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(4 \\times 10 + 8 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 10 + 8 \\times 1\\), Place value: units",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(8 \\times 10 + 4 \\times 1\\), Place value: units",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 100 + 8 \\times 10\\), Place value: hundreds",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q2e",
@@ -373,14 +505,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 154 and the place value of the digit 4.",
-    "a": "Expanded form: \\(1 \\times 100 + 5 \\times 10 + 4 \\times 1\\), Place value: units",
-    "opts": [
-      "Expanded form: \\(1 \\times 100 + 5 \\times 10 + 4 \\times 1\\), Place value: units",
-      "Expanded form: \\(1 \\times 100 + 5 \\times 10 + 4 \\times 1\\), Place value: tens",
-      "Expanded form: \\(1 \\times 1000 + 5 \\times 100 + 4 \\times 10\\), Place value: tens",
-      "Expanded form: \\(4 \\times 100 + 5 \\times 10 + 1 \\times 1\\), Place value: hundreds"
-    ],
-    "t": "Place value",
     "hint": "Look at the position of each digit starting from the right (units, tens, hundreds).",
     "solutionSteps": [
       {
@@ -399,7 +523,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(1 \\times 100 + 5 \\times 10 + 4 \\times 1\\), Place value: units",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(1 \\times 100 + 5 \\times 10 + 4 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(1 \\times 1000 + 5 \\times 100 + 4 \\times 10\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 100 + 5 \\times 10 + 1 \\times 1\\), Place value: hundreds",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q2f",
@@ -407,14 +550,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 840 and the place value of the digit 4.",
-    "a": "Expanded form: \\(8 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: tens",
-    "opts": [
-      "Expanded form: \\(8 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: tens",
-      "Expanded form: \\(8 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: units",
-      "Expanded form: \\(8 \\times 1000 + 4 \\times 100 + 0 \\times 10\\), Place value: hundreds",
-      "Expanded form: \\(4 \\times 100 + 8 \\times 10 + 0 \\times 1\\), Place value: hundreds"
-    ],
-    "t": "Place value",
     "hint": "Look at the position of each digit starting from the right (units, tens, hundreds).",
     "solutionSteps": [
       {
@@ -433,7 +568,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(8 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(8 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: units",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(8 \\times 1000 + 4 \\times 100 + 0 \\times 10\\), Place value: hundreds",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 100 + 8 \\times 10 + 0 \\times 1\\), Place value: hundreds",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q3a",
@@ -441,14 +595,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 4097 and the place value of the digit 7.",
-    "a": "Expanded form: \\(4 \\times 1000 + 0 \\times 100 + 9 \\times 10 + 7 \\times 1\\), Place value: units",
-    "opts": [
-      "Expanded form: \\(4 \\times 1000 + 0 \\times 100 + 9 \\times 10 + 7 \\times 1\\), Place value: units",
-      "Expanded form: \\(4 \\times 1000 + 0 \\times 100 + 9 \\times 10 + 7 \\times 1\\), Place value: tens",
-      "Expanded form: \\(7 \\times 1000 + 9 \\times 100 + 0 \\times 10 + 4 \\times 1\\), Place value: thousands",
-      "Expanded form: \\(4 \\times 1000 + 9 \\times 100 + 7 \\times 10\\), Place value: units"
-    ],
-    "t": "Place value",
     "hint": "Remember to include the zero in your expanded form.",
     "solutionSteps": [
       {
@@ -467,7 +613,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(4 \\times 1000 + 0 \\times 100 + 9 \\times 10 + 7 \\times 1\\), Place value: units",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 1000 + 0 \\times 100 + 9 \\times 10 + 7 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(7 \\times 1000 + 9 \\times 100 + 0 \\times 10 + 4 \\times 1\\), Place value: thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 1000 + 9 \\times 100 + 7 \\times 10\\), Place value: units",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q3b",
@@ -475,14 +640,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 7281 and the place value of the digit 7.",
-    "a": "Expanded form: \\(7 \\times 1000 + 2 \\times 100 + 8 \\times 10 + 1 \\times 1\\), Place value: thousands",
-    "opts": [
-      "Expanded form: \\(7 \\times 1000 + 2 \\times 100 + 8 \\times 10 + 1 \\times 1\\), Place value: thousands",
-      "Expanded form: \\(7 \\times 1000 + 2 \\times 100 + 8 \\times 10 + 1 \\times 1\\), Place value: hundreds",
-      "Expanded form: \\(1 \\times 1000 + 8 \\times 100 + 2 \\times 10 + 7 \\times 1\\), Place value: units",
-      "Expanded form: \\(7 \\times 10000 + 2 \\times 1000 + 8 \\times 100 + 1 \\times 10\\), Place value: ten thousands"
-    ],
-    "t": "Place value",
     "hint": "Count the positions carefully from right to left.",
     "solutionSteps": [
       {
@@ -501,7 +658,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(7 \\times 1000 + 2 \\times 100 + 8 \\times 10 + 1 \\times 1\\), Place value: thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(7 \\times 1000 + 2 \\times 100 + 8 \\times 10 + 1 \\times 1\\), Place value: hundreds",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(1 \\times 1000 + 8 \\times 100 + 2 \\times 10 + 7 \\times 1\\), Place value: units",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(7 \\times 10000 + 2 \\times 1000 + 8 \\times 100 + 1 \\times 10\\), Place value: ten thousands",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q3c",
@@ -509,14 +685,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 6075 and the place value of the digit 7.",
-    "a": "Expanded form: \\(6 \\times 1000 + 0 \\times 100 + 7 \\times 10 + 5 \\times 1\\), Place value: tens",
-    "opts": [
-      "Expanded form: \\(6 \\times 1000 + 0 \\times 100 + 7 \\times 10 + 5 \\times 1\\), Place value: tens",
-      "Expanded form: \\(6 \\times 1000 + 0 \\times 100 + 7 \\times 10 + 5 \\times 1\\), Place value: hundreds",
-      "Expanded form: \\(6 \\times 1000 + 7 \\times 100 + 5 \\times 10\\), Place value: hundreds",
-      "Expanded form: \\(5 \\times 1000 + 7 \\times 100 + 0 \\times 10 + 6 \\times 1\\), Place value: tens"
-    ],
-    "t": "Place value",
     "hint": "Count the positions carefully from right to left.",
     "solutionSteps": [
       {
@@ -535,7 +703,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(6 \\times 1000 + 0 \\times 100 + 7 \\times 10 + 5 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(6 \\times 1000 + 0 \\times 100 + 7 \\times 10 + 5 \\times 1\\), Place value: hundreds",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(6 \\times 1000 + 7 \\times 100 + 5 \\times 10\\), Place value: hundreds",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(5 \\times 1000 + 7 \\times 100 + 0 \\times 10 + 6 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q3d",
@@ -543,14 +730,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 27140 and the place value of the digit 7.",
-    "a": "Expanded form: \\(2 \\times 10000 + 7 \\times 1000 + 1 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: thousands",
-    "opts": [
-      "Expanded form: \\(2 \\times 10000 + 7 \\times 1000 + 1 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: thousands",
-      "Expanded form: \\(2 \\times 10000 + 7 \\times 1000 + 1 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: ten thousands",
-      "Expanded form: \\(2 \\times 1000 + 7 \\times 100 + 1 \\times 10 + 4 \\times 1\\), Place value: hundreds",
-      "Expanded form: \\(7 \\times 10000 + 2 \\times 1000 + 1 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: ten thousands"
-    ],
-    "t": "Place value",
     "hint": "Count the positions carefully from right to left.",
     "solutionSteps": [
       {
@@ -569,7 +748,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(2 \\times 10000 + 7 \\times 1000 + 1 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(2 \\times 10000 + 7 \\times 1000 + 1 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: ten thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(2 \\times 1000 + 7 \\times 100 + 1 \\times 10 + 4 \\times 1\\), Place value: hundreds",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(7 \\times 10000 + 2 \\times 1000 + 1 \\times 100 + 4 \\times 10 + 0 \\times 1\\), Place value: ten thousands",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q3e",
@@ -577,14 +775,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 60871 and the place value of the digit 7.",
-    "a": "Expanded form: \\(6 \\times 10000 + 0 \\times 1000 + 8 \\times 100 + 7 \\times 10 + 1 \\times 1\\), Place value: tens",
-    "opts": [
-      "Expanded form: \\(6 \\times 10000 + 0 \\times 1000 + 8 \\times 100 + 7 \\times 10 + 1 \\times 1\\), Place value: tens",
-      "Expanded form: \\(6 \\times 10000 + 0 \\times 1000 + 8 \\times 100 + 7 \\times 10 + 1 \\times 1\\), Place value: hundreds",
-      "Expanded form: \\(6 \\times 10000 + 8 \\times 1000 + 7 \\times 100 + 1 \\times 10\\), Place value: hundreds",
-      "Expanded form: \\(1 \\times 10000 + 7 \\times 1000 + 8 \\times 100 + 0 \\times 10 + 6 \\times 1\\), Place value: thousands"
-    ],
-    "t": "Place value",
     "hint": "Count the positions carefully from right to left.",
     "solutionSteps": [
       {
@@ -603,7 +793,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(6 \\times 10000 + 0 \\times 1000 + 8 \\times 100 + 7 \\times 10 + 1 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(6 \\times 10000 + 0 \\times 1000 + 8 \\times 100 + 7 \\times 10 + 1 \\times 1\\), Place value: hundreds",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(6 \\times 10000 + 8 \\times 1000 + 7 \\times 100 + 1 \\times 10\\), Place value: hundreds",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(1 \\times 10000 + 7 \\times 1000 + 8 \\times 100 + 0 \\times 10 + 6 \\times 1\\), Place value: thousands",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q3f",
@@ -611,14 +820,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 472859 and the place value of the digit 7.",
-    "a": "Expanded form: \\(4 \\times 100000 + 7 \\times 10000 + 2 \\times 1000 + 8 \\times 100 + 5 \\times 10 + 9 \\times 1\\), Place value: ten thousands",
-    "opts": [
-      "Expanded form: \\(4 \\times 100000 + 7 \\times 10000 + 2 \\times 1000 + 8 \\times 100 + 5 \\times 10 + 9 \\times 1\\), Place value: ten thousands",
-      "Expanded form: \\(4 \\times 100000 + 7 \\times 10000 + 2 \\times 1000 + 8 \\times 100 + 5 \\times 10 + 9 \\times 1\\), Place value: thousands",
-      "Expanded form: \\(4 \\times 100000 + 2 \\times 10000 + 7 \\times 1000 + 8 \\times 100 + 5 \\times 10 + 9 \\times 1\\), Place value: thousands",
-      "Expanded form: \\(9 \\times 100000 + 5 \\times 10000 + 8 \\times 1000 + 2 \\times 100 + 7 \\times 10 + 4 \\times 1\\), Place value: tens"
-    ],
-    "t": "Place value",
     "hint": "Count the positions carefully from right to left.",
     "solutionSteps": [
       {
@@ -637,7 +838,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(4 \\times 100000 + 7 \\times 10000 + 2 \\times 1000 + 8 \\times 100 + 5 \\times 10 + 9 \\times 1\\), Place value: ten thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 100000 + 7 \\times 10000 + 2 \\times 1000 + 8 \\times 100 + 5 \\times 10 + 9 \\times 1\\), Place value: thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 100000 + 2 \\times 10000 + 7 \\times 1000 + 8 \\times 100 + 5 \\times 10 + 9 \\times 1\\), Place value: thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(9 \\times 100000 + 5 \\times 10000 + 8 \\times 1000 + 2 \\times 100 + 7 \\times 10 + 4 \\times 1\\), Place value: tens",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q3g",
@@ -645,14 +865,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Identify the correct expanded form of the number 47589689 and the place value of the leftmost digit 7.",
-    "a": "Expanded form: \\(4 \\times 10000000 + 7 \\times 1000000 + 5 \\times 100000 + 8 \\times 10000 + 9 \\times 1000 + 6 \\times 100 + 8 \\times 10 + 9 \\times 1\\), Place value: millions",
-    "opts": [
-      "Expanded form: \\(4 \\times 10000000 + 7 \\times 1000000 + 5 \\times 100000 + 8 \\times 10000 + 9 \\times 1000 + 6 \\times 100 + 8 \\times 10 + 9 \\times 1\\), Place value: millions",
-      "Expanded form: \\(4 \\times 10000000 + 7 \\times 1000000 + 5 \\times 100000 + 8 \\times 10000 + 9 \\times 1000 + 6 \\times 100 + 8 \\times 10 + 9 \\times 1\\), Place value: ten millions",
-      "Expanded form: \\(4 \\times 1000000 + 7 \\times 100000 + 5 \\times 10000 + 8 \\times 1000 + 9 \\times 100 + 6 \\times 10 + 8 \\times 1\\), Place value: hundred thousands",
-      "Expanded form: \\(4 \\times 10000000 + 7 \\times 1000000 + 5 \\times 100000 + 8 \\times 10000 + 9 \\times 1000 + 6 \\times 100 + 8 \\times 10 + 9 \\times 1\\), Place value: hundred thousands"
-    ],
-    "t": "Place value",
     "hint": "Count the positions carefully from right to left.",
     "solutionSteps": [
       {
@@ -671,7 +883,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "Expanded form: \\(4 \\times 10000000 + 7 \\times 1000000 + 5 \\times 100000 + 8 \\times 10000 + 9 \\times 1000 + 6 \\times 100 + 8 \\times 10 + 9 \\times 1\\), Place value: millions",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 10000000 + 7 \\times 1000000 + 5 \\times 100000 + 8 \\times 10000 + 9 \\times 1000 + 6 \\times 100 + 8 \\times 10 + 9 \\times 1\\), Place value: ten millions",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 1000000 + 7 \\times 100000 + 5 \\times 10000 + 8 \\times 1000 + 9 \\times 100 + 6 \\times 10 + 8 \\times 1\\), Place value: hundred thousands",
+        "imageUrl": ""
+      },
+      {
+        "text": "Expanded form: \\(4 \\times 10000000 + 7 \\times 1000000 + 5 \\times 100000 + 8 \\times 10000 + 9 \\times 1000 + 6 \\times 100 + 8 \\times 10 + 9 \\times 1\\), Place value: hundred thousands",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q4",
@@ -679,14 +910,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Write down all of the three-digit numbers that can be formed from the digits 3, 7 and 8 (use each digit only once in each number formed), and list them from largest to smallest.",
-    "a": "\\(873, 837, 783, 738, 387, 378\\)",
-    "opts": [
-      "\\(873, 837, 783, 738, 387, 378\\)",
-      "\\(873, 783, 837, 738, 387, 378\\)",
-      "\\(378, 387, 738, 783, 837, 873\\)",
-      "\\(873, 837, 783, 738, 378, 387\\)"
-    ],
-    "t": "Place value",
     "hint": "Start with the largest possible digit in the hundreds place, then work your way down.",
     "solutionSteps": [
       {
@@ -710,7 +933,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(873, 837, 783, 738, 387, 378\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(873, 783, 837, 738, 387, 378\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(378, 387, 738, 783, 837, 873\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(873, 837, 783, 738, 378, 387\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-q5",
@@ -718,14 +960,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 180,
     "question": "Write down all of the three-digit numbers that can be formed from the digits 1, 4 and 6 (each digit can be used more than once in each number formed), and list them from largest to smallest.",
-    "a": "\\(666, 664, 661, 646, 644, 641, 616, 614, 611, 466, 464, 461, 446, 444, 441, 416, 414, 411, 166, 164, 161, 146, 144, 141, 116, 114, 111\\)",
-    "opts": [
-      "\\(666, 664, 661, 646, 644, 641, 616, 614, 611, 466, 464, 461, 446, 444, 441, 416, 414, 411, 166, 164, 161, 146, 144, 141, 116, 114, 111\\)",
-      "\\(666, 646, 616, 664, 644, 614, 661, 641, 611, 466, 446, 416, 464, 444, 414, 461, 441, 411, 166, 146, 116, 164, 144, 114, 161, 141, 111\\)",
-      "\\(111, 114, 116, 141, 144, 146, 161, 164, 166, 411, 414, 416, 441, 444, 446, 461, 464, 466, 611, 614, 616, 641, 644, 646, 661, 664, 666\\)",
-      "\\(666, 664, 661, 646, 644, 641, 616, 614, 466, 464, 461, 446, 444, 441, 416, 414, 411, 166, 164, 161, 146, 144, 141, 116, 114, 111, 611\\)"
-    ],
-    "t": "Place value",
     "hint": "You will have 27 numbers in total. Start with the largest possible number, 666.",
     "solutionSteps": [
       {
@@ -749,7 +983,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(666, 664, 661, 646, 644, 641, 616, 614, 611, 466, 464, 461, 446, 444, 441, 416, 414, 411, 166, 164, 161, 146, 144, 141, 116, 114, 111\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(666, 646, 616, 664, 644, 614, 661, 641, 611, 466, 446, 416, 464, 444, 414, 461, 441, 411, 166, 146, 116, 164, 144, 114, 161, 141, 111\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111, 114, 116, 141, 144, 146, 161, 164, 166, 411, 414, 416, 441, 444, 446, 461, 464, 466, 611, 614, 616, 641, 644, 646, 661, 664, 666\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(666, 664, 661, 646, 644, 641, 616, 614, 466, 464, 461, 446, 444, 441, 416, 414, 411, 166, 164, 161, 146, 144, 141, 116, 114, 111, 611\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h1",
@@ -757,13 +1010,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on aquatic micro-organism count records a total value of 579,000,1900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(5 \\times 10^{12}\\)",
-    "opts": [
-      "\\(5 \\times 10^{11}\\)",
-      "\\(5 \\times 10^{13}\\)",
-      "\\(5 \\times 10^{10}\\)",
-      "\\(5 \\times 10^{12}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 579,000,1900,000.",
@@ -781,8 +1027,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5 \\times 10^{11}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5 \\times 10^{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5 \\times 10^{12}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h2",
@@ -790,13 +1054,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring cryptocurrency transactions reports a quantity of \\(4 \\times 10^{9} + 5 \\times 10^{6} + 3 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(4,005,003,000\\)",
-    "opts": [
-      "\\(4,005,003,000\\)",
-      "\\(4,015,003,000\\)",
-      "\\(4,005,002,900\\)",
-      "\\(4,105,003,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -814,8 +1071,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4,005,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4,015,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4,005,002,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4,105,003,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h3",
@@ -823,13 +1098,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 39,629,629 recorded for supercomputer operations, what is the difference between the value of the digit 3 and the digit 9?",
-    "a": "\\(21,000,000\\)",
-    "opts": [
-      "\\(21,200,000\\)",
-      "\\(20,995,000\\)",
-      "\\(21,010,000\\)",
-      "\\(21,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 3 and compute its place value.",
@@ -847,8 +1115,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(21,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h4",
@@ -856,13 +1142,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for commercial flight passenger-miles registers 600,010,000 operations. How many times greater is the value represented by the digit 6 than the value represented by the digit 1?",
-    "a": "\\(60,000\\) times",
-    "opts": [
-      "\\(60,000\\) times",
-      "\\(600,000\\) times",
-      "\\(120,000\\) times",
-      "\\(6,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 6.",
@@ -880,8 +1159,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(60,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(600,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h5",
@@ -889,13 +1186,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring industrial steel production transfers \\(1900\\) liters. If this volume is multiplied by \\(10^{3}\\) and then divided by \\(10^{3}\\), write the resulting volume in standard form.",
-    "a": "\\(1,900\\)",
-    "opts": [
-      "\\(1,900\\)",
-      "\\(19,000\\)",
-      "\\(190\\)",
-      "\\(190,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -913,8 +1203,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(19,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(190\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(190,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h6",
@@ -922,13 +1230,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on agricultural grain harvest records a total value of 1194,000,6400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(1 \\times 10^{13}\\)",
-    "opts": [
-      "\\(1 \\times 10^{13}\\)",
-      "\\(1 \\times 10^{14}\\)",
-      "\\(1 \\times 10^{12}\\)",
-      "\\(1 \\times 10^{11}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 1194,000,6400,000.",
@@ -946,8 +1247,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{11}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h7",
@@ -955,13 +1274,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring city water purification volume reports a quantity of \\(2 \\times 10^{9} + 5 \\times 10^{6} + 2 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(2,005,002,000\\)",
-    "opts": [
-      "\\(2,005,001,900\\)",
-      "\\(2,015,002,000\\)",
-      "\\(2,005,002,000\\)",
-      "\\(2,105,002,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -979,8 +1291,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2,005,001,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2,015,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2,005,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2,105,002,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h8",
@@ -988,13 +1318,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 89,012,344 recorded for oceanic depth soundings, what is the difference between the value of the digit 8 and the digit 9?",
-    "a": "\\(71,000,000\\)",
-    "opts": [
-      "\\(71,000,000\\)",
-      "\\(71,010,000\\)",
-      "\\(71,200,000\\)",
-      "\\(70,995,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 8 and compute its place value.",
@@ -1012,8 +1335,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(71,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70,995,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h9",
@@ -1021,13 +1362,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for nanometer chip transistors registers 500,020,000 operations. How many times greater is the value represented by the digit 5 than the value represented by the digit 2?",
-    "a": "\\(25,000\\) times",
-    "opts": [
-      "\\(250,000\\) times",
-      "\\(25,000\\) times",
-      "\\(2,500\\) times",
-      "\\(50,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 5.",
@@ -1045,8 +1379,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(250,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2,500\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h10",
@@ -1054,13 +1406,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring global database entries transfers \\(2550\\) liters. If this volume is multiplied by \\(10^{4}\\) and then divided by \\(10^{2}\\), write the resulting volume in standard form.",
-    "a": "\\(255,000\\)",
-    "opts": [
-      "\\(255,000\\)",
-      "\\(2,550,000\\)",
-      "\\(25,500\\)",
-      "\\(25,500,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -1078,8 +1423,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(255,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2,550,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25,500,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h11",
@@ -1087,13 +1450,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on high-frequency trade volume records a total value of 1809,000,10900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(1 \\times 10^{14}\\)",
-    "opts": [
-      "\\(1 \\times 10^{14}\\)",
-      "\\(1 \\times 10^{15}\\)",
-      "\\(1 \\times 10^{13}\\)",
-      "\\(1 \\times 10^{12}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 1809,000,10900,000.",
@@ -1111,8 +1467,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{12}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h12",
@@ -1120,13 +1494,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring corporate carbon emissions reports a quantity of \\(7 \\times 10^{9} + 5 \\times 10^{6} + 1 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(7,005,001,000\\)",
-    "opts": [
-      "\\(7,105,001,000\\)",
-      "\\(7,005,001,000\\)",
-      "\\(7,015,001,000\\)",
-      "\\(7,005,000,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -1144,8 +1511,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7,105,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7,005,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7,015,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7,005,000,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h13",
@@ -1153,13 +1538,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 138,395,059 recorded for library digital catalog archives, what is the difference between the value of the digit 1 and the digit 3?",
-    "a": "\\(70,000,000\\)",
-    "opts": [
-      "\\(70,000,000\\)",
-      "\\(70,010,000\\)",
-      "\\(69,995,000\\)",
-      "\\(70,200,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 1 and compute its place value.",
@@ -1177,8 +1555,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(70,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(69,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70,200,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h14",
@@ -1186,13 +1582,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for solar farm energy output registers 400,030,000 operations. How many times greater is the value represented by the digit 4 than the value represented by the digit 3?",
-    "a": "\\(13,333\\) times",
-    "opts": [
-      "\\(133,330\\) times",
-      "\\(13,333\\) times",
-      "\\(1,333\\) times",
-      "\\(26,666\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 4.",
@@ -1210,8 +1599,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(133,330\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13,333\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,333\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26,666\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h15",
@@ -1219,13 +1626,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring volcanic ash dispersion particles transfers \\(3200\\) liters. If this volume is multiplied by \\(10^{5}\\) and then divided by \\(10^{1}\\), write the resulting volume in standard form.",
-    "a": "\\(32,000,000\\)",
-    "opts": [
-      "\\(3,200,000\\)",
-      "\\(32,000,000\\)",
-      "\\(320,000,000\\)",
-      "\\(3,200,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -1243,8 +1643,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(320,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,200,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h16",
@@ -1252,13 +1670,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on urban transit smart-card swipes records a total value of 2424,000,15400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(2 \\times 10^{14}\\)",
-    "opts": [
-      "\\(2 \\times 10^{12}\\)",
-      "\\(2 \\times 10^{13}\\)",
-      "\\(2 \\times 10^{15}\\)",
-      "\\(2 \\times 10^{14}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 2424,000,15400,000.",
@@ -1276,8 +1687,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2 \\times 10^{14}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h17",
@@ -1285,13 +1714,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring bacterial spore colony count reports a quantity of \\(5 \\times 10^{10} + 5 \\times 10^{6} + 3 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(50,005,003,000\\)",
-    "opts": [
-      "\\(50,005,002,900\\)",
-      "\\(50,015,003,000\\)",
-      "\\(51,005,003,000\\)",
-      "\\(50,005,003,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -1309,8 +1731,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(50,005,002,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50,015,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(51,005,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50,005,003,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h18",
@@ -1318,13 +1758,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 187,777,774 recorded for global internet router package transfers, what is the difference between the value of the digit 1 and the digit 8?",
-    "a": "\\(20,000,000\\)",
-    "opts": [
-      "\\(20,000,000\\)",
-      "\\(20,010,000\\)",
-      "\\(19,995,000\\)",
-      "\\(20,200,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 1 and compute its place value.",
@@ -1342,8 +1775,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(19,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20,200,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h19",
@@ -1351,13 +1802,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for deep-sea trench water pressure in micro-pascals registers 300,040,000 operations. How many times greater is the value represented by the digit 3 than the value represented by the digit 4?",
-    "a": "\\(7,500\\) times",
-    "opts": [
-      "\\(7,500\\) times",
-      "\\(75,000\\) times",
-      "\\(15,000\\) times",
-      "\\(750\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 3.",
@@ -1375,8 +1819,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7,500\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(750\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h20",
@@ -1384,13 +1846,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring national park wildlife census transfers \\(3850\\) liters. If this volume is multiplied by \\(10^{2}\\) and then divided by \\(10^{3}\\), write the resulting volume in standard form.",
-    "a": "\\(385\\)",
-    "opts": [
-      "\\(385\\)",
-      "\\(3,850\\)",
-      "\\(38,500\\)",
-      "\\(38\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -1408,8 +1863,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(385\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,850\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(38,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(38\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h21",
@@ -1417,13 +1890,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on aquatic micro-organism count records a total value of 3039,000,19900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(3 \\times 10^{14}\\)",
-    "opts": [
-      "\\(3 \\times 10^{12}\\)",
-      "\\(3 \\times 10^{14}\\)",
-      "\\(3 \\times 10^{15}\\)",
-      "\\(3 \\times 10^{13}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 3039,000,19900,000.",
@@ -1441,8 +1907,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3 \\times 10^{13}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h22",
@@ -1450,13 +1934,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring cryptocurrency transactions reports a quantity of \\(3 \\times 10^{10} + 5 \\times 10^{6} + 2 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(30,005,002,000\\)",
-    "opts": [
-      "\\(31,005,002,000\\)",
-      "\\(30,005,002,000\\)",
-      "\\(30,005,001,900\\)",
-      "\\(30,015,002,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -1474,8 +1951,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(31,005,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30,005,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30,005,001,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30,015,002,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h23",
@@ -1483,13 +1978,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 237,160,489 recorded for supercomputer operations, what is the difference between the value of the digit 2 and the digit 3?",
-    "a": "\\(170,000,000\\)",
-    "opts": [
-      "\\(170,200,000\\)",
-      "\\(169,995,000\\)",
-      "\\(170,010,000\\)",
-      "\\(170,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 2 and compute its place value.",
@@ -1507,8 +1995,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(170,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(169,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(170,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(170,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h24",
@@ -1516,13 +2022,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for commercial flight passenger-miles registers 200,010,000 operations. How many times greater is the value represented by the digit 2 than the value represented by the digit 1?",
-    "a": "\\(20,000\\) times",
-    "opts": [
-      "\\(200,000\\) times",
-      "\\(20,000\\) times",
-      "\\(2,000\\) times",
-      "\\(40,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 2.",
@@ -1540,8 +2039,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(200,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h25",
@@ -1549,13 +2066,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring industrial steel production transfers \\(4500\\) liters. If this volume is multiplied by \\(10^{3}\\) and then divided by \\(10^{2}\\), write the resulting volume in standard form.",
-    "a": "\\(45,000\\)",
-    "opts": [
-      "\\(450,000\\)",
-      "\\(4,500,000\\)",
-      "\\(45,000\\)",
-      "\\(4,500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -1573,8 +2083,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(450,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4,500,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4,500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h26",
@@ -1582,13 +2110,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on agricultural grain harvest records a total value of 3654,000,24400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(3 \\times 10^{14}\\)",
-    "opts": [
-      "\\(3 \\times 10^{12}\\)",
-      "\\(3 \\times 10^{15}\\)",
-      "\\(3 \\times 10^{13}\\)",
-      "\\(3 \\times 10^{14}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 3654,000,24400,000.",
@@ -1606,8 +2127,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3 \\times 10^{14}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h27",
@@ -1615,13 +2154,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring city water purification volume reports a quantity of \\(8 \\times 10^{10} + 5 \\times 10^{7} + 1 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(80,050,001,000\\)",
-    "opts": [
-      "\\(80,050,001,000\\)",
-      "\\(81,050,001,000\\)",
-      "\\(80,150,001,000\\)",
-      "\\(80,050,000,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -1639,8 +2171,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(80,050,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,050,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80,150,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80,050,000,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h28",
@@ -1648,13 +2198,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 286,543,204 recorded for oceanic depth soundings, what is the difference between the value of the digit 2 and the digit 8?",
-    "a": "\\(120,000,000\\)",
-    "opts": [
-      "\\(120,200,000\\)",
-      "\\(120,000,000\\)",
-      "\\(120,010,000\\)",
-      "\\(119,995,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 2 and compute its place value.",
@@ -1672,8 +2215,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(120,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(119,995,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h29",
@@ -1681,13 +2242,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for nanometer chip transistors registers 700,020,000 operations. How many times greater is the value represented by the digit 7 than the value represented by the digit 2?",
-    "a": "\\(35,000\\) times",
-    "opts": [
-      "\\(35,000\\) times",
-      "\\(350,000\\) times",
-      "\\(3,500\\) times",
-      "\\(70,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 7.",
@@ -1705,8 +2259,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(35,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(350,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,500\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h30",
@@ -1714,13 +2286,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring global database entries transfers \\(5150\\) liters. If this volume is multiplied by \\(10^{4}\\) and then divided by \\(10^{1}\\), write the resulting volume in standard form.",
-    "a": "\\(5,150,000\\)",
-    "opts": [
-      "\\(515,000\\)",
-      "\\(51,500,000\\)",
-      "\\(5,150,000\\)",
-      "\\(515,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -1738,8 +2303,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(515,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(51,500,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5,150,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(515,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h31",
@@ -1747,13 +2330,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on high-frequency trade volume records a total value of 4269,000,28900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(4 \\times 10^{14}\\)",
-    "opts": [
-      "\\(4 \\times 10^{14}\\)",
-      "\\(4 \\times 10^{15}\\)",
-      "\\(4 \\times 10^{12}\\)",
-      "\\(4 \\times 10^{13}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 4269,000,28900,000.",
@@ -1771,8 +2347,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4 \\times 10^{13}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h32",
@@ -1780,13 +2374,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring corporate carbon emissions reports a quantity of \\(6 \\times 10^{11} + 5 \\times 10^{7} + 3 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(600,050,003,000\\)",
-    "opts": [
-      "\\(600,050,003,000\\)",
-      "\\(610,050,003,000\\)",
-      "\\(600,150,003,000\\)",
-      "\\(600,050,002,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -1804,8 +2391,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(600,050,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(610,050,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(600,150,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(600,050,002,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h33",
@@ -1813,13 +2418,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 335,925,919 recorded for library digital catalog archives, what is the difference between the value of the digit 3 and the digit 5?",
-    "a": "\\(295,000,000\\)",
-    "opts": [
-      "\\(295,000,000\\)",
-      "\\(295,010,000\\)",
-      "\\(295,200,000\\)",
-      "\\(294,995,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 3 and compute its place value.",
@@ -1837,8 +2435,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(295,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(295,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(295,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(294,995,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h34",
@@ -1846,13 +2462,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for solar farm energy output registers 600,030,000 operations. How many times greater is the value represented by the digit 6 than the value represented by the digit 3?",
-    "a": "\\(20,000\\) times",
-    "opts": [
-      "\\(200,000\\) times",
-      "\\(2,000\\) times",
-      "\\(20,000\\) times",
-      "\\(40,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 6.",
@@ -1870,8 +2479,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(200,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h35",
@@ -1879,13 +2506,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring volcanic ash dispersion particles transfers \\(5800\\) liters. If this volume is multiplied by \\(10^{5}\\) and then divided by \\(10^{3}\\), write the resulting volume in standard form.",
-    "a": "\\(580,000\\)",
-    "opts": [
-      "\\(58,000\\)",
-      "\\(5,800,000\\)",
-      "\\(58,000,000\\)",
-      "\\(580,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -1903,8 +2523,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(58,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5,800,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(58,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(580,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h36",
@@ -1912,13 +2550,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on urban transit smart-card swipes records a total value of 4884,000,33400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(4 \\times 10^{14}\\)",
-    "opts": [
-      "\\(4 \\times 10^{12}\\)",
-      "\\(4 \\times 10^{13}\\)",
-      "\\(4 \\times 10^{15}\\)",
-      "\\(4 \\times 10^{14}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 4884,000,33400,000.",
@@ -1936,8 +2567,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4 \\times 10^{14}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h37",
@@ -1945,13 +2594,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring bacterial spore colony count reports a quantity of \\(4 \\times 10^{11} + 5 \\times 10^{7} + 2 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(400,050,002,000\\)",
-    "opts": [
-      "\\(400,050,002,000\\)",
-      "\\(400,150,002,000\\)",
-      "\\(400,050,001,900\\)",
-      "\\(410,050,002,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -1969,8 +2611,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(400,050,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400,150,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400,050,001,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(410,050,002,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h38",
@@ -1978,13 +2638,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 385,308,634 recorded for global internet router package transfers, what is the difference between the value of the digit 3 and the digit 8?",
-    "a": "\\(220,000,000\\)",
-    "opts": [
-      "\\(219,995,000\\)",
-      "\\(220,200,000\\)",
-      "\\(220,000,000\\)",
-      "\\(220,010,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 3 and compute its place value.",
@@ -2002,8 +2655,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(219,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(220,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(220,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(220,010,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h39",
@@ -2011,13 +2682,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for deep-sea trench water pressure in micro-pascals registers 500,040,000 operations. How many times greater is the value represented by the digit 5 than the value represented by the digit 4?",
-    "a": "\\(12,500\\) times",
-    "opts": [
-      "\\(25,000\\) times",
-      "\\(1,250\\) times",
-      "\\(125,000\\) times",
-      "\\(12,500\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 5.",
@@ -2035,8 +2699,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(25,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,250\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12,500\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h40",
@@ -2044,13 +2726,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring national park wildlife census transfers \\(6450\\) liters. If this volume is multiplied by \\(10^{2}\\) and then divided by \\(10^{2}\\), write the resulting volume in standard form.",
-    "a": "\\(6,450\\)",
-    "opts": [
-      "\\(6,450\\)",
-      "\\(64,500\\)",
-      "\\(645,000\\)",
-      "\\(645\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -2068,8 +2743,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6,450\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(645,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(645\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h41",
@@ -2077,13 +2770,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on aquatic micro-organism count records a total value of 5499,000,37900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(5 \\times 10^{14}\\)",
-    "opts": [
-      "\\(5 \\times 10^{14}\\)",
-      "\\(5 \\times 10^{15}\\)",
-      "\\(5 \\times 10^{13}\\)",
-      "\\(5 \\times 10^{12}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 5499,000,37900,000.",
@@ -2101,8 +2787,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5 \\times 10^{12}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h42",
@@ -2110,13 +2814,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring cryptocurrency transactions reports a quantity of \\(2 \\times 10^{11} + 5 \\times 10^{7} + 1 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(200,050,001,000\\)",
-    "opts": [
-      "\\(210,050,001,000\\)",
-      "\\(200,050,001,000\\)",
-      "\\(200,050,000,900\\)",
-      "\\(200,150,001,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -2134,8 +2831,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(210,050,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200,050,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200,050,000,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200,150,001,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h43",
@@ -2143,13 +2858,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 434,691,349 recorded for supercomputer operations, what is the difference between the value of the digit 4 and the digit 3?",
-    "a": "\\(370,000,000\\)",
-    "opts": [
-      "\\(370,200,000\\)",
-      "\\(369,995,000\\)",
-      "\\(370,010,000\\)",
-      "\\(370,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 4 and compute its place value.",
@@ -2167,8 +2875,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(370,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(369,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(370,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(370,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h44",
@@ -2176,13 +2902,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for commercial flight passenger-miles registers 400,010,000 operations. How many times greater is the value represented by the digit 4 than the value represented by the digit 1?",
-    "a": "\\(40,000\\) times",
-    "opts": [
-      "\\(4,000\\) times",
-      "\\(400,000\\) times",
-      "\\(40,000\\) times",
-      "\\(80,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 4.",
@@ -2200,8 +2919,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h45",
@@ -2209,13 +2946,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring industrial steel production transfers \\(7100\\) liters. If this volume is multiplied by \\(10^{3}\\) and then divided by \\(10^{1}\\), write the resulting volume in standard form.",
-    "a": "\\(710,000\\)",
-    "opts": [
-      "\\(71,000\\)",
-      "\\(71,000,000\\)",
-      "\\(710,000\\)",
-      "\\(7,100,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -2233,8 +2963,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(71,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(710,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7,100,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h46",
@@ -2242,13 +2990,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on agricultural grain harvest records a total value of 6114,000,42400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(6 \\times 10^{14}\\)",
-    "opts": [
-      "\\(6 \\times 10^{14}\\)",
-      "\\(6 \\times 10^{12}\\)",
-      "\\(6 \\times 10^{15}\\)",
-      "\\(6 \\times 10^{13}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 6114,000,42400,000.",
@@ -2266,8 +3007,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6 \\times 10^{13}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h47",
@@ -2275,13 +3034,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring city water purification volume reports a quantity of \\(7 \\times 10^{12} + 5 \\times 10^{7} + 3 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(7,000,050,003,000\\)",
-    "opts": [
-      "\\(7,000,050,002,900\\)",
-      "\\(7,100,050,003,000\\)",
-      "\\(7,000,150,003,000\\)",
-      "\\(7,000,050,003,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -2299,8 +3051,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7,000,050,002,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7,100,050,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7,000,150,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7,000,050,003,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h48",
@@ -2308,13 +3078,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 484,074,064 recorded for oceanic depth soundings, what is the difference between the value of the digit 4 and the digit 8?",
-    "a": "\\(320,000,000\\)",
-    "opts": [
-      "\\(320,000,000\\)",
-      "\\(320,010,000\\)",
-      "\\(319,995,000\\)",
-      "\\(320,200,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 4 and compute its place value.",
@@ -2332,8 +3095,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(320,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(320,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(319,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(320,200,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h49",
@@ -2341,13 +3122,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for nanometer chip transistors registers 300,020,000 operations. How many times greater is the value represented by the digit 3 than the value represented by the digit 2?",
-    "a": "\\(15,000\\) times",
-    "opts": [
-      "\\(30,000\\) times",
-      "\\(150,000\\) times",
-      "\\(15,000\\) times",
-      "\\(1,500\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 3.",
@@ -2365,8 +3139,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(30,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(150,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,500\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h50",
@@ -2374,13 +3166,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring global database entries transfers \\(7750\\) liters. If this volume is multiplied by \\(10^{4}\\) and then divided by \\(10^{3}\\), write the resulting volume in standard form.",
-    "a": "\\(77,500\\)",
-    "opts": [
-      "\\(77,500\\)",
-      "\\(775,000\\)",
-      "\\(7,750\\)",
-      "\\(7,750,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -2398,8 +3183,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(77,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(775,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7,750\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7,750,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h51",
@@ -2407,13 +3210,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on high-frequency trade volume records a total value of 6729,000,46900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(6 \\times 10^{14}\\)",
-    "opts": [
-      "\\(6 \\times 10^{15}\\)",
-      "\\(6 \\times 10^{14}\\)",
-      "\\(6 \\times 10^{12}\\)",
-      "\\(6 \\times 10^{13}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 6729,000,46900,000.",
@@ -2431,8 +3227,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6 \\times 10^{13}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h52",
@@ -2440,13 +3254,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring corporate carbon emissions reports a quantity of \\(5 \\times 10^{12} + 5 \\times 10^{8} + 2 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(5,000,500,002,000\\)",
-    "opts": [
-      "\\(5,000,500,002,000\\)",
-      "\\(5,001,500,002,000\\)",
-      "\\(5,000,500,001,900\\)",
-      "\\(5,100,500,002,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -2464,8 +3271,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5,000,500,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5,001,500,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5,000,500,001,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5,100,500,002,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h53",
@@ -2473,13 +3298,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 533,456,779 recorded for library digital catalog archives, what is the difference between the value of the digit 5 and the digit 3?",
-    "a": "\\(470,000,000\\)",
-    "opts": [
-      "\\(470,010,000\\)",
-      "\\(470,200,000\\)",
-      "\\(469,995,000\\)",
-      "\\(470,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 5 and compute its place value.",
@@ -2497,8 +3315,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(470,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(470,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(469,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(470,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h54",
@@ -2506,13 +3342,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for solar farm energy output registers 200,030,000 operations. How many times greater is the value represented by the digit 2 than the value represented by the digit 3?",
-    "a": "\\(6,666\\) times",
-    "opts": [
-      "\\(6,666\\) times",
-      "\\(13,332\\) times",
-      "\\(66,660\\) times",
-      "\\(666\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 2.",
@@ -2530,8 +3359,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6,666\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13,332\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(66,660\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(666\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h55",
@@ -2539,13 +3386,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring volcanic ash dispersion particles transfers \\(8400\\) liters. If this volume is multiplied by \\(10^{5}\\) and then divided by \\(10^{2}\\), write the resulting volume in standard form.",
-    "a": "\\(8,400,000\\)",
-    "opts": [
-      "\\(84,000,000\\)",
-      "\\(840,000,000\\)",
-      "\\(840,000\\)",
-      "\\(8,400,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -2563,8 +3403,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(84,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(840,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(840,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8,400,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h56",
@@ -2572,13 +3430,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on urban transit smart-card swipes records a total value of 7344,000,51400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(7 \\times 10^{14}\\)",
-    "opts": [
-      "\\(7 \\times 10^{14}\\)",
-      "\\(7 \\times 10^{12}\\)",
-      "\\(7 \\times 10^{15}\\)",
-      "\\(7 \\times 10^{13}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 7344,000,51400,000.",
@@ -2596,8 +3447,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7 \\times 10^{13}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h57",
@@ -2605,13 +3474,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring bacterial spore colony count reports a quantity of \\(3 \\times 10^{12} + 5 \\times 10^{8} + 1 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(3,000,500,001,000\\)",
-    "opts": [
-      "\\(3,000,500,001,000\\)",
-      "\\(3,001,500,001,000\\)",
-      "\\(3,000,500,000,900\\)",
-      "\\(3,100,500,001,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -2629,8 +3491,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3,000,500,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,001,500,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,000,500,000,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,100,500,001,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h58",
@@ -2638,13 +3518,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 582,839,494 recorded for global internet router package transfers, what is the difference between the value of the digit 5 and the digit 8?",
-    "a": "\\(420,000,000\\)",
-    "opts": [
-      "\\(419,995,000\\)",
-      "\\(420,010,000\\)",
-      "\\(420,000,000\\)",
-      "\\(420,200,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 5 and compute its place value.",
@@ -2662,8 +3535,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(419,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(420,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(420,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(420,200,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h59",
@@ -2671,13 +3562,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for deep-sea trench water pressure in micro-pascals registers 700,040,000 operations. How many times greater is the value represented by the digit 7 than the value represented by the digit 4?",
-    "a": "\\(17,500\\) times",
-    "opts": [
-      "\\(35,000\\) times",
-      "\\(1,750\\) times",
-      "\\(17,500\\) times",
-      "\\(175,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 7.",
@@ -2695,8 +3579,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(35,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,750\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17,500\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(175,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h60",
@@ -2704,13 +3606,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring national park wildlife census transfers \\(9050\\) liters. If this volume is multiplied by \\(10^{2}\\) and then divided by \\(10^{1}\\), write the resulting volume in standard form.",
-    "a": "\\(90,500\\)",
-    "opts": [
-      "\\(9,050,000\\)",
-      "\\(90,500\\)",
-      "\\(9,050\\)",
-      "\\(905,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -2728,8 +3623,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(9,050,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(90,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9,050\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(905,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h61",
@@ -2737,13 +3650,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on aquatic micro-organism count records a total value of 7959,000,55900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(7 \\times 10^{14}\\)",
-    "opts": [
-      "\\(7 \\times 10^{15}\\)",
-      "\\(7 \\times 10^{14}\\)",
-      "\\(7 \\times 10^{12}\\)",
-      "\\(7 \\times 10^{13}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 7959,000,55900,000.",
@@ -2761,8 +3667,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7 \\times 10^{13}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h62",
@@ -2770,13 +3694,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring cryptocurrency transactions reports a quantity of \\(8 \\times 10^{13} + 5 \\times 10^{8} + 3 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(80,000,500,003,000\\)",
-    "opts": [
-      "\\(80,000,500,003,000\\)",
-      "\\(80,001,500,003,000\\)",
-      "\\(81,000,500,003,000\\)",
-      "\\(80,000,500,002,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -2794,8 +3711,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(80,000,500,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80,001,500,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,000,500,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80,000,500,002,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h63",
@@ -2803,13 +3738,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 632,222,209 recorded for supercomputer operations, what is the difference between the value of the digit 6 and the digit 3?",
-    "a": "\\(570,000,000\\)",
-    "opts": [
-      "\\(569,995,000\\)",
-      "\\(570,000,000\\)",
-      "\\(570,200,000\\)",
-      "\\(570,010,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 6 and compute its place value.",
@@ -2827,8 +3755,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(569,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(570,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(570,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(570,010,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h64",
@@ -2836,13 +3782,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for commercial flight passenger-miles registers 600,010,000 operations. How many times greater is the value represented by the digit 6 than the value represented by the digit 1?",
-    "a": "\\(60,000\\) times",
-    "opts": [
-      "\\(120,000\\) times",
-      "\\(6,000\\) times",
-      "\\(600,000\\) times",
-      "\\(60,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 6.",
@@ -2860,8 +3799,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(120,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(600,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h65",
@@ -2869,13 +3826,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring industrial steel production transfers \\(9700\\) liters. If this volume is multiplied by \\(10^{3}\\) and then divided by \\(10^{3}\\), write the resulting volume in standard form.",
-    "a": "\\(9,700\\)",
-    "opts": [
-      "\\(970\\)",
-      "\\(97,000\\)",
-      "\\(9,700\\)",
-      "\\(970,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -2893,8 +3843,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(970\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(97,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9,700\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(970,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h66",
@@ -2902,13 +3870,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on agricultural grain harvest records a total value of 8574,000,60400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(8 \\times 10^{14}\\)",
-    "opts": [
-      "\\(8 \\times 10^{14}\\)",
-      "\\(8 \\times 10^{15}\\)",
-      "\\(8 \\times 10^{13}\\)",
-      "\\(8 \\times 10^{12}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 8574,000,60400,000.",
@@ -2926,8 +3887,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(8 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8 \\times 10^{12}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h67",
@@ -2935,13 +3914,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring city water purification volume reports a quantity of \\(6 \\times 10^{13} + 5 \\times 10^{8} + 2 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(60,000,500,002,000\\)",
-    "opts": [
-      "\\(60,000,500,002,000\\)",
-      "\\(60,001,500,002,000\\)",
-      "\\(60,000,500,001,900\\)",
-      "\\(61,000,500,002,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -2959,8 +3931,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(60,000,500,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60,001,500,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60,000,500,001,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(61,000,500,002,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h68",
@@ -2968,13 +3958,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 681,604,924 recorded for oceanic depth soundings, what is the difference between the value of the digit 6 and the digit 8?",
-    "a": "\\(520,000,000\\)",
-    "opts": [
-      "\\(520,000,000\\)",
-      "\\(520,010,000\\)",
-      "\\(520,200,000\\)",
-      "\\(519,995,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 6 and compute its place value.",
@@ -2992,8 +3975,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(520,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(520,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(520,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(519,995,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h69",
@@ -3001,13 +4002,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for nanometer chip transistors registers 500,020,000 operations. How many times greater is the value represented by the digit 5 than the value represented by the digit 2?",
-    "a": "\\(25,000\\) times",
-    "opts": [
-      "\\(2,500\\) times",
-      "\\(250,000\\) times",
-      "\\(50,000\\) times",
-      "\\(25,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 5.",
@@ -3025,8 +4019,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2,500\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(250,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h70",
@@ -3034,13 +4046,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring global database entries transfers \\(10350\\) liters. If this volume is multiplied by \\(10^{4}\\) and then divided by \\(10^{2}\\), write the resulting volume in standard form.",
-    "a": "\\(1,035,000\\)",
-    "opts": [
-      "\\(103,500,000\\)",
-      "\\(1,035,000\\)",
-      "\\(10,350,000\\)",
-      "\\(103,500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -3058,8 +4063,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(103,500,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,035,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10,350,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(103,500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h71",
@@ -3067,13 +4090,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on high-frequency trade volume records a total value of 9189,000,64900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(9 \\times 10^{14}\\)",
-    "opts": [
-      "\\(9 \\times 10^{12}\\)",
-      "\\(9 \\times 10^{13}\\)",
-      "\\(9 \\times 10^{15}\\)",
-      "\\(9 \\times 10^{14}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 9189,000,64900,000.",
@@ -3091,8 +4107,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(9 \\times 10^{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9 \\times 10^{14}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h72",
@@ -3100,13 +4134,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring corporate carbon emissions reports a quantity of \\(4 \\times 10^{13} + 5 \\times 10^{8} + 1 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(40,000,500,001,000\\)",
-    "opts": [
-      "\\(41,000,500,001,000\\)",
-      "\\(40,000,500,001,000\\)",
-      "\\(40,001,500,001,000\\)",
-      "\\(40,000,500,000,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -3124,8 +4151,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(41,000,500,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40,000,500,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40,001,500,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40,000,500,000,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h73",
@@ -3133,13 +4178,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 730,987,639 recorded for library digital catalog archives, what is the difference between the value of the digit 7 and the digit 3?",
-    "a": "\\(670,000,000\\)",
-    "opts": [
-      "\\(670,200,000\\)",
-      "\\(669,995,000\\)",
-      "\\(670,000,000\\)",
-      "\\(670,010,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 7 and compute its place value.",
@@ -3157,8 +4195,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(670,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(669,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(670,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(670,010,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h74",
@@ -3166,13 +4222,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for solar farm energy output registers 400,030,000 operations. How many times greater is the value represented by the digit 4 than the value represented by the digit 3?",
-    "a": "\\(13,333\\) times",
-    "opts": [
-      "\\(133,330\\) times",
-      "\\(13,333\\) times",
-      "\\(26,666\\) times",
-      "\\(1,333\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 4.",
@@ -3190,8 +4239,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(133,330\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13,333\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26,666\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,333\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h75",
@@ -3199,13 +4266,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring volcanic ash dispersion particles transfers \\(11000\\) liters. If this volume is multiplied by \\(10^{5}\\) and then divided by \\(10^{1}\\), write the resulting volume in standard form.",
-    "a": "\\(110,000,000\\)",
-    "opts": [
-      "\\(110,000,000\\)",
-      "\\(1,100,000,000\\)",
-      "\\(11,000,000,000\\)",
-      "\\(11,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -3223,8 +4283,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(110,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,100,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11,000,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h76",
@@ -3232,13 +4310,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on urban transit smart-card swipes records a total value of 9804,000,69400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(9 \\times 10^{14}\\)",
-    "opts": [
-      "\\(9 \\times 10^{13}\\)",
-      "\\(9 \\times 10^{15}\\)",
-      "\\(9 \\times 10^{14}\\)",
-      "\\(9 \\times 10^{12}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 9804,000,69400,000.",
@@ -3256,8 +4327,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(9 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9 \\times 10^{12}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h77",
@@ -3265,13 +4354,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring bacterial spore colony count reports a quantity of \\(2 \\times 10^{14} + 5 \\times 10^{9} + 3 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(200,005,000,003,000\\)",
-    "opts": [
-      "\\(200,005,000,002,900\\)",
-      "\\(200,015,000,003,000\\)",
-      "\\(200,005,000,003,000\\)",
-      "\\(210,005,000,003,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -3289,8 +4371,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(200,005,000,002,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200,015,000,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200,005,000,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(210,005,000,003,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h78",
@@ -3298,13 +4398,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 780,370,354 recorded for global internet router package transfers, what is the difference between the value of the digit 7 and the digit 8?",
-    "a": "\\(620,000,000\\)",
-    "opts": [
-      "\\(620,010,000\\)",
-      "\\(620,000,000\\)",
-      "\\(619,995,000\\)",
-      "\\(620,200,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 7 and compute its place value.",
@@ -3322,8 +4415,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(620,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(620,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(619,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(620,200,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h79",
@@ -3331,13 +4442,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for deep-sea trench water pressure in micro-pascals registers 300,040,000 operations. How many times greater is the value represented by the digit 3 than the value represented by the digit 4?",
-    "a": "\\(7,500\\) times",
-    "opts": [
-      "\\(7,500\\) times",
-      "\\(75,000\\) times",
-      "\\(750\\) times",
-      "\\(15,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 3.",
@@ -3355,8 +4459,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7,500\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(750\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h80",
@@ -3364,13 +4486,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring national park wildlife census transfers \\(11650\\) liters. If this volume is multiplied by \\(10^{2}\\) and then divided by \\(10^{3}\\), write the resulting volume in standard form.",
-    "a": "\\(1,165\\)",
-    "opts": [
-      "\\(1,165\\)",
-      "\\(11,650\\)",
-      "\\(116\\)",
-      "\\(116,500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -3388,8 +4503,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1,165\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11,650\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(116\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(116,500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h81",
@@ -3397,13 +4530,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on aquatic micro-organism count records a total value of 10419,000,73900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(1 \\times 10^{15}\\)",
-    "opts": [
-      "\\(1 \\times 10^{14}\\)",
-      "\\(1 \\times 10^{15}\\)",
-      "\\(1 \\times 10^{13}\\)",
-      "\\(1 \\times 10^{16}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 10419,000,73900,000.",
@@ -3421,8 +4547,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{16}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h82",
@@ -3430,13 +4574,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring cryptocurrency transactions reports a quantity of \\(7 \\times 10^{14} + 5 \\times 10^{9} + 2 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(700,005,000,002,000\\)",
-    "opts": [
-      "\\(710,005,000,002,000\\)",
-      "\\(700,005,000,001,900\\)",
-      "\\(700,015,000,002,000\\)",
-      "\\(700,005,000,002,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -3454,8 +4591,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(710,005,000,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(700,005,000,001,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(700,015,000,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(700,005,000,002,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h83",
@@ -3463,13 +4618,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 829,753,069 recorded for supercomputer operations, what is the difference between the value of the digit 8 and the digit 2?",
-    "a": "\\(780,000,000\\)",
-    "opts": [
-      "\\(779,995,000\\)",
-      "\\(780,010,000\\)",
-      "\\(780,200,000\\)",
-      "\\(780,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 8 and compute its place value.",
@@ -3487,8 +4635,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(779,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(780,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(780,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(780,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h84",
@@ -3496,13 +4662,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for commercial flight passenger-miles registers 200,010,000 operations. How many times greater is the value represented by the digit 2 than the value represented by the digit 1?",
-    "a": "\\(20,000\\) times",
-    "opts": [
-      "\\(2,000\\) times",
-      "\\(200,000\\) times",
-      "\\(20,000\\) times",
-      "\\(40,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 2.",
@@ -3520,8 +4679,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h85",
@@ -3529,13 +4706,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring industrial steel production transfers \\(12300\\) liters. If this volume is multiplied by \\(10^{3}\\) and then divided by \\(10^{2}\\), write the resulting volume in standard form.",
-    "a": "\\(123,000\\)",
-    "opts": [
-      "\\(1,230,000\\)",
-      "\\(123,000\\)",
-      "\\(12,300,000\\)",
-      "\\(12,300\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -3553,8 +4723,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1,230,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(123,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12,300,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12,300\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h86",
@@ -3562,13 +4750,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on agricultural grain harvest records a total value of 11034,000,78400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(1 \\times 10^{15}\\)",
-    "opts": [
-      "\\(1 \\times 10^{13}\\)",
-      "\\(1 \\times 10^{14}\\)",
-      "\\(1 \\times 10^{16}\\)",
-      "\\(1 \\times 10^{15}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 11034,000,78400,000.",
@@ -3586,8 +4767,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{16}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{15}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h87",
@@ -3595,13 +4794,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring city water purification volume reports a quantity of \\(5 \\times 10^{14} + 5 \\times 10^{9} + 1 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(500,005,000,001,000\\)",
-    "opts": [
-      "\\(500,005,000,001,000\\)",
-      "\\(500,015,000,001,000\\)",
-      "\\(500,005,000,000,900\\)",
-      "\\(510,005,000,001,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -3619,8 +4811,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(500,005,000,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(500,015,000,001,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(500,005,000,000,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(510,005,000,001,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h88",
@@ -3628,13 +4838,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 879,135,784 recorded for oceanic depth soundings, what is the difference between the value of the digit 8 and the digit 7?",
-    "a": "\\(730,000,000\\)",
-    "opts": [
-      "\\(729,995,000\\)",
-      "\\(730,010,000\\)",
-      "\\(730,200,000\\)",
-      "\\(730,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 8 and compute its place value.",
@@ -3652,8 +4855,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(729,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(730,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(730,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(730,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h89",
@@ -3661,13 +4882,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for nanometer chip transistors registers 700,020,000 operations. How many times greater is the value represented by the digit 7 than the value represented by the digit 2?",
-    "a": "\\(35,000\\) times",
-    "opts": [
-      "\\(35,000\\) times",
-      "\\(70,000\\) times",
-      "\\(350,000\\) times",
-      "\\(3,500\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 7.",
@@ -3685,8 +4899,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(35,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(350,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,500\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h90",
@@ -3694,13 +4926,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring global database entries transfers \\(12950\\) liters. If this volume is multiplied by \\(10^{4}\\) and then divided by \\(10^{1}\\), write the resulting volume in standard form.",
-    "a": "\\(12,950,000\\)",
-    "opts": [
-      "\\(129,500,000\\)",
-      "\\(1,295,000\\)",
-      "\\(12,950,000\\)",
-      "\\(1,295,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -3718,8 +4943,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(129,500,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,295,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12,950,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,295,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h91",
@@ -3727,13 +4970,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on high-frequency trade volume records a total value of 11649,000,82900,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(1 \\times 10^{15}\\)",
-    "opts": [
-      "\\(1 \\times 10^{15}\\)",
-      "\\(1 \\times 10^{16}\\)",
-      "\\(1 \\times 10^{14}\\)",
-      "\\(1 \\times 10^{13}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 11649,000,82900,000.",
@@ -3751,8 +4987,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{16}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{13}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h92",
@@ -3760,13 +5014,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring corporate carbon emissions reports a quantity of \\(3 \\times 10^{15} + 5 \\times 10^{9} + 3 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(3,000,005,000,003,000\\)",
-    "opts": [
-      "\\(3,000,005,000,003,000\\)",
-      "\\(3,000,015,000,003,000\\)",
-      "\\(3,000,005,000,002,900\\)",
-      "\\(3,100,005,000,003,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -3784,8 +5031,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3,000,005,000,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,000,015,000,003,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,000,005,000,002,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3,100,005,000,003,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h93",
@@ -3793,13 +5058,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 928,518,499 recorded for library digital catalog archives, what is the difference between the value of the digit 9 and the digit 2?",
-    "a": "\\(880,000,000\\)",
-    "opts": [
-      "\\(879,995,000\\)",
-      "\\(880,010,000\\)",
-      "\\(880,000,000\\)",
-      "\\(880,200,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 9 and compute its place value.",
@@ -3817,8 +5075,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(879,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(880,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(880,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(880,200,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1g-h94",
@@ -3826,13 +5102,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for solar farm energy output registers 600,030,000 operations. How many times greater is the value represented by the digit 6 than the value represented by the digit 3?",
-    "a": "\\(20,000\\) times",
-    "opts": [
-      "\\(20,000\\) times",
-      "\\(200,000\\) times",
-      "\\(2,000\\) times",
-      "\\(40,000\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 6.",
@@ -3850,8 +5119,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40,000\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h95",
@@ -3859,13 +5146,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring volcanic ash dispersion particles transfers \\(13600\\) liters. If this volume is multiplied by \\(10^{5}\\) and then divided by \\(10^{3}\\), write the resulting volume in standard form.",
-    "a": "\\(1,360,000\\)",
-    "opts": [
-      "\\(1,360,000\\)",
-      "\\(13,600,000\\)",
-      "\\(136,000,000\\)",
-      "\\(136,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -3883,8 +5163,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1,360,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13,600,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(136,000,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(136,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h96",
@@ -3892,13 +5190,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A study on urban transit smart-card swipes records a total value of 12264,000,87400,000. What is the value of the leftmost non-zero digit in this number, represented as a power of 10?",
-    "a": "\\(1 \\times 10^{15}\\)",
-    "opts": [
-      "\\(1 \\times 10^{15}\\)",
-      "\\(1 \\times 10^{14}\\)",
-      "\\(1 \\times 10^{13}\\)",
-      "\\(1 \\times 10^{16}\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Find the leftmost digit in the number 12264,000,87400,000.",
@@ -3916,8 +5207,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1 \\times 10^{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1 \\times 10^{16}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h97",
@@ -3925,13 +5234,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A system measuring bacterial spore colony count reports a quantity of \\(8 \\times 10^{15} + 5 \\times 10^{9} + 2 \\times 10^{3}\\). What is this number in standard notation?",
-    "a": "\\(8,000,005,000,002,000\\)",
-    "opts": [
-      "\\(8,000,005,000,002,000\\)",
-      "\\(8,000,015,000,002,000\\)",
-      "\\(8,100,005,000,002,000\\)",
-      "\\(8,000,005,000,001,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Write out the value of each term in the expanded sum.",
@@ -3949,8 +5251,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(8,000,005,000,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8,000,015,000,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8,100,005,000,002,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8,000,005,000,001,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1g-h98",
@@ -3958,13 +5278,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "In the total count of 977,901,214 recorded for global internet router package transfers, what is the difference between the value of the digit 9 and the digit 7?",
-    "a": "\\(830,000,000\\)",
-    "opts": [
-      "\\(830,200,000\\)",
-      "\\(829,995,000\\)",
-      "\\(830,010,000\\)",
-      "\\(830,000,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Locate the digit 9 and compute its place value.",
@@ -3982,8 +5295,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(830,200,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(829,995,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(830,010,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(830,000,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1g-h99",
@@ -3991,13 +5322,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database log for deep-sea trench water pressure in micro-pascals registers 500,040,000 operations. How many times greater is the value represented by the digit 5 than the value represented by the digit 4?",
-    "a": "\\(12,500\\) times",
-    "opts": [
-      "\\(125,000\\) times",
-      "\\(12,500\\) times",
-      "\\(25,000\\) times",
-      "\\(1,250\\) times"
-    ],
     "solutionSteps": [
       {
         "explanation": "Determine the value represented by the digit 5.",
@@ -4015,8 +5339,26 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(125,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12,500\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25,000\\) times",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,250\\) times",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1g-h100",
@@ -4024,13 +5366,6 @@ export const Y7_CH1G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pipeline measuring national park wildlife census transfers \\(14250\\) liters. If this volume is multiplied by \\(10^{2}\\) and then divided by \\(10^{2}\\), write the resulting volume in standard form.",
-    "a": "\\(14,250\\)",
-    "opts": [
-      "\\(142,500\\)",
-      "\\(1,425,000\\)",
-      "\\(14,250\\)",
-      "\\(1,425\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Multiply the initial volume by the first power of 10.",
@@ -4048,7 +5383,25 @@ export const Y7_CH1G_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Place value",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(142,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,425,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14,250\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1,425\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   }
 ];

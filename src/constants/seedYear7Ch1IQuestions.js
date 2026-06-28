@@ -5,14 +5,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Fill in the box to give the equivalent statement:\n\\(108 \\div 9 = 12\\) is equivalent to \\(108 = 12 \\times \\square\\)",
-    "a": "\\(9\\)",
-    "opts": [
-      "\\(108\\)",
-      "\\(8\\)",
-      "\\(9\\)",
-      "\\(12\\)"
-    ],
-    "t": "Division",
     "hint": "Think about the relationship between division and multiplication.",
     "solutionSteps": [
       {
@@ -31,7 +23,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(108\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-q1b",
@@ -39,14 +50,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Fill in the box to give the equivalent statement:\n\\(200 \\div 10 = 20\\) is equivalent to \\(\\square = 10 \\times 20\\)",
-    "a": "\\(200\\)",
-    "opts": [
-      "\\(2000\\)",
-      "\\(200\\)",
-      "\\(10\\)",
-      "\\(20\\)"
-    ],
-    "t": "Division",
     "hint": "Determine which number represents the total (dividend) being divided.",
     "solutionSteps": [
       {
@@ -65,7 +68,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(2000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-q1c",
@@ -73,14 +95,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Fill in the box to give the equivalent statement (where both boxes represent the same number):\n\\(72 \\div \\square = 12\\) is equivalent to \\(72 = 12 \\times \\square\\)",
-    "a": "\\(6\\)",
-    "opts": [
-      "\\(72\\)",
-      "\\(8\\)",
-      "\\(6\\)",
-      "\\(12\\)"
-    ],
-    "t": "Division",
     "hint": "Find the number that multiplies by 12 to equal 72.",
     "solutionSteps": [
       {
@@ -99,7 +113,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(72\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-q2a",
@@ -107,14 +140,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work from left to right to calculate the following:\n\\(24 \\times 3 \\div 3\\)",
-    "a": "\\(24\\)",
-    "opts": [
-      "\\(12\\)",
-      "\\(8\\)",
-      "\\(24\\)",
-      "\\(72\\)"
-    ],
-    "t": "Division",
     "hint": "Perform the multiplication first, then divide the result.",
     "solutionSteps": [
       {
@@ -133,7 +158,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(72\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-q2b",
@@ -141,14 +185,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work from left to right to calculate the following:\n\\(10 \\times 2 \\div 2\\)",
-    "a": "\\(10\\)",
-    "opts": [
-      "\\(20\\)",
-      "\\(10\\)",
-      "\\(2\\)",
-      "\\(5\\)"
-    ],
-    "t": "Division",
     "hint": "First multiply, then divide.",
     "solutionSteps": [
       {
@@ -162,7 +198,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-q2c",
@@ -170,14 +225,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work from left to right to calculate the following:\n\\(36 \\div 4 \\times 4\\)",
-    "a": "\\(36\\)",
-    "opts": [
-      "\\(36\\)",
-      "\\(9\\)",
-      "\\(4\\)",
-      "\\(144\\)"
-    ],
-    "t": "Division",
     "hint": "First divide, then multiply.",
     "solutionSteps": [
       {
@@ -191,7 +238,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(144\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-q2d",
@@ -199,14 +265,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work from left to right to calculate the following:\n\\(56 \\div 8 \\times 8\\)",
-    "a": "\\(56\\)",
-    "opts": [
-      "\\(56\\)",
-      "\\(64\\)",
-      "\\(7\\)",
-      "\\(8\\)"
-    ],
-    "t": "Division",
     "hint": "Divide first, then multiply.",
     "solutionSteps": [
       {
@@ -220,7 +278,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(56\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-q2e",
@@ -228,14 +305,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work from left to right to calculate the following:\n\\(18 \\div 3 \\times 3\\)",
-    "a": "\\(18\\)",
-    "opts": [
-      "\\(18\\)",
-      "\\(54\\)",
-      "\\(6\\)",
-      "\\(3\\)"
-    ],
-    "t": "Division",
     "hint": "Divide by 3, then multiply by 3.",
     "solutionSteps": [
       {
@@ -249,7 +318,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-q2f",
@@ -257,14 +345,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work from left to right to calculate the following:\n\\(24 \\div 12 \\times 12\\)",
-    "a": "\\(24\\)",
-    "opts": [
-      "\\(12\\)",
-      "\\(2\\)",
-      "\\(24\\)",
-      "\\(288\\)"
-    ],
-    "t": "Division",
     "hint": "Divide by 12, then multiply by 12.",
     "solutionSteps": [
       {
@@ -278,7 +358,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(288\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-q3",
@@ -286,14 +385,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "There are 28 chocolates to be divided equally among 4 people. How many chocolates does each person get?",
-    "a": "\\(7\\)",
-    "opts": [
-      "\\(9\\)",
-      "\\(8\\)",
-      "\\(6\\)",
-      "\\(7\\)"
-    ],
-    "t": "Division",
     "hint": "Divide the total number of chocolates by the number of people.",
     "solutionSteps": [
       {
@@ -312,7 +403,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-q4",
@@ -320,14 +430,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "There are 84 people at a club meeting. The organiser wishes to form 7 equal groups. How many people will there be in each group?",
-    "a": "\\(12\\)",
-    "opts": [
-      "\\(14\\)",
-      "\\(12\\)",
-      "\\(10\\)",
-      "\\(11\\)"
-    ],
-    "t": "Division",
     "hint": "Divide the total number of people by the number of groups.",
     "solutionSteps": [
       {
@@ -346,7 +448,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-q5a",
@@ -354,14 +475,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Fill in the boxes with positive integers to make the statement true, with the smallest possible remainder (the last box):\n\\(17 = \\square \\times 3 + \\square\\)\nProvide your answer in the form \"quotient, remainder\" (e.g. 5, 2).",
-    "a": "\\(5, 2\\)",
-    "opts": [
-      "\\(6, 1\\)",
-      "\\(5, 1\\)",
-      "\\(2, 5\\)",
-      "\\(5, 2\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 17 by 3. The quotient goes in the first box, and the remainder goes in the second box.",
     "solutionSteps": [
       {
@@ -380,7 +493,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2, 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5, 2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-q5b",
@@ -388,14 +520,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Fill in the boxes with positive integers to make the statement true, with the smallest possible remainder (the last box):\n\\(37 = \\square \\times 5 + \\square\\)\nProvide your answer in the form \"quotient, remainder\" (e.g. 7, 2).",
-    "a": "\\(7, 2\\)",
-    "opts": [
-      "\\(7, 1\\)",
-      "\\(7, 2\\)",
-      "\\(5, 2\\)",
-      "\\(8, 2\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 37 by 5 to find the quotient and remainder.",
     "solutionSteps": [
       {
@@ -414,7 +538,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7, 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5, 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8, 2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-q5c",
@@ -422,14 +565,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Fill in the boxes with positive integers to make the statement true, with the smallest possible remainder (the last box):\n\\(13 = \\square \\times 2 + \\square\\)\nProvide your answer in the form \"quotient, remainder\" (e.g. 6, 1).",
-    "a": "\\(6, 1\\)",
-    "opts": [
-      "\\(7, 1\\)",
-      "\\(6, 0\\)",
-      "\\(2, 1\\)",
-      "\\(6, 1\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 13 by 2.",
     "solutionSteps": [
       {
@@ -438,7 +573,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(7, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6, 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6, 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-q5d",
@@ -446,14 +600,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Fill in the boxes with positive integers to make the statement true, with the smallest possible remainder (the last box):\n\\(87 = \\square \\times 8 + \\square\\)\nProvide your answer in the form \"quotient, remainder\" (e.g. 10, 7).",
-    "a": "\\(10, 7\\)",
-    "opts": [
-      "\\(8, 7\\)",
-      "\\(10, 7\\)",
-      "\\(9, 7\\)",
-      "\\(10, 8\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 87 by 8.",
     "solutionSteps": [
       {
@@ -462,7 +608,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(8, 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10, 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9, 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10, 8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-q5e",
@@ -470,14 +635,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Fill in the boxes with positive integers to make the statement true, with the smallest possible remainder (the last box):\n\\(41 = \\square \\times 5 + \\square\\)\nProvide your answer in the form \"quotient, remainder\" (e.g. 8, 1).",
-    "a": "\\(8, 1\\)",
-    "opts": [
-      "\\(8, 2\\)",
-      "\\(8, 1\\)",
-      "\\(9, 1\\)",
-      "\\(5, 1\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 41 by 5.",
     "solutionSteps": [
       {
@@ -486,7 +643,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(8, 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5, 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-q5f",
@@ -494,14 +670,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Fill in the boxes with positive integers to make the statement true, with the smallest possible remainder (the last box):\n\\(148 = \\square \\times 12 + \\square\\)\nProvide your answer in the form \"quotient, remainder\" (e.g. 12, 4).",
-    "a": "\\(12, 4\\)",
-    "opts": [
-      "\\(12, 4\\)",
-      "\\(11, 4\\)",
-      "\\(13, 4\\)",
-      "\\(12, 2\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 148 by 12.",
     "solutionSteps": [
       {
@@ -520,7 +688,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(12, 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11, 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13, 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12, 2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-q6",
@@ -644,14 +831,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate:\n\\(\\frac{20}{10}\\)",
-    "a": "\\(2\\)",
-    "opts": [
-      "\\(20\\)",
-      "\\(2\\)",
-      "\\(1\\)",
-      "\\(10\\)"
-    ],
-    "t": "Division",
     "hint": "Divide the numerator by the denominator.",
     "solutionSteps": [
       {
@@ -665,7 +844,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-q9b",
@@ -673,14 +871,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate:\n\\(\\frac{30}{6}\\)",
-    "a": "\\(5\\)",
-    "opts": [
-      "\\(5\\)",
-      "\\(6\\)",
-      "\\(30\\)",
-      "\\(4\\)"
-    ],
-    "t": "Division",
     "hint": "How many times does 6 go into 30?",
     "solutionSteps": [
       {
@@ -689,7 +879,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-q9c",
@@ -697,14 +906,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate:\n\\(\\frac{42}{7}\\)",
-    "a": "\\(6\\)",
-    "opts": [
-      "\\(6\\)",
-      "\\(7\\)",
-      "\\(42\\)",
-      "\\(8\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 42 by 7.",
     "solutionSteps": [
       {
@@ -713,7 +914,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-q9d",
@@ -721,14 +941,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate:\n\\(\\frac{144}{12}\\)",
-    "a": "\\(12\\)",
-    "opts": [
-      "\\(10\\)",
-      "\\(144\\)",
-      "\\(12\\)",
-      "\\(11\\)"
-    ],
-    "t": "Division",
     "hint": "Remember that 12 squared is 144.",
     "solutionSteps": [
       {
@@ -737,7 +949,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-q9e",
@@ -745,14 +976,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate:\n\\(\\frac{36}{4}\\)",
-    "a": "\\(9\\)",
-    "opts": [
-      "\\(36\\)",
-      "\\(9\\)",
-      "\\(8\\)",
-      "\\(4\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 36 by 4.",
     "solutionSteps": [
       {
@@ -761,7 +984,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-q9f",
@@ -769,14 +1011,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate:\n\\(\\frac{120}{3}\\)",
-    "a": "\\(40\\)",
-    "opts": [
-      "\\(120\\)",
-      "\\(30\\)",
-      "\\(40\\)",
-      "\\(50\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 12 by 3, then append the zero.",
     "solutionSteps": [
       {
@@ -785,7 +1019,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-q10a",
@@ -793,14 +1046,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Perform the calculation by using the indicated method:\n\\(448 \\div 32\\) (divide by 2 five times)",
-    "a": "\\(14\\)",
-    "opts": [
-      "\\(16\\)",
-      "\\(7\\)",
-      "\\(28\\)",
-      "\\(14\\)"
-    ],
-    "t": "Division",
     "hint": "Divide the number by 2 repeatedly, 5 times.",
     "solutionSteps": [
       {
@@ -829,7 +1074,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(28\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-q10b",
@@ -837,14 +1101,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Perform the calculation by using the indicated method:\n\\(640 \\div 80\\) (divide by 10 and then by 8)",
-    "a": "\\(8\\)",
-    "opts": [
-      "\\(6\\)",
-      "\\(64\\)",
-      "\\(80\\)",
-      "\\(8\\)"
-    ],
-    "t": "Division",
     "hint": "Divide by 10 first, then divide that result by 8.",
     "solutionSteps": [
       {
@@ -858,7 +1114,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-q10c",
@@ -866,14 +1141,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Perform the calculation by using the indicated method:\n\\(805 \\div 35\\) (divide by 7 and then by 5)",
-    "a": "\\(23\\)",
-    "opts": [
-      "\\(23\\)",
-      "\\(115\\)",
-      "\\(25\\)",
-      "\\(35\\)"
-    ],
-    "t": "Division",
     "hint": "First divide by 7, then divide the result by 5.",
     "solutionSteps": [
       {
@@ -887,7 +1154,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(23\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(115\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-q11a",
@@ -895,14 +1181,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate the expression by using the distributive law:\n\\((600 + 35) \\div 5\\)",
-    "a": "\\(127\\)",
-    "opts": [
-      "\\(120\\)",
-      "\\(117\\)",
-      "\\(137\\)",
-      "\\(127\\)"
-    ],
-    "t": "Division",
     "hint": "Divide both 600 and 35 by 5, then add the results.",
     "solutionSteps": [
       {
@@ -921,7 +1199,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(117\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(137\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(127\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-q11b",
@@ -929,14 +1226,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate the expression by using the distributive law:\n\\((300 - 25) \\div 5\\)",
-    "a": "\\(55\\)",
-    "opts": [
-      "\\(45\\)",
-      "\\(55\\)",
-      "\\(60\\)",
-      "\\(65\\)"
-    ],
-    "t": "Division",
     "hint": "Divide both 300 and 25 by 5, then subtract the second result from the first.",
     "solutionSteps": [
       {
@@ -955,7 +1244,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(55\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(65\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-q11c",
@@ -963,14 +1271,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate the expression by using the distributive law (Hint: split 390 into a sum or difference):\n\\(390 \\div 5\\)",
-    "a": "\\(78\\)",
-    "opts": [
-      "\\(76\\)",
-      "\\(88\\)",
-      "\\(80\\)",
-      "\\(78\\)"
-    ],
-    "t": "Division",
     "hint": "Express 390 as 400 - 10, then apply the distributive law.",
     "solutionSteps": [
       {
@@ -994,7 +1294,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(76\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(88\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(78\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-q11d",
@@ -1002,14 +1321,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate the expression by using the distributive law:\n\\((600 + 27) \\div 3\\)",
-    "a": "\\(209\\)",
-    "opts": [
-      "\\(199\\)",
-      "\\(219\\)",
-      "\\(209\\)",
-      "\\(200\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 600 by 3, and 27 by 3, then add.",
     "solutionSteps": [
       {
@@ -1023,7 +1334,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(219\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(209\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-q11e",
@@ -1031,14 +1361,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate the expression by using the distributive law:\n\\((300 - 24) \\div 3\\)",
-    "a": "\\(92\\)",
-    "opts": [
-      "\\(82\\)",
-      "\\(98\\)",
-      "\\(100\\)",
-      "\\(92\\)"
-    ],
-    "t": "Division",
     "hint": "Divide 300 by 3, and 24 by 3, then subtract.",
     "solutionSteps": [
       {
@@ -1052,7 +1374,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(82\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(98\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(92\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-q11f",
@@ -1060,14 +1401,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate the expression by using the distributive law:\n\\(390 \\div 3\\)",
-    "a": "\\(130\\)",
-    "opts": [
-      "\\(140\\)",
-      "\\(100\\)",
-      "\\(120\\)",
-      "\\(130\\)"
-    ],
-    "t": "Division",
     "hint": "Split 390 into 300 + 90, then apply the distributive law.",
     "solutionSteps": [
       {
@@ -1086,7 +1419,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(140\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(130\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h1",
@@ -1094,13 +1446,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A wildlife sanctuary distributes 420 kg of specialized eagle feed equally among 7 feeding zones. Find how many kilograms each zone receives.",
-    "a": "\\(60\\)",
-    "opts": [
-      "\\(61\\)",
-      "\\(60\\)",
-      "\\(62\\)",
-      "\\(59\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Calculate the feed amount per zone by dividing the total feed by the number of zones.",
@@ -1108,8 +1453,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(61\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(62\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(59\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h2",
@@ -1117,13 +1480,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A supercomputing node splits 720 gigabytes of data files evenly into 16 storage slots. Calculate the storage allotment in gigabytes per slot.",
-    "a": "\\(45\\)",
-    "opts": [
-      "\\(43\\)",
-      "\\(45\\)",
-      "\\(46\\)",
-      "\\(48\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total gigabytes by the number of slots to find the allotment.",
@@ -1131,8 +1487,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(43\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(46\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h3",
@@ -1140,13 +1514,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An organic farm harvests 1032 kg of heirloom tomatoes. They pack them into boxes that hold exactly 17 kg each. Find the quotient (fully packed boxes) and the remainder (leftover tomatoes).",
-    "a": "\\(60, 12\\)",
-    "opts": [
-      "\\(60, 11\\)",
-      "\\(59, 13\\)",
-      "\\(60, 12\\)",
-      "\\(61, 12\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total weight by the box size to find the quotient.",
@@ -1164,8 +1531,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(60, 11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(59, 13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60, 12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(61, 12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h4",
@@ -1173,13 +1558,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A manufacturing workshop finishes 450 precision gears over 10 working days. What is the average number of gears produced per day?",
-    "a": "\\(45\\)",
-    "opts": [
-      "\\(46\\)",
-      "\\(45\\)",
-      "\\(50\\)",
-      "\\(44\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total gear count by the number of days to find the daily average.",
@@ -1187,8 +1565,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(46\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h5",
@@ -1196,13 +1592,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A fiber network router splits a bandwidth pool of 960 Mbps equally among 24 smart home hubs. What is the bandwidth allocation per hub in Mbps?",
-    "a": "\\(40\\)",
-    "opts": [
-      "\\(41\\)",
-      "\\(40\\)",
-      "\\(42\\)",
-      "\\(38\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total bandwidth pool by the number of hubs.",
@@ -1210,8 +1599,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(41\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(38\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h6",
@@ -1219,13 +1626,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A school library receives 884 historical atlases. They arrange them on shelves that hold exactly 26 books each. How many shelves are completely filled?",
-    "a": "\\(34\\)",
-    "opts": [
-      "\\(37\\)",
-      "\\(31\\)",
-      "\\(35\\)",
-      "\\(34\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total number of books by the shelf capacity.",
@@ -1233,8 +1633,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h7",
@@ -1242,13 +1660,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An astronomical laboratory measures 1344 stellar coordinates during 42 observation runs. Find the average number of coordinates recorded per run.",
-    "a": "\\(32\\)",
-    "opts": [
-      "\\(36\\)",
-      "\\(31\\)",
-      "\\(33\\)",
-      "\\(32\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total coordinates by the number of observation runs.",
@@ -1256,8 +1667,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(33\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h8",
@@ -1265,13 +1694,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A remote weather base is allocated 1560 liters of emergency fuel to be shared equally over 12 months. What is the monthly fuel allocation in liters?",
-    "a": "\\(130\\)",
-    "opts": [
-      "\\(135\\)",
-      "\\(130\\)",
-      "\\(131\\)",
-      "\\(128\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total fuel volume by the number of months.",
@@ -1279,8 +1701,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(135\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(130\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(131\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(128\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h9",
@@ -1288,13 +1728,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A drone mapping flight captures 1440 high-resolution terrain images over 15 flight paths. What is the average number of images captured per path?",
-    "a": "\\(96\\)",
-    "opts": [
-      "\\(93\\)",
-      "\\(97\\)",
-      "\\(96\\)",
-      "\\(98\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total image count by the number of paths.",
@@ -1302,8 +1735,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(93\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(97\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(96\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(98\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h10",
@@ -1311,13 +1762,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A bakery orders 1800 kg of flour. If the bakery uses 75 kg of flour each day, how many days will the shipment last?",
-    "a": "\\(24\\)",
-    "opts": [
-      "\\(25\\)",
-      "\\(24\\)",
-      "\\(23\\)",
-      "\\(27\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total flour mass by the daily consumption rate.",
@@ -1325,8 +1769,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(23\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h11",
@@ -1334,13 +1796,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics train delivers 1248 cars to a shipping harbor. If each cargo deck can hold 48 cars, how many cargo decks are filled?",
-    "a": "\\(26\\)",
-    "opts": [
-      "\\(24\\)",
-      "\\(27\\)",
-      "\\(26\\)",
-      "\\(30\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total car count by the capacity of each deck.",
@@ -1348,8 +1803,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h12",
@@ -1357,13 +1830,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A botanical nursery grows 2200 orchid seedlings. They arrange them into rows containing 44 plants each. How many rows are created?",
-    "a": "\\(50\\)",
-    "opts": [
-      "\\(50\\)",
-      "\\(51\\)",
-      "\\(47\\)",
-      "\\(55\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total seedlings by the number of plants per row.",
@@ -1371,8 +1837,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(51\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(55\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h13",
@@ -1380,13 +1864,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep-sea research boat records 3150 oceanic data points over 70 days. Calculate the average daily data logs recorded.",
-    "a": "\\(45\\)",
-    "opts": [
-      "\\(45\\)",
-      "\\(44\\)",
-      "\\(46\\)",
-      "\\(47\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total data points by the number of days.",
@@ -1394,8 +1871,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(46\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h14",
@@ -1403,13 +1898,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A warehouse ships 1482 electric hand-tools in packing crates that hold 38 tools each. How many crates are filled?",
-    "a": "\\(39\\)",
-    "opts": [
-      "\\(42\\)",
-      "\\(40\\)",
-      "\\(39\\)",
-      "\\(37\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total number of tools by the capacity of a single crate.",
@@ -1417,8 +1905,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(42\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(39\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h15",
@@ -1426,13 +1932,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A national park ranger needs to place 1620 trail markers along 45 marked hiking paths. Find the average number of markers per path.",
-    "a": "\\(36\\)",
-    "opts": [
-      "\\(40\\)",
-      "\\(36\\)",
-      "\\(37\\)",
-      "\\(33\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total markers by the number of paths.",
@@ -1440,8 +1939,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(33\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h16",
@@ -1449,13 +1966,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental charity receives a donation of 2520 native tree seedlings to plant in 36 forest blocks. Find the average seedlings per block.",
-    "a": "\\(70\\)",
-    "opts": [
-      "\\(71\\)",
-      "\\(69\\)",
-      "\\(75\\)",
-      "\\(70\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total seedlings by the number of blocks.",
@@ -1463,8 +1973,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(71\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(69\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h17",
@@ -1472,13 +2000,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A publishing house prints 3600 brochures. They are packed in boxes of 120 brochures each. How many boxes are filled?",
-    "a": "\\(30\\)",
-    "opts": [
-      "\\(28\\)",
-      "\\(31\\)",
-      "\\(32\\)",
-      "\\(30\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total brochure count by the box size.",
@@ -1486,8 +2007,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(28\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h18",
@@ -1495,13 +2034,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar electricity array produces 2025 kilowatt-hours of power during a 25-day study period. Calculate the average daily power output in kWh.",
-    "a": "\\(81\\)",
-    "opts": [
-      "\\(82\\)",
-      "\\(84\\)",
-      "\\(78\\)",
-      "\\(81\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total energy output by the number of study days.",
@@ -1509,8 +2041,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(82\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(84\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(78\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h19",
@@ -1518,13 +2068,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pharmaceutical lab packages 1875 vaccine doses into shipping vials that contain 15 doses each. How many vials are prepared?",
-    "a": "\\(125\\)",
-    "opts": [
-      "\\(126\\)",
-      "\\(124\\)",
-      "\\(125\\)",
-      "\\(129\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total dose count by the number of doses per vial.",
@@ -1532,8 +2075,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(126\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(129\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h20",
@@ -1541,13 +2102,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A construction developer orders 3840 tons of gravel. If 96 tons of gravel are delivered per truckload, how many truckloads are required?",
-    "a": "\\(40\\)",
-    "opts": [
-      "\\(41\\)",
-      "\\(40\\)",
-      "\\(45\\)",
-      "\\(38\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total mass of gravel by the capacity of each truck.",
@@ -1555,8 +2109,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(41\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(38\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h21",
@@ -1564,13 +2136,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital photo frame cycles through 2880 pictures in 24 hours. On average, how many pictures are displayed per hour?",
-    "a": "\\(120\\)",
-    "opts": [
-      "\\(120\\)",
-      "\\(122\\)",
-      "\\(121\\)",
-      "\\(117\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total number of pictures by the hours in a day.",
@@ -1578,8 +2143,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(122\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(117\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h22",
@@ -1587,13 +2170,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A textile loom weaves 2016 meters of cotton thread over 56 hours. Calculate the weaving rate in meters per hour.",
-    "a": "\\(36\\)",
-    "opts": [
-      "\\(39\\)",
-      "\\(35\\)",
-      "\\(36\\)",
-      "\\(37\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total woven length by the time taken.",
@@ -1601,8 +2177,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(39\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h23",
@@ -1610,13 +2204,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A farmer packs 1728 organic eggs into cartons that hold 12 eggs each. How many cartons are filled?",
-    "a": "\\(144\\)",
-    "opts": [
-      "\\(148\\)",
-      "\\(145\\)",
-      "\\(144\\)",
-      "\\(142\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total egg count by the carton capacity.",
@@ -1624,8 +2211,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(148\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(145\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(142\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h24",
@@ -1633,13 +2238,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics distributor packs 3500 electronic chips into plastic cases that fit 140 chips each. How many cases are packed?",
-    "a": "\\(25\\)",
-    "opts": [
-      "\\(26\\)",
-      "\\(22\\)",
-      "\\(30\\)",
-      "\\(25\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total chips by the capacity of each case.",
@@ -1647,8 +2245,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h25",
@@ -1656,13 +2272,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An offshore gas platform pumps 4800 barrels of crude oil over 32 hours. Find the average hourly oil output in barrels.",
-    "a": "\\(150\\)",
-    "opts": [
-      "\\(152\\)",
-      "\\(151\\)",
-      "\\(149\\)",
-      "\\(150\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total barrel volume by the hours.",
@@ -1670,8 +2279,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(152\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(151\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(149\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(150\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h26",
@@ -1679,13 +2306,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional hospital stores 2400 ml of sterile saline. A nurse divides it into individual doses of 75 ml. How many doses are prepared?",
-    "a": "\\(32\\)",
-    "opts": [
-      "\\(35\\)",
-      "\\(32\\)",
-      "\\(30\\)",
-      "\\(33\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total saline volume by the dose size.",
@@ -1693,8 +2313,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(33\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h27",
@@ -1702,13 +2340,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A mapping team uses a drone to photograph a coastline of 5400 meters. The drone stops every 150 meters to take a photo. How many photos are taken?",
-    "a": "\\(36\\)",
-    "opts": [
-      "\\(40\\)",
-      "\\(36\\)",
-      "\\(37\\)",
-      "\\(33\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total distance by the spacing interval.",
@@ -1716,8 +2347,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(33\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h28",
@@ -1725,13 +2374,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A software testing script processes 4000 code routines across 80 testing batches. Find the average routines run per batch.",
-    "a": "\\(50\\)",
-    "opts": [
-      "\\(50\\)",
-      "\\(51\\)",
-      "\\(49\\)",
-      "\\(55\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total routine count by the batch count.",
@@ -1739,8 +2381,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(51\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(55\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h29",
@@ -1748,13 +2408,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electric car battery gains 2925 watt-hours of charge over a period of 45 minutes. Find the average charge rate in Wh per minute.",
-    "a": "\\(65\\)",
-    "opts": [
-      "\\(65\\)",
-      "\\(63\\)",
-      "\\(67\\)",
-      "\\(66\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total charge gained by the charging time.",
@@ -1762,8 +2415,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(63\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(66\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h30",
@@ -1771,13 +2442,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional granary distributes 3456 kg of wheat grain equally to 48 local mills. How many kilograms does each mill receive?",
-    "a": "\\(72\\)",
-    "opts": [
-      "\\(72\\)",
-      "\\(69\\)",
-      "\\(75\\)",
-      "\\(73\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total wheat weight by the number of mills.",
@@ -1785,8 +2449,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(72\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(69\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(73\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h31",
@@ -1794,13 +2476,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A micro-chip manufacturer produces 4950 components during a shift of 90 assembly workers. What is the average output per worker?",
-    "a": "\\(55\\)",
-    "opts": [
-      "\\(59\\)",
-      "\\(55\\)",
-      "\\(54\\)",
-      "\\(56\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total component count by the number of workers.",
@@ -1808,8 +2483,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(59\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(55\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(56\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h32",
@@ -1817,13 +2510,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional mail carrier sorts 5880 packages over 84 postal routes. Calculate the average number of packages per route.",
-    "a": "\\(70\\)",
-    "opts": [
-      "\\(68\\)",
-      "\\(70\\)",
-      "\\(75\\)",
-      "\\(71\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total package count by the routes.",
@@ -1831,8 +2517,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(68\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h33",
@@ -1840,13 +2544,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep geothermal bore extracts 6300 liters of heated brine over 35 operational cycles. Calculate the average volume per cycle in liters.",
-    "a": "\\(180\\)",
-    "opts": [
-      "\\(180\\)",
-      "\\(182\\)",
-      "\\(181\\)",
-      "\\(177\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total brine volume by the operational cycles.",
@@ -1854,8 +2551,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(180\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(182\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(181\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(177\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h34",
@@ -1863,13 +2578,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A maritime cargo ship carries 8100 crates of electronics. The crates are stacked in 90 shipping decks. What is the average number of crates per deck?",
-    "a": "\\(90\\)",
-    "opts": [
-      "\\(91\\)",
-      "\\(90\\)",
-      "\\(89\\)",
-      "\\(93\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total crate count by the number of decks.",
@@ -1877,8 +2585,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(91\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(90\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(89\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h35",
@@ -1886,13 +2612,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A food bank packages 1920 meals into family kits. If each family kit contains exactly 16 meals, how many kits are created?",
-    "a": "\\(120\\)",
-    "opts": [
-      "\\(120\\)",
-      "\\(118\\)",
-      "\\(124\\)",
-      "\\(121\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total meal count by the meal count per kit.",
@@ -1900,8 +2619,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(118\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(121\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h36",
@@ -1909,13 +2646,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A research observatory counts 2560 solar flares over a period of 40 weeks. Find the average flare count per week.",
-    "a": "\\(64\\)",
-    "opts": [
-      "\\(69\\)",
-      "\\(64\\)",
-      "\\(65\\)",
-      "\\(61\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total flare count by the weeks.",
@@ -1923,8 +2653,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(69\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(61\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h37",
@@ -1932,13 +2680,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A community garden harvests 1440 organic peppers. They pack them into boxes of 48 peppers each. How many boxes are filled?",
-    "a": "\\(30\\)",
-    "opts": [
-      "\\(29\\)",
-      "\\(32\\)",
-      "\\(30\\)",
-      "\\(31\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total pepper count by the box size.",
@@ -1946,8 +2687,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h38",
@@ -1955,13 +2714,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A water purification system processes 3850 kiloliters of water over 77 operational phases. Calculate the average volume per phase in kiloliters.",
-    "a": "\\(50\\)",
-    "opts": [
-      "\\(51\\)",
-      "\\(48\\)",
-      "\\(50\\)",
-      "\\(53\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total processed volume by the phase count.",
@@ -1969,8 +2721,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(51\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(53\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h39",
@@ -1978,13 +2748,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A high-security database processes 4840 verification keys across 44 verification blocks. What is the average number of keys per block?",
-    "a": "\\(110\\)",
-    "opts": [
-      "\\(114\\)",
-      "\\(107\\)",
-      "\\(111\\)",
-      "\\(110\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total key count by the block count.",
@@ -1992,8 +2755,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(114\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(107\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(110\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h40",
@@ -2001,13 +2782,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A cargo logistics port moves 5250 tons of iron ore over 35 ship loadings. Calculate the average load weight per ship in tons.",
-    "a": "\\(150\\)",
-    "opts": [
-      "\\(149\\)",
-      "\\(155\\)",
-      "\\(151\\)",
-      "\\(150\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total weight by the ship loading cycles.",
@@ -2015,8 +2789,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(149\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(155\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(151\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(150\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h41",
@@ -2024,13 +2816,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A research station measures 1764 seismic spikes across 14 monitoring stations. What is the average number of spikes per station?",
-    "a": "\\(126\\)",
-    "opts": [
-      "\\(126\\)",
-      "\\(124\\)",
-      "\\(128\\)",
-      "\\(127\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total spikes by the station count.",
@@ -2038,8 +2823,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(126\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(128\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(127\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h42",
@@ -2047,13 +2850,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A construction manager places an order for 2310 bricks. If each pallet holds 55 bricks, how many pallets must be delivered?",
-    "a": "\\(42\\)",
-    "opts": [
-      "\\(42\\)",
-      "\\(39\\)",
-      "\\(43\\)",
-      "\\(45\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total brick count by the pallet capacity.",
@@ -2061,8 +2857,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(42\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(39\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(43\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h43",
@@ -2070,13 +2884,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A factory quality check inspects 3456 glass panels over 24 production shifts. Find the average panels checked per shift.",
-    "a": "\\(144\\)",
-    "opts": [
-      "\\(145\\)",
-      "\\(143\\)",
-      "\\(144\\)",
-      "\\(148\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total panel count by the shift count.",
@@ -2084,8 +2891,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(145\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(143\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(148\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h44",
@@ -2093,13 +2918,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A commercial fishing boat catches 2178 kg of sea bass. If they pack the fish into tubs holding 33 kg each, how many tubs are filled?",
-    "a": "\\(66\\)",
-    "opts": [
-      "\\(64\\)",
-      "\\(71\\)",
-      "\\(67\\)",
-      "\\(66\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total fish mass by the tub capacity.",
@@ -2107,8 +2925,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(66\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h45",
@@ -2116,13 +2952,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional wildlife study counts 2928 migrating caribou across 48 observation sectors. Find the average caribou counted per sector.",
-    "a": "\\(61\\)",
-    "opts": [
-      "\\(58\\)",
-      "\\(62\\)",
-      "\\(63\\)",
-      "\\(61\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total caribou counted by the sector count.",
@@ -2130,8 +2959,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(58\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(62\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(63\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(61\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h46",
@@ -2139,13 +2986,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental analysis laboratory uses 3025 ml of test solution across 25 batch tests. Find the average solution used per test in ml.",
-    "a": "\\(121\\)",
-    "opts": [
-      "\\(121\\)",
-      "\\(124\\)",
-      "\\(120\\)",
-      "\\(122\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total solution volume by the batch test count.",
@@ -2153,8 +2993,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(122\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h47",
@@ -2162,13 +3020,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar energy storage battery outputs 1375 watt-hours over 55 hours. Calculate the power delivery rate in watts.",
-    "a": "\\(25\\)",
-    "opts": [
-      "\\(25\\)",
-      "\\(26\\)",
-      "\\(29\\)",
-      "\\(23\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total energy by the time period.",
@@ -2176,8 +3027,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(23\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h48",
@@ -2185,13 +3054,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pharmaceutical laboratory dilutes 1920 ml of base chemical. If they divide it into test vials of 15 ml each, how many vials are filled?",
-    "a": "\\(128\\)",
-    "opts": [
-      "\\(125\\)",
-      "\\(128\\)",
-      "\\(133\\)",
-      "\\(129\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total volume by the vial volume.",
@@ -2199,8 +3061,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(125\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(128\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(133\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(129\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h49",
@@ -2208,13 +3088,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A precision machine spins 4800 revolutions over a period of 60 seconds. How many revolutions does it make per second?",
-    "a": "\\(80\\)",
-    "opts": [
-      "\\(82\\)",
-      "\\(79\\)",
-      "\\(81\\)",
-      "\\(80\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total revolutions by the time in seconds.",
@@ -2222,8 +3095,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(82\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(79\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h50",
@@ -2231,13 +3122,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A computer file backup transfers 3000 megabytes of records over 75 transmission packets. What is the average packet size in megabytes?",
-    "a": "\\(40\\)",
-    "opts": [
-      "\\(41\\)",
-      "\\(38\\)",
-      "\\(43\\)",
-      "\\(40\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total transfer size by the packet count.",
@@ -2245,8 +3129,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(41\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(38\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(43\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h51",
@@ -2254,13 +3156,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A local agricultural orchard harvests 1728 organic nectarines. If they are packed in cases of 36, how many cases are filled?",
-    "a": "\\(48\\)",
-    "opts": [
-      "\\(45\\)",
-      "\\(48\\)",
-      "\\(49\\)",
-      "\\(52\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total nectarine count by the case capacity.",
@@ -2268,8 +3163,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h52",
@@ -2277,13 +3190,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional transit authority routes 2016 commuters over 28 bus paths. What is the average number of passengers per bus path?",
-    "a": "\\(72\\)",
-    "opts": [
-      "\\(73\\)",
-      "\\(72\\)",
-      "\\(71\\)",
-      "\\(77\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total commuter count by the path count.",
@@ -2291,8 +3197,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(73\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(72\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(77\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h53",
@@ -2300,13 +3224,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A scientific data probe transmits 3840 packets of readings over 80 signal broadcasts. Find the average packet count per broadcast.",
-    "a": "\\(48\\)",
-    "opts": [
-      "\\(48\\)",
-      "\\(50\\)",
-      "\\(49\\)",
-      "\\(46\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total packets by the broadcast count.",
@@ -2314,8 +3231,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(48\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(46\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h54",
@@ -2323,13 +3258,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep water pipeline is constructed with 3500 segments of piping over 70 days. Find the average pipe segments laid per day.",
-    "a": "\\(50\\)",
-    "opts": [
-      "\\(53\\)",
-      "\\(47\\)",
-      "\\(51\\)",
-      "\\(50\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total pipe segments by the construction days.",
@@ -2337,8 +3265,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(53\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(51\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h55",
@@ -2346,13 +3292,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A network of solar collectors logs 2400 sunlight hours over 96 monitoring sensors. Find the average hours logged per sensor.",
-    "a": "\\(25\\)",
-    "opts": [
-      "\\(29\\)",
-      "\\(25\\)",
-      "\\(26\\)",
-      "\\(24\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total sunlight hours by the sensor count.",
@@ -2360,8 +3299,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(29\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h56",
@@ -2369,13 +3326,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A local food co-op distributes 1440 heads of broccoli to 32 retail shops. How many heads of broccoli does each shop get?",
-    "a": "\\(45\\)",
-    "opts": [
-      "\\(45\\)",
-      "\\(50\\)",
-      "\\(43\\)",
-      "\\(46\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total broccoli count by the shop count.",
@@ -2383,8 +3333,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(43\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(46\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h57",
@@ -2392,13 +3360,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental testing flight tracks 2560 square kilometers of air over 32 routes. What is the average search area per route in square km?",
-    "a": "\\(80\\)",
-    "opts": [
-      "\\(82\\)",
-      "\\(77\\)",
-      "\\(81\\)",
-      "\\(80\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total search area by the route count.",
@@ -2406,8 +3367,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(82\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(77\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h58",
@@ -2415,13 +3394,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((3600 + 48) \\div 6\\)",
-    "a": "\\(608\\)",
-    "opts": [
-      "\\(607\\)",
-      "\\(609\\)",
-      "\\(608\\)",
-      "\\(611\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2444,8 +3416,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(607\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(609\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(608\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(611\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h59",
@@ -2453,13 +3443,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((4000 - 32) \\div 8\\)",
-    "a": "\\(496\\)",
-    "opts": [
-      "\\(494\\)",
-      "\\(500\\)",
-      "\\(497\\)",
-      "\\(496\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2482,8 +3465,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(494\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(497\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(496\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h60",
@@ -2491,13 +3492,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1400 + 35) \\div 7\\)",
-    "a": "\\(205\\)",
-    "opts": [
-      "\\(210\\)",
-      "\\(206\\)",
-      "\\(205\\)",
-      "\\(202\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2520,8 +3514,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(210\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(206\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(205\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h61",
@@ -2529,13 +3541,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2700 - 18) \\div 9\\)",
-    "a": "\\(298\\)",
-    "opts": [
-      "\\(298\\)",
-      "\\(300\\)",
-      "\\(299\\)",
-      "\\(297\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2558,8 +3563,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(298\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(300\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(299\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(297\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h62",
@@ -2567,13 +3590,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1600 + 24) \\div 8\\)",
-    "a": "\\(203\\)",
-    "opts": [
-      "\\(204\\)",
-      "\\(203\\)",
-      "\\(201\\)",
-      "\\(206\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2596,8 +3612,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(204\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(203\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(206\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h63",
@@ -2605,13 +3639,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1500 - 20) \\div 5\\)",
-    "a": "\\(296\\)",
-    "opts": [
-      "\\(293\\)",
-      "\\(297\\)",
-      "\\(300\\)",
-      "\\(296\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2634,8 +3661,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(293\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(297\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(300\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(296\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h64",
@@ -2643,13 +3688,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2400 + 16) \\div 4\\)",
-    "a": "\\(604\\)",
-    "opts": [
-      "\\(609\\)",
-      "\\(603\\)",
-      "\\(604\\)",
-      "\\(605\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2672,8 +3710,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(609\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(603\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(604\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(605\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h65",
@@ -2681,13 +3737,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2100 - 15) \\div 3\\)",
-    "a": "\\(695\\)",
-    "opts": [
-      "\\(695\\)",
-      "\\(696\\)",
-      "\\(697\\)",
-      "\\(693\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2710,8 +3759,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(695\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(696\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(697\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(693\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h66",
@@ -2719,13 +3786,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1800 + 27) \\div 9\\)",
-    "a": "\\(203\\)",
-    "opts": [
-      "\\(206\\)",
-      "\\(200\\)",
-      "\\(203\\)",
-      "\\(204\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2748,8 +3808,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(206\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(203\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(204\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h67",
@@ -2757,13 +3835,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1200 - 18) \\div 6\\)",
-    "a": "\\(197\\)",
-    "opts": [
-      "\\(198\\)",
-      "\\(201\\)",
-      "\\(196\\)",
-      "\\(197\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2786,8 +3857,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(198\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(196\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(197\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h68",
@@ -2795,13 +3884,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2800 + 14) \\div 7\\)",
-    "a": "\\(402\\)",
-    "opts": [
-      "\\(400\\)",
-      "\\(403\\)",
-      "\\(402\\)",
-      "\\(407\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2824,8 +3906,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(403\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(402\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(407\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h69",
@@ -2833,13 +3933,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((3200 - 24) \\div 8\\)",
-    "a": "\\(397\\)",
-    "opts": [
-      "\\(398\\)",
-      "\\(394\\)",
-      "\\(399\\)",
-      "\\(397\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2862,8 +3955,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(394\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(399\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h70",
@@ -2871,13 +3982,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((4500 + 45) \\div 9\\)",
-    "a": "\\(505\\)",
-    "opts": [
-      "\\(505\\)",
-      "\\(506\\)",
-      "\\(508\\)",
-      "\\(504\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2900,8 +4004,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(505\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(506\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(508\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(504\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h71",
@@ -2909,13 +4031,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2000 - 15) \\div 5\\)",
-    "a": "\\(397\\)",
-    "opts": [
-      "\\(401\\)",
-      "\\(395\\)",
-      "\\(398\\)",
-      "\\(397\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2938,8 +4053,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(401\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(395\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h72",
@@ -2947,13 +4080,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2400 + 12) \\div 6\\)",
-    "a": "\\(402\\)",
-    "opts": [
-      "\\(402\\)",
-      "\\(399\\)",
-      "\\(407\\)",
-      "\\(403\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2976,8 +4102,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(402\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(399\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(407\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(403\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h73",
@@ -2985,13 +4129,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2800 - 21) \\div 7\\)",
-    "a": "\\(397\\)",
-    "opts": [
-      "\\(399\\)",
-      "\\(397\\)",
-      "\\(396\\)",
-      "\\(398\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3014,8 +4151,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(399\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(396\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h74",
@@ -3023,13 +4178,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((3600 + 18) \\div 9\\)",
-    "a": "\\(402\\)",
-    "opts": [
-      "\\(403\\)",
-      "\\(402\\)",
-      "\\(400\\)",
-      "\\(405\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3052,8 +4200,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(403\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(402\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(405\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h75",
@@ -3061,13 +4227,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((4000 - 24) \\div 8\\)",
-    "a": "\\(497\\)",
-    "opts": [
-      "\\(497\\)",
-      "\\(501\\)",
-      "\\(494\\)",
-      "\\(498\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3090,8 +4249,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(497\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(501\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(494\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(498\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h76",
@@ -3099,13 +4276,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((3000 + 15) \\div 5\\)",
-    "a": "\\(603\\)",
-    "opts": [
-      "\\(603\\)",
-      "\\(604\\)",
-      "\\(602\\)",
-      "\\(608\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3128,8 +4298,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(603\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(604\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(602\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(608\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h77",
@@ -3137,13 +4325,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1200 - 24) \\div 4\\)",
-    "a": "\\(294\\)",
-    "opts": [
-      "\\(294\\)",
-      "\\(292\\)",
-      "\\(295\\)",
-      "\\(296\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3166,8 +4347,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(294\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(292\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(295\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(296\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h78",
@@ -3175,13 +4374,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1800 + 12) \\div 3\\)",
-    "a": "\\(604\\)",
-    "opts": [
-      "\\(607\\)",
-      "\\(601\\)",
-      "\\(604\\)",
-      "\\(605\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3204,8 +4396,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(607\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(601\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(604\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(605\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h79",
@@ -3213,13 +4423,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((3600 - 27) \\div 9\\)",
-    "a": "\\(397\\)",
-    "opts": [
-      "\\(398\\)",
-      "\\(397\\)",
-      "\\(401\\)",
-      "\\(396\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3242,8 +4445,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(401\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(396\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h80",
@@ -3251,13 +4472,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((4200 + 24) \\div 6\\)",
-    "a": "\\(704\\)",
-    "opts": [
-      "\\(702\\)",
-      "\\(704\\)",
-      "\\(709\\)",
-      "\\(705\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3280,8 +4494,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(702\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(704\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(709\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(705\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h81",
@@ -3289,13 +4521,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((3500 - 14) \\div 7\\)",
-    "a": "\\(498\\)",
-    "opts": [
-      "\\(498\\)",
-      "\\(499\\)",
-      "\\(495\\)",
-      "\\(500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3318,8 +4543,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(498\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(499\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(495\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h82",
@@ -3327,13 +4570,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((5600 + 32) \\div 8\\)",
-    "a": "\\(704\\)",
-    "opts": [
-      "\\(707\\)",
-      "\\(705\\)",
-      "\\(704\\)",
-      "\\(703\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3356,8 +4592,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(707\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(705\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(704\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(703\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h83",
@@ -3365,13 +4619,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((4500 - 25) \\div 5\\)",
-    "a": "\\(895\\)",
-    "opts": [
-      "\\(899\\)",
-      "\\(896\\)",
-      "\\(893\\)",
-      "\\(895\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3394,8 +4641,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(899\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(896\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(893\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(895\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h84",
@@ -3403,13 +4668,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1600 + 16) \\div 4\\)",
-    "a": "\\(404\\)",
-    "opts": [
-      "\\(405\\)",
-      "\\(404\\)",
-      "\\(409\\)",
-      "\\(401\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3432,8 +4690,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(405\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(404\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(409\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(401\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h85",
@@ -3441,13 +4717,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1500 - 15) \\div 3\\)",
-    "a": "\\(495\\)",
-    "opts": [
-      "\\(496\\)",
-      "\\(497\\)",
-      "\\(494\\)",
-      "\\(495\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3470,8 +4739,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(496\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(497\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(494\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(495\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h86",
@@ -3479,13 +4766,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1800 + 18) \\div 9\\)",
-    "a": "\\(202\\)",
-    "opts": [
-      "\\(202\\)",
-      "\\(200\\)",
-      "\\(205\\)",
-      "\\(203\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3508,8 +4788,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(205\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(203\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h87",
@@ -3517,13 +4815,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2400 - 18) \\div 6\\)",
-    "a": "\\(397\\)",
-    "opts": [
-      "\\(401\\)",
-      "\\(397\\)",
-      "\\(394\\)",
-      "\\(398\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3546,8 +4837,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(401\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(394\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h88",
@@ -3555,13 +4864,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2100 + 14) \\div 7\\)",
-    "a": "\\(302\\)",
-    "opts": [
-      "\\(302\\)",
-      "\\(301\\)",
-      "\\(303\\)",
-      "\\(307\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3584,8 +4886,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(302\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(301\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(303\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(307\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h89",
@@ -3593,13 +4913,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((3200 - 16) \\div 8\\)",
-    "a": "\\(398\\)",
-    "opts": [
-      "\\(400\\)",
-      "\\(398\\)",
-      "\\(399\\)",
-      "\\(396\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3622,8 +4935,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(399\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(396\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h90",
@@ -3631,13 +4962,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2500 + 15) \\div 5\\)",
-    "a": "\\(503\\)",
-    "opts": [
-      "\\(503\\)",
-      "\\(500\\)",
-      "\\(504\\)",
-      "\\(506\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3660,8 +4984,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(503\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(504\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(506\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h91",
@@ -3669,13 +5011,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1600 - 12) \\div 4\\)",
-    "a": "\\(397\\)",
-    "opts": [
-      "\\(398\\)",
-      "\\(397\\)",
-      "\\(401\\)",
-      "\\(396\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3698,8 +5033,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(401\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(396\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h92",
@@ -3707,13 +5060,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1200 + 9) \\div 3\\)",
-    "a": "\\(403\\)",
-    "opts": [
-      "\\(401\\)",
-      "\\(403\\)",
-      "\\(408\\)",
-      "\\(404\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3736,8 +5082,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(401\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(403\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(408\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(404\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h93",
@@ -3745,13 +5109,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1800 - 9) \\div 9\\)",
-    "a": "\\(199\\)",
-    "opts": [
-      "\\(196\\)",
-      "\\(200\\)",
-      "\\(201\\)",
-      "\\(199\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3774,8 +5131,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(196\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h94",
@@ -3783,13 +5158,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((3000 + 12) \\div 6\\)",
-    "a": "\\(502\\)",
-    "opts": [
-      "\\(505\\)",
-      "\\(502\\)",
-      "\\(503\\)",
-      "\\(501\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3812,8 +5180,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(505\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(502\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(503\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(501\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h95",
@@ -3821,13 +5207,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((4200 - 14) \\div 7\\)",
-    "a": "\\(598\\)",
-    "opts": [
-      "\\(598\\)",
-      "\\(602\\)",
-      "\\(596\\)",
-      "\\(599\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3850,8 +5229,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(598\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(602\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(596\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(599\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h96",
@@ -3859,13 +5256,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((4000 + 16) \\div 8\\)",
-    "a": "\\(502\\)",
-    "opts": [
-      "\\(507\\)",
-      "\\(499\\)",
-      "\\(502\\)",
-      "\\(503\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3888,8 +5278,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(507\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(499\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(502\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(503\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h97",
@@ -3897,13 +5305,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((3500 - 10) \\div 5\\)",
-    "a": "\\(698\\)",
-    "opts": [
-      "\\(700\\)",
-      "\\(698\\)",
-      "\\(697\\)",
-      "\\(699\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3926,8 +5327,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(700\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(698\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(697\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(699\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h98",
@@ -3935,13 +5354,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2000 + 8) \\div 4\\)",
-    "a": "\\(502\\)",
-    "opts": [
-      "\\(502\\)",
-      "\\(503\\)",
-      "\\(505\\)",
-      "\\(500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3964,8 +5376,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(502\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(503\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(505\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1i-h99",
@@ -3973,13 +5403,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((900 - 6) \\div 3\\)",
-    "a": "\\(298\\)",
-    "opts": [
-      "\\(295\\)",
-      "\\(298\\)",
-      "\\(302\\)",
-      "\\(299\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4002,8 +5425,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(295\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(298\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(302\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(299\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h100",
@@ -4011,13 +5452,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1800 + 9) \\div 9\\)",
-    "a": "\\(201\\)",
-    "opts": [
-      "\\(206\\)",
-      "\\(202\\)",
-      "\\(200\\)",
-      "\\(201\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4040,8 +5474,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(206\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h101",
@@ -4049,13 +5501,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1800 - 12) \\div 6\\)",
-    "a": "\\(298\\)",
-    "opts": [
-      "\\(299\\)",
-      "\\(298\\)",
-      "\\(296\\)",
-      "\\(300\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4078,8 +5523,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(299\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(298\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(296\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(300\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h102",
@@ -4087,13 +5550,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1400 + 7) \\div 7\\)",
-    "a": "\\(201\\)",
-    "opts": [
-      "\\(204\\)",
-      "\\(201\\)",
-      "\\(198\\)",
-      "\\(202\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4116,8 +5572,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(204\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(198\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h103",
@@ -4125,13 +5599,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((2400 - 16) \\div 8\\)",
-    "a": "\\(298\\)",
-    "opts": [
-      "\\(297\\)",
-      "\\(299\\)",
-      "\\(298\\)",
-      "\\(302\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4154,8 +5621,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(297\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(299\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(298\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(302\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h104",
@@ -4163,13 +5648,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((1000 + 5) \\div 5\\)",
-    "a": "\\(201\\)",
-    "opts": [
-      "\\(206\\)",
-      "\\(199\\)",
-      "\\(202\\)",
-      "\\(201\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4192,8 +5670,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(206\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1i-h105",
@@ -4201,13 +5697,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((800 - 8) \\div 4\\)",
-    "a": "\\(198\\)",
-    "opts": [
-      "\\(200\\)",
-      "\\(199\\)",
-      "\\(198\\)",
-      "\\(195\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4230,8 +5719,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(198\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(195\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1i-h106",
@@ -4239,13 +5746,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((600 + 6) \\div 3\\)",
-    "a": "\\(202\\)",
-    "opts": [
-      "\\(203\\)",
-      "\\(202\\)",
-      "\\(205\\)",
-      "\\(201\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4268,8 +5768,26 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(203\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(205\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1i-h107",
@@ -4277,13 +5795,6 @@ export const Y7_CH1I_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate the expression using the distributive law of division: \\((900 - 9) \\div 9\\)",
-    "a": "\\(99\\)",
-    "opts": [
-      "\\(99\\)",
-      "\\(100\\)",
-      "\\(103\\)",
-      "\\(97\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4306,7 +5817,25 @@ export const Y7_CH1I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "Division",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(99\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(103\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(97\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   }
 ];

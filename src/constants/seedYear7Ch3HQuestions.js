@@ -3465,7 +3465,7 @@ export const Y7_CH3H_QUESTIONS = [
         "id": "y7-3h-q27d",
         "type": "teacher_review",
         "question": "d) Is it true that for any even whole number $p$, $p^2 + 1$ is not divisible by 3?",
-        "a": "Yes. From part b), p\u00b2+1 for even p always ends in 1, 5 or 7. More formally: for any integer p, either p \u2261 0, 1 or 2 (mod 3). Then p\u00b2 \u2261 0, 1 or 1 (mod 3) respectively, so p\u00b2+1 \u2261 1, 2 or 2 (mod 3). In every case the remainder is not 0, so p\u00b2+1 is never divisible by 3.",
+        "a": "Yes. From part b), p\u00b2+1 for even p always ends in 1, 5 or 7. More formally: for any integer p, either the remainder of p when divided by 3 is 0, 1, or 2. Then the remainder of p² when divided by 3 is 0, 1, or 1 respectively, so the remainder of p²+1 when divided by 3 is 1, 2, or 2. In every case the remainder is not 0, so p\u00b2+1 is never divisible by 3.",
         "solutionSteps": [
           {
             "explanation": "Yes, it is true. To prove this, we consider all possible remainders when dividing $p$ by $3$. Any whole number $p$ gives a remainder of $0$, $1$, or $2$ when divided by $3$.",

@@ -4,14 +4,24 @@ export const Y7_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 15 + 5 \\\\)",
-    "a": "20",
     "options": [
-      "\\\\( 20 \\\\)",
-      "\\\\( 19 \\\\)",
-      "\\\\( 21 \\\\)",
-      "\\\\( 15 \\\\)"
+      {
+        "text": "\\\\( 20 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 19 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 21 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 15 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -24,21 +34,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 10 + 10 = 20 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1b",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 8 + 22 \\\\)",
-    "a": "30",
     "options": [
-      "\\\\( 30 \\\\)",
-      "\\\\( 28 \\\\)",
-      "\\\\( 32 \\\\)",
-      "\\\\( 40 \\\\)"
+      {
+        "text": "\\\\( 30 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 28 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 32 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 40 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -51,21 +72,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 20 + 10 = 30 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1c",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 13 + 7 \\\\)",
-    "a": "20",
     "options": [
-      "\\\\( 20 \\\\)",
-      "\\\\( 19 \\\\)",
-      "\\\\( 21 \\\\)",
-      "\\\\( 23 \\\\)"
+      {
+        "text": "\\\\( 20 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 19 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 21 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 23 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -78,21 +110,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 10 + 10 = 20 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1d",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 74 + 6 \\\\)",
-    "a": "80",
     "options": [
-      "\\\\( 80 \\\\)",
-      "\\\\( 78 \\\\)",
-      "\\\\( 82 \\\\)",
-      "\\\\( 84 \\\\)"
+      {
+        "text": "\\\\( 80 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 78 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 82 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 84 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -105,21 +148,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 70 + 10 = 80 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1e",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 7 + 58 \\\\)",
-    "a": "65",
     "options": [
-      "\\\\( 65 \\\\)",
-      "\\\\( 63 \\\\)",
-      "\\\\( 66 \\\\)",
-      "\\\\( 55 \\\\)"
+      {
+        "text": "\\\\( 65 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 63 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 66 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 55 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -132,21 +186,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 50 + 15 = 65 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1f",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 6 + 38 \\\\)",
-    "a": "44",
     "options": [
-      "\\\\( 44 \\\\)",
-      "\\\\( 42 \\\\)",
-      "\\\\( 46 \\\\)",
-      "\\\\( 38 \\\\)"
+      {
+        "text": "\\\\( 44 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 42 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 46 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 38 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -159,21 +224,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 30 + 14 = 44 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1g",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 8 + 89 \\\\)",
-    "a": "97",
     "options": [
-      "\\\\( 97 \\\\)",
-      "\\\\( 96 \\\\)",
-      "\\\\( 98 \\\\)",
-      "\\\\( 87 \\\\)"
+      {
+        "text": "\\\\( 97 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 96 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 98 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 87 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -186,21 +262,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 80 + 17 = 97 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1h",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 32 + 9 \\\\)",
-    "a": "41",
     "options": [
-      "\\\\( 41 \\\\)",
-      "\\\\( 39 \\\\)",
-      "\\\\( 40 \\\\)",
-      "\\\\( 43 \\\\)"
+      {
+        "text": "\\\\( 41 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 39 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 40 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 43 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -213,21 +300,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 30 + 11 = 41 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1i",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 35 + 27 \\\\)",
-    "a": "62",
     "options": [
-      "\\\\( 62 \\\\)",
-      "\\\\( 52 \\\\)",
-      "\\\\( 63 \\\\)",
-      "\\\\( 65 \\\\)"
+      {
+        "text": "\\\\( 62 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 52 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 63 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 65 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -245,21 +343,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 50 + 12 = 62 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1j",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 42 + 19 \\\\)",
-    "a": "61",
     "options": [
-      "\\\\( 61 \\\\)",
-      "\\\\( 51 \\\\)",
-      "\\\\( 62 \\\\)",
-      "\\\\( 59 \\\\)"
+      {
+        "text": "\\\\( 61 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 51 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 62 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 59 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -277,21 +386,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 50 + 11 = 61 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1k",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 29 + 36 \\\\)",
-    "a": "65",
     "options": [
-      "\\\\( 65 \\\\)",
-      "\\\\( 55 \\\\)",
-      "\\\\( 66 \\\\)",
-      "\\\\( 64 \\\\)"
+      {
+        "text": "\\\\( 65 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 55 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 66 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 64 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -309,21 +429,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 50 + 15 = 65 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q1l",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition mentally:\n\\\\( 57 + 86 \\\\)",
-    "a": "143",
     "options": [
-      "\\\\( 143 \\\\)",
-      "\\\\( 133 \\\\)",
-      "\\\\( 144 \\\\)",
-      "\\\\( 153 \\\\)"
+      {
+        "text": "\\\\( 143 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 133 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 144 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 153 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -341,21 +472,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 130 + 15 = 145 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q2a",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 1 + 9 + 33 \\\\)",
-    "a": "43",
     "options": [
-      "\\\\( 43 \\\\)",
-      "\\\\( 42 \\\\)",
-      "\\\\( 33 \\\\)",
-      "\\\\( 53 \\\\)"
+      {
+        "text": "\\\\( 43 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 42 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 33 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 53 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -368,21 +510,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 10 + 33 = 43 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q2b",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 2 + 38 + 5 \\\\)",
-    "a": "45",
     "options": [
-      "\\\\( 45 \\\\)",
-      "\\\\( 40 \\\\)",
-      "\\\\( 43 \\\\)",
-      "\\\\( 55 \\\\)"
+      {
+        "text": "\\\\( 45 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 40 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 43 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 55 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -395,21 +548,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 40 + 5 = 45 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q2c",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 27 + 6 + 3 \\\\)",
-    "a": "36",
     "options": [
-      "\\\\( 36 \\\\)",
-      "\\\\( 30 \\\\)",
-      "\\\\( 33 \\\\)",
-      "\\\\( 46 \\\\)"
+      {
+        "text": "\\\\( 36 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 30 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 33 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 46 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -422,21 +586,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 30 + 6 = 36 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q2d",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 16 + 24 + 5 \\\\)",
-    "a": "45",
     "options": [
-      "\\\\( 45 \\\\)",
-      "\\\\( 40 \\\\)",
-      "\\\\( 41 \\\\)",
-      "\\\\( 55 \\\\)"
+      {
+        "text": "\\\\( 45 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 40 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 41 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 55 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -449,21 +624,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 40 + 5 = 45 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q2e",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 61 + 9 + 24 \\\\)",
-    "a": "94",
     "options": [
-      "\\\\( 94 \\\\)",
-      "\\\\( 70 \\\\)",
-      "\\\\( 84 \\\\)",
-      "\\\\( 95 \\\\)"
+      {
+        "text": "\\\\( 94 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 70 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 84 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 95 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -476,21 +662,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 70 + 24 = 94 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q2f",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 4 + 42 + 38 \\\\)",
-    "a": "84",
     "options": [
-      "\\\\( 84 \\\\)",
-      "\\\\( 80 \\\\)",
-      "\\\\( 46 \\\\)",
-      "\\\\( 94 \\\\)"
+      {
+        "text": "\\\\( 84 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 80 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 46 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 94 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -503,21 +700,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 80 + 4 = 84 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q2g",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 16 + 55 + 27 \\\\)",
-    "a": "98",
     "options": [
-      "\\\\( 98 \\\\)",
-      "\\\\( 88 \\\\)",
-      "\\\\( 99 \\\\)",
-      "\\\\( 108 \\\\)"
+      {
+        "text": "\\\\( 98 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 88 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 99 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 108 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -530,21 +738,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 71 + 27 = 98 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q2h",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 72 + 19 + 26 \\\\)",
-    "a": "117",
     "options": [
-      "\\\\( 117 \\\\)",
-      "\\\\( 107 \\\\)",
-      "\\\\( 118 \\\\)",
-      "\\\\( 127 \\\\)"
+      {
+        "text": "\\\\( 117 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 107 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 118 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 127 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -557,21 +776,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 91 + 26 = 117 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q3a",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Do this computation using pairing techniques:\n\\\\( 22 + 17 + 18 + 23 \\\\)",
-    "a": "80",
     "options": [
-      "\\\\( 80 \\\\)",
-      "\\\\( 70 \\\\)",
-      "\\\\( 90 \\\\)",
-      "\\\\( 85 \\\\)"
+      {
+        "text": "\\\\( 80 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 70 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 90 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 85 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -584,21 +814,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 40 + 40 = 80 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q3b",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Do this computation using pairing techniques:\n\\\\( 14 + 18 + 76 + 92 \\\\)",
-    "a": "200",
     "options": [
-      "\\\\( 200 \\\\)",
-      "\\\\( 190 \\\\)",
-      "\\\\( 210 \\\\)",
-      "\\\\( 220 \\\\)"
+      {
+        "text": "\\\\( 200 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 190 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 210 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 220 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -611,21 +852,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 90 + 110 = 200 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q3c",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Do this computation using pairing techniques:\n\\\\( 13 + 27 + 64 + 6 \\\\)",
-    "a": "110",
     "options": [
-      "\\\\( 110 \\\\)",
-      "\\\\( 100 \\\\)",
-      "\\\\( 120 \\\\)",
-      "\\\\( 105 \\\\)"
+      {
+        "text": "\\\\( 110 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 100 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 120 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 105 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -638,21 +890,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 40 + 70 = 110 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q3d",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Do this computation using pairing techniques:\n\\\\( 25 + 32 + 15 + 18 \\\\)",
-    "a": "90",
     "options": [
-      "\\\\( 90 \\\\)",
-      "\\\\( 80 \\\\)",
-      "\\\\( 100 \\\\)",
-      "\\\\( 95 \\\\)"
+      {
+        "text": "\\\\( 90 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 80 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 100 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 95 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -665,21 +928,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 40 + 50 = 90 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q3e",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Do this computation using pairing techniques:\n\\\\( 15 + 34 + 26 + 35 \\\\)",
-    "a": "110",
     "options": [
-      "\\\\( 110 \\\\)",
-      "\\\\( 100 \\\\)",
-      "\\\\( 120 \\\\)",
-      "\\\\( 115 \\\\)"
+      {
+        "text": "\\\\( 110 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 100 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 120 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 115 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -692,21 +966,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 50 + 60 = 110 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q3f",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Do this computation using pairing techniques:\n\\\\( 12 + 19 + 18 + 1 \\\\)",
-    "a": "50",
     "options": [
-      "\\\\( 50 \\\\)",
-      "\\\\( 40 \\\\)",
-      "\\\\( 60 \\\\)",
-      "\\\\( 55 \\\\)"
+      {
+        "text": "\\\\( 50 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 40 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 60 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 55 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -719,21 +1004,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 30 + 20 = 50 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q4a",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 243 + 57 \\\\)",
-    "a": "300",
     "options": [
-      "\\\\( 300 \\\\)",
-      "\\\\( 290 \\\\)",
-      "\\\\( 310 \\\\)",
-      "\\\\( 250 \\\\)"
+      {
+        "text": "\\\\( 300 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 290 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 310 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 250 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -746,21 +1042,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 200 + 100 = 300 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q4b",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 567 + 43 \\\\)",
-    "a": "610",
     "options": [
-      "\\\\( 610 \\\\)",
-      "\\\\( 600 \\\\)",
-      "\\\\( 620 \\\\)",
-      "\\\\( 510 \\\\)"
+      {
+        "text": "\\\\( 610 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 600 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 620 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 510 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -773,21 +1080,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 500 + 110 = 610 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q4c",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 328 + 22 \\\\)",
-    "a": "350",
     "options": [
-      "\\\\( 350 \\\\)",
-      "\\\\( 340 \\\\)",
-      "\\\\( 360 \\\\)",
-      "\\\\( 300 \\\\)"
+      {
+        "text": "\\\\( 350 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 340 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 360 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 300 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -800,21 +1118,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 300 + 50 = 350 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q4d",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 786 + 24 \\\\)",
-    "a": "810",
     "options": [
-      "\\\\( 810 \\\\)",
-      "\\\\( 800 \\\\)",
-      "\\\\( 820 \\\\)",
-      "\\\\( 710 \\\\)"
+      {
+        "text": "\\\\( 810 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 800 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 820 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 710 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -827,21 +1156,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 700 + 110 = 810 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q4e",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 435 + 25 \\\\)",
-    "a": "460",
     "options": [
-      "\\\\( 460 \\\\)",
-      "\\\\( 450 \\\\)",
-      "\\\\( 470 \\\\)",
-      "\\\\( 400 \\\\)"
+      {
+        "text": "\\\\( 460 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 450 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 470 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 400 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -854,21 +1194,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 400 + 60 = 460 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q4f",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 963 + 57 \\\\)",
-    "a": "1020",
     "options": [
-      "\\\\( 1020 \\\\)",
-      "\\\\( 1000 \\\\)",
-      "\\\\( 1010 \\\\)",
-      "\\\\( 920 \\\\)"
+      {
+        "text": "\\\\( 1020 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 1000 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 1010 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 920 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -881,21 +1232,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 900 + 120 = 1020 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q4g",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 486 + 524 \\\\)",
-    "a": "1010",
     "options": [
-      "\\\\( 1010 \\\\)",
-      "\\\\( 1000 \\\\)",
-      "\\\\( 1020 \\\\)",
-      "\\\\( 910 \\\\)"
+      {
+        "text": "\\\\( 1010 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 1000 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 1020 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 910 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -908,21 +1270,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 400 + 500 + 110 = 1010 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q4h",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "t": "Addition",
     "question": "Carry out this addition:\n\\\\( 364 + 251 \\\\)",
-    "a": "615",
     "options": [
-      "\\\\( 615 \\\\)",
-      "\\\\( 605 \\\\)",
-      "\\\\( 625 \\\\)",
-      "\\\\( 515 \\\\)"
+      {
+        "text": "\\\\( 615 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 605 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 625 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 515 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -945,21 +1318,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 500 + 110 + 5 = 615 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q5",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "t": "Addition",
     "question": "Three cows produced 29 litres, 47 litres and 23 litres of milk in one day. How much milk did they produce in total?",
-    "a": "99",
     "options": [
-      "\\\\( 99 \\\\)",
-      "\\\\( 96 \\\\)",
-      "\\\\( 89 \\\\)",
-      "\\\\( 109 \\\\)"
+      {
+        "text": "\\\\( 99 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 96 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 89 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 109 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -977,21 +1361,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 29 + 70 = 99 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q6",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "t": "Addition",
     "question": "A tiler laid 267 tiles in the kitchen, 20 tiles in the laundry and 113 tiles in the bathroom. How many tiles did he lay in total?",
-    "a": "400",
     "options": [
-      "\\\\( 400 \\\\)",
-      "\\\\( 380 \\\\)",
-      "\\\\( 410 \\\\)",
-      "\\\\( 390 \\\\)"
+      {
+        "text": "\\\\( 400 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 380 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 410 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 390 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1009,21 +1404,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 380 + 20 = 400 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q7",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "t": "Addition",
     "question": "On the first day of my holidays, I travelled 85 kilometres from my home in Victor Harbor to Adelaide, then 516 kilometres from Adelaide to Broken Hill. The next day I travelled 298 kilometres from Broken Hill to Mildura. How many kilometres did I travel in the first two days of my trip?",
-    "a": "899",
     "options": [
-      "\\\\( 899 \\\\)",
-      "\\\\( 601 \\\\)",
-      "\\\\( 889 \\\\)",
-      "\\\\( 901 \\\\)"
+      {
+        "text": "\\\\( 899 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 601 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 889 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 901 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1041,21 +1447,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 601 + 298 = 899 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q8",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "t": "Addition",
     "question": "A busker collected 8 dollars, 13 dollars, 4 dollars and 12 dollars over four days. How much did she earn?",
-    "a": "37",
     "options": [
-      "\\\\( 37 \\\\)",
-      "\\\\( 35 \\\\)",
-      "\\\\( 47 \\\\)",
-      "\\\\( 38 \\\\)"
+      {
+        "text": "\\\\( 37 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 35 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 47 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 38 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1073,21 +1490,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 20 + 17 = 37 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q9",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "t": "Addition",
     "question": "In three Year 7 classes, 27 students, 31 students and 26 students attended roll call one morning. How many Year 7 students were present?",
-    "a": "84",
     "options": [
-      "\\\\( 84 \\\\)",
-      "\\\\( 82 \\\\)",
-      "\\\\( 94 \\\\)",
-      "\\\\( 74 \\\\)"
+      {
+        "text": "\\\\( 84 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 82 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 94 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 74 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1105,21 +1533,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 58 + 26 = 84 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q10",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "t": "Addition",
     "question": "I picked 18 daffodils from my garden on Monday, 3 on Tuesday, 27 on Wednesday, 6 on Thursday and 12 on Friday. How many daffodils did I pick over the five days?",
-    "a": "66",
     "options": [
-      "\\\\( 66 \\\\)",
-      "\\\\( 64 \\\\)",
-      "\\\\( 56 \\\\)",
-      "\\\\( 76 \\\\)"
+      {
+        "text": "\\\\( 66 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 64 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 56 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 76 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1137,21 +1576,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 30 + 30 + 6 = 66 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q11",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "t": "Addition",
     "question": "In one week, Sam read four books. The first book had 312 pages, the second 175, the third 48 and the fourth 98. How many pages did Sam read in the week?",
-    "a": "633",
     "options": [
-      "\\\\( 633 \\\\)",
-      "\\\\( 623 \\\\)",
-      "\\\\( 643 \\\\)",
-      "\\\\( 533 \\\\)"
+      {
+        "text": "\\\\( 633 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 623 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 643 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 533 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1169,21 +1619,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 360 + 273 = 633 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q12a",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Addition",
     "question": "By appropriately pairing numbers, carry out the addition:\n\\\\( 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 \\\\)",
-    "a": "45",
     "options": [
-      "\\\\( 45 \\\\)",
-      "\\\\( 40 \\\\)",
-      "\\\\( 50 \\\\)",
-      "\\\\( 55 \\\\)"
+      {
+        "text": "\\\\( 45 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 40 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 50 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 55 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1201,21 +1662,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 4 \\\\times 10 + 5 = 45 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-q12b",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Addition",
     "question": "Use the pairing technique to find the sum of numbers from 1 to 99 inclusive.",
-    "a": "4950",
     "options": [
-      "\\\\( 4950 \\\\)",
-      "\\\\( 5000 \\\\)",
-      "\\\\( 4900 \\\\)",
-      "\\\\( 5050 \\\\)"
+      {
+        "text": "\\\\( 4950 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 5000 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 4900 \\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\( 5050 \\\\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1233,21 +1705,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\\\( 49 \\\\times 100 + 50 = 4950 \\\\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-h16",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Cargo Logistics",
     "question": "A cargo vessel is loaded with three shipments of wheat weighing \\( 4520 \\) kg, \\( 3890 \\) kg, and \\( 1245 \\) kg respectively. Find the total weight of the wheat cargo.",
-    "a": "\\( 9655 \\)",
     "options": [
-      "\\( 9555 \\)",
-      "\\( 9645 \\)",
-      "\\( 9655 \\)",
-      "\\( 9755 \\)"
+      {
+        "text": "\\( 9555 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9645 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9655 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9755 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1265,21 +1748,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 8410 + 1245 = 9655 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h17",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Wildlife Conservation",
     "question": "Conservationists tracked three migrating herds of caribou containing \\( 1850 \\), \\( 2430 \\), and \\( 975 \\) animals. Calculate the total number of caribou tracked.",
-    "a": "\\( 5255 \\)",
     "options": [
-      "\\( 5155 \\)",
-      "\\( 5245 \\)",
-      "\\( 5255 \\)",
-      "\\( 5355 \\)"
+      {
+        "text": "\\( 5155 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5245 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5255 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5355 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1297,21 +1791,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 4280 + 975 = 5255 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h18",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Deep Space Telescope",
     "question": "An astronomer cataloged three new stellar clusters with \\( 3400 \\), \\( 5680 \\), and \\( 1290 \\) stars. Determine the total count of cataloged stars.",
-    "a": "\\( 10370 \\)",
     "options": [
-      "\\( 10270 \\)",
-      "\\( 10360 \\)",
-      "\\( 10370 \\)",
-      "\\( 10470 \\)"
+      {
+        "text": "\\( 10270 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 10360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 10370 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 10470 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1329,21 +1834,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 9080 + 1290 = 10370 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h19",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Urban Infrastructure",
     "question": "A city water reservoir receives three inflows of \\( 12500 \\) liters, \\( 8900 \\) liters, and \\( 4350 \\) liters from different tributaries. What is the total volume of water added?",
-    "a": "\\( 25750 \\)",
     "options": [
-      "\\( 25650 \\)",
-      "\\( 25740 \\)",
-      "\\( 25750 \\)",
-      "\\( 25850 \\)"
+      {
+        "text": "\\( 25650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 25740 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 25750 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 25850 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1361,21 +1877,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 21400 + 4350 = 25750 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h20",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Microchip Manufacturing",
     "question": "A silicon foundry produced three batches of processors consisting of \\( 8500 \\) units, \\( 9200 \\) units, and \\( 3450 \\) units. Find the total number of processors produced.",
-    "a": "\\( 21150 \\)",
     "options": [
-      "\\( 21050 \\)",
-      "\\( 21140 \\)",
-      "\\( 21150 \\)",
-      "\\( 21250 \\)"
+      {
+        "text": "\\( 21050 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 21140 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 21150 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 21250 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1393,21 +1920,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 17700 + 3450 = 21150 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h21",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Agricultural Harvest",
     "question": "An orchard harvested three varieties of apples, yielding \\( 2850 \\) organic Granny Smiths, \\( 3120 \\) Honeycrisps, and \\( 1475 \\) Fujis. Calculate the total apple yield.",
-    "a": "\\( 7445 \\)",
     "options": [
-      "\\( 7345 \\)",
-      "\\( 7435 \\)",
-      "\\( 7445 \\)",
-      "\\( 7545 \\)"
+      {
+        "text": "\\( 7345 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7435 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7445 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7545 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1425,21 +1963,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 5970 + 1475 = 7445 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h22",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Financial Audit",
     "question": "A startup's quarterly expenses consist of \\( \\$15400 \\) for marketing, \\( \\$22800 \\) for development, and \\( \\$4950 \\) for office rental. What are the total expenses?",
-    "a": "\\( \\$43150 \\)",
     "options": [
-      "\\( \\$43050 \\)",
-      "\\( \\$43140 \\)",
-      "\\( \\$43150 \\)",
-      "\\( \\$43250 \\)"
+      {
+        "text": "\\( \\$43050 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\$43140 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\$43150 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\$43250 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1457,21 +2006,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 38200 + 4950 = 43150 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h23",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Data Cloud Network",
     "question": "A database server processed three data streams containing \\( 6800 \\) MB, \\( 12450 \\) MB, and \\( 3120 \\) MB of transaction logs. Solve for the total processed data size.",
-    "a": "\\( 22370 \\)",
     "options": [
-      "\\( 22270 \\)",
-      "\\( 22360 \\)",
-      "\\( 22370 \\)",
-      "\\( 22470 \\)"
+      {
+        "text": "\\( 22270 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22370 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22470 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1489,21 +2049,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 19250 + 3120 = 22370 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h24",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Power Grid Integration",
     "question": "A hybrid power station generates electricity from three sources: wind turbine (\\( 7350 \\) kW), solar array (\\( 4890 \\) kW), and biomass generator (\\( 2110 \\) kW). Find the total power output.",
-    "a": "\\( 14350 \\)",
     "options": [
-      "\\( 14250 \\)",
-      "\\( 14340 \\)",
-      "\\( 14350 \\)",
-      "\\( 14450 \\)"
+      {
+        "text": "\\( 14250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14340 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14350 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14450 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1521,21 +2092,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 12240 + 2110 = 14350 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h25",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Archaeological Excavation",
     "question": "Archaeologists at a historical site uncovered three categories of artifacts: \\( 450 \\) pottery shards, \\( 890 \\) metal coins, and \\( 125 \\) bone tools. Find the total artifact count.",
-    "a": "\\( 1465 \\)",
     "options": [
-      "\\( 1365 \\)",
-      "\\( 1455 \\)",
-      "\\( 1465 \\)",
-      "\\( 1565 \\)"
+      {
+        "text": "\\( 1365 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1455 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1465 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1565 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1553,21 +2135,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 1340 + 125 = 1465 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h26",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "High-Speed Transit",
     "question": "A regional train line recorded ridership of \\( 14200 \\) on Monday, \\( 16800 \\) on Tuesday, and \\( 9350 \\) on Wednesday. Calculate the total ridership over these three days.",
-    "a": "\\( 40350 \\)",
     "options": [
-      "\\( 40250 \\)",
-      "\\( 40340 \\)",
-      "\\( 40350 \\)",
-      "\\( 40450 \\)"
+      {
+        "text": "\\( 40250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40340 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40350 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40450 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1585,21 +2178,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 31000 + 9350 = 40350 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h27",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Marine Biology Study",
     "question": "Researchers monitoring a coral reef count three populations of reef fish: \\( 3560 \\) damselfish, \\( 2840 \\) clownfish, and \\( 1120 \\) wrasses. Find the total number of fish counted.",
-    "a": "\\( 7520 \\)",
     "options": [
-      "\\( 7420 \\)",
-      "\\( 7510 \\)",
-      "\\( 7520 \\)",
-      "\\( 7620 \\)"
+      {
+        "text": "\\( 7420 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7510 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7520 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7620 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1617,21 +2221,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 6400 + 1120 = 7520 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h28",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Civil Engineering",
     "question": "A suspension bridge construction project uses three structural steel cable segments measuring \\( 850 \\) meters, \\( 925 \\) meters, and \\( 430 \\) meters. What is the total length of the cables?",
-    "a": "\\( 2205 \\)",
     "options": [
-      "\\( 2105 \\)",
-      "\\( 2195 \\)",
-      "\\( 2205 \\)",
-      "\\( 2305 \\)"
+      {
+        "text": "\\( 2105 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2195 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2205 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2305 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1649,21 +2264,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 1775 + 430 = 2205 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h29",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Eco-Reforestation",
     "question": "A forest conservation team planted three blocks of native saplings: Block A (\\( 12500 \\) oak), Block B (\\( 9800 \\) pine), and Block C (\\( 6450 \\) birch). Calculate the total saplings planted.",
-    "a": "\\( 28750 \\)",
     "options": [
-      "\\( 28650 \\)",
-      "\\( 28740 \\)",
-      "\\( 28750 \\)",
-      "\\( 28850 \\)"
+      {
+        "text": "\\( 28650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 28740 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 28750 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 28850 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1681,21 +2307,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 22300 + 6450 = 28750 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h30",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Sports Arena Event",
     "question": "A multi-day athletics tournament registered \\( 8560 \\) spectators on day one, \\( 11240 \\) on day two, and \\( 6800 \\) on day three. Determine the total spectator attendance.",
-    "a": "\\( 26600 \\)",
     "options": [
-      "\\( 26500 \\)",
-      "\\( 26590 \\)",
-      "\\( 26600 \\)",
-      "\\( 26700 \\)"
+      {
+        "text": "\\( 26500 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26590 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26600 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26700 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1713,21 +2350,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 19800 + 6800 = 26600 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h31",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Library Archives",
     "question": "A university archive restored three historical collections containing \\( 3250 \\) rare manuscripts, \\( 4890 \\) photographs, and \\( 1560 \\) maps. How many items were restored in total?",
-    "a": "\\( 9700 \\)",
     "options": [
-      "\\( 9600 \\)",
-      "\\( 9690 \\)",
-      "\\( 9700 \\)",
-      "\\( 9800 \\)"
+      {
+        "text": "\\( 9600 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9690 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9700 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9800 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1745,21 +2393,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 8140 + 1560 = 9700 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h32",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Industrial Chemistry",
     "question": "A chemical plant blends three batches of solvent containing \\( 8950 \\) liters, \\( 12400 \\) liters, and \\( 5250 \\) liters. Find the total volume of blended solvent.",
-    "a": "\\( 26600 \\)",
     "options": [
-      "\\( 26500 \\)",
-      "\\( 26590 \\)",
-      "\\( 26600 \\)",
-      "\\( 26700 \\)"
+      {
+        "text": "\\( 26500 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26590 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26600 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26700 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1777,21 +2436,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 21350 + 5250 = 26600 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h33",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Digital Cryptography",
     "question": "A security protocol requires verification of three prime hashes containing \\( 5400 \\) bits, \\( 8192 \\) bits, and \\( 2048 \\) bits. Solve for the total bits verified.",
-    "a": "\\( 15640 \\)",
     "options": [
-      "\\( 15540 \\)",
-      "\\( 15630 \\)",
-      "\\( 15640 \\)",
-      "\\( 15740 \\)"
+      {
+        "text": "\\( 15540 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 15630 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 15640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 15740 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1809,21 +2479,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 13592 + 2048 = 15640 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h34",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Aerospace Propulsion",
     "question": "A spacecraft fuel system consists of a main tank (\\( 45800 \\) kg), secondary booster (\\( 24900 \\) kg), and orbital maneuvering reserve (\\( 3850 \\) kg). Calculate the total fuel weight.",
-    "a": "\\( 74550 \\)",
     "options": [
-      "\\( 74450 \\)",
-      "\\( 74540 \\)",
-      "\\( 74550 \\)",
-      "\\( 74650 \\)"
+      {
+        "text": "\\( 74450 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 74540 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 74550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 74650 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1841,21 +2522,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 70700 + 3850 = 74550 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h35",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Hospital Inventory",
     "question": "A medical supply depot distributed three shipments of vaccine vials containing \\( 18900 \\), \\( 22400 \\), and \\( 9350 \\) doses. Determine the total doses distributed.",
-    "a": "\\( 50650 \\)",
     "options": [
-      "\\( 50550 \\)",
-      "\\( 50640 \\)",
-      "\\( 50650 \\)",
-      "\\( 50750 \\)"
+      {
+        "text": "\\( 50550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 50640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 50650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 50750 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1873,21 +2565,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 41300 + 9350 = 50650 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h36",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Volcanic Activity Monitoring",
     "question": "Seismologists detected three series of micro-tremors during a month: \\( 1250 \\) in week one, \\( 1890 \\) in week two, and \\( 640 \\) in week three. Find the total number of tremors.",
-    "a": "\\( 3780 \\)",
     "options": [
-      "\\( 3680 \\)",
-      "\\( 3770 \\)",
-      "\\( 3780 \\)",
-      "\\( 3880 \\)"
+      {
+        "text": "\\( 3680 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3770 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3780 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3880 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1905,21 +2608,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 3140 + 640 = 3780 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h37",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Botanical Seed Bank",
     "question": "A seed repository catalogs three shipments of wildflower seeds: \\( 35000 \\) poppy, \\( 48000 \\) lupine, and \\( 12500 \\) daisy seeds. Find the total wildflower seed count.",
-    "a": "\\( 95500 \\)",
     "options": [
-      "\\( 95400 \\)",
-      "\\( 95490 \\)",
-      "\\( 95500 \\)",
-      "\\( 95600 \\)"
+      {
+        "text": "\\( 95400 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 95490 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 95500 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 95600 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1937,21 +2651,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 83000 + 12500 = 95500 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h38",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Corporate Acquisition",
     "question": "An energy conglomerate acquires three wind farms with operating capacities of \\( 145 \\) MW, \\( 230 \\) MW, and \\( 85 \\) MW. Calculate the total acquired capacity.",
-    "a": "\\( 460 \\)",
     "options": [
-      "\\( 360 \\)",
-      "\\( 450 \\)",
-      "\\( 460 \\)",
-      "\\( 560 \\)"
+      {
+        "text": "\\( 360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 450 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 460 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 560 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -1969,21 +2694,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 375 + 85 = 460 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h39",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Textile Production",
     "question": "A textile mill processes three shipments of raw cotton yarn measuring \\( 12800 \\) meters, \\( 15600 \\) meters, and \\( 9250 \\) meters. Solve for the total length of cotton yarn.",
-    "a": "\\( 37650 \\)",
     "options": [
-      "\\( 37550 \\)",
-      "\\( 37640 \\)",
-      "\\( 37650 \\)",
-      "\\( 37750 \\)"
+      {
+        "text": "\\( 37550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37750 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2001,21 +2737,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 28400 + 9250 = 37650 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h40",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Municipal Waste Recycling",
     "question": "A recycling plant processed three categories of household waste: \\( 5240 \\) kg of glass, \\( 8950 \\) kg of paper, and \\( 3120 \\) kg of plastics. What is the total weight of recycled waste?",
-    "a": "\\( 17310 \\)",
     "options": [
-      "\\( 17210 \\)",
-      "\\( 17300 \\)",
-      "\\( 17310 \\)",
-      "\\( 17410 \\)"
+      {
+        "text": "\\( 17210 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 17300 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 17310 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 17410 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2033,21 +2780,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 14190 + 3120 = 17310 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h41",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Antarctic Ice Drill",
     "question": "Climatologists extracted three ice core samples from different depths measuring \\( 1450 \\) cm, \\( 2280 \\) cm, and \\( 890 \\) cm. Calculate the combined length of the ice core samples.",
-    "a": "\\( 4620 \\)",
     "options": [
-      "\\( 4520 \\)",
-      "\\( 4610 \\)",
-      "\\( 4620 \\)",
-      "\\( 4720 \\)"
+      {
+        "text": "\\( 4520 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4610 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4620 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4720 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2065,21 +2823,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 3730 + 890 = 4620 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h42",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Supercomputer Core",
     "question": "A high-performance computing cluster distributes a simulation across three node blocks using \\( 8192 \\) cores, \\( 4096 \\) cores, and \\( 2048 \\) cores. What is the total core count?",
-    "a": "\\( 14336 \\)",
     "options": [
-      "\\( 14236 \\)",
-      "\\( 14326 \\)",
-      "\\( 14336 \\)",
-      "\\( 14436 \\)"
+      {
+        "text": "\\( 14236 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14326 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14336 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14436 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2097,21 +2866,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 12288 + 2048 = 14336 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h43",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Global Telecommunications",
     "question": "A submarine fiber-optic network routes three light wavelengths carrying bandwidths of \\( 45 \\) Gbps, \\( 75 \\) Gbps, and \\( 32 \\) Gbps. Determine the total combined bandwidth.",
-    "a": "\\( 152 \\)",
     "options": [
-      "\\( 52 \\)",
-      "\\( 142 \\)",
-      "\\( 152 \\)",
-      "\\( 252 \\)"
+      {
+        "text": "\\( 52 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 142 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 152 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 252 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2129,21 +2909,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 120 + 32 = 152 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1b-h44",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Renewable Hydropower",
     "question": "A water reservoir receives hourly inflows from three glacier melt streams: \\( 14500 \\) cubic meters, \\( 18900 \\) cubic meters, and \\( 7250 \\) cubic meters. Find the total hourly inflow.",
-    "a": "\\( 40650 \\)",
     "options": [
-      "\\( 40550 \\)",
-      "\\( 40640 \\)",
-      "\\( 40650 \\)",
-      "\\( 40750 \\)"
+      {
+        "text": "\\( 40550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40750 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2161,21 +2952,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 33400 + 7250 = 40650 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h45",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Oceanographic Buoy",
     "question": "An ocean sensor logs waves over three days: \\( 3240 \\) wave crests on day one, \\( 4180 \\) on day two, and \\( 1950 \\) on day three. Calculate the total wave crest count.",
-    "a": "\\( 9370 \\)",
     "options": [
-      "\\( 9270 \\)",
-      "\\( 9360 \\)",
-      "\\( 9370 \\)",
-      "\\( 9470 \\)"
+      {
+        "text": "\\( 9270 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9370 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9470 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2193,21 +2995,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 7420 + 1950 = 9370 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h46",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Urban Density Study",
     "question": "A regional demographic survey records populations of three neighboring residential sectors: Sector A (\\( 12850 \\)), Sector B (\\( 15600 \\)), and Sector C (\\( 9450 \\)). Find the total population.",
-    "a": "\\( 37900 \\)",
     "options": [
-      "\\( 37800 \\)",
-      "\\( 37890 \\)",
-      "\\( 37900 \\)",
-      "\\( 38000 \\)"
+      {
+        "text": "\\( 37800 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37890 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37900 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 38000 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2225,21 +3038,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 28450 + 9450 = 37900 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h47",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Commercial Air Fleet",
     "question": "An airline's three passenger routes carried \\( 184500 \\), \\( 212900 \\), and \\( 93800 \\) travelers in a quarter. Solve for the total number of route passengers.",
-    "a": "\\( 491200 \\)",
     "options": [
-      "\\( 491100 \\)",
-      "\\( 491190 \\)",
-      "\\( 491200 \\)",
-      "\\( 491300 \\)"
+      {
+        "text": "\\( 491100 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 491190 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 491200 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 491300 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2257,21 +3081,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 397400 + 93800 = 491200 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h48",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Food Grain Storage",
     "question": "A grain elevator stores three shipments of barley weighing \\( 12500 \\) kg, \\( 16800 \\) kg, and \\( 8950 \\) kg. Find the total weight of stored barley.",
-    "a": "\\( 38250 \\)",
     "options": [
-      "\\( 38150 \\)",
-      "\\( 38240 \\)",
-      "\\( 38250 \\)",
-      "\\( 38350 \\)"
+      {
+        "text": "\\( 38150 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 38240 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 38250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 38350 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2289,21 +3124,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 29300 + 8950 = 38250 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h49",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Solar Farm Grid",
     "question": "A solar facility registers power peaks of \\( 5240 \\) kW, \\( 8350 \\) kW, and \\( 3120 \\) kW across its three major photovoltaic fields. What is the total peak output?",
-    "a": "\\( 16710 \\)",
     "options": [
-      "\\( 16610 \\)",
-      "\\( 16700 \\)",
-      "\\( 16710 \\)",
-      "\\( 16810 \\)"
+      {
+        "text": "\\( 16610 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 16700 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 16710 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 16810 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2321,21 +3167,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 13590 + 3120 = 16710 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h50",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Space Rocket Cargo",
     "question": "A lunar supply ship carries a scientific payload of \\( 1850 \\) kg, life support supplies of \\( 2430 \\) kg, and structural spare parts of \\( 970 \\) kg. Find the total cargo weight.",
-    "a": "\\( 5250 \\)",
     "options": [
-      "\\( 5150 \\)",
-      "\\( 5240 \\)",
-      "\\( 5250 \\)",
-      "\\( 5350 \\)"
+      {
+        "text": "\\( 5150 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5240 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5350 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2353,21 +3210,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 4280 + 970 = 5250 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h51",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Cyber Security Token",
     "question": "A digital wallet processes three ledger transactions containing \\( 6800 \\) tokens, \\( 12450 \\) tokens, and \\( 3120 \\) tokens. Calculate the total token value of the transactions.",
-    "a": "\\( 22370 \\)",
     "options": [
-      "\\( 22270 \\)",
-      "\\( 22360 \\)",
-      "\\( 22370 \\)",
-      "\\( 22470 \\)"
+      {
+        "text": "\\( 22270 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22370 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22470 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2385,21 +3253,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 19250 + 3120 = 22370 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h52",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Historical Preservation",
     "question": "A library digitizes three rare scroll volumes: Volume I (\\( 1250 \\) pages), Volume II (\\( 1890 \\) pages), and Volume III (\\( 640 \\) pages). How many pages are digitized in total?",
-    "a": "\\( 3780 \\)",
     "options": [
-      "\\( 3680 \\)",
-      "\\( 3770 \\)",
-      "\\( 3780 \\)",
-      "\\( 3880 \\)"
+      {
+        "text": "\\( 3680 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3770 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3780 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3880 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2417,21 +3296,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 3140 + 640 = 3780 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h53",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Petroleum Refiner",
     "question": "A refining column processes three crude components yielding \\( 35000 \\) barrels of diesel, \\( 48000 \\) barrels of gasoline, and \\( 12500 \\) barrels of aviation fuel. Find the total barrels.",
-    "a": "\\( 95500 \\)",
     "options": [
-      "\\( 95400 \\)",
-      "\\( 95490 \\)",
-      "\\( 95500 \\)",
-      "\\( 95600 \\)"
+      {
+        "text": "\\( 95400 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 95490 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 95500 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 95600 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2449,21 +3339,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 83000 + 12500 = 95500 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h54",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Microgrid Integration",
     "question": "A local microgrid integrates power from three residential battery units storing \\( 145 \\) kWh, \\( 230 \\) kWh, and \\( 85 \\) kWh. Calculate the total microgrid battery storage capacity.",
-    "a": "\\( 460 \\)",
     "options": [
-      "\\( 360 \\)",
-      "\\( 450 \\)",
-      "\\( 460 \\)",
-      "\\( 560 \\)"
+      {
+        "text": "\\( 360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 450 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 460 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 560 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2481,21 +3382,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 375 + 85 = 460 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h55",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Textile Mill Raw Material",
     "question": "A yarn manufacturer imports three raw wool shipments weighing \\( 12800 \\) kg, \\( 15600 \\) kg, and \\( 9250 \\) kg. Solve for the total weight of the imported wool.",
-    "a": "\\( 37650 \\)",
     "options": [
-      "\\( 37550 \\)",
-      "\\( 37640 \\)",
-      "\\( 37650 \\)",
-      "\\( 37750 \\)"
+      {
+        "text": "\\( 37550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37750 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2513,21 +3425,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 28400 + 9250 = 37650 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h56",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Industrial Recycling Stream",
     "question": "An industrial recycler collects three containers of copper scrap weighing \\( 5240 \\) kg, \\( 8950 \\) kg, and \\( 3120 \\) kg. Calculate the total weight of copper scrap collected.",
-    "a": "\\( 17310 \\)",
     "options": [
-      "\\( 17210 \\)",
-      "\\( 17300 \\)",
-      "\\( 17310 \\)",
-      "\\( 17410 \\)"
+      {
+        "text": "\\( 17210 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 17300 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 17310 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 17410 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2545,21 +3468,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 14190 + 3120 = 17310 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h57",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Climatology Core Station",
     "question": "A scientific expedition extracts three sediment cores measuring \\( 1450 \\) mm, \\( 2280 \\) mm, and \\( 890 \\) mm. Find the total length of the sediment cores.",
-    "a": "\\( 4620 \\)",
     "options": [
-      "\\( 4520 \\)",
-      "\\( 4610 \\)",
-      "\\( 4620 \\)",
-      "\\( 4720 \\)"
+      {
+        "text": "\\( 4520 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4610 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4620 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4720 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2577,21 +3511,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 3730 + 890 = 4620 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h58",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Processor Node Block",
     "question": "A cluster splits a computing task across three server nodes, using \\( 8192 \\) threads, \\( 4096 \\) threads, and \\( 2048 \\) threads. Solve for the total thread count.",
-    "a": "\\( 14336 \\)",
     "options": [
-      "\\( 14236 \\)",
-      "\\( 14326 \\)",
-      "\\( 14336 \\)",
-      "\\( 14436 \\)"
+      {
+        "text": "\\( 14236 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14326 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14336 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14436 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2609,21 +3554,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 12288 + 2048 = 14336 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h59",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Ocean Buoy Drift",
     "question": "A drifting scientific buoy logs wave counts over three observation windows: \\( 3240 \\) waves, \\( 4180 \\) waves, and \\( 1950 \\) waves. What is the total logged wave count?",
-    "a": "\\( 9370 \\)",
     "options": [
-      "\\( 9270 \\)",
-      "\\( 9360 \\)",
-      "\\( 9370 \\)",
-      "\\( 9470 \\)"
+      {
+        "text": "\\( 9270 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9370 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9470 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2641,21 +3597,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 7420 + 1950 = 9370 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h60",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Regional Demographics",
     "question": "A municipal report details the populations of three villages: \\( 12850 \\) residents, \\( 15600 \\) residents, and \\( 9450 \\) residents. Find the total combined population.",
-    "a": "\\( 37900 \\)",
     "options": [
-      "\\( 37800 \\)",
-      "\\( 37890 \\)",
-      "\\( 37900 \\)",
-      "\\( 38000 \\)"
+      {
+        "text": "\\( 37800 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37890 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37900 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 38000 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2673,21 +3640,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 28450 + 9450 = 37900 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h61",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Air Fleet Logistics",
     "question": "A freight airline's cargo planes transported \\( 184500 \\) kg, \\( 212900 \\) kg, and \\( 93800 \\) kg of industrial machinery in a month. Calculate the total cargo weight.",
-    "a": "\\( 491200 \\)",
     "options": [
-      "\\( 491100 \\)",
-      "\\( 491190 \\)",
-      "\\( 491200 \\)",
-      "\\( 491300 \\)"
+      {
+        "text": "\\( 491100 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 491190 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 491200 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 491300 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2705,21 +3683,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 397400 + 93800 = 491200 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h62",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Hydropower Inflow",
     "question": "A high-altitude dam logs water inflows of \\( 14500 \\) L/s, \\( 18900 \\) L/s, and \\( 7250 \\) L/s from three mountain creeks. Find the total water inflow rate.",
-    "a": "\\( 40650 \\)",
     "options": [
-      "\\( 40550 \\)",
-      "\\( 40640 \\)",
-      "\\( 40650 \\)",
-      "\\( 40750 \\)"
+      {
+        "text": "\\( 40550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40750 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2737,21 +3726,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 33400 + 7250 = 40650 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h63",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Crypto Transaction Hash",
     "question": "A blockchain explorer records three smart contract transactions with gas costs of \\( 15400 \\) units, \\( 22800 \\) units, and \\( 4950 \\) units. What is the total gas consumed?",
-    "a": "\\( 43150 \\)",
     "options": [
-      "\\( 43050 \\)",
-      "\\( 43140 \\)",
-      "\\( 43150 \\)",
-      "\\( 43250 \\)"
+      {
+        "text": "\\( 43050 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 43140 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 43150 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 43250 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2769,21 +3769,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 38200 + 4950 = 43150 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h64",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Cloud Server Bandwidth",
     "question": "A cloud database server handles three network streams of \\( 6800 \\) GB, \\( 12450 \\) GB, and \\( 3120 \\) GB of asset files. Find the total file data transfer size.",
-    "a": "\\( 22370 \\)",
     "options": [
-      "\\( 22270 \\)",
-      "\\( 22360 \\)",
-      "\\( 22370 \\)",
-      "\\( 22470 \\)"
+      {
+        "text": "\\( 22270 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22370 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22470 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2801,21 +3812,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 19250 + 3120 = 22370 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h65",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Power Grid Peak Load",
     "question": "A local substation integrates peak currents from three industrial feeders measuring \\( 7350 \\) A, \\( 4890 \\) A, and \\( 2110 \\) A. Find the total peak current.",
-    "a": "\\( 14350 \\)",
     "options": [
-      "\\( 14250 \\)",
-      "\\( 14340 \\)",
-      "\\( 14350 \\)",
-      "\\( 14450 \\)"
+      {
+        "text": "\\( 14250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14340 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14350 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14450 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2833,21 +3855,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 12240 + 2110 = 14350 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h66",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Archaeological Coin Cache",
     "question": "An excavation catalog lists three groups of bronze coins recovered from different levels: \\( 450 \\) coins, \\( 890 \\) coins, and \\( 125 \\) coins. Find the total coin count.",
-    "a": "\\( 1465 \\)",
     "options": [
-      "\\( 1365 \\)",
-      "\\( 1455 \\)",
-      "\\( 1465 \\)",
-      "\\( 1565 \\)"
+      {
+        "text": "\\( 1365 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1455 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1465 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1565 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2865,21 +3898,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 1340 + 125 = 1465 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h67",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "High-Speed Transit Daily",
     "question": "A high-speed rail line logs passenger boardings of \\( 14200 \\), \\( 16800 \\), and \\( 9350 \\) across three stations on Tuesday. Calculate the total boardings.",
-    "a": "\\( 40350 \\)",
     "options": [
-      "\\( 40250 \\)",
-      "\\( 40340 \\)",
-      "\\( 40350 \\)",
-      "\\( 40450 \\)"
+      {
+        "text": "\\( 40250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40340 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40350 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40450 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2897,21 +3941,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 31000 + 9350 = 40350 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h68",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Reef Survey Count",
     "question": "Marine ecologists tracking sea turtles record three regional nesting counts: \\( 3560 \\), \\( 2840 \\), and \\( 1120 \\) nests. Calculate the total sea turtle nests recorded.",
-    "a": "\\( 7520 \\)",
     "options": [
-      "\\( 7420 \\)",
-      "\\( 7510 \\)",
-      "\\( 7520 \\)",
-      "\\( 7620 \\)"
+      {
+        "text": "\\( 7420 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7510 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7520 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7620 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2929,21 +3984,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 6400 + 1120 = 7520 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h69",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Cable Segment Assembly",
     "question": "A power transmission installation uses three sections of insulated copper wire measuring \\( 850 \\) m, \\( 925 \\) m, and \\( 430 \\) m. Calculate the total transmission line length.",
-    "a": "\\( 2205 \\)",
     "options": [
-      "\\( 2105 \\)",
-      "\\( 2195 \\)",
-      "\\( 2205 \\)",
-      "\\( 2305 \\)"
+      {
+        "text": "\\( 2105 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2195 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2205 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2305 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2961,21 +4027,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 1775 + 430 = 2205 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h70",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Forest Sapling Plantation",
     "question": "A regional reforestation agency coordinates planting of three native species: \\( 12500 \\) maples, \\( 9800 \\) firs, and \\( 6450 \\) birches. Find the total tree count.",
-    "a": "\\( 28750 \\)",
     "options": [
-      "\\( 28650 \\)",
-      "\\( 28740 \\)",
-      "\\( 28750 \\)",
-      "\\( 28850 \\)"
+      {
+        "text": "\\( 28650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 28740 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 28750 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 28850 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -2993,21 +4070,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 22300 + 6450 = 28750 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h71",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Sports Spectator Gates",
     "question": "A major stadium reports gate entries from three security checkpoints: Gate A (\\( 8560 \\)), Gate B (\\( 11240 \\)), and Gate C (\\( 6800 \\)). Solve for the total entries.",
-    "a": "\\( 26600 \\)",
     "options": [
-      "\\( 26500 \\)",
-      "\\( 26590 \\)",
-      "\\( 26600 \\)",
-      "\\( 26700 \\)"
+      {
+        "text": "\\( 26500 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26590 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26600 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26700 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3025,21 +4113,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 19800 + 6800 = 26600 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h72",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Manuscript Archive Scan",
     "question": "A digital library scans three book collections containing \\( 3250 \\) books, \\( 4890 \\) books, and \\( 1560 \\) books. Determine the total books digitized.",
-    "a": "\\( 9700 \\)",
     "options": [
-      "\\( 9600 \\)",
-      "\\( 9690 \\)",
-      "\\( 9700 \\)",
-      "\\( 9800 \\)"
+      {
+        "text": "\\( 9600 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9690 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9700 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9800 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3057,21 +4156,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 8140 + 1560 = 9700 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h73",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Industrial Solvent Blend",
     "question": "A production batch requires combining three vats of chemical solvent holding \\( 8950 \\) L, \\( 12400 \\) L, and \\( 5250 \\) L. Find the total solvent volume.",
-    "a": "\\( 26600 \\)",
     "options": [
-      "\\( 26500 \\)",
-      "\\( 26590 \\)",
-      "\\( 26600 \\)",
-      "\\( 26700 \\)"
+      {
+        "text": "\\( 26500 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26590 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26600 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26700 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3089,21 +4199,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 21350 + 5250 = 26600 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h74",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Hash Token Ledger",
     "question": "A distributed database logs three block updates containing \\( 5400 \\) records, \\( 8192 \\) records, and \\( 2048 \\) records. Solve for the total number of records.",
-    "a": "\\( 15640 \\)",
     "options": [
-      "\\( 15540 \\)",
-      "\\( 15630 \\)",
-      "\\( 15640 \\)",
-      "\\( 15740 \\)"
+      {
+        "text": "\\( 15540 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 15630 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 15640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 15740 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3121,21 +4242,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 13592 + 2048 = 15640 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h75",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Launch Vehicle Fuel",
     "question": "A rocket propellant loading sequence pumps \\( 45800 \\) kg of oxygen, \\( 24900 \\) kg of kerosene, and \\( 3850 \\) kg of nitrogen gas. Determine the total propellant load.",
-    "a": "\\( 74550 \\)",
     "options": [
-      "\\( 74450 \\)",
-      "\\( 74540 \\)",
-      "\\( 74550 \\)",
-      "\\( 74650 \\)"
+      {
+        "text": "\\( 74450 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 74540 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 74550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 74650 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3153,21 +4285,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 70700 + 3850 = 74550 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h76",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Vaccine Vial Depot",
     "question": "A distribution hub logs vaccine shipments containing \\( 18900 \\) Pfizer, \\( 22400 \\) Moderna, and \\( 9350 \\) Novavax vials. What is the total number of vials logged?",
-    "a": "\\( 50650 \\)",
     "options": [
-      "\\( 50550 \\)",
-      "\\( 50640 \\)",
-      "\\( 50650 \\)",
-      "\\( 50750 \\)"
+      {
+        "text": "\\( 50550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 50640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 50650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 50750 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3185,21 +4328,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 41300 + 9350 = 50650 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h77",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Micro-Tremor Catalog",
     "question": "A seismic station logs micro-quakes across three regional fault lines: Fault A (\\( 1250 \\)), Fault B (\\( 1890 \\)), and Fault C (\\( 640 \\)). Find the total logged tremors.",
-    "a": "\\( 3780 \\)",
     "options": [
-      "\\( 3680 \\)",
-      "\\( 3770 \\)",
-      "\\( 3780 \\)",
-      "\\( 3880 \\)"
+      {
+        "text": "\\( 3680 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3770 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3780 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3880 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3217,21 +4371,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 3140 + 640 = 3780 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h78",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Seed Vault Accession",
     "question": "A global seed bank registers crop seed packs containing \\( 35000 \\) wheat, \\( 48000 \\) rice, and \\( 12500 \\) maize varieties. Find the total number of seed packs.",
-    "a": "\\( 95500 \\)",
     "options": [
-      "\\( 95400 \\)",
-      "\\( 95490 \\)",
-      "\\( 95500 \\)",
-      "\\( 95600 \\)"
+      {
+        "text": "\\( 95400 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 95490 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 95500 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 95600 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3249,21 +4414,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 83000 + 12500 = 95500 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h79",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Wind Farm Grid Peak",
     "question": "A regional wind network logs peak hourly yields from three offshore locations: \\( 145 \\) MW, \\( 230 \\) MW, and \\( 85 \\) MW. Calculate the total peak offshore yield.",
-    "a": "\\( 460 \\)",
     "options": [
-      "\\( 360 \\)",
-      "\\( 450 \\)",
-      "\\( 460 \\)",
-      "\\( 560 \\)"
+      {
+        "text": "\\( 360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 450 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 460 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 560 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3281,21 +4457,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 375 + 85 = 460 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h80",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Wool Raw Material Weight",
     "question": "A spinning mill logs three bales of fine merino wool weighing \\( 12800 \\) g, \\( 15600 \\) g, and \\( 9250 \\) g. Determine the total wool batch weight.",
-    "a": "\\( 37650 \\)",
     "options": [
-      "\\( 37550 \\)",
-      "\\( 37640 \\)",
-      "\\( 37650 \\)",
-      "\\( 37750 \\)"
+      {
+        "text": "\\( 37550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37750 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3313,21 +4500,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 28400 + 9250 = 37650 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h81",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Steel Casting Foundry",
     "question": "A blast furnace pours three batches of cast iron weighing \\( 5240 \\) kg, \\( 8950 \\) kg, and \\( 3120 \\) kg. Calculate the total cast iron yield.",
-    "a": "\\( 17310 \\)",
     "options": [
-      "\\( 17210 \\)",
-      "\\( 17300 \\)",
-      "\\( 17310 \\)",
-      "\\( 17410 \\)"
+      {
+        "text": "\\( 17210 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 17300 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 17310 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 17410 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3345,21 +4543,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 14190 + 3120 = 17310 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h82",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Marine Survey Coral",
     "question": "Marine biologists catalog coral structures in three survey sectors: Sector A (\\( 1450 \\)), Sector B (\\( 2280 \\)), and Sector C (\\( 890 \\)). Find the total cataloged structures.",
-    "a": "\\( 4620 \\)",
     "options": [
-      "\\( 4520 \\)",
-      "\\( 4610 \\)",
-      "\\( 4620 \\)",
-      "\\( 4720 \\)"
+      {
+        "text": "\\( 4520 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4610 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4620 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4720 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3377,21 +4586,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 3730 + 890 = 4620 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h83",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Computer Task Core Allocation",
     "question": "A grid network coordinates job execution using \\( 8192 \\) virtual CPUs, \\( 4096 \\) virtual CPUs, and \\( 2048 \\) virtual CPUs. Find the total virtual CPU allocation.",
-    "a": "\\( 14336 \\)",
     "options": [
-      "\\( 14236 \\)",
-      "\\( 14326 \\)",
-      "\\( 14336 \\)",
-      "\\( 14436 \\)"
+      {
+        "text": "\\( 14236 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14326 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14336 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14436 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3409,21 +4629,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 12288 + 2048 = 14336 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h84",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Offshore Buoy Wave Count",
     "question": "An offshore beacon logs wave cycles over three intervals: \\( 3240 \\) cycles, \\( 4180 \\) cycles, and \\( 1950 \\) cycles. Solve for the total logged wave cycles.",
-    "a": "\\( 9370 \\)",
     "options": [
-      "\\( 9270 \\)",
-      "\\( 9360 \\)",
-      "\\( 9370 \\)",
-      "\\( 9470 \\)"
+      {
+        "text": "\\( 9270 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9370 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9470 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3441,21 +4672,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 7420 + 1950 = 9370 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h85",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Rural Settlement Population",
     "question": "A regional board compiles demographic counts for three rural districts: District A (\\( 12850 \\)), District B (\\( 15600 \\)), and District C (\\( 9450 \\)). Find the total count.",
-    "a": "\\( 37900 \\)",
     "options": [
-      "\\( 37800 \\)",
-      "\\( 37890 \\)",
-      "\\( 37900 \\)",
-      "\\( 38000 \\)"
+      {
+        "text": "\\( 37800 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37890 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37900 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 38000 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3473,21 +4715,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 28450 + 9450 = 37900 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h86",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Cargo Fleet Capacity Weight",
     "question": "A freighter shipping firm transports cargo batches weighing \\( 184500 \\) tonnes, \\( 212900 \\) tonnes, and \\( 93800 \\) tonnes. What is the total cargo weight transported?",
-    "a": "\\( 491200 \\)",
     "options": [
-      "\\( 491100 \\)",
-      "\\( 491190 \\)",
-      "\\( 491200 \\)",
-      "\\( 491300 \\)"
+      {
+        "text": "\\( 491100 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 491190 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 491200 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 491300 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3505,21 +4758,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 397400 + 93800 = 491200 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h87",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Stream Flow Rate Total",
     "question": "Hydrologists measure discharge rates of three streams entering a lake: Stream A (\\( 14500 \\) L/min), Stream B (\\( 18900 \\) L/min), and Stream C (\\( 7250 \\) L/min). Find the total discharge.",
-    "a": "\\( 40650 \\)",
     "options": [
-      "\\( 40550 \\)",
-      "\\( 40640 \\)",
-      "\\( 40650 \\)",
-      "\\( 40750 \\)"
+      {
+        "text": "\\( 40550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40750 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3537,21 +4801,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 33400 + 7250 = 40650 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h88",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Gas Network Pressure",
     "question": "An inspector logs pipeline gas volumes of \\( 15400 \\) cubic feet, \\( 22800 \\) cubic feet, and \\( 4950 \\) cubic feet across three storage vaults. Calculate the total volume.",
-    "a": "\\( 43150 \\)",
     "options": [
-      "\\( 43050 \\)",
-      "\\( 43140 \\)",
-      "\\( 43150 \\)",
-      "\\( 43250 \\)"
+      {
+        "text": "\\( 43050 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 43140 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 43150 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 43250 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3569,21 +4844,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 38200 + 4950 = 43150 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h89",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Data Storage Logs",
     "question": "A log collector system aggregates data logs size: \\( 6800 \\) files, \\( 12450 \\) files, and \\( 3120 \\) files from different applications. Calculate the total number of log files.",
-    "a": "\\( 22370 \\)",
     "options": [
-      "\\( 22270 \\)",
-      "\\( 22360 \\)",
-      "\\( 22370 \\)",
-      "\\( 22470 \\)"
+      {
+        "text": "\\( 22270 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22360 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22370 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 22470 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3601,21 +4887,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 19250 + 3120 = 22370 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h90",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Electric Substation Peak Load",
     "question": "An electrical grid logs peak currents of \\( 7350 \\) amperes, \\( 4890 \\) amperes, and \\( 2110 \\) amperes across three transformers. Determine the total combined peak current.",
-    "a": "\\( 14350 \\)",
     "options": [
-      "\\( 14250 \\)",
-      "\\( 14340 \\)",
-      "\\( 14350 \\)",
-      "\\( 14450 \\)"
+      {
+        "text": "\\( 14250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14340 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14350 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14450 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3633,21 +4930,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 12240 + 2110 = 14350 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h91",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Museum Artifact Coins",
     "question": "A museum displays three collections of gold coins: Collection A (\\( 450 \\) coins), Collection B (\\( 890 \\) coins), and Collection C (\\( 125 \\) coins). Find the total coin display count.",
-    "a": "\\( 1465 \\)",
     "options": [
-      "\\( 1365 \\)",
-      "\\( 1455 \\)",
-      "\\( 1465 \\)",
-      "\\( 1565 \\)"
+      {
+        "text": "\\( 1365 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1455 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1465 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1565 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3665,21 +4973,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 1340 + 125 = 1465 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h92",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Passenger Station Transit Boardings",
     "question": "An urban transport system counts daily boardings at three key metro stations: \\( 14200 \\) boardings, \\( 16800 \\) boardings, and \\( 9350 \\) boardings. Find the total daily boardings.",
-    "a": "\\( 40350 \\)",
     "options": [
-      "\\( 40250 \\)",
-      "\\( 40340 \\)",
-      "\\( 40350 \\)",
-      "\\( 40450 \\)"
+      {
+        "text": "\\( 40250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40340 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40350 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 40450 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3697,21 +5016,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 31000 + 9350 = 40350 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h93",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Offshore Turtle Nests",
     "question": "Marine surveyors catalog nesting grounds for green turtles on three islands: Island A (\\( 3560 \\)), Island B (\\( 2840 \\)), and Island C (\\( 1120 \\)). Solve for the total nests.",
-    "a": "\\( 7520 \\)",
     "options": [
-      "\\( 7420 \\)",
-      "\\( 7510 \\)",
-      "\\( 7520 \\)",
-      "\\( 7620 \\)"
+      {
+        "text": "\\( 7420 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7510 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7520 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7620 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3729,21 +5059,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 6400 + 1120 = 7520 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h94",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Cable Transmission Line Length",
     "question": "A utility company lays three sections of submarine high-voltage cable measuring \\( 850 \\) km, \\( 925 \\) km, and \\( 430 \\) km. Calculate the total submarine cable length.",
-    "a": "\\( 2205 \\)",
     "options": [
-      "\\( 2105 \\)",
-      "\\( 2195 \\)",
-      "\\( 2205 \\)",
-      "\\( 2305 \\)"
+      {
+        "text": "\\( 2105 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2195 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2205 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2305 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3761,21 +5102,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 1775 + 430 = 2205 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h95",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Tree Plantation Reforest Species",
     "question": "A municipal reforestation project reports planting three categories of saplings: \\( 12500 \\) redwoods, \\( 9800 \\) cedars, and \\( 6450 \\) hemlocks. Find the total combined saplings.",
-    "a": "\\( 28750 \\)",
     "options": [
-      "\\( 28650 \\)",
-      "\\( 28740 \\)",
-      "\\( 28750 \\)",
-      "\\( 28850 \\)"
+      {
+        "text": "\\( 28650 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 28740 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 28750 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 28850 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3793,21 +5145,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 22300 + 6450 = 28750 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h96",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Spectator Stadium Gate Entries",
     "question": "A sports arena logs admissions at three major turnstile groups: North (\\( 8560 \\)), South (\\( 11240 \\)), and East (\\( 6800 \\)). Determine the total spectators admitted.",
-    "a": "\\( 26600 \\)",
     "options": [
-      "\\( 26500 \\)",
-      "\\( 26590 \\)",
-      "\\( 26600 \\)",
-      "\\( 26700 \\)"
+      {
+        "text": "\\( 26500 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26590 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26600 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26700 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3825,21 +5188,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 19800 + 6800 = 26600 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h97",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Archival Manuscripts Scanner",
     "question": "A preservation society catalogs three sets of historical documents containing \\( 3250 \\), \\( 4890 \\), and \\( 1560 \\) pages. Find the total number of document pages.",
-    "a": "\\( 9700 \\)",
     "options": [
-      "\\( 9600 \\)",
-      "\\( 9690 \\)",
-      "\\( 9700 \\)",
-      "\\( 9800 \\)"
+      {
+        "text": "\\( 9600 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9690 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9700 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9800 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3857,21 +5231,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 8140 + 1560 = 9700 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h98",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Industrial Chemistry Blend Vat",
     "question": "A chemical process requires mixing three liquid components holding \\( 8950 \\) mL, \\( 12400 \\) mL, and \\( 5250 \\) mL. Solve for the total chemical mix volume.",
-    "a": "\\( 26600 \\)",
     "options": [
-      "\\( 26500 \\)",
-      "\\( 26590 \\)",
-      "\\( 26600 \\)",
-      "\\( 26700 \\)"
+      {
+        "text": "\\( 26500 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26590 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26600 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 26700 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3889,21 +5274,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 21350 + 5250 = 26600 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h99",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Hash Ledger Database Record",
     "question": "A security backup system aggregates three logs containing \\( 5400 \\), \\( 8192 \\), and \\( 2048 \\) entries. Find the total aggregated entries in the backup system.",
-    "a": "\\( 15640 \\)",
     "options": [
-      "\\( 15540 \\)",
-      "\\( 15630 \\)",
-      "\\( 15640 \\)",
-      "\\( 15740 \\)"
+      {
+        "text": "\\( 15540 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 15630 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 15640 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 15740 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3921,21 +5317,32 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 13592 + 2048 = 15640 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h100",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "t": "Propellant Rocket Loading Oxygen",
     "question": "A space vehicle takes three liquid oxygen loads weighing \\( 45800 \\) kg, \\( 24900 \\) kg, and \\( 3850 \\) kg. Calculate the total liquid oxygen weight.",
-    "a": "\\( 74550 \\)",
     "options": [
-      "\\( 74450 \\)",
-      "\\( 74540 \\)",
-      "\\( 74550 \\)",
-      "\\( 74650 \\)"
+      {
+        "text": "\\( 74450 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 74540 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 74550 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 74650 \\)",
+        "imageUrl": ""
+      }
     ],
     "solutionSteps": [
       {
@@ -3953,7 +5360,8 @@ export const Y7_CH1B_QUESTIONS = [
         "workingOut": "\\( 70700 + 3850 = 74550 \\)",
         "graphData": null
       }
-    ]
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1b-h1",

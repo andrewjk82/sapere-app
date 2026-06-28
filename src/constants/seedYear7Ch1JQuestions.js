@@ -5,14 +5,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use short division to calculate:\n\\(784 \\div 2\\)",
-    "a": "\\(392\\)",
-    "opts": [
-      "\\(392\\)",
-      "\\(382\\)",
-      "\\(396\\)",
-      "\\(402\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 784 by 2 starting from the hundreds place.",
     "solutionSteps": [
       {
@@ -36,7 +28,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(392\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(382\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(396\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(402\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-q1b",
@@ -44,14 +55,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use short division to calculate:\n\\(973 \\div 7\\)",
-    "a": "\\(139\\)",
-    "opts": [
-      "\\(129\\)",
-      "\\(135\\)",
-      "\\(149\\)",
-      "\\(139\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide by 7 starting from the hundreds place and carry any remainders.",
     "solutionSteps": [
       {
@@ -75,7 +78,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(129\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(135\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(149\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(139\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-q1c",
@@ -83,14 +105,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use short division to calculate:\n\\(3728 \\div 8\\)",
-    "a": "\\(466\\)",
-    "opts": [
-      "\\(476\\)",
-      "\\(466\\)",
-      "\\(468\\)",
-      "\\(456\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Since 3 is less than 8, start by dividing 37 by 8.",
     "solutionSteps": [
       {
@@ -114,7 +128,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(476\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(466\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(468\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(456\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-q1d",
@@ -122,14 +155,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use short division to calculate:\n\\(9728 \\div 8\\)",
-    "a": "\\(1216\\)",
-    "opts": [
-      "\\(1206\\)",
-      "\\(1116\\)",
-      "\\(1216\\)",
-      "\\(1226\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide by 8 starting from the thousands place.",
     "solutionSteps": [
       {
@@ -158,7 +183,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1206\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1116\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1216\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1226\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-q1e",
@@ -166,14 +210,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use short division to calculate:\n\\(1764 \\div 9\\)",
-    "a": "\\(196\\)",
-    "opts": [
-      "\\(186\\)",
-      "\\(196\\)",
-      "\\(206\\)",
-      "\\(190\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Start by dividing 17 by 9.",
     "solutionSteps": [
       {
@@ -197,7 +233,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(186\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(196\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(206\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(190\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-q1f",
@@ -205,14 +260,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use short division to calculate:\n\\(4392 \\div 6\\)",
-    "a": "\\(732\\)",
-    "opts": [
-      "\\(742\\)",
-      "\\(736\\)",
-      "\\(732\\)",
-      "\\(722\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 43 by 6 first.",
     "solutionSteps": [
       {
@@ -236,7 +283,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(742\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(736\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(732\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(722\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-q1g",
@@ -244,14 +310,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use short division to calculate:\n\\(1859 \\div 11\\)",
-    "a": "\\(169\\)",
-    "opts": [
-      "\\(159\\)",
-      "\\(165\\)",
-      "\\(179\\)",
-      "\\(169\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Start by dividing 18 by 11.",
     "solutionSteps": [
       {
@@ -275,7 +333,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(159\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(165\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(179\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(169\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-q1h",
@@ -283,14 +360,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use short division to calculate:\n\\(41856 \\div 12\\)",
-    "a": "\\(3488\\)",
-    "opts": [
-      "\\(3488\\)",
-      "\\(3478\\)",
-      "\\(3388\\)",
-      "\\(3498\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 41 by 12 first.",
     "solutionSteps": [
       {
@@ -319,7 +388,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3488\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3478\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3388\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3498\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-q1i",
@@ -327,14 +415,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use short division to calculate:\n\\(28350 \\div 9\\)",
-    "a": "\\(3150\\)",
-    "opts": [
-      "\\(3140\\)",
-      "\\(3160\\)",
-      "\\(3050\\)",
-      "\\(3150\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 28 by 9 first.",
     "solutionSteps": [
       {
@@ -363,7 +443,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3140\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3160\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3050\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3150\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-q2a",
@@ -371,14 +470,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work out using short division:\n\\(736 \\div 4\\)",
-    "a": "\\(184\\)",
-    "opts": [
-      "\\(174\\)",
-      "\\(184\\)",
-      "\\(194\\)",
-      "\\(180\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 7 by 4 first and carry the remainder.",
     "solutionSteps": [
       {
@@ -402,7 +493,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(174\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(184\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(194\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(180\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-q2b",
@@ -410,14 +520,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work out using short division:\n\\(1428 \\div 3\\)",
-    "a": "\\(476\\)",
-    "opts": [
-      "\\(486\\)",
-      "\\(470\\)",
-      "\\(476\\)",
-      "\\(466\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 14 by 3 first.",
     "solutionSteps": [
       {
@@ -441,7 +543,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(486\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(470\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(476\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(466\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-q2c",
@@ -449,14 +570,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work out using short division:\n\\(576 \\div 6\\)",
-    "a": "\\(96\\)",
-    "opts": [
-      "\\(90\\)",
-      "\\(86\\)",
-      "\\(106\\)",
-      "\\(96\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 57 by 6 first.",
     "solutionSteps": [
       {
@@ -475,7 +588,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(90\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(86\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(106\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(96\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-q2d",
@@ -483,14 +615,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Work out using short division. Provide your answer in the form \"quotient r remainder\" (e.g. 53 r 7):\n\\(523 \\div 8\\)",
-    "a": "\\(65\\text{ r }3\\)",
-    "opts": [
-      "\\(66\\text{ r }3\\)",
-      "\\(64\\text{ r }3\\)",
-      "\\(65\\text{ r }3\\)",
-      "\\(65\\text{ r }5\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 52 by 8 first. The leftover units at the end will be the remainder.",
     "solutionSteps": [
       {
@@ -509,7 +633,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(66\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(65\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(65\\text{ r }5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-q2e",
@@ -517,14 +660,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Work out using short division. Provide your answer in the form \"quotient r remainder\" (e.g. 67 r 3):\n\\(850 \\div 11\\)",
-    "a": "\\(77\\text{ r }3\\)",
-    "opts": [
-      "\\(78\\text{ r }3\\)",
-      "\\(77\\text{ r }3\\)",
-      "\\(77\\text{ r }5\\)",
-      "\\(76\\text{ r }3\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 85 by 11 first and carry the remainder.",
     "solutionSteps": [
       {
@@ -543,7 +678,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(78\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(77\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(77\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(76\\text{ r }3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-q2f",
@@ -551,14 +705,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Work out using short division:\n\\(8544 \\div 12\\)",
-    "a": "\\(712\\)",
-    "opts": [
-      "\\(712\\)",
-      "\\(702\\)",
-      "\\(710\\)",
-      "\\(722\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 85 by 12 first.",
     "solutionSteps": [
       {
@@ -582,7 +728,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(712\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(702\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(710\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(722\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-q2g",
@@ -590,14 +755,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Work out using short division. Provide your answer in the form \"quotient r remainder\" (e.g. 11257 r 1):\n\\(58427 \\div 6\\)",
-    "a": "\\(9737\\text{ r }5\\)",
-    "opts": [
-      "\\(9736\\text{ r }5\\)",
-      "\\(9737\\text{ r }4\\)",
-      "\\(9738\\text{ r }5\\)",
-      "\\(9737\\text{ r }5\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 58 by 6 first and carry remainders step-by-step.",
     "solutionSteps": [
       {
@@ -626,7 +783,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(9736\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9737\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9738\\text{ r }5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9737\\text{ r }5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-q2h",
@@ -634,14 +810,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Work out using short division. Provide your answer in the form \"quotient r remainder\" (e.g. 2715 r 3):\n\\(23005 \\div 7\\)",
-    "a": "\\(3286\\text{ r }3\\)",
-    "opts": [
-      "\\(3286\\text{ r }4\\)",
-      "\\(3286\\text{ r }3\\)",
-      "\\(3287\\text{ r }3\\)",
-      "\\(3285\\text{ r }3\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 23 by 7 first.",
     "solutionSteps": [
       {
@@ -670,7 +838,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3286\\text{ r }4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3286\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3287\\text{ r }3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3285\\text{ r }3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-q3",
@@ -678,14 +865,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "If 5460 dollars is to be divided equally among 6 people, how much will each person receive? (Do not include the dollar sign or the word dollars in your answer)",
-    "a": "\\(910\\)",
-    "opts": [
-      "\\(920\\)",
-      "\\(810\\)",
-      "\\(910\\)",
-      "\\(900\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 5460 by 6 using short division.",
     "solutionSteps": [
       {
@@ -704,7 +883,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(920\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(810\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(910\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-q4",
@@ -712,14 +910,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "There are 685 tennis balls to be packed into boxes of 12. How many boxes will be filled and how many tennis balls will be left over?\nProvide your answer in the form \"boxes, left over\" (e.g. 57, 1).",
-    "a": "\\(57, 1\\)",
-    "opts": [
-      "\\(56, 1\\)",
-      "\\(57, 1\\)",
-      "\\(58, 1\\)",
-      "\\(57, 2\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 685 by 12. The quotient is the number of boxes, and the remainder is the leftover balls.",
     "solutionSteps": [
       {
@@ -738,7 +928,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(56, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(57, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(58, 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(57, 2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-q5",
@@ -775,14 +984,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "If 324 children from a school are to be transported on 6 buses, how many children will there be on each bus, if the number of children on each bus is the same?",
-    "a": "\\(54\\)",
-    "opts": [
-      "\\(56\\)",
-      "\\(44\\)",
-      "\\(52\\)",
-      "\\(54\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 324 by 6 using short division.",
     "solutionSteps": [
       {
@@ -806,7 +1007,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(56\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-q7",
@@ -814,14 +1034,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "There are 12 buses available to transport 564 people on an outing. How many people will there be on each bus, if the passengers are to be distributed equally?",
-    "a": "\\(47\\)",
-    "opts": [
-      "\\(45\\)",
-      "\\(49\\)",
-      "\\(37\\)",
-      "\\(47\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 564 by 12.",
     "solutionSteps": [
       {
@@ -845,7 +1057,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-q8",
@@ -853,14 +1084,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A library of 4536 books is to be divided equally among 8 organisations. How many books will each organisation receive?",
-    "a": "\\(567\\)",
-    "opts": [
-      "\\(567\\)",
-      "\\(577\\)",
-      "\\(557\\)",
-      "\\(560\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 4536 by 8.",
     "solutionSteps": [
       {
@@ -889,7 +1112,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(567\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(577\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(557\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(560\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-q9",
@@ -897,14 +1139,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Eggs are sold in cartons of 12. If there are 415 eggs to be packaged, how many full cartons will there be and how many eggs will be left over?\nProvide your answer in the form \"cartons, left over\" (e.g. 34, 7).",
-    "a": "\\(34, 7\\)",
-    "opts": [
-      "\\(35, 7\\)",
-      "\\(34, 5\\)",
-      "\\(33, 7\\)",
-      "\\(34, 7\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 415 by 12. The quotient is the number of cartons and the remainder is the leftover eggs.",
     "solutionSteps": [
       {
@@ -923,7 +1157,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(35, 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34, 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(33, 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34, 7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-q10",
@@ -931,14 +1184,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Cans of lemonade are to be packaged together in groups of 6. The factory has 5834 cans to be packaged. How many packages of 6 cans are there and how many are left over?\nProvide your answer in the form \"packages, left over\" (e.g. 972, 2).",
-    "a": "\\(972, 2\\)",
-    "opts": [
-      "\\(973, 2\\)",
-      "\\(972, 4\\)",
-      "\\(971, 2\\)",
-      "\\(972, 2\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 5834 by 6. The quotient represents the packages and the remainder represents the leftover cans.",
     "solutionSteps": [
       {
@@ -962,7 +1207,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(973, 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(972, 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(971, 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(972, 2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-q11a",
@@ -970,14 +1234,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "3485 people arrive at a film studio for a tour. The film studio decides that there should be exactly 8 people in a tour group. How many tour groups are there?",
-    "a": "\\(435\\)",
-    "opts": [
-      "\\(436\\)",
-      "\\(435\\)",
-      "\\(425\\)",
-      "\\(434\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Divide 3485 by 8 using short division and find the quotient.",
     "solutionSteps": [
       {
@@ -1001,7 +1257,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(436\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(435\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(425\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(434\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-q11b",
@@ -1009,14 +1284,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "3485 people arrive at a film studio for a tour. The film studio decides that there should be exactly 8 people in a tour group. How many people are left waiting to form the next group of 8?",
-    "a": "\\(5\\)",
-    "opts": [
-      "\\(5\\)",
-      "\\(3\\)",
-      "\\(6\\)",
-      "\\(4\\)"
-    ],
-    "t": "The short division algorithm",
     "hint": "Find the remainder when 3485 is divided by 8.",
     "solutionSteps": [
       {
@@ -1040,7 +1307,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h1",
@@ -1048,13 +1334,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A high-precision science lab requires 4824 test tubes to be organized into racks of 6. How many racks are fully completed?",
-    "a": "\\(804\\)",
-    "opts": [
-      "\\(803\\)",
-      "\\(804\\)",
-      "\\(806\\)",
-      "\\(805\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total number of test tubes by the rack size.",
@@ -1062,8 +1341,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(803\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(804\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(806\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(805\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h2",
@@ -1071,13 +1368,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A large solar storage farm allocates 8163 solar units across 9 major grids. Find the average solar units distributed per grid.",
-    "a": "\\(907\\)",
-    "opts": [
-      "\\(907\\)",
-      "\\(910\\)",
-      "\\(905\\)",
-      "\\(908\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total solar units by the number of grids.",
@@ -1085,8 +1375,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(907\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(910\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(905\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(908\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h3",
@@ -1094,13 +1402,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A forestry unit plants 5642 saplings across 7 zones. Find the average number of saplings per zone, along with any leftover saplings.",
-    "a": "\\(806 r 0\\)",
-    "opts": [
-      "\\(805\\text{ r }1\\)",
-      "\\(806 r 0\\)",
-      "\\(806\\text{ r }0\\)",
-      "\\(807\\text{ r }0\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Perform the division using the short division algorithm.",
@@ -1108,8 +1409,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(805\\text{ r }1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(806 r 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(806\\text{ r }0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(807\\text{ r }0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h4",
@@ -1117,13 +1436,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pharmaceutical warehouse packs 2848 medical vials into boxes of 8. How many boxes are completely filled?",
-    "a": "\\(356\\)",
-    "opts": [
-      "\\(361\\)",
-      "\\(355\\)",
-      "\\(356\\)",
-      "\\(357\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total number of vials by the box capacity.",
@@ -1131,8 +1443,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(361\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(355\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(356\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(357\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h5",
@@ -1140,13 +1470,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data routing server distributes 3696 gigabits of internet traffic equally over 6 backup servers. Find the gigabits allocated per backup server.",
-    "a": "\\(616\\)",
-    "opts": [
-      "\\(614\\)",
-      "\\(618\\)",
-      "\\(616\\)",
-      "\\(617\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total gigabits of traffic by the number of backup servers.",
@@ -1154,8 +1477,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(614\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(618\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(616\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(617\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h6",
@@ -1163,13 +1504,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An organic orchard harvests 4935 premium nectarines. If they are packed in crates of 5, how many crates are filled?",
-    "a": "\\(987\\)",
-    "opts": [
-      "\\(987\\)",
-      "\\(988\\)",
-      "\\(984\\)",
-      "\\(990\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total nectarines by the crate capacity.",
@@ -1177,8 +1511,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(987\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(988\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(984\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(990\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h7",
@@ -1186,13 +1538,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep geothermal plant records 7284 thermal cycles over 6 weeks. Calculate the average number of cycles recorded per week.",
-    "a": "\\(1214\\)",
-    "opts": [
-      "\\(1214\\)",
-      "\\(1218\\)",
-      "\\(1215\\)",
-      "\\(1213\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total cycles by the number of weeks.",
@@ -1200,8 +1545,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1214\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1218\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1215\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1213\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h8",
@@ -1209,13 +1572,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A humanitarian carrier delivers 9648 water filters across 8 distribution hubs. What is the average filter distribution per hub?",
-    "a": "\\(1206\\)",
-    "opts": [
-      "\\(1206\\)",
-      "\\(1204\\)",
-      "\\(1211\\)",
-      "\\(1207\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total filter count by the number of hubs.",
@@ -1223,8 +1579,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1206\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1204\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1211\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1207\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h9",
@@ -1232,13 +1606,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A high-security facility updates 6399 decryption keys across 9 secure segments. What is the average number of keys per segment?",
-    "a": "\\(711\\)",
-    "opts": [
-      "\\(713\\)",
-      "\\(712\\)",
-      "\\(711\\)",
-      "\\(708\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total key count by the secure segments.",
@@ -1246,8 +1613,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(713\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(712\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(711\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(708\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h10",
@@ -1255,13 +1640,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A wildlife team monitors 2484 migratory cranes across 4 wetlands. Calculate the average crane count per wetland.",
-    "a": "\\(621\\)",
-    "opts": [
-      "\\(624\\)",
-      "\\(622\\)",
-      "\\(620\\)",
-      "\\(621\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total crane count by the wetlands.",
@@ -1269,8 +1647,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(624\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(622\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(620\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(621\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h11",
@@ -1278,13 +1674,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional hospital orders 1896 medical masks. The masks are packed in boxes of 6. How many boxes are delivered?",
-    "a": "\\(316\\)",
-    "opts": [
-      "\\(314\\)",
-      "\\(317\\)",
-      "\\(316\\)",
-      "\\(320\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total mask count by the box capacity.",
@@ -1292,8 +1681,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(314\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(317\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(316\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(320\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h12",
@@ -1301,13 +1708,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A heavy transit train transfers 2781 industrial steel pipes. Each flatcar can carry exactly 9 pipes. How many flatcars are filled?",
-    "a": "\\(309\\)",
-    "opts": [
-      "\\(306\\)",
-      "\\(309\\)",
-      "\\(314\\)",
-      "\\(310\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total pipe count by the flatcar capacity.",
@@ -1315,8 +1715,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(306\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(309\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(314\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(310\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h13",
@@ -1324,13 +1742,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental station measures 3843 weather alerts over 7 observation grids. Find the average alerts per grid.",
-    "a": "\\(549\\)",
-    "opts": [
-      "\\(550\\)",
-      "\\(549\\)",
-      "\\(551\\)",
-      "\\(548\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total alerts by the number of grids.",
@@ -1338,8 +1749,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(550\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(549\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(551\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(548\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h14",
@@ -1347,13 +1776,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A local granary distributes 1728 bushels of barley equally to 8 mills. How many bushels does each mill receive?",
-    "a": "\\(216\\)",
-    "opts": [
-      "\\(216\\)",
-      "\\(217\\)",
-      "\\(214\\)",
-      "\\(219\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total bushels by the number of mills.",
@@ -1361,8 +1783,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(216\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(217\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(214\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(219\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h15",
@@ -1370,13 +1810,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A software compiler checks 4368 routines over 6 test scripts. What is the average number of routines checked per script?",
-    "a": "\\(728\\)",
-    "opts": [
-      "\\(725\\)",
-      "\\(732\\)",
-      "\\(729\\)",
-      "\\(728\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total routines by the test scripts.",
@@ -1384,8 +1817,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(725\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(732\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(729\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(728\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h16",
@@ -1393,13 +1844,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar panel network logs 5824 active energy surges across 8 storage towers. What is the average surge count per tower?",
-    "a": "\\(728\\)",
-    "opts": [
-      "\\(733\\)",
-      "\\(729\\)",
-      "\\(727\\)",
-      "\\(728\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total energy surges by the storage towers.",
@@ -1407,8 +1851,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(733\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(729\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(727\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(728\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h17",
@@ -1416,13 +1878,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A chemical process requires 3248 ml of reagent across 4 reactors. What is the average reagent volume per reactor in ml?",
-    "a": "\\(812\\)",
-    "opts": [
-      "\\(812\\)",
-      "\\(813\\)",
-      "\\(814\\)",
-      "\\(810\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total reagent volume by the reactors.",
@@ -1430,8 +1885,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(812\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(813\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(814\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(810\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h18",
@@ -1439,13 +1912,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A municipal pipeline lays 6545 meters of water pipe over 7 phases. Calculate the average distance piped per phase.",
-    "a": "\\(935\\)",
-    "opts": [
-      "\\(935\\)",
-      "\\(932\\)",
-      "\\(938\\)",
-      "\\(936\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total pipe length by the number of phases.",
@@ -1453,8 +1919,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(935\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(932\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(938\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(936\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h19",
@@ -1462,13 +1946,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital processor executes 8824 code operations across 8 registers. What is the average operation count per register?",
-    "a": "\\(1103\\)",
-    "opts": [
-      "\\(1107\\)",
-      "\\(1104\\)",
-      "\\(1102\\)",
-      "\\(1103\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total operations by the register count.",
@@ -1476,8 +1953,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(1107\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1104\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1102\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1103\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h20",
@@ -1485,13 +1980,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional mail dispatcher sorts 5499 packages over 9 delivery routes. Find the average package load per route.",
-    "a": "\\(611\\)",
-    "opts": [
-      "\\(611\\)",
-      "\\(616\\)",
-      "\\(609\\)",
-      "\\(612\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total packages by the routes.",
@@ -1499,8 +1987,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(611\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(616\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(609\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(612\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h21",
@@ -1508,13 +2014,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A drone survey takes 2520 coastal maps across 8 search zones. Calculate the average maps recorded per zone.",
-    "a": "\\(315\\)",
-    "opts": [
-      "\\(317\\)",
-      "\\(315\\)",
-      "\\(312\\)",
-      "\\(316\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total maps by the search zones.",
@@ -1522,8 +2021,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(317\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(315\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(312\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(316\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h22",
@@ -1531,13 +2048,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A construction foreman orders 2160 concrete tiles. If each pallet holds 45 tiles, how many pallets are needed?",
-    "a": "\\(48\\)",
-    "opts": [
-      "\\(47\\)",
-      "\\(51\\)",
-      "\\(49\\)",
-      "\\(48\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total tiles by the pallet capacity.",
@@ -1545,8 +2055,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(47\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(51\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h23",
@@ -1554,13 +2082,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep ocean rig harvests 4896 barrels of crude fuel over 16 shifts. Calculate the average barrel harvest per shift.",
-    "a": "\\(306\\)",
-    "opts": [
-      "\\(310\\)",
-      "\\(304\\)",
-      "\\(306\\)",
-      "\\(307\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total barrels by the shift count.",
@@ -1568,8 +2089,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(310\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(304\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(306\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(307\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h24",
@@ -1577,13 +2116,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental research unit uses 1920 ml of pH solution across 12 monitoring grids. Find the average solution used per grid.",
-    "a": "\\(160\\)",
-    "opts": [
-      "\\(160\\)",
-      "\\(161\\)",
-      "\\(157\\)",
-      "\\(165\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total solution volume by the grids.",
@@ -1591,8 +2123,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(160\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(161\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(157\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(165\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h25",
@@ -1600,13 +2150,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A factory output line checks 3456 alloy pins over 24 inspection stations. Find the average pins checked per station.",
-    "a": "\\(144\\)",
-    "opts": [
-      "\\(145\\)",
-      "\\(146\\)",
-      "\\(143\\)",
-      "\\(144\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total pin count by the stations.",
@@ -1614,8 +2157,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(145\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(146\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(143\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(144\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h26",
@@ -1623,13 +2184,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A commercial fishing crew packs 2178 kg of tuna into storage racks holding 11 kg each. How many racks are filled?",
-    "a": "\\(198\\)",
-    "opts": [
-      "\\(201\\)",
-      "\\(196\\)",
-      "\\(199\\)",
-      "\\(198\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total fish mass by the rack capacity.",
@@ -1637,8 +2191,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(196\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(198\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h27",
@@ -1646,13 +2218,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional forest survey counts 2928 migratory owls across 16 observation zones. Find the average owl count per zone.",
-    "a": "\\(183\\)",
-    "opts": [
-      "\\(183\\)",
-      "\\(184\\)",
-      "\\(180\\)",
-      "\\(187\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total owl count by the zones.",
@@ -1660,8 +2225,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(183\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(184\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(180\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(187\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h28",
@@ -1669,13 +2252,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar facility outputs 1375 watt-hours of energy over 25 panels. Calculate the average power output per panel.",
-    "a": "\\(55\\)",
-    "opts": [
-      "\\(55\\)",
-      "\\(54\\)",
-      "\\(56\\)",
-      "\\(60\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total energy by the panel count.",
@@ -1683,8 +2259,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(55\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(56\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h29",
@@ -1692,13 +2286,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A mapping drone maps a shoreline of 5400 meters. If the camera triggers every 15 meters, how many shots are logged?",
-    "a": "\\(360\\)",
-    "opts": [
-      "\\(358\\)",
-      "\\(361\\)",
-      "\\(362\\)",
-      "\\(360\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total length by the distance interval.",
@@ -1706,8 +2293,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(358\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(361\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(362\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(360\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h30",
@@ -1715,13 +2320,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A software optimization script executes 4000 tasks across 8 processor cores. Find the average tasks run per core.",
-    "a": "\\(500\\)",
-    "opts": [
-      "\\(503\\)",
-      "\\(497\\)",
-      "\\(501\\)",
-      "\\(500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total task count by the cores.",
@@ -1729,8 +2327,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(503\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(497\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(501\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h31",
@@ -1738,13 +2354,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electric generator gains 2925 Wh of energy over 15 hours. Find the average energy generation rate per hour.",
-    "a": "\\(195\\)",
-    "opts": [
-      "\\(199\\)",
-      "\\(195\\)",
-      "\\(194\\)",
-      "\\(196\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total energy by the hours.",
@@ -1752,8 +2361,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(195\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(194\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(196\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h32",
@@ -1761,13 +2388,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional warehouse splits 3456 microchips equally to 12 retail centers. How many chips does each center receive?",
-    "a": "\\(288\\)",
-    "opts": [
-      "\\(286\\)",
-      "\\(293\\)",
-      "\\(289\\)",
-      "\\(288\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total chip count by the retail centers.",
@@ -1775,8 +2395,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(286\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(293\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(289\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(288\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h33",
@@ -1784,13 +2422,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A micro-component line yields 4950 transistors over 15 manufacturing batches. What is the average yield per batch?",
-    "a": "\\(330\\)",
-    "opts": [
-      "\\(331\\)",
-      "\\(327\\)",
-      "\\(330\\)",
-      "\\(332\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total transistors by the batch count.",
@@ -1798,8 +2429,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(331\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(327\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(330\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(332\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h34",
@@ -1807,13 +2456,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A postal drone transfers 5880 courier letters over 12 distribution points. Calculate the average letters per point.",
-    "a": "\\(490\\)",
-    "opts": [
-      "\\(493\\)",
-      "\\(490\\)",
-      "\\(491\\)",
-      "\\(489\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total letter count by the points.",
@@ -1821,8 +2463,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(493\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(490\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(491\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(489\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h35",
@@ -1830,13 +2490,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep water channel requires 6300 cubic meters of gravel across 15 retaining walls. Find the average volume per wall.",
-    "a": "\\(420\\)",
-    "opts": [
-      "\\(418\\)",
-      "\\(424\\)",
-      "\\(421\\)",
-      "\\(420\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total gravel volume by the walls.",
@@ -1844,8 +2497,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(418\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(424\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(421\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(420\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h36",
@@ -1853,13 +2524,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A merchant cargo boat transports 8100 microprocessors. They are packed into 15 cargo holds. What is the average count per hold?",
-    "a": "\\(540\\)",
-    "opts": [
-      "\\(537\\)",
-      "\\(540\\)",
-      "\\(541\\)",
-      "\\(545\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total microprocessor count by the holds.",
@@ -1867,8 +2531,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(537\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(540\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(541\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(545\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h37",
@@ -1876,13 +2558,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A humanitarian agency distributes 1920 health packets to 12 refugee camps. Find the average number of packets per camp.",
-    "a": "\\(160\\)",
-    "opts": [
-      "\\(160\\)",
-      "\\(159\\)",
-      "\\(162\\)",
-      "\\(161\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total packet count by the camps.",
@@ -1890,8 +2565,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(160\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(159\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(162\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(161\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h38",
@@ -1899,13 +2592,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental sensor network logs 2560 carbon metrics over 16 research sectors. Find the average metrics per sector.",
-    "a": "\\(160\\)",
-    "opts": [
-      "\\(160\\)",
-      "\\(163\\)",
-      "\\(161\\)",
-      "\\(158\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total metrics by the sectors.",
@@ -1913,8 +2599,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(160\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(163\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(161\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(158\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h39",
@@ -1922,13 +2626,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A community garden harvests 1440 ripe lemons. They pack them into bags of 12. How many bags are filled?",
-    "a": "\\(120\\)",
-    "opts": [
-      "\\(121\\)",
-      "\\(120\\)",
-      "\\(124\\)",
-      "\\(117\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total lemon count by the bag size.",
@@ -1936,8 +2633,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(117\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h40",
@@ -1945,13 +2660,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A water filter center cleans 3850 gallons of water over 11 filter stages. Calculate the average volume per stage in gallons.",
-    "a": "\\(350\\)",
-    "opts": [
-      "\\(355\\)",
-      "\\(349\\)",
-      "\\(351\\)",
-      "\\(350\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total filtered volume by the stages.",
@@ -1959,8 +2667,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(355\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(349\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(351\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(350\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h41",
@@ -1968,13 +2694,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data frame security center logs 4840 verification tokens over 11 server blocks. What is the average tokens per block?",
-    "a": "\\(440\\)",
-    "opts": [
-      "\\(442\\)",
-      "\\(440\\)",
-      "\\(438\\)",
-      "\\(441\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total token count by the blocks.",
@@ -1982,8 +2701,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(442\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(440\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(438\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(441\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h42",
@@ -1991,13 +2728,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics distributor moves 5250 metric tons of copper over 15 railcars. Calculate the average weight per railcar.",
-    "a": "\\(350\\)",
-    "opts": [
-      "\\(347\\)",
-      "\\(350\\)",
-      "\\(353\\)",
-      "\\(351\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total weight by the railcars.",
@@ -2005,8 +2735,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(347\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(350\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(353\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(351\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h43",
@@ -2014,13 +2762,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep geological bore measures 1764 structural shifts across 12 sensors. What is the average shift count per sensor?",
-    "a": "\\(147\\)",
-    "opts": [
-      "\\(146\\)",
-      "\\(147\\)",
-      "\\(151\\)",
-      "\\(148\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total shifts by the sensor count.",
@@ -2028,8 +2769,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(146\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(147\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(151\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(148\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h44",
@@ -2037,13 +2796,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A masonry brick supplier loads 2310 clay bricks. If each crate holds 15 bricks, how many crates are loaded?",
-    "a": "\\(154\\)",
-    "opts": [
-      "\\(152\\)",
-      "\\(155\\)",
-      "\\(159\\)",
-      "\\(154\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total brick count by the crate capacity.",
@@ -2051,8 +2803,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(152\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(155\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(159\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(154\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h45",
@@ -2060,13 +2830,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A glass processing line inspects 3456 window panes over 16 automated runs. Find the average panes checked per run.",
-    "a": "\\(216\\)",
-    "opts": [
-      "\\(213\\)",
-      "\\(218\\)",
-      "\\(216\\)",
-      "\\(217\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total pane count by the runs.",
@@ -2074,8 +2837,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(213\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(218\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(216\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(217\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h46",
@@ -2083,13 +2864,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A deep-sea crew packs 2178 kg of cod into storage tubs holding 18 kg each. How many tubs are filled?",
-    "a": "\\(121\\)",
-    "opts": [
-      "\\(121\\)",
-      "\\(120\\)",
-      "\\(122\\)",
-      "\\(124\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total fish mass by the tub capacity.",
@@ -2097,8 +2871,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(122\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h47",
@@ -2106,13 +2898,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A regional biologist tracks 2928 migrating seals across 12 shoreline areas. Find the average seal count per area.",
-    "a": "\\(244\\)",
-    "opts": [
-      "\\(244\\)",
-      "\\(248\\)",
-      "\\(245\\)",
-      "\\(242\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total seal count by the areas.",
@@ -2120,8 +2905,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(244\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(248\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(245\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(242\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h48",
@@ -2129,13 +2932,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An chemical analysis center uses 3025 ml of buffer solution across 11 test sets. Find the average solution used per set in ml.",
-    "a": "\\(275\\)",
-    "opts": [
-      "\\(275\\)",
-      "\\(276\\)",
-      "\\(272\\)",
-      "\\(280\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total solution volume by the test sets.",
@@ -2143,8 +2939,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(275\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(276\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(272\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(280\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h49",
@@ -2152,13 +2966,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar panel cells arrays system has 1375 modules divided over 11 sub-grids. Calculate the average modules per sub-grid.",
-    "a": "\\(125\\)",
-    "opts": [
-      "\\(127\\)",
-      "\\(124\\)",
-      "\\(125\\)",
-      "\\(126\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total modules by the sub-grid count.",
@@ -2166,8 +2973,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(127\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(126\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h50",
@@ -2175,13 +3000,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A pharmaceutical warehouse packs 1920 units of blood plasma. If they divide it into cases of 16, how many cases are packed?",
-    "a": "\\(120\\)",
-    "opts": [
-      "\\(121\\)",
-      "\\(118\\)",
-      "\\(120\\)",
-      "\\(123\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total plasma volume by the case size.",
@@ -2189,8 +3007,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(121\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(118\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(123\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h51",
@@ -2198,13 +3034,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A precision micro-motor spins 4800 times over 12 seconds. How many spins does it make per second?",
-    "a": "\\(400\\)",
-    "opts": [
-      "\\(404\\)",
-      "\\(397\\)",
-      "\\(401\\)",
-      "\\(400\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total spins by the time in seconds.",
@@ -2212,8 +3041,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(404\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(401\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h52",
@@ -2221,13 +3068,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A database partition divides 3000 files equally to 15 storage blocks. What is the file count per block?",
-    "a": "\\(200\\)",
-    "opts": [
-      "\\(200\\)",
-      "\\(201\\)",
-      "\\(205\\)",
-      "\\(199\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total files by the storage blocks.",
@@ -2235,8 +3075,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(205\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h53",
@@ -2244,13 +3102,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A community orchard harvests 1728 organic melons. If they are packed in cases of 18, how many cases are filled?",
-    "a": "\\(96\\)",
-    "opts": [
-      "\\(94\\)",
-      "\\(98\\)",
-      "\\(96\\)",
-      "\\(97\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total melon count by the case capacity.",
@@ -2258,8 +3109,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(94\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(98\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(96\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(97\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h54",
@@ -2267,13 +3136,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A transit board routes 2016 daily buses over 14 lines. What is the average number of buses per line?",
-    "a": "\\(144\\)",
-    "opts": [
-      "\\(145\\)",
-      "\\(141\\)",
-      "\\(147\\)",
-      "\\(144\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total bus count by the lines.",
@@ -2281,8 +3143,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(145\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(141\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(147\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(144\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h55",
@@ -2290,13 +3170,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A weather probe records 3840 telemetry packets over 12 hours. Find the average packets logged per hour.",
-    "a": "\\(320\\)",
-    "opts": [
-      "\\(320\\)",
-      "\\(321\\)",
-      "\\(324\\)",
-      "\\(319\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total packets by the hours.",
@@ -2304,8 +3177,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(320\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(321\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(324\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(319\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h56",
@@ -2313,13 +3204,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A municipal pipeline is built using 3500 concrete tiles over 14 phases. Find the average tiles laid per phase.",
-    "a": "\\(250\\)",
-    "opts": [
-      "\\(250\\)",
-      "\\(255\\)",
-      "\\(248\\)",
-      "\\(251\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total tiles by the phase count.",
@@ -2327,8 +3211,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(250\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(255\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(248\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(251\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h57",
@@ -2336,13 +3238,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar network logs 2400 battery events over 12 stations. Find the average events logged per station.",
-    "a": "\\(200\\)",
-    "opts": [
-      "\\(201\\)",
-      "\\(200\\)",
-      "\\(197\\)",
-      "\\(202\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total events by the station count.",
@@ -2350,8 +3245,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(197\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h58",
@@ -2359,13 +3272,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A local farm cooperative delivers 1440 kg of onions to 15 stores. How many kg does each store receive?",
-    "a": "\\(96\\)",
-    "opts": [
-      "\\(95\\)",
-      "\\(97\\)",
-      "\\(99\\)",
-      "\\(96\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total weight by the stores.",
@@ -2373,8 +3279,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(95\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(97\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(99\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(96\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h59",
@@ -2382,13 +3306,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An environmental research unit checks 2560 soil samples over 16 lab runs. What is the average samples per run?",
-    "a": "\\(160\\)",
-    "opts": [
-      "\\(160\\)",
-      "\\(158\\)",
-      "\\(164\\)",
-      "\\(161\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Divide the total soil samples by the run count.",
@@ -2396,8 +3313,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(160\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(158\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(164\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(161\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h60",
@@ -2405,13 +3340,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1440 + 72) \\div 8\\)",
-    "a": "\\(189\\)",
-    "opts": [
-      "\\(194\\)",
-      "\\(189\\)",
-      "\\(186\\)",
-      "\\(190\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2434,8 +3362,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(194\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(189\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(186\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(190\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h61",
@@ -2443,13 +3389,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2000 - 45) \\div 5\\)",
-    "a": "\\(391\\)",
-    "opts": [
-      "\\(393\\)",
-      "\\(391\\)",
-      "\\(390\\)",
-      "\\(392\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2472,8 +3411,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(393\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(391\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(390\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(392\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h62",
@@ -2481,13 +3438,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1800 + 54) \\div 9\\)",
-    "a": "\\(206\\)",
-    "opts": [
-      "\\(204\\)",
-      "\\(209\\)",
-      "\\(206\\)",
-      "\\(207\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2510,8 +3460,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(204\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(209\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(206\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(207\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h63",
@@ -2519,13 +3487,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((3600 - 54) \\div 6\\)",
-    "a": "\\(591\\)",
-    "opts": [
-      "\\(591\\)",
-      "\\(595\\)",
-      "\\(592\\)",
-      "\\(588\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2548,8 +3509,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(591\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(595\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(592\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(588\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h64",
@@ -2557,13 +3536,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2100 + 49) \\div 7\\)",
-    "a": "\\(307\\)",
-    "opts": [
-      "\\(308\\)",
-      "\\(307\\)",
-      "\\(312\\)",
-      "\\(306\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2586,8 +3558,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(308\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(307\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(312\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(306\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h65",
@@ -2595,13 +3585,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2400 - 36) \\div 4\\)",
-    "a": "\\(591\\)",
-    "opts": [
-      "\\(589\\)",
-      "\\(591\\)",
-      "\\(593\\)",
-      "\\(592\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2624,8 +3607,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(589\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(591\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(593\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(592\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h66",
@@ -2633,13 +3634,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2700 + 81) \\div 9\\)",
-    "a": "\\(309\\)",
-    "opts": [
-      "\\(312\\)",
-      "\\(309\\)",
-      "\\(306\\)",
-      "\\(310\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2662,8 +3656,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(312\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(309\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(306\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(310\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h67",
@@ -2671,13 +3683,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1500 - 30) \\div 5\\)",
-    "a": "\\(294\\)",
-    "opts": [
-      "\\(295\\)",
-      "\\(298\\)",
-      "\\(293\\)",
-      "\\(294\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2700,8 +3705,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(295\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(298\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(293\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(294\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h68",
@@ -2709,13 +3732,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2800 + 35) \\div 7\\)",
-    "a": "\\(405\\)",
-    "opts": [
-      "\\(403\\)",
-      "\\(406\\)",
-      "\\(410\\)",
-      "\\(405\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2738,8 +3754,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(403\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(406\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(410\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(405\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h69",
@@ -2747,13 +3781,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((3000 - 45) \\div 5\\)",
-    "a": "\\(591\\)",
-    "opts": [
-      "\\(593\\)",
-      "\\(591\\)",
-      "\\(592\\)",
-      "\\(588\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2776,8 +3803,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(593\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(591\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(592\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(588\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h70",
@@ -2785,13 +3830,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((3600 + 72) \\div 9\\)",
-    "a": "\\(408\\)",
-    "opts": [
-      "\\(409\\)",
-      "\\(408\\)",
-      "\\(411\\)",
-      "\\(407\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2814,8 +3852,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(409\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(408\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(411\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(407\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h71",
@@ -2823,13 +3879,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((3200 - 48) \\div 8\\)",
-    "a": "\\(394\\)",
-    "opts": [
-      "\\(395\\)",
-      "\\(398\\)",
-      "\\(392\\)",
-      "\\(394\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2852,8 +3901,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(395\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(392\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(394\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h72",
@@ -2861,13 +3928,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2400 + 48) \\div 6\\)",
-    "a": "\\(408\\)",
-    "opts": [
-      "\\(408\\)",
-      "\\(405\\)",
-      "\\(413\\)",
-      "\\(409\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2890,8 +3950,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(408\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(405\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(413\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(409\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h73",
@@ -2899,13 +3977,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((4000 - 64) \\div 8\\)",
-    "a": "\\(492\\)",
-    "opts": [
-      "\\(492\\)",
-      "\\(493\\)",
-      "\\(494\\)",
-      "\\(491\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2928,8 +3999,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(492\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(493\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(494\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(491\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h74",
@@ -2937,13 +4026,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((4200 + 54) \\div 6\\)",
-    "a": "\\(709\\)",
-    "opts": [
-      "\\(712\\)",
-      "\\(707\\)",
-      "\\(710\\)",
-      "\\(709\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -2966,8 +4048,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(712\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(707\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(710\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(709\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h75",
@@ -2975,13 +4075,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((4200 - 35) \\div 7\\)",
-    "a": "\\(595\\)",
-    "opts": [
-      "\\(592\\)",
-      "\\(599\\)",
-      "\\(595\\)",
-      "\\(596\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3004,8 +4097,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(592\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(599\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(595\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(596\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h76",
@@ -3013,13 +4124,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((4800 + 64) \\div 8\\)",
-    "a": "\\(608\\)",
-    "opts": [
-      "\\(613\\)",
-      "\\(607\\)",
-      "\\(609\\)",
-      "\\(608\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3042,8 +4146,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(613\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(607\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(609\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(608\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h77",
@@ -3051,13 +4173,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((4900 - 56) \\div 7\\)",
-    "a": "\\(692\\)",
-    "opts": [
-      "\\(692\\)",
-      "\\(693\\)",
-      "\\(694\\)",
-      "\\(690\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3080,8 +4195,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(692\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(693\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(694\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(690\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h78",
@@ -3089,13 +4222,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((5400 + 72) \\div 9\\)",
-    "a": "\\(608\\)",
-    "opts": [
-      "\\(608\\)",
-      "\\(609\\)",
-      "\\(605\\)",
-      "\\(611\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3118,8 +4244,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(608\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(609\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(605\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(611\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h79",
@@ -3127,13 +4271,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((5600 - 64) \\div 8\\)",
-    "a": "\\(692\\)",
-    "opts": [
-      "\\(692\\)",
-      "\\(691\\)",
-      "\\(693\\)",
-      "\\(696\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3156,8 +4293,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(692\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(691\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(693\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(696\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h80",
@@ -3165,13 +4320,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((4500 + 35) \\div 5\\)",
-    "a": "\\(907\\)",
-    "opts": [
-      "\\(908\\)",
-      "\\(905\\)",
-      "\\(912\\)",
-      "\\(907\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3194,8 +4342,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(908\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(905\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(912\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(907\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h81",
@@ -3203,13 +4369,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((4000 - 25) \\div 5\\)",
-    "a": "\\(795\\)",
-    "opts": [
-      "\\(796\\)",
-      "\\(792\\)",
-      "\\(795\\)",
-      "\\(797\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3232,8 +4391,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(796\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(792\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(795\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(797\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h82",
@@ -3241,13 +4418,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2400 + 36) \\div 6\\)",
-    "a": "\\(406\\)",
-    "opts": [
-      "\\(405\\)",
-      "\\(409\\)",
-      "\\(407\\)",
-      "\\(406\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3270,8 +4440,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(405\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(409\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(407\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(406\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h83",
@@ -3279,13 +4467,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2800 - 28) \\div 7\\)",
-    "a": "\\(396\\)",
-    "opts": [
-      "\\(397\\)",
-      "\\(394\\)",
-      "\\(396\\)",
-      "\\(400\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3308,8 +4489,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(394\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(396\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h84",
@@ -3317,13 +4516,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((3600 + 63) \\div 9\\)",
-    "a": "\\(407\\)",
-    "opts": [
-      "\\(407\\)",
-      "\\(408\\)",
-      "\\(412\\)",
-      "\\(404\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3346,8 +4538,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(407\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(408\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(412\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(404\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h85",
@@ -3355,13 +4565,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((3200 - 32) \\div 8\\)",
-    "a": "\\(396\\)",
-    "opts": [
-      "\\(396\\)",
-      "\\(397\\)",
-      "\\(398\\)",
-      "\\(395\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3384,8 +4587,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(396\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(398\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(395\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h86",
@@ -3393,13 +4614,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2000 + 20) \\div 5\\)",
-    "a": "\\(404\\)",
-    "opts": [
-      "\\(405\\)",
-      "\\(404\\)",
-      "\\(407\\)",
-      "\\(402\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3422,8 +4636,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(405\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(404\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(407\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(402\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h87",
@@ -3431,13 +4663,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1600 - 16) \\div 4\\)",
-    "a": "\\(396\\)",
-    "opts": [
-      "\\(396\\)",
-      "\\(400\\)",
-      "\\(393\\)",
-      "\\(397\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3460,8 +4685,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(396\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(393\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(397\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h88",
@@ -3469,13 +4712,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1200 + 12) \\div 3\\)",
-    "a": "\\(404\\)",
-    "opts": [
-      "\\(404\\)",
-      "\\(405\\)",
-      "\\(403\\)",
-      "\\(409\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3498,8 +4734,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(404\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(405\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(403\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(409\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h89",
@@ -3507,13 +4761,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1800 - 27) \\div 9\\)",
-    "a": "\\(197\\)",
-    "opts": [
-      "\\(197\\)",
-      "\\(198\\)",
-      "\\(199\\)",
-      "\\(195\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3536,8 +4783,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(197\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(198\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(195\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h90",
@@ -3545,13 +4810,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((3000 + 18) \\div 6\\)",
-    "a": "\\(503\\)",
-    "opts": [
-      "\\(504\\)",
-      "\\(500\\)",
-      "\\(506\\)",
-      "\\(503\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3574,8 +4832,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(504\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(506\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(503\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h91",
@@ -3583,13 +4859,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((4200 - 21) \\div 7\\)",
-    "a": "\\(597\\)",
-    "opts": [
-      "\\(598\\)",
-      "\\(596\\)",
-      "\\(597\\)",
-      "\\(601\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3612,8 +4881,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(598\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(596\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(597\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(601\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h92",
@@ -3621,13 +4908,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((4000 + 24) \\div 8\\)",
-    "a": "\\(503\\)",
-    "opts": [
-      "\\(508\\)",
-      "\\(501\\)",
-      "\\(503\\)",
-      "\\(504\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3650,8 +4930,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(508\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(501\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(503\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(504\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h93",
@@ -3659,13 +4957,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((3500 - 15) \\div 5\\)",
-    "a": "\\(697\\)",
-    "opts": [
-      "\\(697\\)",
-      "\\(699\\)",
-      "\\(698\\)",
-      "\\(694\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3688,8 +4979,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(697\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(699\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(698\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(694\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h94",
@@ -3697,13 +5006,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2000 + 12) \\div 4\\)",
-    "a": "\\(503\\)",
-    "opts": [
-      "\\(503\\)",
-      "\\(506\\)",
-      "\\(502\\)",
-      "\\(504\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3726,8 +5028,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(503\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(506\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(502\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(504\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h95",
@@ -3735,13 +5055,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((900 - 9) \\div 3\\)",
-    "a": "\\(297\\)",
-    "opts": [
-      "\\(298\\)",
-      "\\(295\\)",
-      "\\(301\\)",
-      "\\(297\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3764,8 +5077,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(298\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(295\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(301\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(297\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h96",
@@ -3773,13 +5104,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1800 + 18) \\div 9\\)",
-    "a": "\\(202\\)",
-    "opts": [
-      "\\(202\\)",
-      "\\(199\\)",
-      "\\(203\\)",
-      "\\(207\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3802,8 +5126,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(203\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(207\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h97",
@@ -3811,13 +5153,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1800 - 18) \\div 6\\)",
-    "a": "\\(297\\)",
-    "opts": [
-      "\\(296\\)",
-      "\\(299\\)",
-      "\\(298\\)",
-      "\\(297\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3840,8 +5175,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(296\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(299\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(298\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(297\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1j-h98",
@@ -3849,13 +5202,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1400 + 14) \\div 7\\)",
-    "a": "\\(202\\)",
-    "opts": [
-      "\\(203\\)",
-      "\\(202\\)",
-      "\\(200\\)",
-      "\\(205\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3878,8 +5224,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(203\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(205\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h99",
@@ -3887,13 +5251,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((2400 - 24) \\div 8\\)",
-    "a": "\\(297\\)",
-    "opts": [
-      "\\(294\\)",
-      "\\(298\\)",
-      "\\(297\\)",
-      "\\(301\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3916,8 +5273,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(294\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(298\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(297\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(301\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h100",
@@ -3925,13 +5300,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((1000 + 10) \\div 5\\)",
-    "a": "\\(202\\)",
-    "opts": [
-      "\\(203\\)",
-      "\\(202\\)",
-      "\\(207\\)",
-      "\\(201\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3954,8 +5322,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(203\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(207\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(201\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1j-h101",
@@ -3963,13 +5349,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((800 - 12) \\div 4\\)",
-    "a": "\\(197\\)",
-    "opts": [
-      "\\(198\\)",
-      "\\(195\\)",
-      "\\(197\\)",
-      "\\(199\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -3992,8 +5371,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(198\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(195\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(197\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(199\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1j-h102",
@@ -4001,13 +5398,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((600 + 9) \\div 3\\)",
-    "a": "\\(203\\)",
-    "opts": [
-      "\\(203\\)",
-      "\\(200\\)",
-      "\\(204\\)",
-      "\\(206\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4030,8 +5420,26 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(203\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(204\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(206\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1j-h103",
@@ -4039,13 +5447,6 @@ export const Y7_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Evaluate using short division rules: \\((900 - 18) \\div 9\\)",
-    "a": "\\(98\\)",
-    "opts": [
-      "\\(97\\)",
-      "\\(99\\)",
-      "\\(98\\)",
-      "\\(102\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "Apply the distributive law.",
@@ -4068,7 +5469,25 @@ export const Y7_CH1J_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The short division algorithm",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(97\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(99\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(98\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(102\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   }
 ];

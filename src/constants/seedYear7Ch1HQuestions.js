@@ -5,14 +5,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Carry out the calculation, using the short multiplication method:\n\\(42 \\times 6\\)",
-    "a": "\\(252\\)",
-    "opts": [
-      "\\(252\\)",
-      "\\(242\\)",
-      "\\(262\\)",
-      "\\(258\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the units first, carry over if needed, then multiply the tens.",
     "solutionSteps": [
       {
@@ -36,7 +28,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(252\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(242\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(262\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(258\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q1e",
@@ -44,14 +55,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Carry out the calculation, using the short multiplication method:\n\\(624 \\times 5\\)",
-    "a": "\\(3120\\)",
-    "opts": [
-      "\\(3120\\)",
-      "\\(3100\\)",
-      "\\(3125\\)",
-      "\\(3020\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply each digit from right to left, carrying over as you go.",
     "solutionSteps": [
       {
@@ -75,7 +78,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3125\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3020\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q1i",
@@ -83,14 +105,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Carry out the calculation, using the short multiplication method:\n\\(7452 \\times 6\\)",
-    "a": "\\(44712\\)",
-    "opts": [
-      "\\(44712\\)",
-      "\\(44612\\)",
-      "\\(44722\\)",
-      "\\(44512\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply each digit from right to left, carrying over as you go.",
     "solutionSteps": [
       {
@@ -119,7 +133,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(44712\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44612\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44722\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44512\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q2a",
@@ -127,14 +160,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Carry out the calculation, using the long multiplication method:\n\\(562 \\times 35\\)",
-    "a": "\\(19670\\)",
-    "opts": [
-      "\\(19670\\)",
-      "\\(19570\\)",
-      "\\(19660\\)",
-      "\\(19770\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply by the units (5), then multiply by the tens (30), and add the results together.",
     "solutionSteps": [
       {
@@ -158,7 +183,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(19670\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(19570\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(19660\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(19770\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q2f",
@@ -166,14 +210,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Carry out the calculation, using the long multiplication method:\n\\(607 \\times 74\\)",
-    "a": "\\(44918\\)",
-    "opts": [
-      "\\(44918\\)",
-      "\\(44818\\)",
-      "\\(44928\\)",
-      "\\(44018\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply by the units (4), then multiply by the tens (70), and add the results together.",
     "solutionSteps": [
       {
@@ -197,7 +233,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(44918\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44818\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44928\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44018\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q2k",
@@ -205,14 +260,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Carry out the calculation, using the long multiplication method:\n\\(825 \\times 453\\)",
-    "a": "\\(373725\\)",
-    "opts": [
-      "\\(373725\\)",
-      "\\(373625\\)",
-      "\\(373825\\)",
-      "\\(372725\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply by the units (3), tens (50), and hundreds (400), then sum the three results.",
     "solutionSteps": [
       {
@@ -241,7 +288,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(373725\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(373625\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(373825\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(372725\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q3a",
@@ -249,14 +315,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Each student in a class is given 8 coloured pencils by the teacher. How many pencils does the teacher need to supply 24 students?",
-    "a": "\\(192\\)",
-    "opts": [
-      "\\(192\\)",
-      "\\(182\\)",
-      "\\(202\\)",
-      "\\(196\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the number of students by the number of pencils per student.",
     "solutionSteps": [
       {
@@ -275,7 +333,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(192\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(182\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(202\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(196\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q3b",
@@ -283,14 +360,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A packaging machine in a factory packs 742 boxes per hour. How many boxes are packed in an 11-hour day?",
-    "a": "\\(8162\\)",
-    "opts": [
-      "\\(8162\\)",
-      "\\(8152\\)",
-      "\\(8172\\)",
-      "\\(8062\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the number of boxes packed per hour by the number of hours.",
     "solutionSteps": [
       {
@@ -314,7 +383,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(8162\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8152\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8172\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8062\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q3c",
@@ -322,14 +410,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A brick wall has 52 rows of 614 bricks. How many bricks are in the wall?",
-    "a": "\\(31928\\)",
-    "opts": [
-      "\\(31928\\)",
-      "\\(31828\\)",
-      "\\(31938\\)",
-      "\\(30928\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the number of rows by the number of bricks in each row.",
     "solutionSteps": [
       {
@@ -358,7 +438,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(31928\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31828\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31938\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30928\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q3d",
@@ -366,14 +465,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A publishing company packages books in boxes of 145. How many books are there in 312 boxes?",
-    "a": "\\(45240\\)",
-    "opts": [
-      "\\(45240\\)",
-      "\\(45140\\)",
-      "\\(45250\\)",
-      "\\(44240\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the number of boxes by the number of books in each box.",
     "solutionSteps": [
       {
@@ -407,7 +498,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(45240\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45140\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45250\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44240\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q4",
@@ -415,14 +525,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A hall has 75 rows of 42 seats. How many seats are there in the hall?",
-    "a": "\\(3150\\)",
-    "opts": [
-      "\\(3150\\)",
-      "\\(3140\\)",
-      "\\(3160\\)",
-      "\\(3050\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the number of rows by the number of seats in each row.",
     "solutionSteps": [
       {
@@ -451,7 +553,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(3150\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3140\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3160\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3050\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q5",
@@ -459,14 +580,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A machine makes 348 doughnuts in an hour. How many doughnuts can it make in 14 hours?",
-    "a": "\\(4872\\)",
-    "opts": [
-      "\\(4872\\)",
-      "\\(4862\\)",
-      "\\(4882\\)",
-      "\\(4772\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the hourly rate of doughnuts by the number of hours.",
     "solutionSteps": [
       {
@@ -495,7 +608,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4872\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4862\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4882\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4772\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q6a",
@@ -503,14 +635,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Copy and complete the following short multiplication by finding the correct digit for each star (*):\n\\(\\begin{array}{r l} * \\; 8 \\\\ \\times \\quad 6 \\\\ \\hline 5 \\; 2 \\; * \\end{array}\\)",
-    "a": "\\(88 \\times 6 = 528\\)",
-    "opts": [
-      "\\(88 \\times 6 = 528\\)",
-      "\\(78 \\times 6 = 468\\)",
-      "\\(88 \\times 6 = 524\\)",
-      "\\(98 \\times 6 = 588\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Look at the units column first: 8 x 6. What does it end in?",
     "solutionSteps": [
       {
@@ -539,7 +663,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(88 \\times 6 = 528\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(78 \\times 6 = 468\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(88 \\times 6 = 524\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(98 \\times 6 = 588\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q6b",
@@ -547,14 +690,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Copy and complete the following short multiplication by finding the correct digit for each star (*):\n\\(\\begin{array}{r l} * \\; * \\; 7 \\\\ \\times \\quad 4 \\\\ \\hline 9 \\; 0 \\; * \\end{array}\\)",
-    "a": "\\(227 \\times 4 = 908\\)",
-    "opts": [
-      "\\(227 \\times 4 = 908\\)",
-      "\\(217 \\times 4 = 868\\)",
-      "\\(227 \\times 4 = 918\\)",
-      "\\(237 \\times 4 = 948\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Look at the units column first: 7 x 4. What does it end in?",
     "solutionSteps": [
       {
@@ -588,7 +723,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(227 \\times 4 = 908\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(217 \\times 4 = 868\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(227 \\times 4 = 918\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(237 \\times 4 = 948\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q6c",
@@ -596,14 +750,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Copy and complete the following long multiplication by finding the correct digit for each star (*):\n\\(\\begin{array}{r l} * \\; * \\; * \\\\ \\times \\quad * \\; 4 \\\\ \\hline 8 \\; 5 \\; 2 \\\\ * \\; * \\; * \\; 0 \\\\ \\hline 5 \\; 1 \\; 1 \\; 2 \\end{array}\\)",
-    "a": "\\(213 \\times 24 = 5112\\)",
-    "opts": [
-      "\\(213 \\times 24 = 5112\\)",
-      "\\(213 \\times 14 = 2982\\)",
-      "\\(223 \\times 24 = 5352\\)",
-      "\\(213 \\times 34 = 7242\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Use division to find the top number. 852 is the result of multiplying the top number by 4.",
     "solutionSteps": [
       {
@@ -632,7 +778,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(213 \\times 24 = 5112\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(213 \\times 14 = 2982\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(223 \\times 24 = 5352\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(213 \\times 34 = 7242\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q7a",
@@ -640,14 +805,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A particular brand of lollies comes in packets of 28. A carton contains 32 packets. How many lollies are there in one carton?",
-    "a": "\\(896\\)",
-    "opts": [
-      "\\(896\\)",
-      "\\(886\\)",
-      "\\(906\\)",
-      "\\(876\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the number of lollies per packet by the number of packets in a carton.",
     "solutionSteps": [
       {
@@ -671,7 +828,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(896\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(886\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(906\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(876\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q7b",
@@ -679,14 +855,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A particular brand of lollies comes in packets of 28. A carton contains 32 packets. There are 896 lollies in one carton. How many lollies are there in 25 cartons?",
-    "a": "\\(22400\\)",
-    "opts": [
-      "\\(22400\\)",
-      "\\(22300\\)",
-      "\\(22500\\)",
-      "\\(21400\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the number of lollies in one carton by 25.",
     "solutionSteps": [
       {
@@ -715,7 +883,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(22400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22300\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21400\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q8",
@@ -723,14 +910,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A trolley at an airport is loaded with 18 cases, each with the maximum allowable weight of 25 kilograms. The empty trolley weighs 125 kilograms. What is the maximum possible weight of the trolley and the cases combined?",
-    "a": "\\(575\\)",
-    "opts": [
-      "\\(575\\)",
-      "\\(565\\)",
-      "\\(585\\)",
-      "\\(450\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Calculate the total weight of the cases first, then add the weight of the trolley.",
     "solutionSteps": [
       {
@@ -754,7 +933,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(575\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(565\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(585\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(450\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q9",
@@ -762,14 +960,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "If 24 people each own 6 pairs of shoes, and 35 people each own 7 pairs of shoes, then how many shoes do the 59 people own in total?",
-    "a": "\\(778\\)",
-    "opts": [
-      "\\(778\\)",
-      "\\(768\\)",
-      "\\(788\\)",
-      "\\(389\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Remember that a pair of shoes consists of 2 shoes.",
     "solutionSteps": [
       {
@@ -798,7 +988,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(778\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(768\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(788\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(389\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q10a",
@@ -806,14 +1015,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Calculate the age of a 13-year-old in months.",
-    "a": "\\(156\\)",
-    "opts": [
-      "\\(156\\)",
-      "\\(146\\)",
-      "\\(166\\)",
-      "\\(150\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "There are 12 months in a year.",
     "solutionSteps": [
       {
@@ -832,7 +1033,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(156\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(146\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(166\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(150\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q10b",
@@ -840,14 +1060,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Calculate the age of a 13-year-old in weeks.",
-    "a": "\\(676\\)",
-    "opts": [
-      "\\(676\\)",
-      "\\(650\\)",
-      "\\(686\\)",
-      "\\(702\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "There are 52 weeks in a year.",
     "solutionSteps": [
       {
@@ -866,7 +1078,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(676\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(650\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(686\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(702\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q10c",
@@ -874,14 +1105,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Calculate the age of a 13-year-old in days. (Ignore leap years and assume 365 days in a year).",
-    "a": "\\(4745\\)",
-    "opts": [
-      "\\(4745\\)",
-      "\\(4645\\)",
-      "\\(4845\\)",
-      "\\(4700\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "There are 365 days in a standard year.",
     "solutionSteps": [
       {
@@ -900,7 +1123,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(4745\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4645\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4845\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4700\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q10d",
@@ -908,14 +1150,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Calculate the age of a 13-year-old in hours. (Ignore leap years and assume 4745 days total).",
-    "a": "\\(113880\\)",
-    "opts": [
-      "\\(113880\\)",
-      "\\(113780\\)",
-      "\\(113980\\)",
-      "\\(112880\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the total number of days by 24 hours.",
     "solutionSteps": [
       {
@@ -939,7 +1173,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(113880\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(113780\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(113980\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(112880\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-q10e",
@@ -947,14 +1200,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Calculate the age of a 13-year-old in seconds. (Assume 113880 total hours).",
-    "a": "\\(409968000\\)",
-    "opts": [
-      "\\(409968000\\)",
-      "\\(409967000\\)",
-      "\\(409969000\\)",
-      "\\(408968000\\)"
-    ],
-    "t": "The standard multiplication algorithms",
     "hint": "Multiply the total number of hours by 3600 (the number of seconds in one hour).",
     "solutionSteps": [
       {
@@ -973,7 +1218,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(409968000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(409967000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(409969000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(408968000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h1",
@@ -981,13 +1245,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 13 assembly lines. Each line operates for 30 hours per day and produces 116 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(45,240\\)",
-    "opts": [
-      "\\(45,240\\)",
-      "\\(46,240\\)",
-      "\\(44,740\\)",
-      "\\(47,740\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 30.",
@@ -1005,8 +1262,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(45,240\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(46,240\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44,740\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47,740\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h2",
@@ -1014,13 +1289,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 14 sections. Each section has 35 rows, and each row contains 127 seats. What is the total seating capacity of the venue?",
-    "a": "\\(62,230\\)",
-    "opts": [
-      "\\(62,230\\)",
-      "\\(63,230\\)",
-      "\\(61,730\\)",
-      "\\(64,730\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 35.",
@@ -1038,8 +1306,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(62,230\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(63,230\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(61,730\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64,730\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h3",
@@ -1047,13 +1333,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 15 plots. Each plot contains 40 rows of seedlings, and each row has 138 seedlings. How many seedlings are planted in total?",
-    "a": "\\(82,800\\)",
-    "opts": [
-      "\\(82,800\\)",
-      "\\(83,800\\)",
-      "\\(85,300\\)",
-      "\\(82,300\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 40.",
@@ -1071,8 +1350,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(82,800\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(83,800\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(85,300\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(82,300\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h4",
@@ -1080,13 +1377,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 16 collections. Each collection contains 45 files, and each file has 149 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(107,280\\)",
-    "opts": [
-      "\\(109,780\\)",
-      "\\(106,780\\)",
-      "\\(108,280\\)",
-      "\\(107,280\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 45.",
@@ -1104,8 +1394,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(109,780\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(106,780\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(108,280\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(107,280\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h5",
@@ -1113,13 +1421,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 17 rows of corn. Each row yields 50 ears of corn, and each ear contains 160 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(136,000\\)",
-    "opts": [
-      "\\(136,000\\)",
-      "\\(137,000\\)",
-      "\\(138,500\\)",
-      "\\(135,500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 50.",
@@ -1137,8 +1438,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(136,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(137,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(138,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(135,500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h6",
@@ -1146,13 +1465,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 18 boxes of canned goods per hour. If they run the warehouse for 55 hours a day for 171 days, how many boxes do they pack in total?",
-    "a": "\\(169,290\\)",
-    "opts": [
-      "\\(171,790\\)",
-      "\\(168,790\\)",
-      "\\(170,290\\)",
-      "\\(169,290\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 55.",
@@ -1170,8 +1482,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(171,790\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(168,790\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(170,290\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(169,290\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h7",
@@ -1179,13 +1509,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 19 milligrams of pollen per day. If there are 25 active hives in an orchard, each containing 182 bees, calculate the total daily consumption.",
-    "a": "\\(86,450\\)",
-    "opts": [
-      "\\(88,950\\)",
-      "\\(85,950\\)",
-      "\\(87,450\\)",
-      "\\(86,450\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 25.",
@@ -1203,8 +1526,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(88,950\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(85,950\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(87,450\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(86,450\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h8",
@@ -1212,13 +1553,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 12 panels. Each panel generates 30 watt-hours of energy per day. How much energy is produced by the array over a period of 193 days?",
-    "a": "\\(69,480\\)",
-    "opts": [
-      "\\(69,480\\)",
-      "\\(68,980\\)",
-      "\\(70,480\\)",
-      "\\(71,980\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 30.",
@@ -1236,8 +1570,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(69,480\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(68,980\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70,480\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71,980\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h9",
@@ -1245,13 +1597,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 13 server racks. Each rack contains 35 servers, and each server processes 105 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(47,775\\)",
-    "opts": [
-      "\\(47,775\\)",
-      "\\(48,775\\)",
-      "\\(47,275\\)",
-      "\\(50,275\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 35.",
@@ -1269,8 +1614,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(47,775\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48,775\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47,275\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50,275\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h10",
@@ -1278,13 +1641,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 14 cargo ships. Each ship contains 40 shipping containers, and each container holds 116 crates. How many crates are transported in total?",
-    "a": "\\(64,960\\)",
-    "opts": [
-      "\\(64,960\\)",
-      "\\(65,960\\)",
-      "\\(67,460\\)",
-      "\\(64,460\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 40.",
@@ -1302,8 +1658,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(64,960\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(65,960\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64,460\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h11",
@@ -1311,13 +1685,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 15 assembly lines. Each line operates for 45 hours per day and produces 127 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(85,725\\)",
-    "opts": [
-      "\\(86,725\\)",
-      "\\(88,225\\)",
-      "\\(85,725\\)",
-      "\\(85,225\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 45.",
@@ -1335,8 +1702,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(86,725\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(88,225\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(85,725\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(85,225\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h12",
@@ -1344,13 +1729,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 16 sections. Each section has 50 rows, and each row contains 138 seats. What is the total seating capacity of the venue?",
-    "a": "\\(110,400\\)",
-    "opts": [
-      "\\(110,400\\)",
-      "\\(111,400\\)",
-      "\\(109,900\\)",
-      "\\(112,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 50.",
@@ -1368,8 +1746,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(110,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(109,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(112,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h13",
@@ -1377,13 +1773,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 17 plots. Each plot contains 55 rows of seedlings, and each row has 149 seedlings. How many seedlings are planted in total?",
-    "a": "\\(139,315\\)",
-    "opts": [
-      "\\(139,315\\)",
-      "\\(140,315\\)",
-      "\\(138,815\\)",
-      "\\(141,815\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 55.",
@@ -1401,8 +1790,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(139,315\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(140,315\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(138,815\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(141,815\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h14",
@@ -1410,13 +1817,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 18 collections. Each collection contains 25 files, and each file has 160 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(72,000\\)",
-    "opts": [
-      "\\(73,000\\)",
-      "\\(71,500\\)",
-      "\\(72,000\\)",
-      "\\(74,500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 25.",
@@ -1434,8 +1834,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(73,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(72,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(74,500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h15",
@@ -1443,13 +1861,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 19 rows of corn. Each row yields 30 ears of corn, and each ear contains 171 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(97,470\\)",
-    "opts": [
-      "\\(97,470\\)",
-      "\\(99,970\\)",
-      "\\(98,470\\)",
-      "\\(96,970\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 30.",
@@ -1467,8 +1878,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(97,470\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(99,970\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(98,470\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(96,970\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h16",
@@ -1476,13 +1905,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 12 boxes of canned goods per hour. If they run the warehouse for 35 hours a day for 182 days, how many boxes do they pack in total?",
-    "a": "\\(76,440\\)",
-    "opts": [
-      "\\(76,440\\)",
-      "\\(78,940\\)",
-      "\\(77,440\\)",
-      "\\(75,940\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 35.",
@@ -1500,8 +1922,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(76,440\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(78,940\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(77,440\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75,940\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h17",
@@ -1509,13 +1949,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 13 milligrams of pollen per day. If there are 40 active hives in an orchard, each containing 193 bees, calculate the total daily consumption.",
-    "a": "\\(100,360\\)",
-    "opts": [
-      "\\(100,360\\)",
-      "\\(102,860\\)",
-      "\\(101,360\\)",
-      "\\(99,860\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 40.",
@@ -1533,8 +1966,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(100,360\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(102,860\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(101,360\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(99,860\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h18",
@@ -1542,13 +1993,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 14 panels. Each panel generates 45 watt-hours of energy per day. How much energy is produced by the array over a period of 105 days?",
-    "a": "\\(66,150\\)",
-    "opts": [
-      "\\(68,650\\)",
-      "\\(66,150\\)",
-      "\\(65,650\\)",
-      "\\(67,150\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 45.",
@@ -1566,8 +2010,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(68,650\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(66,150\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(65,650\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67,150\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h19",
@@ -1575,13 +2037,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 15 server racks. Each rack contains 50 servers, and each server processes 116 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(87,000\\)",
-    "opts": [
-      "\\(89,500\\)",
-      "\\(87,000\\)",
-      "\\(86,500\\)",
-      "\\(88,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 50.",
@@ -1599,8 +2054,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(89,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(87,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(86,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(88,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h20",
@@ -1608,13 +2081,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 16 cargo ships. Each ship contains 55 shipping containers, and each container holds 127 crates. How many crates are transported in total?",
-    "a": "\\(111,760\\)",
-    "opts": [
-      "\\(111,760\\)",
-      "\\(112,760\\)",
-      "\\(111,260\\)",
-      "\\(114,260\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 55.",
@@ -1632,8 +2098,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(111,760\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(112,760\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111,260\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(114,260\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h21",
@@ -1641,13 +2125,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 17 assembly lines. Each line operates for 25 hours per day and produces 138 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(58,650\\)",
-    "opts": [
-      "\\(58,650\\)",
-      "\\(58,150\\)",
-      "\\(61,150\\)",
-      "\\(59,650\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 25.",
@@ -1665,8 +2142,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(58,650\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(58,150\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(61,150\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(59,650\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h22",
@@ -1674,13 +2169,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 18 sections. Each section has 30 rows, and each row contains 149 seats. What is the total seating capacity of the venue?",
-    "a": "\\(80,460\\)",
-    "opts": [
-      "\\(82,960\\)",
-      "\\(79,960\\)",
-      "\\(81,460\\)",
-      "\\(80,460\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 30.",
@@ -1698,8 +2186,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(82,960\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(79,960\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80,460\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h23",
@@ -1707,13 +2213,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 19 plots. Each plot contains 35 rows of seedlings, and each row has 160 seedlings. How many seedlings are planted in total?",
-    "a": "\\(106,400\\)",
-    "opts": [
-      "\\(108,900\\)",
-      "\\(106,400\\)",
-      "\\(107,400\\)",
-      "\\(105,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 35.",
@@ -1731,8 +2230,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(108,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(106,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(107,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(105,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h24",
@@ -1740,13 +2257,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 12 collections. Each collection contains 40 files, and each file has 171 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(82,080\\)",
-    "opts": [
-      "\\(82,080\\)",
-      "\\(83,080\\)",
-      "\\(84,580\\)",
-      "\\(81,580\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 40.",
@@ -1764,8 +2274,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(82,080\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(83,080\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(84,580\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,580\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h25",
@@ -1773,13 +2301,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 13 rows of corn. Each row yields 45 ears of corn, and each ear contains 182 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(106,470\\)",
-    "opts": [
-      "\\(106,470\\)",
-      "\\(105,970\\)",
-      "\\(107,470\\)",
-      "\\(108,970\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 45.",
@@ -1797,8 +2318,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(106,470\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(105,970\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(107,470\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(108,970\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h26",
@@ -1806,13 +2345,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 14 boxes of canned goods per hour. If they run the warehouse for 50 hours a day for 193 days, how many boxes do they pack in total?",
-    "a": "\\(135,100\\)",
-    "opts": [
-      "\\(135,100\\)",
-      "\\(136,100\\)",
-      "\\(137,600\\)",
-      "\\(134,600\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 50.",
@@ -1830,8 +2362,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(135,100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(136,100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(137,600\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(134,600\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h27",
@@ -1839,13 +2389,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 15 milligrams of pollen per day. If there are 55 active hives in an orchard, each containing 105 bees, calculate the total daily consumption.",
-    "a": "\\(86,625\\)",
-    "opts": [
-      "\\(89,125\\)",
-      "\\(86,125\\)",
-      "\\(87,625\\)",
-      "\\(86,625\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 55.",
@@ -1863,8 +2406,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(89,125\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(86,125\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(87,625\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(86,625\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h28",
@@ -1872,13 +2433,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 16 panels. Each panel generates 25 watt-hours of energy per day. How much energy is produced by the array over a period of 116 days?",
-    "a": "\\(46,400\\)",
-    "opts": [
-      "\\(48,900\\)",
-      "\\(47,400\\)",
-      "\\(45,900\\)",
-      "\\(46,400\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 25.",
@@ -1896,8 +2450,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(48,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(46,400\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h29",
@@ -1905,13 +2477,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 17 server racks. Each rack contains 30 servers, and each server processes 127 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(64,770\\)",
-    "opts": [
-      "\\(64,770\\)",
-      "\\(65,770\\)",
-      "\\(64,270\\)",
-      "\\(67,270\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 30.",
@@ -1929,8 +2494,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(64,770\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(65,770\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64,270\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67,270\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h30",
@@ -1938,13 +2521,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 18 cargo ships. Each ship contains 35 shipping containers, and each container holds 138 crates. How many crates are transported in total?",
-    "a": "\\(86,940\\)",
-    "opts": [
-      "\\(86,940\\)",
-      "\\(87,940\\)",
-      "\\(86,440\\)",
-      "\\(89,440\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 35.",
@@ -1962,8 +2538,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(86,940\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(87,940\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(86,440\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(89,440\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h31",
@@ -1971,13 +2565,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 19 assembly lines. Each line operates for 40 hours per day and produces 149 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(113,240\\)",
-    "opts": [
-      "\\(113,240\\)",
-      "\\(114,240\\)",
-      "\\(112,740\\)",
-      "\\(115,740\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 40.",
@@ -1995,8 +2582,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(113,240\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(114,240\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(112,740\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(115,740\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h32",
@@ -2004,13 +2609,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 12 sections. Each section has 45 rows, and each row contains 160 seats. What is the total seating capacity of the venue?",
-    "a": "\\(86,400\\)",
-    "opts": [
-      "\\(88,900\\)",
-      "\\(85,900\\)",
-      "\\(87,400\\)",
-      "\\(86,400\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 45.",
@@ -2028,8 +2626,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(88,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(85,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(87,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(86,400\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h33",
@@ -2037,13 +2653,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 13 plots. Each plot contains 50 rows of seedlings, and each row has 171 seedlings. How many seedlings are planted in total?",
-    "a": "\\(111,150\\)",
-    "opts": [
-      "\\(113,650\\)",
-      "\\(110,650\\)",
-      "\\(112,150\\)",
-      "\\(111,150\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 50.",
@@ -2061,8 +2670,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(113,650\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(110,650\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(112,150\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111,150\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h34",
@@ -2070,13 +2697,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 14 collections. Each collection contains 55 files, and each file has 182 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(140,140\\)",
-    "opts": [
-      "\\(139,640\\)",
-      "\\(140,140\\)",
-      "\\(141,140\\)",
-      "\\(142,640\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 55.",
@@ -2094,8 +2714,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(139,640\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(140,140\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(141,140\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(142,640\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h35",
@@ -2103,13 +2741,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 15 rows of corn. Each row yields 25 ears of corn, and each ear contains 193 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(72,375\\)",
-    "opts": [
-      "\\(74,875\\)",
-      "\\(71,875\\)",
-      "\\(73,375\\)",
-      "\\(72,375\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 25.",
@@ -2127,8 +2758,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(74,875\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71,875\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(73,375\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(72,375\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h36",
@@ -2136,13 +2785,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 16 boxes of canned goods per hour. If they run the warehouse for 30 hours a day for 105 days, how many boxes do they pack in total?",
-    "a": "\\(50,400\\)",
-    "opts": [
-      "\\(52,900\\)",
-      "\\(50,400\\)",
-      "\\(51,400\\)",
-      "\\(49,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 30.",
@@ -2160,8 +2802,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(52,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(51,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h37",
@@ -2169,13 +2829,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 17 milligrams of pollen per day. If there are 35 active hives in an orchard, each containing 116 bees, calculate the total daily consumption.",
-    "a": "\\(69,020\\)",
-    "opts": [
-      "\\(70,020\\)",
-      "\\(69,020\\)",
-      "\\(71,520\\)",
-      "\\(68,520\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 35.",
@@ -2193,8 +2846,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(70,020\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(69,020\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71,520\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(68,520\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h38",
@@ -2202,13 +2873,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 18 panels. Each panel generates 40 watt-hours of energy per day. How much energy is produced by the array over a period of 127 days?",
-    "a": "\\(91,440\\)",
-    "opts": [
-      "\\(91,440\\)",
-      "\\(92,440\\)",
-      "\\(90,940\\)",
-      "\\(93,940\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 40.",
@@ -2226,8 +2890,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(91,440\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(92,440\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(90,940\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93,940\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h39",
@@ -2235,13 +2917,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 19 server racks. Each rack contains 45 servers, and each server processes 138 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(117,990\\)",
-    "opts": [
-      "\\(117,990\\)",
-      "\\(118,990\\)",
-      "\\(117,490\\)",
-      "\\(120,490\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 45.",
@@ -2259,8 +2934,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(117,990\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(118,990\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(117,490\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120,490\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h40",
@@ -2268,13 +2961,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 12 cargo ships. Each ship contains 50 shipping containers, and each container holds 149 crates. How many crates are transported in total?",
-    "a": "\\(89,400\\)",
-    "opts": [
-      "\\(89,400\\)",
-      "\\(90,400\\)",
-      "\\(88,900\\)",
-      "\\(91,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 50.",
@@ -2292,8 +2978,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(89,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(90,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(88,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(91,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h41",
@@ -2301,13 +3005,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 13 assembly lines. Each line operates for 55 hours per day and produces 160 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(114,400\\)",
-    "opts": [
-      "\\(115,400\\)",
-      "\\(114,400\\)",
-      "\\(116,900\\)",
-      "\\(113,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 55.",
@@ -2325,8 +3022,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(115,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(114,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(116,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(113,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h42",
@@ -2334,13 +3049,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 14 sections. Each section has 25 rows, and each row contains 171 seats. What is the total seating capacity of the venue?",
-    "a": "\\(59,850\\)",
-    "opts": [
-      "\\(62,350\\)",
-      "\\(59,850\\)",
-      "\\(60,850\\)",
-      "\\(59,350\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 25.",
@@ -2358,8 +3066,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(62,350\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(59,850\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60,850\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(59,350\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h43",
@@ -2367,13 +3093,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 15 plots. Each plot contains 30 rows of seedlings, and each row has 182 seedlings. How many seedlings are planted in total?",
-    "a": "\\(81,900\\)",
-    "opts": [
-      "\\(84,400\\)",
-      "\\(82,900\\)",
-      "\\(81,900\\)",
-      "\\(81,400\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 30.",
@@ -2391,8 +3110,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(84,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(82,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,400\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h44",
@@ -2400,13 +3137,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 16 collections. Each collection contains 35 files, and each file has 193 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(108,080\\)",
-    "opts": [
-      "\\(107,580\\)",
-      "\\(109,080\\)",
-      "\\(110,580\\)",
-      "\\(108,080\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 35.",
@@ -2424,8 +3154,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(107,580\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(109,080\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(110,580\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(108,080\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h45",
@@ -2433,13 +3181,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 17 rows of corn. Each row yields 40 ears of corn, and each ear contains 105 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(71,400\\)",
-    "opts": [
-      "\\(73,900\\)",
-      "\\(71,400\\)",
-      "\\(72,400\\)",
-      "\\(70,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 40.",
@@ -2457,8 +3198,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(73,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(71,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(72,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(70,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h46",
@@ -2466,13 +3225,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 18 boxes of canned goods per hour. If they run the warehouse for 45 hours a day for 116 days, how many boxes do they pack in total?",
-    "a": "\\(93,960\\)",
-    "opts": [
-      "\\(93,460\\)",
-      "\\(96,460\\)",
-      "\\(93,960\\)",
-      "\\(94,960\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 45.",
@@ -2490,8 +3242,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(93,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(96,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93,960\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(94,960\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h47",
@@ -2499,13 +3269,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 19 milligrams of pollen per day. If there are 50 active hives in an orchard, each containing 127 bees, calculate the total daily consumption.",
-    "a": "\\(120,650\\)",
-    "opts": [
-      "\\(120,150\\)",
-      "\\(120,650\\)",
-      "\\(123,150\\)",
-      "\\(121,650\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 50.",
@@ -2523,8 +3286,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(120,150\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120,650\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(123,150\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(121,650\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h48",
@@ -2532,13 +3313,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 12 panels. Each panel generates 55 watt-hours of energy per day. How much energy is produced by the array over a period of 138 days?",
-    "a": "\\(91,080\\)",
-    "opts": [
-      "\\(90,580\\)",
-      "\\(93,580\\)",
-      "\\(92,080\\)",
-      "\\(91,080\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 55.",
@@ -2556,8 +3330,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(90,580\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93,580\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(92,080\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(91,080\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h49",
@@ -2565,13 +3357,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 13 server racks. Each rack contains 25 servers, and each server processes 149 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(48,425\\)",
-    "opts": [
-      "\\(49,425\\)",
-      "\\(50,925\\)",
-      "\\(48,425\\)",
-      "\\(47,925\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 25.",
@@ -2589,8 +3374,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(49,425\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50,925\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48,425\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(47,925\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h50",
@@ -2598,13 +3401,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 14 cargo ships. Each ship contains 30 shipping containers, and each container holds 160 crates. How many crates are transported in total?",
-    "a": "\\(67,200\\)",
-    "opts": [
-      "\\(66,700\\)",
-      "\\(68,200\\)",
-      "\\(67,200\\)",
-      "\\(69,700\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 30.",
@@ -2622,8 +3418,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(66,700\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(68,200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67,200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(69,700\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h51",
@@ -2631,13 +3445,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 15 assembly lines. Each line operates for 35 hours per day and produces 171 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(89,775\\)",
-    "opts": [
-      "\\(89,275\\)",
-      "\\(90,775\\)",
-      "\\(89,775\\)",
-      "\\(92,275\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 35.",
@@ -2655,8 +3462,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(89,275\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(90,775\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(89,775\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(92,275\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h52",
@@ -2664,13 +3489,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 16 sections. Each section has 40 rows, and each row contains 182 seats. What is the total seating capacity of the venue?",
-    "a": "\\(116,480\\)",
-    "opts": [
-      "\\(118,980\\)",
-      "\\(116,480\\)",
-      "\\(115,980\\)",
-      "\\(117,480\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 40.",
@@ -2688,8 +3506,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(118,980\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(116,480\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(115,980\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(117,480\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h53",
@@ -2697,13 +3533,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 17 plots. Each plot contains 45 rows of seedlings, and each row has 193 seedlings. How many seedlings are planted in total?",
-    "a": "\\(147,645\\)",
-    "opts": [
-      "\\(150,145\\)",
-      "\\(147,145\\)",
-      "\\(147,645\\)",
-      "\\(148,645\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 45.",
@@ -2721,8 +3550,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(150,145\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(147,145\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(147,645\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(148,645\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h54",
@@ -2730,13 +3577,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 18 collections. Each collection contains 50 files, and each file has 105 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(94,500\\)",
-    "opts": [
-      "\\(94,000\\)",
-      "\\(95,500\\)",
-      "\\(97,000\\)",
-      "\\(94,500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 50.",
@@ -2754,8 +3594,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(94,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(95,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(97,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(94,500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h55",
@@ -2763,13 +3621,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 19 rows of corn. Each row yields 55 ears of corn, and each ear contains 116 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(121,220\\)",
-    "opts": [
-      "\\(120,720\\)",
-      "\\(123,720\\)",
-      "\\(122,220\\)",
-      "\\(121,220\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 55.",
@@ -2787,8 +3638,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(120,720\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(123,720\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(122,220\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(121,220\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h56",
@@ -2796,13 +3665,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 12 boxes of canned goods per hour. If they run the warehouse for 25 hours a day for 127 days, how many boxes do they pack in total?",
-    "a": "\\(38,100\\)",
-    "opts": [
-      "\\(37,600\\)",
-      "\\(40,600\\)",
-      "\\(38,100\\)",
-      "\\(39,100\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 25.",
@@ -2820,8 +3682,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(37,600\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40,600\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(38,100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(39,100\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h57",
@@ -2829,13 +3709,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 13 milligrams of pollen per day. If there are 30 active hives in an orchard, each containing 138 bees, calculate the total daily consumption.",
-    "a": "\\(53,820\\)",
-    "opts": [
-      "\\(53,320\\)",
-      "\\(56,320\\)",
-      "\\(54,820\\)",
-      "\\(53,820\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 30.",
@@ -2853,8 +3726,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(53,320\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(56,320\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54,820\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(53,820\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h58",
@@ -2862,13 +3753,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 14 panels. Each panel generates 35 watt-hours of energy per day. How much energy is produced by the array over a period of 149 days?",
-    "a": "\\(73,010\\)",
-    "opts": [
-      "\\(73,010\\)",
-      "\\(74,010\\)",
-      "\\(72,510\\)",
-      "\\(75,510\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 35.",
@@ -2886,8 +3770,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(73,010\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(74,010\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(72,510\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75,510\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h59",
@@ -2895,13 +3797,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 15 server racks. Each rack contains 40 servers, and each server processes 160 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(96,000\\)",
-    "opts": [
-      "\\(96,000\\)",
-      "\\(97,000\\)",
-      "\\(95,500\\)",
-      "\\(98,500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 40.",
@@ -2919,8 +3814,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(96,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(97,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(95,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(98,500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h60",
@@ -2928,13 +3841,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 16 cargo ships. Each ship contains 45 shipping containers, and each container holds 171 crates. How many crates are transported in total?",
-    "a": "\\(123,120\\)",
-    "opts": [
-      "\\(122,620\\)",
-      "\\(123,120\\)",
-      "\\(125,620\\)",
-      "\\(124,120\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 45.",
@@ -2952,8 +3858,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(122,620\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(123,120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125,620\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124,120\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h61",
@@ -2961,13 +3885,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 17 assembly lines. Each line operates for 50 hours per day and produces 182 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(154,700\\)",
-    "opts": [
-      "\\(154,200\\)",
-      "\\(157,200\\)",
-      "\\(155,700\\)",
-      "\\(154,700\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 50.",
@@ -2985,8 +3902,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(154,200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(157,200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(155,700\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(154,700\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h62",
@@ -2994,13 +3929,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 18 sections. Each section has 55 rows, and each row contains 193 seats. What is the total seating capacity of the venue?",
-    "a": "\\(191,070\\)",
-    "opts": [
-      "\\(190,570\\)",
-      "\\(193,570\\)",
-      "\\(192,070\\)",
-      "\\(191,070\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 55.",
@@ -3018,8 +3946,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(190,570\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(193,570\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(192,070\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(191,070\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h63",
@@ -3027,13 +3973,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 19 plots. Each plot contains 25 rows of seedlings, and each row has 105 seedlings. How many seedlings are planted in total?",
-    "a": "\\(49,875\\)",
-    "opts": [
-      "\\(52,375\\)",
-      "\\(50,875\\)",
-      "\\(49,875\\)",
-      "\\(49,375\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 25.",
@@ -3051,8 +3990,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(52,375\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50,875\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49,875\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49,375\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h64",
@@ -3060,13 +4017,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 12 collections. Each collection contains 30 files, and each file has 116 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(41,760\\)",
-    "opts": [
-      "\\(41,760\\)",
-      "\\(42,760\\)",
-      "\\(41,260\\)",
-      "\\(44,260\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 30.",
@@ -3084,8 +4034,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(41,760\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42,760\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(41,260\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44,260\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h65",
@@ -3093,13 +4061,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 13 rows of corn. Each row yields 35 ears of corn, and each ear contains 127 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(57,785\\)",
-    "opts": [
-      "\\(58,785\\)",
-      "\\(57,285\\)",
-      "\\(57,785\\)",
-      "\\(60,285\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 35.",
@@ -3117,8 +4078,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(58,785\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(57,285\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(57,785\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60,285\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h66",
@@ -3126,13 +4105,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 14 boxes of canned goods per hour. If they run the warehouse for 40 hours a day for 138 days, how many boxes do they pack in total?",
-    "a": "\\(77,280\\)",
-    "opts": [
-      "\\(79,780\\)",
-      "\\(76,780\\)",
-      "\\(78,280\\)",
-      "\\(77,280\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 40.",
@@ -3150,8 +4122,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(79,780\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(76,780\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(78,280\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(77,280\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h67",
@@ -3159,13 +4149,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 15 milligrams of pollen per day. If there are 45 active hives in an orchard, each containing 149 bees, calculate the total daily consumption.",
-    "a": "\\(100,575\\)",
-    "opts": [
-      "\\(101,575\\)",
-      "\\(100,575\\)",
-      "\\(103,075\\)",
-      "\\(100,075\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 45.",
@@ -3183,8 +4166,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(101,575\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100,575\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(103,075\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100,075\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h68",
@@ -3192,13 +4193,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 16 panels. Each panel generates 50 watt-hours of energy per day. How much energy is produced by the array over a period of 160 days?",
-    "a": "\\(128,000\\)",
-    "opts": [
-      "\\(130,500\\)",
-      "\\(127,500\\)",
-      "\\(129,000\\)",
-      "\\(128,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 50.",
@@ -3216,8 +4210,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(130,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(127,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(129,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(128,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h69",
@@ -3225,13 +4237,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 17 server racks. Each rack contains 55 servers, and each server processes 171 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(159,885\\)",
-    "opts": [
-      "\\(159,385\\)",
-      "\\(162,385\\)",
-      "\\(160,885\\)",
-      "\\(159,885\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 55.",
@@ -3249,8 +4254,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(159,385\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(162,385\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(160,885\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(159,885\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h70",
@@ -3258,13 +4281,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 18 cargo ships. Each ship contains 25 shipping containers, and each container holds 182 crates. How many crates are transported in total?",
-    "a": "\\(81,900\\)",
-    "opts": [
-      "\\(84,400\\)",
-      "\\(81,400\\)",
-      "\\(82,900\\)",
-      "\\(81,900\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 25.",
@@ -3282,8 +4298,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(84,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(82,900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,900\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h71",
@@ -3291,13 +4325,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 19 assembly lines. Each line operates for 30 hours per day and produces 193 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(110,010\\)",
-    "opts": [
-      "\\(110,010\\)",
-      "\\(111,010\\)",
-      "\\(109,510\\)",
-      "\\(112,510\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 30.",
@@ -3315,8 +4342,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(110,010\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(111,010\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(109,510\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(112,510\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h72",
@@ -3324,13 +4369,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 12 sections. Each section has 35 rows, and each row contains 105 seats. What is the total seating capacity of the venue?",
-    "a": "\\(44,100\\)",
-    "opts": [
-      "\\(46,600\\)",
-      "\\(43,600\\)",
-      "\\(45,100\\)",
-      "\\(44,100\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 35.",
@@ -3348,8 +4386,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(46,600\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(43,600\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45,100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44,100\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h73",
@@ -3357,13 +4413,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 13 plots. Each plot contains 40 rows of seedlings, and each row has 116 seedlings. How many seedlings are planted in total?",
-    "a": "\\(60,320\\)",
-    "opts": [
-      "\\(59,820\\)",
-      "\\(61,320\\)",
-      "\\(60,320\\)",
-      "\\(62,820\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 40.",
@@ -3381,8 +4430,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(59,820\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(61,320\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60,320\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(62,820\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h74",
@@ -3390,13 +4457,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 14 collections. Each collection contains 45 files, and each file has 127 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(80,010\\)",
-    "opts": [
-      "\\(79,510\\)",
-      "\\(81,010\\)",
-      "\\(82,510\\)",
-      "\\(80,010\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 45.",
@@ -3414,8 +4474,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(79,510\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,010\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(82,510\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80,010\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h75",
@@ -3423,13 +4501,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 15 rows of corn. Each row yields 50 ears of corn, and each ear contains 138 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(103,500\\)",
-    "opts": [
-      "\\(104,500\\)",
-      "\\(103,000\\)",
-      "\\(103,500\\)",
-      "\\(106,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 50.",
@@ -3447,8 +4518,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(104,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(103,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(103,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(106,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h76",
@@ -3456,13 +4545,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 16 boxes of canned goods per hour. If they run the warehouse for 55 hours a day for 149 days, how many boxes do they pack in total?",
-    "a": "\\(131,120\\)",
-    "opts": [
-      "\\(130,620\\)",
-      "\\(133,620\\)",
-      "\\(132,120\\)",
-      "\\(131,120\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 55.",
@@ -3480,8 +4562,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(130,620\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(133,620\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(132,120\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(131,120\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h77",
@@ -3489,13 +4589,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 17 milligrams of pollen per day. If there are 25 active hives in an orchard, each containing 160 bees, calculate the total daily consumption.",
-    "a": "\\(68,000\\)",
-    "opts": [
-      "\\(70,500\\)",
-      "\\(67,500\\)",
-      "\\(69,000\\)",
-      "\\(68,000\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 25.",
@@ -3513,8 +4606,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(70,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(69,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(68,000\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h78",
@@ -3522,13 +4633,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 18 panels. Each panel generates 30 watt-hours of energy per day. How much energy is produced by the array over a period of 171 days?",
-    "a": "\\(92,340\\)",
-    "opts": [
-      "\\(92,340\\)",
-      "\\(94,840\\)",
-      "\\(93,340\\)",
-      "\\(91,840\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 30.",
@@ -3546,8 +4650,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(92,340\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(94,840\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93,340\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(91,840\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h79",
@@ -3555,13 +4677,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 19 server racks. Each rack contains 35 servers, and each server processes 182 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(121,030\\)",
-    "opts": [
-      "\\(121,030\\)",
-      "\\(122,030\\)",
-      "\\(120,530\\)",
-      "\\(123,530\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 35.",
@@ -3579,8 +4694,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(121,030\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(122,030\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(120,530\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(123,530\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h80",
@@ -3588,13 +4721,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 12 cargo ships. Each ship contains 40 shipping containers, and each container holds 193 crates. How many crates are transported in total?",
-    "a": "\\(92,640\\)",
-    "opts": [
-      "\\(95,140\\)",
-      "\\(93,640\\)",
-      "\\(92,140\\)",
-      "\\(92,640\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 40.",
@@ -3612,8 +4738,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(95,140\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(93,640\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(92,140\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(92,640\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h81",
@@ -3621,13 +4765,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 13 assembly lines. Each line operates for 45 hours per day and produces 105 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(61,425\\)",
-    "opts": [
-      "\\(61,425\\)",
-      "\\(62,425\\)",
-      "\\(60,925\\)",
-      "\\(63,925\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 45.",
@@ -3645,8 +4782,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(61,425\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(62,425\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60,925\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(63,925\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h82",
@@ -3654,13 +4809,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 14 sections. Each section has 50 rows, and each row contains 116 seats. What is the total seating capacity of the venue?",
-    "a": "\\(81,200\\)",
-    "opts": [
-      "\\(80,700\\)",
-      "\\(82,200\\)",
-      "\\(81,200\\)",
-      "\\(83,700\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 50.",
@@ -3678,8 +4826,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(80,700\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(82,200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(83,700\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h83",
@@ -3687,13 +4853,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 15 plots. Each plot contains 55 rows of seedlings, and each row has 127 seedlings. How many seedlings are planted in total?",
-    "a": "\\(104,775\\)",
-    "opts": [
-      "\\(107,275\\)",
-      "\\(105,775\\)",
-      "\\(104,275\\)",
-      "\\(104,775\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 55.",
@@ -3711,8 +4870,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(107,275\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(105,775\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(104,275\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(104,775\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h84",
@@ -3720,13 +4897,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 16 collections. Each collection contains 25 files, and each file has 138 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(55,200\\)",
-    "opts": [
-      "\\(55,200\\)",
-      "\\(57,700\\)",
-      "\\(54,700\\)",
-      "\\(56,200\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 25.",
@@ -3744,8 +4914,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(55,200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(57,700\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(54,700\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(56,200\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h85",
@@ -3753,13 +4941,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 17 rows of corn. Each row yields 30 ears of corn, and each ear contains 149 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(75,990\\)",
-    "opts": [
-      "\\(78,490\\)",
-      "\\(75,490\\)",
-      "\\(76,990\\)",
-      "\\(75,990\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 30.",
@@ -3777,8 +4958,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(78,490\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75,490\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(76,990\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(75,990\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h86",
@@ -3786,13 +4985,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 18 boxes of canned goods per hour. If they run the warehouse for 35 hours a day for 160 days, how many boxes do they pack in total?",
-    "a": "\\(100,800\\)",
-    "opts": [
-      "\\(100,300\\)",
-      "\\(103,300\\)",
-      "\\(100,800\\)",
-      "\\(101,800\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 35.",
@@ -3810,8 +5002,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(100,300\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(103,300\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100,800\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(101,800\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y7-1h-h87",
@@ -3819,13 +5029,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 19 milligrams of pollen per day. If there are 40 active hives in an orchard, each containing 171 bees, calculate the total daily consumption.",
-    "a": "\\(129,960\\)",
-    "opts": [
-      "\\(130,960\\)",
-      "\\(129,460\\)",
-      "\\(132,460\\)",
-      "\\(129,960\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 40.",
@@ -3843,8 +5046,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(130,960\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(129,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(132,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(129,960\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h88",
@@ -3852,13 +5073,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 12 panels. Each panel generates 45 watt-hours of energy per day. How much energy is produced by the array over a period of 182 days?",
-    "a": "\\(98,280\\)",
-    "opts": [
-      "\\(98,280\\)",
-      "\\(99,280\\)",
-      "\\(100,780\\)",
-      "\\(97,780\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 45.",
@@ -3876,8 +5090,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(98,280\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(99,280\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100,780\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(97,780\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h89",
@@ -3885,13 +5117,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 13 server racks. Each rack contains 50 servers, and each server processes 193 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(125,450\\)",
-    "opts": [
-      "\\(125,450\\)",
-      "\\(124,950\\)",
-      "\\(126,450\\)",
-      "\\(127,950\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 50.",
@@ -3909,8 +5134,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(125,450\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124,950\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(126,450\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(127,950\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h90",
@@ -3918,13 +5161,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 14 cargo ships. Each ship contains 55 shipping containers, and each container holds 105 crates. How many crates are transported in total?",
-    "a": "\\(80,850\\)",
-    "opts": [
-      "\\(80,350\\)",
-      "\\(83,350\\)",
-      "\\(81,850\\)",
-      "\\(80,850\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 55.",
@@ -3942,8 +5178,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(80,350\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(83,350\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,850\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(80,850\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h91",
@@ -3951,13 +5205,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An electronics manufacturing plant has 15 assembly lines. Each line operates for 25 hours per day and produces 116 microchips per hour. What is the total daily production of microchips?",
-    "a": "\\(43,500\\)",
-    "opts": [
-      "\\(43,500\\)",
-      "\\(43,000\\)",
-      "\\(46,000\\)",
-      "\\(44,500\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 25.",
@@ -3975,8 +5222,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(43,500\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(43,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(46,000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(44,500\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h92",
@@ -3984,13 +5249,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A concert venue features 16 sections. Each section has 30 rows, and each row contains 127 seats. What is the total seating capacity of the venue?",
-    "a": "\\(60,960\\)",
-    "opts": [
-      "\\(63,460\\)",
-      "\\(60,960\\)",
-      "\\(60,460\\)",
-      "\\(61,960\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 30.",
@@ -4008,8 +5266,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(63,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60,960\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(61,960\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h93",
@@ -4017,13 +5293,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A reforestation project plants tree seedlings in 17 plots. Each plot contains 35 rows of seedlings, and each row has 138 seedlings. How many seedlings are planted in total?",
-    "a": "\\(82,110\\)",
-    "opts": [
-      "\\(82,110\\)",
-      "\\(84,610\\)",
-      "\\(81,610\\)",
-      "\\(83,110\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 17 and 35.",
@@ -4041,8 +5310,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(82,110\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(84,610\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(81,610\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(83,110\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h94",
@@ -4050,13 +5337,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A digital library stores 18 collections. Each collection contains 40 files, and each file has 149 pages of documents. Find the total number of pages in the library.",
-    "a": "\\(107,280\\)",
-    "opts": [
-      "\\(109,780\\)",
-      "\\(106,780\\)",
-      "\\(108,280\\)",
-      "\\(107,280\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 18 and 40.",
@@ -4074,8 +5354,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(109,780\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(106,780\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(108,280\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(107,280\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h95",
@@ -4083,13 +5381,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "An agricultural farm harvests 19 rows of corn. Each row yields 45 ears of corn, and each ear contains 160 individual kernels. How many kernels are harvested in total?",
-    "a": "\\(136,800\\)",
-    "opts": [
-      "\\(139,300\\)",
-      "\\(136,300\\)",
-      "\\(137,800\\)",
-      "\\(136,800\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 19 and 45.",
@@ -4107,8 +5398,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(139,300\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(136,300\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(137,800\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(136,800\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h96",
@@ -4116,13 +5425,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A packaging warehouse packs 12 boxes of canned goods per hour. If they run the warehouse for 50 hours a day for 171 days, how many boxes do they pack in total?",
-    "a": "\\(102,600\\)",
-    "opts": [
-      "\\(102,100\\)",
-      "\\(102,600\\)",
-      "\\(105,100\\)",
-      "\\(103,600\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 12 and 50.",
@@ -4140,8 +5442,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(102,100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(102,600\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(105,100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(103,600\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y7-1h-h97",
@@ -4149,13 +5469,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A colony of bees consumes 13 milligrams of pollen per day. If there are 55 active hives in an orchard, each containing 182 bees, calculate the total daily consumption.",
-    "a": "\\(130,130\\)",
-    "opts": [
-      "\\(130,130\\)",
-      "\\(132,630\\)",
-      "\\(131,130\\)",
-      "\\(129,630\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 13 and 55.",
@@ -4173,8 +5486,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(130,130\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(132,630\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(131,130\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(129,630\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h98",
@@ -4182,13 +5513,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A solar array consists of 14 panels. Each panel generates 25 watt-hours of energy per day. How much energy is produced by the array over a period of 193 days?",
-    "a": "\\(67,550\\)",
-    "opts": [
-      "\\(70,050\\)",
-      "\\(67,050\\)",
-      "\\(68,550\\)",
-      "\\(67,550\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 14 and 25.",
@@ -4206,8 +5530,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(70,050\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67,050\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(68,550\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67,550\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y7-1h-h99",
@@ -4215,13 +5557,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A data center houses 15 server racks. Each rack contains 30 servers, and each server processes 105 requests per minute. Find the total requests processed per minute.",
-    "a": "\\(47,250\\)",
-    "opts": [
-      "\\(47,250\\)",
-      "\\(48,250\\)",
-      "\\(49,750\\)",
-      "\\(46,750\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 15 and 30.",
@@ -4239,8 +5574,26 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(47,250\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(48,250\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49,750\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(46,750\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y7-1h-h100",
@@ -4248,13 +5601,6 @@ export const Y7_CH1H_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A logistics carrier operates 16 cargo ships. Each ship contains 35 shipping containers, and each container holds 116 crates. How many crates are transported in total?",
-    "a": "\\(64,960\\)",
-    "opts": [
-      "\\(67,460\\)",
-      "\\(64,460\\)",
-      "\\(65,960\\)",
-      "\\(64,960\\)"
-    ],
     "solutionSteps": [
       {
         "explanation": "First, calculate the product of the first two values: 16 and 35.",
@@ -4272,7 +5618,25 @@ export const Y7_CH1H_QUESTIONS = [
         "graphData": null
       }
     ],
-    "t": "The standard multiplication algorithms",
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\(67,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64,460\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(65,960\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64,960\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   }
 ];
