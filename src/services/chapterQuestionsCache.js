@@ -50,11 +50,22 @@ const setSessionVersion = (v) => {
   try { sessionStorage.setItem(SESSION_VERSION_KEY, String(v)); } catch { /* private mode */ }
 };
 
-/** Fetch sync_meta/questions.membershipVersion from Firestore (1 read). */
+/**
+ * Fetch sync_meta/questions.version from Firestore (1 read).
+ *
+ * We key the cache on `version` (the CONTENT version) rather than
+ * `membershipVersion`. `version` bumps on *any* question change — including a
+ * pure content edit such as fixing a question's answer options — whereas
+ * `membershipVersion` only bumps when the active-question SET changes
+ * (add/remove/move). Keying on content version guarantees students always
+ * refetch after a teacher edits question text/options, not just when questions
+ * are added or removed. In steady state (no edits) `version` is stable, so the
+ * cache still serves zero-read hits.
+ */
 export const fetchRemoteMembershipVersion = async () => {
   try {
     const snap = await getDoc(doc(db, 'sync_meta', 'questions'));
-    return Number(snap.data()?.membershipVersion || snap.data()?.version || 0);
+    return Number(snap.data()?.version || snap.data()?.membershipVersion || 0);
   } catch {
     return 0;
   }

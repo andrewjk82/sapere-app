@@ -1008,15 +1008,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Find the value of \\(302 \\times 298\\) using special expansions.",
     "options": [
       {
-        "text": "\\(97195.68\\)",
+        "text": "\\(90000\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(103495.40\\)",
+        "text": "\\(90004\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(76496.60\\)",
+        "text": "\\(89004\\)",
         "imageUrl": ""
       },
       {
@@ -1424,15 +1424,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(358.80\\)",
+        "text": "\\(3a+4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(336.96\\)",
+        "text": "\\(a+12\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(265.20\\)",
+        "text": "\\(3a+7\\)",
         "imageUrl": ""
       }
     ],
@@ -1693,7 +1693,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((a - 7)(a + 7)\\)",
     "options": [
       {
-        "text": "\\(2.30\\)",
+        "text": "\\(a^2+49\\)",
         "imageUrl": ""
       },
       {
@@ -1701,11 +1701,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1.70\\)",
+        "text": "\\(a^2-14a-49\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(2.16\\)",
+        "text": "\\(a^2-14\\)",
         "imageUrl": ""
       }
     ],
@@ -2435,15 +2435,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(9.20\\)",
+        "text": "\\(8a+b\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6.80\\)",
+        "text": "\\(8a-3b\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(8.64\\)",
+        "text": "\\(6a-b\\)",
         "imageUrl": ""
       }
     ],
@@ -2651,15 +2651,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((u - v)(u + v)\\)",
     "options": [
       {
-        "text": "\\(2.16\\)",
+        "text": "\\(u^2+v^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1.70\\)",
+        "text": "\\(u^2-2uv+v^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(2.30\\)",
+        "text": "\\(u^2-2v^2\\)",
         "imageUrl": ""
       },
       {
@@ -2881,11 +2881,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\(2(p - q) - (p + q)\\)",
     "options": [
       {
-        "text": "\\(-3.45\\)",
+        "text": "\\(p-q\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-2.55\\)",
+        "text": "\\(p+3q\\)",
         "imageUrl": ""
       },
       {
@@ -2893,7 +2893,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-3.24\\)",
+        "text": "\\(3p-3q\\)",
         "imageUrl": ""
       }
     ],
@@ -2972,11 +2972,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\(-3(p - 2q)\\)",
     "options": [
       {
-        "text": "\\(-30.60\\)",
+        "text": "\\(-3p-6q\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-41.40\\)",
+        "text": "\\(-3p+2q\\)",
         "imageUrl": ""
       },
       {
@@ -2984,7 +2984,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-38.88\\)",
+        "text": "\\(3p-6q\\)",
         "imageUrl": ""
       }
     ],
@@ -3106,15 +3106,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((5 + c)^2\\)",
     "options": [
       {
-        "text": "\\(22707.00\\)",
+        "text": "\\(c^2+25\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(17871.25\\)",
+        "text": "\\(c^2+5c+25\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(24178.75\\)",
+        "text": "\\(c^2+10c+10\\)",
         "imageUrl": ""
       },
       {
@@ -3197,15 +3197,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Evaluate using difference of squares: \\(1002 \\times 998\\)",
     "options": [
       {
-        "text": "\\(1079995.68\\)",
+        "text": "\\(1000000\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(849996.60\\)",
+        "text": "\\(1000004\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1149995.40\\)",
+        "text": "\\(998000\\)",
         "imageUrl": ""
       },
       {
@@ -3704,15 +3704,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(183989.65\\)",
+        "text": "\\(160000\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(135992.35\\)",
+        "text": "\\(160009\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(172790.28\\)",
+        "text": "\\(159919\\)",
         "imageUrl": ""
       }
     ],
@@ -3934,15 +3934,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1161528.75\\)",
+        "text": "\\(1010000\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(858521.25\\)",
+        "text": "\\(1000025\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1090827.00\\)",
+        "text": "\\(1025025\\)",
         "imageUrl": ""
       }
     ],
@@ -3982,15 +3982,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-86.70\\)",
+        "text": "\\(-10-2z\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-110.16\\)",
+        "text": "\\(10-2z\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-117.30\\)",
+        "text": "\\(-10+z\\)",
         "imageUrl": ""
       }
     ],
@@ -4069,15 +4069,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((h + 12)(h - 12)\\)",
     "options": [
       {
-        "text": "\\(2.16\\)",
+        "text": "\\(h^2+144\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1.70\\)",
+        "text": "\\(h^2-24h-144\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(2.30\\)",
+        "text": "\\(h^2-24\\)",
         "imageUrl": ""
       },
       {
@@ -4207,15 +4207,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(25.30\\)",
+        "text": "\\(2a^2-3\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(18.70\\)",
+        "text": "\\(2a^2-6\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(23.76\\)",
+        "text": "\\(2a-6a\\)",
         "imageUrl": ""
       }
     ],
@@ -4696,11 +4696,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Evaluate using algebraic expansion: \\(10.02^2\\)",
     "options": [
       {
-        "text": "\\(108.43\\)",
+        "text": "\\(100.04\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(115.46\\)",
+        "text": "\\(100.4\\)",
         "imageUrl": ""
       },
       {
@@ -4708,7 +4708,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(85.34\\)",
+        "text": "\\(104.0004\\)",
         "imageUrl": ""
       }
     ],
@@ -5338,15 +5338,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Find the value of \\(998^2\\) using special expansions.",
     "options": [
       {
-        "text": "\\(1075684.32\\)",
+        "text": "\\(996000\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(846603.40\\)",
+        "text": "\\(994004\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1145404.60\\)",
+        "text": "\\(1004004\\)",
         "imageUrl": ""
       },
       {
@@ -5429,7 +5429,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((10 + b)(10 - b)\\)",
     "options": [
       {
-        "text": "\\(108.00\\)",
+        "text": "\\(100+b^2\\)",
         "imageUrl": ""
       },
       {
@@ -5437,11 +5437,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(115.00\\)",
+        "text": "\\(100-20b-b^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(85.00\\)",
+        "text": "\\(100-b\\)",
         "imageUrl": ""
       }
     ],
@@ -5783,15 +5783,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\(-3(z + 4)\\)",
     "options": [
       {
-        "text": "\\(-3.24\\)",
+        "text": "\\(-3z+12\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-2.55\\)",
+        "text": "\\(-3z-4\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-3.45\\)",
+        "text": "\\(3z-12\\)",
         "imageUrl": ""
       },
       {
@@ -6344,11 +6344,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand and simplify: \\(2(3a - 4) + 5\\)",
     "options": [
       {
-        "text": "\\(6.48\\)",
+        "text": "\\(6a-8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6.90\\)",
+        "text": "\\(6a+1\\)",
         "imageUrl": ""
       },
       {
@@ -6356,7 +6356,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(5.10\\)",
+        "text": "\\(6a-13\\)",
         "imageUrl": ""
       }
     ],
@@ -6622,15 +6622,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Evaluate using algebraic expansion: \\(9997^2\\)",
     "options": [
       {
-        "text": "\\(107935209.72\\)",
+        "text": "\\(99940000\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(84949007.65\\)",
+        "text": "\\(100060009\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(114931010.35\\)",
+        "text": "\\(99880009\\)",
         "imageUrl": ""
       },
       {
@@ -6766,15 +6766,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Find the value of \\(103^2\\) using special expansions.",
     "options": [
       {
-        "text": "\\(11457.72\\)",
+        "text": "\\(10600\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(9017.65\\)",
+        "text": "\\(10009\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(12200.35\\)",
+        "text": "\\(10906\\)",
         "imageUrl": ""
       },
       {
@@ -7498,15 +7498,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-898.56\\)",
+        "text": "\\(-8a\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-956.80\\)",
+        "text": "\\(8a-32\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-707.20\\)",
+        "text": "\\(-8a+16\\)",
         "imageUrl": ""
       }
     ],
@@ -8002,15 +8002,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((i + 13)^2\\)",
     "options": [
       {
-        "text": "\\(244262.52\\)",
+        "text": "\\(i^2+169\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(192243.65\\)",
+        "text": "\\(i^2+13i+169\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(260094.35\\)",
+        "text": "\\(i^2+26i+26\\)",
         "imageUrl": ""
       },
       {
@@ -8045,15 +8045,15 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Evaluate using algebraic expansion: \\(1.003^2\\)",
     "options": [
       {
-        "text": "\\(1.09\\)",
+        "text": "\\(1.006\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(0.86\\)",
+        "text": "\\(1.009\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1.16\\)",
+        "text": "\\(1.0006\\)",
         "imageUrl": ""
       },
       {
@@ -8184,11 +8184,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\(5(a - 2)\\)",
     "options": [
       {
-        "text": "\\(4.25\\)",
+        "text": "\\(5a-2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5.40\\)",
+        "text": "\\(5a+10\\)",
         "imageUrl": ""
       },
       {
@@ -8196,7 +8196,7 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(5.75\\)",
+        "text": "\\(a-10\\)",
         "imageUrl": ""
       }
     ],
@@ -8361,7 +8361,7 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "7(a - 3b) - 5(2a - 4b)",
     "options": [
       {
-        "text": "\\(-3.45\\)",
+        "text": "\\(-3a+b\\)",
         "imageUrl": ""
       },
       {
@@ -8369,11 +8369,11 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(-2.55\\)",
+        "text": "\\(3a-b\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(-3.24\\)",
+        "text": "\\(-3a-41b\\)",
         "imageUrl": ""
       }
     ],
@@ -8408,15 +8408,15 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(43.35\\)",
+        "text": "\\(5a+7\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(58.65\\)",
+        "text": "\\(5a-1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(55.08\\)",
+        "text": "\\(6a+1\\)",
         "imageUrl": ""
       }
     ],
