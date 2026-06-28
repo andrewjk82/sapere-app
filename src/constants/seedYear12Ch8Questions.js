@@ -1613,7 +1613,7 @@ export const Y12_CH8_QUESTIONS = [
           },
           {
             "explanation": "Find the last term value on the last Sunday",
-            "workingOut": "150 \\equiv 3 \\pmod 7 \\implies T_n = 3"
+            "workingOut": "150 divided by 7 leaves a remainder of 3, so the term matches"
           },
           {
             "explanation": "Solve term equation for number of terms",

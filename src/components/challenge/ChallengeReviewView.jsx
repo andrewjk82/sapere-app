@@ -150,10 +150,11 @@ const ChallengeReviewView = ({
   const studentText = formatStudentAnswer(q, studentRaw);
   const correctText = useMemo(() => getCorrectAnswerText(q), [q]);
 
-  // Auto-wrap plain text (no $ signs) in $...$ so MathView renders LaTeX properly
+  // Auto-wrap plain text in $...$ so MathView renders LaTeX properly.
+  // Skip if the text already contains any LaTeX delimiters ($ \( \[).
   const wrapMath = (text) => {
     if (!text) return text;
-    if (/\$/.test(text)) return text;
+    if (/\$|\\\(|\\\[/.test(text)) return text;
     // Only wrap if it looks like it contains math (^, _, \, fractions etc)
     if (/[\^_\\]|[0-9][a-zA-Z]|[a-zA-Z][0-9]/.test(text)) return `$${text}$`;
     return text;

@@ -5131,7 +5131,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Conclude that every fourth term starting from the second is a multiple of 3.",
-        "workingOut": "Since \\(T_n \\equiv T_{n-4} \\pmod 3\\) due to the periodic nature of Fibonacci-like sequence remainders, this pattern repeats indefinitely.",
+        "workingOut": "Since \\(the remainder of T_n divided by 3 equals the remainder of T_{n-4} divided by 3\\) due to the periodic nature of Fibonacci-like sequence remainders, this pattern repeats indefinitely.",
         "graphData": null
       }
     ],
@@ -7887,7 +7887,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Find the equivalent index modulo 6.",
-        "workingOut": "\\(50 \\equiv 2 \\pmod 6\\).",
+        "workingOut": "\(50 = 6 \times 8 + 2\) (so 50 divided by 6 leaves a remainder of 2).",
         "graphData": null
       },
       {

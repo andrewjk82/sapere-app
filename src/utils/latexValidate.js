@@ -84,11 +84,79 @@ export const validateSeedQuestion = (raw, renderToString) => {
   push('solution', raw.s ?? raw.solution ?? '');
 
   const isMC = raw.type === 'multiple_choice';
+  const opts = raw.opts || raw.options || [];
   if (!isMC) {
     push('answer', raw.a ?? raw.answer ?? '');
+  } else {
+    const ansVal = raw.a ?? raw.answer;
+    const ansIdx = parseInt(ansVal, 10);
+    
+    if (ansVal === undefined || ansVal === '') {
+      out.push({ field: 'answer', tex: '', error: 'Multiple choice question is missing a correct answer.' });
+    } else if (Number.isNaN(ansIdx) || ansIdx < 0 || ansIdx >= opts.length) {
+      out.push({ field: 'answer', tex: String(ansVal), error: `Answer index must be a number between 0 and ${opts.length - 1}.` });
+    } else {
+      const sol = raw.s ?? raw.solution ?? '';
+      const lastStep = Array.isArray(raw.solutionSteps) && raw.solutionSteps.length > 0 
+        ? raw.solutionSteps[raw.solutionSteps.length - 1] 
+        : null;
+      const lastWO = lastStep ? (lastStep.workingOut ?? '') : '';
+      
+      const normalize = (str) => {
+        if (typeof str !== 'string') return '';
+        return str
+          .replace(/\\\(|\\\)|\\\[|\\\]|\$|\s/g, '')
+          .replace(/\\displaystyle/g, '')
+          .replace(/\\dfrac/g, '\\frac')
+          .replace(/\{/g, '')
+          .replace(/\}/g, '')
+          .replace(/\\text\{[^}]*\}/g, '')
+          .replace(/\\text/g, '')
+          .replace(/,/g, '')
+          .toLowerCase();
+      };
+      
+      const normSol = normalize(sol);
+      const normLastWO = normalize(lastWO);
+      
+      let bestIdx = -1;
+      const currentOptText = typeof opts[ansIdx] === 'object' && opts[ansIdx] !== null ? opts[ansIdx].text : opts[ansIdx];
+      const normCurrentOpt = normalize(currentOptText);
+      
+      const currentMatches = normCurrentOpt && (
+        (normSol && (normSol === normCurrentOpt || normSol.includes(normCurrentOpt) || normCurrentOpt.includes(normSol))) ||
+        (normLastWO && (normLastWO === normCurrentOpt || normLastWO.includes(normCurrentOpt) || normCurrentOpt.includes(normSol)))
+      );
+
+      if (currentMatches) {
+        bestIdx = ansIdx;
+      } else {
+        for (let i = 0; i < opts.length; i++) {
+          const optText = typeof opts[i] === 'object' && opts[i] !== null ? opts[i].text : opts[i];
+          const normOpt = normalize(optText);
+          
+          if (normOpt && (
+            (normSol && (normSol === normOpt || normSol.includes(normOpt) || normOpt.includes(normSol))) ||
+            (normLastWO && (normLastWO === normOpt || normLastWO.includes(normOpt) || normOpt.includes(normSol)))
+          )) {
+            bestIdx = i;
+            break;
+          }
+        }
+      }
+      
+      if (bestIdx !== -1 && bestIdx !== ansIdx) {
+        const expectedOpt = typeof opts[bestIdx] === 'object' ? opts[bestIdx].text : opts[bestIdx];
+        const actualOpt = typeof opts[ansIdx] === 'object' ? opts[ansIdx].text : opts[ansIdx];
+        out.push({
+          field: 'answer',
+          tex: String(ansVal),
+          error: `Answer index mismatch. Marked as ${ansIdx} ("${actualOpt}"), but the math solution matches index ${bestIdx} ("${expectedOpt}").`
+        });
+      }
+    }
   }
 
-  const opts = raw.opts || raw.options || [];
   if (Array.isArray(opts)) {
     opts.forEach((opt, i) => {
       const text = typeof opt === 'object' && opt !== null ? opt.text : opt;

@@ -90,6 +90,10 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     return 8; // medium
   };
 
+  // Render the question blocks for one version (student paper or answer key).
+  // Factored into a function so a single page can hold both versions, built
+  // from the same selected questions.
+  const renderQuestions = (showAnswers) => {
   let questionsHtml = '';
 
   questions.forEach((q, idx) => {
@@ -251,6 +255,102 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
 
     questionsHtml += '</div>'; // close question-block
   });
+
+  return questionsHtml;
+  };
+
+  // The cover / header / footer markup is identical for both versions — only
+  // the question blocks differ. examDoc() wraps a rendered question set with
+  // that shared shell so we can emit it once or twice in the same window.
+  const examDoc = (questionsHtml) => `
+  <!-- Exam Cover Page -->
+  <div class="cover-page">
+    <div class="cover-top">
+      <div class="cover-logo-text" style="display: flex; align-items: stretch; gap: 14px; white-space: nowrap;">
+        <div style="width: 5px; background: #7c3aed; border-radius: 2px; flex-shrink: 0; min-height: 40px;"></div>
+        <div style="line-height: 1.2;">
+          <span style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.1em; display: block;">Sapere Aude</span>
+          <span style="font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.25em; opacity: 0.55; display: block; margin-top: 3px;">Academia</span>
+        </div>
+      </div>
+      <div class="cover-metadata">
+        <div>${year || (chapterTitle.toLowerCase().includes('year') ? '' : 'Year 10')} ${course ? `— ${course}` : ''}</div>
+        <div>${(chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</div>
+        <div>${topicTitle || ''}</div>
+      </div>
+    </div>
+
+    <div class="cover-middle">
+      <div class="cover-subject">Mathematics Assessment</div>
+      <div class="cover-title" style="margin-bottom: 8px;">
+        ${(() => {
+          let yr = 'Year 10';
+          if (year && year.trim()) yr = year;
+          else if (chapterTitle.toLowerCase().includes('year 12')) yr = 'Year 12';
+          else if (chapterTitle.toLowerCase().includes('year 11')) yr = 'Year 11';
+          else if (chapterTitle.toLowerCase().includes('year 10')) yr = 'Year 10';
+          else if (chapterTitle.toLowerCase().includes('year 9')) yr = 'Year 9';
+          else if (chapterTitle.toLowerCase().includes('year 8')) yr = 'Year 8';
+          else if (chapterTitle.toLowerCase().includes('year 7')) yr = 'Year 7';
+          else if (chapterTitle.toLowerCase().includes('year 6')) yr = 'Year 6';
+
+          return yr + (course ? ` ${course}` : '');
+        })()}
+      </div>
+      <div class="cover-subtitle" style="font-size: 2.8rem; font-weight: 900; color: #1e1b4b; line-height: 1.15; margin-top: 4px; letter-spacing: -0.03em;">
+        ${(chapterTitle || 'Exam Paper').replace(/^Chapter\s+\d+:\s*/i, '')}
+      </div>
+    </div>
+
+    <div>
+      <div class="cover-instructions-box">
+        <div class="instructions-title">General Instructions</div>
+        <div class="time-allowance">
+          <div class="time-item">
+            <div class="time-label">Reading Time</div>
+            <div class="time-value">${readingTime} minutes</div>
+          </div>
+          <div class="time-item">
+            <div class="time-label">Working Time</div>
+            <div class="time-value">${workingTime} minutes</div>
+          </div>
+        </div>
+        <ol class="instructions-list">
+          <li>All questions may be attempted.</li>
+          <li>Write your answers in the spaces provided.</li>
+          <li>Show all necessary working out for questions.</li>
+          <li>Calculators may be used where appropriate.</li>
+        </ol>
+      </div>
+
+      <div class="cover-bottom">
+        <div class="topics-header">Topics Covered in this Paper</div>
+        <div class="topics-grid">
+          ${(() => {
+            const uniqueTopics = Array.from(new Set(questions.map(q => q.t || q.topicTitle || topicTitle).filter(Boolean)));
+            return uniqueTopics.map(t => `<div class="topic-bullet">${t}</div>`).join('');
+          })()}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="header-left">
+      <h1>${(year ? `${year}${course ? ` ${course}` : ''} — ` : '') + (chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</h1>
+      ${topicTitle ? `<div class="topic-line">${topicTitle} · ${questions.length} Questions</div>` : `<div class="topic-line">${questions.length} Questions</div>`}
+    </div>
+  </div>
+
+  ${questionsHtml}
+
+  <div class="footer">
+    Sapere – Question Bank Export
+  </div>
+
+  <!-- Fallback page footer for printing page numbers -->
+  <div class="page-footer"></div>
+`;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -745,116 +845,26 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
   </style>
 </head>
 <body>
-  <!-- Exam Cover Page -->
-  <div class="cover-page">
-    <div class="cover-top">
-      <div class="cover-logo-text" style="display: flex; align-items: stretch; gap: 14px; white-space: nowrap;">
-        <div style="width: 5px; background: #7c3aed; border-radius: 2px; flex-shrink: 0; min-height: 40px;"></div>
-        <div style="line-height: 1.2;">
-          <span style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.1em; display: block;">Sapere Aude</span>
-          <span style="font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.25em; opacity: 0.55; display: block; margin-top: 3px;">Academia</span>
-        </div>
-      </div>
-      <div class="cover-metadata">
-        <div>${year || (chapterTitle.toLowerCase().includes('year') ? '' : 'Year 10')} ${course ? `— ${course}` : ''}</div>
-        <div>${(chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</div>
-        <div>${topicTitle || ''}</div>
-      </div>
-    </div>
-
-    <div class="cover-middle">
-      <div class="cover-subject">Mathematics Assessment</div>
-      <div class="cover-title" style="margin-bottom: 8px;">
-        ${(() => {
-          let yr = 'Year 10';
-          if (year && year.trim()) yr = year;
-          else if (chapterTitle.toLowerCase().includes('year 12')) yr = 'Year 12';
-          else if (chapterTitle.toLowerCase().includes('year 11')) yr = 'Year 11';
-          else if (chapterTitle.toLowerCase().includes('year 10')) yr = 'Year 10';
-          else if (chapterTitle.toLowerCase().includes('year 9')) yr = 'Year 9';
-          else if (chapterTitle.toLowerCase().includes('year 8')) yr = 'Year 8';
-          else if (chapterTitle.toLowerCase().includes('year 7')) yr = 'Year 7';
-          else if (chapterTitle.toLowerCase().includes('year 6')) yr = 'Year 6';
-          
-          return yr + (course ? ` ${course}` : '');
-        })()}
-      </div>
-      <div class="cover-subtitle" style="font-size: 2.8rem; font-weight: 900; color: #1e1b4b; line-height: 1.15; margin-top: 4px; letter-spacing: -0.03em;">
-        ${(chapterTitle || 'Exam Paper').replace(/^Chapter\s+\d+:\s*/i, '')}
-      </div>
-    </div>
-
-    <div>
-      <div class="cover-instructions-box">
-        <div class="instructions-title">General Instructions</div>
-        <div class="time-allowance">
-          <div class="time-item">
-            <div class="time-label">Reading Time</div>
-            <div class="time-value">${readingTime} minutes</div>
-          </div>
-          <div class="time-item">
-            <div class="time-label">Working Time</div>
-            <div class="time-value">${workingTime} minutes</div>
-          </div>
-        </div>
-        <ol class="instructions-list">
-          <li>All questions may be attempted.</li>
-          <li>Write your answers in the spaces provided.</li>
-          <li>Show all necessary working out for questions.</li>
-          <li>Calculators may be used where appropriate.</li>
-        </ol>
-      </div>
-
-      <div class="cover-bottom">
-        <div class="topics-header">Topics Covered in this Paper</div>
-        <div class="topics-grid">
-          ${(() => {
-            const uniqueTopics = Array.from(new Set(questions.map(q => q.t || q.topicTitle || topicTitle).filter(Boolean)));
-            return uniqueTopics.map(t => `<div class="topic-bullet">${t}</div>`).join('');
-          })()}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="header">
-    <div class="header-left">
-      <h1>${(year ? `${year}${course ? ` ${course}` : ''} — ` : '') + (chapterTitle || '').replace(/^Chapter\s+\d+:\s*/i, '')}</h1>
-      ${topicTitle ? `<div class="topic-line">${topicTitle} · ${questions.length} Questions</div>` : `<div class="topic-line">${questions.length} Questions</div>`}
-    </div>
-  </div>
-
-  ${questionsHtml}
-
-  <div class="footer">
-    Sapere – Question Bank Export
-  </div>
+  ${bothVersions
+    ? `<div class="exam-doc" data-suffix="Student">${examDoc(renderQuestions(false))}</div>
+       <div class="exam-doc" data-suffix="Answers">${examDoc(renderQuestions(true))}</div>`
+    : `<div class="exam-doc" data-suffix="${showAnswers ? 'Answers' : 'Student'}">${examDoc(renderQuestions(showAnswers))}</div>`}
 
   <style>
     @keyframes pdf-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
   </style>
 
-  <!-- Fallback page footer for printing page numbers -->
-  <div class="page-footer"></div>
-
   <script>
-    // Trigger html2pdf to download the document after rendering
+    // Generate one downloadable PDF per .exam-doc, sequentially. The bothVersions
+    // case emits two docs (student paper + answer key) from a single window — this
+    // avoids the second-popup blocking that happens when opening two windows.
     window.addEventListener('load', function() {
       // Give KaTeX a moment to render the formulas nicely before generating PDF
       setTimeout(function() {
-        const filename = "${title.replace(/\s+/g, '_')}_${showAnswers ? 'Answers' : 'Student'}.pdf";
-        const element = document.body;
-        const opt = {
-          margin:       [15, 15, 20, 15],
-          filename:     filename,
-          image:        { type: 'jpeg', quality: 0.98 },
-          html2canvas:  { scale: 2, useCORS: true, letterRendering: true },
-          jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-          pagebreak:    { mode: ['css', 'legacy'] }
-        };
-        
-        // Generate and download PDF
-        html2pdf().set(opt).from(element).toPdf().get('pdf').then(function(pdf) {
+        const base = "${title.replace(/\s+/g, '_')}";
+        const docs = Array.prototype.slice.call(document.querySelectorAll('.exam-doc'));
+
+        function addPageNumbers(pdf) {
           const totalPages = pdf.internal.getNumberOfPages();
           for (let i = 1; i <= totalPages; i++) {
             if (i === 1) continue; // Skip cover page
@@ -867,10 +877,32 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
             // i - 1 because we skipped the cover page
             pdf.text(String(i - 1), pageWidth / 2, pageHeight - 10, { align: 'center' });
           }
-        }).save().catch(err => {
-          console.error("PDF generation failed, falling back to window.print():", err);
-          window.print();
-        });
+        }
+
+        function generate(index) {
+          if (index >= docs.length) return;
+          const el = docs[index];
+          const opt = {
+            margin:       [15, 15, 20, 15],
+            filename:     base + '_' + el.getAttribute('data-suffix') + '.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2, useCORS: true, letterRendering: true },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak:    { mode: ['css', 'legacy'] }
+          };
+          html2pdf().set(opt).from(el).toPdf().get('pdf').then(function(pdf) {
+            addPageNumbers(pdf);
+          }).save().then(function() {
+            // Stagger so the browser treats each as a distinct download.
+            setTimeout(function() { generate(index + 1); }, 900);
+          }).catch(function(err) {
+            console.error("PDF generation failed:", err);
+            if (docs.length === 1) { window.print(); return; }
+            setTimeout(function() { generate(index + 1); }, 900);
+          });
+        }
+
+        generate(0);
       }, 2000);
     });
   </script>

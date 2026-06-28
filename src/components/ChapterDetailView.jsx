@@ -192,16 +192,16 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
             </div>
             <button
               onClick={handleResetChapter}
-              disabled={resetting || overallPct === 0}
+              disabled={resetting || Object.keys(topicProgress).length === 0}
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '5px',
                 padding: '6px 12px', borderRadius: '10px',
                 border: `1.5px solid ${chapterAccent}40`,
                 background: 'rgba(255,255,255,0.7)',
-                color: overallPct === 0 ? '#cbd5e1' : chapterAccent,
+                color: Object.keys(topicProgress).length === 0 ? '#cbd5e1' : chapterAccent,
                 fontSize: '0.72rem', fontWeight: 800,
-                cursor: overallPct === 0 ? 'default' : 'pointer',
-                opacity: overallPct === 0 ? 0.5 : 1,
+                cursor: Object.keys(topicProgress).length === 0 ? 'default' : 'pointer',
+                opacity: Object.keys(topicProgress).length === 0 ? 0.5 : 1,
               }}
             >
               <RotateCcw size={12} />

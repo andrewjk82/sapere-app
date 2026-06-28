@@ -4227,7 +4227,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 4 \\pmod{7}.\\)",
+        "workingOut": "\\(G_m - 4\\text{ must be a multiple of } 7.\\)",
         "graphData": null
       },
       {
@@ -4548,7 +4548,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 3 \\pmod{5}.\\)",
+        "workingOut": "\\(G_m - 3\\text{ must be a multiple of } 5.\\)",
         "graphData": null
       },
       {
@@ -4869,7 +4869,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 4 \\pmod{7}.\\)",
+        "workingOut": "\\(G_m - 4\\text{ must be a multiple of } 7.\\)",
         "graphData": null
       },
       {
@@ -5190,7 +5190,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 5 \\pmod{7}.\\)",
+        "workingOut": "\\(G_m - 5\\text{ must be a multiple of } 7.\\)",
         "graphData": null
       },
       {
@@ -5511,7 +5511,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 3 \\pmod{5}.\\)",
+        "workingOut": "\\(G_m - 3\\text{ must be a multiple of } 5.\\)",
         "graphData": null
       },
       {
@@ -5832,7 +5832,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 5 \\pmod{11}.\\)",
+        "workingOut": "\\(G_m - 5\\text{ must be a multiple of } 11.\\)",
         "graphData": null
       },
       {
@@ -6153,7 +6153,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 2 \\pmod{5}.\\)",
+        "workingOut": "\\(G_m - 2\\text{ must be a multiple of } 5.\\)",
         "graphData": null
       },
       {
@@ -6474,7 +6474,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 4 \\pmod{9}.\\)",
+        "workingOut": "\\(G_m - 4\\text{ must be a multiple of } 9.\\)",
         "graphData": null
       },
       {
@@ -6795,7 +6795,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 5 \\pmod{7}.\\)",
+        "workingOut": "\\(G_m - 5\\text{ must be a multiple of } 7.\\)",
         "graphData": null
       },
       {
@@ -7116,7 +7116,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 5 \\pmod{5}.\\)",
+        "workingOut": "\\(G_m - 5\\text{ must be a multiple of } 5.\\)",
         "graphData": null
       },
       {
@@ -7437,7 +7437,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 3 \\pmod{5}.\\)",
+        "workingOut": "\\(G_m - 3\\text{ must be a multiple of } 5.\\)",
         "graphData": null
       },
       {
@@ -7758,7 +7758,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 5 \\pmod{7}.\\)",
+        "workingOut": "\\(G_m - 5\\text{ must be a multiple of } 7.\\)",
         "graphData": null
       },
       {
@@ -8079,7 +8079,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 5 \\pmod{9}.\\)",
+        "workingOut": "\\(G_m - 5\\text{ must be a multiple of } 9.\\)",
         "graphData": null
       },
       {
@@ -8400,7 +8400,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 4 \\pmod{9}.\\)",
+        "workingOut": "\\(G_m - 4\\text{ must be a multiple of } 9.\\)",
         "graphData": null
       },
       {
@@ -8721,7 +8721,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
-        "workingOut": "\\(\\text{We require } G_m \\equiv 5 \\pmod{5}.\\)",
+        "workingOut": "\\(G_m - 5\\text{ must be a multiple of } 5.\\)",
         "graphData": null
       },
       {
