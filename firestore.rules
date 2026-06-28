@@ -201,6 +201,12 @@ service cloud.firestore {
       }
     }
 
+    // Per-topic mastery progress (topicProgress/{uid}_{chapterId}_{topicId})
+    match /topicProgress/{docId} {
+      allow read: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow write: if isAdmin() || (isSignedIn() && request.resource.data.userId == request.auth.uid);
+    }
+
     // HSC question type definitions (read by all signed-in students)
     match /question_types/{typeId} {
       allow read: if isSignedIn();
