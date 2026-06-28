@@ -87,7 +87,7 @@ import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
 import { db, auth, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
-import { doc, onSnapshot, query, collection, orderBy, limit, updateDoc, deleteField } from 'firebase/firestore';
+import { doc, getDoc, onSnapshot, query, collection, orderBy, limit, updateDoc, deleteField } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
 import { getRandomConcept } from './data/keyConceptsData';
 import { localCache } from './services/localCacheService';
@@ -516,21 +516,28 @@ function App() {
     }
   }, [user?.uid, isAdmin, sharedProfile]);
 
-  // Real-time Version Check
+  // Version check: one-shot getDoc on load + poll every 30 min.
+  // A realtime listener here fires for every signed-in user and every
+  // anonymous visitor — switching to a periodic getDoc cuts that to
+  // a handful of reads per session instead of a permanent open socket.
   useEffect(() => {
-    const versionRef = doc(db, 'system_config', 'app');
-    return onSnapshot(versionRef, (snap) => {
-      if (snap.exists()) {
-        const cloudVersion = snap.data().version;
-        setCloudAppVersion(cloudVersion || '');
-        // Temporarily disable strict version checking to prevent infinite update loops
-        if (isNewer(cloudVersion, CURRENT_APP_VERSION)) {
-          setNewVersionAvailable(true);
+    const checkVersion = async () => {
+      try {
+        const snap = await getDoc(doc(db, 'system_config', 'app'));
+        if (snap.exists()) {
+          const cloudVersion = snap.data().version;
+          setCloudAppVersion(cloudVersion || '');
+          if (isNewer(cloudVersion, CURRENT_APP_VERSION)) {
+            setNewVersionAvailable(true);
+          }
         }
+      } catch (err) {
+        console.warn('[App] Version check failed:', err);
       }
-    }, (err) => {
-      console.warn('[App] System config listener failed:', err);
-    });
+    };
+    checkVersion();
+    const interval = setInterval(checkVersion, 30 * 60 * 1000);
+    return () => clearInterval(interval);
   }, []);
 
   const handleUpdateApp = useCallback(() => {

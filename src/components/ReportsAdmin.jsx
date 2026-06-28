@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
+import { collection, query, orderBy, getDocs, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { useAdminFeed } from '../context/AdminFeedContext';
 import { removeQuestionFromIndex } from '../services/questionIndexService';
@@ -114,30 +114,31 @@ const ReportsAdmin = () => {
     return null;
   };
 
-  useEffect(() => {
-    // Listen for Issue Reports
-    const qReports = query(collection(db, 'reports'), orderBy('createdAt', 'desc'), limit(ADMIN_REPORT_LIMIT));
-    const unsubReports = onSnapshot(qReports, (snapshot) => {
-      const data = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
-      setReports(data);
+  // One-shot fetch instead of a permanent onSnapshot subscription.
+  // AdminFeedContext already covers live badge counts and new-item toasts.
+  // We refresh after every mutating action so the list stays accurate.
+  const fetchReports = useCallback(async () => {
+    try {
+      const qReports = query(collection(db, 'reports'), orderBy('createdAt', 'desc'), limit(ADMIN_REPORT_LIMIT));
+      const snapshot = await getDocs(qReports);
+      setReports(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
+    } catch (err) {
+      console.error('Reports fetch error:', err);
+    } finally {
       setReportsLoading(false);
-    }, (err) => {
-      console.error("Reports subscription error:", err);
-      setReportsLoading(false);
-    });
-
-    return () => {
-      unsubReports();
-    };
+    }
   }, []);
+
+  useEffect(() => {
+    fetchReports();
+  }, [fetchReports]);
 
   const loading = viewMode === 'reports' ? reportsLoading : gradingLoading;
 
   const handleMarkResolved = async (reportId) => {
     try {
-      await updateDoc(doc(db, 'reports', reportId), {
-        status: 'resolved'
-      });
+      await updateDoc(doc(db, 'reports', reportId), { status: 'resolved' });
+      await fetchReports();
     } catch (err) {
       console.error('Error resolving report:', err);
     }
@@ -577,6 +578,7 @@ const ReportsAdmin = () => {
 
     try {
       await deleteDoc(doc(db, 'reports', reportId));
+      await fetchReports();
     } catch (err) {
       console.error('Error deleting report:', err);
       alert('Failed to delete report. Please try again.');
@@ -591,6 +593,7 @@ const ReportsAdmin = () => {
     try {
       setIsDeletingAll(true);
       await Promise.all(reports.map(report => deleteDoc(doc(db, 'reports', report.id))));
+      await fetchReports();
     } catch (err) {
       console.error('Error deleting reports:', err);
       alert('Failed to delete reports. Please try again.');

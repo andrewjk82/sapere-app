@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { localCache } from '../services/localCacheService';
@@ -7,6 +7,12 @@ import {
   getChallengeBootCacheKey,
   mergeChallengeBootCache,
 } from '../utils/challengeUtils';
+
+// Module-level cache: { [uid:date]: { daily, calc, fetchedAt } }
+// Prevents redundant Firestore reads when the component re-mounts or the user
+// switches between views rapidly. Invalidated after quiz finish (deriveStatus=false).
+const _historyCache = new Map();
+const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes
 
 /**
  * Fetches and reconciles challenge history (daily + calc) for a student.
@@ -32,6 +38,27 @@ export const useChallengeHistory = (uid, {
   const fetchHistory = useCallback(async ({ deriveStatus = true } = {}) => {
     if (!uid) return;
     const today = new Date().toLocaleDateString('en-CA');
+    const cacheKey = `${uid}:${today}`;
+
+    // After quiz finish (deriveStatus=false) we always re-fetch so fresh stats
+    // appear immediately. For regular view-switches, use the in-memory cache.
+    if (deriveStatus) {
+      const cached = _historyCache.get(cacheKey);
+      if (cached && Date.now() - cached.fetchedAt < CACHE_TTL_MS) {
+        const { daily: dailyData, calc: calcData } = cached;
+        const merged = [...dailyData, ...calcData]
+          .sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0))
+          .slice(0, 30);
+        setHistory(merged);
+        setDailyStats(dailyData);
+        setHistoryLoaded(true);
+        return;
+      }
+    } else {
+      // Invalidate cache so the next normal fetch gets fresh data
+      _historyCache.delete(cacheKey);
+    }
+
     try {
       const [dailySnap, calcSnap] = await Promise.all([
         getDocs(query(
@@ -48,6 +75,9 @@ export const useChallengeHistory = (uid, {
 
       const dailyData = dailySnap.docs.map(d => ({ id: d.id, statCollection: 'daily_stats', ...d.data() }));
       const calcData  = calcSnap.docs.map(d => ({ id: d.id, statCollection: 'calc_stats',  ...d.data() }));
+
+      // Store in module-level cache for rapid re-mounts / view switches
+      _historyCache.set(cacheKey, { daily: dailyData, calc: calcData, fetchedAt: Date.now() });
 
       const merged = [...dailyData, ...calcData]
         .sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0))
