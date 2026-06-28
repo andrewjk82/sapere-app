@@ -5,7 +5,6 @@ import {
   Circle, BookMarked, RotateCcw, GraduationCap
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, onSnapshot, writeBatch, getDocs, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
 import { hasLesson, getLesson } from '../lessons/registry';
 import LessonPlayer from './lessons/LessonPlayer';
@@ -56,59 +55,46 @@ const STATE = {
   unlocked: { label: 'Not started', accent: '#94a3b8', soft: '#f8fafc', border: '#e2e8f0', Icon: Circle },
 };
 
+// localStorage helpers (must match TopicPracticeSession)
+const lsKey = (uid, chapterId, topicId) => `sapere:tp:${uid}:${chapterId}:${topicId}`;
+const loadTopicMeta = (uid, chapterId, topicId) => {
+  try {
+    const raw = localStorage.getItem(`${lsKey(uid, chapterId, topicId)}:meta`);
+    return raw ? JSON.parse(raw) : null;
+  } catch { return null; }
+};
+
 const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopic }) => {
   const { user } = useAuth();
-  // topicProgress: { [topicId]: { progress, masteredIds, totalQuestions } }
+  // topicProgress: { [topicId]: { progress, masteredCount, totalQuestions } }
   const [topicProgress, setTopicProgress] = useState({});
   const [previewLesson, setPreviewLesson] = useState(null);
   const [resetting, setResetting] = useState(false);
 
-  // Load per-topic progress (live)
+  // Read per-topic progress from localStorage on mount and when returning
+  const refreshProgress = () => {
+    if (!user?.uid || !chapter?.topics) return;
+    const prog = {};
+    chapter.topics.forEach(t => {
+      const meta = loadTopicMeta(user.uid, chapter.id, t.id);
+      if (meta) prog[t.id] = meta;
+    });
+    setTopicProgress(prog);
+  };
+
   useEffect(() => {
-    if (!user?.uid) return;
-    const q = query(
-      collection(db, 'topicProgress'),
-      where('userId', '==', user.uid),
-      where('chapterId', '==', chapter.id)
-    );
-    const unsub = onSnapshot(q, (snap) => {
-      const prog = {};
-      snap.docs.forEach((d) => {
-        const data = d.data();
-        prog[data.topicId] = {
-          progress: data.progress || 0,
-          masteredIds: data.masteredIds || [],
-          totalQuestions: data.totalQuestions || 0,
-        };
-      });
-      setTopicProgress(prog);
-    }, () => {});
-    return unsub;
+    refreshProgress();
   }, [user?.uid, chapter.id]);
 
-  const handleResetChapter = async () => {
+  const handleResetChapter = () => {
     if (!user?.uid || resetting) return;
     setResetting(true);
     try {
-      const q = query(
-        collection(db, 'topicProgress'),
-        where('userId', '==', user.uid),
-        where('chapterId', '==', chapter.id)
-      );
-      const snap = await getDocs(q);
-      const batch = writeBatch(db);
-      snap.docs.forEach((d) => {
-        batch.set(d.ref, {
-          ...d.data(),
-          progress: 0,
-          masteredIds: [],
-          correctCount: 0,
-          updatedAt: serverTimestamp(),
-        }, { merge: true });
+      (chapter.topics || []).forEach(t => {
+        localStorage.removeItem(lsKey(user.uid, chapter.id, t.id));
+        localStorage.removeItem(`${lsKey(user.uid, chapter.id, t.id)}:meta`);
       });
-      await batch.commit();
-    } catch (e) {
-      console.error('Failed to reset chapter:', e);
+      setTopicProgress({});
     } finally {
       setResetting(false);
     }
@@ -124,7 +110,7 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
       );
       const entry = topicProgress?.[topic.id];
       const pct = entry?.progress || (state === 'done' ? 100 : 0);
-      const masteredCount = entry?.masteredIds?.length || 0;
+      const masteredCount = entry?.masteredCount || 0;
       const totalCount = entry?.totalQuestions || 0;
       const xpEarned = Math.round((pct / 100) * XP_PER_TOPIC);
       return { ...topic, idx, state, pct, masteredCount, totalCount, xpEarned };

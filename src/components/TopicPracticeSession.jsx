@@ -6,7 +6,25 @@ import {
   Lightbulb, Check, X, Flag,
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, getDoc, setDoc, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, addDoc, serverTimestamp } from 'firebase/firestore';
+
+// localStorage helpers for per-topic mastery (zero Firestore reads/writes)
+const lsKey = (uid, chapterId, topicId) => `sapere:tp:${uid}:${chapterId}:${topicId}`;
+const loadMastered = (uid, chapterId, topicId) => {
+  try {
+    const raw = localStorage.getItem(lsKey(uid, chapterId, topicId));
+    return raw ? new Set(JSON.parse(raw)) : new Set();
+  } catch { return new Set(); }
+};
+const saveMastered = (uid, chapterId, topicId, masteredSet, totalQuestions) => {
+  try {
+    const ids = [...masteredSet];
+    localStorage.setItem(lsKey(uid, chapterId, topicId), JSON.stringify(ids));
+    // Also write a lightweight summary so ChapterDetailView can read progress
+    const pct = totalQuestions > 0 ? Math.round((ids.length / totalQuestions) * 100) : 0;
+    localStorage.setItem(`${lsKey(uid, chapterId, topicId)}:meta`, JSON.stringify({ progress: pct, masteredCount: ids.length, totalQuestions }));
+  } catch { /* storage full — ignore */ }
+};
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import MathView from './MathView';
@@ -176,17 +194,10 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
           .map((d) => ({ id: d.id, ...d.data() }))
           .filter((q) => q.isActive !== false && q.topicId === topic.id);
 
-        // Load existing mastered IDs from topicProgress
-        let existingMastered = new Set();
-        if (user?.uid) {
-          try {
-            const progressSnap = await getDoc(doc(db, 'topicProgress', `${user.uid}_${chapter.id}_${topic.id}`));
-            if (progressSnap.exists()) {
-              const data = progressSnap.data();
-              existingMastered = new Set((data.masteredIds || []).map(String));
-            }
-          } catch { /* non-fatal */ }
-        }
+        // Load existing mastered IDs from localStorage (no Firestore read needed)
+        const existingMastered = user?.uid
+          ? loadMastered(user.uid, chapter.id, topic.id)
+          : new Set();
 
         if (!cancelled) {
           setAllTopicQuestions(all);
@@ -267,24 +278,9 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     // Progress = % of all topic questions mastered
     const overallPct = totalInTopic > 0 ? Math.round((masteredCount / totalInTopic) * 100) : pct;
 
+    // Save to localStorage — zero Firestore cost
     if (user?.uid) {
-      try {
-        const ref = doc(db, 'topicProgress', `${user.uid}_${chapter.id}_${topic.id}`);
-        await setDoc(ref, {
-          userId: user.uid,
-          chapterId: chapter.id,
-          topicId: topic.id,
-          progress: overallPct,
-          masteredIds: [...updatedMastered],
-          totalQuestions: totalInTopic,
-          correctCount: masteredCount,
-          totalCount: totalInTopic,
-          xpEarned: xp,
-          updatedAt: serverTimestamp(),
-        }, { merge: true });
-      } catch (e) {
-        console.error('Failed to save topic progress:', e);
-      }
+      saveMastered(user.uid, chapter.id, topic.id, updatedMastered, totalInTopic);
     }
 
     setView('done');
