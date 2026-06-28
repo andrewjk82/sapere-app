@@ -1309,6 +1309,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   const [hasMoreQuestions, setHasMoreQuestions] = useState(false);
   const [isFormOpen, setIsFormOpen] = useState(!!directEditQuestion);
   const [editingQuestion, setEditingQuestion] = useState(directEditQuestion ? directEditQuestion.id : null);
+  const [editingQuestionChapterId, setEditingQuestionChapterId] = useState(directEditQuestion ? directEditQuestion.chapterId : null);
 
   // Form State
   const [formData, setFormData] = useState({
@@ -1445,6 +1446,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         acceptedAnswers: Array.isArray(q.acceptedAnswers) ? q.acceptedAnswers : [],
       });
       setEditingQuestion(q.id);
+      setEditingQuestionChapterId(q.chapterId || null);
     } else {
       setFormData({
         title: `Question ${questions.length + 1}`,
@@ -1471,6 +1473,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         graphData: ''
       });
       setEditingQuestion(null);
+      setEditingQuestionChapterId(null);
     }
     setIsFormOpen(true);
   };
@@ -1632,7 +1635,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         stampCountsVersion(bankVersion);
       }
       // Keep the per-chapter random-sampling index in sync (non-fatal).
-      syncQuestionIndexOnSave({ questionId: savedQuestionId, chapterId, isActive: true, version: bankVersion })
+      syncQuestionIndexOnSave({ questionId: savedQuestionId, chapterId, prevChapterId: editingQuestionChapterId || undefined, isActive: true, version: bankVersion })
         .catch((err) => console.warn('question index sync failed:', err?.code || err));
 
       questionBankSessionCache.delete(`questions:${chapterId}`);

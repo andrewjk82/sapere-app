@@ -873,9 +873,11 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
 
     if (isGraphSketch) {
       setIsSubmittingCanvas(true);
-      // Graph submissions must carry an image for manual review even when ink
-      // detection misses a stroke after recent traffic-saving changes.
-      if (!canvasDataUrl && canvasRef.current) {
+      // force: true 재시도 — hasContent()가 true인 경우에만.
+      // hasContent가 false인데 force=true 하면 배경선만 있는 빈 흰 캔버스가
+      // 저장되어 선생님이 빈 화면을 보게 됨.
+      const hasInk = canvasRef.current?.hasContent?.() ?? false;
+      if (!canvasDataUrl && canvasRef.current && hasInk) {
         try {
           canvasPageImages = await canvasExportWithTimeout(() => Promise.resolve(canvasRef.current.exportPageImages?.({ force: true }) || []));
           canvasDataUrl = canvasPageImages[0] || await canvasExportWithTimeout(() => Promise.resolve(canvasRef.current.exportImage?.({ force: true })));

@@ -171,9 +171,30 @@ export const selectDailyQuestions = async (uid, questionCount) => {
   };
 
   let undoneMap = getUndone(chapter_pools);
+
+  // 챕터별 개별 리셋: undone이 0인 챕터는 그 챕터만 done 초기화.
+  // 이렇게 해야 Ch7처럼 문제가 많은 챕터에 deficit이 몰리지 않고
+  // 각 챕터가 독립적으로 순환한다.
+  const perChapterReset = {};
+  chapterIds.forEach((cid) => {
+    if (undoneMap[cid].length === 0 && (chapter_pools[cid].ids || []).length > 0) {
+      perChapterReset[cid] = { ...chapter_pools[cid], done: [] };
+    }
+  });
+  if (Object.keys(perChapterReset).length > 0) {
+    const resetPools = { ...chapter_pools, ...perChapterReset };
+    const updatedData = { ...data, chapter_pools: resetPools, updatedAt: serverTimestamp() };
+    await setDoc(poolRef(uid), updatedData, { merge: false });
+    chapter_pools = resetPools;
+    data = updatedData;
+    undoneMap = getUndone(chapter_pools);
+    // 캐시도 반드시 갱신 — 안 하면 updatePoolAfterQuiz가 stale 캐시로 리셋을 덮어씀
+    if (data.curriculumSignature) setCached(uid, data.curriculumSignature, data);
+  }
+
   let totalUndone = Object.values(undoneMap).reduce((s, arr) => s + arr.length, 0);
 
-  // 전체 소진 → 리셋
+  // 전체 소진 (챕터 자체에 문제가 아예 없는 경우 등 극단적 케이스) → 전체 리셋
   if (totalUndone < questionCount) {
     const resetPools = {};
     chapterIds.forEach((cid) => {
@@ -204,15 +225,18 @@ export const selectDailyQuestions = async (uid, questionCount) => {
     return ra - rb; // 오름차순 = 약점 먼저
   });
 
-  // 균등 배분
-  const numChapters = chapterIds.length;
+  // 균등 배분 — 문제가 없는 빈 챕터(ids=0)는 배분 계산에서 제외.
+  // 포함하면 빈 챕터 수만큼 deficit이 생겨 특정 챕터에 문제가 몰린다.
+  const activeChapterIds = chapterIds.filter((cid) => (chapter_pools[cid]?.ids || []).length > 0);
+  const numChapters = activeChapterIds.length || 1;
   const basePerChapter = Math.floor(actualCount / numChapters);
   const remainder = actualCount % numChapters;
 
   const targets = {};
-  chapterIds.forEach((cid) => { targets[cid] = basePerChapter; });
+  chapterIds.forEach((cid) => { targets[cid] = 0; }); // 빈 챕터는 0으로 초기화
+  activeChapterIds.forEach((cid) => { targets[cid] = basePerChapter; });
   // 나머지는 가장 약한 챕터부터 +1
-  sortedByWeakness.slice(0, remainder).forEach((cid) => { targets[cid] += 1; });
+  sortedByWeakness.filter((cid) => activeChapterIds.includes(cid)).slice(0, remainder).forEach((cid) => { targets[cid] += 1; });
 
   // undone < target인 챕터 → 가능한 만큼만, deficit 계산
   let totalDeficit = 0;
@@ -238,13 +262,35 @@ export const selectDailyQuestions = async (uid, questionCount) => {
   }
 
   // 최종 선택 (챕터 내 셔플, 전체도 셔플)
+  // globalSeen으로 교차-챕터 중복을 막고, 중복으로 빠진 만큼 다른 챕터 여분에서 보충.
   const chapterBreakdown = {};
   const allSelected = [];
+  const globalSeen = new Set();
+  const shuffledUndone = {}; // 챕터별 셔플된 undone 목록 (보충 시 재사용)
+
   chapterIds.forEach((cid) => {
-    const picked = shuffle(undoneMap[cid]).slice(0, targets[cid]);
+    shuffledUndone[cid] = shuffle(undoneMap[cid]);
+    const picked = shuffledUndone[cid]
+      .filter((id) => !globalSeen.has(id))
+      .slice(0, targets[cid]);
+    picked.forEach((id) => globalSeen.add(id));
     chapterBreakdown[cid] = picked;
     allSelected.push(...picked);
   });
+
+  // 중복 제거로 모자란 만큼 → 약점 챕터 순으로 여분에서 보충
+  let deficit = actualCount - allSelected.length;
+  if (deficit > 0) {
+    for (const cid of sortedByWeakness) {
+      if (deficit <= 0) break;
+      const extras = shuffledUndone[cid].filter((id) => !globalSeen.has(id));
+      const take = extras.slice(0, deficit);
+      take.forEach((id) => globalSeen.add(id));
+      chapterBreakdown[cid] = [...(chapterBreakdown[cid] || []), ...take];
+      allSelected.push(...take);
+      deficit -= take.length;
+    }
+  }
 
   return {
     selectedIds: shuffle(allSelected),

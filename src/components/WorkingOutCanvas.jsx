@@ -857,18 +857,32 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       return tempCanvas.toDataURL('image/png');
     };
 
+    // 캡처 시점에 아직 finalizeStroke 안 된 진행 중 스트로크도 포함.
+    // setStrokes가 큐에 있어도 React re-render 전에 submit하면 누락될 수 있음.
+    const getCurrentPageStrokes = () => {
+      const inProgress = currentStrokeRef.current;
+      const committed = strokesRef.current;
+      if (inProgress && !inProgress.isEraser && inProgress.points?.length > 0) {
+        return [...committed, { ...inProgress, completed: true }];
+      }
+      return committed;
+    };
+
     return {
       hasContent: () => {
         const all = [...pages];
-        all[currentPage] = strokesRef.current;
+        all[currentPage] = getCurrentPageStrokes();
         return all.some(pageHasInk);
       },
-      exportImage: ({ force = false } = {}) => Promise.resolve(
-        (force || pageHasInk(strokesRef.current)) ? getCompositeDataURL(strokesRef.current) : null
-      ),
+      exportImage: ({ force = false } = {}) => {
+        const pageStrokes = getCurrentPageStrokes();
+        return Promise.resolve(
+          (force || pageHasInk(pageStrokes)) ? getCompositeDataURL(pageStrokes) : null
+        );
+      },
       exportPageImages: async ({ force = false } = {}) => {
         const all = [...pages];
-        all[currentPage] = strokesRef.current;
+        all[currentPage] = getCurrentPageStrokes();
         return all
           .filter((ps, index) => force ? index === currentPage || pageHasInk(ps) : pageHasInk(ps))
           .map(ps => getCompositeDataURL(ps || []));
