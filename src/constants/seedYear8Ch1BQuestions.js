@@ -1,33 +1,3015 @@
 export const Y8_CH1B_QUESTIONS = [
   {
+    "id": "y8-1b-backup-q1",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(8 \\times 12 \\times 5 \\times 3\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "1440",
+        "imageUrl": ""
+      },
+      {
+        "text": "1340",
+        "imageUrl": ""
+      },
+      {
+        "text": "1540",
+        "imageUrl": ""
+      },
+      {
+        "text": "1420",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(8 \\times 12 \\times 5 \\times 3\\\\)",
+    "solution": "1440",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(8 \\times 12 \\times 5 \\times 3\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 8 \\times 12 \\times 5 \\times 3 = 1440\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 1440\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q2",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(12 \\times 25 \\times 11 \\times 4\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "13200",
+        "imageUrl": ""
+      },
+      {
+        "text": "12200",
+        "imageUrl": ""
+      },
+      {
+        "text": "14200",
+        "imageUrl": ""
+      },
+      {
+        "text": "13100",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(12 \\times 25 \\times 11 \\times 4\\\\)",
+    "solution": "13200",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(12 \\times 25 \\times 11 \\times 4\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 12 \\times 25 \\times 11 \\times 4 = 13200\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 13200\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q3",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(15 \\times 9 \\times 4\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "540",
+        "imageUrl": ""
+      },
+      {
+        "text": "440",
+        "imageUrl": ""
+      },
+      {
+        "text": "640",
+        "imageUrl": ""
+      },
+      {
+        "text": "520",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(15 \\times 9 \\times 4\\\\)",
+    "solution": "540",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(15 \\times 9 \\times 4\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 15 \\times 9 \\times 4 = 540\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 540\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q4",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(35 \\times 11 \\times 2\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "770",
+        "imageUrl": ""
+      },
+      {
+        "text": "670",
+        "imageUrl": ""
+      },
+      {
+        "text": "870",
+        "imageUrl": ""
+      },
+      {
+        "text": "760",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(35 \\times 11 \\times 2\\\\)",
+    "solution": "770",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(35 \\times 11 \\times 2\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 35 \\times 11 \\times 2 = 770\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 770\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q5",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(25 \\times 14 \\times 4\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "1400",
+        "imageUrl": ""
+      },
+      {
+        "text": "1300",
+        "imageUrl": ""
+      },
+      {
+        "text": "1500",
+        "imageUrl": ""
+      },
+      {
+        "text": "1410",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(25 \\times 14 \\times 4\\\\)",
+    "solution": "1400",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(25 \\times 14 \\times 4\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 25 \\times 14 \\times 4 = 1400\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 1400\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q6",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(45 \\times 7 \\times 2\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "630",
+        "imageUrl": ""
+      },
+      {
+        "text": "530",
+        "imageUrl": ""
+      },
+      {
+        "text": "730",
+        "imageUrl": ""
+      },
+      {
+        "text": "620",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(45 \\times 7 \\times 2\\\\)",
+    "solution": "630",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(45 \\times 7 \\times 2\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 45 \\times 7 \\times 2 = 630\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 630\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q7",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(21 \\times 33\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "693",
+        "imageUrl": ""
+      },
+      {
+        "text": "683",
+        "imageUrl": ""
+      },
+      {
+        "text": "703",
+        "imageUrl": ""
+      },
+      {
+        "text": "673",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(21 \\times 33\\\\) mentally",
+    "solution": "693",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(21 \\times 33\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 21 \\times 33 mentally = 693\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 693\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q8",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(18 \\times 28\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "504",
+        "imageUrl": ""
+      },
+      {
+        "text": "404",
+        "imageUrl": ""
+      },
+      {
+        "text": "514",
+        "imageUrl": ""
+      },
+      {
+        "text": "494",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(18 \\times 28\\\\) mentally",
+    "solution": "504",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(18 \\times 28\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 18 \\times 28 mentally = 504\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 504\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q9",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(42 \\times 16\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "672",
+        "imageUrl": ""
+      },
+      {
+        "text": "572",
+        "imageUrl": ""
+      },
+      {
+        "text": "682",
+        "imageUrl": ""
+      },
+      {
+        "text": "662",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(42 \\times 16\\\\) mentally",
+    "solution": "672",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(42 \\times 16\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 42 \\times 16 mentally = 672\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 672\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q10",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(49 \\times 34\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "1666",
+        "imageUrl": ""
+      },
+      {
+        "text": "1566",
+        "imageUrl": ""
+      },
+      {
+        "text": "1766",
+        "imageUrl": ""
+      },
+      {
+        "text": "1656",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(49 \\times 34\\\\) mentally",
+    "solution": "1666",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(49 \\times 34\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 49 \\times 34 mentally = 1666\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 1666\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q11",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(51 \\times 12\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "612",
+        "imageUrl": ""
+      },
+      {
+        "text": "512",
+        "imageUrl": ""
+      },
+      {
+        "text": "712",
+        "imageUrl": ""
+      },
+      {
+        "text": "602",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(51 \\times 12\\\\) mentally",
+    "solution": "612",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(51 \\times 12\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 51 \\times 12 mentally = 612\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 612\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q12",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(39 \\times 15\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "585",
+        "imageUrl": ""
+      },
+      {
+        "text": "485",
+        "imageUrl": ""
+      },
+      {
+        "text": "685",
+        "imageUrl": ""
+      },
+      {
+        "text": "575",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(39 \\times 15\\\\) mentally",
+    "solution": "585",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(39 \\times 15\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 39 \\times 15 mentally = 585\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 585\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q13",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(749 \\div 7\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "107",
+        "imageUrl": ""
+      },
+      {
+        "text": "109",
+        "imageUrl": ""
+      },
+      {
+        "text": "106",
+        "imageUrl": ""
+      },
+      {
+        "text": "108",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(749 \\div 7\\\\) mentally",
+    "solution": "107",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(749 \\div 7\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 749 \\div 7 mentally = 107\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 107\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q14",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(352 \\div 4\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "88",
+        "imageUrl": ""
+      },
+      {
+        "text": "84",
+        "imageUrl": ""
+      },
+      {
+        "text": "92",
+        "imageUrl": ""
+      },
+      {
+        "text": "86",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(352 \\div 4\\\\) mentally",
+    "solution": "88",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(352 \\div 4\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 352 \\div 4 mentally = 88\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 88\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q15",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(1272 \\div 12\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "106",
+        "imageUrl": ""
+      },
+      {
+        "text": "105",
+        "imageUrl": ""
+      },
+      {
+        "text": "107",
+        "imageUrl": ""
+      },
+      {
+        "text": "116",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1272 \\div 12\\\\) mentally",
+    "solution": "106",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(1272 \\div 12\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 1272 \\div 12 mentally = 106\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 106\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q16",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(2964 \\div 6\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "494",
+        "imageUrl": ""
+      },
+      {
+        "text": "484",
+        "imageUrl": ""
+      },
+      {
+        "text": "504",
+        "imageUrl": ""
+      },
+      {
+        "text": "496",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(2964 \\div 6\\\\) mentally",
+    "solution": "494",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(2964 \\div 6\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 2964 \\div 6 mentally = 494\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 494\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q17",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(455 \\div 5\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "91",
+        "imageUrl": ""
+      },
+      {
+        "text": "81",
+        "imageUrl": ""
+      },
+      {
+        "text": "101",
+        "imageUrl": ""
+      },
+      {
+        "text": "90",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(455 \\div 5\\\\) mentally",
+    "solution": "91",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(455 \\div 5\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 455 \\div 5 mentally = 91\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 91\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q18",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(819 \\div 9\\\\) mentally",
+    "answer": "0",
+    "options": [
+      {
+        "text": "91",
+        "imageUrl": ""
+      },
+      {
+        "text": "81",
+        "imageUrl": ""
+      },
+      {
+        "text": "101",
+        "imageUrl": ""
+      },
+      {
+        "text": "92",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(819 \\div 9\\\\) mentally",
+    "solution": "91",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(819 \\div 9\\\\) mentally"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 819 \\div 9 mentally = 91\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 91\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q19",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(165 \\div 7\\\\) quotient and remainder",
+    "answer": "0",
+    "options": [
+      {
+        "text": "23 rem 4",
+        "imageUrl": ""
+      },
+      {
+        "text": "23 rem 3",
+        "imageUrl": ""
+      },
+      {
+        "text": "24 rem 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "22 rem 5",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(165 \\div 7\\\\) quotient and remainder",
+    "solution": "23 r 4",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(165 \\div 7\\\\) quotient and remainder"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 165 \\div 7  = 23 r 4\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 23 r 4\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q20",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(441 \\div 9\\\\) quotient and remainder",
+    "answer": "0",
+    "options": [
+      {
+        "text": "49 rem 0",
+        "imageUrl": ""
+      },
+      {
+        "text": "48 rem 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "50 rem 0",
+        "imageUrl": ""
+      },
+      {
+        "text": "49 rem 1",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(441 \\div 9\\\\) quotient and remainder",
+    "solution": "49",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(441 \\div 9\\\\) quotient and remainder"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 441 \\div 9  = 49\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 49\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q21",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(800 \\div 12\\\\) quotient and remainder",
+    "answer": "0",
+    "options": [
+      {
+        "text": "66 rem 8",
+        "imageUrl": ""
+      },
+      {
+        "text": "66 rem 6",
+        "imageUrl": ""
+      },
+      {
+        "text": "67 rem 2",
+        "imageUrl": ""
+      },
+      {
+        "text": "65 rem 10",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(800 \\div 12\\\\) quotient and remainder",
+    "solution": "66 r 8",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(800 \\div 12\\\\) quotient and remainder"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 800 \\div 12  = 66 r 8\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 66 r 8\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q22",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(1244 \\div 11\\\\) quotient and remainder",
+    "answer": "0",
+    "options": [
+      {
+        "text": "113 rem 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "112 rem 12",
+        "imageUrl": ""
+      },
+      {
+        "text": "114 rem 0",
+        "imageUrl": ""
+      },
+      {
+        "text": "113 rem 2",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1244 \\div 11\\\\) quotient and remainder",
+    "solution": "113 r 1",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(1244 \\div 11\\\\) quotient and remainder"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 1244 \\div 11  = 113 r 1\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 113 r 1\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q23",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(250 \\div 8\\\\) quotient and remainder",
+    "answer": "0",
+    "options": [
+      {
+        "text": "31 rem 2",
+        "imageUrl": ""
+      },
+      {
+        "text": "31 rem 4",
+        "imageUrl": ""
+      },
+      {
+        "text": "30 rem 10",
+        "imageUrl": ""
+      },
+      {
+        "text": "32 rem 0",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(250 \\div 8\\\\) quotient and remainder",
+    "solution": "31 r 2",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(250 \\div 8\\\\) quotient and remainder"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 250 \\div 8  = 31 r 2\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 31 r 2\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q24",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(567 \\div 15\\\\) quotient and remainder",
+    "answer": "0",
+    "options": [
+      {
+        "text": "37 rem 12",
+        "imageUrl": ""
+      },
+      {
+        "text": "37 rem 10",
+        "imageUrl": ""
+      },
+      {
+        "text": "38 rem 2",
+        "imageUrl": ""
+      },
+      {
+        "text": "36 rem 17",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(567 \\div 15\\\\) quotient and remainder",
+    "solution": "37 r 12",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(567 \\div 15\\\\) quotient and remainder"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 567 \\div 15  = 37 r 12\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 37 r 12\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q25",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(353 \\times 14\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "4942",
+        "imageUrl": ""
+      },
+      {
+        "text": "4842",
+        "imageUrl": ""
+      },
+      {
+        "text": "5042",
+        "imageUrl": ""
+      },
+      {
+        "text": "4932",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(353 \\times 14\\\\)",
+    "solution": "4942",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(353 \\times 14\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 353 \\times 14 = 4942\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 4942\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q26",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(572 \\times 29\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "16588",
+        "imageUrl": ""
+      },
+      {
+        "text": "16488",
+        "imageUrl": ""
+      },
+      {
+        "text": "16688",
+        "imageUrl": ""
+      },
+      {
+        "text": "15588",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(572 \\times 29\\\\)",
+    "solution": "16588",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(572 \\times 29\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 572 \\times 29 = 16588\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 16588\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q27",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(186 \\times 79\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "14694",
+        "imageUrl": ""
+      },
+      {
+        "text": "14594",
+        "imageUrl": ""
+      },
+      {
+        "text": "14794",
+        "imageUrl": ""
+      },
+      {
+        "text": "13694",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(186 \\times 79\\\\)",
+    "solution": "14694",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(186 \\times 79\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 186 \\times 79 = 14694\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 14694\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q28",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(612 \\times 49\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "29988",
+        "imageUrl": ""
+      },
+      {
+        "text": "28988",
+        "imageUrl": ""
+      },
+      {
+        "text": "30988",
+        "imageUrl": ""
+      },
+      {
+        "text": "29888",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(612 \\times 49\\\\)",
+    "solution": "29988",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(612 \\times 49\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 612 \\times 49 = 29988\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 29988\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q29",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(432 \\times 88\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "38016",
+        "imageUrl": ""
+      },
+      {
+        "text": "37016",
+        "imageUrl": ""
+      },
+      {
+        "text": "38116",
+        "imageUrl": ""
+      },
+      {
+        "text": "39016",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(432 \\times 88\\\\)",
+    "solution": "38016",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(432 \\times 88\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 432 \\times 88 = 38016\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 38016\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q30",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(895 \\times 35\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "31325",
+        "imageUrl": ""
+      },
+      {
+        "text": "31425",
+        "imageUrl": ""
+      },
+      {
+        "text": "30325",
+        "imageUrl": ""
+      },
+      {
+        "text": "32325",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(895 \\times 35\\\\)",
+    "solution": "31325",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(895 \\times 35\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 895 \\times 35 = 31325\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 31325\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q31",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(135 \\times 36\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "4860",
+        "imageUrl": ""
+      },
+      {
+        "text": "4760",
+        "imageUrl": ""
+      },
+      {
+        "text": "4960",
+        "imageUrl": ""
+      },
+      {
+        "text": "4660",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(135 \\times 36\\\\)",
+    "solution": "4860",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(135 \\times 36\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 135 \\times 36 = 4860\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 4860\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q32",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(936 \\times 24\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "22464",
+        "imageUrl": ""
+      },
+      {
+        "text": "22364",
+        "imageUrl": ""
+      },
+      {
+        "text": "22564",
+        "imageUrl": ""
+      },
+      {
+        "text": "21464",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(936 \\times 24\\\\)",
+    "solution": "22464",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(936 \\times 24\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 936 \\times 24 = 22464\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 22464\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q33",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(506 \\times 56\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "28336",
+        "imageUrl": ""
+      },
+      {
+        "text": "27336",
+        "imageUrl": ""
+      },
+      {
+        "text": "28436",
+        "imageUrl": ""
+      },
+      {
+        "text": "29336",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(506 \\times 56\\\\)",
+    "solution": "28336",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(506 \\times 56\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 506 \\times 56 = 28336\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 28336\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q34",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate: \\\\(506 \\times 66\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "33396",
+        "imageUrl": ""
+      },
+      {
+        "text": "32396",
+        "imageUrl": ""
+      },
+      {
+        "text": "33496",
+        "imageUrl": ""
+      },
+      {
+        "text": "34396",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate: \\\\(506 \\times 66\\\\)",
+    "solution": "33396",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate: \\\\(506 \\times 66\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(: 506 \\times 66 = 33396\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 33396\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q35",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(556 \\div 2\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "278",
+        "imageUrl": ""
+      },
+      {
+        "text": "276",
+        "imageUrl": ""
+      },
+      {
+        "text": "288",
+        "imageUrl": ""
+      },
+      {
+        "text": "268",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(556 \\div 2\\\\)",
+    "solution": "278",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(556 \\div 2\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 556 \\div 2 = 278\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 278\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q36",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(540 \\div 4\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "135",
+        "imageUrl": ""
+      },
+      {
+        "text": "125",
+        "imageUrl": ""
+      },
+      {
+        "text": "145",
+        "imageUrl": ""
+      },
+      {
+        "text": "130",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(540 \\div 4\\\\)",
+    "solution": "135",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(540 \\div 4\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 540 \\div 4 = 135\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 135\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q37",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(8624 \\div 8\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "1078",
+        "imageUrl": ""
+      },
+      {
+        "text": "1088",
+        "imageUrl": ""
+      },
+      {
+        "text": "1068",
+        "imageUrl": ""
+      },
+      {
+        "text": "178",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(8624 \\div 8\\\\)",
+    "solution": "1078",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(8624 \\div 8\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 8624 \\div 8 = 1078\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 1078\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q38",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(498 \\div 6\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "83",
+        "imageUrl": ""
+      },
+      {
+        "text": "81",
+        "imageUrl": ""
+      },
+      {
+        "text": "85",
+        "imageUrl": ""
+      },
+      {
+        "text": "73",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(498 \\div 6\\\\)",
+    "solution": "83",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(498 \\div 6\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 498 \\div 6 = 83\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 83\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q39",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(4050 \\div 6\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "675",
+        "imageUrl": ""
+      },
+      {
+        "text": "665",
+        "imageUrl": ""
+      },
+      {
+        "text": "685",
+        "imageUrl": ""
+      },
+      {
+        "text": "655",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(4050 \\div 6\\\\)",
+    "solution": "675",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(4050 \\div 6\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 4050 \\div 6 = 675\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 675\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q40",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(1496 \\div 11\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "136",
+        "imageUrl": ""
+      },
+      {
+        "text": "126",
+        "imageUrl": ""
+      },
+      {
+        "text": "146",
+        "imageUrl": ""
+      },
+      {
+        "text": "134",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1496 \\div 11\\\\)",
+    "solution": "136",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(1496 \\div 11\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 1496 \\div 11 = 136\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 136\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q41",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(78093 \\div 9\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "8677",
+        "imageUrl": ""
+      },
+      {
+        "text": "8667",
+        "imageUrl": ""
+      },
+      {
+        "text": "8777",
+        "imageUrl": ""
+      },
+      {
+        "text": "8577",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(78093 \\div 9\\\\)",
+    "solution": "8677",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(78093 \\div 9\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 78093 \\div 9 = 8677\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 8677\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q42",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(39240 \\div 9\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "4360",
+        "imageUrl": ""
+      },
+      {
+        "text": "4260",
+        "imageUrl": ""
+      },
+      {
+        "text": "4460",
+        "imageUrl": ""
+      },
+      {
+        "text": "4350",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(39240 \\div 9\\\\)",
+    "solution": "4360",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(39240 \\div 9\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 39240 \\div 9 = 4360\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 4360\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q43",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(6005 \\div 7\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "857 r 6",
+        "imageUrl": ""
+      },
+      {
+        "text": "857 r 5",
+        "imageUrl": ""
+      },
+      {
+        "text": "858",
+        "imageUrl": ""
+      },
+      {
+        "text": "847",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(6005 \\div 7\\\\)",
+    "solution": "857 r 6",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(6005 \\div 7\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 6005 \\div 7 = 857 r 6\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 857 r 6\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q44",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(9756 \\div 12\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "813",
+        "imageUrl": ""
+      },
+      {
+        "text": "812",
+        "imageUrl": ""
+      },
+      {
+        "text": "823",
+        "imageUrl": ""
+      },
+      {
+        "text": "803",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(9756 \\div 12\\\\)",
+    "solution": "813",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(9756 \\div 12\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 9756 \\div 12 = 813\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 813\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q45",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(828 \\div 13\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "63 rem 9",
+        "imageUrl": ""
+      },
+      {
+        "text": "63 rem 7",
+        "imageUrl": ""
+      },
+      {
+        "text": "64 rem 2",
+        "imageUrl": ""
+      },
+      {
+        "text": "62 rem 10",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(828 \\div 13\\\\)",
+    "solution": "63 r 9",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(828 \\div 13\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 828 \\div 13 = 63 r 9\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 63 r 9\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q46",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(1050 \\div 16\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "65 r 10",
+        "imageUrl": ""
+      },
+      {
+        "text": "65 r 8",
+        "imageUrl": ""
+      },
+      {
+        "text": "66",
+        "imageUrl": ""
+      },
+      {
+        "text": "64",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1050 \\div 16\\\\)",
+    "solution": "65 r 10",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(1050 \\div 16\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 1050 \\div 16 = 65 r 10\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 65 r 10\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q47",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(2344 \\div 16\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "146 r 8",
+        "imageUrl": ""
+      },
+      {
+        "text": "146 r 4",
+        "imageUrl": ""
+      },
+      {
+        "text": "147",
+        "imageUrl": ""
+      },
+      {
+        "text": "145",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(2344 \\div 16\\\\)",
+    "solution": "146 r 8",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(2344 \\div 16\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 2344 \\div 16 = 146 r 8\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 146 r 8\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q48",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(8554 \\div 17\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "503 r 3",
+        "imageUrl": ""
+      },
+      {
+        "text": "503 r 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "504",
+        "imageUrl": ""
+      },
+      {
+        "text": "502",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(8554 \\div 17\\\\)",
+    "solution": "503 r 3",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(8554 \\div 17\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 8554 \\div 17 = 503 r 3\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 503 r 3\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q49",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(2806 \\div 23\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "122",
+        "imageUrl": ""
+      },
+      {
+        "text": "121 r 23",
+        "imageUrl": ""
+      },
+      {
+        "text": "122 r 2",
+        "imageUrl": ""
+      },
+      {
+        "text": "123",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(2806 \\div 23\\\\)",
+    "solution": "122",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(2806 \\div 23\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 2806 \\div 23 = 122\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 122\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q50",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(4042 \\div 19\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "212 r 14",
+        "imageUrl": ""
+      },
+      {
+        "text": "212 r 12",
+        "imageUrl": ""
+      },
+      {
+        "text": "213",
+        "imageUrl": ""
+      },
+      {
+        "text": "211",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(4042 \\div 19\\\\)",
+    "solution": "212 r 14",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(4042 \\div 19\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 4042 \\div 19 = 212 r 14\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 212 r 14\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q51",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(1498 \\div 18\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "83 r 4",
+        "imageUrl": ""
+      },
+      {
+        "text": "83 r 2",
+        "imageUrl": ""
+      },
+      {
+        "text": "84",
+        "imageUrl": ""
+      },
+      {
+        "text": "82",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(1498 \\div 18\\\\)",
+    "solution": "83 r 4",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(1498 \\div 18\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 1498 \\div 18 = 83 r 4\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 83 r 4\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q52",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Calculate \\\\(4708 \\div 19\\\\)",
+    "answer": "0",
+    "options": [
+      {
+        "text": "247 r 15",
+        "imageUrl": ""
+      },
+      {
+        "text": "247 r 13",
+        "imageUrl": ""
+      },
+      {
+        "text": "248",
+        "imageUrl": ""
+      },
+      {
+        "text": "246",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Calculate \\\\(4708 \\div 19\\\\)",
+    "solution": "247 r 15",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Calculate \\\\(4708 \\div 19\\\\)"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\( 4708 \\div 19 = 247 r 15\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 247 r 15\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q53",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Teams of \\\\(87\\\\). \\\\(128\\\\) schools. Total?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "11136",
+        "imageUrl": ""
+      },
+      {
+        "text": "11036",
+        "imageUrl": ""
+      },
+      {
+        "text": "11236",
+        "imageUrl": ""
+      },
+      {
+        "text": "10136",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Teams of \\\\(87\\\\). \\\\(128\\\\) schools. Total?",
+    "solution": "11136",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Teams of \\\\(87\\\\). \\\\(128\\\\) schools. Total?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Teams of 87. 128 schools. Total? = 11136\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 11136\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q54",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Hall: \\\\(30\\\\) rows, \\\\(28\\\\) seats. Total?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "840",
+        "imageUrl": ""
+      },
+      {
+        "text": "740",
+        "imageUrl": ""
+      },
+      {
+        "text": "860",
+        "imageUrl": ""
+      },
+      {
+        "text": "820",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Hall: \\\\(30\\\\) rows, \\\\(28\\\\) seats. Total?",
+    "solution": "840",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Hall: \\\\(30\\\\) rows, \\\\(28\\\\) seats. Total?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Hall: 30 rows, 28 seats. Total? = 840\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 840\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q55",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Apts: \\\\(44\\\\) floors, \\\\(18\\\\) per floor. Total?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "792",
+        "imageUrl": ""
+      },
+      {
+        "text": "782",
+        "imageUrl": ""
+      },
+      {
+        "text": "802",
+        "imageUrl": ""
+      },
+      {
+        "text": "692",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Apts: \\\\(44\\\\) floors, \\\\(18\\\\) per floor. Total?",
+    "solution": "792",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Apts: \\\\(44\\\\) floors, \\\\(18\\\\) per floor. Total?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Apts: 44 floors, 18 per floor. Total? = 792\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 792\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q56",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Car park: \\\\(34\\\\) rows, \\\\(42\\\\) spaces. Total?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "1428",
+        "imageUrl": ""
+      },
+      {
+        "text": "1328",
+        "imageUrl": ""
+      },
+      {
+        "text": "1438",
+        "imageUrl": ""
+      },
+      {
+        "text": "1418",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Car park: \\\\(34\\\\) rows, \\\\(42\\\\) spaces. Total?",
+    "solution": "1428",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Car park: \\\\(34\\\\) rows, \\\\(42\\\\) spaces. Total?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Car park: 34 rows, 42 spaces. Total? = 1428\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 1428\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q57",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Tomatoes: \\\\(80 \\times 30 \\times 43\\\\). Total?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "103200",
+        "imageUrl": ""
+      },
+      {
+        "text": "102200",
+        "imageUrl": ""
+      },
+      {
+        "text": "104200",
+        "imageUrl": ""
+      },
+      {
+        "text": "93200",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Tomatoes: \\\\(80 \\times 30 \\times 43\\\\). Total?",
+    "solution": "103200",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Tomatoes: \\\\(80 \\times 30 \\times 43\\\\). Total?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Tomatoes: 80 \\times 30 \\times 43. Total? = 103200\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 103200\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q58",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Lights: \\\\(15 \\times (23 \\times 7 + 4 \\times 15)\\\\). Total?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "3315",
+        "imageUrl": ""
+      },
+      {
+        "text": "3215",
+        "imageUrl": ""
+      },
+      {
+        "text": "3415",
+        "imageUrl": ""
+      },
+      {
+        "text": "3305",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Lights: \\\\(15 \\times (23 \\times 7 + 4 \\times 15)\\\\). Total?",
+    "solution": "3315",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Lights: \\\\(15 \\times (23 \\times 7 + 4 \\times 15)\\\\). Total?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Lights: 15 \\times (23 \\times 7 + 4 \\times 15). Total? = 3315\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 3315\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q59",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "People: \\\\((192+234+203) \\times 5\\\\). Total?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "3145",
+        "imageUrl": ""
+      },
+      {
+        "text": "3045",
+        "imageUrl": ""
+      },
+      {
+        "text": "3245",
+        "imageUrl": ""
+      },
+      {
+        "text": "3135",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: People: \\\\((192+234+203) \\times 5\\\\). Total?",
+    "solution": "3145",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "People: \\\\((192+234+203) \\times 5\\\\). Total?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(People: (192+234+203) \\times 5. Total? = 3145\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 3145\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q60",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Plan A: \\\\(33. Plan B: \\\\)149 \\times 0.24$. Cheaper?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "Plan A",
+        "imageUrl": ""
+      },
+      {
+        "text": "Plan B",
+        "imageUrl": ""
+      },
+      {
+        "text": "Same",
+        "imageUrl": ""
+      },
+      {
+        "text": "None",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Plan A: \\\\(33. Plan B: \\\\)149 \\times 0.24$. Cheaper?",
+    "solution": "Plan A",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Plan A: \\\\(33. Plan B: \\\\)149 \\times 0.24$. Cheaper?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Plan A: 33. Plan B: 149 \\times 0.24. Cheaper? = Plan A\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = Plan A\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q61",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Mars-Jupiter distance: \\\\(11 \\times 51078090\\\\). Distance?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "561858990",
+        "imageUrl": ""
+      },
+      {
+        "text": "561758990",
+        "imageUrl": ""
+      },
+      {
+        "text": "551858990",
+        "imageUrl": ""
+      },
+      {
+        "text": "562858990",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Mars-Jupiter distance: \\\\(11 \\times 51078090\\\\). Distance?",
+    "solution": "561858990",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Mars-Jupiter distance: \\\\(11 \\times 51078090\\\\). Distance?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Mars-Jupiter distance: 11 \\times 51078090. Distance? = 561858990\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 561858990\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q62",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Tony car: \\\\(45600\\\\) cash OR \\\\(11500+1650 \\times 24\\\\). Extra?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "5500",
+        "imageUrl": ""
+      },
+      {
+        "text": "4500",
+        "imageUrl": ""
+      },
+      {
+        "text": "6500",
+        "imageUrl": ""
+      },
+      {
+        "text": "5400",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Tony car: \\\\(45600\\\\) cash OR \\\\(11500+1650 \\times 24\\\\). Extra?",
+    "solution": "5500",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Tony car: \\\\(45600\\\\) cash OR \\\\(11500+1650 \\times 24\\\\). Extra?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Tony car: 45600 cash OR 11500+1650 \\times 24. Extra? = 5500\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 5500\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q63",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Potatoes: \\\\(84\\\\) kg into \\\\(4\\\\) kg bags. Bags?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "21",
+        "imageUrl": ""
+      },
+      {
+        "text": "22",
+        "imageUrl": ""
+      },
+      {
+        "text": "20",
+        "imageUrl": ""
+      },
+      {
+        "text": "19",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Potatoes: \\\\(84\\\\) kg into \\\\(4\\\\) kg bags. Bags?",
+    "solution": "21",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Potatoes: \\\\(84\\\\) kg into \\\\(4\\\\) kg bags. Bags?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Potatoes: 84 kg into 4 kg bags. Bags? = 21\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 21\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q64",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Humbugs: \\\\(18750\\\\). a. bags of 12? b. bags of 40?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "a: 1562 r 6, b: 468 r 30",
+        "imageUrl": ""
+      },
+      {
+        "text": "a: 1562 r 4",
+        "imageUrl": ""
+      },
+      {
+        "text": "None",
+        "imageUrl": ""
+      },
+      {
+        "text": "a: 1563",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Humbugs: \\\\(18750\\\\). a. bags of 12? b. bags of 40?",
+    "solution": "a:1562 r 6, b:468 r 30",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Humbugs: \\\\(18750\\\\). a. bags of 12? b. bags of 40?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Humbugs: 18750. a. bags of 12? b. bags of 40? = a:1562 r 6, b:468 r 30\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = a:1562 r 6, b:468 r 30\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q65",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 90,
+    "question": "Planet days: \\\\(3600\\\\). a. 6-d weeks? b. 8-d weeks? c. 10-d weeks? d. Weeks in 150-d month?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "a:600, b:450, c:360, d:25, 18.75, 15",
+        "imageUrl": ""
+      },
+      {
+        "text": "a:600, b:450, c:360, d:25, 20, 15",
+        "imageUrl": ""
+      },
+      {
+        "text": "None",
+        "imageUrl": ""
+      },
+      {
+        "text": "a:500",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Planet days: \\\\(3600\\\\). a. 6-d weeks? b. 8-d weeks? c. 10-d weeks? d. Weeks in 150-d month?",
+    "solution": "600, 450, 360, d:25/18.75/15",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Planet days: \\\\(3600\\\\). a. 6-d weeks? b. 8-d weeks? c. 10-d weeks? d. Weeks in 150-d month?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Planet days: 3600. a. 6-d weeks? b. 8-d weeks? c. 10-d weeks? d. Weeks in 150-d month? = 600, 450, 360, d:25/18.75/15\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 600, 450, 360, d:25/18.75/15\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y8-1b-backup-q66",
+    "c": "1B",
+    "t": "Multiplication and division",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Clock: \\\\(864\\\\) hours. How many cycles?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "72",
+        "imageUrl": ""
+      },
+      {
+        "text": "62",
+        "imageUrl": ""
+      },
+      {
+        "text": "82",
+        "imageUrl": ""
+      },
+      {
+        "text": "70",
+        "imageUrl": ""
+      }
+    ],
+    "hint": "Follow the order of operations and calculate step by step: Clock: \\\\(864\\\\) hours. How many cycles?",
+    "solution": "72",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the mathematical values and operations required by the question.",
+        "workingOut": "Clock: \\\\(864\\\\) hours. How many cycles?"
+      },
+      {
+        "explanation": "Carry out the operations step-by-step.",
+        "workingOut": "\\\\(Clock: 864 hours. How many cycles? = 72\\\\)"
+      },
+      {
+        "explanation": "Confirm the calculated value against the options.",
+        "workingOut": "\\\\(\\text{Result} = 72\\\\)"
+      }
+    ],
+    "graphData": null
+  },
+  {
     "id": "y8-1b-q1_hard",
     "c": "1B",
     "t": "Multiplication and division",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-altitude cargo aircraft carries \\(24\\) specialized heavy transport units.\\nEach transport unit contains \\(185\\) stabilizer brackets, and each bracket requires \\(12\\) high-tensile titanium rivets.\\nCalculate the total number of titanium rivets needed to secure all transport units onboard the aircraft.",
-    "a": 0,
-    "opts": [
-      "\\(53\\,280\\)",
-      "\\(44\\,400\\)",
-      "\\(52\\,180\\)",
-      "\\(55\\,680\\)"
+    "question": "A hangar stores specialized high-pressure hydraulic fluid bottles for commercial airliners.\\nThere are \\(14\\) storage cabinets, each containing \\(236\\) bottles. If each bottle holds exactly \\(45\\) litres of fluid, how many total litres are stored in the hangar?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(148,680\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(148,635\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(148,916\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(148,580\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "First find the total number of stabilizer brackets by multiplying transport units by brackets per unit, then multiply by the rivets per bracket.",
-    "s": "\\(24 \\\\times 185 = 4440\\\\)\n\\(4440 \\\\times 12 = 53280\\\\)\n\\(53\\,280\\\\text{ rivets}\\\\)",
+    "hint": "Multiply the three quantities together: \\(45 \\times 236 \\times 14\\).",
+    "solution": "\\\\(148,680\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the total number of stabilizer brackets across all 24 cargo units.",
-        "workingOut": "\\(24 \\\\times 185 = 4440\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 236,\\quad \\text{Per Sub-Unit} = 45\\\\)"
       },
       {
-        "explanation": "Multiply the total number of brackets by the number of titanium rivets required for each individual bracket (12).",
-        "workingOut": "\\(4440 \\\\times 12 = 53280\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(14 \\\\times 236 = 3304\\\\)"
       },
       {
-        "explanation": "State the final total number of titanium rivets required.",
-        "workingOut": "\\(53\\,280\\\\text{ rivets}\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(3304 \\\\times 45 = 148680\\\\)"
       }
     ],
     "graphData": null
@@ -39,28 +3021,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A quantum data centre allocates processing modules in clusters.\\nThere are \\(15\\) server racks, each containing \\(32\\) quantum core processors.\\nIf each core processor manages \\(25\\) computational threads concurrently, determine the total number of concurrent threads managed in the entire cluster using convenient multiplication groups.",
-    "a": 0,
-    "opts": [
-      "\\(12\\,000\\)",
-      "\\(11\\,500\\)",
-      "\\(12\\,500\\)",
-      "\\(10\\,800\\)"
+    "question": "A planetary exploration mission loads power packs onto \\(24\\) robotic space rovers.\\nEach space rover is fitted with \\(185\\) power packs. If each power pack requires \\(32\\) lithium-ion cell units, calculate the total number of cell units deployed.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(142,080\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(142,048\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(142,265\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(141,980\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Group numbers to form multiples of 10 or 100 first, like \\(32 \\times 25 = 8 \\times 4 \\times 25\\).",
-    "s": "\\(15 \\\\times 32 \\\\times 25\\\\)\n\\(15 \\\\times 8 \\\\times (4 \\\\times 25) = 120 \\\\times 100\\\\)\n\\(12\\,000\\\\)",
+    "hint": "Multiply the three quantities together: \\(32 \\times 185 \\times 24\\).",
+    "solution": "\\\\(142,080\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the multiplication of racks, processors, and threads.",
-        "workingOut": "\\(15 \\\\times 32 \\\\times 25\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 24,\\quad \\text{Per Unit} = 185,\\quad \\text{Per Sub-Unit} = 32\\\\)"
       },
       {
-        "explanation": "Use the associative property to group 32 as \\(8 \\\\times 4\\\\) to make calculation easier with 25.",
-        "workingOut": "\\(15 \\\\times 8 \\\\times (4 \\\\times 25) = 120 \\\\times 100\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(24 \\\\times 185 = 4440\\\\)"
       },
       {
-        "explanation": "Multiply the remaining terms to find the total concurrent threads.",
-        "workingOut": "\\(12\\,000\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(4440 \\\\times 32 = 142080\\\\)"
       }
     ],
     "graphData": null
@@ -72,28 +3066,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "An automated assembly line runs continuously for \\(18\\) days to construct drones.\\nThe line completes \\(135\\) drones every hour. If the factory runs uninterrupted, how many total drones are completed during this production cycle?",
-    "a": 0,
-    "opts": [
-      "\\(58\\,320\\)",
-      "\\(56\\,200\\)",
-      "\\(59\\,400\\)",
-      "\\(57\\,920\\)"
+    "question": "A pharmaceutical vaccine depository operates \\(15\\) cryogenic refrigeration chambers.\\nEach chamber houses \\(48\\) cooling trays. If each tray contains \\(75\\) specialized sample vials, what is the total capacity of vials stored in the facility?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(54,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(53,925\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(54,048\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(53,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Determine the total number of hours in 18 days, then multiply by the hourly drone output.",
-    "s": "\\(18 \\\\times 24 = 432\\\\text{ hours}\\\\)\n\\(432 \\\\times 135 = 58320\\\\)\n\\(58\\,320\\\\text{ drones}\\\\)",
+    "hint": "Multiply the three quantities together: \\(75 \\times 48 \\times 15\\).",
+    "solution": "\\\\(54,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of operational hours in 18 days.",
-        "workingOut": "\\(18 \\\\times 24 = 432\\\\text{ hours}\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 48,\\quad \\text{Per Sub-Unit} = 75\\\\)"
       },
       {
-        "explanation": "Multiply the total operational hours by the hourly drone production rate.",
-        "workingOut": "\\(432 \\\\times 135 = 58320\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(15 \\\\times 48 = 720\\\\)"
       },
       {
-        "explanation": "Conclude the total quantity of drones completed.",
-        "workingOut": "\\(58\\,320\\\\text{ drones}\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(720 \\\\times 75 = 54000\\\\)"
       }
     ],
     "graphData": null
@@ -105,28 +3111,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A water purification plant operates \\(14\\) bio-filtration tanks.\\nEach tank contains \\(236\\) filtration units, and each filtration unit processes \\(15\\) litres of wastewater per minute.\\nCalculate the total volume of wastewater processed by the plant in one hour of operation.",
-    "a": 0,
-    "opts": [
-      "\\(2\\,973\\,600\\)",
-      "\\(2\\,854\\,200\\)",
-      "\\(2\\,986\\,000\\)",
-      "\\(3\\,120\\,000\\)"
+    "question": "A regional solar generation facility consists of \\(16\\) tracking sub-arrays.\\nEach sub-array contains \\(120\\) photovoltaic nodes. If each node requires \\(18\\) micro-inverters, calculate the total number of micro-inverters configured.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(34,560\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(34,542\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(34,680\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(34,460\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Find the volume processed per minute, then multiply by 60 to convert minutes to one hour.",
-    "s": "\\(14 \\\\times 236 = 3304\\\\)\n\\(3304 \\\\times 15 = 49560\\\\text{ litres/minute}\\\\)\n\\(49560 \\\\times 60 = 2973600\\\\text{ litres}\\\\)",
+    "hint": "Multiply the three quantities together: \\(18 \\times 120 \\times 16\\).",
+    "solution": "\\\\(34,560\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of filtration units across all 14 bio-filtration tanks.",
-        "workingOut": "\\(14 \\\\times 236 = 3304\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 16,\\quad \\text{Per Unit} = 120,\\quad \\text{Per Sub-Unit} = 18\\\\)"
       },
       {
-        "explanation": "Calculate the total volume processed per minute by multiplying units by their capacity.",
-        "workingOut": "\\(3304 \\\\times 15 = 49560\\\\text{ litres/minute}\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(16 \\\\times 120 = 1920\\\\)"
       },
       {
-        "explanation": "Multiply by 60 to find the total volume processed in one hour (60 minutes).",
-        "workingOut": "\\(49560 \\\\times 60 = 2973600\\\\text{ litres}\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(1920 \\\\times 18 = 34560\\\\)"
       }
     ],
     "graphData": null
@@ -138,28 +3156,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A deep-space radio array receives digital signal packets.\\nThe receiver processes \\(8192\\) data blocks every second. Each data block consists of \\(48\\) segments.\\nIf the receiver operates for \\(25\\) seconds, how many total segments are processed?",
-    "a": 0,
-    "opts": [
-      "\\(9\\,830\\,400\\)",
-      "\\(9\\,640\\,000\\)",
-      "\\(9\\,800\\,000\\)",
-      "\\(10\\,240\\,000\\)"
+    "question": "A subsea fiber-optic network spans across \\(12\\) oceanic sectors.\\nEach sector has \\(950\\) signal repeaters. If each repeater utilizes \\(8\\) transponders, how many total transponders are active across the entire network?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(91,200\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(91,192\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(92,150\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(91,100\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Use convenient grouping such as \\(48 \\times 25 = 12 \\times 4 \\times 25\\) to simplify the multi-stage multiplication.",
-    "s": "\\(8192 \\\\times 25 = 204800\\\\text{ blocks}\\\\)\n\\(204800 \\\\times 48 = 9830400\\\\)\n\\(9\\,830\\,400\\\\text{ segments}\\\\)",
+    "hint": "Multiply the three quantities together: \\(8 \\times 950 \\times 12\\).",
+    "solution": "\\\\(91,200\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the total number of data blocks processed over 25 seconds.",
-        "workingOut": "\\(8192 \\\\times 25 = 204800\\\\text{ blocks}\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 12,\\quad \\text{Per Unit} = 950,\\quad \\text{Per Sub-Unit} = 8\\\\)"
       },
       {
-        "explanation": "Multiply the total blocks by the number of segments per block.",
-        "workingOut": "\\(204800 \\\\times 48 = 9830400\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(12 \\\\times 950 = 11400\\\\)"
       },
       {
-        "explanation": "Conclude the total count of processed segments.",
-        "workingOut": "\\(9\\,830\\,400\\\\text{ segments}\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(11400 \\\\times 8 = 91200\\\\)"
       }
     ],
     "graphData": null
@@ -171,28 +3201,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "An agricultural cooperative prepares tree seedlings for reforestation.\\nThey have \\(74\\,896\\) pine seedlings to distribute equally among \\(16\\) regional nurseries.\\nDetermine how many seedlings each nursery receives, and the number of seedlings left over.",
-    "a": 0,
-    "opts": [
-      "\\(4681\\\\) seedlings, remainder \\(0\\\\)",
-      "\\(4680\\\\) seedlings, remainder \\(16\\\\)",
-      "\\(4681\\\\) seedlings, remainder \\(2\\\\)",
-      "\\(4675\\\\) seedlings, remainder \\(11\\\\)"
+    "question": "A high-speed shipping depot operates \\(18\\) sorting conveyor lines.\\nEach line transports \\(320\\) cargo pallets. If each pallet holds \\(14\\) heavy packing crates, find the total number of crates processed during a full load cycle.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(80,640\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(80,626\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(80,960\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(80,540\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Perform long division of 74896 by 16 to find the quotient and the remainder.",
-    "s": "\\(74 \\\\div 16 = 4\\\\text{ remainder } 10\\\\)\n\\(108 \\\\div 16 = 6\\\\text{ rem } 12 \\\\to 129 \\\\div 16 = 8\\\\text{ rem } 1 \\\\to 16 \\\\div 16 = 1\\\\)\n\\(74896 \\\\div 16 = 4681\\\\text{ with remainder } 0\\\\)",
+    "hint": "Multiply the three quantities together: \\(14 \\times 320 \\times 18\\).",
+    "solution": "\\\\(80,640\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide the first two digits of the dividend by 16: 74 divided by 16.",
-        "workingOut": "\\(74 \\\\div 16 = 4\\\\text{ remainder } 10\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 18,\\quad \\text{Per Unit} = 320,\\quad \\text{Per Sub-Unit} = 14\\\\)"
       },
       {
-        "explanation": "Bring down 8 to make 108, divide by 16; then bring down 9 and 6 successively.",
-        "workingOut": "\\(108 \\\\div 16 = 6\\\\text{ rem } 12 \\\\to 129 \\\\div 16 = 8\\\\text{ rem } 1 \\\\to 16 \\\\div 16 = 1\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(18 \\\\times 320 = 5760\\\\)"
       },
       {
-        "explanation": "Combine the quotients to state the final count and remainder.",
-        "workingOut": "\\(74896 \\\\div 16 = 4681\\\\text{ with remainder } 0\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(5760 \\\\times 14 = 80640\\\\)"
       }
     ],
     "graphData": null
@@ -204,28 +3246,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A microchip factory manufactures silicon wafers. Each wafer contains \\(1350\\) microchips.\\nAfter testing, \\(15\\) microchips on each wafer are flagged as defective.\\nIf a production run processes \\(32\\) wafers, how many non-defective microchips are produced in total?",
-    "a": 0,
-    "opts": [
-      "\\(42\\,720\\)",
-      "\\(43\\,200\\)",
-      "\\(42\\,500\\)",
-      "\\(41\\,800\\)"
+    "question": "An automated smart farm coordinates irrigation across \\(25\\) cultivation zones.\\nEach zone is monitored by \\(175\\) moisture sensors. If each sensor controls \\(20\\) valve actuators, find the total number of valve actuators managed.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(87,500\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(87,480\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(87,675\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(87,400\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Subtract the defective microchips from a single wafer first, then multiply the result by 32 wafers.",
-    "s": "\\(1350 - 15 = 1335\\\\text{ microchips}\\\\)\n\\(1335 \\\\times 32 = 42720\\\\)\n\\(42\\,720\\\\text{ microchips}\\\\)",
+    "hint": "Multiply the three quantities together: \\(20 \\times 175 \\times 25\\).",
+    "solution": "\\\\(87,500\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the number of non-defective microchips on a single silicon wafer.",
-        "workingOut": "\\(1350 - 15 = 1335\\\\text{ microchips}\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 25,\\quad \\text{Per Unit} = 175,\\quad \\text{Per Sub-Unit} = 20\\\\)"
       },
       {
-        "explanation": "Multiply the non-defective chips per wafer by the total number of wafers processed (32).",
-        "workingOut": "\\(1335 \\\\times 32 = 42720\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(25 \\\\times 175 = 4375\\\\)"
       },
       {
-        "explanation": "Confirm the final quantity of functional microchips.",
-        "workingOut": "\\(42\\,720\\\\text{ microchips}\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(4375 \\\\times 20 = 87500\\\\)"
       }
     ],
     "graphData": null
@@ -237,28 +3291,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A solar facility has \\(18\\) arrays, each containing \\(120\\) solar panels.\\nEach panel generates \\(350\\) watts of power during peak daylight hours.\\nCalculate the total peak power output of the facility in kilowatts (kW), given that \\(1000\\\\text{ watts} = 1\\\\text{ kW}\\\\).",
-    "a": 0,
-    "opts": [
-      "\\(756\\\\)",
-      "\\(720\\\\)",
-      "\\(766\\\\)",
-      "\\(748\\\\)"
+    "question": "An industrial robotics plant manufactures robotic joints for automated lines.\\nThey assemble \\(32\\) heavy-duty robot arms. Each arm has \\(135\\) joints. If each joint uses \\(15\\) precision gears, calculate the total number of gears required.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(64,800\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(64,785\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(64,935\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(64,700\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "First find total peak power in watts by multiplying arrays, panels per array, and power per panel. Then divide by 1000.",
-    "s": "\\(18 \\\\times 120 = 2160\\\\text{ panels}\\\\)\n\\(2160 \\\\times 350 = 756000\\\\text{ watts}\\\\)\n\\(756000 \\\\div 1000 = 756\\\\text{ kW}\\\\)",
+    "hint": "Multiply the three quantities together: \\(15 \\times 135 \\times 32\\).",
+    "solution": "\\\\(64,800\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate the total number of panels in the facility.",
-        "workingOut": "\\(18 \\\\times 120 = 2160\\\\text{ panels}\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 32,\\quad \\text{Per Unit} = 135,\\quad \\text{Per Sub-Unit} = 15\\\\)"
       },
       {
-        "explanation": "Determine the total peak output in watts.",
-        "workingOut": "\\(2160 \\\\times 350 = 756000\\\\text{ watts}\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(32 \\\\times 135 = 4320\\\\)"
       },
       {
-        "explanation": "Convert the peak power output to kilowatts by dividing by 1000.",
-        "workingOut": "\\(756000 \\\\div 1000 = 756\\\\text{ kW}\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(4320 \\\\times 15 = 64800\\\\)"
       }
     ],
     "graphData": null
@@ -270,28 +3336,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A marine exploration vessel needs to load \\(14\\,500\\\\text{ litres}\\\\) of special diesel fuel.\\nThe fuel is stored in barrels of \\(225\\\\text{ litres}\\\\) each.\\nWhat is the minimum number of full barrels the crew must load to ensure they have at least the required volume?",
-    "a": 0,
-    "opts": [
-      "\\(65\\\\)",
-      "\\(64\\\\)",
-      "\\(66\\\\)",
-      "\\(60\\\\)"
+    "question": "A geological research program coordinates \\(15\\) seismic listening stations.\\nEach station has \\(520\\) recording points. If each point logs data on \\(12\\) channels simultaneously, calculate the total number of active channels.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(93,600\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(93,588\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(94,120\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(93,500\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total litres by the capacity of one barrel. Round up to the next whole number since they need at least 14,500 litres.",
-    "s": "\\(14500 \\\\div 225 = 64\\\\text{ remainder } 100\\\\)\n\\(64 \\\\times 225 = 14400\\\\text{ litres } (100\\\\text{ litres short})\\\\)\n\\(64 + 1 = 65\\\\text{ barrels}\\\\)",
+    "hint": "Multiply the three quantities together: \\(12 \\times 520 \\times 15\\).",
+    "solution": "\\\\(93,600\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide the total fuel requirement by the capacity of one barrel to find the number of barrels.",
-        "workingOut": "\\(14500 \\\\div 225 = 64\\\\text{ remainder } 100\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 520,\\quad \\text{Per Sub-Unit} = 12\\\\)"
       },
       {
-        "explanation": "Analyze the remainder. 64 full barrels will leave them 100 litres short.",
-        "workingOut": "\\(64 \\\\times 225 = 14400\\\\text{ litres } (100\\\\text{ litres short})\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(15 \\\\times 520 = 7800\\\\)"
       },
       {
-        "explanation": "Round up to the next whole barrel to meet the minimum threshold.",
-        "workingOut": "\\(64 + 1 = 65\\\\text{ barrels}\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(7800 \\\\times 12 = 93600\\\\)"
       }
     ],
     "graphData": null
@@ -303,28 +3381,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "An archival server has \\(3475\\\\text{ megabytes (MB)}\\\\) of uncompressed historical text files.\\nCompression tools can package this data into archive blocks of \\(24\\\\text{ MB}\\\\) each.\\nHow many full archive blocks can be filled, and how many MB of data will remain in the last incomplete block?",
-    "a": 0,
-    "opts": [
-      "\\(144\\\\) blocks, remainder \\(19\\\\) MB",
-      "\\(144\\\\) blocks, remainder \\(9\\\\) MB",
-      "\\(145\\\\) blocks, remainder \\(19\\\\) MB",
-      "\\(143\\\\) blocks, remainder \\(23\\\\) MB"
+    "question": "A meteorological institute operates \\(22\\) deep-ocean weather buoys.\\nEach buoy contains \\(245\\) telemetry modules. If each module is powered by \\(16\\) lithium battery nodes, calculate the total battery node count.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(86,240\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(86,224\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(86,485\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(86,140\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide 3475 by 24 to find the integer quotient (full blocks) and the remainder (uncompressed MB left).",
-    "s": "\\(34 \\\\div 24 = 1\\\\text{ remainder } 10\\\\)\n\\(115 \\\\div 24 = 4\\\\text{ remainder } 19\\\\)\n\\(3475 \\\\div 24 = 144\\\\text{ blocks with } 19\\\\text{ MB remaining}\\\\)",
+    "hint": "Multiply the three quantities together: \\(16 \\times 245 \\times 22\\).",
+    "solution": "\\\\(86,240\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide the first part of the dividend: 34 divided by 24.",
-        "workingOut": "\\(34 \\\\div 24 = 1\\\\text{ remainder } 10\\\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 22,\\quad \\text{Per Unit} = 245,\\quad \\text{Per Sub-Unit} = 16\\\\)"
       },
       {
-        "explanation": "Bring down 7 to make 107, divide by 24: \\(107 \\div 24 = 4\\) remainder 11. Then bring down 5 to make 115.",
-        "workingOut": "\\(115 \\\\div 24 = 4\\\\text{ remainder } 19\\\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(22 \\\\times 245 = 5390\\\\)"
       },
       {
-        "explanation": "Combine findings to determine the total full blocks and leftover MB.",
-        "workingOut": "\\(3475 \\\\div 24 = 144\\\\text{ blocks with } 19\\\\text{ MB remaining}\\\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(5390 \\\\times 16 = 86240\\\\)"
       }
     ],
     "graphData": null
@@ -336,28 +3426,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3419\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(24\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(142\\) packages, remainder \\(11\\) entries",
-      "\\(142 remainder 9\\) packages, remainder \\(11\\) entries",
-      "\\(143 remainder 11\\) packages, remainder \\(11\\) entries",
-      "\\(141 remainder 12\\) packages, remainder \\(11\\) entries"
+    "question": "A nuclear power facility loads fuel rods into \\(28\\) reactor assemblies.\\nEach assembly has \\(85\\) fuel rods. If each rod contains \\(180\\) uranium oxide pellets, find the total number of fuel pellets loaded.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(428,400\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(428,220\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(428,485\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(428,300\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3419 \\div 24\\).",
-    "s": "\\(3419 \\\\div 24\\)\n\\(24 \\\\times 142 = 3408\\)\n\\(3419 - 3408 = 11 \\implies \\text{Quotient} = 142,\\ \\text{Remainder} = 11\\)",
+    "hint": "Multiply the three quantities together: \\(180 \\times 85 \\times 28\\).",
+    "solution": "\\\\(428,400\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3419 \\\\div 24\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 28,\\quad \\text{Per Unit} = 85,\\quad \\text{Per Sub-Unit} = 180\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(24 \\\\times 142 = 3408\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(28 \\\\times 85 = 2380\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3419 - 3408 = 11 \\implies \\text{Quotient} = 142,\\ \\text{Remainder} = 11\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(2380 \\\\times 180 = 428400\\\\)"
       }
     ],
     "graphData": null
@@ -369,28 +3471,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance aerospace cargo bay system is configured with \\(29\\) main sectors.\\nEach sector contains \\(486\\) active pallets, and each pallets produces \\(14\\) kilograms of output.\\nDetermine the total peak output in kilograms for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(197,316\\)",
-      "\\(196,830\\)",
-      "\\(197,722\\)",
-      "\\(196,316\\)"
+    "question": "A quantum research cluster operates \\(14\\) helium-cooled dilution refrigerators.\\nEach refrigerator hosts \\(350\\) quantum processor units. If each unit utilizes \\(64\\) cryo-gates, calculate the total number of cryo-gates configured.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(313,600\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(313,536\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(313,950\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(313,500\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(486 \\times 29 \\times 14\\).",
-    "s": "\\(29 \\\\times 486 = 14094\\)\n\\(14094 \\\\times 14 = 197316\\)\n\\(197,316\\)",
+    "hint": "Multiply the three quantities together: \\(64 \\times 350 \\times 14\\).",
+    "solution": "\\\\(313,600\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active pallets in the system.",
-        "workingOut": "\\(29 \\\\times 486 = 14094\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 350,\\quad \\text{Per Sub-Unit} = 64\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(14094 \\\\times 14 = 197316\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(14 \\\\times 350 = 4900\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in kilograms.",
-        "workingOut": "\\(197,316\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(4900 \\\\times 64 = 313600\\\\)"
       }
     ],
     "graphData": null
@@ -402,28 +3516,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3809\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(26\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(146\\) packages, remainder \\(13\\) entries",
-      "\\(146 remainder 11\\) packages, remainder \\(13\\) entries",
-      "\\(147 remainder 13\\) packages, remainder \\(13\\) entries",
-      "\\(145 remainder 14\\) packages, remainder \\(13\\) entries"
+    "question": "An online retailer operates \\(36\\) distribution warehouse aisles.\\nEach aisle is equipped with \\(84\\) storage racks. If each rack holds \\(125\\) plastic bins, what is the total number of storage bins in the warehouse?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(378,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(377,875\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(378,084\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(377,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3809 \\div 26\\).",
-    "s": "\\(3809 \\\\div 26\\)\n\\(26 \\\\times 146 = 3796\\)\n\\(3809 - 3796 = 13 \\implies \\text{Quotient} = 146,\\ \\text{Remainder} = 13\\)",
+    "hint": "Multiply the three quantities together: \\(125 \\times 84 \\times 36\\).",
+    "solution": "\\\\(378,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3809 \\\\div 26\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 36,\\quad \\text{Per Unit} = 84,\\quad \\text{Per Sub-Unit} = 125\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(26 \\\\times 146 = 3796\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(36 \\\\times 84 = 3024\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3809 - 3796 = 13 \\implies \\text{Quotient} = 146,\\ \\text{Remainder} = 13\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(3024 \\\\times 125 = 378000\\\\)"
       }
     ],
     "graphData": null
@@ -435,28 +3561,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance pharmaceutical bottling plant system is configured with \\(16\\) main sectors.\\nEach sector contains \\(222\\) active crates, and each crates produces \\(28\\) vials of output.\\nDetermine the total peak output in vials for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(99,456\\)",
-      "\\(99,234\\)",
-      "\\(99,904\\)",
-      "\\(98,456\\)"
+    "question": "A car manufacturing facility produces battery packs for \\(25\\) high-performance electric vehicles.\\nEach vehicle requires \\(144\\) battery modules. If each module contains \\(96\\) battery cells, calculate the total number of battery cells used.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(345,600\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(345,504\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(345,744\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(345,500\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(222 \\times 16 \\times 28\\).",
-    "s": "\\(16 \\\\times 222 = 3552\\)\n\\(3552 \\\\times 28 = 99456\\)\n\\(99,456\\)",
+    "hint": "Multiply the three quantities together: \\(96 \\times 144 \\times 25\\).",
+    "solution": "\\\\(345,600\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active crates in the system.",
-        "workingOut": "\\(16 \\\\times 222 = 3552\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 25,\\quad \\text{Per Unit} = 144,\\quad \\text{Per Sub-Unit} = 96\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(28\\)).",
-        "workingOut": "\\(3552 \\\\times 28 = 99456\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(25 \\\\times 144 = 3600\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in vials.",
-        "workingOut": "\\(99,456\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(3600 \\\\times 96 = 345600\\\\)"
       }
     ],
     "graphData": null
@@ -468,28 +3606,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4215\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(28\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(150\\) packages, remainder \\(15\\) entries",
-      "\\(150 remainder 13\\) packages, remainder \\(15\\) entries",
-      "\\(151 remainder 15\\) packages, remainder \\(15\\) entries",
-      "\\(149 remainder 16\\) packages, remainder \\(15\\) entries"
+    "question": "A aerospace firm manufactures communications satellites. They assemble a constellation of \\(15\\) satellites.\\nEach satellite carries \\(180\\) payload transceivers. If each transceiver links to \\(24\\) antenna elements, calculate the total number of elements in the constellation.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(64,800\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(64,776\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(64,980\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(64,700\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4215 \\div 28\\).",
-    "s": "\\(4215 \\\\div 28\\)\n\\(28 \\\\times 150 = 4200\\)\n\\(4215 - 4200 = 15 \\implies \\text{Quotient} = 150,\\ \\text{Remainder} = 15\\)",
+    "hint": "Multiply the three quantities together: \\(24 \\times 180 \\times 15\\).",
+    "solution": "\\\\(64,800\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4215 \\\\div 28\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 180,\\quad \\text{Per Sub-Unit} = 24\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(28 \\\\times 150 = 4200\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(15 \\\\times 180 = 2700\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4215 - 4200 = 15 \\implies \\text{Quotient} = 150,\\ \\text{Remainder} = 15\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(2700 \\\\times 24 = 64800\\\\)"
       }
     ],
     "graphData": null
@@ -501,28 +3651,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance cryptocurrency mining rig system is configured with \\(16\\) main sectors.\\nEach sector contains \\(998\\) active nodes, and each nodes produces \\(9\\) hashes of output.\\nDetermine the total peak output in hashes for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(143,712\\)",
-      "\\(142,714\\)",
-      "\\(143,856\\)",
-      "\\(142,712\\)"
+    "question": "A shipbuilding dock installs steel plating on \\(20\\) naval defense vessels.\\nEach vessel requires \\(950\\) steel plates. If each plate is secured using \\(18\\) high-tensile bolts, calculate the total number of bolts required.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(342,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(341,982\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(342,950\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(341,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(998 \\times 16 \\times 9\\).",
-    "s": "\\(16 \\\\times 998 = 15968\\)\n\\(15968 \\\\times 9 = 143712\\)\n\\(143,712\\)",
+    "hint": "Multiply the three quantities together: \\(18 \\times 950 \\times 20\\).",
+    "solution": "\\\\(342,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active nodes in the system.",
-        "workingOut": "\\(16 \\\\times 998 = 15968\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 20,\\quad \\text{Per Unit} = 950,\\quad \\text{Per Sub-Unit} = 18\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(9\\)).",
-        "workingOut": "\\(15968 \\\\times 9 = 143712\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(20 \\\\times 950 = 19000\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in hashes.",
-        "workingOut": "\\(143,712\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(19000 \\\\times 18 = 342000\\\\)"
       }
     ],
     "graphData": null
@@ -534,28 +3696,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(2006\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(13\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(154\\) packages, remainder \\(4\\) entries",
-      "\\(154 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(155 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(153 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "A utility company commissions \\(35\\) offshore wind turbines.\\nEach wind turbine contains \\(240\\) mechanical gears. If each gear assembly requires \\(12\\) heavy-duty bearings, calculate the total number of bearings deployed.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(100,800\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(100,788\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(101,040\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(100,700\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(2006 \\div 13\\).",
-    "s": "\\(2006 \\\\div 13\\)\n\\(13 \\\\times 154 = 2002\\)\n\\(2006 - 2002 = 4 \\implies \\text{Quotient} = 154,\\ \\text{Remainder} = 4\\)",
+    "hint": "Multiply the three quantities together: \\(12 \\times 240 \\times 35\\).",
+    "solution": "\\\\(100,800\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(2006 \\\\div 13\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 35,\\quad \\text{Per Unit} = 240,\\quad \\text{Per Sub-Unit} = 12\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(13 \\\\times 154 = 2002\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(35 \\\\times 240 = 8400\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(2006 - 2002 = 4 \\implies \\text{Quotient} = 154,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(8400 \\\\times 12 = 100800\\\\)"
       }
     ],
     "graphData": null
@@ -567,28 +3741,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance logistics distribution hub system is configured with \\(16\\) main sectors.\\nEach sector contains \\(374\\) active conveyors, and each conveyors produces \\(21\\) packages of output.\\nDetermine the total peak output in packages for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(125,664\\)",
-      "\\(125,290\\)",
-      "\\(126,000\\)",
-      "\\(124,664\\)"
+    "question": "A transit authority installs overhead lines along \\(14\\) sectors of high-speed rail.\\nEach sector contains \\(640\\) support masts. If each mast requires \\(16\\) ceramic insulators, calculate the total number of insulators installed.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(143,360\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(143,344\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(144,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(143,260\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(374 \\times 16 \\times 21\\).",
-    "s": "\\(16 \\\\times 374 = 5984\\)\n\\(5984 \\\\times 21 = 125664\\)\n\\(125,664\\)",
+    "hint": "Multiply the three quantities together: \\(16 \\times 640 \\times 14\\).",
+    "solution": "\\\\(143,360\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active conveyors in the system.",
-        "workingOut": "\\(16 \\\\times 374 = 5984\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 640,\\quad \\text{Per Sub-Unit} = 16\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(21\\)).",
-        "workingOut": "\\(5984 \\\\times 21 = 125664\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(14 \\\\times 640 = 8960\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in packages.",
-        "workingOut": "\\(125,664\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(8960 \\\\times 16 = 143360\\\\)"
       }
     ],
     "graphData": null
@@ -600,28 +3786,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(2374\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(15\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(158\\) packages, remainder \\(4\\) entries",
-      "\\(158 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(159 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(157 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "An astronomical observatory configures \\(18\\) primary telescope mirror segments.\\nEach segment is positioned by \\(128\\) sub-actuators. If each sub-actuator has \\(48\\) sensors, how many total sensors are active?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(110,592\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(110,544\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(110,720\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(110,492\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(2374 \\div 15\\).",
-    "s": "\\(2374 \\\\div 15\\)\n\\(15 \\\\times 158 = 2370\\)\n\\(2374 - 2370 = 4 \\implies \\text{Quotient} = 158,\\ \\text{Remainder} = 4\\)",
+    "hint": "Multiply the three quantities together: \\(48 \\times 128 \\times 18\\).",
+    "solution": "\\\\(110,592\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(2374 \\\\div 15\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 18,\\quad \\text{Per Unit} = 128,\\quad \\text{Per Sub-Unit} = 48\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(15 \\\\times 158 = 2370\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(18 \\\\times 128 = 2304\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(2374 - 2370 = 4 \\implies \\text{Quotient} = 158,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(2304 \\\\times 48 = 110592\\\\)"
       }
     ],
     "graphData": null
@@ -633,28 +3831,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance precision robotics facility system is configured with \\(31\\) main sectors.\\nEach sector contains \\(195\\) active arms, and each arms produces \\(14\\) sensors of output.\\nDetermine the total peak output in sensors for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(84,630\\)",
-      "\\(84,435\\)",
-      "\\(85,064\\)",
-      "\\(83,630\\)"
+    "question": "A tech company builds a supercomputer array spanning \\(24\\) compute cabinets.\\nEach cabinet contains \\(512\\) processing nodes. If each node requires \\(32\\) fiber optic cables, calculate the total length of optical cable units.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(393,216\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(393,184\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(393,728\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(393,116\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(195 \\times 31 \\times 14\\).",
-    "s": "\\(31 \\\\times 195 = 6045\\)\n\\(6045 \\\\times 14 = 84630\\)\n\\(84,630\\)",
+    "hint": "Multiply the three quantities together: \\(32 \\times 512 \\times 24\\).",
+    "solution": "\\\\(393,216\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active arms in the system.",
-        "workingOut": "\\(31 \\\\times 195 = 6045\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 24,\\quad \\text{Per Unit} = 512,\\quad \\text{Per Sub-Unit} = 32\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(6045 \\\\times 14 = 84630\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(24 \\\\times 512 = 12288\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in sensors.",
-        "workingOut": "\\(84,630\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(12288 \\\\times 32 = 393216\\\\)"
       }
     ],
     "graphData": null
@@ -666,28 +3876,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(2758\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(17\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(162\\) packages, remainder \\(4\\) entries",
-      "\\(162 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(163 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(161 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "An orbital space station integrates solar arrays on \\(12\\) wing trusses.\\nEach truss contains \\(160\\) photovoltaic frames. If each frame holds \\(120\\) silicon solar cells, find the total number of cells generating power.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(230,400\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(230,280\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(230,560\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(230,300\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(2758 \\div 17\\).",
-    "s": "\\(2758 \\\\div 17\\)\n\\(17 \\\\times 162 = 2754\\)\n\\(2758 - 2754 = 4 \\implies \\text{Quotient} = 162,\\ \\text{Remainder} = 4\\)",
+    "hint": "Multiply the three quantities together: \\(120 \\times 160 \\times 12\\).",
+    "solution": "\\\\(230,400\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(2758 \\\\div 17\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 12,\\quad \\text{Per Unit} = 160,\\quad \\text{Per Sub-Unit} = 120\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(17 \\\\times 162 = 2754\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(12 \\\\times 160 = 1920\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(2758 - 2754 = 4 \\implies \\text{Quotient} = 162,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(1920 \\\\times 120 = 230400\\\\)"
       }
     ],
     "graphData": null
@@ -699,28 +3921,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance aerospace cargo bay system is configured with \\(25\\) main sectors.\\nEach sector contains \\(516\\) active pallets, and each pallets produces \\(14\\) kilograms of output.\\nDetermine the total peak output in kilograms for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(180,600\\)",
-      "\\(180,084\\)",
-      "\\(180,950\\)",
-      "\\(179,600\\)"
+    "question": "A commercial logistics company configures \\(20\\) automated delivery drones.\\nEach drone is equipped with \\(325\\) battery bays. If each bay contains \\(14\\) copper terminal pins, calculate the total number of terminal pins.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(91,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(90,986\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(91,325\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(90,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(516 \\times 25 \\times 14\\).",
-    "s": "\\(25 \\\\times 516 = 12900\\)\n\\(12900 \\\\times 14 = 180600\\)\n\\(180,600\\)",
+    "hint": "Multiply the three quantities together: \\(14 \\times 325 \\times 20\\).",
+    "solution": "\\\\(91,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active pallets in the system.",
-        "workingOut": "\\(25 \\\\times 516 = 12900\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 20,\\quad \\text{Per Unit} = 325,\\quad \\text{Per Sub-Unit} = 14\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(12900 \\\\times 14 = 180600\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(20 \\\\times 325 = 6500\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in kilograms.",
-        "workingOut": "\\(180,600\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(6500 \\\\times 14 = 91000\\\\)"
       }
     ],
     "graphData": null
@@ -732,28 +3966,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3158\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(19\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(166\\) packages, remainder \\(4\\) entries",
-      "\\(166 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(167 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(165 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "An environmental non-profit deploys \\(15\\) marine cleanup barriers.\\nEach barrier consists of \\(480\\) segments. If each segment is supported by \\(25\\) heavy-duty buoys, calculate the total number of buoys deployed.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(180,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(179,975\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(180,480\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(179,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3158 \\div 19\\).",
-    "s": "\\(3158 \\\\div 19\\)\n\\(19 \\\\times 166 = 3154\\)\n\\(3158 - 3154 = 4 \\implies \\text{Quotient} = 166,\\ \\text{Remainder} = 4\\)",
+    "hint": "Multiply the three quantities together: \\(25 \\times 480 \\times 15\\).",
+    "solution": "\\\\(180,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3158 \\\\div 19\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 480,\\quad \\text{Per Sub-Unit} = 25\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(19 \\\\times 166 = 3154\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(15 \\\\times 480 = 7200\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3158 - 3154 = 4 \\implies \\text{Quotient} = 166,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(7200 \\\\times 25 = 180000\\\\)"
       }
     ],
     "graphData": null
@@ -765,28 +4011,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance pharmaceutical bottling plant system is configured with \\(19\\) main sectors.\\nEach sector contains \\(252\\) active crates, and each crates produces \\(28\\) vials of output.\\nDetermine the total peak output in vials for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(134,064\\)",
-      "\\(133,812\\)",
-      "\\(134,596\\)",
-      "\\(133,064\\)"
+    "question": "A power grid operator installs substation gear across \\(42\\) local municipalities.\\nEach municipality operates \\(125\\) distribution nodes. If each node requires \\(8\\) circuit breaker relays, calculate the total relays deployed.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(42,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(41,992\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(42,125\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(41,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(252 \\times 19 \\times 28\\).",
-    "s": "\\(19 \\\\times 252 = 4788\\)\n\\(4788 \\\\times 28 = 134064\\)\n\\(134,064\\)",
+    "hint": "Multiply the three quantities together: \\(8 \\times 125 \\times 42\\).",
+    "solution": "\\\\(42,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active crates in the system.",
-        "workingOut": "\\(19 \\\\times 252 = 4788\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 42,\\quad \\text{Per Unit} = 125,\\quad \\text{Per Sub-Unit} = 8\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(28\\)).",
-        "workingOut": "\\(4788 \\\\times 28 = 134064\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(42 \\\\times 125 = 5250\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in vials.",
-        "workingOut": "\\(134,064\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(5250 \\\\times 8 = 42000\\\\)"
       }
     ],
     "graphData": null
@@ -798,28 +4056,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3574\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(21\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(170\\) packages, remainder \\(4\\) entries",
-      "\\(170 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(171 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(169 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "A cloud security provider operates \\(16\\) backup server clusters.\\nEach cluster houses \\(850\\) storage arrays. If each array contains \\(16\\) solid-state drives, calculate the total number of drives online.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(217,600\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(217,584\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(218,450\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(217,500\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3574 \\div 21\\).",
-    "s": "\\(3574 \\\\div 21\\)\n\\(21 \\\\times 170 = 3570\\)\n\\(3574 - 3570 = 4 \\implies \\text{Quotient} = 170,\\ \\text{Remainder} = 4\\)",
+    "hint": "Multiply the three quantities together: \\(16 \\times 850 \\times 16\\).",
+    "solution": "\\\\(217,600\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3574 \\\\div 21\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 16,\\quad \\text{Per Unit} = 850,\\quad \\text{Per Sub-Unit} = 16\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(21 \\\\times 170 = 3570\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(16 \\\\times 850 = 13600\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3574 - 3570 = 4 \\implies \\text{Quotient} = 170,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(13600 \\\\times 16 = 217600\\\\)"
       }
     ],
     "graphData": null
@@ -831,28 +4101,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance cryptocurrency mining rig system is configured with \\(19\\) main sectors.\\nEach sector contains \\(1028\\) active nodes, and each nodes produces \\(9\\) hashes of output.\\nDetermine the total peak output in hashes for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(175,788\\)",
-      "\\(174,760\\)",
-      "\\(175,959\\)",
-      "\\(174,788\\)"
+    "question": "A coastal desalination plant runs \\(22\\) high-pressure intake pumps.\\nEach pump utilizes \\(360\\) water flow valves. If each valve is fitted with \\(12\\) safety gaskets, calculate the total number of gaskets required.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(95,040\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(95,028\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(95,400\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(94,940\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(1028 \\times 19 \\times 9\\).",
-    "s": "\\(19 \\\\times 1028 = 19532\\)\n\\(19532 \\\\times 9 = 175788\\)\n\\(175,788\\)",
+    "hint": "Multiply the three quantities together: \\(12 \\times 360 \\times 22\\).",
+    "solution": "\\\\(95,040\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active nodes in the system.",
-        "workingOut": "\\(19 \\\\times 1028 = 19532\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 22,\\quad \\text{Per Unit} = 360,\\quad \\text{Per Sub-Unit} = 12\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(9\\)).",
-        "workingOut": "\\(19532 \\\\times 9 = 175788\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(22 \\\\times 360 = 7920\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in hashes.",
-        "workingOut": "\\(175,788\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(7920 \\\\times 12 = 95040\\\\)"
       }
     ],
     "graphData": null
@@ -864,28 +4146,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4006\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(23\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(174\\) packages, remainder \\(4\\) entries",
-      "\\(174 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(175 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(173 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "A container shipping line loads cargo onto \\(15\\) global freighter vessels.\\nEach freighter has \\(450\\) container bay slots. If each container slot uses \\(24\\) lock brackets, calculate the total number of lock brackets required.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(162,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(161,976\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(162,450\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(161,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4006 \\div 23\\).",
-    "s": "\\(4006 \\\\div 23\\)\n\\(23 \\\\times 174 = 4002\\)\n\\(4006 - 4002 = 4 \\implies \\text{Quotient} = 174,\\ \\text{Remainder} = 4\\)",
+    "hint": "Multiply the three quantities together: \\(24 \\times 450 \\times 15\\).",
+    "solution": "\\\\(162,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4006 \\\\div 23\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 450,\\quad \\text{Per Sub-Unit} = 24\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(23 \\\\times 174 = 4002\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(15 \\\\times 450 = 6750\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4006 - 4002 = 4 \\implies \\text{Quotient} = 174,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(6750 \\\\times 24 = 162000\\\\)"
       }
     ],
     "graphData": null
@@ -897,28 +4191,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance logistics distribution hub system is configured with \\(12\\) main sectors.\\nEach sector contains \\(404\\) active conveyors, and each conveyors produces \\(21\\) packages of output.\\nDetermine the total peak output in packages for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(101,808\\)",
-      "\\(101,404\\)",
-      "\\(102,060\\)",
-      "\\(100,808\\)"
+    "question": "A commercial construction firm installs hydronic heating across \\(12\\) apartment floors.\\nEach floor requires \\(144\\) radiator pipelines. If each pipeline is secured with \\(36\\) metal clamps, find the total number of clamps used.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(62,208\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(62,172\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(62,352\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(62,108\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(404 \\times 12 \\times 21\\).",
-    "s": "\\(12 \\\\times 404 = 4848\\)\n\\(4848 \\\\times 21 = 101808\\)\n\\(101,808\\)",
+    "hint": "Multiply the three quantities together: \\(36 \\times 144 \\times 12\\).",
+    "solution": "\\\\(62,208\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active conveyors in the system.",
-        "workingOut": "\\(12 \\\\times 404 = 4848\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 12,\\quad \\text{Per Unit} = 144,\\quad \\text{Per Sub-Unit} = 36\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(21\\)).",
-        "workingOut": "\\(4848 \\\\times 21 = 101808\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(12 \\\\times 144 = 1728\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in packages.",
-        "workingOut": "\\(101,808\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(1728 \\\\times 36 = 62208\\\\)"
       }
     ],
     "graphData": null
@@ -930,28 +4236,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4454\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(25\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(178\\) packages, remainder \\(4\\) entries",
-      "\\(178 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(179 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(177 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "An enterprise server room contains \\(25\\) industrial mainframe racks.\\nEach rack houses \\(230\\) cooling fans. If each fan assembly is secured with \\(48\\) mounting screws, find the total number of screws required.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(276,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(275,952\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(276,230\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(275,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4454 \\div 25\\).",
-    "s": "\\(4454 \\\\div 25\\)\n\\(25 \\\\times 178 = 4450\\)\n\\(4454 - 4450 = 4 \\implies \\text{Quotient} = 178,\\ \\text{Remainder} = 4\\)",
+    "hint": "Multiply the three quantities together: \\(48 \\times 230 \\times 25\\).",
+    "solution": "\\\\(276,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4454 \\\\div 25\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 25,\\quad \\text{Per Unit} = 230,\\quad \\text{Per Sub-Unit} = 48\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(25 \\\\times 178 = 4450\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(25 \\\\times 230 = 5750\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4454 - 4450 = 4 \\implies \\text{Quotient} = 178,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(5750 \\\\times 48 = 276000\\\\)"
       }
     ],
     "graphData": null
@@ -963,28 +4281,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance precision robotics facility system is configured with \\(27\\) main sectors.\\nEach sector contains \\(225\\) active arms, and each arms produces \\(14\\) sensors of output.\\nDetermine the total peak output in sensors for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(85,050\\)",
-      "\\(84,825\\)",
-      "\\(85,428\\)",
-      "\\(84,050\\)"
+    "question": "A food processing plant operates \\(18\\) optical grain sorting machines.\\nEach machine contains \\(680\\) sensor channels. If each sensor channel utilizes \\(15\\) laser diodes, calculate the total number of diodes.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(183,600\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(183,585\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(184,280\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(183,500\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(225 \\times 27 \\times 14\\).",
-    "s": "\\(27 \\\\times 225 = 6075\\)\n\\(6075 \\\\times 14 = 85050\\)\n\\(85,050\\)",
+    "hint": "Multiply the three quantities together: \\(15 \\times 680 \\times 18\\).",
+    "solution": "\\\\(183,600\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active arms in the system.",
-        "workingOut": "\\(27 \\\\times 225 = 6075\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 18,\\quad \\text{Per Unit} = 680,\\quad \\text{Per Sub-Unit} = 15\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(6075 \\\\times 14 = 85050\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(18 \\\\times 680 = 12240\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in sensors.",
-        "workingOut": "\\(85,050\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(12240 \\\\times 15 = 183600\\\\)"
       }
     ],
     "graphData": null
@@ -996,28 +4326,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4918\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(27\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(182\\) packages, remainder \\(4\\) entries",
-      "\\(182 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(183 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(181 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "A driverless taxi operator manufactures a fleet of \\(50\\) autonomous passenger cars.\\nEach car is fitted with \\(85\\) optical sensor modules. If each module contains \\(14\\) specialized lenses, calculate the total lens count.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(59,500\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(59,486\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(59,585\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(59,400\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4918 \\div 27\\).",
-    "s": "\\(4918 \\\\div 27\\)\n\\(27 \\\\times 182 = 4914\\)\n\\(4918 - 4914 = 4 \\implies \\text{Quotient} = 182,\\ \\text{Remainder} = 4\\)",
+    "hint": "Multiply the three quantities together: \\(14 \\times 85 \\times 50\\).",
+    "solution": "\\\\(59,500\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4918 \\\\div 27\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 50,\\quad \\text{Per Unit} = 85,\\quad \\text{Per Sub-Unit} = 14\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(27 \\\\times 182 = 4914\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(50 \\\\times 85 = 4250\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4918 - 4914 = 4 \\implies \\text{Quotient} = 182,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(4250 \\\\times 14 = 59500\\\\)"
       }
     ],
     "graphData": null
@@ -1029,28 +4371,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance aerospace cargo bay system is configured with \\(28\\) main sectors.\\nEach sector contains \\(546\\) active pallets, and each pallets produces \\(14\\) kilograms of output.\\nDetermine the total peak output in kilograms for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(214,032\\)",
-      "\\(213,486\\)",
-      "\\(214,424\\)",
-      "\\(213,032\\)"
+    "question": "An electronics factory manufactures printed circuit boards in \\(14\\) assembly batches.\\nEach batch yields \\(240\\) circuit boards. If each circuit board requires \\(125\\) solder joints, calculate the total number of solder joints.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(420,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(419,875\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(420,240\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(419,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(546 \\times 28 \\times 14\\).",
-    "s": "\\(28 \\\\times 546 = 15288\\)\n\\(15288 \\\\times 14 = 214032\\)\n\\(214,032\\)",
+    "hint": "Multiply the three quantities together: \\(125 \\times 240 \\times 14\\).",
+    "solution": "\\\\(420,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active pallets in the system.",
-        "workingOut": "\\(28 \\\\times 546 = 15288\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 240,\\quad \\text{Per Sub-Unit} = 125\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(15288 \\\\times 14 = 214032\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(14 \\\\times 240 = 3360\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in kilograms.",
-        "workingOut": "\\(214,032\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(3360 \\\\times 125 = 420000\\\\)"
       }
     ],
     "graphData": null
@@ -1062,28 +4416,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(5398\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(29\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(186\\) packages, remainder \\(4\\) entries",
-      "\\(186 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(187 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(185 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "A defense facility installs biometric verification gates at \\(16\\) secure complexes.\\nEach complex has \\(375\\) access doors. If each access door requires \\(8\\) card scanners, calculate the total number of scanners.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(48,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(47,992\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(48,375\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(47,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(5398 \\div 29\\).",
-    "s": "\\(5398 \\\\div 29\\)\n\\(29 \\\\times 186 = 5394\\)\n\\(5398 - 5394 = 4 \\implies \\text{Quotient} = 186,\\ \\text{Remainder} = 4\\)",
+    "hint": "Multiply the three quantities together: \\(8 \\times 375 \\times 16\\).",
+    "solution": "\\\\(48,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(5398 \\\\div 29\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 16,\\quad \\text{Per Unit} = 375,\\quad \\text{Per Sub-Unit} = 8\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(29 \\\\times 186 = 5394\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(16 \\\\times 375 = 6000\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(5398 - 5394 = 4 \\implies \\text{Quotient} = 186,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(6000 \\\\times 8 = 48000\\\\)"
       }
     ],
     "graphData": null
@@ -1095,28 +4461,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance pharmaceutical bottling plant system is configured with \\(22\\) main sectors.\\nEach sector contains \\(282\\) active crates, and each crates produces \\(28\\) vials of output.\\nDetermine the total peak output in vials for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(173,712\\)",
-      "\\(173,430\\)",
-      "\\(174,328\\)",
-      "\\(172,712\\)"
+    "question": "A municipal utility installs smart energy meters across \\(20\\) neighborhood districts.\\nEach district contains \\(640\\) households. If each household meter reports on \\(24\\) variables, find the total data variables tracked.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(307,200\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(307,176\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(307,840\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(307,100\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(282 \\times 22 \\times 28\\).",
-    "s": "\\(22 \\\\times 282 = 6204\\)\n\\(6204 \\\\times 28 = 173712\\)\n\\(173,712\\)",
+    "hint": "Multiply the three quantities together: \\(24 \\times 640 \\times 20\\).",
+    "solution": "\\\\(307,200\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active crates in the system.",
-        "workingOut": "\\(22 \\\\times 282 = 6204\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 20,\\quad \\text{Per Unit} = 640,\\quad \\text{Per Sub-Unit} = 24\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(28\\)).",
-        "workingOut": "\\(6204 \\\\times 28 = 173712\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(20 \\\\times 640 = 12800\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in vials.",
-        "workingOut": "\\(173,712\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(12800 \\\\times 24 = 307200\\\\)"
       }
     ],
     "graphData": null
@@ -1128,28 +4506,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(2667\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(14\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(190\\) packages, remainder \\(7\\) entries",
-      "\\(190 remainder 5\\) packages, remainder \\(7\\) entries",
-      "\\(191 remainder 7\\) packages, remainder \\(7\\) entries",
-      "\\(189 remainder 8\\) packages, remainder \\(7\\) entries"
+    "question": "A chemical company sets up laboratories in \\(35\\) regional locations.\\nEach lab runs \\(120\\) high-speed centrifuges. If each centrifuge requires \\(16\\) silicone seals, calculate the total number of seals ordered.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(67,200\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(67,184\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(67,320\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(67,100\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(2667 \\div 14\\).",
-    "s": "\\(2667 \\\\div 14\\)\n\\(14 \\\\times 190 = 2660\\)\n\\(2667 - 2660 = 7 \\implies \\text{Quotient} = 190,\\ \\text{Remainder} = 7\\)",
+    "hint": "Multiply the three quantities together: \\(16 \\times 120 \\times 35\\).",
+    "solution": "\\\\(67,200\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(2667 \\\\div 14\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 35,\\quad \\text{Per Unit} = 120,\\quad \\text{Per Sub-Unit} = 16\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(14 \\\\times 190 = 2660\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(35 \\\\times 120 = 4200\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(2667 - 2660 = 7 \\implies \\text{Quotient} = 190,\\ \\text{Remainder} = 7\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(4200 \\\\times 16 = 67200\\\\)"
       }
     ],
     "graphData": null
@@ -1161,28 +4551,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance cryptocurrency mining rig system is configured with \\(15\\) main sectors.\\nEach sector contains \\(1058\\) active nodes, and each nodes produces \\(9\\) hashes of output.\\nDetermine the total peak output in hashes for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(142,830\\)",
-      "\\(141,772\\)",
-      "\\(142,965\\)",
-      "\\(141,830\\)"
+    "question": "A semiconductor fabrication plant maintains air purity across \\(15\\) cleanroom bays.\\nEach cleanroom bay houses \\(560\\) ventilation units. If each ventilation unit contains \\(12\\) HEPA filters, calculate the total filter count.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(100,800\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(100,788\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(101,360\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(100,700\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(1058 \\times 15 \\times 9\\).",
-    "s": "\\(15 \\\\times 1058 = 15870\\)\n\\(15870 \\\\times 9 = 142830\\)\n\\(142,830\\)",
+    "hint": "Multiply the three quantities together: \\(12 \\times 560 \\times 15\\).",
+    "solution": "\\\\(100,800\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active nodes in the system.",
-        "workingOut": "\\(15 \\\\times 1058 = 15870\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 560,\\quad \\text{Per Sub-Unit} = 12\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(9\\)).",
-        "workingOut": "\\(15870 \\\\times 9 = 142830\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(15 \\\\times 560 = 8400\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in hashes.",
-        "workingOut": "\\(142,830\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(8400 \\\\times 12 = 100800\\\\)"
       }
     ],
     "graphData": null
@@ -1194,28 +4596,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3109\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(16\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(194\\) packages, remainder \\(5\\) entries",
-      "\\(194 remainder 3\\) packages, remainder \\(5\\) entries",
-      "\\(195 remainder 5\\) packages, remainder \\(5\\) entries",
-      "\\(193 remainder 6\\) packages, remainder \\(5\\) entries"
+    "question": "A mobile network operator constructs \\(14\\) communication transmission towers.\\nEach tower connects \\(150\\) fiber patch panels. If each patch panel features \\(48\\) ports, calculate the total number of ports.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(100,800\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(100,752\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(100,950\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(100,700\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3109 \\div 16\\).",
-    "s": "\\(3109 \\\\div 16\\)\n\\(16 \\\\times 194 = 3104\\)\n\\(3109 - 3104 = 5 \\implies \\text{Quotient} = 194,\\ \\text{Remainder} = 5\\)",
+    "hint": "Multiply the three quantities together: \\(48 \\times 150 \\times 14\\).",
+    "solution": "\\\\(100,800\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3109 \\\\div 16\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 150,\\quad \\text{Per Sub-Unit} = 48\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(16 \\\\times 194 = 3104\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(14 \\\\times 150 = 2100\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3109 - 3104 = 5 \\implies \\text{Quotient} = 194,\\ \\text{Remainder} = 5\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(2100 \\\\times 48 = 100800\\\\)"
       }
     ],
     "graphData": null
@@ -1227,28 +4641,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance logistics distribution hub system is configured with \\(15\\) main sectors.\\nEach sector contains \\(434\\) active conveyors, and each conveyors produces \\(21\\) packages of output.\\nDetermine the total peak output in packages for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(136,710\\)",
-      "\\(136,276\\)",
-      "\\(137,025\\)",
-      "\\(135,710\\)"
+    "question": "A commercial port operator commissions \\(12\\) giant cargo container cranes.\\nEach crane structure contains \\(280\\) steel joints. If each joint is fastened with \\(32\\) industrial rivets, find the total number of rivets.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(107,520\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(107,488\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(107,800\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(107,420\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(434 \\times 15 \\times 21\\).",
-    "s": "\\(15 \\\\times 434 = 6510\\)\n\\(6510 \\\\times 21 = 136710\\)\n\\(136,710\\)",
+    "hint": "Multiply the three quantities together: \\(32 \\times 280 \\times 12\\).",
+    "solution": "\\\\(107,520\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active conveyors in the system.",
-        "workingOut": "\\(15 \\\\times 434 = 6510\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 12,\\quad \\text{Per Unit} = 280,\\quad \\text{Per Sub-Unit} = 32\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(21\\)).",
-        "workingOut": "\\(6510 \\\\times 21 = 136710\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(12 \\\\times 280 = 3360\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in packages.",
-        "workingOut": "\\(136,710\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(3360 \\\\times 32 = 107520\\\\)"
       }
     ],
     "graphData": null
@@ -1260,28 +4686,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3567\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(18\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(198\\) packages, remainder \\(3\\) entries",
-      "\\(198 remainder 1\\) packages, remainder \\(3\\) entries",
-      "\\(199 remainder 3\\) packages, remainder \\(3\\) entries",
-      "\\(197 remainder 4\\) packages, remainder \\(3\\) entries"
+    "question": "A smart city initiative deploys streetlights across \\(18\\) municipal roads.\\nEach road features \\(350\\) lampposts. If each lamppost is fitted with \\(64\\) high-intensity LED diodes, calculate the total number of LEDs.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(403,200\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(403,136\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(403,550\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(403,100\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3567 \\div 18\\).",
-    "s": "\\(3567 \\\\div 18\\)\n\\(18 \\\\times 198 = 3564\\)\n\\(3567 - 3564 = 3 \\implies \\text{Quotient} = 198,\\ \\text{Remainder} = 3\\)",
+    "hint": "Multiply the three quantities together: \\(64 \\times 350 \\times 18\\).",
+    "solution": "\\\\(403,200\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3567 \\\\div 18\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 18,\\quad \\text{Per Unit} = 350,\\quad \\text{Per Sub-Unit} = 64\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(18 \\\\times 198 = 3564\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(18 \\\\times 350 = 6300\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3567 - 3564 = 3 \\implies \\text{Quotient} = 198,\\ \\text{Remainder} = 3\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(6300 \\\\times 64 = 403200\\\\)"
       }
     ],
     "graphData": null
@@ -1293,28 +4731,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance precision robotics facility system is configured with \\(30\\) main sectors.\\nEach sector contains \\(255\\) active arms, and each arms produces \\(14\\) sensors of output.\\nDetermine the total peak output in sensors for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(107,100\\)",
-      "\\(106,845\\)",
-      "\\(107,520\\)",
-      "\\(106,100\\)"
+    "question": "A search engine company upgrades RAM in \\(25\\) supercomputing mainframe cabinets.\\nEach cabinet contains \\(96\\) server blades. If each server blade requires \\(240\\) memory pin connectors, calculate the total number of pin connectors.",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(576,000\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(575,760\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(576,096\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(575,900\\\\)",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(255 \\times 30 \\times 14\\).",
-    "s": "\\(30 \\\\times 255 = 7650\\)\n\\(7650 \\\\times 14 = 107100\\)\n\\(107,100\\)",
+    "hint": "Multiply the three quantities together: \\(240 \\times 96 \\times 25\\).",
+    "solution": "\\\\(576,000\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active arms in the system.",
-        "workingOut": "\\(30 \\\\times 255 = 7650\\)"
+        "explanation": "Identify the base units and calculation elements from the problem statement.",
+        "workingOut": "\\\\(\\text{Units} = 25,\\quad \\text{Per Unit} = 96,\\quad \\text{Per Sub-Unit} = 240\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(7650 \\\\times 14 = 107100\\)"
+        "explanation": "Calculate the total sub-units across all units.",
+        "workingOut": "\\\\(25 \\\\times 96 = 2400\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in sensors.",
-        "workingOut": "\\(107,100\\)"
+        "explanation": "Multiply by the final value per sub-unit to get the total output.",
+        "workingOut": "\\\\(2400 \\\\times 240 = 576000\\\\)"
       }
     ],
     "graphData": null
@@ -1326,28 +4776,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4041\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(20\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(202\\) packages, remainder \\(1\\) entries",
-      "\\(202 remainder 0\\) packages, remainder \\(1\\) entries",
-      "\\(203 remainder 1\\) packages, remainder \\(1\\) entries",
-      "\\(201 remainder 2\\) packages, remainder \\(1\\) entries"
+    "question": "A calibration laboratory tests \\(2465\\) sensory data entries.\\nThe processor packages the entries into test blocks of \\(17\\) entries each.\\nHow many full blocks are created, and how many leftover entries remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(145\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(145 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(146 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(144 remainder 1\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4041 \\div 20\\).",
-    "s": "\\(4041 \\\\div 20\\)\n\\(20 \\\\times 202 = 4040\\)\n\\(4041 - 4040 = 1 \\implies \\text{Quotient} = 202,\\ \\text{Remainder} = 1\\)",
+    "hint": "Divide the total data pool by the divisor: \\(2465 \\div 17\\).",
+    "solution": "\\\\(145\\\\) packages, remainder \\\\(0\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4041 \\\\div 20\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 2465,\\quad \\text{Divisor} = 17\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(20 \\\\times 202 = 4040\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(2465 \\\\div 17 = 145\\\\text{ remainder } 0\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4041 - 4040 = 1 \\implies \\text{Quotient} = 202,\\ \\text{Remainder} = 1\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(0 < 17 \\implies \\\\text{Quotient: } 145,\\ \\\\text{Remainder: } 0\\\\)"
       }
     ],
     "graphData": null
@@ -1359,28 +4821,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance aerospace cargo bay system is configured with \\(24\\) main sectors.\\nEach sector contains \\(576\\) active pallets, and each pallets produces \\(14\\) kilograms of output.\\nDetermine the total peak output in kilograms for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(193,536\\)",
-      "\\(192,960\\)",
-      "\\(193,872\\)",
-      "\\(192,536\\)"
+    "question": "A secure cryptographic server processes \\(4187\\) data blocks.\\nThe blocks are partitioned into secure batches of \\(23\\) blocks each.\\nHow many full batches are created, and how many leftover blocks remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(182\\\\) packages, remainder \\\\(1\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(182 remainder 0\\\\) packages, remainder \\\\(1\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(183 remainder 1\\\\) packages, remainder \\\\(1\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(181 remainder 2\\\\) packages, remainder \\\\(1\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(576 \\times 24 \\times 14\\).",
-    "s": "\\(24 \\\\times 576 = 13824\\)\n\\(13824 \\\\times 14 = 193536\\)\n\\(193,536\\)",
+    "hint": "Divide the total data pool by the divisor: \\(4187 \\div 23\\).",
+    "solution": "\\\\(182\\\\) packages, remainder \\\\(1\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active pallets in the system.",
-        "workingOut": "\\(24 \\\\times 576 = 13824\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 4187,\\quad \\text{Divisor} = 23\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(13824 \\\\times 14 = 193536\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(4187 \\\\div 23 = 182\\\\text{ remainder } 1\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in kilograms.",
-        "workingOut": "\\(193,536\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(1 < 23 \\implies \\\\text{Quotient: } 182,\\ \\\\text{Remainder: } 1\\\\)"
       }
     ],
     "graphData": null
@@ -1392,28 +4866,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4553\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(22\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(206\\) packages, remainder \\(21\\) entries",
-      "\\(206 remainder 19\\) packages, remainder \\(21\\) entries",
-      "\\(207 remainder 21\\) packages, remainder \\(21\\) entries",
-      "\\(205 remainder 22\\) packages, remainder \\(21\\) entries"
+    "question": "A community solar microgrid distributes electrical power to \\(3057\\) homes.\\nThe homes are connected in local grids of \\(13\\) homes each.\\nHow many full local grids can be formed, and how many leftover homes remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(235\\\\) packages, remainder \\\\(2\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(235 remainder 0\\\\) packages, remainder \\\\(2\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(236 remainder 2\\\\) packages, remainder \\\\(2\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(234 remainder 3\\\\) packages, remainder \\\\(2\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4553 \\div 22\\).",
-    "s": "\\(4553 \\\\div 22\\)\n\\(22 \\\\times 206 = 4532\\)\n\\(4553 - 4532 = 21 \\implies \\text{Quotient} = 206,\\ \\text{Remainder} = 21\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3057 \\div 13\\).",
+    "solution": "\\\\(235\\\\) packages, remainder \\\\(2\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4553 \\\\div 22\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3057,\\quad \\text{Divisor} = 13\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(22 \\\\times 206 = 4532\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3057 \\\\div 13 = 235\\\\text{ remainder } 2\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4553 - 4532 = 21 \\implies \\text{Quotient} = 206,\\ \\text{Remainder} = 21\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(2 < 13 \\implies \\\\text{Quotient: } 235,\\ \\\\text{Remainder: } 2\\\\)"
       }
     ],
     "graphData": null
@@ -1425,28 +4911,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance pharmaceutical bottling plant system is configured with \\(18\\) main sectors.\\nEach sector contains \\(312\\) active crates, and each crates produces \\(28\\) vials of output.\\nDetermine the total peak output in vials for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(157,248\\)",
-      "\\(156,936\\)",
-      "\\(157,752\\)",
-      "\\(156,248\\)"
+    "question": "A gas pipeline inspection robot checks \\(3251\\) pressure valves.\\nThe valves are grouped into segments of \\(29\\) valves each.\\nHow many full segments are inspected, and how many leftover valves remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(112\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(112 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(113 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(111 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(312 \\times 18 \\times 28\\).",
-    "s": "\\(18 \\\\times 312 = 5616\\)\n\\(5616 \\\\times 28 = 157248\\)\n\\(157,248\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3251 \\div 29\\).",
+    "solution": "\\\\(112\\\\) packages, remainder \\\\(3\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active crates in the system.",
-        "workingOut": "\\(18 \\\\times 312 = 5616\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3251,\\quad \\text{Divisor} = 29\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(28\\)).",
-        "workingOut": "\\(5616 \\\\times 28 = 157248\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3251 \\\\div 29 = 112\\\\text{ remainder } 3\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in vials.",
-        "workingOut": "\\(157,248\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(3 < 29 \\implies \\\\text{Quotient: } 112,\\ \\\\text{Remainder: } 3\\\\)"
       }
     ],
     "graphData": null
@@ -1458,28 +4956,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(5061\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(24\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(210\\) packages, remainder \\(21\\) entries",
-      "\\(210 remainder 19\\) packages, remainder \\(21\\) entries",
-      "\\(211 remainder 21\\) packages, remainder \\(21\\) entries",
-      "\\(209 remainder 22\\) packages, remainder \\(21\\) entries"
+    "question": "A shipping warehouse prepares \\(5119\\) parcel boxes for dispatch.\\nThe parcel boxes are loaded onto pallets of \\(31\\) boxes each.\\nHow many full pallets are loaded, and how many leftover boxes remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(165\\\\) packages, remainder \\\\(4\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(165 remainder 2\\\\) packages, remainder \\\\(4\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(166 remainder 4\\\\) packages, remainder \\\\(4\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(164 remainder 5\\\\) packages, remainder \\\\(4\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(5061 \\div 24\\).",
-    "s": "\\(5061 \\\\div 24\\)\n\\(24 \\\\times 210 = 5040\\)\n\\(5061 - 5040 = 21 \\implies \\text{Quotient} = 210,\\ \\text{Remainder} = 21\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5119 \\div 31\\).",
+    "solution": "\\\\(165\\\\) packages, remainder \\\\(4\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(5061 \\\\div 24\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5119,\\quad \\text{Divisor} = 31\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(24 \\\\times 210 = 5040\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5119 \\\\div 31 = 165\\\\text{ remainder } 4\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(5061 - 5040 = 21 \\implies \\text{Quotient} = 210,\\ \\text{Remainder} = 21\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(4 < 31 \\implies \\\\text{Quotient: } 165,\\ \\\\text{Remainder: } 4\\\\)"
       }
     ],
     "graphData": null
@@ -1491,28 +5001,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance cryptocurrency mining rig system is configured with \\(18\\) main sectors.\\nEach sector contains \\(1088\\) active nodes, and each nodes produces \\(9\\) hashes of output.\\nDetermine the total peak output in hashes for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(176,256\\)",
-      "\\(175,168\\)",
-      "\\(176,418\\)",
-      "\\(175,256\\)"
+    "question": "An ornithology sanctuary monitors \\(2437\\) migratory birds.\\nThe birds are banded in group flocks of \\(19\\) birds each for tracking.\\nHow many full flocks are formed, and how many leftover birds remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(128\\\\) packages, remainder \\\\(5\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(128 remainder 3\\\\) packages, remainder \\\\(5\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(129 remainder 5\\\\) packages, remainder \\\\(5\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(127 remainder 6\\\\) packages, remainder \\\\(5\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(1088 \\times 18 \\times 9\\).",
-    "s": "\\(18 \\\\times 1088 = 19584\\)\n\\(19584 \\\\times 9 = 176256\\)\n\\(176,256\\)",
+    "hint": "Divide the total data pool by the divisor: \\(2437 \\div 19\\).",
+    "solution": "\\\\(128\\\\) packages, remainder \\\\(5\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active nodes in the system.",
-        "workingOut": "\\(18 \\\\times 1088 = 19584\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 2437,\\quad \\text{Divisor} = 19\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(9\\)).",
-        "workingOut": "\\(19584 \\\\times 9 = 176256\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(2437 \\\\div 19 = 128\\\\text{ remainder } 5\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in hashes.",
-        "workingOut": "\\(176,256\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(5 < 19 \\implies \\\\text{Quotient: } 128,\\ \\\\text{Remainder: } 5\\\\)"
       }
     ],
     "graphData": null
@@ -1524,28 +5046,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(5585\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(26\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(214\\) packages, remainder \\(21\\) entries",
-      "\\(214 remainder 19\\) packages, remainder \\(21\\) entries",
-      "\\(215 remainder 21\\) packages, remainder \\(21\\) entries",
-      "\\(213 remainder 22\\) packages, remainder \\(21\\) entries"
+    "question": "A mechanical factory packages \\(3854\\) precision gears.\\nThe gears are stored in cases of \\(37\\) gears each.\\nHow many full cases are packed, and how many leftover gears remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(104\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(104 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(105 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(103 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(5585 \\div 26\\).",
-    "s": "\\(5585 \\\\div 26\\)\n\\(26 \\\\times 214 = 5564\\)\n\\(5585 - 5564 = 21 \\implies \\text{Quotient} = 214,\\ \\text{Remainder} = 21\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3854 \\div 37\\).",
+    "solution": "\\\\(104\\\\) packages, remainder \\\\(6\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(5585 \\\\div 26\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3854,\\quad \\text{Divisor} = 37\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(26 \\\\times 214 = 5564\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3854 \\\\div 37 = 104\\\\text{ remainder } 6\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(5585 - 5564 = 21 \\implies \\text{Quotient} = 214,\\ \\text{Remainder} = 21\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(6 < 37 \\implies \\\\text{Quotient: } 104,\\ \\\\text{Remainder: } 6\\\\)"
       }
     ],
     "graphData": null
@@ -1557,28 +5091,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance logistics distribution hub system is configured with \\(18\\) main sectors.\\nEach sector contains \\(464\\) active conveyors, and each conveyors produces \\(21\\) packages of output.\\nDetermine the total peak output in packages for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(175,392\\)",
-      "\\(174,928\\)",
-      "\\(175,770\\)",
-      "\\(174,392\\)"
+    "question": "A seismology laboratory logs \\(6403\\) tremor signals.\\nThe signals are archived in data blocks of \\(41\\) signals each.\\nHow many full data blocks are saved, and how many leftover signals remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(156\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(156 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(157 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(155 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(464 \\times 18 \\times 21\\).",
-    "s": "\\(18 \\\\times 464 = 8352\\)\n\\(8352 \\\\times 21 = 175392\\)\n\\(175,392\\)",
+    "hint": "Divide the total data pool by the divisor: \\(6403 \\div 41\\).",
+    "solution": "\\\\(156\\\\) packages, remainder \\\\(7\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active conveyors in the system.",
-        "workingOut": "\\(18 \\\\times 464 = 8352\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 6403,\\quad \\text{Divisor} = 41\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(21\\)).",
-        "workingOut": "\\(8352 \\\\times 21 = 175392\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(6403 \\\\div 41 = 156\\\\text{ remainder } 7\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in packages.",
-        "workingOut": "\\(175,392\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(7 < 41 \\implies \\\\text{Quotient: } 156,\\ \\\\text{Remainder: } 7\\\\)"
       }
     ],
     "graphData": null
@@ -1590,28 +5136,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(6125\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(28\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(218\\) packages, remainder \\(21\\) entries",
-      "\\(218 remainder 19\\) packages, remainder \\(21\\) entries",
-      "\\(219 remainder 21\\) packages, remainder \\(21\\) entries",
-      "\\(217 remainder 22\\) packages, remainder \\(21\\) entries"
+    "question": "A marine weather network operates \\(3448\\) transmitters.\\nThe transmitters are installed in local clusters of \\(16\\) transmitters each.\\nHow many full clusters are active, and how many leftover transmitters remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(215\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(215 remainder 6\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(216 remainder 8\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(214 remainder 9\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(6125 \\div 28\\).",
-    "s": "\\(6125 \\\\div 28\\)\n\\(28 \\\\times 218 = 6104\\)\n\\(6125 - 6104 = 21 \\implies \\text{Quotient} = 218,\\ \\text{Remainder} = 21\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3448 \\div 16\\).",
+    "solution": "\\\\(215\\\\) packages, remainder \\\\(8\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(6125 \\\\div 28\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3448,\\quad \\text{Divisor} = 16\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(28 \\\\times 218 = 6104\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3448 \\\\div 16 = 215\\\\text{ remainder } 8\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(6125 - 6104 = 21 \\implies \\text{Quotient} = 218,\\ \\text{Remainder} = 21\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(8 < 16 \\implies \\\\text{Quotient: } 215,\\ \\\\text{Remainder: } 8\\\\)"
       }
     ],
     "graphData": null
@@ -1623,28 +5181,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance precision robotics facility system is configured with \\(26\\) main sectors.\\nEach sector contains \\(285\\) active arms, and each arms produces \\(14\\) sensors of output.\\nDetermine the total peak output in sensors for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(103,740\\)",
-      "\\(103,455\\)",
-      "\\(104,104\\)",
-      "\\(102,740\\)"
+    "question": "A biomedical facility packages \\(4617\\) vaccine vials.\\nThe vials are loaded into shipping trays of \\(24\\) vials each.\\nHow many full shipping trays are completed, and how many leftover vials remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(192\\\\) packages, remainder \\\\(9\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(192 remainder 7\\\\) packages, remainder \\\\(9\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(193 remainder 9\\\\) packages, remainder \\\\(9\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(191 remainder 10\\\\) packages, remainder \\\\(9\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(285 \\times 26 \\times 14\\).",
-    "s": "\\(26 \\\\times 285 = 7410\\)\n\\(7410 \\\\times 14 = 103740\\)\n\\(103,740\\)",
+    "hint": "Divide the total data pool by the divisor: \\(4617 \\div 24\\).",
+    "solution": "\\\\(192\\\\) packages, remainder \\\\(9\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active arms in the system.",
-        "workingOut": "\\(26 \\\\times 285 = 7410\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 4617,\\quad \\text{Divisor} = 24\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(7410 \\\\times 14 = 103740\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(4617 \\\\div 24 = 192\\\\text{ remainder } 9\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in sensors.",
-        "workingOut": "\\(103,740\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(9 < 24 \\implies \\\\text{Quotient: } 192,\\ \\\\text{Remainder: } 9\\\\)"
       }
     ],
     "graphData": null
@@ -1656,28 +5226,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(2898\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(13\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(222\\) packages, remainder \\(12\\) entries",
-      "\\(222 remainder 10\\) packages, remainder \\(12\\) entries",
-      "\\(223 remainder 12\\) packages, remainder \\(12\\) entries",
-      "\\(221 remainder 13\\) packages, remainder \\(12\\) entries"
+    "question": "An aerospace quality controller inspects \\(5500\\) fuselage rivets.\\nThe rivets are categorized in test lines of \\(18\\) rivets each.\\nHow many full lines are inspected, and how many leftover rivets remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(305\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(305 remainder 8\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(306 remainder 10\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(304 remainder 11\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(2898 \\div 13\\).",
-    "s": "\\(2898 \\\\div 13\\)\n\\(13 \\\\times 222 = 2886\\)\n\\(2898 - 2886 = 12 \\implies \\text{Quotient} = 222,\\ \\text{Remainder} = 12\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5500 \\div 18\\).",
+    "solution": "\\\\(305\\\\) packages, remainder \\\\(10\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(2898 \\\\div 13\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5500,\\quad \\text{Divisor} = 18\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(13 \\\\times 222 = 2886\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5500 \\\\div 18 = 305\\\\text{ remainder } 10\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(2898 - 2886 = 12 \\implies \\text{Quotient} = 222,\\ \\text{Remainder} = 12\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(10 < 18 \\implies \\\\text{Quotient: } 305,\\ \\\\text{Remainder: } 10\\\\)"
       }
     ],
     "graphData": null
@@ -1689,28 +5271,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance aerospace cargo bay system is configured with \\(27\\) main sectors.\\nEach sector contains \\(606\\) active pallets, and each pallets produces \\(14\\) kilograms of output.\\nDetermine the total peak output in kilograms for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(229,068\\)",
-      "\\(228,462\\)",
-      "\\(229,446\\)",
-      "\\(228,068\\)"
+    "question": "A quantum compiler maps \\(3787\\) computational nodes.\\nThe nodes are grouped into execution units of \\(32\\) nodes each.\\nHow many full execution units are mapped, and how many leftover nodes remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(118\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(118 remainder 9\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(119 remainder 11\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(117 remainder 12\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(606 \\times 27 \\times 14\\).",
-    "s": "\\(27 \\\\times 606 = 16362\\)\n\\(16362 \\\\times 14 = 229068\\)\n\\(229,068\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3787 \\div 32\\).",
+    "solution": "\\\\(118\\\\) packages, remainder \\\\(11\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active pallets in the system.",
-        "workingOut": "\\(27 \\\\times 606 = 16362\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3787,\\quad \\text{Divisor} = 32\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(16362 \\\\times 14 = 229068\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3787 \\\\div 32 = 118\\\\text{ remainder } 11\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in kilograms.",
-        "workingOut": "\\(229,068\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(11 < 32 \\implies \\\\text{Quotient: } 118,\\ \\\\text{Remainder: } 11\\\\)"
       }
     ],
     "graphData": null
@@ -1722,28 +5316,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3398\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(15\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(226\\) packages, remainder \\(8\\) entries",
-      "\\(226 remainder 6\\) packages, remainder \\(8\\) entries",
-      "\\(227 remainder 8\\) packages, remainder \\(8\\) entries",
-      "\\(225 remainder 9\\) packages, remainder \\(8\\) entries"
+    "question": "A department store arranges \\(3912\\) inventory crates.\\nThe crates are stacked on metal shelves of \\(15\\) crates each.\\nHow many full shelves are loaded, and how many leftover crates remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(260\\\\) packages, remainder \\\\(12\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(260 remainder 10\\\\) packages, remainder \\\\(12\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(261 remainder 12\\\\) packages, remainder \\\\(12\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(259 remainder 13\\\\) packages, remainder \\\\(12\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3398 \\div 15\\).",
-    "s": "\\(3398 \\\\div 15\\)\n\\(15 \\\\times 226 = 3390\\)\n\\(3398 - 3390 = 8 \\implies \\text{Quotient} = 226,\\ \\text{Remainder} = 8\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3912 \\div 15\\).",
+    "solution": "\\\\(260\\\\) packages, remainder \\\\(12\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3398 \\\\div 15\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3912,\\quad \\text{Divisor} = 15\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(15 \\\\times 226 = 3390\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3912 \\\\div 15 = 260\\\\text{ remainder } 12\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3398 - 3390 = 8 \\implies \\text{Quotient} = 226,\\ \\text{Remainder} = 8\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(12 < 15 \\implies \\\\text{Quotient: } 260,\\ \\\\text{Remainder: } 12\\\\)"
       }
     ],
     "graphData": null
@@ -1755,28 +5361,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance pharmaceutical bottling plant system is configured with \\(21\\) main sectors.\\nEach sector contains \\(342\\) active crates, and each crates produces \\(28\\) vials of output.\\nDetermine the total peak output in vials for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(201,096\\)",
-      "\\(200,754\\)",
-      "\\(201,684\\)",
-      "\\(200,096\\)"
+    "question": "A vehicle plant processes \\(8113\\) lithium battery cells.\\nThe cells are compiled into standard packs of \\(45\\) cells each.\\nHow many full battery packs can be built, and how many leftover cells remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(180\\\\) packages, remainder \\\\(13\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(180 remainder 11\\\\) packages, remainder \\\\(13\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(181 remainder 13\\\\) packages, remainder \\\\(13\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(179 remainder 14\\\\) packages, remainder \\\\(13\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(342 \\times 21 \\times 28\\).",
-    "s": "\\(21 \\\\times 342 = 7182\\)\n\\(7182 \\\\times 28 = 201096\\)\n\\(201,096\\)",
+    "hint": "Divide the total data pool by the divisor: \\(8113 \\div 45\\).",
+    "solution": "\\\\(180\\\\) packages, remainder \\\\(13\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active crates in the system.",
-        "workingOut": "\\(21 \\\\times 342 = 7182\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 8113,\\quad \\text{Divisor} = 45\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(28\\)).",
-        "workingOut": "\\(7182 \\\\times 28 = 201096\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(8113 \\\\div 45 = 180\\\\text{ remainder } 13\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in vials.",
-        "workingOut": "\\(201,096\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(13 < 45 \\implies \\\\text{Quotient: } 180,\\ \\\\text{Remainder: } 13\\\\)"
       }
     ],
     "graphData": null
@@ -1788,28 +5406,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3914\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(17\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(230\\) packages, remainder \\(4\\) entries",
-      "\\(230 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(231 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(229 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "A telecom satellite array registers \\(5404\\) antenna elements.\\nThe elements are wired in transceiver channels of \\(22\\) elements each.\\nHow many full channels are connected, and how many leftover elements remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(245\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(245 remainder 12\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(246 remainder 14\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(244 remainder 15\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3914 \\div 17\\).",
-    "s": "\\(3914 \\\\div 17\\)\n\\(17 \\\\times 230 = 3910\\)\n\\(3914 - 3910 = 4 \\implies \\text{Quotient} = 230,\\ \\text{Remainder} = 4\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5404 \\div 22\\).",
+    "solution": "\\\\(245\\\\) packages, remainder \\\\(14\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3914 \\\\div 17\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5404,\\quad \\text{Divisor} = 22\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(17 \\\\times 230 = 3910\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5404 \\\\div 22 = 245\\\\text{ remainder } 14\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3914 - 3910 = 4 \\implies \\text{Quotient} = 230,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(14 < 22 \\implies \\\\text{Quotient: } 245,\\ \\\\text{Remainder: } 14\\\\)"
       }
     ],
     "graphData": null
@@ -1821,28 +5451,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance cryptocurrency mining rig system is configured with \\(14\\) main sectors.\\nEach sector contains \\(1118\\) active nodes, and each nodes produces \\(9\\) hashes of output.\\nDetermine the total peak output in hashes for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(140,868\\)",
-      "\\(139,750\\)",
-      "\\(140,994\\)",
-      "\\(139,868\\)"
+    "question": "A naval shipyard aligns \\(5769\\) heavy steel plates.\\nThe plates are welded in structural panels of \\(14\\) plates each.\\nHow many full panels are constructed, and how many leftover plates remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(412\\\\) packages, remainder \\\\(1\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(412 remainder 0\\\\) packages, remainder \\\\(1\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(413 remainder 1\\\\) packages, remainder \\\\(1\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(411 remainder 2\\\\) packages, remainder \\\\(1\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(1118 \\times 14 \\times 9\\).",
-    "s": "\\(14 \\\\times 1118 = 15652\\)\n\\(15652 \\\\times 9 = 140868\\)\n\\(140,868\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5769 \\div 14\\).",
+    "solution": "\\\\(412\\\\) packages, remainder \\\\(1\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active nodes in the system.",
-        "workingOut": "\\(14 \\\\times 1118 = 15652\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5769,\\quad \\text{Divisor} = 14\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(9\\)).",
-        "workingOut": "\\(15652 \\\\times 9 = 140868\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5769 \\\\div 14 = 412\\\\text{ remainder } 1\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in hashes.",
-        "workingOut": "\\(140,868\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(1 < 14 \\implies \\\\text{Quotient: } 412,\\ \\\\text{Remainder: } 1\\\\)"
       }
     ],
     "graphData": null
@@ -1854,28 +5496,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4446\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(19\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(234\\) packages, remainder \\(0\\) entries",
-      "\\(234 remainder 0\\) packages, remainder \\(0\\) entries",
-      "\\(235 remainder 0\\) packages, remainder \\(0\\) entries",
-      "\\(233 remainder 1\\) packages, remainder \\(0\\) entries"
+    "question": "An engineer inspects \\(3516\\) drive cogs on offshore turbines.\\nThe cogs are grouped into maintenance batches of \\(28\\) cogs each.\\nHow many full batches are inspected, and how many leftover cogs remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(125\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(125 remainder 14\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(126 remainder 16\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(124 remainder 17\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4446 \\div 19\\).",
-    "s": "\\(4446 \\\\div 19\\)\n\\(19 \\\\times 234 = 4446\\)\n\\(4446 - 4446 = 0 \\implies \\text{Quotient} = 234,\\ \\text{Remainder} = 0\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3516 \\div 28\\).",
+    "solution": "\\\\(125\\\\) packages, remainder \\\\(16\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4446 \\\\div 19\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3516,\\quad \\text{Divisor} = 28\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(19 \\\\times 234 = 4446\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3516 \\\\div 28 = 125\\\\text{ remainder } 16\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4446 - 4446 = 0 \\implies \\text{Quotient} = 234,\\ \\text{Remainder} = 0\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(16 < 28 \\implies \\\\text{Quotient: } 125,\\ \\\\text{Remainder: } 16\\\\)"
       }
     ],
     "graphData": null
@@ -1887,28 +5541,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance logistics distribution hub system is configured with \\(14\\) main sectors.\\nEach sector contains \\(494\\) active conveyors, and each conveyors produces \\(21\\) packages of output.\\nDetermine the total peak output in packages for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(145,236\\)",
-      "\\(144,742\\)",
-      "\\(145,530\\)",
-      "\\(144,236\\)"
+    "question": "A railway operator audits \\(5087\\) overhead line masts.\\nThe masts are divided into track sectors of \\(26\\) masts each.\\nHow many full sectors are audited, and how many leftover masts remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(195\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(195 remainder 15\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(196 remainder 17\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(194 remainder 18\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(494 \\times 14 \\times 21\\).",
-    "s": "\\(14 \\\\times 494 = 6916\\)\n\\(6916 \\\\times 21 = 145236\\)\n\\(145,236\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5087 \\div 26\\).",
+    "solution": "\\\\(195\\\\) packages, remainder \\\\(17\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active conveyors in the system.",
-        "workingOut": "\\(14 \\\\times 494 = 6916\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5087,\\quad \\text{Divisor} = 26\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(21\\)).",
-        "workingOut": "\\(6916 \\\\times 21 = 145236\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5087 \\\\div 26 = 195\\\\text{ remainder } 17\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in packages.",
-        "workingOut": "\\(145,236\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(17 < 26 \\implies \\\\text{Quotient: } 195,\\ \\\\text{Remainder: } 17\\\\)"
       }
     ],
     "graphData": null
@@ -1920,28 +5586,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(5015\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(21\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(238\\) packages, remainder \\(17\\) entries",
-      "\\(238 remainder 15\\) packages, remainder \\(17\\) entries",
-      "\\(239 remainder 17\\) packages, remainder \\(17\\) entries",
-      "\\(237 remainder 18\\) packages, remainder \\(17\\) entries"
+    "question": "An astronomical facility configures \\(6786\\) mirror actuators.\\nThe actuators are grouped in network loops of \\(12\\) actuators each.\\nHow many full network loops are configured, and how many leftover actuators remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(565\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(565 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(566 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(564 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(5015 \\div 21\\).",
-    "s": "\\(5015 \\\\div 21\\)\n\\(21 \\\\times 238 = 4998\\)\n\\(5015 - 4998 = 17 \\implies \\text{Quotient} = 238,\\ \\text{Remainder} = 17\\)",
+    "hint": "Divide the total data pool by the divisor: \\(6786 \\div 12\\).",
+    "solution": "\\\\(565\\\\) packages, remainder \\\\(6\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(5015 \\\\div 21\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 6786,\\quad \\text{Divisor} = 12\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(21 \\\\times 238 = 4998\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(6786 \\\\div 12 = 565\\\\text{ remainder } 6\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(5015 - 4998 = 17 \\implies \\text{Quotient} = 238,\\ \\text{Remainder} = 17\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(6 < 12 \\implies \\\\text{Quotient: } 565,\\ \\\\text{Remainder: } 6\\\\)"
       }
     ],
     "graphData": null
@@ -1953,28 +5631,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance precision robotics facility system is configured with \\(29\\) main sectors.\\nEach sector contains \\(315\\) active arms, and each arms produces \\(14\\) sensors of output.\\nDetermine the total peak output in sensors for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(127,890\\)",
-      "\\(127,575\\)",
-      "\\(128,296\\)",
-      "\\(126,890\\)"
+    "question": "A datacenter technician routes \\(5059\\) power cables.\\nThe cables are bundled in server trunk links of \\(35\\) cables each.\\nHow many full trunk links are routed, and how many leftover cables remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(144\\\\) packages, remainder \\\\(19\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(144 remainder 17\\\\) packages, remainder \\\\(19\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(145 remainder 19\\\\) packages, remainder \\\\(19\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(143 remainder 20\\\\) packages, remainder \\\\(19\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(315 \\times 29 \\times 14\\).",
-    "s": "\\(29 \\\\times 315 = 9135\\)\n\\(9135 \\\\times 14 = 127890\\)\n\\(127,890\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5059 \\div 35\\).",
+    "solution": "\\\\(144\\\\) packages, remainder \\\\(19\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active arms in the system.",
-        "workingOut": "\\(29 \\\\times 315 = 9135\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5059,\\quad \\text{Divisor} = 35\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(9135 \\\\times 14 = 127890\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5059 \\\\div 35 = 144\\\\text{ remainder } 19\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in sensors.",
-        "workingOut": "\\(127,890\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(19 < 35 \\implies \\\\text{Quotient: } 144,\\ \\\\text{Remainder: } 19\\\\)"
       }
     ],
     "graphData": null
@@ -1986,28 +5676,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(5581\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(23\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(242\\) packages, remainder \\(15\\) entries",
-      "\\(242 remainder 13\\) packages, remainder \\(15\\) entries",
-      "\\(243 remainder 15\\) packages, remainder \\(15\\) entries",
-      "\\(241 remainder 16\\) packages, remainder \\(15\\) entries"
+    "question": "An orbital station inventory audit checks \\(3300\\) oxygen canisters.\\nThe canisters are stored in modular racks of \\(20\\) canisters each.\\nHow many full modular racks are loaded, and how many leftover canisters remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(165\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(165 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(166 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(164 remainder 1\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(5581 \\div 23\\).",
-    "s": "\\(5581 \\\\div 23\\)\n\\(23 \\\\times 242 = 5566\\)\n\\(5581 - 5566 = 15 \\implies \\text{Quotient} = 242,\\ \\text{Remainder} = 15\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3300 \\div 20\\).",
+    "solution": "\\\\(165\\\\) packages, remainder \\\\(0\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(5581 \\\\div 23\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3300,\\quad \\text{Divisor} = 20\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(23 \\\\times 242 = 5566\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3300 \\\\div 20 = 165\\\\text{ remainder } 0\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(5581 - 5566 = 15 \\implies \\text{Quotient} = 242,\\ \\text{Remainder} = 15\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(0 < 20 \\implies \\\\text{Quotient: } 165,\\ \\\\text{Remainder: } 0\\\\)"
       }
     ],
     "graphData": null
@@ -2019,28 +5721,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance aerospace cargo bay system is configured with \\(30\\) main sectors.\\nEach sector contains \\(636\\) active pallets, and each pallets produces \\(14\\) kilograms of output.\\nDetermine the total peak output in kilograms for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(267,120\\)",
-      "\\(266,484\\)",
-      "\\(267,540\\)",
-      "\\(266,120\\)"
+    "question": "A drone production line tests \\(5013\\) battery terminal pins.\\nThe pins are packaged in shipping boxes of \\(48\\) pins each.\\nHow many full boxes are filled, and how many leftover pins remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(104\\\\) packages, remainder \\\\(21\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(104 remainder 19\\\\) packages, remainder \\\\(21\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(105 remainder 21\\\\) packages, remainder \\\\(21\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(103 remainder 22\\\\) packages, remainder \\\\(21\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(636 \\times 30 \\times 14\\).",
-    "s": "\\(30 \\\\times 636 = 19080\\)\n\\(19080 \\\\times 14 = 267120\\)\n\\(267,120\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5013 \\div 48\\).",
+    "solution": "\\\\(104\\\\) packages, remainder \\\\(21\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active pallets in the system.",
-        "workingOut": "\\(30 \\\\times 636 = 19080\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5013,\\quad \\text{Divisor} = 48\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(19080 \\\\times 14 = 267120\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5013 \\\\div 48 = 104\\\\text{ remainder } 21\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in kilograms.",
-        "workingOut": "\\(267,120\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(21 < 48 \\implies \\\\text{Quotient: } 104,\\ \\\\text{Remainder: } 21\\\\)"
       }
     ],
     "graphData": null
@@ -2052,28 +5766,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(6163\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(25\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(246\\) packages, remainder \\(13\\) entries",
-      "\\(246 remainder 11\\) packages, remainder \\(13\\) entries",
-      "\\(247 remainder 13\\) packages, remainder \\(13\\) entries",
-      "\\(245 remainder 14\\) packages, remainder \\(13\\) entries"
+    "question": "A marine conservation taskforce prepares \\(12047\\) barrier floats.\\nThe floats are linked in assembly chains of \\(25\\) floats each.\\nHow many full chains can be constructed, and how many leftover floats remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(481\\\\) packages, remainder \\\\(22\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(481 remainder 20\\\\) packages, remainder \\\\(22\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(482 remainder 22\\\\) packages, remainder \\\\(22\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(480 remainder 23\\\\) packages, remainder \\\\(22\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(6163 \\div 25\\).",
-    "s": "\\(6163 \\\\div 25\\)\n\\(25 \\\\times 246 = 6150\\)\n\\(6163 - 6150 = 13 \\implies \\text{Quotient} = 246,\\ \\text{Remainder} = 13\\)",
+    "hint": "Divide the total data pool by the divisor: \\(12047 \\div 25\\).",
+    "solution": "\\\\(481\\\\) packages, remainder \\\\(22\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(6163 \\\\div 25\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 12047,\\quad \\text{Divisor} = 25\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(25 \\\\times 246 = 6150\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(12047 \\\\div 25 = 481\\\\text{ remainder } 22\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(6163 - 6150 = 13 \\implies \\text{Quotient} = 246,\\ \\text{Remainder} = 13\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(22 < 25 \\implies \\\\text{Quotient: } 481,\\ \\\\text{Remainder: } 22\\\\)"
       }
     ],
     "graphData": null
@@ -2085,28 +5811,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance pharmaceutical bottling plant system is configured with \\(17\\) main sectors.\\nEach sector contains \\(372\\) active crates, and each crates produces \\(28\\) vials of output.\\nDetermine the total peak output in vials for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(177,072\\)",
-      "\\(176,700\\)",
-      "\\(177,548\\)",
-      "\\(176,072\\)"
+    "question": "A grid engineering crew tests \\(10007\\) electrical relays.\\nThe relays are grouped in circuit panels of \\(16\\) relays each.\\nHow many full panels are completed, and how many leftover relays remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(625\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(625 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(626 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(624 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(372 \\times 17 \\times 28\\).",
-    "s": "\\(17 \\\\times 372 = 6324\\)\n\\(6324 \\\\times 28 = 177072\\)\n\\(177,072\\)",
+    "hint": "Divide the total data pool by the divisor: \\(10007 \\div 16\\).",
+    "solution": "\\\\(625\\\\) packages, remainder \\\\(7\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active crates in the system.",
-        "workingOut": "\\(17 \\\\times 372 = 6324\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 10007,\\quad \\text{Divisor} = 16\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(28\\)).",
-        "workingOut": "\\(6324 \\\\times 28 = 177072\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(10007 \\\\div 16 = 625\\\\text{ remainder } 7\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in vials.",
-        "workingOut": "\\(177,072\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(7 < 16 \\implies \\\\text{Quotient: } 625,\\ \\\\text{Remainder: } 7\\\\)"
       }
     ],
     "graphData": null
@@ -2118,28 +5856,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(6761\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(27\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(250\\) packages, remainder \\(11\\) entries",
-      "\\(250 remainder 9\\) packages, remainder \\(11\\) entries",
-      "\\(251 remainder 11\\) packages, remainder \\(11\\) entries",
-      "\\(249 remainder 12\\) packages, remainder \\(11\\) entries"
+    "question": "A cybersecurity server logs \\(20448\\) drive modules.\\nThe modules are partitioned into backup groups of \\(24\\) modules each.\\nHow many full backup groups are created, and how many leftover modules remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(852\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(852 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(853 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(851 remainder 1\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(6761 \\div 27\\).",
-    "s": "\\(6761 \\\\div 27\\)\n\\(27 \\\\times 250 = 6750\\)\n\\(6761 - 6750 = 11 \\implies \\text{Quotient} = 250,\\ \\text{Remainder} = 11\\)",
+    "hint": "Divide the total data pool by the divisor: \\(20448 \\div 24\\).",
+    "solution": "\\\\(852\\\\) packages, remainder \\\\(0\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(6761 \\\\div 27\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 20448,\\quad \\text{Divisor} = 24\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(27 \\\\times 250 = 6750\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(20448 \\\\div 24 = 852\\\\text{ remainder } 0\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(6761 - 6750 = 11 \\implies \\text{Quotient} = 250,\\ \\text{Remainder} = 11\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(0 < 24 \\implies \\\\text{Quotient: } 852,\\ \\\\text{Remainder: } 0\\\\)"
       }
     ],
     "graphData": null
@@ -2151,28 +5901,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance cryptocurrency mining rig system is configured with \\(17\\) main sectors.\\nEach sector contains \\(1148\\) active nodes, and each nodes produces \\(9\\) hashes of output.\\nDetermine the total peak output in hashes for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(175,644\\)",
-      "\\(174,496\\)",
-      "\\(175,797\\)",
-      "\\(174,644\\)"
+    "question": "A water maintenance project audits \\(10855\\) safety gaskets.\\nThe gaskets are packaged in toolbags of \\(30\\) gaskets each.\\nHow many full toolbags are prepared, and how many leftover gaskets remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(361\\\\) packages, remainder \\\\(25\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(361 remainder 23\\\\) packages, remainder \\\\(25\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(362 remainder 25\\\\) packages, remainder \\\\(25\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(360 remainder 26\\\\) packages, remainder \\\\(25\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(1148 \\times 17 \\times 9\\).",
-    "s": "\\(17 \\\\times 1148 = 19516\\)\n\\(19516 \\\\times 9 = 175644\\)\n\\(175,644\\)",
+    "hint": "Divide the total data pool by the divisor: \\(10855 \\div 30\\).",
+    "solution": "\\\\(361\\\\) packages, remainder \\\\(25\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active nodes in the system.",
-        "workingOut": "\\(17 \\\\times 1148 = 19516\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 10855,\\quad \\text{Divisor} = 30\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(9\\)).",
-        "workingOut": "\\(19516 \\\\times 9 = 175644\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(10855 \\\\div 30 = 361\\\\text{ remainder } 25\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in hashes.",
-        "workingOut": "\\(175,644\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(25 < 30 \\implies \\\\text{Quotient: } 361,\\ \\\\text{Remainder: } 25\\\\)"
       }
     ],
     "graphData": null
@@ -2184,28 +5946,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(7375\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(29\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(254\\) packages, remainder \\(9\\) entries",
-      "\\(254 remainder 7\\) packages, remainder \\(9\\) entries",
-      "\\(255 remainder 9\\) packages, remainder \\(9\\) entries",
-      "\\(253 remainder 10\\) packages, remainder \\(9\\) entries"
+    "question": "A container port checks \\(8108\\) freighter lock brackets.\\nThe brackets are boxed in supply containers of \\(18\\) brackets each.\\nHow many full supply containers are checked, and how many leftover brackets remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(450\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(450 remainder 6\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(451 remainder 8\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(449 remainder 9\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(7375 \\div 29\\).",
-    "s": "\\(7375 \\\\div 29\\)\n\\(29 \\\\times 254 = 7366\\)\n\\(7375 - 7366 = 9 \\implies \\text{Quotient} = 254,\\ \\text{Remainder} = 9\\)",
+    "hint": "Divide the total data pool by the divisor: \\(8108 \\div 18\\).",
+    "solution": "\\\\(450\\\\) packages, remainder \\\\(8\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(7375 \\\\div 29\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 8108,\\quad \\text{Divisor} = 18\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(29 \\\\times 254 = 7366\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(8108 \\\\div 18 = 450\\\\text{ remainder } 8\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(7375 - 7366 = 9 \\implies \\text{Quotient} = 254,\\ \\text{Remainder} = 9\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(8 < 18 \\implies \\\\text{Quotient: } 450,\\ \\\\text{Remainder: } 8\\\\)"
       }
     ],
     "graphData": null
@@ -2217,28 +5991,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance logistics distribution hub system is configured with \\(17\\) main sectors.\\nEach sector contains \\(524\\) active conveyors, and each conveyors produces \\(21\\) packages of output.\\nDetermine the total peak output in packages for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(187,068\\)",
-      "\\(186,544\\)",
-      "\\(187,425\\)",
-      "\\(186,068\\)"
+    "question": "A mechanical contractor installs \\(17343\\) structural pipe clamps.\\nThe clamps are partitioned in installation bins of \\(12\\) clamps each.\\nHow many full bins are consumed, and how many leftover clamps remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(1445\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1445 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1446 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1444 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(524 \\times 17 \\times 21\\).",
-    "s": "\\(17 \\\\times 524 = 8908\\)\n\\(8908 \\\\times 21 = 187068\\)\n\\(187,068\\)",
+    "hint": "Divide the total data pool by the divisor: \\(17343 \\div 12\\).",
+    "solution": "\\\\(1445\\\\) packages, remainder \\\\(3\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active conveyors in the system.",
-        "workingOut": "\\(17 \\\\times 524 = 8908\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 17343,\\quad \\text{Divisor} = 12\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(21\\)).",
-        "workingOut": "\\(8908 \\\\times 21 = 187068\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(17343 \\\\div 12 = 1445\\\\text{ remainder } 3\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in packages.",
-        "workingOut": "\\(187,068\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(3 < 12 \\implies \\\\text{Quotient: } 1445,\\ \\\\text{Remainder: } 3\\\\)"
       }
     ],
     "graphData": null
@@ -2250,28 +6036,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3625\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(14\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(258\\) packages, remainder \\(13\\) entries",
-      "\\(258 remainder 11\\) packages, remainder \\(13\\) entries",
-      "\\(259 remainder 13\\) packages, remainder \\(13\\) entries",
-      "\\(257 remainder 14\\) packages, remainder \\(13\\) entries"
+    "question": "A hardware engineer audits \\(5088\\) mainframe mounting screws.\\The screws are stored in workshop drawers of \\(22\\) screws each.\\nHow many full drawers can be filled, and how many leftover screws remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(231\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(231 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(232 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(230 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3625 \\div 14\\).",
-    "s": "\\(3625 \\\\div 14\\)\n\\(14 \\\\times 258 = 3612\\)\n\\(3625 - 3612 = 13 \\implies \\text{Quotient} = 258,\\ \\text{Remainder} = 13\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5088 \\div 22\\).",
+    "solution": "\\\\(231\\\\) packages, remainder \\\\(6\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3625 \\\\div 14\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5088,\\quad \\text{Divisor} = 22\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(14 \\\\times 258 = 3612\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5088 \\\\div 22 = 231\\\\text{ remainder } 6\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3625 - 3612 = 13 \\implies \\text{Quotient} = 258,\\ \\text{Remainder} = 13\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(6 < 22 \\implies \\\\text{Quotient: } 231,\\ \\\\text{Remainder: } 6\\\\)"
       }
     ],
     "graphData": null
@@ -2283,28 +6081,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance precision robotics facility system is configured with \\(25\\) main sectors.\\nEach sector contains \\(345\\) active arms, and each arms produces \\(14\\) sensors of output.\\nDetermine the total peak output in sensors for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(120,750\\)",
-      "\\(120,405\\)",
-      "\\(121,100\\)",
-      "\\(119,750\\)"
+    "question": "A sorting machine factory calibrates \\(10229\\) laser diodes.\\The diodes are mapped into sensor lines of \\(15\\) diodes each.\\nHow many full sensor lines are mapped, and how many leftover diodes remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(681\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(681 remainder 12\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(682 remainder 14\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(680 remainder 15\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(345 \\times 25 \\times 14\\).",
-    "s": "\\(25 \\\\times 345 = 8625\\)\n\\(8625 \\\\times 14 = 120750\\)\n\\(120,750\\)",
+    "hint": "Divide the total data pool by the divisor: \\(10229 \\div 15\\).",
+    "solution": "\\\\(681\\\\) packages, remainder \\\\(14\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active arms in the system.",
-        "workingOut": "\\(25 \\\\times 345 = 8625\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 10229,\\quad \\text{Divisor} = 15\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(8625 \\\\times 14 = 120750\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(10229 \\\\div 15 = 681\\\\text{ remainder } 14\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in sensors.",
-        "workingOut": "\\(120,750\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(14 < 15 \\implies \\\\text{Quotient: } 681,\\ \\\\text{Remainder: } 14\\\\)"
       }
     ],
     "graphData": null
@@ -2316,28 +6126,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4199\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(16\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(262\\) packages, remainder \\(7\\) entries",
-      "\\(262 remainder 5\\) packages, remainder \\(7\\) entries",
-      "\\(263 remainder 7\\) packages, remainder \\(7\\) entries",
-      "\\(261 remainder 8\\) packages, remainder \\(7\\) entries"
+    "question": "A municipal road network installs \\(3526\\) camera nodes.\\nThe nodes are connected to local switches in groups of \\(19\\) nodes.\\nHow many full switches are loaded, and how many leftover nodes remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(185\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(185 remainder 9\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(186 remainder 11\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(184 remainder 12\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4199 \\div 16\\).",
-    "s": "\\(4199 \\\\div 16\\)\n\\(16 \\\\times 262 = 4192\\)\n\\(4199 - 4192 = 7 \\implies \\text{Quotient} = 262,\\ \\text{Remainder} = 7\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3526 \\div 19\\).",
+    "solution": "\\\\(185\\\\) packages, remainder \\\\(11\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4199 \\\\div 16\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3526,\\quad \\text{Divisor} = 19\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(16 \\\\times 262 = 4192\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3526 \\\\div 19 = 185\\\\text{ remainder } 11\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4199 - 4192 = 7 \\implies \\text{Quotient} = 262,\\ \\text{Remainder} = 7\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(11 < 19 \\implies \\\\text{Quotient: } 185,\\ \\\\text{Remainder: } 11\\\\)"
       }
     ],
     "graphData": null
@@ -2349,28 +6171,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance aerospace cargo bay system is configured with \\(26\\) main sectors.\\nEach sector contains \\(666\\) active pallets, and each pallets produces \\(14\\) kilograms of output.\\nDetermine the total peak output in kilograms for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(242,424\\)",
-      "\\(241,758\\)",
-      "\\(242,788\\)",
-      "\\(241,424\\)"
+    "question": "A commercial shrimp farm places \\(1683\\) water aerator units.\\nThe units are powered by regional control boxes handling \\(14\\) aerators each.\\nHow many control boxes operate at full capacity, and how many leftover aerators remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(120\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(120 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(121 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(119 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(666 \\times 26 \\times 14\\).",
-    "s": "\\(26 \\\\times 666 = 17316\\)\n\\(17316 \\\\times 14 = 242424\\)\n\\(242,424\\)",
+    "hint": "Divide the total data pool by the divisor: \\(1683 \\div 14\\).",
+    "solution": "\\\\(120\\\\) packages, remainder \\\\(3\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active pallets in the system.",
-        "workingOut": "\\(26 \\\\times 666 = 17316\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 1683,\\quad \\text{Divisor} = 14\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(17316 \\\\times 14 = 242424\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(1683 \\\\div 14 = 120\\\\text{ remainder } 3\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in kilograms.",
-        "workingOut": "\\(242,424\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(3 < 14 \\implies \\\\text{Quotient: } 120,\\ \\\\text{Remainder: } 3\\\\)"
       }
     ],
     "graphData": null
@@ -2382,28 +6216,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4789\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(18\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(266\\) packages, remainder \\(1\\) entries",
-      "\\(266 remainder 0\\) packages, remainder \\(1\\) entries",
-      "\\(267 remainder 1\\) packages, remainder \\(1\\) entries",
-      "\\(265 remainder 2\\) packages, remainder \\(1\\) entries"
+    "question": "A beverage factory coordinates \\(5168\\) packaging lines.\\nThe lines are organized in control groups of \\(24\\) lines each.\\nHow many full control groups are managed, and how many leftover lines remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(215\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(215 remainder 6\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(216 remainder 8\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(214 remainder 9\\\\) packages, remainder \\\\(8\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4789 \\div 18\\).",
-    "s": "\\(4789 \\\\div 18\\)\n\\(18 \\\\times 266 = 4788\\)\n\\(4789 - 4788 = 1 \\implies \\text{Quotient} = 266,\\ \\text{Remainder} = 1\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5168 \\div 24\\).",
+    "solution": "\\\\(215\\\\) packages, remainder \\\\(8\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4789 \\\\div 18\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5168,\\quad \\text{Divisor} = 24\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(18 \\\\times 266 = 4788\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5168 \\\\div 24 = 215\\\\text{ remainder } 8\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4789 - 4788 = 1 \\implies \\text{Quotient} = 266,\\ \\text{Remainder} = 1\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(8 < 24 \\implies \\\\text{Quotient: } 215,\\ \\\\text{Remainder: } 8\\\\)"
       }
     ],
     "graphData": null
@@ -2415,28 +6261,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance pharmaceutical bottling plant system is configured with \\(20\\) main sectors.\\nEach sector contains \\(402\\) active crates, and each crates produces \\(28\\) vials of output.\\nDetermine the total peak output in vials for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(225,120\\)",
-      "\\(224,718\\)",
-      "\\(225,680\\)",
-      "\\(224,120\\)"
+    "question": "A timber processing yard audits \\(3993\\) sorting cranes.\\nThe cranes are distributed across timber bays containing \\(36\\) cranes each.\\nHow many full timber bays are operational, and how many leftover cranes remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(110\\\\) packages, remainder \\\\(33\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(110 remainder 31\\\\) packages, remainder \\\\(33\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(111 remainder 33\\\\) packages, remainder \\\\(33\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(109 remainder 34\\\\) packages, remainder \\\\(33\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(402 \\times 20 \\times 28\\).",
-    "s": "\\(20 \\\\times 402 = 8040\\)\n\\(8040 \\\\times 28 = 225120\\)\n\\(225,120\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3993 \\div 36\\).",
+    "solution": "\\\\(110\\\\) packages, remainder \\\\(33\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active crates in the system.",
-        "workingOut": "\\(20 \\\\times 402 = 8040\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3993,\\quad \\text{Divisor} = 36\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(28\\)).",
-        "workingOut": "\\(8040 \\\\times 28 = 225120\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3993 \\\\div 36 = 110\\\\text{ remainder } 33\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in vials.",
-        "workingOut": "\\(225,120\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(33 < 36 \\implies \\\\text{Quotient: } 110,\\ \\\\text{Remainder: } 33\\\\)"
       }
     ],
     "graphData": null
@@ -2448,28 +6306,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(5415\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(20\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(270\\) packages, remainder \\(15\\) entries",
-      "\\(270 remainder 13\\) packages, remainder \\(15\\) entries",
-      "\\(271 remainder 15\\) packages, remainder \\(15\\) entries",
-      "\\(269 remainder 16\\) packages, remainder \\(15\\) entries"
+    "question": "A metallurgical plant installs \\(5440\\) heat sensors.\\nThe sensors are linked to control rooms in groups of \\(17\\) sensors each.\\nHow many control rooms are fully utilized, and how many leftover sensors remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(320\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(320 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(321 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(319 remainder 1\\\\) packages, remainder \\\\(0\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(5415 \\div 20\\).",
-    "s": "\\(5415 \\\\div 20\\)\n\\(20 \\\\times 270 = 5400\\)\n\\(5415 - 5400 = 15 \\implies \\text{Quotient} = 270,\\ \\text{Remainder} = 15\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5440 \\div 17\\).",
+    "solution": "\\\\(320\\\\) packages, remainder \\\\(0\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(5415 \\\\div 20\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5440,\\quad \\text{Divisor} = 17\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(20 \\\\times 270 = 5400\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5440 \\\\div 17 = 320\\\\text{ remainder } 0\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(5415 - 5400 = 15 \\implies \\text{Quotient} = 270,\\ \\text{Remainder} = 15\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(0 < 17 \\implies \\\\text{Quotient: } 320,\\ \\\\text{Remainder: } 0\\\\)"
       }
     ],
     "graphData": null
@@ -2481,28 +6351,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance cryptocurrency mining rig system is configured with \\(20\\) main sectors.\\nEach sector contains \\(1178\\) active nodes, and each nodes produces \\(9\\) hashes of output.\\nDetermine the total peak output in hashes for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(212,040\\)",
-      "\\(210,862\\)",
-      "\\(212,220\\)",
-      "\\(211,040\\)"
+    "question": "A medical center installs \\(3983\\) emergency call buttons.\\nThe buttons are wired to master consoles handling \\(28\\) buttons each.\\nHow many consoles are fully populated, and how many leftover buttons remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(142\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(142 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(143 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(141 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(1178 \\times 20 \\times 9\\).",
-    "s": "\\(20 \\\\times 1178 = 23560\\)\n\\(23560 \\\\times 9 = 212040\\)\n\\(212,040\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3983 \\div 28\\).",
+    "solution": "\\\\(142\\\\) packages, remainder \\\\(7\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active nodes in the system.",
-        "workingOut": "\\(20 \\\\times 1178 = 23560\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3983,\\quad \\text{Divisor} = 28\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(9\\)).",
-        "workingOut": "\\(23560 \\\\times 9 = 212040\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3983 \\\\div 28 = 142\\\\text{ remainder } 7\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in hashes.",
-        "workingOut": "\\(212,040\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(7 < 28 \\implies \\\\text{Quotient: } 142,\\ \\\\text{Remainder: } 7\\\\)"
       }
     ],
     "graphData": null
@@ -2514,28 +6396,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(6039\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(22\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(274\\) packages, remainder \\(11\\) entries",
-      "\\(274 remainder 9\\) packages, remainder \\(11\\) entries",
-      "\\(275 remainder 11\\) packages, remainder \\(11\\) entries",
-      "\\(273 remainder 12\\) packages, remainder \\(11\\) entries"
+    "question": "A subway system deploys \\(3650\\) smart card vending machines.\\nThe machines are serviced in regional route sectors of \\(13\\) machines each.\\nHow many full sectors are serviced, and how many leftover machines remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(280\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(280 remainder 8\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(281 remainder 10\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(279 remainder 11\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(6039 \\div 22\\).",
-    "s": "\\(6039 \\\\div 22\\)\n\\(22 \\\\times 274 = 6028\\)\n\\(6039 - 6028 = 11 \\implies \\text{Quotient} = 274,\\ \\text{Remainder} = 11\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3650 \\div 13\\).",
+    "solution": "\\\\(280\\\\) packages, remainder \\\\(10\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(6039 \\\\div 22\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3650,\\quad \\text{Divisor} = 13\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(22 \\\\times 274 = 6028\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3650 \\\\div 13 = 280\\\\text{ remainder } 10\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(6039 - 6028 = 11 \\implies \\text{Quotient} = 274,\\ \\text{Remainder} = 11\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(10 < 13 \\implies \\\\text{Quotient: } 280,\\ \\\\text{Remainder: } 10\\\\)"
       }
     ],
     "graphData": null
@@ -2547,28 +6441,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance logistics distribution hub system is configured with \\(13\\) main sectors.\\nEach sector contains \\(554\\) active conveyors, and each conveyors produces \\(21\\) packages of output.\\nDetermine the total peak output in packages for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(151,242\\)",
-      "\\(150,688\\)",
-      "\\(151,515\\)",
-      "\\(150,242\\)"
+    "question": "A greenhouse collective sets up \\(5896\\) soil telemetry probes.\\nThe probes are mapped to wireless hubs managing \\(31\\) probes each.\\nHow many hubs run at maximum capacity, and how many leftover probes remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(190\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(190 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(191 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(189 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(554 \\times 13 \\times 21\\).",
-    "s": "\\(13 \\\\times 554 = 7202\\)\n\\(7202 \\\\times 21 = 151242\\)\n\\(151,242\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5896 \\div 31\\).",
+    "solution": "\\\\(190\\\\) packages, remainder \\\\(6\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active conveyors in the system.",
-        "workingOut": "\\(13 \\\\times 554 = 7202\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5896,\\quad \\text{Divisor} = 31\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(21\\)).",
-        "workingOut": "\\(7202 \\\\times 21 = 151242\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5896 \\\\div 31 = 190\\\\text{ remainder } 6\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in packages.",
-        "workingOut": "\\(151,242\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(6 < 31 \\implies \\\\text{Quotient: } 190,\\ \\\\text{Remainder: } 6\\\\)"
       }
     ],
     "graphData": null
@@ -2580,28 +6486,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(6679\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(24\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(278\\) packages, remainder \\(7\\) entries",
-      "\\(278 remainder 5\\) packages, remainder \\(7\\) entries",
-      "\\(279 remainder 7\\) packages, remainder \\(7\\) entries",
-      "\\(277 remainder 8\\) packages, remainder \\(7\\) entries"
+    "question": "A refining plant inspects \\(3404\\) pressure relief valves.\\nThe valves are divided into inspection sectors of \\(22\\) valves each.\\nHow many full sectors are inspected, and how many leftover valves remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(154\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(154 remainder 14\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(155 remainder 16\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(153 remainder 17\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(6679 \\div 24\\).",
-    "s": "\\(6679 \\\\div 24\\)\n\\(24 \\\\times 278 = 6672\\)\n\\(6679 - 6672 = 7 \\implies \\text{Quotient} = 278,\\ \\text{Remainder} = 7\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3404 \\div 22\\).",
+    "solution": "\\\\(154\\\\) packages, remainder \\\\(16\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(6679 \\\\div 24\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3404,\\quad \\text{Divisor} = 22\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(24 \\\\times 278 = 6672\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3404 \\\\div 22 = 154\\\\text{ remainder } 16\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(6679 - 6672 = 7 \\implies \\text{Quotient} = 278,\\ \\text{Remainder} = 7\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(16 < 22 \\implies \\\\text{Quotient: } 154,\\ \\\\text{Remainder: } 16\\\\)"
       }
     ],
     "graphData": null
@@ -2613,28 +6531,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance precision robotics facility system is configured with \\(28\\) main sectors.\\nEach sector contains \\(375\\) active arms, and each arms produces \\(14\\) sensors of output.\\nDetermine the total peak output in sensors for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(147,000\\)",
-      "\\(146,625\\)",
-      "\\(147,392\\)",
-      "\\(146,000\\)"
+    "question": "A county library system installs \\(6887\\) database search terminals.\\nThe terminals are linked in network hubs of \\(16\\) terminals each.\\nHow many full network hubs are occupied, and how many leftover terminals remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(430\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(430 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(431 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(429 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(375 \\times 28 \\times 14\\).",
-    "s": "\\(28 \\\\times 375 = 10500\\)\n\\(10500 \\\\times 14 = 147000\\)\n\\(147,000\\)",
+    "hint": "Divide the total data pool by the divisor: \\(6887 \\div 16\\).",
+    "solution": "\\\\(430\\\\) packages, remainder \\\\(7\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active arms in the system.",
-        "workingOut": "\\(28 \\\\times 375 = 10500\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 6887,\\quad \\text{Divisor} = 16\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(10500 \\\\times 14 = 147000\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(6887 \\\\div 16 = 430\\\\text{ remainder } 7\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in sensors.",
-        "workingOut": "\\(147,000\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(7 < 16 \\implies \\\\text{Quotient: } 430,\\ \\\\text{Remainder: } 7\\\\)"
       }
     ],
     "graphData": null
@@ -2646,28 +6576,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(7335\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(26\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(282\\) packages, remainder \\(3\\) entries",
-      "\\(282 remainder 1\\) packages, remainder \\(3\\) entries",
-      "\\(283 remainder 3\\) packages, remainder \\(3\\) entries",
-      "\\(281 remainder 4\\) packages, remainder \\(3\\) entries"
+    "question": "A composite materials plant manufactures \\(7115\\) fiberglass rolls.\\nThe rolls are stored on logistics racks of \\(25\\) rolls each.\\nHow many full racks are loaded, and how many leftover rolls remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(284\\\\) packages, remainder \\\\(15\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(284 remainder 13\\\\) packages, remainder \\\\(15\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(285 remainder 15\\\\) packages, remainder \\\\(15\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(283 remainder 16\\\\) packages, remainder \\\\(15\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(7335 \\div 26\\).",
-    "s": "\\(7335 \\\\div 26\\)\n\\(26 \\\\times 282 = 7332\\)\n\\(7335 - 7332 = 3 \\implies \\text{Quotient} = 282,\\ \\text{Remainder} = 3\\)",
+    "hint": "Divide the total data pool by the divisor: \\(7115 \\div 25\\).",
+    "solution": "\\\\(284\\\\) packages, remainder \\\\(15\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(7335 \\\\div 26\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 7115,\\quad \\text{Divisor} = 25\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(26 \\\\times 282 = 7332\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(7115 \\\\div 25 = 284\\\\text{ remainder } 15\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(7335 - 7332 = 3 \\implies \\text{Quotient} = 282,\\ \\text{Remainder} = 3\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(15 < 25 \\implies \\\\text{Quotient: } 284,\\ \\\\text{Remainder: } 15\\\\)"
       }
     ],
     "graphData": null
@@ -2679,28 +6621,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance aerospace cargo bay system is configured with \\(29\\) main sectors.\\nEach sector contains \\(696\\) active pallets, and each pallets produces \\(14\\) kilograms of output.\\nDetermine the total peak output in kilograms for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(282,576\\)",
-      "\\(281,880\\)",
-      "\\(282,982\\)",
-      "\\(281,576\\)"
+    "question": "A smart city parking garage operates \\(4631\\) floor presence sensors.\\nThe sensors are wired to regional controllers handling \\(45\\) sensors each.\\nHow many fully loaded controllers are online, and how many leftover sensors remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(102\\\\) packages, remainder \\\\(41\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(102 remainder 39\\\\) packages, remainder \\\\(41\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(103 remainder 41\\\\) packages, remainder \\\\(41\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(101 remainder 42\\\\) packages, remainder \\\\(41\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(696 \\times 29 \\times 14\\).",
-    "s": "\\(29 \\\\times 696 = 20184\\)\n\\(20184 \\\\times 14 = 282576\\)\n\\(282,576\\)",
+    "hint": "Divide the total data pool by the divisor: \\(4631 \\div 45\\).",
+    "solution": "\\\\(102\\\\) packages, remainder \\\\(41\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active pallets in the system.",
-        "workingOut": "\\(29 \\\\times 696 = 20184\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 4631,\\quad \\text{Divisor} = 45\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(20184 \\\\times 14 = 282576\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(4631 \\\\div 45 = 102\\\\text{ remainder } 41\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in kilograms.",
-        "workingOut": "\\(282,576\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(41 < 45 \\implies \\\\text{Quotient: } 102,\\ \\\\text{Remainder: } 41\\\\)"
       }
     ],
     "graphData": null
@@ -2712,28 +6666,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(8035\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(28\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(286\\) packages, remainder \\(27\\) entries",
-      "\\(286 remainder 25\\) packages, remainder \\(27\\) entries",
-      "\\(287 remainder 27\\) packages, remainder \\(27\\) entries",
-      "\\(285 remainder 28\\) packages, remainder \\(27\\) entries"
+    "question": "A rural electricity board operates \\(7710\\) water-flow meters.\\nThe meters are monitored in district sectors of \\(12\\) meters each.\\nHow many full sectors are monitored, and how many leftover meters remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(642\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(642 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(643 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(641 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(8035 \\div 28\\).",
-    "s": "\\(8035 \\\\div 28\\)\n\\(28 \\\\times 286 = 8008\\)\n\\(8035 - 8008 = 27 \\implies \\text{Quotient} = 286,\\ \\text{Remainder} = 27\\)",
+    "hint": "Divide the total data pool by the divisor: \\(7710 \\div 12\\).",
+    "solution": "\\\\(642\\\\) packages, remainder \\\\(6\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(8035 \\\\div 28\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 7710,\\quad \\text{Divisor} = 12\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(28 \\\\times 286 = 8008\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(7710 \\\\div 12 = 642\\\\text{ remainder } 6\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(8035 - 8008 = 27 \\implies \\text{Quotient} = 286,\\ \\text{Remainder} = 27\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(6 < 12 \\implies \\\\text{Quotient: } 642,\\ \\\\text{Remainder: } 6\\\\)"
       }
     ],
     "graphData": null
@@ -2745,28 +6711,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance pharmaceutical bottling plant system is configured with \\(16\\) main sectors.\\nEach sector contains \\(432\\) active crates, and each crates produces \\(28\\) vials of output.\\nDetermine the total peak output in vials for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(193,536\\)",
-      "\\(193,104\\)",
-      "\\(193,984\\)",
-      "\\(192,536\\)"
+    "question": "An environmental utility deploys \\(5803\\) heavy-duty sludge pumps.\\nThe pumps are serviced in facility blocks of \\(18\\) pumps each.\\nHow many full blocks are operational, and how many leftover pumps remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(322\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(322 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(323 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(321 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(432 \\times 16 \\times 28\\).",
-    "s": "\\(16 \\\\times 432 = 6912\\)\n\\(6912 \\\\times 28 = 193536\\)\n\\(193,536\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5803 \\div 18\\).",
+    "solution": "\\\\(322\\\\) packages, remainder \\\\(7\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active crates in the system.",
-        "workingOut": "\\(16 \\\\times 432 = 6912\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5803,\\quad \\text{Divisor} = 18\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(28\\)).",
-        "workingOut": "\\(6912 \\\\times 28 = 193536\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5803 \\\\div 18 = 322\\\\text{ remainder } 7\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in vials.",
-        "workingOut": "\\(193,536\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(7 < 18 \\implies \\\\text{Quotient: } 322,\\ \\\\text{Remainder: } 7\\\\)"
       }
     ],
     "graphData": null
@@ -2778,28 +6756,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(3777\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(13\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(290\\) packages, remainder \\(7\\) entries",
-      "\\(290 remainder 5\\) packages, remainder \\(7\\) entries",
-      "\\(291 remainder 7\\) packages, remainder \\(7\\) entries",
-      "\\(289 remainder 8\\) packages, remainder \\(7\\) entries"
+    "question": "A farm collective monitors \\(7244\\) organic digestion vessels.\\nThe vessels are controlled in clusters of \\(15\\) vessels each.\\nHow many full clusters are managed, and how many leftover vessels remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(482\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(482 remainder 12\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(483 remainder 14\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(481 remainder 15\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(3777 \\div 13\\).",
-    "s": "\\(3777 \\\\div 13\\)\n\\(13 \\\\times 290 = 3770\\)\n\\(3777 - 3770 = 7 \\implies \\text{Quotient} = 290,\\ \\text{Remainder} = 7\\)",
+    "hint": "Divide the total data pool by the divisor: \\(7244 \\div 15\\).",
+    "solution": "\\\\(482\\\\) packages, remainder \\\\(14\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(3777 \\\\div 13\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 7244,\\quad \\text{Divisor} = 15\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(13 \\\\times 290 = 3770\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(7244 \\\\div 15 = 482\\\\text{ remainder } 14\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(3777 - 3770 = 7 \\implies \\text{Quotient} = 290,\\ \\text{Remainder} = 7\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(14 < 15 \\implies \\\\text{Quotient: } 482,\\ \\\\text{Remainder: } 14\\\\)"
       }
     ],
     "graphData": null
@@ -2811,28 +6801,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance cryptocurrency mining rig system is configured with \\(16\\) main sectors.\\nEach sector contains \\(1208\\) active nodes, and each nodes produces \\(9\\) hashes of output.\\nDetermine the total peak output in hashes for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(173,952\\)",
-      "\\(172,744\\)",
-      "\\(174,096\\)",
-      "\\(172,952\\)"
+    "question": "A broadband network installs \\(4833\\) transmission repeaters.\\nThe repeaters are clustered in distribution nodes of \\(42\\) repeaters each.\\nHow many full nodes are active, and how many leftover repeaters remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(115\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(115 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(116 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(114 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(1208 \\times 16 \\times 9\\).",
-    "s": "\\(16 \\\\times 1208 = 19328\\)\n\\(19328 \\\\times 9 = 173952\\)\n\\(173,952\\)",
+    "hint": "Divide the total data pool by the divisor: \\(4833 \\div 42\\).",
+    "solution": "\\\\(115\\\\) packages, remainder \\\\(3\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active nodes in the system.",
-        "workingOut": "\\(16 \\\\times 1208 = 19328\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 4833,\\quad \\text{Divisor} = 42\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(9\\)).",
-        "workingOut": "\\(19328 \\\\times 9 = 173952\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(4833 \\\\div 42 = 115\\\\text{ remainder } 3\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in hashes.",
-        "workingOut": "\\(173,952\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(3 < 42 \\implies \\\\text{Quotient: } 115,\\ \\\\text{Remainder: } 3\\\\)"
       }
     ],
     "graphData": null
@@ -2844,28 +6846,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(4422\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(15\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(294\\) packages, remainder \\(12\\) entries",
-      "\\(294 remainder 10\\) packages, remainder \\(12\\) entries",
-      "\\(295 remainder 12\\) packages, remainder \\(12\\) entries",
-      "\\(293 remainder 13\\) packages, remainder \\(12\\) entries"
+    "question": "A city cooling system monitors \\(3932\\) water valve actuators.\\nThe actuators are grouped in loop rings of \\(29\\) actuators each.\\nHow many full loop rings are monitored, and how many leftover actuators remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(135\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(135 remainder 15\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(136 remainder 17\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(134 remainder 18\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(4422 \\div 15\\).",
-    "s": "\\(4422 \\\\div 15\\)\n\\(15 \\\\times 294 = 4410\\)\n\\(4422 - 4410 = 12 \\implies \\text{Quotient} = 294,\\ \\text{Remainder} = 12\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3932 \\div 29\\).",
+    "solution": "\\\\(135\\\\) packages, remainder \\\\(17\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(4422 \\\\div 15\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3932,\\quad \\text{Divisor} = 29\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(15 \\\\times 294 = 4410\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3932 \\\\div 29 = 135\\\\text{ remainder } 17\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(4422 - 4410 = 12 \\implies \\text{Quotient} = 294,\\ \\text{Remainder} = 12\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(17 < 29 \\implies \\\\text{Quotient: } 135,\\ \\\\text{Remainder: } 17\\\\)"
       }
     ],
     "graphData": null
@@ -2877,28 +6891,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance logistics distribution hub system is configured with \\(16\\) main sectors.\\nEach sector contains \\(584\\) active conveyors, and each conveyors produces \\(21\\) packages of output.\\nDetermine the total peak output in packages for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(196,224\\)",
-      "\\(195,640\\)",
-      "\\(196,560\\)",
-      "\\(195,224\\)"
+    "question": "A safety board audits \\(3710\\) level crossing signal lights.\\nThe lights are grouped in highway corridors of \\(33\\) lights each.\\nHow many full corridors are audited, and how many leftover lights remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(112\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(112 remainder 12\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(113 remainder 14\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(111 remainder 15\\\\) packages, remainder \\\\(14\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(584 \\times 16 \\times 21\\).",
-    "s": "\\(16 \\\\times 584 = 9344\\)\n\\(9344 \\\\times 21 = 196224\\)\n\\(196,224\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3710 \\div 33\\).",
+    "solution": "\\\\(112\\\\) packages, remainder \\\\(14\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active conveyors in the system.",
-        "workingOut": "\\(16 \\\\times 584 = 9344\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3710,\\quad \\text{Divisor} = 33\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(21\\)).",
-        "workingOut": "\\(9344 \\\\times 21 = 196224\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3710 \\\\div 33 = 112\\\\text{ remainder } 14\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in packages.",
-        "workingOut": "\\(196,224\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(14 < 33 \\implies \\\\text{Quotient: } 112,\\ \\\\text{Remainder: } 14\\\\)"
       }
     ],
     "graphData": null
@@ -2910,28 +6936,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(5070\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(17\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(298\\) packages, remainder \\(4\\) entries",
-      "\\(298 remainder 2\\) packages, remainder \\(4\\) entries",
-      "\\(299 remainder 4\\) packages, remainder \\(4\\) entries",
-      "\\(297 remainder 5\\) packages, remainder \\(4\\) entries"
+    "question": "A shipping firm builds \\(9926\\) package landing markers.\\nThe markers are routed in delivery networks of \\(11\\) markers each.\\nHow many full networks are active, and how many leftover markers remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(902\\\\) packages, remainder \\\\(4\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(902 remainder 2\\\\) packages, remainder \\\\(4\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(903 remainder 4\\\\) packages, remainder \\\\(4\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(901 remainder 5\\\\) packages, remainder \\\\(4\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(5070 \\div 17\\).",
-    "s": "\\(5070 \\\\div 17\\)\n\\(17 \\\\times 298 = 5066\\)\n\\(5070 - 5066 = 4 \\implies \\text{Quotient} = 298,\\ \\text{Remainder} = 4\\)",
+    "hint": "Divide the total data pool by the divisor: \\(9926 \\div 11\\).",
+    "solution": "\\\\(902\\\\) packages, remainder \\\\(4\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(5070 \\\\div 17\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 9926,\\quad \\text{Divisor} = 11\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(17 \\\\times 298 = 5066\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(9926 \\\\div 11 = 902\\\\text{ remainder } 4\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(5070 - 5066 = 4 \\implies \\text{Quotient} = 298,\\ \\text{Remainder} = 4\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(4 < 11 \\implies \\\\text{Quotient: } 902,\\ \\\\text{Remainder: } 4\\\\)"
       }
     ],
     "graphData": null
@@ -2943,28 +6981,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance precision robotics facility system is configured with \\(31\\) main sectors.\\nEach sector contains \\(405\\) active arms, and each arms produces \\(14\\) sensors of output.\\nDetermine the total peak output in sensors for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(175,770\\)",
-      "\\(175,365\\)",
-      "\\(176,204\\)",
-      "\\(174,770\\)"
+    "question": "A recycling plant operates \\(3338\\) pneumatic waste ejectors.\\nThe ejectors are grouped in sensor lanes of \\(23\\) ejectors each.\\nHow many full sensor lanes are configured, and how many leftover ejectors remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(145\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(145 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(146 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(144 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(405 \\times 31 \\times 14\\).",
-    "s": "\\(31 \\\\times 405 = 12555\\)\n\\(12555 \\\\times 14 = 175770\\)\n\\(175,770\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3338 \\div 23\\).",
+    "solution": "\\\\(145\\\\) packages, remainder \\\\(3\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active arms in the system.",
-        "workingOut": "\\(31 \\\\times 405 = 12555\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3338,\\quad \\text{Divisor} = 23\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(12555 \\\\times 14 = 175770\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3338 \\\\div 23 = 145\\\\text{ remainder } 3\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in sensors.",
-        "workingOut": "\\(175,770\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(3 < 23 \\implies \\\\text{Quotient: } 145,\\ \\\\text{Remainder: } 3\\\\)"
       }
     ],
     "graphData": null
@@ -2976,28 +7026,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(5753\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(19\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(302\\) packages, remainder \\(15\\) entries",
-      "\\(302 remainder 13\\) packages, remainder \\(15\\) entries",
-      "\\(303 remainder 15\\) packages, remainder \\(15\\) entries",
-      "\\(301 remainder 16\\) packages, remainder \\(15\\) entries"
+    "question": "A cloud platform installs \\(2689\\) power grid modules.\\nThe modules are distributed in transformer units of \\(13\\) modules each.\\nHow many full transformer units are loaded, and how many leftover modules remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(206\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(206 remainder 9\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(207 remainder 11\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(205 remainder 12\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(5753 \\div 19\\).",
-    "s": "\\(5753 \\\\div 19\\)\n\\(19 \\\\times 302 = 5738\\)\n\\(5753 - 5738 = 15 \\implies \\text{Quotient} = 302,\\ \\text{Remainder} = 15\\)",
+    "hint": "Divide the total data pool by the divisor: \\(2689 \\div 13\\).",
+    "solution": "\\\\(206\\\\) packages, remainder \\\\(11\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(5753 \\\\div 19\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 2689,\\quad \\text{Divisor} = 13\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(19 \\\\times 302 = 5738\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(2689 \\\\div 13 = 206\\\\text{ remainder } 11\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(5753 - 5738 = 15 \\implies \\text{Quotient} = 302,\\ \\text{Remainder} = 15\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(11 < 13 \\implies \\\\text{Quotient: } 206,\\ \\\\text{Remainder: } 11\\\\)"
       }
     ],
     "graphData": null
@@ -3009,28 +7071,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance aerospace cargo bay system is configured with \\(25\\) main sectors.\\nEach sector contains \\(726\\) active pallets, and each pallets produces \\(14\\) kilograms of output.\\nDetermine the total peak output in kilograms for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(254,100\\)",
-      "\\(253,374\\)",
-      "\\(254,450\\)",
-      "\\(253,100\\)"
+    "question": "An airport luggage transit terminal audits \\(3471\\) sorting carts.\\The carts are stored in holding lanes of \\(19\\) carts each.\\nHow many full holding lanes are occupied, and how many leftover carts remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(182\\\\) packages, remainder \\\\(13\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(182 remainder 11\\\\) packages, remainder \\\\(13\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(183 remainder 13\\\\) packages, remainder \\\\(13\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(181 remainder 14\\\\) packages, remainder \\\\(13\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(726 \\times 25 \\times 14\\).",
-    "s": "\\(25 \\\\times 726 = 18150\\)\n\\(18150 \\\\times 14 = 254100\\)\n\\(254,100\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3471 \\div 19\\).",
+    "solution": "\\\\(182\\\\) packages, remainder \\\\(13\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active pallets in the system.",
-        "workingOut": "\\(25 \\\\times 726 = 18150\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3471,\\quad \\text{Divisor} = 19\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(18150 \\\\times 14 = 254100\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3471 \\\\div 19 = 182\\\\text{ remainder } 13\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in kilograms.",
-        "workingOut": "\\(254,100\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(13 < 19 \\implies \\\\text{Quotient: } 182,\\ \\\\text{Remainder: } 13\\\\)"
       }
     ],
     "graphData": null
@@ -3042,28 +7116,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(6435\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(21\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(306\\) packages, remainder \\(9\\) entries",
-      "\\(306 remainder 7\\) packages, remainder \\(9\\) entries",
-      "\\(307 remainder 9\\) packages, remainder \\(9\\) entries",
-      "\\(305 remainder 10\\) packages, remainder \\(9\\) entries"
+    "question": "A hydraulic protection board monitors \\(4192\\) level probes.\\The probes are connected in regional trunks of \\(23\\) probes each.\\nHow many full trunks are active, and how many leftover probes remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(182\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(182 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(183 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(181 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(6435 \\div 21\\).",
-    "s": "\\(6435 \\\\div 21\\)\n\\(21 \\\\times 306 = 6426\\)\n\\(6435 - 6426 = 9 \\implies \\text{Quotient} = 306,\\ \\text{Remainder} = 9\\)",
+    "hint": "Divide the total data pool by the divisor: \\(4192 \\div 23\\).",
+    "solution": "\\\\(182\\\\) packages, remainder \\\\(6\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(6435 \\\\div 21\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 4192,\\quad \\text{Divisor} = 23\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(21 \\\\times 306 = 6426\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(4192 \\\\div 23 = 182\\\\text{ remainder } 6\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(6435 - 6426 = 9 \\implies \\text{Quotient} = 306,\\ \\text{Remainder} = 9\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(6 < 23 \\implies \\\\text{Quotient: } 182,\\ \\\\text{Remainder: } 6\\\\)"
       }
     ],
     "graphData": null
@@ -3075,28 +7161,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance pharmaceutical bottling plant system is configured with \\(19\\) main sectors.\\nEach sector contains \\(462\\) active crates, and each crates produces \\(28\\) vials of output.\\nDetermine the total peak output in vials for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(245,784\\)",
-      "\\(245,322\\)",
-      "\\(246,316\\)",
-      "\\(244,784\\)"
+    "question": "An engineering check audits \\(3272\\) vacuum pipelines.\\nThe pipelines are mapped to branch valves managing \\(29\\) outlets each.\\nHow many full branch valves are checked, and how many leftover outlets remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(112\\\\) packages, remainder \\\\(24\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(112 remainder 22\\\\) packages, remainder \\\\(24\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(113 remainder 24\\\\) packages, remainder \\\\(24\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(111 remainder 25\\\\) packages, remainder \\\\(24\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(462 \\times 19 \\times 28\\).",
-    "s": "\\(19 \\\\times 462 = 8778\\)\n\\(8778 \\\\times 28 = 245784\\)\n\\(245,784\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3272 \\div 29\\).",
+    "solution": "\\\\(112\\\\) packages, remainder \\\\(24\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active crates in the system.",
-        "workingOut": "\\(19 \\\\times 462 = 8778\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3272,\\quad \\text{Divisor} = 29\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(28\\)).",
-        "workingOut": "\\(8778 \\\\times 28 = 245784\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3272 \\\\div 29 = 112\\\\text{ remainder } 24\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in vials.",
-        "workingOut": "\\(245,784\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(24 < 29 \\implies \\\\text{Quotient: } 112,\\ \\\\text{Remainder: } 24\\\\)"
       }
     ],
     "graphData": null
@@ -3108,28 +7206,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(7133\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(23\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(310\\) packages, remainder \\(3\\) entries",
-      "\\(310 remainder 1\\) packages, remainder \\(3\\) entries",
-      "\\(311 remainder 3\\) packages, remainder \\(3\\) entries",
-      "\\(309 remainder 4\\) packages, remainder \\(3\\) entries"
+    "question": "A shipping fleet operator audits \\(5138\\) steel lock pins.\\nThe pins are organized in cargo crates of \\(31\\) pins each.\\nHow many full crates are packed, and how many leftover pins remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(165\\\\) packages, remainder \\\\(23\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(165 remainder 21\\\\) packages, remainder \\\\(23\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(166 remainder 23\\\\) packages, remainder \\\\(23\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(164 remainder 24\\\\) packages, remainder \\\\(23\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(7133 \\div 23\\).",
-    "s": "\\(7133 \\\\div 23\\)\n\\(23 \\\\times 310 = 7130\\)\n\\(7133 - 7130 = 3 \\implies \\text{Quotient} = 310,\\ \\text{Remainder} = 3\\)",
+    "hint": "Divide the total data pool by the divisor: \\(5138 \\div 31\\).",
+    "solution": "\\\\(165\\\\) packages, remainder \\\\(23\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(7133 \\\\div 23\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 5138,\\quad \\text{Divisor} = 31\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(23 \\\\times 310 = 7130\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(5138 \\\\div 31 = 165\\\\text{ remainder } 23\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(7133 - 7130 = 3 \\implies \\text{Quotient} = 310,\\ \\text{Remainder} = 3\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(23 < 31 \\implies \\\\text{Quotient: } 165,\\ \\\\text{Remainder: } 23\\\\)"
       }
     ],
     "graphData": null
@@ -3141,28 +7251,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance cryptocurrency mining rig system is configured with \\(19\\) main sectors.\\nEach sector contains \\(1238\\) active nodes, and each nodes produces \\(9\\) hashes of output.\\nDetermine the total peak output in hashes for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(211,698\\)",
-      "\\(210,460\\)",
-      "\\(211,869\\)",
-      "\\(210,698\\)"
+    "question": "A drone logistics warehouse audits \\(2449\\) tracking chips.\\nThe chips are packed in storage drawers of \\(19\\) chips each.\\nHow many full drawers are filled, and how many leftover chips remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(128\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(128 remainder 15\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(129 remainder 17\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(127 remainder 18\\\\) packages, remainder \\\\(17\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(1238 \\times 19 \\times 9\\).",
-    "s": "\\(19 \\\\times 1238 = 23522\\)\n\\(23522 \\\\times 9 = 211698\\)\n\\(211,698\\)",
+    "hint": "Divide the total data pool by the divisor: \\(2449 \\div 19\\).",
+    "solution": "\\\\(128\\\\) packages, remainder \\\\(17\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active nodes in the system.",
-        "workingOut": "\\(19 \\\\times 1238 = 23522\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 2449,\\quad \\text{Divisor} = 19\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(9\\)).",
-        "workingOut": "\\(23522 \\\\times 9 = 211698\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(2449 \\\\div 19 = 128\\\\text{ remainder } 17\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in hashes.",
-        "workingOut": "\\(211,698\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(17 < 19 \\implies \\\\text{Quotient: } 128,\\ \\\\text{Remainder: } 17\\\\)"
       }
     ],
     "graphData": null
@@ -3174,28 +7296,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(7872\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(25\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(314\\) packages, remainder \\(22\\) entries",
-      "\\(314 remainder 20\\) packages, remainder \\(22\\) entries",
-      "\\(315 remainder 22\\) packages, remainder \\(22\\) entries",
-      "\\(313 remainder 23\\) packages, remainder \\(22\\) entries"
+    "question": "A mechanical maintenance project checks \\(3867\\) filtration membranes.\\nThe membranes are bundled in supply cases of \\(37\\) membranes each.\\nHow many full cases are packed, and how many leftover membranes remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(104\\\\) packages, remainder \\\\(19\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(104 remainder 17\\\\) packages, remainder \\\\(19\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(105 remainder 19\\\\) packages, remainder \\\\(19\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(103 remainder 20\\\\) packages, remainder \\\\(19\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(7872 \\div 25\\).",
-    "s": "\\(7872 \\\\div 25\\)\n\\(25 \\\\times 314 = 7850\\)\n\\(7872 - 7850 = 22 \\implies \\text{Quotient} = 314,\\ \\text{Remainder} = 22\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3867 \\div 37\\).",
+    "solution": "\\\\(104\\\\) packages, remainder \\\\(19\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(7872 \\\\div 25\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3867,\\quad \\text{Divisor} = 37\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(25 \\\\times 314 = 7850\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3867 \\\\div 37 = 104\\\\text{ remainder } 19\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(7872 - 7850 = 22 \\implies \\text{Quotient} = 314,\\ \\text{Remainder} = 22\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(19 < 37 \\implies \\\\text{Quotient: } 104,\\ \\\\text{Remainder: } 19\\\\)"
       }
     ],
     "graphData": null
@@ -3207,28 +7341,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance logistics distribution hub system is configured with \\(12\\) main sectors.\\nEach sector contains \\(614\\) active conveyors, and each conveyors produces \\(21\\) packages of output.\\nDetermine the total peak output in packages for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(154,728\\)",
-      "\\(154,114\\)",
-      "\\(154,980\\)",
-      "\\(153,728\\)"
+    "question": "A hydronic project installs \\(6412\\) pressure gauges.\\nThe gauges are organized in inspection boxes of \\(41\\) gauges each.\\nHow many full boxes are used, and how many leftover gauges remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(156\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(156 remainder 14\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(157 remainder 16\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(155 remainder 17\\\\) packages, remainder \\\\(16\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(614 \\times 12 \\times 21\\).",
-    "s": "\\(12 \\\\times 614 = 7368\\)\n\\(7368 \\\\times 21 = 154728\\)\n\\(154,728\\)",
+    "hint": "Divide the total data pool by the divisor: \\(6412 \\div 41\\).",
+    "solution": "\\\\(156\\\\) packages, remainder \\\\(16\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active conveyors in the system.",
-        "workingOut": "\\(12 \\\\times 614 = 7368\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 6412,\\quad \\text{Divisor} = 41\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(21\\)).",
-        "workingOut": "\\(7368 \\\\times 21 = 154728\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(6412 \\\\div 41 = 156\\\\text{ remainder } 16\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in packages.",
-        "workingOut": "\\(154,728\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(16 < 41 \\implies \\\\text{Quotient: } 156,\\ \\\\text{Remainder: } 16\\\\)"
       }
     ],
     "graphData": null
@@ -3240,28 +7386,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A scientific project processes a dataset of \\(8604\\) digital entries.\\nThe computer partitions the dataset into uniform packages of \\(27\\) entries each.\\nHow many complete packages can be created, and how many leftover entries remain?",
-    "a": 0,
-    "opts": [
-      "\\(318\\) packages, remainder \\(18\\) entries",
-      "\\(318 remainder 16\\) packages, remainder \\(18\\) entries",
-      "\\(319 remainder 18\\) packages, remainder \\(18\\) entries",
-      "\\(317 remainder 19\\) packages, remainder \\(18\\) entries"
+    "question": "An enterprise server room logs \\(3450\\) chassis lock studs.\\The studs are stored in compartment bins of \\(16\\) studs each.\\nHow many full bins are loaded, and how many leftover studs remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(215\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(215 remainder 8\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(216 remainder 10\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(214 remainder 11\\\\) packages, remainder \\\\(10\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Divide the total entries by the divisor: \\(8604 \\div 27\\).",
-    "s": "\\(8604 \\\\div 27\\)\n\\(27 \\\\times 318 = 8586\\)\n\\(8604 - 8586 = 18 \\implies \\text{Quotient} = 318,\\ \\text{Remainder} = 18\\)",
+    "hint": "Divide the total data pool by the divisor: \\(3450 \\div 16\\).",
+    "solution": "\\\\(215\\\\) packages, remainder \\\\(10\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the long division of the total dividend by the divisor.",
-        "workingOut": "\\(8604 \\\\div 27\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 3450,\\quad \\text{Divisor} = 16\\\\)"
       },
       {
-        "explanation": "Determine the highest integer multiple of the divisor that is less than or equal to the dividend.",
-        "workingOut": "\\(27 \\\\times 318 = 8586\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(3450 \\\\div 16 = 215\\\\text{ remainder } 10\\\\)"
       },
       {
-        "explanation": "Subtract the multiple from the dividend to compute the leftover remainder.",
-        "workingOut": "\\(8604 - 8586 = 18 \\implies \\text{Quotient} = 318,\\ \\text{Remainder} = 18\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(10 < 16 \\implies \\\\text{Quotient: } 215,\\ \\\\text{Remainder: } 10\\\\)"
       }
     ],
     "graphData": null
@@ -3273,28 +7431,40 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "A high-performance precision robotics facility system is configured with \\(27\\) main sectors.\\nEach sector contains \\(435\\) active arms, and each arms produces \\(14\\) sensors of output.\\nDetermine the total peak output in sensors for the entire system configuration.",
-    "a": 0,
-    "opts": [
-      "\\(164,430\\)",
-      "\\(163,995\\)",
-      "\\(164,808\\)",
-      "\\(163,430\\)"
+    "question": "A sorting machine plant maps \\(4619\\) air valve ejectors.\\nThe ejectors are mapped to control boards of \\(24\\) ejectors each.\\nHow many full control boards are mapped, and how many leftover ejectors remain?",
+    "answer": "0",
+    "options": [
+      {
+        "text": "\\\\(192\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(192 remainder 9\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(193 remainder 11\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(191 remainder 12\\\\) packages, remainder \\\\(11\\\\) entries",
+        "imageUrl": ""
+      }
     ],
-    "h": "Multiply the three quantities together: \\(435 \\times 27 \\times 14\\).",
-    "s": "\\(27 \\\\times 435 = 11745\\)\n\\(11745 \\\\times 14 = 164430\\)\n\\(164,430\\)",
+    "hint": "Divide the total data pool by the divisor: \\(4619 \\div 24\\).",
+    "solution": "\\\\(192\\\\) packages, remainder \\\\(11\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Find the total number of active arms in the system.",
-        "workingOut": "\\(27 \\\\times 435 = 11745\\)"
+        "explanation": "Identify the dividend and the divisor from the context problem.",
+        "workingOut": "\\\\(\\text{Dividend} = 4619,\\quad \\text{Divisor} = 24\\\\)"
       },
       {
-        "explanation": "Multiply this result by the output capacity per unit (\\(14\\)).",
-        "workingOut": "\\(11745 \\\\times 14 = 164430\\)"
+        "explanation": "Perform the long division calculation.",
+        "workingOut": "\\\\(4619 \\\\div 24 = 192\\\\text{ remainder } 11\\\\)"
       },
       {
-        "explanation": "State the final computed peak capacity output in sensors.",
-        "workingOut": "\\(164,430\\)"
+        "explanation": "Validate the remainder is smaller than the divisor.",
+        "workingOut": "\\\\(11 < 24 \\implies \\\\text{Quotient: } 192,\\ \\\\text{Remainder: } 11\\\\)"
       }
     ],
     "graphData": null
