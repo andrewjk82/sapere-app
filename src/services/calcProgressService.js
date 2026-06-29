@@ -55,15 +55,12 @@ export const YEAR_LEVEL_PRESETS = {
   1: {
     'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5' },
     'calc-stage-sub': { A: 'calc-sub-s1', B: 'calc-sub-s5' },
-    'clock-stage-1':  { A: 'clock-1-s1' },
   },
   2: {
     'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9' },
     'calc-stage-sub': { A: 'calc-sub-s1', B: 'calc-sub-s5', C: 'calc-sub-s9' },
     'calc-stage-2':   { C: 'calc-2-core' },
     'calc-stage-3':   { A: 'calc-3-a1' },
-    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
-    'clock-stage-2':  { A: 'clock-2-s1' },
   },
   3: {
     'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9', D: 'calc-1-s14' },
@@ -72,9 +69,6 @@ export const YEAR_LEVEL_PRESETS = {
     'calc-stage-3':   { A: 'calc-3-a1', B: 'calc-3-b5' },
     'calc-stage-4':   { A: 'calc-4-a1' },
     'calc-stage-5':   { A: 'calc-5-s1' },
-    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
-    'clock-stage-2':  { A: 'clock-2-s1', B: 'clock-2-s3', C: 'clock-2-s5' },
-    'clock-stage-3':  { A: 'clock-3-s1' },
   },
   4: {
     'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9', D: 'calc-1-s14', E: 'calc-1-s18' },
@@ -84,10 +78,6 @@ export const YEAR_LEVEL_PRESETS = {
     'calc-stage-4':   { A: 'calc-4-a1', B: 'calc-4-b5', C: 'calc-4-c10' },
     'calc-stage-5':   { A: 'calc-5-s1', B: 'calc-5-s9' },
     'calc-stage-6':   { A: 'calc-6-s1' },
-    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
-    'clock-stage-2':  { A: 'clock-2-s1', B: 'clock-2-s3', C: 'clock-2-s5' },
-    'clock-stage-3':  { A: 'clock-3-s1', B: 'clock-3-s3', C: 'clock-3-s5' },
-    'clock-stage-4':  { A: 'clock-4-s1' },
   },
   5: {
     'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9', D: 'calc-1-s14', E: 'calc-1-s18', F: 'calc-1-s23' },
@@ -98,11 +88,6 @@ export const YEAR_LEVEL_PRESETS = {
     'calc-stage-5':   { A: 'calc-5-s1', B: 'calc-5-s9', C: 'calc-5-s13', D: 'calc-5-s17' },
     'calc-stage-6':   { A: 'calc-6-s1', B: 'calc-6-s5', C: 'calc-6-s11' },
     'calc-stage-7':   { C: 'calc-7-core' },
-    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
-    'clock-stage-2':  { A: 'clock-2-s1', B: 'clock-2-s3', C: 'clock-2-s5' },
-    'clock-stage-3':  { A: 'clock-3-s1', B: 'clock-3-s3', C: 'clock-3-s5' },
-    'clock-stage-4':  { A: 'clock-4-s1', B: 'clock-4-s3', C: 'clock-4-s5' },
-    'clock-stage-5':  { A: 'clock-5-s1' },
   },
   6: {
     'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9', D: 'calc-1-s14', E: 'calc-1-s18', F: 'calc-1-s23', G: 'calc-1-s27' },
@@ -113,11 +98,6 @@ export const YEAR_LEVEL_PRESETS = {
     'calc-stage-5':   { A: 'calc-5-s1', B: 'calc-5-s9', C: 'calc-5-s13', D: 'calc-5-s17', E: 'calc-5-s21' },
     'calc-stage-6':   { A: 'calc-6-s1', B: 'calc-6-s5', C: 'calc-6-s11', D: 'calc-6-s16', E: 'calc-6-s21' },
     'calc-stage-7':   { C: 'calc-7-core', A: 'calc-7-adv', E: 'calc-7-enrich' },
-    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
-    'clock-stage-2':  { A: 'clock-2-s1', B: 'clock-2-s3', C: 'clock-2-s5' },
-    'clock-stage-3':  { A: 'clock-3-s1', B: 'clock-3-s3', C: 'clock-3-s5' },
-    'clock-stage-4':  { A: 'clock-4-s1', B: 'clock-4-s3', C: 'clock-4-s5' },
-    'clock-stage-5':  { A: 'clock-5-s1', B: 'clock-5-s3', C: 'clock-5-s4', D: 'clock-5-s6' },
   },
 };
 
