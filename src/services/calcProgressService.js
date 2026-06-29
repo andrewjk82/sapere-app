@@ -448,69 +448,57 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
     awardMasteryMedal(medals);
   }
 
-  // ── Auto Year-Level Promotion ──────────────────────────────────────────────
-  // When 50%+ of enabled stages are mastered (stage medal) AND at least 2
-  // stages are mastered, auto-promote to the next year level: enable NEW
-  // stages from that year's preset while keeping existing progress untouched.
-  let promotedTo = null;
-  const currentYear = data.yearLevel || 0;
-  if (currentYear >= 1 && currentYear < 6) {
-    const masteredStageCount = enabledStageIds.filter((sid) =>
-      hasMedal(medals, (m) => m.tier === 'stage' && m.stageId === sid),
-    ).length;
-    const promotionRatio = enabledStageIds.length > 0
-      ? masteredStageCount / enabledStageIds.length
-      : 0;
+  // ── Per-Stage Prerequisite Auto-Unlock ──────────────────────────────────────
+  // When a stage earns a stage medal (all groups mastered), check if any
+  // DISABLED stages whose prerequisites are now satisfied should be unlocked.
+  // This gives gradual, per-stage progression instead of whole-year jumps.
+  //
+  // Prerequisite map: { stageId: [prerequisite stageIds that must be mastered] }
+  const STAGE_PREREQUISITES = {
+    'calc-stage-2':   ['calc-stage-1', 'calc-stage-sub'],           // 2-3 digit add/sub requires add+sub basics
+    'calc-stage-3':   ['calc-stage-1'],                              // multiplication requires addition
+    'calc-stage-4':   ['calc-stage-3'],                              // division requires multiplication
+    'calc-stage-5':   ['calc-stage-1', 'calc-stage-sub'],           // fractions require add+sub
+    'calc-stage-6':   ['calc-stage-5'],                              // decimals require fractions
+    'calc-stage-7':   ['calc-stage-3', 'calc-stage-4'],             // BODMAS requires mult+div
+    'clock-stage-2':  ['clock-stage-1'],                             // quarter past requires o'clock
+    'clock-stage-3':  ['clock-stage-2'],                             // 5-min requires quarters
+    'clock-stage-4':  ['clock-stage-3'],                             // minute-precise requires 5-min
+    'clock-stage-5':  ['clock-stage-4'],                             // elapsed time requires precise
+  };
 
-    if (promotionRatio >= 0.5 && masteredStageCount >= 2) {
-      const nextYear = currentYear + 1;
-      const nextPreset = YEAR_LEVEL_PRESETS[nextYear];
+  const masteredStageSet = new Set(
+    medals.filter((m) => m.tier === 'stage').map((m) => m.stageId),
+  );
+  const newlyUnlocked = [];
 
-      if (nextPreset) {
-        Object.entries(nextPreset).forEach(([stageId, presetGroups]) => {
-          const existing = updatedStages[stageId];
-          if (existing && existing.enabled) {
-            // Stage already enabled — ensure all preset groups exist
-            Object.entries(presetGroups).forEach(([groupKey, startStepId]) => {
-              if (!existing.groups?.[groupKey]?.currentStepId) {
-                if (!existing.groups) existing.groups = {};
-                existing.groups[groupKey] = {
-                  currentStepId: startStepId,
-                  weeklyScores: [],
-                  lastEvaluatedWeek: null,
-                };
-                mutated = true;
-              }
-            });
-          } else {
-            // Stage NOT yet enabled — enable it with preset config
-            const allGroups = getGroupsForStage(stageId);
-            const groups = {};
-            Object.keys(allGroups).forEach((groupKey) => {
-              groups[groupKey] = {
-                currentStepId: presetGroups[groupKey] || allGroups[groupKey][0]?.id,
-                weeklyScores: [],
-                lastEvaluatedWeek: null,
-              };
-            });
-            updatedStages[stageId] = { enabled: true, groups };
-            mutated = true;
-          }
-        });
-        promotedTo = nextYear;
-      }
-    }
-  }
+  Object.entries(STAGE_PREREQUISITES).forEach(([stageId, prereqs]) => {
+    // Skip if already enabled
+    if (updatedStages[stageId]?.enabled) return;
+    // Check if ALL prerequisites are mastered
+    if (!prereqs.every((pid) => masteredStageSet.has(pid))) return;
+
+    // All prereqs met — auto-enable this stage with first-step defaults
+    const allGroups = getGroupsForStage(stageId);
+    if (Object.keys(allGroups).length === 0) return;
+
+    const groups = {};
+    Object.entries(allGroups).forEach(([groupKey, topics]) => {
+      groups[groupKey] = {
+        currentStepId: topics[0]?.id,
+        weeklyScores: [],
+        lastEvaluatedWeek: null,
+      };
+    });
+    updatedStages[stageId] = { enabled: true, groups };
+    newlyUnlocked.push(stageId);
+    mutated = true;
+  });
 
   // 변경이 없으면 쓰지 않음 (주 2회차 이후 세션은 read만 발생)
   if (!mutated) return { changes, alerts, data };
 
-  const nextData = {
-    ...data,
-    stages: updatedStages,
-    medals,
-    ...(promotedTo ? { yearLevel: promotedTo } : {}),
-  };
+  const nextData = { ...data, stages: updatedStages, medals };
   await setDoc(progressRef(uid), {
     ...nextData,
     updatedAt: serverTimestamp(),
@@ -521,16 +509,19 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
     alerts.forEach((alert) => notifyFn(alert).catch(() => {}));
   }
 
-  // 진급 알림
-  if (promotedTo && typeof notifyFn === 'function') {
-    notifyFn({
-      type: 'year_promotion',
-      fromYear: currentYear,
-      toYear: promotedTo,
-    }).catch(() => {});
+  // Stage 자동 활성화 알림
+  if (newlyUnlocked.length > 0 && typeof notifyFn === 'function') {
+    newlyUnlocked.forEach((stageId) => {
+      const stageTitle = CALC_STAGES.find((s) => s.id === stageId)?.title || stageId;
+      notifyFn({
+        type: 'stage_unlocked',
+        stageId,
+        stageTitle,
+      }).catch(() => {});
+    });
   }
 
-  return { changes, alerts, data: nextData, promotedTo };
+  return { changes, alerts, data: nextData, newlyUnlocked };
 };
 
 // ─── 메달 조회/확인 ───────────────────────────────────────────────────────────
