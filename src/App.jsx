@@ -600,6 +600,7 @@ function App() {
   }, [showToast, user?.uid]);
   const hasPendingSignup = Boolean(sessionStorage.getItem('pendingSignupStep'));
   const [activeTab, setActiveTab] = useState('Dashboard');
+  const [reportsInitialTab, setReportsInitialTab] = useState('reports');
   const [showJourneyMap, setShowJourneyMap] = useState(false);
   const [selectedStudentId, setSelectedStudentId] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -1134,6 +1135,10 @@ function App() {
             onShowLeaderboard={() => setShowLeaderboard(true)}
             setActiveTab={handleTabChange}
             onOpenJourneyMap={() => setShowJourneyMap(true)}
+            onNavigateToTraffic={() => {
+              setReportsInitialTab('traffic');
+              setActiveTab('Reports');
+            }}
           />
         );
       case 'Students':
@@ -1165,7 +1170,12 @@ function App() {
       case 'Library':
         return <Library />;
       case 'Reports':
-        return <ReportsAdmin />;
+        return (
+          <ReportsAdmin
+            initialViewMode={reportsInitialTab}
+            setInitialViewMode={setReportsInitialTab}
+          />
+        );
       case 'Settings':
         return <Settings />;
       default:
@@ -1181,6 +1191,9 @@ function App() {
     if (isLocked) {
       showToast("Please finish your current challenge before switching tabs.", 'warning');
       return;
+    }
+    if (tab === 'Reports') {
+      setReportsInitialTab('reports');
     }
     setActiveTab(tab);
     setSelectedStudentId(null);

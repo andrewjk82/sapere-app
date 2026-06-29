@@ -59,8 +59,17 @@ const SourceBadge = ({ report }) => {
   );
 };
 
-const ReportsAdmin = () => {
-  const [viewMode, setViewMode] = useState('reports'); // 'reports' | 'grading'
+const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
+  const [viewMode, setViewMode] = useState(initialViewMode);
+  
+  useEffect(() => {
+    if (initialViewMode) setViewMode(initialViewMode);
+  }, [initialViewMode]);
+
+  const handleSetViewMode = (mode) => {
+    setViewMode(mode);
+    setInitialViewMode?.(mode);
+  };
   const [reports, setReports] = useState([]);
   // Pending grading items come from the shared AdminFeedContext listener —
   // opening this screen must not add a second grading_queue subscription.
@@ -1029,7 +1038,7 @@ const ReportsAdmin = () => {
 
         <div style={{ display: 'flex', background: '#f1f5f9', padding: '6px', borderRadius: '18px', gap: '4px', marginLeft: '12px' }}>
           <button 
-            onClick={() => setViewMode('reports')}
+            onClick={() => handleSetViewMode('reports')}
             style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'reports' ? 'white' : 'transparent', color: viewMode === 'reports' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'reports' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
           >
             <MessageSquare size={18} /> Reports 
@@ -1040,7 +1049,7 @@ const ReportsAdmin = () => {
             )}
           </button>
           <button 
-            onClick={() => setViewMode('grading')}
+            onClick={() => handleSetViewMode('grading')}
             style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'grading' ? 'white' : 'transparent', color: viewMode === 'grading' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'grading' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
           >
             <ClipboardCheck size={18} /> Grading Queue
@@ -1051,7 +1060,7 @@ const ReportsAdmin = () => {
             )}
           </button>
           <button 
-            onClick={() => setViewMode('traffic')}
+            onClick={() => handleSetViewMode('traffic')}
             style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'traffic' ? 'white' : 'transparent', color: viewMode === 'traffic' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'traffic' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
           >
             <Activity size={18} /> Traffic Live
