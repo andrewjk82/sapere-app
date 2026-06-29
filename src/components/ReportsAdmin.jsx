@@ -1078,7 +1078,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
         )}
       </div>
 
-      <div style={{ padding: '0 24px 40px', maxWidth: '900px' }}>
+      <div style={{ padding: '0 24px 40px', maxWidth: viewMode === 'traffic' ? '1200px' : '900px', transition: 'max-width 0.3s ease' }}>
         {loading ? (
           <div style={{ textAlign: 'center', padding: '100px 0' }}>
             <div className="sapere-loader" style={{ margin: '0 auto 20px' }}></div>

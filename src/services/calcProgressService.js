@@ -38,6 +38,123 @@ const progressRef = (uid) => doc(db, 'users', uid, 'calc_progress', 'main');
 
 const CALC_STAGES = CURRICULUM_DATA['Daily Calculation'] || [];
 
+// ─── Year Level Presets ───────────────────────────────────────────────────────
+// Each preset maps a school year (1–6) to:
+//   • which stages to enable
+//   • for each enabled stage, the starting step for every group
+// The teacher picks a year, and the system populates ~50 dropdowns automatically.
+
+/**
+ * Preset format:
+ *   { [stageId]: { [groupKey]: startStepId } }
+ *
+ * Stages NOT listed for a year are disabled.
+ * Groups NOT listed within a listed stage start at their first step.
+ */
+export const YEAR_LEVEL_PRESETS = {
+  1: {
+    'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5' },
+    'calc-stage-sub': { A: 'calc-sub-s1', B: 'calc-sub-s5' },
+    'clock-stage-1':  { A: 'clock-1-s1' },
+  },
+  2: {
+    'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9' },
+    'calc-stage-sub': { A: 'calc-sub-s1', B: 'calc-sub-s5', C: 'calc-sub-s9' },
+    'calc-stage-2':   { C: 'calc-2-core' },
+    'calc-stage-3':   { A: 'calc-3-a1' },
+    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
+    'clock-stage-2':  { A: 'clock-2-s1' },
+  },
+  3: {
+    'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9', D: 'calc-1-s14' },
+    'calc-stage-sub': { A: 'calc-sub-s1', B: 'calc-sub-s5', C: 'calc-sub-s9', D: 'calc-sub-s14' },
+    'calc-stage-2':   { C: 'calc-2-core', A: 'calc-2-adv' },
+    'calc-stage-3':   { A: 'calc-3-a1', B: 'calc-3-b5' },
+    'calc-stage-4':   { A: 'calc-4-a1' },
+    'calc-stage-5':   { A: 'calc-5-s1' },
+    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
+    'clock-stage-2':  { A: 'clock-2-s1', B: 'clock-2-s3', C: 'clock-2-s5' },
+    'clock-stage-3':  { A: 'clock-3-s1' },
+  },
+  4: {
+    'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9', D: 'calc-1-s14', E: 'calc-1-s18' },
+    'calc-stage-sub': { A: 'calc-sub-s1', B: 'calc-sub-s5', C: 'calc-sub-s9', D: 'calc-sub-s14', E: 'calc-sub-s18' },
+    'calc-stage-2':   { C: 'calc-2-core', A: 'calc-2-adv', E: 'calc-2-enrich' },
+    'calc-stage-3':   { A: 'calc-3-a1', B: 'calc-3-b5', C: 'calc-3-c10', D: 'calc-3-d15' },
+    'calc-stage-4':   { A: 'calc-4-a1', B: 'calc-4-b5', C: 'calc-4-c10' },
+    'calc-stage-5':   { A: 'calc-5-s1', B: 'calc-5-s9' },
+    'calc-stage-6':   { A: 'calc-6-s1' },
+    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
+    'clock-stage-2':  { A: 'clock-2-s1', B: 'clock-2-s3', C: 'clock-2-s5' },
+    'clock-stage-3':  { A: 'clock-3-s1', B: 'clock-3-s3', C: 'clock-3-s5' },
+    'clock-stage-4':  { A: 'clock-4-s1' },
+  },
+  5: {
+    'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9', D: 'calc-1-s14', E: 'calc-1-s18', F: 'calc-1-s23' },
+    'calc-stage-sub': { A: 'calc-sub-s1', B: 'calc-sub-s5', C: 'calc-sub-s9', D: 'calc-sub-s14', E: 'calc-sub-s18', F: 'calc-sub-s23' },
+    'calc-stage-2':   { C: 'calc-2-core', A: 'calc-2-adv', E: 'calc-2-enrich' },
+    'calc-stage-3':   { A: 'calc-3-a1', B: 'calc-3-b5', C: 'calc-3-c10', D: 'calc-3-d15', E: 'calc-3-e18', F: 'calc-3-f23' },
+    'calc-stage-4':   { A: 'calc-4-a1', B: 'calc-4-b5', C: 'calc-4-c10', D: 'calc-4-d15', E: 'calc-4-e18' },
+    'calc-stage-5':   { A: 'calc-5-s1', B: 'calc-5-s9', C: 'calc-5-s13', D: 'calc-5-s17' },
+    'calc-stage-6':   { A: 'calc-6-s1', B: 'calc-6-s5', C: 'calc-6-s11' },
+    'calc-stage-7':   { C: 'calc-7-core' },
+    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
+    'clock-stage-2':  { A: 'clock-2-s1', B: 'clock-2-s3', C: 'clock-2-s5' },
+    'clock-stage-3':  { A: 'clock-3-s1', B: 'clock-3-s3', C: 'clock-3-s5' },
+    'clock-stage-4':  { A: 'clock-4-s1', B: 'clock-4-s3', C: 'clock-4-s5' },
+    'clock-stage-5':  { A: 'clock-5-s1' },
+  },
+  6: {
+    'calc-stage-1':   { A: 'calc-1-s1', B: 'calc-1-s5', C: 'calc-1-s9', D: 'calc-1-s14', E: 'calc-1-s18', F: 'calc-1-s23', G: 'calc-1-s27' },
+    'calc-stage-sub': { A: 'calc-sub-s1', B: 'calc-sub-s5', C: 'calc-sub-s9', D: 'calc-sub-s14', E: 'calc-sub-s18', F: 'calc-sub-s23', G: 'calc-sub-s27' },
+    'calc-stage-2':   { C: 'calc-2-core', A: 'calc-2-adv', E: 'calc-2-enrich' },
+    'calc-stage-3':   { A: 'calc-3-a1', B: 'calc-3-b5', C: 'calc-3-c10', D: 'calc-3-d15', E: 'calc-3-e18', F: 'calc-3-f23', G: 'calc-3-g27' },
+    'calc-stage-4':   { A: 'calc-4-a1', B: 'calc-4-b5', C: 'calc-4-c10', D: 'calc-4-d15', E: 'calc-4-e18', F: 'calc-4-f23', G: 'calc-4-g27' },
+    'calc-stage-5':   { A: 'calc-5-s1', B: 'calc-5-s9', C: 'calc-5-s13', D: 'calc-5-s17', E: 'calc-5-s21' },
+    'calc-stage-6':   { A: 'calc-6-s1', B: 'calc-6-s5', C: 'calc-6-s11', D: 'calc-6-s16', E: 'calc-6-s21' },
+    'calc-stage-7':   { C: 'calc-7-core', A: 'calc-7-adv', E: 'calc-7-enrich' },
+    'clock-stage-1':  { A: 'clock-1-s1', B: 'clock-1-s3', C: 'clock-1-s5' },
+    'clock-stage-2':  { A: 'clock-2-s1', B: 'clock-2-s3', C: 'clock-2-s5' },
+    'clock-stage-3':  { A: 'clock-3-s1', B: 'clock-3-s3', C: 'clock-3-s5' },
+    'clock-stage-4':  { A: 'clock-4-s1', B: 'clock-4-s3', C: 'clock-4-s5' },
+    'clock-stage-5':  { A: 'clock-5-s1', B: 'clock-5-s3', C: 'clock-5-s4', D: 'clock-5-s6' },
+  },
+};
+
+/**
+ * Generate a full stage config object from a year level preset.
+ * Returns the same shape as CalcAutoModePanel's local `config` state:
+ *   { [stageId]: { enabled: boolean, groups: { [groupKey]: currentStepId } } }
+ *
+ * Stages in the preset are enabled; stages NOT in the preset are disabled but
+ * still included (with their first-step defaults) so the Advanced panel can
+ * toggle them on.
+ */
+export const buildConfigFromPreset = (yearLevel) => {
+  const preset = YEAR_LEVEL_PRESETS[yearLevel];
+  if (!preset) return null;
+
+  const config = {};
+  CALC_STAGES.forEach((stage) => {
+    const presetGroups = preset[stage.id]; // { A: stepId, B: stepId, … } or undefined
+    const allGroups = getGroupsForStage(stage.id);
+    const groupCfg = {};
+
+    Object.keys(allGroups).forEach((groupKey) => {
+      const topics = allGroups[groupKey];
+      // Use the preset step if available, otherwise fall back to first step
+      groupCfg[groupKey] = presetGroups?.[groupKey] || topics[0]?.id;
+    });
+
+    config[stage.id] = {
+      enabled: Boolean(presetGroups),
+      groups: groupCfg,
+    };
+  });
+
+  return config;
+};
+
 /** stageId → topics 배열 */
 const getStageTopics = (stageId) =>
   CALC_STAGES.find((s) => s.id === stageId)?.topics || [];
