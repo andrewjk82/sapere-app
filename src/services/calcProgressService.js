@@ -292,8 +292,9 @@ export const ensureCalcProgress = async (uid) => {
  * @param {string} uid
  * @param {boolean} autoMode
  * @param {Object} stageConfig  { [stageId]: { enabled, groups: { [groupKey]: { currentStepId } } } }
+ * @param {number} [yearLevel] Optional year level (1-6) for auto-promotion tracking
  */
-export const saveAutoModeConfig = async (uid, autoMode, stageConfig) => {
+export const saveAutoModeConfig = async (uid, autoMode, stageConfig, yearLevel) => {
   if (!uid) return;
   const snap = await getDoc(progressRef(uid));
   const existing = snap.exists() ? snap.data() : {};
@@ -320,6 +321,7 @@ export const saveAutoModeConfig = async (uid, autoMode, stageConfig) => {
     ...existing,
     autoMode,
     stages,
+    ...(yearLevel ? { yearLevel } : {}),
     updatedAt: serverTimestamp(),
   }, { merge: false });
 };
@@ -446,10 +448,69 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
     awardMasteryMedal(medals);
   }
 
+  // ── Auto Year-Level Promotion ──────────────────────────────────────────────
+  // When 50%+ of enabled stages are mastered (stage medal) AND at least 2
+  // stages are mastered, auto-promote to the next year level: enable NEW
+  // stages from that year's preset while keeping existing progress untouched.
+  let promotedTo = null;
+  const currentYear = data.yearLevel || 0;
+  if (currentYear >= 1 && currentYear < 6) {
+    const masteredStageCount = enabledStageIds.filter((sid) =>
+      hasMedal(medals, (m) => m.tier === 'stage' && m.stageId === sid),
+    ).length;
+    const promotionRatio = enabledStageIds.length > 0
+      ? masteredStageCount / enabledStageIds.length
+      : 0;
+
+    if (promotionRatio >= 0.5 && masteredStageCount >= 2) {
+      const nextYear = currentYear + 1;
+      const nextPreset = YEAR_LEVEL_PRESETS[nextYear];
+
+      if (nextPreset) {
+        Object.entries(nextPreset).forEach(([stageId, presetGroups]) => {
+          const existing = updatedStages[stageId];
+          if (existing && existing.enabled) {
+            // Stage already enabled — ensure all preset groups exist
+            Object.entries(presetGroups).forEach(([groupKey, startStepId]) => {
+              if (!existing.groups?.[groupKey]?.currentStepId) {
+                if (!existing.groups) existing.groups = {};
+                existing.groups[groupKey] = {
+                  currentStepId: startStepId,
+                  weeklyScores: [],
+                  lastEvaluatedWeek: null,
+                };
+                mutated = true;
+              }
+            });
+          } else {
+            // Stage NOT yet enabled — enable it with preset config
+            const allGroups = getGroupsForStage(stageId);
+            const groups = {};
+            Object.keys(allGroups).forEach((groupKey) => {
+              groups[groupKey] = {
+                currentStepId: presetGroups[groupKey] || allGroups[groupKey][0]?.id,
+                weeklyScores: [],
+                lastEvaluatedWeek: null,
+              };
+            });
+            updatedStages[stageId] = { enabled: true, groups };
+            mutated = true;
+          }
+        });
+        promotedTo = nextYear;
+      }
+    }
+  }
+
   // 변경이 없으면 쓰지 않음 (주 2회차 이후 세션은 read만 발생)
   if (!mutated) return { changes, alerts, data };
 
-  const nextData = { ...data, stages: updatedStages, medals };
+  const nextData = {
+    ...data,
+    stages: updatedStages,
+    medals,
+    ...(promotedTo ? { yearLevel: promotedTo } : {}),
+  };
   await setDoc(progressRef(uid), {
     ...nextData,
     updatedAt: serverTimestamp(),
@@ -460,7 +521,16 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
     alerts.forEach((alert) => notifyFn(alert).catch(() => {}));
   }
 
-  return { changes, alerts, data: nextData };
+  // 진급 알림
+  if (promotedTo && typeof notifyFn === 'function') {
+    notifyFn({
+      type: 'year_promotion',
+      fromYear: currentYear,
+      toYear: promotedTo,
+    }).catch(() => {});
+  }
+
+  return { changes, alerts, data: nextData, promotedTo };
 };
 
 // ─── 메달 조회/확인 ───────────────────────────────────────────────────────────

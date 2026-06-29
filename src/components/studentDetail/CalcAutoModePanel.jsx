@@ -119,7 +119,7 @@ export default function CalcAutoModePanel({ uid }) {
         });
         stageConfig[stageId] = { enabled: true, groups };
       });
-      await saveAutoModeConfig(uid, true, stageConfig);
+      await saveAutoModeConfig(uid, true, stageConfig, selectedYear || undefined);
       const fresh = await ensureCalcProgress(uid);
       setProgress(fresh);
       setSavedAt(Date.now());
