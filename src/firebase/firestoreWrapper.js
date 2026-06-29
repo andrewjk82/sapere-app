@@ -67,3 +67,23 @@ export const deleteDoc = function (ref, ...args) {
   }
   return origFirestore.deleteDoc(ref, ...args);
 };
+
+export const onSnapshot = function (ref, ...args) {
+  if (isTrafficLog(ref)) {
+    return origFirestore.onSnapshot(ref, ...args);
+  }
+  const page = getPageContext();
+  // args: (onNext) | (options, onNext) | (onNext, onError) | (onNext, onError, onComplete)
+  let wrappedArgs = [...args];
+  const wrapCallback = (cb) => (snap) => {
+    const count = snap.docs ? Math.max(snap.docs.length, 1) : 1;
+    getTracker().trackRead(count, page);
+    return cb(snap);
+  };
+  if (typeof args[0] === 'function') {
+    wrappedArgs[0] = wrapCallback(args[0]);
+  } else if (args[0] && typeof args[0] === 'object' && typeof args[1] === 'function') {
+    wrappedArgs[1] = wrapCallback(args[1]);
+  }
+  return origFirestore.onSnapshot(ref, ...wrappedArgs);
+};
