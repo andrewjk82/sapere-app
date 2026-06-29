@@ -6,7 +6,7 @@ import { useAdminFeed } from '../context/AdminFeedContext';
 import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
-import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench, Search } from 'lucide-react';
+import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench, Search, Activity } from 'lucide-react';
 import QuestionBankModal from './QuestionBankModal';
 import AnnotationModal from './AnnotationModal';
 import MathView from './MathView';
@@ -14,6 +14,7 @@ import InteractiveFractionGrid from './challenge/InteractiveFractionGrid';
 import WorkedSolutionSteps from './challenge/WorkedSolutionSteps';
 import { parseSolutionSteps } from '../utils/solutionSteps';
 import { answersMatch } from '../utils/answerMatching';
+import TrafficMonitorPanel from './TrafficMonitorPanel';
 
 // ── Report provenance ────────────────────────────────────────────────────────
 // Students file reports from several places. Only some of them correspond to a
@@ -133,7 +134,7 @@ const ReportsAdmin = () => {
     fetchReports();
   }, [fetchReports]);
 
-  const loading = viewMode === 'reports' ? reportsLoading : gradingLoading;
+  const loading = viewMode === 'traffic' ? false : (viewMode === 'reports' ? reportsLoading : gradingLoading);
 
   const handleMarkResolved = async (reportId) => {
     try {
@@ -1049,6 +1050,12 @@ const ReportsAdmin = () => {
               </span>
             )}
           </button>
+          <button 
+            onClick={() => setViewMode('traffic')}
+            style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'traffic' ? 'white' : 'transparent', color: viewMode === 'traffic' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'traffic' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
+          >
+            <Activity size={18} /> Traffic Live
+          </button>
         </div>
 
         {viewMode === 'reports' && reports.length > 0 && (
@@ -1074,7 +1081,13 @@ const ReportsAdmin = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            {viewMode === 'reports' ? renderReportsList() : renderGradingQueue()}
+            {viewMode === 'reports' ? (
+              renderReportsList()
+            ) : viewMode === 'grading' ? (
+              renderGradingQueue()
+            ) : (
+              <TrafficMonitorPanel />
+            )}
           </motion.div>
         )}
       </div>

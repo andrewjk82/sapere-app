@@ -17,6 +17,7 @@ import {
 import { notifyTeacherCalcStuck } from './utils/challengeUtils';
 import { playSchoolBell } from './utils/schoolBell';
 import { installButtonFeedback } from './utils/uiFeedback';
+import { setTrafficUserContext } from './services/trafficTrackerService';
 
 // 한 페이지 로드당 종소리 1회만 — React StrictMode 이중 마운트/재렌더 방지.
 let bellRungThisLoad = false;
@@ -782,6 +783,7 @@ function App() {
     if (!user?.uid || sharedProfileLoading) return;
     setProfile(sharedProfile);
     setProfileLoaded(true);
+    setTrafficUserContext(user.uid, sharedProfile?.role);
     const cacheKey = getProfileCacheKey(user.uid);
     if (sharedProfile) localCache.set(cacheKey, sharedProfile);
     else localCache.remove(cacheKey);

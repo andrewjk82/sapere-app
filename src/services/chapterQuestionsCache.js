@@ -22,6 +22,7 @@ import {
   collection, query, where, getDocs, getDoc, doc,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import { trackRead } from './trafficTrackerService';
 
 const CACHE_PREFIX = 'sapere:qcache';
 const SESSION_VERSION_KEY = 'sapere:qcache:membershipVersion';
@@ -65,6 +66,7 @@ const setSessionVersion = (v) => {
 export const fetchRemoteMembershipVersion = async () => {
   try {
     const snap = await getDoc(doc(db, 'sync_meta', 'questions'));
+    trackRead(1, 'version_meta');
     return Number(snap.data()?.version || snap.data()?.membershipVersion || 0);
   } catch {
     return 0;
@@ -120,6 +122,7 @@ const fetchFromFirestore = async (chapterId) => {
       ? query(collection(db, 'questions'), where('examPaper', '==', examPaperKey))
       : query(collection(db, 'questions'), where('chapterId', '==', chapterId)),
   );
+  trackRead(snap.size, `questions_fetch:${chapterId}`);
   return snap.docs
     .map((d) => ({ id: d.id, ...d.data() }))
     .filter((q) => q.isActive !== false);
