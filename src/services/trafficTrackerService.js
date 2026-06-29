@@ -101,6 +101,8 @@ export const flushBuffer = async () => {
 
 // Auto flush when browser tab is hidden or closed to preserve last metrics
 if (typeof window !== 'undefined') {
+  window.__sapereTrafficTracker = { trackRead, trackWrite };
+
   window.addEventListener('beforeunload', () => {
     flushBuffer();
   });
