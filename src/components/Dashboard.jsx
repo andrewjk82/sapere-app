@@ -31,7 +31,7 @@ const liftHover = {
   onMouseLeave: (e) => { e.currentTarget.style.transform = ''; },
 };
 
-const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard, onOpenJourneyMap }) => {
+const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard, onOpenJourneyMap, onNavigateToTraffic }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
   const { profile } = useProfile();
@@ -471,6 +471,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
             onReviewAll={() => setActiveTab('Reports')}
             onSendReminders={handleManualSync}
             setActiveTab={setActiveTab}
+            onNavigateToTraffic={onNavigateToTraffic}
           />
         )}
       </motion.div>
