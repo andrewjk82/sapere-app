@@ -6,6 +6,7 @@ import { useAdminFeed } from '../context/AdminFeedContext';
 import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
+import { useToast } from '../context/ToastContext';
 import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench, Search, Activity } from 'lucide-react';
 import QuestionBankModal from './QuestionBankModal';
 import AnnotationModal from './AnnotationModal';
@@ -60,6 +61,7 @@ const SourceBadge = ({ report }) => {
 };
 
 const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
+  const { showToast } = useToast();
   const [viewMode, setViewMode] = useState(initialViewMode);
   
   useEffect(() => {
@@ -563,6 +565,10 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
         if (!directGrant) return;
         await grantCreditDirectly(report);
       }
+      showToast('Credit restored successfully.', 'success');
+      setReports(prev => prev.map(r =>
+        r.id === report.id ? { ...r, status: 'resolved', creditRestored: true } : r
+      ));
       setPreviewReport(null);
       setPreviewQuestion(null);
     } catch (err) {
@@ -621,6 +627,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
       const annotation = item.teacherAnnotation || null;
       await gradeSubmission(item, approved, feedback, annotation);
       setComments(prev => { const next = { ...prev }; delete next[item.id]; return next; });
+      showToast(approved ? 'Approved — points awarded.' : 'Rejected.', approved ? 'success' : 'info');
     } catch (err) {
       console.error('Error grading submission:', err);
       alert(`Failed to update grade: ${err.message || err}`);
@@ -712,7 +719,9 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                     disabled={!!processingId}
                     style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #fed7aa', background: '#fff7ed', color: '#c2410c', fontWeight: 800, cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
                   >
-                    <Award size={15} /> {processingId === report.id ? 'Restoring...' : 'Restore Credit'}
+                    {processingId === report.id
+                      ? <><span style={{ display: 'inline-block', width: 14, height: 14, border: '2px solid #c2410c', borderTopColor: 'transparent', borderRadius: '50%', animation: 'spin 0.7s linear infinite' }} /> Restoring…</>
+                      : <><Award size={15} /> Restore Credit</>}
                   </button>
                 )}
                 {report.source === 'secret_note' && report.status !== 'resolved' && !report.message?.startsWith('⚠️') && (
@@ -990,9 +999,11 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                 <button
                   onClick={() => handleGradeSubmission(item, true)}
                   disabled={!!processingId}
-                  style={{ flex: 1, padding: '18px', borderRadius: '20px', border: 'none', background: '#10b981', color: 'white', fontWeight: 900, fontSize: '1.05rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', boxShadow: '0 8px 20px rgba(16,185,129,0.2)' }}
+                  style={{ flex: 1, padding: '18px', borderRadius: '20px', border: 'none', background: processingId === item.id ? '#6ee7b7' : '#10b981', color: 'white', fontWeight: 900, fontSize: '1.05rem', cursor: processingId ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', boxShadow: '0 8px 20px rgba(16,185,129,0.2)', transition: 'background 0.2s' }}
                 >
-                  <CheckCircle size={22} /> {processingId === item.id ? 'Processing...' : 'Approve & Give Points'}
+                  {processingId === item.id
+                    ? <><span style={{ display: 'inline-block', width: 18, height: 18, border: '3px solid white', borderTopColor: 'transparent', borderRadius: '50%', animation: 'spin 0.7s linear infinite' }} /> Grading…</>
+                    : <><CheckCircle size={22} /> Approve & Give Points</>}
                 </button>
                 <button
                   onClick={() => handleGradeSubmission(item, false)}

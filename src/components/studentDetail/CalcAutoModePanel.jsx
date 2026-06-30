@@ -127,8 +127,18 @@ export default function CalcAutoModePanel({ uid }) {
       Object.entries(config).forEach(([stageId, cfg]) => {
         if (!cfg.enabled) return;
         const groups = {};
+        const savedGroupsInFirestore = progress?.stages?.[stageId]?.groups || {};
+        const allGroupKeys = Object.keys(cfg.groups);
         Object.entries(cfg.groups).forEach(([groupKey, currentStepId]) => {
-          groups[groupKey] = { currentStepId };
+          // Only save groups that are already in Firestore (previously active)
+          // or the first group (A) of a newly-enabled stage.
+          // This ensures newly enabled stages start from group A only,
+          // letting the auto-unlock chain handle subsequent groups.
+          const isFirstGroup = allGroupKeys[0] === groupKey;
+          const alreadySaved = Boolean(savedGroupsInFirestore[groupKey]);
+          if (isFirstGroup || alreadySaved) {
+            groups[groupKey] = { currentStepId };
+          }
         });
         stageConfig[stageId] = { enabled: true, groups };
       });

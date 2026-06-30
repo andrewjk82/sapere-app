@@ -711,3 +711,7 @@ math-field::part(virtual-keyboard-toggle) {
   display: none; /* hidden — MathInput.jsx renders its own toggle OUTSIDE the field
                     so closing isn't undone by the field re-focusing under 'auto' */
 }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

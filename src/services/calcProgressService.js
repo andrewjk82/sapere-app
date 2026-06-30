@@ -122,8 +122,17 @@ export const buildConfigFromPreset = (yearLevel) => {
 
     Object.keys(allGroups).forEach((groupKey) => {
       const topics = allGroups[groupKey];
-      // Use the preset step if available, otherwise fall back to first step
-      groupCfg[groupKey] = presetGroups?.[groupKey] || topics[0]?.id;
+      if (presetGroups) {
+        // Enabled stage: only include groups explicitly listed in the preset.
+        // Non-preset groups are left out of groupCfg so they aren't saved and
+        // don't get injected into the quiz pool (e.g. Year 1 shouldn't get
+        // 3-digit+ problems from group D just because it's the first step).
+        if (presetGroups[groupKey]) groupCfg[groupKey] = presetGroups[groupKey];
+      } else {
+        // Disabled stage: populate all groups so the teacher can see options
+        // in the UI if they manually toggle the stage on.
+        groupCfg[groupKey] = topics[0]?.id;
+      }
     });
 
     config[stage.id] = {
@@ -341,6 +350,7 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
   const lastWeekMonday = getLastWeekMonday();
   const changes = [];
   const alerts = [];
+  const newlyUnlockedGroups = [];
   let mutated = false; // 실제 변경이 있을 때만 Firestore에 씀 (불필요 쓰기 방지)
   const updatedStages = JSON.parse(JSON.stringify(data.stages || {}));
   const medals = Array.isArray(data.medals) ? [...data.medals] : [];
@@ -401,7 +411,28 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
 
       // 메달 발급: 스텝업 → step, 마지막 스텝 마스터 → phase
       if (reason === 'up') awardStepMedal(medals, stageId, groupKey, newStepId);
-      else if (reason === 'top') awardPhaseMedal(medals, stageId, groupKey);
+      else if (reason === 'top') {
+        awardPhaseMedal(medals, stageId, groupKey);
+        // 그룹 마스터 → 같은 stage의 다음 그룹 자동 언락
+        const allGroupsForStage = getGroupsForStage(stageId);
+        const allGroupKeys = Object.keys(allGroupsForStage);
+        const currentIdx = allGroupKeys.indexOf(groupKey);
+        if (currentIdx >= 0 && currentIdx + 1 < allGroupKeys.length) {
+          const nextGroupKey = allGroupKeys[currentIdx + 1];
+          if (!stageCfg.groups[nextGroupKey]) {
+            const nextTopics = allGroupsForStage[nextGroupKey];
+            if (nextTopics?.length > 0) {
+              stageCfg.groups[nextGroupKey] = {
+                currentStepId: nextTopics[0].id,
+                weeklyScores: [],
+                lastEvaluatedWeek: null,
+              };
+              newlyUnlockedGroups.push({ stageId, groupKey: nextGroupKey, stepId: nextTopics[0].id });
+              mutated = true;
+            }
+          }
+        }
+      }
 
       groupData.lastEvaluatedWeek = lastWeekMonday;
       // 14일 이전 데이터 정리
@@ -460,16 +491,19 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
 
     // All prereqs met — auto-enable this stage with first-step defaults
     const allGroups = getGroupsForStage(stageId);
-    if (Object.keys(allGroups).length === 0) return;
+    const allGroupKeys = Object.keys(allGroups);
+    if (allGroupKeys.length === 0) return;
 
-    const groups = {};
-    Object.entries(allGroups).forEach(([groupKey, topics]) => {
-      groups[groupKey] = {
-        currentStepId: topics[0]?.id,
+    // 첫 번째 그룹만 열고, 나머지는 그룹 마스터 시 순차 언락
+    const firstGroupKey = allGroupKeys[0];
+    const firstTopics = allGroups[firstGroupKey];
+    const groups = {
+      [firstGroupKey]: {
+        currentStepId: firstTopics[0]?.id,
         weeklyScores: [],
         lastEvaluatedWeek: null,
-      };
-    });
+      },
+    };
     updatedStages[stageId] = { enabled: true, groups };
     newlyUnlocked.push(stageId);
     mutated = true;
@@ -501,7 +535,21 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
     });
   }
 
-  return { changes, alerts, data: nextData, newlyUnlocked };
+  // Group 자동 언락 알림
+  if (newlyUnlockedGroups.length > 0 && typeof notifyFn === 'function') {
+    newlyUnlockedGroups.forEach(({ stageId, groupKey, stepId }) => {
+      const stageTitle = CALC_STAGES.find((s) => s.id === stageId)?.title || stageId;
+      notifyFn({
+        type: 'group_unlocked',
+        stageId,
+        stageTitle,
+        groupKey,
+        stepId,
+      }).catch(() => {});
+    });
+  }
+
+  return { changes, alerts, data: nextData, newlyUnlocked, newlyUnlockedGroups };
 };
 
 // ─── 메달 조회/확인 ───────────────────────────────────────────────────────────
