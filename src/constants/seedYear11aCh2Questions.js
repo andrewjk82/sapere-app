@@ -663,7 +663,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\\\sqrt{16}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(3\\\\)",
@@ -757,7 +757,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\\\sqrt{81}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(8\\\\)",
@@ -804,7 +804,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\\\sqrt{121}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(12\\\\)",
@@ -898,7 +898,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\\\sqrt{400}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(40\\\\)",
@@ -945,7 +945,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\\\sqrt{2500}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(250\\\\)",
@@ -992,7 +992,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\\\sqrt{10000}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(1000\\\\)",
@@ -1039,7 +1039,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{12}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(3\\\\sqrt{2}\\\\)",
@@ -1133,7 +1133,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{20}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(4\\\\sqrt{5}\\\\)",
@@ -1180,7 +1180,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{27}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(9\\\\sqrt{3}\\\\)",
@@ -1274,7 +1274,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{40}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(4\\\\sqrt{10}\\\\)",
@@ -1321,7 +1321,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{32}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(2\\\\sqrt{8}\\\\)",
@@ -1368,7 +1368,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{99}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(9\\\\sqrt{11}\\\\)",
@@ -1462,7 +1462,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{200}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(20\\\\sqrt{5}\\\\)",
@@ -1509,7 +1509,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{60}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(4\\\\sqrt{15}\\\\)",
@@ -1556,7 +1556,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{75}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(3\\\\sqrt{5}\\\\)",
@@ -1650,7 +1650,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{98}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(2\\\\sqrt{7}\\\\)",
@@ -1697,7 +1697,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{800}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(40\\\\sqrt{2}\\\\)",
@@ -1744,7 +1744,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\\\sqrt{1000}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(100\\\\sqrt{10}\\\\)",
@@ -1838,7 +1838,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(5\\\\sqrt{7} - 3\\\\sqrt{7}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(8\\\\sqrt{7}\\\\)",
@@ -1885,7 +1885,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(2\\\\sqrt{5} - \\\\sqrt{5}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(2\\\\sqrt{5}\\\\)",
@@ -1932,7 +1932,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(-3\\\\sqrt{2} + \\\\sqrt{2}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(4\\\\sqrt{2}\\\\)",
@@ -2026,7 +2026,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(-5\\\\sqrt{5} - 2\\\\sqrt{7} + 6\\\\sqrt{5}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(-\\\\sqrt{5} + 2\\\\sqrt{7}\\\\)",
@@ -2073,7 +2073,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(7\\\\sqrt{6} + 5\\\\sqrt{3} - 4\\\\sqrt{6} - 7\\\\sqrt{3}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(3\\\\sqrt{6} + 2\\\\sqrt{3}\\\\)",
@@ -2120,7 +2120,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(-6\\\\sqrt{2} - 4\\\\sqrt{5} + 3\\\\sqrt{2} - 2\\\\sqrt{5}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(3\\\\sqrt{2} - 6\\\\sqrt{5}\\\\)",
@@ -2214,7 +2214,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(3\\\\sqrt{8}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(3\\\\sqrt{2}\\\\)",
@@ -2261,7 +2261,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(5\\\\sqrt{12}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(5\\\\sqrt{3}\\\\)",
@@ -2308,7 +2308,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(2\\\\sqrt{24}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(2\\\\sqrt{6}\\\\)",
@@ -2402,7 +2402,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(3\\\\sqrt{45}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(3\\\\sqrt{5}\\\\)",
@@ -2449,7 +2449,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(6\\\\sqrt{52}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(6\\\\sqrt{13}\\\\)",
@@ -2496,7 +2496,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(2\\\\sqrt{300}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(10\\\\sqrt{3}\\\\)",
@@ -2590,7 +2590,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(2\\\\sqrt{5}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(\\\\sqrt{10}\\\\)",
@@ -2637,7 +2637,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(5\\\\sqrt{2}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(\\\\sqrt{10}\\\\)",
@@ -2684,7 +2684,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(8\\\\sqrt{2}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(\\\\sqrt{16}\\\\)",
@@ -2778,7 +2778,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(5\\\\sqrt{5}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(\\\\sqrt{25}\\\\)",
@@ -2825,7 +2825,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(4\\\\sqrt{7}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(\\\\sqrt{28}\\\\)",
@@ -2872,7 +2872,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(2\\\\sqrt{17}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(\\\\sqrt{34}\\\\)",
@@ -2966,7 +2966,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\\\sqrt{8} + \\\\sqrt{2}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(2\\\\sqrt{2}\\\\)",
@@ -3013,7 +3013,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\\\sqrt{12} - \\\\sqrt{3}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(2\\\\sqrt{3}\\\\)",
@@ -3060,7 +3060,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\\\sqrt{50} - \\\\sqrt{18}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(8\\\\sqrt{2}\\\\)",
@@ -3154,7 +3154,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\\\sqrt{45} - \\\\sqrt{20}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(\\\\sqrt{25}\\\\)",
@@ -3201,7 +3201,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\\\sqrt{90} - \\\\sqrt{40} + \\\\sqrt{10}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(4\\\\sqrt{10}\\\\)",
@@ -3248,7 +3248,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\\\sqrt{27} + \\\\sqrt{75} - \\\\sqrt{48}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(12\\\\sqrt{3}\\\\)",
@@ -3342,7 +3342,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\\\sqrt{2} + \\\\sqrt{32} + \\\\sqrt{72}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(13\\\\sqrt{2}\\\\)",
@@ -3389,7 +3389,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify fully: \\\\(\\\\sqrt{600} + \\\\sqrt{300} - \\\\sqrt{216}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(10\\\\sqrt{6} + 10\\\\sqrt{3}\\\\)",
@@ -3436,7 +3436,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify fully: \\\\(4\\\\sqrt{18} + 3\\\\sqrt{12} - 2\\\\sqrt{50}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(12\\\\sqrt{2} + 6\\\\sqrt{3}\\\\)",
@@ -3530,7 +3530,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\\\(x\\\\) if:\n\\\\(\\\\sqrt{63} - \\\\sqrt{28} = \\\\sqrt{x}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
         "text": "\\\\(x = 35\\\\)",
@@ -3582,7 +3582,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\\\(x\\\\) if:\n\\\\(\\\\sqrt{80} - \\\\sqrt{20} = \\\\sqrt{x}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
         "text": "\\\\(x = 60\\\\)",
@@ -3634,7 +3634,7 @@ export const Y11A_CH2_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\\\(x\\\\) if:\n\\\\(2\\\\sqrt{150} - 3\\\\sqrt{24} = \\\\sqrt{x}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
         "text": "\\\\(x = 24\\\\)",
@@ -3676,6 +3676,345 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "x = 96",
         "graphData": null
       }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-r01",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Rationalise the denominator: \\\\(\\\\dfrac{1}{\\\\sqrt{3}}\\\\)",
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(\\\\dfrac{1}{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\dfrac{\\\\sqrt{3}}{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\dfrac{3}{\\\\sqrt{3}}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Multiply numerator and denominator by \\\\(\\\\sqrt{3}\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Multiply numerator and denominator by \\\\(\\\\sqrt{3}\\\\) to eliminate the surd from the denominator.", "workingOut": "\\\\dfrac{1}{\\\\sqrt{3}} \\\\times \\\\dfrac{\\\\sqrt{3}}{\\\\sqrt{3}}", "graphData": null },
+      { "explanation": "Evaluate the denominator: \\\\(\\\\sqrt{3} \\\\times \\\\sqrt{3} = 3\\\\).", "workingOut": "= \\\\dfrac{\\\\sqrt{3}}{3}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-r02",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Rationalise the denominator: \\\\(\\\\dfrac{5}{\\\\sqrt{5}}\\\\)",
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\dfrac{5}{\\\\sqrt{5}}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\dfrac{1}{\\\\sqrt{5}}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Multiply top and bottom by \\\\(\\\\sqrt{5}\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Multiply numerator and denominator by \\\\(\\\\sqrt{5}\\\\).", "workingOut": "\\\\dfrac{5}{\\\\sqrt{5}} \\\\times \\\\dfrac{\\\\sqrt{5}}{\\\\sqrt{5}} = \\\\dfrac{5\\\\sqrt{5}}{5}", "graphData": null },
+      { "explanation": "Cancel the factor of 5.", "workingOut": "= \\\\sqrt{5}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-r03",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Rationalise the denominator: \\\\(\\\\dfrac{6}{\\\\sqrt{2}}\\\\)",
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(3\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\dfrac{6}{2}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Multiply top and bottom by \\\\(\\\\sqrt{2}\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Multiply numerator and denominator by \\\\(\\\\sqrt{2}\\\\).", "workingOut": "\\\\dfrac{6}{\\\\sqrt{2}} \\\\times \\\\dfrac{\\\\sqrt{2}}{\\\\sqrt{2}} = \\\\dfrac{6\\\\sqrt{2}}{2}", "graphData": null },
+      { "explanation": "Simplify by dividing numerator and denominator by 2.", "workingOut": "= 3\\\\sqrt{2}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-r04",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Rationalise the denominator: \\\\(\\\\dfrac{1}{3 + \\\\sqrt{2}}\\\\)",
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(\\\\dfrac{1}{3 - \\\\sqrt{2}}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3 - \\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\dfrac{3 + \\\\sqrt{2}}{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\dfrac{3 - \\\\sqrt{2}}{7}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Multiply by the conjugate \\\\(3 - \\\\sqrt{2}\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Multiply numerator and denominator by the conjugate \\\\(3 - \\\\sqrt{2}\\\\).", "workingOut": "\\\\dfrac{1}{3+\\\\sqrt{2}} \\\\times \\\\dfrac{3-\\\\sqrt{2}}{3-\\\\sqrt{2}}", "graphData": null },
+      { "explanation": "Expand the denominator using the difference of two squares: \\\\((3)^2 - (\\\\sqrt{2})^2 = 9 - 2 = 7\\\\).", "workingOut": "= \\\\dfrac{3-\\\\sqrt{2}}{7}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-r05",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Rationalise the denominator: \\\\(\\\\dfrac{4}{\\\\sqrt{5} - 1}\\\\)",
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(\\\\dfrac{4}{\\\\sqrt{5}+1}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\dfrac{4(\\\\sqrt{5}-1)}{4}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\sqrt{5}+1\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\sqrt{5}-1\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Multiply by the conjugate \\\\(\\\\sqrt{5}+1\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Multiply by the conjugate \\\\(\\\\sqrt{5}+1\\\\).", "workingOut": "\\\\dfrac{4}{\\\\sqrt{5}-1} \\\\times \\\\dfrac{\\\\sqrt{5}+1}{\\\\sqrt{5}+1}", "graphData": null },
+      { "explanation": "Denominator: \\\\((\\\\sqrt{5})^2 - 1^2 = 5-1 = 4\\\\).", "workingOut": "= \\\\dfrac{4(\\\\sqrt{5}+1)}{4}", "graphData": null },
+      { "explanation": "Cancel the factor of 4.", "workingOut": "= \\\\sqrt{5}+1", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e01",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify: \\\\((\\\\sqrt{3} + 1)^2\\\\)",
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(3 + 1\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4 + 2\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\sqrt{3} + 3\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Use \\\\((a+b)^2 = a^2 + 2ab + b^2\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Apply the perfect square formula with \\\\(a = \\\\sqrt{3}\\\\), \\\\(b = 1\\\\).", "workingOut": "(\\\\sqrt{3})^2 + 2(\\\\sqrt{3})(1) + 1^2", "graphData": null },
+      { "explanation": "Simplify each term.", "workingOut": "= 3 + 2\\\\sqrt{3} + 1", "graphData": null },
+      { "explanation": "Collect like terms.", "workingOut": "= 4 + 2\\\\sqrt{3}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e02",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify: \\\\((\\\\sqrt{5} - 2)^2\\\\)",
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(1\\\\)", "imageUrl": "" },
+      { "text": "\\\\(9 + 4\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5 + 4\\\\)", "imageUrl": "" },
+      { "text": "\\\\(9 - 4\\\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Use \\\\((a-b)^2 = a^2 - 2ab + b^2\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Apply the perfect square formula with \\\\(a = \\\\sqrt{5}\\\\), \\\\(b = 2\\\\).", "workingOut": "(\\\\sqrt{5})^2 - 2(\\\\sqrt{5})(2) + 2^2", "graphData": null },
+      { "explanation": "Simplify each term.", "workingOut": "= 5 - 4\\\\sqrt{5} + 4", "graphData": null },
+      { "explanation": "Collect like terms.", "workingOut": "= 9 - 4\\\\sqrt{5}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e03",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify: \\\\((\\\\sqrt{7} + \\\\sqrt{3})(\\\\sqrt{7} - \\\\sqrt{3})\\\\)",
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(4\\\\)", "imageUrl": "" },
+      { "text": "\\\\(10\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\sqrt{4}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(7 + 3\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Use the difference of two squares: \\\\((a+b)(a-b) = a^2 - b^2\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Apply the difference of two squares with \\\\(a = \\\\sqrt{7}\\\\), \\\\(b = \\\\sqrt{3}\\\\).", "workingOut": "(\\\\sqrt{7})^2 - (\\\\sqrt{3})^2", "graphData": null },
+      { "explanation": "Evaluate each square.", "workingOut": "= 7 - 3 = 4", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e04",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify: \\\\((2 + \\\\sqrt{3})(5 - \\\\sqrt{3})\\\\)",
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(7 + 3\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(13 - 3\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(10 + 3\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(7 - 3\\\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Expand using FOIL then collect like terms.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Expand using FOIL.", "workingOut": "2(5) + 2(-\\\\sqrt{3}) + \\\\sqrt{3}(5) + \\\\sqrt{3}(-\\\\sqrt{3})", "graphData": null },
+      { "explanation": "Simplify each term.", "workingOut": "= 10 - 2\\\\sqrt{3} + 5\\\\sqrt{3} - 3", "graphData": null },
+      { "explanation": "Collect like terms.", "workingOut": "= 7 + 3\\\\sqrt{3}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e05",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify: \\\\((3 - \\\\sqrt{2})(1 + 2\\\\sqrt{2})\\\\)",
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(3 + 5\\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-1 + 5\\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(7 + 5\\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-1 - 5\\\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Expand using FOIL then collect like terms.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Expand using FOIL.", "workingOut": "3(1) + 3(2\\\\sqrt{2}) + (-\\\\sqrt{2})(1) + (-\\\\sqrt{2})(2\\\\sqrt{2})", "graphData": null },
+      { "explanation": "Simplify each term: \\\\((-\\\\sqrt{2})(2\\\\sqrt{2}) = -2(2) = -4\\\\).", "workingOut": "= 3 + 6\\\\sqrt{2} - \\\\sqrt{2} - 4", "graphData": null },
+      { "explanation": "Collect like terms.", "workingOut": "= -1 + 5\\\\sqrt{2}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e06",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Write \\\\((1 + \\\\sqrt{2})^2\\\\) in the form \\\\(a + b\\\\sqrt{2}\\\\).",
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(1 + 2\\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2 + \\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(1 + \\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3 + 2\\\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Use \\\\((1+\\\\sqrt{2})^2 = 1 + 2\\\\sqrt{2} + 2\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Expand the square.", "workingOut": "1^2 + 2(1)(\\\\sqrt{2}) + (\\\\sqrt{2})^2", "graphData": null },
+      { "explanation": "Simplify.", "workingOut": "= 1 + 2\\\\sqrt{2} + 2", "graphData": null },
+      { "explanation": "Collect constants.", "workingOut": "= 3 + 2\\\\sqrt{2}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e07",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Write \\\\((3 - \\\\sqrt{5})^2\\\\) in the form \\\\(a + b\\\\sqrt{5}\\\\).",
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(14 - 6\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4 - 6\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(14 + 6\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4 + 6\\\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Use \\\\((a-b)^2 = a^2 - 2ab + b^2\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Expand.", "workingOut": "3^2 - 2(3)(\\\\sqrt{5}) + (\\\\sqrt{5})^2", "graphData": null },
+      { "explanation": "Simplify each term.", "workingOut": "= 9 - 6\\\\sqrt{5} + 5", "graphData": null },
+      { "explanation": "Collect constants.", "workingOut": "= 14 - 6\\\\sqrt{5}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e08",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Expand and simplify: \\\\((\\\\sqrt{6} + \\\\sqrt{2})(\\\\sqrt{6} - \\\\sqrt{2})\\\\)",
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(8\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6 - 2\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Difference of two squares: \\\\((\\\\sqrt{6})^2 - (\\\\sqrt{2})^2\\\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Apply the difference of two squares.", "workingOut": "(\\\\sqrt{6})^2 - (\\\\sqrt{2})^2", "graphData": null },
+      { "explanation": "Evaluate.", "workingOut": "= 6 - 2 = 4", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e09",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Expand and simplify: \\\\((2\\\\sqrt{3} + \\\\sqrt{5})(\\\\sqrt{3} - 2\\\\sqrt{5})\\\\)",
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(-4 - 3\\\\sqrt{15}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(16 - 3\\\\sqrt{15}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4 - 3\\\\sqrt{15}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(16 + 3\\\\sqrt{15}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Expand using FOIL carefully.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Expand using FOIL.", "workingOut": "2\\\\sqrt{3}(\\\\sqrt{3}) + 2\\\\sqrt{3}(-2\\\\sqrt{5}) + \\\\sqrt{5}(\\\\sqrt{3}) + \\\\sqrt{5}(-2\\\\sqrt{5})", "graphData": null },
+      { "explanation": "Simplify each term.", "workingOut": "= 2(3) - 4\\\\sqrt{15} + \\\\sqrt{15} - 2(5)", "graphData": null },
+      { "explanation": "Collect like terms.", "workingOut": "= 6 - 10 + (-4+1)\\\\sqrt{15} = -4 - 3\\\\sqrt{15}", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Surds and their arithmetic"
+  },
+  {
+    "id": "y11a-2b-e10",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Write \\\\((2 + 3\\\\sqrt{2})(1 - \\\\sqrt{2})\\\\) in the form \\\\(a + b\\\\sqrt{2}\\\\).",
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(-4 + \\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(8 + \\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-4 - \\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4 + \\\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
+    "hint": "Expand using FOIL.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Expand.", "workingOut": "2(1) + 2(-\\\\sqrt{2}) + 3\\\\sqrt{2}(1) + 3\\\\sqrt{2}(-\\\\sqrt{2})", "graphData": null },
+      { "explanation": "Simplify: \\\\(3\\\\sqrt{2}(-\\\\sqrt{2}) = -3(2) = -6\\\\).", "workingOut": "= 2 - 2\\\\sqrt{2} + 3\\\\sqrt{2} - 6", "graphData": null },
+      { "explanation": "Collect like terms.", "workingOut": "= -4 + \\\\sqrt{2}", "graphData": null }
     ],
     "graphData": null,
     "t": "Surds and their arithmetic"

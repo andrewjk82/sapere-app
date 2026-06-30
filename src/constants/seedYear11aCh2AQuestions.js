@@ -4,7 +4,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 16: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 16: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -12,15 +12,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -28,23 +20,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 16: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -56,42 +38,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\\\(x > -2\\\\)?",
+    "question": "Graph of \\(x > -2\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\((-2, \\\\infty)\\\\)",
+        "text": "(-2, \\infty)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-2, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-2, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-2, \\\\infty]\\\\)",
+        "text": "(-\\infty, -2)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\((-2, \\\\infty)\\\\)",
+    "solution": "\\((-2, \\infty)\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Graph of \\\\(x > -2\\\\)?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Graph of \\(x > -2\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\((-2, \\\\infty)\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\((-2, \\\\infty)\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\((-2, \\infty)\\)",
         "graphData": null
       }
     ],
@@ -100,45 +69,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "0FS7LYu8dCopNZlXPNHM",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\((6, \\\\infty)\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(x > 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x < 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x > 8\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x > 4\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\((6, \\infty)\\) to inequality.",
+    "answer": "x>6",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x > 6\\\\)",
+    "solution": "\\(x > 6\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(((6, \\infty)\\).",
-        "workingOut": "\\\\text{Bound value: } 6",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\((6, \\infty)\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } 6 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(x > 6\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(x > 6\\)",
         "graphData": null
       }
     ],
@@ -147,45 +94,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "1ZP7IsR7n6Itd5af42C5",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\((-\\\\infty, -6]\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(x \\\\le -6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times x \\\\le -6",
-        "imageUrl": ""
-      },
-      {
-        "text": "x \\\\le -6 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-x \\\\le -6",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\((-\\infty, -6]\\) to inequality.",
+    "answer": "x<=-6",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x \\\\le -6\\\\)",
+    "solution": "\\(x \\le -6\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(((-\\infty, -6]\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -6",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\((-\\infty, -6]\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -6 \\\\text{ is inclusive (use } \\\\le \\\\text{ or } \\\\ge \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(x \\\\le -6\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(x \\le -6\\)",
         "graphData": null
       }
     ],
@@ -194,45 +119,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "2NdpfMvg2dT4cPLa0gtN",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Numbers greater than 5 in inequality form.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(x > 5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x < 5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x > 7\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x > 3\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "answer": "x>5",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x > 5\\\\)",
+    "solution": "\\(x > 5\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Numbers greater than 5 in inequality form.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(x > 5\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(x > 5\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(x > 5\\)",
         "graphData": null
       }
     ],
@@ -241,44 +144,22 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "3FCleTo32LJqAhRQpPrM",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Prime factors of 144?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "2^4 * 3^2",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times 2^4 * 3^2",
-        "imageUrl": ""
-      },
-      {
-        "text": "2^4 * 3^2 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-2^4 * 3^2",
-        "imageUrl": ""
-      }
-    ],
+    "answer": "2^4*3^2",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
     "solution": "2^4 * 3^2",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Prime factors of 144?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "2^4 * 3^2",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "2^4 * 3^2",
         "graphData": null
       }
@@ -295,19 +176,19 @@ export const Y11A_CH2A_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(x > -4\\\\) starts at -4 (not included).",
+        "text": "\\\\((-4, \\infty)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(( -\\\\infty, -4]\\\\)",
+        "text": "\\\\(( -\\infty, -4]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(( -\\\\infty, -4)\\\\)",
+        "text": "\\\\(( -\\infty, -4)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\([-4, \\\\infty)\\\\)",
+        "text": "\\\\([-4, \\infty)\\\\)",
         "imageUrl": ""
       }
     ],
@@ -315,17 +196,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "\\\\(x > -4\\\\) starts at -4 (not included).",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((x > -4\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -4",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write \\\\(x > -4\\\\) in interval notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -4 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "\\\\(x > -4\\\\) starts at -4 (not included).",
         "graphData": null
       }
@@ -338,42 +214,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 1: Classify: \\\\(-3\\\\)",
+    "question": "Variation 1: Classify: \\(-3\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times -3 = -3/1 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 = -3/1 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "--3 = -3/1 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
+    "solution": "\\(-3 = -3/1\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Variation 1: Classify: \\\\(-3\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 1: Classify: \\(-3\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-3 = -3/1\\) (Rational)",
         "graphData": null
       }
     ],
@@ -385,7 +248,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 4: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 4: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -393,15 +256,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -409,23 +264,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 4: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -437,7 +282,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Intersection of \\\\(x \\\\ge -1\\\\) and \\\\(x \\\\le 1\\\\)?",
+    "question": "Intersection of \\(x \\ge -1\\) and \\(x \\le 1\\)?",
     "answer": 0,
     "options": [
       {
@@ -445,15 +290,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-1, 1)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-1, 1)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-1, 1]\\\\)",
+        "text": "(-1, 1)",
         "imageUrl": ""
       }
     ],
@@ -461,17 +298,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "[-1, 1]",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Intersection of \\\\(x \\\\ge -1\\\\) and \\\\(x \\\\le 1\\\\)?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Intersection of \\(x \\ge -1\\) and \\(x \\le 1\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "[-1, 1]",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "[-1, 1]",
         "graphData": null
       }
@@ -481,45 +313,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "5mKykL6GIE7VmL1Q0amQ",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\((-6, 6]\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(-6 < x \\\\le 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-6 > x \\\\le 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-4 < x \\\\le 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-8 < x \\\\le 6\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\((-6, 6]\\) to inequality.",
+    "answer": "-6<x<=6",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-6 < x \\\\le 6\\\\)",
+    "solution": "\\(-6 < x \\le 6\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(((-6, 6]\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -6",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\((-6, 6]\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -6 \\\\text{ is inclusive (use } \\\\le \\\\text{ or } \\\\ge \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(-6 < x \\\\le 6\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-6 < x \\le 6\\)",
         "graphData": null
       }
     ],
@@ -528,45 +338,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "6ZtU7wvI6yQDFP3tu4vs",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\\\(x \\\\ge -3\\\\) in bracket notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\([-3, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-3, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-3, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-3, \\\\infty]\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Write \\(x \\ge -3\\) in bracket notation.",
+    "answer": "[-3,inf)",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\([-3, \\\\infty)\\\\)",
+    "solution": "\\([-3, \\infty)\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((x \\ge -3\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -3",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write \\(x \\ge -3\\) in bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -3 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\([-3, \\\\infty)\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\([-3, \\infty)\\)",
         "graphData": null
       }
     ],
@@ -578,7 +366,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 19: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 19: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -586,15 +374,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -602,23 +382,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 19: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -630,23 +400,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Is \\\\(\\\\sqrt{1.44}\\\\) rational?",
+    "question": "Is \\(\\sqrt{1.44}\\) rational?",
     "answer": 0,
     "options": [
       {
-        "text": "1.2",
+        "text": "Yes (1.2)",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 1.2",
-        "imageUrl": ""
-      },
-      {
-        "text": "1.2 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-1.2",
+        "text": "No",
         "imageUrl": ""
       }
     ],
@@ -654,17 +416,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "1.2",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Is \\\\(\\\\sqrt{1.44}\\\\) rational?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Is \\(\\sqrt{1.44}\\) rational?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "1.2",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "1.2",
         "graphData": null
       }
@@ -677,7 +434,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(12\\\\%\\\\)",
+    "question": "Classify: \\(12\\%\\)",
     "answer": 0,
     "options": [
       {
@@ -685,15 +442,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Rational",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
@@ -701,17 +450,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Rational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(12\\\\%\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(12\\%\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Rational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Rational",
         "graphData": null
       }
@@ -721,45 +465,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "8JinUuilnNVmyBDEdgq7",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\([-6, 6]\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(-6 \\\\le x \\\\le 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times -6 \\\\le x \\\\le 6",
-        "imageUrl": ""
-      },
-      {
-        "text": "-6 \\\\le x \\\\le 6 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "--6 \\\\le x \\\\le 6",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\([-6, 6]\\) to inequality.",
+    "answer": "-6<=x<=6",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-6 \\\\le x \\\\le 6\\\\)",
+    "solution": "\\(-6 \\le x \\le 6\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(([-6, 6]\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -6",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\([-6, 6]\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -6 \\\\text{ is inclusive (use } \\\\le \\\\text{ or } \\\\ge \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(-6 \\\\le x \\\\le 6\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-6 \\le x \\le 6\\)",
         "graphData": null
       }
     ],
@@ -768,44 +490,22 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "8onKMtnvxYHdlKpq61Qq",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "LCD of 1/12, 1/30, 1/75?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "300",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times 300",
-        "imageUrl": ""
-      },
-      {
-        "text": "300 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-300",
-        "imageUrl": ""
-      }
-    ],
+    "answer": "300",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
     "solution": "300",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "LCD of 1/12, 1/30, 1/75?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "300",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "300",
         "graphData": null
       }
@@ -818,7 +518,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(0.\\\\dot{3}\\\\)",
+    "question": "Classify: \\(0.\\dot{3}\\)",
     "answer": 0,
     "options": [
       {
@@ -826,15 +526,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Rational",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
@@ -842,17 +534,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Rational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(0.\\\\dot{3}\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(0.\\dot{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Rational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Rational",
         "graphData": null
       }
@@ -866,41 +553,36 @@ export const Y11A_CH2A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Express \\\\(0.32\\\\) as a fraction in simplest form.",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "\\\\(0.32 = \\\\frac{32}{100} = \\\\frac{8}{25}\\\\)",
+        "text": "\\\\(\\frac{32}{100}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{16}{50}\\\\)",
+        "text": "\\\\(\\frac{16}{50}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{8}{25}\\\\)",
+        "text": "\\\\(\\frac{8}{25}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{4}{12}\\\\)",
+        "text": "\\\\(\\frac{4}{12}\\\\)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(0.32 = \\\\frac{32}{100} = \\\\frac{8}{25}\\\\)",
+    "solution": "\\\\(0.32 = \\frac{32}{100} = \\frac{8}{25}\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Express \\\\(0.32\\\\) as a fraction in simplest form.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(0.32 = \\\\frac{32}{100} = \\\\frac{8}{25}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(0.32 = \\\\frac{32}{100} = \\\\frac{8}{25}\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\\\(0.32 = \\frac{32}{100} = \\frac{8}{25}\\\\)",
         "graphData": null
       }
     ],
@@ -912,42 +594,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 0: Classify: \\\\(-3\\\\)",
+    "question": "Variation 0: Classify: \\(-3\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times -3 = -3/1 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 = -3/1 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "--3 = -3/1 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
+    "solution": "\\(-3 = -3/1\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Variation 0: Classify: \\\\(-3\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 0: Classify: \\(-3\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-3 = -3/1\\) (Rational)",
         "graphData": null
       }
     ],
@@ -959,42 +628,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(\\\\sqrt{4}\\\\)",
+    "question": "Classify: \\(\\sqrt{4}\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(2\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 2 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-2 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(2\\\\) (Rational)",
+    "solution": "\\(2\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(\\\\sqrt{4}\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(\\sqrt{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(2\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(2\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(2\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1003,45 +659,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "Al0p3nwY5Gb9RfqVBslA",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Greater than 0 and less than or equal to 5.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(0 < x \\\\le 5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(0 > x \\\\le 5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(2 < x \\\\le 5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-2 < x \\\\le 5\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "answer": "0<x<=5",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(0 < x \\\\le 5\\\\)",
+    "solution": "\\(0 < x \\le 5\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Greater than 0 and less than or equal to 5.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(0 < x \\\\le 5\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(0 < x \\\\le 5\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(0 < x \\le 5\\)",
         "graphData": null
       }
     ],
@@ -1053,7 +687,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\\\(x \\\\ge 6\\\\) unbounded?",
+    "question": "Is \\(x \\ge 6\\) unbounded?",
     "answer": 0,
     "options": [
       {
@@ -1061,15 +695,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Yes",
-        "imageUrl": ""
-      },
-      {
-        "text": "Yes + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Yes",
+        "text": "No",
         "imageUrl": ""
       }
     ],
@@ -1077,17 +703,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Yes",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Is \\\\(x \\\\ge 6\\\\) unbounded?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Is \\(x \\ge 6\\) unbounded?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Yes",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Yes",
         "graphData": null
       }
@@ -1100,23 +721,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Key to proving \\\\(\\\\sqrt{3}\\\\) irrational?",
+    "question": "Key to proving \\(\\sqrt{3}\\) irrational?",
     "answer": 0,
     "options": [
       {
-        "text": "Contradiction",
+        "text": "Common factor of 3",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Contradiction",
-        "imageUrl": ""
-      },
-      {
-        "text": "Contradiction + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Contradiction",
+        "text": "Zero denominator",
         "imageUrl": ""
       }
     ],
@@ -1124,17 +737,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Contradiction",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Key to proving \\\\(\\\\sqrt{3}\\\\) irrational?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Key to proving \\(\\sqrt{3}\\) irrational?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Contradiction",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Contradiction",
         "graphData": null
       }
@@ -1147,7 +755,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 15: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 15: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -1155,15 +763,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -1171,23 +771,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 15: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -1196,45 +786,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "D0z6T2c9KNV5hKyRZo5l",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Numbers less than or equal to -2.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(x \\\\le -2\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times x \\\\le -2",
-        "imageUrl": ""
-      },
-      {
-        "text": "x \\\\le -2 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-x \\\\le -2",
-        "imageUrl": ""
-      }
-    ],
+    "answer": "x<=-2",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x \\\\le -2\\\\)",
+    "solution": "\\(x \\le -2\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Numbers less than or equal to -2.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(x \\\\le -2\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(x \\\\le -2\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(x \\le -2\\)",
         "graphData": null
       }
     ],
@@ -1246,42 +814,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 2: Classify: \\\\(-3\\\\)",
+    "question": "Variation 2: Classify: \\(-3\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times -3 = -3/1 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 = -3/1 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "--3 = -3/1 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
+    "solution": "\\(-3 = -3/1\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Variation 2: Classify: \\\\(-3\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 2: Classify: \\(-3\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-3 = -3/1\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1290,44 +845,22 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "EKYaXc3CMdUGo6AXPyvk",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\\\(x \\\\le 0\\\\) in bracket notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "(-inf, 0]",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-inf, 0)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-inf, 0)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-inf, 0]\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Write \\(x \\le 0\\) in bracket notation.",
+    "answer": "(-inf,0]",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
     "solution": "(-inf, 0]",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((x \\le 0\\)\\).",
-        "workingOut": "\\\\text{Bound value: } 0",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write \\(x \\le 0\\) in bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } 0 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "(-inf, 0]",
         "graphData": null
       }
@@ -1340,7 +873,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Range for \\\\(\\\\pi\\\\)?",
+    "question": "Range for \\(\\pi\\)?",
     "answer": 0,
     "options": [
       {
@@ -1348,15 +881,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "2 and 3",
         "imageUrl": ""
       }
     ],
@@ -1364,23 +889,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Range for \\(\\pi\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -1389,44 +904,22 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "G4LgOrYf7VWnZMRJophk",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Primes between 90-100?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "97",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times 97",
-        "imageUrl": ""
-      },
-      {
-        "text": "97 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-97",
-        "imageUrl": ""
-      }
-    ],
+    "answer": "97",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
     "solution": "97",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Primes between 90-100?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "97",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "97",
         "graphData": null
       }
@@ -1439,7 +932,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 17: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 17: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -1447,15 +940,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -1463,23 +948,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 17: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -1491,11 +966,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write the inequality \\\\(-3 < x \\\\le 4\\\\) in bracket notation.",
-    "answer": 0,
+    "question": "Write the inequality \\\\(-3 < x \\le 4\\\\) in bracket notation.",
+    "answer": 2,
     "options": [
       {
-        "text": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\\\le\\\\)).",
+        "text": "\\\\([-3, 4]\\\\)",
         "imageUrl": ""
       },
       {
@@ -1512,21 +987,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\\\le\\\\)).",
+    "solution": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\le\\\\)).",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((-3 < x \\le 4\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -3",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write the inequality \\\\(-3 < x \\le 4\\\\) in bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -3 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\\\le\\\\)).",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\le\\\\)).",
         "graphData": null
       }
     ],
@@ -1535,45 +1005,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "Hg85lbQOfERTeDlRDnLZ",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\([4, \\\\infty)\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(x \\\\ge 4\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times x \\\\ge 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "x \\\\ge 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-x \\\\ge 4",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\([4, \\infty)\\) to inequality.",
+    "answer": "x>=4",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x \\\\ge 4\\\\)",
+    "solution": "\\(x \\ge 4\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(([4, \\infty)\\).",
-        "workingOut": "\\\\text{Bound value: } 4",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\([4, \\infty)\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } 4 \\\\text{ is inclusive (use } \\\\le \\\\text{ or } \\\\ge \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(x \\\\ge 4\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(x \\ge 4\\)",
         "graphData": null
       }
     ],
@@ -1585,7 +1033,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 10: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 10: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -1593,15 +1041,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -1609,23 +1049,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 10: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -1637,42 +1067,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\\\(-3 < x \\\\le 4\\\\)?",
+    "question": "Graph of \\(-3 < x \\le 4\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\((-3, 4]\\\\)",
+        "text": "(-3, 4]",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-3, 4)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-3, 4)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-3, 4]\\\\)",
+        "text": "[-3, 4]",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\((-3, 4]\\\\)",
+    "solution": "\\((-3, 4]\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Graph of \\\\(-3 < x \\\\le 4\\\\)?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Graph of \\(-3 < x \\le 4\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\((-3, 4]\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\((-3, 4]\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\((-3, 4]\\)",
         "graphData": null
       }
     ],
@@ -1684,7 +1101,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Range for \\\\(\\\\sqrt{150}\\\\)?",
+    "question": "Range for \\(\\sqrt{150}\\)?",
     "answer": 0,
     "options": [
       {
@@ -1692,15 +1109,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 12 and 13",
-        "imageUrl": ""
-      },
-      {
-        "text": "12 and 13 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-12 and 13",
+        "text": "11 and 12",
         "imageUrl": ""
       }
     ],
@@ -1708,23 +1117,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "12 and 13",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(150\\).",
-        "workingOut": "144 < 150 < 169",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Range for \\(\\sqrt{150}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{144} < \\\\sqrt{150} < \\\\sqrt{169}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "12 < \\\\sqrt{150} < 13",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{150}\\) lies between the consecutive integers \\(12\\) and \\(13\\).",
-        "workingOut": "\\\\text{Range: } 12 \\\\text{ and } 13",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "12 and 13",
         "graphData": null
       }
     ],
@@ -1736,23 +1135,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\\\(0 \\\\le x \\\\le 7\\\\) closed?",
+    "question": "Is \\(0 \\le x \\le 7\\) closed?",
     "answer": 0,
     "options": [
       {
-        "text": "Closed",
+        "text": "Yes",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Closed",
-        "imageUrl": ""
-      },
-      {
-        "text": "Closed + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Closed",
+        "text": "No",
         "imageUrl": ""
       }
     ],
@@ -1760,17 +1151,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Closed",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Is \\\\(0 \\\\le x \\\\le 7\\\\) closed?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Is \\(0 \\le x \\le 7\\) closed?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Closed",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Closed",
         "graphData": null
       }
@@ -1783,7 +1169,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\\\(x \\\\le 7\\\\) half-closed?",
+    "question": "Is \\(x \\le 7\\) half-closed?",
     "answer": 0,
     "options": [
       {
@@ -1791,15 +1177,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Yes",
-        "imageUrl": ""
-      },
-      {
-        "text": "Yes + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Yes",
+        "text": "No",
         "imageUrl": ""
       }
     ],
@@ -1807,17 +1185,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Yes",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Is \\\\(x \\\\le 7\\\\) half-closed?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Is \\(x \\le 7\\) half-closed?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Yes",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Yes",
         "graphData": null
       }
@@ -1830,42 +1203,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 3: Classify: \\\\(-3\\\\)",
+    "question": "Variation 3: Classify: \\(-3\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times -3 = -3/1 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 = -3/1 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "--3 = -3/1 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
+    "solution": "\\(-3 = -3/1\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Variation 3: Classify: \\\\(-3\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 3: Classify: \\(-3\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-3 = -3/1\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1877,7 +1237,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Range for \\\\(\\\\sqrt[3]{15}\\\\)?",
+    "question": "Range for \\(\\sqrt[3]{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -1885,15 +1245,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 2 and 3",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 and 3 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-2 and 3",
+        "text": "1 and 2",
         "imageUrl": ""
       }
     ],
@@ -1901,23 +1253,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "2 and 3",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Range for \\(\\sqrt[3]{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "2 and 3",
         "graphData": null
       }
     ],
@@ -1929,42 +1271,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(1\\\\frac{1}{2}\\\\)",
+    "question": "Classify: \\(1\\frac{1}{2}\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(3/2\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3/2 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "3/2 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3/2 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(3/2\\\\) (Rational)",
+    "solution": "\\(3/2\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(1\\\\frac{1}{2}\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(1\\frac{1}{2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(3/2\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(3/2\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(3/2\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1976,7 +1305,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 3: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 3: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -1984,15 +1313,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -2000,23 +1321,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 3: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -2028,23 +1339,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(\\\\sqrt{10}\\\\)",
-    "answer": 0,
+    "question": "Classify: \\(\\sqrt{10}\\)",
+    "answer": 1,
     "options": [
       {
+        "text": "Rational",
+        "imageUrl": ""
+      },
+      {
         "text": "Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Irrational",
         "imageUrl": ""
       }
     ],
@@ -2052,17 +1355,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Irrational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(\\\\sqrt{10}\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(\\sqrt{10}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Irrational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Irrational",
         "graphData": null
       }
@@ -2079,19 +1377,19 @@ export const Y11A_CH2A_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(x < 5\\\\) means everything from negative infinity up to 5 (not included).",
+        "text": "\\\\((-\\infty, 5)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((5, \\\\infty)\\\\)",
+        "text": "\\\\((5, \\infty)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-\\\\infty, 5]\\\\) ",
+        "text": "\\\\((-\\infty, 5]\\\\) ",
         "imageUrl": ""
       },
       {
-        "text": "\\\\([ -\\\\infty, 5)\\\\)",
+        "text": "\\\\([ -\\infty, 5)\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2099,17 +1397,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "\\\\(x < 5\\\\) means everything from negative infinity up to 5 (not included).",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((x < 5\\)\\).",
-        "workingOut": "\\\\text{Bound value: } 5",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write the interval \\\\(x < 5\\\\) using bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } 5 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "\\\\(x < 5\\\\) means everything from negative infinity up to 5 (not included).",
         "graphData": null
       }
@@ -2122,42 +1415,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(-3\\\\)",
+    "question": "Classify: \\(-3\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times -3 = -3/1 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 = -3/1 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "--3 = -3/1 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
+    "solution": "\\(-3 = -3/1\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(-3\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(-3\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-3 = -3/1\\) (Rational)",
         "graphData": null
       }
     ],
@@ -2166,45 +1446,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "RtF5NBDmVgOXNk6XkyyQ",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\((-6, 6)\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(-6 < x < 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-6 > x < 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-4 < x < 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-8 < x < 6\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\((-6, 6)\\) to inequality.",
+    "answer": "-6<x<6",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-6 < x < 6\\\\)",
+    "solution": "\\(-6 < x < 6\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(((-6, 6)\\).",
-        "workingOut": "\\\\text{Bound value: } -6",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\((-6, 6)\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -6 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(-6 < x < 6\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-6 < x < 6\\)",
         "graphData": null
       }
     ],
@@ -2216,42 +1474,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(\\\\sqrt[3]{27}\\\\)",
+    "question": "Classify: \\(\\sqrt[3]{27}\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(3\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(3\\\\) (Rational)",
+    "solution": "\\(3\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(\\\\sqrt[3]{27}\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(\\sqrt[3]{27}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(3\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(3\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(3\\) (Rational)",
         "graphData": null
       }
     ],
@@ -2263,42 +1508,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\\\([-5, 5)\\\\)?",
+    "question": "Graph of \\([-5, 5)\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-5 \\\\le x < 5\\\\)",
+        "text": "-5 \\le x < 5",
         "imageUrl": ""
       },
       {
-        "text": "-5 < x \\\\le 5",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-5 \\\\le x >= 5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-5 \\\\le x < 5\\\\)",
+        "text": "-5 < x \\le 5",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-5 \\\\le x < 5\\\\)",
+    "solution": "\\(-5 \\le x < 5\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Graph of \\\\([-5, 5)\\\\)?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Graph of \\([-5, 5)\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-5 \\\\le x < 5\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(-5 \\\\le x < 5\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-5 \\le x < 5\\)",
         "graphData": null
       }
     ],
@@ -2307,45 +1539,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "TlwzoK8yJHFTLOSie3BF",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\([-6, 6)\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(-6 \\\\le x < 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-6 \\\\le x > 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-4 \\\\le x < 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-8 \\\\le x < 6\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\([-6, 6)\\) to inequality.",
+    "answer": "-6<=x<6",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-6 \\\\le x < 6\\\\)",
+    "solution": "\\(-6 \\le x < 6\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(([-6, 6)\\).",
-        "workingOut": "\\\\text{Bound value: } -6",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\([-6, 6)\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -6 \\\\text{ is inclusive (use } \\\\le \\\\text{ or } \\\\ge \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(-6 \\\\le x < 6\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-6 \\le x < 6\\)",
         "graphData": null
       }
     ],
@@ -2354,45 +1564,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "VXbfiDAWPa0OLZFfHloa",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\\\(-1 < x \\\\le 4\\\\) in bracket notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\((-1, 4]\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-1, 4)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-1, 4)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-1, 4]\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Write \\(-1 < x \\le 4\\) in bracket notation.",
+    "answer": "(-1,4]",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\((-1, 4]\\\\)",
+    "solution": "\\((-1, 4]\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((-1 < x \\le 4\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -1",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write \\(-1 < x \\le 4\\) in bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -1 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\((-1, 4]\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\((-1, 4]\\)",
         "graphData": null
       }
     ],
@@ -2405,10 +1593,10 @@ export const Y11A_CH2A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Express the interval \\\\([-2, 7]\\\\) using inequalities.",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "Notation \\\\([-2, 7]\\\\) means \\\\(x\\\\) is between -2 and 7, including both.",
+        "text": "\\\\(-2 < x \\le 7\\\\)",
         "imageUrl": ""
       },
       {
@@ -2416,11 +1604,11 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-2 \\\\le x < 7\\\\)",
+        "text": "\\\\(-2 \\le x < 7\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-2 \\\\le x \\\\le 7\\\\)",
+        "text": "\\\\(-2 \\le x \\le 7\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2428,17 +1616,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Notation \\\\([-2, 7]\\\\) means \\\\(x\\\\) is between -2 and 7, including both.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Express the interval \\\\([-2, 7]\\\\) using inequalities.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Notation \\\\([-2, 7]\\\\) means \\\\(x\\\\) is between -2 and 7, including both.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Notation \\\\([-2, 7]\\\\) means \\\\(x\\\\) is between -2 and 7, including both.",
         "graphData": null
       }
@@ -2451,7 +1634,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(0\\\\)",
+    "question": "Classify: \\(0\\)",
     "answer": 0,
     "options": [
       {
@@ -2459,15 +1642,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Rational",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
@@ -2475,17 +1650,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Rational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(0\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(0\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Rational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Rational",
         "graphData": null
       }
@@ -2498,7 +1668,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 9: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 9: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -2506,15 +1676,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -2522,23 +1684,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 9: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -2550,42 +1702,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 5: Classify: \\\\(-3\\\\)",
+    "question": "Variation 5: Classify: \\(-3\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times -3 = -3/1 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 = -3/1 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "--3 = -3/1 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
+    "solution": "\\(-3 = -3/1\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Variation 5: Classify: \\\\(-3\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 5: Classify: \\(-3\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-3 = -3/1\\) (Rational)",
         "graphData": null
       }
     ],
@@ -2597,23 +1736,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(\\\\sqrt{3}\\\\)",
-    "answer": 0,
+    "question": "Classify: \\(\\sqrt{3}\\)",
+    "answer": 1,
     "options": [
       {
+        "text": "Rational",
+        "imageUrl": ""
+      },
+      {
         "text": "Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Irrational",
         "imageUrl": ""
       }
     ],
@@ -2621,17 +1752,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Irrational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(\\\\sqrt{3}\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(\\sqrt{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Irrational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Irrational",
         "graphData": null
       }
@@ -2644,7 +1770,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 18: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 18: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -2652,15 +1778,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -2668,23 +1786,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 18: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -2696,7 +1804,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 12: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 12: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -2704,15 +1812,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -2720,23 +1820,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 12: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -2748,42 +1838,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 4: Classify: \\\\(-3\\\\)",
+    "question": "Variation 4: Classify: \\(-3\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times -3 = -3/1 (Rational)",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 = -3/1 (Rational) + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "--3 = -3/1 (Rational)",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
+    "solution": "\\(-3 = -3/1\\) (Rational)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Variation 4: Classify: \\\\(-3\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 4: Classify: \\(-3\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-3 = -3/1\\) (Rational)",
         "graphData": null
       }
     ],
@@ -2795,7 +1872,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 7: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 7: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -2803,15 +1880,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -2819,23 +1888,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 7: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -2847,11 +1906,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify if \\\\(\\\\sqrt[3]{64}\\\\) is rational or irrational.",
-    "answer": 0,
+    "question": "Identify if \\\\(\\sqrt[3]{64}\\\\) is rational or irrational.",
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(\\\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
+        "text": "Complex",
         "imageUrl": ""
       },
       {
@@ -2868,21 +1927,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
+    "solution": "\\\\(\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Identify if \\\\(\\\\sqrt[3]{64}\\\\) is rational or irrational.",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Identify if \\\\(\\sqrt[3]{64}\\\\) is rational or irrational.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(\\\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(\\\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\\\(\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
         "graphData": null
       }
     ],
@@ -2894,23 +1948,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Is \\\\(\\\\sqrt[3]{8}\\\\) rational?",
+    "question": "Is \\(\\sqrt[3]{8}\\) rational?",
     "answer": 0,
     "options": [
       {
-        "text": "2",
+        "text": "Yes (2)",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 2",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-2",
+        "text": "No",
         "imageUrl": ""
       }
     ],
@@ -2918,17 +1964,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "2",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Is \\\\(\\\\sqrt[3]{8}\\\\) rational?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Is \\(\\sqrt[3]{8}\\) rational?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "2",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "2",
         "graphData": null
       }
@@ -2941,42 +1982,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\\\(x \\\\le -1\\\\)?",
+    "question": "Graph of \\(x \\le -1\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\((-\\\\infty, -1]\\\\)",
+        "text": "(-\\infty, -1]",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-\\\\infty, -1)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-\\\\infty, -1)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-\\\\infty, -1]\\\\)",
+        "text": "[-1, \\infty)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\((-\\\\infty, -1]\\\\)",
+    "solution": "\\((-\\infty, -1]\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Graph of \\\\(x \\\\le -1\\\\)?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Graph of \\(x \\le -1\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\((-\\\\infty, -1]\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\((-\\\\infty, -1]\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\((-\\infty, -1]\\)",
         "graphData": null
       }
     ],
@@ -2988,42 +2016,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\\\((-\\\\infty, 1)\\\\)?",
-    "answer": 3,
+    "question": "Graph of \\((-\\infty, 1)\\)?",
+    "answer": 0,
     "options": [
       {
         "text": "x < 1",
         "imageUrl": ""
       },
       {
-        "text": "x \\\\le 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x >= 1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x < 1\\\\)",
+        "text": "x \\le 1",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x < 1\\\\)",
+    "solution": "\\(x < 1\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Graph of \\\\((-\\\\infty, 1)\\\\)?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Graph of \\((-\\infty, 1)\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(x < 1\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(x < 1\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(x < 1\\)",
         "graphData": null
       }
     ],
@@ -3035,7 +2050,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Express \\\\((3, \\\\infty)\\\\) using inequalities.",
+    "question": "Express \\\\((3, \\infty)\\\\) using inequalities.",
     "answer": 0,
     "options": [
       {
@@ -3047,11 +2062,11 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x \\\\ge 3\\\\)",
+        "text": "\\\\(x \\ge 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x \\\\le 3\\\\)",
+        "text": "\\\\(x \\le 3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3059,17 +2074,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "\\\\(x > 3\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Express \\\\((3, \\\\infty)\\\\) using inequalities.",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Express \\\\((3, \\infty)\\\\) using inequalities.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(x > 3\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "\\\\(x > 3\\\\)",
         "graphData": null
       }
@@ -3082,11 +2092,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write the interval \\\\((-\\\\infty, -4]\\\\) using inequalities.",
-    "answer": 0,
+    "question": "Write the interval \\\\((-\\infty, -4]\\\\) using inequalities.",
+    "answer": 3,
     "options": [
       {
-        "text": "Up to and including -4.",
+        "text": "\\\\(x \\ge -4\\\\)",
         "imageUrl": ""
       },
       {
@@ -3098,7 +2108,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x \\\\le -4\\\\)",
+        "text": "\\\\(x \\le -4\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3106,17 +2116,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Up to and including -4.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Write the interval \\\\((-\\\\infty, -4]\\\\) using inequalities.",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write the interval \\\\((-\\infty, -4]\\\\) using inequalities.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Up to and including -4.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Up to and including -4.",
         "graphData": null
       }
@@ -3126,45 +2131,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "e5dwsV0YEAiv7mwXvvDj",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\\\(x \\\\ge 0\\\\) in bracket notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\([0, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((0, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([0, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((0, \\\\infty]\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Write \\(x \\ge 0\\) in bracket notation.",
+    "answer": "[0,inf)",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\([0, \\\\infty)\\\\)",
+    "solution": "\\([0, \\infty)\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((x \\ge 0\\)\\).",
-        "workingOut": "\\\\text{Bound value: } 0",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write \\(x \\ge 0\\) in bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } 0 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\([0, \\\\infty)\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\([0, \\infty)\\)",
         "graphData": null
       }
     ],
@@ -3176,7 +2159,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 11: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 11: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -3184,15 +2167,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -3200,23 +2175,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 11: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -3228,7 +2193,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(\\\\sqrt{4/9}\\\\)",
+    "question": "Classify: \\(\\sqrt{4/9}\\)",
     "answer": 0,
     "options": [
       {
@@ -3236,15 +2201,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Rational",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
@@ -3252,17 +2209,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Rational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(\\\\sqrt{4/9}\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(\\sqrt{4/9}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Rational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Rational",
         "graphData": null
       }
@@ -3275,23 +2227,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\\\(x > 5\\\\) open?",
+    "question": "Is \\(x > 5\\) open?",
     "answer": 0,
     "options": [
       {
-        "text": "Open",
+        "text": "Yes",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Open",
-        "imageUrl": ""
-      },
-      {
-        "text": "Open + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Open",
+        "text": "No",
         "imageUrl": ""
       }
     ],
@@ -3299,17 +2243,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Open",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Is \\\\(x > 5\\\\) open?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Is \\(x > 5\\) open?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Open",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Open",
         "graphData": null
       }
@@ -3319,44 +2258,22 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "iN6Nn4oIsl2OSt6su8Lu",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\\\(x > 10\\\\) in bracket notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "(10, inf)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((10, inf)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([10, inf)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((10, inf]\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Write \\(x > 10\\) in bracket notation.",
+    "answer": "(10,inf)",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
     "solution": "(10, inf)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((x > 10\\)\\).",
-        "workingOut": "\\\\text{Bound value: } 10",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write \\(x > 10\\) in bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } 10 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "(10, inf)",
         "graphData": null
       }
@@ -3369,7 +2286,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 5: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 5: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -3377,15 +2294,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -3393,23 +2302,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 5: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -3421,42 +2320,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Classify \\\\(\\\\pi + 2\\\\) as rational or irrational.",
+    "question": "Classify \\\\(\\pi + 2\\\\) as rational or irrational.",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\pi\\\\) is irrational, so \\\\(\\\\pi + 2\\\\) is also irrational.",
+        "text": "Irrational",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times \\\\pi is irrational, so \\\\pi + 2 is also irrational.",
+        "text": "Algebraic",
         "imageUrl": ""
       },
       {
-        "text": "\\\\pi is irrational, so \\\\pi + 2 is also irrational. + 1",
+        "text": "Rational",
         "imageUrl": ""
       },
       {
-        "text": "-\\\\pi is irrational, so \\\\pi + 2 is also irrational.",
+        "text": "Integer",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\\\pi\\\\) is irrational, so \\\\(\\\\pi + 2\\\\) is also irrational.",
+    "solution": "\\\\(\\pi\\\\) is irrational, so \\\\(\\pi + 2\\\\) is also irrational.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify \\\\(\\\\pi + 2\\\\) as rational or irrational.",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify \\\\(\\pi + 2\\\\) as rational or irrational.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(\\\\pi\\\\) is irrational, so \\\\(\\\\pi + 2\\\\) is also irrational.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(\\\\pi\\\\) is irrational, so \\\\(\\\\pi + 2\\\\) is also irrational.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\\\(\\pi\\\\) is irrational, so \\\\(\\pi + 2\\\\) is also irrational.",
         "graphData": null
       }
     ],
@@ -3468,7 +2362,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 8: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 8: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -3476,15 +2370,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -3492,23 +2378,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 8: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -3524,7 +2400,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "answer": 1,
     "options": [
       {
-        "text": "\\\\(-5 \\\\le x < 3\\\\)",
+        "text": "\\\\(-5 \\le x < 3\\\\)",
         "imageUrl": ""
       },
       {
@@ -3532,11 +2408,11 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
+        "text": "\\\\(-5 \\le x \\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 < x \\\\le 3\\\\)",
+        "text": "\\\\(-5 < x \\le 3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3544,17 +2420,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "\\\\(-5 < x < 3\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Express \\\\((-5, 3)\\\\) using inequalities.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-5 < x < 3\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "\\\\(-5 < x < 3\\\\)",
         "graphData": null
       }
@@ -3567,7 +2438,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(3.14\\\\)",
+    "question": "Classify: \\(3.14\\)",
     "answer": 0,
     "options": [
       {
@@ -3575,15 +2446,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Rational",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
@@ -3591,17 +2454,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Rational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(3.14\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(3.14\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Rational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Rational",
         "graphData": null
       }
@@ -3618,7 +2476,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
+        "text": "\\\\(-5 \\le x \\le 3\\\\)",
         "imageUrl": ""
       },
       {
@@ -3626,30 +2484,25 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 < x \\\\le 3\\\\)",
+        "text": "\\\\(-5 < x \\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 \\\\le x < 3\\\\)",
+        "text": "\\\\(-5 \\le x < 3\\\\)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
+    "solution": "\\\\(-5 \\le x \\le 3\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Express \\\\([-5, 3]\\\\) using inequalities.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\\\(-5 \\le x \\le 3\\\\)",
         "graphData": null
       }
     ],
@@ -3658,45 +2511,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "kRzRZsOrOL0mwzw74qaF",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "From -2 to 3 (inclusive) in bracket notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\([-2, 3]\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-2, 3)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-2, 3)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-2, 3]\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "answer": "[-2,3]",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\([-2, 3]\\\\)",
+    "solution": "\\([-2, 3]\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((inclusive)\\).",
-        "workingOut": "\\\\text{Bound value: } -2",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "From -2 to 3 (inclusive) in bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -2 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\([-2, 3]\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\([-2, 3]\\)",
         "graphData": null
       }
     ],
@@ -3705,45 +2536,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "lSJsBo5nJV4RyYKLkP7r",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\\\(x < -5\\\\) in bracket notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\((-\\\\infty, -5)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-\\\\infty, -5)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-\\\\infty, -5)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-\\\\infty, -5]\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Write \\(x < -5\\) in bracket notation.",
+    "answer": "(-inf,-5)",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\((-\\\\infty, -5)\\\\)",
+    "solution": "\\((-\\infty, -5)\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((x < -5\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -5",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write \\(x < -5\\) in bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -5 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\((-\\\\infty, -5)\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\((-\\infty, -5)\\)",
         "graphData": null
       }
     ],
@@ -3752,45 +2561,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "m9QxSIIjEQssQYkY3WFR",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\((-\\\\infty, 10]\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(x \\\\le 10\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times x \\\\le 10",
-        "imageUrl": ""
-      },
-      {
-        "text": "x \\\\le 10 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-x \\\\le 10",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\((-\\infty, 10]\\) to inequality.",
+    "answer": "x<=10",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x \\\\le 10\\\\)",
+    "solution": "\\(x \\le 10\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(((-\\infty, 10]\\)\\).",
-        "workingOut": "\\\\text{Bound value: } 10",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\((-\\infty, 10]\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } 10 \\\\text{ is inclusive (use } \\\\le \\\\text{ or } \\\\ge \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(x \\\\le 10\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(x \\le 10\\)",
         "graphData": null
       }
     ],
@@ -3799,45 +2586,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "mzcDx9k5CKMqdDmW9xOY",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\([-3, 5]\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(-3 \\\\le x \\\\le 5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times -3 \\\\le x \\\\le 5",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 \\\\le x \\\\le 5 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "--3 \\\\le x \\\\le 5",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\([-3, 5]\\) to inequality.",
+    "answer": "-3<=x<=5",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-3 \\\\le x \\\\le 5\\\\)",
+    "solution": "\\(-3 \\le x \\le 5\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(([-3, 5]\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -3",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\([-3, 5]\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -3 \\\\text{ is inclusive (use } \\\\le \\\\text{ or } \\\\ge \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(-3 \\\\le x \\\\le 5\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-3 \\le x \\le 5\\)",
         "graphData": null
       }
     ],
@@ -3849,11 +2614,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify if \\\\(3\\\\sqrt{7}\\\\) is rational or irrational.",
+    "question": "Identify if \\\\(3\\sqrt{7}\\\\) is rational or irrational.",
     "answer": 0,
     "options": [
       {
-        "text": "Product of rational and irrational is irrational.",
+        "text": "Irrational",
         "imageUrl": ""
       },
       {
@@ -3873,17 +2638,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Product of rational and irrational is irrational.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Identify if \\\\(3\\\\sqrt{7}\\\\) is rational or irrational.",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Identify if \\\\(3\\sqrt{7}\\\\) is rational or irrational.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Product of rational and irrational is irrational.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Product of rational and irrational is irrational.",
         "graphData": null
       }
@@ -3893,45 +2653,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "oQTVYdeHDNQMWLTlUX84",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Between 1 and 10 (inclusive).",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(1 \\\\le x \\\\le 10\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times 1 \\\\le x \\\\le 10",
-        "imageUrl": ""
-      },
-      {
-        "text": "1 \\\\le x \\\\le 10 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-1 \\\\le x \\\\le 10",
-        "imageUrl": ""
-      }
-    ],
+    "answer": "1<=x<=10",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(1 \\\\le x \\\\le 10\\\\)",
+    "solution": "\\(1 \\le x \\le 10\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
+        "explanation": "Analyze the given math question and identify formulas.",
         "workingOut": "Between 1 and 10 (inclusive).",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(1 \\\\le x \\\\le 10\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(1 \\\\le x \\\\le 10\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(1 \\le x \\le 10\\)",
         "graphData": null
       }
     ],
@@ -3943,23 +2681,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(\\\\pi\\\\)",
-    "answer": 0,
+    "question": "Classify: \\(\\pi\\)",
+    "answer": 1,
     "options": [
       {
+        "text": "Rational",
+        "imageUrl": ""
+      },
+      {
         "text": "Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Irrational",
         "imageUrl": ""
       }
     ],
@@ -3967,17 +2697,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Irrational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(\\\\pi\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(\\pi\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Irrational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Irrational",
         "graphData": null
       }
@@ -3990,7 +2715,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 0: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 0: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -3998,15 +2723,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -4014,23 +2731,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 0: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -4042,11 +2749,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\\\(\\\\sqrt{45}\\\\) rational or irrational?",
+    "question": "Is \\\\(\\sqrt{45}\\\\) rational or irrational?",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\sqrt{45} = 3\\\\sqrt{5}\\\\), which is an irrational number.",
+        "text": "Irrational",
         "imageUrl": ""
       },
       {
@@ -4063,21 +2770,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\\\sqrt{45} = 3\\\\sqrt{5}\\\\), which is an irrational number.",
+    "solution": "\\\\(\\sqrt{45} = 3\\sqrt{5}\\\\), which is an irrational number.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Is \\\\(\\\\sqrt{45}\\\\) rational or irrational?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Is \\\\(\\sqrt{45}\\\\) rational or irrational?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(\\\\sqrt{45} = 3\\\\sqrt{5}\\\\), which is an irrational number.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(\\\\sqrt{45} = 3\\\\sqrt{5}\\\\), which is an irrational number.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\\\(\\sqrt{45} = 3\\sqrt{5}\\\\), which is an irrational number.",
         "graphData": null
       }
     ],
@@ -4089,7 +2791,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(0.45\\\\)",
+    "question": "Classify: \\(0.45\\)",
     "answer": 0,
     "options": [
       {
@@ -4097,15 +2799,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Rational",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
@@ -4113,17 +2807,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Rational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(0.45\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(0.45\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Rational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Rational",
         "graphData": null
       }
@@ -4136,11 +2825,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Classify \\\\(\\\\sqrt{1.44}\\\\) as rational or irrational.",
-    "answer": 0,
+    "question": "Classify \\\\(\\sqrt{1.44}\\\\) as rational or irrational.",
+    "answer": 1,
     "options": [
       {
-        "text": "\\\\(\\\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
+        "text": "Irrational",
         "imageUrl": ""
       },
       {
@@ -4157,21 +2846,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
+    "solution": "\\\\(\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify \\\\(\\\\sqrt{1.44}\\\\) as rational or irrational.",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify \\\\(\\sqrt{1.44}\\\\) as rational or irrational.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(\\\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(\\\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\\\(\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
         "graphData": null
       }
     ],
@@ -4183,7 +2867,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -4191,15 +2875,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -4207,23 +2883,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -4235,7 +2901,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(3\\\\frac{1}{7}\\\\)",
+    "question": "Classify: \\(3\\frac{1}{7}\\)",
     "answer": 0,
     "options": [
       {
@@ -4243,15 +2909,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Rational",
+        "text": "Irrational",
         "imageUrl": ""
       }
     ],
@@ -4259,17 +2917,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Rational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(3\\\\frac{1}{7}\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(3\\frac{1}{7}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Rational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Rational",
         "graphData": null
       }
@@ -4279,45 +2932,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "sWoWRcTZNDHRGtrm2OdT",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\\\((-2, 0)\\\\) to inequality.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(-2 < x < 0\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-2 > x < 0\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(0 < x < 0\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-4 < x < 0\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "question": "Convert \\((-2, 0)\\) to inequality.",
+    "answer": "-2<x<0",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-2 < x < 0\\\\)",
+    "solution": "\\(-2 < x < 0\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(((-2, 0)\\).",
-        "workingOut": "\\\\text{Bound value: } -2",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Convert \\((-2, 0)\\) to inequality.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -2 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\(-2 < x < 0\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(-2 < x < 0\\)",
         "graphData": null
       }
     ],
@@ -4329,23 +2960,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Union of \\\\(x > -1\\\\) or \\\\(x < 1\\\\)?",
+    "question": "Union of \\(x > -1\\) or \\(x < 1\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "All real numbers",
+        "text": "(-\\infty, \\infty)",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times All real numbers",
-        "imageUrl": ""
-      },
-      {
-        "text": "All real numbers + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-All real numbers",
+        "text": "(-1, 1)",
         "imageUrl": ""
       }
     ],
@@ -4353,17 +2976,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "All real numbers",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Union of \\\\(x > -1\\\\) or \\\\(x < 1\\\\)?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Union of \\(x > -1\\) or \\(x < 1\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "All real numbers",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "All real numbers",
         "graphData": null
       }
@@ -4376,11 +2994,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Express \\\\((-\\\\infty, -5]\\\\) using inequalities.",
+    "question": "Express \\\\((-\\infty, -5]\\\\) using inequalities.",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(x \\\\le -5\\\\)",
+        "text": "\\\\(x \\le -5\\\\)",
         "imageUrl": ""
       },
       {
@@ -4388,7 +3006,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x \\\\ge -5\\\\)",
+        "text": "\\\\(x \\ge -5\\\\)",
         "imageUrl": ""
       },
       {
@@ -4397,21 +3015,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x \\\\le -5\\\\)",
+    "solution": "\\\\(x \\le -5\\\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Express \\\\((-\\\\infty, -5]\\\\) using inequalities.",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Express \\\\((-\\infty, -5]\\\\) using inequalities.",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(x \\\\le -5\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(x \\\\le -5\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\\\(x \\le -5\\\\)",
         "graphData": null
       }
     ],
@@ -4423,42 +3036,29 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\\\([3, \\\\infty)\\\\)?",
+    "question": "Graph of \\([3, \\infty)\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(x \\\\ge 3\\\\)",
+        "text": "x \\ge 3",
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times x \\\\ge 3",
-        "imageUrl": ""
-      },
-      {
-        "text": "x \\\\ge 3 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-x \\\\ge 3",
+        "text": "x > 3",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x \\\\ge 3\\\\)",
+    "solution": "\\(x \\ge 3\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Graph of \\\\([3, \\\\infty)\\\\)?",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Graph of \\([3, \\infty)\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "\\\\(x \\\\ge 3\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
-        "workingOut": "\\\\(x \\\\ge 3\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\(x \\ge 3\\)",
         "graphData": null
       }
     ],
@@ -4470,23 +3070,15 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\\\(\\\\sqrt[4]{8}\\\\)",
-    "answer": 0,
+    "question": "Classify: \\(\\sqrt[4]{8}\\)",
+    "answer": 1,
     "options": [
       {
+        "text": "Rational",
+        "imageUrl": ""
+      },
+      {
         "text": "Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 \\\\times Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-Irrational",
         "imageUrl": ""
       }
     ],
@@ -4494,17 +3086,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "Irrational",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms and objectives from the given mathematical statement.",
-        "workingOut": "Classify: \\\\(\\\\sqrt[4]{8}\\\\)",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Classify: \\(\\sqrt[4]{8}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply algebraic laws, factorization principles, or arithmetic operations to simplify the terms.",
-        "workingOut": "Irrational",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform the final calculation or verification step to confirm the simplified mathematical expression.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "Irrational",
         "graphData": null
       }
@@ -4517,11 +3104,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write \\\\(-4 \\\\le x < 6\\\\) in interval notation.",
+    "question": "Write \\\\(-4 \\le x < 6\\\\) in interval notation.",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-4\\\\) is included, \\\\(6\\\\) is not.",
+        "text": "\\\\([-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
@@ -4541,17 +3128,12 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "\\\\(-4\\\\) is included, \\\\(6\\\\) is not.",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\((-4 \\le x < 6\\)\\).",
-        "workingOut": "\\\\text{Bound value: } -4",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Write \\\\(-4 \\le x < 6\\\\) in interval notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } -4 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
+        "explanation": "Perform algebraic simplifications or substitutions.",
         "workingOut": "\\\\(-4\\\\) is included, \\\\(6\\\\) is not.",
         "graphData": null
       }
@@ -4564,7 +3146,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 14: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 14: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -4572,15 +3154,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -4588,23 +3162,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 14: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -4613,45 +3177,23 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "wH0N0BQkhN84svEHaFNd",
-    "type": "multiple_choice",
+    "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Greater than 4 in bracket notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\((4, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((4, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([4, \\\\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((4, \\\\infty]\\\\)",
-        "imageUrl": ""
-      }
-    ],
+    "answer": "(4,inf)",
+    "options": [],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\((4, \\\\infty)\\\\)",
+    "solution": "\\((4, \\infty)\\)",
     "solutionSteps": [
       {
-        "explanation": "Analyze the boundary values and interval brackets. The interval is written as \\(Greater than 4 in bracket notation.\\).",
-        "workingOut": "\\\\text{Bound value: } 4",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Greater than 4 in bracket notation.",
         "graphData": null
       },
       {
-        "explanation": "Check whether the boundary value is included. Square brackets \\([\\) or \\(]\\) indicate that the boundary is inclusive, whereas parenthesis \\((\\) or \\()\\) indicate exclusive boundaries.",
-        "workingOut": "\\\\text{Boundary } 4 \\\\text{ is exclusive (use } < \\\\text{ or } > \\\\text{)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Formulate the final inequality based on the direction of infinity. Since the interval extends towards positive infinity, \\(x\\) must be greater than the bound.",
-        "workingOut": "\\\\((4, \\\\infty)\\\\)",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "\\((4, \\infty)\\)",
         "graphData": null
       }
     ],
@@ -4663,7 +3205,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 13: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 13: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -4671,15 +3213,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -4687,23 +3221,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 13: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -4715,7 +3239,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 20: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 20: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -4723,15 +3247,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -4739,23 +3255,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 20: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -4767,7 +3273,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 6: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 6: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -4775,15 +3281,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -4791,23 +3289,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 6: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -4819,7 +3307,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 1: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 1: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -4827,15 +3315,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -4843,23 +3323,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 1: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
@@ -4871,7 +3341,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 2: Range for \\\\(\\\\sqrt{15}\\\\)?",
+    "question": "Variation 2: Range for \\(\\sqrt{15}\\)?",
     "answer": 0,
     "options": [
       {
@@ -4879,15 +3349,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2 \\\\times 3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "3 and 4 + 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "-3 and 4",
+        "text": "4 and 5",
         "imageUrl": ""
       }
     ],
@@ -4895,23 +3357,13 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "3 and 4",
     "solutionSteps": [
       {
-        "explanation": "First, identify the integer values under the square root. We need to find the two closest perfect squares that surround the number \\(15\\).",
-        "workingOut": "9 < 15 < 16",
+        "explanation": "Analyze the given math question and identify formulas.",
+        "workingOut": "Variation 2: Range for \\(\\sqrt{15}\\)?",
         "graphData": null
       },
       {
-        "explanation": "Apply the square root property across the inequality, since the square root function preserves order for positive numbers.",
-        "workingOut": "\\\\sqrt{9} < \\\\sqrt{15} < \\\\sqrt{16}",
-        "graphData": null
-      },
-      {
-        "explanation": "Simplify the square roots of the perfect squares to obtain the consecutive integers between which our surd lies.",
-        "workingOut": "3 < \\\\sqrt{15} < 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Therefore, the value of \\(\\sqrt{15}\\) lies between the consecutive integers \\(3\\) and \\(4\\).",
-        "workingOut": "\\\\text{Range: } 3 \\\\text{ and } 4",
+        "explanation": "Perform algebraic simplifications or substitutions.",
+        "workingOut": "3 and 4",
         "graphData": null
       }
     ],
