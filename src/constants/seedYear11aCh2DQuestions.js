@@ -1,12 +1,29 @@
 export const Y11A_CH2D_QUESTIONS = [
   {
     "id": "y11a-2d-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the conjugate of:\n\n\\(\\sqrt{3}-1\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{3}+1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{3}-1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{4}+1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{2}+1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -31,12 +48,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the conjugate of:\n\n\\(2\\sqrt{5}+3\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(2\\sqrt{5}+3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{5}-3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{5}-3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\sqrt{5}-3\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -61,12 +95,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the conjugate of:\n\n\\(\\sqrt{7}-\\sqrt{2}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{7}-\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{8}+\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{7}+\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{6}+\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -91,12 +142,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q1d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the conjugate of:\n\n\\(3\\sqrt{11}+4\\sqrt{6}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(3\\sqrt{11}+4\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\sqrt{11}-4\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{11}-4\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{11}-4\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -121,12 +189,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\(\\sqrt{3}-1\\) is multiplied by its conjugate.",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(3 - 1 = 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 + 1 = 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4 - 1 = 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 - 1 = 2\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -151,12 +236,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\(2\\sqrt{5}+3\\) is multiplied by its conjugate.",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(20 + 9 = 11\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20 - 9 = 11\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(21 - 9 = 11\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(19 - 9 = 11\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -181,12 +283,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\(\\sqrt{7}-\\sqrt{2}\\) is multiplied by its conjugate.",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(7 + 2 = 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8 - 2 = 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(7 - 2 = 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6 - 2 = 5\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -211,12 +330,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q2d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\(3\\sqrt{11}+4\\sqrt{6}\\) is multiplied by its conjugate.",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(99 + 96 = 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(100 - 96 = 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(98 - 96 = 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(99 - 96 = 3\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -241,12 +377,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{3}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{4}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{3}}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -271,12 +424,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{8}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{7}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{6}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{7}}{7}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -301,12 +471,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q3c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3}{\\sqrt{5}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{3\\sqrt{6}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{4}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{5}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{3\\sqrt{5}}{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -331,12 +518,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q3d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{5}{\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{5\\sqrt{3}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{5\\sqrt{2}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5\\sqrt{2}}{2}_wrong1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5\\sqrt{2}}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -361,12 +565,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q3e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{2}}{\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{6}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{7}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{5}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{6}}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -391,12 +612,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q3f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{5}}{\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{36}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{35}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{34}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{35}}{7}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -421,12 +659,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q3g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{2\\sqrt{11}}{\\sqrt{5}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{2\\sqrt{56}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{2\\sqrt{54}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{2\\sqrt{55}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{2\\sqrt{55}}{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -451,12 +706,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q3h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3\\sqrt{7}}{\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{3\\sqrt{15}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{13}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{3\\sqrt{14}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{14}}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -481,12 +753,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q4a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{3}-1}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{3}+1}{3 - 1} = \\frac{\\sqrt{3}+1}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{3}-1}{3 - 1} = \\frac{\\sqrt{3}+1}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{4}+1}{3 - 1} = \\frac{\\sqrt{3}+1}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{2}+1}{3 - 1} = \\frac{\\sqrt{3}+1}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -511,12 +800,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q4b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{7}+2}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{7}+2}{7 - 4} = \\frac{\\sqrt{7}-2}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{7}-2}{7 - 4} = \\frac{\\sqrt{7}-2}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{8}-2}{7 - 4} = \\frac{\\sqrt{7}-2}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{6}-2}{7 - 4} = \\frac{\\sqrt{7}-2}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -541,12 +847,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q4c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{3+\\sqrt{5}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{3+\\sqrt{5}}{9 - 5} = \\frac{3-\\sqrt{5}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3-\\sqrt{6}}{9 - 5} = \\frac{3-\\sqrt{5}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3-\\sqrt{5}}{9 - 5} = \\frac{3-\\sqrt{5}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3-\\sqrt{4}}{9 - 5} = \\frac{3-\\sqrt{5}}{4}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -571,12 +894,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q4d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{4-\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{4-\\sqrt{7}}{16 - 7} = \\frac{4+\\sqrt{7}}{9}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{4+\\sqrt{8}}{16 - 7} = \\frac{4+\\sqrt{7}}{9}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{4+\\sqrt{6}}{16 - 7} = \\frac{4+\\sqrt{7}}{9}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{4+\\sqrt{7}}{16 - 7} = \\frac{4+\\sqrt{7}}{9}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -601,12 +941,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q4e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{5}-\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{5}+\\sqrt{2}}{5 - 2} = \\frac{\\sqrt{5}+\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{5}-\\sqrt{2}}{5 - 2} = \\frac{\\sqrt{5}+\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{6}+\\sqrt{2}}{5 - 2} = \\frac{\\sqrt{5}+\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{4}+\\sqrt{2}}{5 - 2} = \\frac{\\sqrt{5}+\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -631,12 +988,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q4f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{10}+\\sqrt{6}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{10}+\\sqrt{6}}{10 - 6} = \\frac{\\sqrt{10}-\\sqrt{6}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{10}-\\sqrt{6}}{10 - 6} = \\frac{\\sqrt{10}-\\sqrt{6}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{11}-\\sqrt{6}}{10 - 6} = \\frac{\\sqrt{10}-\\sqrt{6}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{9}-\\sqrt{6}}{10 - 6} = \\frac{\\sqrt{10}-\\sqrt{6}}{4}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -661,12 +1035,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q4g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{2\\sqrt{3}+1}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{2\\sqrt{3}+1}{12 - 1} = \\frac{2\\sqrt{3}-1}{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{2\\sqrt{4}-1}{12 - 1} = \\frac{2\\sqrt{3}-1}{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{2\\sqrt{3}-1}{12 - 1} = \\frac{2\\sqrt{3}-1}{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{2\\sqrt{2}-1}{12 - 1} = \\frac{2\\sqrt{3}-1}{11}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -691,12 +1082,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q4h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{5-3\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{5-3\\sqrt{2}}{25 - 18} = \\frac{5+3\\sqrt{2}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5+3\\sqrt{3}}{25 - 18} = \\frac{5+3\\sqrt{2}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{5+3\\sqrt{2}}{25 - 18} = \\frac{5+3\\sqrt{2}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5+3\\sqrt{2}}{25 - 18} = \\frac{5+3\\sqrt{2}}{7}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -721,12 +1129,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q5a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{2}{\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{2}_wrong1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -751,12 +1176,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q5b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{5}{\\sqrt{5}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -781,12 +1223,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q5c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{6}{\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(3\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{4}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -811,12 +1270,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q5d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{21}{\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(4\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{8}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -841,12 +1317,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q5e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{3}{\\sqrt{6}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{6}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{7}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{5}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{6}}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -871,12 +1364,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q5f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{5}{\\sqrt{15}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{16}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{15}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{14}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{15}}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -901,12 +1411,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q5g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{8}{\\sqrt{6}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{4\\sqrt{7}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{4\\sqrt{5}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{4\\sqrt{6}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{4\\sqrt{6}}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -931,12 +1458,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q5h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{14}{\\sqrt{10}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{7\\sqrt{11}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{7\\sqrt{9}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{7\\sqrt{10}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{7\\sqrt{10}}{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -961,12 +1505,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q6a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{2\\sqrt{5}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{5}}{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{6}}{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{4}}{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{5}}{10}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -991,12 +1552,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q6b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{1}{3\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{8}}{21}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{7}}{21}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{6}}{21}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{7}}{21}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1021,12 +1599,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q6c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3}{5\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{3\\sqrt{3}}{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{3\\sqrt{2}}{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{2}}{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{2}}{10}_wrong1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1051,12 +1646,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q6d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{2}{7\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{2\\sqrt{4}}{21}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{2\\sqrt{2}}{21}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{2\\sqrt{3}}{21}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{2\\sqrt{3}}{21}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1081,12 +1693,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q6e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{10}{3\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{5\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5\\sqrt{3}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{5\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5\\sqrt{2}}{3}_wrong1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1111,12 +1740,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q6f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{9}{4\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{3\\sqrt{4}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{3}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{2}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{3\\sqrt{3}}{4}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1141,12 +1787,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q6g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{3}}{2\\sqrt{10}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{31}}{20}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{29}}{20}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{30}}{20}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{30}}{20}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1171,12 +1834,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q6h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{2\\sqrt{11}}{5\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{2\\sqrt{78}}{35}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{2\\sqrt{76}}{35}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{2\\sqrt{77}}{35}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{2\\sqrt{77}}{35}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1201,12 +1881,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3}{\\sqrt{5}+1}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{3\\sqrt{5}-3}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{5}+3}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{6}-3}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{4}-3}{4}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1236,12 +1933,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{4}{2\\sqrt{2}-\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{8\\sqrt{2}-4\\sqrt{3}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{8\\sqrt{2}+4\\sqrt{3}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{8\\sqrt{3}+4\\sqrt{3}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{8\\sqrt{2}+4\\sqrt{3}}{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1271,12 +1985,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{7}}{5-\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{5\\sqrt{7}-7}{18}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5\\sqrt{8}+7}{18}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5\\sqrt{7}+7}{18}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5\\sqrt{6}+7}{18}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1306,12 +2037,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3\\sqrt{3}}{\\sqrt{5}+\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{3\\sqrt{15}+9}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{16}-9}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{14}-9}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{15}-9}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1341,12 +2089,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{2\\sqrt{7}}{2\\sqrt{7}-5}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{28+10\\sqrt{7}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{28-10\\sqrt{7}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{28+10\\sqrt{8}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{28+10\\sqrt{6}}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1376,12 +2141,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{5}}{\\sqrt{10}-\\sqrt{5}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{2}-1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{2}+1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{3}+1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\sqrt{2}+1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1411,12 +2193,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{3}-1}{\\sqrt{3}+1}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(2+\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3-\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2-\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1-\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1446,12 +2245,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{7-2\\sqrt{10}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{7+2\\sqrt{11}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{7+2\\sqrt{9}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{7+2\\sqrt{10}}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1481,12 +2297,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3-\\sqrt{7}}{3+\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(8-3\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8+3\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9-3\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(7-3\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1516,12 +2349,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{3\\sqrt{2}+\\sqrt{5}}{3\\sqrt{2}-\\sqrt{5}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{23-6\\sqrt{10}}{13}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{23+6\\sqrt{10}}{13}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{23+6\\sqrt{11}}{13}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{23+6\\sqrt{9}}{13}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1551,12 +2401,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7k",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{\\sqrt{10}-\\sqrt{6}}{\\sqrt{10}+\\sqrt{6}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(4+\\sqrt{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5-\\sqrt{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4-\\sqrt{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3-\\sqrt{15}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1586,12 +2453,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q7l",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\(\\frac{7+2\\sqrt{11}}{7-2\\sqrt{11}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(93-28\\sqrt{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(94+28\\sqrt{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(92+28\\sqrt{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(93+28\\sqrt{11}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1621,12 +2505,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q8a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{\\sqrt{3}-1}{2-\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{3}+1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{3}-1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{4}+1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{2}+1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1656,12 +2557,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify the expression by rationalising the denominator:\n\n\\(\\frac{2\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(4+\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4-\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5-\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3-\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1866,12 +2784,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q11-a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "The expression \\(\\frac{5+\\sqrt{6}}{\\sqrt{3}+\\sqrt{2}}\\) can be written in the form \\(a\\sqrt{3} + b\\sqrt{2}\\).\n\nFind \\(a\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(3\\sqrt{3} + 2\\sqrt{2} \\implies a = 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\sqrt{3} - 2\\sqrt{2} \\implies a = 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{3} - 2\\sqrt{2} \\implies a = 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{3} - 2\\sqrt{2} \\implies a = 3\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1901,12 +2836,29 @@ export const Y11A_CH2D_QUESTIONS = [
   },
   {
     "id": "y11a-2d-q11-b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "The expression \\(\\frac{5+\\sqrt{6}}{\\sqrt{3}+\\sqrt{2}}\\) can be written in the form \\(a\\sqrt{3} + b\\sqrt{2}\\).\n\nFind \\(b\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\((5 - 2)\\sqrt{3} - (-5 + 3)\\sqrt{2} = 3\\sqrt{3} - 2\\sqrt{2} \\implies b = -2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((5 - 2)\\sqrt{4} + (-5 + 3)\\sqrt{2} = 3\\sqrt{3} - 2\\sqrt{2} \\implies b = -2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((5 - 2)\\sqrt{2} + (-5 + 3)\\sqrt{2} = 3\\sqrt{3} - 2\\sqrt{2} \\implies b = -2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((5 - 2)\\sqrt{3} + (-5 + 3)\\sqrt{2} = 3\\sqrt{3} - 2\\sqrt{2} \\implies b = -2\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [

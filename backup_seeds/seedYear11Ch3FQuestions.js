@@ -18,31 +18,55 @@ export const Y11_CH3F_QUESTIONS = [
           "Concave up because \\( a = -1 < 0 \\).",
           "Concave down because \\( a = 1 > 0 \\)."
         ],
-        "a": "Concave up because \\( a = 1 > 0 \\)."
+        "a": 0
       },
       {
         "id": "y11a-3f-q1a2",
-        "type": "short_answer",
-        "question": "a) (ii) Write down the value of the \\( y \\)-intercept.",
-        "a": "-1"
+        "type": "multiple_choice",
+        "question": "a) (ii) What is the value of the \\( y \\)-intercept?",
+        "opts": [
+          "\\(-1\\)",
+          "\\(1\\)",
+          "\\(4\\)",
+          "\\(-4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q1a3",
-        "type": "short_answer",
-        "question": "a) (iii) Use the formula \\( x = \\frac{-b}{2a} \\) to find the axis of symmetry. (Format: 'x = k')",
-        "a": "x = 2"
+        "type": "multiple_choice",
+        "question": "a) (iii) Use the formula \\( x = \\frac{-b}{2a} \\) to find the axis of symmetry.",
+        "opts": [
+          "\\(x = 2\\)",
+          "\\(x = -2\\)",
+          "\\(x = 4\\)",
+          "\\(x = -4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q1a4",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) (iv) Use the axis of symmetry to find the \\( y \\)-coordinate of the vertex.",
-        "a": "-5"
+        "opts": [
+          "\\(-5\\)",
+          "\\(5\\)",
+          "\\(-1\\)",
+          "\\(-9\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q1a5",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) (v) Calculate the discriminant \\( \\Delta = b^2 - 4ac \\).",
-        "a": "20"
+        "opts": [
+          "\\(20\\)",
+          "\\(12\\)",
+          "\\(-12\\)",
+          "\\(16\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q1a6",
@@ -54,13 +78,19 @@ export const Y11_CH3F_QUESTIONS = [
           "Both of the above are correct and consistent.",
           "None of the above."
         ],
-        "a": "Both of the above are correct and consistent."
+        "a": 2
       },
       {
         "id": "y11a-3f-q1a7",
-        "type": "short_answer",
-        "question": "a) (vii) Find the \\( x \\)-intercepts using the quadratic formula. (Format: 'x = a - \\sqrt{b}, a + \\sqrt{b}' in ascending order)",
-        "a": "x = 2 - \sqrt{5}, 2 + \sqrt{5}"
+        "type": "multiple_choice",
+        "question": "a) (vii) Find the \\( x \\)-intercepts using the quadratic formula.",
+        "opts": [
+          "\\(x = 2 - \\sqrt{5}\\) and \\(x = 2 + \\sqrt{5}\\)",
+          "\\(x = -2 - \\sqrt{5}\\) and \\(x = -2 + \\sqrt{5}\\)",
+          "\\(x = 2 - \\sqrt{3}\\) and \\(x = 2 + \\sqrt{3}\\)",
+          "\\(x = 4 - \\sqrt{20}\\) and \\(x = 4 + \\sqrt{20}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q1b",
@@ -190,31 +220,55 @@ export const Y11_CH3F_QUESTIONS = [
           "Concave up because the constant term is 6.",
           "Concave down because the discriminant is negative."
         ],
-        "a": "Concave up because \\( a = 1 > 0 \\)."
+        "a": 0
       },
       {
         "id": "y11a-3f-q3a2",
-        "type": "short_answer",
-        "question": "a) (ii) Write down the value of the \\( y \\)-intercept.",
-        "a": "6"
+        "type": "multiple_choice",
+        "question": "a) (ii) What is the value of the \\( y \\)-intercept?",
+        "opts": [
+          "\\(6\\)",
+          "\\(-6\\)",
+          "\\(4\\)",
+          "\\(2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q3a3",
-        "type": "short_answer",
-        "question": "a) (iii) Use the formula \\( x = \\frac{-b}{2a} \\) to find the axis of symmetry. (Format: 'x = k')",
-        "a": "x = -2"
+        "type": "multiple_choice",
+        "question": "a) (iii) Use the formula \\( x = \\frac{-b}{2a} \\) to find the axis of symmetry.",
+        "opts": [
+          "\\(x = -2\\)",
+          "\\(x = 2\\)",
+          "\\(x = -4\\)",
+          "\\(x = 4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q3a4",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) (iv) Use the axis of symmetry to find the \\( y \\)-coordinate of the vertex.",
-        "a": "2"
+        "opts": [
+          "\\(2\\)",
+          "\\(-2\\)",
+          "\\(6\\)",
+          "\\(10\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q3a5",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) (v) Calculate the discriminant \\( \\Delta = b^2 - 4ac \\).",
-        "a": "-8"
+        "opts": [
+          "\\(-8\\)",
+          "\\(8\\)",
+          "\\(16\\)",
+          "\\(-24\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q3a6",
@@ -226,7 +280,7 @@ export const Y11_CH3F_QUESTIONS = [
           "Both of the above are correct and consistent.",
           "None of the above."
         ],
-        "a": "Both of the above are correct and consistent."
+        "a": 2
       },
       {
         "id": "y11a-3f-q3b",
@@ -344,12 +398,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 5a ──
   {
     "id": "y11a-3f-q5a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the discriminant \\( \\Delta = b^2 - 4ac \\) and then the zeroes of the quadratic function \\( f(x) = x^2 + 4x - 1 \\). Give the zeroes in exact surd form. (Format for zeroes: 'x = a - \\sqrt{b}, a + \\sqrt{b}' in ascending order)",
-    "a": "x = -2 - \sqrt{5}, -2 + \sqrt{5}",
+    "question": "Find the zeroes of the quadratic function \\( f(x) = x^2 + 4x - 1 \\) in exact surd form.",
+    "opts": [
+      "\\(x = -2 - \\sqrt{5}\\) and \\(x = -2 + \\sqrt{5}\\)",
+      "\\(x = 2 - \\sqrt{5}\\) and \\(x = 2 + \\sqrt{5}\\)",
+      "\\(x = -2 - \\sqrt{3}\\) and \\(x = -2 + \\sqrt{3}\\)",
+      "\\(x = -4 - \\sqrt{20}\\) and \\(x = -4 + \\sqrt{20}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate the discriminant for \\( a=1, b=4, c=-1 \\).",
@@ -365,12 +425,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 5b ──
   {
     "id": "y11a-3f-q5b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the discriminant \\( \\Delta \\) and then the zeroes of the quadratic function \\( f(x) = x^2 - 6x + 2 \\) in exact surd form. (Format: 'x = a - \\sqrt{b}, a + \\sqrt{b}')",
-    "a": "x = 3 - \sqrt{7}, 3 + \sqrt{7}",
+    "question": "Find the zeroes of the quadratic function \\( f(x) = x^2 - 6x + 2 \\) in exact surd form.",
+    "opts": [
+      "\\(x = 3 - \\sqrt{7}\\) and \\(x = 3 + \\sqrt{7}\\)",
+      "\\(x = -3 - \\sqrt{7}\\) and \\(x = -3 + \\sqrt{7}\\)",
+      "\\(x = 3 - \\sqrt{5}\\) and \\(x = 3 + \\sqrt{5}\\)",
+      "\\(x = 6 - \\sqrt{28}\\) and \\(x = 6 + \\sqrt{28}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate \\( \\Delta \\) with \\( a=1, b=-6, c=2 \\).",
@@ -386,12 +452,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 5c ──
   {
     "id": "y11a-3f-q5c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the discriminant \\( \\Delta \\) and then the zeroes of \\( f(x) = x^2 + 5x - 2 \\) in exact surd form. (Format: 'x = (-b - \\sqrt{\\Delta}) / 2, (-b + \\sqrt{\\Delta}) / 2')",
-    "a": "x = (-5 - \sqrt{33})/2, (-5 + \sqrt{33})/2",
+    "question": "Find the zeroes of \\( f(x) = x^2 + 5x - 2 \\) in exact surd form.",
+    "opts": [
+      "\\(x = \\frac{-5 - \\sqrt{33}}{2}\\) and \\(x = \\frac{-5 + \\sqrt{33}}{2}\\)",
+      "\\(x = \\frac{-5 - \\sqrt{17}}{2}\\) and \\(x = \\frac{-5 + \\sqrt{17}}{2}\\)",
+      "\\(x = \\frac{5 - \\sqrt{33}}{2}\\) and \\(x = \\frac{5 + \\sqrt{33}}{2}\\)",
+      "\\(x = -5 - \\sqrt{33}\\) and \\(x = -5 + \\sqrt{33}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Find \\( \\Delta \\) where \\( a=1, b=5, c=-2 \\).",
@@ -407,12 +479,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 5d ──
   {
     "id": "y11a-3f-q5d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the discriminant \\( \\Delta \\) and then the zeroes of \\( f(x) = -x^2 - 4x + 1 \\) in exact surd form.",
-    "a": "x = -2 - \sqrt{5}, -2 + \sqrt{5}",
+    "question": "Find the zeroes of \\( f(x) = -x^2 - 4x + 1 \\) in exact surd form.",
+    "opts": [
+      "\\(x = -2 - \\sqrt{5}\\) and \\(x = -2 + \\sqrt{5}\\)",
+      "\\(x = 2 - \\sqrt{5}\\) and \\(x = 2 + \\sqrt{5}\\)",
+      "\\(x = -2 - \\sqrt{3}\\) and \\(x = -2 + \\sqrt{3}\\)",
+      "\\(x = -4 - \\sqrt{20}\\) and \\(x = -4 + \\sqrt{20}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate the discriminant for \\( a=-1, b=-4, c=1 \\).",
@@ -428,12 +506,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 5e ──
   {
     "id": "y11a-3f-q5e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the discriminant \\( \\Delta \\) and then the zeroes of \\( f(x) = 2x^2 - 6x - 1 \\) in exact surd form.",
-    "a": "x = (3 - \sqrt{11})/2, (3 + \sqrt{11})/2",
+    "question": "Find the zeroes of \\( f(x) = 2x^2 - 6x - 1 \\) in exact surd form.",
+    "opts": [
+      "\\(x = \\frac{3 - \\sqrt{11}}{2}\\) and \\(x = \\frac{3 + \\sqrt{11}}{2}\\)",
+      "\\(x = \\frac{3 - \\sqrt{5}}{2}\\) and \\(x = \\frac{3 + \\sqrt{5}}{2}\\)",
+      "\\(x = \\frac{-3 - \\sqrt{11}}{2}\\) and \\(x = \\frac{-3 + \\sqrt{11}}{2}\\)",
+      "\\(x = 3 - \\sqrt{11}\\) and \\(x = 3 + \\sqrt{11}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Discriminant for \\( a=2, b=-6, c=-1 \\).",
@@ -449,12 +533,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 5f ──
   {
     "id": "y11a-3f-q5f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the discriminant \\( \\Delta \\) and then the zeroes of \\( f(x) = 3x^2 + 6x - 1 \\) in exact surd form.",
-    "a": "x = (-3 - 2\sqrt{3})/3, (-3 + 2\sqrt{3})/3",
+    "question": "Find the zeroes of \\( f(x) = 3x^2 + 6x - 1 \\) in exact surd form.",
+    "opts": [
+      "\\(x = \\frac{-3 - 2\\sqrt{3}}{3}\\) and \\(x = \\frac{-3 + 2\\sqrt{3}}{3}\\)",
+      "\\(x = \\frac{-3 - \\sqrt{12}}{3}\\) and \\(x = \\frac{-3 + \\sqrt{12}}{3}\\)",
+      "\\(x = \\frac{3 - 2\\sqrt{3}}{3}\\) and \\(x = \\frac{3 + 2\\sqrt{3}}{3}\\)",
+      "\\(x = -1 - \\frac{2\\sqrt{3}}{3}\\) and \\(x = -1 + \\frac{2\\sqrt{3}}{3}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate the discriminant for \\( a=3, b=6, c=-1 \\).",
@@ -588,7 +678,7 @@ export const Y11_CH3F_QUESTIONS = [
     "timeLimit": 90,
     "t": "The quadratic formulae and the graph",
     "question": "Sketch the graph of \\( y = 2x^2 + 8x - 1 \\).",
-    "a": "Concave up, vertex (-2, -9), y-intercept (0, -1), x-intercepts at -2 ± 3/√2.",
+    "a": "Concave up, vertex (-2, -9), y-intercept (0, -1), x-intercepts at -2 ± 3/\\sqrt{2}.",
     "solutionSteps": [
       {
         "explanation": "Concave up. y-intercept: -1. Axis: \\( x = -2 \\). Vertex: \\( (-2, -9) \\). Roots: \\( x = -2 \\pm \\frac{3}{\\sqrt{2}} \\).",
@@ -600,12 +690,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 7a ──
   {
     "id": "y11a-3f-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the zeroes of the quadratic function \\( f(x) = x^2 - 2x - 8 \\) using three methods (factoring, completing the square, and quadratic formula). Show they all yield the same zeroes. (Format: 'x = a, b' in ascending order)",
-    "a": "x = -2, 4",
+    "question": "Find the zeroes of the quadratic function \\( f(x) = x^2 - 2x - 8 \\).",
+    "opts": [
+      "\\(x = -2, 4\\)",
+      "\\(x = 2, -4\\)",
+      "\\(x = -2, -4\\)",
+      "\\(x = 2, 4\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Method 1: Factoring. Find numbers that multiply to -8 and add to -2.",
@@ -625,12 +721,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 7b ──
   {
     "id": "y11a-3f-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the zeroes of the quadratic function \\( f(x) = x^2 - 7x + 10 \\) using the three methods.",
-    "a": "x = 2, 5",
+    "question": "Find the zeroes of the quadratic function \\( f(x) = x^2 - 7x + 10 \\).",
+    "opts": [
+      "\\(x = 2, 5\\)",
+      "\\(x = -2, -5\\)",
+      "\\(x = -2, 5\\)",
+      "\\(x = 2, -5\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Factoring: \\( (x - 2)(x - 5) = 0 \\implies x = 2, 5 \\).",
@@ -650,12 +752,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 7c ──
   {
     "id": "y11a-3f-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the zeroes of the quadratic function \\( f(x) = -x^2 + 2x + 15 \\) using the three methods.",
-    "a": "x = -3, 5",
+    "question": "Find the zeroes of the quadratic function \\( f(x) = -x^2 + 2x + 15 \\).",
+    "opts": [
+      "\\(x = -3, 5\\)",
+      "\\(x = 3, -5\\)",
+      "\\(x = -3, -5\\)",
+      "\\(x = 3, 5\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Factor out -1 first: \\( -(x^2 - 2x - 15) = -(x - 5)(x + 3) = 0 \\implies x = -3, 5 \\).",
@@ -746,12 +854,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 9a ──
   {
     "id": "y11a-3f-q9a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "The quadratic formulae and the graph",
-    "question": "Find the discriminant \\( \\Delta = b^2 - 4ac \\) for the quadratic function \\( f(x) = x^2 + 5x - 3 \\) and state how many zeroes it has, without drawing its graph.",
-    "a": "37, 2 zeroes",
+    "question": "Find the discriminant \\( \\Delta = b^2 - 4ac \\) for the quadratic function \\( f(x) = x^2 + 5x - 3 \\) and state how many zeroes it has.",
+    "opts": [
+      "\\(\\Delta = 37\\), 2 zeroes",
+      "\\(\\Delta = 13\\), 2 zeroes",
+      "\\(\\Delta = -13\\), 0 zeroes",
+      "\\(\\Delta = 37\\), 1 zero"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate \\( \\Delta \\) where \\( a=1, b=5, c=-3 \\).",
@@ -767,12 +881,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 9b ──
   {
     "id": "y11a-3f-q9b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "The quadratic formulae and the graph",
     "question": "Find the discriminant \\( \\Delta \\) for the quadratic function \\( f(x) = 4x^2 - 12x + 9 \\) and state how many zeroes it has.",
-    "a": "0, 1 zero",
+    "opts": [
+      "\\(\\Delta = 0\\), 1 zero",
+      "\\(\\Delta = 288\\), 2 zeroes",
+      "\\(\\Delta = -144\\), 0 zeroes",
+      "\\(\\Delta = 0\\), 2 zeroes"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate \\( \\Delta \\) for \\( a=4, b=-12, c=9 \\).",
@@ -788,12 +908,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 9c ──
   {
     "id": "y11a-3f-q9c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "The quadratic formulae and the graph",
     "question": "Find the discriminant \\( \\Delta \\) for the quadratic function \\( f(x) = -3x^2 + 6x - 5 \\) and state how many zeroes it has.",
-    "a": "-24, 0 zeroes",
+    "opts": [
+      "\\(\\Delta = -24\\), 0 zeroes",
+      "\\(\\Delta = 24\\), 2 zeroes",
+      "\\(\\Delta = -96\\), 0 zeroes",
+      "\\(\\Delta = -24\\), 1 zero"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate \\( \\Delta \\) for \\( a=-3, b=6, c=-5 \\).",
@@ -817,21 +943,39 @@ export const Y11_CH3F_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3f-q10a1",
-        "type": "short_answer",
-        "question": "a) (i) Find the x-coordinates of the intersection points with the line \\( y = 3 \\). (Format: 'x = a - \\sqrt{b}, a + \\sqrt{b}' in ascending order)",
-        "a": "x = 2 - \sqrt{2}, 2 + \sqrt{2}"
+        "type": "multiple_choice",
+        "question": "a) (i) Find the x-coordinates of the intersection points with the line \\( y = 3 \\).",
+        "opts": [
+          "\\(x = 2 - \\sqrt{2}\\) and \\(x = 2 + \\sqrt{2}\\)",
+          "\\(x = -2 - \\sqrt{2}\\) and \\(x = -2 + \\sqrt{2}\\)",
+          "\\(x = 2 - \\sqrt{6}\\) and \\(x = 2 + \\sqrt{6}\\)",
+          "\\(x = 1\\) and \\(x = 3\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q10a2",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) (ii) Find the x-coordinates of the intersection points with the line \\( y = 5 \\).",
-        "a": "2"
+        "opts": [
+          "\\(x = 2\\)",
+          "\\(x = -2\\)",
+          "\\(x = 0\\) and \\(x = 4\\)",
+          "\\(x = 2\\) and \\(x = 5\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q10a3",
-        "type": "short_answer",
-        "question": "a) (iii) Find the intersection points with the line \\( y = 7 \\). (Write 'No intersection' if none exist)",
-        "a": "No intersection"
+        "type": "multiple_choice",
+        "question": "a) (iii) Find the intersection points with the line \\( y = 7 \\).",
+        "opts": [
+          "No intersection",
+          "\\(x = 2\\)",
+          "\\(x = 2 - \\sqrt{2}\\) and \\(x = 2 + \\sqrt{2}\\)",
+          "\\(x = 0\\) and \\(x = 7\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3f-q10b",
@@ -844,12 +988,12 @@ export const Y11_CH3F_QUESTIONS = [
         "type": "multiple_choice",
         "question": "c) For what values of \\( k \\) does the parabola intersect the line \\( y = k \\) twice?",
         "opts": [
-          "k < 5",
-          "k > 5",
-          "k = 5",
+          "\\(k < 5\\)",
+          "\\(k > 5\\)",
+          "\\(k = 5\\)",
           "For all values of k"
         ],
-        "a": "k < 5"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -863,7 +1007,7 @@ export const Y11_CH3F_QUESTIONS = [
       },
       {
         "explanation": "For \\( y=7 \\), set the equation equal to 7.",
-        "workingOut": "-x^2 + 4x + 1 = 7 \\implies x^2 - 4x + 6 = 0 \\implies \\Delta = 16 - 24 = -8 < 0 \\implies \\text{no solution}"
+        "workingOut": "-x^2 + 4x + 1 = 7 \\implies x^2 - 4x + 6 = 0 \\implies \\Delta = 16 - 24 = -8 < 0 \\implies \\text{no intersection}"
       },
       {
         "explanation": "The maximum y-value of the parabola is at the vertex \\( (2, 5) \\). Any line \\( y = k \\) below the vertex height (\\( k < 5 \\)) will cross the parabola twice.",
@@ -950,12 +1094,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 12a ──
   {
     "id": "y11a-3f-q12a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The quadratic formulae and the graph",
-    "question": "Use the quadratic formula to find the zeroes \\( \\alpha \\) and \\( \\beta \\) of \\( f(x) = x^2 - 4x + 1 \\). Hence write the function in factored form \\( f(x) = (x - \\alpha)(x - \\beta) \\). (Format: '(x - (a - \\sqrt{b}))(x - (a + \\sqrt{b}))')",
-    "a": "(x - (2 - \sqrt{3}))(x - (2 + \sqrt{3}))",
+    "question": "Use the quadratic formula to find the zeroes \\( \\alpha \\) and \\( \\beta \\) of \\( f(x) = x^2 - 4x + 1 \\). Hence write the function in factored form.",
+    "opts": [
+      "\\(f(x) = (x - (2 - \\sqrt{3}))(x - (2 + \\sqrt{3}))\\)",
+      "\\(f(x) = (x - (2 + \\sqrt{3}))(x + (2 - \\sqrt{3}))\\)",
+      "\\(f(x) = (x - 2 - \\sqrt{3})(x - 2 + \\sqrt{3})\\)",
+      "\\(f(x) = (x - 2 - \\sqrt{5})(x - 2 + \\sqrt{5})\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Find roots using formula.",
@@ -971,12 +1121,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 12b ──
   {
     "id": "y11a-3f-q12b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The quadratic formulae and the graph",
     "question": "Use the quadratic formula to find the zeroes of \\( f(x) = x^2 + 6x - 2 \\) and write it in factored form.",
-    "a": "(x - (-3 - \sqrt{11}))(x - (-3 + \sqrt{11}))",
+    "opts": [
+      "\\(f(x) = (x - (-3 - \\sqrt{11}))(x - (-3 + \\sqrt{11}))\\)",
+      "\\(f(x) = (x + 3 - \\sqrt{11})(x + 3 + \\sqrt{11})\\)",
+      "\\(f(x) = (x - 3 - \\sqrt{11})(x - 3 + \\sqrt{11})\\)",
+      "\\(f(x) = (x - (-3 - \\sqrt{7}))(x - (-3 + \\sqrt{7}))\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Solve using formula.",
@@ -992,12 +1148,18 @@ export const Y11_CH3F_QUESTIONS = [
   // ── QUESTION 12c ──
   {
     "id": "y11a-3f-q12c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The quadratic formulae and the graph",
     "question": "Use the quadratic formula to find the zeroes of \\( f(x) = x^2 - 5x + 3 \\) and write it in factored form.",
-    "a": "(x - (5 - \sqrt{13})/2)(x - (5 + \sqrt{13})/2)",
+    "opts": [
+      "\\(f(x) = \\left(x - \\frac{5 - \\sqrt{13}}{2}\\right)\\left(x - \\frac{5 + \\sqrt{13}}{2}\\right)\\)",
+      "\\(f(x) = \\left(x - \\frac{5 - \\sqrt{17}}{2}\\right)\\left(x - \\frac{5 + \\sqrt{17}}{2}\\right)\\)",
+      "\\(f(x) = (x - 5 - \\sqrt{13})(x - 5 + \\sqrt{13})\\)",
+      "\\(f(x) = \\left(x + \\frac{5 - \\sqrt{13}}{2}\\right)\\left(x + \\frac{5 + \\sqrt{13}}{2}\\right)\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Solve using formula.",

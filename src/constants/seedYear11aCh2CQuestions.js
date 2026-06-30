@@ -1,12 +1,17 @@
 export const Y11A_CH2C_QUESTIONS = [
   {
     "id": "y11a-2C-q8a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((\\sqrt{3} + 1)^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(3 + 2\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4 + \\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4 + 2\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3 + 1\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -31,12 +36,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((\\sqrt{5} - 1)^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(6 - 2\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4 - 2\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6 + 2\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6 - \\\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -61,12 +71,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((\\sqrt{3} + \\sqrt{2})^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(5 + \\\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5 + 2\\\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5 - 2\\\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6 + 2\\\\sqrt{6}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -91,12 +106,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q8d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((\\sqrt{7} - \\sqrt{5})^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(12 + 2\\\\sqrt{35}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2 - 2\\\\sqrt{35}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(12 - \\\\sqrt{35}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(12 - 2\\\\sqrt{35}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -121,12 +141,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q8e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((2\\sqrt{3} - 1)^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(13 - 4\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(11 - 4\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(13 + 4\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(13 - 2\\\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -151,12 +176,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q8f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((2\\sqrt{5} + 3)^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(20 + 12\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(29 + 6\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(29 + 12\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(29 - 12\\\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -181,12 +211,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q8g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((2\\sqrt{7} + \\sqrt{5})^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(33 + 2\\\\sqrt{35}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(33 + 4\\\\sqrt{35}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(33 - 4\\\\sqrt{35}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(28 + 4\\\\sqrt{35} + 5\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -211,12 +246,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q8h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((3\\sqrt{2} - 2\\sqrt{3})^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(30 + 12\\\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(18 - 12\\\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(30 - 6\\\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(30 - 12\\\\sqrt{6}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -241,12 +281,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q8i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify the following, using the special expansions:\n\n\\((3\\sqrt{5} + \\sqrt{10})^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(55 + 30\\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(55 + 6\\\\sqrt{50}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(55 - 30\\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(45 + 30\\\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -271,12 +316,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q9a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{\\sqrt{40}}{\\sqrt{10}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(\\\\sqrt{4}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\sqrt{10}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -301,12 +351,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q9b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{\\sqrt{18}}{\\sqrt{50}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(\\\\frac{18}{50}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{\\\\sqrt{18}}{\\\\sqrt{50}}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{3}{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{9}{25}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -331,12 +386,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q9c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{2\\sqrt{6} \\times \\sqrt{5}}{\\sqrt{10}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\sqrt{30}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -361,12 +421,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q9d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{5\\sqrt{7} \\times \\sqrt{3}}{\\sqrt{28}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(\\\\frac{5\\\\sqrt{3}}{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{5\\\\sqrt{21}}{28}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{5\\\\sqrt{3}}{4}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -396,12 +461,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q9e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{\\sqrt{15} \\times \\sqrt{20}}{\\sqrt{12}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(\\\\sqrt{25}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(25\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\\\sqrt{12}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -431,12 +501,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q9f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully:\n\n\\(\\frac{6\\sqrt{3} \\times 8\\sqrt{2}}{\\sqrt{32} \\times \\sqrt{27}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(48\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\\\)", "imageUrl": "" },
+      { "text": "\\\\(12\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{48}{12}\\\\sqrt{6}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -461,12 +536,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q10a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(\\sqrt{2}\\) and \\(\\sqrt{7}\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(3\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\sqrt{14}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(9\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -491,12 +571,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q10b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(\\sqrt{5}\\) and \\(2\\sqrt{5}\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(\\\\sqrt{25}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\sqrt{30}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -521,12 +606,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q10c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(\\sqrt{7} + 1\\) and \\(\\sqrt{7} - 1\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(\\\\sqrt{16}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\sqrt{14}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -551,12 +641,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q10d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(2\\sqrt{3} - \\sqrt{6}\\) and \\(2\\sqrt{3} + \\sqrt{6}\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(\\\\sqrt{30}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\\\)", "imageUrl": "" },
+      { "text": "\\\\(36\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -581,12 +676,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q11a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify by forming the lowest common denominator:\n\n\\(\\frac{1}{\\sqrt{3}+1} + \\frac{1}{\\sqrt{3}-1}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(\\\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{2\\\\sqrt{3}}{3-1}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{2}{\\\\sqrt{3}}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -611,12 +711,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q11b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify by forming the lowest common denominator:\n\n\\(\\frac{3}{2\\sqrt{5}-\\sqrt{7}} - \\frac{3}{2\\sqrt{5}+\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(\\\\frac{6\\\\sqrt{7}}{20+7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{\\\\sqrt{7}}{13}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{6\\\\sqrt{5}}{13}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\frac{6\\\\sqrt{7}}{13}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -641,12 +746,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q12a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Write down the expansion of \\((a - b)^2\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(a^2 + 2ab + b^2\\\\)", "imageUrl": "" },
+      { "text": "\\\\(a^2 - b^2\\\\)", "imageUrl": "" },
+      { "text": "\\\\(a^2 - 2ab + b^2\\\\)", "imageUrl": "" },
+      { "text": "\\\\(a^2 + b^2\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -671,12 +781,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q12b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Use the expansion in part a to square \\(\\sqrt{6+\\sqrt{11}} - \\sqrt{6-\\sqrt{11}}\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(12 - 2\\\\sqrt{25}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\)", "imageUrl": "" },
+      { "text": "\\\\(12\\\\)", "imageUrl": "" },
+      { "text": "\\\\(12 - 10\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -706,12 +821,17 @@ export const Y11A_CH2C_QUESTIONS = [
   },
   {
     "id": "y11a-2C-q12c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Hence simplify \\(\\sqrt{6+\\sqrt{11}} - \\sqrt{6-\\sqrt{11}}\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(\\\\sqrt{11}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-\\\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [

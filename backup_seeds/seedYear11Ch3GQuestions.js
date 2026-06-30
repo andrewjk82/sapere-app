@@ -2,12 +2,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 1a ──
   {
     "id": "y11a-3g-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Powers, cubics, and circles",
-    "question": "Write down the coordinates of the centre and the radius of the circle: \\( x^2 + y^2 = 25 \\). (Format: 'Centre (a, b), radius r')",
-    "a": "Centre (0, 0), radius 5",
+    "question": "Identify the coordinates of the centre and the radius of the circle: \\( x^2 + y^2 = 25 \\).",
+    "opts": [
+      "Centre \\((0, 0)\\), radius \\(5\\)",
+      "Centre \\((0, 0)\\), radius \\(25\\)",
+      "Centre \\((5, 5)\\), radius \\(5\\)",
+      "Centre \\((0, 0)\\), radius \\(\\sqrt{5}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Compare the equation to the standard form of a circle centered at the origin: \\( x^2 + y^2 = r^2 \\).",
@@ -23,12 +29,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 1b ──
   {
     "id": "y11a-3g-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Powers, cubics, and circles",
-    "question": "Write down the coordinates of the centre and the radius of the circle: \\( x^2 + y^2 = 64 \\). (Format: 'Centre (a, b), radius r')",
-    "a": "Centre (0, 0), radius 8",
+    "question": "Identify the coordinates of the centre and the radius of the circle: \\( x^2 + y^2 = 64 \\).",
+    "opts": [
+      "Centre \\((0, 0)\\), radius \\(8\\)",
+      "Centre \\((0, 0)\\), radius \\(64\\)",
+      "Centre \\((8, 8)\\), radius \\(8\\)",
+      "Centre \\((0, 0)\\), radius \\(4\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Identify standard form parameters where \\( r^2 = 64 \\).",
@@ -40,12 +52,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 1c ──
   {
     "id": "y11a-3g-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Powers, cubics, and circles",
-    "question": "Write down the coordinates of the centre and the radius of the circle: \\( x^2 + y^2 = \\frac{1}{4} \\). (Format: 'Centre (a, b), radius r')",
-    "a": "Centre (0, 0), radius 0.5",
+    "question": "Identify the coordinates of the centre and the radius of the circle: \\( x^2 + y^2 = \\frac{1}{4} \\).",
+    "opts": [
+      "Centre \\((0, 0)\\), radius \\(0.5\\)",
+      "Centre \\((0, 0)\\), radius \\(0.25\\)",
+      "Centre \\((0.5, 0.5)\\), radius \\(0.5\\)",
+      "Centre \\((0, 0)\\), radius \\(2\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Find the radius: \\( r = \\sqrt{\\frac{1}{4}} = \\frac{1}{2} = 0.5 \\).",
@@ -57,12 +75,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 1d ──
   {
     "id": "y11a-3g-q1d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Powers, cubics, and circles",
-    "question": "Write down the coordinates of the centre and the radius of the circle: \\( x^2 + y^2 = 1.96 \\). (Format: 'Centre (a, b), radius r')",
-    "a": "Centre (0, 0), radius 1.4",
+    "question": "Identify the coordinates of the centre and the radius of the circle: \\( x^2 + y^2 = 1.96 \\).",
+    "opts": [
+      "Centre \\((0, 0)\\), radius \\(1.4\\)",
+      "Centre \\((0, 0)\\), radius \\(1.96\\)",
+      "Centre \\((1.4, 1.4)\\), radius \\(1.4\\)",
+      "Centre \\((0, 0)\\), radius \\(1.3\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Find the radius: \\( r = \\sqrt{1.96} = 1.4 \\).",
@@ -190,9 +214,15 @@ export const Y11_CH3G_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3g-q3a",
-        "type": "short_answer",
-        "question": "a) Complete the table of values below for \\( y = 2x^3 \\).\n\n\\( x = -1.5, -1, -0.5, 0, 0.5, 1, 1.5 \\)\n\n(Format your answer as: 'y = a, b, c, d, e, f, g' in order of x)",
-        "a": "y = -6.75, -2, -0.25, 0, 0.25, 2, 6.75"
+        "type": "multiple_choice",
+        "question": "a) Which of the following matches the correct set of values for \\( y = 2x^3 \\) for \\( x = -1.5, -1, -0.5, 0, 0.5, 1, 1.5 \\)?",
+        "opts": [
+          "\\(y = -6.75, -2, -0.25, 0, 0.25, 2, 6.75\\)",
+          "\\(y = -3.375, -1, -0.125, 0, 0.125, 1, 3.375\\)",
+          "\\(y = -6.75, -2, 0, 0, 0, 2, 6.75\\)",
+          "\\(y = -13.5, -4, -0.5, 0, 0.5, 4, 13.5\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3g-q3b",
@@ -228,9 +258,15 @@ export const Y11_CH3G_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3g-q4a",
-        "type": "short_answer",
-        "question": "a) Complete the table of values below for \\( y = 0.5x^4 \\).\n\n\\( x = -1.5, -1, -0.5, 0, 0.5, 1, 1.5 \\)\n\n(Format your answer as: 'y = a, b, c, d, e, f, g')",
-        "a": "y = 2.53, 0.5, 0.03, 0, 0.03, 0.5, 2.53"
+        "type": "multiple_choice",
+        "question": "a) Which of the following matches the correct set of values for \\( y = 0.5x^4 \\) for \\( x = -1.5, -1, -0.5, 0, 0.5, 1, 1.5 \\)?",
+        "opts": [
+          "\\(y = 2.53, 0.5, 0.03, 0, 0.03, 0.5, 2.53\\)",
+          "\\(y = 5.06, 1.0, 0.06, 0, 0.06, 1.0, 5.06\\)",
+          "\\(y = 2.53, 0.5, 0.03, 0, -0.03, -0.5, -2.53\\)",
+          "\\(y = 1.27, 0.25, 0.02, 0, 0.02, 0.25, 1.27\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3g-q4b",
@@ -266,9 +302,15 @@ export const Y11_CH3G_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3g-q5a",
-        "type": "short_answer",
-        "question": "a) Which three points do all three graphs pass through? (Format: '(x1, y1), (x2, y2), (x3, y3)' in ascending x order)",
-        "a": "(-1, -0.5), (0, 0), (1, 0.5)"
+        "type": "multiple_choice",
+        "question": "a) Which three points do all three graphs pass through?",
+        "opts": [
+          "\\((-1, -0.5), (0, 0), (1, 0.5)\\)",
+          "\\((-1, -1), (0, 0), (1, 1)\\)",
+          "\\((-2, -1), (0, 0), (2, 1)\\)",
+          "\\((0, 0), (1, 0.5), (2, 2)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3g-q5b",
@@ -280,7 +322,7 @@ export const Y11_CH3G_QUESTIONS = [
           "\\( y = 0.5x^5 \\)",
           "They are all at the same distance"
         ],
-        "a": "\\( y = 0.5x^5 \\)"
+        "a": 2
       },
       {
         "id": "y11a-3g-q5c",
@@ -292,7 +334,7 @@ export const Y11_CH3G_QUESTIONS = [
           "\\( y = 0.5x^5 \\)",
           "They are all at the same distance"
         ],
-        "a": "\\( y = 0.5x \\)"
+        "a": 0
       },
       {
         "id": "y11a-3g-q5d",
@@ -304,7 +346,7 @@ export const Y11_CH3G_QUESTIONS = [
           "\\( y = 0.5x^5 \\)",
           "They are all at the same distance"
         ],
-        "a": "\\( y = 0.5x^5 \\)"
+        "a": 2
       },
       {
         "id": "y11a-3g-q5e",
@@ -316,7 +358,7 @@ export const Y11_CH3G_QUESTIONS = [
           "\\( y = 0.5x^5 \\)",
           "They are all at the same distance"
         ],
-        "a": "\\( y = 0.5x \\)"
+        "a": 0
       },
       {
         "id": "y11a-3g-q5f",
@@ -356,9 +398,15 @@ export const Y11_CH3G_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3g-q6a",
-        "type": "short_answer",
-        "question": "a) Which three points do all three graphs pass through? (Format: '(x1, y1), (x2, y2), (x3, y3)' in ascending x order)",
-        "a": "(-1, 2), (0, 0), (1, 2)"
+        "type": "multiple_choice",
+        "question": "a) Which three points do all three graphs pass through?",
+        "opts": [
+          "\\((-1, 2), (0, 0), (1, 2)\\)",
+          "\\((-1, -2), (0, 0), (1, 2)\\)",
+          "\\((-1, 1), (0, 0), (1, 1)\\)",
+          "\\((0, 0), (1, 2), (2, 8)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3g-q6b",
@@ -370,7 +418,7 @@ export const Y11_CH3G_QUESTIONS = [
           "\\( y = 2x^6 \\)",
           "They are all at the same distance"
         ],
-        "a": "\\( y = 2x^6 \\)"
+        "a": 2
       },
       {
         "id": "y11a-3g-q6c",
@@ -382,7 +430,7 @@ export const Y11_CH3G_QUESTIONS = [
           "\\( y = 2x^6 \\)",
           "They are all at the same distance"
         ],
-        "a": "\\( y = 2x^2 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3g-q6d",
@@ -394,7 +442,7 @@ export const Y11_CH3G_QUESTIONS = [
           "\\( y = 2x^6 \\)",
           "They are all at the same distance"
         ],
-        "a": "\\( y = 2x^6 \\)"
+        "a": 2
       },
       {
         "id": "y11a-3g-q6e",
@@ -406,7 +454,7 @@ export const Y11_CH3G_QUESTIONS = [
           "\\( y = 2x^6 \\)",
           "They are all at the same distance"
         ],
-        "a": "\\( y = 2x^2 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3g-q6f",
@@ -442,9 +490,15 @@ export const Y11_CH3G_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3g-q7a",
-        "type": "short_answer",
-        "question": "a) Complete the table of values for \\( y = 2\\sqrt{x} \\) at \\( x = 0, 0.25, 1, 2.25, 4, 6.25 \\).\n\n(Format: 'y = a, b, c, d, e, f')",
-        "a": "y = 0, 1, 2, 3, 4, 5"
+        "type": "multiple_choice",
+        "question": "a) Which of the following matches the correct set of values for \\( y = 2\\sqrt{x} \\) at \\( x = 0, 0.25, 1, 2.25, 4, 6.25 \\)?",
+        "opts": [
+          "\\(y = 0, 1, 2, 3, 4, 5\\)",
+          "\\(y = 0, 0.5, 1, 1.5, 2, 2.5\\)",
+          "\\(y = 0, 1, 2, 4, 8, 12.5\\)",
+          "\\(y = 0, 2, 4, 6, 8, 10\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3g-q7b",
@@ -559,12 +613,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 9a ──
   {
     "id": "y11a-3g-q9a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
-    "question": "Write down the equation of the circle centered at the origin with radius 3.",
-    "a": "x^2 + y^2 = 9",
+    "question": "Identify the equation of the circle centered at the origin with radius 3.",
+    "opts": [
+      "\\(x^2 + y^2 = 9\\)",
+      "\\(x^2 + y^2 = 3\\)",
+      "\\(x^2 + y^2 = 6\\)",
+      "\\(x^2 + y^2 = 27\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Use standard equation of a circle centered at the origin: \\( x^2 + y^2 = r^2 \\).",
@@ -576,12 +636,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 9b ──
   {
     "id": "y11a-3g-q9b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
-    "question": "Write down the equation of the circle centered at the origin with radius \\( \\sqrt{7} \\).",
-    "a": "x^2 + y^2 = 7",
+    "question": "Identify the equation of the circle centered at the origin with radius \\( \\sqrt{7} \\).",
+    "opts": [
+      "\\(x^2 + y^2 = 7\\)",
+      "\\(x^2 + y^2 = \\sqrt{7}\\)",
+      "\\(x^2 + y^2 = 49\\)",
+      "\\(x^2 - y^2 = 7\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Use \\( x^2 + y^2 = r^2 \\) with \\( r = \\sqrt{7} \\).",
@@ -593,12 +659,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 9c ──
   {
     "id": "y11a-3g-q9c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
-    "question": "Write down the equation of the circle centered at the origin that passes through the point \\( (5, 12) \\).",
-    "a": "x^2 + y^2 = 169",
+    "question": "Identify the equation of the circle centered at the origin that passes through the point \\( (5, 12) \\).",
+    "opts": [
+      "\\(x^2 + y^2 = 169\\)",
+      "\\(x^2 + y^2 = 17\\)",
+      "\\(x^2 + y^2 = 13\\)",
+      "\\(x^2 + y^2 = 289\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate the radius squared by substituting the coordinates of the given point into \\( x^2 + y^2 = r^2 \\).",
@@ -610,12 +682,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 9d ──
   {
     "id": "y11a-3g-q9d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
-    "question": "Write down the equation of the circle centered at the origin that passes through the point \\( (2, -4) \\).",
-    "a": "x^2 + y^2 = 20",
+    "question": "Identify the equation of the circle centered at the origin that passes through the point \\( (2, -4) \\).",
+    "opts": [
+      "\\(x^2 + y^2 = 20\\)",
+      "\\(x^2 + y^2 = 6\\)",
+      "\\(x^2 + y^2 = 16\\)",
+      "\\(x^2 + y^2 = \\sqrt{20}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate the radius squared.",
@@ -635,9 +713,15 @@ export const Y11_CH3G_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3g-q10a",
-        "type": "short_answer",
-        "question": "a) Complete the table of values below for \\( y \\ge 0 \\) and \\( y \\le 0 \\) for \\( x = 0, 2, 4, 6, 8, 10 \\). Give answers to 1 decimal place.\n\n(Format: 'y >= 0: a, b, c, d, e, f; y <= 0: g, h, i, j, k, l')",
-        "a": "y >= 0: 10, 9.8, 9.2, 8, 6, 0; y <= 0: -10, -9.8, -9.2, -8, -6, 0"
+        "type": "multiple_choice",
+        "question": "a) Which of the following matches the correct set of values (rounded to 1 decimal place) for \\( y \\ge 0 \\) and \\( y \\le 0 \\) corresponding to \\( x = 0, 2, 4, 6, 8, 10 \\)?",
+        "opts": [
+          "\\(y \\ge 0: 10, 9.8, 9.2, 8, 6, 0; y \\le 0: -10, -9.8, -9.2, -8, -6, 0\\)",
+          "\\(y \\ge 0: 10, 8, 6, 4, 2, 0; y \\le 0: -10, -8, -6, -4, -2, 0\\)",
+          "\\(y \\ge 0: 10, 9.6, 8.8, 8, 6, 0; y \\le 0: -10, -9.6, -8.8, -8, -6, 0\\)",
+          "\\(y \\ge 0: 100, 96, 84, 64, 36, 0; y \\le 0: -100, -96, -84, -64, -36, 0\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3g-q10b",
@@ -877,12 +961,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 13a ──
   {
     "id": "y11a-3g-q13a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
     "question": "Find the equation of the semicircle: top half of circle centered at origin with radius 4.",
-    "a": "y = \\sqrt{16 - x^2}",
+    "opts": [
+      "\\(y = \\sqrt{16 - x^2}\\)",
+      "\\(y = -\\sqrt{16 - x^2}\\)",
+      "\\(x = \\sqrt{16 - y^2}\\)",
+      "\\(y = 16 - x^2\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "The circle equation is \\( x^2 + y^2 = 16 \\). Solving for y gives \\( y = \\pm \\sqrt{16 - x^2} \\). Since it is the top half, \\( y \\ge 0 \\), so \\( y = \\sqrt{16 - x^2} \\).",
@@ -894,12 +984,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 13b ──
   {
     "id": "y11a-3g-q13b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
     "question": "Find the equation of the semicircle: left half of circle centered at origin with radius 2.",
-    "a": "x = -\\sqrt{4 - y^2}",
+    "opts": [
+      "\\(x = -\\sqrt{4 - y^2}\\)",
+      "\\(x = \\sqrt{4 - y^2}\\)",
+      "\\(y = -\\sqrt{4 - x^2}\\)",
+      "\\(x^2 + y^2 = 4\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Solving \\( x^2 + y^2 = 4 \\) for x gives \\( x = \\pm \\sqrt{4 - y^2} \\). The left half has negative x-values, so \\( x = -\\sqrt{4 - y^2} \\).",
@@ -911,12 +1007,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 13c ──
   {
     "id": "y11a-3g-q13c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
     "question": "Find the equation of the semicircle: right half of circle centered at origin with radius \\( \\sqrt{5} \\).",
-    "a": "x = \\sqrt{5 - y^2}",
+    "opts": [
+      "\\(x = \\sqrt{5 - y^2}\\)",
+      "\\(x = -\\sqrt{5 - y^2}\\)",
+      "\\(y = \\sqrt{5 - x^2}\\)",
+      "\\(x = 5 - y^2\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "For the right half of the circle \\( x^2 + y^2 = 5 \\), we have \\( x \\ge 0 \\), so \\( x = \\sqrt{5 - y^2} \\).",
@@ -928,12 +1030,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 13d ──
   {
     "id": "y11a-3g-q13d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
     "question": "Find the equation of the top-half semicircle centered at the origin passing through the point \\( (-6, 8) \\).",
-    "a": "y = \\sqrt{100 - x^2}",
+    "opts": [
+      "\\(y = \\sqrt{100 - x^2}\\)",
+      "\\(y = -\\sqrt{100 - x^2}\\)",
+      "\\(y = \\sqrt{14 - x^2}\\)",
+      "\\(x = \\sqrt{100 - y^2}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Find radius squared using the point: \\( r^2 = (-6)^2 + 8^2 = 100 \\). The top half semicircle equation is \\( y = \\sqrt{r^2 - x^2} \\).",
@@ -945,12 +1053,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 13e ──
   {
     "id": "y11a-3g-q13e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
     "question": "Find the equation of the bottom-half semicircle centered at the origin passing through the point \\( (-2, -2) \\).",
-    "a": "y = -\\sqrt{8 - x^2}",
+    "opts": [
+      "\\(y = -\\sqrt{8 - x^2}\\)",
+      "\\(y = \\sqrt{8 - x^2}\\)",
+      "\\(y = -\\sqrt{4 - x^2}\\)",
+      "\\(x = -\\sqrt{8 - y^2}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate radius squared: \\( r^2 = (-2)^2 + (-2)^2 = 8 \\). The bottom half semicircle has equation \\( y = -\\sqrt{r^2 - x^2} \\).",
@@ -962,12 +1076,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 13f ──
   {
     "id": "y11a-3g-q13f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Powers, cubics, and circles",
     "question": "Find the equation of the right-half semicircle centered at the origin passing through the point \\( (4, -1) \\).",
-    "a": "x = \\sqrt{17 - y^2}",
+    "opts": [
+      "\\(x = \\sqrt{17 - y^2}\\)",
+      "\\(x = -\\sqrt{17 - y^2}\\)",
+      "\\(y = \\sqrt{17 - x^2}\\)",
+      "\\(x = \\sqrt{15 - y^2}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Calculate radius squared: \\( r^2 = 4^2 + (-1)^2 = 17 \\). Right half is \\( x = \\sqrt{r^2 - y^2} \\).",
@@ -987,9 +1107,15 @@ export const Y11_CH3G_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3g-q14a",
-        "type": "short_answer",
-        "question": "a) Complete the table of values below for \\( y = -3\\sqrt{x} \\).\n\n\\( x = 0, 0.25, 1, 2.25, 4, 6.25 \\)\n\n(Format: 'y = a, b, c, d, e, f')",
-        "a": "y = 0, -1.5, -3, -4.5, -6, -7.5"
+        "type": "multiple_choice",
+        "question": "a) Which of the following matches the correct set of values for \\( y = -3\\sqrt{x} \\) at \\( x = 0, 0.25, 1, 2.25, 4, 6.25 \\)?",
+        "opts": [
+          "\\(y = 0, -1.5, -3, -4.5, -6, -7.5\\)",
+          "\\(y = 0, -0.75, -3, -6.75, -12, -18.75\\)",
+          "\\(y = 0, 1.5, 3, 4.5, 6, 7.5\\)",
+          "\\(y = 0, -1.5, -3, -5, -6, -8\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3g-q14b",
@@ -1042,12 +1168,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 16a ──
   {
     "id": "y11a-3g-q16a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Powers, cubics, and circles",
     "question": "Find the equation of the cubic curve in the form \\( y = a(x - \\alpha)(x - \\beta)(x - \\gamma) \\) if it passes through \\( (0, 6) \\) and has zeroes at \\( -3, -1, 2 \\).",
-    "a": "y = -(x + 3)(x + 1)(x - 2)",
+    "opts": [
+      "\\(y = -(x + 3)(x + 1)(x - 2)\\)",
+      "\\(y = (x + 3)(x + 1)(x - 2)\\)",
+      "\\(y = -2(x + 3)(x + 1)(x - 2)\\)",
+      "\\(y = -(x - 3)(x - 1)(x + 2)\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Substitute the roots into standard factored form: \\( y = a(x+3)(x+1)(x-2) \\).",
@@ -1071,12 +1203,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 16b ──
   {
     "id": "y11a-3g-q16b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Powers, cubics, and circles",
     "question": "Find the equation of the cubic curve passing through \\( (0, 6) \\) with a single root at \\( x = -2 \\) and a double root (touching the x-axis) at \\( x = 3 \\).",
-    "a": "y = 1/3(x + 2)(x - 3)^2",
+    "opts": [
+      "\\(y = \\frac{1}{3}(x + 2)(x - 3)^2\\)",
+      "\\(y = (x + 2)(x - 3)^2\\)",
+      "\\(y = \\frac{1}{3}(x - 2)(x + 3)^2\\)",
+      "\\(y = -\\frac{1}{3}(x + 2)(x - 3)^2\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Since the curve has a double root at \\( 3 \\), write equation as: \\( y = a(x + 2)(x - 3)^2 \\).",
@@ -1100,12 +1238,18 @@ export const Y11_CH3G_QUESTIONS = [
   // ── QUESTION 16c ──
   {
     "id": "y11a-3g-q16c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Powers, cubics, and circles",
     "question": "Find the equation of the cubic curve passing through \\( (0, -9) \\) with a triple root (inflection point on the x-axis) at \\( x = 3 \\).",
-    "a": "y = 1/3(x - 3)^3",
+    "opts": [
+      "\\(y = \\frac{1}{3}(x - 3)^3\\)",
+      "\\(y = -\\frac{1}{3}(x - 3)^3\\)",
+      "\\(y = (x - 3)^3\\)",
+      "\\(y = \\frac{1}{3}(x + 3)^3\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Write the general equation for a triple root at \\( 3 \\): \\( y = a(x - 3)^3 \\).",

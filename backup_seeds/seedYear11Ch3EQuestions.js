@@ -18,25 +18,43 @@ export const Y11_CH3E_QUESTIONS = [
           "Concave up because the vertex is below the x-axis.",
           "Concave down because it has two x-intercepts."
         ],
-        "a": "Concave up because the coefficient of the squared term is positive (\\( a = 1 > 0 \\))."
+        "a": 0
       },
       {
         "id": "y11a-3e-q1a2",
-        "type": "short_answer",
-        "question": "a) (ii) Substitute \\( x = 0 \\) to find the \\( y \\)-intercept.",
-        "a": "5"
+        "type": "multiple_choice",
+        "question": "a) (ii) What is the \\( y \\)-intercept of \\( y = (x - 3)^2 - 4 \\)?",
+        "opts": [
+          "\\(5\\)",
+          "\\(-4\\)",
+          "\\(9\\)",
+          "\\(-5\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q1a3",
-        "type": "short_answer",
-        "question": "a) (iii) Write down the equation of the axis of symmetry and the coordinates of the vertex. (Format: 'x = h, V(h, k)')",
-        "a": "x = 3, V(3, -4)"
+        "type": "multiple_choice",
+        "question": "a) (iii) What is the vertex of \\( y = (x - 3)^2 - 4 \\)?",
+        "opts": [
+          "\\(V(3, -4)\\)",
+          "\\(V(-3, -4)\\)",
+          "\\(V(3, 4)\\)",
+          "\\(V(0, -4)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q1a4",
-        "type": "short_answer",
-        "question": "a) (iv) Explain why there must be \\( x \\)-intercepts, then find them by putting \\( y = 0 \\). (Format: 'x = a, b' in ascending order)",
-        "a": "x = 1, 5"
+        "type": "multiple_choice",
+        "question": "a) (iv) What are the \\( x \\)-intercepts of \\( y = (x - 3)^2 - 4 \\)?",
+        "opts": [
+          "\\(x = 1\\) and \\(x = 5\\)",
+          "\\(x = -1\\) and \\(x = 7\\)",
+          "\\(x = 3\\) and \\(x = -3\\)",
+          "\\(x = 0\\) and \\(x = 3\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q1a5",
@@ -59,20 +77,24 @@ export const Y11_CH3E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Identify the concavity by checking the sign of the leading coefficient.",
-        "workingOut": "y = 1(x - 3)^2 - 4 \\implies a = 1 > 0 \\implies \\text{concave up}"
+        "explanation": "선행 계수의 부호로 볼록 방향 결정.",
+        "workingOut": "y = 1(x-3)^2-4 \\implies a = 1 > 0 \\implies \\text{위로 볼록}",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\( x = 0 \\) to find the y-intercept.",
-        "workingOut": "y = (0 - 3)^2 - 4 = 9 - 4 = 5 \\implies (0, 5)"
+        "explanation": "y절편: x = 0 대입.",
+        "workingOut": "y = (0-3)^2-4 = 9-4 = 5 \\implies (0, 5)",
+        "graphData": null
       },
       {
-        "explanation": "From the completed square form \\( y = a(x - h)^2 + k \\), the vertex is \\( (h, k) \\) and axis of symmetry is \\( x = h \\).",
-        "workingOut": "\\text{Vertex } V(3, -4), \\quad \\text{Axis of symmetry } x = 3"
+        "explanation": "꼭짓점 형태 \\(y = a(x-h)^2 + k\\)에서 꼭짓점은 \\((h, k)\\).",
+        "workingOut": "\\text{꼭짓점: } V(3, -4), \\quad \\text{대칭축: } x = 3",
+        "graphData": null
       },
       {
-        "explanation": "Since the vertex is below the x-axis \\( (y = -4) \\) and the parabola is concave up, it must cross the x-axis. Find the intercepts by setting \\( y = 0 \\).",
-        "workingOut": "0 = (x - 3)^2 - 4 \\implies (x - 3)^2 = 4 \\implies x - 3 = \\pm 2 \\implies x = 1, 5"
+        "explanation": "꼭짓점이 x축 아래이고 위로 볼록이므로 x절편 존재. y = 0 설정.",
+        "workingOut": "0 = (x-3)^2-4 \\implies (x-3)^2 = 4 \\implies x-3 = \\pm 2 \\implies x = 1, 5",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -104,25 +126,43 @@ export const Y11_CH3E_QUESTIONS = [
           "The constant term is positive.",
           "It has two distinct real roots."
         ],
-        "a": "The coefficient of the squared term is negative (\\( a = -1 < 0 \\))."
+        "a": 0
       },
       {
         "id": "y11a-3e-q2a2",
-        "type": "short_answer",
-        "question": "a) (ii) Substitute \\( x = 0 \\) to find the \\( y \\)-intercept.",
-        "a": "0"
+        "type": "multiple_choice",
+        "question": "a) (ii) What is the \\( y \\)-intercept of \\( y = -(x - 2)^2 + 4 \\)?",
+        "opts": [
+          "\\(0\\)",
+          "\\(4\\)",
+          "\\(-4\\)",
+          "\\(8\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q2a3",
-        "type": "short_answer",
-        "question": "a) (iii) Write down the equation of the axis of symmetry and the coordinates of the vertex. (Format: 'x = h, V(h, k)')",
-        "a": "x = 2, V(2, 4)"
+        "type": "multiple_choice",
+        "question": "a) (iii) What is the vertex of \\( y = -(x - 2)^2 + 4 \\)?",
+        "opts": [
+          "\\(V(2, 4)\\)",
+          "\\(V(-2, 4)\\)",
+          "\\(V(2, -4)\\)",
+          "\\(V(0, 4)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q2a4",
-        "type": "short_answer",
-        "question": "a) (iv) Explain why there must be \\( x \\)-intercepts, then find them by putting \\( y = 0 \\). (Format: 'x = a, b' in ascending order)",
-        "a": "x = 0, 4"
+        "type": "multiple_choice",
+        "question": "a) (iv) What are the \\( x \\)-intercepts of \\( y = -(x - 2)^2 + 4 \\)?",
+        "opts": [
+          "\\(x = 0\\) and \\(x = 4\\)",
+          "\\(x = -2\\) and \\(x = 6\\)",
+          "\\(x = 1\\) and \\(x = 3\\)",
+          "\\(x = 2\\) and \\(x = 4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q2a5",
@@ -145,20 +185,24 @@ export const Y11_CH3E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Look at the negative sign in front of the parenthetical squared term.",
-        "workingOut": "y = -1(x - 2)^2 + 4 \\implies a = -1 < 0 \\implies \\text{concave down}"
+        "explanation": "괄호 앞의 음수 부호를 확인합니다.",
+        "workingOut": "y = -1(x-2)^2+4 \\implies a = -1 < 0 \\implies \\text{아래로 볼록}",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\( x = 0 \\) to calculate the y-intercept.",
-        "workingOut": "y = -(0 - 2)^2 + 4 = -4 + 4 = 0 \\implies (0, 0)"
+        "explanation": "y절편: x = 0 대입.",
+        "workingOut": "y = -(0-2)^2+4 = -4+4 = 0 \\implies (0, 0)",
+        "graphData": null
       },
       {
-        "explanation": "Read off the vertex \\( (h, k) \\) from the equation form \\( y = -(x - h)^2 + k \\).",
-        "workingOut": "\\text{Vertex } V(2, 4), \\quad \\text{Axis of symmetry } x = 2"
+        "explanation": "꼭짓점: \\(y = -(x-h)^2+k\\) 형태에서 \\((h, k)\\) 읽기.",
+        "workingOut": "\\text{꼭짓점: } V(2, 4), \\quad \\text{대칭축: } x = 2",
+        "graphData": null
       },
       {
-        "explanation": "Since the vertex is above the x-axis \\( (y = 4) \\) and the parabola is concave down, it must cross the x-axis. Find the intercepts by setting \\( y = 0 \\).",
-        "workingOut": "0 = -(x - 2)^2 + 4 \\implies (x - 2)^2 = 4 \\implies x - 2 = \pm 2 \\implies x = 0, 4"
+        "explanation": "꼭짓점이 x축 위이고 아래로 볼록이므로 x절편 존재. y = 0 설정.",
+        "workingOut": "0 = -(x-2)^2+4 \\implies (x-2)^2 = 4 \\implies x = 0, 4",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -174,20 +218,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 3a ──
   {
     "id": "y11a-3e-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Completing the square and the graph",
-    "question": "Complete the square in the monic quadratic function: \\( f(x) = x^2 - 6x + 10 \\). (Format: '(x - h)^2 + k')",
-    "a": "(x - 3)^2 + 1",
+    "question": "Complete the square in the monic quadratic function \\( f(x) = x^2 - 6x + 10 \\).",
+    "opts": [
+      "\\((x - 3)^2 + 1\\)",
+      "\\((x - 3)^2 - 1\\)",
+      "\\((x + 3)^2 + 1\\)",
+      "\\((x - 6)^2 + 10\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Halve the coefficient of the x-term (\\( -6 / 2 = -3 \\)) and square it (\\( 9 \\)) to find the completed square part.",
-        "workingOut": "f(x) = (x^2 - 6x + 9) + 10 - 9"
+        "explanation": "x 항 계수의 절반 \\(-6/2 = -3\\)을 구하고 제곱하면 9.",
+        "workingOut": "f(x) = (x^2-6x+9)+10-9",
+        "graphData": null
       },
       {
-        "explanation": "Rewrite as a perfect square and collect constant terms.",
-        "workingOut": "f(x) = (x - 3)^2 + 1"
+        "explanation": "완전제곱식으로 정리.",
+        "workingOut": "f(x) = (x-3)^2+1",
+        "graphData": null
       }
     ]
   },
@@ -195,20 +247,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 3b ──
   {
     "id": "y11a-3e-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Completing the square and the graph",
-    "question": "Complete the square in the monic quadratic function: \\( f(x) = x^2 + 8x + 18 \\). (Format: '(x + h)^2 + k')",
-    "a": "(x + 4)^2 + 2",
+    "question": "Complete the square in the monic quadratic function \\( f(x) = x^2 + 8x + 18 \\).",
+    "opts": [
+      "\\((x + 4)^2 + 2\\)",
+      "\\((x + 4)^2 - 2\\)",
+      "\\((x - 4)^2 + 2\\)",
+      "\\((x + 8)^2 + 18\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Take half of the coefficient of x (\\( 8 / 2 = 4 \\)), square it (\\( 16 \\)), and adjust the constant.",
-        "workingOut": "f(x) = (x^2 + 8x + 16) + 18 - 16"
+        "explanation": "x 항 계수의 절반 \\(8/2 = 4\\)을 구하고 제곱하면 16.",
+        "workingOut": "f(x) = (x^2+8x+16)+18-16",
+        "graphData": null
       },
       {
-        "explanation": "Factor the perfect square trinomial.",
-        "workingOut": "f(x) = (x + 4)^2 + 2"
+        "explanation": "완전제곱식으로 정리.",
+        "workingOut": "f(x) = (x+4)^2+2",
+        "graphData": null
       }
     ]
   },
@@ -216,20 +276,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 3c ──
   {
     "id": "y11a-3e-q3c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Completing the square and the graph",
-    "question": "Complete the square in the monic quadratic function: \\( f(x) = x^2 - 4x + 9. \\)",
-    "a": "(x - 2)^2 + 5",
+    "question": "Complete the square in the monic quadratic function \\( f(x) = x^2 - 4x + 9 \\).",
+    "opts": [
+      "\\((x - 2)^2 + 5\\)",
+      "\\((x - 2)^2 - 5\\)",
+      "\\((x + 2)^2 + 5\\)",
+      "\\((x - 4)^2 + 9\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Use half the x-coefficient (\\( -4 / 2 = -2 \\)), square it (\\( 4 \\)) and add/subtract it.",
-        "workingOut": "f(x) = (x^2 - 4x + 4) + 9 - 4"
+        "explanation": "x 항 계수의 절반 \\(-4/2 = -2\\)을 구하고 제곱하면 4.",
+        "workingOut": "f(x) = (x^2-4x+4)+9-4",
+        "graphData": null
       },
       {
-        "explanation": "Group the terms into vertex form.",
-        "workingOut": "f(x) = (x - 2)^2 + 5"
+        "explanation": "꼭짓점 형태로 묶기.",
+        "workingOut": "f(x) = (x-2)^2+5",
+        "graphData": null
       }
     ]
   },
@@ -237,20 +305,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 3d ──
   {
     "id": "y11a-3e-q3d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Completing the square and the graph",
-    "question": "Complete the square in the monic quadratic function: \\( f(x) = x^2 - 12x + 5. \\)",
-    "a": "(x - 6)^2 - 31",
+    "question": "Complete the square in the monic quadratic function \\( f(x) = x^2 - 12x + 5 \\).",
+    "opts": [
+      "\\((x - 6)^2 - 31\\)",
+      "\\((x - 6)^2 + 31\\)",
+      "\\((x + 6)^2 - 31\\)",
+      "\\((x - 12)^2 + 5\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Add and subtract the square of half the x-coefficient (\\( (-12/2)^2 = 36 \\)).",
-        "workingOut": "f(x) = (x^2 - 12x + 36) + 5 - 36"
+        "explanation": "x 항 계수의 절반의 제곱: \\((-12/2)^2 = 36\\).",
+        "workingOut": "f(x) = (x^2-12x+36)+5-36",
+        "graphData": null
       },
       {
-        "explanation": "Form the completed square.",
-        "workingOut": "f(x) = (x - 6)^2 - 31"
+        "explanation": "완전제곱식으로 정리.",
+        "workingOut": "f(x) = (x-6)^2-31",
+        "graphData": null
       }
     ]
   },
@@ -258,20 +334,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 3e ──
   {
     "id": "y11a-3e-q3e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Completing the square and the graph",
-    "question": "Complete the square in the monic quadratic function: \\( f(x) = x^2 + 4x - 3. \\)",
-    "a": "(x + 2)^2 - 7",
+    "question": "Complete the square in the monic quadratic function \\( f(x) = x^2 + 4x - 3 \\).",
+    "opts": [
+      "\\((x + 2)^2 - 7\\)",
+      "\\((x + 2)^2 + 7\\)",
+      "\\((x - 2)^2 - 7\\)",
+      "\\((x + 4)^2 - 3\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Add and subtract the square of half the x-coefficient (\\( (4/2)^2 = 4 \\)).",
-        "workingOut": "f(x) = (x^2 + 4x + 4) - 3 - 4"
+        "explanation": "x 항 계수의 절반의 제곱: \\((4/2)^2 = 4\\).",
+        "workingOut": "f(x) = (x^2+4x+4)-3-4",
+        "graphData": null
       },
       {
-        "explanation": "Write in vertex form.",
-        "workingOut": "f(x) = (x + 2)^2 - 7"
+        "explanation": "꼭짓점 형태로 묶기.",
+        "workingOut": "f(x) = (x+2)^2-7",
+        "graphData": null
       }
     ]
   },
@@ -279,25 +363,33 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 3f ──
   {
     "id": "y11a-3e-q3f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Completing the square and the graph",
-    "question": "Complete the square in the monic quadratic function: \\( f(x) = x^2 + 6x - 2. \\)",
-    "a": "(x + 3)^2 - 11",
+    "question": "Complete the square in the monic quadratic function \\( f(x) = x^2 + 6x - 2 \\).",
+    "opts": [
+      "\\((x + 3)^2 - 11\\)",
+      "\\((x + 3)^2 + 11\\)",
+      "\\((x - 3)^2 - 11\\)",
+      "\\((x + 6)^2 - 2\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Halve 6 to get 3, square to get 9, and add/subtract.",
-        "workingOut": "f(x) = (x^2 + 6x + 9) - 2 - 9"
+        "explanation": "6의 절반은 3, 제곱은 9.",
+        "workingOut": "f(x) = (x^2+6x+9)-2-9",
+        "graphData": null
       },
       {
-        "explanation": "Combine the terms.",
-        "workingOut": "f(x) = (x + 3)^2 - 11"
+        "explanation": "항 합치기.",
+        "workingOut": "f(x) = (x+3)^2-11",
+        "graphData": null
       }
     ]
   },
 
-  // ── QUESTION 4 ──
+  // ── QUESTION 4 (teacher_review — sketch with surds) ──
   {
     "id": "y11a-3e-q4",
     "type": "teacher_review",
@@ -326,22 +418,13 @@ export const Y11_CH3E_QUESTIONS = [
       }
     ],
     "solutionSteps": [
-      {
-        "explanation": "For part a, identify the vertex: \\( V(-2, -5) \\). Calculate y-intercept: \\( y = (0+2)^2 - 5 = -1 \\). Find x-intercepts: \\( (x+2)^2 = 5 \\implies x = -2 \\pm \\sqrt{5} \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b, identify the vertex: \\( V(3, -6) \\). Calculate y-intercept: \\( y = (0-3)^2 - 6 = 3 \\). Find x-intercepts: \\( (x-3)^2 = 6 \\implies x = 3 \\pm \\sqrt{6} \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c, identify the vertex: \\( V(2, -3) \\). Calculate y-intercept: \\( y = (0-2)^2 - 3 = 1 \\). Find x-intercepts: \\( (x-2)^2 = 3 \\implies x = 2 \\pm \\sqrt{3} \\).",
-        "workingOut": ""
-      }
+      {"explanation": "a) 꼭짓점: \\(V(-2, -5)\\). y절편: \\(y = (0+2)^2-5 = -1\\). x절편: \\((x+2)^2=5 \\implies x = -2 \\pm \\sqrt{5}\\).", "workingOut": "", "graphData": null},
+      {"explanation": "b) 꼭짓점: \\(V(3, -6)\\). y절편: \\(y = (0-3)^2-6 = 3\\). x절편: \\((x-3)^2=6 \\implies x = 3 \\pm \\sqrt{6}\\).", "workingOut": "", "graphData": null},
+      {"explanation": "c) 꼭짓점: \\(V(2, -3)\\). y절편: \\(y = (0-2)^2-3 = 1\\). x절편: \\((x-2)^2=3 \\implies x = 2 \\pm \\sqrt{3}\\).", "workingOut": "", "graphData": null}
     ]
   },
 
-  // ── QUESTION 5a ──
+  // ── QUESTION 5a (teacher_review — sketch) ──
   {
     "id": "y11a-3e-q5a",
     "type": "teacher_review",
@@ -351,30 +434,13 @@ export const Y11_CH3E_QUESTIONS = [
     "question": "Complete the square for \\( y = x^2 - 4x \\). Sketch the graph of the function, showing the vertex and the intercepts with the axes.",
     "a": "vertex: (2, -4); x-intercepts: 0, 4; y-intercept: 0.",
     "solutionSteps": [
-      {
-        "explanation": "Complete the square for \\( y = x^2 - 4x \\) by adding and subtracting \\( 4 \\).",
-        "workingOut": "y = (x^2 - 4x + 4) - 4 = (x - 2)^2 - 4"
-      },
-      {
-        "explanation": "Read the vertex from completed square form.",
-        "workingOut": "\\text{Vertex: } (2, -4)"
-      },
-      {
-        "explanation": "Find intercepts: \\( x^2 - 4x = 0 \\implies x(x - 4) = 0 \\implies x = 0, 4 \\).",
-        "workingOut": "\\text{Intercepts: } (0, 0), (4, 0)"
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [-2, 6, 6, -5],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 5.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x*x - 4*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [2, -4], {name: 'V(2,-4)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 0], {name: 'O', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [4, 0], {name: '4', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+      {"explanation": "완전제곱식 완성.", "workingOut": "y = (x^2-4x+4)-4 = (x-2)^2-4", "graphData": null},
+      {"explanation": "꼭짓점: \\((2, -4)\\).", "workingOut": "\\text{꼭짓점: } (2, -4)", "graphData": null},
+      {"explanation": "x절편: \\(x^2-4x = 0 \\implies x(x-4) = 0 \\implies x = 0, 4\\).", "workingOut": "\\text{절편: } (0, 0), (4, 0)", "graphData": null}
+    ]
   },
 
-  // ── QUESTION 5b ──
+  // ── QUESTION 5b (teacher_review) ──
   {
     "id": "y11a-3e-q5b",
     "type": "teacher_review",
@@ -384,30 +450,13 @@ export const Y11_CH3E_QUESTIONS = [
     "question": "Complete the square for \\( y = x^2 - 6x + 5 \\). Sketch the graph, showing the vertex and the intercepts.",
     "a": "vertex: (3, -4); x-intercepts: 1, 5; y-intercept: 5.",
     "solutionSteps": [
-      {
-        "explanation": "Complete the square: half of -6 is -3, square is 9.",
-        "workingOut": "y = (x^2 - 6x + 9) + 5 - 9 = (x - 3)^2 - 4"
-      },
-      {
-        "explanation": "Vertex is at \\( (3, -4) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "Find x-intercepts by factoring or setting \\( y = 0 \\).",
-        "workingOut": "(x - 1)(x - 5) = 0 \\implies x = 1, 5"
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [-2, 8, 7, -5],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x*x - 6*x + 5; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [3, -4], {name: 'V(3,-4)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 5], {name: '5', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [1, 0], {name: '1', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [5, 0], {name: '5', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+      {"explanation": "완전제곱식 완성: -6의 절반은 -3, 제곱은 9.", "workingOut": "y = (x^2-6x+9)+5-9 = (x-3)^2-4", "graphData": null},
+      {"explanation": "꼭짓점: \\((3, -4)\\).", "workingOut": "", "graphData": null},
+      {"explanation": "x절편: 인수분해.", "workingOut": "(x-1)(x-5) = 0 \\implies x = 1, 5", "graphData": null}
+    ]
   },
 
-  // ── QUESTION 5c ──
+  // ── QUESTION 5c (teacher_review) ──
   {
     "id": "y11a-3e-q5c",
     "type": "teacher_review",
@@ -417,22 +466,13 @@ export const Y11_CH3E_QUESTIONS = [
     "question": "Complete the square for \\( y = x^2 - 4x - 1 \\). Sketch the graph, showing the vertex and intercepts.",
     "a": "vertex: (2, -5); x-intercepts: 2 ± √5; y-intercept: -1.",
     "solutionSteps": [
-      {
-        "explanation": "Complete the square by adding and subtracting \\( 4 \\).",
-        "workingOut": "y = (x^2 - 4x + 4) - 1 - 4 = (x - 2)^2 - 5"
-      },
-      {
-        "explanation": "Vertex is \\( (2, -5) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For x-intercepts, solve \\( (x-2)^2 - 5 = 0 \\).",
-        "workingOut": "(x-2)^2 = 5 \\implies x = 2 \\pm \\sqrt{5}"
-      }
+      {"explanation": "완전제곱식 완성: 4 더하고 빼기.", "workingOut": "y = (x^2-4x+4)-1-4 = (x-2)^2-5", "graphData": null},
+      {"explanation": "꼭짓점: \\((2, -5)\\).", "workingOut": "", "graphData": null},
+      {"explanation": "x절편: \\((x-2)^2-5=0\\).", "workingOut": "(x-2)^2 = 5 \\implies x = 2 \\pm \\sqrt{5}", "graphData": null}
     ]
   },
 
-  // ── QUESTION 5d ──
+  // ── QUESTION 5d (teacher_review) ──
   {
     "id": "y11a-3e-q5d",
     "type": "teacher_review",
@@ -442,22 +482,13 @@ export const Y11_CH3E_QUESTIONS = [
     "question": "Complete the square for \\( y = x^2 + 6x + 2 \\). Sketch the graph, showing the vertex and intercepts.",
     "a": "vertex: (-3, -7); x-intercepts: -3 ± √7; y-intercept: 2.",
     "solutionSteps": [
-      {
-        "explanation": "Complete the square: half of 6 is 3, square is 9.",
-        "workingOut": "y = (x^2 + 6x + 9) + 2 - 9 = (x + 3)^2 - 7"
-      },
-      {
-        "explanation": "Vertex is at \\( (-3, -7) \\) and y-intercept is at \\( (0, 2) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "Solve for x-intercepts: \\( (x+3)^2 = 7 \\implies x = -3 \\pm \\sqrt{7} \\).",
-        "workingOut": ""
-      }
+      {"explanation": "6의 절반은 3, 제곱은 9.", "workingOut": "y = (x^2+6x+9)+2-9 = (x+3)^2-7", "graphData": null},
+      {"explanation": "꼭짓점: \\((-3, -7)\\), y절편: \\((0, 2)\\).", "workingOut": "", "graphData": null},
+      {"explanation": "x절편: \\((x+3)^2=7 \\implies x = -3 \\pm \\sqrt{7}\\).", "workingOut": "", "graphData": null}
     ]
   },
 
-  // ── QUESTION 5e ──
+  // ── QUESTION 5e (teacher_review) ──
   {
     "id": "y11a-3e-q5e",
     "type": "teacher_review",
@@ -467,26 +498,12 @@ export const Y11_CH3E_QUESTIONS = [
     "question": "Complete the square for \\( y = x^2 + 4x + 5 \\). Sketch the graph, showing the vertex and intercepts.",
     "a": "vertex: (-2, 1); no x-intercepts; y-intercept: 5.",
     "solutionSteps": [
-      {
-        "explanation": "Complete the square: half of 4 is 2, square is 4.",
-        "workingOut": "y = (x^2 + 4x + 4) + 5 - 4 = (x + 2)^2 + 1"
-      },
-      {
-        "explanation": "Vertex is at \\( (-2, 1) \\). Since vertex y-coordinate is positive and it opens up, there are no x-intercepts.",
-        "workingOut": ""
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [-5, 8, 2, -2],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x*x + 4*x + 5; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [-2, 1], {name: 'V(-2,1)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 5], {name: '5', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+      {"explanation": "4의 절반은 2, 제곱은 4.", "workingOut": "y = (x^2+4x+4)+5-4 = (x+2)^2+1", "graphData": null},
+      {"explanation": "꼭짓점: \\((-2, 1)\\). 꼭짓점 y값이 양수이고 위로 볼록이므로 x절편 없음.", "workingOut": "", "graphData": null}
+    ]
   },
 
-  // ── QUESTION 5f ──
+  // ── QUESTION 5f (teacher_review) ──
   {
     "id": "y11a-3e-q5f",
     "type": "teacher_review",
@@ -496,34 +513,36 @@ export const Y11_CH3E_QUESTIONS = [
     "question": "Complete the square for \\( y = x^2 - 5x + 7 \\). Sketch the graph, showing the vertex and intercepts.",
     "a": "vertex: (2.5, 0.75); no x-intercepts; y-intercept: 7.",
     "solutionSteps": [
-      {
-        "explanation": "Complete the square: half of -5 is -2.5, square is 6.25.",
-        "workingOut": "y = (x^2 - 5x + 6.25) + 7 - 6.25 = (x - 2.5)^2 + 0.75"
-      },
-      {
-        "explanation": "Read the vertex: \\( (2.5, 0.75) \\). Since \\( y \\ge 0.75 \\), there are no x-intercepts.",
-        "workingOut": ""
-      }
+      {"explanation": "-5의 절반은 -2.5, 제곱은 6.25.", "workingOut": "y = (x^2-5x+6.25)+7-6.25 = (x-2.5)^2+0.75", "graphData": null},
+      {"explanation": "꼭짓점: \\((2.5, 0.75)\\). \\(y \\geq 0.75\\)이므로 x절편 없음.", "workingOut": "", "graphData": null}
     ]
   },
 
   // ── QUESTION 6a ──
   {
     "id": "y11a-3e-q6a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Find the zeroes of the quadratic function \\( f(x) = x^2 - 6x + 8 \\) by completing the square. (Format: 'x = a, b' in ascending order)",
-    "a": "x = 2, 4",
+    "question": "Find the zeroes of \\( f(x) = x^2 - 6x + 8 \\) by completing the square.",
+    "opts": [
+      "\\(x = 2, 4\\)",
+      "\\(x = -2, -4\\)",
+      "\\(x = 3 \\pm \\sqrt{2}\\)",
+      "\\(x = 1, 8\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Complete the square and set equal to zero.",
-        "workingOut": "x^2 - 6x + 9 - 1 = 0 \\implies (x - 3)^2 = 1"
+        "explanation": "완전제곱식 완성하고 0으로 놓습니다.",
+        "workingOut": "x^2-6x+9-1 = 0 \\implies (x-3)^2 = 1",
+        "graphData": null
       },
       {
-        "explanation": "Take the square root of both sides and solve.",
-        "workingOut": "x - 3 = \\pm 1 \\implies x = 2, 4"
+        "explanation": "양변에 제곱근을 취하고 풀기.",
+        "workingOut": "x-3 = \\pm 1 \\implies x = 2, 4",
+        "graphData": null
       }
     ]
   },
@@ -531,20 +550,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 6b ──
   {
     "id": "y11a-3e-q6b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Find the zeroes of the quadratic function \\( f(x) = x^2 + 4x - 5 \\) by completing the square.",
-    "a": "x = -5, 1",
+    "question": "Find the zeroes of \\( f(x) = x^2 + 4x - 5 \\) by completing the square.",
+    "opts": [
+      "\\(x = -5, 1\\)",
+      "\\(x = 5, -1\\)",
+      "\\(x = -2 \\pm 3\\)",
+      "\\(x = 1, 5\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Complete the square and solve.",
-        "workingOut": "(x^2 + 4x + 4) - 9 = 0 \\implies (x + 2)^2 = 9"
+        "explanation": "완전제곱식 완성하고 풀기.",
+        "workingOut": "(x^2+4x+4)-9 = 0 \\implies (x+2)^2 = 9",
+        "graphData": null
       },
       {
-        "explanation": "Find roots.",
-        "workingOut": "x + 2 = \\pm 3 \\implies x = -5, 1"
+        "explanation": "근 구하기.",
+        "workingOut": "x+2 = \\pm 3 \\implies x = -5, 1",
+        "graphData": null
       }
     ]
   },
@@ -552,20 +579,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 6c ──
   {
     "id": "y11a-3e-q6c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Find the zeroes of the quadratic function \\( f(x) = x^2 - 3x - 4 \\) by completing the square.",
-    "a": "x = -1, 4",
+    "question": "Find the zeroes of \\( f(x) = x^2 - 3x - 4 \\) by completing the square.",
+    "opts": [
+      "\\(x = -1, 4\\)",
+      "\\(x = 1, -4\\)",
+      "\\(x = 3 \\pm 2.5\\)",
+      "\\(x = -3, 4\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Complete the square.",
-        "workingOut": "(x - 1.5)^2 - 6.25 = 0 \\implies (x - 1.5)^2 = 6.25"
+        "explanation": "완전제곱식 완성.",
+        "workingOut": "(x-1.5)^2-6.25 = 0 \\implies (x-1.5)^2 = 6.25",
+        "graphData": null
       },
       {
-        "explanation": "Take the square root and solve.",
-        "workingOut": "x - 1.5 = \\pm 2.5 \\implies x = -1, 4"
+        "explanation": "제곱근 취하고 풀기.",
+        "workingOut": "x-1.5 = \\pm 2.5 \\implies x = -1, 4",
+        "graphData": null
       }
     ]
   },
@@ -573,20 +608,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 7a ──
   {
     "id": "y11a-3e-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Complete the square of \\( f(x) = x^2 - 6x + 4 \\) in order to find its zeroes. (Format: 'x = a - \\sqrt{b}, a + \\sqrt{b}' or similar ascending format)",
-    "a": "x = 3 - \sqrt{5}, 3 + \sqrt{5}",
+    "question": "Complete the square of \\( f(x) = x^2 - 6x + 4 \\) to find its zeroes.",
+    "opts": [
+      "\\(x = 3 \\pm \\sqrt{5}\\)",
+      "\\(x = 3 \\pm \\sqrt{4}\\)",
+      "\\(x = -3 \\pm \\sqrt{5}\\)",
+      "\\(x = 6 \\pm \\sqrt{5}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Complete the square by adding and subtracting \\( 9 \\).",
-        "workingOut": "(x^2 - 6x + 9) - 5 = 0 \\implies (x - 3)^2 = 5"
+        "explanation": "9를 더하고 빼서 완전제곱식 완성.",
+        "workingOut": "(x^2-6x+9)-5 = 0 \\implies (x-3)^2 = 5",
+        "graphData": null
       },
       {
-        "explanation": "Solve for x.",
-        "workingOut": "x - 3 = \\pm \\sqrt{5} \\implies x = 3 \\pm \\sqrt{5}"
+        "explanation": "x에 대해 풀기.",
+        "workingOut": "x-3 = \\pm \\sqrt{5} \\implies x = 3 \\pm \\sqrt{5}",
+        "graphData": null
       }
     ]
   },
@@ -594,20 +637,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 7b ──
   {
     "id": "y11a-3e-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Complete the square of \\( f(x) = 2x^2 - 8x - 2 \\) in order to find its zeroes.",
-    "a": "x = 2 - \sqrt{5}, 2 + \sqrt{5}",
+    "question": "Complete the square of \\( f(x) = 2x^2 - 8x - 2 \\) to find its zeroes.",
+    "opts": [
+      "\\(x = 2 \\pm \\sqrt{5}\\)",
+      "\\(x = 2 \\pm \\sqrt{4}\\)",
+      "\\(x = -2 \\pm \\sqrt{5}\\)",
+      "\\(x = 4 \\pm \\sqrt{5}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Factor out 2 first, then complete the square inside.",
-        "workingOut": "2(x^2 - 4x - 1) = 0 \\implies 2[(x - 2)^2 - 5] = 0"
+        "explanation": "먼저 2로 나누고 완전제곱식 완성.",
+        "workingOut": "2(x^2-4x-1) = 0 \\implies 2[(x-2)^2-5] = 0",
+        "graphData": null
       },
       {
-        "explanation": "Solve for x.",
-        "workingOut": "(x - 2)^2 = 5 \\implies x = 2 \\pm \\sqrt{5}"
+        "explanation": "x에 대해 풀기.",
+        "workingOut": "(x-2)^2 = 5 \\implies x = 2 \\pm \\sqrt{5}",
+        "graphData": null
       }
     ]
   },
@@ -615,20 +666,28 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 7c ──
   {
     "id": "y11a-3e-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Complete the square of \\( f(x) = -x^2 - 4x + 2 \\) in order to find its zeroes.",
-    "a": "x = -2 - \sqrt{6}, -2 + \sqrt{6}",
+    "question": "Complete the square of \\( f(x) = -x^2 - 4x + 2 \\) to find its zeroes.",
+    "opts": [
+      "\\(x = -2 \\pm \\sqrt{6}\\)",
+      "\\(x = 2 \\pm \\sqrt{6}\\)",
+      "\\(x = -2 \\pm \\sqrt{2}\\)",
+      "\\(x = -4 \\pm \\sqrt{6}\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Factor out -1 and complete the square.",
-        "workingOut": "-(x^2 + 4x - 2) = 0 \\implies -[(x + 2)^2 - 6] = 0"
+        "explanation": "-1을 묶고 완전제곱식 완성.",
+        "workingOut": "-(x^2+4x-2) = 0 \\implies -[(x+2)^2-6] = 0",
+        "graphData": null
       },
       {
-        "explanation": "Solve for the roots.",
-        "workingOut": "(x + 2)^2 = 6 \\implies x = -2 \\pm \\sqrt{6}"
+        "explanation": "근 구하기.",
+        "workingOut": "(x+2)^2 = 6 \\implies x = -2 \\pm \\sqrt{6}",
+        "graphData": null
       }
     ]
   },
@@ -636,132 +695,139 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 8a ──
   {
     "id": "y11a-3e-q8a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Find the equation of the quadratic function sketched below in completed square form. The coefficient of \\( x^2 \\) is either 1 or -1. The parabola has vertex \\( (2, 3) \\) and \\( y \\)-intercept at 7. (Format: 'y = (x - h)^2 + k')",
-    "a": "y = (x - 2)^2 + 3",
+    "question": "The parabola has vertex \\( (2, 3) \\) and \\( y \\)-intercept at 7. The coefficient of \\( x^2 \\) is 1. Find its equation in completed square form.",
+    "opts": [
+      "\\(y = (x - 2)^2 + 3\\)",
+      "\\(y = (x + 2)^2 + 3\\)",
+      "\\(y = -(x - 2)^2 + 3\\)",
+      "\\(y = (x - 2)^2 - 3\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Use the vertex \\( (2, 3) \\) in the vertex form template with positive concavity.",
-        "workingOut": "y = (x - 2)^2 + 3"
+        "explanation": "꼭짓점 \\((2, 3)\\)과 양의 오목성을 이용하여 꼭짓점 형태를 씁니다.",
+        "workingOut": "y = (x-2)^2+3",
+        "graphData": null
       },
       {
-        "explanation": "Verify the y-intercept by putting \\( x = 0 \\).",
-        "workingOut": "y(0) = (0 - 2)^2 + 3 = 7 \\implies \\text{Matches!}"
+        "explanation": "y절편 확인: x = 0 대입.",
+        "workingOut": "y(0) = (0-2)^2+3 = 7 \\implies \\text{일치!}",
+        "graphData": null
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [-2, 9, 6, -1],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,8.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 8.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return Math.pow(x-2,2)+3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [2, 3], {name: '(2,3)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 7], {name: '7', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
 
   // ── QUESTION 8b ──
   {
     "id": "y11a-3e-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Find the equation of the quadratic function sketched below in completed square form. The coefficient of \\( x^2 \\) is either 1 or -1. The parabola has vertex \\( (-1, -4) \\) and \\( y \\)-intercept at -3. (Format: 'y = (x + h)^2 - k')",
-    "a": "y = (x + 1)^2 - 4",
+    "question": "The parabola has vertex \\( (-1, -4) \\) and \\( y \\)-intercept at \\(-3\\). The coefficient of \\( x^2 \\) is 1. Find its equation in completed square form.",
+    "opts": [
+      "\\(y = (x + 1)^2 - 4\\)",
+      "\\(y = (x - 1)^2 - 4\\)",
+      "\\(y = -(x + 1)^2 - 4\\)",
+      "\\(y = (x + 1)^2 + 4\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Substitute the vertex \\( (-1, -4) \\) into the vertex form template.",
-        "workingOut": "y = (x + 1)^2 - 4"
+        "explanation": "꼭짓점 \\((-1, -4)\\)을 꼭짓점 형태에 대입.",
+        "workingOut": "y = (x+1)^2-4",
+        "graphData": null
       },
       {
-        "explanation": "Verify using the y-intercept.",
-        "workingOut": "y(0) = (0 + 1)^2 - 4 = -3"
+        "explanation": "y절편 확인.",
+        "workingOut": "y(0) = (0+1)^2-4 = -3 \\implies \\text{일치!}",
+        "graphData": null
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [-4, 3, 3, -6],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return Math.pow(x+1,2)-4; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [-1, -4], {name: '(-1,-4)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, -3], {name: '-3', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
 
   // ── QUESTION 8c ──
   {
     "id": "y11a-3e-q8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Find the equation of the quadratic function sketched below in completed square form. The coefficient of \\( x^2 \\) is either 1 or -1. The parabola has vertex \\( (2, 5) \\) and \\( y \\)-intercept at 1. (Format: 'y = -(x - h)^2 + k')",
-    "a": "y = -(x - 2)^2 + 5",
+    "question": "The parabola has vertex \\( (2, 5) \\) and \\( y \\)-intercept at 1. The coefficient of \\( x^2 \\) is \\(-1\\). Find its equation in completed square form.",
+    "opts": [
+      "\\(y = -(x - 2)^2 + 5\\)",
+      "\\(y = (x - 2)^2 + 5\\)",
+      "\\(y = -(x + 2)^2 + 5\\)",
+      "\\(y = -(x - 2)^2 - 5\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Since the parabola is concave down with vertex at \\( (2, 5) \\), write: ",
-        "workingOut": "y = -(x - 2)^2 + 5"
+        "explanation": "꼭짓점 \\((2, 5)\\)과 아래로 볼록성으로 꼭짓점 형태 작성.",
+        "workingOut": "y = -(x-2)^2+5",
+        "graphData": null
       },
       {
-        "explanation": "Verify the y-intercept.",
-        "workingOut": "y(0) = -(0 - 2)^2 + 5 = -4 + 5 = 1"
+        "explanation": "y절편 확인.",
+        "workingOut": "y(0) = -(0-2)^2+5 = -4+5 = 1 \\implies \\text{일치!}",
+        "graphData": null
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [-2, 7, 6, -3],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 6.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -Math.pow(x-2,2)+5; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [2, 5], {name: '(2,5)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 1], {name: '1', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
 
   // ── QUESTION 8d ──
   {
     "id": "y11a-3e-q8d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Find the equation of the quadratic function sketched below in completed square form. The coefficient of \\( x^2 \\) is either 1 or -1. The parabola has vertex \\( (3, -2) \\) and \\( y \\)-intercept at -11. (Format: 'y = -(x - h)^2 - k')",
-    "a": "y = -(x - 3)^2 - 2",
+    "question": "The parabola has vertex \\( (3, -2) \\) and \\( y \\)-intercept at \\(-11\\). The coefficient of \\( x^2 \\) is \\(-1\\). Find its equation in completed square form.",
+    "opts": [
+      "\\(y = -(x - 3)^2 - 2\\)",
+      "\\(y = (x - 3)^2 - 2\\)",
+      "\\(y = -(x + 3)^2 - 2\\)",
+      "\\(y = -(x - 3)^2 + 2\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Using the concave-down vertex form template with vertex \\( (3, -2) \\):",
-        "workingOut": "y = -(x - 3)^2 - 2"
+        "explanation": "꼭짓점 \\((3, -2)\\)과 아래로 볼록성으로 꼭짓점 형태 작성.",
+        "workingOut": "y = -(x-3)^2-2",
+        "graphData": null
       },
       {
-        "explanation": "Verify y-intercept: ",
-        "workingOut": "y(0) = -(0 - 3)^2 - 2 = -9 - 2 = -11"
+        "explanation": "y절편 확인.",
+        "workingOut": "y(0) = -(0-3)^2-2 = -9-2 = -11 \\implies \\text{일치!}",
+        "graphData": null
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [-2, 2, 7, -13],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-12.5], [0,1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 1.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -Math.pow(x-3,2)-2; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [3, -2], {name: '(3,-2)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, -11], {name: '-11', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
 
   // ── QUESTION 9a ──
   {
     "id": "y11a-3e-q9a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Write down the equation of the monic quadratic function with vertex at \\( (3, 4) \\). (Format: 'y = (x - h)^2 + k')",
-    "a": "y = (x - 3)^2 + 4",
+    "question": "Write down the equation of the monic quadratic function with vertex at \\( (3, 4) \\).",
+    "opts": [
+      "\\(y = (x - 3)^2 + 4\\)",
+      "\\(y = (x + 3)^2 + 4\\)",
+      "\\(y = (x - 3)^2 - 4\\)",
+      "\\(y = (x + 3)^2 - 4\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "A monic quadratic function in vertex form is \\( y = (x - h)^2 + k \\). Substitute \\( h = 3, k = 4 \\).",
-        "workingOut": "y = (x - 3)^2 + 4"
+        "explanation": "수직 이차함수의 꼭짓점 형태: \\(y = (x-h)^2+k\\). h = 3, k = 4 대입.",
+        "workingOut": "y = (x-3)^2+4",
+        "graphData": null
       }
     ]
   },
@@ -769,16 +835,23 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 9b ──
   {
     "id": "y11a-3e-q9b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Write down the equation of the monic quadratic function with vertex at \\( (0, -5) \\). (Format: 'y = x^2 - k')",
-    "a": "y = x^2 - 5",
+    "question": "Write down the equation of the monic quadratic function with vertex at \\( (0, -5) \\).",
+    "opts": [
+      "\\(y = x^2 - 5\\)",
+      "\\(y = x^2 + 5\\)",
+      "\\(y = (x - 5)^2\\)",
+      "\\(y = (x + 5)^2\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( h = 0, k = -5 \\) into the vertex form formula.",
-        "workingOut": "y = (x - 0)^2 - 5 = x^2 - 5"
+        "explanation": "h = 0, k = -5를 꼭짓점 형태에 대입.",
+        "workingOut": "y = (x-0)^2-5 = x^2-5",
+        "graphData": null
       }
     ]
   },
@@ -786,16 +859,23 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 9c ──
   {
     "id": "y11a-3e-q9c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Write down the equation of the monic quadratic function with vertex at \\( (-2, 6) \\). (Format: 'y = (x + h)^2 + k')",
-    "a": "y = (x + 2)^2 + 6",
+    "question": "Write down the equation of the monic quadratic function with vertex at \\( (-2, 6) \\).",
+    "opts": [
+      "\\(y = (x + 2)^2 + 6\\)",
+      "\\(y = (x - 2)^2 + 6\\)",
+      "\\(y = (x + 2)^2 - 6\\)",
+      "\\(y = (x - 2)^2 - 6\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( h = -2, k = 6 \\) into the vertex form formula.",
-        "workingOut": "y = (x - (-2))^2 + 6 = (x + 2)^2 + 6"
+        "explanation": "h = -2, k = 6를 꼭짓점 형태에 대입.",
+        "workingOut": "y = (x-(-2))^2+6 = (x+2)^2+6",
+        "graphData": null
       }
     ]
   },
@@ -803,16 +883,23 @@ export const Y11_CH3E_QUESTIONS = [
   // ── QUESTION 9d ──
   {
     "id": "y11a-3e-q9d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Completing the square and the graph",
-    "question": "Write down the equation of the monic quadratic function with vertex at \\( (4, -9) \\). (Format: 'y = (x - h)^2 - k')",
-    "a": "y = (x - 4)^2 - 9",
+    "question": "Write down the equation of the monic quadratic function with vertex at \\( (4, -9) \\).",
+    "opts": [
+      "\\(y = (x - 4)^2 - 9\\)",
+      "\\(y = (x + 4)^2 - 9\\)",
+      "\\(y = (x - 4)^2 + 9\\)",
+      "\\(y = (x + 4)^2 + 9\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( h = 4, k = -9 \\) into the vertex form template.",
-        "workingOut": "y = (x - 4)^2 - 9"
+        "explanation": "h = 4, k = -9를 꼭짓점 형태에 대입.",
+        "workingOut": "y = (x-4)^2-9",
+        "graphData": null
       }
     ]
   },
@@ -834,21 +921,27 @@ export const Y11_CH3E_QUESTIONS = [
       },
       {
         "id": "y11a-3e-q10b",
-        "type": "short_answer",
-        "question": "b) Which point do all these parabolas pass through? (Format: '(x, y)')",
-        "a": "(2, -3)"
+        "type": "multiple_choice",
+        "question": "b) Which point do all these parabolas pass through?",
+        "opts": [
+          "\\((2, -3)\\)",
+          "\\((0, -3)\\)",
+          "\\((2, 0)\\)",
+          "\\((0, 0)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q10c",
         "type": "multiple_choice",
         "question": "c) For which values of \\( a \\) does the parabola have \\( x \\)-intercepts?",
         "opts": [
-          "a > 0",
-          "a < 0",
-          "a = 0",
+          "\\(a > 0\\)",
+          "\\(a < 0\\)",
+          "\\(a = 0\\)",
           "For all values of a"
         ],
-        "a": "a > 0"
+        "a": 0
       },
       {
         "id": "y11a-3e-q10d",
@@ -859,25 +952,19 @@ export const Y11_CH3E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Regardless of \\( a \\), substituting \\( x = 2 \\) into \\( y = a(x - 2)^2 - 3 \\) results in \\( y = -3 \\). Thus, all curves share the vertex \\( (2, -3) \\).",
-        "workingOut": ""
+        "explanation": "x = 2를 대입하면 a에 관계없이 y = -3. 따라서 모든 곡선이 꼭짓점 \\((2, -3)\\)을 공유합니다.",
+        "workingOut": "",
+        "graphData": null
       },
       {
-        "explanation": "Since the vertex is below the x-axis, a parabola opening upwards (\\( a > 0 \\)) must cross the x-axis to extend to infinity, creating two intercepts. A parabola opening downwards (\\( a < 0 \\)) will extend further down and never cross it.",
-        "workingOut": ""
+        "explanation": "꼭짓점이 x축 아래이므로 위로 볼록 (a > 0)이면 x절편 존재, 아래로 볼록 (a < 0)이면 x절편 없음.",
+        "workingOut": "",
+        "graphData": null
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 400,
-        "height": 300,
-        "boundingbox": [-1, 7, 5, -9],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-8.5], [0,6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 6.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 2*Math.pow(x-2,2)-3; }], {strokeColor: '#4f46e5', strokeWidth: 1.2});\nboard.create('functiongraph', [function(x){ return Math.pow(x-2,2)-3; }], {strokeColor: '#8b5cf6', strokeWidth: 1.2});\nboard.create('functiongraph', [function(x){ return -Math.pow(x-2,2)-3; }], {strokeColor: '#10b981', strokeWidth: 1.2});\nboard.create('functiongraph', [function(x){ return -2*Math.pow(x-2,2)-3; }], {strokeColor: '#f43f5e', strokeWidth: 1.2});\nboard.create('point', [2, -3], {name: '(2,-3)', visible: true, strokeColor: 'black', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
 
-  // ── QUESTION 11 ──
+  // ── QUESTION 11 (teacher_review — proof) ──
   {
     "id": "y11a-3e-q11",
     "type": "teacher_review",
@@ -906,18 +993,9 @@ export const Y11_CH3E_QUESTIONS = [
       }
     ],
     "solutionSteps": [
-      {
-        "explanation": "Divide by a: \\( \\frac{y}{a} = x^2 + \\frac{b}{a}x + \\frac{c}{a} \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "Add and subtract \\( \\left(\\frac{b}{2a}\\right)^2 = \\frac{b^2}{4a^2} \\).",
-        "workingOut": "\\frac{y}{a} = \\left(x^2 + \\frac{b}{a}x + \\frac{b^2}{4a^2}\\right) + \\frac{c}{a} - \\frac{b^2}{4a^2} = \\left(x + \\frac{b}{2a}\\right)^2 - \\frac{b^2 - 4ac}{4a^2}"
-      },
-      {
-        "explanation": "Multiply by a to get \\( y = a\\left(x + \\frac{b}{2a}\\right)^2 - \\frac{b^2 - 4ac}{4a} \\). The vertex is at \\( x = -\\frac{b}{2a} \\).",
-        "workingOut": ""
-      }
+      {"explanation": "a로 나누기: \\(\\frac{y}{a} = x^2 + \\frac{b}{a}x + \\frac{c}{a}\\).", "workingOut": "", "graphData": null},
+      {"explanation": "\\(\\left(\\frac{b}{2a}\\right)^2 = \\frac{b^2}{4a^2}\\)를 더하고 빼기.", "workingOut": "\\frac{y}{a} = \\left(x + \\frac{b}{2a}\\right)^2 - \\frac{b^2-4ac}{4a^2}", "graphData": null},
+      {"explanation": "a를 곱하면 꼭짓점이 \\(x = -\\frac{b}{2a}\\).", "workingOut": "", "graphData": null}
     ]
   },
 
@@ -932,40 +1010,49 @@ export const Y11_CH3E_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3e-q12a",
-        "type": "short_answer",
-        "question": "a) For \\( y = 3(x - 2)^2 - 6 \\), find vertex and number of x-intercepts. (Format: 'V(h, k), n intercepts')",
-        "a": "V(2, -6), 2 intercepts"
+        "type": "multiple_choice",
+        "question": "a) For \\( y = 3(x - 2)^2 - 6 \\), how many x-intercepts does the parabola have?",
+        "opts": [
+          "\\(V(2, -6)\\), 2 intercepts",
+          "\\(V(2, -6)\\), 0 intercepts",
+          "\\(V(2, 6)\\), 2 intercepts",
+          "\\(V(-2, -6)\\), 1 intercept"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q12b",
-        "type": "short_answer",
-        "question": "b) For \\( y = -2(x + 3)^2 - 4 \\), find vertex and number of x-intercepts.",
-        "a": "V(-3, -4), 0 intercepts"
+        "type": "multiple_choice",
+        "question": "b) For \\( y = -2(x + 3)^2 - 4 \\), how many x-intercepts does the parabola have?",
+        "opts": [
+          "\\(V(-3, -4)\\), 0 intercepts",
+          "\\(V(-3, -4)\\), 2 intercepts",
+          "\\(V(3, -4)\\), 0 intercepts",
+          "\\(V(-3, 4)\\), 1 intercept"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q12c",
-        "type": "short_answer",
-        "question": "c) For \\( y = 5(x - 1)^2 \\), find vertex and number of x-intercepts.",
-        "a": "V(1, 0), 1 intercept"
+        "type": "multiple_choice",
+        "question": "c) For \\( y = 5(x - 1)^2 \\), how many x-intercepts does the parabola have?",
+        "opts": [
+          "\\(V(1, 0)\\), 1 intercept",
+          "\\(V(1, 0)\\), 2 intercepts",
+          "\\(V(-1, 0)\\), 1 intercept",
+          "\\(V(1, 0)\\), 0 intercepts"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
-      {
-        "explanation": "For part a, \\( V(2, -6) \\) is below the x-axis, and since \\( a = 3 > 0 \\) it is concave up, meaning it crosses the x-axis twice.",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b, \\( V(-3, -4) \\) is below the x-axis, and since \\( a = -2 < 0 \\) it is concave down, meaning it never reaches the x-axis.",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c, \\( V(1, 0) \\) lies exactly on the x-axis, meaning the vertex is the single x-intercept.",
-        "workingOut": ""
-      }
+      {"explanation": "a) \\(V(2, -6)\\)이 x축 아래, a = 3 > 0 위로 볼록 → 두 번 교차.", "workingOut": "", "graphData": null},
+      {"explanation": "b) \\(V(-3, -4)\\)이 x축 아래, a = -2 < 0 아래로 볼록 → 교차 없음.", "workingOut": "", "graphData": null},
+      {"explanation": "c) \\(V(1, 0)\\)이 x축 위에 정확히 → 꼭짓점이 유일한 x절편.", "workingOut": "", "graphData": null}
     ]
   },
 
-  // ── QUESTION 13 ──
+  // ── QUESTION 13 (teacher_review) ──
   {
     "id": "y11a-3e-q13",
     "type": "teacher_review",
@@ -994,22 +1081,13 @@ export const Y11_CH3E_QUESTIONS = [
       }
     ],
     "solutionSteps": [
-      {
-        "explanation": "For part a: \\( y = -(x^2 - 6x + 9) - 4 + 9 = -(x - 3)^2 + 5 \\). Vertex is \\( (3, 5) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b: \\( y = 2(x^2 - 4x + 4) + 10 - 8 = 2(x - 2)^2 + 2 \\). Vertex is \\( (2, 2) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c: \\( y = 2(x^2 + 2x + 1) - 2 - 2 = 2(x + 1)^2 - 4 \\). Vertex is \\( (-1, -4) \\).",
-        "workingOut": ""
-      }
+      {"explanation": "a) \\(y = -(x^2-6x+9)-4+9 = -(x-3)^2+5\\). 꼭짓점 \\((3, 5)\\).", "workingOut": "", "graphData": null},
+      {"explanation": "b) \\(y = 2(x^2-4x+4)+10-8 = 2(x-2)^2+2\\). 꼭짓점 \\((2, 2)\\).", "workingOut": "", "graphData": null},
+      {"explanation": "c) \\(y = 2(x^2+2x+1)-2-2 = 2(x+1)^2-4\\). 꼭짓점 \\((-1, -4)\\).", "workingOut": "", "graphData": null}
     ]
   },
 
-  // ── QUESTION 14 ──
+  // ── QUESTION 14 (subQuestions — MC for surds) ──
   {
     "id": "y11a-3e-q14",
     "type": "teacher_review",
@@ -1020,36 +1098,45 @@ export const Y11_CH3E_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3e-q14a",
-        "type": "short_answer",
-        "question": "a) Write \\( f(x) = x^2 + 4x - 2 \\) in factored form using surds. (Format: '(x + a - \\sqrt{b})(x + a + \\sqrt{b})')",
-        "a": "(x + 2 - \sqrt{6})(x + 2 + \sqrt{6})"
+        "type": "multiple_choice",
+        "question": "a) Write \\( f(x) = x^2 + 4x - 2 \\) in factored form using surds.",
+        "opts": [
+          "\\((x + 2 - \\sqrt{6})(x + 2 + \\sqrt{6})\\)",
+          "\\((x - 2 - \\sqrt{6})(x - 2 + \\sqrt{6})\\)",
+          "\\((x + 2 - \\sqrt{2})(x + 2 + \\sqrt{2})\\)",
+          "\\((x + 4 - \\sqrt{6})(x + 4 + \\sqrt{6})\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q14b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) Write \\( f(x) = x^2 - 6x + 2 \\) in factored form using surds.",
-        "a": "(x - 3 - \sqrt{7})(x - 3 + \sqrt{7})"
+        "opts": [
+          "\\((x - 3 - \\sqrt{7})(x - 3 + \\sqrt{7})\\)",
+          "\\((x + 3 - \\sqrt{7})(x + 3 + \\sqrt{7})\\)",
+          "\\((x - 3 - \\sqrt{6})(x - 3 + \\sqrt{6})\\)",
+          "\\((x - 6 - \\sqrt{7})(x - 6 + \\sqrt{7})\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q14c",
-        "type": "short_answer",
-        "question": "c) Write \\( f(x) = -x^2 - 4x + 3 \\) in factored form using surds. (Format: '(\\sqrt{a} - x - b)(\\sqrt{a} + x + b)')",
-        "a": "(\sqrt{7} - x - 2)(\sqrt{7} + x + 2)"
+        "type": "multiple_choice",
+        "question": "c) Write \\( f(x) = -x^2 - 4x + 3 \\) in factored form using surds.",
+        "opts": [
+          "\\((\\sqrt{7} - x - 2)(\\sqrt{7} + x + 2)\\)",
+          "\\((\\sqrt{3} - x - 2)(\\sqrt{3} + x + 2)\\)",
+          "\\((\\sqrt{7} - x + 2)(\\sqrt{7} + x - 2)\\)",
+          "\\(-(x + 2 - \\sqrt{7})(x + 2 + \\sqrt{7})\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
-      {
-        "explanation": "For part a, complete the square: \\( (x+2)^2 - 6 \\). Use difference of squares: \\( (x+2)^2 - (\\sqrt{6})^2 = (x + 2 - \\sqrt{6})(x + 2 + \\sqrt{6}) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b, complete the square: \\( (x-3)^2 - 7 \\). Write in factored form: \\( (x - 3 - \\sqrt{7})(x - 3 + \\sqrt{7}) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c, rewrite as \\( 7 - (x+2)^2 = (\\sqrt{7})^2 - (x+2)^2 \\). Factor using difference of squares: \\( (\\sqrt{7} - (x+2))(\\sqrt{7} + (x+2)) = (\\sqrt{7} - x - 2)(\\sqrt{7} + x + 2) \\).",
-        "workingOut": ""
-      }
+      {"explanation": "a) 완전제곱식: \\((x+2)^2-6\\). 차이의 제곱: \\((x+2-\\sqrt{6})(x+2+\\sqrt{6})\\).", "workingOut": "", "graphData": null},
+      {"explanation": "b) 완전제곱식: \\((x-3)^2-7\\). 인수: \\((x-3-\\sqrt{7})(x-3+\\sqrt{7})\\).", "workingOut": "", "graphData": null},
+      {"explanation": "c) \\(7-(x+2)^2 = (\\sqrt{7})^2-(x+2)^2 = (\\sqrt{7}-(x+2))(\\sqrt{7}+(x+2))\\).", "workingOut": "", "graphData": null}
     ]
   },
 
@@ -1064,46 +1151,58 @@ export const Y11_CH3E_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3e-q15a",
-        "type": "short_answer",
-        "question": "a) Find the equation if the quadratic is monic. (Format: 'y = (x + h)^2 + k')",
-        "a": "y = (x + 3)^2 + 4"
+        "type": "multiple_choice",
+        "question": "a) Find the equation if the quadratic is monic.",
+        "opts": [
+          "\\(y = (x + 3)^2 + 4\\)",
+          "\\(y = (x - 3)^2 + 4\\)",
+          "\\(y = -(x + 3)^2 + 4\\)",
+          "\\(y = (x + 3)^2 - 4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q15b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) Find the equation if the coefficient of \\( x^2 \\) is 2.",
-        "a": "y = 2(x + 3)^2 + 4"
+        "opts": [
+          "\\(y = 2(x + 3)^2 + 4\\)",
+          "\\(y = (x + 3)^2 + 4\\)",
+          "\\(y = -2(x + 3)^2 + 4\\)",
+          "\\(y = 2(x - 3)^2 + 4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q15c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) Find the equation if the \\( y \\)-intercept is 22.",
-        "a": "y = 2(x + 3)^2 + 4"
+        "opts": [
+          "\\(y = 2(x + 3)^2 + 4\\)",
+          "\\(y = 18(x + 3)^2 + 4\\)",
+          "\\(y = (x + 3)^2 + 4\\)",
+          "\\(y = -2(x + 3)^2 + 4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3e-q15d",
-        "type": "short_answer",
-        "question": "d) Find the equation if the curve passes through the origin. (Format: 'y = a(x + h)^2 + k' where a is a fraction)",
-        "a": "y = -4/9(x + 3)^2 + 4"
+        "type": "multiple_choice",
+        "question": "d) Find the equation if the curve passes through the origin.",
+        "opts": [
+          "\\(y = -\\frac{4}{9}(x + 3)^2 + 4\\)",
+          "\\(y = \\frac{4}{9}(x + 3)^2 + 4\\)",
+          "\\(y = -\\frac{9}{4}(x + 3)^2 + 4\\)",
+          "\\(y = -(x + 3)^2 + 4\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
-      {
-        "explanation": "For part a, monic means \\( a = 1 \\), so \\( y = (x+3)^2 + 4 \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b, coefficient of \\( x^2 \\) is \\( a = 2 \\), so \\( y = 2(x+3)^2 + 4 \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c, y-intercept is 22: \\( 22 = a(0+3)^2 + 4 \\implies 18 = 9a \\implies a = 2 \\), so \\( y = 2(x+3)^2 + 4 \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part d, passes through origin \\( (0, 0) \\): \\( 0 = a(0+3)^2 + 4 \\implies 9a = -4 \\implies a = -\\frac{4}{9} \\), so \\( y = -\\frac{4}{9}(x+3)^2 + 4 \\).",
-        "workingOut": ""
-      }
+      {"explanation": "a) 단위 이차함수: a = 1이므로 \\(y = (x+3)^2+4\\).", "workingOut": "", "graphData": null},
+      {"explanation": "b) x² 계수가 2이므로 a = 2, \\(y = 2(x+3)^2+4\\).", "workingOut": "", "graphData": null},
+      {"explanation": "c) y절편 22: \\(22 = a(0+3)^2+4 \\implies 18 = 9a \\implies a = 2\\), \\(y = 2(x+3)^2+4\\).", "workingOut": "", "graphData": null},
+      {"explanation": "d) 원점 통과 \\((0,0)\\): \\(0 = a(0+3)^2+4 \\implies 9a = -4 \\implies a = -\\frac{4}{9}\\), \\(y = -\\frac{4}{9}(x+3)^2+4\\).", "workingOut": "", "graphData": null}
     ]
   }
 ];

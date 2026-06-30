@@ -16,7 +16,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Not a function",
           "Is a function"
         ],
-        "a": "Not a function"
+        "a": 0
       },
       {
         "id": "y11a-3j-q1b",
@@ -26,7 +26,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Is a function",
           "Not a function"
         ],
-        "a": "Is a function"
+        "a": 0
       },
       {
         "id": "y11a-3j-q1c",
@@ -36,7 +36,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Not a function",
           "Is a function"
         ],
-        "a": "Not a function"
+        "a": 0
       },
       {
         "id": "y11a-3j-q1d",
@@ -46,7 +46,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Is a function",
           "Not a function"
         ],
-        "a": "Is a function"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -92,7 +92,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Domain: \\( x \\ge 0 \\), Range: \\( y \\ge 0 \\)",
           "Domain: \\( -9 \\le x \\le 9 \\), Range: \\( -9 \\le y \\le 9 \\)"
         ],
-        "a": "Domain: \\( -3 \\le x \\le 3 \\), Range: \\( -3 \\le y \\le 3 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q2b",
@@ -104,7 +104,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Domain: all real x, Range: \\( y \\ge 0 \\)",
           "Domain: \\( -3 \\le x \\le 3 \\), Range: all real y"
         ],
-        "a": "Domain: all real x, Range: all real y"
+        "a": 0
       },
       {
         "id": "y11a-3j-q2c",
@@ -116,7 +116,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Domain: \\( x \\ge 0 \\), Range: \\( y \\ge 0 \\)",
           "Domain: all real x, Range: all real y"
         ],
-        "a": "Domain: \\( x \\ge 0 \\), Range: all real y"
+        "a": 0
       },
       {
         "id": "y11a-3j-q2d",
@@ -128,7 +128,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Domain: all real x, Range: all real y",
           "Domain: \\( x \\ge 0 \\), Range: \\( y = 2 \\)"
         ],
-        "a": "Domain: all real x, Range: \\( y = 2 \\)"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -166,15 +166,27 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q3a",
-        "type": "short_answer",
-        "question": "a) For the function \\( f(x) = x^2 + 5x \\), find the values of \\( f(3) \\) and \\( f(-2) \\). (Format: 'f(3) = A, f(-2) = B')",
-        "a": "f(3) = 24, f(-2) = -6"
+        "type": "multiple_choice",
+        "question": "a) For the function \\( f(x) = x^2 + 5x \\), find the values of \\( f(3) \\) and \\( f(-2) \\).",
+        "opts": [
+          "\\(f(3) = 24, f(-2) = -6\\)",
+          "\\(f(3) = 24, f(-2) = 6\\)",
+          "\\(f(3) = 15, f(-2) = -14\\)",
+          "\\(f(3) = 9, f(-2) = -6\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q3b",
-        "type": "short_answer",
-        "question": "b) For the function \\( f(x) = x^3 - 2x^2 + 4 \\), find the values of \\( f(3) \\) and \\( f(-2) \\). (Format: 'f(3) = A, f(-2) = B')",
-        "a": "f(3) = 13, f(-2) = -12"
+        "type": "multiple_choice",
+        "question": "b) For the function \\( f(x) = x^3 - 2x^2 + 4 \\), find the values of \\( f(3) \\) and \\( f(-2) \\).",
+        "opts": [
+          "\\(f(3) = 13, f(-2) = -12\\)",
+          "\\(f(3) = 13, f(-2) = -4\\)",
+          "\\(f(3) = 49, f(-2) = -12\\)",
+          "\\(f(3) = 13, f(-2) = 12\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -212,7 +224,7 @@ export const Y11_CH3J_QUESTIONS = [
           "All real \\( x \\)",
           "\\( x \\ge 5 \\)"
         ],
-        "a": "All real \\( x \\) except \\( x = 5 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q4b",
@@ -224,7 +236,7 @@ export const Y11_CH3J_QUESTIONS = [
           "All real \\( x \\) except \\( x = 3 \\)",
           "\\( x \\le 3 \\)"
         ],
-        "a": "\\( x \\ge 3 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q4c",
@@ -236,7 +248,7 @@ export const Y11_CH3J_QUESTIONS = [
           "\\( x \\ge 2.5 \\)",
           "All real \\( x \\) except \\( x = -2.5 \\)"
         ],
-        "a": "\\( x \\ge -2.5 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q4d",
@@ -248,7 +260,7 @@ export const Y11_CH3J_QUESTIONS = [
           "\\( x > 4 \\)",
           "All real \\( x \\) except \\( x = 4 \\)"
         ],
-        "a": "\\( x < 4 \\)"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -286,15 +298,27 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q5a",
-        "type": "short_answer",
-        "question": "a) For \\( F(x) = 3x + 2 \\), write down the expressions for \\( F(a) - 1 \\) and \\( F(a-1) \\). (Format: 'F(a)-1 = X, F(a-1) = Y')",
-        "a": "F(a)-1 = 3a+1, F(a-1) = 3a-1"
+        "type": "multiple_choice",
+        "question": "a) For \\( F(x) = 3x + 2 \\), find the expressions for \\( F(a) - 1 \\) and \\( F(a-1) \\).",
+        "opts": [
+          "\\(F(a)-1 = 3a+1, F(a-1) = 3a-1\\)",
+          "\\(F(a)-1 = 3a+1, F(a-1) = 3a+1\\)",
+          "\\(F(a)-1 = 3a-1, F(a-1) = 3a-1\\)",
+          "\\(F(a)-1 = 3a+2, F(a-1) = 3a-3\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q5b",
-        "type": "short_answer",
-        "question": "b) For \\( F(x) = x^2 - 4x - 5 \\), write down the expressions for \\( F(a) - 1 \\) and \\( F(a-1) \\). (Format: 'F(a)-1 = X, F(a-1) = Y')",
-        "a": "F(a)-1 = a^2-4a-6, F(a-1) = a^2-6a"
+        "type": "multiple_choice",
+        "question": "b) For \\( F(x) = x^2 - 4x - 5 \\), find the expressions for \\( F(a) - 1 \\) and \\( F(a-1) \\).",
+        "opts": [
+          "\\(F(a)-1 = a^2-4a-6, F(a-1) = a^2-6a\\)",
+          "\\(F(a)-1 = a^2-4a-6, F(a-1) = a^2-4a-6\\)",
+          "\\(F(a)-1 = a^2-4a-5, F(a-1) = a^2-6a+5\\)",
+          "\\(F(a)-1 = a^2-4a-6, F(a-1) = a^2-6a-5\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -324,15 +348,27 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q6a",
-        "type": "short_answer",
-        "question": "a) For the line \\( y = 3x + 6 \\), find the intercepts. (Format: 'x-intercept: A, y-intercept: B')",
-        "a": "x-intercept: -2, y-intercept: 6"
+        "type": "multiple_choice",
+        "question": "a) For the line \\( y = 3x + 6 \\), find the intercepts.",
+        "opts": [
+          "x-intercept: \\(-2\\), y-intercept: \\(6\\)",
+          "x-intercept: \\(2\\), y-intercept: \\(6\\)",
+          "x-intercept: \\(-2\\), y-intercept: \\(-6\\)",
+          "x-intercept: \\(-6\\), y-intercept: \\(2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q6b",
-        "type": "short_answer",
-        "question": "b) For the line \\( x - 2y + 8 = 0 \\), find the intercepts. (Format: 'x-intercept: A, y-intercept: B')",
-        "a": "x-intercept: -8, y-intercept: 4"
+        "type": "multiple_choice",
+        "question": "b) For the line \\( x - 2y + 8 = 0 \\), find the intercepts.",
+        "opts": [
+          "x-intercept: \\(-8\\), y-intercept: \\(4\\)",
+          "x-intercept: \\(8\\), y-intercept: \\(-4\\)",
+          "x-intercept: \\(-8\\), y-intercept: \\(-4\\)",
+          "x-intercept: \\(-4\\), y-intercept: \\(8\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -370,7 +406,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Slope is 1/4, passes through (1, 4)",
           "Slope is -4, passes through (1, -4)"
         ],
-        "a": "Slope is 4, passes through (1, 4)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q7b",
@@ -382,7 +418,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Slope is 3, passes through (-1, 3)",
           "Slope is 1/3, passes through (3, 1)"
         ],
-        "a": "Slope is -1/3, passes through (3, -1)"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -420,7 +456,7 @@ export const Y11_CH3J_QUESTIONS = [
           "A line through the origin with slope -2",
           "A horizontal line passing through (0, 2)"
         ],
-        "a": "A horizontal line passing through (0, -2)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q8b",
@@ -432,7 +468,7 @@ export const Y11_CH3J_QUESTIONS = [
           "A vertical line passing through (-4, 0)",
           "A line through the origin with slope 4"
         ],
-        "a": "A vertical line passing through (4, 0)"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -462,39 +498,75 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q9a",
-        "type": "short_answer",
-        "question": "a) For \\( f(x) = 9 - x^2 \\), find the zeroes, vertex, and range. (Format: 'zeroes: A and B, vertex: (X, Y), range: y <= C')",
-        "a": "zeroes: 3 and -3, vertex: (0, 9), range: y <= 9"
+        "type": "multiple_choice",
+        "question": "a) For \\( f(x) = 9 - x^2 \\), find the zeroes, vertex, and range.",
+        "opts": [
+          "zeroes: \\(3\\) and \\(-3\\), vertex: \\((0, 9)\\), range: \\(y \\le 9\\)",
+          "zeroes: \\(3\\) and \\(-3\\), vertex: \\((0, 9)\\), range: \\(y \\ge 9\\)",
+          "zeroes: \\(9\\) and \\(-9\\), vertex: \\((0, 9)\\), range: \\(y \\le 9\\)",
+          "zeroes: \\(3\\) and \\(-3\\), vertex: \\((3, 0)\\), range: \\(y \\le 9\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q9b",
-        "type": "short_answer",
-        "question": "b) For \\( f(x) = x(x-4) \\), find the zeroes, vertex, and range. (Format: 'zeroes: A and B, vertex: (X, Y), range: y >= C')",
-        "a": "zeroes: 0 and 4, vertex: (2, -4), range: y >= -4"
+        "type": "multiple_choice",
+        "question": "b) For \\( f(x) = x(x-4) \\), find the zeroes, vertex, and range.",
+        "opts": [
+          "zeroes: \\(0\\) and \\(4\\), vertex: \\((2, -4)\\), range: \\(y \\ge -4\\)",
+          "zeroes: \\(0\\) and \\(4\\), vertex: \\((2, -4)\\), range: \\(y \\le -4\\)",
+          "zeroes: \\(0\\) and \\(-4\\), vertex: \\((-2, -4)\\), range: \\(y \\ge -4\\)",
+          "zeroes: \\(0\\) and \\(4\\), vertex: \\((4, 0)\\), range: \\(y \\ge -4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q9c",
-        "type": "short_answer",
-        "question": "c) For \\( f(x) = (x-1)(x-5) \\), find the zeroes, vertex, and range. (Format: 'zeroes: A and B, vertex: (X, Y), range: y >= C')",
-        "a": "zeroes: 1 and 5, vertex: (3, -4), range: y >= -4"
+        "type": "multiple_choice",
+        "question": "c) For \\( f(x) = (x-1)(x-5) \\), find the zeroes, vertex, and range.",
+        "opts": [
+          "zeroes: \\(1\\) and \\(5\\), vertex: \\((3, -4)\\), range: \\(y \\ge -4\\)",
+          "zeroes: \\(-1\\) and \\(-5\\), vertex: \\((-3, -4)\\), range: \\(y \\ge -4\\)",
+          "zeroes: \\(1\\) and \\(5\\), vertex: \\((3, -4)\\), range: \\(y \\le -4\\)",
+          "zeroes: \\(1\\) and \\(5\\), vertex: \\((3, 4)\\), range: \\(y \\ge -4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q9d",
-        "type": "short_answer",
-        "question": "d) For \\( f(x) = -(x+4)(x-2) \\), find the zeroes, vertex, and range. (Format: 'zeroes: A and B, vertex: (X, Y), range: y <= C')",
-        "a": "zeroes: -4 and 2, vertex: (-1, 9), range: y <= 9"
+        "type": "multiple_choice",
+        "question": "d) For \\( f(x) = -(x+4)(x-2) \\), find the zeroes, vertex, and range.",
+        "opts": [
+          "zeroes: \\(-4\\) and \\(2\\), vertex: \\((-1, 9)\\), range: \\(y \\le 9\\)",
+          "zeroes: \\(4\\) and \\(-2\\), vertex: \\((1, 9)\\), range: \\(y \\le 9\\)",
+          "zeroes: \\(-4\\) and \\(2\\), vertex: \\((-1, 9)\\), range: \\(y \\ge 9\\)",
+          "zeroes: \\(-4\\) and \\(2\\), vertex: \\((-1, 3)\\), range: \\(y \\le 9\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q9e",
-        "type": "short_answer",
-        "question": "e) For \\( f(x) = x^2 + 2x - 8 \\), find the zeroes, vertex, and range. (Format: 'zeroes: A and B, vertex: (X, Y), range: y >= C')",
-        "a": "zeroes: -4 and 2, vertex: (-1, -9), range: y >= -9"
+        "type": "multiple_choice",
+        "question": "e) For \\( f(x) = x^2 + 2x - 8 \\), find the zeroes, vertex, and range.",
+        "opts": [
+          "zeroes: \\(-4\\) and \\(2\\), vertex: \\((-1, -9)\\), range: \\(y \\ge -9\\)",
+          "zeroes: \\(4\\) and \\(-2\\), vertex: \\((1, -9)\\), range: \\(y \\ge -9\\)",
+          "zeroes: \\(-4\\) and \\(2\\), vertex: \\((-1, -9)\\), range: \\(y \\le -9\\)",
+          "zeroes: \\(-4\\) and \\(2\\), vertex: \\((-1, 9)\\), range: \\(y \\ge -9\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q9f",
-        "type": "short_answer",
-        "question": "f) For \\( f(x) = -x^2 + 4x + 5 \\), find the zeroes, vertex, and range. (Format: 'zeroes: A and B, vertex: (X, Y), range: y <= C')",
-        "a": "zeroes: -1 and 5, vertex: (2, 9), range: y <= 9"
+        "type": "multiple_choice",
+        "question": "f) For \\( f(x) = -x^2 + 4x + 5 \\), find the zeroes, vertex, and range.",
+        "opts": [
+          "zeroes: \\(-1\\) and \\(5\\), vertex: \\((2, 9)\\), range: \\(y \\le 9\\)",
+          "zeroes: \\(1\\) and \\(-5\\), vertex: \\((-2, 9)\\), range: \\(y \\le 9\\)",
+          "zeroes: \\(-1\\) and \\(5\\), vertex: \\((2, 9)\\), range: \\(y \\ge 9\\)",
+          "zeroes: \\(-1\\) and \\(5\\), vertex: \\((2, 5)\\), range: \\(y \\le 9\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -540,27 +612,51 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q10a",
-        "type": "short_answer",
-        "question": "a) For \\( y = x^2 + 4x - 1 \\), express in vertex form and state the vertex. (Format: 'y = (x+A)^2 - B, vertex: (X, Y)')",
-        "a": "y = (x+2)^2 - 5, vertex: (-2, -5)"
+        "type": "multiple_choice",
+        "question": "a) For \\( y = x^2 + 4x - 1 \\), express in vertex form and state the vertex.",
+        "opts": [
+          "\\(y = (x+2)^2 - 5\\), vertex: \\((-2, -5)\\)",
+          "\\(y = (x+2)^2 - 1\\), vertex: \\((-2, -1)\\)",
+          "\\(y = (x-2)^2 - 5\\), vertex: \\((2, -5)\\)",
+          "\\(y = (x+4)^2 - 17\\), vertex: \\((-4, -17)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q10b",
-        "type": "short_answer",
-        "question": "b) For \\( y = -x^2 + 4x - 2 \\), express in vertex form and state the vertex. (Format: 'y = -(x-A)^2 + B, vertex: (X, Y)')",
-        "a": "y = -(x-2)^2 + 2, vertex: (2, 2)"
+        "type": "multiple_choice",
+        "question": "b) For \\( y = -x^2 + 4x - 2 \\), express in vertex form and state the vertex.",
+        "opts": [
+          "\\(y = -(x-2)^2 + 2\\), vertex: \\((2, 2)\\)",
+          "\\(y = -(x+2)^2 + 2\\), vertex: \\((-2, 2)\\)",
+          "\\(y = -(x-2)^2 - 2\\), vertex: \\((2, -2)\\)",
+          "\\(y = -(x-4)^2 + 14\\), vertex: \\((4, 14)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q10c",
-        "type": "short_answer",
-        "question": "c) For \\( y = -x^2 + 2x - 4 \\), express in vertex form and state the vertex. (Format: 'y = -(x-A)^2 - B, vertex: (X, Y)')",
-        "a": "y = -(x-1)^2 - 3, vertex: (1, -3)"
+        "type": "multiple_choice",
+        "question": "c) For \\( y = -x^2 + 2x - 4 \\), express in vertex form and state the vertex.",
+        "opts": [
+          "\\(y = -(x-1)^2 - 3\\), vertex: \\((1, -3)\\)",
+          "\\(y = -(x-1)^2 - 4\\), vertex: \\((1, -4)\\)",
+          "\\(y = -(x+1)^2 - 3\\), vertex: \\((-1, -3)\\)",
+          "\\(y = -(x-2)^2 - 8\\), vertex: \\((2, -8)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q10d",
-        "type": "short_answer",
-        "question": "d) For \\( y = x^2 + 8x + 18 \\), express in vertex form and state the vertex. (Format: 'y = (x+A)^2 + B, vertex: (X, Y)')",
-        "a": "y = (x+4)^2 + 2, vertex: (-4, 2)"
+        "type": "multiple_choice",
+        "question": "d) For \\( y = x^2 + 8x + 18 \\), express in vertex form and state the vertex.",
+        "opts": [
+          "\\(y = (x+4)^2 + 2\\), vertex: \\((-4, 2)\\)",
+          "\\(y = (x+4)^2 + 18\\), vertex: \\((-4, 18)\\)",
+          "\\(y = (x-4)^2 + 2\\), vertex: \\((4, 2)\\)",
+          "\\(y = (x+8)^2 - 46\\), vertex: \\((-8, -46)\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -598,27 +694,51 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q11a",
-        "type": "short_answer",
-        "question": "a) For \\( y = -x^2 - 4x + 1 \\), find the number of \\( x \\)-intercepts and the vertex. (Format: 'N intercepts, vertex: (X, Y)')",
-        "a": "2 intercepts, vertex: (-2, 5)"
+        "type": "multiple_choice",
+        "question": "a) For \\( y = -x^2 - 4x + 1 \\), find the number of \\( x \\)-intercepts and the vertex.",
+        "opts": [
+          "2 intercepts, vertex: \\((-2, 5)\\)",
+          "2 intercepts, vertex: \\((2, -11)\\)",
+          "0 intercepts, vertex: \\((-2, 5)\\)",
+          "1 intercept, vertex: \\((-2, 0)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q11b",
-        "type": "short_answer",
-        "question": "b) For \\( y = x^2 - 6x + 4 \\), find the number of \\( x \\)-intercepts and the vertex. (Format: 'N intercepts, vertex: (X, Y)')",
-        "a": "2 intercepts, vertex: (3, -5)"
+        "type": "multiple_choice",
+        "question": "b) For \\( y = x^2 - 6x + 4 \\), find the number of \\( x \\)-intercepts and the vertex.",
+        "opts": [
+          "2 intercepts, vertex: \\((3, -5)\\)",
+          "2 intercepts, vertex: \\((-3, 31)\\)",
+          "0 intercepts, vertex: \\((3, -5)\\)",
+          "1 intercept, vertex: \\((3, 0)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q11c",
-        "type": "short_answer",
-        "question": "c) For \\( y = x^2 - 6x + 12 \\), find the number of \\( x \\)-intercepts and the vertex. (Format: 'N intercepts, vertex: (X, Y)')",
-        "a": "0 intercepts, vertex: (3, 3)"
+        "type": "multiple_choice",
+        "question": "c) For \\( y = x^2 - 6x + 12 \\), find the number of \\( x \\)-intercepts and the vertex.",
+        "opts": [
+          "0 intercepts, vertex: \\((3, 3)\\)",
+          "2 intercepts, vertex: \\((3, 3)\\)",
+          "0 intercepts, vertex: \\((-3, 39)\\)",
+          "1 intercept, vertex: \\((3, 0)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q11d",
-        "type": "short_answer",
-        "question": "d) For \\( y = -x^2 + 8x - 20 \\), find the number of \\( x \\)-intercepts and the vertex. (Format: 'N intercepts, vertex: (X, Y)')",
-        "a": "0 intercepts, vertex: (4, -4)"
+        "type": "multiple_choice",
+        "question": "d) For \\( y = -x^2 + 8x - 20 \\), find the number of \\( x \\)-intercepts and the vertex.",
+        "opts": [
+          "0 intercepts, vertex: \\((4, -4)\\)",
+          "2 intercepts, vertex: \\((4, -4)\\)",
+          "0 intercepts, vertex: \\((-4, -68)\\)",
+          "1 intercept, vertex: \\((4, 0)\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -656,15 +776,27 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q12a",
-        "type": "short_answer",
-        "question": "a) Find the \\( x \\)-intercepts of the cubic \\( y = (x-2)(x-4)(x-7) \\). (Format: 'x = A, B, C' in ascending order)",
-        "a": "x = 2, 4, 7"
+        "type": "multiple_choice",
+        "question": "a) Find the \\( x \\)-intercepts of the cubic \\( y = (x-2)(x-4)(x-7) \\).",
+        "opts": [
+          "\\(x = 2, 4, 7\\)",
+          "\\(x = -2, -4, -7\\)",
+          "\\(x = 2, 4, -7\\)",
+          "\\(x = 0, 2, 4, 7\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q12b",
-        "type": "short_answer",
-        "question": "b) Find the \\( x \\)-intercepts of the cubic \\( y = x^2(x-4) \\) and identify which intercept is a tangent point. (Format: 'intercepts: A and B, tangent at x = C')",
-        "a": "intercepts: 0 and 4, tangent at x = 0"
+        "type": "multiple_choice",
+        "question": "b) Find the \\( x \\)-intercepts of the cubic \\( y = x^2(x-4) \\) and identify which intercept is a tangent point.",
+        "opts": [
+          "intercepts: \\(0\\) and \\(4\\), tangent at \\(x = 0\\)",
+          "intercepts: \\(0\\) and \\(4\\), tangent at \\(x = 4\\)",
+          "intercepts: \\(0\\) and \\(-4\\), tangent at \\(x = 0\\)",
+          "intercepts: only \\(4\\), tangent at \\(x = 4\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -694,15 +826,27 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q13a",
-        "type": "short_answer",
-        "question": "a) Find the center and radius of the circle \\( x^2 + y^2 = 4 \\). (Format: 'center: (X, Y), radius: R')",
-        "a": "center: (0, 0), radius: 2"
+        "type": "multiple_choice",
+        "question": "a) Find the center and radius of the circle \\( x^2 + y^2 = 4 \\).",
+        "opts": [
+          "center: \\((0, 0)\\), radius: \\(2\\)",
+          "center: \\((0, 0)\\), radius: \\(4\\)",
+          "center: \\((2, 2)\\), radius: \\(2\\)",
+          "center: \\((0, 0)\\), radius: \\(\\sqrt{2}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q13b",
-        "type": "short_answer",
-        "question": "b) Find the center and radius of the circle \\( x^2 + y^2 = 16 \\). (Format: 'center: (X, Y), radius: R')",
-        "a": "center: (0, 0), radius: 4"
+        "type": "multiple_choice",
+        "question": "b) Find the center and radius of the circle \\( x^2 + y^2 = 16 \\).",
+        "opts": [
+          "center: \\((0, 0)\\), radius: \\(4\\)",
+          "center: \\((0, 0)\\), radius: \\(16\\)",
+          "center: \\((4, 4)\\), radius: \\(4\\)",
+          "center: \\((0, 0)\\), radius: \\(2\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -740,7 +884,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Domain: \\( 0 \\le x \\le 5 \\), Range: \\( -5 \\le y \\le 5 \\)",
           "Domain: \\( x \\ge 0 \\), Range: \\( 0 \\le y \\le 5 \\)"
         ],
-        "a": "Domain: \\( -5 \\le x \\le 5 \\), Range: \\( 0 \\le y \\le 5 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q14b",
@@ -752,7 +896,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Domain: \\( -4 \\le x \\le 4 \\), Range: \\( -4 \\le y \\le 4 \\)",
           "Domain: \\( 0 \\le x \\le 4 \\), Range: \\( 0 \\le y \\le 4 \\)"
         ],
-        "a": "Domain: \\( 0 \\le x \\le 4 \\), Range: \\( -4 \\le y \\le 4 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q14c",
@@ -764,7 +908,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Domain: \\( 0 \\le x \\le 3 \\), Range: \\( -3 \\le y \\le 3 \\)",
           "Domain: \\( -3 \\le x \\le 0 \\), Range: \\( 0 \\le y \\le 3 \\)"
         ],
-        "a": "Domain: \\( -3 \\le x \\le 0 \\), Range: \\( -3 \\le y \\le 3 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q14d",
@@ -776,7 +920,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Domain: \\( -2 \\le x \\le 2 \\), Range: \\( -2 \\le y \\le 2 \\)",
           "Domain: \\( 0 \\le x \\le 2 \\), Range: \\( -2 \\le y \\le 0 \\)"
         ],
-        "a": "Domain: \\( -2 \\le x \\le 2 \\), Range: \\( -2 \\le y \\le 0 \\)"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -822,7 +966,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Domain: \\( x > 0 \\), Range: \\( y > 0 \\), Asymptotes: \\( x = 0, y = 0 \\)",
           "Domain: \\( x \\neq 0 \\), Range: \\( y \\neq 0 \\), Asymptotes: \\( y = x, y = -x \\)"
         ],
-        "a": "Domain: \\( x \\neq 0 \\), Range: \\( y \\neq 0 \\), Asymptotes: \\( x = 0, y = 0 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q15b",
@@ -834,7 +978,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Quadrants 1 and 2",
           "Quadrants 3 and 4"
         ],
-        "a": "Quadrants 2 and 4"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -872,7 +1016,7 @@ export const Y11_CH3J_QUESTIONS = [
           "y-intercept: (0, 1), Domain: \\( x > 0 \\), Range: all real y",
           "y-intercept: (0, 0), Domain: all real x, Range: \\( y > 0 \\)"
         ],
-        "a": "y-intercept: (0, 1), Domain: all real x, Range: \\( y > 0 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q16b",
@@ -884,7 +1028,7 @@ export const Y11_CH3J_QUESTIONS = [
           "It is shifted downwards by 2 units",
           "It is a vertical stretch of \\( y = 2^x \\)"
         ],
-        "a": "It is a reflection of \\( y = 2^x \\) across the y-axis"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -922,7 +1066,7 @@ export const Y11_CH3J_QUESTIONS = [
           "They are perpendicular lines.",
           "They have different slopes but the same y-intercept."
         ],
-        "a": "They are parallel lines with vertical translations."
+        "a": 0
       },
       {
         "id": "y11a-3j-q17b",
@@ -934,7 +1078,7 @@ export const Y11_CH3J_QUESTIONS = [
           "\\( 3 \\)",
           "\\( 1/3 \\)"
         ],
-        "a": "\\( -1/3 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17c",
@@ -946,7 +1090,7 @@ export const Y11_CH3J_QUESTIONS = [
           "(0, 3)",
           "(0, -3)"
         ],
-        "a": "(-3, 0)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17d",
@@ -958,7 +1102,7 @@ export const Y11_CH3J_QUESTIONS = [
           "0",
           "1/3"
         ],
-        "a": "3"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17e",
@@ -970,7 +1114,7 @@ export const Y11_CH3J_QUESTIONS = [
           "It is identical",
           "It opens downwards"
         ],
-        "a": "It is narrower/steeper"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17f",
@@ -982,7 +1126,7 @@ export const Y11_CH3J_QUESTIONS = [
           "0",
           "1/2"
         ],
-        "a": "2"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17g",
@@ -994,7 +1138,7 @@ export const Y11_CH3J_QUESTIONS = [
           "4.5 and 2",
           "6 and 4"
         ],
-        "a": "3 and 2"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17h",
@@ -1006,7 +1150,7 @@ export const Y11_CH3J_QUESTIONS = [
           "The x-axis",
           "The y-axis"
         ],
-        "a": "\\( y = x \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17i",
@@ -1018,7 +1162,7 @@ export const Y11_CH3J_QUESTIONS = [
           "\\( y = 1.5^x \\)",
           "They rise at the same rate"
         ],
-        "a": "\\( y = 3.5^x \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17j",
@@ -1030,7 +1174,7 @@ export const Y11_CH3J_QUESTIONS = [
           "-2",
           "0"
         ],
-        "a": "6"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17k",
@@ -1042,7 +1186,7 @@ export const Y11_CH3J_QUESTIONS = [
           "5 and -5",
           "1 and 5"
         ],
-        "a": "0 and 5"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17l",
@@ -1054,7 +1198,7 @@ export const Y11_CH3J_QUESTIONS = [
           "\\( y = x^2-4 \\) only",
           "None of them"
         ],
-        "a": "\\( y = 4-x^2 \\), \\( y = 9-x^2 \\), and \\( y = -4-x^2 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17m",
@@ -1066,7 +1210,7 @@ export const Y11_CH3J_QUESTIONS = [
           "(-1, 3)",
           "(1, 3)"
         ],
-        "a": "(-1, -3)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17n",
@@ -1078,7 +1222,7 @@ export const Y11_CH3J_QUESTIONS = [
           "1 and 8",
           "-1 and -8"
         ],
-        "a": "2 and 4"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17o",
@@ -1090,7 +1234,7 @@ export const Y11_CH3J_QUESTIONS = [
           "\\( -3 \\le y \\le 3 \\)",
           "\\( y \\le 0 \\)"
         ],
-        "a": "\\( -3 \\le y \\le 0 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17p",
@@ -1102,7 +1246,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Quadrants 1 and 2",
           "Quadrants 3 and 4"
         ],
-        "a": "Quadrants 2 and 4"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17q",
@@ -1114,7 +1258,7 @@ export const Y11_CH3J_QUESTIONS = [
           "\\( x < 2 \\)",
           "All real x"
         ],
-        "a": "\\( x \\le 2 \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17r",
@@ -1126,7 +1270,7 @@ export const Y11_CH3J_QUESTIONS = [
           "(0, 2)",
           "(0, -2)"
         ],
-        "a": "(-2, 0)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17s",
@@ -1138,7 +1282,7 @@ export const Y11_CH3J_QUESTIONS = [
           "(2, 0)",
           "(-2, 0)"
         ],
-        "a": "(0, -2)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q17t",
@@ -1150,7 +1294,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Because they represent linear growth",
           "They do not have the same graph"
         ],
-        "a": "Because \\( 1/3 = 3^{-1} \\), so \\( (1/3)^x = (3^{-1})^x = 3^{-x} \\)"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -1172,21 +1316,39 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q18a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Write this algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "x = km"
+        "opts": [
+          "\\(x = km\\)",
+          "\\(x = \\frac{k}{m}\\)",
+          "\\(m = kx\\)",
+          "\\(x = km^2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q18b",
-        "type": "short_answer",
-        "question": "b) For a certain spring, \\( x = 3\\text{ cm} \\) when \\( m = 4\\text{ kg} \\). Evaluate \\( k \\) and write its value with units. (Format: 'k = C cm/kg')",
-        "a": "k = 0.75 cm/kg"
+        "type": "multiple_choice",
+        "question": "b) For a certain spring, \\( x = 3\\text{ cm} \\) when \\( m = 4\\text{ kg} \\). Evaluate \\( k \\) and write its value with units.",
+        "opts": [
+          "\\(k = 0.75\\text{ cm/kg}\\)",
+          "\\(k = 1.33\\text{ cm/kg}\\)",
+          "\\(k = 12\\text{ cm/kg}\\)",
+          "\\(k = 0.75\\text{ kg/cm}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q18c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) What will be the change in length of the spring in cm when \\( m = 6\\text{ kg} \\)?",
-        "a": "4.5"
+        "opts": [
+          "\\(4.5\\text{ cm}\\)",
+          "\\(8\\text{ cm}\\)",
+          "\\(2.25\\text{ cm}\\)",
+          "\\(4.5\\text{ kg}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q18d",
@@ -1198,7 +1360,7 @@ export const Y11_CH3J_QUESTIONS = [
           "It is halved",
           "It remains unchanged"
         ],
-        "a": "It is doubled"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -1240,7 +1402,7 @@ export const Y11_CH3J_QUESTIONS = [
           "Distance varies with the square of time",
           "Distance is independent of time"
         ],
-        "a": "Distance varies directly with time"
+        "a": 0
       },
       {
         "id": "y11a-3j-q19b",
@@ -1252,7 +1414,7 @@ export const Y11_CH3J_QUESTIONS = [
           "If time \\( T \\) is constant, speed \\( S \\) varies inversely with distance \\( D \\)",
           "There is no inverse variation in this formula"
         ],
-        "a": "If distance \\( D \\) is constant, speed \\( S \\) varies inversely with time \\( T \\)"
+        "a": 0
       },
       {
         "id": "y11a-3j-q19c",
@@ -1264,7 +1426,7 @@ export const Y11_CH3J_QUESTIONS = [
           "It will be quadrupled",
           "It remains unchanged"
         ],
-        "a": "It will be halved"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -1298,21 +1460,39 @@ export const Y11_CH3J_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3j-q20a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Write this algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "R = kV^2"
+        "opts": [
+          "\\(R = kV^2\\)",
+          "\\(R = \\frac{k}{V^2}\\)",
+          "\\(R = kV\\)",
+          "\\(V = k\\sqrt{R}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q20b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) It is found that \\( R = 4.802\\text{ m} \\) when \\( V = 8\\text{ m s}^{-1} \\). Evaluate \\( k \\) correct to four significant figures.",
-        "a": "0.07503"
+        "opts": [
+          "\\(0.07503\\)",
+          "\\(0.6003\\)",
+          "\\(13.33\\)",
+          "\\(0.0075\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3j-q20c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) What is \\( R \\) when \\( V = 12\\text{ m s}^{-1} \\)? Give your answer correct to 2 decimal places.",
-        "a": "10.80"
+        "opts": [
+          "\\(10.80\\text{ m}\\)",
+          "\\(1.08\\text{ m}\\)",
+          "\\(5.40\\text{ m}\\)",
+          "\\(9.00\\text{ m}\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [

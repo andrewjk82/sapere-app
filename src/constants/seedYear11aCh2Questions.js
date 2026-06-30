@@ -659,12 +659,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\sqrt{16}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(3\\\\)", "imageUrl": "" },
+      { "text": "\\\\(8\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -689,12 +694,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\sqrt{36}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(6\\\\)", "imageUrl": "" },
+      { "text": "\\\\(9\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\\\)", "imageUrl": "" },
+      { "text": "\\\\(18\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -719,12 +729,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\sqrt{81}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(8\\\\)", "imageUrl": "" },
+      { "text": "\\\\(9\\\\)", "imageUrl": "" },
+      { "text": "\\\\(27\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -749,12 +764,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q1d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\sqrt{121}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(12\\\\)", "imageUrl": "" },
+      { "text": "\\\\(13\\\\)", "imageUrl": "" },
+      { "text": "\\\\(60\\\\)", "imageUrl": "" },
+      { "text": "\\\\(11\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -779,12 +799,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q1e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\sqrt{144}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(12\\\\)", "imageUrl": "" },
+      { "text": "\\\\(14\\\\)", "imageUrl": "" },
+      { "text": "\\\\(72\\\\)", "imageUrl": "" },
+      { "text": "\\\\(11\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -809,12 +834,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q1f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\sqrt{400}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(40\\\\)", "imageUrl": "" },
+      { "text": "\\\\(20\\\\)", "imageUrl": "" },
+      { "text": "\\\\(200\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -839,12 +869,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q1g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\sqrt{2500}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(250\\\\)", "imageUrl": "" },
+      { "text": "\\\\(25\\\\)", "imageUrl": "" },
+      { "text": "\\\\(50\\\\)", "imageUrl": "" },
+      { "text": "\\\\(500\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -869,12 +904,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q1h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the value of: \\\\(\\sqrt{10000}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(1000\\\\)", "imageUrl": "" },
+      { "text": "\\\\(50\\\\)", "imageUrl": "" },
+      { "text": "\\\\(200\\\\)", "imageUrl": "" },
+      { "text": "\\\\(100\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -899,12 +939,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{12}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(3\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -929,12 +974,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{18}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(3\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(9\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -959,12 +1009,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{20}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(4\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -989,12 +1044,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{27}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(9\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{9}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1019,12 +1079,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{28}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(2\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(7\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{14}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1049,12 +1114,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{40}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(4\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(10\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1079,12 +1149,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{32}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(2\\sqrt{8}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(8\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{16}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1109,12 +1184,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{99}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(9\\sqrt{11}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(11\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{11}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{11}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1139,12 +1219,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{54}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(3\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(9\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{6}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1169,12 +1254,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2j",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{200}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(20\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(10\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1199,12 +1289,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2k",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{60}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(4\\sqrt{15}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{15}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1229,12 +1324,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2l",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{75}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(3\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(25\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(15\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1259,12 +1359,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2m",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{80}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(4\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\sqrt{4}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(8\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1289,12 +1394,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2n",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{98}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(2\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(7\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(14\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(49\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1319,12 +1429,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2o",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{800}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(40\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(10\\sqrt{8}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(20\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{50}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1349,12 +1464,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q2p",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{1000}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(100\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(50\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(10\\sqrt{10}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1379,12 +1499,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(\\sqrt{3} + \\sqrt{3}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(2\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{6}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1409,12 +1534,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(5\\sqrt{7} - 3\\sqrt{7}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(8\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{14}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(15\\sqrt{7}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1439,12 +1569,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q3c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(2\\sqrt{5} - \\sqrt{5}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(2\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1469,12 +1604,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q3d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(-3\\sqrt{2} + \\sqrt{2}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(4\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-4\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-2\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1499,12 +1639,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q3e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(4\\sqrt{3} + 3\\sqrt{2} - 2\\sqrt{3}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(2\\sqrt{3} + 3\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\sqrt{3} + 3\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{3} - 3\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1529,12 +1674,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q3f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(-5\\sqrt{5} - 2\\sqrt{7} + 6\\sqrt{5}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(-\\sqrt{5} + 2\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{5} - 2\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(11\\sqrt{5} - 2\\sqrt{7}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-\\sqrt{5} - 2\\sqrt{7}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1559,12 +1709,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q3g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(7\\sqrt{6} + 5\\sqrt{3} - 4\\sqrt{6} - 7\\sqrt{3}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(3\\sqrt{6} + 2\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(11\\sqrt{6} - 2\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{6} - 2\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-3\\sqrt{6} + 2\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1589,12 +1744,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q3h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(-6\\sqrt{2} - 4\\sqrt{5} + 3\\sqrt{2} - 2\\sqrt{5}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(3\\sqrt{2} - 6\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-3\\sqrt{2} + 6\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-9\\sqrt{2} - 6\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-3\\sqrt{2} - 6\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1619,12 +1779,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q3i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify: \\\\(3\\sqrt{10} - 8\\sqrt{5} - 7\\sqrt{10} + 10\\sqrt{5}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(-4\\sqrt{10} + 2\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{10} + 2\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-4\\sqrt{10} - 2\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{10} - 2\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1649,12 +1814,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q4a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(3\\sqrt{8}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(3\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(12\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\sqrt{4}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1679,12 +1849,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q4b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(5\\sqrt{12}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(5\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(15\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(10\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(20\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1709,12 +1884,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q4c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(2\\sqrt{24}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(2\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(8\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{6}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1739,12 +1919,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q4d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(4\\sqrt{44}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(8\\sqrt{11}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{11}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(16\\sqrt{11}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(8\\sqrt{44}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1769,12 +1954,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q4e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(3\\sqrt{45}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(3\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(9\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(27\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1799,12 +1989,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q4f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(6\\sqrt{52}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(6\\sqrt{13}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(24\\sqrt{13}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(12\\sqrt{13}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{13}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1829,12 +2024,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q4g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(2\\sqrt{300}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(10\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(60\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{30}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(20\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1859,12 +2059,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q4h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify: \\\\(2\\sqrt{96}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(8\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(16\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(8\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1889,12 +2094,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q5a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(2\\sqrt{5}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{20}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{45}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1919,12 +2129,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q5b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(5\\sqrt{2}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{25}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{50}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{100}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1949,12 +2164,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q5c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(8\\sqrt{2}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(\\sqrt{16}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{64}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{32}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{128}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1979,12 +2199,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q5d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(6\\sqrt{3}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(\\sqrt{108}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{18}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{36}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{54}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2009,12 +2234,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q5e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(5\\sqrt{5}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(\\sqrt{25}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{125}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{50}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{10}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2039,12 +2269,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q5f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(4\\sqrt{7}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(\\sqrt{28}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{56}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{112}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{224}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2069,12 +2304,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q5g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(2\\sqrt{17}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(\\sqrt{34}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{19}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{136}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{68}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2099,12 +2339,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q5h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write the expression as a single square root: \\\\(7\\sqrt{10}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(\\sqrt{490}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{70}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{980}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{49}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2129,12 +2374,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q6a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\sqrt{8} + \\sqrt{2}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(2\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2159,12 +2409,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q6b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\sqrt{12} - \\sqrt{3}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(2\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{9}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2189,12 +2444,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q6c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\sqrt{50} - \\sqrt{18}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(8\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{32}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{2}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2219,12 +2479,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q6d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\sqrt{54} + \\sqrt{24}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(5\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{78}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(7\\sqrt{6}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(3\\sqrt{6}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2249,12 +2514,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q6e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\sqrt{45} - \\sqrt{20}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(\\sqrt{25}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(5\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2279,12 +2549,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q6f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\sqrt{90} - \\sqrt{40} + \\sqrt{10}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(4\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{10}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(6\\sqrt{10}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2309,12 +2584,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q6g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\sqrt{27} + \\sqrt{75} - \\sqrt{48}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(12\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(8\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2339,12 +2619,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q6h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\sqrt{45} + \\sqrt{80} - \\sqrt{125}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(2\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-2\\sqrt{5}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(12\\sqrt{5}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2369,12 +2654,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q6i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify fully: \\\\(\\sqrt{2} + \\sqrt{32} + \\sqrt{72}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(13\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(11\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(9\\sqrt{2}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(\\sqrt{106}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2399,12 +2689,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify fully: \\\\(\\sqrt{600} + \\sqrt{300} - \\sqrt{216}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(10\\sqrt{6} + 10\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(14\\sqrt{6} + 10\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{6} + 10\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{3} + 10\\sqrt{6}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2429,12 +2724,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify fully: \\\\(4\\sqrt{18} + 3\\sqrt{12} - 2\\sqrt{50}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(12\\sqrt{2} + 6\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{2} - 6\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(10\\sqrt{2} + 6\\sqrt{3}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(2\\sqrt{2} + 6\\sqrt{3}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2459,12 +2759,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify fully: \\\\(2\\sqrt{175} - 5\\sqrt{140} - 3\\sqrt{28}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      { "text": "\\\\(4\\sqrt{7} - 10\\sqrt{35}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(4\\sqrt{7} + 10\\sqrt{35}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(10\\sqrt{7} - 10\\sqrt{35}\\\\)", "imageUrl": "" },
+      { "text": "\\\\(-4\\sqrt{7} - 10\\sqrt{35}\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2489,12 +2794,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q8a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\\\(x\\\\) if:\n\\\\(\\sqrt{63} - \\sqrt{28} = \\sqrt{x}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      { "text": "\\\\(x = 35\\\\)", "imageUrl": "" },
+      { "text": "\\\\(x = 7\\\\)", "imageUrl": "" },
+      { "text": "\\\\(x = 14\\\\)", "imageUrl": "" },
+      { "text": "\\\\(x = 49\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2524,12 +2834,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\\\(x\\\\) if:\n\\\\(\\sqrt{80} - \\sqrt{20} = \\sqrt{x}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      { "text": "\\\\(x = 60\\\\)", "imageUrl": "" },
+      { "text": "\\\\(x = 5\\\\)", "imageUrl": "" },
+      { "text": "\\\\(x = 20\\\\)", "imageUrl": "" },
+      { "text": "\\\\(x = 40\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2559,12 +2874,17 @@ export const Y11A_CH2_QUESTIONS = [
   },
   {
     "id": "y11a-2b-q8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\\\(x\\\\) if:\n\\\\(2\\sqrt{150} - 3\\sqrt{24} = \\sqrt{x}\\\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      { "text": "\\\\(x = 24\\\\)", "imageUrl": "" },
+      { "text": "\\\\(x = 6\\\\)", "imageUrl": "" },
+      { "text": "\\\\(x = 600\\\\)", "imageUrl": "" },
+      { "text": "\\\\(x = 96\\\\)", "imageUrl": "" }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [

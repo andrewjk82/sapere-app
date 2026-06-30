@@ -883,12 +883,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q6a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(\\sqrt{24}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(2\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -913,12 +930,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q6b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(\\sqrt{45}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(4\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -943,12 +977,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q6c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(\\sqrt{50}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(6\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -973,12 +1024,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q6d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(\\sqrt{500}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(11\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1003,12 +1071,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q6e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(3\\sqrt{18}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(9\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1033,12 +1118,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q6f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\(2\\sqrt{40}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(5\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\sqrt{11}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1063,12 +1165,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{5} + \\sqrt{5}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(3\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1093,12 +1212,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{5} \\times \\sqrt{5}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(-5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5_wrong1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1123,12 +1259,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\((2\\sqrt{7})^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(28\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-28\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(56\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(28_wrong1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1153,12 +1306,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q7d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(2\\sqrt{5} + \\sqrt{7} - 3\\sqrt{5}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(-\\sqrt{5} - \\sqrt{7} = \\sqrt{7} - \\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\sqrt{5} + \\sqrt{7} = \\sqrt{7} - \\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\sqrt{6} + \\sqrt{7} = \\sqrt{7} - \\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\sqrt{4} + \\sqrt{7} = \\sqrt{7} - \\sqrt{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1183,12 +1353,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q7e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{35} \\div \\sqrt{5}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{8}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1213,12 +1400,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q7f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(6\\sqrt{55} \\div 2\\sqrt{11}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(4\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1243,12 +1447,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q7g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{8} \\times \\sqrt{2}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4_wrong1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1273,12 +1494,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q7h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{10} \\times \\sqrt{2}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(3\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1303,12 +1541,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q7i",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(2\\sqrt{6} \\times 4\\sqrt{15}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(25\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(23\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(24\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(24\\sqrt{11}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1333,12 +1588,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q8a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{27} - \\sqrt{12}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\((3 + 2)\\sqrt{3} = \\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3 - 2)\\sqrt{4} = \\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3 - 2)\\sqrt{2} = \\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3 - 2)\\sqrt{3} = \\sqrt{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1363,12 +1635,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{18} + \\sqrt{32}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\((3 + 4)\\sqrt{2} = 7\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3 - 4)\\sqrt{2} = 7\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3 + 4)\\sqrt{3} = 7\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-(3 + 4)\\sqrt{2} = 7\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1393,12 +1682,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(3\\sqrt{2} + 3\\sqrt{8} - \\sqrt{50}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\((3 - 6 - 5)\\sqrt{2} = 4\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3 + 6 - 5)\\sqrt{2} = 4\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3 + 6 - 5)\\sqrt{3} = 4\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-(3 + 6 - 5)\\sqrt{2} = 4\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1423,12 +1729,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q8d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\(\\sqrt{54} - \\sqrt{20} + \\sqrt{150} - \\sqrt{80}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\((3-5)\\sqrt{6} + (-2-4)\\sqrt{5} = 8\\sqrt{6} - 6\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3+5)\\sqrt{7} + (-2-4)\\sqrt{5} = 8\\sqrt{6} - 6\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3+5)\\sqrt{6} + (-2-4)\\sqrt{5} = 8\\sqrt{6} - 6\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((3+5)\\sqrt{5} + (-2-4)\\sqrt{5} = 8\\sqrt{6} - 6\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1453,12 +1776,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q9a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\(\\sqrt{7}(3-\\sqrt{7})\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(3\\sqrt{7} + 7\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\sqrt{7} - 7\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{7} - 7\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{7} - 7\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1483,12 +1823,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q9b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\(\\sqrt{5}(2\\sqrt{6}+3\\sqrt{2})\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(2\\sqrt{30} + 3\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{30} - 3\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{30} + 3\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\sqrt{30} + 3\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1513,12 +1870,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q9c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\(\\sqrt{15}(\\sqrt{3}-5)\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{9 \\times 5} + 5\\sqrt{15} = 3\\sqrt{5} - 5\\sqrt{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{9 \\times 5} - 5\\sqrt{15} = 3\\sqrt{5} - 5\\sqrt{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{9 \\times 5} - 5\\sqrt{16} = 3\\sqrt{5} - 5\\sqrt{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{9 \\times 5} - 5\\sqrt{14} = 3\\sqrt{5} - 5\\sqrt{15}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1543,12 +1917,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q9d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\(\\sqrt{3}(\\sqrt{6}+2\\sqrt{3})\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(3\\sqrt{2} - 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\sqrt{2} + 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{2} + 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{2} + 6\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1573,12 +1964,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q10a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{5}+2)(3-\\sqrt{5})\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{5} - 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{6} + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{4} + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{5} + 1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1603,12 +2011,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q10b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((2\\sqrt{3}-1)(3\\sqrt{3}+5)\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(13 + 7\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(13 - 7\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(14 + 7\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12 + 7\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1633,12 +2058,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q10c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{7}-3)(2\\sqrt{5}+4)\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(2\\sqrt{35} - 4\\sqrt{7} - 6\\sqrt{5} - 12\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\sqrt{35} + 4\\sqrt{7} - 6\\sqrt{5} - 12\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\sqrt{35} + 4\\sqrt{7} - 6\\sqrt{5} - 12\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\sqrt{35} + 4\\sqrt{7} - 6\\sqrt{5} - 12\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1663,12 +2105,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q10d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{10}-3)(\\sqrt{10}+3)\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(10 + 9 = 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(11 - 9 = 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10 - 9 = 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9 - 9 = 1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1693,12 +2152,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q10e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((2\\sqrt{6}+\\sqrt{11})(2\\sqrt{6}-\\sqrt{11})\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(-13\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(26\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(13_wrong1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(13\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1723,12 +2199,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q10f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{7}-2)^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(11 - 4\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(11 + 4\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12 - 4\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10 - 4\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1753,12 +2246,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q10g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((\\sqrt{5}+\\sqrt{2})^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(7 - 2\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(7 + 2\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8 + 2\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6 + 2\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1783,12 +2293,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q10h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\((4-3\\sqrt{2})^2\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(34 + 24\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(35 - 24\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(34 - 24\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(33 - 24\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1813,12 +2340,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q11a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{5}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{6}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{4}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{5}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{5}}{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1843,12 +2387,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q11b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{3}{\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{3\\sqrt{2}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{3}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{3\\sqrt{2}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{3\\sqrt{2}}{2}_wrong1\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1873,12 +2434,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q11c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{\\sqrt{3}}{\\sqrt{11}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{34}}{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{33}}{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{32}}{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{33}}{11}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1903,12 +2481,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q11d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{5\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{4}}{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{2}}{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{3}}{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{3}}{15}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1933,12 +2528,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q11e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{5}{2\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{5\\sqrt{8}}{14}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5\\sqrt{6}}{14}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{5\\sqrt{7}}{14}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{5\\sqrt{7}}{14}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1963,12 +2575,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q11f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{\\sqrt{2}}{3\\sqrt{10}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{\\sqrt{5}}{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{6}}{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{\\sqrt{4}}{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\frac{\\sqrt{5}}{15}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -1993,12 +2622,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q12a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{\\sqrt{5}+\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{(\\sqrt{5}+\\sqrt{2})}{5 - 2} = \\frac{\\sqrt{5}-\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(\\sqrt{5}-\\sqrt{2})}{5 - 2} = \\frac{\\sqrt{5}-\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(\\sqrt{6}-\\sqrt{2})}{5 - 2} = \\frac{\\sqrt{5}-\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(\\sqrt{4}-\\sqrt{2})}{5 - 2} = \\frac{\\sqrt{5}-\\sqrt{2}}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2023,12 +2669,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q12b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{3-\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{(3-\\sqrt{7})}{9 - 7} = \\frac{3+\\sqrt{7}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3+\\sqrt{8})}{9 - 7} = \\frac{3+\\sqrt{7}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3+\\sqrt{7})}{9 - 7} = \\frac{3+\\sqrt{7}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3+\\sqrt{6})}{9 - 7} = \\frac{3+\\sqrt{7}}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2053,12 +2716,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q12c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{1}{2\\sqrt{6}-\\sqrt{3}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{(2\\sqrt{6}-\\sqrt{3})}{24 - 3} = \\frac{2\\sqrt{6}+\\sqrt{3}}{21}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(2\\sqrt{7}+\\sqrt{3})}{24 - 3} = \\frac{2\\sqrt{6}+\\sqrt{3}}{21}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(2\\sqrt{5}+\\sqrt{3})}{24 - 3} = \\frac{2\\sqrt{6}+\\sqrt{3}}{21}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(2\\sqrt{6}+\\sqrt{3})}{24 - 3} = \\frac{2\\sqrt{6}+\\sqrt{3}}{21}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2083,12 +2763,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q12d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{\\sqrt{3}}{\\sqrt{3}+1}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(\\frac{(\\sqrt{3})(\\sqrt{3}-1)}{3 - 1} = \\frac{3-\\sqrt{3}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(\\sqrt{3})(\\sqrt{3}+1)}{3 - 1} = \\frac{3-\\sqrt{3}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(\\sqrt{4})(\\sqrt{3}-1)}{3 - 1} = \\frac{3-\\sqrt{3}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(\\sqrt{2})(\\sqrt{3}-1)}{3 - 1} = \\frac{3-\\sqrt{3}}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2113,12 +2810,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q12e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{3}{\\sqrt{11}+\\sqrt{5}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\frac{(3)(\\sqrt{11}+\\sqrt{5})}{11 - 5} = \\frac{\\sqrt{11}-\\sqrt{5}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3)(\\sqrt{11}-\\sqrt{5})}{11 - 5} = \\frac{\\sqrt{11}-\\sqrt{5}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3)(\\sqrt{12}-\\sqrt{5})}{11 - 5} = \\frac{\\sqrt{11}-\\sqrt{5}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3)(\\sqrt{10}-\\sqrt{5})}{11 - 5} = \\frac{\\sqrt{11}-\\sqrt{5}}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2143,12 +2857,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q12f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\(\\frac{3\\sqrt{7}}{2\\sqrt{5}-\\sqrt{7}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{(3\\sqrt{7})(2\\sqrt{5}-\\sqrt{7})}{20 - 7} = \\frac{6\\sqrt{35}+21}{13}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3\\sqrt{8})(2\\sqrt{5}+\\sqrt{7})}{20 - 7} = \\frac{6\\sqrt{35}+21}{13}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3\\sqrt{7})(2\\sqrt{5}+\\sqrt{7})}{20 - 7} = \\frac{6\\sqrt{35}+21}{13}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3\\sqrt{6})(2\\sqrt{5}+\\sqrt{7})}{20 - 7} = \\frac{6\\sqrt{35}+21}{13}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2173,12 +2904,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q13a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rationalise the denominator of the fraction.\n\n\\(\\frac{\\sqrt{7}-\\sqrt{2}}{\\sqrt{7}+\\sqrt{2}}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(\\frac{9+2\\sqrt{14}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{9-2\\sqrt{15}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{9-2\\sqrt{13}}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{9-2\\sqrt{14}}{5}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2208,12 +2956,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q13b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Rationalise the denominator of the fraction.\n\n\\(\\frac{3\\sqrt{3}+5}{3\\sqrt{3}-5}\\)",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(26+15\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(26-15\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(27+15\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(25+15\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2243,12 +3008,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q14",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\(x\\) if \\(\\sqrt{18} + \\sqrt{8} = \\sqrt{x}\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 1,
+    "options": [
+      {
+        "text": "\\\\(\\sqrt{51} = \\sqrt{x} \\implies x = 50\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{50} = \\sqrt{x} \\implies x = 50\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\sqrt{49} = \\sqrt{x} \\implies x = 50\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\sqrt{50} = \\sqrt{x} \\implies x = 50\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2278,12 +3060,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q15",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify \\(\\frac{3}{\\sqrt{5}-2} + \\frac{2}{\\sqrt{5}+2}\\) by forming the lowest common denominator.",
-    "answer": "0",
-    "options": [],
+    "answer": 2,
+    "options": [
+      {
+        "text": "\\\\(\\frac{(3-2)\\sqrt{5} + (6-4)}{1} = 5\\sqrt{5}+2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3+2)\\sqrt{6} + (6-4)}{1} = 5\\sqrt{5}+2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3+2)\\sqrt{5} + (6-4)}{1} = 5\\sqrt{5}+2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\frac{(3+2)\\sqrt{4} + (6-4)}{1} = 5\\sqrt{5}+2\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2313,12 +3112,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q16-p",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\(p\\) such that \\(\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 3,
+    "options": [
+      {
+        "text": "\\\\(5 - 2\\sqrt{5} = p + q\\sqrt{5} \\implies p = 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6 + 2\\sqrt{5} = p + q\\sqrt{5} \\implies p = 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4 + 2\\sqrt{5} = p + q\\sqrt{5} \\implies p = 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5 + 2\\sqrt{5} = p + q\\sqrt{5} \\implies p = 5\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [
@@ -2348,12 +3164,29 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q16-q",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the value of \\(q\\) such that \\(\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}\\).",
-    "answer": "0",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(5 + 2\\sqrt{5} = p + q\\sqrt{5} \\implies q = 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5 - 2\\sqrt{5} = p + q\\sqrt{5} \\implies q = 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6 + 2\\sqrt{5} = p + q\\sqrt{5} \\implies q = 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4 + 2\\sqrt{5} = p + q\\sqrt{5} \\implies q = 2\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "",
     "solutionSteps": [

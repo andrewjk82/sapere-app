@@ -10,9 +10,15 @@ export const Y11_CH3H_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3h-q1a",
-        "type": "short_answer",
-        "question": "a) Complete the table of values for \\( y = \\frac{6}{x} \\) at \\( x = -6, -3, -2, -1, -0.5, 0, 0.5, 1, 2, 3, 6 \\). (Format: 'y = a, b, c, d, e, undefined, f, g, h, i, j')",
-        "a": "y = -1, -2, -3, -6, -12, undefined, 12, 6, 3, 2, 1"
+        "type": "multiple_choice",
+        "question": "a) Which of the following matches the correct set of values for \\( y = \\frac{6}{x} \\) at \\( x = -6, -3, -2, -1, -0.5, 0, 0.5, 1, 2, 3, 6 \\)?",
+        "opts": [
+          "\\(y = -1, -2, -3, -6, -12, \\text{undefined}, 12, 6, 3, 2, 1\\)",
+          "\\(y = -1, -2, -3, -6, -12, 0, 12, 6, 3, 2, 1\\)",
+          "\\(y = -6, -3, -2, -1, -0.5, \\text{undefined}, 0.5, 1, 2, 3, 6\\)",
+          "\\(y = 1, 2, 3, 6, 12, \\text{undefined}, -12, -6, -3, -2, -1\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q1b",
@@ -30,19 +36,31 @@ export const Y11_CH3H_QUESTIONS = [
           "Quadrants 1 and 2",
           "Quadrants 3 and 4"
         ],
-        "a": "Quadrants 1 and 3"
+        "a": 0
       },
       {
         "id": "y11a-3h-q1d",
-        "type": "short_answer",
-        "question": "d) Write down the equations of the two asymptotes of the hyperbola. (Format: 'x = a, y = b')",
-        "a": "x = 0, y = 0"
+        "type": "multiple_choice",
+        "question": "d) Identify the equations of the two asymptotes of the hyperbola.",
+        "opts": [
+          "\\(x = 0, y = 0\\)",
+          "\\(x = 6, y = 6\\)",
+          "\\(x = 0, y = 6\\)",
+          "\\(x = 6, y = 0\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q1e",
-        "type": "short_answer",
-        "question": "e) State the domain and range of the function. (Format: 'domain: x != a, range: y != b')",
-        "a": "domain: x != 0, range: y != 0"
+        "type": "multiple_choice",
+        "question": "e) State the domain and range of the function.",
+        "opts": [
+          "domain: \\(x \\neq 0\\), range: \\(y \\neq 0\\)",
+          "domain: all real numbers, range: all real numbers",
+          "domain: \\(x > 0\\), range: \\(y > 0\\)",
+          "domain: \\(x \\neq 6\\), range: \\(y \\neq 6\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -142,13 +160,19 @@ export const Y11_CH3H_QUESTIONS = [
           "Quadrants 1 and 2",
           "Quadrants 3 and 4"
         ],
-        "a": "Quadrants 1 and 3"
+        "a": 0
       },
       {
         "id": "y11a-3h-q3b",
-        "type": "short_answer",
-        "question": "b) Write down the coordinates of the points on each hyperbola closest to the origin. (Format: 'k=2: (x1, y1) and (x2, y2); k=6: ...; k=12: ...' to 2 dec places)",
-        "a": "k=2: (-1.41, -1.41) and (1.41, 1.41); k=6: (-2.45, -2.45) and (2.45, 2.45); k=12: (-3.46, -3.46) and (3.46, 3.46)"
+        "type": "multiple_choice",
+        "question": "b) Which of the following correctly identifies the points on each hyperbola closest to the origin (to 2 decimal places)?",
+        "opts": [
+          "k=2: \\((-1.41, -1.41)\\) and \\((1.41, 1.41)\\); k=6: \\((-2.45, -2.45)\\) and \\((2.45, 2.45)\\); k=12: \\((-3.46, -3.46)\\) and \\((3.46, 3.46)\\)",
+          "k=2: \\((-1, -2)\\) and \\((1, 2)\\); k=6: \\((-2, -3)\\) and \\((2, 3)\\); k=12: \\((-3, -4)\\) and \\((3, 4)\\)",
+          "k=2: \\((-2, -1)\\) and \\((2, 1)\\); k=6: \\((-3, -2)\\) and \\((3, 2)\\); k=12: \\((-4, -3)\\) and \\((4, 3)\\)",
+          "k=2: \\((-2, -2)\\) and \\((2, 2)\\); k=6: \\((-6, -6)\\) and \\((6, 6)\\); k=12: \\((-12, -12)\\) and \\((12, 12)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q3c",
@@ -160,7 +184,7 @@ export const Y11_CH3H_QUESTIONS = [
           "\\( x = 0 \\)",
           "\\( y = 2x \\)"
         ],
-        "a": "\\( y = -x \\)"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -198,9 +222,15 @@ export const Y11_CH3H_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3h-q4a",
-        "type": "short_answer",
-        "question": "a) Complete the table of values for \\( y = 2^x \\) for \\( x = -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2 \\). Round to 2 decimal places. (Format: 'y = a, b, c, d, e, f, g, h, i')",
-        "a": "y = 0.25, 0.35, 0.5, 0.71, 1, 1.41, 2, 2.83, 4"
+        "type": "multiple_choice",
+        "question": "a) Which of the following matches the correct set of values for \\( y = 2^x \\) for \\( x = -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2 \\)?",
+        "opts": [
+          "\\(y = 0.25, 0.35, 0.5, 0.71, 1, 1.41, 2, 2.83, 4\\)",
+          "\\(y = -4, -3, -2, -1, 0, 1, 2, 3, 4\\)",
+          "\\(y = 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64\\)",
+          "\\(y = 0.25, 0.35, 0.5, 0.71, 0, 1.41, 2, 2.83, 4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q4b",
@@ -210,27 +240,51 @@ export const Y11_CH3H_QUESTIONS = [
       },
       {
         "id": "y11a-3h-q4c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) What is the \\( y \\)-intercept of the function?",
-        "a": "1"
+        "opts": [
+          "\\(1\\)",
+          "\\(0\\)",
+          "\\(2\\)",
+          "\\(-1\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q4d",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "d) What is the \\( y \\)-coordinate when \\( x = 1 \\)?",
-        "a": "2"
+        "opts": [
+          "\\(2\\)",
+          "\\(1\\)",
+          "\\(0.5\\)",
+          "\\(4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q4e",
-        "type": "short_answer",
-        "question": "e) Write down the equation of the horizontal asymptote.",
-        "a": "y = 0"
+        "type": "multiple_choice",
+        "question": "e) Identify the equation of the horizontal asymptote.",
+        "opts": [
+          "\\(y = 0\\)",
+          "\\(x = 0\\)",
+          "\\(y = 1\\)",
+          "\\(y = -4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q4f",
-        "type": "short_answer",
-        "question": "f) State the domain and range of the function. (Format: 'domain: all real x, range: y > k')",
-        "a": "domain: all real x, range: y > 0"
+        "type": "multiple_choice",
+        "question": "f) State the domain and range of the function.",
+        "opts": [
+          "domain: all real \\(x\\), range: \\(y > 0\\)",
+          "domain: \\(x > 0\\), range: all real \\(y\\)",
+          "domain: \\(x \\neq 0\\), range: \\(y \\neq 0\\)",
+          "domain: all real \\(x\\), range: \\(y \\ge 1\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -260,15 +314,27 @@ export const Y11_CH3H_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3h-q5a",
-        "type": "short_answer",
-        "question": "a) Complete the table of values for \\( x = -2, -1, 0, 1, 2 \\). (Format: 'y = a, b, c, d, e' using fractions for small values)",
-        "a": "y = 1/9, 1/3, 1, 3, 9"
+        "type": "multiple_choice",
+        "question": "a) Which of the following matches the correct set of values for \\( y = 3^x \\) for \\( x = -2, -1, 0, 1, 2 \\)?",
+        "opts": [
+          "\\(y = \\frac{1}{9}, \\frac{1}{3}, 1, 3, 9\\)",
+          "\\(y = -9, -3, 0, 3, 9\\)",
+          "\\(y = \\frac{1}{6}, \\frac{1}{3}, 1, 3, 6\\)",
+          "\\(y = 9, 3, 1, \\frac{1}{3}, \\frac{1}{9}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q5b",
-        "type": "short_answer",
-        "question": "b) Write down the \\( y \\)-intercept and the horizontal asymptote.",
-        "a": "(0, 1), y = 0"
+        "type": "multiple_choice",
+        "question": "b) Identify the \\( y \\)-intercept and the horizontal asymptote.",
+        "opts": [
+          "\\((0, 1)\\), \\(y = 0\\)",
+          "\\((0, 3)\\), \\(y = 0\\)",
+          "\\((0, 1)\\), \\(x = 0\\)",
+          "\\((0, 0)\\), \\(y = 1\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -392,13 +458,19 @@ export const Y11_CH3H_QUESTIONS = [
           "They are shifted versions of the growth curves.",
           "They are identical to the growth curves."
         ],
-        "a": "They are reflections of the growth curves in the y-axis."
+        "a": 0
       },
       {
         "id": "y11a-3h-q9c",
-        "type": "short_answer",
-        "question": "c) Write down the domain and range of each function. (Format: 'domain: ..., range: ...')",
-        "a": "domain: all real x, range: y > 0"
+        "type": "multiple_choice",
+        "question": "c) Identify the domain and range of each function.",
+        "opts": [
+          "domain: all real \\(x\\), range: \\(y > 0\\)",
+          "domain: \\(x > 0\\), range: all real \\(y\\)",
+          "domain: \\(x \\neq 0\\), range: \\(y \\neq 0\\)",
+          "domain: all real \\(x\\), range: all real \\(y\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -513,7 +585,7 @@ export const Y11_CH3H_QUESTIONS = [
       "Yes, it is a hyperbola with asymptotes \\( y = \\pm x \\) but has no real vertices.",
       "No, it represents a circle of radius 0."
     ],
-    "a": "No, because it factorizes into \\( (x-y)(x+y) = 0 \\), which represents two intersecting straight lines.",
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Factorize the difference of two squares.",
@@ -567,15 +639,27 @@ export const Y11_CH3H_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3h-q14a",
-        "type": "short_answer",
-        "question": "a) Solve the equations simultaneously to find the coordinates of the intersection points in terms of \\( c \\). (Format: '(-a, -b) and (a, b)' where parameters are expressed in terms of c)",
-        "a": "(-c/\\sqrt{2}, -c\\sqrt{2}) and (c/\\sqrt{2}, c\\sqrt{2})"
+        "type": "multiple_choice",
+        "question": "a) Solve the equations simultaneously to find the coordinates of the intersection points in terms of \\( c \\).",
+        "opts": [
+          "\\(\\left(-\\frac{c}{\\sqrt{2}}, -c\\sqrt{2}\\right)\\) and \\(\\left(\\frac{c}{\\sqrt{2}}, c\\sqrt{2}\\right)\\)",
+          "\\((-c, -2c)\\) and \\((c, 2c)\\)",
+          "\\(\\left(-\\frac{c}{2}, -c\\right)\\) and \\(\\left(\\frac{c}{2}, c\\right)\\)",
+          "\\(\\left(-\\sqrt{2}c, -\\frac{c}{\\sqrt{2}}\\right)\\) and \\(\\left(\\sqrt{2}c, \\frac{c}{\\sqrt{2}}\\right)\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q14b",
-        "type": "short_answer",
-        "question": "b) Find the exact intersection points when \\( c = 4 \\). (Format: '(-x, -y) and (x, y)')",
-        "a": "(-2\\sqrt{2}, -4\\sqrt{2}) and (2\\sqrt{2}, 4\\sqrt{2})"
+        "type": "multiple_choice",
+        "question": "b) Find the exact intersection points when \\( c = 4 \\).",
+        "opts": [
+          "\\((-2\\sqrt{2}, -4\\sqrt{2})\\) and \\((2\\sqrt{2}, 4\\sqrt{2})\\)",
+          "\\((-4, -8)\\) and \\((4, 8)\\)",
+          "\\((-2, -4)\\) and \\((2, 4)\\)",
+          "\\((-4\\sqrt{2}, -2\\sqrt{2})\\) and \\((4\\sqrt{2}, 2\\sqrt{2})\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -598,16 +682,22 @@ export const Y11_CH3H_QUESTIONS = [
   {
     "id": "y11a-3h-q15",
     "type": "teacher_review",
-    "difficulty": "hard",
-    "timeLimit": 120,
+    "difficulty": "medium",
+    "timeLimit": 90,
     "t": "Two graphs that have asymptotes",
     "question": "Some curves can cross their asymptotes. Consider the curve \\( y = \\frac{4x}{x^2+1} \\).",
     "subQuestions": [
       {
         "id": "y11a-3h-q15a",
-        "type": "short_answer",
-        "question": "a) Complete the table of values for \\( y = \\frac{4x}{x^2+1} \\) at \\( x = -6, -3, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 3, 6 \\). Round to 2 decimal places. (Format: 'y = a, b, c, d, e, f, g, h, i, j, k')",
-        "a": "y = -0.65, -1.2, -1.85, -2, -1.6, 0, 1.6, 2, 1.85, 1.2, 0.65"
+        "type": "multiple_choice",
+        "question": "a) Which of the following matches the correct set of values (rounded to 2 decimal places) for \\( y = \\frac{4x}{x^2+1} \\) at \\( x = -6, -3, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 3, 6 \\)?",
+        "opts": [
+          "\\(y = -0.65, -1.2, -1.85, -2, -1.6, 0, 1.6, 2, 1.85, 1.2, 0.65\\)",
+          "\\(y = -2.4, -1.2, -0.6, 0, 0.6, 1.2, 2.4, 2.0, 1.5, 1.0, 0.5\\)",
+          "\\(y = -0.65, -1.2, -1.85, -2, -1.6, \\text{undefined}, 1.6, 2, 1.85, 1.2, 0.65\\)",
+          "\\(y = -0.33, -0.67, -1.0, -2, -1.0, 0, 1.0, 2, 1.0, 0.67, 0.33\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q15b",
@@ -617,15 +707,27 @@ export const Y11_CH3H_QUESTIONS = [
       },
       {
         "id": "y11a-3h-q15c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) What is the horizontal asymptote of this curve?",
-        "a": "y = 0"
+        "opts": [
+          "\\(y = 0\\)",
+          "\\(y = 4\\)",
+          "\\(x = 0\\)",
+          "\\(y = 1\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3h-q15d",
-        "type": "short_answer",
-        "question": "d) Where does the curve cross its asymptote? (Format: '(x, y)')",
-        "a": "(0, 0)"
+        "type": "multiple_choice",
+        "question": "d) Where does the curve cross its asymptote?",
+        "opts": [
+          "\\((0, 0)\\)",
+          "\\((1, 2)\\)",
+          "\\((-1, -2)\\)",
+          "It never crosses its asymptote"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [

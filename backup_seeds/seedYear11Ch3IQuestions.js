@@ -10,27 +10,51 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q1a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Write this relationship algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "y = kx"
+        "opts": [
+          "\\(y = kx\\)",
+          "\\(y = \\frac{k}{x}\\)",
+          "\\(y = k + x\\)",
+          "\\(y = kx^2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q1b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) Find the value of \\( k \\) if \\( y = 12 \\) when \\( x = 3 \\).",
-        "a": "4"
+        "opts": [
+          "\\(4\\)",
+          "\\(36\\)",
+          "\\(9\\)",
+          "\\(0.25\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q1c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) Find the value of \\( k \\) if \\( y = -10 \\) when \\( x = 2 \\).",
-        "a": "-5"
+        "opts": [
+          "\\(-5\\)",
+          "\\(-20\\)",
+          "\\(-8\\)",
+          "\\(-0.2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q1d",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "d) Find the value of \\( k \\) if \\( y = 8 \\) when \\( x = 5 \\).",
-        "a": "1.6"
+        "opts": [
+          "\\(1.6\\)",
+          "\\(40\\)",
+          "\\(3\\)",
+          "\\(0.625\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -48,12 +72,18 @@ export const Y11_CH3I_QUESTIONS = [
   // ── QUESTION 2a ──
   {
     "id": "y11a-3i-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Direct and inverse variation",
     "question": "It is known that \\( y \\) is inversely proportional to \\( x \\). If the algebraic relation is written as \\( y = \\frac{k}{x} \\), find the value of the constant of proportionality \\( k \\) when \\( y = 3 \\) and \\( x = 4 \\).",
-    "a": "12",
+    "opts": [
+      "\\(12\\)",
+      "\\(0.75\\)",
+      "\\(1.33\\)",
+      "\\(7\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = 3 \\) and \\( x = 4 \\) into the inverse variation equation \\( y = \\frac{k}{x} \\).",
@@ -65,12 +95,18 @@ export const Y11_CH3I_QUESTIONS = [
   // ── QUESTION 2b ──
   {
     "id": "y11a-3i-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Direct and inverse variation",
     "question": "It is known that \\( y \\) is inversely proportional to \\( x \\). If the algebraic relation is written as \\( y = \\frac{k}{x} \\), find the value of the constant of proportionality \\( k \\) when \\( y = \\frac{1}{4} \\) and \\( x = -2 \\).",
-    "a": "-0.5",
+    "opts": [
+      "\\(-0.5\\)",
+      "\\(-8\\)",
+      "\\(-2\\)",
+      "\\(-0.125\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = \\frac{1}{4} \\) and \\( x = -2 \\) into the inverse variation equation \\( y = \\frac{k}{x} \\).",
@@ -82,12 +118,18 @@ export const Y11_CH3I_QUESTIONS = [
   // ── QUESTION 2c ──
   {
     "id": "y11a-3i-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Direct and inverse variation",
     "question": "It is known that \\( y \\) is inversely proportional to \\( x \\). If the algebraic relation is written as \\( y = \\frac{k}{x} \\), find the value of the constant of proportionality \\( k \\) when \\( y = -3 \\) and \\( x = 5 \\).",
-    "a": "-15",
+    "opts": [
+      "\\(-15\\)",
+      "\\(-0.6\\)",
+      "\\(-1.67\\)",
+      "\\(2\\)"
+    ],
+    "a": 0,
     "solutionSteps": [
       {
         "explanation": "Substitute \\( y = -3 \\) and \\( x = 5 \\) into the inverse variation equation \\( y = \\frac{k}{x} \\).",
@@ -115,7 +157,7 @@ export const Y11_CH3I_QUESTIONS = [
           "It is multiplied by 9",
           "It remains unchanged"
         ],
-        "a": "It is tripled"
+        "a": 0
       },
       {
         "id": "y11a-3i-q3b",
@@ -127,7 +169,7 @@ export const Y11_CH3I_QUESTIONS = [
           "It is divided by 16",
           "It remains unchanged"
         ],
-        "a": "It is divided by 4"
+        "a": 0
       },
       {
         "id": "y11a-3i-q3c",
@@ -139,7 +181,7 @@ export const Y11_CH3I_QUESTIONS = [
           "It is divided by 9",
           "It is multiplied by 9"
         ],
-        "a": "It is divided by 3"
+        "a": 0
       },
       {
         "id": "y11a-3i-q3d",
@@ -151,7 +193,7 @@ export const Y11_CH3I_QUESTIONS = [
           "It is multiplied by 16",
           "It is divided by 16"
         ],
-        "a": "It is multiplied by 4"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -177,21 +219,39 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q4a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) i) Write this relationship algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "y = k/x^2"
+        "opts": [
+          "\\(y = \\frac{k}{x^2}\\)",
+          "\\(y = kx^2\\)",
+          "\\(y = \\frac{k}{x}\\)",
+          "\\(y = \\frac{k}{\\sqrt{x}}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q4b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) ii) Determine the constant \\( k \\) if it is found that \\( y = 3 \\) when \\( x = 2 \\).",
-        "a": "12"
+        "opts": [
+          "\\(12\\)",
+          "\\(6\\)",
+          "\\(1.5\\)",
+          "\\(0.75\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q4c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) iii) Evaluate \\( y \\) when \\( x = 4 \\).",
-        "a": "0.75"
+        "opts": [
+          "\\(0.75\\)",
+          "\\(0.1875\\)",
+          "\\(3\\)",
+          "\\(12\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q4d",
@@ -203,7 +263,7 @@ export const Y11_CH3I_QUESTIONS = [
           "It is divided by 3",
           "It is multiplied by 9"
         ],
-        "a": "It is divided by 9"
+        "a": 0
       },
       {
         "id": "y11a-3i-q4e",
@@ -215,7 +275,7 @@ export const Y11_CH3I_QUESTIONS = [
           "It is multiplied by 4",
           "It is divided by 4"
         ],
-        "a": "It is multiplied by 16"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -249,21 +309,39 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q5a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Write this algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "A = kh"
+        "opts": [
+          "\\(A = kh\\)",
+          "\\(A = \\frac{k}{h}\\)",
+          "\\(A = kh^2\\)",
+          "\\(A = k\\sqrt{h}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q5b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) Determine \\( k \\) if \\( A = 15\\text{ cm}^2 \\) when \\( h = 5\\text{ cm} \\).",
-        "a": "3"
+        "opts": [
+          "\\(3\\)",
+          "\\(75\\)",
+          "\\(0.33\\)",
+          "\\(5\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q5c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) What are the units of \\( k \\)?",
-        "a": "cm"
+        "opts": [
+          "\\(\\text{cm}\\)",
+          "\\(\\text{cm}^2\\)",
+          "\\(\\text{cm}^{-1}\\)",
+          "It is unitless"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q5d",
@@ -299,27 +377,51 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q6a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Write this algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "m = ks"
+        "opts": [
+          "\\(m = ks\\)",
+          "\\(m = \\frac{k}{s}\\)",
+          "\\(s = km\\)",
+          "\\(m = ks^2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q6b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) The length of the Mustang is \\( 10.0\\text{ m} \\) and the model has length \\( 0.25\\text{ m} \\). What is the constant of proportionality \\( k \\)?",
-        "a": "0.025"
+        "opts": [
+          "\\(0.025\\)",
+          "\\(40\\)",
+          "\\(2.5\\)",
+          "\\(0.25\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q6c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) The height of the Mustang on the runway is \\( 3.6\\text{ m} \\). What is the height of the model in cm?",
-        "a": "9"
+        "opts": [
+          "\\(9\\)",
+          "\\(0.09\\)",
+          "\\(144\\)",
+          "\\(14.4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q6d",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "d) The wingspan of the model is \\( 285\\text{ mm} \\). What is the wingspan of the Mustang in metres?",
-        "a": "11.4"
+        "opts": [
+          "\\(11.4\\)",
+          "\\(7.125\\)",
+          "\\(1.14\\)",
+          "\\(114\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -353,27 +455,51 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q7a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Write this algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "P = kA"
+        "opts": [
+          "\\(P = kA\\)",
+          "\\(P = \\frac{k}{A}\\)",
+          "\\(A = kP\\)",
+          "\\(P = kA^2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q7b",
-        "type": "short_answer",
-        "question": "b) A certain building requires \\( 36\text{ L} \) to cover an area of \\( 360\text{ m}^2 \\). Find the constant of proportionality \\( k \\).",
-        "a": "0.1"
+        "type": "multiple_choice",
+        "question": "b) A certain building requires \\( 36\\text{ L} \\) to cover an area of \\( 360\\text{ m}^2 \\). Find the constant of proportionality \\( k \\).",
+        "opts": [
+          "\\(0.1\\)",
+          "\\(10\\)",
+          "\\(12.96\\)",
+          "\\(0.01\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q7c",
-        "type": "short_answer",
-        "question": "c) A larger building has an area of \\( 452\text{ m}^2  \\) to be painted. How many litres of paint will this require?",
-        "a": "45.2"
+        "type": "multiple_choice",
+        "question": "c) A larger building has an area of \\( 452\\text{ m}^2 \\) to be painted. How many litres of paint will this require?",
+        "opts": [
+          "\\(45.2\\)",
+          "\\(4.52\\)",
+          "\\(4520\\)",
+          "\\(90.4\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q7d",
-        "type": "short_answer",
-        "question": "d) A paint supplier sells \\( 20\text{ L}  \\) buckets and \\( 2\text{ L}  \\) tins of paint. What is the minimum number of buckets and tins that must be bought to cover the \\( 452\text{ m}^2  \\) area completely with zero or minimal leftover? (Format: 'X buckets and Y tins')",
-        "a": "2 buckets and 3 tins"
+        "type": "multiple_choice",
+        "question": "d) A paint supplier sells \\( 20\\text{ L} \\) buckets and \\( 2\\text{ L} \\) tins of paint. What is the minimum number of buckets and tins that must be bought to cover the \\( 452\\text{ m}^2 \\) area completely with minimal leftover?",
+        "opts": [
+          "2 buckets and 3 tins",
+          "2 buckets and 2 tins",
+          "3 buckets and 0 tins",
+          "1 bucket and 13 tins"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -415,15 +541,27 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q8a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Last year, the price of a Fizgig was \\( p = \\$5 \\) and the quantity sold was \\( q = 600,000 \\). Find \\( T \\).",
-        "a": "3000000"
+        "opts": [
+          "\\(3,000,000\\)",
+          "\\(120,000\\)",
+          "\\(1,200,000\\)",
+          "\\(30,000,000\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q8b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) The company's board of directors wants to raise the price to \\( p = \\$10 \\) next year. How many Fizgigs can the company expect to sell if this happens?",
-        "a": "300000"
+        "opts": [
+          "\\(300,000\\)",
+          "\\(600,000\\)",
+          "\\(150,000\\)",
+          "\\(1,500,000\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q8c",
@@ -435,7 +573,7 @@ export const Y11_CH3I_QUESTIONS = [
           "Divided by 9",
           "Multiplied by 9"
         ],
-        "a": "Divided by 3"
+        "a": 0
       },
       {
         "id": "y11a-3i-q8d",
@@ -479,27 +617,51 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q9a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) i) If kept at constant pressure, volume \\( V \\) varies directly with temperature \\( T \\) (in Kelvin). Write this relationship using constant \\( k \\).",
-        "a": "V = kT"
+        "opts": [
+          "\\(V = kT\\)",
+          "\\(V = \\frac{k}{T}\\)",
+          "\\(T = kV\\)",
+          "\\(V = kT^2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q9b",
-        "type": "short_answer",
-        "question": "a) ii) A gas occupies \\( 1.5\\text{ m}^3  \\) when \\( T = 300\\text{ K} \\). What volume in \\( \\text{cm}^3 \\) will it occupy when the temperature is \\( T = 320\\text{ K} \\)?",
-        "a": "1600000"
+        "type": "multiple_choice",
+        "question": "a) ii) A gas occupies \\( 1.5\\text{ m}^3 \\) when \\( T = 300\\text{ K} \\). What volume in \\( \\text{cm}^3 \\) will it occupy when the temperature is \\( T = 320\\text{ K} \\)?",
+        "opts": [
+          "\\(1,600,000\\)",
+          "\\(1.6\\)",
+          "\\(160,000\\)",
+          "\\(1,406,250\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q9c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) i) If kept at constant temperature, pressure \\( P \\) varies inversely with volume \\( V \\). Write this relationship using constant \\( k \\).",
-        "a": "P = k/V"
+        "opts": [
+          "\\(P = \\frac{k}{V}\\)",
+          "\\(P = kV\\)",
+          "\\(V = \\frac{k}{P}\\)",
+          "\\(P = \\frac{k}{V^2}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q9d",
-        "type": "short_answer",
-        "question": "b) ii) A certain amount of gas is at \\( 3 \\) times atmospheric pressure when it occupies \\( 8\\text{ L} \\). What is the pressure when the volume is \\( 20\\text{ L} \\)? (Express as a multiple of atmospheric pressure)",
-        "a": "1.2"
+        "type": "multiple_choice",
+        "question": "b) ii) A certain amount of gas is at \\( 3 \\) times atmospheric pressure when it occupies \\( 8\\text{ L} \\). What is the pressure when the volume is \\( 20\\text{ L} \\)?",
+        "opts": [
+          "\\(1.2\\) times atmospheric pressure",
+          "\\(7.5\\) times atmospheric pressure",
+          "\\(1.5\\) times atmospheric pressure",
+          "\\(0.83\\) times atmospheric pressure"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -533,45 +695,87 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q10a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) i) If velocity \\( v\\text{ m/s} \\) varies directly with time \\( t\\text{ s} \\), and after \\( 3\\text{ s} \\) the speed is \\( 6\\text{ m/s} \\), find the constant of proportionality \\( k \\).",
-        "a": "2"
+        "opts": [
+          "\\(2\\)",
+          "\\(18\\)",
+          "\\(0.5\\)",
+          "\\(9.8\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q10b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) ii) What is the speed of the object at \\( t = 10\\text{ s} \\)?",
-        "a": "20"
+        "opts": [
+          "\\(20\\text{ m/s}\\)",
+          "\\(5\\text{ m/s}\\)",
+          "\\(10\\text{ m/s}\\)",
+          "\\(200\\text{ m/s}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q10c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) iii) When will the object be travelling at \\( 15\\text{ m/s} \\)?",
-        "a": "7.5"
+        "opts": [
+          "\\(7.5\\text{ s}\\)",
+          "\\(30\\text{ s}\\)",
+          "\\(5\\text{ s}\\)",
+          "\\(4.5\\text{ s}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q10d",
-        "type": "short_answer",
-        "question": "b) Write the formula for distance \\( x \\) being proportional to the square of time \\( t  \\) algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "x = kt^2"
+        "type": "multiple_choice",
+        "question": "b) Write the formula for distance \\( x \\) being proportional to the square of time \\( t \\) algebraically.",
+        "opts": [
+          "\\(x = kt^2\\)",
+          "\\(x = \\frac{k}{t^2}\\)",
+          "\\(x = kt\\)",
+          "\\(x = k\\sqrt{t}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q10e",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) i) If after \\( 3\\text{ s} \\) the distance travelled is \\( x = 9\\text{ m} \\), find the value of the constant of proportionality \\( k \\).",
-        "a": "1"
+        "opts": [
+          "\\(1\\)",
+          "\\(3\\)",
+          "\\(0.33\\)",
+          "\\(9\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q10f",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) ii) How far has the object travelled at \\( t = 10\\text{ s} \\)?",
-        "a": "100"
+        "opts": [
+          "\\(100\\text{ m}\\)",
+          "\\(10\\text{ m}\\)",
+          "\\(20\\text{ m}\\)",
+          "\\(50\\text{ m}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q10g",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) iii) How much time has elapsed when \\( x = 144\\text{ m} \\)?",
-        "a": "12"
+        "opts": [
+          "\\(12\\text{ s}\\)",
+          "\\(72\\text{ s}\\)",
+          "\\(14.4\\text{ s}\\)",
+          "\\(38\\text{ s}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q10h",
@@ -583,7 +787,7 @@ export const Y11_CH3I_QUESTIONS = [
           "It is multiplied by 8",
           "It is halved"
         ],
-        "a": "It is multiplied by 4"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -604,7 +808,7 @@ export const Y11_CH3I_QUESTIONS = [
         "workingOut": "x(10) = 1 \\cdot 10^2 = 100\\text{ m}\n144 = 1 \\cdot t^2 \\implies t = \\sqrt{144} = 12\\text{ s}"
       },
       {
-        "explanation": "Since \\( x \\propto t^2 \\), doubling \\( t  \\) results in multiplying \\( x \\) by \\( 2^2 = 4 \\).",
+        "explanation": "Since \\( x \\propto t^2 \\), doubling \\( t \\) results in multiplying \\( x \\) by \\( 2^2 = 4 \\).",
         "workingOut": ""
       }
     ]
@@ -621,9 +825,15 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q11a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Write this algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "a = k/r^2"
+        "opts": [
+          "\\(a = \\frac{k}{r^2}\\)",
+          "\\(a = kr^2\\)",
+          "\\(a = \\frac{k}{r}\\)",
+          "\\(r = \\frac{k}{a^2}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q11b",
@@ -635,7 +845,7 @@ export const Y11_CH3I_QUESTIONS = [
           "1.26 \\times 10^{13}",
           "3.71 \\times 10^{6}"
         ],
-        "a": "4.26 \\times 10^{13}"
+        "a": 0
       },
       {
         "id": "y11a-3i-q11c",
@@ -645,21 +855,27 @@ export const Y11_CH3I_QUESTIONS = [
       },
       {
         "id": "y11a-3i-q11d",
-        "type": "short_answer",
-        "question": "d) A satellite is in orbit around Mars at an altitude of \\( 17,000\\text{ km} \\) above the surface. Find the acceleration due to gravity at this height, correct to 2 decimal places. (in \\( \\text{m/s}^2 \\))",
-        "a": "0.10"
+        "type": "multiple_choice",
+        "question": "d) A satellite is in orbit around Mars at an altitude of \\( 17,000\\text{ km} \\) above the surface. Find the acceleration due to gravity at this height, correct to 2 decimal places.",
+        "opts": [
+          "\\(0.10\\text{ m/s}^2\\)",
+          "\\(0.20\\text{ m/s}^2\\)",
+          "\\(0.03\\text{ m/s}^2\\)",
+          "\\(0.50\\text{ m/s}^2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q11e",
         "type": "multiple_choice",
-        "question": "e) What happens to \\( a  \\) when the distance from the centre of Mars is doubled?",
+        "question": "e) What happens to \\( a \\) when the distance from the centre of Mars is doubled?",
         "opts": [
           "It is divided by 4",
           "It is halved",
           "It is multiplied by 4",
           "It is doubled"
         ],
-        "a": "It is divided by 4"
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -755,27 +971,51 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q13a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) i) The time to empty a cylindrical tank is proportional to the square-root of the initial depth. Write this relationship using constant \\( k \\).",
-        "a": "t = k\\sqrt{h}"
+        "opts": [
+          "\\(t = k\\sqrt{h}\\)",
+          "\\(t = \\frac{k}{\\sqrt{h}}\\)",
+          "\\(t = kh^2\\)",
+          "\\(t = kh\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q13b",
-        "type": "short_answer",
-        "question": "a) ii) When the initial depth was \\( 4\\text{ m} \\) the time taken was \\( 6000\\text{ s} \\). How long will it take to empty this tank if it is filled to a depth of \\( 9\\text{ m} \\)? (in seconds)",
-        "a": "9000"
+        "type": "multiple_choice",
+        "question": "a) ii) When the initial depth was \\( 4\\text{ m} \\) the time taken was \\( 6000\\text{ s} \\). How long will it take to empty this tank if it is filled to a depth of \\( 9\\text{ m} \\)?",
+        "opts": [
+          "\\(9000\\text{ s}\\)",
+          "\\(13500\\text{ s}\\)",
+          "\\(4000\\text{ s}\\)",
+          "\\(18000\\text{ s}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q13c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) i) The time to empty a conical tank is proportional to the square-root of the fifth power of the initial depth. Write this relationship using constant \\( k \\).",
-        "a": "t = k\\sqrt{h^5}"
+        "opts": [
+          "\\(t = k\\sqrt{h^5}\\)",
+          "\\(t = kh^{2.5}\\)",
+          "\\(t = k\\sqrt[5]{h^2}\\)",
+          "Both A and B are correct"
+        ],
+        "a": 3
       },
       {
         "id": "y11a-3i-q13d",
-        "type": "short_answer",
-        "question": "b) ii) When the initial depth was \\( 3\\text{ m} \\) the time taken was \\( 486\\text{ s} \\). How long will it take to empty this tank if it is filled to a depth of \\( 5\\text{ m} \\)? (Round to the nearest second)",
-        "a": "1743"
+        "type": "multiple_choice",
+        "question": "b) ii) When the initial depth was \\( 3\\text{ m} \\) the time taken was \\( 486\\text{ s} \\). How long will it take to empty this tank if it is filled to a depth of \\( 5\\text{ m} \\)?",
+        "opts": [
+          "\\(1743\\text{ s}\\)",
+          "\\(2250\\text{ s}\\)",
+          "\\(1125\\text{ s}\\)",
+          "\\(1350\\text{ s}\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -801,27 +1041,51 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q14a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Write this algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "F = kV^2"
+        "opts": [
+          "\\(F = kV^2\\)",
+          "\\(F = \\frac{k}{V^2}\\)",
+          "\\(F = kV\\)",
+          "\\(V = k\\sqrt{F}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q14b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) A car drives at \\( 252\\text{ km/h} \\) (which is \\( 70\\text{ m/s} \\)) around a bend. The force keeping the car on the road is \\( 9,800\\text{ N} \\). Find \\( k \\) when speed is measured in \\( \\text{m/s} \\).",
-        "a": "2"
+        "opts": [
+          "\\(2\\)",
+          "\\(0.5\\)",
+          "\\(140\\)",
+          "\\(0.002\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q14c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) On the next lap, the car takes the corner at \\( 216\\text{ km/h} \\) (which is \\( 60\\text{ m/s} \\)). What is the force for this lap in newtons?",
-        "a": "7200"
+        "opts": [
+          "\\(7200\\text{ N}\\)",
+          "\\(8400\\text{ N}\\)",
+          "\\(3600\\text{ N}\\)",
+          "\\(4800\\text{ N}\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q14d",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "d) If the speed of the car is doubled, by what factor has the force increased?",
-        "a": "4"
+        "opts": [
+          "\\(4\\)",
+          "\\(2\\)",
+          "\\(8\\)",
+          "\\(1.41\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
@@ -855,15 +1119,27 @@ export const Y11_CH3I_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-3i-q15a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Write this relationship algebraically using \\( k \\) as the constant of proportionality.",
-        "a": "P = k\\sqrt{L}"
+        "opts": [
+          "\\(P = k\\sqrt{L}\\)",
+          "\\(P = \\frac{k}{\\sqrt{L}}\\)",
+          "\\(P = kL^2\\)",
+          "\\(L = kP^2\\)"
+        ],
+        "a": 0
       },
       {
         "id": "y11a-3i-q15b",
-        "type": "short_answer",
-        "question": "b) When the length of the pendulum is \\( L = 0.36\\text{ m} \\), the period is \\( P = 1.20\\text{ s} \\). What will be the period of a conical pendulum with length \\( L = 2.25\\text{ m} \\)? (in seconds)",
-        "a": "3"
+        "type": "multiple_choice",
+        "question": "b) When the length of the pendulum is \\( L = 0.36\\text{ m} \\), the period is \\( P = 1.20\\text{ s} \\). What will be the period of a conical pendulum with length \\( L = 2.25\\text{ m} \\)?",
+        "opts": [
+          "\\(3\\text{ s}\\)",
+          "\\(7.5\\text{ s}\\)",
+          "\\(1.5\\text{ s}\\)",
+          "\\(4.5\\text{ s}\\)"
+        ],
+        "a": 0
       }
     ],
     "solutionSteps": [
