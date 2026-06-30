@@ -4,7 +4,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 16: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 16: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -14,6 +14,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -21,7 +29,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 16: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 16: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -38,29 +46,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\(x > -2\\)?",
+    "question": "Graph of \\\\(x > -2\\\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "(-2, \\infty)",
+        "text": "\\\\((-2, \\\\infty)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "(-\\infty, -2)",
+        "text": "(-\\\\infty, -2)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-2, \\\\infty) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-2, \\\\infty) + 2\\\\)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-2, \\infty)\\)",
+    "solution": "\\\\((-2, \\\\infty)\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\(x > -2\\)?",
+        "workingOut": "Graph of \\\\(x > -2\\\\)?",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-2, \\infty)\\)",
+        "workingOut": "\\\\((-2, \\\\infty)\\\\)",
         "graphData": null
       }
     ],
@@ -69,23 +85,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "0FS7LYu8dCopNZlXPNHM",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\((6, \\infty)\\) to inequality.",
-    "answer": "x>6",
-    "options": [],
+    "question": "Convert \\\\((6, \\\\infty)\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(x > 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x < 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x > 8\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x > 4\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x > 6\\)",
+    "solution": "\\\\(x > 6\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((6, \\infty)\\) to inequality.",
+        "workingOut": "Convert \\\\((6, \\\\infty)\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x > 6\\)",
+        "workingOut": "\\\\(x > 6\\\\)",
         "graphData": null
       }
     ],
@@ -94,23 +127,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "1ZP7IsR7n6Itd5af42C5",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\((-\\infty, -6]\\) to inequality.",
-    "answer": "x<=-6",
-    "options": [],
+    "question": "Convert \\\\((-\\\\infty, -6]\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(x \\\\le -6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times x \\\\le -6",
+        "imageUrl": ""
+      },
+      {
+        "text": "x \\\\le -6 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-x \\\\le -6",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\le -6\\)",
+    "solution": "\\\\(x \\\\le -6\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-\\infty, -6]\\) to inequality.",
+        "workingOut": "Convert \\\\((-\\\\infty, -6]\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\le -6\\)",
+        "workingOut": "\\\\(x \\\\le -6\\\\)",
         "graphData": null
       }
     ],
@@ -119,14 +169,31 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "2NdpfMvg2dT4cPLa0gtN",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Numbers greater than 5 in inequality form.",
-    "answer": "x>5",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(x > 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x < 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x > 7\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x > 3\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x > 5\\)",
+    "solution": "\\\\(x > 5\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
@@ -135,7 +202,7 @@ export const Y11A_CH2A_QUESTIONS = [
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x > 5\\)",
+        "workingOut": "\\\\(x > 5\\\\)",
         "graphData": null
       }
     ],
@@ -144,12 +211,29 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "3FCleTo32LJqAhRQpPrM",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Prime factors of 144?",
-    "answer": "2^4*3^2",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "2^4 * 3^2",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times 2^4 * 3^2",
+        "imageUrl": ""
+      },
+      {
+        "text": "2^4 * 3^2 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-2^4 * 3^2",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "2^4 * 3^2",
     "solutionSteps": [
@@ -176,19 +260,19 @@ export const Y11A_CH2A_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\((-4, \\infty)\\\\)",
+        "text": "\\\\(x > -4\\\\) starts at -4 (not included).",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(( -\\infty, -4]\\\\)",
+        "text": "\\\\(( -\\\\infty, -4]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(( -\\infty, -4)\\\\)",
+        "text": "\\\\(( -\\\\infty, -4)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\([-4, \\infty)\\\\)",
+        "text": "\\\\([-4, \\\\infty)\\\\)",
         "imageUrl": ""
       }
     ],
@@ -214,29 +298,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 1: Classify: \\(-3\\)",
+    "question": "Variation 1: Classify: \\\\(-3\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
+    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 1: Classify: \\(-3\\)",
+        "workingOut": "Variation 1: Classify: \\\\(-3\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
+        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -248,7 +340,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 4: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 4: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -258,6 +350,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -265,7 +365,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 4: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 4: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -282,7 +382,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Intersection of \\(x \\ge -1\\) and \\(x \\le 1\\)?",
+    "question": "Intersection of \\\\(x \\\\ge -1\\\\) and \\\\(x \\\\le 1\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -292,6 +392,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "(-1, 1)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\([-1, 1] + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\([-1, 1] + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -299,7 +407,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Intersection of \\(x \\ge -1\\) and \\(x \\le 1\\)?",
+        "workingOut": "Intersection of \\\\(x \\\\ge -1\\\\) and \\\\(x \\\\le 1\\\\)?",
         "graphData": null
       },
       {
@@ -313,23 +421,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "5mKykL6GIE7VmL1Q0amQ",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\((-6, 6]\\) to inequality.",
-    "answer": "-6<x<=6",
-    "options": [],
+    "question": "Convert \\\\((-6, 6]\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(-6 < x \\\\le 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-6 > x \\\\le 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-4 < x \\\\le 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-8 < x \\\\le 6\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-6 < x \\le 6\\)",
+    "solution": "\\\\(-6 < x \\\\le 6\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-6, 6]\\) to inequality.",
+        "workingOut": "Convert \\\\((-6, 6]\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-6 < x \\le 6\\)",
+        "workingOut": "\\\\(-6 < x \\\\le 6\\\\)",
         "graphData": null
       }
     ],
@@ -338,23 +463,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "6ZtU7wvI6yQDFP3tu4vs",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\(x \\ge -3\\) in bracket notation.",
-    "answer": "[-3,inf)",
-    "options": [],
+    "question": "Write \\\\(x \\\\ge -3\\\\) in bracket notation.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\([-3, \\\\infty)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times [-3, \\\\infty)",
+        "imageUrl": ""
+      },
+      {
+        "text": "[-3, \\\\infty) + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-[-3, \\\\infty)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\([-3, \\infty)\\)",
+    "solution": "\\\\([-3, \\\\infty)\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x \\ge -3\\) in bracket notation.",
+        "workingOut": "Write \\\\(x \\\\ge -3\\\\) in bracket notation.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\([-3, \\infty)\\)",
+        "workingOut": "\\\\([-3, \\\\infty)\\\\)",
         "graphData": null
       }
     ],
@@ -366,7 +508,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 19: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 19: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -376,6 +518,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -383,7 +533,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 19: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 19: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -400,7 +550,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Is \\(\\sqrt{1.44}\\) rational?",
+    "question": "Is \\\\(\\\\sqrt{1.44}\\\\) rational?",
     "answer": 0,
     "options": [
       {
@@ -410,6 +560,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "No",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1.2 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1.2 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -417,7 +575,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(\\sqrt{1.44}\\) rational?",
+        "workingOut": "Is \\\\(\\\\sqrt{1.44}\\\\) rational?",
         "graphData": null
       },
       {
@@ -434,7 +592,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(12\\%\\)",
+    "question": "Classify: \\\\(12\\\\%\\\\)",
     "answer": 0,
     "options": [
       {
@@ -444,6 +602,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -451,7 +617,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(12\\%\\)",
+        "workingOut": "Classify: \\\\(12\\\\%\\\\)",
         "graphData": null
       },
       {
@@ -465,23 +631,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "8JinUuilnNVmyBDEdgq7",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\([-6, 6]\\) to inequality.",
-    "answer": "-6<=x<=6",
-    "options": [],
+    "question": "Convert \\\\([-6, 6]\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(-6 \\\\le x \\\\le 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times -6 \\\\le x \\\\le 6",
+        "imageUrl": ""
+      },
+      {
+        "text": "-6 \\\\le x \\\\le 6 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "--6 \\\\le x \\\\le 6",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-6 \\le x \\le 6\\)",
+    "solution": "\\\\(-6 \\\\le x \\\\le 6\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\([-6, 6]\\) to inequality.",
+        "workingOut": "Convert \\\\([-6, 6]\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-6 \\le x \\le 6\\)",
+        "workingOut": "\\\\(-6 \\\\le x \\\\le 6\\\\)",
         "graphData": null
       }
     ],
@@ -490,12 +673,29 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "8onKMtnvxYHdlKpq61Qq",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "LCD of 1/12, 1/30, 1/75?",
-    "answer": "300",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "300",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times 300",
+        "imageUrl": ""
+      },
+      {
+        "text": "300 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-300",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "300",
     "solutionSteps": [
@@ -518,7 +718,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(0.\\dot{3}\\)",
+    "question": "Classify: \\\\(0.\\\\dot{3}\\\\)",
     "answer": 0,
     "options": [
       {
@@ -528,6 +728,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -535,7 +743,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(0.\\dot{3}\\)",
+        "workingOut": "Classify: \\\\(0.\\\\dot{3}\\\\)",
         "graphData": null
       },
       {
@@ -553,27 +761,27 @@ export const Y11A_CH2A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Express \\\\(0.32\\\\) as a fraction in simplest form.",
-    "answer": 2,
+    "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\frac{32}{100}\\\\)",
+        "text": "\\\\(0.32 = \\\\frac{32}{100} = \\\\frac{8}{25}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\frac{16}{50}\\\\)",
+        "text": "\\\\(\\\\frac{16}{50}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\frac{8}{25}\\\\)",
+        "text": "\\\\(\\\\frac{8}{25}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\frac{4}{12}\\\\)",
+        "text": "\\\\(\\\\frac{4}{12}\\\\)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(0.32 = \\frac{32}{100} = \\frac{8}{25}\\\\)",
+    "solution": "\\\\(0.32 = \\\\frac{32}{100} = \\\\frac{8}{25}\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
@@ -582,7 +790,7 @@ export const Y11A_CH2A_QUESTIONS = [
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(0.32 = \\frac{32}{100} = \\frac{8}{25}\\\\)",
+        "workingOut": "\\\\(0.32 = \\\\frac{32}{100} = \\\\frac{8}{25}\\\\)",
         "graphData": null
       }
     ],
@@ -594,29 +802,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 0: Classify: \\(-3\\)",
+    "question": "Variation 0: Classify: \\\\(-3\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
+    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 0: Classify: \\(-3\\)",
+        "workingOut": "Variation 0: Classify: \\\\(-3\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
+        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -628,29 +844,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt{4}\\)",
+    "question": "Classify: \\\\(\\\\sqrt{4}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(2\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(2\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(2\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(2\\) (Rational)",
+    "solution": "\\\\(2\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt{4}\\)",
+        "workingOut": "Classify: \\\\(\\\\sqrt{4}\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(2\\) (Rational)",
+        "workingOut": "\\\\(2\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -659,14 +883,31 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "Al0p3nwY5Gb9RfqVBslA",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Greater than 0 and less than or equal to 5.",
-    "answer": "0<x<=5",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(0 < x \\\\le 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(0 > x \\\\le 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 < x \\\\le 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-2 < x \\\\le 5\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(0 < x \\le 5\\)",
+    "solution": "\\\\(0 < x \\\\le 5\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
@@ -675,7 +916,7 @@ export const Y11A_CH2A_QUESTIONS = [
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(0 < x \\le 5\\)",
+        "workingOut": "\\\\(0 < x \\\\le 5\\\\)",
         "graphData": null
       }
     ],
@@ -687,7 +928,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\(x \\ge 6\\) unbounded?",
+    "question": "Is \\\\(x \\\\ge 6\\\\) unbounded?",
     "answer": 0,
     "options": [
       {
@@ -697,6 +938,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "No",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Yes + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Yes + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -704,7 +953,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(x \\ge 6\\) unbounded?",
+        "workingOut": "Is \\\\(x \\\\ge 6\\\\) unbounded?",
         "graphData": null
       },
       {
@@ -721,15 +970,23 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Key to proving \\(\\sqrt{3}\\) irrational?",
+    "question": "Key to proving \\\\(\\\\sqrt{3}\\\\) irrational?",
     "answer": 0,
     "options": [
       {
-        "text": "Common factor of 3",
+        "text": "Contradiction",
         "imageUrl": ""
       },
       {
         "text": "Zero denominator",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Contradiction + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Contradiction + 2\\\\)",
         "imageUrl": ""
       }
     ],
@@ -738,7 +995,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Key to proving \\(\\sqrt{3}\\) irrational?",
+        "workingOut": "Key to proving \\\\(\\\\sqrt{3}\\\\) irrational?",
         "graphData": null
       },
       {
@@ -755,7 +1012,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 15: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 15: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -765,6 +1022,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -772,7 +1037,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 15: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 15: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -786,14 +1051,31 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "D0z6T2c9KNV5hKyRZo5l",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Numbers less than or equal to -2.",
-    "answer": "x<=-2",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(x \\\\le -2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times x \\\\le -2",
+        "imageUrl": ""
+      },
+      {
+        "text": "x \\\\le -2 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-x \\\\le -2",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\le -2\\)",
+    "solution": "\\\\(x \\\\le -2\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
@@ -802,7 +1084,7 @@ export const Y11A_CH2A_QUESTIONS = [
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\le -2\\)",
+        "workingOut": "\\\\(x \\\\le -2\\\\)",
         "graphData": null
       }
     ],
@@ -814,29 +1096,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 2: Classify: \\(-3\\)",
+    "question": "Variation 2: Classify: \\\\(-3\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
+    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 2: Classify: \\(-3\\)",
+        "workingOut": "Variation 2: Classify: \\\\(-3\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
+        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -845,18 +1135,35 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "EKYaXc3CMdUGo6AXPyvk",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\(x \\le 0\\) in bracket notation.",
-    "answer": "(-inf,0]",
-    "options": [],
+    "question": "Write \\\\(x \\\\le 0\\\\) in bracket notation.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "(-inf, 0]",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times (-inf, 0]",
+        "imageUrl": ""
+      },
+      {
+        "text": "(-inf, 0] + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-(-inf, 0]",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "(-inf, 0]",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x \\le 0\\) in bracket notation.",
+        "workingOut": "Write \\\\(x \\\\le 0\\\\) in bracket notation.",
         "graphData": null
       },
       {
@@ -873,7 +1180,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Range for \\(\\pi\\)?",
+    "question": "Range for \\\\(\\\\pi\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -883,6 +1190,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "2 and 3",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -890,7 +1205,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Range for \\(\\pi\\)?",
+        "workingOut": "Range for \\\\(\\\\pi\\\\)?",
         "graphData": null
       },
       {
@@ -904,12 +1219,29 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "G4LgOrYf7VWnZMRJophk",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Primes between 90-100?",
-    "answer": "97",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "97",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times 97",
+        "imageUrl": ""
+      },
+      {
+        "text": "97 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-97",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "97",
     "solutionSteps": [
@@ -932,7 +1264,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 17: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 17: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -942,6 +1274,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -949,7 +1289,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 17: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 17: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -966,11 +1306,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write the inequality \\\\(-3 < x \\le 4\\\\) in bracket notation.",
-    "answer": 2,
+    "question": "Write the inequality \\\\(-3 < x \\\\le 4\\\\) in bracket notation.",
+    "answer": 0,
     "options": [
       {
-        "text": "\\\\([-3, 4]\\\\)",
+        "text": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\\\le\\\\)).",
         "imageUrl": ""
       },
       {
@@ -987,16 +1327,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\le\\\\)).",
+    "solution": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\\\le\\\\)).",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write the inequality \\\\(-3 < x \\le 4\\\\) in bracket notation.",
+        "workingOut": "Write the inequality \\\\(-3 < x \\\\le 4\\\\) in bracket notation.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\le\\\\)).",
+        "workingOut": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\\\le\\\\)).",
         "graphData": null
       }
     ],
@@ -1005,23 +1345,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "Hg85lbQOfERTeDlRDnLZ",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\([4, \\infty)\\) to inequality.",
-    "answer": "x>=4",
-    "options": [],
+    "question": "Convert \\\\([4, \\\\infty)\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(x \\\\ge 4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times x \\\\ge 4",
+        "imageUrl": ""
+      },
+      {
+        "text": "x \\\\ge 4 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-x \\\\ge 4",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\ge 4\\)",
+    "solution": "\\\\(x \\\\ge 4\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\([4, \\infty)\\) to inequality.",
+        "workingOut": "Convert \\\\([4, \\\\infty)\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\ge 4\\)",
+        "workingOut": "\\\\(x \\\\ge 4\\\\)",
         "graphData": null
       }
     ],
@@ -1033,7 +1390,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 10: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 10: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -1043,6 +1400,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1050,7 +1415,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 10: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 10: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -1067,7 +1432,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\(-3 < x \\le 4\\)?",
+    "question": "Graph of \\\\(-3 < x \\\\le 4\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -1077,19 +1442,27 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "[-3, 4]",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-3, 4] + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-3, 4] + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-3, 4]\\)",
+    "solution": "\\\\((-3, 4]\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\(-3 < x \\le 4\\)?",
+        "workingOut": "Graph of \\\\(-3 < x \\\\le 4\\\\)?",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-3, 4]\\)",
+        "workingOut": "\\\\((-3, 4]\\\\)",
         "graphData": null
       }
     ],
@@ -1101,7 +1474,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Range for \\(\\sqrt{150}\\)?",
+    "question": "Range for \\\\(\\\\sqrt{150}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -1111,6 +1484,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "11 and 12",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12 and 13 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12 and 13 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1118,7 +1499,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Range for \\(\\sqrt{150}\\)?",
+        "workingOut": "Range for \\\\(\\\\sqrt{150}\\\\)?",
         "graphData": null
       },
       {
@@ -1135,15 +1516,23 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\(0 \\le x \\le 7\\) closed?",
+    "question": "Is \\\\(0 \\\\le x \\\\le 7\\\\) closed?",
     "answer": 0,
     "options": [
       {
-        "text": "Yes",
+        "text": "Closed",
         "imageUrl": ""
       },
       {
         "text": "No",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Closed + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Closed + 2\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1152,7 +1541,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(0 \\le x \\le 7\\) closed?",
+        "workingOut": "Is \\\\(0 \\\\le x \\\\le 7\\\\) closed?",
         "graphData": null
       },
       {
@@ -1169,7 +1558,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\(x \\le 7\\) half-closed?",
+    "question": "Is \\\\(x \\\\le 7\\\\) half-closed?",
     "answer": 0,
     "options": [
       {
@@ -1179,6 +1568,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "No",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Yes + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Yes + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1186,7 +1583,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(x \\le 7\\) half-closed?",
+        "workingOut": "Is \\\\(x \\\\le 7\\\\) half-closed?",
         "graphData": null
       },
       {
@@ -1203,29 +1600,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 3: Classify: \\(-3\\)",
+    "question": "Variation 3: Classify: \\\\(-3\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
+    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 3: Classify: \\(-3\\)",
+        "workingOut": "Variation 3: Classify: \\\\(-3\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
+        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1237,7 +1642,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Range for \\(\\sqrt[3]{15}\\)?",
+    "question": "Range for \\\\(\\\\sqrt[3]{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -1247,6 +1652,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "1 and 2",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 and 3 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 and 3 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1254,7 +1667,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Range for \\(\\sqrt[3]{15}\\)?",
+        "workingOut": "Range for \\\\(\\\\sqrt[3]{15}\\\\)?",
         "graphData": null
       },
       {
@@ -1271,29 +1684,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(1\\frac{1}{2}\\)",
+    "question": "Classify: \\\\(1\\\\frac{1}{2}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(3/2\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(3/2\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(3/2\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(3/2\\) (Rational)",
+    "solution": "\\\\(3/2\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(1\\frac{1}{2}\\)",
+        "workingOut": "Classify: \\\\(1\\\\frac{1}{2}\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(3/2\\) (Rational)",
+        "workingOut": "\\\\(3/2\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1305,7 +1726,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 3: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 3: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -1315,6 +1736,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1322,7 +1751,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 3: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 3: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -1339,7 +1768,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt{10}\\)",
+    "question": "Classify: \\\\(\\\\sqrt{10}\\\\)",
     "answer": 1,
     "options": [
       {
@@ -1349,6 +1778,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Irrational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Irrational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1356,7 +1793,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt{10}\\)",
+        "workingOut": "Classify: \\\\(\\\\sqrt{10}\\\\)",
         "graphData": null
       },
       {
@@ -1377,19 +1814,19 @@ export const Y11A_CH2A_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\((-\\infty, 5)\\\\)",
+        "text": "\\\\(x < 5\\\\) means everything from negative infinity up to 5 (not included).",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((5, \\infty)\\\\)",
+        "text": "\\\\((5, \\\\infty)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-\\infty, 5]\\\\) ",
+        "text": "\\\\((-\\\\infty, 5]\\\\) ",
         "imageUrl": ""
       },
       {
-        "text": "\\\\([ -\\infty, 5)\\\\)",
+        "text": "\\\\([ -\\\\infty, 5)\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1415,29 +1852,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(-3\\)",
+    "question": "Classify: \\\\(-3\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
+    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(-3\\)",
+        "workingOut": "Classify: \\\\(-3\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
+        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1446,23 +1891,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "RtF5NBDmVgOXNk6XkyyQ",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\((-6, 6)\\) to inequality.",
-    "answer": "-6<x<6",
-    "options": [],
+    "question": "Convert \\\\((-6, 6)\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(-6 < x < 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-6 > x < 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-4 < x < 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-8 < x < 6\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-6 < x < 6\\)",
+    "solution": "\\\\(-6 < x < 6\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-6, 6)\\) to inequality.",
+        "workingOut": "Convert \\\\((-6, 6)\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-6 < x < 6\\)",
+        "workingOut": "\\\\(-6 < x < 6\\\\)",
         "graphData": null
       }
     ],
@@ -1474,29 +1936,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt[3]{27}\\)",
+    "question": "Classify: \\\\(\\\\sqrt[3]{27}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(3\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(3\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(3\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(3\\) (Rational)",
+    "solution": "\\\\(3\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt[3]{27}\\)",
+        "workingOut": "Classify: \\\\(\\\\sqrt[3]{27}\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(3\\) (Rational)",
+        "workingOut": "\\\\(3\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1508,29 +1978,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\([-5, 5)\\)?",
+    "question": "Graph of \\\\([-5, 5)\\\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "-5 \\le x < 5",
+        "text": "\\\\(-5 \\\\le x < 5\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "-5 < x \\le 5",
+        "text": "-5 < x \\\\le 5",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-5 \\\\le x >= 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-5 \\\\le x < 5\\\\)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-5 \\le x < 5\\)",
+    "solution": "\\\\(-5 \\\\le x < 5\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\([-5, 5)\\)?",
+        "workingOut": "Graph of \\\\([-5, 5)\\\\)?",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-5 \\le x < 5\\)",
+        "workingOut": "\\\\(-5 \\\\le x < 5\\\\)",
         "graphData": null
       }
     ],
@@ -1539,23 +2017,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "TlwzoK8yJHFTLOSie3BF",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\([-6, 6)\\) to inequality.",
-    "answer": "-6<=x<6",
-    "options": [],
+    "question": "Convert \\\\([-6, 6)\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(-6 \\\\le x < 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-6 \\\\le x > 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-4 \\\\le x < 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-8 \\\\le x < 6\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-6 \\le x < 6\\)",
+    "solution": "\\\\(-6 \\\\le x < 6\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\([-6, 6)\\) to inequality.",
+        "workingOut": "Convert \\\\([-6, 6)\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-6 \\le x < 6\\)",
+        "workingOut": "\\\\(-6 \\\\le x < 6\\\\)",
         "graphData": null
       }
     ],
@@ -1564,23 +2059,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "VXbfiDAWPa0OLZFfHloa",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\(-1 < x \\le 4\\) in bracket notation.",
-    "answer": "(-1,4]",
-    "options": [],
+    "question": "Write \\\\(-1 < x \\\\le 4\\\\) in bracket notation.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\((-1, 4]\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times (-1, 4]",
+        "imageUrl": ""
+      },
+      {
+        "text": "(-1, 4] + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-(-1, 4]",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-1, 4]\\)",
+    "solution": "\\\\((-1, 4]\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(-1 < x \\le 4\\) in bracket notation.",
+        "workingOut": "Write \\\\(-1 < x \\\\le 4\\\\) in bracket notation.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-1, 4]\\)",
+        "workingOut": "\\\\((-1, 4]\\\\)",
         "graphData": null
       }
     ],
@@ -1593,10 +2105,10 @@ export const Y11A_CH2A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Express the interval \\\\([-2, 7]\\\\) using inequalities.",
-    "answer": 3,
+    "answer": 0,
     "options": [
       {
-        "text": "\\\\(-2 < x \\le 7\\\\)",
+        "text": "Notation \\\\([-2, 7]\\\\) means \\\\(x\\\\) is between -2 and 7, including both.",
         "imageUrl": ""
       },
       {
@@ -1604,11 +2116,11 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-2 \\le x < 7\\\\)",
+        "text": "\\\\(-2 \\\\le x < 7\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-2 \\le x \\le 7\\\\)",
+        "text": "\\\\(-2 \\\\le x \\\\le 7\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1634,7 +2146,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(0\\)",
+    "question": "Classify: \\\\(0\\\\)",
     "answer": 0,
     "options": [
       {
@@ -1644,6 +2156,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1651,7 +2171,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(0\\)",
+        "workingOut": "Classify: \\\\(0\\\\)",
         "graphData": null
       },
       {
@@ -1668,7 +2188,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 9: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 9: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -1678,6 +2198,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1685,7 +2213,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 9: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 9: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -1702,29 +2230,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 5: Classify: \\(-3\\)",
+    "question": "Variation 5: Classify: \\\\(-3\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
+    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 5: Classify: \\(-3\\)",
+        "workingOut": "Variation 5: Classify: \\\\(-3\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
+        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1736,7 +2272,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt{3}\\)",
+    "question": "Classify: \\\\(\\\\sqrt{3}\\\\)",
     "answer": 1,
     "options": [
       {
@@ -1746,6 +2282,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Irrational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Irrational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1753,7 +2297,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt{3}\\)",
+        "workingOut": "Classify: \\\\(\\\\sqrt{3}\\\\)",
         "graphData": null
       },
       {
@@ -1770,7 +2314,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 18: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 18: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -1780,6 +2324,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1787,7 +2339,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 18: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 18: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -1804,7 +2356,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 12: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 12: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -1814,6 +2366,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1821,7 +2381,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 12: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 12: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -1838,29 +2398,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Variation 4: Classify: \\(-3\\)",
+    "question": "Variation 4: Classify: \\\\(-3\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "Rational",
+        "text": "\\\\(-3 = -3/1\\\\) (Rational)",
         "imageUrl": ""
       },
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\(-3 = -3/1\\\\) (Rational) + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
+    "solution": "\\\\(-3 = -3/1\\\\) (Rational)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 4: Classify: \\(-3\\)",
+        "workingOut": "Variation 4: Classify: \\\\(-3\\\\)",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
+        "workingOut": "\\\\(-3 = -3/1\\\\) (Rational)",
         "graphData": null
       }
     ],
@@ -1872,7 +2440,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 7: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 7: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -1882,6 +2450,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1889,7 +2465,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 7: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 7: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -1906,11 +2482,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify if \\\\(\\sqrt[3]{64}\\\\) is rational or irrational.",
-    "answer": 3,
+    "question": "Identify if \\\\(\\\\sqrt[3]{64}\\\\) is rational or irrational.",
+    "answer": 0,
     "options": [
       {
-        "text": "Complex",
+        "text": "\\\\(\\\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
         "imageUrl": ""
       },
       {
@@ -1927,16 +2503,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
+    "solution": "\\\\(\\\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Identify if \\\\(\\sqrt[3]{64}\\\\) is rational or irrational.",
+        "workingOut": "Identify if \\\\(\\\\sqrt[3]{64}\\\\) is rational or irrational.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
+        "workingOut": "\\\\(\\\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
         "graphData": null
       }
     ],
@@ -1948,7 +2524,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Is \\(\\sqrt[3]{8}\\) rational?",
+    "question": "Is \\\\(\\\\sqrt[3]{8}\\\\) rational?",
     "answer": 0,
     "options": [
       {
@@ -1958,6 +2534,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "No",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -1965,7 +2549,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(\\sqrt[3]{8}\\) rational?",
+        "workingOut": "Is \\\\(\\\\sqrt[3]{8}\\\\) rational?",
         "graphData": null
       },
       {
@@ -1982,29 +2566,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\(x \\le -1\\)?",
+    "question": "Graph of \\\\(x \\\\le -1\\\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "(-\\infty, -1]",
+        "text": "\\\\((-\\\\infty, -1]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "[-1, \\infty)",
+        "text": "[-1, \\\\infty)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-\\\\infty, -1] + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-\\\\infty, -1] + 2\\\\)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-\\infty, -1]\\)",
+    "solution": "\\\\((-\\\\infty, -1]\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\(x \\le -1\\)?",
+        "workingOut": "Graph of \\\\(x \\\\le -1\\\\)?",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-\\infty, -1]\\)",
+        "workingOut": "\\\\((-\\\\infty, -1]\\\\)",
         "graphData": null
       }
     ],
@@ -2016,29 +2608,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\((-\\infty, 1)\\)?",
-    "answer": 0,
+    "question": "Graph of \\\\((-\\\\infty, 1)\\\\)?",
+    "answer": 3,
     "options": [
       {
         "text": "x < 1",
         "imageUrl": ""
       },
       {
-        "text": "x \\le 1",
+        "text": "x \\\\le 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x >= 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x < 1\\\\)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x < 1\\)",
+    "solution": "\\\\(x < 1\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\((-\\infty, 1)\\)?",
+        "workingOut": "Graph of \\\\((-\\\\infty, 1)\\\\)?",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x < 1\\)",
+        "workingOut": "\\\\(x < 1\\\\)",
         "graphData": null
       }
     ],
@@ -2050,7 +2650,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Express \\\\((3, \\infty)\\\\) using inequalities.",
+    "question": "Express \\\\((3, \\\\infty)\\\\) using inequalities.",
     "answer": 0,
     "options": [
       {
@@ -2062,11 +2662,11 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x \\ge 3\\\\)",
+        "text": "\\\\(x \\\\ge 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x \\le 3\\\\)",
+        "text": "\\\\(x \\\\le 3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2075,7 +2675,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Express \\\\((3, \\infty)\\\\) using inequalities.",
+        "workingOut": "Express \\\\((3, \\\\infty)\\\\) using inequalities.",
         "graphData": null
       },
       {
@@ -2092,11 +2692,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write the interval \\\\((-\\infty, -4]\\\\) using inequalities.",
-    "answer": 3,
+    "question": "Write the interval \\\\((-\\\\infty, -4]\\\\) using inequalities.",
+    "answer": 0,
     "options": [
       {
-        "text": "\\\\(x \\ge -4\\\\)",
+        "text": "Up to and including -4.",
         "imageUrl": ""
       },
       {
@@ -2108,7 +2708,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x \\le -4\\\\)",
+        "text": "\\\\(x \\\\le -4\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2117,7 +2717,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write the interval \\\\((-\\infty, -4]\\\\) using inequalities.",
+        "workingOut": "Write the interval \\\\((-\\\\infty, -4]\\\\) using inequalities.",
         "graphData": null
       },
       {
@@ -2131,23 +2731,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "e5dwsV0YEAiv7mwXvvDj",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\(x \\ge 0\\) in bracket notation.",
-    "answer": "[0,inf)",
-    "options": [],
+    "question": "Write \\\\(x \\\\ge 0\\\\) in bracket notation.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\([0, \\\\infty)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times [0, \\\\infty)",
+        "imageUrl": ""
+      },
+      {
+        "text": "[0, \\\\infty) + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-[0, \\\\infty)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\([0, \\infty)\\)",
+    "solution": "\\\\([0, \\\\infty)\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x \\ge 0\\) in bracket notation.",
+        "workingOut": "Write \\\\(x \\\\ge 0\\\\) in bracket notation.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\([0, \\infty)\\)",
+        "workingOut": "\\\\([0, \\\\infty)\\\\)",
         "graphData": null
       }
     ],
@@ -2159,7 +2776,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 11: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 11: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -2169,6 +2786,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2176,7 +2801,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 11: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 11: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -2193,7 +2818,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt{4/9}\\)",
+    "question": "Classify: \\\\(\\\\sqrt{4/9}\\\\)",
     "answer": 0,
     "options": [
       {
@@ -2203,6 +2828,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2210,7 +2843,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt{4/9}\\)",
+        "workingOut": "Classify: \\\\(\\\\sqrt{4/9}\\\\)",
         "graphData": null
       },
       {
@@ -2227,15 +2860,23 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\(x > 5\\) open?",
+    "question": "Is \\\\(x > 5\\\\) open?",
     "answer": 0,
     "options": [
       {
-        "text": "Yes",
+        "text": "Open",
         "imageUrl": ""
       },
       {
         "text": "No",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Open + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Open + 2\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2244,7 +2885,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(x > 5\\) open?",
+        "workingOut": "Is \\\\(x > 5\\\\) open?",
         "graphData": null
       },
       {
@@ -2258,18 +2899,35 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "iN6Nn4oIsl2OSt6su8Lu",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\(x > 10\\) in bracket notation.",
-    "answer": "(10,inf)",
-    "options": [],
+    "question": "Write \\\\(x > 10\\\\) in bracket notation.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "(10, inf)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times (10, inf)",
+        "imageUrl": ""
+      },
+      {
+        "text": "(10, inf) + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-(10, inf)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
     "solution": "(10, inf)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x > 10\\) in bracket notation.",
+        "workingOut": "Write \\\\(x > 10\\\\) in bracket notation.",
         "graphData": null
       },
       {
@@ -2286,7 +2944,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 5: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 5: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -2296,6 +2954,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2303,7 +2969,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 5: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 5: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -2320,11 +2986,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Classify \\\\(\\pi + 2\\\\) as rational or irrational.",
+    "question": "Classify \\\\(\\\\pi + 2\\\\) as rational or irrational.",
     "answer": 0,
     "options": [
       {
-        "text": "Irrational",
+        "text": "\\\\(\\\\pi\\\\) is irrational, so \\\\(\\\\pi + 2\\\\) is also irrational.",
         "imageUrl": ""
       },
       {
@@ -2341,16 +3007,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\pi\\\\) is irrational, so \\\\(\\pi + 2\\\\) is also irrational.",
+    "solution": "\\\\(\\\\pi\\\\) is irrational, so \\\\(\\\\pi + 2\\\\) is also irrational.",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify \\\\(\\pi + 2\\\\) as rational or irrational.",
+        "workingOut": "Classify \\\\(\\\\pi + 2\\\\) as rational or irrational.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(\\pi\\\\) is irrational, so \\\\(\\pi + 2\\\\) is also irrational.",
+        "workingOut": "\\\\(\\\\pi\\\\) is irrational, so \\\\(\\\\pi + 2\\\\) is also irrational.",
         "graphData": null
       }
     ],
@@ -2362,7 +3028,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 8: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 8: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -2372,6 +3038,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2379,7 +3053,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 8: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 8: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -2400,7 +3074,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "answer": 1,
     "options": [
       {
-        "text": "\\\\(-5 \\le x < 3\\\\)",
+        "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       },
       {
@@ -2408,11 +3082,11 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 \\le x \\le 3\\\\)",
+        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 < x \\le 3\\\\)",
+        "text": "\\\\(-5 < x \\\\le 3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2438,7 +3112,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(3.14\\)",
+    "question": "Classify: \\\\(3.14\\\\)",
     "answer": 0,
     "options": [
       {
@@ -2448,6 +3122,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2455,7 +3137,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(3.14\\)",
+        "workingOut": "Classify: \\\\(3.14\\\\)",
         "graphData": null
       },
       {
@@ -2476,7 +3158,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-5 \\le x \\le 3\\\\)",
+        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
@@ -2484,16 +3166,16 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 < x \\le 3\\\\)",
+        "text": "\\\\(-5 < x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 \\le x < 3\\\\)",
+        "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-5 \\le x \\le 3\\\\)",
+    "solution": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
@@ -2502,7 +3184,7 @@ export const Y11A_CH2A_QUESTIONS = [
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(-5 \\le x \\le 3\\\\)",
+        "workingOut": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "graphData": null
       }
     ],
@@ -2511,14 +3193,31 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "kRzRZsOrOL0mwzw74qaF",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "From -2 to 3 (inclusive) in bracket notation.",
-    "answer": "[-2,3]",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\([-2, 3]\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times [-2, 3]",
+        "imageUrl": ""
+      },
+      {
+        "text": "[-2, 3] + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-[-2, 3]",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\([-2, 3]\\)",
+    "solution": "\\\\([-2, 3]\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
@@ -2527,7 +3226,7 @@ export const Y11A_CH2A_QUESTIONS = [
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\([-2, 3]\\)",
+        "workingOut": "\\\\([-2, 3]\\\\)",
         "graphData": null
       }
     ],
@@ -2536,23 +3235,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "lSJsBo5nJV4RyYKLkP7r",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Write \\(x < -5\\) in bracket notation.",
-    "answer": "(-inf,-5)",
-    "options": [],
+    "question": "Write \\\\(x < -5\\\\) in bracket notation.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\((-\\\\infty, -5)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times (-\\\\infty, -5)",
+        "imageUrl": ""
+      },
+      {
+        "text": "(-\\\\infty, -5) + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-(-\\\\infty, -5)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-\\infty, -5)\\)",
+    "solution": "\\\\((-\\\\infty, -5)\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x < -5\\) in bracket notation.",
+        "workingOut": "Write \\\\(x < -5\\\\) in bracket notation.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-\\infty, -5)\\)",
+        "workingOut": "\\\\((-\\\\infty, -5)\\\\)",
         "graphData": null
       }
     ],
@@ -2561,23 +3277,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "m9QxSIIjEQssQYkY3WFR",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\((-\\infty, 10]\\) to inequality.",
-    "answer": "x<=10",
-    "options": [],
+    "question": "Convert \\\\((-\\\\infty, 10]\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(x \\\\le 10\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times x \\\\le 10",
+        "imageUrl": ""
+      },
+      {
+        "text": "x \\\\le 10 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-x \\\\le 10",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\le 10\\)",
+    "solution": "\\\\(x \\\\le 10\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-\\infty, 10]\\) to inequality.",
+        "workingOut": "Convert \\\\((-\\\\infty, 10]\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\le 10\\)",
+        "workingOut": "\\\\(x \\\\le 10\\\\)",
         "graphData": null
       }
     ],
@@ -2586,23 +3319,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "mzcDx9k5CKMqdDmW9xOY",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\([-3, 5]\\) to inequality.",
-    "answer": "-3<=x<=5",
-    "options": [],
+    "question": "Convert \\\\([-3, 5]\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(-3 \\\\le x \\\\le 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times -3 \\\\le x \\\\le 5",
+        "imageUrl": ""
+      },
+      {
+        "text": "-3 \\\\le x \\\\le 5 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "--3 \\\\le x \\\\le 5",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 \\le x \\le 5\\)",
+    "solution": "\\\\(-3 \\\\le x \\\\le 5\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\([-3, 5]\\) to inequality.",
+        "workingOut": "Convert \\\\([-3, 5]\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 \\le x \\le 5\\)",
+        "workingOut": "\\\\(-3 \\\\le x \\\\le 5\\\\)",
         "graphData": null
       }
     ],
@@ -2614,11 +3364,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify if \\\\(3\\sqrt{7}\\\\) is rational or irrational.",
+    "question": "Identify if \\\\(3\\\\sqrt{7}\\\\) is rational or irrational.",
     "answer": 0,
     "options": [
       {
-        "text": "Irrational",
+        "text": "Product of rational and irrational is irrational.",
         "imageUrl": ""
       },
       {
@@ -2639,7 +3389,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Identify if \\\\(3\\sqrt{7}\\\\) is rational or irrational.",
+        "workingOut": "Identify if \\\\(3\\\\sqrt{7}\\\\) is rational or irrational.",
         "graphData": null
       },
       {
@@ -2653,14 +3403,31 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "oQTVYdeHDNQMWLTlUX84",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Between 1 and 10 (inclusive).",
-    "answer": "1<=x<=10",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(1 \\\\le x \\\\le 10\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times 1 \\\\le x \\\\le 10",
+        "imageUrl": ""
+      },
+      {
+        "text": "1 \\\\le x \\\\le 10 + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-1 \\\\le x \\\\le 10",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(1 \\le x \\le 10\\)",
+    "solution": "\\\\(1 \\\\le x \\\\le 10\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
@@ -2669,7 +3436,7 @@ export const Y11A_CH2A_QUESTIONS = [
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(1 \\le x \\le 10\\)",
+        "workingOut": "\\\\(1 \\\\le x \\\\le 10\\\\)",
         "graphData": null
       }
     ],
@@ -2681,7 +3448,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(\\pi\\)",
+    "question": "Classify: \\\\(\\\\pi\\\\)",
     "answer": 1,
     "options": [
       {
@@ -2691,6 +3458,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Irrational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Irrational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2698,7 +3473,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\pi\\)",
+        "workingOut": "Classify: \\\\(\\\\pi\\\\)",
         "graphData": null
       },
       {
@@ -2715,7 +3490,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 0: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 0: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -2725,6 +3500,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2732,7 +3515,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 0: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 0: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -2749,11 +3532,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Is \\\\(\\sqrt{45}\\\\) rational or irrational?",
+    "question": "Is \\\\(\\\\sqrt{45}\\\\) rational or irrational?",
     "answer": 0,
     "options": [
       {
-        "text": "Irrational",
+        "text": "\\\\(\\\\sqrt{45} = 3\\\\sqrt{5}\\\\), which is an irrational number.",
         "imageUrl": ""
       },
       {
@@ -2770,16 +3553,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\sqrt{45} = 3\\sqrt{5}\\\\), which is an irrational number.",
+    "solution": "\\\\(\\\\sqrt{45} = 3\\\\sqrt{5}\\\\), which is an irrational number.",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\\\(\\sqrt{45}\\\\) rational or irrational?",
+        "workingOut": "Is \\\\(\\\\sqrt{45}\\\\) rational or irrational?",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(\\sqrt{45} = 3\\sqrt{5}\\\\), which is an irrational number.",
+        "workingOut": "\\\\(\\\\sqrt{45} = 3\\\\sqrt{5}\\\\), which is an irrational number.",
         "graphData": null
       }
     ],
@@ -2791,7 +3574,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(0.45\\)",
+    "question": "Classify: \\\\(0.45\\\\)",
     "answer": 0,
     "options": [
       {
@@ -2801,6 +3584,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2808,7 +3599,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(0.45\\)",
+        "workingOut": "Classify: \\\\(0.45\\\\)",
         "graphData": null
       },
       {
@@ -2825,11 +3616,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Classify \\\\(\\sqrt{1.44}\\\\) as rational or irrational.",
-    "answer": 1,
+    "question": "Classify \\\\(\\\\sqrt{1.44}\\\\) as rational or irrational.",
+    "answer": 0,
     "options": [
       {
-        "text": "Irrational",
+        "text": "\\\\(\\\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
         "imageUrl": ""
       },
       {
@@ -2846,16 +3637,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
+    "solution": "\\\\(\\\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify \\\\(\\sqrt{1.44}\\\\) as rational or irrational.",
+        "workingOut": "Classify \\\\(\\\\sqrt{1.44}\\\\) as rational or irrational.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
+        "workingOut": "\\\\(\\\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
         "graphData": null
       }
     ],
@@ -2867,7 +3658,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Range for \\(\\sqrt{15}\\)?",
+    "question": "Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -2877,6 +3668,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2884,7 +3683,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -2901,7 +3700,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(3\\frac{1}{7}\\)",
+    "question": "Classify: \\\\(3\\\\frac{1}{7}\\\\)",
     "answer": 0,
     "options": [
       {
@@ -2911,6 +3710,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Rational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -2918,7 +3725,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(3\\frac{1}{7}\\)",
+        "workingOut": "Classify: \\\\(3\\\\frac{1}{7}\\\\)",
         "graphData": null
       },
       {
@@ -2932,23 +3739,40 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "sWoWRcTZNDHRGtrm2OdT",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Convert \\((-2, 0)\\) to inequality.",
-    "answer": "-2<x<0",
-    "options": [],
+    "question": "Convert \\\\((-2, 0)\\\\) to inequality.",
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\(-2 < x < 0\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-2 > x < 0\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(0 < x < 0\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-4 < x < 0\\\\)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-2 < x < 0\\)",
+    "solution": "\\\\(-2 < x < 0\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-2, 0)\\) to inequality.",
+        "workingOut": "Convert \\\\((-2, 0)\\\\) to inequality.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-2 < x < 0\\)",
+        "workingOut": "\\\\(-2 < x < 0\\\\)",
         "graphData": null
       }
     ],
@@ -2960,15 +3784,23 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Union of \\(x > -1\\) or \\(x < 1\\)?",
+    "question": "Union of \\\\(x > -1\\\\) or \\\\(x < 1\\\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "(-\\infty, \\infty)",
+        "text": "All real numbers",
         "imageUrl": ""
       },
       {
         "text": "(-1, 1)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(All real numbers + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(All real numbers + 2\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2977,7 +3809,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Union of \\(x > -1\\) or \\(x < 1\\)?",
+        "workingOut": "Union of \\\\(x > -1\\\\) or \\\\(x < 1\\\\)?",
         "graphData": null
       },
       {
@@ -2994,11 +3826,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Express \\\\((-\\infty, -5]\\\\) using inequalities.",
+    "question": "Express \\\\((-\\\\infty, -5]\\\\) using inequalities.",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(x \\le -5\\\\)",
+        "text": "\\\\(x \\\\le -5\\\\)",
         "imageUrl": ""
       },
       {
@@ -3006,7 +3838,7 @@ export const Y11A_CH2A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x \\ge -5\\\\)",
+        "text": "\\\\(x \\\\ge -5\\\\)",
         "imageUrl": ""
       },
       {
@@ -3015,16 +3847,16 @@ export const Y11A_CH2A_QUESTIONS = [
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x \\le -5\\\\)",
+    "solution": "\\\\(x \\\\le -5\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Express \\\\((-\\infty, -5]\\\\) using inequalities.",
+        "workingOut": "Express \\\\((-\\\\infty, -5]\\\\) using inequalities.",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(x \\le -5\\\\)",
+        "workingOut": "\\\\(x \\\\le -5\\\\)",
         "graphData": null
       }
     ],
@@ -3036,29 +3868,37 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Graph of \\([3, \\infty)\\)?",
+    "question": "Graph of \\\\([3, \\\\infty)\\\\)?",
     "answer": 0,
     "options": [
       {
-        "text": "x \\ge 3",
+        "text": "\\\\(x \\\\ge 3\\\\)",
         "imageUrl": ""
       },
       {
         "text": "x > 3",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x \\\\ge 3 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x \\\\ge 3 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\ge 3\\)",
+    "solution": "\\\\(x \\\\ge 3\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\([3, \\infty)\\)?",
+        "workingOut": "Graph of \\\\([3, \\\\infty)\\\\)?",
         "graphData": null
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\ge 3\\)",
+        "workingOut": "\\\\(x \\\\ge 3\\\\)",
         "graphData": null
       }
     ],
@@ -3070,7 +3910,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt[4]{8}\\)",
+    "question": "Classify: \\\\(\\\\sqrt[4]{8}\\\\)",
     "answer": 1,
     "options": [
       {
@@ -3080,6 +3920,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "Irrational",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Irrational + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(Irrational + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -3087,7 +3935,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt[4]{8}\\)",
+        "workingOut": "Classify: \\\\(\\\\sqrt[4]{8}\\\\)",
         "graphData": null
       },
       {
@@ -3104,11 +3952,11 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write \\\\(-4 \\le x < 6\\\\) in interval notation.",
+    "question": "Write \\\\(-4 \\\\le x < 6\\\\) in interval notation.",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\([-4, 6)\\\\)",
+        "text": "\\\\(-4\\\\) is included, \\\\(6\\\\) is not.",
         "imageUrl": ""
       },
       {
@@ -3129,7 +3977,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\\\(-4 \\le x < 6\\\\) in interval notation.",
+        "workingOut": "Write \\\\(-4 \\\\le x < 6\\\\) in interval notation.",
         "graphData": null
       },
       {
@@ -3146,7 +3994,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 14: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 14: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -3156,6 +4004,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -3163,7 +4019,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 14: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 14: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -3177,14 +4033,31 @@ export const Y11A_CH2A_QUESTIONS = [
   },
   {
     "id": "wH0N0BQkhN84svEHaFNd",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Greater than 4 in bracket notation.",
-    "answer": "(4,inf)",
-    "options": [],
+    "answer": 0,
+    "options": [
+      {
+        "text": "\\\\((4, \\\\infty)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\\\times (4, \\\\infty)",
+        "imageUrl": ""
+      },
+      {
+        "text": "(4, \\\\infty) + 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "-(4, \\\\infty)",
+        "imageUrl": ""
+      }
+    ],
     "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((4, \\infty)\\)",
+    "solution": "\\\\((4, \\\\infty)\\\\)",
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
@@ -3193,7 +4066,7 @@ export const Y11A_CH2A_QUESTIONS = [
       },
       {
         "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((4, \\infty)\\)",
+        "workingOut": "\\\\((4, \\\\infty)\\\\)",
         "graphData": null
       }
     ],
@@ -3205,7 +4078,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 13: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 13: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -3215,6 +4088,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -3222,7 +4103,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 13: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 13: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -3239,7 +4120,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 20: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 20: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -3249,6 +4130,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -3256,7 +4145,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 20: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 20: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -3273,7 +4162,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 6: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 6: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -3283,6 +4172,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -3290,7 +4187,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 6: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 6: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -3307,7 +4204,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 1: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 1: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -3317,6 +4214,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -3324,7 +4229,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 1: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 1: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
@@ -3341,7 +4246,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 2: Range for \\(\\sqrt{15}\\)?",
+    "question": "Variation 2: Range for \\\\(\\\\sqrt{15}\\\\)?",
     "answer": 0,
     "options": [
       {
@@ -3351,6 +4256,14 @@ export const Y11A_CH2A_QUESTIONS = [
       {
         "text": "4 and 5",
         "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3 and 4 + 2\\\\)",
+        "imageUrl": ""
       }
     ],
     "hint": "Simplify the expression step-by-step.",
@@ -3358,7 +4271,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 2: Range for \\(\\sqrt{15}\\)?",
+        "workingOut": "Variation 2: Range for \\\\(\\\\sqrt{15}\\\\)?",
         "graphData": null
       },
       {
