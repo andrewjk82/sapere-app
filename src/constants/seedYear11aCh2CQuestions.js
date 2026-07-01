@@ -924,7 +924,7 @@ export const Y11A_CH2C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Hence simplify \\\\(\\\\sqrt{6+\\\\sqrt{11}} - \\\\sqrt{6-\\\\sqrt{11}}\\\\).",
+    "question": "It can be shown that \\\\(\\\\left(\\\\sqrt{6+\\\\sqrt{11}} - \\\\sqrt{6-\\\\sqrt{11}}\\\\right)^2 = 2\\\\).\n\nUsing this result, simplify \\\\(\\\\sqrt{6+\\\\sqrt{11}} - \\\\sqrt{6-\\\\sqrt{11}}\\\\).",
     "answer": 3,
     "options": [
       { "text": "\\\\(\\\\sqrt{11}\\\\)", "imageUrl": "" },
@@ -932,21 +932,21 @@ export const Y11A_CH2C_QUESTIONS = [
       { "text": "\\\\(2\\\\)", "imageUrl": "" },
       { "text": "\\\\(\\\\sqrt{2}\\\\)", "imageUrl": "" }
     ],
-    "hint": "From part b, \\\\(x^2 = 2\\\\). Decide the sign of \\\\(x\\\\) by checking which term under the radical is larger.",
+    "hint": "If \\\\(x^2 = 2\\\\), then \\\\(x = \\\\pm\\\\sqrt{2}\\\\). Check the sign of \\\\(x\\\\) by comparing the two terms.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "From part b we know \\(x^2 = 2\\), where \\(x = \\sqrt{6+\\sqrt{11}} - \\sqrt{6-\\sqrt{11}}\\).",
-        "workingOut": "x^2 = 2",
+        "explanation": "Let \\(x = \\sqrt{6+\\sqrt{11}} - \\sqrt{6-\\sqrt{11}}\\). We are told \\(x^2 = 2\\), so \\(x = \\pm\\sqrt{2}\\).",
+        "workingOut": "x^2 = 2 \\\\implies x = \\\\pm\\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Determine the sign of \\(x\\). Since \\(6+\\sqrt{11} > 6-\\sqrt{11}\\), we have \\(\\sqrt{6+\\sqrt{11}} > \\sqrt{6-\\sqrt{11}}\\), so \\(x > 0\\).",
+        "explanation": "Determine the sign. Since \\(\\sqrt{11} > 0\\), we have \\(6+\\sqrt{11} > 6-\\sqrt{11}\\), so \\(\\sqrt{6+\\sqrt{11}} > \\sqrt{6-\\sqrt{11}}\\). Therefore \\(x > 0\\).",
         "workingOut": "\\\\sqrt{6+\\\\sqrt{11}} > \\\\sqrt{6-\\\\sqrt{11}} \\\\implies x > 0",
         "graphData": null
       },
       {
-        "explanation": "Since \\(x > 0\\) and \\(x^2 = 2\\), take the positive square root.",
+        "explanation": "Since \\(x > 0\\), we take the positive value.",
         "workingOut": "x = \\\\sqrt{2}",
         "graphData": null
       }
