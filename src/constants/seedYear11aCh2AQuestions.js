@@ -1,3373 +1,1429 @@
 export const Y11A_CH2A_QUESTIONS = [
+
+  // ─── Group 1: Classify real numbers (q1a–q1l) ────────────────────────────
+
   {
-    "id": "00Jjkld564ZOEPJtZl0a",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 16: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 16: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "03TkiS1MYTtHF8DDE841",
+    "id": "y11a-2a-q1a",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Graph of \\(x > -2\\)?",
-    "answer": 0,
+    "timeLimit": 60,
+    "question": "Which of the following best classifies \\(\\sqrt{2}\\)?",
+    "answer": 1,
     "options": [
-      {
-        "text": "(-2, \\infty)",
-        "imageUrl": ""
-      },
-      {
-        "text": "(-\\infty, -2)",
-        "imageUrl": ""
-      }
+      { "text": "\\(\\sqrt{2}\\) is rational", "imageUrl": "" },
+      { "text": "\\(\\sqrt{2}\\) is irrational", "imageUrl": "" },
+      { "text": "\\(\\sqrt{2}\\) is an integer", "imageUrl": "" },
+      { "text": "\\(\\sqrt{2}\\) is a natural number", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-2, \\infty)\\)",
+    "hint": "Can \\(\\sqrt{2}\\) be written as a fraction \\(p/q\\) where \\(p\\) and \\(q\\) are integers?",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\(x > -2\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-2, \\infty)\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "0FS7LYu8dCopNZlXPNHM",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\((6, \\infty)\\) to inequality.",
-    "answer": "x>6",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x > 6\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((6, \\infty)\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x > 6\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "1ZP7IsR7n6Itd5af42C5",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\((-\\infty, -6]\\) to inequality.",
-    "answer": "x<=-6",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\le -6\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-\\infty, -6]\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\le -6\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "2NdpfMvg2dT4cPLa0gtN",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Numbers greater than 5 in inequality form.",
-    "answer": "x>5",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x > 5\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Numbers greater than 5 in inequality form.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x > 5\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "3FCleTo32LJqAhRQpPrM",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Prime factors of 144?",
-    "answer": "2^4*3^2",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "2^4 * 3^2",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Prime factors of 144?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "2^4 * 3^2",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "3UuyZ78bTVnZ8gFvqQHk",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Write \\\\(x > -4\\\\) in interval notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\((-4, \\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(( -\\infty, -4]\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(( -\\infty, -4)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-4, \\infty)\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x > -4\\\\) starts at -4 (not included).",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\\\(x > -4\\\\) in interval notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(x > -4\\\\) starts at -4 (not included).",
-        "graphData": null
-      }
+      { "explanation": "A rational number can be expressed as \\(p/q\\) where \\(p, q\\) are integers and \\(q \\ne 0\\).", "workingOut": "", "graphData": null },
+      { "explanation": "\\(\\sqrt{2}\\) cannot be written as such a fraction — its decimal expansion is non-terminating and non-repeating.", "workingOut": "\\(\\sqrt{2} = 1.41421356...\\)", "graphData": null },
+      { "explanation": "Therefore \\(\\sqrt{2}\\) is irrational.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "3vhim43xFapH1ZBzD7UB",
+    "id": "y11a-2a-q1b",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Variation 1: Classify: \\(-3\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 1: Classify: \\(-3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "41pjbrEQPa6MBNxBq4uu",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 4: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 4: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "52NobjedQIggEiat6Qlt",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 90,
-    "question": "Intersection of \\(x \\ge -1\\) and \\(x \\le 1\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "[-1, 1]",
-        "imageUrl": ""
-      },
-      {
-        "text": "(-1, 1)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "[-1, 1]",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Intersection of \\(x \\ge -1\\) and \\(x \\le 1\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "[-1, 1]",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "5mKykL6GIE7VmL1Q0amQ",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\((-6, 6]\\) to inequality.",
-    "answer": "-6<x<=6",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-6 < x \\le 6\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-6, 6]\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-6 < x \\le 6\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "6ZtU7wvI6yQDFP3tu4vs",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Write \\(x \\ge -3\\) in bracket notation.",
-    "answer": "[-3,inf)",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\([-3, \\infty)\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x \\ge -3\\) in bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\([-3, \\infty)\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "6dNgDiRhmzHTzENnH516",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 19: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 19: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "7HR5PFZb88VG78pS6bxC",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Is \\(\\sqrt{1.44}\\) rational?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Yes (1.2)",
-        "imageUrl": ""
-      },
-      {
-        "text": "No",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "1.2",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(\\sqrt{1.44}\\) rational?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "1.2",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "7bVL7aRhwf05zTfBoojI",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(12\\%\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Rational",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(12\\%\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Rational",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "8JinUuilnNVmyBDEdgq7",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\([-6, 6]\\) to inequality.",
-    "answer": "-6<=x<=6",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-6 \\le x \\le 6\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\([-6, 6]\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-6 \\le x \\le 6\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "8onKMtnvxYHdlKpq61Qq",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "LCD of 1/12, 1/30, 1/75?",
-    "answer": "300",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "300",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "LCD of 1/12, 1/30, 1/75?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "300",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "99Iv6msNy3S68C8ARvoN",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(0.\\dot{3}\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Rational",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(0.\\dot{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Rational",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "9t2wY6JnsJfTuLPSWalU",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Express \\\\(0.32\\\\) as a fraction in simplest form.",
+    "timeLimit": 60,
+    "question": "Classify \\(-3\\).",
     "answer": 2,
     "options": [
-      {
-        "text": "\\\\(\\frac{32}{100}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\frac{16}{50}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\frac{8}{25}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\frac{4}{12}\\\\)",
-        "imageUrl": ""
-      }
+      { "text": "Natural number only", "imageUrl": "" },
+      { "text": "Irrational", "imageUrl": "" },
+      { "text": "Integer (but not a natural number)", "imageUrl": "" },
+      { "text": "Irrational and real", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(0.32 = \\frac{32}{100} = \\frac{8}{25}\\\\)",
+    "hint": "Natural numbers are positive counting numbers: \\(1, 2, 3, \\ldots\\)",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Express \\\\(0.32\\\\) as a fraction in simplest form.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(0.32 = \\frac{32}{100} = \\frac{8}{25}\\\\)",
-        "graphData": null
-      }
+      { "explanation": "Integers include all whole numbers: \\(\\ldots, -3, -2, -1, 0, 1, 2, 3, \\ldots\\)", "workingOut": "", "graphData": null },
+      { "explanation": "\\(-3\\) is an integer. It is also rational (since \\(-3 = -3/1\\)).", "workingOut": "", "graphData": null },
+      { "explanation": "Natural numbers are \\(\\{1, 2, 3, \\ldots\\}\\) — they do not include negatives. So \\(-3\\) is an integer but NOT a natural number.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "9y4wQHqBUdSL5JOOkXnR",
+    "id": "y11a-2a-q1c",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Variation 0: Classify: \\(-3\\)",
+    "timeLimit": 60,
+    "question": "Classify \\(0.\\overline{3}\\) (i.e. \\(0.333\\ldots\\)).",
     "answer": 0,
     "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
+      { "text": "Rational", "imageUrl": "" },
+      { "text": "Irrational", "imageUrl": "" },
+      { "text": "Integer", "imageUrl": "" },
+      { "text": "Natural number", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
+    "hint": "A recurring decimal can always be written as a fraction.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 0: Classify: \\(-3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
-        "graphData": null
-      }
+      { "explanation": "Let \\(x = 0.\\overline{3}\\). Then \\(10x = 3.\\overline{3}\\).", "workingOut": "\\(10x - x = 3.333\\ldots - 0.333\\ldots\\)", "graphData": null },
+      { "explanation": "Subtract: \\(9x = 3\\), so \\(x = 1/3\\).", "workingOut": "\\(0.\\overline{3} = \\dfrac{1}{3}\\)", "graphData": null },
+      { "explanation": "Since \\(0.\\overline{3} = 1/3\\), it is rational.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "A42YMZ512YdJPObyjOME",
+    "id": "y11a-2a-q1d",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt{4}\\)",
-    "answer": 0,
+    "timeLimit": 60,
+    "question": "Classify \\(\\sqrt{4}\\).",
+    "answer": 3,
     "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
+      { "text": "Irrational", "imageUrl": "" },
+      { "text": "Rational only (not an integer)", "imageUrl": "" },
+      { "text": "Natural number only", "imageUrl": "" },
+      { "text": "Integer and rational", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(2\\) (Rational)",
+    "hint": "Evaluate \\(\\sqrt{4}\\) first.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt{4}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(2\\) (Rational)",
-        "graphData": null
-      }
+      { "explanation": "Evaluate the square root: \\(\\sqrt{4} = 2\\).", "workingOut": "\\(\\sqrt{4} = 2\\)", "graphData": null },
+      { "explanation": "\\(2\\) is a natural number, integer, and rational number.", "workingOut": "", "graphData": null },
+      { "explanation": "It is NOT irrational. Answer: integer and rational.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "Al0p3nwY5Gb9RfqVBslA",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Greater than 0 and less than or equal to 5.",
-    "answer": "0<x<=5",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(0 < x \\le 5\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Greater than 0 and less than or equal to 5.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(0 < x \\le 5\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "BixCp53SiDmqneEyI2Kf",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Is \\(x \\ge 6\\) unbounded?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Yes",
-        "imageUrl": ""
-      },
-      {
-        "text": "No",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Yes",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(x \\ge 6\\) unbounded?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Yes",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "C37l5Ggko349tm6ZEcHv",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 90,
-    "question": "Key to proving \\(\\sqrt{3}\\) irrational?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Common factor of 3",
-        "imageUrl": ""
-      },
-      {
-        "text": "Zero denominator",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Contradiction",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Key to proving \\(\\sqrt{3}\\) irrational?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Contradiction",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "CFim9xhrNblT0vklpWP2",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 15: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 15: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "D0z6T2c9KNV5hKyRZo5l",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Numbers less than or equal to -2.",
-    "answer": "x<=-2",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\le -2\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Numbers less than or equal to -2.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\le -2\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "EEFLjwmj6DarI8iE5mfg",
+    "id": "y11a-2a-q1e",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Variation 2: Classify: \\(-3\\)",
-    "answer": 0,
+    "timeLimit": 60,
+    "question": "Classify \\(\\sqrt{10}\\).",
+    "answer": 1,
     "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
+      { "text": "Rational", "imageUrl": "" },
+      { "text": "Irrational", "imageUrl": "" },
+      { "text": "Integer", "imageUrl": "" },
+      { "text": "Natural number", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
+    "hint": "Is 10 a perfect square?",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 2: Classify: \\(-3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
-        "graphData": null
-      }
+      { "explanation": "Check if 10 is a perfect square: \\(3^2 = 9\\), \\(4^2 = 16\\). 10 is NOT a perfect square.", "workingOut": "", "graphData": null },
+      { "explanation": "Since 10 is not a perfect square, \\(\\sqrt{10}\\) is irrational.", "workingOut": "\\(\\sqrt{10} = 3.16227\\ldots\\)", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "EKYaXc3CMdUGo6AXPyvk",
-    "type": "short_answer",
+    "id": "y11a-2a-q1f",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Write \\(x \\le 0\\) in bracket notation.",
-    "answer": "(-inf,0]",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "(-inf, 0]",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x \\le 0\\) in bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "(-inf, 0]",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "ETTDz6Sy2qb8Fp51w2Ki",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Range for \\(\\pi\\)?",
+    "timeLimit": 60,
+    "question": "Classify \\(1\\tfrac{1}{2}\\).",
     "answer": 0,
     "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "2 and 3",
-        "imageUrl": ""
-      }
+      { "text": "Rational (but not an integer)", "imageUrl": "" },
+      { "text": "Irrational", "imageUrl": "" },
+      { "text": "Integer", "imageUrl": "" },
+      { "text": "Natural number", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
+    "hint": "Can \\(1\\frac{1}{2}\\) be written as \\(p/q\\)?",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Range for \\(\\pi\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
+      { "explanation": "\\(1\\tfrac{1}{2} = \\dfrac{3}{2}\\), which is a fraction of two integers.", "workingOut": "", "graphData": null },
+      { "explanation": "It is rational. It is not an integer (not a whole number).", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "G4LgOrYf7VWnZMRJophk",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Primes between 90-100?",
-    "answer": "97",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "97",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Primes between 90-100?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "97",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "GPtWc2d7JoH16oCpQab7",
+    "id": "y11a-2a-q1g",
     "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 17: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 17: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "GTRT7dcsH2irdylBRYH3",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Write the inequality \\\\(-3 < x \\le 4\\\\) in bracket notation.",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Classify \\(0\\).",
     "answer": 2,
     "options": [
-      {
-        "text": "\\\\([-3, 4]\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-3, 4)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-3, 4]\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-3, 4)\\\\)",
-        "imageUrl": ""
-      }
+      { "text": "Natural number", "imageUrl": "" },
+      { "text": "Irrational", "imageUrl": "" },
+      { "text": "Integer and rational (but not natural)", "imageUrl": "" },
+      { "text": "Irrational and real", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\le\\\\)).",
+    "hint": "Natural numbers start at 1.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write the inequality \\\\(-3 < x \\le 4\\\\) in bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "-3 is not included (\\\\(>\\\\)), 4 is included (\\\\(\\le\\\\)).",
-        "graphData": null
-      }
+      { "explanation": "\\(0\\) is an integer (\\(\\ldots,-1,0,1,\\ldots\\)) and rational (\\(0 = 0/1\\)).", "workingOut": "", "graphData": null },
+      { "explanation": "Natural numbers are \\(\\{1,2,3,\\ldots\\}\\); 0 is excluded.", "workingOut": "", "graphData": null },
+      { "explanation": "So 0 is an integer and rational, but NOT a natural number.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "Hg85lbQOfERTeDlRDnLZ",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\([4, \\infty)\\) to inequality.",
-    "answer": "x>=4",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\ge 4\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\([4, \\infty)\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\ge 4\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "IRMzag33y6pv6O1qr6xU",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 10: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 10: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "IWsX61rXoKZJd3hGvSSR",
+    "id": "y11a-2a-q1h",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Graph of \\(-3 < x \\le 4\\)?",
+    "timeLimit": 60,
+    "question": "Classify \\(12\\%\\).",
     "answer": 0,
     "options": [
-      {
-        "text": "(-3, 4]",
-        "imageUrl": ""
-      },
-      {
-        "text": "[-3, 4]",
-        "imageUrl": ""
-      }
+      { "text": "Rational", "imageUrl": "" },
+      { "text": "Irrational", "imageUrl": "" },
+      { "text": "Integer", "imageUrl": "" },
+      { "text": "Natural number", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-3, 4]\\)",
+    "hint": "Convert \\(12\\%\\) to a fraction.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\(-3 < x \\le 4\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-3, 4]\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "JVjEkygonRWfZ3OKFWa1",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Range for \\(\\sqrt{150}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "12 and 13",
-        "imageUrl": ""
-      },
-      {
-        "text": "11 and 12",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "12 and 13",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Range for \\(\\sqrt{150}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "12 and 13",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "JuOeMclgI2COnMrUjsDc",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Is \\(0 \\le x \\le 7\\) closed?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Yes",
-        "imageUrl": ""
-      },
-      {
-        "text": "No",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Closed",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(0 \\le x \\le 7\\) closed?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Closed",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "MY3s892WHdz3QO6R5FTv",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Is \\(x \\le 7\\) half-closed?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Yes",
-        "imageUrl": ""
-      },
-      {
-        "text": "No",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Yes",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(x \\le 7\\) half-closed?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Yes",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "Mck2dd6IFnkWflDUHUSa",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Variation 3: Classify: \\(-3\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 3: Classify: \\(-3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "Mu1Hde7kx3mTtStjZfDu",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Range for \\(\\sqrt[3]{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "2 and 3",
-        "imageUrl": ""
-      },
-      {
-        "text": "1 and 2",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "2 and 3",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Range for \\(\\sqrt[3]{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "2 and 3",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "MyytFjfDiAwYcjwj6Uj3",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(1\\frac{1}{2}\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(3/2\\) (Rational)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(1\\frac{1}{2}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(3/2\\) (Rational)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "O82WKDICfeym9hhHy3JA",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 3: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 3: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "OLSDEckvHL8TNWRcppFY",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt{10}\\)",
-    "answer": 1,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Irrational",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt{10}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Irrational",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "PCW1TNOC8OTMswMzIuKT",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Write the interval \\\\(x < 5\\\\) using bracket notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\((-\\infty, 5)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((5, \\infty)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-\\infty, 5]\\\\) ",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([ -\\infty, 5)\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x < 5\\\\) means everything from negative infinity up to 5 (not included).",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write the interval \\\\(x < 5\\\\) using bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(x < 5\\\\) means everything from negative infinity up to 5 (not included).",
-        "graphData": null
-      }
+      { "explanation": "\\(12\\% = \\dfrac{12}{100} = \\dfrac{3}{25}\\).", "workingOut": "", "graphData": null },
+      { "explanation": "This is a ratio of two integers, so it is rational.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "RXKba8QckldvJtgnDJyt",
+    "id": "y11a-2a-q1i",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(-3\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(-3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "RtF5NBDmVgOXNk6XkyyQ",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\((-6, 6)\\) to inequality.",
-    "answer": "-6<x<6",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-6 < x < 6\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-6, 6)\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-6 < x < 6\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "STlXuB9Bf3EZvJfmZcBm",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt[3]{27}\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(3\\) (Rational)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt[3]{27}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(3\\) (Rational)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "TU0KPCUmcztE6MXjJlAj",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Graph of \\([-5, 5)\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "-5 \\le x < 5",
-        "imageUrl": ""
-      },
-      {
-        "text": "-5 < x \\le 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-5 \\le x < 5\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\([-5, 5)\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-5 \\le x < 5\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "TlwzoK8yJHFTLOSie3BF",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\([-6, 6)\\) to inequality.",
-    "answer": "-6<=x<6",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-6 \\le x < 6\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\([-6, 6)\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-6 \\le x < 6\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "VXbfiDAWPa0OLZFfHloa",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Write \\(-1 < x \\le 4\\) in bracket notation.",
-    "answer": "(-1,4]",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-1, 4]\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(-1 < x \\le 4\\) in bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-1, 4]\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "W7X8eNsp4c0AdPrXRp7k",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Express the interval \\\\([-2, 7]\\\\) using inequalities.",
+    "timeLimit": 60,
+    "question": "Classify \\(\\sqrt[3]{27}\\).",
     "answer": 3,
     "options": [
-      {
-        "text": "\\\\(-2 < x \\le 7\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-2 < x < 7\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-2 \\le x < 7\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-2 \\le x \\le 7\\\\)",
-        "imageUrl": ""
-      }
+      { "text": "Irrational", "imageUrl": "" },
+      { "text": "Rational only (not an integer)", "imageUrl": "" },
+      { "text": "Real but not rational", "imageUrl": "" },
+      { "text": "Integer and rational", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Notation \\\\([-2, 7]\\\\) means \\\\(x\\\\) is between -2 and 7, including both.",
+    "hint": "Evaluate \\(\\sqrt[3]{27}\\) first.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Express the interval \\\\([-2, 7]\\\\) using inequalities.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Notation \\\\([-2, 7]\\\\) means \\\\(x\\\\) is between -2 and 7, including both.",
-        "graphData": null
-      }
+      { "explanation": "\\(\\sqrt[3]{27} = 3\\) since \\(3^3 = 27\\).", "workingOut": "\\(\\sqrt[3]{27} = 3\\)", "graphData": null },
+      { "explanation": "\\(3\\) is a natural number, integer, and rational.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "W8Vtq2rW6v1cCfYWNfKB",
+    "id": "y11a-2a-q1j",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(0\\)",
+    "timeLimit": 60,
+    "question": "Is \\(\\sqrt{1.44}\\) rational or irrational?",
     "answer": 0,
     "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
+      { "text": "Rational, because \\(\\sqrt{1.44} = 1.2\\)", "imageUrl": "" },
+      { "text": "Irrational, because 1.44 is a decimal", "imageUrl": "" },
+      { "text": "Irrational, because surds are always irrational", "imageUrl": "" },
+      { "text": "Rational, but only because it's less than 2", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Rational",
+    "hint": "Evaluate \\(\\sqrt{1.44}\\).",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Rational",
-        "graphData": null
-      }
+      { "explanation": "\\(1.44 = \\dfrac{144}{100}\\), so \\(\\sqrt{1.44} = \\dfrac{\\sqrt{144}}{\\sqrt{100}} = \\dfrac{12}{10} = 1.2\\).", "workingOut": "\\(\\sqrt{1.44} = 1.2 = \\dfrac{6}{5}\\)", "graphData": null },
+      { "explanation": "Since \\(1.2 = 6/5\\) is a fraction of integers, it is rational.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "WxEaTlvaXEcIrWN4w2vf",
+    "id": "y11a-2a-q1k",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 9: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
+    "timeLimit": 60,
+    "question": "Which of the following is irrational?",
+    "answer": 2,
     "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
+      { "text": "\\(\\sqrt{9}\\)", "imageUrl": "" },
+      { "text": "\\(0.25\\)", "imageUrl": "" },
+      { "text": "\\(\\sqrt{3}\\)", "imageUrl": "" },
+      { "text": "\\(\\sqrt[3]{64}\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
+    "hint": "Which of these cannot be expressed as a fraction?",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 9: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
+      { "explanation": "\\(\\sqrt{9} = 3\\) — rational. \\(0.25 = 1/4\\) — rational. \\(\\sqrt[3]{64} = 4\\) — rational.", "workingOut": "", "graphData": null },
+      { "explanation": "\\(\\sqrt{3} = 1.7320\\ldots\\) — non-terminating, non-repeating. 3 is not a perfect square.", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(\\sqrt{3}\\) is the only irrational option.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "X0mzPVU3tQQMtuTOD1cN",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Variation 5: Classify: \\(-3\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 5: Classify: \\(-3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "XUPLy3xnArFjongGDeoG",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt{3}\\)",
-    "answer": 1,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Irrational",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Irrational",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "YxK9kYNryjR0Q7XQ00wt",
+    "id": "y11a-2a-q1l",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 18: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 18: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "Z8rJoSRrnWeuD7Jde48Y",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 12: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 12: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "Zbkif9Uv37AvAePCSWTW",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Variation 4: Classify: \\(-3\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 = -3/1\\) (Rational)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 4: Classify: \\(-3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 = -3/1\\) (Rational)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "Zhf3QVZranuJGjLpSvqF",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 7: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 7: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "aiidwPPIXQQPo1TyTpfP",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Identify if \\\\(\\sqrt[3]{64}\\\\) is rational or irrational.",
+    "timeLimit": 60,
+    "question": "Which of the following is NOT rational?",
     "answer": 3,
     "options": [
-      {
-        "text": "Complex",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Surd",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      }
+      { "text": "\\(\\sqrt{16}\\)", "imageUrl": "" },
+      { "text": "\\(0.\\overline{142857}\\)", "imageUrl": "" },
+      { "text": "\\(-\\dfrac{7}{3}\\)", "imageUrl": "" },
+      { "text": "\\(\\sqrt{2} + \\sqrt{3}\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
+    "hint": "A sum of two irrationals is generally irrational.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Identify if \\\\(\\sqrt[3]{64}\\\\) is rational or irrational.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(\\sqrt[3]{64} = 4\\\\), which is an integer (Rational).",
-        "graphData": null
-      }
+      { "explanation": "\\(\\sqrt{16} = 4\\) — rational. \\(0.\\overline{142857} = 1/7\\) — rational. \\(-7/3\\) — rational.", "workingOut": "", "graphData": null },
+      { "explanation": "\\(\\sqrt{2}+\\sqrt{3}\\) cannot be simplified to a ratio of integers.", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(\\sqrt{2}+\\sqrt{3}\\) is irrational.", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+
+  // ─── Group 2: Interval notation → inequality (q2a–q2k) ──────────────────
+
+  {
+    "id": "y11a-2a-q2a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Convert \\((6, \\infty)\\) to inequality notation.",
+    "answer": 2,
+    "options": [
+      { "text": "\\(x \\ge 6\\)", "imageUrl": "" },
+      { "text": "\\(x < 6\\)", "imageUrl": "" },
+      { "text": "\\(x > 6\\)", "imageUrl": "" },
+      { "text": "\\(x \\le 6\\)", "imageUrl": "" }
+    ],
+    "hint": "A round bracket means the endpoint is NOT included.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "A round bracket \\((\\) means the endpoint is excluded (strict inequality).", "workingOut": "", "graphData": null },
+      { "explanation": "\\((6, \\infty)\\) means all \\(x\\) greater than 6 (not including 6).", "workingOut": "\\(x > 6\\)", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "bCZwTfjdd3z1ELgjiOkl",
+    "id": "y11a-2a-q2b",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Is \\(\\sqrt[3]{8}\\) rational?",
+    "timeLimit": 60,
+    "question": "Convert \\((-\\infty, -6]\\) to inequality notation.",
     "answer": 0,
     "options": [
-      {
-        "text": "Yes (2)",
-        "imageUrl": ""
-      },
-      {
-        "text": "No",
-        "imageUrl": ""
-      }
+      { "text": "\\(x \\le -6\\)", "imageUrl": "" },
+      { "text": "\\(x < -6\\)", "imageUrl": "" },
+      { "text": "\\(x \\ge -6\\)", "imageUrl": "" },
+      { "text": "\\(x > -6\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "2",
+    "hint": "A square bracket means the endpoint IS included.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(\\sqrt[3]{8}\\) rational?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "2",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "cg8GvTOEeRQW3f5ma2Cc",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Graph of \\(x \\le -1\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "(-\\infty, -1]",
-        "imageUrl": ""
-      },
-      {
-        "text": "[-1, \\infty)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-\\infty, -1]\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\(x \\le -1\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-\\infty, -1]\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "d3dk59HIVetFKg7TQW9X",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Graph of \\((-\\infty, 1)\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "x < 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "x \\le 1",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x < 1\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\((-\\infty, 1)\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x < 1\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "dQVTSlya6fjVlvslwcBb",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Express \\\\((3, \\infty)\\\\) using inequalities.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(x > 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x < 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x \\ge 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x \\le 3\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x > 3\\\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Express \\\\((3, \\infty)\\\\) using inequalities.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(x > 3\\\\)",
-        "graphData": null
-      }
+      { "explanation": "A square bracket \\(]\\) means the endpoint is included (\\(\\le\\) or \\(\\ge\\)).", "workingOut": "", "graphData": null },
+      { "explanation": "\\((-\\infty, -6]\\) means all \\(x\\) up to and including \\(-6\\).", "workingOut": "\\(x \\le -6\\)", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "doc2DutUcW9OQ5xh7Qaz",
+    "id": "y11a-2a-q2c",
     "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Write the interval \\\\((-\\infty, -4]\\\\) using inequalities.",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Convert \\([4, \\infty)\\) to inequality notation.",
+    "answer": 1,
+    "options": [
+      { "text": "\\(x > 4\\)", "imageUrl": "" },
+      { "text": "\\(x \\ge 4\\)", "imageUrl": "" },
+      { "text": "\\(x < 4\\)", "imageUrl": "" },
+      { "text": "\\(x \\le 4\\)", "imageUrl": "" }
+    ],
+    "hint": "Square bracket at 4 means 4 is included.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\([4, \\infty)\\) starts at 4 with a square bracket — 4 is included.", "workingOut": "\\(x \\ge 4\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q2d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Convert \\((-6, 6]\\) to inequality notation.",
     "answer": 3,
     "options": [
-      {
-        "text": "\\\\(x \\ge -4\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x > -4\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x < -4\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x \\le -4\\\\)",
-        "imageUrl": ""
-      }
+      { "text": "\\(-6 \\le x \\le 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 < x < 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 \\le x < 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 < x \\le 6\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Up to and including -4.",
+    "hint": "Check each bracket type: round = excluded, square = included.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write the interval \\\\((-\\infty, -4]\\\\) using inequalities.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Up to and including -4.",
-        "graphData": null
-      }
+      { "explanation": "Round bracket at \\(-6\\): not included, so \\(x > -6\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Square bracket at \\(6\\): included, so \\(x \\le 6\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Combined: \\(-6 < x \\le 6\\).", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "e5dwsV0YEAiv7mwXvvDj",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Write \\(x \\ge 0\\) in bracket notation.",
-    "answer": "[0,inf)",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\([0, \\infty)\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x \\ge 0\\) in bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\([0, \\infty)\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "f6UArYZLlkuPibet917Z",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 11: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 11: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "fex20EEZ6PSHSEolOb8D",
+    "id": "y11a-2a-q2e",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt{4/9}\\)",
+    "timeLimit": 60,
+    "question": "Convert \\([-6, 6]\\) to inequality notation.",
     "answer": 0,
     "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
+      { "text": "\\(-6 \\le x \\le 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 < x < 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 \\le x < 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 < x \\le 6\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Rational",
+    "hint": "Both brackets are square — both endpoints are included.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt{4/9}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Rational",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "huNABCNaK2glGFhkJJU1",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Is \\(x > 5\\) open?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Yes",
-        "imageUrl": ""
-      },
-      {
-        "text": "No",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Open",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\(x > 5\\) open?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Open",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "iN6Nn4oIsl2OSt6su8Lu",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Write \\(x > 10\\) in bracket notation.",
-    "answer": "(10,inf)",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "(10, inf)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x > 10\\) in bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "(10, inf)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "j5ErxWLpog7WILqbFNBy",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 5: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 5: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "jTPqLFCNDL3joLij8w4M",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Classify \\\\(\\pi + 2\\\\) as rational or irrational.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Algebraic",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Integer",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\pi\\\\) is irrational, so \\\\(\\pi + 2\\\\) is also irrational.",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify \\\\(\\pi + 2\\\\) as rational or irrational.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(\\pi\\\\) is irrational, so \\\\(\\pi + 2\\\\) is also irrational.",
-        "graphData": null
-      }
+      { "explanation": "Both brackets are square: both endpoints are included.", "workingOut": "\\(-6 \\le x \\le 6\\)", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "jomi7B0oCEa9zXLY1ZAF",
+    "id": "y11a-2a-q2f",
     "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 8: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 8: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "juNoyQ3Cqmz8BMDux8Qo",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Express \\\\((-5, 3)\\\\) using inequalities.",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Convert \\((-6, 6)\\) to inequality notation.",
     "answer": 1,
     "options": [
-      {
-        "text": "\\\\(-5 \\le x < 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-5 < x < 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-5 \\le x \\le 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-5 < x \\le 3\\\\)",
-        "imageUrl": ""
-      }
+      { "text": "\\(-6 \\le x \\le 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 < x < 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 \\le x < 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 < x \\le 6\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-5 < x < 3\\\\)",
+    "hint": "Both brackets are round — neither endpoint is included.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Express \\\\((-5, 3)\\\\) using inequalities.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(-5 < x < 3\\\\)",
-        "graphData": null
-      }
+      { "explanation": "Both round brackets: neither endpoint is included.", "workingOut": "\\(-6 < x < 6\\)", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "jysVC9kShmwaDwtb6T1t",
+    "id": "y11a-2a-q2g",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(3.14\\)",
-    "answer": 0,
+    "timeLimit": 60,
+    "question": "Convert \\([-6, 6)\\) to inequality notation.",
+    "answer": 2,
     "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
+      { "text": "\\(-6 \\le x \\le 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 < x < 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 \\le x < 6\\)", "imageUrl": "" },
+      { "text": "\\(-6 < x \\le 6\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Rational",
+    "hint": "Square at left, round at right.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(3.14\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Rational",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "kQiUYmr52KptDmWOTUWr",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Express \\\\([-5, 3]\\\\) using inequalities.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(-5 \\le x \\le 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-5 < x < 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-5 < x \\le 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-5 \\le x < 3\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-5 \\le x \\le 3\\\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Express \\\\([-5, 3]\\\\) using inequalities.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(-5 \\le x \\le 3\\\\)",
-        "graphData": null
-      }
+      { "explanation": "Square bracket at \\(-6\\): included \\(\\Rightarrow x \\ge -6\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Round bracket at \\(6\\): excluded \\(\\Rightarrow x < 6\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Combined: \\(-6 \\le x < 6\\).", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "kRzRZsOrOL0mwzw74qaF",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "From -2 to 3 (inclusive) in bracket notation.",
-    "answer": "[-2,3]",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\([-2, 3]\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "From -2 to 3 (inclusive) in bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\([-2, 3]\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "lSJsBo5nJV4RyYKLkP7r",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Write \\(x < -5\\) in bracket notation.",
-    "answer": "(-inf,-5)",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((-\\infty, -5)\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\(x < -5\\) in bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((-\\infty, -5)\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "m9QxSIIjEQssQYkY3WFR",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\((-\\infty, 10]\\) to inequality.",
-    "answer": "x<=10",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\le 10\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-\\infty, 10]\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\le 10\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "mzcDx9k5CKMqdDmW9xOY",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\([-3, 5]\\) to inequality.",
-    "answer": "-3<=x<=5",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-3 \\le x \\le 5\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\([-3, 5]\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-3 \\le x \\le 5\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "o4axsDlJlwuAO86nXmdY",
+    "id": "y11a-2a-q2h",
     "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Identify if \\\\(3\\sqrt{7}\\\\) is rational or irrational.",
-    "answer": 0,
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Convert \\([-2, 7]\\) to inequality notation.",
+    "answer": 3,
     "options": [
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Integer",
-        "imageUrl": ""
-      },
-      {
-        "text": "Fraction",
-        "imageUrl": ""
-      }
+      { "text": "\\(-2 < x < 7\\)", "imageUrl": "" },
+      { "text": "\\(-2 < x \\le 7\\)", "imageUrl": "" },
+      { "text": "\\(-2 \\le x < 7\\)", "imageUrl": "" },
+      { "text": "\\(-2 \\le x \\le 7\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Product of rational and irrational is irrational.",
+    "hint": "Both endpoints have square brackets.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Identify if \\\\(3\\sqrt{7}\\\\) is rational or irrational.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Product of rational and irrational is irrational.",
-        "graphData": null
-      }
+      { "explanation": "Both brackets are square: \\(-2 \\le x \\le 7\\).", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "oQTVYdeHDNQMWLTlUX84",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Between 1 and 10 (inclusive).",
-    "answer": "1<=x<=10",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(1 \\le x \\le 10\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Between 1 and 10 (inclusive).",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(1 \\le x \\le 10\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "pgJormEOLaY5H7WW47Ge",
+    "id": "y11a-2a-q2i",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(\\pi\\)",
+    "timeLimit": 60,
+    "question": "Convert \\((-\\infty, 5)\\) to inequality notation.",
+    "answer": 0,
+    "options": [
+      { "text": "\\(x < 5\\)", "imageUrl": "" },
+      { "text": "\\(x \\le 5\\)", "imageUrl": "" },
+      { "text": "\\(x > 5\\)", "imageUrl": "" },
+      { "text": "\\(x \\ge 5\\)", "imageUrl": "" }
+    ],
+    "hint": "Round bracket at 5 means 5 is excluded.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\((-\\infty, 5)\\): all values less than 5, with 5 excluded (round bracket).", "workingOut": "\\(x < 5\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q2j",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Convert \\((0, 5]\\) to inequality notation.",
     "answer": 1,
     "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
+      { "text": "\\(0 \\le x \\le 5\\)", "imageUrl": "" },
+      { "text": "\\(0 < x \\le 5\\)", "imageUrl": "" },
+      { "text": "\\(0 < x < 5\\)", "imageUrl": "" },
+      { "text": "\\(0 \\le x < 5\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Irrational",
+    "hint": "Round at left (excluded), square at right (included).",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\pi\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Irrational",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "prDbxPCZ7rWmaqPNaqqS",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 0: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 0: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "q6yzosj81zyPguY57rUh",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Is \\\\(\\sqrt{45}\\\\) rational or irrational?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Fraction",
-        "imageUrl": ""
-      },
-      {
-        "text": "Integer",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\sqrt{45} = 3\\sqrt{5}\\\\), which is an irrational number.",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Is \\\\(\\sqrt{45}\\\\) rational or irrational?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(\\sqrt{45} = 3\\sqrt{5}\\\\), which is an irrational number.",
-        "graphData": null
-      }
+      { "explanation": "Round bracket at 0 → excluded: \\(x > 0\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Square bracket at 5 → included: \\(x \\le 5\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Combined: \\(0 < x \\le 5\\).", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "qhHP947ktFxhcrzVRzex",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(0.45\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Rational",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(0.45\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Rational",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "qu5wTk0wheqYrs0LVJfL",
+    "id": "y11a-2a-q2k",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Classify \\\\(\\sqrt{1.44}\\\\) as rational or irrational.",
+    "timeLimit": 60,
+    "question": "Convert \\([-5, 5)\\) to inequality notation.",
+    "answer": 2,
+    "options": [
+      { "text": "\\(-5 < x < 5\\)", "imageUrl": "" },
+      { "text": "\\(-5 \\le x \\le 5\\)", "imageUrl": "" },
+      { "text": "\\(-5 \\le x < 5\\)", "imageUrl": "" },
+      { "text": "\\(-5 < x \\le 5\\)", "imageUrl": "" }
+    ],
+    "hint": "Square bracket at left; round at right.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Square at \\(-5\\): included \\(\\Rightarrow x \\ge -5\\). Round at 5: excluded \\(\\Rightarrow x < 5\\).", "workingOut": "\\(-5 \\le x < 5\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+
+  // ─── Group 3: Inequality → interval notation (q3a–q3k) ──────────────────
+
+  {
+    "id": "y11a-2a-q3a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Write \\(x > -4\\) in interval notation.",
+    "answer": 3,
+    "options": [
+      { "text": "\\([-4, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, -4)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, -4]\\)", "imageUrl": "" },
+      { "text": "\\((-4, \\infty)\\)", "imageUrl": "" }
+    ],
+    "hint": "Strict inequality \\(>\\) → round bracket.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(x > -4\\) means \\(x\\) is strictly greater than \\(-4\\) — \\(-4\\) is not included.", "workingOut": "", "graphData": null },
+      { "explanation": "Excluded endpoint \\(-4\\) → round bracket. Extending to \\(+\\infty\\).", "workingOut": "\\((-4, \\infty)\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q3b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Write \\(x \\ge -3\\) in interval notation.",
+    "answer": 0,
+    "options": [
+      { "text": "\\([-3, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\((-3, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, -3]\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, -3)\\)", "imageUrl": "" }
+    ],
+    "hint": "\\(\\ge\\) means the endpoint IS included → square bracket.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(x \\ge -3\\): \\(-3\\) is included (\\(\\ge\\)) → square bracket.", "workingOut": "\\([-3, \\infty)\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q3c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Write \\(x \\le 0\\) in interval notation.",
     "answer": 1,
     "options": [
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Surd",
-        "imageUrl": ""
-      },
-      {
-        "text": "Imaginary",
-        "imageUrl": ""
-      }
+      { "text": "\\([0, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, 0]\\)", "imageUrl": "" },
+      { "text": "\\((0, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, 0)\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
+    "hint": "All values less than or equal to 0.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify \\\\(\\sqrt{1.44}\\\\) as rational or irrational.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(\\sqrt{1.44} = 1.2 = 6/5\\\\). Rational.",
-        "graphData": null
-      }
+      { "explanation": "\\(x \\le 0\\): extends left to \\(-\\infty\\), includes 0 (square bracket).", "workingOut": "\\((-\\infty, 0]\\)", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "qy62FkohmxxOHl0pV43E",
+    "id": "y11a-2a-q3d",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Write \\(-1 < x \\le 4\\) in interval notation.",
+    "answer": 2,
+    "options": [
+      { "text": "\\([-1, 4]\\)", "imageUrl": "" },
+      { "text": "\\([-1, 4)\\)", "imageUrl": "" },
+      { "text": "\\((-1, 4]\\)", "imageUrl": "" },
+      { "text": "\\((-1, 4)\\)", "imageUrl": "" }
+    ],
+    "hint": "\\(-1\\) is excluded; \\(4\\) is included.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(-1\\) is excluded (strict \\(<\\)) → round bracket.", "workingOut": "", "graphData": null },
+      { "explanation": "\\(4\\) is included (\\(\\le\\)) → square bracket.", "workingOut": "\\((-1, 4]\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q3e",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Write \\(-3 < x \\le 4\\) in interval notation.",
+    "answer": 0,
+    "options": [
+      { "text": "\\((-3, 4]\\)", "imageUrl": "" },
+      { "text": "\\([-3, 4]\\)", "imageUrl": "" },
+      { "text": "\\((-3, 4)\\)", "imageUrl": "" },
+      { "text": "\\([-3, 4)\\)", "imageUrl": "" }
+    ],
+    "hint": "\\(-3\\) excluded, \\(4\\) included.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(-3\\) excluded → round; \\(4\\) included → square.", "workingOut": "\\((-3, 4]\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q3f",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Write \\(-2 \\le x \\le 7\\) in interval notation.",
+    "answer": 1,
+    "options": [
+      { "text": "\\((-2, 7)\\)", "imageUrl": "" },
+      { "text": "\\([-2, 7]\\)", "imageUrl": "" },
+      { "text": "\\([-2, 7)\\)", "imageUrl": "" },
+      { "text": "\\((-2, 7]\\)", "imageUrl": "" }
+    ],
+    "hint": "Both endpoints are included.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Both \\(\\le\\) signs → both endpoints included → both square brackets.", "workingOut": "\\([-2, 7]\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q3g",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Write \\(x < 5\\) in interval notation.",
+    "answer": 2,
+    "options": [
+      { "text": "\\([5, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, 5]\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, 5)\\)", "imageUrl": "" },
+      { "text": "\\((5, \\infty)\\)", "imageUrl": "" }
+    ],
+    "hint": "Extends left from 5 (excluded).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(x < 5\\): all values below 5, with 5 excluded → round bracket.", "workingOut": "\\((-\\infty, 5)\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q3h",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Write \\(x \\ge 6\\) in interval notation.",
+    "answer": 3,
+    "options": [
+      { "text": "\\((-\\infty, 6]\\)", "imageUrl": "" },
+      { "text": "\\((6, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, 6)\\)", "imageUrl": "" },
+      { "text": "\\([6, \\infty)\\)", "imageUrl": "" }
+    ],
+    "hint": "\\(\\ge\\) includes 6 → square bracket, extending to \\(+\\infty\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(x \\ge 6\\): 6 included → square bracket; extends to \\(+\\infty\\).", "workingOut": "\\([6, \\infty)\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q3i",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Write \\(0 \\le x \\le 7\\) in interval notation.",
+    "answer": 0,
+    "options": [
+      { "text": "\\([0, 7]\\)", "imageUrl": "" },
+      { "text": "\\((0, 7)\\)", "imageUrl": "" },
+      { "text": "\\([0, 7)\\)", "imageUrl": "" },
+      { "text": "\\((0, 7]\\)", "imageUrl": "" }
+    ],
+    "hint": "Both endpoints included.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Both \\(\\le\\) → both included → both square brackets: \\([0, 7]\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q3j",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Write \\(0 < x \\le 5\\) in interval notation.",
+    "answer": 1,
+    "options": [
+      { "text": "\\([0, 5]\\)", "imageUrl": "" },
+      { "text": "\\((0, 5]\\)", "imageUrl": "" },
+      { "text": "\\([0, 5)\\)", "imageUrl": "" },
+      { "text": "\\((0, 5)\\)", "imageUrl": "" }
+    ],
+    "hint": "0 excluded, 5 included.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(0 < x\\): 0 excluded → round. \\(x \\le 5\\): 5 included → square.", "workingOut": "\\((0, 5]\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q3k",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Write \\(x < -2\\) OR \\(x \\ge 1\\) in interval notation.",
+    "answer": 2,
+    "options": [
+      { "text": "\\([-2, 1)\\)", "imageUrl": "" },
+      { "text": "\\((-2, 1]\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, -2) \\cup [1, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, -2] \\cup (1, \\infty)\\)", "imageUrl": "" }
+    ],
+    "hint": "OR combines two separate intervals with \\(\\cup\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(x < -2\\) gives \\((-\\infty, -2)\\) (round bracket, excluded).", "workingOut": "", "graphData": null },
+      { "explanation": "\\(x \\ge 1\\) gives \\([1, \\infty)\\) (square bracket, included).", "workingOut": "", "graphData": null },
+      { "explanation": "Union: \\((-\\infty, -2) \\cup [1, \\infty)\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+
+  // ─── Group 4: Integer bounds for surds (q4a–q4l) ────────────────────────
+
+  {
+    "id": "y11a-2a-q4a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt{2}\\) lie?",
+    "answer": 0,
+    "options": [
+      { "text": "1 and 2", "imageUrl": "" },
+      { "text": "2 and 3", "imageUrl": "" },
+      { "text": "0 and 1", "imageUrl": "" },
+      { "text": "3 and 4", "imageUrl": "" }
+    ],
+    "hint": "Find \\(n\\) so that \\(n^2 < 2 < (n+1)^2\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Check consecutive perfect squares: \\(1^2=1\\) and \\(2^2=4\\).", "workingOut": "\\(1 < 2 < 4\\)", "graphData": null },
+      { "explanation": "So \\(\\sqrt{1} < \\sqrt{2} < \\sqrt{4}\\), i.e. \\(1 < \\sqrt{2} < 2\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4b",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt{5}\\) lie?",
+    "answer": 1,
+    "options": [
+      { "text": "1 and 2", "imageUrl": "" },
+      { "text": "2 and 3", "imageUrl": "" },
+      { "text": "4 and 5", "imageUrl": "" },
+      { "text": "3 and 4", "imageUrl": "" }
+    ],
+    "hint": "Find \\(n^2 < 5 < (n+1)^2\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(2^2 = 4 < 5 < 9 = 3^2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(2 < \\sqrt{5} < 3\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt{15}\\) lie?",
+    "answer": 2,
+    "options": [
+      { "text": "2 and 3", "imageUrl": "" },
+      { "text": "4 and 5", "imageUrl": "" },
+      { "text": "3 and 4", "imageUrl": "" },
+      { "text": "5 and 6", "imageUrl": "" }
+    ],
+    "hint": "Find \\(n^2 < 15 < (n+1)^2\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(3^2 = 9 < 15 < 16 = 4^2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(3 < \\sqrt{15} < 4\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt{30}\\) lie?",
+    "answer": 3,
+    "options": [
+      { "text": "4 and 5", "imageUrl": "" },
+      { "text": "3 and 4", "imageUrl": "" },
+      { "text": "6 and 7", "imageUrl": "" },
+      { "text": "5 and 6", "imageUrl": "" }
+    ],
+    "hint": "Find \\(n^2 < 30 < (n+1)^2\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(5^2 = 25 < 30 < 36 = 6^2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(5 < \\sqrt{30} < 6\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4e",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt{50}\\) lie?",
+    "answer": 0,
+    "options": [
+      { "text": "7 and 8", "imageUrl": "" },
+      { "text": "6 and 7", "imageUrl": "" },
+      { "text": "8 and 9", "imageUrl": "" },
+      { "text": "5 and 6", "imageUrl": "" }
+    ],
+    "hint": "\\(7^2 = 49\\) and \\(8^2 = 64\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(7^2 = 49 < 50 < 64 = 8^2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(7 < \\sqrt{50} < 8\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4f",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt{150}\\) lie?",
+    "answer": 1,
+    "options": [
+      { "text": "11 and 12", "imageUrl": "" },
+      { "text": "12 and 13", "imageUrl": "" },
+      { "text": "13 and 14", "imageUrl": "" },
+      { "text": "10 and 11", "imageUrl": "" }
+    ],
+    "hint": "Calculate \\(12^2\\) and \\(13^2\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(12^2 = 144 < 150 < 169 = 13^2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(12 < \\sqrt{150} < 13\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4g",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt{200}\\) lie?",
+    "answer": 2,
+    "options": [
+      { "text": "13 and 14", "imageUrl": "" },
+      { "text": "15 and 16", "imageUrl": "" },
+      { "text": "14 and 15", "imageUrl": "" },
+      { "text": "12 and 13", "imageUrl": "" }
+    ],
+    "hint": "Calculate \\(14^2\\) and \\(15^2\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(14^2 = 196 < 200 < 225 = 15^2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(14 < \\sqrt{200} < 15\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4h",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt{7}\\) lie?",
+    "answer": 3,
+    "options": [
+      { "text": "1 and 2", "imageUrl": "" },
+      { "text": "3 and 4", "imageUrl": "" },
+      { "text": "4 and 5", "imageUrl": "" },
+      { "text": "2 and 3", "imageUrl": "" }
+    ],
+    "hint": "\\(2^2 = 4\\) and \\(3^2 = 9\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(2^2 = 4 < 7 < 9 = 3^2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(2 < \\sqrt{7} < 3\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4i",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(-\\sqrt{3}\\) lie?",
+    "answer": 0,
+    "options": [
+      { "text": "\\(-2\\) and \\(-1\\)", "imageUrl": "" },
+      { "text": "\\(-3\\) and \\(-2\\)", "imageUrl": "" },
+      { "text": "\\(-1\\) and \\(0\\)", "imageUrl": "" },
+      { "text": "\\(1\\) and \\(2\\)", "imageUrl": "" }
+    ],
+    "hint": "Since \\(1 < \\sqrt{3} < 2\\), what does that mean for \\(-\\sqrt{3}\\)?",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(1^2 = 1 < 3 < 4 = 2^2\\), so \\(1 < \\sqrt{3} < 2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Negating reverses the inequality: \\(-2 < -\\sqrt{3} < -1\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(-\\sqrt{3}\\) lies between \\(-2\\) and \\(-1\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4j",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\pi\\) lie?",
+    "answer": 1,
+    "options": [
+      { "text": "2 and 3", "imageUrl": "" },
+      { "text": "3 and 4", "imageUrl": "" },
+      { "text": "4 and 5", "imageUrl": "" },
+      { "text": "1 and 2", "imageUrl": "" }
+    ],
+    "hint": "\\(\\pi \\approx 3.14159\\ldots\\)",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(\\pi = 3.14159\\ldots\\), which lies between 3 and 4.", "workingOut": "\\(3 < \\pi < 4\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4k",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt[3]{15}\\) lie?",
+    "answer": 2,
+    "options": [
+      { "text": "1 and 2", "imageUrl": "" },
+      { "text": "3 and 4", "imageUrl": "" },
+      { "text": "2 and 3", "imageUrl": "" },
+      { "text": "4 and 5", "imageUrl": "" }
+    ],
+    "hint": "Find \\(n^3 < 15 < (n+1)^3\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(2^3 = 8 < 15 < 27 = 3^3\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(2 < \\sqrt[3]{15} < 3\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q4l",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Between which two consecutive integers does \\(\\sqrt{20}\\) lie?",
+    "answer": 3,
+    "options": [
+      { "text": "3 and 4", "imageUrl": "" },
+      { "text": "5 and 6", "imageUrl": "" },
+      { "text": "3 and 5", "imageUrl": "" },
+      { "text": "4 and 5", "imageUrl": "" }
+    ],
+    "hint": "\\(4^2 = 16\\) and \\(5^2 = 25\\).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(4^2 = 16 < 20 < 25 = 5^2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Therefore \\(4 < \\sqrt{20} < 5\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+
+  // ─── Group 5: Interval type & graph identification (q5a–q5j) ────────────
+
+  {
+    "id": "y11a-2a-q5a",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Which interval represents \\(x > -2\\)?",
+    "answer": 0,
+    "options": [
+      { "text": "\\((-2, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\([-2, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, -2)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, -2]\\)", "imageUrl": "" }
+    ],
+    "hint": "Strict \\(>\\) → round bracket (excluded).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(x > -2\\): extends right from \\(-2\\) (excluded).", "workingOut": "\\((-2, \\infty)\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q5b",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Which interval represents \\(-3 < x \\le 4\\)?",
+    "answer": 1,
+    "options": [
+      { "text": "\\([-3, 4]\\)", "imageUrl": "" },
+      { "text": "\\((-3, 4]\\)", "imageUrl": "" },
+      { "text": "\\((-3, 4)\\)", "imageUrl": "" },
+      { "text": "\\([-3, 4)\\)", "imageUrl": "" }
+    ],
+    "hint": "\\(-3\\) excluded (round), \\(4\\) included (square).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(-3\\) excluded → round; \\(4\\) included → square: \\((-3, 4]\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q5c",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Is the interval \\([0, 7]\\) open, closed, or half-open?",
+    "answer": 2,
+    "options": [
+      { "text": "Open", "imageUrl": "" },
+      { "text": "Half-open", "imageUrl": "" },
+      { "text": "Closed", "imageUrl": "" },
+      { "text": "Unbounded", "imageUrl": "" }
+    ],
+    "hint": "A closed interval has square brackets on both sides.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\([0, 7]\\) has square brackets on both sides — both endpoints are included.", "workingOut": "", "graphData": null },
+      { "explanation": "This is a closed interval.", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q5d",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Is \\(x \\ge 6\\) a bounded or unbounded set of numbers?",
+    "answer": 3,
+    "options": [
+      { "text": "Bounded, because it has a definite starting point", "imageUrl": "" },
+      { "text": "Bounded, because 6 is a finite number", "imageUrl": "" },
+      { "text": "Bounded above and below", "imageUrl": "" },
+      { "text": "Unbounded, because it extends to \\(+\\infty\\)", "imageUrl": "" }
+    ],
+    "hint": "Does the interval have both a finite upper bound AND a finite lower bound?",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(x \\ge 6\\) gives \\([6, \\infty)\\). It has a lower bound of 6 but NO upper bound.", "workingOut": "", "graphData": null },
+      { "explanation": "Since it extends to \\(+\\infty\\), it is unbounded.", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q5e",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "The intersection of \\(x \\ge -1\\) and \\(x \\le 1\\) is:",
+    "answer": 0,
+    "options": [
+      { "text": "\\([-1, 1]\\)", "imageUrl": "" },
+      { "text": "\\((-1, 1)\\)", "imageUrl": "" },
+      { "text": "\\((-\\infty, -1] \\cup [1, \\infty)\\)", "imageUrl": "" },
+      { "text": "\\([-1, 1)\\)", "imageUrl": "" }
+    ],
+    "hint": "Intersection = values satisfying BOTH inequalities.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(x \\ge -1\\) AND \\(x \\le 1\\) means \\(-1 \\le x \\le 1\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Both endpoints are included: \\([-1, 1]\\).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q5f",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Is the interval \\((2, 5)\\) open or closed?",
+    "answer": 1,
+    "options": [
+      { "text": "Closed", "imageUrl": "" },
+      { "text": "Open", "imageUrl": "" },
+      { "text": "Half-open (closed at left)", "imageUrl": "" },
+      { "text": "Half-open (closed at right)", "imageUrl": "" }
+    ],
+    "hint": "Round brackets on both sides.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Both brackets are round — neither endpoint is included.", "workingOut": "", "graphData": null },
+      { "explanation": "This is an open interval.", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q5g",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Which number line graph matches \\([-5, 5)\\)?",
+    "answer": 2,
+    "options": [
+      { "text": "Open circle at \\(-5\\), closed circle at \\(5\\), shaded between", "imageUrl": "" },
+      { "text": "Closed circles at both \\(-5\\) and \\(5\\), shaded between", "imageUrl": "" },
+      { "text": "Closed circle at \\(-5\\), open circle at \\(5\\), shaded between", "imageUrl": "" },
+      { "text": "Open circles at both \\(-5\\) and \\(5\\), shaded between", "imageUrl": "" }
+    ],
+    "hint": "Square bracket = closed circle (included); round bracket = open circle (excluded).",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\([-5, 5)\\): square bracket at \\(-5\\) → closed circle (included).", "workingOut": "", "graphData": null },
+      { "explanation": "Round bracket at 5 → open circle (excluded).", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q5h",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Which number line graph matches \\((-3, 4]\\)?",
+    "answer": 3,
+    "options": [
+      { "text": "Closed circles at both \\(-3\\) and \\(4\\)", "imageUrl": "" },
+      { "text": "Open circle at \\(-3\\), open circle at \\(4\\)", "imageUrl": "" },
+      { "text": "Closed circle at \\(-3\\), open circle at \\(4\\)", "imageUrl": "" },
+      { "text": "Open circle at \\(-3\\), closed circle at \\(4\\)", "imageUrl": "" }
+    ],
+    "hint": "Round bracket → open circle; square bracket → closed circle.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Round bracket at \\(-3\\) → open circle.", "workingOut": "", "graphData": null },
+      { "explanation": "Square bracket at \\(4\\) → closed circle.", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q5i",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Is \\((-\\infty, 7]\\) open, closed, or half-open?",
+    "answer": 1,
+    "options": [
+      { "text": "Open, because of the \\(-\\infty\\)", "imageUrl": "" },
+      { "text": "Half-open (closed at one end only)", "imageUrl": "" },
+      { "text": "Closed, because of the square bracket", "imageUrl": "" },
+      { "text": "Bounded and closed", "imageUrl": "" }
+    ],
+    "hint": "One bracket is round (\\(-\\infty\\) is never included), the other is square.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "\\(-\\infty\\) always uses a round bracket (never included).", "workingOut": "", "graphData": null },
+      { "explanation": "The right end at 7 has a square bracket (included).", "workingOut": "", "graphData": null },
+      { "explanation": "One end included, one not → half-open interval.", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q5j",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "question": "Which interval notation represents: all real numbers greater than \\(-1\\) and less than or equal to \\(5\\)?",
+    "answer": 0,
+    "options": [
+      { "text": "\\((-1, 5]\\)", "imageUrl": "" },
+      { "text": "\\([-1, 5]\\)", "imageUrl": "" },
+      { "text": "\\((-1, 5)\\)", "imageUrl": "" },
+      { "text": "\\([-1, 5)\\)", "imageUrl": "" }
+    ],
+    "hint": "Greater than (excluded) → round; less than or equal to (included) → square.",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Greater than \\(-1\\): excluded → round bracket.", "workingOut": "", "graphData": null },
+      { "explanation": "Less than or equal to \\(5\\): included → square bracket.", "workingOut": "\\((-1, 5]\\)", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+
+  // ─── Group 6: Mixed / harder (q6a–q6h) ──────────────────────────────────
+
+  {
+    "id": "y11a-2a-q6a",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
+    "question": "Express \\(0.32\\) as a fraction in simplest form.",
+    "answer": 3,
     "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
+      { "text": "\\(\\dfrac{32}{100}\\)", "imageUrl": "" },
+      { "text": "\\(\\dfrac{16}{100}\\)", "imageUrl": "" },
+      { "text": "\\(\\dfrac{4}{25}\\)", "imageUrl": "" },
+      { "text": "\\(\\dfrac{8}{25}\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
+    "hint": "Write as a fraction over 100, then simplify.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
+      { "explanation": "\\(0.32 = \\dfrac{32}{100}\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Simplify by dividing numerator and denominator by \\(\\gcd(32,100) = 4\\).", "workingOut": "\\(\\dfrac{32 \\div 4}{100 \\div 4} = \\dfrac{8}{25}\\)", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "sINTDIWmXWv6RUVgxbxR",
+    "id": "y11a-2a-q6b",
     "type": "multiple_choice",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Classify: \\(3\\frac{1}{7}\\)",
+    "question": "Which of the following is a natural number?",
+    "answer": 2,
+    "options": [
+      { "text": "\\(-1\\)", "imageUrl": "" },
+      { "text": "\\(0\\)", "imageUrl": "" },
+      { "text": "\\(7\\)", "imageUrl": "" },
+      { "text": "\\(\\dfrac{1}{2}\\)", "imageUrl": "" }
+    ],
+    "hint": "Natural numbers are the positive counting numbers: 1, 2, 3, …",
+    "solution": "",
+    "solutionSteps": [
+      { "explanation": "Natural numbers \\(\\mathbb{N} = \\{1, 2, 3, 4, \\ldots\\}\\).", "workingOut": "", "graphData": null },
+      { "explanation": "\\(-1\\) is negative (not natural). \\(0\\) is excluded. \\(\\frac{1}{2}\\) is not a whole number.", "workingOut": "", "graphData": null },
+      { "explanation": "Only \\(7\\) is a natural number.", "workingOut": "", "graphData": null }
+    ],
+    "graphData": null,
+    "t": "Real numbers and intervals"
+  },
+  {
+    "id": "y11a-2a-q6c",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Which number is irrational?",
     "answer": 0,
     "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
+      { "text": "\\(\\sqrt{3}\\)", "imageUrl": "" },
+      { "text": "\\(\\sqrt{9}\\)", "imageUrl": "" },
+      { "text": "\\(0.5\\)", "imageUrl": "" },
+      { "text": "\\(0.1\\overline{1}\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Rational",
+    "hint": "Evaluate each option — which cannot be written as p/q?",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(3\\frac{1}{7}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Rational",
-        "graphData": null
-      }
+      { "explanation": "\\(\\sqrt{9} = 3\\) — rational. \\(0.5 = 1/2\\) — rational. \\(0.1\\overline{1} = 1/9\\) — rational.", "workingOut": "", "graphData": null },
+      { "explanation": "\\(\\sqrt{3}\\): 3 is not a perfect square, so \\(\\sqrt{3}\\) is irrational.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "sWoWRcTZNDHRGtrm2OdT",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Convert \\((-2, 0)\\) to inequality.",
-    "answer": "-2<x<0",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(-2 < x < 0\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Convert \\((-2, 0)\\) to inequality.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(-2 < x < 0\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "sZ1Ruk8c3zeQ7aVqyveE",
+    "id": "y11a-2a-q6d",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Union of \\(x > -1\\) or \\(x < 1\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "(-\\infty, \\infty)",
-        "imageUrl": ""
-      },
-      {
-        "text": "(-1, 1)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "All real numbers",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Union of \\(x > -1\\) or \\(x < 1\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "All real numbers",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "tSA577mIsjP52qS4kinM",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Express \\\\((-\\infty, -5]\\\\) using inequalities.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\(x \\le -5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x < -5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x \\ge -5\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x > -5\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(x \\le -5\\\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Express \\\\((-\\infty, -5]\\\\) using inequalities.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(x \\le -5\\\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": "Real numbers and intervals"
-  },
-  {
-    "id": "u0pCqD7MdebUnjvfpeeV",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Graph of \\([3, \\infty)\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "x \\ge 3",
-        "imageUrl": ""
-      },
-      {
-        "text": "x > 3",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\(x \\ge 3\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Graph of \\([3, \\infty)\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\(x \\ge 3\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "uiRNRAMUGACIR8SVrdYH",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Classify: \\(\\sqrt[4]{8}\\)",
+    "question": "Which is the key step in proving \\(\\sqrt{3}\\) is irrational?",
     "answer": 1,
     "options": [
-      {
-        "text": "Rational",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational",
-        "imageUrl": ""
-      }
+      { "text": "Show that \\(\\sqrt{3} > 1\\)", "imageUrl": "" },
+      { "text": "Assume \\(\\sqrt{3} = p/q\\) in lowest terms and derive a contradiction", "imageUrl": "" },
+      { "text": "Show that \\(3\\) is a prime number", "imageUrl": "" },
+      { "text": "Calculate \\(\\sqrt{3}\\) to many decimal places", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "Irrational",
+    "hint": "Proof by contradiction assumes the opposite of what you want to prove.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Classify: \\(\\sqrt[4]{8}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "Irrational",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "w3X62Obfa5fZESdO3FtX",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Write \\\\(-4 \\le x < 6\\\\) in interval notation.",
-    "answer": 0,
-    "options": [
-      {
-        "text": "\\\\([-4, 6)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-4, 6]\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-4, 6)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-4, 6]\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\\\(-4\\\\) is included, \\\\(6\\\\) is not.",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Write \\\\(-4 \\le x < 6\\\\) in interval notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\\\(-4\\\\) is included, \\\\(6\\\\) is not.",
-        "graphData": null
-      }
+      { "explanation": "Assume \\(\\sqrt{3} = p/q\\) in lowest terms (i.e. \\(\\gcd(p,q)=1\\)).", "workingOut": "", "graphData": null },
+      { "explanation": "Then \\(3 = p^2/q^2\\), so \\(p^2 = 3q^2\\). This means \\(3 \\mid p^2\\), so \\(3 \\mid p\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Writing \\(p=3k\\) gives \\(9k^2 = 3q^2\\), so \\(3 \\mid q\\). But then \\(\\gcd(p,q) \\ge 3\\) — contradiction.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
   },
   {
-    "id": "wGAnFKaWiknVTI0KEmnp",
+    "id": "y11a-2a-q6e",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Variation 14: Range for \\(\\sqrt{15}\\)?",
+    "question": "Is \\(\\sqrt[3]{64}\\) rational or irrational?",
     "answer": 0,
     "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
+      { "text": "Rational, because \\(\\sqrt[3]{64} = 4\\)", "imageUrl": "" },
+      { "text": "Irrational, because cube roots are always irrational", "imageUrl": "" },
+      { "text": "Irrational, because \\(64\\) is not a perfect square", "imageUrl": "" },
+      { "text": "Rational, but only barely", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
+    "hint": "Evaluate \\(\\sqrt[3]{64}\\).",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 14: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
+      { "explanation": "\\(4^3 = 64\\), so \\(\\sqrt[3]{64} = 4\\).", "workingOut": "\\(\\sqrt[3]{64} = 4\\)", "graphData": null },
+      { "explanation": "\\(4\\) is an integer and therefore rational.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "wH0N0BQkhN84svEHaFNd",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Greater than 4 in bracket notation.",
-    "answer": "(4,inf)",
-    "options": [],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "\\((4, \\infty)\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Greater than 4 in bracket notation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "\\((4, \\infty)\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "wISdHXzYAjQyb6CB7yqs",
+    "id": "y11a-2a-q6f",
     "type": "multiple_choice",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Variation 13: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
+    "question": "Which of these correctly places \\(\\sqrt{10}\\) on a number line?",
+    "answer": 2,
     "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
+      { "text": "Between 2 and 3", "imageUrl": "" },
+      { "text": "Between 4 and 5", "imageUrl": "" },
+      { "text": "Between 3 and 4, closer to 3", "imageUrl": "" },
+      { "text": "Between 3 and 4, closer to 4", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
+    "hint": "Calculate \\(3.1^2\\) and \\(3.2^2\\) to narrow it down.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 13: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
+      { "explanation": "\\(3^2 = 9 < 10 < 16 = 4^2\\), so \\(3 < \\sqrt{10} < 4\\).", "workingOut": "", "graphData": null },
+      { "explanation": "\\(3.1^2 = 9.61 < 10 < 10.24 = 3.2^2\\), so \\(3.1 < \\sqrt{10} < 3.2\\).", "workingOut": "", "graphData": null },
+      { "explanation": "\\(\\sqrt{10} \\approx 3.162\\) — closer to 3 than to 4.", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "wUjKaVtN673xrlcmeDvJ",
+    "id": "y11a-2a-q6g",
     "type": "multiple_choice",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Variation 20: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
+    "question": "Which of the following is true about \\(\\sqrt{2} + \\sqrt{8}\\)?",
+    "answer": 3,
     "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
+      { "text": "It equals \\(\\sqrt{10}\\) and is irrational", "imageUrl": "" },
+      { "text": "It is irrational and cannot be simplified", "imageUrl": "" },
+      { "text": "It equals \\(2\\sqrt{10}\\) and is rational", "imageUrl": "" },
+      { "text": "It equals \\(3\\sqrt{2}\\) and is irrational", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
+    "hint": "Simplify \\(\\sqrt{8}\\) first.",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 20: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
+      { "explanation": "\\(\\sqrt{8} = \\sqrt{4 \\times 2} = 2\\sqrt{2}\\).", "workingOut": "", "graphData": null },
+      { "explanation": "\\(\\sqrt{2} + \\sqrt{8} = \\sqrt{2} + 2\\sqrt{2} = 3\\sqrt{2}\\).", "workingOut": "", "graphData": null },
+      { "explanation": "\\(3\\sqrt{2}\\) is irrational (a rational multiple of an irrational is still irrational).", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   },
   {
-    "id": "wmgpb2O39qEjqDf8udxL",
+    "id": "y11a-2a-q6h",
     "type": "multiple_choice",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "timeLimit": 90,
-    "question": "Variation 6: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
+    "question": "Which of the following correctly describes the set of values for \\(x\\) satisfying \\(x^2 < 9\\)?",
+    "answer": 1,
     "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
+      { "text": "\\(x < 3\\)", "imageUrl": "" },
+      { "text": "\\(-3 < x < 3\\)", "imageUrl": "" },
+      { "text": "\\(-3 \\le x \\le 3\\)", "imageUrl": "" },
+      { "text": "\\(x > -3\\)", "imageUrl": "" }
     ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
+    "hint": "\\(x^2 < 9\\) means \\(|x| < 3\\).",
+    "solution": "",
     "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 6: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
+      { "explanation": "\\(x^2 < 9 \\Rightarrow |x| < 3\\).", "workingOut": "", "graphData": null },
+      { "explanation": "This means \\(-3 < x < 3\\), i.e. \\((-3, 3)\\).", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "yH4s5tNd4AYiv1qmPVrN",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 1: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 1: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
-  },
-  {
-    "id": "yU3YVGHL7wXE1ilDqxZV",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Variation 2: Range for \\(\\sqrt{15}\\)?",
-    "answer": 0,
-    "options": [
-      {
-        "text": "3 and 4",
-        "imageUrl": ""
-      },
-      {
-        "text": "4 and 5",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
-    "solution": "3 and 4",
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the given math question and identify formulas.",
-        "workingOut": "Variation 2: Range for \\(\\sqrt{15}\\)?",
-        "graphData": null
-      },
-      {
-        "explanation": "Perform algebraic simplifications or substitutions.",
-        "workingOut": "3 and 4",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "t": ""
+    "t": "Real numbers and intervals"
   }
+
 ];
