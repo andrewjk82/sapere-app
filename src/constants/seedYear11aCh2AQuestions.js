@@ -1158,19 +1158,20 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 60,
-    "question": "Which number line graph matches \\([-5, 5)\\)?",
+    "question": "A number line shows a closed circle at \\(-5\\), an open circle at \\(5\\), with the region between shaded. Which interval does this represent?",
     "answer": 2,
     "options": [
-      { "text": "Open circle at \\(-5\\), closed circle at \\(5\\), shaded between", "imageUrl": "" },
-      { "text": "Closed circles at both \\(-5\\) and \\(5\\), shaded between", "imageUrl": "" },
-      { "text": "Closed circle at \\(-5\\), open circle at \\(5\\), shaded between", "imageUrl": "" },
-      { "text": "Open circles at both \\(-5\\) and \\(5\\), shaded between", "imageUrl": "" }
+      { "text": "\\((-5, 5)\\)", "imageUrl": "" },
+      { "text": "\\([-5, 5]\\)", "imageUrl": "" },
+      { "text": "\\([-5, 5)\\)", "imageUrl": "" },
+      { "text": "\\((-5, 5]\\)", "imageUrl": "" }
     ],
-    "hint": "Square bracket = closed circle (included); round bracket = open circle (excluded).",
+    "hint": "Closed circle = included (square bracket). Open circle = excluded (round bracket).",
     "solution": "",
     "solutionSteps": [
-      { "explanation": "\\([-5, 5)\\): square bracket at \\(-5\\) → closed circle (included).", "workingOut": "", "graphData": null },
-      { "explanation": "Round bracket at 5 → open circle (excluded).", "workingOut": "", "graphData": null }
+      { "explanation": "Closed circle at \\(-5\\) → included → square bracket \\([\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Open circle at \\(5\\) → excluded → round bracket \\()\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Interval: \\([-5, 5)\\).", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
@@ -1180,19 +1181,20 @@ export const Y11A_CH2A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 60,
-    "question": "Which number line graph matches \\((-3, 4]\\)?",
+    "question": "A number line shows an open circle at \\(-3\\), a closed circle at \\(4\\), with the region between shaded. Which interval does this represent?",
     "answer": 3,
     "options": [
-      { "text": "Closed circles at both \\(-3\\) and \\(4\\)", "imageUrl": "" },
-      { "text": "Open circle at \\(-3\\), open circle at \\(4\\)", "imageUrl": "" },
-      { "text": "Closed circle at \\(-3\\), open circle at \\(4\\)", "imageUrl": "" },
-      { "text": "Open circle at \\(-3\\), closed circle at \\(4\\)", "imageUrl": "" }
+      { "text": "\\([-3, 4]\\)", "imageUrl": "" },
+      { "text": "\\((-3, 4)\\)", "imageUrl": "" },
+      { "text": "\\([-3, 4)\\)", "imageUrl": "" },
+      { "text": "\\((-3, 4]\\)", "imageUrl": "" }
     ],
-    "hint": "Round bracket → open circle; square bracket → closed circle.",
+    "hint": "Open circle = excluded (round bracket). Closed circle = included (square bracket).",
     "solution": "",
     "solutionSteps": [
-      { "explanation": "Round bracket at \\(-3\\) → open circle.", "workingOut": "", "graphData": null },
-      { "explanation": "Square bracket at \\(4\\) → closed circle.", "workingOut": "", "graphData": null }
+      { "explanation": "Open circle at \\(-3\\) → excluded → round bracket \\((\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Closed circle at \\(4\\) → included → square bracket \\(]\\).", "workingOut": "", "graphData": null },
+      { "explanation": "Interval: \\((-3, 4]\\).", "workingOut": "", "graphData": null }
     ],
     "graphData": null,
     "t": "Real numbers and intervals"
