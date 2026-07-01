@@ -1592,9 +1592,12 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
 
       let savedQuestionId = editingQuestion;
       if (editingQuestion) {
-        let savePayload = { ...payload };
+        // Mark as teacher-edited so the chapter seeder never overwrites this
+        // question with the seed file content on future deploys.
+        const editPayload = { ...payload, origin: 'teacher' };
+        let savePayload = { ...editPayload };
         try {
-          await updateDoc(doc(db, 'questions', editingQuestion), payload);
+          await updateDoc(doc(db, 'questions', editingQuestion), editPayload);
         } catch (err) {
           if (err.code === 'not-found') {
             savePayload.createdAt = serverTimestamp();
