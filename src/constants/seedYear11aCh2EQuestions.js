@@ -8,38 +8,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "Rational; \\\\(\\\\frac{7}{1}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "Rational, but only expressible as a decimal, not a fraction",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "Cannot be classified as rational or irrational",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "explanation": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the number into a fraction of integers to show it is rational.",
-        "workingOut": "7 = \\\\frac{7}{1}",
+        "explanation": "Evaluate/simplify the given number \\\\(7\\\\) to see its exact value.",
+        "workingOut": "7",
         "graphData": null
       },
       {
-        "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "",
+        "explanation": "Since this value can be written exactly as a ratio of two integers, the number is rational.",
+        "workingOut": "\\\\frac{7}{1}",
+        "graphData": null
+      },
+      {
+        "explanation": "State the classification and the fraction form as the final answer.",
+        "workingOut": "\\\\(\\\\frac{7}{1}\\\\)",
         "graphData": null
       }
     ],
@@ -55,38 +60,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "Rational; \\\\(-\\\\frac{9}{4}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "Rational, but only expressible as a decimal, not a fraction",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "Cannot be classified as rational or irrational",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "explanation": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the number into a fraction of integers to show it is rational.",
-        "workingOut": "-2\\\\frac{1}{4} = -\\\\frac{9}{4}",
+        "explanation": "Evaluate/simplify the given number \\\\(-2\\\\frac{1}{4}\\\\) to see its exact value.",
+        "workingOut": "-2\\\\frac{1}{4}",
         "graphData": null
       },
       {
-        "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "",
+        "explanation": "Since this value can be written exactly as a ratio of two integers, the number is rational.",
+        "workingOut": "-\\\\frac{9}{4}",
+        "graphData": null
+      },
+      {
+        "explanation": "State the classification and the fraction form as the final answer.",
+        "workingOut": "\\\\(-\\\\frac{9}{4}\\\\)",
         "graphData": null
       }
     ],
@@ -102,38 +112,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "Rational; \\\\(\\\\frac{3}{1}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "Rational, but only expressible as a decimal, not a fraction",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "Cannot be classified as rational or irrational",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "explanation": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the number into a fraction of integers to show it is rational.",
-        "workingOut": "\\\\sqrt{9} = 3 = \\\\frac{3}{1}",
+        "explanation": "Evaluate/simplify the given number \\\\(\\\\sqrt{9}\\\\) to see its exact value.",
+        "workingOut": "\\\\sqrt{9}",
         "graphData": null
       },
       {
-        "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "",
+        "explanation": "Since this value can be written exactly as a ratio of two integers, the number is rational.",
+        "workingOut": "\\\\frac{3}{1}",
+        "graphData": null
+      },
+      {
+        "explanation": "State the classification and the fraction form as the final answer.",
+        "workingOut": "\\\\(\\\\frac{3}{1}\\\\)",
         "graphData": null
       }
     ],
@@ -149,38 +164,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "Rational; it can be written as a terminating decimal",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "Rational; it can be written as a recurring decimal fraction",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "Rational, but the fraction has not been simplified",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "explanation": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine if the root simplifies to an integer. Since it does not, it cannot be written as a fraction of integers.",
-        "workingOut": "",
+        "explanation": "Consider the given number \\\\(\\\\sqrt{10}\\\\) and check whether it simplifies to a whole number, terminating decimal or recurring decimal.",
+        "workingOut": "\\\\sqrt{10}",
         "graphData": null
       },
       {
-        "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "",
+        "explanation": "Since this value is not a perfect power / does not terminate or recur, it cannot be expressed exactly as a ratio of integers.",
+        "workingOut": "\\\\text{No exact fraction } a/b \\\\text{ exists}",
+        "graphData": null
+      },
+      {
+        "explanation": "State the classification as the final answer.",
+        "workingOut": "\\\\text{Irrational}",
         "graphData": null
       }
     ],
@@ -196,38 +216,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "Rational; it can be written as a terminating decimal",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "Rational; it can be written as a recurring decimal fraction",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "Rational, but the fraction has not been simplified",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "explanation": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine if the root simplifies to an integer. Since it does not, it cannot be written as a fraction of integers.",
-        "workingOut": "",
+        "explanation": "Consider the given number \\\\(\\\\sqrt[3]{15}\\\\) and check whether it simplifies to a whole number, terminating decimal or recurring decimal.",
+        "workingOut": "\\\\sqrt[3]{15}",
         "graphData": null
       },
       {
-        "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "",
+        "explanation": "Since this value is not a perfect power / does not terminate or recur, it cannot be expressed exactly as a ratio of integers.",
+        "workingOut": "\\\\text{No exact fraction } a/b \\\\text{ exists}",
+        "graphData": null
+      },
+      {
+        "explanation": "State the classification as the final answer.",
+        "workingOut": "\\\\text{Irrational}",
         "graphData": null
       }
     ],
@@ -243,38 +268,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "Rational; \\\\(\\\\frac{2}{1}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "Rational, but only expressible as a decimal, not a fraction",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "Cannot be classified as rational or irrational",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "explanation": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the number into a fraction of integers to show it is rational.",
-        "workingOut": "\\\\sqrt[4]{16} = 2 = \\\\frac{2}{1}",
+        "explanation": "Evaluate/simplify the given number \\\\(\\\\sqrt[4]{16}\\\\) to see its exact value.",
+        "workingOut": "\\\\sqrt[4]{16}",
         "graphData": null
       },
       {
-        "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "",
+        "explanation": "Since this value can be written exactly as a ratio of two integers, the number is rational.",
+        "workingOut": "\\\\frac{2}{1}",
+        "graphData": null
+      },
+      {
+        "explanation": "State the classification and the fraction form as the final answer.",
+        "workingOut": "\\\\(\\\\frac{2}{1}\\\\)",
         "graphData": null
       }
     ],
@@ -290,38 +320,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "Rational; \\\\(-\\\\frac{4}{25}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "Rational, but only expressible as a decimal, not a fraction",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "Cannot be classified as rational or irrational",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "explanation": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the number into a fraction of integers to show it is rational.",
-        "workingOut": "-0.16 = -\\\\frac{16}{100} = -\\\\frac{4}{25}",
+        "explanation": "Evaluate/simplify the given number \\\\(-0.16\\\\) to see its exact value.",
+        "workingOut": "-0.16",
         "graphData": null
       },
       {
-        "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "",
+        "explanation": "Since this value can be written exactly as a ratio of two integers, the number is rational.",
+        "workingOut": "-\\\\frac{4}{25}",
+        "graphData": null
+      },
+      {
+        "explanation": "State the classification and the fraction form as the final answer.",
+        "workingOut": "\\\\(-\\\\frac{4}{25}\\\\)",
         "graphData": null
       }
     ],
@@ -337,38 +372,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "Rational; it can be written as a terminating decimal",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "Rational; it can be written as a recurring decimal fraction",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "Rational, but the fraction has not been simplified",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "explanation": "Recall that a rational number can be written as a fraction \\(a/b\\) of two integers with \\(b \\neq 0\\); an irrational number cannot.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine if the root simplifies to an integer. Since it does not, it cannot be written as a fraction of integers.",
-        "workingOut": "",
+        "explanation": "Consider the given number \\\\(\\\\pi\\\\) and check whether it simplifies to a whole number, terminating decimal or recurring decimal.",
+        "workingOut": "\\\\pi",
         "graphData": null
       },
       {
-        "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "",
+        "explanation": "Since this value is not a perfect power / does not terminate or recur, it cannot be expressed exactly as a ratio of integers.",
+        "workingOut": "\\\\text{No exact fraction } a/b \\\\text{ exists}",
+        "graphData": null
+      },
+      {
+        "explanation": "State the classification as the final answer.",
+        "workingOut": "\\\\text{Irrational}",
         "graphData": null
       }
     ],
@@ -377,45 +417,38 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q2a",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\\\(x \\\\le 2\\\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(2 \\\\times \\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\( + 1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
+    "answer": "To graph \\\\(x \\\\le 2\\\\) on the real number line: Draw a closed (filled) circle at \\(x=2\\) because the inequality includes equality (\\(\\le\\)), then shade/draw the ray extending to the left towards \\(-\\infty\\), since all values less than or equal to 2 are included. Label the number line with integer markings around the relevant point(s) so the position of the circle(s) is clear. The filled/open circle convention shows whether the endpoint itself is part of the solution set, and the direction of shading shows which side of the number line satisfies the inequality.",
+    "options": [],
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundary values for the given interval expression.",
+        "explanation": "Identify the endpoint(s) of the interval and whether each is included or excluded.",
+        "workingOut": "\\\\(x \\\\le 2\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket ( [ or ] ) or a \\(\\le\\)/\\(\\ge\\) symbol means the endpoint is included, so draw a closed (filled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the endpoint marker at the boundary: solid circle if included (\\(\\le, \\ge, [\\)), open circle if excluded (\\(<, >, (\\)).",
+        "explanation": "A round bracket ( ( or ) ) or a \\(<\\)/\\(>\\) symbol means the endpoint is excluded, so draw an open (unfilled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Draw a line starting from the boundary circle, with an arrow pointing in the direction of the values included in the interval.",
+        "explanation": "Shade the region of the number line that satisfies the inequality: to the left for 'less than', to the right for 'greater than', or the segment between two finite endpoints.",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Draw the final number line diagram with correctly marked circle(s) and shading to represent the interval.",
+        "workingOut": "\\\\(x \\\\le 2\\\\)",
         "graphData": null
       }
     ],
@@ -424,45 +457,38 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q2b",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\\\(x > -1\\\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(2 \\\\times \\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\( + 1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
+    "answer": "To graph \\\\(x > -1\\\\) on the real number line: Draw an open (unfilled) circle at \\(x=-1\\) because the inequality is strict (\\(>\\)) and does not include \\(-1\\) itself, then shade/draw the ray extending to the right towards \\(\\infty\\). Label the number line with integer markings around the relevant point(s) so the position of the circle(s) is clear. The filled/open circle convention shows whether the endpoint itself is part of the solution set, and the direction of shading shows which side of the number line satisfies the inequality.",
+    "options": [],
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundary values for the given interval expression.",
+        "explanation": "Identify the endpoint(s) of the interval and whether each is included or excluded.",
+        "workingOut": "\\\\(x > -1\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket ( [ or ] ) or a \\(\\le\\)/\\(\\ge\\) symbol means the endpoint is included, so draw a closed (filled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the endpoint marker at the boundary: solid circle if included (\\(\\le, \\ge, [\\)), open circle if excluded (\\(<, >, (\\)).",
+        "explanation": "A round bracket ( ( or ) ) or a \\(<\\)/\\(>\\) symbol means the endpoint is excluded, so draw an open (unfilled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Draw a line starting from the boundary circle, with an arrow pointing in the direction of the values included in the interval.",
+        "explanation": "Shade the region of the number line that satisfies the inequality: to the left for 'less than', to the right for 'greater than', or the segment between two finite endpoints.",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Draw the final number line diagram with correctly marked circle(s) and shading to represent the interval.",
+        "workingOut": "\\\\(x > -1\\\\)",
         "graphData": null
       }
     ],
@@ -471,45 +497,38 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q2c",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\\\(-2 < x \\\\le 5\\\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(2 \\\\times \\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\( + 1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
+    "answer": "To graph \\\\(-2 < x \\\\le 5\\\\) on the real number line: Draw an open circle at \\(x=-2\\) (since \\(-2\\) is excluded) and a closed circle at \\(x=5\\) (since \\(5\\) is included), then draw a solid line segment joining the two points to represent all values between them. Label the number line with integer markings around the relevant point(s) so the position of the circle(s) is clear. The filled/open circle convention shows whether the endpoint itself is part of the solution set, and the direction of shading shows which side of the number line satisfies the inequality.",
+    "options": [],
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundary values for the given interval expression.",
+        "explanation": "Identify the endpoint(s) of the interval and whether each is included or excluded.",
+        "workingOut": "\\\\(-2 < x \\\\le 5\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket ( [ or ] ) or a \\(\\le\\)/\\(\\ge\\) symbol means the endpoint is included, so draw a closed (filled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the endpoint markers: use a solid circle for included boundaries (brackets like \\([, ]\\) or inequalities with \\(\\le, \\ge\\)), and an open circle for excluded ones.",
+        "explanation": "A round bracket ( ( or ) ) or a \\(<\\)/\\(>\\) symbol means the endpoint is excluded, so draw an open (unfilled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Draw a line connecting the two boundary circles on the number line to represent the interval between them.",
+        "explanation": "Shade the region of the number line that satisfies the inequality: to the left for 'less than', to the right for 'greater than', or the segment between two finite endpoints.",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Draw the final number line diagram with correctly marked circle(s) and shading to represent the interval.",
+        "workingOut": "\\\\(-2 < x \\\\le 5\\\\)",
         "graphData": null
       }
     ],
@@ -518,45 +537,38 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q3a",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\\\([-2, \\\\infty)\\\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(2 \\\\times \\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\( + 1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
+    "answer": "To graph \\\\([-2, \\\\infty)\\\\) on the real number line: Draw a closed (filled) circle at \\(x=-2\\) because the square bracket means \\(-2\\) is included, then shade/draw the ray extending to the right towards \\(\\infty\\) (an open arrow, since infinity is never included). Label the number line with integer markings around the relevant point(s) so the position of the circle(s) is clear. The filled/open circle convention shows whether the endpoint itself is part of the solution set, and the direction of shading shows which side of the number line satisfies the inequality.",
+    "options": [],
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundary values for the given interval expression.",
+        "explanation": "Identify the endpoint(s) of the interval and whether each is included or excluded.",
+        "workingOut": "\\\\([-2, \\\\infty)\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket ( [ or ] ) or a \\(\\le\\)/\\(\\ge\\) symbol means the endpoint is included, so draw a closed (filled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the endpoint marker at the boundary: solid circle if included (\\(\\le, \\ge, [\\)), open circle if excluded (\\(<, >, (\\)).",
+        "explanation": "A round bracket ( ( or ) ) or a \\(<\\)/\\(>\\) symbol means the endpoint is excluded, so draw an open (unfilled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Draw a line starting from the boundary circle, with an arrow pointing in the direction of the values included in the interval.",
+        "explanation": "Shade the region of the number line that satisfies the inequality: to the left for 'less than', to the right for 'greater than', or the segment between two finite endpoints.",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Draw the final number line diagram with correctly marked circle(s) and shading to represent the interval.",
+        "workingOut": "\\\\([-2, \\\\infty)\\\\)",
         "graphData": null
       }
     ],
@@ -565,45 +577,38 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q3b",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\\\((-\\\\infty, 0)\\\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(2 \\\\times \\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\( + 1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
+    "answer": "To graph \\\\((-\\\\infty, 0)\\\\) on the real number line: Draw an open (unfilled) circle at \\(x=0\\) because the round bracket means \\(0\\) is excluded, then shade/draw the ray extending to the left towards \\(-\\infty\\). Label the number line with integer markings around the relevant point(s) so the position of the circle(s) is clear. The filled/open circle convention shows whether the endpoint itself is part of the solution set, and the direction of shading shows which side of the number line satisfies the inequality.",
+    "options": [],
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundary values for the given interval expression.",
+        "explanation": "Identify the endpoint(s) of the interval and whether each is included or excluded.",
+        "workingOut": "\\\\((-\\\\infty, 0)\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket ( [ or ] ) or a \\(\\le\\)/\\(\\ge\\) symbol means the endpoint is included, so draw a closed (filled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the endpoint marker at the boundary: solid circle if included (\\(\\le, \\ge, [\\)), open circle if excluded (\\(<, >, (\\)).",
+        "explanation": "A round bracket ( ( or ) ) or a \\(<\\)/\\(>\\) symbol means the endpoint is excluded, so draw an open (unfilled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Draw a line starting from the boundary circle, with an arrow pointing in the direction of the values included in the interval.",
+        "explanation": "Shade the region of the number line that satisfies the inequality: to the left for 'less than', to the right for 'greater than', or the segment between two finite endpoints.",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Draw the final number line diagram with correctly marked circle(s) and shading to represent the interval.",
+        "workingOut": "\\\\((-\\\\infty, 0)\\\\)",
         "graphData": null
       }
     ],
@@ -612,45 +617,38 @@ export const Y11A_CH2E_QUESTIONS = [
   },
   {
     "id": "y11a-2e-q3c",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Graph the interval on the real number line.\n\n\\\\([-3, 3)\\\\)",
-    "answer": 0,
-    "options": [
-      {
-        "text": "",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(2 \\\\times \\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\( + 1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-\\\\)",
-        "imageUrl": ""
-      }
-    ],
-    "hint": "Simplify the expression step-by-step.",
+    "answer": "To graph \\\\([-3, 3)\\\\) on the real number line: Draw a closed circle at \\(x=-3\\) (included, square bracket) and an open circle at \\(x=3\\) (excluded, round bracket), then draw a solid line segment joining the two points. Label the number line with integer markings around the relevant point(s) so the position of the circle(s) is clear. The filled/open circle convention shows whether the endpoint itself is part of the solution set, and the direction of shading shows which side of the number line satisfies the inequality.",
+    "options": [],
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundary values for the given interval expression.",
+        "explanation": "Identify the endpoint(s) of the interval and whether each is included or excluded.",
+        "workingOut": "\\\\([-3, 3)\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket ( [ or ] ) or a \\(\\le\\)/\\(\\ge\\) symbol means the endpoint is included, so draw a closed (filled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the endpoint markers: use a solid circle for included boundaries (brackets like \\([, ]\\) or inequalities with \\(\\le, \\ge\\)), and an open circle for excluded ones.",
+        "explanation": "A round bracket ( ( or ) ) or a \\(<\\)/\\(>\\) symbol means the endpoint is excluded, so draw an open (unfilled) circle there.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Draw a line connecting the two boundary circles on the number line to represent the interval between them.",
+        "explanation": "Shade the region of the number line that satisfies the inequality: to the left for 'less than', to the right for 'greater than', or the segment between two finite endpoints.",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Draw the final number line diagram with correctly marked circle(s) and shading to represent the interval.",
+        "workingOut": "\\\\([-3, 3)\\\\)",
         "graphData": null
       }
     ],
@@ -666,38 +664,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\([-4, 6]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\((-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\([-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\((-4, 6]\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
+        "explanation": "Identify each endpoint of the inequality and whether it is included (\\(\\le\\) or \\(\\ge\\)) or excluded (\\(<\\) or \\(>\\)).",
+        "workingOut": "\\\\(-4 \\\\le x \\\\le 6\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For each included endpoint, use a square bracket [ or ]; for each excluded endpoint (or \\(\\pm\\infty\\)), use a round bracket ( or ).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "",
+        "explanation": "Write the lower endpoint first, then the upper endpoint, separated by a comma.",
+        "workingOut": "\\\\([-4, 6]\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "",
+        "explanation": "Check the notation matches the original inequality by re-reading both endpoints.",
+        "workingOut": "\\\\([-4, 6]\\\\)",
         "graphData": null
       }
     ],
@@ -713,38 +716,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\((-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\([-4, 6]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\([-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\((-4, 6]\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
+        "explanation": "Identify each endpoint of the inequality and whether it is included (\\(\\le\\) or \\(\\ge\\)) or excluded (\\(<\\) or \\(>\\)).",
+        "workingOut": "\\\\(-4 < x < 6\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For each included endpoint, use a square bracket [ or ]; for each excluded endpoint (or \\(\\pm\\infty\\)), use a round bracket ( or ).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "",
+        "explanation": "Write the lower endpoint first, then the upper endpoint, separated by a comma.",
+        "workingOut": "\\\\((-4, 6)\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "",
+        "explanation": "Check the notation matches the original inequality by re-reading both endpoints.",
+        "workingOut": "\\\\((-4, 6)\\\\)",
         "graphData": null
       }
     ],
@@ -760,38 +768,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\((-4, 6]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\([-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\([-4, 6]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\((-4, 6)\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
+        "explanation": "Identify each endpoint of the inequality and whether it is included (\\(\\le\\) or \\(\\ge\\)) or excluded (\\(<\\) or \\(>\\)).",
+        "workingOut": "\\\\(-4 < x \\\\le 6\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For each included endpoint, use a square bracket [ or ]; for each excluded endpoint (or \\(\\pm\\infty\\)), use a round bracket ( or ).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "",
+        "explanation": "Write the lower endpoint first, then the upper endpoint, separated by a comma.",
+        "workingOut": "\\\\((-4, 6]\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "",
+        "explanation": "Check the notation matches the original inequality by re-reading both endpoints.",
+        "workingOut": "\\\\((-4, 6]\\\\)",
         "graphData": null
       }
     ],
@@ -807,38 +820,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\([-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\((-4, 6]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\([-4, 6]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\((-4, 6)\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
+        "explanation": "Identify each endpoint of the inequality and whether it is included (\\(\\le\\) or \\(\\ge\\)) or excluded (\\(<\\) or \\(>\\)).",
+        "workingOut": "\\\\(-4 \\\\le x < 6\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For each included endpoint, use a square bracket [ or ]; for each excluded endpoint (or \\(\\pm\\infty\\)), use a round bracket ( or ).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "",
+        "explanation": "Write the lower endpoint first, then the upper endpoint, separated by a comma.",
+        "workingOut": "\\\\([-4, 6)\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "",
+        "explanation": "Check the notation matches the original inequality by re-reading both endpoints.",
+        "workingOut": "\\\\([-4, 6)\\\\)",
         "graphData": null
       }
     ],
@@ -854,38 +872,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\((-\\\\infty, 6]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\((-\\\\infty, 6)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\([-\\\\infty, 6]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\((6, \\\\infty)\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
+        "explanation": "Identify each endpoint of the inequality and whether it is included (\\(\\le\\) or \\(\\ge\\)) or excluded (\\(<\\) or \\(>\\)).",
+        "workingOut": "\\\\(x \\\\le 6\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For each included endpoint, use a square bracket [ or ]; for each excluded endpoint (or \\(\\pm\\infty\\)), use a round bracket ( or ).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "",
+        "explanation": "Write the lower endpoint first, then the upper endpoint, separated by a comma.",
+        "workingOut": "\\\\((-\\\\infty, 6]\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "",
+        "explanation": "Check the notation matches the original inequality by re-reading both endpoints.",
+        "workingOut": "\\\\((-\\\\infty, 6]\\\\)",
         "graphData": null
       }
     ],
@@ -901,38 +924,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\((-4, \\\\infty)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\([-4, \\\\infty)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\((-\\\\infty, -4)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\((-4, \\\\infty]\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
+        "explanation": "Identify each endpoint of the inequality and whether it is included (\\(\\le\\) or \\(\\ge\\)) or excluded (\\(<\\) or \\(>\\)).",
+        "workingOut": "\\\\(x > -4\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For each included endpoint, use a square bracket [ or ]; for each excluded endpoint (or \\(\\pm\\infty\\)), use a round bracket ( or ).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "",
+        "explanation": "Write the lower endpoint first, then the upper endpoint, separated by a comma.",
+        "workingOut": "\\\\((-4, \\\\infty)\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "",
+        "explanation": "Check the notation matches the original inequality by re-reading both endpoints.",
+        "workingOut": "\\\\((-4, \\\\infty)\\\\)",
         "graphData": null
       }
     ],
@@ -948,38 +976,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\(-5 < x < 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\(-5 < x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
+        "explanation": "Identify each bracket type in the interval notation.",
+        "workingOut": "\\\\((-5, 3)\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket [ or ] means the endpoint is included, so translate it to \\(\\le\\) or \\(\\ge\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
+        "explanation": "A round bracket ( or ) means the endpoint is excluded (or is \\(\\pm\\infty\\)), so translate it to \\(<\\) or \\(>\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "",
+        "explanation": "Write the full inequality using \\(x\\) between (or against) the endpoint values.",
+        "workingOut": "\\\\(-5 < x < 3\\\\)",
         "graphData": null
       }
     ],
@@ -995,38 +1028,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\(-5 < x < 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\(-5 < x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
+        "explanation": "Identify each bracket type in the interval notation.",
+        "workingOut": "\\\\([-5, 3]\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket [ or ] means the endpoint is included, so translate it to \\(\\le\\) or \\(\\ge\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
+        "explanation": "A round bracket ( or ) means the endpoint is excluded (or is \\(\\pm\\infty\\)), so translate it to \\(<\\) or \\(>\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "",
+        "explanation": "Write the full inequality using \\(x\\) between (or against) the endpoint values.",
+        "workingOut": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "graphData": null
       }
     ],
@@ -1042,38 +1080,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\(-5 < x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\(-5 < x < 3\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
+        "explanation": "Identify each bracket type in the interval notation.",
+        "workingOut": "\\\\([-5, 3)\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket [ or ] means the endpoint is included, so translate it to \\(\\le\\) or \\(\\ge\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
+        "explanation": "A round bracket ( or ) means the endpoint is excluded (or is \\(\\pm\\infty\\)), so translate it to \\(<\\) or \\(>\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "",
+        "explanation": "Write the full inequality using \\(x\\) between (or against) the endpoint values.",
+        "workingOut": "\\\\(-5 \\\\le x < 3\\\\)",
         "graphData": null
       }
     ],
@@ -1089,38 +1132,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\(-5 < x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\(-5 < x < 3\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
+        "explanation": "Identify each bracket type in the interval notation.",
+        "workingOut": "\\\\((-5, 3]\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket [ or ] means the endpoint is included, so translate it to \\(\\le\\) or \\(\\ge\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
+        "explanation": "A round bracket ( or ) means the endpoint is excluded (or is \\(\\pm\\infty\\)), so translate it to \\(<\\) or \\(>\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "",
+        "explanation": "Write the full inequality using \\(x\\) between (or against) the endpoint values.",
+        "workingOut": "\\\\(-5 < x \\\\le 3\\\\)",
         "graphData": null
       }
     ],
@@ -1136,38 +1184,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\(x > 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\(x \\\\ge 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\(x < 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\(x \\\\le 3\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
+        "explanation": "Identify each bracket type in the interval notation.",
+        "workingOut": "\\\\((3, \\\\infty)\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket [ or ] means the endpoint is included, so translate it to \\(\\le\\) or \\(\\ge\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
+        "explanation": "A round bracket ( or ) means the endpoint is excluded (or is \\(\\pm\\infty\\)), so translate it to \\(<\\) or \\(>\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "",
+        "explanation": "Write the full inequality using \\(x\\) between (or against) the endpoint values.",
+        "workingOut": "\\\\(x > 3\\\\)",
         "graphData": null
       }
     ],
@@ -1183,38 +1236,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "0",
+        "text": "\\\\(x \\\\le -5\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 \\\\times 0\\\\)",
+        "text": "\\\\(x < -5\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(0 + 1\\\\)",
+        "text": "\\\\(x \\\\ge -5\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-0\\\\)",
+        "text": "\\\\(x > -5\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A square bracket [ or ] means the endpoint is included (\\\\(\\\\le\\\\) or \\\\(\\\\ge\\\\)); a round bracket ( or ) means the endpoint is excluded (\\\\(<\\\\) or \\\\(>\\\\)). \\\\(\\\\infty\\\\) always takes a round bracket since it is not an actual number.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
+        "explanation": "Identify each bracket type in the interval notation.",
+        "workingOut": "\\\\((-\\\\infty, -5]\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A square bracket [ or ] means the endpoint is included, so translate it to \\(\\le\\) or \\(\\ge\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
+        "explanation": "A round bracket ( or ) means the endpoint is excluded (or is \\(\\pm\\infty\\)), so translate it to \\(<\\) or \\(>\\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "",
+        "explanation": "Write the full inequality using \\(x\\) between (or against) the endpoint values.",
+        "workingOut": "\\\\(x \\\\le -5\\\\)",
         "graphData": null
       }
     ],
@@ -1234,34 +1292,39 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{6}\\\\)",
+        "text": "\\\\(4\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(1\\\\sqrt{6}\\\\)",
+        "text": "\\\\(2\\\\sqrt{12}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{7}\\\\)",
+        "text": "\\\\(6\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 4.",
-        "workingOut": "\\\\sqrt{24} = \\\\sqrt{4 \\\\times 6}",
+        "explanation": "Find the largest perfect square factor of the number under the root.",
+        "workingOut": "\\\\(\\\\sqrt{24}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the product property of square roots: \\(\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}\\). Take the square root of 4.",
-        "workingOut": "= \\\\sqrt{4} \\\\times \\\\sqrt{6} = 2\\\\sqrt{6}",
+        "explanation": "Rewrite the surd as the product of the perfect square factor and the remaining factor.",
+        "workingOut": "= \\\\sqrt{4} \\\\times \\\\sqrt{6}",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numeric terms together to obtain the final simplified surd.",
-        "workingOut": "= 2\\\\sqrt{6}",
+        "explanation": "Take the square root of the perfect square factor and multiply it by any coefficient already outside the root.",
+        "workingOut": "\\\\(2\\\\sqrt{6}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check the simplified surd cannot be reduced further (the number under the root has no remaining square factors).",
+        "workingOut": "\\\\(2\\\\sqrt{6}\\\\)",
         "graphData": null
       }
     ],
@@ -1277,38 +1340,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(4\\\\sqrt{5}\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(3\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{5}\\\\)",
+        "text": "\\\\(4\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{6}\\\\)",
+        "text": "\\\\(9\\\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 9.",
-        "workingOut": "\\\\sqrt{45} = \\\\sqrt{9 \\\\times 5}",
+        "explanation": "Find the largest perfect square factor of the number under the root.",
+        "workingOut": "\\\\(\\\\sqrt{45}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the product property of square roots: \\(\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}\\). Take the square root of 9.",
-        "workingOut": "= \\\\sqrt{9} \\\\times \\\\sqrt{5} = 3\\\\sqrt{5}",
+        "explanation": "Rewrite the surd as the product of the perfect square factor and the remaining factor.",
+        "workingOut": "= \\\\sqrt{9} \\\\times \\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numeric terms together to obtain the final simplified surd.",
-        "workingOut": "= 3\\\\sqrt{5}",
+        "explanation": "Take the square root of the perfect square factor and multiply it by any coefficient already outside the root.",
+        "workingOut": "\\\\(3\\\\sqrt{5}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check the simplified surd cannot be reduced further (the number under the root has no remaining square factors).",
+        "workingOut": "\\\\(3\\\\sqrt{5}\\\\)",
         "graphData": null
       }
     ],
@@ -1324,38 +1392,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(6\\\\sqrt{2}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(4\\\\sqrt{2}\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(5\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(5\\\\sqrt{3}\\\\)",
+        "text": "\\\\(6\\\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(25\\\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 25.",
-        "workingOut": "\\\\sqrt{50} = \\\\sqrt{25 \\\\times 2}",
+        "explanation": "Find the largest perfect square factor of the number under the root.",
+        "workingOut": "\\\\(\\\\sqrt{50}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the product property of square roots: \\(\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}\\). Take the square root of 25.",
-        "workingOut": "= \\\\sqrt{25} \\\\times \\\\sqrt{2} = 5\\\\sqrt{2}",
+        "explanation": "Rewrite the surd as the product of the perfect square factor and the remaining factor.",
+        "workingOut": "= \\\\sqrt{25} \\\\times \\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numeric terms together to obtain the final simplified surd.",
-        "workingOut": "= 5\\\\sqrt{2}",
+        "explanation": "Take the square root of the perfect square factor and multiply it by any coefficient already outside the root.",
+        "workingOut": "\\\\(5\\\\sqrt{2}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check the simplified surd cannot be reduced further (the number under the root has no remaining square factors).",
+        "workingOut": "\\\\(5\\\\sqrt{2}\\\\)",
         "graphData": null
       }
     ],
@@ -1371,38 +1444,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
+        "text": "\\\\(10\\\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\\\(11\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(9\\\\sqrt{5}\\\\)",
+        "text": "\\\\(5\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(10\\\\sqrt{6}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(10\\\\sqrt{5}\\\\)",
+        "text": "\\\\(50\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 100.",
-        "workingOut": "\\\\sqrt{500} = \\\\sqrt{100 \\\\times 5}",
+        "explanation": "Find the largest perfect square factor of the number under the root.",
+        "workingOut": "\\\\(\\\\sqrt{500}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the product property of square roots: \\(\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}\\). Take the square root of 100.",
-        "workingOut": "= \\\\sqrt{100} \\\\times \\\\sqrt{5} = 10\\\\sqrt{5}",
+        "explanation": "Rewrite the surd as the product of the perfect square factor and the remaining factor.",
+        "workingOut": "= \\\\sqrt{100} \\\\times \\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numeric terms together to obtain the final simplified surd.",
-        "workingOut": "= 10\\\\sqrt{5}",
+        "explanation": "Take the square root of the perfect square factor and multiply it by any coefficient already outside the root.",
+        "workingOut": "\\\\(10\\\\sqrt{5}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check the simplified surd cannot be reduced further (the number under the root has no remaining square factors).",
+        "workingOut": "\\\\(10\\\\sqrt{5}\\\\)",
         "graphData": null
       }
     ],
@@ -1422,34 +1500,39 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(10\\\\sqrt{2}\\\\)",
+        "text": "\\\\(6\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(8\\\\sqrt{2}\\\\)",
+        "text": "\\\\(3\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(9\\\\sqrt{3}\\\\)",
+        "text": "\\\\(18\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 9.",
-        "workingOut": "3\\\\sqrt{18} = 3\\\\sqrt{9 \\\\times 2}",
+        "explanation": "Find the largest perfect square factor of the number under the root.",
+        "workingOut": "\\\\(3\\\\sqrt{18}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the product property of square roots: \\(\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}\\). Take the square root of 9.",
-        "workingOut": "= 3 \\\\times \\\\sqrt{9} \\\\times \\\\sqrt{2} = 3 \\\\times 3\\\\sqrt{2}",
+        "explanation": "Rewrite the surd as the product of the perfect square factor and the remaining factor.",
+        "workingOut": "= \\\\sqrt{9} \\\\times \\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numeric terms together to obtain the final simplified surd.",
-        "workingOut": "= 9\\\\sqrt{2}",
+        "explanation": "Take the square root of the perfect square factor and multiply it by any coefficient already outside the root.",
+        "workingOut": "\\\\(9\\\\sqrt{2}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check the simplified surd cannot be reduced further (the number under the root has no remaining square factors).",
+        "workingOut": "\\\\(9\\\\sqrt{2}\\\\)",
         "graphData": null
       }
     ],
@@ -1465,38 +1548,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(5\\\\sqrt{10}\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(4\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{10}\\\\)",
+        "text": "\\\\(2\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4\\\\sqrt{11}\\\\)",
+        "text": "\\\\(8\\\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\\\sqrt{20}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the largest perfect square factor inside the square root. For the number under the radical, the largest perfect square factor is 4.",
-        "workingOut": "2\\\\sqrt{40} = 2\\\\sqrt{4 \\\\times 10}",
+        "explanation": "Find the largest perfect square factor of the number under the root.",
+        "workingOut": "\\\\(2\\\\sqrt{40}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the product property of square roots: \\(\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}\\). Take the square root of 4.",
-        "workingOut": "= 2 \\\\times \\\\sqrt{4} \\\\times \\\\sqrt{10} = 2 \\\\times 2\\\\sqrt{10}",
+        "explanation": "Rewrite the surd as the product of the perfect square factor and the remaining factor.",
+        "workingOut": "= \\\\sqrt{4} \\\\times \\\\sqrt{10}",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numeric terms together to obtain the final simplified surd.",
-        "workingOut": "= 4\\\\sqrt{10}",
+        "explanation": "Take the square root of the perfect square factor and multiply it by any coefficient already outside the root.",
+        "workingOut": "\\\\(4\\\\sqrt{10}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check the simplified surd cannot be reduced further (the number under the root has no remaining square factors).",
+        "workingOut": "\\\\(4\\\\sqrt{10}\\\\)",
         "graphData": null
       }
     ],
@@ -1507,43 +1595,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q7a",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{5} + \\\\sqrt{5}\\\\)",
     "answer": 0,
     "options": [
-      {
-        "text": "\\\\(3\\\\sqrt{5}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(1\\\\sqrt{5}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(2\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{6}\\\\)",
+        "text": "\\\\(\\\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\sqrt{25}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify if the terms are like surds. Both contain \\(\\sqrt{5}\\).",
-        "workingOut": "1\\\\sqrt{5} + 1\\\\sqrt{5}",
+        "explanation": "Recognise that both terms are like surds (same number under the root).",
+        "workingOut": "\\\\sqrt{5} + \\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Add the coefficients of the like surds together.",
-        "workingOut": "(1 + 1)\\\\sqrt{5}",
+        "explanation": "Add the coefficients of the like surds, just as you would add like terms (\\(1x+1x=2x\\)).",
+        "workingOut": "= (1+1)\\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "State the final sum.",
-        "workingOut": "2\\\\sqrt{5}",
+        "explanation": "Write the simplified result.",
+        "workingOut": "= 2\\\\sqrt{5}",
         "graphData": null
       }
     ],
@@ -1554,10 +1642,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q7b",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{5} \\\\times \\\\sqrt{5}\\\\)",
     "answer": 0,
     "options": [
+      {
+        "text": "\\\\(5\\\\)",
+        "imageUrl": ""
+      },
       {
         "text": "\\\\(-5\\\\)",
         "imageUrl": ""
@@ -1567,30 +1659,26 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(5_wrong1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(5\\\\)",
+        "text": "\\\\(\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Recall the rule for multiplying square roots: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
-        "workingOut": "\\\\sqrt{5 \\\\times 5}",
+        "explanation": "Use the surd multiplication rule \\(\\sqrt{a}\\times\\sqrt{a}=a\\).",
+        "workingOut": "\\\\sqrt{5} \\\\times \\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the product under the square root.",
-        "workingOut": "\\\\sqrt{25}",
+        "explanation": "Multiply the numbers under the square roots.",
+        "workingOut": "= \\\\sqrt{5 \\\\times 5} = \\\\sqrt{25}",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the square root of the perfect square.",
-        "workingOut": "5",
+        "explanation": "Evaluate the square root of the resulting perfect square.",
+        "workingOut": "= 5",
         "graphData": null
       }
     ],
@@ -1601,7 +1689,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q7c",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "question": "Simplify:\n\n\\\\((2\\\\sqrt{7})^2\\\\)",
     "answer": 0,
     "options": [
@@ -1610,34 +1698,34 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-28\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(56\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(28_wrong1\\\\)",
+        "text": "\\\\(14\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\\\sqrt{7}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Apply the exponent to both parts of the product inside the parentheses: \\((ab)^2 = a^2 b^2\\).",
-        "workingOut": "2^2 \\\\times (\\\\sqrt{7})^2",
+        "explanation": "Square both the coefficient and the surd separately using \\((ab)^2=a^2b^2\\).",
+        "workingOut": "(2\\\\sqrt{7})^2 = 2^2 \\\\times (\\\\sqrt{7})^2",
         "graphData": null
       },
       {
-        "explanation": "Calculate the square of the coefficient and the square of the square root.",
-        "workingOut": "4 \\\\times 7",
+        "explanation": "Evaluate each square: \\(2^2=4\\) and \\((\\sqrt{7})^2=7\\).",
+        "workingOut": "= 4 \\\\times 7",
         "graphData": null
       },
       {
-        "explanation": "Perform the final multiplication to get the integer.",
-        "workingOut": "28",
+        "explanation": "Multiply to find the final value.",
+        "workingOut": "= 28",
         "graphData": null
       }
     ],
@@ -1648,43 +1736,48 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q7d",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(2\\\\sqrt{5} + \\\\sqrt{7} - 3\\\\sqrt{5}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(-\\\\sqrt{5} - \\\\sqrt{7} = \\\\sqrt{7} - \\\\sqrt{5}\\\\)",
+        "text": "\\\\(\\\\sqrt{7} - \\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\sqrt{5} + \\\\sqrt{7} = \\\\sqrt{7} - \\\\sqrt{5}\\\\)",
+        "text": "\\\\(\\\\sqrt{5} - \\\\sqrt{7}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\sqrt{6} + \\\\sqrt{7} = \\\\sqrt{7} - \\\\sqrt{5}\\\\)",
+        "text": "\\\\(5\\\\sqrt{5} + \\\\sqrt{7}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\sqrt{4} + \\\\sqrt{7} = \\\\sqrt{7} - \\\\sqrt{5}\\\\)",
+        "text": "\\\\(-\\\\sqrt{5} - \\\\sqrt{7}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify and group the like surd terms that share the radical \\(\\sqrt{5}\\).",
-        "workingOut": "(2\\\\sqrt{5} - 3\\\\sqrt{5}) + \\\\sqrt{7}",
+        "explanation": "Group the like surds (terms in \\(\\sqrt{5}\\)) together.",
+        "workingOut": "2\\\\sqrt{5} - 3\\\\sqrt{5} + \\\\sqrt{7}",
         "graphData": null
       },
       {
         "explanation": "Combine the coefficients of the like surds.",
-        "workingOut": "(2 - 3)\\\\sqrt{5} + \\\\sqrt{7}",
+        "workingOut": "= (2-3)\\\\sqrt{5} + \\\\sqrt{7}",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the subtraction to write down the final expression.",
-        "workingOut": "-\\\\sqrt{5} + \\\\sqrt{7} = \\\\sqrt{7} - \\\\sqrt{5}",
+        "explanation": "Simplify the coefficient and rewrite in a conventional order.",
+        "workingOut": "= -\\\\sqrt{5} + \\\\sqrt{7}",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the final simplified answer.",
+        "workingOut": "= \\\\sqrt{7} - \\\\sqrt{5}",
         "graphData": null
       }
     ],
@@ -1695,42 +1788,42 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q7e",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{35} \\\\div \\\\sqrt{5}\\\\)",
     "answer": 0,
     "options": [
-      {
-        "text": "\\\\(\\\\sqrt{8}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\sqrt{6}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(\\\\sqrt{7}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\sqrt{7}\\\\)",
+        "text": "\\\\(\\\\sqrt{8}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(7\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Apply the quotient rule of radicals: \\(\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}\\).",
-        "workingOut": "\\\\sqrt{\\\\frac{35}{5}}",
+        "explanation": "Use the surd division rule \\(\\sqrt{a}\\div\\sqrt{b}=\\sqrt{a/b}\\).",
+        "workingOut": "\\\\sqrt{35} \\\\div \\\\sqrt{5} = \\\\sqrt{35/5}",
         "graphData": null
       },
       {
-        "explanation": "Divide the numbers inside the radical.",
-        "workingOut": "\\\\sqrt{7}",
+        "explanation": "Divide the numbers under the square root.",
+        "workingOut": "= \\\\sqrt{7}",
         "graphData": null
       },
       {
-        "explanation": "State the final simplified surd.",
+        "explanation": "Check \\(7\\) has no square factors, so this is fully simplified.",
         "workingOut": "\\\\sqrt{7}",
         "graphData": null
       }
@@ -1742,16 +1835,16 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q7f",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(6\\\\sqrt{55} \\\\div 2\\\\sqrt{11}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(4\\\\sqrt{5}\\\\)",
+        "text": "\\\\(3\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{5}\\\\)",
+        "text": "\\\\(4\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
@@ -1759,25 +1852,25 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{5}\\\\)",
+        "text": "\\\\(3\\\\sqrt{44}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Rewrite the division as a fraction and separate coefficient division from radical division.",
-        "workingOut": "\\\\frac{6\\\\sqrt{55}}{2\\\\sqrt{11}} = \\\\left(\\\\frac{6}{2}\\\\right) \\\\times \\\\sqrt{\\\\frac{55}{11}}",
+        "explanation": "Divide the coefficients and the surds separately.",
+        "workingOut": "6\\\\sqrt{55} \\\\div 2\\\\sqrt{11} = (6 \\\\div 2)\\\\sqrt{55 \\\\div 11}",
         "graphData": null
       },
       {
-        "explanation": "Divide the outer integer coefficients.",
-        "workingOut": "3 \\\\times \\\\sqrt{\\\\frac{55}{11}}",
+        "explanation": "Simplify the coefficient division and the surd division.",
+        "workingOut": "= 3\\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the quotient inside the radical to find the final simplified expression.",
+        "explanation": "Check \\(5\\) has no square factors, so this is fully simplified.",
         "workingOut": "3\\\\sqrt{5}",
         "graphData": null
       }
@@ -1789,7 +1882,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q7g",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{8} \\\\times \\\\sqrt{2}\\\\)",
     "answer": 0,
     "options": [
@@ -1802,30 +1895,30 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(8\\\\)",
+        "text": "\\\\(\\\\sqrt{16}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4_wrong1\\\\)",
+        "text": "\\\\(2\\\\sqrt{4}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Multiply the numbers under the radicals.",
-        "workingOut": "\\\\sqrt{8 \\\\times 2}",
+        "explanation": "Use the surd multiplication rule \\(\\sqrt{a}\\times\\sqrt{b}=\\sqrt{ab}\\).",
+        "workingOut": "\\\\sqrt{8} \\\\times \\\\sqrt{2} = \\\\sqrt{8 \\\\times 2}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the number inside the square root.",
-        "workingOut": "\\\\sqrt{16}",
+        "explanation": "Multiply the numbers under the square root.",
+        "workingOut": "= \\\\sqrt{16}",
         "graphData": null
       },
       {
-        "explanation": "Take the square root of the perfect square.",
-        "workingOut": "4",
+        "explanation": "Evaluate the square root of the resulting perfect square.",
+        "workingOut": "= 4",
         "graphData": null
       }
     ],
@@ -1836,20 +1929,20 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q7h",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{10} \\\\times \\\\sqrt{2}\\\\)",
     "answer": 0,
     "options": [
-      {
-        "text": "\\\\(3\\\\sqrt{5}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(2\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(1\\\\sqrt{5}\\\\)",
+        "text": "\\\\(\\\\sqrt{20}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
@@ -1857,22 +1950,22 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Multiply the radicals together using \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
-        "workingOut": "\\\\sqrt{10 \\\\times 2} = \\\\sqrt{20}",
+        "explanation": "Use the surd multiplication rule \\(\\sqrt{a}\\times\\sqrt{b}=\\sqrt{ab}\\).",
+        "workingOut": "\\\\sqrt{10} \\\\times \\\\sqrt{2} = \\\\sqrt{20}",
         "graphData": null
       },
       {
-        "explanation": "Factor out the largest perfect square from 20, which is 4.",
-        "workingOut": "\\\\sqrt{4 \\\\times 5}",
+        "explanation": "Find the largest perfect square factor of 20.",
+        "workingOut": "\\\\sqrt{20} = \\\\sqrt{4 \\\\times 5}",
         "graphData": null
       },
       {
-        "explanation": "Take the square root of 4 to write the surd in its simplest form.",
-        "workingOut": "2\\\\sqrt{5}",
+        "explanation": "Take the square root of the perfect square factor.",
+        "workingOut": "= 2\\\\sqrt{5}",
         "graphData": null
       }
     ],
@@ -1883,43 +1976,48 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q7i",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(2\\\\sqrt{6} \\\\times 4\\\\sqrt{15}\\\\)",
     "answer": 0,
     "options": [
-      {
-        "text": "\\\\(25\\\\sqrt{10}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(23\\\\sqrt{10}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(24\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(24\\\\sqrt{11}\\\\)",
+        "text": "\\\\(25\\\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8\\\\sqrt{90}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6\\\\sqrt{40}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Multiply the outer coefficients and the numbers under the square roots separately.",
-        "workingOut": "(2 \\\\times 4) \\\\times \\\\sqrt{6 \\\\times 15} = 8\\\\sqrt{90}",
+        "explanation": "Multiply the coefficients and the surds separately.",
+        "workingOut": "2\\\\sqrt{6} \\\\times 4\\\\sqrt{15} = (2\\\\times4)\\\\sqrt{6\\\\times15}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the root \\(\\sqrt{90}\\) by factoring out the perfect square 9.",
-        "workingOut": "8\\\\sqrt{9 \\\\times 10} = 8 \\\\times 3\\\\sqrt{10}",
+        "explanation": "Evaluate the coefficient product and the surd product.",
+        "workingOut": "= 8\\\\sqrt{90}",
         "graphData": null
       },
       {
-        "explanation": "Multiply the coefficients to state the final simplified surd product.",
-        "workingOut": "24\\\\sqrt{10}",
+        "explanation": "Find the largest perfect square factor of 90 and simplify.",
+        "workingOut": "\\\\sqrt{90} = \\\\sqrt{9\\\\times10} = 3\\\\sqrt{10}",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the outside coefficient by the simplified surd's coefficient.",
+        "workingOut": "= 8 \\\\times 3\\\\sqrt{10} = 24\\\\sqrt{10}",
         "graphData": null
       }
     ],
@@ -1935,38 +2033,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\((3 + 2)\\\\sqrt{3} = \\\\sqrt{3}\\\\)",
+        "text": "\\\\(\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3 - 2)\\\\sqrt{4} = \\\\sqrt{3}\\\\)",
+        "text": "\\\\(3\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3 - 2)\\\\sqrt{2} = \\\\sqrt{3}\\\\)",
+        "text": "\\\\(\\\\sqrt{15}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3 - 2)\\\\sqrt{3} = \\\\sqrt{3}\\\\)",
+        "text": "\\\\(5\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Simplify both surd terms by factoring out their largest perfect square factors (9 and 4).",
-        "workingOut": "\\\\sqrt{9 \\\\times 3} - \\\\sqrt{4 \\\\times 3}",
+        "explanation": "Simplify each surd separately by finding its largest perfect square factor.",
+        "workingOut": "\\\\sqrt{27} = 3\\\\sqrt{3}, \\\\quad \\\\sqrt{12} = 2\\\\sqrt{3}",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the square roots of the perfect square factors.",
+        "explanation": "Rewrite the original expression using the simplified (like) surds.",
         "workingOut": "3\\\\sqrt{3} - 2\\\\sqrt{3}",
         "graphData": null
       },
       {
-        "explanation": "Combine the coefficients of the like surd terms.",
-        "workingOut": "(3 - 2)\\\\sqrt{3} = \\\\sqrt{3}",
+        "explanation": "Subtract the coefficients of the like surds.",
+        "workingOut": "= (3-2)\\\\sqrt{3}",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the final simplified answer.",
+        "workingOut": "= \\\\sqrt{3}",
         "graphData": null
       }
     ],
@@ -1982,38 +2085,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\((3 + 4)\\\\sqrt{2} = 7\\\\sqrt{2}\\\\)",
+        "text": "\\\\(7\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3 - 4)\\\\sqrt{2} = 7\\\\sqrt{2}\\\\)",
+        "text": "\\\\(\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3 + 4)\\\\sqrt{3} = 7\\\\sqrt{2}\\\\)",
+        "text": "\\\\(5\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-(3 + 4)\\\\sqrt{2} = 7\\\\sqrt{2}\\\\)",
+        "text": "\\\\(7\\\\sqrt{4}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the perfect square factors in both terms (9 and 16).",
-        "workingOut": "\\\\sqrt{9 \\\\times 2} + \\\\sqrt{16 \\\\times 2}",
+        "explanation": "Simplify each surd separately by finding its largest perfect square factor.",
+        "workingOut": "\\\\sqrt{18} = 3\\\\sqrt{2}, \\\\quad \\\\sqrt{32} = 4\\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the square roots of the perfect square factors.",
+        "explanation": "Rewrite the original expression using the simplified (like) surds.",
         "workingOut": "3\\\\sqrt{2} + 4\\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Add the coefficients of the like surd terms together.",
-        "workingOut": "(3 + 4)\\\\sqrt{2} = 7\\\\sqrt{2}",
+        "explanation": "Add the coefficients of the like surds.",
+        "workingOut": "= (3+4)\\\\sqrt{2}",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the final simplified answer.",
+        "workingOut": "= 7\\\\sqrt{2}",
         "graphData": null
       }
     ],
@@ -2029,38 +2137,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\((3 - 6 - 5)\\\\sqrt{2} = 4\\\\sqrt{2}\\\\)",
+        "text": "\\\\(4\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3 + 6 - 5)\\\\sqrt{2} = 4\\\\sqrt{2}\\\\)",
+        "text": "\\\\(2\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3 + 6 - 5)\\\\sqrt{3} = 4\\\\sqrt{2}\\\\)",
+        "text": "\\\\(4\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-(3 + 6 - 5)\\\\sqrt{2} = 4\\\\sqrt{2}\\\\)",
+        "text": "\\\\(10\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Simplify each individual surd term inside the expression.",
-        "workingOut": "3\\\\sqrt{2} + 3\\\\sqrt{4 \\\\times 2} - \\\\sqrt{25 \\\\times 2}",
+        "explanation": "Simplify each surd separately by finding its largest perfect square factor.",
+        "workingOut": "3\\\\sqrt{8} = 6\\\\sqrt{2}, \\\\quad \\\\sqrt{50} = 5\\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the roots of the perfect squares and multiply with outer coefficients.",
-        "workingOut": "3\\\\sqrt{2} + 3(2\\\\sqrt{2}) - 5\\\\sqrt{2} = 3\\\\sqrt{2} + 6\\\\sqrt{2} - 5\\\\sqrt{2}",
+        "explanation": "Rewrite the original expression using the simplified (like) surds.",
+        "workingOut": "3\\\\sqrt{2} + 6\\\\sqrt{2} - 5\\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Combine the coefficients of all the like surds.",
-        "workingOut": "(3 + 6 - 5)\\\\sqrt{2} = 4\\\\sqrt{2}",
+        "explanation": "Combine the coefficients of the like surds.",
+        "workingOut": "= (3+6-5)\\\\sqrt{2}",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the final simplified answer.",
+        "workingOut": "= 4\\\\sqrt{2}",
         "graphData": null
       }
     ],
@@ -2076,38 +2189,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\((3-5)\\\\sqrt{6} + (-2-4)\\\\sqrt{5} = 8\\\\sqrt{6} - 6\\\\sqrt{5}\\\\)",
+        "text": "\\\\(8\\\\sqrt{6} - 6\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3+5)\\\\sqrt{7} + (-2-4)\\\\sqrt{5} = 8\\\\sqrt{6} - 6\\\\sqrt{5}\\\\)",
+        "text": "\\\\(2\\\\sqrt{6} - 2\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3+5)\\\\sqrt{6} + (-2-4)\\\\sqrt{5} = 8\\\\sqrt{6} - 6\\\\sqrt{5}\\\\)",
+        "text": "\\\\(8\\\\sqrt{6} + 6\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((3+5)\\\\sqrt{5} + (-2-4)\\\\sqrt{5} = 8\\\\sqrt{6} - 6\\\\sqrt{5}\\\\)",
+        "text": "\\\\(8\\\\sqrt{5} - 6\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the perfect square factors inside the roots for all four terms.",
-        "workingOut": "\\\\sqrt{9 \\\\times 6} - \\\\sqrt{4 \\\\times 5} + \\\\sqrt{25 \\\\times 6} - \\\\sqrt{16 \\\\times 5}",
+        "explanation": "Simplify each surd separately by finding its largest perfect square factor.",
+        "workingOut": "\\\\sqrt{54}=3\\\\sqrt{6}, \\\\sqrt{20}=2\\\\sqrt{5}, \\\\sqrt{150}=5\\\\sqrt{6}, \\\\sqrt{80}=4\\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Simplify each term to get simplified radicals.",
+        "explanation": "Rewrite the original expression using the simplified surds.",
         "workingOut": "3\\\\sqrt{6} - 2\\\\sqrt{5} + 5\\\\sqrt{6} - 4\\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Group and combine coefficients of the like surds (group terms with \\(\\sqrt{6}\\) and terms with \\(\\sqrt{5}\\)).",
-        "workingOut": "(3+5)\\\\sqrt{6} + (-2-4)\\\\sqrt{5} = 8\\\\sqrt{6} - 6\\\\sqrt{5}",
+        "explanation": "Group and combine the like surds (\\(\\sqrt6\\) terms together, \\(\\sqrt5\\) terms together).",
+        "workingOut": "= (3+5)\\\\sqrt{6} + (-2-4)\\\\sqrt{5}",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the final simplified answer.",
+        "workingOut": "= 8\\\\sqrt{6} - 6\\\\sqrt{5}",
         "graphData": null
       }
     ],
@@ -2123,6 +2241,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
+        "text": "\\\\(3\\\\sqrt{7} - 7\\\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\\\(3\\\\sqrt{7} + 7\\\\)",
         "imageUrl": ""
       },
@@ -2133,27 +2255,23 @@ export const Y11A_CH2E_QUESTIONS = [
       {
         "text": "\\\\(2\\\\sqrt{7} - 7\\\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\\\(3\\\\sqrt{7} - 7\\\\)",
-        "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Distribute the term outside the brackets, \\(\\sqrt{7}\\), to each term inside.",
-        "workingOut": "\\\\sqrt{7} \\\\times 3 - \\\\sqrt{7} \\\\times \\\\sqrt{7}",
+        "explanation": "Distribute \\(\\sqrt{7}\\) over both terms inside the bracket.",
+        "workingOut": "\\\\sqrt{7}(3-\\\\sqrt{7}) = \\\\sqrt{7}\\\\times3 - \\\\sqrt{7}\\\\times\\\\sqrt{7}",
         "graphData": null
       },
       {
-        "explanation": "Perform the multiplications: multiply \\(\\sqrt{7}\\) by 3 and square \\(\\sqrt{7}\\).",
-        "workingOut": "3\\\\sqrt{7} - (\\\\sqrt{7})^2",
+        "explanation": "Simplify each product: the first stays as a surd, the second becomes rational since \\(\\sqrt{7}\\times\\sqrt{7}=7\\).",
+        "workingOut": "= 3\\\\sqrt{7} - 7",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the squared term to simplify to the final expression.",
+        "explanation": "Write the final expanded expression (the terms cannot be combined further as they are unlike).",
         "workingOut": "3\\\\sqrt{7} - 7",
         "graphData": null
       }
@@ -2178,29 +2296,29 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{30} + 3\\\\sqrt{10}\\\\)",
+        "text": "\\\\(5\\\\sqrt{30} + 3\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(1\\\\sqrt{30} + 3\\\\sqrt{10}\\\\)",
+        "text": "\\\\(2\\\\sqrt{11} + 3\\\\sqrt{7}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Distribute \\(\\sqrt{5}\\) to each of the two terms inside the brackets.",
-        "workingOut": "\\\\sqrt{5} \\\\times 2\\\\sqrt{6} + \\\\sqrt{5} \\\\times 3\\\\sqrt{2}",
+        "explanation": "Distribute \\(\\sqrt{5}\\) over both terms inside the bracket.",
+        "workingOut": "\\\\sqrt{5}(2\\\\sqrt{6}+3\\\\sqrt{2}) = 2\\\\sqrt{5}\\\\sqrt{6} + 3\\\\sqrt{5}\\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Multiply the radicals using \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
-        "workingOut": "2\\\\sqrt{5 \\\\times 6} + 3\\\\sqrt{5 \\\\times 2}",
+        "explanation": "Multiply the surds in each term using \\(\\sqrt{a}\\times\\sqrt{b}=\\sqrt{ab}\\).",
+        "workingOut": "= 2\\\\sqrt{30} + 3\\\\sqrt{10}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the radical products to write the final expanded sum.",
+        "explanation": "Check neither surd simplifies further (30 and 10 have no square factors) — this is the final answer.",
         "workingOut": "2\\\\sqrt{30} + 3\\\\sqrt{10}",
         "graphData": null
       }
@@ -2217,38 +2335,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\sqrt{9 \\\\times 5} + 5\\\\sqrt{15} = 3\\\\sqrt{5} - 5\\\\sqrt{15}\\\\)",
+        "text": "\\\\(3\\\\sqrt{5} - 5\\\\sqrt{15}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{9 \\\\times 5} - 5\\\\sqrt{15} = 3\\\\sqrt{5} - 5\\\\sqrt{15}\\\\)",
+        "text": "\\\\(3\\\\sqrt{5} + 5\\\\sqrt{15}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{9 \\\\times 5} - 5\\\\sqrt{16} = 3\\\\sqrt{5} - 5\\\\sqrt{15}\\\\)",
+        "text": "\\\\(\\\\sqrt{45} - \\\\sqrt{75}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{9 \\\\times 5} - 5\\\\sqrt{14} = 3\\\\sqrt{5} - 5\\\\sqrt{15}\\\\)",
+        "text": "\\\\(15\\\\sqrt{5} - 5\\\\sqrt{15}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Distribute \\(\\sqrt{15}\\) across the subtraction inside the brackets.",
-        "workingOut": "\\\\sqrt{15} \\\\times \\\\sqrt{3} - 5\\\\sqrt{15}",
+        "explanation": "Distribute \\(\\sqrt{15}\\) over both terms inside the bracket.",
+        "workingOut": "\\\\sqrt{15}(\\\\sqrt{3}-5) = \\\\sqrt{15}\\\\sqrt{3} - 5\\\\sqrt{15}",
         "graphData": null
       },
       {
-        "explanation": "Multiply the roots in the first term: \\(\\sqrt{15} \\times \\sqrt{3} = \\sqrt{45}\\).",
-        "workingOut": "\\\\sqrt{45} - 5\\\\sqrt{15}",
+        "explanation": "Multiply the surds in the first term using \\(\\sqrt{a}\\times\\sqrt{b}=\\sqrt{ab}\\).",
+        "workingOut": "\\\\sqrt{15}\\\\times\\\\sqrt{3} = \\\\sqrt{45}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the term \\(\\sqrt{45}\\) by factoring out the perfect square 9.",
-        "workingOut": "\\\\sqrt{9 \\\\times 5} - 5\\\\sqrt{15} = 3\\\\sqrt{5} - 5\\\\sqrt{15}",
+        "explanation": "Simplify \\(\\sqrt{45}\\) by finding its largest perfect square factor.",
+        "workingOut": "\\\\sqrt{45} = 3\\\\sqrt{5}",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine to give the final expanded expression.",
+        "workingOut": "3\\\\sqrt{5} - 5\\\\sqrt{15}",
         "graphData": null
       }
     ],
@@ -2264,6 +2387,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
+        "text": "\\\\(3\\\\sqrt{2} + 6\\\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\\\(3\\\\sqrt{2} - 6\\\\)",
         "imageUrl": ""
       },
@@ -2272,29 +2399,30 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{2} + 6\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(2\\\\sqrt{2} + 6\\\\)",
+        "text": "\\\\(\\\\sqrt{18} + 2\\\\sqrt{9}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Distribute \\(\\sqrt{3}\\) to each term inside the brackets.",
-        "workingOut": "\\\\sqrt{3} \\\\times \\\\sqrt{6} + \\\\sqrt{3} \\\\times 2\\\\sqrt{3}",
+        "explanation": "Distribute \\(\\sqrt{3}\\) over both terms inside the bracket.",
+        "workingOut": "\\\\sqrt{3}(\\\\sqrt{6}+2\\\\sqrt{3}) = \\\\sqrt{3}\\\\sqrt{6} + 2\\\\sqrt{3}\\\\sqrt{3}",
         "graphData": null
       },
       {
-        "explanation": "Perform the multiplications: \\(\\sqrt{3} \\times \\sqrt{6} = \\sqrt{18}\\) and \\(2 \\times (\\sqrt{3})^2\\).",
-        "workingOut": "\\\\sqrt{18} + 2(3)",
+        "explanation": "Multiply the surds in the first term and simplify the second (since \\(\\sqrt3\\times\\sqrt3=3\\)).",
+        "workingOut": "= \\\\sqrt{18} + 2(3)",
         "graphData": null
       },
       {
-        "explanation": "Simplify \\(\\sqrt{18} = 3\\sqrt{2}\\) and calculate the integer product to write the final result.",
+        "explanation": "Simplify \\(\\sqrt{18}\\) by finding its largest perfect square factor.",
+        "workingOut": "\\\\sqrt{18} = 3\\\\sqrt{2}",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine to give the final expanded expression.",
         "workingOut": "3\\\\sqrt{2} + 6",
         "graphData": null
       }
@@ -2311,38 +2439,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
+        "text": "\\\\(\\\\sqrt{5} + 1\\\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\\\(\\\\sqrt{5} - 1\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{6} + 1\\\\)",
+        "text": "\\\\(-\\\\sqrt{5} + 1\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{4} + 1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\sqrt{5} + 1\\\\)",
+        "text": "\\\\(7\\\\sqrt{5} + 1\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Expand the brackets using the FOIL method (First, Outer, Inner, Last).",
-        "workingOut": "\\\\sqrt{5} \\\\times 3 - \\\\sqrt{5} \\\\times \\\\sqrt{5} + 2 \\\\times 3 - 2 \\\\times \\\\sqrt{5}",
+        "explanation": "Expand using FOIL / the distributive law, multiplying each term in the first bracket by each term in the second.",
+        "workingOut": "(\\\\sqrt{5}+2)(3-\\\\sqrt{5}) = 3\\\\sqrt{5} - \\\\sqrt{5}\\\\sqrt{5} + 6 - 2\\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Evaluate each individual product: \\(3\\sqrt{5} - 5 + 6 - 2\\sqrt{5}\\).",
-        "workingOut": "(3\\\\sqrt{5} - 2\\\\sqrt{5}) + (6 - 5)",
+        "explanation": "Simplify \\(\\sqrt{5}\\times\\sqrt{5}=5\\) and collect the like surd terms.",
+        "workingOut": "= 3\\\\sqrt{5} - 5 + 6 - 2\\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Group and combine like terms (integers together and surd terms together).",
-        "workingOut": "\\\\sqrt{5} + 1",
+        "explanation": "Combine the surd terms and the rational (integer) terms separately.",
+        "workingOut": "= (3-2)\\\\sqrt{5} + (6-5)",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the final simplified answer.",
+        "workingOut": "= \\\\sqrt{5} + 1",
         "graphData": null
       }
     ],
@@ -2366,30 +2499,35 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(14 + 7\\\\sqrt{3}\\\\)",
+        "text": "\\\\(23 + 7\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(12 + 7\\\\sqrt{3}\\\\)",
+        "text": "\\\\(18 + 7\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Expand the product of binomials using FOIL.",
-        "workingOut": "(2\\\\sqrt{3})(3\\\\sqrt{3}) + (2\\\\sqrt{3})(5) - 1(3\\\\sqrt{3}) - 1(5)",
+        "explanation": "Expand using FOIL, multiplying each term in the first bracket by each term in the second.",
+        "workingOut": "(2\\\\sqrt{3}-1)(3\\\\sqrt{3}+5) = 6\\\\sqrt{3}\\\\sqrt{3} + 10\\\\sqrt{3} - 3\\\\sqrt{3} - 5",
         "graphData": null
       },
       {
-        "explanation": "Calculate the products: \\(2 \\times 3 \\times 3 + 10\\sqrt{3} - 3\\sqrt{3} - 5 = 18 + 10\\sqrt{3} - 3\\sqrt{3} - 5\\).",
-        "workingOut": "18 + 7\\\\sqrt{3} - 5",
+        "explanation": "Simplify \\(\\sqrt{3}\\times\\sqrt{3}=3\\), so the first term becomes rational.",
+        "workingOut": "= 6(3) + 10\\\\sqrt{3} - 3\\\\sqrt{3} - 5",
         "graphData": null
       },
       {
-        "explanation": "Combine the integers to get the final simplified expression.",
-        "workingOut": "13 + 7\\\\sqrt{3}",
+        "explanation": "Collect the rational terms and the like surd terms separately.",
+        "workingOut": "= (18-5) + (10-3)\\\\sqrt{3}",
+        "graphData": null
+      },
+      {
+        "explanation": "Write the final simplified answer.",
+        "workingOut": "= 13 + 7\\\\sqrt{3}",
         "graphData": null
       }
     ],
@@ -2405,37 +2543,37 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(2\\\\sqrt{35} - 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(2\\\\sqrt{35} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{35} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
+        "text": "\\\\(2\\\\sqrt{35} - 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(1\\\\sqrt{35} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
+        "text": "\\\\(2\\\\sqrt{35} + 4\\\\sqrt{7} + 6\\\\sqrt{5} - 12\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\\\sqrt{12} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Expand the product of binomials using FOIL.",
-        "workingOut": "(\\\\sqrt{7})(2\\\\sqrt{5}) + (\\\\sqrt{7})(4) - 3(2\\\\sqrt{5}) - 3(4)",
+        "explanation": "Expand using FOIL, multiplying each term in the first bracket by each term in the second.",
+        "workingOut": "(\\\\sqrt{7}-3)(2\\\\sqrt{5}+4) = 2\\\\sqrt{7}\\\\sqrt{5} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12",
         "graphData": null
       },
       {
-        "explanation": "Evaluate each of the products using multiplication rules.",
-        "workingOut": "2\\\\sqrt{35} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12",
+        "explanation": "Simplify the surd product \\(\\sqrt{7}\\times\\sqrt{5}=\\sqrt{35}\\).",
+        "workingOut": "= 2\\\\sqrt{35} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12",
         "graphData": null
       },
       {
-        "explanation": "Since there are no like surd terms, this is the final simplified expanded expression.",
+        "explanation": "Check for any like surd terms to combine — here all four terms are unlike surds/rationals, so no further simplification is possible.",
         "workingOut": "2\\\\sqrt{35} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12",
         "graphData": null
       }
@@ -2452,38 +2590,38 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(10 + 9 = 1\\\\)",
+        "text": "\\\\(1\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(11 - 9 = 1\\\\)",
+        "text": "\\\\(19\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(10 - 9 = 1\\\\)",
+        "text": "\\\\(-1\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(9 - 9 = 1\\\\)",
+        "text": "\\\\(7\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify that this expansion is of the form \\((a-b)(a+b)\\), representing a difference of squares.",
-        "workingOut": "(a-b)(a+b) = a^2 - b^2",
+        "explanation": "Recognise this as a difference of two squares, \\((a-b)(a+b)=a^2-b^2\\), with \\(a=\\sqrt{10}\\) and \\(b=3\\).",
+        "workingOut": "(\\\\sqrt{10}-3)(\\\\sqrt{10}+3) = (\\\\sqrt{10})^2 - 3^2",
         "graphData": null
       },
       {
-        "explanation": "Substitute the terms into the formula.",
-        "workingOut": "(\\\\sqrt{10})^2 - 3^2",
+        "explanation": "Evaluate each square.",
+        "workingOut": "= 10 - 9",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the squared values and subtract them to find the integer.",
-        "workingOut": "10 - 9 = 1",
+        "explanation": "Subtract to find the final rational value.",
+        "workingOut": "= 1",
         "graphData": null
       }
     ],
@@ -2499,38 +2637,38 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
+        "text": "\\\\(13\\\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\\\(-13\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(26\\\\)",
+        "text": "\\\\(35\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(13_wrong1\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(13\\\\)",
+        "text": "\\\\(24\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Apply the difference of squares identity: \\((a+b)(a-b) = a^2 - b^2\\).",
-        "workingOut": "(2\\\\sqrt{6})^2 - (\\\\sqrt{11})^2",
+        "explanation": "Recognise this as a difference of two squares, \\((a+b)(a-b)=a^2-b^2\\), with \\(a=2\\sqrt{6}\\) and \\(b=\\sqrt{11}\\).",
+        "workingOut": "(2\\\\sqrt{6}+\\\\sqrt{11})(2\\\\sqrt{6}-\\\\sqrt{11}) = (2\\\\sqrt{6})^2 - (\\\\sqrt{11})^2",
         "graphData": null
       },
       {
-        "explanation": "Evaluate each squared term: \\(2^2 \\times 6 = 24\\) and \\((\\sqrt{11})^2 = 11\\).",
-        "workingOut": "24 - 11",
+        "explanation": "Evaluate each square: \\((2\\sqrt{6})^2=4\\times6=24\\) and \\((\\sqrt{11})^2=11\\).",
+        "workingOut": "= 24 - 11",
         "graphData": null
       },
       {
-        "explanation": "Perform the subtraction to get the simplified integer.",
-        "workingOut": "13",
+        "explanation": "Subtract to find the final rational value.",
+        "workingOut": "= 13",
         "graphData": null
       }
     ],
@@ -2554,30 +2692,30 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(12 - 4\\\\sqrt{7}\\\\)",
+        "text": "\\\\(9 - 4\\\\sqrt{7}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(10 - 4\\\\sqrt{7}\\\\)",
+        "text": "\\\\(3\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Apply the perfect square expansion formula: \\((a-b)^2 = a^2 - 2ab + b^2\\).",
-        "workingOut": "(\\\\sqrt{7})^2 - 2(\\\\sqrt{7})(2) + 2^2",
+        "explanation": "Use the perfect square expansion \\((a-b)^2 = a^2 - 2ab + b^2\\) with \\(a=\\sqrt{7}\\) and \\(b=2\\).",
+        "workingOut": "(\\\\sqrt{7}-2)^2 = (\\\\sqrt{7})^2 - 2(\\\\sqrt{7})(2) + 2^2",
         "graphData": null
       },
       {
-        "explanation": "Simplify each squared term and evaluate the middle product.",
-        "workingOut": "7 - 4\\\\sqrt{7} + 4",
+        "explanation": "Evaluate each term: \\((\\sqrt7)^2=7\\), the middle term is \\(4\\sqrt7\\), and \\(2^2=4\\).",
+        "workingOut": "= 7 - 4\\\\sqrt{7} + 4",
         "graphData": null
       },
       {
-        "explanation": "Combine the integer terms.",
-        "workingOut": "11 - 4\\\\sqrt{7}",
+        "explanation": "Combine the rational terms.",
+        "workingOut": "= 11 - 4\\\\sqrt{7}",
         "graphData": null
       }
     ],
@@ -2593,38 +2731,38 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(7 - 2\\\\sqrt{10}\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(7 + 2\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(8 + 2\\\\sqrt{10}\\\\)",
+        "text": "\\\\(7 - 2\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(6 + 2\\\\sqrt{10}\\\\)",
+        "text": "\\\\(3 + 2\\\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9 + 2\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Apply the perfect square expansion formula: \\((a+b)^2 = a^2 + 2ab + b^2\\).",
-        "workingOut": "(\\\\sqrt{5})^2 + 2(\\\\sqrt{5})(\\\\sqrt{2}) + (\\\\sqrt{2})^2",
+        "explanation": "Use the perfect square expansion \\((a+b)^2 = a^2 + 2ab + b^2\\) with \\(a=\\sqrt{5}\\) and \\(b=\\sqrt{2}\\).",
+        "workingOut": "(\\\\sqrt{5}+\\\\sqrt{2})^2 = (\\\\sqrt{5})^2 + 2\\\\sqrt{5}\\\\sqrt{2} + (\\\\sqrt{2})^2",
         "graphData": null
       },
       {
-        "explanation": "Simplify each term: square the radicals and multiply the terms under the middle square root.",
-        "workingOut": "5 + 2\\\\sqrt{10} + 2",
+        "explanation": "Evaluate each term: \\((\\sqrt5)^2=5\\), the middle term is \\(2\\sqrt{10}\\), and \\((\\sqrt2)^2=2\\).",
+        "workingOut": "= 5 + 2\\\\sqrt{10} + 2",
         "graphData": null
       },
       {
-        "explanation": "Combine the integers to write down the simplified expression.",
-        "workingOut": "7 + 2\\\\sqrt{10}",
+        "explanation": "Combine the rational terms.",
+        "workingOut": "= 7 + 2\\\\sqrt{10}",
         "graphData": null
       }
     ],
@@ -2640,38 +2778,38 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(34 + 24\\\\sqrt{2}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(35 - 24\\\\sqrt{2}\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(34 - 24\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(33 - 24\\\\sqrt{2}\\\\)",
+        "text": "\\\\(34 + 24\\\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(16 - 24\\\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Apply the perfect square expansion identity: \\((a-b)^2 = a^2 - 2ab + b^2\\).",
-        "workingOut": "4^2 - 2(4)(3\\\\sqrt{2}) + (3\\\\sqrt{2})^2",
+        "explanation": "Use the perfect square expansion \\((a-b)^2 = a^2 - 2ab + b^2\\) with \\(a=4\\) and \\(b=3\\sqrt{2}\\).",
+        "workingOut": "(4-3\\\\sqrt{2})^2 = 4^2 - 2(4)(3\\\\sqrt{2}) + (3\\\\sqrt{2})^2",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the squared values and calculate the middle product.",
-        "workingOut": "16 - 24\\\\sqrt{2} + 18",
+        "explanation": "Evaluate each term: \\(4^2=16\\), the middle term is \\(24\\sqrt2\\), and \\((3\\sqrt2)^2=9\\times2=18\\).",
+        "workingOut": "= 16 - 24\\\\sqrt{2} + 18",
         "graphData": null
       },
       {
-        "explanation": "Combine the integers to state the final expression.",
-        "workingOut": "34 - 24\\\\sqrt{2}",
+        "explanation": "Combine the rational terms.",
+        "workingOut": "= 34 - 24\\\\sqrt{2}",
         "graphData": null
       }
     ],
@@ -2687,38 +2825,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{6}}{5}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}}{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{4}}{5}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}}{25}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{5}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(-\\\\frac{\\\\sqrt{5}}{5}\\\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\frac{\\\\sqrt{5}}{5}\\\\)",
-        "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{5}\\). Multiply top and bottom of the fraction by this surd.",
-        "workingOut": "\\\\frac{1 \\\\times \\\\sqrt{5}}{\\\\sqrt{5} \\\\times \\\\sqrt{5}}",
+        "explanation": "Identify the surd in the denominator, which must be removed to rationalise the fraction.",
+        "workingOut": "\\\\(\\\\frac{1}{\\\\sqrt{5}}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the products: the denominator becomes an integer product since \\(\\sqrt{x} \\times \\sqrt{x} = x\\).",
-        "workingOut": "= \\\\frac{1\\\\sqrt{5}}{5}",
+        "explanation": "Multiply the numerator and denominator by that surd, \\(\\\\sqrt{5}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{\\\\sqrt{5}}{\\\\sqrt{5}}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the fraction by reducing the coefficients to their lowest terms.",
-        "workingOut": "= \\\\frac{\\\\sqrt{5}}{5}",
+        "explanation": "Simplify the denominator: multiplying a surd by itself gives the whole number under the root.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the numerator if possible, and write the fraction with the rationalised (whole number) denominator.",
+        "workingOut": "\\\\(\\\\frac{\\\\sqrt{5}}{5}\\\\)",
         "graphData": null
       }
     ],
@@ -2738,34 +2881,39 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{3\\\\sqrt{3}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3\\\\sqrt{2}}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{3}{2}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(-\\\\frac{3\\\\sqrt{2}}{2}\\\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\frac{3\\\\sqrt{2}}{2}_wrong1\\\\)",
-        "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{2}\\). Multiply top and bottom of the fraction by this surd.",
-        "workingOut": "\\\\frac{3 \\\\times \\\\sqrt{2}}{\\\\sqrt{2} \\\\times \\\\sqrt{2}}",
+        "explanation": "Identify the surd in the denominator, which must be removed to rationalise the fraction.",
+        "workingOut": "\\\\(\\\\frac{3}{\\\\sqrt{2}}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the products: the denominator becomes an integer product since \\(\\sqrt{x} \\times \\sqrt{x} = x\\).",
-        "workingOut": "= \\\\frac{3\\\\sqrt{2}}{2}",
+        "explanation": "Multiply the numerator and denominator by that surd, \\(\\\\sqrt{2}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{\\\\sqrt{2}}{\\\\sqrt{2}}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the fraction by reducing the coefficients to their lowest terms.",
-        "workingOut": "= \\\\frac{3\\\\sqrt{2}}{2}",
+        "explanation": "Simplify the denominator: multiplying a surd by itself gives the whole number under the root.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the numerator if possible, and write the fraction with the rationalised (whole number) denominator.",
+        "workingOut": "\\\\(\\\\frac{3\\\\sqrt{2}}{2}\\\\)",
         "graphData": null
       }
     ],
@@ -2781,38 +2929,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{34}}{11}\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(\\\\frac{\\\\sqrt{33}}{11}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{32}}{11}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{34}}{11}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\frac{\\\\sqrt{33}}{11}\\\\)",
+        "text": "\\\\(\\\\frac{3}{11}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{\\\\sqrt{33}}{121}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{11}\\). Multiply top and bottom of the fraction by this surd.",
-        "workingOut": "\\\\frac{\\\\sqrt{3} \\\\times \\\\sqrt{11}}{\\\\sqrt{11} \\\\times \\\\sqrt{11}}",
+        "explanation": "Identify the surd in the denominator, which must be removed to rationalise the fraction.",
+        "workingOut": "\\\\(\\\\frac{\\\\sqrt{3}}{\\\\sqrt{11}}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the products: the denominator becomes an integer product since \\(\\sqrt{x} \\times \\sqrt{x} = x\\).",
-        "workingOut": "= \\\\frac{\\\\sqrt{3}\\\\sqrt{11}}{11}",
+        "explanation": "Multiply the numerator and denominator by that surd, \\(\\\\sqrt{11}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{\\\\sqrt{11}}{\\\\sqrt{11}}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the fraction by reducing the coefficients to their lowest terms.",
-        "workingOut": "= \\\\frac{\\\\sqrt{33}}{11}",
+        "explanation": "Simplify the denominator: multiplying a surd by itself gives the whole number under the root.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the numerator if possible, and write the fraction with the rationalised (whole number) denominator.",
+        "workingOut": "\\\\(\\\\frac{\\\\sqrt{33}}{11}\\\\)",
         "graphData": null
       }
     ],
@@ -2828,15 +2981,15 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{4}}{15}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\frac{\\\\sqrt{2}}{15}\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(\\\\frac{\\\\sqrt{3}}{15}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{\\\\sqrt{3}}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{15}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2844,22 +2997,27 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{3}\\). Multiply top and bottom of the fraction by this surd.",
-        "workingOut": "\\\\frac{1 \\\\times \\\\sqrt{3}}{5\\\\sqrt{3} \\\\times \\\\sqrt{3}}",
+        "explanation": "Identify the surd in the denominator, which must be removed to rationalise the fraction.",
+        "workingOut": "\\\\(\\\\frac{1}{5\\\\sqrt{3}}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the products: the denominator becomes an integer product since \\(\\sqrt{x} \\times \\sqrt{x} = x\\).",
-        "workingOut": "= \\\\frac{1\\\\sqrt{3}}{5 \\\\times 3}",
+        "explanation": "Multiply the numerator and denominator by that surd, \\(\\\\sqrt{3}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{\\\\sqrt{3}}{\\\\sqrt{3}}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the fraction by reducing the coefficients to their lowest terms.",
-        "workingOut": "= \\\\frac{\\\\sqrt{3}}{15}",
+        "explanation": "Simplify the denominator: multiplying a surd by itself gives the whole number under the root.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the numerator if possible, and write the fraction with the rationalised (whole number) denominator.",
+        "workingOut": "\\\\(\\\\frac{\\\\sqrt{3}}{15}\\\\)",
         "graphData": null
       }
     ],
@@ -2875,38 +3033,43 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{5\\\\sqrt{8}}{14}\\\\)",
+        "text": "\\\\(\\\\frac{5\\\\sqrt{7}}{14}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{5\\\\sqrt{6}}{14}\\\\)",
+        "text": "\\\\(\\\\frac{5\\\\sqrt{7}}{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{5}{14}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(-\\\\frac{5\\\\sqrt{7}}{14}\\\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\frac{5\\\\sqrt{7}}{14}\\\\)",
-        "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{7}\\). Multiply top and bottom of the fraction by this surd.",
-        "workingOut": "\\\\frac{5 \\\\times \\\\sqrt{7}}{2\\\\sqrt{7} \\\\times \\\\sqrt{7}}",
+        "explanation": "Identify the surd in the denominator, which must be removed to rationalise the fraction.",
+        "workingOut": "\\\\(\\\\frac{5}{2\\\\sqrt{7}}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the products: the denominator becomes an integer product since \\(\\sqrt{x} \\times \\sqrt{x} = x\\).",
-        "workingOut": "= \\\\frac{5\\\\sqrt{7}}{2 \\\\times 7}",
+        "explanation": "Multiply the numerator and denominator by that surd, \\(\\\\sqrt{7}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{\\\\sqrt{7}}{\\\\sqrt{7}}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the fraction by reducing the coefficients to their lowest terms.",
-        "workingOut": "= \\\\frac{5\\\\sqrt{7}}{14}",
+        "explanation": "Simplify the denominator: multiplying a surd by itself gives the whole number under the root.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the numerator if possible, and write the fraction with the rationalised (whole number) denominator.",
+        "workingOut": "\\\\(\\\\frac{5\\\\sqrt{7}}{14}\\\\)",
         "graphData": null
       }
     ],
@@ -2926,34 +3089,39 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{6}}{15}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{20}}{30}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{4}}{15}\\\\)",
+        "text": "\\\\(\\\\frac{2}{15}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\frac{\\\\sqrt{5}}{15}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}}{30}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{10}\\). Multiply top and bottom of the fraction by this surd.",
-        "workingOut": "\\\\frac{\\\\sqrt{2} \\\\times \\\\sqrt{10}}{3\\\\sqrt{10} \\\\times \\\\sqrt{10}}",
+        "explanation": "Identify the surd in the denominator, which must be removed to rationalise the fraction.",
+        "workingOut": "\\\\(\\\\frac{\\\\sqrt{2}}{3\\\\sqrt{10}}\\\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the products: the denominator becomes an integer product since \\(\\sqrt{x} \\times \\sqrt{x} = x\\).",
-        "workingOut": "= \\\\frac{\\\\sqrt{2}\\\\sqrt{10}}{3 \\\\times 10}",
+        "explanation": "Multiply the numerator and denominator by that surd, \\(\\\\sqrt{10}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{\\\\sqrt{10}}{\\\\sqrt{10}}",
         "graphData": null
       },
       {
-        "explanation": "Simplify the fraction by reducing the coefficients to their lowest terms.",
-        "workingOut": "= \\\\frac{\\\\sqrt{5}}{15}",
+        "explanation": "Simplify the denominator: multiplying a surd by itself gives the whole number under the root.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the numerator if possible, and write the fraction with the rationalised (whole number) denominator.",
+        "workingOut": "\\\\(\\\\frac{\\\\sqrt{5}}{15}\\\\)",
         "graphData": null
       }
     ],
@@ -2964,43 +3132,53 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q12a",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{1}{\\\\sqrt{5}+\\\\sqrt{2}}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{(\\\\sqrt{5}+\\\\sqrt{2})}{5 - 2} = \\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(\\\\sqrt{5}-\\\\sqrt{2})}{5 - 2} = \\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}+\\\\sqrt{2}}{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(\\\\sqrt{6}-\\\\sqrt{2})}{5 - 2} = \\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{7}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(\\\\sqrt{4}-\\\\sqrt{2})}{5 - 2} = \\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}\\\\)",
+        "text": "\\\\(\\\\sqrt{5}-\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the binomial denominator \\(\\sqrt{5+\\sqrt{2}}\\) and determine its conjugate: \\(\\sqrt{5}-\\sqrt{2}\\).",
+        "explanation": "Identify the binomial denominator and write down its conjugate (flip the middle sign).",
+        "workingOut": "\\\\(\\\\frac{1}{\\\\sqrt{5}+\\\\sqrt{2}}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the numerator and denominator by the conjugate, \\(\\\\sqrt{5}-\\\\sqrt{2}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{\\\\sqrt{5}-\\\\sqrt{2}}",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the denominator using the difference of two squares, \\((a+b)(a-b)=a^2-b^2\\), which removes the surds.",
+        "workingOut": "5-2=3",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the numerator by distributing over the conjugate.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numerator and denominator by the conjugate \\(\\sqrt{5}-\\sqrt{2}\\).",
-        "workingOut": "\\\\frac{(1) \\\\times (\\\\sqrt{5}-\\\\sqrt{2})}{(\\\\sqrt{5+\\\\sqrt{2}}) \\\\times (\\\\sqrt{5}-\\\\sqrt{2})}",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand the denominator using the difference of squares identity \\((a-b)(a+b) = a^2 - b^2\\) and simplify.",
-        "workingOut": "= \\\\frac{(\\\\sqrt{5}-\\\\sqrt{2})}{5 - 2} = \\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}",
+        "explanation": "Write the final simplified fraction with a rational denominator.",
+        "workingOut": "\\\\(\\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}\\\\)",
         "graphData": null
       }
     ],
@@ -3011,43 +3189,53 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q12b",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{1}{3-\\\\sqrt{7}}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{(3-\\\\sqrt{7})}{9 - 7} = \\\\frac{3+\\\\sqrt{7}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3+\\\\sqrt{7}}{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3+\\\\sqrt{8})}{9 - 7} = \\\\frac{3+\\\\sqrt{7}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3-\\\\sqrt{7}}{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3+\\\\sqrt{7})}{9 - 7} = \\\\frac{3+\\\\sqrt{7}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3+\\\\sqrt{7}}{16}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3+\\\\sqrt{6})}{9 - 7} = \\\\frac{3+\\\\sqrt{7}}{2}\\\\)",
+        "text": "\\\\(3+\\\\sqrt{7}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the binomial denominator \\(3-\\sqrt{7}\\) and determine its conjugate: \\(3+\\sqrt{7}\\).",
+        "explanation": "Identify the binomial denominator and write down its conjugate (flip the middle sign).",
+        "workingOut": "\\\\(\\\\frac{1}{3-\\\\sqrt{7}}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the numerator and denominator by the conjugate, \\(3+\\\\sqrt{7}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{3+\\\\sqrt{7}}{3+\\\\sqrt{7}}",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the denominator using the difference of two squares, \\((a+b)(a-b)=a^2-b^2\\), which removes the surds.",
+        "workingOut": "9-7=2",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the numerator by distributing over the conjugate.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numerator and denominator by the conjugate \\(3+\\sqrt{7}\\).",
-        "workingOut": "\\\\frac{(1) \\\\times (3+\\\\sqrt{7})}{(3-\\\\sqrt{7}) \\\\times (3+\\\\sqrt{7})}",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand the denominator using the difference of squares identity \\((a-b)(a+b) = a^2 - b^2\\) and simplify.",
-        "workingOut": "= \\\\frac{(3+\\\\sqrt{7})}{9 - 7} = \\\\frac{3+\\\\sqrt{7}}{2}",
+        "explanation": "Write the final simplified fraction with a rational denominator.",
+        "workingOut": "\\\\(\\\\frac{3+\\\\sqrt{7}}{2}\\\\)",
         "graphData": null
       }
     ],
@@ -3058,43 +3246,53 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q12c",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{1}{2\\\\sqrt{6}-\\\\sqrt{3}}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{(2\\\\sqrt{6}-\\\\sqrt{3})}{24 - 3} = \\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{21}\\\\)",
+        "text": "\\\\(\\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{21}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(2\\\\sqrt{7}+\\\\sqrt{3})}{24 - 3} = \\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{21}\\\\)",
+        "text": "\\\\(\\\\frac{2\\\\sqrt{6}-\\\\sqrt{3}}{21}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(2\\\\sqrt{5}+\\\\sqrt{3})}{24 - 3} = \\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{21}\\\\)",
+        "text": "\\\\(\\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{27}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(2\\\\sqrt{6}+\\\\sqrt{3})}{24 - 3} = \\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{21}\\\\)",
+        "text": "\\\\(2\\\\sqrt{6}+\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the binomial denominator \\(2\\sqrt{6-\\sqrt{3}}\\) and determine its conjugate: \\(2\\sqrt{6}+\\sqrt{3}\\).",
+        "explanation": "Identify the binomial denominator and write down its conjugate (flip the middle sign).",
+        "workingOut": "\\\\(\\\\frac{1}{2\\\\sqrt{6}-\\\\sqrt{3}}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the numerator and denominator by the conjugate, \\(2\\\\sqrt{6}+\\\\sqrt{3}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{2\\\\sqrt{6}+\\\\sqrt{3}}",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the denominator using the difference of two squares, \\((a+b)(a-b)=a^2-b^2\\), which removes the surds.",
+        "workingOut": "24-3=21",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the numerator by distributing over the conjugate.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numerator and denominator by the conjugate \\(2\\sqrt{6}+\\sqrt{3}\\).",
-        "workingOut": "\\\\frac{(1) \\\\times (2\\\\sqrt{6}+\\\\sqrt{3})}{(2\\\\sqrt{6-\\\\sqrt{3}}) \\\\times (2\\\\sqrt{6}+\\\\sqrt{3})}",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand the denominator using the difference of squares identity \\((a-b)(a+b) = a^2 - b^2\\) and simplify.",
-        "workingOut": "= \\\\frac{(2\\\\sqrt{6}+\\\\sqrt{3})}{24 - 3} = \\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{21}",
+        "explanation": "Write the final simplified fraction with a rational denominator.",
+        "workingOut": "\\\\(\\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{21}\\\\)",
         "graphData": null
       }
     ],
@@ -3105,43 +3303,53 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q12d",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{\\\\sqrt{3}}{\\\\sqrt{3}+1}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{(\\\\sqrt{3})(\\\\sqrt{3}-1)}{3 - 1} = \\\\frac{3-\\\\sqrt{3}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3-\\\\sqrt{3}}{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(\\\\sqrt{3})(\\\\sqrt{3}+1)}{3 - 1} = \\\\frac{3-\\\\sqrt{3}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3+\\\\sqrt{3}}{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(\\\\sqrt{4})(\\\\sqrt{3}-1)}{3 - 1} = \\\\frac{3-\\\\sqrt{3}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3-\\\\sqrt{3}}{4}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(\\\\sqrt{2})(\\\\sqrt{3}-1)}{3 - 1} = \\\\frac{3-\\\\sqrt{3}}{2}\\\\)",
+        "text": "\\\\(3-\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the binomial denominator \\(\\sqrt{3+1}\\) and determine its conjugate: \\(\\sqrt{3}-1\\).",
+        "explanation": "Identify the binomial denominator and write down its conjugate (flip the middle sign).",
+        "workingOut": "\\\\(\\\\frac{\\\\sqrt{3}}{\\\\sqrt{3}+1}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the numerator and denominator by the conjugate, \\(\\\\sqrt{3}-1\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{\\\\sqrt{3}-1}{\\\\sqrt{3}-1}",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the denominator using the difference of two squares, \\((a+b)(a-b)=a^2-b^2\\), which removes the surds.",
+        "workingOut": "3-1=2",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the numerator by distributing over the conjugate.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numerator and denominator by the conjugate \\(\\sqrt{3}-1\\).",
-        "workingOut": "\\\\frac{(\\\\sqrt{3}) \\\\times (\\\\sqrt{3}-1)}{(\\\\sqrt{3+1}) \\\\times (\\\\sqrt{3}-1)}",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand the denominator using the difference of squares identity \\((a-b)(a+b) = a^2 - b^2\\) and simplify.",
-        "workingOut": "= \\\\frac{(\\\\sqrt{3})(\\\\sqrt{3}-1)}{3 - 1} = \\\\frac{3-\\\\sqrt{3}}{2}",
+        "explanation": "Write the final simplified fraction with a rational denominator.",
+        "workingOut": "\\\\(\\\\frac{3-\\\\sqrt{3}}{2}\\\\)",
         "graphData": null
       }
     ],
@@ -3152,43 +3360,53 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q12e",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{3}{\\\\sqrt{11}+\\\\sqrt{5}}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{(3)(\\\\sqrt{11}+\\\\sqrt{5})}{11 - 5} = \\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3)(\\\\sqrt{11}-\\\\sqrt{5})}{11 - 5} = \\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{11}+\\\\sqrt{5}}{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3)(\\\\sqrt{12}-\\\\sqrt{5})}{11 - 5} = \\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3(\\\\sqrt{11}-\\\\sqrt{5})}{6}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3)(\\\\sqrt{10}-\\\\sqrt{5})}{11 - 5} = \\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{6}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the binomial denominator \\(\\sqrt{11+\\sqrt{5}}\\) and determine its conjugate: \\(\\sqrt{11}-\\sqrt{5}\\).",
+        "explanation": "Identify the binomial denominator and write down its conjugate (flip the middle sign).",
+        "workingOut": "\\\\(\\\\frac{3}{\\\\sqrt{11}+\\\\sqrt{5}}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the numerator and denominator by the conjugate, \\(\\\\sqrt{11}-\\\\sqrt{5}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{\\\\sqrt{11}-\\\\sqrt{5}}",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the denominator using the difference of two squares, \\((a+b)(a-b)=a^2-b^2\\), which removes the surds.",
+        "workingOut": "11-5=6",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the numerator by distributing over the conjugate.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numerator and denominator by the conjugate \\(\\sqrt{11}-\\sqrt{5}\\).",
-        "workingOut": "\\\\frac{(3) \\\\times (\\\\sqrt{11}-\\\\sqrt{5})}{(\\\\sqrt{11+\\\\sqrt{5}}) \\\\times (\\\\sqrt{11}-\\\\sqrt{5})}",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand the denominator using the difference of squares identity \\((a-b)(a+b) = a^2 - b^2\\) and simplify.",
-        "workingOut": "= \\\\frac{(3)(\\\\sqrt{11}-\\\\sqrt{5})}{11 - 5} = \\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{2}",
+        "explanation": "Write the final simplified fraction with a rational denominator.",
+        "workingOut": "\\\\(\\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{2}\\\\)",
         "graphData": null
       }
     ],
@@ -3199,43 +3417,53 @@ export const Y11A_CH2E_QUESTIONS = [
     "id": "y11a-2e-q12f",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{3\\\\sqrt{7}}{2\\\\sqrt{5}-\\\\sqrt{7}}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{(3\\\\sqrt{7})(2\\\\sqrt{5}-\\\\sqrt{7})}{20 - 7} = \\\\frac{6\\\\sqrt{35}+21}{13}\\\\)",
+        "text": "\\\\(\\\\frac{6\\\\sqrt{35}+21}{13}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3\\\\sqrt{8})(2\\\\sqrt{5}+\\\\sqrt{7})}{20 - 7} = \\\\frac{6\\\\sqrt{35}+21}{13}\\\\)",
+        "text": "\\\\(\\\\frac{6\\\\sqrt{35}-21}{13}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3\\\\sqrt{7})(2\\\\sqrt{5}+\\\\sqrt{7})}{20 - 7} = \\\\frac{6\\\\sqrt{35}+21}{13}\\\\)",
+        "text": "\\\\(\\\\frac{6\\\\sqrt{35}+21}{27}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3\\\\sqrt{6})(2\\\\sqrt{5}+\\\\sqrt{7})}{20 - 7} = \\\\frac{6\\\\sqrt{35}+21}{13}\\\\)",
+        "text": "\\\\(6\\\\sqrt{35}+21\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the binomial denominator \\(2\\sqrt{5-\\sqrt{7}}\\) and determine its conjugate: \\(2\\sqrt{5}+\\sqrt{7}\\).",
+        "explanation": "Identify the binomial denominator and write down its conjugate (flip the middle sign).",
+        "workingOut": "\\\\(\\\\frac{3\\\\sqrt{7}}{2\\\\sqrt{5}-\\\\sqrt{7}}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the numerator and denominator by the conjugate, \\(2\\\\sqrt{5}+\\\\sqrt{7}\\), so the value of the fraction is unchanged.",
+        "workingOut": "\\\\times \\\\frac{2\\\\sqrt{5}+\\\\sqrt{7}}{2\\\\sqrt{5}+\\\\sqrt{7}}",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the denominator using the difference of two squares, \\((a+b)(a-b)=a^2-b^2\\), which removes the surds.",
+        "workingOut": "20-7=13",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand the numerator by distributing over the conjugate.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Multiply the numerator and denominator by the conjugate \\(2\\sqrt{5}+\\sqrt{7}\\).",
-        "workingOut": "\\\\frac{(3\\\\sqrt{7}) \\\\times (2\\\\sqrt{5}+\\\\sqrt{7})}{(2\\\\sqrt{5-\\\\sqrt{7}}) \\\\times (2\\\\sqrt{5}+\\\\sqrt{7})}",
-        "graphData": null
-      },
-      {
-        "explanation": "Expand the denominator using the difference of squares identity \\((a-b)(a+b) = a^2 - b^2\\) and simplify.",
-        "workingOut": "= \\\\frac{(3\\\\sqrt{7})(2\\\\sqrt{5}+\\\\sqrt{7})}{20 - 7} = \\\\frac{6\\\\sqrt{35}+21}{13}",
+        "explanation": "Write the final simplified fraction with a rational denominator.",
+        "workingOut": "\\\\(\\\\frac{6\\\\sqrt{35}+21}{13}\\\\)",
         "graphData": null
       }
     ],
@@ -3245,49 +3473,49 @@ export const Y11A_CH2E_QUESTIONS = [
   {
     "id": "y11a-2e-q13a",
     "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
+    "difficulty": "hard",
+    "timeLimit": 120,
     "question": "Rationalise the denominator of the fraction.\n\n\\\\(\\\\frac{\\\\sqrt{7}-\\\\sqrt{2}}{\\\\sqrt{7}+\\\\sqrt{2}}\\\\)",
     "answer": 0,
     "options": [
+      {
+        "text": "\\\\(\\\\frac{9-2\\\\sqrt{14}}{5}\\\\)",
+        "imageUrl": ""
+      },
       {
         "text": "\\\\(\\\\frac{9+2\\\\sqrt{14}}{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{9-2\\\\sqrt{15}}{5}\\\\)",
+        "text": "\\\\(\\\\frac{5-2\\\\sqrt{14}}{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{9-2\\\\sqrt{13}}{5}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\frac{9-2\\\\sqrt{14}}{5}\\\\)",
+        "text": "\\\\(\\\\frac{9-2\\\\sqrt{14}}{9}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the denominator \\(\\sqrt{7+\\sqrt{2}}\\) and determine its conjugate: \\(\\sqrt{7}-\\sqrt{2}\\).",
-        "workingOut": "",
+        "explanation": "Multiply the numerator and denominator by the conjugate of the denominator, \\(\\sqrt{7}-\\sqrt{2}\\).",
+        "workingOut": "\\\\frac{(\\\\sqrt{7}-\\\\sqrt{2})(\\\\sqrt{7}-\\\\sqrt{2})}{(\\\\sqrt{7}+\\\\sqrt{2})(\\\\sqrt{7}-\\\\sqrt{2})}",
         "graphData": null
       },
       {
-        "explanation": "Multiply numerator and denominator of the fraction by this conjugate.",
-        "workingOut": "\\\\frac{(\\\\sqrt{7}-\\\\sqrt{2}) \\\\times (\\\\sqrt{7}-\\\\sqrt{2})}{(\\\\sqrt{7+\\\\sqrt{2}}) \\\\times (\\\\sqrt{7}-\\\\sqrt{2})}",
+        "explanation": "Expand the denominator using the difference of two squares.",
+        "workingOut": "(\\\\sqrt{7})^2-(\\\\sqrt{2})^2 = 7-2 = 5",
         "graphData": null
       },
       {
-        "explanation": "Expand the numerator (by perfect square expansion or FOIL) and the denominator (by difference of squares).",
-        "workingOut": "(\\\\sqrt{7}-\\\\sqrt{2})^2 = 7 - 2\\\\sqrt{14} + 2 = 9-2\\\\sqrt{14}",
+        "explanation": "Expand the numerator, which is a perfect square, using \\((a-b)^2=a^2-2ab+b^2\\).",
+        "workingOut": "(\\\\sqrt{7}-\\\\sqrt{2})^2 = 7 - 2\\\\sqrt{14} + 2 = 9 - 2\\\\sqrt{14}",
         "graphData": null
       },
       {
-        "explanation": "Divide the expanded terms by the denominator to state the final simplified fraction.",
-        "workingOut": "= \\\\frac{9-2\\\\sqrt{14}}{5}",
+        "explanation": "Combine the simplified numerator and denominator into the final fraction.",
+        "workingOut": "\\\\frac{9-2\\\\sqrt{14}}{5}",
         "graphData": null
       }
     ],
@@ -3297,49 +3525,49 @@ export const Y11A_CH2E_QUESTIONS = [
   {
     "id": "y11a-2e-q13b",
     "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
+    "difficulty": "hard",
+    "timeLimit": 120,
     "question": "Rationalise the denominator of the fraction.\n\n\\\\(\\\\frac{3\\\\sqrt{3}+5}{3\\\\sqrt{3}-5}\\\\)",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(26+15\\\\sqrt{3}\\\\)",
+        "text": "\\\\(26 + 15\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(26-15\\\\sqrt{3}\\\\)",
+        "text": "\\\\(26 - 15\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(27+15\\\\sqrt{3}\\\\)",
+        "text": "\\\\(2 + 15\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(25+15\\\\sqrt{3}\\\\)",
+        "text": "\\\\(52 + 15\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the denominator \\(3\\sqrt{3-5}\\) and determine its conjugate: \\(3\\sqrt{3}+5\\).",
-        "workingOut": "",
+        "explanation": "Multiply the numerator and denominator by the conjugate of the denominator, \\(3\\sqrt{3}+5\\).",
+        "workingOut": "\\\\frac{(3\\\\sqrt{3}+5)(3\\\\sqrt{3}+5)}{(3\\\\sqrt{3}-5)(3\\\\sqrt{3}+5)}",
         "graphData": null
       },
       {
-        "explanation": "Multiply numerator and denominator of the fraction by this conjugate.",
-        "workingOut": "\\\\frac{(3\\\\sqrt{3}+5) \\\\times (3\\\\sqrt{3}+5)}{(3\\\\sqrt{3-5}) \\\\times (3\\\\sqrt{3}+5)}",
+        "explanation": "Expand the denominator using the difference of two squares.",
+        "workingOut": "(3\\\\sqrt{3})^2-5^2 = 27-25 = 2",
         "graphData": null
       },
       {
-        "explanation": "Expand the numerator (by perfect square expansion or FOIL) and the denominator (by difference of squares).",
+        "explanation": "Expand the numerator, which is a perfect square, using \\((a+b)^2=a^2+2ab+b^2\\).",
         "workingOut": "(3\\\\sqrt{3}+5)^2 = 27 + 30\\\\sqrt{3} + 25 = 52+30\\\\sqrt{3}",
         "graphData": null
       },
       {
-        "explanation": "Divide the expanded terms by the denominator to state the final simplified fraction.",
-        "workingOut": "= 26+15\\\\sqrt{3}",
+        "explanation": "Combine and simplify the fraction by dividing every term by the common factor 2.",
+        "workingOut": "\\\\frac{52+30\\\\sqrt{3}}{2} = 26+15\\\\sqrt{3}",
         "graphData": null
       }
     ],
@@ -3349,49 +3577,49 @@ export const Y11A_CH2E_QUESTIONS = [
   {
     "id": "y11a-2e-q14",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 120,
+    "difficulty": "medium",
+    "timeLimit": 90,
     "question": "Find the value of \\\\(x\\\\) if \\\\(\\\\sqrt{18} + \\\\sqrt{8} = \\\\sqrt{x}\\\\).",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\sqrt{51} = \\\\sqrt{x} \\\\implies x = 50\\\\)",
+        "text": "\\\\(x = 50\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{50} = \\\\sqrt{x} \\\\implies x = 50\\\\)",
+        "text": "\\\\(x = 26\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{49} = \\\\sqrt{x} \\\\implies x = 50\\\\)",
+        "text": "\\\\(x = 49\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\sqrt{50} = \\\\sqrt{x} \\\\implies x = 50\\\\)",
+        "text": "\\\\(x = 60\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "Simplify surds by writing them as a product of a perfect square factor and a smaller surd, e.g. \\\\(\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}\\\\). Only \\\\(like\\\\) surds (same number under the root) can be added or subtracted.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Simplify the two surds on the left hand side of the equation by finding their perfect square factors (9 and 4).",
-        "workingOut": "\\\\sqrt{18} = \\\\sqrt{9 \\\\times 2} = 3\\\\sqrt{2}, \\\\quad \\\\sqrt{8} = \\\\sqrt{4 \\\\times 2} = 2\\\\sqrt{2}",
+        "explanation": "Simplify each surd on the left-hand side by finding its largest perfect square factor.",
+        "workingOut": "\\\\sqrt{18} = 3\\\\sqrt{2}, \\\\quad \\\\sqrt{8} = 2\\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Add the simplified like surds together by combining their coefficients.",
+        "explanation": "Add the simplified (like) surds together.",
         "workingOut": "3\\\\sqrt{2} + 2\\\\sqrt{2} = 5\\\\sqrt{2}",
         "graphData": null
       },
       {
-        "explanation": "Rewrite this simplified surd as a single square root by squaring the coefficient and placing it inside the radical.",
-        "workingOut": "5\\\\sqrt{2} = \\\\sqrt{5^2 \\\\times 2} = \\\\sqrt{25 \\\\times 2} = \\\\sqrt{50}",
+        "explanation": "Write \\(5\\sqrt{2}\\) as a single surd by bringing the coefficient inside the root: \\(k\\sqrt{n} = \\sqrt{k^2 n}\\).",
+        "workingOut": "5\\\\sqrt{2} = \\\\sqrt{25 \\\\times 2} = \\\\sqrt{50}",
         "graphData": null
       },
       {
-        "explanation": "Compare the resulting expression with \\(\\sqrt{x}\\) to find the value of \\(x\\).",
-        "workingOut": "\\\\sqrt{50} = \\\\sqrt{x} \\\\implies x = 50",
+        "explanation": "Compare with \\(\\sqrt{x}\\) to find the value of \\(x\\).",
+        "workingOut": "\\\\sqrt{x} = \\\\sqrt{50} \\\\implies x = 50",
         "graphData": null
       }
     ],
@@ -3407,43 +3635,48 @@ export const Y11A_CH2E_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{(3-2)\\\\sqrt{5} + (6-4)}{1} = 5\\\\sqrt{5}+2\\\\)",
+        "text": "\\\\(5\\\\sqrt{5} + 2\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3+2)\\\\sqrt{6} + (6-4)}{1} = 5\\\\sqrt{5}+2\\\\)",
+        "text": "\\\\(\\\\sqrt{5} + 2\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3+2)\\\\sqrt{5} + (6-4)}{1} = 5\\\\sqrt{5}+2\\\\)",
+        "text": "\\\\(5\\\\sqrt{5} - 2\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{(3+2)\\\\sqrt{4} + (6-4)}{1} = 5\\\\sqrt{5}+2\\\\)",
+        "text": "\\\\(\\\\sqrt{5} - 2\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Find the lowest common denominator by multiplying the two conjugate denominators: \\((\\sqrt{5}-2)(\\sqrt{5}+2)\\). Express the fractions over this common denominator.",
-        "workingOut": "\\\\frac{3(\\\\sqrt{5}+2) + 2(\\\\sqrt{5}-2)}{(\\\\sqrt{5}-2)(\\\\sqrt{5}+2)}",
+        "explanation": "Rewrite each fraction with a common denominator by multiplying each by the conjugate of its own denominator over itself.",
+        "workingOut": "\\\\frac{3(\\\\sqrt{5}+2)}{(\\\\sqrt{5}-2)(\\\\sqrt{5}+2)} + \\\\frac{2(\\\\sqrt{5}-2)}{(\\\\sqrt{5}+2)(\\\\sqrt{5}-2)}",
         "graphData": null
       },
       {
-        "explanation": "Expand the terms in the numerator.",
+        "explanation": "Simplify each denominator using the difference of two squares: \\((\\sqrt5)^2-2^2=5-4=1\\).",
+        "workingOut": "\\\\text{Both denominators} = 5 - 4 = 1",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand both numerators.",
         "workingOut": "3\\\\sqrt{5} + 6 + 2\\\\sqrt{5} - 4",
         "graphData": null
       },
       {
-        "explanation": "Expand the denominator using the difference of squares identity \\((a-b)(a+b) = a^2 - b^2\\).",
-        "workingOut": "(\\\\sqrt{5})^2 - 2^2 = 5 - 4 = 1",
+        "explanation": "Combine the like terms in the numerator over the common denominator of 1.",
+        "workingOut": "= (3+2)\\\\sqrt{5} + (6-4)",
         "graphData": null
       },
       {
-        "explanation": "Combine like terms in the numerator and simplify the final fraction over 1.",
-        "workingOut": "= \\\\frac{(3+2)\\\\sqrt{5} + (6-4)}{1} = 5\\\\sqrt{5}+2",
+        "explanation": "Write the final simplified answer.",
+        "workingOut": "= 5\\\\sqrt{5} + 2",
         "graphData": null
       }
     ],
@@ -3453,49 +3686,49 @@ export const Y11A_CH2E_QUESTIONS = [
   {
     "id": "y11a-2e-q16-p",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 120,
+    "difficulty": "medium",
+    "timeLimit": 90,
     "question": "Find the value of \\\\(p\\\\) such that \\\\(\\\\frac{\\\\sqrt{5}}{\\\\sqrt{5}-2} = p + q\\\\sqrt{5}\\\\).",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(5 - 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies p = 5\\\\)",
+        "text": "\\\\(p = 5\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(6 + 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies p = 5\\\\)",
+        "text": "\\\\(p = 2\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4 + 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies p = 5\\\\)",
+        "text": "\\\\(p = -5\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(5 + 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies p = 5\\\\)",
+        "text": "\\\\(p = 1\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the denominator \\(\\sqrt{5}-2\\) and multiply numerator and denominator of the fraction by its conjugate \\(\\sqrt{5}+2\\).",
+        "explanation": "Rationalise the denominator by multiplying numerator and denominator by the conjugate \\(\\sqrt{5}+2\\).",
         "workingOut": "\\\\frac{\\\\sqrt{5}(\\\\sqrt{5}+2)}{(\\\\sqrt{5}-2)(\\\\sqrt{5}+2)}",
         "graphData": null
       },
       {
-        "explanation": "Expand the denominator using the difference of squares identity.",
-        "workingOut": "(\\\\sqrt{5})^2 - 2^2 = 5 - 4 = 1",
+        "explanation": "Simplify the denominator using the difference of two squares.",
+        "workingOut": "(\\\\sqrt{5})^2-2^2 = 5-4 = 1",
         "graphData": null
       },
       {
-        "explanation": "Expand the numerator terms: distribute \\(\\sqrt{5}\\) across the addition.",
-        "workingOut": "\\\\sqrt{5}\\\\sqrt{5} + 2\\\\sqrt{5} = 5 + 2\\\\sqrt{5}",
+        "explanation": "Expand the numerator by distributing \\(\\sqrt{5}\\).",
+        "workingOut": "\\\\sqrt{5}\\\\times\\\\sqrt{5} + 2\\\\sqrt{5} = 5+2\\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Equate the simplified expression to \\(p + q\\sqrt{5}\\) and identify the value of \\(p\\).",
-        "workingOut": "5 + 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies p = 5",
+        "explanation": "Write the result in the form \\(p+q\\sqrt{5}\\) and read off \\(p\\), the rational (non-surd) part.",
+        "workingOut": "5+2\\\\sqrt{5} = p+q\\\\sqrt{5} \\\\implies p=5",
         "graphData": null
       }
     ],
@@ -3505,49 +3738,49 @@ export const Y11A_CH2E_QUESTIONS = [
   {
     "id": "y11a-2e-q16-q",
     "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 120,
+    "difficulty": "medium",
+    "timeLimit": 90,
     "question": "Find the value of \\\\(q\\\\) such that \\\\(\\\\frac{\\\\sqrt{5}}{\\\\sqrt{5}-2} = p + q\\\\sqrt{5}\\\\).",
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(5 + 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies q = 2\\\\)",
+        "text": "\\\\(q = 2\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(5 - 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies q = 2\\\\)",
+        "text": "\\\\(q = 5\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(6 + 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies q = 2\\\\)",
+        "text": "\\\\(q = -2\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4 + 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies q = 2\\\\)",
+        "text": "\\\\(q = 1\\\\)",
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Identify the denominator \\(\\sqrt{5}-2\\) and multiply numerator and denominator of the fraction by its conjugate \\(\\sqrt{5}+2\\).",
+        "explanation": "Rationalise the denominator by multiplying numerator and denominator by the conjugate \\(\\sqrt{5}+2\\).",
         "workingOut": "\\\\frac{\\\\sqrt{5}(\\\\sqrt{5}+2)}{(\\\\sqrt{5}-2)(\\\\sqrt{5}+2)}",
         "graphData": null
       },
       {
-        "explanation": "Expand the denominator using difference of squares to find that it equals 1.",
-        "workingOut": "5 - 4 = 1",
+        "explanation": "Simplify the denominator using the difference of two squares.",
+        "workingOut": "(\\\\sqrt{5})^2-2^2 = 5-4 = 1",
         "graphData": null
       },
       {
-        "explanation": "Expand the numerator by distribution to write the fraction in rationalised form.",
-        "workingOut": "\\\\sqrt{5}\\\\sqrt{5} + 2\\\\sqrt{5} = 5 + 2\\\\sqrt{5}",
+        "explanation": "Expand the numerator by distributing \\(\\sqrt{5}\\).",
+        "workingOut": "\\\\sqrt{5}\\\\times\\\\sqrt{5} + 2\\\\sqrt{5} = 5+2\\\\sqrt{5}",
         "graphData": null
       },
       {
-        "explanation": "Compare the coefficients with the expression \\(p + q\\sqrt{5}\\) to find \\(q\\).",
-        "workingOut": "5 + 2\\\\sqrt{5} = p + q\\\\sqrt{5} \\\\implies q = 2",
+        "explanation": "Write the result in the form \\(p+q\\sqrt{5}\\) and read off \\(q\\), the coefficient of \\(\\sqrt{5}\\).",
+        "workingOut": "5+2\\\\sqrt{5} = p+q\\\\sqrt{5} \\\\implies q=2",
         "graphData": null
       }
     ],
@@ -3560,29 +3793,34 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Show that \\\\(\\\\frac{2}{6-3\\\\sqrt{3}} - \\\\frac{1}{2\\\\sqrt{3}+3}\\\\) is rational by first rationalising each denominator.",
-    "answer": "0",
+    "answer": "Step 1: Rationalise \\(\\frac{2}{6-3\\sqrt{3}}\\) by first factoring 3 from the denominator, then multiplying by the conjugate \\(2+\\sqrt{3}\\):\n\\[\\frac{2}{6-3\\sqrt{3}} = \\frac{2}{3(2-\\sqrt{3})} = \\frac{2(2+\\sqrt{3})}{3(2-\\sqrt{3})(2+\\sqrt{3})} = \\frac{4+2\\sqrt{3}}{3(4-3)} = \\frac{4+2\\sqrt{3}}{3}\\]\n\nStep 2: Rationalise \\(\\frac{1}{2\\sqrt{3}+3}\\) by multiplying by the conjugate \\(2\\sqrt{3}-3\\):\n\\[\\frac{2\\sqrt{3}-3}{(2\\sqrt{3}+3)(2\\sqrt{3}-3)} = \\frac{2\\sqrt{3}-3}{12-9} = \\frac{2\\sqrt{3}-3}{3}\\]\n\nStep 3: Subtract the two rationalised fractions (common denominator = 3):\n\\[\\frac{4+2\\sqrt{3}}{3} - \\frac{2\\sqrt{3}-3}{3} = \\frac{4+2\\sqrt{3}-2\\sqrt{3}+3}{3} = \\frac{7}{3}\\]\n\nThe surd terms cancel, leaving the rational number \\(\\frac{7}{3}\\). ✓",
     "options": [],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Rationalise the first term by dividing the common factor of 3 first, then multiplying top and bottom by its conjugate: \\(2+\\sqrt{3}\\).",
-        "workingOut": "\\\\frac{2}{3(2-\\\\sqrt{3})} = \\\\frac{2(2+\\\\sqrt{3})}{3(2^2 - (\\\\sqrt{3})^2)} = \\\\frac{4+2\\\\sqrt{3}}{3(4-3)} = \\\\frac{4+2\\\\sqrt{3}}{3}",
+        "explanation": "Factor the first denominator to make the conjugate easier to spot, then rationalise using that conjugate.",
+        "workingOut": "\\\\frac{2}{6-3\\\\sqrt{3}} = \\\\frac{2}{3(2-\\\\sqrt{3})} = \\\\frac{2(2+\\\\sqrt{3})}{3(4-3)} = \\\\frac{4+2\\\\sqrt{3}}{3}",
         "graphData": null
       },
       {
-        "explanation": "Rationalise the second term by multiplying numerator and denominator by its conjugate: \\(2\\sqrt{3}-3\\).",
-        "workingOut": "\\\\frac{1}{2\\\\sqrt{3}+3} = \\\\frac{1(2\\\\sqrt{3}-3)}{(2\\\\sqrt{3})^2 - 3^2} = \\\\frac{2\\\\sqrt{3}-3}{12-9} = \\\\frac{2\\\\sqrt{3}-3}{3}",
+        "explanation": "Rationalise the second fraction by multiplying by the conjugate of \\(2\\sqrt{3}+3\\), which is \\(2\\sqrt{3}-3\\).",
+        "workingOut": "\\\\frac{2\\\\sqrt{3}-3}{(2\\\\sqrt{3}+3)(2\\\\sqrt{3}-3)} = \\\\frac{2\\\\sqrt{3}-3}{12-9} = \\\\frac{2\\\\sqrt{3}-3}{3}",
         "graphData": null
       },
       {
-        "explanation": "Subtract the second rationalised fraction from the first over their common denominator of 3.",
-        "workingOut": "\\\\frac{4+2\\\\sqrt{3}}{3} - \\\\frac{2\\\\sqrt{3}-3}{3} = \\\\frac{(4+2\\\\sqrt{3}) - (2\\\\sqrt{3}-3)}{3}",
+        "explanation": "Subtract the two rationalised fractions, which now share a common denominator of 3.",
+        "workingOut": "\\\\frac{4+2\\\\sqrt{3}}{3} - \\\\frac{2\\\\sqrt{3}-3}{3} = \\\\frac{4+2\\\\sqrt{3}-2\\\\sqrt{3}+3}{3}",
         "graphData": null
       },
       {
-        "explanation": "Distribute the negative sign, combine like terms, and verify that the surd terms cancel, yielding a rational result.",
-        "workingOut": "= \\\\frac{4 + 2\\\\sqrt{3} - 2\\\\sqrt{3} + 3}{3} = \\\\frac{7}{3}",
+        "explanation": "Simplify the numerator: the surd terms cancel out, leaving a rational value.",
+        "workingOut": "= \\\\frac{7}{3}",
+        "graphData": null
+      },
+      {
+        "explanation": "State the conclusion: since the expression simplifies to a fraction of two integers, it is rational.",
+        "workingOut": "\\\\frac{7}{3} \\\\text{ is rational} \\\\checkmark",
         "graphData": null
       }
     ],
