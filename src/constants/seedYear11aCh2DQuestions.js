@@ -24,7 +24,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -76,7 +76,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -128,7 +128,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -180,7 +180,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -232,7 +232,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -284,7 +284,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -336,7 +336,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -388,7 +388,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -856,7 +856,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -908,7 +908,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -960,7 +960,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -1012,7 +1012,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -1064,7 +1064,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -1116,7 +1116,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -1168,7 +1168,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -1220,7 +1220,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2104,7 +2104,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2156,7 +2156,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2208,7 +2208,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2260,7 +2260,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2312,7 +2312,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2364,7 +2364,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2416,7 +2416,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2468,7 +2468,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2520,7 +2520,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2572,7 +2572,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2624,7 +2624,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2676,7 +2676,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2728,7 +2728,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2780,7 +2780,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2815,7 +2815,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "question": "Show that the expression is rational by first rationalising the denominators:\n\n\\\\(\\\\frac{3}{\\\\sqrt{2}} + \\\\frac{3}{2+\\\\sqrt{2}}\\\\)",
     "answer": "Step 1: Rationalise \\(\\frac{3}{\\sqrt{2}}\\) by multiplying by \\(\\frac{\\sqrt{2}}{\\sqrt{2}}\\):\n\\[\\frac{3}{\\sqrt{2}} = \\frac{3\\sqrt{2}}{2}\\]\n\nStep 2: Rationalise \\(\\frac{3}{2+\\sqrt{2}}\\) by multiplying by the conjugate \\(\\frac{2-\\sqrt{2}}{2-\\sqrt{2}}\\):\n\\[\\frac{3(2-\\sqrt{2})}{(2+\\sqrt{2})(2-\\sqrt{2})} = \\frac{6-3\\sqrt{2}}{4-2} = \\frac{6-3\\sqrt{2}}{2}\\]\n\nStep 3: Add the two rationalised fractions (common denominator = 2):\n\\[\\frac{3\\sqrt{2}}{2} + \\frac{6-3\\sqrt{2}}{2} = \\frac{3\\sqrt{2} + 6 - 3\\sqrt{2}}{2} = \\frac{6}{2} = 3\\]\n\nThe surd terms cancel, leaving the rational number 3. ✓",
     "options": [],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2850,7 +2850,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "question": "Show that the expression is rational by first rationalising the denominators:\n\n\\\\(\\\\frac{1}{3+\\\\sqrt{6}} + \\\\frac{2}{\\\\sqrt{6}}\\\\)",
     "answer": "Step 1: Rationalise \\(\\frac{1}{3+\\sqrt{6}}\\) using conjugate \\(3-\\sqrt{6}\\):\n\\[\\frac{3-\\sqrt{6}}{(3+\\sqrt{6})(3-\\sqrt{6})} = \\frac{3-\\sqrt{6}}{9-6} = \\frac{3-\\sqrt{6}}{3}\\]\n\nStep 2: Rationalise \\(\\frac{2}{\\sqrt{6}}\\) by multiplying by \\(\\frac{\\sqrt{6}}{\\sqrt{6}}\\):\n\\[\\frac{2\\sqrt{6}}{6} = \\frac{\\sqrt{6}}{3}\\]\n\nStep 3: Add the two rationalised fractions (common denominator = 3):\n\\[\\frac{3-\\sqrt{6}}{3} + \\frac{\\sqrt{6}}{3} = \\frac{3 - \\sqrt{6} + \\sqrt{6}}{3} = \\frac{3}{3} = 1\\]\n\nThe surd terms cancel, leaving the rational number 1. ✓",
     "options": [],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2885,7 +2885,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "question": "Show that the expression is rational by first rationalising the denominators:\n\n\\\\(\\\\frac{4}{2+\\\\sqrt{2}} + \\\\frac{1}{3-2\\\\sqrt{2}}\\\\)",
     "answer": "Step 1: Rationalise \\(\\frac{4}{2+\\sqrt{2}}\\) using conjugate \\(2-\\sqrt{2}\\):\n\\[\\frac{4(2-\\sqrt{2})}{(2+\\sqrt{2})(2-\\sqrt{2})} = \\frac{8-4\\sqrt{2}}{4-2} = \\frac{8-4\\sqrt{2}}{2} = 4-2\\sqrt{2}\\]\n\nStep 2: Rationalise \\(\\frac{1}{3-2\\sqrt{2}}\\) using conjugate \\(3+2\\sqrt{2}\\):\n\\[\\frac{3+2\\sqrt{2}}{(3-2\\sqrt{2})(3+2\\sqrt{2})} = \\frac{3+2\\sqrt{2}}{9-8} = 3+2\\sqrt{2}\\]\n\nStep 3: Add the two rationalised expressions:\n\\[(4-2\\sqrt{2}) + (3+2\\sqrt{2}) = 4 + 3 - 2\\sqrt{2} + 2\\sqrt{2} = 7\\]\n\nThe surd terms cancel, leaving the rational number 7. ✓",
     "options": [],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2920,7 +2920,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "question": "Show that the expression is rational by first rationalising the denominators:\n\n\\\\(\\\\frac{8}{3-\\\\sqrt{7}} - \\\\frac{6}{2\\\\sqrt{7}-5}\\\\)",
     "answer": "Step 1: Rationalise \\(\\frac{8}{3-\\sqrt{7}}\\) using conjugate \\(3+\\sqrt{7}\\):\n\\[\\frac{8(3+\\sqrt{7})}{(3-\\sqrt{7})(3+\\sqrt{7})} = \\frac{24+8\\sqrt{7}}{9-7} = \\frac{24+8\\sqrt{7}}{2} = 12+4\\sqrt{7}\\]\n\nStep 2: Rationalise \\(\\frac{6}{2\\sqrt{7}-5}\\) using conjugate \\(2\\sqrt{7}+5\\):\n\\[\\frac{6(2\\sqrt{7}+5)}{(2\\sqrt{7}-5)(2\\sqrt{7}+5)} = \\frac{12\\sqrt{7}+30}{28-25} = \\frac{12\\sqrt{7}+30}{3} = 4\\sqrt{7}+10\\]\n\nStep 3: Subtract the two rationalised expressions:\n\\[(12+4\\sqrt{7}) - (4\\sqrt{7}+10) = 12 - 10 + 4\\sqrt{7} - 4\\sqrt{7} = 2\\]\n\nThe surd terms cancel, leaving the rational number 2. ✓",
     "options": [],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -2955,7 +2955,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "question": "If \\\\(x = \\\\frac{\\\\sqrt{5}+1}{2}\\\\), show that \\\\(1 + \\\\frac{1}{x} = x\\\\).",
     "answer": "Step 1: Write \\(\\frac{1}{x}\\) by substituting \\(x = \\frac{\\sqrt{5}+1}{2}\\):\n\\[\\frac{1}{x} = \\frac{2}{\\sqrt{5}+1}\\]\n\nStep 2: Rationalise \\(\\frac{2}{\\sqrt{5}+1}\\) by multiplying by the conjugate \\(\\frac{\\sqrt{5}-1}{\\sqrt{5}-1}\\):\n\\[\\frac{2(\\sqrt{5}-1)}{(\\sqrt{5}+1)(\\sqrt{5}-1)} = \\frac{2(\\sqrt{5}-1)}{5-1} = \\frac{2\\sqrt{5}-2}{4} = \\frac{\\sqrt{5}-1}{2}\\]\n\nStep 3: Compute \\(1 + \\frac{1}{x}\\) using a common denominator of 2:\n\\[1 + \\frac{\\sqrt{5}-1}{2} = \\frac{2}{2} + \\frac{\\sqrt{5}-1}{2} = \\frac{2 + \\sqrt{5} - 1}{2} = \\frac{\\sqrt{5}+1}{2}\\]\n\nStep 4: Recognise that this equals \\(x\\):\n\\[1 + \\frac{1}{x} = \\frac{\\sqrt{5}+1}{2} = x \\qquad \\checkmark\\]",
     "options": [],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -3007,7 +3007,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -3059,7 +3059,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Simplify the expression step-by-step.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
@@ -3111,7 +3111,7 @@ export const Y11A_CH2D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "Multiply numerator and denominator by the conjugate of the denominator.",
+    "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
     "solution": "",
     "solutionSteps": [
       {
