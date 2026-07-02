@@ -1604,11 +1604,16 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "c": "3A",
     "t": "Functions and function notation",
     "source": "Fort Street 2020 Trial Q17(a)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "q": "A tank holds water $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$ litres ($0 \\le t \\le 70$). What volume remains after $10$ minutes?",
-    "a": "$3600$ litres",
-    "opts": [],
+    "a": "0",
+    "opts": [
+      "$3600$ litres",
+      "$4200$ litres",
+      "$3000$ litres",
+      "$2500$ litres"
+    ],
     "h": "Substitute $t = 10$.",
     "s": "$V = 4900\\left(1 - \\frac{10}{70}\\right)^2 = 4900\\left(\\frac{6}{7}\\right)^2 = 4900\\cdot\\frac{36}{49} = 3600$ litres.",
     "solutionSteps": [
