@@ -38,6 +38,10 @@ const questionFingerprint = (q) => {
   const steps = Array.isArray(q.solutionSteps)
     ? q.solutionSteps.map((s) => `${s?.explanation || ''}=>${s?.workingOut || ''}`).join('~')
     : '';
+  const graphData = q.graphData ? JSON.stringify(q.graphData) : '';
+  const subQuestions = Array.isArray(q.subQuestions)
+    ? q.subQuestions.map(questionFingerprint).join('~')
+    : '';
   return djb2([
     q.id || '',
     q.q ?? q.question ?? '',
@@ -47,6 +51,8 @@ const questionFingerprint = (q) => {
     q.type || '',
     opts,
     steps,
+    graphData,
+    subQuestions,
   ].join(''));
 };
 
