@@ -2543,13 +2543,13 @@ export const Y11_CH3B_QUESTIONS = [
             "graphData": null
           },
           {
-            "explanation": "Squaring \\( y=\\sqrt{2x} \\) gives \\( y^2=2x \\) with \\( y \\geq 0 \\): The curve is the upper half of a parabola opening to the right (specifically, \\( y^2 = 2x \\) for \\( y \\geq 0 \\)).",
+            "explanation": "Squaring \\( y=\\sqrt{2x} \\) gives \\( y^2=2x \\) with \\( y \\geq 0 \\), which is the upper half of a rightward-opening parabola: The curve is the upper half of a parabola opening to the right.",
             "workingOut": "",
             "graphData": null
           }
         ],
         "opts": [
-          "The curve is the upper half of a parabola opening to the right (specifically, \\( y^2 = 2x \\) for \\( y \\geq 0 \\)).",
+          "The curve is the upper half of a parabola opening to the right.",
           "The curve is a semicircle centred at the origin.",
           "The curve is a full parabola opening upwards.",
           "The curve is one branch of a hyperbola."
