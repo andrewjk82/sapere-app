@@ -95,7 +95,7 @@ const mapSeedQuestion = (raw, chapter) => {
   if (isMC) {
     const rawOpts = raw.opts || raw.options || [];
     let correct = raw.a ?? raw.answer ?? raw.solution;
-    if (raw.options && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
+    if (rawOpts.length > 0 && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
       const idx = parseInt(correct, 10);
       if (idx >= 0 && idx < rawOpts.length) {
         const correctOpt = rawOpts[idx];
@@ -133,7 +133,7 @@ const mapSeedQuestion = (raw, chapter) => {
         if (isSqMC) {
           const rawOpts = sq.opts || sq.options || [];
           let correct = sq.a ?? sq.answer ?? sq.solution;
-          if (sq.options && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
+          if (rawOpts.length > 0 && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
             const idx = parseInt(correct, 10);
             if (idx >= 0 && idx < rawOpts.length) {
               const correctOpt = rawOpts[idx];

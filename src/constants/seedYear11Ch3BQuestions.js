@@ -673,7 +673,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "The lowest point is \\( y = -2 \\), so the range is all values greater than or equal to \\( -2 \\).",
-        "workingOut": "y \\ge -2",
+        "workingOut": "\\( y \\ge -2 \\)",
         "graphData": null
       },
       {
@@ -1155,7 +1155,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Division by zero is undefined, so the denominator cannot be zero.",
-        "workingOut": "x \\neq 0",
+        "workingOut": "\\( x \\neq 0 \\)",
         "graphData": null
       },
       {
@@ -1192,7 +1192,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "The denominator cannot be zero.",
-        "workingOut": "x - 4 \\neq 0 \\implies x \\neq 4",
+        "workingOut": "\\( x - 4 \\neq 0 \\implies x \\neq 4 \\)",
         "graphData": null
       },
       {
@@ -1229,7 +1229,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set the denominator to not equal zero.",
-        "workingOut": "x + 2 \\neq 0 \\implies x \\neq -2",
+        "workingOut": "\\( x + 2 \\neq 0 \\implies x \\neq -2 \\)",
         "graphData": null
       },
       {
@@ -1266,7 +1266,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Find values of \\( x \\) that make the denominator zero.",
-        "workingOut": "3 + x \\neq 0 \\implies x \\neq -3",
+        "workingOut": "\\( 3 + x \\neq 0 \\implies x \\neq -3 \\)",
         "graphData": null
       },
       {
@@ -1303,12 +1303,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "The expression inside the square root must be non-negative.",
-        "workingOut": "2x \\ge 0",
+        "workingOut": "\\( 2x \\ge 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Divide by 2.",
-        "workingOut": "x \\ge 0",
+        "workingOut": "\\( x \\ge 0 \\)",
         "graphData": null
       },
       {
@@ -1340,12 +1340,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "The radicand must be non-negative.",
-        "workingOut": "x - 4 \\ge 0",
+        "workingOut": "\\( x - 4 \\ge 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\( x \\).",
-        "workingOut": "x \\ge 4",
+        "workingOut": "\\( x \\ge 4 \\)",
         "graphData": null
       },
       {
@@ -1377,12 +1377,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set the term under the radical to be greater than or equal to zero.",
-        "workingOut": "x + 5 \\ge 0",
+        "workingOut": "\\( x + 5 \\ge 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Solve the inequality.",
-        "workingOut": "x \\ge -5",
+        "workingOut": "\\( x \\ge -5 \\)",
         "graphData": null
       },
       {
@@ -1414,12 +1414,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set the radical expression greater than or equal to zero.",
-        "workingOut": "3 + x \\ge 0",
+        "workingOut": "\\( 3 + x \\ge 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\( x \\).",
-        "workingOut": "x \\ge -3",
+        "workingOut": "\\( x \\ge -3 \\)",
         "graphData": null
       },
       {
@@ -1664,7 +1664,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Choose any \\( x \\) value in the domain \\( -4 < x < 4 \\), for example \\( x = 0 \\).",
-        "workingOut": "0^2 + y^2 = 16 \\implies y = \\pm 4",
+        "workingOut": "\\( 0^2 + y^2 = 16 \\implies y = \\pm 4 \\)",
         "graphData": null
       },
       {
@@ -1714,7 +1714,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "The sideways parabola shown is \\( x = y^2 - 4 \\) (or similar). The vertex is at \\( (-4, 0) \\) and y-intercepts are at \\( \\pm 2 \\).",
-        "workingOut": "0 = y^2 - 4 \\implies y = \\pm 2",
+        "workingOut": "\\( 0 = y^2 - 4 \\implies y = \\pm 2 \\)",
         "graphData": null
       },
       {
@@ -1769,7 +1769,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Select the x-coordinate of the center, \\( x = 3 \\).",
-        "workingOut": "(3-3)^2 + (y-2)^2 = 9 \\implies (y-2)^2 = 9 \\implies y - 2 = \\pm 3",
+        "workingOut": "\\( (3-3)^2 + (y-2)^2 = 9 \\implies (y-2)^2 = 9 \\implies y - 2 = \\pm 3 \\)",
         "graphData": null
       },
       {
@@ -1948,7 +1948,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "The denominator cannot be equal to zero.",
-        "workingOut": "5 - x \\neq 0 \\implies x \\neq 5",
+        "workingOut": "\\( 5 - x \\neq 0 \\implies x \\neq 5 \\)",
         "graphData": null
       },
       {
@@ -1980,7 +1980,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set the denominator to not equal zero.",
-        "workingOut": "3x - 2 \\neq 0",
+        "workingOut": "\\( 3x - 2 \\neq 0 \\)",
         "graphData": null
       },
       {
@@ -2017,12 +2017,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "The quantity under the square root must be non-negative.",
-        "workingOut": "x + 6 \\ge 0",
+        "workingOut": "\\( x + 6 \\ge 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\( x \\).",
-        "workingOut": "x \\ge -6",
+        "workingOut": "\\( x \\ge -6 \\)",
         "graphData": null
       },
       {
@@ -2054,7 +2054,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "The term inside the radical must be greater than or equal to zero.",
-        "workingOut": "3x + 2 \\ge 0",
+        "workingOut": "\\( 3x + 2 \\ge 0 \\)",
         "graphData": null
       },
       {
@@ -2091,12 +2091,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Ensure the radicand is non-negative.",
-        "workingOut": "6 - x \\ge 0",
+        "workingOut": "\\( 6 - x \\ge 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Rearrange to solve for \\( x \\).",
-        "workingOut": "6 \\ge x \\implies x \\le 6",
+        "workingOut": "\\( 6 \\ge x \\implies x \\le 6 \\)",
         "graphData": null
       },
       {
@@ -2128,12 +2128,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set the inside of the square root to be greater than or equal to zero.",
-        "workingOut": "9 - 3x \\ge 0",
+        "workingOut": "\\( 9 - 3x \\ge 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Solve for \\( x \\).",
-        "workingOut": "9 \\ge 3x \\implies 3 \\ge x \\implies x \\le 3",
+        "workingOut": "\\( 9 \\ge 3x \\implies 3 \\ge x \\implies x \\le 3 \\)",
         "graphData": null
       },
       {
@@ -2239,7 +2239,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Rearrange to solve the inequality.",
-        "workingOut": "2 > x \\implies x < 2",
+        "workingOut": "\\( 2 > x \\implies x < 2 \\)",
         "graphData": null
       },
       {
@@ -2416,7 +2416,7 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For part a, find when the inside of the square root is non-negative.",
-        "workingOut": "2x \\ge 0 \\implies x \\ge 0",
+        "workingOut": "\\( 2x \\ge 0 \\implies x \\ge 0 \\)",
         "graphData": null
       },
       {
@@ -2506,7 +2506,7 @@ export const Y11_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For part a, find when the denominator is zero.",
-        "workingOut": "x \\neq 0",
+        "workingOut": "\\( x \\neq 0 \\)",
         "graphData": null
       },
       {
@@ -2689,7 +2689,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Isolate \\( y \\) in the equation.",
-        "workingOut": "3x - y + 4 = 0 \\implies y = 3x + 4",
+        "workingOut": "\\( 3x - y + 4 = 0 \\implies y = 3x + 4 \\)",
         "graphData": null
       },
       {
@@ -2792,7 +2792,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Find the domain restrictions. The expression inside the radical must be non-negative.",
-        "workingOut": "16 - x^2 \\ge 0 \\implies x^2 \\le 16 \\implies -4 \\le x \\le 4",
+        "workingOut": "\\( 16 - x^2 \\ge 0 \\implies x^2 \\le 16 \\implies -4 \\le x \\le 4 \\)",
         "graphData": null
       },
       {
@@ -2823,7 +2823,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Consider the restrictions. The denominator cannot be zero, and the radicand must be non-negative.",
-        "workingOut": "\\(\\text{Radicand: } x + 3 \\ge 0 \\implies x \\ge -3 \\\\\n\\text{Denominator } \\neq 0 \\implies \\sqrt{x+3} \\neq 0 \\implies x \\neq -3\\)",
+        "workingOut": "\\( \\(\\text{Radicand: } x + 3 \\ge 0 \\implies x \\ge -3 \\\\\n\\text{Denominator } \\neq 0 \\implies \\sqrt{x+3} \\neq 0 \\implies x \\neq -3\\) \\)",
         "graphData": null
       },
       {
@@ -2860,7 +2860,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set the quadratic denominator to not equal zero.",
-        "workingOut": "x^2 - 9 \\neq 0",
+        "workingOut": "\\( x^2 - 9 \\neq 0 \\)",
         "graphData": null
       },
       {
@@ -2897,12 +2897,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set the denominator to be non-zero.",
-        "workingOut": "x^2 + 2x \\neq 0",
+        "workingOut": "\\( x^2 + 2x \\neq 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise the quadratic expression.",
-        "workingOut": "x(x + 2) \\neq 0",
+        "workingOut": "\\( x(x + 2) \\neq 0 \\)",
         "graphData": null
       },
       {
@@ -2939,12 +2939,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set the denominator expression to not equal zero.",
-        "workingOut": "x^2 - 6x + 8 \\neq 0",
+        "workingOut": "\\( x^2 - 6x + 8 \\neq 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise the quadratic trinomial.",
-        "workingOut": "(x - 2)(x - 4) \\neq 0",
+        "workingOut": "\\( (x - 2)(x - 4) \\neq 0 \\)",
         "graphData": null
       },
       {
@@ -2981,12 +2981,12 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "The quantity under the square root must be non-negative.",
-        "workingOut": "x^2 - 9 \\ge 0",
+        "workingOut": "\\( x^2 - 9 \\ge 0 \\)",
         "graphData": null
       },
       {
         "explanation": "Factorise the difference of squares.",
-        "workingOut": "(x - 3)(x + 3) \\ge 0",
+        "workingOut": "\\( (x - 3)(x + 3) \\ge 0 \\)",
         "graphData": null
       },
       {
