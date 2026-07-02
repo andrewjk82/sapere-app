@@ -188,7 +188,7 @@ export const Y9_CH11F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze gradient and intercept parameters.",
-        "workingOut": "y = 2x + 6 \\implies m = 2, \\quad c = 6"
+        "workingOut": "y = 2x + 6 \\implies m = 2, quad c = 6"
       }
     ],
     "graphData": null
@@ -206,7 +206,7 @@ export const Y9_CH11F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze gradient and intercept parameters.",
-        "workingOut": "y = 2x + 6 \\implies m = 2, \\quad c = 6"
+        "workingOut": "y = 2x + 6 \\implies m = 2, quad c = 6"
       }
     ],
     "graphData": null
@@ -224,7 +224,7 @@ export const Y9_CH11F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze gradient and intercept parameters.",
-        "workingOut": "y = 2x + 6 \\implies m = 2, \\quad c = 6"
+        "workingOut": "y = 2x + 6 \\implies m = 2, quad c = 6"
       }
     ],
     "graphData": null
@@ -242,7 +242,7 @@ export const Y9_CH11F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze gradient and intercept parameters.",
-        "workingOut": "y = 2x + 6 \\implies m = 2, \\quad c = 6"
+        "workingOut": "y = 2x + 6 \\implies m = 2, quad c = 6"
       }
     ],
     "graphData": null
@@ -260,7 +260,7 @@ export const Y9_CH11F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply coordinates into calculations.",
-        "workingOut": "A(2, 4), \\quad B(5, 13)"
+        "workingOut": "A(2, 4), quad B(5, 13)"
       }
     ],
     "graphData": null
@@ -278,7 +278,7 @@ export const Y9_CH11F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply coordinates into calculations.",
-        "workingOut": "A(2, 4), \\quad B(5, 13)"
+        "workingOut": "A(2, 4), quad B(5, 13)"
       }
     ],
     "graphData": null
@@ -296,7 +296,7 @@ export const Y9_CH11F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply coordinates into calculations.",
-        "workingOut": "A(2, 4), \\quad B(5, 13)"
+        "workingOut": "A(2, 4), quad B(5, 13)"
       }
     ],
     "graphData": null

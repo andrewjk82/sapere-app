@@ -25,7 +25,12 @@ export const Y12A_CH3F_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 4, 3, -4],
+        "boundingbox": [
+          -3,
+          4,
+          3,
+          -4
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return x*x*x - 3*x; };\nboard.create('functiongraph', [f, -2.2, 2.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 2], {name: 'A', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 12]}});\nboard.create('point', [1, -2], {name: 'B', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -15]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -56,7 +61,12 @@ export const Y12A_CH3F_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-0.5, 6, 4.5, -2],
+        "boundingbox": [
+          -0.5,
+          6,
+          4.5,
+          -2
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.2,0], [4.2,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return 0.5 * (x-1)*(x-1)*(x-4) + 4; };\nboard.create('functiongraph', [f, 0, 4], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {name: 'C', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [1, 4], {name: 'E', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 12]}});\nboard.create('point', [3, 2], {name: 'D', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.create('point', [4, 4], {name: 'F', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\n// Note: Adjustment of F as a boundary point\nboard.unsuspendUpdate();"
       }
     }
@@ -83,7 +93,12 @@ export const Y12A_CH3F_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 5, 4, -4],
+        "boundingbox": [
+          -3,
+          5,
+          4,
+          -4
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return 3 - 0.2*x*x*x - 0.5*x*x; };\nboard.create('functiongraph', [f, -2.5, 3], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 3], {name: 'G', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 12]}});\nboard.create('point', [1, 1.5], {name: 'H', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -110,7 +125,12 @@ export const Y12A_CH3F_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-4, 6, 4, -4],
+        "boundingbox": [
+          -4,
+          6,
+          4,
+          -4
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return 0.25*x*x*x*x + 0.5*x*x*x - 2*x; };\nboard.create('functiongraph', [f, -3.2, 2.1], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1.5, 2.5], {name: 'I', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [1, -1.25], {name: 'J', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -15]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -134,14 +154,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare the turning point value with the boundary values to state the global extrema.",
-        "workingOut": "-1 < 8 \\implies \\text{global min: } -1 \\text{ at } x=0, \\, \\text{global max: } 8 \\text{ at } x = \\pm 3"
+        "workingOut": "-1 < 8 \\implies \\text{global min: } -1 \\text{ at } x=0, \\, text{global max: } 8 \\text{ at } x = \\pm 3"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-4, 10, 4, -3],
+        "boundingbox": [
+          -4,
+          10,
+          4,
+          -3
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.8,0], [3.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2], [0,9]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return x*x - 1; };\nboard.create('functiongraph', [f, -3, 3], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -1], {name: 'Min(0,-1)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [-3, 8], {name: '(-3,8)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [3, 8], {name: '(3,8)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -165,14 +190,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Since the function is linear with a negative gradient, it is strictly decreasing. The extrema must occur at the boundary endpoints.",
-        "workingOut": "\\text{global min: } -2 \\text{ at } x = 4, \\, \\text{global max: } 8 \\text{ at } x = -1"
+        "workingOut": "\\text{global min: } -2 \\text{ at } x = 4, \\, text{global max: } 8 \\text{ at } x = -1"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 10, 5, -4],
+        "boundingbox": [
+          -2,
+          10,
+          5,
+          -4
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.8,0], [4.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3], [0,9]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return 6 - 2*x; };\nboard.create('functiongraph', [f, -1, 4], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 8], {name: 'Max(-1,8)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [4, -2], {name: 'Min(4,-2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -200,14 +230,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "State the global extrema.",
-        "workingOut": "\\text{global min: } 0 \\text{ at } x = -5, \\, 5 \\quad \\text{and} \\quad \\text{global max: } 5 \\text{ at } x = 0"
+        "workingOut": "\\text{global min: } 0 \\text{ at } x = -5, 5 \\quad \\text{and} \\quad \\text{global max: } 5 \\text{ at } x = 0"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-6, 7, 6, -2],
+        "boundingbox": [
+          -6,
+          7,
+          6,
+          -2
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.8,0], [5.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1], [0,6]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return Math.sqrt(25 - x*x); };\nboard.create('functiongraph', [f, -5, 5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {name: 'Max(0,5)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-5, 0], {name: '(-5,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [5, 0], {name: '(5,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -231,14 +266,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare the boundary values to find the global maximum.",
-        "workingOut": "4 > 3 \\implies \\text{global max: } 4 \\text{ at } x = -2. \\, \\text{Global min is } 0 \\text{ at } x = 2."
+        "workingOut": "4 > 3 \\implies \\text{global max: } 4 \\text{ at } x = -2. \\, text{Global min is } 0 \\text{ at } x = 2."
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 6, 6, -2],
+        "boundingbox": [
+          -3,
+          6,
+          6,
+          -2
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.8,0], [5.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1], [0,5]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return Math.abs(x - 2); };\nboard.create('functiongraph', [f, -2, 5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {name: 'Min(2,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [-2, 4], {name: '(-2,4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [5, 3], {name: '(5,3)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -262,14 +302,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Since the square root function is strictly increasing, the global minimum is at the left boundary and the global maximum is at the right boundary.",
-        "workingOut": "\\text{global min: } 0 \\text{ at } x = 0, \\, \\text{global max: } 6 \\text{ at } x = 18"
+        "workingOut": "\\text{global min: } 0 \\text{ at } x = 0, \\, text{global max: } 6 \\text{ at } x = 18"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 8, 20, -2],
+        "boundingbox": [
+          -2,
+          8,
+          20,
+          -2
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.8,0], [19.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1], [0,7]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return Math.sqrt(2*x); };\nboard.create('functiongraph', [f, 0, 18], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {name: 'Min(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [18, 6], {name: 'Max(18,6)', size: 3, color: 'red', label: {autoPosition: false, offset: [-20, 15]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -293,14 +338,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Since \\( y = \\frac{4}{x} \\) is decreasing on negative values, compare endpoints to identify global extrema.",
-        "workingOut": "-2 < -1 \\implies \\text{global min: } -2 \\text{ at } x = -2, \\, \\text{global max: } -1 \\text{ at } x = -4"
+        "workingOut": "-2 < -1 \\implies \\text{global min: } -2 \\text{ at } x = -2, \\, text{global max: } -1 \\text{ at } x = -4"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-5, 1, 1, -4],
+        "boundingbox": [
+          -5,
+          1,
+          1,
+          -4
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.8,0], [0.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.8], [0,0.8]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return 4/x; };\nboard.create('functiongraph', [f, -4, -2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-4, -1], {name: 'Max(-4,-1)', size: 3, color: 'red', label: {autoPosition: false, offset: [-35, 15]}});\nboard.create('point', [-2, -2], {name: 'Min(-2,-2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -320,7 +370,7 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Analyze the range of the function in the second domain \\( -3 \\le x < 2 \\).",
-        "workingOut": "\\text{For } x = -3, \\, y = -2. \\, \\text{As } x \\to 2, \\, y \\to 3. \\text{ Thus, } y \\text{ ranges from } -2 \\text{ to } 3."
+        "workingOut": "\\text{For } x = -3, y = -2. \\, text{As } x \\to 2, y \\to 3. \\text{ Thus, } y \\text{ ranges from } -2 \\text{ to } 3."
       },
       {
         "explanation": "Analyze the range of the function in the third domain \\( x \\ge 2 \\).",
@@ -335,7 +385,12 @@ export const Y12A_CH3F_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-5, 5, 4, -4],
+        "boundingbox": [
+          -5,
+          5,
+          4,
+          -4
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.8,0], [3.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('segment', [[-5,-2], [-3,-2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('segment', [[-3,-2], [2,3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('segment', [[2,3], [4,3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, -2], {size: 2, color: 'blue', name: '', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [2, 3], {size: 2, color: 'blue', name: '', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -363,14 +418,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare turning points and boundary values to identify absolute extrema.",
-        "workingOut": "\\text{Values are } y(3) = -4, \\, y(0) = 5, \\, y(7) = 12 \\implies \\text{min: } -4 \\text{ at } x=3, \\, \\text{max: } 12 \\text{ at } x=7"
+        "workingOut": "\\text{Values are } y(3) = -4, y(0) = 5, y(7) = 12 \\implies \\text{min: } -4 \\text{ at } x=3, \\, text{max: } 12 \\text{ at } x=7"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 14, 8, -6],
+        "boundingbox": [
+          -2,
+          14,
+          8,
+          -6
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [7.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5], [0,13]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return x*x - 6*x + 5; };\nboard.create('functiongraph', [f, 0, 7], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, -4], {name: 'Min(3,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [0, 5], {name: '(0,5)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [7, 12], {name: 'Max(7,12)', size: 3, color: 'red', label: {autoPosition: false, offset: [-35, 15]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -386,7 +446,7 @@ export const Y12A_CH3F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Differentiate the cubic function to find stationary points.",
-        "workingOut": "y' = 3x^2 - 6x = 3x(x - 2) = 0 \\implies x = 0, \\, 2"
+        "workingOut": "y' = 3x^2 - 6x = 3x(x - 2) = 0 \\implies x = 0, 2"
       },
       {
         "explanation": "Evaluate the function at the turning points.",
@@ -398,14 +458,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare all values to find the absolute minimum and maximum.",
-        "workingOut": "\\text{Values: } {-18, -2, 2, 2} \\implies \\text{min: } -18 \\text{ at } x=-2, \\, \\text{max: } 2 \\text{ at } x=0, 3"
+        "workingOut": "\\text{Values: } {-18, -2, 2, 2} \\implies \\text{min: } -18 \\text{ at } x=-2, \\, text{max: } 2 \\text{ at } x=0, 3"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 6, 4, -22],
+        "boundingbox": [
+          -3,
+          6,
+          4,
+          -22
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-20], [0,4]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return x*x*x - 3*x*x + 2; };\nboard.create('functiongraph', [f, -2, 3], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {name: 'Max(0,2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [2, -2], {name: 'Min(2,-2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [-2, -18], {name: '(-2,-18)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [3, 2], {name: '(3,2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -433,14 +498,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare values to identify the absolute minimum and maximum.",
-        "workingOut": "\\text{Values: } {0, 2, 0, 2} \\implies \\text{min: } 0 \\text{ at } x=-1, 0.5, \\, \\text{max: } 2 \\text{ at } x=-0.5, 1"
+        "workingOut": "\\text{Values: } {0, 2, 0, 2} \\implies \\text{min: } 0 \\text{ at } x=-1, 0.5, \\, text{max: } 2 \\text{ at } x=-0.5, 1"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-1.5, 3, 1.5, -1],
+        "boundingbox": [
+          -1.5,
+          3,
+          1.5,
+          -1
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.3,0], [1.3,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.8], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return 4*x*x*x - 3*x + 1; };\nboard.create('functiongraph', [f, -1, 1], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-0.5, 2], {name: 'Max(-0.5,2)', size: 3, color: 'red', label: {autoPosition: false, offset: [-20, 15]}});\nboard.create('point', [0.5, 0], {name: 'Min(0.5,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-1, 0], {name: '(-1,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [1, 2], {name: '(1,2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -468,14 +538,19 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Identify absolute minimum and absolute maximum.",
-        "workingOut": "\\text{global min: } 0 \\text{ at } x=0, \\, \\text{global max: } 2 \\text{ at } x=2"
+        "workingOut": "\\text{global min: } 0 \\text{ at } x=0, \\, text{global max: } 2 \\text{ at } x=2"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-1, 3, 3, -1],
+        "boundingbox": [
+          -1,
+          3,
+          3,
+          -1
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.8,0], [2.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.8], [0,2.8]], {strokeColor: 'black', strokeWidth: 1});\nvar f = function(x) { return x*x*x - 3*x*x + 3*x; };\nboard.create('functiongraph', [f, 0, 2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 1], {name: 'Inflection(1,1)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [0, 0], {name: 'Min(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, 2], {name: 'Max(2,2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -491,7 +566,7 @@ export const Y12A_CH3F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Differentiate the function to locate turning points.",
-        "workingOut": "y' = 4x^3 - 4x = 4x(x - 1)(x + 1) = 0 \\implies x = 0, \\, \pm 1"
+        "workingOut": "y' = 4x^3 - 4x = 4x(x - 1)(x + 1) = 0 \\implies x = 0, pm 1"
       },
       {
         "explanation": "Identify which turning points lie inside the domain \\( 0.5 \\le x \\le 2 \\).",
@@ -507,7 +582,7 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare turning points and boundaries to state the global maximum and minimum.",
-        "workingOut": "\\text{global min: } 2 \\text{ at } x=1, \\, \\text{global max: } 11 \\text{ at } x=2"
+        "workingOut": "\\text{global min: } 2 \\text{ at } x=1, \\, text{global max: } 11 \\text{ at } x=2"
       }
     ]
   },
@@ -522,7 +597,7 @@ export const Y12A_CH3F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find critical points of the function.",
-        "workingOut": "y' = 4x(x - 1)(x + 1) = 0 \\implies x = 0, \\, \pm 1"
+        "workingOut": "y' = 4x(x - 1)(x + 1) = 0 \\implies x = 0, pm 1"
       },
       {
         "explanation": "Identify the critical points inside \\( -2 \\le x \\le 0.5 \\).",
@@ -538,7 +613,7 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare turning points and boundaries to identify the global extrema.",
-        "workingOut": "\\text{Values: } {2, 3, 11, 2.5625} \\implies \\text{global min: } 2 \\text{ at } x=-1, \\, \\text{global max: } 11 \\text{ at } x=-2"
+        "workingOut": "\\text{Values: } {2, 3, 11, 2.5625} \\implies \\text{global min: } 2 \\text{ at } x=-1, \\, text{global max: } 11 \\text{ at } x=-2"
       }
     ]
   },
@@ -565,7 +640,7 @@ export const Y12A_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Compare turning point with boundaries to state the global maximum and minimum.",
-        "workingOut": "\\text{global min: } 2.5625 \\text{ at } x = \\pm 0.5, \\, \\text{global max: } 3 \\text{ at } x=0"
+        "workingOut": "\\text{global min: } 2.5625 \\text{ at } x = \\pm 0.5, \\, text{global max: } 3 \\text{ at } x=0"
       }
     ]
   }

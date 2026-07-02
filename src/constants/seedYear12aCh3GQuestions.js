@@ -396,23 +396,75 @@ export const Y12A_CH3G_QUESTIONS = [
       "geometry": {
         "width": 300,
         "points": {
-          "A": [0, 30],
-          "B": [0, 15],
-          "C": [0, 0],
-          "D": [20, 0],
-          "E": [10, 15]
+          "A": [
+            0,
+            30
+          ],
+          "B": [
+            0,
+            15
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            20,
+            0
+          ],
+          "E": [
+            10,
+            15
+          ]
         },
         "segments": [
-          { "from": "A", "to": "C" },
-          { "from": "C", "to": "D" },
-          { "from": "B", "to": "E" },
-          { "from": "A", "to": "D", "dashed": true }
+          {
+            "from": "A",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "B",
+            "to": "E"
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "dashed": true
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "x" },
-          { "between": ["B", "C"], "text": "x" },
-          { "between": ["B", "E"], "text": "y" },
-          { "between": ["C", "D"], "text": "2y" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "B",
+              "E"
+            ],
+            "text": "y"
+          },
+          {
+            "between": [
+              "C",
+              "D"
+            ],
+            "text": "2y"
+          }
         ]
       }
     }
@@ -476,18 +528,100 @@ export const Y12A_CH3G_QUESTIONS = [
       "geometry": {
         "width": 150,
         "points": {
-          "A": [0, 0], "B": [1.5, 0], "C": [3, 0],
-          "D": [0, 1.33], "E": [1.5, 1.33], "F": [3, 1.33],
-          "G": [0, 2.67], "H": [1.5, 2.67], "I": [3, 2.67],
-          "J": [0, 4], "K": [1.5, 4], "L": [3, 4]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            1.5,
+            0
+          ],
+          "C": [
+            3,
+            0
+          ],
+          "D": [
+            0,
+            1.33
+          ],
+          "E": [
+            1.5,
+            1.33
+          ],
+          "F": [
+            3,
+            1.33
+          ],
+          "G": [
+            0,
+            2.67
+          ],
+          "H": [
+            1.5,
+            2.67
+          ],
+          "I": [
+            3,
+            2.67
+          ],
+          "J": [
+            0,
+            4
+          ],
+          "K": [
+            1.5,
+            4
+          ],
+          "L": [
+            3,
+            4
+          ]
         },
         "segments": [
-          { "from": "A", "to": "J" }, { "from": "B", "to": "K" }, { "from": "C", "to": "L" },
-          { "from": "A", "to": "C" }, { "from": "D", "to": "F" }, { "from": "G", "to": "I" }, { "from": "J", "to": "L" }
+          {
+            "from": "A",
+            "to": "J"
+          },
+          {
+            "from": "B",
+            "to": "K"
+          },
+          {
+            "from": "C",
+            "to": "L"
+          },
+          {
+            "from": "A",
+            "to": "C"
+          },
+          {
+            "from": "D",
+            "to": "F"
+          },
+          {
+            "from": "G",
+            "to": "I"
+          },
+          {
+            "from": "J",
+            "to": "L"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "J"], "text": "h" },
-          { "between": ["J", "L"], "text": "w" }
+          {
+            "between": [
+              "A",
+              "J"
+            ],
+            "text": "h"
+          },
+          {
+            "between": [
+              "J",
+              "L"
+            ],
+            "text": "w"
+          }
         ]
       }
     }
@@ -534,7 +668,7 @@ export const Y12A_CH3G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Divide each segment length by 4 to find the side length of the squares.",
-        "workingOut": "\\text{First side: } \\frac{x}{4}, \\quad \\text{Second side: } \\frac{16 - x}{4}"
+        "workingOut": "\\text{First side: } \\frac{x}{4}, quad \\text{Second side: } \\frac{16 - x}{4}"
       },
       {
         "explanation": "Calculate the combined area.",
@@ -690,7 +824,7 @@ export const Y12A_CH3G_QUESTIONS = [
       },
       {
         "explanation": "Derive the volume formula.",
-        "workingOut": "V = \\pi r^2 h = \\pi r^2 \\left(\\frac{12 - r^2}{r}\\right) = \\pi r(12 - r^2) = 12\\pi r - \pi r^3"
+        "workingOut": "V = \\pi r^2 h = \\pi r^2 \\left(\\frac{12 - r^2}{r}\\right) = \\pi r(12 - r^2) = 12\\pi r - pi r^3"
       },
       {
         "explanation": "Find the derivative of \\( V \\) and set it to zero.",
@@ -879,18 +1013,119 @@ export const Y12A_CH3G_QUESTIONS = [
       "geometry": {
         "width": 300,
         "points": {
-          "A": [0, 0, 0], "B": [9, 0, 0], "C": [9, 3, 0], "D": [0, 3, 0],
-          "E": [0, 0, 6], "F": [9, 0, 6], "G": [9, 3, 6], "H": [0, 3, 6]
+          "A": [
+            0,
+            0,
+            0
+          ],
+          "B": [
+            9,
+            0,
+            0
+          ],
+          "C": [
+            9,
+            3,
+            0
+          ],
+          "D": [
+            0,
+            3,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            6
+          ],
+          "F": [
+            9,
+            0,
+            6
+          ],
+          "G": [
+            9,
+            3,
+            6
+          ],
+          "H": [
+            0,
+            3,
+            6
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B" }, { "from": "B", "to": "C" }, { "from": "C", "to": "D" }, { "from": "D", "to": "A" },
-          { "from": "E", "to": "F" }, { "from": "F", "to": "G" }, { "from": "G", "to": "H" }, { "from": "H", "to": "E" },
-          { "from": "A", "to": "E" }, { "from": "B", "to": "F" }, { "from": "C", "to": "G" }, { "from": "D", "to": "H" }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "G"
+          },
+          {
+            "from": "G",
+            "to": "H"
+          },
+          {
+            "from": "H",
+            "to": "E"
+          },
+          {
+            "from": "A",
+            "to": "E"
+          },
+          {
+            "from": "B",
+            "to": "F"
+          },
+          {
+            "from": "C",
+            "to": "G"
+          },
+          {
+            "from": "D",
+            "to": "H"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "3x" },
-          { "between": ["B", "C"], "text": "x" },
-          { "between": ["C", "G"], "text": "h" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "3x"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "C",
+              "G"
+            ],
+            "text": "h"
+          }
         ]
       }
     }
@@ -948,24 +1183,84 @@ export const Y12A_CH3G_QUESTIONS = [
       "geometry": {
         "width": 300,
         "points": {
-          "O": [0,0],
-          "A": [-17.32, 24.49], "B": [17.32, 24.49],
-          "C": [17.32, -24.49], "D": [-17.32, -24.49]
+          "O": [
+            0,
+            0
+          ],
+          "A": [
+            -17.32,
+            24.49
+          ],
+          "B": [
+            17.32,
+            24.49
+          ],
+          "C": [
+            17.32,
+            -24.49
+          ],
+          "D": [
+            -17.32,
+            -24.49
+          ]
         },
         "circles": [
-          { "center": "O", "through": "B" }
+          {
+            "center": "O",
+            "through": "B"
+          }
         ],
         "segments": [
-          { "from": "A", "to": "B" }, { "from": "B", "to": "C" }, { "from": "C", "to": "D" }, { "from": "D", "to": "A" },
-          { "from": "B", "to": "D", "dashed": true }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A"
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "dashed": true
+          }
         ],
         "sideLabels": [
-          { "between": ["D", "C"], "text": "w" },
-          { "between": ["C", "B"], "text": "d" },
-          { "between": ["B", "D"], "text": "60 cm" }
+          {
+            "between": [
+              "D",
+              "C"
+            ],
+            "text": "w"
+          },
+          {
+            "between": [
+              "C",
+              "B"
+            ],
+            "text": "d"
+          },
+          {
+            "between": [
+              "B",
+              "D"
+            ],
+            "text": "60 cm"
+          }
         ],
         "angles": [
-          { "at": "C", "right": true }
+          {
+            "at": "C",
+            "right": true
+          }
         ]
       }
     }
@@ -1026,7 +1321,7 @@ export const Y12A_CH3G_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation for base dimensions \\( x \\) and \\( y \\).",
-        "workingOut": "t^2 - 24t + 108 = 0 \\implies (t - 18)(t - 6) = 0 \\implies x = 18, \\, y = 6"
+        "workingOut": "t^2 - 24t + 108 = 0 \\implies (t - 18)(t - 6) = 0 \\implies x = 18, y = 6"
       }
     ]
   },
@@ -1089,22 +1384,99 @@ export const Y12A_CH3G_QUESTIONS = [
       "geometry": {
         "width": 300,
         "points": {
-          "A": [0, 30],
-          "S": [0, 0],
-          "D": [-9, 0], "E": [9, 0],
-          "B": [-6, 10], "C": [6, 10],
-          "F": [-6, 0], "G": [6, 0]
+          "A": [
+            0,
+            30
+          ],
+          "S": [
+            0,
+            0
+          ],
+          "D": [
+            -9,
+            0
+          ],
+          "E": [
+            9,
+            0
+          ],
+          "B": [
+            -6,
+            10
+          ],
+          "C": [
+            6,
+            10
+          ],
+          "F": [
+            -6,
+            0
+          ],
+          "G": [
+            6,
+            0
+          ]
         },
         "segments": [
-          { "from": "A", "to": "D" }, { "from": "A", "to": "E" }, { "from": "D", "to": "E" },
-          { "from": "B", "to": "C" }, { "from": "B", "to": "F" }, { "from": "C", "to": "G" },
-          { "from": "A", "to": "S", "dashed": true }
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "A",
+            "to": "E"
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "B",
+            "to": "F"
+          },
+          {
+            "from": "C",
+            "to": "G"
+          },
+          {
+            "from": "A",
+            "to": "S",
+            "dashed": true
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "S"], "text": "30 cm" },
-          { "between": ["S", "E"], "text": "9 cm" },
-          { "between": ["S", "G"], "text": "r" },
-          { "between": ["G", "C"], "text": "h" }
+          {
+            "between": [
+              "A",
+              "S"
+            ],
+            "text": "30 cm"
+          },
+          {
+            "between": [
+              "S",
+              "E"
+            ],
+            "text": "9 cm"
+          },
+          {
+            "between": [
+              "S",
+              "G"
+            ],
+            "text": "r"
+          },
+          {
+            "between": [
+              "G",
+              "C"
+            ],
+            "text": "h"
+          }
         ]
       }
     }
@@ -1162,22 +1534,82 @@ export const Y12A_CH3G_QUESTIONS = [
       "geometry": {
         "width": 300,
         "points": {
-          "S": [0,0],
-          "U": [0, 6],
-          "T": [12, 0],
-          "R": [0, 3],
-          "P": [8, 0],
-          "Q": [8, 3]
+          "S": [
+            0,
+            0
+          ],
+          "U": [
+            0,
+            6
+          ],
+          "T": [
+            12,
+            0
+          ],
+          "R": [
+            0,
+            3
+          ],
+          "P": [
+            8,
+            0
+          ],
+          "Q": [
+            8,
+            3
+          ]
         },
         "segments": [
-          { "from": "S", "to": "U" }, { "from": "S", "to": "T" }, { "from": "U", "to": "T" },
-          { "from": "R", "to": "Q" }, { "from": "P", "to": "Q" }
+          {
+            "from": "S",
+            "to": "U"
+          },
+          {
+            "from": "S",
+            "to": "T"
+          },
+          {
+            "from": "U",
+            "to": "T"
+          },
+          {
+            "from": "R",
+            "to": "Q"
+          },
+          {
+            "from": "P",
+            "to": "Q"
+          }
         ],
         "sideLabels": [
-          { "between": ["S", "R"], "text": "3" },
-          { "between": ["R", "U"], "text": "y" },
-          { "between": ["S", "P"], "text": "8" },
-          { "between": ["P", "T"], "text": "x" }
+          {
+            "between": [
+              "S",
+              "R"
+            ],
+            "text": "3"
+          },
+          {
+            "between": [
+              "R",
+              "U"
+            ],
+            "text": "y"
+          },
+          {
+            "between": [
+              "S",
+              "P"
+            ],
+            "text": "8"
+          },
+          {
+            "between": [
+              "P",
+              "T"
+            ],
+            "text": "x"
+          }
         ]
       }
     }
@@ -1224,7 +1656,7 @@ export const Y12A_CH3G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Express the dimensions of the printed area after accounting for margins.",
-        "workingOut": "\\text{Width: } x - 2, \\quad \\text{Height: } y - 4 \\implies (x - 2)(y - 4) = 50 \\implies y = 4 + \\frac{50}{x - 2}"
+        "workingOut": "\\text{Width: } x - 2, quad \\text{Height: } y - 4 \\implies (x - 2)(y - 4) = 50 \\implies y = 4 + \\frac{50}{x - 2}"
       },
       {
         "explanation": "Construct the total page area formula.",
@@ -1345,22 +1777,65 @@ export const Y12A_CH3G_QUESTIONS = [
       "geometry": {
         "width": 300,
         "points": {
-          "Boat": [0, 8],
-          "A": [0, 0],
-          "X": [6, 0],
-          "B": [15, 0]
+          "Boat": [
+            0,
+            8
+          ],
+          "A": [
+            0,
+            0
+          ],
+          "X": [
+            6,
+            0
+          ],
+          "B": [
+            15,
+            0
+          ]
         },
         "segments": [
-          { "from": "Boat", "to": "A" }, { "from": "A", "to": "B" },
-          { "from": "Boat", "to": "X" }
+          {
+            "from": "Boat",
+            "to": "A"
+          },
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "Boat",
+            "to": "X"
+          }
         ],
         "sideLabels": [
-          { "between": ["Boat", "A"], "text": "8 km" },
-          { "between": ["A", "X"], "text": "x" },
-          { "between": ["X", "B"], "text": "15 - x" }
+          {
+            "between": [
+              "Boat",
+              "A"
+            ],
+            "text": "8 km"
+          },
+          {
+            "between": [
+              "A",
+              "X"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "X",
+              "B"
+            ],
+            "text": "15 - x"
+          }
         ],
         "angles": [
-          { "at": "A", "right": true }
+          {
+            "at": "A",
+            "right": true
+          }
         ]
       }
     }

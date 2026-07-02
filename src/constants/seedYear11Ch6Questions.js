@@ -763,7 +763,7 @@ export const Y11_CH6B_QUESTIONS = [
       },
       {
         "explanation": "Express the two segments of the road in terms of \\(h\\) and the cotangents of the angles of elevation.",
-        "workingOut": "d_1 = \\frac{h}{\\tan 57^{\\circ}}, \\quad d_2 = \\frac{h}{\\tan 33^{\\circ}}",
+        "workingOut": "d_1 = \\frac{h}{\\tan 57^{\\circ}}, quad d_2 = \\frac{h}{\\tan 33^{\\circ}}",
         "graphData": null
       },
       {
@@ -773,7 +773,7 @@ export const Y11_CH6B_QUESTIONS = [
       },
       {
         "explanation": "Evaluate the terms inside the parentheses.",
-        "workingOut": "\\frac{1}{\\tan 57^{\\circ}} \\approx 0.6494, \\quad \\frac{1}{\\tan 33^{\\circ}} \\approx 1.5399",
+        "workingOut": "\\frac{1}{\\tan 57^{\\circ}} \\approx 0.6494, quad \\frac{1}{\\tan 33^{\\circ}} \\approx 1.5399",
         "graphData": null
       },
       {

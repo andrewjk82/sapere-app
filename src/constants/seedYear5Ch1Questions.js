@@ -3641,7 +3641,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the thousands digit and the hundreds digit.",
-        "workingOut": "\\(\\text{Thousands digit} = 8, \\text{Hundreds digit} = 2\\)",
+        "workingOut": "\\(\\text{Thousands digit} = 8, text{Hundreds digit} = 2\\)",
         "graphData": null
       },
       {
@@ -3675,7 +3675,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the thousands digit and the hundreds digit.",
-        "workingOut": "\\(\\text{Thousands digit} = 3, \\text{Hundreds digit} = 5\\)",
+        "workingOut": "\\(\\text{Thousands digit} = 3, text{Hundreds digit} = 5\\)",
         "graphData": null
       },
       {
@@ -3709,7 +3709,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the thousands digit and the hundreds digit.",
-        "workingOut": "\\(\\text{Thousands digit} = 3, \\text{Hundreds digit} = 4\\)",
+        "workingOut": "\\(\\text{Thousands digit} = 3, text{Hundreds digit} = 4\\)",
         "graphData": null
       },
       {
@@ -3743,7 +3743,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the thousands digit and the hundreds digit.",
-        "workingOut": "\\(\\text{Thousands digit} = 7, \\text{Hundreds digit} = 5\\)",
+        "workingOut": "\\(\\text{Thousands digit} = 7, text{Hundreds digit} = 5\\)",
         "graphData": null
       },
       {
@@ -4314,4 +4314,3 @@ export const Y5_CH1_QUESTIONS = [
     "graphData": null
   }
 ];
-

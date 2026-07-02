@@ -77,16 +77,16 @@ export const FORTST_2020_QUESTIONS = [
     "source": "Fort Street 2020 Trial Q3",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "What is the solution to the equation $\\cos 2x = \\dfrac{1}{2}$ in the domain $[-\\pi, \\pi]$?",
+    "q": "What is the solution to the equation $\\cos 2x = \\dfrac{1}{2}$ in the domain $[-\\pi, pi]$?",
     "a": "0",
     "opts": [
-      "$x = \\dfrac{\\pi}{6}, \\dfrac{5\\pi}{6}, \\dfrac{-5\\pi}{6}, \\dfrac{-\\pi}{6}$",
-      "$x = \\dfrac{\\pi}{12}, \\dfrac{11\\pi}{12}, \\dfrac{-11\\pi}{12}, \\dfrac{-\\pi}{12}$",
-      "$x = \\dfrac{\\pi}{6}, \\dfrac{5\\pi}{6}, \\dfrac{7\\pi}{6}, \\dfrac{11\\pi}{6}$",
-      "$x = \\dfrac{\\pi}{12}, \\dfrac{11\\pi}{12}, \\dfrac{13\\pi}{12}, \\dfrac{23\\pi}{12}$"
+      "$x = \\dfrac{\\pi}{6}, dfrac{5\\pi}{6}, dfrac{-5\\pi}{6}, dfrac{-\\pi}{6}$",
+      "$x = \\dfrac{\\pi}{12}, dfrac{11\\pi}{12}, dfrac{-11\\pi}{12}, dfrac{-\\pi}{12}$",
+      "$x = \\dfrac{\\pi}{6}, dfrac{5\\pi}{6}, dfrac{7\\pi}{6}, dfrac{11\\pi}{6}$",
+      "$x = \\dfrac{\\pi}{12}, dfrac{11\\pi}{12}, dfrac{13\\pi}{12}, dfrac{23\\pi}{12}$"
     ],
     "h": "Expand the domain: if $-\\pi \\le x \\le \\pi$ then $-2\\pi \\le 2x \\le 2\\pi$. Solve for $2x$ first.",
-    "s": "Let $u = 2x$, $-2\\pi \\le u \\le 2\\pi$. Reference angle $\\frac{\\pi}{3}$, cosine positive in Q1/Q4: $u = \\pm\\frac{\\pi}{3}, \\pm\\frac{5\\pi}{3}$. Then $x = \\frac{u}{2} = \\pm\\frac{\\pi}{6}, \\pm\\frac{5\\pi}{6}$.",
+    "s": "Let $u = 2x$, $-2\\pi \\le u \\le 2\\pi$. Reference angle $\\frac{\\pi}{3}$, cosine positive in Q1/Q4: $u = \\pm\\frac{\\pi}{3}, pm\\frac{5\\pi}{3}$. Then $x = \\frac{u}{2} = \\pm\\frac{\\pi}{6}, pm\\frac{5\\pi}{6}$.",
     "solutionSteps": [
       {
         "explanation": "Substitute \\(u = 2x\\) and expand the domain by multiplying the bounds by \\(2\\).",
@@ -98,11 +98,11 @@ export const FORTST_2020_QUESTIONS = [
       },
       {
         "explanation": "Add \\(\\pm 2\\pi\\) to find all values within \\([-2\\pi, 2\\pi]\\).",
-        "workingOut": "u = \\frac{\\pi}{3}, -\\frac{\\pi}{3}, \\frac{5\\pi}{3}, -\\frac{5\\pi}{3}"
+        "workingOut": "u = \\frac{\\pi}{3}, -\\frac{\\pi}{3}, frac{5\\pi}{3}, -\\frac{5\\pi}{3}"
       },
       {
         "explanation": "Divide every value by \\(2\\) to recover \\(x\\).",
-        "workingOut": "x = \\frac{\\pi}{6}, -\\frac{\\pi}{6}, \\frac{5\\pi}{6}, -\\frac{5\\pi}{6}"
+        "workingOut": "x = \\frac{\\pi}{6}, -\\frac{\\pi}{6}, frac{5\\pi}{6}, -\\frac{5\\pi}{6}"
       }
     ]
   },
@@ -174,13 +174,13 @@ export const FORTST_2020_QUESTIONS = [
     "q": "What is the domain and range of the function $y = \\dfrac{1}{\\sqrt{x - 9}}$?",
     "a": "1",
     "opts": [
-      "Domain: $[9, \\infty)$, Range: $(0, \\infty)$",
-      "Domain: $(9, \\infty)$, Range: $(0, \\infty)$",
-      "Domain: $[-\\infty, \\infty]$, Range: $[-\\infty, \\infty]$",
+      "Domain: $[9, infty)$, Range: $(0, infty)$",
+      "Domain: $(9, infty)$, Range: $(0, infty)$",
+      "Domain: $[-\\infty, infty]$, Range: $[-\\infty, infty]$",
       "Domain: $[-3, 3]$, Range: $(-\\infty, 0)$"
     ],
     "h": "The square root needs a non-negative argument; the denominator cannot be zero, so $x - 9 > 0$ strictly.",
-    "s": "For $\\frac{1}{\\sqrt{x-9}}$ we need $x - 9 > 0$, i.e. $x > 9$, so the domain is $(9, \\infty)$. The output is always positive, giving range $(0, \\infty)$.",
+    "s": "For $\\frac{1}{\\sqrt{x-9}}$ we need $x - 9 > 0$, i.e. $x > 9$, so the domain is $(9, infty)$. The output is always positive, giving range $(0, infty)$.",
     "solutionSteps": [
       {
         "explanation": "The square root requires its argument to be non-negative, and since it is in the denominator it cannot be zero. So \\(x - 9 > 0\\) strictly.",
@@ -188,11 +188,11 @@ export const FORTST_2020_QUESTIONS = [
       },
       {
         "explanation": "State the domain in interval notation (open at \\(9\\)).",
-        "workingOut": "\\text{Domain} = (9, \\infty)"
+        "workingOut": "\\text{Domain} = (9, infty)"
       },
       {
         "explanation": "For all \\(x > 9\\), \\(\\sqrt{x-9} > 0\\), so \\(\\frac{1}{\\sqrt{x-9}}\\) is always positive and can take any positive value.",
-        "workingOut": "\\text{Range} = (0, \\infty)"
+        "workingOut": "\\text{Range} = (0, infty)"
       }
     ]
   },
@@ -906,7 +906,7 @@ export const FORTST_2020_QUESTIONS = [
       },
       {
         "explanation": "Read off the centre and radius from the standard form \\((x-h)^2 + (y-k)^2 = r^2\\).",
-        "workingOut": "\\text{Centre } (-2, 5), \\quad r = \\sqrt{13}"
+        "workingOut": "\\text{Centre } (-2, 5), quad r = \\sqrt{13}"
       }
     ]
   },
@@ -1002,11 +1002,11 @@ export const FORTST_2020_QUESTIONS = [
       },
       {
         "explanation": "At \\(x = 2\\), \\(f''(2) = 0\\), so the test is inconclusive. Use a concavity table around \\(x = 2\\).",
-        "workingOut": "f''(1.5) = -9 < 0, \\quad f''(2.5) = 15 > 0"
+        "workingOut": "f''(1.5) = -9 < 0, quad f''(2.5) = 15 > 0"
       },
       {
         "explanation": "Since concavity changes and the tangent is horizontal, \\((2, 0)\\) is a horizontal point of inflexion.",
-        "workingOut": "(-1, -27)\\text{ min}, \\quad (2, 0)\\text{ horizontal inflexion}"
+        "workingOut": "(-1, -27)\\text{ min}, quad (2, 0)\\text{ horizontal inflexion}"
       }
     ]
   },
@@ -1030,7 +1030,7 @@ export const FORTST_2020_QUESTIONS = [
       },
       {
         "explanation": "We already established \\((2, 0)\\) is a horizontal point of inflexion. Test \\(x = 0\\) for a change in concavity.",
-        "workingOut": "f''(-0.5) = 15 > 0, \\quad f''(0.5) = -9 < 0"
+        "workingOut": "f''(-0.5) = 15 > 0, quad f''(0.5) = -9 < 0"
       },
       {
         "explanation": "Concavity changes at \\(x = 0\\), so it is a point of inflexion; find its \\(y\\)-value.",
@@ -1125,7 +1125,7 @@ export const FORTST_2020_QUESTIONS = [
     "q": "Sketch the graph of $y = f\\!\\left(2\\left(x - \\dfrac{1}{4}\\right)\\right)$, showing the coordinates of $x$-intercepts, stationary points and inflection points.",
     "a": "The graph of part (e) dilated horizontally by $\\frac{1}{2}$ and shifted $\\frac{1}{4}$ right: $x$-intercepts $\\left(-\\frac{3}{4},0\\right)$ and $\\left(\\frac{5}{4},0\\right)$, minimum $\\left(-\\frac{1}{4},-27\\right)$, inflections $\\left(\\frac{1}{4},-16\\right)$ and $\\left(\\frac{5}{4},0\\right)$.",
     "opts": [],
-    "h": "Each feature point $(x_0, y_0)$ maps to $\\left(\\frac{x_0}{2} + \\frac{1}{4},\\ y_0\\right)$ — halve the $x$-coordinate then add $\\frac{1}{4}$.",
+    "h": "Each feature point $(x_0, y_0)$ maps to $\\left(\\frac{x_0}{2} + \\frac{1}{4}, y_0\\right)$ — halve the $x$-coordinate then add $\\frac{1}{4}$.",
     "s": "Transform each key point by $x \\mapsto \\frac{x}{2} + \\frac{1}{4}$ (the $y$-values are unchanged): $(-2,0)\\to(-\\frac{3}{4},0)$; $(2,0)\\to(\\frac{5}{4},0)$; $(-1,-27)\\to(-\\frac{1}{4},-27)$; $(0,-16)\\to(\\frac{1}{4},-16)$; the horizontal inflexion stays at $(\\frac{5}{4},0)$.",
     "solutionSteps": [
       {
@@ -1198,7 +1198,7 @@ export const FORTST_2020_QUESTIONS = [
     "source": "Fort Street 2020 Trial Q11(b)",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "Assuming the silky oak ($80$ cm at planting, growths $50, 50(0.9), \\dots$) maintains this growth pattern, explain why the tree will never reach a height of $6$ metres.",
+    "q": "Assuming the silky oak ($80$ cm at planting, growths $50, 50(0.9), dots$) maintains this growth pattern, explain why the tree will never reach a height of $6$ metres.",
     "a": "The limiting growth is $500$ cm, so the maximum height is $80 + 500 = 580$ cm $< 600$ cm.",
     "opts": [],
     "h": "Find the limiting sum of the growth GP, then add the initial height.",
@@ -1230,7 +1230,7 @@ export const FORTST_2020_QUESTIONS = [
     "source": "Fort Street 2020 Trial Q11(c)",
     "type": "short_answer",
     "difficulty": "hard",
-    "q": "In which year will the silky oak ($80$ cm at planting, growths $50, 50(0.9), \\dots$) reach a height of $5$ metres?",
+    "q": "In which year will the silky oak ($80$ cm at planting, growths $50, 50(0.9), dots$) reach a height of $5$ metres?",
     "a": "During the $18^{\\text{th}}$ year",
     "opts": [],
     "h": "It needs to grow $500 - 80 = 420$ cm. Set $S_n = 420$ using the GP sum formula and solve for $n$.",
@@ -1338,7 +1338,7 @@ export const FORTST_2020_QUESTIONS = [
     "a": "A tree where each throw branches into Win (W) and Lose (W'); the game continues only along the \"lose\" branches: Alice $\\frac{1}{30}$, Raoul $\\frac{1}{40}$, Alice $\\frac{1}{30}$, Raoul $\\frac{1}{40}$.",
     "opts": [],
     "h": "Each throw has two outcomes (W and W'); the chain of play continues only on W' (miss) branches.",
-    "s": "Alice throws first: W with $\\frac{1}{30}$ (game ends) or W' with $\\frac{29}{30}$. Then Raoul: W with $\\frac{1}{40}$ or W' with $\\frac{39}{40}$. Then Alice again ($\\frac{1}{30}, \\frac{29}{30}$), then Raoul ($\\frac{1}{40}, \\frac{39}{40}$). The game only proceeds along the \"miss\" (W') branches.",
+    "s": "Alice throws first: W with $\\frac{1}{30}$ (game ends) or W' with $\\frac{29}{30}$. Then Raoul: W with $\\frac{1}{40}$ or W' with $\\frac{39}{40}$. Then Alice again ($\\frac{1}{30}, frac{29}{30}$), then Raoul ($\\frac{1}{40}, frac{39}{40}$). The game only proceeds along the \"miss\" (W') branches.",
     "solutionSteps": [
       {
         "explanation": "Each throw is a two-branch event: a win (W, game ends) or a miss (W'). Play continues only along miss branches.",
@@ -1346,7 +1346,7 @@ export const FORTST_2020_QUESTIONS = [
       },
       {
         "explanation": "List the win/miss probabilities for each thrower in order.",
-        "workingOut": "A: \\tfrac{1}{30},\\tfrac{29}{30}; \\;\\; R: \\tfrac{1}{40},\\tfrac{39}{40}"
+        "workingOut": "A: \\tfrac{1}{30}, tfrac{29}{30}; \\;\\; R: \\tfrac{1}{40}, tfrac{39}{40}"
       },
       {
         "explanation": "Draw the tree as a chain of four throws along the \"miss\" branches.",
@@ -1413,7 +1413,7 @@ export const FORTST_2020_QUESTIONS = [
     "q": "Alice (first, $P = \\frac{1}{30}$) and Raoul ($P = \\frac{1}{40}$) throw in turn until someone hits. What is the probability that Alice eventually wins the game?",
     "a": "$\\dfrac{40}{69}$",
     "opts": [],
-    "h": "Alice can win on throw $1, 2, 3, \\dots$; these form a geometric series with ratio $r = \\frac{29}{30}\\cdot\\frac{39}{40}$.",
+    "h": "Alice can win on throw $1, 2, 3, dots$; these form a geometric series with ratio $r = \\frac{29}{30}\\cdot\\frac{39}{40}$.",
     "s": "Alice wins with probability $\\frac{1}{30} + \\frac{29}{30}\\cdot\\frac{39}{40}\\cdot\\frac{1}{30} + \\cdots$, a geometric series with $a = \\frac{1}{30}$ and $r = \\frac{29}{30}\\cdot\\frac{39}{40} = \\frac{1131}{1200}$. $S_\\infty = \\frac{1/30}{1 - 1131/1200} = \\frac{1/30}{69/1200} = \\frac{40}{69}$.",
     "solutionSteps": [
       {
@@ -1422,7 +1422,7 @@ export const FORTST_2020_QUESTIONS = [
       },
       {
         "explanation": "Identify the first term and common ratio (the ratio is \"both miss a full round\").",
-        "workingOut": "a = \\frac{1}{30}, \\quad r = \\frac{29}{30}\\cdot\\frac{39}{40} = \\frac{1131}{1200}"
+        "workingOut": "a = \\frac{1}{30}, quad r = \\frac{29}{30}\\cdot\\frac{39}{40} = \\frac{1131}{1200}"
       },
       {
         "explanation": "Apply the limiting sum formula \\(S_\\infty = \\frac{a}{1-r}\\).",
@@ -1525,7 +1525,7 @@ export const FORTST_2020_QUESTIONS = [
     "s": "$A = \\int_0^{\\ln 4}(4e^{-x} - e^x + 3)\\,dx = [-4e^{-x} - e^x + 3x]_0^{\\ln 4} = (-4\\cdot\\frac{1}{4} - 4 + 3\\ln 4) - (-4 - 1 + 0) = (-1 - 4 + 3\\ln 4) + 5 = 3\\ln 4$.",
     "solutionSteps": [
       {
-        "explanation": "Set up the area as the integral of the upper curve minus the lower curve over \\([0, \\ln 4]\\).",
+        "explanation": "Set up the area as the integral of the upper curve minus the lower curve over \\([0, ln 4]\\).",
         "workingOut": "A = \\int_0^{\\ln 4}\\big(4e^{-x} - (e^x - 3)\\big)\\,dx"
       },
       {
@@ -1582,7 +1582,7 @@ export const FORTST_2020_QUESTIONS = [
       },
       {
         "explanation": "The gradient is zero where the velocity curve has turning points — its maximum and minimum.",
-        "workingOut": "t = 3 \\text{ (max)}, \\quad t = 7 \\text{ (min)}"
+        "workingOut": "t = 3 \\text{ (max)}, quad t = 7 \\text{ (min)}"
       }
     ]
   },
@@ -1950,11 +1950,11 @@ export const FORTST_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the key values: amplitude \\(7\\), centre \\(T = 13\\), max \\(20\\), min \\(6\\), period \\(12\\).",
-        "workingOut": "T \\in [6, 20], \\text{ period } 12"
+        "workingOut": "T \\in [6, 20], text{ period } 12"
       },
       {
         "explanation": "Locate the minimum at month \\(\\approx 6\\) (June) and the endpoints near the maximum.",
-        "workingOut": "(1, \\approx 20), (6, 6), (12, \\approx 20)"
+        "workingOut": "(1, approx 20), (6, 6), (12, approx 20)"
       },
       {
         "explanation": "Sketch the sine curve over the domain \\(1 \\le x \\le 12\\).",
@@ -2010,7 +2010,7 @@ export const FORTST_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "In right triangle \\(AHB\\) (vertical side \\(AH = 1\\) km, angle \\(\\theta\\) at \\(H\\)), use cosine and tangent to find the walked side \\(HB\\) and horizontal offset \\(AB\\).",
-        "workingOut": "HB = \\frac{1}{\\cos\\theta}, \\quad AB = \\tan\\theta"
+        "workingOut": "HB = \\frac{1}{\\cos\\theta}, quad AB = \\tan\\theta"
       },
       {
         "explanation": "By symmetry the other walk \\(CS\\) and offset \\(DC\\) are equal. Total distance walked is \\(2HB\\).",

@@ -1068,7 +1068,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Examine the behavior as \\(n \\to \\infty\\).",
-        "workingOut": "The values oscillate with growing absolute values: \\(6, -12, 42, -120, \\dots\\) which diverges.",
+        "workingOut": "The values oscillate with growing absolute values: \\(6, -12, 42, -120, dots\\) which diverges.",
         "graphData": null
       }
     ]
@@ -2248,9 +2248,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that \\(T_n = ar^{n-1}\\) is a geometric progression with a limiting sum.\n\nFind the first three terms of this progression if the second term is 8 and the limiting sum is 32.",
     "opts": [
-      "\\(24, 8, \\frac{8}{3}\\)",
-      "\\(18, 8, \\frac{32}{9}\\)",
-      "\\(12, 8, \\frac{16}{3}\\)",
+      "\\(24, 8, frac{8}{3}\\)",
+      "\\(18, 8, frac{32}{9}\\)",
+      "\\(12, 8, frac{16}{3}\\)",
       "\\(16, 8, 4\\)"
     ],
     "a": 3,

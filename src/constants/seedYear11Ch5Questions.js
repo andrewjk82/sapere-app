@@ -310,7 +310,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(r\\) from \\(r^2 = 9\\).",
-        "workingOut": "r = 3, \\text{ Centre } = (0,0)"
+        "workingOut": "r = 3, text{ Centre } = (0,0)"
       }
     ]
   },
@@ -1829,7 +1829,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Calculate the new center, domain, and endpoints. The center shifts to \\((2, 0)\\). The domain is \\([-1, 5]\\) (shifted from \\([-3, 3]\\)), and the peak of the semi-circle is at \\((2, 3)\\).",
-        "workingOut": "\\text{Domain: } [-1, 5], \\quad \\text{Peak: } (2, 3)"
+        "workingOut": "\\text{Domain: } [-1, 5], quad \\text{Peak: } (2, 3)"
       },
       {
         "explanation": "Sketch the semi-circle centered at \\((2, 0)\\), passing through \\((-1, 0)\\), \\((5, 0)\\), with its maximum point at \\((2, 3)\\).",
@@ -2063,7 +2063,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Find intercepts.",
-        "workingOut": "y\\text{-int: } (0, -4), \\ x\\text{-ints: } (2, 0) \\text{ and } (-2, 0)"
+        "workingOut": "y\\text{-int: } (0, -4), x\\text{-ints: } (2, 0) \\text{ and } (-2, 0)"
       }
     ]
   },
@@ -2129,7 +2129,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Find intercepts.",
-        "workingOut": "y\\text{-int: } (0, \\frac{1}{3}), \\text{No } x\\text{-int}"
+        "workingOut": "y\\text{-int: } (0, frac{1}{3}), text{No } x\\text{-int}"
       }
     ]
   },
@@ -2151,7 +2151,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Find intercepts.",
-        "workingOut": "y\\text{-int: } (0, -\\frac{1}{4}), \\text{No } x\\text{-int}"
+        "workingOut": "y\\text{-int: } (0, -\\frac{1}{4}), text{No } x\\text{-int}"
       }
     ]
   },
@@ -2173,7 +2173,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Find intercepts.",
-        "workingOut": "x\\text{-int: } (-\\frac{1}{2}, 0), \\text{No } y\\text{-int}"
+        "workingOut": "x\\text{-int: } (-\\frac{1}{2}, 0), text{No } y\\text{-int}"
       }
     ]
   },
@@ -2195,7 +2195,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Find intercepts.",
-        "workingOut": "x\\text{-int: } (\\frac{1}{5}, 0), \\text{No } y\\text{-int}"
+        "workingOut": "x\\text{-int: } (\\frac{1}{5}, 0), text{No } y\\text{-int}"
       }
     ]
   },
@@ -2763,7 +2763,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Identify the shifts.",
-        "workingOut": "x=-2 \\implies \\text{Left 2}, \\ y=3 \\implies \\text{Up 3}"
+        "workingOut": "x=-2 \\implies \\text{Left 2}, y=3 \\implies \\text{Up 3}"
       },
       {
         "explanation": "Write the equation.",
@@ -2807,7 +2807,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Identify the shifts.",
-        "workingOut": "x=5 \\implies \\text{Right 5}, \\ y=-1 \\implies \\text{Down 1}"
+        "workingOut": "x=5 \\implies \\text{Right 5}, y=-1 \\implies \\text{Down 1}"
       },
       {
         "explanation": "Write the equation.",
@@ -3105,7 +3105,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Part a: Sketch base graph.",
-        "workingOut": "y\\text{-int: } 5, \\ x\\text{-ints: } 1, 5, \\text{ Vertex: } (3, -4)"
+        "workingOut": "y\\text{-int: } 5, x\\text{-ints: } 1, 5, text{ Vertex: } (3, -4)"
       },
       {
         "explanation": "Part b-i: Reflection in y-axis.",
@@ -3135,7 +3135,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Part a: Base graph features.",
-        "workingOut": "y\\text{-int: } (0, 1), \\text{ At } x=-1, y=3^1=3. \\text{ Asymptote: } y=0"
+        "workingOut": "y\\text{-int: } (0, 1), text{ At } x=-1, y=3^1=3. \\text{ Asymptote: } y=0"
       },
       {
         "explanation": "Part b-i: Reflection in x-axis.",
@@ -3369,7 +3369,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Part a: Identify centres and radii.",
-        "workingOut": "\\text{Circle 1: Centre } (4,0), \\text{ radius } 3. \\\\ \\text{Circle 2: Centre } (-4,0), \\text{ radius } 3."
+        "workingOut": "\\text{Circle 1: Centre } (4,0), text{ radius } 3. \\\\ \\text{Circle 2: Centre } (-4,0), text{ radius } 3."
       },
       {
         "explanation": "Part b: Transformation.",
@@ -3585,7 +3585,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Part c: Shift.",
-        "workingOut": "\\text{The vertex moves from } 3 \\text{ to } -3, \\text{ so it's a shift left by } 6 \\text{ units.}"
+        "workingOut": "\\text{The vertex moves from } 3 \\text{ to } -3, text{ so it's a shift left by } 6 \\text{ units.}"
       },
       {
         "explanation": "Part d: Algebraic proof.",
@@ -3929,11 +3929,11 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Part b: Check if even.",
-        "workingOut": "-x^3 + 2x^2 - 4 \\neq x^3 + 2x^2 - 4, \\text{ so } h(-x) \\neq h(x)."
+        "workingOut": "-x^3 + 2x^2 - 4 \\neq x^3 + 2x^2 - 4, text{ so } h(-x) \\neq h(x)."
       },
       {
         "explanation": "Check if odd.",
-        "workingOut": "-h(x) = -x^3 - 2x^2 + 4. \\text{ Since } h(-x) \\neq -h(x), \\text{ it is neither.}"
+        "workingOut": "-h(x) = -x^3 - 2x^2 + 4. \\text{ Since } h(-x) \\neq -h(x), text{ it is neither.}"
       }
     ]
   },
@@ -4275,7 +4275,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Find zeroes.",
-        "workingOut": "x = 0, \\sqrt{5}, -\\sqrt{5}"
+        "workingOut": "x = 0, sqrt{5}, -\\sqrt{5}"
       }
     ]
   },
@@ -5167,7 +5167,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Turning points change.",
-        "workingOut": "(1 \\times 2, 2) \\implies (2, 2), \\quad (3 \\times 2, -1) \\implies (6, -1)"
+        "workingOut": "(1 \\times 2, 2) \\implies (2, 2), quad (3 \\times 2, -1) \\implies (6, -1)"
       }
     ]
   },
@@ -5189,7 +5189,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Turning points change.",
-        "workingOut": "(1, 2 \\times 0.5) \\implies (1, 1), \\quad (3, -1 \\times 0.5) \\implies (3, -0.5)"
+        "workingOut": "(1, 2 \\times 0.5) \\implies (1, 1), quad (3, -1 \\times 0.5) \\implies (3, -0.5)"
       }
     ]
   },
@@ -5354,7 +5354,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Identify substitutions.",
-        "workingOut": "x \\to \\frac{x}{4}, \\quad y \\to \\frac{y}{2}"
+        "workingOut": "x \\to \\frac{x}{4}, quad y \\to \\frac{y}{2}"
       },
       {
         "explanation": "Conclude dilations.",
@@ -5623,7 +5623,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Conclusion.",
-        "workingOut": "\\text{Since } f(-x) = \\pm f(x), \\text{ then } kf(-\\frac{x}{a}) = \\pm kf(\\frac{x}{a}). \\text{Symmetry is preserved.}"
+        "workingOut": "\\text{Since } f(-x) = \\pm f(x), text{ then } kf(-\\frac{x}{a}) = \\pm kf(\\frac{x}{a}). \\text{Symmetry is preserved.}"
       }
     ]
   },
@@ -8156,7 +8156,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Simplify branches.",
-        "workingOut": "x>0 \\implies y=1, \\quad x<0 \\implies y=-1"
+        "workingOut": "x>0 \\implies y=1, quad x<0 \\implies y=-1"
       }
     ]
   },
@@ -8359,18 +8359,18 @@ export const CH5_QUESTIONS_Y11A = [
       "An arithmetic sequence starting at $3$ with a common difference of $3$",
       "A geometric sequence starting at $3$ with a common ratio of $3$",
       "An arithmetic sequence starting at $0$ with a common difference of $3$",
-      "A constant sequence: $3, 3, 3, \\dots$"
+      "A constant sequence: $3, 3, 3, dots$"
     ],
-    "h": "Look at the values evaluated: $3, 6, 9, \\dots$",
-    "s": "Evaluating the terms gives $3, 6, 9, 12, \\dots$, which increases by $3$ each time. This is an arithmetic sequence starting at $3$ with a common difference of $3$.",
+    "h": "Look at the values evaluated: $3, 6, 9, dots$",
+    "s": "Evaluating the terms gives $3, 6, 9, 12, dots$, which increases by $3$ each time. This is an arithmetic sequence starting at $3$ with a common difference of $3$.",
     "solutionSteps": [
       {
         "explanation": "Write out the first few terms of the sequence.",
-        "workingOut": "3, 6, 9, 12, \\dots"
+        "workingOut": "3, 6, 9, 12, dots"
       },
       {
         "explanation": "Identify the type of sequence and its parameters.",
-        "workingOut": "\\text{Common difference} = 3, \\text{ First term} = 3 \\implies \\text{Arithmetic sequence}"
+        "workingOut": "\\text{Common difference} = 3, text{ First term} = 3 \\implies \\text{Arithmetic sequence}"
       }
     ]
   },
@@ -8463,18 +8463,18 @@ export const CH5_QUESTIONS_Y11A = [
       "An arithmetic sequence starting at $4$ with a common difference of $3$",
       "A geometric sequence starting at $4$ with a common ratio of $3$",
       "An arithmetic sequence starting at $1$ with a common difference of $3$",
-      "A constant sequence: $4, 4, 4, \\dots$"
+      "A constant sequence: $4, 4, 4, dots$"
     ],
-    "h": "Evaluate the terms of the sequence: $4, 7, 10, \\dots$",
-    "s": "The terms are $4, 7, 10, 13, \\dots$, which increases by $3$ each time. This is an arithmetic sequence starting at $4$ with a common difference of $3$.",
+    "h": "Evaluate the terms of the sequence: $4, 7, 10, dots$",
+    "s": "The terms are $4, 7, 10, 13, dots$, which increases by $3$ each time. This is an arithmetic sequence starting at $4$ with a common difference of $3$.",
     "solutionSteps": [
       {
         "explanation": "Write out the first few terms of the sequence.",
-        "workingOut": "4, 7, 10, 13, \\dots"
+        "workingOut": "4, 7, 10, 13, dots"
       },
       {
         "explanation": "Identify the type of sequence and its parameters.",
-        "workingOut": "\\text{Common difference} = 3, \\text{ First term} = 4 \\implies \\text{Arithmetic sequence}"
+        "workingOut": "\\text{Common difference} = 3, text{ First term} = 4 \\implies \\text{Arithmetic sequence}"
       }
     ]
   },
@@ -8977,7 +8977,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine the domain (input values) and range (output values).",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, \\quad \\text{Range} = [ -9, \\infty )"
+        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = [ -9, infty )"
       }
     ]
   },
@@ -9139,7 +9139,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "State the domain and range based on the vertex.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, \\quad \\text{Range} = y \\ge -9"
+        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge -9"
       }
     ]
   },
@@ -9382,7 +9382,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "State domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, \\quad \\text{Range} = y \\ge -4"
+        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge -4"
       }
     ]
   },
@@ -9432,11 +9432,11 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Scale the range of the base function by the vertical dilation factor.",
-        "workingOut": "\\text{Range of } p(x) = [-4, \\infty) \\implies \\text{Range of } 3p(x) = [3(-4), \\infty)"
+        "workingOut": "\\text{Range of } p(x) = [-4, infty) \\implies \\text{Range of } 3p(x) = [3(-4), infty)"
       },
       {
         "explanation": "State domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, \\quad \\text{Range} = y \\ge -12"
+        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge -12"
       }
     ]
   },
@@ -9463,7 +9463,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, \\quad \\text{Range} = y \\ge 0"
+        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge 0"
       }
     ]
   },
@@ -9625,7 +9625,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine the domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, \\quad \\text{Range} = y \\ge 0"
+        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge 0"
       }
     ]
   },
@@ -9675,11 +9675,11 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Find the vertex and orientation of \\(y = -(x-3)^2\\).",
-        "workingOut": "\\text{Vertex} = (3, 0), \\quad \\text{Opens downwards}"
+        "workingOut": "\\text{Vertex} = (3, 0), quad \\text{Opens downwards}"
       },
       {
         "explanation": "Determine domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, \\quad \\text{Range} = y \\le 0"
+        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\le 0"
       }
     ]
   },
@@ -10126,7 +10126,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine domain and range based on the square root and negative coefficient.",
-        "workingOut": "\\text{Domain: } x \\ge 0, \\quad \\text{Range: } y \\le -4"
+        "workingOut": "\\text{Domain: } x \\ge 0, quad \\text{Range: } y \\le -4"
       }
     ]
   },
@@ -10223,7 +10223,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "State the range and identify the reflected curve shape.",
-        "workingOut": "\\text{Range: } y \\ge 0, \\quad \\text{Reflected starting point: } (9,0)"
+        "workingOut": "\\text{Range: } y \\ge 0, quad \\text{Reflected starting point: } (9,0)"
       }
     ]
   },
@@ -10268,11 +10268,11 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "State domain and range based on translations.",
-        "workingOut": "\\text{Domain: } x \\le 9, \\quad \\text{Range: } y \\ge -3"
+        "workingOut": "\\text{Domain: } x \\le 9, quad \\text{Range: } y \\ge -3"
       },
       {
         "explanation": "Find starting point and intercepts.",
-        "workingOut": "\\text{Starts at } (9, -3), \\quad y\\text{-intercept at } (0, 0)"
+        "workingOut": "\\text{Starts at } (9, -3), quad y\\text{-intercept at } (0, 0)"
       }
     ]
   },
@@ -10553,7 +10553,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "b) Compare the limits and function value.",
-        "workingOut": "\\text{Since } \\lim_{u \\to 0^-} g(u) = \\lim_{u \\to 0^+} g(u) = g(0) = 2, \\text{ it is continuous at } u = 0."
+        "workingOut": "\\text{Since } \\lim_{u \\to 0^-} g(u) = \\lim_{u \\to 0^+} g(u) = g(0) = 2, text{ it is continuous at } u = 0."
       },
       {
         "explanation": "c) State the domain and range from the sketch (a line decreasing to 2, then a parabola increasing from 2).",
@@ -10642,7 +10642,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Test for even/odd by evaluating \\(g(-z)\\) for \\(z > 0\\).",
-        "workingOut": "\\text{For } z > 0, -z < 0. \\\\ g(-z) = (-z)^2 + 3(-z) = z^2 - 3z. \\\\ \\text{This matches } g(z) \\text{ for } z > 0, \\text{ so } g(-z) = g(z). \\text{ It is even.}"
+        "workingOut": "\\text{For } z > 0, -z < 0. \\\\ g(-z) = (-z)^2 + 3(-z) = z^2 - 3z. \\\\ \\text{This matches } g(z) \\text{ for } z > 0, text{ so } g(-z) = g(z). \\text{ It is even.}"
       }
     ]
   },
@@ -11040,7 +11040,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "c) Evaluate \\(g(-t)\\) to test for odd function.",
-        "workingOut": "\\text{For } t > 2, -t < -2 \\Rightarrow g(-t) = (-t) + 4 = -(t - 4) = -g(t) \\\\ \\text{For } -2 \\le t \\le 2, g(-t) = -(-t) = t = -(-t) = -g(t) \\\\ \\text{For } t < -2, -t > 2 \\Rightarrow g(-t) = (-t) - 4 = -(t + 4) = -g(t) \\\\ \\text{Since } g(-t) = -g(t) \\text{ for all } t, \\text{ it is odd.}",
+        "workingOut": "\\text{For } t > 2, -t < -2 \\Rightarrow g(-t) = (-t) + 4 = -(t - 4) = -g(t) \\\\ \\text{For } -2 \\le t \\le 2, g(-t) = -(-t) = t = -(-t) = -g(t) \\\\ \\text{For } t < -2, -t > 2 \\Rightarrow g(-t) = (-t) - 4 = -(t + 4) = -g(t) \\\\ \\text{Since } g(-t) = -g(t) \\text{ for all } t, text{ it is odd.}",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -11082,7 +11082,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "c) Evaluate \\(h(-v)\\).",
-        "workingOut": "\\text{For } v > 1, -v < -1 \\Rightarrow h(-v) = -3(-v) - 2 = 3v - 2 = h(v) \\\\ \\text{For } -1 \\le v \\le 1, h(-v) = 2(-v)^2 - 1 = 2v^2 - 1 = h(v) \\\\ \\text{For } v < -1, -v > 1 \\Rightarrow h(-v) = 3(-v) - 2 = -3v - 2 = h(v) \\\\ \\text{Since } h(-v) = h(v) \\text{ for all } v, \\text{ it is even.}",
+        "workingOut": "\\text{For } v > 1, -v < -1 \\Rightarrow h(-v) = -3(-v) - 2 = 3v - 2 = h(v) \\\\ \\text{For } -1 \\le v \\le 1, h(-v) = 2(-v)^2 - 1 = 2v^2 - 1 = h(v) \\\\ \\text{For } v < -1, -v > 1 \\Rightarrow h(-v) = 3(-v) - 2 = -3v - 2 = h(v) \\\\ \\text{Since } h(-v) = h(v) \\text{ for all } v, text{ it is even.}",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -11442,7 +11442,7 @@ export const CH5_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "a) Explain symmetry of even/odd functions.",
-        "workingOut": "\\text{An even function satisfies } g(x) = g(-x) \\text{ and an odd function } g(-x) = -g(x). \\text{ Both symmetries require that if a discontinuity exists at } x=k, \\text{ one must also exist at } x=-k."
+        "workingOut": "\\text{An even function satisfies } g(x) = g(-x) \\text{ and an odd function } g(-x) = -g(x). \\text{ Both symmetries require that if a discontinuity exists at } x=k, text{ one must also exist at } x=-k."
       },
       {
         "explanation": "b) Analyze the discontinuities in Q11.",

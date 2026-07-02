@@ -10,7 +10,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the principal \\( P \\), simple interest rate \\( R \\), and time \\( n \\)",
-        "workingOut": "P = 6000, \\quad R = 0.05, \\quad n = 4"
+        "workingOut": "P = 6000, quad R = 0.05, quad n = 4"
       },
       {
         "explanation": "Substitute these values into the simple interest formula \\( I = PRn \\)",
@@ -48,7 +48,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the principal \\( P \\), simple interest rate \\( R \\), and time \\( n \\)",
-        "workingOut": "P = 500, \\quad R = 0.04, \\quad n = 6"
+        "workingOut": "P = 500, quad R = 0.04, quad n = 6"
       },
       {
         "explanation": "Substitute these values into the simple interest formula \\( I = PRn \\)",
@@ -86,7 +86,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the principal \\( P \\), simple interest rate \\( R \\), and time \\( n \\)",
-        "workingOut": "P = 8000, \\quad R = 0.065, \\quad n = 8"
+        "workingOut": "P = 8000, quad R = 0.065, quad n = 8"
       },
       {
         "explanation": "Substitute these values into the simple interest formula \\( I = PRn \\)",
@@ -124,7 +124,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the principal \\( P \\), simple interest rate \\( R \\), and time \\( n \\)",
-        "workingOut": "P = 15000, \\quad R = 0.0525, \\quad n = 6"
+        "workingOut": "P = 15000, quad R = 0.0525, quad n = 6"
       },
       {
         "explanation": "Substitute these values into the simple interest formula \\( I = PRn \\)",
@@ -162,7 +162,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the principal \\( P \\), compounding interest rate \\( R \\), and number of periods \\( n \\)",
-        "workingOut": "P = 8000, \\quad R = 0.04, \\quad n = 3"
+        "workingOut": "P = 8000, quad R = 0.04, quad n = 3"
       },
       {
         "explanation": "Substitute into the compound interest formula \\( A = P(1+R)^n \\)",
@@ -204,7 +204,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the principal \\( P \\), compounding interest rate \\( R \\), and number of periods \\( n \\)",
-        "workingOut": "P = 400, \\quad R = 0.06, \\quad n = 5"
+        "workingOut": "P = 400, quad R = 0.06, quad n = 5"
       },
       {
         "explanation": "Substitute into the compound interest formula \\( A = P(1+R)^n \\)",
@@ -246,7 +246,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the principal \\( P \\), compounding interest rate \\( R \\), and number of periods \\( n \\)",
-        "workingOut": "P = 12000, \\quad R = 0.055, \\quad n = 4"
+        "workingOut": "P = 12000, quad R = 0.055, quad n = 4"
       },
       {
         "explanation": "Substitute into the compound interest formula \\( A = P(1+R)^n \\)",
@@ -288,7 +288,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the principal \\( P \\), compounding interest rate \\( R \\), and number of periods \\( n \\)",
-        "workingOut": "P = 9000, \\quad R = 0.045, \\quad n = 6"
+        "workingOut": "P = 9000, quad R = 0.045, quad n = 6"
       },
       {
         "explanation": "Substitute into the compound interest formula \\( A = P(1+R)^n \\)",
@@ -330,7 +330,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the initial value \\( P \\), depreciation rate \\( R \\), and time \\( n \\)",
-        "workingOut": "P = 6000, \\quad R = 0.08, \\quad n = 3"
+        "workingOut": "P = 6000, quad R = 0.08, quad n = 3"
       },
       {
         "explanation": "Substitute the values into the depreciation formula",
@@ -372,7 +372,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the initial value \\( P \\), depreciation rate \\( R \\), and time \\( n \\)",
-        "workingOut": "P = 800, \\quad R = 0.07, \\quad n = 5"
+        "workingOut": "P = 800, quad R = 0.07, quad n = 5"
       },
       {
         "explanation": "Substitute the values into the depreciation formula",
@@ -414,7 +414,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the initial value \\( P \\), depreciation rate \\( R \\), and time \\( n \\)",
-        "workingOut": "P = 15000, \\quad R = 0.065, \\quad n = 4"
+        "workingOut": "P = 15000, quad R = 0.065, quad n = 4"
       },
       {
         "explanation": "Substitute the values into the depreciation formula",
@@ -456,7 +456,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the initial value \\( P \\), depreciation rate \\( R \\), and time \\( n \\)",
-        "workingOut": "P = 10000, \\quad R = 0.052, \\quad n = 6"
+        "workingOut": "P = 10000, quad R = 0.052, quad n = 6"
       },
       {
         "explanation": "Substitute the values into the depreciation formula",
@@ -498,7 +498,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the monthly interest rate \\( R \\) and the number of monthly compounding periods \\( n \\)",
-        "workingOut": "R = \\frac{9\\%}{12} = 0.75\\% = 0.0075, \\quad n = 3 \\times 12 = 36"
+        "workingOut": "R = \\frac{9\\%}{12} = 0.75\\% = 0.0075, quad n = 3 \\times 12 = 36"
       },
       {
         "explanation": "Substitute these values into the compound interest formula",
@@ -521,7 +521,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the quarterly interest rate \\( R \\) and the number of quarterly compounding periods \\( n \\)",
-        "workingOut": "R = \\frac{6\\%}{4} = 1.5\\% = 0.015, \\quad n = 4 \\times 4 = 16"
+        "workingOut": "R = \\frac{6\\%}{4} = 1.5\\% = 0.015, quad n = 4 \\times 4 = 16"
       },
       {
         "explanation": "Substitute these values into the compound interest formula",
@@ -544,7 +544,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the six-monthly interest rate \\( R \\) and the number of compounding periods \\( n \\)",
-        "workingOut": "R = \\frac{8\\%}{2} = 4\\% = 0.04, \\quad n = 5 \\times 2 = 10"
+        "workingOut": "R = \\frac{8\\%}{2} = 4\\% = 0.04, quad n = 5 \\times 2 = 10"
       },
       {
         "explanation": "Substitute these values into the compound interest formula",
@@ -567,7 +567,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the weekly interest rate \\( R \\) and the number of compounding periods \\( n \\)",
-        "workingOut": "R = \\frac{5.2\\%}{52} = 0.1\\% = 0.001, \\quad n = 2 \\times 52 = 104"
+        "workingOut": "R = \\frac{5.2\\%}{52} = 0.1\\% = 0.001, quad n = 2 \\times 52 = 104"
       },
       {
         "explanation": "Substitute these values into the compound interest formula",
@@ -831,7 +831,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Adjust the rate and periods for six-monthly compounding",
-        "workingOut": "R = \\frac{8\\%}{2} = 4\\% = 0.04, \\quad n = 1 \\times 2 = 2"
+        "workingOut": "R = \\frac{8\\%}{2} = 4\\% = 0.04, quad n = 1 \\times 2 = 2"
       },
       {
         "explanation": "Calculate using compound interest formula",
@@ -850,7 +850,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Adjust the rate and periods for quarterly compounding",
-        "workingOut": "R = \\frac{8\\%}{4} = 2\\% = 0.02, \\quad n = 1 \\times 4 = 4"
+        "workingOut": "R = \\frac{8\\%}{4} = 2\\% = 0.02, quad n = 1 \\times 4 = 4"
       },
       {
         "explanation": "Calculate and round to the nearest cent",
@@ -869,7 +869,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Adjust the rate and periods for monthly compounding",
-        "workingOut": "R = \\frac{8\\%}{12} = \\frac{0.08}{12}, \\quad n = 12"
+        "workingOut": "R = \\frac{8\\%}{12} = \\frac{0.08}{12}, quad n = 12"
       },
       {
         "explanation": "Calculate and round to the nearest cent",
@@ -934,7 +934,7 @@ export const Y12A_CH8C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Adjust the rate and periods for monthly compounding",
-        "workingOut": "R = \\frac{6\\%}{12} = 0.5\\% = 0.005, \\quad n = 4 \\times 12 = 48"
+        "workingOut": "R = \\frac{6\\%}{12} = 0.5\\% = 0.005, quad n = 4 \\times 12 = 48"
       },
       {
         "explanation": "Setup equation: \\( A = P(1+R)^n \\)",

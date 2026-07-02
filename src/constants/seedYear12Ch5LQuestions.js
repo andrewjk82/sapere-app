@@ -286,7 +286,7 @@ export const Y12A_CH5L_QUESTIONS = [
       },
       {
         "explanation": "y''=e^{-x}(x-2); at x=1: y''=-1/e<0 → maximum.",
-        "workingOut": "\\text{Maximum at }(1,\\,1/e)"
+        "workingOut": "\\text{Maximum at }(1, 1/e)"
       }
     ],
     "graphData": null

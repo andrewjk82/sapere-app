@@ -175,7 +175,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the final sale price and the discount rate.",
-        "workingOut": "\\(\\text{Sale Price} = 204.00, \\quad \\text{Discount} = 15\\% = 0.15\\)",
+        "workingOut": "\\(\\text{Sale Price} = 204.00, quad \\text{Discount} = 15\\% = 0.15\\)",
         "graphData": null
       },
       {
@@ -207,7 +207,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters for the reverse percentage equation.",
-        "workingOut": "\\(\\text{Markdown Price} = 68000, \\quad \\text{Rate} = 20\\%\\)",
+        "workingOut": "\\(\\text{Markdown Price} = 68000, quad \\text{Rate} = 20\\%\\)",
         "graphData": null
       },
       {
@@ -3304,8 +3304,8 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "The percentage decrease is calculated by finding how much the value dropped relative to the original value. Formula: \\(\\%\\,\\text{decrease} = \\dfrac{\\text{original} - \\text{new}}{\\text{original}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{dec} = \\dfrac{8400 - 7098}{8400} \\times 100\\)",
+        "explanation": "The percentage decrease is calculated by finding how much the value dropped relative to the original value. Formula: \\(\\%\\, text{decrease} = \\dfrac{\\text{original} - \\text{new}}{\\text{original}} \\times 100\\).",
+        "workingOut": "\\(\\%\\, mathrm{dec} = \\dfrac{8400 - 7098}{8400} \\times 100\\)",
         "graphData": null
       },
       {
@@ -3320,7 +3320,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The ore output decreased by \\(15.50\\%\\) during the wet season.",
-        "workingOut": "\\(\\%\\,\\mathrm{decrease} = 15.50\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{decrease} = 15.50\\%\\)",
         "graphData": null
       }
     ]
@@ -3448,7 +3448,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage increase = \\(\\dfrac{\\text{new} - \\text{original}}{\\text{original}} \\times 100\\). We use the original value (480) as the denominator since the increase is measured relative to where we started.",
-        "workingOut": "\\(\\%\\,\\mathrm{increase} = \\dfrac{552 - 480}{480} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{increase} = \\dfrac{552 - 480}{480} \\times 100\\)",
         "graphData": null
       },
       {
@@ -3463,7 +3463,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The koala population increased by \\(15.00\\%\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{increase} = 15.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{increase} = 15.00\\%\\)",
         "graphData": null
       }
     ]
@@ -3484,8 +3484,8 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Profit percentage is calculated on the cost price (buying price). Formula: \\(\\%\\,\\mathrm{profit} = \\dfrac{\\mathrm{selling\\ price} - \\mathrm{cost\\ price}}{\\mathrm{cost\\ price}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{profit} = \\dfrac{27 - 18}{18} \\times 100\\)",
+        "explanation": "Profit percentage is calculated on the cost price (buying price). Formula: \\(\\%\\, mathrm{profit} = \\dfrac{\\mathrm{selling\\ price} - \\mathrm{cost\\ price}}{\\mathrm{cost\\ price}} \\times 100\\).",
+        "workingOut": "\\(\\%\\, mathrm{profit} = \\dfrac{27 - 18}{18} \\times 100\\)",
         "graphData": null
       },
       {
@@ -3500,7 +3500,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The cafe made a \\(50\\%\\) profit on the coffee beans. Note: This is profit on cost, not on selling price.",
-        "workingOut": "\\(\\%\\,\\mathrm{profit} = 50.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{profit} = 50.00\\%\\)",
         "graphData": null
       }
     ]
@@ -3522,7 +3522,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage decrease = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\). The original is the Q1 count.",
-        "workingOut": "\\(\\%\\,\\mathrm{dec} = \\dfrac{1250 - 875}{1250} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{dec} = \\dfrac{1250 - 875}{1250} \\times 100\\)",
         "graphData": null
       },
       {
@@ -3537,7 +3537,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Server errors fell by \\(30.00\\%\\) from Q1 to Q2.",
-        "workingOut": "\\(\\%\\,\\mathrm{decrease} = 30.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{decrease} = 30.00\\%\\)",
         "graphData": null
       }
     ]
@@ -3596,7 +3596,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage error = \\(\\dfrac{|\\mathrm{measured} - \\mathrm{actual}|}{\\mathrm{actual}} \\times 100\\). We always use the actual (true) value as the denominator.",
-        "workingOut": "\\(\\%\\,\\mathrm{error} = \\dfrac{|47.3 - 50.0|}{50.0} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{error} = \\dfrac{|47.3 - 50.0|}{50.0} \\times 100\\)",
         "graphData": null
       },
       {
@@ -3611,7 +3611,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The percentage error is \\(5.40\\%\\). A smaller percentage error indicates a more accurate measurement.",
-        "workingOut": "\\(\\%\\,\\mathrm{error} = 5.40\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{error} = 5.40\\%\\)",
         "graphData": null
       }
     ]
@@ -3680,7 +3680,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The overall increase is \\(10.24\\%\\), which is slightly more than \\(10\\%\\) due to the compounding effect of applying the second increase to the already-increased price.",
-        "workingOut": "\\(\\%\\,\\mathrm{increase} = 10.24\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{increase} = 10.24\\%\\)",
         "graphData": null
       }
     ]
@@ -3744,12 +3744,12 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The overall percentage decrease is \\(1 - 0.7216 = 0.2784\\), expressed as a percentage.",
-        "workingOut": "\\(\\%\\,\\mathrm{decrease} = (1 - 0.7216) \\times 100 = 27.84\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{decrease} = (1 - 0.7216) \\times 100 = 27.84\\%\\)",
         "graphData": null
       },
       {
         "explanation": "The trawler's catch fell by \\(27.84\\%\\) overall — less than the sum \\(18\\%+12\\%=30\\%\\) because the second decrease acts on the already-reduced amount.",
-        "workingOut": "\\(\\%\\,\\mathrm{decrease} = 27.84\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{decrease} = 27.84\\%\\)",
         "graphData": null
       }
     ]
@@ -3781,7 +3781,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The discounted price is \\(80\\%\\) of the original. This directly follows from the definition: removing \\(20\\%\\) leaves \\(80\\%\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{of\\ original} = 80\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{of\\ original} = 80\\%\\)",
         "graphData": null
       }
     ]
@@ -3840,7 +3840,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage increase = \\(\\dfrac{\\mathrm{new} - \\mathrm{original}}{\\mathrm{original}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{inc} = \\dfrac{768 - 640}{640} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{inc} = \\dfrac{768 - 640}{640} \\times 100\\)",
         "graphData": null
       },
       {
@@ -3855,7 +3855,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Engineering intake increased by \\(20.00\\%\\) from 2022 to 2023.",
-        "workingOut": "\\(\\%\\,\\mathrm{increase} = 20.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{increase} = 20.00\\%\\)",
         "graphData": null
       }
     ]
@@ -3877,7 +3877,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The percentage by which actual cost exceeds the quote is calculated relative to the original quote: \\(\\dfrac{\\mathrm{actual} - \\mathrm{quote}}{\\mathrm{quote}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{over} = \\dfrac{162400 - 145000}{145000} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{over} = \\dfrac{162400 - 145000}{145000} \\times 100\\)",
         "graphData": null
       },
       {
@@ -3892,7 +3892,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The actual cost exceeded the quote by \\(12.00\\%\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{over} = 12.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{over} = 12.00\\%\\)",
         "graphData": null
       }
     ]
@@ -4121,7 +4121,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage increase = \\(\\dfrac{\\mathrm{new} - \\mathrm{original}}{\\mathrm{original}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{inc} = \\dfrac{109480 - 92000}{92000} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{inc} = \\dfrac{109480 - 92000}{92000} \\times 100\\)",
         "graphData": null
       },
       {
@@ -4136,7 +4136,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Ridership increased by exactly \\(19.00\\%\\) following the route improvements.",
-        "workingOut": "\\(\\%\\,\\mathrm{increase} = 19.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{increase} = 19.00\\%\\)",
         "graphData": null
       }
     ]
@@ -4158,7 +4158,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage loss = \\(\\dfrac{\\mathrm{cost} - \\mathrm{selling\\ price}}{\\mathrm{cost}} \\times 100\\). We use cost (buying price) as the base.",
-        "workingOut": "\\(\\%\\,\\mathrm{loss} = \\dfrac{4.80 - 3.96}{4.80} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{loss} = \\dfrac{4.80 - 3.96}{4.80} \\times 100\\)",
         "graphData": null
       },
       {
@@ -4173,7 +4173,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The broker incurred a \\(17.50\\%\\) loss. (Note: \\(3.96/4.80 = 0.825\\), so \\(82.5\\%\\) of cost was recovered.)",
-        "workingOut": "\\(\\%\\,\\mathrm{loss} = 17.50\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{loss} = 17.50\\%\\)",
         "graphData": null
       }
     ]
@@ -4279,7 +4279,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Despite the price cut, revenue increased by \\(19.00\\%\\) due to the strong rise in attendance. This illustrates price elasticity of demand.",
-        "workingOut": "\\(\\%\\,\\mathrm{revenue\\ change} = +19.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{revenue\\ change} = +19.00\\%\\)",
         "graphData": null
       }
     ]
@@ -4402,7 +4402,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage reduction = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{red} = \\dfrac{1250000 - 1062500}{1250000} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{red} = \\dfrac{1250000 - 1062500}{1250000} \\times 100\\)",
         "graphData": null
       },
       {
@@ -4417,7 +4417,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The power station achieved a \\(15.00\\%\\) reduction in carbon output.",
-        "workingOut": "\\(\\%\\,\\mathrm{reduction} = 15.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{reduction} = 15.00\\%\\)",
         "graphData": null
       }
     ]
@@ -4513,7 +4513,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Stout accounts for \\(25.00\\%\\) of total production.",
-        "workingOut": "\\(\\%\\,\\mathrm{stout} = 25.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{stout} = 25.00\\%\\)",
         "graphData": null
       }
     ]
@@ -4535,7 +4535,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage reduction = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{red} = \\dfrac{4.5 - 3.15}{4.5} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{red} = \\dfrac{4.5 - 3.15}{4.5} \\times 100\\)",
         "graphData": null
       },
       {
@@ -4550,7 +4550,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Wait times were reduced by \\(30.00\\%\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{reduction} = 30.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{reduction} = 30.00\\%\\)",
         "graphData": null
       }
     ]
@@ -4572,7 +4572,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage loss = \\(\\dfrac{\\mathrm{cost} - \\mathrm{selling}}{\\mathrm{cost}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{loss} = \\dfrac{3600 - 2916}{3600} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{loss} = \\dfrac{3600 - 2916}{3600} \\times 100\\)",
         "graphData": null
       },
       {
@@ -4587,7 +4587,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The cameraman made a \\(19.00\\%\\) loss on the lenses.",
-        "workingOut": "\\(\\%\\,\\mathrm{loss} = 19.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{loss} = 19.00\\%\\)",
         "graphData": null
       }
     ]
@@ -4821,7 +4821,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Material costs rose by \\(20.99\\%\\) over two years — not \\(20\\%\\), due to compounding.",
-        "workingOut": "\\(\\%\\,\\mathrm{increase} = 20.99\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{increase} = 20.99\\%\\)",
         "graphData": null
       }
     ]
@@ -5023,7 +5023,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Despite a \\(16\\%\\) drought loss, the harvest ended \\(5\\%\\) above the original after a \\(25\\%\\) recovery — because the \\(25\\%\\) increase acts on the smaller drought-affected amount.",
-        "workingOut": "\\(\\%\\,\\mathrm{net} = +5.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{net} = +5.00\\%\\)",
         "graphData": null
       }
     ]
@@ -5183,7 +5183,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage fall = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{fall} = \\dfrac{32000 - 24800}{32000} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{fall} = \\dfrac{32000 - 24800}{32000} \\times 100\\)",
         "graphData": null
       },
       {
@@ -5198,7 +5198,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Circulation fell by \\(22.50\\%\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{fall} = 22.50\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{fall} = 22.50\\%\\)",
         "graphData": null
       }
     ]
@@ -5506,7 +5506,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Overall reduction: \\((1 - 0.803985) \\times 100 = 19.60\\%\\). The closest option is \\(19.67\\%\\). Final answer: \\(\\approx 19.60\\%\\) — selecting option 1.",
-        "workingOut": "\\(\\%\\,\\mathrm{reduction} \\approx 19.60\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{reduction} \\approx 19.60\\%\\)",
         "graphData": null
       }
     ]
@@ -5691,7 +5691,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Revenue ended \\(20\\%\\) higher despite an initial \\(20\\%\\) fall, because the \\(50\\%\\) rise acted on a smaller base.",
-        "workingOut": "\\(\\%\\,\\mathrm{net} = +20\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{net} = +20\\%\\)",
         "graphData": null
       }
     ]
@@ -5777,7 +5777,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We want the percentage reduction in the defect rate itself (\\(4.2\\%\\) to \\(2.94\\%\\)), not in product output. Use: \\(\\dfrac{4.2 - 2.94}{4.2} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{red} = \\dfrac{4.2 - 2.94}{4.2} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{red} = \\dfrac{4.2 - 2.94}{4.2} \\times 100\\)",
         "graphData": null
       },
       {
@@ -5792,7 +5792,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The defect rate was reduced by \\(30.00\\%\\). Note: this is NOT a reduction of \\(1.26\\) percentage points (that is a different measure).",
-        "workingOut": "\\(\\%\\,\\mathrm{reduction\\ in\\ rate} = 30.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{reduction\\ in\\ rate} = 30.00\\%\\)",
         "graphData": null
       }
     ]
@@ -5851,7 +5851,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage increase = \\(\\dfrac{\\mathrm{new} - \\mathrm{original}}{\\mathrm{original}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{inc} = \\dfrac{4662000 - 4200000}{4200000} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{inc} = \\dfrac{4662000 - 4200000}{4200000} \\times 100\\)",
         "graphData": null
       },
       {
@@ -5866,7 +5866,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Total expenses increased by \\(11.00\\%\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{increase} = 11.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{increase} = 11.00\\%\\)",
         "graphData": null
       }
     ]
@@ -5898,7 +5898,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "\\(16.67\\%\\) of stock remains unsold after December.",
-        "workingOut": "\\(\\%\\,\\mathrm{unsold} = 16.67\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{unsold} = 16.67\\%\\)",
         "graphData": null
       }
     ]
@@ -5972,7 +5972,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Total operating costs rise by \\(10.50\\%\\) even though only fuel (which is \\(42\\%\\) of costs) surged by \\(25\\%\\). The other \\(58\\%\\) of costs are unchanged.",
-        "workingOut": "\\(\\%\\,\\mathrm{total\\ increase} = 10.50\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{total\\ increase} = 10.50\\%\\)",
         "graphData": null
       }
     ]
@@ -6058,7 +6058,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage reduction = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{red} = \\dfrac{5.6 - 4.76}{5.6} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{red} = \\dfrac{5.6 - 4.76}{5.6} \\times 100\\)",
         "graphData": null
       },
       {
@@ -6073,7 +6073,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Water consumption fell by \\(15.00\\%\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{reduction} = 15.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{reduction} = 15.00\\%\\)",
         "graphData": null
       }
     ]
@@ -6253,7 +6253,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "The energy bill increased by \\(20.91\\%\\) overall.",
-        "workingOut": "\\(\\%\\,\\mathrm{increase} = 20.91\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{increase} = 20.91\\%\\)",
         "graphData": null
       }
     ]
@@ -6364,7 +6364,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Percentage change = \\((103.25 - 100) = +3.25\\%\\). Despite energy drink decline, the stronger water growth dominates.",
-        "workingOut": "\\(\\%\\,\\mathrm{change} = +3.25\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{change} = +3.25\\%\\)",
         "graphData": null
       }
     ]
@@ -6418,7 +6418,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Total costs = direct costs + overheads = \\(65\\% + 18\\% = 83\\%\\) of the quote. Profit = the remaining \\(17\\%\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{profit} = 100\\% - 65\\% - 18\\% = 17\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{profit} = 100\\% - 65\\% - 18\\% = 17\\%\\)",
         "graphData": null
       },
       {
@@ -6593,7 +6593,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Percentage increase = \\(\\dfrac{\\mathrm{new} - \\mathrm{original}}{\\mathrm{original}} \\times 100\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{inc} = \\dfrac{3.6 - 2.4}{2.4} \\times 100\\)",
+        "workingOut": "\\(\\%\\, mathrm{inc} = \\dfrac{3.6 - 2.4}{2.4} \\times 100\\)",
         "graphData": null
       },
       {
@@ -6608,7 +6608,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
       },
       {
         "explanation": "Network data usage increased by \\(50.00\\%\\).",
-        "workingOut": "\\(\\%\\,\\mathrm{increase} = 50.00\\%\\)",
+        "workingOut": "\\(\\%\\, mathrm{increase} = 50.00\\%\\)",
         "graphData": null
       }
     ]
@@ -6704,7 +6704,7 @@ export const Y10_CH1A_HIGH_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Split the gains into two tiers: first \\(\\\\(100{,}000\\) and the remainder above \\(\\\\)100{,}000\\).",
-        "workingOut": "\\(\\mathrm{tier\\ 1} = 100000,\\quad \\mathrm{tier\\ 2} = 340000 - 100000 = 240000\\)",
+        "workingOut": "\\(\\mathrm{tier\\ 1} = 100000, quad \\mathrm{tier\\ 2} = 340000 - 100000 = 240000\\)",
         "graphData": null
       },
       {

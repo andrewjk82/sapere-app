@@ -151,7 +151,7 @@ export const Y7_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The base is 4. It appears 5 times.",
-        "workingOut": "\\text{Base} = 4, \\quad \\text{Exponent} = 5 \\implies 4^5"
+        "workingOut": "\\text{Base} = 4, quad \\text{Exponent} = 5 \\implies 4^5"
       }
     ]
   },
@@ -167,7 +167,7 @@ export const Y7_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The base is 12. It appears 9 times.",
-        "workingOut": "\\text{Base} = 12, \\quad \\text{Exponent} = 9 \\implies 12^9"
+        "workingOut": "\\text{Base} = 12, quad \\text{Exponent} = 9 \\implies 12^9"
       }
     ]
   },

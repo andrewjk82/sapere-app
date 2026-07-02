@@ -147,7 +147,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the function in standard form \\(y = A\\cos(bx + c) + d\\) and identify each parameter.",
-        "workingOut": "y = -3\\cos\\!\\left(2x - \\frac{\\pi}{4}\\right): \\quad A = -3,\\ b = 2,\\ c = -\\frac{\\pi}{4}"
+        "workingOut": "y = -3\\cos\\!\\left(2x - \\frac{\\pi}{4}\\right): \\quad A = -3, b = 2, c = -\\frac{\\pi}{4}"
       },
       {
         "explanation": "The period formula for a cosine function is \\(T = \\frac{2\\pi}{b}\\), where \\(b\\) is the coefficient of \\(x\\).",
@@ -174,10 +174,10 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "q": "Which one of the following is the set of all solutions to $2x^2 - 5x + 2 \\geq 0$?",
     "a": "3",
     "opts": [
-      "$\\left[\\dfrac{1}{2},\\ 2\\right]$",
-      "$\\left(\\dfrac{1}{2},\\ 2\\right)$",
-      "$\\left(-\\infty,\\ \\dfrac{1}{2}\\right) \\cup (2,\\ \\infty)$",
-      "$\\left(-\\infty,\\ \\dfrac{1}{2}\\right] \\cup [2,\\ \\infty)$"
+      "$\\left[\\dfrac{1}{2}, 2\\right]$",
+      "$\\left(\\dfrac{1}{2}, 2\\right)$",
+      "$\\left(-\\infty,\\ \\dfrac{1}{2}\\right) \\cup (2, \\infty)$",
+      "$\\left(-\\infty,\\ \\dfrac{1}{2}\\right] \\cup [2, \\infty)$"
     ],
     "h": "Factor the quadratic and use a sign diagram. The parabola opens upward, so it is $\\geq 0$ outside the roots.",
     "s": "$2x^2 - 5x + 2 = (2x-1)(x-2) = 0$ gives $x = \\frac{1}{2}$ or $x = 2$. Since the parabola opens up, $(2x-1)(x-2) \\geq 0$ when $x \\leq \\frac{1}{2}$ or $x \\geq 2$.",
@@ -200,7 +200,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       },
       {
         "explanation": "Write the solution set using interval notation.",
-        "workingOut": "x \\in \\left(-\\infty,\\ \\tfrac{1}{2}\\right] \\cup [2,\\ \\infty)"
+        "workingOut": "x \\in \\left(-\\infty,\\ \\tfrac{1}{2}\\right] \\cup [2, \\infty)"
       }
     ]
   },
@@ -221,7 +221,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       "$3x^3(4-x)^3(7x-16)$"
     ],
     "h": "Apply the product rule: $(uv)' = u'v + uv'$ with $u = 3x^4$ and $v = (4-x)^3$.",
-    "s": "$u = 3x^4,\\ u' = 12x^3;\\ v = (4-x)^3,\\ v' = -3(4-x)^2$.\n$f'(x) = 12x^3(4-x)^3 + 3x^4 \\cdot (-3)(4-x)^2 = 3x^3(4-x)^2[4(4-x) - 3x] = 3x^3(4-x)^2(16-7x)$.",
+    "s": "$u = 3x^4, u' = 12x^3;\\ v = (4-x)^3, v' = -3(4-x)^2$.\n$f'(x) = 12x^3(4-x)^3 + 3x^4 \\cdot (-3)(4-x)^2 = 3x^3(4-x)^2[4(4-x) - 3x] = 3x^3(4-x)^2(16-7x)$.",
     "solutionSteps": [
       {
         "explanation": "Identify \\(u\\) and \\(v\\) for the product rule. Let \\(u = 3x^4\\) and \\(v = (4-x)^3\\).",
@@ -264,9 +264,9 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "q": "The graph of $y = f(x)$ has a stationary point at $(2, -3)$. Which of the following is a stationary point of $y = -f\\!\\left(\\dfrac{x}{2}\\right) - 5$?",
     "a": "1",
     "opts": [
-      "$(4,\\ 2)$",
+      "$(4, 2)$",
       "$(4,\\ -2)$",
-      "$(1,\\ 2)$",
+      "$(1, 2)$",
       "$(1,\\ -2)$"
     ],
     "h": "If $f$ has a stationary point at $(2, -3)$, apply the transformations one step at a time: horizontal dilation $\\times 2$ (replace $x \\to \\frac{x}{2}$), then reflect in $x$-axis, then shift down by 5.",
@@ -311,7 +311,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       "$\\dfrac{63\\pi}{64}$"
     ],
     "h": "Identify $a$ and $r$, then use $S_n = \\dfrac{a(1-r^n)}{1-r}$.",
-    "s": "$a = 2\\pi,\\ r = \\frac{1}{2}$. $S_6 = \\dfrac{2\\pi\\left(1 - (\\frac{1}{2})^6\\right)}{1 - \\frac{1}{2}} = \\dfrac{2\\pi \\cdot \\frac{63}{64}}{\\frac{1}{2}} = 4\\pi \\cdot \\dfrac{63}{64} = \\dfrac{63\\pi}{16}$.",
+    "s": "$a = 2\\pi, r = \\frac{1}{2}$. $S_6 = \\dfrac{2\\pi\\left(1 - (\\frac{1}{2})^6\\right)}{1 - \\frac{1}{2}} = \\dfrac{2\\pi \\cdot \\frac{63}{64}}{\\frac{1}{2}} = 4\\pi \\cdot \\dfrac{63}{64} = \\dfrac{63\\pi}{16}$.",
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\). The first term is \\(a = 2\\pi\\). To find \\(r\\), divide the second term by the first.",
@@ -319,7 +319,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       },
       {
         "explanation": "Confirm the ratio is consistent: \\(\\frac{\\pi/2}{\\pi} = \\frac{1}{2}\\) ✓. This is a geometric series with \\(a = 2\\pi\\), \\(r = \\frac{1}{2}\\), \\(n = 6\\).",
-        "workingOut": "a = 2\\pi,\\quad r = \\tfrac{1}{2},\\quad n = 6"
+        "workingOut": "a = 2\\pi, quad r = \\tfrac{1}{2}, quad n = 6"
       },
       {
         "explanation": "Write the geometric series sum formula: \\(S_n = \\dfrac{a(1 - r^n)}{1 - r}\\).",
@@ -442,7 +442,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       },
       {
         "explanation": "Identify \\(a = 5\\) and \\(b = 1\\) in \\(\\frac{1}{5x+1}\\).",
-        "workingOut": "a = 5,\\quad b = 1"
+        "workingOut": "a = 5, quad b = 1"
       },
       {
         "explanation": "Apply the formula: the coefficient in front of \\(\\ln\\) is \\(\\frac{1}{a} = \\frac{1}{5}\\).",
@@ -684,7 +684,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "source": "Abbotsleigh 2020 Trial Q11(e)(iii)",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "A curve has $\\dfrac{dy}{dx} = x^3 + 2x - 7$ and passes through the point $P(2,\\ 4)$. Find $y$ in terms of $x$.",
+    "q": "A curve has $\\dfrac{dy}{dx} = x^3 + 2x - 7$ and passes through the point $P(2, 4)$. Find $y$ in terms of $x$.",
     "a": "0",
     "opts": [
       "$y = \\dfrac{x^4}{4} + x^2 - 7x + 10$",
@@ -729,7 +729,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "source": "Abbotsleigh 2020 Trial Q11(e)(iv)",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Find an equation for the normal to the curve at $P(2,\\ 4)$, given $\\dfrac{dy}{dx} = x^3 + 2x - 7$. Write your answer in the form $ax + by + c = 0$ where $a$, $b$ and $c$ are integers.",
+    "q": "Find an equation for the normal to the curve at $P(2, 4)$, given $\\dfrac{dy}{dx} = x^3 + 2x - 7$. Write your answer in the form $ax + by + c = 0$ where $a$, $b$ and $c$ are integers.",
     "a": "0",
     "opts": [
       "$x + 5y - 22 = 0$",
@@ -791,7 +791,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       },
       {
         "explanation": "The only \\(x\\)-intercept is \\((2, 0)\\).",
-        "workingOut": "x\\text{-intercept: } (2,\\ 0)"
+        "workingOut": "x\\text{-intercept: } (2, 0)"
       },
       {
         "explanation": "To find the \\(y\\)-intercept, substitute \\(x = 0\\) into \\(h(x)\\).",
@@ -816,7 +816,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "opts": [
       "Local max at $\\left(\\dfrac{1}{3},\\ -\\dfrac{50}{27}\\right)$ and local min at $(1,\\ -2)$",
       "Local min at $\\left(\\dfrac{1}{3},\\ -\\dfrac{50}{27}\\right)$ and local max at $(1,\\ -2)$",
-      "Local max at $\\left(\\dfrac{1}{3},\\ \\dfrac{50}{27}\\right)$ and local min at $(1,\\ 2)$",
+      "Local max at $\\left(\\dfrac{1}{3},\\ \\dfrac{50}{27}\\right)$ and local min at $(1, 2)$",
       "Stationary points at $x = \\dfrac{1}{3}$ and $x = 1$, both are inflection points"
     ],
     "h": "Expand $h(x)$, find $h'(x)$, set equal to zero, then use the second derivative to determine nature.",
@@ -889,7 +889,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Since \\(\\tan\\theta = \\frac{4}{5} = \\frac{\\text{opposite}}{\\text{adjacent}}\\), draw a right-angled triangle with opposite side = 4, adjacent side = 5.",
-        "workingOut": "\\text{opp} = 4,\\quad \\text{adj} = 5"
+        "workingOut": "\\text{opp} = 4, quad \\text{adj} = 5"
       },
       {
         "explanation": "Find the hypotenuse using Pythagoras' theorem: \\(\\text{hyp}^2 = 4^2 + 5^2 = 16 + 25 = 41\\).",
@@ -1066,7 +1066,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       "$\\dfrac{x^2\\cos x - \\sin x}{x^4}$"
     ],
     "h": "Apply the quotient rule: $\\left(\\dfrac{u}{v}\\right)' = \\dfrac{u'v - uv'}{v^2}$.",
-    "s": "$u = \\sin x,\\ u' = \\cos x;\\ v = x^2,\\ v' = 2x$. $y' = \\dfrac{x^2\\cos x - 2x\\sin x}{x^4} = \\dfrac{x\\cos x - 2\\sin x}{x^3}$.",
+    "s": "$u = \\sin x, u' = \\cos x;\\ v = x^2, v' = 2x$. $y' = \\dfrac{x^2\\cos x - 2x\\sin x}{x^4} = \\dfrac{x\\cos x - 2\\sin x}{x^3}$.",
     "solutionSteps": [
       {
         "explanation": "Apply the quotient rule \\(\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}\\). Identify \\(u = \\sin x\\) and \\(v = x^2\\).",
@@ -1255,7 +1255,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "With the data already entered in the calculator, run the linear regression (LinReg) function. This finds the line \\(H = A + Bt\\) that best fits the data by minimising the sum of squared residuals.",
-        "workingOut": "\\text{LinReg}(t,\\ H) \\to A,\\ B"
+        "workingOut": "\\text{LinReg}(t, H) \\to A, B"
       },
       {
         "explanation": "The calculator returns the \\(y\\)-intercept \\(A \\approx -0.94\\) (to 2 decimal places).",
@@ -1398,7 +1398,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       },
       {
         "explanation": "Read off: centre \\((h, k) = (2, -3)\\) and \\(r^2 = 25 \\Rightarrow r = 5\\).",
-        "workingOut": "\\text{Centre } (2,\\ -3),\\quad \\text{radius } r = 5"
+        "workingOut": "\\text{Centre } (2,\\ -3), quad \\text{radius } r = 5"
       }
     ]
   },
@@ -1616,7 +1616,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       },
       {
         "explanation": "Differentiate \\(y' = -2x \\cdot e^{-x^2}\\) using the product rule with \\(u = -2x\\) and \\(v = e^{-x^2}\\).",
-        "workingOut": "u = -2x,\\ u' = -2 \\qquad v = e^{-x^2},\\ v' = -2xe^{-x^2}"
+        "workingOut": "u = -2x, u' = -2 \\qquad v = e^{-x^2}, v' = -2xe^{-x^2}"
       },
       {
         "explanation": "Apply product rule \\(y'' = u'v + uv'\\).",
@@ -1643,10 +1643,10 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "q": "Find the coordinates of the two points of inflection on the curve $y = e^{-x^2}$.",
     "a": "0",
     "opts": [
-      "$\\left(\\pm\\dfrac{1}{\\sqrt{2}},\\ e^{-1/2}\\right)$",
-      "$\\left(\\pm\\dfrac{1}{\\sqrt{2}},\\ e^{1/2}\\right)$",
-      "$\\left(\\pm\\dfrac{1}{2},\\ e^{-1/4}\\right)$",
-      "$\\left(\\pm 1,\\ e^{-1}\\right)$"
+      "$\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)$",
+      "$\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{1/2}\\right)$",
+      "$\\left(\\pm\\dfrac{1}{2}, e^{-1/4}\\right)$",
+      "$\\left(\\pm 1, e^{-1}\\right)$"
     ],
     "h": "Set $d^2y/dx^2 = 0$. Since $e^{-x^2} \\neq 0$, you need $x^2 - \\frac{1}{2} = 0$.",
     "s": "$4e^{-x^2}\\left(x^2-\\frac{1}{2}\\right) = 0 \\Rightarrow x^2 = \\frac{1}{2} \\Rightarrow x = \\pm\\frac{1}{\\sqrt{2}}$. $y = e^{-1/2}$ at both points.",
@@ -1668,8 +1668,8 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
         "workingOut": ""
       },
       {
-        "explanation": "The two points of inflection are at \\(\\left(-\\frac{1}{\\sqrt{2}},\\ e^{-1/2}\\right)\\) and \\(\\left(\\frac{1}{\\sqrt{2}},\\ e^{-1/2}\\right)\\).",
-        "workingOut": "\\left(\\pm\\tfrac{1}{\\sqrt{2}},\\ e^{-1/2}\\right)"
+        "explanation": "The two points of inflection are at \\(\\left(-\\frac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\) and \\(\\left(\\frac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\).",
+        "workingOut": "\\left(\\pm\\tfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)"
       }
     ]
   },
@@ -1710,7 +1710,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       },
       {
         "explanation": "Evaluate the function at each point. At \\(x_0 = -\\frac{1}{\\sqrt{2}}\\): \\(f = e^{-(1/\\sqrt{2})^2} = e^{-1/2}\\). At \\(x_1 = 0\\): \\(f = e^0 = 1\\). At \\(x_2 = \\frac{1}{\\sqrt{2}}\\): \\(f = e^{-1/2}\\).",
-        "workingOut": "y_0 = e^{-1/2},\\quad y_1 = 1,\\quad y_2 = e^{-1/2}"
+        "workingOut": "y_0 = e^{-1/2}, quad y_1 = 1, quad y_2 = e^{-1/2}"
       },
       {
         "explanation": "Apply the trapezoidal rule with 2 subintervals: \\(\\int \\approx \\frac{h}{2}[y_0 + 2y_1 + y_2]\\).",
@@ -1718,10 +1718,10 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
       },
       {
         "explanation": "Distribute \\(\\frac{1}{2\\sqrt{2}}\\) across the bracket.",
-        "workingOut": "= \\frac{1}{2\\sqrt{2}} \\cdot \\frac{2}{\\sqrt{e}} + \\frac{1}{2\\sqrt{2}} \\cdot 2 = \\frac{1}{\\sqrt{2}\\,\\sqrt{e}} + \\frac{1}{\\sqrt{2}}"
+        "workingOut": "= \\frac{1}{2\\sqrt{2}} \\cdot \\frac{2}{\\sqrt{e}} + \\frac{1}{2\\sqrt{2}} \\cdot 2 = \\frac{1}{\\sqrt{2}\\, sqrt{e}} + \\frac{1}{\\sqrt{2}}"
       },
       {
-        "explanation": "Write \\(\\frac{1}{\\sqrt{2}\\,\\sqrt{e}} = \\frac{1}{\\sqrt{2}\\,e^{1/2}} = \\frac{1}{\\sqrt{2}\\,e}\\) (using \\(\\sqrt{e} \\equiv e^{1/2}\\)). The approximation equals \\(\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}\\,e}\\). \\(\\square\\)",
+        "explanation": "Write \\(\\frac{1}{\\sqrt{2}\\, sqrt{e}} = \\frac{1}{\\sqrt{2}\\,e^{1/2}} = \\frac{1}{\\sqrt{2}\\,e}\\) (using \\(\\sqrt{e} \\equiv e^{1/2}\\)). The approximation equals \\(\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}\\,e}\\). \\(\\square\\)",
         "workingOut": "\\approx \\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}\\,e}"
       }
     ]

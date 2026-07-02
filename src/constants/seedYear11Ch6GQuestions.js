@@ -65,7 +65,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Find solutions in Quadrants II and IV.",
-        "workingOut": "\\theta = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, \\quad 360^{\\circ} - 45^{\\circ} = 315^{\\circ}"
+        "workingOut": "\\theta = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, quad 360^{\\circ} - 45^{\\circ} = 315^{\\circ}"
       }
     ]
   },
@@ -313,7 +313,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate solutions to the nearest degree.",
-        "workingOut": "x = 64^{\\circ}, \\quad 360^{\\circ} - 64^{\\circ} = 296^{\\circ}"
+        "workingOut": "x = 64^{\\circ}, quad 360^{\\circ} - 64^{\\circ} = 296^{\\circ}"
       }
     ]
   },
@@ -335,7 +335,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate solutions in Quadrants I and II.",
-        "workingOut": "x = 14^{\\circ}, \\quad 180^{\\circ} - 14^{\\circ} = 166^{\\circ}"
+        "workingOut": "x = 14^{\\circ}, quad 180^{\\circ} - 14^{\\circ} = 166^{\\circ}"
       }
     ]
   },
@@ -357,7 +357,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate solutions in Quadrants I and III.",
-        "workingOut": "x = 79^{\\circ}, \\quad 180^{\\circ} + 79^{\\circ} = 259^{\\circ}"
+        "workingOut": "x = 79^{\\circ}, quad 180^{\\circ} + 79^{\\circ} = 259^{\\circ}"
       }
     ]
   },
@@ -379,7 +379,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate solutions in Quadrants III and IV.",
-        "workingOut": "x = 180^{\\circ} + 37^{\\circ} = 217^{\\circ}, \\quad 360^{\\circ} - 37^{\\circ} = 323^{\\circ}"
+        "workingOut": "x = 180^{\\circ} + 37^{\\circ} = 217^{\\circ}, quad 360^{\\circ} - 37^{\\circ} = 323^{\\circ}"
       }
     ]
   },
@@ -401,7 +401,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate solutions in Quadrants II and IV.",
-        "workingOut": "x = 180^{\\circ} - 65^{\\circ} = 115^{\\circ}, \\quad 360^{\\circ} - 65^{\\circ} = 295^{\\circ}"
+        "workingOut": "x = 180^{\\circ} - 65^{\\circ} = 115^{\\circ}, quad 360^{\\circ} - 65^{\\circ} = 295^{\\circ}"
       }
     ]
   },
@@ -423,7 +423,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate solutions in Quadrants II and III.",
-        "workingOut": "x = 180^{\\circ} - 49^{\\circ} = 131^{\\circ}, \\quad 180^{\\circ} + 49^{\\circ} = 229^{\\circ}"
+        "workingOut": "x = 180^{\\circ} - 49^{\\circ} = 131^{\\circ}, quad 180^{\\circ} + 49^{\\circ} = 229^{\\circ}"
       }
     ]
   },
@@ -449,7 +449,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate solutions.",
-        "workingOut": "\\alpha = 11^{\\circ} 32', \\quad 180^{\\circ} - 11^{\\circ} 32' = 168^{\\circ} 28'"
+        "workingOut": "\\alpha = 11^{\\circ} 32', quad 180^{\\circ} - 11^{\\circ} 32' = 168^{\\circ} 28'"
       }
     ]
   },
@@ -471,7 +471,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate solutions in Quadrants II and III.",
-        "workingOut": "\\alpha = 180^{\\circ} - 78^{\\circ} 28' = 101^{\\circ} 32', \\quad 180^{\\circ} + 78^{\\circ} 28' = 258^{\\circ} 28'"
+        "workingOut": "\\alpha = 180^{\\circ} - 78^{\\circ} 28' = 101^{\\circ} 32', quad 180^{\\circ} + 78^{\\circ} 28' = 258^{\\circ} 28'"
       }
     ]
   },
@@ -611,7 +611,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate solutions in Quadrants I and III.",
-        "workingOut": "\\alpha = 26^{\\circ} 34', \\quad 206^{\\circ} 34'"
+        "workingOut": "\\alpha = 26^{\\circ} 34', quad 206^{\\circ} 34'"
       }
     ]
   },
@@ -633,7 +633,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Identify solutions in the range \\([-180^{\\circ}, 180^{\\circ}]\\).",
-        "workingOut": "x = -21^{\\circ} 48', \\quad 180^{\\circ} - 21^{\\circ} 48' = 158^{\\circ} 12'"
+        "workingOut": "x = -21^{\\circ} 48', quad 180^{\\circ} - 21^{\\circ} 48' = 158^{\\circ} 12'"
       }
     ]
   },
@@ -721,7 +721,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Add \\(360^{\\circ}\\) to find solutions in the second cycle \\([360^{\\circ}, 720^{\\circ}]\\).",
-        "workingOut": "\\theta = 30^{\\circ} + 360^{\\circ} = 390^{\\circ}, \\quad 150^{\\circ} + 360^{\\circ} = 510^{\\circ}"
+        "workingOut": "\\theta = 30^{\\circ} + 360^{\\circ} = 390^{\\circ}, quad 150^{\\circ} + 360^{\\circ} = 510^{\\circ}"
       }
     ]
   },
@@ -765,7 +765,7 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Calculate second cycle solutions.",
-        "workingOut": "\\theta = 120^{\\circ} + 360^{\\circ} = 480^{\\circ}, \\quad 240^{\\circ} + 360^{\\circ} = 600^{\\circ}"
+        "workingOut": "\\theta = 120^{\\circ} + 360^{\\circ} = 480^{\\circ}, quad 240^{\\circ} + 360^{\\circ} = 600^{\\circ}"
       }
     ]
   },
@@ -787,11 +787,11 @@ export const Y11_CH6G_QUESTIONS = [
       },
       {
         "explanation": "Find Quadrants I and III solutions in the first cycle.",
-        "workingOut": "\\theta = 36^{\\circ}, \\quad 180^{\\circ} + 36^{\\circ} = 216^{\\circ}"
+        "workingOut": "\\theta = 36^{\\circ}, quad 180^{\\circ} + 36^{\\circ} = 216^{\\circ}"
       },
       {
         "explanation": "Find solutions in the second cycle.",
-        "workingOut": "\\theta = 36^{\\circ} + 360^{\\circ} = 396^{\\circ}, \\quad 216^{\\circ} + 360^{\\circ} = 576^{\\circ}"
+        "workingOut": "\\theta = 36^{\\circ} + 360^{\\circ} = 396^{\\circ}, quad 216^{\\circ} + 360^{\\circ} = 576^{\\circ}"
       }
     ]
   },

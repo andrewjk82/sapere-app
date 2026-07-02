@@ -10,7 +10,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 2",
-        "workingOut": "2^4 = 16, \\quad 2^5 = 32, \\quad 2^6 = 64"
+        "workingOut": "2^4 = 16, quad 2^5 = 32, quad 2^6 = 64"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -29,7 +29,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 2",
-        "workingOut": "2^{13} = 8192, \\quad 2^{14} = 16\\,384, \\quad 2^{15} = 32\\,768"
+        "workingOut": "2^{13} = 8192, quad 2^{14} = 16\\,384, quad 2^{15} = 32\\,768"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -48,7 +48,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 2",
-        "workingOut": "2^{22} = 4\\,194\\,304, \\quad 2^{23} = 8\\,388\\,608"
+        "workingOut": "2^{22} = 4\\,194\\,304, quad 2^{23} = 8\\,388\\,608"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -67,7 +67,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 3",
-        "workingOut": "3^1 = 3, \\quad 3^2 = 9, \\quad 3^3 = 27"
+        "workingOut": "3^1 = 3, quad 3^2 = 9, quad 3^3 = 27"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -86,7 +86,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 3",
-        "workingOut": "3^8 = 6561, \\quad 3^9 = 19\\,683, \\quad 3^{10} = 59\\,049"
+        "workingOut": "3^8 = 6561, quad 3^9 = 19\\,683, quad 3^{10} = 59\\,049"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -105,7 +105,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 3",
-        "workingOut": "3^{13} = 1\\,594\\,323, \\quad 3^{14} = 4\\,782\\,969, \\quad 3^{15} = 14\\,348\\,907"
+        "workingOut": "3^{13} = 1\\,594\\,323, quad 3^{14} = 4\\,782\\,969, quad 3^{15} = 14\\,348\\,907"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -124,7 +124,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 1/2",
-        "workingOut": "0.5^3 = 0.125, \\quad 0.5^4 = 0.0625, \\quad 0.5^5 = 0.03125"
+        "workingOut": "0.5^3 = 0.125, quad 0.5^4 = 0.0625, quad 0.5^5 = 0.03125"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -143,7 +143,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 1/2",
-        "workingOut": "0.5^7 = 0.0078125, \\quad 0.5^8 = 0.00390625, \\quad 0.5^9 = 0.001953125"
+        "workingOut": "0.5^7 = 0.0078125, quad 0.5^8 = 0.00390625, quad 0.5^9 = 0.001953125"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -162,7 +162,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 1/2",
-        "workingOut": "0.5^{13} \\approx 0.000122, \\quad 0.5^{14} \\approx 0.000061, \\quad 0.5^{15} \\approx 0.000031"
+        "workingOut": "0.5^{13} \\approx 0.000122, quad 0.5^{14} \\approx 0.000061, quad 0.5^{15} \\approx 0.000031"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -181,7 +181,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 1/3",
-        "workingOut": "(1/3)^1 \\approx 0.333, \\quad (1/3)^2 \\approx 0.111, \\quad (1/3)^3 \\approx 0.037"
+        "workingOut": "(1/3)^1 \\approx 0.333, quad (1/3)^2 \\approx 0.111, quad (1/3)^3 \\approx 0.037"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -200,7 +200,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 1/3",
-        "workingOut": "(1/3)^3 \\approx 0.037, \\quad (1/3)^4 \\approx 0.0123, \\quad (1/3)^5 \\approx 0.0041"
+        "workingOut": "(1/3)^3 \\approx 0.037, quad (1/3)^4 \\approx 0.0123, quad (1/3)^5 \\approx 0.0041"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -219,7 +219,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Test values of n by calculating powers of 1/3",
-        "workingOut": "(1/3)^8 \\approx 0.000152, \\quad (1/3)^9 \\approx 0.000051, \\quad (1/3)^{10} \\approx 0.000017"
+        "workingOut": "(1/3)^8 \\approx 0.000152, quad (1/3)^9 \\approx 0.000051, quad (1/3)^{10} \\approx 0.000017"
       },
       {
         "explanation": "Identify the smallest integer n that makes the inequality true",
@@ -446,7 +446,7 @@ export const Y12A_CH8B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify parameters of the GP",
-        "workingOut": "a = 60\\,000, \\quad r = 1.05"
+        "workingOut": "a = 60\\,000, quad r = 1.05"
       },
       {
         "explanation": "Set up the inequality for doubling the salary",

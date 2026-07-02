@@ -67,7 +67,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Check shape, dimensions, and dividing line alignment.",
-        "workingOut": "\\text{Regular hexagon}, \\text{ side } 4\\text{ cm}, \\text{ diagonal split}"
+        "workingOut": "\\text{Regular hexagon}, text{ side } 4\\text{ cm}, text{ diagonal split}"
       }
     ],
     "graphData": null
@@ -669,7 +669,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find corresponding vertices for the endpoints A and B.",
-        "workingOut": "A \\longleftrightarrow V, \\quad B \\longleftrightarrow W \\implies AB \\longleftrightarrow VW"
+        "workingOut": "A \\longleftrightarrow V, quad B \\longleftrightarrow W \\implies AB \\longleftrightarrow VW"
       }
     ],
     "graphData": {
@@ -786,7 +786,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find corresponding endpoints.",
-        "workingOut": "C \\longleftrightarrow X, \\quad D \\longleftrightarrow Y \\implies CD \\longleftrightarrow XY"
+        "workingOut": "C \\longleftrightarrow X, quad D \\longleftrightarrow Y \\implies CD \\longleftrightarrow XY"
       }
     ],
     "graphData": {
@@ -903,7 +903,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Match endpoints.",
-        "workingOut": "D \\longleftrightarrow Y, \\quad E \\longleftrightarrow Z \\implies DE \\longleftrightarrow YZ"
+        "workingOut": "D \\longleftrightarrow Y, quad E \\longleftrightarrow Z \\implies DE \\longleftrightarrow YZ"
       }
     ],
     "graphData": {
@@ -1020,7 +1020,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Match endpoints A and D.",
-        "workingOut": "A \\longleftrightarrow V, \\quad D \\longleftrightarrow Y \\implies AD \\longleftrightarrow VY"
+        "workingOut": "A \\longleftrightarrow V, quad D \\longleftrightarrow Y \\implies AD \\longleftrightarrow VY"
       }
     ],
     "graphData": {
@@ -1137,7 +1137,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Match vertices in order.",
-        "workingOut": "A \\to V, \\quad B \\to W, \\quad C \\to X \\implies \\angle ABC \\longleftrightarrow \\angle VWX"
+        "workingOut": "A \\to V, quad B \\to W, quad C \\to X \\implies \\angle ABC \\longleftrightarrow \\angle VWX"
       }
     ],
     "graphData": {
@@ -1254,7 +1254,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Match vertices in order.",
-        "workingOut": "B \\to W, \\quad C \\to X, \\quad D \\to Y \\implies \\angle BCD \\longleftrightarrow \\angle WXY"
+        "workingOut": "B \\to W, quad C \\to X, quad D \\to Y \\implies \\angle BCD \\longleftrightarrow \\angle WXY"
       }
     ],
     "graphData": {
@@ -1371,7 +1371,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Match vertices in order.",
-        "workingOut": "A \\to V, \\quad D \\to Y, \\quad E \\to Z \\implies \\angle ADE \\longleftrightarrow \\angle VYZ"
+        "workingOut": "A \\to V, quad D \\to Y, quad E \\to Z \\implies \\angle ADE \\longleftrightarrow \\angle VYZ"
       }
     ],
     "graphData": {
@@ -1498,7 +1498,7 @@ export const Y8_CH12G_QUESTIONS = [
       },
       {
         "explanation": "Check if the \\(10\\text{ cm}\\) side is included between \\(55^\\circ\\) and \\(65^\\circ\\) in \\(\\triangle DEF\\).",
-        "workingOut": "\\text{Included side is } DE, \\text{ but we are given } EF = 10\\text{ cm} \\text{ (opposite } 55^\\circ\\text{)}"
+        "workingOut": "\\text{Included side is } DE, text{ but we are given } EF = 10\\text{ cm} \\text{ (opposite } 55^\\circ\\text{)}"
       }
     ],
     "graphData": null
@@ -1521,7 +1521,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compare the sides and the included angle.",
-        "workingOut": "AB = YZ = 8\\text{ cm}, \\quad BC = XY = 15\\text{ cm}, \\quad \\angle B = \\angle Y = 90^\\circ"
+        "workingOut": "AB = YZ = 8\\text{ cm}, quad BC = XY = 15\\text{ cm}, quad \\angle B = \\angle Y = 90^\\circ"
       },
       {
         "explanation": "Use SAS test for congruence.",
@@ -1548,7 +1548,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the third angle of both triangles.",
-        "workingOut": "\\angle C = 180^\\circ - 145^\\circ = 35^\\circ, \\quad \\angle R = 180^\\circ - 140^\\circ = 40^\\circ"
+        "workingOut": "\\angle C = 180^\\circ - 145^\\circ = 35^\\circ, quad \\angle R = 180^\\circ - 140^\\circ = 40^\\circ"
       },
       {
         "explanation": "Verify if the 7 cm side is opposite the same angle in both.",
@@ -1583,7 +1583,7 @@ export const Y8_CH12G_QUESTIONS = [
       },
       {
         "explanation": "Match vertices.",
-        "workingOut": "A \\leftrightarrow E, \\quad B \\leftrightarrow D, \\quad C \\leftrightarrow F"
+        "workingOut": "A \\leftrightarrow E, quad B \\leftrightarrow D, quad C \\leftrightarrow F"
       }
     ],
     "graphData": null
@@ -2402,7 +2402,7 @@ export const Y8_CH12G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the angles inside \\(\\triangle ABC\\).",
-        "workingOut": "\\angle B = 60^\\circ, \\quad \\angle CAB = 20^\\circ"
+        "workingOut": "\\angle B = 60^\\circ, quad \\angle CAB = 20^\\circ"
       },
       {
         "explanation": "Subtract the sum from \\(180^\\circ\\).",

@@ -25,7 +25,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Set \\(u = \\cos x\\), so \\(\\frac{du}{dx} = -\\sin x\\).",
-        "workingOut": "u = \\cos x,\\quad \\frac{du}{dx} = -\\sin x"
+        "workingOut": "u = \\cos x, quad \\frac{du}{dx} = -\\sin x"
       },
       {
         "explanation": "Apply the chain rule.",
@@ -397,7 +397,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "List the \\(x\\)-values and compute \\(y = xe^x\\) at each.",
-        "workingOut": "y_0=e^1,\\ y_1=1.5e^{1.5},\\ y_2=2e^2,\\ y_3=2.5e^{2.5},\\ y_4=3e^3"
+        "workingOut": "y_0=e^1, y_1=1.5e^{1.5}, y_2=2e^2, y_3=2.5e^{2.5}, y_4=3e^3"
       },
       {
         "explanation": "Apply the trapezoidal rule formula \\(\\frac{h}{2}[y_0+2(y_1+y_2+y_3)+y_4]\\).",
@@ -435,7 +435,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Compute \\(y\\) values: \\(y_0=0\\cdot e^0=0\\), \\(y_1=1\\cdot e^1=e\\), \\(y_2=2\\cdot e^2\\).",
-        "workingOut": "y_0=0,\\ y_1=e,\\ y_2=2e^2"
+        "workingOut": "y_0=0, y_1=e, y_2=2e^2"
       },
       {
         "explanation": "Apply trapezoidal rule.",
@@ -669,7 +669,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "State the new turning point.",
-        "workingOut": "(-1,\\ 8)"
+        "workingOut": "(-1, 8)"
       }
     ]
   },
@@ -724,7 +724,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the outer and inner functions.",
-        "workingOut": "\\text{outer: } u^5,\\quad \\text{inner: } u = 3x+4"
+        "workingOut": "\\text{outer: } u^5, quad \\text{inner: } u = 3x+4"
       },
       {
         "explanation": "Differentiate the outer function.",
@@ -782,11 +782,11 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(u\\) and \\(v\\) for the quotient rule.",
-        "workingOut": "u = \\tan x,\\quad v = x"
+        "workingOut": "u = \\tan x, quad v = x"
       },
       {
         "explanation": "Differentiate each.",
-        "workingOut": "u' = \\sec^2 x,\\quad v' = 1"
+        "workingOut": "u' = \\sec^2 x, quad v' = 1"
       },
       {
         "explanation": "Apply the quotient rule.",
@@ -811,7 +811,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set \\(u = \\sin x\\), \\(v = x\\).",
-        "workingOut": "u' = \\cos x,\\quad v' = 1"
+        "workingOut": "u' = \\cos x, quad v' = 1"
       },
       {
         "explanation": "Apply quotient rule.",
@@ -836,7 +836,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(u = x\\), \\(v = e^{3x}\\) for the product rule.",
-        "workingOut": "u' = 1,\\quad v' = 3e^{3x}"
+        "workingOut": "u' = 1, quad v' = 3e^{3x}"
       },
       {
         "explanation": "Apply product rule: \\(u\\prime v + uv\\prime\\).",
@@ -865,7 +865,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply product rule.",
-        "workingOut": "u' = 1,\\quad v' = 2e^{2x}"
+        "workingOut": "u' = 1, quad v' = 2e^{2x}"
       },
       {
         "explanation": "Combine.",
@@ -894,11 +894,11 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Recognise \\(e^{3x}(3x+1) = \\frac{d}{dx}[xe^{3x}]\\) from part (b)(i).",
-        "workingOut": "= 3\\,\\frac{d}{dx}\\bigl[xe^{3x}\\bigr]"
+        "workingOut": "= 3\\, frac{d}{dx}\\bigl[xe^{3x}\\bigr]"
       },
       {
         "explanation": "Integrate using the antiderivative.",
-        "workingOut": "\\int_0^2 3\\,\\frac{d}{dx}\\bigl[xe^{3x}\\bigr]\\,dx = 3\\Bigl[xe^{3x}\\Bigr]_0^2"
+        "workingOut": "\\int_0^2 3\\, frac{d}{dx}\\bigl[xe^{3x}\\bigr]\\,dx = 3\\Bigl[xe^{3x}\\Bigr]_0^2"
       },
       {
         "explanation": "Evaluate at the limits.",
@@ -923,7 +923,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor: \\(e^{2x}(2+4x) = 2e^{2x}(2x+1) = 2\\frac{d}{dx}[xe^{2x}]\\).",
-        "workingOut": "2\\,\\frac{d}{dx}\\bigl[xe^{2x}\\bigr]"
+        "workingOut": "2\\, frac{d}{dx}\\bigl[xe^{2x}\\bigr]"
       },
       {
         "explanation": "Integrate.",
@@ -1428,7 +1428,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Read off the gradient and intercept.",
-        "workingOut": "b \\approx 0.95,\\quad a \\approx 12"
+        "workingOut": "b \\approx 0.95, quad a \\approx 12"
       },
       {
         "explanation": "Write the equation.",
@@ -1578,7 +1578,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List first three terms: \\(8,\\ \\frac{8}{3},\\ \\frac{8}{9}\\).",
-        "workingOut": "T_1 = 8,\\quad T_2 = \\frac{8}{3},\\quad T_3 = \\frac{8}{9}"
+        "workingOut": "T_1 = 8, quad T_2 = \\frac{8}{3}, quad T_3 = \\frac{8}{9}"
       },
       {
         "explanation": "Add the three terms.",
@@ -1598,12 +1598,12 @@ export const BARKER_2020_QUESTIONS = [
     "q": "For a geometric series with first term 10 and common ratio $\\dfrac{3}{5}$, calculate the sum of the first four terms.",
     "opts": [],
     "h": "Add the first four terms: $10 + 6 + 3.6 + 2.16$.",
-    "s": "$T_1=10,\\ T_2=6,\\ T_3=3.6,\\ T_4=2.16$. $S_4 = 21.76$.",
+    "s": "$T_1=10, T_2=6, T_3=3.6, T_4=2.16$. $S_4 = 21.76$.",
     "a": "$21.76$",
     "solutionSteps": [
       {
         "explanation": "First four terms.",
-        "workingOut": "10,\\ 6,\\ 3.6,\\ 2.16"
+        "workingOut": "10, 6, 3.6, 2.16"
       },
       {
         "explanation": "Sum.",
@@ -1644,7 +1644,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "State the answer.",
-        "workingOut": "a = -12,\\quad d = 4"
+        "workingOut": "a = -12, quad d = 4"
       }
     ]
   },
@@ -1681,7 +1681,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Verify: \\(S_{10}=5(2(23)+9(-3))=5(46-27)=95\\) ✓",
-        "workingOut": "a=23,\\quad d=-3"
+        "workingOut": "a=23, quad d=-3"
       }
     ]
   },
@@ -1810,7 +1810,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify amplitude, period, vertical shift.",
-        "workingOut": "\\text{Amplitude} = 2,\\quad \\text{Period} = \\pi,\\quad \\text{Shift} = +1"
+        "workingOut": "\\text{Amplitude} = 2, quad \\text{Period} = \\pi, quad \\text{Shift} = +1"
       },
       {
         "explanation": "Maximum value \\(= 2+1 = 3\\), minimum \\(= -2+1 = -1\\).",
@@ -1868,7 +1868,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify top and bottom curves in the shaded region (\\(x=2\\) to \\(x=3\\)): parabola above line.",
-        "workingOut": "\\text{Top: } y=(x-1)^2,\\quad \\text{Bottom: } y=3-x"
+        "workingOut": "\\text{Top: } y=(x-1)^2, quad \\text{Bottom: } y=3-x"
       },
       {
         "explanation": "Set up the integral.",
@@ -1946,11 +1946,11 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Find \\(f''(x)\\) and evaluate at each stationary point.",
-        "workingOut": "f''(x) = 36x^2-48x;\\quad f''(0)=0,\\quad f''(2)=48>0"
+        "workingOut": "f''(x) = 36x^2-48x;\\quad f''(0)=0, quad f''(2)=48>0"
       },
       {
         "explanation": "Test sign of \\(f'\\) around \\(x=0\\): negative both sides → horizontal POI.",
-        "workingOut": "f'(-1)<0,\\quad f'(1)<0 \\Rightarrow \\text{horizontal POI at }(0,6)"
+        "workingOut": "f'(-1)<0, quad f'(1)<0 \\Rightarrow \\text{horizontal POI at }(0,6)"
       },
       {
         "explanation": "\\(f''(2)>0\\) → minimum. Compute \\(f(2)=3(16)-8(8)+6=-10\\).",
@@ -1979,7 +1979,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Stationary points at \\(x=0\\) and \\(x=3\\).",
-        "workingOut": "x=0,\\quad x=3"
+        "workingOut": "x=0, quad x=3"
       },
       {
         "explanation": "\\(f''(0)=0\\), test sign of \\(f'\\) → horizontal POI at \\((0,5)\\).",
@@ -2016,7 +2016,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Sketch a smooth quartic through these key points with the correct shape.",
-        "workingOut": "\\text{Decreasing on }(-\\infty,2),\\text{ increasing on }(2,\\infty)"
+        "workingOut": "\\text{Decreasing on }(-\\infty,2), text{ increasing on }(2, infty)"
       }
     ]
   },
@@ -2053,7 +2053,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "State both values.",
-        "workingOut": "a=5,\\quad b=0.18"
+        "workingOut": "a=5, quad b=0.18"
       }
     ]
   },
@@ -2335,7 +2335,7 @@ export const BARKER_2020_QUESTIONS = [
     "a": "$x = 0,\\ \\dfrac{2\\pi}{3},\\ \\dfrac{4\\pi}{3},\\ 2\\pi$",
     "opts": [],
     "h": "Rearrange to $2\\cos^2 x - \\cos x - 1 = 0$ and treat as a quadratic in $\\cos x$.",
-    "s": "$2\\cos^2 x - \\cos x - 1 = 0$. Let $u = \\cos x$: $(2u+1)(u-1)=0$. $u = -\\frac{1}{2}$ or $u = 1$. $\\cos x = -\\frac{1}{2} \\Rightarrow x = \\frac{2\\pi}{3}, \\frac{4\\pi}{3}$. $\\cos x = 1 \\Rightarrow x = 0, 2\\pi$.",
+    "s": "$2\\cos^2 x - \\cos x - 1 = 0$. Let $u = \\cos x$: $(2u+1)(u-1)=0$. $u = -\\frac{1}{2}$ or $u = 1$. $\\cos x = -\\frac{1}{2} \\Rightarrow x = \\frac{2\\pi}{3}, frac{4\\pi}{3}$. $\\cos x = 1 \\Rightarrow x = 0, 2\\pi$.",
     "solutionSteps": [
       {
         "explanation": "Rearrange the equation.",
@@ -2351,11 +2351,11 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Solve \\(\\cos x = 1\\).",
-        "workingOut": "x = 0,\\ 2\\pi"
+        "workingOut": "x = 0, 2\\pi"
       },
       {
         "explanation": "List all solutions.",
-        "workingOut": "x = 0,\\ \\frac{2\\pi}{3},\\ \\frac{4\\pi}{3},\\ 2\\pi"
+        "workingOut": "x = 0,\\ \\frac{2\\pi}{3},\\ \\frac{4\\pi}{3}, 2\\pi"
       }
     ]
   },
@@ -2372,7 +2372,7 @@ export const BARKER_2020_QUESTIONS = [
     "a": "$x = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{3\\pi}{2}$",
     "opts": [],
     "h": "Factorise as a quadratic in $\\sin x$.",
-    "s": "$(2\\sin x - 1)(\\sin x + 1)=0$. $\\sin x = \\frac{1}{2} \\Rightarrow x = \\frac{\\pi}{6}, \\frac{5\\pi}{6}$. $\\sin x = -1 \\Rightarrow x = \\frac{3\\pi}{2}$.",
+    "s": "$(2\\sin x - 1)(\\sin x + 1)=0$. $\\sin x = \\frac{1}{2} \\Rightarrow x = \\frac{\\pi}{6}, frac{5\\pi}{6}$. $\\sin x = -1 \\Rightarrow x = \\frac{3\\pi}{2}$.",
     "solutionSteps": [
       {
         "explanation": "Factorise.",
@@ -2405,7 +2405,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The vertex is at \\((-b, c) = (2, 1)\\).",
-        "workingOut": "b = -2,\\quad c = 1"
+        "workingOut": "b = -2, quad c = 1"
       },
       {
         "explanation": "The graph opens downward, so \\(k < 0\\).",
@@ -2417,7 +2417,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "State all values.",
-        "workingOut": "k=-\\frac{1}{2},\\quad b=-2,\\quad c=1"
+        "workingOut": "k=-\\frac{1}{2}, quad b=-2, quad c=1"
       }
     ]
   },
@@ -2438,7 +2438,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "From vertex \\((-1,3)\\): \\(b=1\\), \\(c=3\\).",
-        "workingOut": "b=1,\\quad c=3"
+        "workingOut": "b=1, quad c=3"
       },
       {
         "explanation": "Upward and gradient \\(=2\\): \\(k=2\\).",
@@ -2839,7 +2839,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Count outcomes for each.",
-        "workingOut": "n(8)=5,\\ n(10)=3,\\ n(12)=1 \\Rightarrow \\text{total}=9"
+        "workingOut": "n(8)=5, n(10)=3, n(12)=1 \\Rightarrow \\text{total}=9"
       },
       {
         "explanation": "Calculate probability.",
@@ -2864,7 +2864,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Odd sums \\(>8\\): 9 and 11.",
-        "workingOut": "n(9)=4,\\ n(11)=2 \\Rightarrow \\text{total}=6"
+        "workingOut": "n(9)=4, n(11)=2 \\Rightarrow \\text{total}=6"
       },
       {
         "explanation": "Calculate probability.",
@@ -2918,7 +2918,7 @@ export const BARKER_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Both even outcomes: 9 total.",
-        "workingOut": "{(2,2),(2,4),\\ldots,(6,6)}"
+        "workingOut": "{(2,2),(2,4), ldots,(6,6)}"
       },
       {
         "explanation": "Even sums \\(>7\\): sums 8,10,12. Count: (2,6),(4,4),(4,6),(6,2),(6,4),(6,6) → 6.",
@@ -3005,7 +3005,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "From \\(\\tan\\theta=\\frac{1}{2}\\): \\(\\sin\\theta=\\frac{1}{\\sqrt{5}}\\), \\(\\cos\\theta=\\frac{2}{\\sqrt{5}}\\).",
-        "workingOut": "\\sin\\theta=\\frac{1}{\\sqrt{5}},\\quad \\cos\\theta=\\frac{2}{\\sqrt{5}}"
+        "workingOut": "\\sin\\theta=\\frac{1}{\\sqrt{5}}, quad \\cos\\theta=\\frac{2}{\\sqrt{5}}"
       },
       {
         "explanation": "Verify maximum using \\(L''<0\\).",
@@ -3038,7 +3038,7 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Use a 5-12-13 triangle: \\(\\sin\\theta=5/13\\), \\(\\cos\\theta=12/13\\).",
-        "workingOut": "\\sin\\theta=\\frac{5}{13},\\quad\\cos\\theta=\\frac{12}{13}"
+        "workingOut": "\\sin\\theta=\\frac{5}{13}, quad\\cos\\theta=\\frac{12}{13}"
       },
       {
         "explanation": "Compute \\(L_{\\max}\\).",

@@ -11,7 +11,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x = -3, -2, -1, 0, 1, 2, 3\\) into the rule \\(y = 2x\\).",
-        "workingOut": "y = 2(-3) = -6, \\quad y = 2(-2) = -4, \\quad y = 2(-1) = -2, \\quad y = 2(0) = 0, \\quad y = 2(1) = 2, \\quad y = 2(2) = 4, \\quad y = 2(3) = 6"
+        "workingOut": "y = 2(-3) = -6, quad y = 2(-2) = -4, quad y = 2(-1) = -2, quad y = 2(0) = 0, quad y = 2(1) = 2, quad y = 2(2) = 4, quad y = 2(3) = 6"
       },
       {
         "explanation": "List the coordinates as ordered pairs \\((x, y)\\).",
@@ -36,7 +36,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) values into the rule \\(y = -3x\\).",
-        "workingOut": "y = -3(-3) = 9, \\quad y = -3(-2) = 6, \\quad y = -3(-1) = 3, \\quad y = -3(0) = 0, \\quad y = -3(1) = -3, \\quad y = -3(2) = -6, \\quad y = -3(3) = -9"
+        "workingOut": "y = -3(-3) = 9, quad y = -3(-2) = 6, quad y = -3(-1) = 3, quad y = -3(0) = 0, quad y = -3(1) = -3, quad y = -3(2) = -6, quad y = -3(3) = -9"
       },
       {
         "explanation": "List the coordinates as ordered pairs.",
@@ -61,7 +61,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) values into the rule \\(y = x - 3\\).",
-        "workingOut": "y = -3 - 3 = -6, \\quad y = -2 - 3 = -5, \\quad y = -1 - 3 = -4, \\quad y = 0 - 3 = -3, \\quad y = 1 - 3 = -2, \\quad y = 2 - 3 = -1, \\quad y = 3 - 3 = 0"
+        "workingOut": "y = -3 - 3 = -6, quad y = -2 - 3 = -5, quad y = -1 - 3 = -4, quad y = 0 - 3 = -3, quad y = 1 - 3 = -2, quad y = 2 - 3 = -1, quad y = 3 - 3 = 0"
       },
       {
         "explanation": "Form the coordinate pairs.",
@@ -86,7 +86,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) values into the rule \\(y = x + 3\\).",
-        "workingOut": "y = -3 + 3 = 0, \\quad y = -2 + 3 = 1, \\quad y = -1 + 3 = 2, \\quad y = 0 + 3 = 3, \\quad y = 1 + 3 = 4, \\quad y = 2 + 3 = 5, \\quad y = 3 + 3 = 6"
+        "workingOut": "y = -3 + 3 = 0, quad y = -2 + 3 = 1, quad y = -1 + 3 = 2, quad y = 0 + 3 = 3, quad y = 1 + 3 = 4, quad y = 2 + 3 = 5, quad y = 3 + 3 = 6"
       },
       {
         "explanation": "Form the coordinate pairs.",
@@ -111,7 +111,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) values into the rule \\(y = 2x - 1\\).",
-        "workingOut": "y = 2(-3)-1 = -7, \\quad y = 2(-2)-1 = -5, \\quad y = 2(-1)-1 = -3, \\quad y = 2(0)-1 = -1, \\quad y = 2(1)-1 = 1, \\quad y = 2(2)-1 = 3, \\quad y = 2(3)-1 = 5"
+        "workingOut": "y = 2(-3)-1 = -7, quad y = 2(-2)-1 = -5, quad y = 2(-1)-1 = -3, quad y = 2(0)-1 = -1, quad y = 2(1)-1 = 1, quad y = 2(2)-1 = 3, quad y = 2(3)-1 = 5"
       },
       {
         "explanation": "Form the coordinate pairs.",
@@ -136,7 +136,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) values into the rule \\(y = 2 - x\\).",
-        "workingOut": "y = 2 - (-3) = 5, \\quad y = 2 - (-2) = 4, \\quad y = 2 - (-1) = 3, \\quad y = 2 - 0 = 2, \\quad y = 2 - 1 = 1, \\quad y = 2 - 2 = 0, \\quad y = 2 - 3 = -1"
+        "workingOut": "y = 2 - (-3) = 5, quad y = 2 - (-2) = 4, quad y = 2 - (-1) = 3, quad y = 2 - 0 = 2, quad y = 2 - 1 = 1, quad y = 2 - 2 = 0, quad y = 2 - 3 = -1"
       },
       {
         "explanation": "Form the coordinate pairs.",
@@ -161,7 +161,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) values into the rule \\(y = x + 1.5\\).",
-        "workingOut": "y = -3+1.5 = -1.5, \\quad y = -2+1.5 = -0.5, \\quad y = -1+1.5 = 0.5, \\quad y = 0+1.5 = 1.5, \\quad y = 1+1.5 = 2.5, \\quad y = 2+1.5 = 3.5, \\quad y = 3+1.5 = 4.5"
+        "workingOut": "y = -3+1.5 = -1.5, quad y = -2+1.5 = -0.5, quad y = -1+1.5 = 0.5, quad y = 0+1.5 = 1.5, quad y = 1+1.5 = 2.5, quad y = 2+1.5 = 3.5, quad y = 3+1.5 = 4.5"
       },
       {
         "explanation": "Form the coordinate pairs.",
@@ -186,7 +186,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) values into the rule \\(y = x - 1.5\\).",
-        "workingOut": "y = -3-1.5 = -4.5, \\quad y = -2-1.5 = -3.5, \\quad y = -1-1.5 = -2.5, \\quad y = 0-1.5 = -1.5, \\quad y = 1-1.5 = -0.5, \\quad y = 2-1.5 = 0.5, \\quad y = 3-1.5 = 1.5"
+        "workingOut": "y = -3-1.5 = -4.5, quad y = -2-1.5 = -3.5, quad y = -1-1.5 = -2.5, quad y = 0-1.5 = -1.5, quad y = 1-1.5 = -0.5, quad y = 2-1.5 = 0.5, quad y = 3-1.5 = 1.5"
       },
       {
         "explanation": "Form the coordinate pairs.",
@@ -211,7 +211,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) values into the rule \\(y = 2x - 0.5\\).",
-        "workingOut": "y = 2(-3)-0.5 = -6.5, \\quad y = 2(-2)-0.5 = -4.5, \\quad y = 2(-1)-0.5 = -2.5, \\quad y = 2(0)-0.5 = -0.5, \\quad y = 2(1)-0.5 = 1.5, \\quad y = 2(2)-0.5 = 3.5, \\quad y = 2(3)-0.5 = 5.5"
+        "workingOut": "y = 2(-3)-0.5 = -6.5, quad y = 2(-2)-0.5 = -4.5, quad y = 2(-1)-0.5 = -2.5, quad y = 2(0)-0.5 = -0.5, quad y = 2(1)-0.5 = 1.5, quad y = 2(2)-0.5 = 3.5, quad y = 2(3)-0.5 = 5.5"
       },
       {
         "explanation": "Form the coordinate pairs.",
@@ -236,7 +236,7 @@ export const Y8_CH18A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x\\) values into the rule \\(y = -x - 0.5\\).",
-        "workingOut": "y = -(-3)-0.5 = 2.5, \\quad y = -(-2)-0.5 = 1.5, \\quad y = -(-1)-0.5 = 0.5, \\quad y = -(0)-0.5 = -0.5, \\quad y = -(1)-0.5 = -1.5, \\quad y = -(2)-0.5 = -2.5, \\quad y = -(3)-0.5 = -3.5"
+        "workingOut": "y = -(-3)-0.5 = 2.5, quad y = -(-2)-0.5 = 1.5, quad y = -(-1)-0.5 = 0.5, quad y = -(0)-0.5 = -0.5, quad y = -(1)-0.5 = -1.5, quad y = -(2)-0.5 = -2.5, quad y = -(3)-0.5 = -3.5"
       },
       {
         "explanation": "Form the coordinate pairs.",

@@ -10,38 +10,43 @@ export const Y12A_CH3D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Point A is a local minimum: tangent is horizontal (\\( y' = 0 \\)) and curve is concave up (\\( y'' > 0 \\)).",
-        "workingOut": "y'(A) = 0, \\quad y''(A) > 0"
+        "workingOut": "y'(A) = 0, quad y''(A) > 0"
       },
       {
         "explanation": "Point B is on the rising section where concavity changes from up to down: rising (\\( y' > 0 \\)) and point of inflection (\\( y'' = 0 \\)).",
-        "workingOut": "y'(B) > 0, \\quad y''(B) = 0"
+        "workingOut": "y'(B) > 0, quad y''(B) = 0"
       },
       {
         "explanation": "Point C is a local maximum: tangent is horizontal (\\( y' = 0 \\)) and curve is concave down (\\( y'' < 0 \\)).",
-        "workingOut": "y'(C) = 0, \\quad y''(C) < 0"
+        "workingOut": "y'(C) = 0, quad y''(C) < 0"
       },
       {
         "explanation": "Point D is on the falling section where concavity changes from down to up: falling (\\( y' < 0 \\)) and point of inflection (\\( y'' = 0 \\)).",
-        "workingOut": "y'(D) < 0, \\quad y''(D) = 0"
+        "workingOut": "y'(D) < 0, quad y''(D) = 0"
       },
       {
         "explanation": "Points E and F are on the falling section after the inflection point: falling (\\( y' < 0 \\)) and concave up (\\( y'' > 0 \\)).",
-        "workingOut": "y'(E) < 0, \\, y''(E) > 0 \\quad \\text{and} \\quad y'(F) < 0, \\, y''(F) > 0"
+        "workingOut": "y'(E) < 0, y''(E) > 0 \\quad \\text{and} \\quad y'(F) < 0, y''(F) > 0"
       },
       {
         "explanation": "Point G is a local minimum: tangent is horizontal (\\( y' = 0 \\)) and curve is concave up (\\( y'' > 0 \\)).",
-        "workingOut": "y'(G) = 0, \\quad y''(G) > 0"
+        "workingOut": "y'(G) = 0, quad y''(G) > 0"
       },
       {
         "explanation": "Points H and I are on the rising section where the curve continues to bend upwards: rising (\\( y' > 0 \\)) and concave up (\\( y'' > 0 \\)).",
-        "workingOut": "y'(H) > 0, \\, y''(H) > 0 \\quad \\text{and} \\quad y'(I) > 0, \\, y''(I) > 0"
+        "workingOut": "y'(H) > 0, y''(H) > 0 \\quad \\text{and} \\quad y'(I) > 0, y''(I) > 0"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 6, 4, -6],
+        "boundingbox": [
+          -3,
+          6,
+          4,
+          -6
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 5.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 0.25*x*x*x*x - 2*x*x; };\nboard.create('functiongraph', [f, -2.5, 2.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, -4], {name: 'A', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -15]}});\nboard.create('point', [-1.15, -2.31], {name: 'B', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [0, 0], {name: 'C', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 12]}});\nboard.create('point', [1.15, -2.31], {name: 'D', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [1.5, -3.23], {name: 'E', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1.8, -3.83], {name: 'F', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.create('point', [2, -4], {name: 'G', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -15]}});\nboard.create('point', [2.2, -3.83], {name: 'H', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [2.4, -3.23], {name: 'I', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -381,7 +386,7 @@ export const Y12A_CH3D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Points of inflection require that \\( y'' = 0 \\) and that the sign of \\( y'' \\) changes across the point.",
-        "workingOut": "5x^2(x-4)^3(x+1) = 0 \\implies x = 0, \\, 4, \\, -1"
+        "workingOut": "5x^2(x-4)^3(x+1) = 0 \\implies x = 0, 4, \\, -1"
       },
       {
         "explanation": "Analyze the sign change of \\( y'' \\) around each root. At \\( x = 0 \\), the factor \\( x^2 \\) has an even power, so \\( y'' \\) does not change sign.",
@@ -393,7 +398,7 @@ export const Y12A_CH3D_QUESTIONS = [
       },
       {
         "explanation": "State the x-coordinates of the inflection points.",
-        "workingOut": "x = -1, \\, 4"
+        "workingOut": "x = -1, 4"
       }
     ]
   },
@@ -447,7 +452,7 @@ export const Y12A_CH3D_QUESTIONS = [
       },
       {
         "explanation": "Locate stationary points where \\( f'(x) = 0 \\).",
-        "workingOut": "3(x-2)(x+2) = 0 \\implies x = 2 \\text{ or } x = -2 \\implies y(2) = -16, \\, y(-2) = 16"
+        "workingOut": "3(x-2)(x+2) = 0 \\implies x = 2 \\text{ or } x = -2 \\implies y(2) = -16, y(-2) = 16"
       },
       {
         "explanation": "Test concavities at the stationary points.",
@@ -462,7 +467,12 @@ export const Y12A_CH3D_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-5, 25, 5, -25],
+        "boundingbox": [
+          -5,
+          25,
+          5,
+          -25
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-22], [0,22]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -2, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 20, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 12*x; };\nboard.create('functiongraph', [f, -4.2, 4.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 16], {name: 'Max(-2,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [2, -16], {name: 'Min(2,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [0, 0], {name: 'Inflection(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -519,14 +529,19 @@ export const Y12A_CH3D_QUESTIONS = [
       },
       {
         "explanation": "Locate points of inflection.",
-        "workingOut": "f''(x) = 0 \\implies x = 1 \\implies y(1) = -16. \\, \\text{Table around } x=1 \\text{ shows } y'' \\text{ sign change.}"
+        "workingOut": "f''(x) = 0 \\implies x = 1 \\implies y(1) = -16. \\, text{Table around } x=1 \\text{ shows } y'' \\text{ sign change.}"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-5, 60, 6, -95],
+        "boundingbox": [
+          -5,
+          60,
+          6,
+          -95
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-90], [0,55]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 50, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 3*x*x - 24*x + 10; };\nboard.create('functiongraph', [f, -4.5, 5.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 38], {name: 'Max(-2,38)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [4, -70], {name: 'Min(4,-70)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [1, -16], {name: 'Inflection(1,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -586,7 +601,12 @@ export const Y12A_CH3D_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 50, 7, -100],
+        "boundingbox": [
+          -3,
+          50,
+          7,
+          -100
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-95], [0,45]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 40, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 6*x*x - 15*x + 20; };\nboard.create('functiongraph', [f, -2.5, 6.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 28], {name: 'Max(-1,28)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [5, -80], {name: 'Min(5,-80)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [2, -26], {name: 'Inflection(2,-26)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [0, 20], {name: '20', size: 2, color: 'black', label: {autoPosition: false, offset: [-20, 0]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -639,14 +659,19 @@ export const Y12A_CH3D_QUESTIONS = [
       },
       {
         "explanation": "Identify points of inflection where \\( y'' = 0 \\) and check for a concavity change.",
-        "workingOut": "12x(4-3x) = 0 \\implies x = 0 \\text{ or } x = \\frac{4}{3}. \\, \\text{Since } y'' \\text{ changes sign across both, both are inflection points: } (0, 16) \\text{ and } (\\frac{4}{3}, \\frac{688}{27})"
+        "workingOut": "12x(4-3x) = 0 \\implies x = 0 \\text{ or } x = \\frac{4}{3}. \\, text{Since } y'' \\text{ changes sign across both, both are inflection points: } (0, 16) \\text{ and } (\\frac{4}{3}, frac{688}{27})"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 40, 4, -10],
+        "boundingbox": [
+          -2,
+          40,
+          4,
+          -10
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5], [0,38]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -1, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 36, 'y'], {fontSize: 14});\nvar f = function(x) { return 16 + 8*x*x*x - 3*x*x*x*x; };\nboard.create('functiongraph', [f, -1.2, 2.4], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 16], {name: 'Inflection(0,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-110, -5]}});\nboard.create('point', [1.33, 25.48], {name: 'Inflection(1.33, 25.48)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.create('point', [2, 32], {name: 'Max(2,32)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -793,7 +818,7 @@ export const Y12A_CH3D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Differentiate each function twice.",
-        "workingOut": "\\begin{aligned} f'(x) &= 6x^2, \\quad f''(x) = 12x \\\\ g'(x) &= 12x^3, \\quad g''(x) = 36x^2 \\end{aligned}"
+        "workingOut": "\\begin{aligned} f'(x) &= 6x^2, quad f''(x) = 12x \\\\ g'(x) &= 12x^3, quad g''(x) = 36x^2 \\end{aligned}"
       },
       {
         "explanation": "Show second derivatives at the origin are zero.",
@@ -801,7 +826,7 @@ export const Y12A_CH3D_QUESTIONS = [
       },
       {
         "explanation": "Analyze first derivatives around the origin to determine natures.",
-        "workingOut": "\\text{For } f(x): \\, f'(-1)=6 > 0, \\, f'(1)=6 > 0 \\implies \\text{inflection. For } g(x): \\, g'(-1)=-12 < 0, \\, g'(1)=12 > 0 \\implies \\text{minimum.}"
+        "workingOut": "\\text{For } f(x): \\, f'(-1)=6 > 0, f'(1)=6 > 0 \\implies \\text{inflection. For } g(x): \\, g'(-1)=-12 < 0, g'(1)=12 > 0 \\implies \\text{minimum.}"
       }
     ]
   },
@@ -892,7 +917,12 @@ export const Y12A_CH3D_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-1, 5, 5, -1],
+        "boundingbox": [
+          -1,
+          5,
+          5,
+          -1
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.3, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 4.2, \"f'(x)\"], {fontSize: 14});\nvar f = function(x) { return 4 / (x + 1); };\nboard.create('functiongraph', [f, 0.01, 4.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
@@ -933,19 +963,19 @@ export const Y12A_CH3D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Part a: A positive first derivative means rising, and a positive second derivative means bending up.",
-        "workingOut": "f'(a) > 0 \\implies \\text{rising}, \\quad f''(a) > 0 \\implies \\text{concave up}"
+        "workingOut": "f'(a) > 0 \\implies \\text{rising}, quad f''(a) > 0 \\implies \\text{concave up}"
       },
       {
         "explanation": "Part b: A positive first derivative means rising, and a negative second derivative means bending down.",
-        "workingOut": "f'(a) > 0 \\implies \\text{rising}, \\quad f''(a) < 0 \\implies \\text{concave down}"
+        "workingOut": "f'(a) > 0 \\implies \\text{rising}, quad f''(a) < 0 \\implies \\text{concave down}"
       },
       {
         "explanation": "Part c: A negative first derivative means falling, and a positive second derivative means bending up.",
-        "workingOut": "f'(a) < 0 \\implies \\text{falling}, \\quad f''(a) > 0 \\implies \\text{concave up}"
+        "workingOut": "f'(a) < 0 \\implies \\text{falling}, quad f''(a) > 0 \\implies \\text{concave up}"
       },
       {
         "explanation": "Part d: A negative first derivative means falling, and a negative second derivative means bending down.",
-        "workingOut": "f'(a) < 0 \\implies \\text{falling}, \\quad f''(a) < 0 \\implies \\text{concave down}"
+        "workingOut": "f'(a) < 0 \\implies \\text{falling}, quad f''(a) < 0 \\implies \\text{concave down}"
       }
     ]
   },

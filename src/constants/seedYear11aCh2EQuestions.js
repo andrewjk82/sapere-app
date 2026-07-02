@@ -4,7 +4,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(7\\\\)",
+    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(\\\\frac{a}{b}\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(7\\\\)",
     "answer": 3,
     "options": [
       {
@@ -24,7 +24,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+    "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
@@ -56,7 +56,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(-2\\\\frac{1}{4}\\\\)",
+    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(\\\\frac{a}{b}\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(-2\\\\frac{1}{4}\\\\)",
     "answer": 2,
     "options": [
       {
@@ -76,7 +76,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+    "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
@@ -108,7 +108,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt{9}\\\\)",
+    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(\\\\frac{a}{b}\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt{9}\\\\)",
     "answer": 3,
     "options": [
       {
@@ -128,7 +128,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+    "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
@@ -160,7 +160,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt{10}\\\\)",
+    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(\\\\frac{a}{b}\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt{10}\\\\)",
     "answer": 2,
     "options": [
       {
@@ -180,7 +180,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+    "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
@@ -212,7 +212,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt[3]{15}\\\\)",
+    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(\\\\frac{a}{b}\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt[3]{15}\\\\)",
     "answer": 3,
     "options": [
       {
@@ -232,7 +232,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+    "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
@@ -264,7 +264,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt[4]{16}\\\\)",
+    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(\\\\frac{a}{b}\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt[4]{16}\\\\)",
     "answer": 3,
     "options": [
       {
@@ -284,7 +284,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+    "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
@@ -316,7 +316,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(-0.16\\\\)",
+    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(\\\\frac{a}{b}\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(-0.16\\\\)",
     "answer": 2,
     "options": [
       {
@@ -336,7 +336,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+    "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
@@ -368,7 +368,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\pi\\\\)",
+    "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(\\\\frac{a}{b}\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\pi\\\\)",
     "answer": 2,
     "options": [
       {
@@ -388,7 +388,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "hint": "A rational number can be written as a fraction \\\\(a/b\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
+    "hint": "A rational number can be written as a fraction \\\\(\\\\frac{a}{b}\\\\) of two integers with \\\\(b \\\\neq 0\\\\). Terminating and recurring decimals are rational; surds of non-perfect powers and numbers like \\\\(\\\\pi\\\\) are irrational.",
     "solution": "",
     "solutionSteps": [
       {
@@ -548,7 +548,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the endpoint(s) of the interval and whether each is included or excluded.",
-        "workingOut": "\\\\([-2, \\\\infty)\\\\)",
+        "workingOut": "\\\\([-2, infty)\\\\)",
         "graphData": null
       },
       {
@@ -568,7 +568,7 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Draw the final number line diagram with correctly marked circle(s) and shading to represent the interval.",
-        "workingOut": "\\\\([-2, \\\\infty)\\\\)",
+        "workingOut": "\\\\([-2, infty)\\\\)",
         "graphData": null
       }
     ],
@@ -955,12 +955,12 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Write the lower endpoint first, then the upper endpoint, separated by a comma.",
-        "workingOut": "\\\\((-4, \\\\infty)\\\\)",
+        "workingOut": "\\\\((-4, infty)\\\\)",
         "graphData": null
       },
       {
         "explanation": "Check the notation matches the original inequality by re-reading both endpoints.",
-        "workingOut": "\\\\((-4, \\\\infty)\\\\)",
+        "workingOut": "\\\\((-4, infty)\\\\)",
         "graphData": null
       }
     ],
@@ -1205,7 +1205,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify each bracket type in the interval notation.",
-        "workingOut": "\\\\((3, \\\\infty)\\\\)",
+        "workingOut": "\\\\((3, infty)\\\\)",
         "graphData": null
       },
       {
@@ -2054,7 +2054,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each surd separately by finding its largest perfect square factor.",
-        "workingOut": "\\\\sqrt{27} = 3\\\\sqrt{3}, \\\\quad \\\\sqrt{12} = 2\\\\sqrt{3}",
+        "workingOut": "\\\\sqrt{27} = 3\\\\sqrt{3}, quad \\\\sqrt{12} = 2\\\\sqrt{3}",
         "graphData": null
       },
       {
@@ -2106,7 +2106,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each surd separately by finding its largest perfect square factor.",
-        "workingOut": "\\\\sqrt{18} = 3\\\\sqrt{2}, \\\\quad \\\\sqrt{32} = 4\\\\sqrt{2}",
+        "workingOut": "\\\\sqrt{18} = 3\\\\sqrt{2}, quad \\\\sqrt{32} = 4\\\\sqrt{2}",
         "graphData": null
       },
       {
@@ -2158,7 +2158,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each surd separately by finding its largest perfect square factor.",
-        "workingOut": "3\\\\sqrt{8} = 6\\\\sqrt{2}, \\\\quad \\\\sqrt{50} = 5\\\\sqrt{2}",
+        "workingOut": "3\\\\sqrt{8} = 6\\\\sqrt{2}, quad \\\\sqrt{50} = 5\\\\sqrt{2}",
         "graphData": null
       },
       {
@@ -2210,7 +2210,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each surd separately by finding its largest perfect square factor.",
-        "workingOut": "\\\\sqrt{54}=3\\\\sqrt{6}, \\\\sqrt{20}=2\\\\sqrt{5}, \\\\sqrt{150}=5\\\\sqrt{6}, \\\\sqrt{80}=4\\\\sqrt{5}",
+        "workingOut": "\\\\sqrt{54}=3\\\\sqrt{6}, sqrt{20}=2\\\\sqrt{5}, sqrt{150}=5\\\\sqrt{6}, sqrt{80}=4\\\\sqrt{5}",
         "graphData": null
       },
       {
@@ -3604,7 +3604,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each surd on the left-hand side by finding its largest perfect square factor.",
-        "workingOut": "\\\\sqrt{18} = 3\\\\sqrt{2}, \\\\quad \\\\sqrt{8} = 2\\\\sqrt{2}",
+        "workingOut": "\\\\sqrt{18} = 3\\\\sqrt{2}, quad \\\\sqrt{8} = 2\\\\sqrt{2}",
         "graphData": null
       },
       {

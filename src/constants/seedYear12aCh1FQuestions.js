@@ -570,7 +570,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 1, \\quad d = 1, \\quad l = 120\\)",
+        "workingOut": "\\(a = 1, quad d = 1, quad l = 120\\)",
         "graphData": null
       },
       {
@@ -619,7 +619,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 1, \\quad d = 2, \\quad l = 149\\)",
+        "workingOut": "\\(a = 1, quad d = 2, quad l = 149\\)",
         "graphData": null
       },
       {
@@ -668,7 +668,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 2, \\quad d = 2, \\quad l = 160\\)",
+        "workingOut": "\\(a = 2, quad d = 2, quad l = 160\\)",
         "graphData": null
       },
       {
@@ -717,7 +717,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 3, \\quad d = 3, \\quad l = 360\\)",
+        "workingOut": "\\(a = 3, quad d = 3, quad l = 360\\)",
         "graphData": null
       },
       {
@@ -766,7 +766,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 201, \\quad d = 2, \\quad l = 299\\)",
+        "workingOut": "\\(a = 201, quad d = 2, quad l = 299\\)",
         "graphData": null
       },
       {
@@ -815,7 +815,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 1001, \\quad d = 1, \\quad l = 4000\\)",
+        "workingOut": "\\(a = 1001, quad d = 1, quad l = 4000\\)",
         "graphData": null
       },
       {
@@ -864,7 +864,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 2, \\quad d = 2, \\quad l = 240\\)",
+        "workingOut": "\\(a = 2, quad d = 2, quad l = 240\\)",
         "graphData": null
       },
       {
@@ -913,7 +913,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 2, \\quad d = 4, \\quad l = 298\\)",
+        "workingOut": "\\(a = 2, quad d = 4, quad l = 298\\)",
         "graphData": null
       },
       {
@@ -962,7 +962,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 4, \\quad d = 4, \\quad l = 320\\)",
+        "workingOut": "\\(a = 4, quad d = 4, quad l = 320\\)",
         "graphData": null
       },
       {
@@ -1011,7 +1011,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 6, \\quad d = 6, \\quad l = 720\\)",
+        "workingOut": "\\(a = 6, quad d = 6, quad l = 720\\)",
         "graphData": null
       },
       {
@@ -1060,7 +1060,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 402, \\quad d = 4, \\quad l = 598\\)",
+        "workingOut": "\\(a = 402, quad d = 4, quad l = 598\\)",
         "graphData": null
       },
       {
@@ -1109,7 +1109,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 2002, \\quad d = 2, \\quad l = 8000\\)",
+        "workingOut": "\\(a = 2002, quad d = 2, quad l = 8000\\)",
         "graphData": null
       },
       {
@@ -1158,7 +1158,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 3, \\quad d = 3, \\quad l = 360\\)",
+        "workingOut": "\\(a = 3, quad d = 3, quad l = 360\\)",
         "graphData": null
       },
       {
@@ -1207,7 +1207,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 3, \\quad d = 6, \\quad l = 447\\)",
+        "workingOut": "\\(a = 3, quad d = 6, quad l = 447\\)",
         "graphData": null
       },
       {
@@ -1256,7 +1256,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term, common difference, and last term.",
-        "workingOut": "\\(a = 6, \\quad d = 6, \\quad l = 480\\)",
+        "workingOut": "\\(a = 6, quad d = 6, quad l = 480\\)",
         "graphData": null
       },
       {
@@ -1795,7 +1795,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = -7, \\quad d = -2 - -7 = 5\\)",
+        "workingOut": "\\(a = -7, quad d = -2 - -7 = 5\\)",
         "graphData": null
       },
       {
@@ -1849,7 +1849,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = -4, \\quad d = 2 - -4 = 6\\)",
+        "workingOut": "\\(a = -4, quad d = 2 - -4 = 6\\)",
         "graphData": null
       },
       {
@@ -1903,7 +1903,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = -1, \\quad d = 3 - -1 = 4\\)",
+        "workingOut": "\\(a = -1, quad d = 3 - -1 = 4\\)",
         "graphData": null
       },
       {
@@ -1957,7 +1957,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = 2, \\quad d = 7 - 2 = 5\\)",
+        "workingOut": "\\(a = 2, quad d = 7 - 2 = 5\\)",
         "graphData": null
       },
       {
@@ -2011,7 +2011,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = 5, \\quad d = 11 - 5 = 6\\)",
+        "workingOut": "\\(a = 5, quad d = 11 - 5 = 6\\)",
         "graphData": null
       },
       {
@@ -2065,7 +2065,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = 8, \\quad d = 12 - 8 = 4\\)",
+        "workingOut": "\\(a = 8, quad d = 12 - 8 = 4\\)",
         "graphData": null
       },
       {
@@ -2119,7 +2119,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = 11, \\quad d = 16 - 11 = 5\\)",
+        "workingOut": "\\(a = 11, quad d = 16 - 11 = 5\\)",
         "graphData": null
       },
       {
@@ -2173,7 +2173,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = 14, \\quad d = 20 - 14 = 6\\)",
+        "workingOut": "\\(a = 14, quad d = 20 - 14 = 6\\)",
         "graphData": null
       },
       {
@@ -2227,7 +2227,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = 17, \\quad d = 21 - 17 = 4\\)",
+        "workingOut": "\\(a = 17, quad d = 21 - 17 = 4\\)",
         "graphData": null
       },
       {
@@ -2281,7 +2281,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = 20, \\quad d = 25 - 20 = 5\\)",
+        "workingOut": "\\(a = 20, quad d = 25 - 20 = 5\\)",
         "graphData": null
       },
       {
@@ -2335,7 +2335,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = 23, \\quad d = 29 - 23 = 6\\)",
+        "workingOut": "\\(a = 23, quad d = 29 - 23 = 6\\)",
         "graphData": null
       },
       {
@@ -2389,7 +2389,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common difference.",
-        "workingOut": "\\(a = 26, \\quad d = 30 - 26 = 4\\)",
+        "workingOut": "\\(a = 26, quad d = 30 - 26 = 4\\)",
         "graphData": null
       },
       {
@@ -2443,7 +2443,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = -16, \\quad d = 4, \\quad n = 11\\)",
+        "workingOut": "\\(a = -16, quad d = 4, quad n = 11\\)",
         "graphData": null
       },
       {
@@ -2497,7 +2497,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = -12, \\quad d = 3, \\quad n = 12\\)",
+        "workingOut": "\\(a = -12, quad d = 3, quad n = 12\\)",
         "graphData": null
       },
       {
@@ -2551,7 +2551,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = -8, \\quad d = 2, \\quad n = 13\\)",
+        "workingOut": "\\(a = -8, quad d = 2, quad n = 13\\)",
         "graphData": null
       },
       {
@@ -2605,7 +2605,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = -4, \\quad d = 5, \\quad n = 14\\)",
+        "workingOut": "\\(a = -4, quad d = 5, quad n = 14\\)",
         "graphData": null
       },
       {
@@ -2659,7 +2659,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = 0, \\quad d = 4, \\quad n = 15\\)",
+        "workingOut": "\\(a = 0, quad d = 4, quad n = 15\\)",
         "graphData": null
       },
       {
@@ -2713,7 +2713,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = 4, \\quad d = 3, \\quad n = 16\\)",
+        "workingOut": "\\(a = 4, quad d = 3, quad n = 16\\)",
         "graphData": null
       },
       {
@@ -2767,7 +2767,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = 8, \\quad d = 2, \\quad n = 17\\)",
+        "workingOut": "\\(a = 8, quad d = 2, quad n = 17\\)",
         "graphData": null
       },
       {
@@ -2821,7 +2821,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = 12, \\quad d = 5, \\quad n = 18\\)",
+        "workingOut": "\\(a = 12, quad d = 5, quad n = 18\\)",
         "graphData": null
       },
       {
@@ -2875,7 +2875,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = 16, \\quad d = 4, \\quad n = 19\\)",
+        "workingOut": "\\(a = 16, quad d = 4, quad n = 19\\)",
         "graphData": null
       },
       {
@@ -2929,7 +2929,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = 20, \\quad d = 3, \\quad n = 20\\)",
+        "workingOut": "\\(a = 20, quad d = 3, quad n = 20\\)",
         "graphData": null
       },
       {
@@ -2983,7 +2983,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = 24, \\quad d = 2, \\quad n = 21\\)",
+        "workingOut": "\\(a = 24, quad d = 2, quad n = 21\\)",
         "graphData": null
       },
       {
@@ -3037,7 +3037,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the series.",
-        "workingOut": "\\(a = 28, \\quad d = 5, \\quad n = 22\\)",
+        "workingOut": "\\(a = 28, quad d = 5, quad n = 22\\)",
         "graphData": null
       },
       {
@@ -3091,7 +3091,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 12, \\quad d = 4, \\quad l = 52\\)",
+        "workingOut": "\\(a = 12, quad d = 4, quad l = 52\\)",
         "graphData": null
       },
       {
@@ -3140,7 +3140,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 14, \\quad d = 5, \\quad l = 69\\)",
+        "workingOut": "\\(a = 14, quad d = 5, quad l = 69\\)",
         "graphData": null
       },
       {
@@ -3189,7 +3189,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 16, \\quad d = 3, \\quad l = 52\\)",
+        "workingOut": "\\(a = 16, quad d = 3, quad l = 52\\)",
         "graphData": null
       },
       {
@@ -3238,7 +3238,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 18, \\quad d = 4, \\quad l = 70\\)",
+        "workingOut": "\\(a = 18, quad d = 4, quad l = 70\\)",
         "graphData": null
       },
       {
@@ -3287,7 +3287,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 20, \\quad d = 5, \\quad l = 90\\)",
+        "workingOut": "\\(a = 20, quad d = 5, quad l = 90\\)",
         "graphData": null
       },
       {
@@ -3336,7 +3336,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 22, \\quad d = 3, \\quad l = 67\\)",
+        "workingOut": "\\(a = 22, quad d = 3, quad l = 67\\)",
         "graphData": null
       },
       {
@@ -3385,7 +3385,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 24, \\quad d = 4, \\quad l = 88\\)",
+        "workingOut": "\\(a = 24, quad d = 4, quad l = 88\\)",
         "graphData": null
       },
       {
@@ -3434,7 +3434,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 26, \\quad d = 5, \\quad l = 111\\)",
+        "workingOut": "\\(a = 26, quad d = 5, quad l = 111\\)",
         "graphData": null
       },
       {
@@ -3483,7 +3483,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 28, \\quad d = 3, \\quad l = 82\\)",
+        "workingOut": "\\(a = 28, quad d = 3, quad l = 82\\)",
         "graphData": null
       },
       {
@@ -3532,7 +3532,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 30, \\quad d = 4, \\quad l = 106\\)",
+        "workingOut": "\\(a = 30, quad d = 4, quad l = 106\\)",
         "graphData": null
       },
       {
@@ -3581,7 +3581,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 32, \\quad d = 5, \\quad l = 132\\)",
+        "workingOut": "\\(a = 32, quad d = 5, quad l = 132\\)",
         "graphData": null
       },
       {
@@ -3630,7 +3630,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify a, d, and the last term l.",
-        "workingOut": "\\(a = 34, \\quad d = 3, \\quad l = 97\\)",
+        "workingOut": "\\(a = 34, quad d = 3, quad l = 97\\)",
         "graphData": null
       },
       {
@@ -3679,7 +3679,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters: first term, difference, and last term.",
-        "workingOut": "\\(a = 5, \\quad d = 5, \\quad l = 100\\)",
+        "workingOut": "\\(a = 5, quad d = 5, quad l = 100\\)",
         "graphData": null
       },
       {
@@ -3728,7 +3728,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters: first term, difference, and last term.",
-        "workingOut": "\\(a = 10, \\quad d = 5, \\quad l = 205\\)",
+        "workingOut": "\\(a = 10, quad d = 5, quad l = 205\\)",
         "graphData": null
       },
       {
@@ -3777,7 +3777,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters: first term, difference, and last term.",
-        "workingOut": "\\(a = 15, \\quad d = 5, \\quad l = 310\\)",
+        "workingOut": "\\(a = 15, quad d = 5, quad l = 310\\)",
         "graphData": null
       },
       {
@@ -3826,7 +3826,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters: first term, difference, and last term.",
-        "workingOut": "\\(a = 20, \\quad d = 5, \\quad l = 415\\)",
+        "workingOut": "\\(a = 20, quad d = 5, quad l = 415\\)",
         "graphData": null
       },
       {
@@ -3875,7 +3875,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters: first term, difference, and last term.",
-        "workingOut": "\\(a = 25, \\quad d = 5, \\quad l = 520\\)",
+        "workingOut": "\\(a = 25, quad d = 5, quad l = 520\\)",
         "graphData": null
       },
       {
@@ -3924,7 +3924,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters: first term, difference, and last term.",
-        "workingOut": "\\(a = 30, \\quad d = 5, \\quad l = 625\\)",
+        "workingOut": "\\(a = 30, quad d = 5, quad l = 625\\)",
         "graphData": null
       },
       {
@@ -3973,7 +3973,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters: first term, difference, and last term.",
-        "workingOut": "\\(a = 35, \\quad d = 5, \\quad l = 730\\)",
+        "workingOut": "\\(a = 35, quad d = 5, quad l = 730\\)",
         "graphData": null
       },
       {
@@ -4022,7 +4022,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters: first term, difference, and last term.",
-        "workingOut": "\\(a = 40, \\quad d = 5, \\quad l = 835\\)",
+        "workingOut": "\\(a = 40, quad d = 5, quad l = 835\\)",
         "graphData": null
       },
       {
@@ -4071,7 +4071,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 2, \\quad d = 2\\)",
+        "workingOut": "\\(a = 2, quad d = 2\\)",
         "graphData": null
       },
       {
@@ -4120,7 +4120,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 4, \\quad d = 3\\)",
+        "workingOut": "\\(a = 4, quad d = 3\\)",
         "graphData": null
       },
       {
@@ -4169,7 +4169,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 6, \\quad d = 4\\)",
+        "workingOut": "\\(a = 6, quad d = 4\\)",
         "graphData": null
       },
       {
@@ -4218,7 +4218,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 8, \\quad d = 5\\)",
+        "workingOut": "\\(a = 8, quad d = 5\\)",
         "graphData": null
       },
       {
@@ -4267,7 +4267,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 10, \\quad d = 6\\)",
+        "workingOut": "\\(a = 10, quad d = 6\\)",
         "graphData": null
       },
       {
@@ -4316,7 +4316,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 12, \\quad d = 7\\)",
+        "workingOut": "\\(a = 12, quad d = 7\\)",
         "graphData": null
       },
       {
@@ -4365,7 +4365,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 14, \\quad d = 8\\)",
+        "workingOut": "\\(a = 14, quad d = 8\\)",
         "graphData": null
       },
       {
@@ -4414,7 +4414,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 16, \\quad d = 9\\)",
+        "workingOut": "\\(a = 16, quad d = 9\\)",
         "graphData": null
       },
       {
@@ -4463,7 +4463,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 18, \\quad d = 10\\)",
+        "workingOut": "\\(a = 18, quad d = 10\\)",
         "graphData": null
       },
       {
@@ -4512,7 +4512,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 20, \\quad d = 11\\)",
+        "workingOut": "\\(a = 20, quad d = 11\\)",
         "graphData": null
       },
       {
@@ -4561,7 +4561,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the first and last terms of the series.",
-        "workingOut": "\\(a = 2, \\quad l = 2n\\)",
+        "workingOut": "\\(a = 2, quad l = 2n\\)",
         "graphData": null
       },
       {
@@ -4610,7 +4610,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the first and last terms of the series.",
-        "workingOut": "\\(a = 3, \\quad l = 3n\\)",
+        "workingOut": "\\(a = 3, quad l = 3n\\)",
         "graphData": null
       },
       {
@@ -4659,7 +4659,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the first and last terms of the series.",
-        "workingOut": "\\(a = 4, \\quad l = 4n\\)",
+        "workingOut": "\\(a = 4, quad l = 4n\\)",
         "graphData": null
       },
       {
@@ -4708,7 +4708,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the first and last terms of the series.",
-        "workingOut": "\\(a = 5, \\quad l = 5n\\)",
+        "workingOut": "\\(a = 5, quad l = 5n\\)",
         "graphData": null
       },
       {
@@ -4757,7 +4757,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the first and last terms of the series.",
-        "workingOut": "\\(a = 6, \\quad l = 6n\\)",
+        "workingOut": "\\(a = 6, quad l = 6n\\)",
         "graphData": null
       },
       {
@@ -4806,7 +4806,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the first and last terms of the series.",
-        "workingOut": "\\(a = 7, \\quad l = 7n\\)",
+        "workingOut": "\\(a = 7, quad l = 7n\\)",
         "graphData": null
       },
       {
@@ -4855,7 +4855,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the first and last terms of the series.",
-        "workingOut": "\\(a = 8, \\quad l = 8n\\)",
+        "workingOut": "\\(a = 8, quad l = 8n\\)",
         "graphData": null
       },
       {
@@ -4904,7 +4904,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the first and last terms of the series.",
-        "workingOut": "\\(a = 9, \\quad l = 9n\\)",
+        "workingOut": "\\(a = 9, quad l = 9n\\)",
         "graphData": null
       },
       {
@@ -5056,7 +5056,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the first term, common difference, and number of periods.",
-        "workingOut": "\\(a = 28000, \\quad d = 1600, \\quad n = 10\\)",
+        "workingOut": "\\(a = 28000, quad d = 1600, quad n = 10\\)",
         "graphData": null
       },
       {
@@ -5105,7 +5105,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the first term a and last term l.",
-        "workingOut": "\\(a = 105 - 3(1) = 102\\), \\quad \\(l = 105 - 3(60) = -75\\)",
+        "workingOut": "\\(a = 105 - 3(1) = 102\\), quad \\(l = 105 - 3(60) = -75\\)",
         "graphData": null
       },
       {
@@ -5154,7 +5154,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the first term a and last term l.",
-        "workingOut": "\\(a = 110 - 4(1) = 106\\), \\quad \\(l = 110 - 4(70) = -170\\)",
+        "workingOut": "\\(a = 110 - 4(1) = 106\\), quad \\(l = 110 - 4(70) = -170\\)",
         "graphData": null
       },
       {
@@ -5203,7 +5203,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the first term a and last term l.",
-        "workingOut": "\\(a = 115 - 5(1) = 110\\), \\quad \\(l = 115 - 5(80) = -285\\)",
+        "workingOut": "\\(a = 115 - 5(1) = 110\\), quad \\(l = 115 - 5(80) = -285\\)",
         "graphData": null
       },
       {
@@ -5252,7 +5252,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the first term a and last term l.",
-        "workingOut": "\\(a = 120 - 6(1) = 114\\), \\quad \\(l = 120 - 6(90) = -420\\)",
+        "workingOut": "\\(a = 120 - 6(1) = 114\\), quad \\(l = 120 - 6(90) = -420\\)",
         "graphData": null
       },
       {
@@ -5301,7 +5301,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the first term a and last term l.",
-        "workingOut": "\\(a = 125 - 7(1) = 118\\), \\quad \\(l = 125 - 7(100) = -575\\)",
+        "workingOut": "\\(a = 125 - 7(1) = 118\\), quad \\(l = 125 - 7(100) = -575\\)",
         "graphData": null
       },
       {
@@ -5350,7 +5350,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the first term a and last term l.",
-        "workingOut": "\\(a = 130 - 8(1) = 122\\), \\quad \\(l = 130 - 8(110) = -750\\)",
+        "workingOut": "\\(a = 130 - 8(1) = 122\\), quad \\(l = 130 - 8(110) = -750\\)",
         "graphData": null
       },
       {
@@ -5399,7 +5399,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the first term a and last term l.",
-        "workingOut": "\\(a = 135 - 9(1) = 126\\), \\quad \\(l = 135 - 9(120) = -945\\)",
+        "workingOut": "\\(a = 135 - 9(1) = 126\\), quad \\(l = 135 - 9(120) = -945\\)",
         "graphData": null
       },
       {
@@ -5448,7 +5448,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the first term a and last term l.",
-        "workingOut": "\\(a = 140 - 10(1) = 130\\), \\quad \\(l = 140 - 10(130) = -1160\\)",
+        "workingOut": "\\(a = 140 - 10(1) = 130\\), quad \\(l = 140 - 10(130) = -1160\\)",
         "graphData": null
       },
       {
@@ -5497,7 +5497,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the known variables.",
-        "workingOut": "\\(n = 10, \\quad a = -23, \\quad S_n = -5\\)",
+        "workingOut": "\\(n = 10, quad a = -23, quad S_n = -5\\)",
         "graphData": null
       },
       {
@@ -5546,7 +5546,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the known variables.",
-        "workingOut": "\\(n = 40, \\quad l = 8.5, \\quad S_n = 28\\)",
+        "workingOut": "\\(n = 40, quad l = 8.5, quad S_n = 28\\)",
         "graphData": null
       },
       {
@@ -5595,7 +5595,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the known variables.",
-        "workingOut": "\\(n = 8, \\quad a = 5, \\quad S_n = 348\\)",
+        "workingOut": "\\(n = 8, quad a = 5, quad S_n = 348\\)",
         "graphData": null
       },
       {
@@ -5644,7 +5644,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the known variables.",
-        "workingOut": "\\(n = 15, \\quad d = \\frac{2}{3}, \\quad S_n = -15\\)",
+        "workingOut": "\\(n = 15, quad d = \\frac{2}{3}, quad S_n = -15\\)",
         "graphData": null
       },
       {
@@ -5676,7 +5676,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 80, \\quad d = -8\\)",
+        "workingOut": "\\(a = 80, quad d = -8\\)",
         "graphData": null
       },
       {
@@ -5976,7 +5976,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 25, \\quad d = -2\\)",
+        "workingOut": "\\(a = 25, quad d = -2\\)",
         "graphData": null
       },
       {
@@ -6030,7 +6030,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 30, \\quad d = -2\\)",
+        "workingOut": "\\(a = 30, quad d = -2\\)",
         "graphData": null
       },
       {
@@ -6084,7 +6084,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 35, \\quad d = -2\\)",
+        "workingOut": "\\(a = 35, quad d = -2\\)",
         "graphData": null
       },
       {
@@ -6138,7 +6138,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 40, \\quad d = -2\\)",
+        "workingOut": "\\(a = 40, quad d = -2\\)",
         "graphData": null
       },
       {
@@ -6192,7 +6192,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 45, \\quad d = -2\\)",
+        "workingOut": "\\(a = 45, quad d = -2\\)",
         "graphData": null
       },
       {
@@ -6246,7 +6246,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 50, \\quad d = -2\\)",
+        "workingOut": "\\(a = 50, quad d = -2\\)",
         "graphData": null
       },
       {
@@ -6300,7 +6300,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 55, \\quad d = -2\\)",
+        "workingOut": "\\(a = 55, quad d = -2\\)",
         "graphData": null
       },
       {
@@ -6354,7 +6354,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference.",
-        "workingOut": "\\(a = 60, \\quad d = -2\\)",
+        "workingOut": "\\(a = 60, quad d = -2\\)",
         "graphData": null
       },
       {
@@ -6408,7 +6408,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the AP representation of the stack.",
-        "workingOut": "\\(a = 15, \\quad d = 1, \\quad S_n = 360\\)",
+        "workingOut": "\\(a = 15, quad d = 1, quad S_n = 360\\)",
         "graphData": null
       },
       {
@@ -6467,7 +6467,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the AP representing distance fallen in each second.",
-        "workingOut": "\\(a = 5, \\quad d = 10\\)",
+        "workingOut": "\\(a = 5, quad d = 10\\)",
         "graphData": null
       },
       {
@@ -6526,7 +6526,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Identify the first and last deposit distances.",
-        "workingOut": "\\(a = 24\\) km, \\quad \\(l = 36\\) km",
+        "workingOut": "\\(a = 24\\) km, quad \\(l = 36\\) km",
         "graphData": null
       },
       {

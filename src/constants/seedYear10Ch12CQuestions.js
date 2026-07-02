@@ -3233,7 +3233,7 @@ export const Y10_CH12C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let \\(h\\) be the height of the lighthouse \\(L\\). Express the distances \\(AL\\) and \\(BL\\) in terms of \\(h\\).",
-        "workingOut": "AL = \\frac{h}{\\tan(20.25^\\circ)}, \\quad BL = \\frac{h}{\\tan(10.20^\\circ)}"
+        "workingOut": "AL = \\frac{h}{\\tan(20.25^\\circ)}, quad BL = \\frac{h}{\\tan(10.20^\\circ)}"
       },
       {
         "explanation": "Calculate the angle \\(\\angle ALB\\) on the ground using the given bearings.",
@@ -3299,7 +3299,7 @@ export const Y10_CH12C_QUESTIONS = [
       },
       {
         "explanation": "Set up the equation.",
-        "workingOut": "\\mathrm{Horiz\\ Dist} = \\sqrt{200^2 + 150^2} = 250, \\quad \\mathrm{3D\\ Dist} = \\sqrt{250^2 + h^2}"
+        "workingOut": "\\mathrm{Horiz\\ Dist} = \\sqrt{200^2 + 150^2} = 250, quad \\mathrm{3D\\ Dist} = \\sqrt{250^2 + h^2}"
       },
       {
         "explanation": "Solve for the final value.",

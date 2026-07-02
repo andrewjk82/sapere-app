@@ -1,5 +1,4 @@
 export const Y10_CH2G_QUESTIONS = [
-  // Q1a
   {
     "id": "y10-2g-q1a",
     "type": "teacher_review",
@@ -24,7 +23,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q1bi
   {
     "id": "y10-2g-q1bi",
     "type": "short_answer",
@@ -52,7 +50,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q1bii
   {
     "id": "y10-2g-q1bii",
     "type": "short_answer",
@@ -80,7 +77,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q1biii
   {
     "id": "y10-2g-q1biii",
     "type": "short_answer",
@@ -108,7 +104,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q2a
   {
     "id": "y10-2g-q2a",
     "type": "short_answer",
@@ -132,7 +127,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q2b
   {
     "id": "y10-2g-q2b",
     "type": "short_answer",
@@ -156,7 +150,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q2c
   {
     "id": "y10-2g-q2c",
     "type": "short_answer",
@@ -180,7 +173,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q2d
   {
     "id": "y10-2g-q2d",
     "type": "short_answer",
@@ -204,7 +196,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q2e
   {
     "id": "y10-2g-q2e",
     "type": "short_answer",
@@ -228,7 +219,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q3a
   {
     "id": "y10-2g-q3a",
     "type": "short_answer",
@@ -256,7 +246,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q3b
   {
     "id": "y10-2g-q3b",
     "type": "short_answer",
@@ -288,7 +277,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q3c
   {
     "id": "y10-2g-q3c",
     "type": "short_answer",
@@ -328,7 +316,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q3d
   {
     "id": "y10-2g-q3d",
     "type": "short_answer",
@@ -360,7 +347,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q3e
   {
     "id": "y10-2g-q3e",
     "type": "short_answer",
@@ -388,7 +374,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q3f
   {
     "id": "y10-2g-q3f",
     "type": "short_answer",
@@ -424,7 +409,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q4
   {
     "id": "y10-2g-q4",
     "type": "short_answer",
@@ -456,7 +440,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q5
   {
     "id": "y10-2g-q5",
     "type": "short_answer",
@@ -476,7 +459,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q6
   {
     "id": "y10-2g-q6",
     "type": "short_answer",
@@ -499,12 +481,11 @@ export const Y10_CH2G_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator.",
-        "workingOut": "= \\frac{\\sqrt{6} - \sqrt{2} - \\sqrt{3} + 1}{2}"
+        "workingOut": "= \\frac{\\sqrt{6} - sqrt{2} - \\sqrt{3} + 1}{2}"
       }
     ],
     "t": "Challenge exercise"
   },
-  // Q7
   {
     "id": "y10-2g-q7",
     "type": "short_answer",
@@ -536,7 +517,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q8
   {
     "id": "y10-2g-q8",
     "type": "short_answer",
@@ -564,7 +544,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q9a
   {
     "id": "y10-2g-q9a",
     "type": "teacher_review",
@@ -593,7 +572,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q9b
   {
     "id": "y10-2g-q9b",
     "type": "teacher_review",
@@ -622,7 +600,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q10
   {
     "id": "y10-2g-q10",
     "type": "short_answer",
@@ -634,23 +611,163 @@ export const Y10_CH2G_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-2, 16, 16, -2],
-        "boardOptions": { "keepaspectratio": true },
+        "boundingbox": [
+          -2,
+          16,
+          16,
+          -2
+        ],
+        "boardOptions": {
+          "keepaspectratio": true
+        },
         "elements": [
-          { "type": "point", "id": "O", "coords": [0, 0], "name": "O", "color": "slate", "label": { "offset": [-10, -10] } },
-          { "type": "point", "id": "A", "coords": [7, 0], "name": "A", "color": "blue", "label": { "offset": [10, -10] } },
-          { "type": "point", "id": "D", "coords": [0, 5.66], "name": "D", "color": "blue", "label": { "offset": [-15, 10] } },
-          { "type": "point", "id": "C", "coords": [5.66, 12.66], "name": "C", "color": "blue", "label": { "offset": [10, 10] } },
-          { "type": "point", "id": "B", "coords": [12.66, 7], "name": "B", "color": "blue", "label": { "offset": [10, 10] } },
-          { "type": "segment", "from": "O", "to": "A", "color": "slate", "strokeWidth": 2 },
-          { "type": "segment", "from": "O", "to": "D", "color": "slate", "strokeWidth": 2 },
-          { "type": "segment", "from": "A", "to": "B", "color": "blue", "strokeWidth": 2 },
-          { "type": "segment", "from": "B", "to": "C", "color": "blue", "strokeWidth": 2 },
-          { "type": "segment", "from": "C", "to": "D", "color": "blue", "strokeWidth": 2 },
-          { "type": "segment", "from": "D", "to": "A", "color": "blue", "strokeWidth": 2 },
-          { "type": "rightangle", "points": ["A", "B", "C"], "size": 0.4 },
-          { "type": "text", "coords": [3.5, -0.6], "content": "7 cm" },
-          { "type": "text", "coords": [9.8, 3.5], "content": "9 cm" }
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "O",
+            "color": "slate",
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "A",
+            "coords": [
+              7,
+              0
+            ],
+            "name": "A",
+            "color": "blue",
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "D",
+            "coords": [
+              0,
+              5.66
+            ],
+            "name": "D",
+            "color": "blue",
+            "label": {
+              "offset": [
+                -15,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "C",
+            "coords": [
+              5.66,
+              12.66
+            ],
+            "name": "C",
+            "color": "blue",
+            "label": {
+              "offset": [
+                10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "B",
+            "coords": [
+              12.66,
+              7
+            ],
+            "name": "B",
+            "color": "blue",
+            "label": {
+              "offset": [
+                10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "segment",
+            "from": "O",
+            "to": "A",
+            "color": "slate",
+            "strokeWidth": 2
+          },
+          {
+            "type": "segment",
+            "from": "O",
+            "to": "D",
+            "color": "slate",
+            "strokeWidth": 2
+          },
+          {
+            "type": "segment",
+            "from": "A",
+            "to": "B",
+            "color": "blue",
+            "strokeWidth": 2
+          },
+          {
+            "type": "segment",
+            "from": "B",
+            "to": "C",
+            "color": "blue",
+            "strokeWidth": 2
+          },
+          {
+            "type": "segment",
+            "from": "C",
+            "to": "D",
+            "color": "blue",
+            "strokeWidth": 2
+          },
+          {
+            "type": "segment",
+            "from": "D",
+            "to": "A",
+            "color": "blue",
+            "strokeWidth": 2
+          },
+          {
+            "type": "rightangle",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "size": 0.4
+          },
+          {
+            "type": "text",
+            "coords": [
+              3.5,
+              -0.6
+            ],
+            "content": "7 cm"
+          },
+          {
+            "type": "text",
+            "coords": [
+              9.8,
+              3.5
+            ],
+            "content": "9 cm"
+          }
         ]
       }
     },
@@ -674,7 +791,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q11
   {
     "id": "y10-2g-q11",
     "type": "short_answer",
@@ -702,7 +818,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q12
   {
     "id": "y10-2g-q12",
     "type": "short_answer",
@@ -738,7 +853,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q13a
   {
     "id": "y10-2g-q13a",
     "type": "short_answer",
@@ -766,7 +880,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q13b
   {
     "id": "y10-2g-q13b",
     "type": "short_answer",
@@ -794,7 +907,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q14ai
   {
     "id": "y10-2g-q14ai",
     "type": "short_answer",
@@ -806,32 +918,248 @@ export const Y10_CH2G_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-1, 4, 7, -1],
-        "boardOptions": { "keepaspectratio": true },
+        "boundingbox": [
+          -1,
+          4,
+          7,
+          -1
+        ],
+        "boardOptions": {
+          "keepaspectratio": true
+        },
         "elements": [
-          { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "color": "black", "label": { "offset": [-10, -10] } },
-          { "type": "point", "id": "H", "coords": [3, 0], "name": "H", "color": "black", "label": { "offset": [0, -15] } },
-          { "type": "point", "id": "B", "coords": [6, 0], "name": "B", "color": "black", "label": { "offset": [10, -10] } },
-          { "type": "point", "id": "D", "coords": [0, 3], "name": "D", "color": "black", "label": { "offset": [-10, 10] } },
-          { "type": "point", "id": "F", "coords": [3, 3], "name": "F", "color": "black", "label": { "offset": [0, 15] } },
-          { "type": "point", "id": "C", "coords": [6, 3], "name": "C", "color": "black", "label": { "offset": [10, 10] } },
-          { "type": "point", "id": "E", "coords": [2.68, 1.34], "name": "E", "color": "blue", "label": { "offset": [10, -10] } },
-          { "type": "point", "id": "G", "coords": [4.34, 2.17], "name": "G", "color": "blue", "label": { "offset": [-10, 10] } },
-          { "type": "segment", "from": "A", "to": "B", "color": "black" },
-          { "type": "segment", "from": "D", "to": "C", "color": "black" },
-          { "type": "segment", "from": "A", "to": "D", "color": "black" },
-          { "type": "segment", "from": "H", "to": "F", "color": "black" },
-          { "type": "segment", "from": "B", "to": "C", "color": "black" },
-          { "type": "segment", "from": "A", "to": "C", "color": "blue" },
-          { "type": "segment", "from": "D", "to": "E", "color": "orange" },
-          { "type": "segment", "from": "F", "to": "G", "color": "orange" },
-          { "type": "text", "coords": [1.5, -0.3], "content": "3" },
-          { "type": "text", "coords": [4.5, -0.3], "content": "3" },
-          { "type": "text", "coords": [-0.3, 1.5], "content": "3" },
-          { "type": "text", "coords": [6.3, 1.5], "content": "3" },
-          { "type": "text", "coords": [1.5, 3.2], "content": "3" },
-          { "type": "text", "coords": [4.5, 3.2], "content": "3" },
-          { "type": "text", "coords": [1.2, 0.8], "content": "3" }
+          {
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "color": "black",
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "H",
+            "coords": [
+              3,
+              0
+            ],
+            "name": "H",
+            "color": "black",
+            "label": {
+              "offset": [
+                0,
+                -15
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "B",
+            "coords": [
+              6,
+              0
+            ],
+            "name": "B",
+            "color": "black",
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "D",
+            "coords": [
+              0,
+              3
+            ],
+            "name": "D",
+            "color": "black",
+            "label": {
+              "offset": [
+                -10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "F",
+            "coords": [
+              3,
+              3
+            ],
+            "name": "F",
+            "color": "black",
+            "label": {
+              "offset": [
+                0,
+                15
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "C",
+            "coords": [
+              6,
+              3
+            ],
+            "name": "C",
+            "color": "black",
+            "label": {
+              "offset": [
+                10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "E",
+            "coords": [
+              2.68,
+              1.34
+            ],
+            "name": "E",
+            "color": "blue",
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "G",
+            "coords": [
+              4.34,
+              2.17
+            ],
+            "name": "G",
+            "color": "blue",
+            "label": {
+              "offset": [
+                -10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "segment",
+            "from": "A",
+            "to": "B",
+            "color": "black"
+          },
+          {
+            "type": "segment",
+            "from": "D",
+            "to": "C",
+            "color": "black"
+          },
+          {
+            "type": "segment",
+            "from": "A",
+            "to": "D",
+            "color": "black"
+          },
+          {
+            "type": "segment",
+            "from": "H",
+            "to": "F",
+            "color": "black"
+          },
+          {
+            "type": "segment",
+            "from": "B",
+            "to": "C",
+            "color": "black"
+          },
+          {
+            "type": "segment",
+            "from": "A",
+            "to": "C",
+            "color": "blue"
+          },
+          {
+            "type": "segment",
+            "from": "D",
+            "to": "E",
+            "color": "orange"
+          },
+          {
+            "type": "segment",
+            "from": "F",
+            "to": "G",
+            "color": "orange"
+          },
+          {
+            "type": "text",
+            "coords": [
+              1.5,
+              -0.3
+            ],
+            "content": "3"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4.5,
+              -0.3
+            ],
+            "content": "3"
+          },
+          {
+            "type": "text",
+            "coords": [
+              -0.3,
+              1.5
+            ],
+            "content": "3"
+          },
+          {
+            "type": "text",
+            "coords": [
+              6.3,
+              1.5
+            ],
+            "content": "3"
+          },
+          {
+            "type": "text",
+            "coords": [
+              1.5,
+              3.2
+            ],
+            "content": "3"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4.5,
+              3.2
+            ],
+            "content": "3"
+          },
+          {
+            "type": "text",
+            "coords": [
+              1.2,
+              0.8
+            ],
+            "content": "3"
+          }
         ]
       }
     },
@@ -851,7 +1179,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q14aii
   {
     "id": "y10-2g-q14aii",
     "type": "short_answer",
@@ -871,7 +1198,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q14aiii
   {
     "id": "y10-2g-q14aiii",
     "type": "short_answer",
@@ -881,7 +1207,7 @@ export const Y10_CH2G_QUESTIONS = [
     "a": "\\frac{3\\sqrt{5}-3}{2}",
     "solutionSteps": [
       {
-        "explanation": "Let us set up coordinates with A as the origin \\((0,0)\\). D is at \\((0,3)\\), F is at \\((3,3)\\), C is at \\((6,3)\\). Line AC is given by \\(y = \\frac{1}{2}x\\). Since \\(AE = 3\\), point E lies on AC and is at \\(\\left(\\frac{6}{\\sqrt{5}}, \\frac{3}{\\sqrt{5}}\\right)\\). The vector \\(DE = \\left(\\frac{6}{\\sqrt{5}}, \\frac{3}{\\sqrt{5}} - 3\\right)\\).",
+        "explanation": "Let us set up coordinates with A as the origin \\((0,0)\\). D is at \\((0,3)\\), F is at \\((3,3)\\), C is at \\((6,3)\\). Line AC is given by \\(y = \\frac{1}{2}x\\). Since \\(AE = 3\\), point E lies on AC and is at \\(\\left(\\frac{6}{\\sqrt{5}}, frac{3}{\\sqrt{5}}\\right)\\). The vector \\(DE = \\left(\\frac{6}{\\sqrt{5}}, frac{3}{\\sqrt{5}} - 3\\right)\\).",
         "workingOut": ""
       },
       {
@@ -889,7 +1215,7 @@ export const Y10_CH2G_QUESTIONS = [
         "workingOut": ""
       },
       {
-        "explanation": "Solve the intersection of \\(FG\\) and line AC (\\(x = 2y\\)) to find G. This gives the coordinates of G as \\(\\left(\\frac{\\sqrt{5}+5}{5} \\times 3, \\frac{\\sqrt{5}+5}{10} \\times 3\\right)\\).",
+        "explanation": "Solve the intersection of \\(FG\\) and line AC (\\(x = 2y\\)) to find G. This gives the coordinates of G as \\(\\left(\\frac{\\sqrt{5}+5}{5} \\times 3, frac{\\sqrt{5}+5}{10} \\times 3\\right)\\).",
         "workingOut": ""
       },
       {
@@ -899,7 +1225,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q14aiv
   {
     "id": "y10-2g-q14aiv",
     "type": "short_answer",
@@ -923,7 +1248,6 @@ export const Y10_CH2G_QUESTIONS = [
     ],
     "t": "Challenge exercise"
   },
-  // Q14b
   {
     "id": "y10-2g-q14b",
     "type": "teacher_review",

@@ -406,7 +406,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the derivatives",
-        "workingOut": "\\frac{dy}{dx} = e^x, \\quad \\frac{d^2y}{dx^2} = e^x"
+        "workingOut": "\\frac{dy}{dx} = e^x, quad \\frac{d^2y}{dx^2} = e^x"
       },
       {
         "explanation": "Determine concavity from the second derivative",

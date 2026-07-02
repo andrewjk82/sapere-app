@@ -3001,7 +3001,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 236,\\quad \\text{Per Sub-Unit} = 45\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 236, quad \\text{Per Sub-Unit} = 45\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3046,7 +3046,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 24,\\quad \\text{Per Unit} = 185,\\quad \\text{Per Sub-Unit} = 32\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 24, quad \\text{Per Unit} = 185, quad \\text{Per Sub-Unit} = 32\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3091,7 +3091,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 48,\\quad \\text{Per Sub-Unit} = 75\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 48, quad \\text{Per Sub-Unit} = 75\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3136,7 +3136,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 16,\\quad \\text{Per Unit} = 120,\\quad \\text{Per Sub-Unit} = 18\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 16, quad \\text{Per Unit} = 120, quad \\text{Per Sub-Unit} = 18\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3181,7 +3181,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 12,\\quad \\text{Per Unit} = 950,\\quad \\text{Per Sub-Unit} = 8\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 12, quad \\text{Per Unit} = 950, quad \\text{Per Sub-Unit} = 8\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3226,7 +3226,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 18,\\quad \\text{Per Unit} = 320,\\quad \\text{Per Sub-Unit} = 14\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 18, quad \\text{Per Unit} = 320, quad \\text{Per Sub-Unit} = 14\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3271,7 +3271,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 25,\\quad \\text{Per Unit} = 175,\\quad \\text{Per Sub-Unit} = 20\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 25, quad \\text{Per Unit} = 175, quad \\text{Per Sub-Unit} = 20\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3316,7 +3316,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 32,\\quad \\text{Per Unit} = 135,\\quad \\text{Per Sub-Unit} = 15\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 32, quad \\text{Per Unit} = 135, quad \\text{Per Sub-Unit} = 15\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3361,7 +3361,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 520,\\quad \\text{Per Sub-Unit} = 12\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 520, quad \\text{Per Sub-Unit} = 12\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3406,7 +3406,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 22,\\quad \\text{Per Unit} = 245,\\quad \\text{Per Sub-Unit} = 16\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 22, quad \\text{Per Unit} = 245, quad \\text{Per Sub-Unit} = 16\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3451,7 +3451,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 28,\\quad \\text{Per Unit} = 85,\\quad \\text{Per Sub-Unit} = 180\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 28, quad \\text{Per Unit} = 85, quad \\text{Per Sub-Unit} = 180\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3496,7 +3496,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 350,\\quad \\text{Per Sub-Unit} = 64\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 350, quad \\text{Per Sub-Unit} = 64\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3541,7 +3541,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 36,\\quad \\text{Per Unit} = 84,\\quad \\text{Per Sub-Unit} = 125\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 36, quad \\text{Per Unit} = 84, quad \\text{Per Sub-Unit} = 125\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3586,7 +3586,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 25,\\quad \\text{Per Unit} = 144,\\quad \\text{Per Sub-Unit} = 96\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 25, quad \\text{Per Unit} = 144, quad \\text{Per Sub-Unit} = 96\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3631,7 +3631,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 180,\\quad \\text{Per Sub-Unit} = 24\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 180, quad \\text{Per Sub-Unit} = 24\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3676,7 +3676,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 20,\\quad \\text{Per Unit} = 950,\\quad \\text{Per Sub-Unit} = 18\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 20, quad \\text{Per Unit} = 950, quad \\text{Per Sub-Unit} = 18\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3721,7 +3721,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 35,\\quad \\text{Per Unit} = 240,\\quad \\text{Per Sub-Unit} = 12\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 35, quad \\text{Per Unit} = 240, quad \\text{Per Sub-Unit} = 12\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3766,7 +3766,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 640,\\quad \\text{Per Sub-Unit} = 16\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 640, quad \\text{Per Sub-Unit} = 16\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3811,7 +3811,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 18,\\quad \\text{Per Unit} = 128,\\quad \\text{Per Sub-Unit} = 48\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 18, quad \\text{Per Unit} = 128, quad \\text{Per Sub-Unit} = 48\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3856,7 +3856,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 24,\\quad \\text{Per Unit} = 512,\\quad \\text{Per Sub-Unit} = 32\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 24, quad \\text{Per Unit} = 512, quad \\text{Per Sub-Unit} = 32\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3901,7 +3901,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 12,\\quad \\text{Per Unit} = 160,\\quad \\text{Per Sub-Unit} = 120\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 12, quad \\text{Per Unit} = 160, quad \\text{Per Sub-Unit} = 120\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3946,7 +3946,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 20,\\quad \\text{Per Unit} = 325,\\quad \\text{Per Sub-Unit} = 14\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 20, quad \\text{Per Unit} = 325, quad \\text{Per Sub-Unit} = 14\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -3991,7 +3991,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 480,\\quad \\text{Per Sub-Unit} = 25\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 480, quad \\text{Per Sub-Unit} = 25\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4036,7 +4036,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 42,\\quad \\text{Per Unit} = 125,\\quad \\text{Per Sub-Unit} = 8\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 42, quad \\text{Per Unit} = 125, quad \\text{Per Sub-Unit} = 8\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4081,7 +4081,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 16,\\quad \\text{Per Unit} = 850,\\quad \\text{Per Sub-Unit} = 16\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 16, quad \\text{Per Unit} = 850, quad \\text{Per Sub-Unit} = 16\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4126,7 +4126,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 22,\\quad \\text{Per Unit} = 360,\\quad \\text{Per Sub-Unit} = 12\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 22, quad \\text{Per Unit} = 360, quad \\text{Per Sub-Unit} = 12\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4171,7 +4171,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 450,\\quad \\text{Per Sub-Unit} = 24\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 450, quad \\text{Per Sub-Unit} = 24\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4216,7 +4216,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 12,\\quad \\text{Per Unit} = 144,\\quad \\text{Per Sub-Unit} = 36\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 12, quad \\text{Per Unit} = 144, quad \\text{Per Sub-Unit} = 36\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4261,7 +4261,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 25,\\quad \\text{Per Unit} = 230,\\quad \\text{Per Sub-Unit} = 48\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 25, quad \\text{Per Unit} = 230, quad \\text{Per Sub-Unit} = 48\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4306,7 +4306,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 18,\\quad \\text{Per Unit} = 680,\\quad \\text{Per Sub-Unit} = 15\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 18, quad \\text{Per Unit} = 680, quad \\text{Per Sub-Unit} = 15\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4351,7 +4351,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 50,\\quad \\text{Per Unit} = 85,\\quad \\text{Per Sub-Unit} = 14\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 50, quad \\text{Per Unit} = 85, quad \\text{Per Sub-Unit} = 14\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4396,7 +4396,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 240,\\quad \\text{Per Sub-Unit} = 125\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 240, quad \\text{Per Sub-Unit} = 125\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4441,7 +4441,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 16,\\quad \\text{Per Unit} = 375,\\quad \\text{Per Sub-Unit} = 8\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 16, quad \\text{Per Unit} = 375, quad \\text{Per Sub-Unit} = 8\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4486,7 +4486,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 20,\\quad \\text{Per Unit} = 640,\\quad \\text{Per Sub-Unit} = 24\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 20, quad \\text{Per Unit} = 640, quad \\text{Per Sub-Unit} = 24\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4531,7 +4531,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 35,\\quad \\text{Per Unit} = 120,\\quad \\text{Per Sub-Unit} = 16\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 35, quad \\text{Per Unit} = 120, quad \\text{Per Sub-Unit} = 16\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4576,7 +4576,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 15,\\quad \\text{Per Unit} = 560,\\quad \\text{Per Sub-Unit} = 12\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 560, quad \\text{Per Sub-Unit} = 12\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4621,7 +4621,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 14,\\quad \\text{Per Unit} = 150,\\quad \\text{Per Sub-Unit} = 48\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 150, quad \\text{Per Sub-Unit} = 48\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4666,7 +4666,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 12,\\quad \\text{Per Unit} = 280,\\quad \\text{Per Sub-Unit} = 32\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 12, quad \\text{Per Unit} = 280, quad \\text{Per Sub-Unit} = 32\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4711,7 +4711,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 18,\\quad \\text{Per Unit} = 350,\\quad \\text{Per Sub-Unit} = 64\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 18, quad \\text{Per Unit} = 350, quad \\text{Per Sub-Unit} = 64\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4756,7 +4756,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the base units and calculation elements from the problem statement.",
-        "workingOut": "\\\\(\\text{Units} = 25,\\quad \\text{Per Unit} = 96,\\quad \\text{Per Sub-Unit} = 240\\\\)"
+        "workingOut": "\\\\(\\text{Units} = 25, quad \\text{Per Unit} = 96, quad \\text{Per Sub-Unit} = 240\\\\)"
       },
       {
         "explanation": "Calculate the total sub-units across all units.",
@@ -4801,7 +4801,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 2465,\\quad \\text{Divisor} = 17\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 2465, quad \\text{Divisor} = 17\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -4846,7 +4846,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 4187,\\quad \\text{Divisor} = 23\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 4187, quad \\text{Divisor} = 23\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -4891,7 +4891,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3057,\\quad \\text{Divisor} = 13\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3057, quad \\text{Divisor} = 13\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -4936,7 +4936,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3251,\\quad \\text{Divisor} = 29\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3251, quad \\text{Divisor} = 29\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -4981,7 +4981,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5119,\\quad \\text{Divisor} = 31\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5119, quad \\text{Divisor} = 31\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5026,7 +5026,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 2437,\\quad \\text{Divisor} = 19\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 2437, quad \\text{Divisor} = 19\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5071,7 +5071,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3854,\\quad \\text{Divisor} = 37\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3854, quad \\text{Divisor} = 37\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5116,7 +5116,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 6403,\\quad \\text{Divisor} = 41\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 6403, quad \\text{Divisor} = 41\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5161,7 +5161,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3448,\\quad \\text{Divisor} = 16\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3448, quad \\text{Divisor} = 16\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5206,7 +5206,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 4617,\\quad \\text{Divisor} = 24\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 4617, quad \\text{Divisor} = 24\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5251,7 +5251,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5500,\\quad \\text{Divisor} = 18\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5500, quad \\text{Divisor} = 18\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5296,7 +5296,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3787,\\quad \\text{Divisor} = 32\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3787, quad \\text{Divisor} = 32\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5341,7 +5341,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3912,\\quad \\text{Divisor} = 15\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3912, quad \\text{Divisor} = 15\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5386,7 +5386,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 8113,\\quad \\text{Divisor} = 45\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 8113, quad \\text{Divisor} = 45\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5431,7 +5431,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5404,\\quad \\text{Divisor} = 22\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5404, quad \\text{Divisor} = 22\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5476,7 +5476,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5769,\\quad \\text{Divisor} = 14\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5769, quad \\text{Divisor} = 14\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5521,7 +5521,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3516,\\quad \\text{Divisor} = 28\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3516, quad \\text{Divisor} = 28\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5566,7 +5566,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5087,\\quad \\text{Divisor} = 26\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5087, quad \\text{Divisor} = 26\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5611,7 +5611,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 6786,\\quad \\text{Divisor} = 12\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 6786, quad \\text{Divisor} = 12\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5656,7 +5656,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5059,\\quad \\text{Divisor} = 35\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5059, quad \\text{Divisor} = 35\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5701,7 +5701,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3300,\\quad \\text{Divisor} = 20\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3300, quad \\text{Divisor} = 20\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5746,7 +5746,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5013,\\quad \\text{Divisor} = 48\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5013, quad \\text{Divisor} = 48\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5791,7 +5791,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 12047,\\quad \\text{Divisor} = 25\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 12047, quad \\text{Divisor} = 25\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5836,7 +5836,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 10007,\\quad \\text{Divisor} = 16\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 10007, quad \\text{Divisor} = 16\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5881,7 +5881,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 20448,\\quad \\text{Divisor} = 24\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 20448, quad \\text{Divisor} = 24\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5926,7 +5926,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 10855,\\quad \\text{Divisor} = 30\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 10855, quad \\text{Divisor} = 30\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -5971,7 +5971,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 8108,\\quad \\text{Divisor} = 18\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 8108, quad \\text{Divisor} = 18\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6016,7 +6016,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 17343,\\quad \\text{Divisor} = 12\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 17343, quad \\text{Divisor} = 12\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6061,7 +6061,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5088,\\quad \\text{Divisor} = 22\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5088, quad \\text{Divisor} = 22\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6106,7 +6106,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 10229,\\quad \\text{Divisor} = 15\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 10229, quad \\text{Divisor} = 15\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6151,7 +6151,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3526,\\quad \\text{Divisor} = 19\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3526, quad \\text{Divisor} = 19\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6196,7 +6196,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 1683,\\quad \\text{Divisor} = 14\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 1683, quad \\text{Divisor} = 14\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6241,7 +6241,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5168,\\quad \\text{Divisor} = 24\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5168, quad \\text{Divisor} = 24\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6286,7 +6286,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3993,\\quad \\text{Divisor} = 36\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3993, quad \\text{Divisor} = 36\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6331,7 +6331,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5440,\\quad \\text{Divisor} = 17\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5440, quad \\text{Divisor} = 17\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6376,7 +6376,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3983,\\quad \\text{Divisor} = 28\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3983, quad \\text{Divisor} = 28\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6421,7 +6421,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3650,\\quad \\text{Divisor} = 13\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3650, quad \\text{Divisor} = 13\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6466,7 +6466,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5896,\\quad \\text{Divisor} = 31\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5896, quad \\text{Divisor} = 31\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6511,7 +6511,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3404,\\quad \\text{Divisor} = 22\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3404, quad \\text{Divisor} = 22\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6556,7 +6556,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 6887,\\quad \\text{Divisor} = 16\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 6887, quad \\text{Divisor} = 16\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6601,7 +6601,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 7115,\\quad \\text{Divisor} = 25\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 7115, quad \\text{Divisor} = 25\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6646,7 +6646,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 4631,\\quad \\text{Divisor} = 45\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 4631, quad \\text{Divisor} = 45\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6691,7 +6691,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 7710,\\quad \\text{Divisor} = 12\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 7710, quad \\text{Divisor} = 12\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6736,7 +6736,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5803,\\quad \\text{Divisor} = 18\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5803, quad \\text{Divisor} = 18\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6781,7 +6781,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 7244,\\quad \\text{Divisor} = 15\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 7244, quad \\text{Divisor} = 15\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6826,7 +6826,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 4833,\\quad \\text{Divisor} = 42\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 4833, quad \\text{Divisor} = 42\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6871,7 +6871,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3932,\\quad \\text{Divisor} = 29\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3932, quad \\text{Divisor} = 29\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6916,7 +6916,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3710,\\quad \\text{Divisor} = 33\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3710, quad \\text{Divisor} = 33\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -6961,7 +6961,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 9926,\\quad \\text{Divisor} = 11\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 9926, quad \\text{Divisor} = 11\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7006,7 +7006,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3338,\\quad \\text{Divisor} = 23\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3338, quad \\text{Divisor} = 23\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7051,7 +7051,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 2689,\\quad \\text{Divisor} = 13\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 2689, quad \\text{Divisor} = 13\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7096,7 +7096,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3471,\\quad \\text{Divisor} = 19\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3471, quad \\text{Divisor} = 19\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7141,7 +7141,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 4192,\\quad \\text{Divisor} = 23\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 4192, quad \\text{Divisor} = 23\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7186,7 +7186,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3272,\\quad \\text{Divisor} = 29\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3272, quad \\text{Divisor} = 29\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7231,7 +7231,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 5138,\\quad \\text{Divisor} = 31\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 5138, quad \\text{Divisor} = 31\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7276,7 +7276,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 2449,\\quad \\text{Divisor} = 19\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 2449, quad \\text{Divisor} = 19\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7321,7 +7321,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3867,\\quad \\text{Divisor} = 37\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3867, quad \\text{Divisor} = 37\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7366,7 +7366,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 6412,\\quad \\text{Divisor} = 41\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 6412, quad \\text{Divisor} = 41\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7411,7 +7411,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 3450,\\quad \\text{Divisor} = 16\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 3450, quad \\text{Divisor} = 16\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",
@@ -7456,7 +7456,7 @@ export const Y8_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the dividend and the divisor from the context problem.",
-        "workingOut": "\\\\(\\text{Dividend} = 4619,\\quad \\text{Divisor} = 24\\\\)"
+        "workingOut": "\\\\(\\text{Dividend} = 4619, quad \\text{Divisor} = 24\\\\)"
       },
       {
         "explanation": "Perform the long division calculation.",

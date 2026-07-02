@@ -255,7 +255,7 @@ export const Y7_CH1A_QUESTIONS = [
       },
       {
         "explanation": "Determine the dot style for each boundary based on the inequality operator.",
-        "workingOut": "\\( x \\ge -11 \\implies \\text{Solid dot at } -11, \\quad x < 13 \\implies \\text{Hollow dot at } 13 \\)"
+        "workingOut": "\\( x \\ge -11 \\implies \\text{Solid dot at } -11, quad x < 13 \\implies \\text{Hollow dot at } 13 \\)"
       },
       {
         "explanation": "Shade the interval between the two endpoints to represent all valid real numbers.",
@@ -279,7 +279,7 @@ export const Y7_CH1A_QUESTIONS = [
       },
       {
         "explanation": "Determine the dot style for each boundary based on the inequality operator.",
-        "workingOut": "\\( x \\ge -12 \\implies \\text{Solid dot at } -12, \\quad x < 14 \\implies \\text{Hollow dot at } 14 \\)"
+        "workingOut": "\\( x \\ge -12 \\implies \\text{Solid dot at } -12, quad x < 14 \\implies \\text{Hollow dot at } 14 \\)"
       },
       {
         "explanation": "Shade the interval between the two endpoints to represent all valid real numbers.",
@@ -303,7 +303,7 @@ export const Y7_CH1A_QUESTIONS = [
       },
       {
         "explanation": "Determine the dot style for each boundary based on the inequality operator.",
-        "workingOut": "\\( x \\ge -13 \\implies \\text{Solid dot at } -13, \\quad x < 15 \\implies \\text{Hollow dot at } 15 \\)"
+        "workingOut": "\\( x \\ge -13 \\implies \\text{Solid dot at } -13, quad x < 15 \\implies \\text{Hollow dot at } 15 \\)"
       },
       {
         "explanation": "Shade the interval between the two endpoints to represent all valid real numbers.",
@@ -327,7 +327,7 @@ export const Y7_CH1A_QUESTIONS = [
       },
       {
         "explanation": "Determine the dot style for each boundary based on the inequality operator.",
-        "workingOut": "\\( x \\ge -14 \\implies \\text{Solid dot at } -14, \\quad x < 16 \\implies \\text{Hollow dot at } 16 \\)"
+        "workingOut": "\\( x \\ge -14 \\implies \\text{Solid dot at } -14, quad x < 16 \\implies \\text{Hollow dot at } 16 \\)"
       },
       {
         "explanation": "Shade the interval between the two endpoints to represent all valid real numbers.",
@@ -351,7 +351,7 @@ export const Y7_CH1A_QUESTIONS = [
       },
       {
         "explanation": "Determine the dot style for each boundary based on the inequality operator.",
-        "workingOut": "\\( x \\ge -15 \\implies \\text{Solid dot at } -15, \\quad x < 17 \\implies \\text{Hollow dot at } 17 \\)"
+        "workingOut": "\\( x \\ge -15 \\implies \\text{Solid dot at } -15, quad x < 17 \\implies \\text{Hollow dot at } 17 \\)"
       },
       {
         "explanation": "Shade the interval between the two endpoints to represent all valid real numbers.",

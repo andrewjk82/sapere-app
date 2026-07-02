@@ -90,7 +90,7 @@ export const Y10_CH4G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use midpoint formula",
-        "workingOut": "M = (\\frac{8+0}{2}, \\frac{6+0}{2})"
+        "workingOut": "M = (\\frac{8+0}{2}, frac{6+0}{2})"
       },
       {
         "explanation": "Calculate",
@@ -110,7 +110,7 @@ export const Y10_CH4G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use midpoint formula",
-        "workingOut": "M = (\\frac{2+6}{2}, \\frac{1+5}{2})"
+        "workingOut": "M = (\\frac{2+6}{2}, frac{1+5}{2})"
       },
       {
         "explanation": "Calculate",
@@ -130,7 +130,7 @@ export const Y10_CH4G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use midpoint formula",
-        "workingOut": "M = (\\frac{-2+2}{2}, \\frac{1+5}{2})"
+        "workingOut": "M = (\\frac{-2+2}{2}, frac{1+5}{2})"
       },
       {
         "explanation": "Calculate",
@@ -150,7 +150,7 @@ export const Y10_CH4G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use midpoint formula",
-        "workingOut": "M = (\\frac{-4+0}{2}, \\frac{-2+4}{2})"
+        "workingOut": "M = (\\frac{-4+0}{2}, frac{-2+4}{2})"
       },
       {
         "explanation": "Calculate",

@@ -2298,7 +2298,7 @@ export const Y10_CH12A_QUESTIONS = [
       },
       {
         "explanation": "State all the missing values rounded correctly.",
-        "workingOut": "\\mathrm{Sides:}\\ 4.67\\mathrm{cm},\\ 2.52\\mathrm{cm}.\\ \\mathrm{Angle:}\\ 50^\\circ"
+        "workingOut": "\\mathrm{Sides:}\\ 4.67\\mathrm{cm}, 2.52\\mathrm{cm}.\\ \\mathrm{Angle:}\\ 50^\\circ"
       }
     ],
     "graphData": {
@@ -2378,7 +2378,7 @@ export const Y10_CH12A_QUESTIONS = [
       },
       {
         "explanation": "State all the missing values rounded correctly.",
-        "workingOut": "\\mathrm{Side:}\\ 6.97\\mathrm{cm}.\\ \\mathrm{Angles:}\\ 40.7^\\circ,\\ 49.3^\\circ"
+        "workingOut": "\\mathrm{Side:}\\ 6.97\\mathrm{cm}.\\ \\mathrm{Angles:}\\ 40.7^\\circ, 49.3^\\circ"
       }
     ],
     "graphData": {
@@ -2461,7 +2461,7 @@ export const Y10_CH12A_QUESTIONS = [
       },
       {
         "explanation": "State all the missing values rounded correctly.",
-        "workingOut": "\\mathrm{Side:}\\ 9.78\\mathrm{cm}.\\ \\mathrm{Angles:}\\ 30.8^\\circ,\\ 59.2^\\circ"
+        "workingOut": "\\mathrm{Side:}\\ 9.78\\mathrm{cm}.\\ \\mathrm{Angles:}\\ 30.8^\\circ, 59.2^\\circ"
       }
     ],
     "graphData": {

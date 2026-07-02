@@ -264,7 +264,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 10, 8, -6],
+        "boundingbox": [
+          -2,
+          10,
+          8,
+          -6
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0], [7.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 9.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x - 6*x + 5; };\nboard.create('functiongraph', [f, -0.8, 6.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, -4], {name: 'V(3,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [1, 0], {name: '1', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [5, 0], {name: '5', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [0, 5], {name: '5', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.create('line', [[3, -6], [3, 10]], {dash: 2, strokeColor: 'gray', strokeWidth: 1});\nboard.unsuspendUpdate();"
       }
     }
@@ -303,7 +308,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-4, 12, 6, -4],
+        "boundingbox": [
+          -4,
+          12,
+          6,
+          -4
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,11.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 11.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 8 + 2*x - x*x; };\nboard.create('functiongraph', [f, -2.8, 4.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 9], {name: 'V(1,9)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [-2, 0], {name: '-2', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [4, 0], {name: '4', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [0, 8], {name: '8', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.create('line', [[1, -4], [1, 12]], {dash: 2, strokeColor: 'gray', strokeWidth: 1});\nboard.unsuspendUpdate();"
       }
     }
@@ -342,7 +352,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-8, 15, 2, -6],
+        "boundingbox": [
+          -8,
+          15,
+          2,
+          -6
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-7.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,14.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 14.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x + 8*x + 12; };\nboard.create('functiongraph', [f, -7.2, 0.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-4, -4], {name: 'V(-4,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [-6, 0], {name: '-6', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [-2, 0], {name: '-2', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [0, 12], {name: '12', size: 2, color: 'black', label: {autoPosition: false, offset: [-20, 0]}});\nboard.create('line', [[-4, -6], [-4, 15]], {dash: 2, strokeColor: 'gray', strokeWidth: 1});\nboard.unsuspendUpdate();"
       }
     }
@@ -381,7 +396,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-8, 20, 4, -6],
+        "boundingbox": [
+          -8,
+          20,
+          4,
+          -6
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-7.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,19.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 19.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 12 - 4*x - x*x; };\nboard.create('functiongraph', [f, -6.8, 2.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 16], {name: 'V(-2,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [-6, 0], {name: '-6', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [2, 0], {name: '2', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [0, 12], {name: '12', size: 2, color: 'black', label: {autoPosition: false, offset: [-20, 0]}});\nboard.create('line', [[-2, -6], [-2, 20]], {dash: 2, strokeColor: 'gray', strokeWidth: 1});\nboard.unsuspendUpdate();"
       }
     }
@@ -524,7 +544,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-9, 10, 3, -18],
+        "boundingbox": [
+          -9,
+          10,
+          3,
+          -18
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-8.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-17.5], [0,9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 9.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x + 6*x - 7; };\nboard.create('functiongraph', [f, -8.2, 2.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, -16], {name: 'V(-3,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [1, 0], {name: '1', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [-7, 0], {name: '-7', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [0, -7], {name: '-7', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -559,7 +584,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-9, 20, 3, -8],
+        "boundingbox": [
+          -9,
+          20,
+          3,
+          -8
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-8.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-7.5], [0,19.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 19.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 7 - 6*x - x*x; };\nboard.create('functiongraph', [f, -8.2, 2.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 16], {name: 'V(-3,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [1, 0], {name: '1', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [-7, 0], {name: '-7', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [0, 7], {name: '7', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -613,7 +643,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 8, 4, -12],
+        "boundingbox": [
+          -2,
+          8,
+          4,
+          -12
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-11.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 2*x*x*x - 6*x*x; };\nboard.create('functiongraph', [f, -1.2, 3.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {name: 'Max(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [2, -8], {name: 'Min(2,-8)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [3, 0], {name: '3', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -667,7 +702,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-6, 75, 6, -75],
+        "boundingbox": [
+          -6,
+          75,
+          6,
+          -75
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-70], [0,70]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 65, 'y'], {fontSize: 14});\nvar f = function(x) { return 27*x - x*x*x; };\nboard.create('functiongraph', [f, -5.2, 5.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 54], {name: 'Max(3,54)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-3, -54], {name: 'Min(-3,-54)', size: 3, color: 'red', label: {autoPosition: false, offset: [-60, -10]}});\nboard.create('point', [0, 0], {name: '0', size: 2, color: 'black', label: {autoPosition: false, offset: [5, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -699,14 +739,19 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Determine the type of each point based on the slopes.",
-        "workingOut": "\\text{Maximum at } (-1, 17), \\quad \\text{Minimum at } (2, -10)"
+        "workingOut": "\\text{Maximum at } (-1, 17), quad \\text{Minimum at } (2, -10)"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 25, 4, -18],
+        "boundingbox": [
+          -3,
+          25,
+          4,
+          -18
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-16], [0,22]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -1.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 20, 'y'], {fontSize: 14});\nvar f = function(x) { return 2*x*x*x - 3*x*x - 12*x + 10; };\nboard.create('functiongraph', [f, -2.2, 3.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 17], {name: 'Max(-1,17)', size: 3, color: 'red', label: {autoPosition: false, offset: [-20, 15]}});\nboard.create('point', [2, -10], {name: 'Min(2,-10)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [0, 10], {name: '10', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -738,14 +783,19 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "State point types.",
-        "workingOut": "\\text{Maximum at } (-3, 0), \\quad \\text{Minimum at } (-1, -4)"
+        "workingOut": "\\text{Maximum at } (-3, 0), quad \\text{Minimum at } (-1, -4)"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-5, 6, 2, -6],
+        "boundingbox": [
+          -5,
+          6,
+          2,
+          -6
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 5.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x + 6*x*x + 9*x; };\nboard.create('functiongraph', [f, -4.2, 0.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 0], {name: 'Max(-3,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 12]}});\nboard.create('point', [-1, -4], {name: 'Min(-1,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -777,14 +827,19 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Deduce natures: slope is rising on both sides of x=0; slope changes from rising to falling around x=3.",
-        "workingOut": "\\text{Horizontal inflection at } (0, 27), \\quad \\text{Maximum at } (3, 81)"
+        "workingOut": "\\text{Horizontal inflection at } (0, 27), quad \\text{Maximum at } (3, 81)"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 110, 5, -20],
+        "boundingbox": [
+          -2,
+          110,
+          5,
+          -20
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-15], [0,105]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 98, 'y'], {fontSize: 14});\nvar f = function(x) { return 27 + 8*x*x*x - 2*x*x*x*x; };\nboard.create('functiongraph', [f, -1.2, 3.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 27], {name: 'Inflection(0,27)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.create('point', [3, 81], {name: 'Max(3,81)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -816,14 +871,19 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Conclude nature based on the slope patterns.",
-        "workingOut": "\\text{Minimum at } (0, 5), \\quad \\text{Horizontal inflection at } (1, 6)"
+        "workingOut": "\\text{Minimum at } (0, 5), quad \\text{Horizontal inflection at } (1, 6)"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-1.5, 12, 3, -2],
+        "boundingbox": [
+          -1.5,
+          12,
+          3,
+          -2
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.2,0], [2.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1], [0,11]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.6, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 10.5, 'y'], {fontSize: 14});\nvar f = function(x) { return 3*x*x*x*x - 8*x*x*x + 6*x*x + 5; };\nboard.create('functiongraph', [f, -0.8, 1.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {name: 'Min(0,5)', size: 3, color: 'red', label: {autoPosition: false, offset: [-55, -5]}});\nboard.create('point', [1, 6], {name: 'Inflection(1,6)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -877,7 +937,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 6, 5, -12],
+        "boundingbox": [
+          -2,
+          6,
+          5,
+          -12
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-11.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 5.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*(x-3)*(x-3)*(x-3); };\nboard.create('functiongraph', [f, -0.5, 4.1], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0.75, -8.54], {name: 'Min(0.75, -8.54)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [3, 0], {name: 'Inflection(3,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-40, 15]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -931,7 +996,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 105, 8, -25],
+        "boundingbox": [
+          -2,
+          105,
+          8,
+          -25
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [7.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-20], [0,95]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 90, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*(x-6)*(x-6); };\nboard.create('functiongraph', [f, -0.6, 6.6], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {name: 'Min(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [3, 81], {name: 'Max(3,81)', size: 3, color: 'red', label: {autoPosition: false, offset: [-20, 15]}});\nboard.create('point', [6, 0], {name: 'Min(6,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -985,7 +1055,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 35, 5, -15],
+        "boundingbox": [
+          -3,
+          35,
+          5,
+          -15
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-12], [0,32]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -2, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 30, 'y'], {fontSize: 14});\nvar f = function(x) { return (x-3)*(x-3)*(2*x+3); };\nboard.create('functiongraph', [f, -2.1, 3.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 27], {name: 'Max(0,27)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [3, 0], {name: 'Min(3,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [-1.5, 0], {name: '-1.5', size: 2, color: 'black', label: {autoPosition: false, offset: [-10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -1208,7 +1283,7 @@ export const Y12A_CH3B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use the solved values \\( a = -1 \\) and \\( b = -2 \\) from the previous parts.",
-        "workingOut": "a = -1, \\quad b = -2"
+        "workingOut": "a = -1, quad b = -2"
       },
       {
         "explanation": "Substitute these values into the first equation \\( a + b + c = 6 \\) to solve for \\( c \\).",
@@ -1336,7 +1411,12 @@ export const Y12A_CH3B_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-5, 4, 5, -4],
+        "boundingbox": [
+          -5,
+          4,
+          5,
+          -4
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 3.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 4*x / (x*x + 1); };\nboard.create('functiongraph', [f, -4.5, 4.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 2], {name: 'Max(1,2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-1, -2], {name: 'Min(-1,-2)', size: 3, color: 'red', label: {autoPosition: false, offset: [-60, -10]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -1401,7 +1481,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\( b \\) and \\( c \\).",
-        "workingOut": "b = -1.5(2) = -3, \\quad c = -6(2) = -12"
+        "workingOut": "b = -1.5(2) = -3, quad c = -6(2) = -12"
       },
       {
         "explanation": "Solve for \\( d \\) using \\( -a + b - c + d = 17 \\).",

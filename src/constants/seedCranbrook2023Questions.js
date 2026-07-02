@@ -20,7 +20,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recall the definition of a one-to-many relation: at least one \\(x\\)-value is paired with more than one \\(y\\)-value, but each \\(y\\)-value is paired with only one \\(x\\)-value. We must check both directions for every option.",
-        "workingOut": "\\text{one-to-many: one } x \\to \\text{many } y, \\text{ each } y \\leftarrow \\text{one } x"
+        "workingOut": "\\text{one-to-many: one } x \\to \\text{many } y, text{ each } y \\leftarrow \\text{one } x"
       },
       {
         "explanation": "Check option (A). The \\(x\\)-value \\(1\\) maps to both \\(y=1\\) and \\(y=2\\), so it is \"one-to-many\" in the \\(x\\) direction. Now check the \\(y\\)-values: \\(1, 2, 3, 4\\) are all distinct, so no \\(y\\) comes from two different \\(x\\)-values.",
@@ -73,7 +73,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify what each axis measures: the vertical axis shows height in centimetres, and the horizontal axis shows weight in kilograms. Comparing two points means comparing their vertical positions for height and horizontal positions for weight.",
-        "workingOut": "\\text{vertical} = \\text{height (cm)}, \\quad \\text{horizontal} = \\text{weight (kg)}"
+        "workingOut": "\\text{vertical} = \\text{height (cm)}, quad \\text{horizontal} = \\text{weight (kg)}"
       },
       {
         "explanation": "Student A is plotted above Student B, meaning A has a larger vertical coordinate, so Student A is taller.",
@@ -110,7 +110,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Translate the percentile information into quartiles: 25% of students scored below 40 means the first quartile is \\(Q_1 = 40\\); 75% scored below 86 means the third quartile is \\(Q_3 = 86\\).",
-        "workingOut": "Q_1 = 40, \\quad Q_3 = 86, \\quad \\text{max} = 96"
+        "workingOut": "Q_1 = 40, quad Q_3 = 86, quad \\text{max} = 96"
       },
       {
         "explanation": "For a symmetrical distribution, the median lies exactly halfway between the first and third quartiles, so average \\(Q_1\\) and \\(Q_3\\).",
@@ -182,33 +182,33 @@ export const CRANBROOK_2023_QUESTIONS = [
     "q": "Let $f(x) = \\sqrt{x}$ and $g(x) = \\dfrac{1}{x-1}$. What is the domain and range valid for both $f(g(x))$ and $g(f(x))$?",
     "a": "3",
     "opts": [
-      "Domain: $[-1, 1]$, Range $(-\\infty, \\infty)$",
-      "Domain: $(0, \\infty)$, Range $(-\\infty, 0) \\cup (0, \\infty)$",
-      "Domain: $[0, \\infty)$, Range $(0, \\infty)$",
-      "Domain: $(1, \\infty)$, Range $(0, \\infty)$"
+      "Domain: $[-1, 1]$, Range $(-\\infty, infty)$",
+      "Domain: $(0, infty)$, Range $(-\\infty, 0) \\cup (0, infty)$",
+      "Domain: $[0, infty)$, Range $(0, infty)$",
+      "Domain: $(1, infty)$, Range $(0, infty)$"
     ],
     "h": "Find the domain and range of each composite separately, then take the values common to both.",
-    "s": "$f(g(x)) = \\sqrt{\\dfrac{1}{x-1}}$ needs $\\dfrac{1}{x-1} > 0$, i.e. $x > 1$: domain $(1,\\infty)$, range $(0,\\infty)$.\n\n$g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}$ needs $x \\geq 0$ and $\\sqrt{x} \\neq 1$: domain $[0,\\infty)\\setminus{1}$, range $(-\\infty,-1] \\cup (0,\\infty)$.\n\nThe domain common to both is $(1, \\infty)$ and the range common to both is $(0, \\infty)$.",
+    "s": "$f(g(x)) = \\sqrt{\\dfrac{1}{x-1}}$ needs $\\dfrac{1}{x-1} > 0$, i.e. $x > 1$: domain $(1, infty)$, range $(0, infty)$.\n\n$g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}$ needs $x \\geq 0$ and $\\sqrt{x} \\neq 1$: domain $[0, infty)\\setminus{1}$, range $(-\\infty,-1] \\cup (0, infty)$.\n\nThe domain common to both is $(1, infty)$ and the range common to both is $(0, infty)$.",
     "solutionSteps": [
       {
         "explanation": "Form the first composite \\(f(g(x)) = \\sqrt{\\dfrac{1}{x-1}}\\). The square root requires its argument to be non-negative, and the fraction cannot be zero, so we need \\(\\dfrac{1}{x-1} > 0\\), which happens exactly when \\(x - 1 > 0\\).",
-        "workingOut": "f(g(x)) = \\sqrt{\\dfrac{1}{x-1}}, \\quad \\text{domain: } x > 1"
+        "workingOut": "f(g(x)) = \\sqrt{\\dfrac{1}{x-1}}, quad \\text{domain: } x > 1"
       },
       {
-        "explanation": "Find the range of \\(f(g(x))\\): as \\(x\\) runs over \\((1, \\infty)\\), the inner value \\(\\dfrac{1}{x-1}\\) takes every value in \\((0, \\infty)\\), and the square root of these values also covers \\((0, \\infty)\\).",
-        "workingOut": "\\text{range of } f(g(x)) = (0, \\infty)"
+        "explanation": "Find the range of \\(f(g(x))\\): as \\(x\\) runs over \\((1, infty)\\), the inner value \\(\\dfrac{1}{x-1}\\) takes every value in \\((0, infty)\\), and the square root of these values also covers \\((0, infty)\\).",
+        "workingOut": "\\text{range of } f(g(x)) = (0, infty)"
       },
       {
         "explanation": "Form the second composite \\(g(f(x)) = \\dfrac{1}{\\sqrt{x} - 1}\\). It requires \\(x \\geq 0\\) for the square root and \\(\\sqrt{x} \\neq 1\\) (i.e. \\(x \\neq 1\\)) so the denominator is non-zero.",
-        "workingOut": "g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}, \\quad \\text{domain: } [0,\\infty)\\setminus{1}"
+        "workingOut": "g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}, quad \\text{domain: } [0, infty)\\setminus{1}"
       },
       {
-        "explanation": "Find the range of \\(g(f(x))\\): \\(\\sqrt{x} - 1\\) covers \\([-1, \\infty)\\setminus{0}\\), so its reciprocal covers \\((-\\infty, -1] \\cup (0, \\infty)\\).",
-        "workingOut": "\\text{range of } g(f(x)) = (-\\infty, -1] \\cup (0, \\infty)"
+        "explanation": "Find the range of \\(g(f(x))\\): \\(\\sqrt{x} - 1\\) covers \\([-1, infty)\\setminus{0}\\), so its reciprocal covers \\((-\\infty, -1] \\cup (0, infty)\\).",
+        "workingOut": "\\text{range of } g(f(x)) = (-\\infty, -1] \\cup (0, infty)"
       },
       {
-        "explanation": "Intersect the two domains and the two ranges to find what is valid for both composites: \\((1,\\infty) \\cap [0,\\infty)\\setminus{1} = (1,\\infty)\\) and \\((0,\\infty) \\cap \\bigl((-\\infty,-1] \\cup (0,\\infty)\\bigr) = (0,\\infty)\\).",
-        "workingOut": "\\text{Domain: } (1, \\infty), \\quad \\text{Range: } (0, \\infty) \\implies \\text{(D)}"
+        "explanation": "Intersect the two domains and the two ranges to find what is valid for both composites: \\((1, infty) \\cap [0, infty)\\setminus{1} = (1, infty)\\) and \\((0, infty) \\cap \\bigl((-\\infty,-1] \\cup (0, infty)\\bigr) = (0, infty)\\).",
+        "workingOut": "\\text{Domain: } (1, infty), quad \\text{Range: } (0, infty) \\implies \\text{(D)}"
       }
     ]
   },
@@ -298,13 +298,13 @@ export const CRANBROOK_2023_QUESTIONS = [
     "source": "Cranbrook 2023 Trial Q8",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A particle is moving in a straight line such that its displacement $x$ metres at time $t$ seconds from the origin is given by $x = k\\cos(at + b)$, where $a$, $b$ and $k$ are constants. The particle is stationary when $t = \\dfrac{5\\pi}{12}, \\dfrac{11\\pi}{12}, \\dfrac{17\\pi}{12}, \\ldots$ The initial acceleration of the particle is $6\\sqrt{3}\\ \\text{ms}^{-2}$. What could be the values of $a$, $b$ and $k$?",
+    "q": "A particle is moving in a straight line such that its displacement $x$ metres at time $t$ seconds from the origin is given by $x = k\\cos(at + b)$, where $a$, $b$ and $k$ are constants. The particle is stationary when $t = \\dfrac{5\\pi}{12}, dfrac{11\\pi}{12}, dfrac{17\\pi}{12}, ldots$ The initial acceleration of the particle is $6\\sqrt{3}\\ \\text{ms}^{-2}$. What could be the values of $a$, $b$ and $k$?",
     "a": "3",
     "opts": [
-      "$a = 4,\\ b = -\\dfrac{5\\pi}{6},\\ k = 3$",
-      "$a = 2,\\ b = -\\dfrac{5\\pi}{6},\\ k = -3$",
-      "$a = 2,\\ b = \\dfrac{\\pi}{6},\\ k = 3$",
-      "$a = 2,\\ b = \\dfrac{\\pi}{6},\\ k = -3$"
+      "$a = 4, b = -\\dfrac{5\\pi}{6}, k = 3$",
+      "$a = 2, b = -\\dfrac{5\\pi}{6}, k = -3$",
+      "$a = 2, b = \\dfrac{\\pi}{6}, k = 3$",
+      "$a = 2, b = \\dfrac{\\pi}{6}, k = -3$"
     ],
     "h": "Stationary times are $\\dfrac{\\pi}{a}$ apart. Then test the initial acceleration $\\ddot{x}(0) = -ka^2\\cos b$ against $6\\sqrt{3}$.",
     "s": "The stationary times are spaced $\\dfrac{11\\pi}{12} - \\dfrac{5\\pi}{12} = \\dfrac{\\pi}{2}$ apart. Since $v = 0$ every half-period, $\\dfrac{\\pi}{a} = \\dfrac{\\pi}{2}$ gives $a = 2$. The acceleration is $\\ddot{x} = -ka^2\\cos(at+b)$, so $\\ddot{x}(0) = -4k\\cos b = 6\\sqrt{3}$. Testing $b = \\dfrac{\\pi}{6}$, $k = -3$: $-4(-3)\\cos\\dfrac{\\pi}{6} = 12 \\cdot \\dfrac{\\sqrt{3}}{2} = 6\\sqrt{3}$. ✓ The answer is (D).",
@@ -347,19 +347,19 @@ export const CRANBROOK_2023_QUESTIONS = [
       "$2$",
       "$1$"
     ],
-    "h": "Use the null factor law: solve $\\sin\\theta = \\dfrac{\\sqrt{2}}{2}$ and $\\tan\\theta = \\dfrac{\\sqrt{3}}{3}$ separately on $[0, \\pi]$.",
-    "s": "$\\sin\\theta = \\dfrac{\\sqrt{2}}{2}$ gives $\\theta = \\dfrac{\\pi}{4}, \\dfrac{3\\pi}{4}$ (two solutions in $[0,\\pi]$). $\\tan\\theta = \\dfrac{\\sqrt{3}}{3} = \\dfrac{1}{\\sqrt{3}}$ gives $\\theta = \\dfrac{\\pi}{6}$ only (the next solution $\\pi + \\dfrac{\\pi}{6}$ is outside the interval). Total: $3$ solutions.",
+    "h": "Use the null factor law: solve $\\sin\\theta = \\dfrac{\\sqrt{2}}{2}$ and $\\tan\\theta = \\dfrac{\\sqrt{3}}{3}$ separately on $[0, pi]$.",
+    "s": "$\\sin\\theta = \\dfrac{\\sqrt{2}}{2}$ gives $\\theta = \\dfrac{\\pi}{4}, dfrac{3\\pi}{4}$ (two solutions in $[0, pi]$). $\\tan\\theta = \\dfrac{\\sqrt{3}}{3} = \\dfrac{1}{\\sqrt{3}}$ gives $\\theta = \\dfrac{\\pi}{6}$ only (the next solution $\\pi + \\dfrac{\\pi}{6}$ is outside the interval). Total: $3$ solutions.",
     "solutionSteps": [
       {
         "explanation": "Apply the null factor law: a product equals zero exactly when at least one factor is zero. This splits the problem into two separate trigonometric equations.",
         "workingOut": "\\sin\\theta = \\dfrac{\\sqrt{2}}{2} \\quad \\text{or} \\quad \\tan\\theta = \\dfrac{\\sqrt{3}}{3}"
       },
       {
-        "explanation": "Solve \\(\\sin\\theta = \\dfrac{\\sqrt{2}}{2}\\) on \\([0, \\pi]\\). Sine is positive in the first and second quadrants, with related angle \\(\\dfrac{\\pi}{4}\\), so there are two solutions.",
+        "explanation": "Solve \\(\\sin\\theta = \\dfrac{\\sqrt{2}}{2}\\) on \\([0, pi]\\). Sine is positive in the first and second quadrants, with related angle \\(\\dfrac{\\pi}{4}\\), so there are two solutions.",
         "workingOut": "\\theta = \\dfrac{\\pi}{4} \\quad \\text{or} \\quad \\theta = \\pi - \\dfrac{\\pi}{4} = \\dfrac{3\\pi}{4}"
       },
       {
-        "explanation": "Solve \\(\\tan\\theta = \\dfrac{\\sqrt{3}}{3} = \\dfrac{1}{\\sqrt{3}}\\) on \\([0, \\pi]\\). Tangent has period \\(\\pi\\), with related angle \\(\\dfrac{\\pi}{6}\\). The first-quadrant solution is \\(\\dfrac{\\pi}{6}\\); the next would be \\(\\dfrac{\\pi}{6} + \\pi > \\pi\\), outside the interval. (Tangent is negative in the second quadrant, so no solution there.)",
+        "explanation": "Solve \\(\\tan\\theta = \\dfrac{\\sqrt{3}}{3} = \\dfrac{1}{\\sqrt{3}}\\) on \\([0, pi]\\). Tangent has period \\(\\pi\\), with related angle \\(\\dfrac{\\pi}{6}\\). The first-quadrant solution is \\(\\dfrac{\\pi}{6}\\); the next would be \\(\\dfrac{\\pi}{6} + \\pi > \\pi\\), outside the interval. (Tangent is negative in the second quadrant, so no solution there.)",
         "workingOut": "\\theta = \\dfrac{\\pi}{6} \\text{ only}"
       },
       {
@@ -553,11 +553,11 @@ export const CRANBROOK_2023_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognise the composite structure: \\(y = u^2\\) where \\(u = \\ln x\\). The chain rule says \\(\\dfrac{dy}{dx} = \\dfrac{dy}{du} \\cdot \\dfrac{du}{dx}\\), because the function is an outer power applied to an inner logarithm.",
-        "workingOut": "y = u^2, \\quad u = \\ln x"
+        "workingOut": "y = u^2, quad u = \\ln x"
       },
       {
         "explanation": "Differentiate the outer function with respect to \\(u\\) (bring down the power and reduce it by one), and the inner function with respect to \\(x\\) (the derivative of \\(\\ln x\\) is \\(\\dfrac{1}{x}\\)).",
-        "workingOut": "\\dfrac{dy}{du} = 2u, \\quad \\dfrac{du}{dx} = \\dfrac{1}{x}"
+        "workingOut": "\\dfrac{dy}{du} = 2u, quad \\dfrac{du}{dx} = \\dfrac{1}{x}"
       },
       {
         "explanation": "Multiply the two derivatives and substitute back \\(u = \\ln x\\) to express the answer in terms of \\(x\\).",
@@ -677,18 +677,18 @@ export const CRANBROOK_2023_QUESTIONS = [
     "source": "Cranbrook 2023 Trial Q16(b)",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "Hence, or otherwise, find the area bounded by the curve $y = f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x - \\pi)\\right)$ and the $x$-axis in the interval $[-\\pi, \\pi]$.",
+    "q": "Hence, or otherwise, find the area bounded by the curve $y = f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x - \\pi)\\right)$ and the $x$-axis in the interval $[-\\pi, pi]$.",
     "a": "$4$ square units",
     "opts": [],
-    "h": "From part (a), $f(x) = \\cos\\dfrac{x}{2}$, which is non-negative on $[-\\pi, \\pi]$. Use the even symmetry to double the integral over $[0, \\pi]$.",
-    "s": "Since $f(x) = \\cos\\dfrac{x}{2} \\geq 0$ on $[-\\pi, \\pi]$ (as $\\dfrac{x}{2} \\in [-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}]$):\n\nArea $= \\displaystyle\\int_{-\\pi}^{\\pi} \\cos\\dfrac{x}{2}\\,dx = 2\\int_0^{\\pi} \\cos\\dfrac{x}{2}\\,dx = 2\\left[2\\sin\\dfrac{x}{2}\\right]_0^{\\pi} = 4(1 - 0) = 4$.",
+    "h": "From part (a), $f(x) = \\cos\\dfrac{x}{2}$, which is non-negative on $[-\\pi, pi]$. Use the even symmetry to double the integral over $[0, pi]$.",
+    "s": "Since $f(x) = \\cos\\dfrac{x}{2} \\geq 0$ on $[-\\pi, pi]$ (as $\\dfrac{x}{2} \\in [-\\dfrac{\\pi}{2}, dfrac{\\pi}{2}]$):\n\nArea $= \\displaystyle\\int_{-\\pi}^{\\pi} \\cos\\dfrac{x}{2}\\,dx = 2\\int_0^{\\pi} \\cos\\dfrac{x}{2}\\,dx = 2\\left[2\\sin\\dfrac{x}{2}\\right]_0^{\\pi} = 4(1 - 0) = 4$.",
     "solutionSteps": [
       {
-        "explanation": "Use the result of part (a): \\(f(x) = \\cos\\dfrac{x}{2}\\). Check the sign on the interval: for \\(x \\in [-\\pi, \\pi]\\), the argument \\(\\dfrac{x}{2}\\) lies in \\(\\left[-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right]\\) where cosine is non-negative, so the curve does not dip below the \\(x\\)-axis and the area equals the integral directly.",
-        "workingOut": "f(x) = \\cos\\dfrac{x}{2} \\geq 0 \\text{ on } [-\\pi, \\pi]"
+        "explanation": "Use the result of part (a): \\(f(x) = \\cos\\dfrac{x}{2}\\). Check the sign on the interval: for \\(x \\in [-\\pi, pi]\\), the argument \\(\\dfrac{x}{2}\\) lies in \\(\\left[-\\dfrac{\\pi}{2}, dfrac{\\pi}{2}\\right]\\) where cosine is non-negative, so the curve does not dip below the \\(x\\)-axis and the area equals the integral directly.",
+        "workingOut": "f(x) = \\cos\\dfrac{x}{2} \\geq 0 \\text{ on } [-\\pi, pi]"
       },
       {
-        "explanation": "Exploit the even symmetry proven in part (a): the integral over the symmetric interval \\([-\\pi, \\pi]\\) is twice the integral over \\([0, \\pi]\\).",
+        "explanation": "Exploit the even symmetry proven in part (a): the integral over the symmetric interval \\([-\\pi, pi]\\) is twice the integral over \\([0, pi]\\).",
         "workingOut": "\\text{Area} = \\int_{-\\pi}^{\\pi} \\cos\\dfrac{x}{2}\\,dx = 2\\int_0^{\\pi} \\cos\\dfrac{x}{2}\\,dx"
       },
       {
@@ -897,7 +897,7 @@ export const CRANBROOK_2023_QUESTIONS = [
       },
       {
         "explanation": "Take natural logarithms of both sides. Because \\(\\ln(0.9)\\) is negative, dividing by it reverses the inequality sign.",
-        "workingOut": "0.2t\\,\\ln(0.9) \\leq \\ln(0.31637) \\implies 0.2t \\geq \\dfrac{-1.15094}{-0.10536} = 10.9239"
+        "workingOut": "0.2t\\, ln(0.9) \\leq \\ln(0.31637) \\implies 0.2t \\geq \\dfrac{-1.15094}{-0.10536} = 10.9239"
       },
       {
         "explanation": "Solve for \\(t\\) and round up to the nearest whole minute (rounding down would not yet satisfy the condition).",
@@ -989,18 +989,18 @@ export const CRANBROOK_2023_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute the means of the week numbers and the income values, which are needed for the least-squares formulas.",
-        "workingOut": "\\bar{n} = \\dfrac{1+2+3+4+5}{5} = 3, \\quad \\bar{y} = \\dfrac{200+100+300+300+400}{5} = 260"
+        "workingOut": "\\bar{n} = \\dfrac{1+2+3+4+5}{5} = 3, quad \\bar{y} = \\dfrac{200+100+300+300+400}{5} = 260"
       },
       {
         "explanation": "Compute the two sums required for the gradient: the sum of the products \\(\\sum ny\\) and the sum of squares \\(\\sum n^2\\).",
-        "workingOut": "\\sum ny = 200 + 200 + 900 + 1200 + 2000 = 4500, \\quad \\sum n^2 = 1+4+9+16+25 = 55"
+        "workingOut": "\\sum ny = 200 + 200 + 900 + 1200 + 2000 = 4500, quad \\sum n^2 = 1+4+9+16+25 = 55"
       },
       {
         "explanation": "Apply the least-squares gradient formula, which measures how income co-varies with the week number.",
         "workingOut": "b = \\dfrac{\\sum ny - 5\\bar{n}\\bar{y}}{\\sum n^2 - 5\\bar{n}^2} = \\dfrac{4500 - 3900}{55 - 45} = \\dfrac{600}{10} = 60"
       },
       {
-        "explanation": "Find the intercept using the property that the regression line passes through the mean point \\((\\bar{n}, \\bar{y})\\).",
+        "explanation": "Find the intercept using the property that the regression line passes through the mean point \\((\\bar{n}, bar{y})\\).",
         "workingOut": "a = \\bar{y} - b\\bar{n} = 260 - 60(3) = 80 \\implies \\text{Income} = 60n + 80"
       },
       {
@@ -1009,7 +1009,7 @@ export const CRANBROOK_2023_QUESTIONS = [
       },
       {
         "explanation": "State both equations, then plot them over the data. The income line \\(y = 60n + 80\\) has \\(y\\)-intercept \\(80\\) and gradient \\(60\\); the expenses line \\(y = 20n + 180\\) has \\(y\\)-intercept \\(180\\) and gradient \\(20\\).",
-        "workingOut": "\\text{Income} = 60n + 80, \\quad \\text{Expenses} = 20n + 180"
+        "workingOut": "\\text{Income} = 60n + 80, quad \\text{Expenses} = 20n + 180"
       },
       {
         "explanation": "Draw both lines neatly over Ivy's five income data points \\((1,200), (2,100), (3,300), (4,300), (5,400)\\). The income regression line (blue) passes through the mean point \\((3, 260)\\); the expenses line (green) starts at \\((1, 200)\\) and rises \\(20 each week.\\)",
@@ -1065,7 +1065,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognise that the volume of air is the integral of the flow rate over time, so we estimate \\(\\int_0^3 10e^{-\\sqrt{t}}\\,dt\\) numerically. With three applications (three strips) over \\([0, 3]\\), the strip width is \\(h = 1\\).",
-        "workingOut": "\\text{Volume} = \\int_0^3 V\\,dt, \\quad h = \\dfrac{3-0}{3} = 1"
+        "workingOut": "\\text{Volume} = \\int_0^3 V\\,dt, quad h = \\dfrac{3-0}{3} = 1"
       },
       {
         "explanation": "Write the trapezoidal rule for three strips: end ordinates are weighted once and interior ordinates twice.",
@@ -1145,7 +1145,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List the surfaces of the closed half-cylinder: two semicircular ends of radius \\(r\\), the curved surface (half of a full cylinder's lateral surface), and the flat rectangular top of width \\(2r\\) and length \\(h\\).",
-        "workingOut": "\\text{ends: } 2 \\times \\tfrac{1}{2}\\pi r^2 = \\pi r^2, \\quad \\text{curved: } \\tfrac{1}{2}(2\\pi r h) = \\pi r h, \\quad \\text{top: } 2rh"
+        "workingOut": "\\text{ends: } 2 \\times \\tfrac{1}{2}\\pi r^2 = \\pi r^2, quad \\text{curved: } \\tfrac{1}{2}(2\\pi r h) = \\pi r h, quad \\text{top: } 2rh"
       },
       {
         "explanation": "Add the three parts and factor the terms containing \\(h\\).",
@@ -1407,11 +1407,11 @@ export const CRANBROOK_2023_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The mast is vertical, so triangles \\(AMT\\) and \\(BMT\\) are right-angled at \\(M\\). Apply Pythagoras' theorem in each to express the wire lengths in terms of the mast height \\(x\\).",
-        "workingOut": "TA = \\sqrt{x^2 + 100^2}, \\qquad TB = \\sqrt{x^2 + 216^2}"
+        "workingOut": "TA = \\sqrt{x^2 + 100^2}, qquad TB = \\sqrt{x^2 + 216^2}"
       },
       {
         "explanation": "Write the constraint that the total wire length is 380 m. Let \\(u = TA\\) and \\(v = TB\\) for cleaner algebra.",
-        "workingOut": "u + v = 380, \\quad u = \\sqrt{x^2 + 10000}, \\quad v = \\sqrt{x^2 + 46656}"
+        "workingOut": "u + v = 380, quad u = \\sqrt{x^2 + 10000}, quad v = \\sqrt{x^2 + 46656}"
       },
       {
         "explanation": "Subtract the squared expressions: the \\(x^2\\) terms cancel, giving the difference of squares \\(v^2 - u^2\\), which factors as \\((v-u)(v+u)\\).",
@@ -1463,7 +1463,7 @@ export const CRANBROOK_2023_QUESTIONS = [
       },
       {
         "explanation": "Read off the vertex from the completed-square form: the parabola is concave down with maximum at \\(x = 4\\), \\(y = 3\\).",
-        "workingOut": "\\text{Vertex } (4, 3), \\text{ maximum}"
+        "workingOut": "\\text{Vertex } (4, 3), text{ maximum}"
       },
       {
         "explanation": "Find the intercepts. For \\(x\\)-intercepts set \\(y = 0\\); for the \\(y\\)-intercept set \\(x = 0\\). Both calculations confirm the curve passes through the origin.",
@@ -1543,7 +1543,7 @@ export const CRANBROOK_2023_QUESTIONS = [
       },
       {
         "explanation": "Since the motion is one-directional, the distance is the magnitude of the displacement, \\(|x(1) - x(0)|\\). Evaluate the position at both times.",
-        "workingOut": "x(0) = 2\\ln 3, \\qquad x(1) = 2\\ln 4 - 1"
+        "workingOut": "x(0) = 2\\ln 3, qquad x(1) = 2\\ln 4 - 1"
       },
       {
         "explanation": "Compute the displacement and combine the logarithms using \\(2\\ln\\frac{4}{3} = \\ln\\left(\\frac{4}{3}\\right)^2 = \\ln\\frac{16}{9}\\).",
@@ -1579,7 +1579,7 @@ export const CRANBROOK_2023_QUESTIONS = [
       },
       {
         "explanation": "Confirm this is a maximum: the acceleration is positive for \\(t < \\sqrt{3}\\) (velocity increasing) and negative for \\(t > \\sqrt{3}\\) (velocity decreasing), so the velocity peaks at \\(t = \\sqrt{3}\\).",
-        "workingOut": "a > 0 \\text{ for } t < \\sqrt{3}, \\quad a < 0 \\text{ for } t > \\sqrt{3} \\implies \\text{maximum}"
+        "workingOut": "a > 0 \\text{ for } t < \\sqrt{3}, quad a < 0 \\text{ for } t > \\sqrt{3} \\implies \\text{maximum}"
       },
       {
         "explanation": "Substitute \\(t = \\sqrt{3}\\) into the velocity function and simplify, rationalising the fraction.",
@@ -1619,7 +1619,7 @@ export const CRANBROOK_2023_QUESTIONS = [
       },
       {
         "explanation": "Classify \\(x = 1\\) with a sign test of \\(f'\\): the squared factor is always non-negative, so the sign follows \\((1-x)\\). For \\(x < 1\\), \\(f' > 0\\); for \\(1 < x < 4\\), \\(f' < 0\\). The gradient changes from positive to negative, so \\(x=1\\) is a local maximum. Evaluate \\(f(1)\\).",
-        "workingOut": "f(1) = 3(1)\\left(\\dfrac{3}{4}\\right)^3 + 1 = \\dfrac{81}{64} + 1 = \\dfrac{145}{64} \\implies \\text{local max } \\left(1, \\dfrac{145}{64}\\right)"
+        "workingOut": "f(1) = 3(1)\\left(\\dfrac{3}{4}\\right)^3 + 1 = \\dfrac{81}{64} + 1 = \\dfrac{145}{64} \\implies \\text{local max } \\left(1, dfrac{145}{64}\\right)"
       },
       {
         "explanation": "Classify \\(x = 4\\): because the factor \\(\\left(1-\\dfrac{x}{4}\\right)^2\\) is squared, \\(f'\\) does not change sign there (\\(f' < 0\\) on both sides). A stationary point with no sign change is a horizontal point of inflection. Evaluate \\(f(4)\\).",
@@ -1666,27 +1666,27 @@ export const CRANBROOK_2023_QUESTIONS = [
     "q": "Sketch the graph of $y = f(x) = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1$ in the interval $[0, 6]$, showing the stationary points, the $y$-intercept and the approximate location of the $x$-intercept.",
     "a": "Curve starts at $(0, 1)$, rises to the local maximum $\\left(1, \\dfrac{145}{64}\\right)$, falls through the horizontal point of inflection $(4, 1)$, continues falling and crosses the $x$-axis between $x = 5$ and $x = 6$, ending at $\\left(6, -\\dfrac{5}{4}\\right)$.",
     "opts": [],
-    "h": "Plot the $y$-intercept $(0,1)$, local max $\\left(1, \\frac{145}{64}\\right)$, horizontal POI $(4,1)$, and the $x$-intercept between 5 and 6, then join smoothly.",
-    "s": "Key features: $y$-intercept $(0, 1)$; rising to local maximum $\\left(1, \\dfrac{145}{64}\\right) \\approx (1, 2.27)$; decreasing through the horizontal point of inflection $(4, 1)$ where the curve momentarily flattens; continuing to decrease, crossing the $x$-axis between $x = 5$ and $x = 6$ (from part (b)); $f(6) = -\\dfrac{5}{4}$.",
+    "h": "Plot the $y$-intercept $(0,1)$, local max $\\left(1, frac{145}{64}\\right)$, horizontal POI $(4,1)$, and the $x$-intercept between 5 and 6, then join smoothly.",
+    "s": "Key features: $y$-intercept $(0, 1)$; rising to local maximum $\\left(1, dfrac{145}{64}\\right) \\approx (1, 2.27)$; decreasing through the horizontal point of inflection $(4, 1)$ where the curve momentarily flattens; continuing to decrease, crossing the $x$-axis between $x = 5$ and $x = 6$ (from part (b)); $f(6) = -\\dfrac{5}{4}$.",
     "solutionSteps": [
       {
         "explanation": "Mark the \\(y\\)-intercept by evaluating \\(f(0)\\).",
         "workingOut": "f(0) = 0 + 1 = 1 \\implies (0, 1)"
       },
       {
-        "explanation": "Mark the stationary points found in part (a): the local maximum at \\(\\left(1, \\dfrac{145}{64}\\right) \\approx (1, 2.27)\\) and the horizontal point of inflection at \\((4, 1)\\), where the tangent is horizontal but the curve keeps decreasing through it.",
-        "workingOut": "\\left(1, \\tfrac{145}{64}\\right) \\text{ max}, \\quad (4, 1) \\text{ horizontal POI}"
+        "explanation": "Mark the stationary points found in part (a): the local maximum at \\(\\left(1, dfrac{145}{64}\\right) \\approx (1, 2.27)\\) and the horizontal point of inflection at \\((4, 1)\\), where the tangent is horizontal but the curve keeps decreasing through it.",
+        "workingOut": "\\left(1, tfrac{145}{64}\\right) \\text{ max}, quad (4, 1) \\text{ horizontal POI}"
       },
       {
         "explanation": "Mark the approximate \\(x\\)-intercept between \\(x = 5\\) and \\(x = 6\\) (part (b)), and the right endpoint \\(f(6) = -\\dfrac{5}{4}\\).",
-        "workingOut": "x\\text{-intercept} \\in (5, 6), \\quad f(6) = -\\tfrac{5}{4}"
+        "workingOut": "x\\text{-intercept} \\in (5, 6), quad f(6) = -\\tfrac{5}{4}"
       },
       {
         "explanation": "Join the points smoothly: increasing on \\((0,1)\\), decreasing on \\((1, 4)\\), flattening momentarily at \\((4,1)\\), then decreasing through the \\(x\\)-axis to \\((6, -\\tfrac{5}{4})\\).",
         "workingOut": "\\text{smooth curve through } (0,1) \\nearrow (1, 2.27) \\searrow (4,1) \\searrow (6, -1.25)"
       },
       {
-        "explanation": "Sketch \\(y = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1\\) on \\([0, 6]\\): start at \\((0,1)\\), rise to the local maximum \\(\\left(1, \\tfrac{145}{64}\\right)\\), fall through the horizontal point of inflection \\((4, 1)\\), then cross the \\(x\\)-axis between \\(5\\) and \\(6\\), ending at \\((6, -\\tfrac{5}{4})\\).",
+        "explanation": "Sketch \\(y = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1\\) on \\([0, 6]\\): start at \\((0,1)\\), rise to the local maximum \\(\\left(1, tfrac{145}{64}\\right)\\), fall through the horizontal point of inflection \\((4, 1)\\), then cross the \\(x\\)-axis between \\(5\\) and \\(6\\), ending at \\((6, -\\tfrac{5}{4})\\).",
         "workingOut": "",
         "graphData": {
           "jsxGraph": {
@@ -1726,7 +1726,7 @@ export const CRANBROOK_2023_QUESTIONS = [
         "workingOut": "f(x) \\geq 0 \\;\\; \\text{and} \\;\\; \\int_{0}^{\\ln 4} f(x)\\,dx = 1"
       },
       {
-        "explanation": "Check non-negativity: the exponential function is positive for every real input, so \\(e^{-x/2} > 0\\) on \\([0, \\ln 4]\\).",
+        "explanation": "Check non-negativity: the exponential function is positive for every real input, so \\(e^{-x/2} > 0\\) on \\([0, ln 4]\\).",
         "workingOut": "e^{-x/2} > 0 \\quad \\checkmark"
       },
       {
@@ -1802,7 +1802,7 @@ export const CRANBROOK_2023_QUESTIONS = [
         "workingOut": "-\\dfrac{m}{2} = \\ln\\dfrac{3}{4} \\implies m = 2\\ln\\dfrac{4}{3}"
       },
       {
-        "explanation": "Simplify to a single logarithm using the power law, and check the median lies inside the support \\([0, \\ln 4]\\): \\(\\ln\\frac{16}{9} \\approx 0.575 < \\ln 4 \\approx 1.386\\) ✓.",
+        "explanation": "Simplify to a single logarithm using the power law, and check the median lies inside the support \\([0, ln 4]\\): \\(\\ln\\frac{16}{9} \\approx 0.575 < \\ln 4 \\approx 1.386\\) ✓.",
         "workingOut": "m = \\ln\\dfrac{16}{9}"
       }
     ]
@@ -1875,7 +1875,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "a": "$x = \\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}, \\dfrac{3\\pi}{2}$",
     "opts": [],
     "h": "Set $2\\cos x = \\dfrac{\\cos x}{\\sin x}$, multiply both sides by $\\sin x$, and bring everything to one side before factoring.",
-    "s": "At intersections: $2\\cos x = \\cot x = \\dfrac{\\cos x}{\\sin x}$. Multiplying by $\\sin x$: $2\\cos x\\sin x = \\cos x$, so $2\\cos x \\sin x - \\cos x = 0$, giving $\\cos x(2\\sin x - 1) = 0$. ✓\n\n$\\cos x = 0$: $x = \\dfrac{\\pi}{2}, \\dfrac{3\\pi}{2}$.\n$\\sin x = \\dfrac{1}{2}$: $x = \\dfrac{\\pi}{6}, \\dfrac{5\\pi}{6}$.\n\nAll four: $x = \\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}, \\dfrac{3\\pi}{2}$.",
+    "s": "At intersections: $2\\cos x = \\cot x = \\dfrac{\\cos x}{\\sin x}$. Multiplying by $\\sin x$: $2\\cos x\\sin x = \\cos x$, so $2\\cos x \\sin x - \\cos x = 0$, giving $\\cos x(2\\sin x - 1) = 0$. ✓\n\n$\\cos x = 0$: $x = \\dfrac{\\pi}{2}, dfrac{3\\pi}{2}$.\n$\\sin x = \\dfrac{1}{2}$: $x = \\dfrac{\\pi}{6}, dfrac{5\\pi}{6}$.\n\nAll four: $x = \\dfrac{\\pi}{6}, dfrac{\\pi}{2}, dfrac{5\\pi}{6}, dfrac{3\\pi}{2}$.",
     "solutionSteps": [
       {
         "explanation": "At a point of intersection the two \\(y\\)-values are equal. Write \\(\\cot x\\) in terms of sine and cosine.",
@@ -1930,12 +1930,12 @@ export const CRANBROOK_2023_QUESTIONS = [
     "q": "Find in simplest exact form the total area of the bounded region enclosed by the curves $y = 2\\cos x$ and $y = \\cot x$ for $0 < x < \\pi$.",
     "a": "$2 - \\ln 4$ square units (i.e. $2 - 2\\ln 2$)",
     "opts": [],
-    "h": "The curves intersect at $x = \\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}$. Determine which curve is on top in each strip, integrate $2\\cos x - \\cot x$ accordingly. Note $\\int \\cot x\\,dx = \\ln|\\sin x|$.",
-    "s": "Intersections in $(0, \\pi)$: $x = \\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}$.\n\nOn $\\left(\\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}\\right)$: $2\\cos x > \\cot x$. On $\\left(\\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}\\right)$: $\\cot x > 2\\cos x$.\n\n$A_1 = \\displaystyle\\int_{\\pi/6}^{\\pi/2} (2\\cos x - \\cot x)\\,dx = \\Bigl[2\\sin x - \\ln|\\sin x|\\Bigr]_{\\pi/6}^{\\pi/2} = (2 - 0) - \\left(1 - \\ln\\dfrac{1}{2}\\right) = 1 - \\ln 2$.\n\n$A_2 = \\displaystyle\\int_{\\pi/2}^{5\\pi/6} (\\cot x - 2\\cos x)\\,dx = \\Bigl[\\ln|\\sin x| - 2\\sin x\\Bigr]_{\\pi/2}^{5\\pi/6} = \\left(\\ln\\dfrac{1}{2} - 1\\right) - (0 - 2) = 1 - \\ln 2$.\n\nTotal $= 2(1 - \\ln 2) = 2 - \\ln 4$.",
+    "h": "The curves intersect at $x = \\dfrac{\\pi}{6}, dfrac{\\pi}{2}, dfrac{5\\pi}{6}$. Determine which curve is on top in each strip, integrate $2\\cos x - \\cot x$ accordingly. Note $\\int \\cot x\\,dx = \\ln|\\sin x|$.",
+    "s": "Intersections in $(0, pi)$: $x = \\dfrac{\\pi}{6}, dfrac{\\pi}{2}, dfrac{5\\pi}{6}$.\n\nOn $\\left(\\dfrac{\\pi}{6}, dfrac{\\pi}{2}\\right)$: $2\\cos x > \\cot x$. On $\\left(\\dfrac{\\pi}{2}, dfrac{5\\pi}{6}\\right)$: $\\cot x > 2\\cos x$.\n\n$A_1 = \\displaystyle\\int_{\\pi/6}^{\\pi/2} (2\\cos x - \\cot x)\\,dx = \\Bigl[2\\sin x - \\ln|\\sin x|\\Bigr]_{\\pi/6}^{\\pi/2} = (2 - 0) - \\left(1 - \\ln\\dfrac{1}{2}\\right) = 1 - \\ln 2$.\n\n$A_2 = \\displaystyle\\int_{\\pi/2}^{5\\pi/6} (\\cot x - 2\\cos x)\\,dx = \\Bigl[\\ln|\\sin x| - 2\\sin x\\Bigr]_{\\pi/2}^{5\\pi/6} = \\left(\\ln\\dfrac{1}{2} - 1\\right) - (0 - 2) = 1 - \\ln 2$.\n\nTotal $= 2(1 - \\ln 2) = 2 - \\ln 4$.",
     "solutionSteps": [
       {
-        "explanation": "Identify the intersection points inside \\((0, \\pi)\\) from part (b): \\(x = \\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}\\). These split the bounded region into two strips. Test a point in each strip to see which curve is on top: at \\(x = \\dfrac{\\pi}{3}\\), \\(2\\cos x = 1 > \\cot x \\approx 0.58\\); at \\(x = \\dfrac{2\\pi}{3}\\), \\(\\cot x \\approx -0.58 > 2\\cos x = -1\\).",
-        "workingOut": "\\left(\\tfrac{\\pi}{6}, \\tfrac{\\pi}{2}\\right): 2\\cos x \\text{ on top}; \\quad \\left(\\tfrac{\\pi}{2}, \\tfrac{5\\pi}{6}\\right): \\cot x \\text{ on top}"
+        "explanation": "Identify the intersection points inside \\((0, pi)\\) from part (b): \\(x = \\dfrac{\\pi}{6}, dfrac{\\pi}{2}, dfrac{5\\pi}{6}\\). These split the bounded region into two strips. Test a point in each strip to see which curve is on top: at \\(x = \\dfrac{\\pi}{3}\\), \\(2\\cos x = 1 > \\cot x \\approx 0.58\\); at \\(x = \\dfrac{2\\pi}{3}\\), \\(\\cot x \\approx -0.58 > 2\\cos x = -1\\).",
+        "workingOut": "\\left(\\tfrac{\\pi}{6}, tfrac{\\pi}{2}\\right): 2\\cos x \\text{ on top}; \\quad \\left(\\tfrac{\\pi}{2}, tfrac{5\\pi}{6}\\right): \\cot x \\text{ on top}"
       },
       {
         "explanation": "Set up the first integral (top minus bottom) and find the antiderivatives: \\(\\int 2\\cos x\\,dx = 2\\sin x\\) and \\(\\int \\cot x\\,dx = \\ln|\\sin x|\\).",
@@ -2047,7 +2047,7 @@ export const CRANBROOK_2023_QUESTIONS = [
       },
       {
         "explanation": "Collect the values at \\(t = 1\\): the power output is \\(g(1) = 3\\) watts, its rate of increase is \\(g'(1) = 4\\) watts/second, and we are given \\(f(3) = 5\\) and \\(f'(3) = 2\\).",
-        "workingOut": "g(1) = 3, \\quad g'(1) = 4, \\quad f(3) = 5, \\quad f'(3) = 2"
+        "workingOut": "g(1) = 3, quad g'(1) = 4, quad f(3) = 5, quad f'(3) = 2"
       },
       {
         "explanation": "Substitute all four values into the derivative.",

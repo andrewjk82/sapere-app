@@ -1162,7 +1162,7 @@ export const Y12A_CH1J_QUESTIONS = [
       },
       {
         "explanation": "Identify the parameters of the infinite geometric progression for the rebound heights.",
-        "workingOut": "\\(a = 7\\text{ m}, \\quad r = 0.70\\)",
+        "workingOut": "\\(a = 7\\text{ m}, quad r = 0.70\\)",
         "graphData": null
       },
       {

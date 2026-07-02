@@ -809,7 +809,7 @@ export const Y11_CH4B_QUESTIONS = [
       },
       {
         "explanation": "Choose test values in each interval (such as \\(x = -1\\), \\(x = 2\\), and \\(x = 7\\)) and substitute them into the expression to evaluate their signs.",
-        "workingOut": "(-1)(-1-6) = 7 > 0, \\quad (2)(2-6) = -8 < 0, \\quad (7)(7-6) = 7 > 0",
+        "workingOut": "(-1)(-1-6) = 7 > 0, quad (2)(2-6) = -8 < 0, quad (7)(7-6) = 7 > 0",
         "graphData": null
       },
       {
@@ -1005,7 +1005,7 @@ export const Y11_CH4B_QUESTIONS = [
       },
       {
         "explanation": "Substitute values like \\(x = -4\\), \\(x = 0\\), and \\(x = 6\\) into \\((x+3)(x-5)\\).",
-        "workingOut": "(-4+3)(-4-5) = 9 > 0, \\quad (0+3)(0-5) = -15 < 0, \\quad (6+3)(6-5) = 9 > 0",
+        "workingOut": "(-4+3)(-4-5) = 9 > 0, quad (0+3)(0-5) = -15 < 0, quad (6+3)(6-5) = 9 > 0",
         "graphData": null
       },
       {

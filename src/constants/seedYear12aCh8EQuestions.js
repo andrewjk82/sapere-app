@@ -10,7 +10,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the compound interest parameters for the initial loan amount.",
-        "workingOut": "P = 1000, \\quad R = 0.06, \\quad n = 4"
+        "workingOut": "P = 1000, quad R = 0.06, quad n = 4"
       },
       {
         "explanation": "Substitute these values into the compound interest formula: \\( A = P(1+R)^n \\)",
@@ -33,7 +33,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The first instalment is paid at the end of Year 1. On 31st December 2023 (end of Year 4), it has been invested for 3 years.",
-        "workingOut": "P = 288.59, \\quad R = 0.06, \\quad n = 3"
+        "workingOut": "P = 288.59, quad R = 0.06, quad n = 3"
       },
       {
         "explanation": "Calculate the compounded value: \\( A = P(1+R)^n \\)",
@@ -56,7 +56,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The second instalment is paid at the end of Year 2, earning interest for 2 years.",
-        "workingOut": "P = 288.59, \\quad R = 0.06, \\quad n = 2"
+        "workingOut": "P = 288.59, quad R = 0.06, quad n = 2"
       },
       {
         "explanation": "Calculate the compounded value.",
@@ -79,7 +79,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The third instalment is paid at the end of Year 3, earning interest for 1 year.",
-        "workingOut": "P = 288.59, \\quad R = 0.06, \\quad n = 1"
+        "workingOut": "P = 288.59, quad R = 0.06, quad n = 1"
       },
       {
         "explanation": "Calculate the compounded value.",
@@ -151,7 +151,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the GP series: \\( 288.59, 288.59(1.06), 288.59(1.06)^2, 288.59(1.06)^3 \\).",
-        "workingOut": "a = 288.59, \\quad r = 1.06, \\quad n = 4"
+        "workingOut": "a = 288.59, quad r = 1.06, quad n = 4"
       }
     ]
   },
@@ -185,7 +185,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify parameters for the initial principal compounding over 5 years.",
-        "workingOut": "P = 6000, \\quad R = 0.04, \\quad n = 5"
+        "workingOut": "P = 6000, quad R = 0.04, quad n = 5"
       },
       {
         "explanation": "Apply the compound interest formula: \\( A = P(1+R)^n \\)",
@@ -333,7 +333,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify parameters of the geometric progression.",
-        "workingOut": "a = 1347.76, \\quad r = 1.04, \\quad n = 5"
+        "workingOut": "a = 1347.76, quad r = 1.04, quad n = 5"
       }
     ]
   },
@@ -488,7 +488,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the compound loan value and the GP sum of repayments.",
-        "workingOut": "20000 \\times 1.06^{10} \\approx 35816.95, \\quad \\frac{2717.39 \\times (1.06^{10} - 1)}{0.06} \\approx 35816.96"
+        "workingOut": "20000 \\times 1.06^{10} \\approx 35816.95, quad \\frac{2717.39 \\times (1.06^{10} - 1)}{0.06} \\approx 35816.96"
       },
       {
         "explanation": "Subtract the two values to obtain the net owing balance.",
@@ -1128,7 +1128,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the monthly interest rate: \\( 12\\%/12 = 1\\% = 0.01 \\). The term is 60 periods.",
-        "workingOut": "r = 0.01, \\quad n = 60"
+        "workingOut": "r = 0.01, quad n = 60"
       },
       {
         "explanation": "Formulate the outstanding balance equation and equate to 0.",
@@ -1388,7 +1388,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Establish the recursive progression for the balance after each payment.",
-        "workingOut": "B_1 = P - M, \\quad B_2 = B_1(1+R) - M, \\quad B_3 = B_2(1+R) - M"
+        "workingOut": "B_1 = P - M, quad B_2 = B_1(1+R) - M, quad B_3 = B_2(1+R) - M"
       },
       {
         "explanation": "Expand the terms to notice the geometric progression.",
@@ -1449,7 +1449,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find rate per six-month period: \\( 10\\%/2 = 5\\% = 0.05 \\). Number of periods is 24.",
-        "workingOut": "r = 0.05, \\quad n = 24"
+        "workingOut": "r = 0.05, quad n = 24"
       },
       {
         "explanation": "Apply the repayment formula.",

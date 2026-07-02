@@ -1366,7 +1366,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factor the quadratic.",
-        "workingOut": "\\( 3x - 4 \\)\\( x - 1 \\) = 0 \\Rightarrow x = 1, \\frac{4}{3}",
+        "workingOut": "\\( 3x - 4 \\)\\( x - 1 \\) = 0 \\Rightarrow x = 1, frac{4}{3}",
         "graphData": null
       }
     ],
@@ -1553,7 +1553,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Subtract each equation.",
-        "workingOut": "\\( z = 16 - 8 = 8, \\quad x = 16 - 13 = 3, \\quad y = 16 - 11 = 5 \\)",
+        "workingOut": "\\( z = 16 - 8 = 8, quad x = 16 - 13 = 3, quad y = 16 - 11 = 5 \\)",
         "graphData": null
       }
     ],
@@ -1649,7 +1649,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "State dimensions.",
-        "workingOut": "\\( l = 12 \\\text{ cm}, \\quad w = 5 \\\text{ cm} \\)",
+        "workingOut": "\\( l = 12 \\\text{ cm}, quad w = 5 \\\text{ cm} \\)",
         "graphData": null
       }
     ],
@@ -1789,7 +1789,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve the system: x + y = 11, y - x = 3.",
-        "workingOut": "\\( 2y = 14 \\Rightarrow y = 7, \\quad x = 4 \\)",
+        "workingOut": "\\( 2y = 14 \\Rightarrow y = 7, quad x = 4 \\)",
         "graphData": null
       },
       {
@@ -1931,7 +1931,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\\\(y = 4{,}000, \\\\quad x = 6{,}000\\\\)",
+        "workingOut": "\\\\(y = 4{,}000, quad x = 6{,}000\\\\)",
         "graphData": null
       }
     ],
@@ -2015,7 +2015,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve the simple system.",
-        "workingOut": "\\\\(a = 6.50, \\\\quad b = 3.50\\\\)",
+        "workingOut": "\\\\(a = 6.50, quad b = 3.50\\\\)",
         "graphData": null
       }
     ],
@@ -2218,7 +2218,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\( y - 1 \\)\\( 4y - 5 \\) = 0 \\Rightarrow y = 1, \\frac{5}{4}",
+        "workingOut": "\\( y - 1 \\)\\( 4y - 5 \\) = 0 \\Rightarrow y = 1, frac{5}{4}",
         "graphData": null
       }
     ],
@@ -2277,7 +2277,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factor to find \\( y \\).",
-        "workingOut": "\\( y - 1 \\)\\( 4y - 5 \\) = 0 \\Rightarrow y = 1, \\frac{5}{4}",
+        "workingOut": "\\( y - 1 \\)\\( 4y - 5 \\) = 0 \\Rightarrow y = 1, frac{5}{4}",
         "graphData": null
       },
       {
@@ -2575,7 +2575,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve x - y = 2 and x + y = 4.",
-        "workingOut": "\\( 2x = 6 \\Rightarrow x = 3, \\quad y = 1 \\)",
+        "workingOut": "\\( 2x = 6 \\Rightarrow x = 3, quad y = 1 \\)",
         "graphData": null
       }
     ],
@@ -2676,7 +2676,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Find x and z.",
-        "workingOut": "\\( x = 1, \\quad z = 3 \\)",
+        "workingOut": "\\( x = 1, quad z = 3 \\)",
         "graphData": null
       }
     ],
@@ -2903,7 +2903,7 @@ export const Y11_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let u = sqrt(x), v = sqrt(y). Then u + v = 5 and u^2 + v^2 = 13.",
-        "workingOut": "\\( u + v = 5, \\quad u^2 + v^2 = 13 \\)",
+        "workingOut": "\\( u + v = 5, quad u^2 + v^2 = 13 \\)",
         "graphData": null
       },
       {
@@ -3077,7 +3077,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve: y = 6 - z, substitute.",
-        "workingOut": "\\( 2(6 - z \\) + 3z = 19 \\Rightarrow z = 7, \\quad y = -1)",
+        "workingOut": "\\( 2(6 - z \\) + 3z = 19 \\Rightarrow z = 7, quad y = -1)",
         "graphData": null
       }
     ],
@@ -3391,7 +3391,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Subtract each equation from x + y + z = 9.",
-        "workingOut": "\\( z = 9 - 5 = 4, \\quad x = 9 - 7 = 2, \\quad y = 9 - 6 = 3 \\)",
+        "workingOut": "\\( z = 9 - 5 = 4, quad x = 9 - 7 = 2, quad y = 9 - 6 = 3 \\)",
         "graphData": null
       }
     ],
@@ -3968,7 +3968,7 @@ export const Y11_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let width = w, length = w + 5.",
-        "workingOut": "\\( l = w + 5, \\quad lw = 150 \\)",
+        "workingOut": "\\( l = w + 5, quad lw = 150 \\)",
         "graphData": null
       },
       {
@@ -3983,7 +3983,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Since w must be positive, w = 10, l = 15.",
-        "workingOut": "\\( w = 10 \\\text{ m}, \\quad l = 15 \\\text{ m} \\)",
+        "workingOut": "\\( w = 10 \\\text{ m}, quad l = 15 \\\text{ m} \\)",
         "graphData": null
       }
     ],
@@ -4416,7 +4416,7 @@ export const Y11_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let the numbers be x and y where x > y.",
-        "workingOut": "\\( x - y = 2, \\quad x^2 + y^2 = 34 \\)",
+        "workingOut": "\\( x - y = 2, quad x^2 + y^2 = 34 \\)",
         "graphData": null
       },
       {
@@ -4431,7 +4431,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Since positive, y = 3 and x = 5.",
-        "workingOut": "\\( y = 3, \\quad x = 5 \\)",
+        "workingOut": "\\( y = 3, quad x = 5 \\)",
         "graphData": null
       }
     ],
@@ -4813,7 +4813,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve x + y = 7 and x - y = 1.",
-        "workingOut": "\\( 2x = 8 \\Rightarrow x = 4, \\quad y = 3 \\)",
+        "workingOut": "\\( 2x = 8 \\Rightarrow x = 4, quad y = 3 \\)",
         "graphData": null
       }
     ],
@@ -5116,7 +5116,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve the linear system: x + y = 6, x - y = 2.",
-        "workingOut": "\\( 2x = 8 \\Rightarrow x = 4, \\quad y = 2 \\)",
+        "workingOut": "\\( 2x = 8 \\Rightarrow x = 4, quad y = 2 \\)",
         "graphData": null
       }
     ],
@@ -5761,7 +5761,7 @@ export const Y11_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the relationships.",
-        "workingOut": "\\( A = 2B, \\quad C = B + 20 \\)",
+        "workingOut": "\\( A = 2B, quad C = B + 20 \\)",
         "graphData": null
       },
       {
@@ -5776,7 +5776,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Find all angles.",
-        "workingOut": "\\( A = 80°, \\quad B = 40°, \\quad C = 60° \\)",
+        "workingOut": "\\( A = 80°, quad B = 40°, quad C = 60° \\)",
         "graphData": null
       }
     ],
@@ -5959,7 +5959,7 @@ export const Y11_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let the sides be b and b + 1.",
-        "workingOut": "\\( a = b + 1, \\quad a^2 + b^2 = 61 \\)",
+        "workingOut": "\\( a = b + 1, quad a^2 + b^2 = 61 \\)",
         "graphData": null
       },
       {
@@ -5974,7 +5974,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factorise.",
-        "workingOut": "\\( (b + 6 \\)\\( b - 5 \\) = 0 \\Rightarrow b = 5, \\quad a = 6)",
+        "workingOut": "\\( (b + 6 \\)\\( b - 5 \\) = 0 \\Rightarrow b = 5, quad a = 6)",
         "graphData": null
       }
     ],
@@ -6191,7 +6191,7 @@ export const Y11_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let the numbers be x and y.",
-        "workingOut": "\\( x + y = 12, \\quad xy = 35 \\)",
+        "workingOut": "\\( x + y = 12, quad xy = 35 \\)",
         "graphData": null
       },
       {
@@ -6587,7 +6587,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Find y and z.",
-        "workingOut": "\\( y = 2, \\quad z = 4 \\)",
+        "workingOut": "\\( y = 2, quad z = 4 \\)",
         "graphData": null
       }
     ],
@@ -7020,7 +7020,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\( x^2 = 25 \\Rightarrow x = \\pm 5, \\quad y = \\pm 5 \\)",
+        "workingOut": "\\( x^2 = 25 \\Rightarrow x = \\pm 5, quad y = \\pm 5 \\)",
         "graphData": null
       }
     ],
@@ -7197,7 +7197,7 @@ export const Y11_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find \\( x \\).",
-        "workingOut": "x = 1, \\frac{4}{3}",
+        "workingOut": "x = 1, frac{4}{3}",
         "graphData": null
       },
       {
@@ -7905,7 +7905,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(x\\); the smaller value is the \\(x\\)-coordinate of \\(P\\) and the larger is that of \\(Q\\).",
-        "workingOut": "x = 1 \\;(P), \\quad x = 3 \\;(Q)"
+        "workingOut": "x = 1 \\;(P), quad x = 3 \\;(Q)"
       }
     ],
     "graphData": {
@@ -7952,7 +7952,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "(x-1)(x-2) = 0 \\Rightarrow x = 1\\,(P),\\ 2\\,(Q)"
+        "workingOut": "(x-1)(x-2) = 0 \\Rightarrow x = 1\\,(P), 2\\,(Q)"
       }
     ],
     "graphData": {
@@ -8105,7 +8105,7 @@ export const Y11_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let the numbers be x and y where x = y + 4.",
-        "workingOut": "\\( x = y + 4, \\quad xy = 60 \\)",
+        "workingOut": "\\( x = y + 4, quad xy = 60 \\)",
         "graphData": null
       },
       {
@@ -8120,7 +8120,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Taking the positive root.",
-        "workingOut": "\\( y = 6, \\quad x = 10 \\)",
+        "workingOut": "\\( y = 6, quad x = 10 \\)",
         "graphData": null
       }
     ],
@@ -8327,7 +8327,7 @@ export const Y11_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Back-substitute to find z and x.",
-        "workingOut": "\\( 9 - 5z = 4 \\Rightarrow z = 1, \\quad x = 7 - 6 + 1 = 2 \\)",
+        "workingOut": "\\( 9 - 5z = 4 \\Rightarrow z = 1, quad x = 7 - 6 + 1 = 2 \\)",
         "graphData": null
       }
     ],

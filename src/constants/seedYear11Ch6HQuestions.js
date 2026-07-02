@@ -2683,7 +2683,7 @@ export const Y11_CH6H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the internal angles of the triangle formed by A, B, and C. Angle BAC is equal to the bearing \\(36^{\\circ}\\). Angle ABC is the supplementary angle to the bearing \\(62^{\\circ}\\) from B.",
-        "workingOut": "\\angle BAC = 36^{\\circ}, \\quad \\angle ABC = 180^{\\circ} - 62^{\\circ} = 118^{\\circ}"
+        "workingOut": "\\angle BAC = 36^{\\circ}, quad \\angle ABC = 180^{\\circ} - 62^{\\circ} = 118^{\\circ}"
       },
       {
         "explanation": "Find the third angle \\(\\angle ACB\\).",

@@ -267,7 +267,7 @@ export const FRACTION_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Compare the numerators to order them from least to greatest.",
-        "workingOut": "\\frac{4}{8} < \\frac{5}{8} < \\frac{6}{8} \\implies \\frac{1}{2}, \\frac{5}{8}, \\frac{3}{4}"
+        "workingOut": "\\frac{4}{8} < \\frac{5}{8} < \\frac{6}{8} \\implies \\frac{1}{2}, frac{5}{8}, frac{3}{4}"
       }
     ],
     "answer": "$\\frac{1}{2}, \\frac{5}{8}, \\frac{3}{4}$",
@@ -693,7 +693,7 @@ export const FRACTION_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the total amount to be shared and the number of groups.",
-        "workingOut": "\\text{Total pies} = 7, \\text{ People} = 10"
+        "workingOut": "\\text{Total pies} = 7, text{ People} = 10"
       },
       {
         "explanation": "Divide the total pies by the number of people.",

@@ -234,8 +234,8 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "opts": [
       "$\\left[\\dfrac{1}{3}, 2\\right]$",
       "$\\left(\\dfrac{1}{3}, 2\\right)$",
-      "$\\left(-\\infty, \\dfrac{1}{3}\\right) \\cup (2, \\infty)$",
-      "$\\left(-\\infty, \\dfrac{1}{3}\\right] \\cup [2, \\infty)$"
+      "$\\left(-\\infty, dfrac{1}{3}\\right) \\cup (2, infty)$",
+      "$\\left(-\\infty, dfrac{1}{3}\\right] \\cup [2, infty)$"
     ],
     "h": "Factorise; for \"$\\geq 0$\" with an upward parabola the solution is outside (and at) the roots.",
     "s": "$3x^2 - 7x + 2 = (3x-1)(x-2)$, roots $x = \\frac{1}{3}, 2$. Upward parabola is $\\geq 0$ outside the roots: $x \\leq \\frac{1}{3}$ or $x \\geq 2$.",
@@ -246,7 +246,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Find the roots.",
-        "workingOut": "x = \\frac{1}{3}, \\quad x = 2"
+        "workingOut": "x = \\frac{1}{3}, quad x = 2"
       },
       {
         "explanation": "The parabola opens upward, so it is \\(\\geq 0\\) outside and at the roots.",
@@ -254,7 +254,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Write in interval notation with closed brackets.",
-        "workingOut": "\\left(-\\infty, \\tfrac{1}{3}\\right] \\cup [2, \\infty)"
+        "workingOut": "\\left(-\\infty, tfrac{1}{3}\\right] \\cup [2, infty)"
       }
     ]
   },
@@ -279,11 +279,11 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find amplitude and period of \\(f\\).",
-        "workingOut": "\\text{amp}_f = \\tfrac{1}{2}, \\quad T_f = \\frac{2\\pi}{6} = \\frac{\\pi}{3}"
+        "workingOut": "\\text{amp}_f = \\tfrac{1}{2}, quad T_f = \\frac{2\\pi}{6} = \\frac{\\pi}{3}"
       },
       {
         "explanation": "Find amplitude and period of \\(g\\).",
-        "workingOut": "\\text{amp}_g = 1, \\quad T_g = \\frac{2\\pi}{3}"
+        "workingOut": "\\text{amp}_g = 1, quad T_g = \\frac{2\\pi}{3}"
       },
       {
         "explanation": "Compare amplitudes: factor of \\(2\\).",
@@ -316,11 +316,11 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "With no outliers, each whisker can extend at most \\(1.5\\times\\text{IQR}\\) from a quartile.",
-        "workingOut": "\\text{each whisker} \\leq 1.5\\,\\text{IQR}"
+        "workingOut": "\\text{each whisker} \\leq 1.5\\, text{IQR}"
       },
       {
         "explanation": "The box between the quartiles spans one IQR.",
-        "workingOut": "\\text{box} = 1\\,\\text{IQR}"
+        "workingOut": "\\text{box} = 1\\, text{IQR}"
       },
       {
         "explanation": "Add lower whisker, box and upper whisker.",
@@ -397,7 +397,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the trapezoidal rule for one strip of width \\(h = 5\\).",
-        "workingOut": "A \\approx \\frac{h}{2}(f_0 + f_1), \\quad h = 5"
+        "workingOut": "A \\approx \\frac{h}{2}(f_0 + f_1), quad h = 5"
       },
       {
         "explanation": "Apply to the first strip (heights \\(8\\) and \\(9\\)).",
@@ -634,7 +634,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Factorise and solve.",
-        "workingOut": "(x-1)(x-2) = 0 \\Rightarrow x = 1\\,(P),\\ 2\\,(Q)"
+        "workingOut": "(x-1)(x-2) = 0 \\Rightarrow x = 1\\,(P), 2\\,(Q)"
       }
     ]
   },
@@ -686,7 +686,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "a": "$x = \\dfrac{\\pi}{2}$ or $x = \\pi$",
     "opts": [],
     "h": "Split $|A| = 1$ into $A = 1$ and $A = -1$, then solve each.",
-    "s": "Case 1: $2\\cos x + 1 = 1 \\Rightarrow \\cos x = 0 \\Rightarrow x = \\frac{\\pi}{2}$. Case 2: $2\\cos x + 1 = -1 \\Rightarrow \\cos x = -1 \\Rightarrow x = \\pi$. Both lie in $[0, \\pi]$.",
+    "s": "Case 1: $2\\cos x + 1 = 1 \\Rightarrow \\cos x = 0 \\Rightarrow x = \\frac{\\pi}{2}$. Case 2: $2\\cos x + 1 = -1 \\Rightarrow \\cos x = -1 \\Rightarrow x = \\pi$. Both lie in $[0, pi]$.",
     "solutionSteps": [
       {
         "explanation": "Split the absolute value equation into two cases.",
@@ -702,7 +702,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Both solutions lie in the domain.",
-        "workingOut": "x = \\frac{\\pi}{2}, \\; \\pi \\in [0, \\pi] \\;\\checkmark"
+        "workingOut": "x = \\frac{\\pi}{2}, \\; \\pi \\in [0, pi] \\;\\checkmark"
       }
     ]
   },
@@ -718,15 +718,15 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "a": "$m_{DE} = m_{BC} = -\\dfrac{2}{5}$, so $DE \\parallel BC$.",
     "opts": [],
     "h": "Find $D$ and $E$ with the midpoint formula, then compare gradients.",
-    "s": "$D = \\left(\\frac{1-3}{2}, \\frac{12+4}{2}\\right) = (-1, 8)$, $E = \\left(\\frac{1+7}{2}, \\frac{12+0}{2}\\right) = (4, 6)$. $m_{DE} = \\frac{8-6}{-1-4} = -\\frac{2}{5}$, $m_{BC} = \\frac{4-0}{-3-7} = -\\frac{2}{5}$. Equal gradients ⇒ parallel.",
+    "s": "$D = \\left(\\frac{1-3}{2}, frac{12+4}{2}\\right) = (-1, 8)$, $E = \\left(\\frac{1+7}{2}, frac{12+0}{2}\\right) = (4, 6)$. $m_{DE} = \\frac{8-6}{-1-4} = -\\frac{2}{5}$, $m_{BC} = \\frac{4-0}{-3-7} = -\\frac{2}{5}$. Equal gradients ⇒ parallel.",
     "solutionSteps": [
       {
         "explanation": "Find \\(D\\), the midpoint of \\(AB\\).",
-        "workingOut": "D = \\left(\\frac{1+(-3)}{2}, \\frac{12+4}{2}\\right) = (-1, 8)"
+        "workingOut": "D = \\left(\\frac{1+(-3)}{2}, frac{12+4}{2}\\right) = (-1, 8)"
       },
       {
         "explanation": "Find \\(E\\), the midpoint of \\(AC\\).",
-        "workingOut": "E = \\left(\\frac{1+7}{2}, \\frac{12+0}{2}\\right) = (4, 6)"
+        "workingOut": "E = \\left(\\frac{1+7}{2}, frac{12+0}{2}\\right) = (4, 6)"
       },
       {
         "explanation": "Compute the gradient of \\(DE\\).",
@@ -946,7 +946,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Find the \\(y\\)-values.",
-        "workingOut": "f(0) = 0, \\quad f(2) = 64 - 48 = 16"
+        "workingOut": "f(0) = 0, quad f(2) = 64 - 48 = 16"
       },
       {
         "explanation": "Second derivative for classification.",
@@ -982,7 +982,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Recall key features from part (a).",
-        "workingOut": "(0,0)\\text{ POI}, \\quad (2,16)\\text{ max}"
+        "workingOut": "(0,0)\\text{ POI}, quad (2,16)\\text{ max}"
       },
       {
         "explanation": "End behaviour from the leading term \\(-3x^4\\).",
@@ -1082,11 +1082,11 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the product rule.",
-        "workingOut": "u = x, \\quad v = \\cos 3x"
+        "workingOut": "u = x, quad v = \\cos 3x"
       },
       {
         "explanation": "Differentiate each factor (chain rule on \\(\\cos 3x\\)).",
-        "workingOut": "u' = 1, \\quad v' = -3\\sin 3x"
+        "workingOut": "u' = 1, quad v' = -3\\sin 3x"
       },
       {
         "explanation": "Apply \\(\\frac{dy}{dx} = uv' + vu'\\).",
@@ -1134,7 +1134,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "a": "$(0, \\infty)$",
     "opts": [],
     "h": "The domain restriction from $g$ is $x > 3$; apply it before finding the range.",
-    "s": "The logarithm requires $x - 3 > 0$, so $x > 3$. Then $y = x - 3 > 0$, giving range $(0, \\infty)$.",
+    "s": "The logarithm requires $x - 3 > 0$, so $x > 3$. Then $y = x - 3 > 0$, giving range $(0, infty)$.",
     "solutionSteps": [
       {
         "explanation": "Find the domain restriction from \\(\\ln(x-3)\\).",
@@ -1146,7 +1146,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "State the range.",
-        "workingOut": "(0, \\infty)"
+        "workingOut": "(0, infty)"
       }
     ]
   },
@@ -1214,11 +1214,11 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the quotient rule.",
-        "workingOut": "u = e^x, \\quad v = x + 2"
+        "workingOut": "u = e^x, quad v = x + 2"
       },
       {
         "explanation": "Differentiate numerator and denominator.",
-        "workingOut": "u' = e^x, \\quad v' = 1"
+        "workingOut": "u' = e^x, quad v' = 1"
       },
       {
         "explanation": "Apply the quotient rule.",
@@ -1274,7 +1274,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the geometric first term and ratio.",
-        "workingOut": "a = \\cos^2 x, \\quad r = \\cos^2 x"
+        "workingOut": "a = \\cos^2 x, quad r = \\cos^2 x"
       },
       {
         "explanation": "Apply \\(S_\\infty = \\frac{a}{1-r}\\).",
@@ -1410,7 +1410,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Read the shifts from the vertex at \\((2, -4)\\).",
-        "workingOut": "x \\to x - 2 \\;(b = -2), \\quad c = -4"
+        "workingOut": "x \\to x - 2 \\;(b = -2), quad c = -4"
       },
       {
         "explanation": "Write the partial form.",
@@ -1442,7 +1442,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "a": "$\\theta = \\dfrac{\\pi}{9}, \\dfrac{2\\pi}{9}, \\dfrac{7\\pi}{9}, \\dfrac{8\\pi}{9}$",
     "opts": [],
     "h": "Expand to $0 \\leq 3\\theta \\leq 3\\pi$; solve for $3\\theta$ first.",
-    "s": "$\\sin 3\\theta = \\frac{\\sqrt{3}}{2}$. Over $0 \\leq 3\\theta \\leq 3\\pi$: $3\\theta = \\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{7\\pi}{3}, \\frac{8\\pi}{3}$. Dividing by $3$: $\\theta = \\frac{\\pi}{9}, \\frac{2\\pi}{9}, \\frac{7\\pi}{9}, \\frac{8\\pi}{9}$.",
+    "s": "$\\sin 3\\theta = \\frac{\\sqrt{3}}{2}$. Over $0 \\leq 3\\theta \\leq 3\\pi$: $3\\theta = \\frac{\\pi}{3}, frac{2\\pi}{3}, frac{7\\pi}{3}, frac{8\\pi}{3}$. Dividing by $3$: $\\theta = \\frac{\\pi}{9}, frac{2\\pi}{9}, frac{7\\pi}{9}, frac{8\\pi}{9}$.",
     "solutionSteps": [
       {
         "explanation": "Isolate the sine.",
@@ -1454,11 +1454,11 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Reference angle \\(\\frac{\\pi}{3}\\); list 1st/2nd-quadrant solutions plus their \\(+2\\pi\\) copies within \\([0, 3\\pi]\\).",
-        "workingOut": "3\\theta = \\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{7\\pi}{3}, \\frac{8\\pi}{3}"
+        "workingOut": "3\\theta = \\frac{\\pi}{3}, frac{2\\pi}{3}, frac{7\\pi}{3}, frac{8\\pi}{3}"
       },
       {
         "explanation": "Divide every value by \\(3\\).",
-        "workingOut": "\\theta = \\frac{\\pi}{9}, \\frac{2\\pi}{9}, \\frac{7\\pi}{9}, \\frac{8\\pi}{9}"
+        "workingOut": "\\theta = \\frac{\\pi}{9}, frac{2\\pi}{9}, frac{7\\pi}{9}, frac{8\\pi}{9}"
       }
     ]
   },
@@ -1478,11 +1478,11 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Describe the cosine graph.",
-        "workingOut": "y = \\cos\\pi x: \\text{ period } 2, \\text{ amplitude } 1"
+        "workingOut": "y = \\cos\\pi x: \\text{ period } 2, text{ amplitude } 1"
       },
       {
         "explanation": "Describe the absolute value graph.",
-        "workingOut": "y = 1 - |x|: \\text{ apex } (0,1), \\text{ x-ints } (\\pm 1, 0)"
+        "workingOut": "y = 1 - |x|: \\text{ apex } (0,1), text{ x-ints } (\\pm 1, 0)"
       },
       {
         "explanation": "Draw both on the same axes.",
@@ -1514,7 +1514,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "source": "Danebank 2020 Trial Q32(b)",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "Hence find the number of solutions of $\\cos \\pi x = 1 - |x|$ in the domain $(-\\infty, \\infty)$.",
+    "q": "Hence find the number of solutions of $\\cos \\pi x = 1 - |x|$ in the domain $(-\\infty, infty)$.",
     "a": "$5$ solutions",
     "opts": [],
     "h": "Count the intersections; for $|x| > 2$ the line is below $-1$, where cosine cannot reach.",
@@ -1634,7 +1634,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Convert to per-period values.",
-        "workingOut": "r = 2\\%, \\quad n = 6"
+        "workingOut": "r = 2\\%, quad n = 6"
       },
       {
         "explanation": "Use the future-value factor.",
@@ -1706,7 +1706,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Match coefficients.",
-        "workingOut": "a = 3, \\quad b = 8"
+        "workingOut": "a = 3, quad b = 8"
       }
     ]
   },

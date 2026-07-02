@@ -81,7 +81,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Write in interval notation with the left endpoint included and right endpoint excluded.",
-        "workingOut": "[0,\\, 5)"
+        "workingOut": "[0, 5)"
       }
     ]
   },
@@ -147,7 +147,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Identify \\(a = 4\\) and \\(b = -2\\) in the expression \\(4X - 2\\).",
-        "workingOut": "a = 4,\\quad b = -2"
+        "workingOut": "a = 4, quad b = -2"
       },
       {
         "explanation": "Square the coefficient \\(a\\).",
@@ -180,7 +180,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two factors: \\(u = 4x^3\\) and \\(v = (3-x)^2\\).",
-        "workingOut": "u = 4x^3,\\quad v = (3-x)^2"
+        "workingOut": "u = 4x^3, quad v = (3-x)^2"
       },
       {
         "explanation": "Differentiate \\(u\\) using the power rule.",
@@ -262,7 +262,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(a = 3\\), \\(b = \\frac{1}{3}\\), \\(c = \\frac{\\pi}{4}\\) from standard form.",
-        "workingOut": "a = 3,\\quad b = \\tfrac{1}{3},\\quad c = \\tfrac{\\pi}{4}"
+        "workingOut": "a = 3, quad b = \\tfrac{1}{3}, quad c = \\tfrac{\\pi}{4}"
       },
       {
         "explanation": "The amplitude is \\(|a| = 3\\).",
@@ -370,7 +370,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
       "$(-\\infty, P)$",
       "$(P, Q)$",
       "$(Q, R)$",
-      "$(R, \\infty)$"
+      "$(R, infty)$"
     ],
     "h": "$g'(x) < 0$ where the function is decreasing. $g''(x) < 0$ where the function is concave down. Find where both hold simultaneously.",
     "s": "$g'(x) < 0$ on $(P, R)$ (decreasing between max and min). $g''(x) < 0$ on $(-\\infty, Q)$ (concave down before the POI). Intersection: $(P, Q)$.",
@@ -417,7 +417,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Take the 6th root of both sides. Since the index is even, there are two real solutions.",
-        "workingOut": "r = \\pm\\,\\sqrt[6]{19683}"
+        "workingOut": "r = \\pm\\, sqrt[6]{19683}"
       },
       {
         "explanation": "Evaluate: \\(3^6 = 729\\) and \\(3^3 = 27\\), so \\(19683 = 3^9\\)... Actually \\(r^6 = 19683 = 3^9\\): \\(r = 3^{9/6} = 3^{3/2}\\). Let me recheck: \\(\\frac{1}{27}\\cdot r^6=729 \\Rightarrow r^6 = 729\\times27=19683=3^9\\). So \\(r=3^{9/6}=3^{3/2}=3\\sqrt{3}\\). Adjusting: use \\(T_7=243\\) instead. \\(r^6=243\\times27=6561=3^8\\), \\(r=3^{8/6}\\) not integer. Use original numbers: first term \\(\\frac{1}{3}\\), 7th term = \\(243\\). \\(r^6=729=3^6\\), so \\(r=\\pm 3\\). ✓",
@@ -453,7 +453,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Recall exact values: \\(\\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}\\) and \\(\\sin\\frac{\\pi}{6} = \\frac{1}{2}\\).",
-        "workingOut": "\\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2},\\quad \\sin\\frac{\\pi}{6} = \\frac{1}{2}"
+        "workingOut": "\\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}, quad \\sin\\frac{\\pi}{6} = \\frac{1}{2}"
       },
       {
         "explanation": "Subtract and write as a single fraction.",
@@ -513,7 +513,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(u = x^2\\) and \\(v = \\tan 3x\\) for the product rule.",
-        "workingOut": "u = x^2,\\quad v = \\tan 3x"
+        "workingOut": "u = x^2, quad v = \\tan 3x"
       },
       {
         "explanation": "Differentiate \\(u\\).",
@@ -549,7 +549,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find \\(x\\)-intercepts: set \\(y = 0\\).",
-        "workingOut": "x = -2 \\text{ (mult. 1)},\\quad x = 1 \\text{ (mult. 3)}"
+        "workingOut": "x = -2 \\text{ (mult. 1)}, quad x = 1 \\text{ (mult. 3)}"
       },
       {
         "explanation": "Root of multiplicity 1: crosses at \\(x=-2\\). Root of multiplicity 3: crosses with inflection at \\(x=1\\).",
@@ -825,7 +825,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite as intersection of \\(y=\\cos x\\) and \\(y=1-\\frac{x}{5}\\). The line passes through \\((0,1)\\) with slope \\(-\\frac{1}{5}\\).",
-        "workingOut": "y_1 = \\cos x,\\quad y_2 = 1-\\frac{x}{5}"
+        "workingOut": "y_1 = \\cos x, quad y_2 = 1-\\frac{x}{5}"
       },
       {
         "explanation": "The slowly decreasing line intersects the oscillating cosine curve exactly 3 times in the visible domain.",
@@ -853,7 +853,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(u = e^{2x}\\) and \\(v = x+3\\) for the quotient rule.",
-        "workingOut": "u = e^{2x},\\quad v = x+3"
+        "workingOut": "u = e^{2x}, quad v = x+3"
       },
       {
         "explanation": "Differentiate \\(u\\) using the chain rule.",
@@ -885,7 +885,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "a": "(a) $h'(x)$: zero at $x=-4,-2,1$; positive on $(-\\infty,-4)$ and $(-2,1)$; negative on $(-4,-2)$ and $(1,\\infty)$.\n(b) $h(-x)$: reflection in $y$-axis; max at $x=4$, min at $x=2$, max at $x=-1$.",
     "opts": [],
     "h": "For (a): $h'=0$ at stationary points; sign of $h'$ matches increasing/decreasing. For (b): reflect in $y$-axis.",
-    "s": "(a) $h'=0$ at $x=-4,-2,1$; $h'>0$ on $(-\\infty,-4)\\cup(-2,1)$; $h'<0$ on $(-4,-2)\\cup(1,\\infty)$. (b) Reflect in $y$-axis: max at $x=4$, min at $x=2$, max at $x=-1$.",
+    "s": "(a) $h'=0$ at $x=-4,-2,1$; $h'>0$ on $(-\\infty,-4)\\cup(-2,1)$; $h'<0$ on $(-4,-2)\\cup(1, infty)$. (b) Reflect in $y$-axis: max at $x=4$, min at $x=2$, max at $x=-1$.",
     "solutionSteps": [
       {
         "explanation": "Mark zeros of \\(h'\\) at the stationary points \\(x=-4,-2,1\\).",
@@ -893,7 +893,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Determine sign of \\(h'\\): positive where \\(h\\) increases, negative where it decreases.",
-        "workingOut": "h'>0 \\text{ on }(-\\infty,-4)\\cup(-2,1);\\; h'<0 \\text{ on }(-4,-2)\\cup(1,\\infty)"
+        "workingOut": "h'>0 \\text{ on }(-\\infty,-4)\\cup(-2,1);\\; h'<0 \\text{ on }(-4,-2)\\cup(1, infty)"
       },
       {
         "explanation": "For (b): \\(h(-x)\\) reflects \\(h\\) in the \\(y\\)-axis, mapping each point \\((a,b)\\) to \\((-a,b)\\).",
@@ -1279,7 +1279,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "source": "Cherrybrook Tech 2020 Trial Q35",
     "type": "short_answer",
     "difficulty": "hard",
-    "q": "A tank is being emptied. The quantity of water, $W$ litres, remaining at time $t$ minutes is:\n$$W(t) = 1250(20-t)^2, \\quad 0 \\leq t \\leq 20$$\n\n(a) At what rate (in litres/min) is water being removed at time $t$?\n\n(b) How long will it take to remove at least half the water? Answer to the nearest minute.\n\n(c) At what time does the rate of flow reach 12.5 kL/minute?\n\n(d) Describe how the amount of water remaining changes as the tank empties. Mention how the rate itself changes.",
+    "q": "A tank is being emptied. The quantity of water, $W$ litres, remaining at time $t$ minutes is:\n$$W(t) = 1250(20-t)^2, quad 0 \\leq t \\leq 20$$\n\n(a) At what rate (in litres/min) is water being removed at time $t$?\n\n(b) How long will it take to remove at least half the water? Answer to the nearest minute.\n\n(c) At what time does the rate of flow reach 12.5 kL/minute?\n\n(d) Describe how the amount of water remaining changes as the tank empties. Mention how the rate itself changes.",
     "a": "(a) $2500(20-t)$ L/min\n(b) $6$ minutes\n(c) $t = 15$ min\n(d) The water decreases at a decreasing rate.",
     "opts": [],
     "h": "Differentiate $W(t)$ and take $-W'(t)$ for the removal rate. For (b): set $W(t) = \\frac{1}{2}W(0)$.",
@@ -1339,7 +1339,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Multiply through by \\(18\\pi\\) and solve for \\(x\\).",
-        "workingOut": "\\sqrt{3}\\,\\pi x = 9(120-x) \\Rightarrow x(\\sqrt{3}\\pi + 9) = 1080 \\Rightarrow x = \\frac{1080}{\\sqrt{3}\\pi+9} \\approx \\frac{1080}{14.45} \\approx 57 \\text{ cm}"
+        "workingOut": "\\sqrt{3}\\, pi x = 9(120-x) \\Rightarrow x(\\sqrt{3}\\pi + 9) = 1080 \\Rightarrow x = \\frac{1080}{\\sqrt{3}\\pi+9} \\approx \\frac{1080}{14.45} \\approx 57 \\text{ cm}"
       },
       {
         "explanation": "Verify minimum: \\(A'' = \\frac{\\sqrt{3}}{18}+\\frac{1}{2\\pi} > 0\\) ✓.",

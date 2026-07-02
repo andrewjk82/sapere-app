@@ -5287,7 +5287,7 @@ export const Y10_CH13A_QUESTIONS = [
       },
       {
         "explanation": "Use properties of rectangles to prove equal distances.",
-        "workingOut": "\\text{Diagonals of a rectangle are equal: } AB = PQ\n\\text{Halves are equal: } AO = BO = PO = OQ\n\\text{Since } AO = BO = PO, \\text{ the circle with centre } O \\text{ and radius } AO \\text{ passes through } P.",
+        "workingOut": "\\text{Diagonals of a rectangle are equal: } AB = PQ\n\\text{Halves are equal: } AO = BO = PO = OQ\n\\text{Since } AO = BO = PO, text{ the circle with centre } O \\text{ and radius } AO \\text{ passes through } P.",
         "graphData": null
       }
     ],

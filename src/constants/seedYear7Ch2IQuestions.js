@@ -489,7 +489,7 @@ export const Y7_CH2I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Check numbers starting from 100.",
-        "workingOut": "100 \\to 1, \\quad 101 \\to 2, \\dots, \\quad 108 \\to 1+0+8 = 9"
+        "workingOut": "100 \\to 1, quad 101 \\to 2, dots, quad 108 \\to 1+0+8 = 9"
       }
     ]
   },
@@ -633,7 +633,7 @@ export const Y7_CH2I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the prime factorisations of the numbers from 2 to 10.",
-        "workingOut": "2 = 2, \\ 3 = 3, \\ 4 = 2^2, \\ 5 = 5, \\ 6 = 2 \\times 3, \\ 7 = 7, \\ 8 = 2^3, \\ 9 = 3^2, \\ 10 = 2 \\times 5"
+        "workingOut": "2 = 2, 3 = 3, 4 = 2^2, 5 = 5, 6 = 2 \\times 3, 7 = 7, 8 = 2^3, 9 = 3^2, 10 = 2 \\times 5"
       },
       {
         "explanation": "Take the highest power of each prime factor.",

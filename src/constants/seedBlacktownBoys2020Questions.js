@@ -173,7 +173,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the \\(z\\)-scores for 81 and 93.",
-        "workingOut": "z_{81} = \\frac{81-85}{4} = -1, \\quad z_{93} = \\frac{93-85}{4} = 2"
+        "workingOut": "z_{81} = \\frac{81-85}{4} = -1, quad z_{93} = \\frac{93-85}{4} = 2"
       },
       {
         "explanation": "Use the 68-95-99.7 rule. The area from \\(\\mu\\) to \\(\\mu+\\sigma\\) is 34% (half of 68%), and from \\(\\mu\\) to \\(\\mu+2\\sigma\\) is 47.5% (half of 95%).",
@@ -221,10 +221,10 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "q": "A graph shows the curve $y = f(x)$ with a point $P(a, f(a))$ in the first quadrant. At $P$ the curve is decreasing and concave down. Which statement is true?",
     "a": "0",
     "opts": [
-      "$f'(a) < 0,\\ f''(a) < 0$",
-      "$f'(a) > 0,\\ f''(a) > 0$",
-      "$f'(a) < 0,\\ f''(a) > 0$",
-      "$f'(a) > 0,\\ f''(a) < 0$"
+      "$f'(a) < 0, f''(a) < 0$",
+      "$f'(a) > 0, f''(a) > 0$",
+      "$f'(a) < 0, f''(a) > 0$",
+      "$f'(a) > 0, f''(a) < 0$"
     ],
     "h": "Decreasing means $f'(a) < 0$. Concave down means $f''(a) < 0$.",
     "s": "The curve is decreasing at $P$, so $f'(a) < 0$. The curve is concave down at $P$, so $f''(a) < 0$.",
@@ -445,7 +445,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
       },
       {
         "explanation": "Test \\(b = -5\\): \\(a = 5/2.5 = 2\\). Verify with another point: \\(|2(2) - 5| = 1\\) ✓.",
-        "workingOut": "a = 2,\\ b = -5"
+        "workingOut": "a = 2, b = -5"
       }
     ]
   },
@@ -517,7 +517,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(u\\) and \\(v\\).",
-        "workingOut": "u = e^{3x} - 5,\\ u' = 3e^{3x};\\quad v = x+1,\\ v' = 1"
+        "workingOut": "u = e^{3x} - 5, u' = 3e^{3x};\\quad v = x+1, v' = 1"
       },
       {
         "explanation": "Apply the quotient rule.",
@@ -538,7 +538,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "marks": 2,
-    "q": "What is the limiting sum of the geometric series $750, -300, 120, -48, \\ldots$?",
+    "q": "What is the limiting sum of the geometric series $750, -300, 120, -48, ldots$?",
     "a": "$S_\\infty = \\dfrac{3750}{7}$",
     "h": "Find the common ratio $r = T_2/T_1$. Then $S_\\infty = \\frac{a}{1-r}$ (valid when $|r| < 1$).",
     "s": "$a = 750$, $r = \\frac{-300}{750} = -\\frac{2}{5}$. Since $|r| < 1$: $S_\\infty = \\frac{750}{1-(-2/5)} = \\frac{750}{7/5} = \\frac{3750}{7}$.",
@@ -673,7 +673,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Product rule: \\(\\frac{d}{dx}(uv) = u'v + uv'\\).",
-        "workingOut": "u = e^{2x},\\ u' = 2e^{2x};\\quad v = \\cos x,\\ v' = -\\sin x"
+        "workingOut": "u = e^{2x}, u' = 2e^{2x};\\quad v = \\cos x, v' = -\\sin x"
       },
       {
         "explanation": "Apply.",
@@ -829,7 +829,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "q": "Solve $4\\cos^2 x - 3 = 0$ for $-\\pi \\leq x \\leq \\pi$.",
     "a": "$x = -\\dfrac{5\\pi}{6},\\ -\\dfrac{\\pi}{6},\\ \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6}$",
     "h": "Rearrange to $\\cos^2 x = \\frac{3}{4}$, so $\\cos x = \\pm\\frac{\\sqrt{3}}{2}$. Find all solutions in the given domain.",
-    "s": "$\\cos^2 x = \\frac{3}{4} \\Rightarrow \\cos x = \\pm\\frac{\\sqrt{3}}{2}$. Reference angle: $\\frac{\\pi}{6}$. Solutions in $[-\\pi, \\pi]$: $x = \\pm\\frac{\\pi}{6}$ (from $+\\frac{\\sqrt{3}}{2}$) and $x = \\pm\\frac{5\\pi}{6}$ (from $-\\frac{\\sqrt{3}}{2}$).",
+    "s": "$\\cos^2 x = \\frac{3}{4} \\Rightarrow \\cos x = \\pm\\frac{\\sqrt{3}}{2}$. Reference angle: $\\frac{\\pi}{6}$. Solutions in $[-\\pi, pi]$: $x = \\pm\\frac{\\pi}{6}$ (from $+\\frac{\\sqrt{3}}{2}$) and $x = \\pm\\frac{5\\pi}{6}$ (from $-\\frac{\\sqrt{3}}{2}$).",
     "solutionSteps": [
       {
         "explanation": "Rearrange.",
@@ -841,7 +841,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
       },
       {
         "explanation": "From \\(\\cos x = -\\frac{\\sqrt{3}}{2}\\): solutions in Q2 and Q3.",
-        "workingOut": "x = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}, \\quad x = -(\\pi - \\frac{\\pi}{6}) = -\\frac{5\\pi}{6}"
+        "workingOut": "x = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}, quad x = -(\\pi - \\frac{\\pi}{6}) = -\\frac{5\\pi}{6}"
       },
       {
         "explanation": "All solutions.",
@@ -969,7 +969,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Enter data in calculator statistics mode and find the regression line \\(y = A + Bx\\).",
-        "workingOut": "A \\approx 2.59,\\ B \\approx 1.44"
+        "workingOut": "A \\approx 2.59, B \\approx 1.44"
       },
       {
         "explanation": "Round to 2 significant figures.",
@@ -1061,7 +1061,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set \\(y'' = 0\\).",
-        "workingOut": "-6x = 0 \\Rightarrow x = 0, \\quad y = -1"
+        "workingOut": "-6x = 0 \\Rightarrow x = 0, quad y = -1"
       },
       {
         "explanation": "Verify the change in concavity.",
@@ -1093,7 +1093,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
       },
       {
         "explanation": "Compare all values.",
-        "workingOut": "y(-3) = 17,\\ y(-1) = -3,\\ y(1) = 1,\\ y(2) = -3"
+        "workingOut": "y(-3) = 17, y(-1) = -3, y(1) = 1, y(2) = -3"
       },
       {
         "explanation": "The maximum value is 17 at \\(x = -3\\).",
@@ -1417,7 +1417,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "q": "For $v = 2 - 4\\cos 2t$, find all times when the particle is at rest for $0 \\leq t \\leq 2\\pi$.",
     "a": "$t = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{11\\pi}{6}$",
     "h": "Set $v = 0$ and solve $\\cos 2t = \\frac{1}{2}$.",
-    "s": "$2 - 4\\cos 2t = 0 \\Rightarrow \\cos 2t = \\frac{1}{2}$. For $0 \\leq 2t \\leq 4\\pi$: $2t = \\frac{\\pi}{3}, \\frac{5\\pi}{3}, \\frac{7\\pi}{3}, \\frac{11\\pi}{3}$. So $t = \\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{11\\pi}{6}$.",
+    "s": "$2 - 4\\cos 2t = 0 \\Rightarrow \\cos 2t = \\frac{1}{2}$. For $0 \\leq 2t \\leq 4\\pi$: $2t = \\frac{\\pi}{3}, frac{5\\pi}{3}, frac{7\\pi}{3}, frac{11\\pi}{3}$. So $t = \\frac{\\pi}{6}, frac{5\\pi}{6}, frac{7\\pi}{6}, frac{11\\pi}{6}$.",
     "solutionSteps": [
       {
         "explanation": "Set \\(v = 0\\).",

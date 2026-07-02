@@ -234,8 +234,8 @@ export const DANEBANK_2020_QUESTIONS = [
     "opts": [
       "$\\left[\\dfrac{1}{2}, 2\\right]$",
       "$\\left(\\dfrac{1}{2}, 2\\right)$",
-      "$\\left(-\\infty, \\dfrac{1}{2}\\right) \\cup (2, \\infty)$",
-      "$\\left(-\\infty, \\dfrac{1}{2}\\right] \\cup [2, \\infty)$"
+      "$\\left(-\\infty, dfrac{1}{2}\\right) \\cup (2, infty)$",
+      "$\\left(-\\infty, dfrac{1}{2}\\right] \\cup [2, infty)$"
     ],
     "h": "Factorise the quadratic; for a \"$\\geq 0$\" parabola opening upward, the solution is outside the roots (inclusive).",
     "s": "Factorise: $2x^2 - 5x + 2 = (2x-1)(x-2)$, with roots $x = \\frac{1}{2}$ and $x = 2$. The parabola opens upward, so it is $\\geq 0$ outside (and at) the roots: $x \\leq \\frac{1}{2}$ or $x \\geq 2$.",
@@ -246,7 +246,7 @@ export const DANEBANK_2020_QUESTIONS = [
       },
       {
         "explanation": "Find the roots by setting each factor to zero.",
-        "workingOut": "x = \\frac{1}{2}, \\quad x = 2"
+        "workingOut": "x = \\frac{1}{2}, quad x = 2"
       },
       {
         "explanation": "The coefficient of \\(x^2\\) is positive, so the parabola opens upward and lies above or on the \\(x\\)-axis outside the two roots. Because the inequality is \"\\(\\geq\\)\", the roots are included.",
@@ -254,7 +254,7 @@ export const DANEBANK_2020_QUESTIONS = [
       },
       {
         "explanation": "Write the solution set in interval notation with closed brackets at the roots.",
-        "workingOut": "\\left(-\\infty, \\tfrac{1}{2}\\right] \\cup [2, \\infty)"
+        "workingOut": "\\left(-\\infty, tfrac{1}{2}\\right] \\cup [2, infty)"
       }
     ]
   },
@@ -279,11 +279,11 @@ export const DANEBANK_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the amplitude and period of \\(f(x) = \\frac{1}{2}\\sin 4x\\). The amplitude is the coefficient \\(\\frac{1}{2}\\); the period is \\(\\frac{2\\pi}{b}\\) with \\(b = 4\\).",
-        "workingOut": "\\text{amp}_f = \\tfrac{1}{2}, \\quad T_f = \\frac{2\\pi}{4} = \\frac{\\pi}{2}"
+        "workingOut": "\\text{amp}_f = \\tfrac{1}{2}, quad T_f = \\frac{2\\pi}{4} = \\frac{\\pi}{2}"
       },
       {
         "explanation": "Find the amplitude and period of \\(g(x) = \\sin 2x\\). The amplitude is \\(1\\); the period uses \\(b = 2\\).",
-        "workingOut": "\\text{amp}_g = 1, \\quad T_g = \\frac{2\\pi}{2} = \\pi"
+        "workingOut": "\\text{amp}_g = 1, quad T_g = \\frac{2\\pi}{2} = \\pi"
       },
       {
         "explanation": "Compare the amplitudes: it changed from \\(\\frac{1}{2}\\) to \\(1\\), a factor of \\(2\\).",
@@ -324,7 +324,7 @@ export const DANEBANK_2020_QUESTIONS = [
       },
       {
         "explanation": "The range is the distance from minimum to maximum: lower whisker + box + upper whisker.",
-        "workingOut": "\\text{range} = 1.5\\,\\text{IQR} + 1\\,\\text{IQR} + 1.5\\,\\text{IQR}"
+        "workingOut": "\\text{range} = 1.5\\, text{IQR} + 1\\, text{IQR} + 1.5\\, text{IQR}"
       },
       {
         "explanation": "Add the multiples to find the largest possible range.",
@@ -405,7 +405,7 @@ export const DANEBANK_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the trapezoidal rule for a single strip of width \\(h\\): \\(A \\approx \\frac{h}{2}(\\text{left height} + \\text{right height})\\). Here each strip is \\(6\\) m wide.",
-        "workingOut": "A \\approx \\frac{h}{2}(f_0 + f_1), \\quad h = 6"
+        "workingOut": "A \\approx \\frac{h}{2}(f_0 + f_1), quad h = 6"
       },
       {
         "explanation": "Apply the rule to the first strip, between the \\(6\\) m and \\(7\\) m ordinates.",
@@ -650,7 +650,7 @@ export const DANEBANK_2020_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(x\\); the smaller value is the \\(x\\)-coordinate of \\(P\\) and the larger is that of \\(Q\\).",
-        "workingOut": "x = 1 \\;(P), \\quad x = 3 \\;(Q)"
+        "workingOut": "x = 1 \\;(P), quad x = 3 \\;(Q)"
       }
     ]
   },
@@ -706,7 +706,7 @@ export const DANEBANK_2020_QUESTIONS = [
     "a": "$x = 0$ or $x = \\dfrac{\\pi}{2}$",
     "opts": [],
     "h": "An absolute value equation $|A| = 1$ splits into $A = 1$ and $A = -1$. Solve each in the given domain.",
-    "s": "Case 1: $2\\cos x - 1 = 1 \\Rightarrow \\cos x = 1 \\Rightarrow x = 0$. Case 2: $-(2\\cos x - 1) = 1 \\Rightarrow 2\\cos x = 0 \\Rightarrow \\cos x = 0 \\Rightarrow x = \\frac{\\pi}{2}$. Both lie in $[0, \\pi]$.",
+    "s": "Case 1: $2\\cos x - 1 = 1 \\Rightarrow \\cos x = 1 \\Rightarrow x = 0$. Case 2: $-(2\\cos x - 1) = 1 \\Rightarrow 2\\cos x = 0 \\Rightarrow \\cos x = 0 \\Rightarrow x = \\frac{\\pi}{2}$. Both lie in $[0, pi]$.",
     "solutionSteps": [
       {
         "explanation": "Split the absolute value equation \\(|2\\cos x - 1| = 1\\) into its two cases: the inside equals \\(+1\\) or \\(-1\\).",
@@ -722,7 +722,7 @@ export const DANEBANK_2020_QUESTIONS = [
       },
       {
         "explanation": "Check both solutions lie in the domain \\(0 \\leq x \\leq \\pi\\) — they do.",
-        "workingOut": "x = 0, \\; \\frac{\\pi}{2} \\in [0, \\pi] \\;\\checkmark"
+        "workingOut": "x = 0, \\; \\frac{\\pi}{2} \\in [0, pi] \\;\\checkmark"
       }
     ]
   },
@@ -738,15 +738,15 @@ export const DANEBANK_2020_QUESTIONS = [
     "a": "$m_{DE} = m_{BC} = -\\dfrac{1}{2}$, so $DE \\parallel BC$.",
     "opts": [],
     "h": "Find $D$ and $E$ using the midpoint formula, then show $m_{DE} = m_{BC}$.",
-    "s": "$D = \\left(\\frac{-1-3}{2}, \\frac{16+2}{2}\\right) = (-2, 9)$ and $E = \\left(\\frac{-1+5}{2}, \\frac{16-2}{2}\\right) = (2, 7)$. Then $m_{DE} = \\frac{9-7}{-2-2} = -\\frac{1}{2}$ and $m_{BC} = \\frac{2-(-2)}{-3-5} = -\\frac{1}{2}$. Since the gradients are equal, $DE \\parallel BC$.",
+    "s": "$D = \\left(\\frac{-1-3}{2}, frac{16+2}{2}\\right) = (-2, 9)$ and $E = \\left(\\frac{-1+5}{2}, frac{16-2}{2}\\right) = (2, 7)$. Then $m_{DE} = \\frac{9-7}{-2-2} = -\\frac{1}{2}$ and $m_{BC} = \\frac{2-(-2)}{-3-5} = -\\frac{1}{2}$. Since the gradients are equal, $DE \\parallel BC$.",
     "solutionSteps": [
       {
-        "explanation": "Find \\(D\\), the midpoint of \\(AB\\), using the midpoint formula \\(\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)\\).",
-        "workingOut": "D = \\left(\\frac{-1+(-3)}{2}, \\frac{16+2}{2}\\right) = (-2, 9)"
+        "explanation": "Find \\(D\\), the midpoint of \\(AB\\), using the midpoint formula \\(\\left(\\frac{x_1+x_2}{2}, frac{y_1+y_2}{2}\\right)\\).",
+        "workingOut": "D = \\left(\\frac{-1+(-3)}{2}, frac{16+2}{2}\\right) = (-2, 9)"
       },
       {
         "explanation": "Find \\(E\\), the midpoint of \\(AC\\), the same way.",
-        "workingOut": "E = \\left(\\frac{-1+5}{2}, \\frac{16+(-2)}{2}\\right) = (2, 7)"
+        "workingOut": "E = \\left(\\frac{-1+5}{2}, frac{16+(-2)}{2}\\right) = (2, 7)"
       },
       {
         "explanation": "Compute the gradient of \\(DE\\) using \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\).",
@@ -974,7 +974,7 @@ export const DANEBANK_2020_QUESTIONS = [
       },
       {
         "explanation": "Find the corresponding \\(y\\)-values by substituting into \\(f\\).",
-        "workingOut": "f(0) = 0, \\quad f(3) = 4(27) - 81 = 27"
+        "workingOut": "f(0) = 0, quad f(3) = 4(27) - 81 = 27"
       },
       {
         "explanation": "Find the second derivative to test the nature of each point.",
@@ -1006,11 +1006,11 @@ export const DANEBANK_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the \\(x\\)-intercepts by factorising \\(f(x) = 4x^3 - x^4 = x^3(4 - x)\\) and setting it to zero.",
-        "workingOut": "x^3(4 - x) = 0 \\Rightarrow x = 0,\\ 4"
+        "workingOut": "x^3(4 - x) = 0 \\Rightarrow x = 0, 4"
       },
       {
         "explanation": "Recall the key features from part (a): a horizontal point of inflection at \\((0,0)\\) and a maximum at \\((3,27)\\).",
-        "workingOut": "(0,0)\\text{ horizontal POI}, \\quad (3,27)\\text{ max}"
+        "workingOut": "(0,0)\\text{ horizontal POI}, quad (3,27)\\text{ max}"
       },
       {
         "explanation": "Note the end behaviour: the leading term \\(-x^4\\) dominates, so \\(f(x) \\to -\\infty\\) as \\(x \\to \\pm\\infty\\).",
@@ -1110,11 +1110,11 @@ export const DANEBANK_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify this as a product of two functions and set up the product rule \\(\\frac{dy}{dx} = uv' + vu'\\).",
-        "workingOut": "u = x, \\quad v = \\sin 2x"
+        "workingOut": "u = x, quad v = \\sin 2x"
       },
       {
         "explanation": "Differentiate each factor. The derivative of \\(\\sin 2x\\) uses the chain rule, giving \\(2\\cos 2x\\).",
-        "workingOut": "u' = 1, \\quad v' = 2\\cos 2x"
+        "workingOut": "u' = 1, quad v' = 2\\cos 2x"
       },
       {
         "explanation": "Apply the product rule and substitute.",
@@ -1162,19 +1162,19 @@ export const DANEBANK_2020_QUESTIONS = [
     "a": "$(0, \\infty)$",
     "opts": [],
     "h": "Although $f(g(x))$ simplifies to $x - 2$, its domain is restricted by $g$; apply that restriction before finding the range.",
-    "s": "The natural domain requires $x - 2 > 0$ (from $\\ln(x-2)$), so $x > 2$. For $x > 2$, $y = x - 2 > 0$, so the range is $(0, \\infty)$.",
+    "s": "The natural domain requires $x - 2 > 0$ (from $\\ln(x-2)$), so $x > 2$. For $x > 2$, $y = x - 2 > 0$, so the range is $(0, infty)$.",
     "solutionSteps": [
       {
         "explanation": "Identify the domain restriction inherited from \\(g(x) = \\ln(x-2)\\): the logarithm requires a positive argument.",
         "workingOut": "x - 2 > 0 \\Rightarrow x > 2"
       },
       {
-        "explanation": "Apply this restriction to the simplified composite \\(y = x - 2\\). As \\(x\\) ranges over \\((2, \\infty)\\), compute the resulting \\(y\\)-values.",
+        "explanation": "Apply this restriction to the simplified composite \\(y = x - 2\\). As \\(x\\) ranges over \\((2, infty)\\), compute the resulting \\(y\\)-values.",
         "workingOut": "x > 2 \\Rightarrow y = x - 2 > 0"
       },
       {
         "explanation": "State the range in interval notation.",
-        "workingOut": "\\text{Range} = (0, \\infty)"
+        "workingOut": "\\text{Range} = (0, infty)"
       }
     ]
   },
@@ -1218,7 +1218,7 @@ export const DANEBANK_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use the linear regression function on the calculator to obtain the gradient and \\(y\\)-intercept of the least-squares line \\(y = bx + a\\).",
-        "workingOut": "b = 0.72, \\quad a = 18 \\Rightarrow y = 0.72x + 18"
+        "workingOut": "b = 0.72, quad a = 18 \\Rightarrow y = 0.72x + 18"
       },
       {
         "explanation": "Substitute student L’s English mark \\(x = 80\\) into the regression equation.",
@@ -1246,11 +1246,11 @@ export const DANEBANK_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the quotient and set up the quotient rule \\(\\frac{dy}{dx} = \\frac{vu' - uv'}{v^2}\\).",
-        "workingOut": "u = e^x, \\quad v = x + 1"
+        "workingOut": "u = e^x, quad v = x + 1"
       },
       {
         "explanation": "Differentiate the numerator and denominator.",
-        "workingOut": "u' = e^x, \\quad v' = 1"
+        "workingOut": "u' = e^x, quad v' = 1"
       },
       {
         "explanation": "Substitute into the quotient rule.",
@@ -1306,7 +1306,7 @@ export const DANEBANK_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognise the series as geometric: each term is the previous one multiplied by \\(\\sin^2 x\\). Identify the first term and common ratio.",
-        "workingOut": "a = \\sin^2 x, \\quad r = \\sin^2 x"
+        "workingOut": "a = \\sin^2 x, quad r = \\sin^2 x"
       },
       {
         "explanation": "Since \\(0 < x < \\frac{\\pi}{2}\\), \\(0 < \\sin^2 x < 1\\), so a limiting sum exists. Apply \\(S_\\infty = \\frac{a}{1 - r}\\).",
@@ -1442,7 +1442,7 @@ export const DANEBANK_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the horizontal and vertical shifts from the vertex moving from \\((0,0)\\) to \\((-1,-3)\\): \\(1\\) unit left and \\(3\\) units down.",
-        "workingOut": "x \\to x + 1 \\;(b = 1), \\quad c = -3"
+        "workingOut": "x \\to x + 1 \\;(b = 1), quad c = -3"
       },
       {
         "explanation": "Write the partial form with the shifts in place.",
@@ -1474,7 +1474,7 @@ export const DANEBANK_2020_QUESTIONS = [
     "a": "$\\theta = \\dfrac{\\pi}{18}, \\dfrac{5\\pi}{18}, \\dfrac{13\\pi}{18}, \\dfrac{17\\pi}{18}$",
     "opts": [],
     "h": "First expand the domain: if $0 \\leq \\theta \\leq \\pi$ then $0 \\leq 3\\theta \\leq 3\\pi$. Solve for $3\\theta$ first, then divide by $3$.",
-    "s": "$\\sin 3\\theta = \\frac{1}{2}$. Over $0 \\leq 3\\theta \\leq 3\\pi$, the solutions are $3\\theta = \\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{13\\pi}{6}, \\frac{17\\pi}{6}$. Dividing by $3$: $\\theta = \\frac{\\pi}{18}, \\frac{5\\pi}{18}, \\frac{13\\pi}{18}, \\frac{17\\pi}{18}$.",
+    "s": "$\\sin 3\\theta = \\frac{1}{2}$. Over $0 \\leq 3\\theta \\leq 3\\pi$, the solutions are $3\\theta = \\frac{\\pi}{6}, frac{5\\pi}{6}, frac{13\\pi}{6}, frac{17\\pi}{6}$. Dividing by $3$: $\\theta = \\frac{\\pi}{18}, frac{5\\pi}{18}, frac{13\\pi}{18}, frac{17\\pi}{18}$.",
     "solutionSteps": [
       {
         "explanation": "Isolate the sine function.",
@@ -1486,15 +1486,15 @@ export const DANEBANK_2020_QUESTIONS = [
       },
       {
         "explanation": "Sine is \\(\\frac{1}{2}\\) at the reference angle \\(\\frac{\\pi}{6}\\), in the 1st and 2nd quadrants. List all values of \\(3\\theta\\) in \\([0, 3\\pi]\\) by adding \\(2\\pi\\) to each base solution.",
-        "workingOut": "3\\theta = \\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{13\\pi}{6}, \\frac{17\\pi}{6}"
+        "workingOut": "3\\theta = \\frac{\\pi}{6}, frac{5\\pi}{6}, frac{13\\pi}{6}, frac{17\\pi}{6}"
       },
       {
         "explanation": "Check that the next candidates \\(\\frac{25\\pi}{6}\\) and \\(\\frac{29\\pi}{6}\\) exceed \\(3\\pi\\) and are rejected.",
-        "workingOut": "\\frac{25\\pi}{6}, \\frac{29\\pi}{6} > 3\\pi \\;\\text{(rejected)}"
+        "workingOut": "\\frac{25\\pi}{6}, frac{29\\pi}{6} > 3\\pi \\;\\text{(rejected)}"
       },
       {
         "explanation": "Divide every solution by \\(3\\) to find \\(\\theta\\).",
-        "workingOut": "\\theta = \\frac{\\pi}{18}, \\frac{5\\pi}{18}, \\frac{13\\pi}{18}, \\frac{17\\pi}{18}"
+        "workingOut": "\\theta = \\frac{\\pi}{18}, frac{5\\pi}{18}, frac{13\\pi}{18}, frac{17\\pi}{18}"
       }
     ]
   },
@@ -1513,12 +1513,12 @@ export const DANEBANK_2020_QUESTIONS = [
     "s": "$y = \\cos\\pi x$ oscillates between $1$ and $-1$ with period $2$ (equals $1$ at even integers, $-1$ at odd integers). $y = 1 - |x|$ is a downward V with vertex $(0,1)$, crossing the $x$-axis at $\\pm 1$ and reaching $-2$ at $x = \\pm 3$.",
     "solutionSteps": [
       {
-        "explanation": "Describe \\(y = \\cos\\pi x\\): amplitude \\(1\\), period \\(\\frac{2\\pi}{\\pi} = 2\\). It equals \\(1\\) at \\(x = 0, \\pm 2\\) and \\(-1\\) at \\(x = \\pm 1, \\pm 3\\).",
-        "workingOut": "y = \\cos\\pi x: \\text{ period } 2, \\text{ amplitude } 1"
+        "explanation": "Describe \\(y = \\cos\\pi x\\): amplitude \\(1\\), period \\(\\frac{2\\pi}{\\pi} = 2\\). It equals \\(1\\) at \\(x = 0, pm 2\\) and \\(-1\\) at \\(x = \\pm 1, pm 3\\).",
+        "workingOut": "y = \\cos\\pi x: \\text{ period } 2, text{ amplitude } 1"
       },
       {
         "explanation": "Describe \\(y = 1 - |x|\\): a V-shape opening downward with apex at \\((0, 1)\\) and gradient \\(\\mp 1\\).",
-        "workingOut": "y = 1 - |x|: \\text{ apex } (0,1), \\text{ x-ints } (\\pm 1, 0)"
+        "workingOut": "y = 1 - |x|: \\text{ apex } (0,1), text{ x-ints } (\\pm 1, 0)"
       },
       {
         "explanation": "Draw both on the same axes over \\(-3 \\leq x \\leq 3\\).",
@@ -1550,7 +1550,7 @@ export const DANEBANK_2020_QUESTIONS = [
     "source": "Danebank 2020 Trial Q32(b)",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "Hence find the number of solutions of the equation $\\cos \\pi x = 1 - |x|$ in the domain $(-\\infty, \\infty)$.",
+    "q": "Hence find the number of solutions of the equation $\\cos \\pi x = 1 - |x|$ in the domain $(-\\infty, infty)$.",
     "a": "$5$ solutions",
     "opts": [],
     "h": "The solutions are the intersections of the two graphs. Outside $[-1, 1]$ the line drops below $-1$, where cosine cannot reach, so count intersections only near the centre.",
@@ -1670,7 +1670,7 @@ export const DANEBANK_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Convert the annual terms to per-period terms: the half-yearly rate is \\(4\\% \\div 2 = 2\\%\\), and over \\(3\\) years there are \\(3 \\times 2 = 6\\) compounding periods.",
-        "workingOut": "r = 2\\%, \\quad n = 6"
+        "workingOut": "r = 2\\%, quad n = 6"
       },
       {
         "explanation": "Look up the future-value interest factor for \\(n = 6\\) at \\(2\\%\\) from the table.",
@@ -1882,7 +1882,7 @@ export const DANEBANK_2020_QUESTIONS = [
       },
       {
         "explanation": "Apply the initial condition \"at rest\" (\\(v = 0\\)) at \\(t = 0\\) to find \\(C\\).",
-        "workingOut": "t = 0,\\ v = 0 \\Rightarrow C = 0 \\Rightarrow v = 3t^2 - 12t"
+        "workingOut": "t = 0, v = 0 \\Rightarrow C = 0 \\Rightarrow v = 3t^2 - 12t"
       },
       {
         "explanation": "Integrate the velocity to find displacement, adding a constant.",
@@ -1890,7 +1890,7 @@ export const DANEBANK_2020_QUESTIONS = [
       },
       {
         "explanation": "Apply the initial condition \"at \\(O\\)\" (\\(x = 0\\)) at \\(t = 0\\) to find \\(C_1\\).",
-        "workingOut": "t = 0,\\ x = 0 \\Rightarrow C_1 = 0 \\Rightarrow x = t^3 - 6t^2"
+        "workingOut": "t = 0, x = 0 \\Rightarrow C_1 = 0 \\Rightarrow x = t^3 - 6t^2"
       }
     ]
   },

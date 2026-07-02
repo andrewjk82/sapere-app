@@ -639,7 +639,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "So, 178 boxes are filled and 15 golf balls are left over.",
-        "workingOut": "\\(\\text{Boxes} = 178, \\quad \\text{Leftover} = 15\\)",
+        "workingOut": "\\(\\text{Boxes} = 178, quad \\text{Leftover} = 15\\)",
         "graphData": null
       }
     ],
@@ -2793,7 +2793,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 328, \\quad \\text{Remainder} = 23\\)",
+        "workingOut": "\\(\\text{Quotient} = 328, quad \\text{Remainder} = 23\\)",
         "graphData": null
       }
     ],
@@ -2842,7 +2842,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 308, \\quad \\text{Remainder} = 19\\)",
+        "workingOut": "\\(\\text{Quotient} = 308, quad \\text{Remainder} = 19\\)",
         "graphData": null
       }
     ],
@@ -2891,7 +2891,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 624, \\quad \\text{Remainder} = 8\\)",
+        "workingOut": "\\(\\text{Quotient} = 624, quad \\text{Remainder} = 8\\)",
         "graphData": null
       }
     ],
@@ -2940,7 +2940,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 676, \\quad \\text{Remainder} = 4\\)",
+        "workingOut": "\\(\\text{Quotient} = 676, quad \\text{Remainder} = 4\\)",
         "graphData": null
       }
     ],
@@ -2989,7 +2989,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 204, \\quad \\text{Remainder} = 2\\)",
+        "workingOut": "\\(\\text{Quotient} = 204, quad \\text{Remainder} = 2\\)",
         "graphData": null
       }
     ],
@@ -3038,7 +3038,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 429, \\quad \\text{Remainder} = 8\\)",
+        "workingOut": "\\(\\text{Quotient} = 429, quad \\text{Remainder} = 8\\)",
         "graphData": null
       }
     ],
@@ -3087,7 +3087,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 706, \\quad \\text{Remainder} = 1\\)",
+        "workingOut": "\\(\\text{Quotient} = 706, quad \\text{Remainder} = 1\\)",
         "graphData": null
       }
     ],
@@ -3136,7 +3136,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 264, \\quad \\text{Remainder} = 20\\)",
+        "workingOut": "\\(\\text{Quotient} = 264, quad \\text{Remainder} = 20\\)",
         "graphData": null
       }
     ],
@@ -3185,7 +3185,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 529, \\quad \\text{Remainder} = 13\\)",
+        "workingOut": "\\(\\text{Quotient} = 529, quad \\text{Remainder} = 13\\)",
         "graphData": null
       }
     ],
@@ -3234,7 +3234,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 384, \\quad \\text{Remainder} = 11\\)",
+        "workingOut": "\\(\\text{Quotient} = 384, quad \\text{Remainder} = 11\\)",
         "graphData": null
       }
     ],
@@ -3283,7 +3283,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 505, \\quad \\text{Remainder} = 5\\)",
+        "workingOut": "\\(\\text{Quotient} = 505, quad \\text{Remainder} = 5\\)",
         "graphData": null
       }
     ],
@@ -3332,7 +3332,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 354, \\quad \\text{Remainder} = 23\\)",
+        "workingOut": "\\(\\text{Quotient} = 354, quad \\text{Remainder} = 23\\)",
         "graphData": null
       }
     ],
@@ -3381,7 +3381,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 613, \\quad \\text{Remainder} = 3\\)",
+        "workingOut": "\\(\\text{Quotient} = 613, quad \\text{Remainder} = 3\\)",
         "graphData": null
       }
     ],
@@ -3430,7 +3430,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 496, \\quad \\text{Remainder} = 7\\)",
+        "workingOut": "\\(\\text{Quotient} = 496, quad \\text{Remainder} = 7\\)",
         "graphData": null
       }
     ],
@@ -3479,7 +3479,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 364, \\quad \\text{Remainder} = 21\\)",
+        "workingOut": "\\(\\text{Quotient} = 364, quad \\text{Remainder} = 21\\)",
         "graphData": null
       }
     ],
@@ -3528,7 +3528,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 406, \\quad \\text{Remainder} = 1\\)",
+        "workingOut": "\\(\\text{Quotient} = 406, quad \\text{Remainder} = 1\\)",
         "graphData": null
       }
     ],
@@ -3577,7 +3577,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 665, \\quad \\text{Remainder} = 7\\)",
+        "workingOut": "\\(\\text{Quotient} = 665, quad \\text{Remainder} = 7\\)",
         "graphData": null
       }
     ],
@@ -3626,7 +3626,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 715, \\quad \\text{Remainder} = 7\\)",
+        "workingOut": "\\(\\text{Quotient} = 715, quad \\text{Remainder} = 7\\)",
         "graphData": null
       }
     ],
@@ -3675,7 +3675,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 312, \\quad \\text{Remainder} = 11\\)",
+        "workingOut": "\\(\\text{Quotient} = 312, quad \\text{Remainder} = 11\\)",
         "graphData": null
       }
     ],
@@ -3724,7 +3724,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 583, \\quad \\text{Remainder} = 2\\)",
+        "workingOut": "\\(\\text{Quotient} = 583, quad \\text{Remainder} = 2\\)",
         "graphData": null
       }
     ],
@@ -3773,7 +3773,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 617, \\quad \\text{Remainder} = 8\\)",
+        "workingOut": "\\(\\text{Quotient} = 617, quad \\text{Remainder} = 8\\)",
         "graphData": null
       }
     ],
@@ -3822,7 +3822,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 406, \\quad \\text{Remainder} = 3\\)",
+        "workingOut": "\\(\\text{Quotient} = 406, quad \\text{Remainder} = 3\\)",
         "graphData": null
       }
     ],
@@ -3871,7 +3871,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 256, \\quad \\text{Remainder} = 29\\)",
+        "workingOut": "\\(\\text{Quotient} = 256, quad \\text{Remainder} = 29\\)",
         "graphData": null
       }
     ],
@@ -3920,7 +3920,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 306, \\quad \\text{Remainder} = 23\\)",
+        "workingOut": "\\(\\text{Quotient} = 306, quad \\text{Remainder} = 23\\)",
         "graphData": null
       }
     ],
@@ -3969,7 +3969,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 400, \\quad \\text{Remainder} = 2\\)",
+        "workingOut": "\\(\\text{Quotient} = 400, quad \\text{Remainder} = 2\\)",
         "graphData": null
       }
     ],
@@ -4018,7 +4018,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 573, \\quad \\text{Remainder} = 7\\)",
+        "workingOut": "\\(\\text{Quotient} = 573, quad \\text{Remainder} = 7\\)",
         "graphData": null
       }
     ],
@@ -4067,7 +4067,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 705, \\quad \\text{Remainder} = 5\\)",
+        "workingOut": "\\(\\text{Quotient} = 705, quad \\text{Remainder} = 5\\)",
         "graphData": null
       }
     ],
@@ -4116,7 +4116,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 365, \\quad \\text{Remainder} = 0\\)",
+        "workingOut": "\\(\\text{Quotient} = 365, quad \\text{Remainder} = 0\\)",
         "graphData": null
       }
     ],
@@ -4165,7 +4165,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 372, \\quad \\text{Remainder} = 23\\)",
+        "workingOut": "\\(\\text{Quotient} = 372, quad \\text{Remainder} = 23\\)",
         "graphData": null
       }
     ],
@@ -4214,7 +4214,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 630, \\quad \\text{Remainder} = 0\\)",
+        "workingOut": "\\(\\text{Quotient} = 630, quad \\text{Remainder} = 0\\)",
         "graphData": null
       }
     ],
@@ -4263,7 +4263,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 546, \\quad \\text{Remainder} = 17\\)",
+        "workingOut": "\\(\\text{Quotient} = 546, quad \\text{Remainder} = 17\\)",
         "graphData": null
       }
     ],
@@ -4312,7 +4312,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 358, \\quad \\text{Remainder} = 0\\)",
+        "workingOut": "\\(\\text{Quotient} = 358, quad \\text{Remainder} = 0\\)",
         "graphData": null
       }
     ],
@@ -4361,7 +4361,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 533, \\quad \\text{Remainder} = 4\\)",
+        "workingOut": "\\(\\text{Quotient} = 533, quad \\text{Remainder} = 4\\)",
         "graphData": null
       }
     ],
@@ -4410,7 +4410,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 336, \\quad \\text{Remainder} = 27\\)",
+        "workingOut": "\\(\\text{Quotient} = 336, quad \\text{Remainder} = 27\\)",
         "graphData": null
       }
     ],
@@ -4459,7 +4459,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 272, \\quad \\text{Remainder} = 27\\)",
+        "workingOut": "\\(\\text{Quotient} = 272, quad \\text{Remainder} = 27\\)",
         "graphData": null
       }
     ],
@@ -4508,7 +4508,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 625, \\quad \\text{Remainder} = 5\\)",
+        "workingOut": "\\(\\text{Quotient} = 625, quad \\text{Remainder} = 5\\)",
         "graphData": null
       }
     ],
@@ -4557,7 +4557,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 224, \\quad \\text{Remainder} = 29\\)",
+        "workingOut": "\\(\\text{Quotient} = 224, quad \\text{Remainder} = 29\\)",
         "graphData": null
       }
     ],
@@ -4606,7 +4606,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 530, \\quad \\text{Remainder} = 5\\)",
+        "workingOut": "\\(\\text{Quotient} = 530, quad \\text{Remainder} = 5\\)",
         "graphData": null
       }
     ],
@@ -4655,7 +4655,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 384, \\quad \\text{Remainder} = 14\\)",
+        "workingOut": "\\(\\text{Quotient} = 384, quad \\text{Remainder} = 14\\)",
         "graphData": null
       }
     ],
@@ -4704,7 +4704,7 @@ export const Y7_CH1K_QUESTIONS = [
       },
       {
         "explanation": "Complete the division process and identify the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 290, \\quad \\text{Remainder} = 30\\)",
+        "workingOut": "\\(\\text{Quotient} = 290, quad \\text{Remainder} = 30\\)",
         "graphData": null
       }
     ],

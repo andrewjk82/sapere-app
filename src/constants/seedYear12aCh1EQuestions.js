@@ -31,7 +31,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "To find the sum of the first four terms, we first list the first four terms of the sequence.",
-        "workingOut": "\\(T_1 = 3, \\quad T_2 = 5, \\quad T_3 = 7, \\quad T_4 = 9\\)",
+        "workingOut": "\\(T_1 = 3, quad T_2 = 5, quad T_3 = 7, quad T_4 = 9\\)",
         "graphData": null
       },
       {
@@ -83,7 +83,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List the first four terms of the sequence.",
-        "workingOut": "\\(T_1 = 2, \\quad T_2 = 6, \\quad T_3 = 18, \\quad T_4 = 54\\)",
+        "workingOut": "\\(T_1 = 2, quad T_2 = 6, quad T_3 = 18, quad T_4 = 54\\)",
         "graphData": null
       },
       {
@@ -130,7 +130,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first four terms of the sequence, noting the negative signs.",
-        "workingOut": "\\(T_1 = 6, \\quad T_2 = 2, \\quad T_3 = -2, \\quad T_4 = -6\\)",
+        "workingOut": "\\(T_1 = 6, quad T_2 = 2, quad T_3 = -2, quad T_4 = -6\\)",
         "graphData": null
       },
       {
@@ -177,7 +177,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first four terms of the sequence.",
-        "workingOut": "\\(T_1 = 2, \\quad T_2 = 1, \\quad T_3 = 0.5, \\quad T_4 = 0.25\\)",
+        "workingOut": "\\(T_1 = 2, quad T_2 = 1, quad T_3 = 0.5, quad T_4 = 0.25\\)",
         "graphData": null
       },
       {
@@ -224,7 +224,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first three terms of the series.",
-        "workingOut": "\\(T_1 = 200, \\quad T_2 = 150, \\quad T_3 = 100\\)",
+        "workingOut": "\\(T_1 = 200, quad T_2 = 150, quad T_3 = 100\\)",
         "graphData": null
       },
       {
@@ -271,7 +271,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first three terms of the alternating series.",
-        "workingOut": "\\(T_1 = 32, \\quad T_2 = -16, \\quad T_3 = 8\\)",
+        "workingOut": "\\(T_1 = 32, quad T_2 = -16, quad T_3 = 8\\)",
         "graphData": null
       },
       {
@@ -318,7 +318,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List the first three terms of the series.",
-        "workingOut": "\\(T_1 = -24, \\quad T_2 = -18, \\quad T_3 = -12\\)",
+        "workingOut": "\\(T_1 = -24, quad T_2 = -18, quad T_3 = -12\\)",
         "graphData": null
       },
       {
@@ -365,7 +365,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first three terms of the series.",
-        "workingOut": "\\(T_1 = 5.1, \\quad T_2 = 5.2, \\quad T_3 = 5.3\\)",
+        "workingOut": "\\(T_1 = 5.1, quad T_2 = 5.2, quad T_3 = 5.3\\)",
         "graphData": null
       },
       {
@@ -412,12 +412,12 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate \\(S_1\\) which is simply the first term, and \\(S_2\\) which is the sum of the first two terms.",
-        "workingOut": "\\(S_1 = 10, \\quad S_2 = 10 + 20 = 30\\)",
+        "workingOut": "\\(S_1 = 10, quad S_2 = 10 + 20 = 30\\)",
         "graphData": null
       },
       {
         "explanation": "Calculate \\(S_3\\) and \\(S_4\\) by adding successive terms to the previous sum.",
-        "workingOut": "\\(S_3 = S_2 + 30 = 60, \\quad S_4 = S_3 + 40 = 100\\)",
+        "workingOut": "\\(S_3 = S_2 + 30 = 60, quad S_4 = S_3 + 40 = 100\\)",
         "graphData": null
       },
       {
@@ -459,12 +459,12 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find \\(S_1\\) and \\(S_2\\).",
-        "workingOut": "\\(S_1 = 1, \\quad S_2 = 1 + (-3) = -2\\)",
+        "workingOut": "\\(S_1 = 1, quad S_2 = 1 + (-3) = -2\\)",
         "graphData": null
       },
       {
         "explanation": "Find \\(S_3\\) and \\(S_4\\).",
-        "workingOut": "\\(S_3 = S_2 + 9 = 7, \\quad S_4 = S_3 + (-27) = -20\\)",
+        "workingOut": "\\(S_3 = S_2 + 9 = 7, quad S_4 = S_3 + (-27) = -20\\)",
         "graphData": null
       },
       {
@@ -506,12 +506,12 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute the first and second partial sums.",
-        "workingOut": "\\(S_1 = 1, \\quad S_2 = 1 + 4 = 5\\)",
+        "workingOut": "\\(S_1 = 1, quad S_2 = 1 + 4 = 5\\)",
         "graphData": null
       },
       {
         "explanation": "Compute the third and fourth partial sums.",
-        "workingOut": "\\(S_3 = 5 + 9 = 14, \\quad S_4 = 14 + 16 = 30\\)",
+        "workingOut": "\\(S_3 = 5 + 9 = 14, quad S_4 = 14 + 16 = 30\\)",
         "graphData": null
       },
       {
@@ -553,17 +553,17 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List the terms in decimal form to make arithmetic easier.",
-        "workingOut": "\\(T_1 = 3, \\quad T_2 = 4.5, \\quad T_3 = 6, \\quad T_4 = 7.5, \\quad T_5 = 9\\)",
+        "workingOut": "\\(T_1 = 3, quad T_2 = 4.5, quad T_3 = 6, quad T_4 = 7.5, quad T_5 = 9\\)",
         "graphData": null
       },
       {
         "explanation": "Find the first and second partial sums.",
-        "workingOut": "\\(S_1 = 3, \\quad S_2 = 3 + 4.5 = 7.5 = 7\\frac{1}{2}\\)",
+        "workingOut": "\\(S_1 = 3, quad S_2 = 3 + 4.5 = 7.5 = 7\\frac{1}{2}\\)",
         "graphData": null
       },
       {
         "explanation": "Find the third and fourth partial sums.",
-        "workingOut": "\\(S_3 = 7.5 + 6 = 13.5 = 13\\frac{1}{2}, \\quad S_4 = 13.5 + 7.5 = 21\\)",
+        "workingOut": "\\(S_3 = 7.5 + 6 = 13.5 = 13\\frac{1}{2}, quad S_4 = 13.5 + 7.5 = 21\\)",
         "graphData": null
       },
       {
@@ -813,17 +813,17 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the first few terms of \\(S_n\\) by adding terms consecutively.",
-        "workingOut": "\\(S_1 = 2, \\quad S_2 = 2 + 5 = 7, \\quad S_3 = 7 + 8 = 15\\)",
+        "workingOut": "\\(S_1 = 2, quad S_2 = 2 + 5 = 7, quad S_3 = 7 + 8 = 15\\)",
         "graphData": null
       },
       {
         "explanation": "Continue adding elements to find \\(S_4\\) and \\(S_5\\).",
-        "workingOut": "\\(S_4 = 15 + 11 = 26, \\quad S_5 = 26 + 14 = 40\\)",
+        "workingOut": "\\(S_4 = 15 + 11 = 26, quad S_5 = 26 + 14 = 40\\)",
         "graphData": null
       },
       {
         "explanation": "Determine the final terms \\(S_6\\) and \\(S_7\\).",
-        "workingOut": "\\(S_6 = 40 + 17 = 57, \\quad S_7 = 57 + 20 = 77\\)",
+        "workingOut": "\\(S_6 = 40 + 17 = 57, quad S_7 = 57 + 20 = 77\\)",
         "graphData": null
       }
     ]
@@ -860,17 +860,17 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the initial partial sums.",
-        "workingOut": "\\(S_1 = 2, \\quad S_2 = 2 + (-4) = -2, \\quad S_3 = -2 + 6 = 4\\)",
+        "workingOut": "\\(S_1 = 2, quad S_2 = 2 + (-4) = -2, quad S_3 = -2 + 6 = 4\\)",
         "graphData": null
       },
       {
         "explanation": "Compute the middle partial sums.",
-        "workingOut": "\\(S_4 = 4 + (-8) = -4, \\quad S_5 = -4 + 10 = 6\\)",
+        "workingOut": "\\(S_4 = 4 + (-8) = -4, quad S_5 = -4 + 10 = 6\\)",
         "graphData": null
       },
       {
         "explanation": "Complete the final calculations.",
-        "workingOut": "\\(S_6 = 6 + (-12) = -6, \\quad S_7 = -6 + 14 = 8\\)",
+        "workingOut": "\\(S_6 = 6 + (-12) = -6, quad S_7 = -6 + 14 = 8\\)",
         "graphData": null
       }
     ]
@@ -907,17 +907,17 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Start calculating the sums step-by-step.",
-        "workingOut": "\\(S_1 = 40, \\quad S_2 = 40 + 38 = 78, \\quad S_3 = 78 + 36 = 114\\)",
+        "workingOut": "\\(S_1 = 40, quad S_2 = 40 + 38 = 78, quad S_3 = 78 + 36 = 114\\)",
         "graphData": null
       },
       {
         "explanation": "Find the next few sums.",
-        "workingOut": "\\(S_4 = 114 + 34 = 148, \\quad S_5 = 148 + 32 = 180\\)",
+        "workingOut": "\\(S_4 = 114 + 34 = 148, quad S_5 = 148 + 32 = 180\\)",
         "graphData": null
       },
       {
         "explanation": "Complete the sum for the remaining elements.",
-        "workingOut": "\\(S_6 = 180 + 30 = 210, \\quad S_7 = 210 + 28 = 238\\)",
+        "workingOut": "\\(S_6 = 180 + 30 = 210, quad S_7 = 210 + 28 = 238\\)",
         "graphData": null
       }
     ]
@@ -954,12 +954,12 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Examine the cumulative calculations.",
-        "workingOut": "\\(S_1 = 7, \\quad S_2 = 7 + (-7) = 0, \\quad S_3 = 0 + 7 = 7\\)",
+        "workingOut": "\\(S_1 = 7, quad S_2 = 7 + (-7) = 0, quad S_3 = 0 + 7 = 7\\)",
         "graphData": null
       },
       {
         "explanation": "Observe that the sum resets to 0 on even index terms and returns to 7 on odd index terms.",
-        "workingOut": "\\(S_4 = 7 + (-7) = 0, \\quad S_5 = 0 + 7 = 7, \\quad S_6 = 7 + (-7) = 0, \\quad S_7 = 0 + 7 = 7\\)",
+        "workingOut": "\\(S_4 = 7 + (-7) = 0, quad S_5 = 0 + 7 = 7, quad S_6 = 7 + (-7) = 0, quad S_7 = 0 + 7 = 7\\)",
         "graphData": null
       }
     ]
@@ -1001,7 +1001,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Calculate the second and third terms by subtracting the previous sum from the current sum.",
-        "workingOut": "\\(T_2 = S_2 - S_1 = 4 - 1 = 3, \\quad T_3 = S_3 - S_2 = 9 - 4 = 5\\)",
+        "workingOut": "\\(T_2 = S_2 - S_1 = 4 - 1 = 3, quad T_3 = S_3 - S_2 = 9 - 4 = 5\\)",
         "graphData": null
       },
       {
@@ -1048,7 +1048,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Find the next few terms by subtracting successive values.",
-        "workingOut": "\\(T_2 = -8 - (-3) = -5, \\quad T_3 = -15 - (-8) = -7\\)",
+        "workingOut": "\\(T_2 = -8 - (-3) = -5, quad T_3 = -15 - (-8) = -7\\)",
         "graphData": null
       },
       {
@@ -1095,7 +1095,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Calculate consecutive differences.",
-        "workingOut": "\\(T_2 = 6 - 2 = 4, \\quad T_3 = 14 - 6 = 8\\)",
+        "workingOut": "\\(T_2 = 6 - 2 = 4, quad T_3 = 14 - 6 = 8\\)",
         "graphData": null
       },
       {
@@ -1142,7 +1142,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Subtract successive terms to determine the alternating sequence.",
-        "workingOut": "\\(T_2 = 0 - 8 = -8, \\quad T_3 = 8 - 0 = 8\\)",
+        "workingOut": "\\(T_2 = 0 - 8 = -8, quad T_3 = 8 - 0 = 8\\)",
         "graphData": null
       },
       {
@@ -1189,7 +1189,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Compute the differences for the next few terms.",
-        "workingOut": "\\(T_2 = 2 - 1 = 1, \\quad T_3 = 3 - 2 = 1, \\quad T_4 = 5 - 3 = 2\\)",
+        "workingOut": "\\(T_2 = 2 - 1 = 1, quad T_3 = 3 - 2 = 1, quad T_4 = 5 - 3 = 2\\)",
         "graphData": null
       },
       {
@@ -1236,7 +1236,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Subtract successive terms to determine the beginning sequence.",
-        "workingOut": "\\(T_2 = 4 - 3 = 1, \\quad T_3 = 7 - 4 = 3, \\quad T_4 = 11 - 7 = 4\\)",
+        "workingOut": "\\(T_2 = 4 - 3 = 1, quad T_3 = 7 - 4 = 3, quad T_4 = 11 - 7 = 4\\)",
         "graphData": null
       },
       {
@@ -1829,7 +1829,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "We can partition this square into L-shaped shells starting from the top-left corner.",
-        "workingOut": "\\(\\text{Shell 1} = 1, \\quad \\text{Shell 2} = 3, \\quad \\text{Shell 3} = 5, \\quad \\dots, \\quad \\text{Shell } n = 2n-1\\)",
+        "workingOut": "\\(\\text{Shell 1} = 1, quad \\text{Shell 2} = 3, quad \\text{Shell 3} = 5, quad \\dots, quad \\text{Shell } n = 2n-1\\)",
         "graphData": null
       },
       {
@@ -1905,7 +1905,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Determine the starting and ending values of the index \\(n\\). The first term is \\(1^3\\) and the last term is \\(40^3\\).",
-        "workingOut": "\\(\\text{Lower limit} = 1, \\quad \\text{Upper limit} = 40\\)",
+        "workingOut": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 40\\)",
         "graphData": null
       },
       {
@@ -1952,7 +1952,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Set the bounds of the index: the first term is \\(\\frac{1}{1} = 1\\) and the last term is \\(\\frac{1}{40}\\).",
-        "workingOut": "\\(\\text{Lower limit} = 1, \\quad \\text{Upper limit} = 40\\)",
+        "workingOut": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 40\\)",
         "graphData": null
       },
       {
@@ -2046,7 +2046,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Identify the limits of summation: exponent starts at 1 and ends at 12.",
-        "workingOut": "\\(\\text{Lower limit} = 1, \\quad \\text{Upper limit} = 12\\)",
+        "workingOut": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 12\\)",
         "graphData": null
       },
       {
@@ -2088,7 +2088,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The magnitude of each term matches its index \\(n\\). The signs alternate, starting with negative on the first term.",
-        "workingOut": "\\(T_1 = -1, \\quad T_2 = 2, \\quad T_3 = -3\\)",
+        "workingOut": "\\(T_1 = -1, quad T_2 = 2, quad T_3 = -3\\)",
         "graphData": null
       },
       {
@@ -2098,7 +2098,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Determine the bounds: \\(n\\) starts at 1 and ends at 10.",
-        "workingOut": "\\(\\text{Lower limit} = 1, \\quad \\text{Upper limit} = 10\\)",
+        "workingOut": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 10\\)",
         "graphData": null
       },
       {
@@ -2145,7 +2145,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Determine the upper limit, which is 10 (since the last term is \\(-10 = (-1)^{11} 10\\)).",
-        "workingOut": "\\(\\text{Lower limit} = 1, \\quad \\text{Upper limit} = 10\\)",
+        "workingOut": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 10\\)",
         "graphData": null
       },
       {
@@ -3054,7 +3054,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) (at \\(n=1\\)) and the last term \\(L\\) (at \\(n=10\\)).",
-        "workingOut": "\\(a = 2(1)+3 = 5, \\quad L = 2(10)+3 = 23\\)"
+        "workingOut": "\\(a = 2(1)+3 = 5, quad L = 2(10)+3 = 23\\)"
       },
       {
         "explanation": "Apply the AP sum formula \\(S_n = \\frac{n}{2}(a + L)\\) with \\(n=10\\).",
@@ -3100,7 +3100,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) (at \\(n=1\\)) and common ratio \\(r\\).",
-        "workingOut": "\\(a = 2 \\cdot 3^1 = 6, \\quad r = 3\\)"
+        "workingOut": "\\(a = 2 \\cdot 3^1 = 6, quad r = 3\\)"
       },
       {
         "explanation": "Apply the GP sum formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) with \\(n=4\\).",
@@ -3602,11 +3602,11 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute \\(S_1\\) and \\(S_2\\).",
-        "workingOut": "\\(S_1 = 1 + (2 \\cdot 1 - 1) = 2, \\quad S_2 = 2 + (2 \\cdot 2 - 1) = 5\\)"
+        "workingOut": "\\(S_1 = 1 + (2 \\cdot 1 - 1) = 2, quad S_2 = 2 + (2 \\cdot 2 - 1) = 5\\)"
       },
       {
         "explanation": "Compute \\(S_3\\) and \\(S_4\\).",
-        "workingOut": "\\(S_3 = 5 + (2 \\cdot 3 - 1) = 10, \\quad S_4 = 10 + (2 \\cdot 4 - 1) = 17\\)"
+        "workingOut": "\\(S_3 = 5 + (2 \\cdot 3 - 1) = 10, quad S_4 = 10 + (2 \\cdot 4 - 1) = 17\\)"
       }
     ],
     "t": "Adding up the terms of a sequence",
@@ -3686,11 +3686,11 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute \\(S_1\\) and \\(S_2\\).",
-        "workingOut": "\\(S_1 = 0 + 1 = 1, \\quad S_2 = 1 + 2 = 3\\)"
+        "workingOut": "\\(S_1 = 0 + 1 = 1, quad S_2 = 1 + 2 = 3\\)"
       },
       {
         "explanation": "Compute \\(S_3\\) and \\(S_4\\).",
-        "workingOut": "\\(S_3 = 3 + 3 = 6, \\quad S_4 = 6 + 4 = 10\\)"
+        "workingOut": "\\(S_3 = 3 + 3 = 6, quad S_4 = 6 + 4 = 10\\)"
       }
     ],
     "t": "Adding up the terms of a sequence",
@@ -4330,7 +4330,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and last term \\(L\\) of the AP in the range.",
-        "workingOut": "\\(a = 21, \\quad L = 79\\)"
+        "workingOut": "\\(a = 21, quad L = 79\\)"
       },
       {
         "explanation": "Find the number of terms \\(n\\) using \\(L = a + (n-1)d\\) with \\(d = 2\\).",
@@ -4376,7 +4376,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first multiple \\(a\\) and last multiple \\(L\\) of 7 in range.",
-        "workingOut": "\\(a = 105, \\quad L = 196\\)"
+        "workingOut": "\\(a = 105, quad L = 196\\)"
       },
       {
         "explanation": "Calculate the number of terms \\(n\\).",
@@ -4518,7 +4518,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write expressions for the terms: \\(T_3 = a + 2d = 12\\) and \\(T_7 = a + 6d = 24\\).",
-        "workingOut": "\\(a + 2d = 12, \\quad a + 6d = 24\\)"
+        "workingOut": "\\(a + 2d = 12, quad a + 6d = 24\\)"
       },
       {
         "explanation": "Subtract the first equation from the second to find \\(d\\).",
@@ -4756,11 +4756,11 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Express the sum equations: \\(S_5 = 2.5(2a + 4d) = 35\\) and \\(S_{10} = 5(2a + 9d) = 120\\).",
-        "workingOut": "\\(2a + 4d = 14, \\quad 2a + 9d = 24\\)"
+        "workingOut": "\\(2a + 4d = 14, quad 2a + 9d = 24\\)"
       },
       {
         "explanation": "Subtract the two equations to solve for \\(d\\) and \\(a\\).",
-        "workingOut": "\\(5d = 10 \\Rightarrow d = 2, \\quad a = 3\\)"
+        "workingOut": "\\(5d = 10 \\Rightarrow d = 2, quad a = 3\\)"
       },
       {
         "explanation": "Substitute the values into the formula for \\(S_{15}\\).",
@@ -4898,7 +4898,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Express the terms: \\(T_2 = ar = 6\\) and \\(T_5 = ar^4 = 48\\).",
-        "workingOut": "\\(ar = 6, \\quad ar^4 = 48\\)"
+        "workingOut": "\\(ar = 6, quad ar^4 = 48\\)"
       },
       {
         "explanation": "Divide the two equations to solve for \\(r\\).",
@@ -5190,7 +5190,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Express the terms: \\(T_3 = ar^2 = 20\\) and \\(T_6 = ar^5 = 160\\).",
-        "workingOut": "\\(ar^2 = 20, \\quad ar^5 = 160\\)"
+        "workingOut": "\\(ar^2 = 20, quad ar^5 = 160\\)"
       },
       {
         "explanation": "Divide to find the common ratio \\(r\\).",
@@ -5286,7 +5286,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\).",
-        "workingOut": "\\(a = 12, \\quad r = \\frac{4}{12} = \\frac{1}{3}\\)"
+        "workingOut": "\\(a = 12, quad r = \\frac{4}{12} = \\frac{1}{3}\\)"
       },
       {
         "explanation": "Apply the limiting sum formula \\(S_{\\infty} = \\frac{a}{1-r}\\).",
@@ -5332,7 +5332,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\).",
-        "workingOut": "\\(a = 9, \\quad r = -\\frac{6}{9} = -\\frac{2}{3}\\)"
+        "workingOut": "\\(a = 9, quad r = -\\frac{6}{9} = -\\frac{2}{3}\\)"
       },
       {
         "explanation": "Apply the limiting sum formula.",
@@ -5382,7 +5382,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Identify the first term \\(a\\) and common ratio \\(r\\).",
-        "workingOut": "\\(a = \\frac{7}{10}, \\quad r = \\frac{1}{10}\\)"
+        "workingOut": "\\(a = \\frac{7}{10}, quad r = \\frac{1}{10}\\)"
       },
       {
         "explanation": "Apply the limiting sum formula.",
@@ -5428,7 +5428,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Identify \\(a\\) and \\(r\\).",
-        "workingOut": "\\(a = \\frac{45}{100}, \\quad r = \\frac{1}{100}\\)"
+        "workingOut": "\\(a = \\frac{45}{100}, quad r = \\frac{1}{100}\\)"
       },
       {
         "explanation": "Apply the limiting sum formula and simplify.",
@@ -5608,7 +5608,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the first term \\(a\\) (at \\(n=1\\)) and common ratio \\(r\\).",
-        "workingOut": "\\(a = 5(0.8) = 4, \\quad r = 0.8\\)"
+        "workingOut": "\\(a = 5(0.8) = 4, quad r = 0.8\\)"
       },
       {
         "explanation": "Apply the limiting sum formula.",
@@ -5934,7 +5934,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the term for \\(n = 1, 2, 3\\).",
-        "workingOut": "\\(T_1 = \\frac{2}{1} = 2, \\quad T_2 = \\frac{5}{2}, \\quad T_3 = \\frac{10}{3}\\)"
+        "workingOut": "\\(T_1 = \\frac{2}{1} = 2, quad T_2 = \\frac{5}{2}, quad T_3 = \\frac{10}{3}\\)"
       },
       {
         "explanation": "Add the terms together.",
@@ -6168,7 +6168,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the terms for \\(n = 1, 2, 3\\).",
-        "workingOut": "\\(T_1 = \\frac{1}{2}, \\quad T_2 = \\frac{3}{4}, \\quad T_3 = \\frac{7}{8}\\)"
+        "workingOut": "\\(T_1 = \\frac{1}{2}, quad T_2 = \\frac{3}{4}, quad T_3 = \\frac{7}{8}\\)"
       },
       {
         "explanation": "Add the fractions.",
@@ -6260,7 +6260,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms of the AP: \\(T_1 = 3\\), \\(T_3 = 3 + 2d\\), \\(T_9 = 3 + 8d\\).",
-        "workingOut": "\\(T_1 = 3, \\quad T_3 = 3+2d, \\quad T_9 = 3+8d\\)"
+        "workingOut": "\\(T_1 = 3, quad T_3 = 3+2d, quad T_9 = 3+8d\\)"
       },
       {
         "explanation": "Set up the geometric ratio condition: \\(\\frac{3+8d}{3+2d} = \\frac{3+2d}{3}\\).",
@@ -6364,7 +6364,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "The original terms are \\(5-d, 5, 5+d\\). Add \\(1, 4, 19\\) to get the GP terms.",
-        "workingOut": "\\(GP_1 = 5-d+1 = 6-d, \\quad GP_2 = 5+4 = 9, \\quad GP_3 = 5+d+19 = 24+d\\)"
+        "workingOut": "\\(GP_1 = 5-d+1 = 6-d, quad GP_2 = 5+4 = 9, quad GP_3 = 5+d+19 = 24+d\\)"
       },
       {
         "explanation": "Set up the GP geometric mean condition.",
@@ -6376,7 +6376,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Substitute positive \\(d = 3\\) to find the original numbers.",
-        "workingOut": "\\(5-3 = 2, \\quad 5, \\quad 5+3 = 8\\)"
+        "workingOut": "\\(5-3 = 2, quad 5, quad 5+3 = 8\\)"
       }
     ],
     "t": "Adding up the terms of a sequence",
@@ -6414,7 +6414,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms of the AP: \\(T_1 = 4\\), \\(T_2 = 4 + d\\), \\(T_5 = 4 + 4d\\).",
-        "workingOut": "\\(T_1 = 4, \\quad T_2 = 4+d, \\quad T_5 = 4+4d\\)"
+        "workingOut": "\\(T_1 = 4, quad T_2 = 4+d, quad T_5 = 4+4d\\)"
       },
       {
         "explanation": "Set up the geometric ratio condition.",
@@ -6514,7 +6514,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms with \\(x = 2\\). The first term is 2, the second term is 5.",
-        "workingOut": "\\(T_1 = 2, \\quad T_2 = 5\\)"
+        "workingOut": "\\(T_1 = 2, quad T_2 = 5\\)"
       },
       {
         "explanation": "Use the GP ratio of 3 from the second term to find the third term \\(y\\).",
@@ -6564,7 +6564,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Write the third terms: \\(T_3(GP) = 5r^2\\) and \\(T_3(AP) = 5 + 2d = 10r - 5\\).",
-        "workingOut": "\\(T_3(GP) = 5r^2, \\quad T_3(AP) = 10r - 5\\)"
+        "workingOut": "\\(T_3(GP) = 5r^2, quad T_3(AP) = 10r - 5\\)"
       },
       {
         "explanation": "Apply the condition \\(T_3(GP) = 1.8 T_3(AP)\\).",
@@ -6610,7 +6610,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Express the AP terms: \\(T_2 = a+d\\), \\(T_5 = a+4d\\), \\(T_{14} = a+13d\\).",
-        "workingOut": "\\(GP_1 = a+d, \\quad GP_2 = a+4d, \\quad GP_3 = a+13d\\)"
+        "workingOut": "\\(GP_1 = a+d, quad GP_2 = a+4d, quad GP_3 = a+13d\\)"
       },
       {
         "explanation": "Set up the geometric mean equation.",
@@ -6664,7 +6664,7 @@ export const Y12A_CH1E_QUESTIONS = [
       },
       {
         "explanation": "Write the terms of the GP after modifications.",
-        "workingOut": "\\(GP_1 = 5-d, \\quad GP_2 = 8, \\quad GP_3 = 20+d\\)"
+        "workingOut": "\\(GP_1 = 5-d, quad GP_2 = 8, quad GP_3 = 20+d\\)"
       },
       {
         "explanation": "Apply the GP condition: \\((5-d)(20+d) = 8^2\\).",
@@ -6714,7 +6714,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the term \\(|2n - 3|\\) for each \\(n = 1, 2, 3\\).",
-        "workingOut": "\\(T_1 = |2(1)-3| = 1, \\quad T_2 = |2(2)-3| = 1, \\quad T_3 = |2(3)-3| = 3\\)"
+        "workingOut": "\\(T_1 = |2(1)-3| = 1, quad T_2 = |2(2)-3| = 1, quad T_3 = |2(3)-3| = 3\\)"
       },
       {
         "explanation": "Add the terms.",
@@ -6760,7 +6760,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the expression for \\(n = 1, 2, 3, 4\\).",
-        "workingOut": "\\(T_1 = |1-3| = 2, \\quad T_2 = |2-3| = 1, \\quad T_3 = 0, \\quad T_4 = |4-3| = 1\\)"
+        "workingOut": "\\(T_1 = |1-3| = 2, quad T_2 = |2-3| = 1, quad T_3 = 0, quad T_4 = |4-3| = 1\\)"
       },
       {
         "explanation": "Sum the evaluated terms.",
@@ -6806,7 +6806,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the expression for \\(n = 1, 2, 3\\).",
-        "workingOut": "\\(T_1 = |3(1)-5| = 2, \\quad T_2 = |3(2)-5| = 1, \\quad T_3 = |3(3)-5| = 4\\)"
+        "workingOut": "\\(T_1 = |3(1)-5| = 2, quad T_2 = |3(2)-5| = 1, quad T_3 = |3(3)-5| = 4\\)"
       },
       {
         "explanation": "Sum the terms.",
@@ -6852,7 +6852,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the expression for \\(n = 1, 2, 3, 4\\).",
-        "workingOut": "\\(T_1 = |2-6| = 4, \\quad T_2 = |4-6| = 2, \\quad T_3 = |8-6| = 2, \\quad T_4 = |16-6| = 10\\)"
+        "workingOut": "\\(T_1 = |2-6| = 4, quad T_2 = |4-6| = 2, quad T_3 = |8-6| = 2, quad T_4 = |16-6| = 10\\)"
       },
       {
         "explanation": "Sum the terms.",
@@ -6898,7 +6898,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the expression for \\(n = 1, 2, 3\\).",
-        "workingOut": "\\(T_1 = |1-5| = 4, \\quad T_2 = |4-5| = 1, \\quad T_3 = |9-5| = 4\\)"
+        "workingOut": "\\(T_1 = |1-5| = 4, quad T_2 = |4-5| = 1, quad T_3 = |9-5| = 4\\)"
       },
       {
         "explanation": "Sum the terms.",
@@ -6944,7 +6944,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the expression for \\(n = 1, 2, 3, 4\\).",
-        "workingOut": "\\(T_1 = |3-2| = 1, \\quad T_2 = |3-4| = 1, \\quad T_3 = |3-6| = 3, \\quad T_4 = |3-8| = 5\\)"
+        "workingOut": "\\(T_1 = |3-2| = 1, quad T_2 = |3-4| = 1, quad T_3 = |3-6| = 3, quad T_4 = |3-8| = 5\\)"
       },
       {
         "explanation": "Sum the terms.",
@@ -6990,7 +6990,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the terms from \\(n = 2\\) up to \\(n = 5\\).",
-        "workingOut": "\\(T_2 = |4-6| = 2, \\quad T_3 = |9-9| = 0, \\quad T_4 = |16-12| = 4, \\quad T_5 = |25-15| = 10\\)"
+        "workingOut": "\\(T_2 = |4-6| = 2, quad T_3 = |9-9| = 0, quad T_4 = |16-12| = 4, quad T_5 = |25-15| = 10\\)"
       },
       {
         "explanation": "Sum the terms.",
@@ -7036,7 +7036,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the expression for \\(n = 1, 2, 3\\).",
-        "workingOut": "\\(T_1 = |4-1| = 3, \\quad T_2 = |4-4| = 0, \\quad T_3 = |4-9| = 5\\)"
+        "workingOut": "\\(T_1 = |4-1| = 3, quad T_2 = |4-4| = 0, quad T_3 = |4-9| = 5\\)"
       },
       {
         "explanation": "Sum the terms.",
@@ -7082,7 +7082,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the expression for \\(n = 1, 2, 3\\).",
-        "workingOut": "\\(T_1 = |5-2| = 3, \\quad T_2 = |5-4| = 1, \\quad T_3 = |5-8| = 3\\)"
+        "workingOut": "\\(T_1 = |5-2| = 3, quad T_2 = |5-4| = 1, quad T_3 = |5-8| = 3\\)"
       },
       {
         "explanation": "Sum the terms.",
@@ -7128,7 +7128,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the expression for \\(n = 1, 2, 3, 4\\).",
-        "workingOut": "\\(T_1 = |1-2.5| = 1.5, \\quad T_2 = |2-2.5| = 0.5, \\quad T_3 = |3-2.5| = 0.5, \\quad T_4 = |4-2.5| = 1.5\\)"
+        "workingOut": "\\(T_1 = |1-2.5| = 1.5, quad T_2 = |2-2.5| = 0.5, quad T_3 = |3-2.5| = 0.5, quad T_4 = |4-2.5| = 1.5\\)"
       },
       {
         "explanation": "Sum the terms.",

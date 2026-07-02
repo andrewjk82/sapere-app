@@ -666,7 +666,7 @@ export const Y9_CH7A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Opposite angles",
-        "workingOut": "The three pairs of opposite angles are $\\alpha, \\alpha, \\alpha$"
+        "workingOut": "The three pairs of opposite angles are $\\alpha, alpha, alpha$"
       },
       {
         "explanation": "Sum of angles",

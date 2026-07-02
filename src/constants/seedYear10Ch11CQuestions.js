@@ -139,10 +139,10 @@ export const Y10_CH11C_QUESTIONS = [
     "q": "Find the coordinates of the points of intersection of $y = 6x^2 + 9x + 5$ and $y = 2x + 3$",
     "a": "$(-\\frac{1}{2}, 2), (-\\frac{2}{3}, \\frac{5}{3})$",
     "opts": [
-      "$(-\\frac{1}{2}, 2), (-\\frac{2}{3}, \\frac{5}{3})$",
+      "$(-\\frac{1}{2}, 2), (-\\frac{2}{3}, frac{5}{3})$",
       "No points of intersection",
-      "$(-\\frac{1}{2}, 2), (-\\frac{2}{3}, \\frac{5}{3})$ + 2",
-      "$(-\\frac{1}{2}, 2), (-\\frac{2}{3}, \\frac{5}{3})$ + 3"
+      "$(-\\frac{1}{2}, 2), (-\\frac{2}{3}, frac{5}{3})$ + 2",
+      "$(-\\frac{1}{2}, 2), (-\\frac{2}{3}, frac{5}{3})$ + 3"
     ],
     "h": "Equate the y expressions.",
     "s": "$6x^2+9x+5 = 2x+3 \\Rightarrow 6x^2+7x+2=0 \\Rightarrow (2x+1)(3x+2)=0 \\Rightarrow x=-1/2, -2/3$.",
@@ -424,10 +424,10 @@ export const Y10_CH11C_QUESTIONS = [
     "q": "The circle $x^2 + y^2 = 1$, the parabola $y = x^2$ and the line $y = x$ are drawn on the same axes. Let A and B be the points of intersection of $y = x$ with the circle and parabola (in the first quadrant), respectively. Find the coordinates of A and B.",
     "a": "$A(\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}), B(1, 1)$",
     "opts": [
-      "$A(\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}), B(1, 1)$",
+      "$A(\\frac{1}{\\sqrt{2}}, frac{1}{\\sqrt{2}}), B(1, 1)$",
       "No points of intersection",
-      "$A(\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}), B(1, 1)$ + 2",
-      "$A(\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}), B(1, 1)$ + 3"
+      "$A(\\frac{1}{\\sqrt{2}}, frac{1}{\\sqrt{2}}), B(1, 1)$ + 2",
+      "$A(\\frac{1}{\\sqrt{2}}, frac{1}{\\sqrt{2}}), B(1, 1)$ + 3"
     ],
     "h": "Find intersections with $y=x$.",
     "s": "For A: $x^2+x^2=1 \\Rightarrow 2x^2=1 \\Rightarrow x=1/\\sqrt{2}$. For B: $x=x^2 \\Rightarrow x^2-x=0 \\Rightarrow x(x-1)=0 \\Rightarrow x=1$ (since B is not origin).",

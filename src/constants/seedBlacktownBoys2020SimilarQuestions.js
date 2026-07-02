@@ -173,7 +173,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the \\(z\\)-scores.",
-        "workingOut": "z_{85} = \\frac{85-100}{15} = -1, \\quad z_{130} = \\frac{130-100}{15} = 2"
+        "workingOut": "z_{85} = \\frac{85-100}{15} = -1, quad z_{130} = \\frac{130-100}{15} = 2"
       },
       {
         "explanation": "Use the 68-95-99.7 rule: area from \\(\\mu-\\sigma\\) to \\(\\mu\\) is 34%; area from \\(\\mu\\) to \\(\\mu+2\\sigma\\) is 47.5%.",
@@ -221,10 +221,10 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "q": "A graph shows the curve $y = f(x)$ with a point $Q(b, f(b))$ in the first quadrant. At $Q$ the curve is increasing and concave up. Which statement is true?",
     "a": "1",
     "opts": [
-      "$f'(b) < 0,\\ f''(b) < 0$",
-      "$f'(b) > 0,\\ f''(b) > 0$",
-      "$f'(b) < 0,\\ f''(b) > 0$",
-      "$f'(b) > 0,\\ f''(b) < 0$"
+      "$f'(b) < 0, f''(b) < 0$",
+      "$f'(b) > 0, f''(b) > 0$",
+      "$f'(b) < 0, f''(b) > 0$",
+      "$f'(b) > 0, f''(b) < 0$"
     ],
     "h": "Increasing means $f'(b) > 0$. Concave up means $f''(b) > 0$.",
     "s": "The curve is increasing at $Q$, so $f'(b) > 0$. The curve is concave up at $Q$, so $f''(b) > 0$.",
@@ -430,7 +430,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "marks": 2,
-    "q": "The graph of $f(x) = |ax + b|$ has its vertex at $(1.5,\\ 0)$ and $y$-intercept at $(0,\\ 3)$. Find the values of $a$ and $b$.",
+    "q": "The graph of $f(x) = |ax + b|$ has its vertex at $(1.5, 0)$ and $y$-intercept at $(0, 3)$. Find the values of $a$ and $b$.",
     "a": "$a = 2,\\ b = -3$",
     "h": "At the vertex, $ax + b = 0$. Use the $y$-intercept to find $|b|$, then determine the sign of $b$.",
     "s": "Vertex at $x = 1.5$: $1.5a + b = 0$. $y$-intercept: $|b| = 3$, so $b = \\pm 3$. Testing $b = -3$: $a = 3/1.5 = 2$. Verify: $f(0) = |0 - 3| = 3$ ✓. So $a = 2$, $b = -3$.",
@@ -445,7 +445,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Test \\(b = -3\\): \\(a = 3/1.5 = 2\\).",
-        "workingOut": "a = 2,\\ b = -3"
+        "workingOut": "a = 2, b = -3"
       }
     ]
   },
@@ -517,7 +517,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(u\\) and \\(v\\).",
-        "workingOut": "u = e^{2x}+3,\\ u' = 2e^{2x};\\quad v = x-1,\\ v' = 1"
+        "workingOut": "u = e^{2x}+3, u' = 2e^{2x};\\quad v = x-1, v' = 1"
       },
       {
         "explanation": "Apply the quotient rule.",
@@ -538,7 +538,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "marks": 2,
-    "q": "What is the limiting sum of the geometric series $500, -200, 80, -32, \\ldots$?",
+    "q": "What is the limiting sum of the geometric series $500, -200, 80, -32, ldots$?",
     "a": "$S_\\infty = \\dfrac{2500}{7}$",
     "h": "Find the common ratio $r = T_2/T_1$. Then use $S_\\infty = \\dfrac{a}{1-r}$ when $|r| < 1$.",
     "s": "$a = 500$, $r = \\frac{-200}{500} = -\\frac{2}{5}$. Since $|r| < 1$: $S_\\infty = \\frac{500}{1-(-2/5)} = \\frac{500}{7/5} = \\frac{2500}{7}$.",
@@ -673,7 +673,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Product rule: \\(\\frac{d}{dx}(uv) = u'v + uv'\\).",
-        "workingOut": "u = e^{3x},\\ u' = 3e^{3x};\\quad v = \\sin x,\\ v' = \\cos x"
+        "workingOut": "u = e^{3x}, u' = 3e^{3x};\\quad v = \\sin x, v' = \\cos x"
       },
       {
         "explanation": "Apply.",
@@ -828,7 +828,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "marks": 3,
     "q": "Solve $4\\sin^2 x - 1 = 0$ for $-\\pi \\leq x \\leq \\pi$.",
     "a": "$x = -\\dfrac{5\\pi}{6},\\ -\\dfrac{\\pi}{6},\\ \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6}$",
-    "h": "Rearrange to $\\sin^2 x = \\frac{1}{4}$, so $\\sin x = \\pm\\frac{1}{2}$. Find all solutions in $[-\\pi, \\pi]$.",
+    "h": "Rearrange to $\\sin^2 x = \\frac{1}{4}$, so $\\sin x = \\pm\\frac{1}{2}$. Find all solutions in $[-\\pi, pi]$.",
     "s": "$\\sin^2 x = \\frac{1}{4} \\Rightarrow \\sin x = \\pm\\frac{1}{2}$. Reference angle: $\\frac{\\pi}{6}$. From $\\sin x = +\\frac{1}{2}$: $x = \\frac{\\pi}{6},\\ \\frac{5\\pi}{6}$. From $\\sin x = -\\frac{1}{2}$: $x = -\\frac{\\pi}{6},\\ -\\frac{5\\pi}{6}$.",
     "solutionSteps": [
       {
@@ -969,7 +969,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Enter data in calculator statistics mode and find the regression line \\(y = A + Bx\\).",
-        "workingOut": "A \\approx 27,\\ B \\approx 8.5"
+        "workingOut": "A \\approx 27, B \\approx 8.5"
       },
       {
         "explanation": "Round to 2 significant figures.",
@@ -1061,7 +1061,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set \\(y'' = 0\\).",
-        "workingOut": "6x = 0 \\Rightarrow x = 0, \\quad y = 2"
+        "workingOut": "6x = 0 \\Rightarrow x = 0, quad y = 2"
       },
       {
         "explanation": "Verify the change in concavity.",
@@ -1089,7 +1089,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate at endpoints and stationary points.",
-        "workingOut": "y(-2) = 0,\\ y(-1) = 4,\\ y(1) = 0,\\ y(3) = 27 - 9 + 2 = 20"
+        "workingOut": "y(-2) = 0, y(-1) = 4, y(1) = 0, y(3) = 27 - 9 + 2 = 20"
       },
       {
         "explanation": "The maximum value is 20 at \\(x = 3\\).",
@@ -1413,7 +1413,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "q": "For $v = 3 - 6\\cos 2t$, find all times when the particle is at rest for $0 \\leq t \\leq 2\\pi$.",
     "a": "$t = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{11\\pi}{6}$",
     "h": "Set $v = 0$ and solve $\\cos 2t = \\frac{1}{2}$.",
-    "s": "$3 - 6\\cos 2t = 0 \\Rightarrow \\cos 2t = \\frac{1}{2}$. For $0 \\leq 2t \\leq 4\\pi$: $2t = \\frac{\\pi}{3}, \\frac{5\\pi}{3}, \\frac{7\\pi}{3}, \\frac{11\\pi}{3}$. So $t = \\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{11\\pi}{6}$.",
+    "s": "$3 - 6\\cos 2t = 0 \\Rightarrow \\cos 2t = \\frac{1}{2}$. For $0 \\leq 2t \\leq 4\\pi$: $2t = \\frac{\\pi}{3}, frac{5\\pi}{3}, frac{7\\pi}{3}, frac{11\\pi}{3}$. So $t = \\frac{\\pi}{6}, frac{5\\pi}{6}, frac{7\\pi}{6}, frac{11\\pi}{6}$.",
     "solutionSteps": [
       {
         "explanation": "Set \\(v = 0\\).",

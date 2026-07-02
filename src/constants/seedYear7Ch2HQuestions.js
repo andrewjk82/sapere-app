@@ -131,7 +131,7 @@ export const Y7_CH2H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the LCM of 8 and 12, and LCM of 10 and 30.",
-        "workingOut": "\\text{LCM}(8, 12) = 24, \\quad \\text{LCM}(10, 30) = 30"
+        "workingOut": "\\text{LCM}(8, 12) = 24, quad \\text{LCM}(10, 30) = 30"
       },
       {
         "explanation": "Find the LCM of 24 and 30.",
@@ -191,7 +191,7 @@ export const Y7_CH2H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find prime factorisations.",
-        "workingOut": "25 = 5^2, \\quad 16 = 2^4"
+        "workingOut": "25 = 5^2, quad 16 = 2^4"
       },
       {
         "explanation": "Since they share no common prime factors, their HCF is 1.",
@@ -211,7 +211,7 @@ export const Y7_CH2H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write prime factorisations.",
-        "workingOut": "36 = 2^2 \\times 3^2, \\quad 16 = 2^4"
+        "workingOut": "36 = 2^2 \\times 3^2, quad 16 = 2^4"
       },
       {
         "explanation": "Take the lowest power of the common prime factor.",
@@ -231,7 +231,7 @@ export const Y7_CH2H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factorise both numbers.",
-        "workingOut": "26 = 2 \\times 13, \\quad 65 = 5 \\times 13"
+        "workingOut": "26 = 2 \\times 13, quad 65 = 5 \\times 13"
       },
       {
         "explanation": "Identify the common factor.",
@@ -347,7 +347,7 @@ export const Y7_CH2H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write prime factorisations.",
-        "workingOut": "18 = 2 \\times 3^2, \\quad 42 = 2 \\times 3 \\times 7"
+        "workingOut": "18 = 2 \\times 3^2, quad 42 = 2 \\times 3 \\times 7"
       },
       {
         "explanation": "HCF is product of lowest powers of common prime factors.",
@@ -383,7 +383,7 @@ export const Y7_CH2H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write prime factorisations.",
-        "workingOut": "45 = 3^2 \\times 5, \\quad 150 = 2 \\times 3 \\times 5^2"
+        "workingOut": "45 = 3^2 \\times 5, quad 150 = 2 \\times 3 \\times 5^2"
       },
       {
         "explanation": "Calculate HCF.",
@@ -419,7 +419,7 @@ export const Y7_CH2H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the LCM of 15 and 18.",
-        "workingOut": "15 = 3 \\times 5, \\quad 18 = 2 \\times 3^2"
+        "workingOut": "15 = 3 \\times 5, quad 18 = 2 \\times 3^2"
       },
       {
         "explanation": "Calculate LCM.",
@@ -480,7 +480,7 @@ export const Y7_CH2H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find prime factorisations.",
-        "workingOut": "28 = 2^2 \\times 7, \\quad 44 = 2^2 \\times 11, \\quad 68 = 2^2 \\times 17"
+        "workingOut": "28 = 2^2 \\times 7, quad 44 = 2^2 \\times 11, quad 68 = 2^2 \\times 17"
       },
       {
         "explanation": "Calculate the LCM.",
@@ -500,7 +500,7 @@ export const Y7_CH2H_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the HCF of 30 and 28.",
-        "workingOut": "30 = 2 \\times 3 \\times 5, \\quad 28 = 2^2 \\times 7 \\implies \\text{HCF} = 2"
+        "workingOut": "30 = 2 \\times 3 \\times 5, quad 28 = 2^2 \\times 7 \\implies \\text{HCF} = 2"
       },
       {
         "explanation": "The largest square tiles are 2 m by 2 m.",

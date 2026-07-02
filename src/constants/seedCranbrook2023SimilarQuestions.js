@@ -20,7 +20,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recall the definition of a one-to-many relation: at least one \\(x\\)-value pairs with more than one \\(y\\)-value, but each \\(y\\)-value pairs with only one \\(x\\)-value. Both directions must be checked.",
-        "workingOut": "\\text{one-to-many: one } x \\to \\text{many } y, \\text{ each } y \\leftarrow \\text{one } x"
+        "workingOut": "\\text{one-to-many: one } x \\to \\text{many } y, text{ each } y \\leftarrow \\text{one } x"
       },
       {
         "explanation": "Check option (A): \\(x = 2\\) maps to both \\(y = 1\\) and \\(y = 3\\), and the \\(y\\)-values \\(1, 3, 4, 5\\) are all distinct, so no \\(y\\) is repeated.",
@@ -73,7 +73,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the axes: vertical is height (cm), horizontal is weight (kg). Comparing two plotted points means comparing vertical positions for height and horizontal positions for weight.",
-        "workingOut": "\\text{vertical} = \\text{height}, \\quad \\text{horizontal} = \\text{weight}"
+        "workingOut": "\\text{vertical} = \\text{height}, quad \\text{horizontal} = \\text{weight}"
       },
       {
         "explanation": "Athlete P is plotted below Athlete Q, so P has the smaller vertical coordinate: P is shorter.",
@@ -110,7 +110,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Translate the percentages into quartiles: 25% below 50 means \\(Q_1 = 50\\); 75% below 90 means \\(Q_3 = 90\\).",
-        "workingOut": "Q_1 = 50, \\quad Q_3 = 90, \\quad \\text{max} = 100"
+        "workingOut": "Q_1 = 50, quad Q_3 = 90, quad \\text{max} = 100"
       },
       {
         "explanation": "For a symmetrical distribution the median is halfway between the quartiles, so average them.",
@@ -174,29 +174,29 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "q": "Let $f(x) = \\sqrt{x}$ and $g(x) = \\dfrac{1}{x-2}$. What is the domain and range valid for both $f(g(x))$ and $g(f(x))$?",
     "a": "3",
     "opts": [
-      "Domain: $[-2, 2]$, Range $(-\\infty, \\infty)$",
-      "Domain: $(0, \\infty)$, Range $(-\\infty, 0) \\cup (0, \\infty)$",
-      "Domain: $[0, \\infty)$, Range $(0, \\infty)$",
-      "Domain: $(2, \\infty)$, Range $(0, \\infty)$"
+      "Domain: $[-2, 2]$, Range $(-\\infty, infty)$",
+      "Domain: $(0, infty)$, Range $(-\\infty, 0) \\cup (0, infty)$",
+      "Domain: $[0, infty)$, Range $(0, infty)$",
+      "Domain: $(2, infty)$, Range $(0, infty)$"
     ],
     "h": "Find the domain and range of each composite separately, then take the values common to both.",
-    "s": "$f(g(x)) = \\sqrt{\\dfrac{1}{x-2}}$ needs $\\dfrac{1}{x-2} > 0$, i.e. $x > 2$: domain $(2,\\infty)$, range $(0,\\infty)$.\n\n$g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}$ needs $x \\geq 0$ and $\\sqrt{x} \\neq 2$: domain $[0,\\infty)\\setminus{4}$, range $(-\\infty,-\\frac{1}{2}] \\cup (0,\\infty)$.\n\nCommon domain: $(2, \\infty)$. Common range: $(0, \\infty)$.",
+    "s": "$f(g(x)) = \\sqrt{\\dfrac{1}{x-2}}$ needs $\\dfrac{1}{x-2} > 0$, i.e. $x > 2$: domain $(2, infty)$, range $(0, infty)$.\n\n$g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}$ needs $x \\geq 0$ and $\\sqrt{x} \\neq 2$: domain $[0, infty)\\setminus{4}$, range $(-\\infty,-\\frac{1}{2}] \\cup (0, infty)$.\n\nCommon domain: $(2, infty)$. Common range: $(0, infty)$.",
     "solutionSteps": [
       {
         "explanation": "Form \\(f(g(x)) = \\sqrt{\\dfrac{1}{x-2}}\\). The square root needs a non-negative argument and the fraction cannot equal zero, so \\(\\dfrac{1}{x-2} > 0\\), which requires \\(x > 2\\).",
-        "workingOut": "f(g(x)) = \\sqrt{\\dfrac{1}{x-2}}, \\quad \\text{domain: } (2, \\infty)"
+        "workingOut": "f(g(x)) = \\sqrt{\\dfrac{1}{x-2}}, quad \\text{domain: } (2, infty)"
       },
       {
-        "explanation": "As \\(x\\) ranges over \\((2, \\infty)\\), the inner value \\(\\dfrac{1}{x-2}\\) covers \\((0, \\infty)\\), and so does its square root.",
-        "workingOut": "\\text{range of } f(g(x)) = (0, \\infty)"
+        "explanation": "As \\(x\\) ranges over \\((2, infty)\\), the inner value \\(\\dfrac{1}{x-2}\\) covers \\((0, infty)\\), and so does its square root.",
+        "workingOut": "\\text{range of } f(g(x)) = (0, infty)"
       },
       {
-        "explanation": "Form \\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}\\), which requires \\(x \\geq 0\\) and \\(\\sqrt{x} \\neq 2\\), i.e. \\(x \\neq 4\\). Its range: \\(\\sqrt{x} - 2\\) covers \\([-2, \\infty)\\setminus{0}\\), so the reciprocal covers \\((-\\infty, -\\tfrac{1}{2}] \\cup (0, \\infty)\\).",
-        "workingOut": "g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}, \\quad \\text{domain: } [0,\\infty)\\setminus{4}"
+        "explanation": "Form \\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}\\), which requires \\(x \\geq 0\\) and \\(\\sqrt{x} \\neq 2\\), i.e. \\(x \\neq 4\\). Its range: \\(\\sqrt{x} - 2\\) covers \\([-2, infty)\\setminus{0}\\), so the reciprocal covers \\((-\\infty, -\\tfrac{1}{2}] \\cup (0, infty)\\).",
+        "workingOut": "g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}, quad \\text{domain: } [0, infty)\\setminus{4}"
       },
       {
         "explanation": "Intersect the two domains and the two ranges to find what is valid for both composites.",
-        "workingOut": "\\text{Domain: } (2, \\infty), \\quad \\text{Range: } (0, \\infty) \\implies \\text{(D)}"
+        "workingOut": "\\text{Domain: } (2, infty), quad \\text{Range: } (0, infty) \\implies \\text{(D)}"
       }
     ]
   },
@@ -282,13 +282,13 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "source": "Cranbrook 2023 Trial Q8",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A particle is moving in a straight line such that its displacement $x$ metres at time $t$ seconds is given by $x = k\\cos(at + b)$, where $a$, $b$ and $k$ are constants. The particle is stationary when $t = \\dfrac{\\pi}{12}, \\dfrac{4\\pi}{12}, \\dfrac{7\\pi}{12}, \\ldots$ The initial acceleration of the particle is $8\\ \\text{ms}^{-2}$. What could be the values of $a$, $b$ and $k$?",
+    "q": "A particle is moving in a straight line such that its displacement $x$ metres at time $t$ seconds is given by $x = k\\cos(at + b)$, where $a$, $b$ and $k$ are constants. The particle is stationary when $t = \\dfrac{\\pi}{12}, dfrac{4\\pi}{12}, dfrac{7\\pi}{12}, ldots$ The initial acceleration of the particle is $8\\ \\text{ms}^{-2}$. What could be the values of $a$, $b$ and $k$?",
     "a": "3",
     "opts": [
-      "$a = 2,\\ b = -\\dfrac{\\pi}{3},\\ k = -1$",
-      "$a = 4,\\ b = \\dfrac{2\\pi}{3},\\ k = -1$",
-      "$a = 4,\\ b = -\\dfrac{\\pi}{3},\\ k = 1$",
-      "$a = 4,\\ b = -\\dfrac{\\pi}{3},\\ k = -1$"
+      "$a = 2, b = -\\dfrac{\\pi}{3}, k = -1$",
+      "$a = 4, b = \\dfrac{2\\pi}{3}, k = -1$",
+      "$a = 4, b = -\\dfrac{\\pi}{3}, k = 1$",
+      "$a = 4, b = -\\dfrac{\\pi}{3}, k = -1$"
     ],
     "h": "Stationary times are $\\dfrac{\\pi}{a}$ apart. Then test the initial acceleration $\\ddot{x}(0) = -ka^2\\cos b$ against $8$.",
     "s": "Stationary times are spaced $\\dfrac{4\\pi}{12} - \\dfrac{\\pi}{12} = \\dfrac{\\pi}{4}$ apart, so $\\dfrac{\\pi}{a} = \\dfrac{\\pi}{4}$ gives $a = 4$ (eliminating option A). Acceleration: $\\ddot{x}(0) = -16k\\cos b = 8$. Testing (D): $-16(-1)\\cos\\!\\left(-\\dfrac{\\pi}{3}\\right) = 16 \\times \\dfrac{1}{2} = 8$ ✓.",
@@ -327,23 +327,23 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       "$2$",
       "$1$"
     ],
-    "h": "Use the null factor law: solve $\\sin\\theta = \\dfrac{1}{2}$ and $\\tan\\theta = 1$ separately on $[0, \\pi]$.",
-    "s": "$\\sin\\theta = \\dfrac{1}{2}$ gives $\\theta = \\dfrac{\\pi}{6}, \\dfrac{5\\pi}{6}$ (two solutions). $\\tan\\theta = 1$ gives $\\theta = \\dfrac{\\pi}{4}$ only ($\\dfrac{5\\pi}{4}$ is outside $[0,\\pi]$). Total: 3 solutions.",
+    "h": "Use the null factor law: solve $\\sin\\theta = \\dfrac{1}{2}$ and $\\tan\\theta = 1$ separately on $[0, pi]$.",
+    "s": "$\\sin\\theta = \\dfrac{1}{2}$ gives $\\theta = \\dfrac{\\pi}{6}, dfrac{5\\pi}{6}$ (two solutions). $\\tan\\theta = 1$ gives $\\theta = \\dfrac{\\pi}{4}$ only ($\\dfrac{5\\pi}{4}$ is outside $[0, pi]$). Total: 3 solutions.",
     "solutionSteps": [
       {
         "explanation": "Apply the null factor law to split the product into two separate equations.",
         "workingOut": "\\sin\\theta = \\dfrac{1}{2} \\quad \\text{or} \\quad \\tan\\theta = 1"
       },
       {
-        "explanation": "Solve \\(\\sin\\theta = \\dfrac{1}{2}\\) on \\([0, \\pi]\\): sine is positive in the first and second quadrants with related angle \\(\\dfrac{\\pi}{6}\\).",
+        "explanation": "Solve \\(\\sin\\theta = \\dfrac{1}{2}\\) on \\([0, pi]\\): sine is positive in the first and second quadrants with related angle \\(\\dfrac{\\pi}{6}\\).",
         "workingOut": "\\theta = \\dfrac{\\pi}{6}, \\; \\dfrac{5\\pi}{6}"
       },
       {
-        "explanation": "Solve \\(\\tan\\theta = 1\\) on \\([0, \\pi]\\): the first-quadrant solution is \\(\\dfrac{\\pi}{4}\\); the next, \\(\\dfrac{5\\pi}{4}\\), lies outside the interval, and tangent is negative in the second quadrant.",
+        "explanation": "Solve \\(\\tan\\theta = 1\\) on \\([0, pi]\\): the first-quadrant solution is \\(\\dfrac{\\pi}{4}\\); the next, \\(\\dfrac{5\\pi}{4}\\), lies outside the interval, and tangent is negative in the second quadrant.",
         "workingOut": "\\theta = \\dfrac{\\pi}{4} \\text{ only}"
       },
       {
-        "explanation": "Count the distinct solutions: \\(\\dfrac{\\pi}{6}, \\dfrac{\\pi}{4}, \\dfrac{5\\pi}{6}\\) — three in total, option (B).",
+        "explanation": "Count the distinct solutions: \\(\\dfrac{\\pi}{6}, dfrac{\\pi}{4}, dfrac{5\\pi}{6}\\) — three in total, option (B).",
         "workingOut": "3 \\text{ solutions} \\implies \\text{(B)}"
       }
     ]
@@ -533,11 +533,11 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognise the composite structure \\(y = u^3\\) with \\(u = \\ln x\\), and apply the chain rule \\(\\dfrac{dy}{dx} = \\dfrac{dy}{du}\\cdot\\dfrac{du}{dx}\\).",
-        "workingOut": "y = u^3, \\quad u = \\ln x"
+        "workingOut": "y = u^3, quad u = \\ln x"
       },
       {
         "explanation": "Differentiate the outer power (bring down the 3, reduce the power) and the inner logarithm (derivative \\(\\tfrac{1}{x}\\)).",
-        "workingOut": "\\dfrac{dy}{du} = 3u^2, \\quad \\dfrac{du}{dx} = \\dfrac{1}{x}"
+        "workingOut": "\\dfrac{dy}{du} = 3u^2, quad \\dfrac{du}{dx} = \\dfrac{1}{x}"
       },
       {
         "explanation": "Multiply and substitute back \\(u = \\ln x\\).",
@@ -649,15 +649,15 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "source": "Cranbrook 2023 Trial Q16(b)",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "Hence, or otherwise, find the area bounded by the curve $y = f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x + \\pi)\\right)$ and the $x$-axis in the interval $[-\\pi, \\pi]$.",
+    "q": "Hence, or otherwise, find the area bounded by the curve $y = f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x + \\pi)\\right)$ and the $x$-axis in the interval $[-\\pi, pi]$.",
     "a": "$4$ square units",
     "opts": [],
-    "h": "From part (a), $f(x) = -\\cos\\dfrac{x}{2}$, which is non-positive on $[-\\pi, \\pi]$: the area is the absolute value of the integral.",
-    "s": "Since $f(x) = -\\cos\\dfrac{x}{2} \\leq 0$ on $[-\\pi, \\pi]$, the region lies below the axis.\n\nArea $= \\left|\\displaystyle\\int_{-\\pi}^{\\pi} -\\cos\\dfrac{x}{2}\\,dx\\right| = \\displaystyle\\int_{-\\pi}^{\\pi} \\cos\\dfrac{x}{2}\\,dx = 2\\left[2\\sin\\dfrac{x}{2}\\right]_0^{\\pi} = 4$.",
+    "h": "From part (a), $f(x) = -\\cos\\dfrac{x}{2}$, which is non-positive on $[-\\pi, pi]$: the area is the absolute value of the integral.",
+    "s": "Since $f(x) = -\\cos\\dfrac{x}{2} \\leq 0$ on $[-\\pi, pi]$, the region lies below the axis.\n\nArea $= \\left|\\displaystyle\\int_{-\\pi}^{\\pi} -\\cos\\dfrac{x}{2}\\,dx\\right| = \\displaystyle\\int_{-\\pi}^{\\pi} \\cos\\dfrac{x}{2}\\,dx = 2\\left[2\\sin\\dfrac{x}{2}\\right]_0^{\\pi} = 4$.",
     "solutionSteps": [
       {
-        "explanation": "Use part (a): \\(f(x) = -\\cos\\dfrac{x}{2}\\). On \\([-\\pi, \\pi]\\) the argument \\(\\dfrac{x}{2}\\) stays within \\(\\left[-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right]\\) where cosine is non-negative, so \\(f(x) \\leq 0\\): the curve lies below the axis and the area is the magnitude of the integral.",
-        "workingOut": "f(x) = -\\cos\\dfrac{x}{2} \\leq 0 \\text{ on } [-\\pi, \\pi]"
+        "explanation": "Use part (a): \\(f(x) = -\\cos\\dfrac{x}{2}\\). On \\([-\\pi, pi]\\) the argument \\(\\dfrac{x}{2}\\) stays within \\(\\left[-\\dfrac{\\pi}{2}, dfrac{\\pi}{2}\\right]\\) where cosine is non-negative, so \\(f(x) \\leq 0\\): the curve lies below the axis and the area is the magnitude of the integral.",
+        "workingOut": "f(x) = -\\cos\\dfrac{x}{2} \\leq 0 \\text{ on } [-\\pi, pi]"
       },
       {
         "explanation": "Write the area as the integral of \\(|f(x)| = \\cos\\dfrac{x}{2}\\), and use even symmetry to double the half-interval.",
@@ -949,18 +949,18 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute the means of the week numbers and the income values.",
-        "workingOut": "\\bar{n} = 3, \\quad \\bar{y} = \\dfrac{150+250+250+350+500}{5} = 300"
+        "workingOut": "\\bar{n} = 3, quad \\bar{y} = \\dfrac{150+250+250+350+500}{5} = 300"
       },
       {
         "explanation": "Compute the sums needed for the gradient.",
-        "workingOut": "\\sum ny = 150 + 500 + 750 + 1400 + 2500 = 5300, \\quad \\sum n^2 = 55"
+        "workingOut": "\\sum ny = 150 + 500 + 750 + 1400 + 2500 = 5300, quad \\sum n^2 = 55"
       },
       {
         "explanation": "Apply the least-squares gradient formula.",
         "workingOut": "b = \\dfrac{5300 - 5(3)(300)}{55 - 5(9)} = \\dfrac{800}{10} = 80"
       },
       {
-        "explanation": "Find the intercept using the mean point \\((\\bar{n}, \\bar{y})\\), which always lies on the regression line.",
+        "explanation": "Find the intercept using the mean point \\((\\bar{n}, bar{y})\\), which always lies on the regression line.",
         "workingOut": "a = 300 - 80(3) = 60 \\implies \\text{Income} = 80n + 60"
       },
       {
@@ -1021,7 +1021,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The volume is the integral of the flow rate; estimate it numerically over \\([0,3]\\) with three strips of width \\(h = 1\\).",
-        "workingOut": "\\text{Volume} = \\int_0^3 V\\,dt, \\quad h = 1"
+        "workingOut": "\\text{Volume} = \\int_0^3 V\\,dt, quad h = 1"
       },
       {
         "explanation": "Write the trapezoidal rule: end ordinates weighted once, interior ordinates twice.",
@@ -1097,7 +1097,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List the surfaces of the closed cylinder: two circular ends of radius \\(r\\) and the curved lateral surface.",
-        "workingOut": "\\text{ends: } 2\\pi r^2, \\quad \\text{curved: } 2\\pi r h"
+        "workingOut": "\\text{ends: } 2\\pi r^2, quad \\text{curved: } 2\\pi r h"
       },
       {
         "explanation": "Add the parts to express the total surface area.",
@@ -1347,7 +1347,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The pole is vertical, so both triangles are right-angled at \\(M\\). Express the wire lengths by Pythagoras.",
-        "workingOut": "TA = \\sqrt{x^2 + 120^2}, \\qquad TB = \\sqrt{x^2 + 200^2}"
+        "workingOut": "TA = \\sqrt{x^2 + 120^2}, qquad TB = \\sqrt{x^2 + 200^2}"
       },
       {
         "explanation": "Write the total-length constraint with \\(u = TA\\), \\(v = TB\\).",
@@ -1479,7 +1479,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Since there is no turn-around, the distance equals \\(|x(2) - x(0)|\\). Evaluate both positions.",
-        "workingOut": "x(0) = 3\\ln 8, \\qquad x(2) = 3\\ln 12 - 2"
+        "workingOut": "x(0) = 3\\ln 8, qquad x(2) = 3\\ln 12 - 2"
       },
       {
         "explanation": "Compute the displacement, combining logs with \\(3\\ln\\frac{3}{2} = \\ln\\frac{27}{8}\\).",
@@ -1602,27 +1602,27 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "q": "Sketch the graph of $y = g(x) = 2x\\left(1 - \\dfrac{x}{3}\\right)^3 + 1$ in the interval $[0, 5]$, showing the stationary points, the $y$-intercept and the approximate location of the $x$-intercept.",
     "a": "Curve starts at $(0, 1)$, rises to the local maximum $\\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right)$, falls through the horizontal point of inflection $(3, 1)$, continues falling and crosses the $x$-axis between $x = 4$ and $x = 5$, ending at $\\left(5, -\\dfrac{53}{27}\\right)$.",
     "opts": [],
-    "h": "Plot $(0,1)$, local max $\\left(\\frac{3}{4}, \\frac{209}{128}\\right)$, horizontal POI $(3,1)$, and the $x$-intercept between 4 and 5, then join smoothly.",
-    "s": "Key features: $y$-intercept $(0, 1)$; local maximum $\\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right) \\approx (0.75, 1.63)$; horizontal point of inflection $(3, 1)$ where the curve momentarily flattens; crossing the $x$-axis between $x = 4$ and $x = 5$ (from part (b)); $g(5) = -\\dfrac{53}{27} \\approx -1.96$.",
+    "h": "Plot $(0,1)$, local max $\\left(\\frac{3}{4}, frac{209}{128}\\right)$, horizontal POI $(3,1)$, and the $x$-intercept between 4 and 5, then join smoothly.",
+    "s": "Key features: $y$-intercept $(0, 1)$; local maximum $\\left(\\dfrac{3}{4}, dfrac{209}{128}\\right) \\approx (0.75, 1.63)$; horizontal point of inflection $(3, 1)$ where the curve momentarily flattens; crossing the $x$-axis between $x = 4$ and $x = 5$ (from part (b)); $g(5) = -\\dfrac{53}{27} \\approx -1.96$.",
     "solutionSteps": [
       {
         "explanation": "Mark the \\(y\\)-intercept by evaluating \\(g(0)\\).",
         "workingOut": "g(0) = 1 \\implies (0, 1)"
       },
       {
-        "explanation": "Mark the stationary points from part (a): local maximum \\(\\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right) \\approx (0.75, 1.63)\\) and the horizontal point of inflection \\((3, 1)\\).",
-        "workingOut": "\\left(\\tfrac{3}{4}, \\tfrac{209}{128}\\right) \\text{ max}, \\quad (3, 1) \\text{ horizontal POI}"
+        "explanation": "Mark the stationary points from part (a): local maximum \\(\\left(\\dfrac{3}{4}, dfrac{209}{128}\\right) \\approx (0.75, 1.63)\\) and the horizontal point of inflection \\((3, 1)\\).",
+        "workingOut": "\\left(\\tfrac{3}{4}, tfrac{209}{128}\\right) \\text{ max}, quad (3, 1) \\text{ horizontal POI}"
       },
       {
         "explanation": "Mark the approximate \\(x\\)-intercept between 4 and 5 (part (b)) and the endpoint \\(g(5) \\approx -1.96\\).",
-        "workingOut": "x\\text{-intercept} \\in (4, 5), \\quad g(5) = -\\tfrac{53}{27}"
+        "workingOut": "x\\text{-intercept} \\in (4, 5), quad g(5) = -\\tfrac{53}{27}"
       },
       {
-        "explanation": "Join smoothly: rising on \\(\\left(0, \\dfrac{3}{4}\\right)\\), falling on \\(\\left(\\dfrac{3}{4}, 3\\right)\\), flattening at \\((3,1)\\), then falling through the axis to \\((5, -1.96)\\).",
+        "explanation": "Join smoothly: rising on \\(\\left(0, dfrac{3}{4}\\right)\\), falling on \\(\\left(\\dfrac{3}{4}, 3\\right)\\), flattening at \\((3,1)\\), then falling through the axis to \\((5, -1.96)\\).",
         "workingOut": "(0,1) \\nearrow (0.75, 1.63) \\searrow (3,1) \\searrow (5, -1.96)"
       },
       {
-        "explanation": "Sketch \\(y = 2x\\left(1 - \\dfrac{x}{3}\\right)^3 + 1\\) on \\([0, 5]\\): start at \\((0,1)\\), rise to the local maximum \\(\\left(\\tfrac{3}{4}, \\tfrac{209}{128}\\right)\\), fall through the horizontal point of inflection \\((3, 1)\\), then cross the \\(x\\)-axis between \\(4\\) and \\(5\\), ending near \\((5, -1.96)\\).",
+        "explanation": "Sketch \\(y = 2x\\left(1 - \\dfrac{x}{3}\\right)^3 + 1\\) on \\([0, 5]\\): start at \\((0,1)\\), rise to the local maximum \\(\\left(\\tfrac{3}{4}, tfrac{209}{128}\\right)\\), fall through the horizontal point of inflection \\((3, 1)\\), then cross the \\(x\\)-axis between \\(4\\) and \\(5\\), ending near \\((5, -1.96)\\).",
         "workingOut": "",
         "graphData": {
           "jsxGraph": {
@@ -1807,7 +1807,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "a": "$x = 0, \\dfrac{\\pi}{3}, \\pi, \\dfrac{5\\pi}{3}, 2\\pi$",
     "opts": [],
     "h": "Set $2\\sin x = \\dfrac{\\sin x}{\\cos x}$, multiply by $\\cos x$, and bring everything to one side before factoring.",
-    "s": "At intersections: $2\\sin x = \\tan x = \\dfrac{\\sin x}{\\cos x}$. Multiplying by $\\cos x$: $2\\sin x\\cos x = \\sin x$, so $\\sin x(2\\cos x - 1) = 0$. ✓\n\n$\\sin x = 0$: $x = 0, \\pi, 2\\pi$.\n$\\cos x = \\dfrac{1}{2}$: $x = \\dfrac{\\pi}{3}, \\dfrac{5\\pi}{3}$.\n\nAll: $x = 0, \\dfrac{\\pi}{3}, \\pi, \\dfrac{5\\pi}{3}, 2\\pi$.",
+    "s": "At intersections: $2\\sin x = \\tan x = \\dfrac{\\sin x}{\\cos x}$. Multiplying by $\\cos x$: $2\\sin x\\cos x = \\sin x$, so $\\sin x(2\\cos x - 1) = 0$. ✓\n\n$\\sin x = 0$: $x = 0, pi, 2\\pi$.\n$\\cos x = \\dfrac{1}{2}$: $x = \\dfrac{\\pi}{3}, dfrac{5\\pi}{3}$.\n\nAll: $x = 0, dfrac{\\pi}{3}, pi, dfrac{5\\pi}{3}, 2\\pi$.",
     "solutionSteps": [
       {
         "explanation": "Equate the two functions at an intersection and write tangent as sine over cosine.",
@@ -1823,7 +1823,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Solve \\(\\sin x = 0\\) on \\([0, 2\\pi]\\).",
-        "workingOut": "x = 0,\\ \\pi,\\ 2\\pi"
+        "workingOut": "x = 0,\\ \\pi, 2\\pi"
       },
       {
         "explanation": "Solve \\(\\cos x = \\dfrac{1}{2}\\) on \\([0, 2\\pi]\\): cosine is positive in the first and fourth quadrants.",
@@ -1831,7 +1831,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Collect all solutions in increasing order.",
-        "workingOut": "x = 0,\\ \\dfrac{\\pi}{3},\\ \\pi,\\ \\dfrac{5\\pi}{3},\\ 2\\pi"
+        "workingOut": "x = 0,\\ \\dfrac{\\pi}{3},\\ \\pi,\\ \\dfrac{5\\pi}{3}, 2\\pi"
       }
     ]
   },
@@ -1863,11 +1863,11 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "a": "$1 - \\ln 2$ square units",
     "opts": [],
     "h": "The curves intersect at $x = 0$ and $x = \\dfrac{\\pi}{3}$, with $2\\sin x$ on top. Note $\\int \\tan x\\,dx = -\\ln|\\cos x|$.",
-    "s": "On $\\left(0, \\dfrac{\\pi}{3}\\right)$, $2\\sin x > \\tan x$ (e.g. at $x = \\dfrac{\\pi}{6}$: $1 > 0.577$).\n\nArea $= \\displaystyle\\int_0^{\\pi/3} (2\\sin x - \\tan x)\\,dx = \\Bigl[-2\\cos x + \\ln|\\cos x|\\Bigr]_0^{\\pi/3}$\n\n$= \\left(-1 + \\ln\\dfrac{1}{2}\\right) - (-2 + 0) = 1 - \\ln 2$.",
+    "s": "On $\\left(0, dfrac{\\pi}{3}\\right)$, $2\\sin x > \\tan x$ (e.g. at $x = \\dfrac{\\pi}{6}$: $1 > 0.577$).\n\nArea $= \\displaystyle\\int_0^{\\pi/3} (2\\sin x - \\tan x)\\,dx = \\Bigl[-2\\cos x + \\ln|\\cos x|\\Bigr]_0^{\\pi/3}$\n\n$= \\left(-1 + \\ln\\dfrac{1}{2}\\right) - (-2 + 0) = 1 - \\ln 2$.",
     "solutionSteps": [
       {
-        "explanation": "Identify the bounded region: the curves intersect at \\(x = 0\\) and \\(x = \\dfrac{\\pi}{3}\\) (from part (b)) within \\(\\left(0, \\dfrac{\\pi}{2}\\right)\\). Test a point to find the top curve: at \\(x = \\dfrac{\\pi}{6}\\), \\(2\\sin x = 1 > \\tan x \\approx 0.58\\).",
-        "workingOut": "\\left(0, \\tfrac{\\pi}{3}\\right): 2\\sin x \\text{ on top}"
+        "explanation": "Identify the bounded region: the curves intersect at \\(x = 0\\) and \\(x = \\dfrac{\\pi}{3}\\) (from part (b)) within \\(\\left(0, dfrac{\\pi}{2}\\right)\\). Test a point to find the top curve: at \\(x = \\dfrac{\\pi}{6}\\), \\(2\\sin x = 1 > \\tan x \\approx 0.58\\).",
+        "workingOut": "\\left(0, tfrac{\\pi}{3}\\right): 2\\sin x \\text{ on top}"
       },
       {
         "explanation": "Set up the integral of top minus bottom, with antiderivatives \\(\\int 2\\sin x\\,dx = -2\\cos x\\) and \\(\\int \\tan x\\,dx = -\\ln|\\cos x|\\).",
@@ -1975,7 +1975,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Collect the values at \\(t = 2\\): \\(g(2) = 4\\) watts, \\(g'(2) = 5\\) watts/second, \\(f(4) = 2\\), \\(f'(4) = 3\\).",
-        "workingOut": "g(2) = 4, \\quad g'(2) = 5, \\quad f(4) = 2, \\quad f'(4) = 3"
+        "workingOut": "g(2) = 4, quad g'(2) = 5, quad f(4) = 2, quad f'(4) = 3"
       },
       {
         "explanation": "Substitute all values.",

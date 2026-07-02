@@ -111,7 +111,7 @@ export const Y7_CH2C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List prime numbers in ascending order: 2, 3, 5, 7, 11, ...",
-        "workingOut": "\\text{Primes} = 2, 3, 5, 7, \\dots"
+        "workingOut": "\\text{Primes} = 2, 3, 5, 7, dots"
       },
       {
         "explanation": "Find the first two primes whose difference is exactly 1.",
@@ -131,7 +131,7 @@ export const Y7_CH2C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List prime numbers: 2, 3, 5, 7, 11, ...",
-        "workingOut": "\\text{Primes} = 2, 3, 5, 7, \\dots"
+        "workingOut": "\\text{Primes} = 2, 3, 5, 7, dots"
       },
       {
         "explanation": "Find the first pair with a difference of 2. (Note: 5 - 2 = 3 which is not prime; 3 and 5 are both prime and differ by 2).",

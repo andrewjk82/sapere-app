@@ -1,5 +1,4 @@
 export const Y10_CH15_QUESTIONS = [
-  // Q1
   {
     "id": "y10-15a-q1",
     "type": "short_answer",
@@ -10,7 +9,7 @@ export const Y10_CH15_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the number of favourable outcomes (blue marbles) and the total number of marbles.",
-        "workingOut": "\\text{Number of blue marbles} = 4, \\quad \\text{Total marbles} = 15"
+        "workingOut": "\\text{Number of blue marbles} = 4, quad \\text{Total marbles} = 15"
       },
       {
         "explanation": "Apply the probability formula: \\(P(\\text{event}) = \\frac{\\text{Number of favourable outcomes}}{\\text{Total number of outcomes}}\\).",
@@ -19,7 +18,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q2
   {
     "id": "y10-15a-q2",
     "type": "short_answer",
@@ -43,7 +41,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q3
   {
     "id": "y10-15a-q3",
     "type": "short_answer",
@@ -67,7 +64,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q4
   {
     "id": "y10-15a-q4",
     "type": "short_answer",
@@ -91,7 +87,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q5
   {
     "id": "y10-15a-q5",
     "type": "short_answer",
@@ -102,7 +97,7 @@ export const Y10_CH15_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the number of red balls (favourable outcomes) and the total number of balls in the bag.",
-        "workingOut": "\\text{Number of red balls} = 5, \\quad \\text{Total balls} = 13"
+        "workingOut": "\\text{Number of red balls} = 5, quad \\text{Total balls} = 13"
       },
       {
         "explanation": "Compute the probability.",
@@ -111,7 +106,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q6
   {
     "id": "y10-15a-q6",
     "type": "short_answer",
@@ -123,29 +117,194 @@ export const Y10_CH15_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 200,
-        "boundingbox": [-1, 6, 9, 0],
-        "boardOptions": { "keepaspectratio": true },
+        "boundingbox": [
+          -1,
+          6,
+          9,
+          0
+        ],
+        "boardOptions": {
+          "keepaspectratio": true
+        },
         "elements": [
-          { "type": "text", "coords": [0, 4.8], "content": "Box 1:" },
-          { "type": "circle", "id": "b1c1", "center": [1.5, 4.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [1.4, 4.0], "content": "3" },
-          { "type": "circle", "id": "b1c2", "center": [3.0, 4.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [2.9, 4.0], "content": "4" },
-          { "type": "circle", "id": "b1c3", "center": [4.5, 4.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [4.4, 4.0], "content": "8" },
-          { "type": "circle", "id": "b1c4", "center": [6.0, 4.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [5.9, 4.0], "content": "9" },
-          { "type": "text", "coords": [0, 1.8], "content": "Box 2:" },
-          { "type": "circle", "id": "b2c1", "center": [1.5, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [1.4, 1.0], "content": "4" },
-          { "type": "circle", "id": "b2c2", "center": [3.0, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [2.9, 1.0], "content": "5" },
-          { "type": "circle", "id": "b2c3", "center": [4.5, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [4.4, 1.0], "content": "6" },
-          { "type": "circle", "id": "b2c4", "center": [6.0, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [5.9, 1.0], "content": "7" },
-          { "type": "circle", "id": "b2c5", "center": [7.5, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [7.4, 1.0], "content": "8" }
+          {
+            "type": "text",
+            "coords": [
+              0,
+              4.8
+            ],
+            "content": "Box 1:"
+          },
+          {
+            "type": "circle",
+            "id": "b1c1",
+            "center": [
+              1.5,
+              4
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              1.4,
+              4
+            ],
+            "content": "3"
+          },
+          {
+            "type": "circle",
+            "id": "b1c2",
+            "center": [
+              3,
+              4
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              2.9,
+              4
+            ],
+            "content": "4"
+          },
+          {
+            "type": "circle",
+            "id": "b1c3",
+            "center": [
+              4.5,
+              4
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4.4,
+              4
+            ],
+            "content": "8"
+          },
+          {
+            "type": "circle",
+            "id": "b1c4",
+            "center": [
+              6,
+              4
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              5.9,
+              4
+            ],
+            "content": "9"
+          },
+          {
+            "type": "text",
+            "coords": [
+              0,
+              1.8
+            ],
+            "content": "Box 2:"
+          },
+          {
+            "type": "circle",
+            "id": "b2c1",
+            "center": [
+              1.5,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              1.4,
+              1
+            ],
+            "content": "4"
+          },
+          {
+            "type": "circle",
+            "id": "b2c2",
+            "center": [
+              3,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              2.9,
+              1
+            ],
+            "content": "5"
+          },
+          {
+            "type": "circle",
+            "id": "b2c3",
+            "center": [
+              4.5,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4.4,
+              1
+            ],
+            "content": "6"
+          },
+          {
+            "type": "circle",
+            "id": "b2c4",
+            "center": [
+              6,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              5.9,
+              1
+            ],
+            "content": "7"
+          },
+          {
+            "type": "circle",
+            "id": "b2c5",
+            "center": [
+              7.5,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              7.4,
+              1
+            ],
+            "content": "8"
+          }
         ]
       }
     },
@@ -211,7 +370,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q7
   {
     "id": "y10-15a-q7",
     "type": "short_answer",
@@ -223,23 +381,140 @@ export const Y10_CH15_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 180,
-        "boundingbox": [-1, 5, 7, 0],
-        "boardOptions": { "keepaspectratio": true },
+        "boundingbox": [
+          -1,
+          5,
+          7,
+          0
+        ],
+        "boardOptions": {
+          "keepaspectratio": true
+        },
         "elements": [
-          { "type": "text", "coords": [0, 3.8], "content": "Box 1:" },
-          { "type": "circle", "id": "b1c1", "center": [1.5, 3.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [1.4, 3.0], "content": "2" },
-          { "type": "circle", "id": "b1c2", "center": [3.0, 3.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [2.9, 3.0], "content": "3" },
-          { "type": "circle", "id": "b1c3", "center": [4.5, 3.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [4.4, 3.0], "content": "4" },
-          { "type": "text", "coords": [0, 1.8], "content": "Box 2:" },
-          { "type": "circle", "id": "b2c1", "center": [1.5, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [1.4, 1.0], "content": "3" },
-          { "type": "circle", "id": "b2c2", "center": [3.0, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [2.9, 1.0], "content": "5" },
-          { "type": "circle", "id": "b2c3", "center": [4.5, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [4.4, 1.0], "content": "8" }
+          {
+            "type": "text",
+            "coords": [
+              0,
+              3.8
+            ],
+            "content": "Box 1:"
+          },
+          {
+            "type": "circle",
+            "id": "b1c1",
+            "center": [
+              1.5,
+              3
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              1.4,
+              3
+            ],
+            "content": "2"
+          },
+          {
+            "type": "circle",
+            "id": "b1c2",
+            "center": [
+              3,
+              3
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              2.9,
+              3
+            ],
+            "content": "3"
+          },
+          {
+            "type": "circle",
+            "id": "b1c3",
+            "center": [
+              4.5,
+              3
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4.4,
+              3
+            ],
+            "content": "4"
+          },
+          {
+            "type": "text",
+            "coords": [
+              0,
+              1.8
+            ],
+            "content": "Box 2:"
+          },
+          {
+            "type": "circle",
+            "id": "b2c1",
+            "center": [
+              1.5,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              1.4,
+              1
+            ],
+            "content": "3"
+          },
+          {
+            "type": "circle",
+            "id": "b2c2",
+            "center": [
+              3,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              2.9,
+              1
+            ],
+            "content": "5"
+          },
+          {
+            "type": "circle",
+            "id": "b2c3",
+            "center": [
+              4.5,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4.4,
+              1
+            ],
+            "content": "8"
+          }
         ]
       }
     },
@@ -297,7 +572,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q8
   {
     "id": "y10-15a-q8",
     "type": "short_answer",
@@ -309,25 +583,158 @@ export const Y10_CH15_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 180,
-        "boundingbox": [-1, 5, 7, 0],
-        "boardOptions": { "keepaspectratio": true },
+        "boundingbox": [
+          -1,
+          5,
+          7,
+          0
+        ],
+        "boardOptions": {
+          "keepaspectratio": true
+        },
         "elements": [
-          { "type": "text", "coords": [0, 3.8], "content": "Box 1:" },
-          { "type": "circle", "id": "b1c1", "center": [1.5, 3.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [1.4, 3.0], "content": "2" },
-          { "type": "circle", "id": "b1c2", "center": [3.0, 3.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [2.9, 3.0], "content": "3" },
-          { "type": "circle", "id": "b1c3", "center": [4.5, 3.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [4.4, 3.0], "content": "4" },
-          { "type": "circle", "id": "b1c4", "center": [6.0, 3.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [5.9, 3.0], "content": "5" },
-          { "type": "text", "coords": [0, 1.8], "content": "Box 2:" },
-          { "type": "circle", "id": "b2c1", "center": [1.5, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [1.4, 1.0], "content": "2" },
-          { "type": "circle", "id": "b2c2", "center": [3.0, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [2.9, 1.0], "content": "3" },
-          { "type": "circle", "id": "b2c3", "center": [4.5, 1.0], "radius": 0.6, "color": "slate" },
-          { "type": "text", "coords": [4.4, 1.0], "content": "4" }
+          {
+            "type": "text",
+            "coords": [
+              0,
+              3.8
+            ],
+            "content": "Box 1:"
+          },
+          {
+            "type": "circle",
+            "id": "b1c1",
+            "center": [
+              1.5,
+              3
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              1.4,
+              3
+            ],
+            "content": "2"
+          },
+          {
+            "type": "circle",
+            "id": "b1c2",
+            "center": [
+              3,
+              3
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              2.9,
+              3
+            ],
+            "content": "3"
+          },
+          {
+            "type": "circle",
+            "id": "b1c3",
+            "center": [
+              4.5,
+              3
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4.4,
+              3
+            ],
+            "content": "4"
+          },
+          {
+            "type": "circle",
+            "id": "b1c4",
+            "center": [
+              6,
+              3
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              5.9,
+              3
+            ],
+            "content": "5"
+          },
+          {
+            "type": "text",
+            "coords": [
+              0,
+              1.8
+            ],
+            "content": "Box 2:"
+          },
+          {
+            "type": "circle",
+            "id": "b2c1",
+            "center": [
+              1.5,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              1.4,
+              1
+            ],
+            "content": "2"
+          },
+          {
+            "type": "circle",
+            "id": "b2c2",
+            "center": [
+              3,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              2.9,
+              1
+            ],
+            "content": "3"
+          },
+          {
+            "type": "circle",
+            "id": "b2c3",
+            "center": [
+              4.5,
+              1
+            ],
+            "radius": 0.6,
+            "color": "slate"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4.4,
+              1
+            ],
+            "content": "4"
+          }
         ]
       }
     },
@@ -393,7 +800,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q9
   {
     "id": "y10-15a-q9",
     "type": "short_answer",
@@ -471,7 +877,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q10
   {
     "id": "y10-15a-q10",
     "type": "short_answer",
@@ -577,7 +982,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q11
   {
     "id": "y10-15a-q11",
     "type": "short_answer",
@@ -643,7 +1047,6 @@ export const Y10_CH15_QUESTIONS = [
     ],
     "t": "Review of probability"
   },
-  // Q12
   {
     "id": "y10-15a-q12",
     "type": "short_answer",

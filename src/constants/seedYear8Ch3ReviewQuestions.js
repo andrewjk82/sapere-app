@@ -1052,7 +1052,7 @@ export const Y8_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Prime factors",
-        "workingOut": "33 = 3 \\times 11, \\quad 10 = 2 \\times 5"
+        "workingOut": "33 = 3 \\times 11, quad 10 = 2 \\times 5"
       },
       {
         "explanation": "Order primes",
@@ -1077,7 +1077,7 @@ export const Y8_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Prime factors",
-        "workingOut": "252 = 4 \\times 63 = 2^2 \\times 3^2 \\times 7, \\quad 10 = 2 \\times 5"
+        "workingOut": "252 = 4 \\times 63 = 2^2 \\times 3^2 \\times 7, quad 10 = 2 \\times 5"
       },
       {
         "explanation": "Combine and order",
@@ -1131,7 +1131,7 @@ export const Y8_CH3F_QUESTIONS = [
       },
       {
         "explanation": "Prime factors",
-        "workingOut": "117 = 9 \\times 13 = 3^2 \\times 13, \\quad 10 = 2 \\times 5"
+        "workingOut": "117 = 9 \\times 13 = 3^2 \\times 13, quad 10 = 2 \\times 5"
       },
       {
         "explanation": "Combine and order",

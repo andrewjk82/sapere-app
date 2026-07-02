@@ -16,7 +16,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Substitute the given gradient and y-intercept.",
-        "workingOut": "m = 3, \\quad c = 5 \\implies y = 3x + 5"
+        "workingOut": "m = 3, quad c = 5 \\implies y = 3x + 5"
       }
     ],
     "graphData": null
@@ -38,7 +38,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Substitute the given gradient and y-intercept.",
-        "workingOut": "m = 4, \\quad c = 6 \\implies y = 4x + 6"
+        "workingOut": "m = 4, quad c = 6 \\implies y = 4x + 6"
       }
     ],
     "graphData": null
@@ -60,7 +60,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Substitute the given gradient and y-intercept.",
-        "workingOut": "m = -3, \\quad c = 2 \\implies y = -3x + 2"
+        "workingOut": "m = -3, quad c = 2 \\implies y = -3x + 2"
       }
     ],
     "graphData": null
@@ -82,7 +82,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Substitute the given gradient and y-intercept.",
-        "workingOut": "m = -1, \\quad c = 4 \\implies y = -x + 4"
+        "workingOut": "m = -1, quad c = 4 \\implies y = -x + 4"
       }
     ],
     "graphData": null
@@ -104,7 +104,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Substitute the given gradient and y-intercept.",
-        "workingOut": "m = \\frac{3}{4}, \\quad c = 2 \\implies y = 3/4x + 2"
+        "workingOut": "m = \\frac{3}{4}, quad c = 2 \\implies y = 3/4x + 2"
       }
     ],
     "graphData": null
@@ -126,7 +126,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Substitute the given gradient and y-intercept.",
-        "workingOut": "m = -\\frac{2}{5}, \\quad c = 0 \\implies y = -2/5x"
+        "workingOut": "m = -\\frac{2}{5}, quad c = 0 \\implies y = -2/5x"
       }
     ],
     "graphData": null
@@ -144,7 +144,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = 3, \\quad c = 2"
+        "workingOut": "m = 3, quad c = 2"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -183,7 +183,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = 2, \\quad c = 5"
+        "workingOut": "m = 2, quad c = 5"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -222,7 +222,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = -3, \\quad c = 4"
+        "workingOut": "m = -3, quad c = 4"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -261,7 +261,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = -2, \\quad c = 2"
+        "workingOut": "m = -2, quad c = 2"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -300,7 +300,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = -4, \\quad c = -3"
+        "workingOut": "m = -4, quad c = -3"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -339,7 +339,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = -3, \\quad c = -5"
+        "workingOut": "m = -3, quad c = -5"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -378,7 +378,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = \\frac{1}{3}, \\quad c = -3"
+        "workingOut": "m = \\frac{1}{3}, quad c = -3"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -417,7 +417,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = \\frac{3}{4}, \\quad c = 2"
+        "workingOut": "m = \\frac{3}{4}, quad c = 2"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -456,7 +456,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = -3, \\quad c = 0"
+        "workingOut": "m = -3, quad c = 0"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -495,7 +495,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = -5, \\quad c = 0"
+        "workingOut": "m = -5, quad c = 0"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -534,7 +534,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = -4, \\quad c = 2"
+        "workingOut": "m = -4, quad c = 2"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -573,7 +573,7 @@ export const Y9_CH11D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify gradient and y-intercept.",
-        "workingOut": "m = -6, \\quad c = 3"
+        "workingOut": "m = -6, quad c = 3"
       },
       {
         "explanation": "Find a second point by substituting x.",
@@ -1230,7 +1230,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = -3, \\quad c = 12"
+        "workingOut": "m = -3, quad c = 12"
       }
     ],
     "graphData": null
@@ -1252,7 +1252,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = -4, \\quad c = 3"
+        "workingOut": "m = -4, quad c = 3"
       }
     ],
     "graphData": null
@@ -1274,7 +1274,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = 2, \\quad c = -4"
+        "workingOut": "m = 2, quad c = -4"
       }
     ],
     "graphData": null
@@ -1296,7 +1296,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = \\frac{5}{2}, \\quad c = -5"
+        "workingOut": "m = \\frac{5}{2}, quad c = -5"
       }
     ],
     "graphData": null
@@ -1318,7 +1318,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = \\frac{3}{4}, \\quad c = 2"
+        "workingOut": "m = \\frac{3}{4}, quad c = 2"
       }
     ],
     "graphData": null
@@ -1340,7 +1340,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = \\frac{5}{3}, \\quad c = -3"
+        "workingOut": "m = \\frac{5}{3}, quad c = -3"
       }
     ],
     "graphData": null
@@ -1362,7 +1362,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = \\frac{1}{3}, \\quad c = 2"
+        "workingOut": "m = \\frac{1}{3}, quad c = 2"
       }
     ],
     "graphData": null
@@ -1384,7 +1384,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = \\frac{1}{4}, \\quad c = -2"
+        "workingOut": "m = \\frac{1}{4}, quad c = -2"
       }
     ],
     "graphData": null
@@ -1406,7 +1406,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = -\\frac{1}{3}, \\quad c = 0"
+        "workingOut": "m = -\\frac{1}{3}, quad c = 0"
       }
     ],
     "graphData": null
@@ -1428,7 +1428,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = -\\frac{1}{5}, \\quad c = 0"
+        "workingOut": "m = -\\frac{1}{5}, quad c = 0"
       }
     ],
     "graphData": null
@@ -1450,7 +1450,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = -4, \\quad c = 0"
+        "workingOut": "m = -4, quad c = 0"
       }
     ],
     "graphData": null
@@ -1472,7 +1472,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Read the gradient (m) and y-intercept (c).",
-        "workingOut": "m = \\frac{1}{3}, \\quad c = 0"
+        "workingOut": "m = \\frac{1}{3}, quad c = 0"
       }
     ],
     "graphData": null

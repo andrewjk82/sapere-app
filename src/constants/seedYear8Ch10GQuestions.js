@@ -99,7 +99,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by \\(6\\).",
-        "workingOut": "6 \\div 6 = 1, \\quad 18 \\div 6 = 3"
+        "workingOut": "6 \\div 6 = 1, quad 18 \\div 6 = 3"
       }
     ],
     "graphData": null
@@ -120,7 +120,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by \\(2\\).",
-        "workingOut": "26 \\div 2 = 13, \\quad 6 \\div 2 = 3"
+        "workingOut": "26 \\div 2 = 13, quad 6 \\div 2 = 3"
       }
     ],
     "graphData": null
@@ -141,7 +141,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by \\(15\\) (their HCF).",
-        "workingOut": "15 \\div 15 = 1, \\quad 45 \\div 15 = 3"
+        "workingOut": "15 \\div 15 = 1, quad 45 \\div 15 = 3"
       }
     ],
     "graphData": null
@@ -162,7 +162,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by \\(4\\).",
-        "workingOut": "4 \\div 4 = 1, \\quad 12 \\div 4 = 3"
+        "workingOut": "4 \\div 4 = 1, quad 12 \\div 4 = 3"
       }
     ],
     "graphData": null
@@ -183,7 +183,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by \\(9\\).",
-        "workingOut": "36 \\div 9 = 4, \\quad 81 \\div 9 = 9"
+        "workingOut": "36 \\div 9 = 4, quad 81 \\div 9 = 9"
       }
     ],
     "graphData": null
@@ -204,7 +204,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by \\(21\\).",
-        "workingOut": "84 \\div 21 = 4, \\quad 21 \\div 21 = 1"
+        "workingOut": "84 \\div 21 = 4, quad 21 \\div 21 = 1"
       }
     ],
     "graphData": null
@@ -225,7 +225,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by \\(25\\).",
-        "workingOut": "175 \\div 25 = 7, \\quad 125 \\div 25 = 5"
+        "workingOut": "175 \\div 25 = 7, quad 125 \\div 25 = 5"
       }
     ],
     "graphData": null
@@ -246,7 +246,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by \\(30\\).",
-        "workingOut": "30 \\div 30 = 1, \\quad 150 \\div 30 = 5"
+        "workingOut": "30 \\div 30 = 1, quad 150 \\div 30 = 5"
       }
     ],
     "graphData": null
@@ -263,7 +263,7 @@ export const Y8_CH10G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the given ratios.",
-        "workingOut": "S : L = 4 : 5, \\quad L : B = 2 : 7"
+        "workingOut": "S : L = 4 : 5, quad L : B = 2 : 7"
       },
       {
         "explanation": "Find the LCM of the common term (\\(L\\)).",
@@ -271,7 +271,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Adjust the terms to have \\(L = 10\\).",
-        "workingOut": "S : L = 8 : 10, \\quad L : B = 10 : 35"
+        "workingOut": "S : L = 8 : 10, quad L : B = 10 : 35"
       },
       {
         "explanation": "Find the ratio \\(S : B\\).",
@@ -300,7 +300,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Calculate each share.",
-        "workingOut": "5 \\times 30 = 150, \\quad 3 \\times 30 = 90"
+        "workingOut": "5 \\times 30 = 150, quad 3 \\times 30 = 90"
       }
     ],
     "graphData": null
@@ -325,7 +325,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Multiply each ratio term by the value of one part.",
-        "workingOut": "4 \\times 270 = 1080, \\quad 1 \\times 270 = 270"
+        "workingOut": "4 \\times 270 = 1080, quad 1 \\times 270 = 270"
       }
     ],
     "graphData": null
@@ -350,7 +350,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Multiply each ratio part by \\(360\\).",
-        "workingOut": "4 \\times 360 = 1440, \\quad 2 \\times 360 = 720, \\quad 1 \\times 360 = 360"
+        "workingOut": "4 \\times 360 = 1440, quad 2 \\times 360 = 720, quad 1 \\times 360 = 360"
       }
     ],
     "graphData": null
@@ -483,7 +483,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide by the HCF of 60 and 240.",
-        "workingOut": "60 \\div 60 = 1, \\quad 240 \\div 60 = 4"
+        "workingOut": "60 \\div 60 = 1, quad 240 \\div 60 = 4"
       }
     ],
     "graphData": null
@@ -508,7 +508,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by 400.",
-        "workingOut": "800 \\div 400 = 2, \\quad 2000 \\div 400 = 5"
+        "workingOut": "800 \\div 400 = 2, quad 2000 \\div 400 = 5"
       }
     ],
     "graphData": null
@@ -533,7 +533,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both sides by 50.",
-        "workingOut": "350 \\div 50 = 7, \\quad 450 \\div 50 = 9"
+        "workingOut": "350 \\div 50 = 7, quad 450 \\div 50 = 9"
       }
     ],
     "graphData": null
@@ -575,7 +575,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by their HCF of 12.",
-        "workingOut": "36 \\div 12 = 3, \\quad 48 \\div 12 = 4"
+        "workingOut": "36 \\div 12 = 3, quad 48 \\div 12 = 4"
       }
     ],
     "graphData": null
@@ -617,7 +617,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Convert plan lengths to real life by multiplying by \\(2\\).",
-        "workingOut": "12 \\times 2 = 24\\text{ m}, \\quad 6 \\times 2 = 12\\text{ m}, \\quad 3.2 \\times 2 = 6.4\\text{ m}, \\quad 0.5 \\times 2 = 1\\text{ m}"
+        "workingOut": "12 \\times 2 = 24\\text{ m}, quad 6 \\times 2 = 12\\text{ m}, quad 3.2 \\times 2 = 6.4\\text{ m}, quad 0.5 \\times 2 = 1\\text{ m}"
       },
       {
         "explanation": "Calculate the area of the court.",
@@ -821,7 +821,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Simplify by dividing by HCF of 4.",
-        "workingOut": "4 \\div 4 = 1, \\quad 96 \\div 4 = 24"
+        "workingOut": "4 \\div 4 = 1, quad 96 \\div 4 = 24"
       }
     ],
     "graphData": null
@@ -846,7 +846,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by 5.",
-        "workingOut": "5 \\div 5 = 1, \\quad 20 \\div 5 = 4"
+        "workingOut": "5 \\div 5 = 1, quad 20 \\div 5 = 4"
       }
     ],
     "graphData": null
@@ -871,7 +871,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both parts by 20.",
-        "workingOut": "80 \\div 20 = 4, \\quad 20 \\div 20 = 1"
+        "workingOut": "80 \\div 20 = 4, quad 20 \\div 20 = 1"
       }
     ],
     "graphData": null
@@ -896,7 +896,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Divide both terms by 25.",
-        "workingOut": "25 \\div 25 = 1, \\quad 500\\,000 \\div 25 = 20\\,000"
+        "workingOut": "25 \\div 25 = 1, quad 500\\,000 \\div 25 = 20\\,000"
       }
     ],
     "graphData": null
@@ -1043,7 +1043,7 @@ export const Y8_CH10G_QUESTIONS = [
       },
       {
         "explanation": "Multiply speed by time for each sub-question.",
-        "workingOut": "1 \\times 4.5 = 4.5, \\quad 3 \\times 4.5 = 13.5, \\quad 5 \\times 4.5 = 22.5"
+        "workingOut": "1 \\times 4.5 = 4.5, quad 3 \\times 4.5 = 13.5, quad 5 \\times 4.5 = 22.5"
       }
     ],
     "graphData": null,

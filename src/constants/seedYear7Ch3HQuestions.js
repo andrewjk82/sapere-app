@@ -1451,7 +1451,7 @@ export const Y7_CH3H_QUESTIONS = [
       },
       {
         "explanation": "Identify the length and width from the image. The length is \\(6m\\) and the width is \\(3m\\).",
-        "workingOut": "\\text{length} = 6m, \\text{width} = 3m"
+        "workingOut": "\\text{length} = 6m, text{width} = 3m"
       },
       {
         "explanation": "Substitute these values into our area formula.",
@@ -2372,7 +2372,7 @@ export const Y7_CH3H_QUESTIONS = [
       },
       {
         "explanation": "From the image, identify the base and the perpendicular height. The base is the length of the bottom side, which is \\(b\\). The height is the length of the vertical side, which is \\(a\\).",
-        "workingOut": "\\text{base} = b, \\text{height} = a"
+        "workingOut": "\\text{base} = b, text{height} = a"
       },
       {
         "explanation": "Substitute these values into the area formula.",

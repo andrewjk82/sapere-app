@@ -17,11 +17,11 @@ export const Y8_CH12A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compare the dimensions of Figure X and Figure Y.",
-        "workingOut": "\\text{Size of X} = 3 \\times 3, \\quad \\text{Size of Y} = 2 \\times 2 \\implies \\text{Not congruent}"
+        "workingOut": "\\text{Size of X} = 3 \\times 3, quad \\text{Size of Y} = 2 \\times 2 \\implies \\text{Not congruent}"
       },
       {
         "explanation": "Compare the dimensions of Figure X and Figure Z.",
-        "workingOut": "\\text{Size of X} = 3 \\times 3, \\quad \\text{Size of Z} = 3 \\times 3 \\implies \\text{Congruent under rotation/reflection}"
+        "workingOut": "\\text{Size of X} = 3 \\times 3, quad \\text{Size of Z} = 3 \\times 3 \\implies \\text{Congruent under rotation/reflection}"
       }
     ],
     "graphData": {

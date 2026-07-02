@@ -2205,12 +2205,12 @@ export const Y11_CH6C_QUESTIONS = [
       },
       {
         "explanation": "Find two positive coterminal angles by adding revolutions.",
-        "workingOut": "\\theta_1 = 60^{\\circ}, \\quad \\theta_2 = 60^{\\circ} + 360^{\\circ} = 420^{\\circ}",
+        "workingOut": "\\theta_1 = 60^{\\circ}, quad \\theta_2 = 60^{\\circ} + 360^{\\circ} = 420^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Find two negative coterminal angles by subtracting revolutions.",
-        "workingOut": "\\theta_3 = 60^{\\circ} - 360^{\\circ} = -300^{\\circ}, \\quad \\theta_4 = 60^{\\circ} - 720^{\\circ} = -660^{\\circ}",
+        "workingOut": "\\theta_3 = 60^{\\circ} - 360^{\\circ} = -300^{\\circ}, quad \\theta_4 = 60^{\\circ} - 720^{\\circ} = -660^{\\circ}",
         "graphData": null
       }
     ]
@@ -2349,17 +2349,17 @@ export const Y11_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the coordinates \\((x, y)\\) and the radius \\(r\\).",
-        "workingOut": "x = 4, \\quad y = 3, \\quad r = 5",
+        "workingOut": "x = 4, quad y = 3, quad r = 5",
         "graphData": null
       },
       {
         "explanation": "Calculate the primary trigonometric ratios: \\(\\sin \\theta = \\frac{y}{r}\\), \\(\\cos \\theta = \\frac{x}{r}\\), and \\(\\tan \\theta = \\frac{y}{x}\\).",
-        "workingOut": "\\sin \\theta = \\frac{3}{5}, \\quad \\cos \\theta = \\frac{4}{5}, \\quad \\tan \\theta = \\frac{3}{4}",
+        "workingOut": "\\sin \\theta = \\frac{3}{5}, quad \\cos \\theta = \\frac{4}{5}, quad \\tan \\theta = \\frac{3}{4}",
         "graphData": null
       },
       {
         "explanation": "Find the reciprocal ratios: \\(\\csc \\theta = \\frac{r}{y}\\), \\(\\sec \\theta = \\frac{r}{x}\\), and \\(\\cot \\theta = \\frac{x}{y}\\).",
-        "workingOut": "\\csc \\theta = \\frac{5}{3}, \\quad \\sec \\theta = \\frac{5}{4}, \\quad \\cot \\theta = \\frac{4}{3}",
+        "workingOut": "\\csc \\theta = \\frac{5}{3}, quad \\sec \\theta = \\frac{5}{4}, quad \\cot \\theta = \\frac{4}{3}",
         "graphData": null
       }
     ]
@@ -2378,7 +2378,7 @@ export const Y11_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the coordinates and radius.",
-        "workingOut": "x = -3, \\quad y = 4, \\quad r = 5",
+        "workingOut": "x = -3, quad y = 4, quad r = 5",
         "graphData": null
       },
       {
@@ -2402,7 +2402,7 @@ export const Y11_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the coordinates and radius.",
-        "workingOut": "x = -2, \\quad y = -1, \\quad r = \\sqrt{5}",
+        "workingOut": "x = -2, quad y = -1, quad r = \\sqrt{5}",
         "graphData": null
       },
       {
@@ -2426,7 +2426,7 @@ export const Y11_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the coordinates and radius.",
-        "workingOut": "x = 5, \\quad y = -12, \\quad r = 13",
+        "workingOut": "x = 5, quad y = -12, quad r = 13",
         "graphData": null
       },
       {

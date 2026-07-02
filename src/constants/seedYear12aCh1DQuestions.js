@@ -2825,7 +2825,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and find the common ratio.",
-        "workingOut": "\\(a = 162, \\quad r = \\dfrac{18}{162} = \\dfrac{1}{9}\\)",
+        "workingOut": "\\(a = 162, quad r = \\dfrac{18}{162} = \\dfrac{1}{9}\\)",
         "graphData": null
       },
       {
@@ -2887,7 +2887,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(a\\) and \\(r\\) for the sequence.",
-        "workingOut": "\\(a = 36, \\quad r = \\dfrac{1}{6}\\)",
+        "workingOut": "\\(a = 36, quad r = \\dfrac{1}{6}\\)",
         "graphData": null
       },
       {
@@ -2949,7 +2949,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the values of the first term and common ratio.",
-        "workingOut": "\\(a = 1, \\quad r = 0.8\\)",
+        "workingOut": "\\(a = 1, quad r = 0.8\\)",
         "graphData": null
       },
       {
@@ -3476,7 +3476,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write formulas for \\(T_1\\), \\(T_3\\), and \\(T_9\\) in terms of \\(a\\) and \\(d\\).",
-        "workingOut": "\\(T_1 = a, \\quad T_3 = a + 2d, \\quad T_9 = a + 8d\\)",
+        "workingOut": "\\(T_1 = a, quad T_3 = a + 2d, quad T_9 = a + 8d\\)",
         "graphData": null
       },
       {
@@ -3515,7 +3515,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms as \\(T_1 = a\\), \\(T_2 = a + d\\), and \\(T_6 = a + 5d\\).",
-        "workingOut": "\\(T_1 = a, \\quad T_2 = a + d, \\quad T_6 = a + 5d\\)",
+        "workingOut": "\\(T_1 = a, quad T_2 = a + d, quad T_6 = a + 5d\\)",
         "graphData": null
       },
       {
@@ -3564,7 +3564,7 @@ export const Y12A_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Conclude that the sequence is a GP because the ratio is a constant value.",
-        "workingOut": "\\(a = 3^6, \\quad r = \\dfrac{1}{27}\\)",
+        "workingOut": "\\(a = 3^6, quad r = \\dfrac{1}{27}\\)",
         "graphData": null
       }
     ]
@@ -3878,7 +3878,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 55000\\), and the common difference, which is the annual increment \\(d = 2500\\).",
-        "workingOut": "\\(a = 55000, \\quad d = 2500\\)"
+        "workingOut": "\\(a = 55000, quad d = 2500\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 9\\).",
@@ -3928,7 +3928,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 60000\\), and the common difference, which is the annual increment \\(d = 3000\\).",
-        "workingOut": "\\(a = 60000, \\quad d = 3000\\)"
+        "workingOut": "\\(a = 60000, quad d = 3000\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 10\\).",
@@ -3978,7 +3978,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 65000\\), and the common difference, which is the annual increment \\(d = 3500\\).",
-        "workingOut": "\\(a = 65000, \\quad d = 3500\\)"
+        "workingOut": "\\(a = 65000, quad d = 3500\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 8\\).",
@@ -4028,7 +4028,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 70000\\), and the common difference, which is the annual increment \\(d = 2000\\).",
-        "workingOut": "\\(a = 70000, \\quad d = 2000\\)"
+        "workingOut": "\\(a = 70000, quad d = 2000\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 9\\).",
@@ -4078,7 +4078,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 50000\\), and the common difference, which is the annual increment \\(d = 2500\\).",
-        "workingOut": "\\(a = 50000, \\quad d = 2500\\)"
+        "workingOut": "\\(a = 50000, quad d = 2500\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 10\\).",
@@ -4128,7 +4128,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 55000\\), and the common difference, which is the annual increment \\(d = 3000\\).",
-        "workingOut": "\\(a = 55000, \\quad d = 3000\\)"
+        "workingOut": "\\(a = 55000, quad d = 3000\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 8\\).",
@@ -4178,7 +4178,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 60000\\), and the common difference, which is the annual increment \\(d = 3500\\).",
-        "workingOut": "\\(a = 60000, \\quad d = 3500\\)"
+        "workingOut": "\\(a = 60000, quad d = 3500\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 9\\).",
@@ -4228,7 +4228,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 65000\\), and the common difference, which is the annual increment \\(d = 2000\\).",
-        "workingOut": "\\(a = 65000, \\quad d = 2000\\)"
+        "workingOut": "\\(a = 65000, quad d = 2000\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 10\\).",
@@ -4278,7 +4278,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 70000\\), and the common difference, which is the annual increment \\(d = 2500\\).",
-        "workingOut": "\\(a = 70000, \\quad d = 2500\\)"
+        "workingOut": "\\(a = 70000, quad d = 2500\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 8\\).",
@@ -4328,7 +4328,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 50000\\), and the common difference, which is the annual increment \\(d = 3000\\).",
-        "workingOut": "\\(a = 50000, \\quad d = 3000\\)"
+        "workingOut": "\\(a = 50000, quad d = 3000\\)"
       },
       {
         "explanation": "We use the general term formula for an AP to find the salary in year \\(n = 9\\).",
@@ -4378,7 +4378,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1200\\) and the common ratio \\(r\\) based on the daily growth rate of \\(6\\%\\).",
-        "workingOut": "\\(a = 1200, \\quad r = 1 + \\frac{6}{100} = 1.06\\)"
+        "workingOut": "\\(a = 1200, quad r = 1 + \\frac{6}{100} = 1.06\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -4428,7 +4428,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1400\\) and the common ratio \\(r\\) based on the daily growth rate of \\(7\\%\\).",
-        "workingOut": "\\(a = 1400, \\quad r = 1 + \\frac{7}{100} = 1.07\\)"
+        "workingOut": "\\(a = 1400, quad r = 1 + \\frac{7}{100} = 1.07\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -4478,7 +4478,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1600\\) and the common ratio \\(r\\) based on the daily growth rate of \\(8\\%\\).",
-        "workingOut": "\\(a = 1600, \\quad r = 1 + \\frac{8}{100} = 1.08\\)"
+        "workingOut": "\\(a = 1600, quad r = 1 + \\frac{8}{100} = 1.08\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -4528,7 +4528,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1800\\) and the common ratio \\(r\\) based on the daily growth rate of \\(9\\%\\).",
-        "workingOut": "\\(a = 1800, \\quad r = 1 + \\frac{9}{100} = 1.09\\)"
+        "workingOut": "\\(a = 1800, quad r = 1 + \\frac{9}{100} = 1.09\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -4578,7 +4578,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1000\\) and the common ratio \\(r\\) based on the daily growth rate of \\(5\\%\\).",
-        "workingOut": "\\(a = 1000, \\quad r = 1 + \\frac{5}{100} = 1.05\\)"
+        "workingOut": "\\(a = 1000, quad r = 1 + \\frac{5}{100} = 1.05\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -4628,7 +4628,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1200\\) and the common ratio \\(r\\) based on the daily growth rate of \\(6\\%\\).",
-        "workingOut": "\\(a = 1200, \\quad r = 1 + \\frac{6}{100} = 1.06\\)"
+        "workingOut": "\\(a = 1200, quad r = 1 + \\frac{6}{100} = 1.06\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -4678,7 +4678,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1400\\) and the common ratio \\(r\\) based on the daily growth rate of \\(7\\%\\).",
-        "workingOut": "\\(a = 1400, \\quad r = 1 + \\frac{7}{100} = 1.07\\)"
+        "workingOut": "\\(a = 1400, quad r = 1 + \\frac{7}{100} = 1.07\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -4728,7 +4728,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1600\\) and the common ratio \\(r\\) based on the daily growth rate of \\(8\\%\\).",
-        "workingOut": "\\(a = 1600, \\quad r = 1 + \\frac{8}{100} = 1.08\\)"
+        "workingOut": "\\(a = 1600, quad r = 1 + \\frac{8}{100} = 1.08\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -4778,7 +4778,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1800\\) and the common ratio \\(r\\) based on the daily growth rate of \\(9\\%\\).",
-        "workingOut": "\\(a = 1800, \\quad r = 1 + \\frac{9}{100} = 1.09\\)"
+        "workingOut": "\\(a = 1800, quad r = 1 + \\frac{9}{100} = 1.09\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -4828,7 +4828,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term \\(a = 1000\\) and the common ratio \\(r\\) based on the daily growth rate of \\(5\\%\\).",
-        "workingOut": "\\(a = 1000, \\quad r = 1 + \\frac{5}{100} = 1.05\\)"
+        "workingOut": "\\(a = 1000, quad r = 1 + \\frac{5}{100} = 1.05\\)"
       },
       {
         "explanation": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
@@ -5418,7 +5418,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 60\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 60, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 60, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(720\\).",
@@ -5472,7 +5472,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 70\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 70, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 70, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(980\\).",
@@ -5526,7 +5526,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 80\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 80, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 80, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(1280\\).",
@@ -5580,7 +5580,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 90\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 90, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 90, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(1620\\).",
@@ -5634,7 +5634,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 50\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 50, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 50, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(500\\).",
@@ -5688,7 +5688,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 60\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 60, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 60, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(720\\).",
@@ -5742,7 +5742,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 70\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 70, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 70, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(980\\).",
@@ -5796,7 +5796,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 80\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 80, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 80, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(1280\\).",
@@ -5850,7 +5850,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 90\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 90, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 90, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(1620\\).",
@@ -5904,7 +5904,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 50\\) and common ratio \\(r = 1.5\\) from the given problem details.",
-        "workingOut": "\\(a = 50, \\quad r = 1.5\\)"
+        "workingOut": "\\(a = 50, quad r = 1.5\\)"
       },
       {
         "explanation": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(500\\).",
@@ -6498,7 +6498,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 25\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 25, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 25, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6548,7 +6548,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 30\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 30, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 30, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6598,7 +6598,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 35\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 35, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 35, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6648,7 +6648,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 40\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 40, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 40, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6698,7 +6698,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 20\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 20, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 20, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6748,7 +6748,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 25\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 25, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 25, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6798,7 +6798,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 30\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 30, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 30, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6848,7 +6848,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 35\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 35, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 35, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6898,7 +6898,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 40\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 40, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 40, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6948,7 +6948,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define the initial drop height as \\(H = 20\\) meters and the rebound multiplier as \\(r = 0.8\\).",
-        "workingOut": "\\(H = 20, \\quad r = 0.8\\)"
+        "workingOut": "\\(H = 20, quad r = 0.8\\)"
       },
       {
         "explanation": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
@@ -6998,7 +6998,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 1500 \\times 1.10 = 1650.0000000000002\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 1650.0000000000002, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 1650.0000000000002, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -7048,7 +7048,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 2000 \\times 1.10 = 2200\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 2200, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 2200, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -7098,7 +7098,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 2500 \\times 1.10 = 2750\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 2750, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 2750, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -7148,7 +7148,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 3000 \\times 1.10 = 3300.0000000000005\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 3300.0000000000005, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 3300.0000000000005, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -7198,7 +7198,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 1000 \\times 1.10 = 1100\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 1100, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 1100, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -7248,7 +7248,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 1500 \\times 1.10 = 1650.0000000000002\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 1650.0000000000002, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 1650.0000000000002, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -7298,7 +7298,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 2000 \\times 1.10 = 2200\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 2200, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 2200, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -7348,7 +7348,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 2500 \\times 1.10 = 2750\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 2750, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 2750, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -7398,7 +7398,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 3000 \\times 1.10 = 3300.0000000000005\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 3300.0000000000005, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 3300.0000000000005, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -7448,7 +7448,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 1000 \\times 1.10 = 1100\\) and common ratio \\(r = 1.10\\).",
-        "workingOut": "\\(a = 1100, \\quad r = 1.10, \\quad n = 4\\)"
+        "workingOut": "\\(a = 1100, quad r = 1.10, quad n = 4\\)"
       },
       {
         "explanation": "Recall the sum formula for a geometric series.",
@@ -8498,7 +8498,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 150\\) and the common ratio \\(r = 0.3\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 150, \\quad r = 0.3\\)"
+        "workingOut": "\\(a = 150, quad r = 0.3\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
@@ -8548,7 +8548,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 200\\) and the common ratio \\(r = 0.35\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 200, \\quad r = 0.35\\)"
+        "workingOut": "\\(a = 200, quad r = 0.35\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
@@ -8598,7 +8598,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 250\\) and the common ratio \\(r = 0.4\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 250, \\quad r = 0.4\\)"
+        "workingOut": "\\(a = 250, quad r = 0.4\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
@@ -8648,7 +8648,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 300\\) and the common ratio \\(r = 0.45\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 300, \\quad r = 0.45\\)"
+        "workingOut": "\\(a = 300, quad r = 0.45\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
@@ -8698,7 +8698,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 100\\) and the common ratio \\(r = 0.25\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 100, \\quad r = 0.25\\)"
+        "workingOut": "\\(a = 100, quad r = 0.25\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
@@ -8748,7 +8748,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 150\\) and the common ratio \\(r = 0.3\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 150, \\quad r = 0.3\\)"
+        "workingOut": "\\(a = 150, quad r = 0.3\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
@@ -8798,7 +8798,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 200\\) and the common ratio \\(r = 0.35\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 200, \\quad r = 0.35\\)"
+        "workingOut": "\\(a = 200, quad r = 0.35\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
@@ -8848,7 +8848,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 250\\) and the common ratio \\(r = 0.4\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 250, \\quad r = 0.4\\)"
+        "workingOut": "\\(a = 250, quad r = 0.4\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
@@ -8898,7 +8898,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 300\\) and the common ratio \\(r = 0.45\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 300, \\quad r = 0.45\\)"
+        "workingOut": "\\(a = 300, quad r = 0.45\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
@@ -8948,7 +8948,7 @@ export const Y12A_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term \\(a = 100\\) and the common ratio \\(r = 0.25\\) from the decay rate of the pulses.",
-        "workingOut": "\\(a = 100, \\quad r = 0.25\\)"
+        "workingOut": "\\(a = 100, quad r = 0.25\\)"
       },
       {
         "explanation": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",

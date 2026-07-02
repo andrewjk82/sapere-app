@@ -535,7 +535,7 @@ export const Y12A_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Working out",
-        "workingOut": "\\frac{1}{2} \\cos \\frac{1}{2}x, -\\frac{1}{4} \\sin \\frac{1}{2}x, -\\frac{1}{8} \\cos \\frac{1}{2}x, \\frac{1}{16} \\sin \\frac{1}{2}x"
+        "workingOut": "\\frac{1}{2} \\cos \\frac{1}{2}x, -\\frac{1}{4} \\sin \\frac{1}{2}x, -\\frac{1}{8} \\cos \\frac{1}{2}x, frac{1}{16} \\sin \\frac{1}{2}x"
       }
     ]
   },
@@ -550,7 +550,7 @@ export const Y12A_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Working out",
-        "workingOut": "-\\frac{1}{3} \\sin \\frac{1}{3}x, -\\frac{1}{9} \\cos \\frac{1}{3}x, \\frac{1}{27} \\sin \\frac{1}{3}x, \\frac{1}{81} \\cos \\frac{1}{3}x"
+        "workingOut": "-\\frac{1}{3} \\sin \\frac{1}{3}x, -\\frac{1}{9} \\cos \\frac{1}{3}x, frac{1}{27} \\sin \\frac{1}{3}x, frac{1}{81} \\cos \\frac{1}{3}x"
       }
     ]
   },

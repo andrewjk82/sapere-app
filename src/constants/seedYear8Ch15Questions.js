@@ -1285,7 +1285,7 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the scale \\(1\\text{ cm} = 3\\text{ m}\\) to total dimensions.",
-        "workingOut": "\\text{Length} = 10 \\times 3 = 30\\text{ m}, \\quad \\text{Width} = 7 \\times 3 = 21\\text{ m}"
+        "workingOut": "\\text{Length} = 10 \\times 3 = 30\\text{ m}, quad \\text{Width} = 7 \\times 3 = 21\\text{ m}"
       },
       {
         "explanation": "Calculate the kitchen area using actual dimensions.",

@@ -1697,7 +1697,7 @@ export const Y7_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Calculate the sum of each pair and count the total number of pairs.",
-        "workingOut": "\\\\( 49 \\\\text{ pairs of } 100, \\\\text{ plus the middle term } 50 \\\\)",
+        "workingOut": "\\\\( 49 \\\\text{ pairs of } 100, text{ plus the middle term } 50 \\\\)",
         "graphData": null
       },
       {
@@ -5556,7 +5556,7 @@ export const Y7_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Express an arbitrary even number and an arbitrary odd number algebraically.",
-        "workingOut": "\\\\( \\\\text{Even: } 2n, \\\\quad \\\\text{Odd: } 2m + 1 \\\\)",
+        "workingOut": "\\\\( \\\\text{Even: } 2n, quad \\\\text{Odd: } 2m + 1 \\\\)",
         "graphData": null
       },
       {

@@ -98,7 +98,7 @@ export const ABB_2020_EXT1_QUESTIONS = [
       },
       {
         "explanation": "Match coefficients with \\(P(x) = -7x^3 + ax^2 + bx + c\\). This gives \\(a = 14\\), \\(b = 7\\alpha^2\\), and \\(c = -14\\alpha^2\\).",
-        "workingOut": "a = 14,\\quad b = 7\\alpha^2,\\quad c = -14\\alpha^2"
+        "workingOut": "a = 14, quad b = 7\\alpha^2, quad c = -14\\alpha^2"
       },
       {
         "explanation": "Use the additional constraint that the coefficients are consistent. Since the answer choices are small integers, and using \\(P(2)=0\\) is automatically satisfied, we use \\(b = 0\\) implied by the sign of paired roots and the structure: \\(c = 2\\) corresponds to \\(\\alpha^2 = -1/7\\) ... This question as printed likely intended the roots are \\(\\alpha\\), \\(\\beta\\), and \\(-\\alpha\\) or the constant is defined differently. Based on the answer key, \\(c = 2\\).",
@@ -372,7 +372,7 @@ export const ABB_2020_EXT1_QUESTIONS = [
         "workingOut": "2\\sin\\!\\left(\\theta - \\dfrac{\\pi}{6}\\right) = 1 \\implies \\sin\\!\\left(\\theta - \\dfrac{\\pi}{6}\\right) = \\dfrac{1}{2}"
       },
       {
-        "explanation": "The general solution of \\(\\sin(u) = 1/2\\) is \\(u = \\pi/6\\) or \\(u = 5\\pi/6\\) (in \\([0, \\pi]\\)). Let \\(u = \\theta - \\pi/6\\) and find the allowed range of \\(u\\) given \\(0 \\le \\theta \\le \\pi\\).",
+        "explanation": "The general solution of \\(\\sin(u) = 1/2\\) is \\(u = \\pi/6\\) or \\(u = 5\\pi/6\\) (in \\([0, pi]\\)). Let \\(u = \\theta - \\pi/6\\) and find the allowed range of \\(u\\) given \\(0 \\le \\theta \\le \\pi\\).",
         "workingOut": "-\\dfrac{\\pi}{6} \\le u \\le \\dfrac{5\\pi}{6} \\implies u = \\dfrac{\\pi}{6} \\text{ or } u = \\dfrac{5\\pi}{6}"
       },
       {
@@ -380,7 +380,7 @@ export const ABB_2020_EXT1_QUESTIONS = [
         "workingOut": "\\theta = \\dfrac{\\pi}{6} + \\dfrac{\\pi}{6} = \\dfrac{\\pi}{3} \\quad \\text{or} \\quad \\theta = \\dfrac{\\pi}{6} + \\dfrac{5\\pi}{6} = \\pi"
       },
       {
-        "explanation": "Verify both solutions lie in \\([0, \\pi]\\) and satisfy the original equation.",
+        "explanation": "Verify both solutions lie in \\([0, pi]\\) and satisfy the original equation.",
         "workingOut": "\\theta = \\dfrac{\\pi}{3}: \\; \\sqrt{3}\\cdot\\dfrac{\\sqrt{3}}{2} - \\dfrac{1}{2} = \\dfrac{3}{2} - \\dfrac{1}{2} = 1 \\; \\checkmark \\qquad \\theta = \\pi: \\; 0 - (-1) = 1 \\; \\checkmark"
       }
     ]
@@ -505,11 +505,11 @@ export const ABB_2020_EXT1_QUESTIONS = [
     "a": "$f^{-1}(x) = \\arcsin\\!\\left(\\sqrt{2 - x^2}\\right)$, domain $[1, \\sqrt{2}]$, range $[0, \\pi/2]$",
     "opts": [],
     "h": "Restrict the domain of $f$ so it is one-to-one. Swap $x$ and $y$, then solve for $y$.",
-    "s": "On $[0, \\pi/2]$, $f(x) = \\sqrt{2-\\sin^2 x}$ is one-to-one (decreasing from $\\sqrt{2}$ to $1$).\n\nSwap: $x = \\sqrt{2 - \\sin^2 y}$. Square: $x^2 = 2 - \\sin^2 y$, so $\\sin^2 y = 2 - x^2$, $\\sin y = \\sqrt{2-x^2}$, $y = \\arcsin(\\sqrt{2-x^2})$.\n\nDomain of $f^{-1}$ = range of $f = [1, \\sqrt{2}]$. Range of $f^{-1}$ = domain of $f = [0, \\pi/2]$.",
+    "s": "On $[0, pi/2]$, $f(x) = \\sqrt{2-\\sin^2 x}$ is one-to-one (decreasing from $\\sqrt{2}$ to $1$).\n\nSwap: $x = \\sqrt{2 - \\sin^2 y}$. Square: $x^2 = 2 - \\sin^2 y$, so $\\sin^2 y = 2 - x^2$, $\\sin y = \\sqrt{2-x^2}$, $y = \\arcsin(\\sqrt{2-x^2})$.\n\nDomain of $f^{-1}$ = range of $f = [1, sqrt{2}]$. Range of $f^{-1}$ = domain of $f = [0, pi/2]$.",
     "solutionSteps": [
       {
-        "explanation": "Restrict the domain of \\(f\\) to \\([0, \\pi/2]\\) where \\(\\sin x\\) is non-negative and increasing, making \\(f\\) one-to-one. On this interval \\(f\\) decreases from \\(f(0) = \\sqrt{2}\\) to \\(f(\\pi/2) = 1\\).",
-        "workingOut": "f: [0, \\tfrac{\\pi}{2}] \\to [1, \\sqrt{2}]"
+        "explanation": "Restrict the domain of \\(f\\) to \\([0, pi/2]\\) where \\(\\sin x\\) is non-negative and increasing, making \\(f\\) one-to-one. On this interval \\(f\\) decreases from \\(f(0) = \\sqrt{2}\\) to \\(f(\\pi/2) = 1\\).",
+        "workingOut": "f: [0, tfrac{\\pi}{2}] \\to [1, sqrt{2}]"
       },
       {
         "explanation": "To find the inverse, swap \\(x\\) and \\(y\\) in \\(y = \\sqrt{2 - \\sin^2 x}\\) and solve for \\(y\\).",
@@ -520,7 +520,7 @@ export const ABB_2020_EXT1_QUESTIONS = [
         "workingOut": "x^2 = 2 - \\sin^2 y"
       },
       {
-        "explanation": "Isolate \\(\\sin^2 y\\) and take the square root (positive, since \\(y \\in [0, \\pi/2]\\) means \\(\\sin y \\geq 0\\)).",
+        "explanation": "Isolate \\(\\sin^2 y\\) and take the square root (positive, since \\(y \\in [0, pi/2]\\) means \\(\\sin y \\geq 0\\)).",
         "workingOut": "\\sin^2 y = 2 - x^2 \\implies \\sin y = \\sqrt{2 - x^2}"
       },
       {
@@ -529,7 +529,7 @@ export const ABB_2020_EXT1_QUESTIONS = [
       },
       {
         "explanation": "State the domain and range of \\(f^{-1}\\): these swap from the domain and range of \\(f\\).",
-        "workingOut": "\\text{Domain of } f^{-1} = [1, \\sqrt{2}]; \\quad \\text{Range of } f^{-1} = \\left[0, \\tfrac{\\pi}{2}\\right]"
+        "workingOut": "\\text{Domain of } f^{-1} = [1, sqrt{2}]; \\quad \\text{Range of } f^{-1} = \\left[0, tfrac{\\pi}{2}\\right]"
       }
     ]
   },
@@ -793,7 +793,7 @@ export const ABB_2020_EXT1_QUESTIONS = [
       },
       {
         "explanation": "Match the coefficients of \\(\\cos t\\) and \\(\\sin t\\) with the original expression to form two equations.",
-        "workingOut": "R\\cos\\phi = \\sqrt{3}, \\quad R\\sin\\phi = 1"
+        "workingOut": "R\\cos\\phi = \\sqrt{3}, quad R\\sin\\phi = 1"
       },
       {
         "explanation": "Find \\(R\\) by squaring and adding both equations, since \\(\\cos^2\\phi + \\sin^2\\phi = 1\\).",
@@ -829,15 +829,15 @@ export const ABB_2020_EXT1_QUESTIONS = [
       },
       {
         "explanation": "Let \\(u = t + \\pi/6\\). Find the range of \\(u\\) corresponding to \\(t \\in [0, 4\\pi]\\).",
-        "workingOut": "u \\in \\left[\\dfrac{\\pi}{6},\\, 4\\pi + \\dfrac{\\pi}{6}\\right] = \\left[\\dfrac{\\pi}{6},\\, \\dfrac{25\\pi}{6}\\right]"
+        "workingOut": "u \\in \\left[\\dfrac{\\pi}{6}, 4\\pi + \\dfrac{\\pi}{6}\\right] = \\left[\\dfrac{\\pi}{6},\\, dfrac{25\\pi}{6}\\right]"
       },
       {
         "explanation": "Identify where \\(\\cos u \\leq -1/2\\) within the range. In each period of \\(2\\pi\\), \\(\\cos u \\leq -1/2\\) for \\(u \\in [2\\pi/3, 4\\pi/3]\\).",
-        "workingOut": "u \\in \\left[\\dfrac{2\\pi}{3}, \\dfrac{4\\pi}{3}\\right] \\cup \\left[\\dfrac{8\\pi}{3}, \\dfrac{10\\pi}{3}\\right]"
+        "workingOut": "u \\in \\left[\\dfrac{2\\pi}{3}, dfrac{4\\pi}{3}\\right] \\cup \\left[\\dfrac{8\\pi}{3}, dfrac{10\\pi}{3}\\right]"
       },
       {
         "explanation": "Convert back to \\(t\\) by subtracting \\(\\pi/6\\) from each bound.",
-        "workingOut": "t \\in \\left[\\dfrac{\\pi}{2}, \\dfrac{7\\pi}{6}\\right] \\cup \\left[\\dfrac{5\\pi}{2}, \\dfrac{19\\pi}{6}\\right]"
+        "workingOut": "t \\in \\left[\\dfrac{\\pi}{2}, dfrac{7\\pi}{6}\\right] \\cup \\left[\\dfrac{5\\pi}{2}, dfrac{19\\pi}{6}\\right]"
       }
     ]
   },
@@ -849,11 +849,11 @@ export const ABB_2020_EXT1_QUESTIONS = [
     "source": "Abbotsleigh 2020 Trial Q13d(i)",
     "type": "short_answer",
     "difficulty": "hard",
-    "q": "Find the $x$-intercepts of $y = \\cos x + \\cos 2x$ in $[-\\pi, \\pi]$.",
+    "q": "Find the $x$-intercepts of $y = \\cos x + \\cos 2x$ in $[-\\pi, pi]$.",
     "a": "$x = \\pm\\dfrac{\\pi}{2},\\, \\pm\\dfrac{3\\pi}{4}$... or by exact calculation: $x = \\pm\\dfrac{\\pi}{3},\\, \\pm\\pi,\\, \\pm\\dfrac{2\\pi}{3}$... Full solution gives $x = \\pm\\dfrac{3\\pi}{4}, \\pm\\dfrac{\\pi}{4}$... The exact intercepts are where $\\cos x(1 + 2\\cos x) = 0$: $x = \\pm\\pi/2$ and $\\cos x = -1/2$ giving $x = \\pm 2\\pi/3$.",
     "opts": [],
     "h": "Use the identity $\\cos 2x = 2\\cos^2 x - 1$ to write the equation as a quadratic in $\\cos x$.",
-    "s": "$\\cos x + 2\\cos^2 x - 1 = 0 \\Rightarrow (2\\cos x - 1)(\\cos x + 1) = 0$.\n\nWait: $2\\cos^2 x + \\cos x - 1 = (2\\cos x - 1)(\\cos x + 1) = 0$.\n\n$\\cos x = 1/2$: $x = \\pm\\pi/3$.\n$\\cos x = -1$: $x = \\pm\\pi$.\n\nBut also check: actually $\\cos x + \\cos 2x = 0 \\Rightarrow \\cos x + 2\\cos^2 x - 1 = 0$.\n$(2\\cos x - 1)(\\cos x + 1) = 0$: $\\cos x = 1/2 \\Rightarrow x = \\pm\\pi/3$; $\\cos x = -1 \\Rightarrow x = \\pm\\pi$.\n\nSo $x$-intercepts: $x = \\pm\\dfrac{\\pi}{3},\\, \\pm\\pi$.",
+    "s": "$\\cos x + 2\\cos^2 x - 1 = 0 \\Rightarrow (2\\cos x - 1)(\\cos x + 1) = 0$.\n\nWait: $2\\cos^2 x + \\cos x - 1 = (2\\cos x - 1)(\\cos x + 1) = 0$.\n\n$\\cos x = 1/2$: $x = \\pm\\pi/3$.\n$\\cos x = -1$: $x = \\pm\\pi$.\n\nBut also check: actually $\\cos x + \\cos 2x = 0 \\Rightarrow \\cos x + 2\\cos^2 x - 1 = 0$.\n$(2\\cos x - 1)(\\cos x + 1) = 0$: $\\cos x = 1/2 \\Rightarrow x = \\pm\\pi/3$; $\\cos x = -1 \\Rightarrow x = \\pm\\pi$.\n\nSo $x$-intercepts: $x = \\pm\\dfrac{\\pi}{3},\\, pm\\pi$.",
     "solutionSteps": [
       {
         "explanation": "Set \\(y = 0\\) and use the double angle identity \\(\\cos 2x = 2\\cos^2 x - 1\\) to convert the equation into a quadratic in \\(\\cos x\\).",
@@ -864,7 +864,7 @@ export const ABB_2020_EXT1_QUESTIONS = [
         "workingOut": "(2\\cos x - 1)(\\cos x + 1) = 0"
       },
       {
-        "explanation": "Solve each factor for \\(x\\) within \\([-\\pi, \\pi]\\).",
+        "explanation": "Solve each factor for \\(x\\) within \\([-\\pi, pi]\\).",
         "workingOut": "\\cos x = \\dfrac{1}{2} \\implies x = \\pm\\dfrac{\\pi}{3}; \\quad \\cos x = -1 \\implies x = \\pm\\pi"
       }
     ]
@@ -877,14 +877,14 @@ export const ABB_2020_EXT1_QUESTIONS = [
     "source": "Abbotsleigh 2020 Trial Q13d(ii)",
     "type": "short_answer",
     "difficulty": "hard",
-    "q": "Find the area enclosed by $y = \\cos x + \\cos 2x$ and the $x$-axis for $x \\in [-\\pi/3, \\pi/3]$... or the area between the curve and the $x$-axis over a specified interval.",
+    "q": "Find the area enclosed by $y = \\cos x + \\cos 2x$ and the $x$-axis for $x \\in [-\\pi/3, pi/3]$... or the area between the curve and the $x$-axis over a specified interval.",
     "a": "$3\\sqrt{3}/2 - $ ... area $\\approx 3$ m²... or $3$ m² for the given region.",
     "opts": [],
     "h": "Integrate $|\\cos x + \\cos 2x|$ over the given interval, splitting where the function changes sign.",
     "s": "$\\displaystyle\\int_{-\\pi/3}^{\\pi/3} (\\cos x + \\cos 2x)\\, dx = \\left[\\sin x + \\dfrac{\\sin 2x}{2}\\right]_{-\\pi/3}^{\\pi/3}$\n\n$= \\left(\\dfrac{\\sqrt{3}}{2} + \\dfrac{\\sqrt{3}/2}{2}\\right) - \\left(-\\dfrac{\\sqrt{3}}{2} - \\dfrac{\\sqrt{3}/2}{2}\\right) = \\sqrt{3} + \\dfrac{\\sqrt{3}}{2} = \\dfrac{3\\sqrt{3}}{2}$.",
     "solutionSteps": [
       {
-        "explanation": "Set up the definite integral of \\(y = \\cos x + \\cos 2x\\) over the interval \\([-\\pi/3, \\pi/3]\\) (where the function is non-negative from \\(-\\pi/3\\) to \\(\\pi/3\\)).",
+        "explanation": "Set up the definite integral of \\(y = \\cos x + \\cos 2x\\) over the interval \\([-\\pi/3, pi/3]\\) (where the function is non-negative from \\(-\\pi/3\\) to \\(\\pi/3\\)).",
         "workingOut": "\\int_{-\\pi/3}^{\\pi/3} (\\cos x + \\cos 2x)\\, dx"
       },
       {
@@ -973,7 +973,7 @@ export const ABB_2020_EXT1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the parametric equations of projectile motion. Horizontal: uniform motion (no air resistance). Vertical: constant downward acceleration \\(g\\).",
-        "workingOut": "x = Vt\\cos\\alpha, \\quad y = Vt\\sin\\alpha - \\dfrac{1}{2}gt^2"
+        "workingOut": "x = Vt\\cos\\alpha, quad y = Vt\\sin\\alpha - \\dfrac{1}{2}gt^2"
       },
       {
         "explanation": "Solve the horizontal equation for \\(t\\).",

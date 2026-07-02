@@ -385,7 +385,7 @@ export const Y10_CH11E_QUESTIONS = [
       },
       {
         "explanation": "Identify centre and radius from the standard form \\((x-h)^2 + (y-k)^2 = r^2\\).",
-        "workingOut": "\\therefore \\text{Centre } (-3, -1), \\text{radius } \\sqrt{10}"
+        "workingOut": "\\therefore \\text{Centre } (-3, -1), text{radius } \\sqrt{10}"
       }
     ],
     "graphData": null
@@ -406,7 +406,7 @@ export const Y10_CH11E_QUESTIONS = [
       },
       {
         "explanation": "Identify centre and radius from the standard form \\((x-h)^2 + (y-k)^2 = r^2\\).",
-        "workingOut": "\\therefore \\text{Centre } (-1, -3), \\text{radius } 4"
+        "workingOut": "\\therefore \\text{Centre } (-1, -3), text{radius } 4"
       }
     ],
     "graphData": null
@@ -427,7 +427,7 @@ export const Y10_CH11E_QUESTIONS = [
       },
       {
         "explanation": "Identify centre and radius from the standard form \\((x-h)^2 + (y-k)^2 = r^2\\).",
-        "workingOut": "\\therefore \\text{Centre } \\left(1, -\\frac{3}{2}\\right), \\text{radius } \\frac{\\sqrt{11}}{2}"
+        "workingOut": "\\therefore \\text{Centre } \\left(1, -\\frac{3}{2}\\right), text{radius } \\frac{\\sqrt{11}}{2}"
       }
     ],
     "graphData": null
@@ -448,7 +448,7 @@ export const Y10_CH11E_QUESTIONS = [
       },
       {
         "explanation": "Identify centre and radius from the standard form \\((x-h)^2 + (y-k)^2 = r^2\\).",
-        "workingOut": "\\therefore \\text{Centre } (3, -2), \\text{radius } 5"
+        "workingOut": "\\therefore \\text{Centre } (3, -2), text{radius } 5"
       }
     ],
     "graphData": null
@@ -910,7 +910,7 @@ export const Y10_CH11E_QUESTIONS = [
       },
       {
         "explanation": "Substitute into the circle equation and solve the quadratic.",
-        "workingOut": "\\therefore (1, 3), \\left(-\\frac{9}{5}, -\\frac{13}{5}\\right)"
+        "workingOut": "\\therefore (1, 3), left(-\\frac{9}{5}, -\\frac{13}{5}\\right)"
       }
     ],
     "graphData": null

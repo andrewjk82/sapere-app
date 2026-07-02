@@ -45,7 +45,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Substitute back \\( \\sqrt{x} = u \\) and square both sides.",
-        "workingOut": "\\(\\sqrt{x} = 2 \\Rightarrow x = 4, \\quad \\sqrt{x} = 4 \\Rightarrow x = 16\\)",
+        "workingOut": "\\(\\sqrt{x} = 2 \\Rightarrow x = 4, quad \\sqrt{x} = 4 \\Rightarrow x = 16\\)",
         "graphData": null
       }
     ],
@@ -363,7 +363,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(x = 5, \\frac{1}{5}\\)",
+        "workingOut": "\\(x = 5, frac{1}{5}\\)",
         "graphData": null
       }
     ],
@@ -525,7 +525,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Substitute back \\( \\sqrt{x} = u \\) and square both sides.",
-        "workingOut": "\\(\\sqrt{x} = 3 \\Rightarrow x = 9, \\quad \\sqrt{x} = 5 \\Rightarrow x = 25\\)",
+        "workingOut": "\\(\\sqrt{x} = 3 \\Rightarrow x = 9, quad \\sqrt{x} = 5 \\Rightarrow x = 25\\)",
         "graphData": null
       }
     ],
@@ -578,7 +578,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Substitute back \\( x^2 = u \\) and solve for \\( x \\) by taking the square root.",
-        "workingOut": "\\(x = \\pm \\sqrt{2}, \\pm \\sqrt{3}\\)",
+        "workingOut": "\\(x = \\pm \\sqrt{2}, pm \\sqrt{3}\\)",
         "graphData": null
       }
     ],
@@ -733,7 +733,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(a = 0, \\frac{7}{3}\\)",
+        "workingOut": "\\(a = 0, frac{7}{3}\\)",
         "graphData": null
       }
     ],
@@ -794,7 +794,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(a = 2, \\frac{2}{3}\\)",
+        "workingOut": "\\(a = 2, frac{2}{3}\\)",
         "graphData": null
       }
     ],
@@ -1347,7 +1347,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(y = 1, \\frac{3}{4}\\)",
+        "workingOut": "\\(y = 1, frac{3}{4}\\)",
         "graphData": null
       }
     ],
@@ -1512,7 +1512,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve for the roots.",
-        "workingOut": "\\(y = 0, \\frac{3}{4}\\)",
+        "workingOut": "\\(y = 0, frac{3}{4}\\)",
         "graphData": null
       }
     ],
@@ -1936,7 +1936,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(n = -1, \\frac{4}{3}\\)",
+        "workingOut": "\\(n = -1, frac{4}{3}\\)",
         "graphData": null
       }
     ],
@@ -2365,7 +2365,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(y = 6, \\frac{1}{2}\\)",
+        "workingOut": "\\(y = 6, frac{1}{2}\\)",
         "graphData": null
       }
     ],
@@ -2418,7 +2418,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Substitute back \\( \\sqrt{x} = u \\) and square both sides.",
-        "workingOut": "\\(\\sqrt{x} = 1 \\Rightarrow x = 1, \\quad \\sqrt{x} = 3 \\Rightarrow x = 9\\)",
+        "workingOut": "\\(\\sqrt{x} = 1 \\Rightarrow x = 1, quad \\sqrt{x} = 3 \\Rightarrow x = 9\\)",
         "graphData": null
       }
     ],
@@ -3947,7 +3947,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve.",
-        "workingOut": "\\(a = -5, \\frac{1}{2}\\)",
+        "workingOut": "\\(a = -5, frac{1}{2}\\)",
         "graphData": null
       }
     ],
@@ -4453,7 +4453,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Substitute back \\( x^2 = u \\) and solve for \\( x \\) by taking the square root.",
-        "workingOut": "\\(x = \\pm \\sqrt{1}, \\pm \\sqrt{2}\\)",
+        "workingOut": "\\(x = \\pm \\sqrt{1}, pm \\sqrt{2}\\)",
         "graphData": null
       }
     ],
@@ -5706,7 +5706,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Factor the non-monic trinomial.",
-        "workingOut": "\\((3u - 4)(u - 4) = 0 \\Rightarrow u = 4, \\frac{4}{3}\\)",
+        "workingOut": "\\((3u - 4)(u - 4) = 0 \\Rightarrow u = 4, frac{4}{3}\\)",
         "graphData": null
       }
     ],
@@ -5754,7 +5754,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Solve the linear equations.",
-        "workingOut": "\\(b = 0, \\frac{1}{3}\\)",
+        "workingOut": "\\(b = 0, frac{1}{3}\\)",
         "graphData": null
       }
     ],
@@ -5919,7 +5919,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Substitute back \\( x^2 = u \\) and solve for \\( x \\) by taking the square root.",
-        "workingOut": "\\(x = \\pm \\sqrt{3}, \\pm \\sqrt{4}\\)",
+        "workingOut": "\\(x = \\pm \\sqrt{3}, pm \\sqrt{4}\\)",
         "graphData": null
       }
     ],
@@ -6033,7 +6033,7 @@ export const Y11_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Substitute back \\( u = a + 2 \\) and solve for \\( a \\).",
-        "workingOut": "\\(a + 2 = 1 \\Rightarrow a = -1, \\quad \\text{and} \\quad a + 2 = 9 \\Rightarrow a = 7\\)",
+        "workingOut": "\\(a + 2 = 1 \\Rightarrow a = -1, quad \\text{and} \\quad a + 2 = 9 \\Rightarrow a = 7\\)",
         "graphData": null
       }
     ],

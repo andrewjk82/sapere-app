@@ -67,7 +67,7 @@ export const SURDS_QUESTIONS_Y11A = [
       "$(-\\infty, 5)$",
       "$[ -\\infty, 5)$",
       "$(-\\infty, 5]$ ",
-      "$(5, \\infty)$"
+      "$(5, infty)$"
     ],
     "h": "Exclusive inequality uses round brackets.",
     "s": "$x < 5$ means everything from negative infinity up to 5 (not included).",
@@ -169,8 +169,8 @@ export const SURDS_QUESTIONS_Y11A = [
     "q": "Write $x > -4$ in interval notation.",
     "a": "$(-4, \\infty)$",
     "opts": [
-      "$(-4, \\infty)$",
-      "$[-4, \\infty)$",
+      "$(-4, infty)$",
+      "$[-4, infty)$",
       "$( -\\infty, -4)$",
       "$( -\\infty, -4]$"
     ],
@@ -211,7 +211,7 @@ export const SURDS_QUESTIONS_Y11A = [
   },
   {
     "id": "s2a_15",
-    "q": "Express $(3, \\infty)$ using inequalities.",
+    "q": "Express $(3, infty)$ using inequalities.",
     "a": "$x > 3$",
     "opts": [
       "$x > 3$",
@@ -1637,7 +1637,7 @@ export const SURDS_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Square all three sides.",
-        "workingOut": "12^2 = 144, \\quad 35^2 = 1225, \\quad 37^2 = 1369"
+        "workingOut": "12^2 = 144, quad 35^2 = 1225, quad 37^2 = 1369"
       },
       {
         "explanation": "Check if \\(a^2 + b^2 = c^2\\).",
@@ -1662,7 +1662,7 @@ export const SURDS_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Square all three sides.",
-        "workingOut": "14^2 = 196, \\quad 48^2 = 2304, \\quad 50^2 = 2500"
+        "workingOut": "14^2 = 196, quad 48^2 = 2304, quad 50^2 = 2500"
       },
       {
         "explanation": "Check if \\(a^2 + b^2 = c^2\\).",
@@ -1687,7 +1687,7 @@ export const SURDS_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Square all three sides.",
-        "workingOut": "5^2 = 25, \\quad 7^2 = 49, \\quad 9^2 = 81"
+        "workingOut": "5^2 = 25, quad 7^2 = 49, quad 9^2 = 81"
       },
       {
         "explanation": "Check if \\(a^2 + b^2 = c^2\\).",
@@ -1712,7 +1712,7 @@ export const SURDS_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Square all three sides.",
-        "workingOut": "2.5^2 = 6.25, \\quad 6^2 = 36, \\quad 6.5^2 = 42.25"
+        "workingOut": "2.5^2 = 6.25, quad 6^2 = 36, quad 6.5^2 = 42.25"
       },
       {
         "explanation": "Check if \\(a^2 + b^2 = c^2\\).",
@@ -1737,7 +1737,7 @@ export const SURDS_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Square all three sides.",
-        "workingOut": "8^2 = 64, \\quad 12^2 = 144, \\quad 15^2 = 225"
+        "workingOut": "8^2 = 64, quad 12^2 = 144, quad 15^2 = 225"
       },
       {
         "explanation": "Check if \\(a^2 + b^2 = c^2\\).",
@@ -1762,7 +1762,7 @@ export const SURDS_QUESTIONS_Y11A = [
     "solutionSteps": [
       {
         "explanation": "Square all three sides.",
-        "workingOut": "11^2 = 121, \\quad 60^2 = 3600, \\quad 61^2 = 3721"
+        "workingOut": "11^2 = 121, quad 60^2 = 3600, quad 61^2 = 3721"
       },
       {
         "explanation": "Check if \\(a^2 + b^2 = c^2\\).",
@@ -1905,7 +1905,7 @@ export const SURDS_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Compare with the width of the glass.",
-        "workingOut": "1.7 \\text{ m} < 1.8 \\text{ m}, \\text{ so it will not fit.}"
+        "workingOut": "1.7 \\text{ m} < 1.8 \\text{ m}, text{ so it will not fit.}"
       }
     ]
   },
@@ -2151,7 +2151,7 @@ export const SURDS_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Show the inner angles are \\(90^\\circ\\).",
-        "workingOut": "\\text{The acute angles of the corner triangles sum to } 90^\\circ. \\text{ The straight line angle is } 180^\\circ, \\text{ leaving } 90^\\circ \\text{ for the inner quadrilateral's corners.}"
+        "workingOut": "\\text{The acute angles of the corner triangles sum to } 90^\\circ. \\text{ The straight line angle is } 180^\\circ, text{ leaving } 90^\\circ \\text{ for the inner quadrilateral's corners.}"
       },
       {
         "explanation": "b) Relate the areas.",

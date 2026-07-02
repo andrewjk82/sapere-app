@@ -502,7 +502,7 @@ export const Y9_CH11H_QUESTIONS = [
       },
       {
         "explanation": "Determine the coordinate intercepts.",
-        "workingOut": "x\\text{-intercepts}: (\\pm 3, 0), \\quad y\\text{-intercepts}: (0, \\pm 3)"
+        "workingOut": "x\\text{-intercepts}: (\\pm 3, 0), quad y\\text{-intercepts}: (0, pm 3)"
       }
     ],
     "graphData": {
@@ -541,7 +541,7 @@ export const Y9_CH11H_QUESTIONS = [
       },
       {
         "explanation": "Determine the coordinate intercepts.",
-        "workingOut": "x\\text{-intercepts}: (\\pm \\sqrt{5}, 0), \\quad y\\text{-intercepts}: (0, \\pm \\sqrt{5})"
+        "workingOut": "x\\text{-intercepts}: (\\pm \\sqrt{5}, 0), quad y\\text{-intercepts}: (0, pm \\sqrt{5})"
       }
     ],
     "graphData": {
@@ -580,7 +580,7 @@ export const Y9_CH11H_QUESTIONS = [
       },
       {
         "explanation": "Determine the coordinate intercepts.",
-        "workingOut": "x\\text{-intercepts}: (\\pm 6, 0), \\quad y\\text{-intercepts}: (0, \\pm 6)"
+        "workingOut": "x\\text{-intercepts}: (\\pm 6, 0), quad y\\text{-intercepts}: (0, pm 6)"
       }
     ],
     "graphData": {
@@ -619,7 +619,7 @@ export const Y9_CH11H_QUESTIONS = [
       },
       {
         "explanation": "Determine the coordinate intercepts.",
-        "workingOut": "x\\text{-intercepts}: (\\pm 2\\sqrt{3}, 0), \\quad y\\text{-intercepts}: (0, \\pm 2\\sqrt{3})"
+        "workingOut": "x\\text{-intercepts}: (\\pm 2\\sqrt{3}, 0), quad y\\text{-intercepts}: (0, pm 2\\sqrt{3})"
       }
     ],
     "graphData": {
@@ -658,7 +658,7 @@ export const Y9_CH11H_QUESTIONS = [
       },
       {
         "explanation": "Determine the coordinate intercepts.",
-        "workingOut": "x\\text{-intercepts}: (\\pm 2\\sqrt{2}, 0), \\quad y\\text{-intercepts}: (0, \\pm 2\\sqrt{2})"
+        "workingOut": "x\\text{-intercepts}: (\\pm 2\\sqrt{2}, 0), quad y\\text{-intercepts}: (0, pm 2\\sqrt{2})"
       }
     ],
     "graphData": {
@@ -697,7 +697,7 @@ export const Y9_CH11H_QUESTIONS = [
       },
       {
         "explanation": "Determine the coordinate intercepts.",
-        "workingOut": "x\\text{-intercepts}: (\\pm 7, 0), \\quad y\\text{-intercepts}: (0, \\pm 7)"
+        "workingOut": "x\\text{-intercepts}: (\\pm 7, 0), quad y\\text{-intercepts}: (0, pm 7)"
       }
     ],
     "graphData": {
@@ -736,7 +736,7 @@ export const Y9_CH11H_QUESTIONS = [
       },
       {
         "explanation": "Determine the coordinate intercepts.",
-        "workingOut": "x\\text{-intercepts}: (\\pm 3\\sqrt{2}, 0), \\quad y\\text{-intercepts}: (0, \\pm 3\\sqrt{2})"
+        "workingOut": "x\\text{-intercepts}: (\\pm 3\\sqrt{2}, 0), quad y\\text{-intercepts}: (0, pm 3\\sqrt{2})"
       }
     ],
     "graphData": {
@@ -775,7 +775,7 @@ export const Y9_CH11H_QUESTIONS = [
       },
       {
         "explanation": "Determine the coordinate intercepts.",
-        "workingOut": "x\\text{-intercepts}: (\\pm 3\\sqrt{3}, 0), \\quad y\\text{-intercepts}: (0, \\pm 3\\sqrt{3})"
+        "workingOut": "x\\text{-intercepts}: (\\pm 3\\sqrt{3}, 0), quad y\\text{-intercepts}: (0, pm 3\\sqrt{3})"
       }
     ],
     "graphData": {
@@ -814,7 +814,7 @@ export const Y9_CH11H_QUESTIONS = [
       },
       {
         "explanation": "Determine the coordinate intercepts.",
-        "workingOut": "x\\text{-intercepts}: (\\pm 2\\sqrt{5}, 0), \\quad y\\text{-intercepts}: (0, \\pm 2\\sqrt{5})"
+        "workingOut": "x\\text{-intercepts}: (\\pm 2\\sqrt{5}, 0), quad y\\text{-intercepts}: (0, pm 2\\sqrt{5})"
       }
     ],
     "graphData": {

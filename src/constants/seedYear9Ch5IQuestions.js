@@ -279,7 +279,7 @@ export const Y9_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Express upstream and downstream speeds.",
-        "workingOut": "\\text{Up} = v - 4, \\text{Down} = v + 4"
+        "workingOut": "\\text{Up} = v - 4, text{Down} = v + 4"
       },
       {
         "explanation": "Write the equation.",
@@ -306,7 +306,7 @@ export const Y9_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find butter-fat in A and B.",
-        "workingOut": "\\text{A} = 30 \\times \\frac{p}{100}, \\text{B} = 15 \\times 0.02 = 0.3"
+        "workingOut": "\\text{A} = 30 \\times \\frac{p}{100}, text{B} = 15 \\times 0.02 = 0.3"
       },
       {
         "explanation": "Find final butter-fat.",
@@ -449,4 +449,3 @@ export const Y9_CH5I_QUESTIONS = [
     "graphData": null
   }
 ];
-

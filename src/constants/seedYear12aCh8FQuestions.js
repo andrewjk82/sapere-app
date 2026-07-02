@@ -268,7 +268,7 @@ export const Y12A_CH8F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the parameters of the infinite geometric series representing the total volume.",
-        "workingOut": "a = 800, \\quad r = \\frac{19}{20}"
+        "workingOut": "a = 800, quad r = \\frac{19}{20}"
       },
       {
         "explanation": "Use the infinite GP sum formula: \\( S_{\\infty} = \\frac{a}{1-r} \\).",

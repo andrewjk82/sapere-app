@@ -629,7 +629,7 @@ export const Y7_CH1J_QUESTIONS = [
       },
       {
         "explanation": "State the quotient and the final remainder.",
-        "workingOut": "\\(\\text{Quotient} = 65, \\quad \\text{Remainder} = 3\\)",
+        "workingOut": "\\(\\text{Quotient} = 65, quad \\text{Remainder} = 3\\)",
         "graphData": null
       }
     ],
@@ -674,7 +674,7 @@ export const Y7_CH1J_QUESTIONS = [
       },
       {
         "explanation": "State the final quotient and remainder.",
-        "workingOut": "\\(\\text{Quotient} = 77, \\quad \\text{Remainder} = 3\\)",
+        "workingOut": "\\(\\text{Quotient} = 77, quad \\text{Remainder} = 3\\)",
         "graphData": null
       }
     ],
@@ -779,7 +779,7 @@ export const Y7_CH1J_QUESTIONS = [
       },
       {
         "explanation": "Combine the quotients and state the final remainder.",
-        "workingOut": "\\(\\text{Quotient} = 9737, \\quad \\text{Remainder} = 5\\)",
+        "workingOut": "\\(\\text{Quotient} = 9737, quad \\text{Remainder} = 5\\)",
         "graphData": null
       }
     ],
@@ -834,7 +834,7 @@ export const Y7_CH1J_QUESTIONS = [
       },
       {
         "explanation": "Combine the quotients and state the remainder.",
-        "workingOut": "\\(\\text{Quotient} = 3286, \\quad \\text{Remainder} = 3\\)",
+        "workingOut": "\\(\\text{Quotient} = 3286, quad \\text{Remainder} = 3\\)",
         "graphData": null
       }
     ],
@@ -874,7 +874,7 @@ export const Y7_CH1J_QUESTIONS = [
       },
       {
         "explanation": "Divide 54 by 6 first, then divide 6 by 6, and finally the 0 units.",
-        "workingOut": "\\(54 \\div 6 = 9, \\quad 6 \\div 6 = 1, \\quad 0 \\div 6 = 0\\)",
+        "workingOut": "\\(54 \\div 6 = 9, quad 6 \\div 6 = 1, quad 0 \\div 6 = 0\\)",
         "graphData": null
       },
       {
@@ -924,7 +924,7 @@ export const Y7_CH1J_QUESTIONS = [
       },
       {
         "explanation": "The quotient 57 represents the filled boxes, and the remainder 1 represents the leftover tennis balls.",
-        "workingOut": "\\(\\text{Boxes} = 57, \\quad \\text{Leftover} = 1\\)",
+        "workingOut": "\\(\\text{Boxes} = 57, quad \\text{Leftover} = 1\\)",
         "graphData": null
       }
     ],
@@ -1153,7 +1153,7 @@ export const Y7_CH1J_QUESTIONS = [
       },
       {
         "explanation": "State the quotient (full cartons) and remainder (leftover eggs).",
-        "workingOut": "\\(\\text{Cartons} = 34, \\quad \\text{Leftover} = 7\\)",
+        "workingOut": "\\(\\text{Cartons} = 34, quad \\text{Leftover} = 7\\)",
         "graphData": null
       }
     ],
@@ -1203,7 +1203,7 @@ export const Y7_CH1J_QUESTIONS = [
       },
       {
         "explanation": "State the quotient (packages) and remainder (leftover cans).",
-        "workingOut": "\\(\\text{Packages} = 972, \\quad \\text{Leftover} = 2\\)",
+        "workingOut": "\\(\\text{Packages} = 972, quad \\text{Leftover} = 2\\)",
         "graphData": null
       }
     ],

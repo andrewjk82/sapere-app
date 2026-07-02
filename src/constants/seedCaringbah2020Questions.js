@@ -88,8 +88,8 @@ export const CARINGBAH_2020_QUESTIONS = [
     "q": "For the function $f(x) = \\dfrac{x^3}{3} - 5x^2 + 2x + 10$, the gradient is $-14$ at two points. What are the values of the $x$-coordinates at these points?",
     "a": "1",
     "opts": [
-      "$-8,\\ 2$",
-      "$8,\\ 2$",
+      "$-8, 2$",
+      "$8, 2$",
       "$8,\\ -2$",
       "$-8,\\ -2$"
     ],
@@ -129,10 +129,10 @@ export const CARINGBAH_2020_QUESTIONS = [
     "q": "What is the domain of the function $f(x) = \\sqrt{x} + \\dfrac{1}{\\sqrt{2-x}}$?",
     "a": "1",
     "opts": [
-      "$(0,\\ 2)$",
-      "$[0,\\ 2)$",
-      "$(0,\\ 2]$",
-      "$[0,\\ 2]$"
+      "$(0, 2)$",
+      "$[0, 2)$",
+      "$(0, 2]$",
+      "$[0, 2]$"
     ],
     "h": "For $\\sqrt{x}$ we need $x \\geq 0$. For $\\frac{1}{\\sqrt{2-x}}$ we need $2-x > 0$. Combine both conditions.",
     "s": "For $\\sqrt{x}$: need $x \\geq 0$. For $\\frac{1}{\\sqrt{2-x}}$: need $2-x > 0$, i.e., $x < 2$ (strict inequality since the denominator cannot be zero). Combining: $0 \\leq x < 2$, written as $[0, 2)$.",
@@ -151,7 +151,7 @@ export const CARINGBAH_2020_QUESTIONS = [
       },
       {
         "explanation": "Write the domain in interval notation. The left endpoint is included (closed bracket) and the right is excluded (open bracket).",
-        "workingOut": "[0,\\ 2)"
+        "workingOut": "[0, 2)"
       }
     ]
   },
@@ -213,11 +213,11 @@ export const CARINGBAH_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For \\(f(x) = \\frac{1}{2}\\sin 4x\\), identify the amplitude as the coefficient of sine, and the period as \\(\\frac{2\\pi}{b}\\) where \\(b\\) is the coefficient of \\(x\\).",
-        "workingOut": "A_f = \\tfrac{1}{2}, \\quad T_f = \\dfrac{2\\pi}{4} = \\dfrac{\\pi}{2}"
+        "workingOut": "A_f = \\tfrac{1}{2}, quad T_f = \\dfrac{2\\pi}{4} = \\dfrac{\\pi}{2}"
       },
       {
         "explanation": "For \\(g(x) = \\sin 2x\\), identify the amplitude and period in the same way.",
-        "workingOut": "A_g = 1, \\quad T_g = \\dfrac{2\\pi}{2} = \\pi"
+        "workingOut": "A_g = 1, quad T_g = \\dfrac{2\\pi}{2} = \\pi"
       },
       {
         "explanation": "Compare amplitudes: the amplitude increases from \\(\\frac{1}{2}\\) to \\(1\\), which is a doubling.",
@@ -246,23 +246,23 @@ export const CARINGBAH_2020_QUESTIONS = [
       "The largest possible range is 5 times the IQR"
     ],
     "h": "With no outliers, the minimum and maximum lie within $1.5 \\times \\text{IQR}$ of the lower and upper quartiles. Use this to express the range in terms of the IQR.",
-    "s": "With no outliers, all data lie within $Q_1 - 1.5\\times\\text{IQR}$ and $Q_3 + 1.5\\times\\text{IQR}$. The maximum possible range is $(Q_3 + 1.5\\,\\text{IQR}) - (Q_1 - 1.5\\,\\text{IQR}) = (Q_3 - Q_1) + 3\\,\\text{IQR} = \\text{IQR} + 3\\,\\text{IQR} = 4\\,\\text{IQR}$.",
+    "s": "With no outliers, all data lie within $Q_1 - 1.5\\times\\text{IQR}$ and $Q_3 + 1.5\\times\\text{IQR}$. The maximum possible range is $(Q_3 + 1.5\\, text{IQR}) - (Q_1 - 1.5\\, text{IQR}) = (Q_3 - Q_1) + 3\\, text{IQR} = \\text{IQR} + 3\\, text{IQR} = 4\\, text{IQR}$.",
     "solutionSteps": [
       {
         "explanation": "Recall the outlier rule: a data value is an outlier if it lies more than \\(1.5 \\times \\text{IQR}\\) below \\(Q_1\\) or above \\(Q_3\\). If there are no outliers, the data must lie within these fences.",
-        "workingOut": "\\text{Lower fence} = Q_1 - 1.5\\,\\text{IQR}, \\quad \\text{Upper fence} = Q_3 + 1.5\\,\\text{IQR}"
+        "workingOut": "\\text{Lower fence} = Q_1 - 1.5\\, text{IQR}, quad \\text{Upper fence} = Q_3 + 1.5\\, text{IQR}"
       },
       {
         "explanation": "The maximum possible range occurs when the minimum is at the lower fence and the maximum is at the upper fence.",
-        "workingOut": "\\text{Max range} = (Q_3 + 1.5\\,\\text{IQR}) - (Q_1 - 1.5\\,\\text{IQR})"
+        "workingOut": "\\text{Max range} = (Q_3 + 1.5\\, text{IQR}) - (Q_1 - 1.5\\, text{IQR})"
       },
       {
         "explanation": "Expand the expression.",
-        "workingOut": "= (Q_3 - Q_1) + 3\\,\\text{IQR}"
+        "workingOut": "= (Q_3 - Q_1) + 3\\, text{IQR}"
       },
       {
         "explanation": "Substitute \\(Q_3 - Q_1 = \\text{IQR}\\).",
-        "workingOut": "= \\text{IQR} + 3\\,\\text{IQR} = 4\\,\\text{IQR}"
+        "workingOut": "= \\text{IQR} + 3\\, text{IQR} = 4\\, text{IQR}"
       }
     ]
   },
@@ -287,7 +287,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rearrange \\(3x + 4y + 7 = 0\\) into gradient-intercept form \\(y = mx + b\\) to identify the gradient.",
-        "workingOut": "4y = -3x - 7 \\implies y = -\\dfrac{3}{4}x - \\dfrac{7}{4}, \\quad m = -\\dfrac{3}{4}"
+        "workingOut": "4y = -3x - 7 \\implies y = -\\dfrac{3}{4}x - \\dfrac{7}{4}, quad m = -\\dfrac{3}{4}"
       },
       {
         "explanation": "The gradient of a perpendicular line is the negative reciprocal of the original gradient.",
@@ -361,7 +361,7 @@ export const CARINGBAH_2020_QUESTIONS = [
       },
       {
         "explanation": "Identify the inner sum as an arithmetic series with first term \\(a = 1\\), last term \\(l = 2n\\), and \\(2n\\) terms in total.",
-        "workingOut": "a = 1,\\quad l = 2n,\\quad n_{\\text{terms}} = 2n"
+        "workingOut": "a = 1, quad l = 2n, quad n_{\\text{terms}} = 2n"
       },
       {
         "explanation": "Apply the arithmetic series sum formula \\(S = \\frac{n_{\\text{terms}}}{2}(a + l)\\).",
@@ -401,7 +401,7 @@ export const CARINGBAH_2020_QUESTIONS = [
       },
       {
         "explanation": "Match with \\(a + \\sqrt{b}\\): the rational part gives \\(a\\), and the irrational part gives \\(\\sqrt{b} = \\frac{3\\sqrt{2}}{14}\\), so solve for \\(b\\) by squaring.",
-        "workingOut": "a = \\dfrac{6}{7}, \\quad \\sqrt{b} = \\dfrac{3\\sqrt{2}}{14}"
+        "workingOut": "a = \\dfrac{6}{7}, quad \\sqrt{b} = \\dfrac{3\\sqrt{2}}{14}"
       },
       {
         "explanation": "Square both sides to find \\(b\\).",
@@ -461,7 +461,7 @@ export const CARINGBAH_2020_QUESTIONS = [
       },
       {
         "explanation": "Since \\(A\\) is in the interval \\(0 \\leq x \\leq 6\\), the coordinate is \\(A = (3, 0)\\).",
-        "workingOut": "A = (3,\\ 0)"
+        "workingOut": "A = (3, 0)"
       },
       {
         "explanation": "For part (b), note that the curve is below the \\(x\\)-axis on \\([0,3]\\) (where \\(y < 0\\)) and above on \\([3,6]\\) (where \\(y > 0\\)). Split the integral at \\(x = 3\\).",
@@ -469,7 +469,7 @@ export const CARINGBAH_2020_QUESTIONS = [
       },
       {
         "explanation": "Integrate and evaluate the antiderivative at the endpoints for each sub-interval. At \\(x=3\\): \\(\\frac{27}{3}-\\frac{9}{2}-18 = 9-4.5-18=-13.5\\). At \\(x=0\\): \\(0\\).",
-        "workingOut": "\\int_0^3 = -13.5 - 0 = -13.5, \\quad \\left|-13.5\\right| = 13.5"
+        "workingOut": "\\int_0^3 = -13.5 - 0 = -13.5, quad \\left|-13.5\\right| = 13.5"
       },
       {
         "explanation": "For the second integral: at \\(x=6\\): \\(\\frac{216}{3}-\\frac{36}{2}-36 = 72-18-36=18\\). At \\(x=3\\): \\(-13.5\\).",
@@ -593,7 +593,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "a": "$x = 0,\\ \\dfrac{\\pi}{2}$",
     "opts": [],
     "h": "Remove the absolute value by considering two cases: $2\\cos x - 1 = 1$ and $2\\cos x - 1 = -1$.",
-    "s": "Case 1: $2\\cos x - 1 = 1 \\Rightarrow \\cos x = 1 \\Rightarrow x = 0$.\nCase 2: $2\\cos x - 1 = -1 \\Rightarrow \\cos x = 0 \\Rightarrow x = \\frac{\\pi}{2}$ (within $[0,\\pi]$).\nSolutions: $x = 0,\\ \\frac{\\pi}{2}$.",
+    "s": "Case 1: $2\\cos x - 1 = 1 \\Rightarrow \\cos x = 1 \\Rightarrow x = 0$.\nCase 2: $2\\cos x - 1 = -1 \\Rightarrow \\cos x = 0 \\Rightarrow x = \\frac{\\pi}{2}$ (within $[0, pi]$).\nSolutions: $x = 0,\\ \\frac{\\pi}{2}$.",
     "solutionSteps": [
       {
         "explanation": "Remove the absolute value by writing two cases: the expression inside equals \\(+1\\) or \\(-1\\).",
@@ -605,7 +605,7 @@ export const CARINGBAH_2020_QUESTIONS = [
       },
       {
         "explanation": "Solve Case 2: \\(2\\cos x - 1 = -1\\).",
-        "workingOut": "2\\cos x = 0 \\implies \\cos x = 0 \\implies x = \\dfrac{\\pi}{2}$ (in $[0,\\pi]$)"
+        "workingOut": "2\\cos x = 0 \\implies \\cos x = 0 \\implies x = \\dfrac{\\pi}{2}$ (in $[0, pi]$)"
       },
       {
         "explanation": "Verify both solutions are in the domain \\(0 \\leq x \\leq \\pi\\) and state the answer.",
@@ -873,7 +873,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify \\(u = x\\) and \\(v = \\sin 2x\\) for the product rule \\(\\frac{d}{dx}[uv] = u'v + uv'\\).",
-        "workingOut": "u = x,\\ u' = 1 \\qquad v = \\sin 2x,\\ v' = 2\\cos 2x"
+        "workingOut": "u = x, u' = 1 \\qquad v = \\sin 2x, v' = 2\\cos 2x"
       },
       {
         "explanation": "Apply the product rule.",
@@ -1121,19 +1121,19 @@ export const CARINGBAH_2020_QUESTIONS = [
     "source": "Caringbah 2020 Trial Q33",
     "type": "short_answer",
     "difficulty": "hard",
-    "q": "(a) On the number plane, draw the graphs of $y = \\cos\\pi x$ and $y = 1 - |x|$ for $-3 \\leq x \\leq 3$.\n\n(b) Hence find the number of solutions of the equation $\\cos\\pi x = 1 - |x|$ in the domain $(-\\infty, \\infty)$.",
+    "q": "(a) On the number plane, draw the graphs of $y = \\cos\\pi x$ and $y = 1 - |x|$ for $-3 \\leq x \\leq 3$.\n\n(b) Hence find the number of solutions of the equation $\\cos\\pi x = 1 - |x|$ in the domain $(-\\infty, infty)$.",
     "a": "(a) See sketches.\n\n(b) $5$ solutions",
     "opts": [],
     "h": "For (a), $y = \\cos\\pi x$ has period $2$ and amplitude $1$. $y = 1-|x|$ is a V-shape with vertex at $(0,1)$. For (b), count all intersection points over all real $x$.",
-    "s": "(a) $y = \\cos\\pi x$: period $= \\frac{2\\pi}{\\pi} = 2$, amplitude $1$. $y = 1-|x|$: V-shape, vertex $(0,1)$, passes through $(-1,0)$ and $(1,0)$, then is negative for $|x|>1$.\n\n(b) The graphs intersect at $5$ points in the domain $(-\\infty, \\infty)$.",
+    "s": "(a) $y = \\cos\\pi x$: period $= \\frac{2\\pi}{\\pi} = 2$, amplitude $1$. $y = 1-|x|$: V-shape, vertex $(0,1)$, passes through $(-1,0)$ and $(1,0)$, then is negative for $|x|>1$.\n\n(b) The graphs intersect at $5$ points in the domain $(-\\infty, infty)$.",
     "solutionSteps": [
       {
         "explanation": "Analyse \\(y = \\cos\\pi x\\): it has period \\(\\frac{2\\pi}{\\pi} = 2\\), amplitude \\(1\\), and passes through \\((0,1)\\), \\((1,0)\\), \\((2,-1)\\), \\((-1,0)\\), \\((-2,-1)\\), etc.",
-        "workingOut": "\\text{Period} = 2, \\quad \\text{Amplitude} = 1"
+        "workingOut": "\\text{Period} = 2, quad \\text{Amplitude} = 1"
       },
       {
         "explanation": "Analyse \\(y = 1 - |x|\\): it is a V-shape with vertex \\((0,1)\\), crossing the \\(x\\)-axis at \\(x = \\pm 1\\), and is negative for \\(|x| > 1\\).",
-        "workingOut": "y = 1 - |x|: \\text{vertex at }(0,1), \\text{ x-intercepts at }\\pm 1"
+        "workingOut": "y = 1 - |x|: \\text{vertex at }(0,1), text{ x-intercepts at }\\pm 1"
       },
       {
         "explanation": "From the graph, the two curves intersect at exactly \\(5\\) points over all real \\(x\\): one at \\(x=0\\) and two pairs of symmetric intersections.",
@@ -1177,7 +1177,7 @@ export const CARINGBAH_2020_QUESTIONS = [
       },
       {
         "explanation": "Match coefficients with \\(ay^2 + by + 2\\).",
-        "workingOut": "a = 6, \\quad b = 8"
+        "workingOut": "a = 6, quad b = 8"
       }
     ]
   },

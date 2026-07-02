@@ -321,7 +321,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "a": "$\\theta = 0,\\, \\dfrac{2\\pi}{3}$",
     "opts": [],
     "h": "Write in auxiliary angle form $R\\cos(\\theta - \\phi)$. Find $R$ and $\\phi$, then solve.",
-    "s": "$R = \\sqrt{1^2 + (\\sqrt{3})^2} = 2$. $\\cos\\phi = 1/2$, $\\sin\\phi = \\sqrt{3}/2$, so $\\phi = \\pi/3$.\n\n$2\\cos(\\theta - \\pi/3) = 1 \\Rightarrow \\cos(\\theta - \\pi/3) = 1/2$.\n\n$\\theta - \\pi/3 = \\pm\\pi/3$: $\\theta = 2\\pi/3$ or $\\theta = 0$.\n\nBoth in $[0,\\pi]$: $\\theta = 0$ and $\\theta = 2\\pi/3$.",
+    "s": "$R = \\sqrt{1^2 + (\\sqrt{3})^2} = 2$. $\\cos\\phi = 1/2$, $\\sin\\phi = \\sqrt{3}/2$, so $\\phi = \\pi/3$.\n\n$2\\cos(\\theta - \\pi/3) = 1 \\Rightarrow \\cos(\\theta - \\pi/3) = 1/2$.\n\n$\\theta - \\pi/3 = \\pm\\pi/3$: $\\theta = 2\\pi/3$ or $\\theta = 0$.\n\nBoth in $[0, pi]$: $\\theta = 0$ and $\\theta = 2\\pi/3$.",
     "solutionSteps": [
       {
         "explanation": "Convert \\(\\cos\\theta + \\sqrt{3}\\sin\\theta\\) to the form \\(R\\cos(\\theta - \\phi)\\) by computing \\(R = \\sqrt{a^2+b^2}\\) with \\(a=1\\), \\(b=\\sqrt{3}\\).",
@@ -340,7 +340,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
         "workingOut": "\\theta - \\dfrac{\\pi}{3} = \\dfrac{\\pi}{3} \\implies \\theta = \\dfrac{2\\pi}{3}; \\quad \\theta - \\dfrac{\\pi}{3} = -\\dfrac{\\pi}{3} \\implies \\theta = 0"
       },
       {
-        "explanation": "Verify both solutions lie in \\([0,\\pi]\\) and satisfy the original equation.",
+        "explanation": "Verify both solutions lie in \\([0, pi]\\) and satisfy the original equation.",
         "workingOut": "\\theta=0: 1+0=1 \\;\\checkmark; \\quad \\theta=\\tfrac{2\\pi}{3}: -\\tfrac{1}{2}+\\tfrac{\\sqrt{3}\\cdot\\sqrt{3}}{2}=-\\tfrac{1}{2}+\\tfrac{3}{2}=1 \\;\\checkmark"
       }
     ]
@@ -441,7 +441,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The midpoint of the hypotenuse is equidistant from all three vertices if and only if there is a right angle at \\(A\\). Compute \\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC}\\) to check perpendicularity.",
-        "workingOut": "\\overrightarrow{AB} = \\mathbf{q} - \\mathbf{p}, \\quad \\overrightarrow{AC} = \\mathbf{q}"
+        "workingOut": "\\overrightarrow{AB} = \\mathbf{q} - \\mathbf{p}, quad \\overrightarrow{AC} = \\mathbf{q}"
       },
       {
         "explanation": "Compute the dot product.",
@@ -464,12 +464,12 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "q": "Find the inverse function of $f(x) = \\sqrt{3 - \\cos^2 x}$ for a suitable restricted domain. State the domain and range of $f^{-1}$.",
     "a": "$f^{-1}(x) = \\arccos\\!\\left(\\sqrt{3-x^2}\\right)$, domain $[\\sqrt{2}, \\sqrt{3}]$, range $[0, \\pi/2]$",
     "opts": [],
-    "h": "Restrict domain to $[0, \\pi/2]$. Swap $x$ and $y$ and solve for $y$.",
-    "s": "On $[0,\\pi/2]$: $f$ increases from $\\sqrt{3-1}=\\sqrt{2}$ to $\\sqrt{3-0}=\\sqrt{3}$.\n\nSwap: $x = \\sqrt{3-\\cos^2 y}$, $x^2 = 3-\\cos^2 y$, $\\cos^2 y = 3-x^2$, $\\cos y = \\sqrt{3-x^2}$ (non-negative on $[0,\\pi/2]$), $y = \\arccos(\\sqrt{3-x^2})$.\n\nDomain of $f^{-1} = [\\sqrt{2},\\sqrt{3}]$, range $= [0,\\pi/2]$.",
+    "h": "Restrict domain to $[0, pi/2]$. Swap $x$ and $y$ and solve for $y$.",
+    "s": "On $[0, pi/2]$: $f$ increases from $\\sqrt{3-1}=\\sqrt{2}$ to $\\sqrt{3-0}=\\sqrt{3}$.\n\nSwap: $x = \\sqrt{3-\\cos^2 y}$, $x^2 = 3-\\cos^2 y$, $\\cos^2 y = 3-x^2$, $\\cos y = \\sqrt{3-x^2}$ (non-negative on $[0, pi/2]$), $y = \\arccos(\\sqrt{3-x^2})$.\n\nDomain of $f^{-1} = [\\sqrt{2}, sqrt{3}]$, range $= [0, pi/2]$.",
     "solutionSteps": [
       {
-        "explanation": "Restrict to \\([0,\\pi/2]\\) where \\(f\\) is monotone (increasing from \\(\\sqrt{2}\\) to \\(\\sqrt{3}\\)).",
-        "workingOut": "f:[0,\\tfrac{\\pi}{2}] \\to [\\sqrt{2},\\sqrt{3}]"
+        "explanation": "Restrict to \\([0, pi/2]\\) where \\(f\\) is monotone (increasing from \\(\\sqrt{2}\\) to \\(\\sqrt{3}\\)).",
+        "workingOut": "f:[0, tfrac{\\pi}{2}] \\to [\\sqrt{2}, sqrt{3}]"
       },
       {
         "explanation": "Swap \\(x\\) and \\(y\\) and square both sides.",
@@ -485,7 +485,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "State domain and range of \\(f^{-1}\\).",
-        "workingOut": "\\text{Domain: } [\\sqrt{2},\\sqrt{3}]; \\quad \\text{Range: } [0,\\tfrac{\\pi}{2}]"
+        "workingOut": "\\text{Domain: } [\\sqrt{2}, sqrt{3}]; \\quad \\text{Range: } [0, tfrac{\\pi}{2}]"
       }
     ]
   },
@@ -729,11 +729,11 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Expand \\(R\\cos(t-\\phi) = R\\cos\\phi\\cos t + R\\sin\\phi\\sin t\\) and match with \\(\\cos t + \\sqrt{3}\\sin t\\).",
-        "workingOut": "R\\cos\\phi = 1,\\quad R\\sin\\phi = \\sqrt{3}"
+        "workingOut": "R\\cos\\phi = 1, quad R\\sin\\phi = \\sqrt{3}"
       },
       {
         "explanation": "Compute \\(R\\) and \\(\\phi\\).",
-        "workingOut": "R = \\sqrt{1+3} = 2,\\quad \\tan\\phi = \\sqrt{3} \\implies \\phi = \\dfrac{\\pi}{3}"
+        "workingOut": "R = \\sqrt{1+3} = 2, quad \\tan\\phi = \\sqrt{3} \\implies \\phi = \\dfrac{\\pi}{3}"
       },
       {
         "explanation": "Write the result.",
@@ -753,7 +753,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "a": "$t \\in \\left[0, \\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, 2\\pi\\right] \\cup$ (corresponding in $[2\\pi,4\\pi]$)",
     "opts": [],
     "h": "Inequality becomes $2\\cos(t-\\pi/3) \\geq \\sqrt{3}$, i.e. $\\cos(u) \\geq \\sqrt{3}/2$.",
-    "s": "$2\\cos(t-\\pi/3) \\geq \\sqrt{3} \\Rightarrow \\cos(t-\\pi/3) \\geq \\dfrac{\\sqrt{3}}{2}$.\n\nLet $u = t - \\pi/3$; $\\cos u \\geq \\sqrt{3}/2$ when $u \\in [-\\pi/6, \\pi/6]$ in each period.\n\n$u \\in [-\\pi/6, \\pi/6]$: $t \\in [-\\pi/6+\\pi/3, \\pi/6+\\pi/3] = [\\pi/6, \\pi/2]$.\n$u \\in [2\\pi-\\pi/6, 2\\pi+\\pi/6]$: $t \\in [2\\pi+\\pi/6, 2\\pi+\\pi/2]$.\nand so on for the full $[0,4\\pi]$ range.",
+    "s": "$2\\cos(t-\\pi/3) \\geq \\sqrt{3} \\Rightarrow \\cos(t-\\pi/3) \\geq \\dfrac{\\sqrt{3}}{2}$.\n\nLet $u = t - \\pi/3$; $\\cos u \\geq \\sqrt{3}/2$ when $u \\in [-\\pi/6, pi/6]$ in each period.\n\n$u \\in [-\\pi/6, pi/6]$: $t \\in [-\\pi/6+\\pi/3, pi/6+\\pi/3] = [\\pi/6, pi/2]$.\n$u \\in [2\\pi-\\pi/6, 2\\pi+\\pi/6]$: $t \\in [2\\pi+\\pi/6, 2\\pi+\\pi/2]$.\nand so on for the full $[0,4\\pi]$ range.",
     "solutionSteps": [
       {
         "explanation": "Divide by 2 to get a standard cosine inequality.",
@@ -761,15 +761,15 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Let \\(u = t - \\pi/3\\); range for \\(u\\) when \\(t \\in [0,4\\pi]\\) is \\([-\\pi/3, 11\\pi/3]\\).",
-        "workingOut": "u \\in \\left[-\\dfrac{\\pi}{3},\\, \\dfrac{11\\pi}{3}\\right]"
+        "workingOut": "u \\in \\left[-\\dfrac{\\pi}{3},\\, dfrac{11\\pi}{3}\\right]"
       },
       {
-        "explanation": "\\(\\cos u \\geq \\sqrt{3}/2\\) when \\(u \\in [-\\pi/6, \\pi/6] \\cup [2\\pi-\\pi/6, 2\\pi+\\pi/6]\\) (within two periods).",
-        "workingOut": "u \\in \\left[-\\dfrac{\\pi}{6},\\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6},\\dfrac{13\\pi}{6}\\right]"
+        "explanation": "\\(\\cos u \\geq \\sqrt{3}/2\\) when \\(u \\in [-\\pi/6, pi/6] \\cup [2\\pi-\\pi/6, 2\\pi+\\pi/6]\\) (within two periods).",
+        "workingOut": "u \\in \\left[-\\dfrac{\\pi}{6}, dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, dfrac{13\\pi}{6}\\right]"
       },
       {
         "explanation": "Convert back to \\(t = u + \\pi/3\\).",
-        "workingOut": "t \\in \\left[\\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}\\right] \\cup \\left[\\dfrac{13\\pi}{6}, \\dfrac{5\\pi}{2}\\right]"
+        "workingOut": "t \\in \\left[\\dfrac{\\pi}{6}, dfrac{\\pi}{2}\\right] \\cup \\left[\\dfrac{13\\pi}{6}, dfrac{5\\pi}{2}\\right]"
       }
     ]
   },
@@ -781,11 +781,11 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "source": "Abbotsleigh 2020 Trial Q13d(i)",
     "type": "short_answer",
     "difficulty": "hard",
-    "q": "Find the $x$-intercepts of $y = \\sin x + \\sin 2x$ in $[-\\pi, \\pi]$.",
+    "q": "Find the $x$-intercepts of $y = \\sin x + \\sin 2x$ in $[-\\pi, pi]$.",
     "a": "$x = 0, \\pm\\pi, \\pm\\dfrac{2\\pi}{3}$",
     "opts": [],
     "h": "Use $\\sin 2x = 2\\sin x\\cos x$ to factor: $\\sin x(1 + 2\\cos x) = 0$.",
-    "s": "$\\sin x + 2\\sin x\\cos x = \\sin x(1+2\\cos x) = 0$.\n\n$\\sin x = 0$: $x = 0, \\pm\\pi$.\n$\\cos x = -1/2$: $x = \\pm 2\\pi/3$.",
+    "s": "$\\sin x + 2\\sin x\\cos x = \\sin x(1+2\\cos x) = 0$.\n\n$\\sin x = 0$: $x = 0, pm\\pi$.\n$\\cos x = -1/2$: $x = \\pm 2\\pi/3$.",
     "solutionSteps": [
       {
         "explanation": "Use \\(\\sin 2x = 2\\sin x \\cos x\\) to factorise.",
@@ -793,10 +793,10 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Solve each factor.",
-        "workingOut": "\\sin x = 0 \\implies x = 0, \\pm\\pi"
+        "workingOut": "\\sin x = 0 \\implies x = 0, pm\\pi"
       },
       {
-        "explanation": "Solve the second factor in \\([-\\pi,\\pi]\\).",
+        "explanation": "Solve the second factor in \\([-\\pi, pi]\\).",
         "workingOut": "\\cos x = -\\dfrac{1}{2} \\implies x = \\pm\\dfrac{2\\pi}{3}"
       }
     ]

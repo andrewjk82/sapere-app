@@ -241,7 +241,7 @@ export const Y8_CH16A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify pages with pictures and total pages.",
-        "workingOut": "\\text{Favourable} = 24, \\quad \\text{Total} = 160"
+        "workingOut": "\\text{Favourable} = 24, quad \\text{Total} = 160"
       },
       {
         "explanation": "Write the initial probability fraction.",
@@ -315,7 +315,7 @@ export const Y8_CH16A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State total tickets and tickets bought.",
-        "workingOut": "\\text{Favourable} = 8, \\quad \\text{Total} = 360"
+        "workingOut": "\\text{Favourable} = 8, quad \\text{Total} = 360"
       },
       {
         "explanation": "Write down the probability fraction.",
@@ -418,7 +418,7 @@ export const Y8_CH16A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the total number of cards and face cards.",
-        "workingOut": "\\text{Total} = 52, \\quad \\text{Face cards} = 12"
+        "workingOut": "\\text{Total} = 52, quad \\text{Face cards} = 12"
       },
       {
         "explanation": "Find the number of cards that are not face cards.",
@@ -443,7 +443,7 @@ export const Y8_CH16A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify total alphabet letters and letters in SPIN.",
-        "workingOut": "\\text{Total} = 26, \\quad \\text{Letters in SPIN} = 4"
+        "workingOut": "\\text{Total} = 26, quad \\text{Letters in SPIN} = 4"
       },
       {
         "explanation": "Find the count of letters not in SPIN.",
@@ -493,7 +493,7 @@ export const Y8_CH16A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Count total integers and multiples of 5.",
-        "workingOut": "\\text{Total} = 15, \\quad \\text{Multiples of 5} = {5, 10, 15} \\implies 3"
+        "workingOut": "\\text{Total} = 15, quad \\text{Multiples of 5} = {5, 10, 15} \\implies 3"
       },
       {
         "explanation": "Find numbers not divisible by 5.",

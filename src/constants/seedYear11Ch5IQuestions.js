@@ -395,7 +395,7 @@ export const Y11_CH5I_QUESTIONS = [
       },
       {
         "explanation": "State centre and radius.",
-        "workingOut": "\\text{Centre: } (0,0), \\text{ Radius: } 3",
+        "workingOut": "\\text{Centre: } (0,0), text{ Radius: } 3",
         "graphData": null
       }
     ]
@@ -425,7 +425,7 @@ export const Y11_CH5I_QUESTIONS = [
       },
       {
         "explanation": "Identify \\(h, k, r\\).",
-        "workingOut": "h = -3, \\quad k = 0, \\quad r^2 = 16",
+        "workingOut": "h = -3, quad k = 0, quad r^2 = 16",
         "graphData": null
       },
       {
@@ -485,7 +485,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify parameters.",
-        "workingOut": "h = 0, \\quad k = 5, \\quad r^2 = 36",
+        "workingOut": "h = 0, quad k = 5, quad r^2 = 36",
         "graphData": null
       },
       {
@@ -1474,7 +1474,7 @@ export const Y11_CH5I_QUESTIONS = [
       },
       {
         "explanation": "Find intercepts. Set \\(x = 0 \\implies y = 5\\). Set \\(y = 0 \\implies (x+2)^2 = -1 \\implies \\text{No real solution}.\\)",
-        "workingOut": "\\text{y-intercept: } (0, 5), \\quad \\text{x-intercepts: None}",
+        "workingOut": "\\text{y-intercept: } (0, 5), quad \\text{x-intercepts: None}",
         "graphData": null
       },
       {
@@ -1670,7 +1670,7 @@ export const Y11_CH5I_QUESTIONS = [
       },
       {
         "explanation": "Identify centre and radius.",
-        "workingOut": "\\text{Centre: } (0, 2), \\quad r^2 = 9 \\implies \\text{Radius } r = 3",
+        "workingOut": "\\text{Centre: } (0, 2), quad r^2 = 9 \\implies \\text{Radius } r = 3",
         "graphData": null
       }
     ]
@@ -1699,7 +1699,7 @@ export const Y11_CH5I_QUESTIONS = [
       },
       {
         "explanation": "Identify parameters.",
-        "workingOut": "\\text{Centre: } (-4, 0), \\quad r^2 = 4 \\implies \\text{Radius } r = 2",
+        "workingOut": "\\text{Centre: } (-4, 0), quad r^2 = 4 \\implies \\text{Radius } r = 2",
         "graphData": null
       }
     ]
@@ -1728,7 +1728,7 @@ export const Y11_CH5I_QUESTIONS = [
       },
       {
         "explanation": "Extract parameters.",
-        "workingOut": "\\text{Centre: } (3, -4), \\quad r^2 = 36 \\implies \\text{Radius } r = 6",
+        "workingOut": "\\text{Centre: } (3, -4), quad r^2 = 36 \\implies \\text{Radius } r = 6",
         "graphData": null
       }
     ]
@@ -1757,7 +1757,7 @@ export const Y11_CH5I_QUESTIONS = [
       },
       {
         "explanation": "Extract properties.",
-        "workingOut": "\\text{Centre: } (5, -6), \\quad r^2 = 81 \\implies \\text{Radius } r = 9",
+        "workingOut": "\\text{Centre: } (5, -6), quad r^2 = 81 \\implies \\text{Radius } r = 9",
         "graphData": null
       }
     ]
@@ -2798,7 +2798,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify vertices.",
-        "workingOut": "V_1 = (3, -2), \\quad V_2 = (-3, -2), \\quad V_3 = (-3, 2)",
+        "workingOut": "V_1 = (3, -2), quad V_2 = (-3, -2), quad V_3 = (-3, 2)",
         "graphData": null
       },
       {
@@ -2842,7 +2842,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify vertices.",
-        "workingOut": "V_1 = (0,0), \\ V_2 = (-3,0), \\ V_3 = (2,0)",
+        "workingOut": "V_1 = (0,0), V_2 = (-3,0), V_3 = (2,0)",
         "graphData": null
       },
       {
@@ -2881,7 +2881,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find centres and radii.",
-        "workingOut": "C_1 = (2,0), \\ r_1 = 2 \\\\ C_2 = (-2,0), \\ r_2 = 2 \\\\ C_3 = (0,2), \\ r_3 = 2",
+        "workingOut": "C_1 = (2,0), r_1 = 2 \\\\ C_2 = (-2,0), r_2 = 2 \\\\ C_3 = (0,2), r_3 = 2",
         "graphData": null
       },
       {
@@ -2959,7 +2959,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify vertices.",
-        "workingOut": "V_1 = (-3, 0), \\ V_2 = (-3, -9), \\ V_3 = (-3, 2)",
+        "workingOut": "V_1 = (-3, 0), V_2 = (-3, -9), V_3 = (-3, 2)",
         "graphData": null
       },
       {
@@ -2998,7 +2998,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify vertices and orientation.",
-        "workingOut": "V_1=(0,0) \\text{ (down)}, \\ V_2=(0,2) \\text{ (down)}, \\ V_3=(3,0) \\text{ (down)}",
+        "workingOut": "V_1=(0,0) \\text{ (down)}, V_2=(0,2) \\text{ (down)}, V_3=(3,0) \\text{ (down)}",
         "graphData": null
       },
       {
@@ -3076,7 +3076,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find horizontal asymptotes.",
-        "workingOut": "\\text{Asymptotes: } y = 0, \\ y = -2",
+        "workingOut": "\\text{Asymptotes: } y = 0, y = -2",
         "graphData": null
       },
       {
@@ -3120,7 +3120,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify asymptotes.",
-        "workingOut": "\\text{Vertical: } x = 0, \\ x = 3, \\ x = -2",
+        "workingOut": "\\text{Vertical: } x = 0, x = 3, x = -2",
         "graphData": null
       },
       {
@@ -3159,7 +3159,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify points of inflection.",
-        "workingOut": "P_1 = (0,0), \\ P_2 = (0,-2), \\ P_3 = (2,0)",
+        "workingOut": "P_1 = (0,0), P_2 = (0,-2), P_3 = (2,0)",
         "graphData": null
       },
       {
@@ -3198,7 +3198,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the flat minimum points.",
-        "workingOut": "M_1 = (0,0), \\ M_2 = (2,0), \\ M_3 = (0,2)",
+        "workingOut": "M_1 = (0,0), M_2 = (2,0), M_3 = (0,2)",
         "graphData": null
       },
       {
@@ -3276,7 +3276,7 @@ export const Y11_CH5I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find horizontal asymptotes.",
-        "workingOut": "\\text{Asymptotes: } y = 0, \\ y = -3, \\ y = 3",
+        "workingOut": "\\text{Asymptotes: } y = 0, y = -3, y = 3",
         "graphData": null
       },
       {

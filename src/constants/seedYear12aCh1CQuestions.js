@@ -4222,7 +4222,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 4, 12, 36, 108, 324, 972, 2916, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 4, 12, 36, 108, 324, 972, 2916, dots\\)",
         "graphData": null
       },
       {
@@ -4457,7 +4457,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -4543,7 +4543,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 3, 9, 27, 81, 243, 729, 2187, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 3, 9, 27, 81, 243, 729, 2187, dots\\)",
         "graphData": null
       },
       {
@@ -4778,7 +4778,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -4864,7 +4864,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 4, 8, 16, 32, 64, 128, 256, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 4, 8, 16, 32, 64, 128, 256, dots\\)",
         "graphData": null
       },
       {
@@ -5099,7 +5099,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -5185,7 +5185,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)",
         "graphData": null
       },
       {
@@ -5420,7 +5420,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -5506,7 +5506,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 3, 6, 12, 24, 48, 96, 192, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 3, 6, 12, 24, 48, 96, 192, dots\\)",
         "graphData": null
       },
       {
@@ -5741,7 +5741,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -5827,7 +5827,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)",
         "graphData": null
       },
       {
@@ -6062,7 +6062,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -6148,7 +6148,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 2, 4, 8, 16, 32, 64, 128, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 2, 4, 8, 16, 32, 64, 128, dots\\)",
         "graphData": null
       },
       {
@@ -6383,7 +6383,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -6469,7 +6469,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 4, 8, 16, 32, 64, 128, 256, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 4, 8, 16, 32, 64, 128, 256, dots\\)",
         "graphData": null
       },
       {
@@ -6704,7 +6704,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -6790,7 +6790,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)",
         "graphData": null
       },
       {
@@ -7025,7 +7025,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -7111,7 +7111,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)",
         "graphData": null
       },
       {
@@ -7346,7 +7346,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -7432,7 +7432,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 3, 6, 12, 24, 48, 96, 192, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 3, 6, 12, 24, 48, 96, 192, dots\\)",
         "graphData": null
       },
       {
@@ -7667,7 +7667,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -7753,7 +7753,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 5, 15, 45, 135, 405, 1215, 3645, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 5, 15, 45, 135, 405, 1215, 3645, dots\\)",
         "graphData": null
       },
       {
@@ -7988,7 +7988,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -8074,7 +8074,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)",
         "graphData": null
       },
       {
@@ -8309,7 +8309,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -8395,7 +8395,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 4, 8, 16, 32, 64, 128, 256, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 4, 8, 16, 32, 64, 128, 256, dots\\)",
         "graphData": null
       },
       {
@@ -8630,7 +8630,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the three terms of the geometric progression in a product-friendly form.",
-        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, \\text{ and } ar.\\)",
+        "workingOut": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)",
         "graphData": null
       },
       {
@@ -8716,7 +8716,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the GP starting around the threshold.",
-        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, \\dots\\)",
+        "workingOut": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)",
         "graphData": null
       },
       {

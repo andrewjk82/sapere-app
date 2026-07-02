@@ -325,7 +325,7 @@ export const Y12A_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Working out",
-        "workingOut": "x = \\frac{\\pi}{2}, \\frac{3\\pi}{2}"
+        "workingOut": "x = \\frac{\\pi}{2}, frac{3\\pi}{2}"
       }
     ]
   },
@@ -340,7 +340,7 @@ export const Y12A_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Working out",
-        "workingOut": "x = \\frac{\\pi}{3}, \\frac{5\\pi}{3}"
+        "workingOut": "x = \\frac{\\pi}{3}, frac{5\\pi}{3}"
       }
     ]
   },
@@ -355,7 +355,7 @@ export const Y12A_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Working out",
-        "workingOut": "x = \\frac{\\pi}{6}, \\frac{5\\pi}{6}"
+        "workingOut": "x = \\frac{\\pi}{6}, frac{5\\pi}{6}"
       }
     ]
   },
@@ -370,7 +370,7 @@ export const Y12A_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Working out",
-        "workingOut": "x = \\frac{5\\pi}{6}, \\frac{7\\pi}{6}"
+        "workingOut": "x = \\frac{5\\pi}{6}, frac{7\\pi}{6}"
       }
     ]
   },

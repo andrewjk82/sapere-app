@@ -7064,7 +7064,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the price paid each year as a geometric progression.",
-        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), \\dots, \\(T_{10} = 1.1^9 P\\)",
+        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), dots, \\(T_{10} = 1.1^9 P\\)",
         "graphData": null
       },
       {
@@ -7211,7 +7211,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the price paid each year as a geometric progression.",
-        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), \\dots, \\(T_{10} = 1.1^9 P\\)",
+        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), dots, \\(T_{10} = 1.1^9 P\\)",
         "graphData": null
       },
       {
@@ -7358,7 +7358,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the price paid each year as a geometric progression.",
-        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), \\dots, \\(T_{10} = 1.1^9 P\\)",
+        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), dots, \\(T_{10} = 1.1^9 P\\)",
         "graphData": null
       },
       {
@@ -7505,7 +7505,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the price paid each year as a geometric progression.",
-        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), \\dots, \\(T_{10} = 1.1^9 P\\)",
+        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), dots, \\(T_{10} = 1.1^9 P\\)",
         "graphData": null
       },
       {
@@ -7652,7 +7652,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Represent the price paid each year as a geometric progression.",
-        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), \\dots, \\(T_{10} = 1.1^9 P\\)",
+        "workingOut": "\\(T_1 = P\\), \\(T_2 = 1.1P\\), \\(T_3 = 1.1^2 P\\), dots, \\(T_{10} = 1.1^9 P\\)",
         "graphData": null
       },
       {
@@ -9644,7 +9644,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 4 + 16 + 64 + \\dots \\implies a_1 = 4,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 6 + 18 + 54 + \\dots \\implies a_2 = 6,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 4 + 16 + 64 + \\dots \\implies a_1 = 4, r_1 = 4\\)\\n\\(\\text{Even series: } 6 + 18 + 54 + \\dots \\implies a_2 = 6, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -9909,7 +9909,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 14 + 56 + 224 + \\dots \\implies a_1 = 14,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 21 + 63 + 189 + \\dots \\implies a_2 = 21,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 14 + 56 + 224 + \\dots \\implies a_1 = 14, r_1 = 4\\)\\n\\(\\text{Even series: } 21 + 63 + 189 + \\dots \\implies a_2 = 21, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -10174,7 +10174,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 24 + 96 + 384 + \\dots \\implies a_1 = 24,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 36 + 108 + 324 + \\dots \\implies a_2 = 36,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 24 + 96 + 384 + \\dots \\implies a_1 = 24, r_1 = 4\\)\\n\\(\\text{Even series: } 36 + 108 + 324 + \\dots \\implies a_2 = 36, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -10439,7 +10439,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 34 + 136 + 544 + \\dots \\implies a_1 = 34,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 51 + 153 + 459 + \\dots \\implies a_2 = 51,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 34 + 136 + 544 + \\dots \\implies a_1 = 34, r_1 = 4\\)\\n\\(\\text{Even series: } 51 + 153 + 459 + \\dots \\implies a_2 = 51, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -10704,7 +10704,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 44 + 176 + 704 + \\dots \\implies a_1 = 44,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 66 + 198 + 594 + \\dots \\implies a_2 = 66,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 44 + 176 + 704 + \\dots \\implies a_1 = 44, r_1 = 4\\)\\n\\(\\text{Even series: } 66 + 198 + 594 + \\dots \\implies a_2 = 66, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -10969,7 +10969,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 54 + 216 + 864 + \\dots \\implies a_1 = 54,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 81 + 243 + 729 + \\dots \\implies a_2 = 81,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 54 + 216 + 864 + \\dots \\implies a_1 = 54, r_1 = 4\\)\\n\\(\\text{Even series: } 81 + 243 + 729 + \\dots \\implies a_2 = 81, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -11234,7 +11234,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 64 + 256 + 1024 + \\dots \\implies a_1 = 64,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 96 + 288 + 864 + \\dots \\implies a_2 = 96,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 64 + 256 + 1024 + \\dots \\implies a_1 = 64, r_1 = 4\\)\\n\\(\\text{Even series: } 96 + 288 + 864 + \\dots \\implies a_2 = 96, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -11499,7 +11499,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 74 + 296 + 1184 + \\dots \\implies a_1 = 74,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 111 + 333 + 999 + \\dots \\implies a_2 = 111,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 74 + 296 + 1184 + \\dots \\implies a_1 = 74, r_1 = 4\\)\\n\\(\\text{Even series: } 111 + 333 + 999 + \\dots \\implies a_2 = 111, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -11764,7 +11764,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 84 + 336 + 1344 + \\dots \\implies a_1 = 84,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 126 + 378 + 1134 + \\dots \\implies a_2 = 126,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 84 + 336 + 1344 + \\dots \\implies a_1 = 84, r_1 = 4\\)\\n\\(\\text{Even series: } 126 + 378 + 1134 + \\dots \\implies a_2 = 126, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -12029,7 +12029,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 94 + 376 + 1504 + \\dots \\implies a_1 = 94,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 141 + 423 + 1269 + \\dots \\implies a_2 = 141,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 94 + 376 + 1504 + \\dots \\implies a_1 = 94, r_1 = 4\\)\\n\\(\\text{Even series: } 141 + 423 + 1269 + \\dots \\implies a_2 = 141, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -12294,7 +12294,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 104 + 416 + 1664 + \\dots \\implies a_1 = 104,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 156 + 468 + 1404 + \\dots \\implies a_2 = 156,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 104 + 416 + 1664 + \\dots \\implies a_1 = 104, r_1 = 4\\)\\n\\(\\text{Even series: } 156 + 468 + 1404 + \\dots \\implies a_2 = 156, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -12559,7 +12559,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 114 + 456 + 1824 + \\dots \\implies a_1 = 114,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 171 + 513 + 1539 + \\dots \\implies a_2 = 171,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 114 + 456 + 1824 + \\dots \\implies a_1 = 114, r_1 = 4\\)\\n\\(\\text{Even series: } 171 + 513 + 1539 + \\dots \\implies a_2 = 171, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -12824,7 +12824,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 124 + 496 + 1984 + \\dots \\implies a_1 = 124,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 186 + 558 + 1674 + \\dots \\implies a_2 = 186,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 124 + 496 + 1984 + \\dots \\implies a_1 = 124, r_1 = 4\\)\\n\\(\\text{Even series: } 186 + 558 + 1674 + \\dots \\implies a_2 = 186, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -13089,7 +13089,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 134 + 536 + 2144 + \\dots \\implies a_1 = 134,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 201 + 603 + 1809 + \\dots \\implies a_2 = 201,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 134 + 536 + 2144 + \\dots \\implies a_1 = 134, r_1 = 4\\)\\n\\(\\text{Even series: } 201 + 603 + 1809 + \\dots \\implies a_2 = 201, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -13354,7 +13354,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 144 + 576 + 2304 + \\dots \\implies a_1 = 144,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 216 + 648 + 1944 + \\dots \\implies a_2 = 216,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 144 + 576 + 2304 + \\dots \\implies a_1 = 144, r_1 = 4\\)\\n\\(\\text{Even series: } 216 + 648 + 1944 + \\dots \\implies a_2 = 216, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -13619,7 +13619,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 154 + 616 + 2464 + \\dots \\implies a_1 = 154,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 231 + 693 + 2079 + \\dots \\implies a_2 = 231,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 154 + 616 + 2464 + \\dots \\implies a_1 = 154, r_1 = 4\\)\\n\\(\\text{Even series: } 231 + 693 + 2079 + \\dots \\implies a_2 = 231, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -13884,7 +13884,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 164 + 656 + 2624 + \\dots \\implies a_1 = 164,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 246 + 738 + 2214 + \\dots \\implies a_2 = 246,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 164 + 656 + 2624 + \\dots \\implies a_1 = 164, r_1 = 4\\)\\n\\(\\text{Even series: } 246 + 738 + 2214 + \\dots \\implies a_2 = 246, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -14149,7 +14149,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 174 + 696 + 2784 + \\dots \\implies a_1 = 174,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 261 + 783 + 2349 + \\dots \\implies a_2 = 261,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 174 + 696 + 2784 + \\dots \\implies a_1 = 174, r_1 = 4\\)\\n\\(\\text{Even series: } 261 + 783 + 2349 + \\dots \\implies a_2 = 261, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -14414,7 +14414,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 184 + 736 + 2944 + \\dots \\implies a_1 = 184,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 276 + 828 + 2484 + \\dots \\implies a_2 = 276,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 184 + 736 + 2944 + \\dots \\implies a_1 = 184, r_1 = 4\\)\\n\\(\\text{Even series: } 276 + 828 + 2484 + \\dots \\implies a_2 = 276, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -14679,7 +14679,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 194 + 776 + 3104 + \\dots \\implies a_1 = 194,\\, r_1 = 4\\)\\n\\(\\text{Even series: } 291 + 873 + 2619 + \\dots \\implies a_2 = 291,\\, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 194 + 776 + 3104 + \\dots \\implies a_1 = 194, r_1 = 4\\)\\n\\(\\text{Even series: } 291 + 873 + 2619 + \\dots \\implies a_2 = 291, r_2 = 3\\)",
         "graphData": null
       },
       {

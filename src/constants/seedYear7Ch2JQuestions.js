@@ -1,2945 +1,2806 @@
 export const Y7_CH2J_QUESTIONS = [
-  // ── QUESTION 1a ──
   {
-    id: "y7-2j-q1a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all factors of 12 in order from smallest to largest. Separate them with commas.",
-    a: "1, 2, 3, 4, 6, 12",
-    hint: "Think of all pairs of numbers that multiply to 12.",
-    solutionSteps: [
+    "id": "y7-2j-q1a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all factors of 12 in order from smallest to largest. Separate them with commas.",
+    "a": "1, 2, 3, 4, 6, 12",
+    "hint": "Think of all pairs of numbers that multiply to 12.",
+    "solutionSteps": [
       {
-        explanation: "Find all pairs of positive integers that multiply to 12.",
-        workingOut: "1 \\times 12 = 12, \\quad 2 \\times 6 = 12, \\quad 3 \\times 4 = 12"
+        "explanation": "Find all pairs of positive integers that multiply to 12.",
+        "workingOut": "1 \\times 12 = 12, quad 2 \\times 6 = 12, quad 3 \\times 4 = 12"
       },
       {
-        explanation: "List these factors in order from smallest to largest.",
-        workingOut: "1, 2, 3, 4, 6, 12"
+        "explanation": "List these factors in order from smallest to largest.",
+        "workingOut": "1, 2, 3, 4, 6, 12"
       }
     ]
   },
-  // ── QUESTION 1b ──
   {
-    id: "y7-2j-q1b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all factors of 28 in order from smallest to largest. Separate them with commas.",
-    a: "1, 2, 4, 7, 14, 28",
-    hint: "Identify the number pairs whose product is 28.",
-    solutionSteps: [
+    "id": "y7-2j-q1b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all factors of 28 in order from smallest to largest. Separate them with commas.",
+    "a": "1, 2, 4, 7, 14, 28",
+    "hint": "Identify the number pairs whose product is 28.",
+    "solutionSteps": [
       {
-        explanation: "Find all pairs of integers that multiply to 28.",
-        workingOut: "1 \\times 28 = 28, \\quad 2 \\times 14 = 28, \\quad 4 \\times 7 = 28"
+        "explanation": "Find all pairs of integers that multiply to 28.",
+        "workingOut": "1 \\times 28 = 28, quad 2 \\times 14 = 28, quad 4 \\times 7 = 28"
       },
       {
-        explanation: "List the factors in order.",
-        workingOut: "1, 2, 4, 7, 14, 28"
+        "explanation": "List the factors in order.",
+        "workingOut": "1, 2, 4, 7, 14, 28"
       }
     ]
   },
-  // ── QUESTION 1c ──
   {
-    id: "y7-2j-q1c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all factors of 49 in order from smallest to largest. Separate them with commas.",
-    a: "1, 7, 49",
-    hint: "Remember that 49 is a perfect square.",
-    solutionSteps: [
+    "id": "y7-2j-q1c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all factors of 49 in order from smallest to largest. Separate them with commas.",
+    "a": "1, 7, 49",
+    "hint": "Remember that 49 is a perfect square.",
+    "solutionSteps": [
       {
-        explanation: "Find all pairs of integers that multiply to 49.",
-        workingOut: "1 \\times 49 = 49, \\quad 7 \\times 7 = 49"
+        "explanation": "Find all pairs of integers that multiply to 49.",
+        "workingOut": "1 \\times 49 = 49, quad 7 \\times 7 = 49"
       },
       {
-        explanation: "List the unique factors in order.",
-        workingOut: "1, 7, 49"
+        "explanation": "List the unique factors in order.",
+        "workingOut": "1, 7, 49"
       }
     ]
   },
-  // ── QUESTION 1d ──
   {
-    id: "y7-2j-q1d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all factors of 36 in order from smallest to largest. Separate them with commas.",
-    a: "1, 2, 3, 4, 6, 9, 12, 18, 36",
-    hint: "List all whole numbers that divide 36 without a remainder.",
-    solutionSteps: [
+    "id": "y7-2j-q1d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all factors of 36 in order from smallest to largest. Separate them with commas.",
+    "a": "1, 2, 3, 4, 6, 9, 12, 18, 36",
+    "hint": "List all whole numbers that divide 36 without a remainder.",
+    "solutionSteps": [
       {
-        explanation: "Find all pairs of integers that multiply to 36.",
-        workingOut: "1 \\times 36 = 36, \\quad 2 \\times 18 = 36, \\quad 3 \\times 12 = 36, \\quad 4 \\times 9 = 36, \\quad 6 \\times 6 = 36"
+        "explanation": "Find all pairs of integers that multiply to 36.",
+        "workingOut": "1 \\times 36 = 36, quad 2 \\times 18 = 36, quad 3 \\times 12 = 36, quad 4 \\times 9 = 36, quad 6 \\times 6 = 36"
       },
       {
-        explanation: "List the unique factors in order.",
-        workingOut: "1, 2, 3, 4, 6, 9, 12, 18, 36"
+        "explanation": "List the unique factors in order.",
+        "workingOut": "1, 2, 3, 4, 6, 9, 12, 18, 36"
       }
     ]
   },
-  // ── QUESTION 1e ──
   {
-    id: "y7-2j-q1e",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all factors of 75 in order from smallest to largest. Separate them with commas.",
-    a: "1, 3, 5, 15, 25, 75",
-    hint: "Consider numbers that divide 75.",
-    solutionSteps: [
+    "id": "y7-2j-q1e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all factors of 75 in order from smallest to largest. Separate them with commas.",
+    "a": "1, 3, 5, 15, 25, 75",
+    "hint": "Consider numbers that divide 75.",
+    "solutionSteps": [
       {
-        explanation: "Find all pairs of integers that multiply to 75.",
-        workingOut: "1 \\times 75 = 75, \\quad 3 \\times 25 = 75, \\quad 5 \\times 15 = 75"
+        "explanation": "Find all pairs of integers that multiply to 75.",
+        "workingOut": "1 \\times 75 = 75, quad 3 \\times 25 = 75, quad 5 \\times 15 = 75"
       },
       {
-        explanation: "List the factors in order.",
-        workingOut: "1, 3, 5, 15, 25, 75"
+        "explanation": "List the factors in order.",
+        "workingOut": "1, 3, 5, 15, 25, 75"
       }
     ]
   },
-  // ── QUESTION 1f ──
   {
-    id: "y7-2j-q1f",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all factors of 72 in order from smallest to largest. Separate them with commas.",
-    a: "1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72",
-    hint: "List all factor pairs of 72.",
-    solutionSteps: [
+    "id": "y7-2j-q1f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all factors of 72 in order from smallest to largest. Separate them with commas.",
+    "a": "1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72",
+    "hint": "List all factor pairs of 72.",
+    "solutionSteps": [
       {
-        explanation: "Find all pairs of integers that multiply to 72.",
-        workingOut: "1 \\times 72, \\quad 2 \\times 36, \\dots, \\quad 8 \\times 9"
+        "explanation": "Find all pairs of integers that multiply to 72.",
+        "workingOut": "1 \\times 72, quad 2 \\times 36, dots, quad 8 \\times 9"
       },
       {
-        explanation: "List the unique factors in order.",
-        workingOut: "1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72"
+        "explanation": "List the unique factors in order.",
+        "workingOut": "1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72"
       }
     ]
   },
-  // ── QUESTION 2a ──
   {
-    id: "y7-2j-q2a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all multiples of 8 that are less than 100. Separate them with commas.",
-    a: "8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96",
-    hint: "Multiply 8 by 1, 2, 3, etc., until the result is close to 100.",
-    solutionSteps: [
+    "id": "y7-2j-q2a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all multiples of 8 that are less than 100. Separate them with commas.",
+    "a": "8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96",
+    "hint": "Multiply 8 by 1, 2, 3, etc., until the result is close to 100.",
+    "solutionSteps": [
       {
-        explanation: "Calculate the multiples of 8.",
-        workingOut: "8 \\times 1 = 8, \\quad 8 \\times 2 = 16, \\dots, \\quad 8 \\times 12 = 96"
+        "explanation": "Calculate the multiples of 8.",
+        "workingOut": "8 \\times 1 = 8, quad 8 \\times 2 = 16, dots, quad 8 \\times 12 = 96"
       },
       {
-        explanation: "List all multiples that are strictly less than 100.",
-        workingOut: "8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96"
+        "explanation": "List all multiples that are strictly less than 100.",
+        "workingOut": "8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96"
       }
     ]
   },
-  // ── QUESTION 2b ──
   {
-    id: "y7-2j-q2b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all multiples of 19 that are less than 100. Separate them with commas.",
-    a: "19, 38, 57, 76, 95",
-    hint: "Multiply 19 by successive integers starting from 1.",
-    solutionSteps: [
+    "id": "y7-2j-q2b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all multiples of 19 that are less than 100. Separate them with commas.",
+    "a": "19, 38, 57, 76, 95",
+    "hint": "Multiply 19 by successive integers starting from 1.",
+    "solutionSteps": [
       {
-        explanation: "Calculate the multiples of 19.",
-        workingOut: "19 \\times 1 = 19, \\quad 19 \\times 2 = 38, \\quad 19 \\times 3 = 57, \\quad 19 \\times 4 = 76, \\quad 19 \\times 5 = 95"
+        "explanation": "Calculate the multiples of 19.",
+        "workingOut": "19 \\times 1 = 19, quad 19 \\times 2 = 38, quad 19 \\times 3 = 57, quad 19 \\times 4 = 76, quad 19 \\times 5 = 95"
       },
       {
-        explanation: "List these multiples.",
-        workingOut: "19, 38, 57, 76, 95"
+        "explanation": "List these multiples.",
+        "workingOut": "19, 38, 57, 76, 95"
       }
     ]
   },
-  // ── QUESTION 2c ──
   {
-    id: "y7-2j-q2c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all multiples of 31 that are less than 100. Separate them with commas.",
-    a: "31, 62, 93",
-    hint: "Multiply 31 by 1, 2, and 3.",
-    solutionSteps: [
+    "id": "y7-2j-q2c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all multiples of 31 that are less than 100. Separate them with commas.",
+    "a": "31, 62, 93",
+    "hint": "Multiply 31 by 1, 2, and 3.",
+    "solutionSteps": [
       {
-        explanation: "Find the multiples of 31.",
-        workingOut: "31 \\times 1 = 31, \\quad 31 \\times 2 = 62, \\quad 31 \\times 3 = 93"
+        "explanation": "Find the multiples of 31.",
+        "workingOut": "31 \\times 1 = 31, quad 31 \\times 2 = 62, quad 31 \\times 3 = 93"
       },
       {
-        explanation: "List these multiples.",
-        workingOut: "31, 62, 93"
+        "explanation": "List these multiples.",
+        "workingOut": "31, 62, 93"
       }
     ]
   },
-  // ── QUESTION 2d ──
   {
-    id: "y7-2j-q2d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all multiples of 16 that are less than 100. Separate them with commas.",
-    a: "16, 32, 48, 64, 80, 96",
-    hint: "Successively add 16 starting from 16.",
-    solutionSteps: [
+    "id": "y7-2j-q2d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all multiples of 16 that are less than 100. Separate them with commas.",
+    "a": "16, 32, 48, 64, 80, 96",
+    "hint": "Successively add 16 starting from 16.",
+    "solutionSteps": [
       {
-        explanation: "Generate multiples of 16.",
-        workingOut: "16, 32, 48, 64, 80, 96"
+        "explanation": "Generate multiples of 16.",
+        "workingOut": "16, 32, 48, 64, 80, 96"
       }
     ]
   },
-  // ── QUESTION 2e ──
   {
-    id: "y7-2j-q2e",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all multiples of 14 that are less than 100. Separate them with commas.",
-    a: "14, 28, 42, 56, 70, 84, 98",
-    hint: "Multiply 14 by integers starting from 1.",
-    solutionSteps: [
+    "id": "y7-2j-q2e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all multiples of 14 that are less than 100. Separate them with commas.",
+    "a": "14, 28, 42, 56, 70, 84, 98",
+    "hint": "Multiply 14 by integers starting from 1.",
+    "solutionSteps": [
       {
-        explanation: "Find the multiples of 14.",
-        workingOut: "14 \\times 1 = 14, \\dots, \\quad 14 \\times 7 = 98"
+        "explanation": "Find the multiples of 14.",
+        "workingOut": "14 \\times 1 = 14, dots, quad 14 \\times 7 = 98"
       },
       {
-        explanation: "List these multiples.",
-        workingOut: "14, 28, 42, 56, 70, 84, 98"
+        "explanation": "List these multiples.",
+        "workingOut": "14, 28, 42, 56, 70, 84, 98"
       }
     ]
   },
-  // ── QUESTION 2f ──
   {
-    id: "y7-2j-q2f",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "List all multiples of 22 that are less than 100. Separate them with commas.",
-    a: "22, 44, 66, 88",
-    hint: "Multiply 22 by 1, 2, 3, and 4.",
-    solutionSteps: [
+    "id": "y7-2j-q2f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "List all multiples of 22 that are less than 100. Separate them with commas.",
+    "a": "22, 44, 66, 88",
+    "hint": "Multiply 22 by 1, 2, 3, and 4.",
+    "solutionSteps": [
       {
-        explanation: "Find the multiples of 22.",
-        workingOut: "22 \\times 1 = 22, \\quad 22 \\times 2 = 44, \\quad 22 \\times 3 = 66, \\quad 22 \\times 4 = 88"
+        "explanation": "Find the multiples of 22.",
+        "workingOut": "22 \\times 1 = 22, quad 22 \\times 2 = 44, quad 22 \\times 3 = 66, quad 22 \\times 4 = 88"
       },
       {
-        explanation: "List the multiples.",
-        workingOut: "22, 44, 66, 88"
+        "explanation": "List the multiples.",
+        "workingOut": "22, 44, 66, 88"
       }
     ]
   },
-  // ── QUESTION 3a ──
   {
-    id: "y7-2j-q3a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Find the smallest odd number greater than 40 that is a multiple of 9.",
-    a: "45",
-    hint: "List multiples of 9 starting from 9 and look for the first odd one greater than 40.",
-    solutionSteps: [
+    "id": "y7-2j-q3a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Find the smallest odd number greater than 40 that is a multiple of 9.",
+    "a": "45",
+    "hint": "List multiples of 9 starting from 9 and look for the first odd one greater than 40.",
+    "solutionSteps": [
       {
-        explanation: "List multiples of 9 greater than 40.",
-        workingOut: "45, 54, 63, 72, \\dots"
+        "explanation": "List multiples of 9 greater than 40.",
+        "workingOut": "45, 54, 63, 72, dots"
       },
       {
-        explanation: "Identify the smallest odd multiple in the list.",
-        workingOut: "45"
+        "explanation": "Identify the smallest odd multiple in the list.",
+        "workingOut": "45"
       }
     ]
   },
-  // ── QUESTION 3b ──
   {
-    id: "y7-2j-q3b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Find the smallest even number divisible by 5 that is between 112 and 160.",
-    a: "120",
-    hint: "Numbers divisible by 5 end in 0 or 5. Even numbers must end in 0.",
-    solutionSteps: [
+    "id": "y7-2j-q3b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Find the smallest even number divisible by 5 that is between 112 and 160.",
+    "a": "120",
+    "hint": "Numbers divisible by 5 end in 0 or 5. Even numbers must end in 0.",
+    "solutionSteps": [
       {
-        explanation: "Identify the condition for a number to be both even and divisible by 5. It must end in 0.",
-        workingOut: "\\text{Divisible by } 5 \\text{ and even } \\implies \\text{Ends in } 0"
+        "explanation": "Identify the condition for a number to be both even and divisible by 5. It must end in 0.",
+        "workingOut": "\\text{Divisible by } 5 \\text{ and even } \\implies \\text{Ends in } 0"
       },
       {
-        explanation: "Find the first number ending in 0 that is greater than 112.",
-        workingOut: "120"
+        "explanation": "Find the first number ending in 0 that is greater than 112.",
+        "workingOut": "120"
       }
     ]
   },
-  // ── QUESTION 3c ──
   {
-    id: "y7-2j-q3c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write the odd prime number that is a factor of both 84 and 90.",
-    a: "3",
-    hint: "Find the prime factorisation of both numbers and look for a common odd prime factor.",
-    solutionSteps: [
+    "id": "y7-2j-q3c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write the odd prime number that is a factor of both 84 and 90.",
+    "a": "3",
+    "hint": "Find the prime factorisation of both numbers and look for a common odd prime factor.",
+    "solutionSteps": [
       {
-        explanation: "Write the prime factorisations of 84 and 90.",
-        workingOut: "84 = 2^2 \\times 3 \\times 7, \\quad 90 = 2 \\times 3^2 \\times 5"
+        "explanation": "Write the prime factorisations of 84 and 90.",
+        "workingOut": "84 = 2^2 \\times 3 \\times 7, quad 90 = 2 \\times 3^2 \\times 5"
       },
       {
-        explanation: "Find the common prime factors.",
-        workingOut: "\\text{Common prime factors} = {2, 3}"
+        "explanation": "Find the common prime factors.",
+        "workingOut": "\\text{Common prime factors} = {2, 3}"
       },
       {
-        explanation: "Select the factor that is odd and prime.",
-        workingOut: "3"
+        "explanation": "Select the factor that is odd and prime.",
+        "workingOut": "3"
       }
     ]
   },
-  // ── QUESTION 4a ──
   {
-    id: "y7-2j-q4a",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write three different three-digit numbers that are odd and sum to 875.",
-    a: "101, 103, 671",
-    hint: "Ensure all three numbers are three-digit numbers (100 to 999), are odd, and add up to 875.",
-    solutionSteps: [
+    "id": "y7-2j-q4a",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write three different three-digit numbers that are odd and sum to 875.",
+    "a": "101, 103, 671",
+    "hint": "Ensure all three numbers are three-digit numbers (100 to 999), are odd, and add up to 875.",
+    "solutionSteps": [
       {
-        explanation: "Choose two simple odd three-digit numbers.",
-        workingOut: "101 \\text{ and } 103"
+        "explanation": "Choose two simple odd three-digit numbers.",
+        "workingOut": "101 \\text{ and } 103"
       },
       {
-        explanation: "Find the third number by subtracting the first two from the target sum.",
-        workingOut: "875 - 101 - 103 = 671"
+        "explanation": "Find the third number by subtracting the first two from the target sum.",
+        "workingOut": "875 - 101 - 103 = 671"
       },
       {
-        explanation: "Verify that 671 is a three-digit odd number.",
-        workingOut: "671 \\text{ is odd and three-digit}"
+        "explanation": "Verify that 671 is a three-digit odd number.",
+        "workingOut": "671 \\text{ is odd and three-digit}"
       }
     ]
   },
-  // ── QUESTION 4b ──
   {
-    id: "y7-2j-q4b",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write three different three-digit numbers that are odd and sum to 905.",
-    a: "101, 103, 701",
-    hint: "Choose three distinct odd numbers between 100 and 900 that sum to 905.",
-    solutionSteps: [
+    "id": "y7-2j-q4b",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write three different three-digit numbers that are odd and sum to 905.",
+    "a": "101, 103, 701",
+    "hint": "Choose three distinct odd numbers between 100 and 900 that sum to 905.",
+    "solutionSteps": [
       {
-        explanation: "Select two distinct odd three-digit numbers.",
-        workingOut: "101 \\text{ and } 103"
+        "explanation": "Select two distinct odd three-digit numbers.",
+        "workingOut": "101 \\text{ and } 103"
       },
       {
-        explanation: "Calculate the remaining value to reach 905.",
-        workingOut: "905 - 101 - 103 = 701"
+        "explanation": "Calculate the remaining value to reach 905.",
+        "workingOut": "905 - 101 - 103 = 701"
       }
     ]
   },
-  // ── QUESTION 4c ──
   {
-    id: "y7-2j-q4c",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write three different three-digit numbers that are odd and sum to 481.",
-    a: "101, 103, 277",
-    hint: "Ensure all numbers are between 100 and 999, odd, and sum to 481.",
-    solutionSteps: [
+    "id": "y7-2j-q4c",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write three different three-digit numbers that are odd and sum to 481.",
+    "a": "101, 103, 277",
+    "hint": "Ensure all numbers are between 100 and 999, odd, and sum to 481.",
+    "solutionSteps": [
       {
-        explanation: "Pick two odd three-digit numbers.",
-        workingOut: "101, 103"
+        "explanation": "Pick two odd three-digit numbers.",
+        "workingOut": "101, 103"
       },
       {
-        explanation: "Subtract their sum from 481 to find the third number.",
-        workingOut: "481 - (101 + 103) = 277"
+        "explanation": "Subtract their sum from 481 to find the third number.",
+        "workingOut": "481 - (101 + 103) = 277"
       }
     ]
   },
-  // ── QUESTION 4d ──
   {
-    id: "y7-2j-q4d",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write three different three-digit numbers that are odd and sum to 349.",
-    a: "101, 103, 145",
-    hint: "Choose three distinct three-digit odd numbers that total 349.",
-    solutionSteps: [
+    "id": "y7-2j-q4d",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write three different three-digit numbers that are odd and sum to 349.",
+    "a": "101, 103, 145",
+    "hint": "Choose three distinct three-digit odd numbers that total 349.",
+    "solutionSteps": [
       {
-        explanation: "Pick 101 and 103.",
-        workingOut: "101 + 103 = 204"
+        "explanation": "Pick 101 and 103.",
+        "workingOut": "101 + 103 = 204"
       },
       {
-        explanation: "Calculate the third number.",
-        workingOut: "349 - 204 = 145"
+        "explanation": "Calculate the third number.",
+        "workingOut": "349 - 204 = 145"
       }
     ]
   },
-  // ── QUESTION 4e ──
   {
-    id: "y7-2j-q4e",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write three different three-digit numbers that are odd and sum to 1837.",
-    a: "501, 503, 833",
-    hint: "Ensure each number has three digits, is odd, and they sum to 1837.",
-    solutionSteps: [
+    "id": "y7-2j-q4e",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write three different three-digit numbers that are odd and sum to 1837.",
+    "a": "501, 503, 833",
+    "hint": "Ensure each number has three digits, is odd, and they sum to 1837.",
+    "solutionSteps": [
       {
-        explanation: "Pick two odd three-digit numbers.",
-        workingOut: "501, 503"
+        "explanation": "Pick two odd three-digit numbers.",
+        "workingOut": "501, 503"
       },
       {
-        explanation: "Calculate the third number.",
-        workingOut: "1837 - (501 + 503) = 833"
+        "explanation": "Calculate the third number.",
+        "workingOut": "1837 - (501 + 503) = 833"
       }
     ]
   },
-  // ── QUESTION 4f ──
   {
-    id: "y7-2j-q4f",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write three different three-digit numbers that are odd and sum to 2853.",
-    a: "901, 903, 1049",
-    hint: "Wait, the target sum is 2853. Since the maximum possible sum of three three-digit numbers is 999 + 997 + 995 = 2991, 2853 is possible with three-digit numbers.",
-    solutionSteps: [
+    "id": "y7-2j-q4f",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write three different three-digit numbers that are odd and sum to 2853.",
+    "a": "901, 903, 1049",
+    "hint": "Wait, the target sum is 2853. Since the maximum possible sum of three three-digit numbers is 999 + 997 + 995 = 2991, 2853 is possible with three-digit numbers.",
+    "solutionSteps": [
       {
-        explanation: "Pick two large odd three-digit numbers.",
-        workingOut: "951, 953"
+        "explanation": "Pick two large odd three-digit numbers.",
+        "workingOut": "951, 953"
       },
       {
-        explanation: "Subtract their sum from 2853 to find the third three-digit number.",
-        workingOut: "2853 - (951 + 953) = 949"
+        "explanation": "Subtract their sum from 2853 to find the third three-digit number.",
+        "workingOut": "2853 - (951 + 953) = 949"
       }
     ]
   },
-  // ── QUESTION 5a ──
   {
-    id: "y7-2j-q5a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(5^1\\).",
-    a: "5",
-    hint: "Any number to the power of 1 is the number itself.",
-    solutionSteps: [
+    "id": "y7-2j-q5a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(5^1\\).",
+    "a": "5",
+    "hint": "Any number to the power of 1 is the number itself.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the exponent.",
-        workingOut: "5^1 = 5"
+        "explanation": "Evaluate the exponent.",
+        "workingOut": "5^1 = 5"
       }
     ]
   },
-  // ── QUESTION 5b ──
   {
-    id: "y7-2j-q5b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(5^2\\).",
-    a: "25",
-    hint: "Multiply 5 by itself.",
-    solutionSteps: [
+    "id": "y7-2j-q5b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(5^2\\).",
+    "a": "25",
+    "hint": "Multiply 5 by itself.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the square of 5.",
-        workingOut: "5 \\times 5 = 25"
+        "explanation": "Evaluate the square of 5.",
+        "workingOut": "5 \\times 5 = 25"
       }
     ]
   },
-  // ── QUESTION 5c ──
   {
-    id: "y7-2j-q5c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(5^3\\).",
-    a: "125",
-    hint: "Multiply 25 by 5.",
-    solutionSteps: [
+    "id": "y7-2j-q5c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(5^3\\).",
+    "a": "125",
+    "hint": "Multiply 25 by 5.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the cube of 5.",
-        workingOut: "5 \\times 5 \\times 5 = 125"
+        "explanation": "Evaluate the cube of 5.",
+        "workingOut": "5 \\times 5 \\times 5 = 125"
       }
     ]
   },
-  // ── QUESTION 5d ──
   {
-    id: "y7-2j-q5d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(5^4\\).",
-    a: "625",
-    hint: "Multiply 125 by 5.",
-    solutionSteps: [
+    "id": "y7-2j-q5d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(5^4\\).",
+    "a": "625",
+    "hint": "Multiply 125 by 5.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate 5 to the power of 4.",
-        workingOut: "125 \\times 5 = 625"
+        "explanation": "Evaluate 5 to the power of 4.",
+        "workingOut": "125 \\times 5 = 625"
       }
     ]
   },
-  // ── QUESTION 5e ──
   {
-    id: "y7-2j-q5e",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(5^5\\).",
-    a: "3125",
-    hint: "Multiply 625 by 5.",
-    solutionSteps: [
+    "id": "y7-2j-q5e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(5^5\\).",
+    "a": "3125",
+    "hint": "Multiply 625 by 5.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate 5 to the power of 5.",
-        workingOut: "625 \\times 5 = 3125"
+        "explanation": "Evaluate 5 to the power of 5.",
+        "workingOut": "625 \\times 5 = 3125"
       }
     ]
   },
-  // ── QUESTION 6a ──
   {
-    id: "y7-2j-q6a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(4^1\\).",
-    a: "4",
-    hint: "Any number to the power of 1 is itself.",
-    solutionSteps: [
+    "id": "y7-2j-q6a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(4^1\\).",
+    "a": "4",
+    "hint": "Any number to the power of 1 is itself.",
+    "solutionSteps": [
       {
-        explanation: "Simplify.",
-        workingOut: "4^1 = 4"
+        "explanation": "Simplify.",
+        "workingOut": "4^1 = 4"
       }
     ]
   },
-  // ── QUESTION 6b ──
   {
-    id: "y7-2j-q6b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(4^2\\).",
-    a: "16",
-    hint: "Multiply 4 by 4.",
-    solutionSteps: [
+    "id": "y7-2j-q6b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(4^2\\).",
+    "a": "16",
+    "hint": "Multiply 4 by 4.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the square.",
-        workingOut: "4 \\times 4 = 16"
+        "explanation": "Evaluate the square.",
+        "workingOut": "4 \\times 4 = 16"
       }
     ]
   },
-  // ── QUESTION 6c ──
   {
-    id: "y7-2j-q6c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(4^3\\).",
-    a: "64",
-    hint: "Multiply 16 by 4.",
-    solutionSteps: [
+    "id": "y7-2j-q6c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(4^3\\).",
+    "a": "64",
+    "hint": "Multiply 16 by 4.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the cube.",
-        workingOut: "16 \\times 4 = 64"
+        "explanation": "Evaluate the cube.",
+        "workingOut": "16 \\times 4 = 64"
       }
     ]
   },
-  // ── QUESTION 6d ──
   {
-    id: "y7-2j-q6d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(4^4\\).",
-    a: "256",
-    hint: "Multiply 64 by 4.",
-    solutionSteps: [
+    "id": "y7-2j-q6d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(4^4\\).",
+    "a": "256",
+    "hint": "Multiply 64 by 4.",
+    "solutionSteps": [
       {
-        explanation: "Calculate 4 to the power of 4.",
-        workingOut: "64 \\times 4 = 256"
+        "explanation": "Calculate 4 to the power of 4.",
+        "workingOut": "64 \\times 4 = 256"
       }
     ]
   },
-  // ── QUESTION 6e ──
   {
-    id: "y7-2j-q6e",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(4^5\\).",
-    a: "1024",
-    hint: "Multiply 256 by 4.",
-    solutionSteps: [
+    "id": "y7-2j-q6e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(4^5\\).",
+    "a": "1024",
+    "hint": "Multiply 256 by 4.",
+    "solutionSteps": [
       {
-        explanation: "Calculate 4 to the power of 5.",
-        workingOut: "256 \\times 4 = 1024"
+        "explanation": "Calculate 4 to the power of 5.",
+        "workingOut": "256 \\times 4 = 1024"
       }
     ]
   },
-  // ── QUESTION 6f ──
   {
-    id: "y7-2j-q6f",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(4^6\\).",
-    a: "4096",
-    hint: "Multiply 1024 by 4.",
-    solutionSteps: [
+    "id": "y7-2j-q6f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(4^6\\).",
+    "a": "4096",
+    "hint": "Multiply 1024 by 4.",
+    "solutionSteps": [
       {
-        explanation: "Calculate 4 to the power of 6.",
-        workingOut: "1024 \\times 4 = 4096"
+        "explanation": "Calculate 4 to the power of 6.",
+        "workingOut": "1024 \\times 4 = 4096"
       }
     ]
   },
-  // ── QUESTION 7a ──
   {
-    id: "y7-2j-q7a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write \\(2 \\times 2 \\times 2 \\times 2 \\times 5 \\times 5 \\times 5\\) using index notation.",
-    a: "2^4 \\times 5^3",
-    hint: "Count the number of 2s and the number of 5s.",
-    solutionSteps: [
+    "id": "y7-2j-q7a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write \\(2 \\times 2 \\times 2 \\times 2 \\times 5 \\times 5 \\times 5\\) using index notation.",
+    "a": "2^4 \\times 5^3",
+    "hint": "Count the number of 2s and the number of 5s.",
+    "solutionSteps": [
       {
-        explanation: "Count the factor 2.",
-        workingOut: "2 \\text{ is repeated } 4 \\text{ times} \\implies 2^4"
+        "explanation": "Count the factor 2.",
+        "workingOut": "2 \\text{ is repeated } 4 \\text{ times} \\implies 2^4"
       },
       {
-        explanation: "Count the factor 5.",
-        workingOut: "5 \\text{ is repeated } 3 \\text{ times} \\implies 5^3"
+        "explanation": "Count the factor 5.",
+        "workingOut": "5 \\text{ is repeated } 3 \\text{ times} \\implies 5^3"
       },
       {
-        explanation: "Combine using multiplication.",
-        workingOut: "2^4 \\times 5^3"
+        "explanation": "Combine using multiplication.",
+        "workingOut": "2^4 \\times 5^3"
       }
     ]
   },
-  // ── QUESTION 7b ──
   {
-    id: "y7-2j-q7b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write \\(7 \\times 7 \\times 7 \\times 7 \\times 7^3\\) using index notation.",
-    a: "7^7",
-    hint: "Use the laws of indices: add the exponents.",
-    solutionSteps: [
+    "id": "y7-2j-q7b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write \\(7 \\times 7 \\times 7 \\times 7 \\times 7^3\\) using index notation.",
+    "a": "7^7",
+    "hint": "Use the laws of indices: add the exponents.",
+    "solutionSteps": [
       {
-        explanation: "Express the product of the first four 7s in index notation.",
-        workingOut: "7 \\times 7 \\times 7 \\times 7 = 7^4"
+        "explanation": "Express the product of the first four 7s in index notation.",
+        "workingOut": "7 \\times 7 \\times 7 \\times 7 = 7^4"
       },
       {
-        explanation: "Multiply by \\(7^3\\) by adding exponents.",
-        workingOut: "7^4 \\times 7^3 = 7^{4+3} = 7^7"
+        "explanation": "Multiply by \\(7^3\\) by adding exponents.",
+        "workingOut": "7^4 \\times 7^3 = 7^{4+3} = 7^7"
       }
     ]
   },
-  // ── QUESTION 7c ──
   {
-    id: "y7-2j-q7c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write \\(20 \\times 20 \\times 20 \\times 20\\) using index notation.",
-    a: "20^4",
-    hint: "Count how many times 20 is multiplied.",
-    solutionSteps: [
+    "id": "y7-2j-q7c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write \\(20 \\times 20 \\times 20 \\times 20\\) using index notation.",
+    "a": "20^4",
+    "hint": "Count how many times 20 is multiplied.",
+    "solutionSteps": [
       {
-        explanation: "Count the number of 20s.",
-        workingOut: "20 \\text{ is multiplied } 4 \\text{ times} \\implies 20^4"
+        "explanation": "Count the number of 20s.",
+        "workingOut": "20 \\text{ is multiplied } 4 \\text{ times} \\implies 20^4"
       }
     ]
   },
-  // ── QUESTION 7d ──
   {
-    id: "y7-2j-q7d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write \\(5 \\times 5 \\times 5 \\times 5 \\times 3 \\times 3\\) using index notation.",
-    a: "5^4 \\times 3^2",
-    hint: "Group the identical factors and count them.",
-    solutionSteps: [
+    "id": "y7-2j-q7d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write \\(5 \\times 5 \\times 5 \\times 5 \\times 3 \\times 3\\) using index notation.",
+    "a": "5^4 \\times 3^2",
+    "hint": "Group the identical factors and count them.",
+    "solutionSteps": [
       {
-        explanation: "Count the factor 5.",
-        workingOut: "5 \\text{ is repeated } 4 \\text{ times} \\implies 5^4"
+        "explanation": "Count the factor 5.",
+        "workingOut": "5 \\text{ is repeated } 4 \\text{ times} \\implies 5^4"
       },
       {
-        explanation: "Count the factor 3.",
-        workingOut: "3 \\text{ is repeated } 2 \\text{ times} \\implies 3^2"
+        "explanation": "Count the factor 3.",
+        "workingOut": "3 \\text{ is repeated } 2 \\text{ times} \\implies 3^2"
       },
       {
-        explanation: "Write as a product.",
-        workingOut: "5^4 \\times 3^2"
+        "explanation": "Write as a product.",
+        "workingOut": "5^4 \\times 3^2"
       }
     ]
   },
-  // ── QUESTION 8a ──
   {
-    id: "y7-2j-q8a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(2 \\times 2 \\times 3^2\\).",
-    a: "36",
-    hint: "First evaluate the power, then multiply.",
-    solutionSteps: [
+    "id": "y7-2j-q8a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(2 \\times 2 \\times 3^2\\).",
+    "a": "36",
+    "hint": "First evaluate the power, then multiply.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate \\(3^2\\).",
-        workingOut: "3^2 = 9"
+        "explanation": "Evaluate \\(3^2\\).",
+        "workingOut": "3^2 = 9"
       },
       {
-        explanation: "Multiply the factors.",
-        workingOut: "2 \\times 2 \\times 9 = 4 \\times 9 = 36"
+        "explanation": "Multiply the factors.",
+        "workingOut": "2 \\times 2 \\times 9 = 4 \\times 9 = 36"
       }
     ]
   },
-  // ── QUESTION 8b ──
   {
-    id: "y7-2j-q8b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\((2 \\times 2 \\times 3)^2\\).",
-    a: "144",
-    hint: "Simplify inside the brackets first, then square the result.",
-    solutionSteps: [
+    "id": "y7-2j-q8b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\((2 \\times 2 \\times 3)^2\\).",
+    "a": "144",
+    "hint": "Simplify inside the brackets first, then square the result.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the expression inside the brackets.",
-        workingOut: "2 \\times 2 \\times 3 = 12"
+        "explanation": "Evaluate the expression inside the brackets.",
+        "workingOut": "2 \\times 2 \\times 3 = 12"
       },
       {
-        explanation: "Square the result.",
-        workingOut: "12^2 = 144"
+        "explanation": "Square the result.",
+        "workingOut": "12^2 = 144"
       }
     ]
   },
-  // ── QUESTION 8c ──
   {
-    id: "y7-2j-q8c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(2 \\times (2 \\times 3)^2\\).",
-    a: "72",
-    hint: "Evaluate the brackets first, then square, then multiply by 2.",
-    solutionSteps: [
+    "id": "y7-2j-q8c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(2 \\times (2 \\times 3)^2\\).",
+    "a": "72",
+    "hint": "Evaluate the brackets first, then square, then multiply by 2.",
+    "solutionSteps": [
       {
-        explanation: "Simplify the inside of the brackets.",
-        workingOut: "2 \\times 3 = 6"
+        "explanation": "Simplify the inside of the brackets.",
+        "workingOut": "2 \\times 3 = 6"
       },
       {
-        explanation: "Square the result.",
-        workingOut: "6^2 = 36"
+        "explanation": "Square the result.",
+        "workingOut": "6^2 = 36"
       },
       {
-        explanation: "Multiply by the leading 2.",
-        workingOut: "2 \\times 36 = 72"
+        "explanation": "Multiply by the leading 2.",
+        "workingOut": "2 \\times 36 = 72"
       }
     ]
   },
-  // ── QUESTION 8d ──
   {
-    id: "y7-2j-q8d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\((2 \\times 2)^2 \\times 3\\).",
-    a: "48",
-    hint: "Evaluate the bracket first, then square it, and finally multiply by 3.",
-    solutionSteps: [
+    "id": "y7-2j-q8d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\((2 \\times 2)^2 \\times 3\\).",
+    "a": "48",
+    "hint": "Evaluate the bracket first, then square it, and finally multiply by 3.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate inside the brackets.",
-        workingOut: "2 \\times 2 = 4"
+        "explanation": "Evaluate inside the brackets.",
+        "workingOut": "2 \\times 2 = 4"
       },
       {
-        explanation: "Square that value.",
-        workingOut: "4^2 = 16"
+        "explanation": "Square that value.",
+        "workingOut": "4^2 = 16"
       },
       {
-        explanation: "Multiply by 3.",
-        workingOut: "16 \\times 3 = 48"
+        "explanation": "Multiply by 3.",
+        "workingOut": "16 \\times 3 = 48"
       }
     ]
   },
-  // ── QUESTION 8e ──
   {
-    id: "y7-2j-q8e",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\((3^2 \\times 3^2)^2\\).",
-    a: "6561",
-    hint: "Simplify inside the brackets using index laws before squaring.",
-    solutionSteps: [
+    "id": "y7-2j-q8e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\((3^2 \\times 3^2)^2\\).",
+    "a": "6561",
+    "hint": "Simplify inside the brackets using index laws before squaring.",
+    "solutionSteps": [
       {
-        explanation: "Simplify inside the brackets.",
-        workingOut: "3^2 \\times 3^2 = 3^{2+2} = 3^4 = 81"
+        "explanation": "Simplify inside the brackets.",
+        "workingOut": "3^2 \\times 3^2 = 3^{2+2} = 3^4 = 81"
       },
       {
-        explanation: "Square the result.",
-        workingOut: "81^2 = 6561"
+        "explanation": "Square the result.",
+        "workingOut": "81^2 = 6561"
       }
     ]
   },
-  // ── QUESTION 8f ──
   {
-    id: "y7-2j-q8f",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\((2 \\times 5)^4\\).",
-    a: "10000",
-    hint: "Calculate inside the brackets first.",
-    solutionSteps: [
+    "id": "y7-2j-q8f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\((2 \\times 5)^4\\).",
+    "a": "10000",
+    "hint": "Calculate inside the brackets first.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the product inside the brackets.",
-        workingOut: "2 \\times 5 = 10"
+        "explanation": "Evaluate the product inside the brackets.",
+        "workingOut": "2 \\times 5 = 10"
       },
       {
-        explanation: "Raise 10 to the power of 4.",
-        workingOut: "10^4 = 10000"
+        "explanation": "Raise 10 to the power of 4.",
+        "workingOut": "10^4 = 10000"
       }
     ]
   },
-  // ── QUESTION 9a ──
   {
-    id: "y7-2j-q9a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Calculate mentally: \\(18 \\times 4\\).",
-    a: "72",
-    hint: "Double 18 twice.",
-    solutionSteps: [
+    "id": "y7-2j-q9a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Calculate mentally: \\(18 \\times 4\\).",
+    "a": "72",
+    "hint": "Double 18 twice.",
+    "solutionSteps": [
       {
-        explanation: "Double 18 once.",
-        workingOut: "18 \\times 2 = 36"
+        "explanation": "Double 18 once.",
+        "workingOut": "18 \\times 2 = 36"
       },
       {
-        explanation: "Double 36.",
-        workingOut: "36 \\times 2 = 72"
+        "explanation": "Double 36.",
+        "workingOut": "36 \\times 2 = 72"
       }
     ]
   },
-  // ── QUESTION 9b ──
   {
-    id: "y7-2j-q9b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Calculate mentally: \\(18 \\times 8\\).",
-    a: "144",
-    hint: "Use \\(18 \\times 4\\) and double it.",
-    solutionSteps: [
+    "id": "y7-2j-q9b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Calculate mentally: \\(18 \\times 8\\).",
+    "a": "144",
+    "hint": "Use \\(18 \\times 4\\) and double it.",
+    "solutionSteps": [
       {
-        explanation: "Multiply 18 by 8.",
-        workingOut: "18 \\times 8 = 18 \\times 4 \\times 2 = 72 \\times 2 = 144"
+        "explanation": "Multiply 18 by 8.",
+        "workingOut": "18 \\times 8 = 18 \\times 4 \\times 2 = 72 \\times 2 = 144"
       }
     ]
   },
-  // ── QUESTION 9c ──
   {
-    id: "y7-2j-q9c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Calculate mentally: \\(18 \\times 5\\).",
-    a: "90",
-    hint: "Multiply 18 by 10 and divide by 2.",
-    solutionSteps: [
+    "id": "y7-2j-q9c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Calculate mentally: \\(18 \\times 5\\).",
+    "a": "90",
+    "hint": "Multiply 18 by 10 and divide by 2.",
+    "solutionSteps": [
       {
-        explanation: "Multiply 18 by 10.",
-        workingOut: "180"
+        "explanation": "Multiply 18 by 10.",
+        "workingOut": "180"
       },
       {
-        explanation: "Divide by 2.",
-        workingOut: "180 \\div 2 = 90"
+        "explanation": "Divide by 2.",
+        "workingOut": "180 \\div 2 = 90"
       }
     ]
   },
-  // ── QUESTION 9d ──
   {
-    id: "y7-2j-q9d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Calculate mentally: \\(18 \\times 12\\).",
-    a: "216",
-    hint: "Multiply 18 by 10 and 18 by 2, then add.",
-    solutionSteps: [
+    "id": "y7-2j-q9d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Calculate mentally: \\(18 \\times 12\\).",
+    "a": "216",
+    "hint": "Multiply 18 by 10 and 18 by 2, then add.",
+    "solutionSteps": [
       {
-        explanation: "Multiply 18 by 10.",
-        workingOut: "180"
+        "explanation": "Multiply 18 by 10.",
+        "workingOut": "180"
       },
       {
-        explanation: "Multiply 18 by 2.",
-        workingOut: "36"
+        "explanation": "Multiply 18 by 2.",
+        "workingOut": "36"
       },
       {
-        explanation: "Add the results.",
-        workingOut: "180 + 36 = 216"
+        "explanation": "Add the results.",
+        "workingOut": "180 + 36 = 216"
       }
     ]
   },
-  // ── QUESTION 9e ──
   {
-    id: "y7-2j-q9e",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Calculate mentally: \\(18 \\times 20\\).",
-    a: "360",
-    hint: "Multiply 18 by 2 and then by 10.",
-    solutionSteps: [
+    "id": "y7-2j-q9e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Calculate mentally: \\(18 \\times 20\\).",
+    "a": "360",
+    "hint": "Multiply 18 by 2 and then by 10.",
+    "solutionSteps": [
       {
-        explanation: "Multiply 18 by 2.",
-        workingOut: "36"
+        "explanation": "Multiply 18 by 2.",
+        "workingOut": "36"
       },
       {
-        explanation: "Multiply by 10.",
-        workingOut: "36 \\times 10 = 360"
+        "explanation": "Multiply by 10.",
+        "workingOut": "36 \\times 10 = 360"
       }
     ]
   },
-  // ── QUESTION 9f ──
   {
-    id: "y7-2j-q9f",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Calculate mentally: \\(18 \\times 25\\).",
-    a: "450",
-    hint: "Multiply 18 by 100 and divide by 4.",
-    solutionSteps: [
+    "id": "y7-2j-q9f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Calculate mentally: \\(18 \\times 25\\).",
+    "a": "450",
+    "hint": "Multiply 18 by 100 and divide by 4.",
+    "solutionSteps": [
       {
-        explanation: "Multiply 18 by 100.",
-        workingOut: "1800"
+        "explanation": "Multiply 18 by 100.",
+        "workingOut": "1800"
       },
       {
-        explanation: "Divide by 4.",
-        workingOut: "1800 \\div 4 = 450"
+        "explanation": "Divide by 4.",
+        "workingOut": "1800 \\div 4 = 450"
       }
     ]
   },
-  // ── QUESTION 9g ──
   {
-    id: "y7-2j-q9g",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Calculate mentally: \\(528 \\div 4\\).",
-    a: "132",
-    hint: "Halve 528 twice.",
-    solutionSteps: [
+    "id": "y7-2j-q9g",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Calculate mentally: \\(528 \\div 4\\).",
+    "a": "132",
+    "hint": "Halve 528 twice.",
+    "solutionSteps": [
       {
-        explanation: "Divide 528 by 2.",
-        workingOut: "264"
+        "explanation": "Divide 528 by 2.",
+        "workingOut": "264"
       },
       {
-        explanation: "Divide 264 by 2.",
-        workingOut: "132"
+        "explanation": "Divide 264 by 2.",
+        "workingOut": "132"
       }
     ]
   },
-  // ── QUESTION 9h ──
   {
-    id: "y7-2j-q9h",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Calculate mentally: \\(730 \\div 5\\).",
-    a: "146",
-    hint: "Double 730 and divide by 10.",
-    solutionSteps: [
+    "id": "y7-2j-q9h",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Calculate mentally: \\(730 \\div 5\\).",
+    "a": "146",
+    "hint": "Double 730 and divide by 10.",
+    "solutionSteps": [
       {
-        explanation: "Double 730.",
-        workingOut: "1460"
+        "explanation": "Double 730.",
+        "workingOut": "1460"
       },
       {
-        explanation: "Divide by 10.",
-        workingOut: "1460 \\div 10 = 146"
+        "explanation": "Divide by 10.",
+        "workingOut": "1460 \\div 10 = 146"
       }
     ]
   },
-  // ── QUESTION 9i ──
   {
-    id: "y7-2j-q9i",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Calculate mentally: \\(426 \\div 6\\).",
-    a: "71",
-    hint: "Divide by 2, then divide by 3.",
-    solutionSteps: [
+    "id": "y7-2j-q9i",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Calculate mentally: \\(426 \\div 6\\).",
+    "a": "71",
+    "hint": "Divide by 2, then divide by 3.",
+    "solutionSteps": [
       {
-        explanation: "Divide 426 by 2.",
-        workingOut: "213"
+        "explanation": "Divide 426 by 2.",
+        "workingOut": "213"
       },
       {
-        explanation: "Divide 213 by 3.",
-        workingOut: "71"
+        "explanation": "Divide 213 by 3.",
+        "workingOut": "71"
       }
     ]
   },
-  // ── QUESTION 10a ──
   {
-    id: "y7-2j-q10a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(6^2\\).",
-    a: "36",
-    hint: "Multiply 6 by itself.",
-    solutionSteps: [
+    "id": "y7-2j-q10a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(6^2\\).",
+    "a": "36",
+    "hint": "Multiply 6 by itself.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the exponent.",
-        workingOut: "6 \\times 6 = 36"
+        "explanation": "Evaluate the exponent.",
+        "workingOut": "6 \\times 6 = 36"
       }
     ]
   },
-  // ── QUESTION 10b ──
   {
-    id: "y7-2j-q10b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(12^2\\).",
-    a: "144",
-    hint: "Multiply 12 by 12.",
-    solutionSteps: [
+    "id": "y7-2j-q10b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(12^2\\).",
+    "a": "144",
+    "hint": "Multiply 12 by 12.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the square.",
-        workingOut: "12 \\times 12 = 144"
+        "explanation": "Evaluate the square.",
+        "workingOut": "12 \\times 12 = 144"
       }
     ]
   },
-  // ── QUESTION 10c ──
   {
-    id: "y7-2j-q10c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(14^2\\).",
-    a: "196",
-    hint: "Multiply 14 by 14.",
-    solutionSteps: [
+    "id": "y7-2j-q10c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(14^2\\).",
+    "a": "196",
+    "hint": "Multiply 14 by 14.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the square of 14.",
-        workingOut: "14 \\times 14 = 196"
+        "explanation": "Evaluate the square of 14.",
+        "workingOut": "14 \\times 14 = 196"
       }
     ]
   },
-  // ── QUESTION 10d ──
   {
-    id: "y7-2j-q10d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(16^2\\).",
-    a: "256",
-    hint: "Multiply 16 by 16.",
-    solutionSteps: [
+    "id": "y7-2j-q10d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(16^2\\).",
+    "a": "256",
+    "hint": "Multiply 16 by 16.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the square of 16.",
-        workingOut: "16 \\times 16 = 256"
+        "explanation": "Evaluate the square of 16.",
+        "workingOut": "16 \\times 16 = 256"
       }
     ]
   },
-  // ── QUESTION 10e ──
   {
-    id: "y7-2j-q10e",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(22^2\\).",
-    a: "484",
-    hint: "Multiply 22 by 22.",
-    solutionSteps: [
+    "id": "y7-2j-q10e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(22^2\\).",
+    "a": "484",
+    "hint": "Multiply 22 by 22.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the square of 22.",
-        workingOut: "22 \\times 22 = 484"
+        "explanation": "Evaluate the square of 22.",
+        "workingOut": "22 \\times 22 = 484"
       }
     ]
   },
-  // ── QUESTION 10f ──
   {
-    id: "y7-2j-q10f",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Evaluate \\(35^2\\).",
-    a: "1225",
-    hint: "Multiply 35 by 35.",
-    solutionSteps: [
+    "id": "y7-2j-q10f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Evaluate \\(35^2\\).",
+    "a": "1225",
+    "hint": "Multiply 35 by 35.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the square of 35.",
-        workingOut: "35 \\times 35 = 1225"
+        "explanation": "Evaluate the square of 35.",
+        "workingOut": "35 \\times 35 = 1225"
       }
     ]
   },
-  // ── QUESTION 11a ──
   {
-    id: "y7-2j-q11a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Find the square root of 900.",
-    a: "30",
-    hint: "What number multiplied by itself gives 900?",
-    solutionSteps: [
+    "id": "y7-2j-q11a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Find the square root of 900.",
+    "a": "30",
+    "hint": "What number multiplied by itself gives 900?",
+    "solutionSteps": [
       {
-        explanation: "Find the square root.",
-        workingOut: "\\sqrt{900} = 30 \\quad (\\text{since } 30 \\times 30 = 900)"
+        "explanation": "Find the square root.",
+        "workingOut": "\\sqrt{900} = 30 \\quad (\\text{since } 30 \\times 30 = 900)"
       }
     ]
   },
-  // ── QUESTION 11b ──
   {
-    id: "y7-2j-q11b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Find the square root of 2500.",
-    a: "50",
-    hint: "Find the number that squares to 2500.",
-    solutionSteps: [
+    "id": "y7-2j-q11b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Find the square root of 2500.",
+    "a": "50",
+    "hint": "Find the number that squares to 2500.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the square root.",
-        workingOut: "\\sqrt{2500} = 50"
+        "explanation": "Evaluate the square root.",
+        "workingOut": "\\sqrt{2500} = 50"
       }
     ]
   },
-  // ── QUESTION 11c ──
   {
-    id: "y7-2j-q11c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Find the square root of 400.",
-    a: "20",
-    hint: "Find the number that squares to 400.",
-    solutionSteps: [
+    "id": "y7-2j-q11c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Find the square root of 400.",
+    "a": "20",
+    "hint": "Find the number that squares to 400.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate.",
-        workingOut: "\\sqrt{400} = 20"
+        "explanation": "Evaluate.",
+        "workingOut": "\\sqrt{400} = 20"
       }
     ]
   },
-  // ── QUESTION 11d ──
   {
-    id: "y7-2j-q11d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Find the square root of 196.",
-    a: "14",
-    hint: "Refer to the squares of numbers under 20.",
-    solutionSteps: [
+    "id": "y7-2j-q11d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Find the square root of 196.",
+    "a": "14",
+    "hint": "Refer to the squares of numbers under 20.",
+    "solutionSteps": [
       {
-        explanation: "Find the square root.",
-        workingOut: "\\sqrt{196} = 14"
+        "explanation": "Find the square root.",
+        "workingOut": "\\sqrt{196} = 14"
       }
     ]
   },
-  // ── QUESTION 11e ──
   {
-    id: "y7-2j-q11e",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Find the square root of 324.",
-    a: "18",
-    hint: "The answer is between 15 and 20.",
-    solutionSteps: [
+    "id": "y7-2j-q11e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Find the square root of 324.",
+    "a": "18",
+    "hint": "The answer is between 15 and 20.",
+    "solutionSteps": [
       {
-        explanation: "Calculate the square root.",
-        workingOut: "\\sqrt{324} = 18"
+        "explanation": "Calculate the square root.",
+        "workingOut": "\\sqrt{324} = 18"
       }
     ]
   },
-  // ── QUESTION 11f ──
   {
-    id: "y7-2j-q11f",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Find the square root of 289.",
-    a: "17",
-    hint: "This number ends in 9, so its square root must end in 3 or 7.",
-    solutionSteps: [
+    "id": "y7-2j-q11f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Find the square root of 289.",
+    "a": "17",
+    "hint": "This number ends in 9, so its square root must end in 3 or 7.",
+    "solutionSteps": [
       {
-        explanation: "Check the root.",
-        workingOut: "\\sqrt{289} = 17"
+        "explanation": "Check the root.",
+        "workingOut": "\\sqrt{289} = 17"
       }
     ]
   },
-  // ── QUESTION 12a ──
   {
-    id: "y7-2j-q12a",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write the number closest to 60 that is divisible by 9.",
-    a: "54",
-    hint: "Compare the multiples of 9 close to 60: 54 and 63.",
-    solutionSteps: [
+    "id": "y7-2j-q12a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write the number closest to 60 that is divisible by 9.",
+    "a": "54",
+    "hint": "Compare the multiples of 9 close to 60: 54 and 63.",
+    "solutionSteps": [
       {
-        explanation: "Find multiples of 9 around 60.",
-        workingOut: "9 \\times 6 = 54, \\quad 9 \\times 7 = 63"
+        "explanation": "Find multiples of 9 around 60.",
+        "workingOut": "9 \\times 6 = 54, quad 9 \\times 7 = 63"
       },
       {
-        explanation: "Determine which is closer to 60.",
-        workingOut: "|60 - 54| = 6, \\quad |60 - 63| = 3 \\implies 63 \\text{ is closer? Wait, no!}"
+        "explanation": "Determine which is closer to 60.",
+        "workingOut": "|60 - 54| = 6, quad |60 - 63| = 3 \\implies 63 \\text{ is closer? Wait, no!}"
       },
       {
-        explanation: "Wait, let's recalculate: 63 is 3 units away, and 54 is 6 units away. So 63 is closest. Let's fix the answer to 63.",
-        workingOut: "63"
+        "explanation": "Wait, let's recalculate: 63 is 3 units away, and 54 is 6 units away. So 63 is closest. Let's fix the answer to 63.",
+        "workingOut": "63"
       }
     ]
   },
-  // ── QUESTION 12b ──
   {
-    id: "y7-2j-q12b",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write the number closest to 110 that is divisible by 9.",
-    a: "108",
-    hint: "Check the multiples of 9 around 110.",
-    solutionSteps: [
+    "id": "y7-2j-q12b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write the number closest to 110 that is divisible by 9.",
+    "a": "108",
+    "hint": "Check the multiples of 9 around 110.",
+    "solutionSteps": [
       {
-        explanation: "Identify multiples of 9 near 110.",
-        workingOut: "9 \\times 12 = 108, \\quad 9 \\times 13 = 117"
+        "explanation": "Identify multiples of 9 near 110.",
+        "workingOut": "9 \\times 12 = 108, quad 9 \\times 13 = 117"
       },
       {
-        explanation: "Compare distances.",
-        workingOut: "|110 - 108| = 2, \\quad |110 - 117| = 7 \\implies 108 \\text{ is closest}"
+        "explanation": "Compare distances.",
+        "workingOut": "|110 - 108| = 2, quad |110 - 117| = 7 \\implies 108 \\text{ is closest}"
       }
     ]
   },
-  // ── QUESTION 12c ──
   {
-    id: "y7-2j-q12c",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write the number closest to 160 that is divisible by 9.",
-    a: "162",
-    hint: "Find multiples of 9 around 160.",
-    solutionSteps: [
+    "id": "y7-2j-q12c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write the number closest to 160 that is divisible by 9.",
+    "a": "162",
+    "hint": "Find multiples of 9 around 160.",
+    "solutionSteps": [
       {
-        explanation: "Identify multiples of 9 near 160.",
-        workingOut: "9 \\times 17 = 153, \\quad 9 \\times 18 = 162"
+        "explanation": "Identify multiples of 9 near 160.",
+        "workingOut": "9 \\times 17 = 153, quad 9 \\times 18 = 162"
       },
       {
-        explanation: "Compare distances.",
-        workingOut: "|160 - 153| = 7, \\quad |160 - 162| = 2 \\implies 162"
+        "explanation": "Compare distances.",
+        "workingOut": "|160 - 153| = 7, quad |160 - 162| = 2 \\implies 162"
       }
     ]
   },
-  // ── QUESTION 12d ──
   {
-    id: "y7-2j-q12d",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write the number closest to 220 that is divisible by 9.",
-    a: "216",
-    hint: "Compare multiples of 9 near 220.",
-    solutionSteps: [
+    "id": "y7-2j-q12d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write the number closest to 220 that is divisible by 9.",
+    "a": "216",
+    "hint": "Compare multiples of 9 near 220.",
+    "solutionSteps": [
       {
-        explanation: "Identify multiples.",
-        workingOut: "9 \\times 24 = 216, \\quad 9 \\times 25 = 225"
+        "explanation": "Identify multiples.",
+        "workingOut": "9 \\times 24 = 216, quad 9 \\times 25 = 225"
       },
       {
-        explanation: "Determine the closest.",
-        workingOut: "|220 - 216| = 4, \\quad |220 - 225| = 5 \\implies 216"
+        "explanation": "Determine the closest.",
+        "workingOut": "|220 - 216| = 4, quad |220 - 225| = 5 \\implies 216"
       }
     ]
   },
-  // ── QUESTION 12e ──
   {
-    id: "y7-2j-q12e",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write the number closest to 260 that is divisible by 9.",
-    a: "261",
-    hint: "Compare multiples of 9 near 260.",
-    solutionSteps: [
+    "id": "y7-2j-q12e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write the number closest to 260 that is divisible by 9.",
+    "a": "261",
+    "hint": "Compare multiples of 9 near 260.",
+    "solutionSteps": [
       {
-        explanation: "Identify multiples.",
-        workingOut: "9 \\times 29 = 261, \\quad 9 \\times 28 = 252"
+        "explanation": "Identify multiples.",
+        "workingOut": "9 \\times 29 = 261, quad 9 \\times 28 = 252"
       },
       {
-        explanation: "Compare distances.",
-        workingOut: "|260 - 261| = 1, \\quad |260 - 252| = 8 \\implies 261"
+        "explanation": "Compare distances.",
+        "workingOut": "|260 - 261| = 1, quad |260 - 252| = 8 \\implies 261"
       }
     ]
   },
-  // ── QUESTION 12f ──
   {
-    id: "y7-2j-q12f",
-    type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Revision",
-    question: "Write the number closest to 310 that is divisible by 9.",
-    a: "306",
-    hint: "Find multiples of 9 near 310.",
-    solutionSteps: [
+    "id": "y7-2j-q12f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "t": "Revision",
+    "question": "Write the number closest to 310 that is divisible by 9.",
+    "a": "306",
+    "hint": "Find multiples of 9 near 310.",
+    "solutionSteps": [
       {
-        explanation: "Identify multiples.",
-        workingOut: "9 \\times 34 = 306, \\quad 9 \\times 35 = 315"
+        "explanation": "Identify multiples.",
+        "workingOut": "9 \\times 34 = 306, quad 9 \\times 35 = 315"
       },
       {
-        explanation: "Compare distances.",
-        workingOut: "|310 - 306| = 4, \\quad |310 - 315| = 5 \\implies 306"
+        "explanation": "Compare distances.",
+        "workingOut": "|310 - 306| = 4, quad |310 - 315| = 5 \\implies 306"
       }
     ]
   },
-  // ── QUESTION 13a1 ──
   {
-    id: "y7-2j-q13a1",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "What is the smallest four-digit number that is a multiple of 8?",
-    a: "1000",
-    hint: "The smallest four-digit number is 1000. Check if 1000 is divisible by 8.",
-    solutionSteps: [
+    "id": "y7-2j-q13a1",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "What is the smallest four-digit number that is a multiple of 8?",
+    "a": "1000",
+    "hint": "The smallest four-digit number is 1000. Check if 1000 is divisible by 8.",
+    "solutionSteps": [
       {
-        explanation: "Divide 1000 by 8.",
-        workingOut: "1000 \\div 8 = 125"
+        "explanation": "Divide 1000 by 8.",
+        "workingOut": "1000 \\div 8 = 125"
       },
       {
-        explanation: "Since the division yields a whole number, 1000 is divisible by 8.",
-        workingOut: "1000"
+        "explanation": "Since the division yields a whole number, 1000 is divisible by 8.",
+        "workingOut": "1000"
       }
     ]
   },
-  // ── QUESTION 13a2 ──
   {
-    id: "y7-2j-q13a2",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "What is the largest four-digit number that is a multiple of 8?",
-    a: "9992",
-    hint: "Divide 9999 by 8 and find the largest integer quotient.",
-    solutionSteps: [
+    "id": "y7-2j-q13a2",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "What is the largest four-digit number that is a multiple of 8?",
+    "a": "9992",
+    "hint": "Divide 9999 by 8 and find the largest integer quotient.",
+    "solutionSteps": [
       {
-        explanation: "Divide 9999 by 8.",
-        workingOut: "9999 \\div 8 = 1249.875"
+        "explanation": "Divide 9999 by 8.",
+        "workingOut": "9999 \\div 8 = 1249.875"
       },
       {
-        explanation: "Multiply the integer part of the quotient by 8.",
-        workingOut: "1249 \\times 8 = 9992"
+        "explanation": "Multiply the integer part of the quotient by 8.",
+        "workingOut": "1249 \\times 8 = 9992"
       }
     ]
   },
-  // ── QUESTION 13b1 ──
   {
-    id: "y7-2j-q13b1",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "What is the smallest four-digit number that is a multiple of 27?",
-    a: "1026",
-    hint: "Divide 1000 by 27, round up, and multiply.",
-    solutionSteps: [
+    "id": "y7-2j-q13b1",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "What is the smallest four-digit number that is a multiple of 27?",
+    "a": "1026",
+    "hint": "Divide 1000 by 27, round up, and multiply.",
+    "solutionSteps": [
       {
-        explanation: "Divide 1000 by 27.",
-        workingOut: "1000 \\div 27 \\approx 37.037"
+        "explanation": "Divide 1000 by 27.",
+        "workingOut": "1000 \\div 27 \\approx 37.037"
       },
       {
-        explanation: "Round up to the next integer, 38, and multiply by 27.",
-        workingOut: "38 \\times 27 = 1026"
+        "explanation": "Round up to the next integer, 38, and multiply by 27.",
+        "workingOut": "38 \\times 27 = 1026"
       }
     ]
   },
-  // ── QUESTION 13b2 ──
   {
-    id: "y7-2j-q13b2",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "What is the largest four-digit number that is a multiple of 27?",
-    a: "9990",
-    hint: "Divide 9999 by 27 and multiply the integer quotient by 27.",
-    solutionSteps: [
+    "id": "y7-2j-q13b2",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "What is the largest four-digit number that is a multiple of 27?",
+    "a": "9990",
+    "hint": "Divide 9999 by 27 and multiply the integer quotient by 27.",
+    "solutionSteps": [
       {
-        explanation: "Divide 9999 by 27.",
-        workingOut: "9999 \\div 27 \\approx 370.33"
+        "explanation": "Divide 9999 by 27.",
+        "workingOut": "9999 \\div 27 \\approx 370.33"
       },
       {
-        explanation: "Multiply the integer part by 27.",
-        workingOut: "370 \\times 27 = 9990"
+        "explanation": "Multiply the integer part by 27.",
+        "workingOut": "370 \\times 27 = 9990"
       }
     ]
   },
-  // ── QUESTION 13c1 ──
   {
-    id: "y7-2j-q13c1",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "What is the smallest four-digit number that is a multiple of both 8 and 27?",
-    a: "1080",
-    hint: "Find the Lowest Common Multiple (LCM) of 8 and 27, then find the smallest four-digit multiple.",
-    solutionSteps: [
+    "id": "y7-2j-q13c1",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "What is the smallest four-digit number that is a multiple of both 8 and 27?",
+    "a": "1080",
+    "hint": "Find the Lowest Common Multiple (LCM) of 8 and 27, then find the smallest four-digit multiple.",
+    "solutionSteps": [
       {
-        explanation: "Since 8 and 27 have no common factors, find their LCM.",
-        workingOut: "\\text{LCM}(8, 27) = 8 \\times 27 = 216"
+        "explanation": "Since 8 and 27 have no common factors, find their LCM.",
+        "workingOut": "\\text{LCM}(8, 27) = 8 \\times 27 = 216"
       },
       {
-        explanation: "Divide 1000 by 216.",
-        workingOut: "1000 \\div 216 \\approx 4.63"
+        "explanation": "Divide 1000 by 216.",
+        "workingOut": "1000 \\div 216 \\approx 4.63"
       },
       {
-        explanation: "Round up to 5 and multiply by 216.",
-        workingOut: "5 \\times 216 = 1080"
+        "explanation": "Round up to 5 and multiply by 216.",
+        "workingOut": "5 \\times 216 = 1080"
       }
     ]
   },
-  // ── QUESTION 13c2 ──
   {
-    id: "y7-2j-q13c2",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "What is the largest four-digit number that is a multiple of both 8 and 27?",
-    a: "9936",
-    hint: "Find the largest multiple of the LCM (216) that is less than 10000.",
-    solutionSteps: [
+    "id": "y7-2j-q13c2",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "What is the largest four-digit number that is a multiple of both 8 and 27?",
+    "a": "9936",
+    "hint": "Find the largest multiple of the LCM (216) that is less than 10000.",
+    "solutionSteps": [
       {
-        explanation: "The LCM is 216. Divide 9999 by 216.",
-        workingOut: "9999 \\div 216 \\approx 46.29"
+        "explanation": "The LCM is 216. Divide 9999 by 216.",
+        "workingOut": "9999 \\div 216 \\approx 46.29"
       },
       {
-        explanation: "Multiply 46 by 216.",
-        workingOut: "46 \\times 216 = 9936"
+        "explanation": "Multiply 46 by 216.",
+        "workingOut": "46 \\times 216 = 9936"
       }
     ]
   },
-  // ── QUESTION 14a ──
   {
-    id: "y7-2j-q14a",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many zeros are there in the number \\(2^3 \\times 5^3\\)?",
-    a: "3",
-    hint: "Recall that \\(2 \\times 5 = 10\\).",
-    solutionSteps: [
+    "id": "y7-2j-q14a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many zeros are there in the number \\(2^3 \\times 5^3\\)?",
+    "a": "3",
+    "hint": "Recall that \\(2 \\times 5 = 10\\).",
+    "solutionSteps": [
       {
-        explanation: "Group the factors of 2 and 5.",
-        workingOut: "2^3 \\times 5^3 = (2 \\times 5)^3"
+        "explanation": "Group the factors of 2 and 5.",
+        "workingOut": "2^3 \\times 5^3 = (2 \\times 5)^3"
       },
       {
-        explanation: "Simplify the base.",
-        workingOut: "10^3 = 1000"
+        "explanation": "Simplify the base.",
+        "workingOut": "10^3 = 1000"
       },
       {
-        explanation: "Count the number of zeros.",
-        workingOut: "3 \\text{ zeros}"
+        "explanation": "Count the number of zeros.",
+        "workingOut": "3 \\text{ zeros}"
       }
     ]
   },
-  // ── QUESTION 14b ──
   {
-    id: "y7-2j-q14b",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many zeros are there in the number \\(2^4 \\times 5^4\\)?",
-    a: "4",
-    hint: "Group the bases of the powers.",
-    solutionSteps: [
+    "id": "y7-2j-q14b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many zeros are there in the number \\(2^4 \\times 5^4\\)?",
+    "a": "4",
+    "hint": "Group the bases of the powers.",
+    "solutionSteps": [
       {
-        explanation: "Rewrite the expression.",
-        workingOut: "(2 \\times 5)^4 = 10^4 = 10000"
+        "explanation": "Rewrite the expression.",
+        "workingOut": "(2 \\times 5)^4 = 10^4 = 10000"
       },
       {
-        explanation: "Identify the number of zeros.",
-        workingOut: "4"
+        "explanation": "Identify the number of zeros.",
+        "workingOut": "4"
       }
     ]
   },
-  // ── QUESTION 14c ──
   {
-    id: "y7-2j-q14c",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many zeros are there in the number \\(2^5 \\times 5^4\\)?",
-    a: "4",
-    hint: "Group as many pairs of 2 and 5 as possible.",
-    solutionSteps: [
+    "id": "y7-2j-q14c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many zeros are there in the number \\(2^5 \\times 5^4\\)?",
+    "a": "4",
+    "hint": "Group as many pairs of 2 and 5 as possible.",
+    "solutionSteps": [
       {
-        explanation: "Factor out \\(2^4 \\times 5^4\\).",
-        workingOut: "2^5 \\times 5^4 = 2 \\times (2^4 \\times 5^4)"
+        "explanation": "Factor out \\(2^4 \\times 5^4\\).",
+        "workingOut": "2^5 \\times 5^4 = 2 \\times (2^4 \\times 5^4)"
       },
       {
-        explanation: "Simplify the power of 10.",
-        workingOut: "2 \\times 10^4 = 2 \\times 10000 = 20000"
+        "explanation": "Simplify the power of 10.",
+        "workingOut": "2 \\times 10^4 = 2 \\times 10000 = 20000"
       },
       {
-        explanation: "Count the zeros.",
-        workingOut: "4"
+        "explanation": "Count the zeros.",
+        "workingOut": "4"
       }
     ]
   },
-  // ── QUESTION 14d ──
   {
-    id: "y7-2j-q14d",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many zeros are there in the number \\(2^4 \\times 5^5\\)?",
-    a: "4",
-    hint: "Group the common power of 2 and 5.",
-    solutionSteps: [
+    "id": "y7-2j-q14d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many zeros are there in the number \\(2^4 \\times 5^5\\)?",
+    "a": "4",
+    "hint": "Group the common power of 2 and 5.",
+    "solutionSteps": [
       {
-        explanation: "Separate the extra factors.",
-        workingOut: "2^4 \\times 5^5 = 5 \\times (2^4 \\times 5^4) = 5 \\times 10^4"
+        "explanation": "Separate the extra factors.",
+        "workingOut": "2^4 \\times 5^5 = 5 \\times (2^4 \\times 5^4) = 5 \\times 10^4"
       },
       {
-        explanation: "Simplify.",
-        workingOut: "5 \\times 10000 = 50000"
+        "explanation": "Simplify.",
+        "workingOut": "5 \\times 10000 = 50000"
       },
       {
-        explanation: "Count the zeros.",
-        workingOut: "4"
+        "explanation": "Count the zeros.",
+        "workingOut": "4"
       }
     ]
   },
-  // ── QUESTION 14e ──
   {
-    id: "y7-2j-q14e",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many zeros are there in the number \\(2^{15} \\times 5^{15}\\)?",
-    a: "15",
-    hint: "Express the product as a power of 10.",
-    solutionSteps: [
+    "id": "y7-2j-q14e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many zeros are there in the number \\(2^{15} \\times 5^{15}\\)?",
+    "a": "15",
+    "hint": "Express the product as a power of 10.",
+    "solutionSteps": [
       {
-        explanation: "Use exponent laws.",
-        workingOut: "(2 \\times 5)^{15} = 10^{15}"
+        "explanation": "Use exponent laws.",
+        "workingOut": "(2 \\times 5)^{15} = 10^{15}"
       },
       {
-        explanation: "A power of 10 has the same number of trailing zeros as its exponent.",
-        workingOut: "15"
+        "explanation": "A power of 10 has the same number of trailing zeros as its exponent.",
+        "workingOut": "15"
       }
     ]
   },
-  // ── QUESTION 14f ──
   {
-    id: "y7-2j-q14f",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many zeros are there in the number \\(2^{16} \\times 5^{15}\\)?",
-    a: "15",
-    hint: "Match the pairs of 2 and 5.",
-    solutionSteps: [
+    "id": "y7-2j-q14f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many zeros are there in the number \\(2^{16} \\times 5^{15}\\)?",
+    "a": "15",
+    "hint": "Match the pairs of 2 and 5.",
+    "solutionSteps": [
       {
-        explanation: "Separate the factors.",
-        workingOut: "2 \\times (2^{15} \\times 5^{15}) = 2 \\times 10^{15}"
+        "explanation": "Separate the factors.",
+        "workingOut": "2 \\times (2^{15} \\times 5^{15}) = 2 \\times 10^{15}"
       },
       {
-        explanation: "Count the number of trailing zeros.",
-        workingOut: "15"
+        "explanation": "Count the number of trailing zeros.",
+        "workingOut": "15"
       }
     ]
   },
-  // ── QUESTION 14g ──
   {
-    id: "y7-2j-q14g",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many zeros are there in the number \\(2^{18} \\times 5^{15}\\)?",
-    a: "15",
-    hint: "Identify the power of 10 factor.",
-    solutionSteps: [
+    "id": "y7-2j-q14g",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many zeros are there in the number \\(2^{18} \\times 5^{15}\\)?",
+    "a": "15",
+    "hint": "Identify the power of 10 factor.",
+    "solutionSteps": [
       {
-        explanation: "Separate the expression.",
-        workingOut: "2^3 \\times (2^{15} \\times 5^{15}) = 8 \\times 10^{15}"
+        "explanation": "Separate the expression.",
+        "workingOut": "2^3 \\times (2^{15} \\times 5^{15}) = 8 \\times 10^{15}"
       },
       {
-        explanation: "Count the zeros.",
-        workingOut: "15"
+        "explanation": "Count the zeros.",
+        "workingOut": "15"
       }
     ]
   },
-  // ── QUESTION 15a ──
   {
-    id: "y7-2j-q15a",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 256 as a product of prime factors. Use index notation where appropriate.",
-    a: "2^8",
-    hint: "Keep dividing 256 by 2.",
-    solutionSteps: [
+    "id": "y7-2j-q15a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 256 as a product of prime factors. Use index notation where appropriate.",
+    "a": "2^8",
+    "hint": "Keep dividing 256 by 2.",
+    "solutionSteps": [
       {
-        explanation: "Repeatedly divide by 2.",
-        workingOut: "256 = 2 \\times 128 = 2^2 \\times 64 = \\dots = 2^8"
+        "explanation": "Repeatedly divide by 2.",
+        "workingOut": "256 = 2 \\times 128 = 2^2 \\times 64 = \\dots = 2^8"
       }
     ]
   },
-  // ── QUESTION 15b ──
   {
-    id: "y7-2j-q15b",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 2048 as a product of prime factors. Use index notation where appropriate.",
-    a: "2^{11}",
-    hint: "Note that 2048 is double 1024.",
-    solutionSteps: [
+    "id": "y7-2j-q15b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 2048 as a product of prime factors. Use index notation where appropriate.",
+    "a": "2^{11}",
+    "hint": "Note that 2048 is double 1024.",
+    "solutionSteps": [
       {
-        explanation: "Express as powers of 2.",
-        workingOut: "2048 = 2 \\times 1024 = 2 \\times 2^{10} = 2^{11}"
+        "explanation": "Express as powers of 2.",
+        "workingOut": "2048 = 2 \\times 1024 = 2 \\times 2^{10} = 2^{11}"
       }
     ]
   },
-  // ── QUESTION 15c ──
   {
-    id: "y7-2j-q15c",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 343 as a product of prime factors. Use index notation where appropriate.",
-    a: "7^3",
-    hint: "Check divisibility by small prime numbers.",
-    solutionSteps: [
+    "id": "y7-2j-q15c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 343 as a product of prime factors. Use index notation where appropriate.",
+    "a": "7^3",
+    "hint": "Check divisibility by small prime numbers.",
+    "solutionSteps": [
       {
-        explanation: "Divide 343 by 7.",
-        workingOut: "343 \\div 7 = 49"
+        "explanation": "Divide 343 by 7.",
+        "workingOut": "343 \\div 7 = 49"
       },
       {
-        explanation: "Express 49 as a power of 7.",
-        workingOut: "49 = 7^2 \\implies 343 = 7^3"
+        "explanation": "Express 49 as a power of 7.",
+        "workingOut": "49 = 7^2 \\implies 343 = 7^3"
       }
     ]
   },
-  // ── QUESTION 15d ──
   {
-    id: "y7-2j-q15d",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 600 as a product of prime factors. Use index notation where appropriate.",
-    a: "2^3 \\times 3 \\times 5^2",
-    hint: "Perform a prime factor tree for 600.",
-    solutionSteps: [
+    "id": "y7-2j-q15d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 600 as a product of prime factors. Use index notation where appropriate.",
+    "a": "2^3 \\times 3 \\times 5^2",
+    "hint": "Perform a prime factor tree for 600.",
+    "solutionSteps": [
       {
-        explanation: "Separate into factors.",
-        workingOut: "600 = 6 \\times 100 = (2 \\times 3) \\times (2^2 \\times 5^2)"
+        "explanation": "Separate into factors.",
+        "workingOut": "600 = 6 \\times 100 = (2 \\times 3) \\times (2^2 \\times 5^2)"
       },
       {
-        explanation: "Group the prime factors.",
-        workingOut: "2^3 \\times 3 \\times 5^2"
+        "explanation": "Group the prime factors.",
+        "workingOut": "2^3 \\times 3 \\times 5^2"
       }
     ]
   },
-  // ── QUESTION 15e ──
   {
-    id: "y7-2j-q15e",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 2002 as a product of prime factors. Use index notation where appropriate.",
-    a: "2 \\times 7 \\times 11 \\times 13",
-    hint: "First divide by 2, then test divisibility by 7, 11, etc.",
-    solutionSteps: [
+    "id": "y7-2j-q15e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 2002 as a product of prime factors. Use index notation where appropriate.",
+    "a": "2 \\times 7 \\times 11 \\times 13",
+    "hint": "First divide by 2, then test divisibility by 7, 11, etc.",
+    "solutionSteps": [
       {
-        explanation: "Divide by 2.",
-        workingOut: "2002 = 2 \\times 1001"
+        "explanation": "Divide by 2.",
+        "workingOut": "2002 = 2 \\times 1001"
       },
       {
-        explanation: "Divide 1001 by 7.",
-        workingOut: "1001 \\div 7 = 143 \\implies 2002 = 2 \\times 7 \\times 143"
+        "explanation": "Divide 1001 by 7.",
+        "workingOut": "1001 \\div 7 = 143 \\implies 2002 = 2 \\times 7 \\times 143"
       },
       {
-        explanation: "Factor 143.",
-        workingOut: "143 = 11 \\times 13 \\implies 2002 = 2 \\times 7 \\times 11 \\times 13"
+        "explanation": "Factor 143.",
+        "workingOut": "143 = 11 \\times 13 \\implies 2002 = 2 \\times 7 \\times 11 \\times 13"
       }
     ]
   },
-  // ── QUESTION 15f ──
   {
-    id: "y7-2j-q15f",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 34034 as a product of prime factors. Use index notation where appropriate.",
-    a: "2 \\times 7 \\times 11 \\times 13 \\times 17",
-    hint: "Identify factors of 34034 starting with 2 and 17017.",
-    solutionSteps: [
+    "id": "y7-2j-q15f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 34034 as a product of prime factors. Use index notation where appropriate.",
+    "a": "2 \\times 7 \\times 11 \\times 13 \\times 17",
+    "hint": "Identify factors of 34034 starting with 2 and 17017.",
+    "solutionSteps": [
       {
-        explanation: "Divide by 2.",
-        workingOut: "34034 = 2 \\times 17017"
+        "explanation": "Divide by 2.",
+        "workingOut": "34034 = 2 \\times 17017"
       },
       {
-        explanation: "Divide 17017 by 17.",
-        workingOut: "17017 \\div 17 = 1001"
+        "explanation": "Divide 17017 by 17.",
+        "workingOut": "17017 \\div 17 = 1001"
       },
       {
-        explanation: "Factor 1001 into primes.",
-        workingOut: "1001 = 7 \\times 11 \\times 13"
+        "explanation": "Factor 1001 into primes.",
+        "workingOut": "1001 = 7 \\times 11 \\times 13"
       },
       {
-        explanation: "Combine all prime factors.",
-        workingOut: "2 \\times 7 \\times 11 \\times 13 \\times 17"
+        "explanation": "Combine all prime factors.",
+        "workingOut": "2 \\times 7 \\times 11 \\times 13 \\times 17"
       }
     ]
   },
-  // ── QUESTION 15g ──
   {
-    id: "y7-2j-q15g",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 38038 as a product of prime factors. Use index notation where appropriate.",
-    a: "2 \\times 7 \\times 11 \\times 13 \\times 19",
-    hint: "Start by dividing by 2 and then look for factors of 19019.",
-    solutionSteps: [
+    "id": "y7-2j-q15g",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 38038 as a product of prime factors. Use index notation where appropriate.",
+    "a": "2 \\times 7 \\times 11 \\times 13 \\times 19",
+    "hint": "Start by dividing by 2 and then look for factors of 19019.",
+    "solutionSteps": [
       {
-        explanation: "Divide by 2.",
-        workingOut: "38038 = 2 \\times 19019"
+        "explanation": "Divide by 2.",
+        "workingOut": "38038 = 2 \\times 19019"
       },
       {
-        explanation: "Divide 19019 by 19.",
-        workingOut: "19019 \\div 19 = 1001"
+        "explanation": "Divide 19019 by 19.",
+        "workingOut": "19019 \\div 19 = 1001"
       },
       {
-        explanation: "Use the prime factors of 1001.",
-        workingOut: "1001 = 7 \\times 11 \\times 13"
+        "explanation": "Use the prime factors of 1001.",
+        "workingOut": "1001 = 7 \\times 11 \\times 13"
       },
       {
-        explanation: "Combine the factors.",
-        workingOut: "2 \\times 7 \\times 11 \\times 13 \\times 19"
+        "explanation": "Combine the factors.",
+        "workingOut": "2 \\times 7 \\times 11 \\times 13 \\times 19"
       }
     ]
   },
-  // ── QUESTION 15h ──
   {
-    id: "y7-2j-q15h",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 8000 as a product of prime factors. Use index notation where appropriate.",
-    a: "2^6 \\times 5^3",
-    hint: "Write 8000 as \\(8 \\times 1000\\).",
-    solutionSteps: [
+    "id": "y7-2j-q15h",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 8000 as a product of prime factors. Use index notation where appropriate.",
+    "a": "2^6 \\times 5^3",
+    "hint": "Write 8000 as \\(8 \\times 1000\\).",
+    "solutionSteps": [
       {
-        explanation: "Separate into powers of 10.",
-        workingOut: "8000 = 8 \\times 10^3"
+        "explanation": "Separate into powers of 10.",
+        "workingOut": "8000 = 8 \\times 10^3"
       },
       {
-        explanation: "Express 8 and 10 in prime factor form.",
-        workingOut: "8 = 2^3, \\quad 10^3 = (2 \\times 5)^3 = 2^3 \\times 5^3"
+        "explanation": "Express 8 and 10 in prime factor form.",
+        "workingOut": "8 = 2^3, quad 10^3 = (2 \\times 5)^3 = 2^3 \\times 5^3"
       },
       {
-        explanation: "Combine the powers of 2.",
-        workingOut: "2^3 \\times 2^3 \\times 5^3 = 2^6 \\times 5^3"
+        "explanation": "Combine the powers of 2.",
+        "workingOut": "2^3 \\times 2^3 \\times 5^3 = 2^6 \\times 5^3"
       }
     ]
   },
-  // ── QUESTION 15i ──
   {
-    id: "y7-2j-q15i",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 10240 as a product of prime factors. Use index notation where appropriate.",
-    a: "2^{11} \\times 5",
-    hint: "Separate into \\(1024 \\times 10\\).",
-    solutionSteps: [
+    "id": "y7-2j-q15i",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 10240 as a product of prime factors. Use index notation where appropriate.",
+    "a": "2^{11} \\times 5",
+    "hint": "Separate into \\(1024 \\times 10\\).",
+    "solutionSteps": [
       {
-        explanation: "Factor the number.",
-        workingOut: "10240 = 1024 \\times 10"
+        "explanation": "Factor the number.",
+        "workingOut": "10240 = 1024 \\times 10"
       },
       {
-        explanation: "Write 1024 and 10 as prime factors.",
-        workingOut: "1024 = 2^{10}, \\quad 10 = 2 \\times 5"
+        "explanation": "Write 1024 and 10 as prime factors.",
+        "workingOut": "1024 = 2^{10}, quad 10 = 2 \\times 5"
       },
       {
-        explanation: "Combine using exponents.",
-        workingOut: "2^{10} \\times 2 \\times 5 = 2^{11} \\times 5"
+        "explanation": "Combine using exponents.",
+        "workingOut": "2^{10} \\times 2 \\times 5 = 2^{11} \\times 5"
       }
     ]
   },
-  // ── QUESTION 15j ──
   {
-    id: "y7-2j-q15j",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 729 as a product of prime factors. Use index notation where appropriate.",
-    a: "3^6",
-    hint: "Identify 729 as a power of 3.",
-    solutionSteps: [
+    "id": "y7-2j-q15j",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 729 as a product of prime factors. Use index notation where appropriate.",
+    "a": "3^6",
+    "hint": "Identify 729 as a power of 3.",
+    "solutionSteps": [
       {
-        explanation: "Repeatedly divide by 3.",
-        workingOut: "729 = 3 \\times 243 = 3^2 \\times 81 = 3^2 \\times 3^4 = 3^6"
+        "explanation": "Repeatedly divide by 3.",
+        "workingOut": "729 = 3 \\times 243 = 3^2 \\times 81 = 3^2 \\times 3^4 = 3^6"
       }
     ]
   },
-  // ── QUESTION 15k ──
   {
-    id: "y7-2j-q15k",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 2025 as a product of prime factors. Use index notation where appropriate.",
-    a: "3^4 \\times 5^2",
-    hint: "First divide by 25.",
-    solutionSteps: [
+    "id": "y7-2j-q15k",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 2025 as a product of prime factors. Use index notation where appropriate.",
+    "a": "3^4 \\times 5^2",
+    "hint": "First divide by 25.",
+    "solutionSteps": [
       {
-        explanation: "Divide by 25 (which is \\(5^2\\)).",
-        workingOut: "2025 \\div 25 = 81"
+        "explanation": "Divide by 25 (which is \\(5^2\\)).",
+        "workingOut": "2025 \\div 25 = 81"
       },
       {
-        explanation: "Express 81 as a power of 3.",
-        workingOut: "81 = 3^4"
+        "explanation": "Express 81 as a power of 3.",
+        "workingOut": "81 = 3^4"
       },
       {
-        explanation: "Combine the factors.",
-        workingOut: "3^4 \\times 5^2"
+        "explanation": "Combine the factors.",
+        "workingOut": "3^4 \\times 5^2"
       }
     ]
   },
-  // ── QUESTION 15l ──
   {
-    id: "y7-2j-q15l",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Express 2888 as a product of prime factors. Use index notation where appropriate.",
-    a: "2^3 \\times 19^2",
-    hint: "Divide by 8 and check if the result is a perfect square.",
-    solutionSteps: [
+    "id": "y7-2j-q15l",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Express 2888 as a product of prime factors. Use index notation where appropriate.",
+    "a": "2^3 \\times 19^2",
+    "hint": "Divide by 8 and check if the result is a perfect square.",
+    "solutionSteps": [
       {
-        explanation: "Divide by 8 (which is \\(2^3\\)).",
-        workingOut: "2888 \\div 8 = 361"
+        "explanation": "Divide by 8 (which is \\(2^3\\)).",
+        "workingOut": "2888 \\div 8 = 361"
       },
       {
-        explanation: "Identify 361 as a square of a prime number.",
-        workingOut: "361 = 19^2"
+        "explanation": "Identify 361 as a square of a prime number.",
+        "workingOut": "361 = 19^2"
       },
       {
-        explanation: "Combine the prime factors.",
-        workingOut: "2^3 \\times 19^2"
+        "explanation": "Combine the prime factors.",
+        "workingOut": "2^3 \\times 19^2"
       }
     ]
   },
-  // ── QUESTION 16a ──
   {
-    id: "y7-2j-q16a",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "What is the number given by the prime factorisation \\(2^4 \\times 5^4\\)?",
-    a: "10000",
-    hint: "Group the factors of 2 and 5.",
-    solutionSteps: [
+    "id": "y7-2j-q16a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "What is the number given by the prime factorisation \\(2^4 \\times 5^4\\)?",
+    "a": "10000",
+    "hint": "Group the factors of 2 and 5.",
+    "solutionSteps": [
       {
-        explanation: "Combine the exponents.",
-        workingOut: "(2 \\times 5)^4 = 10^4"
+        "explanation": "Combine the exponents.",
+        "workingOut": "(2 \\times 5)^4 = 10^4"
       },
       {
-        explanation: "Calculate the value.",
-        workingOut: "10000"
+        "explanation": "Calculate the value.",
+        "workingOut": "10000"
       }
     ]
   },
-  // ── QUESTION 16b ──
   {
-    id: "y7-2j-q16b",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "What is the number given by the prime factorisation \\(2 \\times 3 \\times 5 \\times 7\\)?",
-    a: "210",
-    hint: "Multiply the factors step by step.",
-    solutionSteps: [
+    "id": "y7-2j-q16b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "What is the number given by the prime factorisation \\(2 \\times 3 \\times 5 \\times 7\\)?",
+    "a": "210",
+    "hint": "Multiply the factors step by step.",
+    "solutionSteps": [
       {
-        explanation: "Multiply the first two factors.",
-        workingOut: "2 \\times 3 = 6"
+        "explanation": "Multiply the first two factors.",
+        "workingOut": "2 \\times 3 = 6"
       },
       {
-        explanation: "Multiply by 5.",
-        workingOut: "6 \\times 5 = 30"
+        "explanation": "Multiply by 5.",
+        "workingOut": "6 \\times 5 = 30"
       },
       {
-        explanation: "Multiply by 7.",
-        workingOut: "30 \\times 7 = 210"
+        "explanation": "Multiply by 7.",
+        "workingOut": "30 \\times 7 = 210"
       }
     ]
   },
-  // ── QUESTION 16c ──
   {
-    id: "y7-2j-q16c",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "What is the number given by the prime factorisation \\(2 \\times 3 \\times 5 \\times 7 \\times 11\\)?",
-    a: "2310",
-    hint: "Use the result of \\(2 \\times 3 \\times 5 \\times 7\\) and multiply it by 11.",
-    solutionSteps: [
+    "id": "y7-2j-q16c",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "What is the number given by the prime factorisation \\(2 \\times 3 \\times 5 \\times 7 \\times 11\\)?",
+    "a": "2310",
+    "hint": "Use the result of \\(2 \\times 3 \\times 5 \\times 7\\) and multiply it by 11.",
+    "solutionSteps": [
       {
-        explanation: "Calculate the product.",
-        workingOut: "210 \\times 11 = 2310"
+        "explanation": "Calculate the product.",
+        "workingOut": "210 \\times 11 = 2310"
       }
     ]
   },
-  // ── QUESTION 16d ──
   {
-    id: "y7-2j-q16d",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "What is the number given by the prime factorisation \\(2^2 \\times 3^2 \\times 5^2\\)?",
-    a: "900",
-    hint: "Group the factors with exponent 2.",
-    solutionSteps: [
+    "id": "y7-2j-q16d",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "What is the number given by the prime factorisation \\(2^2 \\times 3^2 \\times 5^2\\)?",
+    "a": "900",
+    "hint": "Group the factors with exponent 2.",
+    "solutionSteps": [
       {
-        explanation: "Rewrite using index rules.",
-        workingOut: "(2 \\times 3 \\times 5)^2 = 30^2"
+        "explanation": "Rewrite using index rules.",
+        "workingOut": "(2 \\times 3 \\times 5)^2 = 30^2"
       },
       {
-        explanation: "Evaluate.",
-        workingOut: "900"
+        "explanation": "Evaluate.",
+        "workingOut": "900"
       }
     ]
   },
-  // ── QUESTION 16e ──
   {
-    id: "y7-2j-q16e",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "What is the number given by the prime factorisation \\(2^3 \\times 3 \\times 5^2\\)?",
-    a: "600",
-    hint: "Evaluate each power first.",
-    solutionSteps: [
+    "id": "y7-2j-q16e",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "What is the number given by the prime factorisation \\(2^3 \\times 3 \\times 5^2\\)?",
+    "a": "600",
+    "hint": "Evaluate each power first.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the powers.",
-        workingOut: "2^3 = 8, \\quad 5^2 = 25"
+        "explanation": "Evaluate the powers.",
+        "workingOut": "2^3 = 8, quad 5^2 = 25"
       },
       {
-        explanation: "Multiply the numbers.",
-        workingOut: "8 \\times 3 \\times 25 = 24 \\times 25 = 600"
+        "explanation": "Multiply the numbers.",
+        "workingOut": "8 \\times 3 \\times 25 = 24 \\times 25 = 600"
       }
     ]
   },
-  // ── QUESTION 16f ──
   {
-    id: "y7-2j-q16f",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "What is the number given by the prime factorisation \\(2^2 \\times 3^2 \\times 5^3\\)?",
-    a: "4500",
-    hint: "Rewrite as \\((2^2 \\times 5^2) \\times 3^2 \\times 5\\).",
-    solutionSteps: [
+    "id": "y7-2j-q16f",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "What is the number given by the prime factorisation \\(2^2 \\times 3^2 \\times 5^3\\)?",
+    "a": "4500",
+    "hint": "Rewrite as \\((2^2 \\times 5^2) \\times 3^2 \\times 5\\).",
+    "solutionSteps": [
       {
-        explanation: "Separate the powers of 10.",
-        workingOut: "(2 \\times 5)^2 \\times 3^2 \\times 5 = 100 \\times 9 \\times 5"
+        "explanation": "Separate the powers of 10.",
+        "workingOut": "(2 \\times 5)^2 \\times 3^2 \\times 5 = 100 \\times 9 \\times 5"
       },
       {
-        explanation: "Compute the final product.",
-        workingOut: "100 \\times 45 = 4500"
+        "explanation": "Compute the final product.",
+        "workingOut": "100 \\times 45 = 4500"
       }
     ]
   },
-  // ── QUESTION 16g ──
   {
-    id: "y7-2j-q16g",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "What is the number given by the prime factorisation \\(2^2 \\times 3^2 \\times 7^2\\)?",
-    a: "1764",
-    hint: "Combine bases under the common power of 2.",
-    solutionSteps: [
+    "id": "y7-2j-q16g",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "What is the number given by the prime factorisation \\(2^2 \\times 3^2 \\times 7^2\\)?",
+    "a": "1764",
+    "hint": "Combine bases under the common power of 2.",
+    "solutionSteps": [
       {
-        explanation: "Group the factors.",
-        workingOut: "(2 \\times 3 \\times 7)^2 = 42^2"
+        "explanation": "Group the factors.",
+        "workingOut": "(2 \\times 3 \\times 7)^2 = 42^2"
       },
       {
-        explanation: "Calculate the square of 42.",
-        workingOut: "42 \\times 42 = 1764"
+        "explanation": "Calculate the square of 42.",
+        "workingOut": "42 \\times 42 = 1764"
       }
     ]
   },
-  // ── QUESTION 16h ──
   {
-    id: "y7-2j-q16h",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "What is the number given by the prime factorisation \\(3^2 \\times 11^2\\)?",
-    a: "1089",
-    hint: "Combine bases under the power of 2.",
-    solutionSteps: [
+    "id": "y7-2j-q16h",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "What is the number given by the prime factorisation \\(3^2 \\times 11^2\\)?",
+    "a": "1089",
+    "hint": "Combine bases under the power of 2.",
+    "solutionSteps": [
       {
-        explanation: "Group factors.",
-        workingOut: "(3 \\times 11)^2 = 33^2"
+        "explanation": "Group factors.",
+        "workingOut": "(3 \\times 11)^2 = 33^2"
       },
       {
-        explanation: "Calculate the square.",
-        workingOut: "33 \\times 33 = 1089"
+        "explanation": "Calculate the square.",
+        "workingOut": "33 \\times 33 = 1089"
       }
     ]
   },
-  // ── QUESTION 16i ──
   {
-    id: "y7-2j-q16i",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "What is the number given by the prime factorisation \\(3 \\times 2^2 \\times 5^2\\)?",
-    a: "300",
-    hint: "Combine the 2s and 5s first.",
-    solutionSteps: [
+    "id": "y7-2j-q16i",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "What is the number given by the prime factorisation \\(3 \\times 2^2 \\times 5^2\\)?",
+    "a": "300",
+    "hint": "Combine the 2s and 5s first.",
+    "solutionSteps": [
       {
-        explanation: "Identify the power of 10.",
-        workingOut: "2^2 \\times 5^2 = 10^2 = 100"
+        "explanation": "Identify the power of 10.",
+        "workingOut": "2^2 \\times 5^2 = 10^2 = 100"
       },
       {
-        explanation: "Multiply by 3.",
-        workingOut: "3 \\times 100 = 300"
+        "explanation": "Multiply by 3.",
+        "workingOut": "3 \\times 100 = 300"
       }
     ]
   },
-  // ── QUESTION 17 ──
   {
-    id: "y7-2j-q17",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "Find all whole numbers between 10 and 40 (inclusive) that are the product of two different prime numbers. Separate them with commas in ascending order.",
-    a: "10, 14, 15, 21, 22, 26, 33, 34, 35, 38, 39",
-    hint: "Find distinct prime pairs \\((p, q)\\) such that \\(p \\times q\\) is between 10 and 40.",
-    solutionSteps: [
+    "id": "y7-2j-q17",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "Find all whole numbers between 10 and 40 (inclusive) that are the product of two different prime numbers. Separate them with commas in ascending order.",
+    "a": "10, 14, 15, 21, 22, 26, 33, 34, 35, 38, 39",
+    "hint": "Find distinct prime pairs \\((p, q)\\) such that \\(p \\times q\\) is between 10 and 40.",
+    "solutionSteps": [
       {
-        explanation: "Identify primes: 2, 3, 5, 7, 11, 13, 17, 19.",
-        workingOut: "\\text{Primes} = {2, 3, 5, 7, 11, 13, 17, 19, \\dots}"
+        "explanation": "Identify primes: 2, 3, 5, 7, 11, 13, 17, 19.",
+        "workingOut": "\\text{Primes} = {2, 3, 5, 7, 11, 13, 17, 19, dots}"
       },
       {
-        explanation: "List combinations of prime products between 10 and 40.",
-        workingOut: "2 \\times 5 = 10 \\\\ 2 \\times 7 = 14 \\\\ 2 \\times 11 = 22 \\\\ 2 \\times 13 = 26 \\\\ 2 \\times 17 = 34 \\\\ 2 \\times 19 = 38 \\\\ 3 \\times 5 = 15 \\\\ 3 \\times 7 = 21 \\\\ 3 \\times 11 = 33 \\\\ 3 \\times 13 = 39 \\\\ 5 \\times 7 = 35"
+        "explanation": "List combinations of prime products between 10 and 40.",
+        "workingOut": "2 \\times 5 = 10 \\\\ 2 \\times 7 = 14 \\\\ 2 \\times 11 = 22 \\\\ 2 \\times 13 = 26 \\\\ 2 \\times 17 = 34 \\\\ 2 \\times 19 = 38 \\\\ 3 \\times 5 = 15 \\\\ 3 \\times 7 = 21 \\\\ 3 \\times 11 = 33 \\\\ 3 \\times 13 = 39 \\\\ 5 \\times 7 = 35"
       },
       {
-        explanation: "Sort these products in ascending order.",
-        workingOut: "10, 14, 15, 21, 22, 26, 33, 34, 35, 38, 39"
+        "explanation": "Sort these products in ascending order.",
+        "workingOut": "10, 14, 15, 21, 22, 26, 33, 34, 35, 38, 39"
       }
     ]
   },
-  // ── QUESTION 18 (Screenshot Q1) ──
   {
-    id: "y7-2j-q18",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "The prime numbers 13 and 31 have reversed digits. List all other pairs of prime numbers less than 80 that have this same property. Write the pairs in the format (a, b) with a < b, separated by commas in ascending order of a.",
-    a: "(17, 71), (37, 73)",
-    hint: "Examine prime numbers less than 80 and reverse their digits to check if the reversed number is also prime.",
-    solutionSteps: [
+    "id": "y7-2j-q18",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "The prime numbers 13 and 31 have reversed digits. List all other pairs of prime numbers less than 80 that have this same property. Write the pairs in the format (a, b) with a < b, separated by commas in ascending order of a.",
+    "a": "(17, 71), (37, 73)",
+    "hint": "Examine prime numbers less than 80 and reverse their digits to check if the reversed number is also prime.",
+    "solutionSteps": [
       {
-        explanation: "Examine two-digit primes less than 80: 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79.",
-        workingOut: "\\text{Two-digit primes under 80}"
+        "explanation": "Examine two-digit primes less than 80: 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79.",
+        "workingOut": "\\text{Two-digit primes under 80}"
       },
       {
-        explanation: "Check which ones form a prime pair when digits are reversed (excluding (13, 31) which is already given):",
-        workingOut: "17 \\leftrightarrow 71 \\quad (\\text{both prime}) \\\\ 37 \\leftrightarrow 73 \\quad (\\text{both prime}) \\\\ 79 \\leftrightarrow 97 \\quad (97 \\text{ is not less than 80, so excluded})"
+        "explanation": "Check which ones form a prime pair when digits are reversed (excluding (13, 31) which is already given):",
+        "workingOut": "17 \\leftrightarrow 71 \\quad (\\text{both prime}) \\\\ 37 \\leftrightarrow 73 \\quad (\\text{both prime}) \\\\ 79 \\leftrightarrow 97 \\quad (97 \\text{ is not less than 80, so excluded})"
       },
       {
-        explanation: "List the matching pairs.",
-        workingOut: "(17, 71), (37, 73)"
+        "explanation": "List the matching pairs.",
+        "workingOut": "(17, 71), (37, 73)"
       }
     ]
   },
-  // ── QUESTION 19a (Screenshot Q2a) ──
   {
-    id: "y7-2j-q19a",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(8 \\times 30\\).",
-    a: "(10 - 2) * 30 or 2 * 4 * 30",
-    hint: "Express the number 8 using other numbers such as 10 - 2 or 2 * 4.",
-    solutionSteps: [
+    "id": "y7-2j-q19a",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(8 \\times 30\\).",
+    "a": "(10 - 2) * 30 or 2 * 4 * 30",
+    "hint": "Express the number 8 using other numbers such as 10 - 2 or 2 * 4.",
+    "solutionSteps": [
       {
-        explanation: "Rewrite 8 using operational buttons that do work.",
-        workingOut: "8 = 10 - 2 \\quad \\text{or} \\quad 8 = 2 \\times 4"
+        "explanation": "Rewrite 8 using operational buttons that do work.",
+        "workingOut": "8 = 10 - 2 \\quad \\text{or} \\quad 8 = 2 \\times 4"
       },
       {
-        explanation: "Multiply the equivalent expression by 30.",
-        workingOut: "(10 - 2) \\times 30 \\quad \\text{or} \\quad 2 \\times 4 \\times 30"
+        "explanation": "Multiply the equivalent expression by 30.",
+        "workingOut": "(10 - 2) \\times 30 \\quad \\text{or} \\quad 2 \\times 4 \\times 30"
       }
     ]
   },
-  // ── QUESTION 19b (Screenshot Q2b) ──
   {
-    id: "y7-2j-q19b",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(8 \\times 25\\).",
-    a: "(10 - 2) * 25 or 2 * 4 * 25",
-    hint: "Rewrite 8 in terms of working digits like 2, 4, 10.",
-    solutionSteps: [
+    "id": "y7-2j-q19b",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(8 \\times 25\\).",
+    "a": "(10 - 2) * 25 or 2 * 4 * 25",
+    "hint": "Rewrite 8 in terms of working digits like 2, 4, 10.",
+    "solutionSteps": [
       {
-        explanation: "Rewrite 8 in terms of other digits.",
-        workingOut: "8 = 2 \\times 4"
+        "explanation": "Rewrite 8 in terms of other digits.",
+        "workingOut": "8 = 2 \\times 4"
       },
       {
-        explanation: "Perform the calculation.",
-        workingOut: "2 \\times 4 \\times 25"
+        "explanation": "Perform the calculation.",
+        "workingOut": "2 \\times 4 \\times 25"
       }
     ]
   },
-  // ── QUESTION 19c (Screenshot Q2c) ──
   {
-    id: "y7-2j-q19c",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(82 \\times 6\\).",
-    a: "(92 - 10) * 6 or (83 - 1) * 6 (written without 8)",
-    hint: "Find a way to write 82 without using the digit 8. For example, 92 - 10.",
-    solutionSteps: [
+    "id": "y7-2j-q19c",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(82 \\times 6\\).",
+    "a": "(92 - 10) * 6 or (83 - 1) * 6 (written without 8)",
+    "hint": "Find a way to write 82 without using the digit 8. For example, 92 - 10.",
+    "solutionSteps": [
       {
-        explanation: "Write 82 using digits other than 8.",
-        workingOut: "82 = 92 - 10"
+        "explanation": "Write 82 using digits other than 8.",
+        "workingOut": "82 = 92 - 10"
       },
       {
-        explanation: "Multiply by 6.",
-        workingOut: "(92 - 10) \\times 6"
+        "explanation": "Multiply by 6.",
+        "workingOut": "(92 - 10) \\times 6"
       }
     ]
   },
-  // ── QUESTION 19d (Screenshot Q2d) ──
   {
-    id: "y7-2j-q19d",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(87 \\times 12\\).",
-    a: "(90 - 3) * 12",
-    hint: "Rewrite 87 as 90 - 3.",
-    solutionSteps: [
+    "id": "y7-2j-q19d",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(87 \\times 12\\).",
+    "a": "(90 - 3) * 12",
+    "hint": "Rewrite 87 as 90 - 3.",
+    "solutionSteps": [
       {
-        explanation: "Rewrite 87 without using the digit 8.",
-        workingOut: "87 = 90 - 3"
+        "explanation": "Rewrite 87 without using the digit 8.",
+        "workingOut": "87 = 90 - 3"
       },
       {
-        explanation: "Multiply by 12.",
-        workingOut: "(90 - 3) \\times 12"
+        "explanation": "Multiply by 12.",
+        "workingOut": "(90 - 3) \\times 12"
       }
     ]
   },
-  // ── QUESTION 20 (Screenshot Q3) ──
   {
-    id: "y7-2j-q20",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Any number that is divisible by 24 is also divisible by 4 and 6. The opposite is not always true. Write down a number larger than 150 that is divisible by 4 and 6, but not divisible by 24.",
-    a: "156",
-    hint: "Find the Lowest Common Multiple (LCM) of 4 and 6, then find a multiple of this LCM larger than 150 that is not a multiple of 24.",
-    solutionSteps: [
+    "id": "y7-2j-q20",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Any number that is divisible by 24 is also divisible by 4 and 6. The opposite is not always true. Write down a number larger than 150 that is divisible by 4 and 6, but not divisible by 24.",
+    "a": "156",
+    "hint": "Find the Lowest Common Multiple (LCM) of 4 and 6, then find a multiple of this LCM larger than 150 that is not a multiple of 24.",
+    "solutionSteps": [
       {
-        explanation: "Find the LCM of 4 and 6.",
-        workingOut: "\\text{LCM}(4, 6) = 12"
+        "explanation": "Find the LCM of 4 and 6.",
+        "workingOut": "\\text{LCM}(4, 6) = 12"
       },
       {
-        explanation: "Any number divisible by both 4 and 6 must be a multiple of 12.",
-        workingOut: "12, 24, 36, \\dots"
+        "explanation": "Any number divisible by both 4 and 6 must be a multiple of 12.",
+        "workingOut": "12, 24, 36, dots"
       },
       {
-        explanation: "Find multiples of 12 greater than 150.",
-        workingOut: "12 \\times 13 = 156, \\quad 12 \\times 14 = 168"
+        "explanation": "Find multiples of 12 greater than 150.",
+        "workingOut": "12 \\times 13 = 156, quad 12 \\times 14 = 168"
       },
       {
-        explanation: "Verify if 156 is divisible by 24.",
-        workingOut: "156 \\div 24 = 6.5 \\quad (\\text{not divisible})"
+        "explanation": "Verify if 156 is divisible by 24.",
+        "workingOut": "156 \\div 24 = 6.5 \\quad (\\text{not divisible})"
       }
     ]
   },
-  // ── QUESTION 21a (Screenshot Q4a) ──
   {
-    id: "y7-2j-q21a",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "A number is called abundant if the sum of all of its factors (not including the number itself) is greater than the number itself. Find all abundant numbers between 15 and 35. Separate them with commas.",
-    a: "18, 20, 24, 30",
-    hint: "Find the factors of each number in the range, sum them (excluding the number itself), and check if the sum exceeds the number.",
-    solutionSteps: [
+    "id": "y7-2j-q21a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "A number is called abundant if the sum of all of its factors (not including the number itself) is greater than the number itself. Find all abundant numbers between 15 and 35. Separate them with commas.",
+    "a": "18, 20, 24, 30",
+    "hint": "Find the factors of each number in the range, sum them (excluding the number itself), and check if the sum exceeds the number.",
+    "solutionSteps": [
       {
-        explanation: "Test the numbers in the range. Prime numbers are never abundant.",
-        workingOut: "\\text{Check composite numbers: } 16, 18, 20, 21, 22, 24, 25, 26, 27, 28, 30, 32, 33, 34"
+        "explanation": "Test the numbers in the range. Prime numbers are never abundant.",
+        "workingOut": "\\text{Check composite numbers: } 16, 18, 20, 21, 22, 24, 25, 26, 27, 28, 30, 32, 33, 34"
       },
       {
-        explanation: "Evaluate proper factor sums for candidate abundant numbers:",
-        workingOut: "18: 1+2+3+6+9 = 21 > 18 \\\\ 20: 1+2+4+5+10 = 22 > 20 \\\\ 24: 1+2+3+4+6+8+12 = 36 > 24 \\\\ 30: 1+2+3+5+6+10+15 = 42 > 30"
+        "explanation": "Evaluate proper factor sums for candidate abundant numbers:",
+        "workingOut": "18: 1+2+3+6+9 = 21 > 18 \\\\ 20: 1+2+4+5+10 = 22 > 20 \\\\ 24: 1+2+3+4+6+8+12 = 36 > 24 \\\\ 30: 1+2+3+5+6+10+15 = 42 > 30"
       },
       {
-        explanation: "Confirm no other numbers in this range are abundant (e.g. 28 is perfect since 1+2+4+7+14 = 28).",
-        workingOut: "18, 20, 24, 30"
+        "explanation": "Confirm no other numbers in this range are abundant (e.g. 28 is perfect since 1+2+4+7+14 = 28).",
+        "workingOut": "18, 20, 24, 30"
       }
     ]
   },
-  // ── QUESTION 21b (Screenshot Q4b) ──
   {
-    id: "y7-2j-q21b",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Show that 1575 is abundant.",
-    a: "Proper factors sum is 1750, which is greater than 1575",
-    hint: "Find all the factors of 1575, add them up excluding 1575, and show the sum is larger than 1575.",
-    solutionSteps: [
+    "id": "y7-2j-q21b",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Show that 1575 is abundant.",
+    "a": "Proper factors sum is 1750, which is greater than 1575",
+    "hint": "Find all the factors of 1575, add them up excluding 1575, and show the sum is larger than 1575.",
+    "solutionSteps": [
       {
-        explanation: "Find the prime factorisation of 1575.",
-        workingOut: "1575 = 3^2 \\times 5^2 \\times 7"
+        "explanation": "Find the prime factorisation of 1575.",
+        "workingOut": "1575 = 3^2 \\times 5^2 \\times 7"
       },
       {
-        explanation: "List all proper factors of 1575.",
-        workingOut: "1, 3, 5, 7, 9, 15, 21, 25, 35, 45, 63, 75, 105, 175, 225, 315, 525"
+        "explanation": "List all proper factors of 1575.",
+        "workingOut": "1, 3, 5, 7, 9, 15, 21, 25, 35, 45, 63, 75, 105, 175, 225, 315, 525"
       },
       {
-        explanation: "Sum these proper factors.",
-        workingOut: "1 + 3 + 5 + 7 + 9 + 15 + 21 + 25 + 35 + 45 + 63 + 75 + 105 + 175 + 225 + 315 + 525 = 1750"
+        "explanation": "Sum these proper factors.",
+        "workingOut": "1 + 3 + 5 + 7 + 9 + 15 + 21 + 25 + 35 + 45 + 63 + 75 + 105 + 175 + 225 + 315 + 525 = 1750"
       },
       {
-        explanation: "Compare the sum with the original number.",
-        workingOut: "1750 > 1575 \\implies \\text{abundant}"
+        "explanation": "Compare the sum with the original number.",
+        "workingOut": "1750 > 1575 \\implies \\text{abundant}"
       }
     ]
   },
-  // ── QUESTION 22 (Screenshot Q5) ──
   {
-    id: "y7-2j-q22",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "Find all numbers less than 90 (excluding 50) that can be written as the sum of two non-zero squares in two different ways. Separate them with commas in ascending order.",
-    a: "65, 85",
-    hint: "Test numbers to see if they can be written as \\(a^2 + b^2 = c^2 + d^2\\) for positive integers \\(a, b, c, d\\).",
-    solutionSteps: [
+    "id": "y7-2j-q22",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "Find all numbers less than 90 (excluding 50) that can be written as the sum of two non-zero squares in two different ways. Separate them with commas in ascending order.",
+    "a": "65, 85",
+    "hint": "Test numbers to see if they can be written as \\(a^2 + b^2 = c^2 + d^2\\) for positive integers \\(a, b, c, d\\).",
+    "solutionSteps": [
       {
-        explanation: "Test squares: 1, 4, 9, 16, 25, 36, 49, 64, 81.",
-        workingOut: "\\text{Squares} = {1, 4, 9, 16, 25, 36, 49, 64, 81}"
+        "explanation": "Test squares: 1, 4, 9, 16, 25, 36, 49, 64, 81.",
+        "workingOut": "\\text{Squares} = {1, 4, 9, 16, 25, 36, 49, 64, 81}"
       },
       {
-        explanation: "Look for numbers that can be formed in two different ways by summing two squares.",
-        workingOut: "65 = 8^2 + 1^2 = 7^2 + 4^2 \\\\ 85 = 9^2 + 2^2 = 7^2 + 6^2"
+        "explanation": "Look for numbers that can be formed in two different ways by summing two squares.",
+        "workingOut": "65 = 8^2 + 1^2 = 7^2 + 4^2 \\\\ 85 = 9^2 + 2^2 = 7^2 + 6^2"
       },
       {
-        explanation: "Verify there are no other such numbers less than 90.",
-        workingOut: "65, 85"
+        "explanation": "Verify there are no other such numbers less than 90.",
+        "workingOut": "65, 85"
       }
     ]
   },
-  // ── QUESTION 23a (Screenshot Q6a) ──
   {
-    id: "y7-2j-q23a",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Find three non-zero cubes that sum to 43. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
-    a: "3^3 + 2^3 + 2^3",
-    hint: "Cubes to consider: 1, 8, 27. Try combinations of these numbers.",
-    solutionSteps: [
+    "id": "y7-2j-q23a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Find three non-zero cubes that sum to 43. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
+    "a": "3^3 + 2^3 + 2^3",
+    "hint": "Cubes to consider: 1, 8, 27. Try combinations of these numbers.",
+    "solutionSteps": [
       {
-        explanation: "List the cubes less than 43.",
-        workingOut: "1^3 = 1, \\quad 2^3 = 8, \\quad 3^3 = 27"
+        "explanation": "List the cubes less than 43.",
+        "workingOut": "1^3 = 1, quad 2^3 = 8, quad 3^3 = 27"
       },
       {
-        explanation: "Find a combination of three cubes that sums to 43.",
-        workingOut: "27 + 8 + 8 = 43"
+        "explanation": "Find a combination of three cubes that sums to 43.",
+        "workingOut": "27 + 8 + 8 = 43"
       },
       {
-        explanation: "Write the sum in index notation.",
-        workingOut: "3^3 + 2^3 + 2^3"
+        "explanation": "Write the sum in index notation.",
+        "workingOut": "3^3 + 2^3 + 2^3"
       }
     ]
   },
-  // ── QUESTION 23b (Screenshot Q6b) ──
   {
-    id: "y7-2j-q23b",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Find three non-zero cubes that sum to 62. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
-    a: "3^3 + 3^3 + 2^3",
-    hint: "Use combinations of 1, 8, 27, 64.",
-    solutionSteps: [
+    "id": "y7-2j-q23b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Find three non-zero cubes that sum to 62. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
+    "a": "3^3 + 3^3 + 2^3",
+    "hint": "Use combinations of 1, 8, 27, 64.",
+    "solutionSteps": [
       {
-        explanation: "Test combinations of cubes.",
-        workingOut: "27 + 27 + 8 = 54 + 8 = 62"
+        "explanation": "Test combinations of cubes.",
+        "workingOut": "27 + 27 + 8 = 54 + 8 = 62"
       },
       {
-        explanation: "Write using bases and exponents.",
-        workingOut: "3^3 + 3^3 + 2^3"
+        "explanation": "Write using bases and exponents.",
+        "workingOut": "3^3 + 3^3 + 2^3"
       }
     ]
   },
-  // ── QUESTION 23c (Screenshot Q6c) ──
   {
-    id: "y7-2j-q23c",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Find three non-zero cubes that sum to 92. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
-    a: "4^3 + 3^3 + 1^3",
-    hint: "Include the cube of 4 (64) in your trial sums.",
-    solutionSteps: [
+    "id": "y7-2j-q23c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Find three non-zero cubes that sum to 92. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
+    "a": "4^3 + 3^3 + 1^3",
+    "hint": "Include the cube of 4 (64) in your trial sums.",
+    "solutionSteps": [
       {
-        explanation: "Identify cubes up to 92.",
-        workingOut: "1, 8, 27, 64"
+        "explanation": "Identify cubes up to 92.",
+        "workingOut": "1, 8, 27, 64"
       },
       {
-        explanation: "Find the combination.",
-        workingOut: "64 + 27 + 1 = 92"
+        "explanation": "Find the combination.",
+        "workingOut": "64 + 27 + 1 = 92"
       },
       {
-        explanation: "Express using cube notation.",
-        workingOut: "4^3 + 3^3 + 1^3"
+        "explanation": "Express using cube notation.",
+        "workingOut": "4^3 + 3^3 + 1^3"
       }
     ]
   },
-  // ── QUESTION 24 (Screenshot Q7) ──
   {
-    id: "y7-2j-q24",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Find the missing number in the identity: \\(1^3 + 2^3 + 3^3 + 4^3 + 5^3 = (1 + 2 + 3 + 4 + \\square)^2\\).",
-    a: "5",
-    hint: "Identify the pattern relating the sum of consecutive cubes to the square of the sum of the bases.",
-    solutionSteps: [
+    "id": "y7-2j-q24",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Find the missing number in the identity: \\(1^3 + 2^3 + 3^3 + 4^3 + 5^3 = (1 + 2 + 3 + 4 + \\square)^2\\).",
+    "a": "5",
+    "hint": "Identify the pattern relating the sum of consecutive cubes to the square of the sum of the bases.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate the left-hand side (sum of cubes).",
-        workingOut: "1 + 8 + 27 + 64 + 125 = 225"
+        "explanation": "Evaluate the left-hand side (sum of cubes).",
+        "workingOut": "1 + 8 + 27 + 64 + 125 = 225"
       },
       {
-        explanation: "Evaluate the square root of the sum.",
-        workingOut: "\\sqrt{225} = 15"
+        "explanation": "Evaluate the square root of the sum.",
+        "workingOut": "\\sqrt{225} = 15"
       },
       {
-        explanation: "Solve for the missing term in the bases sum.",
-        workingOut: "1 + 2 + 3 + 4 + \\square = 15 \\implies 10 + \\square = 15 \\implies \\square = 5"
+        "explanation": "Solve for the missing term in the bases sum.",
+        "workingOut": "1 + 2 + 3 + 4 + \\square = 15 \\implies 10 + \\square = 15 \\implies \\square = 5"
       }
     ]
   },
-  // ── QUESTION 25a (Screenshot Q8a) ──
   {
-    id: "y7-2j-q25a",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write 18 as a sum of no more than 4 cubes.",
-    a: "2^3 + 2^3 + 1^3 + 1^3",
-    hint: "Use cubes like 1, 8, 27. Try to sum up to 4 of them to get 18.",
-    solutionSteps: [
+    "id": "y7-2j-q25a",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write 18 as a sum of no more than 4 cubes.",
+    "a": "2^3 + 2^3 + 1^3 + 1^3",
+    "hint": "Use cubes like 1, 8, 27. Try to sum up to 4 of them to get 18.",
+    "solutionSteps": [
       {
-        explanation: "List the available cubes: 1, 8.",
-        workingOut: "1, 8"
+        "explanation": "List the available cubes: 1, 8.",
+        "workingOut": "1, 8"
       },
       {
-        explanation: "Combine cubes to get 18.",
-        workingOut: "8 + 8 + 1 + 1 = 18"
+        "explanation": "Combine cubes to get 18.",
+        "workingOut": "8 + 8 + 1 + 1 = 18"
       },
       {
-        explanation: "Express as powers.",
-        workingOut: "2^3 + 2^3 + 1^3 + 1^3"
+        "explanation": "Express as powers.",
+        "workingOut": "2^3 + 2^3 + 1^3 + 1^3"
       }
     ]
   },
-  // ── QUESTION 25b (Screenshot Q8b) ──
   {
-    id: "y7-2j-q25b",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write 1730 as a sum of no more than 4 cubes.",
-    a: "10^3 + 9^3 + 1^3",
-    hint: "1000 and 729 are large cubes close to 1730.",
-    solutionSteps: [
+    "id": "y7-2j-q25b",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write 1730 as a sum of no more than 4 cubes.",
+    "a": "10^3 + 9^3 + 1^3",
+    "hint": "1000 and 729 are large cubes close to 1730.",
+    "solutionSteps": [
       {
-        explanation: "Identify cubes close to 1730.",
-        workingOut: "10^3 = 1000, \\quad 9^3 = 729"
+        "explanation": "Identify cubes close to 1730.",
+        "workingOut": "10^3 = 1000, quad 9^3 = 729"
       },
       {
-        explanation: "Add the remaining values.",
-        workingOut: "1000 + 729 + 1 = 1730"
+        "explanation": "Add the remaining values.",
+        "workingOut": "1000 + 729 + 1 = 1730"
       },
       {
-        explanation: "Express in index form.",
-        workingOut: "10^3 + 9^3 + 1^3"
+        "explanation": "Express in index form.",
+        "workingOut": "10^3 + 9^3 + 1^3"
       }
     ]
   },
-  // ── QUESTION 25c (Screenshot Q8c) ──
   {
-    id: "y7-2j-q25c",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write 38 as a sum of no more than 4 cubes.",
-    a: "3^3 + 2^3 + 1^3 + 1^3 or 3^3 + 2^3 + 2^3 (Wait, 3^3+2^3+2^3 = 27+8+8=43, no. 3^3+2^3+1^3+1^3 = 27+8+1+1 = 37. Wait, 38 is 27+8+1+1+1 (5 cubes). Can we do it in 4? Let's check: 3^3+2^3+2^3 = 43. 3^3 + 11 = 27+8+1+1+1 (5). Wait, what about 2^3+2^3+2^3+2^3+2^3+2^3? No. Is 38 possible in 4 cubes? Wait, 38 = 27 + 8 + 1 + 1 + 1 (5 cubes). Wait! Is 38 equal to any sum of 4 cubes? Cubes: 1, 8, 27. Max 4 cubes: 27+8+1+1 = 37. 27+8+8 = 43. 8+8+8+8 = 32. 27+27 = 54. So 38 is NOT representable as the sum of 4 or fewer cubes! Let's change the number to 37.",
-    hint: "Evaluate 27 + 8 + 1 + 1.",
-    solutionSteps: [
+    "id": "y7-2j-q25c",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write 38 as a sum of no more than 4 cubes.",
+    "a": "3^3 + 2^3 + 1^3 + 1^3 or 3^3 + 2^3 + 2^3 (Wait, 3^3+2^3+2^3 = 27+8+8=43, no. 3^3+2^3+1^3+1^3 = 27+8+1+1 = 37. Wait, 38 is 27+8+1+1+1 (5 cubes). Can we do it in 4? Let's check: 3^3+2^3+2^3 = 43. 3^3 + 11 = 27+8+1+1+1 (5). Wait, what about 2^3+2^3+2^3+2^3+2^3+2^3? No. Is 38 possible in 4 cubes? Wait, 38 = 27 + 8 + 1 + 1 + 1 (5 cubes). Wait! Is 38 equal to any sum of 4 cubes? Cubes: 1, 8, 27. Max 4 cubes: 27+8+1+1 = 37. 27+8+8 = 43. 8+8+8+8 = 32. 27+27 = 54. So 38 is NOT representable as the sum of 4 or fewer cubes! Let's change the number to 37.",
+    "hint": "Evaluate 27 + 8 + 1 + 1.",
+    "solutionSteps": [
       {
-        explanation: "Identify cubes: 27, 8, 1.",
-        workingOut: "27 + 8 + 1 + 1 = 37"
+        "explanation": "Identify cubes: 27, 8, 1.",
+        "workingOut": "27 + 8 + 1 + 1 = 37"
       },
       {
-        explanation: "Express in powers.",
-        workingOut: "3^3 + 2^3 + 1^3 + 1^3"
+        "explanation": "Express in powers.",
+        "workingOut": "3^3 + 2^3 + 1^3 + 1^3"
       }
     ]
   },
-  // ── QUESTION 26a (Screenshot Q9a) ──
   {
-    id: "y7-2j-q26a",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "Fill in the gaps in the six-digit number \\(15\\square82\\square\\) to make the smallest number that is divisible by 4 and 10. Write the two digits separated by a comma (first box, second box).",
-    a: "0, 0",
-    hint: "To be divisible by 10, the last digit must be 0. Then, check divisibility by 4 using the last two digits.",
-    solutionSteps: [
+    "id": "y7-2j-q26a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "Fill in the gaps in the six-digit number \\(15\\square82\\square\\) to make the smallest number that is divisible by 4 and 10. Write the two digits separated by a comma (first box, second box).",
+    "a": "0, 0",
+    "hint": "To be divisible by 10, the last digit must be 0. Then, check divisibility by 4 using the last two digits.",
+    "solutionSteps": [
       {
-        explanation: "Divisibility by 10 means the last digit (second box) must be 0.",
-        workingOut: "\\text{Last digit} = 0"
+        "explanation": "Divisibility by 10 means the last digit (second box) must be 0.",
+        "workingOut": "\\text{Last digit} = 0"
       },
       {
-        explanation: "The last two digits are now 20. 20 is divisible by 4, so the number is divisible by 4 regardless of the first box.",
-        workingOut: "20 \\div 4 = 5"
+        "explanation": "The last two digits are now 20. 20 is divisible by 4, so the number is divisible by 4 regardless of the first box.",
+        "workingOut": "20 \\div 4 = 5"
       },
       {
-        explanation: "For the smallest overall number, choose the smallest digit (0) for the first box.",
-        workingOut: "0, 0"
+        "explanation": "For the smallest overall number, choose the smallest digit (0) for the first box.",
+        "workingOut": "0, 0"
       }
     ]
   },
-  // ── QUESTION 26b (Screenshot Q9b) ──
   {
-    id: "y7-2j-q26b",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "Fill in the gaps in the six-digit number \\(15\\square82\\square\\) to make the smallest number that is divisible by 3, but not 9. Write the two digits separated by a comma (first box, second box).",
-    a: "0, 5",
-    hint: "To be divisible by 3, the sum of the digits must be divisible by 3 but not 9. Try to keep the first box as small as possible (0).",
-    solutionSteps: [
+    "id": "y7-2j-q26b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "Fill in the gaps in the six-digit number \\(15\\square82\\square\\) to make the smallest number that is divisible by 3, but not 9. Write the two digits separated by a comma (first box, second box).",
+    "a": "0, 5",
+    "hint": "To be divisible by 3, the sum of the digits must be divisible by 3 but not 9. Try to keep the first box as small as possible (0).",
+    "solutionSteps": [
       {
-        explanation: "Let the boxes be \\(x\\) and \\(y\\). The sum of the digits is \\(1 + 5 + x + 8 + 2 + y = 16 + x + y\\).",
-        workingOut: "16 + x + y"
+        "explanation": "Let the boxes be \\(x\\) and \\(y\\). The sum of the digits is \\(1 + 5 + x + 8 + 2 + y = 16 + x + y\\).",
+        "workingOut": "16 + x + y"
       },
       {
-        explanation: "To find the smallest number, start with \\(x = 0\\). The sum is \\(16 + y\\).",
-        workingOut: "16 + y"
+        "explanation": "To find the smallest number, start with \\(x = 0\\). The sum is \\(16 + y\\).",
+        "workingOut": "16 + y"
       },
       {
-        explanation: "For divisibility by 3 but not 9, \\(16 + y\\) can be 18 (divisible by 9, so excluded), 21 (divisible by 3, not 9). Let's test \\(16 + y = 21 \\implies y = 5\\).",
-        workingOut: "16 + 5 = 21"
+        "explanation": "For divisibility by 3 but not 9, \\(16 + y\\) can be 18 (divisible by 9, so excluded), 21 (divisible by 3, not 9). Let's test \\(16 + y = 21 \\implies y = 5\\).",
+        "workingOut": "16 + 5 = 21"
       },
       {
-        explanation: "The digits are 0 and 5.",
-        workingOut: "0, 5"
+        "explanation": "The digits are 0 and 5.",
+        "workingOut": "0, 5"
       }
     ]
   },
-  // ── QUESTION 26c (Screenshot Q9c) ──
   {
-    id: "y7-2j-q26c",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "Fill in the gaps in the six-digit number \\(15\\square82\\square\\) to make the smallest number that is divisible by 2 and 5. Write the two digits separated by a comma (first box, second box).",
-    a: "0, 0",
-    hint: "To be divisible by 2 and 5, the number must end in 0.",
-    solutionSteps: [
+    "id": "y7-2j-q26c",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "Fill in the gaps in the six-digit number \\(15\\square82\\square\\) to make the smallest number that is divisible by 2 and 5. Write the two digits separated by a comma (first box, second box).",
+    "a": "0, 0",
+    "hint": "To be divisible by 2 and 5, the number must end in 0.",
+    "solutionSteps": [
       {
-        explanation: "Divisibility by both 2 and 5 requires the last digit to be 0.",
-        workingOut: "\\text{Second box} = 0"
+        "explanation": "Divisibility by both 2 and 5 requires the last digit to be 0.",
+        "workingOut": "\\text{Second box} = 0"
       },
       {
-        explanation: "To make the number as small as possible, choose 0 for the first box.",
-        workingOut: "0, 0"
+        "explanation": "To make the number as small as possible, choose 0 for the first box.",
+        "workingOut": "0, 0"
       }
     ]
   },
-  // ── QUESTION 27 (Screenshot Q10) ──
   {
-    id: "y7-2j-q27",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "The five-digit number \\(\\square432\\triangle\\) is divisible by 72. Find the values of the square and triangle if both are non-zero. Write your answer in the format: square, triangle.",
-    a: "1, 8",
-    hint: "Divisibility by 72 requires the number to be divisible by both 8 and 9.",
-    solutionSteps: [
+    "id": "y7-2j-q27",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "The five-digit number \\(\\square432\\triangle\\) is divisible by 72. Find the values of the square and triangle if both are non-zero. Write your answer in the format: square, triangle.",
+    "a": "1, 8",
+    "hint": "Divisibility by 72 requires the number to be divisible by both 8 and 9.",
+    "solutionSteps": [
       {
-        explanation: "Check divisibility by 8: the last three digits \\(32\\triangle\\) must be divisible by 8.",
-        workingOut: "320 + \\triangle \\div 8 \\implies \\triangle = 0 \\quad \\text{or} \\quad \\triangle = 8"
+        "explanation": "Check divisibility by 8: the last three digits \\(32\\triangle\\) must be divisible by 8.",
+        "workingOut": "320 + \\triangle \\div 8 \\implies \\triangle = 0 \\quad \\text{or} \\quad \\triangle = 8"
       },
       {
-        explanation: "Since both must be non-zero, choose \\(\\triangle = 8\\).",
-        workingOut: "\\triangle = 8"
+        "explanation": "Since both must be non-zero, choose \\(\\triangle = 8\\).",
+        "workingOut": "\\triangle = 8"
       },
       {
-        explanation: "Check divisibility by 9: the sum of the digits \\(\\square + 4 + 3 + 2 + 8\\) must be a multiple of 9.",
-        workingOut: "\\square + 17 = 18 \\implies \\square = 1"
+        "explanation": "Check divisibility by 9: the sum of the digits \\(\\square + 4 + 3 + 2 + 8\\) must be a multiple of 9.",
+        "workingOut": "\\square + 17 = 18 \\implies \\square = 1"
       },
       {
-        explanation: "Write the answers.",
-        workingOut: "1, 8"
+        "explanation": "Write the answers.",
+        "workingOut": "1, 8"
       }
     ]
   },
-  // ── QUESTION 28a (Screenshot Q11a) ──
   {
-    id: "y7-2j-q28a",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many factors does the number \\(4096 = 2^{12}\\) have?",
-    a: "13",
-    hint: "Add 1 to the exponent of the prime factor.",
-    solutionSteps: [
+    "id": "y7-2j-q28a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many factors does the number \\(4096 = 2^{12}\\) have?",
+    "a": "13",
+    "hint": "Add 1 to the exponent of the prime factor.",
+    "solutionSteps": [
       {
-        explanation: "For a prime factorisation \\(p^a\\), the number of factors is \\(a + 1\\).",
-        workingOut: "12 + 1 = 13"
+        "explanation": "For a prime factorisation \\(p^a\\), the number of factors is \\(a + 1\\).",
+        "workingOut": "12 + 1 = 13"
       }
     ]
   },
-  // ── QUESTION 28b (Screenshot Q11b) ──
   {
-    id: "y7-2j-q28b",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many factors does the number \\(243 = 3^5\\) have?",
-    a: "6",
-    hint: "Add 1 to the exponent.",
-    solutionSteps: [
+    "id": "y7-2j-q28b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many factors does the number \\(243 = 3^5\\) have?",
+    "a": "6",
+    "hint": "Add 1 to the exponent.",
+    "solutionSteps": [
       {
-        explanation: "Find the factor count.",
-        workingOut: "5 + 1 = 6"
+        "explanation": "Find the factor count.",
+        "workingOut": "5 + 1 = 6"
       }
     ]
   },
-  // ── QUESTION 28c (Screenshot Q11c) ──
   {
-    id: "y7-2j-q28c",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "How many factors does the number \\(2^{12} \\times 3^5\\) have?",
-    a: "78",
-    hint: "Multiply the factor counts of each prime base (add 1 to each exponent, then multiply).",
-    solutionSteps: [
+    "id": "y7-2j-q28c",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "How many factors does the number \\(2^{12} \\times 3^5\\) have?",
+    "a": "78",
+    "hint": "Multiply the factor counts of each prime base (add 1 to each exponent, then multiply).",
+    "solutionSteps": [
       {
-        explanation: "Add 1 to each exponent.",
-        workingOut: "(12 + 1) \\times (5 + 1)"
+        "explanation": "Add 1 to each exponent.",
+        "workingOut": "(12 + 1) \\times (5 + 1)"
       },
       {
-        explanation: "Multiply the results.",
-        workingOut: "13 \\times 6 = 78"
+        "explanation": "Multiply the results.",
+        "workingOut": "13 \\times 6 = 78"
       }
     ]
   },
-  // ── QUESTION 29a (Screenshot Q12a) ──
   {
-    id: "y7-2j-q29a",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many prime numbers are there less than 100?",
-    a: "25",
-    hint: "Count the prime numbers starting from 2, 3, 5, 7, etc.",
-    solutionSteps: [
+    "id": "y7-2j-q29a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many prime numbers are there less than 100?",
+    "a": "25",
+    "hint": "Count the prime numbers starting from 2, 3, 5, 7, etc.",
+    "solutionSteps": [
       {
-        explanation: "Identify the primes less than 100: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.",
-        workingOut: "\\text{Prime count} = 25"
+        "explanation": "Identify the primes less than 100: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.",
+        "workingOut": "\\text{Prime count} = 25"
       }
     ]
   },
-  // ── QUESTION 29b (Screenshot Q12c) ──
   {
-    id: "y7-2j-q29b",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "What is the largest gap between adjacent prime numbers less than 200?",
-    a: "14",
-    hint: "Compare difference between adjacent primes. Look near 113 and 127.",
-    solutionSteps: [
+    "id": "y7-2j-q29b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "What is the largest gap between adjacent prime numbers less than 200?",
+    "a": "14",
+    "hint": "Compare difference between adjacent primes. Look near 113 and 127.",
+    "solutionSteps": [
       {
-        explanation: "Find the adjacent primes between 113 and 127.",
-        workingOut: "127 - 113 = 14"
+        "explanation": "Find the adjacent primes between 113 and 127.",
+        "workingOut": "127 - 113 = 14"
       },
       {
-        explanation: "Confirm no other prime gap under 200 is larger than 14.",
-        workingOut: "14"
+        "explanation": "Confirm no other prime gap under 200 is larger than 14.",
+        "workingOut": "14"
       }
     ]
   },
-  // ── QUESTION 30a (Screenshot Q13a) ──
   {
-    id: "y7-2j-q30a",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "How many zeros are at the end of the number obtained from \\(15 \\times 14 \\times 13 \\times \\dots \\times 1\\)?",
-    a: "3",
-    hint: "This is 15 factorial (15!). Count the number of factors of 5 in the product.",
-    solutionSteps: [
+    "id": "y7-2j-q30a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "How many zeros are at the end of the number obtained from \\(15 \\times 14 \\times 13 \\times \\dots \\times 1\\)?",
+    "a": "3",
+    "hint": "This is 15 factorial (15!). Count the number of factors of 5 in the product.",
+    "solutionSteps": [
       {
-        explanation: "Count the multiples of 5 less than or equal to 15.",
-        workingOut: "5, 10, 15 \\implies 3 \\text{ factors of } 5"
+        "explanation": "Count the multiples of 5 less than or equal to 15.",
+        "workingOut": "5, 10, 15 \\implies 3 \\text{ factors of } 5"
       },
       {
-        explanation: "Since there are plenty of factors of 2, the number of factors of 5 determines the number of trailing zeros.",
-        workingOut: "3"
+        "explanation": "Since there are plenty of factors of 2, the number of factors of 5 determines the number of trailing zeros.",
+        "workingOut": "3"
       }
     ]
   },
-  // ── QUESTION 30b (Screenshot Q13b) ──
   {
-    id: "y7-2j-q30b",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "How many zeros are at the end of the number obtained by multiplying the numbers from 1 to 80 together?",
-    a: "19",
-    hint: "Use Legendre's formula to count the factors of 5 in 80!.",
-    solutionSteps: [
+    "id": "y7-2j-q30b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "How many zeros are at the end of the number obtained by multiplying the numbers from 1 to 80 together?",
+    "a": "19",
+    "hint": "Use Legendre's formula to count the factors of 5 in 80!.",
+    "solutionSteps": [
       {
-        explanation: "Divide 80 by powers of 5 and sum the integer quotients.",
-        workingOut: "\\lfloor \\frac{80}{5} \\rfloor + \\lfloor \\frac{80}{25} \\rfloor"
+        "explanation": "Divide 80 by powers of 5 and sum the integer quotients.",
+        "workingOut": "\\lfloor \\frac{80}{5} \\rfloor + \\lfloor \\frac{80}{25} \\rfloor"
       },
       {
-        explanation: "Evaluate the quotients.",
-        workingOut: "16 + 3 = 19"
+        "explanation": "Evaluate the quotients.",
+        "workingOut": "16 + 3 = 19"
       }
     ]
   },
-  // ── QUESTION 31a (Screenshot Q14a) ──
   {
-    id: "y7-2j-q31a",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write 28 as the sum of 4 squares.",
-    a: "5^2 + 1^2 + 1^2 + 1^2 or 4^2 + 2^2 + 2^2 + 2^2",
-    hint: "Try combining squares: 1, 4, 9, 16, 25.",
-    solutionSteps: [
+    "id": "y7-2j-q31a",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write 28 as the sum of 4 squares.",
+    "a": "5^2 + 1^2 + 1^2 + 1^2 or 4^2 + 2^2 + 2^2 + 2^2",
+    "hint": "Try combining squares: 1, 4, 9, 16, 25.",
+    "solutionSteps": [
       {
-        explanation: "Evaluate a combination of squares.",
-        workingOut: "25 + 1 + 1 + 1 = 28 \\implies 5^2 + 1^2 + 1^2 + 1^2"
+        "explanation": "Evaluate a combination of squares.",
+        "workingOut": "25 + 1 + 1 + 1 = 28 \\implies 5^2 + 1^2 + 1^2 + 1^2"
       }
     ]
   },
-  // ── QUESTION 31b (Screenshot Q14b) ──
   {
-    id: "y7-2j-q31b",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write 75 as the sum of 4 squares.",
-    a: "8^2 + 3^2 + 1^2 + 1^2",
-    hint: "Use squares: 64, 9, 1, 1.",
-    solutionSteps: [
+    "id": "y7-2j-q31b",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write 75 as the sum of 4 squares.",
+    "a": "8^2 + 3^2 + 1^2 + 1^2",
+    "hint": "Use squares: 64, 9, 1, 1.",
+    "solutionSteps": [
       {
-        explanation: "Combine squares to total 75.",
-        workingOut: "64 + 9 + 1 + 1 = 75 \\implies 8^2 + 3^2 + 1^2 + 1^2"
+        "explanation": "Combine squares to total 75.",
+        "workingOut": "64 + 9 + 1 + 1 = 75 \\implies 8^2 + 3^2 + 1^2 + 1^2"
       }
     ]
   },
-  // ── QUESTION 31c (Screenshot Q14c) ──
   {
-    id: "y7-2j-q31c",
-    type: "teacher_review",
-    difficulty: "medium",
-    timeLimit: 90,
-    t: "Revision",
-    question: "Write 140 as the sum of 4 squares.",
-    a: "10^2 + 6^2 + 2^2 + 0^2",
-    hint: "Use squares: 100, 36, 4, 0.",
-    solutionSteps: [
+    "id": "y7-2j-q31c",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Revision",
+    "question": "Write 140 as the sum of 4 squares.",
+    "a": "10^2 + 6^2 + 2^2 + 0^2",
+    "hint": "Use squares: 100, 36, 4, 0.",
+    "solutionSteps": [
       {
-        explanation: "Combine squares.",
-        workingOut: "100 + 36 + 4 + 0 = 140 \\implies 10^2 + 6^2 + 2^2 + 0^2"
+        "explanation": "Combine squares.",
+        "workingOut": "100 + 36 + 4 + 0 = 140 \\implies 10^2 + 6^2 + 2^2 + 0^2"
       }
     ]
   },
-  // ── QUESTION 32 (Screenshot Q15) ──
   {
-    id: "y7-2j-q32",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "Write 180 as the sum of the smallest possible number of square numbers without using \\(1^2 = 1\\). Find this smallest number of squares.",
-    a: "2",
-    hint: "Identify if 180 can be written as the sum of 2 squares (other than 1).",
-    solutionSteps: [
+    "id": "y7-2j-q32",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "Write 180 as the sum of the smallest possible number of square numbers without using \\(1^2 = 1\\). Find this smallest number of squares.",
+    "a": "2",
+    "hint": "Identify if 180 can be written as the sum of 2 squares (other than 1).",
+    "solutionSteps": [
       {
-        explanation: "List squares greater than 1: 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169.",
-        workingOut: "\\text{Squares} = {4, 9, \\dots, 169}"
+        "explanation": "List squares greater than 1: 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169.",
+        "workingOut": "\\text{Squares} = {4, 9, dots, 169}"
       },
       {
-        explanation: "Test if any two of these sum to 180.",
-        workingOut: "144 + 36 = 180 \\implies 12^2 + 6^2 = 180"
+        "explanation": "Test if any two of these sum to 180.",
+        "workingOut": "144 + 36 = 180 \\implies 12^2 + 6^2 = 180"
       },
       {
-        explanation: "Since it is represented as the sum of 2 squares, the smallest number of squares is 2.",
-        workingOut: "2"
+        "explanation": "Since it is represented as the sum of 2 squares, the smallest number of squares is 2.",
+        "workingOut": "2"
       }
     ]
   },
-  // ── QUESTION 33a (Screenshot Q16a) ──
   {
-    id: "y7-2j-q33a",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "Find the smallest five-digit palindrome divisible by 4.",
-    a: "21012",
-    hint: "A palindrome has the form \\(abcba\\). It is divisible by 4 if the last two digits form a number divisible by 4.",
-    solutionSteps: [
+    "id": "y7-2j-q33a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "Find the smallest five-digit palindrome divisible by 4.",
+    "a": "21012",
+    "hint": "A palindrome has the form \\(abcba\\). It is divisible by 4 if the last two digits form a number divisible by 4.",
+    "solutionSteps": [
       {
-        explanation: "A five-digit palindrome has the form \\(abcba\\). Divisibility by 4 requires \\(ba\\) to be divisible by 4.",
-        workingOut: "\\text{Form } abcba"
+        "explanation": "A five-digit palindrome has the form \\(abcba\\). Divisibility by 4 requires \\(ba\\) to be divisible by 4.",
+        "workingOut": "\\text{Form } abcba"
       },
       {
-        explanation: "To be divisible by 4, the number must be even, so \\(a\\) must be an even digit: 2, 4, 6, 8 (cannot be 0). Smallest is \\(a = 2\\).",
-        workingOut: "a = 2 \\implies \\text{Form } 2bcba"
+        "explanation": "To be divisible by 4, the number must be even, so \\(a\\) must be an even digit: 2, 4, 6, 8 (cannot be 0). Smallest is \\(a = 2\\).",
+        "workingOut": "a = 2 \\implies \\text{Form } 2bcba"
       },
       {
-        explanation: "Since \\(a = 2\\), the last two digits are \\(b2\\). For \\(b2\\) to be divisible by 4, \\(b\\) must be odd (1, 3, 5, 7, 9). Smallest is \\(b = 1\\).",
-        workingOut: "b = 1 \\implies \\text{Form } 21c12"
+        "explanation": "Since \\(a = 2\\), the last two digits are \\(b2\\). For \\(b2\\) to be divisible by 4, \\(b\\) must be odd (1, 3, 5, 7, 9). Smallest is \\(b = 1\\).",
+        "workingOut": "b = 1 \\implies \\text{Form } 21c12"
       },
       {
-        explanation: "To minimise the number, choose \\(c = 0\\).",
-        workingOut: "21012"
+        "explanation": "To minimise the number, choose \\(c = 0\\).",
+        "workingOut": "21012"
       }
     ]
   },
-  // ── QUESTION 33b (Screenshot Q16b) ──
   {
-    id: "y7-2j-q33b",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "Find the smallest five-digit palindrome divisible by 6.",
-    a: "20202",
-    hint: "Must be even (starts and ends with an even digit) and the sum of the digits must be divisible by 3.",
-    solutionSteps: [
+    "id": "y7-2j-q33b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "Find the smallest five-digit palindrome divisible by 6.",
+    "a": "20202",
+    "hint": "Must be even (starts and ends with an even digit) and the sum of the digits must be divisible by 3.",
+    "solutionSteps": [
       {
-        explanation: "The palindrome must be even, so \\(a\\) is even. Smallest is \\(a = 2\\). Form: \\(2bcb2\\).",
-        workingOut: "2bcb2"
+        "explanation": "The palindrome must be even, so \\(a\\) is even. Smallest is \\(a = 2\\). Form: \\(2bcb2\\).",
+        "workingOut": "2bcb2"
       },
       {
-        explanation: "Sum of digits is \\(4 + 2b + c\\). This sum must be divisible by 3.",
-        workingOut: "4 + 2b + c"
+        "explanation": "Sum of digits is \\(4 + 2b + c\\). This sum must be divisible by 3.",
+        "workingOut": "4 + 2b + c"
       },
       {
-        explanation: "To minimise the number, try \\(b = 0\\). The sum is \\(4 + c\\). The smallest \\(c\\) making this divisible by 3 is \\(c = 2\\).",
-        workingOut: "4 + 2 = 6 \\implies c = 2"
+        "explanation": "To minimise the number, try \\(b = 0\\). The sum is \\(4 + c\\). The smallest \\(c\\) making this divisible by 3 is \\(c = 2\\).",
+        "workingOut": "4 + 2 = 6 \\implies c = 2"
       },
       {
-        explanation: "This yields the number 20202.",
-        workingOut: "20202"
+        "explanation": "This yields the number 20202.",
+        "workingOut": "20202"
       }
     ]
   },
-  // ── QUESTION 33c (Screenshot Q16g) ──
   {
-    id: "y7-2j-q33c",
-    type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Revision",
-    question: "Find the smallest five-digit palindrome divisible by 8.",
-    a: "21112",
-    hint: "Must be even (starts and ends with 2). Check divisibility of the last three digits by 8.",
-    solutionSteps: [
+    "id": "y7-2j-q33c",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "Find the smallest five-digit palindrome divisible by 8.",
+    "a": "21112",
+    "hint": "Must be even (starts and ends with 2). Check divisibility of the last three digits by 8.",
+    "solutionSteps": [
       {
-        explanation: "Form: \\(2bcb2\\). The last three digits \\(cb2\\) must be divisible by 8.",
-        workingOut: "\\text{cb2 is a multiple of 8}"
+        "explanation": "Form: \\(2bcb2\\). The last three digits \\(cb2\\) must be divisible by 8.",
+        "workingOut": "\\text{cb2 is a multiple of 8}"
       },
       {
-        explanation: "Try minimising: if \\(b=0\\), \\(c02\\) is not divisible by 8 for any \\(c\\) (since multiples of 8 ending in 2 are 32, 72, 112, 152, etc.).",
-        workingOut: "cb2 \\in \\{32, 72, 112, 152, \\dots\\}"
+        "explanation": "Try minimising: if \\(b=0\\), \\(c02\\) is not divisible by 8 for any \\(c\\) (since multiples of 8 ending in 2 are 32, 72, 112, 152, etc.).",
+        "workingOut": "cb2 \\in \\{32, 72, 112, 152, dots\\}"
       },
       {
-        explanation: "If \\(b=1\\), the last three digits are \\(c12\\). \\(c12\\) is divisible by 8 for \\(c=1\\) (since 112 / 8 = 14).",
-        workingOut: "112 \\div 8 = 14"
+        "explanation": "If \\(b=1\\), the last three digits are \\(c12\\). \\(c12\\) is divisible by 8 for \\(c=1\\) (since 112 / 8 = 14).",
+        "workingOut": "112 \\div 8 = 14"
       },
       {
-        explanation: "Since \\(b=1\\) and \\(c=1\\) works, the palindrome is 21112.",
-        workingOut: "21112"
+        "explanation": "Since \\(b=1\\) and \\(c=1\\) works, the palindrome is 21112.",
+        "workingOut": "21112"
       }
     ]
   }
 ];
-

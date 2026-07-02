@@ -1,5 +1,4 @@
 export const Y10_CH15B_QUESTIONS = [
-  // Q1
   {
     "id": "y10-15b-q1",
     "type": "short_answer",
@@ -23,7 +22,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q2
   {
     "id": "y10-15b-q2",
     "type": "short_answer",
@@ -47,7 +45,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q3
   {
     "id": "y10-15b-q3",
     "type": "short_answer",
@@ -71,7 +68,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q4
   {
     "id": "y10-15b-q4",
     "type": "short_answer",
@@ -95,7 +91,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q5
   {
     "id": "y10-15b-q5",
     "type": "short_answer",
@@ -179,7 +174,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q6a
   {
     "id": "y10-15b-q6a",
     "type": "short_answer",
@@ -199,7 +193,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q6b
   {
     "id": "y10-15b-q6b",
     "type": "short_answer",
@@ -219,7 +212,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q6c
   {
     "id": "y10-15b-q6c",
     "type": "short_answer",
@@ -239,7 +231,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q6d
   {
     "id": "y10-15b-q6d",
     "type": "short_answer",
@@ -259,7 +250,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q6e
   {
     "id": "y10-15b-q6e",
     "type": "short_answer",
@@ -279,7 +269,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q6f
   {
     "id": "y10-15b-q6f",
     "type": "short_answer",
@@ -299,7 +288,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q7a
   {
     "id": "y10-15b-q7a",
     "type": "short_answer",
@@ -319,7 +307,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q7b
   {
     "id": "y10-15b-q7b",
     "type": "short_answer",
@@ -339,7 +326,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q7c
   {
     "id": "y10-15b-q7c",
     "type": "short_answer",
@@ -359,7 +345,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q7d
   {
     "id": "y10-15b-q7d",
     "type": "short_answer",
@@ -379,7 +364,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q7e
   {
     "id": "y10-15b-q7e",
     "type": "short_answer",
@@ -399,7 +383,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q7f
   {
     "id": "y10-15b-q7f",
     "type": "short_answer",
@@ -419,7 +402,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q8a
   {
     "id": "y10-15b-q8a",
     "type": "short_answer",
@@ -439,7 +421,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q8b
   {
     "id": "y10-15b-q8b",
     "type": "short_answer",
@@ -459,7 +440,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q8c
   {
     "id": "y10-15b-q8c",
     "type": "short_answer",
@@ -470,7 +450,7 @@ export const Y10_CH15B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Sum the total number of people with fair hair and the total with brown hair.",
-        "workingOut": "\\text{Fair hair} = 20+18+12 = 50, \\quad \\text{Brown hair} = 12+20+18 = 50"
+        "workingOut": "\\text{Fair hair} = 20+18+12 = 50, quad \\text{Brown hair} = 12+20+18 = 50"
       },
       {
         "explanation": "Add the counts together.",
@@ -483,7 +463,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q8d
   {
     "id": "y10-15b-q8d",
     "type": "short_answer",
@@ -494,7 +473,7 @@ export const Y10_CH15B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Sum the counts for blue eyes and brown eyes.",
-        "workingOut": "\\text{Blue eyes} = 60, \\quad \\text{Brown eyes} = 18 + 20 + 15 + 22 = 75"
+        "workingOut": "\\text{Blue eyes} = 60, quad \\text{Brown eyes} = 18 + 20 + 15 + 22 = 75"
       },
       {
         "explanation": "Add the counts together.",
@@ -507,7 +486,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q8e
   {
     "id": "y10-15b-q8e",
     "type": "short_answer",
@@ -527,7 +505,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q8f
   {
     "id": "y10-15b-q8f",
     "type": "short_answer",
@@ -551,7 +528,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q8g
   {
     "id": "y10-15b-q8g",
     "type": "short_answer",
@@ -575,7 +551,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q8h
   {
     "id": "y10-15b-q8h",
     "type": "short_answer",
@@ -595,7 +570,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q8i
   {
     "id": "y10-15b-q8i",
     "type": "short_answer",
@@ -619,7 +593,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q9
   {
     "id": "y10-15b-q9",
     "type": "short_answer",
@@ -708,7 +681,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q10a
   {
     "id": "y10-15b-q10a",
     "type": "short_answer",
@@ -732,7 +704,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q10b
   {
     "id": "y10-15b-q10b",
     "type": "short_answer",
@@ -752,7 +723,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q10c
   {
     "id": "y10-15b-q10c",
     "type": "short_answer",
@@ -772,7 +742,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q10d
   {
     "id": "y10-15b-q10d",
     "type": "short_answer",
@@ -792,7 +761,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q11a
   {
     "id": "y10-15b-q11a",
     "type": "short_answer",
@@ -812,7 +780,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q11b
   {
     "id": "y10-15b-q11b",
     "type": "short_answer",
@@ -832,7 +799,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q11c
   {
     "id": "y10-15b-q11c",
     "type": "short_answer",
@@ -852,7 +818,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q11d
   {
     "id": "y10-15b-q11d",
     "type": "short_answer",
@@ -872,7 +837,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q12a
   {
     "id": "y10-15b-q12a",
     "type": "short_answer",
@@ -892,7 +856,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q12b
   {
     "id": "y10-15b-q12b",
     "type": "short_answer",
@@ -912,7 +875,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q12c
   {
     "id": "y10-15b-q12c",
     "type": "short_answer",
@@ -932,7 +894,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q12d
   {
     "id": "y10-15b-q12d",
     "type": "short_answer",
@@ -952,7 +913,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q12e
   {
     "id": "y10-15b-q12e",
     "type": "short_answer",
@@ -972,7 +932,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q12f
   {
     "id": "y10-15b-q12f",
     "type": "short_answer",
@@ -992,7 +951,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q12g
   {
     "id": "y10-15b-q12g",
     "type": "short_answer",
@@ -1012,7 +970,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q13
   {
     "id": "y10-15b-q13",
     "type": "short_answer",
@@ -1094,7 +1051,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q14
   {
     "id": "y10-15b-q14",
     "type": "short_answer",
@@ -1160,7 +1116,6 @@ export const Y10_CH15B_QUESTIONS = [
     ],
     "t": "The complement, union and intersection"
   },
-  // Q15
   {
     "id": "y10-15b-q15",
     "type": "short_answer",

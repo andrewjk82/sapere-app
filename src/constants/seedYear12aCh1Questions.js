@@ -45,7 +45,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "State the completed sequence.",
-        "workingOut": "\\(720, 840, 960, 1080, 1200, 1320, 1440, 1560, 1680, 1800, 1920, 2040, \\dots\\)",
+        "workingOut": "\\(720, 840, 960, 1080, 1200, 1320, 1440, 1560, 1680, 1800, 1920, 2040, dots\\)",
         "graphData": null
       }
     ],
@@ -143,7 +143,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(4, 8, 12, \\dots\\)",
+        "workingOut": "Sequence: \\(4, 8, 12, dots\\)",
         "graphData": null
       },
       {
@@ -192,7 +192,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(7, 19, 31, \\dots\\)",
+        "workingOut": "Sequence: \\(7, 19, 31, dots\\)",
         "graphData": null
       },
       {
@@ -241,7 +241,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(3, 6, 12, \\dots\\)",
+        "workingOut": "Sequence: \\(3, 6, 12, dots\\)",
         "graphData": null
       },
       {
@@ -290,7 +290,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(4, 8, 16, \\dots\\)",
+        "workingOut": "Sequence: \\(4, 8, 16, dots\\)",
         "graphData": null
       },
       {
@@ -339,7 +339,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(45, 41, 37, \\dots\\)",
+        "workingOut": "Sequence: \\(45, 41, 37, dots\\)",
         "graphData": null
       },
       {
@@ -388,7 +388,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(42, 33, 24, \\dots\\)",
+        "workingOut": "Sequence: \\(42, 33, 24, dots\\)",
         "graphData": null
       },
       {
@@ -437,7 +437,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(32, 16, 8, \\dots\\)",
+        "workingOut": "Sequence: \\(32, 16, 8, dots\\)",
         "graphData": null
       },
       {
@@ -447,7 +447,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Apply the rule repeatedly to calculate the next four terms.",
-        "workingOut": "\\(4, 2, 1, \\dfrac{1}{2}\\)",
+        "workingOut": "\\(4, 2, 1, dfrac{1}{2}\\)",
         "graphData": null
       }
     ],
@@ -486,7 +486,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(162, 54, 18, \\dots\\)",
+        "workingOut": "Sequence: \\(162, 54, 18, dots\\)",
         "graphData": null
       },
       {
@@ -496,7 +496,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Apply the rule repeatedly to calculate the next four terms.",
-        "workingOut": "\\(6, 2, \\dfrac{2}{3}, \\dfrac{2}{9}\\)",
+        "workingOut": "\\(6, 2, dfrac{2}{3}, dfrac{2}{9}\\)",
         "graphData": null
       }
     ],
@@ -535,7 +535,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(-2, 2, -2, \\dots\\)",
+        "workingOut": "Sequence: \\(-2, 2, -2, dots\\)",
         "graphData": null
       },
       {
@@ -584,7 +584,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(4, 9, 16, \\dots\\)",
+        "workingOut": "Sequence: \\(4, 9, 16, dots\\)",
         "graphData": null
       },
       {
@@ -633,7 +633,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(\\dfrac{1}{3}, \\dfrac{2}{5}, \\dfrac{3}{7}, \\dots\\)",
+        "workingOut": "Sequence: \\(\\dfrac{1}{3}, dfrac{2}{5}, dfrac{3}{7}, dots\\)",
         "graphData": null
       },
       {
@@ -643,7 +643,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Apply the rule repeatedly to calculate the next four terms.",
-        "workingOut": "\\(\\dfrac{4}{9}, \\dfrac{5}{11}, \\dfrac{6}{13}, \\dfrac{7}{15}\\)",
+        "workingOut": "\\(\\dfrac{4}{9}, dfrac{5}{11}, dfrac{6}{13}, dfrac{7}{15}\\)",
         "graphData": null
       }
     ],
@@ -682,7 +682,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Observe the pattern of terms.",
-        "workingOut": "Sequence: \\(27, -9, 3, \\dots\\)",
+        "workingOut": "Sequence: \\(27, -9, 3, dots\\)",
         "graphData": null
       },
       {
@@ -692,7 +692,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Apply the rule repeatedly to calculate the next four terms.",
-        "workingOut": "\\(-1, \\dfrac{1}{3}, -\\dfrac{1}{9}, \\dfrac{1}{27}\\)",
+        "workingOut": "\\(-1, dfrac{1}{3}, -\\dfrac{1}{9}, dfrac{1}{27}\\)",
         "graphData": null
       }
     ],
@@ -3496,7 +3496,7 @@ export const Y12A_CH1_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Since the term index \\( n \\) must be a positive integer, the condition \\( n < 11.75 \\) is satisfied by the integers \\( n \\in \\{1, 2, \\dots, 11\\}\\).\\nThis proves that exactly the first 11 terms are less than 100.",
+        "explanation": "Since the term index \\( n \\) must be a positive integer, the condition \\( n < 11.75 \\) is satisfied by the integers \\( n \\in \\{1, 2, dots, 11\\}\\).\\nThis proves that exactly the first 11 terms are less than 100.",
         "workingOut": "\\(n \\le 11\\)",
         "graphData": null
       }
@@ -4580,12 +4580,12 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Start with the seed terms.",
-        "workingOut": "\\(F_1 = 1, \\quad F_2 = 1\\)",
+        "workingOut": "\\(F_1 = 1, quad F_2 = 1\\)",
         "graphData": null
       },
       {
         "explanation": "Calculate subsequent terms by adding the previous two terms.",
-        "workingOut": "\\[F_3 = 1+1 = 2, \\quad F_4 = 2+1 = 3, \\quad F_5 = 3+2 = 5\\]",
+        "workingOut": "\\[F_3 = 1+1 = 2, quad F_4 = 2+1 = 3, quad F_5 = 3+2 = 5\\]",
         "graphData": null
       },
       {
@@ -4617,17 +4617,17 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the addition rules for even and odd numbers.",
-        "workingOut": "\\[\\text{Odd} + \\text{Odd} = \\text{Even}, \\quad \\text{Odd} + \\text{Even} = \\text{Odd}, \\quad \\text{Even} + \\text{Odd} = \\text{Odd}\\]",
+        "workingOut": "\\[\\text{Odd} + \\text{Odd} = \\text{Even}, quad \\text{Odd} + \\text{Even} = \\text{Odd}, quad \\text{Even} + \\text{Odd} = \\text{Odd}\\]",
         "graphData": null
       },
       {
         "explanation": "Determine the parity of the first three terms of the sequence.",
-        "workingOut": "\\[F_1 = 1 \\; (\\text{Odd}), \\quad F_2 = 1 \\; (\\text{Odd}) \\implies F_3 = 1 + 1 = 2 \\; (\\text{Even})\\]",
+        "workingOut": "\\[F_1 = 1 \\; (\\text{Odd}), quad F_2 = 1 \\; (\\text{Odd}) \\implies F_3 = 1 + 1 = 2 \\; (\\text{Even})\\]",
         "graphData": null
       },
       {
         "explanation": "Find the parity of the next two terms.",
-        "workingOut": "\\[F_4 = F_3 + F_2 = \\text{Even} + \\text{Odd} = \\text{Odd}, \\quad F_5 = F_4 + F_3 = \\text{Odd} + \\text{Even} = \\text{Odd}\\]",
+        "workingOut": "\\[F_4 = F_3 + F_2 = \\text{Even} + \\text{Odd} = \\text{Odd}, quad F_5 = F_4 + F_3 = \\text{Odd} + \\text{Even} = \\text{Odd}\\]",
         "graphData": null
       },
       {
@@ -4637,7 +4637,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Notice that the terms \\(F_4, F_5, F_6\\) have the same parity pattern (Odd, Odd, Even) as \\(F_1, F_2, F_3\\).\\nSince each term depends only on the parity of the previous two, this 3-cycle (Odd, Odd, Even) repeats indefinitely.",
-        "workingOut": "\\(\\text{Pattern: } \\text{Odd}, \\text{Odd}, \\text{Even}, \\text{Odd}, \\text{Odd}, \\text{Even}, \\dots\\)",
+        "workingOut": "\\(\\text{Pattern: } \\text{Odd}, text{Odd}, text{Even}, text{Odd}, text{Odd}, text{Even}, dots\\)",
         "graphData": null
       }
     ],
@@ -4681,7 +4681,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "List the terms of the geometric progression starting from \\(3\\).",
-        "workingOut": "GP terms: \\(3, 6, 12, 24, 48, 96, 192, 384, 768, \\dots\\)",
+        "workingOut": "GP terms: \\(3, 6, 12, 24, 48, 96, 192, 384, 768, dots\\)",
         "graphData": null
       },
       {
@@ -5126,7 +5126,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Analyze the pattern of indices.",
-        "workingOut": "The indices of terms divisible by 3 are \\(2, 6, 10, 14, \\dots\\). This is an arithmetic progression with first term 2 and common difference 4.",
+        "workingOut": "The indices of terms divisible by 3 are \\(2, 6, 10, 14, dots\\). This is an arithmetic progression with first term 2 and common difference 4.",
         "graphData": null
       },
       {
@@ -6188,12 +6188,12 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List the terms of the original geometric series.",
-        "workingOut": "Original series: \\(a, ar, ar^2, ar^3, \\dots\\).",
+        "workingOut": "Original series: \\(a, ar, ar^2, ar^3, dots\\).",
         "graphData": null
       },
       {
         "explanation": "List the terms of the series of squares.",
-        "workingOut": "Squared series: \\(a^2, a^2r^2, a^2r^4, a^2r^6, \\dots\\).",
+        "workingOut": "Squared series: \\(a^2, a^2r^2, a^2r^4, a^2r^6, dots\\).",
         "graphData": null
       },
       {
@@ -7046,7 +7046,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the growth progression.",
-        "workingOut": "Growth: \\(1.5, 1.5 \\times 0.75, 1.5 \\times 0.75^2, \\dots\\).",
+        "workingOut": "Growth: \\(1.5, 1.5 \\times 0.75, 1.5 \\times 0.75^2, dots\\).",
         "graphData": null
       },
       {
@@ -7818,7 +7818,7 @@ export const Y12A_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify parameters of the progression.",
-        "workingOut": "Sequence: \\(1, 3, 5, \\dots, 2n-1\\). First term \\(a = 1\\), difference \\(d = 2\\).",
+        "workingOut": "Sequence: \\(1, 3, 5, dots, 2n-1\\). First term \\(a = 1\\), difference \\(d = 2\\).",
         "graphData": null
       },
       {
@@ -7887,7 +7887,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Find the equivalent index modulo 6.",
-        "workingOut": "\(50 = 6 \times 8 + 2\) (so 50 divided by 6 leaves a remainder of 2).",
+        "workingOut": "(50 = 6 \times 8 + 2) (so 50 divided by 6 leaves a remainder of 2).",
         "graphData": null
       },
       {
@@ -8624,7 +8624,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Identify the periodic pattern.",
-        "workingOut": "The sequence alternates: \\(-1, 1, -1, 1, \\dots\\).",
+        "workingOut": "The sequence alternates: \\(-1, 1, -1, 1, dots\\).",
         "graphData": null
       },
       {

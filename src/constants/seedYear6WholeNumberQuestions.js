@@ -312,7 +312,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Group the digits by standard three-digit periods (Millions, Thousands, Units).",
-        "workingOut": "\\text{Periods: } \\underbrace{3}_{\\text{Millions}} \\, \\underbrace{482}_{\\text{Thousands}} \\, \\underbrace{905}_{\\text{Units}}"
+        "workingOut": "\\text{Periods: } \\underbrace{3}_{\\text{Millions}} \\, underbrace{482}_{\\text{Thousands}} \\, underbrace{905}_{\\text{Units}}"
       },
       {
         "explanation": "Write out the value of each period in words.",
@@ -343,7 +343,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Group the number into three-digit periods.",
-        "workingOut": "\\text{Periods: } \\underbrace{97}_{\\text{Millions}} \\, \\underbrace{003}_{\\text{Thousands}} \\, \\underbrace{002}_{\\text{Units}}"
+        "workingOut": "\\text{Periods: } \\underbrace{97}_{\\text{Millions}} \\, underbrace{003}_{\\text{Thousands}} \\, underbrace{002}_{\\text{Units}}"
       },
       {
         "explanation": "Convert each period to words. Note that empty placeholders (zeros) are skipped.",
@@ -795,7 +795,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the digits.",
-        "workingOut": "1\\mathbf{4},\\underline{3}76"
+        "workingOut": "1\\mathbf{4}, underline{3}76"
       },
       {
         "explanation": "Because the hundreds digit is \\(3\\) (less than 5), round down.",
@@ -853,7 +853,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the digit to round and the deciding digit.",
-        "workingOut": "899,\\mathbf{9}\\underline{5}0"
+        "workingOut": "899, mathbf{9}\\underline{5}0"
       },
       {
         "explanation": "Since the deciding digit is \\(5\\), we round up. Add 1 to the hundreds place, which carries over repeatedly to the left.",
@@ -1081,7 +1081,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "State the quotient and remainder.",
-        "workingOut": "\\text{Quotient} = 24, \\quad \\text{Remainder} = 5"
+        "workingOut": "\\text{Quotient} = 24, quad \\text{Remainder} = 5"
       }
     ]
   },
@@ -2035,7 +2035,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the place values of 143.",
-        "workingOut": "100 \\implies \\text{One hundred}, \\quad 40 \\implies \\text{forty}, \\quad 3 \\implies \\text{three}",
+        "workingOut": "100 \\implies \\text{One hundred}, quad 40 \\implies \\text{forty}, quad 3 \\implies \\text{three}",
         "graphData": null
       },
       {
@@ -2066,7 +2066,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the place values of 807.",
-        "workingOut": "800 \\implies \\text{Eight hundred}, \\quad 0 \\implies \\text{tens}, \\quad 7 \\implies \\text{seven}",
+        "workingOut": "800 \\implies \\text{Eight hundred}, quad 0 \\implies \\text{tens}, quad 7 \\implies \\text{seven}",
         "graphData": null
       },
       {
@@ -2097,7 +2097,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the place values of 650.",
-        "workingOut": "600 \\implies \\text{Six hundred}, \\quad 50 \\implies \\text{fifty}",
+        "workingOut": "600 \\implies \\text{Six hundred}, quad 50 \\implies \\text{fifty}",
         "graphData": null
       },
       {
@@ -2128,7 +2128,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the place values of 1 634.",
-        "workingOut": "1\\,000 \\implies \\text{One thousand}, \\quad 600 \\implies \\text{six hundred}, \\quad 34 \\implies \\text{thirty-four}",
+        "workingOut": "1\\,000 \\implies \\text{One thousand}, quad 600 \\implies \\text{six hundred}, quad 34 \\implies \\text{thirty-four}",
         "graphData": null
       },
       {
@@ -2159,7 +2159,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the numbers representing each word part.",
-        "workingOut": "\\text{Four hundred} = 400, \\quad \\text{eighty-seven} = 87",
+        "workingOut": "\\text{Four hundred} = 400, quad \\text{eighty-seven} = 87",
         "graphData": null
       },
       {
@@ -2190,7 +2190,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the numbers representing each word part.",
-        "workingOut": "\\text{Six hundred} = 600, \\quad \\text{three} = 3",
+        "workingOut": "\\text{Six hundred} = 600, quad \\text{three} = 3",
         "graphData": null
       },
       {
@@ -2221,7 +2221,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the products within parentheses.",
-        "workingOut": "\\(8 \\times 100 = 800\\), \\quad \\(6 \\times 10 = 60\\), \\quad \\(3 \\times 1 = 3\\)",
+        "workingOut": "\\(8 \\times 100 = 800\\), quad \\(6 \\times 10 = 60\\), quad \\(3 \\times 1 = 3\\)",
         "graphData": null
       },
       {
@@ -2252,7 +2252,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the products within parentheses.",
-        "workingOut": "\\(4 \\times 100 = 400\\), \\quad \\(0 \\times 10 = 0\\), \\quad \\(9 \\times 1 = 9\\)",
+        "workingOut": "\\(4 \\times 100 = 400\\), quad \\(0 \\times 10 = 0\\), quad \\(9 \\times 1 = 9\\)",
         "graphData": null
       },
       {
@@ -3447,7 +3447,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify place values.",
-        "workingOut": "600 \\implies \\text{Six hundred}, \\quad 80 \\implies \\text{eighty}, \\quad 3 \\implies \\text{three}",
+        "workingOut": "600 \\implies \\text{Six hundred}, quad 80 \\implies \\text{eighty}, quad 3 \\implies \\text{three}",
         "graphData": null
       },
       {
@@ -3478,7 +3478,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify place values.",
-        "workingOut": "4\\,000 \\implies \\text{Four thousand}, \\quad 300 \\implies \\text{three hundred}, \\quad 12 \\implies \\text{twelve}",
+        "workingOut": "4\\,000 \\implies \\text{Four thousand}, quad 300 \\implies \\text{three hundred}, quad 12 \\implies \\text{twelve}",
         "graphData": null
       },
       {
@@ -3509,7 +3509,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify place values.",
-        "workingOut": "5\\,000 \\implies \\text{Five thousand}, \\quad 72 \\implies \\text{seventy-two}",
+        "workingOut": "5\\,000 \\implies \\text{Five thousand}, quad 72 \\implies \\text{seventy-two}",
         "graphData": null
       },
       {
@@ -3540,7 +3540,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the products.",
-        "workingOut": "\\(5 \\times 100 = 500\\), \\quad \\(0 \\times 10 = 0\\), \\quad \\(3 \\times 1 = 3\\)",
+        "workingOut": "\\(5 \\times 100 = 500\\), quad \\(0 \\times 10 = 0\\), quad \\(3 \\times 1 = 3\\)",
         "graphData": null
       },
       {
@@ -3772,7 +3772,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Add place values.",
-        "workingOut": "\\(3+4=7\\), \\quad \\(2+5=7\\), \\quad \\(4+0=4\\)",
+        "workingOut": "\\(3+4=7\\), quad \\(2+5=7\\), quad \\(4+0=4\\)",
         "graphData": null
       },
       {
@@ -4288,7 +4288,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the values of the individual Roman numeral symbols.",
-        "workingOut": "\\\\(C = 100,\\\\ L = 50,\\\\ I = 1\\\\)",
+        "workingOut": "\\\\(C = 100, L = 50, I = 1\\\\)",
         "graphData": null
       },
       {
@@ -4319,7 +4319,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the values of the individual Roman numeral symbols.",
-        "workingOut": "\\\\(C = 100,\\\\ X = 10,\\\\ V = 5\\\\)",
+        "workingOut": "\\\\(C = 100, X = 10, V = 5\\\\)",
         "graphData": null
       },
       {
@@ -4350,7 +4350,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the values of the symbols and locate any subtractive pairs where a smaller symbol precedes a larger one.",
-        "workingOut": "\\\\(XC = 100 - 10 = 90,\\\\ IX = 10 - 1 = 9\\\\)",
+        "workingOut": "\\\\(XC = 100 - 10 = 90, IX = 10 - 1 = 9\\\\)",
         "graphData": null
       },
       {
@@ -4381,7 +4381,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the values of the individual Roman numeral symbols.",
-        "workingOut": "\\\\(D = 500,\\\\ L = 50,\\\\ V = 5\\\\)",
+        "workingOut": "\\\\(D = 500, L = 50, V = 5\\\\)",
         "graphData": null
       },
       {
@@ -4417,7 +4417,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Convert each place value component into Roman numerals.",
-        "workingOut": "\\\\(100 = C,\\\\ 20 = XX,\\\\ 3 = III\\\\)",
+        "workingOut": "\\\\(100 = C, 20 = XX, 3 = III\\\\)",
         "graphData": null
       },
       {
@@ -4453,7 +4453,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Convert 70 into Roman numerals \\\\(LXX\\\\) (50 + 10 + 10) and 9 into subtractive pair \\\\(IX\\\\) (10 - 1).",
-        "workingOut": "\\\\(70 = LXX,\\\\ 9 = IX\\\\)",
+        "workingOut": "\\\\(70 = LXX, 9 = IX\\\\)",
         "graphData": null
       },
       {
@@ -4489,7 +4489,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Convert each part into Roman numerals.",
-        "workingOut": "\\\\(300 = CCC,\\\\ 20 = XX,\\\\ 7 = VII\\\\)",
+        "workingOut": "\\\\(300 = CCC, 20 = XX, 7 = VII\\\\)",
         "graphData": null
       },
       {
@@ -4525,7 +4525,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Convert 500 to \\\\(D\\\\) and 30 to \\\\(XXX\\\\).",
-        "workingOut": "\\\\(500 = D,\\\\ 30 = XXX\\\\)",
+        "workingOut": "\\\\(500 = D, 30 = XXX\\\\)",
         "graphData": null
       },
       {
@@ -4556,7 +4556,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the columns for each digit in the number \\\\(4307\\\\).",
-        "workingOut": "4 \\\\text{ (thousands)},\\\\ 3 \\\\text{ (hundreds)},\\\\ 0 \\\\text{ (tens)},\\\\ 7 \\\\text{ (ones)}",
+        "workingOut": "4 \\\\text{ (thousands)}, 3 \\\\text{ (hundreds)}, 0 \\\\text{ (tens)}, 7 \\\\text{ (ones)}",
         "graphData": null
       },
       {
@@ -4587,7 +4587,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the columns for each digit in the number \\\\(2731\\\\).",
-        "workingOut": "2 \\\\text{ (thousands)},\\\\ 7 \\\\text{ (hundreds)},\\\\ 3 \\\\text{ (tens)},\\\\ 1 \\\\text{ (ones)}",
+        "workingOut": "2 \\\\text{ (thousands)}, 7 \\\\text{ (hundreds)}, 3 \\\\text{ (tens)}, 1 \\\\text{ (ones)}",
         "graphData": null
       },
       {
@@ -4618,7 +4618,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the columns for each digit in the number \\\\(3914\\\\).",
-        "workingOut": "3 \\\\text{ (thousands)},\\\\ 9 \\\\text{ (hundreds)},\\\\ 1 \\\\text{ (tens)},\\\\ 4 \\\\text{ (ones)}",
+        "workingOut": "3 \\\\text{ (thousands)}, 9 \\\\text{ (hundreds)}, 1 \\\\text{ (tens)}, 4 \\\\text{ (ones)}",
         "graphData": null
       },
       {
@@ -4649,7 +4649,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the columns for each digit in the number \\\\(6743\\\\).",
-        "workingOut": "6 \\\\text{ (thousands)},\\\\ 7 \\\\text{ (hundreds)},\\\\ 4 \\\\text{ (tens)},\\\\ 3 \\\\text{ (ones)}",
+        "workingOut": "6 \\\\text{ (thousands)}, 7 \\\\text{ (hundreds)}, 4 \\\\text{ (tens)}, 3 \\\\text{ (ones)}",
         "graphData": null
       },
       {
@@ -4685,7 +4685,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Express the place values using powers of 10.",
-        "workingOut": "\\\\(700 = 7 \\\\times 10^2,\\\\ 30 = 3 \\\\times 10^1,\\\\ 1 = 1 \\\\times 1\\\\)",
+        "workingOut": "\\\\(700 = 7 \\\\times 10^2, 30 = 3 \\\\times 10^1, 1 = 1 \\\\times 1\\\\)",
         "graphData": null
       },
       {
@@ -4721,7 +4721,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Represent each place value as a digit multiplied by a power of 10.",
-        "workingOut": "\\\\(5000 = 5 \\\\times 10^3,\\\\ 700 = 7 \\\\times 10^2,\\\\ 10 = 1 \\\\times 10^1,\\\\ 3 = 3 \\\\times 1\\\\)",
+        "workingOut": "\\\\(5000 = 5 \\\\times 10^3, 700 = 7 \\\\times 10^2, 10 = 1 \\\\times 10^1, 3 = 3 \\\\times 1\\\\)",
         "graphData": null
       },
       {
@@ -4757,7 +4757,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Represent each non-zero place value as a product with a power of 10.",
-        "workingOut": "\\\\(90000 = 9 \\\\times 10^4,\\\\ 5000 = 5 \\\\times 10^3,\\\\ 70 = 7 \\\\times 10^1,\\\\ 2 = 2 \\\\times 1\\\\)",
+        "workingOut": "\\\\(90000 = 9 \\\\times 10^4, 5000 = 5 \\\\times 10^3, 70 = 7 \\\\times 10^1, 2 = 2 \\\\times 1\\\\)",
         "graphData": null
       },
       {
@@ -5751,7 +5751,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Find the Roman numeral equivalent for each component.",
-        "workingOut": "\\\\(700 = \\text{DCC},\\ 30 = \\text{XXX}\\\\)"
+        "workingOut": "\\\\(700 = \\text{DCC}, 30 = \\text{XXX}\\\\)"
       },
       {
         "explanation": "Combine the components to write the full Roman numeral.",
@@ -5784,7 +5784,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Determine the subtractive and additive representations for each place value.",
-        "workingOut": "\\\\(900 = \\text{CM},\\ 30 = \\text{XXX},\\ 4 = \\text{IV}\\\\)"
+        "workingOut": "\\\\(900 = \\text{CM}, 30 = \\text{XXX}, 4 = \\text{IV}\\\\)"
       },
       {
         "explanation": "Assemble the final Roman numeral string.",
@@ -5817,7 +5817,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Determine the Roman representation of each part.",
-        "workingOut": "\\\\(1000 = \\text{M},\\ 900 = \\text{CM},\\ 80 = \\text{LXXX},\\ 9 = \\text{IX}\\\\)"
+        "workingOut": "\\\\(1000 = \\text{M}, 900 = \\text{CM}, 80 = \\text{LXXX}, 9 = \\text{IX}\\\\)"
       },
       {
         "explanation": "Join the parts in order from largest value to smallest.",
@@ -5846,11 +5846,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Determine the values of the powers of 10.",
-        "workingOut": "\\\\(10^3 = 1000,\\ 10^2 = 100,\\ 10^1 = 10\\\\)"
+        "workingOut": "\\\\(10^3 = 1000, 10^2 = 100, 10^1 = 10\\\\)"
       },
       {
         "explanation": "Perform the multiplication for each placeholder value term.",
-        "workingOut": "\\\\(5000,\\ 300,\\ 90,\\ 6\\\\)"
+        "workingOut": "\\\\(5000, 300, 90, 6\\\\)"
       },
       {
         "explanation": "Sum all terms to find the final value.",
@@ -6081,7 +6081,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Add column by column starting from the ones place, carrying over where needed.",
-        "workingOut": "\\\\(\\text{Ones column: } 6+2+5+1+6 = 20 \\implies \\text{write } 0, \\text{ carry } 2\\\\)"
+        "workingOut": "\\\\(\\text{Ones column: } 6+2+5+1+6 = 20 \\implies \\text{write } 0, text{ carry } 2\\\\)"
       },
       {
         "explanation": "Complete columns additions up to the ten-thousands place.",
@@ -6213,7 +6213,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Find partial products.",
-        "workingOut": "\\\\(37 \\\\times 8 = 296,\\quad 37 \\\\times 20 = 740\\\\)"
+        "workingOut": "\\\\(37 \\\\times 8 = 296, quad 37 \\\\times 20 = 740\\\\)"
       },
       {
         "explanation": "Sum partial products.",
@@ -6246,7 +6246,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Multiply 145 by each component.",
-        "workingOut": "\\\\(145 \\\\times 3 = 435,\\quad 145 \\\\times 10 = 1450\\\\)"
+        "workingOut": "\\\\(145 \\\\times 3 = 435, quad 145 \\\\times 10 = 1450\\\\)"
       },
       {
         "explanation": "Add the two values.",
@@ -6279,7 +6279,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Determine both partial products.",
-        "workingOut": "\\\\(632 \\\\times 7 = 4424,\\quad 632 \\\\times 40 = 25280\\\\)"
+        "workingOut": "\\\\(632 \\\\times 7 = 4424, quad 632 \\\\times 40 = 25280\\\\)"
       },
       {
         "explanation": "Combine partial products.",
@@ -6341,7 +6341,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Determine the highest multiple of 15 that is less than 380.",
-        "workingOut": "\\\\(15 \\\\times 20 = 300,\\quad 15 \\\\times 25 = 375\\\\)"
+        "workingOut": "\\\\(15 \\\\times 20 = 300, quad 15 \\\\times 25 = 375\\\\)"
       },
       {
         "explanation": "Subtract the multiple value from the total dividend to find the remainder.",
@@ -6374,7 +6374,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Determine the multiple of 18 that is close to 490.",
-        "workingOut": "\\\\(18 \\\\times 20 = 360,\\quad 18 \\\\times 27 = 486\\\\)"
+        "workingOut": "\\\\(18 \\\\times 20 = 360, quad 18 \\\\times 27 = 486\\\\)"
       },
       {
         "explanation": "Subtract this close multiple from the dividend.",
@@ -6741,7 +6741,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Translate the mathematical terms 'square of 6' and 'is equal to 36'.",
-        "workingOut": "\\\\(\\text{Square of 6} = 6^2,\\quad \\text{is equal to 36} = 36\\\\)"
+        "workingOut": "\\\\(\\text{Square of 6} = 6^2, quad \\text{is equal to 36} = 36\\\\)"
       },
       {
         "explanation": "Combine the logical symbol and the mathematical equation.",
@@ -6803,7 +6803,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Divide the digits into place value periods using commas or spaces.",
-        "workingOut": "\\\\(2 \\text{ (Millions)},\\ 473 \\text{ (Thousands)},\\ 907 \\text{ (Ones)}\\\\)"
+        "workingOut": "\\\\(2 \\text{ (Millions)}, 473 \\text{ (Thousands)}, 907 \\text{ (Ones)}\\\\)"
       },
       {
         "explanation": "Convert each period to words.",
@@ -6836,7 +6836,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the periods of \\\\(97\\ 003\\ 002\\\\).",
-        "workingOut": "\\\\(97 \\text{ (Millions)},\\ 003 \\text{ (Thousands)},\\ 002 \\text{ (Ones)}\\\\)"
+        "workingOut": "\\\\(97 \\text{ (Millions)}, 003 \\text{ (Thousands)}, 002 \\text{ (Ones)}\\\\)"
       },
       {
         "explanation": "Write each period's value in words.",
@@ -6869,7 +6869,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the periods of the number \\\\(817\\ 653\\\\).",
-        "workingOut": "\\\\(817 \\text{ (Thousands)},\\ 653 \\text{ (Ones)}\\\\)"
+        "workingOut": "\\\\(817 \\text{ (Thousands)}, 653 \\text{ (Ones)}\\\\)"
       },
       {
         "explanation": "Convert each group value to words.",
@@ -7001,7 +7001,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the digit in the ten-thousands place and the thousands place.",
-        "workingOut": "\\\\(\\text{Ten-thousands digit} = 7,\\quad \\text{Thousands digit} = 2\\\\)"
+        "workingOut": "\\\\(\\text{Ten-thousands digit} = 7, quad \\text{Thousands digit} = 2\\\\)"
       },
       {
         "explanation": "Apply the rounding rule: if the thousands digit is less than 5, round down.",
@@ -7034,7 +7034,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the target rounding column and the digit immediately to its right.",
-        "workingOut": "\\\\(\\text{Ten-thousands digit} = 0,\\quad \\text{Thousands digit} = 8\\\\)"
+        "workingOut": "\\\\(\\text{Ten-thousands digit} = 0, quad \\text{Thousands digit} = 8\\\\)"
       },
       {
         "explanation": "Apply the rounding rule: since the thousands digit is 8, which is greater than or equal to 5, round up.",
@@ -7067,7 +7067,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Identify the digit in the ten-thousands column and the thousands column.",
-        "workingOut": "\\\\(\\text{Ten-thousands digit} = 7,\\quad \\text{Thousands digit} = 6\\\\)"
+        "workingOut": "\\\\(\\text{Ten-thousands digit} = 7, quad \\text{Thousands digit} = 6\\\\)"
       },
       {
         "explanation": "Evaluate the rounding condition based on the thousands digit.",
@@ -7236,7 +7236,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Calculate the partial products.",
-        "workingOut": "\\\\(5972 \\\\times 3 = 17916,\\quad 5972 \\\\times 400 = 2388800\\\\)"
+        "workingOut": "\\\\(5972 \\\\times 3 = 17916, quad 5972 \\\\times 400 = 2388800\\\\)"
       },
       {
         "explanation": "Add the partial products to find the final product.",
@@ -7599,7 +7599,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Perform the multiplications sequentially.",
-        "workingOut": "\\\\(3 \\\\times 3 = 9,\\quad 9 \\\\times 3 = 27,\\quad 27 \\\\times 3 = 81\\\\)"
+        "workingOut": "\\\\(3 \\\\times 3 = 9, quad 9 \\\\times 3 = 27, quad 27 \\\\times 3 = 81\\\\)"
       },
       {
         "explanation": "Multiply by the last factor of 3 to find the final ordinary number.",

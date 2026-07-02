@@ -284,7 +284,7 @@ export const Y11_CH6K_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite tangent and secant using basic trigonometric identities.",
-        "workingOut": "\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}, \\quad \\sec \\theta = \\frac{1}{\\cos \\theta}",
+        "workingOut": "\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}, quad \\sec \\theta = \\frac{1}{\\cos \\theta}",
         "graphData": null
       },
       {
@@ -409,7 +409,7 @@ export const Y11_CH6K_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Express cotangent and secant in terms of sine and cosine.",
-        "workingOut": "\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}, \\quad \\sec \\theta = \\frac{1}{\\cos \\theta}",
+        "workingOut": "\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}, quad \\sec \\theta = \\frac{1}{\\cos \\theta}",
         "graphData": null
       },
       {
@@ -569,7 +569,7 @@ export const Y11_CH6K_QUESTIONS = [
       },
       {
         "explanation": "Find the angles in the domain: Quadrant I angle and Quadrant IV angle.",
-        "workingOut": "x = 30^{\\circ}, \\quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}",
+        "workingOut": "x = 30^{\\circ}, quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -896,7 +896,7 @@ export const Y11_CH6K_QUESTIONS = [
       },
       {
         "explanation": "Find the solutions in Quadrants I and III.",
-        "workingOut": "x = 45^{\\circ}, \\quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}",
+        "workingOut": "x = 45^{\\circ}, quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1237,7 +1237,7 @@ export const Y11_CH6K_QUESTIONS = [
       },
       {
         "explanation": "Compute the values in the domain.",
-        "workingOut": "x = 60^{\\circ}, \\quad 180^{\\circ} + 60^{\\circ} = 240^{\\circ}",
+        "workingOut": "x = 60^{\\circ}, quad 180^{\\circ} + 60^{\\circ} = 240^{\\circ}",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1541,7 +1541,7 @@ export const Y11_CH6K_QUESTIONS = [
     "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(2\\sin x + 1 = 0\\)",
     "a": "210°, 330°",
     "h": "Rearrange to solve for \\(\\sin x\\). Sine is negative in Quadrants III and IV.",
-    "s": "\\(\\sin x = -\\frac{1}{2} \\implies x = 180^{\\circ} + 30^{\\circ} = 210^{\\circ}, \\quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}\\).",
+    "s": "\\(\\sin x = -\\frac{1}{2} \\implies x = 180^{\\circ} + 30^{\\circ} = 210^{\\circ}, quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}\\).",
     "graphData": null,
     "solutionSteps": [
       {
@@ -1551,7 +1551,7 @@ export const Y11_CH6K_QUESTIONS = [
       },
       {
         "explanation": "Use reference angle \\(30^{\\circ}\\) in Quadrants III and IV.",
-        "workingOut": "x = 180^{\\circ} + 30^{\\circ} = 210^{\\circ}, \\quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}",
+        "workingOut": "x = 180^{\\circ} + 30^{\\circ} = 210^{\\circ}, quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1725,7 +1725,7 @@ export const Y11_CH6K_QUESTIONS = [
     "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\sqrt{2}\\cos x + 1 = 0\\)",
     "a": "135°, 225°",
     "h": "Isolate \\(\\cos x\\). Cosine is negative in Quadrants II and III.",
-    "s": "\\(\\cos x = -\\frac{1}{\\sqrt{2}} \\implies x = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, \\quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}\\).",
+    "s": "\\(\\cos x = -\\frac{1}{\\sqrt{2}} \\implies x = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}\\).",
     "graphData": null,
     "solutionSteps": [
       {
@@ -1735,7 +1735,7 @@ export const Y11_CH6K_QUESTIONS = [
       },
       {
         "explanation": "Using reference angle \\(45^{\\circ}\\) in Quadrants II and III.",
-        "workingOut": "x = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, \\quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}",
+        "workingOut": "x = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1919,7 +1919,7 @@ export const Y11_CH6K_QUESTIONS = [
       },
       {
         "explanation": "Use reference angle \\(60^{\\circ}\\) in all four quadrants.",
-        "workingOut": "x = 60^{\\circ}, \\, 180^{\\circ} - 60^{\\circ} = 120^{\\circ}, \\, 180^{\\circ} + 60^{\\circ} = 240^{\\circ}, \\, 360^{\\circ} - 60^{\\circ} = 300^{\\circ}",
+        "workingOut": "x = 60^{\\circ}, 180^{\\circ} - 60^{\\circ} = 120^{\\circ}, 180^{\\circ} + 60^{\\circ} = 240^{\\circ}, 360^{\\circ} - 60^{\\circ} = 300^{\\circ}",
         "graphData": {
           "jsxGraph": {
             "width": 300,

@@ -20,7 +20,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the fourth and seventh terms with the arithmetic formula.",
-        "workingOut": "a + 3d = 40, \\quad a + 6d = 19"
+        "workingOut": "a + 3d = 40, quad a + 6d = 19"
       },
       {
         "explanation": "Subtract the first from the second to eliminate \\(a\\).",
@@ -73,16 +73,16 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "source": "Fort Street 2020 Trial Q3",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "What is the solution to $\\cos 2x = \\dfrac{\\sqrt{3}}{2}$ in the domain $[-\\pi, \\pi]$?",
+    "q": "What is the solution to $\\cos 2x = \\dfrac{\\sqrt{3}}{2}$ in the domain $[-\\pi, pi]$?",
     "a": "1",
     "opts": [
-      "$x = \\dfrac{\\pi}{6}, \\dfrac{5\\pi}{6}, \\dfrac{-5\\pi}{6}, \\dfrac{-\\pi}{6}$",
-      "$x = \\dfrac{\\pi}{12}, \\dfrac{11\\pi}{12}, \\dfrac{-11\\pi}{12}, \\dfrac{-\\pi}{12}$",
-      "$x = \\dfrac{\\pi}{12}, \\dfrac{13\\pi}{12}, \\dfrac{7\\pi}{12}, \\dfrac{11\\pi}{12}$",
-      "$x = \\dfrac{\\pi}{6}, \\dfrac{11\\pi}{6}, \\dfrac{13\\pi}{6}, \\dfrac{23\\pi}{6}$"
+      "$x = \\dfrac{\\pi}{6}, dfrac{5\\pi}{6}, dfrac{-5\\pi}{6}, dfrac{-\\pi}{6}$",
+      "$x = \\dfrac{\\pi}{12}, dfrac{11\\pi}{12}, dfrac{-11\\pi}{12}, dfrac{-\\pi}{12}$",
+      "$x = \\dfrac{\\pi}{12}, dfrac{13\\pi}{12}, dfrac{7\\pi}{12}, dfrac{11\\pi}{12}$",
+      "$x = \\dfrac{\\pi}{6}, dfrac{11\\pi}{6}, dfrac{13\\pi}{6}, dfrac{23\\pi}{6}$"
     ],
     "h": "Let $u = 2x$, $-2\\pi \\le u \\le 2\\pi$; reference angle $\\frac{\\pi}{6}$.",
-    "s": "With $u = 2x \\in [-2\\pi, 2\\pi]$, $\\cos u = \\frac{\\sqrt3}{2}$ gives $u = \\pm\\frac{\\pi}{6}, \\pm\\frac{11\\pi}{6}$. Then $x = \\pm\\frac{\\pi}{12}, \\pm\\frac{11\\pi}{12}$.",
+    "s": "With $u = 2x \\in [-2\\pi, 2\\pi]$, $\\cos u = \\frac{\\sqrt3}{2}$ gives $u = \\pm\\frac{\\pi}{6}, pm\\frac{11\\pi}{6}$. Then $x = \\pm\\frac{\\pi}{12}, pm\\frac{11\\pi}{12}$.",
     "solutionSteps": [
       {
         "explanation": "Substitute \\(u = 2x\\) and expand the domain.",
@@ -158,13 +158,13 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "q": "What is the domain and range of the function $y = \\dfrac{1}{\\sqrt{x - 4}}$?",
     "a": "1",
     "opts": [
-      "Domain: $[4, \\infty)$, Range: $(0, \\infty)$",
-      "Domain: $(4, \\infty)$, Range: $(0, \\infty)$",
-      "Domain: $[-\\infty, \\infty]$, Range: $[-\\infty, \\infty]$",
+      "Domain: $[4, infty)$, Range: $(0, infty)$",
+      "Domain: $(4, infty)$, Range: $(0, infty)$",
+      "Domain: $[-\\infty, infty]$, Range: $[-\\infty, infty]$",
       "Domain: $[-2, 2]$, Range: $(-\\infty, 0)$"
     ],
     "h": "The square root in the denominator needs $x - 4 > 0$ strictly.",
-    "s": "We need $x - 4 > 0$, so $x > 4$, giving domain $(4, \\infty)$. The output is always positive, so range $(0, \\infty)$.",
+    "s": "We need $x - 4 > 0$, so $x > 4$, giving domain $(4, infty)$. The output is always positive, so range $(0, infty)$.",
     "solutionSteps": [
       {
         "explanation": "The denominator \\(\\sqrt{x-4}\\) requires \\(x - 4 > 0\\) (cannot be zero).",
@@ -172,11 +172,11 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "State the domain.",
-        "workingOut": "\\text{Domain} = (4, \\infty)"
+        "workingOut": "\\text{Domain} = (4, infty)"
       },
       {
         "explanation": "The reciprocal of a positive square root is always positive.",
-        "workingOut": "\\text{Range} = (0, \\infty)"
+        "workingOut": "\\text{Range} = (0, infty)"
       }
     ]
   },
@@ -798,7 +798,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Normal gradient is the negative reciprocal; find the point (\\(y = \\ln 1 = 0\\)).",
-        "workingOut": "m_{\\text{normal}} = -\\frac{1}{3}, \\quad (1, 0)"
+        "workingOut": "m_{\\text{normal}} = -\\frac{1}{3}, quad (1, 0)"
       },
       {
         "explanation": "Use point–gradient form and rearrange.",
@@ -830,7 +830,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Read off the centre and radius.",
-        "workingOut": "\\text{Centre } (3, -4), \\quad r = 4"
+        "workingOut": "\\text{Centre } (3, -4), quad r = 4"
       }
     ]
   },
@@ -1033,7 +1033,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "q": "Sketch $y = f\\!\\left(2\\left(x - \\dfrac{1}{4}\\right)\\right)$, showing the $x$-intercepts, stationary points and inflection points.",
     "a": "Part (e) dilated horizontally by $\\frac12$ and shifted $\\frac14$ right: $x$-intercepts $\\left(-\\frac{5}{4},0\\right)$ and $\\left(\\frac{3}{4},0\\right)$, minimum $\\left(-\\frac{3}{4},-27\\right)$, inflections $\\left(-\\frac{1}{4},-16\\right)$ and $\\left(\\frac{3}{4},0\\right)$.",
     "opts": [],
-    "h": "Each feature $(x_0, y_0)$ maps to $\\left(\\frac{x_0}{2}+\\frac14,\\ y_0\\right)$.",
+    "h": "Each feature $(x_0, y_0)$ maps to $\\left(\\frac{x_0}{2}+\\frac14, y_0\\right)$.",
     "s": "Apply $x \\mapsto \\frac{x}{2} + \\frac{1}{4}$: $(-3,0)\\to(-\\frac{5}{4},0)$; $(1,0)\\to(\\frac{3}{4},0)$; $(-2,-27)\\to(-\\frac{3}{4},-27)$; $(-1,-16)\\to(-\\frac{1}{4},-16)$.",
     "solutionSteps": [
       {
@@ -1102,7 +1102,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "source": "Fort Street 2020 Trial Q11(b)",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "Assuming the jacaranda ($60$ cm at planting, growths $40, 40(0.8), \\dots$) maintains this pattern, explain why it will never reach a height of $3$ metres.",
+    "q": "Assuming the jacaranda ($60$ cm at planting, growths $40, 40(0.8), dots$) maintains this pattern, explain why it will never reach a height of $3$ metres.",
     "a": "Limiting growth $200$ cm, so maximum height $60 + 200 = 260$ cm $< 300$ cm.",
     "opts": [],
     "h": "Find the limiting sum of the growth GP, then add the initial height.",
@@ -1130,7 +1130,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "source": "Fort Street 2020 Trial Q11(c)",
     "type": "short_answer",
     "difficulty": "hard",
-    "q": "In which year will the jacaranda ($60$ cm at planting, growths $40, 40(0.8), \\dots$) reach a height of $2.5$ metres?",
+    "q": "In which year will the jacaranda ($60$ cm at planting, growths $40, 40(0.8), dots$) reach a height of $2.5$ metres?",
     "a": "During the $14^{\\text{th}}$ year",
     "opts": [],
     "h": "It needs to grow $250 - 60 = 190$ cm. Set $S_n = 190$ and solve.",
@@ -1230,7 +1230,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "List the win/miss probabilities in order.",
-        "workingOut": "Bo: \\tfrac{1}{20},\\tfrac{19}{20}; \\;\\; Cara: \\tfrac{1}{25},\\tfrac{24}{25}"
+        "workingOut": "Bo: \\tfrac{1}{20}, tfrac{19}{20}; \\;\\; Cara: \\tfrac{1}{25}, tfrac{24}{25}"
       },
       {
         "explanation": "Draw the tree as a chain of four throws.",
@@ -1293,7 +1293,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "q": "Bo (first, $P = \\frac{1}{20}$) and Cara ($P = \\frac{1}{25}$) throw in turn until someone hits. What is the probability that Bo eventually wins?",
     "a": "$\\dfrac{25}{44}$",
     "opts": [],
-    "h": "Bo can win on throw $1, 2, 3, \\dots$; geometric series with ratio $r = \\frac{19}{20}\\cdot\\frac{24}{25}$.",
+    "h": "Bo can win on throw $1, 2, 3, dots$; geometric series with ratio $r = \\frac{19}{20}\\cdot\\frac{24}{25}$.",
     "s": "Bo wins with $a = \\frac{1}{20}$ and $r = \\frac{19}{20}\\cdot\\frac{24}{25} = \\frac{456}{500} = \\frac{114}{125}$. $S_\\infty = \\frac{1/20}{1 - 114/125} = \\frac{1/20}{11/125} = \\frac{25}{44}$.",
     "solutionSteps": [
       {
@@ -1302,7 +1302,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Identify \\(a\\) and \\(r\\).",
-        "workingOut": "a = \\frac{1}{20}, \\quad r = \\frac{114}{125}"
+        "workingOut": "a = \\frac{1}{20}, quad r = \\frac{114}{125}"
       },
       {
         "explanation": "Apply \\(S_\\infty = \\frac{a}{1-r}\\).",
@@ -1454,7 +1454,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "The gradient is zero at the turning points of \\(v\\).",
-        "workingOut": "t = 2 \\text{ (max)}, \\quad t = 6 \\text{ (min)}"
+        "workingOut": "t = 2 \\text{ (max)}, quad t = 6 \\text{ (min)}"
       }
     ]
   },
@@ -1806,7 +1806,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify amplitude \\(8\\), centre \\(15\\), period \\(12\\), range \\([7, 23]\\).",
-        "workingOut": "T \\in [7, 23], \\text{ period } 12"
+        "workingOut": "T \\in [7, 23], text{ period } 12"
       },
       {
         "explanation": "Locate the minimum near month \\(7\\).",
@@ -1866,7 +1866,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "In right triangle \\(AHB\\) (vertical \\(1.5\\) km, angle \\(\\theta\\)), find the walked side and horizontal offset.",
-        "workingOut": "HB = \\frac{1.5}{\\cos\\theta}, \\quad AB = 1.5\\tan\\theta"
+        "workingOut": "HB = \\frac{1.5}{\\cos\\theta}, quad AB = 1.5\\tan\\theta"
       },
       {
         "explanation": "Total distance walked is \\(2HB\\); time \\(= \\frac{\\text{distance}}{5}\\).",

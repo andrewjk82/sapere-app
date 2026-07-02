@@ -497,7 +497,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up.",
-        "workingOut": "x + y = 11, \\quad xy = 28",
+        "workingOut": "x + y = 11, quad xy = 28",
         "graphData": null
       },
       {
@@ -641,7 +641,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify coefficients.",
-        "workingOut": "a = 5, \\quad b = -3, \\quad c = -1",
+        "workingOut": "a = 5, quad b = -3, quad c = -1",
         "graphData": null
       },
       {
@@ -876,7 +876,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify coefficients: \\( a=1, b=-6, c=2 \\).",
-        "workingOut": "a = 1, \\quad b = -6, \\quad c = 2",
+        "workingOut": "a = 1, quad b = -6, quad c = 2",
         "graphData": null
       },
       {
@@ -1399,7 +1399,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find two numbers whose product is 12 and sum is 7: 3 and 4.",
-        "workingOut": "3 \\times 4 = 12, \\quad 3 + 4 = 7",
+        "workingOut": "3 \\times 4 = 12, quad 3 + 4 = 7",
         "graphData": null
       },
       {
@@ -1442,7 +1442,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find two numbers with product -12 and sum -11: -12 and 1.",
-        "workingOut": "-12 \\times 1 = -12, \\quad -12 + 1 = -11",
+        "workingOut": "-12 \\times 1 = -12, quad -12 + 1 = -11",
         "graphData": null
       },
       {
@@ -1576,7 +1576,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find two numbers with product \\( 2 \\times 3 = 6 \\) and sum 5: 2 and 3.",
-        "workingOut": "2 \\times 3 = 6, \\quad 2 + 3 = 5",
+        "workingOut": "2 \\times 3 = 6, quad 2 + 3 = 5",
         "graphData": null
       },
       {
@@ -1715,7 +1715,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find factors of -14 that sum to -5: -7 and 2.",
-        "workingOut": "-7 \\times 2 = -14, \\quad -7 + 2 = -5",
+        "workingOut": "-7 \\times 2 = -14, quad -7 + 2 = -5",
         "graphData": null
       },
       {
@@ -2035,7 +2035,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms for the difference of squares identity.",
-        "workingOut": "\\(A = 3x + 4, \\quad B = 2x + 6\\)",
+        "workingOut": "\\(A = 3x + 4, quad B = 2x + 6\\)",
         "graphData": null
       },
       {
@@ -2082,7 +2082,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms for the difference of squares identity.",
-        "workingOut": "\\(A = 4x + 5, \\quad B = 3x + 7\\)",
+        "workingOut": "\\(A = 4x + 5, quad B = 3x + 7\\)",
         "graphData": null
       },
       {
@@ -2129,7 +2129,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms for the difference of squares identity.",
-        "workingOut": "\\(A = 5x + 6, \\quad B = 4x + 8\\)",
+        "workingOut": "\\(A = 5x + 6, quad B = 4x + 8\\)",
         "graphData": null
       },
       {
@@ -2176,7 +2176,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms for the difference of squares identity.",
-        "workingOut": "\\(A = 6x + 7, \\quad B = 5x + 9\\)",
+        "workingOut": "\\(A = 6x + 7, quad B = 5x + 9\\)",
         "graphData": null
       },
       {
@@ -2411,7 +2411,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the cube roots of each term.",
-        "workingOut": "\\(A = 2x, \\quad B = 3\\)",
+        "workingOut": "\\(A = 2x, quad B = 3\\)",
         "graphData": null
       },
       {
@@ -2458,7 +2458,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the cube roots of each term.",
-        "workingOut": "\\(A = 3x, \\quad B = 4\\)",
+        "workingOut": "\\(A = 3x, quad B = 4\\)",
         "graphData": null
       },
       {
@@ -2505,7 +2505,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the cube roots of each term.",
-        "workingOut": "\\(A = 4x, \\quad B = 5\\)",
+        "workingOut": "\\(A = 4x, quad B = 5\\)",
         "graphData": null
       },
       {
@@ -2552,7 +2552,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the cube roots of each term.",
-        "workingOut": "\\(A = 5x, \\quad B = 6\\)",
+        "workingOut": "\\(A = 5x, quad B = 6\\)",
         "graphData": null
       },
       {
@@ -3163,7 +3163,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each quadratic expression.",
-        "workingOut": "\\(x^2 - 4 = (x - 2)(x + 2), \\quad x^2 - 9 = (x - 3)(x + 3), \\quad x^2 + 6x + 9 = (x + 3)^2\\)",
+        "workingOut": "\\(x^2 - 4 = (x - 2)(x + 2), quad x^2 - 9 = (x - 3)(x + 3), quad x^2 + 6x + 9 = (x + 3)^2\\)",
         "graphData": null
       },
       {
@@ -3210,7 +3210,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each quadratic expression.",
-        "workingOut": "\\(x^2 - 9 = (x - 3)(x + 3), \\quad x^2 - 16 = (x - 4)(x + 4), \\quad x^2 + 8x + 16 = (x + 4)^2\\)",
+        "workingOut": "\\(x^2 - 9 = (x - 3)(x + 3), quad x^2 - 16 = (x - 4)(x + 4), quad x^2 + 8x + 16 = (x + 4)^2\\)",
         "graphData": null
       },
       {
@@ -3257,7 +3257,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each quadratic expression.",
-        "workingOut": "\\(x^2 - 16 = (x - 4)(x + 4), \\quad x^2 - 25 = (x - 5)(x + 5), \\quad x^2 + 10x + 25 = (x + 5)^2\\)",
+        "workingOut": "\\(x^2 - 16 = (x - 4)(x + 4), quad x^2 - 25 = (x - 5)(x + 5), quad x^2 + 10x + 25 = (x + 5)^2\\)",
         "graphData": null
       },
       {
@@ -3304,7 +3304,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each quadratic expression.",
-        "workingOut": "\\(x^2 - 25 = (x - 5)(x + 5), \\quad x^2 - 36 = (x - 6)(x + 6), \\quad x^2 + 12x + 36 = (x + 6)^2\\)",
+        "workingOut": "\\(x^2 - 25 = (x - 5)(x + 5), quad x^2 - 36 = (x - 6)(x + 6), quad x^2 + 12x + 36 = (x + 6)^2\\)",
         "graphData": null
       },
       {
@@ -3539,7 +3539,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find common denominators for the numerator and denominator separately.",
-        "workingOut": "\\(\\text{Numerator} = \\frac{x - 2}{x}, \\quad \\text{Denominator} = \\frac{x^2 - 4}{x^2}\\)",
+        "workingOut": "\\(\\text{Numerator} = \\frac{x - 2}{x}, quad \\text{Denominator} = \\frac{x^2 - 4}{x^2}\\)",
         "graphData": null
       },
       {
@@ -3586,7 +3586,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find common denominators for the numerator and denominator separately.",
-        "workingOut": "\\(\\text{Numerator} = \\frac{x - 3}{x}, \\quad \\text{Denominator} = \\frac{x^2 - 9}{x^2}\\)",
+        "workingOut": "\\(\\text{Numerator} = \\frac{x - 3}{x}, quad \\text{Denominator} = \\frac{x^2 - 9}{x^2}\\)",
         "graphData": null
       },
       {
@@ -3633,7 +3633,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find common denominators for the numerator and denominator separately.",
-        "workingOut": "\\(\\text{Numerator} = \\frac{x - 4}{x}, \\quad \\text{Denominator} = \\frac{x^2 - 16}{x^2}\\)",
+        "workingOut": "\\(\\text{Numerator} = \\frac{x - 4}{x}, quad \\text{Denominator} = \\frac{x^2 - 16}{x^2}\\)",
         "graphData": null
       },
       {
@@ -3680,7 +3680,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find common denominators for the numerator and denominator separately.",
-        "workingOut": "\\(\\text{Numerator} = \\frac{x - 5}{x}, \\quad \\text{Denominator} = \\frac{x^2 - 25}{x^2}\\)",
+        "workingOut": "\\(\\text{Numerator} = \\frac{x - 5}{x}, quad \\text{Denominator} = \\frac{x^2 - 25}{x^2}\\)",
         "graphData": null
       },
       {
@@ -3727,12 +3727,12 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each of the quadratic expressions.",
-        "workingOut": "\\(x^2 - 6x + 8 = (x - 2)(x - 4), \\quad x^2 - 4x + 4 = (x - 2)^2\\)",
+        "workingOut": "\\(x^2 - 6x + 8 = (x - 2)(x - 4), quad x^2 - 4x + 4 = (x - 2)^2\\)",
         "graphData": null
       },
       {
         "explanation": "Factor the numerator and denominator of the divisor.",
-        "workingOut": "\\(x^2 - 3x = x(x - 3), \\quad x^2 - 2x = x(x - 2)\\)",
+        "workingOut": "\\(x^2 - 3x = x(x - 3), quad x^2 - 2x = x(x - 2)\\)",
         "graphData": null
       },
       {
@@ -3774,12 +3774,12 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each of the quadratic expressions.",
-        "workingOut": "\\(x^2 - 8x + 15 = (x - 3)(x - 5), \\quad x^2 - 6x + 9 = (x - 3)^2\\)",
+        "workingOut": "\\(x^2 - 8x + 15 = (x - 3)(x - 5), quad x^2 - 6x + 9 = (x - 3)^2\\)",
         "graphData": null
       },
       {
         "explanation": "Factor the numerator and denominator of the divisor.",
-        "workingOut": "\\(x^2 - 4x = x(x - 4), \\quad x^2 - 3x = x(x - 3)\\)",
+        "workingOut": "\\(x^2 - 4x = x(x - 4), quad x^2 - 3x = x(x - 3)\\)",
         "graphData": null
       },
       {
@@ -3821,12 +3821,12 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each of the quadratic expressions.",
-        "workingOut": "\\(x^2 - 10x + 24 = (x - 4)(x - 6), \\quad x^2 - 8x + 16 = (x - 4)^2\\)",
+        "workingOut": "\\(x^2 - 10x + 24 = (x - 4)(x - 6), quad x^2 - 8x + 16 = (x - 4)^2\\)",
         "graphData": null
       },
       {
         "explanation": "Factor the numerator and denominator of the divisor.",
-        "workingOut": "\\(x^2 - 5x = x(x - 5), \\quad x^2 - 4x = x(x - 4)\\)",
+        "workingOut": "\\(x^2 - 5x = x(x - 5), quad x^2 - 4x = x(x - 4)\\)",
         "graphData": null
       },
       {
@@ -3868,12 +3868,12 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each of the quadratic expressions.",
-        "workingOut": "\\(x^2 - 12x + 35 = (x - 5)(x - 7), \\quad x^2 - 10x + 25 = (x - 5)^2\\)",
+        "workingOut": "\\(x^2 - 12x + 35 = (x - 5)(x - 7), quad x^2 - 10x + 25 = (x - 5)^2\\)",
         "graphData": null
       },
       {
         "explanation": "Factor the numerator and denominator of the divisor.",
-        "workingOut": "\\(x^2 - 6x = x(x - 6), \\quad x^2 - 5x = x(x - 5)\\)",
+        "workingOut": "\\(x^2 - 6x = x(x - 6), quad x^2 - 5x = x(x - 5)\\)",
         "graphData": null
       },
       {
@@ -4667,12 +4667,12 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the equations for sum of roots.",
-        "workingOut": "\\(\\alpha + \\beta = 4, \\quad \\beta - \\alpha = 2\\)",
+        "workingOut": "\\(\\alpha + \\beta = 4, quad \\beta - \\alpha = 2\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for the individual roots.",
-        "workingOut": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 4 \\Rightarrow \\alpha = 1, \\quad \\beta = 3\\)",
+        "workingOut": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 4 \\Rightarrow \\alpha = 1, quad \\beta = 3\\)",
         "graphData": null
       },
       {
@@ -4714,12 +4714,12 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the equations for sum of roots.",
-        "workingOut": "\\(\\alpha + \\beta = 6, \\quad \\beta - \\alpha = 2\\)",
+        "workingOut": "\\(\\alpha + \\beta = 6, quad \\beta - \\alpha = 2\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for the individual roots.",
-        "workingOut": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 6 \\Rightarrow \\alpha = 2, \\quad \\beta = 4\\)",
+        "workingOut": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 6 \\Rightarrow \\alpha = 2, quad \\beta = 4\\)",
         "graphData": null
       },
       {
@@ -4761,12 +4761,12 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the equations for sum of roots.",
-        "workingOut": "\\(\\alpha + \\beta = 8, \\quad \\beta - \\alpha = 2\\)",
+        "workingOut": "\\(\\alpha + \\beta = 8, quad \\beta - \\alpha = 2\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for the individual roots.",
-        "workingOut": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 8 \\Rightarrow \\alpha = 3, \\quad \\beta = 5\\)",
+        "workingOut": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 8 \\Rightarrow \\alpha = 3, quad \\beta = 5\\)",
         "graphData": null
       },
       {
@@ -4808,12 +4808,12 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the equations for sum of roots.",
-        "workingOut": "\\(\\alpha + \\beta = 10, \\quad \\beta - \\alpha = 2\\)",
+        "workingOut": "\\(\\alpha + \\beta = 10, quad \\beta - \\alpha = 2\\)",
         "graphData": null
       },
       {
         "explanation": "Solve for the individual roots.",
-        "workingOut": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 10 \\Rightarrow \\alpha = 4, \\quad \\beta = 6\\)",
+        "workingOut": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 10 \\Rightarrow \\alpha = 4, quad \\beta = 6\\)",
         "graphData": null
       },
       {
@@ -5053,7 +5053,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the corresponding \\( y \\) values by substituting \\( x \\) back.",
-        "workingOut": "\\(x = 1 \\Rightarrow y = 3, \\quad x = 2 \\Rightarrow y = 6\\)",
+        "workingOut": "\\(x = 1 \\Rightarrow y = 3, quad x = 2 \\Rightarrow y = 6\\)",
         "graphData": null
       }
     ],
@@ -5100,7 +5100,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the corresponding \\( y \\) values by substituting \\( x \\) back.",
-        "workingOut": "\\(x = 1 \\Rightarrow y = 4, \\quad x = 2 \\Rightarrow y = 8\\)",
+        "workingOut": "\\(x = 1 \\Rightarrow y = 4, quad x = 2 \\Rightarrow y = 8\\)",
         "graphData": null
       }
     ],
@@ -5147,7 +5147,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the corresponding \\( y \\) values by substituting \\( x \\) back.",
-        "workingOut": "\\(x = 1 \\Rightarrow y = 5, \\quad x = 2 \\Rightarrow y = 10\\)",
+        "workingOut": "\\(x = 1 \\Rightarrow y = 5, quad x = 2 \\Rightarrow y = 10\\)",
         "graphData": null
       }
     ],
@@ -5194,7 +5194,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the corresponding \\( y \\) values by substituting \\( x \\) back.",
-        "workingOut": "\\(x = 1 \\Rightarrow y = 6, \\quad x = 2 \\Rightarrow y = 12\\)",
+        "workingOut": "\\(x = 1 \\Rightarrow y = 6, quad x = 2 \\Rightarrow y = 12\\)",
         "graphData": null
       }
     ],
@@ -6359,7 +6359,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up equations for area and perimeter.",
-        "workingOut": "\\(2(w + l) = 22, \\quad wl = 28\\)",
+        "workingOut": "\\(2(w + l) = 22, quad wl = 28\\)",
         "graphData": null
       },
       {
@@ -6369,7 +6369,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation to find both dimensions.",
-        "workingOut": "\\((w - 4)(w - 7) = 0 \\Rightarrow w = 4, \\quad l = 7\\)",
+        "workingOut": "\\((w - 4)(w - 7) = 0 \\Rightarrow w = 4, quad l = 7\\)",
         "graphData": null
       }
     ],
@@ -6406,7 +6406,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up equations for area and perimeter.",
-        "workingOut": "\\(2(w + l) = 26, \\quad wl = 40\\)",
+        "workingOut": "\\(2(w + l) = 26, quad wl = 40\\)",
         "graphData": null
       },
       {
@@ -6416,7 +6416,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation to find both dimensions.",
-        "workingOut": "\\((w - 5)(w - 8) = 0 \\Rightarrow w = 5, \\quad l = 8\\)",
+        "workingOut": "\\((w - 5)(w - 8) = 0 \\Rightarrow w = 5, quad l = 8\\)",
         "graphData": null
       }
     ],
@@ -6453,7 +6453,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up equations for area and perimeter.",
-        "workingOut": "\\(2(w + l) = 30, \\quad wl = 54\\)",
+        "workingOut": "\\(2(w + l) = 30, quad wl = 54\\)",
         "graphData": null
       },
       {
@@ -6463,7 +6463,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation to find both dimensions.",
-        "workingOut": "\\((w - 6)(w - 9) = 0 \\Rightarrow w = 6, \\quad l = 9\\)",
+        "workingOut": "\\((w - 6)(w - 9) = 0 \\Rightarrow w = 6, quad l = 9\\)",
         "graphData": null
       }
     ],
@@ -6500,7 +6500,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up equations for area and perimeter.",
-        "workingOut": "\\(2(w + l) = 34, \\quad wl = 70\\)",
+        "workingOut": "\\(2(w + l) = 34, quad wl = 70\\)",
         "graphData": null
       },
       {
@@ -6510,7 +6510,7 @@ export const Y11_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation to find both dimensions.",
-        "workingOut": "\\((w - 7)(w - 10) = 0 \\Rightarrow w = 7, \\quad l = 10\\)",
+        "workingOut": "\\((w - 7)(w - 10) = 0 \\Rightarrow w = 7, quad l = 10\\)",
         "graphData": null
       }
     ],
@@ -6547,7 +6547,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the coefficients from the quadratic formula for height.",
-        "workingOut": "\\(a = -5, \\quad b = 25, \\quad c = 10\\)",
+        "workingOut": "\\(a = -5, quad b = 25, quad c = 10\\)",
         "graphData": null
       },
       {
@@ -6594,7 +6594,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the coefficients from the quadratic formula for height.",
-        "workingOut": "\\(a = -5, \\quad b = 30, \\quad c = 10\\)",
+        "workingOut": "\\(a = -5, quad b = 30, quad c = 10\\)",
         "graphData": null
       },
       {
@@ -6641,7 +6641,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the coefficients from the quadratic formula for height.",
-        "workingOut": "\\(a = -5, \\quad b = 35, \\quad c = 10\\)",
+        "workingOut": "\\(a = -5, quad b = 35, quad c = 10\\)",
         "graphData": null
       },
       {
@@ -6688,7 +6688,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the coefficients from the quadratic formula for height.",
-        "workingOut": "\\(a = -5, \\quad b = 40, \\quad c = 10\\)",
+        "workingOut": "\\(a = -5, quad b = 40, quad c = 10\\)",
         "graphData": null
       },
       {

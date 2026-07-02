@@ -64,7 +64,12 @@ export const Y12A_CH3E_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 320, 15, -60],
+        "boundingbox": [
+          -3,
+          320,
+          15,
+          -60
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0], [14,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-40], [0,290]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [13.5, -15, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 275, 'y'], {fontSize: 14});\nvar f = function(x) { return 12*x*x - x*x*x; };\nboard.create('functiongraph', [f, -2, 13], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [12, 0], {name: 'A(12,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [5, 12]}});\nboard.create('point', [8, 256], {name: 'B(8,256)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [4, 128], {name: 'C(4,128)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -105,7 +110,7 @@ export const Y12A_CH3E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find where \\( f'(x) = 0 \\) by locating turning points.",
-        "workingOut": "\\text{Turning points at } x = -2 \\text{ and } x = 3 \\implies f'(-2) = 0, \\, f'(3) = 0"
+        "workingOut": "\\text{Turning points at } x = -2 \\text{ and } x = 3 \\implies f'(-2) = 0, f'(3) = 0"
       },
       {
         "explanation": "Find where \\( f''(x) = 0 \\) by locating the point of inflection.",
@@ -124,7 +129,12 @@ export const Y12A_CH3E_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-5, 8, 6, -7],
+        "boundingbox": [
+          -5,
+          8,
+          6,
+          -7
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-6.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 7.0, 'y'], {fontSize: 14});\nvar f = function(x) { return -0.16*x*x*x + 0.24*x*x + 2.88*x - 0.48; };\nboard.create('functiongraph', [f, -4.5, 5.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, -4], {name: '(-2,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [3, 6], {name: '(3,6)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0.5, 1], {name: '(0.5,1)', size: 2, color: 'black', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -171,7 +181,7 @@ export const Y12A_CH3E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set \\( y = 0 \\) and factor the quadratic expression to find the \\( x \\)-intercepts.",
-        "workingOut": "x^2 - 4x - 12 = 0 \\implies (x - 6)(x + 2) = 0 \\implies x = -2, \\, 6"
+        "workingOut": "x^2 - 4x - 12 = 0 \\implies (x - 6)(x + 2) = 0 \\implies x = -2, 6"
       },
       {
         "explanation": "Find the \\( y \\)-intercept by setting \\( x = 0 \\).",
@@ -194,7 +204,12 @@ export const Y12A_CH3E_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-5, 6, 9, -20],
+        "boundingbox": [
+          -5,
+          6,
+          9,
+          -20
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0], [8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-18], [0,4]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.5, -1, 'x'], {fontSize: 14});\nboard.create('text', [-1, 3, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x - 4*x - 12; };\nboard.create('functiongraph', [f, -3.5, 7.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, -16], {name: '(2,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [-2, 0], {name: '-2', size: 2, color: 'black', label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [6, 0], {name: '6', size: 2, color: 'black', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -12], {name: '-12', size: 2, color: 'black', label: {autoPosition: false, offset: [-25, 0]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -216,7 +231,12 @@ export const Y12A_CH3E_QUESTIONS = [
           "jsxGraph": {
             "width": 350,
             "height": 250,
-            "boundingbox": [-3, 5, 9, -11],
+            "boundingbox": [
+              -3,
+              5,
+              9,
+              -11
+            ],
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0], [8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-10], [0,4]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.5, -1, 'x'], {fontSize: 14});\nboard.create('text', [-1, 3.5, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x - 6*x; };\nboard.create('functiongraph', [f, -1.5, 7.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, -9], {name: '(3,-9)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [0, 0], {name: '0', size: 2, color: 'black', label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [6, 0], {name: '6', size: 2, color: 'black', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
           }
         }
@@ -230,7 +250,12 @@ export const Y12A_CH3E_QUESTIONS = [
           "jsxGraph": {
             "width": 350,
             "height": 250,
-            "boundingbox": [-6, 12, 4, -4],
+            "boundingbox": [
+              -6,
+              12,
+              4,
+              -4
+            ],
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3], [0,11]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.2, -1, 'x'], {fontSize: 14});\nboard.create('text', [-1, 10.5, 'y'], {fontSize: 14});\nvar f = function(x) { return 8 - 2*x - x*x; };\nboard.create('functiongraph', [f, -5, 3], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 9], {name: '(-1,9)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [-4, 0], {name: '-4', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, 0], {name: '2', size: 2, color: 'black', label: {autoPosition: false, offset: [10, -15]}});\nboard.create('point', [0, 8], {name: '8', size: 2, color: 'black', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
           }
         }
@@ -238,7 +263,7 @@ export const Y12A_CH3E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "For a), find turning point by setting \\( y' = 2x - 6 = 0 \\implies x = 3 \\). Vertex is \\( (3, -9) \\). Intercepts are \\( x = 0, \\, 6 \\).",
+        "explanation": "For a), find turning point by setting \\( y' = 2x - 6 = 0 \\implies x = 3 \\). Vertex is \\( (3, -9) \\). Intercepts are \\( x = 0, 6 \\).",
         "workingOut": "y = x(x-6) \\implies \\text{intercepts at } x=0, 6"
       },
       {
@@ -303,7 +328,7 @@ export const Y12A_CH3E_QUESTIONS = [
       },
       {
         "explanation": "Set \\( y' = 0 \\) to locate turning points.",
-        "workingOut": "3(4 - x^2) = 0 \\implies x = \\pm 2 \\implies y(2) = 16, \\, y(-2) = -16"
+        "workingOut": "3(4 - x^2) = 0 \\implies x = \\pm 2 \\implies y(2) = 16, y(-2) = -16"
       },
       {
         "explanation": "Examine the sign of \\( y'' \\) at the turning points.",
@@ -322,7 +347,12 @@ export const Y12A_CH3E_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-5, 25, 5, -25],
+        "boundingbox": [
+          -5,
+          25,
+          5,
+          -25
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-22], [0,22]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -2, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 20, 'y'], {fontSize: 14});\nvar f = function(x) { return 12*x - x*x*x; };\nboard.create('functiongraph', [f, -4.2, 4.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, -16], {name: 'Min(-2,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-35, -15]}});\nboard.create('point', [2, 16], {name: 'Max(2,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, 0], {name: '(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -367,7 +397,7 @@ export const Y12A_CH3E_QUESTIONS = [
       },
       {
         "explanation": "Solve \\( f'(x) = 0 \\) to find turning points.",
-        "workingOut": "6x(x-3) = 0 \\implies x=0, 3 \\implies f(0) = 12, \\, f(3) = 2(27) - 9(9) + 12 = -15"
+        "workingOut": "6x(x-3) = 0 \\implies x=0, 3 \\implies f(0) = 12, f(3) = 2(27) - 9(9) + 12 = -15"
       },
       {
         "explanation": "Verify their nature using the second derivative.",
@@ -382,7 +412,12 @@ export const Y12A_CH3E_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-3, 20, 5, -22],
+        "boundingbox": [
+          -3,
+          20,
+          5,
+          -22
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-20], [0,18]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -1.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 16, 'y'], {fontSize: 14});\nvar f = function(x) { return 2*x*x*x - 9*x*x + 12; };\nboard.create('functiongraph', [f, -2.2, 4.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 12], {name: 'Max(0,12)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [3, -15], {name: 'Min(3,-15)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [1.5, -1.5], {name: 'Inflection(1.5,-1.5)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -404,7 +439,12 @@ export const Y12A_CH3E_QUESTIONS = [
           "jsxGraph": {
             "width": 350,
             "height": 250,
-            "boundingbox": [-2, 6, 5, -3],
+            "boundingbox": [
+              -2,
+              6,
+              5,
+              -3
+            ],
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 5, 'y'], {fontSize: 14});\nvar f = function(x) { return x*(x-3)*(x-3); };\nboard.create('functiongraph', [f, -1.2, 4.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 4], {name: 'Max(1,4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [3, 0], {name: 'Min(3,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [2, 2], {name: 'Inflection(2,2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
@@ -418,7 +458,12 @@ export const Y12A_CH3E_QUESTIONS = [
           "jsxGraph": {
             "width": 350,
             "height": 250,
-            "boundingbox": [-3, 20, 5, -25],
+            "boundingbox": [
+              -3,
+              20,
+              5,
+              -25
+            ],
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-23], [0,18]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -1.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 16, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 3*x*x - 9*x + 8; };\nboard.create('functiongraph', [f, -2.5, 4.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 13], {name: 'Max(-1,13)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [3, -19], {name: 'Min(3,-19)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [1, -3], {name: 'Inflection(1,-3)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
@@ -487,7 +532,7 @@ export const Y12A_CH3E_QUESTIONS = [
       },
       {
         "explanation": "Find stationary points by setting \\( y' = 0 \\).",
-        "workingOut": "4x^2(3-x) = 0 \\implies x=0, 3 \\implies y(0)=5, \\, y(3)=4(27)-81+5=32"
+        "workingOut": "4x^2(3-x) = 0 \\implies x=0, 3 \\implies y(0)=5, y(3)=4(27)-81+5=32"
       },
       {
         "explanation": "Test nature at \\( x=3 \\) and check \\( x=0 \\).",
@@ -495,14 +540,19 @@ export const Y12A_CH3E_QUESTIONS = [
       },
       {
         "explanation": "Verify the inflection points where \\( y'' = 0 \\).",
-        "workingOut": "12x(2-x) = 0 \\implies x=0, 2. \\, \\text{Sign changes show both are inflection points.}"
+        "workingOut": "12x(2-x) = 0 \\implies x=0, 2. \\, text{Sign changes show both are inflection points.}"
       }
     ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-2, 38, 5, -10],
+        "boundingbox": [
+          -2,
+          38,
+          5,
+          -10
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5], [0,35]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -1.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 32, 'y'], {fontSize: 14});\nvar f = function(x) { return 4*x*x*x - x*x*x*x + 5; };\nboard.create('functiongraph', [f, -1.2, 4.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 32], {name: 'Max(3,32)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, 5], {name: 'Inflection(0,5)', size: 3, color: 'red', label: {autoPosition: false, offset: [-110, -5]}});\nboard.create('point', [2, 21], {name: 'Inflection(2,21)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -537,7 +587,12 @@ export const Y12A_CH3E_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-1, 35, 4, -5],
+        "boundingbox": [
+          -1,
+          35,
+          4,
+          -5
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.8,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2], [0,32]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -1.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 30, 'y'], {fontSize: 14});\nvar f = function(x) { return 3*x*x*x*x - 16*x*x*x + 24*x*x + 10; };\nboard.create('functiongraph', [f, -0.5, 3.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 10], {name: 'Min(0,10)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.create('point', [2, 26], {name: 'Inflection(2,26)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0.67, 16.52], {name: 'Inflection(0.67, 16.52)', size: 3, color: 'red', label: {autoPosition: false, offset: [-160, 5]}});\nboard.unsuspendUpdate();"
       }
     }
@@ -623,7 +678,12 @@ export const Y12A_CH3E_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-6, 3, 6, -3],
+        "boundingbox": [
+          -6,
+          3,
+          6,
+          -3
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.2, -0.3, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 2.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 2 / (x*x - 9); };\nboard.create('functiongraph', [f, -6, -3.05], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [f, -2.95, 2.95], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [f, 3.05, 6], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('line', [[-3, -1], [-3, 1]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('line', [[3, -1], [3, 1]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('point', [0, -0.22], {name: 'Max(0,-2/9)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('text', [-3.5, 1.5, 'x=-3'], {fontSize: 10, strokeColor: 'gray'});\nboard.create('text', [3.1, 1.5, 'x=3'], {fontSize: 10, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
       }
     }
@@ -717,7 +777,12 @@ export const Y12A_CH3E_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-6, 4, 6, -4],
+        "boundingbox": [
+          -6,
+          4,
+          6,
+          -4
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.2, -0.3, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 3.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 2*x / (x*x - 9); };\nboard.create('functiongraph', [f, -6, -3.05], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [f, -2.95, 2.95], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [f, 3.05, 6], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('line', [[-3, -1], [-3, 1]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('line', [[3, -1], [3, 1]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('point', [0, 0], {name: 'Inflection(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.create('text', [-3.5, 2.5, 'x=-3'], {fontSize: 10, strokeColor: 'gray'});\nboard.create('text', [3.1, 2.5, 'x=3'], {fontSize: 10, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
       }
     }
@@ -780,7 +845,7 @@ export const Y12A_CH3E_QUESTIONS = [
       },
       {
         "explanation": "Set \\( y' = 0 \\) to find turning points.",
-        "workingOut": "\\frac{x^2-4}{x^2} = 0 \\implies x^2 = 4 \\implies x = \\pm 2 \\implies y(2)=4, \\, y(-2)=-4"
+        "workingOut": "\\frac{x^2-4}{x^2} = 0 \\implies x^2 = 4 \\implies x = \\pm 2 \\implies y(2)=4, y(-2)=-4"
       },
       {
         "explanation": "Use the second derivative to determine nature.",
@@ -799,7 +864,12 @@ export const Y12A_CH3E_QUESTIONS = [
       "jsxGraph": {
         "width": 350,
         "height": 250,
-        "boundingbox": [-6, 8, 6, -8],
+        "boundingbox": [
+          -6,
+          8,
+          6,
+          -8
+        ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-7.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.2, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 7.0, 'y'], {fontSize: 14});\nvar f = function(x) { return x + 4/x; };\nboard.create('functiongraph', [f, -6, -0.05], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [f, 0.05, 6], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('line', [[0, -1], [0, 1]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('line', [[-6, -6], [6, 6]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('point', [2, 4], {name: 'Min(2,4)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [-2, -4], {name: 'Max(-2,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-35, 15]}});\nboard.create('text', [3.5, 4.2, 'y=x'], {fontSize: 10, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
       }
     }

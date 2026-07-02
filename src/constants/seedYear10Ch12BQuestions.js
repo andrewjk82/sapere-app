@@ -11,7 +11,7 @@ export const Y10_CH12B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the given information: the hypotenuse is \\(10\\), the opposite side is \\(x\\), and the angle is \\(30^\\circ\\).",
-        "workingOut": "\\theta = 30^\\circ, \\mathrm{Opposite} = x, \\mathrm{Hypotenuse} = 10"
+        "workingOut": "\\theta = 30^\\circ, mathrm{Opposite} = x, mathrm{Hypotenuse} = 10"
       },
       {
         "explanation": "Set up the sine ratio equation.",
@@ -102,7 +102,7 @@ export const Y10_CH12B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the given information: the hypotenuse is \\(12\\), the adjacent side to the \\(45^\\circ\\) angle is \\(x\\).",
-        "workingOut": "\\theta = 45^\\circ, \\mathrm{Adjacent} = x, \\mathrm{Hypotenuse} = 12"
+        "workingOut": "\\theta = 45^\\circ, mathrm{Adjacent} = x, mathrm{Hypotenuse} = 12"
       },
       {
         "explanation": "Set up the cosine ratio equation.",
@@ -193,7 +193,7 @@ export const Y10_CH12B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the given information: the hypotenuse is \\(12\\), the opposite side is \\(x\\), and the angle is \\(60^\\circ\\).",
-        "workingOut": "\\theta = 60^\\circ, \\mathrm{Opposite} = x, \\mathrm{Hypotenuse} = 12"
+        "workingOut": "\\theta = 60^\\circ, mathrm{Opposite} = x, mathrm{Hypotenuse} = 12"
       },
       {
         "explanation": "Set up the sine ratio equation.",
@@ -284,7 +284,7 @@ export const Y10_CH12B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the given information: the opposite side is \\(4\\), the adjacent side is \\(x\\), and the angle is \\(30^\\circ\\).",
-        "workingOut": "\\theta = 30^\\circ, \\mathrm{Opposite} = 4, \\mathrm{Adjacent} = x"
+        "workingOut": "\\theta = 30^\\circ, mathrm{Opposite} = 4, mathrm{Adjacent} = x"
       },
       {
         "explanation": "Set up the tangent ratio equation.",
@@ -375,7 +375,7 @@ export const Y10_CH12B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize that this is an equilateral triangle with all sides equal to \\(8\\) m.",
-        "workingOut": "\\mathrm{Base} = 8, \\mathrm{Sides} = 8"
+        "workingOut": "\\mathrm{Base} = 8, mathrm{Sides} = 8"
       },
       {
         "explanation": "The altitude \\(x\\) bisects the base, creating a right-angled triangle with a base of \\(4\\) m and hypotenuse of \\(8\\) m.",
@@ -642,7 +642,7 @@ export const Y10_CH12B_QUESTIONS = [
       },
       {
         "explanation": "In \\(\\triangle AOB\\), the hypotenuse \\(AB = 10\\), and \\(\\angle ABO = 30^\\circ\\). We can use trigonometry to find \\(AO\\) and \\(BO\\).",
-        "workingOut": "\\sin(30^\\circ) = \\frac{AO}{10}, \\cos(30^\\circ) = \\frac{BO}{10}"
+        "workingOut": "\\sin(30^\\circ) = \\frac{AO}{10}, cos(30^\\circ) = \\frac{BO}{10}"
       },
       {
         "explanation": "Calculate the exact length of \\(AO\\).",
@@ -1111,11 +1111,11 @@ export const Y10_CH12B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let the altitude be \\(h\\). In the left triangle, express \\(h\\) and the base \\(d_1\\) in terms of \\(x\\).",
-        "workingOut": "h = x \\sin(60^\\circ) = x\\frac{\\sqrt{3}}{2}, \\quad d_1 = x \\cos(60^\\circ) = \\frac{x}{2}"
+        "workingOut": "h = x \\sin(60^\\circ) = x\\frac{\\sqrt{3}}{2}, quad d_1 = x \\cos(60^\\circ) = \\frac{x}{2}"
       },
       {
         "explanation": "In the right triangle, express \\(h\\) and the base \\(d_2\\) in terms of \\(a\\).",
-        "workingOut": "h = a \\sin(30^\\circ) = \\frac{a}{2}, \\quad d_2 = a \\cos(30^\\circ) = a\\frac{\\sqrt{3}}{2}"
+        "workingOut": "h = a \\sin(30^\\circ) = \\frac{a}{2}, quad d_2 = a \\cos(30^\\circ) = a\\frac{\\sqrt{3}}{2}"
       },
       {
         "explanation": "Equate the expressions for \\(h\\) to find a relationship between \\(a\\) and \\(x\\).",

@@ -1397,7 +1397,7 @@ export const Y11_CH6E_QUESTIONS = [
       },
       {
         "explanation": "Find cosine and sine.",
-        "workingOut": "\\cos \\theta = -\\frac{5}{13}, \\quad \\sin \\theta = \\frac{12}{13}"
+        "workingOut": "\\cos \\theta = -\\frac{5}{13}, quad \\sin \\theta = \\frac{12}{13}"
       },
       {
         "explanation": "Calculate tangent.",
@@ -1475,7 +1475,7 @@ export const Y11_CH6E_QUESTIONS = [
       },
       {
         "explanation": "Find sine and cosine.",
-        "workingOut": "\\sin B = \\frac{2}{5}, \\quad \\cos B = -\\frac{\\sqrt{21}}{5}"
+        "workingOut": "\\sin B = \\frac{2}{5}, quad \\cos B = -\\frac{\\sqrt{21}}{5}"
       },
       {
         "explanation": "Calculate tangent.",
@@ -1501,7 +1501,7 @@ export const Y11_CH6E_QUESTIONS = [
       },
       {
         "explanation": "Find cosine and sine.",
-        "workingOut": "\\cos \\theta = -\\frac{1}{\\sqrt{3}}, \\quad \\sin \\theta = -\\frac{\\sqrt{2}}{\\sqrt{3}}"
+        "workingOut": "\\cos \\theta = -\\frac{1}{\\sqrt{3}}, quad \\sin \\theta = -\\frac{\\sqrt{2}}{\\sqrt{3}}"
       },
       {
         "explanation": "Calculate cotangent.",

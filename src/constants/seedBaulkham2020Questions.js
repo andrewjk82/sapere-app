@@ -1181,7 +1181,7 @@ export const BAULKHAM_2020_QUESTIONS = [
       },
       {
         "explanation": "Asymptotes: \\(x=4\\) (vertical), \\(y=-1\\) (horizontal).",
-        "workingOut": "x=4,\\quad y=-1"
+        "workingOut": "x=4, quad y=-1"
       },
       {
         "explanation": "Sketch with both branches correctly placed.",
@@ -1238,7 +1238,7 @@ export const BAULKHAM_2020_QUESTIONS = [
         "workingOut": "y=\\frac{1}{x+2}+3"
       },
       {
-        "explanation": "\\(y\\)-int: \\((0,\\frac{7}{2})\\).",
+        "explanation": "\\(y\\)-int: \\((0, frac{7}{2})\\).",
         "workingOut": "y=\\frac{1}{2}+3=\\frac{7}{2}"
       },
       {
@@ -1293,7 +1293,7 @@ export const BAULKHAM_2020_QUESTIONS = [
       },
       {
         "explanation": "All solutions.",
-        "workingOut": "x=-1,\\ 1,\\ 2"
+        "workingOut": "x=-1, 1, 2"
       }
     ]
   },
@@ -1360,10 +1360,10 @@ export const BAULKHAM_2020_QUESTIONS = [
     "a": "$f(x)=2x(1-x)$: parabola opening down, $x$-intercepts 0 and 1, vertex at $(\\frac{1}{2},\\frac{1}{2})$. $g(x)$: line with gradient 1, $y$-intercept $-1$. Intersection points at $x=-\\frac{1}{2}$ and $x=1$.",
     "opts": [],
     "h": "Find $x$-intercepts, vertex for parabola; use gradient-intercept form for the line.",
-    "s": "$f$: parabola vertex $(\\frac{1}{2},\\frac{1}{2})$, passes through $(0,0)$ and $(1,0)$. $g$: line through $(0,-1)$ and $(1,0)$. Intersections at $x=-\\frac{1}{2}$ and $x=1$.",
+    "s": "$f$: parabola vertex $(\\frac{1}{2}, frac{1}{2})$, passes through $(0,0)$ and $(1,0)$. $g$: line through $(0,-1)$ and $(1,0)$. Intersections at $x=-\\frac{1}{2}$ and $x=1$.",
     "solutionSteps": [
       {
-        "explanation": "\\(f(x)=2x(1-x)\\): \\(x\\)-ints at 0,1; vertex \\((\\frac{1}{2},\\frac{1}{2})\\).",
+        "explanation": "\\(f(x)=2x(1-x)\\): \\(x\\)-ints at 0,1; vertex \\((\\frac{1}{2}, frac{1}{2})\\).",
         "workingOut": "f: \\text{ downward parabola}"
       },
       {
@@ -1559,7 +1559,7 @@ export const BAULKHAM_2020_QUESTIONS = [
       },
       {
         "explanation": "Interpret.",
-        "workingOut": "|r|\\approx 1,\\ r>0 \\Rightarrow \\text{strong positive correlation}"
+        "workingOut": "|r|\\approx 1, r>0 \\Rightarrow \\text{strong positive correlation}"
       }
     ]
   },
@@ -1580,7 +1580,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Run linear regression on the data.",
-        "workingOut": "A=-8.2368,\\quad B=0.93203"
+        "workingOut": "A=-8.2368, quad B=0.93203"
       },
       {
         "explanation": "Write the equation.",
@@ -1676,7 +1676,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "a": "$(1, \\ln 2)$ and $(-1, \\ln 2)$",
     "opts": [],
     "h": "Set $f''(x)=0$ and verify concavity changes.",
-    "s": "$f''(x)=\\dfrac{2-2x^2}{(x^2+1)^2}=0 \\Rightarrow 2-2x^2=0 \\Rightarrow x=\\pm1$. $f(\\pm1)=\\ln 2$. Concavity changes at $x=\\pm1$ (check sign table). Points of inflection: $(1,\\ln 2)$ and $(-1,\\ln 2)$.",
+    "s": "$f''(x)=\\dfrac{2-2x^2}{(x^2+1)^2}=0 \\Rightarrow 2-2x^2=0 \\Rightarrow x=\\pm1$. $f(\\pm1)=\\ln 2$. Concavity changes at $x=\\pm1$ (check sign table). Points of inflection: $(1, ln 2)$ and $(-1, ln 2)$.",
     "solutionSteps": [
       {
         "explanation": "Set \\(f''(x)=0\\).",
@@ -1688,7 +1688,7 @@ export const BAULKHAM_2020_QUESTIONS = [
       },
       {
         "explanation": "Verify concavity changes at \\(x=\\pm1\\) (check sign of \\(f''\\)).",
-        "workingOut": "\\text{POI at }(1,\\ln2)\\text{ and }(-1,\\ln2)"
+        "workingOut": "\\text{POI at }(1, ln2)\\text{ and }(-1, ln2)"
       }
     ]
   },
@@ -1705,19 +1705,19 @@ export const BAULKHAM_2020_QUESTIONS = [
     "a": "Even function (symmetric about $y$-axis). Minimum at $(0,0)$. Points of inflection at $(\\pm1,\\ln2)$. Curve increases for $x>0$, decreases for $x<0$. No $x$-intercepts other than origin. Concave up for $|x|<1$, concave down for $|x|>1$. $y\\to\\infty$ as $x\\to\\pm\\infty$.",
     "opts": [],
     "h": "Even function. Plot minimum at origin, inflection points at $x=\\pm1$, and note the shape.",
-    "s": "Symmetric about $y$-axis. Min at $(0,0)$, POI at $(\\pm1,\\ln2\\approx0.69)$. Concave up between the POIs, concave down outside.",
+    "s": "Symmetric about $y$-axis. Min at $(0,0)$, POI at $(\\pm1, ln2\\approx0.69)$. Concave up between the POIs, concave down outside.",
     "solutionSteps": [
       {
         "explanation": "Even function: symmetric about \\(y\\)-axis.",
         "workingOut": "f(-x)=f(x)"
       },
       {
-        "explanation": "Min at \\((0,0)\\), POI at \\((\\pm1,\\ln2)\\).",
+        "explanation": "Min at \\((0,0)\\), POI at \\((\\pm1, ln2)\\).",
         "workingOut": "\\text{Plot key points}"
       },
       {
         "explanation": "Sketch smooth curve passing through all features.",
-        "workingOut": "\\text{Concave up }|x|<1,\\text{ concave down }|x|>1"
+        "workingOut": "\\text{Concave up }|x|<1, text{ concave down }|x|>1"
       }
     ]
   },
@@ -1879,7 +1879,7 @@ export const BAULKHAM_2020_QUESTIONS = [
       },
       {
         "explanation": "\\(x\\)-intercepts: \\(2x-\\pi/3=0\\) or \\(\\pi\\).",
-        "workingOut": "x=\\frac{\\pi}{6},\\quad x=\\frac{2\\pi}{3}"
+        "workingOut": "x=\\frac{\\pi}{6}, quad x=\\frac{2\\pi}{3}"
       }
     ]
   },
@@ -1925,15 +1925,15 @@ export const BAULKHAM_2020_QUESTIONS = [
     "a": "Amplitude $=3$; period $=\\pi$; $x$-intercepts at $x=0,\\dfrac{\\pi}{2},\\pi$",
     "opts": [],
     "h": "Amplitude $=|A|$, period $=2\\pi/n$. $x$-ints when $\\sin(2x)=0$.",
-    "s": "Amplitude $=3$, period $=\\pi$. $\\sin(2x)=0\\Rightarrow 2x=0,\\pi,2\\pi\\Rightarrow x=0,\\pi/2,\\pi$.",
+    "s": "Amplitude $=3$, period $=\\pi$. $\\sin(2x)=0\\Rightarrow 2x=0, pi,2\\pi\\Rightarrow x=0, pi/2, pi$.",
     "solutionSteps": [
       {
         "explanation": "Amplitude = 3, period = \\(\\pi\\).",
-        "workingOut": "\\text{Amplitude}=3,\\quad \\text{Period}=\\pi"
+        "workingOut": "\\text{Amplitude}=3, quad \\text{Period}=\\pi"
       },
       {
         "explanation": "\\(x\\)-intercepts.",
-        "workingOut": "x=0,\\frac{\\pi}{2},\\pi"
+        "workingOut": "x=0, frac{\\pi}{2}, pi"
       }
     ]
   },
@@ -2187,7 +2187,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "source": "Baulkham Hills 2020 Trial Q15(b)(ii)",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Show that the coordinates of $P$ are $\\left(\\dfrac{2+m}{2m},\\, \\dfrac{2+m}{2}\\right)$.",
+    "q": "Show that the coordinates of $P$ are $\\left(\\dfrac{2+m}{2m},\\, dfrac{2+m}{2}\\right)$.",
     "a": "Gradient of tangent at $P$: $y'=\\frac{2}{2x-1}=m$ → $2x-1=\\frac{2}{m}$ → $x=\\frac{1}{m}+\\frac{1}{2}=\\frac{2+m}{2m}$. $y$-coordinate: $y=mx=m\\cdot\\frac{2+m}{2m}=\\frac{2+m}{2}$. ✓",
     "opts": [],
     "h": "Gradient of $y=\\ln(2x-1)$ is $\\frac{2}{2x-1}$. Set equal to $m$ (gradient of line) to find $x$-coordinate of $P$.",
@@ -2420,7 +2420,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "In \\(\\triangle OBM\\): \\(\\sin\\theta=BM\\), \\(\\cos\\theta=OM\\).",
-        "workingOut": "BC=2\\sin\\theta,\\quad AM=1+\\cos\\theta"
+        "workingOut": "BC=2\\sin\\theta, quad AM=1+\\cos\\theta"
       },
       {
         "explanation": "Area of \\(\\triangle ABC\\).",

@@ -410,7 +410,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
-        "workingOut": "c = 0, \\frac{1}{3}"
+        "workingOut": "c = 0, frac{1}{3}"
       }
     ],
     "graphData": null
@@ -488,7 +488,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
-        "workingOut": "p = 0, \\frac{7}{3}"
+        "workingOut": "p = 0, frac{7}{3}"
       }
     ],
     "graphData": null
@@ -514,7 +514,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
-        "workingOut": "q = 0, \\frac{3}{5}"
+        "workingOut": "q = 0, frac{3}{5}"
       }
     ],
     "graphData": null
@@ -1060,7 +1060,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
-        "workingOut": "b = 2, \\frac{1}{2}"
+        "workingOut": "b = 2, frac{1}{2}"
       }
     ],
     "graphData": null
@@ -1086,7 +1086,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
-        "workingOut": "z = 1, \\frac{1}{5}"
+        "workingOut": "z = 1, frac{1}{5}"
       }
     ],
     "graphData": null
@@ -1294,7 +1294,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
-        "workingOut": "p = 6, \\frac{1}{6}"
+        "workingOut": "p = 6, frac{1}{6}"
       }
     ],
     "graphData": null
@@ -1320,7 +1320,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
       },
       {
         "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
-        "workingOut": "q = 2, \\frac{4}{5}"
+        "workingOut": "q = 2, frac{4}{5}"
       }
     ],
     "graphData": null

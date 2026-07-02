@@ -675,7 +675,7 @@ export const Y8_CH11A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Multiply both terms inside by \\(-1\\).",
-        "workingOut": "-1 \\times 12 = -12, \\quad -1 \\times \\frac{1}{5}y = -\\frac{1}{5}y"
+        "workingOut": "-1 \\times 12 = -12, quad -1 \\times \\frac{1}{5}y = -\\frac{1}{5}y"
       },
       {
         "explanation": "Arrange the terms with the variable first.",

@@ -78,7 +78,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = x^2, \\quad B = \\frac{1}{x^2}\\)",
+        "workingOut": "\\(A = x^2, quad B = \\frac{1}{x^2}\\)",
         "graphData": null
       },
       {
@@ -485,7 +485,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(2a\\) and B = \\(3b\\).",
-        "workingOut": "\\(A = 2a, \\quad B = 3b\\)",
+        "workingOut": "\\(A = 2a, quad B = 3b\\)",
         "graphData": null
       },
       {
@@ -715,7 +715,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = a^2, \\quad B = \\frac{3}{a^2}\\)",
+        "workingOut": "\\(A = a^2, quad B = \\frac{3}{a^2}\\)",
         "graphData": null
       },
       {
@@ -983,7 +983,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(2k\\) and B = \\(5\\).",
-        "workingOut": "\\(A = 2k, \\quad B = 5\\)",
+        "workingOut": "\\(A = 2k, quad B = 5\\)",
         "graphData": null
       },
       {
@@ -1074,7 +1074,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = 3a, \\quad B = \\frac{1}{3a}\\)",
+        "workingOut": "\\(A = 3a, quad B = \\frac{1}{3a}\\)",
         "graphData": null
       },
       {
@@ -1165,7 +1165,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(x\\) and B = \\(2y\\).",
-        "workingOut": "\\(A = x, \\quad B = 2y\\)",
+        "workingOut": "\\(A = x, quad B = 2y\\)",
         "graphData": null
       },
       {
@@ -1256,7 +1256,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = p^2, \\quad B = \\frac{4}{p^2}\\)",
+        "workingOut": "\\(A = p^2, quad B = \\frac{4}{p^2}\\)",
         "graphData": null
       },
       {
@@ -1304,7 +1304,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = 3t^2, \\quad B = \\frac{1}{2t^2}\\)",
+        "workingOut": "\\(A = 3t^2, quad B = \\frac{1}{2t^2}\\)",
         "graphData": null
       },
       {
@@ -1529,7 +1529,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(a^2\\) and B = \\(b\\).",
-        "workingOut": "\\(A = a^2, \\quad B = b\\)",
+        "workingOut": "\\(A = a^2, quad B = b\\)",
         "graphData": null
       },
       {
@@ -1577,7 +1577,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = m^2, \\quad B = \\frac{2}{m^2}\\)",
+        "workingOut": "\\(A = m^2, quad B = \\frac{2}{m^2}\\)",
         "graphData": null
       },
       {
@@ -1893,7 +1893,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(t\\) and B = \\(5\\).",
-        "workingOut": "\\(A = t, \\quad B = 5\\)",
+        "workingOut": "\\(A = t, quad B = 5\\)",
         "graphData": null
       },
       {
@@ -2032,7 +2032,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = 4m, \\quad B = \\frac{1}{4m}\\)",
+        "workingOut": "\\(A = 4m, quad B = \\frac{1}{4m}\\)",
         "graphData": null
       },
       {
@@ -2128,7 +2128,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(x^2\\) and B = \\(1\\).",
-        "workingOut": "\\(A = x^2, \\quad B = 1\\)",
+        "workingOut": "\\(A = x^2, quad B = 1\\)",
         "graphData": null
       },
       {
@@ -2267,7 +2267,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = 5x, \\quad B = \\frac{1}{5x}\\)",
+        "workingOut": "\\(A = 5x, quad B = \\frac{1}{5x}\\)",
         "graphData": null
       },
       {
@@ -2626,7 +2626,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(3m\\) and B = \\(2\\).",
-        "workingOut": "\\(A = 3m, \\quad B = 2\\)",
+        "workingOut": "\\(A = 3m, quad B = 2\\)",
         "graphData": null
       },
       {
@@ -3268,7 +3268,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = y^4, \\quad B = \\frac{1}{y^4}\\)",
+        "workingOut": "\\(A = y^4, quad B = \\frac{1}{y^4}\\)",
         "graphData": null
       },
       {
@@ -3675,7 +3675,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = x^3, \\quad B = \\frac{2}{x^3}\\)",
+        "workingOut": "\\(A = x^3, quad B = \\frac{2}{x^3}\\)",
         "graphData": null
       },
       {
@@ -3771,7 +3771,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = x^2, \\quad B = \\frac{1}{x^2}\\)",
+        "workingOut": "\\(A = x^2, quad B = \\frac{1}{x^2}\\)",
         "graphData": null
       },
       {
@@ -4527,7 +4527,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(x\\) and B = \\(3\\).",
-        "workingOut": "\\(A = x, \\quad B = 3\\)",
+        "workingOut": "\\(A = x, quad B = 3\\)",
         "graphData": null
       },
       {
@@ -4901,7 +4901,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(y\\) and B = \\(1\\).",
-        "workingOut": "\\(A = y, \\quad B = 1\\)",
+        "workingOut": "\\(A = y, quad B = 1\\)",
         "graphData": null
       },
       {
@@ -5404,7 +5404,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(a\\) and B = \\(4\\).",
-        "workingOut": "\\(A = a, \\quad B = 4\\)",
+        "workingOut": "\\(A = a, quad B = 4\\)",
         "graphData": null
       },
       {
@@ -5945,7 +5945,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(x\\) and B = \\(2\\).",
-        "workingOut": "\\(A = x, \\quad B = 2\\)",
+        "workingOut": "\\(A = x, quad B = 2\\)",
         "graphData": null
       },
       {
@@ -5993,7 +5993,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(4y\\) and B = \\(3\\).",
-        "workingOut": "\\(A = 4y, \\quad B = 3\\)",
+        "workingOut": "\\(A = 4y, quad B = 3\\)",
         "graphData": null
       },
       {
@@ -6271,7 +6271,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = 2x, \\quad B = \\frac{3}{2x}\\)",
+        "workingOut": "\\(A = 2x, quad B = \\frac{3}{2x}\\)",
         "graphData": null
       },
       {
@@ -7009,7 +7009,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = x^2, \\quad B = \\frac{5}{x^2}\\)",
+        "workingOut": "\\(A = x^2, quad B = \\frac{5}{x^2}\\)",
         "graphData": null
       },
       {
@@ -7421,7 +7421,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(2x\\) and B = \\(1\\).",
-        "workingOut": "\\(A = 2x, \\quad B = 1\\)",
+        "workingOut": "\\(A = 2x, quad B = 1\\)",
         "graphData": null
       },
       {
@@ -7656,7 +7656,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(p\\) and B = \\(q\\).",
-        "workingOut": "\\(A = p, \\quad B = q\\)",
+        "workingOut": "\\(A = p, quad B = q\\)",
         "graphData": null
       },
       {
@@ -7977,7 +7977,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify that the expression is in the form \\((A \\pm B)(A^2 \\mp AB + B^2)\\) with A = \\(3u\\) and B = \\(v\\).",
-        "workingOut": "\\(A = 3u, \\quad B = v\\)",
+        "workingOut": "\\(A = 3u, quad B = v\\)",
         "graphData": null
       },
       {
@@ -8336,7 +8336,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = 2a^2, \\quad B = \\frac{3}{a^2}\\)",
+        "workingOut": "\\(A = 2a^2, quad B = \\frac{3}{a^2}\\)",
         "graphData": null
       },
       {
@@ -8700,7 +8700,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify A and B for expansion, then apply the formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\).",
-        "workingOut": "\\(A = y^3, \\quad B = \\frac{1}{y^3}\\)",
+        "workingOut": "\\(A = y^3, quad B = \\frac{1}{y^3}\\)",
         "graphData": null
       },
       {
@@ -9406,7 +9406,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 2x^{2}, \\quad B = \\frac{1}{x^{2}}\\)",
+        "workingOut": "\\(A = 2x^{2}, quad B = \\frac{1}{x^{2}}\\)",
         "graphData": null
       },
       {
@@ -9450,7 +9450,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 3x^{3}, \\quad B = \\frac{2}{x^{3}}\\)",
+        "workingOut": "\\(A = 3x^{3}, quad B = \\frac{2}{x^{3}}\\)",
         "graphData": null
       },
       {
@@ -9494,7 +9494,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 4x^{4}, \\quad B = \\frac{3}{x^{4}}\\)",
+        "workingOut": "\\(A = 4x^{4}, quad B = \\frac{3}{x^{4}}\\)",
         "graphData": null
       },
       {
@@ -9538,7 +9538,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 5x^{5}, \\quad B = \\frac{4}{x^{5}}\\)",
+        "workingOut": "\\(A = 5x^{5}, quad B = \\frac{4}{x^{5}}\\)",
         "graphData": null
       },
       {
@@ -9582,7 +9582,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 6x^{6}, \\quad B = \\frac{5}{x^{6}}\\)",
+        "workingOut": "\\(A = 6x^{6}, quad B = \\frac{5}{x^{6}}\\)",
         "graphData": null
       },
       {
@@ -9626,7 +9626,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 7x^{7}, \\quad B = \\frac{6}{x^{7}}\\)",
+        "workingOut": "\\(A = 7x^{7}, quad B = \\frac{6}{x^{7}}\\)",
         "graphData": null
       },
       {
@@ -9670,7 +9670,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 8x^{8}, \\quad B = \\frac{7}{x^{8}}\\)",
+        "workingOut": "\\(A = 8x^{8}, quad B = \\frac{7}{x^{8}}\\)",
         "graphData": null
       },
       {
@@ -9714,7 +9714,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 9x^{9}, \\quad B = \\frac{8}{x^{9}}\\)",
+        "workingOut": "\\(A = 9x^{9}, quad B = \\frac{8}{x^{9}}\\)",
         "graphData": null
       },
       {
@@ -9758,7 +9758,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 10x^{10}, \\quad B = \\frac{9}{x^{10}}\\)",
+        "workingOut": "\\(A = 10x^{10}, quad B = \\frac{9}{x^{10}}\\)",
         "graphData": null
       },
       {
@@ -9802,7 +9802,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cubic binomial expansion identity: \\((A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\\).",
-        "workingOut": "\\(A = 11x^{11}, \\quad B = \\frac{10}{x^{11}}\\)",
+        "workingOut": "\\(A = 11x^{11}, quad B = \\frac{10}{x^{11}}\\)",
         "graphData": null
       },
       {
@@ -10286,7 +10286,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 2x^2, \\quad B = 1y^2\\)",
+        "workingOut": "\\(A = 2x^2, quad B = 1y^2\\)",
         "graphData": null
       },
       {
@@ -10330,7 +10330,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 3x^2, \\quad B = 2y^2\\)",
+        "workingOut": "\\(A = 3x^2, quad B = 2y^2\\)",
         "graphData": null
       },
       {
@@ -10374,7 +10374,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 4x^2, \\quad B = 3y^2\\)",
+        "workingOut": "\\(A = 4x^2, quad B = 3y^2\\)",
         "graphData": null
       },
       {
@@ -10418,7 +10418,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 5x^2, \\quad B = 4y^2\\)",
+        "workingOut": "\\(A = 5x^2, quad B = 4y^2\\)",
         "graphData": null
       },
       {
@@ -10462,7 +10462,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 6x^2, \\quad B = 5y^2\\)",
+        "workingOut": "\\(A = 6x^2, quad B = 5y^2\\)",
         "graphData": null
       },
       {
@@ -10506,7 +10506,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 7x^2, \\quad B = 6y^2\\)",
+        "workingOut": "\\(A = 7x^2, quad B = 6y^2\\)",
         "graphData": null
       },
       {
@@ -10550,7 +10550,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 8x^2, \\quad B = 7y^2\\)",
+        "workingOut": "\\(A = 8x^2, quad B = 7y^2\\)",
         "graphData": null
       },
       {
@@ -10594,7 +10594,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 9x^2, \\quad B = 8y^2\\)",
+        "workingOut": "\\(A = 9x^2, quad B = 8y^2\\)",
         "graphData": null
       },
       {
@@ -10638,7 +10638,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 10x^2, \\quad B = 9y^2\\)",
+        "workingOut": "\\(A = 10x^2, quad B = 9y^2\\)",
         "graphData": null
       },
       {
@@ -10682,7 +10682,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the expression pattern as the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\).",
-        "workingOut": "\\(A = 11x^2, \\quad B = 10y^2\\)",
+        "workingOut": "\\(A = 11x^2, quad B = 10y^2\\)",
         "graphData": null
       },
       {
@@ -11706,7 +11706,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{2}x, \\quad B = \\frac{3}{\\sqrt{2}x}\\)",
+        "workingOut": "\\(A = \\sqrt{2}x, quad B = \\frac{3}{\\sqrt{2}x}\\)",
         "graphData": null
       },
       {
@@ -11750,7 +11750,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{3}x, \\quad B = \\frac{4}{\\sqrt{3}x}\\)",
+        "workingOut": "\\(A = \\sqrt{3}x, quad B = \\frac{4}{\\sqrt{3}x}\\)",
         "graphData": null
       },
       {
@@ -11794,7 +11794,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{4}x, \\quad B = \\frac{5}{\\sqrt{4}x}\\)",
+        "workingOut": "\\(A = \\sqrt{4}x, quad B = \\frac{5}{\\sqrt{4}x}\\)",
         "graphData": null
       },
       {
@@ -11838,7 +11838,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{5}x, \\quad B = \\frac{6}{\\sqrt{5}x}\\)",
+        "workingOut": "\\(A = \\sqrt{5}x, quad B = \\frac{6}{\\sqrt{5}x}\\)",
         "graphData": null
       },
       {
@@ -11882,7 +11882,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{6}x, \\quad B = \\frac{7}{\\sqrt{6}x}\\)",
+        "workingOut": "\\(A = \\sqrt{6}x, quad B = \\frac{7}{\\sqrt{6}x}\\)",
         "graphData": null
       },
       {
@@ -11926,7 +11926,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{7}x, \\quad B = \\frac{8}{\\sqrt{7}x}\\)",
+        "workingOut": "\\(A = \\sqrt{7}x, quad B = \\frac{8}{\\sqrt{7}x}\\)",
         "graphData": null
       },
       {
@@ -11970,7 +11970,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{8}x, \\quad B = \\frac{9}{\\sqrt{8}x}\\)",
+        "workingOut": "\\(A = \\sqrt{8}x, quad B = \\frac{9}{\\sqrt{8}x}\\)",
         "graphData": null
       },
       {
@@ -12014,7 +12014,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{9}x, \\quad B = \\frac{10}{\\sqrt{9}x}\\)",
+        "workingOut": "\\(A = \\sqrt{9}x, quad B = \\frac{10}{\\sqrt{9}x}\\)",
         "graphData": null
       },
       {
@@ -12058,7 +12058,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{10}x, \\quad B = \\frac{11}{\\sqrt{10}x}\\)",
+        "workingOut": "\\(A = \\sqrt{10}x, quad B = \\frac{11}{\\sqrt{10}x}\\)",
         "graphData": null
       },
       {
@@ -12102,7 +12102,7 @@ export const Y11_CH1A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
-        "workingOut": "\\(A = \\sqrt{11}x, \\quad B = \\frac{12}{\\sqrt{11}x}\\)",
+        "workingOut": "\\(A = \\sqrt{11}x, quad B = \\frac{12}{\\sqrt{11}x}\\)",
         "graphData": null
       },
       {

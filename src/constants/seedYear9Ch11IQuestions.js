@@ -94,11 +94,11 @@ export const Y9_CH11I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Verify diagonals bisect each other by checking midpoints.",
-        "workingOut": "M_{AC} = (3, 4), \\quad M_{BD} = (3, 4) \\implies Parallelogram"
+        "workingOut": "M_{AC} = (3, 4), quad M_{BD} = (3, 4) \\implies Parallelogram"
       },
       {
         "explanation": "Find the lengths of the diagonals AC and BD.",
-        "workingOut": "AC = \\sqrt{40} = 2\\sqrt{10}, \\quad BD = \\sqrt{104} = 2\\sqrt{26}"
+        "workingOut": "AC = \\sqrt{40} = 2\\sqrt{10}, quad BD = \\sqrt{104} = 2\\sqrt{26}"
       }
     ],
     "graphData": null
@@ -134,7 +134,7 @@ export const Y9_CH11I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the intercepts of the original line.",
-        "workingOut": "x\\text{-intercept} = 4, \\quad y\\text{-intercept} = -3"
+        "workingOut": "x\\text{-intercept} = 4, quad y\\text{-intercept} = -3"
       },
       {
         "explanation": "Double the intercepts and apply intercept form.",
@@ -271,7 +271,7 @@ export const Y9_CH11I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define coordinate points.",
-        "workingOut": "B(-c, 0), \\quad C(c, 0), \\quad A(a, b), \\quad O(0,0)"
+        "workingOut": "B(-c, 0), quad C(c, 0), quad A(a, b), quad O(0,0)"
       },
       {
         "explanation": "Calculate LHS.",
@@ -330,15 +330,15 @@ export const Y9_CH11I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Place triangle on plane.",
-        "workingOut": "A(0, 0), \\quad C(c, 0), \\quad B(u, v)"
+        "workingOut": "A(0, 0), quad C(c, 0), quad B(u, v)"
       },
       {
         "explanation": "Find midpoints M and N.",
-        "workingOut": "M = \\left(\\frac{u}{2}, \\frac{v}{2}\\right), \\quad N = \\left(\\frac{u+c}{2}, \\frac{v}{2}\\right)"
+        "workingOut": "M = \\left(\\frac{u}{2}, frac{v}{2}\\right), quad N = \\left(\\frac{u+c}{2}, frac{v}{2}\\right)"
       },
       {
         "explanation": "Check gradient and length.",
-        "workingOut": "m_{MN} = 0 \\implies MN \\parallel AC, \\quad MN = \\frac{c}{2} = \\frac{1}{2}AC"
+        "workingOut": "m_{MN} = 0 \\implies MN \\parallel AC, quad MN = \\frac{c}{2} = \\frac{1}{2}AC"
       }
     ]
   },
@@ -406,11 +406,11 @@ export const Y9_CH11I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define trapezium vertices.",
-        "workingOut": "A(0, 0), \\quad B(a, 0), \\quad D(b, c), \\quad C(a-b, c)"
+        "workingOut": "A(0, 0), quad B(a, 0), quad D(b, c), quad C(a-b, c)"
       },
       {
         "explanation": "Verify diagonals lengths.",
-        "workingOut": "AC^2 = (a-b)^2 + c^2, \\quad BD^2 = (b-a)^2 + c^2 \\implies AC = BD"
+        "workingOut": "AC^2 = (a-b)^2 + c^2, quad BD^2 = (b-a)^2 + c^2 \\implies AC = BD"
       }
     ]
   },
@@ -427,7 +427,7 @@ export const Y9_CH11I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Define coordinates to avoid fractions.",
-        "workingOut": "A(0, 0), \\quad B(6a, 0), \\quad C(6u, 6v)"
+        "workingOut": "A(0, 0), quad B(6a, 0), quad C(6u, 6v)"
       },
       {
         "explanation": "Calculate division point G on medians.",

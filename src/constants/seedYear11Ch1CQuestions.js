@@ -1449,7 +1449,7 @@ export const Y11_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each quadratic expression using difference of squares.",
-        "workingOut": "\\(x^2 - 16 = (x - 4)(x + 4), \\quad x^2 - 1 = (x - 1)(x + 1)\\)",
+        "workingOut": "\\(x^2 - 16 = (x - 4)(x + 4), quad x^2 - 1 = (x - 1)(x + 1)\\)",
         "graphData": null
       },
       {
@@ -2464,7 +2464,7 @@ export const Y11_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each quadratic expression using difference of squares.",
-        "workingOut": "\\(x^2 - 4 = (x - 2)(x + 2), \\quad x^2 - 1 = (x - 1)(x + 1)\\)",
+        "workingOut": "\\(x^2 - 4 = (x - 2)(x + 2), quad x^2 - 1 = (x - 1)(x + 1)\\)",
         "graphData": null
       },
       {
@@ -2646,7 +2646,7 @@ export const Y11_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor each quadratic expression using difference of squares.",
-        "workingOut": "\\(x^2 - 9 = (x - 3)(x + 3), \\quad x^2 - 1 = (x - 1)(x + 1)\\)",
+        "workingOut": "\\(x^2 - 9 = (x - 3)(x + 3), quad x^2 - 1 = (x - 1)(x + 1)\\)",
         "graphData": null
       },
       {
@@ -3172,7 +3172,7 @@ export const Y11_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find a common denominator for the top and bottom fractions.",
-        "workingOut": "\\(\\text{Numerator: } \\frac{4(y+2) - 3(y+3)}{(y+3)(y+2)} = \\frac{y-1}{(y+3)(y+2)}, \\quad \\text{Denominator: } \\frac{6(y+2) - 5(y+3)}{(y+3)(y+2)} = \\frac{y-3}{(y+3)(y+2)}\\)",
+        "workingOut": "\\(\\text{Numerator: } \\frac{4(y+2) - 3(y+3)}{(y+3)(y+2)} = \\frac{y-1}{(y+3)(y+2)}, quad \\text{Denominator: } \\frac{6(y+2) - 5(y+3)}{(y+3)(y+2)} = \\frac{y-3}{(y+3)(y+2)}\\)",
         "graphData": null
       },
       {
@@ -4017,7 +4017,7 @@ export const Y11_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify the numerator and the denominator separately.",
-        "workingOut": "\\(\\text{Numerator: } \\frac{x+2-1}{x+2} = \\frac{x+1}{x+2}, \\quad \\text{Denominator: } \\frac{x+2+x+1}{(x+1)(x+2)} = \\frac{2x+3}{(x+1)(x+2)}\\)",
+        "workingOut": "\\(\\text{Numerator: } \\frac{x+2-1}{x+2} = \\frac{x+1}{x+2}, quad \\text{Denominator: } \\frac{x+2+x+1}{(x+1)(x+2)} = \\frac{2x+3}{(x+1)(x+2)}\\)",
         "graphData": null
       },
       {

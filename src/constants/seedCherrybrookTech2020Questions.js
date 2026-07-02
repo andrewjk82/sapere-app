@@ -81,7 +81,7 @@ export const CTHS_2020_QUESTIONS = [
       },
       {
         "explanation": "Write this in interval notation. The left endpoint \\(x=0\\) is included (closed bracket), and the right endpoint \\(x=2\\) is excluded (open bracket).",
-        "workingOut": "[0,\\, 2)"
+        "workingOut": "[0, 2)"
       }
     ]
   },
@@ -147,7 +147,7 @@ export const CTHS_2020_QUESTIONS = [
       },
       {
         "explanation": "Identify \\(a = 3\\) and \\(b = -1\\) in the expression \\(3X - 1\\).",
-        "workingOut": "a = 3,\\quad b = -1"
+        "workingOut": "a = 3, quad b = -1"
       },
       {
         "explanation": "Square the coefficient \\(a\\).",
@@ -180,7 +180,7 @@ export const CTHS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two factors for the product rule: let \\(u = 3x^4\\) and \\(v = (4-x)^3\\).",
-        "workingOut": "u = 3x^4,\\quad v = (4-x)^3"
+        "workingOut": "u = 3x^4, quad v = (4-x)^3"
       },
       {
         "explanation": "Differentiate \\(u\\) using the power rule.",
@@ -262,7 +262,7 @@ export const CTHS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write \\(g(x) = 2\\cos\\!\\left(\\frac{x}{2} + \\frac{\\pi}{3}\\right)\\) in standard form \\(a\\cos(bx + c)\\). Identify \\(a = 2\\), \\(b = \\frac{1}{2}\\), \\(c = \\frac{\\pi}{3}\\).",
-        "workingOut": "a = 2,\\quad b = \\tfrac{1}{2},\\quad c = \\tfrac{\\pi}{3}"
+        "workingOut": "a = 2, quad b = \\tfrac{1}{2}, quad c = \\tfrac{\\pi}{3}"
       },
       {
         "explanation": "The amplitude is \\(|a| = 2\\).",
@@ -370,7 +370,7 @@ export const CTHS_2020_QUESTIONS = [
       "$(-\\infty, A)$",
       "$(A, B)$",
       "$(B, C)$",
-      "$(C, \\infty)$"
+      "$(C, infty)$"
     ],
     "h": "$f'(x) < 0$ where the function is decreasing. $f''(x) > 0$ where the function is concave up. Find the interval where both hold simultaneously.",
     "s": "Between $B$ and $C$: the function is still decreasing ($f'<0$) but the concavity has changed from concave down to concave up at $B$ ($f''>0$). So the domain is $(B,C)$.",
@@ -381,11 +381,11 @@ export const CTHS_2020_QUESTIONS = [
       },
       {
         "explanation": "Identify where \\(f''(x) > 0\\): the function is concave up. \\(B\\) is the point of inflection, so concavity changes at \\(B\\). From the graph, the curve is concave up after \\(B\\) (transitioning from the decreasing-concave-down phase to the decreasing-concave-up phase).",
-        "workingOut": "f''(x) > 0 \\text{ on } (B, \\infty)"
+        "workingOut": "f''(x) > 0 \\text{ on } (B, infty)"
       },
       {
-        "explanation": "Find the intersection of the two intervals: \\((A,C) \\cap (B, \\infty) = (B, C)\\).",
-        "workingOut": "(A, C) \\cap (B, \\infty) = (B, C)"
+        "explanation": "Find the intersection of the two intervals: \\((A,C) \\cap (B, infty) = (B, C)\\).",
+        "workingOut": "(A, C) \\cap (B, infty) = (B, C)"
       },
       {
         "explanation": "The domain where both \\(f'(x) < 0\\) (decreasing) and \\(f''(x) > 0\\) (concave up) hold is \\((B, C)\\).",
@@ -421,7 +421,7 @@ export const CTHS_2020_QUESTIONS = [
       },
       {
         "explanation": "Take the 8th root of both sides. Since the index is even, there are two real solutions.",
-        "workingOut": "r = \\pm\\,\\sqrt[8]{65536}"
+        "workingOut": "r = \\pm\\, sqrt[8]{65536}"
       },
       {
         "explanation": "Evaluate \\(\\sqrt[8]{65536}\\). Note \\(4^8 = 65536\\).",
@@ -457,7 +457,7 @@ export const CTHS_2020_QUESTIONS = [
       },
       {
         "explanation": "Recall exact values: \\(\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}\\) and \\(\\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}\\).",
-        "workingOut": "\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2},\\quad \\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}"
+        "workingOut": "\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}, quad \\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}"
       },
       {
         "explanation": "Subtract the values and write as a single fraction over 2.",
@@ -521,7 +521,7 @@ export const CTHS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two factors for the product rule: \\(u = x^3\\) and \\(v = \\tan 2x\\).",
-        "workingOut": "u = x^3,\\quad v = \\tan 2x"
+        "workingOut": "u = x^3, quad v = \\tan 2x"
       },
       {
         "explanation": "Differentiate \\(u\\) using the power rule.",
@@ -676,11 +676,11 @@ export const CTHS_2020_QUESTIONS = [
         "workingOut": "u = 2 \\text{ rejected (out of range)}\\quad \\Rightarrow \\cos\\alpha = -\\frac{1}{2}"
       },
       {
-        "explanation": "Solve \\(\\cos\\alpha = -\\frac{1}{2}\\) in \\([0, \\pi]\\). The reference angle is \\(\\frac{\\pi}{3}\\). Since \\(\\cos\\) is negative in the 2nd quadrant, \\(\\alpha = \\pi - \\frac{\\pi}{3}\\).",
+        "explanation": "Solve \\(\\cos\\alpha = -\\frac{1}{2}\\) in \\([0, pi]\\). The reference angle is \\(\\frac{\\pi}{3}\\). Since \\(\\cos\\) is negative in the 2nd quadrant, \\(\\alpha = \\pi - \\frac{\\pi}{3}\\).",
         "workingOut": "\\alpha = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}"
       },
       {
-        "explanation": "Verify: \\(\\cos\\frac{2\\pi}{3} = -\\frac{1}{2}\\) ✓ and \\(\\frac{2\\pi}{3} \\in [0,\\pi]\\) ✓.",
+        "explanation": "Verify: \\(\\cos\\frac{2\\pi}{3} = -\\frac{1}{2}\\) ✓ and \\(\\frac{2\\pi}{3} \\in [0, pi]\\) ✓.",
         "workingOut": "\\alpha = \\frac{2\\pi}{3}"
       }
     ]
@@ -793,7 +793,7 @@ export const CTHS_2020_QUESTIONS = [
       },
       {
         "explanation": "At \\(x = -2\\): \\(y'' = 12(-2)+6 = -18 < 0\\) (concave down — local maximum). Find \\(y\\)-value: \\(y=2(-8)+3(4)-12(-2)-5=15\\).",
-        "workingOut": "x=-2:\\quad y''=-18<0 \\Rightarrow \\text{local max at }(-2,\\,15)"
+        "workingOut": "x=-2:\\quad y''=-18<0 \\Rightarrow \\text{local max at }(-2, 15)"
       },
       {
         "explanation": "At \\(x = 1\\): \\(y'' = 12(1)+6 = 18 > 0\\) (concave up — local minimum). Find \\(y\\)-value: \\(y=2+3-12-5=-12\\).",
@@ -801,10 +801,10 @@ export const CTHS_2020_QUESTIONS = [
       },
       {
         "explanation": "Find possible points of inflection by setting \\(y'' = 0\\): \\(12x+6=0 \\Rightarrow x=-\\frac{1}{2}\\). Verify concavity changes sign (it does, since \\(y''\\) is linear). Find \\(y\\)-value: \\(y=2(-\\frac{1}{8})+3(\\frac{1}{4})-12(-\\frac{1}{2})-5=-\\frac{1}{4}+\\frac{3}{4}+6-5=\\frac{3}{2}\\).",
-        "workingOut": "x=-\\tfrac{1}{2}:\\quad y=\\tfrac{3}{2} \\Rightarrow \\text{POI at }\\left(-\\tfrac{1}{2},\\,\\tfrac{3}{2}\\right)"
+        "workingOut": "x=-\\tfrac{1}{2}:\\quad y=\\tfrac{3}{2} \\Rightarrow \\text{POI at }\\left(-\\tfrac{1}{2},\\, tfrac{3}{2}\\right)"
       },
       {
-        "explanation": "Part (b): Sketch the curve using the key features: local max \\((-2,15)\\), POI \\((-\\frac{1}{2}, \\frac{3}{2})\\), local min \\((1,-12)\\), and \\(y\\)-intercept \\((0,-5)\\).",
+        "explanation": "Part (b): Sketch the curve using the key features: local max \\((-2,15)\\), POI \\((-\\frac{1}{2}, frac{3}{2})\\), local min \\((1,-12)\\), and \\(y\\)-intercept \\((0,-5)\\).",
         "workingOut": "y\\text{-intercept}: y=2(0)+3(0)-12(0)-5=-5"
       }
     ],
@@ -845,7 +845,7 @@ export const CTHS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Part (a): Rewrite as finding where \\(y=\\sin x\\) and \\(y = 1-\\frac{x}{4}\\) intersect. The line has \\(y\\)-intercept \\((0,1)\\) and slope \\(-\\frac{1}{4}\\).",
-        "workingOut": "y_1 = \\sin x,\\quad y_2 = 1 - \\frac{x}{4}"
+        "workingOut": "y_1 = \\sin x, quad y_2 = 1 - \\frac{x}{4}"
       },
       {
         "explanation": "The line starts at \\((0,1)\\) and decreases slowly. The sinusoidal curve oscillates between \\(-1\\) and \\(1\\). In the visible domain, the line cuts the sine curve exactly 3 times.",
@@ -873,7 +873,7 @@ export const CTHS_2020_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the numerator and denominator for the quotient rule: \\(u = e^{3x}\\) and \\(v = x+1\\).",
-        "workingOut": "u = e^{3x},\\quad v = x+1"
+        "workingOut": "u = e^{3x}, quad v = x+1"
       },
       {
         "explanation": "Differentiate \\(u = e^{3x}\\) using the chain rule: multiply by the derivative of the exponent.",
@@ -909,15 +909,15 @@ export const CTHS_2020_QUESTIONS = [
     "a": "(a) $f'(x)$: zero at $x=-3$, $x=-1$, $x=2$; positive on $(-\\infty,-3)$ and $(-1,2)$; negative on $(-3,-1)$ and $(2,\\infty)$.\n(b) $f(-x)$: reflection of $f(x)$ in the $y$-axis; local max at $x=3$, local min at $x=1$, decreasing for large positive $x$.",
     "opts": [],
     "h": "For (a): $f'(x) = 0$ at each stationary point; $f'(x)>0$ where $f$ is increasing; $f'(x)<0$ where $f$ is decreasing. For (b): reflect the graph in the $y$-axis (replace $x$ with $-x$).",
-    "s": "(a) $f'$ is zero at $x=-3,-1,2$; positive on $(-\\infty,-3)\\cup(-1,2)$; negative on $(-3,-1)\\cup(2,\\infty)$. (b) $f(-x)$ reflects $f$ in the $y$-axis: local max at $x=3$, local min at $x=1$, local max at $x=-2$.",
+    "s": "(a) $f'$ is zero at $x=-3,-1,2$; positive on $(-\\infty,-3)\\cup(-1,2)$; negative on $(-3,-1)\\cup(2, infty)$. (b) $f(-x)$ reflects $f$ in the $y$-axis: local max at $x=3$, local min at $x=1$, local max at $x=-2$.",
     "solutionSteps": [
       {
         "explanation": "Part (a): Identify where \\(f'(x) = 0\\): at the stationary points \\(x = -3\\), \\(x = -1\\), and \\(x = 2\\).",
         "workingOut": "f'(-3) = 0,\\; f'(-1) = 0,\\; f'(2) = 0"
       },
       {
-        "explanation": "Determine the sign of \\(f'\\): positive where \\(f\\) increases, negative where \\(f\\) decreases. The graph increases on \\((-\\infty,-3)\\) and \\((-1,2)\\); decreases on \\((-3,-1)\\) and \\((2,\\infty)\\).",
-        "workingOut": "f'>0 \\text{ on }(-\\infty,-3)\\cup(-1,2);\\quad f'<0 \\text{ on }(-3,-1)\\cup(2,\\infty)"
+        "explanation": "Determine the sign of \\(f'\\): positive where \\(f\\) increases, negative where \\(f\\) decreases. The graph increases on \\((-\\infty,-3)\\) and \\((-1,2)\\); decreases on \\((-3,-1)\\) and \\((2, infty)\\).",
+        "workingOut": "f'>0 \\text{ on }(-\\infty,-3)\\cup(-1,2);\\quad f'<0 \\text{ on }(-3,-1)\\cup(2, infty)"
       },
       {
         "explanation": "Sketch \\(f'(x)\\): a curve that is positive, dips to zero at \\(x=-3\\), goes negative, rises through zero at \\(x=-1\\), is positive again, then falls through zero at \\(x=2\\).",
@@ -1026,7 +1026,7 @@ export const CTHS_2020_QUESTIONS = [
         "workingOut": "h = \\frac{2-0}{4} = 0.5"
       },
       {
-        "explanation": "Set up the \\(x\\)-values at each endpoint: \\(x_0=0,\\, x_1=0.5,\\, x_2=1,\\, x_3=1.5,\\, x_4=2\\).",
+        "explanation": "Set up the \\(x\\)-values at each endpoint: \\(x_0=0, x_1=0.5, x_2=1, x_3=1.5, x_4=2\\).",
         "workingOut": "x = 0,\\; 0.5,\\; 1,\\; 1.5,\\; 2"
       },
       {
@@ -1347,7 +1347,7 @@ export const CTHS_2020_QUESTIONS = [
     "source": "Cherrybrook Tech 2020 Trial Q35",
     "type": "short_answer",
     "difficulty": "hard",
-    "q": "A swimming pool is to be emptied for maintenance. The quantity of water, $Q$ in litres, remaining in the pool at a time, $t$ minutes, is given by:\n$$Q(t) = 2000(25-t)^2, \\quad 0 \\leq t \\leq 25$$\n\n(a) At what rate (in litres/min) is the water being removed at any time $t$?\n\n(b) How long will it take to remove at least half of the water from the pool? Answer to the nearest minute.\n\n(c) At what time does the rate of flow of water from the pool reach 20 kL/minute?\n\n(d) Describe how the amount of water remaining in the pool changes as the pool empties. Mention how the rate itself changes in your answer.",
+    "q": "A swimming pool is to be emptied for maintenance. The quantity of water, $Q$ in litres, remaining in the pool at a time, $t$ minutes, is given by:\n$$Q(t) = 2000(25-t)^2, quad 0 \\leq t \\leq 25$$\n\n(a) At what rate (in litres/min) is the water being removed at any time $t$?\n\n(b) How long will it take to remove at least half of the water from the pool? Answer to the nearest minute.\n\n(c) At what time does the rate of flow of water from the pool reach 20 kL/minute?\n\n(d) Describe how the amount of water remaining in the pool changes as the pool empties. Mention how the rate itself changes in your answer.",
     "a": "(a) $4000(25-t)$ L/min\n(b) 8 minutes\n(c) $t = 20$ min\n(d) The water decreases at a decreasing rate (the rate of removal slows down as the pool empties).",
     "opts": [],
     "h": "For (a): differentiate $Q(t)$ and note the rate of removal is $-Q'(t)$. For (b): find when $Q(t) = \\frac{1}{2}Q(0)$. For (c): set $-Q'(t) = 20000$.",

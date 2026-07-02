@@ -29,7 +29,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "A conjugate is formed by changing the sign between the two terms of a binomial. Identify the two terms of \\(\\sqrt{3}-1\\): first term is \\(\\sqrt{3}\\), second is \\(1\\).",
-        "workingOut": "a = \\\\sqrt{3}, \\\\quad b = 1",
+        "workingOut": "a = \\\\sqrt{3}, quad b = 1",
         "graphData": null
       },
       {
@@ -81,7 +81,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two terms of \\(2\\sqrt{5}+3\\): first term is \\(2\\sqrt{5}\\), second term is \\(3\\).",
-        "workingOut": "a = 2\\\\sqrt{5}, \\\\quad b = 3",
+        "workingOut": "a = 2\\\\sqrt{5}, quad b = 3",
         "graphData": null
       },
       {
@@ -133,7 +133,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two terms of \\(\\sqrt{7}-\\sqrt{2}\\): first term is \\(\\sqrt{7}\\), second term is \\(\\sqrt{2}\\).",
-        "workingOut": "a = \\\\sqrt{7}, \\\\quad b = \\\\sqrt{2}",
+        "workingOut": "a = \\\\sqrt{7}, quad b = \\\\sqrt{2}",
         "graphData": null
       },
       {
@@ -185,7 +185,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two terms of \\(3\\sqrt{11}+4\\sqrt{6}\\): first term is \\(3\\sqrt{11}\\), second is \\(4\\sqrt{6}\\).",
-        "workingOut": "a = 3\\\\sqrt{11}, \\\\quad b = 4\\\\sqrt{6}",
+        "workingOut": "a = 3\\\\sqrt{11}, quad b = 4\\\\sqrt{6}",
         "graphData": null
       },
       {
@@ -242,7 +242,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Apply the difference of squares identity: \\((a-b)(a+b) = a^2-b^2\\). Identify \\(a = \\sqrt{3}\\) and \\(b = 1\\).",
-        "workingOut": "a^2 = (\\\\sqrt{3})^2 = 3, \\\\quad b^2 = 1^2 = 1",
+        "workingOut": "a^2 = (\\\\sqrt{3})^2 = 3, quad b^2 = 1^2 = 1",
         "graphData": null
       },
       {

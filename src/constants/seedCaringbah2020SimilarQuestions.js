@@ -80,8 +80,8 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "q": "For the function $f(x) = \\dfrac{x^3}{3} - 4x^2 + 3x + 5$, the gradient is $-10$ at two points. What are the values of the $x$-coordinates at these points?",
     "a": "1",
     "opts": [
-      "$-7,\\ 1$",
-      "$7,\\ 1$",
+      "$-7, 1$",
+      "$7, 1$",
       "$7,\\ -1$",
       "$-7,\\ -1$"
     ],
@@ -113,10 +113,10 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "q": "What is the domain of the function $f(x) = \\sqrt{x-1} + \\dfrac{1}{\\sqrt{3-x}}$?",
     "a": "1",
     "opts": [
-      "$(1,\\ 3)$",
-      "$[1,\\ 3)$",
-      "$(1,\\ 3]$",
-      "$[1,\\ 3]$"
+      "$(1, 3)$",
+      "$[1, 3)$",
+      "$(1, 3]$",
+      "$[1, 3]$"
     ],
     "h": "For $\\sqrt{x-1}$ need $x \\geq 1$. For $\\frac{1}{\\sqrt{3-x}}$ need $3-x > 0$. Combine both conditions.",
     "s": "$x-1 \\geq 0 \\Rightarrow x \\geq 1$. $3-x > 0 \\Rightarrow x < 3$. Domain: $[1, 3)$.",
@@ -131,7 +131,7 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Combine to find the domain.",
-        "workingOut": "[1,\\ 3)"
+        "workingOut": "[1, 3)"
       }
     ]
   },
@@ -185,15 +185,15 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find amplitude and period of \\(f(x) = \\frac{1}{3}\\sin 6x\\).",
-        "workingOut": "A_f = \\tfrac{1}{3}, \\quad T_f = \\dfrac{2\\pi}{6} = \\dfrac{\\pi}{3}"
+        "workingOut": "A_f = \\tfrac{1}{3}, quad T_f = \\dfrac{2\\pi}{6} = \\dfrac{\\pi}{3}"
       },
       {
         "explanation": "Find amplitude and period of \\(g(x) = \\sin 2x\\).",
-        "workingOut": "A_g = 1, \\quad T_g = \\dfrac{2\\pi}{2} = \\pi"
+        "workingOut": "A_g = 1, quad T_g = \\dfrac{2\\pi}{2} = \\pi"
       },
       {
         "explanation": "Both amplitude and period are tripled.",
-        "workingOut": "\\dfrac{A_g}{A_f} = 3,\\quad \\dfrac{T_g}{T_f} = 3"
+        "workingOut": "\\dfrac{A_g}{A_f} = 3, quad \\dfrac{T_g}{T_f} = 3"
       }
     ]
   },
@@ -214,15 +214,15 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
       "The range is at most $5$ times the IQR"
     ],
     "h": "With no outliers, all data lie within $1.5 \\times \\text{IQR}$ of $Q_1$ and $Q_3$. Use this to find the maximum range.",
-    "s": "Max range $= (Q_3 + 1.5\\,\\text{IQR}) - (Q_1 - 1.5\\,\\text{IQR}) = \\text{IQR} + 3\\,\\text{IQR} = 4\\,\\text{IQR}$.",
+    "s": "Max range $= (Q_3 + 1.5\\, text{IQR}) - (Q_1 - 1.5\\, text{IQR}) = \\text{IQR} + 3\\, text{IQR} = 4\\, text{IQR}$.",
     "solutionSteps": [
       {
-        "explanation": "With no outliers, data lies within the fences \\(Q_1 - 1.5\\,\\text{IQR}\\) and \\(Q_3 + 1.5\\,\\text{IQR}\\).",
-        "workingOut": "\\text{Max range} = (Q_3 + 1.5\\,\\text{IQR}) - (Q_1 - 1.5\\,\\text{IQR})"
+        "explanation": "With no outliers, data lies within the fences \\(Q_1 - 1.5\\, text{IQR}\\) and \\(Q_3 + 1.5\\, text{IQR}\\).",
+        "workingOut": "\\text{Max range} = (Q_3 + 1.5\\, text{IQR}) - (Q_1 - 1.5\\, text{IQR})"
       },
       {
         "explanation": "Expand and substitute \\(Q_3 - Q_1 = \\text{IQR}\\).",
-        "workingOut": "= \\text{IQR} + 3\\,\\text{IQR} = 4\\,\\text{IQR}"
+        "workingOut": "= \\text{IQR} + 3\\, text{IQR} = 4\\, text{IQR}"
       }
     ]
   },
@@ -385,7 +385,7 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For (a), solve \\(x^2 - 2x - 8 = 0\\).",
-        "workingOut": "(x-4)(x+2)=0 \\implies x=4 \\text{ (positive)}, \\quad B=(4,0)"
+        "workingOut": "(x-4)(x+2)=0 \\implies x=4 \\text{ (positive)}, quad B=(4,0)"
       },
       {
         "explanation": "For (b), the curve is below the \\(x\\)-axis on \\([0,4]\\) and above on \\([4,6]\\). Evaluate \\(\\left[\\frac{x^3}{3}-x^2-8x\\right]\\) at boundaries.",
@@ -488,16 +488,16 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "q": "Solve $|3\\sin x - 1| = 2$ for $0 \\leq x \\leq \\pi$.",
     "a": "$x = \\dfrac{\\pi}{2}$",
     "opts": [],
-    "h": "Consider two cases: $3\\sin x - 1 = 2$ and $3\\sin x - 1 = -2$. Check which solutions lie in $[0, \\pi]$.",
-    "s": "Case 1: $3\\sin x = 3 \\Rightarrow \\sin x = 1 \\Rightarrow x = \\frac{\\pi}{2}$.\nCase 2: $3\\sin x = -1 \\Rightarrow \\sin x = -\\frac{1}{3}$. No solution in $[0,\\pi]$ since $\\sin x \\geq 0$ there.\nSolution: $x = \\frac{\\pi}{2}$.",
+    "h": "Consider two cases: $3\\sin x - 1 = 2$ and $3\\sin x - 1 = -2$. Check which solutions lie in $[0, pi]$.",
+    "s": "Case 1: $3\\sin x = 3 \\Rightarrow \\sin x = 1 \\Rightarrow x = \\frac{\\pi}{2}$.\nCase 2: $3\\sin x = -1 \\Rightarrow \\sin x = -\\frac{1}{3}$. No solution in $[0, pi]$ since $\\sin x \\geq 0$ there.\nSolution: $x = \\frac{\\pi}{2}$.",
     "solutionSteps": [
       {
         "explanation": "Case 1: \\(3\\sin x - 1 = 2 \\Rightarrow \\sin x = 1 \\Rightarrow x = \\frac{\\pi}{2}\\).",
         "workingOut": "x = \\dfrac{\\pi}{2}"
       },
       {
-        "explanation": "Case 2: \\(3\\sin x - 1 = -2 \\Rightarrow \\sin x = -\\frac{1}{3}\\). Since \\(\\sin x \\geq 0\\) for \\(x \\in [0,\\pi]\\), there is no solution here.",
-        "workingOut": "\\text{No solution in }[0,\\pi]"
+        "explanation": "Case 2: \\(3\\sin x - 1 = -2 \\Rightarrow \\sin x = -\\frac{1}{3}\\). Since \\(\\sin x \\geq 0\\) for \\(x \\in [0, pi]\\), there is no solution here.",
+        "workingOut": "\\text{No solution in }[0, pi]"
       },
       {
         "explanation": "State the answer.",
@@ -673,7 +673,7 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Solve: \\(3(c+d)=1.8\\), subtract from \\(3c+4d=2\\).",
-        "workingOut": "d = 0.2, \\quad c = 0.4"
+        "workingOut": "d = 0.2, quad c = 0.4"
       }
     ]
   },
@@ -693,7 +693,7 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Domain of \\(h\\): \\(x > 5\\).",
-        "workingOut": "f(h(x)) = e^{\\ln(x-5)} = x-5, \\quad x > 5"
+        "workingOut": "f(h(x)) = e^{\\ln(x-5)} = x-5, quad x > 5"
       },
       {
         "explanation": "Range: \\(x-5>0\\) when \\(x>5\\).",
@@ -909,7 +909,7 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "source": "Caringbah 2020 Trial Q33",
     "type": "short_answer",
     "difficulty": "hard",
-    "q": "(a) On the number plane, draw the graphs of $y = \\sin\\pi x$ and $y = 1 - |x|$ for $-3 \\leq x \\leq 3$.\n\n(b) Hence find the number of solutions of $\\sin\\pi x = 1 - |x|$ in the domain $(-\\infty, \\infty)$.",
+    "q": "(a) On the number plane, draw the graphs of $y = \\sin\\pi x$ and $y = 1 - |x|$ for $-3 \\leq x \\leq 3$.\n\n(b) Hence find the number of solutions of $\\sin\\pi x = 1 - |x|$ in the domain $(-\\infty, infty)$.",
     "a": "(a) See sketches.\n\n(b) $3$ solutions",
     "opts": [],
     "h": "$y = \\sin\\pi x$ has period $2$. $y=1-|x|$ is a V-shape with vertex $(0,1)$. Count intersections.",
@@ -917,7 +917,7 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "\\(y = \\sin\\pi x\\) has period 2, amplitude 1. \\(y=1-|x|\\) has vertex \\((0,1)\\) and x-intercepts at \\(\\pm1\\).",
-        "workingOut": "\\text{Period}=2, \\text{ vertex at }(0,1)"
+        "workingOut": "\\text{Period}=2, text{ vertex at }(0,1)"
       },
       {
         "explanation": "Count intersections from the sketch over all real \\(x\\).",
