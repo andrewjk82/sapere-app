@@ -145,10 +145,23 @@ const JsxGraphDiagram = ({ data, style }) => {
               strokeWidth: attributes.strokeWidth || 1.2,
             };
 
+            // Stretch axis arrows to span the actual bounding box instead of
+            // trusting the seed script's hardcoded endpoints -- otherwise an
+            // axis drawn shorter than the boundingbox on one side (e.g. to
+            // leave room for a curve) renders looking lopsided/off-centre.
+            if (type === 'arrow' && (isXAxis || isYAxis)) {
+              const margin = isXAxis ? dx * 0.04 : dy * 0.04;
+              if (isXAxis) {
+                parents = [[bbox[0] + margin, 0], [bbox[2] - margin, 0]];
+              } else {
+                parents = [[0, bbox[3] + margin], [0, bbox[1] - margin]];
+              }
+            }
+
             if (isXAxis) {
               attributes.firstArrow = true;
               attributes.lastArrow = true;
-              
+
               // Automatically label x-axis near the positive end
               const xPos = parents[1][0];
               const xLabelOffset = dx * 0.03;
