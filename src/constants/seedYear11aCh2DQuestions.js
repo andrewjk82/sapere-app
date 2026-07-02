@@ -837,22 +837,22 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Rewrite the fraction with a rational denominator:\n\n\\\\(\\\\frac{1}{\\\\sqrt{3}-1}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{3}+1}{3 - 1} = \\\\frac{\\\\sqrt{3}+1}{2}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{3}-1}{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{3}-1}{3 - 1} = \\\\frac{\\\\sqrt{3}+1}{2}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{2}+1}{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{4}+1}{3 - 1} = \\\\frac{\\\\sqrt{3}+1}{2}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{3}+1}{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{2}+1}{3 - 1} = \\\\frac{\\\\sqrt{3}+1}{2}\\\\)",
+        "text": "\\\\(\\\\sqrt{3}+1\\\\)",
         "imageUrl": ""
       }
     ],
@@ -892,19 +892,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 1,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{7}+2}{7 - 4} = \\\\frac{\\\\sqrt{7}-2}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{7}+2}{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{7}-2}{7 - 4} = \\\\frac{\\\\sqrt{7}-2}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{7}-2}{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{8}-2}{7 - 4} = \\\\frac{\\\\sqrt{7}-2}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{8}-2}{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{6}-2}{7 - 4} = \\\\frac{\\\\sqrt{7}-2}{3}\\\\)",
+        "text": "\\\\(\\\\sqrt{7}-2\\\\)",
         "imageUrl": ""
       }
     ],
@@ -944,19 +944,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 2,
     "options": [
       {
-        "text": "\\\\(\\\\frac{3+\\\\sqrt{5}}{9 - 5} = \\\\frac{3-\\\\sqrt{5}}{4}\\\\)",
+        "text": "\\\\(\\\\frac{3+\\\\sqrt{5}}{4}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{3-\\\\sqrt{6}}{9 - 5} = \\\\frac{3-\\\\sqrt{5}}{4}\\\\)",
+        "text": "\\\\(\\\\frac{3-\\\\sqrt{4}}{4}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{3-\\\\sqrt{5}}{9 - 5} = \\\\frac{3-\\\\sqrt{5}}{4}\\\\)",
+        "text": "\\\\(\\\\frac{3-\\\\sqrt{5}}{4}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{3-\\\\sqrt{4}}{9 - 5} = \\\\frac{3-\\\\sqrt{5}}{4}\\\\)",
+        "text": "\\\\(3-\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -996,19 +996,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 3,
     "options": [
       {
-        "text": "\\\\(\\\\frac{4-\\\\sqrt{7}}{16 - 7} = \\\\frac{4+\\\\sqrt{7}}{9}\\\\)",
+        "text": "\\\\(\\\\frac{4-\\\\sqrt{7}}{9}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{4+\\\\sqrt{8}}{16 - 7} = \\\\frac{4+\\\\sqrt{7}}{9}\\\\)",
+        "text": "\\\\(\\\\frac{4+\\\\sqrt{8}}{9}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{4+\\\\sqrt{6}}{16 - 7} = \\\\frac{4+\\\\sqrt{7}}{9}\\\\)",
+        "text": "\\\\(4+\\\\sqrt{7}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{4+\\\\sqrt{7}}{16 - 7} = \\\\frac{4+\\\\sqrt{7}}{9}\\\\)",
+        "text": "\\\\(\\\\frac{4+\\\\sqrt{7}}{9}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1048,19 +1048,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 0,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{5}+\\\\sqrt{2}}{5 - 2} = \\\\frac{\\\\sqrt{5}+\\\\sqrt{2}}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}+\\\\sqrt{2}}{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{5 - 2} = \\\\frac{\\\\sqrt{5}+\\\\sqrt{2}}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{6}+\\\\sqrt{2}}{5 - 2} = \\\\frac{\\\\sqrt{5}+\\\\sqrt{2}}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{6}+\\\\sqrt{2}}{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{4}+\\\\sqrt{2}}{5 - 2} = \\\\frac{\\\\sqrt{5}+\\\\sqrt{2}}{3}\\\\)",
+        "text": "\\\\(\\\\sqrt{5}+\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1100,19 +1100,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 1,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{10}+\\\\sqrt{6}}{10 - 6} = \\\\frac{\\\\sqrt{10}-\\\\sqrt{6}}{4}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{10}+\\\\sqrt{6}}{4}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{10}-\\\\sqrt{6}}{10 - 6} = \\\\frac{\\\\sqrt{10}-\\\\sqrt{6}}{4}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{10}-\\\\sqrt{6}}{4}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{11}-\\\\sqrt{6}}{10 - 6} = \\\\frac{\\\\sqrt{10}-\\\\sqrt{6}}{4}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{11}-\\\\sqrt{6}}{4}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{9}-\\\\sqrt{6}}{10 - 6} = \\\\frac{\\\\sqrt{10}-\\\\sqrt{6}}{4}\\\\)",
+        "text": "\\\\(\\\\sqrt{10}-\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1152,19 +1152,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 2,
     "options": [
       {
-        "text": "\\\\(\\\\frac{2\\\\sqrt{3}+1}{12 - 1} = \\\\frac{2\\\\sqrt{3}-1}{11}\\\\)",
+        "text": "\\\\(\\\\frac{2\\\\sqrt{3}+1}{11}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{2\\\\sqrt{4}-1}{12 - 1} = \\\\frac{2\\\\sqrt{3}-1}{11}\\\\)",
+        "text": "\\\\(\\\\frac{2\\\\sqrt{4}-1}{11}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{2\\\\sqrt{3}-1}{12 - 1} = \\\\frac{2\\\\sqrt{3}-1}{11}\\\\)",
+        "text": "\\\\(\\\\frac{2\\\\sqrt{3}-1}{11}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{2\\\\sqrt{2}-1}{12 - 1} = \\\\frac{2\\\\sqrt{3}-1}{11}\\\\)",
+        "text": "\\\\(2\\\\sqrt{3}-1\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1204,19 +1204,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 3,
     "options": [
       {
-        "text": "\\\\(\\\\frac{5-3\\\\sqrt{2}}{25 - 18} = \\\\frac{5+3\\\\sqrt{2}}{7}\\\\)",
+        "text": "\\\\(\\\\frac{5-3\\\\sqrt{2}}{7}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{5+3\\\\sqrt{3}}{25 - 18} = \\\\frac{5+3\\\\sqrt{2}}{7}\\\\)",
+        "text": "\\\\(\\\\frac{5+3\\\\sqrt{3}}{7}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\frac{5+3\\\\sqrt{2}}{25 - 18} = \\\\frac{5+3\\\\sqrt{2}}{7}\\\\)",
+        "text": "\\\\(5+3\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{5+3\\\\sqrt{2}}{25 - 18} = \\\\frac{5+3\\\\sqrt{2}}{7}\\\\)",
+        "text": "\\\\(\\\\frac{5+3\\\\sqrt{2}}{7}\\\\)",
         "imageUrl": ""
       }
     ],
