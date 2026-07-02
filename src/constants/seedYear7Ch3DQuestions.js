@@ -8,7 +8,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Like terms have the exact same variables and indices.",
     "solutionSteps": [
       {
-        "explanation": "Both terms have the exact same variable part, $m$.",
+        "explanation": "Both terms have the exact same variable part, \\(m\\).",
         "workingOut": ""
       },
       {
@@ -46,7 +46,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Like terms have the exact same variables and indices.",
     "solutionSteps": [
       {
-        "explanation": "Both terms have the exact same variable part, $p$.",
+        "explanation": "Both terms have the exact same variable part, \\(p\\).",
         "workingOut": ""
       },
       {
@@ -84,11 +84,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "The order of variables in a term does not matter.",
     "solutionSteps": [
       {
-        "explanation": "The term $ba$ is the same as $ab$ because multiplication is commutative.",
+        "explanation": "The term \\(ba\\) is the same as \\(ab\\) because multiplication is commutative.",
         "workingOut": "15ba = 15ab"
       },
       {
-        "explanation": "Both terms have the exact same variable part, $ab$.",
+        "explanation": "Both terms have the exact same variable part, \\(ab\\).",
         "workingOut": ""
       },
       {
@@ -126,7 +126,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Check if the variable parts are exactly the same.",
     "solutionSteps": [
       {
-        "explanation": "The first term has variable $m$, and the second term has variable $n$.",
+        "explanation": "The first term has variable \\(m\\), and the second term has variable \\(n\\).",
         "workingOut": ""
       },
       {
@@ -164,7 +164,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Check if the variable parts are exactly the same.",
     "solutionSteps": [
       {
-        "explanation": "Both terms have the exact same variable part, $qp$.",
+        "explanation": "Both terms have the exact same variable part, \\(qp\\).",
         "workingOut": ""
       },
       {
@@ -202,7 +202,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Like terms must have the same variables with the same indices.",
     "solutionSteps": [
       {
-        "explanation": "The first term has $n^2$ and the second term has $n$.",
+        "explanation": "The first term has \\(n^2\\) and the second term has \\(n\\).",
         "workingOut": ""
       },
       {
@@ -240,7 +240,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Like terms must have the same variables with the same indices.",
     "solutionSteps": [
       {
-        "explanation": "The first term has $x$ and the second term has $x^2$.",
+        "explanation": "The first term has \\(x\\) and the second term has \\(x^2\\).",
         "workingOut": ""
       },
       {
@@ -278,11 +278,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "The order of variables in a term does not matter.",
     "solutionSteps": [
       {
-        "explanation": "The term $yx$ is the same as $xy$ because multiplication is commutative.",
+        "explanation": "The term \\(yx\\) is the same as \\(xy\\) because multiplication is commutative.",
         "workingOut": "12yx = 12xy"
       },
       {
-        "explanation": "Both terms have the exact same variable part, $xy$.",
+        "explanation": "Both terms have the exact same variable part, \\(xy\\).",
         "workingOut": ""
       },
       {
@@ -322,7 +322,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Add the coefficients of the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Add the coefficients $3$ and $5$.",
+        "explanation": "Add the coefficients \\(3\\) and \\(5\\).",
         "workingOut": "3 + 5 = 8"
       },
       {
@@ -343,7 +343,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Subtract the coefficients of the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Subtract the coefficient $3$ from $14$.",
+        "explanation": "Subtract the coefficient \\(3\\) from \\(14\\).",
         "workingOut": "14 - 3 = 11"
       },
       {
@@ -364,7 +364,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Add all the coefficients.",
     "solutionSteps": [
       {
-        "explanation": "Add the coefficients $4$, $6$, and $2$.",
+        "explanation": "Add the coefficients \\(4\\), \\(6\\), and \\(2\\).",
         "workingOut": "4 + 6 + 2 = 12"
       },
       {
@@ -385,11 +385,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Add and subtract the coefficients from left to right.",
     "solutionSteps": [
       {
-        "explanation": "First, add $8k$ and $5k$.",
+        "explanation": "First, add \\(8k\\) and \\(5k\\).",
         "workingOut": "13k - 3k"
       },
       {
-        "explanation": "Then, subtract $3k$.",
+        "explanation": "Then, subtract \\(3k\\).",
         "workingOut": "10k"
       }
     ],
@@ -406,11 +406,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Group the $a$ terms together and the $b$ terms together.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $a$ terms: $4a + 5a$.",
+        "explanation": "Combine the \\(a\\) terms: \\(4a + 5a\\).",
         "workingOut": "9a"
       },
       {
-        "explanation": "Combine the $b$ terms: $6b + 2b$.",
+        "explanation": "Combine the \\(b\\) terms: \\(6b + 2b\\).",
         "workingOut": "8b"
       },
       {
@@ -431,11 +431,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Group the $p$ terms together and the $q$ terms together.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $p$ terms: $7p - 3p$.",
+        "explanation": "Combine the \\(p\\) terms: \\(7p - 3p\\).",
         "workingOut": "4p"
       },
       {
-        "explanation": "Combine the $q$ terms: $5q - q$.",
+        "explanation": "Combine the \\(q\\) terms: \\(5q - q\\).",
         "workingOut": "4q"
       },
       {
@@ -456,11 +456,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Rearrange to group the like terms, then combine.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $m$ terms: $4m + 6m$.",
+        "explanation": "Combine the \\(m\\) terms: \\(4m + 6m\\).",
         "workingOut": "10m"
       },
       {
-        "explanation": "Combine the $n$ terms: $1n + 2n$.",
+        "explanation": "Combine the \\(n\\) terms: \\(1n + 2n\\).",
         "workingOut": "3n"
       },
       {
@@ -481,11 +481,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Rearrange to group the like terms, then combine.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $x$ terms: $8x + 3x$.",
+        "explanation": "Combine the \\(x\\) terms: \\(8x + 3x\\).",
         "workingOut": "11x"
       },
       {
-        "explanation": "Combine the $y$ terms: $5y - 2y$.",
+        "explanation": "Combine the \\(y\\) terms: \\(5y - 2y\\).",
         "workingOut": "3y"
       },
       {
@@ -506,11 +506,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Rearrange to group the like terms, then combine.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $a$ terms: $7a - 4a$.",
+        "explanation": "Combine the \\(a\\) terms: \\(7a - 4a\\).",
         "workingOut": "3a"
       },
       {
-        "explanation": "Combine the $b$ terms: $6b - 3b$.",
+        "explanation": "Combine the \\(b\\) terms: \\(6b - 3b\\).",
         "workingOut": "3b"
       },
       {
@@ -619,7 +619,7 @@ export const Y7_CH3D_QUESTIONS = [
         "workingOut": "4ab + 6ac"
       },
       {
-        "explanation": "The variables $ab$ and $ac$ are different, so these are unlike terms and cannot be simplified further.",
+        "explanation": "The variables \\(ab\\) and \\(ac\\) are different, so these are unlike terms and cannot be simplified further.",
         "workingOut": "4ab + 6ac"
       }
     ],
@@ -682,7 +682,7 @@ export const Y7_CH3D_QUESTIONS = [
         "workingOut": "8a^2 + 3b^2"
       },
       {
-        "explanation": "The variable parts $a^2$ and $b^2$ are different, so they are unlike terms and cannot be simplified.",
+        "explanation": "The variable parts \\(a^2\\) and \\(b^2\\) are different, so they are unlike terms and cannot be simplified.",
         "workingOut": "8a^2 + 3b^2"
       }
     ],
@@ -699,11 +699,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Work from left to right.",
     "solutionSteps": [
       {
-        "explanation": "Add $3y$ and $6y$.",
+        "explanation": "Add \\(3y\\) and \\(6y\\).",
         "workingOut": "9y - 3y"
       },
       {
-        "explanation": "Subtract $3y$.",
+        "explanation": "Subtract \\(3y\\).",
         "workingOut": "6y"
       }
     ],
@@ -720,11 +720,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Work from left to right. Remember $ab$ means $1ab$.",
     "solutionSteps": [
       {
-        "explanation": "Subtract $1ab$ from $3ab$.",
+        "explanation": "Subtract \\(1ab\\) from \\(3ab\\).",
         "workingOut": "2ab + 5ab"
       },
       {
-        "explanation": "Add $5ab$.",
+        "explanation": "Add \\(5ab\\).",
         "workingOut": "7ab"
       }
     ],
@@ -741,11 +741,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Work from left to right.",
     "solutionSteps": [
       {
-        "explanation": "Add $4mn$ and $3mn$.",
+        "explanation": "Add \\(4mn\\) and \\(3mn\\).",
         "workingOut": "7mn - mn"
       },
       {
-        "explanation": "Subtract $1mn$.",
+        "explanation": "Subtract \\(1mn\\).",
         "workingOut": "6mn"
       }
     ],
@@ -762,11 +762,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Work from left to right.",
     "solutionSteps": [
       {
-        "explanation": "Add $5x$ and $4x$.",
+        "explanation": "Add \\(5x\\) and \\(4x\\).",
         "workingOut": "9x - x"
       },
       {
-        "explanation": "Subtract $1x$.",
+        "explanation": "Subtract \\(1x\\).",
         "workingOut": "8x"
       }
     ],
@@ -783,11 +783,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Combine the $a$ terms together and the $b$ terms together.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $a$ terms: $4a + 2a$.",
+        "explanation": "Combine the \\(a\\) terms: \\(4a + 2a\\).",
         "workingOut": "6a"
       },
       {
-        "explanation": "Combine the $b$ terms: $7b + 3b$.",
+        "explanation": "Combine the \\(b\\) terms: \\(7b + 3b\\).",
         "workingOut": "10b"
       },
       {
@@ -808,11 +808,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Rearrange to group the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $m$ terms: $2m + 5m$.",
+        "explanation": "Combine the \\(m\\) terms: \\(2m + 5m\\).",
         "workingOut": "7m"
       },
       {
-        "explanation": "Combine the $n$ terms: $6n + 3n$.",
+        "explanation": "Combine the \\(n\\) terms: \\(6n + 3n\\).",
         "workingOut": "9n"
       },
       {
@@ -833,7 +833,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "All terms are like terms. Add all the coefficients.",
     "solutionSteps": [
       {
-        "explanation": "Add the coefficients $3+4+2+6$.",
+        "explanation": "Add the coefficients \\(3+4+2+6\\).",
         "workingOut": "15"
       },
       {
@@ -854,11 +854,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "These are like terms. Add their coefficients.",
     "solutionSteps": [
       {
-        "explanation": "Add $6$ and $4$.",
+        "explanation": "Add \\(6\\) and \\(4\\).",
         "workingOut": "10"
       },
       {
-        "explanation": "Keep the variable part $y^2$.",
+        "explanation": "Keep the variable part \\(y^2\\).",
         "workingOut": "10y^2"
       }
     ],
@@ -875,11 +875,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Remember that $m^2$ and $m$ are NOT like terms. Group them separately.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $m^2$ terms: $4m^2 + 2m^2$.",
+        "explanation": "Combine the \\(m^2\\) terms: \\(4m^2 + 2m^2\\).",
         "workingOut": "6m^2"
       },
       {
-        "explanation": "Combine the $m$ terms: $5m + 6m$.",
+        "explanation": "Combine the \\(m\\) terms: \\(5m + 6m\\).",
         "workingOut": "11m"
       },
       {
@@ -900,11 +900,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Group the $y^2$ terms and the $y$ terms separately.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $y^2$ terms: $8y^2 - 5y^2$.",
+        "explanation": "Combine the \\(y^2\\) terms: \\(8y^2 - 5y^2\\).",
         "workingOut": "3y^2"
       },
       {
-        "explanation": "Combine the $y$ terms: $12y - 6y$.",
+        "explanation": "Combine the \\(y\\) terms: \\(12y - 6y\\).",
         "workingOut": "6y"
       },
       {
@@ -988,7 +988,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "The order of letters in a term does not change its value ($ba = ab$).",
     "solutionSteps": [
       {
-        "explanation": "Rewrite $ba$ as $ab$.",
+        "explanation": "Rewrite \\(ba\\) as \\(ab\\).",
         "workingOut": "4ab + 7ab"
       },
       {
@@ -1030,7 +1030,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "The order of letters in a term does not change its value.",
     "solutionSteps": [
       {
-        "explanation": "Rewrite $yx$ as $xy$.",
+        "explanation": "Rewrite \\(yx\\) as \\(xy\\).",
         "workingOut": "5xy + 12xy"
       },
       {
@@ -1051,11 +1051,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Group the $a$ terms and $b$ terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $a$ terms: $3a + 4a$.",
+        "explanation": "Combine the \\(a\\) terms: \\(3a + 4a\\).",
         "workingOut": "7a"
       },
       {
-        "explanation": "Combine the $b$ terms: $6b + 7b$.",
+        "explanation": "Combine the \\(b\\) terms: \\(6b + 7b\\).",
         "workingOut": "13b"
       },
       {
@@ -1076,11 +1076,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Group the $m$ terms and $n$ terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $m$ terms: $6m - 3m$.",
+        "explanation": "Combine the \\(m\\) terms: \\(6m - 3m\\).",
         "workingOut": "3m"
       },
       {
-        "explanation": "Combine the $n$ terms: $5n + 4n$.",
+        "explanation": "Combine the \\(n\\) terms: \\(5n + 4n\\).",
         "workingOut": "9n"
       },
       {
@@ -1101,11 +1101,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Group the $p$ terms and $q$ terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $p$ terms: $15p - 12p$.",
+        "explanation": "Combine the \\(p\\) terms: \\(15p - 12p\\).",
         "workingOut": "3p"
       },
       {
-        "explanation": "Combine the $q$ terms: $9q + 3q$.",
+        "explanation": "Combine the \\(q\\) terms: \\(9q + 3q\\).",
         "workingOut": "12q"
       },
       {
@@ -1126,11 +1126,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Group all the $a$ terms together.",
     "solutionSteps": [
       {
-        "explanation": "Combine all $a$ terms: $50a + 20a + 4a$.",
+        "explanation": "Combine all \\(a\\) terms: \\(50a + 20a + 4a\\).",
         "workingOut": "74a"
       },
       {
-        "explanation": "Keep the $b$ term.",
+        "explanation": "Keep the \\(b\\) term.",
         "workingOut": "10b"
       },
       {
@@ -1151,11 +1151,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Group the $x$ terms and $y$ terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $x$ terms: $30x + 25x$.",
+        "explanation": "Combine the \\(x\\) terms: \\(30x + 25x\\).",
         "workingOut": "55x"
       },
       {
-        "explanation": "Combine the $y$ terms: $15y + 12y$.",
+        "explanation": "Combine the \\(y\\) terms: \\(15y + 12y\\).",
         "workingOut": "27y"
       },
       {
@@ -1176,11 +1176,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Work from left to right.",
     "solutionSteps": [
       {
-        "explanation": "Subtract $70k$ from $90k$.",
+        "explanation": "Subtract \\(70k\\) from \\(90k\\).",
         "workingOut": "20k + 50k"
       },
       {
-        "explanation": "Add $50k$.",
+        "explanation": "Add \\(50k\\).",
         "workingOut": "70k"
       }
     ],
@@ -1197,7 +1197,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Remember $yx$ is the same as $xy$, and $xy$ means $1xy$.",
     "solutionSteps": [
       {
-        "explanation": "Rewrite $yx$ as $xy$.",
+        "explanation": "Rewrite \\(yx\\) as \\(xy\\).",
         "workingOut": "4xy + 5xy - xy"
       },
       {
@@ -1222,7 +1222,7 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Remember $ba$ is the same as $ab$, and $ba$ means $1ab$.",
     "solutionSteps": [
       {
-        "explanation": "Rewrite $ba$ as $ab$.",
+        "explanation": "Rewrite \\(ba\\) as \\(ab\\).",
         "workingOut": "7ab - 3ab - ab"
       },
       {
@@ -1247,11 +1247,11 @@ export const Y7_CH3D_QUESTIONS = [
     "hint": "Represent the three consecutive numbers algebraically, e.g., $n$, $n+1$, and $n+2$.",
     "solutionSteps": [
       {
-        "explanation": "Let the first whole number be $n$.",
+        "explanation": "Let the first whole number be \\(n\\).",
         "workingOut": "n"
       },
       {
-        "explanation": "The next two consecutive whole numbers are $n + 1$ and $n + 2$.",
+        "explanation": "The next two consecutive whole numbers are \\(n + 1\\) and \\(n + 2\\).",
         "workingOut": "n+1, n+2"
       },
       {
@@ -1263,7 +1263,7 @@ export const Y7_CH3D_QUESTIONS = [
         "workingOut": "3n + 3"
       },
       {
-        "explanation": "Factor out the $3$ to show it is a multiple of $3$.",
+        "explanation": "Factor out the \\(3\\) to show it is a multiple of \\(3\\).",
         "workingOut": "3(n + 1)"
       }
     ],

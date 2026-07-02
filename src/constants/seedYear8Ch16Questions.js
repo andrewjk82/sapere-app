@@ -351,7 +351,7 @@ export const Y8_CH16A_QUESTIONS = [
         "workingOut": "\\text{Odd numbers} = 12 \\implies \\text{P(odd)} = \\frac{12}{25}"
       },
       {
-        "explanation": "Count numbers $\{1, 2, 3, 4, 5, 6, 7\}$ (less than 8 and not zero).",
+        "explanation": "Count numbers \\({1, 2, 3, 4, 5, 6, 7}\\) (less than 8 and not zero).",
         "workingOut": "\\text{Favourable numbers} = 7 \\implies \\text{P(less than 8, not zero)} = \\frac{7}{25}"
       }
     ],

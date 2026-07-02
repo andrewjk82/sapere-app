@@ -1,5 +1,4 @@
 export const Y8_CH17E_QUESTIONS = [
-  // Question 1
   {
     "id": "y8-17e-q1a",
     "type": "short_answer",
@@ -10,9 +9,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute $a = -3$ into the expression and evaluate.",
     "solutionSteps": [
-      { "explanation": "Substitute $a = -3$.", "workingOut": "12 + 3(-3)" },
-      { "explanation": "Multiply.", "workingOut": "12 - 9" },
-      { "explanation": "Calculate the result.", "workingOut": "3" }
+      {
+        "explanation": "Substitute \\(a = -3\\).",
+        "workingOut": "12 + 3(-3)"
+      },
+      {
+        "explanation": "Multiply.",
+        "workingOut": "12 - 9"
+      },
+      {
+        "explanation": "Calculate the result.",
+        "workingOut": "3"
+      }
     ],
     "graphData": null
   },
@@ -26,9 +34,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute $a = -3$ into the expression and evaluate.",
     "solutionSteps": [
-      { "explanation": "Substitute $a = -3$.", "workingOut": "8 - 4(-3)" },
-      { "explanation": "Multiply.", "workingOut": "8 + 12" },
-      { "explanation": "Calculate the result.", "workingOut": "20" }
+      {
+        "explanation": "Substitute \\(a = -3\\).",
+        "workingOut": "8 - 4(-3)"
+      },
+      {
+        "explanation": "Multiply.",
+        "workingOut": "8 + 12"
+      },
+      {
+        "explanation": "Calculate the result.",
+        "workingOut": "20"
+      }
     ],
     "graphData": null
   },
@@ -42,13 +59,21 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute $a = -3$ into the expression and evaluate.",
     "solutionSteps": [
-      { "explanation": "Substitute $a = -3$.", "workingOut": "85 + (-3)^2" },
-      { "explanation": "Square the value.", "workingOut": "85 + 9" },
-      { "explanation": "Calculate the result.", "workingOut": "94" }
+      {
+        "explanation": "Substitute \\(a = -3\\).",
+        "workingOut": "85 + (-3)^2"
+      },
+      {
+        "explanation": "Square the value.",
+        "workingOut": "85 + 9"
+      },
+      {
+        "explanation": "Calculate the result.",
+        "workingOut": "94"
+      }
     ],
     "graphData": null
   },
-  // Question 2
   {
     "id": "y8-17e-q2",
     "type": "short_answer",
@@ -59,13 +84,21 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute $x = 6$ into the equation and solve for $y$.",
     "solutionSteps": [
-      { "explanation": "Substitute $x = 6$.", "workingOut": "y = 4(6) - 3" },
-      { "explanation": "Multiply.", "workingOut": "y = 24 - 3" },
-      { "explanation": "Subtract to find $y$.", "workingOut": "y = 21" }
+      {
+        "explanation": "Substitute \\(x = 6\\).",
+        "workingOut": "y = 4(6) - 3"
+      },
+      {
+        "explanation": "Multiply.",
+        "workingOut": "y = 24 - 3"
+      },
+      {
+        "explanation": "Subtract to find \\(y\\).",
+        "workingOut": "y = 21"
+      }
     ],
     "graphData": null
   },
-  // Question 3
   {
     "id": "y8-17e-q3a",
     "type": "short_answer",
@@ -76,9 +109,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute the given values into the formula and evaluate.",
     "solutionSteps": [
-      { "explanation": "Substitute the given values into the formula.", "workingOut": "v = 5 + (4)(10)" },
-      { "explanation": "Multiply first.", "workingOut": "v = 5 + 40" },
-      { "explanation": "Add to find $v$.", "workingOut": "v = 45" }
+      {
+        "explanation": "Substitute the given values into the formula.",
+        "workingOut": "v = 5 + (4)(10)"
+      },
+      {
+        "explanation": "Multiply first.",
+        "workingOut": "v = 5 + 40"
+      },
+      {
+        "explanation": "Add to find \\(v\\).",
+        "workingOut": "v = 45"
+      }
     ],
     "graphData": null
   },
@@ -92,9 +134,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute the given values into the formula and solve the equation for $a$.",
     "solutionSteps": [
-      { "explanation": "Substitute the given values into the formula.", "workingOut": "25 = 5 + a(5)" },
-      { "explanation": "Subtract 5 from both sides.", "workingOut": "20 = 5a" },
-      { "explanation": "Divide by 5.", "workingOut": "a = 4" }
+      {
+        "explanation": "Substitute the given values into the formula.",
+        "workingOut": "25 = 5 + a(5)"
+      },
+      {
+        "explanation": "Subtract 5 from both sides.",
+        "workingOut": "20 = 5a"
+      },
+      {
+        "explanation": "Divide by 5.",
+        "workingOut": "a = 4"
+      }
     ],
     "graphData": null
   },
@@ -108,13 +159,21 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute the given values into the formula and solve the equation for $t$.",
     "solutionSteps": [
-      { "explanation": "Substitute the given values into the formula.", "workingOut": "10 = 20 + (-2)t" },
-      { "explanation": "Subtract 20 from both sides.", "workingOut": "-10 = -2t" },
-      { "explanation": "Divide by -2.", "workingOut": "t = 5" }
+      {
+        "explanation": "Substitute the given values into the formula.",
+        "workingOut": "10 = 20 + (-2)t"
+      },
+      {
+        "explanation": "Subtract 20 from both sides.",
+        "workingOut": "-10 = -2t"
+      },
+      {
+        "explanation": "Divide by -2.",
+        "workingOut": "t = 5"
+      }
     ],
     "graphData": null
   },
-  // Question 4
   {
     "id": "y8-17e-q4a",
     "type": "short_answer",
@@ -125,7 +184,10 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "If it is 5 m longer, add 5 to the width.",
     "solutionSteps": [
-      { "explanation": "Translate the phrase '5 m longer' into mathematics.", "workingOut": "l = w + 5" }
+      {
+        "explanation": "Translate the phrase '5 m longer' into mathematics.",
+        "workingOut": "l = w + 5"
+      }
     ],
     "graphData": null
   },
@@ -139,10 +201,22 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "The perimeter is twice the width plus twice the length.",
     "solutionSteps": [
-      { "explanation": "Write the formula for perimeter.", "workingOut": "P = 2l + 2w" },
-      { "explanation": "Substitute $l = w + 5$.", "workingOut": "P = 2(w + 5) + 2w" },
-      { "explanation": "Expand the brackets.", "workingOut": "P = 2w + 10 + 2w" },
-      { "explanation": "Collect like terms.", "workingOut": "P = 4w + 10" }
+      {
+        "explanation": "Write the formula for perimeter.",
+        "workingOut": "P = 2l + 2w"
+      },
+      {
+        "explanation": "Substitute \\(l = w + 5\\).",
+        "workingOut": "P = 2(w + 5) + 2w"
+      },
+      {
+        "explanation": "Expand the brackets.",
+        "workingOut": "P = 2w + 10 + 2w"
+      },
+      {
+        "explanation": "Collect like terms.",
+        "workingOut": "P = 4w + 10"
+      }
     ],
     "graphData": null
   },
@@ -156,8 +230,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute $w = 4$ into the expression for perimeter.",
     "solutionSteps": [
-      { "explanation": "Substitute $w = 4$.", "workingOut": "P = 4(4) + 10" },
-      { "explanation": "Calculate the result.", "workingOut": "P = 16 + 10 = 26" }
+      {
+        "explanation": "Substitute \\(w = 4\\).",
+        "workingOut": "P = 4(4) + 10"
+      },
+      {
+        "explanation": "Calculate the result.",
+        "workingOut": "P = 16 + 10 = 26"
+      }
     ],
     "graphData": null
   },
@@ -171,7 +251,10 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute $w = 4$ into the expression for length.",
     "solutionSteps": [
-      { "explanation": "Substitute $w = 4$.", "workingOut": "l = 4 + 5 = 9" }
+      {
+        "explanation": "Substitute \\(w = 4\\).",
+        "workingOut": "l = 4 + 5 = 9"
+      }
     ],
     "graphData": null
   },
@@ -185,8 +268,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Multiply the width by the length.",
     "solutionSteps": [
-      { "explanation": "Write the formula for area.", "workingOut": "A = w \\times l" },
-      { "explanation": "Substitute $l = w + 5$.", "workingOut": "A = w(w + 5)" }
+      {
+        "explanation": "Write the formula for area.",
+        "workingOut": "A = w \\times l"
+      },
+      {
+        "explanation": "Substitute \\(l = w + 5\\).",
+        "workingOut": "A = w(w + 5)"
+      }
     ],
     "graphData": null
   },
@@ -200,9 +289,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Substitute $w = 2$ into the area formula.",
     "solutionSteps": [
-      { "explanation": "Substitute $w = 2$.", "workingOut": "A = 2(2 + 5)" },
-      { "explanation": "Evaluate inside the brackets.", "workingOut": "A = 2(7)" },
-      { "explanation": "Multiply.", "workingOut": "A = 14" }
+      {
+        "explanation": "Substitute \\(w = 2\\).",
+        "workingOut": "A = 2(2 + 5)"
+      },
+      {
+        "explanation": "Evaluate inside the brackets.",
+        "workingOut": "A = 2(7)"
+      },
+      {
+        "explanation": "Multiply.",
+        "workingOut": "A = 14"
+      }
     ],
     "graphData": null
   },
@@ -216,9 +314,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Set up an equation and solve for $w$.",
     "solutionSteps": [
-      { "explanation": "Substitute $P = 34$.", "workingOut": "34 = 4w + 10" },
-      { "explanation": "Subtract 10 from both sides.", "workingOut": "24 = 4w" },
-      { "explanation": "Divide by 4.", "workingOut": "w = 6" }
+      {
+        "explanation": "Substitute \\(P = 34\\).",
+        "workingOut": "34 = 4w + 10"
+      },
+      {
+        "explanation": "Subtract 10 from both sides.",
+        "workingOut": "24 = 4w"
+      },
+      {
+        "explanation": "Divide by 4.",
+        "workingOut": "w = 6"
+      }
     ],
     "graphData": null
   },
@@ -232,13 +339,21 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Think of two numbers that have a difference of 5 and multiply to 36.",
     "solutionSteps": [
-      { "explanation": "Substitute $A = 36$.", "workingOut": "w(w + 5) = 36" },
-      { "explanation": "Find factors of 36 that differ by 5.", "workingOut": "4 \\times 9 = 36" },
-      { "explanation": "State the value of $w$.", "workingOut": "w = 4" }
+      {
+        "explanation": "Substitute \\(A = 36\\).",
+        "workingOut": "w(w + 5) = 36"
+      },
+      {
+        "explanation": "Find factors of 36 that differ by 5.",
+        "workingOut": "4 \\times 9 = 36"
+      },
+      {
+        "explanation": "State the value of \\(w\\).",
+        "workingOut": "w = 4"
+      }
     ],
     "graphData": null
   },
-  // Question 5
   {
     "id": "y8-17e-q5a",
     "type": "short_answer",
@@ -249,7 +364,10 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "What is the largest number that goes into both?",
     "solutionSteps": [
-      { "explanation": "Find the HCF of 12 and 6.", "workingOut": "6" }
+      {
+        "explanation": "Find the HCF of 12 and 6.",
+        "workingOut": "6"
+      }
     ],
     "graphData": null
   },
@@ -263,7 +381,10 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "What parts are the same in both terms?",
     "solutionSteps": [
-      { "explanation": "Find the HCF.", "workingOut": "3" }
+      {
+        "explanation": "Find the HCF.",
+        "workingOut": "3"
+      }
     ],
     "graphData": null
   },
@@ -277,9 +398,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find the HCF of the numbers, then look for common variables.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the numbers 15 and 35.", "workingOut": "5" },
-      { "explanation": "Identify common variables.", "workingOut": "x" },
-      { "explanation": "Combine them.", "workingOut": "5x" }
+      {
+        "explanation": "Find the HCF of the numbers 15 and 35.",
+        "workingOut": "5"
+      },
+      {
+        "explanation": "Identify common variables.",
+        "workingOut": "x"
+      },
+      {
+        "explanation": "Combine them.",
+        "workingOut": "5x"
+      }
     ],
     "graphData": null
   },
@@ -293,9 +423,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find the HCF of the numbers, then look for the lowest power of common variables.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the numbers 13 and 39.", "workingOut": "13" },
-      { "explanation": "Identify the lowest power of the common variable $y$.", "workingOut": "y" },
-      { "explanation": "Combine them.", "workingOut": "13y" }
+      {
+        "explanation": "Find the HCF of the numbers 13 and 39.",
+        "workingOut": "13"
+      },
+      {
+        "explanation": "Identify the lowest power of the common variable \\(y\\).",
+        "workingOut": "y"
+      },
+      {
+        "explanation": "Combine them.",
+        "workingOut": "13y"
+      }
     ],
     "graphData": null
   },
@@ -309,9 +448,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find the HCF of the numbers, then look for the lowest power of common variables.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the numbers 24 and 8.", "workingOut": "8" },
-      { "explanation": "Identify the lowest power of common variables.", "workingOut": "ab" },
-      { "explanation": "Combine them.", "workingOut": "8ab" }
+      {
+        "explanation": "Find the HCF of the numbers 24 and 8.",
+        "workingOut": "8"
+      },
+      {
+        "explanation": "Identify the lowest power of common variables.",
+        "workingOut": "ab"
+      },
+      {
+        "explanation": "Combine them.",
+        "workingOut": "8ab"
+      }
     ],
     "graphData": null
   },
@@ -325,9 +473,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Note that $x^2y$ is the same as $yx^2$.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the numbers 14 and 21.", "workingOut": "7" },
-      { "explanation": "Identify common variables and their lowest powers.", "workingOut": "x^2y" },
-      { "explanation": "Combine them.", "workingOut": "7x^2y" }
+      {
+        "explanation": "Find the HCF of the numbers 14 and 21.",
+        "workingOut": "7"
+      },
+      {
+        "explanation": "Identify common variables and their lowest powers.",
+        "workingOut": "x^2y"
+      },
+      {
+        "explanation": "Combine them.",
+        "workingOut": "7x^2y"
+      }
     ],
     "graphData": null
   },
@@ -341,9 +498,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find the HCF of the numbers, then look for the lowest power of common variables.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the numbers 36 and 12.", "workingOut": "12" },
-      { "explanation": "Identify the lowest power of common variables.", "workingOut": "a^2b" },
-      { "explanation": "Combine them.", "workingOut": "12a^2b" }
+      {
+        "explanation": "Find the HCF of the numbers 36 and 12.",
+        "workingOut": "12"
+      },
+      {
+        "explanation": "Identify the lowest power of common variables.",
+        "workingOut": "a^2b"
+      },
+      {
+        "explanation": "Combine them.",
+        "workingOut": "12a^2b"
+      }
     ],
     "graphData": null
   },
@@ -357,13 +523,21 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Is there anything common other than 1?",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the numbers 7 and 5.", "workingOut": "1" },
-      { "explanation": "Check for common variables.", "workingOut": "\\text{None}" },
-      { "explanation": "State the HCF.", "workingOut": "1" }
+      {
+        "explanation": "Find the HCF of the numbers 7 and 5.",
+        "workingOut": "1"
+      },
+      {
+        "explanation": "Check for common variables.",
+        "workingOut": "\\text{None}"
+      },
+      {
+        "explanation": "State the HCF.",
+        "workingOut": "1"
+      }
     ],
     "graphData": null
   },
-  // Question 6
   {
     "id": "y8-17e-q6a",
     "type": "short_answer",
@@ -374,8 +548,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "What is the largest number that divides evenly into both terms?",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "4" },
-      { "explanation": "Factorise the expression.", "workingOut": "4(y + 2)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "4"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "4(y + 2)"
+      }
     ],
     "graphData": null
   },
@@ -389,8 +569,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "What is the largest number that divides evenly into both terms?",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "7" },
-      { "explanation": "Factorise the expression.", "workingOut": "7(m - 6)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "7"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "7(m - 6)"
+      }
     ],
     "graphData": null
   },
@@ -404,8 +590,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find the HCF of the numbers and place it outside the brackets.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "3" },
-      { "explanation": "Factorise the expression.", "workingOut": "3(-1 + 11p) = 3(11p - 1)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "3"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "3(-1 + 11p) = 3(11p - 1)"
+      }
     ],
     "graphData": null
   },
@@ -419,8 +611,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Remember that $6 \\div 6 = 1$.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "6" },
-      { "explanation": "Factorise the expression.", "workingOut": "6(10y + 1)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "6"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "6(10y + 1)"
+      }
     ],
     "graphData": null
   },
@@ -434,8 +632,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "You can factorise by taking a negative factor out.",
     "solutionSteps": [
-      { "explanation": "Find a common factor. Let's use -15.", "workingOut": "-15" },
-      { "explanation": "Factorise the expression.", "workingOut": "-15(z - 3)" }
+      {
+        "explanation": "Find a common factor. Let's use -15.",
+        "workingOut": "-15"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "-15(z - 3)"
+      }
     ],
     "graphData": null
   },
@@ -449,8 +653,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "What variable is in both terms?",
     "solutionSteps": [
-      { "explanation": "Find the common factor.", "workingOut": "x" },
-      { "explanation": "Factorise the expression.", "workingOut": "x(3x - 1)" }
+      {
+        "explanation": "Find the common factor.",
+        "workingOut": "x"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "x(3x - 1)"
+      }
     ],
     "graphData": null
   },
@@ -464,8 +674,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "What number goes into both 15 and 5?",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "5" },
-      { "explanation": "Factorise the expression.", "workingOut": "5(3y^2 + 1)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "5"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "5(3y^2 + 1)"
+      }
     ],
     "graphData": null
   },
@@ -479,8 +695,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find the HCF of the numbers, and the common variable.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "12x" },
-      { "explanation": "Factorise the expression.", "workingOut": "12x(-3 + 2x) = 12x(2x - 3)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "12x"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "12x(-3 + 2x) = 12x(2x - 3)"
+      }
     ],
     "graphData": null
   },
@@ -494,8 +716,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "What is the highest common factor of the numbers and the variables?",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "3ab" },
-      { "explanation": "Factorise the expression.", "workingOut": "3ab(5b + 1)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "3ab"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "3ab(5b + 1)"
+      }
     ],
     "graphData": null
   },
@@ -509,8 +737,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Look for the common number and common variable.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "6a" },
-      { "explanation": "Factorise the expression.", "workingOut": "6a(2 + b)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "6a"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "6a(2 + b)"
+      }
     ],
     "graphData": null
   },
@@ -524,8 +758,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find the common number and the common variables.",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "7xy" },
-      { "explanation": "Factorise the expression.", "workingOut": "7xy(2 + y)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "7xy"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "7xy(2 + y)"
+      }
     ],
     "graphData": null
   },
@@ -539,12 +779,17 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "What is the largest number and which variables are common?",
     "solutionSteps": [
-      { "explanation": "Find the HCF of the terms.", "workingOut": "6mp" },
-      { "explanation": "Factorise the expression.", "workingOut": "6mp(5n - m)" }
+      {
+        "explanation": "Find the HCF of the terms.",
+        "workingOut": "6mp"
+      },
+      {
+        "explanation": "Factorise the expression.",
+        "workingOut": "6mp(5n - m)"
+      }
     ],
     "graphData": null
   },
-  // Question 7
   {
     "id": "y8-17e-q7a",
     "type": "short_answer",
@@ -555,8 +800,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Multiply the term outside the bracket by each term inside.",
     "solutionSteps": [
-      { "explanation": "Multiply 3 by each term.", "workingOut": "3 \\times m + 3 \\times 4" },
-      { "explanation": "Simplify.", "workingOut": "3m + 12" }
+      {
+        "explanation": "Multiply 3 by each term.",
+        "workingOut": "3 \\times m + 3 \\times 4"
+      },
+      {
+        "explanation": "Simplify.",
+        "workingOut": "3m + 12"
+      }
     ],
     "graphData": null
   },
@@ -570,8 +821,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Be careful with the negative signs.",
     "solutionSteps": [
-      { "explanation": "Multiply -3 by each term.", "workingOut": "-3 \\times 2x + (-3) \\times (-5)" },
-      { "explanation": "Simplify.", "workingOut": "-6x + 15" }
+      {
+        "explanation": "Multiply -3 by each term.",
+        "workingOut": "-3 \\times 2x + (-3) \\times (-5)"
+      },
+      {
+        "explanation": "Simplify.",
+        "workingOut": "-6x + 15"
+      }
     ],
     "graphData": null
   },
@@ -585,8 +842,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Be careful with the negative signs.",
     "solutionSteps": [
-      { "explanation": "Multiply -5 by each term.", "workingOut": "-5 \\times 2x + (-5) \\times (-3)" },
-      { "explanation": "Simplify.", "workingOut": "-10x + 15" }
+      {
+        "explanation": "Multiply -5 by each term.",
+        "workingOut": "-5 \\times 2x + (-5) \\times (-3)"
+      },
+      {
+        "explanation": "Simplify.",
+        "workingOut": "-10x + 15"
+      }
     ],
     "graphData": null
   },
@@ -600,8 +863,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Multiply every term in the first bracket by every term in the second bracket.",
     "solutionSteps": [
-      { "explanation": "Expand the brackets.", "workingOut": "4x^2 - 8x + 3x - 6" },
-      { "explanation": "Collect like terms.", "workingOut": "4x^2 - 5x - 6" }
+      {
+        "explanation": "Expand the brackets.",
+        "workingOut": "4x^2 - 8x + 3x - 6"
+      },
+      {
+        "explanation": "Collect like terms.",
+        "workingOut": "4x^2 - 5x - 6"
+      }
     ],
     "graphData": null
   },
@@ -615,9 +884,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Multiply $a$ by each term inside the bracket.",
     "solutionSteps": [
-      { "explanation": "Multiply $a$ by $a^2$.", "workingOut": "a^3" },
-      { "explanation": "Multiply $a$ by 4.", "workingOut": "4a" },
-      { "explanation": "Combine.", "workingOut": "a^3 + 4a" }
+      {
+        "explanation": "Multiply \\(a\\) by \\(a^2\\).",
+        "workingOut": "a^3"
+      },
+      {
+        "explanation": "Multiply \\(a\\) by 4.",
+        "workingOut": "4a"
+      },
+      {
+        "explanation": "Combine.",
+        "workingOut": "a^3 + 4a"
+      }
     ],
     "graphData": null
   },
@@ -631,8 +909,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Use the difference of two squares rule: $(a - b)(a + b) = a^2 - b^2$.",
     "solutionSteps": [
-      { "explanation": "Recognise the difference of two squares pattern.", "workingOut": "(a-b)(a+b) = a^2 - b^2" },
-      { "explanation": "Apply the rule.", "workingOut": "3^2 - x^2 = 9 - x^2" }
+      {
+        "explanation": "Recognise the difference of two squares pattern.",
+        "workingOut": "(a-b)(a+b) = a^2 - b^2"
+      },
+      {
+        "explanation": "Apply the rule.",
+        "workingOut": "3^2 - x^2 = 9 - x^2"
+      }
     ],
     "graphData": null
   },
@@ -646,8 +930,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Multiply every term in the first bracket by every term in the second bracket.",
     "solutionSteps": [
-      { "explanation": "Expand the brackets.", "workingOut": "9z^2 + 15z + 6z + 10" },
-      { "explanation": "Collect like terms.", "workingOut": "9z^2 + 21z + 10" }
+      {
+        "explanation": "Expand the brackets.",
+        "workingOut": "9z^2 + 15z + 6z + 10"
+      },
+      {
+        "explanation": "Collect like terms.",
+        "workingOut": "9z^2 + 21z + 10"
+      }
     ],
     "graphData": null
   },
@@ -661,8 +951,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Use the difference of two squares rule: $(a - b)(a + b) = a^2 - b^2$.",
     "solutionSteps": [
-      { "explanation": "Recognise the difference of two squares pattern.", "workingOut": "(a-b)(a+b) = a^2 - b^2" },
-      { "explanation": "Apply the rule.", "workingOut": "(3z)^2 - 2^2 = 9z^2 - 4" }
+      {
+        "explanation": "Recognise the difference of two squares pattern.",
+        "workingOut": "(a-b)(a+b) = a^2 - b^2"
+      },
+      {
+        "explanation": "Apply the rule.",
+        "workingOut": "(3z)^2 - 2^2 = 9z^2 - 4"
+      }
     ],
     "graphData": null
   },
@@ -676,9 +972,18 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Remember that $(x + 3)^2 = (x + 3)(x + 3)$.",
     "solutionSteps": [
-      { "explanation": "Write out the expansion.", "workingOut": "(x + 3)(x + 3)" },
-      { "explanation": "Expand the brackets.", "workingOut": "x^2 + 3x + 3x + 9" },
-      { "explanation": "Collect like terms.", "workingOut": "x^2 + 6x + 9" }
+      {
+        "explanation": "Write out the expansion.",
+        "workingOut": "(x + 3)(x + 3)"
+      },
+      {
+        "explanation": "Expand the brackets.",
+        "workingOut": "x^2 + 3x + 3x + 9"
+      },
+      {
+        "explanation": "Collect like terms.",
+        "workingOut": "x^2 + 6x + 9"
+      }
     ],
     "graphData": null
   },
@@ -692,8 +997,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Use the perfect square rule: $(a + b)^2 = a^2 + 2ab + b^2$.",
     "solutionSteps": [
-      { "explanation": "Apply the perfect square rule.", "workingOut": "(3b)^2 + 2(3b)(2) + 2^2" },
-      { "explanation": "Simplify.", "workingOut": "9b^2 + 12b + 4" }
+      {
+        "explanation": "Apply the perfect square rule.",
+        "workingOut": "(3b)^2 + 2(3b)(2) + 2^2"
+      },
+      {
+        "explanation": "Simplify.",
+        "workingOut": "9b^2 + 12b + 4"
+      }
     ],
     "graphData": null
   },
@@ -707,8 +1018,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Multiply every term in the first bracket by every term in the second bracket.",
     "solutionSteps": [
-      { "explanation": "Expand the brackets.", "workingOut": "9s^2 + 6s - 12s - 8" },
-      { "explanation": "Collect like terms.", "workingOut": "9s^2 - 6s - 8" }
+      {
+        "explanation": "Expand the brackets.",
+        "workingOut": "9s^2 + 6s - 12s - 8"
+      },
+      {
+        "explanation": "Collect like terms.",
+        "workingOut": "9s^2 - 6s - 8"
+      }
     ],
     "graphData": null
   },
@@ -722,12 +1039,17 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Multiply every term in the first bracket by every term in the second bracket.",
     "solutionSteps": [
-      { "explanation": "Expand the brackets.", "workingOut": "9a^2 - 6ab + 3ab - 2b^2" },
-      { "explanation": "Collect like terms.", "workingOut": "9a^2 - 3ab - 2b^2" }
+      {
+        "explanation": "Expand the brackets.",
+        "workingOut": "9a^2 - 6ab + 3ab - 2b^2"
+      },
+      {
+        "explanation": "Collect like terms.",
+        "workingOut": "9a^2 - 3ab - 2b^2"
+      }
     ],
     "graphData": null
   },
-  // Question 8
   {
     "id": "y8-17e-q8a",
     "type": "short_answer",
@@ -738,8 +1060,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find two numbers that multiply to 16 and add to 8.",
     "solutionSteps": [
-      { "explanation": "Find factors of 16 that sum to 8.", "workingOut": "4 \\text{ and } 4" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(x + 4)^2" }
+      {
+        "explanation": "Find factors of 16 that sum to 8.",
+        "workingOut": "4 \\text{ and } 4"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(x + 4)^2"
+      }
     ],
     "graphData": null
   },
@@ -753,8 +1081,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find two numbers that multiply to 9 and add to 6.",
     "solutionSteps": [
-      { "explanation": "Find factors of 9 that sum to 6.", "workingOut": "3 \\text{ and } 3" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(a + 3)^2" }
+      {
+        "explanation": "Find factors of 9 that sum to 6.",
+        "workingOut": "3 \\text{ and } 3"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(a + 3)^2"
+      }
     ],
     "graphData": null
   },
@@ -768,8 +1102,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find two negative numbers that multiply to 15.",
     "solutionSteps": [
-      { "explanation": "Find factors of 15 that sum to -8.", "workingOut": "-3 \\text{ and } -5" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(x - 3)(x - 5)" }
+      {
+        "explanation": "Find factors of 15 that sum to -8.",
+        "workingOut": "-3 \\text{ and } -5"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(x - 3)(x - 5)"
+      }
     ],
     "graphData": null
   },
@@ -783,8 +1123,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find two numbers that multiply to 4 and add to 5.",
     "solutionSteps": [
-      { "explanation": "Find factors of 4 that sum to 5.", "workingOut": "1 \\text{ and } 4" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(x + 1)(x + 4)" }
+      {
+        "explanation": "Find factors of 4 that sum to 5.",
+        "workingOut": "1 \\text{ and } 4"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(x + 1)(x + 4)"
+      }
     ],
     "graphData": null
   },
@@ -798,8 +1144,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find two negative numbers that multiply to 9.",
     "solutionSteps": [
-      { "explanation": "Find factors of 9 that sum to -6.", "workingOut": "-3 \\text{ and } -3" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(a - 3)^2" }
+      {
+        "explanation": "Find factors of 9 that sum to -6.",
+        "workingOut": "-3 \\text{ and } -3"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(a - 3)^2"
+      }
     ],
     "graphData": null
   },
@@ -813,8 +1165,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find two numbers that multiply to 16 and add to 10.",
     "solutionSteps": [
-      { "explanation": "Find factors of 16 that sum to 10.", "workingOut": "2 \\text{ and } 8" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(x + 2)(x + 8)" }
+      {
+        "explanation": "Find factors of 16 that sum to 10.",
+        "workingOut": "2 \\text{ and } 8"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(x + 2)(x + 8)"
+      }
     ],
     "graphData": null
   },
@@ -828,8 +1186,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "One number is positive and the other is negative.",
     "solutionSteps": [
-      { "explanation": "Find factors of -10 that sum to -3.", "workingOut": "-5 \\text{ and } 2" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(x - 5)(x + 2)" }
+      {
+        "explanation": "Find factors of -10 that sum to -3.",
+        "workingOut": "-5 \\text{ and } 2"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(x - 5)(x + 2)"
+      }
     ],
     "graphData": null
   },
@@ -843,8 +1207,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "One number is positive and the other is negative.",
     "solutionSteps": [
-      { "explanation": "Find factors of -28 that sum to -3.", "workingOut": "-7 \\text{ and } 4" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(a - 7)(a + 4)" }
+      {
+        "explanation": "Find factors of -28 that sum to -3.",
+        "workingOut": "-7 \\text{ and } 4"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(a - 7)(a + 4)"
+      }
     ],
     "graphData": null
   },
@@ -858,8 +1228,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find two negative numbers that multiply to 4 and add to -4.",
     "solutionSteps": [
-      { "explanation": "Find factors of 4 that sum to -4.", "workingOut": "-2 \\text{ and } -2" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(a - 2)^2" }
+      {
+        "explanation": "Find factors of 4 that sum to -4.",
+        "workingOut": "-2 \\text{ and } -2"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(a - 2)^2"
+      }
     ],
     "graphData": null
   },
@@ -873,8 +1249,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "Find two negative numbers that multiply to 7.",
     "solutionSteps": [
-      { "explanation": "Find factors of 7 that sum to -8.", "workingOut": "-1 \\text{ and } -7" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(x - 1)(x - 7)" }
+      {
+        "explanation": "Find factors of 7 that sum to -8.",
+        "workingOut": "-1 \\text{ and } -7"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(x - 1)(x - 7)"
+      }
     ],
     "graphData": null
   },
@@ -888,8 +1270,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "One number is positive and the other is negative.",
     "solutionSteps": [
-      { "explanation": "Find factors of -35 that sum to -2.", "workingOut": "-7 \\text{ and } 5" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(x - 7)(x + 5)" }
+      {
+        "explanation": "Find factors of -35 that sum to -2.",
+        "workingOut": "-7 \\text{ and } 5"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(x - 7)(x + 5)"
+      }
     ],
     "graphData": null
   },
@@ -903,8 +1291,14 @@ export const Y8_CH17E_QUESTIONS = [
     "t": "Review",
     "hint": "One number is positive and the other is negative.",
     "solutionSteps": [
-      { "explanation": "Find factors of -18 that sum to -3.", "workingOut": "-6 \\text{ and } 3" },
-      { "explanation": "Write as a factored expression.", "workingOut": "(x - 6)(x + 3)" }
+      {
+        "explanation": "Find factors of -18 that sum to -3.",
+        "workingOut": "-6 \\text{ and } 3"
+      },
+      {
+        "explanation": "Write as a factored expression.",
+        "workingOut": "(x - 6)(x + 3)"
+      }
     ],
     "graphData": null
   }

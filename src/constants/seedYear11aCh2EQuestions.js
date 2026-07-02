@@ -5,10 +5,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(7\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "Rational; \\\\(\\\\frac{7}{1}\\\\)",
+        "text": "Rational, but only expressible as a decimal, not a fraction",
         "imageUrl": ""
       },
       {
@@ -16,11 +16,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Rational, but only expressible as a decimal, not a fraction",
+        "text": "Cannot be classified as rational or irrational",
         "imageUrl": ""
       },
       {
-        "text": "Cannot be classified as rational or irrational",
+        "text": "Rational; \\\\(\\\\frac{7}{1}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -57,14 +57,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(-2\\\\frac{1}{4}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "Rational; \\\\(-\\\\frac{9}{4}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "Irrational (cannot be written as a fraction of integers)",
+        "text": "Cannot be classified as rational or irrational",
         "imageUrl": ""
       },
       {
@@ -72,7 +68,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Cannot be classified as rational or irrational",
+        "text": "Rational; \\\\(-\\\\frac{9}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       }
     ],
@@ -109,14 +109,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt{9}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "Rational; \\\\(\\\\frac{3}{1}\\\\)",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "Irrational (cannot be written as a fraction of integers)",
+        "text": "Cannot be classified as rational or irrational",
         "imageUrl": ""
       },
       {
@@ -124,7 +124,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Cannot be classified as rational or irrational",
+        "text": "Rational; \\\\(\\\\frac{3}{1}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -161,18 +161,18 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt{10}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "Irrational (cannot be written as a fraction of integers)",
-        "imageUrl": ""
-      },
       {
         "text": "Rational; it can be written as a terminating decimal",
         "imageUrl": ""
       },
       {
         "text": "Rational; it can be written as a recurring decimal fraction",
+        "imageUrl": ""
+      },
+      {
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
@@ -213,12 +213,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt[3]{15}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
-      {
-        "text": "Irrational (cannot be written as a fraction of integers)",
-        "imageUrl": ""
-      },
       {
         "text": "Rational; it can be written as a terminating decimal",
         "imageUrl": ""
@@ -229,6 +225,10 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "text": "Rational, but the fraction has not been simplified",
+        "imageUrl": ""
+      },
+      {
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       }
     ],
@@ -265,14 +265,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\sqrt[4]{16}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "Rational; \\\\(\\\\frac{2}{1}\\\\)",
+        "text": "Irrational (cannot be written as a fraction of integers)",
         "imageUrl": ""
       },
       {
-        "text": "Irrational (cannot be written as a fraction of integers)",
+        "text": "Cannot be classified as rational or irrational",
         "imageUrl": ""
       },
       {
@@ -280,7 +280,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Cannot be classified as rational or irrational",
+        "text": "Rational; \\\\(\\\\frac{2}{1}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -317,10 +317,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(-0.16\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "Rational; \\\\(-\\\\frac{4}{25}\\\\)",
+        "text": "Rational, but only expressible as a decimal, not a fraction",
         "imageUrl": ""
       },
       {
@@ -328,7 +328,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Rational, but only expressible as a decimal, not a fraction",
+        "text": "Rational; \\\\(-\\\\frac{4}{25}\\\\)",
         "imageUrl": ""
       },
       {
@@ -369,22 +369,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Classify the real number as rational or irrational. If rational, express in the form \\\\(a/b\\\\) where \\\\(a\\\\) and \\\\(b\\\\) are integers.\n\n\\\\(\\\\pi\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "Irrational (cannot be written as a fraction of integers)",
-        "imageUrl": ""
-      },
       {
         "text": "Rational; it can be written as a terminating decimal",
         "imageUrl": ""
       },
       {
-        "text": "Rational; it can be written as a recurring decimal fraction",
+        "text": "Rational, but the fraction has not been simplified",
         "imageUrl": ""
       },
       {
-        "text": "Rational, but the fraction has not been simplified",
+        "text": "Irrational (cannot be written as a fraction of integers)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Rational; it can be written as a recurring decimal fraction",
         "imageUrl": ""
       }
     ],
@@ -668,11 +668,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-4, 6)\\\\)",
+        "text": "\\\\([-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\([-4, 6)\\\\)",
+        "text": "\\\\((-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
@@ -713,22 +713,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\\\(-4 < x < 6\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\((-4, 6)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\([-4, 6]\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\([-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\((-4, 6]\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-4, 6)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\([-4, 6]\\\\)",
         "imageUrl": ""
       }
     ],
@@ -765,10 +765,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\\\(-4 < x \\\\le 6\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\((-4, 6]\\\\)",
+        "text": "\\\\([-4, 6]\\\\)",
         "imageUrl": ""
       },
       {
@@ -776,11 +776,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\([-4, 6]\\\\)",
+        "text": "\\\\((-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-4, 6)\\\\)",
+        "text": "\\\\((-4, 6]\\\\)",
         "imageUrl": ""
       }
     ],
@@ -817,14 +817,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\\\(-4 \\\\le x < 6\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\([-4, 6)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-4, 6]\\\\)",
+        "text": "\\\\((-4, 6)\\\\)",
         "imageUrl": ""
       },
       {
@@ -832,7 +828,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-4, 6)\\\\)",
+        "text": "\\\\((-4, 6]\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\([-4, 6)\\\\)",
         "imageUrl": ""
       }
     ],
@@ -869,10 +869,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\\\(x \\\\le 6\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "\\\\((-\\\\infty, 6]\\\\)",
+        "text": "\\\\((6, \\\\infty)\\\\)",
         "imageUrl": ""
       },
       {
@@ -880,11 +880,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\([-\\\\infty, 6]\\\\)",
+        "text": "\\\\((-\\\\infty, 6]\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((6, \\\\infty)\\\\)",
+        "text": "\\\\([-\\\\infty, 6]\\\\)",
         "imageUrl": ""
       }
     ],
@@ -921,10 +921,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using bracket interval notation.\n\n\\\\(x > -4\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\((-4, \\\\infty)\\\\)",
+        "text": "\\\\((-\\\\infty, -4)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-4, \\\\infty]\\\\)",
         "imageUrl": ""
       },
       {
@@ -932,11 +936,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\((-\\\\infty, -4)\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\((-4, \\\\infty]\\\\)",
+        "text": "\\\\((-4, \\\\infty)\\\\)",
         "imageUrl": ""
       }
     ],
@@ -984,11 +984,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 < x \\\\le 3\\\\)",
+        "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 \\\\le x < 3\\\\)",
+        "text": "\\\\(-5 < x \\\\le 3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1025,14 +1025,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\\\([-5, 3]\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
-        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
+        "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 < x < 3\\\\)",
+        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
@@ -1040,7 +1040,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 \\\\le x < 3\\\\)",
+        "text": "\\\\(-5 < x < 3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1077,14 +1077,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\\\([-5, 3)\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(-5 \\\\le x < 3\\\\)",
+        "text": "\\\\(-5 < x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 < x \\\\le 3\\\\)",
+        "text": "\\\\(-5 < x < 3\\\\)",
         "imageUrl": ""
       },
       {
@@ -1092,7 +1092,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 < x < 3\\\\)",
+        "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1129,22 +1129,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\\\((-5, 3]\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\(-5 < x \\\\le 3\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(-5 \\\\le x < 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
+        "text": "\\\\(-5 < x < 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-5 < x < 3\\\\)",
+        "text": "\\\\(-5 < x \\\\le 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-5 \\\\le x \\\\le 3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1181,14 +1181,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write the interval using inequalities.\n\n\\\\((3, \\\\infty)\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(x > 3\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(x \\\\ge 3\\\\)",
+        "text": "\\\\(x \\\\le 3\\\\)",
         "imageUrl": ""
       },
       {
@@ -1196,7 +1192,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x \\\\le 3\\\\)",
+        "text": "\\\\(x \\\\ge 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(x > 3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1292,15 +1292,15 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4\\\\sqrt{6}\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(2\\\\sqrt{12}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(6\\\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1344,7 +1344,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4\\\\sqrt{5}\\\\)",
+        "text": "\\\\(5\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
@@ -1352,7 +1352,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(5\\\\sqrt{3}\\\\)",
+        "text": "\\\\(4\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1389,14 +1389,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{50}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(5\\\\sqrt{2}\\\\)",
+        "text": "\\\\(6\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(6\\\\sqrt{2}\\\\)",
+        "text": "\\\\(2\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
@@ -1404,7 +1404,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{5}\\\\)",
+        "text": "\\\\(5\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1441,22 +1441,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{500}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\(10\\\\sqrt{5}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(11\\\\sqrt{5}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(5\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(50\\\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(11\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1493,18 +1493,18 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(3\\\\sqrt{18}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
+      {
+        "text": "\\\\(3\\\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
       {
         "text": "\\\\(9\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(6\\\\sqrt{2}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(3\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       },
       {
@@ -1545,22 +1545,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(2\\\\sqrt{40}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\(4\\\\sqrt{10}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(2\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(8\\\\sqrt{10}\\\\)",
+        "text": "\\\\(4\\\\sqrt{20}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4\\\\sqrt{20}\\\\)",
+        "text": "\\\\(4\\\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1597,14 +1597,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{5} + \\\\sqrt{5}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(2\\\\sqrt{5}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\sqrt{10}\\\\)",
+        "text": "\\\\(2\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
@@ -1612,7 +1608,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{10}\\\\)",
+        "text": "\\\\(\\\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1644,22 +1644,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{5} \\\\times \\\\sqrt{5}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\(5\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(-5\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(10\\\\)",
+        "text": "\\\\(\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{10}\\\\)",
+        "text": "\\\\(5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1691,10 +1691,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\((2\\\\sqrt{7})^2\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "\\\\(28\\\\)",
+        "text": "\\\\(4\\\\sqrt{7}\\\\)",
         "imageUrl": ""
       },
       {
@@ -1702,11 +1702,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(14\\\\)",
+        "text": "\\\\(28\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4\\\\sqrt{7}\\\\)",
+        "text": "\\\\(14\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1790,22 +1790,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{35} \\\\div \\\\sqrt{5}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
-      {
-        "text": "\\\\(\\\\sqrt{7}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\sqrt{8}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(7\\\\)",
         "imageUrl": ""
       },
       {
+        "text": "\\\\(\\\\sqrt{7}\\\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\\\(\\\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\sqrt{8}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1844,7 +1844,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4\\\\sqrt{5}\\\\)",
+        "text": "\\\\(3\\\\sqrt{44}\\\\)",
         "imageUrl": ""
       },
       {
@@ -1852,7 +1852,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{44}\\\\)",
+        "text": "\\\\(4\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1931,22 +1931,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{10} \\\\times \\\\sqrt{2}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\(2\\\\sqrt{5}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(\\\\sqrt{20}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{5}\\\\)",
+        "text": "\\\\(2\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{6}\\\\)",
+        "text": "\\\\(2\\\\sqrt{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -1978,18 +1978,18 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Simplify:\n\n\\\\(2\\\\sqrt{6} \\\\times 4\\\\sqrt{15}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\(24\\\\sqrt{10}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(25\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(8\\\\sqrt{90}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(24\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2030,12 +2030,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{27} - \\\\sqrt{12}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
-      {
-        "text": "\\\\(\\\\sqrt{3}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(3\\\\sqrt{3}\\\\)",
         "imageUrl": ""
@@ -2046,6 +2042,10 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "text": "\\\\(5\\\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2082,14 +2082,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{18} + \\\\sqrt{32}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
-        "text": "\\\\(7\\\\sqrt{2}\\\\)",
+        "text": "\\\\(\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{2}\\\\)",
+        "text": "\\\\(7\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2141,11 +2141,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{2}\\\\)",
+        "text": "\\\\(4\\\\sqrt{6}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4\\\\sqrt{6}\\\\)",
+        "text": "\\\\(2\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2186,22 +2186,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Simplify:\n\n\\\\(\\\\sqrt{54} - \\\\sqrt{20} + \\\\sqrt{150} - \\\\sqrt{80}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
-      {
-        "text": "\\\\(8\\\\sqrt{6} - 6\\\\sqrt{5}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(2\\\\sqrt{6} - 2\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(8\\\\sqrt{6} + 6\\\\sqrt{5}\\\\)",
+        "text": "\\\\(8\\\\sqrt{6} - 6\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(8\\\\sqrt{5} - 6\\\\sqrt{6}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8\\\\sqrt{6} + 6\\\\sqrt{5}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2238,10 +2238,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\\\(\\\\sqrt{7}(3-\\\\sqrt{7})\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(3\\\\sqrt{7} - 7\\\\)",
+        "text": "\\\\(2\\\\sqrt{7} - 7\\\\)",
         "imageUrl": ""
       },
       {
@@ -2253,7 +2253,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{7} - 7\\\\)",
+        "text": "\\\\(3\\\\sqrt{7} - 7\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2285,10 +2285,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\\\(\\\\sqrt{5}(2\\\\sqrt{6}+3\\\\sqrt{2})\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "\\\\(2\\\\sqrt{30} + 3\\\\sqrt{10}\\\\)",
+        "text": "\\\\(2\\\\sqrt{11} + 3\\\\sqrt{7}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2296,11 +2296,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(5\\\\sqrt{30} + 3\\\\sqrt{10}\\\\)",
+        "text": "\\\\(2\\\\sqrt{30} + 3\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{11} + 3\\\\sqrt{7}\\\\)",
+        "text": "\\\\(5\\\\sqrt{30} + 3\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2332,10 +2332,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\\\(\\\\sqrt{15}(\\\\sqrt{3}-5)\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "\\\\(3\\\\sqrt{5} - 5\\\\sqrt{15}\\\\)",
+        "text": "\\\\(\\\\sqrt{45} - \\\\sqrt{75}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2343,7 +2343,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{45} - \\\\sqrt{75}\\\\)",
+        "text": "\\\\(3\\\\sqrt{5} - 5\\\\sqrt{15}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2384,10 +2384,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand:\n\n\\\\(\\\\sqrt{3}(\\\\sqrt{6}+2\\\\sqrt{3})\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(3\\\\sqrt{2} + 6\\\\)",
+        "text": "\\\\(\\\\sqrt{18} + 2\\\\sqrt{9}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2399,7 +2399,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{18} + 2\\\\sqrt{9}\\\\)",
+        "text": "\\\\(3\\\\sqrt{2} + 6\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2436,14 +2436,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\\\((\\\\sqrt{5}+2)(3-\\\\sqrt{5})\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
-        "text": "\\\\(\\\\sqrt{5} + 1\\\\)",
+        "text": "\\\\(7\\\\sqrt{5} + 1\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\sqrt{5} - 1\\\\)",
+        "text": "\\\\(\\\\sqrt{5} + 1\\\\)",
         "imageUrl": ""
       },
       {
@@ -2451,7 +2451,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(7\\\\sqrt{5} + 1\\\\)",
+        "text": "\\\\(\\\\sqrt{5} - 1\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2488,22 +2488,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\\\((2\\\\sqrt{3}-1)(3\\\\sqrt{3}+5)\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
-      {
-        "text": "\\\\(13 + 7\\\\sqrt{3}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(13 - 7\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(23 + 7\\\\sqrt{3}\\\\)",
+        "text": "\\\\(13 + 7\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(18 + 7\\\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(23 + 7\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2540,22 +2540,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\\\((\\\\sqrt{7}-3)(2\\\\sqrt{5}+4)\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
-      {
-        "text": "\\\\(2\\\\sqrt{35} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(2\\\\sqrt{35} - 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(2\\\\sqrt{35} + 4\\\\sqrt{7} + 6\\\\sqrt{5} - 12\\\\)",
         "imageUrl": ""
       },
       {
+        "text": "\\\\(2\\\\sqrt{35} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\\\(2\\\\sqrt{12} + 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\\\sqrt{35} - 4\\\\sqrt{7} - 6\\\\sqrt{5} - 12\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2587,10 +2587,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\\\((\\\\sqrt{10}-3)(\\\\sqrt{10}+3)\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(1\\\\)",
+        "text": "\\\\(7\\\\)",
         "imageUrl": ""
       },
       {
@@ -2602,7 +2602,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(7\\\\)",
+        "text": "\\\\(1\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2634,18 +2634,18 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\\\((2\\\\sqrt{6}+\\\\sqrt{11})(2\\\\sqrt{6}-\\\\sqrt{11})\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\(13\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(-13\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(35\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(13\\\\)",
         "imageUrl": ""
       },
       {
@@ -2681,8 +2681,12 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\\\((\\\\sqrt{7}-2)^2\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
+      {
+        "text": "\\\\(3\\\\)",
+        "imageUrl": ""
+      },
       {
         "text": "\\\\(11 - 4\\\\sqrt{7}\\\\)",
         "imageUrl": ""
@@ -2693,10 +2697,6 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "text": "\\\\(9 - 4\\\\sqrt{7}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2728,12 +2728,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\\\((\\\\sqrt{5}+\\\\sqrt{2})^2\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
-      {
-        "text": "\\\\(7 + 2\\\\sqrt{10}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(7 - 2\\\\sqrt{10}\\\\)",
         "imageUrl": ""
@@ -2744,6 +2740,10 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "text": "\\\\(9 + 2\\\\sqrt{10}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(7 + 2\\\\sqrt{10}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2775,10 +2775,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and simplify:\n\n\\\\((4-3\\\\sqrt{2})^2\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(34 - 24\\\\sqrt{2}\\\\)",
+        "text": "\\\\(2\\\\)",
         "imageUrl": ""
       },
       {
@@ -2790,7 +2790,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\)",
+        "text": "\\\\(34 - 24\\\\sqrt{2}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2822,14 +2822,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{1}{\\\\sqrt{5}}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{5}}{5}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}}{25}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{5}}{25}\\\\)",
+        "text": "\\\\(-\\\\frac{\\\\sqrt{5}}{5}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2837,7 +2837,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\frac{\\\\sqrt{5}}{5}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}}{5}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2881,7 +2881,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{3\\\\sqrt{2}}{4}\\\\)",
+        "text": "\\\\(-\\\\frac{3\\\\sqrt{2}}{2}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2889,7 +2889,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\frac{3\\\\sqrt{2}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3\\\\sqrt{2}}{4}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2933,15 +2933,15 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{34}}{11}\\\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\\\(\\\\frac{3}{11}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(\\\\frac{\\\\sqrt{33}}{121}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{\\\\sqrt{34}}{11}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -2978,14 +2978,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{1}{5\\\\sqrt{3}}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{3}}{15}\\\\)",
+        "text": "\\\\(-\\\\frac{\\\\sqrt{3}}{15}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{3}}{3}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{3}}{15}\\\\)",
         "imageUrl": ""
       },
       {
@@ -2993,7 +2993,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(-\\\\frac{\\\\sqrt{3}}{15}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{3}}{3}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3037,15 +3037,15 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\\\(-\\\\frac{5\\\\sqrt{7}}{14}\\\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\\\(\\\\frac{5\\\\sqrt{7}}{7}\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(\\\\frac{5}{14}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(-\\\\frac{5\\\\sqrt{7}}{14}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3134,12 +3134,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{1}{\\\\sqrt{5}+\\\\sqrt{2}}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
-      {
-        "text": "\\\\(\\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(\\\\frac{\\\\sqrt{5}+\\\\sqrt{2}}{3}\\\\)",
         "imageUrl": ""
@@ -3150,6 +3146,10 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "text": "\\\\(\\\\sqrt{5}-\\\\sqrt{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{\\\\sqrt{5}-\\\\sqrt{2}}{3}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3191,10 +3191,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{1}{3-\\\\sqrt{7}}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(\\\\frac{3+\\\\sqrt{7}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{3+\\\\sqrt{7}}{16}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3+\\\\sqrt{7}\\\\)",
         "imageUrl": ""
       },
       {
@@ -3202,11 +3206,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{3+\\\\sqrt{7}}{16}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(3+\\\\sqrt{7}\\\\)",
+        "text": "\\\\(\\\\frac{3+\\\\sqrt{7}}{2}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3248,14 +3248,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{1}{2\\\\sqrt{6}-\\\\sqrt{3}}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
-        "text": "\\\\(\\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{21}\\\\)",
+        "text": "\\\\(2\\\\sqrt{6}+\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{2\\\\sqrt{6}-\\\\sqrt{3}}{21}\\\\)",
+        "text": "\\\\(\\\\frac{2\\\\sqrt{6}+\\\\sqrt{3}}{21}\\\\)",
         "imageUrl": ""
       },
       {
@@ -3263,7 +3263,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{6}+\\\\sqrt{3}\\\\)",
+        "text": "\\\\(\\\\frac{2\\\\sqrt{6}-\\\\sqrt{3}}{21}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3305,12 +3305,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{\\\\sqrt{3}}{\\\\sqrt{3}+1}\\\\)",
-    "answer": 0,
+    "answer": 3,
     "options": [
-      {
-        "text": "\\\\(\\\\frac{3-\\\\sqrt{3}}{2}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(\\\\frac{3+\\\\sqrt{3}}{2}\\\\)",
         "imageUrl": ""
@@ -3321,6 +3317,10 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "text": "\\\\(3-\\\\sqrt{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{3-\\\\sqrt{3}}{2}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3362,14 +3362,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{3}{\\\\sqrt{11}+\\\\sqrt{5}}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{2}\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(\\\\frac{\\\\sqrt{11}+\\\\sqrt{5}}{2}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{6}\\\\)",
         "imageUrl": ""
       },
       {
@@ -3377,7 +3373,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{6}\\\\)",
+        "text": "\\\\(\\\\frac{\\\\sqrt{11}-\\\\sqrt{5}}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{\\\\sqrt{11}+\\\\sqrt{5}}{2}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3419,22 +3419,22 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write with a rational denominator:\n\n\\\\(\\\\frac{3\\\\sqrt{7}}{2\\\\sqrt{5}-\\\\sqrt{7}}\\\\)",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\(\\\\frac{6\\\\sqrt{35}+21}{13}\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(\\\\frac{6\\\\sqrt{35}-21}{13}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{6\\\\sqrt{35}+21}{27}\\\\)",
+        "text": "\\\\(6\\\\sqrt{35}+21\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(6\\\\sqrt{35}+21\\\\)",
+        "text": "\\\\(\\\\frac{6\\\\sqrt{35}+21}{13}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{6\\\\sqrt{35}+21}{27}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3487,11 +3487,11 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{5-2\\\\sqrt{14}}{5}\\\\)",
+        "text": "\\\\(\\\\frac{9-2\\\\sqrt{14}}{9}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(\\\\frac{9-2\\\\sqrt{14}}{9}\\\\)",
+        "text": "\\\\(\\\\frac{5-2\\\\sqrt{14}}{5}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3528,14 +3528,14 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Rationalise the denominator of the fraction.\n\n\\\\(\\\\frac{3\\\\sqrt{3}+5}{3\\\\sqrt{3}-5}\\\\)",
-    "answer": 0,
+    "answer": 1,
     "options": [
       {
-        "text": "\\\\(26 + 15\\\\sqrt{3}\\\\)",
+        "text": "\\\\(52 + 15\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(26 - 15\\\\sqrt{3}\\\\)",
+        "text": "\\\\(26 + 15\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       },
       {
@@ -3543,7 +3543,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(52 + 15\\\\sqrt{3}\\\\)",
+        "text": "\\\\(26 - 15\\\\sqrt{3}\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3580,10 +3580,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the value of \\\\(x\\\\) if \\\\(\\\\sqrt{18} + \\\\sqrt{8} = \\\\sqrt{x}\\\\).",
-    "answer": 0,
+    "answer": 2,
     "options": [
       {
-        "text": "\\\\(x = 50\\\\)",
+        "text": "\\\\(x = 49\\\\)",
         "imageUrl": ""
       },
       {
@@ -3591,7 +3591,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(x = 49\\\\)",
+        "text": "\\\\(x = 50\\\\)",
         "imageUrl": ""
       },
       {
@@ -3632,18 +3632,18 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Simplify \\\\(\\\\frac{3}{\\\\sqrt{5}-2} + \\\\frac{2}{\\\\sqrt{5}+2}\\\\) by forming the lowest common denominator.",
-    "answer": 0,
+    "answer": 2,
     "options": [
-      {
-        "text": "\\\\(5\\\\sqrt{5} + 2\\\\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\\\(\\\\sqrt{5} + 2\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(5\\\\sqrt{5} - 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5\\\\sqrt{5} + 2\\\\)",
         "imageUrl": ""
       },
       {
@@ -3689,10 +3689,10 @@ export const Y11A_CH2E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the value of \\\\(p\\\\) such that \\\\(\\\\frac{\\\\sqrt{5}}{\\\\sqrt{5}-2} = p + q\\\\sqrt{5}\\\\).",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(p = 5\\\\)",
+        "text": "\\\\(p = 1\\\\)",
         "imageUrl": ""
       },
       {
@@ -3704,7 +3704,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\\\(p = 1\\\\)",
+        "text": "\\\\(p = 5\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3748,15 +3748,15 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\\\(q = 1\\\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\\\(q = 5\\\\)",
         "imageUrl": ""
       },
       {
         "text": "\\\\(q = -2\\\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\\\(q = 1\\\\)",
         "imageUrl": ""
       }
     ],

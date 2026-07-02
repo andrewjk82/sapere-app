@@ -1367,7 +1367,7 @@ export const Y11_CH1C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common factor \\( (x - ${a}) \\) from the numerator and denominator.",
+        "explanation": "Cancel the common factor \\( (x - \\({a}) \\) from the numerator and denominator.\\)",
         "workingOut": "\\(\\frac{(x - 1)(x^2 + 1x + 1)}{(x - 1)(x + 1)} = \\frac{x^2 + 1x + 1}{x + 1}\\)",
         "graphData": null
       }
@@ -1458,7 +1458,7 @@ export const Y11_CH1C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common factors \\( (x - ${k}) \\) and \\( (x + 1) \\), then expand the remaining product.",
+        "explanation": "Cancel the common factors \\( (x - \\({k}) \\) and \\( (x + 1) \\), then expand the remaining product.\\)",
         "workingOut": "\\(= (x + 4)(x - 1) = x^2 + 3x - 4\\)",
         "graphData": null
       }
@@ -2111,7 +2111,7 @@ export const Y11_CH1C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common factor \\( (x - ${a}) \\) from the numerator and denominator.",
+        "explanation": "Cancel the common factor \\( (x - \\({a}) \\) from the numerator and denominator.\\)",
         "workingOut": "\\(\\frac{(x - 3)(x^2 + 3x + 9)}{(x - 3)(x + 3)} = \\frac{x^2 + 3x + 9}{x + 3}\\)",
         "graphData": null
       }
@@ -2473,7 +2473,7 @@ export const Y11_CH1C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common factors \\( (x - ${k}) \\) and \\( (x + 1) \\), then expand the remaining product.",
+        "explanation": "Cancel the common factors \\( (x - \\({k}) \\) and \\( (x + 1) \\), then expand the remaining product.\\)",
         "workingOut": "\\(= (x + 2)(x - 1) = x^2 + 1x - 2\\)",
         "graphData": null
       }
@@ -2655,7 +2655,7 @@ export const Y11_CH1C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common factors \\( (x - ${k}) \\) and \\( (x + 1) \\), then expand the remaining product.",
+        "explanation": "Cancel the common factors \\( (x - \\({k}) \\) and \\( (x + 1) \\), then expand the remaining product.\\)",
         "workingOut": "\\(= (x + 3)(x - 1) = x^2 + 2x - 3\\)",
         "graphData": null
       }
@@ -4552,7 +4552,7 @@ export const Y11_CH1C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common factor \\( (x - ${a}) \\) from the numerator and denominator.",
+        "explanation": "Cancel the common factor \\( (x - \\({a}) \\) from the numerator and denominator.\\)",
         "workingOut": "\\(\\frac{(x - 2)(x^2 + 2x + 4)}{(x - 2)(x + 2)} = \\frac{x^2 + 2x + 4}{x + 2}\\)",
         "graphData": null
       }

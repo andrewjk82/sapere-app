@@ -1311,7 +1311,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "hint": "Find the present value of each payment by discounting them, and sum them as a GP.",
     "solutionSteps": [
       {
-        "explanation": "Represent the present value of all 15 annual payments of $5000.",
+        "explanation": "Represent the present value of all 15 annual payments of \\(5000.\\)",
         "workingOut": "\\(PV = \\frac{5000}{1.06} + \\frac{5000}{1.06^2} + \\dots + \\frac{5000}{1.06^{15}}\\)",
         "graphData": null
       },

@@ -396,6 +396,13 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
         }
       }
       text = innerParts.join('');
+      // Clean up stray LaTeX backslashes in plain text (e.g. "[0,\ 2)" or "[0,\, 5)")
+      text = text.replace(/\\+\s+/g, ' ');
+      text = text.replace(/\\+,/g, ' ');
+      text = text.replace(/,\s*\\+/g, ', ');
+      text = text.replace(/,\s*,/g, ',');
+      text = text.replace(/ {2,}/g, ' ');
+
       // Render line breaks: real newlines AND the literal "\n" sequence that
       // leaks into imported question/solution text become <br>. Only applied
       // outside math blocks so KaTeX content is never corrupted.

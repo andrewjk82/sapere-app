@@ -10,7 +10,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Terms with exactly the same variable(s) are called...",
     "solutionSteps": [
       {
-        "explanation": "All these terms have the exact same variable part, which is '$y$'.",
+        "explanation": "All these terms have the exact same variable part, which is '\\(y\\)'.",
         "workingOut": "\\text{Variables are all identical}"
       },
       {
@@ -31,7 +31,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "If the variables are different, the terms are...",
     "solutionSteps": [
       {
-        "explanation": "The terms have different variable parts ($a$ and $b$).",
+        "explanation": "The terms have different variable parts (\\(a\\) and \\(b\\)).",
         "workingOut": "\\text{Variables differ}"
       },
       {
@@ -52,7 +52,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Look at the variables attached to each number.",
     "solutionSteps": [
       {
-        "explanation": "All three terms have the same variable, '$m$'.",
+        "explanation": "All three terms have the same variable, '\\(m\\)'.",
         "workingOut": "\\text{Variables are all } m"
       },
       {
@@ -73,7 +73,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Do the terms share the same variable?",
     "solutionSteps": [
       {
-        "explanation": "Each term has a completely different variable ($p$, $q$, and $r$).",
+        "explanation": "Each term has a completely different variable (\\(p\\), \\(q\\), and \\(r\\)).",
         "workingOut": "\\text{Variables differ}"
       },
       {
@@ -94,7 +94,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Check both the variable and its exponent.",
     "solutionSteps": [
       {
-        "explanation": "All terms have the exact same variable part, which is '$x^2$'.",
+        "explanation": "All terms have the exact same variable part, which is '\\(x^2\\)'.",
         "workingOut": "\\text{Variables are all } x^2"
       },
       {
@@ -115,7 +115,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Do they have the exact same combination of variables?",
     "solutionSteps": [
       {
-        "explanation": "The variable part for each term is '$pq$'.",
+        "explanation": "The variable part for each term is '\\(pq\\)'.",
         "workingOut": "\\text{Variables are all } pq"
       },
       {
@@ -136,7 +136,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Does a different power make them unlike?",
     "solutionSteps": [
       {
-        "explanation": "One term has the variable '$n$', while the other has '$n^2$'.",
+        "explanation": "One term has the variable '\\(n\\)', while the other has '\\(n^2\\)'.",
         "workingOut": "\\text{Powers differ}"
       },
       {
@@ -157,7 +157,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Compare the letters in each term.",
     "solutionSteps": [
       {
-        "explanation": "The first term has variables $a$ and $b$, while the second has $a$ and $c$.",
+        "explanation": "The first term has variables \\(a\\) and \\(b\\), while the second has \\(a\\) and \\(c\\).",
         "workingOut": "\\text{Variables differ}"
       },
       {
@@ -176,7 +176,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Do they have the same variable part?",
     "solutionSteps": [
       {
-        "explanation": "Both terms have '$y$' as their variable.",
+        "explanation": "Both terms have '\\(y\\)' as their variable.",
         "workingOut": "\\text{Variables are identical}"
       },
       {
@@ -206,7 +206,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Do they have the same variable part?",
     "solutionSteps": [
       {
-        "explanation": "Both terms share the exact same variable '$m$'.",
+        "explanation": "Both terms share the exact same variable '\\(m\\)'.",
         "workingOut": "\\text{Variables are identical}"
       },
       {
@@ -236,7 +236,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "One has a variable, the other is just a number.",
     "solutionSteps": [
       {
-        "explanation": "The first term has a variable '$p$', but the second term is a constant with no variable.",
+        "explanation": "The first term has a variable '\\(p\\)', but the second term is a constant with no variable.",
         "workingOut": "\\text{One is variable, one is constant}"
       },
       {
@@ -266,7 +266,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Check the powers of the variables.",
     "solutionSteps": [
       {
-        "explanation": "The first term has $b$ squared ($b^2$), while the second term just has $b$.",
+        "explanation": "The first term has \\(b\\) squared (\\(b^2\\)), while the second term just has \\(b\\).",
         "workingOut": "\\text{Powers are different}"
       },
       {
@@ -296,7 +296,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Do they share the same letter?",
     "solutionSteps": [
       {
-        "explanation": "Both terms have '$x$' as their variable.",
+        "explanation": "Both terms have '\\(x\\)' as their variable.",
         "workingOut": "\\text{Variables are identical}"
       },
       {
@@ -326,7 +326,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Check if the variable and its power are identical.",
     "solutionSteps": [
       {
-        "explanation": "Both terms have the variable part '$m^2$'.",
+        "explanation": "Both terms have the variable part '\\(m^2\\)'.",
         "workingOut": "\\text{Variables and powers are identical}"
       },
       {
@@ -356,7 +356,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Does the order of variables matter in multiplication?",
     "solutionSteps": [
       {
-        "explanation": "The variables $xy$ and $yx$ represent the same product because multiplication is commutative.",
+        "explanation": "The variables \\(xy\\) and \\(yx\\) represent the same product because multiplication is commutative.",
         "workingOut": "xy = yx"
       },
       {
@@ -386,7 +386,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "A term without a visible number has a coefficient of 1.",
     "solutionSteps": [
       {
-        "explanation": "The first term is '$1k$' and the second is '$8k$'. Both have the same variable '$k$'.",
+        "explanation": "The first term is '\\(1k\\)' and the second is '\\(8k\\)'. Both have the same variable '\\(k\\)'.",
         "workingOut": "\\text{Variables are identical}"
       },
       {
@@ -416,7 +416,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Are all the letters exactly the same in both terms?",
     "solutionSteps": [
       {
-        "explanation": "The first term contains $m$ and $n$, while the second contains $m$ and $p$.",
+        "explanation": "The first term contains \\(m\\) and \\(n\\), while the second contains \\(m\\) and \\(p\\).",
         "workingOut": "\\text{Variables differ}"
       },
       {
@@ -446,7 +446,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Look at the variables attached to each number.",
     "solutionSteps": [
       {
-        "explanation": "Both terms have '$pq$' as their variable.",
+        "explanation": "Both terms have '\\(pq\\)' as their variable.",
         "workingOut": "\\text{Variables are identical}"
       },
       {
@@ -476,7 +476,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Look at the exponent of the variable.",
     "solutionSteps": [
       {
-        "explanation": "The first term has $y$ to the power of 1, and the second has $y$ to the power of 2.",
+        "explanation": "The first term has \\(y\\) to the power of 1, and the second has \\(y\\) to the power of 2.",
         "workingOut": "\\text{Powers differ}"
       },
       {
@@ -506,7 +506,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Compare the powers of the variables.",
     "solutionSteps": [
       {
-        "explanation": "One term contains '$n$' while the other contains '$n^2$'.",
+        "explanation": "One term contains '\\(n\\)' while the other contains '\\(n^2\\)'.",
         "workingOut": "\\text{Powers differ}"
       },
       {
@@ -542,7 +542,7 @@ export const Y7_CH23B_QUESTIONS = [
         "workingOut": "\\text{Identify the terms}"
       },
       {
-        "explanation": "The terms are $4m^3$, $3p^2$, $-6m$, $7q$, and $-5$. Counting them gives 5 terms.",
+        "explanation": "The terms are \\(4m^3\\), \\(3p^2\\), \\(-6m\\), \\(7q\\), and \\(-5\\). Counting them gives 5 terms.",
         "workingOut": "5"
       }
     ],
@@ -559,7 +559,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Count from left to right, starting with the first term.",
     "solutionSteps": [
       {
-        "explanation": "List the terms in order: 1st is $4m^3$, 2nd is $3p^2$, 3rd is $-6m$, 4th is $7q$.",
+        "explanation": "List the terms in order: 1st is \\(4m^3\\), 2nd is \\(3p^2\\), 3rd is \\(-6m\\), 4th is \\(7q\\).",
         "workingOut": "\\text{Fourth term is } 7q"
       }
     ],
@@ -576,7 +576,7 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "The coefficient is the number part of the term.",
     "solutionSteps": [
       {
-        "explanation": "The first term is $4m^3$.",
+        "explanation": "The first term is \\(4m^3\\).",
         "workingOut": "\\text{First term: } 4m^3"
       },
       {
@@ -601,7 +601,7 @@ export const Y7_CH23B_QUESTIONS = [
         "workingOut": "\\text{No variable part}"
       },
       {
-        "explanation": "The only term without a variable is $-5$. Be sure to include the negative sign.",
+        "explanation": "The only term without a variable is \\(-5\\). Be sure to include the negative sign.",
         "workingOut": "-5"
       }
     ],
@@ -618,11 +618,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Which two terms have exactly the same variable and exponent?",
     "solutionSteps": [
       {
-        "explanation": "Inspect the variables: $y^2$, $yz$, $cd$, and $y^2$.",
+        "explanation": "Inspect the variables: \\(y^2\\), \\(yz\\), \\(cd\\), and \\(y^2\\).",
         "workingOut": "\\text{Variables are } y^2, yz, cd, y^2"
       },
       {
-        "explanation": "The terms $y^2$ and $4y^2$ share the exact same variable part.",
+        "explanation": "The terms \\(y^2\\) and \\(4y^2\\) share the exact same variable part.",
         "workingOut": "y^2, 4y^2"
       }
     ],
@@ -639,11 +639,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Which terms have exactly the same variable?",
     "solutionSteps": [
       {
-        "explanation": "Inspect the variables: $m$, $q$, $m$, and $m^2$. Remember $m^2$ is different from $m$.",
+        "explanation": "Inspect the variables: \\(m\\), \\(q\\), \\(m\\), and \\(m^2\\). Remember \\(m^2\\) is different from \\(m\\).",
         "workingOut": "\\text{Variables are } m, q, m, m^2"
       },
       {
-        "explanation": "The terms $7m$ and $4m$ share the exact same variable part.",
+        "explanation": "The terms \\(7m\\) and \\(4m\\) share the exact same variable part.",
         "workingOut": "7m, 4m"
       }
     ],
@@ -660,11 +660,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Look for terms with identical letters.",
     "solutionSteps": [
       {
-        "explanation": "Inspect the variables: $p$, $n$, $p$, and $c$.",
+        "explanation": "Inspect the variables: \\(p\\), \\(n\\), \\(p\\), and \\(c\\).",
         "workingOut": "\\text{Variables are } p, n, p, c"
       },
       {
-        "explanation": "The terms $6p$ and $9p$ share the exact same variable part.",
+        "explanation": "The terms \\(6p\\) and \\(9p\\) share the exact same variable part.",
         "workingOut": "6p, 9p"
       }
     ],
@@ -681,11 +681,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Look for terms with identical letters.",
     "solutionSteps": [
       {
-        "explanation": "Inspect the variables: $z$, $b$, $w$, and $z$.",
+        "explanation": "Inspect the variables: \\(z\\), \\(b\\), \\(w\\), and \\(z\\).",
         "workingOut": "\\text{Variables are } z, b, w, z"
       },
       {
-        "explanation": "The terms $5z$ and $9z$ share the exact same variable part.",
+        "explanation": "The terms \\(5z\\) and \\(9z\\) share the exact same variable part.",
         "workingOut": "5z, 9z"
       }
     ],
@@ -702,11 +702,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "There might be more than two like terms.",
     "solutionSteps": [
       {
-        "explanation": "Inspect the variables: $mn$, $y^2$, $mn$, and $mn$.",
+        "explanation": "Inspect the variables: \\(mn\\), \\(y^2\\), \\(mn\\), and \\(mn\\).",
         "workingOut": "\\text{Variables are } mn, y^2, mn, mn"
       },
       {
-        "explanation": "The terms $3mn$, $6mn$, and $9mn$ all share the exact same variable part.",
+        "explanation": "The terms \\(3mn\\), \\(6mn\\), and \\(9mn\\) all share the exact same variable part.",
         "workingOut": "3mn, 6mn, 9mn"
       }
     ],
@@ -723,11 +723,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Does the order of variables matter in multiplication?",
     "solutionSteps": [
       {
-        "explanation": "The variables $pq$ and $qp$ represent the same product because multiplication is commutative.",
+        "explanation": "The variables \\(pq\\) and \\(qp\\) represent the same product because multiplication is commutative.",
         "workingOut": "pq = qp"
       },
       {
-        "explanation": "The terms $4pq$ and $5qp$ share the exact same variables.",
+        "explanation": "The terms \\(4pq\\) and \\(5qp\\) share the exact same variables.",
         "workingOut": "4pq, 5qp"
       }
     ],
@@ -744,11 +744,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Look for terms with identical letters.",
     "solutionSteps": [
       {
-        "explanation": "Inspect the variables: $a$, $b$, $k$, and $b$.",
+        "explanation": "Inspect the variables: \\(a\\), \\(b\\), \\(k\\), and \\(b\\).",
         "workingOut": "\\text{Variables are } a, b, k, b"
       },
       {
-        "explanation": "The terms $6b$ and $7b$ share the exact same variable part.",
+        "explanation": "The terms \\(6b\\) and \\(7b\\) share the exact same variable part.",
         "workingOut": "6b, 7b"
       }
     ],
@@ -765,11 +765,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Remember that $mn$ and $nm$ are the same.",
     "solutionSteps": [
       {
-        "explanation": "The variables $mn$ and $nm$ represent the same product.",
+        "explanation": "The variables \\(mn\\) and \\(nm\\) represent the same product.",
         "workingOut": "mn = nm"
       },
       {
-        "explanation": "The terms $2mn$ and $5nm$ share the exact same variables.",
+        "explanation": "The terms \\(2mn\\) and \\(5nm\\) share the exact same variables.",
         "workingOut": "2mn, 5nm"
       }
     ],
@@ -786,11 +786,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Which terms have the exact same variable?",
     "solutionSteps": [
       {
-        "explanation": "Scan the terms looking for matching variables. The variable '$b$' appears multiple times.",
+        "explanation": "Scan the terms looking for matching variables. The variable '\\(b\\)' appears multiple times.",
         "workingOut": "\\text{Match variables}"
       },
       {
-        "explanation": "The terms $7b$, $3b$, and $6b$ all have '$b$' as their variable.",
+        "explanation": "The terms \\(7b\\), \\(3b\\), and \\(6b\\) all have '\\(b\\)' as their variable.",
         "workingOut": "7b, 3b, 6b"
       }
     ],
@@ -811,7 +811,7 @@ export const Y7_CH23B_QUESTIONS = [
         "workingOut": "\\text{Look for matching powers}"
       },
       {
-        "explanation": "The terms $4y^2$, $y^2$, and $7y^2$ all share '$y^2$'.",
+        "explanation": "The terms \\(4y^2\\), \\(y^2\\), and \\(7y^2\\) all share '\\(y^2\\)'.",
         "workingOut": "4y^2, y^2, 7y^2"
       }
     ],
@@ -832,7 +832,7 @@ export const Y7_CH23B_QUESTIONS = [
         "workingOut": "\\text{Identify constants}"
       },
       {
-        "explanation": "The constant terms are $6, 7, 8, 11$.",
+        "explanation": "The constant terms are \\(6, 7, 8, 11\\).",
         "workingOut": "6, 7, 8, 11"
       }
     ],
@@ -849,11 +849,11 @@ export const Y7_CH23B_QUESTIONS = [
     "hint": "Which terms have exactly the same variable?",
     "solutionSteps": [
       {
-        "explanation": "Scan the terms looking for matching variables. The variable '$p$' appears multiple times.",
+        "explanation": "Scan the terms looking for matching variables. The variable '\\(p\\)' appears multiple times.",
         "workingOut": "\\text{Match variables}"
       },
       {
-        "explanation": "The terms $4p$, $9p$, and $7p$ all have '$p$' as their variable.",
+        "explanation": "The terms \\(4p\\), \\(9p\\), and \\(7p\\) all have '\\(p\\)' as their variable.",
         "workingOut": "4p, 9p, 7p"
       }
     ],
@@ -874,7 +874,7 @@ export const Y7_CH23B_QUESTIONS = [
         "workingOut": "\\text{Look for matching powers}"
       },
       {
-        "explanation": "The terms $4b^2$, $b^2$, and $15b^2$ all share '$b^2$'.",
+        "explanation": "The terms \\(4b^2\\), \\(b^2\\), and \\(15b^2\\) all share '\\(b^2\\)'.",
         "workingOut": "4b^2, b^2, 15b^2"
       }
     ],

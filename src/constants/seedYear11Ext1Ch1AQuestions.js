@@ -1061,7 +1061,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(p + q)^2"
       },
       {
@@ -1087,7 +1087,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(p - q)^2"
       },
       {
@@ -1113,7 +1113,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(p - q)(p + q)"
       },
       {
@@ -1139,7 +1139,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(b + 4)^2"
       },
       {
@@ -1165,7 +1165,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(c - 5)^2"
       },
       {
@@ -1191,7 +1191,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(d + 6)^2"
       },
       {
@@ -1217,7 +1217,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(e - 7)(e + 7)"
       },
       {
@@ -1243,7 +1243,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(8 + k)(8 - k)"
       },
       {
@@ -1269,7 +1269,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(9 + m)^2"
       },
       {
@@ -1295,7 +1295,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(10 - n)^2"
       },
       {
@@ -1321,7 +1321,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(v + 12)(v - 12)"
       },
       {
@@ -1347,7 +1347,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(w + 13)^2"
       },
       {
@@ -1373,7 +1373,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(3x + 2)^2"
       },
       {
@@ -1399,7 +1399,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(4y - 5)^2"
       },
       {
@@ -1425,7 +1425,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(5z + 3)^2"
       },
       {
@@ -1451,7 +1451,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(3p + 4q)^2"
       },
       {
@@ -1477,7 +1477,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(4u + 5v)(4u - 5v)"
       },
       {
@@ -1503,7 +1503,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Use the special expansions to expand:\n\n(5m - 3n)(5m + 3n)"
       },
       {
@@ -1685,7 +1685,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Expand and simplify:\n\n\\left(u + \\frac{1}{u}\\right)^2"
       },
       {
@@ -1711,7 +1711,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Expand and simplify:\n\n\\left(u - \\frac{1}{u}\\right)^2"
       },
       {
@@ -1737,7 +1737,7 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Recognize this as a perfect square $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ or a difference of two squares $(a-b)(a+b)=a^2-b^2$.",
+        "explanation": "Recognize this as a perfect square \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\) or a difference of two squares \\((a-b)(a+b)=a^2-b^2\\).",
         "workingOut": "Expand and simplify:\n\n\\left(u + \\frac{1}{u}\\right)\\left(u - \\frac{1}{u}\\right)"
       },
       {

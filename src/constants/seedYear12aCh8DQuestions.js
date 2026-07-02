@@ -1125,7 +1125,7 @@ export const Y12A_CH8D_QUESTIONS = [
     "t": "Investing money by regular instalments",
     "solutionSteps": [
       {
-        "explanation": "Let \\( M \\) be the annual premium. The future value after 20 years is \\( \\$800000 \\).",
+        "explanation": "Let \\( M \\) be the annual premium. The future value after 20 years is \\( \\\\(800000 \\).\\)",
         "workingOut": "800000 = \\frac{M \\times 1.095 \\times (1.095^{20} - 1)}{0.095}"
       },
       {

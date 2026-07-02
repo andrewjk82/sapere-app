@@ -14,11 +14,11 @@ export const Y10_CH12F_QUESTIONS = [
         "workingOut": "x^2 = 7^2 + 9^2 - 2(7)(9)\\cos(64^\\circ)"
       },
       {
-        "explanation": "Calculate the value of $x^2$.",
+        "explanation": "Calculate the value of \\(x^2\\).",
         "workingOut": "x^2 = 49 + 81 - 126\\cos(64^\\circ) \\approx 130 - 55.235 = 74.765"
       },
       {
-        "explanation": "Take the square root to find $x$.",
+        "explanation": "Take the square root to find \\(x\\).",
         "workingOut": "x = \\sqrt{74.765} \\approx 8.65"
       }
     ],
@@ -100,11 +100,11 @@ export const Y10_CH12F_QUESTIONS = [
         "workingOut": "x^2 = 8^2 + 10^2 - 2(8)(10)\\cos(21^\\circ)"
       },
       {
-        "explanation": "Calculate the value of $x^2$.",
+        "explanation": "Calculate the value of \\(x^2\\).",
         "workingOut": "x^2 = 64 + 100 - 160\\cos(21^\\circ) \\approx 164 - 149.37 = 14.63"
       },
       {
-        "explanation": "Take the square root to find $x$.",
+        "explanation": "Take the square root to find \\(x\\).",
         "workingOut": "x = \\sqrt{14.63} \\approx 3.82"
       }
     ],
@@ -186,11 +186,11 @@ export const Y10_CH12F_QUESTIONS = [
         "workingOut": "x^2 = 10^2 + 8^2 - 2(10)(8)\\cos(130^\\circ)"
       },
       {
-        "explanation": "Calculate the value of $x^2$. Note that $\\cos(130^\\circ)$ is negative.",
+        "explanation": "Calculate the value of \\(x^2\\). Note that \\(\\cos(130^\\circ)\\) is negative.",
         "workingOut": "x^2 = 100 + 64 - 160\\cos(130^\\circ) \\approx 164 - (-102.85) = 266.85"
       },
       {
-        "explanation": "Take the square root to find $x$.",
+        "explanation": "Take the square root to find \\(x\\).",
         "workingOut": "x = \\sqrt{266.85} \\approx 16.34"
       }
     ],
@@ -276,11 +276,11 @@ export const Y10_CH12F_QUESTIONS = [
         "workingOut": "x^2 = 16 + 16 - 32(-0.5)"
       },
       {
-        "explanation": "Calculate the value of $x^2$.",
+        "explanation": "Calculate the value of \\(x^2\\).",
         "workingOut": "x^2 = 32 + 16 = 48"
       },
       {
-        "explanation": "Take the square root to find $x$.",
+        "explanation": "Take the square root to find \\(x\\).",
         "workingOut": "x = \\sqrt{48} \\approx 6.93"
       }
     ],
@@ -358,15 +358,15 @@ export const Y10_CH12F_QUESTIONS = [
     "hint": "The shorter diagonal is $BD$. Use the cosine rule in $\\triangle ABD$.",
     "solutionSteps": [
       {
-        "explanation": "In $\\triangle ABD$, the lengths of the sides are $15$ cm and $18$ cm, and the included angle is $65^\\circ$. Apply the cosine rule to find the diagonal $BD$.",
+        "explanation": "In \\(\\triangle ABD\\), the lengths of the sides are \\(15\\) cm and \\(18\\) cm, and the included angle is \\(65^\\circ\\). Apply the cosine rule to find the diagonal \\(BD\\).",
         "workingOut": "BD^2 = 15^2 + 18^2 - 2(15)(18)\\cos(65^\\circ)"
       },
       {
-        "explanation": "Calculate the value of $BD^2$.",
+        "explanation": "Calculate the value of \\(BD^2\\).",
         "workingOut": "BD^2 = 225 + 324 - 540\\cos(65^\\circ) \\approx 549 - 228.21 = 320.79"
       },
       {
-        "explanation": "Take the square root to find $BD$.",
+        "explanation": "Take the square root to find \\(BD\\).",
         "workingOut": "BD = \\sqrt{320.79} \\approx 17.91"
       }
     ],
@@ -449,15 +449,15 @@ export const Y10_CH12F_QUESTIONS = [
     "hint": "Use basic trigonometry in the two right-angled triangles $\\triangle VOA$ and $\\triangle VOB$ to find $OA$ and $OB$.",
     "solutionSteps": [
       {
-        "explanation": "In the right-angled triangle $VOA$, find $OA$.",
+        "explanation": "In the right-angled triangle \\(VOA\\), find \\(OA\\).",
         "workingOut": "\\sin(27^\\circ) = \\frac{OA}{6} \\implies OA = 6 \\sin(27^\\circ) \\approx 2.724"
       },
       {
-        "explanation": "In the right-angled triangle $VOB$, find $OB$.",
+        "explanation": "In the right-angled triangle \\(VOB\\), find \\(OB\\).",
         "workingOut": "\\sin(32^\\circ) = \\frac{OB}{6.5} \\implies OB = 6.5 \\sin(32^\\circ) \\approx 3.444"
       },
       {
-        "explanation": "Add the two distances together to find $AB$.",
+        "explanation": "Add the two distances together to find \\(AB\\).",
         "workingOut": "AB = OA + OB \\approx 2.724 + 3.444 = 6.168 \\implies 6.2"
       }
     ],
@@ -548,15 +548,15 @@ export const Y10_CH12F_QUESTIONS = [
         "workingOut": "140^\\circ - 70^\\circ = 70^\\circ"
       },
       {
-        "explanation": "Apply the cosine rule to find the distance $d$ between the ships.",
+        "explanation": "Apply the cosine rule to find the distance \\(d\\) between the ships.",
         "workingOut": "d^2 = 300^2 + 400^2 - 2(300)(400)\\cos(70^\\circ)"
       },
       {
-        "explanation": "Calculate the value of $d^2$.",
+        "explanation": "Calculate the value of \\(d^2\\).",
         "workingOut": "d^2 = 90000 + 160000 - 240000\\cos(70^\\circ) \\approx 250000 - 82084 = 167916"
       },
       {
-        "explanation": "Take the square root to find $d$.",
+        "explanation": "Take the square root to find \\(d\\).",
         "workingOut": "d = \\sqrt{167916} \\approx 409.78 \\implies 410"
       }
     ],
@@ -573,15 +573,15 @@ export const Y10_CH12F_QUESTIONS = [
     "hint": "Draw a triangle with side lengths $600$ and $700$, and an included angle of $2^\\circ$. Use the cosine rule.",
     "solutionSteps": [
       {
-        "explanation": "Set up the cosine rule to find the distance $x$.",
+        "explanation": "Set up the cosine rule to find the distance \\(x\\).",
         "workingOut": "x^2 = 600^2 + 700^2 - 2(600)(700)\\cos(2^\\circ)"
       },
       {
-        "explanation": "Calculate the value of $x^2$.",
+        "explanation": "Calculate the value of \\(x^2\\).",
         "workingOut": "x^2 = 360000 + 490000 - 840000\\cos(2^\\circ) \\approx 850000 - 839488 = 10512"
       },
       {
-        "explanation": "Take the square root to find $x$.",
+        "explanation": "Take the square root to find \\(x\\).",
         "workingOut": "x = \\sqrt{10512} \\approx 102.53 \\implies 103"
       }
     ],
@@ -598,11 +598,11 @@ export const Y10_CH12F_QUESTIONS = [
     "hint": "The longer diagonal is opposite the obtuse angle ($128^\\circ$). Use the cosine rule.",
     "solutionSteps": [
       {
-        "explanation": "In the triangle formed by two sides and the longer diagonal $D$, the included angle is $128^\\circ$.",
+        "explanation": "In the triangle formed by two sides and the longer diagonal \\(D\\), the included angle is \\(128^\\circ\\).",
         "workingOut": "D^2 = 8^2 + 8^2 - 2(8)(8)\\cos(128^\\circ)"
       },
       {
-        "explanation": "Calculate $D^2$.",
+        "explanation": "Calculate \\(D^2\\).",
         "workingOut": "D^2 = 64 + 64 - 128(-0.6157) \\approx 128 + 78.8 = 206.8"
       },
       {
@@ -627,11 +627,11 @@ export const Y10_CH12F_QUESTIONS = [
         "workingOut": "180^\\circ - 128^\\circ = 52^\\circ"
       },
       {
-        "explanation": "In the triangle formed by two sides and the shorter diagonal $d$, the included angle is $52^\\circ$.",
+        "explanation": "In the triangle formed by two sides and the shorter diagonal \\(d\\), the included angle is \\(52^\\circ\\).",
         "workingOut": "d^2 = 8^2 + 8^2 - 2(8)(8)\\cos(52^\\circ)"
       },
       {
-        "explanation": "Calculate $d^2$.",
+        "explanation": "Calculate \\(d^2\\).",
         "workingOut": "d^2 = 64 + 64 - 128(0.6157) \\approx 128 - 78.8 = 49.2"
       },
       {
@@ -673,15 +673,15 @@ export const Y10_CH12F_QUESTIONS = [
     "hint": "Express $\\cos(180^\\circ - A)$ using adjacent over hypotenuse.",
     "solutionSteps": [
       {
-        "explanation": "The angle adjacent to $x$ in the right-angled triangle is supplementary to $A$.",
+        "explanation": "The angle adjacent to \\(x\\) in the right-angled triangle is supplementary to \\(A\\).",
         "workingOut": "\\cos(180^\\circ - A) = \\frac{x}{c}"
       },
       {
-        "explanation": "Substitute $-\\cos(A)$ for $\\cos(180^\\circ - A)$.",
+        "explanation": "Substitute \\(-\\cos(A)\\) for \\(\\cos(180^\\circ - A)\\).",
         "workingOut": "-\\cos(A) = \\frac{x}{c}"
       },
       {
-        "explanation": "Rearrange to solve for $x$.",
+        "explanation": "Rearrange to solve for \\(x\\).",
         "workingOut": "x = -c \\cos A"
       }
     ],

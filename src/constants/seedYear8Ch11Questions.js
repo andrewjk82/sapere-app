@@ -1,5 +1,4 @@
 export const Y8_CH11A_QUESTIONS = [
-  // --- Question 1 ---
   {
     "id": "y8-11a-q1a",
     "type": "short_answer",
@@ -11,11 +10,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the coefficients first, then append the variable.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the numerical coefficients: $-4 \\times 3 = -12$.",
+        "explanation": "Multiply the numerical coefficients: \\(-4 \\times 3 = -12\\).",
         "workingOut": "-4 \\times 3 = -12"
       },
       {
-        "explanation": "Combine with the variable $x$.",
+        "explanation": "Combine with the variable \\(x\\).",
         "workingOut": "-12x"
       }
     ],
@@ -32,11 +31,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the coefficients. Remember that a negative times a negative is a positive.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients: $-7 \\times (-4) = 28$.",
+        "explanation": "Multiply the coefficients: \\(-7 \\times (-4) = 28\\).",
         "workingOut": "-7 \\times (-4) = 28"
       },
       {
-        "explanation": "Combine with the variable $y$.",
+        "explanation": "Combine with the variable \\(y\\).",
         "workingOut": "28y"
       }
     ],
@@ -70,11 +69,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the coefficients first.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients: $4 \\times (-5) = -20$.",
+        "explanation": "Multiply the coefficients: \\(4 \\times (-5) = -20\\).",
         "workingOut": "4 \\times (-5) = -20"
       },
       {
-        "explanation": "Combine with the variable $b$.",
+        "explanation": "Combine with the variable \\(b\\).",
         "workingOut": "-20b"
       }
     ],
@@ -91,11 +90,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the numbers, then multiply the variables.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients: $-6 \\times (-4) = 24$.",
+        "explanation": "Multiply the coefficients: \\(-6 \\times (-4) = 24\\).",
         "workingOut": "-6 \\times (-4) = 24"
       },
       {
-        "explanation": "Multiply the variables $p$ and $q$.",
+        "explanation": "Multiply the variables \\(p\\) and \\(q\\).",
         "workingOut": "p \\times q = pq"
       },
       {
@@ -133,11 +132,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the coefficients. A negative times a negative is positive.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients: $-8 \\times (-6) = 48$.",
+        "explanation": "Multiply the coefficients: \\(-8 \\times (-6) = 48\\).",
         "workingOut": "-8 \\times (-6) = 48"
       },
       {
-        "explanation": "Combine with the variable $m$.",
+        "explanation": "Combine with the variable \\(m\\).",
         "workingOut": "48m"
       }
     ],
@@ -154,11 +153,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "$-a$ is equivalent to $-1a$.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-1$ by $5$.",
+        "explanation": "Multiply \\(-1\\) by \\(5\\).",
         "workingOut": "-1 \\times 5 = -5"
       },
       {
-        "explanation": "Combine with the variable $a$.",
+        "explanation": "Combine with the variable \\(a\\).",
         "workingOut": "-5a"
       }
     ],
@@ -175,11 +174,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the coefficients, and recall that $x \\times x = x^2$.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients: $3 \\times (-4) = -12$.",
+        "explanation": "Multiply the coefficients: \\(3 \\times (-4) = -12\\).",
         "workingOut": "3 \\times (-4) = -12"
       },
       {
-        "explanation": "Multiply the variables: $x \\times x = x^2$.",
+        "explanation": "Multiply the variables: \\(x \\times x = x^2\\).",
         "workingOut": "x \\times x = x^2"
       },
       {
@@ -200,11 +199,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "A negative times a negative is positive, and $y \\times y = y^2$.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients: $-5 \\times (-6) = 30$.",
+        "explanation": "Multiply the coefficients: \\(-5 \\times (-6) = 30\\).",
         "workingOut": "-5 \\times (-6) = 30"
       },
       {
-        "explanation": "Multiply the variables: $y \\times y = y^2$.",
+        "explanation": "Multiply the variables: \\(y \\times y = y^2\\).",
         "workingOut": "y \\times y = y^2"
       },
       {
@@ -225,11 +224,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the coefficients, and recall that $b \\times b = b^2$.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients: $-6 \\times 4 = -24$.",
+        "explanation": "Multiply the coefficients: \\(-6 \\times 4 = -24\\).",
         "workingOut": "-6 \\times 4 = -24"
       },
       {
-        "explanation": "Multiply the variables: $b \\times b = b^2$.",
+        "explanation": "Multiply the variables: \\(b \\times b = b^2\\).",
         "workingOut": "b \\times b = b^2"
       },
       {
@@ -239,8 +238,6 @@ export const Y8_CH11A_QUESTIONS = [
     ],
     "graphData": null
   },
-
-  // --- Question 2 ---
   {
     "id": "y8-11a-q2a",
     "type": "short_answer",
@@ -252,11 +249,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the term outside the brackets by each term inside.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the outside term $4$ by the first term $y$.",
+        "explanation": "Multiply the outside term \\(4\\) by the first term \\(y\\).",
         "workingOut": "4 \\times y = 4y"
       },
       {
-        "explanation": "Multiply the outside term $4$ by the second term $3$.",
+        "explanation": "Multiply the outside term \\(4\\) by the second term \\(3\\).",
         "workingOut": "4 \\times 3 = 12"
       },
       {
@@ -277,11 +274,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the term outside the brackets by each term inside.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the outside term $6$ by $3x$.",
+        "explanation": "Multiply the outside term \\(6\\) by \\(3x\\).",
         "workingOut": "6 \\times 3x = 18x"
       },
       {
-        "explanation": "Multiply the outside term $6$ by $2$.",
+        "explanation": "Multiply the outside term \\(6\\) by \\(2\\).",
         "workingOut": "6 \\times 2 = 12"
       },
       {
@@ -302,11 +299,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the term outside the brackets by each term inside.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the outside term $5$ by $4x$.",
+        "explanation": "Multiply the outside term \\(5\\) by \\(4x\\).",
         "workingOut": "5 \\times 4x = 20x"
       },
       {
-        "explanation": "Multiply the outside term $5$ by $5$.",
+        "explanation": "Multiply the outside term \\(5\\) by \\(5\\).",
         "workingOut": "5 \\times 5 = 25"
       },
       {
@@ -327,11 +324,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Be careful with the negative sign when multiplying each term inside.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the outside term $-6$ by $3y$.",
+        "explanation": "Multiply the outside term \\(-6\\) by \\(3y\\).",
         "workingOut": "-6 \\times 3y = -18y"
       },
       {
-        "explanation": "Multiply the outside term $-6$ by $8$.",
+        "explanation": "Multiply the outside term \\(-6\\) by \\(8\\).",
         "workingOut": "-6 \\times 8 = -48"
       },
       {
@@ -352,11 +349,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the term outside the brackets by each term inside.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the outside term $8$ by $4m$.",
+        "explanation": "Multiply the outside term \\(8\\) by \\(4m\\).",
         "workingOut": "8 \\times 4m = 32m"
       },
       {
-        "explanation": "Multiply the outside term $8$ by $-5$.",
+        "explanation": "Multiply the outside term \\(8\\) by \\(-5\\).",
         "workingOut": "8 \\times (-5) = -40"
       },
       {
@@ -377,11 +374,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the outside negative factor by both terms inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-3$ by $7$.",
+        "explanation": "Multiply \\(-3\\) by \\(7\\).",
         "workingOut": "-3 \\times 7 = -21"
       },
       {
-        "explanation": "Multiply $-3$ by $4a$.",
+        "explanation": "Multiply \\(-3\\) by \\(4a\\).",
         "workingOut": "-3 \\times 4a = -12a"
       },
       {
@@ -402,11 +399,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply the term outside by each term inside.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $6$ by $5w$.",
+        "explanation": "Multiply \\(6\\) by \\(5w\\).",
         "workingOut": "6 \\times 5w = 30w"
       },
       {
-        "explanation": "Multiply $6$ by $4$.",
+        "explanation": "Multiply \\(6\\) by \\(4\\).",
         "workingOut": "6 \\times 4 = 24"
       },
       {
@@ -427,11 +424,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Distribute $8$ to both $3x$ and $-y$.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $8$ by $3x$.",
+        "explanation": "Multiply \\(8\\) by \\(3x\\).",
         "workingOut": "8 \\times 3x = 24x"
       },
       {
-        "explanation": "Multiply $8$ by $-y$.",
+        "explanation": "Multiply \\(8\\) by \\(-y\\).",
         "workingOut": "8 \\times (-y) = -8y"
       },
       {
@@ -452,11 +449,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Remember that a negative number times a negative number results in a positive number.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-9$ by $7b$.",
+        "explanation": "Multiply \\(-9\\) by \\(7b\\).",
         "workingOut": "-9 \\times 7b = -63b"
       },
       {
-        "explanation": "Multiply $-9$ by $-4$.",
+        "explanation": "Multiply \\(-9\\) by \\(-4\\).",
         "workingOut": "-9 \\times (-4) = 36"
       },
       {
@@ -477,11 +474,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Distribute $-8$ inside the brackets, keeping track of negative signs.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-8$ by $5$.",
+        "explanation": "Multiply \\(-8\\) by \\(5\\).",
         "workingOut": "-8 \\times 5 = -40"
       },
       {
-        "explanation": "Multiply $-8$ by $-y$.",
+        "explanation": "Multiply \\(-8\\) by \\(-y\\).",
         "workingOut": "-8 \\times (-y) = 8y"
       },
       {
@@ -502,11 +499,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Both multiplications involve negative numbers.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-7$ by $-4m$.",
+        "explanation": "Multiply \\(-7\\) by \\(-4m\\).",
         "workingOut": "-7 \\times (-4m) = 28m"
       },
       {
-        "explanation": "Multiply $-7$ by $-5$.",
+        "explanation": "Multiply \\(-7\\) by \\(-5\\).",
         "workingOut": "-7 \\times (-5) = 35"
       },
       {
@@ -527,11 +524,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Distribute $-6$ to both terms inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-6$ by $3x$.",
+        "explanation": "Multiply \\(-6\\) by \\(3x\\).",
         "workingOut": "-6 \\times 3x = -18x"
       },
       {
-        "explanation": "Multiply $-6$ by $-4y$.",
+        "explanation": "Multiply \\(-6\\) by \\(-4y\\).",
         "workingOut": "-6 \\times (-4y) = 24y"
       },
       {
@@ -552,11 +549,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Distribute $-4$ inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-4$ by $-5a$.",
+        "explanation": "Multiply \\(-4\\) by \\(-5a\\).",
         "workingOut": "-4 \\times (-5a) = 20a"
       },
       {
-        "explanation": "Multiply $-4$ by $6$.",
+        "explanation": "Multiply \\(-4\\) by \\(6\\).",
         "workingOut": "-4 \\times 6 = -24"
       },
       {
@@ -577,11 +574,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Distribute $-5$ inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-5$ by $-y$.",
+        "explanation": "Multiply \\(-5\\) by \\(-y\\).",
         "workingOut": "-5 \\times (-y) = 5y"
       },
       {
-        "explanation": "Multiply $-5$ by $7$.",
+        "explanation": "Multiply \\(-5\\) by \\(7\\).",
         "workingOut": "-5 \\times 7 = -35"
       },
       {
@@ -602,11 +599,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Both terms inside the brackets are negative, and the factor outside is negative.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-6$ by $-6k$.",
+        "explanation": "Multiply \\(-6\\) by \\(-6k\\).",
         "workingOut": "-6 \\times (-6k) = 36k"
       },
       {
-        "explanation": "Multiply $-6$ by $-4$.",
+        "explanation": "Multiply \\(-6\\) by \\(-4\\).",
         "workingOut": "-6 \\times (-4) = 24"
       },
       {
@@ -627,11 +624,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Distribute $-5$ inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $-5$ by $3$.",
+        "explanation": "Multiply \\(-5\\) by \\(3\\).",
         "workingOut": "-5 \\times 3 = -15"
       },
       {
-        "explanation": "Multiply $-5$ by $-4d$.",
+        "explanation": "Multiply \\(-5\\) by \\(-4d\\).",
         "workingOut": "-5 \\times (-4d) = 20d"
       },
       {
@@ -652,11 +649,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Multiply both terms inside the brackets by the fraction $\\frac{1}{4}$.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the fraction by the first term $3y$.",
+        "explanation": "Multiply the fraction by the first term \\(3y\\).",
         "workingOut": "\\frac{1}{4} \\times 3y = \\frac{3}{4}y"
       },
       {
-        "explanation": "Multiply the fraction by the second term $-12$.",
+        "explanation": "Multiply the fraction by the second term \\(-12\\).",
         "workingOut": "\\frac{1}{4} \\times (-12) = -3"
       },
       {
@@ -677,7 +674,7 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "The negative sign outside the brackets multiplies both terms inside by $-1$.",
     "solutionSteps": [
       {
-        "explanation": "Multiply both terms inside by $-1$.",
+        "explanation": "Multiply both terms inside by \\(-1\\).",
         "workingOut": "-1 \\times 12 = -12, \\quad -1 \\times \\frac{1}{5}y = -\\frac{1}{5}y"
       },
       {
@@ -687,8 +684,6 @@ export const Y8_CH11A_QUESTIONS = [
     ],
     "graphData": null
   },
-
-  // --- Question 3 ---
   {
     "id": "y8-11a-q3a",
     "type": "short_answer",
@@ -700,15 +695,15 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "First expand $4(3x - 4)$, then group and combine the $x$ terms.",
     "solutionSteps": [
       {
-        "explanation": "Expand the brackets: $4(3x - 4) = 12x - 16$.",
+        "explanation": "Expand the brackets: \\(4(3x - 4) = 12x - 16\\).",
         "workingOut": "12x - 16 + 6x"
       },
       {
-        "explanation": "Group the like terms: $12x + 6x - 16$.",
+        "explanation": "Group the like terms: \\(12x + 6x - 16\\).",
         "workingOut": "(12x + 6x) - 16"
       },
       {
-        "explanation": "Combine the $x$ terms.",
+        "explanation": "Combine the \\(x\\) terms.",
         "workingOut": "18x - 16"
       }
     ],
@@ -725,11 +720,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Expand $5(y - 4)$ first, then combine the constant terms.",
     "solutionSteps": [
       {
-        "explanation": "Expand the brackets: $5(y - 4) = 5y - 20$.",
+        "explanation": "Expand the brackets: \\(5(y - 4) = 5y - 20\\).",
         "workingOut": "5y - 20 + 12"
       },
       {
-        "explanation": "Combine the constant terms: $-20 + 12 = -8$.",
+        "explanation": "Combine the constant terms: \\(-20 + 12 = -8\\).",
         "workingOut": "5y - 8"
       }
     ],
@@ -746,11 +741,11 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Expand $3(4x - 5)$ first, then combine the constants.",
     "solutionSteps": [
       {
-        "explanation": "Expand the brackets: $3(4x - 5) = 12x - 15$.",
+        "explanation": "Expand the brackets: \\(3(4x - 5) = 12x - 15\\).",
         "workingOut": "12x - 15 - 7"
       },
       {
-        "explanation": "Combine the constants: $-15 - 7 = -22$.",
+        "explanation": "Combine the constants: \\(-15 - 7 = -22\\).",
         "workingOut": "12x - 22"
       }
     ],
@@ -771,7 +766,7 @@ export const Y8_CH11A_QUESTIONS = [
         "workingOut": "5y - 30 + 8y"
       },
       {
-        "explanation": "Combine the like terms $5y$ and $8y$.",
+        "explanation": "Combine the like terms \\(5y\\) and \\(8y\\).",
         "workingOut": "13y - 30"
       }
     ],
@@ -792,7 +787,7 @@ export const Y8_CH11A_QUESTIONS = [
         "workingOut": "-5m + 40 + 5m"
       },
       {
-        "explanation": "Combine the like terms $-5m$ and $5m$. They sum to zero.",
+        "explanation": "Combine the like terms \\(-5m\\) and \\(5m\\). They sum to zero.",
         "workingOut": "40"
       }
     ],
@@ -834,7 +829,7 @@ export const Y8_CH11A_QUESTIONS = [
         "workingOut": "-30p - 20 + 40p"
       },
       {
-        "explanation": "Combine the like terms $-30p$ and $40p$.",
+        "explanation": "Combine the like terms \\(-30p\\) and \\(40p\\).",
         "workingOut": "10p - 20"
       }
     ],
@@ -855,7 +850,7 @@ export const Y8_CH11A_QUESTIONS = [
         "workingOut": "-42n - 24 + 8n"
       },
       {
-        "explanation": "Combine the like terms $-42n$ and $8n$.",
+        "explanation": "Combine the like terms \\(-42n\\) and \\(8n\\).",
         "workingOut": "-34n - 24"
       }
     ],
@@ -897,7 +892,7 @@ export const Y8_CH11A_QUESTIONS = [
         "workingOut": "15y - 20 - 15y"
       },
       {
-        "explanation": "Combine the $y$ terms.",
+        "explanation": "Combine the \\(y\\) terms.",
         "workingOut": "-20"
       }
     ],
@@ -918,7 +913,7 @@ export const Y8_CH11A_QUESTIONS = [
         "workingOut": "-12 + 24a - 24a + 18"
       },
       {
-        "explanation": "Combine the variables: $24a - 24a = 0$.",
+        "explanation": "Combine the variables: \\(24a - 24a = 0\\).",
         "workingOut": "-12 + 18"
       },
       {
@@ -943,14 +938,12 @@ export const Y8_CH11A_QUESTIONS = [
         "workingOut": "24 + 32n - 30n"
       },
       {
-        "explanation": "Combine the like terms $32n$ and $-30n$.",
+        "explanation": "Combine the like terms \\(32n\\) and \\(-30n\\).",
         "workingOut": "2n + 24"
       }
     ],
     "graphData": null
   },
-
-  // --- Question 4 ---
   {
     "id": "y8-11a-q4a",
     "type": "short_answer",
@@ -962,15 +955,15 @@ export const Y8_CH11A_QUESTIONS = [
     "hint": "Expand both brackets separately, then collect the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Expand the first set of brackets: $3(3x + 4) = 9x + 12$.",
+        "explanation": "Expand the first set of brackets: \\(3(3x + 4) = 9x + 12\\).",
         "workingOut": "9x + 12 + 4(2x + 5)"
       },
       {
-        "explanation": "Expand the second set of brackets: $4(2x + 5) = 8x + 20$.",
+        "explanation": "Expand the second set of brackets: \\(4(2x + 5) = 8x + 20\\).",
         "workingOut": "9x + 12 + 8x + 20"
       },
       {
-        "explanation": "Group the $x$ terms and constant terms.",
+        "explanation": "Group the \\(x\\) terms and constant terms.",
         "workingOut": "(9x + 8x) + (12 + 20)"
       },
       {
@@ -1211,4 +1204,4 @@ export const Y8_CH11A_QUESTIONS = [
     ],
     "graphData": null
   }
-]
+];

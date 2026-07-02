@@ -638,7 +638,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "t": "Paying off a loan",
     "solutionSteps": [
       {
-        "explanation": "Aria makes 180 payments of $937.01 each.",
+        "explanation": "Aria makes 180 payments of \\(937.01 each.\\)",
         "workingOut": "\\text{Total Paid} = 180 \\times 937.01"
       },
       {
@@ -1085,7 +1085,7 @@ export const Y12A_CH8E_QUESTIONS = [
     "t": "Paying off a loan",
     "solutionSteps": [
       {
-        "explanation": "The monthly payment is $1432.86 and there are 240 payments.",
+        "explanation": "The monthly payment is \\(1432.86 and there are 240 payments.\\)",
         "workingOut": "\\text{Total Paid} = 240 \\times 1432.86"
       },
       {

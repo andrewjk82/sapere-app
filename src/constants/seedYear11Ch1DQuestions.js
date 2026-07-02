@@ -6356,7 +6356,7 @@ export const Y11_CH1D_QUESTIONS = [
     "solution": "Half full is $1800$ L: $3600\\left(1 - \\frac{t}{60}\\right)^2 = 1800 \\Rightarrow \\left(1 - \\frac{t}{60}\\right)^2 = \\frac{1}{2} \\Rightarrow 1 - \\frac{t}{60} = \\pm\\frac{1}{\\sqrt{2}}$. So $t = 60\\left(1 - \\frac{1}{\\sqrt2}\\right) \\approx 17.6$ or $t = 60\\left(1 + \\frac{1}{\\sqrt2}\\right) \\approx 102.4$ (rejected, $>60$). Hence $t \\approx 18$ minutes.",
     "solutionSteps": [
       {
-        "explanation": "Set the volume to half of $3600$, i.e. $1800$ L.",
+        "explanation": "Set the volume to half of \\(3600\\), i.e. \\(1800\\) L.",
         "workingOut": "3600\\left(1 - \\frac{t}{60}\\right)^2 = 1800"
       },
       {
@@ -6364,11 +6364,11 @@ export const Y11_CH1D_QUESTIONS = [
         "workingOut": "\\left(1 - \\frac{t}{60}\\right)^2 = \\frac{1}{2} \\Rightarrow 1 - \\frac{t}{60} = \\pm\\frac{1}{\\sqrt2}"
       },
       {
-        "explanation": "Solve for $t$ in both cases.",
+        "explanation": "Solve for \\(t\\) in both cases.",
         "workingOut": "t = 60\\left(1 - \\tfrac{1}{\\sqrt2}\\right) \\approx 17.6 \\;\\text{ or }\\; t = 60\\left(1 + \\tfrac{1}{\\sqrt2}\\right) \\approx 102.4"
       },
       {
-        "explanation": "Reject $t \\approx 102.4$ since $0 \\le t \\le 60$, and round the valid root.",
+        "explanation": "Reject \\(t \\approx 102.4\\) since \\(0 \\le t \\le 60\\), and round the valid root.",
         "workingOut": "t \\approx 17.6 \\approx 18 \\text{ minutes}"
       }
     ],
@@ -6388,11 +6388,11 @@ export const Y11_CH1D_QUESTIONS = [
     "solution": "$\\Delta = (-2)^2 - 4(5)(8k-15) \\geq 0 \\Rightarrow 4 - 160k + 300 \\geq 0 \\Rightarrow 304 \\geq 160k \\Rightarrow k \\leq \\frac{19}{10}$.",
     "solutionSteps": [
       {
-        "explanation": "For real roots the discriminant must be non-negative (note: $\\geq 0$ includes equal roots).",
+        "explanation": "For real roots the discriminant must be non-negative (note: \\(\\geq 0\\) includes equal roots).",
         "workingOut": "\\Delta = b^2 - 4ac \\geq 0"
       },
       {
-        "explanation": "Substitute $a = 5$, $b = -2$, $c = 8k - 15$.",
+        "explanation": "Substitute \\(a = 5\\), \\(b = -2\\), \\(c = 8k - 15\\).",
         "workingOut": "(-2)^2 - 4(5)(8k - 15) \\geq 0"
       },
       {
@@ -6404,7 +6404,7 @@ export const Y11_CH1D_QUESTIONS = [
         "workingOut": "304 \\geq 160k"
       },
       {
-        "explanation": "Solve for $k$.",
+        "explanation": "Solve for \\(k\\).",
         "workingOut": "k \\leq \\frac{304}{160} = \\frac{19}{10}"
       }
     ],
@@ -6424,7 +6424,7 @@ export const Y11_CH1D_QUESTIONS = [
     "solution": "$4900\\left(1 - \\frac{t}{70}\\right)^2 = 2450 \\Rightarrow \\left(1 - \\frac{t}{70}\\right)^2 = \\frac{1}{2} \\Rightarrow t = 70\\left(1 - \\frac{1}{\\sqrt2}\\right) \\approx 20.5$ or $t \\approx 119.5$ (rejected). So $t \\approx 21$ minutes.",
     "solutionSteps": [
       {
-        "explanation": "Set the volume to half of $4900$.",
+        "explanation": "Set the volume to half of \\(4900\\).",
         "workingOut": "4900\\left(1 - \\frac{t}{70}\\right)^2 = 2450"
       },
       {
@@ -6432,7 +6432,7 @@ export const Y11_CH1D_QUESTIONS = [
         "workingOut": "1 - \\frac{t}{70} = \\pm\\frac{1}{\\sqrt2}"
       },
       {
-        "explanation": "Solve and reject the value $> 70$.",
+        "explanation": "Solve and reject the value \\(> 70\\).",
         "workingOut": "t = 70\\left(1 - \\tfrac{1}{\\sqrt2}\\right) \\approx 20.5"
       },
       {
@@ -6460,7 +6460,7 @@ export const Y11_CH1D_QUESTIONS = [
         "workingOut": "\\Delta = b^2 - 4ac \\geq 0"
       },
       {
-        "explanation": "Substitute $a = 3$, $b = -4$, $c = 2k - 7$.",
+        "explanation": "Substitute \\(a = 3\\), \\(b = -4\\), \\(c = 2k - 7\\).",
         "workingOut": "16 - 4(3)(2k - 7) \\geq 0"
       },
       {
@@ -6468,7 +6468,7 @@ export const Y11_CH1D_QUESTIONS = [
         "workingOut": "16 - 24k + 84 \\geq 0"
       },
       {
-        "explanation": "Solve for $k$.",
+        "explanation": "Solve for \\(k\\).",
         "workingOut": "100 \\geq 24k \\Rightarrow k \\leq \\frac{25}{6}"
       }
     ],

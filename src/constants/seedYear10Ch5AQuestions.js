@@ -811,7 +811,7 @@ export const Y10_CH5A_QUESTIONS = [
     "hint": "Rearrange the equation so that one side is zero, then factorise.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation to the standard form $ax^2 + bx + c = 0$.",
+        "explanation": "Rearrange the equation to the standard form \\(ax^2 + bx + c = 0\\).",
         "workingOut": "x^2 - 6x + 8 = 0"
       },
       {
@@ -886,7 +886,7 @@ export const Y10_CH5A_QUESTIONS = [
     "hint": "Rearrange the equation so that one side is zero, then factorise.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation to the standard form $ax^2 + bx + c = 0$.",
+        "explanation": "Rearrange the equation to the standard form \\(ax^2 + bx + c = 0\\).",
         "workingOut": "h^2 - h - 12 = 0"
       },
       {
@@ -911,7 +911,7 @@ export const Y10_CH5A_QUESTIONS = [
     "hint": "Rearrange the equation so that one side is zero, then factorise.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation to the standard form $ax^2 + bx + c = 0$.",
+        "explanation": "Rearrange the equation to the standard form \\(ax^2 + bx + c = 0\\).",
         "workingOut": "h^2 - 7h + 12 = 0"
       },
       {
@@ -957,7 +957,7 @@ export const Y10_CH5A_QUESTIONS = [
     "hint": "Move all terms to one side to form a quadratic equation.",
     "solutionSteps": [
       {
-        "explanation": "Add $y^2$ to both sides.",
+        "explanation": "Add \\(y^2\\) to both sides.",
         "workingOut": "y^2 + 8y - 9 = 0"
       },
       {

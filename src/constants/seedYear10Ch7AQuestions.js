@@ -962,7 +962,7 @@ export const Y10_CH7A_QUESTIONS = [
     "hint": "Think about transformations of parabolas.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( x = 0 \\) and \\( y = ${yint} \\) into the equation.",
+        "explanation": "Substitute \\( x = 0 \\) and \\( y = \\({yint} \\) into the equation.\\)",
         "workingOut": "1 = (0 - 1)^2 + a"
       },
       {
@@ -983,7 +983,7 @@ export const Y10_CH7A_QUESTIONS = [
     "hint": "Think about transformations of parabolas.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( x = 0 \\) and \\( y = ${yint} \\) into the equation.",
+        "explanation": "Substitute \\( x = 0 \\) and \\( y = \\({yint} \\) into the equation.\\)",
         "workingOut": "3 = (0 - 1)^2 + a"
       },
       {
@@ -1004,7 +1004,7 @@ export const Y10_CH7A_QUESTIONS = [
     "hint": "Think about transformations of parabolas.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( x = 0 \\) and \\( y = ${yint} \\) into the equation.",
+        "explanation": "Substitute \\( x = 0 \\) and \\( y = \\({yint} \\) into the equation.\\)",
         "workingOut": "0 = (0 - 1)^2 + a"
       },
       {
@@ -1025,7 +1025,7 @@ export const Y10_CH7A_QUESTIONS = [
     "hint": "Think about transformations of parabolas.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( x = 0 \\) and \\( y = ${yint} \\) into the equation.",
+        "explanation": "Substitute \\( x = 0 \\) and \\( y = \\({yint} \\) into the equation.\\)",
         "workingOut": "-7 = (0 - 1)^2 + a"
       },
       {
@@ -1046,7 +1046,7 @@ export const Y10_CH7A_QUESTIONS = [
     "hint": "Think about transformations of parabolas.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( x = 0 \\) and \\( y = ${yint} \\) into the equation.",
+        "explanation": "Substitute \\( x = 0 \\) and \\( y = \\({yint} \\) into the equation.\\)",
         "workingOut": "1 = -(0 - 2)^2 + b"
       },
       {
@@ -1067,7 +1067,7 @@ export const Y10_CH7A_QUESTIONS = [
     "hint": "Think about transformations of parabolas.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( x = 0 \\) and \\( y = ${yint} \\) into the equation.",
+        "explanation": "Substitute \\( x = 0 \\) and \\( y = \\({yint} \\) into the equation.\\)",
         "workingOut": "3 = -(0 - 2)^2 + b"
       },
       {
@@ -1088,7 +1088,7 @@ export const Y10_CH7A_QUESTIONS = [
     "hint": "Think about transformations of parabolas.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( x = 0 \\) and \\( y = ${yint} \\) into the equation.",
+        "explanation": "Substitute \\( x = 0 \\) and \\( y = \\({yint} \\) into the equation.\\)",
         "workingOut": "-4 = -(0 - 2)^2 + b"
       },
       {
@@ -1109,7 +1109,7 @@ export const Y10_CH7A_QUESTIONS = [
     "hint": "Think about transformations of parabolas.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( x = 0 \\) and \\( y = ${yint} \\) into the equation.",
+        "explanation": "Substitute \\( x = 0 \\) and \\( y = \\({yint} \\) into the equation.\\)",
         "workingOut": "-7 = -(0 - 2)^2 + b"
       },
       {

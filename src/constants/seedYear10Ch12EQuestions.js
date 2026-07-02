@@ -98,7 +98,7 @@ export const Y10_CH12E_QUESTIONS = [
         "workingOut": "180^\\circ - 135^\\circ = 45^\\circ"
       },
       {
-        "explanation": "Since sine is positive for obtuse angles, evaluate $\\sin(45^\\circ)$.",
+        "explanation": "Since sine is positive for obtuse angles, evaluate \\(\\sin(45^\\circ)\\).",
         "workingOut": "\\sin(135^\\circ) = \\sin(45^\\circ) = \\frac{1}{\\sqrt{2}}"
       }
     ],
@@ -119,7 +119,7 @@ export const Y10_CH12E_QUESTIONS = [
         "workingOut": "180^\\circ - 135^\\circ = 45^\\circ"
       },
       {
-        "explanation": "Since cosine is negative for obtuse angles, evaluate $-\\cos(45^\\circ)$.",
+        "explanation": "Since cosine is negative for obtuse angles, evaluate \\(-\\cos(45^\\circ)\\).",
         "workingOut": "\\cos(135^\\circ) = -\\cos(45^\\circ) = -\\frac{1}{\\sqrt{2}}"
       }
     ],
@@ -309,15 +309,15 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "First find the third angle of the triangle.",
     "solutionSteps": [
       {
-        "explanation": "The angles inside the triangle are $10^\\circ$ and $140^\\circ$. Find the third angle.",
+        "explanation": "The angles inside the triangle are \\(10^\\circ\\) and \\(140^\\circ\\). Find the third angle.",
         "workingOut": "180^\\circ - 140^\\circ - 10^\\circ = 30^\\circ"
       },
       {
-        "explanation": "The side $x$ is opposite the $30^\\circ$ angle, and the side $12$ is opposite the $10^\\circ$ angle. Apply the sine rule.",
+        "explanation": "The side \\(x\\) is opposite the \\(30^\\circ\\) angle, and the side \\(12\\) is opposite the \\(10^\\circ\\) angle. Apply the sine rule.",
         "workingOut": "\\frac{x}{\\sin(30^\\circ)} = \\frac{12}{\\sin(10^\\circ)}"
       },
       {
-        "explanation": "Solve for $x$.",
+        "explanation": "Solve for \\(x\\).",
         "workingOut": "x = 12 \\times \\frac{\\sin(30^\\circ)}{\\sin(10^\\circ)} \\approx 34.55"
       }
     ],
@@ -404,7 +404,7 @@ export const Y10_CH12E_QUESTIONS = [
         "workingOut": "\\frac{x}{\\sin(67^\\circ)} = \\frac{7}{\\sin(95^\\circ)}"
       },
       {
-        "explanation": "Solve for $x$.",
+        "explanation": "Solve for \\(x\\).",
         "workingOut": "x = 7 \\times \\frac{\\sin(67^\\circ)}{\\sin(95^\\circ)} \\approx 6.47"
       }
     ],
@@ -483,7 +483,7 @@ export const Y10_CH12E_QUESTIONS = [
         "workingOut": "\\frac{\\sin(\\theta)}{15} = \\frac{\\sin(20^\\circ)}{8}"
       },
       {
-        "explanation": "Solve for $\\sin(\\theta)$.",
+        "explanation": "Solve for \\(\\sin(\\theta)\\).",
         "workingOut": "\\sin(\\theta) = \\frac{15 \\sin(20^\\circ)}{8} \\approx 0.6413"
       },
       {
@@ -570,7 +570,7 @@ export const Y10_CH12E_QUESTIONS = [
         "workingOut": "\\frac{\\sin(\\theta)}{13} = \\frac{\\sin(17^\\circ)}{9}"
       },
       {
-        "explanation": "Solve for $\\sin(\\theta)$.",
+        "explanation": "Solve for \\(\\sin(\\theta)\\).",
         "workingOut": "\\sin(\\theta) = \\frac{13 \\sin(17^\\circ)}{9} \\approx 0.4223"
       },
       {
@@ -653,11 +653,11 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "In the right-angled triangle $ACM$, express the sine of the angle at $A$ in terms of opposite / hypotenuse.",
     "solutionSteps": [
       {
-        "explanation": "In $\\triangle ACM$, the angle is $180^\\circ - A$.",
+        "explanation": "In \\(\\triangle ACM\\), the angle is \\(180^\\circ - A\\).",
         "workingOut": "\\sin(180^\\circ - A) = \\frac{h}{b}"
       },
       {
-        "explanation": "Since $\\sin(180^\\circ - A) = \\sin(A)$, we have:",
+        "explanation": "Since \\(\\sin(180^\\circ - A) = \\sin(A)\\), we have:",
         "workingOut": "\\sin(A) = \\frac{h}{b} \\implies h = b \\sin(A)"
       }
     ],
@@ -760,11 +760,11 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "In the right-angled triangle $BCM$, what is the sine of angle $B$?",
     "solutionSteps": [
       {
-        "explanation": "In $\\triangle BCM$, the angle at $B$ is an acute angle.",
+        "explanation": "In \\(\\triangle BCM\\), the angle at \\(B\\) is an acute angle.",
         "workingOut": "\\sin(B) = \\frac{h}{a}"
       },
       {
-        "explanation": "Rearrange to solve for $h$.",
+        "explanation": "Rearrange to solve for \\(h\\).",
         "workingOut": "h = a \\sin(B)"
       }
     ],
@@ -867,11 +867,11 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "Equate $b \\sin(A)$ and $a \\sin(B)$ and rearrange the terms.",
     "solutionSteps": [
       {
-        "explanation": "Set the two expressions for $h$ equal to each other.",
+        "explanation": "Set the two expressions for \\(h\\) equal to each other.",
         "workingOut": "b \\sin(A) = a \\sin(B)"
       },
       {
-        "explanation": "Divide both sides by $\\sin(A)\\sin(B)$.",
+        "explanation": "Divide both sides by \\(\\sin(A)\\sin(B)\\).",
         "workingOut": "\\frac{b}{\\sin(B)} = \\frac{a}{\\sin(A)}"
       }
     ],
@@ -888,15 +888,15 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "Draw a triangle formed by the short side, the long side ($12$ cm), and the long diagonal ($14$ cm). The angle between the two sides is $93^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "In the triangle formed by the two sides and the longer diagonal, the angle opposite the longer diagonal is the obtuse angle of the parallelogram, $93^\\circ$.",
+        "explanation": "In the triangle formed by the two sides and the longer diagonal, the angle opposite the longer diagonal is the obtuse angle of the parallelogram, \\(93^\\circ\\).",
         "workingOut": ""
       },
       {
-        "explanation": "Let $\\theta$ be the angle between the short side and the long diagonal. The side opposite $\\theta$ is the long side, $12$ cm.",
+        "explanation": "Let \\(\\theta\\) be the angle between the short side and the long diagonal. The side opposite \\(\\theta\\) is the long side, \\(12\\) cm.",
         "workingOut": "\\frac{\\sin(\\theta)}{12} = \\frac{\\sin(93^\\circ)}{14}"
       },
       {
-        "explanation": "Solve for $\\sin(\\theta)$.",
+        "explanation": "Solve for \\(\\sin(\\theta)\\).",
         "workingOut": "\\sin(\\theta) = \\frac{12 \\sin(93^\\circ)}{14} \\approx 0.8560"
       },
       {
@@ -917,23 +917,23 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "First, find $\\angle ACD$ using the sine rule in $\\triangle ADC$, then find $\\angle DAC$, and finally use the sine rule again to find $DC$.",
     "solutionSteps": [
       {
-        "explanation": "In $\\triangle ADC$, use the sine rule to find $\\angle ACD$.",
+        "explanation": "In \\(\\triangle ADC\\), use the sine rule to find \\(\\angle ACD\\).",
         "workingOut": "\\frac{\\sin(\\angle ACD)}{30} = \\frac{\\sin(130^\\circ)}{50}"
       },
       {
-        "explanation": "Calculate $\\angle ACD$.",
+        "explanation": "Calculate \\(\\angle ACD\\).",
         "workingOut": "\\sin(\\angle ACD) = \\frac{30 \\sin(130^\\circ)}{50} \\approx 0.4596 \\implies \\angle ACD \\approx 27.36^\\circ"
       },
       {
-        "explanation": "Find the third angle, $\\angle DAC$.",
+        "explanation": "Find the third angle, \\(\\angle DAC\\).",
         "workingOut": "\\angle DAC = 180^\\circ - 130^\\circ - 27.36^\\circ = 22.64^\\circ"
       },
       {
-        "explanation": "Use the sine rule again to find $DC$.",
+        "explanation": "Use the sine rule again to find \\(DC\\).",
         "workingOut": "\\frac{DC}{\\sin(22.64^\\circ)} = \\frac{50}{\\sin(130^\\circ)}"
       },
       {
-        "explanation": "Calculate $DC$.",
+        "explanation": "Calculate \\(DC\\).",
         "workingOut": "DC = 50 \\times \\frac{\\sin(22.64^\\circ)}{\\sin(130^\\circ)} \\approx 25.13 \\implies 25.1"
       }
     ],
@@ -1016,23 +1016,23 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "Draw $\\triangle OAB$. $A$ is due east, so the bearing from $A$ to $O$ is $270^\\circ$. Find the interior angle at $A$.",
     "solutionSteps": [
       {
-        "explanation": "The bearing from $A$ to $B$ is $250^\\circ$. The bearing from $A$ to $O$ (due west) is $270^\\circ$. Thus, the interior angle $\\angle OAB$ is:",
+        "explanation": "The bearing from \\(A\\) to \\(B\\) is \\(250^\\circ\\). The bearing from \\(A\\) to \\(O\\) (due west) is \\(270^\\circ\\). Thus, the interior angle \\(\\angle OAB\\) is:",
         "workingOut": "270^\\circ - 250^\\circ = 20^\\circ"
       },
       {
-        "explanation": "In $\\triangle OAB$, we have $OA = 600$, $OB = 750$, and $\\angle OAB = 20^\\circ$. Use the sine rule to find $\\angle OBA$.",
+        "explanation": "In \\(\\triangle OAB\\), we have \\(OA = 600\\), \\(OB = 750\\), and \\(\\angle OAB = 20^\\circ\\). Use the sine rule to find \\(\\angle OBA\\).",
         "workingOut": "\\frac{\\sin(\\angle OBA)}{600} = \\frac{\\sin(20^\\circ)}{750}"
       },
       {
-        "explanation": "Calculate $\\angle OBA$.",
+        "explanation": "Calculate \\(\\angle OBA\\).",
         "workingOut": "\\sin(\\angle OBA) \\approx 0.2736 \\implies \\angle OBA \\approx 15.88^\\circ"
       },
       {
-        "explanation": "Find $\\angle AOB$.",
+        "explanation": "Find \\(\\angle AOB\\).",
         "workingOut": "\\angle AOB = 180^\\circ - 20^\\circ - 15.88^\\circ = 144.12^\\circ"
       },
       {
-        "explanation": "The bearing of $A$ from $O$ is $090^\\circ$ (east). The bearing of $B$ is further south by $\\angle AOB$.",
+        "explanation": "The bearing of \\(A\\) from \\(O\\) is \\(090^\\circ\\) (east). The bearing of \\(B\\) is further south by \\(\\angle AOB\\).",
         "workingOut": "090^\\circ + 144.12^\\circ = 234.12^\\circ \\implies 234^\\circ"
       }
     ],
@@ -1049,11 +1049,11 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "Use the sine rule and the angles calculated in the previous part.",
     "solutionSteps": [
       {
-        "explanation": "From the previous part, $\\angle AOB = 144.12^\\circ$ and $\\angle OBA = 15.88^\\circ$. Set up the sine rule to find $AB$.",
+        "explanation": "From the previous part, \\(\\angle AOB = 144.12^\\circ\\) and \\(\\angle OBA = 15.88^\\circ\\). Set up the sine rule to find \\(AB\\).",
         "workingOut": "\\frac{AB}{\\sin(144.12^\\circ)} = \\frac{750}{\\sin(20^\\circ)}"
       },
       {
-        "explanation": "Calculate $AB$.",
+        "explanation": "Calculate \\(AB\\).",
         "workingOut": "AB = 750 \\times \\frac{\\sin(144.12^\\circ)}{\\sin(20^\\circ)} \\approx 1285.3 \\implies 1285"
       }
     ],
@@ -1070,23 +1070,23 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "Draw $\\triangle CHM$. Find the interior angle at $C$ by relating the bearings. Then use the sine rule to find $\\angle CMH$.",
     "solutionSteps": [
       {
-        "explanation": "Since $M$ is due east of $C$, the bearing from $C$ to $M$ is $090^\\circ$. The hill is at $028^\\circ$. Therefore, the interior angle $\\angle HCM$ is:",
+        "explanation": "Since \\(M\\) is due east of \\(C\\), the bearing from \\(C\\) to \\(M\\) is \\(090^\\circ\\). The hill is at \\(028^\\circ\\). Therefore, the interior angle \\(\\angle HCM\\) is:",
         "workingOut": "90^\\circ - 28^\\circ = 62^\\circ"
       },
       {
-        "explanation": "In $\\triangle CHM$, $CM = 1$, $MH = 1.2$, and $\\angle HCM = 62^\\circ$. Use the sine rule to find $\\angle CHM$.",
+        "explanation": "In \\(\\triangle CHM\\), \\(CM = 1\\), \\(MH = 1.2\\), and \\(\\angle HCM = 62^\\circ\\). Use the sine rule to find \\(\\angle CHM\\).",
         "workingOut": "\\frac{\\sin(\\angle CHM)}{1} = \\frac{\\sin(62^\\circ)}{1.2}"
       },
       {
-        "explanation": "Calculate $\\angle CHM$.",
+        "explanation": "Calculate \\(\\angle CHM\\).",
         "workingOut": "\\sin(\\angle CHM) \\approx 0.7358 \\implies \\angle CHM \\approx 47.37^\\circ"
       },
       {
-        "explanation": "Find $\\angle CMH$.",
+        "explanation": "Find \\(\\angle CMH\\).",
         "workingOut": "\\angle CMH = 180^\\circ - 62^\\circ - 47.37^\\circ = 70.63^\\circ"
       },
       {
-        "explanation": "The direction from $M$ to $C$ is due west ($270^\\circ$). The bearing of $H$ is $\\angle CMH$ degrees north of west.",
+        "explanation": "The direction from \\(M\\) to \\(C\\) is due west (\\(270^\\circ\\)). The bearing of \\(H\\) is \\(\\angle CMH\\) degrees north of west.",
         "workingOut": "270^\\circ + 70.63^\\circ = 340.63^\\circ \\implies 341^\\circ"
       }
     ],
@@ -1103,11 +1103,11 @@ export const Y10_CH12E_QUESTIONS = [
     "hint": "Use the sine rule with the angle $\\angle CMH$ found in the previous part.",
     "solutionSteps": [
       {
-        "explanation": "From the previous part, $\\angle CMH = 70.63^\\circ$. Set up the sine rule to find $CH$.",
+        "explanation": "From the previous part, \\(\\angle CMH = 70.63^\\circ\\). Set up the sine rule to find \\(CH\\).",
         "workingOut": "\\frac{CH}{\\sin(70.63^\\circ)} = \\frac{1.2}{\\sin(62^\\circ)}"
       },
       {
-        "explanation": "Calculate $CH$ in kilometres.",
+        "explanation": "Calculate \\(CH\\) in kilometres.",
         "workingOut": "CH = 1.2 \\times \\frac{\\sin(70.63^\\circ)}{\\sin(62^\\circ)} \\approx 1.2821"
       },
       {

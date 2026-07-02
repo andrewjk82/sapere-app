@@ -1115,7 +1115,7 @@ export const Y12A_CH8C_QUESTIONS = [
         "workingOut": "P = \\frac{450000}{0.835^5} \\approx 1119767.88"
       },
       {
-        "explanation": "Round to the nearest $1000",
+        "explanation": "Round to the nearest \\(1000\\)",
         "workingOut": "P \\approx 1120000"
       }
     ]

@@ -1,5 +1,4 @@
 export const Y8_CH17A_QUESTIONS = [
-  // --- Question 1 ---
   {
     "id": "y8-17a-q1a",
     "type": "short_answer",
@@ -11,7 +10,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Substitute the values of $b$ and $h$ into the formula and solve for $A$.",
     "solutionSteps": [
       {
-        "explanation": "Substitute the base $b = 8$ and height $h = 9$ into the formula.",
+        "explanation": "Substitute the base \\(b = 8\\) and height \\(h = 9\\) into the formula.",
         "workingOut": "A = \\frac{8 \\times 9}{2}"
       },
       {
@@ -40,13 +39,12 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "48 = 3b"
       },
       {
-        "explanation": "Solve for the base $b$.",
+        "explanation": "Solve for the base \\(b\\).",
         "workingOut": "b = \\frac{48}{3} = 16"
       }
     ],
     "graphData": null
   },
-  // --- Question 2 ---
   {
     "id": "y8-17a-q2a",
     "type": "short_answer",
@@ -108,7 +106,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "18 = 6x"
       },
       {
-        "explanation": "Divide by 6 to solve for $x$.",
+        "explanation": "Divide by 6 to solve for \\(x\\).",
         "workingOut": "x = \\frac{18}{6} = 3"
       }
     ],
@@ -133,13 +131,12 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "15 = -5x"
       },
       {
-        "explanation": "Divide by -5 to find $x$.",
+        "explanation": "Divide by -5 to find \\(x\\).",
         "workingOut": "x = \\frac{15}{-5} = -3"
       }
     ],
     "graphData": null
   },
-  // --- Question 3 ---
   {
     "id": "y8-17a-q3a",
     "type": "short_answer",
@@ -151,7 +148,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Subtract 32 from 50, then multiply the result by $\\frac{5}{9}$.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $F = 50$ into the formula.",
+        "explanation": "Substitute \\(F = 50\\) into the formula.",
         "workingOut": "C = \\frac{5}{9}(50 - 32)"
       },
       {
@@ -176,7 +173,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Subtract 32 from 122, then multiply by $\\frac{5}{9}$.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $F = 122$ into the formula.",
+        "explanation": "Substitute \\(F = 122\\) into the formula.",
         "workingOut": "C = \\frac{5}{9}(122 - 32)"
       },
       {
@@ -184,7 +181,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "C = \\frac{5}{9}(90)"
       },
       {
-        "explanation": "Multiply to solve for $C$.",
+        "explanation": "Multiply to solve for \\(C\\).",
         "workingOut": "C = 5 \\times 10 = 50"
       }
     ],
@@ -201,7 +198,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Subtracting 32 from 14 gives a negative number. Multiply that by $\\frac{5}{9}$.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $F = 14$.",
+        "explanation": "Substitute \\(F = 14\\).",
         "workingOut": "C = \\frac{5}{9}(14 - 32)"
       },
       {
@@ -226,7 +223,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Subtracting 32 from $-4$ results in $-36$. Then scale this by $\\frac{5}{9}$.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $F = -4$.",
+        "explanation": "Substitute \\(F = -4\\).",
         "workingOut": "C = \\frac{5}{9}(-4 - 32)"
       },
       {
@@ -234,13 +231,12 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "C = \\frac{5}{9}(-36)"
       },
       {
-        "explanation": "Divide $-36$ by $9$ and multiply by $5$.",
+        "explanation": "Divide \\(-36\\) by \\(9\\) and multiply by \\(5\\).",
         "workingOut": "C = 5 \\times (-4) = -20"
       }
     ],
     "graphData": null
   },
-  // --- Question 4 ---
   {
     "id": "y8-17a-q4a",
     "type": "short_answer",
@@ -310,7 +306,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "150 = a + 5 \\times 4 \\implies 150 = a + 20"
       },
       {
-        "explanation": "Subtract 20 to solve for $a$.",
+        "explanation": "Subtract 20 to solve for \\(a\\).",
         "workingOut": "a = 150 - 20 = 130"
       }
     ],
@@ -339,7 +335,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "10 = n - 1"
       },
       {
-        "explanation": "Solve for $n$.",
+        "explanation": "Solve for \\(n\\).",
         "workingOut": "n = 11"
       }
     ],
@@ -368,7 +364,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "49 = 7d"
       },
       {
-        "explanation": "Divide by 7 to solve for $d$.",
+        "explanation": "Divide by 7 to solve for \\(d\\).",
         "workingOut": "d = \\frac{49}{7} = 7"
       }
     ],
@@ -397,13 +393,12 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "-40 = 8d"
       },
       {
-        "explanation": "Divide by 8 to solve for $d$.",
+        "explanation": "Divide by 8 to solve for \\(d\\).",
         "workingOut": "d = \\frac{-40}{8} = -5"
       }
     ],
     "graphData": null
   },
-  // --- Question 5 ---
   {
     "id": "y8-17a-q5a",
     "type": "short_answer",
@@ -415,7 +410,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Add the two numbers together, then divide the sum by 2.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $m$ and $n$ into the average formula.",
+        "explanation": "Substitute \\(m\\) and \\(n\\) into the average formula.",
         "workingOut": "a = \\frac{4 + 12}{2}"
       },
       {
@@ -423,7 +418,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "a = \\frac{16}{2}"
       },
       {
-        "explanation": "Divide to find $a$.",
+        "explanation": "Divide to find \\(a\\).",
         "workingOut": "a = 8"
       }
     ],
@@ -448,7 +443,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "a = \\frac{-6}{2}"
       },
       {
-        "explanation": "Solve for $a$.",
+        "explanation": "Solve for \\(a\\).",
         "workingOut": "a = -3"
       }
     ],
@@ -523,13 +518,12 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "0 = m - 12"
       },
       {
-        "explanation": "Solve for $m$.",
+        "explanation": "Solve for \\(m\\).",
         "workingOut": "m = 12"
       }
     ],
     "graphData": null
   },
-  // --- Question 6 ---
   {
     "id": "y8-17a-q6ai",
     "type": "short_answer",
@@ -541,7 +535,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Substitute $n = 8$ into the formula and evaluate the expression step-by-step.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $n = 8$ into the formula.",
+        "explanation": "Substitute \\(n = 8\\) into the formula.",
         "workingOut": "I = \\frac{180(8) - 360}{8}"
       },
       {
@@ -566,7 +560,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Substitute $n = 10$ into the formula and solve.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $n = 10$.",
+        "explanation": "Substitute \\(n = 10\\).",
         "workingOut": "I = \\frac{180(10) - 360}{10}"
       },
       {
@@ -591,7 +585,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Substitute $n = 15$ and evaluate carefully.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $n = 15$.",
+        "explanation": "Substitute \\(n = 15\\).",
         "workingOut": "I = \\frac{180(15) - 360}{15}"
       },
       {
@@ -599,7 +593,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "I = \\frac{2700 - 360}{15} = \\frac{2340}{15}"
       },
       {
-        "explanation": "Divide to find $I$.",
+        "explanation": "Divide to find \\(I\\).",
         "workingOut": "I = 156^\\circ"
       }
     ],
@@ -616,15 +610,15 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Substitute $I = 120$, multiply both sides by $n$, then solve the resulting linear equation for $n$.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $I = 120$ into the formula.",
+        "explanation": "Substitute \\(I = 120\\) into the formula.",
         "workingOut": "120 = \\frac{180n - 360}{n}"
       },
       {
-        "explanation": "Multiply both sides by $n$.",
+        "explanation": "Multiply both sides by \\(n\\).",
         "workingOut": "120n = 180n - 360"
       },
       {
-        "explanation": "Rearrange the equation to isolate terms in $n$.",
+        "explanation": "Rearrange the equation to isolate terms in \\(n\\).",
         "workingOut": "360 = 180n - 120n \\implies 360 = 60n"
       },
       {
@@ -645,11 +639,11 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Set up the equation with $I = 150$, multiply by $n$, and solve for $n$.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $I = 150$.",
+        "explanation": "Substitute \\(I = 150\\).",
         "workingOut": "150 = \\frac{180n - 360}{n}"
       },
       {
-        "explanation": "Multiply by $n$.",
+        "explanation": "Multiply by \\(n\\).",
         "workingOut": "150n = 180n - 360"
       },
       {
@@ -663,7 +657,6 @@ export const Y8_CH17A_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 7 ---
   {
     "id": "y8-17a-q7a",
     "type": "short_answer",
@@ -683,7 +676,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "s = 2(6 + 3) = 2(9)"
       },
       {
-        "explanation": "Multiply to find $s$.",
+        "explanation": "Multiply to find \\(s\\).",
         "workingOut": "s = 18"
       }
     ],
@@ -708,7 +701,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "8 = a - 5"
       },
       {
-        "explanation": "Add 5 to solve for $a$.",
+        "explanation": "Add 5 to solve for \\(a\\).",
         "workingOut": "a = 13"
       }
     ],
@@ -733,13 +726,12 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "4 = -3 - b"
       },
       {
-        "explanation": "Solve for $b$.",
+        "explanation": "Solve for \\(b\\).",
         "workingOut": "b = -3 - 4 = -7"
       }
     ],
     "graphData": null
   },
-  // --- Question 8 ---
   {
     "id": "y8-17a-q8a",
     "type": "short_answer",
@@ -784,7 +776,7 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "1800 = \\frac{20P}{100} = \\frac{P}{5}"
       },
       {
-        "explanation": "Multiply by 5 to find $P$.",
+        "explanation": "Multiply by 5 to find \\(P\\).",
         "workingOut": "P = 1800 \\times 5 = 9000"
       }
     ],
@@ -809,13 +801,12 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "15000 = 100 \\times 6 \\times T \\implies 15000 = 600T"
       },
       {
-        "explanation": "Divide by 600 to find $T$.",
+        "explanation": "Divide by 600 to find \\(T\\).",
         "workingOut": "T = \\frac{15000}{600} = 25"
       }
     ],
     "graphData": null
   },
-  // --- Question 9 ---
   {
     "id": "y8-17a-q9a",
     "type": "short_answer",
@@ -869,7 +860,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Substitute $x = 18$ into the formula and solve.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x = 18$ into the formula.",
+        "explanation": "Substitute \\(x = 18\\) into the formula.",
         "workingOut": "P = 12 + \\frac{18}{3}"
       },
       {
@@ -890,7 +881,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Substitute $x = 36$ into the formula and solve.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x = 36$.",
+        "explanation": "Substitute \\(x = 36\\).",
         "workingOut": "P = 12 + \\frac{36}{3}"
       },
       {
@@ -911,7 +902,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Substitute $P = 22$, subtract 12 from both sides, then multiply by 3.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $P = 22$.",
+        "explanation": "Substitute \\(P = 22\\).",
         "workingOut": "22 = 12 + \\frac{x}{3}"
       },
       {
@@ -936,7 +927,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Set $P = 32$, subtract 12, then multiply by 3.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $P = 32$.",
+        "explanation": "Substitute \\(P = 32\\).",
         "workingOut": "32 = 12 + \\frac{x}{3}"
       },
       {
@@ -944,13 +935,12 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "20 = \\frac{x}{3}"
       },
       {
-        "explanation": "Multiply by 3 to find $x$.",
+        "explanation": "Multiply by 3 to find \\(x\\).",
         "workingOut": "x = 60"
       }
     ],
     "graphData": null
   },
-  // --- Question 10 ---
   {
     "id": "y8-17a-q10",
     "type": "short_answer",
@@ -974,13 +964,12 @@ export const Y8_CH17A_QUESTIONS = [
         "workingOut": "47 = 15 + 8h"
       },
       {
-        "explanation": "Subtract 15 and solve for $h$.",
+        "explanation": "Subtract 15 and solve for \\(h\\).",
         "workingOut": "32 = 8h \\implies h = 4"
       }
     ],
     "graphData": null
   },
-  // --- Question 11 ---
   {
     "id": "y8-17a-q11a",
     "type": "short_answer",
@@ -992,7 +981,7 @@ export const Y8_CH17A_QUESTIONS = [
     "hint": "Square $a$ and $b$ first, then sum the squares.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $a = 3$ and $b = 2$.",
+        "explanation": "Substitute \\(a = 3\\) and \\(b = 2\\).",
         "workingOut": "c = 3^2 + 2^2"
       },
       {
@@ -1056,7 +1045,6 @@ export const Y8_CH17A_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 12 ---
   {
     "id": "y8-17a-q12a",
     "type": "short_answer",

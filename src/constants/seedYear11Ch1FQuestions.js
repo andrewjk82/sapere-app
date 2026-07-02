@@ -2984,7 +2984,7 @@ export const Y11_CH1F_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common binomial factor \\( (x - ${a}) \\).",
+        "explanation": "Cancel the common binomial factor \\( (x - \\({a}) \\).\\)",
         "workingOut": "\\(\\frac{x^2 + 2x + 4}{x + 2}\\)",
         "graphData": null
       }
@@ -3031,7 +3031,7 @@ export const Y11_CH1F_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common binomial factor \\( (x - ${a}) \\).",
+        "explanation": "Cancel the common binomial factor \\( (x - \\({a}) \\).\\)",
         "workingOut": "\\(\\frac{x^2 + 3x + 9}{x + 3}\\)",
         "graphData": null
       }
@@ -3078,7 +3078,7 @@ export const Y11_CH1F_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common binomial factor \\( (x - ${a}) \\).",
+        "explanation": "Cancel the common binomial factor \\( (x - \\({a}) \\).\\)",
         "workingOut": "\\(\\frac{x^2 + 4x + 16}{x + 4}\\)",
         "graphData": null
       }
@@ -3125,7 +3125,7 @@ export const Y11_CH1F_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Cancel the common binomial factor \\( (x - ${a}) \\).",
+        "explanation": "Cancel the common binomial factor \\( (x - \\({a}) \\).\\)",
         "workingOut": "\\(\\frac{x^2 + 5x + 25}{x + 5}\\)",
         "graphData": null
       }
@@ -3914,17 +3914,17 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( u = x^2 - 2x \\Rightarrow u^2 - 4u - 8 = 0 \\Rightarrow (u - 4)(u + 2) = 0 \\Rightarrow x^2 - 2x = -2 \\) (no real roots) or \\( x^2 - 2x = 4 \\Rightarrow x = -1, 3 \\)",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( u = x^2 - ${a}x \\) and solve for \\( u \\).",
+        "explanation": "Substitute \\( u = x^2 - \\({a}x \\) and solve for \\( u \\).\\)",
         "workingOut": "\\(u^2 - 4u - 8 = 0 \\Rightarrow (u - 4)(u + 2) = 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the first case: \\( x^2 - ${a}x = -2 \\).",
+        "explanation": "Solve the first case: \\( x^2 - \\({a}x = -2 \\).\\)",
         "workingOut": "\\(x^2 - 2x + 2 = 0 \\Rightarrow \\Delta = 4 - 8 < 0 \\quad \\text{(No real roots)}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the second case: \\( x^2 - ${a}x = ${a + 2} \\).",
+        "explanation": "Solve the second case: \\( x^2 - \\({a}x = \\){a + 2} \\).",
         "workingOut": "\\(x^2 - 2x - 4 = 0 \\Rightarrow (x - 3)(x + 1) = 0 \\Rightarrow x = -1, 3\\)",
         "graphData": null
       }
@@ -3961,17 +3961,17 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( u = x^2 - 3x \\Rightarrow u^2 - 5u - 10 = 0 \\Rightarrow (u - 5)(u + 2) = 0 \\Rightarrow x^2 - 3x = -2 \\) (no real roots) or \\( x^2 - 3x = 5 \\Rightarrow x = -1, 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( u = x^2 - ${a}x \\) and solve for \\( u \\).",
+        "explanation": "Substitute \\( u = x^2 - \\({a}x \\) and solve for \\( u \\).\\)",
         "workingOut": "\\(u^2 - 5u - 10 = 0 \\Rightarrow (u - 5)(u + 2) = 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the first case: \\( x^2 - ${a}x = -2 \\).",
+        "explanation": "Solve the first case: \\( x^2 - \\({a}x = -2 \\).\\)",
         "workingOut": "\\(x^2 - 3x + 2 = 0 \\Rightarrow \\Delta = 9 - 8 < 0 \\quad \\text{(No real roots)}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the second case: \\( x^2 - ${a}x = ${a + 2} \\).",
+        "explanation": "Solve the second case: \\( x^2 - \\({a}x = \\){a + 2} \\).",
         "workingOut": "\\(x^2 - 3x - 5 = 0 \\Rightarrow (x - 4)(x + 1) = 0 \\Rightarrow x = -1, 4\\)",
         "graphData": null
       }
@@ -4008,17 +4008,17 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( u = x^2 - 4x \\Rightarrow u^2 - 6u - 12 = 0 \\Rightarrow (u - 6)(u + 2) = 0 \\Rightarrow x^2 - 4x = -2 \\) (no real roots) or \\( x^2 - 4x = 6 \\Rightarrow x = -1, 5 \\)",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( u = x^2 - ${a}x \\) and solve for \\( u \\).",
+        "explanation": "Substitute \\( u = x^2 - \\({a}x \\) and solve for \\( u \\).\\)",
         "workingOut": "\\(u^2 - 6u - 12 = 0 \\Rightarrow (u - 6)(u + 2) = 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the first case: \\( x^2 - ${a}x = -2 \\).",
+        "explanation": "Solve the first case: \\( x^2 - \\({a}x = -2 \\).\\)",
         "workingOut": "\\(x^2 - 4x + 2 = 0 \\Rightarrow \\Delta = 16 - 8 < 0 \\quad \\text{(No real roots)}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the second case: \\( x^2 - ${a}x = ${a + 2} \\).",
+        "explanation": "Solve the second case: \\( x^2 - \\({a}x = \\){a + 2} \\).",
         "workingOut": "\\(x^2 - 4x - 6 = 0 \\Rightarrow (x - 5)(x + 1) = 0 \\Rightarrow x = -1, 5\\)",
         "graphData": null
       }
@@ -4055,17 +4055,17 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( u = x^2 - 5x \\Rightarrow u^2 - 7u - 14 = 0 \\Rightarrow (u - 7)(u + 2) = 0 \\Rightarrow x^2 - 5x = -2 \\) (no real roots) or \\( x^2 - 5x = 7 \\Rightarrow x = -1, 6 \\)",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( u = x^2 - ${a}x \\) and solve for \\( u \\).",
+        "explanation": "Substitute \\( u = x^2 - \\({a}x \\) and solve for \\( u \\).\\)",
         "workingOut": "\\(u^2 - 7u - 14 = 0 \\Rightarrow (u - 7)(u + 2) = 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the first case: \\( x^2 - ${a}x = -2 \\).",
+        "explanation": "Solve the first case: \\( x^2 - \\({a}x = -2 \\).\\)",
         "workingOut": "\\(x^2 - 5x + 2 = 0 \\Rightarrow \\Delta = 25 - 8 < 0 \\quad \\text{(No real roots)}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the second case: \\( x^2 - ${a}x = ${a + 2} \\).",
+        "explanation": "Solve the second case: \\( x^2 - \\({a}x = \\){a + 2} \\).",
         "workingOut": "\\(x^2 - 5x - 7 = 0 \\Rightarrow (x - 6)(x + 1) = 0 \\Rightarrow x = -1, 6\\)",
         "graphData": null
       }
@@ -4102,7 +4102,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( x^2 + (x - 6)(x - 2) = 2x(x - 2) \\Rightarrow x^2 + x^2 - 8x + 12 = 2x^2 - 4x \\Rightarrow -4x + 12 = 0 ... \\text{ wait } \\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply through by \\( x(x - ${a}) \\).",
+        "explanation": "Multiply through by \\( x(x - \\({a}) \\).\\)",
         "workingOut": "\\(x^2 + (x - 6)(x - 2) = 2x(x - 2)\\)",
         "graphData": null
       },
@@ -4149,7 +4149,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( x^2 + (x - 9)(x - 3) = 2x(x - 3) \\Rightarrow x^2 + x^2 - 12x + 27 = 2x^2 - 6x \\Rightarrow -6x + 27 = 0 ... \\text{ wait } \\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply through by \\( x(x - ${a}) \\).",
+        "explanation": "Multiply through by \\( x(x - \\({a}) \\).\\)",
         "workingOut": "\\(x^2 + (x - 9)(x - 3) = 2x(x - 3)\\)",
         "graphData": null
       },
@@ -4196,7 +4196,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( x^2 + (x - 12)(x - 4) = 2x(x - 4) \\Rightarrow x^2 + x^2 - 16x + 48 = 2x^2 - 8x \\Rightarrow -8x + 48 = 0 ... \\text{ wait } \\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply through by \\( x(x - ${a}) \\).",
+        "explanation": "Multiply through by \\( x(x - \\({a}) \\).\\)",
         "workingOut": "\\(x^2 + (x - 12)(x - 4) = 2x(x - 4)\\)",
         "graphData": null
       },
@@ -4243,7 +4243,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( x^2 + (x - 15)(x - 5) = 2x(x - 5) \\Rightarrow x^2 + x^2 - 20x + 75 = 2x^2 - 10x \\Rightarrow -10x + 75 = 0 ... \\text{ wait } \\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply through by \\( x(x - ${a}) \\).",
+        "explanation": "Multiply through by \\( x(x - \\({a}) \\).\\)",
         "workingOut": "\\(x^2 + (x - 15)(x - 5) = 2x(x - 5)\\)",
         "graphData": null
       },
@@ -5606,7 +5606,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( x^2 + (2x + 4)^2 = 16 ... \\text{ wait } \\)",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( y = ${a}x + ${b} \\) into the circle equation.",
+        "explanation": "Substitute \\( y = \\({a}x + \\){b} \\) into the circle equation.",
         "workingOut": "\\(x^2 + (2x + 4)^2 = 16\\)",
         "graphData": null
       },
@@ -5653,7 +5653,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( x^2 + (3x + 9)^2 = 81 ... \\text{ wait } \\)",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( y = ${a}x + ${b} \\) into the circle equation.",
+        "explanation": "Substitute \\( y = \\({a}x + \\){b} \\) into the circle equation.",
         "workingOut": "\\(x^2 + (3x + 9)^2 = 81\\)",
         "graphData": null
       },
@@ -5700,7 +5700,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( x^2 + (4x + 16)^2 = 256 ... \\text{ wait } \\)",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( y = ${a}x + ${b} \\) into the circle equation.",
+        "explanation": "Substitute \\( y = \\({a}x + \\){b} \\) into the circle equation.",
         "workingOut": "\\(x^2 + (4x + 16)^2 = 256\\)",
         "graphData": null
       },
@@ -5747,7 +5747,7 @@ export const Y11_CH1F_QUESTIONS = [
     "solution": "\\( x^2 + (5x + 25)^2 = 625 ... \\text{ wait } \\)",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( y = ${a}x + ${b} \\) into the circle equation.",
+        "explanation": "Substitute \\( y = \\({a}x + \\){b} \\) into the circle equation.",
         "workingOut": "\\(x^2 + (5x + 25)^2 = 625\\)",
         "graphData": null
       },

@@ -4160,7 +4160,7 @@ export const Y11_CH1E_QUESTIONS = [
     "solution": "\\( -2 \\text{ and } 12 \\)",
     "solutionSteps": [
       {
-        "explanation": "Let x = number of $2 coins, y = number of $1 coins.",
+        "explanation": "Let x = number of \\(2 coins, y = number of \\)1 coins.",
         "workingOut": "\\( x + y = 25 \\quad \\\text{and} \\quad 2x + y = 38 \\)",
         "graphData": null
       },
@@ -7888,11 +7888,11 @@ export const Y11_CH1E_QUESTIONS = [
     "solution": "Set $x - 2 = 2 - \\frac{3}{x}$. Multiply by $x$: $x^2 - 2x = 2x - 3$, so $x^2 - 4x + 3 = 0$, i.e. $(x-3)(x-1) = 0$. Thus $x = 1$ (at $P$) and $x = 3$ (at $Q$).",
     "solutionSteps": [
       {
-        "explanation": "At the points of intersection the two $y$-values are equal, so set the right-hand sides equal.",
+        "explanation": "At the points of intersection the two \\(y\\)-values are equal, so set the right-hand sides equal.",
         "workingOut": "x - 2 = 2 - \\frac{3}{x}"
       },
       {
-        "explanation": "Multiply every term by $x$ to clear the fraction (valid since $x > 0$).",
+        "explanation": "Multiply every term by \\(x\\) to clear the fraction (valid since \\(x > 0\\)).",
         "workingOut": "x^2 - 2x = 2x - 3"
       },
       {
@@ -7904,7 +7904,7 @@ export const Y11_CH1E_QUESTIONS = [
         "workingOut": "(x - 3)(x - 1) = 0"
       },
       {
-        "explanation": "Solve for $x$; the smaller value is the $x$-coordinate of $P$ and the larger is that of $Q$.",
+        "explanation": "Solve for \\(x\\); the smaller value is the \\(x\\)-coordinate of \\(P\\) and the larger is that of \\(Q\\).",
         "workingOut": "x = 1 \\;(P), \\quad x = 3 \\;(Q)"
       }
     ],
@@ -7939,11 +7939,11 @@ export const Y11_CH1E_QUESTIONS = [
     "solution": "Set $x - 1 = 2 - \\frac{2}{x}$. Multiply by $x$: $x^2 - x = 2x - 2$, so $x^2 - 3x + 2 = 0$, i.e. $(x-1)(x-2) = 0$. Thus $x = 1$ (at $P$) and $x = 2$ (at $Q$).",
     "solutionSteps": [
       {
-        "explanation": "Set the $y$-values equal at the intersections.",
+        "explanation": "Set the \\(y\\)-values equal at the intersections.",
         "workingOut": "x - 1 = 2 - \\frac{2}{x}"
       },
       {
-        "explanation": "Multiply every term by $x$.",
+        "explanation": "Multiply every term by \\(x\\).",
         "workingOut": "x^2 - x = 2x - 2"
       },
       {

@@ -1,5 +1,4 @@
 export const Y8_CH11E_QUESTIONS = [
-  // --- Question 1 (Split, Easy) ---
   {
     "id": "y8-11e-q1a",
     "type": "short_answer",
@@ -28,7 +27,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Subtract the numerators since the denominators are already the same.",
     "solutionSteps": [
       {
-        "explanation": "Subtract the numerators over the common denominator $7$.",
+        "explanation": "Subtract the numerators over the common denominator \\(7\\).",
         "workingOut": "\\frac{5x - 2x}{7} = \\frac{3x}{7}"
       }
     ],
@@ -62,7 +61,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Find the lowest common denominator (LCD) of $3$ and $4$, which is $12$.",
     "solutionSteps": [
       {
-        "explanation": "Convert fractions to have a common denominator of $12$.",
+        "explanation": "Convert fractions to have a common denominator of \\(12\\).",
         "workingOut": "\\frac{2x \\times 4}{12} + \\frac{x \\times 3}{12} = \\frac{8x}{12} + \\frac{3x}{12}"
       },
       {
@@ -104,7 +103,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "The LCD of $5$ and $3$ is $15$. Watch out for the negative result in the numerator.",
     "solutionSteps": [
       {
-        "explanation": "Convert fractions to the common denominator $15$.",
+        "explanation": "Convert fractions to the common denominator \\(15\\).",
         "workingOut": "\\frac{3x}{15} - \\frac{10x}{15}"
       },
       {
@@ -125,7 +124,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "The LCD of $5$ and $2$ is $10$. Convert both fractions and subtract.",
     "solutionSteps": [
       {
-        "explanation": "Convert both fractions to have denominator $10$.",
+        "explanation": "Convert both fractions to have denominator \\(10\\).",
         "workingOut": "\\frac{6x}{10} - \\frac{5x}{10}"
       },
       {
@@ -146,7 +145,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Convert to a common denominator of $15$ before adding.",
     "solutionSteps": [
       {
-        "explanation": "Convert fractions using the LCD $15$.",
+        "explanation": "Convert fractions using the LCD \\(15\\).",
         "workingOut": "\\frac{10x}{15} + \\frac{6x}{15}"
       },
       {
@@ -167,7 +166,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Find the LCD of $4$, $12$, and $3$ ($12$), convert each term, combine, and simplify the result.",
     "solutionSteps": [
       {
-        "explanation": "Convert terms to have a common denominator of $12$.",
+        "explanation": "Convert terms to have a common denominator of \\(12\\).",
         "workingOut": "\\frac{9x}{12} + \\frac{5x}{12} - \\frac{4x}{12}"
       },
       {
@@ -175,7 +174,7 @@ export const Y8_CH11E_QUESTIONS = [
         "workingOut": "\\frac{9x + 5x - 4x}{12} = \\frac{10x}{12}"
       },
       {
-        "explanation": "Simplify the fraction by dividing by $2$.",
+        "explanation": "Simplify the fraction by dividing by \\(2\\).",
         "workingOut": "\\frac{5x}{6}"
       }
     ],
@@ -192,7 +191,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Find the LCD of $2$, $10$, and $5$, which is $10$, combine the terms, and simplify.",
     "solutionSteps": [
       {
-        "explanation": "Convert terms using the LCD $10$.",
+        "explanation": "Convert terms using the LCD \\(10\\).",
         "workingOut": "\\frac{5x}{10} - \\frac{3x}{10} + \\frac{2x}{10}"
       },
       {
@@ -206,7 +205,6 @@ export const Y8_CH11E_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 2 (Split, Easy) ---
   {
     "id": "y8-11e-q2a",
     "type": "short_answer",
@@ -243,7 +241,7 @@ export const Y8_CH11E_QUESTIONS = [
         "workingOut": "-12x - 6 - 5x"
       },
       {
-        "explanation": "Collect $x$ terms.",
+        "explanation": "Collect \\(x\\) terms.",
         "workingOut": "-17x - 6"
       }
     ],
@@ -264,7 +262,7 @@ export const Y8_CH11E_QUESTIONS = [
         "workingOut": "-y + 5 - 4y + 12"
       },
       {
-        "explanation": "Combine the $y$ terms and constant terms.",
+        "explanation": "Combine the \\(y\\) terms and constant terms.",
         "workingOut": "-5y + 17"
       }
     ],
@@ -306,7 +304,7 @@ export const Y8_CH11E_QUESTIONS = [
         "workingOut": "\\frac{4x}{3} + 12 - \\frac{x}{3}"
       },
       {
-        "explanation": "Combine the $x$ fractions.",
+        "explanation": "Combine the \\(x\\) fractions.",
         "workingOut": "\\frac{3x}{3} + 12 = x + 12"
       }
     ],
@@ -356,7 +354,7 @@ export const Y8_CH11E_QUESTIONS = [
         "workingOut": "\\frac{9x}{6} - \\frac{4x}{6} + 6"
       },
       {
-        "explanation": "Combine the $x$ terms.",
+        "explanation": "Combine the \\(x\\) terms.",
         "workingOut": "\\frac{5x}{6} + 6"
       }
     ],
@@ -377,11 +375,11 @@ export const Y8_CH11E_QUESTIONS = [
         "workingOut": "\\frac{6x}{5} + 6 - \\frac{x}{4}"
       },
       {
-        "explanation": "Convert the fractions to have the LCD of $20$.",
+        "explanation": "Convert the fractions to have the LCD of \\(20\\).",
         "workingOut": "\\frac{24x}{20} - \\frac{5x}{20} + 6"
       },
       {
-        "explanation": "Combine the $x$ terms.",
+        "explanation": "Combine the \\(x\\) terms.",
         "workingOut": "\\frac{19x}{20} + 6"
       }
     ],
@@ -402,7 +400,7 @@ export const Y8_CH11E_QUESTIONS = [
         "workingOut": "\\frac{12x}{5} - 8 - \\frac{2x}{3}"
       },
       {
-        "explanation": "Convert fractions to denominator $15$.",
+        "explanation": "Convert fractions to denominator \\(15\\).",
         "workingOut": "\\frac{36x}{15} - 8 - \\frac{10x}{15}"
       },
       {
@@ -412,7 +410,6 @@ export const Y8_CH11E_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 3 (Split, Easy) ---
   {
     "id": "y8-11e-q3a",
     "type": "short_answer",
@@ -424,7 +421,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Group $3x$ and $4x$ together first, then subtract $2$ and divide by $7$.",
     "solutionSteps": [
       {
-        "explanation": "Combine the $x$ terms.",
+        "explanation": "Combine the \\(x\\) terms.",
         "workingOut": "7x + 2 = 23"
       },
       {
@@ -759,7 +756,6 @@ export const Y8_CH11E_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 4 (Split, Easy) ---
   {
     "id": "y8-11e-q4a",
     "type": "short_answer",
@@ -846,7 +842,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Find the LCD of $8$ and $3$ ($24$), combine the fractions, and then solve for $x$.",
     "solutionSteps": [
       {
-        "explanation": "Convert fractions to a common denominator of $24$.",
+        "explanation": "Convert fractions to a common denominator of \\(24\\).",
         "workingOut": "\\frac{9x + 8x}{24} = 17"
       },
       {
@@ -871,7 +867,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Find a common denominator of $20$, combine the terms, and isolate $m$.",
     "solutionSteps": [
       {
-        "explanation": "Convert fractions to denominator $20$.",
+        "explanation": "Convert fractions to denominator \\(20\\).",
         "workingOut": "\\frac{5m}{20} + \\frac{12m}{20} = 17"
       },
       {
@@ -896,7 +892,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Find the LCD of $4$ and $3$ ($12$), subtract the fractions, and multiply by $12$.",
     "solutionSteps": [
       {
-        "explanation": "Convert fractions using the LCD $12$.",
+        "explanation": "Convert fractions using the LCD \\(12\\).",
         "workingOut": "\\frac{9m}{12} - \\frac{8m}{12} = 2"
       },
       {
@@ -910,7 +906,6 @@ export const Y8_CH11E_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 5 (Grouped - Single Question, Medium) ---
   {
     "id": "y8-11e-q5",
     "type": "short_answer",
@@ -922,7 +917,7 @@ export const Y8_CH11E_QUESTIONS = [
     "hint": "Replace $x$ with $6$ in the equation and evaluate.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x = 6$ into the equation.",
+        "explanation": "Substitute \\(x = 6\\) into the equation.",
         "workingOut": "y = 4(6) - 7"
       },
       {
@@ -932,7 +927,6 @@ export const Y8_CH11E_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 6 (Split, Medium) ---
   {
     "id": "y8-11e-q6a",
     "type": "short_answer",

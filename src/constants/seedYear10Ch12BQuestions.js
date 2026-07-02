@@ -10,7 +10,7 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Use the exact value of $\\sin(30^\\circ)$.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: the hypotenuse is $10$, the opposite side is $x$, and the angle is $30^\\circ$.",
+        "explanation": "Identify the given information: the hypotenuse is \\(10\\), the opposite side is \\(x\\), and the angle is \\(30^\\circ\\).",
         "workingOut": "\\theta = 30^\\circ, \\mathrm{Opposite} = x, \\mathrm{Hypotenuse} = 10"
       },
       {
@@ -18,11 +18,11 @@ export const Y10_CH12B_QUESTIONS = [
         "workingOut": "\\sin(30^\\circ) = \\frac{x}{10}"
       },
       {
-        "explanation": "Substitute the exact value for $\\sin(30^\\circ)$.",
+        "explanation": "Substitute the exact value for \\(\\sin(30^\\circ)\\).",
         "workingOut": "\\frac{1}{2} = \\frac{x}{10}"
       },
       {
-        "explanation": "Solve for $x$.",
+        "explanation": "Solve for \\(x\\).",
         "workingOut": "x = 10 \\times \\frac{1}{2}"
       },
       {
@@ -101,7 +101,7 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Use the exact value of $\\cos(45^\\circ)$.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: the hypotenuse is $12$, the adjacent side to the $45^\\circ$ angle is $x$.",
+        "explanation": "Identify the given information: the hypotenuse is \\(12\\), the adjacent side to the \\(45^\\circ\\) angle is \\(x\\).",
         "workingOut": "\\theta = 45^\\circ, \\mathrm{Adjacent} = x, \\mathrm{Hypotenuse} = 12"
       },
       {
@@ -109,11 +109,11 @@ export const Y10_CH12B_QUESTIONS = [
         "workingOut": "\\cos(45^\\circ) = \\frac{x}{12}"
       },
       {
-        "explanation": "Substitute the exact value for $\\cos(45^\\circ)$.",
+        "explanation": "Substitute the exact value for \\(\\cos(45^\\circ)\\).",
         "workingOut": "\\frac{\\sqrt{2}}{2} = \\frac{x}{12}"
       },
       {
-        "explanation": "Solve for $x$.",
+        "explanation": "Solve for \\(x\\).",
         "workingOut": "x = 12 \\times \\frac{\\sqrt{2}}{2}"
       },
       {
@@ -192,7 +192,7 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Use the exact value of $\\sin(60^\\circ)$.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: the hypotenuse is $12$, the opposite side is $x$, and the angle is $60^\\circ$.",
+        "explanation": "Identify the given information: the hypotenuse is \\(12\\), the opposite side is \\(x\\), and the angle is \\(60^\\circ\\).",
         "workingOut": "\\theta = 60^\\circ, \\mathrm{Opposite} = x, \\mathrm{Hypotenuse} = 12"
       },
       {
@@ -200,11 +200,11 @@ export const Y10_CH12B_QUESTIONS = [
         "workingOut": "\\sin(60^\\circ) = \\frac{x}{12}"
       },
       {
-        "explanation": "Substitute the exact value for $\\sin(60^\\circ)$.",
+        "explanation": "Substitute the exact value for \\(\\sin(60^\\circ)\\).",
         "workingOut": "\\frac{\\sqrt{3}}{2} = \\frac{x}{12}"
       },
       {
-        "explanation": "Solve for $x$.",
+        "explanation": "Solve for \\(x\\).",
         "workingOut": "x = 12 \\times \\frac{\\sqrt{3}}{2}"
       },
       {
@@ -283,7 +283,7 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Use the exact value of $\\tan(30^\\circ)$.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: the opposite side is $4$, the adjacent side is $x$, and the angle is $30^\\circ$.",
+        "explanation": "Identify the given information: the opposite side is \\(4\\), the adjacent side is \\(x\\), and the angle is \\(30^\\circ\\).",
         "workingOut": "\\theta = 30^\\circ, \\mathrm{Opposite} = 4, \\mathrm{Adjacent} = x"
       },
       {
@@ -291,11 +291,11 @@ export const Y10_CH12B_QUESTIONS = [
         "workingOut": "\\tan(30^\\circ) = \\frac{4}{x}"
       },
       {
-        "explanation": "Substitute the exact value for $\\tan(30^\\circ)$.",
+        "explanation": "Substitute the exact value for \\(\\tan(30^\\circ)\\).",
         "workingOut": "\\frac{1}{\\sqrt{3}} = \\frac{4}{x}"
       },
       {
-        "explanation": "Rearrange to solve for $x$.",
+        "explanation": "Rearrange to solve for \\(x\\).",
         "workingOut": "x = 4\\sqrt{3}"
       },
       {
@@ -374,23 +374,23 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Drop an altitude to split the equilateral triangle into two right-angled triangles.",
     "solutionSteps": [
       {
-        "explanation": "Recognize that this is an equilateral triangle with all sides equal to $8$ m.",
+        "explanation": "Recognize that this is an equilateral triangle with all sides equal to \\(8\\) m.",
         "workingOut": "\\mathrm{Base} = 8, \\mathrm{Sides} = 8"
       },
       {
-        "explanation": "The altitude $x$ bisects the base, creating a right-angled triangle with a base of $4$ m and hypotenuse of $8$ m.",
+        "explanation": "The altitude \\(x\\) bisects the base, creating a right-angled triangle with a base of \\(4\\) m and hypotenuse of \\(8\\) m.",
         "workingOut": "\\mathrm{Base\\ of\\ half} = \\frac{8}{2} = 4"
       },
       {
-        "explanation": "Use Pythagoras' theorem to find the altitude $x$.",
+        "explanation": "Use Pythagoras' theorem to find the altitude \\(x\\).",
         "workingOut": "x^2 + 4^2 = 8^2"
       },
       {
-        "explanation": "Solve for $x^2$.",
+        "explanation": "Solve for \\(x^2\\).",
         "workingOut": "x^2 = 64 - 16 = 48"
       },
       {
-        "explanation": "Calculate the exact value of $x$ by taking the square root.",
+        "explanation": "Calculate the exact value of \\(x\\) by taking the square root.",
         "workingOut": "x = \\sqrt{48} = 4\\sqrt{3}"
       }
     ],
@@ -637,23 +637,23 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "The diagonals of a rhombus bisect each other at right angles.",
     "solutionSteps": [
       {
-        "explanation": "Let the diagonals intersect at $O$. The diagonals of a rhombus bisect each other at right angles ($90^\\circ$).",
+        "explanation": "Let the diagonals intersect at \\(O\\). The diagonals of a rhombus bisect each other at right angles (\\(90^\\circ\\)).",
         "workingOut": "\\triangle AOB \\mathrm{\\ is\\ a\\ right\\ triangle.}"
       },
       {
-        "explanation": "In $\\triangle AOB$, the hypotenuse $AB = 10$, and $\\angle ABO = 30^\\circ$. We can use trigonometry to find $AO$ and $BO$.",
+        "explanation": "In \\(\\triangle AOB\\), the hypotenuse \\(AB = 10\\), and \\(\\angle ABO = 30^\\circ\\). We can use trigonometry to find \\(AO\\) and \\(BO\\).",
         "workingOut": "\\sin(30^\\circ) = \\frac{AO}{10}, \\cos(30^\\circ) = \\frac{BO}{10}"
       },
       {
-        "explanation": "Calculate the exact length of $AO$.",
+        "explanation": "Calculate the exact length of \\(AO\\).",
         "workingOut": "AO = 10 \\times \\frac{1}{2} = 5"
       },
       {
-        "explanation": "Calculate the exact length of $BO$.",
+        "explanation": "Calculate the exact length of \\(BO\\).",
         "workingOut": "BO = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3}"
       },
       {
-        "explanation": "Multiply by 2 to find the full lengths of the diagonals $AC$ and $BD$.",
+        "explanation": "Multiply by 2 to find the full lengths of the diagonals \\(AC\\) and \\(BD\\).",
         "workingOut": "AC = 2 \\times 5 = 10, BD = 2 \\times 5\\sqrt{3} = 10\\sqrt{3}"
       }
     ],
@@ -670,7 +670,7 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Use the properties of right-angled triangles and exact ratios.",
     "solutionSteps": [
       {
-        "explanation": "Set up the trigonometric ratio to find $AC$.",
+        "explanation": "Set up the trigonometric ratio to find \\(AC\\).",
         "workingOut": "\\cos(30^\\circ) = \\frac{24}{AC}"
       },
       {
@@ -758,7 +758,7 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Use the properties of right-angled triangles and exact ratios.",
     "solutionSteps": [
       {
-        "explanation": "Set up the trigonometric ratio to find $AD$.",
+        "explanation": "Set up the trigonometric ratio to find \\(AD\\).",
         "workingOut": "\\cos(30^\\circ) = \\frac{AD}{24}"
       },
       {
@@ -846,7 +846,7 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Use the properties of right-angled triangles and exact ratios.",
     "solutionSteps": [
       {
-        "explanation": "Set up the trigonometric ratio to find $BC$.",
+        "explanation": "Set up the trigonometric ratio to find \\(BC\\).",
         "workingOut": "\\tan(30^\\circ) = \\frac{BC}{24}"
       },
       {
@@ -934,7 +934,7 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Use the properties of right-angled triangles and exact ratios.",
     "solutionSteps": [
       {
-        "explanation": "Set up the trigonometric ratio to find $DC$.",
+        "explanation": "Set up the trigonometric ratio to find \\(DC\\).",
         "workingOut": "DC = AC - AD = 16\\sqrt{3} - 12\\sqrt{3} = 4\\sqrt{3}"
       },
       {
@@ -1022,7 +1022,7 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Use the properties of right-angled triangles and exact ratios.",
     "solutionSteps": [
       {
-        "explanation": "Set up the trigonometric ratio to find $BD$.",
+        "explanation": "Set up the trigonometric ratio to find \\(BD\\).",
         "workingOut": "\\sin(30^\\circ) = \\frac{BD}{24}"
       },
       {
@@ -1110,27 +1110,27 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Let the shared altitude be $h$. Express $h$ and the base segments in terms of $a$ and $x$.",
     "solutionSteps": [
       {
-        "explanation": "Let the altitude be $h$. In the left triangle, express $h$ and the base $d_1$ in terms of $x$.",
+        "explanation": "Let the altitude be \\(h\\). In the left triangle, express \\(h\\) and the base \\(d_1\\) in terms of \\(x\\).",
         "workingOut": "h = x \\sin(60^\\circ) = x\\frac{\\sqrt{3}}{2}, \\quad d_1 = x \\cos(60^\\circ) = \\frac{x}{2}"
       },
       {
-        "explanation": "In the right triangle, express $h$ and the base $d_2$ in terms of $a$.",
+        "explanation": "In the right triangle, express \\(h\\) and the base \\(d_2\\) in terms of \\(a\\).",
         "workingOut": "h = a \\sin(30^\\circ) = \\frac{a}{2}, \\quad d_2 = a \\cos(30^\\circ) = a\\frac{\\sqrt{3}}{2}"
       },
       {
-        "explanation": "Equate the expressions for $h$ to find a relationship between $a$ and $x$.",
+        "explanation": "Equate the expressions for \\(h\\) to find a relationship between \\(a\\) and \\(x\\).",
         "workingOut": "x\\frac{\\sqrt{3}}{2} = \\frac{a}{2} \\implies a = x\\sqrt{3}"
       },
       {
-        "explanation": "The total base is $20$, so $d_1 + d_2 = 20$. Substitute $a = x\\sqrt{3}$ into this equation.",
+        "explanation": "The total base is \\(20\\), so \\(d_1 + d_2 = 20\\). Substitute \\(a = x\\sqrt{3}\\) into this equation.",
         "workingOut": "\\frac{x}{2} + \\frac{(x\\sqrt{3})\\sqrt{3}}{2} = 20"
       },
       {
-        "explanation": "Solve for $x$.",
+        "explanation": "Solve for \\(x\\).",
         "workingOut": "\\frac{x + 3x}{2} = 20 \\implies 4x = 40 \\implies x = 10"
       },
       {
-        "explanation": "Substitute $x$ back to find $a$.",
+        "explanation": "Substitute \\(x\\) back to find \\(a\\).",
         "workingOut": "a = 10\\sqrt{3}"
       }
     ],
@@ -1228,23 +1228,23 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "Set up two equations using the two right-angled triangles and solve for $x$.",
     "solutionSteps": [
       {
-        "explanation": "In the smaller right-angled triangle, the angle is $45^\\circ$. The adjacent side $d_1$ equals the opposite side $x$.",
+        "explanation": "In the smaller right-angled triangle, the angle is \\(45^\\circ\\). The adjacent side \\(d_1\\) equals the opposite side \\(x\\).",
         "workingOut": "\\tan(45^\\circ) = \\frac{x}{d_1} \\implies 1 = \\frac{x}{d_1} \\implies d_1 = x"
       },
       {
-        "explanation": "In the larger right-angled triangle, the angle is $30^\\circ$. The total adjacent side is $x + 100$.",
+        "explanation": "In the larger right-angled triangle, the angle is \\(30^\\circ\\). The total adjacent side is \\(x + 100\\).",
         "workingOut": "\\tan(30^\\circ) = \\frac{x}{x + 100}"
       },
       {
-        "explanation": "Substitute the exact value for $\\tan(30^\\circ)$ and cross-multiply.",
+        "explanation": "Substitute the exact value for \\(\\tan(30^\\circ)\\) and cross-multiply.",
         "workingOut": "\\frac{1}{\\sqrt{3}} = \\frac{x}{x + 100} \\implies x + 100 = x\\sqrt{3}"
       },
       {
-        "explanation": "Rearrange to group the $x$ terms on one side.",
+        "explanation": "Rearrange to group the \\(x\\) terms on one side.",
         "workingOut": "100 = x\\sqrt{3} - x = x(\\sqrt{3} - 1)"
       },
       {
-        "explanation": "Divide by $\\sqrt{3} - 1$ and rationalize the denominator.",
+        "explanation": "Divide by \\(\\sqrt{3} - 1\\) and rationalize the denominator.",
         "workingOut": "x = \\frac{100}{\\sqrt{3} - 1} = \\frac{100(\\sqrt{3} + 1)}{3 - 1} = 50(\\sqrt{3} + 1)"
       }
     ],
@@ -1335,23 +1335,23 @@ export const Y10_CH12B_QUESTIONS = [
     "hint": "The diagonals of a rhombus bisect the interior angles and intersect at right angles.",
     "solutionSteps": [
       {
-        "explanation": "The diagonals of a rhombus bisect the interior angles. Since $\\angle DAB = 60^\\circ$, $\\angle XAB = 30^\\circ$.",
+        "explanation": "The diagonals of a rhombus bisect the interior angles. Since \\(\\angle DAB = 60^\\circ\\), \\(\\angle XAB = 30^\\circ\\).",
         "workingOut": "\\angle XAB = \\frac{60^\\circ}{2} = 30^\\circ"
       },
       {
-        "explanation": "The diagonals intersect at right angles, so $\\triangle AXB$ is a right-angled triangle at $X$.",
+        "explanation": "The diagonals intersect at right angles, so \\(\\triangle AXB\\) is a right-angled triangle at \\(X\\).",
         "workingOut": "\\angle AXB = 90^\\circ"
       },
       {
-        "explanation": "In $\\triangle AXB$, we know the hypotenuse $AB = 10$ and we need to find the adjacent side $AX$.",
+        "explanation": "In \\(\\triangle AXB\\), we know the hypotenuse \\(AB = 10\\) and we need to find the adjacent side \\(AX\\).",
         "workingOut": "\\cos(30^\\circ) = \\frac{AX}{10}"
       },
       {
-        "explanation": "Substitute the exact value for $\\cos(30^\\circ)$.",
+        "explanation": "Substitute the exact value for \\(\\cos(30^\\circ)\\).",
         "workingOut": "\\frac{\\sqrt{3}}{2} = \\frac{AX}{10}"
       },
       {
-        "explanation": "Solve for $AX$.",
+        "explanation": "Solve for \\(AX\\).",
         "workingOut": "AX = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3}"
       }
     ],

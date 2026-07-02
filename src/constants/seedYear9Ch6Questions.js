@@ -934,7 +934,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute $P=68$ and $w=18$.",
+        "explanation": "Substitute \\(P=68\\) and \\(w=18\\).",
         "workingOut": "$68 = 2(l + 18)$"
       },
       {
@@ -942,7 +942,7 @@ export const Y9_CH6A_QUESTIONS = [
         "workingOut": "$34 = l + 18$"
       },
       {
-        "explanation": "Solve for $l$.",
+        "explanation": "Solve for \\(l\\).",
         "workingOut": "$l = 16$"
       }
     ]
@@ -960,7 +960,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute $n = 30$.",
+        "explanation": "Substitute \\(n = 30\\).",
         "workingOut": "$S = \\frac{30}{2}(30 + 1)$"
       },
       {
@@ -982,7 +982,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute $C = 0$.",
+        "explanation": "Substitute \\(C = 0\\).",
         "workingOut": "$F = \\frac{9}{5}(0) + 32 = 32$"
       }
     ]
@@ -1000,7 +1000,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute $C = 100$.",
+        "explanation": "Substitute \\(C = 100\\).",
         "workingOut": "$F = \\frac{9}{5}(100) + 32 = 212$"
       }
     ]
@@ -1018,7 +1018,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute $C = 28$.",
+        "explanation": "Substitute \\(C = 28\\).",
         "workingOut": "$F = \\frac{9}{5}(28) + 32 = 82.4$"
       }
     ]
@@ -1036,7 +1036,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute $a = 24$ and $b = 32$.",
+        "explanation": "Substitute \\(a = 24\\) and \\(b = 32\\).",
         "workingOut": "$c^2 = 24^2 + 32^2$"
       },
       {
@@ -1062,7 +1062,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Find half the perimeter $s$.",
+        "explanation": "Find half the perimeter \\(s\\).",
         "workingOut": "$s = 15$"
       },
       {
@@ -1070,7 +1070,7 @@ export const Y9_CH6A_QUESTIONS = [
         "workingOut": "$A^2 = 15(15-5)(15-12)(15-13) = 15 \\times 10 \\times 3 \\times 2 = 900$"
       },
       {
-        "explanation": "Calculate $A$.",
+        "explanation": "Calculate \\(A\\).",
         "workingOut": "$A = 30$"
       }
     ]
@@ -1088,7 +1088,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Find half the perimeter $s$.",
+        "explanation": "Find half the perimeter \\(s\\).",
         "workingOut": "$s = 18$"
       },
       {
@@ -1096,7 +1096,7 @@ export const Y9_CH6A_QUESTIONS = [
         "workingOut": "$A^2 = 18(18-9)(18-12)(18-15) = 18 \\times 9 \\times 6 \\times 3 = 2916$"
       },
       {
-        "explanation": "Calculate $A$.",
+        "explanation": "Calculate \\(A\\).",
         "workingOut": "$A = 54$"
       }
     ]
@@ -1114,7 +1114,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Find half the perimeter $s$.",
+        "explanation": "Find half the perimeter \\(s\\).",
         "workingOut": "$s = 28$"
       },
       {
@@ -1122,7 +1122,7 @@ export const Y9_CH6A_QUESTIONS = [
         "workingOut": "$A^2 = 28(28-7)(28-24)(28-25) = 28 \\times 21 \\times 4 \\times 3 = 7056$"
       },
       {
-        "explanation": "Calculate $A$.",
+        "explanation": "Calculate \\(A\\).",
         "workingOut": "$A = 84$"
       }
     ]
@@ -1140,7 +1140,7 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Find half the perimeter $s$.",
+        "explanation": "Find half the perimeter \\(s\\).",
         "workingOut": "$s = 16$"
       },
       {
@@ -1148,7 +1148,7 @@ export const Y9_CH6A_QUESTIONS = [
         "workingOut": "$A^2 = 16(16-10)(16-10)(16-12) = 16 \\times 6 \\times 6 \\times 4 = 2304$"
       },
       {
-        "explanation": "Calculate $A$.",
+        "explanation": "Calculate \\(A\\).",
         "workingOut": "$A = 48$"
       }
     ]
@@ -1166,11 +1166,11 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute and solve for $v$.",
+        "explanation": "Substitute and solve for \\(v\\).",
         "workingOut": "$v^2 = 0^2 + 2(9.8)(60) = 1176$"
       },
       {
-        "explanation": "Substitute and solve for $v$.",
+        "explanation": "Substitute and solve for \\(v\\).",
         "workingOut": "$v \\approx 34.29$"
       }
     ]
@@ -1188,11 +1188,11 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute and solve for $v$.",
+        "explanation": "Substitute and solve for \\(v\\).",
         "workingOut": "$v^2 = 3^2 + 2(10)(50) = 9 + 1000 = 1009$"
       },
       {
-        "explanation": "Substitute and solve for $v$.",
+        "explanation": "Substitute and solve for \\(v\\).",
         "workingOut": "$v \\approx 31.76$"
       }
     ]
@@ -1210,11 +1210,11 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute and solve for $v$.",
+        "explanation": "Substitute and solve for \\(v\\).",
         "workingOut": "$v^2 = 6^2 + 2(9.8)(40) = 36 + 784 = 820$"
       },
       {
-        "explanation": "Substitute and solve for $v$.",
+        "explanation": "Substitute and solve for \\(v\\).",
         "workingOut": "$v \\approx 28.64$"
       }
     ]
@@ -1232,11 +1232,11 @@ export const Y9_CH6A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute and solve for $v$.",
+        "explanation": "Substitute and solve for \\(v\\).",
         "workingOut": "$v^2 = 12^2 + 2(9.8)(60) = 144 + 1176 = 1320$"
       },
       {
-        "explanation": "Substitute and solve for $v$.",
+        "explanation": "Substitute and solve for \\(v\\).",
         "workingOut": "$v \\approx 36.33$"
       }
     ]

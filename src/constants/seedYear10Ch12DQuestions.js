@@ -14,7 +14,7 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{b}{\\sin(61^\\circ)} = \\frac{8}{\\sin(42^\\circ)}"
       },
       {
-        "explanation": "Rearrange to solve for $b$.",
+        "explanation": "Rearrange to solve for \\(b\\).",
         "workingOut": "b = 8 \\times \\frac{\\sin(61^\\circ)}{\\sin(42^\\circ)}"
       },
       {
@@ -97,7 +97,7 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{b}{\\sin(26^\\circ)} = \\frac{9}{\\sin(35^\\circ)}"
       },
       {
-        "explanation": "Rearrange to solve for $b$.",
+        "explanation": "Rearrange to solve for \\(b\\).",
         "workingOut": "b = 9 \\times \\frac{\\sin(26^\\circ)}{\\sin(35^\\circ)}"
       },
       {
@@ -180,7 +180,7 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{b}{\\sin(73^\\circ)} = \\frac{9}{\\sin(82^\\circ)}"
       },
       {
-        "explanation": "Rearrange to solve for $b$.",
+        "explanation": "Rearrange to solve for \\(b\\).",
         "workingOut": "b = 9 \\times \\frac{\\sin(73^\\circ)}{\\sin(82^\\circ)}"
       },
       {
@@ -267,7 +267,7 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{x}{\\sin(71^\\circ)} = \\frac{4}{\\sin(26^\\circ)}"
       },
       {
-        "explanation": "Rearrange to solve for $x$.",
+        "explanation": "Rearrange to solve for \\(x\\).",
         "workingOut": "x = 4 \\times \\frac{\\sin(71^\\circ)}{\\sin(26^\\circ)}"
       },
       {
@@ -354,7 +354,7 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{x}{\\sin(30^\\circ)} = \\frac{14}{\\sin(40^\\circ)}"
       },
       {
-        "explanation": "Rearrange to solve for $x$.",
+        "explanation": "Rearrange to solve for \\(x\\).",
         "workingOut": "x = 14 \\times \\frac{\\sin(30^\\circ)}{\\sin(40^\\circ)}"
       },
       {
@@ -441,7 +441,7 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{x}{\\sin(73^\\circ)} = \\frac{8}{\\sin(55^\\circ)}"
       },
       {
-        "explanation": "Rearrange to solve for $x$.",
+        "explanation": "Rearrange to solve for \\(x\\).",
         "workingOut": "x = 8 \\times \\frac{\\sin(73^\\circ)}{\\sin(55^\\circ)}"
       },
       {
@@ -524,7 +524,7 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{b}{\\sin(54^\\circ)} = \\frac{8}{\\sin(62^\\circ)}"
       },
       {
-        "explanation": "Solve for $b$.",
+        "explanation": "Solve for \\(b\\).",
         "workingOut": "b = 8 \\times \\frac{\\sin(54^\\circ)}{\\sin(62^\\circ)} \\approx 7.33"
       }
     ],
@@ -541,7 +541,7 @@ export const Y10_CH12D_QUESTIONS = [
     "hint": "Find the third angle $A$ first.",
     "solutionSteps": [
       {
-        "explanation": "Calculate the third angle $A$.",
+        "explanation": "Calculate the third angle \\(A\\).",
         "workingOut": "A = 180^\\circ - 47^\\circ - 82^\\circ = 51^\\circ"
       },
       {
@@ -549,7 +549,7 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{a}{\\sin(51^\\circ)} = \\frac{10}{\\sin(47^\\circ)}"
       },
       {
-        "explanation": "Solve for $a$.",
+        "explanation": "Solve for \\(a\\).",
         "workingOut": "a = 10 \\times \\frac{\\sin(51^\\circ)}{\\sin(47^\\circ)} \\approx 10.63"
       }
     ],
@@ -570,11 +570,11 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{\\sin(\\theta)}{10} = \\frac{\\sin(76^\\circ)}{12}"
       },
       {
-        "explanation": "Rearrange to solve for $\\sin(\\theta)$.",
+        "explanation": "Rearrange to solve for \\(\\sin(\\theta)\\).",
         "workingOut": "\\sin(\\theta) = \\frac{10 \\sin(76^\\circ)}{12}"
       },
       {
-        "explanation": "Calculate $\\theta$ using the inverse sine function.",
+        "explanation": "Calculate \\(\\theta\\) using the inverse sine function.",
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{10 \\sin(76^\\circ)}{12}\\right) \\approx 54^\\circ"
       }
     ],
@@ -653,11 +653,11 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{\\sin(\\theta)}{5} = \\frac{\\sin(63^\\circ)}{8}"
       },
       {
-        "explanation": "Rearrange to solve for $\\sin(\\theta)$.",
+        "explanation": "Rearrange to solve for \\(\\sin(\\theta)\\).",
         "workingOut": "\\sin(\\theta) = \\frac{5 \\sin(63^\\circ)}{8}"
       },
       {
-        "explanation": "Calculate $\\theta$ using the inverse sine function.",
+        "explanation": "Calculate \\(\\theta\\) using the inverse sine function.",
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{5 \\sin(63^\\circ)}{8}\\right) \\approx 34^\\circ"
       }
     ],
@@ -736,11 +736,11 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{\\sin(\\theta)}{23} = \\frac{\\sin(85^\\circ)}{25}"
       },
       {
-        "explanation": "Rearrange to solve for $\\sin(\\theta)$.",
+        "explanation": "Rearrange to solve for \\(\\sin(\\theta)\\).",
         "workingOut": "\\sin(\\theta) = \\frac{23 \\sin(85^\\circ)}{25}"
       },
       {
-        "explanation": "Calculate $\\theta$ using the inverse sine function.",
+        "explanation": "Calculate \\(\\theta\\) using the inverse sine function.",
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{23 \\sin(85^\\circ)}{25}\\right) \\approx 66^\\circ"
       }
     ],
@@ -819,11 +819,11 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\frac{\\sin(B)}{14} = \\frac{\\sin(71^\\circ)}{18}"
       },
       {
-        "explanation": "Solve for $\\sin(B)$.",
+        "explanation": "Solve for \\(\\sin(B)\\).",
         "workingOut": "\\sin(B) = \\frac{14 \\sin(71^\\circ)}{18} \\approx 0.7354"
       },
       {
-        "explanation": "Calculate $B$.",
+        "explanation": "Calculate \\(B\\).",
         "workingOut": "B = \\sin^{-1}(0.7354) \\approx 47.34^\\circ"
       }
     ],
@@ -840,7 +840,7 @@ export const Y10_CH12D_QUESTIONS = [
     "hint": "Use the angle sum of a triangle and the value of $B$ from the previous part.",
     "solutionSteps": [
       {
-        "explanation": "The sum of angles in a triangle is $180^\\circ$. Using $B = 47.34^\\circ$:",
+        "explanation": "The sum of angles in a triangle is \\(180^\\circ\\). Using \\(B = 47.34^\\circ\\):",
         "workingOut": "C = 180^\\circ - 71^\\circ - 47.34^\\circ = 61.66^\\circ"
       }
     ],
@@ -857,11 +857,11 @@ export const Y10_CH12D_QUESTIONS = [
     "hint": "Use the sine rule with the newly found angle $C$.",
     "solutionSteps": [
       {
-        "explanation": "Using $C = 61.66^\\circ$ from the previous part, set up the sine rule.",
+        "explanation": "Using \\(C = 61.66^\\circ\\) from the previous part, set up the sine rule.",
         "workingOut": "\\frac{c}{\\sin(61.66^\\circ)} = \\frac{18}{\\sin(71^\\circ)}"
       },
       {
-        "explanation": "Solve for $c$.",
+        "explanation": "Solve for \\(c\\).",
         "workingOut": "c = 18 \\times \\frac{\\sin(61.66^\\circ)}{\\sin(71^\\circ)} \\approx 16.75"
       }
     ],
@@ -878,11 +878,11 @@ export const Y10_CH12D_QUESTIONS = [
     "hint": "Use the sine rule in $\\triangle ADC$.",
     "solutionSteps": [
       {
-        "explanation": "In $\\triangle ADC$, we know $AD = 15$, $AC = 20$, and $\\angle ADC = 50^\\circ$. Set up the sine rule to find $\\angle ACD$.",
+        "explanation": "In \\(\\triangle ADC\\), we know \\(AD = 15\\), \\(AC = 20\\), and \\(\\angle ADC = 50^\\circ\\). Set up the sine rule to find \\(\\angle ACD\\).",
         "workingOut": "\\frac{\\sin(\\angle ACD)}{15} = \\frac{\\sin(50^\\circ)}{20}"
       },
       {
-        "explanation": "Solve for $\\sin(\\angle ACD)$.",
+        "explanation": "Solve for \\(\\sin(\\angle ACD)\\).",
         "workingOut": "\\sin(\\angle ACD) = \\frac{15 \\sin(50^\\circ)}{20} \\approx 0.5745"
       },
       {
@@ -973,15 +973,15 @@ export const Y10_CH12D_QUESTIONS = [
     "hint": "Find the third angle of $\\triangle ADC$ first.",
     "solutionSteps": [
       {
-        "explanation": "Using $\\angle ACD = 35.06^\\circ$ from the previous part, calculate the third angle $\\angle DAC$.",
+        "explanation": "Using \\(\\angle ACD = 35.06^\\circ\\) from the previous part, calculate the third angle \\(\\angle DAC\\).",
         "workingOut": "\\angle DAC = 180^\\circ - 50^\\circ - 35.06^\\circ = 94.94^\\circ"
       },
       {
-        "explanation": "Set up the sine rule to find $DC$.",
+        "explanation": "Set up the sine rule to find \\(DC\\).",
         "workingOut": "\\frac{DC}{\\sin(94.94^\\circ)} = \\frac{20}{\\sin(50^\\circ)}"
       },
       {
-        "explanation": "Solve for $DC$.",
+        "explanation": "Solve for \\(DC\\).",
         "workingOut": "DC = 20 \\times \\frac{\\sin(94.94^\\circ)}{\\sin(50^\\circ)} \\approx 26.01"
       }
     ],

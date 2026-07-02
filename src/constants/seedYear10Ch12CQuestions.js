@@ -958,7 +958,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Identify the appropriate 2D right-angled triangle within the 3D shape.",
     "solutionSteps": [
       {
-        "explanation": "CE is the space diagonal of the cube. $\\triangle CGE$ is a right-angled triangle.",
+        "explanation": "CE is the space diagonal of the cube. \\(\\triangle CGE\\) is a right-angled triangle.",
         "workingOut": ""
       },
       {
@@ -1236,7 +1236,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Identify the appropriate 2D right-angled triangle within the 3D shape.",
     "solutionSteps": [
       {
-        "explanation": "Consider $\\triangle CBE$. Check if it satisfies Pythagoras' theorem.",
+        "explanation": "Consider \\(\\triangle CBE\\). Check if it satisfies Pythagoras' theorem.",
         "workingOut": ""
       },
       {
@@ -2876,7 +2876,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Identify the vertical and horizontal components. CF is vertical.",
     "solutionSteps": [
       {
-        "explanation": "CF is vertical, so $\\triangle CFA$ is a right-angled triangle at F.",
+        "explanation": "CF is vertical, so \\(\\triangle CFA\\) is a right-angled triangle at F.",
         "workingOut": ""
       },
       {
@@ -3032,7 +3032,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Draw a diagram of the ground (horizontal plane) and separate diagrams for the vertical planes.",
     "solutionSteps": [
       {
-        "explanation": "Let $h$ be the height of the tree. The angle of elevation from $P$ ($50$ m away) is $32^\\circ$.",
+        "explanation": "Let \\(h\\) be the height of the tree. The angle of elevation from \\(P\\) (\\(50\\) m away) is \\(32^\\circ\\).",
         "workingOut": ""
       },
       {
@@ -3057,7 +3057,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Draw a diagram of the ground (horizontal plane) and separate diagrams for the vertical planes.",
     "solutionSteps": [
       {
-        "explanation": "$P$ is South of the tree ($50$ m), and $Q$ is East of $P$ ($100$ m). This forms a right-angled triangle on the ground.",
+        "explanation": "\\(P\\) is South of the tree (\\(50\\) m), and \\(Q\\) is East of \\(P\\) (\\(100\\) m). This forms a right-angled triangle on the ground.",
         "workingOut": ""
       },
       {
@@ -3082,7 +3082,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Draw a diagram of the ground (horizontal plane) and separate diagrams for the vertical planes.",
     "solutionSteps": [
       {
-        "explanation": "Use the height of the tree ($h$) and the distance from $Q$ to the base.",
+        "explanation": "Use the height of the tree (\\(h\\)) and the distance from \\(Q\\) to the base.",
         "workingOut": ""
       },
       {
@@ -3107,7 +3107,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Draw a diagram of the ground (horizontal plane) and separate diagrams for the vertical planes.",
     "solutionSteps": [
       {
-        "explanation": "From $Q$, the tree is West and North. Find the angle from West.",
+        "explanation": "From \\(Q\\), the tree is West and North. Find the angle from West.",
         "workingOut": ""
       },
       {
@@ -3132,7 +3132,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Treat the ground as a 2D plane and the elevations as right-angled triangles standing on the ground.",
     "solutionSteps": [
       {
-        "explanation": "Use the angle of elevation from Dillon ($15^\\circ$) and the tower height ($35$ m).",
+        "explanation": "Use the angle of elevation from Dillon (\\(15^\\circ\\)) and the tower height (\\(35\\) m).",
         "workingOut": ""
       },
       {
@@ -3157,7 +3157,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Treat the ground as a 2D plane and the elevations as right-angled triangles standing on the ground.",
     "solutionSteps": [
       {
-        "explanation": "Use the angle of elevation from Eugene ($20^\\circ$) and the tower height ($35$ m).",
+        "explanation": "Use the angle of elevation from Eugene (\\(20^\\circ\\)) and the tower height (\\(35\\) m).",
         "workingOut": ""
       },
       {
@@ -3232,27 +3232,27 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Check the angle between the two bearings. It creates a right-angled triangle on the ground.",
     "solutionSteps": [
       {
-        "explanation": "Let $h$ be the height of the lighthouse $L$. Express the distances $AL$ and $BL$ in terms of $h$.",
+        "explanation": "Let \\(h\\) be the height of the lighthouse \\(L\\). Express the distances \\(AL\\) and \\(BL\\) in terms of \\(h\\).",
         "workingOut": "AL = \\frac{h}{\\tan(20.25^\\circ)}, \\quad BL = \\frac{h}{\\tan(10.20^\\circ)}"
       },
       {
-        "explanation": "Calculate the angle $\\angle ALB$ on the ground using the given bearings.",
+        "explanation": "Calculate the angle \\(\\angle ALB\\) on the ground using the given bearings.",
         "workingOut": "\\angle ALB = (360^\\circ - 296^\\circ) + 26^\\circ = 64^\\circ + 26^\\circ = 90^\\circ"
       },
       {
-        "explanation": "Since $\\triangle ALB$ is a right-angled triangle, apply Pythagoras' theorem using $AB = 500$.",
+        "explanation": "Since \\(\\triangle ALB\\) is a right-angled triangle, apply Pythagoras' theorem using \\(AB = 500\\).",
         "workingOut": "AL^2 + BL^2 = 500^2"
       },
       {
-        "explanation": "Substitute the expressions for $AL$ and $BL$.",
+        "explanation": "Substitute the expressions for \\(AL\\) and \\(BL\\).",
         "workingOut": "\\left(\\frac{h}{\\tan(20.25^\\circ)}\\right)^2 + \\left(\\frac{h}{\\tan(10.20^\\circ)}\\right)^2 = 250000"
       },
       {
-        "explanation": "Factor out $h^2$ and calculate the trigonometric values.",
+        "explanation": "Factor out \\(h^2\\) and calculate the trigonometric values.",
         "workingOut": "h^2(7.348 + 30.887) = 250000"
       },
       {
-        "explanation": "Solve for $h$.",
+        "explanation": "Solve for \\(h\\).",
         "workingOut": "h^2 = \\frac{250000}{38.235} \\approx 6538.5 \\implies h \\approx 81"
       }
     ],
@@ -3269,7 +3269,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Use Pythagoras' theorem on the horizontal plane to find the new horizontal distance.",
     "solutionSteps": [
       {
-        "explanation": "The angle of depression is equal to the angle of elevation from the yacht. Distance is $200$ m.",
+        "explanation": "The angle of depression is equal to the angle of elevation from the yacht. Distance is \\(200\\) m.",
         "workingOut": ""
       },
       {
@@ -3294,7 +3294,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Use Pythagoras' theorem on the horizontal plane to find the new horizontal distance.",
     "solutionSteps": [
       {
-        "explanation": "The yacht sailed $150$ m horizontally perpendicular to its initial path. Find the new 3D distance.",
+        "explanation": "The yacht sailed \\(150\\) m horizontally perpendicular to its initial path. Find the new 3D distance.",
         "workingOut": ""
       },
       {
@@ -3319,7 +3319,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Use Pythagoras' theorem on the horizontal plane to find the new horizontal distance.",
     "solutionSteps": [
       {
-        "explanation": "Use the height of the cliff and the new horizontal distance ($250$ m).",
+        "explanation": "Use the height of the cliff and the new horizontal distance (\\(250\\) m).",
         "workingOut": ""
       },
       {
@@ -3344,7 +3344,7 @@ export const Y10_CH12C_QUESTIONS = [
     "hint": "Find the height of the mast first. Then find the horizontal distance of each anchor point from the base.",
     "solutionSteps": [
       {
-        "explanation": "Let $h$ be the height of the mast. Use the first rope ($40$ m, $58^\\circ$).",
+        "explanation": "Let \\(h\\) be the height of the mast. Use the first rope (\\(40\\) m, \\(58^\\circ\\)).",
         "workingOut": "\\sin(58^\\circ) = \\frac{h}{40} \\implies h = 40 \\sin(58^\\circ) \\approx 33.92"
       },
       {

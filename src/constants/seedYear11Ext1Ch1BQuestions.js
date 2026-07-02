@@ -1129,11 +1129,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nb^2+5b+6"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1155,11 +1155,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nm^2+7m+12"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1181,11 +1181,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nn^2+8n+7"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1207,11 +1207,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\ny^2+9y+20"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1233,11 +1233,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nz^2+11z+30"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1259,11 +1259,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nu^2+13u+22"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1285,11 +1285,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\np^2-5p+4"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1311,11 +1311,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nd^2-8d+15"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1337,11 +1337,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nb^2-9b+14"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1363,11 +1363,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nc^2-9c+18"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1389,11 +1389,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nv^2+v-6"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1415,11 +1415,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nw^2-w-6"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1441,11 +1441,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nx^2-3x-10"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1467,11 +1467,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nk^2+3k-10"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1493,11 +1493,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nq^2-4q-21"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1519,11 +1519,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nz^2+4z-32"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1545,11 +1545,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nd^2-13d+36"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1571,11 +1571,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nv^2-14v+45"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1597,11 +1597,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\ny^2-y-72"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1623,11 +1623,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\ny^2+4y-45"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1649,11 +1649,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nu^2-5u-36"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1675,11 +1675,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nq^2+10q-39"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1701,11 +1701,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nv^2-17v-60"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1727,11 +1727,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the monic quadratic expression.\\n\\nw^2+24w-52"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1753,11 +1753,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the perfect square.\\n\\ny^2+6y+9"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1779,11 +1779,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the perfect square.\\n\\nz^2+8z+16"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1805,11 +1805,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the perfect square.\\n\\nm^2+12m+36"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1831,11 +1831,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the perfect square.\\n\\nn^2-10n+25"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1857,11 +1857,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the perfect square.\\n\\nu^2-14u+49"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1883,11 +1883,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the perfect square.\\n\\ny^2+18y+81"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1909,11 +1909,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the perfect square.\\n\\nv^2-30v+225"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1935,11 +1935,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Factor the perfect square.\\n\\nb^2-26b+169"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1961,11 +1961,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Complete the perfect square:\\n\\ny^2 + 10y + \\dots = (y + \\dots)^2"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -1987,11 +1987,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Complete the perfect square:\\n\\nz^2 + 12z + \\dots = (z + \\dots)^2"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -2013,11 +2013,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Complete the perfect square:\\n\\nm^2 - 16m + \\dots = (m - \\dots)^2"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -2039,11 +2039,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Complete the perfect square:\\n\\nn^2 - 40n + \\dots = (n - \\dots)^2"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -2065,11 +2065,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Complete the perfect square:\\n\\nv^2 + 3v + \\dots = (v + \\dots)^2"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -2091,11 +2091,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Complete the perfect square:\\n\\nw^2 - 5w + \\dots = (w - \\dots)^2"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -2117,11 +2117,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Complete the perfect square:\\n\\nk^2 + 60k + \\dots = (k + \\dots)^2"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -2143,11 +2143,11 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "Recognize the mathematical structure, such as a difference of two squares $a^2 - b^2$ or a perfect square.",
+        "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
         "workingOut": "Complete the perfect square:\\n\\nd^2 - 15d + \\dots = (d - \\dots)^2"
       },
       {
-        "explanation": "Apply the relevant factoring formula $(a-b)(a+b)$ or $(a \\pm b)^2$.",
+        "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
         "workingOut": "\\text{Apply formula}"
       },
       {
@@ -2169,7 +2169,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n2y^2+3y+1"
       },
       {
@@ -2195,7 +2195,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n3z^2+7z+2"
       },
       {
@@ -2221,7 +2221,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n2m^2+11m+5"
       },
       {
@@ -2247,7 +2247,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n5n^2+12n+4"
       },
       {
@@ -2273,7 +2273,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n3p^2-4p+1"
       },
       {
@@ -2299,7 +2299,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n2q^2-7q+6"
       },
       {
@@ -2325,7 +2325,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n3u^2-8u+5"
       },
       {
@@ -2351,7 +2351,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n10v^2-17v+3"
       },
       {
@@ -2377,7 +2377,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n3w^2-2w-5"
       },
       {
@@ -2403,7 +2403,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n3k^2+4k-7"
       },
       {
@@ -2429,7 +2429,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n2a^2+3a-5"
       },
       {
@@ -2455,7 +2455,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n2b^2+9b-5"
       },
       {
@@ -2481,7 +2481,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n3c^2-10c-8"
       },
       {
@@ -2507,7 +2507,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n3d^2+d-10"
       },
       {
@@ -2533,7 +2533,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n8m^2+14m-15"
       },
       {
@@ -2559,7 +2559,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n10n^2-11n-6"
       },
       {
@@ -2585,7 +2585,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n15p^2+14p-8"
       },
       {
@@ -2611,7 +2611,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n3q^2+17q+20"
       },
       {
@@ -2637,7 +2637,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n7u^2+10u-8"
       },
       {
@@ -2663,7 +2663,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n7v^2-24v+9"
       },
       {
@@ -2689,7 +2689,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n7w^2-12w-4"
       },
       {
@@ -2715,7 +2715,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n3k^2+14k-24"
       },
       {
@@ -2741,7 +2741,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n4x^2-4x-15"
       },
       {
@@ -2767,7 +2767,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor the non-monic quadratic expression.\\n\\n2y^2+11y-21"
       },
       {
@@ -2793,7 +2793,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\nm^2-36"
       },
       {
@@ -2819,7 +2819,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\nn^2-36n"
       },
       {
@@ -2845,7 +2845,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\np^2-26p+120"
       },
       {
@@ -2871,7 +2871,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3q^2+26q+48"
       },
       {
@@ -2897,7 +2897,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\nu^3+4u^2+6u+24"
       },
       {
@@ -2923,7 +2923,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n49-v^2"
       },
       {
@@ -2949,7 +2949,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n49w^2-w^3"
       },
       {
@@ -2975,7 +2975,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\nk^2+18k+81"
       },
       {
@@ -3001,7 +3001,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\nx^2-18x-40"
       },
       {
@@ -3027,7 +3027,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3y^2+14y-24"
       },
       {
@@ -3053,7 +3053,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n4z^2-20z-11"
       },
       {
@@ -3079,7 +3079,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3m^3-15m^2-2m+10"
       },
       {
@@ -3105,7 +3105,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3x^2+xy-6x-2y"
       },
       {
@@ -3131,7 +3131,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n8p^4q^3+12p^3q^4"
       },
       {
@@ -3157,7 +3157,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n64u^2-81v^2"
       },
       {
@@ -3183,7 +3183,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\nw^2-16w+60"
       },
       {
@@ -3209,7 +3209,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n5x^2+3x-26"
       },
       {
@@ -3235,7 +3235,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3y^2+35y+22"
       },
       {
@@ -3261,7 +3261,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3z^2+19z+28"
       },
       {
@@ -3287,7 +3287,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n4k^3+12k^2+20k"
       },
       {
@@ -3313,7 +3313,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\nm^2+12m-64"
       },
       {
@@ -3339,7 +3339,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n4p^3-3p^2q-16p+12q"
       },
       {
@@ -3365,7 +3365,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n(x+y)^2-z^2"
       },
       {
@@ -3391,7 +3391,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Use appropriate techniques to factor the expression.\\n\\n9b^2-24b+16"
       },
       {
@@ -3417,7 +3417,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n5m^2-45"
       },
       {
@@ -3443,7 +3443,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\na^4-b^4"
       },
       {
@@ -3469,7 +3469,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\ny^3-y"
       },
       {
@@ -3495,7 +3495,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n3z^2-3z-18"
       },
       {
@@ -3521,7 +3521,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n16k-k^3"
       },
       {
@@ -3547,7 +3547,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n81-c^4"
       },
       {
@@ -3573,7 +3573,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n6p^2+21p-45"
       },
       {
@@ -3599,7 +3599,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nx^4+x^3+x^2+x"
       },
       {
@@ -3625,7 +3625,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nm^3+4m^2-m-4"
       },
       {
@@ -3651,7 +3651,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nn^3-9n^2+8n"
       },
       {
@@ -3677,7 +3677,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nu^4-8u^2-9"
       },
       {
@@ -3703,7 +3703,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "hint": "Look for common factors, grouping, or special formulas.",
     "solutionSteps": [
       {
-        "explanation": "For the quadratic expression $ax^2 + bx + c$, find two numbers that multiply to give $ac$ and add to give $b$.",
+        "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
         "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nby^2-b-3y^2+3"
       },
       {

@@ -480,7 +480,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $8$. Factor it out.",
+        "explanation": "The highest common factor is \\(8\\). Factor it out.",
         "workingOut": "8(\\frac{8y } + \\frac{ 32}{8}) = 8(y + 4)"
       }
     ]
@@ -498,7 +498,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $7$. Factor it out.",
+        "explanation": "The highest common factor is \\(7\\). Factor it out.",
         "workingOut": "7(\\frac{7b } + \\frac{ 21}{7}) = 7(b + 3)"
       }
     ]
@@ -516,7 +516,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $p$. Factor it out.",
+        "explanation": "The highest common factor is \\(p\\). Factor it out.",
         "workingOut": "p(\\frac{pq } + \\frac{ 6p}{p}) = p(q + 6)"
       }
     ]
@@ -534,7 +534,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $m$. Factor it out.",
+        "explanation": "The highest common factor is \\(m\\). Factor it out.",
         "workingOut": "m(\\frac{m^2 } + \\frac{ m}{m}) = m(m + 1)"
       }
     ]
@@ -552,7 +552,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $v$. Factor it out.",
+        "explanation": "The highest common factor is \\(v\\). Factor it out.",
         "workingOut": "v(\\frac{v^2 } + \\frac{ uv}{v}) = v(v + u)"
       }
     ]
@@ -570,7 +570,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $4$. Factor it out.",
+        "explanation": "The highest common factor is \\(4\\). Factor it out.",
         "workingOut": "4(\\frac{4y } + \\frac{ 36}{4}) = 4(y + 9)"
       }
     ]
@@ -588,7 +588,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $5$. Factor it out.",
+        "explanation": "The highest common factor is \\(5\\). Factor it out.",
         "workingOut": "5(\\frac{5z } + \\frac{ 30}{5}) = 5(z + 6)"
       }
     ]
@@ -606,7 +606,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $8$. Factor it out.",
+        "explanation": "The highest common factor is \\(8\\). Factor it out.",
         "workingOut": "8(\\frac{8m } - \\frac{ 72}{8}) = 8(m - 9)"
       }
     ]
@@ -624,7 +624,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $10$. Factor it out.",
+        "explanation": "The highest common factor is \\(10\\). Factor it out.",
         "workingOut": "10(\\frac{10c } + \\frac{ 40}{10}) = 10(c + 4)"
       }
     ]
@@ -642,7 +642,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $p$. Factor it out.",
+        "explanation": "The highest common factor is \\(p\\). Factor it out.",
         "workingOut": "p(\\frac{p^2 } + \\frac{ 8p}{p}) = p(p + 8)"
       }
     ]
@@ -660,7 +660,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $q$. Factor it out.",
+        "explanation": "The highest common factor is \\(q\\). Factor it out.",
         "workingOut": "q(\\frac{q^2 } - \\frac{ 4q}{q}) = q(q - 4)"
       }
     ]
@@ -678,7 +678,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $5$. Factor it out.",
+        "explanation": "The highest common factor is \\(5\\). Factor it out.",
         "workingOut": "5(\\frac{15z } + \\frac{ 20}{5}) = 5(3z + 4)"
       }
     ]
@@ -696,7 +696,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $15$. Factor it out.",
+        "explanation": "The highest common factor is \\(15\\). Factor it out.",
         "workingOut": "15(\\frac{30x } - \\frac{ 45}{15}) = 15(2x - 3)"
       }
     ]
@@ -714,7 +714,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-8$. Factor it out.",
+        "explanation": "The highest common factor is \\(-8\\). Factor it out.",
         "workingOut": "-8(\\frac{} - \\frac{16b - 24}{-8}) = -8(2b + 3)"
       }
     ]
@@ -732,7 +732,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-4$. Factor it out.",
+        "explanation": "The highest common factor is \\(-4\\). Factor it out.",
         "workingOut": "-4(\\frac{} - \\frac{8x - 12}{-4}) = -4(2x + 3)"
       }
     ]
@@ -750,7 +750,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-5$. Factor it out.",
+        "explanation": "The highest common factor is \\(-5\\). Factor it out.",
         "workingOut": "-5(\\frac{} - \\frac{5 - 15p}{-5}) = -5(1 + 3p)"
       }
     ]
@@ -768,7 +768,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $5p$.",
+        "explanation": "The highest common factor is \\(5p\\).",
         "workingOut": "5p(q + 4)"
       }
     ]
@@ -786,7 +786,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $5b$.",
+        "explanation": "The highest common factor is \\(5b\\).",
         "workingOut": "5b(3b + 2)"
       }
     ]
@@ -804,7 +804,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $12xy$.",
+        "explanation": "The highest common factor is \\(12xy\\).",
         "workingOut": "12xy(2x + y)"
       }
     ]
@@ -822,7 +822,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $5uv^2$.",
+        "explanation": "The highest common factor is \\(5uv^2\\).",
         "workingOut": "5uv^2(4u + 3)"
       }
     ]
@@ -840,7 +840,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $3m$.",
+        "explanation": "The highest common factor is \\(3m\\).",
         "workingOut": "3m(2m + 3)"
       }
     ]
@@ -858,7 +858,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $5y$.",
+        "explanation": "The highest common factor is \\(5y\\).",
         "workingOut": "5y(2y + 3x)"
       }
     ]
@@ -876,7 +876,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $4c$.",
+        "explanation": "The highest common factor is \\(4c\\).",
         "workingOut": "4c(1 - 2c)"
       }
     ]
@@ -894,7 +894,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $3y$.",
+        "explanation": "The highest common factor is \\(3y\\).",
         "workingOut": "3y(2y - 3x)"
       }
     ]
@@ -912,7 +912,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $4pq$.",
+        "explanation": "The highest common factor is \\(4pq\\).",
         "workingOut": "4pq(3 - 4p)"
       }
     ]
@@ -930,7 +930,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $12z$.",
+        "explanation": "The highest common factor is \\(12z\\).",
         "workingOut": "12z(2 - z)"
       }
     ]
@@ -948,7 +948,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $5b$.",
+        "explanation": "The highest common factor is \\(5b\\).",
         "workingOut": "5b(1 - 2c^2)"
       }
     ]
@@ -966,7 +966,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $2u$.",
+        "explanation": "The highest common factor is \\(2u\\).",
         "workingOut": "2u(4v - 3u)"
       }
     ]
@@ -984,7 +984,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $9ab$.",
+        "explanation": "The highest common factor is \\(9ab\\).",
         "workingOut": "9ab(2b - 3a)"
       }
     ]
@@ -1002,7 +1002,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $4xy$.",
+        "explanation": "The highest common factor is \\(4xy\\).",
         "workingOut": "4xy(2y - 7x)"
       }
     ]
@@ -1020,7 +1020,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $5mn$.",
+        "explanation": "The highest common factor is \\(5mn\\).",
         "workingOut": "5mn(3n - 7m)"
       }
     ]
@@ -1038,7 +1038,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-6c$.",
+        "explanation": "The highest common factor is \\(-6c\\).",
         "workingOut": "-6c(2c - 1)"
       }
     ]
@@ -1056,7 +1056,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-10pq$.",
+        "explanation": "The highest common factor is \\(-10pq\\).",
         "workingOut": "-10pq(2p + 1)"
       }
     ]
@@ -1074,7 +1074,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-uv$.",
+        "explanation": "The highest common factor is \\(-uv\\).",
         "workingOut": "-uv(u + 4)"
       }
     ]
@@ -1092,7 +1092,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-6a$.",
+        "explanation": "The highest common factor is \\(-6a\\).",
         "workingOut": "-6a(b - 4a)"
       }
     ]
@@ -1110,7 +1110,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-8y$.",
+        "explanation": "The highest common factor is \\(-8y\\).",
         "workingOut": "-8y(yz - 5)"
       }
     ]
@@ -1128,7 +1128,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $6x$.",
+        "explanation": "The highest common factor is \\(6x\\).",
         "workingOut": "6x(4x - y)"
       }
     ]
@@ -1146,7 +1146,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-2mn$.",
+        "explanation": "The highest common factor is \\(-2mn\\).",
         "workingOut": "-2mn(5mn + 2)"
       }
     ]
@@ -1164,7 +1164,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $4pq$.",
+        "explanation": "The highest common factor is \\(4pq\\).",
         "workingOut": "4pq(4q - p)"
       }
     ]
@@ -1182,7 +1182,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor is $-12uv^2$.",
+        "explanation": "The highest common factor is \\(-12uv^2\\).",
         "workingOut": "-12uv^2(3u + 1)"
       }
     ]
@@ -1200,7 +1200,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Area = length $\\times$ width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
+        "explanation": "Area = length \\(\\times\\) width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
         "workingOut": "\\frac{10b + 15}{2b + 3} = 5"
       }
     ]
@@ -1218,7 +1218,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Area = length $\\times$ width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
+        "explanation": "Area = length \\(\\times\\) width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
         "workingOut": "\\frac{12m + 8mn}{4m} = 3 + 2n"
       }
     ]
@@ -1236,7 +1236,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Area = length $\\times$ width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
+        "explanation": "Area = length \\(\\times\\) width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
         "workingOut": "\\frac{14y + 21}{7} = 2y + 3"
       }
     ]
@@ -1254,7 +1254,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Area = length $\\times$ width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
+        "explanation": "Area = length \\(\\times\\) width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
         "workingOut": "\\frac{12pq + 18qr}{6q} = 2p + 3r"
       }
     ]
@@ -1272,7 +1272,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Area = length $\\times$ width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
+        "explanation": "Area = length \\(\\times\\) width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
         "workingOut": "\\frac{3b + b^2}{b} = 3 + b"
       }
     ]
@@ -1290,7 +1290,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Area = length $\\times$ width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
+        "explanation": "Area = length \\(\\times\\) width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
         "workingOut": "\\frac{16x^2 + 8xy}{8x} = 2x + y"
       }
     ]
@@ -1308,7 +1308,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Area = length $\\times$ width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
+        "explanation": "Area = length \\(\\times\\) width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
         "workingOut": "\\frac{18uv + 9u^2}{9u} = 2v + u"
       }
     ]
@@ -1326,7 +1326,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "Area = length $\\times$ width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
+        "explanation": "Area = length \\(\\times\\) width. Divide Area by the given side to find the missing side, which is equivalent to factorising.",
         "workingOut": "\\frac{30x^2y^2 - 20x^2}{3y^2 - 2} = 10x^2"
       }
     ]
@@ -1344,7 +1344,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor of all three terms is $3xy$.",
+        "explanation": "The highest common factor of all three terms is \\(3xy\\).",
         "workingOut": "3xy(2x - 1 + 4y)"
       }
     ]
@@ -1362,7 +1362,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor of all three terms is $6b$.",
+        "explanation": "The highest common factor of all three terms is \\(6b\\).",
         "workingOut": "6b(a^2 - a + 4b)"
       }
     ]
@@ -1380,7 +1380,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor of all three terms is $9$.",
+        "explanation": "The highest common factor of all three terms is \\(9\\).",
         "workingOut": "9(mn + 2m^2 + 3n)"
       }
     ]
@@ -1398,7 +1398,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor of all three terms is $3$.",
+        "explanation": "The highest common factor of all three terms is \\(3\\).",
         "workingOut": "3(p^2 + 2pq + 3q)"
       }
     ]
@@ -1416,7 +1416,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor of all three terms is $2xy$.",
+        "explanation": "The highest common factor of all three terms is \\(2xy\\).",
         "workingOut": "2xy(3x + 2 + 4y)"
       }
     ]
@@ -1434,7 +1434,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor of all three terms is $3u$.",
+        "explanation": "The highest common factor of all three terms is \\(3u\\).",
         "workingOut": "3u(3u + 4v + 5v^2)"
       }
     ]
@@ -1452,7 +1452,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor of all three terms is $6ab$.",
+        "explanation": "The highest common factor of all three terms is \\(6ab\\).",
         "workingOut": "6ab(ab + 2b + 3a)"
       }
     ]
@@ -1470,7 +1470,7 @@ export const Y9_CH4A_QUESTIONS = [
     "s": "",
     "solutionSteps": [
       {
-        "explanation": "The highest common factor of all three terms is $7$.",
+        "explanation": "The highest common factor of all three terms is \\(7\\).",
         "workingOut": "7(k^2 - 3km - 4m^2)"
       }
     ]

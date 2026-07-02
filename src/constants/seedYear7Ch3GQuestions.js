@@ -10,7 +10,7 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Substitute the required diagram number into the expression $4k + 1$.",
     "solutionSteps": [
       {
-        "explanation": "Use the formula given, $4k + 1$, where $k$ is the diagram number.",
+        "explanation": "Use the formula given, \\(4k + 1\\), where \\(k\\) is the diagram number.",
         "workingOut": "4k + 1"
       }
     ],
@@ -118,11 +118,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Substitute $m = 4$ into the area expression.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $m = 4$ into $12m^2$.",
+        "explanation": "Substitute \\(m = 4\\) into \\(12m^2\\).",
         "workingOut": "12(4)^2"
       },
       {
-        "explanation": "Square the $4$.",
+        "explanation": "Square the \\(4\\).",
         "workingOut": "12(16)"
       },
       {
@@ -143,11 +143,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Substitute $m = 6$ into the area expression.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $m = 6$ into $12m^2$.",
+        "explanation": "Substitute \\(m = 6\\) into \\(12m^2\\).",
         "workingOut": "12(6)^2"
       },
       {
-        "explanation": "Square the $6$.",
+        "explanation": "Square the \\(6\\).",
         "workingOut": "12(36)"
       },
       {
@@ -172,11 +172,11 @@ export const Y7_CH3G_QUESTIONS = [
         "workingOut": ""
       },
       {
-        "explanation": "Area of the left rectangle is $b \\times 3a$.",
+        "explanation": "Area of the left rectangle is \\(b \\times 3a\\).",
         "workingOut": "3ab"
       },
       {
-        "explanation": "Area of the right rectangle is $a \\times a$.",
+        "explanation": "Area of the right rectangle is \\(a \\times a\\).",
         "workingOut": "a^2"
       },
       {
@@ -326,11 +326,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Multiply the quantity of each shape by its area, then add them.",
     "solutionSteps": [
       {
-        "explanation": "Area of $3$ squares.",
+        "explanation": "Area of \\(3\\) squares.",
         "workingOut": "3x"
       },
       {
-        "explanation": "Area of $2$ rectangles.",
+        "explanation": "Area of \\(2\\) rectangles.",
         "workingOut": "2y"
       },
       {
@@ -351,11 +351,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Multiply the quantity of each shape by its area, then add them.",
     "solutionSteps": [
       {
-        "explanation": "Area of $5$ squares.",
+        "explanation": "Area of \\(5\\) squares.",
         "workingOut": "5x"
       },
       {
-        "explanation": "Area of $1$ rectangle.",
+        "explanation": "Area of \\(1\\) rectangle.",
         "workingOut": "y"
       },
       {
@@ -376,11 +376,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Multiply the quantity of each shape by its area, then add them.",
     "solutionSteps": [
       {
-        "explanation": "Area of $1$ square.",
+        "explanation": "Area of \\(1\\) square.",
         "workingOut": "x"
       },
       {
-        "explanation": "Area of $4$ rectangles.",
+        "explanation": "Area of \\(4\\) rectangles.",
         "workingOut": "4y"
       },
       {
@@ -401,11 +401,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Multiply the quantity of each shape by its area, then add them.",
     "solutionSteps": [
       {
-        "explanation": "Area of $2$ squares.",
+        "explanation": "Area of \\(2\\) squares.",
         "workingOut": "2x"
       },
       {
-        "explanation": "Area of $3$ rectangles.",
+        "explanation": "Area of \\(3\\) rectangles.",
         "workingOut": "3y"
       },
       {
@@ -424,11 +424,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Check if the number being added is a multiple of $4$.",
     "solutionSteps": [
       {
-        "explanation": "$k$ is a multiple of $4$, and $16$ is also a multiple of $4$.",
+        "explanation": "\\(k\\) is a multiple of \\(4\\), and \\(16\\) is also a multiple of \\(4\\).",
         "workingOut": "16 = 4 \\times 4"
       },
       {
-        "explanation": "The sum of two multiples of $4$ is always a multiple of $4$.",
+        "explanation": "The sum of two multiples of \\(4\\) is always a multiple of \\(4\\).",
         "workingOut": "Yes"
       }
     ],
@@ -454,11 +454,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Check if $100$ is a multiple of $4$.",
     "solutionSteps": [
       {
-        "explanation": "$100$ is a multiple of $4$ ($25 \\times 4$).",
+        "explanation": "\\(100\\) is a multiple of \\(4\\) (\\(25 \\times 4\\)).",
         "workingOut": ""
       },
       {
-        "explanation": "The sum of two multiples of $4$ is a multiple of $4$.",
+        "explanation": "The sum of two multiples of \\(4\\) is a multiple of \\(4\\).",
         "workingOut": "Yes"
       }
     ],
@@ -484,11 +484,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Check if $40$ is a multiple of $4$.",
     "solutionSteps": [
       {
-        "explanation": "$40$ is a multiple of $4$ ($10 \\times 4$).",
+        "explanation": "\\(40\\) is a multiple of \\(4\\) (\\(10 \\times 4\\)).",
         "workingOut": ""
       },
       {
-        "explanation": "The sum of two multiples of $4$ is a multiple of $4$.",
+        "explanation": "The sum of two multiples of \\(4\\) is a multiple of \\(4\\).",
         "workingOut": "Yes"
       }
     ],
@@ -514,11 +514,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Subtracting a multiple of $4$ keeps the result a multiple of $4$.",
     "solutionSteps": [
       {
-        "explanation": "$12$ is a multiple of $4$ ($3 \\times 4$).",
+        "explanation": "\\(12\\) is a multiple of \\(4\\) (\\(3 \\times 4\\)).",
         "workingOut": ""
       },
       {
-        "explanation": "The difference of two multiples of $4$ is a multiple of $4$.",
+        "explanation": "The difference of two multiples of \\(4\\) is a multiple of \\(4\\).",
         "workingOut": "Yes"
       }
     ],
@@ -544,11 +544,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Multiplying a multiple of $4$ by any integer results in another multiple of $4$.",
     "solutionSteps": [
       {
-        "explanation": "Since $k$ is a multiple of $4$, let $k = 4n$.",
+        "explanation": "Since \\(k\\) is a multiple of \\(4\\), let \\(k = 4n\\).",
         "workingOut": "5(4n) = 20n"
       },
       {
-        "explanation": "$20n$ is clearly divisible by $4$, so the answer is Yes.",
+        "explanation": "\\(20n\\) is clearly divisible by \\(4\\), so the answer is Yes.",
         "workingOut": "Yes"
       }
     ],
@@ -574,15 +574,15 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Check both parts of the sum.",
     "solutionSteps": [
       {
-        "explanation": "$3k$ is a multiple of $4$ (since $k$ is).",
+        "explanation": "\\(3k\\) is a multiple of \\(4\\) (since \\(k\\) is).",
         "workingOut": ""
       },
       {
-        "explanation": "$12$ is also a multiple of $4$.",
+        "explanation": "\\(12\\) is also a multiple of \\(4\\).",
         "workingOut": ""
       },
       {
-        "explanation": "Their sum must be a multiple of $4$.",
+        "explanation": "Their sum must be a multiple of \\(4\\).",
         "workingOut": "Yes"
       }
     ],
@@ -608,11 +608,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Evaluate what is inside the brackets first.",
     "solutionSteps": [
       {
-        "explanation": "$k + 8$ is a multiple of $4$, since $8$ is a multiple of $4$.",
+        "explanation": "\\(k + 8\\) is a multiple of \\(4\\), since \\(8\\) is a multiple of \\(4\\).",
         "workingOut": ""
       },
       {
-        "explanation": "Multiplying by $5$ keeps it a multiple of $4$.",
+        "explanation": "Multiplying by \\(5\\) keeps it a multiple of \\(4\\).",
         "workingOut": "Yes"
       }
     ],
@@ -638,11 +638,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Check the components of the subtraction.",
     "solutionSteps": [
       {
-        "explanation": "$24$ is a multiple of $4$. $k$ is a multiple of $4$.",
+        "explanation": "\\(24\\) is a multiple of \\(4\\). \\(k\\) is a multiple of \\(4\\).",
         "workingOut": ""
       },
       {
-        "explanation": "Their difference is a multiple of $4$.",
+        "explanation": "Their difference is a multiple of \\(4\\).",
         "workingOut": "Yes"
       }
     ],
@@ -668,11 +668,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Check if both parts are multiples of $4$.",
     "solutionSteps": [
       {
-        "explanation": "$3k$ is a multiple of $4$, but $17$ is not.",
+        "explanation": "\\(3k\\) is a multiple of \\(4\\), but \\(17\\) is not.",
         "workingOut": ""
       },
       {
-        "explanation": "Therefore, the result is not a multiple of $4$.",
+        "explanation": "Therefore, the result is not a multiple of \\(4\\).",
         "workingOut": "No"
       }
     ],
@@ -698,11 +698,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Look at the factor outside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "The entire expression is multiplied by $4$.",
+        "explanation": "The entire expression is multiplied by \\(4\\).",
         "workingOut": ""
       },
       {
-        "explanation": "Any integer multiplied by $4$ is a multiple of $4$.",
+        "explanation": "Any integer multiplied by \\(4\\) is a multiple of \\(4\\).",
         "workingOut": "Yes"
       }
     ],
@@ -728,11 +728,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Does subtracting $1$ from a multiple of $4$ yield a multiple of $4$?",
     "solutionSteps": [
       {
-        "explanation": "$4k^2$ is a multiple of $4$.",
+        "explanation": "\\(4k^2\\) is a multiple of \\(4\\).",
         "workingOut": ""
       },
       {
-        "explanation": "Subtracting $1$ makes it not a multiple of $4$.",
+        "explanation": "Subtracting \\(1\\) makes it not a multiple of \\(4\\).",
         "workingOut": "No"
       }
     ],
@@ -758,11 +758,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Does subtracting $1$ from a multiple of $4$ yield a multiple of $4$?",
     "solutionSteps": [
       {
-        "explanation": "$4m$ is a multiple of $4$.",
+        "explanation": "\\(4m\\) is a multiple of \\(4\\).",
         "workingOut": ""
       },
       {
-        "explanation": "Subtracting $1$ means it is one less than a multiple of $4$.",
+        "explanation": "Subtracting \\(1\\) means it is one less than a multiple of \\(4\\).",
         "workingOut": "No"
       }
     ],
@@ -790,7 +790,7 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Even numbers are spaced by $2$.",
     "solutionSteps": [
       {
-        "explanation": "To get to the next even number, add $2$.",
+        "explanation": "To get to the next even number, add \\(2\\).",
         "workingOut": "m + 2"
       }
     ],
@@ -807,11 +807,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Multiples of $5$ increase by $5$ each time.",
     "solutionSteps": [
       {
-        "explanation": "The first next multiple is found by adding $5$.",
+        "explanation": "The first next multiple is found by adding \\(5\\).",
         "workingOut": "p + 5"
       },
       {
-        "explanation": "The second next multiple is found by adding another $5$.",
+        "explanation": "The second next multiple is found by adding another \\(5\\).",
         "workingOut": "p + 10"
       }
     ],
@@ -828,7 +828,7 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Odd numbers are spaced by $2$.",
     "solutionSteps": [
       {
-        "explanation": "To find the previous odd number, subtract $2$.",
+        "explanation": "To find the previous odd number, subtract \\(2\\).",
         "workingOut": "k - 2"
       }
     ],
@@ -843,7 +843,7 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Any integer multiplied by $2$ is even.",
     "solutionSteps": [
       {
-        "explanation": "$2m$ is a multiple of $2$, so it is always even.",
+        "explanation": "\\(2m\\) is a multiple of \\(2\\), so it is always even.",
         "workingOut": "No"
       }
     ],
@@ -869,11 +869,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "An even number plus $1$ is odd.",
     "solutionSteps": [
       {
-        "explanation": "$2m$ is always even.",
+        "explanation": "\\(2m\\) is always even.",
         "workingOut": ""
       },
       {
-        "explanation": "Adding $1$ makes it odd.",
+        "explanation": "Adding \\(1\\) makes it odd.",
         "workingOut": "Yes"
       }
     ],
@@ -899,7 +899,7 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "An even number plus an even number is even.",
     "solutionSteps": [
       {
-        "explanation": "$2m$ is even, and $2$ is even.",
+        "explanation": "\\(2m\\) is even, and \\(2\\) is even.",
         "workingOut": ""
       },
       {
@@ -929,7 +929,7 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "An even number plus an odd number is odd.",
     "solutionSteps": [
       {
-        "explanation": "$2m$ is even, and $3$ is odd.",
+        "explanation": "\\(2m\\) is even, and \\(3\\) is odd.",
         "workingOut": ""
       },
       {
@@ -959,11 +959,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "An odd number times an odd number is odd.",
     "solutionSteps": [
       {
-        "explanation": "Since $m$ is odd, $3m$ is odd.",
+        "explanation": "Since \\(m\\) is odd, \\(3m\\) is odd.",
         "workingOut": ""
       },
       {
-        "explanation": "An odd number plus $1$ is even. So it is not odd.",
+        "explanation": "An odd number plus \\(1\\) is even. So it is not odd.",
         "workingOut": "No"
       }
     ],
@@ -989,11 +989,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "An odd number plus an even number is odd.",
     "solutionSteps": [
       {
-        "explanation": "Since $m$ is odd, $3m$ is odd.",
+        "explanation": "Since \\(m\\) is odd, \\(3m\\) is odd.",
         "workingOut": ""
       },
       {
-        "explanation": "An odd number plus $2$ (which is even) results in an odd number.",
+        "explanation": "An odd number plus \\(2\\) (which is even) results in an odd number.",
         "workingOut": "Yes"
       }
     ],
@@ -1019,11 +1019,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "An odd number plus an even number is odd.",
     "solutionSteps": [
       {
-        "explanation": "Since $m$ is odd, $3m$ is odd.",
+        "explanation": "Since \\(m\\) is odd, \\(3m\\) is odd.",
         "workingOut": ""
       },
       {
-        "explanation": "Adding $4$ (an even number) to an odd number yields an odd number.",
+        "explanation": "Adding \\(4\\) (an even number) to an odd number yields an odd number.",
         "workingOut": "Yes"
       }
     ],
@@ -1049,11 +1049,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Any integer multiplied by $4$ is even.",
     "solutionSteps": [
       {
-        "explanation": "$4m$ is always even.",
+        "explanation": "\\(4m\\) is always even.",
         "workingOut": ""
       },
       {
-        "explanation": "Adding $1$ to an even number results in an odd number.",
+        "explanation": "Adding \\(1\\) to an even number results in an odd number.",
         "workingOut": "Yes"
       }
     ],
@@ -1143,11 +1143,11 @@ export const Y7_CH3G_QUESTIONS = [
     "hint": "Expand brackets when calculating the perimeter and area.",
     "solutionSteps": [
       {
-        "explanation": "Perimeter = $2 \\times \\text{length} + 2 \\times \\text{width}$.",
+        "explanation": "Perimeter = \\(2 \\times \\text{length} + 2 \\times \\text{width}\\).",
         "workingOut": "2(y + 4) + 2(5)"
       },
       {
-        "explanation": "Area = $\\text{length} \\times \\text{width}$.",
+        "explanation": "Area = \\(\\text{length} \\times \\text{width}\\).",
         "workingOut": "5(y + 4)"
       }
     ],

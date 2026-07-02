@@ -1,5 +1,4 @@
 export const Y8_CH13D_QUESTIONS = [
-  // --- Question 1a (Split, Easy) ---
   {
     "id": "y8-13d-q1a-y",
     "type": "short_answer",
@@ -11,7 +10,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Opposite sides of a parallelogram are equal in length.",
     "solutionSteps": [
       {
-        "explanation": "Identify the side length corresponding to $y$ in the congruent top parallelogram.",
+        "explanation": "Identify the side length corresponding to \\(y\\) in the congruent top parallelogram.",
         "workingOut": "y = 12"
       }
     ],
@@ -19,30 +18,182 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "O": [5, 5],
-          "A": [5, 13], "B": [8.1, 13.8], "C": [8.1, 5.8],
-          "Ab": [5, -3], "Bb": [1.9, -3.8], "Cb": [1.9, 4.2],
-          "Al": [-3, 5], "Bl": [-3.8, 1.9], "Cl": [4.2, 1.9],
-          "Ar": [13, 5], "Br": [13.8, 8.1], "Cr": [5.8, 8.1]
+          "O": [
+            5,
+            5
+          ],
+          "A": [
+            5,
+            13
+          ],
+          "B": [
+            8.1,
+            13.8
+          ],
+          "C": [
+            8.1,
+            5.8
+          ],
+          "Ab": [
+            5,
+            -3
+          ],
+          "Bb": [
+            1.9,
+            -3.8
+          ],
+          "Cb": [
+            1.9,
+            4.2
+          ],
+          "Al": [
+            -3,
+            5
+          ],
+          "Bl": [
+            -3.8,
+            1.9
+          ],
+          "Cl": [
+            4.2,
+            1.9
+          ],
+          "Ar": [
+            13,
+            5
+          ],
+          "Br": [
+            13.8,
+            8.1
+          ],
+          "Cr": [
+            5.8,
+            8.1
+          ]
         },
         "segments": [
-          { "from": "O", "to": "A", "arrow": true }, { "from": "A", "to": "B" }, { "from": "B", "to": "C" }, { "from": "C", "to": "O" },
-          { "from": "O", "to": "Ab", "arrow": true }, { "from": "Ab", "to": "Bb" }, { "from": "Bb", "to": "Cb" }, { "from": "Cb", "to": "O" },
-          { "from": "O", "to": "Al", "arrow": true }, { "from": "Al", "to": "Bl" }, { "from": "Bl", "to": "Cl" }, { "from": "Cl", "to": "O" },
-          { "from": "O", "to": "Ar", "arrow": true }, { "from": "Ar", "to": "Br" }, { "from": "Br", "to": "Cr" }, { "from": "Cr", "to": "O" }
+          {
+            "from": "O",
+            "to": "A",
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "Ab",
+            "arrow": true
+          },
+          {
+            "from": "Ab",
+            "to": "Bb"
+          },
+          {
+            "from": "Bb",
+            "to": "Cb"
+          },
+          {
+            "from": "Cb",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "Al",
+            "arrow": true
+          },
+          {
+            "from": "Al",
+            "to": "Bl"
+          },
+          {
+            "from": "Bl",
+            "to": "Cl"
+          },
+          {
+            "from": "Cl",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "Ar",
+            "arrow": true
+          },
+          {
+            "from": "Ar",
+            "to": "Br"
+          },
+          {
+            "from": "Br",
+            "to": "Cr"
+          },
+          {
+            "from": "Cr",
+            "to": "O"
+          }
         ],
         "angles": [
-          { "at": "O", "right": true }
+          {
+            "at": "O",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["O", "A"], "text": "12" },
-          { "between": ["O", "Ab"], "text": "y" }
+          {
+            "between": [
+              "O",
+              "A"
+            ],
+            "text": "12"
+          },
+          {
+            "between": [
+              "O",
+              "Ab"
+            ],
+            "text": "y"
+          }
         ],
         "freeLabels": [
-          { "point": [5.4, 6.2], "text": "75°", "italic": false },
-          { "point": [6.2, 5.4], "text": "75°", "italic": false },
-          { "point": [4.6, 3.8], "text": "α" },
-          { "point": [3.8, 4.6], "text": "β" }
+          {
+            "point": [
+              5.4,
+              6.2
+            ],
+            "text": "75°",
+            "italic": false
+          },
+          {
+            "point": [
+              6.2,
+              5.4
+            ],
+            "text": "75°",
+            "italic": false
+          },
+          {
+            "point": [
+              4.6,
+              3.8
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              3.8,
+              4.6
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -58,7 +209,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Check the matching acute angles of the congruent parallelograms.",
     "solutionSteps": [
       {
-        "explanation": "Compare $\\alpha$ with the corresponding acute angle in the other parallelograms.",
+        "explanation": "Compare \\(\\alpha\\) with the corresponding acute angle in the other parallelograms.",
         "workingOut": "\\alpha = 75^\\circ"
       }
     ],
@@ -66,30 +217,182 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "O": [5, 5],
-          "A": [5, 13], "B": [8.1, 13.8], "C": [8.1, 5.8],
-          "Ab": [5, -3], "Bb": [1.9, -3.8], "Cb": [1.9, 4.2],
-          "Al": [-3, 5], "Bl": [-3.8, 1.9], "Cl": [4.2, 1.9],
-          "Ar": [13, 5], "Br": [13.8, 8.1], "Cr": [5.8, 8.1]
+          "O": [
+            5,
+            5
+          ],
+          "A": [
+            5,
+            13
+          ],
+          "B": [
+            8.1,
+            13.8
+          ],
+          "C": [
+            8.1,
+            5.8
+          ],
+          "Ab": [
+            5,
+            -3
+          ],
+          "Bb": [
+            1.9,
+            -3.8
+          ],
+          "Cb": [
+            1.9,
+            4.2
+          ],
+          "Al": [
+            -3,
+            5
+          ],
+          "Bl": [
+            -3.8,
+            1.9
+          ],
+          "Cl": [
+            4.2,
+            1.9
+          ],
+          "Ar": [
+            13,
+            5
+          ],
+          "Br": [
+            13.8,
+            8.1
+          ],
+          "Cr": [
+            5.8,
+            8.1
+          ]
         },
         "segments": [
-          { "from": "O", "to": "A", "arrow": true }, { "from": "A", "to": "B" }, { "from": "B", "to": "C" }, { "from": "C", "to": "O" },
-          { "from": "O", "to": "Ab", "arrow": true }, { "from": "Ab", "to": "Bb" }, { "from": "Bb", "to": "Cb" }, { "from": "Cb", "to": "O" },
-          { "from": "O", "to": "Al", "arrow": true }, { "from": "Al", "to": "Bl" }, { "from": "Bl", "to": "Cl" }, { "from": "Cl", "to": "O" },
-          { "from": "O", "to": "Ar", "arrow": true }, { "from": "Ar", "to": "Br" }, { "from": "Br", "to": "Cr" }, { "from": "Cr", "to": "O" }
+          {
+            "from": "O",
+            "to": "A",
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "Ab",
+            "arrow": true
+          },
+          {
+            "from": "Ab",
+            "to": "Bb"
+          },
+          {
+            "from": "Bb",
+            "to": "Cb"
+          },
+          {
+            "from": "Cb",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "Al",
+            "arrow": true
+          },
+          {
+            "from": "Al",
+            "to": "Bl"
+          },
+          {
+            "from": "Bl",
+            "to": "Cl"
+          },
+          {
+            "from": "Cl",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "Ar",
+            "arrow": true
+          },
+          {
+            "from": "Ar",
+            "to": "Br"
+          },
+          {
+            "from": "Br",
+            "to": "Cr"
+          },
+          {
+            "from": "Cr",
+            "to": "O"
+          }
         ],
         "angles": [
-          { "at": "O", "right": true }
+          {
+            "at": "O",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["O", "A"], "text": "12" },
-          { "between": ["O", "Ab"], "text": "y" }
+          {
+            "between": [
+              "O",
+              "A"
+            ],
+            "text": "12"
+          },
+          {
+            "between": [
+              "O",
+              "Ab"
+            ],
+            "text": "y"
+          }
         ],
         "freeLabels": [
-          { "point": [5.4, 6.2], "text": "75°", "italic": false },
-          { "point": [6.2, 5.4], "text": "75°", "italic": false },
-          { "point": [4.6, 3.8], "text": "α" },
-          { "point": [3.8, 4.6], "text": "β" }
+          {
+            "point": [
+              5.4,
+              6.2
+            ],
+            "text": "75°",
+            "italic": false
+          },
+          {
+            "point": [
+              6.2,
+              5.4
+            ],
+            "text": "75°",
+            "italic": false
+          },
+          {
+            "point": [
+              4.6,
+              3.8
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              3.8,
+              4.6
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -105,7 +408,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "The axes meet at a right angle ($90^\\circ$). Subtract the interior angle of the parallelogram ($75^\\circ$).",
     "solutionSteps": [
       {
-        "explanation": "Subtract the interior angle of $75^\\circ$ from the right angle of $90^\\circ$.",
+        "explanation": "Subtract the interior angle of \\(75^\\circ\\) from the right angle of \\(90^\\circ\\).",
         "workingOut": "\\beta = 90^\\circ - 75^\\circ = 15^\\circ"
       }
     ],
@@ -113,36 +416,186 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "O": [5, 5],
-          "A": [5, 13], "B": [8.1, 13.8], "C": [8.1, 5.8],
-          "Ab": [5, -3], "Bb": [1.9, -3.8], "Cb": [1.9, 4.2],
-          "Al": [-3, 5], "Bl": [-3.8, 1.9], "Cl": [4.2, 1.9],
-          "Ar": [13, 5], "Br": [13.8, 8.1], "Cr": [5.8, 8.1]
+          "O": [
+            5,
+            5
+          ],
+          "A": [
+            5,
+            13
+          ],
+          "B": [
+            8.1,
+            13.8
+          ],
+          "C": [
+            8.1,
+            5.8
+          ],
+          "Ab": [
+            5,
+            -3
+          ],
+          "Bb": [
+            1.9,
+            -3.8
+          ],
+          "Cb": [
+            1.9,
+            4.2
+          ],
+          "Al": [
+            -3,
+            5
+          ],
+          "Bl": [
+            -3.8,
+            1.9
+          ],
+          "Cl": [
+            4.2,
+            1.9
+          ],
+          "Ar": [
+            13,
+            5
+          ],
+          "Br": [
+            13.8,
+            8.1
+          ],
+          "Cr": [
+            5.8,
+            8.1
+          ]
         },
         "segments": [
-          { "from": "O", "to": "A", "arrow": true }, { "from": "A", "to": "B" }, { "from": "B", "to": "C" }, { "from": "C", "to": "O" },
-          { "from": "O", "to": "Ab", "arrow": true }, { "from": "Ab", "to": "Bb" }, { "from": "Bb", "to": "Cb" }, { "from": "Cb", "to": "O" },
-          { "from": "O", "to": "Al", "arrow": true }, { "from": "Al", "to": "Bl" }, { "from": "Bl", "to": "Cl" }, { "from": "Cl", "to": "O" },
-          { "from": "O", "to": "Ar", "arrow": true }, { "from": "Ar", "to": "Br" }, { "from": "Br", "to": "Cr" }, { "from": "Cr", "to": "O" }
+          {
+            "from": "O",
+            "to": "A",
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "Ab",
+            "arrow": true
+          },
+          {
+            "from": "Ab",
+            "to": "Bb"
+          },
+          {
+            "from": "Bb",
+            "to": "Cb"
+          },
+          {
+            "from": "Cb",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "Al",
+            "arrow": true
+          },
+          {
+            "from": "Al",
+            "to": "Bl"
+          },
+          {
+            "from": "Bl",
+            "to": "Cl"
+          },
+          {
+            "from": "Cl",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "Ar",
+            "arrow": true
+          },
+          {
+            "from": "Ar",
+            "to": "Br"
+          },
+          {
+            "from": "Br",
+            "to": "Cr"
+          },
+          {
+            "from": "Cr",
+            "to": "O"
+          }
         ],
         "angles": [
-          { "at": "O", "right": true }
+          {
+            "at": "O",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["O", "A"], "text": "12" },
-          { "between": ["O", "Ab"], "text": "y" }
+          {
+            "between": [
+              "O",
+              "A"
+            ],
+            "text": "12"
+          },
+          {
+            "between": [
+              "O",
+              "Ab"
+            ],
+            "text": "y"
+          }
         ],
         "freeLabels": [
-          { "point": [5.4, 6.2], "text": "75°", "italic": false },
-          { "point": [6.2, 5.4], "text": "75°", "italic": false },
-          { "point": [4.6, 3.8], "text": "α" },
-          { "point": [3.8, 4.6], "text": "β" }
+          {
+            "point": [
+              5.4,
+              6.2
+            ],
+            "text": "75°",
+            "italic": false
+          },
+          {
+            "point": [
+              6.2,
+              5.4
+            ],
+            "text": "75°",
+            "italic": false
+          },
+          {
+            "point": [
+              4.6,
+              3.8
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              3.8,
+              4.6
+            ],
+            "text": "β"
+          }
         ]
       }
     }
   },
-
-  // --- Question 1b (Split, Easy) ---
   {
     "id": "y8-13d-q1b-x",
     "type": "short_answer",
@@ -154,7 +607,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Opposite sides of a parallelogram are equal.",
     "solutionSteps": [
       {
-        "explanation": "Equate the right side $x$ to the opposite left side length.",
+        "explanation": "Equate the right side \\(x\\) to the opposite left side length.",
         "workingOut": "x = 6"
       }
     ],
@@ -162,26 +615,126 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [4, 0], "C": [12, 0],
-          "D": [3, 6], "E": [7, 6], "F": [15, 6]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            4,
+            0
+          ],
+          "C": [
+            12,
+            0
+          ],
+          "D": [
+            3,
+            6
+          ],
+          "E": [
+            7,
+            6
+          ],
+          "F": [
+            15,
+            6
+          ]
         },
         "segments": [
-          { "from": "A", "to": "D", "arrow": true }, { "from": "D", "to": "E" }, { "from": "E", "to": "B", "arrow": true }, { "from": "B", "to": "A" },
-          { "from": "E", "to": "F" }, { "from": "F", "to": "C", "arrow": true }, { "from": "C", "to": "B" }
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "C",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "B"
+          }
         ],
         "angles": [
-          { "at": "D", "label": "120°" },
-          { "at": "E", "label": "β" },
-          { "at": "B", "label": "α" },
-          { "at": "F", "label": "60°" }
+          {
+            "at": "D",
+            "label": "120°"
+          },
+          {
+            "at": "E",
+            "label": "β"
+          },
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "F",
+            "label": "60°"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "D"], "text": "6" },
-          { "between": ["F", "C"], "text": "x" },
-          { "between": ["A", "B"], "text": "4" },
-          { "between": ["E", "F"], "text": "8" },
-          { "between": ["B", "C"], "text": "z" },
-          { "between": ["A", "C"], "text": "y", "side": "out" }
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "6"
+          },
+          {
+            "between": [
+              "F",
+              "C"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "4"
+          },
+          {
+            "between": [
+              "E",
+              "F"
+            ],
+            "text": "8"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "z"
+          },
+          {
+            "between": [
+              "A",
+              "C"
+            ],
+            "text": "y",
+            "side": "out"
+          }
         ]
       }
     }
@@ -197,11 +750,11 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Find the length $z$ first, then sum the two bottom segments.",
     "solutionSteps": [
       {
-        "explanation": "Find $z$ from the opposite top side of the right parallelogram.",
+        "explanation": "Find \\(z\\) from the opposite top side of the right parallelogram.",
         "workingOut": "z = 8"
       },
       {
-        "explanation": "Calculate the total bottom side length $y$.",
+        "explanation": "Calculate the total bottom side length \\(y\\).",
         "workingOut": "y = 4 + 8 = 12"
       }
     ],
@@ -209,26 +762,126 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [4, 0], "C": [12, 0],
-          "D": [3, 6], "E": [7, 6], "F": [15, 6]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            4,
+            0
+          ],
+          "C": [
+            12,
+            0
+          ],
+          "D": [
+            3,
+            6
+          ],
+          "E": [
+            7,
+            6
+          ],
+          "F": [
+            15,
+            6
+          ]
         },
         "segments": [
-          { "from": "A", "to": "D", "arrow": true }, { "from": "D", "to": "E" }, { "from": "E", "to": "B", "arrow": true }, { "from": "B", "to": "A" },
-          { "from": "E", "to": "F" }, { "from": "F", "to": "C", "arrow": true }, { "from": "C", "to": "B" }
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "C",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "B"
+          }
         ],
         "angles": [
-          { "at": "D", "label": "120°" },
-          { "at": "E", "label": "β" },
-          { "at": "B", "label": "α" },
-          { "at": "F", "label": "60°" }
+          {
+            "at": "D",
+            "label": "120°"
+          },
+          {
+            "at": "E",
+            "label": "β"
+          },
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "F",
+            "label": "60°"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "D"], "text": "6" },
-          { "between": ["F", "C"], "text": "x" },
-          { "between": ["A", "B"], "text": "4" },
-          { "between": ["E", "F"], "text": "8" },
-          { "between": ["B", "C"], "text": "z" },
-          { "between": ["A", "C"], "text": "y", "side": "out" }
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "6"
+          },
+          {
+            "between": [
+              "F",
+              "C"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "4"
+          },
+          {
+            "between": [
+              "E",
+              "F"
+            ],
+            "text": "8"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "z"
+          },
+          {
+            "between": [
+              "A",
+              "C"
+            ],
+            "text": "y",
+            "side": "out"
+          }
         ]
       }
     }
@@ -244,7 +897,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Identify the opposite side in the right parallelogram.",
     "solutionSteps": [
       {
-        "explanation": "Equate $z$ to the opposite side of length 8.",
+        "explanation": "Equate \\(z\\) to the opposite side of length 8.",
         "workingOut": "z = 8"
       }
     ],
@@ -252,26 +905,126 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [4, 0], "C": [12, 0],
-          "D": [3, 6], "E": [7, 6], "F": [15, 6]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            4,
+            0
+          ],
+          "C": [
+            12,
+            0
+          ],
+          "D": [
+            3,
+            6
+          ],
+          "E": [
+            7,
+            6
+          ],
+          "F": [
+            15,
+            6
+          ]
         },
         "segments": [
-          { "from": "A", "to": "D", "arrow": true }, { "from": "D", "to": "E" }, { "from": "E", "to": "B", "arrow": true }, { "from": "B", "to": "A" },
-          { "from": "E", "to": "F" }, { "from": "F", "to": "C", "arrow": true }, { "from": "C", "to": "B" }
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "C",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "B"
+          }
         ],
         "angles": [
-          { "at": "D", "label": "120°" },
-          { "at": "E", "label": "β" },
-          { "at": "B", "label": "α" },
-          { "at": "F", "label": "60°" }
+          {
+            "at": "D",
+            "label": "120°"
+          },
+          {
+            "at": "E",
+            "label": "β"
+          },
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "F",
+            "label": "60°"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "D"], "text": "6" },
-          { "between": ["F", "C"], "text": "x" },
-          { "between": ["A", "B"], "text": "4" },
-          { "between": ["E", "F"], "text": "8" },
-          { "between": ["B", "C"], "text": "z" },
-          { "between": ["A", "C"], "text": "y", "side": "out" }
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "6"
+          },
+          {
+            "between": [
+              "F",
+              "C"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "4"
+          },
+          {
+            "between": [
+              "E",
+              "F"
+            ],
+            "text": "8"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "z"
+          },
+          {
+            "between": [
+              "A",
+              "C"
+            ],
+            "text": "y",
+            "side": "out"
+          }
         ]
       }
     }
@@ -287,7 +1040,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Consecutive interior angles of a parallelogram sum to $180^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "Calculate the consecutive angle of $120^\\circ$.",
+        "explanation": "Calculate the consecutive angle of \\(120^\\circ\\).",
         "workingOut": "\\alpha = 180^\\circ - 120^\\circ = 60^\\circ"
       }
     ],
@@ -295,26 +1048,126 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [4, 0], "C": [12, 0],
-          "D": [3, 6], "E": [7, 6], "F": [15, 6]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            4,
+            0
+          ],
+          "C": [
+            12,
+            0
+          ],
+          "D": [
+            3,
+            6
+          ],
+          "E": [
+            7,
+            6
+          ],
+          "F": [
+            15,
+            6
+          ]
         },
         "segments": [
-          { "from": "A", "to": "D", "arrow": true }, { "from": "D", "to": "E" }, { "from": "E", "to": "B", "arrow": true }, { "from": "B", "to": "A" },
-          { "from": "E", "to": "F" }, { "from": "F", "to": "C", "arrow": true }, { "from": "C", "to": "B" }
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "C",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "B"
+          }
         ],
         "angles": [
-          { "at": "D", "label": "120°" },
-          { "at": "E", "label": "β" },
-          { "at": "B", "label": "α" },
-          { "at": "F", "label": "60°" }
+          {
+            "at": "D",
+            "label": "120°"
+          },
+          {
+            "at": "E",
+            "label": "β"
+          },
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "F",
+            "label": "60°"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "D"], "text": "6" },
-          { "between": ["F", "C"], "text": "x" },
-          { "between": ["A", "B"], "text": "4" },
-          { "between": ["E", "F"], "text": "8" },
-          { "between": ["B", "C"], "text": "z" },
-          { "between": ["A", "C"], "text": "y", "side": "out" }
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "6"
+          },
+          {
+            "between": [
+              "F",
+              "C"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "4"
+          },
+          {
+            "between": [
+              "E",
+              "F"
+            ],
+            "text": "8"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "z"
+          },
+          {
+            "between": [
+              "A",
+              "C"
+            ],
+            "text": "y",
+            "side": "out"
+          }
         ]
       }
     }
@@ -330,7 +1183,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Corresponding angles of parallel lines are equal.",
     "solutionSteps": [
       {
-        "explanation": "Match $\\beta$ with its corresponding angle of $120^\\circ$.",
+        "explanation": "Match \\(\\beta\\) with its corresponding angle of \\(120^\\circ\\).",
         "workingOut": "\\beta = 120^\\circ"
       }
     ],
@@ -338,32 +1191,130 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [4, 0], "C": [12, 0],
-          "D": [3, 6], "E": [7, 6], "F": [15, 6]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            4,
+            0
+          ],
+          "C": [
+            12,
+            0
+          ],
+          "D": [
+            3,
+            6
+          ],
+          "E": [
+            7,
+            6
+          ],
+          "F": [
+            15,
+            6
+          ]
         },
         "segments": [
-          { "from": "A", "to": "D", "arrow": true }, { "from": "D", "to": "E" }, { "from": "E", "to": "B", "arrow": true }, { "from": "B", "to": "A" },
-          { "from": "E", "to": "F" }, { "from": "F", "to": "C", "arrow": true }, { "from": "C", "to": "B" }
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "C",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "B"
+          }
         ],
         "angles": [
-          { "at": "D", "label": "120°" },
-          { "at": "E", "label": "β" },
-          { "at": "B", "label": "α" },
-          { "at": "F", "label": "60°" }
+          {
+            "at": "D",
+            "label": "120°"
+          },
+          {
+            "at": "E",
+            "label": "β"
+          },
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "F",
+            "label": "60°"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "D"], "text": "6" },
-          { "between": ["F", "C"], "text": "x" },
-          { "between": ["A", "B"], "text": "4" },
-          { "between": ["E", "F"], "text": "8" },
-          { "between": ["B", "C"], "text": "z" },
-          { "between": ["A", "C"], "text": "y", "side": "out" }
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "6"
+          },
+          {
+            "between": [
+              "F",
+              "C"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "4"
+          },
+          {
+            "between": [
+              "E",
+              "F"
+            ],
+            "text": "8"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "z"
+          },
+          {
+            "between": [
+              "A",
+              "C"
+            ],
+            "text": "y",
+            "side": "out"
+          }
         ]
       }
     }
   },
-
-  // --- Question 1c (Split, Easy) ---
   {
     "id": "y8-13d-q1c-x",
     "type": "short_answer",
@@ -383,23 +1334,105 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [10, 0], "C": [14, 5], "D": [4, 5],
-          "O": [7, 2.5]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            10,
+            0
+          ],
+          "C": [
+            14,
+            5
+          ],
+          "D": [
+            4,
+            5
+          ],
+          "O": [
+            7,
+            2.5
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true }, { "from": "B", "to": "C" }, { "from": "C", "to": "D", "arrow": true }, { "from": "D", "to": "A" },
-          { "from": "A", "to": "C", "dashed": true }, { "from": "B", "to": "D", "dashed": true }
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "A"
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["D", "O"], "text": "x" },
-          { "between": ["O", "B"], "text": "4" }
+          {
+            "between": [
+              "D",
+              "O"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "O",
+              "B"
+            ],
+            "text": "4"
+          }
         ],
         "freeLabels": [
-          { "point": [1.3, 0.3], "text": "40°", "italic": false },
-          { "point": [12.7, 4.7], "text": "α" },
-          { "point": [7.0, 2.9], "text": "120°", "italic": false },
-          { "point": [8.7, 0.4], "text": "β" }
+          {
+            "point": [
+              1.3,
+              0.3
+            ],
+            "text": "40°",
+            "italic": false
+          },
+          {
+            "point": [
+              12.7,
+              4.7
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              7,
+              2.9
+            ],
+            "text": "120°",
+            "italic": false
+          },
+          {
+            "point": [
+              8.7,
+              0.4
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -423,23 +1456,105 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [10, 0], "C": [14, 5], "D": [4, 5],
-          "O": [7, 2.5]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            10,
+            0
+          ],
+          "C": [
+            14,
+            5
+          ],
+          "D": [
+            4,
+            5
+          ],
+          "O": [
+            7,
+            2.5
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true }, { "from": "B", "to": "C" }, { "from": "C", "to": "D", "arrow": true }, { "from": "D", "to": "A" },
-          { "from": "A", "to": "C", "dashed": true }, { "from": "B", "to": "D", "dashed": true }
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "A"
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["D", "O"], "text": "x" },
-          { "between": ["O", "B"], "text": "4" }
+          {
+            "between": [
+              "D",
+              "O"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "O",
+              "B"
+            ],
+            "text": "4"
+          }
         ],
         "freeLabels": [
-          { "point": [1.3, 0.3], "text": "40°", "italic": false },
-          { "point": [12.7, 4.7], "text": "α" },
-          { "point": [7.0, 2.9], "text": "120°", "italic": false },
-          { "point": [8.7, 0.4], "text": "β" }
+          {
+            "point": [
+              1.3,
+              0.3
+            ],
+            "text": "40°",
+            "italic": false
+          },
+          {
+            "point": [
+              12.7,
+              4.7
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              7,
+              2.9
+            ],
+            "text": "120°",
+            "italic": false
+          },
+          {
+            "point": [
+              8.7,
+              0.4
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -455,11 +1570,11 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Use the angle sum of a triangle ($180^\\circ$) in the bottom triangle.",
     "solutionSteps": [
       {
-        "explanation": "Add the two known angles inside $\\triangle AOB$.",
+        "explanation": "Add the two known angles inside \\(\\triangle AOB\\).",
         "workingOut": "120^\\circ + 40^\\circ = 160^\\circ"
       },
       {
-        "explanation": "Subtract the sum from $180^\\circ$ to find $\\beta$.",
+        "explanation": "Subtract the sum from \\(180^\\circ\\) to find \\(\\beta\\).",
         "workingOut": "\\beta = 180^\\circ - 160^\\circ = 20^\\circ"
       }
     ],
@@ -467,29 +1582,109 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [10, 0], "C": [14, 5], "D": [4, 5],
-          "O": [7, 2.5]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            10,
+            0
+          ],
+          "C": [
+            14,
+            5
+          ],
+          "D": [
+            4,
+            5
+          ],
+          "O": [
+            7,
+            2.5
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true }, { "from": "B", "to": "C" }, { "from": "C", "to": "D", "arrow": true }, { "from": "D", "to": "A" },
-          { "from": "A", "to": "C", "dashed": true }, { "from": "B", "to": "D", "dashed": true }
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "A"
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["D", "O"], "text": "x" },
-          { "between": ["O", "B"], "text": "4" }
+          {
+            "between": [
+              "D",
+              "O"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "O",
+              "B"
+            ],
+            "text": "4"
+          }
         ],
         "freeLabels": [
-          { "point": [1.3, 0.3], "text": "40°", "italic": false },
-          { "point": [12.7, 4.7], "text": "α" },
-          { "point": [7.0, 2.9], "text": "120°", "italic": false },
-          { "point": [8.7, 0.4], "text": "β" }
+          {
+            "point": [
+              1.3,
+              0.3
+            ],
+            "text": "40°",
+            "italic": false
+          },
+          {
+            "point": [
+              12.7,
+              4.7
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              7,
+              2.9
+            ],
+            "text": "120°",
+            "italic": false
+          },
+          {
+            "point": [
+              8.7,
+              0.4
+            ],
+            "text": "β"
+          }
         ]
       }
     }
   },
-
-  // --- Question 2a (Split, Easy) ---
   {
     "id": "y8-13d-q2a-x",
     "type": "short_answer",
@@ -505,7 +1700,7 @@ export const Y8_CH13D_QUESTIONS = [
         "workingOut": "\\text{Middle line} = 5"
       },
       {
-        "explanation": "Equate the side length $x$ to the middle line length.",
+        "explanation": "Equate the side length \\(x\\) to the middle line length.",
         "workingOut": "x = 5"
       }
     ],
@@ -513,20 +1708,82 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [5, 0], "C": [10, 0],
-          "D": [7.5, 4.33], "E": [2.5, 4.33]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            5,
+            0
+          ],
+          "C": [
+            10,
+            0
+          ],
+          "D": [
+            7.5,
+            4.33
+          ],
+          "E": [
+            2.5,
+            4.33
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "D", "ticks": 1 }, { "from": "D", "to": "E", "ticks": 1 }, { "from": "E", "to": "A" },
-          { "from": "B", "to": "C", "ticks": 1 }, { "from": "C", "to": "D" }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "E",
+            "ticks": 1
+          },
+          {
+            "from": "E",
+            "to": "A"
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "D"
+          }
         ],
         "angles": [
-          { "at": "B", "label": "α" },
-          { "at": "D", "label": "β" }
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "D",
+            "label": "β"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "E"], "text": "x" },
-          { "between": ["C", "D"], "text": "5 cm" }
+          {
+            "between": [
+              "A",
+              "E"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "C",
+              "D"
+            ],
+            "text": "5 cm"
+          }
         ]
       }
     }
@@ -542,7 +1799,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Subtract the interior angle of the equilateral triangle ($60^\\circ$) from $180^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "Subtract $60^\\circ$ from $180^\\circ$ on the straight line.",
+        "explanation": "Subtract \\(60^\\circ\\) from \\(180^\\circ\\) on the straight line.",
         "workingOut": "\\alpha = 180^\\circ - 60^\\circ = 120^\\circ"
       }
     ],
@@ -550,20 +1807,82 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [5, 0], "C": [10, 0],
-          "D": [7.5, 4.33], "E": [2.5, 4.33]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            5,
+            0
+          ],
+          "C": [
+            10,
+            0
+          ],
+          "D": [
+            7.5,
+            4.33
+          ],
+          "E": [
+            2.5,
+            4.33
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "D", "ticks": 1 }, { "from": "D", "to": "E", "ticks": 1 }, { "from": "E", "to": "A" },
-          { "from": "B", "to": "C", "ticks": 1 }, { "from": "C", "to": "D" }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "E",
+            "ticks": 1
+          },
+          {
+            "from": "E",
+            "to": "A"
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "D"
+          }
         ],
         "angles": [
-          { "at": "B", "label": "α" },
-          { "at": "D", "label": "β" }
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "D",
+            "label": "β"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "E"], "text": "x" },
-          { "between": ["C", "D"], "text": "5 cm" }
+          {
+            "between": [
+              "A",
+              "E"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "C",
+              "D"
+            ],
+            "text": "5 cm"
+          }
         ]
       }
     }
@@ -579,7 +1898,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Opposite angles of a rhombus are equal.",
     "solutionSteps": [
       {
-        "explanation": "Match $\\beta$ to the opposite angle $\\alpha$.",
+        "explanation": "Match \\(\\beta\\) to the opposite angle \\(\\alpha\\).",
         "workingOut": "\\beta = \\alpha = 120^\\circ"
       }
     ],
@@ -587,26 +1906,86 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [5, 0], "C": [10, 0],
-          "D": [7.5, 4.33], "E": [2.5, 4.33]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            5,
+            0
+          ],
+          "C": [
+            10,
+            0
+          ],
+          "D": [
+            7.5,
+            4.33
+          ],
+          "E": [
+            2.5,
+            4.33
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "D", "ticks": 1 }, { "from": "D", "to": "E", "ticks": 1 }, { "from": "E", "to": "A" },
-          { "from": "B", "to": "C", "ticks": 1 }, { "from": "C", "to": "D" }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "E",
+            "ticks": 1
+          },
+          {
+            "from": "E",
+            "to": "A"
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "D"
+          }
         ],
         "angles": [
-          { "at": "B", "label": "α" },
-          { "at": "D", "label": "β" }
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "D",
+            "label": "β"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "E"], "text": "x" },
-          { "between": ["C", "D"], "text": "5 cm" }
+          {
+            "between": [
+              "A",
+              "E"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "C",
+              "D"
+            ],
+            "text": "5 cm"
+          }
         ]
       }
     }
   },
-
-  // --- Question 2b (Split, Easy) ---
   {
     "id": "y8-13d-q2b-alpha",
     "type": "short_answer",
@@ -626,19 +2005,84 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 3], "B": [6, -1], "C": [12, 3], "D": [6, 7],
-          "O": [6, 3]
+          "A": [
+            0,
+            3
+          ],
+          "B": [
+            6,
+            -1
+          ],
+          "C": [
+            12,
+            3
+          ],
+          "D": [
+            6,
+            7
+          ],
+          "O": [
+            6,
+            3
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "C", "ticks": 1 }, { "from": "C", "to": "D", "ticks": 1 }, { "from": "D", "to": "A", "ticks": 1 },
-          { "from": "A", "to": "C", "dashed": true }, { "from": "B", "to": "D", "dashed": true }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "ticks": 1
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.8, 2.6], "text": "35°", "italic": false },
-          { "point": [10.2, 2.6], "text": "β" },
-          { "point": [6.5, 3.5], "text": "α" }
+          {
+            "point": [
+              1.8,
+              2.6
+            ],
+            "text": "35°",
+            "italic": false
+          },
+          {
+            "point": [
+              10.2,
+              2.6
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              6.5,
+              3.5
+            ],
+            "text": "α"
+          }
         ]
       }
     }
@@ -654,7 +2098,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Use the acute angles sum ($90^\\circ$) in the right-angled triangle.",
     "solutionSteps": [
       {
-        "explanation": "Subtract the given angle from $90^\\circ$.",
+        "explanation": "Subtract the given angle from \\(90^\\circ\\).",
         "workingOut": "\\beta = 90^\\circ - 35^\\circ = 55^\\circ"
       }
     ],
@@ -662,25 +2106,88 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 3], "B": [6, -1], "C": [12, 3], "D": [6, 7],
-          "O": [6, 3]
+          "A": [
+            0,
+            3
+          ],
+          "B": [
+            6,
+            -1
+          ],
+          "C": [
+            12,
+            3
+          ],
+          "D": [
+            6,
+            7
+          ],
+          "O": [
+            6,
+            3
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "C", "ticks": 1 }, { "from": "C", "to": "D", "ticks": 1 }, { "from": "D", "to": "A", "ticks": 1 },
-          { "from": "A", "to": "C", "dashed": true }, { "from": "B", "to": "D", "dashed": true }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "ticks": 1
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.8, 2.6], "text": "35°", "italic": false },
-          { "point": [10.2, 2.6], "text": "β" },
-          { "point": [6.5, 3.5], "text": "α" }
+          {
+            "point": [
+              1.8,
+              2.6
+            ],
+            "text": "35°",
+            "italic": false
+          },
+          {
+            "point": [
+              10.2,
+              2.6
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              6.5,
+              3.5
+            ],
+            "text": "α"
+          }
         ]
       }
     }
   },
-
-  // --- Question 2c (Split, Easy) ---
   {
     "id": "y8-13d-q2c-y",
     "type": "short_answer",
@@ -700,22 +2207,106 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [5, 0], "C": [10, 0],
-          "D": [11.3, 4.8], "E": [6.3, 4.8], "F": [1.3, 4.8]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            5,
+            0
+          ],
+          "C": [
+            10,
+            0
+          ],
+          "D": [
+            11.3,
+            4.8
+          ],
+          "E": [
+            6.3,
+            4.8
+          ],
+          "F": [
+            1.3,
+            4.8
+          ]
         },
         "segments": [
-          { "from": "A", "to": "F" }, { "from": "F", "to": "E", "ticks": 1 }, { "from": "E", "to": "B", "ticks": 1 }, { "from": "B", "to": "A" },
-          { "from": "E", "to": "D", "ticks": 1 }, { "from": "D", "to": "C", "ticks": 1 }, { "from": "C", "to": "B" }
+          {
+            "from": "A",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "E",
+            "ticks": 1
+          },
+          {
+            "from": "E",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "B"
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["A", "F"], "text": "5" },
-          { "between": ["B", "C"], "text": "y" },
-          { "between": ["A", "C"], "text": "z", "side": "out" }
+          {
+            "between": [
+              "A",
+              "F"
+            ],
+            "text": "5"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "y"
+          },
+          {
+            "between": [
+              "A",
+              "C"
+            ],
+            "text": "z",
+            "side": "out"
+          }
         ],
         "freeLabels": [
-          { "point": [1.8, 4.4], "text": "105°", "italic": false },
-          { "point": [9.5, 0.4], "text": "α" }
+          {
+            "point": [
+              1.8,
+              4.4
+            ],
+            "text": "105°",
+            "italic": false
+          },
+          {
+            "point": [
+              9.5,
+              0.4
+            ],
+            "text": "α"
+          }
         ]
       }
     }
@@ -739,22 +2330,106 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [5, 0], "C": [10, 0],
-          "D": [11.3, 4.8], "E": [6.3, 4.8], "F": [1.3, 4.8]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            5,
+            0
+          ],
+          "C": [
+            10,
+            0
+          ],
+          "D": [
+            11.3,
+            4.8
+          ],
+          "E": [
+            6.3,
+            4.8
+          ],
+          "F": [
+            1.3,
+            4.8
+          ]
         },
         "segments": [
-          { "from": "A", "to": "F" }, { "from": "F", "to": "E", "ticks": 1 }, { "from": "E", "to": "B", "ticks": 1 }, { "from": "B", "to": "A" },
-          { "from": "E", "to": "D", "ticks": 1 }, { "from": "D", "to": "C", "ticks": 1 }, { "from": "C", "to": "B" }
+          {
+            "from": "A",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "E",
+            "ticks": 1
+          },
+          {
+            "from": "E",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "B"
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["A", "F"], "text": "5" },
-          { "between": ["B", "C"], "text": "y" },
-          { "between": ["A", "C"], "text": "z", "side": "out" }
+          {
+            "between": [
+              "A",
+              "F"
+            ],
+            "text": "5"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "y"
+          },
+          {
+            "between": [
+              "A",
+              "C"
+            ],
+            "text": "z",
+            "side": "out"
+          }
         ],
         "freeLabels": [
-          { "point": [1.8, 4.4], "text": "105°", "italic": false },
-          { "point": [9.5, 0.4], "text": "α" }
+          {
+            "point": [
+              1.8,
+              4.4
+            ],
+            "text": "105°",
+            "italic": false
+          },
+          {
+            "point": [
+              9.5,
+              0.4
+            ],
+            "text": "α"
+          }
         ]
       }
     }
@@ -770,7 +2445,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Rhombus adjacent angles are supplementary.",
     "solutionSteps": [
       {
-        "explanation": "Subtract the obtuse angle of $105^\\circ$ from $180^\\circ$.",
+        "explanation": "Subtract the obtuse angle of \\(105^\\circ\\) from \\(180^\\circ\\).",
         "workingOut": "\\alpha = 180^\\circ - 105^\\circ = 75^\\circ"
       }
     ],
@@ -778,28 +2453,110 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [5, 0], "C": [10, 0],
-          "D": [11.3, 4.8], "E": [6.3, 4.8], "F": [1.3, 4.8]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            5,
+            0
+          ],
+          "C": [
+            10,
+            0
+          ],
+          "D": [
+            11.3,
+            4.8
+          ],
+          "E": [
+            6.3,
+            4.8
+          ],
+          "F": [
+            1.3,
+            4.8
+          ]
         },
         "segments": [
-          { "from": "A", "to": "F" }, { "from": "F", "to": "E", "ticks": 1 }, { "from": "E", "to": "B", "ticks": 1 }, { "from": "B", "to": "A" },
-          { "from": "E", "to": "D", "ticks": 1 }, { "from": "D", "to": "C", "ticks": 1 }, { "from": "C", "to": "B" }
+          {
+            "from": "A",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "E",
+            "ticks": 1
+          },
+          {
+            "from": "E",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "B"
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["A", "F"], "text": "5" },
-          { "between": ["B", "C"], "text": "y" },
-          { "between": ["A", "C"], "text": "z", "side": "out" }
+          {
+            "between": [
+              "A",
+              "F"
+            ],
+            "text": "5"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "y"
+          },
+          {
+            "between": [
+              "A",
+              "C"
+            ],
+            "text": "z",
+            "side": "out"
+          }
         ],
         "freeLabels": [
-          { "point": [1.8, 4.4], "text": "105°", "italic": false },
-          { "point": [9.5, 0.4], "text": "α" }
+          {
+            "point": [
+              1.8,
+              4.4
+            ],
+            "text": "105°",
+            "italic": false
+          },
+          {
+            "point": [
+              9.5,
+              0.4
+            ],
+            "text": "α"
+          }
         ]
       }
     }
   },
-
-  // --- Question 3a (Split, Medium) ---
   {
     "id": "y8-13d-q3a-x",
     "type": "short_answer",
@@ -819,25 +2576,113 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 6], "B": [6, 6], "C": [0, 0], "D": [6, 0], "E": [12, 0],
-          "F": [6, -6]
+          "A": [
+            0,
+            6
+          ],
+          "B": [
+            6,
+            6
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            6,
+            0
+          ],
+          "E": [
+            12,
+            0
+          ],
+          "F": [
+            6,
+            -6
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "D", "ticks": 1 }, { "from": "D", "to": "C", "ticks": 1 }, { "from": "C", "to": "A", "ticks": 1 },
-          { "from": "C", "to": "B", "arrow": true }, { "from": "B", "to": "E", "arrow": true },
-          { "from": "C", "to": "F", "arrow": true }, { "from": "F", "to": "E" }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "A",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "E",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "F",
+            "arrow": true
+          },
+          {
+            "from": "F",
+            "to": "E"
+          }
         ],
         "angles": [
-          { "at": "A", "right": true },
-          { "at": "F", "right": true }
+          {
+            "at": "A",
+            "right": true
+          },
+          {
+            "at": "F",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "6" },
-          { "between": ["D", "E"], "text": "x" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "6"
+          },
+          {
+            "between": [
+              "D",
+              "E"
+            ],
+            "text": "x"
+          }
         ],
         "freeLabels": [
-          { "point": [1.0, 0.4], "text": "α" },
-          { "point": [6.6, -1.0], "text": "β" }
+          {
+            "point": [
+              1,
+              0.4
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              6.6,
+              -1
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -861,25 +2706,113 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 6], "B": [6, 6], "C": [0, 0], "D": [6, 0], "E": [12, 0],
-          "F": [6, -6]
+          "A": [
+            0,
+            6
+          ],
+          "B": [
+            6,
+            6
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            6,
+            0
+          ],
+          "E": [
+            12,
+            0
+          ],
+          "F": [
+            6,
+            -6
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "D", "ticks": 1 }, { "from": "D", "to": "C", "ticks": 1 }, { "from": "C", "to": "A", "ticks": 1 },
-          { "from": "C", "to": "B", "arrow": true }, { "from": "B", "to": "E", "arrow": true },
-          { "from": "C", "to": "F", "arrow": true }, { "from": "F", "to": "E" }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "A",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "E",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "F",
+            "arrow": true
+          },
+          {
+            "from": "F",
+            "to": "E"
+          }
         ],
         "angles": [
-          { "at": "A", "right": true },
-          { "at": "F", "right": true }
+          {
+            "at": "A",
+            "right": true
+          },
+          {
+            "at": "F",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "6" },
-          { "between": ["D", "E"], "text": "x" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "6"
+          },
+          {
+            "between": [
+              "D",
+              "E"
+            ],
+            "text": "x"
+          }
         ],
         "freeLabels": [
-          { "point": [1.0, 0.4], "text": "α" },
-          { "point": [6.6, -1.0], "text": "β" }
+          {
+            "point": [
+              1,
+              0.4
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              6.6,
+              -1
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -895,7 +2828,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "Determine the angles of the right-angled isosceles triangle $\\triangle CFE$.",
     "solutionSteps": [
       {
-        "explanation": "Calculate the interior angles of $\\triangle CFE$.",
+        "explanation": "Calculate the interior angles of \\(\\triangle CFE\\).",
         "workingOut": "\\beta = 45^\\circ"
       }
     ],
@@ -903,31 +2836,117 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 6], "B": [6, 6], "C": [0, 0], "D": [6, 0], "E": [12, 0],
-          "F": [6, -6]
+          "A": [
+            0,
+            6
+          ],
+          "B": [
+            6,
+            6
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            6,
+            0
+          ],
+          "E": [
+            12,
+            0
+          ],
+          "F": [
+            6,
+            -6
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "D", "ticks": 1 }, { "from": "D", "to": "C", "ticks": 1 }, { "from": "C", "to": "A", "ticks": 1 },
-          { "from": "C", "to": "B", "arrow": true }, { "from": "B", "to": "E", "arrow": true },
-          { "from": "C", "to": "F", "arrow": true }, { "from": "F", "to": "E" }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "A",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "E",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "F",
+            "arrow": true
+          },
+          {
+            "from": "F",
+            "to": "E"
+          }
         ],
         "angles": [
-          { "at": "A", "right": true },
-          { "at": "F", "right": true }
+          {
+            "at": "A",
+            "right": true
+          },
+          {
+            "at": "F",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "6" },
-          { "between": ["D", "E"], "text": "x" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "6"
+          },
+          {
+            "between": [
+              "D",
+              "E"
+            ],
+            "text": "x"
+          }
         ],
         "freeLabels": [
-          { "point": [1.0, 0.4], "text": "α" },
-          { "point": [6.6, -1.0], "text": "β" }
+          {
+            "point": [
+              1,
+              0.4
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              6.6,
+              -1
+            ],
+            "text": "β"
+          }
         ]
       }
     }
   },
-
-  // --- Question 3b (Split, Medium) ---
   {
     "id": "y8-13d-q3b-z",
     "type": "short_answer",
@@ -939,7 +2958,7 @@ export const Y8_CH13D_QUESTIONS = [
     "hint": "The ratio of the concentric square side lengths is $1 : 2 : 3$.",
     "solutionSteps": [
       {
-        "explanation": "Set up the ratio of the outer side $z$ to the inner side 3.",
+        "explanation": "Set up the ratio of the outer side \\(z\\) to the inner side 3.",
         "workingOut": "z = 3 \\times 3 = 9"
       }
     ],
@@ -947,28 +2966,171 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "O": [5, 5],
-          "I1": [3.5, 6.5], "I2": [6.5, 6.5], "I3": [6.5, 3.5], "I4": [3.5, 3.5],
-          "M1": [2, 8], "M2": [8, 8], "M3": [8, 2], "M4": [2, 2],
-          "O1": [0.5, 9.5], "O2": [9.5, 9.5], "O3": [9.5, 0.5], "O4": [0.5, 0.5]
+          "O": [
+            5,
+            5
+          ],
+          "I1": [
+            3.5,
+            6.5
+          ],
+          "I2": [
+            6.5,
+            6.5
+          ],
+          "I3": [
+            6.5,
+            3.5
+          ],
+          "I4": [
+            3.5,
+            3.5
+          ],
+          "M1": [
+            2,
+            8
+          ],
+          "M2": [
+            8,
+            8
+          ],
+          "M3": [
+            8,
+            2
+          ],
+          "M4": [
+            2,
+            2
+          ],
+          "O1": [
+            0.5,
+            9.5
+          ],
+          "O2": [
+            9.5,
+            9.5
+          ],
+          "O3": [
+            9.5,
+            0.5
+          ],
+          "O4": [
+            0.5,
+            0.5
+          ]
         },
         "segments": [
-          { "from": "I1", "to": "I2" }, { "from": "I2", "to": "I3" }, { "from": "I3", "to": "I4" }, { "from": "I4", "to": "I1" },
-          { "from": "M1", "to": "M2" }, { "from": "M2", "to": "M3" }, { "from": "M3", "to": "M4" }, { "from": "M4", "to": "M1" },
-          { "from": "O1", "to": "O2" }, { "from": "O2", "to": "O3" }, { "from": "O3", "to": "O4" }, { "from": "O4", "to": "O1" },
-          { "from": "O1", "to": "O3", "dashed": true }, { "from": "O2", "to": "O4", "dashed": true },
-          { "from": "O1", "to": "M1", "ticks": 1 }, { "from": "M1", "to": "I1", "ticks": 1 }, { "from": "I1", "to": "O", "ticks": 1 }
+          {
+            "from": "I1",
+            "to": "I2"
+          },
+          {
+            "from": "I2",
+            "to": "I3"
+          },
+          {
+            "from": "I3",
+            "to": "I4"
+          },
+          {
+            "from": "I4",
+            "to": "I1"
+          },
+          {
+            "from": "M1",
+            "to": "M2"
+          },
+          {
+            "from": "M2",
+            "to": "M3"
+          },
+          {
+            "from": "M3",
+            "to": "M4"
+          },
+          {
+            "from": "M4",
+            "to": "M1"
+          },
+          {
+            "from": "O1",
+            "to": "O2"
+          },
+          {
+            "from": "O2",
+            "to": "O3"
+          },
+          {
+            "from": "O3",
+            "to": "O4"
+          },
+          {
+            "from": "O4",
+            "to": "O1"
+          },
+          {
+            "from": "O1",
+            "to": "O3",
+            "dashed": true
+          },
+          {
+            "from": "O2",
+            "to": "O4",
+            "dashed": true
+          },
+          {
+            "from": "O1",
+            "to": "M1",
+            "ticks": 1
+          },
+          {
+            "from": "M1",
+            "to": "I1",
+            "ticks": 1
+          },
+          {
+            "from": "I1",
+            "to": "O",
+            "ticks": 1
+          }
         ],
         "angles": [
-          { "at": "O", "right": true }
+          {
+            "at": "O",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["I2", "I3"], "text": "3" },
-          { "between": ["O1", "O4"], "text": "z" }
+          {
+            "between": [
+              "I2",
+              "I3"
+            ],
+            "text": "3"
+          },
+          {
+            "between": [
+              "O1",
+              "O4"
+            ],
+            "text": "z"
+          }
         ],
         "freeLabels": [
-          { "point": [1.0, 9.2], "text": "α" },
-          { "point": [2.5, 2.2], "text": "β" }
+          {
+            "point": [
+              1,
+              9.2
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              2.5,
+              2.2
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -992,28 +3154,171 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "O": [5, 5],
-          "I1": [3.5, 6.5], "I2": [6.5, 6.5], "I3": [6.5, 3.5], "I4": [3.5, 3.5],
-          "M1": [2, 8], "M2": [8, 8], "M3": [8, 2], "M4": [2, 2],
-          "O1": [0.5, 9.5], "O2": [9.5, 9.5], "O3": [9.5, 0.5], "O4": [0.5, 0.5]
+          "O": [
+            5,
+            5
+          ],
+          "I1": [
+            3.5,
+            6.5
+          ],
+          "I2": [
+            6.5,
+            6.5
+          ],
+          "I3": [
+            6.5,
+            3.5
+          ],
+          "I4": [
+            3.5,
+            3.5
+          ],
+          "M1": [
+            2,
+            8
+          ],
+          "M2": [
+            8,
+            8
+          ],
+          "M3": [
+            8,
+            2
+          ],
+          "M4": [
+            2,
+            2
+          ],
+          "O1": [
+            0.5,
+            9.5
+          ],
+          "O2": [
+            9.5,
+            9.5
+          ],
+          "O3": [
+            9.5,
+            0.5
+          ],
+          "O4": [
+            0.5,
+            0.5
+          ]
         },
         "segments": [
-          { "from": "I1", "to": "I2" }, { "from": "I2", "to": "I3" }, { "from": "I3", "to": "I4" }, { "from": "I4", "to": "I1" },
-          { "from": "M1", "to": "M2" }, { "from": "M2", "to": "M3" }, { "from": "M3", "to": "M4" }, { "from": "M4", "to": "M1" },
-          { "from": "O1", "to": "O2" }, { "from": "O2", "to": "O3" }, { "from": "O3", "to": "O4" }, { "from": "O4", "to": "O1" },
-          { "from": "O1", "to": "O3", "dashed": true }, { "from": "O2", "to": "O4", "dashed": true },
-          { "from": "O1", "to": "M1", "ticks": 1 }, { "from": "M1", "to": "I1", "ticks": 1 }, { "from": "I1", "to": "O", "ticks": 1 }
+          {
+            "from": "I1",
+            "to": "I2"
+          },
+          {
+            "from": "I2",
+            "to": "I3"
+          },
+          {
+            "from": "I3",
+            "to": "I4"
+          },
+          {
+            "from": "I4",
+            "to": "I1"
+          },
+          {
+            "from": "M1",
+            "to": "M2"
+          },
+          {
+            "from": "M2",
+            "to": "M3"
+          },
+          {
+            "from": "M3",
+            "to": "M4"
+          },
+          {
+            "from": "M4",
+            "to": "M1"
+          },
+          {
+            "from": "O1",
+            "to": "O2"
+          },
+          {
+            "from": "O2",
+            "to": "O3"
+          },
+          {
+            "from": "O3",
+            "to": "O4"
+          },
+          {
+            "from": "O4",
+            "to": "O1"
+          },
+          {
+            "from": "O1",
+            "to": "O3",
+            "dashed": true
+          },
+          {
+            "from": "O2",
+            "to": "O4",
+            "dashed": true
+          },
+          {
+            "from": "O1",
+            "to": "M1",
+            "ticks": 1
+          },
+          {
+            "from": "M1",
+            "to": "I1",
+            "ticks": 1
+          },
+          {
+            "from": "I1",
+            "to": "O",
+            "ticks": 1
+          }
         ],
         "angles": [
-          { "at": "O", "right": true }
+          {
+            "at": "O",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["I2", "I3"], "text": "3" },
-          { "between": ["O1", "O4"], "text": "z" }
+          {
+            "between": [
+              "I2",
+              "I3"
+            ],
+            "text": "3"
+          },
+          {
+            "between": [
+              "O1",
+              "O4"
+            ],
+            "text": "z"
+          }
         ],
         "freeLabels": [
-          { "point": [1.0, 9.2], "text": "α" },
-          { "point": [2.5, 2.2], "text": "β" }
+          {
+            "point": [
+              1,
+              9.2
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              2.5,
+              2.2
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -1037,34 +3342,175 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "O": [5, 5],
-          "I1": [3.5, 6.5], "I2": [6.5, 6.5], "I3": [6.5, 3.5], "I4": [3.5, 3.5],
-          "M1": [2, 8], "M2": [8, 8], "M3": [8, 2], "M4": [2, 2],
-          "O1": [0.5, 9.5], "O2": [9.5, 9.5], "O3": [9.5, 0.5], "O4": [0.5, 0.5]
+          "O": [
+            5,
+            5
+          ],
+          "I1": [
+            3.5,
+            6.5
+          ],
+          "I2": [
+            6.5,
+            6.5
+          ],
+          "I3": [
+            6.5,
+            3.5
+          ],
+          "I4": [
+            3.5,
+            3.5
+          ],
+          "M1": [
+            2,
+            8
+          ],
+          "M2": [
+            8,
+            8
+          ],
+          "M3": [
+            8,
+            2
+          ],
+          "M4": [
+            2,
+            2
+          ],
+          "O1": [
+            0.5,
+            9.5
+          ],
+          "O2": [
+            9.5,
+            9.5
+          ],
+          "O3": [
+            9.5,
+            0.5
+          ],
+          "O4": [
+            0.5,
+            0.5
+          ]
         },
         "segments": [
-          { "from": "I1", "to": "I2" }, { "from": "I2", "to": "I3" }, { "from": "I3", "to": "I4" }, { "from": "I4", "to": "I1" },
-          { "from": "M1", "to": "M2" }, { "from": "M2", "to": "M3" }, { "from": "M3", "to": "M4" }, { "from": "M4", "to": "M1" },
-          { "from": "O1", "to": "O2" }, { "from": "O2", "to": "O3" }, { "from": "O3", "to": "O4" }, { "from": "O4", "to": "O1" },
-          { "from": "O1", "to": "O3", "dashed": true }, { "from": "O2", "to": "O4", "dashed": true },
-          { "from": "O1", "to": "M1", "ticks": 1 }, { "from": "M1", "to": "I1", "ticks": 1 }, { "from": "I1", "to": "O", "ticks": 1 }
+          {
+            "from": "I1",
+            "to": "I2"
+          },
+          {
+            "from": "I2",
+            "to": "I3"
+          },
+          {
+            "from": "I3",
+            "to": "I4"
+          },
+          {
+            "from": "I4",
+            "to": "I1"
+          },
+          {
+            "from": "M1",
+            "to": "M2"
+          },
+          {
+            "from": "M2",
+            "to": "M3"
+          },
+          {
+            "from": "M3",
+            "to": "M4"
+          },
+          {
+            "from": "M4",
+            "to": "M1"
+          },
+          {
+            "from": "O1",
+            "to": "O2"
+          },
+          {
+            "from": "O2",
+            "to": "O3"
+          },
+          {
+            "from": "O3",
+            "to": "O4"
+          },
+          {
+            "from": "O4",
+            "to": "O1"
+          },
+          {
+            "from": "O1",
+            "to": "O3",
+            "dashed": true
+          },
+          {
+            "from": "O2",
+            "to": "O4",
+            "dashed": true
+          },
+          {
+            "from": "O1",
+            "to": "M1",
+            "ticks": 1
+          },
+          {
+            "from": "M1",
+            "to": "I1",
+            "ticks": 1
+          },
+          {
+            "from": "I1",
+            "to": "O",
+            "ticks": 1
+          }
         ],
         "angles": [
-          { "at": "O", "right": true }
+          {
+            "at": "O",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["I2", "I3"], "text": "3" },
-          { "between": ["O1", "O4"], "text": "z" }
+          {
+            "between": [
+              "I2",
+              "I3"
+            ],
+            "text": "3"
+          },
+          {
+            "between": [
+              "O1",
+              "O4"
+            ],
+            "text": "z"
+          }
         ],
         "freeLabels": [
-          { "point": [1.0, 9.2], "text": "α" },
-          { "point": [2.5, 2.2], "text": "β" }
+          {
+            "point": [
+              1,
+              9.2
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              2.5,
+              2.2
+            ],
+            "text": "β"
+          }
         ]
       }
     }
   },
-
-  // --- Question 6 (Split, Easy) ---
   {
     "id": "y8-13d-q6a",
     "type": "short_answer",
@@ -1088,15 +3534,59 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [6, 0], "C": [8, 3], "D": [2, 3]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            6,
+            0
+          ],
+          "C": [
+            8,
+            3
+          ],
+          "D": [
+            2,
+            3
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true }, { "from": "B", "to": "C" }, { "from": "C", "to": "D", "arrow": true }, { "from": "D", "to": "A" }
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "A"
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "6 cm" },
-          { "between": ["B", "C"], "text": "4 cm" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "6 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "4 cm"
+          }
         ]
       }
     }
@@ -1120,18 +3610,69 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 4], "B": [4, 0], "C": [8, 4], "D": [4, 8],
-          "O": [4, 4]
+          "A": [
+            0,
+            4
+          ],
+          "B": [
+            4,
+            0
+          ],
+          "C": [
+            8,
+            4
+          ],
+          "D": [
+            4,
+            8
+          ],
+          "O": [
+            4,
+            4
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B" }, { "from": "B", "to": "C" }, { "from": "C", "to": "D" }, { "from": "D", "to": "A" },
-          { "from": "A", "to": "C", "dashed": true }, { "from": "B", "to": "D", "dashed": true }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A"
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "D",
+            "dashed": true
+          }
         ],
         "angles": [
-          { "at": "O", "right": true }
+          {
+            "at": "O",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "8 km" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "8 km"
+          }
         ]
       }
     }
@@ -1159,15 +3700,61 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [7, 0], "C": [9, 4], "D": [2, 4]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            7,
+            0
+          ],
+          "C": [
+            9,
+            4
+          ],
+          "D": [
+            2,
+            4
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "C", "ticks": 2 }, { "from": "C", "to": "D", "ticks": 1 }, { "from": "D", "to": "A", "ticks": 2 }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 2
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "ticks": 2
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "7 m" },
-          { "between": ["B", "C"], "text": "10 m" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "7 m"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "10 m"
+          }
         ]
       }
     }
@@ -1195,21 +3782,63 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [8, 0], "C": [12, 1.5], "D": [4, 1.5]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            8,
+            0
+          ],
+          "C": [
+            12,
+            1.5
+          ],
+          "D": [
+            4,
+            1.5
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true }, { "from": "B", "to": "C" }, { "from": "C", "to": "D", "arrow": true }, { "from": "D", "to": "A" }
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "A"
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "8 m" },
-          { "between": ["B", "C"], "text": "4 m" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "8 m"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "4 m"
+          }
         ]
       }
     }
   },
-
-  // --- Question 7 (Split, Easy/Medium) ---
   {
     "id": "y8-13d-q7a",
     "type": "short_answer",
@@ -1229,16 +3858,59 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 5], "B": [5, 0], "C": [10, 5], "D": [5, 10]
+          "A": [
+            0,
+            5
+          ],
+          "B": [
+            5,
+            0
+          ],
+          "C": [
+            10,
+            5
+          ],
+          "D": [
+            5,
+            10
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "ticks": 1 }, { "from": "B", "to": "C", "ticks": 1 }, { "from": "C", "to": "D", "ticks": 1 }, { "from": "D", "to": "A", "ticks": 1 }
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "ticks": 1
+          }
         ],
         "angles": [
-          { "at": "A", "right": true }
+          {
+            "at": "A",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["B", "C"], "text": "10 mm" }
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "10 mm"
+          }
         ]
       }
     }
@@ -1262,19 +3934,73 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [15, 0], "C": [20, 8], "D": [5, 8],
-          "H": [5, 0]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            15,
+            0
+          ],
+          "C": [
+            20,
+            8
+          ],
+          "D": [
+            5,
+            8
+          ],
+          "H": [
+            5,
+            0
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B" }, { "from": "B", "to": "C", "ticks": 1 }, { "from": "C", "to": "D" }, { "from": "D", "to": "A", "ticks": 1 },
-          { "from": "D", "to": "H", "dashed": true }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "H",
+            "dashed": true
+          }
         ],
         "angles": [
-          { "at": "H", "right": true }
+          {
+            "at": "H",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "15 mm" },
-          { "between": ["D", "H"], "text": "8 mm" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "15 mm"
+          },
+          {
+            "between": [
+              "D",
+              "H"
+            ],
+            "text": "8 mm"
+          }
         ]
       }
     }
@@ -1298,17 +4024,62 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [12, 0], "C": [15, 9], "D": [3, 9]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            12,
+            0
+          ],
+          "C": [
+            15,
+            9
+          ],
+          "D": [
+            3,
+            9
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B" }, { "from": "B", "to": "C" }, { "from": "C", "to": "D", "ticks": 1 }, { "from": "D", "to": "A", "ticks": 2 }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "ticks": 2
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["D", "A"], "text": "14 mm" }
+          {
+            "between": [
+              "D",
+              "A"
+            ],
+            "text": "14 mm"
+          }
         ],
         "freeLabels": [
-          { "point": [1.5, 4.5], "text": "9 mm", "italic": false }
+          {
+            "point": [
+              1.5,
+              4.5
+            ],
+            "text": "9 mm",
+            "italic": false
+          }
         ]
       }
     }
@@ -1319,12 +4090,12 @@ export const Y8_CH13D_QUESTIONS = [
     "difficulty": "medium",
     "question": "Find the area of the parallelogram in $\\text{mm}^2$.",
     "a": "80",
-    "solution": "1. First, find the vertical height $h$ using Pythagoras on the right-angled triangle formed on the right side: \n   $$h = \\\sqrt{10^2 - 6^2} = \\\sqrt{64} = 8\\\text{ mm}$$\n2. The base of the parallelogram is 10 mm. The area is: \n   $$A = \\\text{base} \\\times \\\text{height} = 10 \\\times 8 = 80\\\text{ mm}^2$$",
+    "solution": "1. First, find the vertical height $h$ using Pythagoras on the right-angled triangle formed on the right side: \n   $$h = \\sqrt{10^2 - 6^2} = \\sqrt{64} = 8\\\text{ mm}$$\n2. The base of the parallelogram is 10 mm. The area is: \n   $$A = \\\text{base} \\\times \\\text{height} = 10 \\\times 8 = 80\\\text{ mm}^2$$",
     "t": "Review",
     "hint": "Use Pythagoras first to calculate the perpendicular height of the parallelogram.",
     "solutionSteps": [
       {
-        "explanation": "Apply Pythagoras to find the height $h$.",
+        "explanation": "Apply Pythagoras to find the height \\(h\\).",
         "workingOut": "h = \\sqrt{10^2 - 6^2} = 8"
       },
       {
@@ -1336,20 +4107,87 @@ export const Y8_CH13D_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0], "B": [10, 0], "C": [16, 8], "D": [6, 8],
-          "H": [16, 0]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            10,
+            0
+          ],
+          "C": [
+            16,
+            8
+          ],
+          "D": [
+            6,
+            8
+          ],
+          "H": [
+            16,
+            0
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true }, { "from": "B", "to": "C", "arrow": true }, { "from": "C", "to": "D", "arrow": true }, { "from": "D", "to": "A", "arrow": true },
-          { "from": "B", "to": "H", "dashed": true }, { "from": "C", "to": "H", "dashed": true }
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "H",
+            "dashed": true
+          },
+          {
+            "from": "C",
+            "to": "H",
+            "dashed": true
+          }
         ],
         "angles": [
-          { "at": "H", "right": true }
+          {
+            "at": "H",
+            "right": true
+          }
         ],
         "sideLabels": [
-          { "between": ["D", "C"], "text": "10 mm" },
-          { "between": ["B", "C"], "text": "10 mm" },
-          { "between": ["B", "H"], "text": "6 mm" }
+          {
+            "between": [
+              "D",
+              "C"
+            ],
+            "text": "10 mm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "10 mm"
+          },
+          {
+            "between": [
+              "B",
+              "H"
+            ],
+            "text": "6 mm"
+          }
         ]
       }
     }

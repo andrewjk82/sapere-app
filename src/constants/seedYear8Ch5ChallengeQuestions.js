@@ -10,15 +10,15 @@ export const Y8_CH5I_QUESTIONS = [
     "hint": "The angle the left slanted line makes with the bottom = $90^\\circ - 4\\alpha$. Set this equal to $\\alpha$ (since the two slanted lines are parallel).",
     "solutionSteps": [
       {
-        "explanation": "The left slanted line makes angle $4\\alpha$ with the vertical $FB$, so it makes $90^\\circ - 4\\alpha$ with the horizontal bottom.",
+        "explanation": "The left slanted line makes angle \\(4\\alpha\\) with the vertical \\(FB\\), so it makes \\(90^\\circ - 4\\alpha\\) with the horizontal bottom.",
         "workingOut": "\\text{Angle with bottom} = 90^\\circ - 4\\alpha"
       },
       {
-        "explanation": "Since $AF \\parallel CG$, both make equal angles with the bottom line.",
+        "explanation": "Since \\(AF \\parallel CG\\), both make equal angles with the bottom line.",
         "workingOut": "90^\\circ - 4\\alpha = \\alpha"
       },
       {
-        "explanation": "Solve: add $4\\alpha$ to both sides, then divide by 5.",
+        "explanation": "Solve: add \\(4\\alpha\\) to both sides, then divide by 5.",
         "workingOut": "5\\alpha = 90^\\circ \\Rightarrow \\alpha = 18"
       }
     ],
@@ -26,28 +26,83 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0],
-          "B": [4, 0],
-          "C": [6, 0],
-          "D": [10, 0],
-          "E": [1.5, 4],
-          "F": [4, 4],
-          "G": [10, 4]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            4,
+            0
+          ],
+          "C": [
+            6,
+            0
+          ],
+          "D": [
+            10,
+            0
+          ],
+          "E": [
+            1.5,
+            4
+          ],
+          "F": [
+            4,
+            4
+          ],
+          "G": [
+            10,
+            4
+          ]
         },
         "segments": [
-          { "from": "A", "to": "D", "arrow": true },
-          { "from": "E", "to": "G", "arrow": true },
-          { "from": "F", "to": "B" },
-          { "from": "A", "to": "F", "marks": 2 },
-          { "from": "C", "to": "G", "marks": 2 }
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "E",
+            "to": "G",
+            "arrow": true
+          },
+          {
+            "from": "F",
+            "to": "B"
+          },
+          {
+            "from": "A",
+            "to": "F",
+            "marks": 2
+          },
+          {
+            "from": "C",
+            "to": "G",
+            "marks": 2
+          }
         ],
         "angles": [
-          { "at": "B", "right": true }
+          {
+            "at": "B",
+            "right": true
+          }
         ],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [3.6, 3.2], "text": "4α" },
-          { "point": [6.6, 0.3], "text": "α" }
+          {
+            "point": [
+              3.6,
+              3.2
+            ],
+            "text": "4α"
+          },
+          {
+            "point": [
+              6.6,
+              0.3
+            ],
+            "text": "α"
+          }
         ]
       }
     }
@@ -67,7 +122,7 @@ export const Y8_CH5I_QUESTIONS = [
         "workingOut": "180^\\circ - 130^\\circ = 50^\\circ"
       },
       {
-        "explanation": "Subtract the angle $\\alpha$ (which is $18^\\circ$) from $50^\\circ$.",
+        "explanation": "Subtract the angle \\(\\alpha\\) (which is \\(18^\\circ\\)) from \\(50^\\circ\\).",
         "workingOut": "\\beta = 50^\\circ - 18^\\circ = 32"
       }
     ],
@@ -75,31 +130,101 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0],
-          "B": [4, 0],
-          "C": [6, 0],
-          "D": [10, 0],
-          "E": [1.5, 4],
-          "F": [4, 4],
-          "G": [10, 4]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            4,
+            0
+          ],
+          "C": [
+            6,
+            0
+          ],
+          "D": [
+            10,
+            0
+          ],
+          "E": [
+            1.5,
+            4
+          ],
+          "F": [
+            4,
+            4
+          ],
+          "G": [
+            10,
+            4
+          ]
         },
         "segments": [
-          { "from": "A", "to": "D", "arrow": true },
-          { "from": "E", "to": "G", "arrow": true },
-          { "from": "F", "to": "B" },
-          { "from": "A", "to": "F", "marks": 2 },
-          { "from": "C", "to": "G", "marks": 2 },
-          { "from": "C", "to": "F" }
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "E",
+            "to": "G",
+            "arrow": true
+          },
+          {
+            "from": "F",
+            "to": "B"
+          },
+          {
+            "from": "A",
+            "to": "F",
+            "marks": 2
+          },
+          {
+            "from": "C",
+            "to": "G",
+            "marks": 2
+          },
+          {
+            "from": "C",
+            "to": "F"
+          }
         ],
         "angles": [
-          { "at": "B", "right": true }
+          {
+            "at": "B",
+            "right": true
+          }
         ],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.8, 3.6], "text": "130°" },
-          { "point": [3.6, 3.2], "text": "4α" },
-          { "point": [5.2, 0.4], "text": "β" },
-          { "point": [6.6, 0.3], "text": "α" }
+          {
+            "point": [
+              2.8,
+              3.6
+            ],
+            "text": "130°"
+          },
+          {
+            "point": [
+              3.6,
+              3.2
+            ],
+            "text": "4α"
+          },
+          {
+            "point": [
+              5.2,
+              0.4
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              6.6,
+              0.3
+            ],
+            "text": "α"
+          }
         ]
       }
     }
@@ -115,11 +240,11 @@ export const Y8_CH5I_QUESTIONS = [
     "hint": "Co-interior angles between parallel lines always add to $180^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "Co-interior angles (same side of the transversal, between the parallel lines) sum to $180^\\circ$.",
+        "explanation": "Co-interior angles (same side of the transversal, between the parallel lines) sum to \\(180^\\circ\\).",
         "workingOut": "76^\\circ + \\alpha = 180^\\circ"
       },
       {
-        "explanation": "Solve for $\\alpha$.",
+        "explanation": "Solve for \\(\\alpha\\).",
         "workingOut": "\\alpha = 180^\\circ - 76^\\circ = 104"
       }
     ],
@@ -127,28 +252,68 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "L1": [0, 0],
-          "R1": [8, 0],
-          "L2": [0, 4],
-          "R2": [8, 4],
-          "BL": [1.5, 0],
-          "TR": [6.5, 4]
+          "L1": [
+            0,
+            0
+          ],
+          "R1": [
+            8,
+            0
+          ],
+          "L2": [
+            0,
+            4
+          ],
+          "R2": [
+            8,
+            4
+          ],
+          "BL": [
+            1.5,
+            0
+          ],
+          "TR": [
+            6.5,
+            4
+          ]
         },
         "segments": [
-          { "from": "L1", "to": "R1", "arrow": true },
-          { "from": "L2", "to": "R2", "arrow": true },
-          { "from": "BL", "to": "TR" }
+          {
+            "from": "L1",
+            "to": "R1",
+            "arrow": true
+          },
+          {
+            "from": "L2",
+            "to": "R2",
+            "arrow": true
+          },
+          {
+            "from": "BL",
+            "to": "TR"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [6.7, 3.5], "text": "76\u00b0" },
-          { "point": [1.3, 0.6], "text": "\u03b1" }
+          {
+            "point": [
+              6.7,
+              3.5
+            ],
+            "text": "76°"
+          },
+          {
+            "point": [
+              1.3,
+              0.6
+            ],
+            "text": "α"
+          }
         ]
       }
     }
   },
-
   {
     "id": "y8-5i-q1b_beta",
     "type": "short_answer",
@@ -164,7 +329,7 @@ export const Y8_CH5I_QUESTIONS = [
         "workingOut": "3\\beta + 108^\\circ = 180^\\circ"
       },
       {
-        "explanation": "Solve for $3\\beta$.",
+        "explanation": "Solve for \\(3\\beta\\).",
         "workingOut": "3\\beta = 72^\\circ"
       },
       {
@@ -176,30 +341,82 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "L1": [0, 0],
-          "R1": [8, 0],
-          "L2": [0, 4],
-          "R2": [8, 4],
-          "A": [1, 0],
-          "T": [5, 4]
+          "L1": [
+            0,
+            0
+          ],
+          "R1": [
+            8,
+            0
+          ],
+          "L2": [
+            0,
+            4
+          ],
+          "R2": [
+            8,
+            4
+          ],
+          "A": [
+            1,
+            0
+          ],
+          "T": [
+            5,
+            4
+          ]
         },
         "segments": [
-          { "from": "L1", "to": "R1", "arrow": true },
-          { "from": "L2", "to": "R2", "arrow": true },
-          { "from": "A", "to": "T" }
+          {
+            "from": "L1",
+            "to": "R1",
+            "arrow": true
+          },
+          {
+            "from": "L2",
+            "to": "R2",
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "T"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.3, 0.5], "text": "\u03b2" },
-          { "point": [1.8, 0.9], "text": "\u03b2" },
-          { "point": [2.4, 1.4], "text": "\u03b2" },
-          { "point": [4.8, 3.5], "text": "108\u00b0" }
+          {
+            "point": [
+              1.3,
+              0.5
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              1.8,
+              0.9
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              2.4,
+              1.4
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              4.8,
+              3.5
+            ],
+            "text": "108°"
+          }
         ]
       }
     }
   },
-
   {
     "id": "y8-5i-q1b_gamma",
     "type": "short_answer",
@@ -219,28 +436,68 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "L1": [0, 0],
-          "R1": [8, 0],
-          "L2": [0, 4],
-          "R2": [8, 4],
-          "BL": [2, 0],
-          "TR": [6, 4]
+          "L1": [
+            0,
+            0
+          ],
+          "R1": [
+            8,
+            0
+          ],
+          "L2": [
+            0,
+            4
+          ],
+          "R2": [
+            8,
+            4
+          ],
+          "BL": [
+            2,
+            0
+          ],
+          "TR": [
+            6,
+            4
+          ]
         },
         "segments": [
-          { "from": "L1", "to": "R1", "arrow": true },
-          { "from": "L2", "to": "R2", "arrow": true },
-          { "from": "BL", "to": "TR" }
+          {
+            "from": "L1",
+            "to": "R1",
+            "arrow": true
+          },
+          {
+            "from": "L2",
+            "to": "R2",
+            "arrow": true
+          },
+          {
+            "from": "BL",
+            "to": "TR"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [5.5, 3.5], "text": "76\u00b0" },
-          { "point": [2.6, 0.6], "text": "\u03b3" }
+          {
+            "point": [
+              5.5,
+              3.5
+            ],
+            "text": "76°"
+          },
+          {
+            "point": [
+              2.6,
+              0.6
+            ],
+            "text": "γ"
+          }
         ]
       }
     }
   },
-
   {
     "id": "y8-5i-q1c_alpha",
     "type": "short_answer",
@@ -260,7 +517,7 @@ export const Y8_CH5I_QUESTIONS = [
         "workingOut": "110^\\circ - 70^\\circ = 40^\\circ"
       },
       {
-        "explanation": "Co-interior angles between helper line and bottom: $\\alpha + 40^\\circ = 180^\\circ$.",
+        "explanation": "Co-interior angles between helper line and bottom: \\(\\alpha + 40^\\circ = 180^\\circ\\).",
         "workingOut": "\\alpha = 180^\\circ - 40^\\circ = 140"
       }
     ],
@@ -268,27 +525,88 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 4],
-          "B": [8, 4],
-          "C": [0, 0],
-          "D": [8, 0],
-          "E": [2, 3],
-          "F": [5, 1.5]
+          "A": [
+            0,
+            4
+          ],
+          "B": [
+            8,
+            4
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            8,
+            0
+          ],
+          "E": [
+            2,
+            3
+          ],
+          "F": [
+            5,
+            1.5
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "marks": 2, "arrow": true },
-          { "from": "C", "to": "D", "marks": 2, "arrow": true },
-          { "from": "A", "to": "E" },
-          { "from": "E", "to": "F" },
-          { "from": "F", "to": "C" }
+          {
+            "from": "A",
+            "to": "B",
+            "marks": 2,
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "marks": 2,
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "C"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.4, 3.2], "text": "290°" },
-          { "point": [4.3, 1.5], "text": "110°" },
-          { "point": [1.0, 0.4], "text": "α" },
-          { "point": [5.2, 2.3], "text": "β" }
+          {
+            "point": [
+              1.4,
+              3.2
+            ],
+            "text": "290°"
+          },
+          {
+            "point": [
+              4.3,
+              1.5
+            ],
+            "text": "110°"
+          },
+          {
+            "point": [
+              1,
+              0.4
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              5.2,
+              2.3
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -308,7 +626,7 @@ export const Y8_CH5I_QUESTIONS = [
         "workingOut": "360^\\circ - 290^\\circ = 70^\\circ"
       },
       {
-        "explanation": "Find $\\beta$ using co-interior angles.",
+        "explanation": "Find \\(\\beta\\) using co-interior angles.",
         "workingOut": "\\beta = 180^\\circ - 70^\\circ = 140"
       }
     ],
@@ -316,27 +634,88 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 4],
-          "B": [8, 4],
-          "C": [0, 0],
-          "D": [8, 0],
-          "E": [2, 3],
-          "F": [5, 1.5]
+          "A": [
+            0,
+            4
+          ],
+          "B": [
+            8,
+            4
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            8,
+            0
+          ],
+          "E": [
+            2,
+            3
+          ],
+          "F": [
+            5,
+            1.5
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "marks": 2, "arrow": true },
-          { "from": "C", "to": "D", "marks": 2, "arrow": true },
-          { "from": "A", "to": "E" },
-          { "from": "E", "to": "F" },
-          { "from": "F", "to": "C" }
+          {
+            "from": "A",
+            "to": "B",
+            "marks": 2,
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "marks": 2,
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "C"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.4, 3.2], "text": "290°" },
-          { "point": [4.3, 1.5], "text": "110°" },
-          { "point": [1.0, 0.4], "text": "α" },
-          { "point": [5.2, 2.3], "text": "β" }
+          {
+            "point": [
+              1.4,
+              3.2
+            ],
+            "text": "290°"
+          },
+          {
+            "point": [
+              4.3,
+              1.5
+            ],
+            "text": "110°"
+          },
+          {
+            "point": [
+              1,
+              0.4
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              5.2,
+              2.3
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -360,22 +739,62 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "L": [0, 0],
-          "R": [8, 0],
-          "L2": [2, 4],
-          "R2": [8, 4]
+          "L": [
+            0,
+            0
+          ],
+          "R": [
+            8,
+            0
+          ],
+          "L2": [
+            2,
+            4
+          ],
+          "R2": [
+            8,
+            4
+          ]
         },
         "segments": [
-          { "from": "L", "to": "R", "arrow": true },
-          { "from": "L2", "to": "R2", "arrow": true },
-          { "from": "L", "to": "L2", "marks": 2 },
-          { "from": "R", "to": "R2", "marks": 2 }
+          {
+            "from": "L",
+            "to": "R",
+            "arrow": true
+          },
+          {
+            "from": "L2",
+            "to": "R2",
+            "arrow": true
+          },
+          {
+            "from": "L",
+            "to": "L2",
+            "marks": 2
+          },
+          {
+            "from": "R",
+            "to": "R2",
+            "marks": 2
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [0.8, 0.5], "text": "75°" },
-          { "point": [7.2, 3.5], "text": "α" }
+          {
+            "point": [
+              0.8,
+              0.5
+            ],
+            "text": "75°"
+          },
+          {
+            "point": [
+              7.2,
+              3.5
+            ],
+            "text": "α"
+          }
         ]
       }
     }
@@ -391,7 +810,7 @@ export const Y8_CH5I_QUESTIONS = [
     "hint": "Use alternate angles to find the base angles of the triangle, then apply the angle sum of a triangle.",
     "solutionSteps": [
       {
-        "explanation": "By alternate angles with the parallel lines, the base angles of the triangle are $75°$ and $65°$.",
+        "explanation": "By alternate angles with the parallel lines, the base angles of the triangle are \\(75°\\) and \\(65°\\).",
         "workingOut": "\\text{Base angles: }75° \\text{ and } 65°"
       },
       {
@@ -399,7 +818,7 @@ export const Y8_CH5I_QUESTIONS = [
         "workingOut": "\\beta + 75° + 65° = 180°"
       },
       {
-        "explanation": "Solve for $\\beta$.",
+        "explanation": "Solve for \\(\\beta\\).",
         "workingOut": "\\beta = 180° - 140° = 40"
       }
     ],
@@ -407,24 +826,71 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "L": [0, 0],
-          "R": [8, 0],
-          "L2": [1, 3],
-          "R2": [7, 3],
-          "T": [4, 6]
+          "L": [
+            0,
+            0
+          ],
+          "R": [
+            8,
+            0
+          ],
+          "L2": [
+            1,
+            3
+          ],
+          "R2": [
+            7,
+            3
+          ],
+          "T": [
+            4,
+            6
+          ]
         },
         "segments": [
-          { "from": "L", "to": "R", "arrow": true },
-          { "from": "L2", "to": "R2", "arrow": true },
-          { "from": "L", "to": "T" },
-          { "from": "R", "to": "T" }
+          {
+            "from": "L",
+            "to": "R",
+            "arrow": true
+          },
+          {
+            "from": "L2",
+            "to": "R2",
+            "arrow": true
+          },
+          {
+            "from": "L",
+            "to": "T"
+          },
+          {
+            "from": "R",
+            "to": "T"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.0, 0.5], "text": "75°" },
-          { "point": [6.4, 0.5], "text": "65°" },
-          { "point": [3.7, 5.3], "text": "β" }
+          {
+            "point": [
+              1,
+              0.5
+            ],
+            "text": "75°"
+          },
+          {
+            "point": [
+              6.4,
+              0.5
+            ],
+            "text": "65°"
+          },
+          {
+            "point": [
+              3.7,
+              5.3
+            ],
+            "text": "β"
+          }
         ]
       }
     }
@@ -440,7 +906,7 @@ export const Y8_CH5I_QUESTIONS = [
     "hint": "Identify the alternate angle relationship with the bottom-left $115^\\circ$ angle.",
     "solutionSteps": [
       {
-        "explanation": "Use alternate angles to find $\\alpha$.",
+        "explanation": "Use alternate angles to find \\(\\alpha\\).",
         "workingOut": "\\alpha = 115"
       }
     ],
@@ -448,28 +914,93 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 4],
-          "B": [8, 4],
-          "C": [0, 0],
-          "D": [8, 0],
-          "E": [4, 4],
-          "F": [2, 0],
-          "G": [6, 0]
+          "A": [
+            0,
+            4
+          ],
+          "B": [
+            8,
+            4
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            8,
+            0
+          ],
+          "E": [
+            4,
+            4
+          ],
+          "F": [
+            2,
+            0
+          ],
+          "G": [
+            6,
+            0
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true },
-          { "from": "C", "to": "D", "arrow": true },
-          { "from": "E", "to": "F" },
-          { "from": "E", "to": "G" }
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "E",
+            "to": "G"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [3.6, 4.3], "text": "65°" },
-          { "point": [4.4, 4.3], "text": "β" },
-          { "point": [1.4, 0.3], "text": "115°" },
-          { "point": [2.4, 0.9], "text": "α" },
-          { "point": [2.4, 0.3], "text": "15°" }
+          {
+            "point": [
+              3.6,
+              4.3
+            ],
+            "text": "65°"
+          },
+          {
+            "point": [
+              4.4,
+              4.3
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              1.4,
+              0.3
+            ],
+            "text": "115°"
+          },
+          {
+            "point": [
+              2.4,
+              0.9
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              2.4,
+              0.3
+            ],
+            "text": "15°"
+          }
         ]
       }
     }
@@ -493,28 +1024,93 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 4],
-          "B": [8, 4],
-          "C": [0, 0],
-          "D": [8, 0],
-          "E": [4, 4],
-          "F": [2, 0],
-          "G": [6, 0]
+          "A": [
+            0,
+            4
+          ],
+          "B": [
+            8,
+            4
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            8,
+            0
+          ],
+          "E": [
+            4,
+            4
+          ],
+          "F": [
+            2,
+            0
+          ],
+          "G": [
+            6,
+            0
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true },
-          { "from": "C", "to": "D", "arrow": true },
-          { "from": "E", "to": "F" },
-          { "from": "E", "to": "G" }
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "E",
+            "to": "G"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [3.6, 4.3], "text": "65°" },
-          { "point": [4.4, 4.3], "text": "β" },
-          { "point": [1.4, 0.3], "text": "115°" },
-          { "point": [2.4, 0.9], "text": "α" },
-          { "point": [2.4, 0.3], "text": "15°" }
+          {
+            "point": [
+              3.6,
+              4.3
+            ],
+            "text": "65°"
+          },
+          {
+            "point": [
+              4.4,
+              4.3
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              1.4,
+              0.3
+            ],
+            "text": "115°"
+          },
+          {
+            "point": [
+              2.4,
+              0.9
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              2.4,
+              0.3
+            ],
+            "text": "15°"
+          }
         ]
       }
     }
@@ -538,7 +1134,7 @@ export const Y8_CH5I_QUESTIONS = [
         "workingOut": "5\\alpha = 100^\\circ"
       },
       {
-        "explanation": "Divide by 5 to solve for $\\alpha$.",
+        "explanation": "Divide by 5 to solve for \\(\\alpha\\).",
         "workingOut": "\\alpha = 20"
       }
     ],
@@ -546,24 +1142,73 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [4, 4],
-          "B": [1, 0],
-          "C": [7, 0],
-          "D": [10, 0]
+          "A": [
+            4,
+            4
+          ],
+          "B": [
+            1,
+            0
+          ],
+          "C": [
+            7,
+            0
+          ],
+          "D": [
+            10,
+            0
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B" },
-          { "from": "B", "to": "C" },
-          { "from": "C", "to": "A" },
-          { "from": "C", "to": "D", "arrow": true }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [4.0, 3.2], "text": "2α" },
-          { "point": [2.0, 0.4], "text": "3α" },
-          { "point": [6.4, 0.4], "text": "β" },
-          { "point": [7.8, 0.6], "text": "100°" }
+          {
+            "point": [
+              4,
+              3.2
+            ],
+            "text": "2α"
+          },
+          {
+            "point": [
+              2,
+              0.4
+            ],
+            "text": "3α"
+          },
+          {
+            "point": [
+              6.4,
+              0.4
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              7.8,
+              0.6
+            ],
+            "text": "100°"
+          }
         ]
       }
     }
@@ -583,7 +1228,7 @@ export const Y8_CH5I_QUESTIONS = [
         "workingOut": "\\beta + 100^\\circ = 180^\\circ"
       },
       {
-        "explanation": "Solve for $\\beta$.",
+        "explanation": "Solve for \\(\\beta\\).",
         "workingOut": "\\beta = 80"
       }
     ],
@@ -591,24 +1236,73 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [4, 4],
-          "B": [1, 0],
-          "C": [7, 0],
-          "D": [10, 0]
+          "A": [
+            4,
+            4
+          ],
+          "B": [
+            1,
+            0
+          ],
+          "C": [
+            7,
+            0
+          ],
+          "D": [
+            10,
+            0
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B" },
-          { "from": "B", "to": "C" },
-          { "from": "C", "to": "A" },
-          { "from": "C", "to": "D", "arrow": true }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [4.0, 3.2], "text": "2α" },
-          { "point": [2.0, 0.4], "text": "3α" },
-          { "point": [6.4, 0.4], "text": "β" },
-          { "point": [7.8, 0.6], "text": "100°" }
+          {
+            "point": [
+              4,
+              3.2
+            ],
+            "text": "2α"
+          },
+          {
+            "point": [
+              2,
+              0.4
+            ],
+            "text": "3α"
+          },
+          {
+            "point": [
+              6.4,
+              0.4
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              7.8,
+              0.6
+            ],
+            "text": "100°"
+          }
         ]
       }
     }
@@ -619,7 +1313,12 @@ export const Y8_CH5I_QUESTIONS = [
     "difficulty": "hard",
     "question": "The triangle $ABC$ is an isosceles triangle with $AB = AC$ and $\\angle ABC = 50^\\circ$. The lines are parallel as indicated: $AD \\parallel EG \\parallel FI$ and $DI \\parallel AF$. Answer the following sub-questions.",
     "a": "Select a sub-question to solve.",
-    "opts": ["BAC = 80°, ACB = 50°", "BAC = 70°, ACB = 60°", "BAC = 90°, ACB = 45°", "BAC = 60°, ACB = 60°"],
+    "opts": [
+      "BAC = 80°, ACB = 50°",
+      "BAC = 70°, ACB = 60°",
+      "BAC = 90°, ACB = 45°",
+      "BAC = 60°, ACB = 60°"
+    ],
     "solution": "Refer to the worked solutions inside each sub-question.",
     "t": "Geometry challenge",
     "hint": "Use the property that base angles of an isosceles triangle are equal, and parallel line properties.",
@@ -627,35 +1326,128 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [4, 6],
-          "B": [0, 0],
-          "C": [8, 0],
-          "D": [2, 3],
-          "E": [6, 3],
-          "F": [7, 1.5],
-          "G": [5.5, 3.75],
-          "I": [5, 0]
+          "A": [
+            4,
+            6
+          ],
+          "B": [
+            0,
+            0
+          ],
+          "C": [
+            8,
+            0
+          ],
+          "D": [
+            2,
+            3
+          ],
+          "E": [
+            6,
+            3
+          ],
+          "F": [
+            7,
+            1.5
+          ],
+          "G": [
+            5.5,
+            3.75
+          ],
+          "I": [
+            5,
+            0
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B" },
-          { "from": "B", "to": "C" },
-          { "from": "C", "to": "A" },
-          { "from": "D", "to": "I" },
-          { "from": "D", "to": "E" },
-          { "from": "E", "to": "G" },
-          { "from": "F", "to": "I" }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          },
+          {
+            "from": "D",
+            "to": "I"
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "G"
+          },
+          {
+            "from": "F",
+            "to": "I"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [4.0, 6.3], "text": "A" },
-          { "point": [-0.3, 0.0], "text": "B" },
-          { "point": [8.3, 0.0], "text": "C" },
-          { "point": [1.6, 3.2], "text": "D" },
-          { "point": [6.3, 3.2], "text": "E" },
-          { "point": [7.3, 1.6], "text": "F" },
-          { "point": [5.5, 4.1], "text": "G" },
-          { "point": [5.0, -0.4], "text": "I" }
+          {
+            "point": [
+              4,
+              6.3
+            ],
+            "text": "A"
+          },
+          {
+            "point": [
+              -0.3,
+              0
+            ],
+            "text": "B"
+          },
+          {
+            "point": [
+              8.3,
+              0
+            ],
+            "text": "C"
+          },
+          {
+            "point": [
+              1.6,
+              3.2
+            ],
+            "text": "D"
+          },
+          {
+            "point": [
+              6.3,
+              3.2
+            ],
+            "text": "E"
+          },
+          {
+            "point": [
+              7.3,
+              1.6
+            ],
+            "text": "F"
+          },
+          {
+            "point": [
+              5.5,
+              4.1
+            ],
+            "text": "G"
+          },
+          {
+            "point": [
+              5,
+              -0.4
+            ],
+            "text": "I"
+          }
         ]
       }
     },
@@ -717,7 +1509,12 @@ export const Y8_CH5I_QUESTIONS = [
     "difficulty": "hard",
     "question": "In the diagram, $O$ is the centre of the circle. Answer the following sub-questions.",
     "a": "Select a sub-question to solve.",
-    "opts": ["AOC = 2α", "AOC = α", "AOC = 90°", "AOC = 180° - α"],
+    "opts": [
+      "AOC = 2α",
+      "AOC = α",
+      "AOC = 90°",
+      "AOC = 180° - α"
+    ],
     "solution": "Refer to the worked solutions inside each sub-question.",
     "t": "Geometry challenge",
     "hint": "Use the circle theorem that the angle at the centre is twice the angle at the circumference.",
@@ -725,35 +1522,130 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "O": [0, 0],
-          "A": [-2, 3],
-          "B": [-3.5, 0.5],
-          "C": [3.5, 0.5],
-          "D": [0, -3.6],
-          "E": [1.5, -4.5]
+          "O": [
+            0,
+            0
+          ],
+          "A": [
+            -2,
+            3
+          ],
+          "B": [
+            -3.5,
+            0.5
+          ],
+          "C": [
+            3.5,
+            0.5
+          ],
+          "D": [
+            0,
+            -3.6
+          ],
+          "E": [
+            1.5,
+            -4.5
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B" },
-          { "from": "B", "to": "C" },
-          { "from": "C", "to": "A" },
-          { "from": "B", "to": "D" },
-          { "from": "C", "to": "D" },
-          { "from": "D", "to": "E" },
-          { "from": "C", "to": "E" },
-          { "from": "A", "to": "O", "dashed": true },
-          { "from": "C", "to": "O", "dashed": true }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          },
+          {
+            "from": "B",
+            "to": "D"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "C",
+            "to": "E"
+          },
+          {
+            "from": "A",
+            "to": "O",
+            "dashed": true
+          },
+          {
+            "from": "C",
+            "to": "O",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [0.4, 0.0], "text": "O" },
-          { "point": [-2.0, 3.3], "text": "A" },
-          { "point": [-3.8, 0.5], "text": "B" },
-          { "point": [3.8, 0.5], "text": "C" },
-          { "point": [-0.3, -3.9], "text": "D" },
-          { "point": [1.8, -4.7], "text": "E" },
-          { "point": [-3.0, 0.6], "text": "α" },
-          { "point": [3.0, 0.6], "text": "β" }
+          {
+            "point": [
+              0.4,
+              0
+            ],
+            "text": "O"
+          },
+          {
+            "point": [
+              -2,
+              3.3
+            ],
+            "text": "A"
+          },
+          {
+            "point": [
+              -3.8,
+              0.5
+            ],
+            "text": "B"
+          },
+          {
+            "point": [
+              3.8,
+              0.5
+            ],
+            "text": "C"
+          },
+          {
+            "point": [
+              -0.3,
+              -3.9
+            ],
+            "text": "D"
+          },
+          {
+            "point": [
+              1.8,
+              -4.7
+            ],
+            "text": "E"
+          },
+          {
+            "point": [
+              -3,
+              0.6
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              3,
+              0.6
+            ],
+            "text": "β"
+          }
         ]
       }
     },

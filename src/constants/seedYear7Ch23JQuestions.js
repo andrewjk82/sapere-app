@@ -8,11 +8,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Combine like terms by adding the coefficients.",
     "solutionSteps": [
       {
-        "explanation": "Both terms have the same variable, $y$.",
+        "explanation": "Both terms have the same variable, \\(y\\).",
         "workingOut": "4y + 5y"
       },
       {
-        "explanation": "Add their coefficients: $4 + 5 = 9$.",
+        "explanation": "Add their coefficients: \\(4 + 5 = 9\\).",
         "workingOut": "9y"
       }
     ],
@@ -50,7 +50,7 @@ export const Y7_CH23J_QUESTIONS = [
         "workingOut": "\\frac{12xy}{12x}"
       },
       {
-        "explanation": "Cancel out the common factors $12$ and $x$.",
+        "explanation": "Cancel out the common factors \\(12\\) and \\(x\\).",
         "workingOut": "y"
       }
     ],
@@ -84,11 +84,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Remove the multiplication signs between numbers and variables.",
     "solutionSteps": [
       {
-        "explanation": "$5 \\times m = 5m$",
+        "explanation": "\\(5 \\times m = 5m\\)",
         "workingOut": "5m"
       },
       {
-        "explanation": "$2 \\times n = 2n$",
+        "explanation": "\\(2 \\times n = 2n\\)",
         "workingOut": "2n"
       },
       {
@@ -126,7 +126,7 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Substitute the values and follow the order of operations (calculate the power first).",
     "solutionSteps": [
       {
-        "explanation": "Substitute $b = 3$ and $k = 4$.",
+        "explanation": "Substitute \\(b = 3\\) and \\(k = 4\\).",
         "workingOut": "\\frac{1}{2} \\times 3 \\times 4^2"
       },
       {
@@ -168,11 +168,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "These are like terms. Add their coefficients.",
     "solutionSteps": [
       {
-        "explanation": "The terms $m^4$ and $m^4$ are identical.",
+        "explanation": "The terms \\(m^4\\) and \\(m^4\\) are identical.",
         "workingOut": "1m^4 + 1m^4"
       },
       {
-        "explanation": "Add the coefficients ($1 + 1 = 2$).",
+        "explanation": "Add the coefficients (\\(1 + 1 = 2\\)).",
         "workingOut": "2m^4"
       }
     ],
@@ -210,11 +210,11 @@ export const Y7_CH23J_QUESTIONS = [
         "workingOut": "(2x^2 + 5x^2) + (-4x + 7x)"
       },
       {
-        "explanation": "Add coefficients for $x^2$.",
+        "explanation": "Add coefficients for \\(x^2\\).",
         "workingOut": "7x^2"
       },
       {
-        "explanation": "Add coefficients for $x$.",
+        "explanation": "Add coefficients for \\(x\\).",
         "workingOut": "+ 3x"
       },
       {
@@ -252,7 +252,7 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Expand the index notation. Only $y$ is squared.",
     "solutionSteps": [
       {
-        "explanation": "$y^2$ means $y \\times y$.",
+        "explanation": "\\(y^2\\) means \\(y \\times y\\).",
         "workingOut": "y^2 = y \\times y"
       },
       {
@@ -290,11 +290,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Multiply the numbers, then multiply the powers by adding their indices.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients: $5 \\times -3$.",
+        "explanation": "Multiply the coefficients: \\(5 \\times -3\\).",
         "workingOut": "-15"
       },
       {
-        "explanation": "Multiply the variables: $p^4 \\times p^2$. Add the indices.",
+        "explanation": "Multiply the variables: \\(p^4 \\times p^2\\). Add the indices.",
         "workingOut": "p^{4+2} = p^6"
       },
       {
@@ -332,7 +332,7 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Substitute $y = 4$, square it first, then multiply by $3$.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $4$ for $y$.",
+        "explanation": "Substitute \\(4\\) for \\(y\\).",
         "workingOut": "3 \\times 4^2"
       },
       {
@@ -374,15 +374,15 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Expand the brackets first, then combine like terms.",
     "solutionSteps": [
       {
-        "explanation": "Expand $4(y + 3)$.",
+        "explanation": "Expand \\(4(y + 3)\\).",
         "workingOut": "4y + 12"
       },
       {
-        "explanation": "Include the $- y$ term.",
+        "explanation": "Include the \\(- y\\) term.",
         "workingOut": "4y + 12 - y"
       },
       {
-        "explanation": "Combine like terms ($4y - y = 3y$).",
+        "explanation": "Combine like terms (\\(4y - y = 3y\\)).",
         "workingOut": "3y + 12"
       }
     ],
@@ -418,11 +418,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Multiply the numbers and write the letters next to each other.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the numbers $4$ and $7$.",
+        "explanation": "Multiply the numbers \\(4\\) and \\(7\\).",
         "workingOut": "28"
       },
       {
-        "explanation": "Multiply the variables $x$ and $y$.",
+        "explanation": "Multiply the variables \\(x\\) and \\(y\\).",
         "workingOut": "xy"
       },
       {
@@ -443,11 +443,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Group the $a$ terms together and the $b$ terms together.",
     "solutionSteps": [
       {
-        "explanation": "Group the $a$ terms: $15a - 4a$.",
+        "explanation": "Group the \\(a\\) terms: \\(15a - 4a\\).",
         "workingOut": "11a"
       },
       {
-        "explanation": "Group the $b$ terms: $8b - 2b$.",
+        "explanation": "Group the \\(b\\) terms: \\(8b - 2b\\).",
         "workingOut": "6b"
       },
       {
@@ -468,11 +468,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Multiply the numbers outside the bracket and remove unnecessary multiplication signs inside.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $6$ and $4$.",
+        "explanation": "Multiply \\(6\\) and \\(4\\).",
         "workingOut": "24"
       },
       {
-        "explanation": "Simplify $3 \\times b$ inside the bracket.",
+        "explanation": "Simplify \\(3 \\times b\\) inside the bracket.",
         "workingOut": "3b"
       },
       {
@@ -493,7 +493,7 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Substitute $m = 5$, calculate the square, then multiply by $4$.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $5$ for $m$.",
+        "explanation": "Substitute \\(5\\) for \\(m\\).",
         "workingOut": "4 \\times 5^2"
       },
       {
@@ -518,7 +518,7 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Substitute the values for $p$ and $q$ and evaluate.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $p = 4$ and $q = 6$.",
+        "explanation": "Substitute \\(p = 4\\) and \\(q = 6\\).",
         "workingOut": "3(4) + 8(6)"
       },
       {
@@ -564,15 +564,15 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "First find the sum of $8a$ and $2b$, then add $5b$ and simplify.",
     "solutionSteps": [
       {
-        "explanation": "Sum of $8a$ and $2b$.",
+        "explanation": "Sum of \\(8a\\) and \\(2b\\).",
         "workingOut": "8a + 2b"
       },
       {
-        "explanation": "Add $5b$ to this sum.",
+        "explanation": "Add \\(5b\\) to this sum.",
         "workingOut": "8a + 2b + 5b"
       },
       {
-        "explanation": "Combine the like terms for $b$.",
+        "explanation": "Combine the like terms for \\(b\\).",
         "workingOut": "8a + 7b"
       }
     ],
@@ -589,11 +589,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Write division as a fraction.",
     "solutionSteps": [
       {
-        "explanation": "Write $7x$ divided by $4y$ as a fraction.",
+        "explanation": "Write \\(7x\\) divided by \\(4y\\) as a fraction.",
         "workingOut": "\\frac{7x}{4y}"
       },
       {
-        "explanation": "Add $8$ to the fraction.",
+        "explanation": "Add \\(8\\) to the fraction.",
         "workingOut": "\\frac{7x}{4y} + 8"
       }
     ],
@@ -610,11 +610,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Use a fraction bar to represent 'all divided by'.",
     "solutionSteps": [
       {
-        "explanation": "Write $15$ plus $k$.",
+        "explanation": "Write \\(15\\) plus \\(k\\).",
         "workingOut": "15 + k"
       },
       {
-        "explanation": "Divide the entire expression by $7$.",
+        "explanation": "Divide the entire expression by \\(7\\).",
         "workingOut": "\\frac{15 + k}{7}"
       }
     ],
@@ -631,11 +631,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Difference means subtract, sum means add. Use a fraction for division.",
     "solutionSteps": [
       {
-        "explanation": "The difference of $x$ and $y$.",
+        "explanation": "The difference of \\(x\\) and \\(y\\).",
         "workingOut": "x - y"
       },
       {
-        "explanation": "The sum of $x$ and $y$.",
+        "explanation": "The sum of \\(x\\) and \\(y\\).",
         "workingOut": "x + y"
       },
       {
@@ -677,11 +677,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Find the product first, then subtract $5x$ from it.",
     "solutionSteps": [
       {
-        "explanation": "Find the product of $4x$ and $2y$.",
+        "explanation": "Find the product of \\(4x\\) and \\(2y\\).",
         "workingOut": "4x \\times 2y = 8xy"
       },
       {
-        "explanation": "Subtract $5x$ from this product.",
+        "explanation": "Subtract \\(5x\\) from this product.",
         "workingOut": "8xy - 5x"
       }
     ],
@@ -698,11 +698,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Multiply all the numbers, then multiply all the variables.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the numbers: $6 \\times 3 \\times 4$.",
+        "explanation": "Multiply the numbers: \\(6 \\times 3 \\times 4\\).",
         "workingOut": "72"
       },
       {
-        "explanation": "Multiply the variables: $y \\times y \\times y$.",
+        "explanation": "Multiply the variables: \\(y \\times y \\times y\\).",
         "workingOut": "y^3"
       },
       {
@@ -723,11 +723,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Multiply the term outside the bracket by each term inside.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $4$ by $3m$.",
+        "explanation": "Multiply \\(4\\) by \\(3m\\).",
         "workingOut": "12m"
       },
       {
-        "explanation": "Multiply $4$ by $5$.",
+        "explanation": "Multiply \\(4\\) by \\(5\\).",
         "workingOut": "20"
       },
       {
@@ -752,11 +752,11 @@ export const Y7_CH23J_QUESTIONS = [
         "workingOut": "28y - 70"
       },
       {
-        "explanation": "Include the $- 25$.",
+        "explanation": "Include the \\(- 25\\).",
         "workingOut": "28y - 70 - 25"
       },
       {
-        "explanation": "Combine $-70 - 25$.",
+        "explanation": "Combine \\(-70 - 25\\).",
         "workingOut": "28y - 95"
       }
     ],
@@ -773,11 +773,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Group the $x$ terms and the number terms.",
     "solutionSteps": [
       {
-        "explanation": "Group $x$ terms: $6x + 14x$.",
+        "explanation": "Group \\(x\\) terms: \\(6x + 14x\\).",
         "workingOut": "20x"
       },
       {
-        "explanation": "Group numbers: $12 - 5$.",
+        "explanation": "Group numbers: \\(12 - 5\\).",
         "workingOut": "7"
       },
       {
@@ -815,7 +815,7 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "These are all like terms. Subtract their coefficients in order.",
     "solutionSteps": [
       {
-        "explanation": "Subtract coefficients: $12 - 4 - 2 - 1$.",
+        "explanation": "Subtract coefficients: \\(12 - 4 - 2 - 1\\).",
         "workingOut": "5"
       },
       {
@@ -836,11 +836,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Group the $p$ terms and the $q$ terms.",
     "solutionSteps": [
       {
-        "explanation": "Group $p$ terms: $14p - 6p$.",
+        "explanation": "Group \\(p\\) terms: \\(14p - 6p\\).",
         "workingOut": "8p"
       },
       {
-        "explanation": "Group $q$ terms: $8q + 5q$.",
+        "explanation": "Group \\(q\\) terms: \\(8q + 5q\\).",
         "workingOut": "13q"
       },
       {
@@ -861,11 +861,11 @@ export const Y7_CH23J_QUESTIONS = [
     "hint": "Group the $xy$ terms and the $x$ terms.",
     "solutionSteps": [
       {
-        "explanation": "Group $xy$ terms: $1xy + 4xy + 7xy$.",
+        "explanation": "Group \\(xy\\) terms: \\(1xy + 4xy + 7xy\\).",
         "workingOut": "12xy"
       },
       {
-        "explanation": "Group $x$ terms: $6x - 3x$.",
+        "explanation": "Group \\(x\\) terms: \\(6x - 3x\\).",
         "workingOut": "3x"
       },
       {

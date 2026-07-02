@@ -817,7 +817,7 @@ export const FRACTION_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "solutionSteps": [
       {
-        "explanation": "Find the amount of money left over after tax. The savings (\\\\\\\\(60) is \\\\)\\frac{1}{5}$ of this left over amount.",
+        "explanation": "Find the amount of money left over after tax. The savings (\\\\\\\\(60) is \\\\)\\frac{1}{5}\\( of this left over amount.\\)",
         "workingOut": "\\text{Left over} = \\\\\\\\(60 \\times 5 = \\\\\\\\)300"
       },
       {
@@ -825,7 +825,7 @@ export const FRACTION_QUESTIONS_Y6 = [
         "workingOut": "1 - \\frac{1}{4} = \\frac{3}{4}"
       },
       {
-        "explanation": "Find the original wage. \\\\(\\frac{3}{4}\\\\) of the wage is \\\\\\\\(300. Divide by 3 to find \\\\)\\frac{1}{4}$, then multiply by 4.",
+        "explanation": "Find the original wage. \\\\(\\frac{3}{4}\\\\) of the wage is \\\\\\\\(300. Divide by 3 to find \\\\)\\frac{1}{4}\\(, then multiply by 4.\\)",
         "workingOut": "\\begin{aligned} \\frac{1}{4} \\text{ of wage} &= 300 \\div 3 = 100 \\\\ \\text{Total wage} &= 100 \\times 4 = 400 \\end{aligned}"
       }
     ],

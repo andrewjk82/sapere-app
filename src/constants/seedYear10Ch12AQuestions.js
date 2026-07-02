@@ -10,7 +10,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($32^{\\circ}$) and a side length ($14$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(32^{\\circ}\\)) and a side length (\\(14\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 32^\\circ"
       },
       {
@@ -18,11 +18,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the numerator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
         "workingOut": "\\sin(32^\\circ) = \\frac{x}{14}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$ by multiplying both sides by the denominator.",
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
         "workingOut": "x = 14 \\times \\sin(32^\\circ)"
       },
       {
@@ -101,7 +101,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($72^{\\circ}$) and a side length ($12$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(72^{\\circ}\\)) and a side length (\\(12\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 72^\\circ"
       },
       {
@@ -109,11 +109,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the numerator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
         "workingOut": "\\tan(72^\\circ) = \\frac{x}{12}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$ by multiplying both sides by the denominator.",
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
         "workingOut": "x = 12 \\times \\tan(72^\\circ)"
       },
       {
@@ -192,7 +192,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($51^{\\circ}$) and a side length ($5$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(51^{\\circ}\\)) and a side length (\\(5\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 51^\\circ"
       },
       {
@@ -200,11 +200,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the numerator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
         "workingOut": "\\cos(51^\\circ) = \\frac{x}{5}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$ by multiplying both sides by the denominator.",
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
         "workingOut": "x = 5 \\times \\cos(51^\\circ)"
       },
       {
@@ -283,7 +283,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($16^{\\circ}$) and a side length ($8$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(16^{\\circ}\\)) and a side length (\\(8\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 16^\\circ"
       },
       {
@@ -291,11 +291,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the numerator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
         "workingOut": "\\sin(16^\\circ) = \\frac{x}{8}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$ by multiplying both sides by the denominator.",
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
         "workingOut": "x = 8 \\times \\sin(16^\\circ)"
       },
       {
@@ -374,7 +374,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($47^{\\circ}$) and a side length ($4.8$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(47^{\\circ}\\)) and a side length (\\(4.8\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 47^\\circ"
       },
       {
@@ -382,11 +382,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the numerator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
         "workingOut": "\\cos(47^\\circ) = \\frac{x}{4.8}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$ by multiplying both sides by the denominator.",
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
         "workingOut": "x = 4.8 \\times \\cos(47^\\circ)"
       },
       {
@@ -465,7 +465,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($40^{\\circ}$) and a side length ($16.2$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(40^{\\circ}\\)) and a side length (\\(16.2\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 40^\\circ"
       },
       {
@@ -473,11 +473,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the denominator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
         "workingOut": "\\cos(40^\\circ) = \\frac{16.2}{x}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$. Multiply both sides by $x$, then divide by the trigonometric function.",
+        "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
         "workingOut": "x = \\frac{16.2}{\\cos(40^\\circ)}"
       },
       {
@@ -556,7 +556,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($10^{\\circ}$) and a side length ($2.6$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(10^{\\circ}\\)) and a side length (\\(2.6\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 10^\\circ"
       },
       {
@@ -564,11 +564,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the denominator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
         "workingOut": "\\sin(10^\\circ) = \\frac{2.6}{x}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$. Multiply both sides by $x$, then divide by the trigonometric function.",
+        "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
         "workingOut": "x = \\frac{2.6}{\\sin(10^\\circ)}"
       },
       {
@@ -647,7 +647,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($51^{\\circ}$) and a side length ($7$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(51^{\\circ}\\)) and a side length (\\(7\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 51^\\circ"
       },
       {
@@ -655,11 +655,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the denominator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
         "workingOut": "\\tan(51^\\circ) = \\frac{7}{x}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$. Multiply both sides by $x$, then divide by the trigonometric function.",
+        "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
         "workingOut": "x = \\frac{7}{\\tan(51^\\circ)}"
       },
       {
@@ -738,7 +738,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($40^{\\circ}$) and a side length ($9$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(40^{\\circ}\\)) and a side length (\\(9\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 40^\\circ"
       },
       {
@@ -746,11 +746,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the denominator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
         "workingOut": "\\cos(40^\\circ) = \\frac{9}{x}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$. Multiply both sides by $x$, then divide by the trigonometric function.",
+        "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
         "workingOut": "x = \\frac{9}{\\cos(40^\\circ)}"
       },
       {
@@ -829,7 +829,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA to set up an equation.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($71^{\\circ}$) and a side length ($12.6$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(71^{\\circ}\\)) and a side length (\\(12.6\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 71^\\circ"
       },
       {
@@ -837,11 +837,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the denominator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
         "workingOut": "\\tan(71^\\circ) = \\frac{12.6}{x}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$. Multiply both sides by $x$, then divide by the trigonometric function.",
+        "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
         "workingOut": "x = \\frac{12.6}{\\tan(71^\\circ)}"
       },
       {
@@ -920,11 +920,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use inverse trigonometric functions.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths ($6$ and $14$) and need to find the unknown angle $\\theta$.",
+        "explanation": "Identify the given information: we know two side lengths (\\(6\\) and \\(14\\)) and need to find the unknown angle \\(\\theta\\).",
         "workingOut": "\\mathrm{Sides:\\ } 6, 14"
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to $\\theta$, we use Sine.",
+        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
@@ -932,7 +932,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{6}{14}"
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for $\\theta$.",
+        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{6}{14}\\right)"
       },
       {
@@ -1011,11 +1011,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use inverse trigonometric functions.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths ($5$ and $9$) and need to find the unknown angle $\\theta$.",
+        "explanation": "Identify the given information: we know two side lengths (\\(5\\) and \\(9\\)) and need to find the unknown angle \\(\\theta\\).",
         "workingOut": "\\mathrm{Sides:\\ } 5, 9"
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to $\\theta$, we use Sine.",
+        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
@@ -1023,7 +1023,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{5}{9}"
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for $\\theta$.",
+        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{5}{9}\\right)"
       },
       {
@@ -1102,11 +1102,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use inverse trigonometric functions.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths ($14$ and $8$) and need to find the unknown angle $\\theta$.",
+        "explanation": "Identify the given information: we know two side lengths (\\(14\\) and \\(8\\)) and need to find the unknown angle \\(\\theta\\).",
         "workingOut": "\\mathrm{Sides:\\ } 14, 8"
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to $\\theta$, we use Tangent.",
+        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Tangent.",
         "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
       },
       {
@@ -1114,7 +1114,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\tan(\\theta) = \\frac{14}{8}"
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for $\\theta$.",
+        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
         "workingOut": "\\theta = \\tan^{-1}\\left(\\frac{14}{8}\\right)"
       },
       {
@@ -1193,11 +1193,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use inverse trigonometric functions.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths ($3.8$ and $11.6$) and need to find the unknown angle $\\theta$.",
+        "explanation": "Identify the given information: we know two side lengths (\\(3.8\\) and \\(11.6\\)) and need to find the unknown angle \\(\\theta\\).",
         "workingOut": "\\mathrm{Sides:\\ } 3.8, 11.6"
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to $\\theta$, we use Sine.",
+        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
@@ -1205,7 +1205,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{3.8}{11.6}"
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for $\\theta$.",
+        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{3.8}{11.6}\\right)"
       },
       {
@@ -1284,11 +1284,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use inverse trigonometric functions.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths ($5.1$ and $8$) and need to find the unknown angle $\\theta$.",
+        "explanation": "Identify the given information: we know two side lengths (\\(5.1\\) and \\(8\\)) and need to find the unknown angle \\(\\theta\\).",
         "workingOut": "\\mathrm{Sides:\\ } 5.1, 8"
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to $\\theta$, we use Sine.",
+        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
@@ -1296,7 +1296,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{5.1}{8}"
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for $\\theta$.",
+        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{5.1}{8}\\right)"
       },
       {
@@ -1375,11 +1375,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use inverse trigonometric functions.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths ($13.2$ and $4.6$) and need to find the unknown angle $\\theta$.",
+        "explanation": "Identify the given information: we know two side lengths (\\(13.2\\) and \\(4.6\\)) and need to find the unknown angle \\(\\theta\\).",
         "workingOut": "\\mathrm{Sides:\\ } 13.2, 4.6"
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to $\\theta$, we use Tangent.",
+        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Tangent.",
         "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
       },
       {
@@ -1387,7 +1387,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\tan(\\theta) = \\frac{13.2}{4.6}"
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for $\\theta$.",
+        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
         "workingOut": "\\theta = \\tan^{-1}\\left(\\frac{13.2}{4.6}\\right)"
       },
       {
@@ -1466,7 +1466,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($26^{\\circ}$) and a side length ($16.2$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(26^{\\circ}\\)) and a side length (\\(16.2\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 26^\\circ"
       },
       {
@@ -1474,11 +1474,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the numerator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
         "workingOut": "\\tan(26^\\circ) = \\frac{x}{16.2}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$ by multiplying both sides by the denominator.",
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
         "workingOut": "x = 16.2 \\times \\tan(26^\\circ)"
       },
       {
@@ -1557,11 +1557,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths ($12$ and $17$) and need to find the unknown angle $\\theta$.",
+        "explanation": "Identify the given information: we know two side lengths (\\(12\\) and \\(17\\)) and need to find the unknown angle \\(\\theta\\).",
         "workingOut": "\\mathrm{Sides:\\ } 12, 17"
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to $\\theta$, we use Sine.",
+        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
@@ -1569,7 +1569,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{12}{17}"
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for $\\theta$.",
+        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{12}{17}\\right)"
       },
       {
@@ -1648,7 +1648,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($62^{\\circ}$) and a side length ($15.2$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(62^{\\circ}\\)) and a side length (\\(15.2\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 62^\\circ"
       },
       {
@@ -1656,11 +1656,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the denominator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
         "workingOut": "\\tan(62^\\circ) = \\frac{15.2}{x}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$. Multiply both sides by $x$, then divide by the trigonometric function.",
+        "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
         "workingOut": "x = \\frac{15.2}{\\tan(62^\\circ)}"
       },
       {
@@ -1739,7 +1739,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($74^{\\circ}$) and a side length ($8.2$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(74^{\\circ}\\)) and a side length (\\(8.2\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 74^\\circ"
       },
       {
@@ -1747,11 +1747,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the numerator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
         "workingOut": "\\cos(74^\\circ) = \\frac{x}{8.2}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$ by multiplying both sides by the denominator.",
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
         "workingOut": "x = 8.2 \\times \\cos(74^\\circ)"
       },
       {
@@ -1830,11 +1830,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths ($8$ and $15$) and need to find the unknown angle $\\theta$.",
+        "explanation": "Identify the given information: we know two side lengths (\\(8\\) and \\(15\\)) and need to find the unknown angle \\(\\theta\\).",
         "workingOut": "\\mathrm{Sides:\\ } 8, 15"
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to $\\theta$, we use Cosine.",
+        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Cosine.",
         "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
       },
       {
@@ -1842,7 +1842,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\cos(\\theta) = \\frac{8}{15}"
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for $\\theta$.",
+        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
         "workingOut": "\\theta = \\cos^{-1}\\left(\\frac{8}{15}\\right)"
       },
       {
@@ -1921,11 +1921,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths ($15$ and $19$) and need to find the unknown angle $\\theta$.",
+        "explanation": "Identify the given information: we know two side lengths (\\(15\\) and \\(19\\)) and need to find the unknown angle \\(\\theta\\).",
         "workingOut": "\\mathrm{Sides:\\ } 15, 19"
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to $\\theta$, we use Sine.",
+        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
@@ -1933,7 +1933,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{15}{19}"
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for $\\theta$.",
+        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{15}{19}\\right)"
       },
       {
@@ -2012,7 +2012,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($80^{\\circ}$) and a side length ($10$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(80^{\\circ}\\)) and a side length (\\(10\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 80^\\circ"
       },
       {
@@ -2020,11 +2020,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the denominator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
         "workingOut": "\\sin(80^\\circ) = \\frac{10}{x}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$. Multiply both sides by $x$, then divide by the trigonometric function.",
+        "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
         "workingOut": "x = \\frac{10}{\\sin(80^\\circ)}"
       },
       {
@@ -2103,7 +2103,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($36^{\\circ}$) and a side length ($8.6$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(36^{\\circ}\\)) and a side length (\\(8.6\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 36^\\circ"
       },
       {
@@ -2111,11 +2111,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the denominator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
         "workingOut": "\\cos(36^\\circ) = \\frac{8.6}{x}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$. Multiply both sides by $x$, then divide by the trigonometric function.",
+        "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
         "workingOut": "x = \\frac{8.6}{\\cos(36^\\circ)}"
       },
       {
@@ -2194,7 +2194,7 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use SOH CAH TOA.",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know an angle ($51^{\\circ}$) and a side length ($7.6$), and we need to find the unknown side.",
+        "explanation": "Identify the given information: we know an angle (\\(51^{\\circ}\\)) and a side length (\\(7.6\\)), and we need to find the unknown side.",
         "workingOut": "\\theta = 51^\\circ"
       },
       {
@@ -2202,11 +2202,11 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
       },
       {
-        "explanation": "Substitute the known values into the equation. Let $x$ be the unknown side in the numerator.",
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
         "workingOut": "\\tan(51^\\circ) = \\frac{x}{7.6}"
       },
       {
-        "explanation": "Rearrange the equation to isolate $x$ by multiplying both sides by the denominator.",
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
         "workingOut": "x = 7.6 \\times \\tan(51^\\circ)"
       },
       {
@@ -2285,11 +2285,11 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use Pythagoras' theorem and trigonometry to find all missing values.",
     "solutionSteps": [
       {
-        "explanation": "First, find the third angle. The sum of angles in a right-angled triangle is $180^\\circ$.",
+        "explanation": "First, find the third angle. The sum of angles in a right-angled triangle is \\(180^\\circ\\).",
         "workingOut": "180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ"
       },
       {
-        "explanation": "Use the Cosine ratio to find the hypotenuse. We know the adjacent side is $3$ cm.",
+        "explanation": "Use the Cosine ratio to find the hypotenuse. We know the adjacent side is \\(3\\) cm.",
         "workingOut": "\\cos(40^\\circ) = \\frac{3}{h} \\implies h = \\frac{3}{\\cos(40^\\circ)} \\approx 4.67"
       },
       {
@@ -2365,15 +2365,15 @@ export const Y10_CH12A_QUESTIONS = [
     "hint": "Use Pythagoras' theorem and trigonometry to find all missing values.",
     "solutionSteps": [
       {
-        "explanation": "Use Pythagoras' theorem ($a^2 + b^2 = c^2$) to find the missing side, as two sides are given.",
+        "explanation": "Use Pythagoras' theorem (\\(a^2 + b^2 = c^2\\)) to find the missing side, as two sides are given.",
         "workingOut": "x^2 + 6^2 = 9.2^2 \\implies x = \\sqrt{9.2^2 - 6^2} \\approx 6.97"
       },
       {
-        "explanation": "Use the Sine ratio to find one of the missing angles. The opposite side is $6$ cm and the hypotenuse is $9.2$ cm.",
+        "explanation": "Use the Sine ratio to find one of the missing angles. The opposite side is \\(6\\) cm and the hypotenuse is \\(9.2\\) cm.",
         "workingOut": "\\sin(\\alpha) = \\frac{6}{9.2} \\implies \\alpha = \\sin^{-1}\\left(\\frac{6}{9.2}\\right) \\approx 40.7^\\circ"
       },
       {
-        "explanation": "Find the last angle by subtracting the known angles from $180^\\circ$.",
+        "explanation": "Find the last angle by subtracting the known angles from \\(180^\\circ\\).",
         "workingOut": "180^\\circ - 90^\\circ - 40.7^\\circ = 49.3^\\circ"
       },
       {
@@ -2456,7 +2456,7 @@ export const Y10_CH12A_QUESTIONS = [
         "workingOut": "\\tan(\\alpha) = \\frac{5}{8.4} \\implies \\alpha = \\tan^{-1}\\left(\\frac{5}{8.4}\\right) \\approx 30.8^\\circ"
       },
       {
-        "explanation": "Find the last angle by subtracting the known angles from $180^\\circ$.",
+        "explanation": "Find the last angle by subtracting the known angles from \\(180^\\circ\\).",
         "workingOut": "180^\\circ - 90^\\circ - 30.8^\\circ = 59.2^\\circ"
       },
       {

@@ -10,23 +10,23 @@ export const Y10_CH12C_APP_QUESTIONS = [
     "hint": "Draw a triangle with Paul, Sayo, and the landmark. Find the interior angles using the bearings.",
     "solutionSteps": [
       {
-        "explanation": "Let $P$ be Paul, $S$ be Sayo, and $L$ be the landmark. $S$ is due south of $P$.",
+        "explanation": "Let \\(P\\) be Paul, \\(S\\) be Sayo, and \\(L\\) be the landmark. \\(S\\) is due south of \\(P\\).",
         "workingOut": "PS = 800"
       },
       {
-        "explanation": "The bearing of $L$ from $P$ is $222^\\circ$. The angle inside $\\triangle PSL$ at $P$ is $222^\\circ - 180^\\circ = 42^\\circ$.",
+        "explanation": "The bearing of \\(L\\) from \\(P\\) is \\(222^\\circ\\). The angle inside \\(\\triangle PSL\\) at \\(P\\) is \\(222^\\circ - 180^\\circ = 42^\\circ\\).",
         "workingOut": "\\angle SPL = 42^\\circ"
       },
       {
-        "explanation": "The bearing of $L$ from $S$ is $300^\\circ$. The angle inside $\\triangle PSL$ at $S$ is $360^\\circ - 300^\\circ = 60^\\circ$.",
+        "explanation": "The bearing of \\(L\\) from \\(S\\) is \\(300^\\circ\\). The angle inside \\(\\triangle PSL\\) at \\(S\\) is \\(360^\\circ - 300^\\circ = 60^\\circ\\).",
         "workingOut": "\\angle PSL = 60^\\circ"
       },
       {
-        "explanation": "Find the third angle at $L$.",
+        "explanation": "Find the third angle at \\(L\\).",
         "workingOut": "\\angle PLS = 180^\\circ - 42^\\circ - 60^\\circ = 78^\\circ"
       },
       {
-        "explanation": "Use the sine rule to find the distance $PL$.",
+        "explanation": "Use the sine rule to find the distance \\(PL\\).",
         "workingOut": "\\frac{PL}{\\sin(60^\\circ)} = \\frac{800}{\\sin(78^\\circ)}"
       },
       {
@@ -47,11 +47,11 @@ export const Y10_CH12C_APP_QUESTIONS = [
     "hint": "Use the sine rule in the triangle formed by Paul, Sayo, and the landmark.",
     "solutionSteps": [
       {
-        "explanation": "From the previous part, $\\angle PSL = 60^\\circ$, $\\angle SPL = 42^\\circ$, and $\\angle PLS = 78^\\circ$.",
+        "explanation": "From the previous part, \\(\\angle PSL = 60^\\circ\\), \\(\\angle SPL = 42^\\circ\\), and \\(\\angle PLS = 78^\\circ\\).",
         "workingOut": ""
       },
       {
-        "explanation": "Use the sine rule to find the distance $SL$.",
+        "explanation": "Use the sine rule to find the distance \\(SL\\).",
         "workingOut": "\\frac{SL}{\\sin(42^\\circ)} = \\frac{800}{\\sin(78^\\circ)}"
       },
       {
@@ -72,7 +72,7 @@ export const Y10_CH12C_APP_QUESTIONS = [
     "hint": "Analyze the non-right-angled triangle $\\triangle AVB$ first, then the right-angled triangle $\\triangle VOB$.",
     "solutionSteps": [
       {
-        "explanation": "Use the exterior angle of $\\triangle AVB$ at $B$.",
+        "explanation": "Use the exterior angle of \\(\\triangle AVB\\) at \\(B\\).",
         "workingOut": "\\angle VBA = 180^\\circ - 64^\\circ = 116^\\circ \\implies \\angle AVB = 180^\\circ - 116^\\circ - 37^\\circ = 27^\\circ"
       },
       {
@@ -160,7 +160,7 @@ export const Y10_CH12C_APP_QUESTIONS = [
     "hint": "Analyze the non-right-angled triangle $\\triangle AVB$ first, then the right-angled triangle $\\triangle VOB$.",
     "solutionSteps": [
       {
-        "explanation": "Use the sine rule in $\\triangle AVB$.",
+        "explanation": "Use the sine rule in \\(\\triangle AVB\\).",
         "workingOut": "\\frac{VB}{\\sin(37^\\circ)} = \\frac{100}{\\sin(27^\\circ)}"
       },
       {
@@ -248,7 +248,7 @@ export const Y10_CH12C_APP_QUESTIONS = [
     "hint": "Analyze the non-right-angled triangle $\\triangle AVB$ first, then the right-angled triangle $\\triangle VOB$.",
     "solutionSteps": [
       {
-        "explanation": "Use right-angled triangle $VOB$.",
+        "explanation": "Use right-angled triangle \\(VOB\\).",
         "workingOut": "\\sin(64^\\circ) = \\frac{OV}{VB} = \\frac{OV}{132.56}"
       },
       {
@@ -336,23 +336,23 @@ export const Y10_CH12C_APP_QUESTIONS = [
     "hint": "Use the sine rule in the triangle formed by Alex, the base of the tree, and the top of the tree. Find the interior angles.",
     "solutionSteps": [
       {
-        "explanation": "Let $A$ be Alex, $B$ be the base of the tree, and $T$ be the top of the tree. The tree is vertical.",
+        "explanation": "Let \\(A\\) be Alex, \\(B\\) be the base of the tree, and \\(T\\) be the top of the tree. The tree is vertical.",
         "workingOut": ""
       },
       {
-        "explanation": "In $\\triangle ABT$, $AB = 40$. The angle of elevation to $T$ is $43^\\circ$, and the hill incline is $26^\\circ$. Therefore, the angle inside the triangle at $A$ is $43^\\circ - 26^\\circ = 17^\\circ$.",
+        "explanation": "In \\(\\triangle ABT\\), \\(AB = 40\\). The angle of elevation to \\(T\\) is \\(43^\\circ\\), and the hill incline is \\(26^\\circ\\). Therefore, the angle inside the triangle at \\(A\\) is \\(43^\\circ - 26^\\circ = 17^\\circ\\).",
         "workingOut": "\\angle TAB = 17^\\circ"
       },
       {
-        "explanation": "The tree makes an angle with the horizontal of $90^\\circ$. The interior angle at $B$ is the angle between the hill and the vertical tree: $90^\\circ + 26^\\circ = 116^\\circ$.",
+        "explanation": "The tree makes an angle with the horizontal of \\(90^\\circ\\). The interior angle at \\(B\\) is the angle between the hill and the vertical tree: \\(90^\\circ + 26^\\circ = 116^\\circ\\).",
         "workingOut": "\\angle ABT = 116^\\circ"
       },
       {
-        "explanation": "The third angle $\\angle ATB$ can be found.",
+        "explanation": "The third angle \\(\\angle ATB\\) can be found.",
         "workingOut": "\\angle ATB = 180^\\circ - 116^\\circ - 17^\\circ = 47^\\circ"
       },
       {
-        "explanation": "Use the sine rule in $\\triangle ABT$ to find the height $BT$.",
+        "explanation": "Use the sine rule in \\(\\triangle ABT\\) to find the height \\(BT\\).",
         "workingOut": "\\frac{BT}{\\sin(17^\\circ)} = \\frac{40}{\\sin(47^\\circ)}"
       },
       {
@@ -373,19 +373,19 @@ export const Y10_CH12C_APP_QUESTIONS = [
     "hint": "Set up equations for $h$ using the two right-angled triangles $\\triangle SPR$ and $\\triangle SQR$. Convert the final answer to centimetres.",
     "solutionSteps": [
       {
-        "explanation": "In $\\triangle SQR$, express $QR$ in terms of $h$.",
+        "explanation": "In \\(\\triangle SQR\\), express \\(QR\\) in terms of \\(h\\).",
         "workingOut": "\\tan(72^\\circ) = \\frac{h}{QR} \\implies QR = \\frac{h}{\\tan(72^\\circ)}"
       },
       {
-        "explanation": "In $\\triangle SPR$, express $h$ in terms of the whole base $PR = 10 + QR$.",
+        "explanation": "In \\(\\triangle SPR\\), express \\(h\\) in terms of the whole base \\(PR = 10 + QR\\).",
         "workingOut": "\\tan(30^\\circ) = \\frac{h}{10 + QR}"
       },
       {
-        "explanation": "Substitute $QR$ into the second equation.",
+        "explanation": "Substitute \\(QR\\) into the second equation.",
         "workingOut": "\\tan(30^\\circ) = \\frac{h}{10 + \\frac{h}{\\tan(72^\\circ)}}"
       },
       {
-        "explanation": "Solve for $h$.",
+        "explanation": "Solve for \\(h\\).",
         "workingOut": "h = (10 + \\frac{h}{\\tan(72^\\circ)}) \\tan(30^\\circ) \\implies h(1 - \\frac{\\tan(30^\\circ)}{\\tan(72^\\circ)}) = 10\\tan(30^\\circ)"
       },
       {

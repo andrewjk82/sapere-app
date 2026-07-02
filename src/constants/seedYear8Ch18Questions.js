@@ -1,5 +1,4 @@
 export const Y8_CH18A_QUESTIONS = [
-  // --- Question 1 ---
   {
     "id": "y8-18a-q1a",
     "type": "teacher_review",
@@ -11,11 +10,11 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Multiply each $x$-value by 2 to find the corresponding $y$-value. Then form coordinate pairs $(x, y)$ and plot them.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x = -3, -2, -1, 0, 1, 2, 3$ into the rule $y = 2x$.",
+        "explanation": "Substitute \\(x = -3, -2, -1, 0, 1, 2, 3\\) into the rule \\(y = 2x\\).",
         "workingOut": "y = 2(-3) = -6, \\quad y = 2(-2) = -4, \\quad y = 2(-1) = -2, \\quad y = 2(0) = 0, \\quad y = 2(1) = 2, \\quad y = 2(2) = 4, \\quad y = 2(3) = 6"
       },
       {
-        "explanation": "List the coordinates as ordered pairs $(x, y)$.",
+        "explanation": "List the coordinates as ordered pairs \\((x, y)\\).",
         "workingOut": "\\text{Coordinates}: (-3, -6), (-2, -4), (-1, -2), (0, 0), (1, 2), (2, 4), (3, 6)"
       },
       {
@@ -36,7 +35,7 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Multiply each $x$-value by $-3$ (remember that a negative times a negative is positive).",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x$ values into the rule $y = -3x$.",
+        "explanation": "Substitute \\(x\\) values into the rule \\(y = -3x\\).",
         "workingOut": "y = -3(-3) = 9, \\quad y = -3(-2) = 6, \\quad y = -3(-1) = 3, \\quad y = -3(0) = 0, \\quad y = -3(1) = -3, \\quad y = -3(2) = -6, \\quad y = -3(3) = -9"
       },
       {
@@ -61,7 +60,7 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Subtract 3 from each $x$-value to get the corresponding $y$-value.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x$ values into the rule $y = x - 3$.",
+        "explanation": "Substitute \\(x\\) values into the rule \\(y = x - 3\\).",
         "workingOut": "y = -3 - 3 = -6, \\quad y = -2 - 3 = -5, \\quad y = -1 - 3 = -4, \\quad y = 0 - 3 = -3, \\quad y = 1 - 3 = -2, \\quad y = 2 - 3 = -1, \\quad y = 3 - 3 = 0"
       },
       {
@@ -86,7 +85,7 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Add 3 to each $x$-value to get the corresponding $y$-value.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x$ values into the rule $y = x + 3$.",
+        "explanation": "Substitute \\(x\\) values into the rule \\(y = x + 3\\).",
         "workingOut": "y = -3 + 3 = 0, \\quad y = -2 + 3 = 1, \\quad y = -1 + 3 = 2, \\quad y = 0 + 3 = 3, \\quad y = 1 + 3 = 4, \\quad y = 2 + 3 = 5, \\quad y = 3 + 3 = 6"
       },
       {
@@ -111,7 +110,7 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Multiply each $x$-value by 2, then subtract 1.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x$ values into the rule $y = 2x - 1$.",
+        "explanation": "Substitute \\(x\\) values into the rule \\(y = 2x - 1\\).",
         "workingOut": "y = 2(-3)-1 = -7, \\quad y = 2(-2)-1 = -5, \\quad y = 2(-1)-1 = -3, \\quad y = 2(0)-1 = -1, \\quad y = 2(1)-1 = 1, \\quad y = 2(2)-1 = 3, \\quad y = 2(3)-1 = 5"
       },
       {
@@ -136,7 +135,7 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Subtract each $x$-value from 2. Remember that subtracting a negative number is the same as adding.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x$ values into the rule $y = 2 - x$.",
+        "explanation": "Substitute \\(x\\) values into the rule \\(y = 2 - x\\).",
         "workingOut": "y = 2 - (-3) = 5, \\quad y = 2 - (-2) = 4, \\quad y = 2 - (-1) = 3, \\quad y = 2 - 0 = 2, \\quad y = 2 - 1 = 1, \\quad y = 2 - 2 = 0, \\quad y = 2 - 3 = -1"
       },
       {
@@ -150,7 +149,6 @@ export const Y8_CH18A_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 2 ---
   {
     "id": "y8-18a-q2a",
     "type": "teacher_review",
@@ -162,7 +160,7 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Convert $\\frac{3}{2}$ to $1.5$ to make calculation easier. Add 1.5 to each $x$-value.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x$ values into the rule $y = x + 1.5$.",
+        "explanation": "Substitute \\(x\\) values into the rule \\(y = x + 1.5\\).",
         "workingOut": "y = -3+1.5 = -1.5, \\quad y = -2+1.5 = -0.5, \\quad y = -1+1.5 = 0.5, \\quad y = 0+1.5 = 1.5, \\quad y = 1+1.5 = 2.5, \\quad y = 2+1.5 = 3.5, \\quad y = 3+1.5 = 4.5"
       },
       {
@@ -187,7 +185,7 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Convert $-\\frac{3}{2}$ to $-1.5$ and subtract 1.5 from each $x$-value.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x$ values into the rule $y = x - 1.5$.",
+        "explanation": "Substitute \\(x\\) values into the rule \\(y = x - 1.5\\).",
         "workingOut": "y = -3-1.5 = -4.5, \\quad y = -2-1.5 = -3.5, \\quad y = -1-1.5 = -2.5, \\quad y = 0-1.5 = -1.5, \\quad y = 1-1.5 = -0.5, \\quad y = 2-1.5 = 0.5, \\quad y = 3-1.5 = 1.5"
       },
       {
@@ -212,7 +210,7 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Multiply each $x$-value by 2 first, and then subtract $0.5$ (or $\\frac{1}{2}$).",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x$ values into the rule $y = 2x - 0.5$.",
+        "explanation": "Substitute \\(x\\) values into the rule \\(y = 2x - 0.5\\).",
         "workingOut": "y = 2(-3)-0.5 = -6.5, \\quad y = 2(-2)-0.5 = -4.5, \\quad y = 2(-1)-0.5 = -2.5, \\quad y = 2(0)-0.5 = -0.5, \\quad y = 2(1)-0.5 = 1.5, \\quad y = 2(2)-0.5 = 3.5, \\quad y = 2(3)-0.5 = 5.5"
       },
       {
@@ -237,7 +235,7 @@ export const Y8_CH18A_QUESTIONS = [
     "hint": "Negate each $x$-value, then subtract $0.5$. Note that negating a negative number yields a positive number.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $x$ values into the rule $y = -x - 0.5$.",
+        "explanation": "Substitute \\(x\\) values into the rule \\(y = -x - 0.5\\).",
         "workingOut": "y = -(-3)-0.5 = 2.5, \\quad y = -(-2)-0.5 = 1.5, \\quad y = -(-1)-0.5 = 0.5, \\quad y = -(0)-0.5 = -0.5, \\quad y = -(1)-0.5 = -1.5, \\quad y = -(2)-0.5 = -2.5, \\quad y = -(3)-0.5 = -3.5"
       },
       {

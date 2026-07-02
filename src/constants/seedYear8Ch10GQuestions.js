@@ -1,5 +1,4 @@
 export const Y8_CH10G_QUESTIONS = [
-  // --- Question 1 (Split, Easy) ---
   {
     "id": "y8-10g-q1a",
     "type": "short_answer",
@@ -57,7 +56,7 @@ export const Y8_CH10G_QUESTIONS = [
         "workingOut": "18 \\div 6 = 3"
       },
       {
-        "explanation": "Divide the first term by $3$.",
+        "explanation": "Divide the first term by \\(3\\).",
         "workingOut": "12 \\div 3 = 4"
       }
     ],
@@ -78,13 +77,12 @@ export const Y8_CH10G_QUESTIONS = [
         "workingOut": "25 \\div 5 = 5"
       },
       {
-        "explanation": "Divide the first term by $5$.",
+        "explanation": "Divide the first term by \\(5\\).",
         "workingOut": "15 \\div 5 = 3"
       }
     ],
     "graphData": null
   },
-  // --- Question 2 (Split, Easy) ---
   {
     "id": "y8-10g-q2a",
     "type": "short_answer",
@@ -96,11 +94,11 @@ export const Y8_CH10G_QUESTIONS = [
     "hint": "Divide both parts of the ratio by their highest common factor, which is $6$.",
     "solutionSteps": [
       {
-        "explanation": "Identify the highest common factor (HCF) of $6$ and $18$.",
+        "explanation": "Identify the highest common factor (HCF) of \\(6\\) and \\(18\\).",
         "workingOut": "\\text{HCF}(6, 18) = 6"
       },
       {
-        "explanation": "Divide both terms by $6$.",
+        "explanation": "Divide both terms by \\(6\\).",
         "workingOut": "6 \\div 6 = 1, \\quad 18 \\div 6 = 3"
       }
     ],
@@ -117,11 +115,11 @@ export const Y8_CH10G_QUESTIONS = [
     "hint": "Find a number that divides both $26$ and $6$ evenly.",
     "solutionSteps": [
       {
-        "explanation": "Identify the HCF of $26$ and $6$.",
+        "explanation": "Identify the HCF of \\(26\\) and \\(6\\).",
         "workingOut": "\\text{HCF}(26, 6) = 2"
       },
       {
-        "explanation": "Divide both terms by $2$.",
+        "explanation": "Divide both terms by \\(2\\).",
         "workingOut": "26 \\div 2 = 13, \\quad 6 \\div 2 = 3"
       }
     ],
@@ -138,11 +136,11 @@ export const Y8_CH10G_QUESTIONS = [
     "hint": "Divide both terms by $150$ or simplify in steps by first dividing by $10$.",
     "solutionSteps": [
       {
-        "explanation": "Divide both terms by $10$.",
+        "explanation": "Divide both terms by \\(10\\).",
         "workingOut": "150 : 450 = 15 : 45"
       },
       {
-        "explanation": "Divide both terms by $15$ (their HCF).",
+        "explanation": "Divide both terms by \\(15\\) (their HCF).",
         "workingOut": "15 \\div 15 = 1, \\quad 45 \\div 15 = 3"
       }
     ],
@@ -159,11 +157,11 @@ export const Y8_CH10G_QUESTIONS = [
     "hint": "Divide both parts of the ratio by their HCF ($4$).",
     "solutionSteps": [
       {
-        "explanation": "Find the HCF of $4$ and $12$.",
+        "explanation": "Find the HCF of \\(4\\) and \\(12\\).",
         "workingOut": "\\text{HCF}(4, 12) = 4"
       },
       {
-        "explanation": "Divide both terms by $4$.",
+        "explanation": "Divide both terms by \\(4\\).",
         "workingOut": "4 \\div 4 = 1, \\quad 12 \\div 4 = 3"
       }
     ],
@@ -180,11 +178,11 @@ export const Y8_CH10G_QUESTIONS = [
     "hint": "Divide both parts by $9$.",
     "solutionSteps": [
       {
-        "explanation": "Identify the HCF of $36$ and $81$.",
+        "explanation": "Identify the HCF of \\(36\\) and \\(81\\).",
         "workingOut": "\\text{HCF}(36, 81) = 9"
       },
       {
-        "explanation": "Divide both terms by $9$.",
+        "explanation": "Divide both terms by \\(9\\).",
         "workingOut": "36 \\div 9 = 4, \\quad 81 \\div 9 = 9"
       }
     ],
@@ -201,11 +199,11 @@ export const Y8_CH10G_QUESTIONS = [
     "hint": "Find the highest common factor of $84$ and $21$. Note that $84$ is a multiple of $21$.",
     "solutionSteps": [
       {
-        "explanation": "Check if $84$ is divisible by $21$.",
+        "explanation": "Check if \\(84\\) is divisible by \\(21\\).",
         "workingOut": "84 \\div 21 = 4"
       },
       {
-        "explanation": "Divide both terms by $21$.",
+        "explanation": "Divide both terms by \\(21\\).",
         "workingOut": "84 \\div 21 = 4, \\quad 21 \\div 21 = 1"
       }
     ],
@@ -222,11 +220,11 @@ export const Y8_CH10G_QUESTIONS = [
     "hint": "Think of common factors like $25$. How many times does $25$ go into each number?",
     "solutionSteps": [
       {
-        "explanation": "Identify the HCF of $175$ and $125$.",
+        "explanation": "Identify the HCF of \\(175\\) and \\(125\\).",
         "workingOut": "\\text{HCF}(175, 125) = 25"
       },
       {
-        "explanation": "Divide both terms by $25$.",
+        "explanation": "Divide both terms by \\(25\\).",
         "workingOut": "175 \\div 25 = 7, \\quad 125 \\div 25 = 5"
       }
     ],
@@ -243,17 +241,16 @@ export const Y8_CH10G_QUESTIONS = [
     "hint": "Divide both terms by $30$.",
     "solutionSteps": [
       {
-        "explanation": "Identify the HCF of $30$ and $150$.",
+        "explanation": "Identify the HCF of \\(30\\) and \\(150\\).",
         "workingOut": "\\text{HCF}(30, 150) = 30"
       },
       {
-        "explanation": "Divide both terms by $30$.",
+        "explanation": "Divide both terms by \\(30\\).",
         "workingOut": "30 \\div 30 = 1, \\quad 150 \\div 30 = 5"
       }
     ],
     "graphData": null
   },
-  // --- Question 3 (Grouped, Easy) ---
   {
     "id": "y8-10g-q3",
     "type": "short_answer",
@@ -269,21 +266,20 @@ export const Y8_CH10G_QUESTIONS = [
         "workingOut": "S : L = 4 : 5, \\quad L : B = 2 : 7"
       },
       {
-        "explanation": "Find the LCM of the common term ($L$).",
+        "explanation": "Find the LCM of the common term (\\(L\\)).",
         "workingOut": "\\text{LCM}(5, 2) = 10"
       },
       {
-        "explanation": "Adjust the terms to have $L = 10$.",
+        "explanation": "Adjust the terms to have \\(L = 10\\).",
         "workingOut": "S : L = 8 : 10, \\quad L : B = 10 : 35"
       },
       {
-        "explanation": "Find the ratio $S : B$.",
+        "explanation": "Find the ratio \\(S : B\\).",
         "workingOut": "S : B = 8 : 35"
       }
     ],
     "graphData": null
   },
-  // --- Question 4 (Grouped, Easy) ---
   {
     "id": "y8-10g-q4",
     "type": "short_answer",
@@ -309,7 +305,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 5 (Grouped, Easy) ---
   {
     "id": "y8-10g-q5",
     "type": "short_answer",
@@ -335,7 +330,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 6 (Grouped, Easy) ---
   {
     "id": "y8-10g-q6",
     "type": "short_answer",
@@ -355,13 +349,12 @@ export const Y8_CH10G_QUESTIONS = [
         "workingOut": "2520 \\div 7 = 360"
       },
       {
-        "explanation": "Multiply each ratio part by $360$.",
+        "explanation": "Multiply each ratio part by \\(360\\).",
         "workingOut": "4 \\times 360 = 1440, \\quad 2 \\times 360 = 720, \\quad 1 \\times 360 = 360"
       }
     ],
     "graphData": null
   },
-  // --- Question 7 (Grouped, Easy) ---
   {
     "id": "y8-10g-q7",
     "type": "short_answer",
@@ -383,7 +376,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 8 (Grouped, Easy) ---
   {
     "id": "y8-10g-q8",
     "type": "short_answer",
@@ -419,7 +411,6 @@ export const Y8_CH10G_QUESTIONS = [
       }
     ]
   },
-  // --- Question 9 (Grouped, Easy) ---
   {
     "id": "y8-10g-q9",
     "type": "short_answer",
@@ -441,7 +432,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 10 (Grouped, Easy) ---
   {
     "id": "y8-10g-q10",
     "type": "short_answer",
@@ -477,7 +467,6 @@ export const Y8_CH10G_QUESTIONS = [
       }
     ]
   },
-  // --- Question 11 (Split, Easy) ---
   {
     "id": "y8-10g-q11a",
     "type": "short_answer",
@@ -524,7 +513,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 12 (Grouped, Medium) ---
   {
     "id": "y8-10g-q12",
     "type": "short_answer",
@@ -550,7 +538,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 13 (Grouped, Medium) ---
   {
     "id": "y8-10g-q13",
     "type": "short_answer",
@@ -572,7 +559,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 14 (Grouped, Medium) ---
   {
     "id": "y8-10g-q14",
     "type": "short_answer",
@@ -594,7 +580,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 15 (Grouped, Medium) ---
   {
     "id": "y8-10g-q15",
     "type": "short_answer",
@@ -616,7 +601,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 16 (Grouped, Medium) ---
   {
     "id": "y8-10g-q16",
     "type": "short_answer",
@@ -628,11 +612,11 @@ export const Y8_CH10G_QUESTIONS = [
     "hint": "Use the scale factor where $1\\text{ cm}$ on the diagram represents $200\\text{ cm} = 2\\text{ m}$ in real life.",
     "solutionSteps": [
       {
-        "explanation": "Identify the scale: $1\\text{ cm}$ on the plan represents $2\\text{ m}$ in real life.",
+        "explanation": "Identify the scale: \\(1\\text{ cm}\\) on the plan represents \\(2\\text{ m}\\) in real life.",
         "workingOut": "200\\text{ cm} = 2\\text{ m}"
       },
       {
-        "explanation": "Convert plan lengths to real life by multiplying by $2$.",
+        "explanation": "Convert plan lengths to real life by multiplying by \\(2\\).",
         "workingOut": "12 \\times 2 = 24\\text{ m}, \\quad 6 \\times 2 = 12\\text{ m}, \\quad 3.2 \\times 2 = 6.4\\text{ m}, \\quad 0.5 \\times 2 = 1\\text{ m}"
       },
       {
@@ -644,41 +628,147 @@ export const Y8_CH10G_QUESTIONS = [
       "geometry": {
         "width": 320,
         "points": {
-          "A": [0, 0],
-          "B": [12, 0],
-          "C": [12, 6],
-          "D": [0, 6],
-          "E": [6, 0],
-          "F": [6, 6],
-          "G": [0, 0.5],
-          "H": [12, 0.5],
-          "I": [0, 5.5],
-          "J": [12, 5.5],
-          "K": [3.2, 0.5],
-          "L": [3.2, 5.5],
-          "M": [8.8, 0.5],
-          "N": [8.8, 5.5],
-          "O": [3.2, 3],
-          "P": [8.8, 3],
-          "Q": [3.2, 0]
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            12,
+            0
+          ],
+          "C": [
+            12,
+            6
+          ],
+          "D": [
+            0,
+            6
+          ],
+          "E": [
+            6,
+            0
+          ],
+          "F": [
+            6,
+            6
+          ],
+          "G": [
+            0,
+            0.5
+          ],
+          "H": [
+            12,
+            0.5
+          ],
+          "I": [
+            0,
+            5.5
+          ],
+          "J": [
+            12,
+            5.5
+          ],
+          "K": [
+            3.2,
+            0.5
+          ],
+          "L": [
+            3.2,
+            5.5
+          ],
+          "M": [
+            8.8,
+            0.5
+          ],
+          "N": [
+            8.8,
+            5.5
+          ],
+          "O": [
+            3.2,
+            3
+          ],
+          "P": [
+            8.8,
+            3
+          ],
+          "Q": [
+            3.2,
+            0
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B" },
-          { "from": "B", "to": "C" },
-          { "from": "C", "to": "D" },
-          { "from": "D", "to": "A" },
-          { "from": "E", "to": "F", "dashed": true },
-          { "from": "G", "to": "H" },
-          { "from": "I", "to": "J" },
-          { "from": "K", "to": "L" },
-          { "from": "M", "to": "N" },
-          { "from": "O", "to": "P" }
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "F",
+            "dashed": true
+          },
+          {
+            "from": "G",
+            "to": "H"
+          },
+          {
+            "from": "I",
+            "to": "J"
+          },
+          {
+            "from": "K",
+            "to": "L"
+          },
+          {
+            "from": "M",
+            "to": "N"
+          },
+          {
+            "from": "O",
+            "to": "P"
+          }
         ],
         "sideLabels": [
-          { "between": ["A", "B"], "text": "12 cm (length)" },
-          { "between": ["B", "C"], "text": "6 cm (width)" },
-          { "between": ["A", "G"], "text": "0.5 cm" },
-          { "between": ["A", "Q"], "text": "3.2 cm" }
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "12 cm (length)"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "6 cm (width)"
+          },
+          {
+            "between": [
+              "A",
+              "G"
+            ],
+            "text": "0.5 cm"
+          },
+          {
+            "between": [
+              "A",
+              "Q"
+            ],
+            "text": "3.2 cm"
+          }
         ]
       }
     },
@@ -715,7 +805,6 @@ export const Y8_CH10G_QUESTIONS = [
       }
     ]
   },
-  // --- Question 17 (Split, Medium) ---
   {
     "id": "y8-10g-q17a",
     "type": "short_answer",
@@ -812,7 +901,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 18 (Split, Hard) ---
   {
     "id": "y8-10g-q18a",
     "type": "short_answer",
@@ -876,7 +964,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 19 (Grouped, Hard) ---
   {
     "id": "y8-10g-q19",
     "type": "short_answer",
@@ -898,7 +985,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 20 (Grouped, Hard) ---
   {
     "id": "y8-10g-q20",
     "type": "short_answer",
@@ -920,7 +1006,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 21 (Grouped, Hard) ---
   {
     "id": "y8-10g-q21",
     "type": "short_answer",
@@ -942,7 +1027,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 22 (Grouped, Hard) ---
   {
     "id": "y8-10g-q22",
     "type": "short_answer",
@@ -984,7 +1068,6 @@ export const Y8_CH10G_QUESTIONS = [
       }
     ]
   },
-  // --- Question 23 (Split, Hard) ---
   {
     "id": "y8-10g-q23",
     "type": "short_answer",
@@ -1006,7 +1089,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 24 (Grouped, Hard) ---
   {
     "id": "y8-10g-q24",
     "type": "short_answer",
@@ -1028,7 +1110,6 @@ export const Y8_CH10G_QUESTIONS = [
     ],
     "graphData": null
   },
-  // --- Question 25 (Grouped, Hard) ---
   {
     "id": "y8-10g-q25",
     "type": "short_answer",

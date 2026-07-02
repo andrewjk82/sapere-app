@@ -317,7 +317,7 @@ export const Y10_CH9_QUESTIONS = [
     "a": "y^{11}",
     "solutionSteps": [
       {
-        "explanation": "Add the indices, remembering $y = y^1$.",
+        "explanation": "Add the indices, remembering \\(y = y^1\\).",
         "workingOut": "y^{6+4+1} = y^{11}"
       }
     ],
@@ -1605,7 +1605,7 @@ export const Y10_CH9_QUESTIONS = [
     "a": "\\frac{25}{4}",
     "solutionSteps": [
       {
-        "explanation": "Substitute $n = 2$ into the expression.",
+        "explanation": "Substitute \\(n = 2\\) into the expression.",
         "workingOut": "2^2 + 2^{3-2} + 2^{2-4}"
       },
       {
@@ -1641,7 +1641,7 @@ export const Y10_CH9_QUESTIONS = [
         "workingOut": "\\frac{ab-1}{b} \\times \\frac{a}{1-ab}"
       },
       {
-        "explanation": "Factor out -1 from $(1-ab)$ to cancel.",
+        "explanation": "Factor out -1 from \\((1-ab)\\) to cancel.",
         "workingOut": "-\\frac{a}{b}"
       }
     ],

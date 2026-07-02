@@ -11,7 +11,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -37,7 +37,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -63,7 +63,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -89,7 +89,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -115,7 +115,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -141,7 +141,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -167,7 +167,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -193,7 +193,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -219,7 +219,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -245,7 +245,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -271,7 +271,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -297,7 +297,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -323,7 +323,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -349,7 +349,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -375,7 +375,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -401,7 +401,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -427,7 +427,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -453,7 +453,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -479,7 +479,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -505,7 +505,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -531,7 +531,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -557,7 +557,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -583,7 +583,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -609,7 +609,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -635,7 +635,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -661,7 +661,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -687,7 +687,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -713,7 +713,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -739,7 +739,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -765,7 +765,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -791,7 +791,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -817,7 +817,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -843,7 +843,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -869,7 +869,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -895,7 +895,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -921,7 +921,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -947,7 +947,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -973,7 +973,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -999,7 +999,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1025,7 +1025,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1051,7 +1051,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1077,7 +1077,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1103,7 +1103,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1129,7 +1129,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1155,7 +1155,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1181,7 +1181,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1207,7 +1207,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1233,7 +1233,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1259,7 +1259,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1285,7 +1285,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1311,7 +1311,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1337,7 +1337,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1363,7 +1363,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1389,7 +1389,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1415,7 +1415,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1441,7 +1441,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1467,7 +1467,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -1493,11 +1493,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1519,11 +1519,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1545,11 +1545,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1571,11 +1571,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1597,11 +1597,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1623,11 +1623,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1649,11 +1649,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1675,11 +1675,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1701,11 +1701,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1727,11 +1727,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1753,11 +1753,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1779,11 +1779,11 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "explanation": "Identify the coefficients \\(a, b,\\) and \\(c\\) from the standard form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Identify a, b, c}"
       },
       {
-        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "explanation": "Substitute these values into the quadratic formula \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).",
         "workingOut": "\\text{Substitute into formula}"
       },
       {
@@ -1805,7 +1805,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -1831,7 +1831,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -1857,7 +1857,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -1883,7 +1883,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -1909,7 +1909,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -1935,7 +1935,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -1961,7 +1961,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -1987,7 +1987,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -2013,7 +2013,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -2039,7 +2039,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2065,7 +2065,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2091,7 +2091,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2117,7 +2117,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2247,7 +2247,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -2273,7 +2273,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -2299,7 +2299,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -2325,7 +2325,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -2351,7 +2351,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -2377,7 +2377,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "explanation": "If the leading coefficient is not \\(1\\), divide the entire equation by it. Then move the constant term to the right side.",
         "workingOut": "\\text{Prepare the equation}"
       },
       {
@@ -2403,7 +2403,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2429,7 +2429,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2455,7 +2455,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2481,7 +2481,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2507,7 +2507,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2533,7 +2533,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2559,7 +2559,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2585,7 +2585,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2611,7 +2611,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2637,7 +2637,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2663,7 +2663,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2689,7 +2689,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2715,7 +2715,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {
@@ -2741,7 +2741,7 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "explanation": "Rearrange the equation into the standard quadratic form \\(ax^2+bx+c=0\\).",
         "workingOut": "\\text{Rearrange to standard form}"
       },
       {

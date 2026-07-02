@@ -425,7 +425,7 @@ export const Y9_CH5E_QUESTIONS = [
     "hint": "Let the number of coins of each type be \\(x\\). Write their values in dollars.",
     "solutionSteps": [
       {
-        "explanation": "Let x be the number of each coin. The total value is $9.",
+        "explanation": "Let x be the number of each coin. The total value is \\(9.\\)",
         "workingOut": "0.10x + 0.20x = 9"
       },
       {

@@ -1,5 +1,4 @@
 export const Y8_CH13A_QUESTIONS = [
-  // --- Question 5a (alpha) ---
   {
     "id": "y8-13a-q5a-alpha",
     "type": "short_answer",
@@ -15,7 +14,7 @@ export const Y8_CH13A_QUESTIONS = [
         "workingOut": "\\angle ABC = \\angle ADC"
       },
       {
-        "explanation": "Substitute the given value $\\angle ADC = 115^\\circ$ to solve for $\\alpha$.",
+        "explanation": "Substitute the given value \\(\\angle ADC = 115^\\circ\\) to solve for \\(\\alpha\\).",
         "workingOut": "\\alpha = 115^\\circ"
       }
     ],
@@ -24,36 +23,116 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "D": [1.5, 1.0],
-          "C": [7.5, 1.0],
-          "A": [3.0, 5.0],
-          "B": [9.0, 5.0],
-          "P": [12.0, 5.0]
+          "D": [
+            1.5,
+            1
+          ],
+          "C": [
+            7.5,
+            1
+          ],
+          "A": [
+            3,
+            5
+          ],
+          "B": [
+            9,
+            5
+          ],
+          "P": [
+            12,
+            5
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "marks": 1 },
-          { "from": "B", "to": "P" },
-          { "from": "D", "to": "C", "marks": 1 },
-          { "from": "A", "to": "D", "marks": 2 },
-          { "from": "B", "to": "C", "marks": 2 }
+          {
+            "from": "A",
+            "to": "B",
+            "marks": 1
+          },
+          {
+            "from": "B",
+            "to": "P"
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "marks": 1
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "marks": 2
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "marks": 2
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.0, 1.4], "text": "115°" },
-          { "point": [8.4, 4.6], "text": "α" },
-          { "point": [9.6, 4.6], "text": "β" },
-          { "point": [2.7, 5.2], "text": "A" },
-          { "point": [8.9, 5.3], "text": "B" },
-          { "point": [7.7, 0.7], "text": "C" },
-          { "point": [1.2, 0.7], "text": "D" },
-          { "point": [12.0, 5.3], "text": "P" }
+          {
+            "point": [
+              2,
+              1.4
+            ],
+            "text": "115°"
+          },
+          {
+            "point": [
+              8.4,
+              4.6
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              9.6,
+              4.6
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              2.7,
+              5.2
+            ],
+            "text": "A"
+          },
+          {
+            "point": [
+              8.9,
+              5.3
+            ],
+            "text": "B"
+          },
+          {
+            "point": [
+              7.7,
+              0.7
+            ],
+            "text": "C"
+          },
+          {
+            "point": [
+              1.2,
+              0.7
+            ],
+            "text": "D"
+          },
+          {
+            "point": [
+              12,
+              5.3
+            ],
+            "text": "P"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5a (beta) ---
   {
     "id": "y8-13a-q5a-beta",
     "type": "short_answer",
@@ -65,15 +144,15 @@ export const Y8_CH13A_QUESTIONS = [
     "hint": "Angles on a straight line add up to $180^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "Find the interior angle $\\angle ABC$ using the opposite angle property.",
+        "explanation": "Find the interior angle \\(\\angle ABC\\) using the opposite angle property.",
         "workingOut": "\\angle ABC = 115^\\circ"
       },
       {
-        "explanation": "Use the fact that angles on a straight line add to $180^\\circ$.",
+        "explanation": "Use the fact that angles on a straight line add to \\(180^\\circ\\).",
         "workingOut": "\\alpha + \\beta = 180^\\circ"
       },
       {
-        "explanation": "Solve for $\\beta$.",
+        "explanation": "Solve for \\(\\beta\\).",
         "workingOut": "\\beta = 180^\\circ - 115^\\circ = 65^\\circ"
       }
     ],
@@ -82,36 +161,116 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "D": [1.5, 1.0],
-          "C": [7.5, 1.0],
-          "A": [3.0, 5.0],
-          "B": [9.0, 5.0],
-          "P": [12.0, 5.0]
+          "D": [
+            1.5,
+            1
+          ],
+          "C": [
+            7.5,
+            1
+          ],
+          "A": [
+            3,
+            5
+          ],
+          "B": [
+            9,
+            5
+          ],
+          "P": [
+            12,
+            5
+          ]
         },
         "segments": [
-          { "from": "A", "to": "B", "marks": 1 },
-          { "from": "B", "to": "P" },
-          { "from": "D", "to": "C", "marks": 1 },
-          { "from": "A", "to": "D", "marks": 2 },
-          { "from": "B", "to": "C", "marks": 2 }
+          {
+            "from": "A",
+            "to": "B",
+            "marks": 1
+          },
+          {
+            "from": "B",
+            "to": "P"
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "marks": 1
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "marks": 2
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "marks": 2
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.0, 1.4], "text": "115°" },
-          { "point": [8.4, 4.6], "text": "α" },
-          { "point": [9.6, 4.6], "text": "β" },
-          { "point": [2.7, 5.2], "text": "A" },
-          { "point": [8.9, 5.3], "text": "B" },
-          { "point": [7.7, 0.7], "text": "C" },
-          { "point": [1.2, 0.7], "text": "D" },
-          { "point": [12.0, 5.3], "text": "P" }
+          {
+            "point": [
+              2,
+              1.4
+            ],
+            "text": "115°"
+          },
+          {
+            "point": [
+              8.4,
+              4.6
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              9.6,
+              4.6
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              2.7,
+              5.2
+            ],
+            "text": "A"
+          },
+          {
+            "point": [
+              8.9,
+              5.3
+            ],
+            "text": "B"
+          },
+          {
+            "point": [
+              7.7,
+              0.7
+            ],
+            "text": "C"
+          },
+          {
+            "point": [
+              1.2,
+              0.7
+            ],
+            "text": "D"
+          },
+          {
+            "point": [
+              12,
+              5.3
+            ],
+            "text": "P"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5b (x) ---
   {
     "id": "y8-13a-q5b-x",
     "type": "short_answer",
@@ -127,7 +286,7 @@ export const Y8_CH13A_QUESTIONS = [
         "workingOut": "SR = PQ"
       },
       {
-        "explanation": "Substitute the given values to find $x$.",
+        "explanation": "Substitute the given values to find \\(x\\).",
         "workingOut": "x = 15"
       }
     ],
@@ -136,42 +295,147 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "S": [1.5, 1.0],
-          "R": [7.5, 1.0],
-          "P": [3.5, 5.0],
-          "Q": [9.5, 5.0],
-          "M": [5.5, 3.0]
+          "S": [
+            1.5,
+            1
+          ],
+          "R": [
+            7.5,
+            1
+          ],
+          "P": [
+            3.5,
+            5
+          ],
+          "Q": [
+            9.5,
+            5
+          ],
+          "M": [
+            5.5,
+            3
+          ]
         },
         "segments": [
-          { "from": "P", "to": "Q", "marks": 1 },
-          { "from": "S", "to": "R", "marks": 1 },
-          { "from": "P", "to": "S", "marks": 2 },
-          { "from": "Q", "to": "R", "marks": 2 },
-          { "from": "P", "to": "M", "dashed": true },
-          { "from": "M", "to": "R", "dashed": true },
-          { "from": "Q", "to": "M", "dashed": true },
-          { "from": "M", "to": "S", "dashed": true }
+          {
+            "from": "P",
+            "to": "Q",
+            "marks": 1
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "S",
+            "marks": 2
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "marks": 2
+          },
+          {
+            "from": "P",
+            "to": "M",
+            "dashed": true
+          },
+          {
+            "from": "M",
+            "to": "R",
+            "dashed": true
+          },
+          {
+            "from": "Q",
+            "to": "M",
+            "dashed": true
+          },
+          {
+            "from": "M",
+            "to": "S",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["P", "Q"], "text": "15 cm" },
-          { "between": ["S", "R"], "text": "x" }
+          {
+            "between": [
+              "P",
+              "Q"
+            ],
+            "text": "15 cm"
+          },
+          {
+            "between": [
+              "S",
+              "R"
+            ],
+            "text": "x"
+          }
         ],
         "freeLabels": [
-          { "point": [4.3, 4.0], "text": "9 cm" },
-          { "point": [6.5, 2.0], "text": "z" },
-          { "point": [7.3, 4.0], "text": "7 cm" },
-          { "point": [3.5, 2.0], "text": "y" },
-          { "point": [3.2, 5.3], "text": "P" },
-          { "point": [9.7, 5.3], "text": "Q" },
-          { "point": [7.7, 0.7], "text": "R" },
-          { "point": [1.2, 0.7], "text": "S" }
+          {
+            "point": [
+              4.3,
+              4
+            ],
+            "text": "9 cm"
+          },
+          {
+            "point": [
+              6.5,
+              2
+            ],
+            "text": "z"
+          },
+          {
+            "point": [
+              7.3,
+              4
+            ],
+            "text": "7 cm"
+          },
+          {
+            "point": [
+              3.5,
+              2
+            ],
+            "text": "y"
+          },
+          {
+            "point": [
+              3.2,
+              5.3
+            ],
+            "text": "P"
+          },
+          {
+            "point": [
+              9.7,
+              5.3
+            ],
+            "text": "Q"
+          },
+          {
+            "point": [
+              7.7,
+              0.7
+            ],
+            "text": "R"
+          },
+          {
+            "point": [
+              1.2,
+              0.7
+            ],
+            "text": "S"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5b (y) ---
   {
     "id": "y8-13a-q5b-y",
     "type": "short_answer",
@@ -187,7 +451,7 @@ export const Y8_CH13A_QUESTIONS = [
         "workingOut": "MS = QM"
       },
       {
-        "explanation": "Substitute the given length of $QM = 7\\text{ cm}$ to find $y$.",
+        "explanation": "Substitute the given length of \\(QM = 7\\text{ cm}\\) to find \\(y\\).",
         "workingOut": "y = 7"
       }
     ],
@@ -196,42 +460,147 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "S": [1.5, 1.0],
-          "R": [7.5, 1.0],
-          "P": [3.5, 5.0],
-          "Q": [9.5, 5.0],
-          "M": [5.5, 3.0]
+          "S": [
+            1.5,
+            1
+          ],
+          "R": [
+            7.5,
+            1
+          ],
+          "P": [
+            3.5,
+            5
+          ],
+          "Q": [
+            9.5,
+            5
+          ],
+          "M": [
+            5.5,
+            3
+          ]
         },
         "segments": [
-          { "from": "P", "to": "Q", "marks": 1 },
-          { "from": "S", "to": "R", "marks": 1 },
-          { "from": "P", "to": "S", "marks": 2 },
-          { "from": "Q", "to": "R", "marks": 2 },
-          { "from": "P", "to": "M", "dashed": true },
-          { "from": "M", "to": "R", "dashed": true },
-          { "from": "Q", "to": "M", "dashed": true },
-          { "from": "M", "to": "S", "dashed": true }
+          {
+            "from": "P",
+            "to": "Q",
+            "marks": 1
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "S",
+            "marks": 2
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "marks": 2
+          },
+          {
+            "from": "P",
+            "to": "M",
+            "dashed": true
+          },
+          {
+            "from": "M",
+            "to": "R",
+            "dashed": true
+          },
+          {
+            "from": "Q",
+            "to": "M",
+            "dashed": true
+          },
+          {
+            "from": "M",
+            "to": "S",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["P", "Q"], "text": "15 cm" },
-          { "between": ["S", "R"], "text": "x" }
+          {
+            "between": [
+              "P",
+              "Q"
+            ],
+            "text": "15 cm"
+          },
+          {
+            "between": [
+              "S",
+              "R"
+            ],
+            "text": "x"
+          }
         ],
         "freeLabels": [
-          { "point": [4.3, 4.0], "text": "9 cm" },
-          { "point": [6.5, 2.0], "text": "z" },
-          { "point": [7.3, 4.0], "text": "7 cm" },
-          { "point": [3.5, 2.0], "text": "y" },
-          { "point": [3.2, 5.3], "text": "P" },
-          { "point": [9.7, 5.3], "text": "Q" },
-          { "point": [7.7, 0.7], "text": "R" },
-          { "point": [1.2, 0.7], "text": "S" }
+          {
+            "point": [
+              4.3,
+              4
+            ],
+            "text": "9 cm"
+          },
+          {
+            "point": [
+              6.5,
+              2
+            ],
+            "text": "z"
+          },
+          {
+            "point": [
+              7.3,
+              4
+            ],
+            "text": "7 cm"
+          },
+          {
+            "point": [
+              3.5,
+              2
+            ],
+            "text": "y"
+          },
+          {
+            "point": [
+              3.2,
+              5.3
+            ],
+            "text": "P"
+          },
+          {
+            "point": [
+              9.7,
+              5.3
+            ],
+            "text": "Q"
+          },
+          {
+            "point": [
+              7.7,
+              0.7
+            ],
+            "text": "R"
+          },
+          {
+            "point": [
+              1.2,
+              0.7
+            ],
+            "text": "S"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5b (z) ---
   {
     "id": "y8-13a-q5b-z",
     "type": "short_answer",
@@ -247,7 +616,7 @@ export const Y8_CH13A_QUESTIONS = [
         "workingOut": "MR = PM"
       },
       {
-        "explanation": "Substitute the given length of $PM = 9\\text{ cm}$ to find $z$.",
+        "explanation": "Substitute the given length of \\(PM = 9\\text{ cm}\\) to find \\(z\\).",
         "workingOut": "z = 9"
       }
     ],
@@ -256,42 +625,147 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "S": [1.5, 1.0],
-          "R": [7.5, 1.0],
-          "P": [3.5, 5.0],
-          "Q": [9.5, 5.0],
-          "M": [5.5, 3.0]
+          "S": [
+            1.5,
+            1
+          ],
+          "R": [
+            7.5,
+            1
+          ],
+          "P": [
+            3.5,
+            5
+          ],
+          "Q": [
+            9.5,
+            5
+          ],
+          "M": [
+            5.5,
+            3
+          ]
         },
         "segments": [
-          { "from": "P", "to": "Q", "marks": 1 },
-          { "from": "S", "to": "R", "marks": 1 },
-          { "from": "P", "to": "S", "marks": 2 },
-          { "from": "Q", "to": "R", "marks": 2 },
-          { "from": "P", "to": "M", "dashed": true },
-          { "from": "M", "to": "R", "dashed": true },
-          { "from": "Q", "to": "M", "dashed": true },
-          { "from": "M", "to": "S", "dashed": true }
+          {
+            "from": "P",
+            "to": "Q",
+            "marks": 1
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "S",
+            "marks": 2
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "marks": 2
+          },
+          {
+            "from": "P",
+            "to": "M",
+            "dashed": true
+          },
+          {
+            "from": "M",
+            "to": "R",
+            "dashed": true
+          },
+          {
+            "from": "Q",
+            "to": "M",
+            "dashed": true
+          },
+          {
+            "from": "M",
+            "to": "S",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [
-          { "between": ["P", "Q"], "text": "15 cm" },
-          { "between": ["S", "R"], "text": "x" }
+          {
+            "between": [
+              "P",
+              "Q"
+            ],
+            "text": "15 cm"
+          },
+          {
+            "between": [
+              "S",
+              "R"
+            ],
+            "text": "x"
+          }
         ],
         "freeLabels": [
-          { "point": [4.3, 4.0], "text": "9 cm" },
-          { "point": [6.5, 2.0], "text": "z" },
-          { "point": [7.3, 4.0], "text": "7 cm" },
-          { "point": [3.5, 2.0], "text": "y" },
-          { "point": [3.2, 5.3], "text": "P" },
-          { "point": [9.7, 5.3], "text": "Q" },
-          { "point": [7.7, 0.7], "text": "R" },
-          { "point": [1.2, 0.7], "text": "S" }
+          {
+            "point": [
+              4.3,
+              4
+            ],
+            "text": "9 cm"
+          },
+          {
+            "point": [
+              6.5,
+              2
+            ],
+            "text": "z"
+          },
+          {
+            "point": [
+              7.3,
+              4
+            ],
+            "text": "7 cm"
+          },
+          {
+            "point": [
+              3.5,
+              2
+            ],
+            "text": "y"
+          },
+          {
+            "point": [
+              3.2,
+              5.3
+            ],
+            "text": "P"
+          },
+          {
+            "point": [
+              9.7,
+              5.3
+            ],
+            "text": "Q"
+          },
+          {
+            "point": [
+              7.7,
+              0.7
+            ],
+            "text": "R"
+          },
+          {
+            "point": [
+              1.2,
+              0.7
+            ],
+            "text": "S"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5c (alpha) ---
   {
     "id": "y8-13a-q5c-alpha",
     "type": "short_answer",
@@ -303,11 +777,11 @@ export const Y8_CH13A_QUESTIONS = [
     "hint": "Use the properties of parallel lines (co-interior and alternate interior angles).",
     "solutionSteps": [
       {
-        "explanation": "Find the co-interior angle $\\angle KLQ$ using parallel vertical lines.",
+        "explanation": "Find the co-interior angle \\(\\angle KLQ\\) using parallel vertical lines.",
         "workingOut": "\\angle KLQ = 180^\\circ - 105^\\circ = 75^\\circ"
       },
       {
-        "explanation": "Relate $\\alpha$ to $\\angle KLQ$ using alternate interior angles on parallel horizontal lines.",
+        "explanation": "Relate \\(\\alpha\\) to \\(\\angle KLQ\\) using alternate interior angles on parallel horizontal lines.",
         "workingOut": "\\alpha = \\angle KLQ = 75^\\circ"
       }
     ],
@@ -316,53 +790,205 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "P": [1.5, 1.0],
-          "Q": [5.0, 2.0],
-          "R": [8.5, 3.0],
-          "S": [11.0, 3.71],
-          "K": [2.5, 4.5],
-          "L": [6.0, 5.5],
-          "M": [9.5, 6.5],
-          "N": [12.0, 7.21],
-          "T": [1.0, -0.5],
-          "U": [4.5, 0.5],
-          "V": [8.0, 1.5],
-          "M_up": [9.5, 7.5]
+          "P": [
+            1.5,
+            1
+          ],
+          "Q": [
+            5,
+            2
+          ],
+          "R": [
+            8.5,
+            3
+          ],
+          "S": [
+            11,
+            3.71
+          ],
+          "K": [
+            2.5,
+            4.5
+          ],
+          "L": [
+            6,
+            5.5
+          ],
+          "M": [
+            9.5,
+            6.5
+          ],
+          "N": [
+            12,
+            7.21
+          ],
+          "T": [
+            1,
+            -0.5
+          ],
+          "U": [
+            4.5,
+            0.5
+          ],
+          "V": [
+            8,
+            1.5
+          ],
+          "M_up": [
+            9.5,
+            7.5
+          ]
         },
         "segments": [
-          { "from": "K", "to": "L", "marks": 1 },
-          { "from": "L", "to": "M", "marks": 1 },
-          { "from": "M", "to": "N" },
-          { "from": "P", "to": "Q", "marks": 1 },
-          { "from": "Q", "to": "R", "marks": 1 },
-          { "from": "R", "to": "S" },
-          { "from": "T", "to": "K", "marks": 2 },
-          { "from": "U", "to": "L", "marks": 2 },
-          { "from": "V", "to": "M_up", "marks": 2 }
+          {
+            "from": "K",
+            "to": "L",
+            "marks": 1
+          },
+          {
+            "from": "L",
+            "to": "M",
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "N"
+          },
+          {
+            "from": "P",
+            "to": "Q",
+            "marks": 1
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "marks": 1
+          },
+          {
+            "from": "R",
+            "to": "S"
+          },
+          {
+            "from": "T",
+            "to": "K",
+            "marks": 2
+          },
+          {
+            "from": "U",
+            "to": "L",
+            "marks": 2
+          },
+          {
+            "from": "V",
+            "to": "M_up",
+            "marks": 2
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.8, 3.9], "text": "105°" },
-          { "point": [5.5, 2.6], "text": "α" },
-          { "point": [9.9, 6.9], "text": "β" },
-          { "point": [2.2, 4.7], "text": "K" },
-          { "point": [5.7, 5.7], "text": "L" },
-          { "point": [9.2, 6.7], "text": "M" },
-          { "point": [12.2, 7.3], "text": "N" },
-          { "point": [1.2, 1.2], "text": "P" },
-          { "point": [4.7, 2.2], "text": "Q" },
-          { "point": [8.2, 3.2], "text": "R" },
-          { "point": [11.2, 3.8], "text": "S" },
-          { "point": [1.0, -0.8], "text": "T" },
-          { "point": [4.5, 0.2], "text": "U" },
-          { "point": [8.0, 1.2], "text": "V" }
+          {
+            "point": [
+              2.8,
+              3.9
+            ],
+            "text": "105°"
+          },
+          {
+            "point": [
+              5.5,
+              2.6
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              9.9,
+              6.9
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              2.2,
+              4.7
+            ],
+            "text": "K"
+          },
+          {
+            "point": [
+              5.7,
+              5.7
+            ],
+            "text": "L"
+          },
+          {
+            "point": [
+              9.2,
+              6.7
+            ],
+            "text": "M"
+          },
+          {
+            "point": [
+              12.2,
+              7.3
+            ],
+            "text": "N"
+          },
+          {
+            "point": [
+              1.2,
+              1.2
+            ],
+            "text": "P"
+          },
+          {
+            "point": [
+              4.7,
+              2.2
+            ],
+            "text": "Q"
+          },
+          {
+            "point": [
+              8.2,
+              3.2
+            ],
+            "text": "R"
+          },
+          {
+            "point": [
+              11.2,
+              3.8
+            ],
+            "text": "S"
+          },
+          {
+            "point": [
+              1,
+              -0.8
+            ],
+            "text": "T"
+          },
+          {
+            "point": [
+              4.5,
+              0.2
+            ],
+            "text": "U"
+          },
+          {
+            "point": [
+              8,
+              1.2
+            ],
+            "text": "V"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5c (beta) ---
   {
     "id": "y8-13a-q5c-beta",
     "type": "short_answer",
@@ -374,11 +1000,11 @@ export const Y8_CH13A_QUESTIONS = [
     "hint": "Corresponding angles on parallel lines are equal, and angles on a straight line add to $180^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "Find the corresponding angle at vertex $M$.",
+        "explanation": "Find the corresponding angle at vertex \\(M\\).",
         "workingOut": "\\angle RMN = 105^\\circ"
       },
       {
-        "explanation": "Use supplementary angles on a straight line to find $\\beta$.",
+        "explanation": "Use supplementary angles on a straight line to find \\(\\beta\\).",
         "workingOut": "\\beta = 180^\\circ - 105^\\circ = 75^\\circ"
       }
     ],
@@ -387,53 +1013,205 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "P": [1.5, 1.0],
-          "Q": [5.0, 2.0],
-          "R": [8.5, 3.0],
-          "S": [11.0, 3.71],
-          "K": [2.5, 4.5],
-          "L": [6.0, 5.5],
-          "M": [9.5, 6.5],
-          "N": [12.0, 7.21],
-          "T": [1.0, -0.5],
-          "U": [4.5, 0.5],
-          "V": [8.0, 1.5],
-          "M_up": [9.5, 7.5]
+          "P": [
+            1.5,
+            1
+          ],
+          "Q": [
+            5,
+            2
+          ],
+          "R": [
+            8.5,
+            3
+          ],
+          "S": [
+            11,
+            3.71
+          ],
+          "K": [
+            2.5,
+            4.5
+          ],
+          "L": [
+            6,
+            5.5
+          ],
+          "M": [
+            9.5,
+            6.5
+          ],
+          "N": [
+            12,
+            7.21
+          ],
+          "T": [
+            1,
+            -0.5
+          ],
+          "U": [
+            4.5,
+            0.5
+          ],
+          "V": [
+            8,
+            1.5
+          ],
+          "M_up": [
+            9.5,
+            7.5
+          ]
         },
         "segments": [
-          { "from": "K", "to": "L", "marks": 1 },
-          { "from": "L", "to": "M", "marks": 1 },
-          { "from": "M", "to": "N" },
-          { "from": "P", "to": "Q", "marks": 1 },
-          { "from": "Q", "to": "R", "marks": 1 },
-          { "from": "R", "to": "S" },
-          { "from": "T", "to": "K", "marks": 2 },
-          { "from": "U", "to": "L", "marks": 2 },
-          { "from": "V", "to": "M_up", "marks": 2 }
+          {
+            "from": "K",
+            "to": "L",
+            "marks": 1
+          },
+          {
+            "from": "L",
+            "to": "M",
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "N"
+          },
+          {
+            "from": "P",
+            "to": "Q",
+            "marks": 1
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "marks": 1
+          },
+          {
+            "from": "R",
+            "to": "S"
+          },
+          {
+            "from": "T",
+            "to": "K",
+            "marks": 2
+          },
+          {
+            "from": "U",
+            "to": "L",
+            "marks": 2
+          },
+          {
+            "from": "V",
+            "to": "M_up",
+            "marks": 2
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.8, 3.9], "text": "105°" },
-          { "point": [5.5, 2.6], "text": "α" },
-          { "point": [9.9, 6.9], "text": "β" },
-          { "point": [2.2, 4.7], "text": "K" },
-          { "point": [5.7, 5.7], "text": "L" },
-          { "point": [9.2, 6.7], "text": "M" },
-          { "point": [12.2, 7.3], "text": "N" },
-          { "point": [1.2, 1.2], "text": "P" },
-          { "point": [4.7, 2.2], "text": "Q" },
-          { "point": [8.2, 3.2], "text": "R" },
-          { "point": [11.2, 3.8], "text": "S" },
-          { "point": [1.0, -0.8], "text": "T" },
-          { "point": [4.5, 0.2], "text": "U" },
-          { "point": [8.0, 1.2], "text": "V" }
+          {
+            "point": [
+              2.8,
+              3.9
+            ],
+            "text": "105°"
+          },
+          {
+            "point": [
+              5.5,
+              2.6
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              9.9,
+              6.9
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              2.2,
+              4.7
+            ],
+            "text": "K"
+          },
+          {
+            "point": [
+              5.7,
+              5.7
+            ],
+            "text": "L"
+          },
+          {
+            "point": [
+              9.2,
+              6.7
+            ],
+            "text": "M"
+          },
+          {
+            "point": [
+              12.2,
+              7.3
+            ],
+            "text": "N"
+          },
+          {
+            "point": [
+              1.2,
+              1.2
+            ],
+            "text": "P"
+          },
+          {
+            "point": [
+              4.7,
+              2.2
+            ],
+            "text": "Q"
+          },
+          {
+            "point": [
+              8.2,
+              3.2
+            ],
+            "text": "R"
+          },
+          {
+            "point": [
+              11.2,
+              3.8
+            ],
+            "text": "S"
+          },
+          {
+            "point": [
+              1,
+              -0.8
+            ],
+            "text": "T"
+          },
+          {
+            "point": [
+              4.5,
+              0.2
+            ],
+            "text": "U"
+          },
+          {
+            "point": [
+              8,
+              1.2
+            ],
+            "text": "V"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5d ---
   {
     "id": "y8-13a-q5d",
     "type": "short_answer",
@@ -445,19 +1223,19 @@ export const Y8_CH13A_QUESTIONS = [
     "hint": "Find the two interior angles at $V$ first, then subtract their sum from $360^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "Find $\\angle WVS$ using opposite angles of parallelogram $RSVW$.",
+        "explanation": "Find \\(\\angle WVS\\) using opposite angles of parallelogram \\(RSVW\\).",
         "workingOut": "\\angle WVS = \\angle WRS = 55^\\circ"
       },
       {
-        "explanation": "Find $\\angle SVU$ using opposite angles of parallelogram $STUV$.",
+        "explanation": "Find \\(\\angle SVU\\) using opposite angles of parallelogram \\(STUV\\).",
         "workingOut": "\\angle SVU = \\angle STU = 35^\\circ"
       },
       {
-        "explanation": "Calculate the interior angle $\\angle WVU$.",
+        "explanation": "Calculate the interior angle \\(\\angle WVU\\).",
         "workingOut": "\\angle WVU = 55^\\circ + 35^\\circ = 90^\\circ"
       },
       {
-        "explanation": "Calculate the reflex angle $\\beta$.",
+        "explanation": "Calculate the reflex angle \\(\\beta\\).",
         "workingOut": "\\beta = 360^\\circ - 90^\\circ = 270^\\circ"
       }
     ],
@@ -466,40 +1244,138 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "R": [1.5, 6.0],
-          "W": [1.5, 2.0],
-          "S": [5.5, 4.0],
-          "V": [5.5, 0.0],
-          "T": [9.5, 6.5],
-          "U": [9.5, 2.5]
+          "R": [
+            1.5,
+            6
+          ],
+          "W": [
+            1.5,
+            2
+          ],
+          "S": [
+            5.5,
+            4
+          ],
+          "V": [
+            5.5,
+            0
+          ],
+          "T": [
+            9.5,
+            6.5
+          ],
+          "U": [
+            9.5,
+            2.5
+          ]
         },
         "segments": [
-          { "from": "R", "to": "W", "marks": 3 },
-          { "from": "S", "to": "V", "marks": 3 },
-          { "from": "T", "to": "U", "marks": 3 },
-          { "from": "R", "to": "S", "marks": 1 },
-          { "from": "W", "to": "V", "marks": 1 },
-          { "from": "S", "to": "T", "marks": 2 },
-          { "from": "V", "to": "U", "marks": 2 }
+          {
+            "from": "R",
+            "to": "W",
+            "marks": 3
+          },
+          {
+            "from": "S",
+            "to": "V",
+            "marks": 3
+          },
+          {
+            "from": "T",
+            "to": "U",
+            "marks": 3
+          },
+          {
+            "from": "R",
+            "to": "S",
+            "marks": 1
+          },
+          {
+            "from": "W",
+            "to": "V",
+            "marks": 1
+          },
+          {
+            "from": "S",
+            "to": "T",
+            "marks": 2
+          },
+          {
+            "from": "V",
+            "to": "U",
+            "marks": 2
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.0, 5.2], "text": "55°" },
-          { "point": [5.9, 4.8], "text": "35°" },
-          { "point": [5.5, -0.5], "text": "β" },
-          { "point": [1.1, 6.2], "text": "R" },
-          { "point": [1.1, 2.0], "text": "W" },
-          { "point": [5.1, 4.2], "text": "S" },
-          { "point": [5.1, -0.2], "text": "V" },
-          { "point": [9.8, 6.7], "text": "T" },
-          { "point": [9.8, 2.5], "text": "U" }
+          {
+            "point": [
+              2,
+              5.2
+            ],
+            "text": "55°"
+          },
+          {
+            "point": [
+              5.9,
+              4.8
+            ],
+            "text": "35°"
+          },
+          {
+            "point": [
+              5.5,
+              -0.5
+            ],
+            "text": "β"
+          },
+          {
+            "point": [
+              1.1,
+              6.2
+            ],
+            "text": "R"
+          },
+          {
+            "point": [
+              1.1,
+              2
+            ],
+            "text": "W"
+          },
+          {
+            "point": [
+              5.1,
+              4.2
+            ],
+            "text": "S"
+          },
+          {
+            "point": [
+              5.1,
+              -0.2
+            ],
+            "text": "V"
+          },
+          {
+            "point": [
+              9.8,
+              6.7
+            ],
+            "text": "T"
+          },
+          {
+            "point": [
+              9.8,
+              2.5
+            ],
+            "text": "U"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5e ---
   {
     "id": "y8-13a-q5e",
     "type": "short_answer",
@@ -519,7 +1395,7 @@ export const Y8_CH13A_QUESTIONS = [
         "workingOut": "3\\alpha + 30 = 180"
       },
       {
-        "explanation": "Solve for $\\alpha$.",
+        "explanation": "Solve for \\(\\alpha\\).",
         "workingOut": "3\\alpha = 150 \\implies \\alpha = 50"
       }
     ],
@@ -528,32 +1404,94 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "G": [1.5, 1.0],
-          "F": [7.5, 1.0],
-          "D": [3.5, 4.5],
-          "E": [9.5, 4.5]
+          "G": [
+            1.5,
+            1
+          ],
+          "F": [
+            7.5,
+            1
+          ],
+          "D": [
+            3.5,
+            4.5
+          ],
+          "E": [
+            9.5,
+            4.5
+          ]
         },
         "segments": [
-          { "from": "D", "to": "E", "marks": 1 },
-          { "from": "G", "to": "F", "marks": 1 },
-          { "from": "D", "to": "G", "marks": 2 },
-          { "from": "E", "to": "F", "marks": 2 }
+          {
+            "from": "D",
+            "to": "E",
+            "marks": 1
+          },
+          {
+            "from": "G",
+            "to": "F",
+            "marks": 1
+          },
+          {
+            "from": "D",
+            "to": "G",
+            "marks": 2
+          },
+          {
+            "from": "E",
+            "to": "F",
+            "marks": 2
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.2, 1.4], "text": "α" },
-          { "point": [6.6, 1.4], "text": "2α + 30°" },
-          { "point": [3.2, 4.8], "text": "D" },
-          { "point": [9.8, 4.8], "text": "E" },
-          { "point": [7.8, 0.7], "text": "F" },
-          { "point": [1.2, 0.7], "text": "G" }
+          {
+            "point": [
+              2.2,
+              1.4
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              6.6,
+              1.4
+            ],
+            "text": "2α + 30°"
+          },
+          {
+            "point": [
+              3.2,
+              4.8
+            ],
+            "text": "D"
+          },
+          {
+            "point": [
+              9.8,
+              4.8
+            ],
+            "text": "E"
+          },
+          {
+            "point": [
+              7.8,
+              0.7
+            ],
+            "text": "F"
+          },
+          {
+            "point": [
+              1.2,
+              0.7
+            ],
+            "text": "G"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5f (x) ---
   {
     "id": "y8-13a-q5f-x",
     "type": "short_answer",
@@ -569,7 +1507,7 @@ export const Y8_CH13A_QUESTIONS = [
         "workingOut": "x = 3x - 10"
       },
       {
-        "explanation": "Solve the linear equation for $x$.",
+        "explanation": "Solve the linear equation for \\(x\\).",
         "workingOut": "2x = 10 \\implies x = 5"
       }
     ],
@@ -578,41 +1516,146 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "M": [1.0, 3.0],
-          "L": [4.5, 0.5],
-          "K": [8.0, 3.0],
-          "J": [4.5, 5.5],
-          "O": [4.5, 3.0]
+          "M": [
+            1,
+            3
+          ],
+          "L": [
+            4.5,
+            0.5
+          ],
+          "K": [
+            8,
+            3
+          ],
+          "J": [
+            4.5,
+            5.5
+          ],
+          "O": [
+            4.5,
+            3
+          ]
         },
         "segments": [
-          { "from": "J", "to": "K", "marks": 1 },
-          { "from": "M", "to": "L", "marks": 1 },
-          { "from": "M", "to": "J", "marks": 2 },
-          { "from": "L", "to": "K", "marks": 2 },
-          { "from": "M", "to": "O", "dashed": true },
-          { "from": "O", "to": "K", "dashed": true },
-          { "from": "J", "to": "O", "dashed": true },
-          { "from": "O", "to": "L", "dashed": true }
+          {
+            "from": "J",
+            "to": "K",
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "L",
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "J",
+            "marks": 2
+          },
+          {
+            "from": "L",
+            "to": "K",
+            "marks": 2
+          },
+          {
+            "from": "M",
+            "to": "O",
+            "dashed": true
+          },
+          {
+            "from": "O",
+            "to": "K",
+            "dashed": true
+          },
+          {
+            "from": "J",
+            "to": "O",
+            "dashed": true
+          },
+          {
+            "from": "O",
+            "to": "L",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [6.5, 4.5], "text": "6" },
-          { "point": [2.2, 1.5], "text": "20 - 2z" },
-          { "point": [2.7, 3.2], "text": "x" },
-          { "point": [6.2, 3.2], "text": "3x - 10" },
-          { "point": [4.7, 4.2], "text": "y" },
-          { "point": [4.7, 1.8], "text": "12 - y" },
-          { "point": [4.5, 5.8], "text": "J" },
-          { "point": [8.3, 3.0], "text": "K" },
-          { "point": [4.5, 0.2], "text": "L" },
-          { "point": [0.7, 3.0], "text": "M" }
+          {
+            "point": [
+              6.5,
+              4.5
+            ],
+            "text": "6"
+          },
+          {
+            "point": [
+              2.2,
+              1.5
+            ],
+            "text": "20 - 2z"
+          },
+          {
+            "point": [
+              2.7,
+              3.2
+            ],
+            "text": "x"
+          },
+          {
+            "point": [
+              6.2,
+              3.2
+            ],
+            "text": "3x - 10"
+          },
+          {
+            "point": [
+              4.7,
+              4.2
+            ],
+            "text": "y"
+          },
+          {
+            "point": [
+              4.7,
+              1.8
+            ],
+            "text": "12 - y"
+          },
+          {
+            "point": [
+              4.5,
+              5.8
+            ],
+            "text": "J"
+          },
+          {
+            "point": [
+              8.3,
+              3
+            ],
+            "text": "K"
+          },
+          {
+            "point": [
+              4.5,
+              0.2
+            ],
+            "text": "L"
+          },
+          {
+            "point": [
+              0.7,
+              3
+            ],
+            "text": "M"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5f (y) ---
   {
     "id": "y8-13a-q5f-y",
     "type": "short_answer",
@@ -628,7 +1671,7 @@ export const Y8_CH13A_QUESTIONS = [
         "workingOut": "y = 12 - y"
       },
       {
-        "explanation": "Solve the linear equation for $y$.",
+        "explanation": "Solve the linear equation for \\(y\\).",
         "workingOut": "2y = 12 \\implies y = 6"
       }
     ],
@@ -637,41 +1680,146 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "M": [1.0, 3.0],
-          "L": [4.5, 0.5],
-          "K": [8.0, 3.0],
-          "J": [4.5, 5.5],
-          "O": [4.5, 3.0]
+          "M": [
+            1,
+            3
+          ],
+          "L": [
+            4.5,
+            0.5
+          ],
+          "K": [
+            8,
+            3
+          ],
+          "J": [
+            4.5,
+            5.5
+          ],
+          "O": [
+            4.5,
+            3
+          ]
         },
         "segments": [
-          { "from": "J", "to": "K", "marks": 1 },
-          { "from": "M", "to": "L", "marks": 1 },
-          { "from": "M", "to": "J", "marks": 2 },
-          { "from": "L", "to": "K", "marks": 2 },
-          { "from": "M", "to": "O", "dashed": true },
-          { "from": "O", "to": "K", "dashed": true },
-          { "from": "J", "to": "O", "dashed": true },
-          { "from": "O", "to": "L", "dashed": true }
+          {
+            "from": "J",
+            "to": "K",
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "L",
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "J",
+            "marks": 2
+          },
+          {
+            "from": "L",
+            "to": "K",
+            "marks": 2
+          },
+          {
+            "from": "M",
+            "to": "O",
+            "dashed": true
+          },
+          {
+            "from": "O",
+            "to": "K",
+            "dashed": true
+          },
+          {
+            "from": "J",
+            "to": "O",
+            "dashed": true
+          },
+          {
+            "from": "O",
+            "to": "L",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [6.5, 4.5], "text": "6" },
-          { "point": [2.2, 1.5], "text": "20 - 2z" },
-          { "point": [2.7, 3.2], "text": "x" },
-          { "point": [6.2, 3.2], "text": "3x - 10" },
-          { "point": [4.7, 4.2], "text": "y" },
-          { "point": [4.7, 1.8], "text": "12 - y" },
-          { "point": [4.5, 5.8], "text": "J" },
-          { "point": [8.3, 3.0], "text": "K" },
-          { "point": [4.5, 0.2], "text": "L" },
-          { "point": [0.7, 3.0], "text": "M" }
+          {
+            "point": [
+              6.5,
+              4.5
+            ],
+            "text": "6"
+          },
+          {
+            "point": [
+              2.2,
+              1.5
+            ],
+            "text": "20 - 2z"
+          },
+          {
+            "point": [
+              2.7,
+              3.2
+            ],
+            "text": "x"
+          },
+          {
+            "point": [
+              6.2,
+              3.2
+            ],
+            "text": "3x - 10"
+          },
+          {
+            "point": [
+              4.7,
+              4.2
+            ],
+            "text": "y"
+          },
+          {
+            "point": [
+              4.7,
+              1.8
+            ],
+            "text": "12 - y"
+          },
+          {
+            "point": [
+              4.5,
+              5.8
+            ],
+            "text": "J"
+          },
+          {
+            "point": [
+              8.3,
+              3
+            ],
+            "text": "K"
+          },
+          {
+            "point": [
+              4.5,
+              0.2
+            ],
+            "text": "L"
+          },
+          {
+            "point": [
+              0.7,
+              3
+            ],
+            "text": "M"
+          }
         ]
       }
     }
   },
-
-  // --- Question 5f (z) ---
   {
     "id": "y8-13a-q5f-z",
     "type": "short_answer",
@@ -687,7 +1835,7 @@ export const Y8_CH13A_QUESTIONS = [
         "workingOut": "20 - 2z = 6"
       },
       {
-        "explanation": "Solve the linear equation for $z$.",
+        "explanation": "Solve the linear equation for \\(z\\).",
         "workingOut": "2z = 14 \\implies z = 7"
       }
     ],
@@ -696,41 +1844,146 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "M": [1.0, 3.0],
-          "L": [4.5, 0.5],
-          "K": [8.0, 3.0],
-          "J": [4.5, 5.5],
-          "O": [4.5, 3.0]
+          "M": [
+            1,
+            3
+          ],
+          "L": [
+            4.5,
+            0.5
+          ],
+          "K": [
+            8,
+            3
+          ],
+          "J": [
+            4.5,
+            5.5
+          ],
+          "O": [
+            4.5,
+            3
+          ]
         },
         "segments": [
-          { "from": "J", "to": "K", "marks": 1 },
-          { "from": "M", "to": "L", "marks": 1 },
-          { "from": "M", "to": "J", "marks": 2 },
-          { "from": "L", "to": "K", "marks": 2 },
-          { "from": "M", "to": "O", "dashed": true },
-          { "from": "O", "to": "K", "dashed": true },
-          { "from": "J", "to": "O", "dashed": true },
-          { "from": "O", "to": "L", "dashed": true }
+          {
+            "from": "J",
+            "to": "K",
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "L",
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "J",
+            "marks": 2
+          },
+          {
+            "from": "L",
+            "to": "K",
+            "marks": 2
+          },
+          {
+            "from": "M",
+            "to": "O",
+            "dashed": true
+          },
+          {
+            "from": "O",
+            "to": "K",
+            "dashed": true
+          },
+          {
+            "from": "J",
+            "to": "O",
+            "dashed": true
+          },
+          {
+            "from": "O",
+            "to": "L",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [6.5, 4.5], "text": "6" },
-          { "point": [2.2, 1.5], "text": "20 - 2z" },
-          { "point": [2.7, 3.2], "text": "x" },
-          { "point": [6.2, 3.2], "text": "3x - 10" },
-          { "point": [4.7, 4.2], "text": "y" },
-          { "point": [4.7, 1.8], "text": "12 - y" },
-          { "point": [4.5, 5.8], "text": "J" },
-          { "point": [8.3, 3.0], "text": "K" },
-          { "point": [4.5, 0.2], "text": "L" },
-          { "point": [0.7, 3.0], "text": "M" }
+          {
+            "point": [
+              6.5,
+              4.5
+            ],
+            "text": "6"
+          },
+          {
+            "point": [
+              2.2,
+              1.5
+            ],
+            "text": "20 - 2z"
+          },
+          {
+            "point": [
+              2.7,
+              3.2
+            ],
+            "text": "x"
+          },
+          {
+            "point": [
+              6.2,
+              3.2
+            ],
+            "text": "3x - 10"
+          },
+          {
+            "point": [
+              4.7,
+              4.2
+            ],
+            "text": "y"
+          },
+          {
+            "point": [
+              4.7,
+              1.8
+            ],
+            "text": "12 - y"
+          },
+          {
+            "point": [
+              4.5,
+              5.8
+            ],
+            "text": "J"
+          },
+          {
+            "point": [
+              8.3,
+              3
+            ],
+            "text": "K"
+          },
+          {
+            "point": [
+              4.5,
+              0.2
+            ],
+            "text": "L"
+          },
+          {
+            "point": [
+              0.7,
+              3
+            ],
+            "text": "M"
+          }
         ]
       }
     }
   },
-
-  // --- Question 6a ---
   {
     "id": "y8-13a-q6a",
     "type": "short_answer",
@@ -746,7 +1999,7 @@ export const Y8_CH13A_QUESTIONS = [
         "workingOut": "P = 2(a + b)"
       },
       {
-        "explanation": "Substitute the values $a = 14$ and $b = 25$.",
+        "explanation": "Substitute the values \\(a = 14\\) and \\(b = 25\\).",
         "workingOut": "P = 2(14 + 25) = 2(39)"
       },
       {
@@ -756,8 +2009,6 @@ export const Y8_CH13A_QUESTIONS = [
     ],
     "graphData": null
   },
-
-  // --- Question 6b ---
   {
     "id": "y8-13a-q6b",
     "type": "short_answer",
@@ -783,8 +2034,6 @@ export const Y8_CH13A_QUESTIONS = [
     ],
     "graphData": null
   },
-
-  // --- Question 6c ---
   {
     "id": "y8-13a-q6c",
     "type": "short_answer",
@@ -810,8 +2059,6 @@ export const Y8_CH13A_QUESTIONS = [
     ],
     "graphData": null
   },
-
-  // --- Question 6d ---
   {
     "id": "y8-13a-q6d",
     "type": "short_answer",
@@ -833,8 +2080,6 @@ export const Y8_CH13A_QUESTIONS = [
     ],
     "graphData": null
   },
-
-  // --- Question 7 ---
   {
     "id": "y8-13a-q7",
     "type": "teacher_review",
@@ -846,15 +2091,15 @@ export const Y8_CH13A_QUESTIONS = [
     "hint": "Remember that diagonals of a parallelogram bisect each other.",
     "solutionSteps": [
       {
-        "explanation": "Draw the diagonals and label the intersection point $T$.",
+        "explanation": "Draw the diagonals and label the intersection point \\(T\\).",
         "workingOut": "\\text{Intersection } = T"
       },
       {
-        "explanation": "A circle centered at $T$ passing through $P$ also passes through $R$ because $PT = TR$.",
+        "explanation": "A circle centered at \\(T\\) passing through \\(P\\) also passes through \\(R\\) because \\(PT = TR\\).",
         "workingOut": "PT = TR"
       },
       {
-        "explanation": "A circle centered at $T$ passing through $Q$ also passes through $S$ because $QT = TS$.",
+        "explanation": "A circle centered at \\(T\\) passing through \\(Q\\) also passes through \\(S\\) because \\(QT = TS\\).",
         "workingOut": "QT = TS"
       }
     ],
@@ -880,8 +2125,6 @@ export const Y8_CH13A_QUESTIONS = [
       }
     ]
   },
-
-  // --- Question 8 ---
   {
     "id": "y8-13a-q8",
     "type": "teacher_review",
@@ -893,15 +2136,15 @@ export const Y8_CH13A_QUESTIONS = [
     "hint": "Find the total length of each diagonal in terms of $y$ using the bisection property.",
     "solutionSteps": [
       {
-        "explanation": "Find the total length of diagonal $QS$ using bisection.",
+        "explanation": "Find the total length of diagonal \\(QS\\) using bisection.",
         "workingOut": "QS = 2 \\times ST = 2y"
       },
       {
-        "explanation": "Find the total length of diagonal $PR$ using bisection.",
+        "explanation": "Find the total length of diagonal \\(PR\\) using bisection.",
         "workingOut": "PR = 2 \\times PT = 2 \\times 3y = 6y"
       },
       {
-        "explanation": "Express $PR$ in terms of $QS$.",
+        "explanation": "Express \\(PR\\) in terms of \\(QS\\).",
         "workingOut": "PR = 6y = 3(2y) = 3QS"
       }
     ],
@@ -910,38 +2153,125 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "S": [1.0, 1.0],
-          "R": [7.0, 1.0],
-          "P": [3.0, 4.5],
-          "Q": [9.0, 4.5],
-          "T": [5.0, 2.75]
+          "S": [
+            1,
+            1
+          ],
+          "R": [
+            7,
+            1
+          ],
+          "P": [
+            3,
+            4.5
+          ],
+          "Q": [
+            9,
+            4.5
+          ],
+          "T": [
+            5,
+            2.75
+          ]
         },
         "segments": [
-          { "from": "P", "to": "Q", "marks": 1 },
-          { "from": "S", "to": "R", "marks": 1 },
-          { "from": "P", "to": "S", "marks": 2 },
-          { "from": "Q", "to": "R", "marks": 2 },
-          { "from": "P", "to": "T", "dashed": true },
-          { "from": "T", "to": "R", "dashed": true },
-          { "from": "Q", "to": "T", "dashed": true },
-          { "from": "T", "to": "S", "dashed": true }
+          {
+            "from": "P",
+            "to": "Q",
+            "marks": 1
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "S",
+            "marks": 2
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "marks": 2
+          },
+          {
+            "from": "P",
+            "to": "T",
+            "dashed": true
+          },
+          {
+            "from": "T",
+            "to": "R",
+            "dashed": true
+          },
+          {
+            "from": "Q",
+            "to": "T",
+            "dashed": true
+          },
+          {
+            "from": "T",
+            "to": "S",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [3.7, 1.8], "text": "y" },
-          { "point": [4.3, 3.7], "text": "3y" },
-          { "point": [2.7, 4.7], "text": "P" },
-          { "point": [9.3, 4.7], "text": "Q" },
-          { "point": [7.3, 0.8], "text": "R" },
-          { "point": [0.7, 0.8], "text": "S" },
-          { "point": [5.0, 2.4], "text": "T" }
+          {
+            "point": [
+              3.7,
+              1.8
+            ],
+            "text": "y"
+          },
+          {
+            "point": [
+              4.3,
+              3.7
+            ],
+            "text": "3y"
+          },
+          {
+            "point": [
+              2.7,
+              4.7
+            ],
+            "text": "P"
+          },
+          {
+            "point": [
+              9.3,
+              4.7
+            ],
+            "text": "Q"
+          },
+          {
+            "point": [
+              7.3,
+              0.8
+            ],
+            "text": "R"
+          },
+          {
+            "point": [
+              0.7,
+              0.8
+            ],
+            "text": "S"
+          },
+          {
+            "point": [
+              5,
+              2.4
+            ],
+            "text": "T"
+          }
         ]
       }
     }
   },
-
-  // --- Question 9 ---
   {
     "id": "y8-13a-q9",
     "type": "teacher_review",
@@ -970,28 +2300,100 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "W": [1.5, 1.0],
-          "Z": [7.5, 1.0],
-          "X": [3.5, 4.5],
-          "Y": [9.5, 4.5]
+          "W": [
+            1.5,
+            1
+          ],
+          "Z": [
+            7.5,
+            1
+          ],
+          "X": [
+            3.5,
+            4.5
+          ],
+          "Y": [
+            9.5,
+            4.5
+          ]
         },
         "segments": [
-          { "from": "X", "to": "Y" },
-          { "from": "W", "to": "Z" },
-          { "from": "X", "to": "W" },
-          { "from": "Y", "to": "Z" }
+          {
+            "from": "X",
+            "to": "Y"
+          },
+          {
+            "from": "W",
+            "to": "Z"
+          },
+          {
+            "from": "X",
+            "to": "W"
+          },
+          {
+            "from": "Y",
+            "to": "Z"
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.2, 1.4], "text": "θ" },
-          { "point": [8.8, 4.1], "text": "θ" },
-          { "point": [4.2, 4.1], "text": "φ" },
-          { "point": [6.8, 1.4], "text": "φ" },
-          { "point": [1.1, 0.8], "text": "W" },
-          { "point": [3.1, 4.7], "text": "X" },
-          { "point": [9.8, 4.7], "text": "Y" },
-          { "point": [7.8, 0.8], "text": "Z" }
+          {
+            "point": [
+              2.2,
+              1.4
+            ],
+            "text": "θ"
+          },
+          {
+            "point": [
+              8.8,
+              4.1
+            ],
+            "text": "θ"
+          },
+          {
+            "point": [
+              4.2,
+              4.1
+            ],
+            "text": "φ"
+          },
+          {
+            "point": [
+              6.8,
+              1.4
+            ],
+            "text": "φ"
+          },
+          {
+            "point": [
+              1.1,
+              0.8
+            ],
+            "text": "W"
+          },
+          {
+            "point": [
+              3.1,
+              4.7
+            ],
+            "text": "X"
+          },
+          {
+            "point": [
+              9.8,
+              4.7
+            ],
+            "text": "Y"
+          },
+          {
+            "point": [
+              7.8,
+              0.8
+            ],
+            "text": "Z"
+          }
         ]
       }
     },
@@ -1010,8 +2412,6 @@ export const Y8_CH13A_QUESTIONS = [
       }
     ]
   },
-
-  // --- Question 10 ---
   {
     "id": "y8-13a-q10",
     "type": "teacher_review",
@@ -1023,7 +2423,7 @@ export const Y8_CH13A_QUESTIONS = [
     "hint": "Use the SSS congruence test and alternate angle converse.",
     "solutionSteps": [
       {
-        "explanation": "Prove congruence of the triangles sharing diagonal $PR$.",
+        "explanation": "Prove congruence of the triangles sharing diagonal \\(PR\\).",
         "workingOut": "\\triangle PQR \\equiv \\triangle RSP \\text{ (SSS)}"
       },
       {
@@ -1040,25 +2440,81 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "S": [1.5, 1.0],
-          "R": [7.5, 1.0],
-          "P": [3.5, 4.5],
-          "Q": [9.5, 4.5]
+          "S": [
+            1.5,
+            1
+          ],
+          "R": [
+            7.5,
+            1
+          ],
+          "P": [
+            3.5,
+            4.5
+          ],
+          "Q": [
+            9.5,
+            4.5
+          ]
         },
         "segments": [
-          { "from": "P", "to": "Q", "ticks": 2 },
-          { "from": "S", "to": "R", "ticks": 2 },
-          { "from": "P", "to": "S", "ticks": 1 },
-          { "from": "Q", "to": "R", "ticks": 1 },
-          { "from": "P", "to": "R", "dashed": true }
+          {
+            "from": "P",
+            "to": "Q",
+            "ticks": 2
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "ticks": 2
+          },
+          {
+            "from": "P",
+            "to": "S",
+            "ticks": 1
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "ticks": 1
+          },
+          {
+            "from": "P",
+            "to": "R",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [3.1, 4.7], "text": "P" },
-          { "point": [9.8, 4.7], "text": "Q" },
-          { "point": [7.8, 0.8], "text": "R" },
-          { "point": [1.1, 0.8], "text": "S" }
+          {
+            "point": [
+              3.1,
+              4.7
+            ],
+            "text": "P"
+          },
+          {
+            "point": [
+              9.8,
+              4.7
+            ],
+            "text": "Q"
+          },
+          {
+            "point": [
+              7.8,
+              0.8
+            ],
+            "text": "R"
+          },
+          {
+            "point": [
+              1.1,
+              0.8
+            ],
+            "text": "S"
+          }
         ]
       }
     },
@@ -1077,8 +2533,6 @@ export const Y8_CH13A_QUESTIONS = [
       }
     ]
   },
-
-  // --- Question 12 ---
   {
     "id": "y8-13a-q12",
     "type": "teacher_review",
@@ -1107,40 +2561,140 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "P": [1.5, 1.0],
-          "S": [7.5, 1.0],
-          "Q": [3.5, 4.5],
-          "R": [9.5, 4.5],
-          "M": [7.5, 4.5],
-          "N": [3.5, 1.0]
+          "P": [
+            1.5,
+            1
+          ],
+          "S": [
+            7.5,
+            1
+          ],
+          "Q": [
+            3.5,
+            4.5
+          ],
+          "R": [
+            9.5,
+            4.5
+          ],
+          "M": [
+            7.5,
+            4.5
+          ],
+          "N": [
+            3.5,
+            1
+          ]
         },
         "segments": [
-          { "from": "Q", "to": "R", "marks": 1 },
-          { "from": "P", "to": "S", "marks": 1 },
-          { "from": "Q", "to": "P", "marks": 2 },
-          { "from": "R", "to": "S", "marks": 2 },
-          { "from": "P", "to": "M", "dashed": true },
-          { "from": "N", "to": "R", "dashed": true }
+          {
+            "from": "Q",
+            "to": "R",
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "S",
+            "marks": 1
+          },
+          {
+            "from": "Q",
+            "to": "P",
+            "marks": 2
+          },
+          {
+            "from": "R",
+            "to": "S",
+            "marks": 2
+          },
+          {
+            "from": "P",
+            "to": "M",
+            "dashed": true
+          },
+          {
+            "from": "N",
+            "to": "R",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.1, 1.5], "text": "α" },
-          { "point": [2.7, 1.2], "text": "α" },
-          { "point": [8.9, 4.0], "text": "φ" },
-          { "point": [8.3, 4.3], "text": "φ" },
-          { "point": [1.1, 0.8], "text": "P" },
-          { "point": [3.1, 4.7], "text": "Q" },
-          { "point": [7.5, 4.8], "text": "M" },
-          { "point": [9.8, 4.7], "text": "R" },
-          { "point": [3.5, 0.7], "text": "N" },
-          { "point": [7.8, 0.8], "text": "S" }
+          {
+            "point": [
+              2.1,
+              1.5
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              2.7,
+              1.2
+            ],
+            "text": "α"
+          },
+          {
+            "point": [
+              8.9,
+              4
+            ],
+            "text": "φ"
+          },
+          {
+            "point": [
+              8.3,
+              4.3
+            ],
+            "text": "φ"
+          },
+          {
+            "point": [
+              1.1,
+              0.8
+            ],
+            "text": "P"
+          },
+          {
+            "point": [
+              3.1,
+              4.7
+            ],
+            "text": "Q"
+          },
+          {
+            "point": [
+              7.5,
+              4.8
+            ],
+            "text": "M"
+          },
+          {
+            "point": [
+              9.8,
+              4.7
+            ],
+            "text": "R"
+          },
+          {
+            "point": [
+              3.5,
+              0.7
+            ],
+            "text": "N"
+          },
+          {
+            "point": [
+              7.8,
+              0.8
+            ],
+            "text": "S"
+          }
         ]
       }
     }
   },
-
-  // --- Question 13 ---
   {
     "id": "y8-13a-q13",
     "type": "teacher_review",
@@ -1169,35 +2723,133 @@ export const Y8_CH13A_QUESTIONS = [
         "width": 280,
         "showPointLabels": false,
         "points": {
-          "H": [1.5, 1.0],
-          "G": [7.5, 1.0],
-          "E": [3.5, 4.5],
-          "F": [9.5, 4.5],
-          "X": [4.5, 3.625],
-          "Y": [6.5, 1.875]
+          "H": [
+            1.5,
+            1
+          ],
+          "G": [
+            7.5,
+            1
+          ],
+          "E": [
+            3.5,
+            4.5
+          ],
+          "F": [
+            9.5,
+            4.5
+          ],
+          "X": [
+            4.5,
+            3.625
+          ],
+          "Y": [
+            6.5,
+            1.875
+          ]
         },
         "segments": [
-          { "from": "E", "to": "F", "marks": 1 },
-          { "from": "H", "to": "G", "marks": 1 },
-          { "from": "E", "to": "H", "marks": 2 },
-          { "from": "F", "to": "G", "marks": 2 },
-          { "from": "E", "to": "X", "dashed": true },
-          { "from": "X", "to": "Y", "dashed": true },
-          { "from": "Y", "to": "G", "dashed": true },
-          { "from": "X", "to": "F", "dashed": true },
-          { "from": "F", "to": "Y", "dashed": true },
-          { "from": "Y", "to": "H", "dashed": true },
-          { "from": "H", "to": "X", "dashed": true }
+          {
+            "from": "E",
+            "to": "F",
+            "marks": 1
+          },
+          {
+            "from": "H",
+            "to": "G",
+            "marks": 1
+          },
+          {
+            "from": "E",
+            "to": "H",
+            "marks": 2
+          },
+          {
+            "from": "F",
+            "to": "G",
+            "marks": 2
+          },
+          {
+            "from": "E",
+            "to": "X",
+            "dashed": true
+          },
+          {
+            "from": "X",
+            "to": "Y",
+            "dashed": true
+          },
+          {
+            "from": "Y",
+            "to": "G",
+            "dashed": true
+          },
+          {
+            "from": "X",
+            "to": "F",
+            "dashed": true
+          },
+          {
+            "from": "F",
+            "to": "Y",
+            "dashed": true
+          },
+          {
+            "from": "Y",
+            "to": "H",
+            "dashed": true
+          },
+          {
+            "from": "H",
+            "to": "X",
+            "dashed": true
+          }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [3.1, 4.7], "text": "E" },
-          { "point": [9.8, 4.7], "text": "F" },
-          { "point": [7.8, 0.8], "text": "G" },
-          { "point": [1.1, 0.8], "text": "H" },
-          { "point": [4.3, 3.9], "text": "X" },
-          { "point": [6.7, 2.1], "text": "Y" }
+          {
+            "point": [
+              3.1,
+              4.7
+            ],
+            "text": "E"
+          },
+          {
+            "point": [
+              9.8,
+              4.7
+            ],
+            "text": "F"
+          },
+          {
+            "point": [
+              7.8,
+              0.8
+            ],
+            "text": "G"
+          },
+          {
+            "point": [
+              1.1,
+              0.8
+            ],
+            "text": "H"
+          },
+          {
+            "point": [
+              4.3,
+              3.9
+            ],
+            "text": "X"
+          },
+          {
+            "point": [
+              6.7,
+              2.1
+            ],
+            "text": "Y"
+          }
         ]
       }
     }

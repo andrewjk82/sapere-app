@@ -10,11 +10,11 @@ export const Y8_CH5H_QUESTIONS = [
     "hint": "Angles on a straight line add to 180 degrees.",
     "solutionSteps": [
       {
-        "explanation": "Angles on a straight line add to $180^\\circ$.",
+        "explanation": "Angles on a straight line add to \\(180^\\circ\\).",
         "workingOut": "\\angle BOC + 65^\\circ = 180^\\circ"
       },
       {
-        "explanation": "Subtract $65^\\circ$ from $180^\\circ$.",
+        "explanation": "Subtract \\(65^\\circ\\) from \\(180^\\circ\\).",
         "workingOut": "\\angle BOC = 180^\\circ - 65^\\circ = 115^\\circ"
       }
     ],
@@ -68,11 +68,11 @@ export const Y8_CH5H_QUESTIONS = [
     "hint": "Angles around a point add to 360 degrees.",
     "solutionSteps": [
       {
-        "explanation": "Angles at a point add to $360^\\circ$.",
+        "explanation": "Angles at a point add to \\(360^\\circ\\).",
         "workingOut": "\\angle BOC + 55^\\circ + 230^\\circ = 360^\\circ"
       },
       {
-        "explanation": "Solve for $\\angle BOC$.",
+        "explanation": "Solve for \\(\\angle BOC\\).",
         "workingOut": "\\angle BOC = 360^\\circ - 285^\\circ = 75^\\circ"
       }
     ],
@@ -134,11 +134,11 @@ export const Y8_CH5H_QUESTIONS = [
     "hint": "Angles on a straight line add to 180 degrees.",
     "solutionSteps": [
       {
-        "explanation": "$AOB$ is a straight line, so angles add to $180^\\circ$.",
+        "explanation": "\\(AOB\\) is a straight line, so angles add to \\(180^\\circ\\).",
         "workingOut": "\\angle BOC + 130^\\circ = 180^\\circ"
       },
       {
-        "explanation": "Subtract from $180^\\circ$.",
+        "explanation": "Subtract from \\(180^\\circ\\).",
         "workingOut": "\\angle BOC = 180^\\circ - 130^\\circ = 50^\\circ"
       }
     ],
@@ -196,7 +196,7 @@ export const Y8_CH5H_QUESTIONS = [
     "hint": "Use vertically opposite angles and angles on a straight line.",
     "solutionSteps": [
       {
-        "explanation": "Angles on the straight line $AD$ add to $180^\\circ$.",
+        "explanation": "Angles on the straight line \\(AD\\) add to \\(180^\\circ\\).",
         "workingOut": "\\angle AOF + \\angle FOE + \\angle EOD = 180^\\circ"
       },
       {
@@ -204,11 +204,11 @@ export const Y8_CH5H_QUESTIONS = [
         "workingOut": "40^\\circ + \\angle FOE + 65^\\circ = 180^\\circ"
       },
       {
-        "explanation": "Solve for $\\angle FOE$.",
+        "explanation": "Solve for \\(\\angle FOE\\).",
         "workingOut": "\\angle FOE = 180^\\circ - 105^\\circ = 75^\\circ"
       },
       {
-        "explanation": "$\\angle BOC$ and $\\angle FOE$ are vertically opposite.",
+        "explanation": "\\(\\angle BOC\\) and \\(\\angle FOE\\) are vertically opposite.",
         "workingOut": "\\angle BOC = \\angle FOE = 75^\\circ"
       }
     ],
@@ -282,15 +282,15 @@ export const Y8_CH5H_QUESTIONS = [
     "hint": "Angles around a point add to 360 degrees.",
     "solutionSteps": [
       {
-        "explanation": "Angles at a point add to $360^\\circ$.",
+        "explanation": "Angles at a point add to \\(360^\\circ\\).",
         "workingOut": "\\angle AOB + \\angle BOC + \\angle COD + \\angle AOD = 360^\\circ"
       },
       {
-        "explanation": "Substitute known values ($90^\\circ$ for right angles).",
+        "explanation": "Substitute known values (\\(90^\\circ\\) for right angles).",
         "workingOut": "90^\\circ + 90^\\circ + \\angle COD + 65^\\circ = 360^\\circ"
       },
       {
-        "explanation": "Solve for $\\angle COD$.",
+        "explanation": "Solve for \\(\\angle COD\\).",
         "workingOut": "\\angle COD = 360^\\circ - 245^\\circ = 115^\\circ"
       }
     ],
@@ -360,7 +360,7 @@ export const Y8_CH5H_QUESTIONS = [
     "hint": "Angles on a straight line add to 180 degrees.",
     "solutionSteps": [
       {
-        "explanation": "Angles on a straight line add to $180^\\circ$.",
+        "explanation": "Angles on a straight line add to \\(180^\\circ\\).",
         "workingOut": "\\angle AOC + \\angle COD + \\angle BOD = 180^\\circ"
       },
       {
@@ -368,7 +368,7 @@ export const Y8_CH5H_QUESTIONS = [
         "workingOut": "55^\\circ + \\angle COD + 40^\\circ = 180^\\circ"
       },
       {
-        "explanation": "Solve for $\\angle COD$.",
+        "explanation": "Solve for \\(\\angle COD\\).",
         "workingOut": "\\angle COD = 180^\\circ - 95^\\circ = 85^\\circ"
       }
     ],
@@ -678,7 +678,7 @@ export const Y8_CH5H_QUESTIONS = [
     "hint": "Angles in a triangle add to 180 degrees.",
     "solutionSteps": [
       {
-        "explanation": "Sum of angles in a triangle is $180^\\circ$",
+        "explanation": "Sum of angles in a triangle is \\(180^\\circ\\)",
         "workingOut": "\\alpha + 35^\\circ + 110^\\circ = 180^\\circ"
       },
       {
