@@ -2164,3 +2164,6 @@ export const SURDS_QUESTIONS_Y11A = [
     ]
   }
 ];
+
+// Year 9 Ch2A questions (Pythagoras' theorem) - separate export for seeding
+export const Y9_CH2A_QUESTIONS = SURDS_QUESTIONS_Y11A.filter((q) => q.id && q.id.startsWith('y9-2a-'));
