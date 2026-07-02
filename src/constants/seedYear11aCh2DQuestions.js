@@ -213,22 +213,22 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\\\(\\\\sqrt{3}-1\\\\) is multiplied by its conjugate.",
-    "answer": 0,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(3 - 1 = 2\\\\)",
+        "text": "1",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3 + 1 = 2\\\\)",
+        "text": "3",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4 - 1 = 2\\\\)",
+        "text": "4",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2 - 1 = 2\\\\)",
+        "text": "2",
         "imageUrl": ""
       }
     ],
@@ -265,22 +265,22 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\\\(2\\\\sqrt{5}+3\\\\) is multiplied by its conjugate.",
-    "answer": 1,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(20 + 9 = 11\\\\)",
+        "text": "9",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(20 - 9 = 11\\\\)",
+        "text": "13",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(21 - 9 = 11\\\\)",
+        "text": "20",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(19 - 9 = 11\\\\)",
+        "text": "11",
         "imageUrl": ""
       }
     ],
@@ -317,22 +317,22 @@ export const Y11A_CH2D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the result when the expression \\\\(\\\\sqrt{7}-\\\\sqrt{2}\\\\) is multiplied by its conjugate.",
-    "answer": 2,
+    "answer": 3,
     "options": [
       {
-        "text": "\\\\(7 + 2 = 5\\\\)",
+        "text": "9",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(8 - 2 = 5\\\\)",
+        "text": "4",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(7 - 2 = 5\\\\)",
+        "text": "6",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(6 - 2 = 5\\\\)",
+        "text": "5",
         "imageUrl": ""
       }
     ],
@@ -372,19 +372,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 3,
     "options": [
       {
-        "text": "\\\\(99 + 96 = 3\\\\)",
+        "text": "1",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(100 - 96 = 3\\\\)",
+        "text": "5",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(98 - 96 = 3\\\\)",
+        "text": "7",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(99 - 96 = 3\\\\)",
+        "text": "3",
         "imageUrl": ""
       }
     ],
