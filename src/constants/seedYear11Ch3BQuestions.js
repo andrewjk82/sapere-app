@@ -719,7 +719,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "State the domain and range of the relation shown in the graph. (Format: 'Domain: all real x, Range: y >= -2')",
+    "question": "State the domain and range of the relation shown in the graph.",
     "a": "1",
     "solutionSteps": [
       {
@@ -774,7 +774,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "State the domain and range of the circular arc (radius 5) shown in the graph, where the top endpoints at \\( y = 3 \\) are open. (Format: 'Domain: -5 < x < 5, Range: -5 <= y < 3' or similar using inequality signs)",
+    "question": "State the domain and range of the circular arc (radius 5) shown in the graph, where the top endpoints at \\( y = 3 \\) are open.",
     "a": "0",
     "solutionSteps": [
       {
@@ -829,7 +829,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "State the domain and range of the linear relation shown in the graph. (Format: 'Domain: all real x, Range: all real y')",
+    "question": "State the domain and range of the linear relation shown in the graph.",
     "a": "0",
     "solutionSteps": [
       {
@@ -879,7 +879,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "State the domain and range of the sideways parabola shown in the graph. (Format: 'Domain: x >= -2, Range: all real y')",
+    "question": "State the domain and range of the sideways parabola shown in the graph.",
     "a": "1",
     "solutionSteps": [
       {
@@ -934,7 +934,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "State the domain and range of the relation shown in the graph. (Format: 'Domain: -2 <= x <= 2, Range: all real y')",
+    "question": "State the domain and range of the relation shown in the graph.",
     "a": "0",
     "solutionSteps": [
       {
@@ -989,7 +989,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "State the domain and range of the cubic function shown in the graph. (Format: 'Domain: all real x, Range: all real y')",
+    "question": "State the domain and range of the cubic function shown in the graph.",
     "a": "0",
     "solutionSteps": [
       {
@@ -1039,7 +1039,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "State the domain and range of the semicircle on the left of the y-axis. (Format: 'Domain: -3 <= x <= 0, Range: -3 <= y <= 3')",
+    "question": "State the domain and range of the semicircle on the left of the y-axis.",
     "a": "1",
     "solutionSteps": [
       {
@@ -1094,7 +1094,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "State the domain and range of the upper semicircle shown in the graph. (Format: 'Domain: -3 <= x <= 3, Range: 0 <= y <= 3')",
+    "question": "State the domain and range of the upper semicircle shown in the graph.",
     "a": "1",
     "solutionSteps": [
       {
@@ -1233,7 +1233,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{2}{x} \\). (Format: 'x != 0' or 'all real x except x = 0')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{2}{x} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -1270,7 +1270,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{1}{x - 4} \\). (Format: 'x != 4')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{1}{x - 4} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -1307,7 +1307,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{3}{x + 2} \\). (Format: 'x != -2')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{3}{x + 2} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -1344,7 +1344,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{1}{3 + x} \\). (Format: 'x != -3')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{1}{3 + x} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -1381,7 +1381,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\sqrt{2x} \\). (Format: 'x >= 0')",
+    "question": "Find the natural domain of \\( f(x) = \\sqrt{2x} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -1418,7 +1418,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\sqrt{x - 4} \\). (Format: 'x >= 4')",
+    "question": "Find the natural domain of \\( f(x) = \\sqrt{x - 4} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -1455,7 +1455,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\sqrt{x + 5} \\). (Format: 'x >= -5')",
+    "question": "Find the natural domain of \\( f(x) = \\sqrt{x + 5} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -1492,7 +1492,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\sqrt{3 + x} \\). (Format: 'x >= -3')",
+    "question": "Find the natural domain of \\( f(x) = \\sqrt{3 + x} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -1748,7 +1748,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "The circle below (radius 4) represents a relation that is not a function. Write down the coordinates of two points on this graph that have the same x-coordinate. (Format: '(x, y1) and (x, y2)' e.g. '(0, 4) and (0, -4)')",
+    "question": "The circle below (radius 4) represents a relation that is not a function. Write down the coordinates of two points on this graph that have the same x-coordinate.",
     "a": "2",
     "solutionSteps": [
       {
@@ -1803,7 +1803,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "The sideways parabola below represents a relation that is not a function. Write down the coordinates of two points on this graph that have the same x-coordinate. (Format: '(0, 2) and (0, -2)')",
+    "question": "The sideways parabola below represents a relation that is not a function. Write down the coordinates of two points on this graph that have the same x-coordinate.",
     "a": "2",
     "solutionSteps": [
       {
@@ -1853,7 +1853,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "The circle centered at \\( (3, 2) \\) with radius \\( 3 \\) is not a function. Write down the coordinates of two points on this graph that have the same x-coordinate. (Format: '(3, 5) and (3, -1)')",
+    "question": "The circle centered at \\( (3, 2) \\) with radius \\( 3 \\) is not a function. Write down the coordinates of two points on this graph that have the same x-coordinate.",
     "a": "0",
     "solutionSteps": [
       {
@@ -1913,7 +1913,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "The vertical line at \\( x = 3 \\) is not a function. Write down the coordinates of two points on this graph that have the same x-coordinate. (Format: '(3, 1) and (3, 2)')",
+    "question": "The vertical line at \\( x = 3 \\) is not a function. Write down the coordinates of two points on this graph that have the same x-coordinate.",
     "a": "0",
     "solutionSteps": [
       {
@@ -1963,7 +1963,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = 5x \\). (Format: 'all real x')",
+    "question": "Find the natural domain of \\( f(x) = 5x \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -2000,7 +2000,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = 8 - 2x \\). (Format: 'all real x')",
+    "question": "Find the natural domain of \\( f(x) = 8 - 2x \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -2037,7 +2037,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{1}{5 - x} \\). (Format: 'x != 5')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{1}{5 - x} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -2069,7 +2069,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{4}{3x - 2} \\). (Format: 'x != 2/3')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{4}{3x - 2} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -2106,7 +2106,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\sqrt{x + 6} \\). (Format: 'x >= -6')",
+    "question": "Find the natural domain of \\( f(x) = \\sqrt{x + 6} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -2143,7 +2143,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\sqrt{3x + 2} \\). (Format: 'x >= -2/3')",
+    "question": "Find the natural domain of \\( f(x) = \\sqrt{3x + 2} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -2180,7 +2180,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\sqrt{6 - x} \\). (Format: 'x <= 6')",
+    "question": "Find the natural domain of \\( f(x) = \\sqrt{6 - x} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -2217,7 +2217,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\sqrt{9 - 3x} \\). (Format: 'x <= 3')",
+    "question": "Find the natural domain of \\( f(x) = \\sqrt{9 - 3x} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -2254,7 +2254,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{2}{\\sqrt{x}} \\). (Format: 'x > 0')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{2}{\\sqrt{x}} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -2286,7 +2286,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{1}{\\sqrt{x + 3}} \\). (Format: 'x > -3')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{1}{\\sqrt{x + 3}} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -2323,7 +2323,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{3}{\\sqrt{2 - x}} \\). (Format: 'x < 2')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{3}{\\sqrt{2 - x}} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -2360,7 +2360,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{1}{\\sqrt{3x - 4}} \\). (Format: 'x > 4/3')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{1}{\\sqrt{3x - 4}} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -2486,7 +2486,7 @@ export const Y11_CH3B_QUESTIONS = [
       {
         "id": "y11a-3b-q12a",
         "type": "multiple_choice",
-        "question": "a) What is the natural domain of \\( R(x) \\)? (Format: 'x >= 0')",
+        "question": "a) What is the natural domain of \\( R(x) \\)?",
         "a": "1",
         "opts": [
           "\\( x \\geq 5 \\)",
@@ -2598,7 +2598,7 @@ export const Y11_CH3B_QUESTIONS = [
       {
         "id": "y11a-3b-q13a",
         "type": "multiple_choice",
-        "question": "a) What is the natural domain of \\( h(x) \\)? (Format: 'x != 0')",
+        "question": "a) What is the natural domain of \\( h(x) \\)?",
         "a": "2",
         "opts": [
           "\\( x \\neq 5 \\)",
@@ -2767,7 +2767,7 @@ export const Y11_CH3B_QUESTIONS = [
       {
         "id": "y11a-3b-q14d",
         "type": "multiple_choice",
-        "question": "d) Using the fact that physical lengths must be positive, state the domain of \\( A \\). (Format: '0 < x < 12')",
+        "question": "d) Using the fact that physical lengths must be positive, state the domain of \\( A \\).",
         "a": "0",
         "opts": [
           "\\( 0 < x < 12 \\)",
@@ -3027,7 +3027,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{x}{\\sqrt{x + 3}} \\). (Format: 'x > -3')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{x}{\\sqrt{x + 3}} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -3064,7 +3064,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{3}{x^2 - 9} \\). (Format: 'x != 3 and x != -3')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{3}{x^2 - 9} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -3101,7 +3101,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{1}{x^2 + 2x} \\). (Format: 'x != 0 and x != -2')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{1}{x^2 + 2x} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -3143,7 +3143,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{1}{x^2 - 6x + 8} \\). (Format: 'x != 2 and x != 4')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{1}{x^2 - 6x + 8} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -3185,7 +3185,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\sqrt{x^2 - 9} \\). (Format: 'x <= -3 or x >= 3')",
+    "question": "Find the natural domain of \\( f(x) = \\sqrt{x^2 - 9} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -3227,7 +3227,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of \\( f(x) = \\frac{1}{\\sqrt{4 - x^2}} \\). (Format: '-2 < x < 2')",
+    "question": "Find the natural domain of \\( f(x) = \\frac{1}{\\sqrt{4 - x^2}} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -3269,7 +3269,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 2}{x - 3}} \\). (Format: 'x <= 2 or x > 3')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 2}{x - 3}} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -3316,7 +3316,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 4}{x - 6}} \\). (Format: 'x <= 4 or x > 6')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 4}{x - 6}} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -3363,7 +3363,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 6}{x - 9}} \\). (Format: 'x <= 6 or x > 9')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 6}{x - 9}} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -3410,7 +3410,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 8}{x - 12}} \\). (Format: 'x <= 8 or x > 12')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 8}{x - 12}} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -3457,7 +3457,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 10}{x - 15}} \\). (Format: 'x <= 10 or x > 15')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 10}{x - 15}} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -3504,7 +3504,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 12}{x - 18}} \\). (Format: 'x <= 12 or x > 18')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 12}{x - 18}} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -3551,7 +3551,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 14}{x - 21}} \\). (Format: 'x <= 14 or x > 21')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 14}{x - 21}} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -3598,7 +3598,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 16}{x - 24}} \\). (Format: 'x <= 16 or x > 24')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 16}{x - 24}} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -3645,7 +3645,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 18}{x - 27}} \\). (Format: 'x <= 18 or x > 27')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 18}{x - 27}} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -3692,7 +3692,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 20}{x - 30}} \\). (Format: 'x <= 20 or x > 30')",
+    "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 20}{x - 30}} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -3739,7 +3739,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{1x + 3}{5x - 1} \\). (Format: 'y != 1/5')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{1x + 3}{5x - 1} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -3786,7 +3786,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{2x + 4}{6x - 2} \\). (Format: 'y != 2/6')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{2x + 4}{6x - 2} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -3833,7 +3833,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{3x + 5}{7x - 3} \\). (Format: 'y != 3/7')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{3x + 5}{7x - 3} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -3880,7 +3880,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{4x + 6}{8x - 4} \\). (Format: 'y != 4/8')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{4x + 6}{8x - 4} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -3927,7 +3927,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{5x + 7}{9x - 5} \\). (Format: 'y != 5/9')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{5x + 7}{9x - 5} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -3974,7 +3974,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{6x + 8}{10x - 6} \\). (Format: 'y != 6/10')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{6x + 8}{10x - 6} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -4021,7 +4021,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{7x + 9}{11x - 7} \\). (Format: 'y != 7/11')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{7x + 9}{11x - 7} \\).",
     "a": "0",
     "solutionSteps": [
       {
@@ -4068,7 +4068,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{8x + 10}{12x - 8} \\). (Format: 'y != 8/12')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{8x + 10}{12x - 8} \\).",
     "a": "1",
     "solutionSteps": [
       {
@@ -4115,7 +4115,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{9x + 11}{13x - 9} \\). (Format: 'y != 9/13')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{9x + 11}{13x - 9} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -4162,7 +4162,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the rational function \\( f(x) = \\frac{10x + 12}{14x - 10} \\). (Format: 'y != 10/14')",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{10x + 12}{14x - 10} \\).",
     "a": "2",
     "solutionSteps": [
       {
@@ -5149,7 +5149,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 1} + 2 \\) and state its domain. (Format: 'f^-1(x) = (x - 2)^2 + 1, x >= 2')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 1} + 2 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5196,7 +5196,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 2} + 3 \\) and state its domain. (Format: 'f^-1(x) = (x - 3)^2 + 2, x >= 3')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 2} + 3 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5243,7 +5243,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 3} + 4 \\) and state its domain. (Format: 'f^-1(x) = (x - 4)^2 + 3, x >= 4')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 3} + 4 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5290,7 +5290,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 4} + 5 \\) and state its domain. (Format: 'f^-1(x) = (x - 5)^2 + 4, x >= 5')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 4} + 5 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5337,7 +5337,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 5} + 6 \\) and state its domain. (Format: 'f^-1(x) = (x - 6)^2 + 5, x >= 6')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 5} + 6 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5384,7 +5384,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 6} + 7 \\) and state its domain. (Format: 'f^-1(x) = (x - 7)^2 + 6, x >= 7')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 6} + 7 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5431,7 +5431,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 7} + 8 \\) and state its domain. (Format: 'f^-1(x) = (x - 8)^2 + 7, x >= 8')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 7} + 8 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5478,7 +5478,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 8} + 9 \\) and state its domain. (Format: 'f^-1(x) = (x - 9)^2 + 8, x >= 9')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 8} + 9 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5525,7 +5525,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 9} + 10 \\) and state its domain. (Format: 'f^-1(x) = (x - 10)^2 + 9, x >= 10')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 9} + 10 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5572,7 +5572,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 10} + 11 \\) and state its domain. (Format: 'f^-1(x) = (x - 11)^2 + 10, x >= 11')",
+    "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 10} + 11 \\) and state its domain.",
     "a": "3",
     "solutionSteps": [
       {
@@ -5619,7 +5619,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 1 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 2 \\) units.\n4. Shifted vertically upwards by \\( 3 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -1*f(x - 2) + 3')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 1 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 2 \\) units.\n4. Shifted vertically upwards by \\( 3 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -5666,7 +5666,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 2 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 3 \\) units.\n4. Shifted vertically upwards by \\( 4 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -2*f(x - 3) + 4')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 2 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 3 \\) units.\n4. Shifted vertically upwards by \\( 4 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -5713,7 +5713,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 3 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 4 \\) units.\n4. Shifted vertically upwards by \\( 5 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -3*f(x - 4) + 5')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 3 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 4 \\) units.\n4. Shifted vertically upwards by \\( 5 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -5760,7 +5760,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 4 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 5 \\) units.\n4. Shifted vertically upwards by \\( 6 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -4*f(x - 5) + 6')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 4 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 5 \\) units.\n4. Shifted vertically upwards by \\( 6 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -5807,7 +5807,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 5 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 6 \\) units.\n4. Shifted vertically upwards by \\( 7 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -5*f(x - 6) + 7')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 5 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 6 \\) units.\n4. Shifted vertically upwards by \\( 7 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -5854,7 +5854,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 6 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 7 \\) units.\n4. Shifted vertically upwards by \\( 8 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -6*f(x - 7) + 8')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 6 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 7 \\) units.\n4. Shifted vertically upwards by \\( 8 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -5901,7 +5901,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 7 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 8 \\) units.\n4. Shifted vertically upwards by \\( 9 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -7*f(x - 8) + 9')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 7 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 8 \\) units.\n4. Shifted vertically upwards by \\( 9 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -5948,7 +5948,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 8 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 9 \\) units.\n4. Shifted vertically upwards by \\( 10 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -8*f(x - 9) + 10')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 8 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 9 \\) units.\n4. Shifted vertically upwards by \\( 10 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -5995,7 +5995,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 9 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 10 \\) units.\n4. Shifted vertically upwards by \\( 11 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -9*f(x - 10) + 11')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 9 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 10 \\) units.\n4. Shifted vertically upwards by \\( 11 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6042,7 +6042,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 10 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 11 \\) units.\n4. Shifted vertically upwards by \\( 12 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -10*f(x - 11) + 12')",
+    "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 10 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 11 \\) units.\n4. Shifted vertically upwards by \\( 12 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6089,7 +6089,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 25 \\) at the point \\( (3, 4) \\). (Format: '3x + 4y = 25')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 25 \\) at the point \\( (3, 4) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6131,7 +6131,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 100 \\) at the point \\( (6, 8) \\). (Format: '3x + 4y = 50')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 100 \\) at the point \\( (6, 8) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6173,7 +6173,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 225 \\) at the point \\( (9, 12) \\). (Format: '3x + 4y = 75')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 225 \\) at the point \\( (9, 12) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6215,7 +6215,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 400 \\) at the point \\( (12, 16) \\). (Format: '3x + 4y = 100')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 400 \\) at the point \\( (12, 16) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6257,7 +6257,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 625 \\) at the point \\( (15, 20) \\). (Format: '3x + 4y = 125')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 625 \\) at the point \\( (15, 20) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6299,7 +6299,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 900 \\) at the point \\( (18, 24) \\). (Format: '3x + 4y = 150')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 900 \\) at the point \\( (18, 24) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6341,7 +6341,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 1225 \\) at the point \\( (21, 28) \\). (Format: '3x + 4y = 175')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 1225 \\) at the point \\( (21, 28) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6383,7 +6383,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 1600 \\) at the point \\( (24, 32) \\). (Format: '3x + 4y = 200')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 1600 \\) at the point \\( (24, 32) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6425,7 +6425,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 2025 \\) at the point \\( (27, 36) \\). (Format: '3x + 4y = 225')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 2025 \\) at the point \\( (27, 36) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6467,7 +6467,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 2500 \\) at the point \\( (30, 40) \\). (Format: '3x + 4y = 250')",
+    "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 2500 \\) at the point \\( (30, 40) \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6509,7 +6509,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 7 \\) and the circle \\( x^2 + y^2 = 25 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 7 \\) and the circle \\( x^2 + y^2 = 25 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6556,7 +6556,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 14 \\) and the circle \\( x^2 + y^2 = 100 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 14 \\) and the circle \\( x^2 + y^2 = 100 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6603,7 +6603,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 21 \\) and the circle \\( x^2 + y^2 = 225 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 21 \\) and the circle \\( x^2 + y^2 = 225 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6650,7 +6650,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 28 \\) and the circle \\( x^2 + y^2 = 400 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 28 \\) and the circle \\( x^2 + y^2 = 400 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6697,7 +6697,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 35 \\) and the circle \\( x^2 + y^2 = 625 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 35 \\) and the circle \\( x^2 + y^2 = 625 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6744,7 +6744,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 42 \\) and the circle \\( x^2 + y^2 = 900 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 42 \\) and the circle \\( x^2 + y^2 = 900 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6791,7 +6791,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 49 \\) and the circle \\( x^2 + y^2 = 1225 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 49 \\) and the circle \\( x^2 + y^2 = 1225 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6838,7 +6838,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 56 \\) and the circle \\( x^2 + y^2 = 1600 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 56 \\) and the circle \\( x^2 + y^2 = 1600 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6885,7 +6885,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 63 \\) and the circle \\( x^2 + y^2 = 2025 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 63 \\) and the circle \\( x^2 + y^2 = 2025 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -6932,7 +6932,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 70 \\) and the circle \\( x^2 + y^2 = 2500 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
+    "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 70 \\) and the circle \\( x^2 + y^2 = 2500 \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7399,7 +7399,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 2 - \\sqrt{4 - x^2} \\). (Format: '0 <= y <= 2')",
+    "question": "Find the range of the function \\( f(x) = 2 - \\sqrt{4 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7446,7 +7446,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 4 - \\sqrt{9 - x^2} \\). (Format: '1 <= y <= 4')",
+    "question": "Find the range of the function \\( f(x) = 4 - \\sqrt{9 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7493,7 +7493,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 6 - \\sqrt{16 - x^2} \\). (Format: '2 <= y <= 6')",
+    "question": "Find the range of the function \\( f(x) = 6 - \\sqrt{16 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7540,7 +7540,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 8 - \\sqrt{25 - x^2} \\). (Format: '3 <= y <= 8')",
+    "question": "Find the range of the function \\( f(x) = 8 - \\sqrt{25 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7587,7 +7587,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 10 - \\sqrt{36 - x^2} \\). (Format: '4 <= y <= 10')",
+    "question": "Find the range of the function \\( f(x) = 10 - \\sqrt{36 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7634,7 +7634,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 12 - \\sqrt{49 - x^2} \\). (Format: '5 <= y <= 12')",
+    "question": "Find the range of the function \\( f(x) = 12 - \\sqrt{49 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7681,7 +7681,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 14 - \\sqrt{64 - x^2} \\). (Format: '6 <= y <= 14')",
+    "question": "Find the range of the function \\( f(x) = 14 - \\sqrt{64 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7728,7 +7728,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 16 - \\sqrt{81 - x^2} \\). (Format: '7 <= y <= 16')",
+    "question": "Find the range of the function \\( f(x) = 16 - \\sqrt{81 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7775,7 +7775,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 18 - \\sqrt{100 - x^2} \\). (Format: '8 <= y <= 18')",
+    "question": "Find the range of the function \\( f(x) = 18 - \\sqrt{100 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
@@ -7822,7 +7822,7 @@ export const Y11_CH3B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "Find the range of the function \\( f(x) = 20 - \\sqrt{121 - x^2} \\). (Format: '9 <= y <= 20')",
+    "question": "Find the range of the function \\( f(x) = 20 - \\sqrt{121 - x^2} \\).",
     "a": "3",
     "solutionSteps": [
       {
