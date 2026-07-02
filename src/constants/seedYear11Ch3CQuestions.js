@@ -48,7 +48,7 @@ export const Y11_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Locate the intercepts on the coordinate axes.",
-        "workingOut": "\\text{y-intercept: } (0, -3), quad \\text{x-intercept: } (1, 0)"
+        "workingOut": "\\text{y-intercept: } (0, -3), \\quad \\text{x-intercept: } (1, 0)"
       },
       {
         "explanation": "Draw a straight line passing through these two points.",
@@ -118,7 +118,7 @@ export const Y11_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Locate the intercepts on the coordinate axes.",
-        "workingOut": "\\text{y-intercept: } (0, 2), quad \\text{x-intercept: } (3, 0)"
+        "workingOut": "\\text{y-intercept: } (0, 2), \\quad \\text{x-intercept: } (3, 0)"
       },
       {
         "explanation": "Draw a straight line passing through these two points.",
@@ -1121,7 +1121,7 @@ export const Y11_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x = 4 \\) and \\( y = 2 \\) into the equation.",
-        "workingOut": "\\text{LHS} = 2, quad \\text{RHS} = 4 - 2 = 2"
+        "workingOut": "\\text{LHS} = 2, \\quad \\text{RHS} = 4 - 2 = 2"
       },
       {
         "explanation": "Since LHS = RHS, the point lies on the line.",
@@ -1140,7 +1140,7 @@ export const Y11_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x = 6 \\) and \\( y = 5 \\) into the equation.",
-        "workingOut": "\\text{LHS} = 5, quad \\text{RHS} = 17 - 2(6) = 17 - 12 = 5"
+        "workingOut": "\\text{LHS} = 5, \\quad \\text{RHS} = 17 - 2(6) = 17 - 12 = 5"
       },
       {
         "explanation": "LHS = RHS, so the point lies on the line.",
@@ -1159,7 +1159,7 @@ export const Y11_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x = 2 \\) and \\( y = -3 \\) into the equation.",
-        "workingOut": "\\text{LHS} = -3, quad \\text{RHS} = -4(2) + 5 = -8 + 5 = -3"
+        "workingOut": "\\text{LHS} = -3, \\quad \\text{RHS} = -4(2) + 5 = -8 + 5 = -3"
       },
       {
         "explanation": "Since LHS = RHS, the statement is true.",
