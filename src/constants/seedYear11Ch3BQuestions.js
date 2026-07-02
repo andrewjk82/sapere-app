@@ -2785,9 +2785,9 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "id": "y11a-3b-q14e",
-        "type": "multiple_choice",
+        "type": "teacher_review",
         "question": "e) Sketch the graph of the area function \\( A(x) \\) over the domain found in part d.",
-        "a": "1",
+        "a": "Parabola opening downwards with x-intercepts at (0, 0) and (12, 0), and vertex (maximum area) at (6, 36).",
         "solutionSteps": [
           {
             "explanation": "Since A(x) = 12x - x^2 is a downward-opening parabola, its maximum value occurs exactly at the vertex, halfway between the two x-intercepts (x = 0 and x = 12).",
@@ -2795,16 +2795,10 @@ export const Y11_CH3B_QUESTIONS = [
             "graphData": null
           },
           {
-            "explanation": "Since \\( A(x)=12x-x^2 \\) has roots \\( x=0,12 \\) and a maximum at the midpoint \\( x=6 \\), \\( A(6)=36 \\): Parabola opening downwards, with \\( x \\)-intercepts at \\( (0, 0) \\) and \\( (12, 0) \\), and vertex (maximum area) at \\( (6, 36) \\).",
-            "workingOut": "",
+            "explanation": "The roots are at x = 0 and x = 12, and the vertex (maximum area) is at the midpoint x = 6.",
+            "workingOut": "\\( A(6) = 6(12-6) = 36 \\)",
             "graphData": null
           }
-        ],
-        "opts": [
-          "A straight line through \\( (0,0) \\) and \\( (12,0) \\) with no maximum.",
-          "Parabola opening downwards, with \\( x \\)-intercepts at \\( (0, 0) \\) and \\( (12, 0) \\), and vertex (maximum area) at \\( (6, 36) \\).",
-          "Parabola opening upwards, with \\( x \\)-intercepts at \\( (0, 0) \\) and \\( (12, 0) \\), and vertex (minimum area) at \\( (6, 36) \\).",
-          "Parabola opening downwards, with \\( x \\)-intercepts at \\( (0, 0) \\) and \\( (24, 0) \\), and vertex at \\( (12, 144) \\)."
         ]
       }
     ],
